@@ -6,15 +6,46 @@
 
 .head {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
+  gap: 12px;
   margin-bottom: 24px;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoBadge {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  background: var(--accent-deal);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 26px;
+}
+
 .head h1 {
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 21px;
+  font-weight: 800;
   color: var(--text-strong);
+  line-height: 1.2;
+}
+
+.brandDot {
+  color: var(--accent-deal);
+}
+
+.headSub {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 3px;
 }
 
 .viewLink {

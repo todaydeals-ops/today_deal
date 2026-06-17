@@ -124,7 +124,17 @@ export default function AdminRecommended() {
   return (
     <main className={styles.wrap}>
       <header className={styles.head}>
-        <h1>추천딜 관리</h1>
+        <div className={styles.brand}>
+          <span className={styles.logoBadge}>
+            <i className="ti ti-clock-hour-4" />
+          </span>
+          <div>
+            <h1>
+              오늘의 추천딜 <span className={styles.brandDot}>·</span> 상품등록
+            </h1>
+            <p className={styles.headSub}>쿠팡 상품을 검색해 추천딜로 등록하세요</p>
+          </div>
+        </div>
         <Link href="/recommended" className={styles.viewLink}>
           공개 페이지 보기 <i className="ti ti-external-link" />
         </Link>
