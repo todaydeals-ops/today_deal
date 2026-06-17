@@ -103,6 +103,90 @@ export async function coupangDeeplink(targetUrl: string): Promise<string | null>
   }
 }
 
+// 쿠팡 딥링크 일괄 변환: 여러 URL → 원본URL→제휴링크 맵. (딥링크 API는 coupangUrls 배열 지원)
+export async function coupangDeeplinkBatch(
+  urls: string[]
+): Promise<Record<string, string>> {
+  const accessKey = process.env.COUPANG_ACCESS_KEY;
+  const secretKey = process.env.COUPANG_SECRET_KEY;
+  if (!accessKey || !secretKey || urls.length === 0) return {};
+  const authorization = authorizationHeader("POST", DEEPLINK_PATH, "", accessKey, secretKey);
+  try {
+    const res = await fetch(`${DOMAIN}${DEEPLINK_PATH}`, {
+      method: "POST",
+      headers: { Authorization: authorization, "Content-Type": "application/json" },
+      body: JSON.stringify({ coupangUrls: urls }),
+      signal: AbortSignal.timeout(10000),
+    });
+    if (!res.ok) return {};
+    const json = await res.json();
+    const data: unknown[] = json?.data ?? [];
+    const map: Record<string, string> = {};
+    data.forEach((it, i) => {
+      const p = it as Record<string, unknown>;
+      const original = String(p.originalUrl ?? urls[i] ?? "");
+      const link = (p.shortenUrl as string) || (p.landingUrl as string);
+      if (original && link) map[original] = link;
+    });
+    return map;
+  } catch {
+    return {};
+  }
+}
+
+// 쿠팡 상품 URL → 페이지 OG 메타에서 상품명·이미지·가격 best-effort 추출 (스크래핑).
+// 쿠팡 봇 차단으로 실패할 수 있음 → 실패 시 빈 값(관리자가 직접 채움).
+export interface CoupangUrlMeta {
+  title?: string;
+  imageUrl?: string;
+  price?: number;
+}
+
+function decodeEntities(s: string): string {
+  return s
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&#(\d+);/g, (_, d) => String.fromCharCode(Number(d)));
+}
+
+export async function fetchCoupangProductMeta(url: string): Promise<CoupangUrlMeta> {
+  try {
+    const res = await fetch(url, {
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+        "Accept-Language": "ko-KR,ko;q=0.9",
+      },
+      signal: AbortSignal.timeout(8000),
+    });
+    if (!res.ok) return {};
+    const html = await res.text();
+    const og = (prop: string): string | undefined => {
+      const re = new RegExp(
+        `<meta[^>]+property=["']og:${prop}["'][^>]+content=["']([^"']+)["']`,
+        "i"
+      );
+      const m = html.match(re);
+      return m?.[1] ? decodeEntities(m[1]) : undefined;
+    };
+    const title = og("title");
+    const imageUrl = og("image");
+    // 가격: JSON-LD/메타의 "price" 패턴 best-effort
+    let price: number | undefined;
+    const pm = html.match(/["']?price["']?\s*[:=]\s*["']?([\d,]+)/i);
+    if (pm) {
+      const n = Number(pm[1].replace(/,/g, ""));
+      if (n > 0) price = n;
+    }
+    return { title, imageUrl, price };
+  } catch {
+    return {};
+  }
+}
+
 // 키 없을 때 데모용 목 검색 결과
 export function mockCoupangSearch(keyword: string): CoupangProduct[] {
   const base = [12900, 23900, 8900, 45900];

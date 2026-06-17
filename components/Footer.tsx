@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Footer.module.css";
 
 // 제휴 고지 (법적 의무 — 기획안 5.3 / DESIGN_SYSTEM §8). 상시 노출.
@@ -16,9 +17,9 @@ export default function Footer() {
           운영 (주)슬로우베리 · Operator KIM YONG MIN · 문의 hello@todaydeals.co.kr
         </div>
         <div className={styles.links}>
-          <a href="#">이용약관</a>
-          <a href="#">개인정보처리방침</a>
-          <a href="#">제휴문의</a>
+          <Link href="/terms">이용약관</Link>
+          <Link href="/privacy">개인정보처리방침</Link>
+          <Link href="/partnership">제휴문의</Link>
         </div>
       </div>
     </footer>
