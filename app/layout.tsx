@@ -2,9 +2,23 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://todaydeals.co.kr"),
   title: "오늘의딜 — 매일매일 새로운 타임딜을 한눈에",
   description:
-    "지마켓·11번가·알리익스프레스의 타임딜을 한 곳에 모아 보여주는 핫딜 큐레이션 플랫폼",
+    "지마켓·11번가·알리익스프레스 타임딜 + 쿠팡 추천딜 + 나눔이벤트를 한 곳에",
+  openGraph: {
+    title: "오늘의딜 — 매일매일 새로운 타임딜을 한눈에",
+    description: "지마켓·11번가·알리익스프레스 타임딜 + 쿠팡 추천딜 + 나눔이벤트를 한 곳에",
+    url: "https://todaydeals.co.kr",
+    siteName: "오늘의딜",
+    locale: "ko_KR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "오늘의딜 — 매일매일 새로운 타임딜을 한눈에",
+    description: "지마켓·11번가·알리익스프레스 타임딜 + 쿠팡 추천딜 + 나눔이벤트를 한 곳에",
+  },
 };
 
 export default function RootLayout({
