@@ -12,6 +12,9 @@ export default function Footer() {
           <br />
           오늘의딜은 통신판매중개자가 아니며, 상품 정보 및 거래에 대한 책임은 각 판매처에 있습니다.
         </div>
+        <div className={styles.business}>
+          운영 (주)슬로우베리 · Operator KIM YONG MIN · 문의 hello@todaydeals.co.kr
+        </div>
         <div className={styles.links}>
           <a href="#">이용약관</a>
           <a href="#">개인정보처리방침</a>
