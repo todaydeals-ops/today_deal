@@ -14,7 +14,9 @@ export default function Footer() {
           오늘의딜은 통신판매중개자가 아니며, 상품 정보 및 거래에 대한 책임은 각 판매처에 있습니다.
         </div>
         <div className={styles.business}>
-          운영 (주)슬로우베리 · Operator KIM YONG MIN · 문의 hello@todaydeals.co.kr
+          (주)슬로우베리 · 대표 KIM YONG MIN · 사업자등록번호 830-88-02974
+          <br />
+          경기도 성남시 분당구 야탑로28 401호 · 문의 hello@todaydeals.co.kr
         </div>
         <div className={styles.links}>
           <Link href="/terms">이용약관</Link>

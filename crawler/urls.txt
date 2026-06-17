@@ -1,0 +1,9 @@
+# 타임딜 후보 상품 URL — 한 줄에 하나. (# 으로 시작하면 주석)
+# 지마켓 / 11번가 / 알리익스프레스 상품 URL을 붙여넣고 `node crawler/collect.mjs` 실행.
+# 서버가 제목·이미지·가격(OG)·제휴링크를 자동으로 채워 등록합니다.
+# (상품명·가격이 자동 수집 안 되는 URL은 건너뜀 → 그건 /admin/timedeal 에서 수동 보정 등록)
+#
+# 예시:
+# https://item.gmarket.co.kr/Item?goodscode=2995909256
+# https://www.11st.co.kr/products/1234567890
+# https://www.aliexpress.com/item/1005006000000000.html

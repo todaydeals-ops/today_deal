@@ -28,6 +28,9 @@ export function middleware(req: NextRequest) {
   });
 }
 
+// /admin 페이지 + 브라우저용 타임딜 API(목록/등록/삭제/미리보기) Basic Auth 보호.
+// /api/deals/ingest 는 크롤러(머신)용이라 제외 — 자체 CRON_SECRET으로 인증.
+// (관리자 페이지에서 Basic Auth 인증 후 동일 출처 fetch는 브라우저가 자동으로 인증 헤더 전송)
 export const config = {
-  matcher: ["/admin/:path*"],
+  matcher: ["/admin/:path*", "/api/deals", "/api/deals/preview"],
 };

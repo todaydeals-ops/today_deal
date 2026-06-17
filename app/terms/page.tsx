@@ -90,14 +90,15 @@ export default function TermsPage() {
         관할하는 법원을 합의 관할로 합니다.
       </p>
 
-      <h2>제10조 (문의처)</h2>
+      <h2>제10조 (사업자 정보 및 문의처)</h2>
       <p>
-        서비스 관련 문의: <a href="mailto:hello@todaydeals.co.kr">hello@todaydeals.co.kr</a>
+        상호: (주)슬로우베리 · 대표 KIM YONG MIN
         <br />
-        운영: (주)슬로우베리 · 대표 KIM YONG MIN
-      </p>
-      <p className="muted">
-        ※ 사업자등록번호·통신판매업 신고번호·사업장 주소는 사업자 정보 확정 후 기재 예정입니다.
+        사업자등록번호: 830-88-02974
+        <br />
+        주소: 경기도 성남시 분당구 야탑로28 401호
+        <br />
+        문의: <a href="mailto:hello@todaydeals.co.kr">hello@todaydeals.co.kr</a>
       </p>
     </LegalLayout>
   );

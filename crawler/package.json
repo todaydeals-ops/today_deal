@@ -1,0 +1,13 @@
+{
+  "name": "oneuldeal-crawler",
+  "private": true,
+  "type": "module",
+  "description": "오늘의딜 외부 타임딜 URL 수집기 (앱과 분리, 독립 실행)",
+  "scripts": {
+    "collect": "node collect.mjs",
+    "collect:headless": "node collect-headless.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}

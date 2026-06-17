@@ -24,3 +24,7 @@ next-env.d.ts
 # env
 .env*.local
 .env
+
+# 크롤러 시크릿
+crawler/.env
+crawler/node_modules

@@ -125,8 +125,11 @@ export default function PrivacyPage() {
         개인정보 보호책임자: KIM YONG MIN
         <br />
         문의: <a href="mailto:hello@todaydeals.co.kr">hello@todaydeals.co.kr</a>
+      </p>
+      <p>
+        운영: (주)슬로우베리 · 사업자등록번호 830-88-02974
         <br />
-        운영: (주)슬로우베리
+        주소: 경기도 성남시 분당구 야탑로28 401호
       </p>
 
       <h2>10. 방침의 변경</h2>
