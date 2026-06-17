@@ -78,6 +78,31 @@ export async function searchCoupang(
   }
 }
 
+// 쿠팡 딥링크: 임의의 쿠팡 URL(검색/상품 페이지) → 제휴 트래킹 링크(lptag 포함).
+const DEEPLINK_PATH = "/v2/providers/affiliate_open_api/apis/openapi/v1/deeplink";
+
+export async function coupangDeeplink(targetUrl: string): Promise<string | null> {
+  const accessKey = process.env.COUPANG_ACCESS_KEY;
+  const secretKey = process.env.COUPANG_SECRET_KEY;
+  if (!accessKey || !secretKey || !targetUrl) return null;
+  // POST는 query가 없으므로 서명 message = datetime + "POST" + path + ""
+  const authorization = authorizationHeader("POST", DEEPLINK_PATH, "", accessKey, secretKey);
+  try {
+    const res = await fetch(`${DOMAIN}${DEEPLINK_PATH}`, {
+      method: "POST",
+      headers: { Authorization: authorization, "Content-Type": "application/json" },
+      body: JSON.stringify({ coupangUrls: [targetUrl] }),
+      signal: AbortSignal.timeout(8000),
+    });
+    if (!res.ok) return null;
+    const json = await res.json();
+    const item = json?.data?.[0];
+    return (item?.shortenUrl as string) || (item?.landingUrl as string) || null;
+  } catch {
+    return null;
+  }
+}
+
 // 키 없을 때 데모용 목 검색 결과
 export function mockCoupangSearch(keyword: string): CoupangProduct[] {
   const base = [12900, 23900, 8900, 45900];
