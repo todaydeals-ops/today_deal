@@ -24,21 +24,22 @@ const env = loadEnv();
 export const INGEST_URL = env.INGEST_URL || "https://todaydeals.co.kr/api/deals/ingest";
 export const SECRET = env.INGEST_SECRET || env.CRON_SECRET || "";
 
-export async function sendToIngest(urls, opts = {}) {
-  const unique = [...new Set(urls)].filter(Boolean);
+// 임의 페이로드(urls 또는 deals)를 ingest로 전송
+export async function postIngest(payload) {
   if (!SECRET) {
     console.error("INGEST_SECRET(=서버 CRON_SECRET) 미설정. crawler/.env 에 넣으세요 (.env.example 참고).");
     process.exit(1);
   }
-  if (unique.length === 0) {
-    console.log("보낼 URL이 없습니다.");
+  const count = (payload.urls?.length ?? 0) + (payload.deals?.length ?? 0);
+  if (count === 0) {
+    console.log("보낼 항목이 없습니다.");
     return;
   }
-  console.log(`→ ${unique.length}개 URL 전송: ${INGEST_URL}`);
+  console.log(`→ ${count}건 전송: ${INGEST_URL}`);
   const res = await fetch(INGEST_URL, {
     method: "POST",
     headers: { "Content-Type": "application/json", Authorization: `Bearer ${SECRET}` },
-    body: JSON.stringify({ urls: unique, ...opts }),
+    body: JSON.stringify(payload),
   });
   const data = await res.json().catch(() => ({}));
   if (!res.ok || !data.ok) {
@@ -51,4 +52,10 @@ export async function sendToIngest(urls, opts = {}) {
     for (const s of data.skipped) console.log(`   - [${s.reason}] ${s.url}`);
   }
   return data;
+}
+
+// URL 목록 전송 (서버가 메타 fetch) — 차단 안 되는 소스용
+export async function sendToIngest(urls, opts = {}) {
+  const unique = [...new Set(urls)].filter(Boolean);
+  return postIngest({ urls: unique, ...opts });
 }
