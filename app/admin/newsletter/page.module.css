@@ -1,0 +1,408 @@
+.wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 28px 20px 60px;
+}
+
+.head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.head h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-strong);
+}
+
+.adminLinks {
+  display: flex;
+  gap: 14px;
+}
+
+.adminLinks a {
+  font-size: 13px;
+  color: var(--text-body);
+  text-decoration: none;
+}
+
+.adminLinks a:hover {
+  color: var(--text-strong);
+}
+
+.recipients {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--text-body);
+  background: var(--bg-sunken);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 22px;
+}
+
+.recipients i {
+  color: var(--accent-deal);
+}
+
+.recipients strong {
+  color: var(--accent-deal);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 28px;
+  align-items: start;
+}
+
+.composer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-body);
+  margin-bottom: 6px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 9px 12px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text-strong);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  outline: none;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: var(--accent-deal);
+}
+
+.textarea {
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.checkRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-strong);
+  cursor: pointer;
+}
+
+.hint {
+  font-style: normal;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.dealPick {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 260px;
+  overflow-y: auto;
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.pickItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pickItem:hover {
+  background: var(--bg-sunken);
+}
+
+.picked {
+  background: var(--bg-sunken);
+}
+
+.pickName {
+  flex: 1;
+  font-size: 13px;
+  color: var(--text-strong);
+  line-height: 1.4;
+}
+
+.pickName em {
+  display: block;
+  font-style: normal;
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.sendBtn {
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent-deal);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.sendBtn:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.message {
+  font-size: 13px;
+  color: var(--text-strong);
+  background: var(--bg-sunken);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.sendNote {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* 이메일 미리보기 */
+.previewCol {
+  position: sticky;
+  top: 20px;
+}
+
+.previewLabel {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.email {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  padding: 20px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.emailBrand {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-strong);
+  margin-bottom: 14px;
+}
+
+.brandDot {
+  color: var(--accent-deal);
+}
+
+.emailSubject {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-strong);
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+
+.emailIntro {
+  font-size: 13px;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.emailSection {
+  margin-bottom: 18px;
+}
+
+.emailSection h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-strong);
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.winnerLine {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.winnerLine strong {
+  color: var(--text-strong);
+}
+
+.winnerLine span {
+  color: var(--accent-deal);
+  font-weight: 600;
+}
+
+.emptyDeals {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.emailDeals {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.emailDeal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.emailThumb {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--bg-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c2bcb0;
+  overflow: hidden;
+}
+
+.emailThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.emailDealBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.emailDealName {
+  font-size: 12px;
+  color: var(--text-strong);
+  line-height: 1.35;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.emailDealPrice {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-strong);
+}
+
+.emailDealPrice em {
+  font-style: normal;
+  color: var(--accent-deal);
+  margin-right: 4px;
+}
+
+.emailDealCta {
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent-deal);
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  padding: 5px 8px;
+}
+
+.emailFooter {
+  font-size: 10px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  border-top: 1px solid var(--border-soft);
+  padding-top: 12px;
+  margin-top: 6px;
+}
+
+/* 발송 내역 */
+.history {
+  margin-top: 36px;
+}
+
+.history h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-strong);
+  margin-bottom: 12px;
+}
+
+.history ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.history li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.histSubject {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-strong);
+}
+
+.histMeta {
+  flex-shrink: 0;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+@media (max-width: 760px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .previewCol {
+    position: static;
+  }
+}

@@ -1,0 +1,140 @@
+.header {
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-soft);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 62px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo svg {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav a {
+  font-size: 14px;
+  color: var(--text-body);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.nav a:hover {
+  color: var(--text-strong);
+}
+
+.active {
+  color: var(--text-strong) !important;
+  font-weight: 600;
+}
+
+/* 로고와 동일한 테라코타 점 (브랜드 운율) */
+.dot {
+  color: var(--accent-deal);
+  font-weight: 800;
+}
+
+.userBtn {
+  width: 32px;
+  height: 32px;
+  background: var(--bg-muted);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* 로그인 버튼 라벨은 모바일 드롭다운에서만 노출 */
+.userBtnLabel {
+  display: none;
+}
+
+/* 햄버거 — 데스크탑에선 숨김 */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-strong);
+  font-size: 24px;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+}
+
+@media (max-width: 760px) {
+  .hamburger {
+    display: flex;
+    align-items: center;
+  }
+
+  /* 메뉴는 헤더 아래 드롭다운으로 */
+  .nav {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    right: 0;
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border-soft);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 6px 0;
+    display: none;
+    box-shadow: 0 6px 16px rgba(44, 42, 38, 0.06);
+  }
+
+  .navOpen {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+
+  .nav a:hover {
+    background: var(--bg-sunken);
+  }
+
+  /* 모바일에선 로그인 버튼을 라벨 있는 풀폭 항목으로 */
+  .userBtn {
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    background: none;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 14px 20px;
+    font-size: 15px;
+    color: var(--text-body);
+    border-top: 1px solid var(--border-soft);
+    margin-top: 4px;
+  }
+
+  .userBtnLabel {
+    display: inline;
+  }
+}

@@ -1,0 +1,137 @@
+.wrap {
+  position: relative;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 12px 0 10px;
+  background: var(--bg-muted);
+  border: none;
+  border-radius: 999px;
+  color: var(--text-body);
+  font-size: 13px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.trigger i {
+  font-size: 16px;
+}
+
+.trigger:hover {
+  color: var(--text-strong);
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 42px;
+  width: 240px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(44, 42, 38, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 20;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-strong);
+}
+
+.sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 12px;
+  color: var(--text-body);
+  line-height: 1.45;
+  cursor: pointer;
+}
+
+.consent input {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.consent em {
+  font-style: normal;
+  color: var(--text-muted);
+}
+
+.sns {
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.sns:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.kakao {
+  background: #fee500;
+  color: #191600;
+}
+
+.naver {
+  background: #03c75a;
+  color: #fff;
+}
+
+.logout {
+  padding: 9px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-body);
+  background: #fff;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* 모바일 드롭다운(헤더 메뉴) 안에서는 풀폭 정렬 */
+@media (max-width: 760px) {
+  .wrap {
+    width: 100%;
+    border-top: 1px solid var(--border-soft);
+    margin-top: 4px;
+    padding: 10px 20px 4px;
+  }
+
+  .trigger {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .dropdown {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    padding: 12px 0 0;
+  }
+}

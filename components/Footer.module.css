@@ -1,0 +1,27 @@
+.footer {
+  margin-top: 48px;
+  padding: 28px 0 40px;
+  border-top: 1px solid var(--border-soft);
+}
+
+.notice {
+  background: var(--bg-sunken);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.links {
+  display: flex;
+  gap: 18px;
+  font-size: 12px;
+  color: var(--text-body);
+}
+
+.links a {
+  color: var(--text-body);
+  text-decoration: none;
+}

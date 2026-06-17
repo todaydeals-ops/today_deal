@@ -1,0 +1,57 @@
+/* 데스크탑: 3열 동시, 탭 숨김 */
+.tabs {
+  display: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.colWrap {
+  display: block;
+}
+
+/* 모바일: 탭 노출 + 활성 플랫폼 열만 표시 */
+@media (max-width: 760px) {
+  .tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+
+  .tab {
+    flex: 1;
+    padding: 10px 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-body);
+    background: var(--bg-surface);
+    border: 1px solid var(--border-soft);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.12s;
+    white-space: nowrap;
+  }
+
+  .tabActive {
+    color: #fff;
+    background: var(--text-strong);
+    border-color: var(--text-strong);
+    font-weight: 600;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .colWrap {
+    display: none;
+  }
+
+  .colActive {
+    display: block;
+  }
+}

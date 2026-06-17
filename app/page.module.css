@@ -1,0 +1,23 @@
+.sectionHead {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  margin: 26px 0 4px;
+}
+
+.sectionHead h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-strong);
+}
+
+.sub {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.sectionDesc {
+  font-size: 13px;
+  color: var(--text-body);
+  margin-bottom: 18px;
+}

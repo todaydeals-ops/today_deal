@@ -1,0 +1,238 @@
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 20px 60px;
+}
+
+.head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.head h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-strong);
+}
+
+.viewLink {
+  font-size: 13px;
+  color: var(--text-body);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.guide {
+  font-size: 13px;
+  color: var(--text-body);
+  line-height: 1.6;
+  background: var(--bg-sunken);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.typeTag {
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.weekly {
+  color: var(--accent-timer);
+  background: rgba(29, 158, 117, 0.1);
+}
+
+.monthly {
+  color: var(--accent-deal);
+  background: rgba(216, 90, 48, 0.1);
+}
+
+.titleBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.prize {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-strong);
+  line-height: 1.35;
+}
+
+.winnerCount {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-body);
+}
+
+.metaRow {
+  display: flex;
+  gap: 16px;
+  margin: 12px 0;
+  font-size: 12px;
+  color: var(--text-body);
+}
+
+.metaRow span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.metaRow i {
+  color: var(--text-muted);
+}
+
+.drawBtn {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent-deal);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.drawBtn:hover {
+  opacity: 0.92;
+}
+
+/* 결과 */
+.resultBox {
+  background: var(--bg-sunken);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.resultHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-strong);
+  margin-bottom: 10px;
+}
+
+.drawnAt {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.winners {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.winners li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-surface);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+.meWinner {
+  outline: 2px solid var(--accent-deal);
+}
+
+.rank {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  background: var(--text-strong);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wname {
+  flex: 1;
+  font-weight: 600;
+  color: var(--text-strong);
+}
+
+.wentry {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.redraw,
+.clear {
+  flex: 1;
+  padding: 9px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.redraw {
+  color: var(--text-strong);
+  background: #fff;
+  border: 1px solid var(--border-strong);
+}
+
+.clear {
+  color: var(--text-muted);
+  background: #fff;
+  border: 1px solid var(--border-soft);
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>오늘의딜 — 매일매일 새로운 타임딜을 한눈에</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.2.0/tabler-icons.min.css" />
+<style>
+  :root{
+    --bg-canvas:#FBFAF7; --bg-surface:#FFFFFF; --bg-muted:#F1EEE8; --bg-sunken:#F4F1EA;
+    --text-strong:#2C2A26; --text-body:#6B6760; --text-muted:#A39C8E;
+    --accent-deal:#D85A30; --accent-timer:#1D9E75; --accent-soldout:#A39C8E;
+    --border-soft:#ECE8E0; --border-strong:#D9D3C8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg-canvas);color:var(--text-strong);-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px;}
+
+  /* 헤더 */
+  header{background:var(--bg-surface);border-bottom:1px solid var(--border-soft);position:sticky;top:0;z-index:10;}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;height:62px;}
+  .logo{display:flex;align-items:center;}
+  .logo svg{height:32px;width:auto;display:block;}
+  nav{display:flex;align-items:center;gap:24px;}
+  nav a{font-size:14px;color:var(--text-body);text-decoration:none;transition:color .15s;}
+  nav a:hover{color:var(--text-strong);}
+  nav a.active{color:var(--text-strong);font-weight:600;}
+  .user-btn{width:32px;height:32px;background:var(--bg-muted);border:none;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--text-muted);cursor:pointer;font-size:17px;}
+
+  /* 배너 */
+  .banner{background:var(--bg-sunken);border:1px dashed var(--border-strong);border-radius:12px;min-height:140px;display:flex;align-items:center;justify-content:center;gap:8px;color:var(--text-muted);font-size:13px;margin:18px 0;overflow:hidden;}
+  .banner img{width:100%;height:auto;display:block;border-radius:12px;}
+
+  /* 섹션 타이틀 */
+  .section-head{display:flex;align-items:baseline;gap:9px;margin:26px 0 4px;}
+  .section-head h2{font-size:22px;font-weight:600;color:var(--text-strong);}
+  .section-head .sub{font-size:13px;color:var(--text-muted);}
+  .section-desc{font-size:13px;color:var(--text-body);margin-bottom:18px;}
+
+  /* 타임딜 3열 */
+  .timedeal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .deal-col{display:flex;flex-direction:column;gap:12px;}
+  .col-head{text-align:center;font-size:12px;font-weight:600;color:var(--text-body);letter-spacing:.3px;padding-bottom:8px;border-bottom:1px solid var(--border-soft);}
+
+  .deal-card{background:var(--bg-surface);border:1px solid var(--border-soft);border-radius:14px;padding:11px;transition:transform .12s, box-shadow .12s;cursor:pointer;}
+  .deal-card:hover{transform:translateY(-2px);box-shadow:0 4px 14px rgba(44,42,38,.07);}
+  .deal-img-wrap{position:relative;margin-bottom:9px;}
+  .deal-img{width:100%;aspect-ratio:1.1;background:var(--bg-muted);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#C2BCB0;font-size:28px;overflow:hidden;}
+  .deal-img img{width:100%;height:100%;object-fit:cover;}
+  .timer{position:absolute;left:7px;bottom:7px;background:var(--accent-timer);color:#fff;font-size:11px;padding:3px 7px;border-radius:6px;display:flex;align-items:center;gap:3px;font-variant-numeric:tabular-nums;}
+  .deal-name{font-size:13px;color:var(--text-body);line-height:1.4;height:36px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;margin-bottom:9px;}
+  .deal-price{display:flex;align-items:baseline;gap:5px;margin-bottom:11px;}
+  .discount{font-size:14px;font-weight:600;color:var(--accent-deal);}
+  .price{font-size:19px;font-weight:600;color:var(--text-strong);}
+  .won{font-size:12px;color:var(--text-muted);}
+  .compare-btn{width:100%;padding:8px;font-size:12px;font-weight:500;background:#fff;border:1px solid var(--border-strong);border-radius:8px;color:var(--text-strong);display:flex;align-items:center;justify-content:center;gap:5px;cursor:pointer;transition:background .12s;}
+  .compare-btn:hover{background:var(--bg-sunken);}
+
+  /* 품절 */
+  .deal-card.soldout{opacity:.6;}
+  .deal-card.soldout:hover{transform:none;box-shadow:none;}
+  .soldout-overlay{position:absolute;inset:0;background:rgba(251,250,247,.5);border-radius:8px;display:flex;align-items:center;justify-content:center;}
+  .soldout-badge{background:var(--accent-soldout);color:#fff;font-size:12px;font-weight:600;padding:5px 14px;border-radius:7px;}
+  .deal-card.soldout .discount,.deal-card.soldout .price,.deal-card.soldout .deal-name{color:var(--text-muted);}
+  .compare-btn.disabled{background:var(--bg-sunken);border-color:var(--border-soft);color:var(--text-muted);cursor:not-allowed;}
+
+  /* 푸터 */
+  footer{margin-top:48px;padding:28px 0 40px;border-top:1px solid var(--border-soft);}
+  .footer-notice{background:var(--bg-sunken);border-radius:8px;padding:12px 16px;font-size:12px;color:var(--text-muted);line-height:1.6;margin-bottom:16px;}
+  .footer-links{display:flex;gap:18px;font-size:12px;color:var(--text-body);}
+  .footer-links a{color:var(--text-body);text-decoration:none;}
+
+  @media(max-width:760px){
+    .timedeal-grid{grid-template-columns:1fr;gap:24px;}
+    nav{gap:14px;}
+    nav a{font-size:13px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.2 28.6" role="img" aria-label="오늘의딜">
+        <rect x="2.0" y="-4.1" width="36.7" height="36.7" rx="9.5" fill="#D85A30"/>
+        <circle cx="20.4" cy="14.3" r="11.0" fill="none" stroke="#FFFFFF" stroke-width="2.0"/>
+        <line x1="20.4" y1="14.3" x2="20.4" y2="8.2" stroke="#FFFFFF" stroke-width="2.0" stroke-linecap="round"/>
+        <line x1="20.4" y1="14.3" x2="13.5" y2="14.3" stroke="#FFFFFF" stroke-width="2.0" stroke-linecap="round"/>
+        <path d="M884 1556C488 1558 190 1354 190 1048C190 769 419 583 742 542V250H48V16H1726V250H1026V542C1351 583 1582 769 1582 1048C1582 1354 1280 1558 884 1556ZM884 1328C1130 1328 1296 1224 1296 1048C1296 860 1130 760 884 760C642 760 474 860 476 1048C474 1224 642 1328 884 1328Z" transform="translate(47.72,26.57) scale(0.01660,-0.01660)" fill="#2C2A26"/>
+        <path d="M1532 1294H536V1624H250V1068H1532ZM1724 964H46V738H1724ZM1528 644H232V424H1242V342H234V-172H1582V48H524V138H1528Z" transform="translate(76.94,26.57) scale(0.01660,-0.01660)" fill="#2C2A26"/>
+        <path d="M640 1524C350 1526 126 1334 126 1068C126 802 350 610 640 612C932 610 1152 802 1154 1068C1152 1334 932 1526 640 1524ZM640 1276C772 1276 872 1202 874 1068C872 930 772 860 640 860C512 860 412 930 412 1068C412 1202 512 1276 640 1276ZM1600 1644H1314V-196H1600ZM56 402 88 170C406 170 836 174 1238 252L1216 460C828 406 378 402 56 402Z" transform="translate(106.16,26.57) scale(0.01660,-0.01660)" fill="#2C2A26"/>
+        <path d="M1588 1644H1302V726H1588ZM1588 658H350V438H1306V348H350V-182H1632V40H634V142H1588ZM1024 1548H150V778H312C726 776 950 790 1190 842L1162 1060C952 1017 760 1005 438 1002V1322H1024Z" transform="translate(135.38,26.57) scale(0.01660,-0.01660)" fill="#2C2A26"/>
+        <rect x="167.8" y="19.1" width="7.5" height="7.5" rx="2.4" fill="#D85A30"/>
+      </svg>
+    </div>
+    <nav>
+      <a href="#" class="active">타임딜</a>
+      <a href="#">추천딜</a>
+      <a href="#">나눔딜</a>
+      <button class="user-btn" aria-label="로그인"><i class="ti ti-user"></i></button>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="banner">
+    <!-- 배너 이미지를 넣으면 비율대로 꽉 차게 들어갑니다. 예: <img src="banner.jpg" alt="프로모션"> -->
+    <i class="ti ti-photo"></i>
+    <span>배너 영역 — 넣는 이미지가 그대로 들어갑니다</span>
+  </div>
+
+  <div class="section-head">
+    <h2>지금 뜬 딜</h2>
+    <span class="sub">실시간</span>
+  </div>
+  <p class="section-desc">세 곳에서 동시에 진행 중인 특가예요. 마감되면 사라집니다.</p>
+
+  <div class="timedeal-grid">
+
+    <!-- 지마켓 -->
+    <div class="deal-col">
+      <div class="col-head">지마켓 슈퍼딜</div>
+      <div class="deal-card">
+        <div class="deal-img-wrap">
+          <div class="deal-img"><i class="ti ti-photo"></i></div>
+          <div class="timer"><i class="ti ti-clock"></i><span data-end="29801">08:16:41</span></div>
+        </div>
+        <div class="deal-name">퐁퐁 친환경 주방세제 오렌지 980ml + 리필 1.2L 3개</div>
+        <div class="deal-price"><span class="discount">45%</span><span class="price">9,900</span><span class="won">원</span></div>
+        <button class="compare-btn"><i class="ti ti-arrows-left-right"></i>최저가 비교</button>
+      </div>
+      <div class="deal-card">
+        <div class="deal-img-wrap">
+          <div class="deal-img"><i class="ti ti-photo"></i></div>
+          <div class="timer"><i class="ti ti-clock"></i><span data-end="29801">08:16:41</span></div>
+        </div>
+        <div class="deal-name">스파크 찬물세척 실내건조 세탁세제 9Kg 1+1</div>
+        <div class="deal-price"><span class="discount">39%</span><span class="price">20,900</span><span class="won">원</span></div>
+        <button class="compare-btn"><i class="ti ti-arrows-left-right"></i>최저가 비교</button>
+      </div>
+      <div class="deal-card">
+        <div class="deal-img-wrap">
+          <div class="deal-img"><i class="ti ti-photo"></i></div>
+          <div class="timer"><i class="ti ti-clock"></i><span data-end="29801">08:16:41</span></div>
+        </div>
+        <div class="deal-name">아웃도어프로덕츠 스탠다드 로고 티셔츠 5컬러</div>
+        <div class="deal-price"><span class="discount">44%</span><span class="price">16,240</span><span class="won">원</span></div>
+        <button class="compare-btn"><i class="ti ti-arrows-left-right"></i>최저가 비교</button>
+      </div>
+    </div>
+
+    <!-- 11번가 -->
+    <div class="deal-col">
+      <div class="col-head">11번가 쇼킹타임</div>
+      <div class="deal-card">
+        <div class="deal-img-wrap">
+          <div class="deal-img"><i class="ti ti-photo"></i></div>
+          <div class="timer"><i class="ti ti-clock"></i><span data-end="33236">09:13:56</span></div>
+        </div>
+        <div class="deal-name">식탁정복 소불고기 500g, 3팩</div>
+        <div class="deal-price"><span class="discount">30%</span><span class="price">14,980</span><span class="won">원</span></div>
+        <button class="compare-btn"><i class="ti ti-arrows-left-right"></i>최저가 비교</button>
+      </div>
+      <div class="deal-card soldout">
+        <div class="deal-img-wrap">
+          <div class="deal-img"><i class="ti ti-photo"></i></div>
+          <div class="soldout-overlay"><span class="soldout-badge">품절</span></div>
+        </div>
+        <div class="deal-name">바프 허니버터아몬드 파티박스 20gX25</div>
+        <div class="deal-price"><span class="discount">14%</span><span class="price">16,920</span><span class="won">원</span></div>
+        <button class="compare-btn"><i class="ti ti-search"></i>쿠팡에서 비슷한 상품 찾기</button>
+      </div>
+      <div class="deal-card">
+        <div class="deal-img-wrap">
+          <div class="deal-img"><i class="ti ti-photo"></i></div>
+          <div class="timer"><i class="ti ti-clock"></i><span data-end="33236">09:13:56</span></div>
+        </div>
+        <div class="deal-name">바프 허니버터아몬드 마늘버터어묵 20gX25</div>
+        <div class="deal-price"><span class="discount">14%</span><span class="price">16,920</span><span class="won">원</span></div>
+        <button class="compare-btn"><i class="ti ti-arrows-left-right"></i>최저가 비교</button>
+      </div>
+    </div>
+
+    <!-- 알리 -->
+    <div class="deal-col">
+      <div class="col-head">알리 타임딜</div>
+      <div class="deal-card">
+        <div class="deal-img-wrap">
+          <div class="deal-img"><i class="ti ti-photo"></i></div>
+          <div class="timer"><i class="ti ti-clock"></i><span data-end="29544">08:12:24</span></div>
+        </div>
+        <div class="deal-name">미담채 국산 전라도 배추김치 포기김치 3kg/5kg 외</div>
+        <div class="deal-price"><span class="discount">36%</span><span class="price">8,230</span><span class="won">원</span></div>
+        <button class="compare-btn"><i class="ti ti-arrows-left-right"></i>최저가 비교</button>
+      </div>
+      <div class="deal-card">
+        <div class="deal-img-wrap">
+          <div class="deal-img"><i class="ti ti-photo"></i></div>
+          <div class="timer"><i class="ti ti-clock"></i><span data-end="29544">08:12:24</span></div>
+        </div>
+        <div class="deal-name">요거프레소 200ml 카페라떼 10컵 + 카페모카 10컵</div>
+        <div class="deal-price"><span class="discount">31%</span><span class="price">14,970</span><span class="won">원</span></div>
+        <button class="compare-btn"><i class="ti ti-arrows-left-right"></i>최저가 비교</button>
+      </div>
+      <div class="deal-card">
+        <div class="deal-img-wrap">
+          <div class="deal-img"><i class="ti ti-photo"></i></div>
+          <div class="timer"><i class="ti ti-clock"></i><span data-end="29544">08:12:24</span></div>
+        </div>
+        <div class="deal-name">고기중독 소고기모듬 1kg 구이용 안창살 토시살</div>
+        <div class="deal-price"><span class="discount">25%</span><span class="price">23,150</span><span class="won">원</span></div>
+        <button class="compare-btn"><i class="ti ti-arrows-left-right"></i>최저가 비교</button>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-notice">
+      이 사이트는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.<br>
+      오늘의딜은 통신판매중개자가 아니며, 상품 정보 및 거래에 대한 책임은 각 판매처에 있습니다.
+    </div>
+    <div class="footer-links">
+      <a href="#">이용약관</a>
+      <a href="#">개인정보처리방침</a>
+      <a href="#">제휴문의</a>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  // 타이머 카운트다운 (데모용)
+  function pad(n){return String(n).padStart(2,'0');}
+  function tick(){
+    document.querySelectorAll('.timer span[data-end]').forEach(function(el){
+      var s = parseInt(el.getAttribute('data-end'),10);
+      if(s<=0){el.textContent='00:00:00';return;}
+      s--; el.setAttribute('data-end',s);
+      var h=Math.floor(s/3600), m=Math.floor((s%3600)/60), sec=s%60;
+      el.textContent = pad(h)+':'+pad(m)+':'+pad(sec);
+    });
+  }
+  setInterval(tick,1000);
+</script>
+
+</body>
+</html>

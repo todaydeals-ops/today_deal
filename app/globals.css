@@ -1,0 +1,43 @@
+/* 오늘의딜 — 디자인 토큰 (DESIGN_SYSTEM.md 기준)
+   소프트 뉴트럴: 크림빛 캔버스 위, 테라코타 가격 */
+:root {
+  /* 배경 */
+  --bg-canvas: #fbfaf7;
+  --bg-surface: #ffffff;
+  --bg-muted: #f1eee8;
+  --bg-sunken: #f4f1ea;
+  /* 텍스트 */
+  --text-strong: #2c2a26;
+  --text-body: #6b6760;
+  --text-muted: #a39c8e;
+  /* 포인트 (절제) */
+  --accent-deal: #d85a30; /* 할인율 — 테라코타 */
+  --accent-timer: #1d9e75; /* 타이머 — 그린 */
+  --accent-soldout: #a39c8e; /* 품절/마감 */
+  /* 보더 */
+  --border-soft: #ece8e0;
+  --border-strong: #d9d3c8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-canvas);
+  color: var(--text-strong);
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  color: inherit;
+}

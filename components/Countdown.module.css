@@ -1,0 +1,14 @@
+.timer {
+  position: absolute;
+  left: 7px;
+  bottom: 7px;
+  background: var(--accent-timer);
+  color: #fff;
+  font-size: 11px;
+  padding: 3px 7px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-variant-numeric: tabular-nums;
+}

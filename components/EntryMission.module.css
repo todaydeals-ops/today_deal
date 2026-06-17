@@ -1,0 +1,368 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(44, 42, 38, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 100;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--bg-surface);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.close {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: var(--bg-muted);
+  border-radius: 50%;
+  color: var(--text-body);
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kicker {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-deal);
+}
+
+.prize {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-strong);
+  line-height: 1.35;
+  margin: 6px 0 16px;
+  padding-right: 36px;
+}
+
+.entryBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-sunken);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: var(--text-body);
+  margin-bottom: 18px;
+}
+
+.entryBadge i {
+  color: var(--accent-deal);
+  font-size: 18px;
+}
+
+.entryBadge strong {
+  color: var(--accent-deal);
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+/* 스텝 */
+.step {
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.done {
+  background: var(--bg-sunken);
+  border-color: var(--border-soft);
+}
+
+.locked {
+  opacity: 0.55;
+}
+
+.stepHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.stepNo {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  background: var(--text-strong);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.done .stepNo {
+  background: var(--accent-timer);
+}
+
+.stepTitle {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-strong);
+}
+
+.stepReward {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent-deal);
+  font-variant-numeric: tabular-nums;
+}
+
+.stepDoneText,
+.lockedText {
+  font-size: 13px;
+  color: var(--text-body);
+}
+
+/* 로그인 */
+.loginRow {
+  display: flex;
+  gap: 8px;
+}
+
+.snsBtn {
+  flex: 1;
+  padding: 11px;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.kakao {
+  background: #fee500;
+  color: #191600;
+}
+
+.naver {
+  background: #03c75a;
+  color: #fff;
+}
+
+/* 동의 */
+.consentRow {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-body);
+  line-height: 1.45;
+  cursor: pointer;
+}
+
+.consent input {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.consent em {
+  font-style: normal;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.loginBox {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.primaryBtn {
+  width: 100%;
+  padding: 11px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent-deal);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.plus {
+  margin-left: 6px;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.waitBtn {
+  width: 100%;
+  padding: 11px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--bg-sunken);
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  cursor: default;
+}
+
+.adBtn {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-strong);
+  background: #fff;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.adBtn:hover:not(:disabled) {
+  background: var(--bg-sunken);
+}
+
+.adBtn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.shareGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.shareChip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 11px 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-strong);
+  background: #fff;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.shareChip i {
+  font-size: 18px;
+}
+
+.shareChip:hover:not(:disabled) {
+  background: var(--bg-sunken);
+}
+
+.shareUsed {
+  color: var(--accent-timer);
+  border-color: var(--accent-timer);
+  background: rgba(29, 158, 117, 0.08);
+  cursor: default;
+}
+
+.shareHint {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.message {
+  font-size: 13px;
+  color: var(--text-strong);
+  background: var(--bg-sunken);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-top: 4px;
+}
+
+.note {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 14px;
+}
+
+/* 광고 오버레이 */
+.adOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 19, 17, 0.92);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 24px;
+}
+
+.adTag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.adScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+}
+
+.adScreen i {
+  font-size: 44px;
+  opacity: 0.85;
+}
+
+.adScreen p {
+  font-size: 14px;
+}
+
+.adTimer {
+  font-size: 26px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.adHint {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}

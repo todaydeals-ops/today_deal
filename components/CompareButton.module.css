@@ -1,0 +1,21 @@
+.btn {
+  width: 100%;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  background: #fff;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  color: var(--text-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.12s;
+}
+
+.btn:hover {
+  background: var(--bg-sunken);
+}
