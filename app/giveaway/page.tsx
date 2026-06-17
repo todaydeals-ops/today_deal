@@ -5,6 +5,8 @@ import GiveawayCard from "@/components/GiveawayCard";
 import { fetchGiveaways } from "@/lib/data/giveaways";
 import styles from "./page.module.css";
 
+export const revalidate = 60;
+
 export const metadata: Metadata = {
   title: "오늘의딜 나눔이벤트 — 오늘의딜",
   description: "회원에게 매주·매월 드리는 무료 경품 이벤트",

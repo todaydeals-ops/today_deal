@@ -5,6 +5,9 @@ import Footer from "@/components/Footer";
 import { fetchDealsByPlatform } from "@/lib/data/deals";
 import styles from "./page.module.css";
 
+// DB 변경(크롤러·관리자)이 최대 60초 안에 반영되도록
+export const revalidate = 60;
+
 // 타임딜 메인 — 지마켓 / 11번가 / 알리 3열 (모바일은 탭 전환)
 export default async function Home() {
   const dealsByPlatform = await fetchDealsByPlatform();

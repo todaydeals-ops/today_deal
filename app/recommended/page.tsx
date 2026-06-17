@@ -6,6 +6,8 @@ import CuratedList from "@/components/CuratedList";
 import { partnerProfile } from "@/data/mockCurated";
 import { fetchActiveCurated } from "@/lib/data/curated";
 
+export const revalidate = 60;
+
 export const metadata: Metadata = {
   title: "오늘의 추천딜 — 오늘의딜",
   description: "직접 고른 쿠팡 핫딜 큐레이션",
