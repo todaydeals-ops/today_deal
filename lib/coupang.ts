@@ -187,6 +187,46 @@ export async function fetchCoupangProductMeta(url: string): Promise<CoupangUrlMe
   }
 }
 
+// 쿠팡 골드박스 (매일 오전 7시 갱신). productUrl은 이미 제휴 트래킹 링크.
+const GOLDBOX_PATH = "/v2/providers/affiliate_open_api/apis/openapi/v1/products/goldbox";
+
+export interface GoldboxProduct {
+  productId: string;
+  productName: string;
+  imageUrl?: string;
+  price: number;
+  productUrl: string; // 제휴 링크
+}
+
+export async function coupangGoldbox(): Promise<GoldboxProduct[] | null> {
+  const accessKey = process.env.COUPANG_ACCESS_KEY;
+  const secretKey = process.env.COUPANG_SECRET_KEY;
+  if (!accessKey || !secretKey) return null;
+  const authorization = authorizationHeader("GET", GOLDBOX_PATH, "", accessKey, secretKey);
+  try {
+    const res = await fetch(`${DOMAIN}${GOLDBOX_PATH}`, {
+      method: "GET",
+      headers: { Authorization: authorization, "Content-Type": "application/json" },
+      signal: AbortSignal.timeout(8000),
+    });
+    if (!res.ok) return null;
+    const json = await res.json();
+    const items: unknown[] = json?.data ?? [];
+    return items.map((it) => {
+      const p = it as Record<string, unknown>;
+      return {
+        productId: String(p.productId ?? ""),
+        productName: String(p.productName ?? ""),
+        imageUrl: (p.productImage as string) || undefined,
+        price: Number(p.productPrice ?? 0),
+        productUrl: String(p.productUrl ?? ""),
+      } satisfies GoldboxProduct;
+    });
+  } catch {
+    return null;
+  }
+}
+
 // 키 없을 때 데모용 목 검색 결과
 export function mockCoupangSearch(keyword: string): CoupangProduct[] {
   const base = [12900, 23900, 8900, 45900];
