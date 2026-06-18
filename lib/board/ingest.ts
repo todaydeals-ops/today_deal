@@ -1,7 +1,7 @@
 // 핫딜 자동수집 오케스트레이션:
 //  수집 → 교차 dedup → (신규만) 페르소나 리라이트 → 대기풀 적재 → 드립 공개 → 활동 시뮬(조회·추천)
 import { getSupabaseAdmin } from "@/lib/supabase/server";
-import { collectAll, fetchDealMeta, normalizeKey, type RawDeal } from "./sources";
+import { collectAll, fetchDealMeta, isFreebie, normalizeKey, type RawDeal } from "./sources";
 import { categorize } from "./categorize";
 import { personaFor } from "./personas";
 import { rewriteDeal } from "./rewrite";
@@ -88,13 +88,15 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
       return null;
     }
     const persona = personaFor(c.slug);
-    const category = c.boardType === "hot" ? categorize(c.title, c.category) : c.category ?? null;
+    // 무료 게임·앱 등은 어느 소스에서 왔든 '무료/이벤트' 보드로 라우팅
+    const boardType = isFreebie(c.rawTitle, c.price) ? "free" : c.boardType;
+    const category = boardType === "hot" ? categorize(c.title, c.category) : c.category ?? null;
     const rw = await rewriteDeal({ title: c.title, body: c.body, shop: c.shop, price: c.price }, persona);
     const imageUrl = c.imageUrl ?? meta.image;
     return {
       slug: c.slug,
       source: c.source,
-      board_type: c.boardType,
+      board_type: boardType,
       title: rw.title,
       shop: c.shop ?? null,
       category,

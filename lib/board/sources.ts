@@ -152,7 +152,7 @@ export async function collectAll(): Promise<RawDeal[]> {
 // 커뮤니티 글(뽐뿌/루리웹 view)에서 "실제 딜"을 추출 — 우리는 글을 베끼는 게 아니라
 // 그 안의 진짜 쇼핑몰 링크·이미지를 퍼와 우리 글로 가공한다. 신규 항목만 1회 호출.
 const SHOP_RE =
-  /https?:\/\/[a-z0-9.\-]*(lotteon|lotteimall|gmarket|g9\.co|11st|coupang|smartstore\.naver|brand\.naver|shopping\.naver|ssg|emart|homeplus|auction|tmon|interpark|wemakeprice|gsshop|cjonstyle|cjthemarket|hmall|kurly|oasis|dongwonmall|himart|electromart|29cm|musinsa|oliveyoung|ably|zigzag|wconcept|kakaostyle|ohou|cyso|danawa|enuri|aliexpress|amazon|qoo10|iherb|temu|banggood|ebay|play\.google|apps\.apple|store\.steampowered|nintendo|playstation|wadiz)[a-z0-9./?=&_%~\-]*/i;
+  /https?:\/\/[a-z0-9.\-]*(lotteon|lotteimall|gmarket|g9\.co|11st|coupang|smartstore\.naver|brand\.naver|shopping\.naver|ssg|emart|homeplus|auction|tmon|interpark|wemakeprice|gsshop|cjonstyle|cjthemarket|hmall|kurly|oasis|dongwonmall|himart|electromart|29cm|musinsa|oliveyoung|ably|zigzag|wconcept|kakaostyle|ohou|cyso|danawa|enuri|aliexpress|amazon|qoo10|iherb|temu|banggood|ebay|play\.google|apps\.apple|store\.steampowered|nintendo|playstation|epicgames|gog\.com|wadiz)[a-z0-9./?=&_%~\-]*/i;
 
 // 적립/이벤트성 죽은 링크(네이버페이 적립 등) + 커뮤니티 자체 링크 — data-url에서 제외
 const JUNK_URL = /(ppomppu|ruliweb|fmkorea|clien|quasarzone|eomisae|dealbada|pay\.naver|naverpay|m\.pay\.naver|adcr\.naver)/i;
@@ -182,6 +182,14 @@ export async function fetchDealMeta(url: string): Promise<{ dealUrl?: string; im
   } catch {
     return {};
   }
+}
+
+// 무료(공짜) 딜 판별 — 가격 0/없음 + '무료' 표현. 단 '무료배송'은 무료상품이 아니므로 제외.
+// 예) "[에픽게임즈] ROBOBEAT (무료)" → true · "[동원몰] 참치 (33,000원/무료)" → false(무료배송)
+export function isFreebie(rawTitle: string, price?: number): boolean {
+  if (typeof price === "number" && price > 0) return false;
+  const stripped = rawTitle.replace(/무료\s*배송|무료\s*배달|무배/g, "");
+  return /무료|0\s*원|free/i.test(stripped);
 }
 
 // 교차 중복 제거용 정규화 키(쇼핑몰·숫자·기호 제거)
