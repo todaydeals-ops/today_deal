@@ -42,6 +42,61 @@ export function tierOf(d: Deal): number {
   return d.badge && BADGE_META[d.badge] ? BADGE_META[d.badge].tier : 2;
 }
 
+// 영구 딜 스냅샷 (개별 페이지·sitemap용)
+export interface ArchiveDeal {
+  slug: string;
+  badge?: DealBadge;
+  platform: Platform;
+  productName: string;
+  imageUrl?: string;
+  affiliateUrl?: string;
+  productUrl?: string;
+  salePrice: number;
+  discountRate: number;
+  summary?: string;
+  lastSeen?: string;
+}
+
+export async function fetchArchiveBySlug(slug: string): Promise<ArchiveDeal | null> {
+  const sb = getSupabaseServer();
+  if (!sb) return null;
+  try {
+    const { data, error } = await sb.from("deal_archive").select("*").eq("slug", slug).maybeSingle();
+    if (error || !data) return null;
+    const r = data as Record<string, unknown>;
+    return {
+      slug: String(r.slug),
+      badge: (r.badge as DealBadge) ?? undefined,
+      platform: r.platform as Platform,
+      productName: String(r.product_name ?? ""),
+      imageUrl: (r.image_url as string) || undefined,
+      affiliateUrl: (r.affiliate_url as string) || undefined,
+      productUrl: (r.product_url as string) || undefined,
+      salePrice: Number(r.sale_price ?? 0),
+      discountRate: Number(r.discount_rate ?? 0),
+      summary: (r.summary as string) || undefined,
+      lastSeen: (r.last_seen as string) || undefined,
+    };
+  } catch {
+    return null;
+  }
+}
+
+export async function fetchArchiveSlugs(limit = 5000): Promise<string[]> {
+  const sb = getSupabaseServer();
+  if (!sb) return [];
+  try {
+    const { data } = await sb
+      .from("deal_archive")
+      .select("slug")
+      .order("last_seen", { ascending: false })
+      .limit(limit);
+    return (data ?? []).map((d) => String((d as Record<string, unknown>).slug));
+  } catch {
+    return [];
+  }
+}
+
 // 통합 피드: MD가 정한 순서(display_order) 그대로. 할인율 정렬 안 함. Supabase 없으면 mock 폴백.
 export async function fetchUnifiedDeals(): Promise<Deal[]> {
   const sb = getSupabaseServer();
