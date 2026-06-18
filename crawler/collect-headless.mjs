@@ -170,3 +170,14 @@ try {
 } catch (e) {
   console.warn(`[쿠팡 골드박스] 트리거 실패: ${e.message}`);
 }
+
+// 딜 페이지 한줄평(summary) 일부 백필
+try {
+  const su = new URL("/api/cron/summaries", INGEST_URL);
+  su.searchParams.set("key", SECRET);
+  const r = await fetch(su);
+  const j = await r.json().catch(() => ({}));
+  console.log(`[한줄평 백필] ${j.updated ?? j.error ?? 0}건`);
+} catch (e) {
+  console.warn(`[한줄평 백필] 트리거 실패: ${e.message}`);
+}

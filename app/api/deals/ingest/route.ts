@@ -8,6 +8,7 @@
 import type { Platform } from "@/lib/types";
 import { getSupabaseAdmin } from "@/lib/supabase/server";
 import { fetchUrlMeta, detectPlatform, affiliateForPlatform } from "@/lib/urlMeta";
+import { dealSlug } from "@/lib/slug";
 
 interface FullRecord {
   platform?: Platform;
@@ -51,12 +52,6 @@ interface Row {
 
 const MAX = 200;
 const PLATFORMS: Platform[] = ["gmarket", "11st", "ali", "coupang"];
-
-// 상품 URL → 영구 슬러그 (상품당 1개, 중복 누적 방지)
-function slugFor(platform: string, url: string): string | null {
-  const m = url.match(/goodscode=(\d+)/) || url.match(/\/products\/(\d+)/) || url.match(/\/vp\/products\/(\d+)/);
-  return m?.[1] ? `${platform}-${m[1]}` : null;
-}
 
 export async function POST(request: Request): Promise<Response> {
   const cronSecret = process.env.CRON_SECRET;
@@ -188,7 +183,7 @@ export async function POST(request: Request): Promise<Response> {
     const seen = new Set<string>();
     const archive = [];
     for (const r of toInsert) {
-      const slug = slugFor(r.platform, r.product_url);
+      const slug = dealSlug(r.platform, r.product_url);
       if (!slug || seen.has(slug)) continue;
       seen.add(slug);
       archive.push({
