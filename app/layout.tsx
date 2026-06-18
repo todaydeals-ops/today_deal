@@ -41,6 +41,10 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "8nNNGFPJ1NN0YqLNP9w26zFe9l9LpTCUh8Hsd5uMA1o",
+    // 네이버 서치어드바이저 소유확인 — Vercel 환경변수 NEXT_PUBLIC_NAVER_VERIFICATION 설정 시 자동 적용
+    ...(process.env.NEXT_PUBLIC_NAVER_VERIFICATION
+      ? { other: { "naver-site-verification": process.env.NEXT_PUBLIC_NAVER_VERIFICATION } }
+      : {}),
   },
 };
 

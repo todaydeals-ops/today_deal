@@ -82,6 +82,35 @@ export async function fetchArchiveBySlug(slug: string): Promise<ArchiveDeal | nu
   }
 }
 
+// 아카이브 브라우즈용 — 최근 스냅샷(이름·이미지 포함). 롱테일 딜 페이지 내부링크 허브.
+export async function fetchArchiveRecent(limit = 120): Promise<ArchiveDeal[]> {
+  const sb = getSupabaseServer();
+  if (!sb) return [];
+  try {
+    const { data, error } = await sb
+      .from("deal_archive")
+      .select("*")
+      .order("last_seen", { ascending: false })
+      .limit(limit);
+    if (error || !data) return [];
+    return (data as Record<string, unknown>[]).map((r) => ({
+      slug: String(r.slug),
+      badge: (r.badge as DealBadge) ?? undefined,
+      platform: r.platform as Platform,
+      productName: String(r.product_name ?? ""),
+      imageUrl: (r.image_url as string) || undefined,
+      affiliateUrl: (r.affiliate_url as string) || undefined,
+      productUrl: (r.product_url as string) || undefined,
+      salePrice: Number(r.sale_price ?? 0),
+      discountRate: Number(r.discount_rate ?? 0),
+      summary: (r.summary as string) || undefined,
+      lastSeen: (r.last_seen as string) || undefined,
+    }));
+  } catch {
+    return [];
+  }
+}
+
 export async function fetchArchiveSlugs(limit = 5000): Promise<string[]> {
   const sb = getSupabaseServer();
   if (!sb) return [];
