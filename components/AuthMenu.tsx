@@ -23,6 +23,7 @@ interface Display {
 //  - 네이버: 아직 미연동 → mock (추후 동일 방식으로 추가)
 export default function AuthMenu() {
   const [display, setDisplay] = useState<Display>({ loggedIn: false, label: "로그인" });
+  const [deal, setDeal] = useState<number | null>(null);
   const [open, setOpen] = useState(false);
   const [consent, setConsentChecked] = useState(false);
 
@@ -41,7 +42,7 @@ export default function AuthMenu() {
     (async () => {
       try {
         const res = await fetch("/api/auth/me", { cache: "no-store" });
-        const data: { user?: { nickname?: string; provider?: "kakao" | "naver" } | null } = await res.json();
+        const data: { user?: { nickname?: string; provider?: "kakao" | "naver" } | null; deal?: number } = await res.json();
         if (!mounted) return;
         if (data.user) {
           if (!getUser().loggedIn) {
@@ -49,6 +50,7 @@ export default function AuthMenu() {
             setConsent(true); // 로그인 동의 후 진행했으므로
           }
           setDisplay({ loggedIn: true, label: data.user.nickname || "회원" });
+          if (typeof data.deal === "number") setDeal(data.deal);
           return;
         }
       } catch {
@@ -93,6 +95,7 @@ export default function AuthMenu() {
       <button className={styles.trigger} onClick={() => setOpen((v) => !v)} aria-expanded={open}>
         <i className="ti ti-user" />
         <span className={styles.label}>{display.label}</span>
+        {display.loggedIn && deal !== null && <span className={styles.deal}>Đ{deal.toLocaleString("ko-KR")}</span>}
       </button>
 
       {open && (
@@ -100,7 +103,11 @@ export default function AuthMenu() {
           {display.loggedIn ? (
             <>
               <p className={styles.title}>{display.label}님</p>
-              <p className={styles.sub}>나눔이벤트에서 응모권을 받을 수 있어요.</p>
+              {deal !== null && (
+                <p className={styles.sub}>
+                  보유 딜 <strong>Đ{deal.toLocaleString("ko-KR")}</strong> · 핫딜 글·출석·공유로 모아요
+                </p>
+              )}
               <button className={styles.logout} onClick={logout}>
                 로그아웃
               </button>

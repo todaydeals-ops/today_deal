@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { COOKIE_NAME, COOKIE_MAXAGE, STATE_COOKIE, canonicalOrigin, signSession, type AuthUser } from "@/lib/auth/session";
 import { getSupabaseAdmin } from "@/lib/supabase/server";
+import { awardDailyVisit } from "@/lib/deal/server";
 
 export const runtime = "nodejs";
 
@@ -99,6 +100,8 @@ export async function GET(req: NextRequest): Promise<Response> {
         },
         { onConflict: "id" }
       );
+      // 출석 딜(하루 1회) — best effort
+      await awardDailyVisit(user.id);
     }
   } catch {
     // 무시

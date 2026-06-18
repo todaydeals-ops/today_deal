@@ -1,7 +1,9 @@
 // 공개(무가입) 핫딜 제보 — 검토 대기(is_published=false)로 접수. 에이전트 승인 후 게시.
 // proxy matcher의 "/api/board"(정확매칭)에 안 걸려서 공개. 허니팟 스팸가드.
 import crypto from "node:crypto";
+import { cookies } from "next/headers";
 import { getSupabaseAdmin } from "@/lib/supabase/server";
+import { COOKIE_NAME, verifySession } from "@/lib/auth/session";
 
 export const runtime = "nodejs";
 
@@ -59,6 +61,15 @@ export async function POST(request: Request): Promise<Response> {
   const sb = getSupabaseAdmin();
   if (!sb) return Response.json({ ok: false, error: "서버 설정 오류" }, { status: 500 });
 
+  // 로그인 회원이 제보하면 submitter 기록 → 승인 시 딜 적립
+  let submitterId: string | null = null;
+  try {
+    const c = await cookies();
+    submitterId = verifySession(c.get(COOKIE_NAME)?.value)?.id ?? null;
+  } catch {
+    submitterId = null;
+  }
+
   const row = {
     slug: boardSlug(d.title.trim()),
     board_type: BOARD_TYPE_KEYS.includes(d.boardType ?? "") ? d.boardType : "hot",
@@ -72,6 +83,7 @@ export async function POST(request: Request): Promise<Response> {
     original_url: url,
     body: d.body?.trim()?.slice(0, 1000) || null,
     author: d.author?.trim()?.slice(0, 20) || "익명 제보",
+    submitter_id: submitterId,
     is_published: false, // 검토 대기
   };
   const { error } = await sb.from("board_deals").insert(row);

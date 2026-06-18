@@ -1,6 +1,7 @@
 // 제보딜 등록/조회/삭제 (에이전트·관리자). proxy 쿠키 게이트로 보호, 쓰기는 service_role.
 import crypto from "node:crypto";
 import { getSupabaseAdmin } from "@/lib/supabase/server";
+import { awardPostOnce } from "@/lib/deal/server";
 
 export const runtime = "nodejs";
 
@@ -83,8 +84,14 @@ export async function PATCH(request: Request): Promise<Response> {
   if (!sb) return Response.json({ ok: false, error: "Supabase service_role 미설정" }, { status: 500 });
   const id = new URL(request.url).searchParams.get("id");
   if (!id) return Response.json({ ok: false, error: "id 누락" }, { status: 400 });
+  // 승인 전 제보자 정보 확인 (딜 적립용)
+  const { data: row } = await sb.from("board_deals").select("submitter_id, slug, is_published").eq("id", id).maybeSingle();
   const { error } = await sb.from("board_deals").update({ is_published: true }).eq("id", id);
   if (error) return Response.json({ ok: false, error: error.message }, { status: 500 });
+  // 처음 승인이고 로그인 제보면 +Đ2 (slug 기준 1회)
+  if (row && !row.is_published && row.submitter_id && row.slug) {
+    await awardPostOnce(row.submitter_id as string, row.slug as string);
+  }
   return Response.json({ ok: true });
 }
 
