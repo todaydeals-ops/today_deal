@@ -103,7 +103,7 @@ export default async function BoardPost({ params }: { params: Promise<{ slug: st
           <div className={styles.media}>
             {d.imageUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={d.imageUrl} alt={d.title} decoding="async" fetchPriority="high" />
+              <img src={d.imageUrl} alt={d.title} decoding="async" fetchPriority="high" referrerPolicy="no-referrer" />
             ) : (
               <div className={styles.noImg}>
                 <i className="ti ti-photo" />

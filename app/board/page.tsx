@@ -113,7 +113,7 @@ export default async function Board({ searchParams }: { searchParams: Promise<{ 
                   <span className={styles.thumb}>
                     {d.imageUrl ? (
                       // eslint-disable-next-line @next/next/no-img-element
-                      <img src={d.imageUrl} alt="" loading="lazy" decoding="async" />
+                      <img src={d.imageUrl} alt="" loading="lazy" decoding="async" referrerPolicy="no-referrer" />
                     ) : (
                       <i className="ti ti-photo" />
                     )}
