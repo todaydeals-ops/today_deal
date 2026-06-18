@@ -21,8 +21,72 @@ export const metadata: Metadata = {
   },
 };
 
+// 공개 준비 상태 — 준비 끝나면 true (회원 모이고 광고 리워드 붙은 뒤 오픈)
+const GIVEAWAY_LIVE = false;
+
 // 나눔이벤트 — 주간(매주·5명) / 월간(매월·1명) 구분
 export default async function Giveaway() {
+  if (!GIVEAWAY_LIVE) {
+    return (
+      <>
+        <Header />
+        <main className="wrap">
+          <div
+            style={{
+              minHeight: "52vh",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              textAlign: "center",
+              padding: "40px 20px",
+              gap: 14,
+            }}
+          >
+            <span
+              style={{
+                width: 72,
+                height: 72,
+                borderRadius: "50%",
+                display: "grid",
+                placeItems: "center",
+                background: "color-mix(in srgb, var(--accent-deal) 12%, transparent)",
+                color: "var(--accent-deal)",
+                fontSize: 36,
+              }}
+            >
+              <i className="ti ti-gift" />
+            </span>
+            <h2 style={{ fontFamily: '"Pretendard", sans-serif', fontWeight: 800, fontSize: 24, color: "var(--text-strong)" }}>
+              나눔이벤트 준비 중
+            </h2>
+            <p style={{ fontSize: 15, lineHeight: 1.6, color: "var(--text-muted)" }}>
+              매주·매월 무료 경품 나눔을 곧 시작합니다.
+              <br />
+              조금만 기다려 주세요 🎁
+            </p>
+            <a
+              href="/"
+              style={{
+                marginTop: 8,
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 6,
+                fontSize: 14,
+                fontWeight: 700,
+                color: "var(--accent-deal)",
+                textDecoration: "none",
+              }}
+            >
+              오늘의 타임딜 보러가기 <i className="ti ti-arrow-right" />
+            </a>
+          </div>
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
   const all = await fetchGiveaways();
   const weekly = all.filter((g) => g.type === "weekly");
   const monthly = all.filter((g) => g.type === "monthly");
