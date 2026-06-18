@@ -5,11 +5,10 @@ import styles from "./BoardSubmit.module.css";
 
 const BOARD_TYPES = [
   { key: "hot", label: "핫딜" },
-  { key: "overseas", label: "해외직구" },
   { key: "free", label: "무료/이벤트" },
   { key: "coupon", label: "쿠폰/적립" },
 ];
-const BOARD_CATEGORIES = ["전자/IT", "생활/주방", "식품", "뷰티/패션", "패션잡화", "유아동", "스포츠/취미", "기타"];
+const BOARD_CATEGORIES = ["전자/IT", "식품", "생활/주방", "패션/뷰티", "해외직구", "기타"];
 
 interface Me {
   nickname: string;

@@ -12,6 +12,7 @@ export interface RawDeal {
   price?: number;
   shipping?: string;
   category?: string; // 소스 제공(루리웹) 또는 분류기
+  forceCategory?: string; // 소스 단위 강제 카테고리(해외직구 등)
   author?: string;
   body?: string;
   imageUrl?: string; // RSS 내 썸네일(루리웹 등)
@@ -24,6 +25,7 @@ interface SourceDef {
   key: string; // slug 네임스페이스(보드별 글번호 독립 → 충돌 방지)
   rss: string;
   boardType: string;
+  forceCategory?: string; // 이 소스의 글에 강제 부여할 카테고리(해외직구 등)
   idFrom: RegExp; // link에서 글번호 추출
 }
 
@@ -34,8 +36,8 @@ export const SOURCES: SourceDef[] = [
   // 핫딜
   { source: "ppomppu", key: "ppomppu", rss: "https://www.ppomppu.co.kr/rss.php?id=ppomppu", boardType: "hot", idFrom: /no=(\d+)/ },
   { source: "ruliweb", key: "ruliweb", rss: "https://bbs.ruliweb.com/market/board/1020/rss", boardType: "hot", idFrom: /\/read\/(\d+)/ },
-  // 해외직구
-  { source: "ppomppu", key: "ppomppu4", rss: "https://www.ppomppu.co.kr/rss.php?id=ppomppu4", boardType: "overseas", idFrom: /no=(\d+)/ },
+  // 해외직구 — 핫딜 보드의 '해외직구' 카테고리로
+  { source: "ppomppu", key: "ppomppu4", rss: "https://www.ppomppu.co.kr/rss.php?id=ppomppu4", boardType: "hot", forceCategory: "해외직구", idFrom: /no=(\d+)/ },
   // 쿠폰/적립
   { source: "ppomppu", key: "coupon", rss: "https://www.ppomppu.co.kr/rss.php?id=coupon", boardType: "coupon", idFrom: /no=(\d+)/ },
   // 무료/이벤트 — 이벤트·체험단
@@ -130,6 +132,7 @@ async function fetchSource(def: SourceDef): Promise<RawDeal[]> {
         price: parsed.price,
         shipping: parsed.shipping,
         category: tag(block, "category") || undefined,
+        forceCategory: def.forceCategory,
         author: tag(block, "author") || undefined,
         body: tag(block, "description") || undefined,
         imageUrl,
