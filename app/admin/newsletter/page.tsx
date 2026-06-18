@@ -2,9 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import type { CuratedDeal } from "@/lib/types";
+import type { CuratedDeal, CuratedCategory } from "@/lib/types";
 import { getActiveCurated } from "@/data/mockCurated";
-import { getStoredCurated } from "@/lib/curatedStore";
 import { mockGiveaways } from "@/data/mockGiveaways";
 import { getResult } from "@/lib/giveawayResults";
 import { getUser } from "@/lib/giveawayStore";
@@ -19,6 +18,38 @@ import styles from "./page.module.css";
 interface WinnerBlock {
   prizeName: string;
   names: string[];
+}
+
+// /api/curated 행(snake_case) → CuratedDeal
+interface NewsletterCuratedRow {
+  id: string;
+  seq: number;
+  slug: string | null;
+  product_name: string;
+  category: CuratedCategory;
+  image_url: string | null;
+  affiliate_url: string;
+  discount_rate: number | null;
+  sale_price: number;
+  admin_note: string | null;
+  video_url: string | null;
+  is_active: boolean;
+}
+function rowToDeal(r: NewsletterCuratedRow): CuratedDeal {
+  return {
+    id: r.id,
+    seq: r.seq,
+    slug: r.slug ?? undefined,
+    productName: r.product_name,
+    category: r.category,
+    imageUrl: r.image_url ?? undefined,
+    affiliateUrl: r.affiliate_url,
+    discountRate: r.discount_rate ?? undefined,
+    salePrice: r.sale_price,
+    adminNote: r.admin_note ?? undefined,
+    videoUrl: r.video_url ?? undefined,
+    isActive: r.is_active,
+  };
 }
 
 const DEFAULT_INTRO =
@@ -44,12 +75,23 @@ export default function AdminNewsletter() {
   const [testEmail, setTestEmail] = useState("");
 
   useEffect(() => {
-    // 추천딜(목+등록분) 최신순
-    const merged = [...getStoredCurated().filter((d) => d.isActive), ...getActiveCurated()].sort(
-      (a, b) => b.seq - a.seq
-    );
-    setDeals(merged);
-    setFeaturedIds(merged.slice(0, 3).map((d) => d.id)); // 기본 상위 3개
+    // 추천딜 = 실DB(/api/curated). 실패 시 mock 폴백.
+    (async () => {
+      let list: CuratedDeal[] = [];
+      try {
+        const res = await fetch("/api/curated", { cache: "no-store" });
+        const data: { ok: boolean; deals?: NewsletterCuratedRow[] } = await res.json();
+        if (data.ok && data.deals?.length) {
+          list = data.deals.filter((r) => r.is_active).map(rowToDeal);
+        }
+      } catch {
+        // 폴백
+      }
+      if (list.length === 0) list = getActiveCurated();
+      const sorted = list.sort((a, b) => b.seq - a.seq);
+      setDeals(sorted);
+      setFeaturedIds(sorted.slice(0, 3).map((d) => d.id)); // 기본 상위 3개
+    })();
 
     // 추첨 완료 이벤트 → 당첨자 블록
     const blocks: WinnerBlock[] = [];

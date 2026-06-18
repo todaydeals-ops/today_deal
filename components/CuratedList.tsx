@@ -1,14 +1,13 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import type { CuratedDeal, CuratedCategory } from "@/lib/types";
 import { CURATED_CATEGORIES } from "@/lib/types";
-import { getStoredCurated } from "@/lib/curatedStore";
 import CuratedCard from "./CuratedCard";
 import styles from "./CuratedList.module.css";
 
 interface CuratedListProps {
-  deals: CuratedDeal[]; // 서버 mock (이미 최신순 정렬)
+  deals: CuratedDeal[]; // 서버(DB) — 이미 최신순(seq desc) 정렬
 }
 
 type Filter = "전체" | CuratedCategory;
@@ -17,17 +16,10 @@ const FILTERS: Filter[] = ["전체", ...CURATED_CATEGORIES];
 export default function CuratedList({ deals }: CuratedListProps) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<Filter>("전체");
-  // 관리자 페이지에서 등록한 항목(localStorage)을 합쳐 노출
-  const [stored, setStored] = useState<CuratedDeal[]>([]);
-
-  useEffect(() => {
-    setStored(getStoredCurated());
-  }, []);
 
   const allDeals = useMemo(() => {
-    const merged = [...stored.filter((d) => d.isActive), ...deals];
-    return merged.sort((a, b) => b.seq - a.seq);
-  }, [stored, deals]);
+    return [...deals].sort((a, b) => b.seq - a.seq);
+  }, [deals]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();

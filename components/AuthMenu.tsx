@@ -102,11 +102,15 @@ export default function AuthMenu() {
     if (!consent) return;
     if (real && supabase) {
       window.localStorage.setItem(PENDING_CONSENT, "1");
-      // Supabase가 카카오에 account_email/profile_image/profile_nickname을 요청하므로,
-      // 카카오 동의항목에서 해당 항목들을 "사용"으로 설정해야 함(이메일은 비즈앱 전환 필요).
+      // 로그인 단계에선 기본 프로필(닉네임·프로필사진)만 요청한다.
+      // account_email은 카카오 비즈 검수 승인 전 요청 시 KOE006(앱 관리자 설정 오류)을
+      // 유발하므로 제외. 이메일 검수 승인 후 "profile_nickname profile_image account_email"로 확장.
       await supabase.auth.signInWithOAuth({
         provider: "kakao",
-        options: { redirectTo: window.location.origin + window.location.pathname },
+        options: {
+          scopes: "profile_nickname profile_image",
+          redirectTo: window.location.origin + window.location.pathname,
+        },
       });
     } else {
       loginMock("kakao");

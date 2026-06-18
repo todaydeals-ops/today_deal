@@ -32,5 +32,5 @@ export function middleware(req: NextRequest) {
 // /api/deals/ingest 는 크롤러(머신)용이라 제외 — 자체 CRON_SECRET으로 인증.
 // (관리자 페이지에서 Basic Auth 인증 후 동일 출처 fetch는 브라우저가 자동으로 인증 헤더 전송)
 export const config = {
-  matcher: ["/admin/:path*", "/api/deals", "/api/deals/preview"],
+  matcher: ["/admin/:path*", "/api/deals", "/api/deals/preview", "/api/curated"],
 };

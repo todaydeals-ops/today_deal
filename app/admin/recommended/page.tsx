@@ -5,15 +5,40 @@ import Link from "next/link";
 import type { CuratedDeal, CuratedCategory } from "@/lib/types";
 import { CURATED_CATEGORIES } from "@/lib/types";
 import type { CoupangProduct } from "@/lib/coupang";
-import { mockCurated } from "@/data/mockCurated";
-import {
-  getStoredCurated,
-  addStoredCurated,
-  removeStoredCurated,
-  nextSeq,
-} from "@/lib/curatedStore";
 import CuratedCard from "@/components/CuratedCard";
 import styles from "./page.module.css";
+
+// API(/api/curated) 행(snake_case) → CuratedDeal
+interface CuratedRow {
+  id: string;
+  seq: number;
+  slug: string | null;
+  product_name: string;
+  category: CuratedCategory;
+  image_url: string | null;
+  affiliate_url: string;
+  discount_rate: number | null;
+  sale_price: number;
+  admin_note: string | null;
+  video_url: string | null;
+  is_active: boolean;
+}
+function rowToDeal(r: CuratedRow): CuratedDeal {
+  return {
+    id: r.id,
+    seq: r.seq,
+    slug: r.slug ?? undefined,
+    productName: r.product_name,
+    category: r.category,
+    imageUrl: r.image_url ?? undefined,
+    affiliateUrl: r.affiliate_url,
+    discountRate: r.discount_rate ?? undefined,
+    salePrice: r.sale_price,
+    adminNote: r.admin_note ?? undefined,
+    videoUrl: r.video_url ?? undefined,
+    isActive: r.is_active,
+  };
+}
 
 interface SearchResponse {
   ok: boolean;
@@ -49,6 +74,7 @@ interface BulkDraft {
   discountRate: string;
   category: CuratedCategory;
   adminNote: string;
+  videoUrl: string;
   blurbSource: "ai" | "mock";
   linkSource: "coupang" | "raw";
   include: boolean;
@@ -62,6 +88,7 @@ const EMPTY = {
   discountRate: "",
   category: "가전" as CuratedCategory,
   adminNote: "",
+  videoUrl: "",
 };
 
 export default function AdminRecommended() {
@@ -80,8 +107,24 @@ export default function AdminRecommended() {
   const [bulkMsg, setBulkMsg] = useState<string | null>(null);
   const [drafts, setDrafts] = useState<BulkDraft[]>([]);
 
+  // 등록 목록 = 실DB(/api/curated)
+  async function reload() {
+    try {
+      const res = await fetch("/api/curated", { cache: "no-store" });
+      const data: { ok: boolean; deals?: CuratedRow[]; error?: string } = await res.json();
+      if (data.ok && data.deals) setList(data.deals.map(rowToDeal));
+    } catch {
+      // 무시 (네트워크 일시 오류)
+    }
+  }
+
+  // 다음 추천 번호(미리보기용 — 실제 seq는 서버가 부여)
+  function nextSeqLocal(): number {
+    return list.reduce((acc, d) => Math.max(acc, d.seq), 0) + 1;
+  }
+
   useEffect(() => {
-    setList(getStoredCurated());
+    reload();
   }, []);
 
   // 쿠팡 파트너스 API 검색 (키 없으면 목)
@@ -154,31 +197,52 @@ export default function AdminRecommended() {
     }
   }
 
-  function handleAdd() {
+  const [adding, setAdding] = useState(false);
+  async function handleAdd() {
     if (!form.productName.trim() || !form.affiliateUrl.trim() || !form.salePrice) {
       setMessage("⚠ 상품명·제휴링크·판매가는 필수입니다.");
       return;
     }
-    const seq = nextSeq(mockCurated);
-    const deal: CuratedDeal = {
-      id: `u${seq}-${form.productName.slice(0, 4)}`,
-      seq,
-      productName: form.productName.trim(),
-      category: form.category,
-      imageUrl: form.imageUrl.trim() || undefined,
-      affiliateUrl: form.affiliateUrl.trim(),
-      salePrice: Number(form.salePrice),
-      discountRate: form.discountRate ? Number(form.discountRate) : undefined,
-      adminNote: form.adminNote.trim() || undefined,
-      isActive: true,
-    };
-    setList(addStoredCurated(deal));
-    setForm({ ...EMPTY });
-    setMessage("✓ 추천딜에 추가했어요.");
+    setAdding(true);
+    try {
+      const res = await fetch("/api/curated", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          deal: {
+            productName: form.productName.trim(),
+            category: form.category,
+            imageUrl: form.imageUrl.trim() || undefined,
+            affiliateUrl: form.affiliateUrl.trim(),
+            salePrice: form.salePrice,
+            discountRate: form.discountRate || undefined,
+            adminNote: form.adminNote.trim() || undefined,
+            videoUrl: form.videoUrl.trim() || undefined,
+          },
+        }),
+      });
+      const data: { ok: boolean; error?: string } = await res.json();
+      if (!data.ok) {
+        setMessage(`⚠ 등록 실패: ${data.error ?? "알 수 없는 오류"}`);
+        return;
+      }
+      await reload();
+      setForm({ ...EMPTY });
+      setMessage("✓ 추천딜을 등록했어요. (공개 페이지·개별 페이지 즉시 반영)");
+    } catch {
+      setMessage("⚠ 등록 실패. 잠시 후 다시 시도해주세요.");
+    } finally {
+      setAdding(false);
+    }
   }
 
-  function handleRemove(id: string) {
-    setList(removeStoredCurated(id));
+  async function handleRemove(id: string) {
+    try {
+      await fetch(`/api/curated?id=${encodeURIComponent(id)}`, { method: "DELETE" });
+      await reload();
+    } catch {
+      setMessage("⚠ 삭제 실패. 잠시 후 다시 시도해주세요.");
+    }
   }
 
   // ── 일괄 등록 ─────────────────────────────────────────
@@ -214,6 +278,7 @@ export default function AdminRecommended() {
         discountRate: "",
         category: "가전",
         adminNote: it.adminNote,
+        videoUrl: "",
         blurbSource: it.blurbSource,
         linkSource: it.linkSource,
         include: true,
@@ -243,7 +308,7 @@ export default function AdminRecommended() {
     setDrafts((ds) => ds.filter((d) => d.key !== key));
   }
 
-  function registerAll() {
+  async function registerAll() {
     const target = drafts.filter((d) => d.include);
     const ready = target.filter(
       (d) => d.productName.trim() && d.affiliateUrl.trim() && d.salePrice
@@ -252,35 +317,43 @@ export default function AdminRecommended() {
       setBulkMsg("⚠ 등록 가능한 항목이 없어요. 상품명·제휴링크·판매가를 채워주세요.");
       return;
     }
-    let current = list;
-    for (const d of ready) {
-      const seq = nextSeq(mockCurated);
-      const deal: CuratedDeal = {
-        id: `u${seq}-${d.productName.slice(0, 4)}`,
-        seq,
-        productName: d.productName.trim(),
-        category: d.category,
-        imageUrl: d.imageUrl.trim() || undefined,
-        affiliateUrl: d.affiliateUrl.trim(),
-        salePrice: Number(d.salePrice),
-        discountRate: d.discountRate ? Number(d.discountRate) : undefined,
-        adminNote: d.adminNote.trim() || undefined,
-        isActive: true,
-      };
-      current = addStoredCurated(deal);
+    try {
+      const res = await fetch("/api/curated", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          deals: ready.map((d) => ({
+            productName: d.productName.trim(),
+            category: d.category,
+            imageUrl: d.imageUrl.trim() || undefined,
+            affiliateUrl: d.affiliateUrl.trim(),
+            salePrice: d.salePrice,
+            discountRate: d.discountRate || undefined,
+            adminNote: d.adminNote.trim() || undefined,
+            videoUrl: d.videoUrl.trim() || undefined,
+          })),
+        }),
+      });
+      const data: { ok: boolean; registered?: number; error?: string } = await res.json();
+      if (!data.ok) {
+        setBulkMsg(`⚠ 등록 실패: ${data.error ?? "알 수 없는 오류"}`);
+        return;
+      }
+      await reload();
+      const skipped = target.length - ready.length;
+      setDrafts((ds) => ds.filter((d) => !ready.includes(d)));
+      setBulkMsg(
+        `✓ ${data.registered ?? ready.length}건 DB 등록 완료.` +
+          (skipped > 0 ? ` (필수값 부족 ${skipped}건은 남겨뒀어요.)` : "")
+      );
+    } catch {
+      setBulkMsg("⚠ 등록 실패. 잠시 후 다시 시도해주세요.");
     }
-    setList(current);
-    const skipped = target.length - ready.length;
-    setDrafts((ds) => ds.filter((d) => !ready.includes(d)));
-    setBulkMsg(
-      `✓ ${ready.length}건 등록 완료.` +
-        (skipped > 0 ? ` (필수값 부족 ${skipped}건은 남겨뒀어요.)` : "")
-    );
   }
 
   const preview: CuratedDeal = {
     id: "preview",
-    seq: nextSeq(mockCurated),
+    seq: nextSeqLocal(),
     productName: form.productName || "상품명 미리보기",
     category: form.category,
     imageUrl: form.imageUrl || undefined,
@@ -288,6 +361,7 @@ export default function AdminRecommended() {
     salePrice: form.salePrice ? Number(form.salePrice) : 0,
     discountRate: form.discountRate ? Number(form.discountRate) : undefined,
     adminNote: form.adminNote || undefined,
+    videoUrl: form.videoUrl || undefined,
     isActive: true,
   };
 
@@ -414,6 +488,12 @@ export default function AdminRecommended() {
                       {d.blurbSource === "ai" ? "AI" : "템플릿"}
                     </span>
                   </div>
+                  <input
+                    className={styles.draftInput}
+                    placeholder="쇼츠/릴스 영상 URL (선택)"
+                    value={d.videoUrl}
+                    onChange={(e) => updateDraft(d.key, { videoUrl: e.target.value })}
+                  />
                   <span
                     className={d.linkSource === "coupang" ? styles.tagLink : styles.tagRaw}
                   >
@@ -553,8 +633,17 @@ export default function AdminRecommended() {
               </div>
             </Field>
 
-            <button className={styles.addBtn} onClick={handleAdd}>
-              <i className="ti ti-plus" /> 추천딜에 추가
+            <Field label="쇼츠/릴스 영상 URL (선택 — 입력 시 개별 페이지에 영상 임베드)">
+              <input
+                className={styles.input}
+                placeholder="https://youtube.com/shorts/...  ·  instagram.com/reel/...  ·  tiktok.com/.../video/..."
+                value={form.videoUrl}
+                onChange={(e) => setForm({ ...form, videoUrl: e.target.value })}
+              />
+            </Field>
+
+            <button className={styles.addBtn} onClick={handleAdd} disabled={adding}>
+              <i className="ti ti-plus" /> {adding ? "등록 중…" : "추천딜에 추가"}
             </button>
           </div>
         </section>

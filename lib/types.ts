@@ -70,6 +70,7 @@ export const CURATED_CATEGORIES: CuratedCategory[] = [
 export interface CuratedDeal {
   id: string;
   seq: number; // 추천 번호 (인포크식, 클수록 최신)
+  slug?: string; // 개별 페이지 URL (/recommended/[slug])
   productName: string;
   category: CuratedCategory;
   imageUrl?: string;
@@ -77,6 +78,7 @@ export interface CuratedDeal {
   discountRate?: number;
   salePrice: number;
   adminNote?: string; // 관리자 한줄평 (전환 유도)
+  videoUrl?: string; // 쇼츠/릴스 임베드 URL
   isActive: boolean;
 }
 

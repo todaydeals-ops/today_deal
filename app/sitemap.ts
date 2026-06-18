@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { fetchArchiveSlugs } from "@/lib/data/deals";
+import { fetchCuratedSlugs } from "@/lib/data/curated";
 
 const SITE = "https://todaydeals.co.kr";
 
@@ -26,5 +27,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.5,
   }));
 
-  return [...base, ...dealPages];
+  // 추천딜 콘텐츠 페이지 (쇼츠 연결·영구) — 우선순위 높게
+  const curated = await fetchCuratedSlugs(2000);
+  const curatedPages: MetadataRoute.Sitemap = curated.map((s) => ({
+    url: `${SITE}/recommended/${s}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  return [...base, ...curatedPages, ...dealPages];
 }
