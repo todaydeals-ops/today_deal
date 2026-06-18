@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { CuratedDeal, CuratedCategory } from "@/lib/types";
 import { CURATED_CATEGORIES } from "@/lib/types";
 import type { CoupangProduct } from "@/lib/coupang";
+import type { RecHeader } from "@/lib/data/settings";
 import CuratedCard from "@/components/CuratedCard";
 import styles from "./page.module.css";
 
@@ -107,6 +108,41 @@ export default function AdminRecommended() {
   const [bulkMsg, setBulkMsg] = useState<string | null>(null);
   const [drafts, setDrafts] = useState<BulkDraft[]>([]);
 
+  // 헤더 꾸미기 상태
+  const [header, setHeader] = useState<RecHeader | null>(null);
+  const [savingHeader, setSavingHeader] = useState(false);
+  const [headerMsg, setHeaderMsg] = useState<string | null>(null);
+  function setH(patch: Partial<RecHeader>) {
+    setHeader((h) => (h ? { ...h, ...patch } : h));
+  }
+  async function loadHeader() {
+    try {
+      const r = await fetch("/api/settings/recommended-header", { cache: "no-store" });
+      const d = await r.json();
+      if (d.ok) setHeader(d.header);
+    } catch {
+      // 무시
+    }
+  }
+  async function saveHeader() {
+    if (!header) return;
+    setSavingHeader(true);
+    setHeaderMsg(null);
+    try {
+      const r = await fetch("/api/settings/recommended-header", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(header),
+      });
+      const d = await r.json();
+      setHeaderMsg(d.ok ? "✓ 헤더 저장 완료 (추천딜 페이지 즉시 반영)" : `⚠ ${d.error ?? "저장 실패"}`);
+    } catch {
+      setHeaderMsg("⚠ 저장 실패. 잠시 후 다시 시도해주세요.");
+    } finally {
+      setSavingHeader(false);
+    }
+  }
+
   // 등록 목록 = 실DB(/api/curated)
   async function reload() {
     try {
@@ -125,6 +161,7 @@ export default function AdminRecommended() {
 
   useEffect(() => {
     reload();
+    loadHeader();
   }, []);
 
   // 쿠팡 파트너스 API 검색 (키 없으면 목)
@@ -383,6 +420,82 @@ export default function AdminRecommended() {
           공개 페이지 보기 <i className="ti ti-external-link" />
         </Link>
       </header>
+
+      {/* 추천딜 헤더 꾸미기 (배너/프로필) */}
+      {header && (
+        <section className={styles.bulkPanel}>
+          <div className={styles.bulkHead}>
+            <label className={styles.label}>
+              <i className="ti ti-layout-navbar" /> 추천딜 헤더 꾸미기
+            </label>
+            <span className={styles.bulkHint}>추천딜 페이지 상단 영역 — 배너 또는 큐레이터 프로필</span>
+          </div>
+
+          <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
+            {(["banner", "profile"] as const).map((m) => (
+              <button
+                key={m}
+                onClick={() => setH({ mode: m })}
+                style={{
+                  padding: "8px 16px",
+                  borderRadius: 9,
+                  border: header.mode === m ? "0" : "1px solid var(--border-soft)",
+                  background: header.mode === m ? "var(--accent-deal)" : "#fff",
+                  color: header.mode === m ? "#fff" : "var(--text-body)",
+                  fontWeight: 700,
+                  fontSize: 13,
+                  cursor: "pointer",
+                }}
+              >
+                {m === "banner" ? "배너" : "큐레이터 프로필"}
+              </button>
+            ))}
+          </div>
+
+          <div className={styles.fields}>
+            {header.mode === "banner" ? (
+              <>
+                <Field label="뱃지 (작은 칩)">
+                  <input className={styles.input} value={header.badge ?? ""} onChange={(e) => setH({ badge: e.target.value })} placeholder="🔥 SNS 화제템" />
+                </Field>
+                <Field label="제목 *">
+                  <input className={styles.input} value={header.title} onChange={(e) => setH({ title: e.target.value })} placeholder="오늘의딜이 추천하는 SNS 핫이슈 상품" />
+                </Field>
+                <Field label="부제목">
+                  <input className={styles.input} value={header.subtitle} onChange={(e) => setH({ subtitle: e.target.value })} />
+                </Field>
+                <div className={styles.row2}>
+                  <Field label="버튼 텍스트 (선택)">
+                    <input className={styles.input} value={header.ctaText ?? ""} onChange={(e) => setH({ ctaText: e.target.value })} placeholder="인스타 보러가기" />
+                  </Field>
+                  <Field label="버튼 링크 (선택)">
+                    <input className={styles.input} value={header.ctaUrl ?? ""} onChange={(e) => setH({ ctaUrl: e.target.value })} placeholder="https://..." />
+                  </Field>
+                </div>
+              </>
+            ) : (
+              <>
+                <Field label="이름">
+                  <input className={styles.input} value={header.name ?? ""} onChange={(e) => setH({ name: e.target.value })} />
+                </Field>
+                <Field label="핸들 (@아이디)">
+                  <input className={styles.input} value={header.handle ?? ""} onChange={(e) => setH({ handle: e.target.value })} />
+                </Field>
+                <Field label="소개 문구">
+                  <input className={styles.input} value={header.tagline ?? ""} onChange={(e) => setH({ tagline: e.target.value })} />
+                </Field>
+                <Field label="인스타그램 URL">
+                  <input className={styles.input} value={header.instagramUrl ?? ""} onChange={(e) => setH({ instagramUrl: e.target.value })} />
+                </Field>
+              </>
+            )}
+            <button className={styles.addBtn} onClick={saveHeader} disabled={savingHeader}>
+              <i className="ti ti-device-floppy" /> {savingHeader ? "저장 중…" : "헤더 저장"}
+            </button>
+            {headerMsg && <p className={styles.message}>{headerMsg}</p>}
+          </div>
+        </section>
+      )}
 
       {/* 일괄 등록 (쿠팡 URL 여러 개) */}
       <section className={styles.bulkPanel}>

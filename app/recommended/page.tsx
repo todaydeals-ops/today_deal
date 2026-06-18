@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import PartnerProfile from "@/components/PartnerProfile";
+import RecommendedHeader from "@/components/RecommendedHeader";
 import CuratedList from "@/components/CuratedList";
-import { partnerProfile } from "@/data/mockCurated";
 import { fetchActiveCurated } from "@/lib/data/curated";
+import { getRecommendedHeader } from "@/lib/data/settings";
 
-export const revalidate = 60;
+// 헤더 설정이 즉시 반영되도록 매 요청 최신
+export const dynamic = "force-dynamic";
 
 const SITE = "https://todaydeals.co.kr";
 export const metadata: Metadata = {
@@ -22,15 +23,15 @@ export const metadata: Metadata = {
   },
 };
 
-// 추천딜 — 링크인바이오식 큐레이션 (프로필 헤더 + 검색/필터 카드 리스트)
+// 추천딜 — 설정형 헤더(배너/프로필) + 검색/필터 카드 리스트
 export default async function Recommended() {
-  const deals = await fetchActiveCurated();
+  const [deals, header] = await Promise.all([fetchActiveCurated(), getRecommendedHeader()]);
 
   return (
     <>
       <Header />
       <main className="wrap">
-        <PartnerProfile profile={partnerProfile} />
+        <RecommendedHeader header={header} />
         <CuratedList deals={deals} />
       </main>
       <Footer />
