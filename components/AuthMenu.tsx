@@ -95,7 +95,7 @@ export default function AuthMenu() {
       <button className={styles.trigger} onClick={() => setOpen((v) => !v)} aria-expanded={open}>
         <i className="ti ti-user" />
         <span className={styles.label}>{display.label}</span>
-        {display.loggedIn && deal !== null && <span className={styles.deal}>Đ{deal.toLocaleString("ko-KR")}</span>}
+        {display.loggedIn && deal !== null && <span className={styles.deal}>{deal.toLocaleString("ko-KR")} Đ</span>}
       </button>
 
       {open && (
@@ -105,7 +105,7 @@ export default function AuthMenu() {
               <p className={styles.title}>{display.label}님</p>
               {deal !== null && (
                 <p className={styles.sub}>
-                  보유 딜 <strong>Đ{deal.toLocaleString("ko-KR")}</strong> · 핫딜 글·출석·공유로 모아요
+                  보유 딜 <strong>{deal.toLocaleString("ko-KR")} Đ</strong> · 핫딜 글·출석·공유로 모아요
                 </p>
               )}
               <button className={styles.logout} onClick={logout}>
