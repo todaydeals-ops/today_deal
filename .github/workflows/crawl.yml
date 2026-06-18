@@ -1,11 +1,11 @@
 name: 타임딜 자동수집
 
-# 매일 10:00 KST(01:00 UTC) 예약 — 지마켓·알리 10시 초기화 직후 수집.
-# (GitHub 스케줄러는 분 단위·best-effort라 실제론 보통 몇 분 지연 실행 → 갱신 직후 안전.)
+# 매일 11:05 KST(02:05 UTC) 예약 — 지마켓(10시)·11번가 타임딜(11시) 초기화 직후 함께 수집.
+# (GitHub 스케줄러는 분 단위·best-effort라 보통 몇 분 지연 → 갱신 직후 안전.)
 # (+ Actions 탭에서 수동 실행 버튼)
 on:
   schedule:
-    - cron: "0 1 * * *"
+    - cron: "5 2 * * *"
   workflow_dispatch: {}
 
 jobs:

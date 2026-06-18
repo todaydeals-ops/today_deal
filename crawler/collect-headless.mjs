@@ -52,8 +52,85 @@ async function collectGmarketOpenrun(ctx) {
   }
 }
 
-// 소스 어댑터 목록 (추후 11번가 등 추가)
-const SOURCES = [["지마켓 오픈런", collectGmarketOpenrun]];
+// 다음 HH:MM(KST) ISO (마감 폴백용)
+function kstResetIso(hh, mm = 0) {
+  const now = Date.now();
+  const kst = new Date(now + 9 * 3600 * 1000);
+  let end = Date.UTC(kst.getUTCFullYear(), kst.getUTCMonth(), kst.getUTCDate(), hh, mm, 0) - 9 * 3600 * 1000;
+  if (end <= now) end += 24 * 3600 * 1000;
+  return new Date(end).toISOString();
+}
+
+// ── 어댑터: 11번가 (타임딜/오늘의딜) — Cloudflare 없음, HTML 카드 파싱 ──
+async function collect11st(ctx, { url, badge, resetHour, limit = 30 }) {
+  const page = await ctx.newPage();
+  try {
+    await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
+    await page.waitForTimeout(2500);
+    for (let i = 0; i < 6; i++) {
+      await page.mouse.wheel(0, 3000);
+      await page.waitForTimeout(500);
+    }
+    const recs = await page.evaluate(() => {
+      const seen = new Set();
+      const out = [];
+      for (const a of document.querySelectorAll('a[href*="/products/"]')) {
+        const m = a.href.match(/products\/(\d+)/);
+        if (!m) continue;
+        const prd = m[1];
+        if (seen.has(prd)) continue;
+        const card = a.closest("li") || a.closest("div");
+        if (!card) continue;
+        const priceEl = card.querySelector("strong.sale_price");
+        if (!priceEl) continue; // 딜 카드만 (가격 있는 것)
+        const price = Number(priceEl.textContent.replace(/[^\d]/g, ""));
+        if (!(price > 0)) continue;
+        const img = card.querySelector("img");
+        const name = (
+          img?.alt ||
+          card.querySelector('[class*="benefit" i],[class*="pname" i],[class*="name" i]')?.textContent ||
+          ""
+        ).replace(/\s+/g, " ").trim();
+        if (!name) continue;
+        seen.add(prd);
+        const rateM = (card.querySelector("span.sale")?.textContent || "").match(/(\d+)%/);
+        const tag = card.querySelector("em.tag")?.textContent || "";
+        const tm = tag.match(/(\d{1,2}):(\d{2}):(\d{2})/);
+        out.push({
+          name,
+          price,
+          discountRate: rateM ? Number(rateM[1]) : undefined,
+          imageUrl: img?.src || undefined,
+          productUrl: `https://www.11st.co.kr/products/${prd}`,
+          remainSec: tm ? +tm[1] * 3600 + +tm[2] * 60 + +tm[3] : null,
+        });
+      }
+      return out;
+    });
+    const fallbackEnd = kstResetIso(resetHour);
+    return recs.slice(0, limit).map((r) => ({
+      platform: "11st",
+      badge,
+      productName: r.name,
+      imageUrl: r.imageUrl,
+      productUrl: r.productUrl,
+      salePrice: r.price,
+      discountRate: r.discountRate,
+      dealEndAt: r.remainSec ? new Date(Date.now() + r.remainSec * 1000).toISOString() : fallbackEnd,
+    }));
+  } finally {
+    await page.close();
+  }
+}
+
+const D11 = "https://deal.11st.co.kr/browsing/DealAction.tmall";
+
+// 소스 어댑터 목록
+const SOURCES = [
+  ["지마켓 오픈런", (ctx) => collectGmarketOpenrun(ctx)],
+  ["11번가 타임딜", (ctx) => collect11st(ctx, { url: `${D11}?method=getTimeDeal`, badge: "11st_time", resetHour: 11, limit: 30 })],
+  ["11번가 오늘의딜", (ctx) => collect11st(ctx, { url: `${D11}?method=getTodayDeal`, badge: "11st_today", resetHour: 0, limit: 24 })],
+];
 
 // ── main ──
 const browser = await chromium.launch({ headless: true });

@@ -49,7 +49,7 @@ interface Row {
   is_soldout: boolean;
 }
 
-const MAX = 80;
+const MAX = 200;
 const PLATFORMS: Platform[] = ["gmarket", "11st", "ali", "coupang"];
 
 export async function POST(request: Request): Promise<Response> {
