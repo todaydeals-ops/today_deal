@@ -1,6 +1,5 @@
-// 나눔이벤트 데이터 접근. Supabase 설정 시 실DB, 아니면 mock 폴백.
+// 나눔이벤트 데이터 접근 — 실DB(giveaways)만. (목업 폴백 제거: 등록분만 노출)
 import type { Giveaway, GiveawayType } from "@/lib/types";
-import { mockGiveaways } from "@/data/mockGiveaways";
 import { getSupabaseServer } from "@/lib/supabase/server";
 
 interface GiveawayRow {
@@ -35,18 +34,15 @@ function mapGiveaway(r: GiveawayRow): Giveaway {
 
 export async function fetchGiveaways(): Promise<Giveaway[]> {
   const sb = getSupabaseServer();
-  if (sb) {
-    try {
-      const { data, error } = await sb
-        .from("giveaways")
-        .select("*")
-        .order("start_at", { ascending: false });
-      if (!error && data && data.length > 0) {
-        return (data as GiveawayRow[]).map(mapGiveaway);
-      }
-    } catch {
-      // 폴백
-    }
+  if (!sb) return [];
+  try {
+    const { data, error } = await sb
+      .from("giveaways")
+      .select("*")
+      .order("start_at", { ascending: false });
+    if (!error && data) return (data as GiveawayRow[]).map(mapGiveaway);
+  } catch {
+    // 무시
   }
-  return mockGiveaways;
+  return [];
 }

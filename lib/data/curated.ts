@@ -1,6 +1,5 @@
-// 추천딜 데이터 접근. Supabase 설정 시 실DB, 아니면 mock 폴백.
+// 추천딜 데이터 접근 — 실DB(curated_deals)만. (목업 폴백 제거: 등록분만 노출)
 import type { CuratedDeal, CuratedCategory } from "@/lib/types";
-import { getActiveCurated } from "@/data/mockCurated";
 import { getSupabaseServer } from "@/lib/supabase/server";
 
 interface CuratedRow {
@@ -37,21 +36,18 @@ function mapCurated(r: CuratedRow): CuratedDeal {
 
 export async function fetchActiveCurated(): Promise<CuratedDeal[]> {
   const sb = getSupabaseServer();
-  if (sb) {
-    try {
-      const { data, error } = await sb
-        .from("curated_deals")
-        .select("*")
-        .eq("is_active", true)
-        .order("seq", { ascending: false });
-      if (!error && data && data.length > 0) {
-        return (data as CuratedRow[]).map(mapCurated);
-      }
-    } catch {
-      // 폴백
-    }
+  if (!sb) return [];
+  try {
+    const { data, error } = await sb
+      .from("curated_deals")
+      .select("*")
+      .eq("is_active", true)
+      .order("seq", { ascending: false });
+    if (!error && data) return (data as CuratedRow[]).map(mapCurated);
+  } catch {
+    // 무시
   }
-  return getActiveCurated();
+  return [];
 }
 
 // 개별 추천딜 페이지용 — slug 1건
@@ -67,11 +63,10 @@ export async function fetchCuratedBySlug(slug: string): Promise<CuratedDeal | nu
         .maybeSingle();
       if (!error && data) return mapCurated(data as CuratedRow);
     } catch {
-      // 폴백
+      // 무시
     }
   }
-  // mock 폴백 (slug 없는 mock은 매칭 안 됨 → null)
-  return getActiveCurated().find((d) => d.slug === slug) ?? null;
+  return null;
 }
 
 // 사이트맵용 — 활성 추천딜 slug 목록

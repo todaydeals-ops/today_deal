@@ -7,9 +7,18 @@ import styles from "./page.module.css";
 
 export const revalidate = 60;
 
+const SITE = "https://todaydeals.co.kr";
 export const metadata: Metadata = {
-  title: "오늘의딜 나눔이벤트 — 오늘의딜",
-  description: "회원에게 매주·매월 드리는 무료 경품 이벤트",
+  title: "오늘의딜 나눔이벤트 — 매주·매월 무료 경품 추첨",
+  description:
+    "회원에게 매주(다수)·매월(고가) 무료 경품을 추첨으로 드립니다. 로그인하고 시간대마다 응모권을 모아보세요.",
+  alternates: { canonical: `${SITE}/giveaway` },
+  openGraph: {
+    title: "오늘의딜 나눔이벤트 — 매주·매월 무료 경품 추첨",
+    description: "로그인하고 응모권을 모아 무료 경품에 도전하세요. 매주·매월 추첨.",
+    url: `${SITE}/giveaway`,
+    type: "website",
+  },
 };
 
 // 나눔이벤트 — 주간(매주·5명) / 월간(매월·1명) 구분
