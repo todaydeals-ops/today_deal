@@ -5,7 +5,7 @@ import { collectAll, fetchDealMeta, isFreebie, normalizeKey, type RawDeal } from
 import { categorize } from "./categorize";
 import { personaFor } from "./personas";
 import { rewriteDeal } from "./rewrite";
-import { perRunCap, isActiveHour, activityBoost } from "./dripConfig";
+import { releasePlan, nextGapMinutes, isActiveHour, activityBoost } from "./dripConfig";
 
 const MAX_REWRITE_PER_RUN = 12; // 회차당 신규 리라이트 상한(지연·비용 제어)
 
@@ -123,35 +123,64 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
   return { collected: candidates.length, inserted: rows.length };
 }
 
-// 2) 드립 공개 — 활동시간대에만, 회차당 perRunCap개. 공개 시각=now(신선하게), 시작 조회수 소량 부여.
-//    override 지정 시(수동 테스트) 활동시간 무시하고 그 수만큼 공개.
-async function releaseDrip(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>, override?: number): Promise<number> {
-  let cap: number;
-  if (typeof override === "number" && override > 0) {
-    cap = Math.min(override, 30);
-  } else {
-    if (!isActiveHour()) return 0;
-    cap = perRunCap();
-  }
-  const { data, error: selErr } = await sb
+// 대기풀에서 조건에 맞는 글 N개를 공개 — 공개시각 0~25분 분산(무더기 방지), 시작 조회수 소량.
+async function publishPending(
+  sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>,
+  filter: { boardType?: string; category?: string | null },
+  count: number
+): Promise<number> {
+  if (count <= 0) return 0;
+  let q = sb
     .from("board_deals")
     .select("id")
     .eq("is_published", false)
     .not("source", "is", null) // 크롤 대기분만(유저 제보는 관리자 승인)
     .order("created_at", { ascending: true })
-    .limit(cap);
-  if (selErr) _debug.relSel = selErr.message;
+    .limit(count);
+  if (filter.boardType) q = q.eq("board_type", filter.boardType);
+  if (filter.category) q = q.eq("category", filter.category);
+  const { data } = await q;
   const ids = ((data as { id: string }[]) ?? []).map((r) => r.id);
-  _debug.relFound = ids.length;
-  let released = 0;
+  let n = 0;
   for (const id of ids) {
     const seed = 1 + Math.floor(Math.random() * 4); // 시작 조회수 1~4
-    const { error } = await sb
-      .from("board_deals")
-      .update({ is_published: true, created_at: new Date().toISOString(), views: seed })
-      .eq("id", id);
-    if (error) _debug.relUpd = error.message;
-    else released++;
+    const offset = Math.floor(Math.random() * 25) * 60_000; // 0~25분 분산
+    const created = new Date(Date.now() - offset).toISOString();
+    const { error } = await sb.from("board_deals").update({ is_published: true, created_at: created, views: seed }).eq("id", id);
+    if (!error) n++;
+  }
+  return n;
+}
+
+// 2) 드립 공개.
+//  - override(테스트): 게이트 무시하고 oldest N개 공개.
+//  - 평소: 활동시간 + 랜덤 간격(약 40~110분) 게이트가 열릴 때만, 카테고리별 소량(주요 2~3·비주류 1~2).
+async function releaseDrip(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>, override?: number): Promise<number> {
+  if (typeof override === "number" && override > 0) {
+    return publishPending(sb, {}, Math.min(override, 40));
+  }
+  if (!isActiveHour()) return 0;
+
+  // 랜덤 간격 게이트 — 마지막 크롤 공개시각 기준
+  const { data: latest } = await sb
+    .from("board_deals")
+    .select("created_at")
+    .eq("is_published", true)
+    .not("source", "is", null)
+    .order("created_at", { ascending: false })
+    .limit(1);
+  const lastIso = (latest as { created_at: string }[] | null)?.[0]?.created_at;
+  const elapsedMin = lastIso ? (Date.now() - new Date(lastIso).getTime()) / 60_000 : 99999;
+  const gap = nextGapMinutes(lastIso ?? "init");
+  _debug.gapMin = Math.round(gap);
+  _debug.elapsedMin = Math.round(elapsedMin);
+  if (elapsedMin < gap) return 0; // 아직 공개 때가 아님
+
+  // 카테고리별 분산 공개
+  let released = 0;
+  for (const b of releasePlan()) {
+    const want = b.min + Math.floor(Math.random() * (b.max - b.min + 1));
+    released += await publishPending(sb, { boardType: b.boardType, category: b.category }, want);
   }
   return released;
 }
