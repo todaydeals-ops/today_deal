@@ -13,8 +13,9 @@ import { postIngest, UA, INGEST_URL, SECRET } from "./_ingest.mjs";
 // KST 벽시계 문자열("2026-06-18T09:59:59") → ISO(UTC)
 const kstToIso = (s) => (s ? new Date(s + "+09:00").toISOString() : undefined);
 
-// ── 어댑터: 지마켓 오픈런 타임딜 (슈퍼딜 페이지 __NEXT_DATA__ 파싱) ──
-async function collectGmarketOpenrun(ctx) {
+// ── 어댑터: 지마켓 슈퍼딜 (오픈런 타임딜·쇼츠딜·앵콜딜 — __NEXT_DATA__ themeDealType로 구분) ──
+const GMARKET_BADGE = { TIME: "gmarket_openrun", SHORTS: "gmarket_shorts", CUSTOM: "gmarket_encore" };
+async function collectGmarket(ctx) {
   const page = await ctx.newPage();
   try {
     await page.goto("https://www.gmarket.co.kr/n/superdeal", { waitUntil: "domcontentloaded", timeout: 60000 });
@@ -32,12 +33,13 @@ async function collectGmarketOpenrun(ctx) {
     const out = [];
     for (const d of deals) {
       const theme = d.themeDealInfo || {};
-      if (theme.themeDealType !== "TIME") continue; // 오픈런 타임딜만
+      const badge = GMARKET_BADGE[theme.themeDealType];
+      if (!badge) continue; // 오픈런/쇼츠/앵콜만
       const price = Number(d.itemPrice);
       if (!d.itemName || !(price > 0)) continue;
       out.push({
         platform: "gmarket",
-        badge: "gmarket_openrun",
+        badge,
         productName: d.itemName,
         imageUrl: d.itemImageUrl || undefined,
         productUrl: d.itemUrl || `https://item.gmarket.co.kr/Item?goodscode=${d.itemNo}`,
@@ -133,7 +135,7 @@ const D11 = "https://deal.11st.co.kr/browsing/DealAction.tmall";
 
 // 소스 어댑터 목록
 const SOURCES = [
-  ["지마켓 오픈런", (ctx) => collectGmarketOpenrun(ctx)],
+  ["지마켓 슈퍼딜", (ctx) => collectGmarket(ctx)],
   ["11번가 타임딜", (ctx) => collect11st(ctx, { url: `${D11}?method=getTimeDeal`, badge: "11st_time", resetHour: 11, limit: 30 })],
   ["11번가 오늘의딜", (ctx) => collect11st(ctx, { url: `${D11}?method=getTodayDeal`, badge: "11st_today", resetHour: 0, limit: 24 })],
 ];
