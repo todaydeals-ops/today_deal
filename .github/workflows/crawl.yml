@@ -1,0 +1,34 @@
+name: 타임딜 자동수집
+
+# 매일 10:10 KST(01:10 UTC) 자동 실행 — 지마켓·알리 10시 초기화 직후 갱신딜 수집.
+# (+ Actions 탭에서 수동 실행 버튼)
+on:
+  schedule:
+    - cron: "10 1 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 의존성 설치
+        working-directory: crawler
+        run: npm install
+
+      - name: 크롬 설치
+        working-directory: crawler
+        run: npx playwright install --with-deps chromium
+
+      - name: 슈퍼딜 자동수집 → 등록
+        working-directory: crawler
+        env:
+          INGEST_URL: https://www.todaydeals.co.kr/api/deals/ingest
+          INGEST_SECRET: ${{ secrets.INGEST_SECRET }}
+        run: node collect-headless.mjs
