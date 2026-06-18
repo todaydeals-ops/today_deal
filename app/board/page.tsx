@@ -104,7 +104,9 @@ export default async function Board({ searchParams }: { searchParams: Promise<{ 
           <p className={styles.empty}>아직 {boardTypeLabel(type)} 글이 없어요. 곧 채워집니다!</p>
         ) : (
           <ul className={styles.list}>
-            {deals.map((d) => (
+            {deals.map((d) => {
+              const viewing = viewingNow(d.createdAt);
+              return (
               <li key={d.id}>
                 <Link href={`/board/${d.slug}`} className={styles.row}>
                   <span className={styles.thumb}>
@@ -129,14 +131,17 @@ export default async function Board({ searchParams }: { searchParams: Promise<{ 
                       <span className={styles.votes}>
                         <i className="ti ti-thumb-up" /> {d.votes + voteBase(d.slug || d.id)}
                       </span>
-                      <span className={styles.viewing}>
-                        <span className={styles.liveDot} /> {viewingNow(d.createdAt)}명 보는중
-                      </span>
+                      {viewing > 0 && (
+                        <span className={styles.viewing}>
+                          <span className={styles.liveDot} /> {viewing}명 보는중
+                        </span>
+                      )}
                     </span>
                   </span>
                 </Link>
               </li>
-            ))}
+              );
+            })}
           </ul>
         )}
       </main>

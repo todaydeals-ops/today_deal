@@ -34,6 +34,17 @@
   letter-spacing: 0.02em;
 }
 
+.dealUnit {
+  opacity: 0.75;
+  font-weight: 700;
+}
+
+/* 드롭다운 잔액 — 숫자만 포인트 컬러 */
+.dealAmt {
+  color: var(--accent-deal, #ff5a3c);
+  font-weight: 800;
+}
+
 .trigger:hover {
   color: var(--text-strong);
 }

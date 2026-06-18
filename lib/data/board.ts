@@ -47,11 +47,14 @@ export function nickFor(seed: string): string {
 export function voteBase(seed: string): number {
   return 3 + (hash(seed, 131) % 28);
 }
-// "지금 N명 보는중"(연출 — 최신일수록 높게, 약간의 변동)
+// "지금 N명 보는중"(연출 — 최신일수록 높게, 글마다 고정값이라 새로고침에도 안 튐).
+// 신생 사이트에서 과장된 수치는 신뢰 역효과+표시광고법 리스크 → 그럴듯한 1~5명 선으로 절제.
+// 48시간 지난 글은 0 반환 → 호출부에서 '보는중' 숨김(실제 누적 조회수만 노출).
 export function viewingNow(createdAt?: string): number {
   const ageH = createdAt ? (Date.now() - new Date(createdAt).getTime()) / 3600000 : 999;
-  const base = ageH < 1 ? 16 : ageH < 6 ? 8 : ageH < 24 ? 4 : 2;
-  return base + Math.floor(Math.random() * base);
+  if (ageH > 48) return 0;
+  const base = ageH < 1 ? 3 : ageH < 6 ? 2 : 1;
+  return base + (hash(createdAt ?? "live", 197) % 3); // 1~5, 글마다 고정
 }
 
 export interface BoardDeal {

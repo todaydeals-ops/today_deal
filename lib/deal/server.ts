@@ -3,11 +3,13 @@ import { getSupabaseAdmin } from "@/lib/supabase/server";
 
 // 적립/사용 규칙
 export const DEAL = {
-  post: 2, // 핫딜 글 승인
-  visit: 1, // 출석(하루 1회)
+  signup: 100, // 회원가입(최초 1회)
+  visit: 10, // 로그인/출석(하루 1회)
+  post: 5, // 핫딜 글 승인
+  click: 1, // 딜 클릭(추후 클릭추적 연동)
   ad: 2, // 광고 시청
   share: 3, // 친구 공유
-  entry: -5, // 이벤트 응모 1회
+  entry: -10, // 이벤트 응모 1회
 } as const;
 
 export const DEAL_SYMBOL = "Đ";
@@ -68,4 +70,11 @@ export async function awardPostOnce(memberId: string, slug: string): Promise<voi
   if (!memberId || !slug) return;
   if ((await countLedger(memberId, { reason: "post", ref: slug })) > 0) return;
   await awardDeal(memberId, DEAL.post, "post", slug);
+}
+
+// 회원가입 보너스 — 최초 1회만
+export async function awardSignupOnce(memberId: string): Promise<void> {
+  if (!memberId) return;
+  if ((await countLedger(memberId, { reason: "signup" })) > 0) return;
+  await awardDeal(memberId, DEAL.signup, "signup");
 }

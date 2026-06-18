@@ -124,9 +124,11 @@ export default async function BoardPost({ params }: { params: Promise<{ slug: st
 
             <div className={styles.stats}>
               <span className={styles.statAuthor}>{author}</span>
-              <span className={styles.viewing}>
-                <span className={styles.liveDot} /> {viewing}명 보는중
-              </span>
+              {viewing > 0 && (
+                <span className={styles.viewing}>
+                  <span className={styles.liveDot} /> {viewing}명 보는중
+                </span>
+              )}
               <span>
                 <i className="ti ti-eye" /> {views.toLocaleString("ko-KR")}
               </span>
