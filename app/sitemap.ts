@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { fetchArchiveSlugs } from "@/lib/data/deals";
 import { fetchCuratedSlugs } from "@/lib/data/curated";
+import { fetchBoardSlugs } from "@/lib/data/board";
 
 const SITE = "https://www.todaydeals.co.kr";
 
@@ -17,6 +18,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE}/deals/coupang`, lastModified: now, changeFrequency: "hourly", priority: 0.9 },
     { url: `${SITE}/deals/ali`, lastModified: now, changeFrequency: "hourly", priority: 0.8 },
     { url: `${SITE}/recommended`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
+    { url: `${SITE}/board`, lastModified: now, changeFrequency: "hourly", priority: 0.8 },
     { url: `${SITE}/giveaway`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE}/terms`, lastModified: now, changeFrequency: "monthly", priority: 0.3 },
     { url: `${SITE}/privacy`, lastModified: now, changeFrequency: "monthly", priority: 0.3 },
@@ -41,5 +43,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  return [...base, ...curatedPages, ...dealPages];
+  // 제보딜 게시판 페이지
+  const board = await fetchBoardSlugs(2000);
+  const boardPages: MetadataRoute.Sitemap = board.map((s) => ({
+    url: `${SITE}/board/${s}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.6,
+  }));
+
+  return [...base, ...curatedPages, ...boardPages, ...dealPages];
 }

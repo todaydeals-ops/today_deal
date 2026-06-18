@@ -15,6 +15,12 @@ const TOOLS = [
     desc: "쿠팡 큐레이션 + 쇼츠/릴스 영상 + AI 한줄평. 개별 콘텐츠 페이지 생성.",
   },
   {
+    href: "/admin/board",
+    icon: "ti-flame",
+    title: "핫딜 제보 게시판",
+    desc: "에이전트가 발굴한 핫딜 등록. 카테고리·쇼핑몰·가격, 개별 페이지 색인.",
+  },
+  {
     href: "/admin/timedeal",
     icon: "ti-clock-bolt",
     title: "타임딜 관리",

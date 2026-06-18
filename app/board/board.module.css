@@ -1,0 +1,136 @@
+.head {
+  margin: 22px 0 16px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+  color: var(--text-strong);
+}
+.titleIcon {
+  color: var(--accent-deal);
+  font-size: 24px;
+}
+.sub {
+  margin-top: 8px;
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.chip {
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border-soft);
+  background: var(--bg-surface);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-body);
+  text-decoration: none;
+}
+.chipOn {
+  background: var(--accent-deal);
+  border-color: var(--accent-deal);
+  color: #fff;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.row {
+  display: flex;
+  gap: 13px;
+  padding: 14px 8px;
+  border-bottom: 1px solid var(--border-soft);
+  text-decoration: none;
+  color: inherit;
+}
+.row:hover {
+  background: var(--bg-sunken, #faf8f4);
+}
+.thumb {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  overflow: hidden;
+  background: var(--bg-muted);
+  display: grid;
+  place-items: center;
+  color: #c2bcb0;
+  font-size: 22px;
+}
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+.rowTitle {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text-strong);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-body);
+}
+.cat {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--accent-deal);
+  background: color-mix(in srgb, var(--accent-deal) 11%, transparent);
+  padding: 2px 7px;
+  border-radius: 6px;
+  font-size: 11.5px;
+}
+.price {
+  font-weight: 800;
+  color: var(--text-strong);
+}
+.ship {
+  color: var(--text-muted);
+}
+.sub2 {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.votes {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--accent-deal);
+  font-weight: 700;
+}
+.empty {
+  padding: 48px 0;
+  text-align: center;
+  color: var(--text-muted);
+}
