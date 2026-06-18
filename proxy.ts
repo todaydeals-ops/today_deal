@@ -26,5 +26,5 @@ export function proxy(req: NextRequest) {
 // /api/deals/ingest·/api/cron/*·/api/auth/* 는 제외(각자 시크릿/공개 로그인).
 // /api/admin/login 은 matcher에 없어 통과(로그인 발급용).
 export const config = {
-  matcher: ["/admin/:path*", "/api/deals", "/api/deals/preview", "/api/curated", "/api/giveaways/:path*", "/api/members/stats", "/api/settings/:path*", "/api/board"],
+  matcher: ["/admin/:path*", "/api/deals", "/api/deals/preview", "/api/curated", "/api/giveaways/:path*", "/api/members", "/api/members/stats", "/api/settings/:path*", "/api/board"],
 };

@@ -44,9 +44,18 @@ const EMPTY = {
   body: "",
 };
 
+interface Member {
+  id: string;
+  nickname: string | null;
+  display_name: string | null;
+  deal_balance: number | null;
+  status: string | null;
+}
+
 export default function AdminBoard() {
   const [form, setForm] = useState({ ...EMPTY });
   const [list, setList] = useState<Row[]>([]);
+  const [banned, setBanned] = useState<Member[]>([]);
   const [adding, setAdding] = useState(false);
   const [msg, setMsg] = useState<string | null>(null);
 
@@ -58,10 +67,28 @@ export default function AdminBoard() {
     } catch {
       // 무시
     }
+    try {
+      const res = await fetch("/api/members?status=banned", { cache: "no-store" });
+      const data: { ok: boolean; members?: Member[] } = await res.json();
+      if (data.ok && data.members) setBanned(data.members);
+    } catch {
+      // 무시
+    }
   }
   useEffect(() => {
     reload();
   }, []);
+
+  async function unban(id: string) {
+    if (!window.confirm("이 회원의 이용정지를 해제할까요? (다시 글쓰기 가능)")) return;
+    try {
+      await fetch(`/api/members?id=${encodeURIComponent(id)}&action=unban`, { method: "PATCH" });
+      await reload();
+      setMsg("✓ 이용정지를 해제했어요.");
+    } catch {
+      setMsg("⚠ 해제 실패.");
+    }
+  }
 
   function set<K extends keyof typeof EMPTY>(k: K, v: string) {
     setForm((f) => ({ ...f, [k]: v }));
@@ -306,6 +333,28 @@ export default function AdminBoard() {
           </ul>
         )}
       </section>
+
+      {/* 이용정지 회원 — 제재 해제 */}
+      {banned.length > 0 && (
+        <section className={styles.listSection}>
+          <h2>🚫 이용정지 회원 ({banned.length})</h2>
+          <ul className={styles.list}>
+            {banned.map((m) => (
+              <li key={m.id} className={styles.item}>
+                <span className={styles.itemName}>
+                  {m.display_name || m.nickname || "회원"}
+                  <em>
+                    {m.id} · 보유 {Number(m.deal_balance) || 0} Đ
+                  </em>
+                </span>
+                <button className={styles.approveBtn} onClick={() => unban(m.id)}>
+                  <i className="ti ti-lock-open" /> 정지 해제
+                </button>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
     </main>
   );
 }
