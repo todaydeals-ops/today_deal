@@ -94,6 +94,20 @@
   margin-bottom: 12px;
 }
 
+.buyLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-deal);
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.buyLink:hover {
+  text-decoration: underline;
+}
+
 .meta {
   display: flex;
   gap: 14px;

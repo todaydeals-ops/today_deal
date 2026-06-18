@@ -11,6 +11,8 @@ interface Input {
   startAt?: string;
   endAt?: string;
   winnerCount?: number | string;
+  affiliateUrl?: string;
+  drawAt?: string;
 }
 
 export async function GET(): Promise<Response> {
@@ -45,6 +47,8 @@ export async function POST(request: Request): Promise<Response> {
     start_at: d.startAt ? new Date(d.startAt).toISOString() : new Date().toISOString(),
     end_at: new Date(d.endAt).toISOString(),
     winner_count: Number.isFinite(winner) && winner > 0 ? winner : 1,
+    affiliate_url: d.affiliateUrl?.trim() || null,
+    draw_at: d.drawAt ? new Date(d.drawAt).toISOString() : null,
   };
   const { data, error } = await sb.from("giveaways").insert(row).select("*");
   if (error) return Response.json({ ok: false, error: error.message }, { status: 500 });

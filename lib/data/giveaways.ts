@@ -13,6 +13,8 @@ interface GiveawayRow {
   start_at: string;
   end_at: string;
   winner_count: number;
+  affiliate_url: string | null;
+  draw_at: string | null;
 }
 
 function mapGiveaway(r: GiveawayRow): Giveaway {
@@ -26,6 +28,8 @@ function mapGiveaway(r: GiveawayRow): Giveaway {
     startAt: r.start_at,
     endAt: r.end_at,
     winnerCount: r.winner_count,
+    affiliateUrl: r.affiliate_url ?? undefined,
+    drawAt: r.draw_at ?? undefined,
   };
 }
 

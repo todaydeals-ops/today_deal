@@ -116,6 +116,72 @@
   padding: 28px 0;
 }
 
+/* 쿠팡 URL 불러오기 줄 */
+.coupangRow {
+  display: flex;
+  gap: 8px;
+}
+.coupangRow .gInput {
+  flex: 1;
+}
+.coupangBtn {
+  white-space: nowrap;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 9px;
+  background: var(--text-strong);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.coupangBtn:disabled {
+  opacity: 0.5;
+}
+.thumbRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.thumb {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: var(--bg-muted);
+  flex-shrink: 0;
+}
+.affTag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+.affOk {
+  background: #eaf7ee;
+  color: #1f9d4d;
+}
+.affRaw {
+  background: #fdeee9;
+  color: #c0392b;
+}
+.periodInfo {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-body);
+  background: var(--bg-sunken);
+  border-radius: 9px;
+  padding: 10px 12px;
+}
+.periodInfo strong {
+  color: var(--accent-deal);
+}
+.drawTag {
+  font-size: 12px;
+  color: var(--accent-deal);
+  font-weight: 700;
+}
+
 @media (max-width: 520px) {
   .gRow {
     grid-template-columns: 1fr;

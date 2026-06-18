@@ -106,4 +106,6 @@ export interface Giveaway {
   endAt: string; // ISO
   winnerCount: number;
   entryCount?: number; // 현재 응모 수 (표시용)
+  affiliateUrl?: string; // 경품 구매 링크 (쿠팡 제휴코드) — 공개 페이지서 클릭 시 수익
+  drawAt?: string; // 추첨 예정 시각 ISO (주간=종료 다음 월요일 / 월간=익월 5일)
 }

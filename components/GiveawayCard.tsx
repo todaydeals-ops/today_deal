@@ -39,7 +39,7 @@ function dday(targetMs: number, nowMs: number) {
 }
 
 export default function GiveawayCard({ giveaway }: GiveawayCardProps) {
-  const { title, prizeName, prizeImage, description, startAt, endAt, winnerCount, entryCount } = giveaway;
+  const { title, prizeName, prizeImage, description, startAt, endAt, winnerCount, entryCount, affiliateUrl } = giveaway;
 
   // 마운트 후에만 상태 계산 (SSR/CSR 불일치 방지)
   const [status, setStatus] = useState<Status | null>(null);
@@ -94,6 +94,16 @@ export default function GiveawayCard({ giveaway }: GiveawayCardProps) {
         <span className={styles.title}>{title}</span>
         <h3 className={styles.prize}>{prizeName}</h3>
         {description && <p className={styles.desc}>{description}</p>}
+        {affiliateUrl && (
+          <a
+            className={styles.buyLink}
+            href={affiliateUrl}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+          >
+            이 경품 쿠팡에서 보기 <i className="ti ti-chevron-right" />
+          </a>
+        )}
 
         <div className={styles.meta}>
           <span>
