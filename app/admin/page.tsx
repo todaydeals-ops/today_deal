@@ -1,8 +1,10 @@
 import Link from "next/link";
 import AdminLogout from "@/components/AdminLogout";
+import { getAdminStats } from "@/lib/data/adminStats";
 import styles from "./page.module.css";
 
 export const metadata = { title: "관리자 — 오늘의딜" };
+export const dynamic = "force-dynamic";
 
 // 관리자 허브 — 모든 등록/관리 도구를 한곳에서.
 const TOOLS = [
@@ -32,7 +34,19 @@ const TOOLS = [
   },
 ];
 
-export default function AdminHome() {
+const fmt = (n: number) => n.toLocaleString("ko-KR");
+
+export default async function AdminHome() {
+  const s = await getAdminStats();
+  const stats = [
+    { label: "오늘 방문(IP)", value: fmt(s.viewsToday), icon: "ti-eye", accent: true },
+    { label: "누적 방문", value: fmt(s.viewsTotal), icon: "ti-chart-line" },
+    { label: "회원", value: fmt(s.members), icon: "ti-users", sub: `동의 ${fmt(s.membersConsented)}` },
+    { label: "진행 중 딜", value: fmt(s.deals), icon: "ti-flame" },
+    { label: "추천딜", value: fmt(s.curated), icon: "ti-sparkles" },
+    { label: "나눔이벤트", value: fmt(s.giveaways), icon: "ti-gift", sub: `추첨 ${fmt(s.draws)}` },
+  ];
+
   return (
     <main className={styles.wrap}>
       <header className={styles.head}>
@@ -49,6 +63,21 @@ export default function AdminHome() {
         </div>
         <AdminLogout className={styles.logout} />
       </header>
+
+      <div className={styles.stats}>
+        {stats.map((st) => (
+          <div key={st.label} className={`${styles.stat} ${st.accent ? styles.statAccent : ""}`}>
+            <span className={styles.statIcon}>
+              <i className={`ti ${st.icon}`} />
+            </span>
+            <span className={styles.statNum}>{st.value}</span>
+            <span className={styles.statLabel}>
+              {st.label}
+              {st.sub && <em className={styles.statSub}> · {st.sub}</em>}
+            </span>
+          </div>
+        ))}
+      </div>
 
       <div className={styles.grid}>
         {TOOLS.map((t) => (
