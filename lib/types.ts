@@ -37,13 +37,13 @@ export interface BadgeMeta {
 }
 
 export const BADGE_META: Record<DealBadge, BadgeMeta> = {
-  gmarket_openrun: { label: "G마켓 오픈런타임딜", short: "G·오픈런", tier: 1, color: "#00a862" },
-  coupang_goldbox: { label: "쿠팡 골드박스", short: "쿠팡·골드", tier: 1, color: "#c8901f" },
-  "11st_time": { label: "11번가 타임딜", short: "11·타임", tier: 1, color: "#ff0038" },
-  ali_time: { label: "알리 타임딜", short: "알리·타임", tier: 1, color: "#ff6a00" },
-  gmarket_shorts: { label: "G마켓 쇼츠딜", short: "G·쇼츠", tier: 2, color: "#1fa463" },
-  gmarket_encore: { label: "G마켓 앵콜딜", short: "G·앵콜", tier: 2, color: "#5fa77f" },
-  "11st_today": { label: "11번가 오늘의딜", short: "11·오늘", tier: 2, color: "#ff5c79" },
+  gmarket_openrun: { label: "G마켓 오픈런타임딜", short: "G-오픈런", tier: 1, color: "#00a862" },
+  coupang_goldbox: { label: "쿠팡 골드박스", short: "쿠팡-골드", tier: 1, color: "#c8901f" },
+  "11st_time": { label: "11번가 타임딜", short: "11-타임딜", tier: 1, color: "#ff0038" },
+  ali_time: { label: "알리 타임딜", short: "알리-타임딜", tier: 1, color: "#ff6a00" },
+  gmarket_shorts: { label: "G마켓 쇼츠딜", short: "G-쇼츠딜", tier: 2, color: "#1fa463" },
+  gmarket_encore: { label: "G마켓 앵콜딜", short: "G-앵콜딜", tier: 2, color: "#5fa77f" },
+  "11st_today": { label: "11번가 오늘의딜", short: "11-오늘딜", tier: 2, color: "#ff5c79" },
 };
 
 // 구버전 3열(점진 폐지 예정). 라벨 Record는 전 플랫폼 키 필요.

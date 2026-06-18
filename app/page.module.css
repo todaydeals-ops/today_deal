@@ -1,32 +1,41 @@
 .sectionHead {
-  display: flex;
-  align-items: baseline;
-  gap: 9px;
-  margin: 26px 0 4px;
+  margin: 34px 0 16px;
 }
 
-.sectionHead2 {
+.title {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 9px;
-  margin: 44px 0 16px;
-}
-
-.sectionHead h1,
-.sectionHead h2,
-.sectionHead2 h2 {
-  font-size: 22px;
-  font-weight: 600;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
   color: var(--text-strong);
 }
 
-.sub {
-  font-size: 13px;
-  color: var(--text-muted);
+.icon {
+  color: var(--accent-deal);
+  font-size: 25px;
+  line-height: 1;
 }
 
-.sectionDesc {
-  font-size: 13px;
-  color: var(--text-body);
-  margin-bottom: 18px;
+.sub {
+  margin-top: 8px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 560px) {
+  .title {
+    font-size: 20px;
+  }
+  .icon {
+    font-size: 21px;
+  }
+  .sub {
+    font-size: 12.5px;
+  }
 }

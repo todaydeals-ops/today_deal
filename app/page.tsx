@@ -2,24 +2,43 @@ import Header from "@/components/Header";
 import Banner from "@/components/Banner";
 import DealGrid from "@/components/DealGrid";
 import Footer from "@/components/Footer";
-import { fetchUnifiedDeals } from "@/lib/data/deals";
-import { BADGE_META, type Deal } from "@/lib/types";
+import { fetchUnifiedDeals, tierOf } from "@/lib/data/deals";
+import { BADGE_META, type Deal, type Platform } from "@/lib/types";
 import styles from "./page.module.css";
 
-// 딜은 2시간마다 바뀌고 신선도가 핵심 → 항상 최신 렌더(엣지 캐시로 옛 딜이 5분 떠 있는 것 방지).
-// SSR이라 검색엔진·JSON-LD는 그대로 노출됨.
+// 딜은 자주 바뀌고 신선도가 핵심 → 항상 최신 렌더(SSR). 검색엔진·JSON-LD는 그대로 노출.
 export const dynamic = "force-dynamic";
 
 const SITE = "https://todaydeals.co.kr";
 
-// 구조화 데이터(JSON-LD) — 구글 리치결과 + AI 답변 인용(AEO/GEO)의 핵심.
+// 1군: 플랫폼 MD 순서 신뢰 → 지마켓·쿠팡·11번가 2개씩 라운드로빈
+function interleaveByPlatform(deals: Deal[], order: Platform[], chunk = 2): Deal[] {
+  const groups = order.map((p) => deals.filter((d) => d.platform === p));
+  const idx = groups.map(() => 0);
+  const out: Deal[] = [];
+  let more = true;
+  while (more) {
+    more = false;
+    groups.forEach((g, gi) => {
+      for (let k = 0; k < chunk && idx[gi] < g.length; k++) {
+        out.push(g[idx[gi]++]);
+        more = true;
+      }
+    });
+  }
+  const known = new Set(order);
+  out.push(...deals.filter((d) => !known.has(d.platform))); // 그 외 플랫폼은 뒤에
+  return out;
+}
+
+// 구조화 데이터(JSON-LD) — 구글 리치결과 + AI 답변 인용(AEO/GEO).
 function buildItemListLd(deals: Deal[]) {
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "오늘의 타임딜",
     description:
-      "지마켓·11번가·쿠팡·알리익스프레스의 타임딜·골드박스를 할인율 순으로 모았습니다. 매일 갱신.",
+      "지마켓·쿠팡·11번가의 실시간 타임딜·골드박스를 한곳에 모았습니다. 매일 갱신.",
     numberOfItems: deals.length,
     itemListElement: deals.slice(0, 40).map((d, i) => ({
       "@type": "ListItem",
@@ -33,9 +52,7 @@ function buildItemListLd(deals: Deal[]) {
           "@type": "Offer",
           price: d.salePrice,
           priceCurrency: "KRW",
-          availability: d.isSoldout
-            ? "https://schema.org/OutOfStock"
-            : "https://schema.org/InStock",
+          availability: d.isSoldout ? "https://schema.org/OutOfStock" : "https://schema.org/InStock",
           url: d.affiliateUrl ?? d.productUrl,
           ...(d.dealEndAt ? { priceValidUntil: d.dealEndAt.slice(0, 10) } : {}),
         },
@@ -44,42 +61,38 @@ function buildItemListLd(deals: Deal[]) {
   };
 }
 
-// 타임딜 메인 — 통합 피드(플랫폼 무관, 할인율 정렬, 출처 뱃지)
 export default async function Home() {
   const deals = await fetchUnifiedDeals();
-  const isTier1 = (d: Deal) => !!(d.badge && BADGE_META[d.badge]?.tier === 1);
-  const tier1 = deals.filter(isTier1);
-  const tier2 = deals.filter((d) => !isTier1(d));
+  const tier1 = interleaveByPlatform(deals.filter((d) => tierOf(d) === 1), ["gmarket", "coupang", "11st"]);
+  const tier2 = deals.filter((d) => tierOf(d) !== 1);
 
-  const ld = buildItemListLd(deals);
+  const ld = buildItemListLd([...tier1, ...tier2]);
 
   return (
     <>
-      {/* AEO/GEO: 구조화 데이터 */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
 
       <Header />
       <main className="wrap">
         <Banner />
 
         <div className={styles.sectionHead}>
-          <h1>지금 핫한 타임딜</h1>
-          <span className={styles.sub}>실시간 · 할인율순</span>
+          <h1 className={styles.title}>
+            <i className={`ti ti-flame ${styles.icon}`} />
+            지금 진행 중인 실시간 특가
+          </h1>
+          <p className={styles.sub}>지마켓·쿠팡·11번가 MD가 지금 이 순간 엄선한 타임딜·골드박스</p>
         </div>
-        <p className={styles.sectionDesc}>
-          지마켓·11번가·쿠팡·알리익스프레스의 타임딜·골드박스를 한곳에 모아 할인율 순으로 보여드려요.
-          매일 새로 갱신됩니다.
-        </p>
-        <DealGrid deals={tier1.length > 0 ? tier1 : tier2} />
+        <DealGrid deals={tier1.length ? tier1 : tier2} />
 
         {tier1.length > 0 && tier2.length > 0 && (
           <>
-            <div className={styles.sectionHead2}>
-              <h2>더 많은 딜</h2>
-              <span className={styles.sub}>쇼킹딜 · 앵콜딜</span>
+            <div className={styles.sectionHead}>
+              <h2 className={styles.title}>
+                <i className={`ti ti-shopping-bag ${styles.icon}`} />
+                더 둘러보는 오늘의 딜
+              </h2>
+              <p className={styles.sub}>마감 전에 챙기는 추가 특가 모음</p>
             </div>
             <DealGrid deals={tier2} />
           </>

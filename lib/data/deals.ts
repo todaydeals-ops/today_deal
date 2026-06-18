@@ -38,28 +38,27 @@ function mapDeal(r: DealRow): Deal {
   };
 }
 
-// 통합 피드 정렬: tier(1=상단) → 할인율 내림차순
-function tierOf(d: Deal): number {
+export function tierOf(d: Deal): number {
   return d.badge && BADGE_META[d.badge] ? BADGE_META[d.badge].tier : 2;
 }
-function sortUnified(deals: Deal[]): Deal[] {
-  return [...deals].sort((a, b) => tierOf(a) - tierOf(b) || (b.discountRate || 0) - (a.discountRate || 0));
-}
 
-// 통합 피드: 전체 딜을 tier·할인율 순으로. Supabase 없으면 mock 폴백.
+// 통합 피드: MD가 정한 순서(display_order) 그대로. 할인율 정렬 안 함. Supabase 없으면 mock 폴백.
 export async function fetchUnifiedDeals(): Promise<Deal[]> {
   const sb = getSupabaseServer();
   if (sb) {
     try {
-      const { data, error } = await sb.from("deals").select("*");
+      const { data, error } = await sb
+        .from("deals")
+        .select("*")
+        .order("display_order", { ascending: true });
       if (!error && data && data.length > 0) {
-        return sortUnified((data as DealRow[]).map(mapDeal));
+        return (data as DealRow[]).map(mapDeal);
       }
     } catch {
       // 폴백
     }
   }
-  return sortUnified(PLATFORM_ORDER.flatMap((p) => getDealsByPlatform(p)));
+  return PLATFORM_ORDER.flatMap((p) => getDealsByPlatform(p));
 }
 
 function groupByPlatform(deals: Deal[]): Record<Platform, Deal[]> {
