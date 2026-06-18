@@ -1,36 +1,30 @@
-// 관리자 페이지(/admin/*) 보호 — Basic Auth.
-// ADMIN_USER/ADMIN_PASS 환경변수가 설정돼 있을 때만 보호(미설정이면 통과 — 개발 편의).
-// 운영에선 반드시 Vercel 환경변수에 ADMIN_USER/ADMIN_PASS 설정할 것.
+// 관리자(/admin/*) + 쓰기 API 보호 — 쿠키 기반 간단 로그인.
+// 로그인 안 됐으면: 페이지는 /admin/login으로, API는 401.
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { ADMIN_COOKIE, ADMIN_TOKEN } from "@/lib/adminAuth";
 
 export function middleware(req: NextRequest) {
-  const user = process.env.ADMIN_USER;
-  const pass = process.env.ADMIN_PASS;
-  if (!user || !pass) return NextResponse.next();
+  const path = req.nextUrl.pathname;
+  // 로그인 화면 자체는 통과
+  if (path === "/admin/login") return NextResponse.next();
 
-  const auth = req.headers.get("authorization");
-  if (auth?.startsWith("Basic ")) {
-    try {
-      const decoded = atob(auth.slice(6));
-      const idx = decoded.indexOf(":");
-      const u = decoded.slice(0, idx);
-      const p = decoded.slice(idx + 1);
-      if (u === user && p === pass) return NextResponse.next();
-    } catch {
-      // 무시 → 401
-    }
+  const authed = req.cookies.get(ADMIN_COOKIE)?.value === ADMIN_TOKEN;
+  if (authed) return NextResponse.next();
+
+  // API는 401, 페이지는 로그인 화면으로 리다이렉트
+  if (path.startsWith("/api/")) {
+    return NextResponse.json({ ok: false, error: "관리자 인증이 필요합니다." }, { status: 401 });
   }
-
-  return new NextResponse("관리자 인증이 필요합니다.", {
-    status: 401,
-    headers: { "WWW-Authenticate": 'Basic realm="oneuldeal-admin"' },
-  });
+  const url = req.nextUrl.clone();
+  url.pathname = "/admin/login";
+  url.searchParams.set("next", path);
+  return NextResponse.redirect(url);
 }
 
-// /admin 페이지 + 브라우저용 타임딜 API(목록/등록/삭제/미리보기) Basic Auth 보호.
-// /api/deals/ingest 는 크롤러(머신)용이라 제외 — 자체 CRON_SECRET으로 인증.
-// (관리자 페이지에서 Basic Auth 인증 후 동일 출처 fetch는 브라우저가 자동으로 인증 헤더 전송)
+// /admin 페이지 + 브라우저용 쓰기 API 보호.
+// /api/deals/ingest·/api/cron/*·/api/auth/* 는 제외(각자 시크릿/공개 로그인).
+// /api/admin/login 은 matcher에 없어 통과(로그인 발급용).
 export const config = {
   matcher: ["/admin/:path*", "/api/deals", "/api/deals/preview", "/api/curated"],
 };
