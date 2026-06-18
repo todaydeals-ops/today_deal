@@ -11,7 +11,7 @@ import styles from "./page.module.css";
 // 딜은 자주 바뀌고 신선도가 핵심 → 항상 최신 렌더(SSR). 검색엔진·JSON-LD는 그대로 노출.
 export const dynamic = "force-dynamic";
 
-const SITE = "https://todaydeals.co.kr";
+const SITE = "https://www.todaydeals.co.kr";
 
 // 1군: 플랫폼 MD 순서 신뢰 → 지마켓·쿠팡·11번가 2개씩 라운드로빈
 function interleaveByPlatform(deals: Deal[], order: Platform[], chunk = 2): Deal[] {

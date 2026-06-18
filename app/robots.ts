@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       { userAgent: "*", allow: "/", disallow: ["/admin", "/api"] },
     ],
-    sitemap: "https://todaydeals.co.kr/sitemap.xml",
-    host: "https://todaydeals.co.kr",
+    sitemap: "https://www.todaydeals.co.kr/sitemap.xml",
+    host: "https://www.todaydeals.co.kr",
   };
 }

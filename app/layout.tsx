@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://todaydeals.co.kr"),
+  metadataBase: new URL("https://www.todaydeals.co.kr"),
   title: "오늘의딜 — 지마켓·11번가·쿠팡 실시간 타임딜·오늘의 특가·최저가 모음",
   description:
     "지마켓 슈퍼딜(오픈런 타임딜), 11번가 쇼킹딜·타임딜, 쿠팡 골드박스를 한곳에 모았습니다. 매일·실시간 갱신되는 오늘의 특가·핫딜·최저가를 할인율과 마감시간으로 한눈에 비교하세요. 무료배송·반값 할인 정보까지.",
@@ -26,10 +26,13 @@ export const metadata: Metadata = {
     "반값 할인",
     "오늘의 쇼핑 특가",
   ],
+  alternates: {
+    types: { "application/rss+xml": "https://www.todaydeals.co.kr/rss.xml" },
+  },
   openGraph: {
     title: "오늘의딜 — 실시간 타임딜·오늘의 특가·최저가 모음",
     description: "지마켓·11번가·쿠팡의 실시간 타임딜과 골드박스를 한곳에. 매일 갱신되는 오늘의 특가를 할인율·마감시간으로 비교하세요.",
-    url: "https://todaydeals.co.kr",
+    url: "https://www.todaydeals.co.kr",
     siteName: "오늘의딜",
     locale: "ko_KR",
     type: "website",
@@ -76,7 +79,7 @@ export default function RootLayout({
                   "@type": "WebSite",
                   name: "오늘의딜",
                   alternateName: "todaydeals",
-                  url: "https://todaydeals.co.kr",
+                  url: "https://www.todaydeals.co.kr",
                   inLanguage: "ko-KR",
                   description:
                     "지마켓·11번가·쿠팡의 실시간 타임딜과 골드박스를 모은 오늘의 특가·최저가 큐레이션 사이트.",
@@ -84,8 +87,8 @@ export default function RootLayout({
                 {
                   "@type": "Organization",
                   name: "오늘의딜",
-                  url: "https://todaydeals.co.kr",
-                  logo: "https://todaydeals.co.kr/apple-icon.png",
+                  url: "https://www.todaydeals.co.kr",
+                  logo: "https://www.todaydeals.co.kr/apple-icon.png",
                   email: "hello@todaydeals.co.kr",
                 },
               ],

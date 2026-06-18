@@ -7,7 +7,7 @@ import { BADGE_META } from "@/lib/types";
 import styles from "./index.module.css";
 
 export const dynamic = "force-dynamic";
-const SITE = "https://todaydeals.co.kr";
+const SITE = "https://www.todaydeals.co.kr";
 
 export const metadata: Metadata = {
   title: "쇼핑몰 타임딜·특가 전체 모아보기 | 오늘의딜",

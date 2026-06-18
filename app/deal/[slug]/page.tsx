@@ -9,7 +9,7 @@ import { fetchArchiveBySlug, fetchUnifiedDeals, tierOf, type ArchiveDeal } from 
 import { BADGE_META } from "@/lib/types";
 import styles from "./page.module.css";
 
-const SITE = "https://todaydeals.co.kr";
+const SITE = "https://www.todaydeals.co.kr";
 
 export const dynamic = "force-dynamic";
 

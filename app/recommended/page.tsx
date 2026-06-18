@@ -9,7 +9,7 @@ import { getRecommendedHeader } from "@/lib/data/settings";
 // 헤더 설정이 즉시 반영되도록 매 요청 최신
 export const dynamic = "force-dynamic";
 
-const SITE = "https://todaydeals.co.kr";
+const SITE = "https://www.todaydeals.co.kr";
 export const metadata: Metadata = {
   title: "오늘의 추천딜 — 직접 고른 쿠팡 핫딜 큐레이션",
   description:

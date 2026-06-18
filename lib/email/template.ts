@@ -38,7 +38,7 @@ function won(n: number) {
 }
 
 // 이메일 안전한 로고 락업 (테라코타 시계 배지 + 워드마크).
-// ※ 픽셀 단위 로고가 필요하면 배포 후 호스팅된 PNG로 교체: <img src="https://todaydeals.co.kr/logo-email.png" .../>
+// ※ 픽셀 단위 로고가 필요하면 배포 후 호스팅된 PNG로 교체: <img src="https://www.todaydeals.co.kr/logo-email.png" .../>
 function logoLockup(): string {
   return `
   <table role="presentation" cellpadding="0" cellspacing="0"><tr>

@@ -21,7 +21,7 @@ function loadEnv() {
 }
 
 const env = loadEnv();
-export const INGEST_URL = env.INGEST_URL || "https://todaydeals.co.kr/api/deals/ingest";
+export const INGEST_URL = env.INGEST_URL || "https://www.todaydeals.co.kr/api/deals/ingest";
 export const SECRET = env.INGEST_SECRET || env.CRON_SECRET || "";
 
 // 임의 페이로드(urls 또는 deals)를 ingest로 전송

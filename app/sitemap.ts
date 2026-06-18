@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { fetchArchiveSlugs } from "@/lib/data/deals";
 import { fetchCuratedSlugs } from "@/lib/data/curated";
 
-const SITE = "https://todaydeals.co.kr";
+const SITE = "https://www.todaydeals.co.kr";
 
 // 매 요청 시 최신 (딜·스냅샷이 계속 늘어남)
 export const dynamic = "force-dynamic";

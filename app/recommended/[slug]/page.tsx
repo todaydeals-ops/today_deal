@@ -14,7 +14,7 @@ import styles from "./page.module.css";
 // 추천딜은 영상·콘텐츠가 핵심 + 하단 실시간 딜이 신선해야 함 → 항상 최신 렌더.
 export const dynamic = "force-dynamic";
 
-const SITE = "https://todaydeals.co.kr";
+const SITE = "https://www.todaydeals.co.kr";
 
 function fmt(n: number) {
   return n.toLocaleString("ko-KR");

@@ -7,7 +7,7 @@ import styles from "./page.module.css";
 
 export const revalidate = 60;
 
-const SITE = "https://todaydeals.co.kr";
+const SITE = "https://www.todaydeals.co.kr";
 export const metadata: Metadata = {
   title: "오늘의딜 나눔이벤트 — 매주·매월 무료 경품 추첨",
   description:

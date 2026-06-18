@@ -9,7 +9,7 @@ import type { Deal, Platform } from "@/lib/types";
 import styles from "./page.module.css";
 
 export const dynamic = "force-dynamic";
-const SITE = "https://todaydeals.co.kr";
+const SITE = "https://www.todaydeals.co.kr";
 
 interface PSeo {
   key: Platform;
