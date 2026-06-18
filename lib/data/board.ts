@@ -39,23 +39,11 @@ function hash(seed: string, salt = 31): number {
   for (let i = 0; i < seed.length; i++) h = (h * salt + seed.charCodeAt(i)) >>> 0;
   return h;
 }
-// 자동수집 글의 표시 닉네임(연출 — 고정)
+// 자동수집 글의 표시 닉네임(작성자 미상인 봇 시딩 글의 표기용 — 고정).
 export function nickFor(seed: string): string {
   return NICKS[hash(seed) % NICKS.length];
 }
-// 추천수 베이스(연출 — 글당 고정 3~30)
-export function voteBase(seed: string): number {
-  return 3 + (hash(seed, 131) % 28);
-}
-// "지금 N명 보는중"(연출 — 최신일수록 높게, 글마다 고정값이라 새로고침에도 안 튐).
-// 신생 사이트에서 과장된 수치는 신뢰 역효과+표시광고법 리스크 → 그럴듯한 1~5명 선으로 절제.
-// 48시간 지난 글은 0 반환 → 호출부에서 '보는중' 숨김(실제 누적 조회수만 노출).
-export function viewingNow(createdAt?: string): number {
-  const ageH = createdAt ? (Date.now() - new Date(createdAt).getTime()) / 3600000 : 999;
-  if (ageH > 48) return 0;
-  const base = ageH < 1 ? 3 : ageH < 6 ? 2 : 1;
-  return base + (hash(createdAt ?? "live", 197) % 3); // 1~5, 글마다 고정
-}
+// 조회수·추천수·보는중은 더 이상 연출하지 않음 — 모두 실제 데이터만 노출(정직성·표시광고법).
 
 export interface BoardDeal {
   id: string;

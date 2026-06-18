@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DealGrid from "@/components/DealGrid";
-import { fetchBoardBySlug, boardTypeLabel, bumpBoardView, nickFor, voteBase, viewingNow, type BoardDeal } from "@/lib/data/board";
+import { fetchBoardBySlug, boardTypeLabel, bumpBoardView, nickFor, type BoardDeal } from "@/lib/data/board";
+import VoteButton from "@/components/VoteButton";
 import { fetchUnifiedDeals, tierOf } from "@/lib/data/deals";
 import styles from "./post.module.css";
 
@@ -77,9 +78,7 @@ export default async function BoardPost({ params }: { params: Promise<{ slug: st
   const live = (await fetchUnifiedDeals()).filter((x) => tierOf(x) === 1).slice(0, 8);
   const href = d.affiliateUrl ?? d.sourceUrl;
   const author = d.author || nickFor(d.slug || d.id);
-  const votes = d.votes + voteBase(d.slug || d.id);
   const views = (d.views ?? 0) + 1;
-  const viewing = viewingNow(d.createdAt);
 
   return (
     <>
@@ -124,17 +123,10 @@ export default async function BoardPost({ params }: { params: Promise<{ slug: st
 
             <div className={styles.stats}>
               <span className={styles.statAuthor}>{author}</span>
-              {viewing > 0 && (
-                <span className={styles.viewing}>
-                  <span className={styles.liveDot} /> {viewing}명 보는중
-                </span>
-              )}
               <span>
                 <i className="ti ti-eye" /> {views.toLocaleString("ko-KR")}
               </span>
-              <span className={styles.voteStat}>
-                <i className="ti ti-thumb-up" /> {votes}
-              </span>
+              <VoteButton slug={slug} votes={d.votes} />
             </div>
 
             {d.body && <p className={styles.bodyText}>{d.body}</p>}

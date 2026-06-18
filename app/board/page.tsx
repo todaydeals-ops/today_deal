@@ -3,7 +3,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BoardSubmit from "@/components/BoardSubmit";
-import { fetchBoardDeals, BOARD_CATEGORIES, BOARD_TYPES, isBoardType, boardTypeLabel, nickFor, voteBase, viewingNow } from "@/lib/data/board";
+import { fetchBoardDeals, BOARD_CATEGORIES, BOARD_TYPES, isBoardType, boardTypeLabel, nickFor } from "@/lib/data/board";
 import styles from "./board.module.css";
 
 export const dynamic = "force-dynamic";
@@ -106,9 +106,7 @@ export default async function Board({ searchParams }: { searchParams: Promise<{ 
           <p className={styles.empty}>아직 {boardTypeLabel(type)} 글이 없어요. 곧 채워집니다!</p>
         ) : (
           <ul className={styles.list}>
-            {deals.map((d) => {
-              const viewing = viewingNow(d.createdAt);
-              return (
+            {deals.map((d) => (
               <li key={d.id}>
                 <Link href={`/board/${d.slug}`} className={styles.row}>
                   <span className={styles.thumb}>
@@ -131,19 +129,13 @@ export default async function Board({ searchParams }: { searchParams: Promise<{ 
                       <span>{d.author || nickFor(d.slug || d.id)}</span>
                       <span>{ago(d.createdAt)}</span>
                       <span className={styles.votes}>
-                        <i className="ti ti-thumb-up" /> {d.votes + voteBase(d.slug || d.id)}
+                        <i className="ti ti-thumb-up" /> {d.votes}
                       </span>
-                      {viewing > 0 && (
-                        <span className={styles.viewing}>
-                          <span className={styles.liveDot} /> {viewing}명 보는중
-                        </span>
-                      )}
                     </span>
                   </span>
                 </Link>
               </li>
-              );
-            })}
+            ))}
           </ul>
         )}
       </main>
