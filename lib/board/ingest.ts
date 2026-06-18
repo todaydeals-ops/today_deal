@@ -154,12 +154,30 @@ async function simulateActivity(sb: NonNullable<ReturnType<typeof getSupabaseAdm
   return { viewed, liked };
 }
 
-export async function runBoardIngest(opts?: { releaseOverride?: number }): Promise<Summary & { debug?: Record<string, unknown> }> {
+// 크롤/자동시딩 글만 삭제(유저 제보·관리자 글 보존). reset 테스트용.
+async function resetCrawl(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): Promise<number> {
+  const { data, error } = await sb
+    .from("board_deals")
+    .delete()
+    .is("submitter_id", null) // 유저 제보 보존
+    .or("source.not.is.null,slug.like.hot-*") // 크롤 글 + 구 자동시딩(hot-)
+    .select("id");
+  if (error) {
+    _debug.resetErr = error.message;
+    return 0;
+  }
+  return data?.length ?? 0;
+}
+
+export async function runBoardIngest(opts?: { releaseOverride?: number; reset?: boolean }): Promise<
+  Summary & { purged?: number; debug?: Record<string, unknown> }
+> {
   for (const k of Object.keys(_debug)) delete _debug[k];
   const sb = getSupabaseAdmin();
   if (!sb) return { collected: 0, inserted: 0, released: 0, viewed: 0, liked: 0 };
+  const purged = opts?.reset ? await resetCrawl(sb) : 0;
   const { collected, inserted } = await ingestNew(sb);
   const released = await releaseDrip(sb, opts?.releaseOverride);
   const { viewed, liked } = await simulateActivity(sb);
-  return { collected, inserted, released, viewed, liked, debug: _debug };
+  return { collected, inserted, released, viewed, liked, purged, debug: _debug };
 }

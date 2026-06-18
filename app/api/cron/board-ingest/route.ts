@@ -17,9 +17,14 @@ export async function GET(request: Request): Promise<Response> {
     return Response.json({ ok: false, error: "unauthorized" }, { status: 401 });
   }
   try {
-    const rel = new URL(request.url).searchParams.get("release");
+    const u = new URL(request.url);
+    const rel = u.searchParams.get("release");
     const releaseOverride = rel ? Number(rel) : undefined;
-    const result = await runBoardIngest(Number.isFinite(releaseOverride) ? { releaseOverride } : undefined);
+    const reset = u.searchParams.get("reset") === "1";
+    const result = await runBoardIngest({
+      ...(Number.isFinite(releaseOverride) ? { releaseOverride } : {}),
+      reset,
+    });
     return Response.json({ ok: true, ...result });
   } catch (e) {
     const msg = e instanceof Error ? e.message : "ingest error";
