@@ -1,5 +1,5 @@
-// 공개(무가입) 핫딜 제보 — 검토 대기(is_published=false)로 접수. 에이전트 승인 후 게시.
-// proxy matcher의 "/api/board"(정확매칭)에 안 걸려서 공개. 허니팟 스팸가드.
+// 핫딜 글쓰기 — 로그인 회원만. 검토 대기(is_published=false)로 접수, 승인 시 +5딜.
+// proxy matcher의 "/api/board"(정확매칭)에 안 걸려서 세션은 여기서 직접 검증. 허니팟 스팸가드.
 import crypto from "node:crypto";
 import { cookies } from "next/headers";
 import { getSupabaseAdmin } from "@/lib/supabase/server";
@@ -50,6 +50,18 @@ export async function POST(request: Request): Promise<Response> {
   // 허니팟: 봇이 채우면 성공인 척 조용히 버림
   if (d.hp && d.hp.trim() !== "") return Response.json({ ok: true, pending: true });
 
+  // 로그인 필수 — 세션 검증(글마다 submitter 기록 → 승인 시 딜 적립)
+  let submitterId: string | null = null;
+  try {
+    const c = await cookies();
+    submitterId = verifySession(c.get(COOKIE_NAME)?.value)?.id ?? null;
+  } catch {
+    submitterId = null;
+  }
+  if (!submitterId) {
+    return Response.json({ ok: false, error: "로그인이 필요해요." }, { status: 401 });
+  }
+
   const url = (d.url || "").trim();
   if (!url || !/^https?:\/\//i.test(url)) {
     return Response.json({ ok: false, error: "올바른 링크(URL)를 넣어주세요." }, { status: 400 });
@@ -60,15 +72,6 @@ export async function POST(request: Request): Promise<Response> {
 
   const sb = getSupabaseAdmin();
   if (!sb) return Response.json({ ok: false, error: "서버 설정 오류" }, { status: 500 });
-
-  // 로그인 회원이 제보하면 submitter 기록 → 승인 시 딜 적립
-  let submitterId: string | null = null;
-  try {
-    const c = await cookies();
-    submitterId = verifySession(c.get(COOKIE_NAME)?.value)?.id ?? null;
-  } catch {
-    submitterId = null;
-  }
 
   const row = {
     slug: boardSlug(d.title.trim()),

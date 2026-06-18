@@ -86,17 +86,19 @@ export default async function Board({ searchParams }: { searchParams: Promise<{ 
           ))}
         </div>
 
-        {/* 카테고리 필터 */}
-        <div className={styles.chips}>
-          <Link href={qs(type)} className={`${styles.chip} ${cat === "전체" ? styles.chipOn : ""}`}>
-            전체
-          </Link>
-          {BOARD_CATEGORIES.map((c) => (
-            <Link key={c} href={qs(type, c)} className={`${styles.chip} ${cat === c ? styles.chipOn : ""}`}>
-              {c}
+        {/* 카테고리 필터 — 상품 카테고리는 핫딜 탭에서만(직구·이벤트·쿠폰엔 부적합) */}
+        {type === "hot" && (
+          <div className={styles.chips}>
+            <Link href={qs(type)} className={`${styles.chip} ${cat === "전체" ? styles.chipOn : ""}`}>
+              전체
             </Link>
-          ))}
-        </div>
+            {BOARD_CATEGORIES.map((c) => (
+              <Link key={c} href={qs(type, c)} className={`${styles.chip} ${cat === c ? styles.chipOn : ""}`}>
+                {c}
+              </Link>
+            ))}
+          </div>
+        )}
 
         <BoardSubmit defaultType={type} />
 
