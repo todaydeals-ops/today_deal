@@ -6,8 +6,9 @@ import { fetchUnifiedDeals } from "@/lib/data/deals";
 import { BADGE_META, type Deal } from "@/lib/types";
 import styles from "./page.module.css";
 
-// DB 변경(크롤러·관리자)이 최대 60초 안에 반영되도록 (매일 갱신 = 신선도 신호)
-export const revalidate = 60;
+// 딜은 2시간마다 바뀌고 신선도가 핵심 → 항상 최신 렌더(엣지 캐시로 옛 딜이 5분 떠 있는 것 방지).
+// SSR이라 검색엔진·JSON-LD는 그대로 노출됨.
+export const dynamic = "force-dynamic";
 
 const SITE = "https://todaydeals.co.kr";
 
