@@ -57,6 +57,9 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
+        {/* 폰트·아이콘 CDN 연결 미리 열기 (LCP 단축) */}
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
         <link
           rel="stylesheet"
           as="style"
