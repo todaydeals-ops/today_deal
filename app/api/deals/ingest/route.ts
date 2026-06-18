@@ -52,6 +52,12 @@ interface Row {
 const MAX = 200;
 const PLATFORMS: Platform[] = ["gmarket", "11st", "ali", "coupang"];
 
+// 상품 URL → 영구 슬러그 (상품당 1개, 중복 누적 방지)
+function slugFor(platform: string, url: string): string | null {
+  const m = url.match(/goodscode=(\d+)/) || url.match(/\/products\/(\d+)/) || url.match(/\/vp\/products\/(\d+)/);
+  return m?.[1] ? `${platform}-${m[1]}` : null;
+}
+
 export async function POST(request: Request): Promise<Response> {
   const cronSecret = process.env.CRON_SECRET;
   if (!cronSecret) {
@@ -176,6 +182,32 @@ export async function POST(request: Request): Promise<Response> {
   const toInsert = rows.map((r, i) => ({ ...r, display_order: base + i + 1 }));
   const ins = await sb.from("deals").insert(toInsert);
   if (ins.error) return Response.json({ ok: false, error: ins.error.message }, { status: 500 });
+
+  // 영구 스냅샷(deal_archive) — 상품당 1개 upsert. URL 영속(404 방지)·검색/AI 인용용. (테이블 없으면 무시)
+  try {
+    const seen = new Set<string>();
+    const archive = [];
+    for (const r of toInsert) {
+      const slug = slugFor(r.platform, r.product_url);
+      if (!slug || seen.has(slug)) continue;
+      seen.add(slug);
+      archive.push({
+        slug,
+        badge: r.badge,
+        platform: r.platform,
+        product_name: r.product_name,
+        image_url: r.image_url,
+        affiliate_url: r.affiliate_url,
+        product_url: r.product_url,
+        sale_price: r.sale_price,
+        discount_rate: r.discount_rate,
+        last_seen: new Date().toISOString(),
+      });
+    }
+    if (archive.length) await sb.from("deal_archive").upsert(archive, { onConflict: "slug" });
+  } catch {
+    // deal_archive 미존재 시 패스
+  }
 
   return Response.json({
     ok: true,
