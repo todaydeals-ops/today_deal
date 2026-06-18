@@ -73,6 +73,12 @@ export async function POST(request: Request): Promise<Response> {
   const sb = getSupabaseAdmin();
   if (!sb) return Response.json({ ok: false, error: "서버 설정 오류" }, { status: 500 });
 
+  // 이용정지(탈퇴 처리)된 계정은 글쓰기 차단
+  const { data: mem } = await sb.from("members").select("status").eq("id", submitterId).maybeSingle();
+  if (mem?.status === "banned") {
+    return Response.json({ ok: false, error: "이용이 제한된 계정입니다." }, { status: 403 });
+  }
+
   const row = {
     slug: boardSlug(d.title.trim()),
     board_type: BOARD_TYPE_KEYS.includes(d.boardType ?? "") ? d.boardType : "hot",

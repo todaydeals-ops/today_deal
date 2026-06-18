@@ -1,7 +1,7 @@
 // 제보딜 등록/조회/삭제 (에이전트·관리자). proxy 쿠키 게이트로 보호, 쓰기는 service_role.
 import crypto from "node:crypto";
 import { getSupabaseAdmin } from "@/lib/supabase/server";
-import { awardPostOnce } from "@/lib/deal/server";
+import { awardPostOnce, reclaimPostDeal } from "@/lib/deal/server";
 
 export const runtime = "nodejs";
 
@@ -95,12 +95,33 @@ export async function PATCH(request: Request): Promise<Response> {
   return Response.json({ ok: true });
 }
 
+// 삭제(?id=) — 제재 옵션: ?reclaim=1(지급 딜 회수) ?ban=1(작성자 이용정지)
 export async function DELETE(request: Request): Promise<Response> {
   const sb = getSupabaseAdmin();
   if (!sb) return Response.json({ ok: false, error: "Supabase service_role 미설정" }, { status: 500 });
-  const id = new URL(request.url).searchParams.get("id");
+  const url = new URL(request.url);
+  const id = url.searchParams.get("id");
+  const reclaim = url.searchParams.get("reclaim") === "1";
+  const ban = url.searchParams.get("ban") === "1";
   if (!id) return Response.json({ ok: false, error: "id 누락" }, { status: 400 });
+
+  // 제재 시 작성자 정보 먼저 확보
+  let submitterId: string | null = null;
+  let slug: string | null = null;
+  let published = false;
+  if (reclaim || ban) {
+    const { data: row } = await sb.from("board_deals").select("submitter_id, slug, is_published").eq("id", id).maybeSingle();
+    submitterId = (row?.submitter_id as string) ?? null;
+    slug = (row?.slug as string) ?? null;
+    published = !!row?.is_published;
+  }
+
   const { error } = await sb.from("board_deals").delete().eq("id", id);
   if (error) return Response.json({ ok: false, error: error.message }, { status: 500 });
-  return Response.json({ ok: true });
+
+  if (submitterId) {
+    if (reclaim && published && slug) await reclaimPostDeal(submitterId, slug);
+    if (ban) await sb.from("members").update({ status: "banned" }).eq("id", submitterId);
+  }
+  return Response.json({ ok: true, reclaimed: reclaim, banned: ban && !!submitterId });
 }

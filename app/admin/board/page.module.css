@@ -172,6 +172,37 @@
   gap: 3px;
 }
 
+.banBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid #c0392b;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #fff;
+  color: #c0392b;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+}
+.banBtn:hover {
+  background: #c0392b;
+  color: #fff;
+}
+
+.memberBadge {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 2px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: #eef3ff;
+  color: #3a5bb8;
+  font-size: 10.5px;
+  font-weight: 700;
+}
+
 @media (max-width: 560px) {
   .row3 {
     grid-template-columns: 1fr;

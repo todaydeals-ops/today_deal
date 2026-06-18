@@ -102,3 +102,11 @@ export async function awardSignupOnce(memberId: string): Promise<void> {
   if ((await countLedger(memberId, { reason: "signup" })) > 0) return;
   await awardDeal(memberId, DEAL.signup, "signup");
 }
+
+// 악성글 제재 — 지급했던 글 보상(+post)을 1회만 회수(차감)
+export async function reclaimPostDeal(memberId: string, slug: string): Promise<void> {
+  if (!memberId || !slug) return;
+  if ((await countLedger(memberId, { reason: "post", ref: slug })) < 1) return; // 지급 안 됐으면 회수 없음
+  if ((await countLedger(memberId, { reason: "admin", ref: `reclaim:${slug}` })) > 0) return; // 이미 회수됨
+  await awardDeal(memberId, -DEAL.post, "admin", `reclaim:${slug}`);
+}

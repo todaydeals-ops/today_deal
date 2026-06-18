@@ -24,6 +24,7 @@ interface Row {
   image_url: string | null;
   author: string | null;
   source_url: string;
+  submitter_id: string | null;
   is_published: boolean;
   created_at: string;
 }
@@ -114,6 +115,24 @@ export default function AdminBoard() {
       await reload();
     } catch {
       setMsg("⚠ 삭제 실패.");
+    }
+  }
+
+  // 악성글 제재: 삭제 + 지급 딜 회수 + 작성자 이용정지(탈퇴)
+  async function moderate(id: string) {
+    if (
+      !window.confirm(
+        "악성/스팸 게시물로 제재할까요?\n\n· 글 삭제\n· 지급된 +5딜 회수\n· 작성자 이용정지(탈퇴 처리)\n\n되돌릴 수 없어요."
+      )
+    )
+      return;
+    try {
+      const res = await fetch(`/api/board?id=${encodeURIComponent(id)}&reclaim=1&ban=1`, { method: "DELETE" });
+      const d: { ok: boolean } = await res.json();
+      await reload();
+      setMsg(d.ok ? "🚫 제재 완료 — 삭제·딜 회수·이용정지 처리했어요." : "⚠ 제재 실패.");
+    } catch {
+      setMsg("⚠ 제재 실패.");
     }
   }
 
@@ -230,10 +249,16 @@ export default function AdminBoard() {
                   <a className={styles.srcLink} href={d.source_url} target="_blank" rel="noopener noreferrer">
                     원본 링크 확인 <i className="ti ti-external-link" />
                   </a>
+                  {d.submitter_id && <span className={styles.memberBadge}>제보 회원</span>}
                 </span>
                 <button className={styles.approveBtn} onClick={() => approve(d.id)}>
                   <i className="ti ti-check" /> 승인
                 </button>
+                {d.submitter_id && (
+                  <button className={styles.banBtn} onClick={() => moderate(d.id)} title="악성 제재(삭제+딜회수+정지)">
+                    <i className="ti ti-ban" /> 제재
+                  </button>
+                )}
                 <button className={styles.delBtn} onClick={() => remove(d.id)}>
                   <i className="ti ti-trash" />
                 </button>
@@ -266,7 +291,13 @@ export default function AdminBoard() {
                       .filter(Boolean)
                       .join(" · ")}
                   </em>
+                  {d.submitter_id && <span className={styles.memberBadge}>제보 회원</span>}
                 </span>
+                {d.submitter_id && (
+                  <button className={styles.banBtn} onClick={() => moderate(d.id)} title="악성 제재(삭제+딜회수+정지)">
+                    <i className="ti ti-ban" /> 제재
+                  </button>
+                )}
                 <button className={styles.delBtn} onClick={() => remove(d.id)}>
                   <i className="ti ti-trash" />
                 </button>
