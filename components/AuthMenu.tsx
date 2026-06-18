@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getSupabaseBrowser } from "@/lib/supabase/client";
 import {
   getUser,
   loginMock,
@@ -13,26 +12,20 @@ import {
 import styles from "./AuthMenu.module.css";
 
 const PROVIDER_LABEL = { kakao: "카카오", naver: "네이버" } as const;
-const PENDING_CONSENT = "oneuldeal_pending_consent";
 
 interface Display {
   loggedIn: boolean;
   label: string;
 }
 
-// 헤더 로그인.
-//  - Supabase 설정 시: 실제 카카오 OAuth (signInWithOAuth)
-//  - 미설정 시: mock 로그인(localStorage)
-// 두 경우 모두 giveawayStore와 동기화해 응모권/레퍼럴이 동일하게 동작.
+// 헤더 로그인 — 커스텀 카카오 OAuth(/api/auth/*, Supabase 미경유).
+//  - 카카오: 실제 OAuth (이메일 없이 닉네임·프로필만 → KOE 에러 없음)
+//  - 네이버: 아직 미연동 → mock (추후 동일 방식으로 추가)
 export default function AuthMenu() {
-  const supabase = getSupabaseBrowser();
-  const real = !!supabase;
-
   const [display, setDisplay] = useState<Display>({ loggedIn: false, label: "로그인" });
   const [open, setOpen] = useState(false);
   const [consent, setConsentChecked] = useState(false);
 
-  /* ---------- 공통: mock 상태 반영 ---------- */
   function applyMock() {
     const u: MockUser = getUser();
     setConsentChecked(u.marketingConsent);
@@ -43,80 +36,39 @@ export default function AuthMenu() {
   }
 
   useEffect(() => {
-    if (!real || !supabase) {
-      // mock 모드
-      applyMock();
-      const h = () => applyMock();
-      window.addEventListener(AUTH_EVENT, h);
-      return () => window.removeEventListener(AUTH_EVENT, h);
-    }
-
-    // 실 모드 (Supabase)
     let mounted = true;
-    const bridge = async (session: import("@supabase/supabase-js").Session | null) => {
-      if (!mounted) return;
-      if (session?.user) {
-        const u = session.user;
-        const meta = u.user_metadata ?? {};
-        const name =
-          (meta.name as string) ||
-          (meta.full_name as string) ||
-          (meta.preferred_username as string) ||
-          (u.email as string) ||
-          "회원";
-        setDisplay({ loggedIn: true, label: name });
-        // 응모권 로직용 mock 스토어 브리지 (로그인 + 동의)
-        if (!getUser().loggedIn) {
-          loginMock("kakao");
-          setConsent(true);
+    // 1) 서버 세션(카카오) 확인 → 있으면 giveawayStore에 브리지(응모권 로직 공유)
+    (async () => {
+      try {
+        const res = await fetch("/api/auth/me", { cache: "no-store" });
+        const data: { user?: { nickname?: string; provider?: "kakao" | "naver" } | null } = await res.json();
+        if (!mounted) return;
+        if (data.user) {
+          if (!getUser().loggedIn) {
+            loginMock(data.user.provider ?? "kakao");
+            setConsent(true); // 로그인 동의 후 진행했으므로
+          }
+          setDisplay({ loggedIn: true, label: data.user.nickname || "회원" });
+          return;
         }
-        // profiles 업서트 (마케팅 동의 저장)
-        try {
-          const consented = window.localStorage.getItem(PENDING_CONSENT) !== "0";
-          await supabase.from("profiles").upsert({
-            id: u.id,
-            provider: u.app_metadata?.provider ?? "kakao",
-            marketing_consent: consented,
-            consent_at: new Date().toISOString(),
-          });
-        } catch {
-          // 프로필 저장 실패는 무시 (로그인 자체는 유지)
-        }
-      } else {
-        setDisplay({ loggedIn: false, label: "로그인" });
-        if (getUser().loggedIn) logoutMock();
+      } catch {
+        // 세션 조회 실패 → mock 반영
       }
-    };
+      if (mounted) applyMock();
+    })();
 
-    supabase.auth.getSession().then(({ data }) => bridge(data.session));
-    const { data: sub } = supabase.auth.onAuthStateChange((_e, session) => bridge(session));
+    const h = () => applyMock();
+    window.addEventListener(AUTH_EVENT, h);
     return () => {
       mounted = false;
-      sub.subscription.unsubscribe();
+      window.removeEventListener(AUTH_EVENT, h);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  /* ---------- 로그인 ---------- */
-  async function loginKakao() {
+  function loginKakao() {
     if (!consent) return;
-    if (real && supabase) {
-      window.localStorage.setItem(PENDING_CONSENT, "1");
-      // 로그인 단계에선 기본 프로필(닉네임·프로필사진)만 요청한다.
-      // account_email은 카카오 비즈 검수 승인 전 요청 시 KOE006(앱 관리자 설정 오류)을
-      // 유발하므로 제외. 이메일 검수 승인 후 "profile_nickname profile_image account_email"로 확장.
-      await supabase.auth.signInWithOAuth({
-        provider: "kakao",
-        options: {
-          scopes: "profile_nickname profile_image",
-          redirectTo: window.location.origin + window.location.pathname,
-        },
-      });
-    } else {
-      loginMock("kakao");
-      setConsent(true);
-      setOpen(false);
-    }
+    const here = window.location.pathname + window.location.search;
+    window.location.href = `/api/auth/kakao/login?returnTo=${encodeURIComponent(here)}`;
   }
 
   function loginNaverMock() {
@@ -127,7 +79,11 @@ export default function AuthMenu() {
   }
 
   async function logout() {
-    if (real && supabase) await supabase.auth.signOut();
+    try {
+      await fetch("/api/auth/logout", { method: "POST" });
+    } catch {
+      // 무시
+    }
     logoutMock();
     setOpen(false);
   }
@@ -169,15 +125,6 @@ export default function AuthMenu() {
               >
                 <i className="ti ti-message-circle-2" /> 카카오로 시작
               </button>
-              {!real && (
-                <button
-                  className={`${styles.sns} ${styles.naver}`}
-                  disabled={!consent}
-                  onClick={loginNaverMock}
-                >
-                  N 네이버로 시작
-                </button>
-              )}
             </>
           )}
         </div>

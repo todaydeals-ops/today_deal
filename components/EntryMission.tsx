@@ -78,6 +78,13 @@ export default function EntryMission({ giveaway, onClose, onChange }: EntryMissi
       setMessage("마케팅 수신에 동의해야 응모할 수 있어요.");
       return;
     }
+    if (provider === "kakao") {
+      setConsent(true); // 돌아왔을 때 동의 유지 (localStorage)
+      const here = window.location.pathname + window.location.search;
+      window.location.href = `/api/auth/kakao/login?returnTo=${encodeURIComponent(here)}`;
+      return;
+    }
+    // 네이버: 아직 미연동 → mock
     loginMock(provider);
     setConsent(true); // 이벤트 → refresh
     setMessage("✓ 로그인 완료! 응모하기를 눌러 응모권을 받으세요.");
