@@ -204,6 +204,33 @@ export async function POST(request: Request): Promise<Response> {
     // deal_archive 미존재 시 패스
   }
 
+  // 게시판 '핫딜' 자동 시딩 — 보드가 비지 않게(무관심 극복). slug "hot-" 네임스페이스로 유저글과 분리. (board_deals 없으면 무시)
+  try {
+    const SHOP_KR: Record<string, string> = { gmarket: "지마켓", "11st": "11번가", coupang: "쿠팡", ali: "알리익스프레스" };
+    const seenB = new Set<string>();
+    const posts = [];
+    for (const r of toInsert) {
+      const ds = dealSlug(r.platform, r.product_url);
+      if (!ds || seenB.has(ds)) continue;
+      seenB.add(ds);
+      posts.push({
+        slug: `hot-${ds}`,
+        board_type: "hot",
+        title: r.product_name,
+        shop: SHOP_KR[r.platform] ?? r.platform,
+        price: r.sale_price,
+        image_url: r.image_url,
+        source_url: r.product_url,
+        affiliate_url: r.affiliate_url,
+        original_url: r.product_url,
+        is_published: true,
+      });
+    }
+    if (posts.length) await sb.from("board_deals").upsert(posts, { onConflict: "slug" });
+  } catch {
+    // board_deals 미존재 시 패스
+  }
+
   return Response.json({
     ok: true,
     registered: toInsert.length,
