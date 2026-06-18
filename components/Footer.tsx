@@ -22,6 +22,7 @@ export default function Footer() {
           <Link href="/terms">이용약관</Link>
           <Link href="/privacy">개인정보처리방침</Link>
           <Link href="/partnership">제휴문의</Link>
+          <Link href="/admin" className={styles.admin} aria-label="관리자">admin</Link>
         </div>
       </div>
     </footer>
