@@ -20,19 +20,28 @@ export interface RawDeal {
 }
 
 interface SourceDef {
-  source: string;
+  source: string; // 표시/그룹용
+  key: string; // slug 네임스페이스(보드별 글번호 독립 → 충돌 방지)
   rss: string;
   boardType: string;
   idFrom: RegExp; // link에서 글번호 추출
 }
 
-const UA = "Mozilla/5.0 (compatible; TodaydealsBot/1.0; +https://www.todaydeals.co.kr)";
+// 브라우저 UA 필수 — 봇 UA면 뽐뿌가 빈 응답을 줌
+const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36";
 
 export const SOURCES: SourceDef[] = [
-  { source: "ppomppu", rss: "https://www.ppomppu.co.kr/rss.php?id=ppomppu", boardType: "hot", idFrom: /no=(\d+)/ },
-  { source: "ppomppu", rss: "https://www.ppomppu.co.kr/rss.php?id=ppomppu4", boardType: "overseas", idFrom: /no=(\d+)/ },
-  { source: "ppomppu", rss: "https://www.ppomppu.co.kr/rss.php?id=coupon", boardType: "coupon", idFrom: /no=(\d+)/ },
-  { source: "ruliweb", rss: "https://bbs.ruliweb.com/market/board/1020/rss", boardType: "hot", idFrom: /\/read\/(\d+)/ },
+  // 핫딜
+  { source: "ppomppu", key: "ppomppu", rss: "https://www.ppomppu.co.kr/rss.php?id=ppomppu", boardType: "hot", idFrom: /no=(\d+)/ },
+  { source: "ruliweb", key: "ruliweb", rss: "https://bbs.ruliweb.com/market/board/1020/rss", boardType: "hot", idFrom: /\/read\/(\d+)/ },
+  // 해외직구
+  { source: "ppomppu", key: "ppomppu4", rss: "https://www.ppomppu.co.kr/rss.php?id=ppomppu4", boardType: "overseas", idFrom: /no=(\d+)/ },
+  // 쿠폰/적립
+  { source: "ppomppu", key: "coupon", rss: "https://www.ppomppu.co.kr/rss.php?id=coupon", boardType: "coupon", idFrom: /no=(\d+)/ },
+  // 무료/이벤트 — 이벤트·체험단
+  { source: "ppomppu", key: "ppevent", rss: "https://www.ppomppu.co.kr/rss.php?id=event_ppomppu", boardType: "free", idFrom: /no=(\d+)/ },
+  { source: "ppomppu", key: "ppevent2", rss: "https://www.ppomppu.co.kr/rss.php?id=event2", boardType: "free", idFrom: /no=(\d+)/ },
+  { source: "ppomppu", key: "ppexp", rss: "https://www.ppomppu.co.kr/rss.php?id=experience", boardType: "free", idFrom: /no=(\d+)/ },
 ];
 
 function decode(s: string): string {
@@ -113,7 +122,7 @@ async function fetchSource(def: SourceDef): Promise<RawDeal[]> {
       out.push({
         source: def.source,
         sourceId,
-        slug: `${def.source}-${sourceId}`,
+        slug: `${def.key}-${sourceId}`,
         boardType: def.boardType,
         title: parsed.title,
         rawTitle,
