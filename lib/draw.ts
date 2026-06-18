@@ -27,20 +27,3 @@ export function weightedDraw(pool: Participant[], count: number): Participant[] 
   }
   return winners;
 }
-
-// ── 데모용 합성 응모자 풀 생성 ──
-const SURNAMES = ["김", "이", "박", "최", "정", "강", "조", "윤", "장", "임", "한", "오", "서", "신", "권"];
-
-// poolSize명을 무작위 응모권(1~maxEntries)으로 생성
-export function makeSyntheticPool(poolSize: number, maxEntries = 6): Participant[] {
-  const pool: Participant[] = [];
-  for (let i = 0; i < poolSize; i++) {
-    const sn = SURNAMES[Math.floor(Math.random() * SURNAMES.length)];
-    pool.push({
-      id: `p${i}`,
-      name: `${sn}**`,
-      weight: 1 + Math.floor(Math.random() * maxEntries),
-    });
-  }
-  return pool;
-}

@@ -1,10 +1,10 @@
-// 관리자(/admin/*) + 쓰기 API 보호 — 쿠키 기반 간단 로그인.
+// 관리자(/admin/*) + 쓰기 API 보호 — 쿠키 기반 간단 로그인. (Next 16 proxy 컨벤션)
 // 로그인 안 됐으면: 페이지는 /admin/login으로, API는 401.
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { ADMIN_COOKIE, ADMIN_TOKEN } from "@/lib/adminAuth";
 
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   const path = req.nextUrl.pathname;
   // 로그인 화면 자체는 통과
   if (path === "/admin/login") return NextResponse.next();
