@@ -21,8 +21,15 @@ export function detectPlatform(url: string): DetectedPlatform {
   return null;
 }
 
-// 플랫폼별 제휴링크 변환. 변환 불가(키 미설정 등) 시 null.
+// LinkPrice 승인 완료된 플랫폼만 딥링크 변환. (미승인 딥링크는 "승인되지 않은 링크" 에러)
+// 승인되면 env LINKPRICE_APPROVED="gmarket,11st,ali" 처럼 추가 → 자동 수익화.
+function approvedPlatforms(): Set<string> {
+  return new Set((process.env.LINKPRICE_APPROVED ?? "gmarket").split(",").map((s) => s.trim()).filter(Boolean));
+}
+
+// 제휴링크 변환. 승인 안 된 플랫폼은 null → 호출부가 원본 URL로 폴백(클릭은 정상).
 export function affiliateForPlatform(platform: Platform, url: string): string | null {
+  if (!approvedPlatforms().has(platform)) return null;
   switch (platform) {
     case "gmarket":
       return linkpriceDeeplink(gmarketMerchant(), url);

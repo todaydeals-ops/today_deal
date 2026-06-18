@@ -96,12 +96,8 @@ export async function POST(request: Request): Promise<Response> {
       skipped.push({ url, reason: "가격 없음" });
       continue;
     }
-    // 제휴링크 우선: 소스 제공분(쿠팡) → 플랫폼 변환(LinkPrice). 없으면 노출 보류.
-    const affiliate = d.affiliateUrl?.trim() || affiliateForPlatform(platform, url) || "";
-    if (!affiliate) {
-      skipped.push({ url, reason: "제휴링크 없음(키/승인 확인)" });
-      continue;
-    }
+    // 제휴링크 우선: 소스 제공분(쿠팡) → 승인된 LinkPrice → 둘 다 없으면 원본 URL(클릭 정상, 수수료는 승인 후).
+    const affiliate = d.affiliateUrl?.trim() || affiliateForPlatform(platform, url) || url;
     rows.push({
       platform,
       badge: d.badge ?? null,
@@ -135,7 +131,7 @@ export async function POST(request: Request): Promise<Response> {
           product_name: meta.title,
           image_url: meta.imageUrl ?? null,
           product_url: url,
-          affiliate_url: affiliateForPlatform(platform, url),
+          affiliate_url: affiliateForPlatform(platform, url) ?? url,
           discount_rate: null,
           sale_price: meta.price,
           deal_end_at: dealEndAt,
