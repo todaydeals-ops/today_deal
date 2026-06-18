@@ -3,35 +3,52 @@
 }
 
 .trigger {
-  display: flex;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 34px;
+  padding: 0 5px 0 4px;
+  background: var(--bg-muted);
+  border-radius: 999px;
+}
+
+.triggerMain {
+  display: inline-flex;
   align-items: center;
   gap: 6px;
-  height: 34px;
-  padding: 0 12px 0 10px;
-  background: var(--bg-muted);
+  height: 28px;
+  padding: 0 4px 0 8px;
+  background: none;
   border: none;
-  border-radius: 999px;
   color: var(--text-body);
   font-size: 13px;
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
 }
-
-.trigger i {
+.triggerMain i {
   font-size: 16px;
+}
+.triggerMain:hover {
+  color: var(--text-strong);
 }
 
 .deal {
   display: inline-flex;
   align-items: center;
-  padding: 1px 7px;
+  padding: 3px 9px;
+  border: none;
   border-radius: 999px;
   background: var(--accent-deal, #ff5a3c);
   color: #fff;
   font-size: 11.5px;
   font-weight: 800;
   letter-spacing: 0.02em;
+  font-family: inherit;
+  cursor: pointer;
+}
+.deal:hover {
+  filter: brightness(1.05);
 }
 
 .dealUnit {
@@ -43,10 +60,6 @@
 .dealAmt {
   color: var(--accent-deal, #ff5a3c);
   font-weight: 800;
-}
-
-.trigger:hover {
-  color: var(--text-strong);
 }
 
 .dropdown {
@@ -66,9 +79,133 @@
 }
 
 .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 14px;
   font-weight: 700;
   color: var(--text-strong);
+}
+
+.editNick {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px 8px;
+  border: 1px solid var(--border-soft);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--text-muted);
+  font-size: 11.5px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+.editNick:hover {
+  color: var(--accent-deal, #ff5a3c);
+  border-color: var(--accent-deal, #ff5a3c);
+}
+
+.nickEdit {
+  display: flex;
+  gap: 6px;
+}
+.nickInput {
+  flex: 1;
+  min-width: 0;
+  padding: 7px 10px;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: inherit;
+}
+.nickSave {
+  padding: 0 12px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent-deal, #ff5a3c);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+}
+.nickSave:disabled {
+  opacity: 0.6;
+}
+
+.linkBtn {
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--accent-deal, #ff5a3c);
+  font-size: 12px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* 딜 내역 */
+.histHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-strong);
+}
+.back {
+  display: inline-flex;
+  padding: 2px;
+  border: none;
+  background: none;
+  color: var(--text-muted);
+  font-size: 18px;
+  cursor: pointer;
+}
+.histBal {
+  margin-left: auto;
+  font-weight: 800;
+  color: var(--accent-deal, #ff5a3c);
+  font-size: 13px;
+}
+.hist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 260px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.hist li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 2px;
+  border-bottom: 1px solid var(--border-soft);
+  font-size: 12.5px;
+}
+.hist li:last-child {
+  border-bottom: none;
+}
+.histReason {
+  flex: 1;
+  color: var(--text-body);
+}
+.plus {
+  font-weight: 800;
+  color: #1f9d4d;
+}
+.minus {
+  font-weight: 800;
+  color: #d84343;
+}
+.histDate {
+  width: 64px;
+  text-align: right;
+  color: var(--text-muted);
+  font-size: 11px;
 }
 
 .sub {

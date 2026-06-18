@@ -26,3 +26,13 @@
   color: var(--accent-deal);
   cursor: default;
 }
+
+/* 목록용 작은 버전 */
+.sm {
+  padding: 2px 9px;
+  font-size: 12px;
+  gap: 4px;
+}
+.sm i {
+  font-size: 13px;
+}

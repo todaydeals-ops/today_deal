@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BoardSubmit from "@/components/BoardSubmit";
+import VoteButton from "@/components/VoteButton";
 import { fetchBoardDeals, BOARD_CATEGORIES, BOARD_TYPES, isBoardType, boardTypeLabel, nickFor } from "@/lib/data/board";
 import styles from "./board.module.css";
 
@@ -128,9 +129,7 @@ export default async function Board({ searchParams }: { searchParams: Promise<{ 
                     <span className={styles.sub2}>
                       <span>{d.author || nickFor(d.slug || d.id)}</span>
                       <span>{ago(d.createdAt)}</span>
-                      <span className={styles.votes}>
-                        <i className="ti ti-thumb-up" /> {d.votes}
-                      </span>
+                      {d.slug && <VoteButton slug={d.slug} votes={d.votes} size="sm" />}
                     </span>
                   </span>
                 </Link>

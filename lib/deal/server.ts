@@ -37,6 +37,30 @@ export async function getBalance(memberId: string): Promise<number> {
   }
 }
 
+export interface LedgerEntry {
+  delta: number;
+  reason: string;
+  ref: string | null;
+  created_at: string;
+}
+
+// 최근 딜 적립/사용 내역
+export async function getLedger(memberId: string, limit = 30): Promise<LedgerEntry[]> {
+  const sb = getSupabaseAdmin();
+  if (!sb || !memberId) return [];
+  try {
+    const { data } = await sb
+      .from("deal_ledger")
+      .select("delta, reason, ref, created_at")
+      .eq("member_id", memberId)
+      .order("created_at", { ascending: false })
+      .limit(limit);
+    return (data as LedgerEntry[]) ?? [];
+  } catch {
+    return [];
+  }
+}
+
 // KST '오늘' 시작(UTC ISO)
 function kstTodayStartIso(): string {
   const k = new Date(Date.now() + 9 * 3600 * 1000);

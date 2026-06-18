@@ -236,25 +236,24 @@ export default function BoardSubmit({ defaultType = "hot" }: { defaultType?: str
         </button>
       </div>
 
-      {(form.title || imageUrl || fetching) && (
-        <div className={styles.preview}>
-          {imageUrl ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={imageUrl} alt="" />
-          ) : (
-            <span className={styles.noImg}>
-              <i className={fetching ? "ti ti-loader-2" : "ti ti-photo"} />
-            </span>
-          )}
-          <input
-            ref={titleRef}
-            className={styles.input}
-            placeholder={fetching ? "제목 불러오는 중…" : "제목"}
-            value={form.title}
-            onChange={(e) => set("title", e.target.value)}
-          />
-        </div>
-      )}
+      {/* 제목은 항상 입력 가능 — 네이버 등 미리보기 차단 사이트도 직접 적어 올릴 수 있게 */}
+      <div className={styles.preview}>
+        {imageUrl ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={imageUrl} alt="" />
+        ) : (
+          <span className={styles.noImg}>
+            <i className={fetching ? "ti ti-loader-2" : "ti ti-photo"} />
+          </span>
+        )}
+        <input
+          ref={titleRef}
+          className={styles.input}
+          placeholder={fetching ? "제목 불러오는 중…" : "제목 (필수) — 자동으로 안 채워지면 직접 적어주세요"}
+          value={form.title}
+          onChange={(e) => set("title", e.target.value)}
+        />
+      </div>
 
       {/* 보드 종류는 기본 = 현재 탭, 한 줄로 */}
       <select className={styles.input} value={form.boardType} onChange={(e) => set("boardType", e.target.value)}>
