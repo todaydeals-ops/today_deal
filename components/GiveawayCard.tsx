@@ -94,7 +94,7 @@ export default function GiveawayCard({ giveaway }: GiveawayCardProps) {
         <div className={styles.img}>
           {prizeImage ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={prizeImage} alt={prizeName} />
+            <img src={prizeImage} alt={prizeName} loading="lazy" decoding="async" />
           ) : (
             <i className="ti ti-gift" />
           )}

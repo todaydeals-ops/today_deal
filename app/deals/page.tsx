@@ -94,7 +94,7 @@ export default async function DealsIndex() {
                   <div className={styles.img}>
                     {d.imageUrl ? (
                       // eslint-disable-next-line @next/next/no-img-element
-                      <img src={d.imageUrl} alt={d.productName} />
+                      <img src={d.imageUrl} alt={d.productName} loading="lazy" decoding="async" />
                     ) : (
                       <i className="ti ti-photo" />
                     )}

@@ -22,7 +22,7 @@ export default function CuratedCard({ deal }: CuratedCardProps) {
         <div className={styles.img}>
           {imageUrl ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={imageUrl} alt={productName} />
+            <img src={imageUrl} alt={productName} loading="lazy" decoding="async" />
           ) : (
             <i className="ti ti-photo" />
           )}

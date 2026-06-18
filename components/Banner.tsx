@@ -11,7 +11,7 @@ export default function Banner({ src, alt = "프로모션" }: BannerProps) {
     return (
       <div className={styles.banner}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={src} alt={alt} />
+        <img src={src} alt={alt} decoding="async" fetchPriority="high" />
       </div>
     );
   }

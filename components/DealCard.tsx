@@ -33,7 +33,7 @@ export default function DealCard({ deal }: DealCardProps) {
         <div className={styles.img}>
           {imageUrl ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={imageUrl} alt={productName} />
+            <img src={imageUrl} alt={productName} loading="lazy" decoding="async" />
           ) : (
             <i className="ti ti-photo" />
           )}

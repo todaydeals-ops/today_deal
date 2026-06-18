@@ -96,7 +96,7 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
           <div className={styles.imgWrap}>
             {d.imageUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={d.imageUrl} alt={d.productName} />
+              <img src={d.imageUrl} alt={d.productName} decoding="async" fetchPriority="high" />
             ) : (
               <i className="ti ti-photo" />
             )}

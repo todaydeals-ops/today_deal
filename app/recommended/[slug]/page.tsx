@@ -114,7 +114,7 @@ export default async function RecommendedDeal({
               <VideoEmbed url={deal.videoUrl} />
             ) : deal.imageUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img className={styles.image} src={deal.imageUrl} alt={deal.productName} />
+              <img className={styles.image} src={deal.imageUrl} alt={deal.productName} decoding="async" fetchPriority="high" />
             ) : (
               <div className={styles.imgPlaceholder}>
                 <i className="ti ti-photo" />
