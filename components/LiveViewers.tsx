@@ -1,10 +1,13 @@
-// "지금 N명이 보는 중" 배지 — 렌더 시 카운트 증가 + 오늘 누적 표시.
-// 모든 페이지 히트(봇 크롤 포함)를 합산하므로 유니크 방문자 수가 아님.
+// "지금 N명이 보는 중" 배지 — 오늘 IP당 1회 합산(같은 IP 새로고침엔 안 오름).
+import { headers } from "next/headers";
 import { bumpViews } from "@/lib/data/views";
 import styles from "./LiveViewers.module.css";
 
 export default async function LiveViewers() {
-  const v = await bumpViews();
+  const h = await headers();
+  const ip =
+    (h.get("x-forwarded-for") || "").split(",")[0].trim() || h.get("x-real-ip") || "unknown";
+  const v = await bumpViews(ip);
   if (!v || v.today <= 0) return null;
   return (
     <div className={styles.badge} aria-label={`오늘 ${v.today}회 조회`}>
