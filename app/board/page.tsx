@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BoardSubmit from "@/components/BoardSubmit";
 import { fetchBoardDeals, BOARD_CATEGORIES, BOARD_TYPES, isBoardType, boardTypeLabel } from "@/lib/data/board";
 import styles from "./board.module.css";
 
@@ -96,6 +97,8 @@ export default async function Board({ searchParams }: { searchParams: Promise<{ 
             </Link>
           ))}
         </div>
+
+        <BoardSubmit defaultType={type} />
 
         {deals.length === 0 ? (
           <p className={styles.empty}>아직 {boardTypeLabel(type)} 글이 없어요. 곧 채워집니다!</p>

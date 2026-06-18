@@ -16,14 +16,18 @@ const BOARD_CATEGORIES = ["전자/IT", "생활/주방", "식품", "뷰티/패션
 interface Row {
   id: string;
   slug: string | null;
+  board_type: string | null;
   title: string;
   shop: string | null;
   category: string | null;
   price: number | null;
   image_url: string | null;
   author: string | null;
+  source_url: string;
+  is_published: boolean;
   created_at: string;
 }
+const TYPE_LABEL: Record<string, string> = { hot: "핫딜", overseas: "해외직구", free: "무료/이벤트", coupon: "쿠폰/적립" };
 
 const EMPTY = {
   title: "",
@@ -113,6 +117,18 @@ export default function AdminBoard() {
     }
   }
 
+  async function approve(id: string) {
+    try {
+      await fetch(`/api/board?id=${encodeURIComponent(id)}`, { method: "PATCH" });
+      await reload();
+    } catch {
+      setMsg("⚠ 승인 실패.");
+    }
+  }
+
+  const pending = list.filter((d) => !d.is_published);
+  const published = list.filter((d) => d.is_published);
+
   return (
     <main className={styles.wrap}>
       <header className={styles.head}>
@@ -189,13 +205,51 @@ export default function AdminBoard() {
         {msg && <p className={styles.msg}>{msg}</p>}
       </div>
 
+      {/* 검토 대기 (유저 제보) */}
+      {pending.length > 0 && (
+        <section className={styles.listSection}>
+          <h2>🕒 검토 대기 ({pending.length})</h2>
+          <ul className={styles.list}>
+            {pending.map((d) => (
+              <li key={d.id} className={`${styles.item} ${styles.pendingItem}`}>
+                <span className={styles.itemThumb}>
+                  {d.image_url ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={d.image_url} alt="" />
+                  ) : (
+                    <i className="ti ti-photo" />
+                  )}
+                </span>
+                <span className={styles.itemName}>
+                  {d.title}
+                  <em>
+                    {[TYPE_LABEL[d.board_type ?? "hot"], d.category, d.shop, d.price ? `${d.price.toLocaleString("ko-KR")}원` : "", d.author]
+                      .filter(Boolean)
+                      .join(" · ")}
+                  </em>
+                  <a className={styles.srcLink} href={d.source_url} target="_blank" rel="noopener noreferrer">
+                    원본 링크 확인 <i className="ti ti-external-link" />
+                  </a>
+                </span>
+                <button className={styles.approveBtn} onClick={() => approve(d.id)}>
+                  <i className="ti ti-check" /> 승인
+                </button>
+                <button className={styles.delBtn} onClick={() => remove(d.id)}>
+                  <i className="ti ti-trash" />
+                </button>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       <section className={styles.listSection}>
-        <h2>등록된 제보딜 ({list.length})</h2>
-        {list.length === 0 ? (
-          <p className={styles.empty}>아직 없어요.</p>
+        <h2>게시 중 ({published.length})</h2>
+        {published.length === 0 ? (
+          <p className={styles.empty}>아직 게시된 글이 없어요.</p>
         ) : (
           <ul className={styles.list}>
-            {list.map((d) => (
+            {published.map((d) => (
               <li key={d.id} className={styles.item}>
                 <span className={styles.itemThumb}>
                   {d.image_url ? (
@@ -208,7 +262,9 @@ export default function AdminBoard() {
                 <span className={styles.itemName}>
                   {d.title}
                   <em>
-                    {[d.category, d.shop, d.price ? `${d.price.toLocaleString("ko-KR")}원` : "", d.author].filter(Boolean).join(" · ")}
+                    {[TYPE_LABEL[d.board_type ?? "hot"], d.category, d.shop, d.price ? `${d.price.toLocaleString("ko-KR")}원` : "", d.author]
+                      .filter(Boolean)
+                      .join(" · ")}
                   </em>
                 </span>
                 <button className={styles.delBtn} onClick={() => remove(d.id)}>

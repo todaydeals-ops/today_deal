@@ -145,6 +145,32 @@
   color: #c0392b;
   cursor: pointer;
 }
+.pendingItem {
+  background: #fffaf0;
+  border-color: #f3e3c0;
+}
+.approveBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #1f9d4d;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.srcLink {
+  font-size: 11.5px;
+  color: var(--accent-deal);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
 
 @media (max-width: 560px) {
   .row3 {

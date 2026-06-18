@@ -1,0 +1,144 @@
+.openBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+  padding: 11px 18px;
+  border: 1px dashed var(--accent-deal);
+  border-radius: 11px;
+  background: color-mix(in srgb, var(--accent-deal) 6%, #fff);
+  color: var(--accent-deal);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.openHint {
+  font-weight: 500;
+  color: var(--text-muted);
+  font-size: 12.5px;
+}
+
+.box {
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 18px;
+  background: var(--bg-surface);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.boxHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  color: var(--text-strong);
+}
+.close {
+  border: 0;
+  background: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 18px;
+}
+.label {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-body);
+}
+.urlRow {
+  display: flex;
+  gap: 8px;
+}
+.urlRow .input {
+  flex: 1;
+}
+.fetchBtn {
+  white-space: nowrap;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 9px;
+  background: var(--text-strong);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.fetchBtn:disabled {
+  opacity: 0.5;
+}
+.input,
+.textarea {
+  padding: 10px 12px;
+  border: 1px solid var(--border-soft);
+  border-radius: 9px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  width: 100%;
+}
+.input:focus,
+.textarea:focus {
+  border-color: var(--accent-deal);
+}
+.preview {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.preview img,
+.noImg {
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: var(--bg-muted);
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  color: #c2bcb0;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.msg {
+  font-size: 13px;
+  color: var(--text-body);
+}
+.submitBtn {
+  padding: 12px;
+  border: 0;
+  border-radius: 11px;
+  background: var(--accent-deal);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.submitBtn:disabled {
+  opacity: 0.6;
+}
+.policy {
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+.doneMsg {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #1f9d4d;
+  margin-bottom: 10px;
+}

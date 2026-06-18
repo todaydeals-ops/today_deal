@@ -77,6 +77,17 @@ export async function POST(request: Request): Promise<Response> {
   return Response.json({ ok: true, deal: data?.[0] ?? null });
 }
 
+// 승인(검토대기 → 게시) — 관리자/에이전트
+export async function PATCH(request: Request): Promise<Response> {
+  const sb = getSupabaseAdmin();
+  if (!sb) return Response.json({ ok: false, error: "Supabase service_role 미설정" }, { status: 500 });
+  const id = new URL(request.url).searchParams.get("id");
+  if (!id) return Response.json({ ok: false, error: "id 누락" }, { status: 400 });
+  const { error } = await sb.from("board_deals").update({ is_published: true }).eq("id", id);
+  if (error) return Response.json({ ok: false, error: error.message }, { status: 500 });
+  return Response.json({ ok: true });
+}
+
 export async function DELETE(request: Request): Promise<Response> {
   const sb = getSupabaseAdmin();
   if (!sb) return Response.json({ ok: false, error: "Supabase service_role 미설정" }, { status: 500 });
