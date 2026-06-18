@@ -20,6 +20,29 @@ interface Summary {
   liked: number;
 }
 
+// 보드 종류별로 라운드로빈 인터리브(hot,overseas,free,coupon 번갈아)
+function interleaveByBoard(items: RawDeal[]): RawDeal[] {
+  const order = ["hot", "overseas", "free", "coupon"];
+  const groups = new Map<string, RawDeal[]>();
+  for (const c of items) {
+    const k = order.includes(c.boardType) ? c.boardType : "hot";
+    (groups.get(k) ?? groups.set(k, []).get(k)!).push(c);
+  }
+  const lists = order.map((t) => groups.get(t) ?? []).filter((l) => l.length);
+  const out: RawDeal[] = [];
+  for (let i = 0; out.length < items.length; i++) {
+    let any = false;
+    for (const l of lists) {
+      if (i < l.length) {
+        out.push(l[i]);
+        any = true;
+      }
+    }
+    if (!any) break;
+  }
+  return out;
+}
+
 async function mapLimit<T, R>(items: T[], limit: number, fn: (t: T) => Promise<R>): Promise<R[]> {
   const out: R[] = [];
   for (let i = 0; i < items.length; i += limit) {
@@ -50,7 +73,9 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
     seenKey.add(normalizeKey(r.title));
   }
 
-  const fresh = uniq.filter((c) => !seenSlug.has(c.slug) && !seenKey.has(normalizeKey(c.title))).slice(0, MAX_REWRITE_PER_RUN);
+  // 보드별 라운드로빈으로 섞기 — 한 보드(핫딜)만 먼저 소진되어 다른 보드가 굶지 않게
+  const notSeen = uniq.filter((c) => !seenSlug.has(c.slug) && !seenKey.has(normalizeKey(c.title)));
+  const fresh = interleaveByBoard(notSeen).slice(0, MAX_REWRITE_PER_RUN);
   if (fresh.length === 0) return { collected: candidates.length, inserted: 0 };
 
   let skippedNoLink = 0;
