@@ -156,17 +156,16 @@ async function simulateActivity(sb: NonNullable<ReturnType<typeof getSupabaseAdm
 
 // 크롤/자동시딩 글만 삭제(유저 제보·관리자 글 보존). reset 테스트용.
 async function resetCrawl(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): Promise<number> {
-  const { data, error } = await sb
-    .from("board_deals")
-    .delete()
-    .is("submitter_id", null) // 유저 제보 보존
-    .or("source.not.is.null,slug.like.hot-*") // 크롤 글 + 구 자동시딩(hot-)
-    .select("id");
-  if (error) {
-    _debug.resetErr = error.message;
-    return 0;
-  }
-  return data?.length ?? 0;
+  let n = 0;
+  // ① 크롤 글(source 있음)
+  const d1 = await sb.from("board_deals").delete().is("submitter_id", null).not("source", "is", null).select("id");
+  if (d1.error) _debug.resetErr1 = d1.error.message;
+  else n += d1.data?.length ?? 0;
+  // ② 구 자동시딩(slug hot-)
+  const d2 = await sb.from("board_deals").delete().is("submitter_id", null).like("slug", "hot-%").select("id");
+  if (d2.error) _debug.resetErr2 = d2.error.message;
+  else n += d2.data?.length ?? 0;
+  return n;
 }
 
 export async function runBoardIngest(opts?: { releaseOverride?: number; reset?: boolean }): Promise<
