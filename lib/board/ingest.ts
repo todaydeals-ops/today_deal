@@ -77,9 +77,15 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
 }
 
 // 2) 드립 공개 — 활동시간대에만, 회차당 perRunCap개. 공개 시각=now(신선하게), 시작 조회수 소량 부여.
-async function releaseDrip(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): Promise<number> {
-  if (!isActiveHour()) return 0;
-  const cap = perRunCap();
+//    override 지정 시(수동 테스트) 활동시간 무시하고 그 수만큼 공개.
+async function releaseDrip(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>, override?: number): Promise<number> {
+  let cap: number;
+  if (typeof override === "number" && override > 0) {
+    cap = Math.min(override, 30);
+  } else {
+    if (!isActiveHour()) return 0;
+    cap = perRunCap();
+  }
   const { data } = await sb
     .from("board_deals")
     .select("id")
@@ -134,11 +140,11 @@ async function simulateActivity(sb: NonNullable<ReturnType<typeof getSupabaseAdm
   return { viewed, liked };
 }
 
-export async function runBoardIngest(): Promise<Summary> {
+export async function runBoardIngest(opts?: { releaseOverride?: number }): Promise<Summary> {
   const sb = getSupabaseAdmin();
   if (!sb) return { collected: 0, inserted: 0, released: 0, viewed: 0, liked: 0 };
   const { collected, inserted } = await ingestNew(sb);
-  const released = await releaseDrip(sb);
+  const released = await releaseDrip(sb, opts?.releaseOverride);
   const { viewed, liked } = await simulateActivity(sb);
   return { collected, inserted, released, viewed, liked };
 }

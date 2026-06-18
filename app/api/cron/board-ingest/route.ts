@@ -17,7 +17,9 @@ export async function GET(request: Request): Promise<Response> {
     return Response.json({ ok: false, error: "unauthorized" }, { status: 401 });
   }
   try {
-    const result = await runBoardIngest();
+    const rel = new URL(request.url).searchParams.get("release");
+    const releaseOverride = rel ? Number(rel) : undefined;
+    const result = await runBoardIngest(Number.isFinite(releaseOverride) ? { releaseOverride } : undefined);
     return Response.json({ ok: true, ...result });
   } catch (e) {
     const msg = e instanceof Error ? e.message : "ingest error";
