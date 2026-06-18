@@ -36,6 +36,92 @@
   margin-bottom: 20px;
 }
 
+/* ── 경품 등록 폼 ── */
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-strong);
+  margin: 26px 0 12px;
+}
+.gForm {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.gRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.gField {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-body);
+}
+.gInput,
+.gTextarea {
+  padding: 10px 12px;
+  border: 1px solid var(--border-soft);
+  border-radius: 9px;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+}
+.gInput:focus,
+.gTextarea:focus {
+  border-color: var(--accent-deal);
+}
+.gAddBtn {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 11px 18px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--accent-deal);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.gAddBtn:disabled {
+  opacity: 0.6;
+}
+.gMsg {
+  font-size: 13px;
+  color: var(--text-body);
+}
+.gDelBtn {
+  border: 1px solid var(--border-soft);
+  background: #fff;
+  border-radius: 8px;
+  padding: 7px 11px;
+  font-size: 12.5px;
+  color: #c0392b;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.empty {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 28px 0;
+}
+
+@media (max-width: 520px) {
+  .gRow {
+    grid-template-columns: 1fr;
+  }
+}
+
 .list {
   display: flex;
   flex-direction: column;
