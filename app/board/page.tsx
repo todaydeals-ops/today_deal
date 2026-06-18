@@ -3,7 +3,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BoardSubmit from "@/components/BoardSubmit";
-import { fetchBoardDeals, BOARD_CATEGORIES, BOARD_TYPES, isBoardType, boardTypeLabel } from "@/lib/data/board";
+import { fetchBoardDeals, BOARD_CATEGORIES, BOARD_TYPES, isBoardType, boardTypeLabel, nickFor, voteBase, viewingNow } from "@/lib/data/board";
 import styles from "./board.module.css";
 
 export const dynamic = "force-dynamic";
@@ -124,13 +124,14 @@ export default async function Board({ searchParams }: { searchParams: Promise<{ 
                       {d.shipping && <span className={styles.ship}>· 배송 {d.shipping}</span>}
                     </span>
                     <span className={styles.sub2}>
-                      {d.author && <span>{d.author}</span>}
+                      <span>{d.author || nickFor(d.slug || d.id)}</span>
                       <span>{ago(d.createdAt)}</span>
-                      {d.votes > 0 && (
-                        <span className={styles.votes}>
-                          <i className="ti ti-thumb-up" /> {d.votes}
-                        </span>
-                      )}
+                      <span className={styles.votes}>
+                        <i className="ti ti-thumb-up" /> {d.votes + voteBase(d.slug || d.id)}
+                      </span>
+                      <span className={styles.viewing}>
+                        <span className={styles.liveDot} /> {viewingNow(d.createdAt)}명 보는중
+                      </span>
                     </span>
                   </span>
                 </Link>

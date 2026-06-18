@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DealGrid from "@/components/DealGrid";
-import { fetchBoardBySlug, boardTypeLabel, type BoardDeal } from "@/lib/data/board";
+import { fetchBoardBySlug, boardTypeLabel, bumpBoardView, nickFor, voteBase, viewingNow, type BoardDeal } from "@/lib/data/board";
 import { fetchUnifiedDeals, tierOf } from "@/lib/data/deals";
 import styles from "./post.module.css";
 
@@ -73,8 +73,13 @@ export default async function BoardPost({ params }: { params: Promise<{ slug: st
   const d = await fetchBoardBySlug(slug);
   if (!d) notFound();
 
+  await bumpBoardView(slug); // 조회수 +1
   const live = (await fetchUnifiedDeals()).filter((x) => tierOf(x) === 1).slice(0, 8);
   const href = d.affiliateUrl ?? d.sourceUrl;
+  const author = d.author || nickFor(d.slug || d.id);
+  const votes = d.votes + voteBase(d.slug || d.id);
+  const views = (d.views ?? 0) + 1;
+  const viewing = viewingNow(d.createdAt);
 
   return (
     <>
@@ -117,13 +122,26 @@ export default async function BoardPost({ params }: { params: Promise<{ slug: st
               {d.shipping && <span className={styles.ship}>배송 {d.shipping}</span>}
             </div>
 
+            <div className={styles.stats}>
+              <span className={styles.statAuthor}>{author}</span>
+              <span className={styles.viewing}>
+                <span className={styles.liveDot} /> {viewing}명 보는중
+              </span>
+              <span>
+                <i className="ti ti-eye" /> {views.toLocaleString("ko-KR")}
+              </span>
+              <span className={styles.voteStat}>
+                <i className="ti ti-thumb-up" /> {votes}
+              </span>
+            </div>
+
             {d.body && <p className={styles.bodyText}>{d.body}</p>}
 
             <a className={styles.cta} href={href} target="_blank" rel="noopener noreferrer sponsored">
               딜 보러가기 <i className="ti ti-external-link" />
             </a>
             <p className={styles.note}>
-              {d.author ? `${d.author} 제보 · ` : ""}핫딜은 시간·재고에 따라 마감될 수 있어요. 최신 상태는 위 링크에서 확인하세요.
+              {author} 제보 · 핫딜은 시간·재고에 따라 마감될 수 있어요. 최신 상태는 위 링크에서 확인하세요.
             </p>
           </div>
         </article>

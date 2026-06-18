@@ -153,6 +153,23 @@
   color: var(--accent-deal);
   font-weight: 700;
 }
+.viewing {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-muted);
+}
+.liveDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ff3b30;
+  animation: blink 1.6s infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
 .empty {
   padding: 48px 0;
   text-align: center;

@@ -80,6 +80,39 @@
   font-size: 13px;
   color: var(--text-muted);
 }
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.statAuthor {
+  font-weight: 700;
+  color: var(--text-body);
+}
+.viewing {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.liveDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ff3b30;
+  animation: blink 1.6s infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+.voteStat {
+  color: var(--accent-deal);
+  font-weight: 700;
+}
+
 .bodyText {
   font-size: 14.5px;
   line-height: 1.7;

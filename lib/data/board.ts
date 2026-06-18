@@ -28,6 +28,32 @@ export const BOARD_CATEGORIES = [
 ] as const;
 export type BoardCategory = (typeof BOARD_CATEGORIES)[number];
 
+// ── 활성 연출 헬퍼 (사람 많아 보이게) ──
+const NICKS = [
+  "지름신", "알뜰왕", "핫딜요정", "득템각", "오늘도지름", "세일헌터", "가성비탐험대", "장바구니요정",
+  "폭탄세일", "핫딜브로", "아껴쓰자", "직구러", "쿠폰마스터", "최저가사냥꾼", "지갑방어실패", "쟁여요",
+  "오늘의호구", "특가알리미", "월급요정", "텅장지킴이",
+];
+function hash(seed: string, salt = 31): number {
+  let h = 0;
+  for (let i = 0; i < seed.length; i++) h = (h * salt + seed.charCodeAt(i)) >>> 0;
+  return h;
+}
+// 자동수집 글의 표시 닉네임(연출 — 고정)
+export function nickFor(seed: string): string {
+  return NICKS[hash(seed) % NICKS.length];
+}
+// 추천수 베이스(연출 — 글당 고정 3~30)
+export function voteBase(seed: string): number {
+  return 3 + (hash(seed, 131) % 28);
+}
+// "지금 N명 보는중"(연출 — 최신일수록 높게, 약간의 변동)
+export function viewingNow(createdAt?: string): number {
+  const ageH = createdAt ? (Date.now() - new Date(createdAt).getTime()) / 3600000 : 999;
+  const base = ageH < 1 ? 16 : ageH < 6 ? 8 : ageH < 24 ? 4 : 2;
+  return base + Math.floor(Math.random() * base);
+}
+
 export interface BoardDeal {
   id: string;
   slug?: string;
@@ -35,6 +61,7 @@ export interface BoardDeal {
   title: string;
   shop?: string;
   category?: string;
+  views?: number;
   price?: number;
   shipping?: string;
   imageUrl?: string;
@@ -61,6 +88,7 @@ interface Row {
   author: string | null;
   body: string | null;
   votes: number;
+  views: number | null;
   is_published: boolean;
   created_at: string;
 }
@@ -81,8 +109,20 @@ function map(r: Row): BoardDeal {
     author: r.author ?? undefined,
     body: r.body ?? undefined,
     votes: r.votes ?? 0,
+    views: r.views ?? 0,
     createdAt: r.created_at,
   };
+}
+
+// 조회수 +1 (post 페이지 렌더 시 — best effort)
+export async function bumpBoardView(slug: string): Promise<void> {
+  const sb = getSupabaseAdmin();
+  if (!sb) return;
+  try {
+    await sb.rpc("bump_board_view", { p_slug: slug });
+  } catch {
+    // 무시
+  }
 }
 
 export async function fetchBoardDeals(
