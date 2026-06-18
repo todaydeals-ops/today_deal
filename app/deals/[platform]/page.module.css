@@ -1,0 +1,74 @@
+.crumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 18px 0 14px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.crumb a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.crumb a:hover {
+  color: var(--accent-deal);
+}
+
+.title {
+  font-family: "Pretendard", -apple-system, sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+  color: var(--text-strong);
+}
+.intro {
+  margin: 10px 0 22px;
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--text-body);
+  max-width: 760px;
+}
+.empty {
+  padding: 40px 0;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.others {
+  margin: 40px 0 8px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border-soft);
+}
+.othersLabel {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-strong);
+  margin-bottom: 12px;
+}
+.otherLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.otherLink {
+  padding: 9px 16px;
+  border: 1px solid var(--border-soft);
+  border-radius: 999px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-body);
+  text-decoration: none;
+  background: var(--bg-surface);
+}
+.otherLink:hover {
+  border-color: var(--accent-deal);
+  color: var(--accent-deal);
+}
+
+@media (max-width: 560px) {
+  .title {
+    font-size: 21px;
+  }
+}

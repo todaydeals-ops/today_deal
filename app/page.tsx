@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "@/components/Header";
 import Banner from "@/components/Banner";
 import DealGrid from "@/components/DealGrid";
@@ -134,6 +135,46 @@ export default async function Home() {
             <DealGrid deals={tier2} />
           </>
         )}
+
+        <nav aria-label="쇼핑몰별 특가" style={{ margin: "44px 0 8px" }}>
+          <h2
+            style={{
+              fontFamily: '"Pretendard", sans-serif',
+              fontWeight: 800,
+              fontSize: 18,
+              letterSpacing: "-0.02em",
+              color: "var(--text-strong)",
+              marginBottom: 12,
+            }}
+          >
+            쇼핑몰별 특가 모아보기
+          </h2>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+            {[
+              ["gmarket", "지마켓 슈퍼딜"],
+              ["11st", "11번가 타임딜"],
+              ["coupang", "쿠팡 골드박스"],
+              ["ali", "알리 타임딜"],
+            ].map(([k, label]) => (
+              <Link
+                key={k}
+                href={`/deals/${k}`}
+                style={{
+                  padding: "9px 16px",
+                  border: "1px solid var(--border-soft)",
+                  borderRadius: 999,
+                  fontSize: 13.5,
+                  fontWeight: 600,
+                  color: "var(--text-body)",
+                  textDecoration: "none",
+                  background: "var(--bg-surface)",
+                }}
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
+        </nav>
 
         <section className={styles.faq}>
           <h2 className={styles.faqTitle}>자주 묻는 질문</h2>
