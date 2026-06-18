@@ -8,7 +8,7 @@
 // 실행:  node crawler/collect-headless.mjs
 
 import { chromium } from "playwright";
-import { postIngest, UA } from "./_ingest.mjs";
+import { postIngest, UA, INGEST_URL, SECRET } from "./_ingest.mjs";
 
 // KST 벽시계 문자열("2026-06-18T09:59:59") → ISO(UTC)
 const kstToIso = (s) => (s ? new Date(s + "+09:00").toISOString() : undefined);
@@ -150,3 +150,14 @@ await browser.close();
 
 // 자동수집 → badge(코너) 단위 교체. 서버가 제휴링크 변환·저장.
 await postIngest({ deals, replace: true });
+
+// 쿠팡 골드박스(서버 공식 API)도 함께 갱신 → 1회 실행 = 전체 최신
+try {
+  const gb = new URL("/api/cron/goldbox", INGEST_URL);
+  gb.searchParams.set("key", SECRET);
+  const r = await fetch(gb);
+  const j = await r.json().catch(() => ({}));
+  console.log(`[쿠팡 골드박스] ${j.registered ?? j.error ?? "갱신"}건`);
+} catch (e) {
+  console.warn(`[쿠팡 골드박스] 트리거 실패: ${e.message}`);
+}
