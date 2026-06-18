@@ -53,13 +53,18 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
   const fresh = uniq.filter((c) => !seenSlug.has(c.slug) && !seenKey.has(normalizeKey(c.title))).slice(0, MAX_REWRITE_PER_RUN);
   if (fresh.length === 0) return { collected: candidates.length, inserted: 0 };
 
-  const rows = await mapLimit(fresh, 4, async (c) => {
+  let skippedNoLink = 0;
+  const mapped = await mapLimit(fresh, 4, async (c) => {
+    // 먼저 글 속 "실제 딜" 추출 — 진짜 쇼핑몰 링크·이미지
+    const meta = await fetchDealMeta(c.sourceUrl);
+    // 실제 외부 링크를 못 뽑으면 게시 안 함(뽐뿌/루리웹 직링크 방지) — LLM 호출 전에 스킵
+    if (!meta.dealUrl) {
+      skippedNoLink++;
+      return null;
+    }
     const persona = personaFor(c.slug);
     const category = c.boardType === "hot" ? categorize(c.title, c.category) : c.category ?? null;
     const rw = await rewriteDeal({ title: c.title, body: c.body, shop: c.shop, price: c.price }, persona);
-    // 커뮤니티 글이 아니라 그 안의 "실제 딜"을 가공 — 진짜 쇼핑몰 링크·이미지 추출
-    const meta = await fetchDealMeta(c.sourceUrl);
-    const dealUrl = meta.dealUrl ?? c.sourceUrl; // 실제 쇼핑몰 우선, 못 찾으면 원본 폴백
     const imageUrl = c.imageUrl ?? meta.image;
     return {
       slug: c.slug,
@@ -71,13 +76,16 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
       price: c.price ?? null,
       shipping: c.shipping ?? null,
       image_url: imageUrl ?? null,
-      source_url: dealUrl,
-      original_url: dealUrl,
+      source_url: meta.dealUrl,
+      original_url: meta.dealUrl,
       body: rw.body || null,
       author: persona.nick,
       is_published: false, // 대기풀 — 드립으로 공개
     };
   });
+  const rows = mapped.filter((r): r is NonNullable<typeof r> => r !== null);
+  _debug.skippedNoLink = skippedNoLink;
+  if (rows.length === 0) return { collected: candidates.length, inserted: 0 };
 
   const { error } = await sb.from("board_deals").upsert(rows, { onConflict: "slug" });
   if (error) {
