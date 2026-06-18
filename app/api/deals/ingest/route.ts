@@ -11,9 +11,11 @@ import { fetchUrlMeta, detectPlatform, affiliateForPlatform } from "@/lib/urlMet
 
 interface FullRecord {
   platform?: Platform;
+  badge?: string; // 출처/코너 뱃지 (gmarket_openrun 등)
   productName?: string;
   imageUrl?: string;
   productUrl?: string;
+  affiliateUrl?: string; // 소스가 이미 제휴링크를 줄 때(쿠팡 등)
   salePrice?: number;
   price?: number; // 별칭 허용
   discountRate?: number;
@@ -36,6 +38,7 @@ interface SkipInfo {
 
 interface Row {
   platform: Platform;
+  badge: string | null;
   product_name: string;
   image_url: string | null;
   product_url: string;
@@ -47,7 +50,7 @@ interface Row {
 }
 
 const MAX = 80;
-const PLATFORMS: Platform[] = ["gmarket", "11st", "ali"];
+const PLATFORMS: Platform[] = ["gmarket", "11st", "ali", "coupang"];
 
 export async function POST(request: Request): Promise<Response> {
   const cronSecret = process.env.CRON_SECRET;
@@ -93,12 +96,19 @@ export async function POST(request: Request): Promise<Response> {
       skipped.push({ url, reason: "가격 없음" });
       continue;
     }
+    // 제휴링크 우선: 소스 제공분(쿠팡) → 플랫폼 변환(LinkPrice). 없으면 노출 보류.
+    const affiliate = d.affiliateUrl?.trim() || affiliateForPlatform(platform, url) || "";
+    if (!affiliate) {
+      skipped.push({ url, reason: "제휴링크 없음(키/승인 확인)" });
+      continue;
+    }
     rows.push({
       platform,
+      badge: d.badge ?? null,
       product_name: d.productName.trim(),
       image_url: d.imageUrl?.trim() || null,
       product_url: url,
-      affiliate_url: affiliateForPlatform(platform, url),
+      affiliate_url: affiliate,
       discount_rate: d.discountRate ?? null,
       sale_price: price,
       deal_end_at: d.dealEndAt ?? dealEndAt,
@@ -121,6 +131,7 @@ export async function POST(request: Request): Promise<Response> {
         if (!meta.price || meta.price <= 0) return void skipped.push({ url, reason: "가격 미수집" });
         rows.push({
           platform,
+          badge: null,
           product_name: meta.title,
           image_url: meta.imageUrl ?? null,
           product_url: url,
@@ -138,11 +149,17 @@ export async function POST(request: Request): Promise<Response> {
     return Response.json({ ok: true, registered: 0, skipped });
   }
 
-  // replace 모드: 등장한 플랫폼의 기존 딜 제거 후 교체
+  // replace 모드: "코너(badge) 단위"로 교체 → 코너별 독립 갱신(다른 코너 안 건드림).
+  // badge 없는 구버전 행은 플랫폼 단위로 교체(badge null인 것만).
   if (body.replace) {
-    const platforms = [...new Set(rows.map((r) => r.platform))];
-    for (const p of platforms) {
-      const del = await sb.from("deals").delete().eq("platform", p);
+    const badges = [...new Set(rows.map((r) => r.badge).filter((b): b is string => !!b))];
+    for (const bdg of badges) {
+      const del = await sb.from("deals").delete().eq("badge", bdg);
+      if (del.error) return Response.json({ ok: false, error: del.error.message }, { status: 500 });
+    }
+    const noBadgePlatforms = [...new Set(rows.filter((r) => !r.badge).map((r) => r.platform))];
+    for (const p of noBadgePlatforms) {
+      const del = await sb.from("deals").delete().eq("platform", p).is("badge", null);
       if (del.error) return Response.json({ ok: false, error: del.error.message }, { status: 500 });
     }
   }

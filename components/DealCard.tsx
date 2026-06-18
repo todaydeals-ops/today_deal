@@ -1,4 +1,5 @@
 import type { Deal } from "@/lib/types";
+import { BADGE_META } from "@/lib/types";
 import Countdown from "./Countdown";
 import CompareButton from "./CompareButton";
 import styles from "./DealCard.module.css";
@@ -13,13 +14,19 @@ function formatPrice(n: number) {
 }
 
 export default function DealCard({ deal }: DealCardProps) {
-  const { productName, imageUrl, discountRate, salePrice, isSoldout, dealEndAt, affiliateUrl, productUrl } = deal;
+  const { productName, imageUrl, discountRate, salePrice, isSoldout, dealEndAt, affiliateUrl, productUrl, badge } = deal;
   const href = affiliateUrl ?? productUrl;
+  const meta = badge ? BADGE_META[badge] : null;
 
   return (
     <article className={`${styles.card} ${isSoldout ? styles.soldout : ""}`}>
       <a href={href} target="_blank" rel="noopener noreferrer sponsored" className={styles.link}>
         <div className={styles.imgWrap}>
+          {meta && (
+            <span className={styles.badge} style={{ background: meta.color }} title={meta.label}>
+              {meta.short}
+            </span>
+          )}
           <div className={styles.img}>
             {imageUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
@@ -38,7 +45,7 @@ export default function DealCard({ deal }: DealCardProps) {
         </div>
         <div className={styles.name}>{productName}</div>
         <div className={styles.priceRow}>
-          <span className={styles.discount}>{discountRate}%</span>
+          {discountRate > 0 && <span className={styles.discount}>{discountRate}%</span>}
           <span className={styles.price}>{formatPrice(salePrice)}</span>
           <span className={styles.won}>원</span>
         </div>

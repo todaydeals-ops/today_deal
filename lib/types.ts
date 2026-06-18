@@ -1,16 +1,17 @@
 // 오늘의딜 — 도메인 타입
 // 기획안 8.2 DB 스키마(deals) 기반. 화면 비노출 항목은 선택(optional)으로 둠.
 
-export type Platform = "gmarket" | "11st" | "ali";
+export type Platform = "gmarket" | "11st" | "ali" | "coupang";
 
 export interface Deal {
   id: string;
   platform: Platform;
+  badge?: DealBadge; // 통합 피드 출처/코너 뱃지
   productName: string;
   imageUrl?: string; // 없으면 placeholder
   productUrl: string; // 원본 상품 URL
-  affiliateUrl?: string; // 제휴코드 삽입 링크 (이동용)
-  discountRate: number; // 할인율 %
+  affiliateUrl?: string; // 제휴코드 삽입 링크 (이동용·수익)
+  discountRate: number; // 할인율 % (없으면 0)
   salePrice: number; // 판매가 (원)
   originalPrice?: number; // 정가 (저장만, 비노출)
   freeShipping?: boolean; // 저장만, 비노출
@@ -18,14 +19,41 @@ export interface Deal {
   isSoldout: boolean;
 }
 
-// 플랫폼 메타 (라벨 노출용). 소프트 뉴트럴 방향: 색 구분 없이 텍스트로만.
+// 통합 피드 — 출처+코너 뱃지. tier 1=상단(타임딜·골드박스), 2=하단(나머지). 둘 다 할인율순.
+export type DealBadge =
+  | "gmarket_openrun" // ⚡ G마켓 오픈런타임딜
+  | "gmarket_shorts" // 🎬 G마켓 오늘의쇼츠딜
+  | "gmarket_encore" // ♻️ G마켓 앵콜딜
+  | "11st_time" // ⏰ 11번가 타임딜
+  | "11st_today" // 🔥 11번가 오늘의딜
+  | "coupang_goldbox" // 📦 쿠팡 골드박스
+  | "ali_time"; // 🌏 알리 타임딜
+
+export interface BadgeMeta {
+  label: string; // 데스크탑 칩
+  short: string; // 모바일 짧은 칩
+  tier: 1 | 2;
+  color: string; // 칩 배경색
+}
+
+export const BADGE_META: Record<DealBadge, BadgeMeta> = {
+  gmarket_openrun: { label: "G마켓 오픈런타임딜", short: "G·오픈런", tier: 1, color: "#00a862" },
+  coupang_goldbox: { label: "쿠팡 골드박스", short: "쿠팡·골드", tier: 1, color: "#c8901f" },
+  "11st_time": { label: "11번가 타임딜", short: "11·타임", tier: 1, color: "#ff0038" },
+  ali_time: { label: "알리 타임딜", short: "알리·타임", tier: 1, color: "#ff6a00" },
+  gmarket_shorts: { label: "G마켓 쇼츠딜", short: "G·쇼츠", tier: 2, color: "#1fa463" },
+  gmarket_encore: { label: "G마켓 앵콜딜", short: "G·앵콜", tier: 2, color: "#5fa77f" },
+  "11st_today": { label: "11번가 오늘의딜", short: "11·오늘", tier: 2, color: "#ff5c79" },
+};
+
+// 구버전 3열(점진 폐지 예정). 라벨 Record는 전 플랫폼 키 필요.
 export const PLATFORM_LABELS: Record<Platform, string> = {
   gmarket: "지마켓 슈퍼딜",
   "11st": "11번가 쇼킹타임",
   ali: "알리익스프레스 타임딜",
+  coupang: "쿠팡",
 };
 
-// 3열 노출 순서
 export const PLATFORM_ORDER: Platform[] = ["gmarket", "11st", "ali"];
 
 // 추천딜 카테고리 (검색/필터용)

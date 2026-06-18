@@ -5,7 +5,16 @@
   margin: 26px 0 4px;
 }
 
-.sectionHead h2 {
+.sectionHead2 {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  margin: 44px 0 16px;
+}
+
+.sectionHead h1,
+.sectionHead h2,
+.sectionHead2 h2 {
   font-size: 22px;
   font-weight: 600;
   color: var(--text-strong);

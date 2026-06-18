@@ -92,6 +92,7 @@ const seeds: Record<Platform, Seed[]> = {
       endInSeconds: 29544,
     },
   ],
+  coupang: [],
 };
 
 function buildDeals(): Deal[] {
