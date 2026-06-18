@@ -14,6 +14,7 @@ export interface RawDeal {
   category?: string; // 소스 제공(루리웹) 또는 분류기
   author?: string;
   body?: string;
+  imageUrl?: string; // RSS 내 썸네일(루리웹 등)
   sourceUrl: string;
   createdAt?: string;
 }
@@ -106,6 +107,9 @@ async function fetchSource(def: SourceDef): Promise<RawDeal[]> {
       if (!idM) continue;
       const sourceId = idM[1];
       const parsed = parseTitle(rawTitle);
+      // RSS 본문에 박힌 썸네일(루리웹 등) — decode 전 원본에서 추출
+      const imgM = block.match(/<img[^>]+src=["']([^"']+)["']/i);
+      const imageUrl = imgM ? imgM[1].replace(/^http:/, "https:") : undefined;
       out.push({
         source: def.source,
         sourceId,
@@ -119,6 +123,7 @@ async function fetchSource(def: SourceDef): Promise<RawDeal[]> {
         category: tag(block, "category") || undefined,
         author: tag(block, "author") || undefined,
         body: tag(block, "description") || undefined,
+        imageUrl,
         sourceUrl: link.replace(/^http:/, "https:"),
         createdAt: tag(block, "pubDate") || undefined,
       });
@@ -133,6 +138,23 @@ async function fetchSource(def: SourceDef): Promise<RawDeal[]> {
 export async function collectAll(): Promise<RawDeal[]> {
   const lists = await Promise.all(SOURCES.map(fetchSource));
   return lists.flat();
+}
+
+// 원본 페이지 og:image (뽐뿌처럼 RSS에 이미지 없는 소스용) — 신규 항목만 호출.
+export async function fetchOgImage(url: string): Promise<string | undefined> {
+  try {
+    const res = await fetch(url, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(10000) });
+    if (!res.ok) return undefined;
+    const html = await res.text();
+    const m =
+      html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i) ||
+      html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i);
+    const src = m?.[1];
+    if (!src || !/^https?:\/\//i.test(src)) return undefined;
+    return src.replace(/^http:/, "https:");
+  } catch {
+    return undefined;
+  }
 }
 
 // 교차 중복 제거용 정규화 키(쇼핑몰·숫자·기호 제거)

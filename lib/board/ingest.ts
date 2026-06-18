@@ -1,7 +1,7 @@
 // 핫딜 자동수집 오케스트레이션:
 //  수집 → 교차 dedup → (신규만) 페르소나 리라이트 → 대기풀 적재 → 드립 공개 → 활동 시뮬(조회·추천)
 import { getSupabaseAdmin } from "@/lib/supabase/server";
-import { collectAll, normalizeKey, type RawDeal } from "./sources";
+import { collectAll, fetchOgImage, normalizeKey, type RawDeal } from "./sources";
 import { categorize } from "./categorize";
 import { personaFor } from "./personas";
 import { rewriteDeal } from "./rewrite";
@@ -57,6 +57,8 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
     const persona = personaFor(c.slug);
     const category = c.boardType === "hot" ? categorize(c.title, c.category) : c.category ?? null;
     const rw = await rewriteDeal({ title: c.title, body: c.body, shop: c.shop, price: c.price }, persona);
+    // 이미지: RSS 썸네일 우선, 없으면 원본 페이지 og:image
+    const imageUrl = c.imageUrl ?? (await fetchOgImage(c.sourceUrl));
     return {
       slug: c.slug,
       source: c.source,
@@ -66,6 +68,7 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
       category,
       price: c.price ?? null,
       shipping: c.shipping ?? null,
+      image_url: imageUrl ?? null,
       source_url: c.sourceUrl,
       original_url: c.sourceUrl,
       body: rw.body || null,
