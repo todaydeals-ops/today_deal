@@ -18,7 +18,7 @@ export async function GET(req: NextRequest): Promise<Response> {
       const { data } = await sb.from("members").select("deal_balance, display_name").eq("id", user.id).maybeSingle();
       if (data) {
         deal = Number(data.deal_balance) || 0;
-        if (data.display_name) nickname = data.display_name;
+        if (data.display_name?.trim()) nickname = data.display_name.trim();
       }
     } catch {
       // 무시

@@ -27,7 +27,8 @@ export async function GET(): Promise<Response> {
       const body =
         (d.imageUrl ? `<img src="${esc(d.imageUrl)}" alt="${esc(d.productName)}" /><br/>` : "") +
         `<p>${esc(line)}</p>`;
-      const pub = d.lastSeen ? new Date(d.lastSeen).toUTCString() : now;
+      const ts = d.lastSeen ? new Date(d.lastSeen).getTime() : NaN;
+      const pub = Number.isNaN(ts) ? now : new Date(ts).toUTCString();
       return (
         `<item>` +
         `<title>${cdata(title)}</title>` +

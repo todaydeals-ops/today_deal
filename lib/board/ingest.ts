@@ -90,7 +90,8 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
     const persona = personaFor(c.slug);
     // 무료 게임·앱 등은 어느 소스에서 왔든 '무료/이벤트' 보드로 라우팅
     const boardType = isFreebie(c.rawTitle, c.price) ? "free" : c.boardType;
-    const category = boardType === "hot" ? categorize(c.title, c.category) : c.category ?? null;
+    // 카테고리는 모든 보드에서 매핑(루리웹 원본 '게임S/W' 등 미매핑 노출 방지)
+    const category = categorize(c.title, c.category);
     const rw = await rewriteDeal({ title: c.title, body: c.body, shop: c.shop, price: c.price }, persona);
     const imageUrl = c.imageUrl ?? meta.image;
     return {
