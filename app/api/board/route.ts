@@ -4,8 +4,11 @@ import { getSupabaseAdmin } from "@/lib/supabase/server";
 
 export const runtime = "nodejs";
 
+const BOARD_TYPE_KEYS = ["hot", "overseas", "free", "coupon"];
+
 interface Input {
   title?: string;
+  boardType?: string;
   shop?: string;
   category?: string;
   price?: number | string;
@@ -56,6 +59,7 @@ export async function POST(request: Request): Promise<Response> {
   }
   const row = {
     slug: boardSlug(d.title.trim()),
+    board_type: BOARD_TYPE_KEYS.includes(d.boardType ?? "") ? d.boardType : "hot",
     title: d.title.trim(),
     shop: d.shop?.trim() || null,
     category: d.category?.trim() || null,

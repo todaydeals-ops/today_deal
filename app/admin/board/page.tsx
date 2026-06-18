@@ -5,6 +5,12 @@ import Link from "next/link";
 import styles from "./page.module.css";
 
 // 클라이언트 안전 상수 (lib/data/board는 서버 전용이라 직접 import 안 함)
+const BOARD_TYPES = [
+  { key: "hot", label: "핫딜" },
+  { key: "overseas", label: "해외직구" },
+  { key: "free", label: "무료/이벤트" },
+  { key: "coupon", label: "쿠폰/적립" },
+];
 const BOARD_CATEGORIES = ["전자/IT", "생활/주방", "식품", "뷰티/패션", "패션잡화", "유아동", "스포츠/취미", "기타"];
 
 interface Row {
@@ -21,6 +27,7 @@ interface Row {
 
 const EMPTY = {
   title: "",
+  boardType: "hot",
   shop: "",
   category: "전자/IT",
   price: "",
@@ -69,6 +76,7 @@ export default function AdminBoard() {
         body: JSON.stringify({
           deal: {
             title: form.title.trim(),
+            boardType: form.boardType,
             shop: form.shop.trim() || undefined,
             category: form.category,
             price: form.price || undefined,
@@ -115,6 +123,16 @@ export default function AdminBoard() {
       </header>
 
       <div className={styles.form}>
+        <label className={styles.field}>
+          보드
+          <select className={styles.input} value={form.boardType} onChange={(e) => set("boardType", e.target.value)}>
+            {BOARD_TYPES.map((t) => (
+              <option key={t.key} value={t.key}>
+                {t.label}
+              </option>
+            ))}
+          </select>
+        </label>
         <label className={styles.field}>
           제목 *
           <input className={styles.input} value={form.title} onChange={(e) => set("title", e.target.value)} placeholder="상품명 / 딜 제목" />

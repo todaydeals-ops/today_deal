@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DealGrid from "@/components/DealGrid";
-import { fetchBoardBySlug, type BoardDeal } from "@/lib/data/board";
+import { fetchBoardBySlug, boardTypeLabel, type BoardDeal } from "@/lib/data/board";
 import { fetchUnifiedDeals, tierOf } from "@/lib/data/deals";
 import styles from "./post.module.css";
 
@@ -82,11 +82,15 @@ export default async function BoardPost({ params }: { params: Promise<{ slug: st
       <Header />
       <main className="wrap">
         <nav className={styles.crumb}>
-          <Link href="/">오늘의딜</Link> <span>›</span> <Link href="/board">핫딜 게시판</Link>
+          <Link href="/">오늘의딜</Link> <span>›</span>{" "}
+          <Link href={d.boardType === "hot" ? "/board" : `/board?type=${d.boardType}`}>{boardTypeLabel(d.boardType)} 게시판</Link>
           {d.category && (
             <>
               {" "}
-              <span>›</span> <Link href={`/board?category=${encodeURIComponent(d.category)}`}>{d.category}</Link>
+              <span>›</span>{" "}
+              <Link href={`/board?${d.boardType !== "hot" ? `type=${d.boardType}&` : ""}category=${encodeURIComponent(d.category)}`}>
+                {d.category}
+              </Link>
             </>
           )}
         </nav>
