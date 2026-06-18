@@ -9,6 +9,9 @@ import { perRunCap, isActiveHour, activityBoost } from "./dripConfig";
 
 const MAX_REWRITE_PER_RUN = 12; // 회차당 신규 리라이트 상한(지연·비용 제어)
 
+// 진단용(테스트). 매 실행 시작 시 초기화.
+const _debug: Record<string, unknown> = {};
+
 interface Summary {
   collected: number;
   inserted: number;
@@ -72,7 +75,10 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
   });
 
   const { error } = await sb.from("board_deals").upsert(rows, { onConflict: "slug" });
-  if (error) return { collected: candidates.length, inserted: 0 };
+  if (error) {
+    _debug.insErr = error.message;
+    return { collected: candidates.length, inserted: 0 };
+  }
   return { collected: candidates.length, inserted: rows.length };
 }
 
@@ -86,14 +92,16 @@ async function releaseDrip(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>,
     if (!isActiveHour()) return 0;
     cap = perRunCap();
   }
-  const { data } = await sb
+  const { data, error: selErr } = await sb
     .from("board_deals")
     .select("id")
     .eq("is_published", false)
     .not("source", "is", null) // 크롤 대기분만(유저 제보는 관리자 승인)
     .order("created_at", { ascending: true })
     .limit(cap);
+  if (selErr) _debug.relSel = selErr.message;
   const ids = ((data as { id: string }[]) ?? []).map((r) => r.id);
+  _debug.relFound = ids.length;
   let released = 0;
   for (const id of ids) {
     const seed = 1 + Math.floor(Math.random() * 4); // 시작 조회수 1~4
@@ -101,7 +109,8 @@ async function releaseDrip(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>,
       .from("board_deals")
       .update({ is_published: true, created_at: new Date().toISOString(), views: seed })
       .eq("id", id);
-    if (!error) released++;
+    if (error) _debug.relUpd = error.message;
+    else released++;
   }
   return released;
 }
@@ -140,11 +149,12 @@ async function simulateActivity(sb: NonNullable<ReturnType<typeof getSupabaseAdm
   return { viewed, liked };
 }
 
-export async function runBoardIngest(opts?: { releaseOverride?: number }): Promise<Summary> {
+export async function runBoardIngest(opts?: { releaseOverride?: number }): Promise<Summary & { debug?: Record<string, unknown> }> {
+  for (const k of Object.keys(_debug)) delete _debug[k];
   const sb = getSupabaseAdmin();
   if (!sb) return { collected: 0, inserted: 0, released: 0, viewed: 0, liked: 0 };
   const { collected, inserted } = await ingestNew(sb);
   const released = await releaseDrip(sb, opts?.releaseOverride);
   const { viewed, liked } = await simulateActivity(sb);
-  return { collected, inserted, released, viewed, liked };
+  return { collected, inserted, released, viewed, liked, debug: _debug };
 }
