@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DealGrid from "@/components/DealGrid";
+import LiveViewers from "@/components/LiveViewers";
 import VideoEmbed from "@/components/VideoEmbed";
 import { fetchCuratedBySlug } from "@/lib/data/curated";
 import { fetchUnifiedDeals, tierOf } from "@/lib/data/deals";
@@ -102,6 +103,10 @@ export default async function RecommendedDeal({
           <i className="ti ti-chevron-right" />
           <span>{deal.category}</span>
         </nav>
+
+        <div style={{ margin: "2px 0 14px" }}>
+          <LiveViewers />
+        </div>
 
         <article className={styles.article}>
           <div className={styles.media}>

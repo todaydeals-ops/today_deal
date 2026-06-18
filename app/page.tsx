@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Banner from "@/components/Banner";
 import DealGrid from "@/components/DealGrid";
+import LiveViewers from "@/components/LiveViewers";
 import Footer from "@/components/Footer";
 import { fetchUnifiedDeals, tierOf } from "@/lib/data/deals";
 import { BADGE_META, type Deal, type Platform } from "@/lib/types";
@@ -107,6 +108,10 @@ export default async function Home() {
       <Header />
       <main className="wrap">
         <Banner />
+
+        <div style={{ margin: "14px 0 2px" }}>
+          <LiveViewers />
+        </div>
 
         <div className={styles.sectionHead}>
           <h1 className={styles.title}>

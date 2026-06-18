@@ -4,6 +4,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DealGrid from "@/components/DealGrid";
+import LiveViewers from "@/components/LiveViewers";
 import { fetchArchiveBySlug, fetchUnifiedDeals, tierOf, type ArchiveDeal } from "@/lib/data/deals";
 import { BADGE_META } from "@/lib/types";
 import styles from "./page.module.css";
@@ -85,6 +86,10 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
         <nav className={styles.crumb}>
           <Link href="/">오늘의딜</Link> <span>›</span> <span>{meta?.label ?? "딜"}</span>
         </nav>
+
+        <div style={{ margin: "4px 0 14px" }}>
+          <LiveViewers />
+        </div>
 
         <article className={styles.deal}>
           <div className={styles.imgWrap}>
