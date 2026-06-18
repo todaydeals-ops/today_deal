@@ -2,6 +2,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { COOKIE_NAME, COOKIE_MAXAGE, STATE_COOKIE, canonicalOrigin, signSession, type AuthUser } from "@/lib/auth/session";
+import { getSupabaseAdmin } from "@/lib/supabase/server";
 
 export const runtime = "nodejs";
 
@@ -82,6 +83,26 @@ export async function GET(req: NextRequest): Promise<Response> {
   // 3) 서명 세션 쿠키 발급
   const token = signSession(user);
   if (!token) return backTo(origin, returnTo, "secret"); // AUTH_SECRET 미설정
+
+  // 회원 DB 저장(로그인 = 마케팅 동의 완료 상태). 실패해도 로그인은 진행. (members 테이블 없으면 패스)
+  try {
+    const sb = getSupabaseAdmin();
+    if (sb) {
+      await sb.from("members").upsert(
+        {
+          id: user.id,
+          nickname: user.nickname,
+          provider: user.provider,
+          profile_image: user.profileImage ?? null,
+          marketing_consent: true,
+          last_login_at: new Date().toISOString(),
+        },
+        { onConflict: "id" }
+      );
+    }
+  } catch {
+    // 무시
+  }
 
   const url = new URL(returnTo.startsWith("/") ? returnTo : "/", origin);
   const res = NextResponse.redirect(url.toString());

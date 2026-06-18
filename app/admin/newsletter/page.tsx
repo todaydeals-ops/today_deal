@@ -106,7 +106,20 @@ export default function AdminNewsletter() {
     });
     setWinnerBlocks(blocks);
 
-    setRecipients(estimateRecipients(getUser().marketingConsent));
+    // 발송 대상 = 실제 회원(마케팅 동의) 수. 실패/0이면 mock 추정으로 폴백.
+    (async () => {
+      try {
+        const res = await fetch("/api/members/stats", { cache: "no-store" });
+        const data: { ok: boolean; consented?: number } = await res.json();
+        if (data.ok && typeof data.consented === "number" && data.consented > 0) {
+          setRecipients(data.consented);
+          return;
+        }
+      } catch {
+        // 폴백
+      }
+      setRecipients(estimateRecipients(getUser().marketingConsent));
+    })();
     setHistory(getHistory());
   }, []);
 
