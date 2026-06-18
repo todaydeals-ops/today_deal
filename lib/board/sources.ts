@@ -152,11 +152,7 @@ export async function collectAll(): Promise<RawDeal[]> {
 // 커뮤니티 글(뽐뿌/루리웹 view)에서 "실제 딜"을 추출 — 우리는 글을 베끼는 게 아니라
 // 그 안의 진짜 쇼핑몰 링크·이미지를 퍼와 우리 글로 가공한다. 신규 항목만 1회 호출.
 const SHOP_RE =
-  /https?:\/\/[a-z0-9.\-]*(lotteon|gmarket|11st|coupang|smartstore\.naver|brand\.naver|shopping\.naver|ssg|auction|tmon|interpark|aliexpress|amazon|wadiz|29cm|musinsa|oliveyoung|hmall|cjonstyle|gsshop|himart|ohou|cyso|qoo10|iherb|aliexpress|temu|kakao)[a-z0-9./?=&_%~\-]*/i;
-
-// 딜 링크가 아닌 도메인(커뮤니티·소셜·분석·정적자산) — 일반 외부링크 폴백에서 제외
-const DENY =
-  /(ppomppu|ruliweb|fmkorea|clien|quasarzone|dealbada|eomisae|facebook|twitter|x\.com|instagram|youtu|pinterest|t\.me|telegram|google|gstatic|googletagmanager|googlesyndication|doubleclick|daum\.net|kakao\.com\/(?:share|talk)|w3\.org|schema\.org|jsdelivr|fontawesome|\.(?:css|js|png|jpe?g|gif|svg|webp|ico|woff2?)(?:[?#]|$))/i;
+  /https?:\/\/[a-z0-9.\-]*(lotteon|gmarket|11st|coupang|smartstore\.naver|brand\.naver|shopping\.naver|ssg|auction|tmon|interpark|aliexpress|amazon|wadiz|29cm|musinsa|oliveyoung|hmall|cjonstyle|gsshop|himart|ohou|cyso|qoo10|iherb|temu)[a-z0-9./?=&_%~\-]*/i;
 
 export async function fetchDealMeta(url: string): Promise<{ dealUrl?: string; image?: string }> {
   try {
@@ -164,23 +160,14 @@ export async function fetchDealMeta(url: string): Promise<{ dealUrl?: string; im
     if (!res.ok) return {};
     const html = Buffer.from(await res.arrayBuffer()).toString("latin1"); // EUC-KR 페이지 多, URL은 ASCII
 
-    // 1) 실제 딜 링크: ① 뽐뿌 data-url 위젯 ② 알려진 쇼핑몰 도메인 ③ 본문 내 일반 외부링크(커뮤니티·소셜·자산 제외)
+    // 실제 딜 링크: ① 뽐뿌 data-url 위젯(단, 알려진 쇼핑몰일 때만) ② 본문 내 알려진 쇼핑몰 도메인.
+    // 임의의 외부링크 폴백은 쓰지 않음 — 적립/이벤트성 글의 죽은 링크 방지.
     let dealUrl: string | undefined;
     const dm = html.match(/data-url\s*=\s*['"]\s*(https?:\/\/[^'"]+?)\s*['"]/i);
-    if (dm && !DENY.test(dm[1])) dealUrl = dm[1].trim();
+    if (dm && SHOP_RE.test(dm[1])) dealUrl = dm[1].trim();
     if (!dealUrl) {
       const sm = html.match(SHOP_RE);
       if (sm) dealUrl = sm[0];
-    }
-    if (!dealUrl) {
-      // 본문 어디든 외부 링크(쇼핑·이벤트 페이지) 첫 번째 — 커뮤니티/소셜/광고/자산 제외
-      for (const m of html.matchAll(/(?:href|data-url)\s*=\s*['"]\s*(https?:\/\/[^'"\s]+)/gi)) {
-        const u = m[1];
-        if (!DENY.test(u)) {
-          dealUrl = u;
-          break;
-        }
-      }
     }
 
     // 2) 상품 이미지: og:image
