@@ -1,9 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import type { Giveaway } from "@/lib/types";
-import { getEntry, totalEntries, AUTH_EVENT } from "@/lib/giveawayStore";
-import { getResult, type DrawResult } from "@/lib/giveawayResults";
+import { AUTH_EVENT } from "@/lib/giveawayStore";
 import EntryMission from "./EntryMission";
 import styles from "./GiveawayCard.module.css";
 
@@ -12,6 +11,16 @@ interface GiveawayCardProps {
 }
 
 type Status = "upcoming" | "open" | "closed";
+interface Winner {
+  id: string;
+  name: string;
+  entries: number;
+}
+interface DrawResult {
+  winners: Winner[];
+  poolSize: number;
+  drawnAt: string;
+}
 
 function getStatus(startMs: number, endMs: number, nowMs: number): Status {
   if (nowMs < startMs) return "upcoming";
@@ -19,12 +28,7 @@ function getStatus(startMs: number, endMs: number, nowMs: number): Status {
   return "open";
 }
 
-const STATUS_LABEL: Record<Status, string> = {
-  upcoming: "오픈 예정",
-  open: "응모 중",
-  closed: "마감",
-};
-
+const STATUS_LABEL: Record<Status, string> = { upcoming: "오픈 예정", open: "응모 중", closed: "마감" };
 const BADGE_CLASS: Record<Status, string> = {
   upcoming: styles.upcoming,
   open: styles.open,
@@ -39,13 +43,13 @@ function dday(targetMs: number, nowMs: number) {
 }
 
 export default function GiveawayCard({ giveaway }: GiveawayCardProps) {
-  const { title, prizeName, prizeImage, description, startAt, endAt, winnerCount, entryCount, affiliateUrl } = giveaway;
+  const { title, prizeName, prizeImage, description, startAt, endAt, winnerCount, affiliateUrl } = giveaway;
 
-  // 마운트 후에만 상태 계산 (SSR/CSR 불일치 방지)
   const [status, setStatus] = useState<Status | null>(null);
   const [ddayText, setDdayText] = useState("");
   const [modalOpen, setModalOpen] = useState(false);
   const [myEntries, setMyEntries] = useState(0);
+  const [myId, setMyId] = useState<string | null>(null);
   const [result, setResult] = useState<DrawResult | null>(null);
 
   useEffect(() => {
@@ -57,19 +61,32 @@ export default function GiveawayCard({ giveaway }: GiveawayCardProps) {
     setDdayText(s === "upcoming" ? dday(startMs, now) : s === "open" ? dday(endMs, now) : "");
   }, [startAt, endAt]);
 
-  const refreshEntries = () => setMyEntries(totalEntries(getEntry(giveaway.id)));
+  const refresh = useCallback(async () => {
+    try {
+      const [e, r] = await Promise.all([
+        fetch(`/api/giveaway/entry?gid=${encodeURIComponent(giveaway.id)}`, { cache: "no-store" }).then((x) => x.json()),
+        fetch(`/api/giveaway/results?gid=${encodeURIComponent(giveaway.id)}`, { cache: "no-store" }).then((x) => x.json()),
+      ]);
+      if (e.ok) {
+        setMyEntries(e.entry?.total ?? 0);
+        setMyId(e.loggedIn ? e.userId ?? null : null);
+      }
+      if (r.ok) setResult(r.result);
+    } catch {
+      // 무시
+    }
+  }, [giveaway.id]);
+
   useEffect(() => {
-    refreshEntries();
-    const h = () => refreshEntries();
+    refresh();
+    const h = () => refresh();
     window.addEventListener(AUTH_EVENT, h);
     return () => window.removeEventListener(AUTH_EVENT, h);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [giveaway.id]);
-  useEffect(() => setResult(getResult(giveaway.id)), [giveaway.id]);
+  }, [refresh]);
 
   const isOpen = status === "open";
   const entered = myEntries > 0;
-  const iWon = result?.winners.some((w) => w.isMe);
+  const iWon = !!(result && myId && result.winners.some((w) => w.id === myId));
 
   return (
     <article className={`${styles.card} ${status === "closed" ? styles.closed : ""}`}>
@@ -95,12 +112,7 @@ export default function GiveawayCard({ giveaway }: GiveawayCardProps) {
         <h3 className={styles.prize}>{prizeName}</h3>
         {description && <p className={styles.desc}>{description}</p>}
         {affiliateUrl && (
-          <a
-            className={styles.buyLink}
-            href={affiliateUrl}
-            target="_blank"
-            rel="noopener noreferrer sponsored"
-          >
+          <a className={styles.buyLink} href={affiliateUrl} target="_blank" rel="noopener noreferrer sponsored">
             이 경품 쿠팡에서 보기 <i className="ti ti-chevron-right" />
           </a>
         )}
@@ -109,9 +121,9 @@ export default function GiveawayCard({ giveaway }: GiveawayCardProps) {
           <span>
             <i className="ti ti-users" /> {winnerCount}명 추첨
           </span>
-          {typeof entryCount === "number" && entryCount > 0 && (
+          {result && (
             <span>
-              <i className="ti ti-checkbox" /> {entryCount.toLocaleString("ko-KR")}명 응모
+              <i className="ti ti-checkbox" /> {result.poolSize.toLocaleString("ko-KR")}명 응모
             </span>
           )}
         </div>
@@ -123,8 +135,8 @@ export default function GiveawayCard({ giveaway }: GiveawayCardProps) {
             </div>
             <div className={styles.winnerNames}>
               {result.winners.map((w) => (
-                <span key={w.id} className={w.isMe ? styles.meTag : ""}>
-                  {w.isMe ? "🎉 나" : w.name}
+                <span key={w.id} className={w.id === myId ? styles.meTag : ""}>
+                  {w.id === myId ? "🎉 나" : w.name}
                 </span>
               ))}
             </div>
@@ -132,11 +144,7 @@ export default function GiveawayCard({ giveaway }: GiveawayCardProps) {
           </div>
         ) : (
           <>
-            <button
-              className={styles.btn}
-              disabled={!isOpen}
-              onClick={() => isOpen && setModalOpen(true)}
-            >
+            <button className={styles.btn} disabled={!isOpen} onClick={() => isOpen && setModalOpen(true)}>
               {status === "upcoming" && "오픈 알림 받기"}
               {status === "open" && "응모하기"}
               {status === "closed" && "응모 마감"}
@@ -152,11 +160,7 @@ export default function GiveawayCard({ giveaway }: GiveawayCardProps) {
       </div>
 
       {modalOpen && (
-        <EntryMission
-          giveaway={giveaway}
-          onClose={() => setModalOpen(false)}
-          onChange={refreshEntries}
-        />
+        <EntryMission giveaway={giveaway} onClose={() => setModalOpen(false)} onChange={refresh} />
       )}
     </article>
   );

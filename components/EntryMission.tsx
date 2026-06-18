@@ -7,20 +7,8 @@ import {
   REF_ENTRY_CAP,
   VISIT_DAILY_CAP,
   AUTH_EVENT,
-  getUser,
-  getEntry,
   getRefCode,
-  loginMock,
   setConsent,
-  claimVisit,
-  addAdEntry,
-  addRefChannel,
-  totalEntries,
-  visitEligibility,
-  canEnter,
-  type MockUser,
-  type EntryState,
-  type VisitEligibility,
 } from "@/lib/giveawayStore";
 import { adAdapter } from "@/lib/adAdapter";
 import styles from "./EntryMission.module.css";
@@ -31,6 +19,19 @@ interface EntryMissionProps {
   onChange?: () => void;
 }
 
+interface EntryData {
+  visit: number;
+  ad: number;
+  ref: string[];
+  total: number;
+}
+interface Elig {
+  ok: boolean;
+  reason?: string;
+  nextClaimAt?: number;
+  remainingToday: number;
+}
+
 function fmtRemaining(ms: number) {
   const m = Math.max(0, Math.ceil(ms / 60000));
   const h = Math.floor(m / 60);
@@ -38,7 +39,6 @@ function fmtRemaining(ms: number) {
   return h > 0 ? `${h}시간 ${mm}분` : `${mm}분`;
 }
 
-// 공유 채널 버튼 (key는 giveawayStore의 SHARE_CHANNELS와 일치)
 const SHARE_BTNS = [
   { key: "share", label: "공유", icon: "ti-share-2" },
   { key: "x", label: "X", icon: "ti-brand-x" },
@@ -48,21 +48,26 @@ const SHARE_BTNS = [
 ];
 
 export default function EntryMission({ giveaway, onClose, onChange }: EntryMissionProps) {
-  const [user, setUser] = useState<MockUser>({ loggedIn: false, marketingConsent: false });
-  const [entry, setEntry] = useState<EntryState | null>(null);
-  const [elig, setElig] = useState<VisitEligibility | null>(null);
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [entry, setEntry] = useState<EntryData>({ visit: 0, ad: 0, ref: [], total: 0 });
+  const [elig, setElig] = useState<Elig>({ ok: false, remainingToday: VISIT_DAILY_CAP });
   const [consent, setConsentChecked] = useState(false);
-
   const [adPlaying, setAdPlaying] = useState(false);
   const [adRemaining, setAdRemaining] = useState(0);
   const [message, setMessage] = useState<string | null>(null);
 
-  const refresh = useCallback(() => {
-    const u = getUser();
-    setUser(u);
-    setConsentChecked(u.marketingConsent);
-    setEntry(getEntry(giveaway.id));
-    setElig(visitEligibility(giveaway.id));
+  const refresh = useCallback(async () => {
+    try {
+      const res = await fetch(`/api/giveaway/entry?gid=${encodeURIComponent(giveaway.id)}`, { cache: "no-store" });
+      const data = await res.json();
+      if (data.ok) {
+        setLoggedIn(!!data.loggedIn);
+        setEntry(data.entry);
+        setElig(data.eligibility);
+      }
+    } catch {
+      // 무시
+    }
     onChange?.();
   }, [giveaway.id, onChange]);
 
@@ -73,38 +78,52 @@ export default function EntryMission({ giveaway, onClose, onChange }: EntryMissi
     return () => window.removeEventListener(AUTH_EVENT, h);
   }, [refresh]);
 
-  function handleLogin(provider: "kakao" | "naver") {
+  async function postAction(action: "visit" | "ad" | "share", channel?: string) {
+    const res = await fetch("/api/giveaway/action", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ gid: giveaway.id, action, channel }),
+    });
+    return res.json();
+  }
+
+  function handleLogin() {
     if (!consent) {
       setMessage("마케팅 수신에 동의해야 응모할 수 있어요.");
       return;
     }
-    if (provider === "kakao") {
-      setConsent(true); // 돌아왔을 때 동의 유지 (localStorage)
-      const here = window.location.pathname + window.location.search;
-      window.location.href = `/api/auth/kakao/login?returnTo=${encodeURIComponent(here)}`;
-      return;
-    }
-    // 네이버: 아직 미연동 → mock
-    loginMock(provider);
-    setConsent(true); // 이벤트 → refresh
-    setMessage("✓ 로그인 완료! 응모하기를 눌러 응모권을 받으세요.");
+    setConsent(true); // 돌아왔을 때 동의 유지
+    const here = window.location.pathname + window.location.search;
+    window.location.href = `/api/auth/kakao/login?returnTo=${encodeURIComponent(here)}`;
   }
 
-  function handleClaimVisit() {
-    if (!elig?.ok) return;
-    claimVisit(giveaway.id); // 이벤트 → refresh
-    setMessage("✓ 방문 응모권 +1! 다음 시간대(0·6·12·18시)에 또 받을 수 있어요.");
+  async function handleClaimVisit() {
+    if (!elig.ok) return;
+    const r = await postAction("visit");
+    if (r.ok) {
+      setEntry(r.entry);
+      setElig(r.eligibility);
+      setMessage("✓ 방문 응모권 +1! 다음 시간대(0·6·12·18시)에 또 받을 수 있어요.");
+      onChange?.();
+    } else {
+      if (r.eligibility) setElig(r.eligibility);
+      setMessage("이미 이 시간대에 응모했어요.");
+    }
   }
 
   async function handleWatchAd() {
-    if (!entry || entry.adEntries >= AD_ENTRY_CAP || adPlaying) return;
+    if (entry.ad >= AD_ENTRY_CAP || adPlaying) return;
     setMessage(null);
     setAdPlaying(true);
     try {
       const result = await adAdapter.showRewarded((sec) => setAdRemaining(sec));
       if (result.completed) {
-        const next = addAdEntry(giveaway.id); // 이벤트 → refresh
-        setMessage(`✓ 응모권 +1! (광고 추가 ${next.adEntries}/${AD_ENTRY_CAP})`);
+        const r = await postAction("ad");
+        if (r.ok) {
+          setEntry(r.entry);
+          setMessage(`✓ 응모권 +1! (광고 추가 ${r.entry.ad}/${AD_ENTRY_CAP})`);
+          onChange?.();
+        }
       } else {
         setMessage("광고를 끝까지 봐야 응모권이 지급돼요.");
       }
@@ -114,7 +133,7 @@ export default function EntryMission({ giveaway, onClose, onChange }: EntryMissi
   }
 
   async function handleShareChannel(channel: string) {
-    if (!entry || entry.refChannels.includes(channel)) return;
+    if (entry.ref.includes(channel)) return;
     const link = `${window.location.origin}/giveaway?ref=${getRefCode()}`;
     const text = `${giveaway.prizeName} 나눔 중! 같이 응모해요 🎁`;
     const u = encodeURIComponent(link);
@@ -122,7 +141,7 @@ export default function EntryMission({ giveaway, onClose, onChange }: EntryMissi
     try {
       if (channel === "share") {
         if (typeof navigator.share === "function") {
-          await navigator.share({ title: "오늘의딜 나눔이벤트", text, url: link }); // 취소 시 reject
+          await navigator.share({ title: "오늘의딜 나눔이벤트", text, url: link });
         } else {
           await navigator.clipboard.writeText(link);
         }
@@ -136,19 +155,21 @@ export default function EntryMission({ giveaway, onClose, onChange }: EntryMissi
         };
         window.open(urls[channel], "_blank", "noopener,noreferrer,width=600,height=640");
       }
-      const next = addRefChannel(giveaway.id, channel); // 이벤트 → refresh
-      setMessage(`✓ 공유 응모권 +1! (친구 추천 ${next.refChannels.length}/${REF_ENTRY_CAP})`);
     } catch {
-      // 공유 취소 — 응모권 미지급
+      return; // 공유 취소 — 응모권 미지급
+    }
+    const r = await postAction("share", channel);
+    if (r.ok) {
+      setEntry(r.entry);
+      setMessage(`✓ 공유 응모권 +1! (친구 추천 ${r.entry.ref.length}/${REF_ENTRY_CAP})`);
+      onChange?.();
     }
   }
 
-  const total = entry ? totalEntries(entry) : 0;
-  const loggedIn = canEnter(user);
-  const visitUsed = VISIT_DAILY_CAP - (elig?.remainingToday ?? VISIT_DAILY_CAP);
-  const adMaxed = !!entry && entry.adEntries >= AD_ENTRY_CAP;
-  const refChannels = entry?.refChannels ?? [];
-  const refMaxed = refChannels.length >= REF_ENTRY_CAP;
+  const total = entry.total;
+  const visitUsed = VISIT_DAILY_CAP - (elig.remainingToday ?? VISIT_DAILY_CAP);
+  const adMaxed = entry.ad >= AD_ENTRY_CAP;
+  const refMaxed = entry.ref.length >= REF_ENTRY_CAP;
 
   return (
     <div className={styles.backdrop} onClick={onClose}>
@@ -191,24 +212,17 @@ export default function EntryMission({ giveaway, onClose, onChange }: EntryMissi
                 <button
                   className={`${styles.snsBtn} ${styles.kakao}`}
                   disabled={!consent}
-                  onClick={() => handleLogin("kakao")}
+                  onClick={handleLogin}
                 >
                   <i className="ti ti-message-circle-2" /> 카카오로 시작
                 </button>
-                <button
-                  className={`${styles.snsBtn} ${styles.naver}`}
-                  disabled={!consent}
-                  onClick={() => handleLogin("naver")}
-                >
-                  N 네이버로 시작
-                </button>
               </div>
             </div>
-          ) : elig?.ok ? (
+          ) : elig.ok ? (
             <button className={styles.primaryBtn} onClick={handleClaimVisit}>
               응모하기 <span className={styles.plus}>+1</span>
             </button>
-          ) : elig?.reason === "cooldown" ? (
+          ) : elig.reason === "cooldown" ? (
             <button className={styles.waitBtn} disabled>
               다음 응모까지 {fmtRemaining((elig.nextClaimAt ?? 0) - Date.now())}
             </button>
@@ -225,7 +239,7 @@ export default function EntryMission({ giveaway, onClose, onChange }: EntryMissi
             <span className={styles.stepNo}>2</span>
             <span className={styles.stepTitle}>광고 보고 응모권 추가</span>
             <span className={styles.stepReward}>
-              {entry?.adEntries ?? 0}/{AD_ENTRY_CAP}
+              {entry.ad}/{AD_ENTRY_CAP}
             </span>
           </div>
 
@@ -247,7 +261,7 @@ export default function EntryMission({ giveaway, onClose, onChange }: EntryMissi
             <span className={styles.stepNo}>3</span>
             <span className={styles.stepTitle}>SNS 공유하고 응모권 추가</span>
             <span className={styles.stepReward}>
-              {refChannels.length}/{REF_ENTRY_CAP}
+              {entry.ref.length}/{REF_ENTRY_CAP}
             </span>
           </div>
 
@@ -259,7 +273,7 @@ export default function EntryMission({ giveaway, onClose, onChange }: EntryMissi
             <>
               <div className={styles.shareGrid}>
                 {SHARE_BTNS.map((c) => {
-                  const used = refChannels.includes(c.key);
+                  const used = entry.ref.includes(c.key);
                   return (
                     <button
                       key={c.key}

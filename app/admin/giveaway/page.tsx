@@ -3,18 +3,20 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { Giveaway, GiveawayType } from "@/lib/types";
-import { getEntry, totalEntries } from "@/lib/giveawayStore";
-import { makeSyntheticPool, weightedDraw, type Participant } from "@/lib/draw";
-import {
-  getResult,
-  saveResult,
-  clearResult,
-  type DrawResult,
-  type Winner,
-} from "@/lib/giveawayResults";
 import styles from "./page.module.css";
 
 const TYPE_LABEL: Record<GiveawayType, string> = { weekly: "주간", monthly: "월간" };
+
+interface Winner {
+  id: string;
+  name: string;
+  entries: number;
+}
+interface DrawResult {
+  winners: Winner[];
+  poolSize: number;
+  drawnAt: string;
+}
 
 interface GRow {
   id: string;
@@ -104,10 +106,10 @@ const EMPTY = {
 export default function AdminGiveaway() {
   const [list, setList] = useState<Giveaway[]>([]);
   const [results, setResults] = useState<Record<string, DrawResult | null>>({});
-  const [entries, setEntries] = useState<Record<string, number>>({});
   const [form, setForm] = useState({ ...EMPTY });
   const [fetching, setFetching] = useState(false);
   const [adding, setAdding] = useState(false);
+  const [drawingId, setDrawingId] = useState<string | null>(null);
   const [msg, setMsg] = useState<string | null>(null);
 
   async function reload() {
@@ -116,14 +118,19 @@ export default function AdminGiveaway() {
       const data: { ok: boolean; giveaways?: GRow[] } = await res.json();
       const items = data.ok && data.giveaways ? data.giveaways.map(rowToGiveaway) : [];
       setList(items);
-      const rmap: Record<string, DrawResult | null> = {};
-      const emap: Record<string, number> = {};
-      items.forEach((g) => {
-        rmap[g.id] = getResult(g.id);
-        emap[g.id] = totalEntries(getEntry(g.id));
-      });
-      setResults(rmap);
-      setEntries(emap);
+      // 추첨 결과는 서버(draw_results)에서
+      const pairs = await Promise.all(
+        items.map(async (g) => {
+          try {
+            const r = await fetch(`/api/giveaway/results?gid=${encodeURIComponent(g.id)}`, { cache: "no-store" });
+            const j = await r.json();
+            return [g.id, j.ok ? j.result : null] as const;
+          } catch {
+            return [g.id, null] as const;
+          }
+        })
+      );
+      setResults(Object.fromEntries(pairs));
     } catch {
       // 무시
     }
@@ -239,30 +246,40 @@ export default function AdminGiveaway() {
     }
   }
 
-  function handleDraw(g: Giveaway) {
-    const pool: Participant[] = makeSyntheticPool(120 + Math.floor(Math.random() * 280));
-    const myTotal = totalEntries(getEntry(g.id));
-    if (myTotal > 0) pool.push({ id: "me", name: "나 (현재 회원)", weight: myTotal });
-    const picked = weightedDraw(pool, g.winnerCount);
-    const winners: Winner[] = picked.map((p) => ({
-      id: p.id,
-      name: p.name,
-      entries: p.weight,
-      isMe: p.id === "me",
-    }));
-    const result: DrawResult = {
-      giveawayId: g.id,
-      winners,
-      poolSize: pool.length,
-      drawnAt: new Date().toLocaleString("ko-KR"),
-    };
-    saveResult(result);
-    setResults((r) => ({ ...r, [g.id]: result }));
+  async function handleDraw(g: Giveaway) {
+    setDrawingId(g.id);
+    setMsg(null);
+    try {
+      const res = await fetch("/api/giveaways/draw", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ gid: g.id }),
+      });
+      const data: { ok: boolean; winners?: Winner[]; poolSize?: number; drawnAt?: string; error?: string } =
+        await res.json();
+      if (!data.ok) {
+        setMsg(`⚠ ${data.error ?? "추첨 실패"}`);
+        return;
+      }
+      setResults((r) => ({
+        ...r,
+        [g.id]: { winners: data.winners ?? [], poolSize: data.poolSize ?? 0, drawnAt: data.drawnAt ?? "" },
+      }));
+      setMsg(`✓ ${g.title} 추첨 완료 — 공개 페이지에 자동 발표됩니다.`);
+    } catch {
+      setMsg("⚠ 추첨 실패. 잠시 후 다시 시도해주세요.");
+    } finally {
+      setDrawingId(null);
+    }
   }
 
-  function handleClear(g: Giveaway) {
-    clearResult(g.id);
-    setResults((r) => ({ ...r, [g.id]: null }));
+  async function handleClear(g: Giveaway) {
+    try {
+      await fetch(`/api/giveaways/draw?gid=${encodeURIComponent(g.id)}`, { method: "DELETE" });
+      setResults((r) => ({ ...r, [g.id]: null }));
+    } catch {
+      setMsg("⚠ 발표 취소 실패.");
+    }
   }
 
   return (
@@ -395,7 +412,6 @@ export default function AdminGiveaway() {
         <div className={styles.list}>
           {list.map((g) => {
             const result = results[g.id];
-            const myEntries = entries[g.id] ?? 0;
             return (
               <section key={g.id} className={styles.card}>
                 <div className={styles.cardHead}>
@@ -408,9 +424,11 @@ export default function AdminGiveaway() {
                 </div>
 
                 <div className={styles.metaRow}>
-                  <span>
-                    <i className="ti ti-ticket" /> 내 응모권 {myEntries}개
-                  </span>
+                  {result && (
+                    <span>
+                      <i className="ti ti-users" /> 응모자 {result.poolSize.toLocaleString("ko-KR")}명
+                    </span>
+                  )}
                   {g.drawAt && (
                     <span className={styles.drawTag}>
                       <i className="ti ti-calendar-event" /> 추첨 예정 {fmtMD(g.drawAt)}
@@ -425,11 +443,15 @@ export default function AdminGiveaway() {
                   <div className={styles.resultBox}>
                     <div className={styles.resultHead}>
                       <span>🎉 당첨자 {result.winners.length}명</span>
-                      <span className={styles.drawnAt}>{result.drawnAt} 추첨</span>
+                      {result.drawnAt && (
+                        <span className={styles.drawnAt}>
+                          {new Date(result.drawnAt).toLocaleString("ko-KR")} 추첨
+                        </span>
+                      )}
                     </div>
                     <ul className={styles.winners}>
                       {result.winners.map((w, i) => (
-                        <li key={w.id} className={w.isMe ? styles.meWinner : ""}>
+                        <li key={w.id}>
                           <span className={styles.rank}>{i + 1}</span>
                           <span className={styles.wname}>{w.name}</span>
                           <span className={styles.wentry}>응모권 {w.entries}</span>
@@ -437,8 +459,8 @@ export default function AdminGiveaway() {
                       ))}
                     </ul>
                     <div className={styles.actions}>
-                      <button className={styles.redraw} onClick={() => handleDraw(g)}>
-                        <i className="ti ti-refresh" /> 다시 추첨
+                      <button className={styles.redraw} onClick={() => handleDraw(g)} disabled={drawingId === g.id}>
+                        <i className="ti ti-refresh" /> {drawingId === g.id ? "추첨 중…" : "다시 추첨"}
                       </button>
                       <button className={styles.clear} onClick={() => handleClear(g)}>
                         발표 취소
@@ -446,8 +468,8 @@ export default function AdminGiveaway() {
                     </div>
                   </div>
                 ) : (
-                  <button className={styles.drawBtn} onClick={() => handleDraw(g)}>
-                    <i className="ti ti-confetti" /> 지금 추첨 (수동)
+                  <button className={styles.drawBtn} onClick={() => handleDraw(g)} disabled={drawingId === g.id}>
+                    <i className="ti ti-confetti" /> {drawingId === g.id ? "추첨 중…" : "지금 추첨"}
                   </button>
                 )}
               </section>

@@ -20,5 +20,5 @@ export async function GET(req: NextRequest): Promise<Response> {
     });
   }
   const state = await getEntryState(u.id, gid);
-  return NextResponse.json({ ok: true, loggedIn: true, ...state });
+  return NextResponse.json({ ok: true, loggedIn: true, userId: u.id, ...state });
 }
