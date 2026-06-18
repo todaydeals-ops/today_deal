@@ -1,6 +1,18 @@
 // 커스텀 OAuth 세션 — HMAC 서명 쿠키 (Supabase 미경유). Node 런타임 전용.
 import crypto from "node:crypto";
 
+// 콜백 redirect_uri는 카카오 등록값과 글자 단위로 일치해야 함.
+// apex(todaydeals.co.kr)로 들어와도 항상 www로 정규화해 변수를 제거.
+export function canonicalOrigin(reqOrigin: string): string {
+  try {
+    const u = new URL(reqOrigin);
+    if (u.hostname === "todaydeals.co.kr") return "https://www.todaydeals.co.kr";
+    return u.origin;
+  } catch {
+    return reqOrigin;
+  }
+}
+
 export const COOKIE_NAME = "td_auth";
 export const COOKIE_MAXAGE = 60 * 60 * 24 * 30; // 30일
 export const STATE_COOKIE = "td_oauth_state";

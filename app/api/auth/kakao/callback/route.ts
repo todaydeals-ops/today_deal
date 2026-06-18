@@ -1,7 +1,7 @@
 // 카카오 콜백 — code 교환 → 사용자 조회 → 서명 세션 쿠키 발급 → 원래 페이지로.
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { COOKIE_NAME, COOKIE_MAXAGE, STATE_COOKIE, signSession, type AuthUser } from "@/lib/auth/session";
+import { COOKIE_NAME, COOKIE_MAXAGE, STATE_COOKIE, canonicalOrigin, signSession, type AuthUser } from "@/lib/auth/session";
 
 export const runtime = "nodejs";
 
@@ -14,7 +14,7 @@ function backTo(origin: string, path: string, err?: string): Response {
 }
 
 export async function GET(req: NextRequest): Promise<Response> {
-  const origin = req.nextUrl.origin;
+  const origin = canonicalOrigin(req.nextUrl.origin);
   const code = req.nextUrl.searchParams.get("code");
   const state = req.nextUrl.searchParams.get("state");
 

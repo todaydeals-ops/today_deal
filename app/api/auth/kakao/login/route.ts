@@ -2,7 +2,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import crypto from "node:crypto";
-import { STATE_COOKIE } from "@/lib/auth/session";
+import { STATE_COOKIE, canonicalOrigin } from "@/lib/auth/session";
 
 export const runtime = "nodejs";
 
@@ -12,7 +12,7 @@ export async function GET(req: NextRequest): Promise<Response> {
     return NextResponse.json({ error: "KAKAO_REST_API_KEY 미설정" }, { status: 500 });
   }
 
-  const origin = req.nextUrl.origin;
+  const origin = canonicalOrigin(req.nextUrl.origin);
   const redirectUri = `${origin}/api/auth/kakao/callback`;
   const returnTo = req.nextUrl.searchParams.get("returnTo") || "/";
   const state = crypto.randomBytes(12).toString("hex");
