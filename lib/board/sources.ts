@@ -140,20 +140,34 @@ export async function collectAll(): Promise<RawDeal[]> {
   return lists.flat();
 }
 
-// 원본 페이지 og:image (뽐뿌처럼 RSS에 이미지 없는 소스용) — 신규 항목만 호출.
-export async function fetchOgImage(url: string): Promise<string | undefined> {
+// 커뮤니티 글(뽐뿌/루리웹 view)에서 "실제 딜"을 추출 — 우리는 글을 베끼는 게 아니라
+// 그 안의 진짜 쇼핑몰 링크·이미지를 퍼와 우리 글로 가공한다. 신규 항목만 1회 호출.
+const SHOP_RE =
+  /https?:\/\/[a-z0-9.\-]*(lotteon|gmarket|11st|coupang|smartstore\.naver|brand\.naver|shopping\.naver|ssg|auction|tmon|interpark|aliexpress|amazon|wadiz|29cm|musinsa|oliveyoung|hmall|cjonstyle|gsshop|himart|ohou|kakao)[a-z0-9./?=&_%~\-]*/i;
+
+export async function fetchDealMeta(url: string): Promise<{ dealUrl?: string; image?: string }> {
   try {
     const res = await fetch(url, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(10000) });
-    if (!res.ok) return undefined;
-    const html = await res.text();
-    const m =
-      html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i) ||
-      html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i);
-    const src = m?.[1];
-    if (!src || !/^https?:\/\//i.test(src)) return undefined;
-    return src.replace(/^http:/, "https:");
+    if (!res.ok) return {};
+    const html = Buffer.from(await res.arrayBuffer()).toString("latin1"); // EUC-KR 페이지 多, URL은 ASCII
+
+    // 1) 실제 딜 링크: 뽐뿌 data-url 우선, 없으면 본문 내 쇼핑몰 도메인
+    let dealUrl: string | undefined;
+    const dm = html.match(/data-url\s*=\s*['"]\s*(https?:\/\/[^'"]+?)\s*['"]/i);
+    if (dm && !/ppomppu|ruliweb/i.test(dm[1])) dealUrl = dm[1].trim();
+    if (!dealUrl) {
+      const sm = html.match(SHOP_RE);
+      if (sm) dealUrl = sm[0];
+    }
+
+    // 2) 상품 이미지: og:image
+    let image: string | undefined;
+    const im = html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i);
+    if (im && /^https?:\/\//i.test(im[1])) image = im[1].replace(/^http:/, "https:");
+
+    return { dealUrl, image };
   } catch {
-    return undefined;
+    return {};
   }
 }
 

@@ -1,7 +1,7 @@
 // 핫딜 자동수집 오케스트레이션:
 //  수집 → 교차 dedup → (신규만) 페르소나 리라이트 → 대기풀 적재 → 드립 공개 → 활동 시뮬(조회·추천)
 import { getSupabaseAdmin } from "@/lib/supabase/server";
-import { collectAll, fetchOgImage, normalizeKey, type RawDeal } from "./sources";
+import { collectAll, fetchDealMeta, normalizeKey, type RawDeal } from "./sources";
 import { categorize } from "./categorize";
 import { personaFor } from "./personas";
 import { rewriteDeal } from "./rewrite";
@@ -57,8 +57,10 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
     const persona = personaFor(c.slug);
     const category = c.boardType === "hot" ? categorize(c.title, c.category) : c.category ?? null;
     const rw = await rewriteDeal({ title: c.title, body: c.body, shop: c.shop, price: c.price }, persona);
-    // 이미지: RSS 썸네일 우선, 없으면 원본 페이지 og:image
-    const imageUrl = c.imageUrl ?? (await fetchOgImage(c.sourceUrl));
+    // 커뮤니티 글이 아니라 그 안의 "실제 딜"을 가공 — 진짜 쇼핑몰 링크·이미지 추출
+    const meta = await fetchDealMeta(c.sourceUrl);
+    const dealUrl = meta.dealUrl ?? c.sourceUrl; // 실제 쇼핑몰 우선, 못 찾으면 원본 폴백
+    const imageUrl = c.imageUrl ?? meta.image;
     return {
       slug: c.slug,
       source: c.source,
@@ -69,8 +71,8 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
       price: c.price ?? null,
       shipping: c.shipping ?? null,
       image_url: imageUrl ?? null,
-      source_url: c.sourceUrl,
-      original_url: c.sourceUrl,
+      source_url: dealUrl,
+      original_url: dealUrl,
       body: rw.body || null,
       author: persona.nick,
       is_published: false, // 대기풀 — 드립으로 공개
