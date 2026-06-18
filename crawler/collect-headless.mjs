@@ -64,6 +64,12 @@ function kstResetIso(hh, mm = 0) {
 // ── 어댑터: 11번가 (타임딜/오늘의딜) — Cloudflare 없음, HTML 카드 파싱 ──
 async function collect11st(ctx, { url, badge, resetHour, limit = 30 }) {
   const page = await ctx.newPage();
+  // 11번가 페이지는 무거움 → 이미지·폰트·미디어 차단(메모리 절약·크래시 방지). img.src는 그대로 읽힘.
+  await page.route("**/*", (route) => {
+    const t = route.request().resourceType();
+    if (t === "image" || t === "media" || t === "font") route.abort();
+    else route.continue();
+  });
   try {
     await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
     await page.waitForTimeout(2500);
@@ -133,7 +139,10 @@ const SOURCES = [
 ];
 
 // ── main ──
-const browser = await chromium.launch({ headless: true });
+const browser = await chromium.launch({
+  headless: true,
+  args: ["--disable-dev-shm-usage", "--no-sandbox"],
+});
 const ctx = await browser.newContext({ userAgent: UA, locale: "ko-KR" });
 
 const deals = [];
