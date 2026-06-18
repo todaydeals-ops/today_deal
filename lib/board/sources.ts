@@ -152,7 +152,10 @@ export async function collectAll(): Promise<RawDeal[]> {
 // 커뮤니티 글(뽐뿌/루리웹 view)에서 "실제 딜"을 추출 — 우리는 글을 베끼는 게 아니라
 // 그 안의 진짜 쇼핑몰 링크·이미지를 퍼와 우리 글로 가공한다. 신규 항목만 1회 호출.
 const SHOP_RE =
-  /https?:\/\/[a-z0-9.\-]*(lotteon|gmarket|11st|coupang|smartstore\.naver|brand\.naver|shopping\.naver|ssg|auction|tmon|interpark|aliexpress|amazon|wadiz|29cm|musinsa|oliveyoung|hmall|cjonstyle|gsshop|himart|ohou|cyso|qoo10|iherb|temu)[a-z0-9./?=&_%~\-]*/i;
+  /https?:\/\/[a-z0-9.\-]*(lotteon|lotteimall|gmarket|g9\.co|11st|coupang|smartstore\.naver|brand\.naver|shopping\.naver|ssg|emart|homeplus|auction|tmon|interpark|wemakeprice|gsshop|cjonstyle|cjthemarket|hmall|kurly|oasis|dongwonmall|himart|electromart|29cm|musinsa|oliveyoung|ably|zigzag|wconcept|kakaostyle|ohou|cyso|danawa|enuri|aliexpress|amazon|qoo10|iherb|temu|banggood|ebay|play\.google|apps\.apple|store\.steampowered|nintendo|playstation|wadiz)[a-z0-9./?=&_%~\-]*/i;
+
+// 적립/이벤트성 죽은 링크(네이버페이 적립 등) + 커뮤니티 자체 링크 — data-url에서 제외
+const JUNK_URL = /(ppomppu|ruliweb|fmkorea|clien|quasarzone|eomisae|dealbada|pay\.naver|naverpay|m\.pay\.naver|adcr\.naver)/i;
 
 export async function fetchDealMeta(url: string): Promise<{ dealUrl?: string; image?: string }> {
   try {
@@ -160,11 +163,11 @@ export async function fetchDealMeta(url: string): Promise<{ dealUrl?: string; im
     if (!res.ok) return {};
     const html = Buffer.from(await res.arrayBuffer()).toString("latin1"); // EUC-KR 페이지 多, URL은 ASCII
 
-    // 실제 딜 링크: ① 뽐뿌 data-url 위젯(단, 알려진 쇼핑몰일 때만) ② 본문 내 알려진 쇼핑몰 도메인.
+    // 실제 딜 링크: ① 뽐뿌 data-url 위젯(작성자 지정 딜 — 적립/커뮤니티 junk만 제외) ② 본문 내 알려진 쇼핑몰.
     // 임의의 외부링크 폴백은 쓰지 않음 — 적립/이벤트성 글의 죽은 링크 방지.
     let dealUrl: string | undefined;
     const dm = html.match(/data-url\s*=\s*['"]\s*(https?:\/\/[^'"]+?)\s*['"]/i);
-    if (dm && SHOP_RE.test(dm[1])) dealUrl = dm[1].trim();
+    if (dm && !JUNK_URL.test(dm[1])) dealUrl = dm[1].trim();
     if (!dealUrl) {
       const sm = html.match(SHOP_RE);
       if (sm) dealUrl = sm[0];
