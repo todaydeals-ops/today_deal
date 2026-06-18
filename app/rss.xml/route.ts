@@ -19,16 +19,22 @@ export async function GET(): Promise<Response> {
   const items = deals
     .map((d) => {
       const disc = d.discountRate > 0 ? `${d.discountRate}% ` : "";
-      const title = `${d.productName} ${disc}${d.salePrice.toLocaleString("ko-KR")}원`;
+      const price = `${d.salePrice.toLocaleString("ko-KR")}원`;
+      const title = `${d.productName} ${disc}${price}`;
       const link = `${SITE}/deal/${d.slug}`;
-      const desc = d.summary || `${d.productName} 할인 정보 — 오늘의딜에서 실시간 타임딜·최저가를 비교하세요.`;
+      const line = d.summary || `${d.productName} · ${disc}${price} 할인 정보. 오늘의딜에서 실시간 타임딜·최저가를 비교하세요.`;
+      // 네이버 권장: 이미지 링크 포함 본문 전체
+      const body =
+        (d.imageUrl ? `<img src="${esc(d.imageUrl)}" alt="${esc(d.productName)}" /><br/>` : "") +
+        `<p>${esc(line)}</p>`;
       const pub = d.lastSeen ? new Date(d.lastSeen).toUTCString() : now;
       return (
         `<item>` +
         `<title>${cdata(title)}</title>` +
         `<link>${esc(link)}</link>` +
         `<guid isPermaLink="true">${esc(link)}</guid>` +
-        `<description>${cdata(desc)}</description>` +
+        `<description>${cdata(body)}</description>` +
+        (d.imageUrl ? `<enclosure url="${esc(d.imageUrl)}" type="image/jpeg" />` : "") +
         `<pubDate>${pub}</pubDate>` +
         `</item>`
       );
