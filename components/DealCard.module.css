@@ -93,6 +93,21 @@
   color: var(--text-muted);
 }
 
+/* 골드박스: 일반가 빨간 빗금 + 특가보기 */
+.strike {
+  font-size: 15px;
+  color: var(--text-muted);
+  text-decoration: line-through;
+  text-decoration-color: #e02020;
+  text-decoration-thickness: 2px;
+}
+
+.goSpecial {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-deal);
+}
+
 /* 품절 상태 */
 .soldout {
   opacity: 0.6;
