@@ -146,8 +146,11 @@ create table if not exists public.view_visits (
   primary key (ip, day)
 );
 
+-- 활동 스냅샷 컬럼(오늘 활동 총합) — 새 방문자 접속 때만 갱신.
+alter table public.view_counter add column if not exists activity bigint not null default 0;
+
 create or replace function public.bump_views_ip(p_ip text)
-returns table(today_count bigint, total_count bigint)
+returns table(today_count bigint, total_count bigint, activity_count bigint)
 language plpgsql
 as $$
 declare inserted int;
@@ -157,14 +160,25 @@ begin
   on conflict (ip, day) do nothing;
   get diagnostics inserted = row_count;
   if inserted = 1 then
-    update public.view_counter set total = total + 1,
+    -- 새 방문자: 카운트 증가 + 활동 스냅샷 재계산(오늘 KST 글들의 조회+추천 합 + 글 수)
+    update public.view_counter set
+      total = total + 1,
       day_count = case when day = current_date then day_count + 1 else 1 end,
-      day = current_date where id = 1;
+      day = current_date,
+      activity = (
+        select count(*) + coalesce(sum(views), 0) + coalesce(sum(votes), 0)
+        from public.board_deals
+        where is_published = true
+          and created_at >= (date_trunc('day', now() at time zone 'Asia/Seoul') at time zone 'Asia/Seoul')
+      )
+    where id = 1;
   else
-    update public.view_counter set day_count = case when day = current_date then day_count else 0 end,
+    -- 재방문(같은 IP/일): 스냅샷 유지 → 새로고침해도 안 변함
+    update public.view_counter set
+      day_count = case when day = current_date then day_count else 0 end,
       day = current_date where id = 1;
   end if;
-  return query select day_count, total from public.view_counter where id = 1;
+  return query select day_count, total, activity from public.view_counter where id = 1;
 end;
 $$;
 

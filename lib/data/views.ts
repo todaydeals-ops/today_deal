@@ -26,7 +26,7 @@ export async function todayBoardActivity(): Promise<number> {
   }
 }
 
-export async function bumpViews(ip?: string): Promise<{ today: number; total: number } | null> {
+export async function bumpViews(ip?: string): Promise<{ today: number; total: number; activity?: number } | null> {
   const sb = getSupabaseAdmin();
   if (!sb) return null;
   try {
@@ -36,6 +36,8 @@ export async function bumpViews(ip?: string): Promise<{ today: number; total: nu
     return {
       today: Number(row.today_count) || 0,
       total: Number(row.total_count) || 0,
+      // 새 RPC가 활동 스냅샷(activity_count)을 주면 사용. (없으면 undefined → 앱이 라이브 계산 폴백)
+      activity: row.activity_count != null ? Number(row.activity_count) : undefined,
     };
   } catch {
     return null;
