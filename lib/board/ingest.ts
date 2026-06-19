@@ -5,7 +5,7 @@ import { collectAll, fetchDealMeta, isFreebie, normalizeKey, type RawDeal } from
 import { categorize } from "./categorize";
 import { personaFor } from "./personas";
 import { rewriteDeal } from "./rewrite";
-import { releaseSchedule, RELEASE_INTERVAL_SEC, isActiveHour, activityBoost } from "./dripConfig";
+import { targetPublishedByNow, windowStartMs, MAX_BURST, isActiveHour, activityBoost } from "./dripConfig";
 import { repackageDealUrl } from "./repackage";
 
 const MAX_REWRITE_PER_RUN = 12; // 회차당 신규 리라이트 상한(지연·비용 제어)
@@ -159,13 +159,8 @@ async function publishPending(
   return n;
 }
 
-// 대기풀에서 oldest N개를 497초 간격 타임스탬프로 공개(보드/카테고리 자연 혼합).
-// created_at = anchor + k*497초(k=1..N) → 가장 최근 글이 ~현재. 시작 조회수 소량.
-async function publishRate(
-  sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>,
-  count: number,
-  anchorMs: number
-): Promise<number> {
+// 대기풀에서 oldest N개를 "마지막 공개~현재" 구간 안의 랜덤 시각으로 공개(시간대 균등 + 구간 내 랜덤).
+async function publishRate(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>, count: number): Promise<number> {
   if (count <= 0) return 0;
   const { data } = await sb
     .from("board_deals")
@@ -175,11 +170,27 @@ async function publishRate(
     .order("created_at", { ascending: true })
     .limit(count);
   const ids = ((data as { id: string }[]) ?? []).map((r) => r.id);
-  const stepMs = RELEASE_INTERVAL_SEC * 1000;
+  if (ids.length === 0) return 0;
+
+  // 분산 구간: 마지막 공개시각(오늘 창 이후) ~ 현재
+  const now = Date.now();
+  const { data: last } = await sb
+    .from("board_deals")
+    .select("created_at")
+    .eq("is_published", true)
+    .not("source", "is", null)
+    .order("created_at", { ascending: false })
+    .limit(1);
+  const lastIso = (last as { created_at: string }[] | null)?.[0]?.created_at;
+  const lastMs = lastIso ? Math.max(new Date(lastIso).getTime(), windowStartMs(now)) : windowStartMs(now);
+  const span = Math.max(60_000, now - lastMs); // 최소 1분
+  // 구간 내 랜덤 시각 N개(오름차순) → oldest 글이 이른 시각
+  const times = Array.from({ length: ids.length }, () => lastMs + Math.random() * span).sort((a, b) => a - b);
+
   let n = 0;
   for (let i = 0; i < ids.length; i++) {
     const seed = 1 + Math.floor(Math.random() * 4); // 시작 조회수 1~4
-    const created = new Date(anchorMs + (i + 1) * stepMs).toISOString();
+    const created = new Date(times[i]).toISOString();
     const { error } = await sb.from("board_deals").update({ is_published: true, created_at: created, views: seed }).eq("id", ids[i]);
     if (!error) n++;
   }
@@ -188,26 +199,28 @@ async function publishRate(
 
 // 2) 드립 공개.
 //  - override(테스트): 게이트 무시하고 oldest N개 즉시 공개.
-//  - 평소: 활동시간 + 레이트(1개/497초). 호출 때마다 그동안 밀린 개수를 497초 간격으로 공개.
+//  - 평소: 활동시간 + 누적 목표(하루 DAILY_TARGET개를 시간대 균등). 밀린 만큼만 랜덤 시각으로 공개.
 async function releaseDrip(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>, override?: number): Promise<number> {
   if (typeof override === "number" && override > 0) {
     return publishPending(sb, {}, Math.min(override, 40));
   }
   if (!isActiveHour()) return 0;
 
-  // 마지막 크롤 공개시각 기준 — 밀린 개수(count)와 타임스탬프 기준점(anchor) 계산
-  const { data: latest } = await sb
+  // 오늘(창 시작 이후) 이미 공개된 크롤 글 수
+  const { count: publishedToday } = await sb
     .from("board_deals")
-    .select("created_at")
+    .select("id", { count: "exact", head: true })
     .eq("is_published", true)
     .not("source", "is", null)
-    .order("created_at", { ascending: false })
-    .limit(1);
-  const lastIso = (latest as { created_at: string }[] | null)?.[0]?.created_at ?? null;
-  const { count, anchorMs } = releaseSchedule(lastIso);
-  _debug.due = count;
-  if (count <= 0) return 0;
-  return await publishRate(sb, count, anchorMs);
+    .gte("created_at", new Date(windowStartMs()).toISOString());
+
+  const target = targetPublishedByNow();
+  const due = Math.min(MAX_BURST, target - (publishedToday ?? 0));
+  _debug.target = target;
+  _debug.publishedToday = publishedToday ?? 0;
+  _debug.due = due;
+  if (due <= 0) return 0;
+  return await publishRate(sb, due);
 }
 
 // 3) 활동 시뮬 — 최근 글의 조회수 상승 + 가끔 추천(항상 조회수 < 추천수 역전 방지)
