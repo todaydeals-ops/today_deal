@@ -130,7 +130,7 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
   return { collected: candidates.length, inserted: rows.length };
 }
 
-// 대기풀에서 조건에 맞는 글 N개를 공개 — 공개시각 0~25분 분산(무더기 방지), 시작 조회수 소량.
+// 대기풀에서 조건에 맞는 글 N개를 공개 — 공개시각 0~10분 분산(무더기 방지), 시작 조회수 소량.
 async function publishPending(
   sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>,
   filter: { boardType?: string; category?: string | null },
@@ -151,7 +151,7 @@ async function publishPending(
   let n = 0;
   for (const id of ids) {
     const seed = 1 + Math.floor(Math.random() * 4); // 시작 조회수 1~4
-    const offset = Math.floor(Math.random() * 25) * 60_000; // 0~25분 분산
+    const offset = Math.floor(Math.random() * 10) * 60_000; // 0~10분 분산(조금씩 자주)
     const created = new Date(Date.now() - offset).toISOString();
     const { error } = await sb.from("board_deals").update({ is_published: true, created_at: created, views: seed }).eq("id", id);
     if (!error) n++;
@@ -161,7 +161,7 @@ async function publishPending(
 
 // 2) 드립 공개.
 //  - override(테스트): 게이트 무시하고 oldest N개 공개.
-//  - 평소: 활동시간 + 랜덤 간격(약 40~110분) 게이트가 열릴 때만, 카테고리별 소량(주요 2~3·비주류 1~2).
+//  - 평소: 활동시간 + 랜덤 간격(약 10~25분) 게이트가 열릴 때만, 카테고리별 소량(카테고리당 0~1).
 async function releaseDrip(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>, override?: number): Promise<number> {
   if (typeof override === "number" && override > 0) {
     return publishPending(sb, {}, Math.min(override, 40));
