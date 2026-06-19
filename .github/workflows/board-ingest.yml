@@ -39,3 +39,14 @@ jobs:
           # -f: HTTP 에러면 실패 처리 / 응답 본문만 출력(시크릿 노출 방지 위해 URL은 에코 안 함)
           curl -fsS "$URL" | head -c 2000
           echo
+
+      # 쿠팡 골드박스 자가치유 — 크롤러(2h)가 놓치거나 쿠팡 API 일시실패로 어제 데이터가
+      # 박제되는 걸 방지. 골드박스 dealEndAt은 다음 07:00 KST라, 호출할 때마다 타이머가 최신화됨.
+      - name: 골드박스 갱신
+        env:
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+        run: |
+          [ -z "$CRON_SECRET" ] && exit 0
+          # 실패해도 워크플로 전체는 통과(골드박스는 부가 갱신) — || true
+          curl -fsS "https://www.todaydeals.co.kr/api/cron/goldbox?key=${CRON_SECRET}" | head -c 1000 || true
+          echo

@@ -42,6 +42,14 @@ export function tierOf(d: Deal): number {
   return d.badge && BADGE_META[d.badge] ? BADGE_META[d.badge].tier : 2;
 }
 
+// 만료 딜 제외 — deal_end_at이 지난 카드는 타이머가 00:00:00으로 박제되므로 노출하지 않음.
+// (deal_end_at이 비어 있으면 상시 노출로 간주.) 갱신이 지연돼도 죽은 타이머가 안 보임.
+function isLiveRow(r: DealRow): boolean {
+  if (!r.deal_end_at) return true;
+  const end = new Date(r.deal_end_at).getTime();
+  return Number.isNaN(end) || end > Date.now();
+}
+
 // 영구 딜 스냅샷 (개별 페이지·sitemap용)
 export interface ArchiveDeal {
   slug: string;
@@ -136,7 +144,7 @@ export async function fetchUnifiedDeals(): Promise<Deal[]> {
         .select("*")
         .order("display_order", { ascending: true });
       if (!error && data && data.length > 0) {
-        return (data as DealRow[]).map(mapDeal);
+        return (data as DealRow[]).filter(isLiveRow).map(mapDeal);
       }
     } catch {
       // 폴백
@@ -166,7 +174,7 @@ export async function fetchDealsByPlatform(): Promise<Record<Platform, Deal[]>> 
         .select("*")
         .order("display_order", { ascending: true });
       if (!error && data && data.length > 0) {
-        return groupByPlatform((data as DealRow[]).map(mapDeal));
+        return groupByPlatform((data as DealRow[]).filter(isLiveRow).map(mapDeal));
       }
     } catch {
       // 폴백
