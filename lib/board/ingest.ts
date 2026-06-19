@@ -5,7 +5,7 @@ import { collectAll, fetchDealMeta, isFreebie, normalizeKey, type RawDeal } from
 import { categorize } from "./categorize";
 import { personaFor } from "./personas";
 import { rewriteDeal } from "./rewrite";
-import { releasePlan, nextGapMinutes, isActiveHour, activityBoost } from "./dripConfig";
+import { releaseSchedule, RELEASE_INTERVAL_SEC, isActiveHour, activityBoost } from "./dripConfig";
 import { repackageDealUrl } from "./repackage";
 
 const MAX_REWRITE_PER_RUN = 12; // 회차당 신규 리라이트 상한(지연·비용 제어)
@@ -159,16 +159,43 @@ async function publishPending(
   return n;
 }
 
+// 대기풀에서 oldest N개를 497초 간격 타임스탬프로 공개(보드/카테고리 자연 혼합).
+// created_at = anchor + k*497초(k=1..N) → 가장 최근 글이 ~현재. 시작 조회수 소량.
+async function publishRate(
+  sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>,
+  count: number,
+  anchorMs: number
+): Promise<number> {
+  if (count <= 0) return 0;
+  const { data } = await sb
+    .from("board_deals")
+    .select("id")
+    .eq("is_published", false)
+    .not("source", "is", null) // 크롤 대기분만(유저 제보는 관리자 승인)
+    .order("created_at", { ascending: true })
+    .limit(count);
+  const ids = ((data as { id: string }[]) ?? []).map((r) => r.id);
+  const stepMs = RELEASE_INTERVAL_SEC * 1000;
+  let n = 0;
+  for (let i = 0; i < ids.length; i++) {
+    const seed = 1 + Math.floor(Math.random() * 4); // 시작 조회수 1~4
+    const created = new Date(anchorMs + (i + 1) * stepMs).toISOString();
+    const { error } = await sb.from("board_deals").update({ is_published: true, created_at: created, views: seed }).eq("id", ids[i]);
+    if (!error) n++;
+  }
+  return n;
+}
+
 // 2) 드립 공개.
-//  - override(테스트): 게이트 무시하고 oldest N개 공개.
-//  - 평소: 활동시간 + 랜덤 간격(약 10~25분) 게이트가 열릴 때만, 카테고리별 소량(카테고리당 0~1).
+//  - override(테스트): 게이트 무시하고 oldest N개 즉시 공개.
+//  - 평소: 활동시간 + 레이트(1개/497초). 호출 때마다 그동안 밀린 개수를 497초 간격으로 공개.
 async function releaseDrip(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>, override?: number): Promise<number> {
   if (typeof override === "number" && override > 0) {
     return publishPending(sb, {}, Math.min(override, 40));
   }
   if (!isActiveHour()) return 0;
 
-  // 랜덤 간격 게이트 — 마지막 크롤 공개시각 기준
+  // 마지막 크롤 공개시각 기준 — 밀린 개수(count)와 타임스탬프 기준점(anchor) 계산
   const { data: latest } = await sb
     .from("board_deals")
     .select("created_at")
@@ -176,20 +203,11 @@ async function releaseDrip(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>,
     .not("source", "is", null)
     .order("created_at", { ascending: false })
     .limit(1);
-  const lastIso = (latest as { created_at: string }[] | null)?.[0]?.created_at;
-  const elapsedMin = lastIso ? (Date.now() - new Date(lastIso).getTime()) / 60_000 : 99999;
-  const gap = nextGapMinutes(lastIso ?? "init");
-  _debug.gapMin = Math.round(gap);
-  _debug.elapsedMin = Math.round(elapsedMin);
-  if (elapsedMin < gap) return 0; // 아직 공개 때가 아님
-
-  // 카테고리별 분산 공개
-  let released = 0;
-  for (const b of releasePlan()) {
-    const want = b.min + Math.floor(Math.random() * (b.max - b.min + 1));
-    released += await publishPending(sb, { boardType: b.boardType, category: b.category }, want);
-  }
-  return released;
+  const lastIso = (latest as { created_at: string }[] | null)?.[0]?.created_at ?? null;
+  const { count, anchorMs } = releaseSchedule(lastIso);
+  _debug.due = count;
+  if (count <= 0) return 0;
+  return await publishRate(sb, count, anchorMs);
 }
 
 // 3) 활동 시뮬 — 최근 글의 조회수 상승 + 가끔 추천(항상 조회수 < 추천수 역전 방지)
