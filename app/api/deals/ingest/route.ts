@@ -76,6 +76,19 @@ export async function POST(request: Request): Promise<Response> {
 
   const endHours = Number(body.endHours) > 0 ? Number(body.endHours) : 12;
   const dealEndAt = new Date(Date.now() + endHours * 3600 * 1000).toISOString();
+
+  // 표시 안정화 — 수집 딜이 크롤 간격(약 2h) 사이에 만료돼 섹션이 비는 것 방지.
+  // 지마켓 오픈런·11번가 타임딜은 회전 타이머가 짧아(수분~) 하한선이 없으면
+  // 다음 크롤 전에 만료돼 카드가 사라짐(특히 만료 필터 도입 후). replace로 매 크롤이
+  // badge 단위 교체하므로 하한선은 신선도를 해치지 않음(11번가 11시 초기화도 11:05 크롤이 교체).
+  const MIN_LIFETIME_MS = 3 * 3600 * 1000; // 다음 크롤(2h) + 지연 버퍼
+  const minEndMs = Date.now() + MIN_LIFETIME_MS;
+  const floorEnd = (iso?: string): string => {
+    if (!iso) return dealEndAt; // 소스 미제공 → 기본(12h)
+    const t = new Date(iso).getTime();
+    if (Number.isNaN(t)) return dealEndAt;
+    return t >= minEndMs ? iso : new Date(minEndMs).toISOString();
+  };
   const skipped: SkipInfo[] = [];
   const rows: Row[] = [];
 
@@ -108,7 +121,7 @@ export async function POST(request: Request): Promise<Response> {
       affiliate_url: affiliate,
       discount_rate: d.discountRate ?? null,
       sale_price: price,
-      deal_end_at: d.dealEndAt ?? dealEndAt,
+      deal_end_at: floorEnd(d.dealEndAt),
       is_soldout: !!d.isSoldout,
     });
   }
