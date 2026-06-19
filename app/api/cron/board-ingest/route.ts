@@ -21,8 +21,11 @@ export async function GET(request: Request): Promise<Response> {
     const rel = u.searchParams.get("release");
     const releaseOverride = rel ? Number(rel) : undefined;
     const reset = u.searchParams.get("reset") === "1";
+    const rep = u.searchParams.get("repackage");
+    const repackageBacklog = rep ? Number(rep) : undefined;
     const result = await runBoardIngest({
       ...(Number.isFinite(releaseOverride) ? { releaseOverride } : {}),
+      ...(Number.isFinite(repackageBacklog) ? { repackageBacklog } : {}),
       reset,
     });
     return Response.json({ ok: true, ...result });

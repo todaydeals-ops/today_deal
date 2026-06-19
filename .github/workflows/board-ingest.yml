@@ -1,0 +1,41 @@
+name: 핫딜 자동수집(드립)
+
+# 외부 스케줄러 — Vercel Hobby 크론은 1일 1회뿐이라 드립 게이트(약 40~110분)를 못 돌림.
+# 그래서 GitHub Actions가 board-ingest 엔드포인트를 주기 호출(수집→리라이트→드립 공개→활동 시뮬).
+# GitHub 스케줄러는 best-effort라 수십 분 지연 가능하지만, 드립 간격이 넉넉해 충분함.
+# (+ Actions 탭 'Run workflow' 버튼으로 수동 실행 — repackage 입력 시 기존 쿠팡 딜 일괄 재포장)
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      repackage:
+        description: "기존 쿠팡 딜 일괄 재포장 건수(0=안 함, 예: 100)"
+        default: "0"
+
+# 동시 실행 방지(이전 호출이 늦어져도 겹치지 않게)
+concurrency:
+  group: board-ingest
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: board-ingest 호출
+        env:
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+          REPACKAGE: ${{ github.event.inputs.repackage }}
+        run: |
+          if [ -z "$CRON_SECRET" ]; then
+            echo "CRON_SECRET 시크릿이 비어 있습니다. 레포 Settings → Secrets → Actions 에 등록하세요." >&2
+            exit 1
+          fi
+          URL="https://www.todaydeals.co.kr/api/cron/board-ingest?key=${CRON_SECRET}"
+          if [ -n "$REPACKAGE" ] && [ "$REPACKAGE" != "0" ]; then
+            URL="${URL}&repackage=${REPACKAGE}"
+          fi
+          # -f: HTTP 에러면 실패 처리 / 응답 본문만 출력(시크릿 노출 방지 위해 URL은 에코 안 함)
+          curl -fsS "$URL" | head -c 2000
+          echo

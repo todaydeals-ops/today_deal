@@ -6,6 +6,7 @@ import { categorize } from "./categorize";
 import { personaFor } from "./personas";
 import { rewriteDeal } from "./rewrite";
 import { releasePlan, nextGapMinutes, isActiveHour, activityBoost } from "./dripConfig";
+import { repackageDealUrl } from "./repackage";
 
 const MAX_REWRITE_PER_RUN = 12; // 회차당 신규 리라이트 상한(지연·비용 제어)
 
@@ -79,6 +80,7 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
   if (fresh.length === 0) return { collected: candidates.length, inserted: 0 };
 
   let skippedNoLink = 0;
+  let repackagedCount = 0;
   const mapped = await mapLimit(fresh, 4, async (c) => {
     // 먼저 글 속 "실제 딜" 추출 — 진짜 쇼핑몰 링크·이미지
     const meta = await fetchDealMeta(c.sourceUrl);
@@ -94,6 +96,10 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
     const category = c.forceCategory ?? categorize(c.title, c.category);
     const rw = await rewriteDeal({ title: c.title, body: c.body, shop: c.shop, price: c.price }, persona);
     const imageUrl = c.imageUrl ?? meta.image;
+    // 재포장: 쿠팡 링크면 원작성자 제휴태그 제거 + 우리 파트너스 링크로 교체(실패 시 원본 유지).
+    // 원본은 original_url에 기록으로 남기고, 클릭에 쓰이는 source_url만 교체.
+    const repackaged = await repackageDealUrl(meta.dealUrl);
+    if (repackaged) repackagedCount++;
     return {
       slug: c.slug,
       source: c.source,
@@ -104,7 +110,7 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
       price: c.price ?? null,
       shipping: c.shipping ?? null,
       image_url: imageUrl ?? null,
-      source_url: meta.dealUrl,
+      source_url: repackaged ?? meta.dealUrl,
       original_url: meta.dealUrl,
       body: rw.body || null,
       author: persona.nick,
@@ -113,6 +119,7 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
   });
   const rows = mapped.filter((r): r is NonNullable<typeof r> => r !== null);
   _debug.skippedNoLink = skippedNoLink;
+  _debug.repackaged = repackagedCount;
   if (rows.length === 0) return { collected: candidates.length, inserted: 0 };
 
   const { error } = await sb.from("board_deals").upsert(rows, { onConflict: "slug" });
@@ -219,6 +226,35 @@ async function simulateActivity(sb: NonNullable<ReturnType<typeof getSupabaseAdm
   return { viewed, liked };
 }
 
+// 기존 게시분 일괄 재포장 — 아직 원작성자 링크인 쿠팡 딜(source_url == original_url)을
+// 우리 파트너스 링크로 교체. 멱등: 한 번 교체되면 source_url != original_url 이라 재처리 안 됨.
+async function repackageBacklog(
+  sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>,
+  limit: number
+): Promise<number> {
+  if (limit <= 0) return 0;
+  const { data } = await sb
+    .from("board_deals")
+    .select("id, source_url, original_url")
+    .ilike("source_url", "%coupang.com%")
+    .order("created_at", { ascending: false })
+    .limit(Math.min(limit, 100));
+  const rows = (data as { id: string; source_url: string; original_url: string | null }[]) ?? [];
+  let n = 0;
+  for (const r of rows) {
+    // 이미 재포장된 행(source_url != original_url)은 건너뜀
+    if (r.original_url && r.source_url !== r.original_url) continue;
+    const ours = await repackageDealUrl(r.source_url);
+    if (!ours) continue;
+    const { error } = await sb
+      .from("board_deals")
+      .update({ source_url: ours, original_url: r.original_url ?? r.source_url })
+      .eq("id", r.id);
+    if (!error) n++;
+  }
+  return n;
+}
+
 // 크롤/자동시딩 글만 삭제(유저 제보·관리자 글 보존). reset 테스트용.
 async function resetCrawl(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): Promise<number> {
   let n = 0;
@@ -233,15 +269,16 @@ async function resetCrawl(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>):
   return n;
 }
 
-export async function runBoardIngest(opts?: { releaseOverride?: number; reset?: boolean }): Promise<
-  Summary & { purged?: number; debug?: Record<string, unknown> }
+export async function runBoardIngest(opts?: { releaseOverride?: number; reset?: boolean; repackageBacklog?: number }): Promise<
+  Summary & { purged?: number; repackaged?: number; debug?: Record<string, unknown> }
 > {
   for (const k of Object.keys(_debug)) delete _debug[k];
   const sb = getSupabaseAdmin();
   if (!sb) return { collected: 0, inserted: 0, released: 0, viewed: 0, liked: 0 };
   const purged = opts?.reset ? await resetCrawl(sb) : 0;
+  const backfilled = opts?.repackageBacklog ? await repackageBacklog(sb, opts.repackageBacklog) : 0;
   const { collected, inserted } = await ingestNew(sb);
   const released = await releaseDrip(sb, opts?.releaseOverride);
   const { viewed, liked } = await simulateActivity(sb);
-  return { collected, inserted, released, viewed, liked, purged, debug: _debug };
+  return { collected, inserted, released, viewed, liked, purged, repackaged: backfilled, debug: _debug };
 }
