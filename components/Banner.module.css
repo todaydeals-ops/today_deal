@@ -95,6 +95,13 @@
   opacity: 0.9;
 }
 
+/* 게시판 배너 우측 큰 아이콘 */
+.bigIcon {
+  font-size: 64px;
+  color: var(--accent-deal);
+  opacity: 0.9;
+}
+
 @media (max-width: 640px) {
   .promo {
     padding: 20px;
@@ -102,7 +109,8 @@
   .title {
     font-size: 19px;
   }
-  .right .clock {
+  .right .clock,
+  .right .bigIcon {
     display: none;
   }
   .pct {

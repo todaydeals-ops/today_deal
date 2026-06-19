@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Banner from "@/components/Banner";
 import BoardSubmit from "@/components/BoardSubmit";
 import VoteButton from "@/components/VoteButton";
 import { fetchBoardDeals, BOARD_CATEGORIES, BOARD_TYPES, isBoardType, boardTypeLabel, nickFor } from "@/lib/data/board";
@@ -67,6 +68,8 @@ export default async function Board({ searchParams }: { searchParams: Promise<{ 
     <>
       <Header />
       <main className="wrap">
+        <Banner variant="board" boardType={type} />
+
         <div className={styles.head}>
           <h1 className={styles.title}>
             <i className={`ti ti-flame ${styles.titleIcon}`} /> {m.title.split(" — ")[0]}
