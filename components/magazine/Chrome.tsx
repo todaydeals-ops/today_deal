@@ -2,7 +2,8 @@
 import Link from "next/link";
 import { CORNERS, cornerOf } from "@/lib/magazine/corners";
 
-const mono = "'JetBrains Mono', monospace";
+// 단일 폰트 정책 — 과거 모노 자리도 Noto Sans KR로(라벨 느낌은 letterSpacing으로)
+const mono = "'Noto Sans KR', sans-serif";
 
 export function MagazineLogo({ size = "md" }: { size?: "sm" | "md" }) {
   const box = size === "md" ? 30 : 26;

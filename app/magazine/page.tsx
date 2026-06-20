@@ -6,7 +6,7 @@ import { MagazineHeader, MagazineFooter, CornerChip, FieldChip } from "@/compone
 
 export const dynamic = "force-dynamic";
 const SITE = "https://www.todaydeals.co.kr";
-const mono = "'JetBrains Mono', monospace";
+const mono = "'Noto Sans KR', sans-serif";
 
 export const metadata: Metadata = {
   title: "오늘의딜 매거진 — 팔지 않습니다, 방향만 드립니다",
