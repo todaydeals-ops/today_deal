@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { fetchArchiveSlugs } from "@/lib/data/deals";
 import { fetchCuratedSlugs } from "@/lib/data/curated";
 import { fetchBoardSlugs } from "@/lib/data/board";
+import { fetchMagazineSlugs } from "@/lib/data/magazine";
 
 const SITE = "https://www.todaydeals.co.kr";
 
@@ -19,9 +20,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE}/deals/ali`, lastModified: now, changeFrequency: "hourly", priority: 0.8 },
     { url: `${SITE}/recommended`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
     { url: `${SITE}/board`, lastModified: now, changeFrequency: "hourly", priority: 0.8 },
-    { url: `${SITE}/board?type=overseas`, lastModified: now, changeFrequency: "daily", priority: 0.7 },
-    { url: `${SITE}/board?type=free`, lastModified: now, changeFrequency: "daily", priority: 0.7 },
-    { url: `${SITE}/board?type=coupon`, lastModified: now, changeFrequency: "daily", priority: 0.7 },
+    { url: `${SITE}/board?type=event`, lastModified: now, changeFrequency: "daily", priority: 0.7 },
+    { url: `${SITE}/magazine`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
     { url: `${SITE}/giveaway`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE}/terms`, lastModified: now, changeFrequency: "monthly", priority: 0.3 },
     { url: `${SITE}/privacy`, lastModified: now, changeFrequency: "monthly", priority: 0.3 },
@@ -55,5 +55,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  return [...base, ...curatedPages, ...boardPages, ...dealPages];
+  // 매거진(중립 쇼핑 가이드) 글 — 에버그린, 우선순위 높게
+  const mag = await fetchMagazineSlugs(2000);
+  const magazinePages: MetadataRoute.Sitemap = mag.map((s) => ({
+    url: `${SITE}/magazine/${s}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  return [...base, ...magazinePages, ...curatedPages, ...boardPages, ...dealPages];
 }

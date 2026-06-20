@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{ box-sizing:border-box; }
+  body{ margin:0; }
+  .h-lift{ transition:transform .2s ease, box-shadow .2s ease; }
+  .h-lift:hover{ transform:translateY(-3px); box-shadow:0 10px 26px rgba(0,0,0,.12); }
+</style>
+</helmet>
+
+<div style="width:max-content; min-width:100%; min-height:100vh; box-sizing:border-box; padding:48px; background:#ece8e1; font-family:'Noto Sans KR',sans-serif;">
+
+  <!-- legend -->
+  <div style="margin-bottom:40px;">
+    <div style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:2px; text-transform:uppercase; color:#9a958c;">Neutral Shopping Guide · Magazine System</div>
+    <div style="font-size:30px; font-weight:800; color:#1a1a1a; margin-top:6px; letter-spacing:-0.6px;">오늘의딜 매거진 — 디벨롭 시안</div>
+    <div style="font-size:13px; color:#76726b; margin-top:8px; font-family:'JetBrains Mono',monospace;">팔지 않습니다, 방향만 드립니다 · CI #FF5A3C · 정직성 배지 + 5코너 + 시그니처 컴포넌트</div>
+  </div>
+
+  <div style="display:flex; align-items:flex-start; gap:48px;">
+
+    <!-- ============== FRAME 1 : 시스템 (배지 + 5코너) ============== -->
+    <div style="flex:none; width:600px;">
+      <div style="font-size:17px; font-weight:800; color:#1a1a1a; margin-bottom:4px;">① 코너 시스템 + 정직성 배지</div>
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:1px; color:#9a958c; margin-bottom:16px;">VISUAL IDENTITY · §2 + §3</div>
+
+      <div style="background:#fff; border-radius:4px; box-shadow:0 1px 3px rgba(0,0,0,.1); overflow:hidden; padding:34px 32px 38px;">
+
+        <!-- slogan -->
+        <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#ff5a3c; font-weight:600;">Slogan</div>
+        <div style="font-size:26px; font-weight:900; color:#1a1a1a; letter-spacing:-0.8px; margin-top:8px;">팔지 않습니다,<br>방향만 드립니다.</div>
+
+        <!-- honesty badge -->
+        <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:1px; color:#9a958c; margin:30px 0 12px;">정직성 배지 — 모든 글 상단 고정</div>
+        <div style="border:1px solid #e7e2d9; background:#faf8f5; border-radius:12px; padding:16px 18px; display:flex; align-items:center; gap:14px;">
+          <span style="width:38px; height:38px; border-radius:9999px; border:2px solid #ff5a3c; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#ff5a3c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div>
+            <div style="font-size:13.5px; font-weight:700; color:#1a1a1a; line-height:1.5;">이 글은 끝까지 읽어도 특정 제품을 추천하지 않습니다.</div>
+            <div style="font-size:12.5px; color:#76726b; line-height:1.5; margin-top:2px;">소비자의 바른 선택, 그 방향만 제시합니다.</div>
+          </div>
+          <span style="margin-left:auto; flex:none; font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:600; letter-spacing:.5px; color:#ff5a3c; border:1px solid #f7c9ba; border-radius:9999px; padding:4px 9px;">AD-FREE</span>
+        </div>
+
+        <!-- 5 corners -->
+        <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:1px; color:#9a958c; margin:30px 0 12px;">5 코너 — 형식 브랜드</div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+
+          <div class="h-lift" style="display:flex; align-items:center; gap:14px; border:1px solid #e7e2d9; border-radius:12px; padding:13px 15px; cursor:pointer;">
+            <span style="width:40px; height:40px; border-radius:10px; background:#e3efee; color:#1f6b66; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="10" cy="10" r="6.5" stroke="currentColor" stroke-width="2"/><line x1="15" y1="15" x2="20" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            <div style="flex:1;"><div style="display:flex; align-items:center; gap:8px;"><span style="font-size:15px; font-weight:800; color:#1a1a1a;">팩트체크</span><span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#1f6b66; font-weight:600; letter-spacing:.5px;">FACT CHECK</span></div><div style="font-size:12.5px; color:#76726b; margin-top:2px;">광고 너머의 진실·숨은 단점</div></div>
+          </div>
+
+          <div class="h-lift" style="display:flex; align-items:center; gap:14px; border:1px solid #e7e2d9; border-radius:12px; padding:13px 15px; cursor:pointer;">
+            <span style="width:40px; height:40px; border-radius:10px; background:#ffe9e2; color:#e0481f; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><polygon points="12,7 14.2,12 12,17 9.8,12" fill="currentColor"/></svg></span>
+            <div style="flex:1;"><div style="display:flex; align-items:center; gap:8px;"><span style="font-size:15px; font-weight:800; color:#1a1a1a;">스마트가이드</span><span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#e0481f; font-weight:600; letter-spacing:.5px;">SMART GUIDE</span></div><div style="font-size:12.5px; color:#76726b; margin-top:2px;">내 상황엔 뭘 골라야? · Decision Tree</div></div>
+          </div>
+
+          <div class="h-lift" style="display:flex; align-items:center; gap:14px; border:1px solid #e7e2d9; border-radius:12px; padding:13px 15px; cursor:pointer;">
+            <span style="width:40px; height:40px; border-radius:10px; background:#e9edf7; color:#38539a; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="4" y="12" width="4" height="8" rx="1" fill="currentColor"/><rect x="10" y="6" width="4" height="14" rx="1" fill="currentColor"/><rect x="16" y="9" width="4" height="11" rx="1" fill="currentColor"/></svg></span>
+            <div style="flex:1;"><div style="display:flex; align-items:center; gap:8px;"><span style="font-size:15px; font-weight:800; color:#1a1a1a;">끝장비교</span><span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#38539a; font-weight:600; letter-spacing:.5px;">VS COMPARE</span></div><div style="font-size:12.5px; color:#76726b; margin-top:2px;">A vs B, 3년 총비용까지</div></div>
+          </div>
+
+          <div class="h-lift" style="display:flex; align-items:center; gap:14px; border:1px solid #e7e2d9; border-radius:12px; padding:13px 15px; cursor:pointer;">
+            <span style="width:40px; height:40px; border-radius:10px; background:#f1ecdf; color:#7a5f2e; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6a5 5 0 0 1-6.5 6.5L7 19l-2-2 6.5-6.5A5 5 0 0 1 18 4l-2.5 2.5 2 2L20 6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+            <div style="flex:1;"><div style="display:flex; align-items:center; gap:8px;"><span style="font-size:15px; font-weight:800; color:#1a1a1a;">롱런팁</span><span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#7a5f2e; font-weight:600; letter-spacing:.5px;">LONG-RUN</span></div><div style="font-size:12.5px; color:#76726b; margin-top:2px;">본전 뽑고 오래 쓰는 법</div></div>
+          </div>
+
+          <div class="h-lift" style="display:flex; align-items:center; gap:14px; border:1px solid #e7e2d9; border-radius:12px; padding:13px 15px; cursor:pointer;">
+            <span style="width:40px; height:40px; border-radius:10px; background:#efe7f5; color:#6e4690; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M10 3v6l-5 8.5A1.5 1.5 0 0 0 6.3 20h11.4a1.5 1.5 0 0 0 1.3-2.5L14 9V3" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><line x1="9" y1="3" x2="15" y2="3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <div style="flex:1;"><div style="display:flex; align-items:center; gap:8px;"><span style="font-size:15px; font-weight:800; color:#1a1a1a;">트렌드랩</span><span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#6e4690; font-weight:600; letter-spacing:.5px;">TREND LAB</span></div><div style="font-size:12.5px; color:#76726b; margin-top:2px;">신기술, 살 가치 있나?</div></div>
+          </div>
+        </div>
+
+        <!-- 분야 tags -->
+        <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:1px; color:#9a958c; margin:28px 0 12px;">분야 태그 — 코너와 교차</div>
+        <div style="display:flex; flex-wrap:wrap; gap:8px;">
+          <span style="font-size:12px; font-weight:500; color:#46433d; background:#f1ede6; border-radius:9999px; padding:7px 14px;">가전</span>
+          <span style="font-size:12px; font-weight:500; color:#46433d; background:#f1ede6; border-radius:9999px; padding:7px 14px;">리빙·주방</span>
+          <span style="font-size:12px; font-weight:500; color:#46433d; background:#f1ede6; border-radius:9999px; padding:7px 14px;">디지털·IT</span>
+          <span style="font-size:12px; font-weight:500; color:#46433d; background:#f1ede6; border-radius:9999px; padding:7px 14px;">식품·건강</span>
+          <span style="font-size:12px; font-weight:500; color:#46433d; background:#f1ede6; border-radius:9999px; padding:7px 14px;">뷰티</span>
+          <span style="font-size:12px; font-weight:500; color:#46433d; background:#f1ede6; border-radius:9999px; padding:7px 14px;">유아·반려</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============== FRAME 2 : MAIN ============== -->
+    <div style="flex:none; width:940px;">
+      <div style="font-size:17px; font-weight:800; color:#1a1a1a; margin-bottom:4px;">② 매거진 메인</div>
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:1px; color:#9a958c; margin-bottom:16px;">HOME · 코너 내비 + 최신 가이드</div>
+
+      <div style="background:#fff; border-radius:4px; box-shadow:0 1px 3px rgba(0,0,0,.1); overflow:hidden;">
+        <!-- header -->
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:18px 30px; border-bottom:1px solid #efece7;">
+          <span style="display:flex; align-items:center; gap:9px;">
+            <span style="width:30px; height:30px; border-radius:9px; background:#ff5a3c; display:flex; align-items:center; justify-content:center;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="2.4"/><path d="M12 7.2V12l3.1 2" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+            <span style="font-weight:800; font-size:19px; color:#1a1a1a; letter-spacing:-0.5px;">오늘의딜<span style="color:#ff5a3c;">.</span></span>
+            <span style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:1.5px; color:#1a1a1a; font-weight:600; border-left:1px solid #e2ddd4; padding-left:11px; margin-left:4px;">MAGAZINE</span>
+          </span>
+          <nav style="display:flex; gap:18px; font-size:12.5px; font-weight:500; color:#6f6b64;"><span style="color:#1f6b66; font-weight:700;">팩트체크</span><span style="color:#e0481f; font-weight:700;">스마트가이드</span><span style="color:#38539a; font-weight:700;">끝장비교</span><span style="color:#7a5f2e; font-weight:700;">롱런팁</span><span style="color:#6e4690; font-weight:700;">트렌드랩</span></nav>
+        </div>
+
+        <!-- masthead slogan -->
+        <div style="padding:30px 30px 24px; border-bottom:1px solid #efece7; display:flex; align-items:flex-end; justify-content:space-between; gap:24px;">
+          <div>
+            <div style="font-size:32px; font-weight:900; color:#1a1a1a; letter-spacing:-1px; line-height:1.2;">팔지 않습니다, 방향만 드립니다.</div>
+            <div style="font-size:14px; color:#6f6b64; line-height:1.7; margin-top:10px; max-width:560px;">광고·제휴 없이 <b style="font-weight:700; color:#1a1a1a;">구매 판단의 기준만</b> 드리는 중립 쇼핑 가이드. "지금 싸요"가 아니라 "이건 이렇게 고르세요".</div>
+          </div>
+          <span style="flex:none; font-family:'JetBrains Mono',monospace; font-size:10.5px; font-weight:600; letter-spacing:.5px; color:#ff5a3c; border:1px solid #f7c9ba; border-radius:9999px; padding:6px 12px; white-space:nowrap;">무광고 · 무제휴</span>
+        </div>
+
+        <!-- featured guide -->
+        <div style="padding:26px 30px 10px;">
+          <div class="h-lift" style="display:grid; grid-template-columns:1.3fr 1fr; gap:0; border:1px solid #e7e2d9; border-radius:16px; overflow:hidden; cursor:pointer;">
+            <div style="padding:26px 28px;">
+              <div style="display:flex; align-items:center; gap:8px;">
+                <span style="font-family:'JetBrains Mono',monospace; font-size:10.5px; font-weight:700; letter-spacing:.5px; color:#38539a; background:#e9edf7; border-radius:6px; padding:4px 9px;">끝장비교</span>
+                <span style="font-size:11.5px; font-weight:500; color:#46433d; background:#f1ede6; border-radius:9999px; padding:4px 11px;">리빙·주방</span>
+              </div>
+              <h3 style="font-size:25px; font-weight:800; color:#1a1a1a; letter-spacing:-0.6px; line-height:1.3; margin:14px 0 0;">음식물처리기, 미생물 vs 건조분쇄 vs 건조기</h3>
+              <p style="font-size:14px; color:#6f6b64; line-height:1.7; margin:10px 0 0;">방식마다 처리 원리도, 3년을 쓰는 총비용도 다릅니다. 광고가 안 알려주는 유지비까지 계산해 비교했습니다.</p>
+              <div style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#9a958c; margin-top:18px;">편집국 · 2026.06.20 · 읽기 9분</div>
+            </div>
+            <div style="background:linear-gradient(135deg,#f1ede6,#e3ddd2); display:flex; align-items:center; justify-content:center; font-family:'JetBrains Mono',monospace; font-size:11px; color:#b0aaa0;">대표 이미지 / 비교표 썸네일</div>
+          </div>
+        </div>
+
+        <!-- latest guides -->
+        <div style="padding:24px 30px 30px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:16px;"><span style="width:8px; height:8px; background:#ff5a3c; border-radius:2px;"></span><span style="font-weight:800; font-size:16px; color:#1a1a1a;">최신 가이드</span></div>
+          <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:18px;">
+            <div class="h-lift" style="border:1px solid #e7e2d9; border-radius:14px; overflow:hidden; cursor:pointer;">
+              <div style="height:118px; background:#f4f1ec; display:flex; align-items:center; justify-content:center; font-family:'JetBrains Mono',monospace; font-size:10px; color:#b6b1a8;">썸네일</div>
+              <div style="padding:14px 16px 16px;"><div style="display:flex; gap:6px; align-items:center;"><span style="font-family:'JetBrains Mono',monospace; font-size:9.5px; font-weight:700; color:#1f6b66; background:#e3efee; border-radius:5px; padding:3px 7px;">팩트체크</span><span style="font-size:10.5px; color:#8a857c;">가전</span></div><div style="font-size:14.5px; font-weight:700; color:#1a1a1a; line-height:1.4; margin-top:9px; letter-spacing:-0.3px;">‘초미세먼지 99.9%’ 광고, 어디까지 진짜일까</div></div>
+            </div>
+            <div class="h-lift" style="border:1px solid #e7e2d9; border-radius:14px; overflow:hidden; cursor:pointer;">
+              <div style="height:118px; background:#f4f1ec; display:flex; align-items:center; justify-content:center; font-family:'JetBrains Mono',monospace; font-size:10px; color:#b6b1a8;">썸네일</div>
+              <div style="padding:14px 16px 16px;"><div style="display:flex; gap:6px; align-items:center;"><span style="font-family:'JetBrains Mono',monospace; font-size:9.5px; font-weight:700; color:#e0481f; background:#ffe9e2; border-radius:5px; padding:3px 7px;">스마트가이드</span><span style="font-size:10.5px; color:#8a857c;">디지털</span></div><div style="font-size:14.5px; font-weight:700; color:#1a1a1a; line-height:1.4; margin-top:9px; letter-spacing:-0.3px;">노트북, 내 작업엔 몇 인치가 맞을까</div></div>
+            </div>
+            <div class="h-lift" style="border:1px solid #e7e2d9; border-radius:14px; overflow:hidden; cursor:pointer;">
+              <div style="height:118px; background:#f4f1ec; display:flex; align-items:center; justify-content:center; font-family:'JetBrains Mono',monospace; font-size:10px; color:#b6b1a8;">썸네일</div>
+              <div style="padding:14px 16px 16px;"><div style="display:flex; gap:6px; align-items:center;"><span style="font-family:'JetBrains Mono',monospace; font-size:9.5px; font-weight:700; color:#7a5f2e; background:#f1ecdf; border-radius:5px; padding:3px 7px;">롱런팁</span><span style="font-size:10.5px; color:#8a857c;">리빙·주방</span></div><div style="font-size:14.5px; font-weight:700; color:#1a1a1a; line-height:1.4; margin-top:9px; letter-spacing:-0.3px;">로봇청소기, 3년 멀쩡히 쓰는 관리 루틴</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:#faf8f5; border-top:1px solid #efece7; padding:20px 30px; display:flex; align-items:center; justify-content:space-between;">
+          <span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#9a958c; letter-spacing:.5px;">오늘의딜 매거진 · 광고·제휴 없이 운영됩니다</span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b1a8;">© 2026 TODAYDEALS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============== FRAME 3 : DETAIL ============== -->
+    <div style="flex:none; width:940px;">
+      <div style="font-size:17px; font-weight:800; color:#1a1a1a; margin-bottom:4px;">③ 가이드 상세 — 끝장비교</div>
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:1px; color:#9a958c; margin-bottom:16px;">ARTICLE · 배지 + Decision Tree + 비교표 + 유지비 매트릭스 + 체크리스트</div>
+
+      <div style="background:#fff; border-radius:4px; box-shadow:0 1px 3px rgba(0,0,0,.1); overflow:hidden;">
+        <!-- header -->
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:16px 30px; border-bottom:1px solid #efece7;">
+          <span style="display:flex; align-items:center; gap:9px;"><span style="width:26px; height:26px; border-radius:8px; background:#ff5a3c; display:flex; align-items:center; justify-content:center;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="2.4"/><path d="M12 7.2V12l3.1 2" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></span><span style="font-weight:800; font-size:17px; color:#1a1a1a; letter-spacing:-0.5px;">오늘의딜<span style="color:#ff5a3c;">.</span></span><span style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:1.5px; color:#1a1a1a; font-weight:600; border-left:1px solid #e2ddd4; padding-left:9px;">MAGAZINE</span></span>
+          <nav style="display:flex; gap:16px; font-size:12px; font-weight:700; color:#6f6b64;"><span style="color:#1f6b66;">팩트체크</span><span style="color:#38539a;">끝장비교</span><span style="color:#7a5f2e;">롱런팁</span></nav>
+        </div>
+
+        <div style="max-width:720px; margin:0 auto; padding:34px 30px 44px;">
+          <!-- corner + 분야 -->
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; letter-spacing:.5px; color:#38539a; background:#e9edf7; border-radius:6px; padding:5px 11px;">끝장비교</span>
+            <span style="font-size:12px; font-weight:500; color:#46433d; background:#f1ede6; border-radius:9999px; padding:5px 12px;">리빙·주방</span>
+          </div>
+          <h1 style="font-size:33px; font-weight:900; color:#1a1a1a; letter-spacing:-1px; line-height:1.3; margin:14px 0 0;">음식물처리기, 미생물 vs 건조분쇄 vs 건조기<br>3년을 쓰면 뭐가 진짜 쌀까</h1>
+          <div style="display:flex; align-items:center; gap:12px; margin-top:16px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#9a958c;"><span>편집국</span><span>·</span><span>2026.06.20</span><span>·</span><span>읽기 9분</span></div>
+
+          <!-- HONESTY BADGE -->
+          <div style="border:1px solid #e7e2d9; background:#faf8f5; border-radius:12px; padding:14px 16px; display:flex; align-items:center; gap:13px; margin:22px 0 28px;">
+            <span style="width:34px; height:34px; border-radius:9999px; border:2px solid #ff5a3c; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#ff5a3c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div><div style="font-size:13px; font-weight:700; color:#1a1a1a; line-height:1.5;">이 글은 끝까지 읽어도 특정 제품을 추천하지 않습니다.</div><div style="font-size:12px; color:#76726b; line-height:1.5;">소비자의 바른 선택, 그 방향만 제시합니다.</div></div>
+            <span style="margin-left:auto; flex:none; font-family:'JetBrains Mono',monospace; font-size:9.5px; font-weight:600; color:#ff5a3c; border:1px solid #f7c9ba; border-radius:9999px; padding:4px 8px;">AD-FREE</span>
+          </div>
+
+          <!-- 공감 도입 -->
+          <p style="font-size:16px; color:#33312d; line-height:1.85; margin:0;">매일 나오는 음식물 쓰레기, 처리기 하나면 끝날 것 같지만 막상 검색하면 ‘미생물·건조분쇄·건조’ 방식이 뒤섞여 더 헷갈립니다. 광고는 저마다 ‘최고’라는데, 정작 <b style="font-weight:700;">3년을 쓰는 총비용</b>은 아무도 알려주지 않죠. 그래서 직접 계산했습니다.</p>
+
+          <!-- DECISION TREE -->
+          <div style="border:1px solid #e7e2d9; border-radius:16px; padding:24px; margin:28px 0; background:#fcfbf9;">
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:18px;"><span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; letter-spacing:1px; color:#e0481f;">DECISION TREE</span><span style="font-size:13px; font-weight:700; color:#1a1a1a;">내 상황엔 어떤 방식?</span></div>
+            <!-- Q1 -->
+            <div style="background:#ff5a3c; color:#fff; border-radius:10px; padding:13px 16px; font-size:14px; font-weight:700;">Q1. 하루 세 끼 대부분 집에서 드시나요?</div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:12px;">
+              <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+                <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; color:#1f6b66;">YES ↓</span>
+                <div style="width:100%; text-align:center; border:1.5px solid #1f6b66; color:#1f6b66; background:#e3efee; border-radius:9px; padding:12px; font-size:13.5px; font-weight:700;">미생물 방식<br><span style="font-weight:500; font-size:11.5px; color:#3f7f7a;">잔여물 적고 조용함</span></div>
+              </div>
+              <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+                <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; color:#9a958c;">NO ↓</span>
+                <div style="width:100%; background:#1a1a1a; color:#fff; border-radius:9px; padding:12px 14px; font-size:13.5px; font-weight:700;">Q2. 싱크대 배관 공사가 가능한가요?</div>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; width:100%; margin-top:2px;">
+                  <div style="text-align:center; border:1.5px solid #38539a; color:#38539a; background:#e9edf7; border-radius:9px; padding:10px 6px; font-size:12px; font-weight:700;">YES<br>분쇄·배수</div>
+                  <div style="text-align:center; border:1.5px solid #7a5f2e; color:#7a5f2e; background:#f1ecdf; border-radius:9px; padding:10px 6px; font-size:12px; font-weight:700;">NO<br>건조·분쇄</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 style="font-size:21px; font-weight:800; color:#1a1a1a; margin:30px 0 14px; letter-spacing:-0.4px;">방식별 끝장비교</h2>
+          <!-- COMPARISON TABLE -->
+          <div style="border:1px solid #e7e2d9; border-radius:12px; overflow:hidden;">
+            <div style="display:grid; grid-template-columns:0.9fr 1fr 1fr 1fr; background:#1a1a1a; color:#fff; font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.3px;"><div style="padding:11px 13px;">구분</div><div style="padding:11px 13px;">미생물</div><div style="padding:11px 13px;">건조·분쇄</div><div style="padding:11px 13px;">건조기</div></div>
+            <div style="display:grid; grid-template-columns:0.9fr 1fr 1fr 1fr; border-top:1px solid #efece7; font-size:12.5px;"><div style="padding:11px 13px; font-weight:700; color:#1a1a1a;">처리 원리</div><div style="padding:11px 13px; color:#46433d;">미생물 분해</div><div style="padding:11px 13px; color:#46433d;">건조 후 분쇄</div><div style="padding:11px 13px; color:#46433d;">열풍 건조</div></div>
+            <div style="display:grid; grid-template-columns:0.9fr 1fr 1fr 1fr; border-top:1px solid #efece7; font-size:12.5px; background:#faf8f5;"><div style="padding:11px 13px; font-weight:700; color:#1a1a1a;">소음</div><div style="padding:11px 13px; color:#46433d;">낮음</div><div style="padding:11px 13px; color:#46433d;">중간</div><div style="padding:11px 13px; color:#46433d;">중간</div></div>
+            <div style="display:grid; grid-template-columns:0.9fr 1fr 1fr 1fr; border-top:1px solid #efece7; font-size:12.5px;"><div style="padding:11px 13px; font-weight:700; color:#1a1a1a;">설치</div><div style="padding:11px 13px; color:#46433d;">간편</div><div style="padding:11px 13px; color:#46433d;">배관 공사</div><div style="padding:11px 13px; color:#46433d;">간편</div></div>
+            <div style="display:grid; grid-template-columns:0.9fr 1fr 1fr 1fr; border-top:1px solid #efece7; font-size:12.5px; background:#faf8f5;"><div style="padding:11px 13px; font-weight:700; color:#1a1a1a;">소모품</div><div style="padding:11px 13px; color:#46433d;">미생물제</div><div style="padding:11px 13px; color:#46433d;">칼날·필터</div><div style="padding:11px 13px; color:#46433d;">탈취 필터</div></div>
+          </div>
+
+          <h2 style="font-size:21px; font-weight:800; color:#1a1a1a; margin:30px 0 6px; letter-spacing:-0.4px;">3년 유지비 매트릭스</h2>
+          <p style="font-size:13px; color:#8a857c; margin:0 0 16px;">제조사 공개 스펙(소비전력·소모품 교체주기) 기준 <b style="font-weight:700; color:#6f6b64;">추정치</b> · 실사용 환경에 따라 달라집니다.</p>
+          <!-- MAINTENANCE MATRIX -->
+          <div style="border:1px solid #e7e2d9; border-radius:12px; padding:20px 22px; display:flex; flex-direction:column; gap:18px;">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:7px;"><span style="font-size:13.5px; font-weight:700; color:#1a1a1a;">미생물</span><span style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:#1a1a1a;">약 16만원</span></div>
+              <div style="display:flex; height:22px; border-radius:5px; overflow:hidden; background:#f1ede6;"><div style="width:31%; background:#1f6b66;"></div><div style="width:69%; background:#7fb3ae;"></div></div>
+              <div style="display:flex; gap:14px; margin-top:6px; font-family:'JetBrains Mono',monospace; font-size:10.5px; color:#76726b;"><span><span style="color:#1f6b66;">■</span> 전기 5만</span><span><span style="color:#7fb3ae;">■</span> 미생물제 11만</span></div>
+            </div>
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:7px;"><span style="font-size:13.5px; font-weight:700; color:#1a1a1a;">건조·분쇄</span><span style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:#ff5a3c;">약 23만원</span></div>
+              <div style="display:flex; height:22px; border-radius:5px; overflow:hidden; background:#f1ede6;"><div style="width:61%; background:#38539a;"></div><div style="width:39%; background:#9aa9d4;"></div></div>
+              <div style="display:flex; gap:14px; margin-top:6px; font-family:'JetBrains Mono',monospace; font-size:10.5px; color:#76726b;"><span><span style="color:#38539a;">■</span> 전기 14만</span><span><span style="color:#9aa9d4;">■</span> 칼날·필터 9만</span></div>
+            </div>
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:7px;"><span style="font-size:13.5px; font-weight:700; color:#1a1a1a;">건조기</span><span style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:#1a1a1a;">약 16만원</span></div>
+              <div style="display:flex; height:22px; border-radius:5px; overflow:hidden; background:#f1ede6;"><div style="width:63%; background:#7a5f2e;"></div><div style="width:37%; background:#c4b083;"></div></div>
+              <div style="display:flex; gap:14px; margin-top:6px; font-family:'JetBrains Mono',monospace; font-size:10.5px; color:#76726b;"><span><span style="color:#7a5f2e;">■</span> 전기 10만</span><span><span style="color:#c4b083;">■</span> 필터 6만</span></div>
+            </div>
+          </div>
+
+          <!-- CHECKLIST -->
+          <h2 style="font-size:21px; font-weight:800; color:#1a1a1a; margin:30px 0 14px; letter-spacing:-0.4px;">사기 전 체크리스트</h2>
+          <div style="border:1px solid #e7e2d9; border-radius:12px; padding:8px 20px;">
+            <div style="display:flex; align-items:center; gap:12px; padding:13px 0; border-bottom:1px solid #f1ede6;"><span style="width:20px; height:20px; border:2px solid #ff5a3c; border-radius:5px; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#ff5a3c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span style="font-size:14px; color:#33312d;">우리 집 하루 음식물 배출량(소형/대형)을 확인했다</span></div>
+            <div style="display:flex; align-items:center; gap:12px; padding:13px 0; border-bottom:1px solid #f1ede6;"><span style="width:20px; height:20px; border:2px solid #ff5a3c; border-radius:5px; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#ff5a3c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span style="font-size:14px; color:#33312d;">소모품(미생물제·필터) 연간 비용을 더해봤다</span></div>
+            <div style="display:flex; align-items:center; gap:12px; padding:13px 0; border-bottom:1px solid #f1ede6;"><span style="width:20px; height:20px; border:2px solid #ff5a3c; border-radius:5px; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#ff5a3c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span style="font-size:14px; color:#33312d;">설치 공간·배관 조건을 미리 쟀다</span></div>
+            <div style="display:flex; align-items:center; gap:12px; padding:13px 0;"><span style="width:20px; height:20px; border:2px solid #ff5a3c; border-radius:5px; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#ff5a3c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span style="font-size:14px; color:#33312d;">A/S·소음 관련 실사용 후기의 ‘반복되는 불만’을 확인했다</span></div>
+          </div>
+
+          <!-- 정직한 마무리 -->
+          <div style="margin-top:30px; padding:22px 24px; background:#1a1a1a; border-radius:14px;">
+            <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:1px; color:#ff8a6f; font-weight:600; margin-bottom:8px;">정직한 마무리</div>
+            <p style="font-size:15px; color:#f3efe9; line-height:1.8; margin:0; font-weight:500;">‘최고의 방식’은 없습니다. 집밥이 잦고 조용함이 중요하면 미생물, 유지비 부담이 싫고 설치가 자유로우면 건조기 쪽이 합리적입니다. <b style="font-weight:800; color:#fff;">선택은 당신의 몫입니다.</b></p>
+          </div>
+        </div>
+
+        <div style="background:#faf8f5; border-top:1px solid #efece7; padding:18px 30px; display:flex; justify-content:space-between;"><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#9a958c;">오늘의딜 매거진 · 광고·제휴 없이 운영됩니다</span><span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#b6b1a8;">© 2026 TODAYDEALS</span></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+</body>
+</html>
