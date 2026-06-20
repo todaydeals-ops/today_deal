@@ -7,6 +7,11 @@
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
 }
 
+/* 헤더 내비 — 단색(잡다한 컬러 X), hover 시에만 브랜드 오렌지 */
+.mz-nav:hover {
+  color: #ff5a3c !important;
+}
+
 /* 본문 — 엔진/시드가 인라인 스타일을 줘도, 없을 때의 기본값 보장 */
 .mz-body > p {
   margin: 16px 0;

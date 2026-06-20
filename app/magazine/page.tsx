@@ -10,7 +10,7 @@ const mono = "'JetBrains Mono', monospace";
 
 export const metadata: Metadata = {
   title: "오늘의딜 매거진 — 팔지 않습니다, 방향만 드립니다",
-  description: "광고·제휴 없이 구매 판단의 기준만 드리는 중립 쇼핑 가이드. '지금 싸요'가 아니라 '이건 이렇게 고르세요'.",
+  description: "광고도 제휴도 받지 않는 중립 쇼핑 가이드. 더 나은 선택에 필요한 기준과 근거만 정리합니다. 판단은 당신의 몫입니다.",
   alternates: { canonical: `${SITE}/magazine` },
   openGraph: { title: "오늘의딜 매거진 — 중립 쇼핑 가이드", description: "광고·제휴 없이 구매 판단의 기준만.", url: `${SITE}/magazine`, type: "website" },
 };
@@ -49,7 +49,7 @@ export default async function MagazineHome({ searchParams }: { searchParams: Pro
           <div>
             <h1 style={{ fontSize: 32, fontWeight: 900, color: "#1a1a1a", letterSpacing: "-1px", lineHeight: 1.2, margin: 0 }}>{MAGAZINE_SLOGAN}</h1>
             <p style={{ fontSize: 14, color: "#6f6b64", lineHeight: 1.7, marginTop: 10, maxWidth: 560 }}>
-              광고·제휴 없이 <b style={{ fontWeight: 700, color: "#1a1a1a" }}>구매 판단의 기준만</b> 드리는 중립 쇼핑 가이드. "지금 싸요"가 아니라 "이건 이렇게 고르세요".
+              광고도 제휴도 받지 않습니다. 더 나은 선택에 필요한 <b style={{ fontWeight: 700, color: "#1a1a1a" }}>기준과 근거</b>만 정리해 드립니다. 판단은, 언제나 당신의 몫입니다.
             </p>
           </div>
           <span style={{ flex: "none", fontFamily: mono, fontSize: 10.5, fontWeight: 600, letterSpacing: ".5px", color: "#ff5a3c", border: "1px solid #f7c9ba", borderRadius: 9999, padding: "6px 12px", whiteSpace: "nowrap" }}>무광고 · 무제휴</span>

@@ -31,9 +31,9 @@ export function MagazineHeader({ small = false }: { small?: boolean }) {
   return (
     <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: small ? "16px 30px" : "18px 30px", borderBottom: "1px solid #efece7" }}>
       <MagazineLogo size={small ? "sm" : "md"} />
-      <nav style={{ display: "flex", gap: 16, fontSize: 12.5, fontWeight: 700 }}>
+      <nav style={{ display: "flex", gap: 18, fontSize: 12.5, fontWeight: 600 }}>
         {CORNERS.map((c) => (
-          <Link key={c.key} href={`/magazine?corner=${c.key}`} style={{ color: c.color, textDecoration: "none" }}>
+          <Link key={c.key} href={`/magazine?corner=${c.key}`} className="mz-nav" style={{ color: "#46433d", textDecoration: "none" }}>
             {c.name}
           </Link>
         ))}
