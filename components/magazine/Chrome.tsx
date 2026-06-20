@@ -82,9 +82,8 @@ export function FieldChip({ field }: { field?: string }) {
 
 // 타이포 커버 — AI/스톡 이미지 대신 쓰는 데이터형 표지
 export function CoverPanel({ cornerKey, headline, height = 180, big = 26 }: { cornerKey: string; headline: string; height?: number; big?: number }) {
-  const c = cornerOf(cornerKey);
   return (
-    <div style={{ height: "100%", minHeight: height, background: "#faf8f5", borderLeft: `3px solid ${c.color}`, display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "16px 18px", boxSizing: "border-box" }}>
+    <div style={{ height: "100%", minHeight: height, background: "#faf8f5", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "16px 18px", boxSizing: "border-box" }}>
       <CornerChip cornerKey={cornerKey} size="sm" />
       <div style={{ fontSize: big, fontWeight: 800, color: "#16160f", letterSpacing: "-0.6px", lineHeight: 1.25 }}>{headline}</div>
       <div style={{ fontFamily: mono, fontSize: 10, fontWeight: 500, letterSpacing: ".5px", color: "#b0aaa0" }}>오늘의딜 MAGAZINE</div>

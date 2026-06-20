@@ -58,7 +58,7 @@ const body_html = `
 </div>
 <p style="font-size:16px; color:#33312d; line-height:1.85; margin:16px 0 0;">건조·분쇄식이 빠르고 편한 대신, 3년 유지비는 약 23만 원으로 가장 높게 잡히는 편인데요. 고온 건조라 전기를 많이 먹는 구조이기 때문이에요. 반대로 미생물식은 전기는 적게 들지만, 미생물제(균)를 꾸준히 보충해야 한다는 점을 같이 봐야 하는 수준입니다.</p>
 
-<div style="border:1px solid #e7e2d9; border-left:3px solid #ff5a3c; background:#faf8f5; border-radius:8px; padding:14px 16px; margin:24px 0;"><div style="font-size:11px; font-weight:700; letter-spacing:1px; color:#ff5a3c; margin-bottom:6px;">짚고 가요</div><p style="margin:0; font-size:14.5px; color:#33312d; line-height:1.75;">카탈로그에 적힌 소음(dB)과 실사용 소음은 차이가 큰 편이에요. 소음이 중요하다면 카탈로그 숫자보다 <b style="font-weight:700;">실사용 후기에서 ‘반복되는 불만’</b>을 확인하는 게 더 정확한 수준입니다.</p></div>
+<div style="border:1px solid #e7e2d9; background:#faf8f5; border-radius:10px; padding:16px 18px; margin:24px 0;"><div style="font-size:11px; font-weight:700; letter-spacing:1px; color:#ff5a3c; margin-bottom:6px;">짚고 가요</div><p style="margin:0; font-size:14.5px; color:#33312d; line-height:1.75;">카탈로그에 적힌 소음(dB)과 실사용 소음은 차이가 큰 편이에요. 소음이 중요하다면 카탈로그 숫자보다 <b style="font-weight:700;">실사용 후기에서 ‘반복되는 불만’</b>을 확인하는 게 더 정확한 수준입니다.</p></div>
 
 <h2 style="font-size:21px; font-weight:800; color:#1a1a1a; margin:34px 0 14px; letter-spacing:-0.4px;">사기 전 체크리스트</h2>
 <div style="border:1px solid #e7e2d9; border-radius:12px; padding:8px 20px;">
