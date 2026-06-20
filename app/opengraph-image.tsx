@@ -32,23 +32,23 @@ export default async function Image() {
         <div style={{ display: "flex", alignItems: "center", gap: 30 }}>
           <div
             style={{
-              width: 168,
-              height: 168,
-              borderRadius: 38,
+              width: 200,
+              height: 200,
+              borderRadius: 46,
               background: "#ff5a3c",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
             }}
           >
-            <svg width="104" height="104" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="124" height="124" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="12" cy="12" r="9" />
               <path d="M12 7v5l3 2" />
             </svg>
           </div>
           <div style={{ display: "flex", alignItems: "flex-end" }}>
-            <span style={{ fontSize: 140, color: "#1f1b16", letterSpacing: "-0.03em" }}>오늘의딜</span>
-            <span style={{ fontSize: 140, color: "#ff5a3c" }}>.</span>
+            <span style={{ fontSize: 172, color: "#1f1b16", letterSpacing: "-0.03em" }}>오늘의딜</span>
+            <span style={{ fontSize: 172, color: "#ff5a3c" }}>.</span>
           </div>
         </div>
 
