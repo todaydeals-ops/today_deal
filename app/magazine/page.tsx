@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { fetchMagazineList } from "@/lib/data/magazine";
 import { CORNERS, cornerOf, isCorner, MAGAZINE_SLOGAN } from "@/lib/magazine/corners";
-import { MagazineHeader, MagazineFooter, CornerChip, FieldChip } from "@/components/magazine/Chrome";
+import { MagazineHeader, MagazineFooter, CornerChip, FieldChip, CoverPanel } from "@/components/magazine/Chrome";
 
 export const dynamic = "force-dynamic";
 const SITE = "https://www.todaydeals.co.kr";
@@ -20,7 +20,7 @@ const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
 function GuideCard({ a }: { a: { slug: string; corner: string; field?: string; title: string } }) {
   return (
     <Link href={`/magazine/${a.slug}`} className="h-lift" style={{ display: "block", border: "1px solid #e7e2d9", borderRadius: 14, overflow: "hidden", textDecoration: "none", background: "#fff" }}>
-      <div style={{ height: 118, background: "#f4f1ec", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: mono, fontSize: 10, color: "#b6b1a8" }}>썸네일</div>
+      <CoverPanel cornerKey={a.corner} headline={a.field || cornerOf(a.corner).name} height={118} big={20} />
       <div style={{ padding: "14px 16px 16px" }}>
         <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
           <CornerChip cornerKey={a.corner} size="sm" />
@@ -84,7 +84,7 @@ export default async function MagazineHome({ searchParams }: { searchParams: Pro
                     {featured.excerpt && <p style={{ fontSize: 14, color: "#6f6b64", lineHeight: 1.7, margin: "10px 0 0" }}>{featured.excerpt}</p>}
                     <div style={{ fontFamily: mono, fontSize: 12, color: "#9a958c", marginTop: 18 }}>편집국 · {fmtDate(featured.createdAt)}{featured.readMin ? ` · 읽기 ${featured.readMin}분` : ""}</div>
                   </div>
-                  <div style={{ background: "linear-gradient(135deg,#f1ede6,#e3ddd2)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: mono, fontSize: 11, color: "#b0aaa0", minHeight: 180 }}>대표 이미지</div>
+                  <CoverPanel cornerKey={featured.corner} headline={featured.subtitle || featured.title} height={180} big={26} />
                 </Link>
               </div>
             )}

@@ -86,3 +86,15 @@ export function FieldChip({ field }: { field?: string }) {
     <span style={{ fontSize: 12, fontWeight: 500, color: "#46433d", background: "#f1ede6", borderRadius: 9999, padding: "5px 12px" }}>{field}</span>
   );
 }
+
+// 타이포 커버 — AI/스톡 이미지 대신 쓰는 데이터형 표지(브랜드 오렌지+먹/회색, 단일 폰트)
+export function CoverPanel({ cornerKey, headline, height = 180, big = 26 }: { cornerKey: string; headline: string; height?: number; big?: number }) {
+  const c = cornerOf(cornerKey);
+  return (
+    <div style={{ height: "100%", minHeight: height, background: "#faf8f5", borderLeft: `3px solid ${c.color}`, display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "16px 18px", boxSizing: "border-box" }}>
+      <CornerChip cornerKey={cornerKey} size="sm" />
+      <div style={{ fontSize: big, fontWeight: 900, color: "#1a1a1a", letterSpacing: "-0.6px", lineHeight: 1.25 }}>{headline}</div>
+      <div style={{ fontSize: 10.5, fontWeight: 600, letterSpacing: ".5px", color: "#b0aaa0" }}>오늘의딜 매거진</div>
+    </div>
+  );
+}
