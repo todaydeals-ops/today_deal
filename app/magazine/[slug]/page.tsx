@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { fetchMagazineBySlug } from "@/lib/data/magazine";
 import { cornerOf } from "@/lib/magazine/corners";
@@ -42,42 +43,46 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   };
 
   return (
-    <>
+    <div className="mz-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
-      <main style={{ background: "#fff", minHeight: "100vh", fontFamily: "'Noto Sans KR', sans-serif" }}>
-        <div style={{ maxWidth: 980, margin: "0 auto" }}>
-          <MagazineHeader small />
-
-          <article style={{ maxWidth: 720, margin: "0 auto", padding: "34px 30px 44px" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+      <MagazineHeader />
+      <main className="mz-aw">
+        <div className="mz-sheet">
+          {/* hero */}
+          <div className="mz-hero">
+            <div className="mz-bc">
+              <Link href="/magazine" style={{ color: "#7a2e1c" }}>매거진</Link>
+              <span style={{ opacity: 0.5 }}>›</span>
+              <Link href={`/magazine?corner=${a.corner}`} style={{ color: "#7a2e1c" }}>{c.name}</Link>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 14 }}>
               <CornerChip cornerKey={a.corner} />
               <FieldChip field={a.field} />
             </div>
-            <h1 style={{ fontSize: 33, fontWeight: 900, color: "#1a1a1a", letterSpacing: "-1px", lineHeight: 1.3, margin: "14px 0 0" }}>
+            <h1 className="mz-h1" style={{ fontSize: 36, marginTop: 14 }}>
               {a.title}
-              {a.subtitle ? <><br /><span style={{ fontSize: 24, fontWeight: 800 }}>{a.subtitle}</span></> : null}
+              {a.subtitle ? <><br /><span style={{ fontSize: 24, fontWeight: 700 }}>{a.subtitle}</span></> : null}
             </h1>
-            <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: 16, fontFamily: mono, fontSize: 12, color: "#9a958c" }}>
-              <span>편집국</span><span>·</span><span>{fmtDate(a.createdAt)}</span>{a.readMin ? <><span>·</span><span>읽기 {a.readMin}분</span></> : null}
+            <div style={{ fontFamily: mono, fontSize: 12, color: "#7a2e1c", marginTop: 18, letterSpacing: ".3px" }}>
+              편집국 · {fmtDate(a.createdAt)}{a.readMin ? ` · 읽기 ${a.readMin}분` : ""}
             </div>
+          </div>
 
+          {/* body */}
+          <article style={{ maxWidth: 720, margin: "0 auto", padding: "30px 28px 44px" }}>
             <HonestyBadge />
-
-            {/* 본문 — 시그니처 컴포넌트 포함 HTML. 본문 내 구매/제휴 링크 없음. */}
             <div className="mz-body" style={{ fontSize: 16, color: "#33312d", lineHeight: 1.85 }} dangerouslySetInnerHTML={{ __html: a.bodyHtml }} />
 
-            {/* 정직한 마무리 */}
             {a.closing && (
-              <div style={{ marginTop: 30, padding: "22px 24px", background: "#1a1a1a", borderRadius: 14 }}>
+              <div style={{ marginTop: 30, padding: "22px 24px", background: "#16160f", borderRadius: 14 }}>
                 <div style={{ fontFamily: mono, fontSize: 11, letterSpacing: "1px", color: "#ff8a6f", fontWeight: 600, marginBottom: 8 }}>정직한 마무리</div>
                 <p style={{ fontSize: 15, color: "#f3efe9", lineHeight: 1.8, margin: 0, fontWeight: 500 }} dangerouslySetInnerHTML={{ __html: a.closing }} />
               </div>
             )}
           </article>
-
-          <MagazineFooter />
         </div>
       </main>
-    </>
+      <MagazineFooter />
+    </div>
   );
 }

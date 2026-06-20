@@ -1,54 +1,46 @@
-// 매거진 공통 UI — 로고·헤더·푸터·정직성 배지·코너칩·분야칩. (디자인 핸드오프 재현)
+// 매거진 공통 UI — Kontents 컨셉(오렌지) 셸. 로고·헤더·푸터·정직성 배지·코너칩·커버.
 import Link from "next/link";
 import { CORNERS, cornerOf } from "@/lib/magazine/corners";
 
-// 단일 폰트 정책 — 과거 모노 자리도 Noto Sans KR로(라벨 느낌은 letterSpacing으로)
-const mono = "'Noto Sans KR', sans-serif";
+const mono = "'JetBrains Mono', monospace";
 
-export function MagazineLogo({ size = "md" }: { size?: "sm" | "md" }) {
-  const box = size === "md" ? 30 : 26;
-  const icon = size === "md" ? 17 : 15;
-  const name = size === "md" ? 19 : 17;
-  const label = name; // MAGAZINE을 로고(오늘의딜)와 같은 크기로
+export function MagazineLogo() {
   return (
-    <Link href="/magazine" style={{ display: "flex", alignItems: "center", gap: 9, textDecoration: "none" }}>
-      <span style={{ width: box, height: box, borderRadius: 9, background: "#ff5a3c", display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <svg width={icon} height={icon} viewBox="0 0 24 24" fill="none">
-          <circle cx="12" cy="12" r="9" stroke="#fff" strokeWidth="2.4" />
-          <path d="M12 7.2V12l3.1 2" stroke="#fff" strokeWidth="2.4" strokeLinecap="round" />
-        </svg>
-      </span>
-      <span style={{ fontWeight: 800, fontSize: name, color: "#1a1a1a", letterSpacing: "-0.5px" }}>
-        오늘의딜<span style={{ color: "#ff5a3c" }}>.</span>
-      </span>
-      <span style={{ fontFamily: mono, fontSize: label, letterSpacing: "1.5px", color: "#1a1a1a", fontWeight: 600, borderLeft: "1px solid #e2ddd4", paddingLeft: 11, marginLeft: 4 }}>
-        MAGAZINE
-      </span>
+    <Link href="/magazine" className="mz-logo" style={{ textDecoration: "none", color: "#16160f" }}>
+      <span className="a">오늘의딜<span className="dot">.</span></span>
+      <span className="b">MAGAZINE</span>
     </Link>
   );
 }
 
-export function MagazineHeader({ small = false }: { small?: boolean }) {
+export function MagazineHeader() {
   return (
-    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: small ? "16px 30px" : "18px 30px", borderBottom: "1px solid #efece7" }}>
-      <MagazineLogo size={small ? "sm" : "md"} />
-      <nav style={{ display: "flex", gap: 18, fontSize: 12.5, fontWeight: 600 }}>
+    <header className="mz-head">
+      <MagazineLogo />
+      <nav>
         {CORNERS.map((c) => (
-          <Link key={c.key} href={`/magazine?corner=${c.key}`} className="mz-nav" style={{ color: "#46433d", textDecoration: "none" }}>
+          <Link key={c.key} className="mz-link" href={`/magazine?corner=${c.key}`} style={{ color: "#6b6a60" }}>
             {c.name}
           </Link>
         ))}
+        <Link className="mz-pill" href="/magazine">매거진</Link>
       </nav>
-    </div>
+    </header>
   );
 }
 
 export function MagazineFooter() {
   return (
-    <div style={{ background: "#faf8f5", borderTop: "1px solid #efece7", padding: "20px 30px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-      <span style={{ fontFamily: mono, fontSize: 11, color: "#9a958c", letterSpacing: ".5px" }}>오늘의딜 매거진 · 광고·제휴 없이 운영됩니다</span>
-      <span style={{ fontFamily: mono, fontSize: 11, color: "#b6b1a8" }}>© 2026 TODAYDEALS</span>
-    </div>
+    <footer className="mz-foot">
+      <nav>
+        <Link className="mz-link" href="/">오늘의딜 홈</Link>
+        <Link className="mz-link" href="/magazine">매거진</Link>
+        <Link className="mz-link" href="/board">핫딜게시판</Link>
+        <Link className="mz-link" href="/terms">이용약관</Link>
+        <Link className="mz-link" href="/privacy">개인정보처리방침</Link>
+      </nav>
+      <div className="cp">© 2026 TODAYDEALS · 광고·제휴 없이 운영됩니다</div>
+    </footer>
   );
 }
 
@@ -62,7 +54,7 @@ export function HonestyBadge() {
         </svg>
       </span>
       <div>
-        <div style={{ fontSize: 13, fontWeight: 700, color: "#1a1a1a", lineHeight: 1.5 }}>이 글은 끝까지 읽어도 특정 제품을 추천하지 않습니다.</div>
+        <div style={{ fontSize: 13, fontWeight: 700, color: "#16160f", lineHeight: 1.5 }}>이 글은 끝까지 읽어도 특정 제품을 추천하지 않습니다.</div>
         <div style={{ fontSize: 12, color: "#76726b", lineHeight: 1.5 }}>소비자의 바른 선택, 그 방향만 제시합니다.</div>
       </div>
       <span style={{ marginLeft: "auto", flex: "none", fontFamily: mono, fontSize: 9.5, fontWeight: 600, color: "#ff5a3c", border: "1px solid #f7c9ba", borderRadius: 9999, padding: "4px 8px" }}>AD-FREE</span>
@@ -72,10 +64,11 @@ export function HonestyBadge() {
 
 export function CornerChip({ cornerKey, size = "md" }: { cornerKey: string; size?: "sm" | "md" }) {
   const c = cornerOf(cornerKey);
-  const fs = size === "md" ? 11 : 9.5;
+  const fs = size === "md" ? 11.5 : 10;
   return (
-    <span style={{ fontFamily: mono, fontSize: fs, fontWeight: 700, letterSpacing: ".5px", color: c.color, background: c.chipBg, borderRadius: 6, padding: size === "md" ? "5px 11px" : "3px 7px" }}>
+    <span style={{ display: "inline-flex", alignItems: "center", gap: 6, fontSize: fs, fontWeight: 700, color: c.color, background: c.chipBg, borderRadius: 6, padding: size === "md" ? "5px 11px" : "3px 8px" }}>
       {c.name}
+      <span style={{ fontFamily: mono, fontSize: fs - 2, fontWeight: 500, letterSpacing: ".5px", opacity: 0.8 }}>{c.nameEn}</span>
     </span>
   );
 }
@@ -83,18 +76,18 @@ export function CornerChip({ cornerKey, size = "md" }: { cornerKey: string; size
 export function FieldChip({ field }: { field?: string }) {
   if (!field) return null;
   return (
-    <span style={{ fontSize: 12, fontWeight: 500, color: "#46433d", background: "#f1ede6", borderRadius: 9999, padding: "5px 12px" }}>{field}</span>
+    <span style={{ fontFamily: mono, fontSize: 10.5, fontWeight: 500, letterSpacing: ".5px", color: "#6b6a60" }}>{field}</span>
   );
 }
 
-// 타이포 커버 — AI/스톡 이미지 대신 쓰는 데이터형 표지(브랜드 오렌지+먹/회색, 단일 폰트)
+// 타이포 커버 — AI/스톡 이미지 대신 쓰는 데이터형 표지
 export function CoverPanel({ cornerKey, headline, height = 180, big = 26 }: { cornerKey: string; headline: string; height?: number; big?: number }) {
   const c = cornerOf(cornerKey);
   return (
     <div style={{ height: "100%", minHeight: height, background: "#faf8f5", borderLeft: `3px solid ${c.color}`, display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "16px 18px", boxSizing: "border-box" }}>
       <CornerChip cornerKey={cornerKey} size="sm" />
-      <div style={{ fontSize: big, fontWeight: 900, color: "#1a1a1a", letterSpacing: "-0.6px", lineHeight: 1.25 }}>{headline}</div>
-      <div style={{ fontSize: 10.5, fontWeight: 600, letterSpacing: ".5px", color: "#b0aaa0" }}>오늘의딜 매거진</div>
+      <div style={{ fontSize: big, fontWeight: 800, color: "#16160f", letterSpacing: "-0.6px", lineHeight: 1.25 }}>{headline}</div>
+      <div style={{ fontFamily: mono, fontSize: 10, fontWeight: 500, letterSpacing: ".5px", color: "#b0aaa0" }}>오늘의딜 MAGAZINE</div>
     </div>
   );
 }
