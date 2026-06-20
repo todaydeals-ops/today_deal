@@ -30,34 +30,21 @@ const BOARD_COPY: Record<string, PromoCopy> = {
         제보하면 딜도 쌓여요.
       </>
     ),
-    chips: ["전자/IT", "식품", "패션/뷰티", "해외직구"],
+    chips: ["전자/IT", "식품", "패션/뷰티", "생활/주방"],
     accentIcon: "ti-flame",
   },
-  free: {
+  event: {
     kickerIcon: "ti-gift",
-    kicker: "무료 · 이벤트",
+    kicker: "이벤트 · 쿠폰 · 적립",
     title: (
       <>
-        공짜·사은품·체험단,
+        공짜·사은품·체험단부터
         <br />
-        알짜만 골라 담았어요.
+        할인쿠폰·적립까지.
       </>
     ),
-    chips: ["무료배포", "사은품", "체험단", "경품"],
+    chips: ["무료배포", "사은품", "체험단", "할인쿠폰", "적립"],
     accentIcon: "ti-gift",
-  },
-  coupon: {
-    kickerIcon: "ti-ticket",
-    kicker: "쿠폰 · 적립",
-    title: (
-      <>
-        결제 전 꼭 챙기는
-        <br />
-        할인쿠폰·프로모코드.
-      </>
-    ),
-    chips: ["할인쿠폰", "적립", "프로모코드"],
-    accentIcon: "ti-ticket",
   },
 };
 

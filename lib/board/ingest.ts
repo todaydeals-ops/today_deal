@@ -23,7 +23,7 @@ interface Summary {
 
 // 보드 종류별로 라운드로빈 인터리브(hot,overseas,free,coupon 번갈아)
 function interleaveByBoard(items: RawDeal[]): RawDeal[] {
-  const order = ["hot", "free", "coupon"];
+  const order = ["hot", "event"];
   const groups = new Map<string, RawDeal[]>();
   for (const c of items) {
     const k = order.includes(c.boardType) ? c.boardType : "hot";
@@ -90,8 +90,8 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
       return null;
     }
     const persona = personaFor(c.slug);
-    // 무료 게임·앱 등은 어느 소스에서 왔든 '무료/이벤트' 보드로 라우팅
-    const boardType = isFreebie(c.rawTitle, c.price) ? "free" : c.boardType;
+    // 무료 게임·앱 등은 어느 소스에서 왔든 '이벤트/쿠폰/적립' 보드로 라우팅
+    const boardType = isFreebie(c.rawTitle, c.price) ? "event" : c.boardType;
     // 카테고리: 소스 강제값(해외직구) 우선, 없으면 매핑(루리웹 '게임S/W' 등 미매핑 방지)
     const category = c.forceCategory ?? categorize(c.title, c.category);
     const rw = await rewriteDeal({ title: c.title, body: c.body, shop: c.shop, price: c.price }, persona);

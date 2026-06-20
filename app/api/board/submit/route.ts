@@ -7,7 +7,7 @@ import { COOKIE_NAME, verifySession } from "@/lib/auth/session";
 
 export const runtime = "nodejs";
 
-const BOARD_TYPE_KEYS = ["hot", "free", "coupon"];
+const BOARD_TYPE_KEYS = ["hot", "event"];
 
 interface Input {
   url?: string;

@@ -9,6 +9,7 @@ import type { Platform } from "@/lib/types";
 import { getSupabaseAdmin } from "@/lib/supabase/server";
 import { fetchUrlMeta, detectPlatform, affiliateForPlatform } from "@/lib/urlMeta";
 import { dealSlug } from "@/lib/slug";
+import { categorize } from "@/lib/board/categorize";
 
 interface FullRecord {
   platform?: Platform;
@@ -229,6 +230,7 @@ export async function POST(request: Request): Promise<Response> {
       posts.push({
         slug: `hot-${ds}`,
         board_type: "hot",
+        category: categorize(r.product_name), // 카테고리 칩이 비지 않게 자동분류
         title: r.product_name,
         shop: SHOP_KR[r.platform] ?? r.platform,
         price: r.sale_price,

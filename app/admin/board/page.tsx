@@ -7,10 +7,9 @@ import styles from "./page.module.css";
 // 클라이언트 안전 상수 (lib/data/board는 서버 전용이라 직접 import 안 함)
 const BOARD_TYPES = [
   { key: "hot", label: "핫딜" },
-  { key: "free", label: "무료/이벤트" },
-  { key: "coupon", label: "쿠폰/적립" },
+  { key: "event", label: "이벤트/쿠폰/적립" },
 ];
-const BOARD_CATEGORIES = ["전자/IT", "식품", "생활/주방", "패션/뷰티", "해외직구", "기타"];
+const BOARD_CATEGORIES = ["전자/IT", "식품", "생활/주방", "패션/뷰티", "기타"];
 
 interface Row {
   id: string;
@@ -27,7 +26,7 @@ interface Row {
   is_published: boolean;
   created_at: string;
 }
-const TYPE_LABEL: Record<string, string> = { hot: "핫딜", overseas: "해외직구", free: "무료/이벤트", coupon: "쿠폰/적립" };
+const TYPE_LABEL: Record<string, string> = { hot: "핫딜", event: "이벤트/쿠폰/적립", overseas: "핫딜", free: "이벤트/쿠폰/적립", coupon: "이벤트/쿠폰/적립" };
 
 const EMPTY = {
   title: "",

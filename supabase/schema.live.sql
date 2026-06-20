@@ -149,6 +149,8 @@ create table if not exists public.view_visits (
 -- 활동 스냅샷 컬럼(오늘 활동 총합) — 새 방문자 접속 때만 갱신.
 alter table public.view_counter add column if not exists activity bigint not null default 0;
 
+-- 반환 컬럼이 늘어 CREATE OR REPLACE 불가 → 먼저 DROP.
+drop function if exists public.bump_views_ip(text);
 create or replace function public.bump_views_ip(p_ip text)
 returns table(today_count bigint, total_count bigint, activity_count bigint)
 language plpgsql

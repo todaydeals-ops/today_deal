@@ -36,14 +36,13 @@ export const SOURCES: SourceDef[] = [
   // 핫딜
   { source: "ppomppu", key: "ppomppu", rss: "https://www.ppomppu.co.kr/rss.php?id=ppomppu", boardType: "hot", idFrom: /no=(\d+)/ },
   { source: "ruliweb", key: "ruliweb", rss: "https://bbs.ruliweb.com/market/board/1020/rss", boardType: "hot", idFrom: /\/read\/(\d+)/ },
-  // 해외직구 — 핫딜 보드의 '해외직구' 카테고리로
-  { source: "ppomppu", key: "ppomppu4", rss: "https://www.ppomppu.co.kr/rss.php?id=ppomppu4", boardType: "hot", forceCategory: "해외직구", idFrom: /no=(\d+)/ },
-  // 쿠폰/적립
-  { source: "ppomppu", key: "coupon", rss: "https://www.ppomppu.co.kr/rss.php?id=coupon", boardType: "coupon", idFrom: /no=(\d+)/ },
-  // 무료/이벤트 — 이벤트·체험단
-  { source: "ppomppu", key: "ppevent", rss: "https://www.ppomppu.co.kr/rss.php?id=event_ppomppu", boardType: "free", idFrom: /no=(\d+)/ },
-  { source: "ppomppu", key: "ppevent2", rss: "https://www.ppomppu.co.kr/rss.php?id=event2", boardType: "free", idFrom: /no=(\d+)/ },
-  { source: "ppomppu", key: "ppexp", rss: "https://www.ppomppu.co.kr/rss.php?id=experience", boardType: "free", idFrom: /no=(\d+)/ },
+  // 해외직구도 핫딜로(카테고리 폐지 → 키워드 자동분류)
+  { source: "ppomppu", key: "ppomppu4", rss: "https://www.ppomppu.co.kr/rss.php?id=ppomppu4", boardType: "hot", idFrom: /no=(\d+)/ },
+  // 이벤트/쿠폰/적립 (통합 보드)
+  { source: "ppomppu", key: "coupon", rss: "https://www.ppomppu.co.kr/rss.php?id=coupon", boardType: "event", idFrom: /no=(\d+)/ },
+  { source: "ppomppu", key: "ppevent", rss: "https://www.ppomppu.co.kr/rss.php?id=event_ppomppu", boardType: "event", idFrom: /no=(\d+)/ },
+  { source: "ppomppu", key: "ppevent2", rss: "https://www.ppomppu.co.kr/rss.php?id=event2", boardType: "event", idFrom: /no=(\d+)/ },
+  { source: "ppomppu", key: "ppexp", rss: "https://www.ppomppu.co.kr/rss.php?id=experience", boardType: "event", idFrom: /no=(\d+)/ },
 ];
 
 function decode(s: string): string {

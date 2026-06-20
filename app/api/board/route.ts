@@ -5,7 +5,7 @@ import { awardPostOnce, reclaimPostDeal } from "@/lib/deal/server";
 
 export const runtime = "nodejs";
 
-const BOARD_TYPE_KEYS = ["hot", "free", "coupon"];
+const BOARD_TYPE_KEYS = ["hot", "event"];
 
 interface Input {
   title?: string;

@@ -1,11 +1,10 @@
 // 제보딜 게시판(에이전트 큐레이션) 데이터 접근.
 import { getSupabaseAdmin } from "@/lib/supabase/server";
 
-// 3종 보드 (해외직구는 핫딜 하위 카테고리로 강등)
+// 2종 보드 (무료/이벤트+쿠폰/적립 통합, 해외직구는 카테고리 폐지)
 export const BOARD_TYPES = [
   { key: "hot", label: "핫딜", desc: "실시간 상품 특가·할인" },
-  { key: "free", label: "무료/이벤트", desc: "공짜·사은품·체험단·이벤트" },
-  { key: "coupon", label: "쿠폰/적립", desc: "할인쿠폰·적립·프로모코드" },
+  { key: "event", label: "이벤트/쿠폰/적립", desc: "공짜·사은품·체험단·이벤트·할인쿠폰·적립" },
 ] as const;
 export type BoardType = (typeof BOARD_TYPES)[number]["key"];
 export function boardTypeLabel(t?: string): string {
@@ -15,8 +14,8 @@ export function isBoardType(t?: string): t is BoardType {
   return BOARD_TYPES.some((x) => x.key === t);
 }
 
-// 카테고리 통합(8→6) + 해외직구를 카테고리로
-export const BOARD_CATEGORIES = ["전자/IT", "식품", "생활/주방", "패션/뷰티", "해외직구", "기타"] as const;
+// 카테고리 5종 (해외직구 폐지 — 공급 없어 빈 칩 방지)
+export const BOARD_CATEGORIES = ["전자/IT", "식품", "생활/주방", "패션/뷰티", "기타"] as const;
 export type BoardCategory = (typeof BOARD_CATEGORIES)[number];
 
 // ── 활성 연출 헬퍼 (사람 많아 보이게) ──
