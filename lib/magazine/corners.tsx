@@ -95,6 +95,6 @@ export function isCorner(key?: string): boolean {
 // 분야 태그 (코너와 교차 = 주제 매트릭스)
 export const MAGAZINE_FIELDS = ["가전", "리빙·주방", "디지털·IT", "식품·건강", "뷰티", "유아·반려"] as const;
 
-export const MAGAZINE_SLOGAN = "팔지 않습니다, 방향만 드립니다.";
+export const MAGAZINE_SLOGAN = "광고가 끝나는 곳에서, 기준이 시작됩니다.";
 export const MAGAZINE_INTRO =
   "광고도 제휴도 받지 않는 중립 쇼핑 가이드.";

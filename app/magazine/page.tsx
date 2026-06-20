@@ -10,7 +10,7 @@ const mono = "'JetBrains Mono', monospace";
 const serif = "'Noto Serif KR', serif";
 
 export const metadata: Metadata = {
-  title: "오늘의딜 매거진 — 팔지 않습니다, 방향만 드립니다",
+  title: "오늘의딜 매거진 — 광고가 끝나는 곳에서, 기준이 시작됩니다",
   description: "광고도 제휴도 받지 않는 중립 쇼핑 가이드. 더 나은 선택에 필요한 기준과 근거만 데이터로 정리합니다. 판단은 당신의 몫입니다.",
   alternates: { canonical: `${SITE}/magazine` },
   openGraph: { title: "오늘의딜 매거진 — 중립 쇼핑 가이드", description: "광고·제휴 없이, 구매 판단의 기준만.", url: `${SITE}/magazine`, type: "website" },
@@ -58,12 +58,12 @@ export default async function MagazineHome({ searchParams }: { searchParams: Pro
             </div>
             <h1 className="mz-h1">{MAGAZINE_SLOGAN}</h1>
             <p className="mz-desc">
-              오늘의딜 매거진은 광고도 제휴도 받지 않는 <b>중립 쇼핑 가이드</b>입니다. 특정 제품을 추천하거나 비방하지 않고, 더 나은 선택에 필요한 <b>기준과 근거만 데이터로</b> 정리합니다. 판단은, 언제나 당신의 몫입니다.
+              세상의 광고는 늘 ‘사야 할 이유’를 말합니다. 오늘의딜 매거진은 그 반대편에서, 따져봐야 할 <b>기준과 숫자</b>를 정리합니다. 무엇을 고르라 말하지 않습니다 — 다만 당신이 스스로 고를 수 있도록.
             </p>
             <div className="mz-meta">
               <div><span className="k">코너</span><div className="v">5 코너</div></div>
               <div><span className="k">분야</span><div className="v">6 분야</div></div>
-              <div><span className="k">운영</span><div className="v">무광고 · 무제휴</div></div>
+              <div><span className="k">운영</span><div className="v">독립 · 중립</div></div>
               <div><span className="k">발행</span><div className="v">{list.length}편</div></div>
             </div>
           </div>
@@ -115,8 +115,8 @@ export default async function MagazineHome({ searchParams }: { searchParams: Pro
           {/* outro */}
           <div className="mz-outro">
             <div>
-              <div className="t">광고도 제휴도 받지 않습니다</div>
-              <div className="s">특정 제품을 추천·비방하지 않는 중립 쇼핑 가이드 · 판단은 당신의 몫</div>
+              <div className="t">고르는 일은, 생각보다 외롭습니다.</div>
+              <div className="s">정답 대신 기준을, 권유 대신 근거를 — 판단은 당신의 몫입니다.</div>
             </div>
             <Link href="/magazine" className="mz-link" style={{ fontWeight: 700, fontSize: 15, color: "#16160f", whiteSpace: "nowrap" }}>전체 가이드 →</Link>
           </div>
