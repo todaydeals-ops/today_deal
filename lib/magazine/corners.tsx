@@ -96,5 +96,17 @@ export function isCorner(key?: string): boolean {
 export const MAGAZINE_FIELDS = ["가전", "리빙·주방", "디지털·IT", "식품·건강", "뷰티", "유아·반려"] as const;
 
 export const MAGAZINE_SLOGAN = "광고가 끝나는 곳에서, 기준이 시작됩니다.";
+
+// 캐치프라이즈 — 여러 요소(히어로·아웃트로·푸터·OG 등)에 재사용
+export const CATCH = {
+  media: {
+    lead: "미디어는 늘 ‘사야 할 이유’를 말합니다.",
+    tail: "오늘의딜은 고려해야 할 기준과 숫자를 정리해 드립니다.",
+  },
+  lonely: {
+    lead: "무언가를 고르고 결정한다는 것은 생각보다 외롭습니다.",
+    tail: "정답 대신 기준을, 권유 대신 근거를 드릴게요. 당신은 혼자가 아닙니다.",
+  },
+};
 export const MAGAZINE_INTRO =
   "광고도 제휴도 받지 않는 중립 쇼핑 가이드.";

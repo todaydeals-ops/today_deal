@@ -1,8 +1,9 @@
 // 매거진 공통 UI — Kontents 컨셉(오렌지) 셸. 로고·헤더·푸터·정직성 배지·코너칩·커버.
 import Link from "next/link";
-import { CORNERS, cornerOf } from "@/lib/magazine/corners";
+import { CORNERS, cornerOf, CATCH } from "@/lib/magazine/corners";
 
 const mono = "'JetBrains Mono', monospace";
+const serif = "'Noto Serif KR', serif";
 
 export function MagazineLogo() {
   return (
@@ -31,15 +32,21 @@ export function MagazineHeader() {
 
 export function MagazineFooter() {
   return (
-    <footer className="mz-foot">
-      <nav>
-        <Link className="mz-link" href="/">오늘의딜 홈</Link>
-        <Link className="mz-link" href="/magazine">매거진</Link>
-        <Link className="mz-link" href="/board">핫딜게시판</Link>
-        <Link className="mz-link" href="/terms">이용약관</Link>
-        <Link className="mz-link" href="/privacy">개인정보처리방침</Link>
-      </nav>
-      <div className="cp">© 2026 TODAYDEALS · 광고·제휴 없이 운영됩니다</div>
+    <footer className="mz-foot" style={{ flexDirection: "column", alignItems: "flex-start", gap: 18 }}>
+      <div style={{ fontFamily: serif, fontSize: 14.5, color: "#6b6a60", lineHeight: 1.85, maxWidth: 540 }}>
+        {CATCH.lonely.lead}<br />
+        <span style={{ color: "#46443c" }}>{CATCH.lonely.tail}</span>
+      </div>
+      <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center", gap: 20, flexWrap: "wrap" }}>
+        <nav>
+          <Link className="mz-link" href="/">오늘의딜 홈</Link>
+          <Link className="mz-link" href="/magazine">매거진</Link>
+          <Link className="mz-link" href="/board">핫딜게시판</Link>
+          <Link className="mz-link" href="/terms">이용약관</Link>
+          <Link className="mz-link" href="/privacy">개인정보처리방침</Link>
+        </nav>
+        <div className="cp">© 2026 TODAYDEALS</div>
+      </div>
     </footer>
   );
 }
