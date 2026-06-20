@@ -8,7 +8,7 @@ export function MagazineLogo({ size = "md" }: { size?: "sm" | "md" }) {
   const box = size === "md" ? 30 : 26;
   const icon = size === "md" ? 17 : 15;
   const name = size === "md" ? 19 : 17;
-  const label = size === "md" ? 11 : 10;
+  const label = name; // MAGAZINE을 로고(오늘의딜)와 같은 크기로
   return (
     <Link href="/magazine" style={{ display: "flex", alignItems: "center", gap: 9, textDecoration: "none" }}>
       <span style={{ width: box, height: box, borderRadius: 9, background: "#ff5a3c", display: "flex", alignItems: "center", justifyContent: "center" }}>
