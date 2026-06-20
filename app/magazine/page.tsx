@@ -44,15 +44,22 @@ export default async function MagazineHome({ searchParams }: { searchParams: Pro
       <div style={{ maxWidth: 980, margin: "0 auto" }}>
         <MagazineHeader />
 
-        {/* masthead */}
-        <div style={{ padding: "30px 30px 24px", borderBottom: "1px solid #efece7", display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: 24 }}>
-          <div>
-            <h1 style={{ fontSize: 32, fontWeight: 900, color: "#1a1a1a", letterSpacing: "-1px", lineHeight: 1.2, margin: 0 }}>{MAGAZINE_SLOGAN}</h1>
-            <p style={{ fontSize: 14, color: "#6f6b64", lineHeight: 1.7, marginTop: 10, maxWidth: 560 }}>
-              광고도 제휴도 받지 않습니다. 더 나은 선택에 필요한 <b style={{ fontWeight: 700, color: "#1a1a1a" }}>기준과 근거</b>만 정리해 드립니다. 판단은, 언제나 당신의 몫입니다.
-            </p>
+        {/* masthead banner */}
+        <div style={{ position: "relative", overflow: "hidden", padding: "34px 30px", borderBottom: "1px solid #efece7", background: "linear-gradient(180deg,#fff6f3,#ffffff)" }}>
+          <svg viewBox="0 0 24 24" fill="none" width={230} height={230} style={{ position: "absolute", right: -16, top: "50%", transform: "translateY(-50%)", color: "#ff5a3c", opacity: 0.07 }} aria-hidden>
+            <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="2" />
+            <path d="M12 7.2V12l3.1 2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+          </svg>
+          <div style={{ position: "relative", display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: 24 }}>
+            <div>
+              <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "2px", color: "#ff5a3c", marginBottom: 8 }}>오늘의딜 MAGAZINE</div>
+              <h1 style={{ fontSize: 32, fontWeight: 900, color: "#1a1a1a", letterSpacing: "-1px", lineHeight: 1.2, margin: 0 }}>{MAGAZINE_SLOGAN}</h1>
+              <p style={{ fontSize: 14, color: "#6f6b64", lineHeight: 1.7, marginTop: 10, maxWidth: 560 }}>
+                광고도 제휴도 받지 않습니다. 더 나은 선택에 필요한 <b style={{ fontWeight: 700, color: "#1a1a1a" }}>기준과 근거</b>만 정리해 드립니다.
+              </p>
+            </div>
+            <span style={{ flex: "none", fontSize: 10.5, fontWeight: 600, letterSpacing: ".5px", color: "#ff5a3c", border: "1px solid #f7c9ba", borderRadius: 9999, padding: "6px 12px", whiteSpace: "nowrap" }}>무광고 · 무제휴</span>
           </div>
-          <span style={{ flex: "none", fontFamily: mono, fontSize: 10.5, fontWeight: 600, letterSpacing: ".5px", color: "#ff5a3c", border: "1px solid #f7c9ba", borderRadius: 9999, padding: "6px 12px", whiteSpace: "nowrap" }}>무광고 · 무제휴</span>
         </div>
 
         {/* corner filter row */}
