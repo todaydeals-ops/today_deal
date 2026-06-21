@@ -14,6 +14,11 @@ export const MAGAZINE_HOOKS: Record<string, string> = {
   "summer-electricity-bill-guide": "에어컨 켜면 전기료 폭탄? 누진제 진짜 계산법 아세요?",
   "sunscreen-spf-pa-fact-check": "선크림, SPF 높을수록 정말 좋을까요?",
   "phone-battery-longevity-guide": "스마트폰, 밤새 충전하면 배터리 망가질까요?",
+  "tv-oled-qled-lcd": "TV, OLED랑 QLED랑 뭐가 다른지 아세요?",
+  "wireless-earbuds-guide": "무선이어폰, ‘고음질 코덱’만 보면 안 되는 이유?",
+  "nonstick-pan-care": "코팅 프라이팬, 왜 1년 만에 들러붙을까요?",
+  "protein-supplement-fact-check": "단백질 보충제, 진짜 꼭 필요할까요?",
+  "smartwatch-wearable-trend": "스마트워치 건강 수치, 어디까지 믿어도 될까요?",
 };
 
 export function hookFor(a: { slug: string; title: string; subtitle?: string }): string {
