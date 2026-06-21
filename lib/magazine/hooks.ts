@@ -19,6 +19,11 @@ export const MAGAZINE_HOOKS: Record<string, string> = {
   "nonstick-pan-care": "코팅 프라이팬, 왜 1년 만에 들러붙을까요?",
   "protein-supplement-fact-check": "단백질 보충제, 진짜 꼭 필요할까요?",
   "smartwatch-wearable-trend": "스마트워치 건강 수치, 어디까지 믿어도 될까요?",
+  "stick-vs-robot-vacuum": "무선청소기 vs 로봇청소기, 뭘 사야 후회 없을까요?",
+  "wifi-router-guide": "와이파이 약한 방, 비싼 공유기가 답일까요?",
+  "sneaker-care": "운동화, 왜 1~2년 만에 밑창이 떨어질까요?",
+  "diet-supplement-fact-check": "다이어트 보조제, 진짜 살이 빠질까요?",
+  "airfryer-trend": "에어프라이어, 정말 ‘기름 없이 건강’할까요?",
 };
 
 export function hookFor(a: { slug: string; title: string; subtitle?: string }): string {
