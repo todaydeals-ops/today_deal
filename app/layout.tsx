@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import MagazineHookPopup from "@/components/MagazineHookPopup";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.todaydeals.co.kr"),
@@ -99,6 +100,7 @@ export default function RootLayout({
           }}
         />
         {children}
+        <MagazineHookPopup />
       </body>
     </html>
   );
