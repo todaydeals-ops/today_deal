@@ -31,3 +31,4 @@ crawler/node_modules
 crawler/crawl.log
 *.zip
 design/_mz_unzip/
+magazine-og-preview.png

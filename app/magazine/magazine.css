@@ -100,3 +100,8 @@
   .art-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
   .art-rail { position: static !important; }
 }
+
+/* 모바일 마스트헤드 — 상단 코너 메뉴 숨김(바로 아래 코너 인덱스가 대신) */
+@media (max-width: 760px) {
+  .mz-nav { display: none; }
+}

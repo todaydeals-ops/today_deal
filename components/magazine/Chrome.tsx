@@ -25,12 +25,12 @@ export function MagazineMasthead() {
   return (
     <header className="mz-mast">
       <div className="mz-wrap" style={{ paddingTop: 22, paddingBottom: 22, display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16 }}>
-        <Link href="/magazine" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none", color: "#16140f" }}>
+        <Link href="/magazine" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none", color: "#16140f", flexShrink: 0, whiteSpace: "nowrap" }}>
           <span style={{ width: 34, height: 34, borderRadius: 10, background: "#ff5a3c", display: "flex", alignItems: "center", justifyContent: "center", flex: "none" }}>
             <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" strokeWidth="2.4" /><path d="M12 7.2V12l3.1 2" stroke="#fff" strokeWidth="2.4" strokeLinecap="round" /></svg>
           </span>
-          <span style={{ display: "flex", alignItems: "baseline", gap: 9 }}>
-            <span style={{ fontWeight: 900, fontSize: 20, letterSpacing: "-0.6px" }}>오늘의딜<span style={{ color: "#ff5a3c" }}>.</span></span>
+          <span style={{ display: "flex", alignItems: "baseline", gap: 9, whiteSpace: "nowrap" }}>
+            <span style={{ fontWeight: 900, fontSize: 20, letterSpacing: "-0.6px", whiteSpace: "nowrap" }}>오늘의딜<span style={{ color: "#ff5a3c" }}>.</span></span>
             <span style={{ fontFamily: mono, fontSize: 16, letterSpacing: "2px", fontWeight: 700, color: "#16140f", borderLeft: "1px solid #c8c0b3", paddingLeft: 11 }}>MAGAZINE</span>
           </span>
         </Link>
