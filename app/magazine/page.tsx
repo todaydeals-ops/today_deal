@@ -32,7 +32,7 @@ export default async function MagazineHome({ searchParams }: { searchParams: Pro
       <MagazineMasthead />
 
       {/* 슬로건 */}
-      <section className="mz-wrap" style={{ paddingTop: 54, paddingBottom: 44 }}>
+      <section className="mz-wrap mz-slogan" style={{ paddingTop: 54, paddingBottom: 44 }}>
         <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: "3px", textTransform: "uppercase", color: "#9a9286" }}>
           {corner ? `Corner — ${cornerOf(corner).nameEn}` : "Neutral Shopping Guide — Issue 01"}
         </div>

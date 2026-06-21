@@ -47,7 +47,7 @@ export function MagazineMasthead() {
 /* 코너 인덱스 (5칸) */
 export function CornerIndex() {
   return (
-    <section className="mz-wrap" style={{ paddingTop: 34 }}>
+    <section className="mz-wrap mz-cornerwrap" style={{ paddingTop: 34 }}>
       <div className="mz-corner-index">
         {CORNERS.map((c, i) => (
           <Link key={c.key} className="corner-cell" href={`/magazine?corner=${c.key}`}>

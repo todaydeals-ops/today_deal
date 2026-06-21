@@ -104,4 +104,11 @@
 /* 모바일 마스트헤드 — 상단 코너 메뉴 숨김(바로 아래 코너 인덱스가 대신) */
 @media (max-width: 760px) {
   .mz-nav { display: none; }
+  /* 슬로건 영역 압축 → 코너 5개가 한 화면에 들어오도록 */
+  .mz-slogan { padding-top: 28px !important; padding-bottom: 12px !important; }
+  .mz-h1 { margin-top: 12px !important; }
+  .mz-cornerwrap { padding-top: 14px !important; }
+  .corner-cell { padding: 13px 14px !important; }
+  .cc-t { margin-top: 9px !important; }
+  .cc-d { margin-top: 5px !important; }
 }
