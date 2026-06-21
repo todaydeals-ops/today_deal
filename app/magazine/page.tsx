@@ -62,42 +62,21 @@ export default async function MagazineHome({ searchParams }: { searchParams: Pro
         </>
       )}
 
-      {corner ? (
-        /* 코너 필터: 배너·인덱스 없이 바로 리스트 */
-        <section className="mz-wrap" style={{ paddingTop: 40, paddingBottom: 64 }}>
-          <div style={{ display: "flex", alignItems: "baseline", gap: 12, flexWrap: "wrap", marginBottom: 4 }}>
-            <span style={{ display: "inline-flex", alignItems: "center", gap: 9, fontFamily: serif, fontWeight: 700, fontSize: 26, color: "#16140f" }}>
+      {/* 코너 필터: 작은 헤더(전체 보기) — 아래 featured+리스트는 메인과 동일 */}
+      {corner && (
+        <section className="mz-wrap" style={{ paddingTop: 36, paddingBottom: 2 }}>
+          <div style={{ display: "flex", alignItems: "baseline", gap: 12, flexWrap: "wrap" }}>
+            <span style={{ display: "inline-flex", alignItems: "center", gap: 9, fontFamily: serif, fontWeight: 700, fontSize: 24, color: "#16140f" }}>
               <span style={{ width: 11, height: 11, borderRadius: 9999, background: cornerOf(corner).color }} />
               {cornerOf(corner).name}
             </span>
             <span style={{ fontSize: 13.5, color: "#7a756a" }}>{cornerOf(corner).desc}</span>
             <Link href="/magazine" className="ul-sweep" style={{ marginLeft: "auto", fontFamily: mono, fontSize: 12, color: "#16140f", textDecoration: "none" }}>✕ 전체 보기</Link>
           </div>
-          <div style={{ borderTop: "1px solid rgba(22,20,15,0.16)" }}>
-            {list.length === 0 ? (
-              <div style={{ padding: "44px 0", color: "#9a9286", fontSize: 14 }}>아직 이 코너의 가이드가 없어요.</div>
-            ) : (
-              list.map((a, i) => {
-                const cc = cornerOf(a.corner);
-                return (
-                  <Link key={a.id} href={`/magazine/${a.slug}`} className="mz-row row-link">
-                    <span className="mz-row-num" style={{ fontFamily: mono, fontSize: 13, fontWeight: 600, color: "#c0b8a9" }}>{String(i + 1).padStart(2, "0")}</span>
-                    <span style={{ display: "flex", alignItems: "center", gap: 9 }}>
-                      <span style={{ width: 8, height: 8, borderRadius: 9999, background: cc.color, flex: "none" }} />
-                      <span style={{ display: "flex", flexDirection: "column", gap: 3 }}>
-                        <span style={{ fontFamily: mono, fontSize: 11, fontWeight: 700, color: cc.color }}>{cc.name}</span>
-                        {a.field && <span style={{ fontSize: 11, color: "#8a857c" }}>{a.field}</span>}
-                      </span>
-                    </span>
-                    <span className="mz-row-title" style={{ fontFamily: serif, fontWeight: 600, fontSize: 21, letterSpacing: "-0.6px", lineHeight: 1.35, color: "#16140f" }}>{a.title}</span>
-                    <span className="mz-row-go row-go" style={{ fontFamily: mono, fontSize: 16, color: "#16140f" }}>→</span>
-                  </Link>
-                );
-              })
-            )}
-          </div>
         </section>
-      ) : list.length === 0 ? (
+      )}
+
+      {list.length === 0 ? (
         <section className="mz-wrap" style={{ paddingTop: 60, paddingBottom: 80, textAlign: "center", color: "#9a9286" }}>
           <div style={{ fontFamily: serif, fontSize: 22, fontWeight: 600, color: "#46433d" }}>첫 가이드를 준비하고 있어요.</div>
           <div style={{ fontSize: 14, marginTop: 10 }}>광고·제휴 없이, 진짜 도움 되는 글로 곧 채워집니다.</div>
