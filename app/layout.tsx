@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     description: "지마켓·11번가·쿠팡 실시간 타임딜과 골드박스를 한곳에. 매일 갱신.",
   },
   verification: {
-    google: "8nNNGFPJ1NN0YqLNP9w26zFe9l9LpTCUh8Hsd5uMA1o",
+    google: ["8nNNGFPJ1NN0YqLNP9w26zFe9l9LpTCUh8Hsd5uMA1o", "qUzhTm_1fKMVc5xBmE1gTeWexMgJqq_joWBlCY-v0_c"],
     // 네이버 서치어드바이저 소유확인
     other: { "naver-site-verification": "2b2a15f8d8c623b658382ebdced2a6c6855ffbc5" },
   },
