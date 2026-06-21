@@ -30,8 +30,8 @@ export function MagazineMasthead() {
             <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" strokeWidth="2.4" /><path d="M12 7.2V12l3.1 2" stroke="#fff" strokeWidth="2.4" strokeLinecap="round" /></svg>
           </span>
           <span style={{ display: "flex", alignItems: "baseline", gap: 9 }}>
-            <span style={{ fontWeight: 900, fontSize: 23, letterSpacing: "-0.6px" }}>오늘의딜<span style={{ color: "#ff5a3c" }}>.</span></span>
-            <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: "3px", fontWeight: 600, color: "#16140f", borderLeft: "1px solid #c8c0b3", paddingLeft: 11 }}>MAGAZINE</span>
+            <span style={{ fontWeight: 900, fontSize: 20, letterSpacing: "-0.6px" }}>오늘의딜<span style={{ color: "#ff5a3c" }}>.</span></span>
+            <span style={{ fontFamily: mono, fontSize: 16, letterSpacing: "2px", fontWeight: 700, color: "#16140f", borderLeft: "1px solid #c8c0b3", paddingLeft: 11 }}>MAGAZINE</span>
           </span>
         </Link>
         <nav className="mz-nav">

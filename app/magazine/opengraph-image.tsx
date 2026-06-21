@@ -32,26 +32,26 @@ export default async function Image() {
         <div style={{ display: "flex", alignItems: "center", gap: 26 }}>
           <div
             style={{
-              width: 132,
-              height: 132,
-              borderRadius: 34,
+              width: 112,
+              height: 112,
+              borderRadius: 30,
               background: "#ff5a3c",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
             }}
           >
-            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="68" height="68" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="12" cy="12" r="9" />
               <path d="M12 7v5l3 2" />
             </svg>
           </div>
           <div style={{ display: "flex", alignItems: "flex-end" }}>
-            <span style={{ fontSize: 116, color: "#16140f", letterSpacing: "-0.03em" }}>오늘의딜</span>
-            <span style={{ fontSize: 116, color: "#ff5a3c" }}>.</span>
+            <span style={{ fontSize: 96, color: "#16140f", letterSpacing: "-0.03em" }}>오늘의딜</span>
+            <span style={{ fontSize: 96, color: "#ff5a3c" }}>.</span>
           </div>
-          <div style={{ width: 2, height: 78, background: "#c8c0b3", margin: "0 4px" }} />
-          <span style={{ fontSize: 40, color: "#16140f", letterSpacing: "0.22em", paddingBottom: 8 }}>MAGAZINE</span>
+          <div style={{ width: 2, height: 66, background: "#c8c0b3", margin: "0 6px" }} />
+          <span style={{ fontSize: 56, color: "#16140f", letterSpacing: "0.2em", paddingBottom: 6 }}>MAGAZINE</span>
         </div>
 
         {/* 문구 */}
