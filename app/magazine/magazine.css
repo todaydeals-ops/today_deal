@@ -63,10 +63,11 @@
 .row-link:hover .row-go { transform: translateX(4px); }
 .row-go { transition: transform 0.2s ease; }
 
-/* 본문(상세) 타이포 */
+/* 본문(상세 메인 컬럼) 타이포 — 시원한 읽기 폭 */
 .mz-body { font-family: "Pretendard", -apple-system, sans-serif; }
-.mz-body > p { margin: 16px 0; }
-.mz-body h2 { font-family: "Noto Serif KR", serif; font-size: 24px; font-weight: 700; color: #16140f; margin: 34px 0 14px; letter-spacing: -0.6px; }
+.mz-body > p { font-size: 18px; line-height: 1.95; color: #2c2a24; margin: 18px 0 0; }
+.mz-body > p:first-child { margin-top: 0; }
+.mz-body h2 { font-family: "Noto Serif KR", serif; font-size: 27px; font-weight: 700; color: #16140f; margin: 44px 0 0; letter-spacing: -0.6px; line-height: 1.3; }
 .mz-body strong, .mz-body b { font-weight: 700; color: #16140f; }
 .mz-body img { max-width: 100%; border-radius: 10px; }
 
@@ -92,4 +93,10 @@
   .mz-row .mz-row-num { display: none; }
   .mz-row-title { grid-column: 1 / -1; font-size: 18px !important; }
   .mz-row-go { display: none; }
+}
+
+/* 상세 본문 그리드 — 메인 + 사이드 레일 */
+@media (max-width: 900px) {
+  .art-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
+  .art-rail { position: static !important; }
 }

@@ -10,8 +10,10 @@ export interface MagazineArticle {
   subtitle?: string;
   excerpt?: string;
   readMin?: number;
-  bodyHtml: string; // 본문(시그니처 컴포넌트 포함 HTML) — 본문 내 구매/제휴 링크 없음
-  closing?: string; // 정직한 마무리(조건부 결론)
+  bodyHtml: string; // 본문(메인 컬럼 HTML) — 본문 내 구매/제휴 링크 없음
+  closing?: string; // 정직한 마무리(조건부 결론, 풀폭)
+  summary?: string[]; // 사이드 레일: 3줄 요약
+  callout?: string; // 사이드 레일: '짚고 가요' (HTML 허용)
   createdAt: string;
 }
 
@@ -30,6 +32,21 @@ interface Row {
 }
 
 function map(r: Row): MagazineArticle {
+  // 본문 맨 앞 <!--RAIL:{...}--> 주석에서 레일용(summary·callout) 분리
+  let bodyHtml = r.body_html ?? "";
+  let summary: string[] | undefined;
+  let callout: string | undefined;
+  const m = bodyHtml.match(/^\s*<!--RAIL:([\s\S]*?)-->\s*/);
+  if (m) {
+    try {
+      const j = JSON.parse(m[1]);
+      if (Array.isArray(j.summary)) summary = j.summary;
+      if (typeof j.callout === "string") callout = j.callout;
+    } catch {
+      /* ignore malformed rail */
+    }
+    bodyHtml = bodyHtml.slice(m[0].length);
+  }
   return {
     id: r.id,
     slug: r.slug,
@@ -39,8 +56,10 @@ function map(r: Row): MagazineArticle {
     subtitle: r.subtitle ?? undefined,
     excerpt: r.excerpt ?? undefined,
     readMin: r.read_min ?? undefined,
-    bodyHtml: r.body_html,
+    bodyHtml,
     closing: r.closing ?? undefined,
+    summary,
+    callout,
     createdAt: r.created_at,
   };
 }

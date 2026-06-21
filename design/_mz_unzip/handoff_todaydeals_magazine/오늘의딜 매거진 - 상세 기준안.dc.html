@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{ box-sizing:border-box; }
+  body{ margin:0; }
+  ::selection{ background:#16140f; color:#ff5a3c; }
+  .ul-sweep{ position:relative; }
+  .ul-sweep::after{ content:""; position:absolute; left:0; right:100%; bottom:-3px; height:1.5px; background:#16140f; transition:right .3s ease; }
+  .ul-sweep:hover::after{ right:0; }
+  @media (max-width:900px){ .art-grid{ grid-template-columns:1fr !important; } .art-rail{ position:static !important; } }
+</style>
+</helmet>
+
+<div style="background:#f4efe7; min-height:100vh; font-family:'Pretendard',-apple-system,sans-serif; color:#16140f;">
+
+  <!-- utility bar -->
+  <div style="background:#16140f; color:#cdc6ba; font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.5px;">
+    <div style="max-width:1120px; margin:0 auto; padding:7px 44px; display:flex; align-items:center; justify-content:space-between;">
+      <span style="display:flex; align-items:center; gap:8px;"><span style="color:#ff5a3c;">●</span> 광고 0 · 제휴 0 · 구매 판단의 기준만</span>
+      <span style="display:flex; gap:18px;"><span style="cursor:pointer;">오늘의딜 홈</span><span style="cursor:pointer; color:#fff;">매거진</span></span>
+    </div>
+  </div>
+
+  <!-- header -->
+  <header style="border-bottom:1px solid rgba(22,20,15,0.16); background:#f4efe7;">
+    <div style="max-width:1120px; margin:0 auto; padding:22px 44px; display:flex; align-items:center; justify-content:space-between;">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="width:34px; height:34px; border-radius:10px; background:#ff5a3c; display:flex; align-items:center; justify-content:center;"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="2.4"/><path d="M12 7.2V12l3.1 2" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+        <span style="display:flex; align-items:baseline; gap:9px;"><span style="font-weight:900; font-size:23px; letter-spacing:-0.6px;">오늘의딜<span style="color:#ff5a3c;">.</span></span><span style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:3px; font-weight:600; border-left:1px solid #c8c0b3; padding-left:11px;">MAGAZINE</span></span>
+      </div>
+      <nav style="display:flex; gap:26px; font-size:13px; font-weight:600; color:#5b564d;">
+        <span class="ul-sweep" style="cursor:pointer;">팩트체크</span><span class="ul-sweep" style="cursor:pointer;">스마트가이드</span><span class="ul-sweep" style="cursor:pointer;">끝장비교</span><span class="ul-sweep" style="cursor:pointer;">롱런팁</span><span class="ul-sweep" style="cursor:pointer;">트렌드랩</span>
+      </nav>
+    </div>
+  </header>
+
+  <div style="max-width:1120px; margin:0 auto; padding:0 44px;">
+
+    <!-- TITLE BLOCK (full width) -->
+    <div style="padding:50px 0 0;">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:.5px; color:#9a9286; display:flex; align-items:center; gap:8px;">
+        <span style="cursor:pointer;">매거진</span><span style="opacity:.5;">›</span><span style="color:#1f6b66; font-weight:600; cursor:pointer;">팩트체크</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:9px; margin-top:18px;">
+        <span style="display:flex; align-items:center; gap:7px;"><span style="width:8px; height:8px; border-radius:9999px; background:#1f6b66;"></span><span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; letter-spacing:.5px; color:#1f6b66;">팩트체크</span></span>
+        <span style="font-size:12px; font-weight:500; color:#46433d; background:#e8e1d5; border-radius:9999px; padding:4px 12px;">가전</span>
+      </div>
+      <h1 style="font-family:'Noto Serif KR',serif; font-weight:700; font-size:46px; letter-spacing:-1.6px; line-height:1.26; margin:18px 0 0; color:#16140f; text-wrap:balance; max-width:900px;">‘초미세먼지 99.9% 제거’ 광고, 어디까지 진짜일까</h1>
+      <div style="font-family:'Noto Serif KR',serif; font-weight:500; font-size:20px; line-height:1.6; color:#7a756a; margin:14px 0 0;">숫자 뒤에 숨은 ‘시험 조건’을 봅니다</div>
+      <div style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#9a9286; margin-top:20px; padding-bottom:30px; border-bottom:1px solid rgba(22,20,15,0.16);">편집국 · 2026.06.21 · 읽기 7분</div>
+    </div>
+
+    <!-- BODY GRID : main + rail (전 폭 사용) -->
+    <div class="art-grid" style="display:grid; grid-template-columns:1fr 320px; gap:64px; padding:40px 0 0; align-items:start;">
+
+      <!-- MAIN COLUMN -->
+      <main style="min-width:0;">
+        <p style="font-size:18px; line-height:1.95; color:#2c2a24; margin:0;">공기청정기 광고마다 ‘초미세먼지 99.9% 제거’가 붙어 있는데요. 정작 우리 집 공기는 별로 달라진 것 같지 않아 의아하셨던 분 많으실 텐데요. 결론부터 말하면 그 숫자는 <b style="font-weight:700;">거짓은 아니지만, ‘우리 집 성능’도 아닌</b> 편이에요. 어디서 나온 숫자인지부터 보면 이유가 보입니다.</p>
+
+        <h2 style="font-family:'Noto Serif KR',serif; font-weight:700; font-size:27px; letter-spacing:-0.6px; line-height:1.3; margin:44px 0 0; color:#16140f;">광고 문구 vs 실제 의미</h2>
+        <p style="font-size:15px; line-height:1.8; color:#76726b; margin:10px 0 22px;">자주 보이는 광고 표현과, 그 숫자가 실제로 무엇을 뜻하는지 정리했습니다.</p>
+
+        <!-- COMPARISON TABLE (main 폭 가득) -->
+        <div style="border:1px solid rgba(22,20,15,0.14); border-radius:12px; overflow:hidden;">
+          <div style="display:grid; grid-template-columns:0.85fr 1.15fr; background:#16140f; color:#fff; font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.5px;">
+            <div style="padding:13px 18px;">광고 문구</div><div style="padding:13px 18px; border-left:1px solid rgba(255,255,255,0.14);">실제 의미</div>
+          </div>
+          <div style="display:grid; grid-template-columns:0.85fr 1.15fr; border-top:1px solid rgba(22,20,15,0.08);">
+            <div style="padding:16px 18px; font-weight:700; font-size:14px;">“초미세먼지 99.9% 제거”</div><div style="padding:16px 18px; border-left:1px solid rgba(22,20,15,0.08); font-size:14px; line-height:1.75; color:#46433d;">밀폐 시험 챔버에서 필터를 1회 통과할 때의 집진효율이에요. 풍량·방 크기·환기 누설은 반영 안 돼, 방 전체를 그만큼 깨끗하게 만든다는 뜻이 아닌 편입니다.</div>
+          </div>
+          <div style="display:grid; grid-template-columns:0.85fr 1.15fr; border-top:1px solid rgba(22,20,15,0.08); background:#faf8f5;">
+            <div style="padding:16px 18px; font-weight:700; font-size:14px;">“HEPA급 / HEPA-타입”</div><div style="padding:16px 18px; border-left:1px solid rgba(22,20,15,0.08); font-size:14px; line-height:1.75; color:#46433d;">규제·시험 없는 마케팅 용어일 수 있어요. 정식 HEPA는 H13(99.95%)부터예요. ‘급/타입’은 90% 이하만 거르기도 합니다.</div>
+          </div>
+          <div style="display:grid; grid-template-columns:0.85fr 1.15fr; border-top:1px solid rgba(22,20,15,0.08);">
+            <div style="padding:16px 18px; font-weight:700; font-size:14px;">“최대 ◯◯㎡ 적용”</div><div style="padding:16px 18px; border-left:1px solid rgba(22,20,15,0.08); font-size:14px; line-height:1.75; color:#46433d;">천장 2.4m·약한 조건(10분·50% 감소) 기준이라, 미세먼지 목적엔 실효 면적이 더 좁은 편이에요.</div>
+          </div>
+          <div style="display:grid; grid-template-columns:0.85fr 1.15fr; border-top:1px solid rgba(22,20,15,0.08); background:#faf8f5;">
+            <div style="padding:16px 18px; font-weight:700; font-size:14px;">“도서관처럼 조용”</div><div style="padding:16px 18px; border-left:1px solid rgba(22,20,15,0.08); font-size:14px; line-height:1.75; color:#46433d;">대개 취침·약풍 단계 기준이에요. 정작 공기를 빨리 정화하는 터보는 50~60dB로 시끄러운 편입니다.</div>
+          </div>
+          <div style="display:grid; grid-template-columns:0.85fr 1.15fr; border-top:1px solid rgba(22,20,15,0.08);">
+            <div style="padding:16px 18px; font-weight:700; font-size:14px;">“필터 1년 사용”</div><div style="padding:16px 18px; border-left:1px solid rgba(22,20,15,0.08); font-size:14px; line-height:1.75; color:#46433d;">표준 경부하 가정이에요. 반려·흡연·고농도·24시간 가동이면 더 짧아지고, 헤파·탈취는 매년 비용이 드는 소모품이에요.</div>
+          </div>
+        </div>
+
+        <h2 style="font-family:'Noto Serif KR',serif; font-weight:700; font-size:27px; letter-spacing:-0.6px; line-height:1.3; margin:44px 0 0; color:#16140f;">그럼 뭘 봐야 할까요</h2>
+        <p style="font-size:18px; line-height:1.95; color:#2c2a24; margin:14px 0 0;">광고 숫자 대신, 실사용 체감을 좌우하는 건 따로 있는 편인데요.</p>
+        <p style="font-size:18px; line-height:1.95; color:#2c2a24; margin:18px 0 0;"><b style="font-weight:700;">CADR(청정공기공급률)</b> · 1분에 깨끗한 공기를 얼마나 내보내는지를 나타내는 핵심 수치예요(풍량×필터효율). 적용면적보다 이 숫자가 체감을 좌우하고, 표준화돼 있어 브랜드 간 비교가 되는 편입니다.</p>
+        <p style="font-size:18px; line-height:1.95; color:#2c2a24; margin:18px 0 0;"><b style="font-weight:700;">필터 등급(H13 이상)</b> · ‘HEPA급’이 아니라 등급 표기를 확인하세요. 같은 평수라도 등급과 CADR이 다르면 체감이 크게 갈립니다.</p>
+
+        <h2 style="font-family:'Noto Serif KR',serif; font-weight:700; font-size:27px; letter-spacing:-0.6px; line-height:1.3; margin:44px 0 0; color:#16140f;">면적 표기를 그대로 믿으면 안 되는 이유</h2>
+        <p style="font-size:18px; line-height:1.95; color:#2c2a24; margin:14px 0 0;">‘최대 ◯◯㎡’는 대개 천장 2.4m 기준에, 30분 동안 공기를 5~6회 정도 순환시키는 약한 조건에서 산출됩니다. 그런데 미세먼지를 ‘빠르게’ 잡으려면 시간당 환기 횟수가 더 필요한 편이에요. 그래서 실전에서는 <b style="font-weight:700;">표기 면적의 1.5~2배 성능</b>을 고르라는 말이 나옵니다. 20평 거실이라면 30~40평형을 보는 식이죠.</p>
+        <p style="font-size:18px; line-height:1.95; color:#2c2a24; margin:18px 0 0;">계산은 의외로 단순합니다. 필요한 CADR ≈ 바닥면적(㎡) × 천장높이(m) × 목표 환기횟수 ÷ 60. 목표 환기를 시간당 4~5회로 두면, 같은 평수라도 필요한 숫자가 또렷하게 나옵니다. 광고의 ‘최대 면적’ 한 줄보다 이 계산 한 번이 더 정직해요.</p>
+
+        <h2 style="font-family:'Noto Serif KR',serif; font-weight:700; font-size:27px; letter-spacing:-0.6px; line-height:1.3; margin:44px 0 0; color:#16140f;">소음과 유지비, 광고가 잘 안 보여주는 두 가지</h2>
+        <p style="font-size:18px; line-height:1.95; color:#2c2a24; margin:14px 0 0;">‘도서관처럼 조용’은 대개 취침·약풍 단계 수치입니다. 정작 미세먼지가 높을 때 돌리는 터보는 50~60dB로, 일반 대화 소리에 가깝게 시끄러운 편이에요. 침실용이라면 <b style="font-weight:700;">약풍에서의 소음과 그때의 CADR</b>을 함께 보는 게 현실적입니다.</p>
+        <p style="font-size:18px; line-height:1.95; color:#2c2a24; margin:18px 0 0;">유지비도 빼놓을 수 없어요. 헤파·탈취 필터는 매년 갈아야 하는 소모품이고, 반려동물·흡연·고농도 환경에서는 교체 주기가 더 짧아집니다. 본체 가격이 싸도 필터가 비싸면 3년 총비용이 역전되기도 합니다. ‘필터 1년’이라는 표기보다, <b style="font-weight:700;">정품 필터의 개당 가격과 권장 주기</b>를 먼저 확인하세요.</p>
+
+        <!-- mini cost note (본문 폭 가득) -->
+        <div style="border:1px solid rgba(22,20,15,0.14); border-radius:12px; padding:20px 22px; margin:26px 0 0; background:#fcfbf9;">
+          <div style="font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:1.5px; color:#9a9286;">3년 체감 비용 — 예시(공개 스펙 기준 추정)</div>
+          <div style="display:flex; flex-direction:column; gap:14px; margin-top:16px;">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:7px;"><span style="font-size:14px; font-weight:700;">본체 A · 필터 저가</span><span style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700;">약 28만원</span></div>
+              <div style="display:flex; height:18px; border-radius:5px; overflow:hidden; background:#efe9df;"><div style="width:43%; background:#1f6b66;"></div><div style="width:57%; background:#8fc0bb;"></div></div>
+            </div>
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:7px;"><span style="font-size:14px; font-weight:700;">본체 B · 필터 고가</span><span style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:#ff5a3c;">약 41만원</span></div>
+              <div style="display:flex; height:18px; border-radius:5px; overflow:hidden; background:#efe9df;"><div style="width:34%; background:#38539a;"></div><div style="width:66%; background:#9aa9d4;"></div></div>
+            </div>
+          </div>
+          <div style="display:flex; gap:16px; margin-top:12px; font-family:'JetBrains Mono',monospace; font-size:10.5px; color:#76726b;"><span>■ 본체값</span><span>■ 3년 필터값</span></div>
+          <p style="font-size:13px; line-height:1.7; color:#76726b; margin:14px 0 0;">본체가 13만원 싸도 필터가 비싸면 3년 총비용은 더 들 수 있어요. 숫자는 제품마다 다르니, 구매 전 정품 필터 가격을 직접 더해보세요.</p>
+        </div>
+
+        <h2 style="font-family:'Noto Serif KR',serif; font-weight:700; font-size:27px; letter-spacing:-0.6px; line-height:1.3; margin:44px 0 0; color:#16140f;">사기 전, 이 다섯 줄만 확인하세요</h2>
+        <div style="margin-top:16px; border-top:1px solid rgba(22,20,15,0.12);">
+          <div style="display:flex; gap:14px; padding:15px 2px; border-bottom:1px solid rgba(22,20,15,0.08);"><span style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:13px; color:#1f6b66; flex:none;">01</span><span style="font-size:16px; line-height:1.6; color:#33312d;">필터 등급이 <b style="font-weight:700;">H13 이상</b>으로 표기돼 있는가</span></div>
+          <div style="display:flex; gap:14px; padding:15px 2px; border-bottom:1px solid rgba(22,20,15,0.08);"><span style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:13px; color:#1f6b66; flex:none;">02</span><span style="font-size:16px; line-height:1.6; color:#33312d;"><b style="font-weight:700;">CADR(㎥/h)</b> 수치가 공개돼 있고, 내 방 계산값보다 큰가</span></div>
+          <div style="display:flex; gap:14px; padding:15px 2px; border-bottom:1px solid rgba(22,20,15,0.08);"><span style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:13px; color:#1f6b66; flex:none;">03</span><span style="font-size:16px; line-height:1.6; color:#33312d;">표기 면적이 내 공간의 <b style="font-weight:700;">1.5배 이상</b>인가</span></div>
+          <div style="display:flex; gap:14px; padding:15px 2px; border-bottom:1px solid rgba(22,20,15,0.08);"><span style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:13px; color:#1f6b66; flex:none;">04</span><span style="font-size:16px; line-height:1.6; color:#33312d;"><b style="font-weight:700;">약풍 소음</b>과 그때의 정화 성능을 함께 확인했는가</span></div>
+          <div style="display:flex; gap:14px; padding:15px 2px;"><span style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:13px; color:#1f6b66; flex:none;">05</span><span style="font-size:16px; line-height:1.6; color:#33312d;">정품 필터 <b style="font-weight:700;">개당 가격 × 3년</b>을 더해봤는가</span></div>
+        </div>
+      </main>
+
+      <!-- SIDE RAIL -->
+      <aside class="art-rail" style="position:sticky; top:24px; display:flex; flex-direction:column; gap:18px;">
+        <!-- honesty badge -->
+        <div style="border:1px solid rgba(22,20,15,0.12); background:#faf8f5; border-radius:14px; padding:16px;">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <span style="width:30px; height:30px; border-radius:9999px; border:2px solid #ff5a3c; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#ff5a3c" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span style="font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:600; letter-spacing:.5px; color:#ff5a3c;">AD-FREE</span>
+          </div>
+          <div style="font-size:13px; font-weight:700; line-height:1.5; margin-top:12px;">특정 제품을 추천하지 않습니다</div>
+          <div style="font-size:12px; color:#76726b; line-height:1.55; margin-top:4px;">소비자의 바른 선택, 그 방향만 제시합니다.</div>
+        </div>
+        <!-- TL;DR -->
+        <div style="border:1px solid rgba(22,20,15,0.14); border-radius:14px; padding:18px;">
+          <div style="font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:1.5px; color:#9a9286;">3줄 요약</div>
+          <div style="display:flex; flex-direction:column; gap:12px; margin-top:14px;">
+            <div style="display:flex; gap:10px;"><span style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:12px; color:#1f6b66; flex:none;">01</span><span style="font-size:13px; line-height:1.6; color:#33312d;">99.9%는 챔버 1회 통과 효율 — 방 전체 성능이 아니에요.</span></div>
+            <div style="display:flex; gap:10px;"><span style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:12px; color:#1f6b66; flex:none;">02</span><span style="font-size:13px; line-height:1.6; color:#33312d;">‘HEPA급’이 아니라 H13 이상 등급을 보세요.</span></div>
+            <div style="display:flex; gap:10px;"><span style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:12px; color:#1f6b66; flex:none;">03</span><span style="font-size:13px; line-height:1.6; color:#33312d;">체감을 좌우하는 핵심 수치는 CADR입니다.</span></div>
+          </div>
+        </div>
+        <!-- 짚고 가요 -->
+        <div style="border:1px solid #f0c3b5; background:#fff5f1; border-radius:14px; padding:18px;">
+          <div style="font-family:'JetBrains Mono',monospace; font-size:10.5px; font-weight:700; letter-spacing:1px; color:#ff5a3c;">짚고 가요</div>
+          <p style="font-size:13px; line-height:1.7; color:#8a3a22; margin:10px 0 0;">‘H11=99.5%, H12=99.95%’는 틀린 표기예요. 국제 등급(EN 1822)에 <b style="font-weight:700;">H11·H12 등급은 없고</b>, 정식 HEPA는 <b style="font-weight:700;">H13(0.3㎛ 99.95%)</b>부터 시작합니다.</p>
+        </div>
+      </aside>
+
+    </div>
+
+    <!-- 정직한 마무리 (full width) -->
+    <div style="background:#16140f; border-radius:16px; padding:30px 34px; margin:48px 0 0;">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:1px; color:#ff8a6f; font-weight:600;">정직한 마무리</div>
+      <p style="font-family:'Noto Serif KR',serif; font-weight:600; font-size:22px; line-height:1.6; letter-spacing:-0.4px; color:#f3efe9; margin:12px 0 0; max-width:760px;">광고의 99.9%는 거짓이 아니라 ‘특정 조건의 진실’입니다. 숫자가 아니라 <span style="color:#ff8a6f;">그 숫자가 측정된 조건</span>을 보세요. 선택은 당신의 몫입니다.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer style="background:#0f0e0a; color:#8a857c; margin-top:56px;">
+    <div style="max-width:1120px; margin:0 auto; padding:30px 44px; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;">
+      <nav style="display:flex; gap:20px; font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.5px; flex-wrap:wrap;">
+        <span style="cursor:pointer; color:#cdc6ba;">오늘의딜 홈</span><span style="cursor:pointer; color:#cdc6ba;">매거진</span><span style="cursor:pointer;">이용약관</span><span style="cursor:pointer;">개인정보처리방침</span>
+      </nav>
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px;">© 2026 TODAYDEALS. All rights reserved.</div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>
