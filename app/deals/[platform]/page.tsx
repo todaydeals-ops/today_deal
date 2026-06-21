@@ -65,7 +65,7 @@ export async function generateMetadata({ params }: { params: Promise<{ platform:
     description: s.desc,
     keywords: s.kw,
     alternates: { canonical: `${SITE}/deals/${platform}` },
-    openGraph: { title, description: s.desc, url: `${SITE}/deals/${platform}`, type: "website" },
+    openGraph: { title, description: s.desc, url: `${SITE}/deals/${platform}`, type: "website", images: [{ url: `${SITE}/opengraph-image`, width: 1200, height: 630 }] },
   };
 }
 

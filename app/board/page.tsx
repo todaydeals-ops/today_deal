@@ -31,7 +31,7 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
     title: `${m.title} | 오늘의딜`,
     description: m.desc,
     alternates: { canonical: canon },
-    openGraph: { title: `${m.title} | 오늘의딜`, description: m.desc, url: canon, type: "website" },
+    openGraph: { title: `${m.title} | 오늘의딜`, description: m.desc, url: canon, type: "website", images: [{ url: `${SITE}/opengraph-image`, width: 1200, height: 630 }] },
   };
 }
 
@@ -60,8 +60,21 @@ export default async function Board({ searchParams }: { searchParams: Promise<{ 
     return s ? `/board?${s}` : "/board";
   };
 
+  const itemListLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: m.title,
+    itemListElement: deals.filter((d) => d.slug).map((d, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${SITE}/board/${d.slug}`,
+      name: d.title,
+    })),
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }} />
       <Header />
       <main className="wrap">
         <Banner variant="board" boardType={type} />

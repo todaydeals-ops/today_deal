@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     description: "에디터가 직접 골라 영상으로 보여주는 쿠팡 추천템 모음.",
     url: `${SITE}/recommended`,
     type: "website",
+    images: [{ url: `${SITE}/opengraph-image`, width: 1200, height: 630 }],
   },
 };
 
@@ -27,8 +28,26 @@ export const metadata: Metadata = {
 export default async function Recommended() {
   const [deals, header] = await Promise.all([fetchActiveCurated(), getRecommendedHeader()]);
 
+  const itemListLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "오늘의 추천딜",
+    itemListElement: deals.filter((d) => d.slug).map((d, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "Product",
+        name: d.productName,
+        ...(d.imageUrl ? { image: d.imageUrl } : {}),
+        url: `${SITE}/recommended/${d.slug}`,
+        offers: { "@type": "Offer", price: d.salePrice, priceCurrency: "KRW", availability: "https://schema.org/InStock", url: `${SITE}/recommended/${d.slug}` },
+      },
+    })),
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }} />
       <Header />
       <main className="wrap">
         <RecommendedHeader header={header} />

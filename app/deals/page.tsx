@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     description: "지마켓·11번가·쿠팡·알리 타임딜·골드박스를 한곳에. 매일 갱신.",
     url: `${SITE}/deals`,
     type: "website",
+    images: [{ url: `${SITE}/opengraph-image`, width: 1200, height: 630 }],
   },
 };
 
@@ -48,7 +49,7 @@ export default async function DealsIndex() {
             "@type": "Product",
             name: d.productName,
             ...(d.imageUrl ? { image: d.imageUrl } : {}),
-            offers: { "@type": "Offer", price: d.salePrice, priceCurrency: "KRW", url: `${SITE}/deal/${d.slug}` },
+            offers: { "@type": "Offer", price: d.salePrice, priceCurrency: "KRW", availability: "https://schema.org/InStock", url: `${SITE}/deal/${d.slug}` },
           },
         })),
       },
