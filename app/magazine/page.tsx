@@ -26,8 +26,22 @@ export default async function MagazineHome({ searchParams }: { searchParams: Pro
 
   const [hiPre, hiPost] = CATCH.media.tail.split(CATCH.media.hi);
 
+  const itemListLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "오늘의딜 매거진 — 중립 쇼핑 가이드",
+    description: `${CATCH.media.lead} ${CATCH.media.tail}`,
+    itemListElement: list.map((a, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${SITE}/magazine/${a.slug}`,
+      name: a.title,
+    })),
+  };
+
   return (
     <div className="mz-page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }} />
       <MagazineUtilBar />
       <MagazineMasthead />
 

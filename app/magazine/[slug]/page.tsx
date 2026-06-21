@@ -37,15 +37,28 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
     ...(a.subtitle ? { alternativeHeadline: a.subtitle } : {}),
     ...(a.excerpt ? { description: a.excerpt } : {}),
     datePublished: a.createdAt,
+    dateModified: a.createdAt,
     author: { "@type": "Organization", name: "오늘의딜 편집국" },
     publisher: { "@type": "Organization", name: "오늘의딜", url: SITE },
     mainEntityOfPage: `${SITE}/magazine/${slug}`,
     articleSection: c.name,
+    isAccessibleForFree: true,
+  };
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "매거진", item: `${SITE}/magazine` },
+      { "@type": "ListItem", position: 2, name: c.name, item: `${SITE}/magazine?corner=${a.corner}` },
+      { "@type": "ListItem", position: 3, name: a.title, item: `${SITE}/magazine/${slug}` },
+    ],
   };
 
   return (
     <div className="mz-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <MagazineUtilBar />
       <MagazineMasthead />
 
