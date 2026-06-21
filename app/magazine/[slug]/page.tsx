@@ -3,11 +3,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { fetchMagazineBySlug } from "@/lib/data/magazine";
 import { cornerOf } from "@/lib/magazine/corners";
-import { MagazineHeader, MagazineFooter, HonestyBadge, CornerChip, FieldChip } from "@/components/magazine/Chrome";
+import { MagazineUtilBar, MagazineMasthead, MagazineFooter, HonestyBadge, CornerDot, FieldPill } from "@/components/magazine/Chrome";
 
 export const dynamic = "force-dynamic";
 const SITE = "https://www.todaydeals.co.kr";
 const mono = "'JetBrains Mono', monospace";
+const serif = "'Noto Serif KR', serif";
 const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -45,43 +46,42 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   return (
     <div className="mz-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
-      <MagazineHeader />
-      <main className="mz-aw">
-        <div className="mz-sheet">
-          {/* hero */}
-          <div className="mz-hero">
-            <div className="mz-bc">
-              <Link href="/magazine" style={{ color: "#7a2e1c" }}>매거진</Link>
-              <span style={{ opacity: 0.5 }}>›</span>
-              <Link href={`/magazine?corner=${a.corner}`} style={{ color: "#7a2e1c" }}>{c.name}</Link>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 14 }}>
-              <CornerChip cornerKey={a.corner} />
-              <FieldChip field={a.field} />
-            </div>
-            <h1 className="mz-h1" style={{ fontSize: 36, marginTop: 14 }}>
-              {a.title}
-              {a.subtitle ? <><br /><span style={{ fontSize: 24, fontWeight: 700 }}>{a.subtitle}</span></> : null}
-            </h1>
-            <div style={{ fontFamily: mono, fontSize: 12, color: "#7a2e1c", marginTop: 18, letterSpacing: ".3px" }}>
-              편집국 · {fmtDate(a.createdAt)}{a.readMin ? ` · 읽기 ${a.readMin}분` : ""}
-            </div>
-          </div>
+      <MagazineUtilBar />
+      <MagazineMasthead />
 
-          {/* body */}
-          <article style={{ maxWidth: 720, margin: "0 auto", padding: "30px 28px 44px" }}>
-            <HonestyBadge />
-            <div className="mz-body" style={{ fontSize: 16, color: "#33312d", lineHeight: 1.85 }} dangerouslySetInnerHTML={{ __html: a.bodyHtml }} />
-
-            {a.closing && (
-              <div style={{ marginTop: 30, padding: "22px 24px", background: "#16160f", borderRadius: 14 }}>
-                <div style={{ fontFamily: mono, fontSize: 11, letterSpacing: "1px", color: "#ff8a6f", fontWeight: 600, marginBottom: 8 }}>정직한 마무리</div>
-                <p style={{ fontSize: 15, color: "#f3efe9", lineHeight: 1.8, margin: 0, fontWeight: 500 }} dangerouslySetInnerHTML={{ __html: a.closing }} />
-              </div>
-            )}
-          </article>
+      {/* 헤더(헤로) */}
+      <section className="mz-wrap" style={{ paddingTop: 40, paddingBottom: 6 }}>
+        <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: "1px", color: "#9a9286", display: "flex", gap: 8, alignItems: "center" }}>
+          <Link href="/magazine" className="ul-sweep" style={{ color: "#9a9286", textDecoration: "none" }}>매거진</Link>
+          <span style={{ opacity: 0.5 }}>›</span>
+          <Link href={`/magazine?corner=${a.corner}`} className="ul-sweep" style={{ color: "#9a9286", textDecoration: "none" }}>{c.name}</Link>
         </div>
-      </main>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 16, flexWrap: "wrap" }}>
+          <CornerDot cornerKey={a.corner} />
+          <FieldPill field={a.field} />
+        </div>
+        <h1 style={{ fontFamily: serif, fontWeight: 700, fontSize: 42, letterSpacing: "-1.6px", lineHeight: 1.22, color: "#16140f", margin: "16px 0 0", maxWidth: 880, textWrap: "balance" }}>
+          {a.title}
+          {a.subtitle ? <><br /><span style={{ fontSize: 26, fontWeight: 600, color: "#7a756a" }}>{a.subtitle}</span></> : null}
+        </h1>
+        <div style={{ fontFamily: mono, fontSize: 12, color: "#9a9286", marginTop: 18, letterSpacing: ".3px" }}>
+          편집국 · {fmtDate(a.createdAt)}{a.readMin ? ` · 읽기 ${a.readMin}분` : ""}
+        </div>
+      </section>
+
+      {/* 본문 */}
+      <article className="mz-wrap" style={{ maxWidth: 760, paddingTop: 10, paddingBottom: 56 }}>
+        <HonestyBadge />
+        <div className="mz-body" style={{ fontSize: 16.5, color: "#2c2a24", lineHeight: 1.9 }} dangerouslySetInnerHTML={{ __html: a.bodyHtml }} />
+
+        {a.closing && (
+          <div style={{ marginTop: 34, padding: "24px 26px", background: "#16140f", borderRadius: 14 }}>
+            <div style={{ fontFamily: mono, fontSize: 11, letterSpacing: "1px", color: "#ff8a6f", fontWeight: 600, marginBottom: 8 }}>정직한 마무리</div>
+            <p style={{ fontFamily: serif, fontSize: 17, color: "#f3efe9", lineHeight: 1.85, margin: 0, fontWeight: 500 }} dangerouslySetInnerHTML={{ __html: a.closing }} />
+          </div>
+        )}
+      </article>
+
       <MagazineFooter />
     </div>
   );
