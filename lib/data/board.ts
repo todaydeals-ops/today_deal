@@ -152,3 +152,23 @@ export async function fetchBoardSlugs(limit = 2000): Promise<string[]> {
     return [];
   }
 }
+
+// 사이트맵용 — slug + 실제 발행일(lastmod 신호 정확화)
+export async function fetchBoardSitemap(limit = 2000): Promise<{ slug: string; lastmod: string }[]> {
+  const sb = getSupabaseAdmin();
+  if (!sb) return [];
+  try {
+    const { data } = await sb
+      .from("board_deals")
+      .select("slug, created_at")
+      .eq("is_published", true)
+      .not("slug", "is", null)
+      .order("created_at", { ascending: false })
+      .limit(limit);
+    return ((data as { slug: string | null; created_at: string }[]) ?? [])
+      .filter((r) => !!r.slug)
+      .map((r) => ({ slug: r.slug as string, lastmod: r.created_at }));
+  } catch {
+    return [];
+  }
+}

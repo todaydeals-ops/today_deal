@@ -22,16 +22,25 @@ const META: Record<string, { title: string; desc: string }> = {
   },
 };
 
-export async function generateMetadata({ searchParams }: { searchParams: Promise<{ type?: string }> }): Promise<Metadata> {
+export async function generateMetadata({ searchParams }: { searchParams: Promise<{ type?: string; category?: string }> }): Promise<Metadata> {
   const sp = await searchParams;
   const type = isBoardType(sp.type) ? sp.type : "hot";
+  const cat = type === "hot" && sp.category && BOARD_CATEGORIES.includes(sp.category as never) ? sp.category : undefined;
   const m = META[type];
-  const canon = type === "hot" ? `${SITE}/board` : `${SITE}/board?type=${type}`;
+  let title = `${m.title} | 오늘의딜`;
+  let desc = m.desc;
+  let canon = type === "hot" ? `${SITE}/board` : `${SITE}/board?type=${type}`;
+  if (cat) {
+    // 카테고리 페이지를 고유 색인 자산으로 — "○○ 핫딜" 키워드 타겟
+    title = `${cat} 핫딜·특가 모음 | 오늘의딜`;
+    desc = `${cat} 카테고리 실시간 핫딜·특가. 지마켓·쿠팡 등 여러 쇼핑몰의 ${cat} 상품 할인을 한곳에 모았어요.`;
+    canon = `${SITE}/board?category=${encodeURIComponent(cat)}`;
+  }
   return {
-    title: `${m.title} | 오늘의딜`,
-    description: m.desc,
+    title,
+    description: desc,
     alternates: { canonical: canon },
-    openGraph: { title: `${m.title} | 오늘의딜`, description: m.desc, url: canon, type: "website", images: [{ url: `${SITE}/opengraph-image`, width: 1200, height: 630 }] },
+    openGraph: { title, description: desc, url: canon, type: "website", images: [{ url: `${SITE}/opengraph-image`, width: 1200, height: 630 }] },
   };
 }
 

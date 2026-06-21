@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       url: `${SITE}/deal/${slug}`,
       // 상품 이미지 있으면 썸네일로, 없으면 생략 → 브랜드 기본 OG(opengraph-image.png) 자동 적용
       ...(d.imageUrl ? { images: [d.imageUrl] } : {}),
-      type: "website",
+      type: "product",
     },
     alternates: { canonical: `${SITE}/deal/${slug}` },
   };
