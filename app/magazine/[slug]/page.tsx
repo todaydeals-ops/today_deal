@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${a.title} | 오늘의딜 매거진`,
     description: desc,
     alternates: { canonical: `${SITE}/magazine/${slug}` },
-    openGraph: { title: a.title, description: desc, url: `${SITE}/magazine/${slug}`, type: "article" },
+    openGraph: { title: a.title, description: desc, url: `${SITE}/magazine/${slug}`, type: "article", images: [{ url: `${SITE}/magazine/opengraph-image`, width: 1200, height: 630, alt: "오늘의딜 매거진" }] },
   };
 }
 
