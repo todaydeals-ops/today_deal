@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { fetchMagazineBySlug } from "@/lib/data/magazine";
+import { fetchMagazineBySlug, fetchRelatedMagazine } from "@/lib/data/magazine";
 import { cornerOf } from "@/lib/magazine/corners";
 import { MagazineUtilBar, MagazineMasthead, MagazineFooter, FieldPill } from "@/components/magazine/Chrome";
 
@@ -29,6 +29,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   const a = await fetchMagazineBySlug(slug);
   if (!a) notFound();
   const c = cornerOf(a.corner);
+  const related = await fetchRelatedMagazine(a, 4);
 
   const ld = {
     "@context": "https://schema.org",
@@ -43,6 +44,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
     mainEntityOfPage: `${SITE}/magazine/${slug}`,
     articleSection: c.name,
     isAccessibleForFree: true,
+    ...(related.length ? { relatedLink: related.map((r) => `${SITE}/magazine/${r.slug}`) } : {}),
   };
 
   const breadcrumbLd = {
@@ -132,6 +134,32 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
             <div style={{ fontFamily: mono, fontSize: 11, letterSpacing: "1px", color: "#ff8a6f", fontWeight: 600 }}>정직한 마무리</div>
             <p style={{ fontFamily: serif, fontWeight: 600, fontSize: 22, lineHeight: 1.6, letterSpacing: "-0.4px", color: "#f3efe9", margin: "12px 0 0", maxWidth: 760 }} dangerouslySetInnerHTML={{ __html: a.closing }} />
           </div>
+        )}
+
+        {/* ── 관련 가이드 (내부링크) ── */}
+        {related.length > 0 && (
+          <nav aria-label="관련 가이드" style={{ margin: "56px 0 0" }}>
+            <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", borderTop: "1px solid rgba(22,20,15,0.16)", paddingTop: 16, marginBottom: 14 }}>
+              <span style={{ fontWeight: 800, fontSize: 18 }}>이어서 볼 가이드</span>
+              <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: "2px", color: "#9a9286" }}>RELATED</span>
+            </div>
+            <div className="mz-rel-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 14 }}>
+              {related.map((r) => {
+                const rc = cornerOf(r.corner);
+                return (
+                  <Link key={r.id} href={`/magazine/${r.slug}`} className="mz-rel-card" style={{ display: "block", border: "1px solid rgba(22,20,15,0.14)", borderRadius: 14, padding: "18px 20px", textDecoration: "none", background: "#fff" }}>
+                    <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                      <span style={{ width: 8, height: 8, borderRadius: 9999, background: rc.color, flex: "none" }} />
+                      <span style={{ fontFamily: mono, fontSize: 10.5, fontWeight: 700, letterSpacing: ".5px", color: rc.color }}>{rc.name}</span>
+                      {r.field && <span style={{ fontSize: 11, color: "#8a857c" }}>· {r.field}</span>}
+                    </span>
+                    <span style={{ display: "block", fontFamily: serif, fontWeight: 600, fontSize: 18, letterSpacing: "-0.5px", lineHeight: 1.4, color: "#16140f", margin: "10px 0 0" }}>{r.title}</span>
+                    {r.subtitle && <span style={{ display: "block", fontSize: 13, lineHeight: 1.6, color: "#7a756a", margin: "7px 0 0" }}>{r.subtitle}</span>}
+                  </Link>
+                );
+              })}
+            </div>
+          </nav>
         )}
       </div>
 

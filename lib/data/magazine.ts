@@ -95,6 +95,21 @@ export async function fetchMagazineBySlug(slug: string): Promise<MagazineArticle
   }
 }
 
+// 관련 글: 같은 코너(+2)·같은 분야(+1) 가중치 후 최신순. 내부링크/색인용.
+export async function fetchRelatedMagazine(article: MagazineArticle, limit = 4): Promise<MagazineArticle[]> {
+  const all = await fetchMagazineList({ limit: 60 });
+  const scored = all
+    .filter((x) => x.slug !== article.slug)
+    .map((x) => {
+      let s = 0;
+      if (x.corner === article.corner) s += 2;
+      if (x.field && x.field === article.field) s += 1;
+      return { x, s };
+    });
+  scored.sort((a, b) => b.s - a.s || (a.x.createdAt < b.x.createdAt ? 1 : -1));
+  return scored.slice(0, limit).map((e) => e.x);
+}
+
 export async function fetchMagazineSlugs(limit = 1000): Promise<string[]> {
   const sb = getSupabaseAdmin();
   if (!sb) return [];

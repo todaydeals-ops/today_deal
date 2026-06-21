@@ -101,6 +101,13 @@
   .art-rail { position: static !important; }
 }
 
+/* 관련 가이드 카드 */
+.mz-rel-card { transition: border-color .15s ease, transform .15s ease; }
+.mz-rel-card:hover { border-color: rgba(22,20,15,0.34) !important; transform: translateY(-2px); }
+@media (max-width: 640px) {
+  .mz-rel-grid { grid-template-columns: 1fr !important; }
+}
+
 /* 모바일 마스트헤드 — 상단 코너 메뉴 숨김(바로 아래 코너 인덱스가 대신) */
 @media (max-width: 760px) {
   .mz-nav { display: none; }
