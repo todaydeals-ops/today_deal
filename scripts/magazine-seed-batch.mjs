@@ -2,16 +2,16 @@
 const URL = process.env.SUPA_URL, KEY = process.env.SUPA_KEY;
 
 // ---- 컴포넌트 헬퍼 ----
-const P0 = (t) => `<p style="font-size:16px; color:#33312d; line-height:1.85; margin:0;">${t}</p>`;
-const P = (t) => `<p style="font-size:16px; color:#33312d; line-height:1.85; margin:16px 0 0;">${t}</p>`;
-const H2 = (t) => `<h2 style="font-size:21px; font-weight:800; color:#1a1a1a; margin:34px 0 12px; letter-spacing:-0.4px;">${t}</h2>`;
-const CALL = (label, t) => `<div style="border:1px solid #e7e2d9; background:#faf8f5; border-radius:10px; padding:16px 18px; margin:24px 0;"><div style="font-size:11px; font-weight:700; letter-spacing:1px; color:#ff5a3c; margin-bottom:6px;">짚고 가요</div><p style="margin:0; font-size:14.5px; color:#33312d; line-height:1.75;">${t}</p></div>`;
-const CHECK = (rows) => `<div style="border:1px solid #e7e2d9; border-radius:12px; padding:8px 20px;">${rows.map((r, i) => `<div style="display:flex; align-items:center; gap:12px; padding:13px 0;${i < rows.length - 1 ? " border-bottom:1px solid #f1ede6;" : ""}"><span style="width:20px; height:20px; border:2px solid #ff5a3c; border-radius:5px; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#ff5a3c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span style="font-size:14px; color:#33312d;">${r}</span></div>`).join("")}</div>`;
+const P0 = (t) => `<p style="font-size:16px; color:#2c2a24; line-height:1.85; margin:0;">${t}</p>`;
+const P = (t) => `<p style="font-size:16px; color:#2c2a24; line-height:1.85; margin:16px 0 0;">${t}</p>`;
+const H2 = (t) => `<h2 style="font-family:'Noto Serif KR',serif; font-size:24px; font-weight:700; color:#16140f; margin:34px 0 12px; letter-spacing:-0.4px;">${t}</h2>`;
+const CALL = (t) => `<div style="border:1px solid rgba(22,20,15,0.14); background:#faf7f1; border-radius:10px; padding:16px 18px; margin:24px 0;"><div style="font-size:11px; font-weight:700; letter-spacing:1px; color:#ff5a3c; margin-bottom:6px;">짚고 가요</div><p style="margin:0; font-size:14.5px; color:#2c2a24; line-height:1.75;">${t}</p></div>`;
+const CHECK = (rows) => `<div style="border:1px solid rgba(22,20,15,0.14); border-radius:12px; padding:8px 20px;">${rows.map((r, i) => `<div style="display:flex; align-items:center; gap:12px; padding:13px 0;${i < rows.length - 1 ? " border-bottom:1px solid #ece4d6;" : ""}"><span style="width:20px; height:20px; border:2px solid #ff5a3c; border-radius:5px; display:flex; align-items:center; justify-content:center; flex:none;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#ff5a3c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span style="font-size:14px; color:#2c2a24;">${r}</span></div>`).join("")}</div>`;
 const TABLE = (headers, rows) => {
   const gtc = "0.9fr " + "1fr ".repeat(headers.length - 1);
-  const head = `<div style="display:grid; grid-template-columns:${gtc}; background:#1a1a1a; color:#fff; font-size:12px; font-weight:600;">${headers.map((h) => `<div style="padding:11px 13px;">${h}</div>`).join("")}</div>`;
-  const body = rows.map((row, ri) => `<div style="display:grid; grid-template-columns:${gtc}; border-top:1px solid #efece7; font-size:12.5px;${ri % 2 ? " background:#faf8f5;" : ""}">${row.map((c, ci) => `<div style="padding:11px 13px;${ci === 0 ? " font-weight:700; color:#1a1a1a;" : " color:#46433d;"}">${c}</div>`).join("")}</div>`).join("");
-  return `<div style="border:1px solid #e7e2d9; border-radius:12px; overflow:hidden;">${head}${body}</div>`;
+  const head = `<div style="display:grid; grid-template-columns:${gtc}; background:#16140f; color:#fff; font-size:12px; font-weight:600;">${headers.map((h) => `<div style="padding:11px 13px;">${h}</div>`).join("")}</div>`;
+  const body = rows.map((row, ri) => `<div style="display:grid; grid-template-columns:${gtc}; border-top:1px solid #e6dccd; font-size:12.5px;${ri % 2 ? " background:#faf7f1;" : ""}">${row.map((c, ci) => `<div style="padding:11px 13px;${ci === 0 ? " font-weight:700; color:#16140f;" : " color:#46433d;"}">${c}</div>`).join("")}</div>`).join("");
+  return `<div style="border:1px solid rgba(22,20,15,0.14); border-radius:12px; overflow:hidden;">${head}${body}</div>`;
 };
 
 // ---- 1) 팩트체크 · 공기청정기 99.9% ----
@@ -34,28 +34,28 @@ const a1 = {
     ]),
     H2("그럼 뭘 봐야 할까요"),
     P0("광고 숫자 대신, 실사용 체감을 좌우하는 건 따로 있는 편인데요."),
-    `<div style="margin:16px 0 0; font-size:15.5px; color:#33312d; line-height:1.9;"><b style="font-weight:700; color:#1a1a1a;">CADR</b> : 청정공기공급률인데요. 1분에 깨끗한 공기를 얼마나 내보내는지를 나타내는 핵심 수치예요. 적용면적보다 이 숫자가 체감을 좌우하는 편입니다.<br><b style="font-weight:700; color:#1a1a1a;">적용면적 여유</b> : 실평수의 1.3~1.5배 모델을 고르면 공기 순환에 여유가 생기는 수준이에요.<br><b style="font-weight:700; color:#1a1a1a;">취침 소음</b> : 침실용이라면 가장 조용한 단계의 dB을 확인하세요. 광고 소음은 보통 최저 풍량 기준이에요.<br><b style="font-weight:700; color:#1a1a1a;">필터 교체비</b> : 헤파 필터는 보통 6개월~1년마다 갈아요. 연간 비용을 미리 더해보는 게 좋은 편입니다.</div>`,
+    `<div style="margin:16px 0 0; font-size:15.5px; color:#2c2a24; line-height:1.9;"><b style="font-weight:700; color:#16140f;">CADR</b> : 청정공기공급률인데요. 1분에 깨끗한 공기를 얼마나 내보내는지를 나타내는 핵심 수치예요. 적용면적보다 이 숫자가 체감을 좌우하는 편입니다.<br><b style="font-weight:700; color:#16140f;">적용면적 여유</b> : 실평수의 1.3~1.5배 모델을 고르면 공기 순환에 여유가 생기는 수준이에요.<br><b style="font-weight:700; color:#16140f;">취침 소음</b> : 침실용이라면 가장 조용한 단계의 dB을 확인하세요. 광고 소음은 보통 최저 풍량 기준이에요.<br><b style="font-weight:700; color:#16140f;">필터 교체비</b> : 헤파 필터는 보통 6개월~1년마다 갈아요. 연간 비용을 미리 더해보는 게 좋은 편입니다.</div>`,
     CALL("99.9%·H13 같은 숫자는 <b style=\"font-weight:700;\">필터 성능</b>이지, ‘방 전체를 그만큼 깨끗하게 만든다’는 뜻이 아닌 편이에요. 같은 필터라도 풍량(CADR)이 낮으면 체감은 달라집니다."),
   ].join("\n"),
 };
 
 // ---- 2) 스마트가이드 · 노트북 몇 인치 ----
 const tree = `
-<div style="border:1px solid #e7e2d9; border-radius:16px; padding:24px; margin:28px 0; background:#fcfbf9;">
-  <div style="display:flex; align-items:center; gap:8px; margin-bottom:18px;"><span style="font-size:11px; font-weight:700; letter-spacing:1px; color:#ff5a3c;">DECISION TREE</span><span style="font-size:13px; font-weight:700; color:#1a1a1a;">내 작업엔 몇 인치?</span></div>
+<div style="border:1px solid rgba(22,20,15,0.14); border-radius:16px; padding:24px; margin:28px 0; background:#fcfbf9;">
+  <div style="display:flex; align-items:center; gap:8px; margin-bottom:18px;"><span style="font-size:11px; font-weight:700; letter-spacing:1px; color:#ff5a3c;">DECISION TREE</span><span style="font-size:13px; font-weight:700; color:#16140f;">내 작업엔 몇 인치?</span></div>
   <div style="background:#ff5a3c; color:#fff; border-radius:10px; padding:13px 16px; font-size:14px; font-weight:700;">Q1. 노트북을 거의 매일 들고 다니시나요? (카페·강의·외근 잦음)</div>
   <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:12px;">
     <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
       <span style="font-size:11px; font-weight:700; color:#9a958c;">YES ↓</span>
-      <div style="width:100%; background:#1a1a1a; color:#fff; border-radius:9px; padding:12px 14px; font-size:13.5px; font-weight:700;">Q2. 주로 문서·웹·강의 위주인가요?</div>
+      <div style="width:100%; background:#16140f; color:#fff; border-radius:9px; padding:12px 14px; font-size:13.5px; font-weight:700;">Q2. 주로 문서·웹·강의 위주인가요?</div>
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; width:100%; margin-top:2px;">
-        <div style="text-align:center; border:1.5px solid #d8d2c7; color:#1a1a1a; background:#faf8f5; border-radius:9px; padding:10px 6px; font-size:12px; font-weight:700;">YES<br>13~14형</div>
-        <div style="text-align:center; border:1.5px solid #d8d2c7; color:#1a1a1a; background:#faf8f5; border-radius:9px; padding:10px 6px; font-size:12px; font-weight:700;">코딩·편집<br>14형 고해상</div>
+        <div style="text-align:center; border:1.5px solid #d8d2c7; color:#16140f; background:#faf7f1; border-radius:9px; padding:10px 6px; font-size:12px; font-weight:700;">YES<br>13~14형</div>
+        <div style="text-align:center; border:1.5px solid #d8d2c7; color:#16140f; background:#faf7f1; border-radius:9px; padding:10px 6px; font-size:12px; font-weight:700;">코딩·편집<br>14형 고해상</div>
       </div>
     </div>
     <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
       <span style="font-size:11px; font-weight:700; color:#6f6b64;">NO ↓</span>
-      <div style="width:100%; text-align:center; border:1.5px solid #d8d2c7; color:#1a1a1a; background:#faf8f5; border-radius:9px; padding:12px; font-size:13.5px; font-weight:700;">15.6~16형<br><span style="font-weight:500; font-size:11.5px; color:#76726b;">넓은 화면, 멀티작업</span></div>
+      <div style="width:100%; text-align:center; border:1.5px solid #d8d2c7; color:#16140f; background:#faf7f1; border-radius:9px; padding:12px; font-size:13.5px; font-weight:700;">15.6~16형<br><span style="font-weight:500; font-size:11.5px; color:#76726b;">넓은 화면, 멀티작업</span></div>
     </div>
   </div>
 </div>`;
