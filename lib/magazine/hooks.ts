@@ -11,6 +11,9 @@ export const MAGAZINE_HOOKS: Record<string, string> = {
   "water-purifier-direct-vs-tank": "직수 정수기가 정말 더 위생적일까요?",
   "supplement-dose-absorption-fact-check": "영양제 ‘고함량’, 많이 먹을수록 좋을까요?",
   "humidifier-type-trend-guide": "가습기, 가열식이 안전할까요 초음파가 나을까요?",
+  "summer-electricity-bill-guide": "에어컨 켜면 전기료 폭탄? 누진제 진짜 계산법 아세요?",
+  "sunscreen-spf-pa-fact-check": "선크림, SPF 높을수록 정말 좋을까요?",
+  "phone-battery-longevity-guide": "스마트폰, 밤새 충전하면 배터리 망가질까요?",
 };
 
 export function hookFor(a: { slug: string; title: string; subtitle?: string }): string {
