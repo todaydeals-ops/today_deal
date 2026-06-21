@@ -12,6 +12,7 @@ const NAV = [
   { label: "오늘의 핫딜글", href: "/board" },
   { label: "오늘의 추천딜", href: "/recommended" },
   { label: "오늘의 나눔딜", href: "/giveaway" },
+  { label: "오늘의 매거진", href: "/magazine" },
 ];
 
 export default function Header() {
