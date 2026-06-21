@@ -49,7 +49,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
       <MagazineUtilBar />
       <MagazineMasthead />
 
-      <div className="mz-wrap">
+      <div className="mz-wrap" style={{ paddingBottom: 80 }}>
         {/* ── 타이틀 블록 (풀폭) ── */}
         <div style={{ padding: "50px 0 0" }}>
           <div style={{ fontFamily: mono, fontSize: 11.5, letterSpacing: ".5px", color: "#9a9286", display: "flex", alignItems: "center", gap: 8 }}>
