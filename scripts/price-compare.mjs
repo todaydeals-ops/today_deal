@@ -124,10 +124,11 @@ async function compareDeal(d) {
 }
 
 const rest = (path, init = {}) => fetch(`${SUPA_URL}/rest/v1/${path}`, { ...init, headers: { ...H, ...(init.headers || {}) } });
-// deal_archive 키: dealSlug(platform, productUrl) = `${platform}-${숫자ID}` (lib/slug.ts와 동일 규칙)
+// deal_archive 키 — lib/slug.ts와 동일 규칙(불일치 시 archive 저장 누락)
 function dealSlug(platform, url) {
-  const m = String(url || "").match(/(\d{6,})/);
-  return m ? `${platform}-${m[1]}` : null;
+  if (!url) return null;
+  const m = String(url).match(/goodscode=(\d+)/) || String(url).match(/\/vp\/products\/(\d+)/) || String(url).match(/\/products\/(\d+)/);
+  return m && m[1] ? `${platform}-${m[1]}` : null;
 }
 
 (async () => {

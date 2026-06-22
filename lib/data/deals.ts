@@ -3,6 +3,33 @@ import type { Deal, Platform, DealBadge, PriceCompare } from "@/lib/types";
 import { PLATFORM_ORDER, BADGE_META } from "@/lib/types";
 import { getDealsByPlatform } from "@/data/mockDeals";
 import { getSupabaseServer } from "@/lib/supabase/server";
+import { dealSlug } from "@/lib/slug";
+
+// 가격비교 판정은 휘발성 deals가 아니라 영구 deal_archive에서 읽어 합친다.
+// (크롤이 deals를 통째 교체해도 배지가 사라지지 않게 — archive는 upsert로 price_compare 보존)
+async function mergeVerdicts(
+  sb: NonNullable<ReturnType<typeof getSupabaseServer>>,
+  deals: Deal[]
+): Promise<Deal[]> {
+  const bySlug = new Map<string, Deal>();
+  for (const d of deals) {
+    const s = dealSlug(d.platform, d.productUrl);
+    if (s && !bySlug.has(s)) bySlug.set(s, d);
+  }
+  const slugs = [...bySlug.keys()];
+  if (slugs.length === 0) return deals;
+  try {
+    const { data } = await sb.from("deal_archive").select("slug, price_compare").in("slug", slugs);
+    for (const r of (data as { slug: string; price_compare: PriceCompare | null }[]) ?? []) {
+      if (!r.price_compare) continue;
+      const d = bySlug.get(r.slug);
+      if (d && !d.priceCompare) d.priceCompare = r.price_compare;
+    }
+  } catch {
+    // archive 조회 실패 시 deals 자체 값만 사용
+  }
+  return deals;
+}
 
 interface DealRow {
   id: string;
@@ -148,7 +175,7 @@ export async function fetchUnifiedDeals(): Promise<Deal[]> {
         .select("*")
         .order("display_order", { ascending: true });
       if (!error && data && data.length > 0) {
-        return (data as DealRow[]).filter(isLiveRow).map(mapDeal);
+        return mergeVerdicts(sb, (data as DealRow[]).filter(isLiveRow).map(mapDeal));
       }
     } catch {
       // 폴백
@@ -178,7 +205,8 @@ export async function fetchDealsByPlatform(): Promise<Record<Platform, Deal[]>> 
         .select("*")
         .order("display_order", { ascending: true });
       if (!error && data && data.length > 0) {
-        return groupByPlatform((data as DealRow[]).filter(isLiveRow).map(mapDeal));
+        const merged = await mergeVerdicts(sb, (data as DealRow[]).filter(isLiveRow).map(mapDeal));
+        return groupByPlatform(merged);
       }
     } catch {
       // 폴백
