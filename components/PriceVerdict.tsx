@@ -57,9 +57,8 @@ const TONE: Record<VerdictTier, { c: string }> = {
 };
 const MONO = '"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace';
 
-// 컴팩트(카드용) — 다크 칩 + 네온 글로우 점 + 모노. 모든 카드에 항상 표시.
-export function PriceVerdictBadge({ pc, ourPrice }: { pc?: PriceCompare; ourPrice: number }) {
-  const { tier } = verdictOf(pc, ourPrice);
+// 다크 칩 한 개 — 지정 tier로 렌더(카드 배지·범례 공용).
+export function BadgeChip({ tier }: { tier: VerdictTier }) {
   const col = TONE[tier].c;
   return (
     <span
@@ -76,6 +75,30 @@ export function PriceVerdictBadge({ pc, ourPrice }: { pc?: PriceCompare; ourPric
       <span aria-hidden style={{ width: 6, height: 6, borderRadius: "50%", background: col, boxShadow: `0 0 6px ${col}`, flexShrink: 0 }} />
       <span>AI분석 · {tier}</span>
     </span>
+  );
+}
+
+// 컴팩트(카드용) — 상품 판정으로 칩 표시. 모든 카드에 항상 표시.
+export function PriceVerdictBadge({ pc, ourPrice }: { pc?: PriceCompare; ourPrice: number }) {
+  return <BadgeChip tier={verdictOf(pc, ourPrice).tier} />;
+}
+
+// 범례(피드 상단) — 3개 배지를 실제 이미지로 + 설명 3줄.
+export function PriceVerdictLegend() {
+  const items: { tier: VerdictTier; desc: string }[] = [
+    { tier: "강추", desc: "네이버·쿠팡보다 확실히 저렴해요" },
+    { tier: "추천", desc: "더 싸거나 최저가 수준이에요" },
+    { tier: "확인필요", desc: "더 비싸거나 비교를 못 했어요 — 직접 확인하세요" },
+  ];
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 8, marginTop: 6 }}>
+      {items.map((it) => (
+        <div key={it.tier} style={{ display: "flex", alignItems: "center", gap: 9 }}>
+          <span style={{ flexShrink: 0, minWidth: 96 }}><BadgeChip tier={it.tier} /></span>
+          <span style={{ fontSize: 12.5, color: "#6F6B64", lineHeight: 1.3 }}>{it.desc}</span>
+        </div>
+      ))}
+    </div>
   );
 }
 

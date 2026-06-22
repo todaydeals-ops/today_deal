@@ -5,7 +5,7 @@ import DealGrid from "@/components/DealGrid";
 import LiveViewers from "@/components/LiveViewers";
 import Footer from "@/components/Footer";
 import { fetchUnifiedDeals } from "@/lib/data/deals";
-import { verdictRank } from "@/components/PriceVerdict";
+import { verdictRank, PriceVerdictLegend } from "@/components/PriceVerdict";
 import { BADGE_META, type Deal } from "@/lib/types";
 import styles from "./page.module.css";
 
@@ -102,7 +102,8 @@ export default async function Home() {
             <span aria-hidden style={{ marginRight: 4 }}>🤖</span>
             AI가 골라낸 오늘의 특가
           </h1>
-          <p className={styles.sub}>네이버·쿠팡 최저가와 비교해 강추 → 추천 → 확인필요 순으로 정렬했어요</p>
+          <p className={styles.sub}>네이버·쿠팡 최저가와 비교해 매긴 AI 진단으로 정렬했어요</p>
+          <PriceVerdictLegend />
         </div>
         <DealGrid deals={feed} />
         <p style={{ fontSize: 11, color: "#9A958C", marginTop: 10, lineHeight: 1.5 }}>
