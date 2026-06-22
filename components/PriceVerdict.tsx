@@ -88,7 +88,7 @@ export function PriceVerdictLegend() {
   const items: { tier: VerdictTier; desc: string }[] = [
     { tier: "강추", desc: "네이버·쿠팡보다 확실히 저렴해요" },
     { tier: "추천", desc: "더 싸거나 최저가 수준이에요" },
-    { tier: "확인필요", desc: "더 비싸거나 비교를 못 했어요 — 직접 확인하세요" },
+    { tier: "확인필요", desc: "평상시 할인과 비슷해요 — 직접 확인하세요" },
   ];
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 8, marginTop: 6 }}>
