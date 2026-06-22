@@ -81,27 +81,25 @@ export default function Banner({ src, alt = "프로모션", variant, boardType }
     );
   }
 
-  // 기본 프로모 배너 (이미지 없을 때) — 메인 타임딜 히어로
+  // 기본 프로모 배너 (이미지 없을 때) — AI 가격검증 히어로
   return (
     <div className={`${styles.banner} ${styles.promo}`}>
       <div className={styles.left}>
         <span className={styles.kicker}>
-          <i className="ti ti-bolt" /> 오늘의 타임딜 · 실시간
+          <i className="ti ti-bolt" /> AI 가격검증 · 실시간
         </span>
         <h2 className={styles.title}>
-          매일 새로운 특가,<br />
-          한눈에 비교하고 알뜰하게.
+          진짜 싼 딜만,<br />
+          AI가 가려냅니다.
         </h2>
         <div className={styles.platforms}>
-          <span>지마켓</span>
-          <span>11번가</span>
-          <span>알리익스프레스</span>
+          <span>네이버 최저가 비교</span>
+          <span>쿠팡 최저가 비교</span>
         </div>
       </div>
       <div className={styles.right}>
         <span className={styles.pct}>
-          최대 <strong>50%</strong>
-          <i className="ti ti-arrow-down-right" />
+          🏆 <strong>진짜</strong>싸요
         </span>
         <i className={`ti ti-clock-hour-4 ${styles.clock}`} />
       </div>

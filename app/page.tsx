@@ -5,6 +5,7 @@ import DealGrid from "@/components/DealGrid";
 import LiveViewers from "@/components/LiveViewers";
 import Footer from "@/components/Footer";
 import { fetchUnifiedDeals, tierOf } from "@/lib/data/deals";
+import { isPriceWinner } from "@/components/PriceVerdict";
 import { BADGE_META, type Deal, type Platform } from "@/lib/types";
 import styles from "./page.module.css";
 
@@ -84,8 +85,13 @@ function buildItemListLd(deals: Deal[]) {
 
 export default async function Home() {
   const deals = await fetchUnifiedDeals();
-  const tier1 = interleaveByPlatform(deals.filter((d) => tierOf(d) === 1), ["gmarket", "coupang", "11st"]);
-  const tier2 = deals.filter((d) => tierOf(d) !== 1);
+  // 🏆 위너(AI가 네이버·쿠팡보다 실제로 싸다고 검증한 딜)는 최상단 별도 섹션 → 메인 피드선 제외(중복 방지)
+  const winners = deals.filter((d) => isPriceWinner(d.priceCompare, d.salePrice));
+  const rest = deals.filter((d) => !isPriceWinner(d.priceCompare, d.salePrice));
+  const tier1 = interleaveByPlatform(rest.filter((d) => tierOf(d) === 1), ["gmarket", "coupang", "11st"]);
+  const tier2 = rest.filter((d) => tierOf(d) !== 1);
+  // 위너 섹션이 h1을 가져가면 메인 피드는 h2, 위너 없으면 메인 피드가 h1(SEO 단일 h1 유지)
+  const FeedHeading = (winners.length > 0 ? "h2" : "h1") as "h1" | "h2";
 
   const ld = {
     "@context": "https://schema.org",
@@ -114,12 +120,28 @@ export default async function Home() {
           <LiveViewers />
         </div>
 
+        {winners.length > 0 && (
+          <section style={{ marginBottom: 28 }}>
+            <div className={styles.sectionHead}>
+              <h1 className={styles.title}>
+                <span aria-hidden style={{ marginRight: 4 }}>🏆</span>
+                AI가 검증한 ‘진짜 싼’ 특가
+              </h1>
+              <p className={styles.sub}>네이버·쿠팡 최저가와 직접 비교해 실제로 더 싼 딜만 골랐어요</p>
+            </div>
+            <DealGrid deals={winners} />
+            <p style={{ fontSize: 11, color: "#9A958C", marginTop: 8, lineHeight: 1.5 }}>
+              ※ AI 가격분석 추정치예요. 분석 시점에 따라 실제 가격과 달라질 수 있어요.
+            </p>
+          </section>
+        )}
+
         <div className={styles.sectionHead}>
-          <h1 className={styles.title}>
+          <FeedHeading className={styles.title}>
             <i className={`ti ti-flame ${styles.icon}`} />
             지금 진행 중인 실시간 특가
-          </h1>
-          <p className={styles.sub}>지마켓·쿠팡·11번가 MD가 지금 이 순간 엄선한 타임딜·골드박스</p>
+          </FeedHeading>
+          <p className={styles.sub}>지마켓·쿠팡·11번가의 실시간 타임딜·골드박스 — AI가 네이버·쿠팡 최저가와 비교해 표시</p>
         </div>
         <DealGrid deals={tier1.length ? tier1 : tier2} />
 

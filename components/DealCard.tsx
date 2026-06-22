@@ -64,7 +64,7 @@ export default function DealCard({ deal }: DealCardProps) {
       </div>
       {priceCompare && (
         <div style={{ marginTop: 6 }}>
-          <PriceVerdictBadge pc={priceCompare} />
+          <PriceVerdictBadge pc={priceCompare} ourPrice={salePrice} />
         </div>
       )}
     </>
