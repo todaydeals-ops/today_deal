@@ -4,35 +4,15 @@ import Banner from "@/components/Banner";
 import DealGrid from "@/components/DealGrid";
 import LiveViewers from "@/components/LiveViewers";
 import Footer from "@/components/Footer";
-import { fetchUnifiedDeals, tierOf } from "@/lib/data/deals";
-import { isPriceWinner } from "@/components/PriceVerdict";
-import { BADGE_META, type Deal, type Platform } from "@/lib/types";
+import { fetchUnifiedDeals } from "@/lib/data/deals";
+import { verdictRank } from "@/components/PriceVerdict";
+import { BADGE_META, type Deal } from "@/lib/types";
 import styles from "./page.module.css";
 
 // 딜은 자주 바뀌고 신선도가 핵심 → 항상 최신 렌더(SSR). 검색엔진·JSON-LD는 그대로 노출.
 export const dynamic = "force-dynamic";
 
 const SITE = "https://www.todaydeals.co.kr";
-
-// 1군: 플랫폼 MD 순서 신뢰 → 지마켓·쿠팡·11번가 2개씩 라운드로빈
-function interleaveByPlatform(deals: Deal[], order: Platform[], chunk = 2): Deal[] {
-  const groups = order.map((p) => deals.filter((d) => d.platform === p));
-  const idx = groups.map(() => 0);
-  const out: Deal[] = [];
-  let more = true;
-  while (more) {
-    more = false;
-    groups.forEach((g, gi) => {
-      for (let k = 0; k < chunk && idx[gi] < g.length; k++) {
-        out.push(g[idx[gi]++]);
-        more = true;
-      }
-    });
-  }
-  const known = new Set(order);
-  out.push(...deals.filter((d) => !known.has(d.platform))); // 그 외 플랫폼은 뒤에
-  return out;
-}
 
 // 자주 묻는 질문 (가시 노출 + FAQPage 스키마)
 const FAQ = [
@@ -84,19 +64,16 @@ function buildItemListLd(deals: Deal[]) {
 }
 
 export default async function Home() {
-  const deals = await fetchUnifiedDeals();
-  // 🏆 위너(AI가 네이버·쿠팡보다 실제로 싸다고 검증한 딜)는 최상단 별도 섹션 → 메인 피드선 제외(중복 방지)
-  const winners = deals.filter((d) => isPriceWinner(d.priceCompare, d.salePrice));
-  const rest = deals.filter((d) => !isPriceWinner(d.priceCompare, d.salePrice));
-  const tier1 = interleaveByPlatform(rest.filter((d) => tierOf(d) === 1), ["gmarket", "coupang", "11st"]);
-  const tier2 = rest.filter((d) => tierOf(d) !== 1);
-  // 위너 섹션이 h1을 가져가면 메인 피드는 h2, 위너 없으면 메인 피드가 h1(SEO 단일 h1 유지)
-  const FeedHeading = (winners.length > 0 ? "h2" : "h1") as "h1" | "h2";
+  const all = await fetchUnifiedDeals();
+  // 타임딜 = 11번가·지마켓만(쿠팡 골드박스는 추천딜로 분리). AI 추천순(강추→추천→확인필요)으로 정렬.
+  const feed = all
+    .filter((d) => d.platform === "11st" || d.platform === "gmarket")
+    .sort((a, b) => verdictRank(a.priceCompare, a.salePrice) - verdictRank(b.priceCompare, b.salePrice));
 
   const ld = {
     "@context": "https://schema.org",
     "@graph": [
-      buildItemListLd([...tier1, ...tier2]),
+      buildItemListLd(feed),
       {
         "@type": "FAQPage",
         mainEntity: FAQ.map((f) => ({
@@ -120,43 +97,17 @@ export default async function Home() {
           <LiveViewers />
         </div>
 
-        {winners.length > 0 && (
-          <section style={{ marginBottom: 28 }}>
-            <div className={styles.sectionHead}>
-              <h1 className={styles.title}>
-                <span aria-hidden style={{ marginRight: 4 }}>🏆</span>
-                AI가 검증한 ‘진짜 싼’ 특가
-              </h1>
-              <p className={styles.sub}>네이버·쿠팡 최저가와 직접 비교해 실제로 더 싼 딜만 골랐어요</p>
-            </div>
-            <DealGrid deals={winners} />
-            <p style={{ fontSize: 11, color: "#9A958C", marginTop: 8, lineHeight: 1.5 }}>
-              ※ AI 가격분석 추정치예요. 분석 시점에 따라 실제 가격과 달라질 수 있어요.
-            </p>
-          </section>
-        )}
-
         <div className={styles.sectionHead}>
-          <FeedHeading className={styles.title}>
-            <i className={`ti ti-flame ${styles.icon}`} />
-            지금 진행 중인 실시간 특가
-          </FeedHeading>
-          <p className={styles.sub}>지마켓·쿠팡·11번가의 실시간 타임딜·골드박스 — AI가 네이버·쿠팡 최저가와 비교해 표시</p>
+          <h1 className={styles.title}>
+            <span aria-hidden style={{ marginRight: 4 }}>🤖</span>
+            AI가 골라낸 오늘의 특가
+          </h1>
+          <p className={styles.sub}>네이버·쿠팡 최저가와 비교해 강추 → 추천 → 확인필요 순으로 정렬했어요</p>
         </div>
-        <DealGrid deals={tier1.length ? tier1 : tier2} />
-
-        {tier1.length > 0 && tier2.length > 0 && (
-          <>
-            <div className={styles.sectionHead}>
-              <h2 className={styles.title}>
-                <i className={`ti ti-shopping-bag ${styles.icon}`} />
-                더 둘러보는 오늘의 딜
-              </h2>
-              <p className={styles.sub}>마감 전에 챙기는 추가 특가 모음</p>
-            </div>
-            <DealGrid deals={tier2} />
-          </>
-        )}
+        <DealGrid deals={feed} />
+        <p style={{ fontSize: 11, color: "#9A958C", marginTop: 10, lineHeight: 1.5 }}>
+          ※ AI 가격분석 추정치예요. 분석 시점·옵션·용량에 따라 실제 가격과 달라질 수 있어요.
+        </p>
 
         <nav aria-label="쇼핑몰별 특가" style={{ margin: "44px 0 8px" }}>
           <h2

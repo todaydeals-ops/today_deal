@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { Deal } from "@/lib/types";
-import { BADGE_META } from "@/lib/types";
 import { dealSlug } from "@/lib/slug";
 import Countdown from "./Countdown";
 import CompareButton from "./CompareButton";
@@ -19,18 +18,12 @@ function formatPrice(n: number) {
 export default function DealCard({ deal }: DealCardProps) {
   const { productName, imageUrl, discountRate, salePrice, isSoldout, dealEndAt, affiliateUrl, productUrl, badge, platform, priceCompare } = deal;
   const href = affiliateUrl ?? productUrl;
-  const meta = badge ? BADGE_META[badge] : null;
   const isGoldbox = badge === "coupang_goldbox";
   const slug = dealSlug(platform, productUrl); // 개별 딜 페이지(내부 링크)
 
   const inner = (
     <>
       <div className={styles.imgWrap}>
-        {meta && (
-          <span className={styles.badge} style={{ background: meta.color }} title={meta.label}>
-            {meta.short}
-          </span>
-        )}
         <div className={styles.img}>
           {imageUrl ? (
             // eslint-disable-next-line @next/next/no-img-element
@@ -62,11 +55,9 @@ export default function DealCard({ deal }: DealCardProps) {
           </>
         )}
       </div>
-      {priceCompare && (
-        <div style={{ marginTop: 6 }}>
-          <PriceVerdictBadge pc={priceCompare} ourPrice={salePrice} />
-        </div>
-      )}
+      <div style={{ marginTop: 6 }}>
+        <PriceVerdictBadge pc={priceCompare} ourPrice={salePrice} />
+      </div>
     </>
   );
 
