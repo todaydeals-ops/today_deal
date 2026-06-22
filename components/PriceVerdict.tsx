@@ -49,38 +49,38 @@ export function verdictRank(pc: PriceCompare | undefined, ourPrice: number): num
   return t === "강추" ? 0 : t === "추천" ? 1 : 2;
 }
 
-// 디지털/네온 팔레트 — 다크 칩 위 밝은 색(이미지 위에서도 잘 보임)
+// 점 색(등급별). 다크 그라데이션 칩 위 흰 텍스트 + 컬러 점.
 const TONE: Record<VerdictTier, { c: string }> = {
-  강추: { c: "#FFC53D" }, // 앰버
-  추천: { c: "#2DE08A" }, // 네온 그린
-  비슷: { c: "#AEB4BA" }, // 쿨 그레이
+  강추: { c: "#EAB308" }, // 골드
+  추천: { c: "#22A45D" }, // 그린
+  비슷: { c: "#9AA0A6" }, // 그레이
 };
-const MONO = '"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace';
 
-// 다크 칩 한 개 — 지정 tier로 렌더(카드 배지·범례 공용).
-export function BadgeChip({ tier }: { tier: VerdictTier }) {
-  const col = TONE[tier].c;
+// 다크 칩 한 개 — 지정 tier로 렌더(카드 배지·범례 공용). size: sm(카드)/md(범례).
+export function BadgeChip({ tier, size = "md" }: { tier: VerdictTier; size?: "sm" | "md" }) {
+  const dot = TONE[tier].c;
+  const sm = size === "sm";
   return (
     <span
       style={{
-        display: "inline-flex", alignItems: "center", gap: 5,
-        background: "rgba(16,15,12,0.92)", color: col,
-        fontFamily: MONO, fontSize: 10.5, fontWeight: 700, lineHeight: 1.1,
-        padding: "4px 8px", borderRadius: 5, letterSpacing: "0.02em",
-        border: `1px solid ${col}59`, boxShadow: "0 1px 5px rgba(0,0,0,0.4)",
+        display: "inline-flex", alignItems: "center", gap: 6,
+        background: "linear-gradient(180deg,#34343b,#26262b)", color: "#fff",
+        fontSize: sm ? 11 : 12, fontWeight: 700, lineHeight: 1,
+        padding: sm ? "5px 9px" : "8px 11px", borderRadius: sm ? 7 : 9,
+        boxShadow: "inset 0 1px 0 rgba(255,255,255,.07), 0 1px 4px rgba(0,0,0,0.28)",
         whiteSpace: "nowrap",
       }}
       title="AI 쇼핑 분석 — 네이버/쿠팡 최저가 대비"
     >
-      <span aria-hidden style={{ width: 6, height: 6, borderRadius: "50%", background: col, boxShadow: `0 0 6px ${col}`, flexShrink: 0 }} />
-      <span>AI분석 · {tier}</span>
+      <span aria-hidden style={{ width: sm ? 6 : 7, height: sm ? 6 : 7, borderRadius: "50%", background: dot, flexShrink: 0 }} />
+      AI분석<span style={{ color: "#9a9aa2", fontWeight: 500, margin: "0 1px" }}>·</span>{tier}
     </span>
   );
 }
 
 // 컴팩트(카드용) — 상품 판정으로 칩 표시. 모든 카드에 항상 표시.
 export function PriceVerdictBadge({ pc, ourPrice }: { pc?: PriceCompare; ourPrice: number }) {
-  return <BadgeChip tier={verdictOf(pc, ourPrice).tier} />;
+  return <BadgeChip tier={verdictOf(pc, ourPrice).tier} size="sm" />;
 }
 
 // 범례 항목(카드·범례 공용 데이터)
@@ -94,15 +94,11 @@ export const VERDICT_LEGEND: { tier: VerdictTier; desc: string }[] = [
 export function PriceVerdictDetail({ pc, ourPrice }: { pc?: PriceCompare; ourPrice: number }) {
   const es = entries(pc);
   const { tier } = verdictOf(pc, ourPrice);
-  const col = TONE[tier].c;
 
   return (
     <div style={{ border: "1px solid #EFECE7", borderRadius: 14, padding: "14px 16px", background: "#FCFBF9" }}>
       <div style={{ marginBottom: 12 }}>
-        <span style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(16,15,12,0.95)", color: col, fontFamily: MONO, fontSize: 11, fontWeight: 700, padding: "5px 10px", borderRadius: 6, border: `1px solid ${col}59`, letterSpacing: "0.02em" }}>
-          <span aria-hidden style={{ width: 6, height: 6, borderRadius: "50%", background: col, boxShadow: `0 0 6px ${col}` }} />
-          AI 쇼핑분석 결과 · {tier}
-        </span>
+        <BadgeChip tier={tier} />
       </div>
       {es.length > 0 ? (
         <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>

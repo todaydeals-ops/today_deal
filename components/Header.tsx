@@ -9,9 +9,8 @@ import styles from "./Header.module.css";
 
 const NAV = [
   { label: "오늘의 타임딜", href: "/" },
-  { label: "오늘의 핫딜글", href: "/board" },
   { label: "오늘의 추천딜", href: "/recommended" },
-  { label: "오늘의 나눔딜", href: "/giveaway" },
+  { label: "오늘의 핫딜글", href: "/board" },
   { label: "오늘의 매거진", href: "/magazine" },
 ];
 
