@@ -41,7 +41,7 @@ export default function CuratedCard({ deal }: CuratedCardProps) {
           {formatPrice(salePrice)}원
         </s>
         <span style={{ fontSize: 14, fontWeight: 800, color: "var(--accent-deal)", marginLeft: 7 }}>
-          👀 실제 특가는?
+          👀 오늘의 특가는?
         </span>
       </div>
       {adminNote && (
