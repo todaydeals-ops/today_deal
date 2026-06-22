@@ -63,16 +63,16 @@ export function BadgeChip({ tier, size = "md" }: { tier: VerdictTier; size?: "sm
   return (
     <span
       style={{
-        display: "inline-flex", alignItems: "center", gap: 6,
+        display: "inline-flex", alignItems: "center", gap: 5,
         background: "linear-gradient(180deg,#34343b,#26262b)", color: "#fff",
-        fontSize: sm ? 11 : 12, fontWeight: 700, lineHeight: 1,
-        padding: sm ? "5px 9px" : "8px 11px", borderRadius: sm ? 7 : 9,
+        fontSize: sm ? 10 : 11, fontWeight: 700, lineHeight: 1,
+        padding: sm ? "4px 8px" : "6px 10px", borderRadius: sm ? 6 : 8,
         boxShadow: "inset 0 1px 0 rgba(255,255,255,.07), 0 1px 4px rgba(0,0,0,0.28)",
         whiteSpace: "nowrap",
       }}
       title="AI 쇼핑 분석 — 네이버/쿠팡 최저가 대비"
     >
-      <span aria-hidden style={{ width: sm ? 6 : 7, height: sm ? 6 : 7, borderRadius: "50%", background: dot, flexShrink: 0 }} />
+      <span aria-hidden style={{ width: sm ? 5 : 6, height: sm ? 5 : 6, borderRadius: "50%", background: dot, flexShrink: 0 }} />
       AI분석<span style={{ color: "#9a9aa2", fontWeight: 500, margin: "0 1px" }}>·</span>{tier}
     </span>
   );
