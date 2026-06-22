@@ -24,6 +24,9 @@ export default function DealCard({ deal }: DealCardProps) {
   const inner = (
     <>
       <div className={styles.imgWrap}>
+        <div style={{ position: "absolute", top: 6, left: 6, zIndex: 2 }}>
+          <PriceVerdictBadge pc={priceCompare} ourPrice={salePrice} />
+        </div>
         <div className={styles.img}>
           {imageUrl ? (
             // eslint-disable-next-line @next/next/no-img-element
@@ -54,9 +57,6 @@ export default function DealCard({ deal }: DealCardProps) {
             <span className={styles.won}>원</span>
           </>
         )}
-      </div>
-      <div style={{ marginTop: 6 }}>
-        <PriceVerdictBadge pc={priceCompare} ourPrice={salePrice} />
       </div>
     </>
   );
