@@ -1,6 +1,6 @@
 .timer {
   position: absolute;
-  left: 7px;
+  right: 7px;
   bottom: 7px;
   background: var(--accent-timer);
   color: #fff;

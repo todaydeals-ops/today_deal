@@ -49,29 +49,32 @@ export function verdictRank(pc: PriceCompare | undefined, ourPrice: number): num
   return t === "강추" ? 0 : t === "추천" ? 1 : 2;
 }
 
-const TONE: Record<VerdictTier, { bg: string; fg: string; icon: string }> = {
-  강추: { bg: "#FFF1D6", fg: "#A66A00", icon: "🔥" },
-  추천: { bg: "#E8F5EE", fg: "#1A8A5A", icon: "👍" },
-  확인필요: { bg: "#F0EEEA", fg: "#7A766E", icon: "🔎" },
+// 디지털/네온 팔레트 — 다크 칩 위 밝은 색(이미지 위에서도 잘 보임)
+const TONE: Record<VerdictTier, { c: string }> = {
+  강추: { c: "#FFC53D" }, // 앰버
+  추천: { c: "#2DE08A" }, // 네온 그린
+  확인필요: { c: "#AEB4BA" }, // 쿨 그레이
 };
+const MONO = '"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace';
 
-// 컴팩트(카드용) — 모든 카드에 항상 표시.
+// 컴팩트(카드용) — 다크 칩 + 네온 글로우 점 + 모노. 모든 카드에 항상 표시.
 export function PriceVerdictBadge({ pc, ourPrice }: { pc?: PriceCompare; ourPrice: number }) {
-  const { tier, pct } = verdictOf(pc, ourPrice);
-  const c = TONE[tier];
-  const text = (tier === "강추" || tier === "추천") && typeof pct === "number" && pct > 0 ? `${tier} ${pct}%↓` : tier;
+  const { tier } = verdictOf(pc, ourPrice);
+  const col = TONE[tier].c;
   return (
     <span
       style={{
-        display: "inline-flex", alignItems: "center", gap: 4,
-        background: c.bg, color: c.fg,
-        fontSize: 11, fontWeight: 800, lineHeight: 1.2,
-        padding: "4px 8px", borderRadius: 999, letterSpacing: "-0.01em", maxWidth: "100%",
+        display: "inline-flex", alignItems: "center", gap: 5,
+        background: "rgba(16,15,12,0.92)", color: col,
+        fontFamily: MONO, fontSize: 10.5, fontWeight: 700, lineHeight: 1.1,
+        padding: "4px 8px", borderRadius: 5, letterSpacing: "0.02em",
+        border: `1px solid ${col}59`, boxShadow: "0 1px 5px rgba(0,0,0,0.4)",
+        whiteSpace: "nowrap",
       }}
-      title="AI 쇼핑 진단 — 네이버/쿠팡 최저가 대비"
+      title="AI 쇼핑 분석 — 네이버/쿠팡 최저가 대비"
     >
-      <span aria-hidden style={{ flexShrink: 0 }}>{c.icon}</span>
-      <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{text}</span>
+      <span aria-hidden style={{ width: 6, height: 6, borderRadius: "50%", background: col, boxShadow: `0 0 6px ${col}`, flexShrink: 0 }} />
+      <span>AI분석 · {tier}</span>
     </span>
   );
 }
@@ -80,12 +83,15 @@ export function PriceVerdictBadge({ pc, ourPrice }: { pc?: PriceCompare; ourPric
 export function PriceVerdictDetail({ pc, ourPrice }: { pc?: PriceCompare; ourPrice: number }) {
   const es = entries(pc);
   const { tier } = verdictOf(pc, ourPrice);
-  const c = TONE[tier];
+  const col = TONE[tier].c;
 
   return (
-    <div style={{ border: `1px solid ${tier === "강추" ? "#F0D79A" : "#EFECE7"}`, borderRadius: 14, padding: "14px 16px", background: tier === "강추" ? "#FFFBF2" : "#FCFBF9" }}>
-      <div style={{ fontSize: 11, fontWeight: 800, letterSpacing: "0.04em", color: c.fg, marginBottom: 10 }}>
-        {c.icon} AI 쇼핑 진단 — {tier}
+    <div style={{ border: "1px solid #EFECE7", borderRadius: 14, padding: "14px 16px", background: "#FCFBF9" }}>
+      <div style={{ marginBottom: 12 }}>
+        <span style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(16,15,12,0.95)", color: col, fontFamily: MONO, fontSize: 11, fontWeight: 700, padding: "5px 10px", borderRadius: 6, border: `1px solid ${col}59`, letterSpacing: "0.02em" }}>
+          <span aria-hidden style={{ width: 6, height: 6, borderRadius: "50%", background: col, boxShadow: `0 0 6px ${col}` }} />
+          AI 쇼핑분석 결과 · {tier}
+        </span>
       </div>
       {es.length > 0 ? (
         <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
