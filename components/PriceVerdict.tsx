@@ -3,7 +3,7 @@ import type { PriceCompare, PriceCompareRef } from "@/lib/types";
 // AI 쇼핑 진단 딱지 — 같은 상품을 네이버/쿠팡 최저가와 대조한 결과를 3단계로.
 //   🔥 강추  = 네이버보다 뚜렷이 쌈(위너)
 //   👍 추천  = 더 싸거나 최저가 수준
-//   🔎 확인필요 = 더 비싸거나 / 우리가 동일상품을 확인 못 함 (기본값)
+//   🔎 비슷 = 더 비싸거나 / 우리가 동일상품을 확인 못 함 (기본값)
 // 모든 상품이 셋 중 하나 → "AI가 개입·선별한 상품" 성립.
 
 const MALL_KR = { naver: "네이버", coupang: "쿠팡" } as const;
@@ -13,7 +13,7 @@ const WIN_MIN_PCT = 15;
 const WIN_MAX_PCT = 40;
 const WIN_MIN_N = 2;
 
-export type VerdictTier = "강추" | "추천" | "확인필요";
+export type VerdictTier = "강추" | "추천" | "비슷";
 
 interface Entry { mall: "naver" | "coupang"; data: PriceCompareRef }
 function entries(pc?: PriceCompare): Entry[] {
@@ -32,7 +32,7 @@ function bestRec(es: Entry[], ourPrice: number) {
   return best;
 }
 
-// 모든 상품에 대해 셋 중 하나를 반환(기본 확인필요).
+// 모든 상품에 대해 셋 중 하나를 반환(기본 비슷).
 export function verdictOf(pc: PriceCompare | undefined, ourPrice: number): { tier: VerdictTier; pct?: number } {
   const es = entries(pc);
   const best = bestRec(es, ourPrice);
@@ -41,9 +41,9 @@ export function verdictOf(pc: PriceCompare | undefined, ourPrice: number): { tie
   }
   if (es.some((e) => e.data.verdict === "추천")) return { tier: "추천", pct: best?.pct };
   if (es.some((e) => e.data.verdict === "비슷")) return { tier: "추천" };
-  return { tier: "확인필요" };
+  return { tier: "비슷" };
 }
-// 정렬용 — 강추 0 → 추천 1 → 확인필요 2
+// 정렬용 — 강추 0 → 추천 1 → 비슷 2
 export function verdictRank(pc: PriceCompare | undefined, ourPrice: number): number {
   const t = verdictOf(pc, ourPrice).tier;
   return t === "강추" ? 0 : t === "추천" ? 1 : 2;
@@ -53,7 +53,7 @@ export function verdictRank(pc: PriceCompare | undefined, ourPrice: number): num
 const TONE: Record<VerdictTier, { c: string }> = {
   강추: { c: "#FFC53D" }, // 앰버
   추천: { c: "#2DE08A" }, // 네온 그린
-  확인필요: { c: "#AEB4BA" }, // 쿨 그레이
+  비슷: { c: "#AEB4BA" }, // 쿨 그레이
 };
 const MONO = '"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace';
 
@@ -83,26 +83,14 @@ export function PriceVerdictBadge({ pc, ourPrice }: { pc?: PriceCompare; ourPric
   return <BadgeChip tier={verdictOf(pc, ourPrice).tier} />;
 }
 
-// 범례(피드 상단) — 3개 배지를 실제 이미지로 + 설명 3줄.
-export function PriceVerdictLegend() {
-  const items: { tier: VerdictTier; desc: string }[] = [
-    { tier: "강추", desc: "네이버·쿠팡보다 확실히 저렴해요" },
-    { tier: "추천", desc: "더 싸거나 최저가 수준이에요" },
-    { tier: "확인필요", desc: "평상시 할인과 비슷해요 — 직접 확인하세요" },
-  ];
-  return (
-    <div style={{ display: "flex", flexDirection: "column", gap: 8, marginTop: 6 }}>
-      {items.map((it) => (
-        <div key={it.tier} style={{ display: "flex", alignItems: "center", gap: 9 }}>
-          <span style={{ flexShrink: 0, minWidth: 96 }}><BadgeChip tier={it.tier} /></span>
-          <span style={{ fontSize: 12.5, color: "#6F6B64", lineHeight: 1.3 }}>{it.desc}</span>
-        </div>
-      ))}
-    </div>
-  );
-}
+// 범례 항목(카드·범례 공용 데이터)
+export const VERDICT_LEGEND: { tier: VerdictTier; desc: string }[] = [
+  { tier: "강추", desc: "네이버·쿠팡보다 확실히 저렴해요" },
+  { tier: "추천", desc: "더 싸거나 최저가 수준이에요" },
+  { tier: "비슷", desc: "평상시 할인과 비슷해요 — 직접 확인하세요" },
+];
 
-// 풀버전(상세페이지용) — 몰별 최저가·판정 + 면책. 매칭 데이터 없으면 확인필요 안내.
+// 풀버전(상세페이지용) — 몰별 최저가·판정 + 면책. 매칭 데이터 없으면 비슷 안내.
 export function PriceVerdictDetail({ pc, ourPrice }: { pc?: PriceCompare; ourPrice: number }) {
   const es = entries(pc);
   const { tier } = verdictOf(pc, ourPrice);

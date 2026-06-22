@@ -5,7 +5,8 @@ import DealGrid from "@/components/DealGrid";
 import LiveViewers from "@/components/LiveViewers";
 import Footer from "@/components/Footer";
 import { fetchUnifiedDeals } from "@/lib/data/deals";
-import { verdictRank, PriceVerdictLegend } from "@/components/PriceVerdict";
+import { verdictRank } from "@/components/PriceVerdict";
+import PriceVerdictLegend from "@/components/PriceVerdictLegend";
 import { BADGE_META, type Deal } from "@/lib/types";
 import styles from "./page.module.css";
 
