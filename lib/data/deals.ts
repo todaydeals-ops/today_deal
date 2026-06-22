@@ -1,5 +1,5 @@
 // 타임딜 데이터 접근. Supabase 설정 시 실DB, 아니면 mock 폴백.
-import type { Deal, Platform, DealBadge } from "@/lib/types";
+import type { Deal, Platform, DealBadge, PriceCompare } from "@/lib/types";
 import { PLATFORM_ORDER, BADGE_META } from "@/lib/types";
 import { getDealsByPlatform } from "@/data/mockDeals";
 import { getSupabaseServer } from "@/lib/supabase/server";
@@ -18,6 +18,7 @@ interface DealRow {
   free_shipping: boolean | null;
   deal_end_at: string | null;
   is_soldout: boolean | null;
+  price_compare: PriceCompare | null;
 }
 
 function mapDeal(r: DealRow): Deal {
@@ -35,6 +36,7 @@ function mapDeal(r: DealRow): Deal {
     freeShipping: r.free_shipping ?? undefined,
     dealEndAt: r.deal_end_at ?? new Date().toISOString(),
     isSoldout: r.is_soldout ?? false,
+    priceCompare: r.price_compare ?? undefined,
   };
 }
 
@@ -63,6 +65,7 @@ export interface ArchiveDeal {
   discountRate: number;
   summary?: string;
   lastSeen?: string;
+  priceCompare?: PriceCompare;
 }
 
 export async function fetchArchiveBySlug(slug: string): Promise<ArchiveDeal | null> {
@@ -84,6 +87,7 @@ export async function fetchArchiveBySlug(slug: string): Promise<ArchiveDeal | nu
       discountRate: Number(r.discount_rate ?? 0),
       summary: (r.summary as string) || undefined,
       lastSeen: (r.last_seen as string) || undefined,
+      priceCompare: (r.price_compare as PriceCompare) ?? undefined,
     };
   } catch {
     return null;

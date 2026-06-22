@@ -37,8 +37,8 @@ async function fetchBatch(n) {
   await beat();
   const pb = await (await rest(`board_deals?author=eq.${PENDING}&select=id,slug,title,body,shop,price,category&order=created_at.asc&limit=${n}`)).json();
   const posts = (Array.isArray(pb) ? pb : []).map((r) => { const p = personaFor(r.slug); return { id: r.id, slug: r.slug, persona: p.nick, tone: p.tone, category: r.category, shop: r.shop, price: r.price, title: r.title, body: r.body }; });
-  const db = await (await rest(`deal_archive?summary=is.null&select=slug,product_name,sale_price,category&limit=${n}`)).json();
-  const blurbs = (Array.isArray(db) ? db : []).map((r) => ({ slug: r.slug, product_name: r.product_name, price: r.sale_price, category: r.category }));
+  const db = await (await rest(`deal_archive?summary=is.null&select=slug,product_name,sale_price,platform&limit=${n}`)).json();
+  const blurbs = (Array.isArray(db) ? db : []).map((r) => ({ slug: r.slug, product_name: r.product_name, price: r.sale_price, category: r.platform }));
   console.log(JSON.stringify({ posts, blurbs }, null, 2));
 }
 

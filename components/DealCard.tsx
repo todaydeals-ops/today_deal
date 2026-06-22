@@ -4,6 +4,7 @@ import { BADGE_META } from "@/lib/types";
 import { dealSlug } from "@/lib/slug";
 import Countdown from "./Countdown";
 import CompareButton from "./CompareButton";
+import { PriceVerdictBadge } from "./PriceVerdict";
 import styles from "./DealCard.module.css";
 
 interface DealCardProps {
@@ -16,7 +17,7 @@ function formatPrice(n: number) {
 }
 
 export default function DealCard({ deal }: DealCardProps) {
-  const { productName, imageUrl, discountRate, salePrice, isSoldout, dealEndAt, affiliateUrl, productUrl, badge, platform } = deal;
+  const { productName, imageUrl, discountRate, salePrice, isSoldout, dealEndAt, affiliateUrl, productUrl, badge, platform, priceCompare } = deal;
   const href = affiliateUrl ?? productUrl;
   const meta = badge ? BADGE_META[badge] : null;
   const isGoldbox = badge === "coupang_goldbox";
@@ -61,6 +62,11 @@ export default function DealCard({ deal }: DealCardProps) {
           </>
         )}
       </div>
+      {priceCompare && (
+        <div style={{ marginTop: 6 }}>
+          <PriceVerdictBadge pc={priceCompare} />
+        </div>
+      )}
     </>
   );
 

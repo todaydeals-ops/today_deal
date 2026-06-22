@@ -17,6 +17,21 @@ export interface Deal {
   freeShipping?: boolean; // 저장만, 비노출
   dealEndAt: string; // ISO 8601 마감 시각
   isSoldout: boolean;
+  priceCompare?: PriceCompare; // AI 가격비교 진단(네이버/쿠팡 대비). 확신될 때만 존재.
+}
+
+// AI 가격비교 진단 — 같은 상품을 네이버/쿠팡 최저가와 대조한 결과.
+// scripts/price-compare.mjs가 생성. 매칭 확신 안 서면 해당 몰 키 없음.
+export type PriceVerdict = "추천" | "비추" | "비슷";
+export interface PriceCompareRef {
+  verdict: PriceVerdict;
+  ref: number; // 비교 대상 최저가(원)
+  n: number; // 매칭된 후보 수(신뢰도)
+}
+export interface PriceCompare {
+  naver?: PriceCompareRef;
+  coupang?: PriceCompareRef;
+  at?: string; // 진단 시각 ISO
 }
 
 // 통합 피드 — 출처+코너 뱃지. tier 1=상단(타임딜·골드박스), 2=하단(나머지). 둘 다 할인율순.

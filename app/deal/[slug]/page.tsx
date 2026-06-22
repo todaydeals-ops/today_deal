@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DealGrid from "@/components/DealGrid";
 import LiveViewers from "@/components/LiveViewers";
+import { PriceVerdictDetail } from "@/components/PriceVerdict";
 import { fetchArchiveBySlug, fetchUnifiedDeals, tierOf, type ArchiveDeal } from "@/lib/data/deals";
 import { BADGE_META } from "@/lib/types";
 import styles from "./page.module.css";
@@ -154,6 +155,11 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
               )}
             </div>
             {d.summary && <p className={styles.summary}>{d.summary}</p>}
+            {d.priceCompare && (
+              <div style={{ margin: "14px 0" }}>
+                <PriceVerdictDetail pc={d.priceCompare} ourPrice={d.salePrice} />
+              </div>
+            )}
             <a href={href} target="_blank" rel="noopener noreferrer sponsored" className={styles.cta}>
               최저가로 보러가기 <i className="ti ti-external-link" />
             </a>
