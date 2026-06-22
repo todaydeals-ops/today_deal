@@ -14,7 +14,7 @@ function formatPrice(n: number) {
 //  - slug 있으면 내부 콘텐츠 페이지(/recommended/[slug])로 (영상·SEO·CTA)
 //  - 없으면 기존처럼 쿠팡 제휴링크로 바로 이동
 export default function CuratedCard({ deal }: CuratedCardProps) {
-  const { seq, slug, productName, category, imageUrl, discountRate, salePrice, adminNote, affiliateUrl, videoUrl } = deal;
+  const { seq, slug, productName, category, imageUrl, salePrice, adminNote, affiliateUrl, videoUrl } = deal;
 
   const inner = (
     <>
@@ -37,11 +37,12 @@ export default function CuratedCard({ deal }: CuratedCardProps) {
       </div>
       <div className={styles.name}>{productName}</div>
       <div className={styles.priceRow}>
-        {typeof discountRate === "number" && (
-          <span className={styles.discount}>{discountRate}%</span>
-        )}
-        <span className={styles.price}>{formatPrice(salePrice)}</span>
-        <span className={styles.won}>원</span>
+        <s style={{ fontSize: 15, color: "var(--text-muted)", textDecoration: "line-through", textDecorationColor: "#e02020", textDecorationThickness: 2 }}>
+          {formatPrice(salePrice)}원
+        </s>
+        <span style={{ fontSize: 14, fontWeight: 800, color: "var(--accent-deal)", marginLeft: 7 }}>
+          👀 실제 특가는?
+        </span>
       </div>
       {adminNote && (
         <p className={styles.note}>
@@ -49,10 +50,6 @@ export default function CuratedCard({ deal }: CuratedCardProps) {
           {adminNote}
         </p>
       )}
-      <span className={styles.cta}>
-        {slug ? "자세히 보기" : "쿠팡에서 보기"}
-        <i className="ti ti-chevron-right" />
-      </span>
     </>
   );
 
