@@ -13,9 +13,11 @@ function pad(n: number) {
 }
 
 function remainingText(endMs: number, nowMs: number) {
-  let s = Math.floor((endMs - nowMs) / 1000);
+  const s = Math.floor((endMs - nowMs) / 1000);
   if (s <= 0) return "00:00:00";
   const h = Math.floor(s / 3600);
+  // 48시간 초과(앵콜딜 등 장기) → HH:MM:SS가 깨져 보이므로 D-N로 표기
+  if (h >= 48) return `D-${Math.ceil(h / 24)}`;
   const m = Math.floor((s % 3600) / 60);
   const sec = s % 60;
   return `${pad(h)}:${pad(m)}:${pad(sec)}`;
