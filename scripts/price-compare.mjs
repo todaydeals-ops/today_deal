@@ -6,6 +6,20 @@
 //        node scripts/price-compare.mjs dry [n]    # 기록 없이 콘솔만(점검)
 // 환경:  SUPA_URL, SUPA_KEY, NAVER_CLIENT_ID, NAVER_CLIENT_SECRET, COUPANG_ACCESS_KEY, COUPANG_SECRET_KEY
 import crypto from "node:crypto";
+import fs from "node:fs";
+
+// .env.local 자동 로드 — 스케줄러/단독 실행에서도 키가 잡히게(이미 설정된 env는 보존).
+(function loadEnv() {
+  try {
+    const txt = fs.readFileSync(new URL("../.env.local", import.meta.url), "utf8");
+    for (const line of txt.split(/\r?\n/)) {
+      const m = line.match(/^([A-Z0-9_]+)=(.*)$/);
+      if (m && process.env[m[1]] === undefined) process.env[m[1]] = m[2].trim();
+    }
+  } catch { /* .env.local 없으면 무시 */ }
+  if (!process.env.SUPA_URL && process.env.NEXT_PUBLIC_SUPABASE_URL) process.env.SUPA_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  if (!process.env.SUPA_KEY && process.env.SUPABASE_SERVICE_ROLE_KEY) process.env.SUPA_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
+})();
 
 const SUPA_URL = process.env.SUPA_URL, SUPA_KEY = process.env.SUPA_KEY;
 const NAVER_ID = process.env.NAVER_CLIENT_ID, NAVER_SECRET = process.env.NAVER_CLIENT_SECRET;
