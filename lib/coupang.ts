@@ -2,6 +2,10 @@
 // 키(COUPANG_ACCESS_KEY/COUPANG_SECRET_KEY) 없으면 null 반환 → 호출부가 목으로 폴백.
 import crypto from "crypto";
 
+// ⛔ 쿠팡 파트너스 계정 정지(과도 호출)로 모든 쿠팡 API 호출 전면 차단.
+//    재개 승인 후 false로 되돌리면 정상화. (소명/재가동 전까지 절대 호출 금지)
+const COUPANG_DISABLED = true;
+
 const DOMAIN = "https://api-gateway.coupang.com";
 const SEARCH_PATH =
   "/v2/providers/affiliate_open_api/apis/openapi/v1/products/search";
@@ -46,6 +50,7 @@ export async function searchCoupang(
   keyword: string,
   limit = 10
 ): Promise<CoupangProduct[] | null> {
+  if (COUPANG_DISABLED) return null;
   const accessKey = process.env.COUPANG_ACCESS_KEY;
   const secretKey = process.env.COUPANG_SECRET_KEY;
   if (!accessKey || !secretKey) return null;
@@ -82,6 +87,7 @@ export async function searchCoupang(
 const DEEPLINK_PATH = "/v2/providers/affiliate_open_api/apis/openapi/v1/deeplink";
 
 export async function coupangDeeplink(targetUrl: string): Promise<string | null> {
+  if (COUPANG_DISABLED) return null;
   const accessKey = process.env.COUPANG_ACCESS_KEY;
   const secretKey = process.env.COUPANG_SECRET_KEY;
   if (!accessKey || !secretKey || !targetUrl) return null;
@@ -107,6 +113,7 @@ export async function coupangDeeplink(targetUrl: string): Promise<string | null>
 export async function coupangDeeplinkBatch(
   urls: string[]
 ): Promise<Record<string, string>> {
+  if (COUPANG_DISABLED) return {};
   const accessKey = process.env.COUPANG_ACCESS_KEY;
   const secretKey = process.env.COUPANG_SECRET_KEY;
   if (!accessKey || !secretKey || urls.length === 0) return {};
@@ -153,6 +160,7 @@ function decodeEntities(s: string): string {
 }
 
 export async function fetchCoupangProductMeta(url: string): Promise<CoupangUrlMeta> {
+  if (COUPANG_DISABLED) return {};
   try {
     const res = await fetch(url, {
       headers: {
@@ -199,6 +207,7 @@ export interface GoldboxProduct {
 }
 
 export async function coupangGoldbox(): Promise<GoldboxProduct[] | null> {
+  if (COUPANG_DISABLED) return null;
   const accessKey = process.env.COUPANG_ACCESS_KEY;
   const secretKey = process.env.COUPANG_SECRET_KEY;
   if (!accessKey || !secretKey) return null;

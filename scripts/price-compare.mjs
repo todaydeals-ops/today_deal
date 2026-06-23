@@ -104,6 +104,7 @@ function cpAuth(method, path, query) {
   return `CEA algorithm=HmacSHA256, access-key=${CPA}, signed-date=${dt}, signature=${sig}`;
 }
 async function coupangMatches(ours) {
+  return []; // ⛔ 쿠팡 파트너스 계정 정지(과도 호출)로 차단. 재개 승인 후 이 줄 제거.
   if (!CPA || !CPS) return [];
   const path = "/v2/providers/affiliate_open_api/apis/openapi/v1/products/search";
   const query = `keyword=${encodeURIComponent(ours.title.slice(0, 50))}&limit=10`;
