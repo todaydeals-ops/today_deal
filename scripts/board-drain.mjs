@@ -30,6 +30,7 @@ function repackage(url, sub1) {
     if (h === "kurly.com" || h.endsWith(".kurly.com")) return adbc("kurly", url, sub1);
     if (h === "emart.ssg.com") return adbc("emart", url, sub1);
     if (h.endsWith(".ssg.com") || h === "ssg.com") return adbc("ssg", url, sub1);
+    if (h === "store.ohou.se" || h.endsWith(".ohou.se") || h === "ohou.se") return adbc("ohou", url, sub1);
     return null; // 11번가 미승인·쿠팡 정지 등 → 원본 유지
   } catch { return null; }
 }

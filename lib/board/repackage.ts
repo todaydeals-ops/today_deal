@@ -36,6 +36,10 @@ export async function repackageDealUrl(url: string, sub1 = "board"): Promise<str
   if (host === "ssg.com" || host.endsWith(".ssg.com")) {
     return adbcDeeplink("ssg", url, sub1);
   }
+  // 오늘의집(store.ohou.se/goods/{id}) → ADBC
+  if (host === "store.ohou.se" || host === "ohou.se" || host.endsWith(".ohou.se")) {
+    return adbcDeeplink("ohou", url, sub1);
+  }
   // 11번가 미승인 · 쿠팡 정지 · 그 외 → 미연동(원본 유지)
   return null;
 }
