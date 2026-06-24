@@ -47,7 +47,7 @@ export function MagazineMasthead() {
 /* 코너 인덱스 (5칸) */
 export function CornerIndex() {
   return (
-    <section className="mz-wrap mz-cornerwrap" style={{ paddingTop: 34 }}>
+    <section id="guides" className="mz-wrap mz-cornerwrap" style={{ paddingTop: 34, scrollMarginTop: 80 }}>
       <div className="mz-corner-index">
         {CORNERS.map((c, i) => (
           <Link key={c.key} className="corner-cell" href={`/magazine?corner=${c.key}`}>
@@ -79,7 +79,7 @@ export function NeutralBand() {
             <div style={{ fontSize: 13.5, color: "#a89e8d", marginTop: 5 }}>{CATCH.lonely.sub} · <span style={{ color: "#ff8a6f" }}>{CATCH.lonely.hi}</span></div>
           </div>
         </div>
-        <Link href="/magazine" style={{ fontWeight: 700, fontSize: 14, color: "#16140f", background: "#ff5a3c", padding: "11px 24px", borderRadius: 8, whiteSpace: "nowrap", textDecoration: "none" }}>전체 가이드 →</Link>
+        <Link href="/magazine#guides" style={{ fontWeight: 700, fontSize: 14, color: "#16140f", background: "#ff5a3c", padding: "11px 24px", borderRadius: 8, whiteSpace: "nowrap", textDecoration: "none" }}>전체 가이드 →</Link>
       </div>
     </section>
   );
