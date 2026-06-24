@@ -83,13 +83,48 @@ export function PriceVerdictBadge({ pc, ourPrice }: { pc?: PriceCompare; ourPric
   return <BadgeChip tier={verdictOf(pc, ourPrice).tier} size="sm" />;
 }
 
-// 카드용 AI 가격 코멘트(상품평 아님, 가격 평가). 네이버/쿠팡 비교 기반 — 솔직하게.
-//  강추: 확실히 쌈 / 추천: 최저가 수준 / 비슷: 평범 → 다음 딜 권유(클릭은 할인율 좋은 곳에서 받음).
-export function priceComment(pc: PriceCompare | undefined, ourPrice: number): string {
+// 카드용 AI 가격 코멘트(상품평 아님, 가격 평가). 네이버/쿠팡 비교 기반 — 위트 있게, 다양하게, 솔직하게.
+//  딜마다 seed(상품ID) 해시로 멘트를 골라 고정·다양화(SSR 안정, 매번 다른 멘트).
+const _h = (s: string) => { let h = 0; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0; return h; };
+const COMMENTS: Record<VerdictTier, string[]> = {
+  강추: [
+    "네이버 최저가보다 {pct}%↓ — 지금이 기회예요 🔥",
+    "가격 스캔 끝! 여기가 제일 싸요, 담으세요 🛒",
+    "이 값이면 안 사면 손해죠 👀",
+    "최저가 갱신각 — 고민하다 품절될라 ⏰",
+    "방금 비교했는데 여기가 승자네요 🏆",
+  ],
+  추천: [
+    "딱 최저가 수준 — 무난한 득템이에요",
+    "가성비 합격! 필요하면 지금 사도 OK 👍",
+    "적정가 통과 — 평타는 확실히 칩니다",
+    "나쁘지 않아요, 살 거면 지금도 좋아요",
+    "최저가랑 거의 붙었어요. 살 만해요",
+  ],
+  비슷: [
+    "음… 평범해요. 더 센 딜 나오면 그때 콕 찍어드릴게요 🙋",
+    "지금도 나쁘진 않지만, 급하지 않으면 다음 딜 노려봐요",
+    "솔직히 더 싸질 여지가 있어요. 좀 기다려볼까요? ⏳",
+    "가격은 평타 — 취향이면 담고, 아니면 패스해도 돼요",
+    "오늘은 패스각? 다음 특가가 더 셀 수도 있어요 😉",
+    "급한 거 아니면 장바구니에 넣고 며칠 지켜봐요",
+  ],
+};
+export function priceComment(pc: PriceCompare | undefined, ourPrice: number, seed = ""): string {
   const { tier, pct } = verdictOf(pc, ourPrice);
-  if (tier === "강추") return pct ? `네이버 최저가보다 ${pct}%↓ — 지금이 기회예요` : "네이버 최저가보다 저렴 — 지금이 기회";
-  if (tier === "추천") return "최저가 수준 — 괜찮은 가격이에요";
-  return "평범한 가격대 — 급하지 않으면 다음 딜도 노려봐요";
+  const arr = COMMENTS[tier];
+  let c = arr[_h(seed) % arr.length];
+  if (c.includes("{pct}")) c = pct ? c.replace("{pct}", String(pct)) : "네이버 최저가보다 저렴 — 지금이 기회예요 🔥";
+  return c;
+}
+const PICK_COMMENTS = [
+  "AI가 고른 오늘의 픽 — 할인폭이 큰 편이에요 🏅",
+  "오늘 이 브랜드는 이게 제일 셉니다 💪",
+  "눈여겨볼 만한 픽! 한 번 보고 가세요 👀",
+  "오늘의 추천 한 방 — 이거 괜찮아요 ✨",
+];
+export function pickComment(seed = ""): string {
+  return PICK_COMMENTS[_h(seed) % PICK_COMMENTS.length];
 }
 
 // "AI 오늘의 픽" — 플랫폼별 대표 1개를 상단에 강조(가격 주장 아님). 따뜻한 골드 칩.

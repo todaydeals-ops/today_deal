@@ -1,6 +1,6 @@
 import type { Deal } from "@/lib/types";
 import Countdown from "./Countdown";
-import { PriceVerdictBadge, PickBadge } from "./PriceVerdict";
+import { PriceVerdictBadge, PickBadge, priceComment, pickComment } from "./PriceVerdict";
 import styles from "./DealCard.module.css";
 
 interface DealCardProps {
@@ -15,9 +15,10 @@ function formatPrice(n: number) {
 // 카드 클릭 = 바로 쇼핑몰 아웃링크(내부 상세 단계 제거 — 클릭/실적 극대화).
 // 하단 "AI 가격 코멘트"가 (구)최저가비교 자리 — 상품평 아닌 가격 평가.
 export default function DealCard({ deal }: DealCardProps) {
-  const { productName, imageUrl, discountRate, salePrice, isSoldout, dealEndAt, affiliateUrl, productUrl, badge, priceCompare, pick } = deal;
+  const { id, productName, imageUrl, discountRate, salePrice, isSoldout, dealEndAt, affiliateUrl, productUrl, badge, priceCompare, pick } = deal;
   const href = affiliateUrl ?? productUrl;
   const isGoldbox = badge === "coupang_goldbox";
+  const comment = pick ? pickComment(id) : priceComment(priceCompare, salePrice, id);
 
   return (
     <article className={`${styles.card} ${isSoldout ? styles.soldout : ""}`}>
@@ -57,6 +58,19 @@ export default function DealCard({ deal }: DealCardProps) {
             </>
           )}
         </div>
+        {/* AI 가격 코멘트 — 가격에 대한 위트 있는 평가(상품평 아님). 딜마다 다양. */}
+        {!isSoldout && (
+          <div
+            style={{
+              display: "flex", alignItems: "center", gap: 6, marginTop: 9,
+              padding: "8px 10px", borderRadius: 8, background: "#F6F4F0", border: "1px solid #ECE8E1",
+              fontSize: 12, fontWeight: 600, color: "#5C574E", lineHeight: 1.35,
+            }}
+          >
+            <span aria-hidden style={{ flex: "none" }}>🤖</span>
+            <span>{comment}</span>
+          </div>
+        )}
       </a>
     </article>
   );
