@@ -30,7 +30,7 @@ async function scrape() {
   await page.waitForTimeout(1800);
   const rows = await page.evaluate(() => {
     const seen = new Set(), out = [];
-    const JUNK = /남음|오늘만|쿠폰|할인가|무료배송|판매됐|적립|개나|회원가입|카테고리|고객센터|로그인|글쓰기|오늘의딜|단독상품|원하는날|쇼룸|기획전|베스트/;
+    const JUNK = /남음|오늘만|쿠폰|할인가|무료배송|판매됐|적립|개나|회원가입|카테고리|고객센터|로그인|글쓰기|오늘의딜|단독상품|원하는날|쇼룸|기획전|베스트|리뷰|평점|별점|후기|구매중|^\d+(\.\d+)?\s*$/;
     for (const a of document.querySelectorAll('a[href*="/goods/"]')) {
       const m = a.href.match(/goods\/(\d+)/); if (!m || seen.has(m[1])) continue;
       let card = a, pm = null;
@@ -62,8 +62,9 @@ async function scrape() {
   return rows;
 }
 
-const items = await scrape();
-console.log(`오늘의집 추출: ${items.length}건`);
+const all = await scrape();
+const items = all.filter((p) => p.image); // 이미지 없는 딜 제외(타임딜 회색 빈칸 방지)
+console.log(`오늘의집 추출: ${all.length}건 → 이미지있는 ${items.length}건`);
 console.log(items.slice(0, 4).map((x) => `  · ${x.name.slice(0, 40)} / ${x.price.toLocaleString()}원 / ${x.discount ? x.discount + "%" : "-"} / ${x.remainSec ? Math.floor(x.remainSec / 3600) + "h" : "-"}`).join("\n"));
 if (!items.length) process.exit(1);
 
