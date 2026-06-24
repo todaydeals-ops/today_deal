@@ -1,7 +1,7 @@
 // 오늘의딜 — 도메인 타입
 // 기획안 8.2 DB 스키마(deals) 기반. 화면 비노출 항목은 선택(optional)으로 둠.
 
-export type Platform = "gmarket" | "11st" | "ali" | "coupang";
+export type Platform = "gmarket" | "11st" | "ali" | "coupang" | "ohou";
 
 export interface Deal {
   id: string;
@@ -67,6 +67,7 @@ export const PLATFORM_LABELS: Record<Platform, string> = {
   "11st": "11번가 쇼킹타임",
   ali: "알리익스프레스 타임딜",
   coupang: "쿠팡",
+  ohou: "오늘의집 오늘의딜",
 };
 
 export const PLATFORM_ORDER: Platform[] = ["gmarket", "11st", "ali"];

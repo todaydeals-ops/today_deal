@@ -93,6 +93,7 @@ const seeds: Record<Platform, Seed[]> = {
     },
   ],
   coupang: [],
+  ohou: [],
 };
 
 function buildDeals(): Deal[] {

@@ -52,7 +52,7 @@ interface Row {
 }
 
 const MAX = 200;
-const PLATFORMS: Platform[] = ["gmarket", "11st", "ali", "coupang"];
+const PLATFORMS: Platform[] = ["gmarket", "11st", "ali", "coupang", "ohou"];
 
 export async function POST(request: Request): Promise<Response> {
   const cronSecret = process.env.CRON_SECRET;
@@ -220,7 +220,7 @@ export async function POST(request: Request): Promise<Response> {
 
   // 게시판 '핫딜' 자동 시딩 — 보드가 비지 않게(무관심 극복). slug "hot-" 네임스페이스로 유저글과 분리. (board_deals 없으면 무시)
   try {
-    const SHOP_KR: Record<string, string> = { gmarket: "지마켓", "11st": "11번가", coupang: "쿠팡", ali: "알리익스프레스" };
+    const SHOP_KR: Record<string, string> = { gmarket: "지마켓", "11st": "11번가", coupang: "쿠팡", ali: "알리익스프레스", ohou: "오늘의집" };
     const seenB = new Set<string>();
     const posts = [];
     for (const r of toInsert) {

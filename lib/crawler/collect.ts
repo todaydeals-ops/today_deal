@@ -22,6 +22,7 @@ function mockDeals(platform: Platform): CollectedDeal[] {
       ["[수집데모] 알리 타임딜 상품 B", 31, 14970],
     ],
     coupang: [],
+    ohou: [],
   };
   return samples[platform].map(([name, dc, price], i) => ({
     platform,

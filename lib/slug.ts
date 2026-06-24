@@ -4,6 +4,7 @@ export function dealSlug(platform: string, url: string | undefined | null): stri
   const m =
     url.match(/goodscode=(\d+)/) ||
     url.match(/\/vp\/products\/(\d+)/) ||
+    url.match(/\/goods\/(\d+)/) || // 오늘의집 store.ohou.se/goods/{id}
     url.match(/\/products\/(\d+)/);
   return m?.[1] ? `${platform}-${m[1]}` : null;
 }

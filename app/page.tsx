@@ -66,9 +66,9 @@ function buildItemListLd(deals: Deal[]) {
 
 export default async function Home() {
   const all = await fetchUnifiedDeals();
-  // 타임딜 = 11번가·지마켓만(쿠팡 골드박스는 추천딜로 분리). AI 추천순(강추→추천→확인필요)으로 정렬.
+  // 타임딜 = 11번가·지마켓·오늘의집(쿠팡 골드박스는 추천딜로 분리). AI 추천순(강추→추천→확인필요)으로 정렬.
   const feed = all
-    .filter((d) => d.platform === "11st" || d.platform === "gmarket")
+    .filter((d) => d.platform === "11st" || d.platform === "gmarket" || d.platform === "ohou")
     .sort((a, b) => verdictRank(a.priceCompare, a.salePrice) - verdictRank(b.priceCompare, b.salePrice));
 
   const ld = {
@@ -128,6 +128,7 @@ export default async function Home() {
             {[
               ["gmarket", "지마켓 슈퍼딜"],
               ["11st", "11번가 타임딜"],
+              ["ohou", "오늘의집 오늘의딜"],
               ["coupang", "쿠팡 골드박스"],
               ["ali", "알리 타임딜"],
             ].map(([k, label]) => (
