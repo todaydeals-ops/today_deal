@@ -83,6 +83,15 @@ export function PriceVerdictBadge({ pc, ourPrice }: { pc?: PriceCompare; ourPric
   return <BadgeChip tier={verdictOf(pc, ourPrice).tier} size="sm" />;
 }
 
+// 카드용 AI 가격 코멘트(상품평 아님, 가격 평가). 네이버/쿠팡 비교 기반 — 솔직하게.
+//  강추: 확실히 쌈 / 추천: 최저가 수준 / 비슷: 평범 → 다음 딜 권유(클릭은 할인율 좋은 곳에서 받음).
+export function priceComment(pc: PriceCompare | undefined, ourPrice: number): string {
+  const { tier, pct } = verdictOf(pc, ourPrice);
+  if (tier === "강추") return pct ? `네이버 최저가보다 ${pct}%↓ — 지금이 기회예요` : "네이버 최저가보다 저렴 — 지금이 기회";
+  if (tier === "추천") return "최저가 수준 — 괜찮은 가격이에요";
+  return "평범한 가격대 — 급하지 않으면 다음 딜도 노려봐요";
+}
+
 // "AI 오늘의 픽" — 플랫폼별 대표 1개를 상단에 강조(가격 주장 아님). 따뜻한 골드 칩.
 export function PickBadge({ size = "sm" }: { size?: "sm" | "md" }) {
   const sm = size === "sm";
