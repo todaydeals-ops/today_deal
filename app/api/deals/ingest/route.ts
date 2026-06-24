@@ -9,7 +9,6 @@ import type { Platform } from "@/lib/types";
 import { getSupabaseAdmin } from "@/lib/supabase/server";
 import { fetchUrlMeta, detectPlatform, affiliateForPlatform } from "@/lib/urlMeta";
 import { dealSlug } from "@/lib/slug";
-import { categorize } from "@/lib/board/categorize";
 
 interface FullRecord {
   platform?: Platform;
@@ -218,33 +217,8 @@ export async function POST(request: Request): Promise<Response> {
     // deal_archive 미존재 시 패스
   }
 
-  // 게시판 '핫딜' 자동 시딩 — 보드가 비지 않게(무관심 극복). slug "hot-" 네임스페이스로 유저글과 분리. (board_deals 없으면 무시)
-  try {
-    const SHOP_KR: Record<string, string> = { gmarket: "지마켓", "11st": "11번가", coupang: "쿠팡", ali: "알리익스프레스", ohou: "오늘의집" };
-    const seenB = new Set<string>();
-    const posts = [];
-    for (const r of toInsert) {
-      const ds = dealSlug(r.platform, r.product_url);
-      if (!ds || seenB.has(ds)) continue;
-      seenB.add(ds);
-      posts.push({
-        slug: `hot-${ds}`,
-        board_type: "hot",
-        category: categorize(r.product_name), // 카테고리 칩이 비지 않게 자동분류
-        title: r.product_name,
-        shop: SHOP_KR[r.platform] ?? r.platform,
-        price: r.sale_price,
-        image_url: r.image_url,
-        source_url: r.product_url,
-        affiliate_url: r.affiliate_url,
-        original_url: r.product_url,
-        is_published: true,
-      });
-    }
-    if (posts.length) await sb.from("board_deals").upsert(posts, { onConflict: "slug" });
-  } catch {
-    // board_deals 미존재 시 패스
-  }
+  // (핫딜 게시판 자동 시딩 제거 — 핫딜글은 커뮤니티(뽐뿌·루리웹)에서 퍼온 글 전용.
+  //  타임딜 쇼핑몰 딜은 board_deals에 시딩하지 않는다.)
 
   return Response.json({
     ok: true,

@@ -13,8 +13,8 @@ const SITE = "https://www.todaydeals.co.kr";
 
 const META: Record<string, { title: string; desc: string }> = {
   hot: {
-    title: "핫딜 게시판 — 실시간 상품 특가·할인 모음",
-    desc: "에디터·유저가 발굴한 실시간 핫딜. 지마켓·쿠팡·네이버 등 여러 쇼핑몰 특가를 카테고리별로 모았어요.",
+    title: "핫딜 게시판 — 핫딜·할인·무료 이벤트·나눔 모음",
+    desc: "실시간으로 올라오는 핫딜·할인·쿠폰·무료 이벤트·나눔 정보를 한곳에. 알짜만 골라 빠르게 전해드려요.",
   },
   event: {
     title: "이벤트/쿠폰/적립 — 공짜·사은품·체험단·할인쿠폰 모음",
