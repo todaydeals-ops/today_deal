@@ -68,9 +68,9 @@ export default async function Home() {
   const all = await fetchUnifiedDeals();
   // 타임딜 = 11번가·지마켓·오늘의집(쿠팡 골드박스는 추천딜로 분리).
   const pool = all.filter((d) => d.platform === "11st" || d.platform === "gmarket" || d.platform === "ohou");
-  // "AI 오늘의 픽" — 플랫폼별 눌릴 만한(할인율 최고·이미지 있는) 1개를 상단 1~3위(지마켓·11번가·오늘의집 순).
+  // "AI 오늘의 픽" — 제휴완료 플랫폼만(지마켓·오늘의집). 11번가는 미제휴라 픽 제외(수수료 0).
   const picks: typeof pool = [];
-  for (const p of ["gmarket", "11st", "ohou"] as const) {
+  for (const p of ["gmarket", "ohou"] as const) {
     const top = pool
       .filter((d) => d.platform === p && !d.isSoldout && d.imageUrl)
       .sort((a, b) => (b.discountRate ?? 0) - (a.discountRate ?? 0))[0];
