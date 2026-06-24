@@ -6,8 +6,10 @@
 // apply 입력: {"posts":[{"id","slug","title","body"}, ...]}
 import fs from "node:fs";
 (function loadEnv() {
-  try { const t = fs.readFileSync(`${import.meta.dirname}/../.env.local`, "utf8");
-    for (const l of t.split(/\r?\n/)) { const m = l.match(/^([A-Z0-9_]+)=(.*)$/); if (m && process.env[m[1]] === undefined) process.env[m[1]] = m[2].trim(); } } catch {}
+  for (const f of ["/../.env.local", "/../crawler/.env"]) {
+    try { const t = fs.readFileSync(`${import.meta.dirname}${f}`, "utf8");
+      for (const l of t.split(/\r?\n/)) { const m = l.match(/^([A-Z0-9_]+)=(.*)$/); if (m && process.env[m[1]] === undefined) process.env[m[1]] = m[2].trim(); } } catch {}
+  }
 })();
 const S = process.env.NEXT_PUBLIC_SUPABASE_URL, K = process.env.SUPABASE_SERVICE_ROLE_KEY;
 if (!S || !K) { console.error("SUPA env 필요"); process.exit(1); }
@@ -36,6 +38,24 @@ function repackage(url, sub1) {
 const PERSONAS = ["가성비요정", "지름신강림", "짠테크중", "직구고인물", "육아템헌터", "자취8년차", "캠핑가자", "겜돌이", "뷰티덕질", "헬스장출근", "주방템마스터", "최저가스나이퍼", "월급요정", "전자기기병", "오늘도텅장", "식탐대마왕", "패션피플", "꿀템수집가", "쿠폰장인", "신상가즈아", "살림9단", "여행적금중", "반려견아빠", "다이어터", "홈카페사장", "득템각", "프로세일러", "방구석평론가", "알뜰살뜰", "디지털노마드", "맘카페터줏대감", "건강챙겨", "초보집사", "테크리뷰러", "절약왕", "트렌드세터", "집순이템", "패밀리세일", "꼼꼼이"];
 const hash = (s) => { let h = 0; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0; return h; };
 const personaFor = (seed) => PERSONAS[hash(seed || "") % PERSONAS.length];
+
+// 하트비트 — "맥스(나)가 살아있음" 표시 → 서버 ingest가 각색을 내게 양보(키 폴백 발행 방지)
+async function beat() {
+  const now = new Date().toISOString();
+  await rest("settings?on_conflict=key", { method: "POST", headers: { Prefer: "resolution=merge-duplicates" }, body: JSON.stringify({ key: "automation_heartbeat", value: { source: "local", at: now }, updated_at: now }) });
+  return now;
+}
+
+// 재수집 — 서버 board-ingest 트리거(뽐뿌·루리웹 → 대기풀 적재). INGEST_SECRET 필요.
+async function ingest() {
+  const secret = process.env.INGEST_SECRET || process.env.CRON_SECRET;
+  if (!secret) return { error: "no-secret" };
+  try {
+    const r = await fetch(`https://www.todaydeals.co.kr/api/cron/board-ingest?key=${encodeURIComponent(secret)}`, { signal: AbortSignal.timeout(60000) });
+    const j = await r.json().catch(() => ({}));
+    return { collected: j.collected, inserted: j.inserted };
+  } catch (e) { return { error: String(e.message || e) }; }
+}
 
 async function fetchN(n) {
   const r = await rest(`board_deals?author=eq.${PENDING}&select=id,slug,shop,price,category,source_url,title,body&order=created_at.asc&limit=${n}`);
@@ -75,4 +95,10 @@ async function apply(file) {
 const [cmd, arg] = process.argv.slice(2);
 if (cmd === "fetch") await fetchN(Number(arg) || 7);
 else if (cmd === "apply") { if (!arg) { console.error("apply <file>"); process.exit(1); } await apply(arg); }
-else console.error("cmd: fetch [n] | apply <file>");
+else if (cmd === "cycle") {
+  // 29분 루프 1회분: 하트비트 + 재수집 + 대기글 N개 출력(→ 내가 각색 → apply)
+  const at = await beat();
+  const ing = await ingest();
+  console.error(`beat ${at} · ingest ${JSON.stringify(ing)}`);
+  await fetchN(Number(arg) || 7);
+} else console.error("cmd: fetch [n] | apply <file> | cycle [n]");
