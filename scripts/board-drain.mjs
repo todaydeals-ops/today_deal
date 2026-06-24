@@ -23,7 +23,7 @@ const ADBC_CMP = { ssg: "1259629521", emart: "450322980", ohou: "378130879", kur
 const adbc = (m, url, sub1) => `https://adbc.io/${ADBC_CMP[m]}/${ADBC_MEDIA}?sub1=${encodeURIComponent(sub1)}&aff_id=${AFF}&redirect=${encodeURIComponent(url)}`;
 const LP_ID = process.env.LINKPRICE_AFFILIATE_ID;
 const linkprice = (m, url) => (LP_ID ? `https://bestmore.net/click.php?${new URLSearchParams({ m, a: LP_ID, l: "9999", l_cd1: "3", l_cd2: "0", tu: url })}` : null);
-const LINKPRICE_HOSTS = { "auction.co.kr": "auction", "lotteon.com": "lotteon", "e-himart.co.kr": "himart", "hmall.com": "hmall", "lotteimall.com": "woori", "nsmall.com": "nsseshop", "gongyoungshop.kr": "gongyoung", "thirtymall.com": "thirtymall", "cjthemarket.com": "cjbrand", "wconcept.co.kr": "wconcept", "pulmuone.co.kr": "pulmuone", "hfashionmall.com": "hfashion", "clubclio.co.kr": "clubclio", "shein.com": "shein" };
+const LINKPRICE_HOSTS = { "auction.co.kr": "auction", "lotteon.com": "lotteon", "e-himart.co.kr": "himart", "hmall.com": "hmall", "lotteimall.com": "woori", "nsmall.com": "nsseshop", "gongyoungshop.kr": "gongyoung", "thirtymall.com": "thirtymall", "cjthemarket.com": "cjbrand", "wconcept.co.kr": "wconcept", "pulmuone.co.kr": "pulmuone", "hfashionmall.com": "hfashion", "clubclio.co.kr": "clubclio", "shein.com": "shein", "aliexpress.com": "aliexpress" };
 function repackage(url, sub1) {
   try {
     const h = new URL(url).hostname.toLowerCase();

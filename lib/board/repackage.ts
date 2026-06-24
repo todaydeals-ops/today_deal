@@ -29,6 +29,7 @@ const LINKPRICE_HOSTS: Record<string, string> = {
   "hfashionmall.com": "hfashion", // H패션몰
   "clubclio.co.kr": "clubclio",
   "shein.com": "shein",
+  "aliexpress.com": "aliexpress", // 알리(LinkPrice 채널 연결)
 };
 function linkpriceMerchantFor(host: string): string | null {
   if (host.endsWith("gmarket.co.kr") || host.endsWith("g9.co.kr")) return gmarketMerchant();
