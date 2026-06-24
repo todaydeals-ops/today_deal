@@ -1,6 +1,6 @@
 // 추천딜 데이터 접근 — 실DB(curated_deals)만. (목업 폴백 제거: 등록분만 노출)
 import type { CuratedDeal, CuratedCategory } from "@/lib/types";
-import { getSupabaseServer } from "@/lib/supabase/server";
+import { getSupabaseServer, getSupabaseAdmin } from "@/lib/supabase/server";
 
 interface CuratedRow {
   id: string;
@@ -47,7 +47,7 @@ function inferCategory(name: string): CuratedCategory {
 // 오늘의 AI추천딜 = CPS 제휴몰(마켓컬리·이마트몰 등) 특가. board_deals(board_type=cps)에서 노출.
 // (쿠팡 정지 후 그 자리를 ADBC CPS 머천트 딜로 대체 — 카드 클릭 시 ADBC 딥링크로 추적·이동)
 export async function fetchActiveCurated(): Promise<CuratedDeal[]> {
-  const sb = getSupabaseServer();
+  const sb = getSupabaseAdmin(); // board_deals는 RLS로 익명 읽기 차단 → service_role 필요
   if (!sb) return [];
   try {
     const { data, error } = await sb
