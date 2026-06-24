@@ -11,13 +11,13 @@ export const dynamic = "force-dynamic";
 
 const SITE = "https://www.todaydeals.co.kr";
 export const metadata: Metadata = {
-  title: "오늘의 추천딜 — 직접 고른 쿠팡 핫딜 큐레이션",
+  title: "오늘의 AI추천딜 — AI가 고른 인기몰 특가 큐레이션",
   description:
-    "에디터가 직접 골라 영상으로 보여주는 쿠팡 추천템 모음. 가전·주방·생활·가구·식품 카테고리별 핫딜을 한눈에.",
+    "마켓컬리·이마트 등 인기 쇼핑몰 특가를 AI가 추려 한곳에. 가전·주방·생활·가구·식품 카테고리별 추천딜을 한눈에.",
   alternates: { canonical: `${SITE}/recommended` },
   openGraph: {
-    title: "오늘의 추천딜 — 직접 고른 쿠팡 핫딜",
-    description: "에디터가 직접 골라 영상으로 보여주는 쿠팡 추천템 모음.",
+    title: "오늘의 AI추천딜 — AI가 고른 인기몰 특가",
+    description: "마켓컬리·이마트 등 인기 쇼핑몰 특가를 AI가 추려 한곳에 모았어요.",
     url: `${SITE}/recommended`,
     type: "website",
     images: [{ url: `${SITE}/opengraph-image`, width: 1200, height: 630 }],
@@ -31,7 +31,7 @@ export default async function Recommended() {
   const itemListLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "오늘의 추천딜",
+    name: "오늘의 AI추천딜",
     itemListElement: deals.filter((d) => d.slug).map((d, i) => ({
       "@type": "ListItem",
       position: i + 1,

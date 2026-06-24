@@ -44,29 +44,32 @@ function inferCategory(name: string): CuratedCategory {
   return "생활";
 }
 
-// 추천딜 = 쿠팡 골드박스(특가). curated_deals는 비활성/미사용 — 쿠팡을 추천딜로 노출.
+// 오늘의 AI추천딜 = CPS 제휴몰(마켓컬리·이마트몰 등) 특가. board_deals(board_type=cps)에서 노출.
+// (쿠팡 정지 후 그 자리를 ADBC CPS 머천트 딜로 대체 — 카드 클릭 시 ADBC 딥링크로 추적·이동)
 export async function fetchActiveCurated(): Promise<CuratedDeal[]> {
   const sb = getSupabaseServer();
   if (!sb) return [];
   try {
     const { data, error } = await sb
-      .from("deals")
-      .select("id, product_name, image_url, product_url, affiliate_url, discount_rate, sale_price, display_order")
-      .eq("platform", "coupang")
-      .order("display_order", { ascending: true });
+      .from("board_deals")
+      .select("id, title, shop, image_url, affiliate_url, source_url, price, created_at")
+      .eq("board_type", "cps")
+      .eq("is_published", true)
+      .order("created_at", { ascending: false })
+      .limit(120);
     if (error || !data) return [];
-    const rows = data as Array<{ id: string; product_name: string; image_url: string | null; product_url: string; affiliate_url: string | null; discount_rate: number | null; sale_price: number; display_order: number | null }>;
+    const rows = data as Array<{ id: string; title: string; shop: string | null; image_url: string | null; affiliate_url: string | null; source_url: string; price: number | null; created_at: string }>;
     return rows.map((r, i) => ({
       id: r.id,
       seq: rows.length - i, // 위쪽이 큰 번호(최신/상위)
-      slug: undefined, // slug 없음 → 카드가 쿠팡 제휴링크로 바로 이동
-      productName: r.product_name,
-      category: inferCategory(r.product_name),
+      slug: undefined, // slug 없음 → 카드가 ADBC 딥링크로 바로 이동
+      productName: r.title,
+      category: inferCategory(r.title),
       imageUrl: r.image_url ?? undefined,
-      affiliateUrl: r.affiliate_url || r.product_url,
-      discountRate: r.discount_rate ?? undefined,
-      salePrice: r.sale_price,
-      adminNote: undefined,
+      affiliateUrl: r.affiliate_url || r.source_url,
+      discountRate: undefined,
+      salePrice: r.price ?? 0,
+      adminNote: r.shop ?? undefined, // 몰 이름(마켓컬리/이마트몰)
       videoUrl: undefined,
       isActive: true,
     }));

@@ -18,9 +18,9 @@ export interface RecHeader {
 
 export const DEFAULT_REC_HEADER: RecHeader = {
   mode: "banner",
-  badge: "🔥 SNS 화제템",
-  title: "오늘의딜이 추천하는 SNS 핫이슈 상품",
-  subtitle: "인스타·유튜브·쇼츠에서 뜬 그 템, 에디터가 직접 골라 최저가로 모았어요.",
+  badge: "🤖 AI추천",
+  title: "AI가 골라낸 오늘의 추천딜",
+  subtitle: "마켓컬리·이마트 등 인기몰 특가를 AI가 추려 한곳에 모았어요.",
   ctaText: "",
   ctaUrl: "",
   name: "오늘의딜 큐레이터",
