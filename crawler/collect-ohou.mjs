@@ -46,10 +46,16 @@ async function scrape() {
       const lines = (card.innerText || "").split("\n").map((s) => s.trim()).filter(Boolean);
       const name = lines.filter((l) => l.length >= 6 && /[가-힣A-Za-z]/.test(l) && !JUNK.test(l) && !/^[\d,]+\s*(원|외)?$/.test(l) && !/^\d+%/.test(l)).sort((a, b) => b.length - a.length)[0] || "";
       if (!name || name.length < 5) continue;
-      const img = a.querySelector("img") || card.querySelector("img");
-      // 진짜 이미지 URL만 — data: placeholder(1x1 lazy)는 거부, currentSrc·srcset 폴백
-      let im = (img && (img.currentSrc || img.src)) || "";
-      if (im.startsWith("data:")) { const ss = (img?.getAttribute("srcset") || "").split(",")[0].trim().split(/\s+/)[0]; im = ss && !ss.startsWith("data:") ? ss : ""; }
+      // 카드 내 img 중 진짜 상품사진(/deal/) 우선 — 브랜드 로고 배지(thumbnail_badges)·data: placeholder 제외
+      let im = "";
+      const imgs = [...a.querySelectorAll("img"), ...(card ? card.querySelectorAll("img") : [])];
+      for (const g of imgs) {
+        let s = g.currentSrc || g.src || "";
+        if (s.startsWith("data:")) { const ss = (g.getAttribute("srcset") || "").split(",")[0].trim().split(/\s+/)[0]; s = ss && !ss.startsWith("data:") ? ss : ""; }
+        if (!s || s.startsWith("data:") || /thumbnail_badges/.test(s)) continue; // 배지 로고·placeholder 제외
+        if (/\/deal/.test(s)) { im = s; break; } // 진짜 상품사진 우선
+        if (!im) im = s; // 폴백(배지 아닌 다른 이미지)
+      }
       const tc = card.textContent || "";
       const dm = tc.match(/오늘만\s*(\d{1,2})\s*%/);
       const rm = tc.match(/(\d{1,2}):(\d{2}):(\d{2})\s*남음/);
