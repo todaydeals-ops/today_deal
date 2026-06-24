@@ -23,17 +23,19 @@ const ADBC_CMP = { ssg: "1259629521", emart: "450322980", ohou: "378130879", kur
 const adbc = (m, url, sub1) => `https://adbc.io/${ADBC_CMP[m]}/${ADBC_MEDIA}?sub1=${encodeURIComponent(sub1)}&aff_id=${AFF}&redirect=${encodeURIComponent(url)}`;
 const LP_ID = process.env.LINKPRICE_AFFILIATE_ID;
 const linkprice = (m, url) => (LP_ID ? `https://bestmore.net/click.php?${new URLSearchParams({ m, a: LP_ID, l: "9999", l_cd1: "3", l_cd2: "0", tu: url })}` : null);
+const LINKPRICE_HOSTS = { "auction.co.kr": "auction", "lotteon.com": "lotteon", "e-himart.co.kr": "himart", "hmall.com": "hmall", "lotteimall.com": "woori", "nsmall.com": "nsseshop", "gongyoungshop.kr": "gongyoung", "thirtymall.com": "thirtymall", "cjthemarket.com": "cjbrand", "wconcept.co.kr": "wconcept", "pulmuone.co.kr": "pulmuone", "hfashionmall.com": "hfashion", "clubclio.co.kr": "clubclio", "shein.com": "shein" };
 function repackage(url, sub1) {
   try {
     const h = new URL(url).hostname.toLowerCase();
-    if (h.endsWith("gmarket.co.kr") || h.endsWith("g9.co.kr")) return linkprice(process.env.LINKPRICE_GMARKET_MERCHANT || "gmarket", url);
-    if (h.endsWith("auction.co.kr")) return linkprice("auction", url);
-    if (h.endsWith("lotteon.com")) return linkprice("lotteon", url);
+    // ADBC(CPS) 우선
     if (h === "kurly.com" || h.endsWith(".kurly.com")) return adbc("kurly", url, sub1);
     if (h === "emart.ssg.com") return adbc("emart", url, sub1);
     if (h.endsWith(".ssg.com") || h === "ssg.com") return adbc("ssg", url, sub1);
     if (h === "store.ohou.se" || h.endsWith(".ohou.se") || h === "ohou.se") return adbc("ohou", url, sub1);
-    return null; // 11번가 미승인·쿠팡 정지 등 → 원본 유지
+    // LinkPrice 제휴완료
+    if (h.endsWith("gmarket.co.kr") || h.endsWith("g9.co.kr")) return linkprice(process.env.LINKPRICE_GMARKET_MERCHANT || "gmarket", url);
+    for (const sfx in LINKPRICE_HOSTS) if (h === sfx || h.endsWith("." + sfx)) return linkprice(LINKPRICE_HOSTS[sfx], url);
+    return null; // 11번가 미제휴·쿠팡 정지 등 → 원본 유지
   } catch { return null; }
 }
 
