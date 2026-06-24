@@ -3,7 +3,7 @@ import type { Deal } from "@/lib/types";
 import { dealSlug } from "@/lib/slug";
 import Countdown from "./Countdown";
 import CompareButton from "./CompareButton";
-import { PriceVerdictBadge } from "./PriceVerdict";
+import { PriceVerdictBadge, PickBadge } from "./PriceVerdict";
 import styles from "./DealCard.module.css";
 
 interface DealCardProps {
@@ -25,7 +25,7 @@ export default function DealCard({ deal }: DealCardProps) {
     <>
       <div className={styles.imgWrap}>
         <div style={{ position: "absolute", top: 6, left: 6, zIndex: 2 }}>
-          <PriceVerdictBadge pc={priceCompare} ourPrice={salePrice} />
+          {deal.pick ? <PickBadge size="sm" /> : <PriceVerdictBadge pc={priceCompare} ourPrice={salePrice} />}
         </div>
         <div className={styles.img}>
           {imageUrl ? (

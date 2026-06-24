@@ -83,6 +83,26 @@ export function PriceVerdictBadge({ pc, ourPrice }: { pc?: PriceCompare; ourPric
   return <BadgeChip tier={verdictOf(pc, ourPrice).tier} size="sm" />;
 }
 
+// "AI 오늘의 픽" — 플랫폼별 대표 1개를 상단에 강조(가격 주장 아님). 따뜻한 골드 칩.
+export function PickBadge({ size = "sm" }: { size?: "sm" | "md" }) {
+  const sm = size === "sm";
+  return (
+    <span
+      style={{
+        display: "inline-flex", alignItems: "center", gap: 4,
+        background: "linear-gradient(180deg,#FF8A3D,#F2641E)", color: "#fff",
+        fontSize: sm ? 10 : 11, fontWeight: 800, lineHeight: 1,
+        padding: sm ? "4px 8px" : "6px 10px", borderRadius: sm ? 6 : 8,
+        boxShadow: "inset 0 1px 0 rgba(255,255,255,.18), 0 1px 4px rgba(242,100,30,0.35)",
+        whiteSpace: "nowrap",
+      }}
+      title="AI가 고른 오늘의 픽"
+    >
+      <span aria-hidden>🏅</span>AI 오늘의 픽
+    </span>
+  );
+}
+
 // 범례 항목(카드·범례 공용 데이터)
 export const VERDICT_LEGEND: { tier: VerdictTier; desc: string }[] = [
   { tier: "강추", desc: "네이버·쿠팡보다 확실히 저렴해요" },

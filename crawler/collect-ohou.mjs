@@ -23,7 +23,11 @@ async function scrape() {
   await ctx.addInitScript(() => { Object.defineProperty(navigator, "webdriver", { get: () => undefined }); Object.defineProperty(navigator, "plugins", { get: () => [1, 2, 3] }); window.chrome = { runtime: {} }; });
   const page = await ctx.newPage();
   for (const url of ["https://ohou.se/", "https://store.ohou.se/today_deals"]) { try { await page.goto(url, { waitUntil: "domcontentloaded", timeout: 45000 }); await page.waitForTimeout(2500); } catch {} }
-  for (let i = 0; i < 8; i++) { await page.mouse.wheel(0, 3000); await page.waitForTimeout(500); }
+  // 끝까지 천천히 스크롤 — 모든 카드가 뷰포트를 지나 lazy 이미지가 실제 로드되게
+  const docH = await page.evaluate(() => document.body.scrollHeight);
+  for (let y = 0; y < docH + 3000; y += 700) { await page.mouse.wheel(0, 700); await page.waitForTimeout(250); }
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.waitForTimeout(1800);
   const rows = await page.evaluate(() => {
     const seen = new Set(), out = [];
     const JUNK = /남음|오늘만|쿠폰|할인가|무료배송|판매됐|적립|개나|회원가입|카테고리|고객센터|로그인|글쓰기|오늘의딜|단독상품|원하는날|쇼룸|기획전|베스트/;
@@ -43,11 +47,14 @@ async function scrape() {
       const name = lines.filter((l) => l.length >= 6 && /[가-힣A-Za-z]/.test(l) && !JUNK.test(l) && !/^[\d,]+\s*(원|외)?$/.test(l) && !/^\d+%/.test(l)).sort((a, b) => b.length - a.length)[0] || "";
       if (!name || name.length < 5) continue;
       const img = a.querySelector("img") || card.querySelector("img");
+      // 진짜 이미지 URL만 — data: placeholder(1x1 lazy)는 거부, currentSrc·srcset 폴백
+      let im = (img && (img.currentSrc || img.src)) || "";
+      if (im.startsWith("data:")) { const ss = (img?.getAttribute("srcset") || "").split(",")[0].trim().split(/\s+/)[0]; im = ss && !ss.startsWith("data:") ? ss : ""; }
       const tc = card.textContent || "";
       const dm = tc.match(/오늘만\s*(\d{1,2})\s*%/);
       const rm = tc.match(/(\d{1,2}):(\d{2}):(\d{2})\s*남음/);
       seen.add(m[1]);
-      out.push({ id: m[1], name: name.slice(0, 80), price, image: img?.src || null, discount: dm ? Number(dm[1]) : null, remainSec: rm ? +rm[1] * 3600 + +rm[2] * 60 + +rm[3] : null });
+      out.push({ id: m[1], name: name.slice(0, 80), price, image: im || null, discount: dm ? Number(dm[1]) : null, remainSec: rm ? +rm[1] * 3600 + +rm[2] * 60 + +rm[3] : null });
     }
     return out;
   });

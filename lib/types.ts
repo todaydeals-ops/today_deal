@@ -18,6 +18,7 @@ export interface Deal {
   dealEndAt: string; // ISO 8601 마감 시각
   isSoldout: boolean;
   priceCompare?: PriceCompare; // AI 가격비교 진단(네이버/쿠팡 대비). 확신될 때만 존재.
+  pick?: boolean; // "AI 오늘의 픽" — 플랫폼별 대표 1개를 상단에 강조(가격주장 아님, 클릭 유도용)
 }
 
 // AI 가격비교 진단 — 같은 상품을 네이버/쿠팡 최저가와 대조한 결과.
