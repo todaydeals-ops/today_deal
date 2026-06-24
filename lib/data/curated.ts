@@ -58,7 +58,21 @@ export async function fetchActiveCurated(): Promise<CuratedDeal[]> {
       .order("created_at", { ascending: false })
       .limit(120);
     if (error || !data) return [];
-    const rows = data as Array<{ id: string; title: string; shop: string | null; image_url: string | null; affiliate_url: string | null; source_url: string; price: number | null; created_at: string }>;
+    const raw = data as Array<{ id: string; title: string; shop: string | null; image_url: string | null; affiliate_url: string | null; source_url: string; price: number | null; created_at: string }>;
+    // 몰별로 번갈아 배치(컬리·이마트·컬리·이마트…) — 한 몰이 몰려 나오지 않게
+    const groups = new Map<string, typeof raw>();
+    for (const r of raw) {
+      const k = r.shop ?? "기타";
+      if (!groups.has(k)) groups.set(k, []);
+      groups.get(k)!.push(r);
+    }
+    const lists = [...groups.values()];
+    const rows: typeof raw = [];
+    for (let i = 0; rows.length < raw.length; i++) {
+      let any = false;
+      for (const l of lists) if (i < l.length) { rows.push(l[i]); any = true; }
+      if (!any) break;
+    }
     return rows.map((r, i) => ({
       id: r.id,
       seq: rows.length - i, // 위쪽이 큰 번호(최신/상위)

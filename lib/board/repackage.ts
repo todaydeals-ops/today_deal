@@ -24,6 +24,11 @@ export async function repackageDealUrl(url: string, sub1 = "board"): Promise<str
     const ours = linkpriceDeeplink(gmarketMerchant(), url);
     return ours && ours !== url ? ours : null;
   }
+  // 옥션 → LinkPrice (승인완료)
+  if (host.endsWith("auction.co.kr")) {
+    const ours = linkpriceDeeplink("auction", url);
+    return ours && ours !== url ? ours : null;
+  }
   // 마켓컬리 → ADBC
   if (host === "kurly.com" || host.endsWith(".kurly.com")) {
     return adbcDeeplink("kurly", url, sub1);
