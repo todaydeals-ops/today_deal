@@ -98,8 +98,8 @@ async function ingestNew(sb: NonNullable<ReturnType<typeof getSupabaseAdmin>>): 
     // 카테고리: 소스 강제값(해외직구) 우선, 없으면 매핑(루리웹 '게임S/W' 등 미매핑 방지)
     const category = c.forceCategory ?? categorize(c.title, c.category);
     const imageUrl = c.imageUrl ?? meta.image;
-    // 재포장: 쿠팡 링크면 원작성자 제휴태그 제거 + 우리 파트너스 링크로 교체(실패 시 원본 유지).
-    const repackaged = await repackageDealUrl(meta.dealUrl);
+    // 재포장: 제휴사(지마켓·컬리·이마트·SSG) 링크면 우리 제휴링크로 교체(실패 시 원본 유지). sub1=slug로 귀속.
+    const repackaged = await repackageDealUrl(meta.dealUrl, c.slug);
     if (repackaged) repackagedCount++;
     return {
       slug: c.slug,
