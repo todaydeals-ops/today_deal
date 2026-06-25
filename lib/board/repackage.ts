@@ -14,6 +14,8 @@ function hostOf(url: string): string | null {
 }
 
 // LinkPrice 제휴완료 머천트: 사이트 host 접미사 → 머천트 코드(m=). (지마켓은 프로모 전환 위해 동적)
+// ★ 절대 추가 금지: emart.ssg.com·ssg.com·kurly.com·ohou — 이들은 ADBC(퀀텀비트) 수수료율이 더 좋아
+//   위 ADBC 블록에서 우선 처리한다. LinkPrice에 같은 몰이 풀려도 ADBC 우선(중복방지).
 const LINKPRICE_HOSTS: Record<string, string> = {
   "11st.co.kr": "11st", // 11번가(승인완료 2026-06-25)
   "auction.co.kr": "auction",
