@@ -15,6 +15,7 @@ function hostOf(url: string): string | null {
 
 // LinkPrice 제휴완료 머천트: 사이트 host 접미사 → 머천트 코드(m=). (지마켓은 프로모 전환 위해 동적)
 const LINKPRICE_HOSTS: Record<string, string> = {
+  "11st.co.kr": "11st", // 11번가(승인완료 2026-06-25)
   "auction.co.kr": "auction",
   "lotteon.com": "lotteon",
   "e-himart.co.kr": "himart",

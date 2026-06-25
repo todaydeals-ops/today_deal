@@ -66,11 +66,11 @@ function buildItemListLd(deals: Deal[]) {
 
 export default async function Home() {
   const all = await fetchUnifiedDeals();
-  // 타임딜 = 제휴완료(수익) 플랫폼만 — 지마켓·오늘의집. 11번가(미제휴)·쿠팡(정지)은 제외.
-  const pool = all.filter((d) => d.platform === "gmarket" || d.platform === "ohou");
-  // "AI 오늘의 픽" — 제휴완료 플랫폼만(지마켓·오늘의집). 11번가는 미제휴라 픽 제외(수수료 0).
+  // 타임딜 = 제휴완료(수익) 플랫폼 — 지마켓·11번가·오늘의집. 쿠팡(정지)은 제외.
+  const pool = all.filter((d) => d.platform === "gmarket" || d.platform === "11st" || d.platform === "ohou");
+  // "AI 오늘의 픽" — 제휴완료 플랫폼별 눌릴 만한(할인율 최고·이미지 있는) 1개 상단 배치.
   const picks: typeof pool = [];
-  for (const p of ["gmarket", "ohou"] as const) {
+  for (const p of ["gmarket", "11st", "ohou"] as const) {
     const top = pool
       .filter((d) => d.platform === p && !d.isSoldout && d.imageUrl)
       .sort((a, b) => (b.discountRate ?? 0) - (a.discountRate ?? 0))[0];
@@ -139,6 +139,7 @@ export default async function Home() {
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
             {[
               ["gmarket", "지마켓 슈퍼딜"],
+              ["11st", "11번가 타임딜"],
               ["ohou", "오늘의집 오늘의딜"],
             ].map(([k, label]) => (
               <Link
