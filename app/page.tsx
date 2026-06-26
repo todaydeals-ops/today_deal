@@ -85,11 +85,12 @@ function pickScore(name: string, price: number, discount: number): number {
 
 export default async function Home() {
   const all = await fetchUnifiedDeals();
-  // 타임딜 = 제휴완료(수익) 플랫폼 — 지마켓·11번가·오늘의집. 쿠팡(정지)은 제외.
-  const pool = all.filter((d) => d.platform === "gmarket" || d.platform === "11st" || d.platform === "ohou");
+  // 타임딜 = 제휴완료(수익) 플랫폼 — 쿠팡(골드박스·ADBC)·지마켓·11번가·오늘의집.
+  const pool = all.filter((d) => d.platform === "coupang" || d.platform === "gmarket" || d.platform === "11st" || d.platform === "ohou");
   // "AI 오늘의 픽" — 플랫폼별 '눌릴 만한'(먹거리·일상·브랜드) 1개를 상단 배치(클릭성 점수).
+  // 쿠팡을 맨 앞에 두어 첫번째 AI 추천 카드로 노출.
   const picks: typeof pool = [];
-  for (const p of ["gmarket", "11st", "ohou"] as const) {
+  for (const p of ["coupang", "gmarket", "11st", "ohou"] as const) {
     const top = pool
       .filter((d) => d.platform === p && !d.isSoldout && d.imageUrl)
       .sort((a, b) => pickScore(b.productName, b.salePrice, b.discountRate) - pickScore(a.productName, a.salePrice, a.discountRate))[0];
@@ -157,6 +158,7 @@ export default async function Home() {
           </h2>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
             {[
+              ["coupang", "쿠팡 골드박스"],
               ["gmarket", "지마켓 슈퍼딜"],
               ["11st", "11번가 타임딜"],
               ["ohou", "오늘의집 오늘의딜"],
