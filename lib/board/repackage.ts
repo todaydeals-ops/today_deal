@@ -54,6 +54,7 @@ export async function repackageDealUrl(url: string, sub1 = "board"): Promise<str
   if (host === "emart.ssg.com") return adbcDeeplink("emart", url, sub1);
   if (host === "ssg.com" || host.endsWith(".ssg.com")) return adbcDeeplink("ssg", url, sub1);
   if (host === "store.ohou.se" || host === "ohou.se" || host.endsWith(".ohou.se")) return adbcDeeplink("ohou", url, sub1);
+  if (host === "coupang.com" || host.endsWith(".coupang.com")) return adbcDeeplink("coupang", url, sub1);
 
   // LinkPrice 제휴완료 머천트
   const m = linkpriceMerchantFor(host);
@@ -61,6 +62,6 @@ export async function repackageDealUrl(url: string, sub1 = "board"): Promise<str
     const ours = linkpriceDeeplink(m, url);
     return ours && ours !== url ? ours : null;
   }
-  // 11번가(미제휴) · 쿠팡(정지) · 그 외 → 미연동(원본 유지)
+  // 그 외 → 미연동(원본 유지)
   return null;
 }

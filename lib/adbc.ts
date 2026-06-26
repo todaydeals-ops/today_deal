@@ -9,6 +9,7 @@ export const ADBC_CAMPAIGN = {
   emart: "450322980", // 이마트몰 3.00%
   ohou: "378130879", // 오늘의집 3.60%
   kurly: "1356118765", // 마켓컬리 3.60%
+  coupang: "211547715", // 쿠팡(제휴완료 2026-06-26, 수수료율 차주 전달) — ADBC 트래킹이라 파트너스 API 정지와 무관
 } as const;
 export type AdbcMerchant = keyof typeof ADBC_CAMPAIGN;
 
