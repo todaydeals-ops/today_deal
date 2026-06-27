@@ -72,6 +72,7 @@ export async function fetchMagazineList(opts?: { corner?: string; limit?: number
       .from("magazine")
       .select("*")
       .eq("is_published", true)
+      .neq("corner", "report")   // 리포트는 별도 데이터레이어(magazine-report.ts) 사용
       .order("created_at", { ascending: false })
       .limit(opts?.limit ?? 60);
     if (opts?.corner) q = q.eq("corner", opts.corner);

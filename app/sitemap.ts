@@ -3,6 +3,7 @@ import { fetchArchiveSlugs } from "@/lib/data/deals";
 import { fetchCuratedSlugs } from "@/lib/data/curated";
 import { fetchBoardSitemap, BOARD_CATEGORIES } from "@/lib/data/board";
 import { fetchMagazineList } from "@/lib/data/magazine";
+import { fetchReportList } from "@/lib/data/magazine-report";
 
 const SITE = "https://www.todaydeals.co.kr";
 
@@ -71,5 +72,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  return [...base, ...magazinePages, ...curatedPages, ...boardPages, ...dealPages];
+  // 매거진 리포트 (5편 묶음 롱폼 SEO) — 우선순위 높게
+  const reports = await fetchReportList(200);
+  const reportPages: MetadataRoute.Sitemap = reports.map((r) => ({
+    url: `${SITE}/magazine/report/${r.slug}`,
+    lastModified: new Date(r.createdAt),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  return [...base, ...reportPages, ...magazinePages, ...curatedPages, ...boardPages, ...dealPages];
 }

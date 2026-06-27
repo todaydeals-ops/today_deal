@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { fetchMagazineList } from "@/lib/data/magazine";
+import { fetchReportList } from "@/lib/data/magazine-report";
 import { isCorner, cornerOf, CATCH } from "@/lib/magazine/corners";
 import { MagazineUtilBar, MagazineMasthead, CornerIndex, NeutralBand, MagazineFooter, CornerDot, FieldPill, FeaturedImageSlot } from "@/components/magazine/Chrome";
 
@@ -20,7 +21,10 @@ export const metadata: Metadata = {
 export default async function MagazineHome({ searchParams }: { searchParams: Promise<{ corner?: string }> }) {
   const sp = await searchParams;
   const corner = isCorner(sp.corner) ? sp.corner : undefined;
-  const list = await fetchMagazineList({ corner });
+  const [list, reports] = await Promise.all([
+    fetchMagazineList({ corner }),
+    corner ? Promise.resolve([]) : fetchReportList(6),
+  ]);
   const featured = list[0];
   const rest = list.slice(1);
 
@@ -59,6 +63,29 @@ export default async function MagazineHome({ searchParams }: { searchParams: Pro
           </section>
 
           <CornerIndex />
+
+          {/* 리포트 섹션 — 5편 묶음 큐레이션 */}
+          {reports.length > 0 && (
+            <section className="mz-wrap" style={{ paddingTop: 0, paddingBottom: 40 }}>
+              <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", borderTop: "1px solid rgba(22,20,15,0.16)", paddingTop: 16, marginBottom: 14 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                  <span style={{ fontFamily: mono, fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", color: "#fff", background: "#16140f", padding: "3px 9px", borderRadius: 4 }}>REPORT</span>
+                  <span style={{ fontWeight: 800, fontSize: 16 }}>이슈별 큐레이션 리포트</span>
+                </div>
+                <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: "1.5px", color: "#9a9286" }}>5편 묶음</span>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                {reports.map((r) => (
+                  <Link key={r.slug} href={`/magazine/report/${r.slug}`} style={{ display: "flex", alignItems: "center", gap: 14, padding: "11px 14px", border: "1px solid #e8e4dc", borderRadius: 7, textDecoration: "none", background: "#fafaf8" }}>
+                    <span style={{ fontFamily: mono, fontSize: 10, color: "#9a9286", whiteSpace: "nowrap" }}>5편</span>
+                    <span style={{ flex: 1, fontSize: 15, fontWeight: 700, color: "#16140f", lineHeight: 1.4, fontFamily: serif }}>{r.title}</span>
+                    <span style={{ fontSize: 12, color: "#9a9286", whiteSpace: "nowrap", flexShrink: 0 }}>{r.topic}</span>
+                    <span style={{ fontFamily: mono, fontSize: 14, color: "#16140f", flexShrink: 0 }}>→</span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
         </>
       )}
 
