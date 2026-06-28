@@ -54,10 +54,6 @@ export default async function Image() {
           <span style={{ fontSize: 56, color: "#16140f", letterSpacing: "0.2em", paddingBottom: 6 }}>MAGAZINE</span>
         </div>
 
-        {/* 문구 */}
-        <div style={{ marginTop: 54, fontSize: 46, color: "#46433d", letterSpacing: "-0.01em" }}>
-          사야 할 이유 대신, 기준을 정리해 드립니다.
-        </div>
       </div>
     ),
     { ...size, fonts: [{ name: "Pretendard", data: font, weight: 700, style: "normal" }] }
