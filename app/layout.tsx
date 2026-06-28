@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import MagazineHookPopup from "@/components/MagazineHookPopup";
 import { Analytics } from "@vercel/analytics/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.todaydeals.co.kr"),
@@ -103,6 +104,7 @@ export default function RootLayout({
         {children}
         <MagazineHookPopup />
         <Analytics />
+        <GoogleAnalytics gaId="G-0D58JNRETR" />
       </body>
     </html>
   );
