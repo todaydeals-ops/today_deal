@@ -5,7 +5,7 @@ import { fetchMagazineBySlug, fetchRelatedMagazine } from "@/lib/data/magazine";
 import { cornerOf } from "@/lib/magazine/corners";
 import { MagazineUtilBar, MagazineMasthead, MagazineFooter, FieldPill } from "@/components/magazine/Chrome";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600; // 1시간 캐시 — 매거진 아티클은 실시간 불필요
 const SITE = "https://www.todaydeals.co.kr";
 const mono = "'JetBrains Mono', monospace";
 const serif = "'Noto Serif KR', serif";

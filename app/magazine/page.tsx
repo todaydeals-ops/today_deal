@@ -5,7 +5,7 @@ import { fetchReportList } from "@/lib/data/magazine-report";
 import { isCorner, cornerOf, CATCH } from "@/lib/magazine/corners";
 import { MagazineUtilBar, MagazineMasthead, CornerIndex, NeutralBand, MagazineFooter, CornerDot, FieldPill, FeaturedImageSlot } from "@/components/magazine/Chrome";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 1800; // 30분 캐시 — 매거진 목록(하루 1~2편 추가)
 const SITE = "https://www.todaydeals.co.kr";
 const mono = "'JetBrains Mono', monospace";
 const serif = "'Noto Serif KR', serif";

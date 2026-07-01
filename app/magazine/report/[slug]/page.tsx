@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { fetchReportBySlug, fetchReportSlugs } from "@/lib/data/magazine-report";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600; // 1시간 캐시
 const SITE = "https://www.todaydeals.co.kr";
 
 const CORNER_COLORS: Record<string, string> = {
