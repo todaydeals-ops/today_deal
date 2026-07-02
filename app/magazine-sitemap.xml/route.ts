@@ -1,7 +1,7 @@
 import { fetchMagazineList } from "@/lib/data/magazine";
 import { fetchReportList } from "@/lib/data/magazine-report";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 86400; // 24시간 CDN 캐시 — 콜드스타트 없이 정적처럼 서빙
 const SITE = "https://www.todaydeals.co.kr";
 
 export async function GET() {
