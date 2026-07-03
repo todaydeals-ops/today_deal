@@ -59,6 +59,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: "website",
     },
     alternates: { canonical: `${SITE}/deal/${slug}` },
+    robots: { index: false, follow: true },
   };
 }
 

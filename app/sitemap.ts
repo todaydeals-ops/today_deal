@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { fetchArchiveSlugs } from "@/lib/data/deals";
+// fetchArchiveSlugs 제거 — /deal/[slug]는 noindex이므로 사이트맵 불포함
 import { fetchCuratedSlugs } from "@/lib/data/curated";
 import { fetchBoardSitemap, BOARD_CATEGORIES } from "@/lib/data/board";
 import { fetchMagazineList } from "@/lib/data/magazine";
@@ -35,15 +35,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE}/privacy`, lastModified: now, changeFrequency: "monthly", priority: 0.3 },
     { url: `${SITE}/partnership`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
   ];
-
-  // 영구 딜 스냅샷 페이지 전부 포함 (검색엔진 발견용)
-  const slugs = await fetchArchiveSlugs(5000);
-  const dealPages: MetadataRoute.Sitemap = slugs.map((s) => ({
-    url: `${SITE}/deal/${s}`,
-    lastModified: now,
-    changeFrequency: "daily",
-    priority: 0.5,
-  }));
 
   // 추천딜 콘텐츠 페이지 (쇼츠 연결·영구) — 우선순위 높게
   const curated = await fetchCuratedSlugs(2000);
@@ -81,5 +72,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }));
 
-  return [...base, ...reportPages, ...magazinePages, ...curatedPages, ...boardPages, ...dealPages];
+  return [...base, ...reportPages, ...magazinePages, ...curatedPages, ...boardPages];
 }
