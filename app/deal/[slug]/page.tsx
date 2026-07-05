@@ -23,7 +23,10 @@ const PLATFORM_KR: Record<string, string> = {
   "11st": "11번가",
   coupang: "쿠팡",
   ali: "알리익스프레스",
+  ohou: "오늘의집",
 };
+// /deals/[platform] 라우트가 실제로 존재하는 플랫폼만 (없으면 /deals로 폴백)
+const PLATFORM_PAGE = new Set(["gmarket", "11st", "coupang", "ali"]);
 
 const DEAL_FAQ = [
   {
@@ -118,7 +121,7 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
       <main className="wrap">
         <nav className={styles.crumb}>
           <Link href="/">오늘의딜</Link> <span>›</span>{" "}
-          <Link href={`/deals/${d.platform}`}>{PLATFORM_KR[d.platform] ?? "딜"}</Link>
+          <Link href={PLATFORM_PAGE.has(d.platform) ? `/deals/${d.platform}` : "/deals"}>{PLATFORM_KR[d.platform] ?? "딜"}</Link>
         </nav>
 
         <div style={{ margin: "4px 0 14px" }}>
@@ -176,7 +179,7 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
         {/* 내부링크 */}
         <div style={{ display: "flex", flexWrap: "wrap", gap: 10, margin: "28px 0 8px" }}>
           {[
-            [`/deals/${d.platform}`, `${PLATFORM_KR[d.platform] ?? ""} 특가 더보기`],
+            [PLATFORM_PAGE.has(d.platform) ? `/deals/${d.platform}` : "/deals", `${PLATFORM_KR[d.platform] ?? ""} 특가 더보기`],
             ["/deals", "전체 특가 모아보기"],
             ["/recommended", "추천딜"],
           ].map(([href, label]) => (
