@@ -22,7 +22,7 @@ const H = { apikey: K, Authorization: `Bearer ${K}`, "Content-Type": "applicatio
 const rest = (p, i = {}) => fetch(`${S}/rest/v1/${p}`, { ...i, headers: { ...H, ...(i.headers || {}) } });
 const PENDING = "__pending__";
 const dry = process.argv.includes("--dry");
-const TAKE = 7;
+const TAKE = 12;
 
 // ── 제휴 재포장 ──
 const ADBC_MEDIA = "959081531", AFF = "app1";

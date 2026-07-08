@@ -18,16 +18,24 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const d = await fetchBoardBySlug(slug);
   if (!d) return { title: "핫딜 — 오늘의딜" };
-  const price = typeof d.price === "number" ? `${fmt(d.price)}원 ` : "";
-  const title = `${d.title} ${price}${d.shop ? `(${d.shop}) ` : ""}| 오늘의딜 핫딜`;
-  const desc = (d.body?.slice(0, 100) || `${d.shop ?? ""} ${d.title} ${price}핫딜 제보. 오늘의딜에서 실시간 특가를 확인하세요.`).trim();
+  const price = typeof d.price === "number" ? `${fmt(d.price)}원` : "";
+  const shopTag = d.shop ? `${d.shop} ` : "";
+  // SEO: "상품명 가격원 특가 | 쇼핑몰 핫딜 — 오늘의딜" 형태로 롱테일 키워드 확보
+  const title = price
+    ? `${d.title} ${price} 특가 | ${shopTag}핫딜 — 오늘의딜`
+    : `${d.title} | ${shopTag}핫딜 — 오늘의딜`;
+  // description: 본문 앞부분 + 가격 정보 (검색결과 스니펫 최적화)
+  const bodySnippet = d.body?.replace(/\s+/g, " ").slice(0, 110) || "";
+  const desc = bodySnippet
+    ? `${bodySnippet}${price ? ` — ${price} 특가` : ""}`
+    : `${shopTag}${d.title}${price ? ` ${price}` : ""} 핫딜 제보. 오늘의딜에서 실시간 최저가를 확인하세요.`;
   return {
     title,
-    description: desc,
+    description: desc.slice(0, 155),
     alternates: { canonical: `${SITE}/board/${slug}` },
     openGraph: {
-      title: d.title,
-      description: desc,
+      title: price ? `${d.title} ${price} 특가` : d.title,
+      description: desc.slice(0, 155),
       url: `${SITE}/board/${slug}`,
       type: "article",
       ...(d.imageUrl ? { images: [{ url: d.imageUrl }] } : {}),
