@@ -1,6 +1,6 @@
-// 매거진 대표 이미지 수집 — slug 키워드로 Pexels(우선)·Openverse(fallback) 검색 → RAIL 주석에 image 저장.
-// 이미 image 있는 글은 스킵(고정/캐시). 무료·상업이용·중립 스톡. 크레딧 자동 표기.
-// 사용: node scripts/magazine-images.mjs [--dry] [--force] [--limit N]
+// 매거진 본문 이미지 수집 — slug 키워드로 Pexels(우선)·Openverse(fallback) 검색 → RAIL 주석 images[]에 저장.
+// 글당 서로 다른 최대 2장 수집(렌더에서 글 길이에 따라 짧으면 1장·길면 2장 사용). 무료·상업이용·중립 스톡.
+// 이미 images 있으면 스킵(고정/캐시). 재수집은 --force. 사용: node scripts/magazine-images.mjs [--dry] [--force] [--limit=N]
 import fs from "node:fs";
 (function loadEnv() {
   try {
@@ -18,29 +18,35 @@ const DRY = process.argv.includes("--dry");
 const FORCE = process.argv.includes("--force");
 const LIMIT = Number(process.argv.find((a) => a.startsWith("--limit="))?.split("=")[1] || 0);
 
-// slug → 영어 검색 키워드 (접미사·수식어 제거 후 핵심 명사 1~2개)
-const DROP = new Set(["guide", "fact", "factcheck", "check", "compare", "trend", "longrun", "care", "vs", "buying", "types", "type", "dosage", "size", "capacity", "999", "refresh", "self", "maintenance", "sweetener", "safety", "organic", "inbody", "worth", "it", "direct", "tank", "dose", "absorption", "999", "ratio"]);
+const DROP = new Set(["guide", "fact", "factcheck", "check", "compare", "trend", "longrun", "care", "vs", "buying", "types", "type", "dosage", "size", "capacity", "999", "refresh", "self", "maintenance", "sweetener", "safety", "organic", "inbody", "worth", "it", "direct", "tank", "dose", "absorption", "ratio"]);
 function keyword(slug) {
   const parts = slug.split("-").filter((w) => !DROP.has(w));
   return parts.slice(0, 2).join(" ").trim() || parts[0] || slug;
 }
 const hash = (s) => [...s].reduce((a, c) => a + c.charCodeAt(0), 0);
 
-async function pexels(q, page) {
-  const r = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(q)}&page=${page}&per_page=5&orientation=landscape`, { headers: { Authorization: PEX } });
-  if (!r.ok) return null;
-  const j = await r.json();
-  const p = (j.photos || [])[0];
-  if (!p) return null;
-  return { url: p.src.large, credit: p.photographer, source: "Pexels", link: p.url };
+// 서로 다른 n장 균등 추출
+function spread(list, n, mapper) {
+  const out = [], seen = new Set();
+  for (let i = 0; i < n; i++) {
+    let k = Math.min(list.length - 1, Math.floor((i * list.length) / n));
+    while (seen.has(k) && k < list.length) k++;
+    if (k >= list.length || seen.has(k)) break;
+    seen.add(k); out.push(mapper(list[k]));
+  }
+  return out;
 }
-async function openverse(q, page) {
-  const r = await fetch(`https://api.openverse.org/v1/images/?q=${encodeURIComponent(q)}&page=${page}&page_size=3&license_type=commercial,modification`, { headers: UA });
-  if (!r.ok) return null;
+async function pexels(q, page, n = 2) {
+  const r = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(q)}&page=${page}&per_page=15&orientation=landscape`, { headers: { Authorization: PEX } });
+  if (!r.ok) return [];
   const j = await r.json();
-  const x = (j.results || [])[0];
-  if (!x) return null;
-  return { url: x.thumbnail || x.url, credit: x.creator || "Unknown", source: `Openverse · ${x.license}`, link: x.foreign_landing_url };
+  return spread(j.photos || [], n, (p) => ({ url: p.src.large, credit: p.photographer, source: "Pexels", link: p.url }));
+}
+async function openverse(q, page, n = 2) {
+  const r = await fetch(`https://api.openverse.org/v1/images/?q=${encodeURIComponent(q)}&page=${page}&page_size=8&license_type=commercial,modification`, { headers: UA });
+  if (!r.ok) return [];
+  const j = await r.json();
+  return spread(j.results || [], n, (x) => ({ url: x.thumbnail || x.url, credit: x.creator || "Unknown", source: `Openverse · ${x.license}`, link: x.foreign_landing_url }));
 }
 
 function railGet(bodyHtml) {
@@ -49,9 +55,10 @@ function railGet(bodyHtml) {
   let rail = {}; try { rail = JSON.parse(m[1]); } catch {}
   return { rail, rest: (bodyHtml || "").slice(m[0].length) };
 }
-function railSet(bodyHtml, image) {
+function railSet(bodyHtml, images) {
   const { rail, rest } = railGet(bodyHtml);
-  rail.image = image;
+  rail.images = images;
+  delete rail.image; // 구 단수 필드 정리
   return `<!--RAIL:${JSON.stringify(rail)}-->\n` + rest.trim();
 }
 
@@ -60,20 +67,20 @@ let done = 0, skip = 0, fail = 0, n = 0;
 for (const row of rows) {
   if (LIMIT && n >= LIMIT) break;
   const { rail } = railGet(row.body_html);
-  if (rail.image?.url && !FORCE) { skip++; continue; }
+  if ((rail.images?.length >= 2 || (!FORCE && rail.images?.length)) && !FORCE) { skip++; continue; }
   n++;
   const kw = keyword(row.slug);
   const page = (hash(row.slug) % 3) + 1;
-  let img = null;
-  try { img = await pexels(kw, page); } catch {}
-  if (!img) { try { img = await openverse(kw, page); } catch {} }
-  if (!img) { console.log(`  ✖ [${row.slug}] "${kw}" 이미지 없음`); fail++; continue; }
-  console.log(`  ✓ [${row.slug}] "${kw}" → ${img.source} · ${img.credit}\n      ${img.url}`);
+  let imgs = [];
+  try { imgs = await pexels(kw, page, 2); } catch {}
+  if (imgs.length < 2) { try { imgs = imgs.concat(await openverse(kw, page, 2 - imgs.length)); } catch {} }
+  if (!imgs.length) { console.log(`  ✖ [${row.slug}] "${kw}" 이미지 없음`); fail++; continue; }
+  console.log(`  ✓ [${row.slug}] "${kw}" → ${imgs.length}장 (${imgs.map((x) => x.source.split(" ")[0]).join(",")})`);
   if (!DRY) {
-    const body_html = railSet(row.body_html, img);
+    const body_html = railSet(row.body_html, imgs);
     const up = await rest(`magazine?slug=eq.${encodeURIComponent(row.slug)}`, { method: "PATCH", headers: { Prefer: "return=minimal" }, body: JSON.stringify({ body_html }) });
     if (up.ok) done++; else { console.log(`      PATCH 실패 ${up.status}`); fail++; }
   } else done++;
-  await new Promise((r) => setTimeout(r, 250)); // rate 보호
+  await new Promise((r) => setTimeout(r, 250));
 }
-console.log(`\n[magazine-images] ${DRY ? "DRY " : ""}수집 ${done} · 스킵(이미있음) ${skip} · 실패 ${fail}`);
+console.log(`\n[magazine-images] ${DRY ? "DRY " : ""}수집 ${done} · 스킵 ${skip} · 실패 ${fail}`);

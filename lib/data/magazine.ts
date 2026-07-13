@@ -14,7 +14,8 @@ export interface MagazineArticle {
   closing?: string; // 정직한 마무리(조건부 결론, 풀폭)
   summary?: string[]; // 사이드 레일: 3줄 요약
   callout?: string; // 사이드 레일: '짚고 가요' (HTML 허용)
-  image?: { url: string; credit?: string; source?: string; link?: string }; // 대표 이미지(RAIL 주석에 저장)
+  images?: { url: string; credit?: string; source?: string; link?: string }[]; // 본문 삽입 이미지(1~2장, RAIL 주석)
+  image?: { url: string; credit?: string; source?: string; link?: string }; // 대표(=images[0]) — OG·사이트맵·목록 카드용
   createdAt: string;
 }
 
@@ -37,14 +38,15 @@ function map(r: Row): MagazineArticle {
   let bodyHtml = r.body_html ?? "";
   let summary: string[] | undefined;
   let callout: string | undefined;
-  let image: MagazineArticle["image"];
+  let images: MagazineArticle["images"];
   const m = bodyHtml.match(/^\s*<!--RAIL:([\s\S]*?)-->\s*/);
   if (m) {
     try {
       const j = JSON.parse(m[1]);
       if (Array.isArray(j.summary)) summary = j.summary;
       if (typeof j.callout === "string") callout = j.callout;
-      if (j.image && typeof j.image.url === "string") image = j.image;
+      if (Array.isArray(j.images)) images = j.images.filter((x: { url?: unknown }) => x && typeof x.url === "string");
+      else if (j.image && typeof j.image.url === "string") images = [j.image]; // 구 단수 image 하위호환
     } catch {
       /* ignore malformed rail */
     }
@@ -63,7 +65,8 @@ function map(r: Row): MagazineArticle {
     closing: r.closing ?? undefined,
     summary,
     callout,
-    image,
+    images,
+    image: images?.[0],
     createdAt: r.created_at,
   };
 }

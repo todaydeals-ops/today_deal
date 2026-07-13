@@ -31,6 +31,37 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   const c = cornerOf(a.corner);
   const related = await fetchRelatedMagazine(a, 4);
 
+  // 대표 이미지를 본문 소제목 사이에 배치 — 짧은 글 1장, 긴 글(본문 2,800자+) 2장
+  const bodyWithImages = (() => {
+    const imgs = a.images || [];
+    if (!imgs.length) return a.bodyHtml;
+    const plainLen = a.bodyHtml.replace(/<[^>]+>/g, "").length;
+    const want = plainLen >= 2800 ? 2 : 1;
+    const use = imgs.slice(0, Math.min(want, imgs.length));
+    const esc = (s: string) => (s || "").replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    const fig = (im: { url: string; credit?: string; source?: string }) =>
+      `<figure style="margin:42px 0 10px;border-radius:14px;overflow:hidden;position:relative;background:#ece5d9;border:1px solid #e4dccc;height:clamp(190px,34vw,380px);">` +
+      `<img src="${esc(im.url)}" alt="${esc(a.title)}" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;" />` +
+      (im.credit ? `<figcaption style="position:absolute;bottom:8px;right:10px;font-family:'JetBrains Mono',monospace;font-size:10px;color:#fff;background:rgba(0,0,0,.42);padding:3px 8px;border-radius:5px;">${esc(im.source || "Pexels")} &middot; ${esc(im.credit)}</figcaption>` : "") +
+      `</figure>`;
+    const h2s = [...a.bodyHtml.matchAll(/<h2/g)].map((mm) => mm.index ?? 0);
+    let spots: number[];
+    if (h2s.length >= 2) {
+      spots = use.length === 2
+        ? [h2s[Math.max(1, Math.floor(h2s.length / 3))], h2s[Math.min(h2s.length - 1, Math.floor((2 * h2s.length) / 3))]]
+        : [h2s[Math.floor(h2s.length / 2)]];
+    } else {
+      const p = a.bodyHtml.indexOf("</p>");
+      spots = [p >= 0 ? p + 4 : 0];
+    }
+    // 위치 중복 제거 후, 뒤에서부터 삽입(앞 인덱스 밀림 방지)
+    const uniq = [...new Set(spots)];
+    const inserts = uniq.map((pos, i) => ({ pos, html: fig(use[Math.min(i, use.length - 1)]) })).sort((x, y) => y.pos - x.pos);
+    let out = a.bodyHtml;
+    for (const ins of inserts) out = out.slice(0, ins.pos) + ins.html + out.slice(ins.pos);
+    return out;
+  })();
+
   const ld = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -87,20 +118,9 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
           </div>
         </div>
 
-        {/* ── 대표 이미지 (히어로) ── */}
-        {a.image?.url && (
-          <figure style={{ margin: "28px 0 0", position: "relative", borderRadius: 14, overflow: "hidden", background: "#ece5d9", border: "1px solid #e4dccc", height: "clamp(190px, 38vw, 420px)" }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={a.image.url} alt={a.title} decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
-            {a.image.credit && (
-              <figcaption style={{ position: "absolute", bottom: 8, right: 10, fontFamily: mono, fontSize: 10, color: "#fff", background: "rgba(0,0,0,.42)", padding: "3px 8px", borderRadius: 5 }}>{a.image.source || "Pexels"} · {a.image.credit}</figcaption>
-            )}
-          </figure>
-        )}
-
         {/* ── 본문 그리드: 메인 + 레일 ── */}
         <div className="art-grid" style={{ display: "grid", gridTemplateColumns: "1fr 320px", gap: 64, padding: "40px 0 0", alignItems: "start" }}>
-          <main className="mz-body" style={{ minWidth: 0 }} dangerouslySetInnerHTML={{ __html: a.bodyHtml }} />
+          <main className="mz-body" style={{ minWidth: 0 }} dangerouslySetInnerHTML={{ __html: bodyWithImages }} />
 
           <aside className="art-rail" style={{ position: "sticky", top: 24, display: "flex", flexDirection: "column", gap: 18 }}>
             {/* 정직성 배지 */}
