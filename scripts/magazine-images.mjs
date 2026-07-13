@@ -34,6 +34,8 @@ const KW_OVERRIDE = {
   "solid-wood-furniture-care-longrun": "wooden furniture",
   "clothing-care-machine-trend": "clothes steamer",
   "smart-ring-trend": "smart ring wearable",
+  "led-mask-fact": "led face mask beauty",
+  "ai-speaker-trend": "smart speaker",
 };
 function keyword(slug) {
   if (KW_OVERRIDE[slug]) return KW_OVERRIDE[slug];
