@@ -4,6 +4,15 @@
 import fs from "node:fs";
 import { processText, naverSearch } from "../build/ai.mjs";
 
+// ⛔ 사용 중단(2026-07-12): Groq 무료 AI가 분량 부족(4분·600~1100자)·한자/키릴 혼입 저품질을 대량 생성해
+//    매거진 품질이 붕괴한 사고가 있었음. 매거진 집필은 세션 Claude 집필기(scripts/magazine-draft-add.mjs)로만 한다.
+//    (초기 편 수준: read_min 8~9, 본문 1900자+, 표·의사결정트리·번호목록·콜아웃 완비)
+//    부득이 Groq로 강제 실행해야 하면 --force-groq. 단 magazine-release 게이트가 저품질 공개는 차단함.
+if (!process.argv.includes("--force-groq")) {
+  console.error("[mag-gen] ⛔ 사용 중단: Groq 저품질로 비활성화됨. 집필은 scripts/magazine-draft-add.mjs(세션 Claude) 사용. 강제: --force-groq");
+  process.exit(1);
+}
+
 (function loadEnv() {
   for (const f of ["/../.env.local", "/../crawler/.env"]) {
     try {

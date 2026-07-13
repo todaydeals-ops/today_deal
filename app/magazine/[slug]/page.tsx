@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${a.title} | 오늘의딜 매거진`,
     description: desc,
     alternates: { canonical: `${SITE}/magazine/${slug}` },
-    openGraph: { title: a.title, description: desc, url: `${SITE}/magazine/${slug}`, type: "article", images: [{ url: `${SITE}/magazine/opengraph-image`, width: 1200, height: 630, alt: "오늘의딜 매거진" }] },
+    openGraph: { title: a.title, description: desc, url: `${SITE}/magazine/${slug}`, type: "article", images: [...(a.image?.url ? [{ url: a.image.url, alt: a.title }] : []), { url: `${SITE}/magazine/opengraph-image`, width: 1200, height: 630, alt: "오늘의딜 매거진" }] },
   };
 }
 
@@ -37,6 +37,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
     headline: a.title,
     ...(a.subtitle ? { alternativeHeadline: a.subtitle } : {}),
     ...(a.excerpt ? { description: a.excerpt } : {}),
+    ...(a.image?.url ? { image: [a.image.url] } : {}),
     datePublished: a.createdAt,
     dateModified: a.createdAt,
     author: { "@type": "Organization", name: "오늘의딜 편집국" },
@@ -85,6 +86,17 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
             편집국 · {fmtDate(a.createdAt)}{a.readMin ? ` · 읽기 ${a.readMin}분` : ""}
           </div>
         </div>
+
+        {/* ── 대표 이미지 (히어로) ── */}
+        {a.image?.url && (
+          <figure style={{ margin: "34px 0 0", position: "relative", borderRadius: 16, overflow: "hidden", aspectRatio: "16 / 9", background: "#ece5d9", border: "1px solid #e4dccc" }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={a.image.url} alt={a.title} decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            {a.image.credit && (
+              <figcaption style={{ position: "absolute", bottom: 8, right: 10, fontFamily: mono, fontSize: 10, color: "#fff", background: "rgba(0,0,0,.42)", padding: "3px 8px", borderRadius: 5 }}>{a.image.source || "Pexels"} · {a.image.credit}</figcaption>
+            )}
+          </figure>
+        )}
 
         {/* ── 본문 그리드: 메인 + 레일 ── */}
         <div className="art-grid" style={{ display: "grid", gridTemplateColumns: "1fr 320px", gap: 64, padding: "40px 0 0", alignItems: "start" }}>

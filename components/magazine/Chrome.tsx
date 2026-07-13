@@ -130,10 +130,21 @@ export function FieldPill({ field }: { field?: string }) {
   return <span style={{ fontSize: 11.5, fontWeight: 500, color: "#46433d", background: "#e8e1d5", borderRadius: 9999, padding: "4px 12px" }}>{field}</span>;
 }
 
-/* 피처드 이미지 슬롯 (타이포 플레이스홀더) */
-export function FeaturedImageSlot({ cornerKey }: { cornerKey: string }) {
+/* 피처드 이미지 슬롯 — 대표 이미지 있으면 사진, 없으면 타이포 플레이스홀더 */
+export function FeaturedImageSlot({ cornerKey, image, title }: { cornerKey: string; image?: { url: string; credit?: string; source?: string }; title?: string }) {
   const c = cornerOf(cornerKey);
   const wm = c.nameEn.split(" ")[0];
+  if (image?.url) {
+    return (
+      <div style={{ aspectRatio: "4 / 3", position: "relative", overflow: "hidden", background: "#ece5d9", border: "1px solid #d6cdbe" }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={image.url} alt={title ? `${title} — ${c.name} | 오늘의딜 매거진` : `${c.name} — 오늘의딜 매거진`} loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+        {image.credit && (
+          <span style={{ position: "absolute", bottom: 6, right: 8, fontFamily: mono, fontSize: 9, color: "#fff", background: "rgba(0,0,0,.42)", padding: "2px 6px", borderRadius: 4 }}>{image.source || "Pexels"} · {image.credit}</span>
+        )}
+      </div>
+    );
+  }
   return (
     <div style={{ aspectRatio: "4 / 3", background: "linear-gradient(140deg,#ece5d9,#ddd4c5)", border: "1px solid #d6cdbe", display: "flex", alignItems: "flex-end", padding: 22, position: "relative", overflow: "hidden" }}>
       <span style={{ position: "absolute", top: 16, right: 20, fontFamily: mono, fontSize: 56, fontWeight: 700, color: "rgba(22,20,15,.07)", lineHeight: 0.8, letterSpacing: "-1px" }}>{wm}</span>

@@ -127,7 +127,7 @@ export default async function MagazineHome({ searchParams }: { searchParams: Pro
                     <span style={{ fontFamily: mono, fontSize: 12, color: "#9a9286" }}>편집국 · {fmtDate(featured.createdAt)}{featured.readMin ? ` · 읽기 ${featured.readMin}분` : ""}</span>
                   </div>
                 </div>
-                <FeaturedImageSlot cornerKey={featured.corner} />
+                <FeaturedImageSlot cornerKey={featured.corner} image={featured.image} title={featured.title} />
               </Link>
             </section>
           )}
