@@ -89,7 +89,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
 
         {/* ── 대표 이미지 (히어로) ── */}
         {a.image?.url && (
-          <figure style={{ margin: "34px 0 0", position: "relative", borderRadius: 16, overflow: "hidden", aspectRatio: "16 / 9", background: "#ece5d9", border: "1px solid #e4dccc" }}>
+          <figure style={{ margin: "28px 0 0", position: "relative", borderRadius: 14, overflow: "hidden", background: "#ece5d9", border: "1px solid #e4dccc", height: "clamp(190px, 38vw, 420px)" }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={a.image.url} alt={a.title} decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
             {a.image.credit && (
