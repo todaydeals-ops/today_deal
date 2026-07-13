@@ -36,7 +36,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
     const imgs = a.images || [];
     if (!imgs.length) return a.bodyHtml;
     const plainLen = a.bodyHtml.replace(/<[^>]+>/g, "").length;
-    const want = plainLen >= 2800 ? 2 : 1;
+    const want = plainLen >= 2500 ? 2 : 1; // 본문 2,500자+ = 긴 글 → 2장(초반·중간), 그 외 1장(중간)
     const use = imgs.slice(0, Math.min(want, imgs.length));
     const esc = (s: string) => (s || "").replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
     const fig = (im: { url: string; credit?: string; source?: string }) =>
@@ -48,7 +48,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
     let spots: number[];
     if (h2s.length >= 2) {
       spots = use.length === 2
-        ? [h2s[Math.max(1, Math.floor(h2s.length / 3))], h2s[Math.min(h2s.length - 1, Math.floor((2 * h2s.length) / 3))]]
+        ? [h2s[Math.max(1, Math.floor(h2s.length / 5))], h2s[Math.floor(h2s.length / 2)]] // 초반 + 중간
         : [h2s[Math.floor(h2s.length / 2)]];
     } else {
       const p = a.bodyHtml.indexOf("</p>");
