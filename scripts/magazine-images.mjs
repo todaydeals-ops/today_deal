@@ -17,9 +17,26 @@ const UA = { "User-Agent": "todaydeals-magazine/1.0 (hello@todaydeals.co.kr)" };
 const DRY = process.argv.includes("--dry");
 const FORCE = process.argv.includes("--force");
 const LIMIT = Number(process.argv.find((a) => a.startsWith("--limit="))?.split("=")[1] || 0);
+const ONLY = (process.argv.find((a) => a.startsWith("--slugs="))?.split("=")[1] || "").split(",").filter(Boolean); // 특정 slug만 재수집
 
 const DROP = new Set(["guide", "fact", "factcheck", "check", "compare", "trend", "longrun", "care", "vs", "buying", "types", "type", "dosage", "size", "capacity", "999", "refresh", "self", "maintenance", "sweetener", "safety", "organic", "inbody", "worth", "it", "direct", "tank", "dose", "absorption", "ratio"]);
+// 다의어·약자로 자동 키워드가 엉뚱한 이미지를 부르는 글은 수동 교정(drum=악기, msg=약자, scale=저울 등)
+const KW_OVERRIDE = {
+  "toploader-vs-drum-compare": "washing machine",
+  "stick-vs-robot-vacuum": "vacuum cleaner",
+  "induction-vs-highlight-vs-gas": "induction cooktop",
+  "castiron-stainless-pan-care-longrun": "cast iron skillet",
+  "msg-safety-fact": "seasoning powder",
+  "smart-scale-inbody-trend": "bathroom scale",
+  "open-ear-earbuds-trend": "wireless earbuds",
+  "zero-drink-sweetener-fact": "soda can drink",
+  "magnesium-vitamind-fact-check": "vitamin supplement pills",
+  "solid-wood-furniture-care-longrun": "wooden furniture",
+  "clothing-care-machine-trend": "clothes steamer",
+  "smart-ring-trend": "smart ring wearable",
+};
 function keyword(slug) {
+  if (KW_OVERRIDE[slug]) return KW_OVERRIDE[slug];
   const parts = slug.split("-").filter((w) => !DROP.has(w));
   return parts.slice(0, 2).join(" ").trim() || parts[0] || slug;
 }
@@ -66,6 +83,7 @@ const rows = await (await rest("magazine?corner=neq.report&select=slug,corner,fi
 let done = 0, skip = 0, fail = 0, n = 0;
 for (const row of rows) {
   if (LIMIT && n >= LIMIT) break;
+  if (ONLY.length && !ONLY.includes(row.slug)) continue;
   const { rail } = railGet(row.body_html);
   if ((rail.images?.length >= 2 || (!FORCE && rail.images?.length)) && !FORCE) { skip++; continue; }
   n++;
