@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Header from "@/components/Header";
-import Banner from "@/components/Banner";
 import DealGrid from "@/components/DealGrid";
 import LiveViewers from "@/components/LiveViewers";
 import Footer from "@/components/Footer";
@@ -125,9 +124,7 @@ export default async function Home() {
 
       <Header />
       <main className="wrap">
-        <Banner />
-
-        {/* ── 매거진 하이라이트 (홈 최상단 · 사이트 정체성) ── */}
+        {/* ── 매거진 하이라이트 (홈 히어로 · 사이트 정체성) ── */}
         <MagazineHighlight />
 
         <div style={{ margin: "14px 0 2px" }}>
@@ -142,7 +139,7 @@ export default async function Home() {
           <p className={styles.sub}>네이버·쿠팡 최저가와 비교해 매긴 AI 진단으로 정렬했어요</p>
           <PriceVerdictLegend />
         </div>
-        <DealGrid deals={feed} />
+        <DealGrid deals={feed.slice(0, 12)} />
         <p style={{ fontSize: 11, color: "#9A958C", marginTop: 10, lineHeight: 1.5 }}>
           ※ AI 가격분석 추정치예요. 분석 시점·옵션·용량에 따라 실제 가격과 달라질 수 있어요.
         </p>
