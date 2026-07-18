@@ -61,7 +61,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: new Date(a.createdAt),
     changeFrequency: "monthly",
     priority: 0.7,
-    ...(a.image?.url ? { images: [a.image.url] } : {}),
+    ...(a.image?.url ? { images: [a.image.url.split("?")[0]] } : {}), // 쿼리스트링(&) 제거 — Next가 image:loc을 XML 이스케이프 안 해 파싱오류 방지
   }));
 
   // 매거진 리포트 (5편 묶음 롱폼 SEO) — 우선순위 높게
