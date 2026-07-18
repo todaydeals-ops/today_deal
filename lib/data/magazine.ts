@@ -4,7 +4,7 @@ import { getSupabaseAdmin } from "@/lib/supabase/server";
 export interface MagazineArticle {
   id: string;
   slug: string;
-  corner: string; // factcheck | smartguide | compare | longrun | trendlab
+  corner: string; // factcheck | smartguide | trendlab (통폐합: 끝장비교·롱런팁→스마트가이드)
   field?: string; // 분야 태그
   title: string;
   subtitle?: string;

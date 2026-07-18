@@ -29,7 +29,7 @@ const ARTICLES = [
 
 /* ====== 끝장비교 · 전기레인지 (2026-06-21T19:00) ====== */
 {
-  slug: "induction-vs-highlight-vs-gas", corner: "compare", field: "리빙·주방", date: "2026-06-21T19:00:00+09:00",
+  slug: "induction-vs-highlight-vs-gas", corner: "smartguide", field: "리빙·주방", date: "2026-06-21T19:00:00+09:00",
   title: "인덕션 vs 하이라이트 vs 가스레인지, 뭘 골라야 할까", subtitle: "효율·안전·전기료, 방식마다 맞바꿈이 있어요",
   excerpt: "‘인덕션이 좋다던데’ ‘전자파는?’ ‘전기료 폭탄?’ 말이 많은데요. 세 방식은 우열이 아니라 맞바꿈(trade-off)이라, 내 주방·요리 스타일이 답을 정합니다.",
   read_min: 9,
@@ -117,7 +117,7 @@ const ARTICLES = [
 
 /* ====== 롱런팁 · 에어컨 관리 (2026-06-21T21:00) ====== */
 {
-  slug: "aircon-longrun-care", corner: "longrun", field: "가전", date: "2026-06-21T21:00:00+09:00",
+  slug: "aircon-longrun-care", corner: "smartguide", field: "가전", date: "2026-06-21T21:00:00+09:00",
   title: "에어컨, 여름마다 새것처럼 쓰는 법", subtitle: "냄새·전기료·고장, 결국 관리로 갈립니다",
   excerpt: "켤 때마다 나는 쾨쾨한 냄새, 생각보다 큰 전기료, 잦은 물샘. 대부분 기계 탓이 아니라 관리로 잡히는데요. 제조사·정부 자료로 ‘오래 쓰는 루틴’을 정리했습니다.",
   read_min: 8,
@@ -296,7 +296,7 @@ const ARTICLES = [
 
 /* ====== 롱런팁 · 세탁기 냄새·관리 (2026-06-22T11:00) ====== */
 {
-  slug: "washer-odor-care", corner: "longrun", field: "가전", date: "2026-06-22T11:00:00+09:00",
+  slug: "washer-odor-care", corner: "smartguide", field: "가전", date: "2026-06-22T11:00:00+09:00",
   title: "세탁기 냄새, 새것처럼 되돌리는 법", subtitle: "원인은 ‘바이오필름’ — 청소보다 ‘건조’가 먼저",
   excerpt: "갓 빤 빨래에서 나는 꿉꿉한 냄새, 기계 탓이 아니라 습기 관리의 결과예요. 냄새의 정체부터 통세척·안전 주의까지, 학술·제조사·소비자원 자료로 정리했습니다.",
   read_min: 8,
@@ -339,7 +339,7 @@ const ARTICLES = [
 
 /* ====== 끝장비교 · 정수기 직수 vs 저수조 (2026-06-22T12:00) ====== */
 {
-  slug: "water-purifier-direct-vs-tank", corner: "compare", field: "리빙·주방", date: "2026-06-22T12:00:00+09:00",
+  slug: "water-purifier-direct-vs-tank", corner: "smartguide", field: "리빙·주방", date: "2026-06-22T12:00:00+09:00",
   title: "정수기, 직수형 vs 저수조형 — 무엇이 다를까", subtitle: "위생의 분기점은 ‘라벨’이 아니라 ‘관리’예요",
   excerpt: "‘직수가 위생적’ ‘RO가 깨끗’ — 말은 많은데요. 한국소비자원·환경부·미 EPA 자료로 보면, 위생을 가르는 건 방식 라벨이 아니라 코크·필터 관리예요. 직수/저수조·UF/RO·렌탈까지 정리했습니다.",
   read_min: 10,
@@ -561,7 +561,7 @@ const ARTICLES = [
 
 /* ====== [간판] 롱런팁 · 스마트폰 배터리 (2026-06-22T17:00) ====== */
 {
-  slug: "phone-battery-longevity-guide", corner: "longrun", field: "디지털·IT", date: "2026-06-22T17:00:00+09:00",
+  slug: "phone-battery-longevity-guide", corner: "smartguide", field: "디지털·IT", date: "2026-06-22T17:00:00+09:00",
   title: "스마트폰 배터리, 오래 쓰는 법 — 충전 미신부터 정리", subtitle: "리튬이온이 싫어하는 3가지: 열·만충 방치·완전방전",
   excerpt: "‘밤새 충전하면 망가진다’ ‘급속충전은 수명 단축’ — 충전 미신이 많죠. 제조사 공식·Battery University로 배터리 오래 쓰는 진짜 기준을 정리했습니다.",
   read_min: 9,
@@ -601,7 +601,7 @@ const ARTICLES = [
 
 /* ====== 끝장비교 · TV OLED vs QLED vs LCD (2026-06-22T18:00) ====== */
 {
-  slug: "tv-oled-qled-lcd", corner: "compare", field: "가전·디지털", date: "2026-06-22T18:00:00+09:00",
+  slug: "tv-oled-qled-lcd", corner: "smartguide", field: "가전·디지털", date: "2026-06-22T18:00:00+09:00",
   title: "TV, OLED vs QLED vs 미니LED — 뭘 골라야 할까", subtitle: "패널이 아니라 ‘내 거실 밝기·용도’가 답을 정해요",
   excerpt: "‘OLED가 최고’ ‘QLED가 밝다’ — 말은 많은데요. 패널은 우열이 아니라 성격 차이라, 거실 밝기·용도·시청거리가 답을 정해요. RTINGS·리뷰 자료로 정리했습니다.",
   read_min: 9,
@@ -688,7 +688,7 @@ const ARTICLES = [
 
 /* ====== 롱런팁 · 코팅 프라이팬 (2026-06-22T20:00) ====== */
 {
-  slug: "nonstick-pan-care", corner: "longrun", field: "리빙·주방", date: "2026-06-22T20:00:00+09:00",
+  slug: "nonstick-pan-care", corner: "smartguide", field: "리빙·주방", date: "2026-06-22T20:00:00+09:00",
   title: "코팅 프라이팬, 오래 쓰는 법 — 수명을 가르는 습관", subtitle: "코팅은 소모품 — ‘빈 팬 강불’만 피해도 오래 써요",
   excerpt: "몇 달 만에 들러붙기 시작하는 코팅팬, 기름 더 둘러도 소용없죠. 코팅은 소모품이라 관리가 수명을 좌우해요. 제조사·소비자원·안전기관 자료로 정리했습니다.",
   read_min: 8,
@@ -799,7 +799,7 @@ const ARTICLES = [
 
 /* ====== 끝장비교 · 무선청소기 vs 로봇청소기 (2026-06-23T10:00) ====== */
 {
-  slug: "stick-vs-robot-vacuum", corner: "compare", field: "가전", date: "2026-06-23T10:00:00+09:00",
+  slug: "stick-vs-robot-vacuum", corner: "smartguide", field: "가전", date: "2026-06-23T10:00:00+09:00",
   title: "무선청소기 vs 로봇청소기 — 뭘 살까? (정답은 ‘조합’)", subtitle: "경쟁이 아니라 역할이 달라요 — 흡입력 숫자에 속지 마세요",
   excerpt: "‘로봇이 편하다’ ‘무선이 잘 닦는다’ — 둘을 같은 기준으로 비교하면 후회해요. 잘하는 일이 다르거든요. 소비자원·리뷰 자료로 역할과 함정을 정리했습니다.",
   read_min: 9,
@@ -870,7 +870,7 @@ const ARTICLES = [
 
 /* ====== 롱런팁 · 운동화 관리 (2026-06-23T12:00) ====== */
 {
-  slug: "sneaker-care", corner: "longrun", field: "패션·잡화", date: "2026-06-23T12:00:00+09:00",
+  slug: "sneaker-care", corner: "smartguide", field: "패션·잡화", date: "2026-06-23T12:00:00+09:00",
   title: "운동화 오래 신는 법 — 망치는 건 ‘말리는 법’이에요", subtitle: "세탁기·드라이어보다 무서운 건 ‘고온 건조’",
   excerpt: "비 맞은 운동화를 라디에이터에 올린 그 한 번이 신발을 끝낼 수 있어요. 세탁·건조·보관에서 수명이 갈리거든요. 제조사·전문매체 자료로 관리 기준을 정리했습니다.",
   read_min: 8,

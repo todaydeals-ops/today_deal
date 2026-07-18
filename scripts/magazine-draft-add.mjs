@@ -34,7 +34,7 @@ const DTREE = ({ title, q1, yes, q2, ya, na }) => `<div style="border:1px solid 
 </div>`;
 const WRAP = (h) => `<div style="margin-top:22px;">${h}</div>`;
 const TEAL = "#1f6b66", SMART = "#e0481f", INDIGO = "#38539a", OLIVE = "#7a5f2e", PURPLE = "#6e4690";
-const CORNER_COLOR = { compare: INDIGO, smartguide: SMART, factcheck: TEAL, trendlab: PURPLE, longrun: OLIVE };
+const CORNER_COLOR = { smartguide: SMART, factcheck: TEAL, trendlab: PURPLE };
 
 function renderBlock(b, corner, idx) {
   switch (b.t) {
@@ -51,7 +51,7 @@ const file = process.argv[2];
 if (!file) { console.error("입력 JSON 파일 경로 필요"); process.exit(1); }
 const data = JSON.parse(fs.readFileSync(file, "utf8"));
 const articles = Array.isArray(data) ? data : data.articles ?? [];
-const VALID_CORNERS = ["compare", "smartguide", "factcheck", "trendlab", "longrun"];
+const VALID_CORNERS = ["smartguide", "factcheck", "trendlab"];
 const rows = [];
 for (const a of articles) {
   if (!a.slug || !a.title || !Array.isArray(a.blocks) || !VALID_CORNERS.includes(a.corner)) { console.error("스킵(필수누락/코너오류):", a.slug); continue; }

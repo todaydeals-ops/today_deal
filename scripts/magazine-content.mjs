@@ -97,7 +97,7 @@ const a1 = {
 
 /* ============================================================ 2) 끝장비교 · 음식물처리기 */
 const a2 = {
-  slug: "food-waste-disposer-compare", corner: "compare", field: "리빙·주방",
+  slug: "food-waste-disposer-compare", corner: "smartguide", field: "리빙·주방",
   title: "음식물처리기, 미생물 vs 건조분쇄 vs 건조", subtitle: "3년을 쓰면 뭐가 진짜 쌀까",
   excerpt: "방식마다 처리 원리도, 3년 총비용도 다른데요. ‘방식 안에서도 모델 간 4배 차’와 디스포저 규제까지 따져봤습니다.",
   read_min: 9,
@@ -184,7 +184,7 @@ const a3 = {
 
 /* ============================================================ 4) 롱런팁 · 로봇청소기 */
 const a4 = {
-  slug: "robot-vacuum-longrun-care", corner: "longrun", field: "가전",
+  slug: "robot-vacuum-longrun-care", corner: "smartguide", field: "가전",
   title: "로봇청소기, 3년 멀쩡히 쓰는 관리 루틴", subtitle: "고장의 상당수는 ‘소모품 방치’에서 옵니다",
   excerpt: "1년 만에 흡입력이 뚝 떨어졌다면 기계 수명이 아니라 관리 문제일 수 있어요. 제조사 문서·배터리 자료로 ‘오래 쓰는 루틴’을 정리했습니다.",
   read_min: 7,

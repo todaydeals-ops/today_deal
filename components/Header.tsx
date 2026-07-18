@@ -11,8 +11,6 @@ import styles from "./Header.module.css";
 const CORNERS = [
   { label: "팩트체크", corner: "factcheck" },
   { label: "스마트가이드", corner: "smartguide" },
-  { label: "끝장비교", corner: "compare" },
-  { label: "롱런팁", corner: "longrun" },
   { label: "트렌드랩", corner: "trendlab" },
 ];
 // 딜 = 서브(드롭다운)

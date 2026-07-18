@@ -56,13 +56,13 @@ const CORNER_COLOR = { factcheck:"#1f6b66", smartguide:"#e0481f", compare:"#3853
 const SEEDS = [
   { slug:"home-gym-guide",          corner:"smartguide", field:"스포츠·헬스", title:"홈짐 입문, 어디서 시작해야 하나요?", subtitle:"운동 기구 선택 전에 공간·예산·목적부터", kw:"홈짐 구성 추천" },
   { slug:"pillow-sleep-guide",      corner:"smartguide", field:"리빙·주방",   title:"베개, 어떻게 골라야 목이 안 아플까요?", subtitle:"소재·높이·경도로 보는 수면 자세별 선택법", kw:"베개 추천 수면" },
-  { slug:"keyboard-mouse-guide",    corner:"compare",    field:"디지털·IT",   title:"키보드·마우스, 비쌀수록 좋을까요?", subtitle:"게이밍·사무·개발자 용도별 선택 기준 정리", kw:"키보드 마우스 추천" },
+  { slug:"keyboard-mouse-guide",    corner: "smartguide",    field:"디지털·IT",   title:"키보드·마우스, 비쌀수록 좋을까요?", subtitle:"게이밍·사무·개발자 용도별 선택 기준 정리", kw:"키보드 마우스 추천" },
   { slug:"camping-tent-guide",      corner:"smartguide", field:"아웃도어",     title:"텐트 첫 구매, 브랜드보다 이걸 먼저 보세요", subtitle:"인원수·시즌·용도로 좁히는 텐트 고르는 법", kw:"캠핑 텐트 구매 추천" },
   { slug:"hair-dryer-ionic-fact",   corner:"factcheck",  field:"뷰티",        title:"이온 헤어드라이어, 정말 머릿결에 좋을까요?", subtitle:"세라믹·이온·나노이온 마케팅 vs 실제 차이", kw:"이온 헤어드라이어 효과 차이" },
   { slug:"frozen-food-health-fact", corner:"factcheck",  field:"식품·건강",   title:"냉동식품, 매일 먹어도 괜찮을까요?", subtitle:"영양 손실·첨가물·나트륨 실제 수치로 따지기", kw:"냉동식품 건강 영양" },
   { slug:"electric-bike-guide",     corner:"trendlab",   field:"아웃도어",     title:"전동킥보드·전기자전거, 지금 살 만할까요?", subtitle:"배터리 수명·법적 기준·보험 이슈까지", kw:"전동킥보드 전기자전거 비교" },
   { slug:"vitamin-c-dosage-fact",   corner:"factcheck",  field:"식품·건강",   title:"비타민C, 얼마나 먹어야 효과 있을까요?", subtitle:"1000mg 고함량 광고 vs 흡수율·부작용 실제", kw:"비타민C 효과 용량" },
-  { slug:"outdoor-jacket-guide",    corner:"longrun",    field:"패션·의류",   title:"아웃도어 재킷, 오래 입으려면 어떻게 관리할까요?", subtitle:"고어텍스·방수코팅 재발수 처리부터 세탁법까지", kw:"아웃도어 재킷 관리 세탁" },
+  { slug:"outdoor-jacket-guide",    corner: "smartguide",    field:"패션·의류",   title:"아웃도어 재킷, 오래 입으려면 어떻게 관리할까요?", subtitle:"고어텍스·방수코팅 재발수 처리부터 세탁법까지", kw:"아웃도어 재킷 관리 세탁" },
   { slug:"standing-desk-trend",     corner:"trendlab",   field:"디지털·IT",   title:"스탠딩 데스크, 건강에 정말 도움이 될까요?", subtitle:"장시간 서 있는 것도 문제다 — 실제 사용법과 고르는 법", kw:"스탠딩 데스크 효과 추천" },
 ];
 
@@ -96,7 +96,7 @@ for (const seed of seeds) {
 
 주제: ${seed.title}
 부제: ${seed.subtitle}
-코너: ${seed.corner} (factcheck=팩트체크 | smartguide=구매가이드 | compare=끝장비교 | longrun=롱런팁 | trendlab=트렌드랩)
+코너: ${seed.corner} (factcheck=팩트체크 | smartguide=스마트가이드(선택·비교·관리 전체) | trendlab=트렌드랩)
 
 참고 자료:
 ${ctx || "(자료 없음 — 일반 지식으로 작성)"}

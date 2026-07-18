@@ -1,4 +1,5 @@
-// 오늘의딜 매거진 — 5 코너 시스템(형식 브랜드). 색·아이콘·약속. (디자인 핸드오프 §3)
+// 오늘의딜 매거진 — 3 코너 시스템(형식 브랜드). 색·아이콘·약속. (디자인 핸드오프 §3)
+// 통폐합: 끝장비교·롱런팁 → 스마트가이드로 흡수(2026-07). 팩트체크·트렌드랩은 유지.
 import type { ReactNode } from "react";
 
 export interface Corner {
@@ -32,39 +33,11 @@ export const CORNERS: Corner[] = [
     nameEn: "SMART GUIDE",
     color: "#e0481f",
     chipBg: "#ffe9e2",
-    desc: "내 상황엔 뭘 골라야? · Decision Tree",
+    desc: "고르고·비교하고 오래 쓰는 전 과정",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
         <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="2" />
         <polygon points="12,7 14.2,12 12,17 9.8,12" fill="currentColor" />
-      </svg>
-    ),
-  },
-  {
-    key: "compare",
-    name: "끝장비교",
-    nameEn: "VS COMPARE",
-    color: "#38539a",
-    chipBg: "#e9edf7",
-    desc: "A vs B, 3년 총비용까지",
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <rect x="4" y="12" width="4" height="8" rx="1" fill="currentColor" />
-        <rect x="10" y="6" width="4" height="14" rx="1" fill="currentColor" />
-        <rect x="16" y="9" width="4" height="11" rx="1" fill="currentColor" />
-      </svg>
-    ),
-  },
-  {
-    key: "longrun",
-    name: "롱런팁",
-    nameEn: "LONG-RUN",
-    color: "#7a5f2e",
-    chipBg: "#f1ecdf",
-    desc: "본전 뽑고 오래 쓰는 법",
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <path d="M20 6a5 5 0 0 1-6.5 6.5L7 19l-2-2 6.5-6.5A5 5 0 0 1 18 4l-2.5 2.5 2 2L20 6z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -116,9 +89,7 @@ export const CATCH = {
 // 코너 인덱스용 한 줄 설명(짧게)
 export const CORNER_SHORT: Record<string, string> = {
   factcheck: "광고 너머의 진실",
-  smartguide: "내 상황엔 뭘 골라야",
-  compare: "A vs B, 3년 총비용",
-  longrun: "오래 쓰는 법",
+  smartguide: "고르고·비교하고 오래 쓰기",
   trendlab: "살 가치 있나",
 };
 export const MAGAZINE_INTRO =

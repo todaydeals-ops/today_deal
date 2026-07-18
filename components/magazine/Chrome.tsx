@@ -50,7 +50,7 @@ export function CornerIndex() {
     <section id="guides" className="mz-wrap mz-cornerwrap" style={{ paddingTop: 34, scrollMarginTop: 80 }}>
       <div className="mz-corner-index">
         {CORNERS.map((c, i) => (
-          <Link key={c.key} className="corner-cell" href={`/magazine?corner=${c.key}`}>
+          <Link key={c.key} className="corner-cell" href={`/?corner=${c.key}`}>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
               <span className="cc-n" style={{ fontFamily: mono, fontSize: 11, fontWeight: 600, color: "#9a9286" }}>{String(i + 1).padStart(2, "0")}</span>
               <span style={{ width: 9, height: 9, borderRadius: 9999, background: c.color }} />
