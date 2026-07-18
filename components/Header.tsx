@@ -58,7 +58,7 @@ export default function Header() {
 
         <nav className={`${styles.nav} ${open ? styles.navOpen : ""}`}>
           {CORNERS.map((c) => (
-            <Link key={c.corner} href={`/magazine?corner=${c.corner}`} onClick={close}>
+            <Link key={c.corner} href={`/?corner=${c.corner}`} onClick={close}>
               {c.label}
               <span className={styles.dot}>.</span>
             </Link>

@@ -75,7 +75,7 @@ function map(r: Row): MagazineArticle {
   };
 }
 
-export async function fetchMagazineList(opts?: { corner?: string; limit?: number }): Promise<MagazineArticle[]> {
+export async function fetchMagazineList(opts?: { corner?: string; limit?: number; offset?: number }): Promise<MagazineArticle[]> {
   const sb = getSupabaseAdmin();
   if (!sb) return [];
   try {
@@ -84,14 +84,30 @@ export async function fetchMagazineList(opts?: { corner?: string; limit?: number
       .select("*")
       .eq("is_published", true)
       .neq("corner", "report")   // 리포트는 별도 데이터레이어(magazine-report.ts) 사용
-      .order("created_at", { ascending: false })
-      .limit(opts?.limit ?? 60);
+      .order("created_at", { ascending: false });
     if (opts?.corner) q = q.eq("corner", opts.corner);
+    const limit = opts?.limit ?? 60;
+    if (opts?.offset != null) q = q.range(opts.offset, opts.offset + limit - 1);
+    else q = q.limit(limit);
     const { data, error } = await q;
     if (error || !data) return [];
     return (data as Row[]).map(map);
   } catch {
     return [];
+  }
+}
+
+// 페이지네이션용 총 발행 편수(코너 옵션)
+export async function fetchMagazineCount(corner?: string): Promise<number> {
+  const sb = getSupabaseAdmin();
+  if (!sb) return 0;
+  try {
+    let q = sb.from("magazine").select("*", { count: "exact", head: true }).eq("is_published", true).neq("corner", "report");
+    if (corner) q = q.eq("corner", corner);
+    const { count } = await q;
+    return count ?? 0;
+  } catch {
+    return 0;
   }
 }
 
