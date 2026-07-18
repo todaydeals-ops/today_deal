@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
+import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import { fetchArchiveRecent } from "@/lib/data/deals";
 import { BADGE_META } from "@/lib/types";
@@ -71,6 +72,8 @@ export default async function DealsIndex() {
         <nav className={styles.crumb}>
           <Link href="/">오늘의딜</Link> <span>›</span> <span>전체 특가</span>
         </nav>
+
+        <Banner />
 
         <h1 className={styles.title}>쇼핑몰 타임딜·특가 전체 모아보기</h1>
         <p className={styles.intro}>
