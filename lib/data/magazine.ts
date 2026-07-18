@@ -16,6 +16,7 @@ export interface MagazineArticle {
   callout?: string; // 사이드 레일: '짚고 가요' (HTML 허용)
   images?: { url: string; credit?: string; source?: string; link?: string }[]; // 본문 삽입 이미지(1~2장, RAIL 주석)
   image?: { url: string; credit?: string; source?: string; link?: string }; // 대표(=images[0]) — OG·사이트맵·목록 카드용
+  faq?: { q: string; a: string }[]; // 자주 묻는 질문(GEO·AI 이해용, RAIL 주석)
   createdAt: string;
 }
 
@@ -39,6 +40,7 @@ function map(r: Row): MagazineArticle {
   let summary: string[] | undefined;
   let callout: string | undefined;
   let images: MagazineArticle["images"];
+  let faq: MagazineArticle["faq"];
   const m = bodyHtml.match(/^\s*<!--RAIL:([\s\S]*?)-->\s*/);
   if (m) {
     try {
@@ -47,6 +49,7 @@ function map(r: Row): MagazineArticle {
       if (typeof j.callout === "string") callout = j.callout;
       if (Array.isArray(j.images)) images = j.images.filter((x: { url?: unknown }) => x && typeof x.url === "string");
       else if (j.image && typeof j.image.url === "string") images = [j.image]; // 구 단수 image 하위호환
+      if (Array.isArray(j.faq)) faq = j.faq.filter((x: { q?: unknown; a?: unknown }) => x && typeof x.q === "string" && typeof x.a === "string");
     } catch {
       /* ignore malformed rail */
     }
@@ -67,6 +70,7 @@ function map(r: Row): MagazineArticle {
     callout,
     images,
     image: images?.[0],
+    faq,
     createdAt: r.created_at,
   };
 }

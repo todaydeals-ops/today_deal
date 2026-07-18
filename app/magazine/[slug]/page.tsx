@@ -91,10 +91,18 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
     ],
   };
 
+  // FAQPage — AI 이해 목적(리치결과 아님). 화면의 FAQ 섹션과 값이 동일해야 함.
+  const faqLd = a.faq && a.faq.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: a.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  } : null;
+
   return (
     <div className="mz-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      {faqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />}
       <MagazineUtilBar />
       <MagazineMasthead />
 
@@ -168,6 +176,24 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
             <div style={{ fontFamily: mono, fontSize: 11, letterSpacing: "1px", color: "#ff8a6f", fontWeight: 600 }}>정직한 마무리</div>
             <p style={{ fontFamily: serif, fontWeight: 600, fontSize: 22, lineHeight: 1.6, letterSpacing: "-0.4px", color: "#f3efe9", margin: "12px 0 0", maxWidth: 760 }} dangerouslySetInnerHTML={{ __html: a.closing }} />
           </div>
+        )}
+
+        {/* ── 자주 묻는 질문 (GEO: FAQPage LD와 값 동일) ── */}
+        {a.faq && a.faq.length > 0 && (
+          <section aria-label="자주 묻는 질문" style={{ margin: "56px 0 0" }}>
+            <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", borderTop: "1px solid rgba(22,20,15,0.16)", paddingTop: 16, marginBottom: 18 }}>
+              <span style={{ fontWeight: 800, fontSize: 18 }}>자주 묻는 질문</span>
+              <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: "2px", color: "#9a9286" }}>FAQ</span>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+              {a.faq.map((f, i) => (
+                <div key={i} style={{ border: "1px solid rgba(22,20,15,0.12)", borderRadius: 12, padding: "18px 20px", background: "#faf8f5" }}>
+                  <div style={{ fontWeight: 700, fontSize: 16, lineHeight: 1.5, color: "#16140f", marginBottom: 8 }}>Q. {f.q}</div>
+                  <div style={{ fontSize: 15, lineHeight: 1.75, color: "#46433d" }}>{f.a}</div>
+                </div>
+              ))}
+            </div>
+          </section>
         )}
 
         {/* ── 관련 가이드 (내부링크) ── */}
