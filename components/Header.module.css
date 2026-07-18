@@ -53,6 +53,49 @@
   font-weight: 800;
 }
 
+/* 딜 드롭다운 */
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.dropBtn {
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--text-body);
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 0;
+  transition: color 0.15s;
+}
+.dropBtn:hover { color: var(--text-strong); }
+.dropMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 12px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(44, 42, 38, 0.1);
+  padding: 6px;
+  min-width: 150px;
+  display: none;
+  flex-direction: column;
+}
+.dropOpen { display: flex; }
+.dropMenu a {
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.dropMenu a:hover { background: var(--bg-sunken); color: var(--text-strong); }
+
 .userBtn {
   width: 32px;
   height: 32px;
@@ -136,5 +179,31 @@
 
   .userBtnLabel {
     display: inline;
+  }
+
+  /* 모바일: 딜 드롭다운을 펼친 목록으로 */
+  .dropdown {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .dropBtn {
+    padding: 14px 20px;
+    font-size: 15px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .dropMenu {
+    position: static;
+    display: flex;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .dropMenu a {
+    padding: 12px 20px 12px 36px;
+    border-radius: 0;
   }
 }

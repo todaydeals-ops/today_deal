@@ -7,21 +7,32 @@ import Logo from "./Logo";
 import AuthMenu from "./AuthMenu";
 import styles from "./Header.module.css";
 
-const NAV = [
-  { label: "오늘의 타임딜", href: "/" },
-  { label: "오늘의 AI추천딜", href: "/recommended" },
-  { label: "오늘의 핫딜글", href: "/board" },
-  { label: "오늘의 매거진", href: "/magazine" },
+// 매거진 코너 = 메인 메뉴 (사이트 정체성: 쇼핑 가이드 미디어)
+const CORNERS = [
+  { label: "팩트체크", corner: "factcheck" },
+  { label: "스마트가이드", corner: "smartguide" },
+  { label: "끝장비교", corner: "compare" },
+  { label: "롱런팁", corner: "longrun" },
+  { label: "트렌드랩", corner: "trendlab" },
+];
+// 딜 = 서브(드롭다운)
+const DEALS = [
+  { label: "타임딜", href: "/deals" },
+  { label: "AI추천딜", href: "/recommended" },
+  { label: "핫딜글", href: "/board" },
 ];
 
 export default function Header() {
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false); // 모바일 메뉴
+  const [dealOpen, setDealOpen] = useState(false); // 딜 드롭다운
+  const close = () => { setOpen(false); setDealOpen(false); };
+  const dealActive = ["/deals", "/recommended", "/board"].some((p) => pathname.startsWith(p));
 
   return (
     <header className={styles.header}>
       <div className={`wrap ${styles.inner}`}>
-        <Link href="/" className={styles.logo} aria-label="오늘의딜 홈" onClick={() => setOpen(false)}>
+        <Link href="/" className={styles.logo} aria-label="오늘의딜 홈" onClick={close}>
           <Logo />
         </Link>
 
@@ -35,23 +46,35 @@ export default function Header() {
         </button>
 
         <nav className={`${styles.nav} ${open ? styles.navOpen : ""}`}>
-          {NAV.map((item) => {
-            const active =
-              item.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(item.href);
-            return (
-              <Link
-                key={item.label}
-                href={item.href}
-                className={active ? styles.active : undefined}
-                onClick={() => setOpen(false)}
-              >
-                {item.label}
-                <span className={styles.dot}>.</span>
-              </Link>
-            );
-          })}
+          {CORNERS.map((c) => (
+            <Link key={c.corner} href={`/magazine?corner=${c.corner}`} onClick={close}>
+              {c.label}
+              <span className={styles.dot}>.</span>
+            </Link>
+          ))}
+
+          <div
+            className={styles.dropdown}
+            onMouseEnter={() => setDealOpen(true)}
+            onMouseLeave={() => setDealOpen(false)}
+          >
+            <button
+              className={`${styles.dropBtn} ${dealActive ? styles.active : ""}`}
+              aria-expanded={dealOpen}
+              aria-haspopup="menu"
+              onClick={() => setDealOpen((v) => !v)}
+            >
+              딜 <i className="ti ti-chevron-down" style={{ fontSize: 15 }} />
+            </button>
+            <div className={`${styles.dropMenu} ${dealOpen ? styles.dropOpen : ""}`} role="menu">
+              {DEALS.map((d) => (
+                <Link key={d.href} href={d.href} onClick={close} role="menuitem">
+                  {d.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
           <AuthMenu />
         </nav>
       </div>

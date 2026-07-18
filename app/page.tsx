@@ -4,6 +4,7 @@ import Banner from "@/components/Banner";
 import DealGrid from "@/components/DealGrid";
 import LiveViewers from "@/components/LiveViewers";
 import Footer from "@/components/Footer";
+import MagazineHighlight from "@/components/MagazineHighlight";
 import { fetchUnifiedDeals } from "@/lib/data/deals";
 import { verdictRank } from "@/components/PriceVerdict";
 import PriceVerdictLegend from "@/components/PriceVerdictLegend";
@@ -126,15 +127,18 @@ export default async function Home() {
       <main className="wrap">
         <Banner />
 
+        {/* ── 매거진 하이라이트 (홈 최상단 · 사이트 정체성) ── */}
+        <MagazineHighlight />
+
         <div style={{ margin: "14px 0 2px" }}>
           <LiveViewers />
         </div>
 
         <div className={styles.sectionHead}>
-          <h1 className={styles.title}>
+          <h2 className={styles.title}>
             <span aria-hidden style={{ marginRight: 4 }}>🤖</span>
             AI가 골라낸 오늘의 특가
-          </h1>
+          </h2>
           <p className={styles.sub}>네이버·쿠팡 최저가와 비교해 매긴 AI 진단으로 정렬했어요</p>
           <PriceVerdictLegend />
         </div>
