@@ -75,6 +75,8 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
     publisher: { "@type": "Organization", name: "오늘의딜", url: SITE },
     mainEntityOfPage: `${SITE}/magazine/${slug}`,
     articleSection: c.name,
+    inLanguage: "ko-KR",
+    ...(a.field ? { keywords: [a.field, c.name, a.title].join(", ") } : {}),
     isAccessibleForFree: true,
     ...(related.length ? { relatedLink: related.map((r) => `${SITE}/magazine/${r.slug}`) } : {}),
   };
@@ -118,6 +120,21 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
           </div>
         </div>
 
+        {/* ── 핵심 요약 (GEO: AI가 본문 첫머리에서 즉답 발췌) ── */}
+        {a.summary && a.summary.length > 0 && (
+          <section aria-label="핵심 요약" style={{ margin: "28px 0 0", border: "1px solid rgba(22,20,15,0.14)", borderRadius: 14, padding: "20px 24px", background: "#faf8f5" }}>
+            <div style={{ fontFamily: mono, fontSize: 11, letterSpacing: "1.5px", color: c.color, fontWeight: 700, marginBottom: 14 }}>핵심 요약</div>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
+              {a.summary.map((s, i) => (
+                <li key={i} style={{ display: "flex", gap: 12, fontSize: 16, lineHeight: 1.65, color: "#2c2a24" }}>
+                  <span style={{ fontFamily: mono, fontWeight: 700, fontSize: 13, color: c.color, flex: "none", marginTop: 2 }}>{String(i + 1).padStart(2, "0")}</span>
+                  <span dangerouslySetInnerHTML={{ __html: s }} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
         {/* ── 본문 그리드: 메인 + 레일 ── */}
         <div className="art-grid" style={{ display: "grid", gridTemplateColumns: "1fr 320px", gap: 64, padding: "40px 0 0", alignItems: "start" }}>
           <main className="mz-body" style={{ minWidth: 0 }} dangerouslySetInnerHTML={{ __html: bodyWithImages }} />
@@ -134,21 +151,6 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
               <div style={{ fontSize: 13, fontWeight: 700, lineHeight: 1.5, marginTop: 12 }}>특정 제품을 추천하지 않습니다</div>
               <div style={{ fontSize: 12, color: "#76726b", lineHeight: 1.55, marginTop: 4 }}>소비자의 바른 선택, 그 방향만 제시합니다.</div>
             </div>
-
-            {/* 3줄 요약 */}
-            {a.summary && a.summary.length > 0 && (
-              <div style={{ border: "1px solid rgba(22,20,15,0.14)", borderRadius: 14, padding: 18 }}>
-                <div style={{ fontFamily: mono, fontSize: 10.5, letterSpacing: "1.5px", color: "#9a9286" }}>{a.summary.length}줄 요약</div>
-                <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: 14 }}>
-                  {a.summary.map((s, i) => (
-                    <div key={i} style={{ display: "flex", gap: 10 }}>
-                      <span style={{ fontFamily: mono, fontWeight: 700, fontSize: 12, color: c.color, flex: "none" }}>{String(i + 1).padStart(2, "0")}</span>
-                      <span style={{ fontSize: 13, lineHeight: 1.6, color: "#33312d" }} dangerouslySetInnerHTML={{ __html: s }} />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
 
             {/* 짚고 가요 */}
             {a.callout && (
