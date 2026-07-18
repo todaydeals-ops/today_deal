@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Logo from "./Logo";
@@ -26,8 +26,19 @@ export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false); // 모바일 메뉴
   const [dealOpen, setDealOpen] = useState(false); // 딜 드롭다운
+  const dropRef = useRef<HTMLDivElement>(null);
   const close = () => { setOpen(false); setDealOpen(false); };
   const dealActive = ["/deals", "/recommended", "/board"].some((p) => pathname.startsWith(p));
+
+  // 드롭다운 바깥 클릭 시 닫기(데스크탑)
+  useEffect(() => {
+    if (!dealOpen) return;
+    const onDoc = (e: MouseEvent) => {
+      if (dropRef.current && !dropRef.current.contains(e.target as Node)) setDealOpen(false);
+    };
+    document.addEventListener("mousedown", onDoc);
+    return () => document.removeEventListener("mousedown", onDoc);
+  }, [dealOpen]);
 
   return (
     <header className={styles.header}>
@@ -53,18 +64,14 @@ export default function Header() {
             </Link>
           ))}
 
-          <div
-            className={styles.dropdown}
-            onMouseEnter={() => setDealOpen(true)}
-            onMouseLeave={() => setDealOpen(false)}
-          >
+          <div className={styles.dropdown} ref={dropRef}>
             <button
               className={`${styles.dropBtn} ${dealActive ? styles.active : ""}`}
               aria-expanded={dealOpen}
               aria-haspopup="menu"
               onClick={() => setDealOpen((v) => !v)}
             >
-              딜 <i className="ti ti-chevron-down" style={{ fontSize: 15 }} />
+              오늘의 딜 <i className="ti ti-chevron-down" style={{ fontSize: 15 }} />
             </button>
             <div className={`${styles.dropMenu} ${dealOpen ? styles.dropOpen : ""}`} role="menu">
               {DEALS.map((d) => (
