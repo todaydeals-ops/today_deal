@@ -23,13 +23,6 @@ const serif = "'Noto Serif KR', serif";
 const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
 const PER = 10;
 
-const FAQ = [
-  { q: "오늘의딜은 어떤 사이트인가요?", a: "광고·제휴 없이 기준과 숫자로 정리하는 중립 쇼핑 가이드 매거진입니다. 함께 지마켓·11번가·쿠팡의 실시간 특가도 한곳에서 비교해 볼 수 있습니다." },
-  { q: "매거진은 무엇이 다른가요?", a: "특정 제품을 추천하지 않습니다. 팩트체크·스마트가이드·트렌드랩 세 코너에서, 사야 할 이유가 아니라 고를 때 봐야 할 기준과 숫자를 정리합니다." },
-  { q: "딜은 얼마나 자주 갱신되나요?", a: "타임딜은 약 2시간마다, 쿠팡 골드박스는 매일 오전 7시에 자동으로 최신 상품으로 갱신됩니다." },
-  { q: "이용 요금이 있나요?", a: "무료로 이용할 수 있습니다. 일부 상품 링크는 제휴 마케팅 링크일 수 있으며, 거래는 각 쇼핑몰에서 이루어집니다." },
-];
-
 function buildItemListLd(deals: Deal[]) {
   return {
     "@type": "ItemList",
@@ -100,7 +93,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ c
 
   const ld = {
     "@context": "https://schema.org",
-    "@graph": [buildItemListLd(feed), { "@type": "FAQPage", mainEntity: FAQ.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }],
+    "@graph": [buildItemListLd(feed)],
   };
 
   const pageHref = (p: number) => {
@@ -267,18 +260,6 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ c
           <p style={{ fontSize: 11, color: "#9A958C", lineHeight: 1.5, margin: 0 }}>※ AI 가격분석 추정치예요. 분석 시점·옵션·용량에 따라 실제 가격과 달라질 수 있어요.</p>
           <Link href="/deals" style={{ fontSize: 13.5, fontWeight: 700, color: "var(--accent-deal)", textDecoration: "none", whiteSpace: "nowrap" }}>오늘의 딜 전체 보기 →</Link>
         </div>
-
-        <section className={styles.faq} style={{ marginTop: 40 }}>
-          <h2 className={styles.faqTitle}>자주 묻는 질문</h2>
-          <dl className={styles.faqList}>
-            {FAQ.map((f) => (
-              <div key={f.q} className={styles.faqItem}>
-                <dt className={styles.faqQ}>{f.q}</dt>
-                <dd className={styles.faqA}>{f.a}</dd>
-              </div>
-            ))}
-          </dl>
-        </section>
       </main>
       <Footer />
     </>
