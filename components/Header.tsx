@@ -12,6 +12,7 @@ const CORNERS = [
   { label: "팩트체크", corner: "factcheck" },
   { label: "스마트가이드", corner: "smartguide" },
   { label: "트렌드랩", corner: "trendlab" },
+  { label: "AS셀프체크", corner: "repair" },
 ];
 // 딜 = 서브(드롭다운)
 const DEALS = [

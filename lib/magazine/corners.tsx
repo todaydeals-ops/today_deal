@@ -1,5 +1,6 @@
-// 오늘의딜 매거진 — 3 코너 시스템(형식 브랜드). 색·아이콘·약속. (디자인 핸드오프 §3)
-// 통폐합: 끝장비교·롱런팁 → 스마트가이드로 흡수(2026-07). 팩트체크·트렌드랩은 유지.
+// 오늘의딜 매거진 — 코너 시스템(형식 브랜드). 색·아이콘·약속. (디자인 핸드오프 §3)
+// 통폐합: 끝장비교·롱런팁 → 스마트가이드로 흡수(2026-07). 팩트체크·트렌드랩 유지.
+// 신설: AS셀프체크(repair) — AS 신청 전 브랜드별 셀프체크(2026-07).
 import type { ReactNode } from "react";
 
 export interface Corner {
@@ -55,6 +56,19 @@ export const CORNERS: Corner[] = [
       </svg>
     ),
   },
+  {
+    key: "repair",
+    name: "AS셀프체크",
+    nameEn: "SELF CHECK",
+    color: "#38539a",
+    chipBg: "#e9edf7",
+    desc: "AS 부르기 전, 5분 셀프체크",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M14.6 6.4a4 4 0 0 0-5.2 5.2l-4.9 4.9a1.6 1.6 0 0 0 2.3 2.3l4.9-4.9a4 4 0 0 0 5.2-5.2l-2.4 2.4-2.3-2.3 2.4-2.4z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
 ];
 
 export const CORNER_MAP: Record<string, Corner> = Object.fromEntries(CORNERS.map((c) => [c.key, c]));
@@ -91,6 +105,7 @@ export const CORNER_SHORT: Record<string, string> = {
   factcheck: "광고 너머의 진실",
   smartguide: "고르고·비교하고 오래 쓰기",
   trendlab: "살 가치 있나",
+  repair: "AS 부르기 전 셀프체크",
 };
 export const MAGAZINE_INTRO =
   "광고도 제휴도 받지 않는 중립 쇼핑 가이드.";
