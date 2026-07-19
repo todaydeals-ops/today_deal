@@ -19,9 +19,25 @@ const FORCE = process.argv.includes("--force");
 const LIMIT = Number(process.argv.find((a) => a.startsWith("--limit="))?.split("=")[1] || 0);
 const ONLY = (process.argv.find((a) => a.startsWith("--slugs="))?.split("=")[1] || "").split(",").filter(Boolean); // 특정 slug만 재수집
 
-const DROP = new Set(["guide", "fact", "factcheck", "check", "compare", "trend", "longrun", "care", "vs", "buying", "types", "type", "dosage", "size", "capacity", "999", "refresh", "self", "maintenance", "sweetener", "safety", "organic", "inbody", "worth", "it", "direct", "tank", "dose", "absorption", "ratio"]);
+const DROP = new Set(["guide", "fact", "factcheck", "check", "compare", "trend", "longrun", "care", "vs", "buying", "types", "type", "dosage", "size", "capacity", "999", "refresh", "self", "selfcheck", "maintenance", "sweetener", "safety", "organic", "inbody", "worth", "it", "direct", "tank", "dose", "absorption", "ratio"]);
 // 다의어·약자로 자동 키워드가 엉뚱한 이미지를 부르는 글은 수동 교정(drum=악기, msg=약자, scale=저울 등)
 const KW_OVERRIDE = {
+  // AS셀프체크(repair) — 증상형 slug라 자동 키워드가 엉뚱해 전부 수동 지정
+  "aircon-weak-cooling-selfcheck": "air conditioner",
+  "smartphone-battery-drain-selfcheck": "smartphone battery",
+  "washer-drain-selfcheck": "washing machine",
+  "wifi-disconnect-selfcheck": "wifi router",
+  "smartphone-charging-selfcheck": "phone charging cable",
+  "account-login-selfcheck": "laptop password security",
+  "fridge-cooling-selfcheck": "refrigerator kitchen",
+  "smartphone-storage-slow-selfcheck": "smartphone apps screen",
+  "dryer-not-drying-selfcheck": "clothes dryer laundry",
+  "tv-no-signal-selfcheck": "television living room",
+  "laptop-overheat-selfcheck": "laptop computer desk",
+  "printer-not-printing-selfcheck": "printer office",
+  "water-purifier-selfcheck": "water dispenser kitchen",
+  "mobile-data-call-selfcheck": "smartphone hand city",
+  "car-battery-selfcheck": "car engine battery",
   "toploader-vs-drum-compare": "washing machine",
   "stick-vs-robot-vacuum": "vacuum cleaner",
   "induction-vs-highlight-vs-gas": "induction cooktop",
