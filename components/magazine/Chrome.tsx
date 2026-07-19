@@ -79,7 +79,7 @@ export function NeutralBand() {
             <div style={{ fontSize: 13.5, color: "#a89e8d", marginTop: 5 }}>{CATCH.lonely.sub} · <span style={{ color: "#ff8a6f" }}>{CATCH.lonely.hi}</span></div>
           </div>
         </div>
-        <Link href="/magazine#guides" style={{ fontWeight: 700, fontSize: 14, color: "#16140f", background: "#ff5a3c", padding: "11px 24px", borderRadius: 8, whiteSpace: "nowrap", textDecoration: "none" }}>전체 가이드 →</Link>
+        <Link href="/#guides" style={{ fontWeight: 700, fontSize: 14, color: "#16140f", background: "#ff5a3c", padding: "11px 24px", borderRadius: 8, whiteSpace: "nowrap", textDecoration: "none" }}>전체 가이드 →</Link>
       </div>
     </section>
   );
@@ -92,7 +92,7 @@ export function MagazineFooter() {
       <div className="mz-wrap" style={{ paddingTop: 30, paddingBottom: 30, display: "flex", alignItems: "center", justifyContent: "space-between", gap: 20, flexWrap: "wrap" }}>
         <nav style={{ display: "flex", gap: 20, fontFamily: mono, fontSize: 11, letterSpacing: "0.5px", flexWrap: "wrap" }}>
           <Link href="/" style={{ color: "#cdc6ba", textDecoration: "none" }}>오늘의딜 홈</Link>
-          <Link href="/magazine" style={{ color: "#cdc6ba", textDecoration: "none" }}>매거진</Link>
+          <Link href="/" style={{ color: "#cdc6ba", textDecoration: "none" }}>매거진</Link>
           <Link href="/terms" style={{ color: "#8a857c", textDecoration: "none" }}>이용약관</Link>
           <Link href="/privacy" style={{ color: "#8a857c", textDecoration: "none" }}>개인정보처리방침</Link>
         </nav>

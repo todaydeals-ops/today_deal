@@ -19,7 +19,7 @@ export default function Footer() {
           문의 hello@todaydeals.co.kr
         </div>
         <div className={styles.links}>
-          <Link href="/magazine">매거진</Link>
+          <Link href="/">매거진</Link>
           <Link href="/terms">이용약관</Link>
           <Link href="/privacy">개인정보처리방침</Link>
           <Link href="/partnership">제휴문의</Link>

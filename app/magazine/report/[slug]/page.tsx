@@ -2,20 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { fetchReportBySlug, fetchReportSlugs } from "@/lib/data/magazine-report";
+import { cornerOf } from "@/lib/magazine/corners";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const revalidate = 3600; // 1시간 캐시
 const SITE = "https://www.todaydeals.co.kr";
 
-const CORNER_COLORS: Record<string, string> = {
-  factcheck: "#1f6b66",
-  smartguide: "#e0481f",
-  compare: "#38539a",
-  longrun: "#7a5f2e",
-  trendlab: "#6e4690",
-};
-const CORNER_NAMES: Record<string, string> = {
-  factcheck: "팩트체크", smartguide: "스마트가이드", compare: "끝장비교", longrun: "롱런팁", trendlab: "트렌드랩",
-};
 const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
 
 export async function generateStaticParams() {
@@ -59,20 +52,19 @@ export default async function MagazineReportPage({ params }: { params: Promise<{
       "@type": "Article",
       headline: a.title,
       url: `${SITE}/magazine/${a.slug}`,
-      articleSection: CORNER_NAMES[a.corner] ?? a.corner,
+      articleSection: cornerOf(a.corner).name,
     })),
   };
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
+      <Header />
 
       <div style={{ maxWidth: 800, margin: "0 auto", padding: "0 16px 80px" }}>
         {/* 브레드크럼 */}
         <nav style={{ fontSize: 13, color: "#888", padding: "24px 0 20px", display: "flex", gap: 6, alignItems: "center" }}>
-          <Link href="/" style={{ color: "#888", textDecoration: "none" }}>홈</Link>
-          <span>›</span>
-          <Link href="/magazine" style={{ color: "#888", textDecoration: "none" }}>매거진</Link>
+          <Link href="/" style={{ color: "#888", textDecoration: "none" }}>매거진</Link>
           <span>›</span>
           <span style={{ color: "#333" }}>리포트</span>
         </nav>
@@ -112,7 +104,7 @@ export default async function MagazineReportPage({ params }: { params: Promise<{
               <li key={a.slug}>
                 <a href={`#article-${i + 1}`} style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none", color: "#1a1a1a", padding: "10px 14px", border: "1px solid #e8e8e8", borderRadius: 6, transition: "background .15s" }}>
                   <span style={{ fontSize: 12, fontFamily: "'JetBrains Mono', monospace", fontWeight: 700, color: "#aaa", minWidth: 24 }}>0{i + 1}</span>
-                  <span style={{ fontSize: 8, width: 8, height: 8, borderRadius: "50%", background: CORNER_COLORS[a.corner] ?? "#888", flexShrink: 0, display: "inline-block" }} />
+                  <span style={{ fontSize: 8, width: 8, height: 8, borderRadius: "50%", background: cornerOf(a.corner).color, flexShrink: 0, display: "inline-block" }} />
                   <span style={{ fontSize: 15, fontWeight: 600, lineHeight: 1.4 }}>{a.title}</span>
                   {a.readMin && <span style={{ fontSize: 12, color: "#aaa", marginLeft: "auto", whiteSpace: "nowrap" }}>{a.readMin}분</span>}
                 </a>
@@ -130,8 +122,8 @@ export default async function MagazineReportPage({ params }: { params: Promise<{
             <header style={{ marginBottom: 24 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 10 }}>
                 <span style={{ fontSize: 11, fontFamily: "'JetBrains Mono', monospace", color: "#aaa" }}>0{i + 1}</span>
-                <span style={{ fontSize: 12, color: CORNER_COLORS[a.corner] ?? "#888", fontWeight: 700, fontFamily: "'JetBrains Mono', monospace", letterSpacing: "0.08em" }}>
-                  {CORNER_NAMES[a.corner] ?? a.corner.toUpperCase()}
+                <span style={{ fontSize: 12, color: cornerOf(a.corner).color, fontWeight: 700, fontFamily: "'JetBrains Mono', monospace", letterSpacing: "0.08em" }}>
+                  {cornerOf(a.corner).name}
                 </span>
                 {a.field && <span style={{ fontSize: 12, color: "#888", background: "#f0f0f0", padding: "2px 8px", borderRadius: 99 }}>{a.field}</span>}
               </div>
@@ -190,7 +182,7 @@ export default async function MagazineReportPage({ params }: { params: Promise<{
             구매 결정은 항상 본인의 상황과 필요에 맞게 내리세요.
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-            <Link href="/magazine" style={{ fontSize: 14, color: "#1a1a1a", fontWeight: 700, textDecoration: "none", border: "2px solid #1a1a1a", padding: "10px 20px", borderRadius: 6 }}>
+            <Link href="/" style={{ fontSize: 14, color: "#1a1a1a", fontWeight: 700, textDecoration: "none", border: "2px solid #1a1a1a", padding: "10px 20px", borderRadius: 6 }}>
               ← 매거진 전체 보기
             </Link>
             <Link href="/" style={{ fontSize: 14, color: "#555", textDecoration: "none", border: "1px solid #e0e0e0", padding: "10px 20px", borderRadius: 6 }}>
@@ -199,6 +191,7 @@ export default async function MagazineReportPage({ params }: { params: Promise<{
           </div>
         </footer>
       </div>
+      <Footer />
     </>
   );
 }

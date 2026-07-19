@@ -3,7 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { fetchMagazineBySlug, fetchRelatedMagazine } from "@/lib/data/magazine";
 import { cornerOf } from "@/lib/magazine/corners";
-import { MagazineUtilBar, MagazineMasthead, MagazineFooter, FieldPill } from "@/components/magazine/Chrome";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { FieldPill } from "@/components/magazine/Chrome";
 
 export const revalidate = 3600; // 1시간 캐시 — 매거진 아티클은 실시간 불필요
 const SITE = "https://www.todaydeals.co.kr";
@@ -85,8 +87,8 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "매거진", item: `${SITE}/magazine` },
-      { "@type": "ListItem", position: 2, name: c.name, item: `${SITE}/magazine?corner=${a.corner}` },
+      { "@type": "ListItem", position: 1, name: "매거진", item: `${SITE}/` },
+      { "@type": "ListItem", position: 2, name: c.name, item: `${SITE}/?corner=${a.corner}` },
       { "@type": "ListItem", position: 3, name: a.title, item: `${SITE}/magazine/${slug}` },
     ],
   };
@@ -99,20 +101,19 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   } : null;
 
   return (
-    <div className="mz-page">
+    <>
+      <Header />
+      <div className="mz-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {faqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />}
-      <MagazineUtilBar />
-      <MagazineMasthead />
-
       <div className="mz-wrap" style={{ paddingBottom: 80 }}>
         {/* ── 타이틀 블록 (풀폭) ── */}
         <div style={{ padding: "50px 0 0" }}>
           <div style={{ fontFamily: mono, fontSize: 11.5, letterSpacing: ".5px", color: "#9a9286", display: "flex", alignItems: "center", gap: 8 }}>
-            <Link href="/magazine" className="ul-sweep" style={{ color: "#9a9286", textDecoration: "none" }}>매거진</Link>
+            <Link href="/" className="ul-sweep" style={{ color: "#9a9286", textDecoration: "none" }}>매거진</Link>
             <span style={{ opacity: 0.5 }}>›</span>
-            <Link href={`/magazine?corner=${a.corner}`} className="ul-sweep" style={{ color: c.color, fontWeight: 600, textDecoration: "none" }}>{c.name}</Link>
+            <Link href={`/?corner=${a.corner}`} className="ul-sweep" style={{ color: c.color, fontWeight: 600, textDecoration: "none" }}>{c.name}</Link>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 9, marginTop: 18, flexWrap: "wrap" }}>
             <span style={{ display: "flex", alignItems: "center", gap: 7 }}>
@@ -231,7 +232,8 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
         )}
       </div>
 
-      <MagazineFooter />
-    </div>
+      </div>
+      <Footer />
+    </>
   );
 }
