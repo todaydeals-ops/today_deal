@@ -171,12 +171,20 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
         </div>
 
         {/* ── 정직한 마무리 (풀폭) ── */}
-        {a.closing && (
-          <div style={{ background: "#16140f", borderRadius: 16, padding: "30px 34px", margin: "48px 0 0" }}>
-            <div style={{ fontFamily: mono, fontSize: 11, letterSpacing: "1px", color: "#ff8a6f", fontWeight: 600 }}>정직한 마무리</div>
-            <p style={{ fontFamily: serif, fontWeight: 600, fontSize: 22, lineHeight: 1.6, letterSpacing: "-0.4px", color: "#f3efe9", margin: "12px 0 0", maxWidth: 760 }} dangerouslySetInnerHTML={{ __html: a.closing }} />
-          </div>
-        )}
+        {a.closing && (() => {
+          // 통짜 문단이 답답해 보이지 않게 문장 2개씩 묶어 문단 분리 + 행간 확대
+          const sentences = a.closing.split(/(?<=[.!?])\s+/).filter(Boolean);
+          const paras: string[] = [];
+          for (let i = 0; i < sentences.length; i += 2) paras.push(sentences.slice(i, i + 2).join(" "));
+          return (
+            <div style={{ background: "#16140f", borderRadius: 16, padding: "34px 36px", margin: "48px 0 0" }}>
+              <div style={{ fontFamily: mono, fontSize: 11, letterSpacing: "1px", color: "#ff8a6f", fontWeight: 600 }}>정직한 마무리</div>
+              {paras.map((p, i) => (
+                <p key={i} style={{ fontFamily: serif, fontWeight: 500, fontSize: 19.5, lineHeight: 1.9, letterSpacing: "-0.3px", color: "#f3efe9", margin: i === 0 ? "16px 0 0" : "15px 0 0", maxWidth: 720 }} dangerouslySetInnerHTML={{ __html: p }} />
+              ))}
+            </div>
+          );
+        })()}
 
         {/* ── 자주 묻는 질문 (GEO: FAQPage LD와 값 동일) ── */}
         {a.faq && a.faq.length > 0 && (
