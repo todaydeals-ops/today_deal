@@ -1,0 +1,190 @@
+{
+  "topic": "삼성 TV 화면 안 나옴·신호없음·전원 문제 자가점검",
+  "brand": "삼성",
+  "article": "samsung-tv-error",
+  "captured": "2026-07-20",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "samsung-model-year-alphabet",
+      "why": "에어컨 모델명 연식 규칙(AF/AR 라인). TV 모델명 체계와 무관하므로 거부"
+    },
+    {
+      "id": "samsung-aircon-selfdiag-entry",
+      "why": "에어컨 자가진단 진입 방법. TV 자가진단 경로와 완전히 다르므로 거부"
+    },
+    {
+      "id": "samsung-errorcode-digit-change",
+      "why": "에어컨 에러코드 표기 규칙(E1 vs E101). TV는 에러코드 체계가 다르므로 거부"
+    },
+    {
+      "id": "samsung-washer-dc-layer-conflict",
+      "why": "세탁기 dC 코드. TV와 전혀 다른 제품군이므로 거부"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "tv-screen-not-showing-basic-check",
+      "claim": "삼성 TV 화면이 안 나올 때 첫 점검은 전원 코드 완전 재연결 후 60초 대기, TV 하단 LED 표시등 확인, 절전형 콘센트 사용 확인 순서다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — TV화면이 안 나와요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28337",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "TV", "line": "전 스마트TV", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "전원 코드 재연결 시 백색 또는 회색 정렬 표시가 거의 보이지 않을 때까지 완전히 삽입해야 한다",
+      "cautionSource": "삼성전자서비스 전원 연결 가이드"
+    },
+    {
+      "id": "tv-input-signal-weak-antenna-check",
+      "claim": "'입력신호가 약하거나 없습니다' 메시지는 주로 방송 신호 미약, 안테나 미연결, 또는 셋톱박스 연결 불량을 나타낸다. TV 뒷면 안테나 단자 연결을 먼저 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — TV 화면에 입력신호가 약하거나 없습니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39238",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "TV", "line": "전 TV", "years": "전 연식", "region": "KR" },
+      "caution": null
+    },
+    {
+      "id": "tv-hdmi-connection-check-process",
+      "claim": "HDMI로 셋톱박스·PC 등 외부기기를 연결한 경우 문제 시 HDMI 케이블 분리 후 양쪽 끝을 완전히 밀어 다시 연결해야 한다. 정품 '울트라 하이스피드 HDMI' 인증 케이블 사용이 권장된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — HDMI로 2022년TV와 PC연결시 PC화면 안나옴,깜빡",
+      "source_url": "https://www.samsungsvc.co.kr/solution/996820",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "TV", "line": "HDMI 입력 전 TV", "years": "2022~", "region": "KR" },
+      "caution": "비정품 또는 인증되지 않은 HDMI 케이블은 화면 깜박임, 줄, 깨짐 증상을 유발할 수 있다",
+      "cautionSource": "삼성전자서비스 HDMI 문제 점검 가이드"
+    },
+    {
+      "id": "tv-settop-box-power-check",
+      "claim": "셋톱박스 연결 시 신호없음이 표시되면 먼저 셋톱박스의 초록색 전원 표시등 상태를 확인한 후, 전원 코드를 완전히 분리했다가 재연결해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 셋탑으로 시청중 입력신호가 없습니다 표시됨",
+      "source_url": "https://www.samsungsvc.co.kr/solution/998099",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "TV", "line": "셋톱박스 연결 TV", "years": "2022~", "region": "KR" },
+      "caution": null
+    },
+    {
+      "id": "tv-oneconnect-box-hdmi-verify",
+      "claim": "원커넥트 박스(One Connect Box) 사용 TV는 원커넥트 박스에서 TV 본체로 가는 광케이블 또는 HDMI 배선이 제대로 연결되어 있는지 먼저 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — TV 화면이 안보여요, 셋탑박스연결이 안돼요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/996881",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "TV", "line": "원커넥트 박스 탑재 모델", "years": "2017~", "region": "KR" },
+      "caution": null
+    },
+    {
+      "id": "tv-power-led-indicator-check",
+      "claim": "TV 전원이 켜지지 않을 때 첫 확인은 TV 하단의 LED 표시등 상태(켜짐/꺼짐)다. LED가 꺼진 상태면 리모컨을 의심해야 하며, 스마트폰 카메라 모드로 리모컨 전원 버튼을 누를 때 카메라 화면에 표시등이 보이는지로 IR 신호 생성 여부를 판별할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — TV 전원이 켜지지 않아요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40598",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "TV", "line": "전 TV", "years": "전 연식", "region": "KR" },
+      "caution": "LED 표시등 위치는 TV 하단 중앙 또는 모서리에 있으며, 모델마다 위치가 다를 수 있다",
+      "cautionSource": "삼성전자서비스 LED 확인 가이드"
+    },
+    {
+      "id": "tv-remote-battery-check",
+      "claim": "리모컨 먹통 시 점검 순서는 배터리 극성 확인 → 배터리 교체(새 배터리 사용) → USB-C 리모컨의 경우 충전 케이블 연결 → 솔라 리모컨의 경우 밝은 곳에서 충전이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — TV 전원이 켜지지 않아요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40598",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "TV", "line": "전 리모컨 타입", "years": "현행 판매 모델", "region": "KR" },
+      "caution": null
+    },
+    {
+      "id": "tv-remote-pairing-model-year",
+      "claim": "삼성 TV 리모컨 페어링 방법은 모델 연식별로 다르다 — 2016~2025년형은 Back + Play/Pause 동시 5초 이상, 2015년형은 Back/Exit + More Info 동시 5초, 2014년형은 Back + Guide 동시 5초, 2013년형은 리모컨 백커버 개방 후 전용 Pairing 버튼 5초 이상",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 리모컨 동작이 안 될때 연결(페어링)하는 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/25844",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "TV", "line": "스마트 리모컨 전 기종", "years": "2013~2025", "region": "KR" },
+      "caution": "페어링 과정에서 TV 화면에 '스마트 리모컨 연결중' → '스마트 리모컨 연결됨' 메시지가 순서대로 표시되어야 성공이다",
+      "cautionSource": "삼성전자서비스 페어링 성공 기준"
+    },
+    {
+      "id": "tv-self-diagnosis-path",
+      "claim": "삼성 TV 자가진단 진입 경로는 홈 버튼 → 설정(좌측 화살표 네비게이션) → 고객지원(또는 기종별로 '디바이스 케어') → 자가진단 메뉴다. 기종과 연식에 따라 메뉴명이 '디바이스 케어(Device Care)' 또는 '지원(Support)'으로 표시될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 리모컨과 자가진단 기능, 제품 안전사용 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/239445",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "TV", "line": "전 스마트TV", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "구형 TV(2013년 이전)는 자가진단 메뉴 자체가 없거나 다를 수 있다",
+      "cautionSource": "삼성전자서비스 메뉴 경로 안내(기종별 변동)"
+    },
+    {
+      "id": "tv-self-diagnosis-functions",
+      "claim": "삼성 TV 자가진단에서 확인할 수 있는 기능은 화질 테스트(Picture Test) — 색상 이상 판별, 화면 테스트(Screen Test) — 줄·얼룩·표시 불가 판별, 음질 테스트(Sound Test), HDMI 점검(HDMI Check) — 외부기기 연결 검증, 신호 점검(Signal Check) — 방송 신호 수신 상태, 스마트허브 연결 테스트, 스마트허브 초기화 등이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 리모컨과 자가진단 기능, 제품 안전사용 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/239445",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "TV", "line": "전 스마트TV", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "화면 테스트에서 줄이 표시되면 TV 패널 문제 가능성이 높으며, 줄이 없으면서 방송 시청 시에만 줄이 보인다면 외부 연결(HDMI, 안테나) 문제를 먼저 의심해야 한다",
+      "cautionSource": "삼성전자서비스 자가진단 판별 기준"
+    },
+    {
+      "id": "tv-horizontal-lines-diagnosis",
+      "claim": "TV 화면에 가로 줄이 보일 때 자가진단 경로는 홈 버튼 → 메뉴 → 설정 → 전체 설정 → 고객지원 → 디바이스 케어 → 자가진단 → 화질 테스트(Picture Quality Test)를 실행하고, 테스트 화면에서 1개 이상의 가로 줄이 고정되어 보이는지 확인하는 것이다. 테스트 화면에서 줄이 없으면 TV 패널은 정상이고 외부 신호·연결 문제를 의심해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — TV 화면에 가로 줄이 보여요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37061",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "TV", "line": "전 스마트TV", "years": "2022~2024", "region": "KR" },
+      "caution": "메뉴 경로는 TV 모델 연식별로 다를 수 있으므로 자기 TV의 메뉴를 직접 탐색할 필요가 있다. 줄이 자가진단에서는 안 보이지만 일반 방송 시청 시에는 보인다면 원인은 HDMI 케이블 불량·셋톱박스·신호 미약일 가능성이 높다",
+      "cautionSource": "삼성전자서비스 화질 테스트 판별 기준 및 메뉴 경로 변동 안내"
+    },
+    {
+      "id": "tv-hdmi-problem-check-2024",
+      "claim": "2024년형 삼성 TV는 자가진단 메뉴에 HDMI 문제 점검 기능이 추가되었으며, 경로는 설정 → 전체 설정 → 고객지원 → 디바이스 케어 → 자가진단 → HDMI 문제 점검이다. HDMI 케이블 문제로 진단될 경우 정품 '울트라 하이스피드' 인증 케이블로 교체해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 2024년 TV 기능인 HDMI 문제 점검하는 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/2344066",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "TV", "line": "전 스마트TV", "years": "2024~", "region": "KR" },
+      "caution": null
+    },
+    {
+      "id": "tv-settop-box-channel-setup",
+      "claim": "셋톱박스와의 신호 연결 후 채널 검색이 필요한 경우 설정 → 채널/방송 → 채널 자동 검색으로 진행한다. 신호가 약할 때는 이 과정을 먼저 시도하는 것이 권장된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — TV 화면에 입력신호가 약하거나 없습니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39238",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "TV", "line": "안테나·방송 수신 TV", "years": "현행 판매 모델", "region": "KR" },
+      "caution": null
+    },
+    {
+      "id": "tv-cold-boot-restart",
+      "claim": "삼성 TV의 콜드 부팅(cold boot)은 전원 코드를 완전히 분리한 후 30초 이상 대기했다가 다시 연결하는 방식이며, TV 전원 버튼으로 재시작하는 방식과는 다르다. 소프트웨어 오류로 인한 일시적 먹통·화면 표시 오류 해결에 효과적이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — TV 전원이 켜지지 않아요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40598",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "TV", "line": "전 TV", "years": "전 연식", "region": "KR" },
+      "caution": "콜드 부팅 중에는 TV를 절대 켜려고 시도하면 안 되며, 30초 이상 전원이 없는 상태를 유지해야 한다",
+      "cautionSource": "삼성전자서비스 콜드 부팅 안전 절차"
+    }
+  ]
+}

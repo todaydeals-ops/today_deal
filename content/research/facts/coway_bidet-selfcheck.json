@@ -1,0 +1,204 @@
+{
+  "topic": "코웨이 비데 자가점검 — 물·온수 안 나옴·착좌센서·전원·노즘·필터 교체·렌탈 관리",
+  "brand": "코웨이",
+  "article": "bidet-selfcheck",
+  "captured": "2026-07-20",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "coway-cold-hot-water-led-check",
+      "why": "정수기의 냉온수 LED 확인 절차는 비데 제어 방식과 다름. 비데는 착좌센서 감지를 우선 확인하며, LED 표시 구조가 모델별로 상이"
+    },
+    {
+      "id": "coway-power-reset-five-minutes",
+      "why": "정수기는 5분 대기이나, 비데 공식 안내는 10초 대기 후 재연결 또는 정지 버튼 3초 누르기로 다름"
+    },
+    {
+      "id": "coway-filter-flushing-required",
+      "why": "정수기 필터 플러싱은 수도식 물 배출이나, 비데는 위생부품(노즐덕트·건조덕트·프리마이크로필터)으로 구성되어 절차가 다름"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "bidet-sensor-detection-failure",
+      "claim": "비데에서 물이 안 나올 때 가장 흔한 원인은 착좌센서(피부 감지 또는 광 센서)가 제대로 인식하지 못하는 것이며, 변좌 시트 우측의 피부 감지 라벨 또는 제품 후면의 광 센서를 먼저 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코웨이 비데 렌탈 자가관리 안내",
+      "source_url": "https://coway-m.com/service_bodycare_02",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "비데",
+        "line": "렌탈·자가구매 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "피부 감지 방식은 피부가 직접 닿아야만 작동하고, 광 센서는 센서 창이 가려져야만 작동한다. 센서 주변에 오염물이 있는지도 확인할 것.",
+      "cautionSource": "코웨이 공식 자가관리 안내의 센서 유형별 작동 원리"
+    },
+    {
+      "id": "bidet-power-reset-basic",
+      "claim": "비데 오류 시 기본적인 자가 복구 방법은 전원 코드를 콘센트에서 분리하고 10초 이상 대기한 후 재연결하는 것이며, 이래도 작동이 안 되면 전원 재연결 후 정지 버튼을 3초간 누르는 것이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "코웨이 비데 자가점검 가이드·커뮤니티 종합",
+      "source_url": "https://smart.moneyrules.co.kr/%EC%BD%94%EC%9B%A8%EC%9D%B4-%EB%B9%84%EB%8D%B0-%EA%B3%A0%EC%9E%A5-%EC%9E%90%EA%B0%80%EC%A7%84%EB%8B%A8%EB%B6%80%ED%84%B0-as-%EC%8B%A0%EC%B2%AD-%EB%B0%A9%EB%B2%95-%EC%B4%9D%EC%A0%95%EB%A6%AC/",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "비데",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "전원을 뽑기 전에 비데 주변과 바닥의 누수 여부를 먼저 확인하고, 전원 리셋 후에도 물이 흘러내리지 않는지 확인해야 한다.",
+      "cautionSource": "커뮤니티 비데 고장 대응 가이드의 안전 점검 절차"
+    },
+    {
+      "id": "bidet-nozzle-self-cleaning",
+      "claim": "비데 노즐의 자동 셀프 세척은 세정/비데/쾌변 기능 동작(약 2분) 후 노즐이 자동으로 돌아오면서 물이 흐르는 것이 정상이며, 세균 방지를 위한 의도된 기능이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코웨이 비데 사용 설명서·자가점검 가이드",
+      "source_url": "https://rentre.kr/story/%EB%B9%84%EB%8D%B0-%EA%B3%A0%EC%9E%A5-%EC%9B%90%EC%9D%B8-%EC%88%98%EB%A6%AC-%EB%B0%A9%EB%B2%95-%EB%B9%84%EC%9A%A9/bidet-malfunction-causes-repair-methods-cost",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "비데",
+        "line": "자동 셀프 세척 기능 탑재 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "셀프 세척 중 물이 흘러내리는 것은 정상이며, 약 10~15초 후 자동으로 멈춘다. 계속 흘러내린다면 노즐 고장으로 고객센터 문의가 필요하다.",
+      "cautionSource": "코웨이 비데 사용 설명서의 노즐 자동 세척 기능 설명"
+    },
+    {
+      "id": "bidet-hygiene-part-replacement-cycle",
+      "claim": "코웨이 비데의 위생부품 교체 주기는 노즐덕트·건조덕트 4개월, 프리마이크로필터 4개월, 버블카트리지(더블케어비데 BAS37-A 전용) 2개월이며, 렌탈 기준 필터는 12개월마다 교체된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코웨이 룰루비데 렌탈 자가관리 안내",
+      "source_url": "https://coway-m.com/service_bodycare_02",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "비데",
+        "line": "렌탈·자가구매 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "위생부품 구성은 제품 모델에 따라 다를 수 있다. 자가관리 렌탈은 교체 주기에 맞춰 택배로 부품을 배송받고 사용자가 직접 교체해야 하며, 렌탈(하트서비스)은 전문가가 방문해 교체한다. 렌탈 제품에서 부품을 임의로 교체하면 계약 위반이 될 수 있다.",
+      "cautionSource": "코웨이 공식 자가관리 안내의 부품 구성 및 교체 주기"
+    },
+    {
+      "id": "bidet-heart-service-visit-management",
+      "claim": "코웨이 비데 하트서비스는 정기 방문관리 서비스로, 전문가가 정기적으로 방문해 위생 청소(전용 도구·칫솔·허브향 세라믹 세제 사용), 위생부품 교체(노즘덕트·건조덕트 4개월, 프리마이크로필터 4개월)를 수행한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코웨이 비데 하트서비스 안내",
+      "source_url": "https://www.coway.com/cowayservice/bidet",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "비데",
+        "line": "렌탈 제품(하트서비스 계약)",
+        "years": "현행 렌탈 모델",
+        "region": "KR"
+      },
+      "caution": "하트서비스는 렌탈 계약의 정기 방문관리 옵션이며, 렌탈 제품 사용자의 자가 수리나 부품 교체는 계약 위반이 될 수 있다. 방문 전·후 알림톡으로 안내된다.",
+      "cautionSource": "코웨이 공식 하트서비스 정책 및 방문관리 범위"
+    },
+    {
+      "id": "bidet-self-management-rental-option",
+      "claim": "코웨이 비데 자가관리 렌탈은 고객이 위생부품을 직접 교체하는 방식으로, 교체 필요 시기 20일 전 알림톡을 받고 택배로 부품을 배송받아 사용자가 직접 교체한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코웨이 룰루비데 렌탈 자가관리 안내",
+      "source_url": "https://coway-m.com/service_bodycare_02",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "비데",
+        "line": "자가관리 렌탈 제품",
+        "years": "현행 렌탈 모델",
+        "region": "KR"
+      },
+      "caution": "자가관리 렌탈은 하트서비스 방문관리보다 렌탈료가 낮을 수 있으나, 사용자가 교체를 늦추면 위생·성능 문제가 발생할 수 있다. 교체 방법이 명확하지 않으면 배송받은 부품의 안내서를 참고하거나 고객센터(1588-5200)에 문의해야 한다.",
+      "cautionSource": "코웨이 공식 자가관리 정책의 알림·배송 프로세스"
+    },
+    {
+      "id": "bidet-rental-vs-purchase-boundary",
+      "claim": "코웨이 비데 렌탈은 모든 위생부품 교체 및 점검을 제조사가 담당(하트서비스 방문관리)하거나 사용자가 담당(자가관리)하는 방식이고, 자가구매는 사용자가 모든 유지보수를 책임진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코웨이 비데 렌탈 및 판매 정책",
+      "source_url": "https://coway-m.com/body-care-bidet-price",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "비데",
+        "line": "렌탈 vs 자가구매",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "렌탈 제품(특히 하트서비스)은 정기 방문관리가 의무이며, 사용자 임의의 부품 교체나 분해는 계약 위반이 될 수 있다. 렌탈료는 월 20,400원부터 30,900원대로 모델별·기능별로 다르며, 방수등급·살균기능·커버 자동 개폐 등이 있을수록 높다.",
+      "cautionSource": "코웨이 공식 렌탈 정책 및 가격 안내"
+    },
+    {
+      "id": "bidet-water-stoppage-check-steps",
+      "claim": "비데 물이 안 나올 때 자가점검 순서는 (1) 착좌센서 확인 → (2) 전원 리셋(10초 대기 후 재연결 또는 정지 버튼 3초) → (3) 고객센터 문의 순이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "코웨이 비데 고장 자가진단 가이드·커뮤니티",
+      "source_url": "https://smart.moneyrules.co.kr/%EC%BD%94%EC%9B%A8%EC%9D%B4-%EB%B9%84%EB%8D%B0-%EA%B3%A0%EC%9E%A5-%EC%9E%90%EA%B0%80%EC%A7%84%EB%8B%A8%EB%B6%80%ED%84%B0-as-%EC%8B%A0%EC%B2%AD-%EB%B0%A9%EB%B2%95-%EC%B4%9D%EC%A0%95%EB%A6%AC/",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "비데",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "센서를 확인해도 반응이 없으면 오류 또는 고장이다. 렌탈 제품은 즉시 고객센터에 연락해 무상 수리를 받을 수 있으나, 자가구매 제품은 유료 수리 대상이 될 수 있다.",
+      "cautionSource": "코웨이 비데 커뮤니티 고장 대응 가이드"
+    },
+    {
+      "id": "bidet-circuit-breaker-leakage-protection",
+      "claim": "비데는 물과 전기가 함께 있는 제품으로 누전 위험이 있으며, 누전차단기(ELB)는 이상 전류를 감지해 0.03초 이내에 전기를 자동 차단해 감전사고를 방지한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "누전차단기 기술기준 및 가정 내 전기 안전 가이드",
+      "source_url": "https://zero7w.com/%EA%B0%80%EC%A0%95%EB%82%B4%EC%A0%84%EA%B8%B0%EC%95%88%EC%A0%84-%EA%B0%91%EC%9E%91%EC%8A%A4%EB%9F%AC%EC%9A%B4-%EC%A0%95%EC%A0%84-%EA%B0%80%EC%9E%A5-%EB%A8%BC%EC%A0%80-%ED%95%B4%EC%95%BC-%ED%95%A0/",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "공통",
+        "category": "비데·온수기·욕실 전열기구",
+        "line": "누전 위험 기기 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "누전차단기가 자동으로 차단되었을 때는 비데 주변의 물 고임·누수를 먼저 확인하고, 핸들을 완전히 OFF 위치로 리셋한 후 ON으로 재투입해야 한다. 2~3회 내에 계속 차단되면 누설이 있을 수 있으니 전문가 점검이 필요하다.",
+      "cautionSource": "누전차단기 기술기준 및 가정 전기 안전 매뉴얼의 동작 원리 및 재투입 절차"
+    },
+    {
+      "id": "bidet-customer-center-contact",
+      "claim": "코웨이 비데 모든 서비스(계약·AS·부품 신청·기술 상담)는 고객센터 1588-5200(AS·계약 관련) 또는 1522-5542(신규 렌탈 신청)로 문의된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코웨이 공식 고객센터 안내",
+      "source_url": "https://coway-m.com/service_bodycare_02",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "비데",
+        "line": "렌탈·자가구매 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "긴급 상황(심한 누수, 누전차단기 반복 작동)은 신속하게 신고해야 한다. 고객센터는 발신전용 안내를 제공할 수 있으니, 기록해둘 필요가 있다.",
+      "cautionSource": "없음"
+    }
+  ]
+}
