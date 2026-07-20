@@ -22,6 +22,9 @@ const ONLY = (process.argv.find((a) => a.startsWith("--slugs="))?.split("=")[1] 
 const DROP = new Set(["guide", "fact", "factcheck", "check", "compare", "trend", "longrun", "care", "vs", "buying", "types", "type", "dosage", "size", "capacity", "999", "refresh", "self", "selfcheck", "maintenance", "sweetener", "safety", "organic", "inbody", "worth", "it", "direct", "tank", "dose", "absorption", "ratio"]);
 // 다의어·약자로 자동 키워드가 엉뚱한 이미지를 부르는 글은 수동 교정(drum=악기, msg=약자, scale=저울 등)
 const KW_OVERRIDE = {
+  "cuchen-ricecooker-reset": "rice cooker kitchen",
+  "coway-purifier-selfcheck": "water purifier dispenser",
+  "samsung-dryer-error-code": "clothes dryer laundry room",
   // AS셀프체크 브랜드편 — 브랜드명은 스톡에 없으므로 일반 명사로 매핑
   "samsung-aircon-selfdiagnosis": "air conditioner remote control",
   "lg-whisen-aircon-error": "air conditioner indoor unit",

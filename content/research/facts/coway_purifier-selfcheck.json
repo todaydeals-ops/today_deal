@@ -1,0 +1,209 @@
+{
+  "topic": "코웨이 정수기 자가점검 — 물 안 나옴·냉온수 이상·필터 교체·렌탈 관리 경계",
+  "brand": "코웨이",
+  "article": "coway-purifier-selfcheck",
+  "captured": "2026-07-20",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "coway-water-supply-valve-check",
+      "claim": "정수기에서 물이 안 나올 때 가장 흔한 원인은 원수공급밸브가 닫혀있거나 조여있는 것이며, 밸브를 반시계 방향으로 더 이상 돌아가지 않을 때까지 완전히 열어야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코웨이 공식 렌탈샵 FAQ",
+      "source_url": "https://coway-m.com/faq/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6MTt9&page=2",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "렌탈·자가구매 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "필터 교체·수도공사·정수기 이동 후에는 특히 밸브 상태를 확인해야 한다. 밸브를 과도하게 꼬아서는 안 되며, 손가락으로 돌아가지 않을 정도면 충분하다.",
+      "cautionSource": "코웨이 공식 FAQ의 필터 교체·점검 후 필수 확인 항목"
+    },
+    {
+      "id": "coway-filter-flushing-required",
+      "claim": "정수기 필터를 새로 교체한 후에는 반드시 추출 버튼(정수 모드)을 눌러 플러싱(물 배출)을 진행해야 하며, 최소 3분 이상 물을 배출해야 필터가 제대로 활성화된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코웨이 공식 렌탈샵 FAQ",
+      "source_url": "https://coway-m.com/faq/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6MTt9&page=2",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "렌탈·자가구매 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "플러싱을 충분히 하지 않으면 물 맛이 이상하거나 공기가 섞여 나올 수 있다. 렌탈 제품은 방문 기사가 시행하지만, 자가교체 제품은 사용자가 반드시 수행해야 한다.",
+      "cautionSource": "코웨이 공식 FAQ의 필터 교체 후 필수 절차"
+    },
+    {
+      "id": "coway-cold-hot-water-led-check",
+      "claim": "냉수 또는 온수가 나오지 않을 때는 먼저 정수기 버튼의 냉수·온수 LED 불이 켜져 있는지 확인해야 하며, LED가 꺼져 있으면 해당 버튼을 누른 후 전원 리셋을 시도한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "코웨이 정수기 사용자 가이드·커뮤니티 후기 종합",
+      "source_url": "https://product-repair.com/%EC%BD%94%EC%9B%A8%EC%9D%B4-%EC%A0%95%EC%88%98%EA%B8%B0-%EB%83%89%EC%88%98%EB%A7%8C-%EC%95%88%EB%82%98%EC%98%B4-%EC%A0%84%EC%9B%90-%EB%A6%AC%EC%85%8B%C2%B7%ED%95%84%ED%84%B0-%EC%A0%90%EA%B2%80/",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "냉온수 시스템 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "LED가 켜진 상태여도 물이 안 나오면 다음 단계(전원 리셋, 원수 밸브)로 진행한다.",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "coway-power-reset-five-minutes",
+      "claim": "냉온수 이상 또는 시스템 오류 시 콘센트에서 전원 플러그를 뽑고 5분 이상 대기한 후 재연결하는 전원 리셋을 시도하는 것이 가장 효과적인 자가 복구 방법이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "코웨이 정수기 사용자 가이드·커뮤니티 후기 종합",
+      "source_url": "https://product-repair.com/%EC%BD%94%EC%9B%A8%EC%9D%B4-%EC%A0%95%EC%88%98%EA%B8%B0-%EB%83%89%EC%88%98%EB%A7%8C-%EC%95%88%EB%82%98%EC%98%B4-%EC%A0%84%EC%9B%90-%EB%A6%AC%EC%85%8B%C2%B7%ED%95%84%ED%84%B0-%EC%A0%90%EA%B2%80/",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "전 냉온수 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "누수 에러(E01)의 경우 30분 대기가 권장되며, 일반 리셋은 5분으로 충분하다. 전원을 뽑기 전에 정수기 하단과 주변을 확인하여 누수 여부를 먼저 확인할 것.",
+      "cautionSource": "사용자 가이드의 에러 복구 절차"
+    },
+    {
+      "id": "coway-hot-water-heating-time",
+      "claim": "코웨이 정수기의 온수는 버튼을 켠 후 즉시 뜨거운 물이 나오지 않으며, 약 5분 후 미지근한 물이 나오고 약 30분 후에 완전히 뜨거운 물이 나오는 것이 정상이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "코웨이 정수기 사용자 가이드·커뮤니티 후기",
+      "source_url": "https://theking.ggudol.com/235",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "온수 시스템 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "온수 버튼을 켠 직후 물이 안 나온다고 해서 고장으로 판단하면 안 된다. 처음 사용이나 장시간 사용하지 않은 후에는 20~30분 정도 기다린 후 사용해야 한다.",
+      "cautionSource": "사용자 후기의 온수 기능 설명"
+    },
+    {
+      "id": "coway-leak-detection-error-e01",
+      "claim": "정수기에서 누수를 감지하면 E01 에러가 표시되며, 원인은 대부분 밸브 노후로 인한 손상이고 전문 서비스(밸브 교체)로 해결된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "코웨이 정수기 커뮤니티·에러 해결 가이드",
+      "source_url": "https://product-repair.com/%EC%BD%94%EC%9B%A8%EC%9D%B5-%EC%A0%95%EC%88%98%EA%B8%B0-%EC%98%A8%EC%88%98-%EC%95%88%EB%82%98%EC%98%B4-%EC%9E%90%EA%B0%80%EC%88%98%EB%A6%AC%EB%B0%A9%EB%B2%95/",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "렌탈·자가구매 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "E01이 표시되면 정수기 하단과 주변 바닥의 물 고임을 확인하고, 고인 물을 완전히 닦아낸 후 전원을 30분 대기했다가 재연결하여 에러 지속 여부를 확인해야 한다. 에러가 계속되면 즉시 고객센터(1588-5200)로 연락해야 한다.",
+      "cautionSource": "사용자 에러 해결 가이드의 E01 대응 절차"
+    },
+    {
+      "id": "coway-filter-replacement-cycle",
+      "claim": "코웨이 정수기 필터의 정기 점검 주기는 2~6개월이며, 실제 필터 교체는 일반적으로 6개월~1년 주기로 진행된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코웨이 공식 웹사이트·정수기 서비스 안내",
+      "source_url": "https://www.coway.com/cowayservice/water_care",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "렌탈·자가구매 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "필터 교체 주기는 수질·사용량·제품 모델에 따라 달라질 수 있다. 렌탈 제품은 방문 기사가 일정에 맞춰 교체하고, 자가구매 제품은 정기배송 서비스로 직접 교체하거나 전문가 유상 서비스를 신청할 수 있다.",
+      "cautionSource": "코웨이 공식 서비스 안내의 필터 교체 주기"
+    },
+    {
+      "id": "coway-rental-heart-service",
+      "claim": "코웨이 렌탈 제품의 하트서비스는 2~6개월 주기의 정기 방문관리로, 전문가가 탱크·수로 살균·청소, 필터 무상 교체, 외부 점검, 아이스메이커 트레이 확인 등을 수행한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코웨이 공식 웹사이트·하트서비스 안내",
+      "source_url": "https://www.coway.com/cowayservice/water_care",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "렌탈 제품",
+        "years": "현행 렌탈 모델",
+        "region": "KR"
+      },
+      "caution": "렌탈 제품은 정기 방문관리가 의무이며, 사용자의 자가 수리 또는 부품 교체는 권장되지 않는다. 문제 발생 시 즉시 고객센터(1588-5200)로 연락해야 한다.",
+      "cautionSource": "코웨이 공식 하트서비스 정책"
+    },
+    {
+      "id": "coway-total-care-service",
+      "claim": "코웨이 렌탈 제품의 토탈케어 서비스는 렌탈 기간 중 1회 무상으로 제공되며, 내외부 부품 교체, 필터 교체, 탱크 살균, 세척 등 종합 위생관리를 포함한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코웨이 공식 렌탈샵 FAQ",
+      "source_url": "https://coway-m.com/faq?category=78gw73725T",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "렌탈 제품",
+        "years": "현행 렌탈 모델",
+        "region": "KR"
+      },
+      "caution": "토탈케어는 렌탈 계약 기간 내 1회만 무상 제공되며, 모델에 따라 서비스 내용이 다를 수 있다. 추가 서비스가 필요하면 고객센터(1588-5200)에 문의해야 한다.",
+      "cautionSource": "코웨이 공식 FAQ의 토탈케어 서비스 안내"
+    },
+    {
+      "id": "coway-rental-vs-purchase-boundary",
+      "claim": "코웨이 렌탈 제품은 방문관리를 원칙으로 하여 필터·부품 교체를 전문가가 담당하고, 자가구매 제품은 정기배송으로 필터를 자가교체하거나 멤버십 서비스로 점검·교체를 받을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코웨이 공식 웹사이트·FAQ",
+      "source_url": "https://www.coway.com/cowayservice/water_care",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "렌탈 vs 자가구매",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "렌탈 제품 사용자가 자가로 부품을 교체하거나 정수기를 분해하면 계약 위반이 될 수 있으며, 보증 상실이나 추가 요금 청구의 원인이 될 수 있다. 문제 발생 시 반드시 고객센터에 연락할 것.",
+      "cautionSource": "코웨이 공식 렌탈 서비스 정책"
+    },
+    {
+      "id": "coway-customer-center-1588-5200",
+      "claim": "코웨이 정수기 모든 서비스(계약·AS·부품 신청·기술 상담)는 고객센터 1588-5200으로 통합 신청·문의되며, 렌탈샵 별도 문의는 지역별 대리점 안내를 받은 후 진행한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코웨이 공식 웹사이트·고객센터 안내",
+      "source_url": "https://www.coway.com/cowayservice/water_care",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "렌탈·자가구매 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "고객센터는 발신전용 안내를 제공할 수 있으니, 긴급 상황(심한 누수, 전기 오류)은 신속하게 신고해야 한다.",
+      "cautionSource": "없음"
+    }
+  ]
+}

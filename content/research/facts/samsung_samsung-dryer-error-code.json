@@ -1,0 +1,230 @@
+{
+  "topic": "삼성 건조기 에러코드·모델명·자가점검",
+  "brand": "삼성",
+  "article": "samsung-dryer-error-code",
+  "captured": "2026-07-20",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "samsung-model-year-alphabet",
+      "why": "에어컨(AF/AR) 모델명 규칙. 건조기는 DV로 시작하며 알파벳 범위도 다름(에어컨: N~B, 건조기: T~DB)"
+    },
+    {
+      "id": "samsung-errorcode-digit-change",
+      "why": "에어컨 E/C 표기 자릿수 변화(E1→E101). 건조기는 완전히 다른 nC 형식(5C, SC, nC2, nC, 9C2, HC, dC, tC)으로 2자리 또는 3자리이며 C로 끝남"
+    },
+    {
+      "id": "samsung-aircon-selfdiag-entry",
+      "why": "에어컨 자가진단 메뉴 진입 방법. 건조기는 자가진단 메뉴 기능 자체가 없고 에러 표시만 제공"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "dryer-model-code-structure",
+      "claim": "삼성 건조기 모델명은 DV + 용량 + 연식(알파벳) + 기능코드(4자리 숫자) + 색상코드(2자리)의 구조로 이루어져 있다 (예: DV20B8710BV)",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 건조기 모델명 확인 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/25871",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "건조기",
+        "line": "전 라인(9kg~22kg)",
+        "years": "2020~",
+        "region": "KR"
+      },
+      "caution": "모델명은 도어 라벨(흰색 스티커) 또는 에너지 라벨에 위치. 9kg는 도어 우측 아래, 14kg 이상은 도어 하단.",
+      "cautionSource": "삼성전자서비스 solution/25871"
+    },
+    {
+      "id": "dryer-model-year-alphabet",
+      "claim": "삼성 건조기 모델명의 연식 알파벳 규칙은 T(2020~2021년), A(2021년), B(2022년), CB(2023년), DB(2024년)이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 다중 매뉴얼 및 커뮤니티 일관 정보",
+      "source_url": "https://www.samsungsvc.co.kr/solution/25871",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "건조기",
+        "line": "전 라인",
+        "years": "2020~",
+        "region": "KR"
+      },
+      "caution": "에어컨과는 완전히 다른 규칙(에어컨: N=2018, R=2019, T=2020, A=2021, B=2022). 건조기에서는 CB/DB 같은 2자리 코드도 사용. 건조기에만 적용 가능.",
+      "cautionSource": "에어컨 팩트 samsung-model-year-alphabet와의 직접 대조"
+    },
+    {
+      "id": "dryer-errorcode-system",
+      "claim": "삼성 건조기 에러코드는 8가지로 분류되며 모두 C로 끝나는 형식이다 — 5C/SC(배수 안 됨), nC2(열교환기 커버 미삽입), nC(필터 미삽입), 9C2(저전압), HC(압축기 과열), dC(도어 열림), tC5/tCS(압축기 온도 센서), tC(공기 온도 센서)",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 건조기 점검 및 에러코드 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1578050",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "건조기",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "에어컨의 E/C 형식(E101, C101) 및 구형 2자리 표기(E1, C1)와는 완전히 다른 체계다. 독자가 에어컨 에러코드 내용을 건조기에 참고하지 않도록 반드시 구분할 것.",
+      "cautionSource": "삼성전자서비스 건조기 solution/1578050 vs 에어컨 solution/37058 직접 대조"
+    },
+    {
+      "id": "dryer-lint-filter-cleaning-frequency",
+      "claim": "삼성 건조기 먼지필터는 매 건조 사용 후 매회 청소해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 건조기 청소 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41159",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "건조기",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "dryer-lint-filter-cleaning-method",
+      "claim": "삼성 건조기 먼지필터 청소는 도어를 열고 필터를 위쪽으로 잡아당겨 분리한 후, 외부와 내부 필터를 각각 분리해 먼지를 제거하고 흐르는 물에 씻은 뒤 충분히 말려서 다시 삽입한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 건조기 청소 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41159",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "건조기",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "필터를 젖은 상태로 삽입하면 공기 온도 센서(tC) 에러가 발생할 수 있다. 흐르는 물에 씻은 후 반드시 충분히 말려야 한다.",
+      "cautionSource": "삼성전자서비스 solution/41159 및 tC 에러코드 정보"
+    },
+    {
+      "id": "dryer-heatexchanger-cleaning-cycle-14kg",
+      "claim": "삼성 건조기 14kg 모델의 열교환기 청소 주기는 건조 50회마다이며, 이 시점에 디스플레이에 '열교환기 청소' 알림이 표시된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 그랑데 14kg 건조기 열교환기 청소 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28529",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "건조기",
+        "line": "14kg",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "dryer-heatexchanger-cleaning-cycle-16kg",
+      "claim": "삼성 건조기 16kg 모델의 열교환기 청소 주기는 건조 100회마다이며, 이 시점에 디스플레이에 '열교환기 청소' 알림이 표시된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 그랑데 16kg 건조기 열교환기 청소 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28175",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "건조기",
+        "line": "16kg",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "dryer-heatexchanger-cleaning-cycle-ai16kg",
+      "claim": "삼성 그랑데 AI 16kg 건조기의 열교환기 청소 주기는 건조 300회마다이며, 이 시점에 디스플레이에 '열교환기 청소' 알림이 표시된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 그랑데 AI 16kg 건조기 열교환기 및 3차필터 청소 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28789",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "건조기",
+        "line": "그랑데 AI 16kg",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "dryer-heatexchanger-cleaning-method",
+      "claim": "삼성 건조기 열교환기 청소는 전원을 꽂은 상태에서 진행하며, 우측 하단의 전면 뚜껑을 누르고 좌우 잠금장치를 풀어 내부 커버를 꺼낸 후 청소용 브러시로 위아래로 긁어 먼지를 제거한다. 진공청소기로 제거된 먼지를 수집한 후 30분에서 1시간 열풍으로 환기시킨 다음 다시 설치한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 건조기 청소 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41159",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "건조기",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "청소 후 열교환기 내부 커버를 바로 설치하지 말고 반드시 30분~1시간 환기시켜야 한다. 너무 빨리 설치하면 열교환기 내부에 습기가 남아 tC5/tCS(압축기 온도 센서) 에러가 발생할 수 있다.",
+      "cautionSource": "삼성전자서비스 solution/41159 및 solution/28789"
+    },
+    {
+      "id": "dryer-water-tank-management",
+      "claim": "삼성 건조기 물통(응축수 저장소)은 매 건조 사용 후 매회 비워야 하며, 디스플레이에 '물 비움' 알림이 표시되면 즉시 비워야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 건조기 물통 분리 청소 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41102",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "건조기",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "dryer-drainage-hose-check",
+      "claim": "삼성 건조기 직배수 설치 시 배수펌프 작동을 확보하려면 배수호스의 꺾임, 끝부분이 물에 잠금, 하수구에 너무 깊이 박혀 있는지를 점검해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 건조 동작 중 시간 변경 및 배수 관련 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41189",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "건조기",
+        "line": "직배수 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "호스 호수(끝부분)가 물에 잠겨 있으면 배수 역압이 발생해 배수펌프 에러(5C/SC)가 나타날 수 있다. 하수구 끝에서 5~10cm 위에 위치시켜야 한다.",
+      "cautionSource": "삼성전자서비스 solution/41189"
+    },
+    {
+      "id": "dryer-drying-time-extended-check",
+      "claim": "삼성 건조기 건조 시간이 평소보다 길어진 경우 점검 항목은 주변 온도(추우면 증가), 세탁기 탈수 강도, 먼지필터 막힘, 열교환기 막힘 순서로 확인해야 한다. 해결 방법은 세탁 후 탈수를 최강으로 재설정하거나 한 번 더 진행하고, 먼지필터를 깨끗이 청소하고 충분히 말려 삽입한 후, 열교환기를 청소하는 순서다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 건조 동작 중 시간 변경 및 건조 성능 개선 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41189",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "건조기",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "건조 중 드럼 내부 온도가 천천히 올라가는 원인이 주변 기온일 수 있으므로, 실내 온도가 20℃ 이상인지 먼저 확인할 것. 필터는 말라야 효율이 좋으므로 습한 상태로 삽입하면 안 된다.",
+      "cautionSource": "삼성전자서비스 solution/41189"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "topic": "쿠첸(CUCHEN) 밥솥 초기화·에러 표시 대처",
+  "brand": "쿠첸",
+  "article": "cuchen-ricecooker-reset",
+  "captured": "2026-07-20",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "cuckoo-error-codes",
+      "why": "쿠쿠(Cuckoo) 에러코드는 쿠첸(CUCHEN)과 다른 브랜드이므로 재사용 불가. 검색 결과 대부분이 쿠쿠 정보로 혼동됨"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "cuchen-customer-center-phone",
+      "claim": "쿠첸 공식 고객센터 전화번호는 1577-2797이며, 평일 오전 9시부터 오후 6시, 토요일 오전 9시부터 오후 1시까지 운영된다. 일요일·공휴일 휴무",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "쿠첸 고객센터 공식 안내",
+      "source_url": "https://www.cuchenmall.co.kr",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "쿠첸",
+        "category": "밥솥",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "고객센터 외 AS 서비스센터는 전국 약 81곳 운영 중이며, 홈페이지의 'A/S센터 찾기'에서 위치·연락처 확인 가능",
+      "cautionSource": "쿠첸 공식 안내"
+    },
+    {
+      "id": "cuchen-power-reset-procedure",
+      "claim": "쿠첸 밥솥의 전원 리셋은 전원 코드를 빼고 약 1분간 기다린 후 다시 연결하는 방식으로, 일시적 시스템 오류로 인한 잠금 상태 해제에 효과적이다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 후기 및 커뮤니티 경험담",
+      "source_url": "https://higohigo.co.kr/entry/%EC%BF%A0%EC%B2%B8-%EC%95%95%EB%A0%A5-%EB%B0%A5%EC%86%A5-%EC%B4%88%EA%B8%B0%ED%99%94-%ED%9B%84%EA%B8%B0-%EC%A0%9C%ED%92%88-%EB%A9%94%EB%89%B4%EC%96%BC-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EB%B0%9B%EB%8A%94-%EB%B0%A9%EB%B2%95",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "쿠첸",
+        "category": "밥솥",
+        "line": "전자동 전기압력밥솥",
+        "years": "2010년대~",
+        "region": "KR"
+      },
+      "caution": "모델별로 효과가 다를 수 있으므로, 전원 리셋 후에도 같은 증상이 지속되면 제품 매뉴얼을 확인하거나 고객센터(1577-2797)에 문의할 것",
+      "cautionSource": "조사 과정에서 모델별 차이 언급 다수"
+    },
+    {
+      "id": "cuchen-initialization-basic-steps",
+      "claim": "쿠첸 밥솥의 기본 초기화는 대기 상태에서 설정(또는 메뉴) 선택 후 초기화 메뉴를 찾아 OK·시작·확인 버튼을 누르는 방식이다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 후기 및 제품 매뉴얼 다운로드 안내",
+      "source_url": "https://wiz.credtris.com/%EC%9A%B0%EB%A6%AC-%EC%A7%91-%EC%BF%A0%EC%B2%B8-%EB%B0%A5%EC%86%A5-%EC%9E%A0%EA%B8%B8-%EA%B8%B0%EB%8A%A5-%ED%95%B4%EC%A0%9C%ED%95%98%EB%8A%94-%EC%89%AC%EC%9A%B4-%EB%B0%A9%EB%B2%95/",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "쿠첸",
+        "category": "밥솥",
+        "line": "다이얼식·터치식 전자동",
+        "years": "2010년대~",
+        "region": "KR"
+      },
+      "caution": "쿠첸 밥솥은 모델마다 초기화 절차가 다를 수 있으므로, 정확한 방법은 제품 매뉴얼을 참고하거나 고객센터에 모델명을 제시하고 문의해야 한다. 매뉴얼 분실 시 쿠첸 홈페이지 '제품 매뉴얼' 섹션에서 모델별로 다운로드 가능",
+      "cautionSource": "검색 결과에서 '모델마다 다르다'는 언급 반복"
+    },
+    {
+      "id": "cuchen-packing-seal-self-check",
+      "claim": "쿠첸 밥솥의 자가점검 시 확인해야 할 주요 사항은 고무 패킹의 상태(늘어짐, 딱딱함, 찢어짐 여부), 배출구(노즐) 내부의 이물·녹·파손 여부다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 후기 및 패킹 교체 경험담",
+      "source_url": "https://home.adsensekor.com/294",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "쿠첸",
+        "category": "밥솥",
+        "line": "압력밥솥 (고무패킹 장착 모든 모델)",
+        "years": "2010년대~",
+        "region": "KR"
+      },
+      "caution": "증기가 옆으로 새면 패킹 문제, 배출구로만 빠지면 압력센서 문제, 배출 알림 후 배출이 안 되면 배출구 막힘 문제일 수 있다. 패킹 청소 시 중성세제와 부드러운 솔 사용, 찐 밥풀 제거는 베이킹소다 분말로",
+      "cautionSource": "사용자 경험담 (공식 문서 확인 불가)"
+    },
+    {
+      "id": "cuchen-packing-replacement-alignment",
+      "claim": "쿠첸 밥솥 고무 패킹 교체 시 내솥 뚜껑에 있는 눈금과 패킹에 있는 돌기를 정확히 맞춘 후, 패킹의 바깥쪽면을 눌러 부착해야 한다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "고무패킹 교체 경험담 (쿠첸 CJS-FA1002DV 모델)",
+      "source_url": "https://bebeyam.com/%EC%A0%84%EA%B8%B0%EB%B0%A5%EC%86%A5-%EA%B3%A0%EB%AC%B4%ED%8C%A8%ED%82%B9-%EA%B5%90%EC%B2%B8-%EC%BF%A0%EC%B2%B8-cjs-fa1002dv/",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "쿠첸",
+        "category": "밥솥",
+        "line": "고무패킹식 압력밥솥",
+        "years": "2000년대~",
+        "region": "KR"
+      },
+      "caution": "패킹 교체 후 뚜껑을 닫을 때 '딱' 소리가 나야 정상이다. 또한 모델마다 패킹 규격이 다를 수 있으므로 정확한 부품 번호 확인 후 구매할 것",
+      "cautionSource": "경험담"
+    },
+    {
+      "id": "cuchen-error-code-not-confirmed",
+      "claim": "쿠첸 밥솥의 공식 에러코드 체계를 확인하지 못했다. 인터넷상 정보는 대부분 쿠쿠(Cuckoo) 에러코드로 혼동되어 있다",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "웹 검색 6회 시도 결과",
+      "source_url": "https://www.cuchen.com/",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "쿠첸",
+        "category": "밥솥",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "에러 표시가 나타나면 쿠첸 공식 고객센터(1577-2797)에 모델명·에러 표시 내용을 전달하고 정확한 의미와 해결 방법을 문의해야 한다. 공식 사용설명서(쿠첸 홈페이지 제품 매뉴얼 다운로드)에 에러코드가 기재되어 있을 가능성 높음",
+      "cautionSource": "조사 과정의 제약"
+    }
+  ]
+}
