@@ -51,6 +51,28 @@ const file = process.argv[2];
 if (!file) { console.error("입력 JSON 파일 경로 필요"); process.exit(1); }
 const data = JSON.parse(fs.readFileSync(file, "utf8"));
 const articles = Array.isArray(data) ? data : data.articles ?? [];
+
+// 재적재(수정본 덮어쓰기) 시 기존 RAIL의 images를 잃지 않도록 미리 읽어둔다.
+// ⚠️ 이 보존이 없으면 글을 손볼 때마다 이미지가 사라져 재수집해야 한다.
+const keepImages = new Map();
+{
+  const slugs = articles.map((a) => a.slug).filter(Boolean);
+  if (slugs.length) {
+    const q = `slug=in.(${slugs.map((s) => `"${s}"`).join(",")})&select=slug,body_html`;
+    try {
+      const res = await fetch(`${SUPA}/rest/v1/magazine?${q}`, { headers: { apikey: KEY, Authorization: `Bearer ${KEY}` } });
+      for (const row of (await res.json()) ?? []) {
+        const m = String(row.body_html || "").match(/^\s*<!--RAIL:([\s\S]*?)-->/);
+        if (!m) continue;
+        try {
+          const rail = JSON.parse(m[1]);
+          if (Array.isArray(rail.images) && rail.images.length) keepImages.set(row.slug, rail.images);
+        } catch { /* 무시 */ }
+      }
+      if (keepImages.size) console.log(`기존 이미지 보존: ${keepImages.size}편`);
+    } catch { /* 조회 실패 시 그냥 진행 */ }
+  }
+}
 const VALID_CORNERS = ["smartguide", "factcheck", "trendlab", "repair"];
 const rows = [];
 for (const a of articles) {
@@ -59,7 +81,11 @@ for (const a of articles) {
   rows.push({
     slug: a.slug, corner: a.corner, field: a.field || "리빙·주방", title: a.title, subtitle: a.subtitle || "",
     excerpt: a.excerpt || "", read_min: a.read_min || 8,
-    body_html: `<!--RAIL:${JSON.stringify({ summary: a.summary || [], callout: a.callout || "", faq: a.faq || [], sources: a.sources || [], tags: a.tags || [] })}-->\n` + main.join("\n").trim(),
+    body_html: `<!--RAIL:${JSON.stringify({
+      summary: a.summary || [], callout: a.callout || "", faq: a.faq || [],
+      sources: a.sources || [], tags: a.tags || [],
+      ...(a.images?.length ? { images: a.images } : keepImages.has(a.slug) ? { images: keepImages.get(a.slug) } : {}),
+    })}-->\n` + main.join("\n").trim(),
     closing: a.closing || "", is_published: false, created_at: a.date || new Date().toISOString(),
   });
 }
