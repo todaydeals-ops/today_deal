@@ -10,6 +10,10 @@
       "schedule": "30 22 * * *"
     },
     {
+      "path": "/api/cron/magazine-release",
+      "schedule": "0 22 * * *"
+    },
+    {
       "path": "/api/cron/daily-report",
       "schedule": "0 23 * * *"
     }
