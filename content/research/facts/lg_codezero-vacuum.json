@@ -1,0 +1,351 @@
+{
+  "topic": "LG 코드제로 무선청소기 흡입력 저하·작동 불량 자가점검",
+  "brand": "LG",
+  "article": "lg-codezero-vacuum",
+  "captured": "2026-07-20",
+  "reused_facts": [
+    "dyson-filter-not-sealed-motor-damage"
+  ],
+  "declined_facts": [
+    {
+      "id": "dyson-filter-cleaning-frequency",
+      "why": "다이슨은 LCD 자동 알림, LG는 수동 권장(월 1회 이상)으로 신호 방식이 다름"
+    },
+    {
+      "id": "dyson-airway-blockage-7vibrations",
+      "why": "다이슨은 7번 진동 경고, LG는 우-웅 소리 + 표시등 알림으로 표시 방식이 다름"
+    },
+    {
+      "id": "dyson-battery-low-3vibrations",
+      "why": "다이슨은 3번 진동, LG는 LED 표시등으로 배터리 신호 방식이 다름"
+    },
+    {
+      "id": "dyson-dust-bin-overfill-suction-loss",
+      "why": "LG는 올인원타워 자동 비움 기능이 있어 다이슨과 사용 경험이 다름"
+    },
+    {
+      "id": "dyson-brush-bar-cleaning-method",
+      "why": "LG 회전솔은 물세척 금지 주의사항이 있어 다이슨과 청소 방식이 다름"
+    },
+    {
+      "id": "dyson-filter-cleaning-procedure",
+      "why": "다이슨은 따뜻한 수돗물 명시, LG 공식 문서는 수온 지정 없이 일반 '물세척' 권장"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "lg-codezero-model-year-prefix",
+      "claim": "LG 코드제로 모델명은 AU/AO(오브제 컬렉션 A9S) · AT/AS(일반 A9S) · 기타로 구분되며, 24년형까지 A9S·A9 air로 명칭, 25년형부터 숫자로 구분",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 코드제로 모델명 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152163870193",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9 · A9S · A9 air",
+        "years": "2017~현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-codezero-suction-weak-dust-bin-full",
+      "claim": "LG 코드제로 먼지통이 가득 차면 흡입력이 급감하므로, 월 1회 이상 큰 먼지 분리 장치를 분리해 물로 씻어 관리해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 코드제로 A9 흡입력 약할 때 자가점검 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150356356445",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9 · A9S",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "먼지통 내부와 회전솔은 물로 세척하면 안 된다"
+    },
+    {
+      "id": "lg-codezero-suction-weak-battery-low",
+      "claim": "LG 코드제로 배터리가 부족하면 LED 표시창에 한 칸만 불이 들어오며 흡입력이 약해질 수 있으므로 충전 필요",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 코드제로 A9 흡입력 약할 때 자가점검 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150356356445",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9 · A9S",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-codezero-suction-weak-airway-blockage",
+      "claim": "LG 코드제로에서 호스, 파이프, 흡입구 등이 휴지·스타킹·비닐봉지 같은 이물질로 막히면 흡입력이 급감하고 '우-웅 우-웅' 소리와 함께 이물 막힘 알림이 표시창에 표시된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 코드제로 A9 흡입력 약할 때 자가점검 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150356356445",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9 · A9S",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "이물 막힘 알림이 나타나면 배터리를 분리 후 흡입구 버튼을 눌러 빼낸 다음 이물질을 제거해야 한다"
+    },
+    {
+      "id": "lg-codezero-suction-weak-filter-dirty",
+      "claim": "LG 코드제로의 배기 필터(HEPA)와 프리필터가 먼지로 오염되면 흡입력이 약해지므로, 월 1회 이상 필터를 물로 세척해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 코드제로 A9·A9S 필터 관리법 가이드",
+      "source_url": "https://www.lge.co.kr/story/user-guide/thinq-discover-cleaning-014",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9 · A9S",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-codezero-filter-cleaning-drying-24hours",
+      "claim": "LG 코드제로 필터 물세척 후에는 손으로 탈탈 털어 물기를 제거한 다음, 통풍이 잘 되는 그늘에서 최소 24시간 이상 완전히 건조해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 코드제로 A9·A9S 필터 관리법 가이드",
+      "source_url": "https://www.lge.co.kr/story/user-guide/thinq-discover-cleaning-014",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9 · A9S",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "물기가 남으면 냄새와 모터 손상의 원인이 된다. 필터 건조 중에는 헤어드라이어·전자레인지·직접 열원을 사용하면 안 된다.",
+      "cautionSource": "LG 코드제로 A9·A9S 필터 관리법 가이드"
+    },
+    {
+      "id": "lg-codezero-prefilter-critical",
+      "claim": "LG 코드제로 프리필터(마이크로필터)를 제거하고 사용하면 모터와 배기필터가 손상되므로, 반드시 장착 상태로 운영해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 코드제로 필터 관리법 가이드",
+      "source_url": "https://www.lge.co.kr/story/user-guide/thinq-discover-cleaning-014",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9 · A9S",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "프리필터는 큰 먼지를 1차 필터링하고, HEPA 배기필터의 부담을 줄인다. 미장착 시 모터 손상이 즉각적일 수 있다."
+    },
+    {
+      "id": "lg-codezero-exhaust-filter-cleaning-procedure",
+      "claim": "LG 코드제로 배기 필터 청소는 필터를 시계 반대 방향으로 분리한 후, 먼지를 털거나 흐르는 물에 씻은 후 그늘에서 물기를 완전히 말려 시계 방향으로 재조립한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 코드제로 A9 배기 필터 청소 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150408463388",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9 · A9S",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "배기 필터 재조립 시 본체의 흰색 원 표시와 필터쪽의 흰색 원 표시가 일직선이 되도록 맞춘 후 시계 방향으로 회전해 완전히 체결해야 한다. 체결 실패 시 필터가 제자리에 있지 않아 보호 경고가 작동한다."
+    },
+    {
+      "id": "lg-codezero-charging-terminal-dirty",
+      "claim": "LG 코드제로 배터리 충전이 안 될 때 가장 흔한 원인은 충전 단자에 먼지나 머리카락이 끼어 있어 접촉을 방해하는 것이므로, 마른 수건으로 닦거나 부드러운 솔로 이물질을 제거해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 코드제로 A9 충전 안 될 때 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150356416630",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9 · A9S",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "충전 단자를 청소할 때 무리하게 힘을 주면 단자가 휘어져 망가질 수 있으므로 부드럽게 진행해야 한다"
+    },
+    {
+      "id": "lg-codezero-charging-dock-adapter-check",
+      "claim": "LG 코드제로 충전이 안 될 때 충전대 뒷면의 어댑터 연결 상태와 전원 플러그 연결을 먼저 확인해야 한다. 완전히 분리된 상태에서 어댑터가 끼워져 있는지 살펴봐야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 코드제로 A9 충전 안 될 때 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150356416630",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9 · A9S",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-codezero-charging-temperature-limit",
+      "claim": "LG 코드제로는 5°C 이하인 곳에서는 충전이 안 될 수 있으므로, 실내의 상온(15°C 이상)에서 충전해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 코드제로 A9 충전 안 될 때 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150356416630",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9 · A9S",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "배터리는 온도에 민감한 화학 장치이다. 겨울철 베란다나 야외에서는 충전을 피하고, 실내 온난한 환경에서만 충전해야 한다."
+    },
+    {
+      "id": "lg-codezero-charging-led-indicator",
+      "claim": "LG 코드제로 충전 시작 시 충전대 LED 표시창의 램프가 깜박이면서 시작되고, 완료되면 램프 전체에 불이 켜진다. 깜박임이 없으면 단자 재접촉을 시도해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 코드제로 A9 충전 안 될 때 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150356416630",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9 · A9S",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-codezero-allinone-tower-emptying-manual-mode",
+      "claim": "LG 올인원타워 먼지 비우기는 기본 설정이 수동비움 모드(Manual)로, 청소기를 충전대에 꽂은 후 원할 때 시작/정지 버튼을 눌러 먼지를 비운다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 올인원타워 먼지 비움 조작법 및 상태 표시 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152048348545",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9S + 올인원타워",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-codezero-allinone-tower-emptying-auto-mode",
+      "claim": "LG 올인원타워는 시작/정지 버튼을 3초간 누르면 자동비움 모드(Auto)로 전환되어, 청소 후 충전대에 꽂으면 자동으로 먼지를 비운다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 올인원타워 먼지 비움 조작법 및 상태 표시 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152048348545",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9S + 올인원타워",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-codezero-allinone-tower-led-indicators",
+      "claim": "LG 올인원타워 상태 표시등은 먼지비움 아이콘(빨간색 깜박임=봉투 교체, 켜짐=비움 중, 꺼짐=비움 완료)과 보조배터리 아이콘(깜박임=충전 중, 켜짐=충전 완료)으로 표시된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 올인원타워 먼지 비움 조작법 및 상태 표시 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152048348545",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9S + 올인원타워",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-codezero-allinone-tower-emptying-failure-blockage",
+      "claim": "LG 올인원타워에서 먼지 비우기가 안 될 때 원인은 간편 비움 시스템 레버 상단·하단에 먼지가 끼어 있거나, 먼지통과 큰 먼지 분리망 사이에 단단한 이물이 끼어 있어 레버가 내려가지 않는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 올인원타워 먼지 비우기 문제 해결 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152048348545",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9S + 올인원타워",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "먼지비움 시 간편 비움 시스템 레버를 먼저 여러 번 눌러 먼지통 안의 먼지들을 압축한 후, 먼지통 덮개 분리 버튼을 눌러 배출해야 한다."
+    },
+    {
+      "id": "lg-codezero-runtime-battery-depletion-causes",
+      "claim": "LG 코드제로 배터리 작동 시간이 평소보다 짧아진 경우, 필터가 오염되었거나 필터가 제자리에 있지 않은 것이 원인일 수 있다. 배터리를 완전히 충전해도 사용 시간이 지나치게 짧으면 배터리 수명이 다 한 것으로, 교체가 필요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 코드제로 A9 배터리 교체 주기 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150373882418",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9 · A9S",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-codezero-battery-replacement-availability",
+      "claim": "LG 코드제로 배터리 교체는 LG전자 홈페이지의 [케어용품/소모품샵]에서 구매하거나, 가까운 LG전자 서비스센터에서 진행할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 코드제로 A9 배터리 교체 주기 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150373882418",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 A9 · A9S",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-codezero-customer-center-phone",
+      "claim": "LG 코드제로의 모든 서비스(AS·상담·점검)는 고객센터 1544-7777로 통합 문의된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 코드제로 지원 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150356416630",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "무선청소기",
+        "line": "코드제로 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    }
+  ]
+}

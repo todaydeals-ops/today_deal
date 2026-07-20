@@ -1,0 +1,200 @@
+{
+  "topic": "위니아 딤채 김치냉장고 에러·냉각 불량 자가점검",
+  "brand": "위니아",
+  "article": "winia-kimchi-fridge",
+  "captured": "2026-07-20",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "lg-fridge-cooling-weak-ventilation-gap",
+      "why": "LG 냉장고 환기 기준(뒷면 10cm, 옆면 5cm)이며, 위니아 김치냉장고는 구조·용도가 다르므로 수치 그대로 적용 불가"
+    },
+    {
+      "id": "lg-fridge-power-outage-recovery-time",
+      "why": "LG 냉장고 정전 복구 시간(24~48시간)이며, 위니아 딤채는 구조가 다르고 복구 시간이 더 짧음(약 10분)"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "winia-dimchae-errorcode-c",
+      "claim": "위니아 딤채 김치냉장고 C 에러코드는 온도 센서 이상, 내부 통신 이상, 습기 영향 등을 나타내며, 도어가 완전히 닫혔는지 확인하고 내부 결로를 체크한 후 전원을 재연결해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위니아 서비스센터 — 딤채 김치냉장고 고장진단 에러코드",
+      "source_url": "https://dimchae.winia-service-center.com/error/",
+      "checked": "2026-07-20",
+      "scope": { "brand": "위니아", "category": "냉장고", "line": "딤채 김치냉장고", "years": "전 연식", "region": "KR" },
+      "caution": "센서 이상이 의심되면 전문 점검이 필요하다.",
+      "cautionSource": "위니아 공식 에러코드 가이드"
+    },
+    {
+      "id": "winia-dimchae-errorcode-e-ea",
+      "claim": "위니아 딤채 김치냉장고 E, EA, E1, E2 에러코드는 냉각 관련 부품(센서, 압축기, 제상 시스템 등) 상태를 점검해야 하며, 대부분 전문가 점검이 필요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위니아 서비스센터 — 딤채 김치냉장고 고장진단 에러코드",
+      "source_url": "https://dimchae.winia-service-center.com/error/",
+      "checked": "2026-07-20",
+      "scope": { "brand": "위니아", "category": "냉장고", "line": "딤채 김치냉장고", "years": "전 연식", "region": "KR" },
+      "caution": "이 에러들이 표시되면 지체하면 음식물이 상하거나 냉장 기능 자체가 멈출 수 있으므로 빨리 전문 점검을 받아야 한다.",
+      "cautionSource": "위니아 공식 에러코드 가이드"
+    },
+    {
+      "id": "winia-dimchae-errorcode-f-rf",
+      "claim": "위니아 딤채 김치냉장고 F, rF 에러코드는 팬 모터 이상을 나타내며, 종종 팬 주변에 과도한 성에(얼음)가 쌓여 회전이 원활하지 않은 경우가 원인이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위니아 서비스센터 — 딤채 김치냉장고 고장진단 에러코드",
+      "source_url": "https://dimchae.winia-service-center.com/error/",
+      "checked": "2026-07-20",
+      "scope": { "brand": "위니아", "category": "냉장고", "line": "딤채 김치냉장고", "years": "전 연식", "region": "KR" },
+      "caution": "성에가 원인이면 전원을 끄고 도어를 열어 최소 24시간 이상 자연 해제를 기다린 후 물기를 제거하면 개선될 수 있다.",
+      "cautionSource": "위니아 공식 에러코드 가이드에서 대처 방법 명시"
+    },
+    {
+      "id": "winia-dimchae-power-reset-recovery",
+      "claim": "위니아 딤채 김치냉장고에서 일시적 오류가 발생하면 전원 코드를 분리한 후 5~10분 대기했다가 다시 연결하는 방식으로 초기화할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위니아 서비스센터 — 딤채 김치냉장고 고장진단 에러코드",
+      "source_url": "https://dimchae.winia-service-center.com/error/",
+      "checked": "2026-07-20",
+      "scope": { "brand": "위니아", "category": "냉장고", "line": "딤채 김치냉장고", "years": "전 연식", "region": "KR" },
+      "caution": "같은 증상이 반복되면 전문 점검을 받아야 한다.",
+      "cautionSource": "위니아 공식 에러코드 가이드"
+    },
+    {
+      "id": "winia-dimchae-cooling-weak-ventilation-rear",
+      "claim": "위니아 딤채 김치냉장고 냉기가 약할 때 우선 점검해야 할 항목은 제품 뒷면 통풍구에 먼지나 얼음이 쌓여 있는지 확인하는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위니아 — 딤채 김치냉장고 냉각 문제 자가점검",
+      "source_url": "https://m.winiaaid.com/solution/selfList",
+      "checked": "2026-07-20",
+      "scope": { "brand": "위니아", "category": "냉장고", "line": "딤채 김치냉장고 전 모델", "years": "전 연식", "region": "KR" },
+      "caution": "먼지가 있으면 마른 천으로 닦고, 얼음이 있으면 자연 해제를 기다린 후 제거해야 한다. 뒷면 기계실 덮개의 먼지도 함께 제거하는 것이 효과적이다.",
+      "cautionSource": "위니아 공식 자가점검 가이드"
+    },
+    {
+      "id": "winia-dimchae-cooling-weak-temperature-dial",
+      "claim": "위니아 딤채 김치냉장고 냉기가 약할 때는 온도 다이얼이 의도한 위치에 있는지 먼저 확인해야 하며, 의도치 않게 높게 설정되어 있는 경우도 빈번하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위니아 — 딤채 김치냉장고 냉각 문제 자가점검",
+      "source_url": "https://m.winiaaid.com/solution/selfList",
+      "checked": "2026-07-20",
+      "scope": { "brand": "위니아", "category": "냉장고", "line": "딤채 김치냉장고 전 모델", "years": "전 연식", "region": "KR" },
+      "caution": "온도 설정은 제품마다 다르므로 설명서를 참고해야 한다.",
+      "cautionSource": "위니아 공식 자가점검 가이드"
+    },
+    {
+      "id": "winia-dimchae-cooling-weak-spacing",
+      "claim": "위니아 딤채 김치냉장고 냉기가 약할 때는 제품이 벽면에 너무 가까워 통풍이 막히지 않았는지 확인하고 주변 공간을 충분히 확보해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위니아 — 딤채 김치냉장고 냉각 문제 자가점검",
+      "source_url": "https://m.winiaaid.com/solution/selfList",
+      "checked": "2026-07-20",
+      "scope": { "brand": "위니아", "category": "냉장고", "line": "딤채 김치냉장고 전 모델", "years": "전 연식", "region": "KR" },
+      "caution": "통풍이 막히면 압축기 과열로 냉각 성능이 저하된다.",
+      "cautionSource": "위니아 공식 자가점검 가이드"
+    },
+    {
+      "id": "winia-dimchae-cooling-weak-internal-frost",
+      "claim": "위니아 딤채 김치냉장고 내부 성에(얼음)가 과도하게 끼면 냉기 순환과 팬 작동을 방해하며, 이 경우 전원을 끈 뒤 성에를 완전히 녹이고 물기를 닦은 후 재가동해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위니아 — 딤채 김치냉장고 냉각 문제 자가점검",
+      "source_url": "https://m.winiaaid.com/solution/selfList",
+      "checked": "2026-07-20",
+      "scope": { "brand": "위니아", "category": "냉장고", "line": "딤채 김치냉장고 전 모델", "years": "전 연식", "region": "KR" },
+      "caution": "성에 제거 과정에서 내부 부품을 손상하지 않도록 주의해야 한다.",
+      "cautionSource": "위니아 공식 자가점검 가이드"
+    },
+    {
+      "id": "winia-dimchae-kimchi-preservation-standard-temperature",
+      "claim": "위니아 딤채 김치냉장고의 표준 김치 보관 온도는 약 -1°C 전후이며, 이 온도에서 김치가 얼지 않으면서도 유산균 활동을 억제하여 오랫동안 신선함을 유지한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위니아 — 딤채 김치냉장고 온도 설정 가이드",
+      "source_url": "https://m.winiaaid.com/solution/selfList",
+      "checked": "2026-07-20",
+      "scope": { "brand": "위니아", "category": "냉장고", "line": "딤채 김치냉장고 전 모델", "years": "전 연식", "region": "KR" },
+      "caution": "이 온도는 표준 기준이며, 실제 설정은 제품의 온도 조절 방식(다이얼/LED)에 따라 다를 수 있다.",
+      "cautionSource": "위니아 공식 온도 설정 가이드에서 표준 온도 범위 명시"
+    },
+    {
+      "id": "winia-dimchae-structured-cooling-lid-type",
+      "claim": "위니아 딤채 뚜껑형 김치냉장고는 '직접 냉각 방식'을 사용하며, 저장실 내부 벽면 자체에 냉각 파이프를 촘촘하게 감아 벽면 전체를 직접 차갑게 만든다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위니아 — 딤채 뚜껑형 제품 특성",
+      "source_url": "https://www.winia.com/product/main?TYPE=2",
+      "checked": "2026-07-20",
+      "scope": { "brand": "위니아", "category": "냉장고", "line": "딤채 뚜껑형", "years": "전 연식", "region": "KR" },
+      "caution": "직접 냉각 방식은 성에가 쉽게 쌓일 수 있으므로 정기적인 성에 제거가 필요하다.",
+      "cautionSource": "위니아 공식 제품 정보"
+    },
+    {
+      "id": "winia-dimchae-structured-cooling-stand-type",
+      "claim": "위니아 딤채 스탠드형 김치냉장고는 '4by4 독립 냉각 시스템'을 사용하며, 4개 저장실에 각각 전용 냉각기를 장착하여 온도를 독립적으로 관리한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위니아 — 딤채 스탠드형 제품 특성",
+      "source_url": "https://www.winia.com/product/view?GNB_SEQ=2070&PRODUCT_SEQ=3263",
+      "checked": "2026-07-20",
+      "scope": { "brand": "위니아", "category": "냉장고", "line": "딤채 스탠드형", "years": "전 연식", "region": "KR" },
+      "caution": "각 저장실의 온도를 독립 제어할 수 있으므로 여러 식품을 보관할 때 활용도가 높다.",
+      "cautionSource": "위니아 공식 제품 정보"
+    },
+    {
+      "id": "winia-dimchae-airflow-difference-lid-stand",
+      "claim": "위니아 딤채 뚜껑형은 위로 열리므로 문을 열어도 냉기가 저장실 내부에 머물러 있지만, 스탠드형은 앞으로 열리므로 문을 여는 순간 차가운 냉기가 바닥으로 쏟아져 내린다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위니아 — 딤채 뚜껑형 vs 스탠드형 구조 특성",
+      "source_url": "https://www.winia.com/product/main?TYPE=2",
+      "checked": "2026-07-20",
+      "scope": { "brand": "위니아", "category": "냉장고", "line": "딤채 뚜껑형·스탠드형", "years": "전 연식", "region": "KR" },
+      "caution": "이러한 구조 차이로 인해 뚜껑형이 냉기 보존에 더 유리하고, 김치 숙성·장기 보관에 적합하다.",
+      "cautionSource": "위니아 공식 제품 정보"
+    },
+    {
+      "id": "winia-dimchae-post-power-outage-recovery",
+      "claim": "위니아 딤채 김치냉장고는 정전이나 부품 교체 후 약 10분 대기하면 정상 작동 여부를 확인할 수 있으며, 초기에 팬이 돌더라도 컴프레서(압축기)가 정상 작동하기까지 시간이 더 필요할 수 있다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 경험 기반 보고 — 정전 후 부품 교체 복구 사례",
+      "source_url": "https://www.milemoa.com/bbs/board/11621655",
+      "checked": "2026-07-20",
+      "scope": { "brand": "위니아", "category": "냉장고", "line": "딤채 김치냉장고", "years": "전 연식", "region": "KR" },
+      "caution": "10분 후 팬만 돌고 냉기가 없으면 컴프레서 시작을 기다려야 한다. 정확한 복구 절차는 위니아 고객센터(1588-9588)에 문의할 것.",
+      "cautionSource": "사용자 후기 및 기술자 조언 기반. 공식 매뉴얼에서 명시된 복구 시간은 추가 확인 필요."
+    },
+    {
+      "id": "winia-dimchae-customer-service-phone",
+      "claim": "위니아 딤채 고객센터 대표 전화번호는 1588-9588이며, 평일 09:00~18:00, 토요일 09:00~13:00에 운영되고 공휴일·일요일은 휴무다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위니아 고객서비스 — 고객센터 연락처 및 운영 시간",
+      "source_url": "https://www.winia.com/customer/serviceMap",
+      "checked": "2026-07-20",
+      "scope": { "brand": "위니아", "category": "냉장고", "line": "딤채 김치냉장고 전 모델", "years": "전 연식", "region": "KR" },
+      "caution": "추가 고객센터: 제품 구입 안내 1588-9589, 소모품 구입 안내 1588-9577. 온라인 AS 신청도 위니아에이드 홈페이지에서 가능하다.",
+      "cautionSource": "위니아 공식 고객센터 안내"
+    },
+    {
+      "id": "winia-dimchae-storage-setting-quality-issue",
+      "claim": "위니아 딤채 김치냉장고에서 김치 품질 문제(빨리 얼거나 빨리 상함)가 발생하면 반드시 기기 고장이 아니며, 보관 온도 설정(표준/강/약)을 염분 함량과 저장 조건에 맞게 조정해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위니아 서비스센터 — 딤채 김치냉장고 고장진단 에러코드",
+      "source_url": "https://dimchae.winia-service-center.com/error/",
+      "checked": "2026-07-20",
+      "scope": { "brand": "위니아", "category": "냉장고", "line": "딤채 김치냉장고 전 모델", "years": "전 연식", "region": "KR" },
+      "caution": "제품 설명서에서 각 모드별 권장 사항을 확인하고 단계적으로 조절해야 한다.",
+      "cautionSource": "위니아 공식 에러코드 가이드에서 명시"
+    }
+  ]
+}

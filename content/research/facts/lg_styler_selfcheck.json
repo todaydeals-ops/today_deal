@@ -1,0 +1,378 @@
+{
+  "topic": "LG 스타일러(의류관리기) 자가점검 — 물통·급배수·냄새·구김 제거 불량",
+  "brand": "LG",
+  "article": "lg-styler-selfcheck",
+  "captured": "2026-07-20",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "lg-dryer-model-code-structure",
+      "why": "LG 건조기 팩트. 건조기(R모델, 열풍식)와 스타일러(S모델, 스팀식)는 제품 구조·모델명·에러코드·관리법이 완전히 다르므로 불적용"
+    },
+    {
+      "id": "lg-dryer-water-tank-management",
+      "why": "LG 건조기 물통 팩트. 건조기는 응축수만 배출하고 급수 기능이 없지만, 스타일러는 급수·배수 모두 수동으로 관리해야 함. 구조가 다름"
+    },
+    {
+      "id": "lg-dryer-lint-filter-inner-cleaning",
+      "why": "LG 건조기 필터 팩트. 건조기는 보풀 필터 내부/외부 분리형이고, 스타일러는 전면 필터만 있음. 장착 방식이 다름"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "lg-styler-errorcode-if-filter",
+      "claim": "LG 스타일러 IF 에러코드는 보푸라기 필터가 미장착되었거나 제자리에 끼워지지 않았을 때 나타나며, 필터의 홈을 정렬하여 올바른 위치에 끼우면 해결된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — IF 에러코드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152958890339",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-styler-errorcode-water-drainage-full",
+      "claim": "LG 스타일러의 배수통(물버림통)이 가득 차면 표시 창에 '물버림' 표시가 나타나면서 제품이 작동을 중단한다. 배수통을 비우고 물 높이 센서를 재정렬하면 해결된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 물버림 경고 표시",
+      "source_url": "https://www.lge.co.kr/support/solutions-1297304169121",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "배수통에 물이 1/3 정도 남겨두고 위아래로 흔들면 물 높이 감지 센서의 위치가 바로잡혀 오류 해제가 쉽다. 아이콘이 떨어질 때마다 감지 센서가 틀어질 수 있으므로 정기적 확인이 필요하다",
+      "cautionSource": "LG전자서비스 스스로해결 — 물버림 경고 표시"
+    },
+    {
+      "id": "lg-styler-errorcode-cl-button-touch",
+      "claim": "LG 스타일러 CL 표시 또는 버튼이 작동하지 않을 때는 버튼부가 터치식으로 손의 정전기를 감지하기 때문에, 손에 물이 묻어 있거나 이물질이 묻어 있으면 반응하지 않는다. 버튼부를 깨끗이 닦고 물기 없는 맨손으로 터치하면 해결된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — CL 표시·버튼 작동 불량",
+      "source_url": "https://www.lge.co.kr/support/solutions-1297299784818",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-styler-errorcode-le2-low-temperature",
+      "claim": "LG 스타일러 LE2 에러는 주위 환경의 온도가 너무 낮을 때 나타나며(영하 포함), 표준 스타일링 코스를 1회 작동시켜 정상 완료되는지 확인한다. 온도가 정상 범위로 올라오면 에러가 해제된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — LE2 에러 온도 이상",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150512761003",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "LG 스타일러 정상 작동 온도는 10℃~35℃이다. 겨울철 베란다·실외·온도가 낮은 환경에서는 LE2 에러가 발생할 수 있으므로, 실내로 옮긴 후 운전을 권장한다",
+      "cautionSource": "LG전자서비스 스스로해결 — LE2 에러 온도 이상"
+    },
+    {
+      "id": "lg-styler-water-supply-tank-location",
+      "claim": "LG 스타일러의 급수통은 제품 하단 오른쪽에 위치하며, 사용자가 직접 물을 채워야 한다. 급수통에 물이 충분하지 않으면 '물보충' 에러가 나타나 제품이 작동하지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 급수통·배수통 위치 및 기능",
+      "source_url": "https://www.lge.co.kr/support/solutions-1297218337677",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "LG 스타일러는 자동 급수 기능이 없다. 침실·거실·옷장 등 다양한 장소에 설치하기 위해 배수 파이프를 필요로 하지 않으므로, 수동으로 물통을 채우고 비우는 방식으로 설계됨",
+      "cautionSource": "LG전자서비스 스스로해결 — 급수통·배수통 위치 및 기능"
+    },
+    {
+      "id": "lg-styler-water-drainage-tank-location",
+      "claim": "LG 스타일러의 배수통(물버림통)은 제품 하단 왼쪽에 위치하며, 매 사용 후 항상 비워진 상태를 유지해야 한다. 물이 가득 차면 제품이 자동으로 작동을 중단한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 급수통·배수통 위치 및 기능",
+      "source_url": "https://www.lge.co.kr/support/solutions-1297218337677",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-styler-water-tank-cleaning-supply",
+      "claim": "LG 스타일러 급수통 청소는 외부를 젖은 수건으로 닦고, 내부를 청소솔로 손질한 후 깨끗한 물로 헹군다. 필요하면 살균 소독제를 사용하여 내부를 세척한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 물통 청소 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-1297300549263",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "급수통의 물이 직접 의류에 닿는 물이므로, 청소 후 잔여 살균제가 남아있으면 옷에 악취가 날 수 있다. 살균제 사용 후 반드시 충분히 헹굴 것",
+      "cautionSource": "LG전자서비스 스스로해결 — 물통 청소 방법"
+    },
+    {
+      "id": "lg-styler-water-tank-cleaning-drainage",
+      "claim": "LG 스타일러 배수통 청소는 외부를 젖은 수건으로 닦고, 내부를 청소솔로 긁어내어 청소한 후 물로 헹군다. 필요하면 살균 소독제를 사용하여 통 안쪽을 세척한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 물통 청소 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-1297300549263",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "배수통에 오래된 물이 고여 있으면 물때가 생기고 곰팡이가 번식할 수 있다. 주기적 청소 및 건조로 깨끗한 상태 유지 필수",
+      "cautionSource": "LG전자서비스 스스로해결 — 물통 청소 방법"
+    },
+    {
+      "id": "lg-styler-filter-maintenance-cleaning",
+      "claim": "LG 스타일러 보푸라기 필터는 제품 전면 하단에 위치하며, 소프트 브러시로 닦거나 청소기로 흡입하여 먼지를 제거한다. 필터에 먼지가 쌓이면 공기 순환이 원활하지 않아 건조·냄새 제거 성능이 떨어진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 먼지필터 청소 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152526715910",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "필터를 물로 청소한 경우 반드시 완전히 말린 후 설치해야 한다. 젖은 필터로 운전하면 건조·냄새 제거 성능이 크게 떨어진다",
+      "cautionSource": "LG전자서비스 스스로해결 — 먼지필터 청소 방법"
+    },
+    {
+      "id": "lg-styler-filter-damage-replacement",
+      "claim": "LG 스타일러 보푸라기 필터에 손상이나 구멍이 발생하면 수리하지 말고 새로운 필터로 교체해야 한다. 손상된 필터로 운전하면 모터에 먼지가 직접 유입되어 손상될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 먼지필터 청소 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152526715910",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-styler-odor-removal-weak-standard-course",
+      "claim": "LG 스타일러 표준 코스에서도 냄새가 제거되지 않을 때는 더 많은 양의 스팀을 분사하는 강력 코스를 사용하거나, 위생살균 메뉴의 표준 코스를 진행하면 된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 냄새 제거 안 될 때 해결",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150820661315",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "의류에 깊숙이 배어든 냄새는 사전 세탁 후 스타일러를 사용해야 효과적이다. 반복적인 스팀 처리보다 물세탁 후 스타일링이 더 확실한 방법일 수 있다",
+      "cautionSource": "LG전자서비스 스스로해결 — 냄새 제거 안 될 때 해결"
+    },
+    {
+      "id": "lg-styler-odor-removal-incomplete-drying",
+      "claim": "LG 스타일러 냄새 제거 후에도 냄새가 남는 주된 원인은 의류가 완전히 건조되지 않았기 때문이다. 스타일링 후에도 의류 섬유에 수분이 남아있으면 냄새 입자가 계속 남아있을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 냄새 제거 안 될 때 해결",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150820661315",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-styler-odor-removal-interior-cleaning",
+      "claim": "LG 스타일러 냄새 제거가 안 될 때는 스타일러 내부 벽면을 깨끗한 수건으로 닦고, 안쪽 바닥 앞쪽에 있는 보푸라기 필터 그릴을 분리하여 먼지를 제거한다. 스타일러 내부에 남은 오염 물질이 냄새 원인이 될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 냄새 제거 안 될 때 해결",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150820661315",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-styler-odor-removal-fragrance-sheet",
+      "claim": "LG 스타일러 향기 시트는 2~3회 스타일러를 작동할 때마다 새로운 시트로 교체하는 것이 효과적이다. 향기 시트가 오래되면 냄새 제거 성능이 떨어진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 냄새 제거 안 될 때 해결",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150820661315",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-styler-odor-removal-door-ventilation",
+      "claim": "LG 스타일러 스타일링 작동이 끝난 후 의류를 바로 꺼내고 문을 열어 충분히 환기해야 한다. 문을 닫은 상태로 오래 방치하면 스타일러 내부에 남은 냄새 입자가 다시 의류에 스며들 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 냄새 제거 안 될 때 해결",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150820661315",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-styler-moving-hanger-motion-frequency",
+      "claim": "LG 스타일러의 무빙행어는 1분에 약 200회 움직이면서 냄새 입자와 먼지를 진동으로 털어내고 스팀으로 수분을 입혀 바닥으로 떨어뜨린다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 구김 제거 및 냄새 제거 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150820661315",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-styler-wrinkle-removal-filter-importance",
+      "claim": "LG 스타일러 구김 제거 효과가 떨어질 때는 먼지필터 청소와 습도 센서 상태를 우선 확인해야 한다. 필터가 막혀있거나 센서가 먼지로 뒤덮여있으면 스팀 작동이 제대로 이루어지지 않을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 구김 제거 및 냄새 제거 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151825415768",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-styler-door-glass-cleaning-method",
+      "claim": "LG 스타일러 유리 도어 청소는 제품에 포함된 극세사 장갑을 미온수에 적셔 닦거나, 세제를 뿌린 후 닦고 깨끗한 천으로 완전히 건조시킨다. 물때 방지를 위해 건조가 필수다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 도어 유리 얼룩 제거",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153162162068",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "도어 청소 시 알코올, 신나, 벤젠, 치약 등 연마성 물질, 표백제를 절대 사용하지 말 것. 이들은 도어 코팅을 손상시키고 터치 버튼까지 고장낼 수 있다. 극세사 천 또는 극세사 장갑만 사용할 것",
+      "cautionSource": "LG전자서비스 스스로해결 — 도어 유리 얼룩 제거"
+    },
+    {
+      "id": "lg-styler-steam-operation-moisture-residue",
+      "claim": "LG 스타일러 스팀이 제대로 나오지 않을 때는 급수통에 물이 충분히 있는지 확인하고, 필터 및 물통이 깨끗한 상태인지 점검해야 한다. 필터가 막혀있거나 물통 입/출수 노즐이 막혀있으면 스팀 분사가 제대로 이루어지지 않을 수 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "LG전자서비스 스스로해결 — 스팀 기능 안내 및 사용자 피드백 종합",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152970595614",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "물통에 오래된 물이 고여있으면 미네랄 침적이 생겨 노즐을 막을 수 있다. 정기적 물통 청소와 새로운 물로 충전이 중요하다",
+      "cautionSource": "LG전자서비스 스스로해결 — 물통 청소 방법"
+    },
+    {
+      "id": "lg-styler-humidity-sensor-dust-removal",
+      "claim": "LG 스타일러 습도 센서는 의류의 습기 상태를 감지하여 스팀 양을 자동 조절한다. 센서에 먼지가 붙으면 정확한 감지가 불가능하여 건조·냄새 제거·구김 제거 성능이 모두 떨어질 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 건조 시간 및 성능 증가",
+      "source_url": "https://www.lge.co.kr/support/solutions-1420706227844",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-styler-dehumidification-door-position",
+      "claim": "LG 스타일러 제습 코스 사용 시에는 도어를 45도 가량 열어놓은 채 작동시켜야 한다. 도어를 완전히 닫으면 내부의 수증기가 배출되지 않아 제습 효과가 떨어진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 제습 코스 사용 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-1297218337677",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "의류관리기",
+        "line": "스타일러",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    }
+  ]
+}

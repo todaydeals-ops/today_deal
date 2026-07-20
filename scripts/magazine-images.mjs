@@ -22,6 +22,10 @@ const ONLY = (process.argv.find((a) => a.startsWith("--slugs="))?.split("=")[1] 
 const DROP = new Set(["guide", "fact", "factcheck", "check", "compare", "trend", "longrun", "care", "vs", "buying", "types", "type", "dosage", "size", "capacity", "999", "refresh", "self", "selfcheck", "maintenance", "sweetener", "safety", "organic", "inbody", "worth", "it", "direct", "tank", "dose", "absorption", "ratio"]);
 // 다의어·약자로 자동 키워드가 엉뚱한 이미지를 부르는 글은 수동 교정(drum=악기, msg=약자, scale=저울 등)
 const KW_OVERRIDE = {
+  "samsung-dishwasher-error": "dishwasher kitchen open",
+  "lg-styler-selfcheck": "clothes steamer closet",
+  "winia-kimchi-fridge": "refrigerator kitchen storage",
+  "lg-codezero-vacuum": "cordless vacuum home",
   "lg-purifier-selfcheck": "water dispenser home",
   "dyson-vacuum-selfcheck": "cordless vacuum cleaner",
   "samsung-tv-error": "television screen living room",
