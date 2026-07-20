@@ -71,19 +71,22 @@ function buildLd(d: ArchiveDeal, slug: string) {
   return {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "Product",
-        name: d.productName,
-        ...(d.imageUrl ? { image: d.imageUrl } : {}),
-        ...(brand ? { brand: { "@type": "Brand", name: brand } } : {}),
-        offers: {
-          "@type": "Offer",
-          price: d.salePrice,
-          priceCurrency: "KRW",
-          availability: "https://schema.org/InStock",
-          url: d.affiliateUrl ?? d.productUrl ?? `${SITE}/deal/${slug}`,
-        },
-      },
+      // image는 판매자 목록 필수 항목 — 이미지가 없으면 Product 자체를 싣지 않는다(경고 방지)
+      ...(d.imageUrl
+        ? [{
+            "@type": "Product",
+            name: d.productName,
+            image: d.imageUrl,
+            ...(brand ? { brand: { "@type": "Brand", name: brand } } : {}),
+            offers: {
+              "@type": "Offer",
+              price: d.salePrice,
+              priceCurrency: "KRW",
+              availability: "https://schema.org/InStock",
+              url: d.affiliateUrl ?? d.productUrl ?? `${SITE}/deal/${slug}`,
+            },
+          }]
+        : []),
       {
         "@type": "BreadcrumbList",
         itemListElement: [

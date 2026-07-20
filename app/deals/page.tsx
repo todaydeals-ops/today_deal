@@ -42,8 +42,8 @@ export default async function DealsIndex() {
       {
         "@type": "ItemList",
         name: "오늘의딜 전체 특가",
-        numberOfItems: archive.length,
-        itemListElement: archive.slice(0, 50).map((d, i) => ({
+        numberOfItems: archive.filter((d) => d.imageUrl).length,
+        itemListElement: archive.filter((d) => d.imageUrl).slice(0, 50).map((d, i) => ({
           "@type": "ListItem",
           position: i + 1,
           item: {

@@ -57,14 +57,17 @@ function buildLd(d: BoardDeal, slug: string) {
   return {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "Product",
-        name: d.title,
-        ...(d.imageUrl ? { image: d.imageUrl } : {}),
-        ...(d.body ? { description: d.body } : {}),
-        ...(d.shop ? { brand: { "@type": "Brand", name: d.shop } } : {}),
-        ...(offers ? { offers } : {}),
-      },
+      // image는 판매자 목록 필수 항목 — 이미지가 없으면 Product 자체를 싣지 않는다(경고 방지)
+      ...(d.imageUrl
+        ? [{
+            "@type": "Product",
+            name: d.title,
+            image: d.imageUrl,
+            ...(d.body ? { description: d.body } : {}),
+            ...(d.shop ? { brand: { "@type": "Brand", name: d.shop } } : {}),
+            ...(offers ? { offers } : {}),
+          }]
+        : []),
       {
         "@type": "BreadcrumbList",
         itemListElement: [

@@ -78,7 +78,7 @@ function buildLd(s: PSeo, deals: Deal[], platform: string) {
         name: s.title,
         description: s.desc,
         numberOfItems: deals.length,
-        itemListElement: deals.slice(0, 40).map((d, i) => ({
+        itemListElement: deals.filter((d) => d.imageUrl).slice(0, 40).map((d, i) => ({
           "@type": "ListItem",
           position: i + 1,
           item: {

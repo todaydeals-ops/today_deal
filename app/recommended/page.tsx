@@ -32,7 +32,7 @@ export default async function Recommended() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "오늘의 AI추천딜",
-    itemListElement: deals.filter((d) => d.slug).map((d, i) => ({
+    itemListElement: deals.filter((d) => d.slug && d.imageUrl).map((d, i) => ({
       "@type": "ListItem",
       position: i + 1,
       item: {

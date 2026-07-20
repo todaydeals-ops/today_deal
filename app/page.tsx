@@ -24,12 +24,15 @@ const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
 const PER = 10;
 
 function buildItemListLd(deals: Deal[]) {
+  // Google 판매자 목록(merchant listing)은 image가 필수 항목이다.
+  // 이미지 없는 상품을 넣고 image만 생략하면 "'image' 입력란 누락" 경고가 나므로 아예 제외한다.
+  const withImage = deals.filter((d) => d.imageUrl);
   return {
     "@type": "ItemList",
     name: "오늘의 타임딜",
     description: "지마켓·쿠팡·11번가의 실시간 타임딜·골드박스를 한곳에 모았습니다. 매일 갱신.",
-    numberOfItems: deals.length,
-    itemListElement: deals.slice(0, 40).map((d, i) => ({
+    numberOfItems: withImage.length,
+    itemListElement: withImage.slice(0, 40).map((d, i) => ({
       "@type": "ListItem",
       position: i + 1,
       item: {

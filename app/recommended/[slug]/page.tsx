@@ -51,10 +51,11 @@ export async function generateMetadata({
 }
 
 function buildLd(deal: CuratedDeal, slug: string) {
-  const product = {
+  // image는 판매자 목록 필수 항목 — 없으면 Product를 싣지 않는다(경고 방지)
+  const product = deal.imageUrl && {
     "@type": "Product",
     name: deal.productName,
-    ...(deal.imageUrl ? { image: deal.imageUrl } : {}),
+    image: deal.imageUrl,
     ...(deal.adminNote ? { description: deal.adminNote } : {}),
     category: deal.category,
     offers: {
@@ -73,7 +74,7 @@ function buildLd(deal: CuratedDeal, slug: string) {
       { "@type": "ListItem", position: 3, name: deal.productName, item: `${SITE}/recommended/${slug}` },
     ],
   };
-  return { "@context": "https://schema.org", "@graph": [product, breadcrumb] };
+  return { "@context": "https://schema.org", "@graph": [...(product ? [product] : []), breadcrumb] };
 }
 
 export default async function RecommendedDeal({
