@@ -1,0 +1,200 @@
+{
+  "topic": "LG 냉장고 에러 표시·냉각 불량 자가점검",
+  "brand": "LG",
+  "article": "lg-fridge-error-code",
+  "captured": "2026-07-20",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "samsung-model-year-alphabet",
+      "why": "삼성 에어컨 모델명 알파벳 규칙이며, LG 냉장고 모델 체계는 다름"
+    },
+    {
+      "id": "samsung-errorcode-digit-change",
+      "why": "삼성 에어컨 에러코드 변화 규칙이며, LG 냉장고 에러코드 체계가 다름"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "lg-fridge-errorcode-list",
+      "claim": "LG 냉장고 에러코드는 IF(제빙실팬 이상)/FF(냉동실팬 이상)/rF(냉장실팬 이상)/CF(기계실팬 이상)/FS·rS(냉동·냉장 센서이상)/dS(제상센서이상)/HS(습도센서이상)/IS(제빙센서이상)/SS(팬트리센서이상)/rt(외기센서이상)/CO(메인-디스플레이 통신이상)/Od(WiFi모뎀 통신이상)/dH(제상불량)/gF(유량모터·물입력이상)/It(제빙기이상)/OFF(판매전 특수기능모드) 등으로 분류된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장고 에러코드 유형",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153810464793",
+      "checked": "2026-07-20",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "전 냉장고", "years": "전 연식", "region": "KR" },
+      "caution": "대부분의 에러는 전문 서비스 점검이 필요하다. FF·rF 에러는 성에 제거로 일시 개선될 수 있지만 재발하면 모터 이상일 가능성이 높다.",
+      "cautionSource": "LG 공식 지원 페이지"
+    },
+    {
+      "id": "lg-fridge-error-dh-defrost-failure",
+      "claim": "LG 냉장고 dH 에러는 제상 불량을 나타내며, 제상 동안 냉동실 또는 냉장실의 얼음을 제거하는 기능에 이상이 있다는 의미다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장고 에러코드 F(r)dH",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153004158622",
+      "checked": "2026-07-20",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "전 냉장고", "years": "전 연식", "region": "KR" },
+      "caution": "이 에러는 온도퓨즈 단선, 제상히터 단선, 메인 PCB 불량 등이 원인일 수 있으며 전문 점검이 필수다.",
+      "cautionSource": "LG 공식 지원 페이지"
+    },
+    {
+      "id": "lg-fridge-error-ff-rf-fan-ice",
+      "claim": "LG 냉장고 FF(냉동실)·rF(냉장실) 에러는 팬 모터 이상을 나타내지만, 냉동실 안쪽 벽면에 얼음(성에)이 쌓여 팬이 구속된 경우에도 발생할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장고 에러코드 ER(E)FF·rF",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153004152841",
+      "checked": "2026-07-20",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "전 냉장고", "years": "전 연식", "region": "KR" },
+      "caution": "성에가 원인이면 전원을 끊고 도어를 열어 최소 24시간 이상 성에를 녹인 후 재시작하면 개선될 수 있다.",
+      "cautionSource": "LG 공식 지원 페이지"
+    },
+    {
+      "id": "lg-fridge-error-ch-cl-cooling-poor",
+      "claim": "LG 냉장고 CH·CL 에러는 설치 후 24시간 이상 경과했을 때 냉각이 약하다고 감지되면 표시되는 점검 코드다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장고 에러코드 ER(E)CH·CL",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153004133823",
+      "checked": "2026-07-20",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "전 냉장고", "years": "전 연식", "region": "KR" },
+      "caution": "이 에러가 뜨면 도어 패킹, 환기 간격, 온도 설정, 냉기 배출구 막힘을 우선 확인해야 한다.",
+      "cautionSource": "LG 공식 지원 페이지"
+    },
+    {
+      "id": "lg-fridge-cooling-weak-temperature-setting",
+      "claim": "LG 냉장고 냉동실이 약할 때는 온도가 영하 -16℃~-17℃의 약한 설정으로 되어 있는지 확인하고, 필요하면 -22℃~-24℃로 조정하는 것이 권장된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉동이 약해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1313304544068",
+      "checked": "2026-07-20",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "냉동실", "years": "전 연식", "region": "KR" },
+      "caution": "온도 설정은 계절과 실내 환경에 따라 조정이 필요하다.",
+      "cautionSource": "LG 공식 지원 페이지"
+    },
+    {
+      "id": "lg-fridge-cooling-weak-ventilation-gap",
+      "claim": "LG 냉장고 냉기가 약할 때 확인해야 할 환기 기준은 뒷면 벽으로부터 10cm 이상, 옆면 5cm 이상의 간격을 유지해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉동이 약해요, 냉장실이 시원하지 않아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1313304544068",
+      "checked": "2026-07-20",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "전 냉장고", "years": "전 연식", "region": "KR" },
+      "caution": "환기 간격이 부족하면 압축기가 과열되어 냉각 성능이 떨어진다. 뒷면 기계실 덮개의 먼지도 함께 제거해야 한다.",
+      "cautionSource": "LG 공식 지원 페이지에서 환기 기준 명시"
+    },
+    {
+      "id": "lg-fridge-cooling-weak-internal-frost",
+      "claim": "LG 냉장고 냉동실 안쪽 벽면에 얼음(성에)이 쌓여 냉기 배출구를 막으면 냉기 순환이 방해되어 냉동 기능이 약해진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉동이 약해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1313304544068",
+      "checked": "2026-07-20",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "냉동실", "years": "전 연식", "region": "KR" },
+      "caution": "성에가 있으면 도어를 열어 최소 8시간 이상 녹인 후 수건으로 물기를 제거해야 한다.",
+      "cautionSource": "LG 공식 지원 페이지"
+    },
+    {
+      "id": "lg-fridge-cooling-weak-load-capacity",
+      "claim": "LG 냉장고 냉장실이 시원하지 않을 때 냉기가 잘 퍼질 수 있도록 식품을 60% 정도만 채우는 것이 권장된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장실이 시원하지 않아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150459191685",
+      "checked": "2026-07-20",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "냉장실", "years": "전 연식", "region": "KR" },
+      "caution": "과도한 식품 적재는 냉기 순환을 방해하고 전력 소비를 증가시킨다.",
+      "cautionSource": "LG 공식 지원 페이지"
+    },
+    {
+      "id": "lg-fridge-cooling-weak-door-seal",
+      "claim": "LG 냉장고 문이 제대로 닫히지 않으면 바깥 공기가 유입되어 냉기가 약해지므로, 고무 패킹을 깨끗이 닦고 선반 위치·과도한 수납물을 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장실이 시원하지 않아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150459191685",
+      "checked": "2026-07-20",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "전 냉장고", "years": "전 연식", "region": "KR" },
+      "caution": "고무 패킹이 부실하면 도어를 닫은 후 최소 2시간 동안 문을 열지 않고 패킹이 본체에 완전히 밀착되도록 기다려야 한다.",
+      "cautionSource": "LG 공식 지원 페이지"
+    },
+    {
+      "id": "lg-fridge-cooling-weak-door-packing-cleaning",
+      "claim": "LG 냉장고 도어 고무패킹 청소는 냉장고 도어 고무패킹 4면을 깨끗이 닦고, 따뜻한 수건으로 2-3회 반복해서 닦은 후 최소 2시간 동안 문을 열지 않아야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 고무 패킹 접착력",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150585367852",
+      "checked": "2026-07-20",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "전 냉장고", "years": "전 연식", "region": "KR" },
+      "caution": "패킹이 부풀어 오르거나 탄성이 없어진 경우는 교체가 필요하다.",
+      "cautionSource": "LG 공식 지원 페이지"
+    },
+    {
+      "id": "lg-fridge-operating-temperature-range",
+      "claim": "LG 냉장고는 온도가 5℃~43℃인 장소에서 가장 잘 작동하며, 베란다 등 외부 설치는 냉각 성능을 해친다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장실이 시원하지 않아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150459191685",
+      "checked": "2026-07-20",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "전 냉장고", "years": "전 연식", "region": "KR" },
+      "caution": "겨울철 저온 환경 설치나 여름철 고온 환경 설치는 피해야 한다.",
+      "cautionSource": "LG 공식 지원 페이지에서 작동 온도범위 명시"
+    },
+    {
+      "id": "lg-fridge-initial-cooling-time-weak",
+      "claim": "LG 냉장고 설치 후 1~2시간 정도 지나면 냉기가 나오기 시작하지만, 여름에는 냉장고 속을 모두 차가운 공기로 채우려면 2~3일이 소요될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장고 수리 후 또는 신규 설치/재설치 후 시원하지 않아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151782837178",
+      "checked": "2026-07-20",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "전 냉장고", "years": "전 연식", "region": "KR" },
+      "caution": "초기 설치 직후 냉기가 약하다고 느껴지는 것은 정상이며, 2시간 경과 후 물을 넣어 살얼음 형성 여부를 확인하고, 2~3일 이후에도 개선되지 않으면 전문 점검이 필요하다.",
+      "cautionSource": "LG 공식 지원 페이지에서 시간 범위 명시"
+    },
+    {
+      "id": "lg-fridge-power-outage-recovery-time",
+      "claim": "LG 냉장고 정전 후 복구는 전원을 재연결한 후 냉장고의 냉기가 정상적으로 돌아올 때까지 24~48시간이 소요된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장고 수리 후 또는 신규 설치/재설치 후 시원하지 않아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151782837178",
+      "checked": "2026-07-20",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "전 냉장고", "years": "전 연식", "region": "KR" },
+      "caution": "정전 후에는 내부에 얼음(성에)이 생길 수 있으므로 재시작 전에 도어를 열어 최소 24시간 이상 녹인 후 물기를 제거해야 한다.",
+      "cautionSource": "LG 공식 지원 페이지"
+    },
+    {
+      "id": "lg-thinq-smart-diagnosis-procedure",
+      "claim": "LG ThinQ 앱의 스마트진단은 하단의 '메뉴' 탭 → '스마트 진단' 선택 → 제품 선택 → 화면 안내 따라 진행하는 순서로 진행되며, 결과는 제품 상태·증상·해결책을 제시한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — LG ThinQ 스마트 진단",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152166347265",
+      "checked": "2026-07-20",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "스마트 기능 지원 모델", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "스마트 진단 로고가 있는 제품에서만 Wi-Fi 기반 진단이 가능하다. 지원하지 않는 기기는 소리 기반 진단을 진행한다. 모델·지역·앱 버전에 따라 지원 기능이 다를 수 있다.",
+      "cautionSource": "LG 공식 지원 페이지에서 기능 제한 명시"
+    },
+    {
+      "id": "lg-fridge-temperature-adjustment-default",
+      "claim": "LG 냉장고 냉장실 기본 온도 설정은 3℃이며, 여름철 잦은 문 개폐 시 냉기 손실로 온도가 올라갈 수 있으므로 한두 단계 낮게 조절할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장실이 시원하지 않아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150459191685",
+      "checked": "2026-07-20",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "냉장실", "years": "전 연식", "region": "KR" },
+      "caution": "온도를 너무 낮게 설정하면 에너지 낭비가 되므로 적절한 수준에서 조절해야 한다.",
+      "cautionSource": "LG 공식 지원 페이지"
+    }
+  ]
+}

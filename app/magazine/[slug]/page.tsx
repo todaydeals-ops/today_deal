@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${a.title} | 오늘의딜 매거진`,
     description: desc,
+    ...(a.tags?.length ? { keywords: a.tags } : {}),
     alternates: { canonical: `${SITE}/magazine/${slug}` },
     openGraph: { title: a.title, description: desc, url: `${SITE}/magazine/${slug}`, type: "article", images: [...(a.image?.url ? [{ url: a.image.url, alt: a.title }] : []), { url: `${SITE}/magazine/opengraph-image`, width: 1200, height: 630, alt: "오늘의딜 매거진" }] },
   };
@@ -78,7 +79,8 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
     mainEntityOfPage: `${SITE}/magazine/${slug}`,
     articleSection: c.name,
     inLanguage: "ko-KR",
-    ...(a.field ? { keywords: [a.field, c.name, a.title].join(", ") } : {}),
+    keywords: [...(a.tags ?? []), a.field, c.name, a.title].filter(Boolean).join(", "),
+    ...(a.tags?.length ? { about: a.tags.slice(0, 12).map((t) => ({ "@type": "Thing", name: t })) } : {}),
     isAccessibleForFree: true,
     ...(related.length ? { relatedLink: related.map((r) => `${SITE}/magazine/${r.slug}`) } : {}),
   };
@@ -203,6 +205,15 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
               ))}
             </div>
           </section>
+        )}
+
+        {/* ── 검색 태그 (브랜드·모델명·에러코드 — 롱테일 유입) ── */}
+        {a.tags && a.tags.length > 0 && (
+          <div style={{ margin: "44px 0 0", display: "flex", flexWrap: "wrap", gap: 7 }}>
+            {a.tags.map((t) => (
+              <span key={t} style={{ fontSize: 12.5, fontWeight: 500, color: "#6f6a60", background: "#f3efe7", border: "1px solid #e6dfd2", borderRadius: 999, padding: "5px 11px", lineHeight: 1.3 }}>#{t}</span>
+            ))}
+          </div>
         )}
 
         {/* ── 근거·제조사 공식 안내 (모델별 실제 절차·사진은 공식에서 — 저작권 안전) ── */}

@@ -1,0 +1,250 @@
+{
+  "topic": "아이폰 발열 — 원인, 증상, 대처",
+  "brand": "애플",
+  "article": "iphone-overheating",
+  "captured": "2026-07-20",
+  "reused_facts": ["battery-swelling-stop-immediately"],
+  "declined_facts": [
+    {
+      "id": "iphone-battery-menu-split",
+      "why": "배터리 성능 저하 메뉴 위치 정보이며, 발열 원인·증상과 무관"
+    },
+    {
+      "id": "iphone-force-restart-generation-split",
+      "why": "강제 재시작 기종별 방법이며, 발열과 무관"
+    },
+    {
+      "id": "iphone-recovery-mode-data",
+      "why": "복구 모드와 데이터 보존이며, 발열과 무관"
+    },
+    {
+      "id": "refrigerant-charge-professional-only",
+      "why": "에어컨 냉매 충전이며, 스마트폰 발열과 무관"
+    },
+    {
+      "id": "factory-reset-data-loss",
+      "why": "공장 초기화이며, 발열 증상과 무관"
+    },
+    {
+      "id": "jumpstart-cable-order",
+      "why": "자동차 점프 스타트이며, 스마트폰과 무관"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "iphone-normal-operating-temperature",
+      "claim": "Apple이 명시한 iPhone 정상 작동 온도는 0°C ~ 35°C (32°F ~ 95°F)이다. 이 범위를 벗어나면 기기는 온도 조절을 위해 동작을 변경한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your iPhone or iPad gets too hot or too cold",
+      "source_url": "https://support.apple.com/en-us/118431",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "이 온도 범위는 기기가 안전하게 작동할 수 있는 환경온도를 의미한다. 기기 내부 온도와는 별개다.",
+      "cautionSource": "Apple Support 원문에서 '주변 온도(ambient temperature)'로 명시"
+    },
+    {
+      "id": "iphone-gpu-intensive-apps-heat",
+      "claim": "그래픽 집약적인 게임, GPS 네비게이션(특히 자동차 내 직사광선), 장시간 카메라·비디오 촬영은 Apple이 명시한 주요 발열 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your iPhone or iPad gets too hot or too cold",
+      "source_url": "https://support.apple.com/en-us/118431",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "Apple 원문에서 'graphics-intensive games', 'GPS tracking or navigation', 'camera for an extended period'을 명시적으로 언급했다.",
+      "cautionSource": "Apple Support 공식 문서"
+    },
+    {
+      "id": "iphone-thermal-throttling-performance",
+      "claim": "온도가 정상 범위를 초과하면 iOS는 자동으로 충전 속도 감소/정지, 디스플레이 밝기 감소, CPU 클록 저하, 앱 성능 저하(프레임 감소·처리 시간 증가), 네비게이션 중 화면 꺼짐 등으로 대응한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your iPhone or iPad gets too hot or too cold",
+      "source_url": "https://support.apple.com/en-us/118431",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "이 제한은 기기 손상을 방지하는 보호 메커니즘이다. 의도적으로 성능을 깎은 것이므로 기기가 정상이다.",
+      "cautionSource": "Apple Support 원문에서 'to regulate its temperature', 'charging slows or stops', 'lower frame rates', 'increased processing times' 명시"
+    },
+    {
+      "id": "iphone-charging-while-heavy-use",
+      "claim": "충전 중 무거운 앱 사용(게임, 스트리밍, 네비게이션)은 배터리 충전과 프로세서 부하가 동시에 발생하므로 발열을 심화시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your iPhone or iPad gets too hot or too cold",
+      "source_url": "https://support.apple.com/en-us/118431",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "Apple이 명시적으로 '충전 중 사용'을 발열 원인으로 언급하지는 않지만, 고온 환경·고부하 앱 사용을 권고하지 않으며, 무선 충전이 열을 증가시킬 수 있음을 안내한다.",
+      "cautionSource": "Apple Support 원문의 고부하 앱 및 고온 환경 동시 사용 경고"
+    },
+    {
+      "id": "iphone-direct-sunlight-high-temperature",
+      "claim": "자동차 주차장, 햇빛이 직접 드는 환경에서의 사용은 기기 외부 온도 상승으로 인한 발열을 악화시킨다. Apple은 '주차된 자동차 내에서 사용 금지'를 명시한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your iPhone or iPad gets too hot or too cold",
+      "source_url": "https://support.apple.com/en-us/118431",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "iphone-post-setup-indexing-heat",
+      "claim": "새로 설정한 iPhone, iOS 업데이트 또는 복구 직후에는 시스템이 백그라운드에서 대량의 작업(사진 인덱싱, 앱 최적화, 연락처/메일 인덱싱, Apple Intelligence 데이터 처리)을 수행하므로 일시적 발열이 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Community discussions & Support articles on device setup thermal behavior",
+      "source_url": "https://support.apple.com/en-us/118431",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "대용량 데이터 복원 시 인덱싱은 며칠 이상 지속될 수 있다. 이 기간에 무거운 앱 사용을 피하면 완료 시간이 단축된다.",
+      "cautionSource": "Apple 커뮤니티 및 지원 문서에서 설정 직후 배경 작업 명시"
+    },
+    {
+      "id": "iphone-new-setup-duration",
+      "claim": "새 기기 설정이나 백업 복구 직후 백그라운드 인덱싱으로 인한 발열은 보통 2~3일 지속되며, 대량의 데이터를 복원한 경우 더 오래 지속될 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "Apple Community discussions on initial setup thermal behavior",
+      "source_url": "https://discussionskorea.apple.com/",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "이 기간은 개별 사용자 데이터량에 따라 크게 달라진다. 사용자에게 안내할 때는 '보통 2~3일이지만 더 걸릴 수 있다'고 설명할 것.",
+      "cautionSource": "여러 Apple Community 게시물에서 설정 후 며칠간 높은 온도 보고"
+    },
+    {
+      "id": "iphone-case-thermal-effect",
+      "claim": "두꺼운 실리콘 케이스는 단열재처럼 작동해 열을 가두고 발열을 악화시키지만, 얇은 폴리카보네이트나 알루미늄 케이스는 열 분산에 도움이 될 수 있으며, 케이스 없음이 자연 대류를 통해 가장 효과적인 냉각 환경이다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Tech community discussions and case material analysis",
+      "source_url": "https://discussions.apple.com/thread/251120878",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "케이스 소재·두께 차이가 발열에 미치는 영향은 제조사·제품별로 상이하다. Apple 공식 가이드에서는 '발열 시 케이스 제거'만 명시하고, 특정 케이스 재질을 권고하지는 않는다.",
+      "cautionSource": "Apple Support가 케이스 제거를 발열 대처법으로 명시했으나, 특정 소재 우위는 공식 근거 없음"
+    },
+    {
+      "id": "iphone-temperature-warning-alert",
+      "claim": "기기 내부 온도가 일정 수준을 초과하면 화면에 '온도 경고: iPhone을 식혀주세요' (또는 영문 'Temperature: iPhone needs to cool down')가 표시되고, 네비게이션 중 이 경고가 나타나면 지도 화면이 꺼진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your iPhone or iPad gets too hot or too cold",
+      "source_url": "https://support.apple.com/en-us/118431",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "한글 버전에서 정확한 경고 문구를 확인할 것. 아이폰 한국 언어 설정에 따라 문구가 다를 수 있다.",
+      "cautionSource": "Apple Support 원문에서 'Temperature alert'와 네비게이션 화면 끄기를 명시"
+    },
+    {
+      "id": "iphone-overheating-mitigation-immediate",
+      "claim": "발열 시 즉시 조치는 다음과 같다: (1) 케이스 제거, (2) 모든 앱 종료 및 기기 사용 중단, (3) 환기 좋은 쿨한 환경으로 이동, (4) 필요시 전원 완전 차단. 기기를 쿨한 건조한 표면 위에 놔두고 자연 냉각을 기다린다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your iPhone or iPad gets too hot or too cold",
+      "source_url": "https://support.apple.com/en-us/118431",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "Apple 공식 가이드 순서대로 제시할 것. 성급한 강제 냉각은 오히려 손상을 초래한다.",
+      "cautionSource": "Apple Support 원문의 'To allow your device to cool down' 섹션"
+    },
+    {
+      "id": "iphone-overheating-what-not-to-do",
+      "claim": "발열 기기를 빠르게 식히려고 냉동실, 냉장고, 냉각팩, 얼음, 물 사용은 절대 금지다. 급격한 온도 변화는 내부 응결을 초래하고 수손·부식 위험을 증가시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your iPhone or iPad gets too hot or too cold",
+      "source_url": "https://support.apple.com/en-us/118431",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "사용자들이 가장 자주 하는 실수가 냉동실 또는 냉각팩 사용이다. 이것이 오히려 더 큰 손상을 초래한다는 점을 강조해 안내할 것.",
+      "cautionSource": "Apple Support 원문에서 'avoid storing in extremely cold areas' 및 급격한 온도 변화 경고 명시"
+    },
+    {
+      "id": "iphone-persistent-overheating-service",
+      "claim": "위의 모든 대처를 실행해도 계속 발열이 발생하거나, 정상 사용 중에도 자주 온도 경고가 표시되면 Apple Authorized Service Provider(AASP) 또는 Apple Authorized Distributor(AAD)를 방문해 기기 검사를 받아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your iPhone or iPad gets too hot or too cold",
+      "source_url": "https://support.apple.com/en-us/118431",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "지속적 발열은 배터리 열화, 프로세서 결함, 또는 기계적 손상의 신호일 수 있다. 스스로 분해 시도는 절대 금지.",
+      "cautionSource": "Apple Support의 'If you think there is a problem with a device' 섹션"
+    }
+  ]
+}

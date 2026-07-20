@@ -1,0 +1,362 @@
+{
+  "topic": "LG 건조기 에러코드·자가점검·유지보수",
+  "brand": "LG",
+  "article": "lg-dryer-error-code",
+  "captured": "2026-07-20",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "samsung-model-year-alphabet",
+      "why": "삼성 건조기는 DV로 시작하며 T/A/B/CB/DB 연식 코드 사용. LG 건조기는 R로 시작하며 모델명 구조가 완전히 다름(R+조작부+용량+색상+스팀+결합제품). 연식이 모델명에 직접 표기되지 않음"
+    },
+    {
+      "id": "samsung-errorcode-digit-change",
+      "why": "LG 건조기 에러코드는 삼성의 '모두 C로 끝남' 규칙(5C/SC/nC2/nC 등)과 완전히 다른 체계. LG는 D75/D80/D90/D95(배기 막힘), nP/PS(전압), dE(도어), F0(필터), E13(호스), HS(습도센서), tE1/tE2/tE3(온도센서) 등 다양한 형식 혼용"
+    },
+    {
+      "id": "samsung-aircon-selfdiag-entry",
+      "why": "세탁기/에어컨 팩트. 건조기는 다른 카테고리이므로 불적용"
+    },
+    {
+      "id": "dryer-model-year-alphabet",
+      "why": "삼성 건조기 연식 표기법(T=2020~, A=2021 등)은 LG에 불적용. LG 건조기는 모델명 구조 자체가 다르며 연식이 별도로 표기되지 않음"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "lg-dryer-model-code-structure",
+      "claim": "LG 건조기 모델명은 R(건조기) + 조작부(H/G/D) + 용량(숫자) + 색상코드 + 스팀 여부(N/S) + 결합제품(F/X) 순서로 구성된다 (예: RH16GVWW, RD19S)",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 건조기 모델명 해석 및 제품 설명서 정보",
+      "source_url": "https://www.lge.co.kr/support",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "모델명의 위치마다 의미가 있으므로 모델 비교 시 정확히 해석해야 한다. 스펙 확인은 반드시 공식 카탈로그 또는 제품 설명서를 기준으로 할 것."
+    },
+    {
+      "id": "lg-dryer-errorcode-if",
+      "claim": "LG 건조기 IF 에러코드는 외부 필터 또는 내부 필터가 제자리에 장착되지 않은 상태에서 기기를 작동시킬 때 발생하며, 두 필터를 올바른 위치에 끼워 넣으면 해결된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — IF 에러코드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150859390500",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-dryer-errorcode-exhaust-blockage",
+      "claim": "LG 건조기 D75/D80/D90/D95 에러코드는 배기덕트 막힘의 정도를 나타내며(75%/80%/90%/95%), 먼지필터와 배기호스를 확인하고 외부 환기구가 흙이나 이물질로 막혀 있는지 점검해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG USA 공식 지원 — 건조기 에러코드 목록",
+      "source_url": "https://www.lg.com/us/support/help-library/lg-dryer-error-code-list--20152310891742",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "D75부터 D95까지 수치가 높을수록 막힘이 심하다는 의미다.",
+      "cautionSource": "LG USA 공식 지원 — 건조기 에러코드 목록"
+    },
+    {
+      "id": "lg-dryer-errorcode-no-heater",
+      "claim": "LG 건조기 nP 에러코드는 히터에서 전류를 감지하지 못한 상태로, 240V 전원 연결을 확인하고 차단기를 리셋해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG USA 공식 지원 — 건조기 에러코드 목록",
+      "source_url": "https://www.lg.com/us/support/help-library/lg-dryer-error-code-list--20152310891742",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "lg-dryer-errorcode-voltage",
+      "claim": "LG 건조기 PS 에러코드는 부적절한 전압 공급을 나타내며, 전원 코드 배선 연결을 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG USA 공식 지원 — 건조기 에러코드 목록",
+      "source_url": "https://www.lg.com/us/support/help-library/lg-dryer-error-code-list--20152310891742",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "lg-dryer-errorcode-door",
+      "claim": "LG 건조기 dE 에러코드는 도어가 완전히 닫히지 않은 상태로, 먼지필터를 다시 장착하거나 도어를 막는 물건이 없는지 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG USA 공식 지원 — 건조기 에러코드 목록",
+      "source_url": "https://www.lg.com/us/support/help-library/lg-dryer-error-code-list--20152310891742",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "lg-dryer-errorcode-filter-missing",
+      "claim": "LG 건조기 F0 에러코드는 먼지필터가 장착되지 않은 상태를 나타내며, 필터를 올바르게 다시 설치해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG USA 공식 지원 — 건조기 에러코드 목록",
+      "source_url": "https://www.lg.com/us/support/help-library/lg-dryer-error-code-list--20152310891742",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "lg-dryer-errorcode-hose-kinked",
+      "claim": "LG 건조기 E13 에러코드는 하이브리드 모델에서만 나타나며, 배수호스가 구부러지거나 막혀 있음을 의미한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG USA 공식 지원 — 건조기 에러코드 목록",
+      "source_url": "https://www.lg.com/us/support/help-library/lg-dryer-error-code-list--20152310891742",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬 하이브리드",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "lg-dryer-errorcode-humidity-sensor",
+      "claim": "LG 건조기 HS 에러코드는 습도 센서의 오류를 나타내며, 먼지필터 아래에 있는 센서를 청소해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG USA 공식 지원 — 건조기 에러코드 목록",
+      "source_url": "https://www.lg.com/us/support/help-library/lg-dryer-error-code-list--20152310891742",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "lg-dryer-errorcode-thermistor",
+      "claim": "LG 건조기 tE1/tE3 에러코드는 온도 센서(서미스터) 오류로, 공장 초기화를 시도해야 한다. tE2는 추운 날씨 중 온도 센서 오류로 배기구와 통풍구를 확인하고 벌크/두께 코스를 선택해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG USA 공식 지원 — 건조기 에러코드 목록",
+      "source_url": "https://www.lg.com/us/support/help-library/lg-dryer-error-code-list--20152310891742",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "lg-dryer-condenser-auto-cleansing",
+      "claim": "LG 건조기는 건조 코스 사용 시마다 건조가 끝나기 전에 콘덴서(열교환기)를 자동으로 세척하며, 추가로 건조 30회마다 한 번 더 자동으로 세척을 수행한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 콘덴서케어 기능 사용 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151247980878",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-dryer-condenser-manual-care",
+      "claim": "LG 건조기 수동 콘덴서케어는 추가 세척이 필요할 때 직접 작동하는 기능으로, 물통을 비운 후 물 1L를 천천히 붓고(단독 설치 시) [콘덴서케어] 버튼을 3초 이상 눌러 시작하며, 약 1시간 동안 작동된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 콘덴서케어 기능 사용 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151247980878",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-dryer-lint-filter-inner-cleaning",
+      "claim": "LG 건조기 내부 필터는 세탁물 제거 후 매 사용 전/후에 항상 청소해야 하며, 큰 먼지를 제거한 후 청소기 또는 흐르는 물로 세척하고 완전히 건조 후 중앙부를 눌러 닫아 장착한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 필터 청소하기",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151794532733",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "물로 청소한 후 덜 마른 필터를 사용하면 수막현상으로 인해 냄새가 발생할 수 있으므로, 반드시 완전히 건조시킨 후 장착해야 한다"
+    },
+    {
+      "id": "lg-dryer-lint-filter-outer-cleaning",
+      "claim": "LG 건조기 외부 필터는 사용 전/후 또는 보풀이 쌓여 있을 때 청소해야 하며, 투입구 주변 먼지를 제거한 후 필터를 꺼내 측면을 당겨 펼쳐 청소기 또는 물로 세척하고 우측면 표시부를 누르고 닫은 후 내부 필터와 결합하여 장착한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 필터 청소하기",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151794532733",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "필터 없이는 제품을 작동할 수 없으며, 내부·외부 필터의 홈을 정확히 맞춰 결합해야 한다"
+    },
+    {
+      "id": "lg-dryer-water-tank-management",
+      "claim": "LG 건조기 물통(배수통)은 건조 후 매회 비워야 하며, 디스플레이에 '물 비우기' 표시가 나타나면 즉시 비워야 한다. 물통이 가득 차면 건조기는 자동으로 작동을 중단한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 물통 비우기 및 물방울 표시",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151264302754",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "물통을 꺼낼 때 양손으로 잡고 수평을 유지하면서 천천히 꺼내야 한다"
+    },
+    {
+      "id": "lg-dryer-drainage-hose-setup",
+      "claim": "LG 건조기 직배수 설치 시 배수호스 높이는 바닥으로부터 1m를 넘지 않아야 하며, 호스가 자연스럽게 내려지는 단단하고 고른 바닥 위에 위치해야 한다. 호스 끝부분이 물에 잠겨서도 안 되고, 하수구에 너무 깊이 박혀 있지 않아야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 물통 비우기 및 물방울 표시",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151264302754",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬 직배수 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "호스 호수가 물에 잠겨 있으면 배수 역압이 발생한다. 호스 끝에서 5~10cm 위에 위치시켜야 한다.",
+      "cautionSource": "LG전자서비스 스스로해결 — 물통 비우기 및 물방울 표시"
+    },
+    {
+      "id": "lg-dryer-drying-time-extended-check",
+      "claim": "LG 건조기 건조 시간이 평소보다 길어진 경우 점검 순서는 습도 센서 청소 → 필터 청소 → 세탁물 분류 → 기온 확인 순서다. 습도 센서에 먼지가 붙어 있거나 필터가 막혀 있으면 건조가 제대로 되지 않을 수 있으며, 두께가 다른 옷을 함께 건조하면 얇은 옷이 먼저 건조되어 두꺼운 옷이 덜 마를 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 건조시간 증가 원인 및 해결",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151505002117",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "기온이 낮은 겨울철에는 예열 시간이 증가하여 최대 1시간까지 건조 시간이 늘어날 수 있다. 30분 이상 운전 후에도 열감이 없으면 전문 서비스 점검이 필요하다.",
+      "cautionSource": "LG전자서비스 스스로해결 — 건조시간 증가 원인 및 해결"
+    },
+    {
+      "id": "lg-dryer-humidity-sensor-location",
+      "claim": "LG 건조기의 습도 센서는 먼지필터 아래에 위치하며, 세탁물이 습도 센서에 닿으면 습기를 감지하여 건조 시간을 자동으로 조절한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 세탁물 건조 성능",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150448749964",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "건조기의 수평이 뒤쪽으로 기울어져 있으면 습도 센서가 세탁물의 수분을 감지하지 못해 건조가 제대로 되지 않을 수 있다"
+    },
+    {
+      "id": "lg-dryer-heat-pump-winter-performance",
+      "claim": "LG 건조기 히트펌프 방식은 기온이 낮은 겨울철에 건조기와 세탁물의 온도가 낮아져 예열 시간이 더 오래 걸리며, 이는 히트펌프 기술의 자연스러운 특성이다. 외부 공기를 활용하기 때문에 설치 공간의 온도가 5℃ 이하로 내려가면 건조 시간이 길어지고 건조 효과가 떨어질 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 히트펌프 겨울철 건조 약화",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150935946517",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬 히트펌프",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "특히 단열이 잘되지 않는 베란다에 설치한 경우 겨울철 추운 날에는 성능 저하가 더욱 심할 수 있다"
+    },
+    {
+      "id": "lg-dryer-heat-pump-winter-mitigation",
+      "claim": "LG 건조기 히트펌프 방식의 겨울철 성능 저하를 완화하려면, 건조 전 세탁기 탈수 옵션을 [최강] 또는 [건조맞춤]으로 설정하거나 탈수를 한 번 더 진행하고, 비슷한 두께의 옷끼리 분류하며, 건조기 용량의 절반까지만 채우고, 두꺼운 세탁물은 강력 모드를 선택해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자서비스 스스로해결 — 히트펌프 겨울철 건조 약화 조치",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150935946517",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "LG",
+        "category": "건조기",
+        "line": "트롬 히트펌프",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "정기적 필터 청소는 공기 순환을 최대한 유지하기 위해 필수다. 내부 필터는 매회 사용 후, 외부 필터는 10회마다 청소할 것.",
+      "cautionSource": "LG전자서비스 스스로해결 — 히트펌프 겨울철 건조 약화 조치"
+    }
+  ]
+}

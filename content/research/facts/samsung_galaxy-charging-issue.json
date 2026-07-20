@@ -1,0 +1,188 @@
+{
+  "topic": "갤럭시 스마트폰 충전 불가·저속충전 원인과 기종·One UI별 점검",
+  "brand": "삼성",
+  "article": "galaxy-charging-issue",
+  "captured": "2026-07-20",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "battery-swelling-stop-immediately",
+      "why": "배터리 팽창·과열·타는 냄새는 응급 안전 상황이며 일반 충전 불가 문제(단자 청소, 설정, 호환성)와는 층위가 다르므로 공통_as-safety-baseline.json에서 재사용하는 것이 맞음"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "charging-port-debris-cleaning",
+      "claim": "갤럭시 충전 단자에 먼지나 이물질이 쌓이면 충전 케이블이 포트 내부의 금속 단자와 제대로 접촉하지 않아 충전이 안 되거나 저속 충전된다. 손전등으로 비춰 내부를 확인하고 바람으로 불어내거나 부드러운 솔로 제거한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 배터리 충전이 안 돼요 / 유선 충전이 안 되거나 속도가 느림",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37809",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "moisture-detection-charging-block",
+      "claim": "갤럭시 충전 포트에 물기가 감지되면 충전단자 부식·발열·연소를 방지하기 위해 자동으로 충전이 차단되며, 기기가 켜진 상태에서는 경고 팝업이 표시되고 꺼진 상태에서는 충전 아이콘이 결함 표시로 나타난다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 충전 포트(단자) 물기 유입 시 조치 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1004045",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "수분 감지 알림이 뜨면 팝업이 사라질 때까지 충전기를 연결하지 말 것. 완전히 건조한 후 시도"
+    },
+    {
+      "id": "charging-disabled-high-temperature",
+      "claim": "갤럭시 기기의 내부 온도가 일정 수준 이상으로 높아지거나 발열이 발생하면 배터리 손상을 방지하기 위해 충전이 중단되거나 속도가 느려진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 — 갤럭시 배터리 충전 팁",
+      "source_url": "https://www.samsung.com/sec/support/galaxy-battery/charging-tip/",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "충전 중 웹 브라우징, 동영상 시청, 게임 등의 사용은 발열을 증가시켜 충전 속도를 느리게 한다. 충전 중에는 기기 사용을 피하는 것이 권장됨"
+    },
+    {
+      "id": "battery-protection-mode-80percent",
+      "claim": "갤럭시 배터리 보호 기능이 '최적화' 또는 '최대'로 설정되면 배터리 수명 연장을 위해 충전이 80%에서 멈추며 더 이상 올라가지 않는다. 설정 > 배터리 > 배터리 보호에서 확인·조정할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 100% 충전이 안 됨",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1103537",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "2020년대 이후",
+        "region": "KR"
+      },
+      "caution": "충전이 80%에서 멈추는 것은 의도된 동작이므로 충전 불가가 아니다. 사용자가 배터리 보호를 끄면 100% 충전이 가능",
+      "cautionSource": "삼성전자서비스 1103537 문서에서 배터리 보호 모드의 80% 제한을 명시"
+    },
+    {
+      "id": "fast-charging-toggle-location-one-ui",
+      "claim": "갤럭시 고속 충전 활성화는 설정 > 배터리 > 충전 설정에서 '고속 충전' 또는 '고속 무선 충전' 옵션을 켜는 방식이며, S23 시리즈 이후로는 고속 충전과 초고속 충전이 통합되어 단일 토글로 표시된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시를 초고속으로 충전하세요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/25867",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 S 시리즈·Z 시리즈",
+        "years": "2020년대 이후",
+        "region": "KR"
+      },
+      "caution": "S23 시리즈 이전(S22, S21 등)에서는 고속 충전과 초고속 충전이 별도 옵션일 수 있으니 모델별로 메뉴명을 확인할 것. PC나 일반 USB 기기 연결 시에는 고속 충전이 작동하지 않음",
+      "cautionSource": "삼성전자서비스 25867 문서에서 S23 시리즈부터의 통합 설명"
+    },
+    {
+      "id": "pdo-vs-pps-charging-standard",
+      "claim": "PD 충전기는 두 가지 방식으로 나뉜다 — PDO(고정 전압)는 충전기에 정해진 5V, 9V, 15V, 20V 중 하나만 지원하고, PPS(가변 전압)는 3.3V~21.0V 범위에서 실시간 조정된다. PPS는 USB PD 3.0 표준 기반으로 각 구간에서 전류를 최적화한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 게임 중 USB PD 충전 일시정지 기능",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1324310",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 S 시리즈·Z 시리즈(PPS 대응 기종)",
+        "years": "2020년대 이후",
+        "region": "글로벌"
+      },
+      "caution": "게임 중 USB PD 충전 일시정지 같은 고급 기능은 PPS 지원 충전기(25W 이상)에서만 동작한다. 단순 충전 성능에는 PDO만으로도 충분",
+      "cautionSource": "삼성전자서비스 1324310 문서에서 PPS 25W 이상 기준 명시"
+    },
+    {
+      "id": "charger-wattage-compatibility-rule",
+      "claim": "갤럭시 충전 호환성은 충전기의 와트 규격에 따라 결정된다 — 25W 충전을 지원하는 기기는 25W 이상 정격의 PD 충전기와 호환되며, 기기가 충전기의 최대 와트를 지원하지 않으면 자동으로 기기의 최대값까지만 충전된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 유선·무선 충전기 호환성",
+      "source_url": "https://www.samsungsvc.co.kr/solution/38643",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "2010년대 이후",
+        "region": "글로벌"
+      },
+      "caution": "외관이 비슷한 충전기도 와트 규격이 다르면 충전 성능이 크게 다르다. 기기 매뉴얼에서 지원 와트를 확인한 후 같은 규격 이상의 정품 충전기를 선택할 것. 예를 들어 45W 충전기는 25W 기기도 호환되지만, 기기는 25W로만 충전됨",
+      "cautionSource": "삼성전자서비스 38643 문서에서 호환성 규격별 설명"
+    },
+    {
+      "id": "genuine-charger-importance",
+      "claim": "삼성 비정품 충전기와 케이블은 외관이 비슷해도 품질과 충전 성능이 크게 다르며, 비정품 사용 시 연결 실패, 저속 충전, 배터리·기기 손상 위험이 높다. 갤럭시 기기의 특성에 맞게 최적화된 정품 충전기 사용이 권장된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 유선 충전이 안 되거나 속도가 느림",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37805",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "wireless-charging-coil-positioning",
+      "claim": "갤럭시 기기마다 무선 충전 코일의 위치가 다르므로, 무선 충전기에 올렸을 때 기기에 충전 알림이 표시되도록 정렬을 미세 조정해야 정상 충전된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 초고속 충전 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/25867",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 무선충전 지원 기종(S 시리즈, Z 시리즈 등)",
+        "years": "2015년 이후",
+        "region": "글로벌"
+      },
+      "caution": "무선 충전 코일 위치는 기종별로 다르고 같은 시리즈 내에서도 프레임 색상·소재에 따라 달라질 수 있다"
+    },
+    {
+      "id": "safe-mode-entry-method",
+      "claim": "갤럭시는 부팅 시 삼성/갤럭시 로고가 나타나는 동안 음량(−) 버튼을 누르고 있으면 안전모드로 진입하며, 빠른 설정 패널에서 전원 아이콘 > 다시 시작을 선택하는 방법도 있다. 안전모드에서는 타사 앱이 모두 비활성화되어 앱 오류로 인한 기기 비정상 동작을 진단할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 휴대전화 부팅시 안전모드가 뜹니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40333",
+      "checked": "2026-07-20",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "안전모드 자체가 충전을 차단하지는 않으나, 충전 관련 앱의 오류(예: 배터리 관리 앱)를 진단하는 데 쓸 수 있다. 보호커버가 있으면 제거 후 시도"
+    }
+  ]
+}

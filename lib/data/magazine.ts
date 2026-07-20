@@ -18,6 +18,7 @@ export interface MagazineArticle {
   image?: { url: string; credit?: string; source?: string; link?: string }; // 대표(=images[0]) — OG·사이트맵·목록 카드용
   faq?: { q: string; a: string }[]; // 자주 묻는 질문(GEO·AI 이해용, RAIL 주석)
   sources?: { label: string; url: string }[]; // 근거 출처(제조사 공식 자가점검 등, RAIL 주석)
+  tags?: string[]; // 브랜드·모델명·에러코드 등 검색 태그(SEO — 해시태그·keywords·LD에 동시 사용)
   createdAt: string;
 }
 
@@ -43,6 +44,7 @@ function map(r: Row): MagazineArticle {
   let images: MagazineArticle["images"];
   let faq: MagazineArticle["faq"];
   let sources: MagazineArticle["sources"];
+  let tags: string[] | undefined;
   const m = bodyHtml.match(/^\s*<!--RAIL:([\s\S]*?)-->\s*/);
   if (m) {
     try {
@@ -53,6 +55,7 @@ function map(r: Row): MagazineArticle {
       else if (j.image && typeof j.image.url === "string") images = [j.image]; // 구 단수 image 하위호환
       if (Array.isArray(j.faq)) faq = j.faq.filter((x: { q?: unknown; a?: unknown }) => x && typeof x.q === "string" && typeof x.a === "string");
       if (Array.isArray(j.sources)) sources = j.sources.filter((x: { label?: unknown; url?: unknown }) => x && typeof x.label === "string" && typeof x.url === "string");
+      if (Array.isArray(j.tags)) tags = j.tags.filter((x: unknown) => typeof x === "string" && (x as string).trim()).map((x: string) => x.trim());
     } catch {
       /* ignore malformed rail */
     }
@@ -75,6 +78,7 @@ function map(r: Row): MagazineArticle {
     image: images?.[0],
     faq,
     sources,
+    tags,
     createdAt: r.created_at,
   };
 }
