@@ -1,0 +1,390 @@
+{
+  "topic": "갤럭시 버즈 한쪽 소리 안 들림·연결 문제·초기화 자가점검",
+  "brand": "삼성",
+  "article": "galaxy-buds-selfcheck",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "battery-swelling-stop-immediately",
+      "why": "배터리 팽창·과열은 갤럭시 버즈 특수 문제가 아닌 공통 안전 기준(공통_as-safety-baseline.json에서 재사용)이므로, 이 글의 자가점검 범위를 벗어남"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "one-side-no-sound-poor-insertion",
+      "claim": "갤럭시 버즈 한쪽만 소리가 안 들릴 때 첫 번째 확인 사항은 이어버드를 귀에 안정적으로 삽입했는지, 귀지나 이물질이 없는지 확인하는 것",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 버즈, 한 쪽 이어버드 소리가 잘 안들려요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/164819",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "one-side-no-sound-tip-size-mismatch",
+      "claim": "갤럭시 버즈 좌우 이어팁 사이즈가 다르면 한쪽 소리가 작거나 잘 안 들릴 수 있으므로, 양쪽 이어팁 크기를 맞춰야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 버즈, 한 쪽 이어버드 소리가 잘 안들려요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/164819",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "earbud-speaker-mesh-cleaning",
+      "claim": "갤럭시 버즈 이어버드 스피커 부분에 귀지나 이물질이 쌓이면 소리가 약해진다. 부드러운 솔을 클렌징 워터에 적셔 마이크 홀·스피커·공기 덕트 각 부분을 약 15초씩 닦은 후 종이 타월로 수분을 제거하고, 증류수로 다시 한 번 헹굼하여 완전히 건조시켜야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 버즈3 시리즈 청소 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/4216322",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈3 시리즈",
+        "years": "2023년 이후",
+        "region": "KR"
+      },
+      "caution": "청소 시 알코올이나 아세톤 같은 화학용제를 사용하지 말 것. 이어팁을 미리 분리하고, 뾰족한 물체로 무리하게 긁으면 마이크·스피커·센서 손상 위험이 있다. 완전히 건조한 후에 사용해야 한다",
+      "cautionSource": "삼성전자서비스 4216322 공식 청소 가이드의 주의사항 및 화학물질 금지 안내"
+    },
+    {
+      "id": "volume-balance-adjustment-accessibility",
+      "claim": "갤럭시 버즈 한쪽 소리가 약할 때, 스마트폰 설정 > 접근성 > 청각 보조에서 '연결된 오디오' 항목의 좌우 음량 바를 조정하여 음량 균형을 맞춘다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 버즈, 한 쪽 이어버드 소리가 잘 안들려요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/164819",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈 대부분 모델",
+        "years": "2020년대 이후",
+        "region": "KR"
+      },
+      "caution": "음량 균형 기능은 모든 갤럭시 버즈 모델에서 지원되지 않을 수 있다. 특히 갤럭시 버즈 SM-R170/R175는 지원하지 않는다. 또한 통화 중에는 이 기능이 작동하지 않는다",
+      "cautionSource": "삼성전자서비스 164819 문서에서 음량 균형 기능 미지원 모델 명시"
+    },
+    {
+      "id": "one-earbud-disconnected-repairing",
+      "claim": "갤럭시 버즈 한쪽만 연결되지 않을 때는 기존 페어링을 제거한 후 양쪽 이어버드를 모두 다시 페어링하면 양쪽 모두 사용 가능해진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 버즈 시리즈, 이어버드 연결 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/337194",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "manual-pairing-method-model-specific",
+      "claim": "갤럭시 버즈 페어링 팝업이 자동으로 나타나지 않을 때, 수동 페어링 방법은 모델에 따라 다르다: 버즈 4/4 프로는 충전 케이스 뒤의 연결 버튼을 3초 이상, 버즈 3/3 프로는 케이스 하단 버튼을 3초 이상, 버즈 2/2 프로는 양쪽 이어버드를 동시에 3초 이상, 구형 모델은 양쪽 터치패드를 동시에 3초 이상 누른다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 버즈 시리즈, 이어버드 연결 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/337194",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈 전 시리즈(버즈, 버즈+, 버즈 라이브, 버즈 2, 버즈 3, 버즈 4)",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "3분 내에 페어링이 완료되지 않으면 블루투스 등록이 자동으로 취소되며, 이 경우 충전 케이스를 닫았다가 다시 열어 페어링 모드를 재진입한다. 이전에 다른 기기와 연결된 상태면 그 기기와의 연결을 끊고 다시 시도해야 한다",
+      "cautionSource": "삼성전자서비스 337194 문서에서 3분 타임아웃 및 모델별 버튼 위치 명시"
+    },
+    {
+      "id": "pairing-permission-requirements",
+      "claim": "갤럭시 버즈 페어링 팝업이 나타나지 않을 때 원인은 위치 권한 비활성화일 수 있다. 갤럭시 웨어러블 앱 설치·연결 시 위치 정보, 근처 기기 검색, 알림 권한을 모두 허용해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 버즈 시리즈, 이어버드 연결 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/337194",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "factory-reset-via-wearable-app",
+      "claim": "갤럭시 버즈 초기화는 갤럭시 웨어러블 앱 실행 > 이어버드 설정 > 초기화 메뉴에서 화면 안내를 따라 진행한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 버즈+, 초기화하는 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/25700",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈+ 및 이후 시리즈",
+        "years": "2019년 이후",
+        "region": "KR"
+      },
+      "caution": "초기화는 모든 설정과 페어링 정보를 삭제하므로, 이후 재페어링이 필요하다"
+    },
+    {
+      "id": "factory-reset-manual-touchpad",
+      "claim": "갤럭시 웨어러블 앱 연결이 안 될 때는 충전 케이스에 이어버드를 양쪽 다 맞게 삽입한 후, 양쪽 이어버드의 터치패드를 동시에 7초 이상 누르면 페어링이 초기화된다. 배터리 표시등이 녹색으로 깜빡인 후 꺼지면 완료",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 버즈+, 초기화하는 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/25700",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈+ 및 이후 대부분 시리즈",
+        "years": "2019년 이후",
+        "region": "KR"
+      },
+      "caution": "터치패드 위치와 누르는 시간은 모델에 따라 다를 수 있다. 정확한 방법은 제품 매뉴얼을 확인할 것. 초기화 후에는 다시 페어링해야 한다",
+      "cautionSource": "삼성전자서비스 25700 문서에서 7초 이상 누르기와 LED 표시 안내"
+    },
+    {
+      "id": "charging-case-contact-cleaning-visual-check",
+      "claim": "갤럭시 버즈 충전 접점 청소의 첫 단계는 손전등 등으로 충전 포트 내부를 비춰 금속 단자 부분에 먼지나 이물질이 있는지 시각적으로 확인하는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 버즈, 유선 충전이 되지 않습니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1236930",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "charging-case-contact-cleaning-air",
+      "claim": "갤럭시 버즈 충전 포트에 먼지가 보이면 충전 포트 안으로 바람을 불어넣어 먼지와 이물질을 제거한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 버즈, 유선 충전이 되지 않습니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1236930",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "charging-case-terminal-water-cleaning",
+      "claim": "갤럭시 버즈 충전 케이스 내부의 충전 접점 청소는 면봉을 증류수에 적셔 충전 단자 부분을 부드럽게 닦은 후, 마른 면봉으로 모든 수분을 제거하고 완전히 건조시킨 후 충전을 시도한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 버즈3 시리즈 청소 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/4216322",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈3 시리즈",
+        "years": "2023년 이후",
+        "region": "KR"
+      },
+      "caution": "알코올이나 다른 화학용제를 사용하면 안 된다. 세정 후 반드시 완전히 건조시켜야 하며, 습기가 남아 있으면 충전 불량이 계속될 수 있다",
+      "cautionSource": "삼성전자서비스 4216322 청소 가이드의 화학물질 금지 및 건조 강조"
+    },
+    {
+      "id": "earbud-charging-terminal-cleaning",
+      "claim": "갤럭시 버즈 이어버드 스템의 충전 단자에도 땀·습기·이물질이 묻을 수 있으므로, 깨끗한 천이나 면봉으로 닦아주어야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 버즈3 시리즈 청소 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/4216322",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈3 시리즈",
+        "years": "2023년 이후",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "battery-imbalance-normal-range",
+      "claim": "갤럭시 버즈 좌우 배터리 용량 차이가 15% 이내인 것은 이어버드 특성상 정상 범위이며, 충전 회로의 완벽한 동기화 불가능과 한쪽을 마스터로 사용하는 구조 때문이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사용자 커뮤니티 보고 및 삼성 기술 특성",
+      "source_url": "https://jab-guyver.co.kr/6081",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈 플러스",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "15% 초과 차이가 지속되거나 한쪽이 급격히 방전되면 배터리 성능 저하나 충전 불량 문제일 수 있으니 서비스센터 점검이 필요하다",
+      "cautionSource": "사용자 커뮤니티 및 기술 자료에서 15% 정상 범위 언급"
+    },
+    {
+      "id": "battery-imbalance-usage-habit",
+      "claim": "한쪽 배터리가 더 빨리 떨어질 때 원인은 사용 습관일 수 있다 — 통화할 때 늘 같은 쪽만 귀에 끼우거나, 특정 쪽을 통화·음악·노이즈 캔슬링 등 더 많은 작업에 사용하면 그쪽 배터리가 더 빨리 노화된다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "갤럭시 버즈 사용자 커뮤니티 보고",
+      "source_url": "https://yellowit.co.kr/it-review/%EA%B0%A4%EB%9F%AD%EC%8B%9C-%EB%B2%84%EC%A6%88-%ED%95%9C%EC%AA%BD%EB%A7%8C-%EB%B9%A8%EB%A6%AC-%EB%8B%B3%EB%8A%94-%EC%9D%B4%EC%9C%A0%EC%99%80-%EB%B0%B0%ED%84%B0%EB%A6%AC-%EC%88%98%EB%A6%AC-%EB%B9%84",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "배터리 편차를 줄이려면 좌우 이어버드를 번갈아 사용하고, 양쪽의 충전 접점을 깨끗이 유지해야 한다"
+    },
+    {
+      "id": "auto-switch-feature-enable",
+      "claim": "갤럭시 버즈 자동 전환(오토 스위칭) 기능은 같은 삼성 계정으로 로그인한 여러 갤럭시 기기 간에 자동으로 연결을 전환하는 기능이며, 스마트폰 설정 > 연결 > 블루투스에서 연결된 버즈의 상세 설정에 진입하여 '다른 기기로 자동 전환' 토글을 켜면 된다. 갤럭시 웨어러블 앱에서도 '원활한 이어버드 전환' 옵션을 활성화해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 버즈2, 다른 디바이스로 자동 전환 기능",
+      "source_url": "https://www.samsungsvc.co.kr/solution/337190",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈 2 이후 모델",
+        "years": "2021년 이후",
+        "region": "KR"
+      },
+      "caution": "자동 전환은 One UI 3.1 이상과 같은 삼성 계정 로그인이 필수이며, 2개 기기에 최적화되어 있다. 3개 이상 기기에서는 성능 변화가 있을 수 있다",
+      "cautionSource": "삼성전자서비스 337190 문서에서 One UI 3.1 요구 및 2개 기기 최적화 명시"
+    },
+    {
+      "id": "auto-switch-troubleshooting-account",
+      "claim": "갤럭시 버즈 자동 전환이 작동하지 않을 때는 두 기기가 같은 삼성 계정으로 로그인되어 있는지 확인하고, 블루투스 설정과 갤럭시 웨어러블 앱의 '원활한 이어버드 전환' 옵션이 모두 활성화되어 있는지 점검한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 버즈2, 다른 디바이스로 자동 전환 기능",
+      "source_url": "https://www.samsungsvc.co.kr/solution/337190",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈 2 이후 모델",
+        "years": "2021년 이후",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "auto-switch-not-working-community-report",
+      "claim": "갤럭시 버즈 자동 전환 기능은 설정과 펌웨어가 모두 최신이어도 갤럭시 북과의 연결이 작동하지 않는다는 사용자 보고가 있으며, 이 경우 삼성 서비스센터 진단이 필요할 수 있다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "갤럭시 커뮤니티 및 Reddit 사용자 보고",
+      "source_url": "https://www.djthesoo.com/%ED%85%8C%ED%81%AC-%EA%B0%A4%EB%9F%AD%EC%8B%9C-%EB%B6%814-%ED%94%84%EB%A1%9C-%EB%B2%84%EC%A6%883-%ED%94%84%EB%A1%9C-%EC%9E%90%EB%8F%99-%EC%A0%84%ED%99%98/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈 2 프로, 버즈 3 프로, 버즈 4 프로",
+        "years": "2021년 이후",
+        "region": "글로벌"
+      },
+      "caution": "자동 전환은 설정만으로는 해결되지 않을 수 있으며, 펌웨어 업데이트 후에도 문제가 지속되는 경우가 보고되고 있다. 이 경우 삼성 서비스센터나 고객센터 1588-3366 문의가 필요"
+    },
+    {
+      "id": "galaxy-wearable-app-diagnostic-support",
+      "claim": "갤럭시 버즈 자가 진단 기능은 Samsung Members 앱을 통해 실행되며, 지원 모델은 갤럭시 버즈 2 프로이고 갤럭시 워치 4, 갤럭시 워치 5와 함께 지원된다. 진단을 위해서는 갤럭시 워치·버즈와 Samsung Members 앱, Galaxy Wearable 앱이 모두 최신 버전으로 업데이트되어야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 — 갤럭시 워치와 갤럭시 버즈 자가 진단 사용 방법",
+      "source_url": "https://r1.community.samsung.com/t5/%EC%86%90%EC%89%AC%EC%9A%B4-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95/%EC%82%BC%EC%84%B1-%EA%B0%A4%EB%9F%AD%EC%8B%9C-%EC%9B%8C%EC%B9%98%EC%99%80-%EA%B0%A4%EB%9F%AD%EC%8B%9C-%EB%B2%84%EC%A6%88-%EC%9E%90%EA%B0%80-%EC%A7%84%EB%8B%A8-%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95/ba-p/21432079",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰·웨어러블",
+        "line": "갤럭시 버즈 2 프로",
+        "years": "2021년 이후",
+        "region": "KR"
+      },
+      "caution": "자가 진단은 모든 갤럭시 버즈 모델에서 지원되지 않으며, 현재로서는 버즈 2 프로만 지원한다. 최신 모델도 시간이 경과해야 지원될 수 있다",
+      "cautionSource": "삼성 커뮤니티 21432079에서 버즈 2 프로 지원 명시"
+    },
+    {
+      "id": "earwax-debris-removal-cotton-swab",
+      "claim": "갤럭시 버즈2 이어버드 스피커에 귀지나 이물질이 쌓이면 부드럽고 보풀 없는 마른 천이나 면봉으로 마이크 홀·스피커·공기 덕트를 닦아낸다. 먼저 이어팁을 각 이어버드 하단에서 분리하고, 뾰족한 물체나 과도한 힘을 사용하지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 버즈2 착용 및 청소 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/393210",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈2·버즈2 프로",
+        "years": "2021년 이후",
+        "region": "KR"
+      },
+      "caution": "뾰족한 물체를 사용하면 마이크·스피커·센서가 손상될 수 있다. 완전히 건조시키고, 높은 음량은 왜곡을 유발할 수 있으므로 적절한 수준으로 조정"
+    },
+    {
+      "id": "bluetooth-range-environmental-factors",
+      "claim": "갤럭시 버즈 음질이 특정 장소에서만 좋지 않다면 네트워크 간섭일 가능성이 높다. 이어버드를 연결 기기로부터 10m 이내에 유지하고 벽·금속 물체 같은 장애물을 피해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 버즈2 착용 및 청소 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/393210",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈2·버즈2 프로",
+        "years": "2021년 이후",
+        "region": "글로벌"
+      },
+      "caution": "블루투스 범위는 환경 조건에 따라 달라질 수 있으며, 2.4GHz 대역 간섭(WiFi, 다른 무선 기기)이 있을 수 있다"
+    },
+    {
+      "id": "charging-case-moisture-detection",
+      "claim": "갤럭시 버즈 한쪽이 충전되지 않으면 충전 케이스의 스템 구멍(이어버드가 접촉하는 부분)에 습기나 땀이 남아 있을 가능성이 있다. 마른 천으로 닦은 후 완전히 건조시켜야 한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "갤럭시 버즈 사용자 경험",
+      "source_url": "https://yellowit.co.kr/it-review/%EA%B0%A4%EB%9F%AD%EC%8B%9C-%EB%B2%84%EC%A6%88-%ED%95%9C%EC%AA%BD%EB%A7%8C-%EB%B9%A8%EB%A6%AC-%EB%8B%B3%EB%8A%94-%EC%9D%B4%EC%9C%A0%EC%99%80-%EB%B0%B0%ED%84%B0%EB%A6%AC-%EC%88%98%EB%A6%AC-%EB%B9%84",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "이어폰",
+        "line": "갤럭시 버즈 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "습기는 충전 불량의 흔한 원인이며, 완전히 건조되지 않으면 계속 문제가 발생할 수 있다. 필요하면 충전 케이스 뚜껑을 열어둔 채로 24시간 이상 건조시킬 것"
+    }
+  ]
+}

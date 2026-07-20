@@ -19,12 +19,14 @@ interface Row { slug: string; corner: string; title: string; read_min: number | 
 
 function inspect(row: Row): { ok: boolean; reasons: string[] } {
   const body = row.body_html || "";
-  const plain = body.replace(/<!--[\s\S]*?-->/g, "").replace(/<[^>]+>/g, "").trim().length;
+  // RAIL 주석 제외 후 본문만 검사 — 이미지 크레딧의 외국어 실명은 정상 표기라 오탐을 막는다.
+  const bodyOnly = body.replace(/<!--[\s\S]*?-->/g, "");
+  const plain = bodyOnly.replace(/<[^>]+>/g, "").trim().length;
   const reasons: string[] = [];
   if ((row.read_min || 0) < 7) reasons.push(`read_min<7(${row.read_min ?? 0})`);
   if (plain < 1200) reasons.push(`본문<1200자(${plain})`);
-  if (CJK.test(body)) reasons.push("한자·외국문자 혼입");
-  const hasDesign = /DECISION TREE/.test(body) || /grid-template-columns/.test(body) || /rgba\(22,20,15,0\.12\)/.test(body);
+  if (CJK.test(bodyOnly)) reasons.push("한자·외국문자 혼입");
+  const hasDesign = /DECISION TREE/.test(bodyOnly) || /grid-template-columns/.test(bodyOnly) || /rgba\(22,20,15,0\.12\)/.test(bodyOnly);
   if (!hasDesign) reasons.push("디자인블록 없음");
   return { ok: reasons.length === 0, reasons };
 }

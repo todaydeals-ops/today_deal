@@ -1,0 +1,350 @@
+{
+  "topic": "경동나비엔 보일러 에러코드와 온수·난방 자가진단",
+  "brand": "경동나비엔",
+  "article": "kyungdong-boiler-error",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "kyungdong-errorcode-e01-overheating",
+      "claim": "경동나비엔 보일러 E01 에러는 열교환기 과열 또는 비등 현상이 발생한 상태로, 난방 회로 물 순환 부족 또는 각방 분배기 폐쇄가 주요 원인이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 · 블로그 · AS 정보 공유",
+      "source_url": "https://innks.github.io/2017/11/29/NAVIEN-Error-List/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "각방 분배기가 열려 있는데도 반복되면 내부 센서 이상 가능성 → 전문가 점검 필수"
+    },
+    {
+      "id": "kyungdong-errorcode-e02-low-water",
+      "claim": "경동나비엔 보일러 E02 에러는 난방 회로 내 물이 부족한 저수위 상태로, 수도 단수·냉수 직수 밸브 폐쇄·배관 누수 등이 원인이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 · 블로그",
+      "source_url": "https://innks.github.io/2017/11/29/NAVIEN-Error-List/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "수동 급수 모델의 경우 손잡이 좌우 움직임으로 직접 물을 채우는 방식이 있음 → 설명서 확인 필요"
+    },
+    {
+      "id": "kyungdong-errorcode-e03-ignition-failure",
+      "claim": "경동나비엔 보일러 E03 에러는 보일러 점화 실패(불착화)로, 가스 공급 중단·가스 밸브 폐쇄·겨울철 배기 호스 결빙 등이 원인이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 · 블로그",
+      "source_url": "https://innks.github.io/2017/11/29/NAVIEN-Error-List/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "E03 발생 시 다른 가전(가스렌지 등)에서 먼저 가스 공급 확인. 배기 호스 결빙 시 50℃ 미만의 상온수로 해동. ⚠️ 가스 냄새가 나면 즉시 사용 중단, 환기, 가스공급사 신고(도시가스 121)",
+      "cautionSource": "사용자 커뮤니티 · 도시가스 안전 가이드 / 50℃는 일반적 온도 기준, 121은 도시가스 고객센터"
+    },
+    {
+      "id": "kyungdong-errorcode-e04-sensor-error",
+      "claim": "경동나비엔 보일러 E04 에러는 불꽃 센서 오류로, 실제 점화 완료 없이 불꽃이 잘못 감지된 상태이며 대부분 전문가 점검이 필요하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티",
+      "source_url": "https://innks.github.io/2017/11/29/NAVIEN-Error-List/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "kyungdong-errorcode-e10-air-pressure",
+      "claim": "경동나비엔 보일러 E10 에러는 공기압 이상 또는 순환계 압력 이상으로, 겨울철 응축수 배출 호스 결빙이 주요 원인이며 50℃ 미만의 상온수로 해동하면 해결되는 경우가 많다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 · 블로그",
+      "source_url": "https://innks.github.io/2017/11/29/NAVIEN-Error-List/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "콘덴싱 보일러는 배출가스 온도가 낮아 응축수가 생기고, 이 물이 영하에서 얼어 역압을 발생시킴. 전원 리셋(15초) 또는 배기 호스 해동으로 해결되지 않으면 펌프 이상 가능",
+      "cautionSource": "사용자 커뮤니티 / 15초는 일반적인 전자제품 소프트 리셋 시간"
+    },
+    {
+      "id": "kyungdong-errorcode-e16-bimetal-overheat",
+      "claim": "경동나비엔 보일러 E16 에러는 과열 방지 바이메탈이 트립되어 자동 차단된 상태로, E01과 유사하게 난방수 순환 부족 또는 내부 온도 센서 이상이 원인이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 · 블로그",
+      "source_url": "https://innks.github.io/2017/11/29/NAVIEN-Error-List/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "각방 분배기가 열려 있는데도 반복되면 내부 센서 이상 → 전문가 점검 필수"
+    },
+    {
+      "id": "kyungdong-hotwater-no-output-checklist",
+      "claim": "경동나비엔 보일러에서 온수가 안 나올 때 자가점검 순서는 전원 확인 → 수도 밸브 개방 → 보일러 냉수 직수 밸브 개방 → 온수 모드 확인 → 동파 여부 확인 → 가스 공급 확인이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 · 블로그 · AS 정보 공유",
+      "source_url": "https://wealthy.naturelove40.com/2025/11/as.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "보일러 냉수 직수 밸브는 파란색/검은색 손잡이로 반시계 방향으로 끝까지 돌려 완전히 개방. 겨울철 동파 방지용으로 의도적으로 수도 메인 밸브를 닫아두는 경우가 있으니 확인 필수"
+    },
+    {
+      "id": "kyungdong-heating-no-output-checklist",
+      "claim": "경동나비엔 보일러에서 난방이 안 될 때 자가점검 순서는 난방 모드 및 온도 설정 확인 → 각방 분배기 밸브 개방 → 배관 내 공기 제거(프라이밍) → 압력 확인 → 배관 막힘 여부 확인이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 · 클리앙",
+      "source_url": "https://www.clien.net/service/board/kin/16598229",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "일부 방만 안 데워지면 그 방의 분배기 밸브가 폐쇄된 경우. 여름철 오래 사용하지 않은 후 겨울에 처음 켤 때는 공기 빼기 밸브를 열어 배관 내 공기를 제거해야 함"
+    },
+    {
+      "id": "kyungdong-water-pressure-normal-range",
+      "claim": "경동나비엔 보일러의 정상 난방수 압력 범위는 1.0~1.5 bar이며, 압력계는 보일러 전면에 바늘 게이지 형태로 표시된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 · 블로그",
+      "source_url": "https://wealthy.naturelove40.com/2025/11/as.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "제조사·모델에 따라 0.8~2.0 bar를 기준으로 하는 경우도 있으니 설명서 확인 권장. 압력이 너무 낮거나 높으면 에러 또는 성능 저하 발생"
+    },
+    {
+      "id": "kyungdong-water-refill-procedure",
+      "claim": "경동나비엔 보일러 난방수 보충은 보일러 하단의 보충수 밸브(파란색/검은색 손잡이)를 반시계 방향으로 천천히 열어 압력계 바늘이 1.2~1.3 bar에 도달하면 다시 시계 방향으로 잠그는 방식이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 · 블로그",
+      "source_url": "https://wealthy.naturelove40.com/2025/11/as.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "수도꼭지처럼 부드럽게 다루고 꽉 조이지 말 것. 물이 나오지 않으면 수도 메인 밸브가 닫혀 있을 가능성. 여러 번 보충해도 압력이 올라가지 않으면 누수 → 전문가 점검"
+    },
+    {
+      "id": "kyungdong-air-purge-procedure",
+      "claim": "경동나비엔 보일러 압력이 높을 때(2.0 bar 이상) 공기 빼기 밸브(보통 빨간색, 상단에 위치)를 반시계 방향으로 천천히 열어 물이 나올 때까지 돌렸다가 압력이 1.2~1.3 bar로 내려가면 다시 닫는다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 · 블로그",
+      "source_url": "https://wealthy.naturelove40.com/2025/11/as.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "공기 빼기 밸브에서 물이 계속 새어 나오면 밸브 교체 필요"
+    },
+    {
+      "id": "kyungdong-winterization-setting",
+      "claim": "경동나비엔 보일러의 겨울철 동파 방지 외출 설정은 보일러 전원을 켜두고 실내온도조절기를 5~10℃로 설정하거나 '겨울 외출' 모드를 선택하는 것이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티",
+      "source_url": "https://249.srsiti.com/entry/경동나비엔-보일러-온수가-안-나올-때-어떻게-해야-할까요",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "수도 밸브는 절대 닫으면 안 됨 (고인 물이 얼 수 있음). 실외 노출 배관은 보온재로 감싸기"
+    },
+    {
+      "id": "kyungdong-frozen-pipe-thawing",
+      "claim": "경동나비엔 보일러 배관이 동파되면 따뜻한 물(50℃ 미만 상온수)을 배관에 부어 해동하거나, 보온재로 감싸거나, 급할 때는 드라이어 따뜻한 바람으로 녹일 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티",
+      "source_url": "https://249.srsiti.com/entry/경동나비엔-보일러-온수가-안-나올-때-어떻게-해야-할까요",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "kyungdong-condensing-exhaust-ice-risk",
+      "claim": "경동나비엔 콘덴싱 보일러는 배출가스 폐열 회수로 인해 배출 온도가 낮아져 응축수가 생기며, 영하에서 배출 호스(회색/흰색 사각파이프)가 얼면 E10 에러가 발생한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 · 블로그",
+      "source_url": "https://innks.github.io/2017/11/29/NAVIEN-Error-List/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "배출구 주변을 보온재로 미리 감싸서 예방 권장. 얼음이 생기면 50℃ 미만의 상온수로 해동",
+      "cautionSource": "사용자 커뮤니티 / 50℃는 겨울철 동파 방지의 일반적 기준 온도"
+    },
+    {
+      "id": "kyungdong-gas-smell-emergency-procedure",
+      "claim": "경동나비엔 보일러에서 가스 냄새가 나면 즉시 사용 중단, 환기(창문·환기구 개방), 가스공급사 신고(도시가스 121)를 해야 하며, 전기 스위치는 조작하지 말아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "가스안전관리제도 · 도시가스 안전 가이드",
+      "source_url": "https://www.khan.co.kr/article/202511061416001",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "⚠️ 가스 누출은 생명과 직결되므로 의심되면 즉시 조치. 스파크로 인한 화재 위험이 있으므로 스위치를 만지지 말 것"
+    },
+    {
+      "id": "kyungdong-exhaust-outlet-abnormality-signs",
+      "claim": "경동나비엔 보일러 배기 배출구의 이상 신호는 배출구에서 물 또는 결로가 흘러내림, 검은 매연/그을음, 실내 매운 냄새/타는 냄새, CO 경보기 울림 등이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "겨울철 보일러 화재·일산화탄소 중독 예방 가이드",
+      "source_url": "https://www.khan.co.kr/article/202511061416001",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "⚠️ 위의 신호가 나타나면 즉시 환기, 보일러 중단, 전문가 점검 필수. 배출구 얼음은 50℃ 미만 상온수로 해동 가능하지만, 매연이나 냄새가 동반되면 점검 필요",
+      "cautionSource": "겨울철 보일러 화재·일산화탄소 중독 예방 가이드 / 50℃는 겨울철 동파 방지의 일반적 기준 온도"
+    },
+    {
+      "id": "kyungdong-exhaust-outlet-maintenance",
+      "claim": "경동나비엔 보일러 배기 배출구는 외부에 완전히 노출되어야 하며, 배출구 주변 30cm 이내에 물건이 없어야 하고, 보일러실은 24시간 환기를 유지해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "겨울철 보일러 화재·일산화탄소 중독 예방 가이드 · 경동나비엔 제품 정보",
+      "source_url": "https://www.khan.co.kr/article/202511061416001",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "배출구 막힘 또는 비규정 덕트 사용은 일산화탄소 역유입 위험. 새 둥지, 눈, 얼음 등 정기적 점검"
+    },
+    {
+      "id": "kyungdong-condensing-boiler-co-safety",
+      "claim": "경동나비엔 콘덴싱 보일러는 CO 안전 뉴매틱 밸브(Pneumatic Valve)를 적용하여 공기와 가스 최적 비율을 유지하며, 태풍·강풍 등 악천후에서도 CO 가스 배출을 억제한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "경동나비엔 제품 사양",
+      "source_url": "https://www.kdnavien.co.kr/product/detail/2119",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "kyungdong-co-detector-mandatory",
+      "claim": "2020년 8월 5일 이후 생산한 경동나비엔 친환경 콘덴싱 보일러는 일산화탄소 경보기를 반드시 함께 부착해 판매한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "가스보일러 안전 규제 · 경동나비엔 제품 사양",
+      "source_url": "https://www.khan.co.kr/article/202511061416001",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2020.08~현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "kyungdong-customer-center",
+      "claim": "경동나비엔 행복나눔 콜센터 전화번호는 1588-1144로, 에러코드 상담·A/S 신청·기술 지원을 담당한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사용자 커뮤니티 · 블로그",
+      "source_url": "https://innks.github.io/2017/11/29/NAVIEN-Error-List/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "경동나비엔",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      }
+    }
+  ]
+}

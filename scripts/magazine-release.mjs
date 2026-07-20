@@ -21,11 +21,14 @@ const rest = (path, init = {}) => fetch(`${URL}/rest/v1/${path}`, { ...init, hea
 const CJK = /[㐀-䶿一-鿿Ѐ-ӿ぀-ゟ゠-ヺヽ-ヿ]/; // 한자·키릴·일본어 가나
 function inspect(row) {
   const body = row.body_html || "";
-  const plain = body.replace(/<!--[\s\S]*?-->/g, "").replace(/<[^>]+>/g, "").trim().length;
+  // RAIL 주석 제거 후 본문만 검사. 이미지 크레딧(사진작가 실명)에 키릴·한자가 들어가는데
+  // 그건 원문 표기가 맞으므로 품질 검사 대상이 아니다.
+  const bodyOnly = body.replace(/<!--[\s\S]*?-->/g, "");
+  const plain = bodyOnly.replace(/<[^>]+>/g, "").trim().length;
   const reasons = [];
   if ((row.read_min || 0) < 7) reasons.push(`read_min<7(${row.read_min ?? 0})`);
   if (plain < 1200) reasons.push(`본문<1200자(${plain})`);
-  if (CJK.test(body)) reasons.push("한자·외국문자 혼입");
+  if (CJK.test(bodyOnly)) reasons.push("한자·외국문자 혼입");
   // 디자인 블록: 의사결정트리(DTREE) / 표(TABLE·VS) / 번호목록(NUMLIST) 중 하나는 있어야
   const hasDesign = /DECISION TREE/.test(body) || /grid-template-columns/.test(body) || /rgba\(22,20,15,0\.12\)/.test(body);
   if (!hasDesign) reasons.push("디자인블록(표·의사결정트리·번호목록) 없음");

@@ -1,0 +1,194 @@
+{
+  "topic": "iptime 공유기 인터넷 끊김·느림·접속 불가 자가점검",
+  "brand": "iptime",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "iptime-admin-page-access-address",
+      "claim": "iptime 공유기 관리자 페이지는 웹 브라우저 주소창에 192.168.0.1을 입력해 접속하며, 대부분의 모델에서 이 주소가 기본값이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "iptime 관련 사용자 가이드 및 커뮤니티",
+      "source_url": "https://yellowit.co.kr/it-review/%EC%95%84%EC%9D%B4%ED%94%BC%ED%83%80%EC%9E%84-%EA%B3%B5%EC%9C%A0%EA%B8%B0-%EA%B4%80%EB%A6%AC%EC%9E%90%EA%B3%84%EC%A0%95-%EC%A0%91%EC%86%8D%EB%B0%A9%EB%B2%95/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "iptime",
+        "category": "공유기",
+        "line": "무선 공유기 전 라인",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "통신사 공유기 하위에 iptime을 추가 연결했거나 메시 구성을 사용 중이라면 IP 주소가 다를 수 있으므로, Windows의 ipconfig 명령어로 기본 게이트웨이를 확인하고 그 주소로 접속해야 한다.",
+      "cautionSource": "사용자 가이드 — iptime 공식 커뮤니티"
+    },
+    {
+      "id": "iptime-admin-default-password",
+      "claim": "iptime 공유기 관리자 기본 계정은 admin/admin이지만, 초기 설치 시 사용자가 관리자 계정과 비밀번호를 직접 설정했다면 그 정보를 사용해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "iptime 사용자 가이드",
+      "source_url": "https://leonbardt.blogspot.com/2026/05/iptime-19216801.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "iptime",
+        "category": "공유기",
+        "line": "무선 공유기 전 라인",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "비밀번호를 분실했으면 공유기를 공장 초기화(RST 버튼)해야 하며, 그렇게 하면 모든 설정이 초기화되므로 주의가 필요하다."
+    },
+    {
+      "id": "iptime-rst-button-hard-reset",
+      "claim": "iptime 공유기의 RST 버튼(공장 초기화)은 볼펜이나 이쑤시개 같은 뾰족한 도구로 CPU 램프가 빠르게 깜빡일 때까지 약 10초 동안 누르면 된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "iptime 초기화 가이드 — 사용자 커뮤니티",
+      "source_url": "https://itmanual.net/%EC%95%84%EC%9D%B4%ED%94%BC%ED%83%80%EC%9E%84-iptime-%EA%B3%B5%EC%9C%A0%EA%B8%B0-%EC%B4%88%EA%B8%B0%ED%99%94-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "iptime",
+        "category": "공유기",
+        "line": "무선 공유기 전 라인",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "1~2초만 짧게 누르면 공장 초기화가 아니라 단순 재부팅만 되어 기존 설정이 유지된다. 공장 초기화는 반드시 CPU LED가 깜빡일 때까지(약 10초) 눌러야 한다.",
+      "cautionSource": "iptime 초기화 매뉴얼"
+    },
+    {
+      "id": "iptime-reboot-sequence-modem-first",
+      "claim": "인터넷 끊김·느림 증상 시 재부팅은 모뎀과 공유기의 전원 플러그를 뽑은 후 1~2분 대기하고 다시 연결하는 순서로 진행한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "iptime 트러블슈팅 가이드",
+      "source_url": "https://tmddls.com/posts/2026/iptime-router-connection-fix/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "iptime",
+        "category": "공유기",
+        "line": "무선 공유기 전 라인",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "1~2분의 대기 시간은 모뎀과 공유기의 캐시를 완전히 초기화하는 데 필요하며, 너무 빨리 다시 연결하면 문제가 해결되지 않을 수 있다.",
+      "cautionSource": "iptime 트러블슈팅 가이드"
+    },
+    {
+      "id": "iptime-wps-button-function",
+      "claim": "iptime 공유기의 WPS(Wi-Fi Protected Setup) 버튼은 누르면 공유기의 LED 상태 등이 2분간 점등되는 동안 다른 기기의 WPS 기능으로 간편하게 연결할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "iptime 무선 설정 가이드",
+      "source_url": "http://www.mygnit.co.kr/bbs/board.php?bo_table=bo_02&wr_id=24",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "iptime",
+        "category": "공유기",
+        "line": "무선 공유기 전 라인 (WPS 지원 모델)",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "iptime-wireless-channel-manual-setting",
+      "claim": "iptime 공유기의 무선 채널은 192.168.0.1의 관리자 페이지에서 기본설정 → 무선설정/보안 메뉴의 [채널 검색] 버튼으로 간섭 없는 빈 채널을 찾아 자동으로 설정할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "iptime 무선 설정 매뉴얼",
+      "source_url": "https://iptime.com/iptime/?mod=document&page=2&page_id=67&pd=1&pf=3&pt=231&uid=25931",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "iptime",
+        "category": "공유기",
+        "line": "무선 공유기 전 라인",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "iptime-bandwidth-setting-options",
+      "claim": "iptime 공유기는 무선 채널 대역폭을 자동, 20MHz, 40MHz 중에서 선택할 수 있으며, 이는 무선 설정/보안 메뉴에서 변경 가능하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "iptime 무선 설정 가이드",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4_%EB%8A%90%EB%A6%B4_%EB%95%90_ipTIME_%EA%B3%B5%EC%9C%A0%EA%B8%B0_%EC%B1%84%EB%84%90_%EB%B3%80%EA%B2%BD%EC%9C%BC%EB%A1%9C_%EC%86%8D%EB%8F%84_%ED%99%95_%EC%98%AC%EB%A6%AC%EB%8A%94_%EB%B2%95_%EC%B4%9D%EC%A0%95%EB%A6%AC!-58403",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "iptime",
+        "category": "공유기",
+        "line": "무선 공유기 전 라인",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "iptime-2g4-vs-5g-characteristics",
+      "claim": "iptime 공유기의 2.4GHz 대역은 신호 범위가 넓고 벽을 통과하기 쉬우며, 5GHz 대역은 간섭이 적고 더 빠른 속도를 제공한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "무선 공유기 특성 설명 — iptime 커뮤니티",
+      "source_url": "https://yellowit.co.kr/it-review/%EC%BB%B4%ED%93%A8%ED%84%B0-%EC%9C%88%EB%8F%84%EC%9A%B0/%EC%95%84%EC%9D%B4%ED%94%BC%ED%83%80%EC%9E%84-%EA%B3%B5%EC%9C%A0%EA%B8%B0-%EB%AC%B4%EC%84%A0-%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4-%EC%84%A4%EC%A0%95/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "iptime",
+        "category": "공유기",
+        "line": "무선 공유기 (듀얼밴드 이상)",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "iptime-firmware-upgrade-availability",
+      "claim": "iptime 공유기의 펌웨어 업그레이드는 192.168.0.1의 관리자 페이지에서 시스템 설정이나 관리 메뉴에서 조회 및 업데이트할 수 있다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "iptime 공식 지원 페이지",
+      "source_url": "https://iptime.com/iptime/?page_id=67",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "iptime",
+        "category": "공유기",
+        "line": "무선 공유기 전 라인",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "iptime-specific-device-connection-failure",
+      "claim": "특정 기기만 iptime 공유기에 연결되지 않을 때는 해당 기기의 무선 설정을 재설정하거나 공유기의 보안 암호화 방식(WPA2/WPA3)이 해당 기기와 호환되는지 확인해야 한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "iptime 트러블슈팅 커뮤니티 글",
+      "source_url": "https://iptime.com/iptime/?page_id=67",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "iptime",
+        "category": "공유기",
+        "line": "무선 공유기 전 라인",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "iptime-admin-page-gateway-confirmation",
+      "claim": "iptime 공유기의 관리자 페이지에 접속하지 못할 때는 Windows 명령 프롬프트에서 ipconfig를 실행해 기본 게이트웨이(Default Gateway)를 확인하고, 그 IP 주소로 접속해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "iptime 관리자 페이지 접속 가이드",
+      "source_url": "https://leonbardt.blogspot.com/2026/05/iptime-19216801.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "iptime",
+        "category": "공유기",
+        "line": "무선 공유기 전 라인",
+        "years": "현행",
+        "region": "KR"
+      }
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "topic": "에어팟 한쪽 안 들림·연결 안 됨 자가진단",
+  "brand": "애플",
+  "article": "airpods-selfcheck",
+  "captured": "2026-07-21",
+  "reused_facts": ["battery-swelling-stop-immediately"],
+  "declined_facts": [
+    {
+      "id": "iphone-force-restart-generation-split",
+      "why": "아이폰 강제 재시작이며, 에어팟 리셋과 다른 절차"
+    },
+    {
+      "id": "iphone-battery-menu-split",
+      "why": "아이폰 배터리 성능 메뉴이며, 에어팟 배터리와 무관"
+    },
+    {
+      "id": "iphone-recovery-mode-data",
+      "why": "아이폰 복구 모드이며, 에어팟과 무관"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "airpods-single-side-not-working-checklist",
+      "claim": "에어팟 한쪽이 소리가 안 날 때 확인 순서는 다음과 같다: (1) 충전 케이스가 충전되어 있는지, 케이스 내 두 에어팟이 모두 30초 이상 충전되는지 확인, (2) 각 에어팟의 스피커와 마이크 메시에 이물질이 있는지 눈으로 확인, (3) 설정 > 손쉬운 사용 > 오디오/시각 > 밸런스에서 중앙에 맞춰져 있는지 확인, (4) 위 방법들이 효과 없으면 에어팟을 리셋한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your left or right AirPod isn't working",
+      "source_url": "https://support.apple.com/en-us/100494",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "무선 이어폰", "line": "AirPods 전 모델", "years": "전 연식", "region": "글로벌" },
+      "caution": "배터리 확인 시 iOS 기기의 위젯이나 충전 케이스 옆 상태 LED를 함께 확인할 것.",
+      "cautionSource": "Apple Support 원문의 체크리스트 순서"
+    },
+    {
+      "id": "airpods-cleaning-micellar-water-method",
+      "claim": "에어팟의 스피커·마이크 메시 청소는 마이셀러 워터(micellar water)를 칫솔에 적셔 15초간 원형으로 문질러서 하며, 뒤집어 휴지에 톡 두드려 물기를 제거하고, 최소 2시간 이상 완전 건조시킨 후 사용해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — How to clean your AirPods",
+      "source_url": "https://support.apple.com/en-us/102672",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "무선 이어폰", "line": "AirPods 전 모델", "years": "전 연식", "region": "글로벌" },
+      "caution": "물이나 알코올, 금속 도구 사용은 절대 금지. 마이셀러 워터 대신 일반 물이나 초음파 청소기도 손상 위험이 있다. 건조 시간을 충분히 확보하지 않으면 케이스 내 수분으로 인한 단락 위험.",
+      "cautionSource": "Apple Support 청소 방법 문서"
+    },
+    {
+      "id": "airpods-reset-procedure-model-variation",
+      "claim": "에어팟 리셋은 모델별로 다르다: AirPods 1·2·3 또는 AirPods Pro 1·2는 케이스에 넣고 뚜껑 닫아 30초 대기 후, 뚜껑 열어 뒤쪽 세팅 버튼을 약 15초 누르면 상태 LED가 호박색에서 흰색으로 깜빡인다. AirPods Pro 3과 AirPods 4는 케이스 뚜껑을 닫아 30초 대기 후, 뚜껑 열어 케이스 앞면을 세 번 빠르게 더블탭한다. AirPods Max는 오른쪽 이어컵의 Digital Crown과 리스닝 모드 버튼을 동시에 약 15초 누르면 포트 옆 상태 LED가 호박색에서 흰색으로 깜빡인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — How to reset your AirPods and AirPods Pro",
+      "source_url": "https://support.apple.com/en-us/118531",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "무선 이어폰", "line": "AirPods 1/2/3, Pro 1/2/3, Max, AirPods 4", "years": "전 연식", "region": "글로벌" },
+      "caution": "모델별로 버튼 위치와 동작이 크게 다르다. 사용자의 정확한 에어팟 모델을 먼저 확인한 후 해당 절차만 안내할 것. 상태 LED의 색 변화가 리셋 성공의 유일한 지표다.",
+      "cautionSource": "Apple Support 모델별 리셋 절차"
+    },
+    {
+      "id": "airpods-unpair-and-reconnect",
+      "claim": "에어팟 연결 문제는 '설정 > AirPods 이름(상단 표시) > 이 기기에서 제거'를 선택해 페어링을 초기화한 후, 케이스 뚜껑을 열어 기기 근처에 두고 자동 재연결을 기다린다. 자동 재연결이 안 되면 기기의 Bluetooth 설정에서 '새 기기 페어링'을 시작하고 에어팟을 재설정하면 다시 인식된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Unpair, restart, or reset your AirPods",
+      "source_url": "https://support.apple.com/guide/airpods/restart-unpair-or-reset-airpods-iph561965261/web",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "무선 이어폰", "line": "AirPods 전 모델", "years": "전 연식", "region": "글로벌" },
+      "caution": "한 기기에서 제거하면 같은 Apple 계정의 모든 기기에서 제거된다. 제거 후 재연결이 안 되는 경우는 에어팟 자체 리셋이 필요할 수 있다.",
+      "cautionSource": "Apple Support 페어링 문서"
+    },
+    {
+      "id": "airpods-firmware-update-procedure",
+      "claim": "에어팟 펌웨어 업데이트는 자동으로 진행되며, 수동으로 확인하려면 충전 케이스를 전원에 연결하고 에어팟을 케이스에 넣은 후 뚜껑을 닫은 상태에서 최소 30분 이상 기다린다. 기기가 Wi-Fi에 연결되어 있어야 업데이트가 진행된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — About firmware updates for AirPods",
+      "source_url": "https://support.apple.com/en-us/106340",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "무선 이어폰", "line": "AirPods Pro, AirPods Max 등 펌웨어 지원 모델", "years": "2016~", "region": "글로벌" },
+      "caution": "업데이트 중 에어팟을 꺼내거나 케이스 뚜껑을 열면 실패할 수 있다. 30분은 최소치이며, 대규모 업데이트는 더 오래 걸릴 수 있다.",
+      "cautionSource": "Apple Support 펌웨어 업데이트 안내"
+    },
+    {
+      "id": "airpods-uneven-battery-drain-normal-variance",
+      "claim": "에어팟 좌우 배터리 표시가 3~4% 차이나는 것은 정상이다. 정상 범위는 한쪽만 자주 사용하거나 음성 통화로 한쪽 마이크만 많이 쓰인 경우다. 이 경우 리셋을 시도하면 배터리 관리가 재설정되면서 차이가 줄어들 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "Apple Community discussions, iFixit, iDownloadBlog 배터리 편차 관련 사용자 보고 및 기술 커뮤니티",
+      "source_url": "https://discussions.apple.com/thread/251591588",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "무선 이어폰", "line": "AirPods Pro 및 최신 모델", "years": "2020~", "region": "글로벌" },
+      "caution": "5% 이상 차이나면 비정상이며, 신제품에서 발생 시 Apple 서비스센터 점검이 필요할 수 있다. 개별 기기 결함보다는 소프트웨어 배터리 관리 오류일 가능성이 높다.",
+      "cautionSource": "Apple Community 및 기술 커뮤니티의 다중 사용자 보고에서 3~4% 허용치 언급"
+    },
+    {
+      "id": "airpods-automatic-ear-detection-toggle",
+      "claim": "에어팟의 자동 귀 감지(Automatic Ear Detection) 기능은 에어팟을 귀에 넣으면 오디오를 자동으로 재개하고, 꺼내면 일시정지한다. 이 기능을 끄려면 iPhone/iPad의 '설정 > AirPods 이름(상단 표시) > 자동 귀 감지'를 토글 오프하거나, Mac에서 '시스템 설정 > AirPods > 자동 귀 감지'를 끈다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Change settings for AirPods or AirPods Pro",
+      "source_url": "https://support.apple.com/guide/airpods/change-settings-for-airpods-or-airpods-pro-dev57e5b7e58/web",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "무선 이어폰", "line": "자동 귀 감지 지원 모델 (Pro, 최신 표준)", "years": "2016~", "region": "글로벌" },
+      "caution": "이 기능을 끄면 에어팟을 끼워도 음악이 자동으로 나오지 않으므로, 음성 연속성이 필요한 경우에만 비추천. 해제해야 할 특정 상황이 있는지 사용자와 확인할 것.",
+      "cautionSource": "Apple Support 설정 문서"
+    },
+    {
+      "id": "airpods-microphone-automatic-switching",
+      "claim": "에어팟은 통화나 음성 녹음 시 한쪽 에어팟의 마이크만 사용하며, 자동 마이크 전환이 켜져 있으면 사용 패턴에 따라 어느 쪽 마이크를 쓸지 자동 선택된다. 이 때문에 한쪽 에어팟만 자주 사용하면 그쪽 배터리가 더 빨리 소모될 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "iDownloadBlog, Apple Community — AirPods microphone usage and battery drain",
+      "source_url": "https://www.idownloadblog.com/2023/07/25/how-to-fix-uneven-left-and-right-airpods-battery-discharge/",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "무선 이어폰", "line": "마이크 지원 모델 (Pro, 표준 3 이상)", "years": "2016~", "region": "글로벌" },
+      "caution": "자동 마이크 전환을 끄면 고정된 한쪽 마이크만 쓰게 되어 배터리 편차가 더 심해질 수 있다. 밸런스를 맞추려면 자동 전환을 유지하고 양쪽 사용을 고르게 하는 것이 낫다.",
+      "cautionSource": "기술 커뮤니티의 마이크 사용 패턴과 배터리 소모 상관관계 보고"
+    },
+    {
+      "id": "airpods-cleaning-what-not-to-do",
+      "claim": "에어팟 청소 시 금속 도구(핀, 면봉 와이어 등), 물, 알코올(이소프로필 알코올 포함), 초음파 청소기 사용은 절대 금지다. 이들은 마이크와 스피커 메시를 손상시키거나 내부 전자 부품에 침투할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — How to clean your AirPods",
+      "source_url": "https://support.apple.com/en-us/102672",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "무선 이어폰", "line": "AirPods 전 모델", "years": "전 연식", "region": "글로벌" },
+      "caution": "사용자들이 금속 도구(이어 픽)로 메시를 긁으려 하는 경우가 많으니 이를 명시적으로 금지할 것. 손상된 에어팟 수리는 공식 서비스만 가능하다.",
+      "cautionSource": "Apple Support 청소 안내의 금지 사항 섹션"
+    },
+    {
+      "id": "airpods-muffled-or-low-sound-causes",
+      "claim": "에어팟 소리가 먹먹하거나 작을 때 원인은 대부분 메시 이물질, 액티브 노이즈 캔슬레이션(ANC) 설정, 밸런스 설정 오류다. 메시 청소와 설정 확인으로 해결되지 않으면 ANC를 일시 끄고(또는 투명 모드로 전환) 다시 테스트해볼 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your left or right AirPod isn't working",
+      "source_url": "https://support.apple.com/en-us/100494",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "무선 이어폰", "line": "ANC 지원 모델 (Pro, Max)", "years": "2019~", "region": "글로벌" },
+      "caution": "ANC가 켜져 있으면 에어팟의 센서가 귀 형태와 음악을 분석하므로, 이로 인한 음질 변화가 정상일 수 있다. 사용자에게 ANC 토글을 시도하라고 안내할 때 이는 기능의 설계 특성이 아니라 '확인해봐도 무방'한 차원임을 명확히 할 것.",
+      "cautionSource": "Apple Support 원문에서 ANC와 음질 변화 언급"
+    }
+  ]
+}
