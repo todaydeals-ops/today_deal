@@ -1,0 +1,47 @@
+{
+  "topic": "애플 기기 강제 재시작·복구 모드·배터리 성능 (기종 분기 축)",
+  "brand": "애플",
+  "article": "iphone-force-restart / iphone-battery-health",
+  "captured": "2026-07-20",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "iphone-force-restart-generation-split",
+      "claim": "아이폰 강제 재시작은 기종별로 다르다 — 홈버튼 구형은 홈+측면 동시, iPhone 7 계열은 음량↓+측면 동시, iPhone 8·SE 2세대 및 이후는 음량↑ → 음량↓ → 측면 길게의 3단계",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — iPhone 강제로 재시동하기",
+      "source_url": "https://support.apple.com/guide/iphone/force-restart-iphone-iph8903c3ee6/ios",
+      "checked": "2026-07-20",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iPhone 전 기종", "years": "전 연식", "region": "글로벌" },
+      "caution": "검색 결과 다수가 'iPhone 8 이하는 음량↓+측면 동시'로 잘못 안내한다. iPhone 8은 7이 아니라 X 이후와 같은 3단계다. 동시 누르기는 7 계열 전용.",
+      "cautionSource": "Apple 공식 원문과 검색 요약을 직접 대조해 확인"
+    },
+    {
+      "id": "iphone-recovery-mode-data",
+      "claim": "복구 모드 진입만으로는 데이터가 지워지지 않는다. '복원'을 선택하면 전체 삭제되고, '업데이트'를 선택하면 데이터를 유지한 채 iOS만 재설치된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — iPhone 업데이트·복원 불가 시",
+      "source_url": "https://support.apple.com/en-us/118106",
+      "checked": "2026-07-20",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iPhone 전 기종", "years": "전 연식", "region": "글로벌" },
+      "caution": "'복구 모드 = 초기화'라는 오해가 널리 퍼져 있다. 두 선택지의 차이를 반드시 분리해 설명할 것.",
+      "cautionSource": "Apple 공식 문서의 복원/업데이트 분기 안내"
+    },
+    {
+      "id": "iphone-battery-menu-split",
+      "claim": "배터리 성능 상태 메뉴는 기종·iOS별로 위치가 다르다 — iPhone 15 이후(iOS 17.4+)는 설정>배터리>배터리 성능 상태(사이클 수·제조일 표시), 14 이하는 설정>배터리>배터리 성능 상태 및 충전. 설계 기준은 14 이하 500사이클, 15 이후 1,000사이클에서 80% 유지",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — iPhone 배터리 및 성능 / 11 및 이후 모델의 배터리",
+      "source_url": "https://support.apple.com/ko-kr/101575",
+      "checked": "2026-07-20",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iPhone 11~최신", "years": "2019~", "region": "글로벌" },
+      "caution": "'최대 용량 80% 미만이면 교체'라는 애플 공식 커트라인은 없다. 참고선으로만 서술하고 교체 기준으로 단정하지 말 것.",
+      "cautionSource": "Apple 문서에 교체 커트라인 수치가 명시되지 않음을 확인(부재 확인)"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "topic": "삼성 가전 에러코드 체계·모델 연식 판독 (전 카테고리 공통 축)",
+  "brand": "삼성",
+  "article": "samsung-aircon-selfdiagnosis / samsung-washer-error-code / samsung-fridge-error",
+  "captured": "2026-07-20",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "samsung-model-year-alphabet",
+      "claim": "삼성 에어컨 모델명은 AF(스탠드)/AR(벽걸이) + 숫자 뒤 알파벳이 연식을 뜻한다 — N=2018, R=2019, T=2020, A=2021, B=2022",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 자가진단 실행 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1222026",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "에어컨", "line": "스탠드·벽걸이", "years": "2014~2022", "region": "KR" },
+      "caution": "이 알파벳 규칙은 에어컨 라인업 기준이다. 세탁기·냉장고 모델명 체계는 다르므로 그대로 옮기지 말 것.",
+      "cautionSource": "삼성전자서비스 자가진단 가이드가 에어컨 모델(AF/AR) 한정으로 안내"
+    },
+    {
+      "id": "samsung-aircon-selfdiag-entry",
+      "claim": "삼성 에어컨 자가진단 진입 방법은 형태·연식별로 다르다 — 스탠드 2018~2022년형은 리모컨 '부가기능'→'AI 진단'→'확인', 벽걸이 2014~2022년형은 '확인'+위 버튼 2개 동시 4초, 시스템(천장형)은 '예약 설정'+'확인' 동시 5초",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 가정용 에어컨 자가진단 실행 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1350720",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "에어컨", "line": "스탠드·벽걸이·시스템", "years": "2014~2022", "region": "KR" },
+      "caution": "2014년 이전 구형은 자가진단 메뉴 자체가 없어 코드·LED 패턴으로 판단해야 한다.",
+      "cautionSource": "공식 자가진단 안내 대상이 스탠드 2018년 이후·벽걸이 2014년 이후로 한정됨"
+    },
+    {
+      "id": "samsung-errorcode-digit-change",
+      "claim": "삼성 에어컨 에러코드는 구형 2자리 표기와 신형 3자리 표기가 같은 고장을 가리킨다 (예: 구형 E1 = 신형 E101). 좁은 디스플레이는 E1-01처럼 끊어 표시한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — E101/C101/E201/C201 원인과 스마트 리셋",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37058",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "에어컨", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "독자가 자기 코드를 표에서 못 찾는 주된 이유다. 코드표를 쓸 때 자릿수 차이를 먼저 설명할 것.",
+      "cautionSource": "삼성전자서비스 문서가 E101과 E1을 동일 원인으로 병기"
+    },
+    {
+      "id": "samsung-washer-dc-layer-conflict",
+      "claim": "삼성 세탁기 dC 코드는 국내 공식 문서에서 '도어 감지 센서'로 안내되지만, 영문 자료 다수는 '탈수 불균형'으로 설명한다. 삼성 미국 문서도 모델에 따라 달라질 수 있다고 명시한다",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "삼성전자서비스 dC·dE·dC1 도어 / Samsung US 세탁기 에러코드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1490447",
+      "checked": "2026-07-20",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "드럼·통돌이", "years": "전 연식", "region": "KR(해외 자료와 상충)" },
+      "caution": "층위 혼동 사례. 국내 기준과 해외 기준을 뭉쳐 쓰면 독자가 엉뚱한 곳(도어 대신 세탁물 배치)을 점검하게 된다. 어느 지역 기준인지 반드시 밝힐 것.",
+      "cautionSource": "국내 삼성전자서비스 문서(도어 센서)와 Samsung US 문서(모델별 상이 명시)의 직접 대조"
+    }
+  ]
+}

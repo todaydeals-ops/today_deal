@@ -1,0 +1,59 @@
+{
+  "topic": "AS셀프체크 공통 안전 기준선 (전 브랜드·전 카테고리 인용)",
+  "brand": "공통",
+  "article": "AS셀프체크 전편",
+  "captured": "2026-07-20",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "refrigerant-charge-professional-only",
+      "claim": "에어컨 냉매(가스) 충전·보충은 자격을 갖춘 기사만 수행할 수 있는 작업이며, 정상 상태라면 냉매는 줄지 않는다. 충전이 필요하다는 것은 어딘가 누설되고 있다는 뜻이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 — 에어컨 자가점검 안내",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153058431783",
+      "checked": "2026-07-20",
+      "scope": { "brand": "공통", "category": "에어컨", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "'냉매만 보충'을 권하는 안내는 임시방편이며 누설 지점 점검이 선행돼야 한다. 자가 충전을 유도하는 서술은 절대 금지.",
+      "cautionSource": "제조사 자가점검 문서가 냉매 관련 조치를 전문가 영역으로 분류"
+    },
+    {
+      "id": "battery-swelling-stop-immediately",
+      "claim": "리튬이온 배터리가 부풀거나 과열되거나 타는 냄새가 나면 즉시 사용·충전을 중단하고 공식 서비스센터로 가야 한다. 누르거나 뚫으면 화재·부상 위험이 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — 정품 iPhone 배터리에 관하여",
+      "source_url": "https://support.apple.com/ko-kr/103269",
+      "checked": "2026-07-20",
+      "scope": { "brand": "공통", "category": "스마트폰·노트북", "line": "리튬이온 배터리 전 기기", "years": "전 연식", "region": "글로벌" },
+      "caution": "사설 자가교체를 조장하지 말 것. 방수 성능·정품 인증·중고 보상가에 영향이 갈 수 있다.",
+      "cautionSource": "Apple 정품 배터리 문서의 비정품 부품 경고 및 부품 기록('알 수 없음') 표시 안내"
+    },
+    {
+      "id": "factory-reset-data-loss",
+      "claim": "공장 초기화는 기기 데이터를 전부 삭제하며 되돌릴 수 없다. 설정값 초기화·네트워크 설정 초기화는 데이터를 보존하므로 먼저 시도할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자 — 공장 초기화 안내",
+      "source_url": "https://www.samsung.com/us/support/answer/ANS10002030/",
+      "checked": "2026-07-20",
+      "scope": { "brand": "공통", "category": "스마트폰", "line": "안드로이드·iOS", "years": "전 연식", "region": "글로벌" },
+      "caution": "초기화를 안내할 때는 반드시 백업을 먼저 지시하고, 약한 초기화(설정값·네트워크)부터 순서대로 제시할 것.",
+      "cautionSource": "삼성 공식 초기화 문서의 3종 구분(설정값/네트워크/공장)"
+    },
+    {
+      "id": "jumpstart-cable-order",
+      "claim": "자동차 점프 스타트는 빨강(+)을 방전차 단자 → 구원차 단자 순으로, 검정(−)은 구원차 단자 → 방전차의 도색되지 않은 금속 차체(배터리 단자 아님)에 연결한다. 분리는 역순이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스매뉴얼 — 점프 스타트",
+      "source_url": "https://ownersmanual.kia.com/docview/webhelp/Kia/16f1ac02-6c37-4173-910f-9c968f6a0540/topics/t01128.html",
+      "checked": "2026-07-20",
+      "scope": { "brand": "공통", "category": "자동차", "line": "내연기관(하이브리드·전기차는 별도)", "years": "전 연식", "region": "KR" },
+      "caution": "검정(−)을 방전차 배터리 단자에 직접 물리면 수소가스 폭발 위험이 있어 차체 접지가 원칙이다. 하이브리드·전기차는 12V 보조배터리 특성이 달라 매뉴얼 우선이며, 하이브리드차를 구원차로 쓰지 않는다. 자신 없으면 보험사 긴급출동을 권할 것.",
+      "cautionSource": "기아·현대 오너스매뉴얼의 접지 위치 지정 및 하이브리드 구원차 사용 금지 안내"
+    }
+  ]
+}
