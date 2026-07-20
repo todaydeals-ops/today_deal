@@ -36,7 +36,8 @@ export async function GET(request: Request): Promise<Response> {
   const sb = getSupabaseAdmin();
   if (!sb) return Response.json({ ok: false, error: "Supabase 미설정" }, { status: 500 });
 
-  const count = Math.max(1, Math.min(5, Number(new URL(request.url).searchParams.get("n")) || 1));
+  // 기본 하루 2편. ?n=으로 덮어쓸 수 있고 상한은 5편.
+  const count = Math.max(1, Math.min(5, Number(new URL(request.url).searchParams.get("n")) || 2));
 
   const { data } = await sb
     .from("magazine")
@@ -54,14 +55,25 @@ export async function GET(request: Request): Promise<Response> {
     (byCorner[a.corner] ||= []).push(a);
   }
 
-  // 재고가 많이 남은 코너부터 한 편씩 — 특정 코너만 빠르게 소진되는 걸 방지
+  // 하루 2편 = AS셀프체크(repair) 1편 + 나머지 3코너 중 1편.
+  // AS가 유입의 핵심이라 매일 1편은 반드시 나가야 하고, 나머지 한 자리는
+  // 재고가 가장 많은 코너가 가져가 편중을 막는다.
+  const OTHERS = ["factcheck", "smartguide", "trendlab"];
+  const pickFrom = (pool: string[]): Row | null => {
+    const avail = pool.filter((c) => byCorner[c]?.length > 0);
+    if (!avail.length) return null;
+    avail.sort((a, b) => byCorner[b].length - byCorner[a].length);
+    return byCorner[avail[0]].shift() ?? null;
+  };
+
   const picked: Row[] = [];
+  const repairFirst = pickFrom(["repair"]); // 1순위는 언제나 AS
+  if (repairFirst) picked.push(repairFirst);
   while (picked.length < count) {
-    const corners = Object.keys(byCorner).filter((c) => byCorner[c].length > 0);
-    if (!corners.length) break;
-    corners.sort((a, b) => byCorner[b].length - byCorner[a].length);
-    const row = byCorner[corners[0]].shift();
-    if (row) picked.push(row);
+    // AS 재고가 비면 나머지로 채우고, 나머지가 비면 AS를 한 편 더 낸다
+    const row = pickFrom(OTHERS) ?? pickFrom(["repair"]);
+    if (!row) break;
+    picked.push(row);
   }
 
   const released: string[] = [];

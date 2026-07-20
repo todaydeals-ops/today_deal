@@ -65,12 +65,21 @@ if (args[0] === "--balanced") {
     if (!g.ok) { blocked++; console.log(`  ⛔ 게이트 차단 [${a.corner}] ${a.slug} — ${g.reasons.join(", ")}`); continue; }
     (byCorner[a.corner] ||= []).push(a);
   }
+  // 배분 규칙: AS셀프체크(repair) 1편 + 나머지 3코너 중 1편 (Cron과 동일 기준)
+  const OTHERS = ["factcheck", "smartguide", "trendlab"];
+  const pickFrom = (pool) => {
+    const avail = pool.filter((c) => byCorner[c]?.length);
+    if (!avail.length) return null;
+    avail.sort((a, b) => byCorner[b].length - byCorner[a].length);
+    return byCorner[avail[0]].shift() ?? null;
+  };
   const picked = [];
-  for (let i = 0; i < count; i++) {
-    let best = null;
-    for (const c of Object.keys(byCorner)) if (byCorner[c].length && (best === null || byCorner[c].length > byCorner[best].length)) best = c;
-    if (best === null) break;
-    picked.push(byCorner[best].shift());
+  const repairFirst = pickFrom(["repair"]);
+  if (repairFirst) picked.push(repairFirst);
+  while (picked.length < count) {
+    const row = pickFrom(OTHERS) ?? pickFrom(["repair"]);
+    if (!row) break;
+    picked.push(row);
   }
   let m = 0;
   for (let i = 0; i < picked.length; i++) {

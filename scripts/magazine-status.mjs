@@ -24,8 +24,17 @@ const drafts = rows.filter((x) => !x.is_published);
 const pub = rows.filter((x) => x.is_published);
 const todayPub = pub.filter((x) => kst(new Date(x.created_at)) === today);
 const last7 = pub.filter((x) => new Date(x.created_at).getTime() >= Date.now() - 7 * 86400_000).length;
-const perDay = last7 / 7;
-const daysLeft = perDay > 0 ? Math.floor(drafts.length / perDay) : null;
+// 재고 일수는 '계획 발행량'과 '배분 규칙' 기준으로 센다.
+// 최근 7일 실적으로 나누면 수동 대량 발행이 있던 날 perDay가 부풀어
+// 멀쩡한 재고도 소진 임박으로 잡힌다.
+// 배분(Cron과 동일): 하루 2편 = AS셀프체크 1편 + 나머지 3코너 중 1편.
+// 따라서 AS는 하루 1편씩, 나머지 3코너는 '합쳐서' 하루 1편씩 줄어든다.
+const perDay = last7 / 7; // 실적(참고 표시용)
+const repairStock = drafts.filter((d) => d.corner === "repair").length;
+const otherStock = drafts.length - repairStock;
+const repairDays = repairStock; // 하루 1편
+const otherDays = otherStock; // 3코너 합쳐 하루 1편
+const daysLeft = Math.min(repairDays, otherDays); // 먼저 마르는 쪽이 실제 한계
 
 // 품질 점검
 const CJK = /[㐀-䶿一-鿿Ѐ-ӿ぀-ゟ゠-ヺ]/;
@@ -38,7 +47,9 @@ for (const [key, name] of CORNERS) {
   const n = drafts.filter((d) => d.corner === key).length;
   if (n === 0) warn.push(`${name} 재고 0편 — 보충 필요`);
 }
-if (daysLeft !== null && daysLeft <= 7) warn.push(`전체 재고 ${daysLeft}일치 — 보충 시점`);
+// AS와 나머지를 따로 경고한다 — 합산하면 한쪽이 말라가는 걸 놓친다
+if (repairDays <= 7) warn.push(`AS셀프체크 ${repairStock}편 = ${repairDays}일치(하루 1편) — 보충 시점`);
+if (otherDays <= 7) warn.push(`팩트체크·가이드·트렌드랩 합 ${otherStock}편 = ${otherDays}일치(합쳐 하루 1편) — 보충 시점`);
 if (noTags.length) warn.push(`검색 태그 없는 발행글 ${noTags.length}편`);
 if (noImage.length) warn.push(`이미지 없는 발행글 ${noImage.length}편`);
 if (cjkHit.length) warn.push(`한자·키릴 혼입 의심 ${cjkHit.length}편 (${cjkHit.slice(0, 3).map((x) => x.slug).join(", ")})`);
@@ -46,7 +57,7 @@ if (cjkHit.length) warn.push(`한자·키릴 혼입 의심 ${cjkHit.length}편 (
 const bar = "─".repeat(46);
 console.log(`\n${bar}\n 오늘의딜 매거진 현황 · ${today} (KST)\n${bar}`);
 
-console.log(`\n[재고] 총 ${drafts.length}편${daysLeft !== null ? ` · 약 ${daysLeft}일치` : ""}`);
+console.log(`\n[재고] 총 ${drafts.length}편 · 약 ${daysLeft}일치 (AS ${repairDays}일 / 나머지 ${otherDays}일)`);
 for (const [key, name] of CORNERS) {
   const n = drafts.filter((d) => d.corner === key).length;
   console.log(`   ${name.padEnd(8)} ${String(n).padStart(3)}편 ${n === 0 ? "  ← 비었음" : ""}`);
