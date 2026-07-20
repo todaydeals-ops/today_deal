@@ -59,7 +59,7 @@ for (const a of articles) {
   rows.push({
     slug: a.slug, corner: a.corner, field: a.field || "리빙·주방", title: a.title, subtitle: a.subtitle || "",
     excerpt: a.excerpt || "", read_min: a.read_min || 8,
-    body_html: `<!--RAIL:${JSON.stringify({ summary: a.summary || [], callout: a.callout || "", faq: a.faq || [] })}-->\n` + main.join("\n").trim(),
+    body_html: `<!--RAIL:${JSON.stringify({ summary: a.summary || [], callout: a.callout || "", faq: a.faq || [], sources: a.sources || [] })}-->\n` + main.join("\n").trim(),
     closing: a.closing || "", is_published: false, created_at: a.date || new Date().toISOString(),
   });
 }

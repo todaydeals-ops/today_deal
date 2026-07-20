@@ -205,6 +205,28 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
           </section>
         )}
 
+        {/* ── 근거·제조사 공식 안내 (모델별 실제 절차·사진은 공식에서 — 저작권 안전) ── */}
+        {a.sources && a.sources.length > 0 && (
+          <section aria-label="제조사 공식 안내" style={{ margin: "56px 0 0" }}>
+            <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", borderTop: "1px solid rgba(22,20,15,0.16)", paddingTop: 16, marginBottom: 12 }}>
+              <span style={{ fontWeight: 800, fontSize: 18 }}>제조사 공식 안내</span>
+              <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: "2px", color: "#9a9286" }}>SOURCES</span>
+            </div>
+            <p style={{ fontSize: 14, lineHeight: 1.7, color: "#76726b", margin: "0 0 14px" }}>
+              모델·연식에 따라 버튼 위치와 조작 방법이 다릅니다. 내 제품의 정확한 절차와 사진은 아래 공식 안내에서 확인하세요.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              {a.sources.map((s, i) => (
+                <a key={i} href={s.url} target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: 12, padding: "13px 16px", border: "1px solid rgba(22,20,15,0.12)", borderRadius: 10, textDecoration: "none", background: "#faf8f5" }}>
+                  <span style={{ fontFamily: mono, fontSize: 10.5, fontWeight: 700, letterSpacing: "0.5px", color: "#fff", background: "#38539a", padding: "3px 7px", borderRadius: 4, flex: "none" }}>공식</span>
+                  <span style={{ flex: 1, fontSize: 14.5, fontWeight: 600, color: "#16140f", lineHeight: 1.45 }}>{s.label}</span>
+                  <span style={{ fontFamily: mono, fontSize: 13, color: "#9a9286", flex: "none" }}>↗</span>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* ── 관련 가이드 (내부링크) ── */}
         {related.length > 0 && (
           <nav aria-label="관련 가이드" style={{ margin: "56px 0 0" }}>
