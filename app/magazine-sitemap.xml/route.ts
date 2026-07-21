@@ -1,7 +1,7 @@
 import { fetchMagazineList } from "@/lib/data/magazine";
 import { fetchReportList } from "@/lib/data/magazine-report";
 
-export const revalidate = 86400; // 24시간 CDN 캐시 — 콜드스타트 없이 정적처럼 서빙
+export const revalidate = 3600; // 1시간 CDN 캐시 — 하루 2편 발행분이 사이트맵에 빨리 반영되도록(콜드스타트 부담 적음)
 const SITE = "https://www.todaydeals.co.kr";
 
 export async function GET() {
