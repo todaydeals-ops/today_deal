@@ -1,0 +1,452 @@
+{
+  "topic": "모니터 신호 없음·화면 깜박임·색상 이상 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "lg-tv-no-signal-message-cause",
+      "why": "TV 신호 없음은 방송 신호·셋톱박스 문제를 포함하지만, 모니터 신호 없음은 PC 연결만 관계 있으므로 거부"
+    },
+    {
+      "id": "lg-tv-input-source-switch",
+      "why": "TV의 입력 소스 전환(케이블/HDMI/안테나)과 모니터의 입력 선택(HDMI/DP/USB-C) 메뉴 체계가 다르므로 거부"
+    },
+    {
+      "id": "tv-self-diagnosis-path",
+      "why": "TV 자가진단 메뉴는 제조사마다 다른 경로이며, 모니터는 OSD 메뉴 구조 자체가 TV와 완전히 다르므로 거부"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "monitor-no-signal-cable-check-first",
+      "claim": "모니터에 '신호 없음' 메시지가 나타날 때 첫 확인은 모니터 뒷면의 HDMI/DP/USB-C 케이블이 양쪽 끝에 단단히 연결되어 있는지 확인하는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 모니터] 화면에 입력신호 없음 메시지가 나타나요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/34586",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "LCD/LED 모니터 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "케이블 양쪽(모니터 포트와 PC 포트)을 모두 확인해야 하며, PC는 안전하게 전원을 끈 후 재연결한다"
+    },
+    {
+      "id": "monitor-input-source-selection",
+      "claim": "모니터 신호 없음이 표시되면 모니터의 입력 소스가 연결된 포트로 정확히 설정되었는지 확인해야 한다. 모니터의 조그 버튼이나 메뉴 버튼을 눌러 입력 선택 메뉴에서 HDMI, DP, USB-C 중 현재 연결된 포트를 선택한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 모니터] 화면에 입력신호 없음 메시지가 나타나요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/34586",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "LCD/LED 모니터 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "모니터 메뉴 버튼 위치는 제조사·모델별로 다르므로 모니터 뒷면을 확인하거나 사용설명서를 참조한다",
+      "cautionSource": "삼성전자서비스 모니터 제어 버튼 안내"
+    },
+    {
+      "id": "monitor-self-test-menu",
+      "claim": "신호 없음 메시지가 계속 표시되고 모니터 메뉴 문자가 화면에 보인다면 모니터 자체는 정상이며, 케이블 또는 PC 그래픽카드 문제다. 모니터 메뉴 문자가 화면에 보이지 않으면 모니터의 액정 또는 메인보드 이상을 의심해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 모니터] 화면에 입력신호 없음 메시지가 나타나요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/34586",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "LCD/LED 모니터 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "메뉴 버튼을 눌러 조그 버튼으로 메인 메뉴를 조작할 때 문자(글자)가 보이면 액정은 정상이다"
+    },
+    {
+      "id": "monitor-power-cord-reset",
+      "claim": "모니터 신호 없음이 계속되면 모니터의 전원 코드를 분리한 후 약 10초 대기했다가 다시 연결하는 방식으로 모니터를 재시작한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 모니터] 화면에 입력신호 없음 메시지가 나타나요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/34586",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "LCD/LED 모니터 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "monitor-factory-reset-via-menu",
+      "claim": "모니터 입력 소스와 케이블을 확인해도 신호 없음이 계속되면 조그 버튼으로 메뉴 → 설정 → 초기화(또는 리셋)를 선택하여 모니터를 공장 초기화한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 모니터] 화면에 입력신호 없음 메시지가 나타나요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/34586",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "LCD/LED 모니터 전체",
+        "years": "2015년 이후",
+        "region": "KR"
+      },
+      "caution": "메뉴 구조는 모니터 제조사·모델별로 다를 수 있으므로, 메뉴를 직접 탐색해 초기화 항목을 찾아야 한다"
+    },
+    {
+      "id": "monitor-flickering-cable-reconnect",
+      "claim": "모니터 화면이 깜박일 때 첫 조치는 모니터 뒷면의 HDMI/DP 케이블과 전원 케이블을 모두 분리한 후 다시 단단히 연결하는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 모니터] 모니터와 컴퓨터 연결 시 화면이 깜박거려요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/34804",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "LCD/LED 모니터 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "monitor-flickering-hdmi-version-issue",
+      "claim": "HDMI로 연결된 모니터가 깜박일 때는 HDMI 케이블 버전을 확인해야 한다. HDMI 1.2 버전 케이블은 최대 FHD 60Hz, QHD 30Hz 지원하므로, 고해상도·고주사율 모니터에서는 깜박임이 발생할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 모니터] 모니터와 컴퓨터 연결 시 화면이 깜박거려요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/34804",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "LCD/LED 모니터 (HDMI 포트)",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "4K 60Hz 이상을 사용하려면 HDMI 2.0 이상, HDR을 사용하려면 HDMI 2.1 이상의 케이블이 필요하다",
+      "cautionSource": "삼성전자서비스 HDMI 규격 가이드"
+    },
+    {
+      "id": "monitor-flickering-refresh-rate-setting",
+      "claim": "HDMI 케이블을 다시 연결해도 깜박임이 계속되면 Windows 디스플레이 설정에서 주사율을 모니터 권장값보다 낮추어 기본 60Hz로 설정한 후 다시 확인한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 모니터] 모니터와 컴퓨터 연결 시 화면이 깜박거려요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/34804",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "고주사율 모니터",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "설정 > 시스템 > 디스플레이 > 고급 디스플레이 설정에서 주사율을 낮춘다"
+    },
+    {
+      "id": "monitor-flickering-displayport-version",
+      "claim": "DisplayPort(DP)로 연결된 모니터가 깜박일 때는 모니터 메뉴에서 DP 포트 버전 설정을 1.2 이상으로 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 모니터] 모니터와 컴퓨터 연결 시 화면이 깜박거려요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/34804",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "DisplayPort 포트 모니터",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "모니터 OSD 메뉴 > 설정 > Display > Advanced에서 DP Version을 확인할 수 있다"
+    },
+    {
+      "id": "monitor-flickering-graphics-driver-update",
+      "claim": "모니터 깜박임이 케이블과 주사율 설정 후에도 계속되면 그래픽카드 드라이버를 최신 버전으로 업데이트한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 모니터] 모니터와 컴퓨터 연결 시 화면이 깜박거려요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/34804",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "LCD/LED 모니터 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "Windows 업데이트, OS 버전도 함께 최신으로 유지해야 한다"
+    },
+    {
+      "id": "monitor-flickering-auto-brightness-disable",
+      "claim": "LG 모니터의 경우 자동 밝기 조정 기능(SES - Smart Energy Saving, DFC - Digital Fine Contrast)이 활성화되어 있으면 깜박임 같은 증상이 발생할 수 있으므로, 모니터 설정 메뉴에서 이 기능을 비활성화한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 모니터 화면] 화면이 깜박여요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152129520346",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "모니터",
+        "line": "LCD/LED 모니터 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "hdmi-vs-displayport-signal-difference",
+      "claim": "HDMI와 DisplayPort는 서로 다른 신호 규격을 사용한다 — HDMI는 5v 신호, DP는 3.3v 신호이므로 호환되지 않으며, DP는 HDMI보다 높은 대역폭(초고속 신호 전송)을 제공해 4K 고주사율에 더 유리하다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "커뮤니티 기술 논의 (클리앙, 쿨엔조이 등)",
+      "source_url": "",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "HDMI·DP 포트 모니터",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "HDMI와 DP는 물리적으로 다른 커넥터이므로 서로 변환 어댑터가 필요하다"
+    },
+    {
+      "id": "usb-c-dp-alt-mode-requirement",
+      "claim": "노트북이나 PC의 USB-C 포트로 모니터를 연결할 때는 반드시 DisplayPort Alt Mode를 지원해야 모니터 영상이 출력된다. USB-C 포트가 있어도 충전과 데이터 전송만 지원하고 영상 출력을 지원하지 않는 경우가 많으므로 사양 확인이 필수다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 커뮤니티 및 노트북 제조사 안내",
+      "source_url": "",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "USB-C 입력 포트 모니터",
+        "years": "2019 이후",
+        "region": "KR"
+      },
+      "caution": "DP Alt Mode가 없는 USB-C 포트를 사용하면 화면이 나오지 않으므로, PC 사양서에서 'DisplayPort Alt Mode' 또는 'Thunderbolt 3'을 확인해야 한다",
+      "cautionSource": "노트북 제조사 공식 스펙 문서"
+    },
+    {
+      "id": "monitor-vs-pc-detection-screenshot-test",
+      "claim": "모니터 문제인지 PC 그래픽카드 문제인지 판별하는 가장 간단한 방법은 스크린샷 테스트다 — Windows Print Screen 키를 눌러 그림판에 붙여넣기 했을 때 같은 증상(색상 이상·줄·깜박임)이 보이면 그래픽카드 문제, 스크린샷은 정상이면 모니터 문제다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "커뮤니티 기술 논의 (쿨엔조이 등)",
+      "source_url": "https://coolenjoy.net/bbs/37/1604",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "LCD/LED 모니터 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "monitor-vs-pc-detection-other-monitor",
+      "claim": "다른 모니터가 있다면 현재 PC에 연결하여 같은 증상이 반복되는지 확인한다. 다른 모니터에서도 같은 증상이 나타나면 PC 그래픽카드 문제, 다른 모니터에서 정상이면 기존 모니터 문제로 판단할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 및 기술 커뮤니티",
+      "source_url": "",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "LCD/LED 모니터 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "monitor-vs-pc-detection-graphics-card-removal",
+      "claim": "데스크톱 PC의 경우 독립 그래픽카드를 장착한 상태라면 그래픽카드를 제거하고 마더보드의 내장 그래픽 포트(통합 그래픽 포트)에 모니터를 직접 연결하여 테스트할 수 있다. 내장 그래픽에서 정상 작동하면 독립 그래픽카드 문제다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "커뮤니티 기술 논의 (쿨엔조이, 퀘이사존 등)",
+      "source_url": "https://coolenjoy.net/bbs/37/1604",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "LCD/LED 모니터 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "그래픽카드 제거 시 PC 내부 작업이므로 정전기 방지 조치를 취하고 부품 손상에 주의해야 한다"
+    },
+    {
+      "id": "monitor-color-issue-cable-check",
+      "claim": "모니터 색상이 이상하면 먼저 비디오 케이블이 모니터와 PC 양쪽 끝에 단단히 연결되어 있는지 확인하고, 케이블 내부 금속 핀이 손상되거나 이물질이 묻어 있지 않은지 육안으로 확인한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 모니터 화면] 흰색 화면에서 색깔(색상)이 이상",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150787718168",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "LCD/LED 모니터 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "가능하면 모니터에 함께 제공된 원본 케이블을 사용한다. 호환되지 않는 케이블을 사용하면 색상 이상이 발생할 수 있다"
+    },
+    {
+      "id": "monitor-color-issue-factory-reset",
+      "claim": "모니터 색상이 이상하면 조그 버튼으로 메뉴 → 설정 → 일반 설정 → 초기화를 선택하여 모니터를 공장 초기화한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 모니터 화면] 흰색 화면에서 색깔(색상)이 이상",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150787718168",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "LCD/LED 모니터 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "monitor-color-adjustment-rgb",
+      "claim": "모니터 색상이 불완전하거나 특정 색이 빠진 것처럼 보이면 모니터 메뉴 > 설정 > 화면 > 색상 조정에서 RGB 값을 조정하거나 색온도를 변경할 수 있다. 표준 색온도는 6500K이며, 더 따뜻한 느낌(노란색)을 원하면 6000K로 낮추거나 Blue 값을 감소시킨다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 모니터 화면] 흰색 화면에서 색깔(색상)이 이상",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150787718168",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "모니터",
+        "line": "LCD/LED 모니터 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "LG 모니터 메뉴 구조는 모델별로 다를 수 있으므로, 설정 경로를 직접 탐색해야 할 수 있다"
+    },
+    {
+      "id": "monitor-resolution-setting-recommended",
+      "claim": "모니터 화면이 흐리거나 선명하지 않으면 Windows 디스플레이 설정에서 현재 해상도가 모니터 권장 해상도로 설정되어 있는지 확인한다. 시작 → 설정 → 시스템 → 디스플레이에서 '디스플레이 해상도'를 모니터 사양서의 권장 해상도(예: 1920x1080 60Hz)로 변경한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 커뮤니티 및 제조사 안내",
+      "source_url": "",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "LCD/LED 모니터 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "monitor-dual-display-cable-check",
+      "claim": "듀얼 모니터 중 한 개만 인식되지 않거나 화면이 나오지 않으면 해당 모니터의 케이블이 느슨하거나 손상되었을 가능성이 높다. 각 모니터의 HDMI/DP/USB-C 케이블을 양쪽 끝에서 단단히 재연결한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dell 고객지원 — 다중 모니터 디스플레이: 검은색 화면 또는 감지되지 않음",
+      "source_url": "https://www.dell.com/support/contents/ko-kr/article/product-support/self-support-knowledgebase/monitor-screen-video/multiple-displays-not-working",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "듀얼/다중 모니터",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "monitor-dual-display-windows-settings",
+      "claim": "듀얼 모니터 케이블을 확인해도 한 모니터만 인식되지 않으면 Windows 디스플레이 설정(설정 → 시스템 → 디스플레이)에서 모니터가 감지되어 있는지 확인한다. 필요시 '디스플레이 감지' 버튼을 눌러 강제로 모니터 인식을 시도하고, 그래픽 드라이버를 최신으로 업데이트한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dell 고객지원 및 Microsoft Q&A",
+      "source_url": "https://www.dell.com/support/contents/ko-kr/article/product-support/self-support-knowledgebase/monitor-screen-video/multiple-displays-not-working",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "듀얼/다중 모니터",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "Windows 업데이트 후 듀얼 모니터 하나가 인식되지 않는 경우가 보고되고 있으니, 이 경우 그래픽 드라이버 재설치를 시도한다"
+    },
+    {
+      "id": "monitor-brightness-control-driver-update",
+      "claim": "모니터 밝기 조절 기능이 작동하지 않으면 그래픽카드 드라이버를 최신 버전으로 업데이트한다. 일부 모니터는 DDC/CI(Display Data Channel/Command Interface) 기능을 통해 Windows에서 밝기 조절을 제어하므로, 드라이버 지원이 필수다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 PC] 노트북 화면(디스플레이) 밝기 조정이 안됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/33423",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "DDC/CI 지원 모니터",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "모니터 펌웨어 업데이트도 필요할 수 있으며, 스마트 모니터는 내장 설정에서 소프트웨어 업데이트를 시도한다"
+    },
+    {
+      "id": "monitor-night-mode-color-issue",
+      "claim": "Windows 야간 모드(Night Light) 기능이 활성화되어 있으면 모니터 화면이 노랗거나 따뜻한 색으로 표시된다. 설정 → 시스템 → 디스플레이 → 야간 모드에서 이 기능을 비활성화하면 원래의 색상이 복구된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 커뮤니티 및 Windows 안내",
+      "source_url": "",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "LCD/LED 모니터 전체",
+        "years": "Windows 10/11",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "monitor-burnin-ghosting-unknown",
+      "claim": "모니터 번인(같은 이미지가 화면에 지워지지 않고 남아있는 증상)과 잔상(이전 이미지가 희미하게 남아있는 증상)은 LCD/LED 모니터의 자가점검으로 해결하기 어려운 하드웨어 문제다. 번인은 주로 OLED 모니터에서 발생하며, LCD 모니터의 경우는 화면 자동 보호 기능 활성화, 밝기 조절, 장시간 미사용 시 전원 차단 등으로 예방할 수 있다",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "기술 커뮤니티 (정확한 해결 방법 공식 문서 미확인)",
+      "source_url": "",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "LCD/LED 및 OLED 모니터",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "번인은 회복 불가능한 손상이므로 예방이 중요하며, 심한 경우 제조사 서비스 센터에 상담해야 한다"
+    }
+  ]
+}

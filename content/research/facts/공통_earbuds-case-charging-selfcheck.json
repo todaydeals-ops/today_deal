@@ -1,0 +1,183 @@
+{
+  "topic": "무선이어폰 충전 케이스 불량·한쪽 충전 안 됨·배터리 문제 자가점검",
+  "brand": "공통",
+  "article": "earbuds-case-charging-selfcheck",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "battery-swelling-stop-immediately"
+  ],
+  "declined_facts": [
+    {
+      "id": "airpods-single-side-not-working-checklist",
+      "why": "음성·연결 문제로, 충전 케이스 문제와 다른 범위. AirPods 개별 파일에서 다룬 내용"
+    },
+    {
+      "id": "one-side-no-sound-poor-insertion",
+      "why": "이어버드 삽입 깊이 문제로, 충전 케이스 불량과 무관. Galaxy Buds 개별 파일에서 다룬 내용"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "case-one-earbud-not-charging-contact-contamination",
+      "claim": "무선이어폰 충전 케이스에 넣었는데 한쪽 이어버드만 충전이 안 될 때 최대 원인은 케이스 내부 충전 접점에 쌓인 먼지·이물질·염분(땀)이다. 접점 오염은 충전 접촉 불량을 유발하고 한쪽 에어팟/버즈만 배터리 표시가 0%에 고정되는 현상으로 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support · If your AirPods won't charge, Samsung Support · 갤럭시 버즈, 유선 충전이 되지 않습니다",
+      "source_url": "https://support.apple.com/en-us/102593",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰",
+        "line": "AirPods, Galaxy Buds 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "한쪽만 0%로 표시되고 충전 LED 반응이 없다면 먼저 접점 청소를 시도할 것. 양쪽 모두 충전이 안 되는 경우는 케이스 배터리 문제일 가능성이 높다.",
+      "cautionSource": "Apple/Samsung 공식 충전 트러블슈팅 가이드"
+    },
+    {
+      "id": "charging-contact-cleaning-dry-cloth-distilled-water",
+      "claim": "충전 케이스 접점 청소는 다음과 같이 한다: (1) 손전등 등으로 충전 포트 내부를 비추어 금속 단자에 먼지·이물질이 있는지 시각 확인, (2) 부드럽고 보풀 없는 마른 천으로 먼저 가볍게 닦기, (3) 흙이나 이물질이 보이면 충전 포트 안쪽으로 가볍게 바람을 불어넣어 먼지 제거, (4) 필요시 면봉을 증류수에 살짝 적셔 금속 단자를 부드럽게 닦은 후 마른 면봉으로 수분 제거, (5) 완전히 건조시킨 후 충전 시도(최소 2시간 건조 권장).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung Support · 갤럭시 버즈3 시리즈 청소 방법, Apple Support · How to clean your AirPods",
+      "source_url": "https://www.samsungsvc.co.kr/solution/4216322",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰",
+        "line": "AirPods, Galaxy Buds 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "알코올(이소프로필 알코올 포함), 아세톤 등 화학용제 절대 금지. 금속 도구나 날카로운 물체로 긁으면 접점 손상 위험. 충전 포트 안쪽은 민감하므로 증류수 사용 시에도 소량만 묻혀야 함. 완전히 건조되지 않으면 내부 단락 위험.",
+      "cautionSource": "Samsung 공식 청소 가이드 4216322의 화학물질 금지 및 건조 강조, Apple Support 청소 문서의 금지 물질 명시"
+    },
+    {
+      "id": "case-battery-not-charging-troubleshooting",
+      "claim": "충전 케이스 자체가 충전되지 않을 때 확인 순서는 다음과 같다: (1) 케이스 충전 포트(Lightning/USB-C/무선) 확인 — 포트에 먼지·손상이 있는지 시각 점검, (2) 원래 사용하던 충전 케이블/어댑터로 다시 시도, (3) 다른 USB 포트나 충전기로 케이스만 별도 충전 시도(이어버드 제거 후), (4) 무선충전 모델이면 Qi 인증 무선 충전기 사용 확인 — 호환되지 않는 충전기는 케이스를 인식하지 않을 수 있음.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support · If your AirPods won't charge",
+      "source_url": "https://support.apple.com/en-us/102593",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰",
+        "line": "AirPods, Galaxy Buds 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "케이스 충전 포트가 손상되었다면 하드웨어 고장으로, 사용자가 직접 수리할 수 없다. 무선충전 케이스 모델에서 유선 충전 포트도 있으면 유선으로 먼저 시도해볼 것."
+    },
+    {
+      "id": "wireless-charging-case-qi-certified-compatibility",
+      "claim": "AirPods 2·3세대 또는 Pro 무선 충전 케이스, Galaxy Buds 무선 충전 모델은 Qi 인증 무선 충전기와 호환된다. 케이스를 충전기 중앙에 올려놓으면(상태 표시등이 위를 향하도록) 자동 감지되어 충전이 시작된다. 호환되는 경우 몇 초 후 상태 표시등이 켜졌다가 꺼지고 케이스는 계속 충전된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support · AirPods (2nd generation) 무선 충전 케이스 모델, AirPods Pro 1 MagSafe 충전 케이스 모델",
+      "source_url": "https://support.apple.com/en-us/111859",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰",
+        "line": "AirPods 2/3/Pro, Galaxy Buds 무선충전 모델",
+        "years": "2020년대 이후",
+        "region": "글로벌"
+      },
+      "caution": "모든 무선 충전기가 호환되지는 않는다. Qi 인증 마크를 확인하고, 호환되지 않는 충전기에서는 케이스를 인식하지 않거나 느리게 충전될 수 있다. MagSafe 충전기가 있으면 정렬이 더 정확해진다.",
+      "cautionSource": "Apple Support 공식 무선 충전 케이스 명시 문서"
+    },
+    {
+      "id": "charging-case-battery-capacity-charging-cycles",
+      "claim": "무선이어폰 충전 케이스의 배터리는 소모품이며, 충방전 사이클 수에 따라 용량이 저하된다. 일반적으로 충방전을 반복할 때마다 배터리 용량이 감소하며, 사용 패턴과 환경 온도(권장 0~35°C)에 따라 배터리 수명이 1~3년 정도 변한다. 케이스만 방전되면 이어버드는 더 이상 충전할 수 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung Support · Galaxy Battery - Care and Maintenance",
+      "source_url": "https://www.samsung.com/sec/support/galaxy-battery/care-and-maintenance/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰",
+        "line": "AirPods, Galaxy Buds 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "배터리 수명 1~3년은 평균 사용 조건(1일 2~3회 충전)에 기반한 수치다. 매일 완전 방전까지 사용하면 수명이 단축되고, 온도 환경이 열악하면(고온/저온) 더 빨리 열화된다. 케이스 배터리만 독립적으로 교체할 수 없으며, 서비스센터에서 전체 케이스 교체만 가능하다.",
+      "cautionSource": "Samsung 공식 배터리 관리 가이드"
+    },
+    {
+      "id": "charging-case-fast-battery-drain-causes",
+      "claim": "충전 케이스 배터리만 빨리 방전될 때 원인은 다음과 같다: (1) 무선 충전을 자주 사용 — 유선 충전보다 효율이 낮고 발열이 더 많아 배터리 부담 증가, (2) 케이스를 과도하게 자주 충전 — 완전 방전까지 기다리지 않고 부분 충전을 반복하면 배터리 부하 증가, (3) 고온 환경에 보관 — 배터리 열화 가속, (4) 케이스 내부 습기 — 접점 산화로 충전 효율 저하.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 보고 및 배터리 기술 자료",
+      "source_url": "https://yellowit.co.kr/it-review/%EA%B0%A4%EB%9F%AD%EC%8B%9C-%EB%B2%84%EC%A6%88-%ED%95%9C%EC%AA%BD%EB%A7%8C-%EB%B9%A8%EB%A6%AC-%EB%8B%B3%EB%8A%94-%EC%9D%B4%EC%9C%A0%EC%99%80-%EB%B0%B0%ED%84%B0%EB%A6%AC-%EC%88%98%EB%A6%AC-%EB%B9%84/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰",
+        "line": "AirPods 무선충전, Galaxy Buds 무선충전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "배터리 부하를 줄이려면 유선 충전을 우선하고, 케이스를 서늘하고 건조한 곳에 보관하며, 0% 또는 100% 상태를 최소화해야 한다. 무선 충전이 필요하다면 발열을 모니터링하고 정기적으로 케이스를 식혀야 한다.",
+      "cautionSource": "사용자 커뮤니티의 다중 보고 및 배터리 관리 원칙"
+    },
+    {
+      "id": "charging-case-battery-replacement-service-only",
+      "claim": "AirPods와 Galaxy Buds의 충전 케이스 배터리는 사용자가 교체할 수 없으며, 배터리 용량이 저하되었을 때는 Apple/Samsung 공식 서비스센터에서 케이스 전체 교체만 가능하다. Apple은 'AirPods 교체' 프로그램으로 케이스 단독 교체를 지원하고, Samsung도 유상 수리(약 5~6만 원대)로 케이스 교체를 진행한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support · AirPods 교체, 수리 및 서비스, Samsung Community · 갤럭시 버즈 프로 수리비 교체 비용",
+      "source_url": "https://support.apple.com/airpods/repair",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰",
+        "line": "AirPods, Galaxy Buds 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "배터리만 교체하는 방식이 아니라 전체 케이스를 새것으로 교체하므로 비용이 발생한다. 1년 보증 기간 내 제조상 불량이면 무상 교체가 가능하지만, 일반적인 배터리 열화는 유상 수리다. 기기 구매 후 정확히 언제까지 유상 수리 서비스가 지원되는지는 제조사에 확인할 것.",
+      "cautionSource": "Apple/Samsung 공식 서비스 정책 및 커뮤니티 수리 비용 사례"
+    },
+    {
+      "id": "long-term-storage-50-percent-charge-recommendation",
+      "claim": "무선이어폰 충전 케이스를 장기 보관할 때는 배터리를 약 50% 정도로 충전한 상태에서 보관하는 것이 가장 좋다. 완전 충전(100%)이나 완전 방전(0%) 상태로 오래 두면 배터리 열화가 빨라진다. 6개월 이상 보관하면 6개월마다 케이스를 충전하여 배터리를 50% 상태로 재설정하는 것을 권장한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 배터리 관리 권장사항(광범위 제품군 공통 정책)",
+      "source_url": "https://support.apple.com/en-us/119912",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰",
+        "line": "AirPods, Galaxy Buds 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "보관 장소는 온도 변화가 적은 곳(15~25°C 권장)이 좋다. 너무 더운 곳(차량 내부 등)이나 너무 추운 곳에 보관하면 배터리 성능이 일시적으로 저하될 수 있다. 보관 기간이 길수록(1년 이상) 6개월마다 재충전 주기를 지키는 것이 중요하다.",
+      "cautionSource": "Apple 공식 배터리 관리 정책(모든 디바이스에 적용)"
+    },
+    {
+      "id": "charging-case-lid-magnet-weak-community-report",
+      "claim": "AirPods 충전 케이스 뚜껑의 자석이 약해져서 뚜껑이 헐거워지거나 자동으로 닫히지 않는 현상이 보고되고 있다. 이는 공식 안내가 없는 사용자 보고이며, 원인은 자석 접착력 저하 또는 뚜껑 프레임 변형으로 추정된다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Apple Community Discussions · 에어팟 케이스 뚜껑 관련 사용자 보고",
+      "source_url": "https://discussionskorea.apple.com/thread/254187659",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "무선 이어폰",
+        "line": "AirPods 2, Pro 등 자석 폐쇄식 케이스",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "자석 약화는 공식 안내 범위 밖이므로, 발생 빈도나 원인에 대해 확실한 정보가 없다. 뚜껑이 헐거워지면 케이스 내부 습기 침투 가능성이 높아지므로 조기에 Apple 서비스센터 점검을 받을 것을 권한다. 일부 사용자는 자석 스티커로 보강하는 방법을 시도하고 있으나, 공식 권장 방법이 아니다.",
+      "cautionSource": "Apple Community 사용자 보고 및 습기 침투 위험"
+    }
+  ]
+}

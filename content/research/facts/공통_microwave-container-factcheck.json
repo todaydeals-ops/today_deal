@@ -1,0 +1,266 @@
+{
+  "topic": "전자레인지에 돌려도 되는 용기, 안 되는 용기 팩트체크",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "microwave-safe-label-structural-not-chemical",
+      "claim": "용기의 '전자레인지용' 또는 '전자파 가열 가능' 표시는 고온에서 용기가 녹거나 깨지지 않고 형태를 유지한다는 구조적 안정성만 보장할 뿐, 화학물질(BPA, 프탈레이트 등) 용출 안전성은 의미하지 않는다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "GS칼텍스 미디어허브, 헬스케어 전문가 기사",
+      "source_url": "https://gscaltexmediahub.com/esg/gsc-esg/esg-plastic-enviromentalhormone/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류·용기",
+        "line": "전 플라스틱 용기",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "글에서 사용할 때: '전자레인지용' 표시는 형태 안전성만 보장하며, 온도·오염·오래된 용기는 화학물질 용출 위험이 높다고 명시할 것",
+      "cautionSource": "언론 기사의 명시적 구분(구조 안정성 vs 화학 안전성)"
+    },
+    {
+      "id": "pp-polypropylene-microwave-safe",
+      "claim": "폴리프로필렌(PP, 플라스틱 번호 5)은 내열 온도 120~150℃로 전자레인지에 안전하며, BPA·프탈레이트를 원재료로 포함하지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 식품안전정보포털 — 전자레인지 전용 식품용기",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=2694&bbs_no=bbs231&ntctxt_no=1082132&menu_grp=MENU_NEW01",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류·용기",
+        "line": "플라스틱 PP",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "내열 온도는 이론값이며, 고온·유지·반복 가열 시 화학물질 용출량이 증가할 수 있다",
+      "cautionSource": "식약처 용기 온도 테스트 규정(100℃ 이상)"
+    },
+    {
+      "id": "hdpe-high-density-polyethylene-limited",
+      "claim": "고밀도 폴리에틸렌(HDPE, 플라스틱 번호 2)은 내열 온도가 70~100℃ 정도로 짧은 시간 데우는 용도에만 제한적으로 사용 가능하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 식품안전정보포털 — 전자레인지 전용 식품용기",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=2694&bbs_no=bbs231&ntctxt_no=1082132&menu_grp=MENU_NEW01",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류·용기",
+        "line": "플라스틱 HDPE",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "pet-polyethylene-terephthalate-avoid",
+      "claim": "PET(폴리에틸렌 테레프탈레이트, 플라스틱 번호 1)는 저열 내성이므로 전자레인지에 부적합하며, 고온 노출 시 용기가 녹거나 변형될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 식품안전정보포털 — 전자레인지 전용 식품용기",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=2694&bbs_no=bbs231&ntctxt_no=1082132&menu_grp=MENU_NEW01",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류·용기",
+        "line": "플라스틱 PET",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "microplastic-emission-infant-containers",
+      "claim": "플라스틱 유아용 용기를 전자레인지에서 가열하면 몇 분 내에 수백만~수십억 개의 미세플라스틱 입자가 방출되는 것으로 보고되었다",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "미국 네브래스카대 연구(2023) — 언론 보도",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=60480",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류·용기",
+        "line": "유아용 플라스틱",
+        "years": "2023~",
+        "region": "글로벌"
+      },
+      "caution": "원문 학술지 미확인. 언론 보도로만 확인됨. 미세플라스틱 검증에는 기계적 측정 필요."
+    },
+    {
+      "id": "aluminum-foil-microwave-spark-fire-hazard",
+      "claim": "알루미늄 호일을 전자레인지에서 가열하면 전자기파를 반사하여 스파크가 발생하며, 불꽃이 튀거나 아크 현상이 나타나 화재 위험이 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 전자레인지 사용설명서, 제조사 안전 가이드 일반",
+      "source_url": "https://www.lge.co.kr/support/solutions-1332465898586",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "용기·포장재",
+        "line": "알루미늄 호일",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "⚠️ 화재 위험으로 절대 금지 항목. 부정형('하지 마세요')으로 명확하게 안내할 것. 스파크는 금속의 뾰족한 부분에서 전류가 집중될 때 발생."
+    },
+    {
+      "id": "styrofoam-container-microwave-burn-melt",
+      "claim": "스티로폼 용기를 전자레인지에서 가열하면 타거나 녹을 수 있으며, 유해 물질이 음식으로 용출될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 식품안전정보포털 — 전자레인지 사용 금지 용기",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=2694&bbs_no=bbs231&ntctxt_no=1082132&menu_grp=MENU_NEW01",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "용기·포장재",
+        "line": "스티로폼(발포 폴리스티렌)",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "⚠️ 화재·유해물질 용출 위험으로 절대 금지. 배달 용기도 포함."
+    },
+    {
+      "id": "sealed-container-steam-explosion-risk",
+      "claim": "밀폐된 용기를 전자레인지에서 가열하면 내부 증기압이 상승하여 용기가 터지거나 폭발할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전자레인지 제조사 안전 가이드 일반",
+      "source_url": "https://www.lge.co.kr/support/solutions-1332465898586",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "용기·포장재",
+        "line": "모든 밀폐용기",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "⚠️ 폭발 위험으로 절대 금지. 반드시 뚜껑을 제거하거나 느슨하게 열어두도록 안내할 것."
+    },
+    {
+      "id": "plastic-wrap-vinyl-must-remove",
+      "claim": "비닐 랩이나 플라스틱 포장은 전자레인지에서 녹거나 변형되므로 가열 전에 반드시 제거해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 식품안전정보포털 — 전자레인지 사용 주의사항",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=2694&bbs_no=bbs231&ntctxt_no=1082132&menu_grp=MENU_NEW01",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "용기·포장재",
+        "line": "비닐·플라스틱 랩",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "paper-foil-metal-content-avoid",
+      "claim": "종이호일이나 금속이 포함된 포장지는 알루미늄 호일과 같은 원리로 전자레인지에서 스파크를 유발하므로 사용하면 안 된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전자레인지 제조사 안전 가이드 일반",
+      "source_url": "https://www.lge.co.kr/support/solutions-1332465898586",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "용기·포장재",
+        "line": "종이호일·금속 포장",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "⚠️ 화재 위험. 포장 제거를 명시하고, 배달 용기나 테이크아웃 포장의 금속 가장자리 여부를 먼저 확인하도록 안내."
+    },
+    {
+      "id": "ceramic-gold-decoration-spark-risk",
+      "claim": "금테·금박·은박 무늬가 있는 도자기나 유리 식기를 전자레인지에서 가열하면 금속 장식 부분에서 불꽃이 튀거나 식기가 과열되어 깨질 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "도자기 제조사 안내, 제조사 전자레인지 사용 가이드",
+      "source_url": "https://www.royalwarechina.com/pocelain-not-microwave/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류",
+        "line": "금테·은박 장식 도자기·유리",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "⚠️ 화재 위험으로 절대 금지. 금색·은색 장식이 있는 고급 도자기, 상속 도자기는 특히 주의하도록 안내."
+    },
+    {
+      "id": "plain-glass-ceramic-microwave-safe",
+      "claim": "장식이 없는 일반 유리와 도자기 식기(무약 또는 내부 유약만)는 전자레인지에서 안전하게 사용할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 식품안전정보포털 — 전자레인지 전용 식품용기",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=2694&bbs_no=bbs231&ntctxt_no=1082132&menu_grp=MENU_NEW01",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류",
+        "line": "일반 유리·도자기",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "다만 오래되고 손상된 유약은 납 용출 가능성이 있으므로, 깨지거나 흠집이 많은 도자기는 피하도록 안내."
+    },
+    {
+      "id": "takeout-container-reheating-check-material",
+      "claim": "배달 용기의 경우 금속 테두리·스티로폼·호일 이중층 포장 여부를 먼저 확인하고, PP 표시가 있는 용기만 전자레인지에 그대로 데워야 한다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "소비자원 용기 안전 상담, 온라인 커뮤니티 경험담",
+      "source_url": "https://www.a-ha.io/questions/4fe8cd6940bcf892a2eb1496f78cae89",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "용기·포장재",
+        "line": "배달 용기",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "순차 대안 톤으로: 가장 안전한 방법은 용기를 옮기는 것이나, 불가피하면 용기 밑면의 플라스틱 번호 확인 후 PP만 사용할 것."
+    },
+    {
+      "id": "bpa-phthalate-leaching-temperature-dependent",
+      "claim": "BPA(비스페놀A)와 프탈레이트는 고온(70℃ 이상), 기름진 음식, 오래되거나 손상된 용기에서 용출 위험이 높아진다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "헬스케어·환경 언론 기사, 플라스틱 산업 자료",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=60480",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류·용기",
+        "line": "전 플라스틱",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "근거 문헌이 다양하지만 국내 식약처 공식 한계값 미공개. 그럼에도 조심스러운 태도 권장('과도하게 데우지 않기' 수준)."
+    },
+    {
+      "id": "plastic-number-heat-tolerance-summary",
+      "claim": "플라스틱 번호별 내열 온도: 1(PET) 60~70℃ / 2(HDPE) 70~100℃ / 3(PVC) 70℃ / 4(LDPE) 70℃ / 5(PP) 120~150℃ / 6(PS) 60~70℃ / 7(기타) 70℃",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 식품안전정보포털, 한국포장재협회",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=2694&bbs_no=bbs231&ntctxt_no=1082132&menu_grp=MENU_NEW01",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류·용기",
+        "line": "플라스틱 1~7번",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "이 수치는 이론적 내열 온도이며, 반복 가열·고온·기름진 음식에서 실제 용출 시작점은 더 낮을 수 있다",
+      "cautionSource": "식약처 공정·시험 기준 문서의 고온 노출 테스트(100℃ 이상)"
+    }
+  ]
+}

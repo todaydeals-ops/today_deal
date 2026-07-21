@@ -1,0 +1,312 @@
+{
+  "topic": "갤럭시탭 충전 안 됨·화면 멈춤·배터리 소모·S펜 인식 자가점검",
+  "brand": "삼성",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "charging-port-debris-cleaning",
+      "why": "삼성 스마트폰용 팩트이며, 갤럭시탭의 포트 규격(갤럭시탭은 모델별로 USB-C/마이크로5핀 다름)이 명시되지 않아 1차 조사가 필요함. 포트 청소 원칙은 유사하지만 scope가 '스마트폰'으로 제한됨"
+    },
+    {
+      "id": "wireless-charging-coil-positioning",
+      "why": "갤럭시 스마트폰의 무선 충전 코일 위치는 갤럭시탭(특히 S펜 탑재 모델)과 완전히 다르며, 태블릿 폼팩터에서 코일 배치가 상이함"
+    },
+    {
+      "id": "safe-mode-entry-method",
+      "why": "갤럭시 스마트폰의 안전 모드(quick settings 패널에서 전원 > 다시 시작)와 태블릿의 진입 방식이 미세하게 다를 수 있으므로 별도 조사 필요"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "tab-charging-port-inspection",
+      "claim": "갤럭시탭 충전이 안 될 때 첫 번째 확인 사항은 충전 포트와 충전 케이블에 먼지·보풀·이물질이 없는지 육안으로 검사하고, 손전등으로 포트 내부를 비춰 확인하는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 배터리 충전이 안 돼요 (스마트폰 기준)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37809",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "태블릿",
+        "line": "갤럭시탭 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "포트 청소 시 금속 도구나 물 사용은 절대 금지. 부드러운 극세사 천이나 압축 공기로 가볍게 청소하되, 압축 공기도 내부 부품 손상 위험이 있으므로 최후의 수단.",
+      "cautionSource": "태블릿·스마트폰 포트 청소 공통 안전 원칙"
+    },
+    {
+      "id": "tab-charging-temperature-protection",
+      "claim": "갤럭시탭의 내부 온도가 일정 수준 이상으로 높아지면 배터리 손상을 방지하기 위해 충전이 중단되거나 속도가 느려진다. 이 경우 기기를 쿨한 환경으로 옮기고 온도가 정상으로 돌아올 때까지 기다린 후 다시 충전한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 배터리 충전이 안 돼요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37809",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "태블릿",
+        "line": "갤럭시탭 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "tab-genuine-charger-importance",
+      "claim": "갤럭시탭 충전은 반드시 삼성 정품 충전기와 정품 USB 케이블을 사용해야 하며, 비정품 충전기는 외관이 비슷해도 충전 성능이 크게 다르고 기기·배터리 손상 위험이 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 유선 충전이 안 되거나 속도가 느림",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37805",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "태블릿",
+        "line": "갤럭시탭 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "tab-fast-charging-setting-location",
+      "claim": "갤럭시탭의 고속 충전 활성화는 설정 > 배터리 > 충전 설정에서 '고속 충전' 또는 '고속 무선 충전' 옵션을 켜는 방식이다. 최신 모델에서는 고속 충전과 초고속 충전이 통합되어 단일 토글로 표시될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시를 초고속으로 충전하세요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/25867",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "태블릿",
+        "line": "갤럭시탭 S 시리즈·A 시리즈(고속 충전 지원 모델)",
+        "years": "2020년대 이후",
+        "region": "KR"
+      },
+      "caution": "구형 모델에서는 고속 충전 메뉴가 없을 수 있으므로 자신의 기기 모델을 확인한 후 설정 메뉴를 찾아야 한다. PC나 일반 USB 전원기에 연결 시에는 고속 충전이 작동하지 않음.",
+      "cautionSource": "삼성전자서비스 25867 문서에서 모델별 고속 충전 지원 기준"
+    },
+    {
+      "id": "tab-force-restart-button-combo",
+      "claim": "갤럭시탭이 응답하지 않거나 화면이 멈춘 경우 강제 재부팅은 측면(전원) 버튼과 음량(하) 버튼을 동시에 7초 이상 누르고 있다가 갤럭시 로고가 화면에 나타나면 버튼을 놓으면 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 탭, 멈춰서 동작이 안됩니다. 다시 시작하고 싶어요.",
+      "source_url": "https://www.samsungsvc.co.kr/solution/21320",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "태블릿",
+        "line": "갤럭시탭 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "강제 재부팅은 데이터를 손실하지 않는 안전한 조치다. 버튼을 정확히 동시에 눌러야 한다. 한 번에 안 되면 여러 번 반복 시도해도 기기 손상 위험이 없다.",
+      "cautionSource": "삼성전자서비스 공식 문서에서 강제 재부팅의 안전성 명시"
+    },
+    {
+      "id": "tab-safe-mode-entry",
+      "claim": "갤럭시탭을 안전 모드로 진입하려면 부팅 시 삼성 로고가 나타나는 순간부터 음량(하) 버튼을 길게 누르고 있으면 자동으로 안전 모드로 진입한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 휴대전화 부팅시 안전모드가 뜹니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40333",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "태블릿",
+        "line": "갤럭시탭 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "안전 모드는 타사 앱을 비활성화해 앱 오류로 인한 화면 멈춤이나 터치 불량을 진단하는 데 사용된다. 보호 케이스가 있으면 버튼 인식을 방해할 수 있으므로 케이스를 분리하고 시도.",
+      "cautionSource": "삼성전자서비스 40333 공식 안전 모드 가이드"
+    },
+    {
+      "id": "tab-battery-drain-common-causes",
+      "claim": "갤럭시탭 배터리가 빨리 소모되는 주요 원인은 항상 켜기(AOD) 기능, WiFi·블루투스·GPS 상시 활성화, 화면 밝기 높음, 백그라운드 앱 실행, 불안정한 네트워크 신호이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시, 배터리가 빨리 소모됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40691",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "태블릿",
+        "line": "갤럭시탭 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "tab-battery-optimization-steps",
+      "claim": "갤럭시탭 배터리 소모를 줄이는 방법은 (1) 설정 > 배터리 및 디바이스 케어 > 지금 최적화 실행, (2) 불필요한 앱을 절전·초절전 상태로 설정, (3) 화면 밝기 낮추기, (4) 절전 모드 활성화, (5) WiFi·블루투스·GPS 필요할 때만 켜기이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시, 배터리가 빨리 소모됩니다 & 배터리 소모가 빠르거나 급 방전",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40691",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "태블릿",
+        "line": "갤럭시탭 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "tab-screen-freeze-basic-fix",
+      "claim": "갤럭시탭 화면이 멈추거나 터치가 먹지 않으면 강제 재부팅(측면 버튼 + 음량하 7초)을 먼저 시도한다. 재부팅 후에도 터치가 안 되면 비정품 케이스나 강화유리 보호필름을 제거한 후 다시 테스트한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시, 화면 터치 인식이 안 돼요 & 제품 이상 시 조치 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39691",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "태블릿",
+        "line": "갤럭시탭 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "비정품 케이스의 강화유리 보호필름은 터치 감도를 저하시킬 수 있으므로 화면이 정상이면 필름 문제를 의심할 수 있다. 습한 화면 상태도 터치 불량을 일으킬 수 있으니 마른 천으로 닦고 시도."
+    },
+    {
+      "id": "tab-talkback-feature-check",
+      "claim": "갤럭시탭에서 화면 터치 시 음성 안내(설명 읽기)가 나오면서 터치가 잘 되지 않는다면, 접근성 설정의 TalkBack 기능이 활성화되어 있는 것이다. 설정 > 접근성 > 화면 읽기 > TalkBack을 비활성화하면 정상 터치 입력 모드로 돌아온다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시, 화면 터치 인식이 안 돼요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39691",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "태블릿",
+        "line": "갤럭시탭 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "TalkBack은 접근성 기능이므로 의도치 않게 활성화된 경우가 많다. 화면을 누를 때마다 음성이 나오면 이 기능을 의심해야 한다."
+    },
+    {
+      "id": "tab-storage-cleanup-via-device-care",
+      "claim": "갤럭시탭의 저장공간이 부족할 때는 설정 > 배터리 및 디바이스 케어 > 저장공간에서 불필요한 파일, 캐시, 설치되지 않은 앱 데이터를 정리할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 배터리 및 디바이스 케어",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40691",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "태블릿",
+        "line": "갤럭시탭 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "s-pen-self-diagnosis-location",
+      "claim": "갤럭시탭의 S펜 인식 문제를 자가진단하려면 설정 > 배터리 및 디바이스 케어 > 자가 진단 > S 펜에서 터치 감지 테스트를 실행할 수 있다. 자가진단 결과가 '정상'이면 S펜 펌웨어 업데이트나 기기 소프트웨어 업데이트를 먼저 시도해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시, S펜 입력(터치) 인식이 안되거나 동작이 안됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/164851",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "태블릿",
+        "line": "갤럭시탭 S펜 탑재 모델 (S 시리즈, Z 폴드 등)",
+        "years": "2020년대 이후",
+        "region": "글로벌"
+      },
+      "caution": "자가진단은 자신의 기기에서만 정상 작동 확인이 가능하므로, 다른 S펜으로 테스트할 수 없으면 공식 서비스센터 점검이 필요할 수 있다."
+    },
+    {
+      "id": "s-pen-magnetic-interference",
+      "claim": "갤럭시탭 S펜이 인식되지 않는 주요 원인 중 하나는 자석 간섭이다. 비정품 케이스에 자석이 포함되어 있거나 태블릿 주변에 자성 물질(자석 스탠드, 금속 물체)이 있으면 S펜 센서가 영향을 받는다. 또한 카메라 부근의 내부 자석도 S펜 인식을 방해할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시, S펜 입력(터치) 인식이 안되거나 동작이 안됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/164851",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "태블릿",
+        "line": "갤럭시탭 S펜 탑재 모델",
+        "years": "2020년대 이후",
+        "region": "글로벌"
+      },
+      "caution": "자석 간섭은 특정 위치(예: 카메라 주변)에서만 발생할 수 있다. S펜을 전체 화면에서 테스트해 인식 실패 구간을 파악하면 원인 진단에 도움이 된다."
+    },
+    {
+      "id": "s-pen-pressure-sensitivity",
+      "claim": "갤럭시탭 S펜을 화면에 거의 누워(거의 수평) 사용하면 필압 감지 능력이 약해져 인식되지 않을 수 있다. S펜은 화면에 45~60도 각도로 세워서 사용할 때 감도가 최적화된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시, S펜 입력(터치) 인식이 안되거나 동작이 안됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/164851",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "태블릿",
+        "line": "갤럭시탭 S펜 탑재 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "s-pen-screen-protector-issue",
+      "claim": "갤럭시탭의 강화유리 보호필름(스크린 프로텍터)은 S펜 인식 감도를 저하시킬 수 있다. 필름으로 인해 화면 표면이 고르지 않거나 두꺼워지면 S펜이 정상 거리에서 감지되지 않을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시, S펜 입력(터치) 인식이 안되거나 동작이 안됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/164851",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "태블릿",
+        "line": "갤럭시탭 S펜 탑재 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "문제 진단을 위해 보호필름을 임시로 제거해 S펜 인식이 개선되는지 확인해볼 수 있다. 필름이 원인이면 S펜 호환 전용 필름을 사용하거나 필름 사용을 중단하는 것을 고려해야 한다."
+    },
+    {
+      "id": "samsung-members-selfcheck-touch",
+      "claim": "갤럭시탭 화면 터치 문제의 진단은 Samsung Members 앱 > 기기 진단 > 화면(터치) 항목에서 자동 테스트를 실행할 수 있다. 앱이 터치 인식 불량을 감지하면 결과를 보여주고 해결 방법을 제안한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시, 화면 터치 인식이 안 돼요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39691",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "태블릿",
+        "line": "갤럭시탭 전 시리즈(멤버스 앱 설치 필수)",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "멤버스 앱 진단 결과가 '비정상'이면 하드웨어 손상일 가능성이 높으므로 공식 서비스센터 점검이 필요하다."
+    },
+    {
+      "id": "tab-software-update-importance",
+      "claim": "갤럭시탭의 충전 문제, 터치 불량, S펜 인식 오류, 배터리 문제는 소프트웨어 업데이트로 개선될 수 있다. 설정 > 정보 > 소프트웨어 업데이트에서 최신 버전 설치 여부를 확인하고 업데이트가 있으면 설치해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시탭 자가점검 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/21320",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "태블릿",
+        "line": "갤럭시탭 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "갤럭시탭 펌웨어 업데이트는 Wi-Fi 연결 상태에서 배터리 충전 50% 이상일 때 진행하는 것이 권장된다. 업데이트 중 전원이 꺼지면 기기가 부팅되지 않을 수 있다.",
+      "cautionSource": "안드로이드·삼성 공통 펌웨어 업데이트 안전 기준(배터리 50% 요구사항)"
+    }
+  ]
+}

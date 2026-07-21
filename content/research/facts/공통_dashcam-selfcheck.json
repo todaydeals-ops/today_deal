@@ -1,0 +1,339 @@
+{
+  "topic": "차량 블랙박스(대시캠) 녹화 안 됨·재부팅·배터리 방전 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "dashcam-memory-card-lifespan",
+      "claim": "블랙박스 메모리카드는 반복적인 읽기·쓰기 작업으로 인해 소모되며, 일반적으로 6개월에서 1년 사이에 한 번 교체하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "차량관리 정보 커뮤니티 · 블로그 다중 출처",
+      "source_url": "https://orchid-and.com/106",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "메모리카드 수명이 다하면 녹화가 중단되거나 파일이 손상되어, 사고 발생 시 핵심 영상이 없을 수 있다. 매월 상태를 점검하고 주기적으로 교체해야 한다.",
+      "cautionSource": "https://orchid-and.com/106"
+    },
+    {
+      "id": "dashcam-memory-card-format-frequency",
+      "claim": "블랙박스 메모리카드는 오버라이트 과정에서 데이터 찌꺼기가 축적되므로, 최소 2주~1개월에 1번 주기적으로 포맷하는 것이 필요하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "차량관리 정보 · 제조사 권장사항",
+      "source_url": "https://orchid-and.com/106",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "포맷 전에 중요 영상이 있는지 반드시 백업하고, 포맷 후 블랙박스가 자동으로 필요한 폴더와 세팅 파일을 생성한다.",
+      "cautionSource": "https://orchid-and.com/106"
+    },
+    {
+      "id": "dashcam-memory-card-format-internal-method",
+      "claim": "대부분의 블랙박스는 기기 자체 설정 메뉴에 '메모리카드 포맷' 기능이 탑재되어 있으며, 버튼 몇 번만 누르면 1분 안에 완료된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "제품 설정 가이드",
+      "source_url": "https://www.eanews.kr/news/831050",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "현행 판매 모델",
+        "years": "2010~현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "dashcam-memory-card-not-recognized",
+      "claim": "블랙박스 메모리카드를 인식하지 못하거나 계속 포맷을 요청하는 문제는 카드의 파일 시스템이 손상되었거나 카드가 수명을 다한 신호다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "자동차 커뮤니티 · 기술 가이드",
+      "source_url": "https://www.clien.net/service/board/cm_car/17881774",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "같은 카드를 반복해서 포맷해서는 안 되며, 새 카드로 교체하고 블랙박스 내에서 초기 포맷을 진행해야 한다.",
+      "cautionSource": "https://www.clien.net/service/board/cm_car/17881774"
+    },
+    {
+      "id": "dashcam-recording-not-saved-file-system-error",
+      "claim": "블랙박스 녹화 파일이 없거나 저장되지 않는 주요 원인은 메모리카드 오류, 파일 시스템 손상, 또는 단말기 소프트웨어 오류다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "아이나비 고객센터",
+      "source_url": "https://www.inavi.com/CustCenter/Faq/Dtls/2430?catecd1=cate_00092&istab=Y&catecd2=cate_00104",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "dashcam-reboot-loop-cause",
+      "claim": "블랙박스가 무한 재부팅되는 원인은 메모리카드 인식 불량, 케이블 접촉 불량, 녹화 파일 손상, 또는 단말기 펌웨어 오류다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "자동차 커뮤니티 · 기술 정보 사이트",
+      "source_url": "https://www.a-ha.io/questions/4bcabdd5156eff65ae1e54c313d398b1",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "dashcam-reboot-power-cable-check",
+      "claim": "블랙박스가 재부팅을 반복할 때 첫 점검은 DC-IN 단자의 전원 케이블을 분리하고, 케이블 끝단의 검은색 링 상태를 확인하는 것이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "제품 수리 가이드",
+      "source_url": "https://www.lukashd.com/bbs/bbs4_2_2/152026",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "검은색 링이 없거나 손상되었으면 케이블을 교체해야 한다.",
+      "cautionSource": "https://www.lukashd.com/bbs/bbs4_2_2/152026"
+    },
+    {
+      "id": "dashcam-reboot-camera-cable-isolation-test",
+      "claim": "블랙박스 무한 재부팅 원인이 후방 카메라일 때는, 전방 카메라에서 후방 케이블과 메모리카드를 모두 분리한 후 전원을 켰을 때 정상 작동하면 후방 카메라를 점검해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "기술 진단 가이드",
+      "source_url": "https://www.lukashd.com/bbs/bbs4_2_2/152026",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "2채널 이상 모델",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "dashcam-low-voltage-cutoff-setting",
+      "claim": "블랙박스 저전압 차단 설정은 주차 중 차량 배터리 방전을 방지하기 위한 기능으로, 특정 전압 이하로 내려가면 블랙박스 전원을 자동으로 차단한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "블랙박스 설정 가이드",
+      "source_url": "https://www.dodo82.com/2026/03/dashcam-permanent-recording-setting-tip-what-is-the-golden-voltage-to-prevent-the-battery-from-discharging.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "상시녹화 기능 모델",
+        "years": "2015~현행",
+        "region": "KR"
+      },
+      "caution": "저전압 차단 설정이 없거나 비활성화되면, 주차 중 상시녹화로 인해 자동차가 시동이 걸리지 않을 수 있다.",
+      "cautionSource": "https://www.dodo82.com/2026/03/dashcam-permanent-recording-setting-tip-what-is-the-golden-voltage-to-prevent-the-battery-from-discharging.html"
+    },
+    {
+      "id": "dashcam-low-voltage-cutoff-summer-setting",
+      "claim": "블랙박스 저전압 차단 설정은 여름철에는 12.0V, 겨울철에는 12.2V~12.3V로 설정하는 것이 권장되며, 일반적인 범위는 11.8~12.2V다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "블랙박스 설정 커뮤니티 · 가이드 사이트",
+      "source_url": "https://www.dodo82.com/2026/03/dashcam-permanent-recording-setting-tip-what-is-the-golden-voltage-to-prevent-the-battery-from-discharging.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "상시녹화 기능 모델",
+        "years": "2015~현행",
+        "region": "KR"
+      },
+      "caution": "겨울철에 저전압 차단값이 너무 낮으면 배터리 효율 저하로 인해 배터리가 고갈될 위험이 높다. 제조사 권장값을 확인하고 계절에 맞게 조정해야 한다.",
+      "cautionSource": "https://www.dodo82.com/2026/03/dashcam-permanent-recording-setting-tip-what-is-the-golden-voltage-to-prevent-the-battery-from-discharging.html"
+    },
+    {
+      "id": "dashcam-parking-recording-battery-drain-prevention",
+      "claim": "주차 중 상시녹화로 인한 배터리 방전을 방지하려면, 이벤트(충격 감지) 모드로 변경하거나 블랙박스 전용 보조배터리를 설치하는 방법이 효과적이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "자동차 관리 가이드",
+      "source_url": "https://koreaone0161.com/entry/%EB%B8%94%EB%9E%99%EB%B0%95%EC%8A%A4-%EC%83%81%EC%8B%9C-%EC%A0%84%EC%9B%90-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%EB%B2%95-%EB%B0%B0%ED%84%B0%EB%A6%AC-%EB%B0%A9%EC%A0%84-%EC%98%88%EB%B0%A9%EB%B6%80%ED%84%B0-%EC%84%A4%EC%A0%95-%EA%BF%80%ED%8C%81%EA%B9%8C%EC%A7%80",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "상시녹화 기능 모델",
+        "years": "2015~현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "dashcam-screen-not-turning-on-power-check",
+      "claim": "블랙박스 화면이 켜지지 않을 때 첫 점검은 좌측 측면이나 전원 버튼 옆의 AC 전원 표시등이 켜져 있는지 확인하는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전자제품 기본 진단 원리",
+      "source_url": "https://blog.bullsone.com/2649",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "디스플레이 탑재 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "전원 표시등이 꺼져 있으면 전원 어댑터, 케이블, 또는 내부 배터리 문제일 가능성이 높다.",
+      "cautionSource": "https://blog.bullsone.com/2649"
+    },
+    {
+      "id": "dashcam-summer-heat-memory-card-damage",
+      "claim": "블랙박스 메모리카드는 고온에 매우 취약하며, 한국소비자원 실험에 따르면 60℃에서 9개 제품의 화질이 나빠졌고, 90℃에서는 22개 제품에서 화질 저하가 나타났다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "한국소비자원 실험 · 블로그 정보",
+      "source_url": "https://blog.bullsone.com/2649",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "여름철 한낮 차내 온도는 최대 90℃ 이상 상승할 수 있으며, 블랙박스 자체 발열을 포함하면 차량 실내 온도보다 10℃ 이상 높아질 수 있다. 야외주차는 가능한 피하고, 그늘진 곳이나 실내 주차장을 이용해야 한다.",
+      "cautionSource": "https://blog.bullsone.com/2649"
+    },
+    {
+      "id": "dashcam-gps-reception-poor-location-change",
+      "claim": "블랙박스 GPS 수신이 갑자기 원활하지 않을 때는 상단 매립 위치를 변경해 보거나 연결 케이블의 접촉 불량을 확인하는 것이 기본 조치다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "제품 설정 가이드 · 커뮤니티",
+      "source_url": "https://brunch.co.kr/@f9e47fa5c7d646b/121",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "GPS 탑재 모델",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "dashcam-gps-tinting-film-interference",
+      "claim": "금속 성분이 포함된 프리미엄 썬팅 필름을 시공한 차량에서 GPS 신호 간섭이 발생할 수 있으며, 이 경우 외장형 GPS 안테나를 별도로 설치하여 수신율을 높일 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "블랙박스 설정 가이드",
+      "source_url": "https://brunch.co.kr/@f9e47fa5c7d646b/121",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "GPS 탑재 모델",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "dashcam-installation-lens-alignment",
+      "claim": "블랙박스 설치 시 렌즈가 차량의 정중앙을 향하도록 수평을 맞추는 것이 포인트이며, 전면유리 도트부분에 GPS를 부착해도 수신율에 영향을 주지 않는다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "블랙박스 설치 가이드",
+      "source_url": "https://brunch.co.kr/@f9e47fa5c7d646b/121",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "렌즈 정렬이 틀어지면 시야각이 왜곡되어 사고 시 영상 증거로 활용하기 어려울 수 있다.",
+      "cautionSource": "https://brunch.co.kr/@f9e47fa5c7d646b/121"
+    },
+    {
+      "id": "dashcam-impact-sensitivity-setting",
+      "claim": "블랙박스 충격감지 민감도는 중간 수준(3~4단계, 모델에 따라 다름)으로 설정하는 것이 권장된다. 과도하게 높으면 사소한 진동에도 녹화가 시작되어 저장 공간이 낭비된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "자동차 커뮤니티 · 블로그",
+      "source_url": "https://www.clien.net/service/board/cm_car/17279397",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "충격감지 기능 모델",
+        "years": "2015~현행",
+        "region": "KR"
+      },
+      "caution": "옆차에서 문을 닫는 것만으로도 충격감지가 반응하는 경우는 민감도가 너무 높게 설정된 것이므로, '낮음'으로 조정하거나 모션 감지를 OFF 처리할 수 있다.",
+      "cautionSource": "https://www.clien.net/service/board/cm_car/17279397"
+    },
+    {
+      "id": "dashcam-firmware-update-inavi",
+      "claim": "아이나비 블랙박스 펌웨어는 아이나비 홈페이지의 고객지원 > 업그레이드 센터 > 블랙박스 업그레이드에서 수동으로 다운로드하여 메모리 카드에 업로드하거나, 아이나비 매니저 프로그램으로 자동 업데이트할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "아이나비 고객센터",
+      "source_url": "https://www.inavi.com/custcenter/faq-blackbox",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "아이나비",
+        "category": "블랙박스",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "펌웨어 업데이트 중에는 절대 전원을 차단하지 않아야 하며, 업데이트 전에 메모리카드에 충분한 용량이 있는지 확인해야 한다.",
+      "cautionSource": "https://www.inavi.com/custcenter/faq-blackbox"
+    },
+    {
+      "id": "dashcam-windshield-mount-heat-adhesion-failure",
+      "claim": "블랙박스 거치대는 뜨거운 여름철 열기에 노출되면 접착력이 약해져 낙하 사고가 빈번히 발생한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "자동차 관리 가이드",
+      "source_url": "https://kixxman.com/vehicle_maintenance_2025_blackbox",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블랙박스",
+        "line": "흡착식·점착식 거치대",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "여름철에는 거치대 접착력을 주기적으로 점검하고, 필요하면 보강 스트랩을 설치하는 것이 좋다. 떨어질 위험이 있으면 보험을 위해 거치대를 재점착해야 한다.",
+      "cautionSource": "https://kixxman.com/vehicle_maintenance_2025_blackbox"
+    }
+  ]
+}

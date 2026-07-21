@@ -1,0 +1,351 @@
+{
+  "topic": "플러그 안 뽑으면 전기료 많이 나오나? 대기전력의 진실",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "standby-power-definition",
+      "claim": "대기전력(standby power)은 가전제품을 사용하지 않을 때 콘센트에 꽂혀 있는 상태에서 소모되는 전력이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국에너지공단 대기전력저감프로그램 제도개요",
+      "source_url": "https://eep.energy.or.kr/business_introduction/standby_summary.aspx",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전력",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "standby-power-ratio-of-total",
+      "claim": "가정용 대기전력은 국내 전체 가정·상업 전력 소비량의 약 1.67~11%를 차지한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국전기연구원(KERI) 2011년 전국 대기전력 실측 조사 + UN 케이스 스터디",
+      "source_url": "https://www.keri.re.kr/_prog/_board/?mode=V&code=sub0601&site_dvs_cd=kr&menu_dvs_cd=0601&no=3695",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전력",
+        "region": "KR"
+      },
+      "caution": "연도별·조사 범위(가정용만 vs. 상업용 포함)에 따라 수치가 다르다. 2003년 조사는 1.67%, 일부 자료는 11%로 표기된다.",
+      "cautionSource": "한국전기연구원 자료 + 한국에너지공단"
+    },
+    {
+      "id": "average-standby-power-per-household",
+      "claim": "한국 가구의 평균 대기전력은 57W이며, 연평균 306kWh가 소모된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국전기연구원(KERI) 2011년 전국 대기전력 실측 조사",
+      "source_url": "https://www.keri.re.kr/_prog/_board/?mode=V&code=sub0601&site_dvs_cd=kr&menu_dvs_cd=0601&no=3695",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전력",
+        "years": "2003년대 이후",
+        "region": "KR"
+      },
+      "caution": "2003년 조사 기준. 이후 전자제품의 효율 개선으로 현재 수치는 다를 수 있다.",
+      "cautionSource": "한국전기연구원"
+    },
+    {
+      "id": "settopbox-highest-standby",
+      "claim": "셋톱박스의 대기전력은 12.3W로, TV의 1.3W 대비 약 10배 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국에너지공단 대기전력저감프로그램 실측 조사",
+      "source_url": "https://eep.energy.or.kr/business_introduction/standby_summary.aspx",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "영상기기",
+        "region": "KR"
+      },
+      "caution": "통신사별로 차이가 크다. 케이블 평균 14.3W, KT 평균 10.5W, LG 평균 8.5W, SKB 평균 7.9W.",
+      "cautionSource": "한국에너지공단"
+    },
+    {
+      "id": "tv-standby-power",
+      "claim": "TV의 대기전력(리모컨으로 전원을 끈 상태)은 1.3W이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국에너지공단 대기전력저감프로그램 실측 조사",
+      "source_url": "https://eep.energy.or.kr/business_introduction/standby_summary.aspx",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "영상기기",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "tv-standby-monthly-cost",
+      "claim": "TV를 리모컨으로 끈 상태로 24시간 놔둬도 대기전력은 1.3W 수준이라, 한 달 전기료는 약 100~250원에 그친다(하루로 치면 몇 원 안팎).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국에너지공단 대기전력저감프로그램",
+      "source_url": "https://eep.energy.or.kr/business_introduction/standby_summary.aspx",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "영상기기",
+        "region": "KR"
+      },
+      "caution": "정확한 금액은 가정의 요금 구간에 따라 달라진다. 다만 1.3W 기준으로는 월 수백 원을 넘기 어렵다.",
+      "cautionSource": "1.3W × 24h × 30일 = 약 0.94kWh/월 환산(한국전력 저압 전력량 요금 기준)"
+    },
+    {
+      "id": "modem-standby-power",
+      "claim": "인터넷 모뎀의 대기전력은 6.0W이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국에너지공단 대기전력저감프로그램 기기별 조사",
+      "source_url": "https://eep.energy.or.kr/business_introduction/standby_summary.aspx",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "통신기기",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "aircon-standby-power",
+      "claim": "스탠드형 에어컨의 대기전력은 5.8W이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국에너지공단 대기전력저감프로그램 기기별 조사",
+      "source_url": "https://eep.energy.or.kr/business_introduction/standby_summary.aspx",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "냉방기",
+        "line": "스탠드형",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "boiler-standby-power",
+      "claim": "보일러의 대기전력은 5.8W이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국에너지공단 대기전력저감프로그램 기기별 조사",
+      "source_url": "https://eep.energy.or.kr/business_introduction/standby_summary.aspx",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "난방기기",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "audio-speaker-standby-power",
+      "claim": "오디오 스피커의 대기전력은 5.6W이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국에너지공단 대기전력저감프로그램 기기별 조사",
+      "source_url": "https://eep.energy.or.kr/business_introduction/standby_summary.aspx",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "음향기기",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "home-theater-standby-power",
+      "claim": "홈시어터의 대기전력은 5.1W이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국에너지공단 대기전력저감프로그램 기기별 조사",
+      "source_url": "https://eep.energy.or.kr/business_introduction/standby_summary.aspx",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "음향기기",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "smartphone-charger-standby-power",
+      "claim": "스마트폰 충전기의 대기전력은 약 0.13W이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 및 에너지 관련 블로그 종합",
+      "source_url": "https://www.jaenung.net/tree/6987",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "충전기",
+        "region": "KR"
+      },
+      "caution": "최신 고효율 충전기는 더 낮을 수 있다.",
+      "cautionSource": "다양한 커뮤니티 보고"
+    },
+    {
+      "id": "smartphone-charger-yearly-cost",
+      "claim": "스마트폰 충전기를 연중 꽂아두었을 때의 연간 전기료는 약 175원이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "에너지 절약 커뮤니티 계산 자료",
+      "source_url": "https://www.jaenung.net/tree/6987",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "충전기",
+        "region": "KR"
+      },
+      "caution": "약 0.13W × 24시간 × 365일 × 100원/kWh = 약 114원이나, 실측 조사에서는 175원으로 보고되기도 한다.",
+      "cautionSource": "에너지 계산 블로그"
+    },
+    {
+      "id": "smartphone-charge-yearly-cost",
+      "claim": "스마트폰을 1년간 완전 충전하는 데 드는 전기료는 약 424원이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "한경 모바일뉴스 + 커뮤니티 계산",
+      "source_url": "https://plus.hankyung.com/apps/newsinside.view?aid=201609130876A",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모바일기기",
+        "region": "KR"
+      },
+      "caution": "일회 충전량은 약 19.2Wh로 추정된다.",
+      "cautionSource": "한경 모바일"
+    },
+    {
+      "id": "multi-tap-standby-power",
+      "claim": "멀티탭 스위치 자체도 약 0.217W의 전력을 소비한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "에너지 효율 커뮤니티 및 사용자 후기",
+      "source_url": "https://www.a-ha.io/questions/4aa04190e26d1d6699192e97256e1a01",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "멀티탭",
+        "region": "KR"
+      },
+      "caution": "멀티탭에 아무 기기도 연결하지 않아도 스위치를 켜기만 해도 소비된다.",
+      "cautionSource": "사용자 후기"
+    },
+    {
+      "id": "multi-tap-effect-limited",
+      "claim": "개별 스위치가 있는 멀티탭이 절약 효과를 가져 있으나, 실제 절감액은 매우 제한적이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "한경 및 에너지 커뮤니티",
+      "source_url": "https://www.a-ha.io/questions/4cee4af8b40e73d5a032aa08716b4551",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "멀티탭",
+        "region": "KR"
+      },
+      "caution": "실제 절감 효과는 연수십 원대로 가정에서 체감하기 어렵다.",
+      "cautionSource": "사용자 후기"
+    },
+    {
+      "id": "standby-power-management-device",
+      "claim": "대기전력 차단 콘센트(절전형 멀티탭)를 사용하면 사용하지 않는 기기의 대기 전력을 완전히 차단할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국에너지공단 대기전력저감프로그램 제도개요",
+      "source_url": "https://eep.energy.or.kr/business_introduction/standby_summary.aspx",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "멀티탭",
+        "region": "KR"
+      },
+      "caution": "개별 스위치 위치와 개별 기기의 대기전력이 얼마나 되는지에 따라 효과가 달라진다.",
+      "cautionSource": "한국에너지공단"
+    },
+    {
+      "id": "energy-efficiency-rating-1st-vs-5th",
+      "claim": "에너지소비효율 1등급 제품은 5등급 제품 대비 약 30~40%의 에너지를 절감할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국에너지공단 효율관리제도",
+      "source_url": "https://eep.energy.or.kr/more/compare_efficiency.aspx",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "효율등급",
+        "region": "KR"
+      },
+      "caution": "같은 1등급이라도 제조사와 모델에 따라 실제 소비 전력이 다를 수 있다.",
+      "cautionSource": "한국에너지공단"
+    },
+    {
+      "id": "korea-1w-program",
+      "claim": "한국은 1990년대 말부터 '1W 정책(Korea 1-watt plan)'을 추진하여 기기별 대기전력을 1W 이하로 줄이려고 했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "UN 지속가능발전 사례 연구(Republic of Korea 7. Standby Power 1W Program)",
+      "source_url": "https://www.un.org/esa/sustdev/csd/casestudies/e3_5_korea.pdf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "정부정책",
+        "years": "1990년대말~",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "plug-out-practical-value",
+      "claim": "충전기 같은 극저전력 기기는 뽑는 번거로움이 절약액보다 크다는 점을 고려할 필요가 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "에너지 효율 커뮤니티 의견 종합",
+      "source_url": "https://www.a-ha.io/questions/46dffc8ffa02fad5be43fcf5173be5d0",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "행동경제학",
+        "region": "KR"
+      },
+      "caution": "이는 가치 판단의 문제로, 개인의 선호도에 따라 의견이 갈린다.",
+      "cautionSource": "사용자 후기 다수"
+    },
+    {
+      "id": "settopbox-vs-charger-priority",
+      "claim": "대기전력 절감이 목표라면, 충전기보다는 셋톱박스, 모뎀, 에어컨 같은 고전력 대기기기를 우선으로 관리해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국에너지공단 기기별 대기전력 조사",
+      "source_url": "https://eep.energy.or.kr/business_introduction/standby_summary.aspx",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전력관리",
+        "region": "KR"
+      },
+      "caution": "셋톱박스(12.3W)는 충전기(0.13W)의 약 95배 높다.",
+      "cautionSource": "한국에너지공단"
+    }
+  ],
+  "_resolved_disputes": [
+    {
+      "reporter": "집필자(대기전력 팩트체크)",
+      "target": "tv-standby-monthly-cost",
+      "issue": "월 3,000~4,000원은 1.3W와 자릿수 불일치(약 30배 과다). 검산상 월 100~250원.",
+      "resolution": "총괄 검산 확인 후 수정 완료. 2026-07-21",
+      "status": "resolved-fixed"
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "topic": "노트북 내장 키보드 특정 키 안 눌림·고스트·한/영 전환 등 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "filter-keys-symptom-slow-input",
+      "claim": "Windows의 필터키(Filter Keys) 기능이 켜져 있으면 짧은 키 입력은 무시되고, 키를 길게 눌러야 입력되는 현상이 발생한다. 오른쪽 Shift 키를 8초 이상 누르면 필터키가 자동 활성화된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dell 대한민국 - Windows에서 입력하려고 할 때 키보드가 응답하지 않음",
+      "source_url": "https://www.dell.com/support/kbdoc/ko-kr/000137690/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "노트북",
+        "line": "내장 키보드",
+        "years": "Windows 10/11 탑재 현행 모델",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "filter-keys-disable-solution",
+      "claim": "필터키를 해제하려면 Windows 설정 > 접근성 > 키보드 > 필터 키 > '필터 키 켜기' 토글을 OFF로 변경한다. 이 기능이 자동 활성화되지 않도록 '필터 키의 키보드 단축키' 항목도 끈다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dell 대한민국, Lenovo 공식 지원",
+      "source_url": "https://support.lenovo.com/cr/ko/solutions/ht500119",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "노트북",
+        "line": "내장 키보드",
+        "years": "Windows 10/11",
+        "region": "글로벌"
+      },
+      "caution": "필터키는 의도치 않게 오른쪽 Shift 키를 8초 이상 누르면 활성화될 수 있으므로, 단축키도 함께 해제하는 것이 권장된다",
+      "cautionSource": "Dell 공식 지원"
+    },
+    {
+      "id": "sticky-keys-symptom-unintended-activation",
+      "claim": "Windows의 고정키(Sticky Keys) 기능이 켜져 있으면 Shift 키를 5회 빠르게 누르면 '고정키를 켜시겠습니까?' 알림이 나타나고, 이후 수정자 키(Ctrl, Shift, Alt)를 한 번에 누르지 않고 순차적으로 눌러도 단축키가 인식된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Q&A, CORSAIR 공식 가이드",
+      "source_url": "https://learn.microsoft.com/ko-kr/answers/questions/3898623/question-3898623",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "노트북",
+        "line": "내장 키보드",
+        "years": "Windows 10/11",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "sticky-keys-disable-solution",
+      "claim": "고정키를 해제하려면 Windows 설정 > 접근성 > 키보드 > '고정 키' > '고정 키 켜기' 토글을 OFF로 변경한다. Shift 5회 누르기로 자동 활성화되지 않도록 '고정 키의 키보드 단축키' 항목도 끈다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Q&A, Craftdaily",
+      "source_url": "https://thecraftdaily.com/ko-kr/how-to-disable-sticky-keys/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "노트북",
+        "line": "내장 키보드",
+        "years": "Windows 10/11",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "liquid-spill-emergency-immediate-power-off",
+      "claim": "노트북에 물, 음료, 커피 등 액체를 쏟았을 때 즉시 전원을 차단하고 배터리를 분리해야 한다. 전원을 켠 채로 두거나 나중에 켜면 합선으로 메인보드와 주요 부품이 손상될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dell 대한민국 - 배터리 정보 및 지침",
+      "source_url": "https://www.dell.com/support/kbdoc/ko-kr/000128491/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "노트북",
+        "line": "모든 노트북",
+        "years": "현행 모델",
+        "region": "글로벌"
+      },
+      "caution": "절대 켜지 말 것. 드라이기 열풍 건조도 배터리 손상·팽창 위험이 있으므로 금물. 전원 차단 후 배터리를 빼고 자연 건조 후 서비스센터에서 전문 점검을 받아야 한다.",
+      "cautionSource": "Dell, iFixit 배터리 스웰링 가이드, WorkingUS 포럼"
+    },
+    {
+      "id": "num-lock-symptom-letters-as-numbers",
+      "claim": "노트북의 Num Lock이 켜져 있으면 숫자 키패드로 지정된 문자 키(U, I, O, J, K, L, M 등)를 눌렀을 때 숫자가 입력된다. 노트북은 공간 제약으로 별도 숫자 패드가 없어서 일부 문자 키가 숫자 입력 기능을 겸한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - 키보드 입력시 숫자로 입력되거나 숫자키 입력이 안 됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40745",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "노트북",
+        "line": "내장 키보드 (숫자 패드 없음)",
+        "years": "현행 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "num-lock-enable-disable-method",
+      "claim": "노트북의 Num Lock 기능은 Fn 키를 누른 채 Num Lock 키(일반적으로 오른쪽 상단)를 누르거나, 일부 모델은 Fn + F11(자물쇠 모양)을 눌러 활성화/비활성화한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "주연테크911, 삼성전자서비스, LG 스스로 해결, HP, Lenovo",
+      "source_url": "https://jooyon911.com/support/faq/c96/read/72332/page2",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "노트북",
+        "line": "내장 키보드",
+        "years": "현행 모델",
+        "region": "글로벌"
+      },
+      "caution": "정확한 Num Lock 단축키는 제조사와 모델에 따라 다르므로, 자신의 노트북 매뉴얼을 참조해 확인할 것",
+      "cautionSource": "각 제조사 공식 지원 페이지"
+    },
+    {
+      "id": "korean-english-toggle-failure-causes",
+      "claim": "한/영 전환이 안 될 때의 원인은 (1) 입력 언어 단축키 설정이 변경됨 (2) 하드웨어 키보드 레이아웃이 잘못 설정됨 (3) IME 프로세스(ctfmon.exe)가 실행되지 않음 등이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "나무위키, AJD 가이드, Windows 설정",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/한영전환안됨_고치는법_3분이면_초간단_해결alt_인식_단축키-59326",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "노트북",
+        "line": "내장 키보드",
+        "years": "Windows 10/11",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "korean-english-toggle-solution-hardware-layout",
+      "claim": "한/영 전환을 복구하려면 Windows 설정 > 시간 및 언어 > 언어 및 지역 > 한국어 > 옵션 > 아래로 스크롤하여 '하드웨어 키보드 레이아웃'을 확인한다. '103/106: 한/영 키 포함'으로 선택되어야 한/영 키가 정상 작동한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AJD, Brunch 기술 블로그",
+      "source_url": "https://brunch.co.kr/@meppy/314",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "노트북",
+        "line": "내장 키보드",
+        "years": "Windows 10/11",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "phantom-keypress-ghost-input-causes",
+      "claim": "고스트 입력(누르지 않은 키가 입력되거나 키가 무한 반복 입력되는 현상)의 원인은 (1) 필터키 활성화 (2) 키보드 드라이버 손상·오류 (3) 액체나 먼지 침투로 인한 물리적 손상 등이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ASUS 공식 지원, LG 스스로 해결, 삼성전자서비스",
+      "source_url": "https://www.asus.com/kr/support/faq/1015071/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "노트북",
+        "line": "내장 키보드",
+        "years": "현행 모델",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "phantom-keypress-driver-reinstall-solution",
+      "claim": "고스트 입력이 발생하면 먼저 필터키가 켜져 있는지 확인 후, 문제가 지속되면 Windows 장치 관리자 > 키보드 > '표준 PS/2 키보드'를 우클릭 > '디바이스 제거'를 선택하고 PC를 재부팅한다. 재부팅 후 드라이버가 자동 재설치되면서 대부분의 드라이버 관련 고스트 입력이 해결된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ASUS 공식 지원, Microsoft Q&A",
+      "source_url": "https://learn.microsoft.com/ko-kr/answers/questions/4272808/question-4272808",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "노트북",
+        "line": "내장 키보드 (Windows)",
+        "years": "Windows 10/11",
+        "region": "글로벌"
+      },
+      "caution": "드라이버 제거 전에 고스트 입력이 필터키 때문인지 먼저 확인할 것. 이 방법이 먹지 않으면 액체 침투나 물리적 손상을 의심하고 서비스센터에 방문해야 한다.",
+      "cautionSource": "ASUS, Microsoft 공식 지원"
+    },
+    {
+      "id": "keycap-cleaning-safe-method-alcohol",
+      "claim": "노트북 키캡 청소는 먼저 전원을 끈 후, 부드러운 솔이나 에어 블로워로 먼지를 제거한다. 더 깊은 청소가 필요하면 70% 이소프로필알코올(의료용 소독 알코올)에 적신 면봉으로 키캡과 틈새를 닦는다. 면봉에 액체를 많이 묻히지 않아 키보드 내부로 흘러들어가지 않도록 주의한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Lenovo, ASUS 공식 지원, Samsung 공식 가이드, CORSAIR",
+      "source_url": "https://www.lenovo.com/us/en/glossary/how-to-clean-a-keyboard/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "노트북",
+        "line": "내장 키보드",
+        "years": "현행 모델",
+        "region": "글로벌"
+      },
+      "caution": "절대 드라이기(헤어드라이기)를 사용하지 말 것 - 열로 인해 노트북이 변형되거나 손상될 수 있다. 청소 후 완전히 건조되기까지 노트북을 사용하지 말 것. 물이나 세제, 손 소독제는 사용 금지.",
+      "cautionSource": "ASUS 공식 노트북 청소 FAQ, CORSAIR 가이드"
+    },
+    {
+      "id": "external-keyboard-test-to-diagnose-internal-hardware-software",
+      "claim": "노트북 내장 키보드의 특정 키나 전체가 입력되지 않을 때 외장 USB 또는 블루투스 키보드를 연결하여 테스트한다. 외장 키보드가 정상이면 내장 키보드의 물리적 손상이 원인이고, 외장 키보드도 같은 증상이 나타나면 소프트웨어(드라이버, 입력 설정, IME) 문제로 판단할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스, LG 스스로 해결",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39948",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "노트북",
+        "line": "내장 키보드 자가진단",
+        "years": "현행 모델",
+        "region": "글로벌"
+      },
+      "caution": "외장 키보드 테스트는 고스트 입력, 특정 키 먹통, 한/영 전환 불가 등 대부분의 키보드 문제 원인 파악에 도움이 된다. 외장 키보드마저 문제가 있으면 Windows 입력 설정이나 언어 팩을 재설치해야 할 수 있다.",
+      "cautionSource": "삼성, LG 공식 지원"
+    }
+  ]
+}

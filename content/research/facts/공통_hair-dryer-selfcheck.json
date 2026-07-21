@@ -1,0 +1,209 @@
+{
+  "topic": "헤어드라이어 자가점검 — 바람 약함·안 켜짐·탄 냄새·필터 청소",
+  "brand": "공통",
+  "article": "hair-dryer-selfcheck (예정)",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "hair-dryer-filter-cleaning-monthly",
+      "claim": "헤어드라이어 흡입 필터의 권장 청소 주기는 일일 사용 기준 2~4주에 1회이며, 다이슨은 월 1회 또는 LCD에 3개 LED가 점멸할 때 청소하도록 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "다이슨 슈퍼소닉 공식 사용설명서 · 헤어드라이어 안전 관리 가이드",
+      "source_url": "https://www.dyson.co.kr/products/hair-care/hair-dryers/supersonic-nural/owners",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어드라이어",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "청소 주기를 초과하면 바람이 급격히 약해지고 모터 수명 단축, 과열 위험이 높아진다.",
+      "cautionSource": "제조사 안전 관리 문서의 청소 주기 권장 사유"
+    },
+    {
+      "id": "hair-dryer-filter-cleaning-method-dry",
+      "claim": "헤어드라이어 필터 청소는 플러그를 뽑은 후 기기를 충분히 식힌 후, 칫솔이나 부드러운 천으로 먼지를 제거하는 방식이다. 물 세척이 가능한 경우 따뜻한 물로만 헹구고 완전히 건조한 후 재장착해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "다이슨 슈퍼소닉 공식 사용설명서 · 헤어드라이어 청소 가이드",
+      "source_url": "https://www.dyson.co.kr/products/hair-care/hair-dryers/supersonic-nural/owners",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어드라이어",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "다이슨은 물 세척을 권장하지 않는다. 물기가 남은 상태로 장착하면 단락·화재 위험이 있다. 강한 압력으로 필터를 누르면 손상된다.",
+      "cautionSource": "다이슨 공식 사용설명서의 필터 세척 금지 및 건조 지침"
+    },
+    {
+      "id": "hair-dryer-weak-airflow-rear-filter-blockage",
+      "claim": "헤어드라이어 바람이 약해지는 가장 흔한 원인은 뒷면 흡입 필터가 머리카락, 보풀, 스타일링 제품 찌꺼기로 막히는 것이며, 대부분 필터 청소로 해결된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "헤어드라이어 안전 관리 가이드 · 제조사 기술 지원",
+      "source_url": "https://aldream.co.kr/entry/%ED%97%A4%EC%96%B4%EB%93%9C%EB%9D%BC%EC%9D%B4%EC%96%B4-%EB%B0%94%EB%9E%8C%EC%9D%B4-%EC%95%BD%ED%95%B4%EC%A7%80%EB%8A%94-%EC%9D%B4%EC%9C%A0",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어드라이어",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "바람 약함 = 수명 끝이라는 착각이 흔하다. 먼저 필터를 청소하고 문제가 지속되면 히터·모터 점검을 받을 것.",
+      "cautionSource": "제조사 자가점검 안내의 필터 청소 우선 권장"
+    },
+    {
+      "id": "hair-dryer-overheating-thermal-cutoff",
+      "claim": "현대의 헤어드라이어 대부분에는 바이메탈 온도 센서 또는 온도퓨즈가 있어서, 모터나 히터가 일정 온도를 넘으면 자동으로 작동을 중단하는 과열 차단 장치가 내장되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "헤어드라이어 안전 기준 문서 · 제조사 기술 안내",
+      "source_url": "http://ko.hairstormbeauty.com/info/how-to-clean-a-hair-dryer-the-right-way-filte-17884856484766720.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어드라이어",
+        "line": "2000년 이후 현행 모델",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "과열로 자동 차단되면 필터 막힘·먼지 축적이 원인일 가능성이 높다. 식힌 후 필터를 청소하고 다시 사용할 것. 반복되면 서비스센터 점검 필수.",
+      "cautionSource": "제조사 기술 지원 문서의 과열 원인 분석"
+    },
+    {
+      "id": "hair-dryer-burning-smell-immediate-stop",
+      "claim": "헤어드라이어에서 탄 냄새나 연기가 나면 즉시 사용을 중단하고 전원을 차단해야 한다. 이는 히터에 먼지나 머리카락이 축적되어 타는 현상으로 화재 위험이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "헤어드라이어 화재 안전 가이드 · 제조사 기술 지원",
+      "source_url": "https://www.pure-beef.kr/living/article/49970/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어드라이어",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "탄 냄새는 화재의 전조 신호다. 절대 무시하지 말 것. 냄새가 나면 즉시 사용 중단, 충분히 식힌 후 필터 청소를 하거나 서비스센터에 맡길 것.",
+      "cautionSource": "화재 안전 가이드의 즉시 중단 권장"
+    },
+    {
+      "id": "hair-dryer-hot-air-not-working-heater-failure",
+      "claim": "헤어드라이어에서 뜨거운 바람이 안 나올 때의 주요 원인은 히터 코일 단선·온도 스위치 고장·전원 코드 손상·플러그 불완전 연결이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "헤어드라이어 고장 증상 분석 · 사용자 커뮤니티 보고",
+      "source_url": "https://boradong.com/%ED%97%A4%EC%96%B4%EB%93%9C%EB%9D%BC%EC%9D%B4%EA%B8%B0-%EC%97%B4%ED%92%8D-%EC%95%88-%EB%82%98%EC%98%AC-%EB%95%8C-%EC%88%98%EB%A6%AC%EB%B2%95/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어드라이어",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "먼저 콘센트·플러그 연결을 확인하고, 필터 청소 후 재시도할 것. 지속되면 히터 고장을 의심하고 전문가 점검을 받을 것.",
+      "cautionSource": "기술 지원 페이지의 자가 대응 절차"
+    },
+    {
+      "id": "hair-dryer-cold-air-only-heating-element-off",
+      "claim": "헤어드라이어에서 찬바람만 나올 때는 히터가 작동하지 않으면서도 모터와 팬은 정상 작동하는 상태이며, 히터 고장·온도 센서 불량·온도 스위치 단선이 주요 원인이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "헤어드라이어 고장 증상 분석 · 사용자 커뮤니티",
+      "source_url": "https://nosearch.com/contents/encyclopedia/living/hair_dryer/88",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어드라이어",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "찬바람만 나온다는 것은 온도 조절 회로의 고장이다. 자가 수리는 불가능하므로 서비스센터에 맡길 것.",
+      "cautionSource": "사용자 보고된 고장 증상"
+    },
+    {
+      "id": "hair-dryer-not-turning-on-power-circuit-issue",
+      "claim": "헤어드라이어가 안 켜질 때의 첫 번째 점검은 콘센트·플러그 연결 확인, 두 번째는 다른 기기를 같은 콘센트에 연결해 콘센트 전원 확인, 세 번째는 코드 손상 여부 확인이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "헤어드라이어 자가점검 가이드",
+      "source_url": "https://boradong.com/%ED%97%A4%EC%96%B4%EB%93%9C%EB%9D%BC%EC%9D%B4%EA%B8%B0-%EC%97%B4%ED%92%8D-%EC%95%88-%EB%82%98%EC%98%AC-%EB%95%8C-%EC%88%98%EB%A6%AC%EB%B2%95/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어드라이어",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "이 세 가지를 확인해도 안 켜지면 내부 전원 회로 고장을 의심하고 전문가 점검을 받을 것.",
+      "cautionSource": "자가점검 절차"
+    },
+    {
+      "id": "hair-dryer-cord-damage-electrical-hazard",
+      "claim": "헤어드라이어 코드의 피복이 손상되었거나 갈라졌을 때, 또는 젖은 손으로 사용할 때는 감전 위험이 있으므로 즉시 사용을 중단하고 코드를 교체해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "헤어드라이어 전기 안전 기준 · 제조사 안전 경고",
+      "source_url": "https://www.cnvgr.com/how-to-clean-hair-dryer/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어드라이어",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "코드가 손상되면 절대 사용하면 안 된다. 감전 위험뿐 아니라 화재 위험도 있다. 욕실이나 젖은 환경에서 사용할 때는 특히 주의할 것.",
+      "cautionSource": "전기 안전 기준의 필수 경고 문구"
+    },
+    {
+      "id": "hair-dryer-unusual-noise-motor-or-fan-issue",
+      "claim": "헤어드라이어에서 이상한 소음(쿵쿵거림, 진동음, 삐걱거림)이 날 때는 모터 베어링 손상·팬 블레이드 손상·내부 부품 접촉 등이 원인이며, 악화되면 모터 과열로 자동 차단될 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "헤어드라이어 고장 증상 분석",
+      "source_url": "https://aldream.co.kr/entry/%ED%97%A4%EC%96%B4%EB%93%9C%EB%9D%BC%EC%9D%B4%EC%96%B4-%EB%B0%94%EB%9E%8C%EC%9D%B4-%EC%95%BD%ED%95%B4%EC%A7%80%EB%8A%94-%EC%9D%B4%EC%9C%A0",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어드라이어",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "이상한 소음이 나면 내부에 외물이 들어갔거나 모터 손상이 진행 중일 수 있다. 즉시 사용을 중단하고 전문가 점검을 받을 것.",
+      "cautionSource": "사용자 보고된 고장 진행 사례"
+    },
+    {
+      "id": "hair-dryer-after-use-unplug-safety-practice",
+      "claim": "헤어드라이어 사용 후에는 전원을 끄고 반드시 콘센트에서 플러그를 뽑는 것이 화재·감전 예방의 기본 안전 습관이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "헤어드라이어 화재 안전 가이드 · 제조사 안전 경고",
+      "source_url": "https://brunch.co.kr/@gari3303/30",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어드라이어",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "전원을 끄는 것만으로는 부족하다. 반드시 플러그를 뽑아야 완전한 안전이 확보된다.",
+      "cautionSource": "화재 안전 가이드의 필수 안전 습관"
+    }
+  ]
+}

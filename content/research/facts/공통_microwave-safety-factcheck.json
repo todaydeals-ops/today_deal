@@ -1,0 +1,208 @@
+{
+  "topic": "전자레인지 전자파·영양·발암·임산부·모유 팩트체크",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "microwave-spark-fire-hazard",
+    "microwave-never-disassemble-warning"
+  ],
+  "declined_facts": [
+    {
+      "id": "microplastic-emission-infant-containers",
+      "why": "원문 학술지 미확인으로 tier='확인실패'이며, 이미 공통_microwave-container-factcheck.json에 기록됨"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "microwave-non-ionizing-radiation-safety",
+      "claim": "전자레인지의 마이크로파는 비이온화 방사선(non-ionizing radiation)으로, X선·방사능 같은 이온화 방사선과는 완전히 다르며 인체 조직을 파괴할 수 없다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "WHO 국제 안전 기준, 가정용 전자제품 설계 규격",
+      "source_url": "https://www.who.int/teams/environment-climate-change-and-health/radiation-and-health/electromagnetic-fields",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전자레인지",
+        "line": "가정용 전 라인",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "글에서 사용할 때: 전자파의 '위험도'는 그 종류(이온화 vs 비이온화)에 따라 결정된다는 점을 명시. 방사능과 동일선상에 두는 통념을 바로잡는 것이 핵심"
+    },
+    {
+      "id": "microwave-door-seal-shielding-mechanism",
+      "claim": "전자레인지의 문은 여러 단계의 차폐 구조를 갖추고 있으며, 문이 닫혀 있으면 내부의 마이크로파가 바깥으로 누출되지 않도록 설계되어 있다. 문이 열리면 자동으로 마그네트론이 꺼진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전자레인지 제조사 설계 기준, 국제 안전 규격",
+      "source_url": "https://www.samsungsvc.co.kr/solution/24832",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전자레인지",
+        "line": "가정용 전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "독자가 주의할 점: 도어 손상·흠집이 있으면 차폐 성능이 떨어질 수 있으므로, 손상 시 서비스센터 점검을 권할 것"
+    },
+    {
+      "id": "microwave-nutrient-preservation-better-than-boiling",
+      "claim": "음식을 끓이는 경우 수용성 비타민(비타민C 등)이 조리수로 빠져나가지만, 전자레인지는 조리 시간이 짧고 물을 적게 사용해 영양소 손실이 적을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "예일대 예방연구센터 David Katz, 국민건강지식센터(서울대 기반)",
+      "source_url": "https://hqcenter.snu.ac.kr/archives/3038",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "음식 조리",
+        "line": "채소류",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "순차 대안 톤 필수: '전자레인지는 영양소를 파괴한다'는 통념을 부정하되, '물을 적게 사용하는 것이 핵심'이라는 판별 기준을 제시. 조리 방법에 따라 손실 정도가 다르다는 점을 강조할 것"
+    },
+    {
+      "id": "microwave-vitamin-c-retention-highest",
+      "claim": "여러 조리 방법 비교 연구에서 비타민 C의 보존율은 전자레인지 조리 시 가장 높았고, 끓인 경우 가장 낮았다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민건강지식센터 영양 연구 리뷰",
+      "source_url": "https://hqcenter.snu.ac.kr/archives/3038",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "음식 조리",
+        "line": "채소류",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "이 수치는 수용성 비타민에 한정됨. 열에 안정적인 비타민(비타민A 등)은 조리 방법에 따른 차이가 적다"
+    },
+    {
+      "id": "microwave-water-superheating-phenomenon",
+      "claim": "전자레인지로 물을 데울 때 끓는 모습이 보이지 않아도 끓는점(100℃) 이상으로 온도가 올라가는 과열(superheating) 현상이 발생할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 전자레인지 사용 주의사항",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=2694&bbs_no=bbs231&ntctxt_no=1082132&menu_grp=MENU_NEW01",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전자레인지",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "⚠️ 과열된 물에 물질을 넣거나 건드리면 갑자기 끓어올라 화상 위험이 있다. 글에서는 '작은 물체(젓가락·차 가루)를 물에 넣어 핵생성점 유도'를 권장하는 것이 좋다고 안내할 것"
+    },
+    {
+      "id": "microwave-processed-meat-concern",
+      "claim": "햄·소시지·베이컨 같은 가공육을 전자레인지로 고온 가열하면 포함된 아질산염이 분해되어 니트로소아민 같은 발암물질이 생성될 수 있다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "건강 정보 사이트, 식품 과학 리뷰",
+      "source_url": "https://v.daum.net/v/tIuhp2oMrT?f=p",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "음식 조리",
+        "line": "가공육(햄·소시지·베이컨)",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "순차 대안 톤 필수: '전자레인지 자체가 발암물질을 만들지는 않지만, 음식의 특성(아질산염 함유)에 따라 고온 가열 시 화학 변화가 일어날 수 있다'고 명시할 것. 가공육을 데울 때 '낮은 온도·짧은 시간'을 권장"
+    },
+    {
+      "id": "microwave-pregnancy-safety",
+      "claim": "전자레인지에서 발생하는 전자파는 임신 중 사용해도 안전하며, 30cm 이상 거리에서는 전자파 강도가 급격히 감소한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 정보 커뮤니티, 산부인과 안내",
+      "source_url": "https://www.a-ha.io/questions/498b48915b8dc7d48c5b3223c8188cd5",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전자레인지",
+        "line": "가정용 전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "임산부는 전자레인지 사용에 제약이 없으며, 30cm 이상 거리를 유지하면 더욱 안전하고, 전자파 차폐제 등도 필요 없다는 점을 명확히 할 것",
+      "cautionSource": "산부인과 의료 정보 자료에서 30cm 거리의 전자파 감소 기준 제시"
+    },
+    {
+      "id": "microwave-breastmilk-not-recommended",
+      "claim": "모유를 전자레인지로 데우는 것은 권장되지 않는다. 마이크로파가 액체를 고르게 데우지 못해 온도가 불균일한 지점(핫스팟)이 생기면 아기 입과 목에 화상을 입힐 수 있고, 높은 열이 모유의 면역 성분(면역글로불린 등)을 파괴할 수 있기 때문이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "아동 건강 정보 사이트, 의료 정보 커뮤니티",
+      "source_url": "https://www.threads.com/@riccokwon/post/DKpHPrbITwI/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "영아 수유",
+        "line": "모유",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "⚠️ 안전 경고 필수: 대신 따뜻한 물에 젖병을 담가 데운 후, 먹이기 전 손목 안쪽에 한두 방울 떨어뜨려 온도를 꼭 확인하도록 명시할 것"
+    },
+    {
+      "id": "microwave-infant-formula-temperature-check",
+      "claim": "분유(조제분유)를 전자레인지로 데우는 경우 핫스팟으로 인한 화상 위험이 있으므로, 전자레인지로 물만 데운 후 분유와 섞거나, 따뜻한 물에 젖병을 담그는 방식이 권장된다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "의료 정보 사이트, 부모 커뮤니티",
+      "source_url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002375495",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "영아 수유",
+        "line": "분유",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "순차 대안 톤으로 제시할 것: '가장 안전한 방법은 따뜻한 물에 담그기이지만, 시간이 중요한 상황이면 전자레인지로 물만 짧게 데운 후(20~30초) 분유를 섞기' 식으로 안내",
+      "cautionSource": "부모 커뮤니티와 의료 정보 사이트에서 권장하는 안전 시간 기준"
+    },
+    {
+      "id": "microwave-starch-acrylamide-concern",
+      "claim": "전분 함유 식품(감자·밥·시리얼)을 전자레인지로 고온에서 오래 가열하면 아크릴아마이드(acrylamide)라는 물질이 생성될 수 있다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "식품 안전 정보, 건강 관련 미디어",
+      "source_url": "https://v.daum.net/v/tIuhp2oMrT?f=p",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "음식 조리",
+        "line": "전분 식품",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "아크릴아마이드는 모든 고온 조리(튀김·구움)에서 생성되는 물질이며, 전자레인지 특유 위험이 아니라는 점을 명시할 것. 다만 '과도하게 오래 가열하지 않기'를 일반적 권장으로 제시"
+    },
+    {
+      "id": "microwave-itself-not-carcinogenic",
+      "claim": "전자레인지 기계 자체와 마이크로파는 발암물질을 생성하지 않으며, 발암 위험은 특정 음식의 조리 방식과 재료 특성에 따른 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품 과학 전문가 칼럼, 건강 정보 사이트",
+      "source_url": "https://blog.nongshim.com/1902",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전자레인지 안전",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "글에서 발암 우려를 바로잡을 때 핵심: '전자레인지 = 발암 위험'이라는 통념을 부정하고, 음식 선택·조리 방식 최적화로 위험을 낮울 수 있다는 점으로 마무리할 것"
+    }
+  ]
+}

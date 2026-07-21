@@ -1,0 +1,238 @@
+{
+  "topic": "보조배터리(파워뱅크) 용량·출력·안전 기준 및 비행기 반입 규정",
+  "brand": "공통",
+  "article": "powerbank-guide",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "airline-100wh-carryonly",
+      "claim": "리튬배터리 보조배터리는 100Wh 이하만 기내 휴대 반입 가능하며, 위탁수하물(부치는 짐)에는 절대 넣을 수 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "IATA 여객 리튬배터리 규정, 제주항공 운송제한물품",
+      "source_url": "https://www.jejuair.net/ko/linkService/boardingProcessGuide/transportLimitation.do",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "보조배터리",
+        "region": "KR"
+      },
+      "caution": "100~160Wh 범위는 항공사별로 규정이 다르므로 탑승 전 확인 필수",
+      "cautionSource": "제주항공 공식 규정(160Wh 까지 최대 2개 기내 반입 가능)"
+    },
+    {
+      "id": "airline-count-limit-2026",
+      "claim": "2026년 3월 31일부터 보조배터리는 1인당 최대 2개까지만 기내 반입이 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "IATA 규정, 한국 국토교통부",
+      "source_url": "https://www.tripstore.kr/blog/%EA%B8%B0%EB%82%B4-%EB%B3%B4%EC%A1%B0%EB%B0%B0%ED%84%B0%EB%A6%AC-%EB%B3%B0%EC%9E%AC-%EB%B7%B0-%EC%A1%B0%EC%A0%95",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "보조배터리",
+        "years": "2026~",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "mah-to-wh-conversion",
+      "claim": "mAh를 Wh로 환산하려면 (mAh ÷ 1000) × 전압(V)을 사용한다. 보조배터리의 표준 전압은 3.7V이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG유플러스 공식블로그, IATA 리튬배터리 가이드",
+      "source_url": "https://blog.uplus.co.kr/1959",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "보조배터리"
+      },
+      "caution": "예: 20,000mAh · 3.7V = 74Wh / 27,000mAh · 3.7V = 99.9Wh (약 100Wh)",
+      "cautionSource": "웹 검색 결과 종합(IATA, 트립스토어)"
+    },
+    {
+      "id": "charging-efficiency-loss",
+      "claim": "보조배터리의 충전 효율은 평균 60~70%이며, 이는 DC-DC 승압 변환 과정에서 발생하는 에너지 손실로 인한 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "에누리 쇼핑지식, LG유플러스 공식블로그",
+      "source_url": "https://m.enuri.com/knowcom/detail.jsp?kbno=3318870",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "보조배터리"
+      },
+      "caution": "품질이 좋은 제품은 80~90% 효율도 가능하나, 일부 저가 제품은 70% 미만으로 떨어진다.",
+      "cautionSource": "에누리, LG유플러스"
+    },
+    {
+      "id": "real-capacity-vs-marked",
+      "claim": "보조배터리의 실제 사용 가능 용량은 표기 용량의 70~80% 수준이다. 예컨대 10,000mAh 표기 제품은 실제 약 7,000~8,000mAh 정도만 충전에 사용된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "에누리 쇼핑지식, LG유플러스 공식블로그",
+      "source_url": "https://m.enuri.com/knowcom/detail.jsp?kbno=3318870",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "보조배터리"
+      }
+    },
+    {
+      "id": "usb-pd-standard",
+      "claim": "USB Power Delivery (PD)는 범용 고속충전 표준으로, USB-C 포트를 사용하며 최대 240W (PD 3.1)를 지원한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Channel.io 고속충전 프로토콜 안내, ZDNet Korea, Apple 지원 문서",
+      "source_url": "https://docs.channel.io/fyd_service/ko/articles/%EA%B3%A0%EC%86%8D-%EC%B6%A9%EC%A0%84-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94-1ab5562b",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "보조배터리",
+        "region": "KR"
+      },
+      "caution": "iPhone 16 Pro Max는 PD 45W 유선충전을 지원하며, MagSafe 무선충전은 25W를 지원한다.",
+      "cautionSource": "ZDNet Korea (iPhone 16 배터리 수치), Apple 지원 문서"
+    },
+    {
+      "id": "qualcomm-quick-charge",
+      "claim": "QC (Quick Charge)는 Qualcomm이 개발한 충전 규격으로 USB-A 중심이며, 최대 100W (QC 5.0)를 지원한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "나무위키 퀄컴 퀵 차지 항목",
+      "source_url": "https://namu.wiki/w/%ED%80%84%EC%BB%B4%20%ED%80%B5%20%EC%B0%A8%EC%A7%80",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "보조배터리",
+        "region": "KR"
+      },
+      "caution": "QC는 주로 안드로이드 기기(Xiaomi, Motorola, 일부 Samsung)에서 사용되며, iPhone은 PD만 지원한다."
+    },
+    {
+      "id": "samsung-2026-battery-pack",
+      "claim": "삼성의 2026 PD 배터리팩은 10,000mAh 용량에 최대 25W PD 고속충전을 지원한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung 대한민국 공식 웹사이트 (EB-P3401XUKGKR)",
+      "source_url": "https://www.samsung.com/sec/mobile-accessories/battery-pack-10-ah-2026/EB-P3401XUKGKR/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "보조배터리",
+        "model": "EB-P3401XUKGKR",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "mAh 기준으로는 대용량이지만, Wh 환산 시 약 37Wh로 100Wh 기준 이하이다."
+    },
+    {
+      "id": "iphone-16-battery-capacity",
+      "claim": "iPhone 16 시리즈의 배터리 용량: iPhone 16 (3,561mAh), iPhone 16 Plus (4,674mAh), iPhone 16 Pro (3,582mAh), iPhone 16 Pro Max (4,685mAh)",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ZDNet Korea, Apple 지원 공식 문서",
+      "source_url": "https://zdnet.co.kr/view/?no=20240920074623",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "model": "iPhone 16 시리즈",
+        "years": "2024~2025"
+      },
+      "caution": "iPhone 16은 45W 유선충전, 25W MagSafe 무선충전을 지원한다."
+    },
+    {
+      "id": "iphone-15-battery-capacity",
+      "claim": "iPhone 15 시리즈의 배터리 용량: iPhone 15 (3,349mAh), iPhone 15 Pro (3,274mAh), iPhone 15 Plus (4,383mAh), iPhone 15 Pro Max (4,422mAh)",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 문서, 에이즈맥(EyeSmag), 디지털투데이",
+      "source_url": "https://www.eyesmag.com/posts/153345/apple-iphone-15-plus-pro-max-big-battery-capacity-mah",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "model": "iPhone 15 시리즈",
+        "years": "2023~2024"
+      },
+      "caution": "iPhone 15는 20W 유선충전, 15W MagSafe 무선충전을 지원한다."
+    },
+    {
+      "id": "kc-certification-requirement",
+      "claim": "보조배터리를 구입할 때는 반드시 KC(Korea Certification, 전기용품안전인증) 마크와 인증번호 확인이 필수다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소비자24 상품안전정보, 나이스 인증원",
+      "source_url": "https://www.consumer.go.kr/user/ftc/consumer/crtfc/73/selectCrtfcInfo.do",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "보조배터리",
+        "region": "KR"
+      },
+      "caution": "KC 인증이 없는 제품은 고장 위험과 폭발 가능성이 높으므로 피할 것."
+    },
+    {
+      "id": "low-cost-battery-fire-risk",
+      "claim": "저가 보조배터리 중 일부는 과충전 시 화재·폭발 위험이 있다. 최근 조사에서 시판 중인 보조배터리 12개 중 4개(33.3%)가 과충전 시 보호회로 손상 가능성을 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "뉴스트리(시판 보조배터리 실험), 베이비뉴스, 콕스뉴스",
+      "source_url": "https://www.newstree.kr/newsView/ntr202512020016",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "보조배터리",
+        "region": "KR"
+      },
+      "caution": "명성(VA-122), 로랜텍(BPR-02), 리큐엠(QP2000C1), 디엘티테크코리아·아이콘스(CSPB-002C) 등 저가 제품에서 문제가 발견됐다.",
+      "cautionSource": "뉴스트리 '시판 보조배터리 실험해보니 4개 제품 화재·폭발 위험' 조사 결과"
+    },
+    {
+      "id": "kc-safety-standard-62133",
+      "claim": "KC 62133-2 안전기준에 따라 보조배터리는 한계를 초과해 과충전했을 때 발화하거나 폭발해서는 안 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KATS(한국기술표준원) 전기용품안전기준, 소비자24",
+      "source_url": "https://www.kats.go.kr/cwsboard/board.do?mode=download&bid=155&cid=16577&filename=16577_201411271648231501.pdf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "보조배터리",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "single-type-c-cable-advantage",
+      "claim": "USB-C 단일 케이블 구성의 보조배터리는 기기 간 호환성이 높고, 케이블 손실 관리가 간편하며, 충전 속도가 PD를 통해 최적화된다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "커뮤니티 및 기술 블로그 종합",
+      "source_url": "https://namu.wiki/w/%EB%B3%B4%EC%A1%B0%20%EB%B0%B0%ED%84%B0%EB%A6%AC",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "보조배터리"
+      },
+      "caution": "일부 저가 제품의 USB-C 포트는 접점 손상·접촉 불량이 발생하기 쉬우므로 신뢰성 높은 브랜드 선택 권고"
+    },
+    {
+      "id": "wireless-charging-magSafe",
+      "claim": "MagSafe 무선충전은 iPhone 12 이후 모델에서 지원되며, iPhone 16은 25W 무선충전, iPhone 15는 15W 무선충전을 지원한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 문서 (support.apple.com), ZDNet Korea",
+      "source_url": "https://support.apple.com/en-us/105047",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "무선충전",
+        "years": "2020~"
+      }
+    }
+  ]
+}

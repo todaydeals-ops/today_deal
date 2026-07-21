@@ -1,0 +1,173 @@
+{
+  "topic": "휴대용 선풍기(넥밴드·핸디형) 트렌드 조사",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "portable-fan-battery-fire-risk",
+      "claim": "리튬이온 배터리 탑재 휴대용 선풍기의 배터리 과열·발화는 화재·부상 위험이 있으므로 KC 인증 제품만 구매해야 한다. 2024년 9월 이마트 스마트미, 12월 쿠팡 샤오미 제품이 자발적 리콜됨",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국소비자원 / 한국금융신문 / 아주경제",
+      "source_url": "https://www.kca.go.kr",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "휴대용 선풍기",
+        "line": "리튬이온 배터리 탑재 전 모델",
+        "years": "2024~현행",
+        "region": "KR"
+      },
+      "caution": "배터리 부풀음·과열·타는 냄새는 즉시 사용 중단하고 서비스센터로 갈 것. 미인증 저가 제품은 피할 것.",
+      "cautionSource": "한국소비자원 안전주의보 / 제품 리콜 사례"
+    },
+    {
+      "id": "portable-fan-kc-certification-mandatory",
+      "claim": "휴대용 선풍기는 안전인증대상 전기용품이므로 KC 인증을 받아야 국내 판매가 가능하다. 인증기관은 한국산업기술시험원(KTL), 관리기관은 국가기술표준원(KATS)",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가기술표준원 / 한국산업기술시험원",
+      "source_url": "https://www.kats.go.kr",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "휴대용 선풍기",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "제품 본체에 'KC' 마크와 인증번호 표기가 있는지 확인할 것. 소비자24 또는 SafetyKorea에서 인증번호 검색으로 정품 확인 가능.",
+      "cautionSource": "국가기술표준원 전기용품 안전관리 제도"
+    },
+    {
+      "id": "neckband-vs-handheld-fan-use-case",
+      "claim": "넥밴드형은 양손이 자유로워야 할 때(유모차·짐·작업)에, 핸디형은 방향 제어와 휴대성이 중요할 때(얼굴·목 집중)에 적합하다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "휴대용 선풍기 구매가이드 / 제품 리뷰 사이트",
+      "source_url": "https://nosearch.com/contents/guide/season/portable_fan",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "휴대용 선풍기",
+        "line": "넥밴드형 vs 핸디형",
+        "years": "2024~현행",
+        "region": "KR"
+      },
+      "caution": "넥밴드는 목 피로도가 낮으나 바람이 목·얼굴로만 제한됨. 핸디형은 방향 자유도는 높으나 장시간 들면 손목 피로도 높음.",
+      "cautionSource": "사용자 후기의 일관된 보고"
+    },
+    {
+      "id": "battery-capacity-runtime-scaling",
+      "claim": "배터리 용량에 따른 사용시간은 최소 풍속(약풍) 기준으로 2000mAh 약 6~8시간, 2000~3000mAh 3~6시간, 3000~4000mAh 8~10시간, 4000mAh+ 10시간 이상이다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "휴대용 선풍기 가이드 / 제품 리뷰 집계",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "휴대용 선풍기",
+        "line": "배터리형 전 모델",
+        "years": "2024~현행",
+        "region": "KR"
+      },
+      "caution": "표기된 시간은 최소 풍속 기준이며, 최대 풍속 사용 시 20~50% 이하로 줄어든다. 강풍/터보 모드는 배터리 소비 속도가 2~3배다.",
+      "cautionSource": "제품 비교 가이드의 일관된 주의사항"
+    },
+    {
+      "id": "motor-type-noise-difference",
+      "claim": "DC 모터는 소음이 심하고 발열이 크지만 저가이고, BLDC 모터는 소음이 매우 적고 내구성이 뛰어나지만 고가다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "휴대용 선풍기 리뷰 / 기술 비교 가이드",
+      "source_url": "https://nosearch.com/recommendation/pick/season/portable_fan",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "휴대용 선풍기",
+        "line": "DC 모터 vs BLDC 모터 모델",
+        "years": "2024~현행",
+        "region": "KR"
+      },
+      "caution": "정확한 소음 데시벨(dB) 수치는 제조사 사양에 거의 기재되지 않는다. 후기에서 '조용하다/시끄럽다'는 주관적 표현만 확인 가능.",
+      "cautionSource": "제품 사양서 미기재 + 후기 일관성"
+    },
+    {
+      "id": "handheld-fan-rpm-hair-entanglement-risk",
+      "claim": "휴대용 미니 선풍기의 회전 속도는 9000~10000rpm으로 일반 선풍기(1300~1800rpm)의 5배에 달해 머리카락 끼임 사고 위험이 높다. 자동 멈춤 기능 제품도 출시됨",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "SNS(틱톡) 사용자 보고 / 서울경제",
+      "source_url": "https://www.sedaily.com/NewsView/1VN06LNUSH",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "휴대용 선풍기",
+        "line": "미니·핸디형 전 모델",
+        "years": "2024~현행",
+        "region": "KR"
+      },
+      "caution": "지하철 등 붐비는 곳에서는 옆사람에게 쐐기 같은 각도로 향하도록 하지 말 것. 머리카락이 빨려 들어가면 자동으로 멈추는 제품을 선택하는 것도 방법.",
+      "cautionSource": "사고 사례 다수 보고(정부 통계 아님)"
+    },
+    {
+      "id": "portable-fan-weight-recommendation",
+      "claim": "휴대용 선풍기는 150~200g(스마트폰 무게 수준)일 때 손목·목 피로도가 최소화되며, 이 범위가 장시간 사용에 적합하다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "휴대용 선풍기 구매가이드",
+      "source_url": "https://nosearch.com/contents/guide/season/portable_fan",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "휴대용 선풍기",
+        "line": "넥밴드·핸디형 전 모델",
+        "years": "2024~현행",
+        "region": "KR"
+      },
+      "caution": "무게보다 무게 분산(거치 방식) 여부도 중요하다. 넥밴드는 목에만 걸려 있으나, 핸디형은 손가락 관절 하나에 집중될 수 있다.",
+      "cautionSource": "구매가이드의 일관된 권고"
+    },
+    {
+      "id": "electromagnetic-field-controversy-standards-gap",
+      "claim": "시민단체 측정값은 322.5~1000mG+ (WHO 기준 4mG의 80배)이나, 정부는 국내 기준 적용 시 안전하다고 주장한다. 기준 체계의 차이로 인한 논쟁 상태",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "환경보건시민센터 측정 / 과학기술정보통신부",
+      "source_url": "https://www.rra.go.kr/emf/wrongfact/trenddata/index07.jsp",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "휴대용 선풍기",
+        "line": "목에 거는 넥밴드형",
+        "years": "2024~현행",
+        "region": "KR"
+      },
+      "caution": "전자파의 건강영향은 현재까지 국제 과학계에서도 합의가 이루어지지 않았다. 국내 기준(느슨한)만 만족한다고 해서 국제 기준 적용 시 안전하다는 뜻은 아니다. 과신하지 말 것.",
+      "cautionSource": "정부 기준(KATS) vs 시민단체 측정값의 상충"
+    },
+    {
+      "id": "price-range-product-stratification",
+      "claim": "1만원 미만은 저가(배터리·소음 좋지 않음, 리콜 위험 높음), 1~2만원은 가성비, 2~3만원은 중급(BLDC 가능), 3만원 이상은 프리미엄 제품으로 분류된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "쇼핑 플랫폼 가격대별 분류",
+      "source_url": "https://nosearch.com/contents/encyclopedia/season/portable_fan/67",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "휴대용 선풍기",
+        "line": "전 가격대",
+        "years": "2024~현행",
+        "region": "KR"
+      },
+      "caution": "저가 제품의 배터리는 미인증이거나 용량 대비 발화 위험이 높은 경향이 있다. 초저가는 배터리 안전성 보다는 가격이 우선된 제품이라 인식할 것.",
+      "cautionSource": "2024년 리콜 사례 분석 (이마트·쿠팡 저가 제품 리콜)"
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "topic": "스마트 전구·스마트 조명(필립스 휴 등) 실용성 및 선택 기준",
+  "brand": "공통",
+  "article": "smart-bulb-trend",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "smart-bulb-basic-definition",
+      "claim": "스마트 전구는 스마트폰 앱, 음성 명령, 자동화를 통해 밝기·색온도·색상을 원격 제어할 수 있는 IoT 조명 기기다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips Hue official - How it works",
+      "source_url": "https://www.philips-hue.com/ko-kr/explore-hue/how-it-works",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 조명",
+        "line": "스마트 전구 일반",
+        "years": "2010~",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "philips-hue-connection-methods",
+      "claim": "필립스 휴는 Zigbee 기반 Bridge(또는 Bridge Pro) 연결 방식과 Bluetooth 직접 연결 방식 두 가지를 제공한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips Hue official - How it works & FAQs",
+      "source_url": "https://www.philips-hue.com/ko-kr/explore-hue/how-it-works",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "스마트 조명",
+        "line": "필립스 휴",
+        "years": "2013~",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "bluetooth-direct-connection-limitations",
+      "claim": "필립스 휴 Bluetooth 직접 연결은 스마트폰 앱만으로 제어 가능하나 음성 제어와 자동화 기능이 제한적이며, 스마트폰이 조명 범위 내에 있어야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips Hue official - How it works",
+      "source_url": "https://www.philips-hue.com/ko-kr/explore-hue/how-it-works",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "스마트 조명",
+        "line": "필립스 휴 (Bluetooth 모드)",
+        "years": "4.0~",
+        "region": "글로벌"
+      },
+      "caution": "스마트폰이 최대 실내 범위(약 30~50미터) 밖으로 나가면 제어 불가능",
+      "cautionSource": "https://www.philips-hue.com/ko-kr/explore-hue/how-it-works"
+    },
+    {
+      "id": "zigbee-bridge-range-and-capacity",
+      "claim": "필립스 휴 Bridge는 라우터에 유선 연결되어 Zigbee 메시 네트워크를 구축하며, 각 조명이 신호 중계기 역할을 하여 최대 50개 조명 제어 가능하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips Hue official - How it works",
+      "source_url": "https://www.philips-hue.com/ko-kr/explore-hue/how-it-works",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "스마트 조명",
+        "line": "필립스 휴 (Bridge 모드)",
+        "years": "2013~",
+        "region": "글로벌"
+      },
+      "caution": "메시 네트워크이므로 조명을 더 추가하면 네트워크 범위도 확장된다. Bridge Pro는 최대 150개 이상 조명 제어 가능",
+      "cautionSource": "https://www.philips-hue.com/ko-kr/explore-hue/how-it-works"
+    },
+    {
+      "id": "bridge-pro-smart-home-compatibility",
+      "claim": "필립스 휴 Bridge Pro는 Apple Home, Amazon Alexa, Google Home, Samsung SmartThings, Matter 표준을 모두 지원하여 다양한 스마트홈 생태계와 호환된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips Hue official - How it works",
+      "source_url": "https://www.philips-hue.com/ko-kr/explore-hue/how-it-works",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "스마트 조명",
+        "line": "필립스 휴 (Bridge Pro)",
+        "years": "2023~",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "hue-color-options",
+      "claim": "필립스 휴는 White(단일 색온도) 부터 White Ambiance(2,200~6,500K 색온도 조절), Color Ambiance(1,600만 색상), Gradient(여러 LED 그룹 개별 제어)까지 다양한 밝기·색상 조절 옵션을 제공한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips Hue official - How it works",
+      "source_url": "https://www.philips-hue.com/ko-kr/explore-hue/how-it-works",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "스마트 조명",
+        "line": "필립스 휴 (전 라인)",
+        "years": "2013~",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "wall-switch-off-problem",
+      "claim": "스마트 전구는 물리적 벽 스위치로 전원을 차단하면 스마트폰 앱 제어나 음성 명령이 작동하지 않는 것이 일반적인 설계 문제다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "User reports on smart home forums",
+      "source_url": "https://www.wassada.com/bbs_detail.php?bbs_num=597267&tb=board_freetalk",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 조명",
+        "line": "스마트 전구 일반",
+        "years": "2010~",
+        "region": "글로벌"
+      },
+      "caution": "설치 시 벽 스위치는 항상 켜진 상태로 유지해야 하고, 앱이나 음성 제어로만 조명을 제어해야 한다. 벽 스위치 끄기는 피해야 할 사용 패턴이다",
+      "cautionSource": "https://www.wassada.com/bbs_detail.php?bbs_num=597267&tb=board_freetalk"
+    },
+    {
+      "id": "philips-hue-price-range",
+      "claim": "필립스 휴 스마트 전구의 개별 가격은 4.0 버전 약 60,000원, 3.0 버전 약 40,000원대로 책정되어 있어 저가 브랜드보다 비싼 편이다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "Price comparison reviews",
+      "source_url": "https://prod.danawa.com/list/?cate=15342894",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "스마트 조명",
+        "line": "필립스 휴 (한국 시장)",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "단가가 높아서 다수의 조명을 설치할 때 총 비용 부담이 크다. 대안으로 샤오미 이라이트 등의 저가 제품도 검토할 필요",
+      "cautionSource": "https://prod.danawa.com/list/?cate=15342894"
+    },
+    {
+      "id": "budget-smart-bulb-brands",
+      "claim": "샤오미 이라이트, 이케아 트로드프리(TRÅDFRI), 오스람 스마트플러스 등의 저가 스마트 전구는 필립스 휴보다 저렴하지만 앱 안정성·호환성·색상 정확도에서 차이가 있다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Smart bulb comparison reviews",
+      "source_url": "https://m.dcinside.com/board/room/287674",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 조명",
+        "line": "저가 스마트 전구 (샤오미, 이케아, 오스람)",
+        "years": "2015~",
+        "region": "글로벌"
+      },
+      "caution": "가성비를 우선한다면 저가 제품도 실용적이지만, 장기 안정성과 음성 제어 호환성 면에서 필립스 휴가 우위다",
+      "cautionSource": "https://m.dcinside.com/board/room/287674"
+    },
+    {
+      "id": "voice-control-bridge-requirement",
+      "claim": "Amazon Alexa, Google Home, Samsung SmartThings와의 음성 제어를 위해서는 Bridge(또는 Bridge Pro)가 필수다. Bluetooth 직접 연결만으로는 음성 제어 지원이 제한적이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips Hue & Google Home integration guide",
+      "source_url": "https://blog.signifykorea.com/?p=5301",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "스마트 조명",
+        "line": "필립스 휴 (음성 제어)",
+        "years": "2013~",
+        "region": "글로벌"
+      },
+      "caution": "음성 제어가 필요한 경우 Bridge 구매 비용(약 50,000원 내외)을 추가로 고려해야 한다",
+      "cautionSource": "https://blog.signifykorea.com/?p=5301"
+    },
+    {
+      "id": "wifi-direct-smart-bulbs-stability",
+      "claim": "와이파이 직결 방식 스마트 전구(허브 없음)는 구축이 간편하지만 네트워크 안정성이 떨어지고 연결 끊김이 자주 발생하는 것으로 보고된다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Smart home network comparison",
+      "source_url": "https://homeagenius.sg/blog/bluetooth-zigbee-and-wi-fi-smart-lights-understanding-the-differences",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 조명",
+        "line": "와이파이 직결 방식 스마트 전구",
+        "years": "2010~",
+        "region": "글로벌"
+      },
+      "caution": "와이파이 직결은 비용 절감이 가능하지만, Zigbee 또는 Thread 기반 허브 방식이 원거리 안정성에서 우수하다",
+      "cautionSource": "https://homeagenius.sg/blog/bluetooth-zigbee-and-wi-fi-smart-lights-understanding-the-differences"
+    },
+    {
+      "id": "matter-standard-future-compatibility",
+      "claim": "Matter 표준 지원 스마트 조명(필립스 휴 Bridge Pro 등)은 Apple Home, Google Home, Amazon Alexa 등 여러 생태계에서 동시 제어가 가능해져 향후 생태계 이동 시 기기 교체 필요성을 줄인다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Nest - Matter support documentation",
+      "source_url": "https://support.google.com/googlenest/answer/12391458?hl=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 조명",
+        "line": "Matter 인증 제품",
+        "years": "2022~",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "mesh-network-coverage-advantage",
+      "claim": "Zigbee 메시 네트워크 방식(필립스 휴 Bridge)은 각 조명이 신호 중계기 역할을 하므로 조명을 추가할수록 네트워크 범위가 확장되어 큰 집이나 다층 건물에 유리하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips Hue Bridge setup guide",
+      "source_url": "https://blog.signifykorea.com/?p=2658",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "스마트 조명",
+        "line": "필립스 휴 (Bridge mode)",
+        "years": "2013~",
+        "region": "글로벌"
+      },
+      "caution": "와이파이 직결 방식은 이러한 자동 확장 이점이 없고, 라우터 신호 강도에 전적으로 의존한다",
+      "cautionSource": "https://blog.signifykorea.com/?p=2658"
+    },
+    {
+      "id": "installation-difficulty-socket-compatibility",
+      "claim": "스마트 전구는 기존 일반 전구 소켓(E26, E27, E14 등)과 호환되므로 교체 설치가 매우 간단하고 전기 공사가 필요 없다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips Hue bulb compatibility",
+      "source_url": "https://www.philips-hue.com/ko-kr/support/connect-hue-product/bulbs-and-lamps",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "스마트 조명",
+        "line": "필립스 휴 (전 라인)",
+        "years": "2013~",
+        "region": "글로벌"
+      },
+      "caution": "Bridge를 설치할 때는 라우터 근처에 유선 연결해야 하므로 라우터 위치를 확인해야 한다",
+      "cautionSource": "https://www.philips-hue.com/ko-kr/support/connect-hue-product/bulbs-and-lamps"
+    },
+    {
+      "id": "power-consumption-led-efficiency",
+      "claim": "LED 기반 스마트 전구는 일반 백열전구나 형광등보다 소비 전력이 1/5 ~ 1/10 수준으로 낮아서 같은 밝기에서 월간 전기료를 크게 절감할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LED efficiency standards",
+      "source_url": "https://www.lighting.philips.co.kr/consumer/choose-a-bulb/products/bulb",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 조명",
+        "line": "LED 스마트 전구",
+        "years": "2010~",
+        "region": "글로벌"
+      },
+      "caution": "필립스 휴 같은 고급 제품도 LED 기반이므로 전기료 절감 면에서는 브랜드 차이가 크지 않다",
+      "cautionSource": "https://www.lighting.philips.co.kr/consumer/choose-a-bulb/products/bulb"
+    },
+    {
+      "id": "gigagenie-alexa-support",
+      "claim": "KT 기가지니 스피커에는 Amazon Alexa 서비스가 탑재되어 있어 Alexa 호환 스마트 전구(필립스 휴 등)를 음성으로 제어할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KT GiGA Genie Alexa service manual",
+      "source_url": "https://gigagenie.kt.com/storage/upload/contract/KT_Alexa.pdf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 조명",
+        "line": "음성 제어 (기가지니 + Alexa)",
+        "years": "2021~",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

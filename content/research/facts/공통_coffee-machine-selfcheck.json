@@ -1,0 +1,263 @@
+{
+  "topic": "캡슐·전자동 커피머신 자가점검 — 물 안 나옴·물줄기 약함·디스케알링·캡슐 문제",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "capsule-machine-water-not-flowing-causes",
+      "claim": "캡슐 커피머신에서 물이 안 나올 때의 주요 원인은 물통이 제대로 삽입되지 않았거나 센서가 물통을 인식하지 못함, 캡슐이 올바르게 장착되지 않아 천공침이 캡슐을 뚫지 못함, 장시간 미사용으로 내부 압력이 낮아짐, 히터나 펌프 모듈 오류다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "네스프레소 코리아 기술 지원, 돌체구스토 FAQ",
+      "source_url": "https://www.nespresso.com/kr/ko/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "캡슐 커피머신",
+        "line": "네스프레소·돌체구스토·드롱기 등 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "물이 안 나온다고 해서 고장이 아닐 가능성이 높다. 물통 재삽입·캡슐 재확인·전원 리셋 등을 순차적으로 시도할 것.",
+      "cautionSource": "공식 기술 지원 페이지의 자가 대응 절차"
+    },
+    {
+      "id": "water-tank-reinsertion-sensor-recognition",
+      "claim": "물탱크가 기계에 끝까지 삽입되지 않으면 센서가 물탱크를 인식하지 못해 물이 나오지 않으므로, 물탱크를 분리한 후 최소 수위선 이상으로 물을 채우고 끝까지 밀어 넣어야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "필립스 에스프레소머신 기술 지원",
+      "source_url": "https://www.philips.co.kr/c-m-ho/coffee/troubleshooting",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "캡슐·전자동 커피머신",
+        "line": "물탱크 리무버블 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "일부 모델은 물탱크를 뒤로 밀어야 고정되는 방식이다. 모델에 따라 위치가 다를 수 있으니 매뉴얼 확인 필수.",
+      "cautionSource": "필립스 공식 기술 지원의 물탱크 삽입 위치 안내"
+    },
+    {
+      "id": "weak-water-flow-descaling-scale-buildup",
+      "claim": "커피머신의 물줄기가 약해지는 가장 흔한 원인은 히터와 노즐에 축적된 석회질(스케일)로, 물의 통로를 좁혀서 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "네스프레소·돌체구스토·필립스 공식 기술 지원",
+      "source_url": "https://www.nespresso.com/kr/ko/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "캡슐·전자동 커피머신",
+        "line": "전 모델",
+        "years": "1년 이상 사용 기계",
+        "region": "KR"
+      },
+      "caution": "물의 경도가 높은 지역(특히 수도권 외곽)에서는 스케일 축적이 더 빨리 진행될 수 있다.",
+      "cautionSource": "공식 기술 지원 페이지의 디스케알링 권장 사유"
+    },
+    {
+      "id": "descaling-frequency-six-months-to-one-year",
+      "claim": "캡슐 커피머신의 디스케알링(석회질 제거) 권장 주기는 6개월~1년이며, 물의 경도가 높은 지역은 더 자주 수행할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "네스프레소 코리아·돌체구스토 공식 안내",
+      "source_url": "https://www.dolce-gusto.co.kr/n1-descale",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "캡슐 커피머신",
+        "line": "네스프레소·돌체구스토",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "드롱기는 제품별로 권장 주기가 다를 수 있으니 매뉴얼 확인 필수.",
+      "cautionSource": "드롱기 공식 사용설명서 (모델별 상이)"
+    },
+    {
+      "id": "nespresso-descaling-water-only",
+      "claim": "네스프레소 코리아에서는 디스케알링을 위해 공식 세정제를 판매하지 않으며, 깨끗한 물만으로 디스케알링을 수행할 것을 권장한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "네스프레소 코리아 기술 지원",
+      "source_url": "https://www.nespresso.com/kr/ko/technical-support-usage#!/Citiz/instructions/descaling/guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "네스프레소",
+        "category": "캡슐 커피머신",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "식초나 상용 디스케알링 용액을 사용하면 보증이 무효될 수 있다.",
+      "cautionSource": "네스프레소 공식 기술 지원 페이지"
+    },
+    {
+      "id": "dolce-gusto-descaling-water-recommended",
+      "claim": "돌체구스토는 공식적으로 깨끗한 물만으로 디스케알링을 수행할 것을 권장하며, 사용설명서에 나오는 전문 세정제는 물의 경도가 높은 유럽 국가용이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "돌체구스토 공식 디스케알링 가이드",
+      "source_url": "https://www.dolce-gusto.co.kr/n1-descale",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "돌체구스토",
+        "category": "캡슐 커피머신",
+        "line": "네오 머신 등 현행 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "물의 경도가 매우 높은 특수 지역에서는 정기배송으로 전문 세정제를 받을 수 있다. 별도 문의는 고객센터 확인 필수.",
+      "cautionSource": "돌체구스토 공식 고객 지원"
+    },
+    {
+      "id": "delonghi-descaling-proprietary-solution-recommended",
+      "claim": "드롱기는 공식적으로 드롱기 전용 디스케알링 용액(Eco Descaler)을 권장하며, 공식 홈페이지와 정식 채널을 통해 구매할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "드롱기 공식 사용설명서·홈페이지",
+      "source_url": "https://www.delonghi.com/ko-kr/how-to-video",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "드롱기",
+        "category": "전자동·캡슐 커피머신",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "드롱기는 네스프레소·돌체구스토와 다르게 전용 세정제를 권장한다. 다른 용액 사용은 보증 상실 및 기계 손상 원인이 될 수 있다.",
+      "cautionSource": "드롱기 공식 매뉴얼의 디스케알링 절차"
+    },
+    {
+      "id": "vinegar-vs-descaling-solution-debate",
+      "claim": "일부 커피머신 사용자들이 식초(초산)를 디스케알링에 사용하는 방법을 보고하고 있으며, 화학적으로 스테인리스 부품에 안정적이라는 분석도 있으나, 제조사 공식 권장이 제품마다 다르므로 공식 매뉴얼을 따르는 것이 보증 상실 방지의 기준이다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "커뮤니티 사용자 보고·화학 안정성 분석",
+      "source_url": "https://www.clien.net/service/board/cm_coffee/13469588",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "커피머신",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "네스프레소·돌체구스토는 물, 드롱기는 전용 세정제를 공식 권장한다. 공식 권장이 아닌 용액(식초·구연산) 사용 시 제조사 보증이 무효될 수 있다. 기계 손상 위험을 감수할 수 없으면 공식 권장을 따를 것.",
+      "cautionSource": "드롱기·네스프레소·돌체구스토 공식 매뉴얼의 상이한 권장"
+    },
+    {
+      "id": "capsule-not-punctured-needle-damage",
+      "claim": "캡슐이 천공침(needle)에 뚫리지 않는 경우는 캡슐 미삽입, 천공침 손상·오염, 기계 압력 부족이 주요 원인이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "캡슐 커피머신 사용자 커뮤니티 보고",
+      "source_url": "https://www.clien.net/service/board/park/16923283",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "캡슐 커피머신",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "호환성 없는 다른 브랜드 캡슐을 사용하면 천공 실패 위험이 높아진다. 공식 브랜드 캡슐만 사용할 것.",
+      "cautionSource": "호환 캡슐 사용 후 천공 오류 보고"
+    },
+    {
+      "id": "extract-temperature-low-descaling-heater",
+      "claim": "커피가 미지근하게 나오는 증상(추출 온도 낮음)의 주요 원인은 히터에 축적된 석회질로, 디스케알링으로 해결되는 경우가 많다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "필립스·세코 에스프레소머신 기술 지원",
+      "source_url": "https://www.philips.co.kr/c-m-ho/coffee/troubleshooting",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "캡슐·전자동 커피머신",
+        "line": "가열식 전 모델",
+        "years": "1년 이상 사용 기계",
+        "region": "KR"
+      },
+      "caution": "디스케알링 후에도 미지근함이 지속되면 히터 불량을 의심하고 서비스센터 문의 필수.",
+      "cautionSource": "기술 지원 페이지의 온도 관련 문제 해결 절차"
+    },
+    {
+      "id": "milk-frother-tube-clogging-cleaning",
+      "claim": "우유거품기(우유통)에서 거품이 나오지 않을 때는 우유통 내부 단백질 축적, 섭취 튜브 막힘, 거품 분사 노즐 막힘이 주요 원인이며, 분해 후 따뜻한 물과 중성세제로 세척하고 바늘로 노즐을 뚫어주면 해결된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "필립스·세코 에스프레소머신 기술 지원",
+      "source_url": "https://www.philips.co.kr/c-m-ho/coffee/troubleshooting",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "우유거품 기능 탑재 커피머신",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "우유통 사용 후 즉시 세척하지 않으면 우유 단백질이 경화되어 세척이 어려워진다. 매일 사용 후 분리·세척 권장.",
+      "cautionSource": "기술 지원 페이지의 우유통 관리 지침"
+    },
+    {
+      "id": "milk-type-foam-suitability",
+      "claim": "우유거품이 제대로 만들어지려면 일반 우유(전유지방·반유지방), 두유, 락토프리 우유처럼 지방이 충분한 우유를 사용해야 하며, 저지방이나 무지방 우유는 거품이 잘 안 난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "필립스·세코 커피머신 기술 지원",
+      "source_url": "https://www.philips.co.kr/c-m-ho/coffee/troubleshooting",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "우유거품 기능 탑재 커피머신",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "거품이 안 나간다고 해서 기계 오류가 아닐 수 있다. 우유 종류부터 확인할 것.",
+      "cautionSource": "기술 지원 페이지의 우유 선택 권장"
+    },
+    {
+      "id": "water-tank-filter-replacement-three-months",
+      "claim": "아쿠아 클린 필터나 정수 필터는 3개월마다 교체해야 하며, 3개월을 초과하여 사용하면 필터가 막혀 물이 제대로 공급되지 않을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "필립스 에스프레소머신 기술 지원",
+      "source_url": "https://www.philips.co.kr/c-m-ho/coffee/troubleshooting",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "물탱크 필터 탑재 커피머신",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "필터 교체 주기를 초과하면 물이 안 나오거나 약한 수압 문제를 유발한다. 3개월 주기를 엄격히 지킬 것.",
+      "cautionSource": "기술 지원 페이지의 필터 교체 주기 안내"
+    },
+    {
+      "id": "power-reset-unplugging-five-minutes",
+      "claim": "커피머신에서 다양한 오류가 발생했을 때, 콘센트에서 플러그를 뽑고 5분 이상 대기한 후 재연결하는 전원 리셋이 가장 기본적인 자가 복구 방법이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "필립스·네스프레소·돌체구스토 공식 기술 지원",
+      "source_url": "https://www.philips.co.kr/c-m-ho/coffee/troubleshooting",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전자동·캡슐 커피머신",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "전원 버튼만 끄는 것이 아니라 반드시 콘센트에서 플러그를 빼야 완전한 리셋이 된다.",
+      "cautionSource": "기술 지원 페이지의 리셋 절차"
+    }
+  ]
+}

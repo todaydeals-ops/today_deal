@@ -1,0 +1,195 @@
+{
+  "topic": "아이패드 충전 안 됨·느림 자가점검",
+  "brand": "애플",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "iphone-normal-operating-temperature",
+    "iphone-thermal-throttling-performance",
+    "iphone-overheating-mitigation-immediate",
+    "iphone-overheating-what-not-to-do"
+  ],
+  "declined_facts": [
+    {
+      "id": "iphone-force-restart-generation-split",
+      "why": "아이폰 기종별(홈버튼 유무/세대별) 강제 재시작은 아이패드의 분류 기준과 다름. 아이패드는 홈버튼 유무가 기준이므로 별도 팩트 필요"
+    },
+    {
+      "id": "iphone-battery-menu-split",
+      "why": "아이폰의 배터리 성능 메뉴 위치(iOS 17.4+ 위치 변경)는 아이패드와 다를 수 있으므로 별도 조사 필요"
+    },
+    {
+      "id": "iphone-recovery-mode-data",
+      "why": "복구 모드와 데이터 보존은 충전 문제 자가점검과 무관"
+    },
+    {
+      "id": "iphone-charging-while-heavy-use",
+      "why": "아이폰 충전 중 고부하 앱 사용은 아이패드와 발열 메커니즘이 다를 수 있으므로 별도 조사 필요"
+    },
+    {
+      "id": "iphone-post-setup-indexing-heat",
+      "why": "아이폰/iOS 설정 후 백그라운드 작업으로 인한 발열은 아이패드/iPadOS와 다를 수 있으므로 별도 조사 필요"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "ipad-force-restart-with-home-button",
+      "claim": "홈버튼이 있는 아이패드(iPad Air 2 및 이전, iPad mini 4 및 이전 등)는 상단 버튼(전원 버튼)과 홈 버튼을 동시에 길게 누르고 있다가 Apple 로고가 나타나면 버튼을 놓으면 강제 재시작된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Restart your iPad",
+      "source_url": "https://support.apple.com/en-us/101603",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "태블릿",
+        "line": "iPad 홈버튼 탑재 모델",
+        "years": "~2019",
+        "region": "글로벌"
+      },
+      "caution": "iPad Air 3, iPad mini 5 이상에는 홈버튼이 없으므로 이 절차가 작동하지 않는다. 사용 중인 모델을 먼저 확인할 것.",
+      "cautionSource": "Apple Support에서 모델별 강제 재시작 절차 분기"
+    },
+    {
+      "id": "ipad-force-restart-without-home-button",
+      "claim": "홈버튼이 없는 아이패드(iPad Air 3 이상, iPad Pro, iPad 7세대 이상)는 다음 순서로 강제 재시작한다: (1) 상단 버튼과 가장 가까운 볼륨 버튼을 빠르게 누르고 뗀다, (2) 상단 버튼과 가장 먼 볼륨 버튼을 빠르게 누르고 뗀다, (3) Apple 로고가 나타날 때까지 상단 버튼을 길게 누른다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Restart your iPad & Force restart iPad",
+      "source_url": "https://support.apple.com/en-us/101603",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "태블릿",
+        "line": "iPad 홈버튼 없음 (Pro, Air 3+, iPad 7세대+)",
+        "years": "2019~",
+        "region": "글로벌"
+      },
+      "caution": "볼륨 버튼의 '가까운/먼' 구분은 상단 버튼(전원)을 기준으로 하며, 모델마다 배치가 다를 수 있다. 순서를 잘못 누르면 강제 재시작이 안 될 수 있으므로 Apple 공식 가이드에서 자신의 정확한 모델을 찾아 확인할 것.",
+      "cautionSource": "Apple Support 강제 재시작 가이드의 모델별 절차 명시"
+    },
+    {
+      "id": "ipad-battery-health-check-location",
+      "claim": "아이패드의 배터리 성능 상태는 설정 앱의 '설정 > 배터리 > 배터리 성능 상태'에서 확인할 수 있으며, 최대 용량 백분율, 사이클 수, 제조일, 첫 사용 날짜를 볼 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — How to check battery health and history on your iPad",
+      "source_url": "https://support.apple.com/en-us/117759",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "태블릿",
+        "line": "iPad 배터리 건강 기능 지원 모델",
+        "years": "최신 iPadOS 버전 지원",
+        "region": "글로벌"
+      },
+      "caution": "배터리 성능 상태는 iPadOS 버전과 아이패드 모델에 따라 설정 위치나 표시되는 정보가 다를 수 있다. 구형 아이패드에서는 이 메뉴가 없을 수 있다.",
+      "cautionSource": "Apple Support 배터리 건강 가이드"
+    },
+    {
+      "id": "ipad-usb-c-lightning-port-models",
+      "claim": "아이패드 포트 타입은 모델 세대에 따라 다르다. iPad Pro 11인치(1세대 이상), iPad Pro 12.9인치(3세대 이상), iPad Air(3세대 이상), iPad(7세대 이상)는 USB-C를 사용하며, 그보다 구형 모델들은 Lightning 포트를 사용한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Charge and connect with the USB-C port on your iPad",
+      "source_url": "https://support.apple.com/en-us/108894",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "태블릿",
+        "line": "iPad 전 계열",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "모델명만으로는 포트를 판단하기 어려우므로, 기기 설정의 '기기 정보'에서 정확한 모델명과 연식을 확인해야 한다. USB-C와 Lightning 케이블·어댑터는 호환되지 않는다.",
+      "cautionSource": "Apple Support에서 포트 타입과 모델 세대 매칭 명시"
+    },
+    {
+      "id": "ipad-slow-charging-with-low-wattage-adapter",
+      "claim": "7.5W 이하의 저전력 USB 전원 어댑터로 아이패드를 충전하면 충전 속도가 매우 느려진다. 가능하면 기기와 함께 제공된 어댑터를 사용하거나 더 높은 와트수의 USB-C 전원 어댑터(예: Mac 노트북 어댑터)를 사용하는 것이 낫다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Fast charge your iPad & Charge the iPad battery",
+      "source_url": "https://support.apple.com/en-us/125066",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "태블릿",
+        "line": "iPad USB-C 모델 중 고속 충전 지원",
+        "years": "최신 모델",
+        "region": "글로벌"
+      },
+      "caution": "저전력 어댑터로의 충전은 안전하지만 느리다. 응급 상황에서 빠른 충전이 필요하다면 더 높은 와트수 어댑터 사용을 권유하되, 기본 어댑터 사양을 먼저 확인하게 할 것.",
+      "cautionSource": "Apple Support에서 7.5W 임계값 명시"
+    },
+    {
+      "id": "ipad-slow-charger-notification",
+      "claim": "고속 충전을 지원하는 아이패드가 저전력 어댑터로 충전 중이면, 설정 > 배터리에서 '느린 충전기(Slow Charger)' 또는 유사한 경고 메시지가 표시된다. 이는 현재 어댑터가 최적 전력을 제공하지 않음을 의미한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Fast charge your iPad",
+      "source_url": "https://support.apple.com/en-us/125066",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "태블릿",
+        "line": "iPad 고속 충전 지원 모델",
+        "years": "최신 모델",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "ipad-charging-temperature-range",
+      "claim": "아이패드는 0°C ~ 35°C (32°F ~ 95°F) 범위 내의 환경 온도에서 최적으로 충전된다. 이 범위를 벗어나면 충전 속도가 느려지거나 중단될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your iPhone or iPad gets too hot or too cold & About charging and maintaining your iPad battery",
+      "source_url": "https://support.apple.com/en-us/118431",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "태블릿",
+        "line": "iPad 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "ipad-thermally-limited-charging-on-hold",
+      "claim": "아이패드의 내부 온도가 정상 범위를 초과하면 iOS/iPadOS 16 이상에서는 '충전 일시 중단(Charging On Hold)' 알림이 잠금 화면에 표시되고, 기기 온도가 정상으로 돌아올 때까지 충전이 일시 중단된다. 이는 배터리 손상을 방지하기 위한 보호 메커니즘이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If a Charging On Hold notification appears on your iPhone or iPad",
+      "source_url": "https://support.apple.com/en-us/104949",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "태블릿",
+        "line": "iPad 전 모델",
+        "years": "iPadOS 16+",
+        "region": "글로벌"
+      },
+      "caution": "'Charging On Hold'는 오류가 아니라 정상적인 보호 기능이다. 기기를 쿨한 환경으로 옮기면 충전이 자동으로 재개된다.",
+      "cautionSource": "Apple Support에서 'Charging On Hold'가 온도 조절 기능임을 명시"
+    },
+    {
+      "id": "ipad-charging-cable-connector-inspection",
+      "claim": "아이패드가 충전되지 않을 때 첫 번째 확인 사항은 충전 케이블과 아이패드의 충전 포트(Lightning 또는 USB-C)에 먼지, 보풀, 손상이 없는지 육안으로 검사하는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your iPad won't charge",
+      "source_url": "https://support.apple.com/en-us/102612",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "태블릿",
+        "line": "iPad 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "포트 청소 시 금속 도구나 물 사용은 절대 금지다. 부드러운 극세사 천으로 가볍게 닦는 것이 좋으며, 압축 공기도 내부 부품 손상 위험이 있으므로 피하는 편이 낫다.",
+      "cautionSource": "에어팟·애플워치 청소 가이드 및 일반 전자기기 포트 청소 원칙"
+    }
+  ]
+}

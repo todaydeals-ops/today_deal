@@ -1,0 +1,191 @@
+{
+  "topic": "프로젝터 화면 안 나옴·초점·발열 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "settop-hdmi-cable-reconnection",
+      "why": "셋톱박스는 TV와의 HDMI 단순 연결이나, 프로젝터는 컴퓨터/노트북/태블릿/외부기기 등 다양한 입력 소스를 가지며, 신호 확인 방식이 다르므로 거부"
+    },
+    {
+      "id": "settop-input-source-selection",
+      "why": "셋톱박스는 TV 리모컨의 '외부입력' 버튼으로 입력을 선택하나, 프로젝터는 자체 메뉴에서 HDMI/색상/영상 입력을 선택하므로 절차가 다름"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "projector-no-picture-hdmi-cable-check",
+      "claim": "프로젝터 화면이 안 나올 때 첫 점검은 HDMI 케이블이 프로젝터 HDMI 입력 포트에 양쪽 끝 모두 완전히 연결되어 있는지, 케이블이 손상되지 않았는지 확인하고, 양쪽 끝을 분리했다가 다시 단단히 연결하는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 빔프로젝터] 영상이 나타나지 않아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1779994",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "프로젝터", "line": "HDMI 입력 모든 프로젝터", "years": "현행", "region": "KR" },
+      "caution": "RGB to HDMI 젠더를 사용하는 경우(노트북 RGB 출력을 프로젝터에 연결할 때) 신호가 나오지 않을 수 있으므로, RGB to HDMI 젠더를 사용하지 말고 HDMI to RGB 젠더를 사용하거나 노트북의 HDMI 포트를 직접 연결해야 한다.",
+      "cautionSource": "LG전자 고객지원에서 RGB/HDMI 젠더 오류 안내"
+    },
+    {
+      "id": "projector-input-source-selection",
+      "claim": "프로젝터 화면이 안 나올 때는 케이블 재연결 후 프로젝터 메뉴에서 입력 소스(HDMI 1, HDMI 2, 색상, 영상 등)가 올바르게 선택되었는지 확인해야 하며, 외부기기(셋톱박스, 컴퓨터 등)에서 신호가 정상적으로 출력되는지도 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 빔프로젝터] 영상이 나타나지 않아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1779994",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "프로젝터", "line": "스마트 프로젝터 및 기본형", "years": "현행", "region": "KR" },
+      "caution": "프로젝터가 셋톱박스의 신호를 감지하지 못하는 경우, 셋톱박스 전원이 켜져 있고 정상 작동하는지 먼저 확인할 것"
+    },
+    {
+      "id": "projector-no-signal-external-device-check",
+      "claim": "'신호 없음' 메시지가 표시되는 경우는 입력 소스 선택 오류, HDMI 연결 불량, 외부기기 전원 문제, 외부기기 신호 장애 중 하나를 나타낸다. 프로젝터와 외부기기 전원을 모두 확인하고, HDMI 케이블을 분리·재연결한 후, 프로젝터의 입력 소스를 올바르게 선택해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 빔프로젝터] 영상이 나타나지 않아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1779994",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "프로젝터", "line": "HDMI 입력 모든 프로젝터", "years": "현행", "region": "KR" },
+      "caution": "위의 모든 조치를 했는데도 신호가 안 나오면 외부기기 고장이거나 프로젝터의 HDMI 포트 불량일 가능성이 높으므로 제조사 서비스센터에 문의해야 한다."
+    },
+    {
+      "id": "projector-auto-keystone-activation",
+      "claim": "프로젝터가 기울어진 각도에서 화면이 기울어져 보일 때 자동 키스톤 기능을 사용할 수 있으며, 삼성 더프리스타일은 기기 이동 시 자동으로 투사 화면을 직사각형으로 보정한다. 자동 키스톤 조정이 동작하지 않으면 렌즈 보호 필름이 아직 붙어있을 수 있으므로 제거해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 고객지원 — [삼성 TV] The Freestyle 자동 키스톤과 자동초점 해결방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1716526",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "프로젝터", "line": "더프리스타일 2세대", "years": "현행", "region": "KR" },
+      "caution": "렌즈 센서에 먼지가 있으면 자동 키스톤이 오동작할 수 있으므로 부드러운 천으로 렌즈를 가볍게 닦고, 프로젝터 상단의 센서를 면봉으로 부드럽게 청소할 것",
+      "cautionSource": "삼성 고객지원 자동 키스톤 오동작 원인"
+    },
+    {
+      "id": "projector-auto-keystone-disable",
+      "claim": "프로젝터의 자동 키스톤 또는 자동 초점이 작동 중 자주 재조정되어 화면이 자주 바뀐다면, 설정 메뉴에서 '기기 이동 후 자동 키스톤 조정' 또는 '기기 이동 후 자동 초점 조정' 항목을 해제하면 수동으로 설정한 값을 유지할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 고객지원 — [삼성 TV] The Freestyle 자동 키스톤과 자동초점 해결방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1716526",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "프로젝터", "line": "더프리스타일 2세대", "years": "현행", "region": "KR" },
+      "caution": "자동 재조정을 해제한 후에도 프로젝터를 움직이면 수동으로 다시 초점을 맞춰야 한다"
+    },
+    {
+      "id": "projector-manual-focus-adjustment",
+      "claim": "프로젝터의 화면이 선명하지 않거나 초점이 맞지 않을 때 수동 초점 조정이 가능하다. 삼성 더프리스타일의 경우 리모컨 홈 버튼 → 메뉴 → 설정 → 전체 설정 → 일반 및 개인정보 → 프로젝터 설정 → '초점' 항목에서 조정한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 고객지원 — [삼성 TV] The Freestyle 자동 키스톤과 자동초점 해결방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1716526",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "프로젝터", "line": "더프리스타일 2세대", "years": "현행", "region": "KR" },
+      "caution": "렌즈에 먼지나 이물질이 있으면 수동 초점을 조정해도 명확해지지 않을 수 있으므로, 초점 조정 전에 렌즈를 부드러운 천으로 가볍게 닦아야 한다"
+    },
+    {
+      "id": "projector-manual-keystone-correction",
+      "claim": "프로젝터 화면이 사다리꼴로 기울어 보이거나 왜곡되어 보일 때 수동 키스톤 보정 기능을 사용할 수 있다. 삼성 더프리스타일의 경우 리모컨 홈 버튼 → 메뉴 → 설정 → 전체 설정 → 일반 및 개인정보 → 프로젝터 설정 → '키스톤' 항목에서 조정한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 고객지원 — [삼성 TV] The Freestyle 자동 키스톤과 자동초점 해결방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1716526",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "프로젝터", "line": "더프리스타일 2세대", "years": "현행", "region": "KR" },
+      "caution": "키스톤 보정은 응급 조치일 뿐 프로젝터의 각도나 높이를 정확히 조정하는 것이 더 선명한 이미지를 제공한다"
+    },
+    {
+      "id": "projector-lens-direct-light-eye-damage-danger",
+      "claim": "프로젝터가 작동하고 있을 때 렌즈에서 나오는 빛을 직접 눈으로 들여다보면 안 된다. 강한 빛이 눈을 손상시킬 수 있고, 극단적인 경우 실명을 초래할 수도 있다. 프로젝터를 켤 때 투사 범위 내의 사람이 렌즈를 들여다 보지 못하도록 해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Optoma DLP 프로젝터 사용 설명서",
+      "source_url": "https://region-resource.optoma.com/products/import/Documents/388cdf66-0b0b-4b93-afae-0572c98474f9.pdf",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "프로젝터", "line": "모든 프로젝터(LED, 램프, 레이저 광원)", "years": "현행", "region": "KR" },
+      "caution": "렌즈 청소 시에도 프로젝터가 작동하고 있으면 안 되며, 렌즈에서 나오는 빛이 피부에 직접 닿지 않도록 주의해야 한다. 특히 아이들은 놀기 위해 렌즈에 접근하지 않도록 감시해야 한다.",
+      "cautionSource": "Optoma 사용 설명서 안전 경고 + Panasonic LCD 프로젝터 사용 설명서에서 동일 경고"
+    },
+    {
+      "id": "projector-fan-noise-cooling-check",
+      "claim": "프로젝터에서 나오는 팬 소음은 제품 냉각을 위한 정상 작동이다. 프로젝터는 밝은 빛으로 영상을 투사하기 때문에 내부 온도가 높아지며, 냉각을 위해 팬이 회전한다. 주변 온도가 높거나 환기가 제대로 되지 않는 곳에 설치되면 팬이 더 강하게 동작하여 소음이 커질 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 빔프로젝터 소음] 소음이 심해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151952633740",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "프로젝터", "line": "냉각팬이 있는 모든 프로젝터", "years": "현행", "region": "KR" },
+      "caution": "프로젝터에서 비정상적으로 큰 소음이 지속되면 팬 고장이거나 내부에 이물질이 있을 수 있으므로 서비스센터에 문의해야 한다"
+    },
+    {
+      "id": "projector-ventilation-blockage-overheating",
+      "claim": "프로젝터의 통풍구가 막혀있거나 환기가 제대로 되지 않는 곳에 설치되면 내부 온도가 상승하여 팬이 강하게 동작하고 소음이 커질 수 있다. 프로젝터 주변의 장애물을 치우고 통풍이 잘되는 곳에 설치해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 빔프로젝터 소음] 소음이 심해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151952633740",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "프로젝터", "line": "모든 프로젝터", "years": "현행", "region": "KR" },
+      "caution": "프로젝터를 선반이나 케이스 내부에 설치할 경우 통풍을 위해 앞뒤좌우에 최소 10cm 이상의 공간이 필요하며, 통풍구가 완전히 막히지 않도록 확인해야 한다.",
+      "cautionSource": "업계 표준 프로젝터 설치 공간 권장사항(최소 10cm 통풍 간격)"
+    },
+    {
+      "id": "projector-thermal-protection-auto-shutdown",
+      "claim": "프로젝터는 제품 손상 및 화재 예방을 위해 내부 온도가 40°C 이상으로 높아지면 자동으로 전원이 꺼질 수 있다. 이 경우 통풍을 개선하거나 실내 온도를 낮춘 후 시간을 두고 프로젝터를 다시 켜야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 빔프로젝터 소음] 소음이 심해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151952633740",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "프로젝터", "line": "모든 프로젝터", "years": "현행", "region": "KR" },
+      "caution": "과열로 인한 자동 종료는 제품을 보호하기 위한 정상 기능이므로, 무리하게 계속 사용하면 내부 부품이 손상될 수 있다. 충분히 냉각된 후 다시 켜야 한다.",
+      "cautionSource": "LG전자 고객지원 과열 보호 안내"
+    },
+    {
+      "id": "projector-throw-ratio-distance-calculation",
+      "claim": "프로젝터의 투사 거리(Throw Ratio, TR)는 원하는 화면 크기에 따라 달라진다. 투사 비율은 '스크린 가로 길이 ÷ 투사 거리'로 정의되며, 투사 비율이 작을수록(예: 0.5:1) 프로젝터를 화면 가까이 두면서 큰 화면을 볼 수 있다. 모델별 투사 비율은 제조사 스펙에서 확인할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Optoma 투사 계산기 및 업계 표준 투사 거리 계산 기준",
+      "source_url": "https://www.optoma.com/projectioncalculator/?region=Korea",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "프로젝터", "line": "모든 프로젝터", "years": "현행", "region": "KR" },
+      "caution": "예) 100인치 화면을 원하는 경우, 투사 비율 0.5:1 프로젝터는 1.3m 거리에 설치 가능하지만, 투사 비율 1.5:1 프로젝터는 4m 거리가 필요하다. 설치 공간에 따라 프로젝터 모델을 선택해야 한다.",
+      "cautionSource": "업계 표준 투사 거리 계산 기준에서 제시된 예시"
+    },
+    {
+      "id": "projector-ceiling-mounting-upside-down-setting",
+      "claim": "프로젝터를 천장에 설치할 때는 메뉴에서 '천장 설치' 또는 '상하 반전' 설정을 활성화해야 화면이 정상적으로 표시된다. 삼성 더프리스타일의 경우 '삼성 로고가 아래로 향하게' 설치한 후 설정에서 화면 방향을 조정한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 고객지원 — [삼성 TV] The Freestyle 메뉴, 전원연결, 자동초점 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/635354",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "프로젝터", "line": "더프리스타일 2세대", "years": "현행", "region": "KR" },
+      "caution": "천장 설치 후 반전 설정을 빼먹으면 화면이 뒤집혀 보이므로, 초기 설정 시 반드시 확인해야 한다"
+    },
+    {
+      "id": "projector-brightness-degradation-lamp-lifetime",
+      "claim": "프로젝터의 밝기가 점점 어두워지는 것은 정상적인 현상이다. LED 광원은 사용 시간에 따라 밝기가 약해지며, 램프식 프로젝터는 사용 시간이 누적되면 램프 교체가 필요할 수 있다. 밝기 저하는 렌즈 오염이나 렌즈 보호 필름이 남아있을 수도 있으므로 먼저 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "프로젝터 사용자 커뮤니티 및 제조사 기술 가이드",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EB%B9%94%ED%94%84%EB%A1%9C%EC%A0%9D%ED%84%B0_%ED%99%94%EB%A9%B4_%EC%A1%B0%EC%A0%95%EB%B2%95!_%ED%88%AC%EC%82%AC%EA%B1%B0%EB%A6%AC%C2%B7%EC%98%A4%ED%86%A0%ED%8F%AC%EC%BB%A4%EC%8A%A4%C2%B7%ED%82%A4%EC%8A%A4%ED%86%A4_%EA%B8%B0%EB%8A%A5_%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5-58846",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "프로젝터", "line": "LED식 및 램프식 프로젝터", "years": "현행", "region": "KR" },
+      "caution": "렌즈와 광학 부품이 오염되어 있으면 부드러운 천으로 가볍게 닦을 수 있지만, 렌즈 내부 청소나 렌즈 교체는 전문가에게 맡겨야 한다"
+    },
+    {
+      "id": "projector-lens-protection-film-removal",
+      "claim": "신규 프로젝터에는 렌즈 보호 필름이 붙어있을 수 있으며, 이 필름을 제거하지 않으면 화면이 흐리거나 초점이 맞지 않을 수 있고, 자동 키스톤·자동 초점 기능이 오동작할 수 있다. 첫 사용 전에 반드시 렌즈 보호 필름을 제거해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 고객지원 — [삼성 TV] The Freestyle 자동 키스톤과 자동초점 해결방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1716526",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "프로젝터", "line": "신규 프로젝터(렌즈 보호필름 포함)", "years": "현행", "region": "KR" },
+      "caution": "렌즈 필름이 남아있으면 화면 문제뿐 아니라 센서 오동작도 유발할 수 있으므로, 화면 문제 발생 시 가장 먼저 확인할 사항이다"
+    }
+  ]
+}

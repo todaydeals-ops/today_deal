@@ -1,0 +1,440 @@
+{
+  "topic": "사운드바 소리 안 남·TV 연결 안 됨 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "sound-cutout-two-point-four-ghz-interference"
+  ],
+  "declined_facts": [
+    {
+      "id": "pairing-not-showing-battery-check",
+      "why": "블루투스 스피커의 페어링 모드 진입은 스피커가 독립적 음원을 찾는 경우이고, 사운드바는 TV 신호를 수신하는 기기이므로 배터리 부족 진단이 완전히 다름. 사운드바는 AC 전원만 사용하는 경우도 많음"
+    },
+    {
+      "id": "pairing-mode-entry-required",
+      "why": "블루투스 스피커와 달리, 사운드바는 TV와의 HDMI ARC/eARC 연결이 핵심이며 페어링 모드 개념이 없음"
+    },
+    {
+      "id": "pairing-distance-proximity-first-connection",
+      "why": "사운드바는 TV 뒤에 설치되며, 거리와 장애물 조건이 HDMI 유선 연결로 해결되므로 블루투스 스피커의 거리 조건이 적용 안 됨"
+    },
+    {
+      "id": "pairing-existing-device-record-deletion",
+      "why": "블루투스 스피커의 기기 삭제 절차는 사운드바의 HDMI ARC 재설정과 무관함"
+    },
+    {
+      "id": "factory-reset-method-brand-specific",
+      "why": "블루투스 스피커의 초기화 방법(버튼 조합, 시간)은 사운드바의 초기화와 완전히 다름"
+    },
+    {
+      "id": "sony-speaker-reset-xb-series-buttons",
+      "why": "소니 블루투스 스피커 시리즈의 특정 버튼 조합은 사운드바에 적용 안 됨"
+    },
+    {
+      "id": "bose-speaker-reset-mute-button",
+      "why": "보스 블루투스 스피커의 뮤트 버튼 리셋은 사운드바 브랜드와 무관한 절차"
+    },
+    {
+      "id": "charging-connector-visual-inspection",
+      "why": "사운드바는 주로 AC 전원 어댑터를 사용하거나 배터리가 없으므로 충전 포트 점검이 불필요한 경우가 많음"
+    },
+    {
+      "id": "charging-cable-usb-adapter-specifications",
+      "why": "사운드바는 USB 충전이 아닌 경우가 대부분이므로 적용 안 됨"
+    },
+    {
+      "id": "charging-temperature-range-requirement",
+      "why": "블루투스 스피커의 충전 온도 범위(5°C~35°C)는 사운드바의 작동·보관 조건과는 다른 기준"
+    },
+    {
+      "id": "multipoint-connection-definition",
+      "why": "멀티포인트 연결은 블루투스 스피커의 기능이며, 사운드바는 TV 하나에 고정 연결되므로 해당 없음"
+    },
+    {
+      "id": "ipx5-waterproof-rating-definition",
+      "why": "방수 등급은 휴대용 블루투스 스피커의 기준이며, 거실 사운드바에는 거의 적용 안 됨"
+    },
+    {
+      "id": "ipx7-waterproof-rating-submersion",
+      "why": "IPX7 방수 등급은 블루투스 스피커 사용 환경 기준으로, 실내 사운드바와 무관"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "hdmi-arc-eArc-definition",
+      "claim": "HDMI ARC(Audio Return Channel)는 TV의 음성 신호를 사운드바로 보내는 기술이며, eARC(enhanced ARC)는 더 높은 음질(192kHz까지)을 지원하는 개선된 표준이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 공식 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28710",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "사운드바",
+        "line": "HDMI ARC/eARC 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "tv-arc-port-identification",
+      "claim": "TV 뒷면의 HDMI 포트 중 'HDMI (ARC)' 또는 'HDMI (eARC)'로 표기된 포트가 있으며, 보통 HDMI 3번 또는 4번이지만 제조사에 따라 다르므로 TV 뒷면 표시나 매뉴얼을 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스·LG전자 공식 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28710",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "사운드바",
+        "line": "HDMI ARC/eARC 지원 TV",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "hdmi-arc-cable-connection-sequence",
+      "claim": "사운드바 HDMI 연결 시 TV의 HDMI (ARC) 포트에 케이블 한쪽을 연결하고, 사운드바 뒤의 HDMI OUT (TV-ARC) 포트에 다른 쪽을 연결해야 한다. 사운드바의 HDMI IN 포트에 연결하면 신호를 받지 못한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스·LG전자 공식 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28710",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "사운드바",
+        "line": "HDMI ARC/eARC 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "인증되지 않은 HDMI 케이블 사용 시 신호 손실, 간헐적 끊김, 아예 인식 안 됨 현상이 발생할 수 있으므로 정품 HDMI 2.1 이상 케이블 사용 권장",
+      "cautionSource": "삼성전자서비스 공식 가이드에서 '인증되지 않은 케이블 사용 시 오류 발생' 명시"
+    },
+    {
+      "id": "tv-sound-output-setting-change",
+      "claim": "HDMI 케이블 연결 후 TV 설정에서 명시적으로 음성 출력 기기를 사운드바로 변경해야 TV 음성이 사운드바로 나간다. 자동으로 전환되지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결·삼성전자서비스 공식 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150667856064",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "사운드바",
+        "line": "HDMI ARC/eARC 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-webos-sound-output-path",
+      "claim": "LG webOS TV의 음성 출력 설정은 리모컨 [설정] → [전체 설정] → [음향] → [소리 듣기] → [유선 스피커로 듣기] → [HDMI(ARC) 연결 기기] 순서로 진행된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 공식 고객지원",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150667856064",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "TV",
+        "line": "webOS 전 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-sound-output-path",
+      "claim": "삼성 TV의 음성 출력 설정은 리모컨 [홈] 버튼 → [설정] → [소리출력]에서 사운드바를 선택한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 공식 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28710",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "TV",
+        "line": "스마트 TV 전 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "hdmi-arc-connection-verification",
+      "claim": "HDMI ARC 연결이 정상이면 사운드바 표시부에 'TV ARC' 또는 'ARC' 표시가 나타나야 한다. 이 표시가 없으면 신호를 받지 못한 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스·LG전자 공식 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28710",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "사운드바",
+        "line": "HDMI ARC/eARC 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "hdmi-arc-factory-reset-procedure",
+      "claim": "HDMI ARC 연결이 반응하지 않을 때 사운드바의 공장 초기화는 전원을 켜둔 상태에서 리모컨 음량(+/−) 버튼을 동시에 5초 이상 누르면 된다. 표시창에 'INTI' → 'BYE'가 나타나면서 전원이 꺼진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 공식 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28710",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "사운드바",
+        "line": "삼성 사운드바 전 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "초기화 후 TV와 사운드바의 전원 코드를 완전히 뽑고 최소 30초 이상 대기한 후 재연결할 것",
+      "cautionSource": "삼성전자서비스 공식 가이드에서 전원 코드 분리 및 대기 시간 명시"
+    },
+    {
+      "id": "hdmi-cec-remote-control-function",
+      "claim": "HDMI CEC(Consumer Electronics Control)는 TV 리모컨 하나로 사운드바의 전원을 켜고 끄며 볼륨을 조절할 수 있는 기능이다. 제조사별로 명칭이 다르다: 삼성 'Anynet+', LG 'SimpLink', 소니 'Bravia Sync'",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 공식 고객지원",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153026831144",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "사운드바",
+        "line": "HDMI CEC 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "hdmi-cec-enable-requirement",
+      "claim": "TV 리모컨 음량 버튼이 사운드바에 먹히지 않으면 TV와 사운드바 양쪽에서 HDMI CEC 설정이 켜져 있는지 확인해야 한다. 한쪽이라도 꺼져 있으면 리모컨 제어가 작동하지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 공식 고객지원",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153026831144",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "사운드바",
+        "line": "HDMI CEC 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-hdmi-cec-settings-path",
+      "claim": "LG TV의 HDMI CEC 설정은 리모컨 [설정] → [전체 설정] → [일반] → [HDMI-CEC]에서 켜짐으로 변경한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 공식 고객지원",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153026831144",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "TV",
+        "line": "webOS 전 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-anynet-plus-settings-path",
+      "claim": "삼성 TV의 HDMI CEC(Anynet+) 설정은 리모컨 [홈] → [설정] → [일반] → [Anynet+(HDMI-CEC)]에서 켜짐으로 변경한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 공식 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28710",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "TV",
+        "line": "스마트 TV 전 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "optical-cable-arc-alternative",
+      "claim": "HDMI ARC/eARC를 지원하지 않는 구형 TV일 경우, 광케이블(Optical/SPDIF)로 TV의 음성을 사운드바로 보낼 수 있다. TV 뒤의 '광 출력(Digital Audio Out)' 포트와 사운드바의 '광 입력(Optical In)' 포트를 광케이블로 연결하면 된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 공식 고객지원",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150165041472",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "사운드바",
+        "line": "광 입력 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "optical-cable-mode-selection",
+      "claim": "광케이블 연결 후 사운드바의 [F] 또는 [기능] 버튼을 눌러 [OPT] 또는 [광] 모드로 명시적으로 전환해야 신호를 받는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 공식 고객지원",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150165041472",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "사운드바",
+        "line": "광 입력 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "audio-delay-adjustment-definition",
+      "claim": "음성이 영상과 동기화되지 않는 현상(립싱크 어긋남)은 제품 고장이 아니라 외부 기기를 통한 음성 신호 전달 시 발생하는 자연스러운 지연이다. TV 설정의 '오디오 지연 조정'으로 동기화를 맞출 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 공식 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41845",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "사운드바",
+        "line": "모든 사운드바",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-audio-delay-adjustment-path",
+      "claim": "삼성 TV의 오디오 지연 조정은 리모컨 [홈] → [설정] → [전체 설정] → [음향] → [전문가 설정] → [디지털 출력 오디오 지연 조정]에서 진행한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 공식 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41845",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "TV",
+        "line": "스마트 TV 전 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "audio-delay-adjustment-method",
+      "claim": "음성이 영상보다 먼저 나올 때는 지연 값을 높여서 음성을 뒤로 미루고, 음성이 영상보다 늦을 때는 지연 값을 낮춘다. 대부분 100~200ms 범위에서 조정하면 동기화가 맞춰진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 공식 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41845",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "TV",
+        "line": "스마트 TV 전 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-audio-sync-button-adjustment",
+      "claim": "LG 사운드바 사용 시 사운드바의 [AV 싱크] 버튼을 눌러 표시부를 확인하면서 TV 리모컨의 좌우 방향키로 직접 지연 시간을 조절할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 공식 고객지원",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150667856064",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "사운드바",
+        "line": "LG 사운드바 전 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "subwoofer-wireless-pairing-basics",
+      "claim": "사운드바의 무선 서브우퍼(우퍼)가 연결되지 않으면 우선 페어링 상태를 확인해야 한다. 대부분의 사운드바는 리모컨의 [BT PAIRING] 버튼이나 [외부입력] 버튼을 5초 이상 눌러 페어링 모드를 시작한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 공식 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41639",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "사운드바",
+        "line": "무선 서브우퍼 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "subwoofer-wireless-led-indicator",
+      "claim": "서브우퍼 페어링 진행 중 서브우퍼 뒤(또는 측면)의 [LINK LED] 표시등이 파란색으로 깜박이면 정상 진행 상태이고, 서브우퍼 전면 표시에 연결 표시(보통 LED 점등)가 나타나면 페어링이 완료된 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 공식 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41639",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "사운드바",
+        "line": "무선 서브우퍼 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "subwoofer-disconnection-causes-interference",
+      "claim": "서브우퍼 무선 연결이 끊기는 주요 원인은 공유기, 전자레인지, 무선 마우스 같은 2.4GHz 대역 무선 기기에 의한 신호 간섭이다. 또한 사운드바와 서브우퍼 사이에 벽·문·금속 선반 같은 장애물이 있으면 신호가 약화된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소니 공식 고객지원 + 삼성전자서비스",
+      "source_url": "https://www.sony.co.kr/electronics/support/articles/00097458",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "사운드바",
+        "line": "무선 서브우퍼 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "subwoofer-reset-reconnection",
+      "claim": "서브우퍼 페어링이 완료되지 않으면 서브우퍼와 사운드바의 전원을 모두 끈 후 최소 30초 이상 대기했다가 다시 켜서 페어링을 재시도해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 공식 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41639",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "사운드바",
+        "line": "무선 서브우퍼 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "firmware-update-availability-soundbar",
+      "claim": "일부 사운드바는 펌웨어 업데이트를 지원한다. HDMI 인식 오류, 음성 지연 문제, 서브우퍼 연결 불안정 등이 지속되면 제조사 웹사이트에서 자신의 모델 번호를 입력해 최신 펌웨어로 업데이트하는 것이 도움이 될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제조사 공식 안내 (기술 자료)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28710",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "사운드바",
+        "line": "펌웨어 업데이트 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "펌웨어 업데이트 중에는 반드시 전원을 유지해야 하며, 업데이트가 중단되면 기기가 손상될 수 있음. 모든 사운드바가 펌웨어 업데이트를 지원하는 것은 아니므로 제조사 웹사이트에서 해당 모델 지원 여부를 확인할 것",
+      "cautionSource": "제조사 공식 업데이트 안내"
+    }
+  ]
+}

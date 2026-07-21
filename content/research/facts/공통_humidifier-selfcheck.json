@@ -1,0 +1,301 @@
+{
+  "topic": "가습기 자가점검 — 분무 안 됨·냄새·백색가루·물 종류 논쟁·살균제 주의",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "ideal-indoor-humidity-range"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "humidifier-ultrasonic-vibrator-mineral-buildup",
+      "claim": "초음파 가습기의 분무가 약해지거나 안 될 때 주요 원인은 진동자에 물때와 미네랄 침전물이 쌓여 진동이 제대로 되지 않는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 - 하이드로타워 초음파 진동자 청소 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153513824236",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가습기",
+        "line": "초음파식 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "분무 약화는 진동자 오염을 가장 먼저 의심해야 하며, 정기 청소로 예방할 수 있다.",
+      "cautionSource": "제조사 진단 기준"
+    },
+    {
+      "id": "ultrasonic-vibrator-cleaning-method",
+      "claim": "초음파 진동자 세척은 물에 적신 솔이나 천으로 부드럽게 쓸어 내며, 직접 물을 붓거나 날카로운 물체로 문지르거나 맨손으로 만져서는 안 된다. 손에 묻은 화장품이나 오일이 진동자에 접촉하면 성능이 저하된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 - 하이드로타워 초음파 진동자 청소 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153513824236",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가습기",
+        "line": "초음파식 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "진동자를 손으로 만지지 않는 것이 가장 중요하며, 세척 후 완전히 건조시켜야 한다. 물이 남아있으면 세균 번식의 원인이 된다.",
+      "cautionSource": "제조사 안전 지침"
+    },
+    {
+      "id": "ultrasonic-humidifier-white-powder-phenomenon",
+      "claim": "초음파 가습기에서 나오는 백색가루는 물속 미네랄(칼슘, 마그네슘)이 함께 분사되어 공기 중에서 증발하고 가라앉는 현상으로, 가열식·기화식 가습기는 발생하지 않는 초음파식 고유 증상이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "클리앙, 나무위키 등 사용자 커뮤니티 종합",
+      "source_url": "https://namu.wiki/w/%EA%B0%80%EC%8A%B5%EA%B8%B0",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가습기",
+        "line": "초음파식 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "백색가루는 가습기 오작동이 아니라 물의 미네랄 특성 때문이므로, 물의 종류를 바꾸지 않는 한 완전 제거는 어렵다. 가습 범위 밖에만 생기도록 가습기 배치를 조정하는 방법도 있다.",
+      "cautionSource": "사용자 경험 기반 대처법"
+    },
+    {
+      "id": "humidifier-water-type-debate-tap-vs-filtered",
+      "claim": "가습기 물로 수돗물을 사용할지 정수기물을 사용할지는 세균 번식과 미네랄 침전 간의 trade-off다. 수돗물은 잔류 염소(소독제)가 있어 세균 번식을 억제하고 환경부·WHO가 권장하지만 미네랄이 더 많아 백색가루가 늘어나고, RO 정수기물은 미네랄을 제거하여 백색가루가 적지만 소독 성분이 없어 세균·곰팡이 번식 위험이 높다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "얼루어 코리아, 클리앙, 브링더홈 등 가이드·커뮤니티 종합",
+      "source_url": "https://www.allurekorea.com/2023/11/12/%EA%B0%80%EC%8A%B5%EA%B8%B0%EC%97%90-%EC%88%98%EB%8F%AF%EB%AC%BC-vs-%EC%A0%95%EC%88%98-%EA%B2%A8%EC%9A%B8%EC%B2%A0-%ED%95%84%EC%88%98%ED%92%88-%EA%B0%80%EC%8A%B5%EA%B8%B0-%EC%98%AC%EB%B0%94%EB%A5%B8/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가습기",
+        "line": "초음파식 가습기",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "세균 억제가 더 중요하다면 수돗물을, 백색가루 방지가 우선이면 RO 정수기물을 선택하되, 어느 물을 쓰든 매일 물을 갈아주고 정기적으로 세척해야 한다. 정수기물 사용 시에도 곰팡이 예방을 위해 물에 식초나 소금을 타는 것이 권장된다.",
+      "cautionSource": "환경부·WHO 공식 권고 + 사용자 가이드 종합"
+    },
+    {
+      "id": "humidifier-heating-vs-ultrasonic-comparison",
+      "claim": "가열식 가습기는 물을 끓여 수증기로 배출하여 세균 번식이 적고 가습 범위가 넓지만, 소비전력이 높고 화상 위험이 있으며 플라스틱 소재에서 환경호르몬이 나올 수 있다. 초음파식은 저전력·저가이고 분무량이 많지만, 미세 물입자로 바이러스 전달 위험이 있고 백분 현상이 발생한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "AJD 가습기 구매가이드, ZDNet Korea 가습기 비교",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%B4%88%EC%9D%8C%ED%8C%8Cvs%EB%B3%B5%ED%95%A9%EC%8B%9Dvs%EA%B8%B0%ED%99%94%EC%8B%9Dvs%EA%B0%80%EC%97%B4%EC%8B%9D_%EA%B0%80%EC%8A%B5%EA%B8%B0_%EC%A2%85%EB%A5%98,_%EC%9B%90%EB%A6%AC_%EC%B4%9D%EC%A0%95%EB%A6%AC%EC%9E%A5%EB%8B%A8%EC%A0%90,_%EA%B0%80%EA%B2%A9_%EB%B9%84%EA%B5%90-49894",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가습기",
+        "line": "가열식 vs 초음파식 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "가열식은 화상 위험이 있으므로 어린이·반려동물 근처에서는 조심해야 한다. 초음파식을 선택했다면 물 관리와 정기 세척이 더욱 중요하다.",
+      "cautionSource": "제조사 안전 지침"
+    },
+    {
+      "id": "humidifier-hybrid-hot-air-type",
+      "claim": "온풍식(복합식) 가습기는 물을 60~70도로 가열한 후 초음파로 분사하여 가열식의 살균력과 초음파식의 분무량을 겸하지만, 가열식보다 살균력이 낮고 초음파식보다 비싸다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "AJD, 브링더홈, 건강마음연구소 가습기 종류 비교",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%B4%88%EC%9D%8C%ED%8C%8Cvs%EB%B3%B5%ED%95%A9%EC%8B%9Dvs%EA%B8%B0%ED%99%94%EC%8B%9Dvs%EA%B0%80%EC%97%B4%EC%8B%9D_%EA%B0%80%EC%8A%B5%EA%B8%B0_%EC%A2%85%EB%A5%98,_%EC%9B%90%EB%A6%AC_%EC%B4%9D%EC%A0%95%EB%A6%AC%EC%9E%A5%EB%8B%A8%EC%A0%90,_%EA%B0%80%EA%B2%A9_%EB%B9%84%EA%B5%90-49894",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가습기",
+        "line": "온풍식·복합식 가습기",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "온풍식도 초음파 분사 특성상 백분 현상이 일부 발생할 수 있으며, 가열식처럼 높은 온도가 아니므로 화상 위험은 적지만 여전히 세척이 중요하다.",
+      "cautionSource": "사용자 후기"
+    },
+    {
+      "id": "humidifier-natural-evaporation-type",
+      "claim": "기화식(자연기화식) 가습기는 물을 자연 증발로 배출하는 방식으로, 백분 현상이 거의 없고 매우 안전하지만 저온 환경에서 제습력이 떨어진다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "AJD, 브링더홈, 건강마음연구소 가습기 종류 비교",
+      "source_url": "https://bringthehome.co.kr/article/%EC%8A%B5%EB%8F%84-%EA%B4%80%EB%A6%AC-a-z/17/1235/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가습기",
+        "line": "기화식 가습기",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "기화식은 따뜻한 날씨나 습도가 높은 환경에서는 가습 효과가 제한적이므로, 겨울철·건조한 환경에서 주로 사용되는 것이 효과적이다.",
+      "cautionSource": "제조사 가이드"
+    },
+    {
+      "id": "humidifier-odor-causes-bacteria-mold",
+      "claim": "가습기에서 냄새가 날 때 주요 원인은 필터 오염, 곰팡이, 세균 번식이며, 물을 매일 갈지 않거나 습기가 완전히 건조되지 않아 발생한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "LG전자 스스로해결 + 클리앙·당근마켓 사용자 종합",
+      "source_url": "https://www.lge.co.kr/support/solutions-1319083597504",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가습기",
+        "line": "전 방식 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "냄새가 나면 먼저 물통을 버리고 필터 및 내부를 세척해야 하며, 세척 후에도 냄새가 지속되면 곰팡이가 내부에 번식했을 가능성이 높다.",
+      "cautionSource": "제조사 진단 기준"
+    },
+    {
+      "id": "humidifier-cleaning-frequency-by-type",
+      "claim": "초음파식 가습기는 매일 세척, 가열식과 복합식(온풍식)은 주 1~2회, 기화식은 주 1회 기본 청소와 월 1회 분해 청소를 권장한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "AJD 가습기 청소·세척 주기 관리 가이드",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EA%B0%80%EC%8A%B5%EA%B8%B0_%EC%B2%AD%EC%86%8C,_%EC%84%B8%EC%B2%99_%EC%A3%BC%EA%B8%B0%EC%97%90_%EB%A7%9E%EA%B2%8C_%EA%B4%80%EB%A6%AC%ED%95%98%EB%8A%94_%EB%B0%A9%EB%B2%95_4%EA%B0%80%EC%A7%80_%EC%B4%88%EC%9D%8C%ED%8C%8C%EC%8B%9D,_%EA%B8%B0%ED%9A%8C%EC%8B%9D,_%EB%B3%B5%ED%95%A9%EC%8B%9D,_%EA%B0%80%EC%97%B4%EC%8B%9D-49899",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가습기",
+        "line": "가습 방식별 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "초음파식은 세균·곰팡이 번식이 빨라 매일 세척이 필수며, 물때가 쌓이기 쉬우므로 세척과 동시에 물 관리가 중요하다.",
+      "cautionSource": "제조사 세척 주기 기준"
+    },
+    {
+      "id": "humidifier-limescale-removal-citric-acid",
+      "claim": "가습기 물때 제거는 물 1L에 구연산 1~2스푼(10~20g)을 넣어 30분~1시간 불린 후 솔로 부드럽게 문질러 닦으면 되며, 진동판은 솔로 문지르면 안 되고 물에 적신 천으로만 닦아야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "클리앙, 에어메이드 공식 FAQ, 브링더홈 가이드",
+      "source_url": "https://www.clien.net/service/board/park/16601712",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가습기",
+        "line": "전 방식 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "구연산 비율을 지켜야 산성 잔여물이 남지 않으며, 세척 후 반드시 물로 여러 번 헹궈야 한다. 구연산이 남으면 호흡기에 영향을 줄 수 있다.",
+      "cautionSource": "세척 안전 가이드"
+    },
+    {
+      "id": "humidifier-limescale-removal-vinegar",
+      "claim": "가습기 물때는 식초와 물을 10:1 비율로 섞어 20분 정도 불린 후 세척해도 효과적이며, 구연산이 없을 때 대체 방법으로 사용할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "클리앙, 당근마켓 등 사용자 경험 종합",
+      "source_url": "https://www.clien.net/service/board/park/16601712",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가습기",
+        "line": "전 방식 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "식초의 신 냄새가 가습기에 남을 수 있으므로, 세척 후 깨끗한 물로 충분히 헹궈야 한다. 세척 후에도 냄새가 나면 추가 헹굼이 필요하다.",
+      "cautionSource": "사용자 경험 기반"
+    },
+    {
+      "id": "humidifier-mold-prevention-daily-water-change",
+      "claim": "가습기 곰팡이 예방의 가장 중요한 방법은 매일 물을 갈아주는 것이며, 추가로 물에 식초나 굵은 소금을 타서 살균 효과를 높일 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "LG전자 + 클리앙·당근마켓 사용자 경험",
+      "source_url": "https://www.lge.co.kr/support/solutions-1319083597504",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가습기",
+        "line": "전 방식 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "물에 식초를 넣을 때는 소량만 넣어서 냄새가 과하지 않도록 조절하고, 소금은 미네랄이 늘어날 수 있으므로 초음파식에서는 신중하게 사용해야 한다.",
+      "cautionSource": "사용자 가이드"
+    },
+    {
+      "id": "humidifier-tap-water-chlorine-bacteria-inhibition",
+      "claim": "정수기물은 정수 과정에서 소독 성분(염소)이 제거되어 세균 번식이 수돗물보다 빠르고 물이 쉽게 변질되어 비릿한 냄새가 빨리 발생하므로, 세균 억제를 위해서는 수돗물을 사용하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "얼루어 코리아, 브링더홈 가습기 물 종류 가이드",
+      "source_url": "https://www.allurekorea.com/2023/11/12/%EA%B0%80%EC%8A%B5%EA%B8%B0%EC%97%90-%EC%88%98%EB%8F%AF%EB%AC%BC-vs-%EC%A0%95%EC%88%98-%EA%B2%A8%EC%9A%B8%EC%B2%A0-%ED%95%84%EC%88%98%ED%92%88-%EA%B0%80%EC%8A%B5%EA%B8%B0-%EC%98%AC%EB%B0%94%EB%A5%B8/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가습기",
+        "line": "전 방식 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "수돗물을 선택해도 매일 물을 갈아주고 정기 세척을 해야 하며, 특히 초음파식은 세균 억제가 더욱 중요하다.",
+      "cautionSource": "환경부·WHO 공식 권고"
+    },
+    {
+      "id": "humidifier-filter-replacement-cycle",
+      "claim": "가습기 필터(섬유 필터)의 정기 교체 주기는 3~6개월이며, 하루 사용 시간과 물 사용량이 많을수록 교체 주기가 단축된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "AJD, NANJING BLUE SKY FILTER 등 가습기 필터 관리 가이드",
+      "source_url": "https://kr.bluesky-filter.com/%EA%B0%80%EC%8A%B5%EA%B8%B0-%ED%95%84%ED%84%B0%EB%8A%94-%EC%96%BC%EB%A7%88%EB%82%98-%EC%9E%90%EC%A3%BC-%EA%B5%90%EC%B2%B4%ED%95%B4%EC%95%BC-%ED%95%98%EB%82%98%EC%9A%94%3F-id47033167.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가습기",
+        "line": "섬유 필터 장착 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "필터 교체 주기는 제품 모델별로 다를 수 있으므로, 제조사의 권장사항을 우선적으로 따라야 한다.",
+      "cautionSource": "제조사 필터 교체 가이드"
+    },
+    {
+      "id": "humidifier-filter-disk-semi-permanent",
+      "claim": "디스크 필터(반영구 필터)는 섬유 필터와 달리 반영구적으로 사용 가능하지만, 오랜 사용으로 미네랄 침전으로 표면이 미끄러워지므로 정기적인 세척과 관리가 필수다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "AJD 가습기 필터 관리 가이드",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EA%B0%80%EC%8A%B5%EA%B8%B0_%EC%B2%AD%EC%86%8C,_%EC%84%B8%EC%B2%99_%EC%A3%BC%EA%B8%B0%EC%97%90_%EB%A7%9E%EA%B2%8C_%EA%B4%80%EB%A6%AC%ED%95%98%EB%8A%94_%EB%B0%A9%EB%B2%95_4%EA%B0%80%EC%A7%80_%EC%B4%88%EC%9D%8C%ED%8C%8C%EC%8B%9D,_%EA%B8%B0%ED%9A%8C%EC%8B%9D,_%EB%B3%B5%ED%95%A9%EC%8B%9D,_%EA%B0%80%EC%97%B4%EC%8B%9D-49899",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가습기",
+        "line": "디스크 필터 장착 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "디스크 필터를 세척할 때도 물때 제거(구연산·식초)를 정기적으로 해야 성능 저하를 막을 수 있다.",
+      "cautionSource": "제조사 필터 관리 기준"
+    },
+    {
+      "id": "humidifier-sterilizer-caution-chemical-safety",
+      "claim": "가습기에 락스나 일반 살균제를 투입하면 안 되며, 전용 세척제만 사용해야 한다. 살균제·세정제 잔여물이 공기 중으로 배출되어 호흡기에 영향을 줄 수 있으며, 2016년 가습기 살균제 참사의 원인이었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 안내, 환경부·식약처 공식 경고",
+      "source_url": "https://www.lge.co.kr/support/solutions-1319083597504",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가습기",
+        "line": "전 방식 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "2016년 가습기 살균제 참사(약 500명 폐질환 피해)로 인해 가습기 살균제 판매가 중단되었다. 곰팡이·세균 제거가 필요하면 물에 식초나 소금을 타거나 정기적 세척·건조로 예방하는 것이 유일한 안전한 방법이다.",
+      "cautionSource": "환경부·식약처 공식 안내(2016년 살균제 참사)"
+    }
+  ]
+}

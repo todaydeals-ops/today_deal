@@ -1,0 +1,245 @@
+{
+  "topic": "캐논·엡손 프린터 인쇄 불량·잉크 오류·폐잉크 패드 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "hp-printer-connection-usb-wireless-check",
+    "hp-paper-jam-removal-precaution",
+    "hp-driver-removal-windows-uninstall",
+    "hp-driver-reinstall-hp-website",
+    "hp-cold-reset-power-cycle",
+    "hp-printer-troubleshooting-sequence"
+  ],
+  "declined_facts": [
+    {
+      "id": "hp-smart-app-diagnostic-features",
+      "why": "HP Smart 앱은 HP 고유 도구. 캐논·엡손은 제조사별 독립 앱(Canon PIXMA Printing Solutions, Epson Printer Plus 등) 사용"
+    },
+    {
+      "id": "hp-printhead-cleaning-hp-smart-app",
+      "why": "HP Smart 앱 기반 청소는 HP 특화. 캐논·엡손은 제어판 메뉴 또는 유틸리티를 통한 별도 절차"
+    },
+    {
+      "id": "hp-print-and-scan-doctor-diagnostic-tool",
+      "why": "HP Print and Scan Doctor는 HP 고유 진단 도구. 캐논·엡손은 각사 공식 지원 채널 및 유틸리티 사용"
+    },
+    {
+      "id": "hp-offline-status-windows-control-panel",
+      "why": "Windows 오프라인 상태 해제는 공통이나, 이 팩트는 Windows UI 기반 HP 구체화로 작성되어 있음. 캐논·엡손도 동일 Windows 프로세스 따르지만 제조사별 추가 단계 필요"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "canon-error-code-system",
+      "claim": "캐논 프린터 에러코드는 2~3자리 숫자(예: E5, P10) 또는 글자+숫자 조합으로 표시되며, 용지 걸림·잉크 부족·카트리지 오류 등의 상태를 나타낸다. 에러가 나타나면 프린터의 액정 디스플레이 또는 컴퓨터 화면에서 메시지를 확인하고, Canon 공식 사용자 안내서에서 해당 코드를 찾아 조치한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Canon USRMA-0806 사용자 안내서 - 에러 코드가 나타나는 경우",
+      "source_url": "https://oip.manual.canon/USRMA-0806-zz-SS-koKR/contents/SS253_troubleshooting_146whenanerrorcodeappears.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "캐논",
+        "category": "프린터/복합기",
+        "line": "PIXMA 전 라인",
+        "years": "현행 모델",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "canon-g-series-ink-level-reset",
+      "claim": "캐논 무한잉크 G시리즈(G1000, G3010, G6000 등)의 잉크 잔량 카운트를 초기화하려면 드라이버 또는 프린터 유틸리티에서 각 색깔별로 '원래대로(Reset)'를 선택하고, 잉크 탱크를 상한선까지 충전해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Canon G6000 시리즈 매뉴얼 - 잉크 잔량 카운트 초기화",
+      "source_url": "https://ij.manual.canon/ij/webmanual/PrinterDriver/W/G6000%20series/1.0/KO/PPG/dg-c_remaining_ink.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "캐논",
+        "category": "프린터",
+        "line": "G시리즈 무한잉크(G1000, G2000, G3000, G4000, G6000 등)",
+        "years": "2015~현행",
+        "region": "글로벌"
+      },
+      "caution": "잉크 리셋은 물리적 용지 아래 탱크 충전과 반드시 함께 진행해야 한다. 카운트만 초기화하고 잉크를 채우지 않으면 재인식 오류가 발생할 수 있다.",
+      "cautionSource": "Canon 공식 G6000 시리즈 매뉴얼"
+    },
+    {
+      "id": "canon-g-series-firmware-reset",
+      "claim": "캐논 무한잉크 G시리즈의 강제 초기화(펌웨어 리셋)는 전원 버튼을 누른 상태로 중지/리셋 버튼을 두 번 누르는 방식으로 진행한다. 정확한 버튼 위치 및 시간은 모델에 따라 다르므로 제품 매뉴얼을 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Canon G1000/G3010/G6000 시리즈 사용자 안내서 - 프린터 설정 초기화",
+      "source_url": "https://ij.manual.canon/ij/webmanual/Manual/All/G3010%20series/KO/UG/ug_o_03_03_27.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "캐논",
+        "category": "프린터",
+        "line": "G시리즈 무한잉크",
+        "years": "2015~현행",
+        "region": "글로벌"
+      },
+      "caution": "펌웨어 리셋은 모든 설정을 초기 상태로 돌린다. 무선 네트워크, 복사 용지 크기 등 사용자 설정이 사라지므로 정말 필요한 경우만 진행해야 한다.",
+      "cautionSource": "Canon 공식 G시리즈 매뉴얼"
+    },
+    {
+      "id": "epson-ink-pad-capacity-warning",
+      "claim": "엡손 프린터의 폐잉크 패드(Ink Pad)는 인쇄 및 헤드 청소 시 발생하는 폐잉크를 수집하는 부품으로, 수명이 도달하면 '프린터가 서비스가 필요합니다' 또는 '잉크 패드가 거의 가득 찼습니다'라는 경고 메시지가 나타나고 인쇄가 중단된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Epson Korea 공식 지원 - XP-2106 폐잉크 패드 교체 안내",
+      "source_url": "https://www.epson.co.kr/faq/SPT_C11CH02507~EKL_FAQ_0878",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "엡손",
+        "category": "프린터/복합기",
+        "line": "Expression(XP 시리즈), L시리즈 정품무한 등 대부분의 잉크젯 프린터",
+        "years": "현행 모델 전반",
+        "region": "글로벌"
+      },
+      "caution": "폐잉크 패드는 사용자가 직접 교체할 수 없으며, 엡손 공식 서비스 센터 방문이 필수다. 교체 비용은 보증기간 내에도 유상 서비스로 적용된다.",
+      "cautionSource": "Epson Korea 공식 고객지원"
+    },
+    {
+      "id": "epson-ink-pad-replacement-service",
+      "claim": "엡손 프린터 폐잉크 패드 교체가 필요하면 한국엡손 고객지원센터(1566-3515)에 문의하거나, Epson Korea 웹사이트의 서비스센터 위치찾기에서 가까운 지점을 확인하고 방문하여 유상 서비스 신청을 한다. 교체 소요시간은 일반적으로 1~2시간이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Epson Korea 고객지원센터 안내",
+      "source_url": "https://www.epson.co.kr/faq/SPT_C11CH02507~EKL_FAQ_0878",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "엡손",
+        "category": "프린터/복합기",
+        "line": "Expression, L시리즈 등 전 라인",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "폐잉크 패드 교체는 인쇄량, 종이 종류, 헤드 청소 횟수에 따라 교체 시기가 달라진다. 일반 사무용 정도의 사용량이라면 대략 1~2년마다 필요할 수 있다.",
+      "cautionSource": "Epson Korea 공식 지원"
+    },
+    {
+      "id": "epson-nozzle-check-and-head-cleaning",
+      "claim": "엡손 프린터의 프린트 헤드가 막혔을 때는 먼저 노즐 검사(Nozzle Check)를 실행하여 A4 흰 용지에 컬러 패턴을 출력한다. 패턴에서 색상이 끊어져 있으면 프린터 헤드 청소를 진행한다. 청소는 제어판의 [유지보수] > [프린트 헤드 청소] 메뉴 또는 Windows 프린터 설정의 유지보수 탭에서 실행한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Epson Korea 공식 지원 - L850 프린트 헤드 청소",
+      "source_url": "https://www.epson.co.kr/faq/SPT_C11CE31506~EKL_FAQ_0377",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "엡손",
+        "category": "프린터/복합기",
+        "line": "Expression(XP), L시리즈, Stylus 등 대부분의 잉크젯 모델",
+        "years": "현행 모델",
+        "region": "글로벌"
+      },
+      "caution": "프린트 헤드 청소는 잉크를 소모하고 폐잉크 패드 수명을 단축시키므로, 노즐 검사에서 끊김이 있을 때만 진행해야 한다. 1회 청소 후에도 패턴이 안 나으면 최소 12시간 대기한 후 다시 노즐 검사를 진행한다. 최대 3회까지만 권장한다.",
+      "cautionSource": "Epson Korea 공식 지원"
+    },
+    {
+      "id": "epson-print-quality-bad-solution",
+      "claim": "엡손 프린터에서 인쇄가 흐리거나 줄이 생기는 경우, 노즐 검사 패턴에 끊김이 없다면 드라이버 설정에서 인쇄 품질을 '고품질' 또는 '최고 품질'로 올린다. 끊김이 있다면 프린트 헤드 청소를 진행하고, 청소 후에도 개선 없으면 최소 12시간 대기 후 재시도한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Epson Korea 공식 지원 - L4260 인쇄 품질 개선",
+      "source_url": "https://www.epson.co.kr/faq/SPT_C11CJ63515~EKL_FAQ_1612",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "엡손",
+        "category": "프린터/복합기",
+        "line": "L시리즈, Expression 전 라인",
+        "years": "현행 모델",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "epson-l-series-ink-level-reset",
+      "claim": "엡손 정품무한 L시리즈의 잉크 레벨을 초기화할 때는 EPSON Adjustment Program을 다운로드하여 실행하고, Check 버튼으로 현재 잉크 패드 상태를 먼저 확인한 후 필요시 각 색깔별 잉크 레벨을 초기화한다",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "사용자 보고 및 커뮤니티(공식 조정 프로그램 존재 확인, 세부 링크 미제공)",
+      "source_url": "https://www.epson.co.kr/faq/SPT_C11CJ60507~EKL_FAQ_1450",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "엡손",
+        "category": "프린터/복합기",
+        "line": "L시리즈 정품무한(L110, L121, L210, L220, L300, L310, L350, L360, L365, L385, L4160, L6270 등)",
+        "years": "2010~현행",
+        "region": "글로벌"
+      },
+      "caution": "EPSON Adjustment Program은 모델별로 상이하며, 공식 지원 페이지나 커뮤니티에서 자신의 정확한 모델명으로 검색하여 맞는 버전을 다운로드해야 한다. 잘못된 프로그램 사용 시 프린터 인식 오류가 발생할 수 있다.",
+      "cautionSource": "사용자 커뮤니티 보고"
+    },
+    {
+      "id": "canon-wifi-connection-basic-check",
+      "claim": "캐논 무선 프린터의 Wi-Fi 연결이 안 될 때는 먼저 프린터의 Wi-Fi 표시등을 확인한다. 표시등이 꺼져 있으면 Wi-Fi 버튼을 누르거나 제어판의 무선 LAN 메뉴에서 네트워크를 활성화한다. 그 후 프린터와 컴퓨터/스마트폰이 같은 Wi-Fi 네트워크(SSID)에 연결되어 있는지 확인한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Canon 공식 Wi-Fi Connection Assistant 가이드",
+      "source_url": "https://ij.manual.canon/ij/webmanual/NWDeviceSetupUtility/W/1.9/KO/NWDS/nwds_0004_2.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "캐논",
+        "category": "프린터/복합기",
+        "line": "무선 LAN 지원 PIXMA/MAXIFY 전 라인",
+        "years": "2010~현행",
+        "region": "글로벌"
+      },
+      "caution": "프린터가 2.4GHz Wi-Fi만 지원하는 경우가 많으므로, 5GHz 대역만 사용하는 라우터에는 연결되지 않는다. 라우터 설정에서 2.4GHz 대역을 활성화하거나 5GHz+2.4GHz 혼합 모드로 전환해야 한다.",
+      "cautionSource": "Canon 공식 무선 연결 가이드"
+    },
+    {
+      "id": "canon-wifi-wps-connection",
+      "claim": "캐논 프린터가 WPS(Wi-Fi Protected Setup)를 지원하는 경우, 프린터의 WPS 버튼을 누르면 약 2분간 연결 대기 모드가 활성화된다. 이 시간 내에 컴퓨터나 스마트폰의 Wi-Fi 설정에서 WPS 연결을 선택하면 자동으로 네트워크에 연결된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Canon 무선 LAN 설정 가이드",
+      "source_url": "https://ij.manual.canon/ij/webmanual/Manual/All/G3020%20series/KO/NTR/ntr_n_01_06.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "캐논",
+        "category": "프린터/복합기",
+        "line": "WPS 지원 무선 프린터(2010년대 이후 대부분)",
+        "years": "2010~현행",
+        "region": "글로벌"
+      },
+      "caution": "WPS는 간편하지만 보안 강도가 낮으므로, 공용 네트워크나 카페 등에서는 사용을 권장하지 않는다. 가정용 프라이빗 네트워크에서만 사용해야 한다.",
+      "cautionSource": "보안 모범 사례"
+    },
+    {
+      "id": "printer-scan-not-working-driver-reinstall",
+      "claim": "캐논·엡손 복합기의 스캔이 작동하지 않거나 컴퓨터가 스캐너를 인식하지 못할 때는, 먼저 Windows 장치 관리자에서 '이미징 장치' 항목을 확인한다. 모델명이 제대로 표시되지 않거나 느낌표로 표시되면, 해당 장치를 우클릭하여 '장치 제거'한 후 제조사 공식 웹사이트에서 최신 스캐너 드라이버를 다운로드하여 재설치한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Canon 사용자 안내서 - 스캔할 수 없음 트러블슈팅 및 Epson Korea 공식 지원",
+      "source_url": "https://oip.manual.canon/USRM2-6470-zz-DR-koKR/contents/dmu-trb-no_scan.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "복합기(프린터+스캐너)",
+        "line": "스캐너 기능 탑재 모든 모델",
+        "years": "현행 모델",
+        "region": "글로벌"
+      },
+      "caution": "드라이버 재설치 후 Windows를 반드시 재부팅해야 한다. USB 허브를 통해 연결한 경우 컴퓨터에 직접 연결하여 테스트해 본다.",
+      "cautionSource": "Canon 및 Epson 공식 지원"
+    },
+    {
+      "id": "printer-scan-cable-and-connection-check",
+      "claim": "스캔이 안 될 때는 USB 케이블이 프린터와 컴퓨터에 제대로 연결되어 있는지 먼저 확인한다. 무선 연결의 경우 프린터와 컴퓨터가 같은 네트워크에 연결되어 있고, 방화벽이 스캐너 통신을 차단하지 않는지 확인한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Canon 사용자 안내서 및 Epson Korea 지원 문서",
+      "source_url": "https://oip.manual.canon/USRM2-6470-zz-DR-koKR/contents/dmu-trb-no_scan.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "복합기",
+        "line": "스캐너 기능 탑재 모든 모델",
+        "years": "현행 모델",
+        "region": "글로벌"
+      }
+    }
+  ]
+}

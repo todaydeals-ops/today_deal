@@ -1,0 +1,346 @@
+{
+  "topic": "HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드",
+  "brand": "공통",
+  "article": "스마트가이드 예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "hdmi-arc-eArc-definition",
+    "tv-arc-port-identification",
+    "hdmi-arc-cable-connection-sequence",
+    "hdmi-cec-remote-control-function",
+    "optical-cable-arc-alternative",
+    "monitor-flickering-hdmi-version-issue"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "hdmi-2-0-vs-2-1-bandwidth",
+      "claim": "HDMI 2.0의 대역폭은 18Gbps, HDMI 2.1은 48Gbps로 약 2.67배 증가했다. 이는 HDMI 역사에서 단일 세대 중 가장 큰 증가다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HDMI Licensing Administrator 공식 스펙 문서",
+      "source_url": "https://www.hdmi.org/spec/premiumcable",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "HDMI 케이블",
+        "line": "2.0 vs 2.1",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "hdmi-2-0-resolution-refresh-rate",
+      "claim": "HDMI 2.0은 최대 4K 60Hz 해상도를 지원하며, 이는 일반 영화나 방송 시청용으로는 충분하지만 게이밍에는 제한적이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HDMI Licensing Administrator 공식 스펙",
+      "source_url": "https://www.hdmi.org/spec/premiumcable",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "HDMI 케이블",
+        "line": "2.0 지원 제품",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "hdmi-2-1-resolution-refresh-rate",
+      "claim": "HDMI 2.1은 4K 120Hz와 8K 60Hz를 지원한다. 4K@120Hz는 PlayStation 5와 Xbox Series X의 네이티브 출력 모드이며, 게이밍 모니터의 목표 주사율이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HDMI Licensing Administrator 공식 스펙 + PlayStation/Xbox 공식 가이드",
+      "source_url": "https://www.hdmi.org/spec2sub/ultrahdmicables",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "HDMI 케이블",
+        "line": "2.1 지원 제품",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "hdmi-2-1-gaming-features",
+      "claim": "HDMI 2.1은 VRR(가변 주사율), ALLM(자동 낮은 지연 모드), Dynamic HDR 같은 게이밍 기능을 제공한다. HDMI 2.0에는 이런 기능이 없다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HDMI Licensing Administrator 공식 스펙",
+      "source_url": "https://www.hdmi.org/spec2sub/ultrahdmicables",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "HDMI 케이블",
+        "line": "2.1 게이밍 기능",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "hdmi-2-1-eArc-support",
+      "claim": "HDMI 2.1은 eARC(Enhanced Audio Return Channel)를 지원하여 Dolby Atmos 및 DTS:X와 같은 무손실 서라운드 사운드를 지원한다. HDMI 2.0은 ARC만 지원한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HDMI Licensing Administrator 공식 스펙",
+      "source_url": "https://www.hdmi.org/spec2sub/ultrahdmicables",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "HDMI 케이블",
+        "line": "2.1 오디오 기능",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "hdmi-cable-certification-high-speed",
+      "claim": "High Speed HDMI 케이블은 기본 등급이며, 일반 Full HD 콘텐츠를 위한 케이블이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HDMI Licensing Administrator 공식 인증 기준",
+      "source_url": "https://www.hdmi.org/spec/premiumcable",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "HDMI 케이블",
+        "line": "High Speed 등급",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "hdmi-cable-certification-premium",
+      "claim": "Premium High Speed HDMI 케이블은 4K@60Hz, HDR, BT.2020 컬러를 지원하는 인증 등급이며, 위조방지 인증라벨을 부착한다. 140개 이상의 제조업체가 프리미엄 인증 프로그램에 참여하고 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HDMI Licensing Administrator 공식 Premium Cable 스펙",
+      "source_url": "https://www.hdmi.org/spec/premiumcable",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "HDMI 케이블",
+        "line": "Premium High Speed 등급",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "hdmi-cable-certification-ultra",
+      "claim": "Ultra High Speed HDMI 케이블은 4K@120Hz, 8K@60Hz를 지원하며 최대 48Gbps 전송 속도를 제공한다. HDR, VRR, eARC를 모두 지원한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HDMI Licensing Administrator 공식 Ultra High Speed Cable 스펙",
+      "source_url": "https://www.hdmi.org/spec2sub/ultrahdmicables",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "HDMI 케이블",
+        "line": "Ultra High Speed 등급",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "digital-signal-no-quality-difference",
+      "claim": "HDMI는 디지털 신호라서 정상적으로 동작하는 케이블이라면 가격이나 브랜드에 따라 화질 자체가 달라지지 않는다. 디지털 신호는 '되거나 안 되거나'이며, 화질 그라데이션이 없다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HDMI 기술 표준 및 기술 커뮤니티 일반 합의",
+      "source_url": "https://www.a-ha.io/questions/40e1ebd69febe6f1b6de350c722312fc",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "HDMI 케이블",
+        "line": "모든 HDMI 버전",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "금 도금 커넥터는 내부 산화 방지는 유리하지만, 케이블 가격 상승으로 이어지지 않는다. 화질을 원한다면 케이블 버전만 맞으면 된다"
+    },
+    {
+      "id": "expensive-cable-durability-not-quality",
+      "claim": "높은 가격의 HDMI 케이블이 더 나은 이유는 화질이 아니라 내구성이다. 튼튼하게 만들어진 고가의 케이블은 커넥터 손상 가능성이 적고 품질검사도 확실하다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "기술 커뮤니티 (클리앙, 쿨엔조이 등)",
+      "source_url": "https://www.clien.net/service/board/park/9254135",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "HDMI 케이블",
+        "line": "모든 HDMI 버전",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "hdmi-cable-length-passive-copper-limit",
+      "claim": "패시브 구리 HDMI 2.1 케이블의 안정적인 전송 거리는 최대 3미터로 제한된다. 1080p는 15~25피트, 4K는 10~15피트까지 가능하지만, 거리가 길어질수록 신호 감쇠 위험이 증가한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HDMI 케이블 제조사 기술 가이드",
+      "source_url": "https://www.jmtjm.com/ko/news/full-analysis-of-hdmi-cable-length-choose-the-right-cable-for-lossless-ultra-long-distance-transmission.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "HDMI 케이블",
+        "line": "패시브 구리 케이블",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "거리가 필요한 경우 액티브(부스터 내장) 케이블을 선택하거나 광 HDMI를 사용해야 한다"
+    },
+    {
+      "id": "hdmi-aoc-optical-cable-long-distance",
+      "claim": "광 HDMI 케이블(AOC - Active Optical Cable)은 신호 저하 없이 최대 100미터까지 전송할 수 있다. 일부 익스텐더는 4K 해상도를 10km 범위에서 전송할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "광 HDMI 제조사 기술 스펙",
+      "source_url": "https://cabletimetech.com/ko/blogs/knowledge/maximizing-hdmi-cable-length-without-sacrificing-quality",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "HDMI 케이블",
+        "line": "광 HDMI (AOC)",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "광 HDMI는 구리 케이블보다 비싸고, 구부림에 취약할 수 있으므로 장거리 배치 시에만 추천된다"
+    },
+    {
+      "id": "ps5-xbox-series-x-4k-120hz-hdmi-2-1-requirement",
+      "claim": "PlayStation 5와 Xbox Series X는 4K@120Hz 게이밍을 위해 HDMI 2.1 케이블이 필수다. HDMI 2.0이나 그 이하의 케이블로는 4K 120Hz 신호를 전송할 수 없다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PlayStation/Xbox 공식 게이밍 가이드",
+      "source_url": "https://global.aorus.com/blog-detail.php?i=964",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 콘솔",
+        "line": "PlayStation 5, Xbox Series X",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "4K 120Hz는 게임에 따라 지원 여부가 다르므로, 플레이할 게임이 지원하는지 먼저 확인이 필요하다",
+      "cautionSource": "PlayStation/Xbox 공식 게임 타이틀별 지원 현황 안내"
+    },
+    {
+      "id": "pc-gaming-hdmi-2-1-high-refresh-rate",
+      "claim": "PC 게이밍에서 고주사율(144Hz, 240Hz 이상)과 고해상도(4K)를 동시에 원하면 HDMI 2.1 케이블이 필요하다. 일반적인 4K 60Hz 게이밍은 HDMI 2.0으로도 충분하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HDMI Licensing Administrator 공식 스펙 + 기술 커뮤니티",
+      "source_url": "https://www.cablematters.com/Blog/HDMI/best-hdmi-cable-for-gaming",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 게이밍",
+        "line": "고주사율 게이밍 모니터",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "soundbar-eArc-hdmi-2-1-cable",
+      "claim": "사운드바에서 eARC를 사용하려면 HDMI 2.1 Ultra High Speed 인증 케이블이 권장된다. eARC는 Dolby Atmos, DTS:X 같은 무손실 오디오를 지원하므로 오디오 품질을 우선한다면 2.1 케이블 사용이 필수다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HDMI Licensing Administrator 공식 eARC 스펙 + 사운드바 제조사 가이드",
+      "source_url": "https://www.hdmi.org/spec2sub/ultrahdmicables",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "사운드바",
+        "line": "eARC 지원 모델",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "일반적인 ARC(HDMI 2.0)에서는 압축 오디오만 지원하지만, eARC는 무손실 음질을 지원하므로 음성 품질이 중요하면 반드시 eARC 대응 TV와 2.1 케이블을 사용해야 한다",
+      "cautionSource": "HDMI Licensing Administrator 공식 eARC 오디오 형식 규격"
+    },
+    {
+      "id": "hdmi-certification-logo-check",
+      "claim": "정품 HDMI 케이블은 HDMI Licensing Administrator의 인증을 받으며, 패키지에 'Certified HDMI', 'Premium High Speed', 또는 'Ultra High Speed' 로고가 부착되어 있다. 로고가 없으면 미인증 호환 케이블이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HDMI Licensing Administrator 공식 인증 기준",
+      "source_url": "https://www.hdmi.org/spec/premiumcable",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "HDMI 케이블",
+        "line": "인증 제품",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "미인증 호환 케이블은 저가이지만 신뢰성이 낮을 수 있으므로, 중요한 기기(게이밍 콘솔, 사운드바)에는 인증 제품 사용을 권장한다"
+    },
+    {
+      "id": "hdmi-cable-testing-forum-atc",
+      "claim": "모든 인증된 HDMI 케이블은 길이와 관계없이 HDMI Forum Authorized Testing Center(Forum ATC)에서 실제 테스트를 통과해야 한다. 이 테스트는 케이블의 신호 전송 능력을 검증한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HDMI Licensing Administrator 공식 인증 프로세스",
+      "source_url": "https://www.hdmi.org/spec2sub/ultrahdmicables",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "HDMI 케이블",
+        "line": "인증 케이블",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "hdmi-cable-selection-guide-4k-tv",
+      "claim": "일반적인 4K TV 시청용으로는 Premium High Speed(HDMI 2.0/2.1) 인증 케이블이면 충분하다. 2~3미터 이내 거리에서 정상 동작한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HDMI Licensing Administrator 공식 스펙 가이드",
+      "source_url": "https://www.hdmi.org/spec/premiumcable",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "HDMI 케이블",
+        "line": "일반 TV 시청",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "hdmi-cable-selection-guide-gaming-monitor",
+      "claim": "고주사율 게이밍 모니터(144Hz 이상, 4K)를 위해서는 Ultra High Speed HDMI 2.1 인증 케이블이 필수다. 1.8미터(약 6피트) 이내 길이의 정품 인증 케이블 사용을 권장한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HDMI Licensing Administrator + 게이밍 모니터 제조사 가이드",
+      "source_url": "https://www.hdmi.org/spec2sub/ultrahdmicables",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 모니터",
+        "line": "144Hz 이상",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "hdmi-cable-selection-guide-soundbar-earc",
+      "claim": "사운드바 eARC 연결용으로는 Ultra High Speed HDMI 2.1 인증 케이블을 사용해야 한다. 케이블 길이는 TV와 사운드바 사이의 거리에 맞춰 1~2미터 선택이 일반적이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사운드바 제조사 가이드 + HDMI Licensing Administrator",
+      "source_url": "https://www.hdmi.org/spec2sub/ultrahdmicables",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "사운드바",
+        "line": "eARC 연결",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    }
+  ]
+}

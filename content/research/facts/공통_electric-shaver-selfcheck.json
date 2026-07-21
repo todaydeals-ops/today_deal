@@ -1,0 +1,378 @@
+{
+  "topic": "전기면도기 자가점검·날 관리·물세척·회전식vs왕복식·충전 불량",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "charging-adapter-damage-check",
+    "power-outlet-verification",
+    "travel-charger-dual-voltage"
+  ],
+  "declined_facts": [
+    {
+      "id": "charging-inductive-position",
+      "why": "전기칫솔 유도충전 특화 팩트. 면도기는 유선충전과 유도충전이 혼재되어 있고, 칫솔과 면도기의 충전 접점 구조가 다르므로 별도 조사 필요."
+    },
+    {
+      "id": "charger-compatibility-models",
+      "why": "필립스 소닉케어 칫솔 충전기 호환성. 면도기는 칫솔과 제품군이 다르고 충전 방식도 다르므로 재사용 불가."
+    },
+    {
+      "id": "brush-head-replacement-3months",
+      "why": "전동칫솔 브러시 헤드 교체 주기(3개월). 면도기 날은 회전식/왕복식에 따라 12~24개월로 다르므로 재사용 불가."
+    },
+    {
+      "id": "brush-head-wear-indicator-philips",
+      "why": "필립스 소닉케어 칫솔 마모 지시자(파란색). 면도기는 마모 표시 방식이 다르므로 재사용 불가."
+    },
+    {
+      "id": "waterproof-rating-ipx",
+      "why": "전동칫솔의 IPX7~IPX8 방수 등급. 면도기는 물세척 가능 여부가 모델별로 다르고, 아이콘(수도꼭지/욕조)으로 표기되므로 별도 조사 필요."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "blade-replacement-cycle-philips-rotation",
+      "claim": "필립스 회전식 전기면도기의 쉐이빙 헤드는 최상의 성능 유지를 위해 24개월(2년)마다 교체하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips 공식 제품 페이지",
+      "source_url": "https://www.philips.co.kr/c-m-pe/accessories-and-replacements",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "전기면도기",
+        "line": "회전식 (3000, 5000, 7000 시리즈 등)",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "2년 동안 약 900만 개의 수염을 면도하므로, 날이 무뎌지기 시작하면 피부 자극 증가, 면도 성능 저하, 면도 시간 증가 등의 징후가 나타난다. 이런 증상이 보이면 권장 주기보다 먼저 교체 고려.",
+      "cautionSource": "Philips 공식 제품 정보"
+    },
+    {
+      "id": "blade-replacement-cycle-braun-reciprocating",
+      "claim": "브라운 왕복식 전기면도기의 면도망과 면도날은 100% 성능 유지를 위해 18개월마다 교체할 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Braun 공식 제품 안내",
+      "source_url": "https://braun.kr/ko-kr/male-grooming/shavers-replacement-parts",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "브라운",
+        "category": "전기면도기",
+        "line": "왕복식 (Series 3, 5, 7, 9 등)",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "면도망과 면도날은 가위의 두 날처럼 작동하므로 반복 사용으로 마모된다. 18개월을 넘기면 성능이 크게 저하된다. 최소한 2년 전후로는 교체하는 것이 좋다.",
+      "cautionSource": "Braun 공식 문서"
+    },
+    {
+      "id": "rotation-vs-reciprocating-mechanism",
+      "claim": "회전식(필립스)은 날이 원을 그리며 회전하고, 왕복식(브라운·파나소닉)은 날이 좌우로 왕복 진동한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "다나와 면도기 비교 가이드, 제조사 제품 설명",
+      "source_url": "https://v.daum.net/v/zhPsmwlohj?f=m",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전기면도기",
+        "line": "회전식(필립스) vs 왕복식(브라운·파나소닉)",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "rotation-vs-reciprocating-sensitivity",
+      "claim": "회전식(필립스)은 원형 헤드와 회전 방식으로 피부 자극이 적고, 왕복식(브라운·파나소닉)은 날면도기와 비슷한 방식으로 굵은 수염을 더 깊게 깎는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제조사 제품 특징 설명, 사용자 비교 평가",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/guide/%EC%A0%84%EA%B8%B0%EB%A9%B4%EB%8F%84%EA%B8%B0",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전기면도기",
+        "line": "회전식 vs 왕복식",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "회전식은 적응 시간이 필요하고, 피부가 민감한 사용자에게 더 적합하다. 왕복식은 빠르게 자라는 수염이나 굵은 수염을 선호하는 사용자에게 더 효과적이다.",
+      "cautionSource": "사용자 경험 및 제조사 특징 설명"
+    },
+    {
+      "id": "blade-wear-symptom-poor-shaving",
+      "claim": "전기면도기 날이 마모되면 '안 깎인다'는 것이 고장이 아니라 일반적인 수명 증상이며, 이때는 깎아낼 때 당김, 수염이 제대로 잘리지 않음, 시간이 더 오래 걸림 등이 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips 공식 FAQ, Braun 공식 제품 안내",
+      "source_url": "https://www.philips.co.kr/c-m-pe/accessories-and-replacements",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전기면도기",
+        "line": "회전식·왕복식 모두",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "이 증상이 보이면 배터리 문제나 모터 고장이 아니라 **날 교체 신호**다. 날을 교체하면 성능이 회복된다.",
+      "cautionSource": "제조사 공식 문서"
+    },
+    {
+      "id": "water-washable-icon-check-philips",
+      "claim": "필립스 면도기의 물세척 가능 여부는 핸들에 인쇄된 아이콘으로 확인한다. 수도꼭지 기호는 물세척 가능, X표시 수도꼭지는 물세척 불가, 욕조 기호는 샤워/목욕 중 사용 가능을 의미한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips 공식 고객지원",
+      "source_url": "https://www.philips.co.kr/c-f/XC000004291/%ED%95%84%EB%A6%BD%EC%8A%A4-%EB%A9%B4%EB%8F%84%EA%B8%B0%EC%97%90-%EB%82%98%ED%83%80%EB%82%98%EB%8A%94-%EA%B8%B0%ED%98%B8%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%84-%EC%9D%98%EB%AF%B8%ED%95%A9%EB%8B%88%EA%B9%8C",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "전기면도기",
+        "line": "회전식 전 라인",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "모델마다 물세척 가능 여부가 다르므로, 반드시 핸들 뒷면의 아이콘을 확인한 후 세척해야 한다. X표시 수도꼭지가 있는 제품을 물로 세척하면 손상 위험.",
+      "cautionSource": "Philips 공식 문서"
+    },
+    {
+      "id": "water-washing-method-philips",
+      "claim": "필립스 회전식 면도기의 물세척 방법은, 전원을 켠 상태로 쉐이빙 유닛 전체를 따뜻한 흐르는 물에 헹궈진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips 공식 고객지원",
+      "source_url": "https://www.philips.co.kr/c-f/XC000004469/%ED%95%84%EB%A6%BD%EC%8A%A4-%EB%A9%B4%EB%8F%84%EA%B8%B0%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%B2%AD%EC%86%8C%ED%95%A9%EB%8B%88%EA%B9%8C",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "전기면도기",
+        "line": "회전식 방수 모델",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "이 방법은 방수 모델(수도꼭지 또는 욕조 기호)에만 해당. 물세척 불가 모델은 전원을 끈 후 스테인레스강 숟가락이나 제공된 청소용 브러시로만 청소.",
+      "cautionSource": "Philips 공식 고객지원"
+    },
+    {
+      "id": "deep-cleaning-monthly-philips",
+      "claim": "필립스 회전식 면도기는 월 1회 깊은 청소를 권장하며, 이때 쉐이빙 헤드를 분리하여 안쪽날과 바깥날을 따로 물로 헹구고 완전히 자연 건조시킨 후 사용해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips 공식 고객지원",
+      "source_url": "https://www.philips.co.kr/c-f/XC000004469/%ED%95%84%EB%A6%BD%EC%8A%A4-%EB%A9%B4%EB%8F%84%EA%B8%B0%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%B2%AD%EC%86%8C%ED%95%A9%EB%8B%88%EA%B9%8C",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "전기면도기",
+        "line": "회전식 방수 모델",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "분리 후 조립할 때 각 커터와 보호대를 올바르게 짝지어 맞춰야 하고, 면도날이 아래를 향하도록 안쪽날을 바깥날 안에 넣은 후 고정 링으로 단단히 고정해야 한다.",
+      "cautionSource": "Philips 공식 고객지원"
+    },
+    {
+      "id": "cleaning-station-braun-usage",
+      "claim": "브라운 면도기 세척스테이션은 면도 후 면도기를 청결하고 최상의 상태로 유지하는 데 사용되며, 면도기를 세척스테이션에 넣고 청소 버튼을 누르면 자동으로 내부 잔여물과 미세한 털 조각을 제거하고 소독과 윤활을 동시에 처리한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Braun 공식 제품 안내",
+      "source_url": "https://braun.kr/ko-kr/male-grooming/shavers-replacement-parts",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "브라운",
+        "category": "전기면도기",
+        "line": "왕복식 모델 중 세척스테이션 포함 제품",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "세척스테이션은 선택 사항이며 일부 모델에만 제공된다. 세척스테이션의 소음은 면도기 본체 모터가 작동하며 세척되므로 면도기 본체 소음과 비례하여 커질 수 있다.",
+      "cautionSource": "사용자 보고"
+    },
+    {
+      "id": "philips-smartclean-system",
+      "claim": "필립스 SmartClean 시스템은 필립스의 자동 세척 기능을 제공하는 옵션 액세서리로, 정기적 청소를 간편하게 할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips 공식 고객지원",
+      "source_url": "https://www.philips.co.kr/c-f/XC000004469/%ED%95%84%EB%A6%BD%EC%8A%A4-%EB%A9%B4%EB%8F%84%EA%B8%B0%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%B2%AD%EC%86%8C%ED%95%A9%EB%8B%88%EA%B9%8C",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "전기면도기",
+        "line": "회전식 모델 중 SmartClean 호환 제품",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "SmartClean은 일부 모델에만 호환되며, 구매 시 호환성 확인이 필요하다. 필립스 공식 웹사이트 또는 제품 설명서에서 확인 가능.",
+      "cautionSource": "제품 명세"
+    },
+    {
+      "id": "noise-increase-cause-assembly",
+      "claim": "필립스 회전식 면도기에서 큰 소음이 발생하는 주요 원인은 잘못된 조립이며, 세척 후 재조립할 때 각 커터와 보호대를 올바르게 짝지어 고정하지 않으면 사용 중 덜컹거리는 소리가 난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips 공식 고객지원",
+      "source_url": "https://www.philips.co.kr/c-t/XC000020041",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "전기면도기",
+        "line": "회전식 모델 중 고정 링이 있는 모델",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "올바른 조립이 확실하지 않으면 제품 사용 설명서의 조립 그림이나 공식 영상을 참고해야 한다. 올바르게 조립했는데도 소음이 계속되면 내부 손상이 있을 수 있으므로 필립스에 문의해 수리 또는 교체를 요청.",
+      "cautionSource": "Philips 공식 고객지원"
+    },
+    {
+      "id": "noise-increase-cause-blade-wear",
+      "claim": "전기면도기 소음이 점차 커지면 면도날이 마모되고 있다는 신호다. 면도망과 면도날은 반복 사용으로 마모되면서 성능이 저하되고 소음이 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Braun 공식 제품 안내, 웹 가이드",
+      "source_url": "https://nosearch.com/contents/guide/living/electric_razor",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전기면도기",
+        "line": "회전식·왕복식 모두",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "소음 증가는 날 교체 시기가 다가왔다는 신호다. 권장 교체 주기(필립스 24개월, 브라운 18개월)에 도달하거나 이미 지났다면 새로운 헤드로 교체해 성능과 조용함을 회복할 수 있다.",
+      "cautionSource": "제조사 공식 문서"
+    },
+    {
+      "id": "skin-irritation-pressure",
+      "claim": "전기면도기 사용 시 피부 자극의 가장 흔한 원인은 면도기를 세게 누르는 것이다. 면도기를 피부에 부드럽게 스치듯 사용해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티, 전기면도기 가이드",
+      "source_url": "https://prodinformation.com/%EC%A0%84%EA%B8%B0%EB%A9%B4%EB%8F%84%EA%B8%B0-%EC%B2%98%EC%9D%8C/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전기면도기",
+        "line": "회전식·왕복식 모두",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "세게 누르면 오히려 효과가 떨어지고 피부가 눌리면서 자극이 증가한다. 피부에 압력을 주지 않는 것이 중요.",
+      "cautionSource": "사용자 보고"
+    },
+    {
+      "id": "skin-irritation-blade-dulling",
+      "claim": "칼날이 예리하지 않거나 진동 수가 충분하지 않으면 수염이 제대로 잘리지 않고 잡아 뜯어지는 듯한 느낌이 들면서 피부 자극이 심해진다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 경험담, 전기면도기 가이드",
+      "source_url": "https://prodinformation.com/%EC%A0%84%EA%B8%B0%EB%A9%B4%EB%8F%84%EA%B8%B0-%EC%B2%98%EC%9D%8C/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전기면도기",
+        "line": "회전식·왕복식 모두",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "이 증상이 나타나면 날 교체가 필요하거나, 배터리가 거의 방전되어 진동 수가 낮은 것일 수 있다. 먼저 완전히 충전한 후 다시 시도해 보고, 그래도 개선되지 않으면 날 교체 시기로 봐야 한다.",
+      "cautionSource": "사용자 경험"
+    },
+    {
+      "id": "skin-irritation-lubrication",
+      "claim": "세안 후 물기가 조금 남은 상태에서 면도하거나, 프리셰이브 로션이나 쉐이빙 폼/젤을 사용하면 윤활 성분이 날과 피부 사이 마찰을 줄여 피부 자극을 크게 줄일 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 경험담, 면도기 가이드",
+      "source_url": "https://prodinformation.com/%EC%A0%84%EA%B8%B0%EB%A9%B4%EB%8F%84%EA%B8%B0-%EC%B2%98%EC%9D%8C/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전기면도기",
+        "line": "회전식·왕복식 모두",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "회전식(필립스)는 아기름(윤활 성분)이 너무 많으면 피부 표면이 밀리면서 면도가 제대로 되지 않을 수 있다. 가볍게 바르는 정도가 적절.",
+      "cautionSource": "사용자 경험"
+    },
+    {
+      "id": "charging-fails-common-checks",
+      "claim": "전기면도기가 충전되지 않을 때는 먼저 충전 어댑터와 케이블에 물리적 손상이 없는지 확인하고, 사용 중인 콘센트가 정상 작동하는지 다른 전자제품으로 테스트해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips 공식 고객지원, Oral-B 공식 매뉴얼",
+      "source_url": "https://www.philips.co.kr/c-t/XC000016868",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전기면도기",
+        "line": "전체",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "욕실 콘센트는 스위치로 제어되기도 하므로 벽면 스위치도 함께 확인해야 한다. 손상된 어댑터 사용은 감전·화재 위험이 있으므로 즉시 사용을 중단.",
+      "cautionSource": "안전 경고"
+    },
+    {
+      "id": "stops-mid-use-battery-check",
+      "claim": "전기면도기가 사용 중 멈추면 배터리 부족일 가능성이 높으므로, 먼저 완전히 충전한 후 다시 사용해 봐야 한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 보고 및 제조사 트러블슈팅",
+      "source_url": "https://www.philips.co.kr/c-t/XC000004506/%ED%95%84%EB%A6%BD%EC%8A%A4-%EB%A9%B4%EB%8F%84%EA%B8%B0%EA%B0%80-%EC%9E%91%EB%8F%99%ED%95%98%EC%A7%80-%EC%95%8A%EC%9D%8C",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전기면도기",
+        "line": "회전식·왕복식 모두",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "충전 후에도 계속 멈추면 배터리 수명 종료, 모터 고장, 또는 내부 배선 문제일 수 있다. 이 경우 제조사 고객센터에 문의해 수리 또는 교체를 요청.",
+      "cautionSource": "사용자 경험 및 제조사 안내"
+    },
+    {
+      "id": "travel-voltage-confirmation",
+      "claim": "해외 여행 시 전기면도기를 사용하려면 충전기의 입력 전압 범위를 반드시 확인해야 한다. 110-220V 병기된 제품은 돼지코 어댑터로 사용 가능하지만, 110-130V로만 표시되면 220V 국가에서 사용하면 안 된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "전자제품 안내, 해외직구 사용자 경험",
+      "source_url": "http://m.enuri.com/knowcom/detail.jsp?kbno=997751",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전기면도기",
+        "line": "전체",
+        "years": "2010~",
+        "region": "전세계"
+      },
+      "caution": "충전기 뒷면 또는 설명서에서 입력 전압을 반드시 확인. 110V만 지원하는 제품을 220V 국가에서 충전하면 고장이나 화재 위험이 있다.",
+      "cautionSource": "전자제품 안내"
+    },
+    {
+      "id": "warranty-two-years-standard",
+      "claim": "필립스와 브라운 전기면도기는 구매 후 2년의 제조사 보증 기간을 제공한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips·Braun 공식 웹사이트",
+      "source_url": "https://www.philips.co.kr/c-m-pe/accessories-and-replacements",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전기면도기",
+        "line": "필립스 회전식, 브라운 왕복식",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "보증 기간 내 제조 결함에 대해서만 교환·수리 가능. 사용자 부주의, 손상, 개조는 보증 대상 제외.",
+      "cautionSource": "제조사 보증 정책"
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "topic": "삼성 비스포크 김치플러스 김치냉장고 에러코드·냉각 불량 자가점검",
+  "brand": "삼성",
+  "article": "samsung-kimchi-fridge-selfcheck",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "winia-dimchae-structured-cooling-lid-type",
+      "why": "위니아 딤채는 뚜껑형에 직접냉각 방식을 쓰는데, 삼성 비스포크 김치냉장고의 냉각 구조 정보가 공식 문서에서 확인되지 않았으므로 위니아 구조를 그대로 적용할 수 없음"
+    },
+    {
+      "id": "winia-dimchae-structured-cooling-stand-type",
+      "why": "위니아 딤채 스탠드형의 4by4 독립냉각 시스템은 위니아 고유 기술로, 삼성 스탠드형이 같은 구조를 쓴다는 근거가 없음"
+    },
+    {
+      "id": "winia-dimchae-post-power-outage-recovery",
+      "why": "위니아의 정전 후 복구 시간(약 10분)은 위니아 기준이며, 삼성 김치냉장고의 복구 시간은 다를 수 있으므로 별도 조사 필요"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "samsung-kimchi-fridge-errorcode-ho-no",
+      "claim": "삼성 김치냉장고 HO 에러코드는 상단 온도 센서 이상을, nO 에러코드는 중단 온도 센서 이상을 나타내며, 온도 디스플레이에서 깜박거려 표시된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 김치냉장고] 온도 표시부에서 HO, nO 에러가 깜박거려요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/21100",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "비스포크 김치플러스·스탠드형", "years": "2020년 이후", "region": "KR" },
+      "caution": "이 에러가 표시되면 센서 불량 또는 냉각 시스템 문제가 의심되므로 전문가 점검이 필요하다.",
+      "cautionSource": "삼성전자서비스 공식 자료에서 '전문가 점검 필요' 명시"
+    },
+    {
+      "id": "samsung-kimchi-fridge-errorcode-lo-ro",
+      "claim": "삼성 김치냉장고 LO와 RO 에러코드는 좌우측 센서 불량으로 온도 감지가 되지 않는 상태를 나타내며, 이 경우 냉장고가 약냉 상태로 작동하여 김치가 쉽게 상하거나 숙성이 빨라진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 김치냉장고 에러코드 자가진단 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/21100",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "비스포크 김치플러스·스탠드형", "years": "전 연식", "region": "KR" },
+      "caution": "LO와 RO가 동시에 점멸하면 양쪽 모두 온도 도달이 안 된 상태로, 이는 빠른 전문 점검이 필요한 신호다.",
+      "cautionSource": "삼성 고장진단 자료에서 동시 점멸의 의미 명시"
+    },
+    {
+      "id": "samsung-kimchi-fridge-errorcode-ll-rr",
+      "claim": "삼성 김치냉장고 LL과 RR 에러코드가 동시에 점멸하는 경우는 좌우측 모두 온도 도달이 안 된 상태를 나타낸다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 김치냉장고 에러코드 자가진단 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/21100",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "비스포크 김치플러스·스탠드형", "years": "전 연식", "region": "KR" },
+      "caution": "이 에러는 냉각 시스템의 심각한 이상을 뜻하므로 즉시 전문 점검을 받아야 한다.",
+      "cautionSource": "삼성 자가진단 안내"
+    },
+    {
+      "id": "samsung-kimchi-fridge-errorcode-h5-n5",
+      "claim": "삼성 김치냉장고 H5와 n5 에러코드는 센서 및 내부 이상 온도 감지를 나타낸다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 김치냉장고 에러코드 자가진단 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/21100",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "비스포크 김치플러스·스탠드형", "years": "전 연식", "region": "KR" },
+      "caution": "에러 표시에 따라 원인을 달리 확인해야 한다.",
+      "cautionSource": "삼성 공식 에러코드 가이드"
+    },
+    {
+      "id": "samsung-kimchi-fridge-cooling-weak-temperature-adjustment",
+      "claim": "삼성 김치냉장고 냉기가 약할 때 가장 먼저 시도할 방법은 현재 설정에서 한 단계 높게 조정하는 것이다 (예: 약냉 → 표준 → 강냉)",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 김치냉장고] 스탠드형, 냉기가 약해서 식품이 시원하지 않아요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/36330",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "비스포크 김치플러스·스탠드형", "years": "전 연식", "region": "KR" },
+      "caution": "단순히 한 단계 높이는 것만으로 해결되는 경우가 많으니 먼저 시도해볼 것.",
+      "cautionSource": "삼성 자가점검 가이드 1순위 조치"
+    },
+    {
+      "id": "samsung-kimchi-fridge-cooling-weak-storage-volume",
+      "claim": "삼성 김치냉장고 냉기가 약한 경우 저장 식품의 양이 과다하지는 않은지 확인해야 한다 (과다 저장 시 냉각 효율이 저하됨)",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 김치냉장고] 스탠드형, 냉기가 약해서 식품이 시원하지 않아요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/36330",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "비스포크 김치플러스·스탠드형", "years": "전 연식", "region": "KR" },
+      "caution": "저장 식품이 많으면 냉기 순환이 방해되므로 적정 양을 유지할 것.",
+      "cautionSource": "삼성 자가점검 가이드"
+    },
+    {
+      "id": "samsung-kimchi-fridge-cooling-weak-frost-check",
+      "claim": "삼성 김치냉장고 냉기가 약할 때는 냉장고 벽면에 서리(어얼음)가 쌓여 있는지 확인해야 하며, 벽면에 서리가 있고 식품이 차갑다면 냉각 시스템은 정상 작동 중이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 김치냉장고] 스탠드형, 냉기가 약해서 식품이 시원하지 않아요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/36330",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "비스포크 김치플러스·스탠드형", "years": "전 연식", "region": "KR" },
+      "caution": "벽면 서리 여부로 냉각 시스템의 정상 여부를 빠르게 판단할 수 있다.",
+      "cautionSource": "삼성 자가점검 가이드"
+    },
+    {
+      "id": "samsung-kimchi-fridge-door-seal-check",
+      "claim": "삼성 김치냉장고 냉각이 약하거나 식품이 빨리 물러지는 증상이 나타나면 도어가 완전히 밀폐되는지 확인해야 하며, 도어 밀폐가 불완전하면 냉기 손실로 내부 온도가 높아진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 김치냉장고 온도 관리 및 보관 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/36330",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "비스포크 김치플러스·뚜껑형·스탠드형", "years": "전 연식", "region": "KR" },
+      "caution": "도어를 자주 여닫으면 내부 온도가 올라가므로 여닫는 횟수를 줄일 것.",
+      "cautionSource": "삼성 공식 보관 가이드"
+    },
+    {
+      "id": "samsung-kimchi-fridge-storage-temperature-standard",
+      "claim": "삼성 김치냉장고의 표준 소금 함량 김치(1.5% 이하) 보관 온도는 강냉 -1.8°C, 표준 -1.3°C, 약냉 -0.8°C이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 김치냉장고] 김치 종류별 보관 온도가 궁금합니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/36343",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "비스포크 김치플러스·전 모델", "years": "전 연식", "region": "KR" },
+      "caution": "이 온도는 표준 소금 함량 기준이며, 소금 함량에 따라 조정해야 한다.",
+      "cautionSource": "삼성 공식 온도 설정 가이드에서 소금 함량별 기준 명시"
+    },
+    {
+      "id": "samsung-kimchi-fridge-storage-temperature-low-salt",
+      "claim": "삼성 김치냉장고의 저염 김치(0.7% 소금) 보관 온도는 강냉 -1.0°C, 표준 -0.5°C, 약냉 0.0°C이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 김치냉장고] 김치 종류별 보관 온도가 궁금합니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/36343",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "비스포크 김치플러스·전 모델", "years": "전 연식", "region": "KR" },
+      "caution": "저염 김치는 1~2주 내에 동결되지 않도록 주의 깊게 모니터링해야 한다.",
+      "cautionSource": "삼성 공식 온도 설정 가이드"
+    },
+    {
+      "id": "samsung-kimchi-fridge-ice-crystal-prevention",
+      "claim": "삼성 김치냉장고에서 보관 중인 김치에 얼음 결정이 생기면 더 따뜻한 온도 설정(강냉 → 표준 → 약냉)으로 조정해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 김치냉장고] 김치 종류별 보관 온도가 궁금합니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/36343",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "비스포크 김치플러스·전 모델", "years": "전 연식", "region": "KR" },
+      "caution": "얼음 결정은 김치 식감과 맛을 크게 손상시키므로 온도 설정이 매우 중요하다.",
+      "cautionSource": "삼성 공식 보관 가이드"
+    },
+    {
+      "id": "samsung-kimchi-fridge-temperature-control-method",
+      "claim": "삼성 김치냉장고 온도조절은 오른쪽 방향 화살표 버튼으로 원하는 칸(상칸/중칸/하칸)을 선택한 후 OK 버튼을 눌러 저장하는 방식이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 김치냉장고] 김치냉장고 온도조절 방법을 알고 싶어요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/22714",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "비스포크 김치플러스·스탠드형", "years": "전 연식", "region": "KR" },
+      "caution": "스탠드형·뚜껑형·디스플레이 타입별로 조작 방법이 다를 수 있으므로 제품 설명서를 확인할 것.",
+      "cautionSource": "삼성 공식 조작 가이드에서 모델별 차이 명시"
+    },
+    {
+      "id": "samsung-kimchi-fridge-power-reset-method",
+      "claim": "삼성 김치냉장고에서 일시적 오류가 발생했을 때는 전원 코드를 뽑았다가 다시 연결하는 방식의 전원 리셋을 시도할 수 있으며, 삼성 고객센터에서 대부분의 경우 이 방법으로 해결을 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 김치냉장고 자가진단 및 리셋 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/21100",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "비스포크 김치플러스·전 모델", "years": "전 연식", "region": "KR" },
+      "caution": "리셋 후 약 16시간 동안 냉장고가 온도 센서를 재감지하므로, 그 기간 동안 에러가 없어지는지 다시 확인해야 한다.",
+      "cautionSource": "삼성 공식 리셋 안내에서 16시간 감지 기간 명시"
+    },
+    {
+      "id": "samsung-kimchi-fridge-errorcode-erased-after-reset",
+      "claim": "삼성 김치냉장고를 전원 리셋하면 디스플레이에 표시되던 에러코드도 함께 지워져서 정상으로 보이는 경우가 있지만, 실제 기능적 이상이 있다면 리셋 후 약 16시간이 지나면서 다시 에러가 표시된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 김치냉장고 자가진단 및 리셋 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/21100",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "비스포크 김치플러스·전 모델", "years": "전 연식", "region": "KR" },
+      "caution": "리셋 후 에러가 사라졌다고 해서 완치된 것은 아니며, 16시간 대기 후 재확인이 필수다.",
+      "cautionSource": "삼성 공식 리셋 가이드에서 '에러 지워짐 vs 기능 이상' 차이 명시"
+    },
+    {
+      "id": "samsung-customer-service-phone-kimchi",
+      "claim": "삼성 김치냉장고 관련 문제는 삼성전자서비스 대표 고객센터 1588-3366으로 전화하여 상담받을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 공식 고객센터 연락처",
+      "source_url": "https://www.samsungsvc.co.kr/solution/21100",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "비스포크 김치플러스·전 모델", "years": "전 연식", "region": "KR" },
+      "caution": "운영 시간 및 서비스 예약은 공식 웹사이트나 전화로 확인할 것.",
+      "cautionSource": "삼성 공식 안내"
+    }
+  ]
+}

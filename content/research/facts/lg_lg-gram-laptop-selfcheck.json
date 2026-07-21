@@ -1,0 +1,433 @@
+{
+  "topic": "LG 그램 노트북 안 켜짐·발열·배터리 자가점검",
+  "brand": "LG",
+  "article": "lg-gram-laptop-selfcheck",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "lg-gram-power-adapter-indicator-check",
+      "claim": "LG 그램 노트북이 켜지지 않을 때 먼저 좌측 측면이나 전원 버튼 옆의 AC 전원 표시등이 켜져 있는지 확인하며, 표시등이 꺼져 있으면 전원 어댑터 문제일 가능성이 높다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 전원이 켜지지 않아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150740394982",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-gram-internal-battery-power-reset",
+      "claim": "LG 그램 내장형 배터리 모델의 전원이 켜지지 않을 때는 AC 어댑터를 분리한 후 전원 버튼을 10초 이상 누른 후 해제하는 방식으로 배터리를 리셋한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 전원이 켜지지 않아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150740394982",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 내장형 배터리",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "모델에 따라 최소 6초 이상이면 되지만, 10초 이상 누르는 것을 권장한다",
+      "cautionSource": "LG전자 고객지원 - [LG 노트북] 전원이 켜지지 않아요"
+    },
+    {
+      "id": "lg-gram-removable-battery-power-reset",
+      "claim": "LG 그램 외장형 배터리 모델의 전원이 켜지지 않을 때는 노트북 바닥면의 배터리 락(Lock) 스위치를 해제하여 배터리를 완전히 분리한 후, 약 30초 경과 후 배터리를 다시 장착하고 전원을 켠다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 전원이 켜지지 않아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150740394982",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 외장형 배터리",
+        "years": "구형 판매 모델",
+        "region": "KR"
+      },
+      "caution": "배터리를 분리하고 최소 30초는 대기하여 잔류 전원을 제거한 후 재장착한다",
+      "cautionSource": "LG전자 고객지원 - [LG 노트북] 전원이 켜지지 않아요"
+    },
+    {
+      "id": "lg-gram-external-device-disconnect-boot",
+      "claim": "LG 그램 노트북이 LG 로고에서 멈추거나 부팅이 안 될 때는 USB, SD 메모리 카드, 외장 하드드라이브 등 연결된 외부 장치가 원인일 수 있으므로, 모두 분리한 후 재부팅을 시도한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 전원이 켜지지 않아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150740394982",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-gram-battery-life-extension-80-percent",
+      "claim": "LG 그램 노트북의 배터리 수명 연장 기능(Battery Life Extension)은 배터리 충전 기준을 100%에서 80%로 낮춰 배터리 수명을 연장하는 의도된 설정이며, 이 기능이 활성화되면 어댑터를 꽂아도 80% 이상 충전되지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 배터리가 80%까지만 충전돼요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150758016176",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-gram-battery-life-extension-2025-model-setting",
+      "claim": "LG 그램 2025년 이후 모델에서 배터리 수명 연장 기능 설정은 작업 표시줄에서 'My gram'을 검색하여 실행한 후, PC 관리 → 전원 및 성능 → 배터리 수명 연장에서 ON/OFF를 조절한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 배터리가 80%까지만 충전돼요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150758016176",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "2025~",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-gram-battery-life-extension-2022-model-setting",
+      "claim": "LG 그램 2022년 4월 이후 모델(2024년까지)에서 배터리 수명 연장 기능은 작업 표시줄에서 'LG Smart Assistant'를 검색하여 실행한 후, 전원 설정 항목에서 배터리 수명 연장을 ON으로 설정한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 배터리가 80%까지만 충전돼요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150758016176",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "2022.04~2024",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-gram-battery-life-extension-pre2022-model-setting",
+      "claim": "LG 그램 2022년 4월 이전 모델에서 배터리 수명 연장 기능은 작업 표시줄에서 'LG Control Center'를 검색하여 실행한 후, 전원관리 설정 항목에서 배터리 수명 연장을 ON으로 설정한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 배터리가 80%까지만 충전돼요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150758016176",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "~2022.03",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-gram-overheating-cooling-mode-setting",
+      "claim": "LG 그램 노트북의 발열 문제는 냉각 모드가 저소음(Silent) 모드로 설정되어 있을 때 발생할 수 있으므로, Fn+F1 단축키 또는 My gram, LG Smart Assistant 앱에서 냉각 모드를 권장 설정으로 변경한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 노트북 발열이 심해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150799471967",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "저소음 모드로 설정하면 발열이 심해질 수 있으므로, 온도 관리가 필요하면 권장 모드 사용"
+    },
+    {
+      "id": "lg-gram-overheating-ventilation-check",
+      "claim": "LG 그램 노트북의 발열 및 팬 소음을 줄이려면 노트북을 평탄하고 단단한 표면에 놓고, 노트북 모든 측면에서 최소 15cm 이상의 통풍 간격을 유지해야 한다. 침대 위나 쿠션 위에서 사용하면 통풍구가 막혀 발열이 심해진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 노트북 발열이 심해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150799471967",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-gram-ventilation-duct-cleaning-method",
+      "claim": "LG 그램 노트북의 통풍구 청소는 눈에 보이는 이물질을 부드럽게 제거하는 정도로만 진행하며, 압축공기는 팬 블레이드를 손상시킬 수 있으므로 사용하지 말아야 한다. 내부 청소가 필요하면 고객센터(1544-7777)의 전문 서비스를 이용해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 노트북 발열이 심해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150799471967",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "압축공기는 금지. 부드러운 천이나 솔로 가볍게 제거만 할 것"
+    },
+    {
+      "id": "lg-gram-overheating-malware-scan",
+      "claim": "LG 그램 노트북의 발열이 심할 때는 작업 관리자에서 불필요한 백그라운드 프로세스를 종료하고, Windows Defender의 빠른 검사를 실행하거나 마이크로소프트 악성코드 제거 도구를 다운로드하여 시스템 내 악성코드를 검사해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 노트북 발열이 심해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150799471967",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-gram-display-not-working-external-monitor-check",
+      "claim": "LG 그램 노트북의 화면이 안 나올 때는 외부 모니터를 HDMI로 연결하여 노트북 디스플레이 자체의 문제인지 확인해야 한다. 외부 모니터에 화면이 나오면 노트북 디스플레이 부품 고장으로 판단된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 화면이 안 나와요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20154038112037",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-gram-hdmi-multi-display-setting",
+      "claim": "LG 그램 노트북을 외부 모니터에 HDMI로 연결했을 때 화면이 안 나올 때는 Fn+F7 단축키를 눌러 다중 디스플레이 설정을 켜고, [확장] 또는 [복제] 옵션으로 변경해야 한다. 설정이 [PC 화면만]으로 되어 있으면 외부 기기에 화면이 나오지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북 화면] HDMI를 연결해도 화면이 나오지 않아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151881582408",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-gram-hdmi-cable-test",
+      "claim": "LG 그램 노트북의 외부 모니터 HDMI 연결 시 화면이 안 나올 때는 HDMI 케이블 손상 여부를 확인하고, 다른 HDMI 케이블로 테스트하여 케이블 문제와 포트 문제를 구분해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북 화면] HDMI를 연결해도 화면이 나오지 않아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151881582408",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-gram-hdmi-graphic-driver-reinstall",
+      "claim": "LG 그램 노트북의 외부 모니터가 HDMI로 연결되고 디스플레이 설정을 제대로 해도 화면이 안 나올 때는 그래픽 드라이버가 설치되지 않았거나 오류가 있을 수 있으므로, LG Update 프로그램이나 Windows 장치 관리자에서 그래픽 드라이버를 재설치해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북 화면] HDMI를 연결해도 화면이 나오지 않아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151881582408",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-gram-touchpad-2025-model-enable",
+      "claim": "LG 그램 2025년 Gram 모델에서 터치패드가 작동하지 않을 때는 Fn 키를 누른 상태에서 F4 키를 눌러 [Touchpad On]으로 변경하여 활성화한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 터치패드 작동이 안 돼요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150375974850",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "2025~",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-gram-touchpad-pre2024-model-enable",
+      "claim": "LG 그램 2024년 이전 모델에서 터치패드가 작동하지 않을 때는 Fn 키를 누른 상태에서 F5 키를 눌러 [Touchpad On]으로 변경하여 활성화한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 터치패드 작동이 안 돼요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150375974850",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "~2024",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-gram-touchpad-windows-settings-check",
+      "claim": "LG 그램 노트북의 터치패드 단축키를 눌렀는데도 작동하지 않을 때는 Windows 설정에서 '터치 패드 켜기/끄기'를 검색하여 '켬' 상태인지 확인해야 한다. '마우스 연결 시 터치패드 비활성화' 옵션이 체크되어 있으면 외부 마우스 연결 시 터치패드가 자동으로 꺼진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 터치패드 작동이 안 돼요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150375974850",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-gram-touchpad-hotkey-manager-startup",
+      "claim": "LG 그램 노트북의 터치패드 Fn+F 단축키가 작동하지 않을 때는 작업 관리자에서 시작프로그램 탭을 열고, HotKeyManager가 활성화되어 있는지 확인해야 한다. HotKeyManager가 비활성화되어 있으면 키보드 단축키가 작동하지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 터치패드 작동이 안 돼요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150375974850",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-gram-touchpad-driver-reinstall",
+      "claim": "LG 그램 노트북의 터치패드 단축키와 Windows 설정 모두 정상이지만 작동하지 않을 때는 LG Update 프로그램(LG Update & Renew, LG Update & Recovery, LG DnA Center Plus 등 모델별 상이)을 사용하여 터치패드 드라이버를 재설치해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] 터치패드 작동이 안 돼요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150375974850",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-smart-assistant-availability",
+      "claim": "LG Smart Assistant 앱은 2022년 4월 이후 출시된 LG 그램 노트북에서만 사용 가능하며, 2022년 4월 이전 모델은 LG Control Center를 사용한다. 데스크톱 비OS 제품은 Windows 설치 후 수동으로 설치해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] LG Smart Assistant 사용방법이 궁금해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152951058764",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "2022.04~현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-smart-assistant-system-diagnosis-feature",
+      "claim": "LG Smart Assistant의 시스템 진단 기능은 [진단하기] 버튼을 눌러 6가지 항목(CPU, 메모리, 저장공간, 배터리, 네트워크 등)에 대해 현재 시스템이 정상 동작하고 있는지 진단하며, 문제가 있으면 [해결하기] 버튼을 눌러 자동으로 문제를 해결할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] LG Smart Assistant 사용방법이 궁금해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152951058764",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "2022.04~현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-smart-assistant-battery-health-check",
+      "claim": "LG Smart Assistant 앱의 전원 설정 메뉴에서 [배터리 수명 상태]를 확인하면 현재 배터리 건강도를 백분율로 표시하여 배터리 노화 상태를 파악할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] LG Smart Assistant 사용방법이 궁금해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152951058764",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "2022.04~현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-smart-assistant-usage-mode-settings",
+      "claim": "LG Smart Assistant 앱에서는 사용 목적에 맞는 프리셋 모드(공부, 업무, 영화, 야외 등)를 제공하며, 각 모드는 화면 밝기, 냉각 모드, 전원 설정 등을 자동으로 최적화한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - [LG 노트북] LG Smart Assistant 사용방법이 궁금해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152951058764",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "2022.04~현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-gram-customer-center-phone",
+      "claim": "LG 그램 노트북의 모든 자가점검 절차로도 해결되지 않는 문제는 LG 고객센터 1544-7777로 연락하여 상담, 출장 서비스, 센터 방문 중 선택하여 전문 점검을 받을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150740394982",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "노트북",
+        "line": "그램 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    }
+  ]
+}

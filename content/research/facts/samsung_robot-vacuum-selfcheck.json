@@ -1,0 +1,355 @@
+{
+  "topic": "로봇청소기 흡입력 저하·주행 이상·도킹 실패 자가점검",
+  "brand": "삼성",
+  "article": "robot-vacuum-selfcheck",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [
+    { "id": "lg-codezero-model-year-prefix", "why": "LG 코드제로는 무선청소기(손잡이형)이며, 조사 대상인 로봇청소기(자동주행)는 구조·센서·도킹·자동먼지비움 등이 완전히 다름" },
+    { "id": "lg-codezero-suction-weak-dust-bin-full", "why": "무선청소기 먼지통 청소법으로, 로봇청소기의 자동먼지비움·도크 필터와 구조가 다름" },
+    { "id": "lg-codezero-suction-weak-battery-low", "why": "무선청소기 배터리는 사용자가 충전·교체하는 방식이며, 로봇청소기의 자동 도킹 충전과 다름" },
+    { "id": "lg-codezero-suction-weak-airway-blockage", "why": "무선청소기는 사용자가 들고 호스 막힘을 직관적으로 확인하지만, 로봇청소기는 센서·앱 알림 체계가 다름" },
+    { "id": "lg-codezero-suction-weak-filter-dirty", "why": "필터 물세척 원리는 유사하지만, 무선청소기는 수동관리이고 로봇청소기는 도크 필터·청정스테이션 자동 비움이 있음" },
+    { "id": "lg-codezero-filter-cleaning-drying-24hours", "why": "필터 건조 시간은 유사할 수 있지만 무선청소기 HEPA 필터와 로봇청소기의 필터 교체주기·스테이션 필터가 다름" },
+    { "id": "lg-codezero-prefilter-critical", "why": "무선청소기 프리필터와 로봇청소기의 먼지통 필터 구조가 다름" },
+    { "id": "lg-codezero-exhaust-filter-cleaning-procedure", "why": "무선청소기 필터 분리·조립법으로, 로봇청소기 먼지통·청정스테이션 필터와 구조가 다름" },
+    { "id": "lg-codezero-charging-terminal-dirty", "why": "무선청소기 배터리 충전 단자 청소와 로봇청소기의 도크 신호 센서·충전 단자는 위치·기능이 다름" },
+    { "id": "lg-codezero-charging-dock-adapter-check", "why": "무선청소기는 독립 충전대이고 로봇청소기는 자동주행 도킹·신호 수신 체계가 다름" },
+    { "id": "lg-codezero-charging-temperature-limit", "why": "배터리 온도 민감성은 공통이지만, 무선청소기는 수동 충전이고 로봇청소기는 자동 도킹 환경 설정이 다름" },
+    { "id": "lg-codezero-charging-led-indicator", "why": "충전 상태 표시는 유사하지만 무선청소기 충전대와 로봇청소기 도크 신호 체계가 다름" },
+    { "id": "lg-codezero-allinone-tower-emptying-manual-mode", "why": "이것은 무선청소기 + 외부 타워 먼지 비움 시스템으로, 로봇청소기 내부 도크 필터·스테이션 자동 비움과 완전히 다른 제품" },
+    { "id": "lg-codezero-allinone-tower-emptying-auto-mode", "why": "무선청소기 전용 올인원타워로, 로봇청소기 자동먼지비움 스테이션과 다른 제품" },
+    { "id": "lg-codezero-allinone-tower-led-indicators", "why": "무선청소기 타워 표시등으로, 로봇청소기 도크 상태 표시와 다름" },
+    { "id": "lg-codezero-allinone-tower-emptying-failure-blockage", "why": "무선청소기 타워 먼지비움 레버·시스템으로, 로봇청소기 스테이션 구조와 다름" },
+    { "id": "lg-codezero-runtime-battery-depletion-causes", "why": "무선청소기 배터리 작동 시간 단축 원인과 로봇청소기의 배터리 성능 저하는 필터 오염 원리는 유사하나, 배터리 교체·도킹 충전 방식이 다름" },
+    { "id": "lg-codezero-battery-replacement-availability", "why": "무선청소기 배터리는 교체형이고 로봇청소기의 내부 배터리는 수리센터 교체 대상이 다름" },
+    { "id": "lg-codezero-customer-center-phone", "why": "LG 고객센터 번호는 동일하지만, 제품 카테고리(무선청소기 vs 로봇청소기)가 다르므로 서비스 프로세스가 다름" }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "samsung-jetbot-suction-weak-dustbin-full",
+      "claim": "삼성 제트봇 먼지통이 가득 차면 흡입력이 급감하므로, 정기적으로 먼지통을 비우고 먼지 분리 장치를 분리해 물로 세척해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 제트 먼지통 분리 및 세척 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40882",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "로봇청소기",
+        "line": "제트봇",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-jetbot-suction-weak-filter-cleaning-cycle",
+      "claim": "삼성 제트봇 모터 필터는 2주에 1회 물세척 또는 먼지털이로 청소하고, 3~6개월 주기로 교체하는 것이 이상적이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 제트 먼지통 및 필터 청소 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/656296",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "로봇청소기",
+        "line": "제트봇",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "필터 교체 주기는 사용 빈도와 거주 환경(먼지 많음/적음)에 따라 달라질 수 있다",
+      "cautionSource": "삼성전자서비스 제트 먼지통 및 필터 청소 가이드"
+    },
+    {
+      "id": "samsung-jetbot-filter-drying-time",
+      "claim": "삼성 제트봇 모터 필터를 물세척한 후에는 그늘에서 24시간 이상 완전히 건조해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 제트 먼지통 및 필터 청소 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/656296",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "로봇청소기",
+        "line": "제트봇",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "물기가 남으면 모터 손상의 원인이 될 수 있다",
+      "cautionSource": "삼성전자서비스 제트 먼지통 및 필터 청소 가이드"
+    },
+    {
+      "id": "samsung-jetbot-charging-failed-power-switch",
+      "claim": "삼성 제트봇 배터리가 충전되지 않을 때 가장 흔한 원인은 제트봇의 전원 스위치가 꺼져 있는 것이므로, 청정스테이션의 전원을 항상 켜놓고 로봇의 전원도 켜져 있는지 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 로봇청소기 제트봇 충전 안 될 때 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39108",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "로봇청소기",
+        "line": "제트봇",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-jetbot-charging-failed-terminal-dirty",
+      "claim": "삼성 제트봇 충전 단자에 먼지나 이물질이 끼어 있으면 접촉 불량으로 충전이 안 되므로, 충전기 또는 청정스테이션 충전 단자를 깨끗한 천으로 닦아야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 로봇청소기 제트봇 충전 안 될 때 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39108",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "로봇청소기",
+        "line": "제트봇",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-jetbot-docking-clearance-requirement",
+      "claim": "삼성 제트봇이 도킹 스테이션으로 자동 복귀하려면 충전기가 벽을 등지고 위치해야 하며, 양쪽 0.5m 이상, 전방 1.5m 이상의 충분한 여유 공간이 있어야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 로봇청소기 제트봇 충전 안 될 때 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39108",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "로봇청소기",
+        "line": "제트봇",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "도크 주변에 물건이 있거나 신호 경로를 방해하면 복귀 실패가 발생한다",
+      "cautionSource": "삼성전자서비스 로봇청소기 제트봇 충전 안 될 때 가이드"
+    },
+    {
+      "id": "samsung-jetbot-sensor-cleaning-method",
+      "claim": "삼성 제트봇 정면 한가운데와 측면의 검정색 센서창에 스크래치나 먼지가 끼었으면 부드러운 천으로 닦아야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 로봇청소기 센서 오염 관련 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39116",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "로봇청소기",
+        "line": "제트봇",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "센서창을 닦을 때 진동이나 압박을 주지 말고 부드럽게 진행해야 한다",
+      "cautionSource": "삼성전자서비스 로봇청소기 센서 오염 관련 안내"
+    },
+    {
+      "id": "samsung-jetbot-3d-sensor-auto-calibration",
+      "claim": "삼성 제트봇 AI의 3D 센서는 정기적으로 청정스테이션에서 로봇이 스스로 센서 상태를 파악하여 자동 보정하는 기능이 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 로봇청소기 센서 자동 보정 기능 안내",
+      "source_url": "https://r1.community.samsung.com/t5/smartthings/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EC%B2%AD%EC%86%8C-%EC%A4%91-%EB%B0%A4%ED%99%A9%ED%95%98%EB%8A%94-%EC%98%A4%EB%A5%98/td-p/17180323",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "로봇청소기",
+        "line": "제트봇 AI",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-jetbot-3d-sensor-manual-calibration",
+      "claim": "삼성 제트봇 AI 모델의 경우 SmartThings 앱 > 설정 > [3D 센서 보정]을 통해 로봇이 스테이션에 충전 중인 상태에서 수동으로 3D 센서 보정을 수행할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 로봇청소기 3D 센서 보정 기능 안내",
+      "source_url": "https://r1.community.samsung.com/t5/smartthings/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EC%B2%AD%EC%86%8C-%EC%A4%91-%EB%B0%A4%ED%99%A9%ED%95%98%EB%8A%94-%EC%98%A4%EB%A5%98/td-p/17180323",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "로봇청소기",
+        "line": "제트봇 AI",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "센서 보정 중에는 로봇 주변에 접근하지 말고 장애물을 치워야 한다",
+      "cautionSource": "삼성 로봇청소기 3D 센서 보정 기능 안내"
+    },
+    {
+      "id": "samsung-jetbot-mopwater-tank-check",
+      "claim": "삼성 제트봇 물걸레에서 물이 분사되지 않을 때 먼저 물탱크가 제대로 장착되었는지, 물이 충분한지 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 물걸레 브러시 물 분사 안 될 때 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/2017004",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "로봇청소기",
+        "line": "제트봇 (물걸레 옵션 모델)",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-jetbot-mopwater-filter-hose-blockage",
+      "claim": "삼성 제트봇 물걸레에서 물이 분사되지 않을 때 필터가 막혔는지, 세척조 물 공급 호스에 이물질이 끼어 있는지 확인하고, 호스를 분리하여 물로 세척해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 물걸레 브러시 물 분사 안 될 때 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/2017004",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "로봇청소기",
+        "line": "제트봇 (물걸레 옵션 모델)",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-jetbot-mopwater-initial-airlock",
+      "claim": "삼성 제트봇 물걸레 최초 사용 시 펌프와 튜브에 공기가 차 있어 물이 분사되는 데 시간이 걸릴 수 있으므로, 물이 분사될 때까지 \"+\" 버튼을 반복적으로 눌러야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 물걸레 브러시 물 분사 안 될 때 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/2017004",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "로봇청소기",
+        "line": "제트봇 (물걸레 옵션 모델)",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "에어락(공기 가둠)이 해제될 때까지 몇 번 시도가 필요할 수 있다. 강제로 펌프를 구동하려고 하지 말 것",
+      "cautionSource": "삼성전자서비스 물걸레 브러시 물 분사 안 될 때 가이드"
+    },
+    {
+      "id": "samsung-jetbot-clean-station-filter-maintenance",
+      "claim": "삼성 제트봇 청정스테이션의 고성능 필터는 정기적으로 청소해야 하며, 필터 덮개의 손잡이를 당겨 분리한 후 고성능 필터의 먼지 이물질을 제거하고 다시 조립해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 청정스테이션 고성능 필터 청소 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/4600912",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "로봇청소기",
+        "line": "제트봇 (청정스테이션 모델)",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "필터 후크를 홈에 맞춘 후 '딸깍' 소리가 날 때까지 조립해야 제대로 장착된다",
+      "cautionSource": "삼성전자서비스 청정스테이션 고성능 필터 청소 가이드"
+    },
+    {
+      "id": "lg-r9-suction-weak-dustbin-full",
+      "claim": "LG 로봇청소기 R9 먼지통이 가득 차면 흡입력이 떨어지므로 먼지통과 먼지 분리기를 빼내 청소해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 R9 흡입력 약할 때 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150703877694",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "로봇청소기",
+        "line": "R9",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-r9-suction-weak-filter-dirty",
+      "claim": "LG R9 프리 필터와 배기 필터의 먼지는 진공 청소기로 흡입해 제거하거나 흐르는 물에 씻은 후 그늘에서 24시간 이상 물기를 완전히 말려야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 R9 흡입력 약할 때 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150703877694",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "로봇청소기",
+        "line": "R9",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "필터 건조 중 헤어드라이어·전자레인지·직접 열원을 사용하면 필터가 손상될 수 있다",
+      "cautionSource": "LG전자 스스로해결 R9 흡입력 약할 때 가이드"
+    },
+    {
+      "id": "lg-r9-suction-weak-brush-entanglement",
+      "claim": "LG R9 흡입력이 떨어졌을 때 회전솔을 확인하여 로봇청소기를 뒤집은 다음 회전솔 덮개 버튼을 눌러 분리하고, 회전솔 분리 레버를 누르면서 회전솔을 들어 올려 머리카락이나 먼지를 제거해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 R9 흡입력 약할 때 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150703877694",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "로봇청소기",
+        "line": "R9",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "회전솔은 물로 세척하면 안 되고, 마른 천으로 닦거나 머리카락만 제거해야 한다",
+      "cautionSource": "LG전자 스스로해결 R9 흡입력 약할 때 가이드"
+    },
+    {
+      "id": "lg-r9-suction-weak-dust-sensor",
+      "claim": "LG R9 성능을 유지하기 위해 먼지센서를 부드러운 천으로 닦아야 하며, 먼지센서는 먼지통을 제거하면 좌측 흡입구 안쪽 윗부분에 위치하고 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 R9 흡입력 약할 때 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150703877694",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "로봇청소기",
+        "line": "R9",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-r9-docking-failed-signal-sensor-dirty",
+      "claim": "LG R9이 충전대를 찾지 못할 때 충전대 신호 감지 센서와 먼지센서가 이물이나 먼지에 가려 있을 수 있으므로, 이물질이나 먼지를 제거해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 R9 충전대로 복귀하지 않을 때 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151780769762",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "로봇청소기",
+        "line": "R9",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-r9-sensor-types-and-cleaning",
+      "claim": "LG R9의 주요 센서 종류는 장애물 감지 센서, 뷰어 센서, 낭떠러지 감지 센서, 충전단자, 먼지 센서이며, 이들을 면봉이나 부드러운 천을 사용하여 주기적으로 청소해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 R9 센서 및 충전단자 청소 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151026613533",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "로봇청소기",
+        "line": "R9",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "센서는 정밀하므로 힘을 주지 말고 부드럽게 청소해야 한다",
+      "cautionSource": "LG전자 스스로해결 R9 센서 및 충전단자 청소 가이드"
+    }
+  ]
+}

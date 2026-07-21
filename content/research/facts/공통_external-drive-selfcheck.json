@@ -1,0 +1,443 @@
+{
+  "topic": "외장하드·USB 메모리 인식 안 될 때 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "external-drive-basic-connection-check",
+      "claim": "외장하드·USB가 인식 안 될 때 먼저 케이블이 양쪽 끝 모두 완전히 연결되었는지, USB 포트가 손상되지 않았는지 육안으로 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마이크로소프트 Learn · USB 장치 인식 실패 오류 해결",
+      "source_url": "https://learn.microsoft.com/ko-kr/previous-versions/troubleshoot/windows-server/usb-device-not-recognized-error",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB 메모리·카드리더",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "external-drive-powered-port-requirement",
+      "claim": "외장하드는 전원이 공급되는 USB 포트에 직접 연결해야 하며, 전원 미공급 USB 허브를 통한 연결은 전력 부족으로 인식 실패를 초래할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마이크로소프트 Learn · USB 장치 인식 실패 오류 해결",
+      "source_url": "https://learn.microsoft.com/ko-kr/previous-versions/troubleshoot/windows-server/usb-device-not-recognized-error",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB 카드리더 등 고전력 장치",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "노트북 측면 포트보다 후면 포트, 또는 독립형 전원 어댑터 가능 제품 우선",
+      "cautionSource": null
+    },
+    {
+      "id": "external-drive-other-port-test",
+      "claim": "케이블과 드라이브 자체는 정상인지 확인하기 위해 컴퓨터의 다른 USB 포트에 연결하여 재시도하고, 가능하면 다른 컴퓨터에도 연결해본다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마이크로소프트 Learn · USB 장치 인식 실패 오류 해결",
+      "source_url": "https://learn.microsoft.com/ko-kr/previous-versions/troubleshoot/windows-server/usb-device-not-recognized-error",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB 메모리·카드리더",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "다른 PC에서도 인식 안 되면 드라이브 자체의 물리적·논리적 손상 가능성",
+      "cautionSource": null
+    },
+    {
+      "id": "device-manager-check-windows",
+      "claim": "Windows에서 외장하드가 인식 안 될 때 장치관리자(시작 > 장치관리자)에서 디스크 드라이브 항목에 해당 드라이브가 보이는지 확인한다. 디스크 드라이브 목록이 없으면 하드웨어 자체가 인식되지 않은 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마이크로소프트 Learn · USB 장치 인식 실패 오류 해결",
+      "source_url": "https://learn.microsoft.com/ko-kr/previous-versions/troubleshoot/windows-server/usb-device-not-recognized-error",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "usb-controller-disable-check",
+      "claim": "Windows 장치관리자에서 범용 직렬 버스 컨트롤러 또는 USB 호스트 컨트롤러가 사용 안 함 상태로 되어 있으면 마우스 우클릭 후 사용을 선택하여 활성화한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마이크로소프트 Learn · USB 장치 인식 실패 오류 해결",
+      "source_url": "https://learn.microsoft.com/ko-kr/previous-versions/troubleshoot/windows-server/usb-device-not-recognized-error",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "external-drive-unassigned-letter-check",
+      "claim": "Windows 디스크 관리에서 외장하드가 보이지만 내 PC에 표시되지 않으면, 해당 드라이브에 문자(D, E, F 등)가 할당되지 않은 상태다. 우클릭하여 드라이브 문자 및 경로 변경 > 추가 > 사용 가능한 문자 선택으로 할당한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마이크로소프트 Q&A · 외장하드 드라이브 문자 할당",
+      "source_url": "https://learn.microsoft.com/ko-kr/answers/questions/4120008/pc",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "드라이브 문자를 할당하기 전에 해당 드라이브가 정상 파일시스템을 갖추고 있는지 확인할 것. 파일시스템이 RAW로 표시되면 데이터 손실이 발생할 수 있으니 포맷 전에 전문가 상담 필수",
+      "cautionSource": "마이크로소프트 Q&A · 외장하드 드라이브 문자 할당"
+    },
+    {
+      "id": "file-system-format-ntfs-overview",
+      "claim": "NTFS는 Windows 표준 파일시스템으로 할당량, 암호화, 권한 관리 기능을 지원하지만, macOS에서는 기본적으로 읽기만 가능하고 쓰기가 불가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Lexar · exFAT vs NTFS: Compatibility Guide",
+      "source_url": "https://americas.lexar.com/exfat-vs-ntfs-explained/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "Windows와 Mac을 함께 쓸 계획이면 포맷 단계에서 exFAT을 선택할 것",
+      "cautionSource": null
+    },
+    {
+      "id": "file-system-format-exfat-overview",
+      "claim": "exFAT는 Windows(XP 이후), macOS(10.6.5 이후), Linux(5.7 이후) 모두에서 읽기·쓰기가 가능하며, 파일 크기 제한이 없고, 포터블 장치에 최적화된 파일시스템이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Lexar · exFAT vs NTFS: Compatibility Guide",
+      "source_url": "https://americas.lexar.com/exfat-vs-ntfs-explained/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "크로스 플랫폼 호환성이 필요하면 exFAT 권장. 단, 파일 복구 소프트웨어가 NTFS보다 제한적일 수 있음",
+      "cautionSource": null
+    },
+    {
+      "id": "file-system-format-fat32-overview",
+      "claim": "FAT32는 모든 OS와 호환되지만, 단일 파일 크기 제한이 4GB이고 전체 드라이브 용량 제한이 32GB이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Corsair · FAT32 vs exFAT vs NTFS Format Comparison",
+      "source_url": "https://www.corsair.com/us/en/explorer/diy-builder/storage/fat32-vs-exfat-vs-ntfs-how-should-you-format-your-usb-drive/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "USB 메모리·카드",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "4GB를 초과하는 파일을 저장할 계획이면 FAT32 사용 불가. 레거시 장비 호환이 필요한 경우에만 FAT32 선택",
+      "cautionSource": "Corsair · FAT32 vs exFAT vs NTFS Format Comparison"
+    },
+    {
+      "id": "mac-ntfs-write-disable-warning",
+      "claim": "macOS는 NTFS 포맷 드라이브에 기본적으로 쓰기를 지원하지 않으므로, NTFS 외장하드에서는 파일을 복사하거나 수정할 수 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support · Mac에서 외장 드라이브에 파일을 저장할 수 없는 경우",
+      "source_url": "https://support.apple.com/en-us/101830",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "mac-ntfs-write-solution-reformat",
+      "claim": "Mac에서 NTFS 쓰기를 원한다면 해결책 1은 드라이브를 exFAT 또는 APFS로 재포맷하는 것이며, 이 방법은 모든 데이터를 삭제한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "EaseUS · Mac에서 NTFS 드라이브 읽기 전용 해결",
+      "source_url": "https://www.easeus.com/mac-file-recovery/external-hard-drive-read-only-on-mac.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "포맷하면 드라이브의 모든 파일이 삭제되므로 반드시 먼저 데이터를 백업해야 한다. 백업 없이 포맷하면 데이터 복구가 매우 어렵다",
+      "cautionSource": null
+    },
+    {
+      "id": "mac-ntfs-write-solution-third-party-driver",
+      "claim": "Mac에서 NTFS 쓰기를 원한다면 해결책 2는 타사 NTFS 드라이버를 설치하는 것으로, 포맷 없이 읽기·쓰기가 가능하지만 유료 소프트웨어다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "EaseUS · Mac에서 NTFS 드라이브 읽기 전용 해결",
+      "source_url": "https://www.easeus.com/mac-file-recovery/external-hard-drive-read-only-on-mac.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "external-drive-clicking-sound-critical-warning",
+      "claim": "외장하드에서 반복되는 딸깍 소리가 나면 읽기 헤드가 플래터를 긁고 있다는 명확한 물리적 손상 신호다. 이는 소프트웨어로 복구 불가능하며, 추가 연결 시도는 손상을 악화시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "7 Data Recovery · 낙하된 외장 하드드라이브 복구",
+      "source_url": "https://blog.7datarecovery.com/ko/dropped-hard-drive-recovery/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "딸깍 소리가 나면 즉시 드라이브 사용을 중단하고, 어떤 복구 소프트웨어도 실행하거나 다시 해보기 시도를 하지 말 것",
+      "cautionSource": null
+    },
+    {
+      "id": "external-drive-beep-sound-malfunction-warning",
+      "claim": "외장하드에서 삐삐, 띠띠 같은 비프음이나 긁히는 음이 난다면 마찬가지로 물리적 고장이므로, 이 경우도 계속 사용하면 안 된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "데이터복구 커뮤니티 · 외장하드 비정상 음성 보고",
+      "source_url": "https://data.dlicompany.com/%EC%99%B8%EC%9E%A5%ED%95%98%EB%93%9C-%EC%82%90%EC%82%90-%EC%86%8C%EB%A6%AC-%EB%9D%A0%EB%9D%A0/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "external-drive-format-warning-no-recovery",
+      "claim": "Windows 탐색기나 디스크 관리에서 포맷 창이 나타나면, 포맷을 진행하면 드라이브의 모든 데이터가 삭제된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마이크로소프트 Learn · 디스크 관리 문제 해결",
+      "source_url": "https://learn.microsoft.com/ko-kr/troubleshoot/windows-server/backup-and-storage/troubleshoot-disk-management",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "포맷은 데이터 손실의 직접적 원인이다. 인식되는 드라이브에서는 절대 포맷 버튼을 누르면 안 된다",
+      "cautionSource": null
+    },
+    {
+      "id": "external-drive-recognized-but-inaccessible",
+      "claim": "외장하드가 장치관리자에는 보이지만 디스크 관리나 내 PC에서 열 수 없거나 폴더가 표시 안 될 때는, 드라이브에 문자가 할당되지 않았거나 파일시스템이 손상된 것이 주요 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "EaseUS · USB가 인식되지만 내 PC에 표시 안 됨",
+      "source_url": "https://www.easeus.com/storage-media-recovery/usb-external-hard-drive-shows-up-in-device-manager-but-not-in-this-pc.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "파일시스템이 RAW 상태로 표시되면 논리적 손상이므로, 포맷 전에 전문가 상담을 권장한다",
+      "cautionSource": null
+    },
+    {
+      "id": "usb-30-backward-compatible-with-20",
+      "claim": "USB 3.0과 3.1은 하위 호환성이 있어서 USB 3.1 포트에 USB 3.0 기기를 연결할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kingston Technology · USB 3.0, 3.2 차이",
+      "source_url": "https://www.kingston.com/en/usb-flash-drives/usb-30/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "USB 케이블·포트",
+        "years": "2008~현행",
+        "region": "글로벌"
+      },
+      "caution": "저가형 인증 미획득 케이블은 전송 오류를 유발할 수 있으므로 공식 인증 제품 사용 권장",
+      "cautionSource": null
+    },
+    {
+      "id": "usb-port-color-identification",
+      "claim": "USB 포트의 색상으로 버전을 구분할 수 있는데, 일반적으로 USB 2.0은 검정색·흰색, USB 3.0은 파란색, USB 3.1 Type-C는 적색이나 검정색이다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 경험 및 커뮤니티 보고",
+      "source_url": "https://youngwoo.kr/usb-3-0-3-1-%EC%B0%A8%EC%9D%B4-%EC%B4%9D%EC%A0%95%EB%A6%AC/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "USB 포트",
+        "years": "2008~현행",
+        "region": "글로벌"
+      },
+      "caution": "포트 색상은 제조사 기준이지 표준이 아니므로, 정확한 버전은 컴퓨터 매뉴얼 또는 BIOS 정보에서 확인할 것",
+      "cautionSource": null
+    },
+    {
+      "id": "usb-certified-cable-importance",
+      "claim": "USB 고속 전송용 케이블이나 허브를 구입할 때는 USB-IF 공식 인증 마크가 있는 제품을 선택하는 것이 안전하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kingston Technology · USB 인증 기준",
+      "source_url": "https://www.kingston.com/en/usb-flash-drives/usb-30/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "USB 케이블·허브",
+        "years": "2008~현행",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "safe-eject-importance-no-data-loss-guarantee",
+      "claim": "외장하드를 안전하게 제거하려면 시스템 트레이에서 안전한 제거 기능을 사용하거나, 파일 탐색기에서 우클릭 후 꺼내기를 선택해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마이크로소프트 Learn · USB 장치 인식 실패 오류 해결",
+      "source_url": "https://learn.microsoft.com/ko-kr/previous-versions/troubleshoot/windows-server/usb-device-not-recognized-error",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "파일을 복사 중일 때는 특히 안전한 제거 절차를 따를 것",
+      "cautionSource": null
+    },
+    {
+      "id": "external-drive-unrecognized-after-no-safe-eject",
+      "claim": "안전한 제거 절차를 거치지 않고 외장하드를 급분리한 후 다시 연결했을 때 인식되지 않는다면, 파일시스템 메타데이터가 손상되었을 가능성이 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 보고 및 데이터복구 전문가 상담",
+      "source_url": "https://learn.microsoft.com/ko-kr/answers/questions/4120008/pc",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "복구 소프트웨어나 chkdsk 명령어로 파일시스템을 스캔하되, 복구 전에 원본 상태의 이미지 백업을 만들어둘 것을 권장한다",
+      "cautionSource": null
+    },
+    {
+      "id": "external-drive-multiple-disconnect-restart-fix",
+      "claim": "Windows에서 외장하드 인식 오류 시 장치관리자에서 드라이브를 제거하고, USB 케이블을 완전히 뽑은 후 최소 1분 기다렸다가 다시 연결하면 드라이버가 자동으로 재로드된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마이크로소프트 Learn · USB 장치 인식 실패 오류 해결",
+      "source_url": "https://learn.microsoft.com/ko-kr/previous-versions/troubleshoot/windows-server/usb-device-not-recognized-error",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "usb-controller-reinstall-advanced-fix",
+      "claim": "외장하드가 계속 인식 안 될 때 장치관리자에서 범용 직렬 버스 컨트롤러 항목 아래의 모든 USB 컨트롤러를 제거하고, 컴퓨터를 재시작하면 자동 재설치된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마이크로소프트 Learn · USB 장치 인식 실패 오류 해결",
+      "source_url": "https://learn.microsoft.com/ko-kr/previous-versions/troubleshoot/windows-server/usb-device-not-recognized-error",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "이 작업 후 재시작하면 모든 USB 장치가 일시적으로 작동하지 않으므로, 작업 중인 내용을 저장하고 진행할 것",
+      "cautionSource": null
+    },
+    {
+      "id": "usb-selective-suspend-windows-power-management",
+      "claim": "Windows에서 USB 선택적 일시 중단 기능이 활성화되면 유휴 중인 외장하드의 전원을 자동으로 끌 수 있으며, 전원 관리에서 이를 사용 안 함으로 변경할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마이크로소프트 Learn · USB 장치 인식 실패 오류 해결",
+      "source_url": "https://learn.microsoft.com/ko-kr/previous-versions/troubleshoot/windows-server/usb-device-not-recognized-error",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "외장하드·USB",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

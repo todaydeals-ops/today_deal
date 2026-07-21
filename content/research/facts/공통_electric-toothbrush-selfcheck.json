@@ -1,0 +1,281 @@
+{
+  "topic": "전동칫솔 자가점검·충전·진동·방수·교체 주기",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "charging-inductive-position",
+      "claim": "유도충전 전동칫솔은 충전대 중앙에 정확히 놓아야 충전이 시작되며, 제대로 안착되면 짧은 신호음이 2번 울리거나 배터리 표시등이 켜진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips 소닉케어 공식 고객지원",
+      "source_url": "https://www.philips.co.kr/c-t/XC000016868",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "전동칫솔",
+        "line": "소닉케어",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "유도충전 방식만 해당. 케이블 충전 방식은 다름.",
+      "cautionSource": "Philips 공식 문서"
+    },
+    {
+      "id": "charging-metal-interference",
+      "claim": "전동칫솔 충전 중 금속 표면이나 다른 충전기 근처에 두면 충전 간섭이 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips 소닉케어 공식 고객지원 & Oral-B 공식 매뉴얼",
+      "source_url": "https://www.philips.co.kr/c-t/XC000016868",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동칫솔",
+        "line": "유도충전식",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "charging-time-oralb",
+      "claim": "오랄비 전동칫솔의 첫 충전 시간은 모델에 따라 다르다: Vitality/PRO 500은 16시간, Genius는 15시간, 기타 모델은 22시간.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Oral-B 공식 매뉴얼",
+      "source_url": "https://manuals.plus/oral-b/oral-b-why-wont-my-electric-toothbrush-hold-a-charge-user-manual",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "오랄비",
+        "category": "전동칫솔",
+        "line": "Vitality, PRO 500, Genius, 기타",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "초기 충전 완료 후 일반 충전은 더 빠를 수 있음. 모델별로 상이함.",
+      "cautionSource": "Oral-B 공식 매뉴얼"
+    },
+    {
+      "id": "battery-life-duration",
+      "claim": "오랄비 전동칫솔의 배터리 지속시간은 하루 2회, 1회 2분 사용 기준 5~12일 정도다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Oral-B 공식 매뉴얼",
+      "source_url": "https://manuals.plus/oral-b/oral-b-why-wont-my-electric-toothbrush-hold-a-charge-user-manual",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "오랄비",
+        "category": "전동칫솔",
+        "line": "전체",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "실제 지속시간은 충전 주기, 모드 사용(강도), 모터 부하에 따라 변동.",
+      "cautionSource": "Oral-B 공식 매뉴얼"
+    },
+    {
+      "id": "brush-head-replacement-3months",
+      "claim": "전동칫솔 브러시 헤드는 하루 2회, 1회 2분 사용 기준으로 3개월마다 교체하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips 소닉케어 공식 지원 & Oral-B 공식 웹사이트",
+      "source_url": "https://www.philips.co.kr/c-f/XC000006600/%ED%95%84%EB%A6%BD%EC%8A%A4-%EC%86%8C%EB%8B%89%EC%BC%80%EC%96%B4-%EC%B9%AB%EC%86%94%EB%AA%A8%EB%8A%94-%EC%96%BC%EB%A7%88%EB%82%98-%EC%9E%90%EC%A3%BC-%EA%B5%90%EC%B2%B4%ED%95%B4%EC%95%BC-%ED%95%A9%EB%8B%88%EA%B9%8C",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동칫솔",
+        "line": "필립스 소닉케어, 오랄비 전 라인",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "마모 정도에 따라 3개월 이전에 교체가 필요할 수 있음. 특히 강한 압력으로 사용하면 더 빨리 닳음.",
+      "cautionSource": "Philips·Oral-B 공식 문서"
+    },
+    {
+      "id": "brush-head-wear-indicator-philips",
+      "claim": "필립스 소닉케어 브러시 헤드의 마모 표시는 파란색 지시자로, 사용하다 보면 파란색이 사라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips 소닉케어 공식 지원",
+      "source_url": "https://www.philips.co.kr/c-f/XC000006600/%ED%95%84%EB%A6%BD%EC%8A%A4-%EC%86%8C%EB%8B%89%EC%BC%80%EC%96%B4-%EC%B9%AB%EC%86%94%EB%AA%A8%EB%8A%94-%EC%96%BC%EB%A7%88%EB%82%98-%EC%9E%90%EC%A3%BC-%EA%B5%90%EC%B2%B4%ED%95%B4%EC%95%BC-%ED%95%A9%EB%8B%88%EA%B9%8C",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "전동칫솔",
+        "line": "소닉케어",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "파란색 지시자가 있는 모델만 해당. 일부 구형 모델은 지시자가 없을 수 있음.",
+      "cautionSource": "Philips 공식 문서"
+    },
+    {
+      "id": "brush-head-reminder-notification",
+      "claim": "일부 필립스 소닉케어 및 오랄비 최신 모델(예: iO)은 자동 칫솔모 알림 기능을 제공해 교체 시기가 되면 핸들의 교체 아이콘이 깜박인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips 소닉케어 공식 지원 & Oral-B 공식 웹사이트",
+      "source_url": "https://www.philips.co.kr/c-f/XC000006600/%ED%95%84%EB%A6%BD%EC%8A%A4-%EC%86%8C%EB%8B%89%EC%BC%80%EC%96%B4-%EC%B9%AB%EC%86%94%EB%AA%A8%EB%8A%94-%EC%96%BC%EB%A7%88%EB%82%98-%EC%9E%90%EC%A3%BC-%EA%B5%90%EC%B2%B4%ED%95%B4%EC%95%BC-%ED%95%A9%EB%8B%88%EA%B9%8C",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동칫솔",
+        "line": "필립스 소닉케어 스마트 모델, 오랄비 iO",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "이 기능은 최신 모델에만 적용되며, 구형 모델은 수동으로 확인해야 함.",
+      "cautionSource": "Philips·Oral-B 공식 문서"
+    },
+    {
+      "id": "brush-head-compatibility-brand-specific",
+      "claim": "전동칫솔 브러시 헤드는 브랜드·모델별로 호환되지 않으며, 정품 교체용 헤드 사용이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips 소닉케어 공식 고객지원",
+      "source_url": "https://www.philips.co.kr/c-t/XC000016868",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동칫솔",
+        "line": "필립스 소닉케어, 오랄비",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "호환품(써드파티)을 사용하면 세정 효과 저하, 손잡이 손상, 성능 불일치 등이 발생할 수 있음.",
+      "cautionSource": "Philips·Oral-B 공식 웹사이트"
+    },
+    {
+      "id": "charging-adapter-damage-check",
+      "claim": "전동칫솔이 충전되지 않으면 충전 어댑터와 케이블에 물리적 손상이 없는지 먼저 확인해야 한다. 손상 발견 시 즉시 사용 중단.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips 소닉케어 공식 고객지원",
+      "source_url": "https://www.philips.co.kr/c-t/XC000016868",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동칫솔",
+        "line": "전체",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "손상된 어댑터 사용은 감전·화재 위험.",
+      "cautionSource": "안전 경고"
+    },
+    {
+      "id": "power-outlet-verification",
+      "claim": "충전되지 않을 때 사용 중인 콘센트가 정상 작동하는지 다른 전자제품(예: 손전등)으로 테스트해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Oral-B 공식 매뉴얼",
+      "source_url": "https://manuals.plus/oral-b/oral-b-why-wont-my-electric-toothbrush-hold-a-charge-user-manual",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동칫솔",
+        "line": "전체",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "욕실 콘센트는 스위치로 제어되기도 하므로, 벽면 스위치도 함께 확인.",
+      "cautionSource": "Oral-B 공식 매뉴얼"
+    },
+    {
+      "id": "waterproof-rating-ipx",
+      "claim": "전동칫솔의 방수 등급은 보통 IPX7~IPX8이며, IPX7은 30분간 1m 이상 물속에 잠겨도 안전하고, IPX8은 완전 방수다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "전동칫솔 제품 리뷰 및 사용자 보고",
+      "source_url": "https://reviewguru.co.kr/%EC%A0%84%EB%8F%99%EC%B9%AB%EC%86%94-%EC%B6%94%EC%B2%9C/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동칫솔",
+        "line": "필립스 소닉케어, 오랄비 중상급",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "방수 등급은 모델에 따라 상이하므로, 구매 전 제조사 스펙을 확인해야 함. 저가형 모델은 방수 등급이 낮거나 없을 수 있음.",
+      "cautionSource": "사용자 보고"
+    },
+    {
+      "id": "mold-moisture-prevention",
+      "claim": "전동칫솔 손잡이 하단에 물이 고여 곰팡이가 생기는 경우가 있으며, 사용 후 물기를 닦고 통풍이 잘된 곳에 보관하면 예방할 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 (클리앙)",
+      "source_url": "https://www.clien.net/service/board/park/543729",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동칫솔",
+        "line": "전체",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "곰팡이 제거 시 락스를 사용할 수 있으나 플라스틱 손상 위험이 있음. 자외선 살균소독기 사용이 더 안전한 방법.",
+      "cautionSource": "사용자 경험"
+    },
+    {
+      "id": "travel-charger-dual-voltage",
+      "claim": "해외 여행 시 전동칫솔을 사용하려면 충전기의 입력 전압 범위를 확인해야 한다. 110-220V 병기된 제품은 돼지코 어댑터로 사용 가능하지만, 110-130V로만 표시되면 220V에서 사용하면 안 된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "해외직구 사용자 경험담 및 전자제품 안내",
+      "source_url": "http://m.enuri.com/knowcom/detail.jsp?kbno=997751",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동칫솔",
+        "line": "전체",
+        "years": "2010~",
+        "region": "전세계"
+      },
+      "caution": "충전기 뒷면 또는 설명서에서 입력 전압을 반드시 확인. 110V만 지원하는 제품을 220V 국가에서 충전하면 고장날 수 있음.",
+      "cautionSource": "전자제품 안내"
+    },
+    {
+      "id": "charger-compatibility-models",
+      "claim": "필립스 소닉케어의 충전기는 서로 다른 소닉케어 모델 간에 호환되지 않을 수 있으므로, 구매한 제품과 함께 제공된 충전기를 사용해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips 소닉케어 공식 고객지원",
+      "source_url": "https://www.philips.co.kr/c-t/XC000016868",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "필립스",
+        "category": "전동칫솔",
+        "line": "소닉케어 전 라인",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "다른 모델의 충전기로 억지로 사용하면 손상 또는 화재 위험 가능.",
+      "cautionSource": "Philips 공식 문서"
+    },
+    {
+      "id": "warranty-two-years",
+      "claim": "필립스 소닉케어와 오랄비 전동칫솔은 구매 후 2년의 제조사 보증 기간을 제공한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Philips 소닉케어 & Oral-B 공식 웹사이트",
+      "source_url": "https://www.philips.co.kr/c-t/XC000016868",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동칫솔",
+        "line": "필립스 소닉케어, 오랄비",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "보증 기간 내 제조 결함에 대해서만 교환·수리 가능. 사용자 부주의, 손상, 개조는 보증 대상 제외.",
+      "cautionSource": "제조사 보증 정책"
+    }
+  ]
+}

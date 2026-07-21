@@ -1,0 +1,176 @@
+{
+  "topic": "애플워치 연결 끊김·충전 안 됨·배터리 소모 자가점검",
+  "brand": "애플",
+  "article": "apple-watch-selfcheck",
+  "captured": "2026-07-21",
+  "reused_facts": ["battery-swelling-stop-immediately"],
+  "declined_facts": [
+    {
+      "id": "iphone-force-restart-generation-split",
+      "why": "아이폰 강제 재시작 방법이며, 애플워치는 사이드 버튼+Digital Crown 고정 조합"
+    },
+    {
+      "id": "iphone-battery-menu-split",
+      "why": "아이폰 배터리 성능 메뉴이며, 애플워치 배터리 소모와 무관"
+    },
+    {
+      "id": "airpods-reset-procedure-model-variation",
+      "why": "에어팟 리셋이며, 애플워치는 unpair/erase 절차가 다름"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "apple-watch-iphone-reconnection-basic-steps",
+      "claim": "애플워치가 아이폰과 연결되지 않을 때 기본 확인 순서는 (1) 두 기기 모두 켜져 있고 Bluetooth가 활성화되어 있는지, (2) 기내 모드가 꺼져 있는지, (3) 두 기기 모두 동일한 Wi-Fi 네트워크에 연결되어 있는지 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your Apple Watch isn't connected or paired with your iPhone",
+      "source_url": "https://support.apple.com/en-us/108360",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "스마트워치", "line": "Apple Watch 전 모델", "years": "전 연식", "region": "글로벌" }
+    },
+    {
+      "id": "apple-watch-unpair-and-re-pair-procedure",
+      "claim": "연결 복구 시 unpair(페어링 제거)를 시도할 수 있다. 아이폰의 Watch 앱 > My Watch 탭 > 모든 워치 > 원하는 워치 옆 정보 버튼 > '이 Apple Watch 페어링 해제' 선택. 이후 Watch 앱에서 새 워치 페어링 순서로 다시 설정한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Unpair and erase your Apple Watch",
+      "source_url": "https://support.apple.com/en-us/108372",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "스마트워치", "line": "Apple Watch 전 모델", "years": "전 연식", "region": "글로벌" }
+    },
+    {
+      "id": "apple-watch-charging-port-cleaning",
+      "claim": "애플워치가 충전되지 않을 때 가장 흔한 원인은 워치 뒷면의 마그네틱 충전 접점과 충전기의 금속 표면에 먼지나 이물질이 끼어 있는 것이다. 보풀 없는 부드러운 천(극세사 천)으로 두 접점을 가볍게 닦아서 청소해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — How to clean your Apple Watch",
+      "source_url": "https://support.apple.com/en-us/108893",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "스마트워치", "line": "Apple Watch 전 모델", "years": "전 연식", "region": "글로벌" }
+    },
+    {
+      "id": "apple-watch-charger-vinyl-removal",
+      "claim": "새 애플워치 충전기를 처음 사용할 때는 마그네틱 충전기 양쪽 면의 보호 비닐을 반드시 제거해야 한다. 비닐이 붙어 있으면 접촉 불량으로 충전이 안 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your Apple Watch won't turn on or won't charge",
+      "source_url": "https://support.apple.com/en-us/108927",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "스마트워치", "line": "Apple Watch 전 모델", "years": "전 연식", "region": "글로벌" }
+    },
+    {
+      "id": "apple-watch-charging-force-restart",
+      "claim": "충전 포트 청소 및 충전기 확인 후에도 충전이 안 되면 애플워치를 강제 재시작해야 한다. 사이드 버튼과 Digital Crown을 동시에 약 10초 이상 누르고 있다가 화면이 검게 변하고 Apple 로고가 나타나면 버튼을 놓는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Restart Apple Watch",
+      "source_url": "https://support.apple.com/guide/watch/restart-apple-watch-apd521a8a902/watchos",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "스마트워치", "line": "Apple Watch 전 모델", "years": "전 연식", "region": "글로벌" }
+    },
+    {
+      "id": "apple-watch-always-on-display-battery-drain",
+      "claim": "애플워치 배터리가 빨리 소모되는 주요 원인은 항상 켜진 디스플레이(Always-On Display) 기능이 활성화되어 있기 때문이다. 이 기능을 끄려면 설정 > 디스플레이와 밝기 > 항상 켜짐을 토글 오프한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If the battery in your Apple Watch drains too quickly",
+      "source_url": "https://support.apple.com/en-us/122789",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "스마트워치", "line": "항상 켜짐 기능 지원 모델", "years": "2015~", "region": "글로벌" }
+    },
+    {
+      "id": "apple-watch-background-app-refresh-battery",
+      "claim": "애플워치 백그라운드 앱 새로고침(Background App Refresh) 기능은 설치된 앱들이 백그라운드에서 데이터를 주기적으로 업데이트하도록 하는데, 이것이 배터리 소모의 주요 원인이 될 수 있다. 설정 > 일반 > 백그라운드 앱 새로고침에서 전체 끄기 또는 개별 앱별로 비활성화할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If the battery in your Apple Watch drains too quickly / Extend the battery life on Apple Watch",
+      "source_url": "https://support.apple.com/guide/watch/extend-the-battery-life-apd422aaa391/watchos",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "스마트워치", "line": "Apple Watch 전 모델", "years": "2015~", "region": "글로벌" }
+    },
+    {
+      "id": "apple-watch-screen-brightness-battery-impact",
+      "claim": "화면 밝기가 높을수록 배터리 소모가 증가한다. 배터리를 절약하려면 설정 > 디스플레이와 밝기에서 밝기를 낮추거나 자동 밝기 조절을 활성화할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If the battery in your Apple Watch drains too quickly / Extend the battery life on Apple Watch",
+      "source_url": "https://support.apple.com/guide/watch/extend-the-battery-life-apd422aaa391/watchos",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "스마트워치", "line": "Apple Watch 전 모델", "years": "전 연식", "region": "글로벌" }
+    },
+    {
+      "id": "apple-watch-force-restart-procedure-standard",
+      "claim": "일반 재시작(normal restart)이 안 될 때 강제 재시작을 시도한다. 사이드 버튼을 눌렀을 때 나타나는 슬라이더를 사용하지 말고, 사이드 버튼과 Digital Crown을 동시에 10초 이상 길게 누르면 화면이 검게 변하고 Apple 로고가 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Restart Apple Watch",
+      "source_url": "https://support.apple.com/guide/watch/restart-apple-watch-apd521a8a902/watchos",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "스마트워치", "line": "Apple Watch 전 모델", "years": "전 연식", "region": "글로벌" }
+    },
+    {
+      "id": "apple-watch-heart-rate-wearing-position",
+      "claim": "애플워치 심박수 센서는 손목뼈 위쪽 약 2.5cm(1인치) 위에 센서가 위치해야 가장 정확한 측정이 가능하다. 센서가 피부에 닿아 있어야 하며, 워치는 움직이지 않을 정도로 안전하게 착용하되 혈액 순환을 방해하지 않아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Get the most accurate measurements using your Apple Watch",
+      "source_url": "https://support.apple.com/en-us/105002",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "스마트워치", "line": "심박 센서 지원 모델", "years": "2015~", "region": "글로벌" },
+      "caution": "밴드 조임 정도는 손가락 하나가 밴드와 손목 사이에 들어갈 수 있을 정도가 적절하다.",
+      "cautionSource": "Apple Support 정확한 측정 가이드의 밴드 착용 조건"
+    },
+    {
+      "id": "apple-watch-heart-rate-accuracy-factors",
+      "claim": "애플워치 심박수 측정 정확도는 착용 방식 외에도 문신의 색상, 피부색, 밴드 핏, 손목 움직임, 추위 등 여러 요인의 영향을 받는다. 광용적맥파측정(PPG) 기술 특성상 피부 색이 매우 어두울 때나 진한 색 문신이 센서 영역을 덮을 때 신호가 약해질 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Get the most accurate measurements using your Apple Watch / Monitor your heart rate with Apple Watch",
+      "source_url": "https://support.apple.com/en-us/105002",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "스마트워치", "line": "심박 센서 지원 모델", "years": "2015~", "region": "글로벌" }
+    },
+    {
+      "id": "apple-watch-watchos-update-battery-requirement",
+      "claim": "watchOS 업데이트를 설치하기 전에 애플워치 배터리가 최소 50% 이상 충전되어 있어야 한다. 배터리 부족 상태에서 업데이트를 시도하면 설치가 실패할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Update your Apple Watch",
+      "source_url": "https://support.apple.com/en-us/108926",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "스마트워치", "line": "Apple Watch 전 모델", "years": "전 연식", "region": "글로벌" }
+    },
+    {
+      "id": "apple-watch-watchos-update-storage-requirement",
+      "claim": "watchOS 업데이트를 위해서는 Apple Watch 저장 공간에 충분한 여유가 필요하다. 저장 공간이 부족하면 업데이트 설치가 실패할 수 있으므로, 필요시 앱이나 음악, 사진을 삭제하여 공간을 확보해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Update your Apple Watch",
+      "source_url": "https://support.apple.com/en-us/108926",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "스마트워치", "line": "Apple Watch 전 모델", "years": "전 연식", "region": "글로벌" }
+    },
+    {
+      "id": "apple-watch-watchos-update-internet-connectivity",
+      "claim": "watchOS 업데이트는 인터넷 연결이 필요하다. 애플워치는 iPhone을 통하거나 Wi-Fi 또는 셀룰러(Apple Watch LTE 모델)로 인터넷에 연결되어 있어야 한다. 업데이트 중 인터넷 연결이 끊기면 설치가 중단될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Update your Apple Watch",
+      "source_url": "https://support.apple.com/en-us/108926",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "스마트워치", "line": "Apple Watch 전 모델", "years": "전 연식", "region": "글로벌" }
+    },
+    {
+      "id": "apple-watch-watchos-update-unpair-as-last-resort",
+      "claim": "watchOS 업데이트가 여러 번 실패할 경우, 마지막 수단으로 iPhone의 Watch 앱에서 Apple Watch 페어링을 제거한 후 처음부터 다시 페어링하면 업데이트가 성공할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If you can't update your Apple Watch",
+      "source_url": "https://support.apple.com/en-us/111816",
+      "checked": "2026-07-21",
+      "scope": { "brand": "애플", "category": "스마트워치", "line": "Apple Watch 전 모델", "years": "전 연식", "region": "글로벌" }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "topic": "위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검",
+  "brand": "위닉스",
+  "article": "air-purifier-selfcheck",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "purifier-filter-types-washable-vs-disposable",
+    "prefilter-water-washing-drying",
+    "hepa-filter-no-water-washing",
+    "filter-replacement-cycle-6-12-months",
+    "odor-causes-filter-end-of-life-humidity-dust",
+    "suction-weak-filter-dirty-reset",
+    "dust-sensor-monthly-cleaning",
+    "sensor-red-light-persistent-causes",
+    "noise-increase-filter-dirty-motor",
+    "filter-exchange-lamp-light-normal"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "winix-filter-life-varies-by-air-quality",
+      "claim": "위닉스 공기청정기의 필터 수명은 실내 공기 오염도에 따라 달라지며, 먼지가 많은 환경에서는 필터 수명이 단축되고 깨끗한 환경에서는 길어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위닉스 공기청정기 필터 교체 및 리셋 방법 안내",
+      "source_url": "https://guide.ccdd.co.kr/588",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "위닉스",
+        "category": "공기청정기",
+        "line": "전 라인",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "필터 교체 표시등이 켜지지 않았더라도 바람세기가 약해지거나 냄새가 난다면 필터를 점검해 조기 교체를 검토해야 한다.",
+      "cautionSource": "위닉스 필터 수명 기준"
+    },
+    {
+      "id": "winix-sensor-monthly-cleaning-frequency",
+      "claim": "위닉스 공기청정기의 먼지 센서는 월 1회 청소를 권장하며, 먼지가 많은 장소에서 사용할 경우 더 자주 청소해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위닉스 공기청정기 센서 관리 안내",
+      "source_url": "https://guide.ccdd.co.kr/588",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "위닉스",
+        "category": "공기청정기",
+        "line": "센서 장착 전 라인",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "센서에 먼지가 끼면 필터를 교체해도 먼지 농도가 계속 높게 감지되거나 필터 교체 알림이 반복될 수 있다.",
+      "cautionSource": "위닉스 센서 관리 정책"
+    },
+    {
+      "id": "winix-customer-center-1544-5081",
+      "claim": "위닉스 공기청정기의 기술 상담, AS 신청, 필터 구매 등 모든 서비스는 고객만족센터 1544-5081로 통합 문의된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위닉스 공기청정기 필터 교체 및 리셋 방법 안내",
+      "source_url": "https://guide.ccdd.co.kr/588",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "위닉스",
+        "category": "공기청정기",
+        "line": "전 라인",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "고객센터 전화번호는 제품 설명서에도 표기되어 있으며, 기술 문제가 발생하면 신속히 연락하는 것이 좋다.",
+      "cautionSource": "없음"
+    }
+  ]
+}

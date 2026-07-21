@@ -1,0 +1,369 @@
+{
+  "topic": "가정용 CCTV·홈캠 연결 안 됨·영상 끊김·녹화 안 됨 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "iptime-2g4-vs-5g-characteristics",
+    "channel-interference-2g4ghz-vs-5ghz"
+  ],
+  "declined_facts": [
+    {
+      "id": "dashcam-memory-card-lifespan",
+      "why": "블랙박스는 주행 중 연속 고속 쓰기(수십 Mbps), 홈캠은 간헐적 이벤트 기반 녹화로 카드 수명이 크게 다름. 블랙박스의 '6개월~1년' 기준을 홈캠에 직접 적용 불가"
+    },
+    {
+      "id": "dashcam-memory-card-format-frequency",
+      "why": "대시캠 기준 '2주~1개월' 포맷은 고속 반복 쓰기로 인한 캐시 누적 기반. 홈캠은 사용 방식이 달라서 포맷 주기도 달라짐"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "home-cam-wifi-2g4-only-support",
+      "claim": "대부분의 가정용 CCTV 및 홈캠은 2.4GHz Wi-Fi만 지원하며 5GHz를 지원하지 않는다. 이는 5GHz 칩이 더 비싸고 전력을 많이 소비하기 때문이며, 홈캠은 장거리 신호 안정성이 필요해서 2.4GHz 대역을 선택한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "카메라 와이파이 연결 가이드 · 보안 카메라 커뮤니티",
+      "source_url": "https://www.clevelandsecuritycameras.com/post/why-won-t-my-camera-connect-to-5ghz-wi-fi",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "대부분의 보급형·중급형 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "home-cam-band-steering-confusion",
+      "claim": "최신 라우터는 Band Steering(스마트 스티어링) 기능으로 2.4GHz와 5GHz 네트워크에 같은 SSID 이름을 부여하는데, 이로 인해 홈캠이 설정 중 5GHz 신호로 혼동되어 연결에 실패할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "와이파이 라우터 설정 가이드",
+      "source_url": "https://www.clevelandsecuritycameras.com/post/why-won-t-my-camera-connect-to-5ghz-wi-fi",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "2.4GHz만 지원하는 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "home-cam-ssid-separation-solution",
+      "claim": "홈캠 연결이 실패할 때는 라우터 설정에서 SSID를 분리하여 2.4GHz와 5GHz에 다른 이름을 부여해야 한다. 예를 들어 'MyWiFi_2.4'와 'MyWiFi_5'로 구분한 후, 홈캠을 명시적으로 2.4GHz 버전에만 연결하면 된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "카메라 와이파이 연결 문제 해결 가이드",
+      "source_url": "https://www.clevelandsecuritycameras.com/post/why-won-t-my-camera-connect-to-5ghz-wi-fi",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "2.4GHz만 지원하는 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "라우터 설정 페이지(보통 관리자 페이지)에서 Band Steering을 비활성화하거나, SSID를 수동으로 분리하는 방법이 필요하다. 라우터 모델별로 메뉴 위치가 다르므로 설명서를 참조할 것.",
+      "cautionSource": "라우터 설정 가이드 — Band Steering 기능 설명"
+    },
+    {
+      "id": "home-cam-video-lag-packet-loss",
+      "claim": "홈캠 영상이 끊기거나 버퍼링 지연이 발생하는 주요 원인은 네트워크 패킷 로스(손실)다. 무선 신호 간섭, 거리 초과, Wi-Fi 채널 혼잡, 라우터 과부하 등으로 인해 영상 데이터 일부가 손실되면 화면 끊김이 나타난다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "CCTV 화면 끊김 문제 커뮤니티 · 기술 가이드",
+      "source_url": "https://exocctv.com/networkguide/cctv-packet-loss-fix/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "무선 연결 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "home-cam-video-lag-bandwidth-power",
+      "claim": "홈캠 영상 지연은 네트워크 대역폭 부족, 홈캠 전원 불안정, 라우터 캐시 누적, 홈캠 앱 충돌로도 발생한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "CCTV 영상 끊김 원인 분석",
+      "source_url": "https://www.remosoftware.com/info/kr/common-cctv-camera-problems/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "home-cam-video-lag-fix-reboot",
+      "claim": "홈캠 영상 끊김 증상은 다음 순서로 해결할 수 있다: 1) 홈캠의 전원 케이블을 뽑았다가 30초 후 재연결하여 재부팅, 2) 라우터도 같은 방식으로 재부팅, 3) 홈캠 앱을 재시작, 4) Wi-Fi 채널을 변경(자동 선택 사용)",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "CCTV 트러블슈팅 가이드",
+      "source_url": "https://keeper.ceo/blog/cctv-self-check-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "home-cam-infrared-hazy-reflection-cause",
+      "claim": "홈캠의 밤 모드(적외선) 화면이 하얗게 뿌옇게 보이는 주요 원인은 카메라에서 나오는 적외선 불빛이 카메라 앞의 유리창, 벽, 처마 등의 표면에 반사되어 발생한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "카메라 렌즈 뿌옇게 보임 문제 가이드",
+      "source_url": "https://keeper.ceo/blog/cctv-self-check-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "야간 적외선 기능 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "home-cam-infrared-hazy-lens-contamination",
+      "claim": "홈캠 야간 모드 화면이 뿌옇게 보이는 또 다른 원인은 렌즈나 투명 렌즈 커버에 먼지, 물방울 자국, 거미줄, 또는 청소 시 생긴 흠집이 묻어 있는 경우다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "카메라 렌즈 상태 확인 가이드",
+      "source_url": "https://www.cizucu.com/en/magazines/2024-09-camera-lens-condensation-prevention",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "home-cam-infrared-hazy-lens-cleaning",
+      "claim": "홈캠 밤 모드 화면 뿌옇게 문제는 다음과 같이 해결한다: 1) 부드러운 천(안경닦이 등)으로 렌즈를 조심스럽게 닦기, 2) 적외선 반사가 원인이면 카메라 각도를 조절하거나 앞의 반사되는 물건 치우기, 3) 실내 CCTV라면 카메라와 유리창 사이에 커튼이나 스크린을 설치하여 반사 차단",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "카메라 렌즈 청소 및 설치 가이드",
+      "source_url": "https://www.cizucu.com/en/magazines/2024-09-camera-lens-condensation-prevention",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "home-cam-motion-detection-false-positive-causes",
+      "claim": "홈캠 움직임 감지(모션 감지)가 오작동하여 정상 상황에서도 계속 알림을 보내는 원인은 민감도가 너무 높게 설정된 것, 감지 영역이 제대로 설정되지 않은 것, 센서 위치가 부적절한 것이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "카메라 모션 감지 오류 해결 가이드",
+      "source_url": "https://icems2021.com/2026/04/03/%EC%B9%B4%EB%A9%94%EB%9D%BC-%EC%9B%80%EC%A7%81%EC%9E%84-%EA%B0%90%EC%A7%80-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0%ED%95%98%EB%8A%94-7%EA%B0%80%EC%A7%80-%EB%B9%84%EB%B2%95/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "모션 감지 기능 탑재 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "home-cam-motion-detection-sensitivity-adjustment",
+      "claim": "홈캠의 움직임 감지 오감지를 줄이려면 앱의 설정 메뉴에서 민감도(Sensitivity)를 낮추거나 중간 수준으로 조정하고, 감지 영역(Detection Zone)을 설정하여 실제 모니터링 대상 영역만 감지되도록 제한해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "Tapo 카메라·TP-Link 카메라 감지 설정 가이드",
+      "source_url": "https://specialmanual.com/tapo-%EC%B9%B4%EB%A9%94%EB%9D%BC-%EC%95%8C%EB%A6%BC-%EB%B0%8F-%EA%B0%90%EC%A7%80-%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95-%EC%9B%80%EC%A7%81%EC%9E%84-%EC%82%AC%EB%9E%8C-%EC%95%84%EA%B8%B0-%EC%9A%B8/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "모션 감지 기능 탑재 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "민감도를 낮추면 알림이 줄지만 실제 침입 같은 중요한 움직임을 놓칠 수 있으므로, 낮음·중간·높음 중 '중간' 정도에서 시작해 며칠 사용해본 후 조정하는 것이 권장된다.",
+      "cautionSource": "카메라 모션 감지 설정 가이드 — 민감도 조정 권장 수준"
+    },
+    {
+      "id": "home-cam-sd-card-not-recognized-causes",
+      "claim": "홈캠이 SD카드를 인식하지 못하거나 계속 포맷을 요청하는 원인은 카드와 카메라의 접촉 불량, 파일 시스템 손상, SD카드의 물리적 손상 또는 수명 다함이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "카메라 SD카드 인식 불량 문제 가이드",
+      "source_url": "https://blog.7datarecovery.com/ko/camera-wont-read-sd-card/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "SD카드 녹화 기능 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "home-cam-sd-card-reinsertion-test",
+      "claim": "홈캠 SD카드 인식 불량 시 첫 조치는 카메라의 전원을 끈 후 SD카드를 제거하고 접점 부분을 마른 천으로 닦은 후, 카드를 다시 완전히 삽입하고 전원을 켜서 인식 여부를 확인하는 것이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "카메라 SD카드 접촉 불량 해결 가이드",
+      "source_url": "https://blog.7datarecovery.com/ko/camera-wont-read-sd-card/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "SD카드 녹화 기능 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "home-cam-sd-card-format-in-camera",
+      "claim": "새 SD카드를 홈캠에 삽입했거나 카드 인식 문제가 있을 때는 반드시 홈캠의 설정 메뉴에서 내장된 '포맷' 또는 '초기화' 기능을 사용하여 포맷해야 한다. 컴퓨터에서 미리 포맷한 카드라도 카메라에서 다시 포맷해야 완벽하게 작동한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "카메라 SD카드 포맷 방법 가이드",
+      "source_url": "https://www.tp-link.com/kr/support/faq/2749/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "SD카드 녹화 기능 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "포맷 전에 SD카드에 중요한 영상이 있는지 반드시 확인하고 컴퓨터에 백업하시오. 포맷하면 모든 데이터가 삭제되고 복원할 수 없다.",
+      "cautionSource": "카메라 포맷 기능 안내 — 데이터 손실 경고"
+    },
+    {
+      "id": "home-cam-sd-card-format-computer-alternative",
+      "claim": "홈캠에서 포맷이 되지 않으면 SD카드를 컴퓨터에 연결하여 FAT32 파일시스템으로 포맷한 후 다시 홈캠에 삽입하여 시도해볼 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "카메라 SD카드 컴퓨터 포맷 가이드",
+      "source_url": "https://blog.7datarecovery.com/ko/camera-wont-read-sd-card/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "SD카드 녹화 기능 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "home-cam-sd-card-replacement-if-unrecognized",
+      "claim": "위의 모든 조치(접촉 불량 확인, 재삽입, 카메라 포맷, 컴퓨터 포맷)를 시도해도 SD카드가 인식되지 않으면 카드의 수명이 다했을 가능성이 높으므로 새 카드로 교체해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "카메라 SD카드 문제 해결 완전 가이드",
+      "source_url": "https://www.kingspec.com/ko/news/common-sd-card-problems-and-how-to-solve-them.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "SD카드 녹화 기능 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "home-cam-firmware-update-via-app",
+      "claim": "홈캠 펌웨어 업데이트는 홈캠 앱의 설정 또는 기기 정보 메뉴에서 확인할 수 있으며, 업데이트 가능한 펌웨어가 있으면 팝업 알림이 나타난다. '[지금 업데이트]' 버튼을 누르면 자동으로 다운로드되고 설치된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "헤이홈 홈카메라 펌웨어 업데이트 안내",
+      "source_url": "https://hej.life/article/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/1/69488/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "home-cam-firmware-update-precautions",
+      "claim": "홈캠 펌웨어 업데이트 중에는 절대 전원을 끄거나 와이파이 연결을 끊지 말아야 한다. 업데이트가 중단되면 카메라가 부팅되지 않을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "홈카메라 펌웨어 업데이트 주의사항",
+      "source_url": "https://hej.life/article/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/1/69488/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "업데이트 중 문제가 생기면 홈캠을 공유기와 가까운 곳으로 이동시킨 후 펌웨어 업데이트를 다시 진행하거나, 완료 후 홈캠을 재부팅하여 펌웨어가 완전히 적용되도록 할 것.",
+      "cautionSource": "펌웨어 업데이트 완료 후 재부팅 필수 안내"
+    },
+    {
+      "id": "home-cam-security-password-change",
+      "claim": "홈캠은 기본 비밀번호로 설정되어 있으면 해킹 위험이 높으므로, 앱의 설정 메뉴에서 초기 설정 단계에 반드시 비밀번호를 변경해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "홈캠 해킹 방지 보안 가이드",
+      "source_url": "https://duribuncouple.com/%EA%B0%80%EC%A0%95%EC%9A%A9-%ED%99%88%EC%BA%A0-%ED%95%B4%ED%82%B9-%EB%B0%A9%EC%A7%80-%EC%B4%88%EA%B8%B0-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD%EA%B3%BC-%ED%8E%8C%EC%9B%A8%EC%96%B4/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "비밀번호는 8자 이상, 문자·숫자·특수기호를 조합하여 설정하고, 주기적(3~6개월)으로 변경하는 것이 권장된다.",
+      "cautionSource": "홈캠 보안 설정 가이드 — 비밀번호 강도 및 변경 주기 권장"
+    },
+    {
+      "id": "home-cam-app-restart-troubleshooting",
+      "claim": "홈캠 앱이 먹통이거나 화면이 나오지 않을 때는 앱을 완전히 종료하고 30초 후 다시 켜보면 대부분 복구된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "홈캠 앱 오류 해결 기본 가이드",
+      "source_url": "https://keeper.ceo/blog/cctv-self-check-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "home-cam-reboot-power-reset",
+      "claim": "홈캠의 화면이 먹통이거나 응답하지 않을 때는 카메라의 전원 케이블을 뽑아 30초간 대기한 후 다시 연결하여 재부팅하면 대부분 정상화된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "카메라 기본 트러블슈팅 가이드",
+      "source_url": "https://keeper.ceo/blog/cctv-self-check-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "가정용 CCTV·홈캠",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    }
+  ]
+}

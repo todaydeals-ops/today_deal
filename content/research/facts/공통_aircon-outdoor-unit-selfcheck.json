@@ -1,0 +1,320 @@
+{
+  "topic": "에어컨 실외기 자가점검: 소음·진동·물 떨어짐·화재 예방·통풍 공간",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "outdoor-unit-normal-refrigerant-sound",
+      "claim": "에어컨 실외기에서 냉매가 배관 내를 순환하면서 내는 '쉑~', '치익~' 같은 소리는 정상 작동음이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 솔루션",
+      "source_url": "https://www.samsungsvc.co.kr/solution/31481",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "outdoor-unit-compressor-hum-normal",
+      "claim": "실외기에서 나는 '웅~', '뷰융~' 같은 저주파 음은 컴프레서가 온도 차이에 따라 회전 속도를 조절할 때 나는 정상음이며, 실내외 온도 차가 클수록 더 크게 들린다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 솔루션",
+      "source_url": "https://www.samsungsvc.co.kr/solution/31481",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "outdoor-unit-vibration-from-installation",
+      "claim": "실외기 진동이나 '드르륵', '덜덜' 소리가 나는 경우, 가장 먼저 확인할 것은 설치 수평 상태와 고정 볼트 조임 상태다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 솔루션",
+      "source_url": "https://www.samsungsvc.co.kr/solution/31481",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "outdoor-unit-leveling-rubber-pad",
+      "claim": "실외기 받침대와 바닥면의 수평이 맞지 않을 때 고무패드(방진고무)를 사용해 수평을 맞추면 진동과 소음이 감소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 솔루션",
+      "source_url": "https://www.samsungsvc.co.kr/solution/31481",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "수평 조정 시 실외기가 안정적으로 지지되는지 확인해야 한다."
+    },
+    {
+      "id": "outdoor-unit-nearby-obstacle-noise",
+      "claim": "실외기 주변에 장애물이 있거나 통풍 공간이 협소하면 열 방출이 제대로 되지 않아 부하가 증가하면서 소음이 커진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 솔루션",
+      "source_url": "https://www.samsungsvc.co.kr/solution/31481",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "outdoor-unit-ventilation-requirement",
+      "claim": "에어컨 냉난방 성능을 유지하려면 실외기 주변에 충분한 통풍 공간이 필수다. 벽으로부터 최소 15cm 이상 거리를 확보하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "세종시청 안전정책과 에어컨 화재 예방 공지",
+      "source_url": "https://www.sejong.go.kr/bbs/R0151/view.do?nttId=B000000043344Dj0eW6d",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "루버창을 닫거나 물건으로 실외기를 막으면 안전 모드가 작동하여 가동이 중지될 수 있다."
+    },
+    {
+      "id": "outdoor-unit-water-dripping-cooling-normal",
+      "claim": "냉방 운전 중 실외기에서 물이 떨어지는 현상은 정상이다. 실내 따뜻한 공기와 에어컨 냉각 부위의 온도 차이로 인해 결로가 발생하며, 습도가 높은 장마철에는 물의 양이 많을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 전자 고객지원 스스로 해결",
+      "source_url": "https://www.lge.co.kr/support/solutions-20154870943281",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "outdoor-unit-water-dripping-heating-defrost",
+      "claim": "난방 운전(겨울철) 중 실외기에서 물이 떨어지는 현상은 제상 운전 중 실외기에 붙은 성에가 녹으면서 발생하는 정상 현상이며, 수증기가 피어오르는 것처럼 보일 수도 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 전자 고객지원 스스로 해결",
+      "source_url": "https://www.lge.co.kr/support/solutions-20154870943281",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "outdoor-unit-water-collection-tray",
+      "claim": "실외기에서 물이 많이 떨어지는 경우, 실외기 하부에 물받이를 설치하면 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 전자 고객지원 스스로 해결",
+      "source_url": "https://www.lge.co.kr/support/solutions-20154870943281",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "outdoor-unit-not-running-power-check",
+      "claim": "에어컨 실외기가 작동하지 않을 때 먼저 확인할 것은 분전함의 누전차단기 상태다. 특히 시스템에어컨은 '에어컨' 또는 '실외기'라고 표시된 전용 차단기가 있으므로 이를 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 솔루션",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40690",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "outdoor-unit-not-running-mode-check",
+      "claim": "실외기가 작동하지 않는다면 리모컨의 운전 모드 설정을 확인해야 한다. 청정 운전이나 송풍 운전으로 설정되어 있으면 실외기가 가동되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 솔루션",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40690",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "outdoor-unit-not-running-compressor-protection",
+      "claim": "에어컨을 끈 직후 바로 다시 켜면 약 3~5분 동안 실외기가 작동하지 않을 수 있는데, 이는 컴프레서를 보호하기 위한 정상 기능이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 솔루션",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40690",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "이 대기 시간은 필수 안전 기능이므로 이 시간 동안 재시작을 반복하면 안 된다."
+    },
+    {
+      "id": "outdoor-unit-dust-accumulation-fire-risk",
+      "claim": "실외기에 먼지가 축적되면 열전달이 방해되어 냉각 성능이 저하되고, 컴프레서가 평소보다 더 많은 전력을 소모하면서 과열되며, 극단적으로 화재로 이어질 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "세종시청 안전정책과 에어컨 화재 예방 공지",
+      "source_url": "https://www.sejong.go.kr/bbs/R0151/view.do?nttId=B000000043344Dj0eW6d",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "5년 이상",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "outdoor-unit-electrical-hazard-aging",
+      "claim": "5년 이상 된 에어컨은 실외기 내부의 전기 배선 피복이 경화되거나 벗겨질 수 있고, 이 부분이 습기나 열과 만나면 접촉 불량, 전기 스파크, 절연 손상이 발생하여 화재로 이어질 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "세종시청 안전정책과 에어컨 화재 예방 공지",
+      "source_url": "https://www.sejong.go.kr/bbs/R0151/view.do?nttId=B000000043344Dj0eW6d",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "5년 이상",
+        "region": "KR"
+      },
+      "caution": "배선 점검은 전문가에게 의뢰해야 하며, 임의의 분해는 위험하다."
+    },
+    {
+      "id": "outdoor-unit-cleaning-safety",
+      "claim": "실외기 청소 전에 감전 사고 예방을 위해 반드시 에어컨 전원 플러그를 뽑거나 분전함의 차단기를 내려야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "세종시청 안전정책과 에어컨 화재 예방 공지",
+      "source_url": "https://www.sejong.go.kr/bbs/R0151/view.do?nttId=B000000043344Dj0eW6d",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "outdoor-unit-fin-cleaning-method",
+      "claim": "실외기 핀 사이에 낀 이물질은 전용 솔로 조심스럽게 쓸어내리고, 물 세척 시 고압세척기는 피하고 적절한 수압으로 핀이 변형되지 않도록 주의해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "세종시청 안전정책과 에어컨 화재 예방 공지",
+      "source_url": "https://www.sejong.go.kr/bbs/R0151/view.do?nttId=B000000043344Dj0eW6d",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "outdoor-unit-maintenance-schedule",
+      "claim": "에어컨 화재를 예방하기 위해 봄철(본격 운전 전)과 여름철 중간 한 번, 최소 연 2회 실외기 먼지를 제거하고 배선을 점검해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "세종시청 안전정책과 에어컨 화재 예방 공지",
+      "source_url": "https://www.sejong.go.kr/bbs/R0151/view.do?nttId=B000000043344Dj0eW6d",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "outdoor-unit-cover-ventilation-required",
+      "claim": "실외기 커버(차양막)를 사용할 경우 직사광선을 차단하는 효과가 있지만, 반드시 배기 통풍을 확보해야 한다. 통풍이 막히면 냉매 압력이 상승하여 고장이 유발될 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Clien 커뮤니티 실외기 커버 효과 토론",
+      "source_url": "https://www.clien.net/service/board/lecture/15103372",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "통풍구를 막는 커버는 절전 효과가 없을 수 있으며, 오히려 효율을 떨어뜨린다."
+    },
+    {
+      "id": "outdoor-unit-cover-summer-removal",
+      "claim": "겨울철 단열 목적의 실외기 커버도 여름철에는 반드시 제거하거나 통풍이 개방된 전용 제품으로 교체해야 한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Clien 커뮤니티 실외기 커버 효과 토론",
+      "source_url": "https://www.clien.net/service/board/lecture/15103372",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "topic": "구강세정기·워터픽 자가점검 — 물 안 나옴·약함·충전 불량·노즐 막힘·물새는 증상·잇몸 출혈·관리",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "charging-inductive-position",
+    "charging-adapter-damage-check",
+    "power-outlet-verification",
+    "descaling-citric-acid-soak-method",
+    "descaling-frequency-three-months-daily-use"
+  ],
+  "declined_facts": [
+    {
+      "id": "waterproof-rating-ipx",
+      "why": "전동칫솔 방수 등급 팩트이며, 구강세정기는 IPX4~IPX7이 다른 범위이고 용도도 다름(하단에 새로 작성)"
+    },
+    {
+      "id": "warranty-two-years",
+      "why": "전동칫솔 제조사 보증인데, 구강세정기 브랜드별·모델별로 상이. 워터픽은 별도 확인 필요"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "weak-water-flow-nozzle-buildup",
+      "claim": "구강세정기에서 물이 약하게 나오는 주요 원인은 노즐이 물때(미네랄 침전물)로 막혀 있기 때문이며, 정기적인 청소로 해결되는 경우가 많다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "워터픽 공식 고객지원 - 자가점검 안내",
+      "source_url": "https://www.waterpik.co.kr/cs/cs01.asp",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "구강세정기",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "노즐 청소 시 구연산이나 식초를 사용할 수 있으나, 노즐이 작아 손상 위험이 있으므로 부드럽게 다룰 것.",
+      "cautionSource": "워터픽 공식 가이드"
+    },
+    {
+      "id": "no-water-flow-reservoir-attachment",
+      "claim": "구강세정기에서 물이 안 나올 때 먼저 물탱크가 본체에 단단히 고정되어 있는지 확인해야 한다. 제대로 연결되지 않으면 압력이 형성되지 않아 물이 분사되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "워터픽 공식 고객지원 - 자가점검 안내",
+      "source_url": "https://www.waterpik.co.kr/cs/cs01.asp",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "구강세정기",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "water-leak-hose-damage",
+      "claim": "구강세정기에서 물이 새는 경우, 호스가 손상되었을 수 있으며, 대부분 호스 교체로 해결된다. 단, WP-70K 모델은 호스 교체가 불가능할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "워터픽 공식 고객지원 - 자가점검 안내",
+      "source_url": "https://www.waterpik.co.kr/cs/cs01.asp",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "워터픽",
+        "category": "구강세정기",
+        "line": "호스 장착 모델 (WP-70K 제외)",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "WP-70K 모델의 경우 호스 교체 불가능. 호스 손상 시 제품 교체 고려.",
+      "cautionSource": "워터픽 공식 고객지원"
+    },
+    {
+      "id": "water-leak-gasket-seal",
+      "claim": "물탱크에서 물이 새는 경우, 가스킷(밀폐 링)이 손상되었을 수 있으며, 가스킷 교체로 대부분 해결된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "워터픽 공식 고객지원 - 자가점검 안내",
+      "source_url": "https://www.waterpik.co.kr/cs/cs01.asp",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "구강세정기",
+        "line": "물탱크 가스킷 교체 가능 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "가스킷이 손상되면 밀폐가 안 되어 물새는 증상이 심해질 수 있다. 교체 부품은 정품 사용 권장.",
+      "cautionSource": "워터픽 공식 가이드"
+    },
+    {
+      "id": "charging-issue-wrong-adapter",
+      "claim": "충전식 구강세정기가 충전되지 않는 경우, 사용 중인 어댑터의 사양을 반드시 확인해야 한다. 5V 1A(정속충전기) 어댑터만 사용해야 하며, 5V 2A, 9V 1A, 미표기 어댑터는 제품 손상을 유발할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "워터픽 공식 고객지원 - 충전 관련 안내",
+      "source_url": "https://www.waterpik.co.kr/as/product_qna.asp",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "구강세정기",
+        "line": "충전식 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "부정확한 어댑터 사용은 배터리 손상, 화재, 폭발 위험이 있다. 반드시 정속충전기(5V 1A)를 사용할 것.",
+      "cautionSource": "워터픽 공식 안전 경고"
+    },
+    {
+      "id": "nozzle-replacement-six-months",
+      "claim": "구강세정기 노즐은 위생 관리를 위해 3~6개월마다 교체하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "워터픽 공식 가이드 & 필립스 구강세정기 권장사항",
+      "source_url": "https://www.waterpik.co.kr/cs/cs04.asp",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "구강세정기",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "노즐을 교체하지 않으면 세균과 곰팡이의 온상이 될 수 있다. 자주 세척하더라도 정기 교체는 위생상 필수.",
+      "cautionSource": "워터픽 공식 관리 지침"
+    },
+    {
+      "id": "mineral-buildup-cleaning-citric-acid-weekly",
+      "claim": "구강세정기의 노즐과 물탱크의 물때(미네랄 침전물)는 1~2주마다 구연산 1.5스푼을 수돗물에 넣고 분사하여 세척할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "원예노트 워터픽 청소 방법, 구강세정기 청소 가이드 종합",
+      "source_url": "https://info.ryuklight.com/265",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "구강세정기",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "구연산 비율을 지켜야 산성 잔여물이 남지 않는다. 청소 후 반드시 맑은 물로 여러 번 헹울 것. 구연산 잔여물이 남으면 사용 시 불편을 초래할 수 있다.",
+      "cautionSource": "사용자 경험 기반"
+    },
+    {
+      "id": "vinegar-cleaning-nozzle-soak",
+      "claim": "구강세정기 노즐은 식초와 물을 1:2 비율로 혼합한 용액에 10~15분 담가 소독할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "워터픽 공식 관리 가이드 & 사용자 가이드 종합",
+      "source_url": "https://www.waterpik.co.kr/cs/cs04.asp",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "구강세정기",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "식초 냄새가 남을 수 있다. 소독 후 맑은 물로 충분히 헹울 것.",
+      "cautionSource": "사용자 경험"
+    },
+    {
+      "id": "reservoir-emptying-prevent-mold",
+      "claim": "구강세정기 물탱크는 사용 후 남은 물을 반드시 비우고, 뚜껑을 열어 통풍하게 보관해야 한다. 뚜껑을 닫아두면 세균과 곰팡이가 번식하기 쉽다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "워터픽 공식 관리 가이드",
+      "source_url": "https://www.waterpik.co.kr/cs/cs04.asp",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "구강세정기",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "odor-from-bacterial-growth",
+      "claim": "구강세정기에서 불쾌한 냄새가 나는 경우, 물탱크에 세균이나 곰팡이가 번식한 것이 원인이다. 정기적인 세척과 물탱크 환기로 예방할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "구강세정기 청소 가이드 종합",
+      "source_url": "https://info.ryuklight.com/265",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "구강세정기",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "냄새가 심한 경우 세척 후에도 여러 번 물을 분사하여 잔여물을 제거할 것.",
+      "cautionSource": "사용자 경험"
+    },
+    {
+      "id": "gingival-bleeding-pressure-reduction",
+      "claim": "구강세정기 사용 중 잇몸 출혈이 발생하는 경우, 수압을 낮추거나 따뜻한 물(미지근한 온수)로 사용하면 자극을 줄일 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "와우 구강위생 가이드, 울산 치과 구강세정기 사용 팁",
+      "source_url": "https://jubbama.com/%EC%98%A4%EC%95%84-%EC%9B%8C%ED%84%B0%ED%94%BD-%EC%9E%87%EB%AA%B8-%EC%9E%90%EA%B7%B9-%EC%A4%84%EC%9D%B4%EB%8A%94-%EC%82%AC%EC%9A%A9-%ED%8C%81/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "구강세정기",
+        "line": "수압 조절 가능 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "잇몸 출혈은 염증 신호일 수 있으므로, 계속 출혈하면 치과 진료를 권장. 물줄기가 정면으로 정면이 아닌 각도로 스치듯이 지나가게 사용하는 것도 중요.",
+      "cautionSource": "치과 권장사항"
+    },
+    {
+      "id": "warm-water-sensitivity-reduction",
+      "claim": "민감한 치아나 염증이 있는 잇몸을 가진 경우, 구강세정기에 찬물 대신 체온과 비슷한 미지근한 온수를 사용하면 자극이 줄어든다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "와우 구강위생 가이드",
+      "source_url": "https://jubbama.com/%EC%98%A4%EC%95%84-%EC%9B%8C%ED%84%B0%ED%94%BD-%EC%9E%87%EB%AA%B8-%EC%9E%90%EA%B7%B9-%EC%A4%84%EC%9D%B4%EB%8A%94-%EC%82%AC%EC%9A%A9-%ED%8C%81/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "구강세정기",
+        "line": "물탱크식 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "너무 뜨거운 물은 사용하지 말 것. 손으로 대보아 미지근하다고 느껴지는 정도(약 35~37도)가 적당.",
+      "cautionSource": "사용자 경험"
+    },
+    {
+      "id": "waterproof-rating-cordless-wired",
+      "claim": "구강세정기의 방수 등급은 보통 IPX4~IPX7 범위이며, IPX4는 방진 0등급·방수 4등급(물 튀김에 강함), IPX7은 방진 0등급·방수 7등급(30분간 1m 물속에 잠겨도 안전)을 의미한다. 많은 제품이 IPX7 등급을 제공한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "IP 등급 기준 및 구강세정기 제품 사양 종합",
+      "source_url": "https://nosearch.com/recommendation/pick/living/water_toothpick",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "구강세정기",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "IPX4 이상을 권장. 저가형 제품은 방수 등급이 없을 수 있으니 구매 전 확인.",
+      "cautionSource": "제품 사양 기준"
+    },
+    {
+      "id": "cordless-vs-wired-comparison",
+      "claim": "구강세정기는 크게 충전식(무선)과 유선식으로 나뉜다. 충전식은 휴대용으로 여행·출장에 편리하고, 유선식은 고정형으로 물탱크 용량이 더 크며 사용 공간에 제약이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "구강세정기 제품 비교 가이드",
+      "source_url": "https://electronics10000.com/home-appliance-water-flosser-waterpik/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "구강세정기",
+        "line": "충전식 및 유선식 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "유선식은 욕실 콘센트 위치에 따라 사용 범위가 제한될 수 있다. 충전식은 배터리 지속시간을 확인해야 함.",
+      "cautionSource": "제품 특성"
+    },
+    {
+      "id": "pressure-control-setting-models",
+      "claim": "구강세정기의 수압 조절 기능은 모델에 따라 다르다. 일부 저가형 모델은 수압 조절이 불가능할 수 있으며, 중상급 모델부터 수압을 단계별로 조절할 수 있다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 보고",
+      "source_url": "https://jubbama.com/%ED%9C%B4%EB%8C%80%EC%9A%A9-%EC%9B%8C%ED%84%B0%ED%94%BD-%EC%88%98%EC%95%95-%EC%95%BD%ED%95%A0-%EB%95%8C-%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "구강세정기",
+        "line": "저가형 및 중상급 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "수압 조절이 없는 모델의 경우, 물탱크 내 물의 양을 줄이거나 노즐을 손으로 부분적으로 막아 수압을 조절할 수 있다.",
+      "cautionSource": "사용자 팁"
+    },
+    {
+      "id": "cordless-battery-drainage-charging",
+      "claim": "충전식 구강세정기를 오래 보관할 때는 배터리 방전을 방지하기 위해 월 1~2회 정도 충전하는 것이 권장된다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "배터리 관리 가이드",
+      "source_url": "https://www.waterpik.co.kr/cs/cs04.asp",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "구강세정기",
+        "line": "충전식 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "배터리가 완전히 방전되면 충전이 어려울 수 있다. 장시간 사용하지 않으면 주기적으로 충전할 것.",
+      "cautionSource": "배터리 관리 권장사항"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "topic": "인덕션(전기레인지) 전원 꺼짐·에러 표시·가열 불량 자가점검",
+  "brand": "삼성",
+  "article": "induction-error-selfcheck",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "samsung-induction-de-demo-mode",
+      "claim": "삼성 인덕션 dE 에러는 데모 모드가 활성화된 상태로, 청소 중 버튼 누름·외부 물체 접촉·일시적 오작동이 원인이며, 전원 플러그를 제거했다가 재연결하거나 전용 차단기를 OFF→ON으로 전환하면 해제된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — dE 에러 해결 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1258925",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "전기레인지", "line": "인덕션", "years": "전 연식", "region": "KR" },
+      "caution": "특정 모델(NZ63A8708X, NZ63T8708XT, NZ63T8708XS)에서는 시계+MAX 버튼 조합을 사용해야 한다. 일반적인 전원 리셋으로 해결 안 되면 모델별 매뉴얼 확인 필수.",
+      "cautionSource": "삼성전자서비스 공식 가이드에 특정 모델명 명시"
+    },
+    {
+      "id": "samsung-induction-childlock-L-unlock",
+      "claim": "삼성 인덕션 조작부에 L(잠금) 표시가 나타나면 차일드락이 활성화된 상태로, 자물쇠 모양 버튼을 3초간 길게 누르면 해제된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — L 표시 해제 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1024670",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "전기레인지", "line": "인덕션", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "samsung-induction-general-error-reset",
+      "claim": "삼성 인덕션 조작부 표시창에 에러 또는 이상 표시가 나타났을 때 기본 대응은 전원 플러그를 제거했다가 2~3분 후 다시 연결하여 정상 작동 여부를 확인하는 전원 리셋이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 조작부 표시 이상 시 조치",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1025772",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "전기레인지", "line": "인덕션", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "samsung-induction-fan-noise-normal",
+      "claim": "삼성 인덕션에서 조리 시 붕~, 웅~, 쉿쉣, 윙윙 거리는 팬 소리는 내부 냉각계통의 정상 작동이며, 온도에 따라 자동으로 강약이 조절된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 팬 가동 소리 설명",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28651",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "전기레인지", "line": "인덕션", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "samsung-induction-cooling-fan-operation-temperature",
+      "claim": "삼성 인덕션의 냉각팬은 내부 온도가 35~82°C 범위에서 자동으로 작동하며, 설정된 임계값 이하로 떨어지면 자동 정지된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 쉿쉿~, 윙윙~ 팬 소리 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1023374",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "전기레인지", "line": "인덕션", "years": "전 연식", "region": "KR" },
+      "caution": "35~82°C는 냉각팬 작동 온도 범위이며, 과열 보호 정확한 설정값은 모델별로 다를 수 있다.",
+      "cautionSource": "삼성전자서비스 공식 안내"
+    },
+    {
+      "id": "samsung-induction-cooktop-glass-cleaning",
+      "claim": "삼성 인덕션 상판은 전원을 완전히 차단한 후 H 표시가 사라질 때까지 대기하고, 중성 주방용 세제 또는 세라믹 글래스 전용 세정제를 5~10분간 불린 후 플라스틱 스크래퍼로 30~45도 각도로 일정 방향으로만 긁어낸 후 종이타올로 닦는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 인덕션 상판 청소 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28581",
+      "checked": "2026-07-21",
+      "scope": { "brand": "삼성", "category": "전기레인지", "line": "인덕션", "years": "전 연식", "region": "KR" },
+      "caution": "금속 수세미나 광택제는 상판에 스크래치를 낼 수 있으므로 사용하면 안 된다. 인덕션은 냄비가 발열하고 상판은 미지근하므로 조리 직후에도 청소할 수 있다.",
+      "cautionSource": "삼성전자서비스 공식 안내"
+    },
+    {
+      "id": "lg-induction-heating-weak-cookware-issue",
+      "claim": "LG 인덕션에서 가열이 약할 때 가장 일반적인 원인은 사용 중인 용기에 IH 마크가 없거나 자성이 약한 재질이라는 뜻이며, 용기 바닥 중앙에 자석이 잘 붙는지 테스트하고 IH 표시 여부를 먼저 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 스스로해결 — 가열이 안 될 때 용기 확인",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151808045588",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "전기레인지", "line": "인덕션 디오스", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-induction-cookware-size-90-percent",
+      "claim": "LG 인덕션에서 가열 효율을 위해서는 용기의 바닥 면적이 버너 크기의 90% 이상이어야 하며, 권장 용기 지름은 19~22cm의 원형 냄비다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 스스로해결 — 용기 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151808045588",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "전기레인지", "line": "인덕션 디오스", "years": "전 연식", "region": "KR" },
+      "caution": "버너보다 작은 냄비를 사용하면 노출된 가열면에서 열이 빠져나가 화력이 약해진다.",
+      "cautionSource": "LG 스스로해결 공식 안내"
+    },
+    {
+      "id": "lg-induction-heating-index-0-10",
+      "claim": "LG 인덕션은 용기의 가열 효율을 0~10의 가열지수로 평가하며, 0~4는 사용 비권장, 5~8은 저효율, 9~10은 고효율 용기로 분류된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 스스로해결 — 용기 가열지수 확인",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151166344574",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "전기레인지", "line": "인덕션 디오스", "years": "전 연식", "region": "KR" },
+      "caution": "가열지수는 LG 인덕션에서만 제공하는 평가 기준이다. 다른 브랜드 인덕션에는 적용되지 않는다.",
+      "cautionSource": "LG 스스로해결 공식 페이지에서만 가열지수 안내"
+    },
+    {
+      "id": "lg-induction-heating-index-check-method",
+      "claim": "LG 인덕션에서 용기의 가열지수를 확인하려면 냄비에 물 또는 음식물을 담아 올린 후 열을 9로 설정하고, 가열이 시작되면 Lock 버튼과 Burner Select 버튼을 동시에 3초간 누르면 타이머 윈도우에 지수가 2~3초간 표시된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 스스로해결 — 용기 가열지수 확인 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151166344574",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "전기레인지", "line": "인덕션 디오스", "years": "전 연식", "region": "KR" },
+      "caution": "가열지수는 각 용기별로 다르므로, 새 용기 구매 전에 미리 확인하거나 IH 마크를 통해 호환성을 판단하는 것이 권장된다.",
+      "cautionSource": "LG 스스로해결 공식 안내"
+    },
+    {
+      "id": "lg-induction-cooktop-glass-cleaning",
+      "claim": "LG 인덕션 상판은 전원을 완전히 차단한 후 H 표시가 사라질 때까지 대기하고, 제공된 극세사 장갑을 미온수에 적셔 닦거나 중성세제를 뿌린 후 45도 각도로 일정 방향으로만 스크래핑하고, 물때 방지를 위해 깨끗한 천으로 완전히 건조시킨다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 스토리 — 반짝반짝한 인덕션 상판 청소 비법",
+      "source_url": "https://www.lge.co.kr/story/life/thinq-discover-kitchen-007",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "전기레인지", "line": "인덕션 디오스", "years": "전 연식", "region": "KR" },
+      "caution": "조리 직후에는 음식물이 굳기 전에 즉시 닦는 것이 중요하다. LG 인덕션은 냄비가 발열하므로 상판이 미지근하고, 조리 직후에도 안전하게 청소할 수 있다.",
+      "cautionSource": "LG 스토리 공식 안내"
+    },
+    {
+      "id": "common-induction-cookware-magnet-test",
+      "claim": "인덕션 용기 호환성을 빠르게 확인하려면 냉장고 자석을 용기의 바닥 중앙에 붙여보는 것이 가장 확실한 방법이며, 자석이 달라붙으면 인덕션 사용 가능 용기다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 스토리 및 소비자 커뮤니티",
+      "source_url": "https://www.lge.co.kr/story/life/thinq-discover-kitchen-012",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "전기레인지", "line": "인덕션", "years": "전 연식", "region": "KR" },
+      "caution": "반드시 냄비의 바닥 중앙에서 테스트해야 한다. 측면에서 자석이 붙더라도 바닥에 자성이 없으면 인덕션에서 작동하지 않을 수 있다. 바닥은 인덕션 코일과 직접 접하는 부위이므로 중요하다.",
+      "cautionSource": "인덕션 작동 원리 — 자기장이 냄비 바닥을 통해 유도되기 때문"
+    },
+    {
+      "id": "common-induction-usable-cookware-materials",
+      "claim": "인덕션에서 사용 가능한 용기 재질은 철제·법랑·스테인리스다. 다만 스테인리스는 니켈 함량이 18/10 또는 18/8처럼 높으면 자성이 약해져 인덕션에 적합하지 않을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 스스로해결 — 사용 가능한 용기",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151808045588",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "전기레인지", "line": "인덕션", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "common-induction-unusable-cookware-materials",
+      "claim": "인덕션에서 사용할 수 없는 용기 재질은 알루미늄 양은·유리·도자기·세라믹·뚝배기·구리다. 이들은 자석에 달라붙지 않아 인덕션 가열이 작동하지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 스스로해결 — 사용 불가 용기",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151808045588",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "전기레인지", "line": "인덕션", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "common-induction-ih-mark",
+      "claim": "인덕션 호환성을 나타내는 마크는 코일 모양 또는 'IH'·'Induction Heating' 문자 표시로, 용기 바닥이나 측면에 인쇄되어 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "소비자 커뮤니티 및 상품 설명",
+      "source_url": "https://www.pickdailynews.com/news/articleView.html?idxno=3285",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "전기레인지", "line": "인덕션", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "common-induction-cooktop-crack-hazard",
+      "claim": "인덕션 상판에 균열이 발생하면 수분과 음식물이 내부 전자부품으로 침투하여 감전 및 합선 위험이 생기므로, 균열 발견 즉시 전원을 차단하고 서비스센터에 상판 교체를 의뢰해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 및 삼성 안전 안내",
+      "source_url": "https://www.lge.co.kr/story/life/thinq-discover-kitchen-007",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "전기레인지", "line": "인덕션", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "common-induction-pot-thickness-noise",
+      "claim": "너무 얇거나 가벼운 냄비는 철 함유량이 적어 인덕션에서 진동이 심해져 소음이 증폭되므로, 중두께의 평평한 바닥을 가진 냄비를 사용하면 소음을 줄일 수 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "소비자 커뮤니티 및 제조사 안내",
+      "source_url": "https://www.lge.co.kr/story/life/thinq-discover-kitchen-012",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "전기레인지", "line": "인덕션", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "common-induction-pot-position-alignment",
+      "claim": "인덕션에서 용기가 버너의 중심(십자 표시)과 정렬되지 않으면 가열이 제대로 작동하지 않을 수 있으므로, 용기 중심을 버너의 십자 표시에 맞추는 것이 필수다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 스스로해결 — 용기 위치 확인",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151808045588",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "전기레인지", "line": "인덕션", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "common-induction-empty-pot-prohibition",
+      "claim": "인덕션에서 내용물이 없는 공냄비를 장시간 가열하면 냄비가 과열되어 손상될 수 있으므로, 반드시 음식물이나 물이 담긴 상태에서만 사용해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 스토리 및 제조사 안내",
+      "source_url": "https://www.lge.co.kr/story/life/thinq-discover-kitchen-012",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "전기레인지", "line": "인덕션", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "common-induction-vs-highlight-cooktop-material",
+      "claim": "인덕션은 냄비 바닥만 가열되고 상판은 미지근하지만, 하이라이트(전열식)는 상판 자체가 발열되므로 조리 직후 상판이 뜨겁다. 따라서 인덕션은 조리 직후 상판 청소가 가능하지만, 하이라이트는 식을 때까지 기다려야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 스토리 및 삼성 안내",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152789853289",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "전기레인지", "line": "인덕션 vs 하이라이트", "years": "전 연식", "region": "KR" }
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "topic": "전동킥보드·전기자전거 배터리·주행 불량 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "portable-fan-battery-fire-risk",
+      "why": "휴대용 선풍기는 2000~4000mAh 미니 배터리, 전동킥보드·전기자전거는 5000mAh 이상 대용량 배터리로 용량·출력·열 방출이 완전히 다름. 리스크 레벨도 상이"
+    },
+    {
+      "id": "portable-fan-kc-certification-mandatory",
+      "why": "휴대용 선풍기는 생활용품 KC 인증, 전동킥보드·전기자전거는 이동장치로 인증 체계가 다름"
+    },
+    {
+      "id": "motor-type-noise-difference",
+      "why": "휴대용 선풍기는 마이크로 DC/BLDC 모터(최대 수 와트), 전동킥보드는 고출력 직류 모터(수백 와트)로 구조·소음 환경이 다름"
+    },
+    {
+      "id": "battery-capacity-runtime-scaling",
+      "why": "용량 범위가 완전히 다름(선풍기 2000~4000mAh vs 킥보드·자전거 5000~20000mAh+). 방전 특성도 상이"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "lithium-battery-fire-statistics",
+      "claim": "최근 5년(2021~2025년) 전동킥보드·전기자전거 관련 화재는 총 650건으로, 특히 전기자전거 화재가 2024년 29건에서 2025년 61건으로 2배 이상 증가했다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국소비자원 / 소방청 국가화재정보시스템",
+      "source_url": "https://www.kca.go.kr",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동킥보드·전기자전거",
+        "line": "리튬이온 배터리 탑재 전 모델",
+        "years": "2021~2025",
+        "region": "KR"
+      },
+      "caution": "2025년 증가세가 가파르므로 배터리 안전 관리가 중요. 제조사 공식 권고를 따를 것",
+      "cautionSource": "소방청 화재 통계 추세 분석"
+    },
+    {
+      "id": "indoor-charging-prevalence",
+      "claim": "전동 이동장치 보유자 중 69.2%가 자택 실내에서 배터리를 충전하며, 현관(33.5%), 거실(32.3%), 베란다(17.7%), 침실(11.6%) 순이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국소비자원 안전실태조사 (2026년 4월)",
+      "source_url": "https://www.kca.go.kr/home/board/download.do?menukey=4002&fno=10053886&bid=00000013&did=1004442671",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동킥보드·전기자전겨",
+        "line": "배터리 충전 환경",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "화재 시 대피로 차단되는 장소(현관·거실·침실)에서의 충전은 피할 것. 가능하면 베란다나 외부 충전시설 이용",
+      "cautionSource": "한국소비자원 안전 권고"
+    },
+    {
+      "id": "lithium-battery-thermal-risk-charging",
+      "claim": "리튬이온 배터리의 과열·발화는 배터리 내부 단락, BMS(배터리 관리 시스템) 고장, 정품이 아닌 충전기 사용 시 발생 위험이 높다. 충전 중 팽창이나 이상 발열이 보이면 즉시 중단하고 전문가에게 연락해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국소비자원 / 제조사 안전 가이드",
+      "source_url": "https://www.kca.go.kr",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동킥보드·전기자전거",
+        "line": "리튬이온 배터리",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "⚠️ 충전 중 자리를 비우지 말 것. 팽창·타는 냄새·과도한 열감은 즉시 전원 차단 후 안전한 장소에 옮길 것. 물로 끄려 하지 말 것(발화 심화). 긴급 시 119 신고.",
+      "cautionSource": "한국소비자원 화재 사고 사례 분석"
+    },
+    {
+      "id": "battery-complete-discharge-damage",
+      "claim": "리튬이온 배터리를 0% 완전 방전시키면 음극집전체에 불순물이 생겨 저항이 높아지고 배터리 성능이 저하된다. 특히 2.5V 이하 과방전 셀은 충전 과정에서 발화 위험이 있어 전문가 장비로 테스트 후 교체가 필수다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "배터리 제조·리필 전문업체 (금강에너지솔루션, 알엠파워)",
+      "source_url": "https://energyk.kr/faq/34",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동킥보드·전기자전거",
+        "line": "리튬이온 배터리",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "일상용은 배터리를 20~80% 구간에서 운영할 것. 배터리 잔량이 20% 이하로 떨어지기 전에 충전 시작. 장시간 보관 시 50~70% 수준으로 보관",
+      "cautionSource": "배터리 제조업 표준 관리법"
+    },
+    {
+      "id": "genuine-charger-only",
+      "claim": "정품이 아닌 호환 충전기 사용은 BMS 신호 오인으로 과충전·과방전을 초래하고 배터리 팽창 및 발화 위험을 증가시킨다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "배터리 제조·리필 전문업체 안전 가이드",
+      "source_url": "https://rmpower.co.kr/203/?bmode=view&idx=13789523",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동킥보드·전기자전거",
+        "line": "배터리 충전기",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "구매한 제품 매뉴얼에 명시된 정품 충전기만 사용할 것. 호환 충전기는 저렴해 보이지만 배터리 수명 단축과 안전 위험 증가",
+      "cautionSource": "배터리 업계 일반 안전 규칙"
+    },
+    {
+      "id": "tire-pressure-maintenance",
+      "claim": "타이어 공기압은 제조사 사양(보통 2.5~3.0 bar)을 지켜야 하며, 주행거리 1,500km 또는 1년 후 타이어 교체를 권장한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전동킥보드 제조·판매사 안전 가이드 (미니모터스)",
+      "source_url": "https://minimotors.co.kr/%EC%A0%84%EB%8F%99%ED%82%A5%EB%B3%B4%EB%93%9C-%EC%95%88%EC%A0%84-%EC%9A%B4%ED%96%89%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%A0%95%EB%B0%80%EC%A0%90%EA%B2%80-%EC%A3%BC%EA%B8%B0-%EA%B0%80%EC%9D%B4%EB%93%9C/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동킥보드·전기자전거",
+        "line": "타이어",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "적정 공기압 미유지 시 주행 중 균형 상실, 펑크 위험, 제동 거리 증가로 사고 위험 증가. 타이어 마모가 심하면 바로 교체할 것",
+      "cautionSource": "제조사 정기점검 가이드"
+    },
+    {
+      "id": "brake-pad-inspection-interval",
+      "claim": "브레이크 레버를 잡고 바퀴가 제대로 멈추는지 매주 확인하고, 브레이크 패드 마모 상태를 매달 점검해야 한다. 패드가 마모되면 즉시 교체할 것",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전동킥보드 제조·판매사 정기점검 가이드",
+      "source_url": "https://minimotors.co.kr/%EC%A0%84%EB%8F%99%ED%82%A5%EB%B3%B4%EB%93%9C-%EC%95%88%EC%A0%84%ED%95%98%EA%B2%8C-%ED%83%80%EB%A0%A4%EB%A9%B4-%EC%A0%95%EB%B0%80-%EC%A0%90%EA%B2%80-%EC%A3%BC%EA%B8%B0-%ED%95%84%EC%88%98-%EC%A0%90/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동킥보드·전기자전거",
+        "line": "브레이크 시스템",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "⚠️ 브레이크 고장은 주행 중 사고로 직결됨. 제동력이 약하거나 이상음이 들리면 즉시 전문점에서 수리받을 것. 자가 조치 금지",
+      "cautionSource": "제조사 안전 문구"
+    },
+    {
+      "id": "winter-battery-performance-decline",
+      "claim": "리튬이온 배터리는 저온에서 화학반응이 느려져 전압이 저하되며, 겨울철(영하~5℃)에는 따뜻한 날씨 대비 배터리 효율이 50% 이하로 떨어질 수 있다. 기온이 회복되면 정상 수치로 복구된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "배터리 제조업체 / 전동킥보드 제조사 겨울철 관리 가이드",
+      "source_url": "https://rmpower.co.kr/203/?bmode=view&idx=12271317",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동킥보드·전기자전거",
+        "line": "리튬이온 배터리",
+        "years": "현행",
+        "region": "KR",
+        "season": "겨울"
+      },
+      "caution": "겨울에 주행거리가 5~10km 정도 줄어들 수 있으므로, 장거리 이용 계획은 여유 있게 할 것. 최적 사용 온도는 20~25℃",
+      "cautionSource": "배터리 업계 온도 특성 표준"
+    },
+    {
+      "id": "winter-battery-storage-guideline",
+      "claim": "전동킥보드·전기자전거를 겨울철 장시간 보관할 때는 배터리를 100% 완전 충전 상태가 아닌 70~80% 수준으로 충전한 후 보관할 것이 권장된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전동킥보드 제조사 겨울철 배터리 관리 (나노휠)",
+      "source_url": "https://nanowheel.co.kr/article/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/1/14664",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동킥보드·전기자전거",
+        "line": "리튬이온 배터리",
+        "years": "현행",
+        "region": "KR",
+        "season": "겨울"
+      },
+      "caution": "배터리가 과충전(100%)이나 과방전(0%)인 상태로 장시간 방치되면 셀 손상이 가속화되므로 주의",
+      "cautionSource": "배터리 제조사 장기보관 표준 지침"
+    },
+    {
+      "id": "power-not-on-diagnosis",
+      "claim": "전동킥보드·전기자전거 전원이 안 켜질 때는 먼저 배터리 잔량 확인(LED 표시등), 배터리 커넥터 접점 청소, 충전 1시간 시도 순서로 자가진단할 것. 이 후에도 작동 안 하면 BMS 고장 또는 모터 결함일 가능성이 높으므로 전문점 방문 권장",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "전동킥보드·전기자전거 사용자 보고 / 제조사·판매사 Q&A",
+      "source_url": "https://energyk.kr/faq/34",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동킥보드·전기자전거",
+        "line": "전원 불량",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "자가진단 단계: ① 배터리 표시등 확인 ② 배터리 커넥터 접점을 마른 천으로 닦기 ③ 정품 충전기로 1시간 이상 충전 → 여전히 작동 안 하면 전문점"
+    },
+    {
+      "id": "motor-noise-diagnosis",
+      "claim": "전동킥보드·전기자전거 모터에서 비정상음(끽끽거림, 윙윙거림, 탁탁거림)이 날 때는 모터 베어링 마모, 기어 손상, 모터 회전축 얼라인먼트 문제로 추정되며 자가 분해 금지, 전문점 점검 필수",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "전동킥보드·전기자전거 사용자 커뮤니티 / 서비스센터 문의",
+      "source_url": "https://minimotors.co.kr/%EC%A0%84%EB%8F%99%ED%82%A5%EB%B3%B4%EB%93%9C-%EC%95%88%EC%A0%84%ED%95%98%EA%B2%8C-%ED%83%80%EB%A0%A4%EB%A9%B4-%EC%A0%95%EB%B0%80-%EC%A0%90%EA%B2%80-%EC%A3%BC%EA%B8%B0-%ED%95%84%EC%88%98-%EC%A0%90/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동킥보드·전기자전거",
+        "line": "모터 시스템",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "⚠️ 모터 이상음은 주행 중 갑자기 정지 또는 과열로 이어질 수 있음. 즉시 사용 중단하고 전문점 점검. 자가 분해 시 보증 상실 및 감전 위험",
+      "cautionSource": "전문 서비스센터 안전 안내"
+    },
+    {
+      "id": "range-degradation-battery-age",
+      "claim": "전동킥보드·전기자전거 주행거리가 50% 이상 급격히 줄어들 때는 배터리 셀 불균형(밸런싱 오류), BMS 오류, 고온 노출 누적이 원인이다. 개별 셀 전압(4.0V 이상 차이)을 측정하면 진단 가능하나 일반 사용자는 전문가 진단 권장",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "배터리 리필·수리 전문업체 (금강에너지솔루션)",
+      "source_url": "https://energyk.kr/faq/35?sst=wr_hit&sod=asc&sop=and&page=1",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동킥보드·전기자전거",
+        "line": "리튬이온 배터리",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "배터리 셀 밸런싱(BMS 재부팅)를 시도하려면 제조사 매뉴얼을 확인할 것. 확실하지 않으면 전문점에 맡길 것. 배터리 수명 한계(3~5년 또는 600~1000회 충방전 사이클)에 근접하면 교체 시기로 본다",
+      "cautionSource": "배터리 업계 진단 표준"
+    },
+    {
+      "id": "charging-not-starting-diagnosis",
+      "claim": "배터리 충전이 안 될 때는 충전기 LED 상태 확인(적색=정상 충전, 녹색=완충, 미점등=고장), 배터리 커넥터 청소, 다른 충전기 시도(호환 가능한 경우) 순서로 자가진단할 것. 충전기 고장이면 정품 충전기만 구매할 것",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "배터리 제조·리필 전문업체 FAQ / 제조사 가이드",
+      "source_url": "https://rmpower.co.kr/203/?bmode=view&idx=13789523",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동킥보드·전기자전거",
+        "line": "배터리 충전 불량",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "충전기 LED가 미점등이고 콘센트 연결해도 반응 없으면 충전기 고장. 정품 충전기만 재구매 권고. 배터리 포트 접점이 부식되면 알코올로 가볍게 닦기. 강하게 문질러 포트 손상 주의"
+    },
+    {
+      "id": "water-ingress-post-rain-inspection",
+      "claim": "IP67 등급 제품(완벽한 방진 + 최대 1m 깊이 30분 잠김 견딤)이라도 빗길 주행 또는 물웅덩이 통과 후에는 외관 확인이 필요하다. 특히 충전 포트, 모터 커버, 배터리 실 주변을 시각 점검해 물 침투 흔적(수증기, 녹슴, 이물)이 없는지 확인",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전동킥보드 제조사 방수 등급 설명 / 배터리 안전 가이드",
+      "source_url": "https://cmbatteries.com/ko/IP-%EB%93%B1%EA%B8%89-%EB%B0%A4%EC%88%98-%EB%A6%AC%ED%8A%AC-%EB%B0%B0%ED%84%B0%EB%A6%AC-%ED%8C%A9-%EC%84%A4%EA%B3%84%EC%97%90-%EB%8C%80%ED%95%9C-%ED%8F%AC%EA%B4%84%EC%A0%81%EC%9D%B8-%EA%B0%80%EC%9D%B4%EB%93%9C/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동킥보드·전기자전거",
+        "line": "방수 등급 (IP67)",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "IP67은 규격상 완벽하지만, 실제 사용 중 비를 맞으면 미세한 틈을 통해 수증기가 축적될 수 있음. 빗길 주행 후 충전 전에 외부 말려주기. 내부 수증기 제거를 위해 전원 끄고 하루 실내에서 방치 권고",
+      "cautionSource": "배터리 방수 등급 규격서 해석 + 사용자 보고"
+    }
+  ]
+}

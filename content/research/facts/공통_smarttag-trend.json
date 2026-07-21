@@ -1,0 +1,533 @@
+{
+  "topic": "스마트태그 분실방지 성능 및 실용성 비교 (트렌드랩)",
+  "brand": "공통",
+  "article": "smarttag-trend",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "airtag-design-purpose",
+      "claim": "애플 에어태그는 열쇠·가방·작은 전자기기·차량 등 개인물품의 분실 방지 목적으로 설계된 추적기다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - AirTag Tech Specs",
+      "source_url": "https://support.apple.com/en-us/111847",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "추적기",
+        "line": "AirTag",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "airtag-bluetooth-ble-beacon",
+      "claim": "에어태그는 초저전력 블루투스 신호(BLE)를 주기적으로 송출하는 파시브 비콘(0.5~2초마다 암호화된 식별 신호 전송)으로 작동한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple AirTag technology overview",
+      "source_url": "https://www.apple.com/airtag/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "추적기",
+        "line": "AirTag",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "airtag-find-my-network-size",
+      "claim": "에어태그의 Find My 네트워크는 약 10억 대의 애플 기기(아이폰·아이패드·맥)로 구성된 크라우드소싱 위치 릴레이 네트워크다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Find My network documentation",
+      "source_url": "https://www.apple.com/airtag/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "추적기",
+        "line": "AirTag",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": "기기 수는 2021년 추정치이며 현재 더 클 가능성이 높다",
+      "cautionSource": "https://www.apple.com/airtag/"
+    },
+    {
+      "id": "airtag-uwb-precision-finding",
+      "claim": "아이폰 11 이후 모델(SE 제외)에 탑재된 U1 칩의 UWB 기술을 사용하면 에어태그의 거리와 방향을 ±15cm 거리·±5° 각도 정확도로 측정할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - AirTag Tech Specs",
+      "source_url": "https://support.apple.com/en-us/111847",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "추적기",
+        "line": "AirTag",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": "iPhone 11, 12, 13, 14, 15, 16(SE 제외)에서만 지원. 거리는 약 30피트(약 10미터) 범위 내에서만 사용 가능",
+      "cautionSource": "https://support.apple.com/en-us/111847"
+    },
+    {
+      "id": "airtag-battery-cr2032-lifespan",
+      "claim": "에어태그는 사용자 교체 가능한 CR2032 코인 배터리를 사용하며 일반적으로 1년 이상 사용 가능하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - AirTag Tech Specs",
+      "source_url": "https://support.apple.com/en-us/111847",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "추적기",
+        "line": "AirTag",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "airtag-durability-ip67",
+      "claim": "에어태그는 IP67 등급의 방수·방진 성능을 가지며 최대 깊이 1미터에서 30분간 수침 가능하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - AirTag Tech Specs",
+      "source_url": "https://support.apple.com/en-us/111847",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "추적기",
+        "line": "AirTag",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "airtag-ecosystem-ios-requirement",
+      "claim": "에어태그는 iOS/iPadOS 14.5 이상을 실행하는 아이폰·아이패드·아이팟 터치와만 호환되며, iOS 생태계에 완전히 종속된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - AirTag Tech Specs",
+      "source_url": "https://support.apple.com/en-us/111847",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "추적기",
+        "line": "AirTag",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": "안드로이드 사용자는 에어태그 기능을 전혀 사용할 수 없다",
+      "cautionSource": "https://support.apple.com/en-us/111847"
+    },
+    {
+      "id": "airtag-location-data-privacy",
+      "claim": "에어태그의 위치는 오직 소유자만 확인할 수 있으며, 위치 데이터와 기록은 에어태그에 저장되지 않고 릴레이 기기는 익명 유지 상태에서 암호화된 위치 정보를 전송한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - AirTag Tech Specs",
+      "source_url": "https://support.apple.com/en-us/111847",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "추적기",
+        "line": "AirTag",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "airtag-anti-stalking-alerts-ios17.5",
+      "claim": "iOS 17.5부터 에어태그와 분리된 후 다른 사용자를 따라다니는 패턴이 감지되면 '에어태그가 함께 이동 중입니다' 경고가 자동으로 나타나며, 경고음도 자동 울린다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple newsroom - An update on AirTag and unwanted tracking",
+      "source_url": "https://www.apple.com/newsroom/2022/02/an-update-on-airtag-and-unwanted-tracking/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "추적기",
+        "line": "AirTag",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": "경고음은 추적자의 기기 종류와 무관하게 울린다. iOS 17.5 이상에서만 지원",
+      "cautionSource": "https://www.apple.com/newsroom/2022/02/an-update-on-airtag-and-unwanted-tracking/"
+    },
+    {
+      "id": "airtag-anti-stalking-precision-finding",
+      "claim": "경고를 받은 아이폰 사용자는 UWB를 활용한 Precision Finding으로 원치 않은 에어태그의 정확한 위치를 찾을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple anti-stalking protection documentation",
+      "source_url": "https://www.apple.com/newsroom/2022/02/an-update-on-airtag-and-unwanted-tracking/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "추적기",
+        "line": "AirTag",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": "UWB 지원 아이폰(11 이후)에서만 사용 가능",
+      "cautionSource": "https://www.apple.com/newsroom/2022/02/an-update-on-airtag-and-unwanted-tracking/"
+    },
+    {
+      "id": "airtag-cross-platform-detection-android",
+      "claim": "Apple과 Google의 협력으로 iOS 17.5부터 안드로이드 사용자도 자신을 추적하는 에어태그 감지 알림을 받을 수 있게 됐다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple cross-platform anti-stalking standard",
+      "source_url": "https://www.apple.com/newsroom/2022/02/an-update-on-airtag-and-unwanted-tracking/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "추적기",
+        "line": "AirTag",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": "안드로이드에서는 에어태그를 울리거나 위치를 정확히 파악할 수는 없으며 경고만 받는다",
+      "cautionSource": "https://www.apple.com/newsroom/2022/02/an-update-on-airtag-and-unwanted-tracking/"
+    },
+    {
+      "id": "smarttag2-design-purpose",
+      "claim": "삼성 갤럭시 스마트태그 2는 쉽게 분실되는 개인물품(열쇠·지갑·가방)을 추적하기 위해 설계되었다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung Galaxy SmartTag 2 official announcement",
+      "source_url": "https://news.samsung.com/us/introducing-new-samsung-galaxy-smarttag2-a-smart-way-to-keep-track-of-important-things-in-your-life/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "추적기",
+        "line": "Galaxy SmartTag 2",
+        "years": "2023~",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "smarttag2-bluetooth-ble-range",
+      "claim": "갤럭시 스마트태그 2는 블루투스 저전력(BLE 5.0) 기술을 사용하며 최대 120미터 범위 내에서 블루투스 연결을 유지한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung Galaxy SmartTag 2 specifications",
+      "source_url": "https://news.samsung.com/us/introducing-new-samsung-galaxy-smarttag2-a-smart-way-to-keep-track-of-important-things-in-your-life/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "추적기",
+        "line": "Galaxy SmartTag 2",
+        "years": "2023~",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "smarttag2-smartthings-find-network",
+      "claim": "블루투스 범위를 벗어나면 갤럭시 스마트태그 2는 삼성의 SmartThings Find 네트워크를 통해 위치를 추적할 수 있다(GPS와 인터넷 연결을 가진 다른 갤럭시 폰들의 기여)",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung Galaxy SmartTag 2 specifications",
+      "source_url": "https://news.samsung.com/us/introducing-new-samsung-galaxy-smarttag2-a-smart-way-to-keep-track-of-important-things-in-your-life/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "추적기",
+        "line": "Galaxy SmartTag 2",
+        "years": "2023~",
+        "region": "글로벌"
+      },
+      "caution": "SmartThings Find 네트워크는 Apple의 Find My보다 기기 수가 적다",
+      "cautionSource": "https://news.samsung.com/us/introducing-new-samsung-galaxy-smarttag2-a-smart-way-to-keep-track-of-important-things-in-your-life/"
+    },
+    {
+      "id": "smarttag2-uwb-capability",
+      "claim": "갤럭시 스마트태그 2는 블루투스 LE과 UWB 기술을 모두 탑재하여 근거리 정밀 위치 추적이 가능하다(가능 거리 약 30피트/10미터)",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung Galaxy SmartTag 2 specifications",
+      "source_url": "https://news.samsung.com/us/introducing-new-samsung-galaxy-smarttag2-a-smart-way-to-keep-track-of-important-things-in-your-life/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "추적기",
+        "line": "Galaxy SmartTag 2",
+        "years": "2023~",
+        "region": "글로벌"
+      },
+      "caution": "UWB 기능은 UWB 지원 갤럭시 폰에서만 작동 가능",
+      "cautionSource": "https://news.samsung.com/us/introducing-new-samsung-galaxy-smarttag2-a-smart-way-to-keep-track-of-important-things-in-your-life/"
+    },
+    {
+      "id": "smarttag2-battery-cr2032-lifespan",
+      "claim": "갤럭시 스마트태그 2는 교체 가능한 CR2032 배터리를 사용하며 Normal 모드에서 최대 500일(약 700일까지 가능) 사용할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung Galaxy SmartTag 2 specifications",
+      "source_url": "https://news.samsung.com/us/introducing-new-samsung-galaxy-smarttag2-a-smart-way-to-keep-track-of-important-things-in-your-life/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "추적기",
+        "line": "Galaxy SmartTag 2",
+        "years": "2023~",
+        "region": "글로벌"
+      },
+      "caution": "이전 모델들보다 2배 이상 더 오래 사용 가능",
+      "cautionSource": "https://news.samsung.com/us/introducing-new-samsung-galaxy-smarttag2-a-smart-way-to-keep-track-of-important-things-in-your-life/"
+    },
+    {
+      "id": "smarttag2-battery-replacement-procedure",
+      "claim": "갤럭시 스마트태그 2 배터리 교체는 배터리 트레이 구멍에 꺼내는 핀(또는 작은 클립)을 삽입하여 트레이를 제거한 후, 새 CR2032 배터리를 양극(+)이 위로 향하게 삽입하면 된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung Support - How to replace the battery on Galaxy SmartTag 2",
+      "source_url": "https://www.samsung.com/ae/support/mobile-devices/how-to-replace-the-battery-on-galaxy-smarttag-2/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "추적기",
+        "line": "Galaxy SmartTag 2",
+        "years": "2023~",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "smarttag2-ecosystem-samsung-requirement",
+      "claim": "갤럭시 스마트태그 2는 삼성 갤럭시 스마트폰과 삼성 기기에서만 최적으로 작동하며, iOS와의 호환성이 제한적이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung Galaxy SmartTag 2 specifications",
+      "source_url": "https://news.samsung.com/us/introducing-new-samsung-galaxy-smarttag2-a-smart-way-to-keep-track-of-important-things-in-your-life/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "추적기",
+        "line": "Galaxy SmartTag 2",
+        "years": "2023~",
+        "region": "글로벌"
+      },
+      "caution": "아이폰 사용자는 스마트태그 2의 전체 기능을 사용할 수 없다",
+      "cautionSource": "https://news.samsung.com/us/introducing-new-samsung-galaxy-smarttag2-a-smart-way-to-keep-track-of-important-things-in-your-life/"
+    },
+    {
+      "id": "smarttag2-programmable-button",
+      "claim": "갤럭시 스마트태그 2는 프로그래밍 가능한 버튼을 갖추어 SmartThings 호환 스마트홈 기기를 제어할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung Galaxy SmartTag 2 specifications",
+      "source_url": "https://news.samsung.com/us/introducing-new-samsung-galaxy-smarttag2-a-smart-way-to-keep-track-of-important-things-in-your-life/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "추적기",
+        "line": "Galaxy SmartTag 2",
+        "years": "2023~",
+        "region": "글로벌"
+      },
+      "caution": "SmartThings 앱 설정에서만 사용 가능",
+      "cautionSource": "https://news.samsung.com/us/introducing-new-samsung-galaxy-smarttag2-a-smart-way-to-keep-track-of-important-things-in-your-life/"
+    },
+    {
+      "id": "tile-no-uwb-capability",
+      "claim": "타일 대부분 모델은 UWB 기술을 탑재하지 않으며 블루투스 신호 강도와 '태그 울리기' 패턴으로만 근거리 추적을 진행한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "Comparison reviews of tracking devices",
+      "source_url": "https://www.tapo.com/us/news/1923/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "타일",
+        "category": "추적기",
+        "line": "Tile 전 라인",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "이는 에어태그나 스마트태그보다 덜 정확한 지향성 정보를 제공한다",
+      "cautionSource": "https://www.tapo.com/us/news/1923/"
+    },
+    {
+      "id": "tile-pricing-model",
+      "claim": "타일은 기본 분실 추적 기능은 무료이지만, 스마트 경고와 위치 기록 기능은 월 $2.99의 유료 구독(Tile Premium)이 필요하다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "Comparison reviews of tracking devices",
+      "source_url": "https://www.tapo.com/us/news/1923/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "타일",
+        "category": "추적기",
+        "line": "Tile 전 라인",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "에어태그와 스마트태그 2는 추가 구독료가 없다",
+      "cautionSource": "https://www.tapo.com/us/news/1923/"
+    },
+    {
+      "id": "indoor-accuracy-uwb-precision",
+      "claim": "실내에서는 UWB 지원 기기의 에어태그와 스마트태그 2가 약 1~2미터 이내의 정확한 방향 지시를 제공하여 시각과 햅틱 피드백으로 사용자를 목표물에 가까이 인도한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "Real-world accuracy reviews of trackers",
+      "source_url": "https://www.tapo.com/us/news/1923/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "추적기",
+        "line": "에어태그 vs 스마트태그 2",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": "UWB 미지원 기기에서는 정확도가 크게 떨어진다",
+      "cautionSource": "https://www.tapo.com/us/news/1923/"
+    },
+    {
+      "id": "outdoor-longrange-network-dependent",
+      "claim": "실외에서 오래된 거리(수백 미터 이상)의 추적은 크라우드소싱 네트워크 품질에 전적으로 의존한다. 에어태그는 더 많은 아이폰 기기 기여로 인해 스마트태그 2보다 높은 감지 확률을 가진다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "Real-world accuracy reviews and network comparison",
+      "source_url": "https://www.tapo.com/us/news/1923/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "추적기",
+        "line": "에어태그 vs 스마트태그 2",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": "도시의 아이폰 밀집도에 따라 신뢰성이 크게 변한다. 농촌 지역에서는 성능이 떨어질 수 있다",
+      "cautionSource": "https://www.tapo.com/us/news/1923/"
+    },
+    {
+      "id": "smarttag-update-frequency-issue",
+      "claim": "실제 사용자 후기에서 스마트태그 2는 지역의 삼성 갤럭시 폰 밀집도가 낮을 때 위치 업데이트 빈도가 느려지는 경향이 보고되었다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Reddit user reports and review sites",
+      "source_url": "https://www.tapo.com/us/news/1923/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "추적기",
+        "line": "Galaxy SmartTag 2",
+        "years": "2023~",
+        "region": "글로벌"
+      },
+      "caution": "네트워크 밀집도가 높은 대도시에서는 이 문제가 덜 나타난다",
+      "cautionSource": "https://www.tapo.com/us/news/1923/"
+    },
+    {
+      "id": "common-use-case-keyring-wallet-bag",
+      "claim": "에어태그와 스마트태그 2 모두 열쇠고리·지갑·가방에 부착하는 용도로 설계되었으며, 별도의 스트랩이나 케이스 구매로 편의성을 높일 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple AirTag and Samsung SmartTag official specifications",
+      "source_url": "https://www.apple.com/airtag/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "추적기",
+        "line": "에어태그 vs 스마트태그 2",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "pet-tracking-limitation",
+      "claim": "에어태그와 스마트태그 2 모두 반려동물 추적에 사용 가능하지만, 반려동물이 분실되거나 도망쳤을 때 장시간 추적 신호가 닿지 않는 지역에 있으면 위치 업데이트가 지연될 수 있다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "User reviews and pet owner forums",
+      "source_url": "https://www.tapo.com/us/news/1923/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "추적기",
+        "line": "에어태그 vs 스마트태그 2",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": "반려동물이 목걸이나 가죽 끈에 추적기를 부착하는 경우 무게와 편안함을 고려해야 한다. GPS 추적기가 아니므로 매우 먼 거리에서는 신뢰할 수 없다",
+      "cautionSource": "https://www.tapo.com/us/news/1923/"
+    },
+    {
+      "id": "vehicle-tracking-use-case",
+      "claim": "에어태그와 스마트태그 2는 모두 자동차 추적용으로 사용될 수 있으나, 진정한 GPS 추적기가 아니므로 차량 도난 시 실시간 위치 추적보다는 마지막 알려진 위치 확인에 의존한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "Vehicle tracking use cases and reviews",
+      "source_url": "https://www.autoevolution.com/news/airtag-vs-airtag-2-vs-galaxy-smarttag-2-vs-tile-pro-best-trackers-to-protect-our-cars-265005.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "추적기",
+        "line": "에어태그 vs 스마트태그 2",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": "차량 보안용으로는 전용 GPS 추적기를 사용하는 것이 더 안전하다",
+      "cautionSource": "https://www.autoevolution.com/news/airtag-vs-airtag-2-vs-galaxy-smarttag-2-vs-tile-pro-best-trackers-to-protect-our-cars-265005.html"
+    },
+    {
+      "id": "ecosystem-lock-in-recommendation",
+      "claim": "아이폰 사용자에게는 에어태그가, 삼성 갤럭시 사용자에게는 스마트태그 2가 권장되는 이유는 각 추적기가 자신의 생태계에 최적화되어 있기 때문이다. 양쪽 플랫폼을 모두 사용하는 경우에만 타일 고려",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "Ecosystem comparison reviews",
+      "source_url": "https://www.tapo.com/us/news/1923/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "추적기",
+        "line": "에어태그 vs 스마트태그 2 vs Tile",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": "교차 플랫폼 호환성은 매우 제한적이다",
+      "cautionSource": "https://www.tapo.com/us/news/1923/"
+    },
+    {
+      "id": "no-gps-true-tracking-limitation",
+      "claim": "에어태그와 스마트태그 2는 모두 GPS가 없는 비콘식 추적기이므로, 크라우드소싱 네트워크가 없는 야산이나 건물 내 외진 곳에서는 추적이 불가능하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple and Samsung official specifications",
+      "source_url": "https://www.apple.com/airtag/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "추적기",
+        "line": "에어태그 vs 스마트태그 2",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": "이는 제품의 핵심 한계다. GPS 실시간 추적이 필요한 경우 별도의 GPS 추적 장치를 구매해야 한다",
+      "cautionSource": "https://www.apple.com/airtag/"
+    }
+  ]
+}

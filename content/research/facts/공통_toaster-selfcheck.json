@@ -1,0 +1,143 @@
+{
+  "topic": "토스터·토스트기 안 켜짐·레버 안 내려감·빵 안 튀어나옴·타는 냄새·청소 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "toaster-crumb-tray-fire-hazard-primary",
+      "claim": "토스터의 부스러기 받침에 쌓인 빵가루와 기름이 반복 가열되면서 탄화되고 산화되어 타는 냄새와 연기를 내뿜으며, 이는 토스터 화재의 가장 흔한 원인이다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "푸드레시피, 픽데일리 — 토스터 청소 및 안전 가이드",
+      "source_url": "https://foodrecipe.co.kr/life/how-to-clean-toaster-safely/",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "토스터", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "⚠️ 부스러기 받침을 2개월에 한 번 이상 청소하지 않으면 누적된 탄화 기름이 화재 위험을 크게 높인다. 타는 냄새가 나면 즉시 전원을 끄고 30분 이상 냉각해야 한다.",
+      "cautionSource": "청소 간격 및 화재 안전 기준"
+    },
+    {
+      "id": "toaster-bread-stuck-shock-hazard",
+      "claim": "토스터에 빵이 끼였을 때 절대 금속 물체(젓가락, 포크, 칼)를 넣으면 감전·합선·화재가 발생할 수 있으며, 반드시 전원 플러그를 뽑은 후 최소 30분 식혀서 제거해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국소비자원 — 전기토스터기 안전 기준 검사",
+      "source_url": "https://www.consumer.go.kr/user/ftc/consumer/cnsmrBBS/80/selectInfoCmprDetail.do?infoId=A1077911",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "토스터", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "⚠️ 이것은 감전·화상·화재 위험이다. 절대 전원이 켜진 상태에서 금속물을 넣지 말고, 전원을 뽑더라도 빵이 끼있으면 30분 이상 식을 때까지 기다려야 한다. 빵 제거 후에도 금속물 대신 목재나 플라스틱 막대만 사용할 것.",
+      "cautionSource": "한국소비자원 안전 기준 및 감전·화재 위험 경고"
+    },
+    {
+      "id": "toaster-crumb-tray-cleaning-dry-brush-only",
+      "claim": "토스터 부스러기 받침 청소 시 전원 플러그를 뽑고 30분 이상 냉각한 후, 마른 페인트 솔이나 부드러운 브러시로 가볍게 털어야 한다. 물이나 젖은 행주는 절대 사용하면 안 된다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "픽데일리, 사부작 손프로 — 토스터 청소 안전 방법",
+      "source_url": "https://www.pickdailynews.com/news/articleView.html?idxno=3851",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "토스터", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "물이 열선에 닿으면 합선·누전이 발생할 수 있다. 분리형 크럼 트레이는 따뜻한 물에 중성세제를 풀어 약 10분 담근 후 부드러운 수세미로 닦되, 내부 열선 주변은 절대 젖혀서는 안 된다.",
+      "cautionSource": "안전 청소 절차의 누전 위험"
+    },
+    {
+      "id": "toaster-lever-wont-push-down-causes",
+      "claim": "토스터 레버가 내려가지 않을 때 가장 흔한 원인은 내부에 쌓인 빵가루 부스러기가 레버 메커니즘을 막고 있거나, 스프링이 손상되었거나, 전원이 꺼져 있는 것이다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "iFixit Troubleshooting, 홈키친테크 — 토스터 레버 문제 해결",
+      "source_url": "https://www.ifixit.com/Troubleshooting/Toaster/Will+Not+Stay+Down/535186",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "토스터", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "먼저 전원 플러그가 연결되었는지, 벽 콘센트에 전력이 있는지 확인할 것. 그 다음 토스터를 거꾸로 기울여 내부 부스러기를 턴다. 여전히 안 내려가면 스프링이 손상되었을 가능성이 높으므로 전문 수리 부품이 필요하다.",
+      "cautionSource": "자가점검 가능 범위 명시"
+    },
+    {
+      "id": "toaster-browning-dial-too-low",
+      "claim": "토스터 레버는 내려가지만 가열이 시작되지 않으면 굽기 조절 다이얼이 너무 낮게 설정되었을 가능성이 있으므로, 다이얼을 중간 정도(보통 숫자 3~5)로 올려서 재시도해야 한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "iFixit Troubleshooting — 토스터 작동 불가 진단",
+      "source_url": "https://www.ifixit.com/Wiki/Toaster_Troubleshooting",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "토스터", "line": "다이얼형 모든 모델", "years": "전 연식", "region": "글로벌" },
+      "caution": "다이얼을 너무 높게 올리면 빵이 맛있게 구워질 수 있으나 탈 가능성도 있다. 처음 사용할 때는 중간 정도에서 시작하여 원하는 색상을 찾을 때까지 미세 조정하는 것이 권장된다.",
+      "cautionSource": "기본 작동 순서"
+    },
+    {
+      "id": "toaster-no-pop-up-power-solenoid",
+      "claim": "토스터 레버는 작동하지만 빵이 자동으로 튀어나오지 않으면 전원 공급 확인 후, 소형관(소레노이드)이 손상되었을 가능성이 높으며 이는 전문 부품 교체가 필요하다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "iFixit Troubleshooting, 홈키친테크 — 토스터 튀어남 기능 불량",
+      "source_url": "https://www.ifixit.com/Troubleshooting/Toaster/Will+Not+Stay+Down/535186",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "토스터", "line": "전자동 팝업 모델", "years": "전 연식", "region": "글로벌" },
+      "caution": "소레노이드는 전원이 들어올 때 레버를 밀어올리는 부품이다. 자가 교체는 감전 위험이 있으므로 서비스센터 진단을 권장한다.",
+      "cautionSource": "전자부품 안전 기준"
+    },
+    {
+      "id": "toaster-uneven-browning-crumb-buildup",
+      "claim": "토스터에서 한쪽만 타고 다른 쪽은 덜 타면 내부 한쪽에 부스러기와 기름이 더 많이 쌓여 열 분포가 불균형을 이루고 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "토스터 사용자 경험 및 유지보수 가이드",
+      "source_url": "https://www.sabujak.org/2023/09/03/%ED%86%A0%EC%8A%A4%ED%8A%B8%EA%B8%B0-%EC%B2%AD%EC%86%8C-%EA%B4%80%EB%A6%AC-%EC%9A%94%EB%A0%B9-%EA%B9%A8%EB%81%97%ED%95%98%EA%B2%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%95%84%EC%9D%B4%ED%85%9C/",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "토스터", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "부스러기를 청소하면 대부분 해결된다. 청소 후에도 한쪽만 계속 더 타면 열선 고장이나 내부 손상을 의심할 수 있다.",
+      "cautionSource": "사용자 경험 기반"
+    },
+    {
+      "id": "toaster-crumb-tray-cleaning-frequency",
+      "claim": "토스터 부스러기 받침은 월 1회 이상 분리해서 세척하고, 내부는 2개월에 한 번 정도 마른 브러시로 청소하는 것이 화재 예방 및 유지보수 기준이다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "픽데일리, 푸드레시피 — 토스터 청소 및 유지보수",
+      "source_url": "https://www.pickdailynews.com/news/articleView.html?idxno=3851",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "토스터", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "사용 빈도와 음식 종류에 따라 조정할 것. 버터 바른 빵을 자주 구우면 기름이 더 빨리 쌓인다.",
+      "cautionSource": "안전 청소 간격"
+    },
+    {
+      "id": "toaster-no-aluminum-foil-fire-hazard",
+      "claim": "토스터 내부에 알루미늄 호일을 깔아서 쓰면 열선에 닿아 불꽃이 튀거나 화재가 발생할 수 있으므로 제조사 대부분이 명시적으로 금지하고 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "토스터 안전 가이드 및 사용자 경험",
+      "source_url": "https://www.sabujak.org/2023/09/03/%ED%86%A0%EC%8A%A4%ED%8A%B8%EA%B8%B0-%EC%B2%AD%EC%86%8C-%EA%B4%80%EB%A6%AC-%EC%9A%94%EB%A0%B9-%EA%B9%A8%EB%81%97%ED%95%98%EA%B2%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%95%84%EC%9D%B4%ED%85%9C/",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "토스터", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "⚠️ 알루미늄 호일은 전기 전도성이 있어 감전과 화재 위험을 일으킨다. 절대 사용하지 말 것.",
+      "cautionSource": "화재·감전 위험 경고"
+    },
+    {
+      "id": "toaster-overheat-protection-lever-disables",
+      "claim": "대부분의 토스터에는 과열 방지 안전장치가 탑재되어 있어 내부 온도가 일정 이상으로 올라가면 자동으로 레버가 작동하지 않도록 기능을 차단한다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "가전제품 안전 메커니즘 분석 및 사용자 보고",
+      "source_url": "https://sangseek.com/communities/166195",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "토스터", "line": "현행 모델 대부분", "years": "2010~", "region": "글로벌" },
+      "caution": "토스터가 오래 연속으로 작동되거나 밀폐된 공간에 있으면 내부 온도 센서가 과열을 감지하여 레버가 누를 수 없게 된다. 이 경우 30분 이상 식힌 후 다시 시도하면 된다. 반복되면 사용 방식을 재검토할 것.",
+      "cautionSource": "제조사 안전 기능 설명"
+    },
+    {
+      "id": "toaster-acrylamide-concern-burnt-crumbs",
+      "claim": "토스터 내부에 쌓인 탄화 빵가루에서는 아크릴아마이드 등 발암 우려 물질이 생성될 수 있으므로 정기적인 청소가 필수다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "푸드레시피 — 토스터 청소 안전",
+      "source_url": "https://foodrecipe.co.kr/life/how-to-clean-toaster-safely/",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "토스터", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "발암 물질 생성을 완전히 막을 수는 없지만, 정기적인 청소로 축적을 크게 줄일 수 있다. 월 1회 이상 크럼 트레이 청소와 2개월 내부 청소를 권장한다.",
+      "cautionSource": "건강 위험 기준"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "topic": "무선이어폰·블루투스 전자파 안전성 팩트체크",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "electromagnetic-field-controversy-standards-gap",
+      "why": "공통_portable-fan-trend.json의 이 팩트는 휴대용 선풍기의 극저주파(ELF) 자기장에 관한 것이고, 블루투스 이어폰은 고주파 비이온화 방사선(RF)을 사용하므로 기술적 대상이 완전히 다름. 기준 체계 논쟁도 다른 맥락이므로 재사용 불가."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "bluetooth-power-output-one-eighth-of-standard",
+      "claim": "블루투스 최대 출력은 2.5밀리와트(mW)로, 전자파 규제 기준 20mW의 1/8 수준이며, 규제 대상 자체가 아니다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국립전파연구원 / 전자파 규제 기준",
+      "source_url": "https://www.rra.go.kr/emf/wrongfact/trenddata/index07.jsp",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스이어폰",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "블루투스는 출발부터 규제 기준을 넘지 않는 저출력 기기이므로, '전자파 규제를 피하려면'이라는 주장은 틀렸다.",
+      "cautionSource": "규제 기준 체계"
+    },
+    {
+      "id": "bluetooth-sar-one-percent-of-safety-standard",
+      "claim": "블루투스 이어폰에서 측정된 전기장 세기는 0.663V/m로, 인체 보호 기준값 61V/m의 약 1% 수준이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국립전파연구원 SAR 측정 데이터",
+      "source_url": "https://www.rra.go.kr/ko/license/D_c_sarlist.do",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스이어폰",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "국제 기준의 1% 수준은 인체가 받는 전자파 흡수량이 거의 무시할 수 있다는 뜻이다. 이 기준은 여러 시간 사용을 전제로 하고 있다.",
+      "cautionSource": "SAR 측정 체계 및 국제 안전 기준"
+    },
+    {
+      "id": "who-2b-classification-not-definitive-carcinogen",
+      "claim": "WHO의 2B 분류는 '발암 가능(possibly carcinogenic)'을 의미하며, '암을 유발한다'는 뜻이 아니다. 커피, 김치, 절인 채소와 같은 등급이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "WHO IARC / International Agency for Research on Cancer",
+      "source_url": "https://www.iarc.who.int",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스이어폰",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "국제"
+      },
+      "caution": "2B 분류는 '근거가 있을 수 있다'는 뜻일 뿐, 일상 소비량 기준으로 안전하다는 판단이 WHO의 입장이다. 예: 커피는 1991년 2B 분류였으나 2016년 재검토 후 3그룹(발암 물질 아님)으로 하향 조정됨.",
+      "cautionSource": "WHO IARC 공식 분류 체계 및 커피 재분류 사례"
+    },
+    {
+      "id": "airpods-brain-tumor-myth-no-evidence",
+      "claim": "에어팟 뇌종양설은 근거가 없다. 2015년 과학자 호소문이 출처인데, 에어팟은 2016년에 출시됐으며 호소문이 에어팟을 언급하지 않았다. 의료 전문가와 장기 연구는 블루투스 이어폰과 뇌종양의 인과관계를 부정한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 전문가 평가 / 휴대폰 무선주파수 장기 추적 연구",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=51847",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스이어폰",
+        "line": "에어팟 및 전 블루투스 모델",
+        "years": "현행",
+        "region": "국제"
+      },
+      "caution": "뇌종양설은 온라인 괴담 범주이며, '에어팟 때문에 뇌종양 진단받은 사례'는 의학적으로 보고된 바 없다. 글에서 이를 명확히 하되, 부정형이 아닌 '근거가 없다'로 단정할 수 있다.",
+      "cautionSource": "의료 전문가 평가 및 에어팟 출시 연혁"
+    },
+    {
+      "id": "non-ionizing-vs-ionizing-radiation",
+      "claim": "블루투스는 비이온화 방사선(non-ionizing RF)을 사용하며, 이는 충분한 에너지로 DNA를 직접 손상하지 않는다. 암을 유발하는 이온화 방사선(X선, 감마선)과는 근본적으로 다르다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "과학 문헌 / 암 연구 기관(NCI, BCPP)",
+      "source_url": "https://www.cancer.gov/about-cancer/causes-prevention/risk/radiation",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스이어폰",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "국제"
+      },
+      "caution": "비이온화 방사선도 간접적 경로(산화 스트레스 등)로 암을 유발할 가능성이 이론적으로 제기되어 왔으나, 일상 수준 노출에서는 증명되지 않았다. '비이온화 방사선이므로 안전하다'는 말과 '가능성이 제기되므로 위험하다'는 양극단 모두 피할 것.",
+      "cautionSource": "암 연구 문헌 및 방사선 물리학"
+    },
+    {
+      "id": "hearing-loss-from-earbud-volume-85db-threshold",
+      "claim": "무선이어폰 사용 시 실제 위험은 전자파가 아니라 청력 손상이다. 85데시벨(dB) 이상 장시간 노출 시 달팽이관 세포가 손실돼 영구적 청력 손상이 일어난다. 안전한 사용법은 '60·60 법칙'(최대 음량의 60% 이하, 60분 이상 연속 사용 금지)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 기관 청력 기준 / 세계보건기구",
+      "source_url": "https://www.epochtimes.kr/2024/06/684055.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스이어폰",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "국제"
+      },
+      "caution": "85dB는 의료 기준이며, 이를 초과하면 3dB 증가할 때마다 안전 노출 시간이 절반으로 줄어든다. 90dB 이상 8시간 또는 105dB 1시간 노출 시 소음성 난청이 발생한다. 시끄러운 환경에서 하루 80분 이상 이어폰 사용 청소년 중 1/5이 청력 손실을 경험했다는 데이터가 있다.",
+      "cautionSource": "의료 기관 청력 손상 기준 및 청소년 실측 데이터"
+    },
+    {
+      "id": "wired-vs-wireless-earbuds-health-no-difference",
+      "claim": "블루투스와 유선 이어폰 간 건강상 차이는 없다. 둘 다 음량 조절이 중요하며, 유선이 전자파로부터 더 안전하다는 주장은 근거가 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 전문가 평가",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=51847",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "이어폰 전체",
+        "line": "블루투스 vs 유선",
+        "years": "현행",
+        "region": "국제"
+      },
+      "caution": "글에서 '전자파 걱정하면 유선을 사용하세요'라는 조언이 나오면 이를 정정해야 한다. 실제 이슈는 청력이지 전자파가 아니다.",
+      "cautionSource": "의료 전문가 평가"
+    }
+  ]
+}

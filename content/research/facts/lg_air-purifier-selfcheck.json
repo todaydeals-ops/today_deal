@@ -1,0 +1,222 @@
+{
+  "topic": "LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검",
+  "brand": "LG",
+  "article": "air-purifier-selfcheck",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "purifier-filter-types-washable-vs-disposable",
+    "prefilter-water-washing-drying",
+    "hepa-filter-no-water-washing",
+    "filter-replacement-cycle-6-12-months",
+    "odor-causes-filter-end-of-life-humidity-dust",
+    "suction-weak-filter-dirty-reset",
+    "dust-sensor-monthly-cleaning",
+    "sensor-red-light-persistent-causes",
+    "noise-increase-filter-dirty-motor",
+    "filter-exchange-lamp-light-normal",
+    "genuine-filter-lg-sensor-recognition",
+    "lg-thinq-smart-diagnosis-procedure"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "lg-filter-reset-button-combination",
+      "claim": "LG 공기청정기의 필터 교체 알림 리셋 방법은 모델에 따라 다르며, 일반적으로 '자동바람 + 회전모드' 버튼을 동시에 3초 이상 누르거나, 1단 제품은 '청정세기 + 먼지상태' 버튼을 3초 이상, 2단 하부는 '먼지상태 + 취침예약' 버튼을 3초 이상 누르는 방식이다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 - 필터 교체 램프가 꺼지지 않아요 안내",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150469822191",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "공기청정기",
+        "line": "퓨리케어 360 및 전 라인",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "모델별 리셋 방법이 다르므로, 정확한 절차는 제품 설명서 또는 LG 스스로해결 페이지에서 자신의 모델명을 검색해 확인해야 한다. 잘못된 버튼 조합으로 시도하면 다른 기능이 활성화될 수 있다.",
+      "cautionSource": "LG전자 필터 교체 알림 리셋 정책"
+    },
+    {
+      "id": "lg-gas-sensor-fragrance-test",
+      "claim": "LG 공기청정기의 냄새 센서(가스 센서) 작동 여부를 확인하려면 향수, 세제, 초, 또는 방향제 등을 티슈에 뿌려 센서에 대어주면, 수 초 내에 디스플레이 색상이 변하고 '[냄새]' 표시가 나타나 정상 작동을 확인할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 - 냄새 및 먼지 센서 작동 확인 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151145399883",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "공기청정기",
+        "line": "가스 센서 장착 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "센서가 반응하지 않으면 센서 렌즈가 오염되었을 수 있으므로 면봉으로 닦아본다. 닦은 후에도 반응이 없으면 센서 고장일 수 있어 전문 서비스가 필요하다.",
+      "cautionSource": "센서 테스트 절차"
+    },
+    {
+      "id": "lg-dust-sensor-paper-tear-test",
+      "claim": "LG 공기청정기의 먼지 센서(PM 1.0 센서) 작동 여부를 확인하려면 필터 커버를 분리한 후 종이를 5회 정도 찢어 그 종이 끝을 10~15초간 문질러 먼지 입자를 발생시키고, 디스플레이의 먼지 농도 수치가 증가하면 정상 작동한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 - 냄새 및 먼지 센서 작동 확인 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151145399883",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "공기청정기",
+        "line": "먼지 센서 장착 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "센서가 반응하지 않으면 센서 렌즈가 먼지나 이물질로 막혔을 가능성이 크다. 면봉으로 렌즈를 닦은 후 다시 테스트해본다.",
+      "cautionSource": "센서 테스트 절차"
+    },
+    {
+      "id": "lg-laser-sensor-no-cleaning-required",
+      "claim": "LG 공기청정기의 일부 신규 모델에는 레이저 센서가 적용되어 있으며, 이는 자동 청소 기능이 있어 별도의 수동 청소가 불필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 - 공기청정기 자가 관리 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153405050483",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "공기청정기",
+        "line": "레이저 센서 탑재 신규 모델",
+        "years": "2023~현행",
+        "region": "KR"
+      },
+      "caution": "레이저 센서가 탑재되었는지 제품 사양에서 확인해야 한다. 확인하지 않은 채 상단 센서를 분해하면 고장을 초래할 수 있다.",
+      "cautionSource": "제조사 센서 기술 안내"
+    },
+    {
+      "id": "lg-filter-replacement-by-model",
+      "claim": "LG 공기청정기의 필터 교체 주기는 모델에 따라 다르며, 권장 교체 주기는 일반적으로 1년이지만 사용 환경에 따라 달라질 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 - 필터 교환 주기를 알고 싶어요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150135546132",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "공기청정기",
+        "line": "퓨리케어 전 라인",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "필터 교체 주기는 제품 모델에 따라 상이하므로, 자신의 모델명을 확인한 후 해당하는 필터 주기를 LG 스스로해결 페이지에서 검색해야 한다.",
+      "cautionSource": "모델별 교체 주기 기준"
+    },
+    {
+      "id": "lg-red-light-persistent-causes",
+      "claim": "LG 공기청정기 디스플레이에 빨간불(매우 나쁨)이 지속되는 주요 원인은 외부 미세먼지 유입, 가습기 미세물 오인, PM1.0 먼지 센서 오염, 방향제·향초·요리 냄새 감지 등이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 - 빨간불이 안 없어질 때 원인과 해결 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151366267039",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "공기청정기",
+        "line": "퓨리케어 전 라인",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "초음파식 또는 가열식 가습기를 공기청정기 근처에서 사용하면 스케일(미네랄) 성분이 필터에 흡착되어 필터 수명을 단축시킬 수 있으므로, 가습기 사용이 필요하면 자연기화식 가습기를 권장한다.",
+      "cautionSource": "LG전자 공기청정기 관리 가이드"
+    },
+    {
+      "id": "lg-red-light-sensor-cleaning-procedure",
+      "claim": "LG 공기청정기의 빨간불 문제를 해결하려면 환기 시스템과 가습기를 끈 후, 제품 뒷면의 PM1.0 먼지 센서를 면봉에 물을 살짝 적셔 센서 렌즈(10시 방향)를 부드럽게 닦으면 대부분의 경우 정상으로 돌아온다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 - 빨간불이 안 없어질 때 원인과 해결 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151366267039",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "공기청정기",
+        "line": "퓨리케어 전 라인",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "센서 렌즈는 매우 민감하므로 너무 문지르거나 강하게 누르면 손상될 수 있다. 면봉을 부드럽게 사용하고, 센서 청소 후에도 빨간불이 지속되면 필터 상태를 확인하거나 전문 서비스를 이용해야 한다.",
+      "cautionSource": "센서 청소 안전 지침"
+    },
+    {
+      "id": "lg-noise-increase-filter-obstruction",
+      "claim": "LG 공기청정기에서 바람 소리가 커지거나 이상한 소음이 나는 경우, 극세필터가 먼지로 막혀 있거나 필터가 제대로 조립되지 않았을 가능성이 높으므로, 필터를 재조립하거나 청소해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 - 가동 중 바람 소리가 너무 커요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150470755666",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "공기청정기",
+        "line": "퓨리케어 알파/360/에어로 시리즈",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "필터를 제거한 후 청소기나 부드러운 솔로 먼지를 제거한 다음, 제품에 다시 장착할 때 끝부분이 완전히 맞물렸는지 확인해야 한다. 필터가 헐거우면 공기 누수로 인해 추가 소음이 발생할 수 있다.",
+      "cautionSource": "필터 조립 점검 절차"
+    },
+    {
+      "id": "lg-noise-increase-fan-speed",
+      "claim": "LG 공기청정기에서 강풍 모드로 작동할 때 팬 회전 속도(RPM)가 높아져 모터 소음과 공기 마찰음이 증가하므로, 바람세기 또는 풍량조절 버튼을 눌러 수동으로 중풍 또는 약풍으로 조절하면 소음을 줄일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 - 가동 중 바람 소리가 너무 커요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150470755666",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "공기청정기",
+        "line": "퓨리케어 전 라인",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "강풍 모드는 공기 정화 효율이 높지만 소음이 크므로, 야간이나 수면 시에는 약풍 또는 취침 모드 사용을 권장한다.",
+      "cautionSource": "풍량 설정 가이드"
+    },
+    {
+      "id": "lg-noise-increase-auto-mode-cycling",
+      "claim": "LG 공기청정기 자동 모드에서 실내 오염을 감지하면 바람세기가 강풍으로 가동되고, 종합 청정도가 우수해지면 50분 연속 운전 후 10분 동안 중풍으로 순환 운전되므로, 이 과정에서 소음 변화가 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 - 가동 중 바람 소리가 너무 커요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150470755666",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "공기청정기",
+        "line": "퓨리케어 전 라인",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "자동 모드는 실시간 공기질 감지에 따라 자동으로 풍량을 조절하기 때문에 정상 작동이다. 일정한 소음 수준을 원하면 수동으로 풍량을 고정하면 된다.",
+      "cautionSource": "자동 모드 동작 특성"
+    },
+    {
+      "id": "lg-filter-genuine-auto-recognition",
+      "claim": "LG 공기청정기는 정품 필터를 장착했을 때 필터 교체 알림이 자동으로 초기화되며, 비정품 필터를 사용하면 알림이 깜박이며 비정품 필터 경고가 표시된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 - 필터 수명 확인(LG 월핏 가이드)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20154904342110",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "공기청정기",
+        "line": "정품 필터 인식 탑재 모델(월핏 포함)",
+        "years": "2023~현행",
+        "region": "KR"
+      },
+      "caution": "제품 모델에 따라 정품 필터 인식 기능의 지원 여부가 다를 수 있으므로, 자신의 모델명을 확인한 후 정품 필터 구입처(LG 서비스센터 또는 온라인 케어용품/소모품샵)에서 구매해야 한다.",
+      "cautionSource": "LG 정품 필터 구입 지침"
+    }
+  ]
+}

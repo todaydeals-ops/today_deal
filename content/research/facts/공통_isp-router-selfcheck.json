@@ -1,0 +1,214 @@
+{
+  "topic": "통신사 공유기(KT·SK브로드밴드·LG유플러스) 인터넷 안 됨 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "iptime-admin-page-access-address",
+      "why": "ipTIME 사설 공유기(192.168.0.1)와 통신사 공유기(KT 172.30.1.254, LG유플러스 192.168.219.1)의 관리자 페이지 주소가 완전히 다름"
+    },
+    {
+      "id": "iptime-admin-default-password",
+      "why": "ipTIME 초기 비밀번호(admin/admin)와 통신사 공유기의 비밀번호 체계가 다름. 통신사는 공유기 하단 스티커에 기재"
+    },
+    {
+      "id": "iptime-rst-button-hard-reset",
+      "why": "ipTIME RST 버튼은 CPU LED 기준으로 10초 누르지만, 통신사 공유기는 리셋 버튼 위치와 시간이 모델별로 다름"
+    },
+    {
+      "id": "iptime-admin-page-gateway-confirmation",
+      "why": "ipTIME 전용 기술이므로 통신사 공유기 troubleshooting에는 적용 불가"
+    },
+    {
+      "id": "iptime-specific-device-connection-failure",
+      "why": "ipTIME 브랜드 특화 기술. 통신사 공유기와는 UI·메뉴 구조가 다름"
+    },
+    {
+      "id": "iptime-wireless-channel-manual-setting",
+      "why": "ipTIME 관리자 페이지 경로(192.168.0.1 → 기본설정 → 무선설정)가 통신사 공유기와 다름"
+    },
+    {
+      "id": "iptime-bandwidth-setting-options",
+      "why": "ipTIME 무선 설정 메뉴 구조가 통신사 공유기와 다름"
+    },
+    {
+      "id": "iptime-2g4-vs-5g-characteristics",
+      "why": "2.4GHz vs 5GHz 특성은 공통 지식이지만, 이 팩트는 ipTIME 커뮤니티 기반이고 통신사 공유기용 새로운 팩트로 작성하는 것이 맞음"
+    },
+    {
+      "id": "iptime-firmware-upgrade-availability",
+      "why": "ipTIME 펌웨어 업그레이드 방법이 통신사 공유기와 다름. 통신사는 일반 사용자 업그레이드 불가능할 수 있음"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "kt-admin-page-access-172-30-1-254",
+      "claim": "KT 공유기 관리자 페이지 접속 주소는 172.30.1.254 또는 ktrouter.com이며, 모뎀이 없거나 일부 구형 모델은 192.168.1.1이 기본값일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KT 고객지원 및 커뮤니티 종합",
+      "source_url": "https://help.kt.com/servicetip/ServiceTipInfo.do?idx=80",
+      "checked": "2026-07-21",
+      "scope": { "brand": "KT", "category": "공유기", "line": "홈허브·기가와이파이", "years": "현행", "region": "KR" },
+      "caution": "공유기에 통신사 모뎀이 함께 있으면 172.30.1.254로, 독립형 공유기면 192.168.1.1로 접속해야 할 수 있으니 하나가 안 되면 다른 주소를 시도할 것."
+    },
+    {
+      "id": "kt-admin-default-password-model-variants",
+      "claim": "KT 공유기의 기본 관리자 계정은 아이디 ktuser이지만, 비밀번호는 모델마다 다르며(홈허브 megaap, 올레 기가와이파이 homehub 등), 공유기 하단 또는 뒷면의 스티커에서 확인할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KT 공유기 설정 가이드",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/kt%ED%99%88%ED%97%88%EB%B8%8C_%ED%95%84%EC%88%98_%EC%84%A4%EC%A0%95_%EB%B0%8F_%EC%98%A4%EB%A5%98_%ED%95%B4%EA%B2%B0_%EA%B4%80%EB%A6%AC%EC%9E%90_%ED%8E%98%EC%9D%B4%EC%A7%80_%EC%A0%91%EC%86%8D_%EB%B0%A9%EB%B2%95-76983",
+      "checked": "2026-07-21",
+      "scope": { "brand": "KT", "category": "공유기", "line": "홈허브·기가와이파이", "years": "현행", "region": "KR" },
+      "caution": "비밀번호를 잊으면 초기화 버튼을 눌러야 하는데, 그러면 모든 설정(와이파이 이름·비밀번호 등)이 초기화되므로 주의. 또는 고객센터(100번)에 문의하여 비밀번호 재설정을 요청할 것."
+    },
+    {
+      "id": "skb-admin-page-access-not-standardized",
+      "claim": "SK브로드밴드 공유기의 관리자 페이지 접속 주소는 공식 문서에 명확히 기재되지 않으며, 모델에 따라 다를 수 있으므로 공유기 하단 스티커나 설정서를 먼저 확인해야 한다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "SK브로드밴드 공식블로그 및 커뮤니티",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/SK_%EA%B3%B5%EC%9C%A0%EA%B8%B0_%EC%84%A4%EC%A0%95_%EA%B0%80%EC%9D%B4%EB%93%9C_%E2%80%93_%EA%B4%80%EB%A6%AC%EC%9E%90_%ED%8E%98%EC%9D%B4%EC%A7%80_%EC%A0%91%EC%86%8D,_%EC%B4%88%EA%B8%B0%ED%99%94,_%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8_%EB%B3%80%EA%B2%BD_%EC%99%84%EB%B2%BD_%EC%A0%95%EB%A6%AC-52593",
+      "checked": "2026-07-21",
+      "scope": { "brand": "SK브로드밴드", "category": "공유기", "line": "전 라인", "years": "현행", "region": "KR" },
+      "caution": "공식 안내가 명확하지 않으므로 고객센터(106번 ARS)에 문의하거나 공유기에 붙은 안내서를 참조할 것."
+    },
+    {
+      "id": "skb-admin-default-password-label",
+      "claim": "SK브로드밴드 공유기의 기본 비밀번호는 공유기 하단 또는 뒷면 스티커에 기재되어 있으며, 모델마다 다를 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "SK브로드밴드 공유기 설정 커뮤니티",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/SK_%EA%B3%B5%EC%9C%A0%EA%B8%B0_%EC%84%A4%EC%A0%95,_%EC%99%9C_%EC%95%88%EB%93%A4%EC%96%B4%EA%B0%80%EC%A7%80%EB%8A%94%EA%B1%B0%EC%95%BC_%ED%8E%98%EC%9D%B4%EC%A7%80_%EC%A3%BC%EC%86%8C_IP%EB%B6%80%ED%84%B0_%EC%84%A4%EC%A0%95_%EB%B0%A9%EB%B2%95%EA%B9%8C%EC%A7%80!-62518",
+      "checked": "2026-07-21",
+      "scope": { "brand": "SK브로드밴드", "category": "공유기", "line": "전 라인", "years": "현행", "region": "KR" },
+      "caution": "스티커가 손상되었으면 고객센터 106번으로 문의할 것."
+    },
+    {
+      "id": "lgu-admin-page-access-192-168-219-1",
+      "claim": "LG유플러스 공유기 관리자 페이지 접속 주소는 http://192.168.219.1이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG유플러스 고객지원",
+      "source_url": "https://www.lguplus.com/support/self-troubleshoot/guide",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG유플러스", "category": "공유기", "line": "전 라인", "years": "현행", "region": "KR" },
+      "caution": "공유기에 연결된 기기(컴퓨터·핸드폰)에서 웹 브라우저를 열고 주소창에 입력할 것."
+    },
+    {
+      "id": "lgu-admin-default-password-label",
+      "claim": "LG유플러스 공유기의 기본 관리자 비밀번호는 공유기 하단 또는 뒷면에 붙은 스티커에 기재되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG유플러스 고객지원 및 커뮤니티",
+      "source_url": "https://www.lguplus.com/support/self-troubleshoot/guide",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG유플러스", "category": "공유기", "line": "전 라인", "years": "현행", "region": "KR" },
+      "caution": "비밀번호를 분실했으면 고객센터(101번 또는 1544-0101)에 문의하거나 초기화 버튼을 눌러 공장 초기화할 수 있으나, 그러면 모든 설정이 사라진다."
+    },
+    {
+      "id": "reboot-sequence-modem-first-3sec",
+      "claim": "인터넷이 안 될 때 기본 점검은 모뎀의 전원 케이블을 먼저 뽑고 약 3초 대기한 후 다시 연결한 뒤, 공유기도 같은 방식으로 재부팅하는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KT·SK브로드밴드·LG유플러스 공식 안내 종합",
+      "source_url": "https://help.kt.com/servicetip/ServiceTipInfo.do?idx=82",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "공유기·모뎀", "line": "전 통신사·전 라인", "years": "현행", "region": "KR" },
+      "caution": "모뎀과 공유기를 동시에 뽑지 말고, 반드시 모뎀 먼저 끈 후 공유기를 끌 것. 재부팅은 대기 시간 3초가 전자 노드 방전에 필요하므로 단축하지 말 것.",
+      "cautionSource": "통신사별 자가점검 가이드 — 모뎀/공유기 재부팅 시간 기준"
+    },
+    {
+      "id": "wifi-connected-no-internet-led-check",
+      "claim": "와이파이는 잡히는데 인터넷이 안 될 때 첫 확인은 공유기 전면의 인터넷 LED 색상이다. 흰색 또는 초록색이면 정상, 빨간색이거나 꺼져 있으면 문제가 있는 것이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "통신사별 공유기 LED 가이드 종합",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4_%EA%B3%B5%EC%9C%A0%EA%B8%B0_%EC%97%B0%EA%B2%B0_%EC%97%86%EC%9D%8C,_%EC%95%88%EB%90%A0_%EB%95%8C_%EC%B4%88%EA%B8%B0%ED%99%94_%EB%B0%8F_%ED%95%B4%EA%B2%B0_%EB%B0%A9%EB%B2%95_%EC%B4%9D%EC%A0%95%EB%A6%AC!_2025%EB%85%84ver.-58807",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "공유기", "line": "전 라인", "years": "현행", "region": "KR" },
+      "caution": "LED 색상이 꺼져 있으면 공유기 전원을 확인하고, 빨간색이면 공유기 뒷면의 인터넷 포트(모뎀에서 들어오는 랜선)가 제대로 연결되었는지 분리했다 재연결할 것."
+    },
+    {
+      "id": "wifi-connected-no-internet-dns-check",
+      "claim": "와이파이는 연결되는데 인터넷이 안 될 때, LED 확인과 랜선 재연결을 했는데도 안 되면 Windows PC의 명령 프롬프트에서 ipconfig /all을 입력해 DNS 서버 정보를 확인해야 한다. DNS가 0.0.0.0이거나 비어 있으면 공유기·모뎡·통신사 네트워크에 문제가 있는 것이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "와이파이 연결 문제 커뮤니티 기술 가이드",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/wifi_%EC%97%B0%EA%B2%B0%EC%95%88%EB%90%A8_%EC%A0%90%EA%B2%80_%ED%95%B4%EA%B2%B0%EB%B0%A9%EB%B2%95-67103",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "공유기·진단", "line": "전 라인", "years": "현행", "region": "KR" },
+      "caution": "macOS의 경우 System Preferences → Network에서 DNS 정보를 확인할 것. DNS가 정상이면서 인터넷이 안 되면 고객센터로 문의할 것."
+    },
+    {
+      "id": "kt-online-remote-diagnostics",
+      "claim": "KT의 원격 진단 서비스는 마이케이티 앱 또는 help.kt.com의 '인터넷/TV 고장진단' 페이지에서 24시간 이용 가능하며, 원격으로 KT 공유기와 인터넷 상태를 점검하고 필요시 A/S를 신청할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KT 고객지원",
+      "source_url": "https://help.kt.com/asreq/HomeAsReqStatusInfo.do",
+      "checked": "2026-07-21",
+      "scope": { "brand": "KT", "category": "공유기·고장신고", "line": "전 라인", "years": "현행", "region": "KR" },
+      "caution": "KT 본인 명의 상품이어야만 진단 가능하며, 제3사 공유기(ipTIME 등)가 연결되어 있으면 그 기기는 진단 대상이 아니다."
+    },
+    {
+      "id": "kt-customer-service-100-dial",
+      "claim": "KT 고장 신고는 KT 전화에서 100번(무료) 또는 080-000-9999로 연결된다. 상담사가 자가점검 방법을 안내하거나 기술 A/S를 예약해줄 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KT 고객지원",
+      "source_url": "https://help.kt.com/store/KtCustCenter.do",
+      "checked": "2026-07-21",
+      "scope": { "brand": "KT", "category": "고객센터", "line": "전 라인", "years": "현행", "region": "KR" },
+      "caution": "신규 가입자와 기존 고객의 전화번호가 다를 수 있으므로 가입 계약서를 확인할 것."
+    },
+    {
+      "id": "skb-customer-service-106-ars",
+      "claim": "SK브로드밴드 기술 상담은 106번 ARS(무료, 연중무휴 24시간)를 통해 이루어지며, ARS에서 1번을 선택하면 기술지원 상담사에 연결된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SK브로드밴드 공식",
+      "source_url": "https://www.bworld.co.kr/customer/center/service.do",
+      "checked": "2026-07-21",
+      "scope": { "brand": "SK브로드밴드", "category": "고객센터", "line": "전 라인", "years": "현행", "region": "KR" },
+      "caution": "온라인 접수는 B world 홈페이지(bworld.co.kr)에서도 가능하다."
+    },
+    {
+      "id": "lgu-customer-service-101-ars",
+      "claim": "LG유플러스 고객센터는 101번 ARS(무료) 또는 1544-0101로 연결되며, 기술 상담과 A/S 예약이 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG유플러스 고객지원",
+      "source_url": "https://www.lguplus.com/support/service/ars",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG유플러스", "category": "고객센터", "line": "전 라인", "years": "현행", "region": "KR" },
+      "caution": "LG U+ 앱의 챗봇 상담도 이용 가능하고, 영상통화 원격 지원도 제공된다."
+    },
+    {
+      "id": "isp-router-self-reboot-vs-technician-visit",
+      "claim": "공유기 재부팅(전원 끄고 3초 후 다시 켜기)과 LED·랜선 확인으로 대부분의 인터넷 끊김이 해결되지만, 이 모든 과정을 거쳐도 인터넷이 안 되면 모뎀 고장 또는 통신사 신호 장애이므로 기술 A/S를 신청해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "통신사별 자가점검 가이드 종합",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/KT_%EC%9D%B8%ED%84%B0%EB%84%B7_%EC%97%B0%EA%B2%B0_%EC%95%88%EB%90%A8_%EA%B8%B0%EC%82%AC%EB%8B%98_%EB%B6%80%EB%A5%B4%EA%B8%B0_%EC%A0%84%EC%97%90_%EC%85%80%ED%94%84_%ED%95%B4%EA%B2%B0%ED%95%98%EB%8A%94_3%EB%8B%A8%EA%B3%84_%EC%A0%90%EA%B2%80%EB%B2%95-58372",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "공유기·진단", "line": "전 라인", "years": "현행", "region": "KR" },
+      "caution": "모뎀이 약간 따뜻해지는 것은 정상이지만, 만지기 힘들 정도로 뜨거우면 고장 신호이므로 즉시 전원을 끄고 A/S를 신청할 것."
+    },
+    {
+      "id": "channel-interference-2g4ghz-vs-5ghz",
+      "claim": "와이파이 속도가 느릴 때는 대역을 확인해야 한다. 2.4GHz는 범위가 넓지만 간섭이 많고(전자레인지·무선마우스 등과 간섭), 5GHz는 범위가 좁지만 빠르고 간섭이 적다. 공유기에서 듀얼밴드 지원하면 기기별로 대역을 선택할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "무선 네트워크 기술 커뮤니티",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/SK_KT_LG_%EB%AA%A8%EB%8E%80_%EB%B8%8C%EB%A6%BF%EC%A7%80%EB%AA%A8%EB%93%9C%EB%9E%80_%EC%84%A4%EC%A0%95_%EB%B0%A9%EB%B2%95_%EB%B0%8F_%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD%EB%8B%A8%EC%A0%90-41262",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "공유기", "line": "듀얼밴드 이상", "years": "현행", "region": "KR" },
+      "caution": "같은 공간에서 같은 채널을 쓰는 이웃 공유기가 많으면 간섭이 발생하는데, 각 통신사 공유기의 관리자 페이지에서 채널을 변경하거나 자동 선택을 사용하면 도움이 될 수 있다."
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "topic": "멀티탭·콘센트 안전 사용 가이드",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "rated-capacity-15a-3300w",
+      "claim": "가정용 콘센트 정격 용량은 15A이며, 220V 기준으로 15A × 220V = 3,300W이다. 이 용량을 초과해 사용하면 전선 과열로 화재가 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소방청·전기안전공사 화재 예방 안내",
+      "source_url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008173089",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "멀티탭·콘센트",
+        "line": "가정용 일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "실사용 시에는 안전마진을 고려해 정격 용량의 70~80% 이내(약 2,200~2,600W)로 사용하는 것이 권장된다.",
+      "cautionSource": "한국전기안전공사 안전 권고 기준"
+    },
+    {
+      "id": "multitap-16a-4000w-rated-capacity",
+      "claim": "고용량 멀티탭의 정격 용량은 16A이며, 250V 기준으로 16A × 250V = 4,000W이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "멀티탭 안전 및 성능 기준",
+      "source_url": "https://troubleshooter.co.kr/high-capacity-power-strip-best10-guide/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "멀티탭",
+        "line": "고용량형(16A)",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "16A 멀티탭도 실사용 시에는 70% 이내인 약 2,800W까지 사용을 권장하며, 최대 정격값으로 지속 사용하면 발열 및 화재 위험이 증가한다.",
+      "cautionSource": "한국전기안전공사 안전 권고 기준"
+    },
+    {
+      "id": "octopus-multitap-fire-risk",
+      "claim": "여러 전자기기를 동시에 멀티탭에 연결하는 '문어발식' 사용은 정격 용량 초과로 인한 과열과 화재를 유발할 수 있다. SBS 실험에서 정격 10A 멀티탭에 에어컨과 냉풍기를 연결했을 때 7분 30초 만에 스파크가 발생했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SBS 뉴스 멀티탭 화재 실험 및 소방청 화재 통계",
+      "source_url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008173089",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "멀티탭",
+        "line": "일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "문어발식 사용은 화재 위험으로 인해 절대 피해야 하며, 한 콘센트에 최소한의 기기만 연결하는 것이 안전하다."
+    },
+    {
+      "id": "daisy-chain-multitap-connection-risk",
+      "claim": "멀티탭을 다른 멀티탭에 연결하는 직렬 연결(다중 연결)은 전선에 전력이 집중되고 전선 길이가 길어져 발열 위험이 크다. 한국전기안전공사는 이를 피하고 회로를 나눠 사용할 것을 권고한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국전기안전공사 멀티탭 안전 가이드",
+      "source_url": "https://zero7w.com/%EB%A9%80%ED%8B%B0%ED%83%AD-%EC%BD%98%EC%84%BC%ED%8A%B8-%EC%97%B0%EA%B2%B0-%EC%A3%BC%EC%9D%98%ED%95%A0-%EC%A0%90-%EC%95%88%EC%A0%84%EC%88%98%EC%B9%99/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "멀티탭",
+        "line": "일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "불가피하게 연장이 필요하면 멀티탭을 연결하기보다 긴 멀티탭 제품을 구입하는 것이 안전하다."
+    },
+    {
+      "id": "kc-certification-mandatory",
+      "claim": "멀티탭은 전기용품으로서 반드시 KC 인증(한국안전인증마크)을 받아야 하며, 인증 없는 제품은 화재 및 감전 위험이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가기술표준원 전기용품 안전 기준",
+      "source_url": "https://www.kats.go.kr/cwsboard/board.do?mode=download&bid=155&cid=16762&filename=16762_201411271652343023.pdf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "멀티탭",
+        "line": "일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "멀티탭 구매 시 제품 라벨에 KC 마크가 표기되어 있는지 반드시 확인할 것."
+    },
+    {
+      "id": "overload-protection-function",
+      "claim": "멀티탭의 과부하 차단 기능(서킷브레이커)은 정격 전류를 초과할 때 전원을 자동으로 차단하여 화재와 제품 손상을 예방한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "멀티탭 안전 및 성능 기준",
+      "source_url": "https://www.insight.co.kr/news/557724",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "멀티탭",
+        "line": "일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "멀티탭 구매 시 과부하 차단 기능이 장착되어 있는지 반드시 확인하는 것이 안전의 필수 요소다."
+    },
+    {
+      "id": "wire-curling-heat-accumulation",
+      "claim": "멀티탭의 전선을 칭칭 감거나 구부린 상태에서 사용하면 열이 축적되어 과열이 발생하고, 펴진 상태에서는 열이 발산되어 화재 위험이 낮아진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SBS 뉴스 멀티탭 화재 실험",
+      "source_url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008173089",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "멀티탭",
+        "line": "일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "멀티탭 사용 시 전선이 구부러지거나 감기지 않도록 펴서 사용하는 것이 화재 예방의 중요한 요소다."
+    },
+    {
+      "id": "tracking-phenomenon-dust-moisture",
+      "claim": "트래킹 현상은 콘센트에 먼지가 쌓이고 습기가 유입되면서 극 사이에 도전로가 형성되어 불꽃 방전이 발생하는 화재 메커니즘이다. 먼지와 습기가 결합하면 전류가 흐르면서 아크 온도가 매우 높아져 가연물을 발화시킬 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소방청 전기화재 예방 안내",
+      "source_url": "https://www.a-ha.io/questions/420e0c5332fb7d30a261b4b6369e5cd6",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "콘센트",
+        "line": "일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "콘센트 주변을 정기적으로 청소하고(전원 차단 후), 사용하지 않는 콘센트에는 안전 커버를 끼워 먼지와 습기 침입을 방지하는 것이 트래킹 현상 예방의 핵심이다."
+    },
+    {
+      "id": "high-power-appliances-direct-outlet",
+      "claim": "전자레인지(1200~1500W), 헤어드라이어(1000~1800W), 전기장판, 전기밥솥, 에어컨, 냉장고, 세탁기 등 1000W 이상의 고전력 기기는 반드시 벽에 설치된 콘센트에 직접 꽂아야 하며, 멀티탭에 연결하면 정격 초과로 인한 화재 위험이 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소방청·전기안전공사 가전 안전 가이드",
+      "source_url": "https://www.nongmin.com/article/20250708500207",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "멀티탭·콘센트",
+        "line": "고전력 기기 사용",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "특히 욕실에서 사용하는 헤어드라이어는 습도가 높은 환경에서 멀티탭 사용 시 감전 및 화재 위험이 급증하므로 절대 피해야 한다."
+    },
+    {
+      "id": "grounding-3pin-outlet-safety",
+      "claim": "접지된 3구 콘센트(3핀 타입)는 정상적인 작동 외에 누전이나 과전류 발생 시 접지 핀을 통해 전기를 안전하게 땅으로 흘려보내 감전과 화재를 예방한다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "전기안전 커뮤니티 및 기술 가이드",
+      "source_url": "https://zero7w.com/%EA%B0%80%EC%A0%95%EB%82%B4%EC%A0%84%EA%B8%B0%EC%95%88%EC%A0%84-%EC%BD%98%EC%84%BC%ED%8A%B8%EC%97%90%EC%84%9C-%EB%B6%88%EA%BD%83%EC%9D%B4-%ED%8A%88-%EB%95%8C-%EC%9B%90%EC%9D%B8%EA%B3%BC-%EC%A6%A9-%EB%B0%A9%EC%95%88/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "콘센트",
+        "line": "3구 접지형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "새 주택이나 리모델링 후 설치된 콘센트는 대부분 3구 타입이며, 기술 장비나 누수 위험이 있는 기기(제습기, 가습기 등)는 3구 콘센트에 연결하는 것이 안전하다."
+    },
+    {
+      "id": "individual-switch-convenience",
+      "claim": "개별 스위치가 달린 멀티탭은 각 기기별로 독립적으로 전원을 제어할 수 있어 대기전력 절감과 안전한 사용이 가능하다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "가전 안전 커뮤니티 및 사용자 리뷰",
+      "source_url": "https://www.clien.net/service/board/lecture/12570667",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "멀티탭",
+        "line": "개별 스위치형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "개별 스위치 기능이 필수는 아니지만, 불필요한 전기 소비를 줄이고 싶다면 선택 시 고려할 만한 사항이다."
+    },
+    {
+      "id": "multitap-replacement-cycle",
+      "claim": "멀티탭의 안전한 교체 주기는 약 3년으로 권장되며, 정기적인 교체를 통해 노화로 인한 화재 위험을 줄일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전기안전 전문가 권고",
+      "source_url": "https://www.nongmin.com/article/20250708500207",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "멀티탭",
+        "line": "일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "장시간 사용했거나, 과부하 차단 기능이 작동한 적이 있거나, 물리적 손상(금이 가거나 변색)이 있으면 3년 이내라도 교체하는 것이 안전하다.",
+      "cautionSource": "전기안전 전문가 권고"
+    }
+  ]
+}

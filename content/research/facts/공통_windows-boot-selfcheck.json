@@ -1,0 +1,305 @@
+{
+  "topic": "Windows PC 부팅 안 됨·블루스크린 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "windows-boot-vs-power-on-distinction",
+      "claim": "전원이 켜지는 것(부팅 시작)과 Windows가 뜨는 것(부팅 완료)은 다른 문제다. 전원은 켜져도 BIOS 화면에서 멈추거나 검은 화면만 나오면 소프트웨어(Windows)가 로드되지 않은 것이며, 전원 자체가 안 켜지면 하드웨어 문제다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshooting Windows unexpected restarts and stop code errors",
+      "source_url": "https://support.microsoft.com/en-US/Windows/Experience/Performance-Optimization/troubleshooting-windows-unexpected-restarts-and-stop-code-errors",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 부팅",
+        "years": "Windows 10/11",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "blue-screen-stop-code-reading-method",
+      "claim": "블루스크린이 나타나면 화면에 표시되는 정지 코드(Stop Code)와 오류 메시지를 사진으로 촬영하거나 기록해두어야 한다. 정지 코드는 '0x' 뒤에 16진수(숫자와 A~F 문자)로 표시되며, 예를 들어 '0x0000007B', '0xC000021A' 등이 일반적인 형태다. 이 코드가 문제의 원인을 파악하는 가장 중요한 단서다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - 블루 스크린 오류 문제 해결",
+      "source_url": "https://support.microsoft.com/ko-kr/sbs/windows/troubleshoot-blue-screen-errors-5c62726c-6489-52da-a372-3f73142c14ad",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 블루스크린",
+        "years": "Windows 10/11",
+        "region": "KR"
+      },
+      "caution": "정지 코드는 드라이버, 메모리, 저장장치 등 다양한 원인을 나타낼 수 있으므로, 코드를 정확히 기록해 Microsoft 공식 문서에서 검색하거나 전문가에 상담하는 것이 중요하다",
+      "cautionSource": "Microsoft Support - 블루 스크린 오류 문제 해결"
+    },
+    {
+      "id": "blue-screen-automatic-restart-disable",
+      "claim": "블루스크린 후 자동 재시작되어 정지 코드를 볼 수 없으면, 제어판 > 시스템 > 고급 시스템 설정 > 시작 및 복구에서 '자동으로 다시 시작' 항목을 체크 해제하면, 다음 블루스크린 발생 시 정지 코드를 읽을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - 블루 스크린 오류 문제 해결",
+      "source_url": "https://support.microsoft.com/ko-kr/sbs/windows/troubleshoot-blue-screen-errors-5c62726c-6489-52da-a372-3f73142c14ad",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 블루스크린",
+        "years": "Windows 10/11",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "automatic-repair-loop-recovery-environment",
+      "claim": "자동 복구가 반복되어 무한 루프에 빠지면 (복구 중... → 재시작 → 복구 중... 반복), PC 강제 종료 후 다시 켜면 Windows 복구 환경(WinRE)이 자동으로 실행된다. 복구 환경에서 '문제 해결' 또는 '고급 옵션' 메뉴를 선택해 수동 복구 방법을 선택할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Windows Startup Settings & Recovery Options",
+      "source_url": "https://support.microsoft.com/en-US/Windows/Experience/Startup-Boot/windows-startup-settings",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 부팅 복구",
+        "years": "Windows 10/11",
+        "region": "KR"
+      },
+      "caution": "강제 종료는 3~4번 반복해야 WinRE가 트리거될 수 있으며, 저장되지 않은 파일은 손실될 수 있다",
+      "cautionSource": "Microsoft Support - Windows Recovery Environment"
+    },
+    {
+      "id": "safe-mode-boot-recovery-environment",
+      "claim": "안전 모드로 진입하려면 Windows 복구 환경에서 '문제 해결' > '고급 옵션' > '시작 설정' > '다시 시작'을 선택한다. 재시작 후 숫자 키(4, 5, 6)를 눌러 [안전 모드], [네트워크를 이용한 안전 모드], [명령 프롬프트를 이용한 안전 모드] 중 선택한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Windows Startup Settings",
+      "source_url": "https://support.microsoft.com/en-US/Windows/Experience/Startup-Boot/windows-startup-settings",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 안전 모드",
+        "years": "Windows 10/11",
+        "region": "KR"
+      },
+      "caution": "안전 모드는 최소한의 드라이버와 서비스만 로드하므로 인터넷 연결, 프린터, 일부 주변기기가 작동하지 않을 수 있다"
+    },
+    {
+      "id": "safe-mode-driver-rollback-diagnosis",
+      "claim": "안전 모드에서 Windows가 정상 부팅되면 최근 설치된 드라이버나 소프트웨어가 문제 원인일 가능성이 높다. 안전 모드에서 장치 관리자를 열어 느낌표(!)가 표시된 장치의 드라이버를 우클릭 후 '드라이버 롤백' 또는 '드라이버 제거' 후 재부팅을 시도한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Device Driver Management",
+      "source_url": "https://support.microsoft.com/en-us/windows/update-drivers-through-device-manager-in-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 드라이버 문제",
+        "years": "Windows 10/11",
+        "region": "KR"
+      },
+      "caution": "드라이버 롤백 옵션이 없다면 Windows는 이전 드라이버를 보유하지 않은 것이므로, 대신 드라이버를 제거 후 다시 설치해야 한다"
+    },
+    {
+      "id": "startup-repair-automatic-fix",
+      "claim": "Windows 복구 환경에서 '시동 복구'를 선택하면 Windows가 자동으로 부팅 구성 오류, 손상된 시스템 파일, 마스터 부트 레코드 문제, 레지스트리 오류 등을 진단하고 수정한다. 수정에 성공하면 Windows가 정상 부팅되고, 실패하면 상세한 문제 보고서를 제공한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Startup Repair",
+      "source_url": "https://support.microsoft.com/en-US/Windows/Experience/Startup-Boot/startup-repair",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 부팅 복구",
+        "years": "Windows 10/11",
+        "region": "KR"
+      },
+      "caution": "BitLocker 암호화가 활성화되어 있으면 복구 키가 필요하다. 시동 복구로 해결되지 않으면 고급 복구 방법(시스템 복원, 시스템 파일 검사기, DISM 등)을 시도해야 한다"
+    },
+    {
+      "id": "system-restore-personal-files-safe",
+      "claim": "시스템 복원은 이전 복원 지점으로 돌아가는 기능으로, 시스템 파일, 레지스트리, 설치된 프로그램만 변경되며 개인 파일(문서, 사진, 영상 등)은 손실되지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - System Restore",
+      "source_url": "https://support.microsoft.com/en-US/Windows/Experience/Backup-Recovery/system-restore",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 시스템 복원",
+        "years": "Windows 10/11",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "system-restore-recovery-point-selection",
+      "claim": "Windows 복구 환경에서 '시스템 복원'을 선택하면 이전 복원 지점 목록이 표시된다. 최근 드라이버 업데이트나 소프트웨어 설치 직후부터 문제가 시작되었다면, 그 직전 날짜의 복원 지점을 선택하여 이전 상태로 복원한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - System Restore",
+      "source_url": "https://support.microsoft.com/en-US/Windows/Experience/Backup-Recovery/system-restore",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 시스템 복원",
+        "years": "Windows 10/11",
+        "region": "KR"
+      },
+      "caution": "자동 복원 지점이 없을 수도 있으므로, 이 경우 시동 복구나 다른 복구 방법을 시도해야 한다"
+    },
+    {
+      "id": "boot-device-not-found-bios-check",
+      "claim": "'부팅 장치를 찾을 수 없음' 메시지가 나타나면 BIOS 진입 (부팅 시 Del, F2, F10 등의 키 - 제조사별 다름)해 저장장치(HDD/SSD)가 인식되는지 확인해야 한다. BIOS 부팅 순서 설정에서 SSD/HDD가 목록에 없거나 비활성화되어 있으면, 저장장치 자체의 물리적 손상이나 연결 문제를 의심해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Learn - Windows Boot Configuration",
+      "source_url": "https://support.microsoft.com/en-US/Windows/Experience/Backup-Recovery/recovery-options-in-windows",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 부팅 장치 인식",
+        "years": "Windows 10/11",
+        "region": "KR"
+      },
+      "caution": "BIOS 접근 시 설정을 변경하지 않고 상태만 확인할 것. 부팅 순서 변경은 신중하게 진행해야 한다",
+      "cautionSource": "BIOS 사용 시 주의"
+    },
+    {
+      "id": "windows-update-boot-failure-rollback",
+      "claim": "Windows 업데이트 후 부팅이 실패하면, Windows 복구 환경에서 '문제 해결' > '고급 옵션' > '이전 빌드로 돌아가기'를 선택해 이전 버전의 Windows로 다운그레이드할 수 있다. 이 옵션은 업데이트 후 10일 이내에만 사용 가능하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Recovery Options in Windows",
+      "source_url": "https://support.microsoft.com/en-US/Windows/Experience/Backup-Recovery/recovery-options-in-windows",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 업데이트 실패",
+        "years": "Windows 10/11",
+        "region": "KR"
+      },
+      "caution": "이 옵션은 업데이트 후 10일 이내에만 사용 가능하므로, 시간이 경과했으면 사용할 수 없다",
+      "cautionSource": "Microsoft Support - Recovery Options in Windows"
+    },
+    {
+      "id": "pc-reset-data-retention-option",
+      "claim": "Windows 복구 환경에서 '이 PC 초기화'를 선택할 때 두 가지 옵션이 있다: (1) '개인 파일 보관' - Windows와 프로그램을 제거하고 다시 설치하지만 문서, 사진, 동영상 등 개인 파일은 유지 (2) '모든 항목 제거' - 모든 개인 파일, 앱, 설정을 완전히 삭제하고 Windows를 새로 설치",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - PC 초기화",
+      "source_url": "https://support.microsoft.com/ko-KR/Windows/Experience/Backup-Recovery/reset-your-pc",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows PC 초기화",
+        "years": "Windows 10/11",
+        "region": "KR"
+      },
+      "caution": "절대 중요: '모든 항목 제거' 옵션은 드라이브의 모든 데이터를 삭제하며, 이는 복구 불가능한 작업이다. 파일 백업 없이 이 옵션을 선택하면 데이터 전부를 잃게 된다",
+      "cautionSource": "Microsoft Support - PC 초기화"
+    },
+    {
+      "id": "pc-reset-personal-files-keep-safe",
+      "claim": "'개인 파일 보관' 옵션으로 초기화하면 Windows 시스템과 프로그램만 새로 설치되고, 문서, 사진, 다운로드 폴더 등 개인 파일은 그대로 유지되므로 부팅 문제 해결 후에도 기존 파일에 접근할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - PC 초기화",
+      "source_url": "https://support.microsoft.com/ko-KR/Windows/Experience/Backup-Recovery/reset-your-pc",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows PC 초기화",
+        "years": "Windows 10/11",
+        "region": "KR"
+      },
+      "caution": "초기화 중 기기를 강제 종료하거나 전원을 차단하면 실패하거나 파일이 손상될 수 있으므로, 초기화가 완료될 때까지 기다려야 한다. 초기화에는 30분 이상 걸릴 수 있다",
+      "cautionSource": "Microsoft Support - PC 초기화"
+    },
+    {
+      "id": "boot-sequence-uefi-vs-bios-distinction",
+      "claim": "최신 PC는 UEFI 펌웨어를 사용하며, 구형 PC는 BIOS를 사용한다. 부팅 순서 변경이 필요하면 PC 부팅 시 Del, F2, F8, F10, F12 등의 키를 눌러 펌웨어 설정 화면에 진입한다 (정확한 키는 마더보드·노트북 제조사마다 다름)",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Learn - Secure Boot Troubleshooting",
+      "source_url": "https://support.microsoft.com/en-US/servicing/os/secure-boot/2026/03/secure-boot-troubleshooting-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows BIOS/UEFI 부팅",
+        "years": "Windows 10/11",
+        "region": "KR"
+      },
+      "caution": "부팅 순서 변경은 신중하게 진행해야 하며, UEFI 부팅 모드와 Legacy(BIOS) 모드가 섞여 있으면 부팅 문제가 발생할 수 있다. 확실하지 않으면 고급 사용자나 서비스센터에 상담할 것",
+      "cautionSource": "Microsoft Support - Secure Boot Troubleshooting"
+    },
+    {
+      "id": "external-device-disconnect-before-boot",
+      "claim": "Windows 부팅 중 또는 BIOS에서 이상이 생기면, USB 메모리, 외장하드, 마우스, 키보드 등의 외부 기기를 모두 분리한 후 재부팅을 시도한다. 일부 외부 기기가 부팅 순서를 방해하거나 부팅 장치로 인식될 수 있기 때문이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshooting Windows unexpected restarts and stop code errors",
+      "source_url": "https://support.microsoft.com/en-US/Windows/Experience/Performance-Optimization/troubleshooting-windows-unexpected-restarts-and-stop-code-errors",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 부팅",
+        "years": "Windows 10/11",
+        "region": "KR"
+      },
+      "caution": "외부 기기 중 마우스나 키보드 없이는 복구 환경에서 작업하기 어려울 수 있으니, 기본적인 조작이 끝난 후에만 모두 분리한다"
+    },
+    {
+      "id": "disk-space-15-percent-boot-requirement",
+      "claim": "Windows 부팅 실패의 숨겨진 원인이 디스크 공간 부족일 수 있다. 시스템 드라이브(C 드라이브 등)의 사용 가능한 공간이 전체 용량의 10~15% 이상 있어야 Windows가 정상 작동한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshooting Windows unexpected restarts and stop code errors",
+      "source_url": "https://support.microsoft.com/en-US/Windows/Experience/Performance-Optimization/troubleshooting-windows-unexpected-restarts-and-stop-code-errors",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 부팅",
+        "years": "Windows 10/11",
+        "region": "KR"
+      },
+      "caution": "디스크가 가득 찼으면 불필요한 파일이나 설치 프로그램을 삭제하거나, Windows 복구 환경에서 임시 파일을 제거해 공간을 확보해야 한다",
+      "cautionSource": "Microsoft Support"
+    },
+    {
+      "id": "recent-hardware-addition-removal-test",
+      "claim": "최근 RAM, SSD, 그래픽카드 등 하드웨어를 추가했다면 부팅 실패의 원인일 수 있다. 추가한 부품을 제거한 후 재부팅을 시도하면 문제 원인이 하드웨어인지 소프트웨어인지 판별할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshooting Windows unexpected restarts and stop code errors",
+      "source_url": "https://support.microsoft.com/en-US/Windows/Experience/Performance-Optimization/troubleshooting-windows-unexpected-restarts-and-stop-code-errors",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 부팅",
+        "years": "Windows 10/11",
+        "region": "KR"
+      },
+      "caution": "PC 내부 작업 시 정전기 방지 조치(손목 스트랩 착용 등)를 취하고, 부품 손상에 주의해야 한다"
+    }
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "topic": "블루투스 스피커 연결 안 됨·소리 끊김·배터리 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "galaxy-buds-case-reset-procedure",
+      "why": "갤럭시 버즈는 이어폰으로, 충전 케이스 리셋(3회 누르기 등) 절차가 블루투스 스피커와 완전히 다름. 스피커에는 케이스가 없으므로 재사용 불가"
+    },
+    {
+      "id": "airpods-case-button-reset",
+      "why": "에어팟의 케이스 뒤 세팅 버튼 리셋 절차는 이어폰 고유이며, 블루투스 스피커의 버튼 위치·방법과 무관"
+    },
+    {
+      "id": "settop-box-hdmi-cable-reconnection",
+      "why": "IPTV 셋톱박스의 HDMI/컴포넌트 케이블 재연결은 블루투스 무선 스피커와 무관한 유선 절차"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "pairing-not-showing-battery-check",
+      "claim": "블루투스 스피커가 기기의 검색 목록에 전혀 나타나지 않으면 스피커 배터리 부족이 가장 흔한 원인이다. 배터리가 거의 없으면 페어링 모드 진입 자체가 불가능해 목록에 뜨지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Q&A + 기술 자료",
+      "source_url": "https://lifefin.co.kr/%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EC%97%B0%EA%B2%B0-%EC%95%88%EB%90%A0%EB%95%8C/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "pairing-mode-entry-required",
+      "claim": "블루투스 스피커는 단순히 켜진 상태만으로는 다른 기기의 검색 목록에 뜨지 않으며, 반드시 페어링 모드(연결 대기 상태)로 진입해야 검색된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support + 기술 가이드",
+      "source_url": "https://lifefin.co.kr/%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EC%97%B0%EA%B2%B0-%EC%95%88%EB%90%A0%EB%95%8C/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "pairing-mode-led-indicator",
+      "claim": "페어링 모드 진입 시 스피커의 LED는 파란색 또는 파란색 깜빡임으로 표시되는 경우가 많으므로, 이 상태를 시각적으로 먼저 확인하고 기기의 검색을 시도해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 자료 종합",
+      "source_url": "https://lifefin.co.kr/%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EC%97%B0%EA%B2%B0-%EC%95%88%EB%90%A0%EB%95%8C/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "LED 색상은 브랜드·모델별로 다를 수 있으므로 제품 매뉴얼을 먼저 확인할 것"
+    },
+    {
+      "id": "pairing-distance-proximity-first-connection",
+      "claim": "블루투스 스피커와 기기의 첫 페어링 시에는 거리를 최대한 가깝게(1미터 이내) 유지하고, 벽·문·금속 선반 같은 장애물을 사이에 두지 않아야 페어링 성공 확률이 높다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 가이드",
+      "source_url": "https://lifefin.co.kr/%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EC%97%B0%EA%B2%B0-%EC%95%88%EB%90%A0%EB%95%8C/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "pairing-existing-device-record-deletion",
+      "claim": "이미 한 번 페어링된 스피커가 같은 기기에서 다시 연결이 안 될 때는, 스마트폰의 블루투스 설정에서 해당 스피커를 '기기 삭제' 또는 '등록 해제'한 후 다시 페어링하면 오래된 연결 기록 오류가 해결되는 경우가 많다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 자료 종합",
+      "source_url": "https://lifefin.co.kr/%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EC%97%B0%EA%B2%B0-%EC%95%88%EB%90%A0%EB%95%8C/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "단순히 '연결 해제'만 하면 안 되며, 반드시 '기기 삭제'를 선택할 것. 예전 연결 정보가 남아 있으면 계속 같은 문제 반복"
+    },
+    {
+      "id": "sound-cutout-environmental-causes",
+      "claim": "블루투스 스피커의 소리 끊김은 제품 고장보다 거리, 장애물, 전파 간섭, 배터리 부족, 페어링 기록 오류가 주요 원인인 경우가 대부분이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony KR 지원 + 삼성 서비스센터",
+      "source_url": "https://www.sony.co.kr/electronics/support/articles/00097458",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "sound-cutout-distance-adjustment",
+      "claim": "소리 끊김이 특정 장소에서만 나타나면 스피커와 연결 기기 사이의 거리를 1미터 이내로 줄여보고, 벽·문·테이블·금속 물체 같은 장애물을 제거해 신호를 방해하는 요소를 없애야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 가이드 종합",
+      "source_url": "https://spekers.co.kr/15",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "sound-cutout-two-point-four-ghz-interference",
+      "claim": "WiFi와 블루투스는 동일한 2.4GHz 대역을 공유하므로, 공유기 근처에서 블루투스 스피커 소리가 자주 끊길 수 있다. 이 경우 스피커와 연결 기기를 공유기에서 멀리 떨어진 곳으로 옮기거나, 전자레인지·무선 스피커 같은 간섭원에서 멀어져야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 자료 종합",
+      "source_url": "https://spekers.co.kr/15",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "sound-cutout-pairing-reset-effective",
+      "claim": "거리와 간섭을 조정해도 소리가 계속 끊기면 블루투스 설정에서 스피커 기기 기록을 삭제한 후 처음부터 다시 페어링하는 것이 효과적이다. 오래된 연결 기록이 꼬이면 페어링 재설정만으로도 대부분 해결된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 가이드 + Sony 지원",
+      "source_url": "https://spekers.co.kr/15",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "charging-connector-visual-inspection",
+      "claim": "블루투스 스피커가 충전이 안 될 때 가장 먼저 할 일은 손전등 등으로 충전 포트 내부를 비춰 금속 단자 부분에 먼지나 이물질이 있는지 시각적으로 확인하는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony KR 지원",
+      "source_url": "https://www.sony.co.kr/electronics/support/articles/00138282",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "charging-cable-usb-adapter-specifications",
+      "claim": "블루투스 스피커 충전 시에는 출력 전류가 1.5A 이상인 USB AC 어댑터를 사용하고, 가능하면 제조사가 제공한 순정 USB 케이블을 사용하는 것이 권장된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony KR 지원",
+      "source_url": "https://www.sony.co.kr/electronics/support/articles/00138282",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "출력 1.5A 미만의 어댑터 사용 시 충전 불량 위험",
+      "cautionSource": "Sony KR 공식 지원 문서에서 1.5A 이상 권장"
+    },
+    {
+      "id": "charging-temperature-range-requirement",
+      "claim": "블루투스 스피커의 정상 작동 온도는 5°C ~ 35°C 범위이며, 이 범위 밖에서는 배터리 안전을 위해 충전이 자동으로 중단될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony KR 지원",
+      "source_url": "https://www.sony.co.kr/electronics/support/articles/00138282",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "5°C ~ 35°C (41°F ~ 95°F) 범위 준수 필수",
+      "cautionSource": "Sony KR 공식 지원 문서"
+    },
+    {
+      "id": "battery-drain-usage-dependent",
+      "claim": "배터리 수명은 주변 온도, 사용 습관, 음량 수준에 따라 크게 달라지며, 같은 스피커라도 사용 조건에 따라 배터리 소모가 다를 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony KR 지원",
+      "source_url": "https://www.sony.co.kr/electronics/support/articles/00138282",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "charging-while-operating-slower",
+      "claim": "스피커를 사용하면서 동시에 충전하면 배터리가 완전히 충전되는 데 훨씬 오랜 시간이 걸린다. 따라서 배터리를 충전할 때는 스피커의 전원을 끄는 것이 좋다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony KR 지원",
+      "source_url": "https://www.sony.co.kr/electronics/support/articles/00138282",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "multipoint-connection-definition",
+      "claim": "멀티포인트 연결(또는 멀티 디바이스 연결)은 한 개의 블루투스 스피커가 2개 이상의 스마트폰·노트북·태블릿과 동시에 페어링된 상태를 유지하는 기능이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony 스피커 도움말 + Google 지원",
+      "source_url": "https://helpguide.sony.net/speaker/srs-xe200/v1/ko/contents/TP1000676265.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "지원 모델",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "multipoint-audio-source-automatic-switching",
+      "claim": "멀티포인트 연결 기능이 있으면 페어링된 기기 간에 음악 재생 소스가 자동으로 전환된다. 예를 들어 스마트폰에서 음악 중이다가 노트북에서 재생 버튼을 누르면 스피커가 자동으로 노트북 음원으로 전환된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony 스피커 도움말",
+      "source_url": "https://helpguide.sony.net/speaker/srs-xe200/v1/ko/contents/TP1000676265.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "지원 모델",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "multipoint-call-receipt-during-playback",
+      "claim": "멀티포인트 기능이 있으면 한 기기에서 음악을 재생 중이어도 다른 기기에서 걸려오는 전화를 자동으로 수신할 수 있으며, 이 경우 음악이 일시정지되고 통화로 전환된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony 스피커 도움말",
+      "source_url": "https://helpguide.sony.net/speaker/srs-xe200/v1/ko/contents/TP1000676265.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "지원 모델",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "multipoint-not-all-models-supported",
+      "claim": "멀티포인트 연결 기능은 모든 블루투스 스피커에서 지원되지 않는다. 일부 구형이나 저가형 모델은 지원하지 않으므로 구매 전에 스펙을 반드시 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 자료 + Android 지원",
+      "source_url": "https://support.google.com/android/answer/12374042?hl=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "지원 모델 제한",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "ipx5-waterproof-rating-definition",
+      "claim": "IPX5 방수 등급은 모든 방향에서 분사되는 물(6.3mm 노즐)에 견디는 수준을 의미하며, 국제표준(IEC 60529)에 따라 정의된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국제표준 IEC 60529 + Soundcore",
+      "source_url": "https://www.soundcore.com/blogs/speaker/ipx7-vs-ipx5-waterproof-shower-speakers-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "ipx5-shower-use-not-submersion",
+      "claim": "IPX5 등급 스피커는 샤워 중 물 분사와 물튀김을 견디므로 욕실 사용에 적합하나, 욕조에 담그거나 물에 완전히 잠기는 상황에는 사용하면 안 된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Soundcore 방수 등급 가이드",
+      "source_url": "https://www.soundcore.com/blogs/speaker/ipx7-vs-ipx5-waterproof-shower-speakers-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "IPX5 모델",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "ipx7-waterproof-rating-submersion",
+      "claim": "IPX7 방수 등급은 1미터의 담수에 최대 30분까지 침수되어도 손상되지 않는 수준을 의미한다. 때문에 풀사이드나 빗속에서도 사용할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국제표준 IEC 60529 + Soundcore",
+      "source_url": "https://www.soundcore.com/blogs/speaker/ipx7-vs-ipx5-waterproof-shower-speakers-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "IPX7 모델",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "1미터, 30분",
+      "cautionSource": "국제표준 IEC 60529 정의"
+    },
+    {
+      "id": "ipx-rating-non-cumulative-above-ipx6",
+      "claim": "IPX7 이상 등급은 누적되지 않으므로, IPX7 스피커는 침수 테스트만 통과하면 되고 강한 물 분사(IPX5 기준) 테스트는 통과하지 못할 수도 있다. 따라서 IPX7이 IPX5보다 모든 방향에서 더 강한 것은 아니다",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Soundcore 방수 등급 해석",
+      "source_url": "https://www.soundcore.com/blogs/speaker/ipx7-vs-ipx5-waterproof-shower-speakers-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "IPX5는 분사 강도, IPX7은 침수 시간에 초점이 있으므로 사용 환경에 맞게 선택할 것",
+      "cautionSource": "Soundcore 및 IEC 60529 국제표준의 등급별 테스트 방식 해석"
+    },
+    {
+      "id": "factory-reset-method-brand-specific",
+      "claim": "블루투스 스피커의 공장 초기화 방법은 브랜드별로 크게 다르다. Sony는 볼륨/블루투스 버튼 조합(5초), Bose는 뮤트 버튼 장시간(10초) 누르기 등 제조사마다 고유한 절차를 사용한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony KR + Bose 매뉴얼",
+      "source_url": "https://castlexjeju.com/%EC%83%9D%ED%99%9C%EC%A0%95%EB%B3%B4/%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EC%8A%A4%ED%94%BC%EC%BB%A4-%EC%B4%88%EA%B8%B0%ED%99%94-%EA%B0%80%EC%9D%B4%EB%93%9C%EF%BD%9C%EB%B8%8C%EB%9E%9C%EB%93%9C%EB%B3%84-%EB%A6%AC%EC%85%8B%C2%B7%EC%9E%AC/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "초기화 버튼 위치와 누르는 시간은 모델별로 다르므로 반드시 제품 매뉴얼을 확인할 것. 정확하지 않은 조작은 원하는 결과를 주지 않을 수 있다",
+      "cautionSource": "Sony KR 공식 초기화 가이드 + Bose 매뉴얼에서 5초/10초 등 시간 명시"
+    },
+    {
+      "id": "sony-speaker-reset-xb-series-buttons",
+      "claim": "Sony SRS-XB 시리즈 스피커의 초기화는 스피커가 켜진 상태에서 (–)볼륨 마이너스 버튼과 (전원)/PAIRING 버튼을 동시에 5초 이상 누르면, 스피커가 꺼지면서 초기화가 완료된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony KR 공식 초기화 가이드",
+      "source_url": "https://castlexjeju.com/%EC%83%9D%ED%99%9C%EC%A0%95%EB%B3%B0/%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EC%8A%A4%ED%94%BC%EC%BB%A4-%EC%B4%88%EA%B8%B0%ED%99%94-%EA%B0%80%EC%9D%B4%EB%93%9C%EF%BD%9C%EB%B8%8C%EB%9E%9C%EB%93%9C%EB%B3%84-%EB%A6%AC%EC%85%8B%C2%B7%EC%9E%AC/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "소니",
+        "category": "블루투스 스피커",
+        "line": "SRS-XB12, XB20, XB40 등 SRS-XB 시리즈",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "5초 이상 누르기",
+      "cautionSource": "Sony KR 공식 초기화 가이드"
+    },
+    {
+      "id": "sony-speaker-reset-recent-xb-models",
+      "claim": "Sony SRS-XB13, XB23, XB33 등 최신 SRS-XB 모델의 초기화는 스피커가 켜진 상태에서 (–)볼륨 마이너스 버튼과 (블루투스) 버튼을 동시에 5초 이상 누르면 된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony 초기화 가이드",
+      "source_url": "https://castlexjeju.com/%EC%83%9D%ED%99%9C%EC%A0%95%EB%B3%B0/%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EC%8A%A4%ED%94%BC%EC%BB%A4-%EC%B4%88%EA%B8%B0%ED%99%94-%EA%B0%80%EC%9D%B4%EB%93%9C%EF%BD%9C%EB%B8%8C%EB%9E%9C%EB%93%9C%EB%B3%84-%EB%A6%AC%EC%85%8B%C2%B7%EC%9E%AC/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "소니",
+        "category": "블루투스 스피커",
+        "line": "SRS-XB13, XB23, XB33 등 최신 SRS-XB 모델",
+        "years": "2020년대",
+        "region": "KR"
+      },
+      "caution": "볼륨과 블루투스 버튼 위치가 구형과 다르므로 정확한 위치 확인 필수"
+    },
+    {
+      "id": "bose-speaker-reset-mute-button",
+      "claim": "Bose 스피커의 공장 초기화는 뮤트 버튼을 10초 동안 누르면 모든 LED에 불이 들어오면서 초기화가 완료되며, 초기화 후 모든 페어링 정보와 설정이 초기값으로 복원된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Bose 공식 매뉴얼",
+      "source_url": "https://castlexjeju.com/%EC%83%9D%ED%99%9C%EC%A0%95%EB%B3%B4/%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EC%8A%A4%ED%94%BC%EC%BB%A4-%EC%B4%88%EA%B8%B0%ED%99%94-%EA%B0%80%EC%9D%B4%EB%93%9C%EF%BD%9C%EB%B8%8C%EB%9E%9C%EB%93%9C%EB%B3%84-%EB%A6%AC%EC%85%8B%C2%B7%EC%9E%AC/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "보스",
+        "category": "블루투스 스피커",
+        "line": "Bose 스피커 시리즈",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "10초",
+      "cautionSource": "Bose 공식 매뉴얼"
+    },
+    {
+      "id": "factory-reset-manual-verification-required",
+      "claim": "블루투스 스피커 초기화 절차는 브랜드별·모델별로 크게 다르므로, 정확한 방법은 반드시 제품 사용설명서나 제조사 공식 웹사이트에서 확인해야 한다. 잘못된 버튼 조합은 초기화되지 않을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제조사 공식 안내",
+      "source_url": "https://castlexjeju.com/%EC%83%9D%ED%99%9C%EC%A0%95%EB%B3%B4/%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EC%8A%A4%ED%94%BC%EC%BB%A4-%EC%B4%88%EA%B8%B0%ED%99%94-%EA%B0%80%EC%9D%B4%EB%93%9C%EF%BD%9C%EB%B8%8C%EB%9E%9C%EB%93%9C%EB%B3%84-%EB%A6%AC%EC%85%8B%C2%B7%EC%9E%AC/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "전 모델",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "firmware-update-availability-troubleshooting",
+      "claim": "일부 블루투스 스피커는 펌웨어 업데이트를 지원하며, 연결 문제나 배터리 문제가 지속되면 최신 펌웨어 버전으로 업데이트하는 것이 문제 해결에 도움이 될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 자료",
+      "source_url": "https://spekers.co.kr/15",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "블루투스 스피커",
+        "line": "펌웨어 지원 모델",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "모든 스피커가 펌웨어 업데이트를 지원하지는 않으므로 제조사 웹사이트에서 해당 모델 지원 여부를 확인할 것"
+    }
+  ]
+}

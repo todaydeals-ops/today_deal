@@ -1,0 +1,406 @@
+{
+  "topic": "삼성 갤럭시북 노트북 안 켜짐·발열·배터리 자가점검",
+  "brand": "삼성",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "lg-gram-internal-battery-power-reset",
+      "why": "LG 그램은 배터리 리셋 시 10초 누르기, 삼성 갤럭시북은 모델별로 (Book 6: 20-25초, Book 5/4: 10초+)로 다르며 LED 점멸 신호도 다름"
+    },
+    {
+      "id": "lg-gram-battery-life-extension-2025-model-setting",
+      "why": "LG 그램은 'My gram' 앱, 삼성 갤럭시북은 'Samsung Settings' 앱으로 다르며, 배터리 수명 연장 설정 경로와 용어(85% vs 90% Battery Protection)가 브랜드마다 상이"
+    },
+    {
+      "id": "lg-gram-battery-life-extension-2022-model-setting",
+      "why": "LG 그램은 'LG Smart Assistant', 삼성 갤럭시북은 'Samsung Settings'로 제조사별 전용 소프트웨어가 완전히 다름"
+    },
+    {
+      "id": "lg-gram-battery-life-extension-pre2022-model-setting",
+      "why": "LG 그램은 'LG Control Center', 삼성 갤럭시북은 'Samsung Settings'로 구 모델 관리 앱도 브랜드마다 다른 이름과 경로를 사용"
+    },
+    {
+      "id": "lg-gram-overheating-cooling-mode-setting",
+      "why": "LG 그램은 Fn+F1 단축키, 삼성 갤럭시북은 Fn+F11로 서로 다르며, LG는 'My gram/LG Smart Assistant', 삼성은 'Samsung Settings'에서 설정"
+    },
+    {
+      "id": "lg-gram-touchpad-2025-model-enable",
+      "why": "LG 그램 2025년 모델은 Fn+F4, 삼성 갤럭시북은 Fn+F5로 터치패드 활성화 단축키가 다름"
+    },
+    {
+      "id": "lg-gram-touchpad-pre2024-model-enable",
+      "why": "LG 그램 2024년 이전 모델은 Fn+F5, 삼성 갤럭시북은 Fn+F5이나 Windows 버전별 설정 경로가 다르고, BIOS 확인 등 추가 단계가 있음"
+    },
+    {
+      "id": "lg-smart-assistant-availability",
+      "why": "LG는 'LG Smart Assistant' / 'LG Control Center' 사용, 삼성은 'Samsung Settings' 사용으로 제조사별 전용 소프트웨어 완전히 상이"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "samsung-galaxy-book-power-adapter-check",
+      "claim": "삼성 갤럭시북이 켜지지 않을 때는 먼저 Type-C 또는 전원 어댑터가 정상 충전하는지 확인하고, 다른 Type-C 호환 장치(휴대폰 등)를 연결하거나 다른 멀티콘센트/벽면 콘센트에 직접 연결하여 테스트한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 노트북 전원이 안 켜집니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/88599",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-galaxy-book-6-soft-rtc-reset",
+      "claim": "삼성 갤럭시북 6 모델이 켜지지 않을 때는 전원 버튼을 20~25초 정도 길게 누르고, 좌측 동작 표시등이 붉은 색으로 4~5회 깜빡이면 손을 떼고, 약 20초 경과 후 다시 전원 버튼을 눌러 부팅을 확인한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 노트북 전원이 안 켜집니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/88599",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "20~25초 이상 누르고 LED 신호를 반드시 확인해야 하며, 다른 연식은 절차가 다르니 주의",
+      "cautionSource": "삼성전자서비스 - [삼성 PC] 노트북 전원이 안 켜집니다"
+    },
+    {
+      "id": "samsung-galaxy-book-5-4-soft-rtc-reset",
+      "claim": "삼성 갤럭시북 5, 4 모델이 켜지지 않을 때는 전원 버튼을 10초 이상 길게 누르면 소프트 RTC 리셋이 진행되고 전원이 꺼지며, 약 20초 경과 후 다시 전원 버튼을 눌러 부팅을 확인한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 노트북 전원이 안 켜집니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/88599",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북",
+        "years": "2024~2025",
+        "region": "KR"
+      },
+      "caution": "갤럭시북 6 모델의 20~25초와 다르니 연식을 확인한 후 적절한 절차를 선택할 것",
+      "cautionSource": "삼성전자서비스 - [삼성 PC] 노트북 전원이 안 켜집니다"
+    },
+    {
+      "id": "samsung-galaxy-book-2023-2024-intel-power-reset",
+      "claim": "삼성 갤럭시북 2023~2024년 Intel 모델이 켜지지 않을 때는 Fn + F1 + 방향키(오른쪽)를 전원 버튼과 함께 조합하는 절차를 통해 소프트 리셋을 수행한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 노트북 전원이 안 켜집니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/88599",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북",
+        "years": "2023~2024",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-galaxy-book-2016-2022-power-reset",
+      "claim": "삼성 갤럭시북 2016~2022년 모델이 켜지지 않을 때는 Fn + F1 + 오른쪽 화살표를 전원 버튼과 함께 누르는 조합으로 소프트 리셋을 진행한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 노트북 전원이 안 켜집니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/88599",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북",
+        "years": "2016~2022",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-galaxy-book-external-device-disconnect-boot",
+      "claim": "삼성 갤럭시북이 제조사 로고 화면에서 멈추거나 부팅이 안 될 때는 USB, SD 메모리 카드, 외장 하드드라이브 등 연결된 외부 장치를 모두 분리한 후 재부팅을 시도한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 노트북 전원이 안 켜집니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/88599",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-galaxy-book-battery-protect-mode-85percent",
+      "claim": "삼성 갤럭시북의 배터리 보호 모드(Protect battery mode)는 배터리 충전 기준을 100%에서 85%로 낮춰 배터리 수명을 연장하는 의도된 설정이며, 이 기능이 활성화되면 어댑터를 꽂아도 85% 이상 충전되지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung 대한민국 - Galaxy Book Battery Support",
+      "source_url": "https://www.samsung.com/us/support/galaxy-battery/galaxy-book-battery/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북 전체",
+        "years": "2023~",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-galaxy-book-battery-protect-mode-enable",
+      "claim": "삼성 갤럭시북의 배터리 보호 모드는 'Samsung Settings'를 실행하고 '배터리 및 성능' 메뉴에서 'Protect battery' 토글을 ON으로 설정하며, 활성화되면 배터리 아이콘에 하트 기호가 표시된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung 대한민국 - Galaxy Book Battery Support",
+      "source_url": "https://www.samsung.com/us/support/galaxy-battery/galaxy-book-battery/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북 전체",
+        "years": "2023~",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-galaxy-book-silent-mode-performance-setting",
+      "claim": "삼성 갤럭시북이 과열되거나 팬 소음이 심할 때는 'Samsung Settings' 또는 'Dell Command' 앱에서 성능 모드를 확인하고, 저소음(Silent) 모드에서 권장(Recommended) 또는 고성능 모드로 변경한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 저소음 모드 설정, 해제 방법이 궁금합니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/21832",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "저소음 모드는 팬을 약하게 동작시켜 발열이 심해질 수 있으므로, 온도 관리가 필요하면 권장 모드 이상 사용",
+      "cautionSource": "삼성전자서비스 - [삼성 PC] 저소음 모드 설정, 해제 방법이 궁금합니다"
+    },
+    {
+      "id": "samsung-galaxy-book-performance-mode-shortcut-key",
+      "claim": "삼성 갤럭시북의 일부 모델에서는 Fn + F11 단축키로 성능 모드를 빠르게 전환할 수 있지만, 모델에 따라 단축키가 다를 수 있으므로 사용설명서를 확인해야 한다",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 저소음 모드 설정, 해제 방법이 궁금합니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/21832",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "단축키가 모델별로 다르므로 반드시 자신의 모델 사용설명서를 확인할 것",
+      "cautionSource": "삼성전자서비스 - [삼성 PC] 저소음 모드 설정, 해제 방법이 궁금합니다"
+    },
+    {
+      "id": "samsung-galaxy-book-ventilation-check",
+      "claim": "삼성 갤럭시북의 발열 및 팬 소음을 줄이려면 노트북을 평탄하고 단단한 표면에 놓고, 노트북 모든 측면에서 최소 15cm 이상의 통풍 간격을 유지해야 한다. 침대 위나 쿠션 위에서 사용하면 통풍구가 막혀 발열이 심해진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 노트북에서 열(발열)이 심하게 발생합니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40307",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-galaxy-book-touchpad-fn-f5-toggle",
+      "claim": "삼성 갤럭시북의 터치패드가 작동하지 않을 때는 Fn + F5 단축키를 누르면 터치패드가 꺼지고 켜지를 반복하므로, 이를 눌러 터치패드를 활성화한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 노트북 터치패드(Touchpad) 동작이 안 됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/32964",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-galaxy-book-touchpad-windows-settings-check",
+      "claim": "삼성 갤럭시북의 터치패드 단축키를 눌렀는데도 작동하지 않을 때는 Windows 설정에서 '터치 패드 켜기/끄기'를 검색하여 '켬' 상태인지 확인해야 한다. '외장형 USB 포인팅 장치 장착 시 작동 안 함' 옵션이 체크되어 있으면 외부 마우스 연결 시 터치패드가 자동으로 꺼진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 노트북 터치패드(Touchpad) 동작이 안 됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/32964",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-galaxy-book-touchpad-bios-check",
+      "claim": "삼성 갤럭시북의 터치패드가 여전히 작동하지 않을 때는 BIOS 진입(부팅 시 F2 키 누름)후 Touch Pad Mouse 설정을 'Enable'로 확인하고, 'Disable' 상태면 변경한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 노트북 터치패드(Touchpad) 동작이 안 됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/32964",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-galaxy-book-touchpad-device-manager-check",
+      "claim": "삼성 갤럭시북의 터치패드가 작동하지 않을 때는 장치 관리자에서 'Human Interface Devices' 아래 I2C HID 기기를 확인하고, 경고 표시가 있으면 오른쪽 버튼으로 '디바이스 사용 안 함' 후 다시 '디바이스 사용'을 선택하여 활성화한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 노트북 터치패드(Touchpad) 동작이 안 됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/32964",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-galaxy-book-touchpad-driver-update",
+      "claim": "삼성 갤럭시북의 터치패드 단축키와 Windows 설정 모두 정상이지만 작동하지 않을 때는 'Samsung Update' 프로그램을 실행하여 터치패드 드라이버 또는 Intel Serial I/O 드라이버를 재설치해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 노트북 터치패드(Touchpad) 동작이 안 됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/32964",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-galaxy-book-display-not-working-external-monitor-check",
+      "claim": "삼성 갤럭시북의 화면이 안 나올 때는 HDMI 또는 USB-C로 외부 모니터를 연결하여 노트북 디스플레이 자체의 문제인지 확인해야 한다. 외부 모니터에 화면이 나오면 노트북 디스플레이 부품 고장으로 판단된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 삼성 노트북 화면이 안나와요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/32280",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-galaxy-book-display-multi-display-setting",
+      "claim": "삼성 갤럭시북을 외부 모니터에 HDMI로 연결했을 때 화면이 안 나올 때는 Fn + F4 (또는 Fn + 모니터 전환 키) 단축키를 눌러 다중 디스플레이 설정을 활성화하고, [확장] 또는 [복제] 옵션으로 변경해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 삼성 노트북 화면이 안나와요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/32280",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "단축키는 모델별로 다를 수 있으므로, Fn+F4 또는 Fn+F5 등을 시도해볼 것",
+      "cautionSource": "삼성전자서비스 - [삼성 PC] 삼성 노트북 화면이 안나와요"
+    },
+    {
+      "id": "samsung-galaxy-book-hdmi-cable-test",
+      "claim": "삼성 갤럭시북의 외부 모니터 HDMI 연결 시 화면이 안 나올 때는 HDMI 케이블 손상 여부를 확인하고, 다른 HDMI 케이블로 테스트하여 케이블 문제와 포트 문제를 구분해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 삼성 노트북 화면이 안나와요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/32280",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-settings-availability",
+      "claim": "삼성 갤럭시북의 배터리, 성능, 진단 등 주요 기능은 'Samsung Settings' 앱에서 관리되며, 작업 표시줄 검색창에서 'Samsung Settings'를 입력하여 실행한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 삼성 설정(Samsung Settings)에서 성능 모드 실행 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/188922",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-update-availability",
+      "claim": "삼성 갤럭시북의 드라이버, BIOS, 펌웨어 업데이트는 'Samsung Update' 프로그램(또는 삼성 홈페이지)을 통해 수행되며, 터치패드, 네트워크, 오디오 등 각 하드웨어 드라이버를 자동 또는 수동으로 업데이트할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - [삼성 PC] 노트북 터치패드(Touchpad) 동작이 안 됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/32964",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-galaxy-book-customer-center-phone",
+      "claim": "삼성 갤럭시북의 모든 자가점검 절차로도 해결되지 않는 문제는 삼성 대표 고객센터 1588-3366 또는 삼성전자서비스 홈페이지(samsungsvc.co.kr)에서 지역 서비스센터를 찾아 예약하여 전문 점검을 받을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자 고객지원",
+      "source_url": "https://www.samsungsvc.co.kr/reserve/searchCenter",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "갤럭시북 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "topic": "공기청정기 24시간 사용 vs 필요할 때만 사용 팩트체크",
+  "brand": "공통",
+  "article": "air-purifier-usage-factcheck",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "24h-operation-electricity-cost",
+      "claim": "공기청정기를 24시간 지속 사용할 때 월간 전기료는 소비전력 40W 기준 약 4,320원, 80W 기준 약 8,640원 수준으로 나타난다. 계산 근거는 한국 가정용 전기요금 기준 1kWh당 약 250원(기본료 포함)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국 가정용 전기요금 기준 + 가전제품 에너지 소비량 계산",
+      "source_url": "https://www.aaro.kr/636/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "전 라인",
+        "years": "2026년 기준",
+        "region": "KR"
+      },
+      "caution": "실제 전기료는 지역 전기요금, 계절별 누진율, 개별 요금제에 따라 달라질 수 있다.",
+      "cautionSource": "전기요금 계산 기준"
+    },
+    {
+      "id": "window-open-purifier-inefficiency-test",
+      "claim": "창문을 닫고 공기청정기를 10분 사용했을 때 실내 미세먼지 농도가 60μg/m³에서 10μg/m³으로 감소한 반면, 같은 환경에서 창문을 열고 환기하며 사용했을 때는 60μg/m³에서 44μg/m³으로만 감소하는 실험 결과가 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제조사 실험 결과 및 한국경제TV 방송 내용",
+      "source_url": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A201605310392",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "전 라인",
+        "years": "2016년 이후 현행 모델",
+        "region": "KR"
+      },
+      "caution": "이 결과는 동일한 조건의 실험실 환경에서 나온 것으로, 실제 가정의 통풍량·습도·외부 미세먼지 농도에 따라 차이가 생길 수 있다.",
+      "cautionSource": "실험 조건 제한사항"
+    },
+    {
+      "id": "window-open-filter-lifespan-reduction",
+      "claim": "창문을 열고 공기청정기를 사용하면 외부 미세먼지·꽃가루 등 오염물질이 계속 유입되어 필터가 빠르게 오염되므로, 필터 수명이 단축되고 교체 주기가 더 자주 필요해진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제조사 사용 권장 안내 및 필터 관리 지침",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%B0%BD%EB%AC%B8_%EC%97%B4%EA%B3%A0_%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0_%ED%9A%A8%EA%B3%BC_%EC%97%86%EB%8A%94_%EC%9D%B4%EC%9C%A0_'3%EA%B0%80%EC%A7%80'_%EB%B0%8F_%ED%95%A0%EC%9D%B8%EA%B9%8C%EC%A7%80-52248",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "필터 수명 단축 정도는 실외 미세먼지 농도·계절·지역에 따라 크게 달라질 수 있다.",
+      "cautionSource": "필터 수명 변수"
+    },
+    {
+      "id": "dust-sensor-cleaning-interval-6-months",
+      "claim": "공기청정기의 먼지 센서(PM 센서)는 3~6개월에 한 번씩 청소해야 정상 작동하며, 센서에 먼지가 쌓이면 실내 공기가 나빠도 수치가 낮게 표시되어 자동 운전이 제대로 작동하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 및 LG전자 센서 관리 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28347",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "먼지 센서 탑재 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "먼지가 많은 환경(부엌 근처·도로변·공사 지역)에서는 3개월보다 더 자주 청소가 필요할 수 있다.",
+      "cautionSource": "환경별 센서 오염도"
+    },
+    {
+      "id": "sensor-self-diagnosis-samsung-a4paper",
+      "claim": "삼성 공기청정기의 먼지 센서 정상 작동 여부를 확인하는 자가진단 방법은 A4 용지를 제품 센서부 근처에서 여러 번 손으로 찢어 디스플레이의 먼지 수치가 변하는지 관찰하는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 공기청정기 먼지 센서 자가진단 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28347",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "공기청정기",
+        "line": "디지털 디스플레이 탑재 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "센서 위치는 모델별로 다를 수 있으므로 제품 설명서를 확인해야 한다. 수치 변화가 없으면 센서 고장으로 봐야 한다.",
+      "cautionSource": "모델별 센서 위치 차이"
+    },
+    {
+      "id": "lg-sensor-self-diagnosis-paper-tear-method",
+      "claim": "LG 공기청정기의 먼지 센서 정상 작동 확인 방법은 필터 덮개를 제거한 후 A4 용지를 센서 근처에서 약 5회 이상 찢어 떨어진 종이 가장자리를 10~15초간 비벼서 먼지를 발생시킨 후, 디스플레이의 수치 변화를 확인하는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 - 냄새 및 먼지 센서 작동 확인 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151145399883",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "공기청정기",
+        "line": "PM 센서 탑재 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "센서 위치는 모델에 따라 전면 필터 케이스, 후면 필터 케이스, 또는 측면 위치 등 다르므로 제품별 매뉴얼을 확인해야 한다.",
+      "cautionSource": "LG 모델별 센서 위치"
+    },
+    {
+      "id": "cooking-oil-mist-filter-damage",
+      "claim": "요리할 때 발생하는 유증기(기름)가 공기청정기 필터에 흡착되면 필터 성능이 급격하게 저하되므로, 조리 시에는 공기청정기를 꺼두거나 최소한 저운전으로 조절하고 레인지후드를 사용하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국일보 생생과학 기사 및 제조사 관리 가이드",
+      "source_url": "https://www.hankookilbo.com/news/article/201903211865791145",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "요리 후에도 한 시간 이상 후드 또는 자연환기로 유증기를 먼저 제거한 후 공기청정기를 가동하는 것이 필터 수명 연장에 도움이 된다.",
+      "cautionSource": "조리 후 환기 시간 권장"
+    },
+    {
+      "id": "cadr-proper-sizing-1-5x-coverage",
+      "claim": "공기청정기 선택 시 CADR(Clean Air Delivery Rate)이 실제 사용 공간 평수의 약 1.5배를 커버하도록 선택하는 것이 소음 수준을 합리적으로 유지하면서 청정 효율을 최대화하는 기준이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공기청정기 구매 가이드 및 CADR 선택 기준",
+      "source_url": "https://kotopranking.com/air-purifier-capacity-guide/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "전 라인",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "CADR은 미국 AHAM 기준으로 측정된 수치이며, 한국 제조사가 표시하는 '평수'는 제조사 기준이므로 CADR으로 비교하는 것이 더 정확하다.",
+      "cautionSource": "CADR vs 평수 기준 차이"
+    },
+    {
+      "id": "multiple-purifiers-circulation-efficiency",
+      "claim": "공기청정기 2대를 각각 다른 위치에 배치했을 때 공기 순환 효율이 대형 1대 운전보다 약 40% 높다는 사용자 보고가 있으며, 특히 개별 방으로 분리된 공간에서는 여러 대 배치가 더 효율적이다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 및 블로그 실제 운영 후기",
+      "source_url": "https://www.threads.com/@graceandhope_j/post/DQJtvt5kxIY/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "전 라인",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "순환 효율 40% 증가는 특정 가정의 평면도와 배치 조건에서의 결과이므로 모든 주거 환경에 적용되지 않을 수 있다. 실제 효율은 평면도, 천장 높이, 개구부 위치에 따라 달라진다.",
+      "cautionSource": "사용자 후기 환경 의존성"
+    },
+    {
+      "id": "multiple-small-vs-single-large-cost-benefit",
+      "claim": "경제성 면에서는 30만원 정도의 저가 공기청정기 여러 대가 120만원 고가 공기청정기 1대보다 정화 공간이 더 넓고, 구매 비용도 저렴할 수 있다는 분석이 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "공기청정기 구매 가이드 및 사용자 커뮤니티",
+      "source_url": "https://rentre.kr/story/%ED%8F%89%EC%88%98%EB%B3%84-%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0-%EC%9E%98-%EA%B3%A0%EB%A5%B4%EB%8A%94-%EB%B0%A9%EB%B2%95-%EC%A0%81%EC%A0%95-%EC%9A%A9%EB%9F%89-%ED%9A%A8%EA%B3%BC-%EA%B0%9C%EC%88%98-%EA%B3%A0%EB%A5%B4%EA%B8%B0-2025%EB%85%84/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "전 라인",
+        "years": "2025년 이후",
+        "region": "KR"
+      },
+      "caution": "여러 대 배치 선택 시 필터 교체 비용이 배수로 증가하고, 관리 부담도 늘어난다는 점을 고려해야 한다. 또한 초기 구매가 저렴해도 장기 유지비는 달라질 수 있다.",
+      "cautionSource": "필터 교체 및 유지비 고려"
+    },
+    {
+      "id": "pet-cooking-intensive-filter-replacement-cycle-shortened",
+      "claim": "반려동물이 있거나 요리를 자주 하는 가정의 공기청정기는 기본 교체 주기(6~12개월)보다 더 빨리 필터를 교체해야 하며, 실제 필터 오염도는 실내 공기 오염원의 종류와 양에 따라 달라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "IQAir 및 제조사 필터 관리 안내",
+      "source_url": "https://www.iqair.com/ko/newsroom/how-often-should-you-change-an-air-purifier-filter",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "반려동물 털·요리 연기·담배 연기·향초 등이 있는 가정은 필터 교체 알림이 점등하기 전에 냄새나 풍량 저하 신호를 감시하고, 필요시 조기 교체를 검토해야 한다.",
+      "cautionSource": "가정 환경별 오염원 영향도"
+    },
+    {
+      "id": "auto-mode-reliability-sensor-dependent",
+      "claim": "공기청정기의 자동모드는 센서가 실내 공기 질을 감지하여 자동으로 풍량을 조절하므로 편의성과 효율이 높지만, 센서 신뢰도는 센서 청소 상태에 완전히 의존한다. 센서에 먼지가 쌓이면 자동 운전이 제대로 작동하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 및 LG전자 자동모드·센서 관리 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28347",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "자동모드 센서 탑재 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "자동모드를 믿고만 있으면 센서 오염으로 인한 오작동을 놓칠 수 있다. 월 1회 이상 센서 청소를 병행해야 자동모드의 신뢰도가 유지된다.",
+      "cautionSource": "센서 유지보수 필수 요건"
+    }
+  ]
+}

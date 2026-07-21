@@ -1,0 +1,379 @@
+{
+  "topic": "액티브 노이즈캔슬링(ANC) 원리, 성능 비교, 부작용, 지금 살 만한가?",
+  "brand": "공통",
+  "article": "noise-cancelling-trend",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "anc-basic-principle-microphone-inversion",
+      "claim": "액티브 노이즈캔슬링(ANC)은 마이크가 외부 소음을 감지한 후, ANC 칩셋이 그 음파를 역위상(반대 음파)으로 변환하여 스피커에서 송출함으로써 원래 소음과 상쇄시키는 원리로 작동한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Bang & Olufsen — Active Noise Cancellation Explained",
+      "source_url": "https://www.bang-olufsen.com/en/us/story/active-noise-cancellation",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰·헤드폰",
+        "line": "ANC 탑재 모든 모델",
+        "years": "2000년대 중반~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "anc-feedforward-feedback-hybrid-types",
+      "claim": "ANC 시스템은 3가지 유형으로 분류된다: (1) 피드포워드 방식(외부 마이크로 외부 소음 감지) — 음질 영향이 적고 컴팩트하지만 성능은 제한적, (2) 피드백 방식(내부 마이크) — 정밀하고 높은 성능이지만 음질 왜곡 가능, (3) 하이브리드 방식(내부·외부 마이크 병행) — 저주파와 고주파 모두 처리하여 성능 최적화.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Bang & Olufsen — Active Noise Cancellation Types & Technology",
+      "source_url": "https://www.bang-olufsen.com/en/us/story/active-noise-cancellation",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰·헤드폰",
+        "line": "ANC 탑재 모든 모델",
+        "years": "2010년대 중반~",
+        "region": "글로벌"
+      },
+      "caution": "프리미엄 제품은 대부분 하이브리드 방식을 채용하나, 10만원 이하 제품은 피드포워드 방식만 쓰는 경우가 많으므로, 구매 전에 방식 확인이 중요하다.",
+      "cautionSource": "WebSearch 가격대별 ANC 방식 분류 자료 및 제조사 기술 명세"
+    },
+    {
+      "id": "anc-frequency-performance-lowfreq-vs-highfreq",
+      "claim": "ANC의 주파수별 성능은 다음과 같다: 저주파(50~500Hz, 비행기 엔진·에어컨음)는 파형이 길고 규칙적이어서 역위상을 정확하게 만들 수 있어 프리미엄 제품에서 25~45dB 수준의 소음 감소를 달성한다. 중주파(500Hz~2kHz, 사람 목소리·사무실 소음)는 파형이 복잡하고 불규칙적이어서 약 10~20dB의 제한된 감소만 가능하며, 고주파는 ANC 효과가 더욱 제한적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "다나와, 음향 기술 자료 종합",
+      "source_url": "https://search.danawa.com/dsearch.php?query=ANC%EC%9D%B4%EC%96%B4%ED%8F%B0",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰·헤드폰",
+        "line": "ANC 탑재 모든 모델",
+        "years": "2010년대 후반~",
+        "region": "글로벌"
+      },
+      "caution": "저주파 차단은 우수하나 사람 목소리나 고음을 완벽히 차단하지 못한다는 점이 ANC 마케팅 광고와의 큰 차이다. 사용자가 '모든 소음을 없앤다'고 기대하면 실망한다.",
+      "cautionSource": "ANC 주파수별 성능 데이터 및 사용자 후기 일관된 보고"
+    },
+    {
+      "id": "anc-low-price-models-limitation",
+      "claim": "2026년 현재 2~3만원대 저가 ANC 제품도 상당한 수준의 노이즈 차단 성능을 제공한다. 다만 20만원 이상 프리미엄 제품은 대부분 하이브리드 방식을 채용하는 반면, 10만원 이하 제품은 피드포워드 방식만 탑재하는 경우가 많다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "WebSearch 종합 평가 데이터",
+      "source_url": "https://sakamaka.kr/articles/noise-cancelling-anc-how-it-works-choosing-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰",
+        "line": "모든 ANC 탑재 이어폰",
+        "years": "2025~",
+        "region": "KR"
+      },
+      "caution": "저가 제품은 통화용 ENC(Environmental Noise Cancellation)를 '노이즈캔슬링'이라고 광고하는 경우도 많으니, '액티브 노이즈캔슬링(ANC)'과 '통화 노이즈 감소(ENC)'를 구분해서 봐야 한다."
+    },
+    {
+      "id": "anc-chip-performance-sony-apple-qualcomm",
+      "claim": "ANC 성능은 방식 차이만큼 칩셋의 처리 속도와 알고리즘이 중요하며, 2026년 기준 소니 V2와 애플 H2 칩셋이 ANC 성능에서 선두를 달리고 있다. 퀄컴 기반 제품은 제조사의 튜닝에 따라 성능 편차가 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "WebSearch 기술 자료 종합",
+      "source_url": "https://sakamaka.kr/articles/noise-cancelling-anc-how-it-works-choosing-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰·헤드폰",
+        "line": "ANC 탑재 모든 모델",
+        "years": "2020년대~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "anc-side-effect-ear-fullness-pressure",
+      "claim": "ANC 사용 시 부작용 중 가장 흔한 것은 귀가 막히거나 먹먹한 느낌('이압' 변화)이며, 이는 노이즈캔슬링이 작동할 때 귀 내부의 음압이 변화하면서 발생한다. 상쇄되지 않은 소음이 뇌의 전정기관에 도달할 때 이 압박감이 더 두드러진다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 및 음향 기술 자료 종합",
+      "source_url": "https://www.wiseconsume.com/%EB%85%B8%EC%9D%B4%EC%A6%88%EC%BA%84%EC%8A%AC%EB%A7%81-%ED%97%A4%EB%93%9C%ED%8F%B0%EA%B3%BC-%EC%9D%B4%EC%96%B4%ED%8F%B0%EC%9D%B4-%EB%A9%80%EB%AF%B8%EB%A5%BC-%EC%9C%A0%EB%B0%9C%ED%95%98%EB%8A%94/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰·헤드폰",
+        "line": "ANC 탑재 모든 모델",
+        "years": "2010년대 후반~",
+        "region": "글로벌"
+      },
+      "caution": "부작용은 제품마다, 사람마다 크게 다르다. 민감한 사람은 어지럼증이나 멀미까지 경험하기도 하므로, 구매 전 매장에서 실제 착용해보는 것이 중요하다."
+    },
+    {
+      "id": "anc-vertigo-mechanism-inner-ear-confusion",
+      "claim": "일부 사용자가 ANC 사용 중 멀미를 느끼는 것은 뇌의 전정기관(평형 감각 기관)이 혼란을 겪기 때문이다. 사람의 뇌가 소리만으로는 움직이지 않는데 움직이고 있다고 오인하게 되면서, 신호의 불일치로 인해 멀미가 발생한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 의학·생리 설명",
+      "source_url": "https://www.wiseconsume.com/%EB%85%B8%EC%9D%B4%EC%A6%88%EC%BA%84%EC%8A%AC%EB%A7%81-%ED%97%A4%EB%93%9C%ED%8F%B0%EA%B3%BC-%EC%9D%B4%EC%96%B4%ED%8F%B0%EC%9D%B4-%EB%A9%80%EB%AF%B8%EB%A5%BC-%EC%9C%A0%EB%B0%9C%ED%95%98%EB%8A%94/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰·헤드폰",
+        "line": "ANC 탑재 모든 모델",
+        "years": "2010년대 후반~",
+        "region": "글로벌"
+      },
+      "caution": "멀미는 과학적으로 완전히 규명되지 않았으며, 모든 사용자에게 발생하는 것이 아니다. 민감도가 사람마다 크게 다르기 때문에 개인 맞춤이 중요하다."
+    },
+    {
+      "id": "anc-adaptation-or-abandonment",
+      "claim": "노이즈캔슬링 부작용(먹먹함, 멀미, 압박감)을 줄이는 유일한 방법은 사용자가 이압 변화에 적응하거나 ANC 기능 사용을 포기하는 것이다. ANC 강도가 강할수록 부작용이 심해지므로, 민감한 사용자는 ANC 강도를 약하게 설정하거나 투명 모드에 머물러야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 경험 보고",
+      "source_url": "https://meeco.kr/free/31338471",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰·헤드폰",
+        "line": "ANC 탑재 모든 모델",
+        "years": "2010년대 후반~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "anc-battery-drain-increase-apple-airpods-pro",
+      "claim": "애플 에어팟프로는 ANC를 켰을 때 1회 충전 시 약 8시간, ANC를 끈 상태에서는 약 10시간 사용 가능하여, ANC 기능이 배터리 소비를 약 20% 증가시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 기술 사양 및 WebSearch 데이터",
+      "source_url": "https://support.apple.com/en-us/100494",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "무선 이어폰",
+        "line": "에어팟프로",
+        "years": "2019~",
+        "region": "글로벌"
+      },
+      "caution": "배터리 시간은 사용 패턴(음량, 환경 조건 등)에 따라 달라질 수 있다."
+    },
+    {
+      "id": "anc-battery-drain-typical-percentage",
+      "claim": "일반적으로 ANC 기능은 무선 이어폰·헤드폰의 배터리 소비를 13~20% 정도 증가시킨다. 예를 들어 ANC ON 시 26시간 사용 가능한 제품이 ANC OFF 시 30시간 사용 가능하면, 약 13% 정도의 배터리 추가 소모가 발생하는 것이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "제조사 기술 사양 및 사용자 테스트 데이터 종합",
+      "source_url": "https://fusionshub.com/anc-vs-battery-life-truth/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰·헤드폰",
+        "line": "ANC 탑재 모든 모델",
+        "years": "2020년대~",
+        "region": "글로벌"
+      },
+      "caution": "배터리 소비량은 칩셋·설계·환경에 따라 달라지므로, 개별 제품별로 확인해야 한다."
+    },
+    {
+      "id": "headphone-vs-earphone-anc-performance-comparison",
+      "claim": "같은 가격대 기준으로 헤드폰의 ANC가 이어폰보다 성능이 우수하다. 오버이어 헤드폰은 귀를 완전히 감싸는 물리적 구조 자체가 추가 소음 차단 역할을 하기 때문이다. 예를 들어 소니 WH-1000XM5(헤드폰)와 WF-1000XM5(이어폰)를 비교하면, 비행기 엔진음 같은 저주파 소음 차단에서 헤드폰이 확실히 우수하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Belkin 기술 가이드 및 제조사 비교",
+      "source_url": "https://www.belkin.com/kr/clp-noise-cancelling-headphones-earbuds.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰·헤드폰",
+        "line": "ANC 탑재 이어폰 vs 헤드폰 전체",
+        "years": "2020년대~",
+        "region": "글로벌"
+      },
+      "caution": "다만 카페나 사무실 같은 일상 소음 수준(80~90dB)의 차단은 프리미엄 이어폰 ANC로도 충분하며, 헤드폰의 장점은 휴대성을 포기한 대신 성능에 특화한 것이므로 사용 용도를 고려해야 한다.",
+      "cautionSource": "음향 기술 표준에서 사무실 소음 80dB, 카페 소음 85~90dB로 정의. Belkin 및 제조사 기술 비교에서 프리미엄 이어폰 ANC 충분성 언급."
+    },
+    {
+      "id": "anc-use-case-airplane-vs-daily-noise",
+      "claim": "비행기나 지하철 같은 강한 저주파 소음(기차음, 엔진음)을 완벽히 차단하고 싶다면 헤드폰을 선택해야 한다. 반면 일상적인 카페 소음이나 사무실 소음 정도는 프리미엄급의 이어폰 ANC로도 충분하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 및 제품 평가 종합",
+      "source_url": "https://kotopranking.com/earphone-vs-headphone-guide/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰·헤드폰",
+        "line": "ANC 탑재 모든 모델",
+        "years": "2020년대~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "anc-transparency-mode-ambient-sound-passthrough",
+      "claim": "ANC를 지원하는 대부분의 헤드폰·이어폰은 '투명 모드' 또는 '주변소리 듣기' 기능을 제공한다. 이 모드에서는 외부 마이크를 통해 주변 소음을 감지하여 사용자에게 다시 전달함으로써, ANC를 켠 상태에서도 필요할 때 외부 소음을 인식할 수 있도록 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support 및 제조사 가이드",
+      "source_url": "https://support.apple.com/en-us/108918",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰·헤드폰",
+        "line": "ANC 지원 모든 모델",
+        "years": "2016년대 후반~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "enc-vs-anc-for-call-quality",
+      "claim": "통화 품질을 우선시한다면 ANC보다는 ENC(Environmental Noise Cancellation) 기술이 탑재된 이어폰을 선택해야 한다. ENC는 통화 중 사용자 측 마이크에 수음된 환경 소음을 줄여 발신자와 수신자 모두에게 더 선명한 음성을 전달한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "통화 노이즈 캔슬링 기술 가이드",
+      "source_url": "https://choicemon.com/best-wireless-earphones/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰",
+        "line": "ENC 탑재 모든 모델",
+        "years": "2015년대 후반~",
+        "region": "글로벌"
+      },
+      "caution": "ANC와 ENC는 서로 다른 기능이다. ANC는 음악 재생 시 주변 소음 차단, ENC는 통화 중 사용자 마이크 음성 선명화에 특화되어 있다."
+    },
+    {
+      "id": "call-quality-by-brand-quiet-environment",
+      "claim": "조용한 환경(사무실, 집)에서의 통화 품질 평가 기준으로, 삼성전자 갤럭시버즈3 프로, 소니 WF-1000XM5, 애플 에어팟프로 2세대, 그리고 샤오미 Redmi Buds 6 Lite 등의 제품이 상대적으로 우수한 음성 선명도를 보여준다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "음향 기술 평가 및 사용자 테스트 데이터",
+      "source_url": "https://www.itworld.co.kr/article/3565418/%EB%85%B8%EC%9D%B4%EC%A6%88-%EC%BA%AC%EC%8A%AC%EB%A7%81-%EC%84%B1%EB%8A%A5%EC%9D%B4-%EA%B0%80%EC%9E%A5-%EC%A2%8B%EC%9D%80-%ED%97%A4%EB%93%9C%ED%8F%B0-%EB%B0%8F-%EB%AC%B4%EC%84%A0.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰",
+        "line": "프리미엄급 모델",
+        "years": "2021년대 이후~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "call-quality-by-brand-noisy-environment",
+      "claim": "버스, 기차 같은 시끄러운 환경에서의 통화 품질 평가 기준으로, 삼성전자 갤럭시버즈3 프로, 애플 에어팟프로 2세대, LG xboom Buds 등이 상대적으로 우수한 성능을 보여준다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "음향 기술 평가 및 사용자 테스트 데이터",
+      "source_url": "https://www.itworld.co.kr/article/3565418/%EB%85%B8%EC%9D%B4%EC%A6%88-%EC%BA%AC%EC%8A%AC%EB%A7%81-%EC%84%B1%EB%8A%A5%EC%9D%B4-%EA%B0%80%EC%9E%A5-%EC%A2%8B%EC%9D%80-%ED%97%A4%EB%93%9C%ED%8F%B0-%EB%B0%8F-%EB%AC%B4%EC%84%A0.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰",
+        "line": "프리미엄급 모델",
+        "years": "2021년대 이후~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "microphone-count-call-quality-correlation",
+      "claim": "무선 이어폰·헤드폰의 마이크 개수가 많을수록 통화 품질이 우수하다. 여러 개의 마이크가 포착한 소리의 시간차를 이어폰이 분석하면, 사람 목소리와 주변 소음을 더 정확하게 구분할 수 있어 목소리만 선명하게 전달할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "음향 기술 및 제조사 기술 자료",
+      "source_url": "https://nosearch.com/contents/guide/digitalit/bluetooth_earphone",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰·헤드폰",
+        "line": "마이크 탑재 모든 모델",
+        "years": "2015년대 후반~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "airpods-pro-2-vs-sony-wf1000xm5-anc-performance",
+      "claim": "에어팟프로 2세대와 소니 WF-1000XM5를 비교하면, 에어팟프로의 ANC 성능이 압도적으로 더 우수하며, 별도의 등급으로 평가된다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 및 온라인 리뷰",
+      "source_url": "https://m.dcinside.com/board/earphone/3324970",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰",
+        "line": "에어팟프로 2 vs WF-1000XM5",
+        "years": "2022년대 이후~",
+        "region": "글로벌"
+      },
+      "caution": "음질, LDAC 코덱, 장기 착용감, 사용 생태계 등 다른 측면에서는 소니가 우수할 수 있으므로, ANC 성능만으로 선택하면 안 된다. 사용 환경과 우선순위를 고려해야 한다."
+    },
+    {
+      "id": "sony-wf1000xm5-earfit-sound-quality-tradeoff",
+      "claim": "소니 WF-1000XM5는 우수한 음질과 LDAC 코덱 지원이 장점이지만, 이어팁 밀착도에 따라 착용감과 음질 편차가 크다는 단점이 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 리뷰",
+      "source_url": "https://wf-1000xm5-vs-airpods-pro3-earphone-comparison.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "소니",
+        "category": "무선 이어폰",
+        "line": "WF-1000XM5",
+        "years": "2023년대 이후~",
+        "region": "글로벌"
+      },
+      "caution": "구매 후 매장에서 귀 형태에 맞는 이어팁을 찾는 데 시간이 소요될 수 있으므로, 구매 전 체험이 중요하다."
+    },
+    {
+      "id": "galaxy-buds-pro-low-frequency-optimization",
+      "claim": "삼성전자 갤럭시버즈3 프로는 버스, 지하철, 기차 같은 저대역 소음(20Hz~700Hz 이하)을 차단하도록 설계되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자 제품 설계 명시",
+      "source_url": "https://r1.community.samsung.com/t5/%EB%B2%84%EC%A6%883%ED%94%84%EB%A1%9C-vs-%EC%86%8C%EB%8B%88-wf-1000xm5-%EC%96%B4%EB%96%A8%EA%B9%8C%EC%9A%94/td-p/29145072",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "무선 이어폰",
+        "line": "갤럭시버즈3 프로",
+        "years": "2023년대 이후~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "anc-tradeoff-isolation-vs-awareness",
+      "claim": "ANC 기능은 주변 소음 차단과 외부 인식의 트레이드오프 관계가 있다. 완벽한 차단을 원하면 외부 세계로부터 단절되는 리스크가 있고(운전 중 위험), 외부 인식이 높으려면 ANC 성능을 포기해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "음향 기술 및 제조사 안전 가이드",
+      "source_url": "https://www.bang-olufsen.com/en/us/story/active-noise-cancellation",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰·헤드폰",
+        "line": "ANC 탑재 모든 모델",
+        "years": "2010년대 후반~",
+        "region": "글로벌"
+      },
+      "caution": "운전 중에는 투명 모드나 ANC OFF 상태로 사용해야 한다. 완전 차단 모드는 고정적인 장소(사무실, 집)에서만 안전하다."
+    },
+    {
+      "id": "anc-worth-buying-now",
+      "claim": "2026년 기준으로 ANC 기술은 충분히 성숙했으며, 20만원대 프리미엄 제품은 진정한 ANC 성능을 제공하고, 10만원대 중가 제품도 기본적인 저주파 차단은 가능하다. 다만 구매 시 다음을 고려해야 한다: (1) 용도(비행기 vs 일상) (2) 부작용 민감도 (매장 체험 필수) (3) 배터리 20% 추가 소모 수용 여부 (4) 외부 인식 필요성(투명 모드 자주 사용할지).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "2026년 ANC 기술 종합 평가",
+      "source_url": "https://wikidocs.net/blog/@ITgadgets/20778/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰·헤드폰",
+        "line": "ANC 탑재 모든 모델",
+        "years": "2026년~",
+        "region": "KR"
+      },
+      "caution": "ANC는 은탄환이 아니다. 저주파 차단에는 우수하지만 사람 목소리나 고음은 완전히 차단하지 못한다는 기대치 조정이 구매 후 만족도를 크게 높인다."
+    }
+  ]
+}

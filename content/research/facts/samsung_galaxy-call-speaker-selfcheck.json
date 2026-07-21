@@ -1,0 +1,246 @@
+{
+  "topic": "갤럭시 스마트폰 통화 음질 불량·스피커 소리 작음 원인과 자가점검",
+  "brand": "삼성",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "microphone-holes-obstruction-call-quality",
+      "claim": "갤럭시 스마트폰의 마이크는 3개의 구멍으로 설계되어 있으며, 이 구멍들이 케이스·보호필름·손가락으로 막히면 내 목소리 녹음 품질이 저하되어 상대방이 음성을 잘 못 알아들을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 S23, 전화 통화 시 상대방 목소리가 작게 들리거나 내 목소리가 작게 전달됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1307615",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "특히 통화 중 휴대폰 하단부를 손으로 잡으면 마이크 구멍이 가려질 수 있으므로 주의. 보호케이스나 필름이 마이크 부분을 덮으면 통화 품질이 즉시 저하됨"
+    },
+    {
+      "id": "receiver-speaker-blockage-call-volume",
+      "claim": "갤럭시 스마트폰의 리시버(통화 스피커)는 화면 상단에 위치하며, 정품이 아닌 화면보호기나 크기가 맞지 않는 필름이 이 부분을 막으면 상대방 목소리가 작거나 안 들릴 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 S23, 전화 통화 시 상대방 목소리가 작게 들리거나 내 목소리가 작게 전달됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1307615",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "정품 삼성 액세서리 또는 삼성 SMAPP 인증 제품을 사용할 것. 정품이 아닌 필름은 리시버 스피커 위치에서 가청 손상을 일으킬 수 있음"
+    },
+    {
+      "id": "air-vent-blockage-speaker-noise",
+      "claim": "갤럭시 스마트폰은 기기 내부 기압 균형을 위한 에어벤트(공기 구멍)를 가지고 있으며, 케이스나 필름이 이를 막으면 스피커에서 잡음이 발생하거나 리시버 소리가 작아질 수 있다. 특히 극저온·극고온 환경에서 이 현상이 두드러진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 S23, 전화 통화 시 상대방 목소리가 작게 들리거나 내 목소리가 작게 전달됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1307615",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "에어벤트는 기기 우측 또는 하단에 위치하는 작은 구멍이다. 케이스가 이 부분을 완전히 막지 않는지 확인하고, 필름 사용 시 구멍 부분을 피해야 함"
+    },
+    {
+      "id": "samsung-members-call-speaker-diagnostics",
+      "claim": "삼성 멤버스 앱에서는 갤럭시 스마트폰의 마이크와 스피커를 직접 테스트하는 자가진단 기능을 제공한다. 도움받기 선택 > 휴대전화 진단 > 전체 진단 시작을 누르면 배터리·네트워크·디스플레이·카메라·스피커·마이크·센서 등을 점검할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 나만의 갤럭시, 휴대전화 진단하는 방법 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/3413415",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "진단 과정에서 스피커 소리를 직접 들어보거나 마이크에 대고 말하는 등 사용자의 참여가 필요하다. 또한 One UI 버전에 따라 메뉴 위치나 진단 항목이 약간 다를 수 있음"
+    },
+    {
+      "id": "call-volume-adjustment-during-call",
+      "claim": "갤럭시 스마트폰 통화 중 상대방 목소리가 작게 들릴 때는 통화 중 음량(+) 버튼을 여러 번 눌러 통화 음량을 최대로 조정해야 한다. 대기 상태에서 조정한 음량은 통화 중 음성 크기에 영향을 주지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 스마트폰 전화 통화 시 상대방 목소리가 안들려요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/34902",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "accessibility-mute-all-sounds-call-silence",
+      "claim": "설정 > 접근성 > 청각 보조에서 '모든 소리 음소거(Mute All Sounds)'가 활성화되어 있으면 통화 중 상대방 목소리가 완전히 들리지 않을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 스마트폰 전화 통화 시 상대방 목소리가 안들려요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/34902",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "통화 음질 문제의 원인을 진단하기 전에 이 설정을 먼저 확인해야 한다. 이 옵션이 켜져 있으면 스피커나 마이크가 정상이어도 통화가 들리지 않음"
+    },
+    {
+      "id": "wired-headphone-connection-audio-route",
+      "claim": "갤럭시 스마트폰에 유선 이어폰이 연결되면 모든 음성이 이어폰으로만 출력되며, 이어폰을 완전히 꺼내거나 인식시키지 않으면 스피커로 음성이 출력된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시, 유선 이어폰에서 소리가 나지 않을 때 조치 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/615214",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "3.5mm 이어폰 잭을 갖춘 갤럭시 기종 또는 USB-C 이어폰 지원 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "이어폰이 끝까지 완전히 삽입되지 않으면 단자 인식이 불완전하여 오동작할 수 있음. 이 경우 음성이 불규칙하게 이어폰과 스피커를 번갈아 출력할 수 있음"
+    },
+    {
+      "id": "incomplete-headphone-jack-insertion-speaker-fallback",
+      "claim": "갤럭시 스마트폰 이어폰이 끝까지 삽입되지 않으면 단자 인식이 정상적으로 되지 않아 음성이 스피커로 출력될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시, 유선 이어폰에서 소리가 나지 않을 때 조치 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/615214",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "3.5mm 이어폰 잭을 갖춘 갤럭시 기종 또는 USB-C 이어폰 지원 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "media-volume-mute-check",
+      "claim": "갤럭시 스마트폰에서 미디어 소리가 안 나올 때는 먼저 설정 > 소리 및 진동 > 음량에서 미디어 음량이 0으로 설정되어 있지 않은지 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시, 휴대전화 미디어 소리가 나오지 않습니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39458",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "galaxy-voice-recorder-app-call-recording",
+      "claim": "갤럭시 스마트폰의 삼성 음성 녹음(Voice Recorder) 앱에서는 음성 녹음과 통화 녹음을 모두 지원한다. 통화 중 녹음 버튼을 누르면 상대방과 자신의 목소리가 모두 저장되며, 저장된 파일은 내 파일 앱 > 내부 저장소 > 녹음 폴더 > Call 폴더에서 확인할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시, 음성녹음 방법 및 저장 경로가 궁금합니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/38418",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "통화 녹음 기능의 가용성과 저장 경로는 One UI 버전과 기기 모델에 따라 다를 수 있음. 또한 일부 지역에서는 통화 녹음이 법적 제약을 받을 수 있으므로 현지 법률을 확인할 것"
+    },
+    {
+      "id": "samsung-members-diagnostic-mode-android7-8",
+      "claim": "갤럭시 스마트폰 구형 모델(Android 7~8)에서는 삼성 멤버스 앱 진단이 없을 수 있으며, 대신 *#7353#을 다이얼에 입력하여 진단 모드로 진입한 후 3번 Speaker를 선택하여 스피커를 테스트할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시, 휴대전화 미디어 소리가 나오지 않습니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39458",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 A·J 시리즈 등 구형 모델",
+        "years": "2016~2018년경",
+        "region": "글로벌"
+      },
+      "caution": "이 다이얼 코드 기능은 모델·One UI 버전에 따라 지원되지 않을 수 있음. 또한 진단 코드를 사용하는 것은 기기 보증에 영향을 주지 않지만, 불필요한 입력은 피할 것"
+    },
+    {
+      "id": "safe-mode-boot-third-party-app-diagnostics",
+      "claim": "갤럭시 스마트폰 스피커·마이크 문제가 특정 앱 때문인지 확인하려면 안전모드로 부팅하여 타사 앱을 모두 비활성화한 후 통화 음질이 개선되는지 테스트할 수 있다. 안전모드는 부팅 시 삼성·갤럭시 로고가 나타나는 동안 음량(-) 버튼을 누르고 있으면 진입된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 휴대전화 부팅시 안전모드가 뜹니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40333",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "안전모드 자체가 스피커·마이크를 비활성화하지는 않지만, 특정 앱의 설정 또는 권한 충돌로 인한 음성 문제를 진단하는 데 도움이 된다. 안전모드에서도 문제가 지속되면 하드웨어 결함일 가능성이 높음"
+    },
+    {
+      "id": "speaker-dust-debris-removal-method",
+      "claim": "갤럭시 스마트폰 스피커 그릴에 먼지가 쌓이면 음질이 저하될 수 있으며, 손전등으로 내부를 비춰 확인한 후 부드러운 칫솔이나 종이 테이프(매직 테이프)로 조심스럽게 제거하거나, 바람을 불어넣어 제거할 수 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "갤럭시 사용자 커뮤니티 및 기술 커뮤니티 보고",
+      "source_url": "https://r1.community.samsung.com/t5/%EA%B0%A4%EB%9F%AD%EC%8B%9C-a-j-%EB%85%B8%ED%8A%B8/%ED%86%B5%ED%99%94-%EC%8A%A4%ED%94%BC%EC%BB%A4%EC%97%90-%EB%82%80-%EB%A8%BC%EC%A7%80%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%A0%9C%EA%B1%B0%ED%95%98%EB%82%98%EC%97%AC/td-p/4475317",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "뾰족한 물체나 액체를 사용하지 말 것. 칫솔로 닦을 때는 스피커 메시를 손상시키지 않도록 매우 조심스럽게 다루어야 함"
+    },
+    {
+      "id": "bluetooth-device-interference-call-quality",
+      "claim": "갤럭시 스마트폰 통화 중 상대방 목소리가 작거나 자신의 목소리가 안 들릴 때, 연결된 블루투스 이어폰이나 헤드셋이 있으면 이를 끊고 다시 시도하면 문제가 해결될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 스마트폰 전화 통화 시 상대방 목소리가 안들려요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/34902",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "블루투스 장치가 연결되어 있으면 스마트폰의 스피커·마이크 대신 해당 장치를 사용하게 되므로, 설정 > 연결 > 블루투스에서 연결 상태를 확인하고 필요 시 연결을 해제할 것"
+    }
+  ]
+}

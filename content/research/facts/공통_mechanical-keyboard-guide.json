@@ -1,0 +1,387 @@
+{
+  "topic": "기계식 키보드 축(스위치) 선택 가이드",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "mechanical-switch-three-types-linear",
+      "claim": "기계식 키보드 축은 작동 원리에 따라 3가지로 분류되며, 리니어(Linear) 방식은 저항 없이 부드럽게 내려가고 걸리는 느낌이 없으며 소음이 적고 게이밍·연타에 적합하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사까마까 — 기계식 키보드 축 종류별 특성 완벽 정리",
+      "source_url": "https://sakamaka.kr/articles/mechanical-keyboard-switch-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "기계식 축 종류",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "mechanical-switch-three-types-tactile",
+      "claim": "택타일(Tactile) 방식은 누르는 과정 중 중간에 '콕' 하고 걸리는 지점이 있어 입력을 확인할 수 있으며, 지점을 지나면 가벼워지고 소음은 중간 수준이며 타이핑·사무용에 적합하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사까마까 — 기계식 키보드 축 종류별 특성 완벽 정리",
+      "source_url": "https://sakamaka.kr/articles/mechanical-keyboard-switch-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "기계식 축 종류",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "mechanical-switch-three-types-clicky",
+      "claim": "클리키(Clicky) 방식은 택타일의 걸림에 '딸깍' 하는 소리가 더해져 강한 피드백과 음향 확인을 제공하며 소음이 가장 높아 개인 공간에서 주로 사용된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사까마까 — 기계식 키보드 축 종류별 특성 완벽 정리",
+      "source_url": "https://sakamaka.kr/articles/mechanical-keyboard-switch-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "기계식 축 종류",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "red-switch-specifications",
+      "claim": "적축(Red Switch)은 45g의 키압, 2.0mm의 작동점, 리니어 방식을 특징으로 하며 가볍고 빠른 연타에 적합하고 소음이 낮아 게이밍에 선호된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사까마까 — 기계식 키보드 축 종류별 특성 완벽 정리",
+      "source_url": "https://sakamaka.kr/articles/mechanical-keyboard-switch-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "적축(Red Switch)",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "brown-switch-specifications",
+      "claim": "갈축(Brown Switch)은 55g의 키압, 2.0mm의 작동점, 택타일 방식을 특징으로 하며 키압 수치는 높지만 범프를 지나면 급격히 가벼워져 실제 체감은 적축과 비슷하거나 더 가벼울 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사까마까 — 기계식 키보드 축 종류별 특성 완벽 정리",
+      "source_url": "https://sakamaka.kr/articles/mechanical-keyboard-switch-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "갈축(Brown Switch)",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "갈축의 키압 수치(55g)로만 판단하면 적축(45g)보다 무겁다고 생각할 수 있지만, 택타일 범프의 특성 때문에 실제 체감은 비슷하거나 더 가벼울 수 있으므로 직접 테스트 후 선택이 권장된다.",
+      "cautionSource": "사까마까 출처의 체감 키압 분석 섹션"
+    },
+    {
+      "id": "blue-switch-specifications",
+      "claim": "청축(Blue Switch)은 60g의 키압, 2.0mm의 작동점, 클리키 방식을 특징으로 하며 가장 강한 피드백과 타자기 같은 느낌을 제공하며 소음이 68dB로 매우 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사까마까 — 기계식 키보드 축 종류별 특성 완벽 정리",
+      "source_url": "https://sakamaka.kr/articles/mechanical-keyboard-switch-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "청축(Blue Switch)",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "silver-switch-speed-activation",
+      "claim": "은축(Silver Switch)은 1.2mm의 매우 짧은 작동점을 특징으로 하는 스피드 축으로, 살짝만 눌러도 입력되어 초고속 입력이 필요한 게임에 인기가 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "웹 검색 결과 종합",
+      "source_url": "https://sakamaka.kr/articles/mechanical-keyboard-switch-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "은축(Silver Switch)",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "은축은 작동점이 매우 짧아 손가락 실수로 인한 오입력이 높을 수 있으므로 사무용이나 타이핑에는 부적합하며 게이밍 전용으로만 권장된다.",
+      "cautionSource": "웹 검색 결과의 은축 특성 분석"
+    },
+    {
+      "id": "yellow-switch-characteristics",
+      "claim": "황축(Yellow Switch)은 50-62g의 키압, 2.0mm의 작동점, 리니어 방식으로 적축보다 묵직한 느낌을 제공한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사까마까 — 기계식 키보드 축 종류별 특성 완벽 정리",
+      "source_url": "https://sakamaka.kr/articles/mechanical-keyboard-switch-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "황축(Yellow Switch)",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "silent-switch-noise-level-35db",
+      "claim": "저소음 적축·저소음 갈축은 내부 실리콘 댐퍼로 키 누를 때와 올라올 때 모두 충격음을 흡수하며 소음이 35.6dB로 일반 멤브레인 키보드(43.2dB)보다 조용하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사까마까 — 저소음 기계식 키보드의 소음 수준 실측",
+      "source_url": "https://sakamaka.kr/articles/silent-switch-office-keyboard",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "저소음 적축·저소음 갈축",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "mechanical-switch-noise-comparison-db",
+      "claim": "기계식 축의 소음 수준은 청축 68dB > 갈축 52dB > 적축 45dB > 저소음축 35.6dB > 멤브레인 43.2dB 순서로 측정되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사까마까 — 기계식 키보드 소음 비교 실측",
+      "source_url": "https://sakamaka.kr/articles/silent-switch-office-keyboard",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "모든 축 종류",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "silent-switch-office-suitable",
+      "claim": "저소음축(특히 저소음 적축)은 사무실 환경에서 주변 민폐가 없으며, 추가로 가스킷 마운트나 데스크 매트를 사용하면 더욱 소음을 줄일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사까마까 — 저소음 기계식 키보드의 사무실 적합성",
+      "source_url": "https://sakamaka.kr/articles/silent-switch-office-keyboard",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "저소음 축",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "abs-keycap-characteristics",
+      "claim": "ABS 키캡은 가볍고 가공이 쉬우며 저렴하고 깔끔한 외관과 섬세한 디테일이 특징이며 LED 투과가 잘되어 밝고 화려한 RGB 표현이 가능하지만, 장기 사용 시 표면이 번들거리는 현상(윤기)이 생긴다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CORSAIR 공식 — ABS vs PBT 키캡 비교",
+      "source_url": "https://www.corsair.com/kr/ko/explorer/gamer/keyboards/abs-vs-pbt-keycaps/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "ABS 키캡",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "pbt-keycap-characteristics",
+      "claim": "PBT 키캡은 강도와 내열성, 내구성이 뛰어나며 형태 안정성이 높고 표면은 매트하며 거친 촉감으로 고급스러우며 마모에 강하고 오랫동안 깔끔한 상태를 유지한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CORSAIR 공식 — ABS vs PBT 키캡 비교",
+      "source_url": "https://www.corsair.com/kr/ko/explorer/gamer/keyboards/abs-vs-pbt-keycaps/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "PBT 키캡",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "pbt-keycap-rgb-limitation",
+      "claim": "PBT 키캡은 ABS보다 두께가 두꺼워 LED 투과량이 적어서 화려하고 밝은 RGB 표현이 어려운 단점이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CORSAIR 공식 — ABS vs PBT 키캡 비교",
+      "source_url": "https://www.corsair.com/kr/ko/explorer/gamer/keyboards/abs-vs-pbt-keycaps/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "PBT 키캡",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "hot-swap-definition",
+      "claim": "핫스왑(Hot Swap)은 납땜 없이 기계식 키보드 스위치를 자유롭게 교체할 수 있는 기능으로, 전용 소켓이 기판에 내장되어 키캡을 교체하듯이 스위치를 즉석에서 교체할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Lenovo 공식 가이드 및 기술 커뮤니티",
+      "source_url": "https://www.lenovo.com/us/en/glossary/hot-swappable/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "핫스왑 키보드",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "hot-swap-advantage-multiple-switches",
+      "claim": "핫스왑 키보드의 장점은 같은 키보드에서 원하는 대로 스위치 종류를 변경할 수 있어 적축·청축·갈축의 타건감을 모두 경험할 수 있다는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 커뮤니티 — 핫스왑의 장점",
+      "source_url": "https://macbeomki.com/entry/what-is-hot-swap-keyboard",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "핫스왑 키보드",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "hot-swap-advantage-single-repair",
+      "claim": "핫스왑 키보드에서 특정 스위치가 고장 나더라도 해당 스위치만 교체하면 되므로 키보드 전체를 교체하거나 복잡한 수리를 맡길 필요가 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 커뮤니티 — 핫스왑의 장점",
+      "source_url": "https://macbeomki.com/entry/what-is-hot-swap-keyboard",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "핫스왑 키보드",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "hot-swap-caution-power-off",
+      "claim": "핫스왑 키보드에서 스위치를 교체할 때 전원이 인가된 상태에서 교체하면 기판이 손상될 수 있으므로 반드시 전원을 끈 상태에서 교체해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 커뮤니티 — 핫스왑 주의사항",
+      "source_url": "https://macbeomki.com/entry/what-is-hot-swap-keyboard",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "핫스왑 키보드",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "전원이 인가된 상태에서 스위치 교체는 기판의 회로를 손상시킬 수 있다.",
+      "cautionSource": "기술 커뮤니티 핫스왑 가이드"
+    },
+    {
+      "id": "capacitive-non-contact-principle",
+      "claim": "무접점(정전용량 방식) 키보드는 스위치 접점 없이 전압 변화를 감지하는 방식으로 작동하여 접촉 마모가 없으므로 기계식 축보다 내구성이 매우 뛰어나다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "웹 검색 결과 종합 — 무접점 작동 원리",
+      "source_url": "https://digiters.co.kr/digi-keyboard-mechanicaldiffer/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무접점 키보드",
+        "line": "정전용량 무접점",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "capacitive-non-contact-vs-mechanical",
+      "claim": "무접점의 타건감은 '또각또각' 느낌으로 기계식 축의 어떤 종류(적축, 갈축, 청축)와도 비슷하지 않으며, 차라리 멤브레인 방식이 무접점보다 더 유사한 타건감을 가지고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "웹 검색 결과 종합 — 무접점 vs 기계식 타건감 비교",
+      "source_url": "https://coolenjoy.net/bbs/34/870752",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무접점 키보드",
+        "line": "정전용량 무접점",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "무접점 키보드를 선택하기 전에 반드시 직접 타건해보거나 타건감 리뷰를 참고해야 한다. '기계식 축과 비슷할 것'이라는 예상은 틀렸을 수 있다.",
+      "cautionSource": "커뮤니티 경험담 종합"
+    },
+    {
+      "id": "use-case-gaming-red-switch",
+      "claim": "게이밍 중심 사용자는 적축(Red Switch)을 추천하며, 이유는 빠른 반응속도, 낮은 피로도, 우수한 연타 성능이기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사까마까 — 용도별 축 추천",
+      "source_url": "https://sakamaka.kr/articles/mechanical-keyboard-switch-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "게이밍용",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "use-case-office-silent-switch",
+      "claim": "사무실·공용 공간 사용자는 저소음 적축 또는 저소음 갈축을 추천하며, 저소음 적축은 최고 수준의 조용함(35.6dB)을 제공하고 저소음 갈축은 구분감과 조용함의 중간 선택이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사까마까 — 용도별 축 추천",
+      "source_url": "https://sakamaka.kr/articles/silent-switch-office-keyboard",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "사무실용",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "use-case-typing-brown-switch",
+      "claim": "타이핑·글쓰기 중심 사용자는 갈축(Brown Switch)을 추천하며, 택타일 피드백으로 입력을 확인할 수 있어 오타가 줄어든다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사까마까 — 용도별 축 추천",
+      "source_url": "https://sakamaka.kr/articles/mechanical-keyboard-switch-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "기계식 키보드",
+        "line": "타이핑용",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    }
+  ]
+}

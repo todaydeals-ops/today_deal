@@ -1,0 +1,419 @@
+{
+  "topic": "무선 키보드·마우스 연결 끊김·인식 안 됨·입력 지연 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "iptime-2g4-vs-5g-characteristics"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "usb-rf-dongle-vs-bluetooth-technology",
+      "claim": "무선 키보드·마우스는 USB RF 동글과 블루투스 두 가지 방식으로 나뉜다. USB 동글은 2.4GHz RF(라디오 주파수)를 사용해 USB 리시버로 신호를 받으며, 블루투스는 기기 내장 칩으로 2.4GHz 블루투스 신호를 사용한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HowToGeek — USB-RF vs. Bluetooth for Mice and Keyboards: Which Is Better?",
+      "source_url": "https://www.howtogeek.com/429291/usb-rf-vs.-bluetooth-mouse-and-keyboards-which-is-better/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "무선 키보드·마우스",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-dongle-setup-advantage-single-device",
+      "claim": "USB 동글 방식의 장점은 설정이 간단해서 리시버를 USB 포트에 꽂으면 OS가 자동으로 인식하고 별도의 페어링 절차 없이 즉시 사용 가능하다는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HowToGeek — USB-RF vs. Bluetooth for Mice and Keyboards: Which Is Better?",
+      "source_url": "https://www.howtogeek.com/429291/usb-rf-vs.-bluetooth-mouse-and-keyboards-which-is-better/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "USB RF 동글 키보드·마우스",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "bluetooth-compatibility-multiple-devices",
+      "claim": "블루투스 방식의 장점은 기기 내장 칩으로 여러 기기(노트북, 태블릿, 스마트폰)와 동시에 페어링할 수 있고, 외부 동글 없이도 연결된다는 것이다. 단점은 처음 페어링에 추가 설정 단계가 필요하다는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HowToGeek — USB-RF vs. Bluetooth for Mice and Keyboards: Which Is Better?",
+      "source_url": "https://www.howtogeek.com/429291/usb-rf-vs.-bluetooth-mouse-and-keyboards-which-is-better/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "블루투스 키보드·마우스",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb3-interference-2-4ghz-rf-dongle",
+      "claim": "USB 3.0 포트와 2.4GHz RF 동글을 동시에 사용하면 무선 주파수 간섭이 발생한다. USB 3.x 장치가 신호를 송수신할 때 2.4GHz 주파수 대역에 노이즈를 방출하기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ASUS 공식 지원 — 동시에 USB3.0와 2.4Ghz USB 무선 장치를 사용 시 무선 주파수 간섭이 발생할 수 있습니다",
+      "source_url": "https://www.asus.com/kr/support/faq/1004004/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "USB RF 동글 (2.4GHz)",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb3-interference-symptom-input-lag-disconnection",
+      "claim": "USB 3.0 간섭으로 인한 증상은 입력 지연(키보드 누르고 1~2초 뒤 인식), 마우스 끊김, 간헐적 연결 두절이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 보고 — 클리앙, 뽐뿌, 퀘이사존",
+      "source_url": "https://www.clien.net/service/board/cm_mac/18137705",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "USB RF 동글 (2.4GHz)",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "usb3-interference-solution-use-usb2-port",
+      "claim": "USB 3.0 간섭 해결의 첫 번째 방법은 USB 동글을 USB 2.0 포트에 꽂는 것이다. USB 2.0은 저속 표준이라 2.4GHz 대역에 노이즈를 방출하지 않는다. 키보드·마우스는 고속 통신이 불필요하므로 USB 2.0 포트로도 충분하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CORSAIR 공식 가이드 — CORSAIR USB 동글과의 간섭을 방지하는 방법",
+      "source_url": "https://www.corsair.com/kr/ko/explorer/diy-builder/how-tos/how-to-stop-interference-with-corsair-usb-dongles/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "USB RF 동글 (2.4GHz)",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb3-interference-solution-extension-cable-distance",
+      "claim": "USB 2.0 포트가 없으면 USB 동글을 USB 3.0 포트에 꽂되, USB 연장 케이블을 사용해 동글의 물리적 위치를 USB 3.0 포트(또는 고속 이동식 저장소)에서 최소 20cm 이상 멀리 배치한다. 거리가 멀수록 간섭이 줄어든다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CORSAIR 공식 가이드 — CORSAIR USB 동글과의 간섭을 방지하는 방법",
+      "source_url": "https://www.corsair.com/kr/ko/explorer/diy-builder/how-tos/how-to-stop-interference-with-corsair-usb-dongles/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "USB RF 동글 (2.4GHz)",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "20cm 이상이라는 것은 권장 최소 거리이며, 가능하면 더 멀리할수록 간섭 가능성이 낮아진다. 데스크탑 케이스 후면 I/O 포트에 동글을 꽂고 전면 포트나 모니터 USB 포트 등을 활용하면 더 효과적이다.",
+      "cautionSource": "CORSAIR 가이드의 포트 배치 개선 섹션"
+    },
+    {
+      "id": "wireless-receiver-not-recognized-check-physical-connection",
+      "claim": "무선 동글이 인식되지 않을 때는 먼저 USB 리시버가 포트에 제대로 삽입되었는지 육안으로 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 PC] 무선 마우스 인식이 안됩니다.(블루투스 마우스 아님)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40536",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "USB RF 동글 (2.4GHz)",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "wireless-receiver-port-swap-troubleshooting",
+      "claim": "USB 동글이 한 포트에서는 인식되지 않으면 다른 USB 포트에 다시 꽂는다. PC의 여러 USB 포트가 독립적으로 작동하므로, 특정 포트의 접촉 불량이 원인일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 PC] 무선 마우스 인식이 안됩니다.(블루투스 마우스 아님)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40536",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "USB RF 동글 (2.4GHz)",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "wireless-battery-check-capacity",
+      "claim": "무선 키보드·마우스 연결이 안 되거나 끊길 때 첫 번째 확인 사항은 배터리 용량이다. 배터리 부족 경고가 있거나 전원 표시등이 꺼져 있으면 배터리를 교체해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "노랗IT월드 — 무선 키보드 마우스 연결됐는데 키보드 입력 안됨｜USB 동글·절전모드 해결",
+      "source_url": "https://yellowit.co.kr/it-review/wireless-usb-keyboard-not-typing-mouse-works/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "무선 키보드·마우스",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "wireless-connection-distance-range-10m",
+      "claim": "무선 동글 기반 키보드·마우스의 작동 거리는 일반적으로 10~20m이지만, 벽이나 금속 물체 같은 장애물이 많으면 실제 거리가 5~10m로 줄어들 수 있다. 기기를 수신기로부터 최소 10m 이내에서 사용하는 것이 안정적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사용자 가이드 및 커뮤니티 보고",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EB%AC%B4%EC%84%A0_%EB%A7%88%EC%9A%B0%EC%8A%A4_%EB%81%8A%EA%B9%80_%EC%9B%90%EC%9D%B8_%ED%8C%8C%EC%95%85_%EB%8C%80%EC%B2%98%EB%B0%A9%EC%95%88%EC%9D%80-80475",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "USB RF 동글 (2.4GHz)",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-selectable-power-saving-disable-keyboard-recovery",
+      "claim": "Windows의 USB 선택적 절전 기능이 켜져 있으면, PC가 절전 모드에서 복귀할 때 USB 동글이 정상 인식되지 않아 키보드가 일시적으로 먹통으로 보일 수 있다. 특히 점심시간 이후나 회의 후 첫 키 입력이 반응하지 않는 현상이 이 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "노랗IT월드 — 무선 키보드 마우스 연결됐는데 키보드 입력 안됨｜USB 동글·절전모드 해결",
+      "source_url": "https://yellowit.co.kr/it-review/wireless-usb-keyboard-not-typing-mouse-works/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "USB RF 동글 (2.4GHz)",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "usb-power-saving-solution-disable-selective-suspend",
+      "claim": "절전 복귀 후 USB 동글 인식 문제를 해결하려면 Windows 제어판 > 전원 옵션 > 고급 전원 설정에서 'USB 선택적 절전 모드'를 '사용 안 함'으로 변경한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "노랗IT월드 — 무선 키보드 마우스 연결됐는데 키보드 입력 안됨｜USB 동글·절전모드 해결",
+      "source_url": "https://yellowit.co.kr/it-review/wireless-usb-keyboard-not-typing-mouse-works/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "USB RF 동글 (2.4GHz)",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "mouse-sensor-cleaning-dust-debris",
+      "claim": "마우스 커서가 튀거나 움직임이 부정확하면 광학 센서 부분에 먼지나 이물질이 쌓여 있을 수 있다. 센서는 마우스 밑바닥의 LED 부분이며, 이곳에 마우스 패드 갈린 먼지나 먼지가 들어가면 튐 현상이 발생한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 보고 — 클리앙, 쿨엔조이",
+      "source_url": "https://www.clien.net/service/board/park/16916643",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "무선 마우스",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "mouse-sensor-cleaning-method-dry-cloth",
+      "claim": "마우스 센서 청소는 깨끗한 건조 천이나 부드러운 이쑤시개를 사용해 센서 부분의 먼지를 제거한다. 월 1회 정도 유지보수하면 센서 성능을 유지할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CORSAIR 공식 가이드 — How to Clean Your Gaming Mouse",
+      "source_url": "https://www.corsair.com/kr/ko/explorer/gamer/mice/how-to-clean-your-mouse/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "무선 마우스",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "알코올 성분의 세정제(손 소독제, 알코올 와이프 등)는 절대 사용하면 안 된다. 알코올은 마우스 외부 마감재(코팅)을 부식시킬 수 있다. 물만 사용하고 완전히 건조시킨 후에만 사용해야 한다.",
+      "cautionSource": "CORSAIR 청소 가이드의 경고 섹션 — '알코올 성분의 세정제' 금지"
+    },
+    {
+      "id": "mouse-optical-sensor-surface-compatibility",
+      "claim": "마우스 광학 센서는 투명 유리, 거울, 고광택 표면에서는 정상 작동하지 않는다. 이 경우 마우스 패드를 깔거나 표면을 덮어 사용한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 기술 커뮤니티 보고",
+      "source_url": "https://www.gopgg.com/2025/08/computer-mouse-not-working-solutions.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "광학 센서 마우스",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "wireless-battery-drain-fast-led-brightness-reduce",
+      "claim": "무선 마우스·키보드 배터리가 빨리 소모되면 먼저 LED 조명(있는 경우)의 밝기를 낮추거나 끈다. LED는 상당한 전력을 소비하므로, 조명을 끄는 것만으로도 배터리 소모를 크게 줄일 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 보고",
+      "source_url": "https://www.a-ha.io/questions/450a5ee498fa7a37aedf55682889b647",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "LED 탑재 무선 마우스·키보드",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "wireless-battery-drain-proximity-distance",
+      "claim": "무선 마우스·키보드 배터리 소모를 줄이려면 기기를 수신기로부터 10m 이내에 가깝게 유지한다. 거리가 멀면 무선 신호를 강하게 송신해야 하므로 전력 소비가 증가한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 보고",
+      "source_url": "https://www.a-ha.io/questions/450a5ee498fa7a37aedf55682889b647",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "무선 마우스·키보드",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "wireless-battery-power-switch-when-not-in-use",
+      "claim": "무선 마우스의 밑면 또는 옆면에 전원 스위치가 있으면, 사용하지 않을 때(야간, 휴무일)에는 꺼둔다. 이렇게 하면 불필요한 대기 전력 소비를 완전히 차단할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 보고",
+      "source_url": "https://www.a-ha.io/questions/450a5ee498fa7a37aedf55682889b647",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "전원 스위치 탑재 무선 마우스",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "bluetooth-keyboard-sleep-recovery-delay-multiple-key-press",
+      "claim": "블루투스 키보드를 절전 모드에서 복귀할 때 첫 키 입력이 반응하지 않거나 여러 번 눌러야 깨어나는 경우가 있다. 이는 블루투스 패어링 재확립에 시간이 걸리기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 커뮤니티 보고",
+      "source_url": "https://mincheol.im/140",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "블루투스 키보드",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "wireless-keyboard-specific-key-not-responding-reinit",
+      "claim": "무선 키보드의 특정 키만 입력이 안 되면 먼저 키보드 초기화를 시도한다. 대부분의 무선 키보드는 Fn + ESC 키를 약 3초 이상 누르면 초기화되며, 초기화 후에는 페어링을 다시 해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 커뮤니티 및 키보드 제조사 가이드",
+      "source_url": "https://learn.microsoft.com/ko-kr/answers/questions/4082614/question-4082614",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "무선 키보드",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "초기화 방법은 제품마다 다를 수 있다. 사용 중인 키보드의 정확한 초기화 방법은 제품 매뉴얼을 참조해야 한다. 초기화 버튼이 따로 있거나, 특정 키 조합이 다를 수 있다.",
+      "cautionSource": "키보드 제조사별 매뉴얼 및 커뮤니티 보고"
+    },
+    {
+      "id": "wireless-keyboard-pairing-re-establish-procedure",
+      "claim": "무선 키보드가 일부 키나 전체 입력이 안 되면 기존 페어링을 초기화하고 다시 페어링한다. Windows의 경우 설정 > 블루투스 및 기타 장치에서 기기를 제거한 후, 키보드의 페어링 모드를 다시 활성화하고 새로 추가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 PC] 컴퓨터에 블루투스 키보드 연결이 안 됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41742",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "블루투스 키보드",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "wireless-keyboard-driver-update-device-manager",
+      "claim": "무선 키보드 특정 키 문제가 해결되지 않으면 Windows 장치 관리자에서 키보드 드라이버를 업데이트한다. Windows 키 + X > 장치 관리자 > '키보드' 확장 > 해당 키보드 우클릭 > 드라이버 업데이트를 선택한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Q&A 및 기술 커뮤니티",
+      "source_url": "https://learn.microsoft.com/ko-kr/answers/questions/4082614/question-4082614",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "무선 키보드 (Windows)",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "wireless-frequency-band-interference-wifi-microwave",
+      "claim": "무선 키보드·마우스(2.4GHz)가 간헐적으로 끊기면 Wi-Fi, 블루투스 스피커, 전자레인지, 무선 CCTV 등 같은 2.4GHz 대역을 사용하는 다른 기기가 주변에 있을 수 있다. 이 경우 무선 채널을 변경하거나 간섭원에서 기기를 멀리 배치한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 보고",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EB%AC%B4%EC%84%A0_%EB%A7%88%EC%9A%B0%EC%8A%A4_%EB%81%8A%EA%B9%80_%EC%9B%90%EC%9D%B8_%ED%8C%8C%EC%95%85_%EB%8C%80%EC%B2%98%EB%B0%A9%EC%95%88%EC%9D%80-80475",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "2.4GHz RF 동글·블루투스",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "wireless-dongle-receiver-firmware-update-availability",
+      "claim": "제조사에서 무선 동글(리시버)의 펌웨어 업데이트를 제공하는 경우, 제품 공식 웹사이트의 지원 페이지에서 다운로드해 설치하면 연결 안정성이 개선될 수 있다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "제조사별 다양한 지원 정보",
+      "source_url": "https://www.corsair.com/kr/ko/explorer/diy-builder/how-tos/how-to-stop-interference-with-corsair-usb-dongles/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 입력기기",
+        "line": "USB RF 동글 (2.4GHz)",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    }
+  ]
+}

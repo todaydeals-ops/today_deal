@@ -1,0 +1,213 @@
+{
+  "topic": "정수기 필터 교체 미루면 정말 위험한가 — 팩트체크",
+  "brand": "공통",
+  "article": "water-purifier-filter-factcheck",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "coway-filter-replacement-cycle",
+    "lg-filter-replacement-cycle",
+    "lg-filter-orange-indicator-meaning"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "filter-bacteria-growth-study",
+      "claim": "필터를 교체하지 않은 정수기에서 세균이 급격히 증식하며, 2021년 IoT 물질 측정 업체 조사에서 미교체 정수기의 물에서 70 CFU/mL의 세균이 검출되어 300ml에 21,000마리 이상의 세균이 존재했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "머니투데이 - 정수기 수질 측정 조사",
+      "source_url": "https://www.mt.co.kr/future/2021/10/30/2021102908103110788",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "정수기",
+        "line": "가정용 전모델",
+        "years": "2021년 조사 기준",
+        "region": "KR"
+      },
+      "caution": "이 수치는 특정 가정의 미교체 정수기 사례로, 개별 필터 교체 주기와 수질에 따라 오염도는 크게 변동한다.",
+      "cautionSource": "머니투데이 기사 본문의 일산 사례"
+    },
+    {
+      "id": "filter-bacteria-threshold-exceeded",
+      "claim": "서울시 특별사법경찰이 일반 가정 정수기 100개를 검사한 결과 53개(53%)에서 대장균 등 세균이 먹는 물 기준치를 초과했으며, 기준치의 110배를 넘는 심각한 오염 사례도 있었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "YTN Science 보도 - 한국소비자원 정수기 검사",
+      "source_url": "https://m.science.ytn.co.kr/program/view.php?mcd=0030&key=201305241552524218",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "정수기",
+        "line": "가정용 전모델",
+        "years": "서울시 검사 기준",
+        "region": "KR"
+      },
+      "caution": "이는 필터 교체를 전혀 하지 않거나 심각하게 미룬 극단적 사례를 포함한 통계이다. 정기적 교체 제품의 경우 기준치 초과 확률은 현저히 낮을 가능성이 높다.",
+      "cautionSource": "YTN 보도의 서울시 검사 결과"
+    },
+    {
+      "id": "direct-water-purifier-bacterial-risk",
+      "claim": "한국소비자원 조사에서 2020년 직수형 정수기 30개 중 21개(70%)에서 먹는 물 기준치를 초과하는 세균이 검출되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국소비자원 - 직수형 정수기 세균 검사",
+      "source_url": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003003350",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "정수기",
+        "line": "직수형",
+        "years": "2020년",
+        "region": "KR"
+      },
+      "caution": "직수형 정수기는 물탱크가 없어 저수조형보다 필터 교체만으로는 충분하지 않으며, 직수관·냉각기·밸브 등 물이 닿는 모든 부품이 세균 번식처가 될 수 있다. 풀케어 관리가 권장된다.",
+      "cautionSource": "한국소비자원 검사 결과의 직수형 제품별 분석"
+    },
+    {
+      "id": "direct-water-inlet-pipe-sterilization",
+      "claim": "직수형 정수기는 필터 외에도 직수관, 밸브, 냉각코일 등이 물에 노출되므로, 이들 부품에서도 세균이 번식하기 쉽다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "정수기 위생 관리 가이드 및 소비자 커뮤니티 분석",
+      "source_url": "https://idsn.co.kr/news/view/1065592869868868",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "정수기",
+        "line": "직수형",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "제조사는 일반적으로 필터와 출수구(코크) 관리만 권장하지만, 위생 전문가들은 직수형 정수기의 경우 추가 부품 관리를 강조한다.",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "reverse-osmosis-vs-hollow-fiber-pore-size",
+      "claim": "역삼투압 필터의 구멍 크기는 0.0001 미크론으로, 중공사막 필터의 0.01~0.04 미크론보다 약 100배 더 미세하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "렌트리 - 정수기 필터 종류 비교 가이드",
+      "source_url": "https://rentre.kr/story/%EC%A0%95%EC%88%98%EA%B8%B0-%ED%95%84%ED%84%B0-%EC%A2%85%EB%A5%98-%EC%B0%A8%EC%9D%B4%EC%A0%90-%EA%B0%80%EC%9D%B4%EB%93%9C/water-purifier-filter-types-comparison",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "정수기",
+        "line": "역삼투압 vs 중공사막 필터",
+        "years": "현행 기술",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "hollow-fiber-membrane-bacteria-removal",
+      "claim": "중공사막 필터는 세균·미생물을 거르지만 미네랄은 통과시키는 반면, 역삼투압 필터는 미네랄을 포함한 대부분의 물질을 제거한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "렌트리 - 정수기 필터 종류 비교 가이드",
+      "source_url": "https://rentre.kr/story/%EC%A0%95%EC%88%98%EA%B8%B0-%ED%95%84%ED%84%B0-%EC%A2%85%EB%A5%98-%EC%B0%A8%EC%9D%B4%EC%A0%90-%EA%B0%80%EC%9D%B4%EB%93%9C/water-purifier-filter-types-comparison",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "정수기",
+        "line": "역삼투압 vs 중공사막 필터",
+        "years": "현행 기술",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "filter-replacement-lacks-sensor-alerts",
+      "claim": "대부분의 정수기는 필터 교체 시기를 자동으로 알려주는 센서가 부족하여, 사용량과 수질에 맞춰 정확한 교체 시점을 판단하기 어렵다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "머니투데이 - 정수기 수질 측정 조사",
+      "source_url": "https://www.mt.co.kr/future/2021/10/30/2021102908103110788",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "정수기",
+        "line": "가정용 전모델",
+        "years": "2021년 기준",
+        "region": "KR"
+      },
+      "caution": "LG 정수기는 출수 버튼의 물방울 표시등이 주황색으로 변할 때 필터 교체를 알려주며, 코웨이 렌탈 제품은 정기 방문관리 기사가 교체를 관리한다. 자가구매 제품은 사용자 책임이다.",
+      "cautionSource": "머니투데이 기사의 전문가 코멘트"
+    },
+    {
+      "id": "coliform-bacteria-presence-disqualifies-drinking",
+      "claim": "먹는 물 기준에서 총대장균군이 검출되면 식수로 부적합한 것으로 판정되며, 이는 정수기가 최소한의 안전 기준도 충족하지 못한 상태를 의미한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "YTN Science 보도 - 한국소비자원 정수기 검사",
+      "source_url": "https://m.science.ytn.co.kr/program/view.php?mcd=0030&key=201305241552524218",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "정수기",
+        "line": "가정용 전모델",
+        "years": "검사 기준",
+        "region": "KR"
+      },
+      "caution": "이는 필터 미교체 또는 심각한 오염 사례에 해당하며, 정기적 교체와 관리를 통해 예방 가능하다.",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "membrane-nano-filtration-performance",
+      "claim": "나노필터는 대장균을 99.99% 이상 제거하며, 압축 활성탄 필터는 79.83~97.65%의 제거 효율을 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "광운대학교 이준석 - 정수기 필터 대장균 제거 성능 연구",
+      "source_url": "https://www.dbpia.co.kr/journal/detail?nodeId=T16157509",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "정수기",
+        "line": "나노필터·활성탄 필터",
+        "years": "실험실 기준",
+        "region": "KR"
+      },
+      "caution": "이는 새 필터의 성능이며, 필터가 오염되거나 교체 시기를 넘으면 제거 효율이 급격히 떨어진다.",
+      "cautionSource": "광운대학교 연구 결과의 필터 교체 필요성"
+    },
+    {
+      "id": "direct-water-condensation-mold-issue",
+      "claim": "직수형 정수기에서 냉각기가 외부 온도와의 온도 차로 인해 결로 현상을 일으키고, 이로 인해 곰팡이가 번식할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "아웃도어뉴스 - 직수 정수기 위생 논란",
+      "source_url": "https://www.outdoornews.co.kr/news/articleView.html?idxno=34119",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "정수기",
+        "line": "직수형·냉수기능 탑재 모델",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "직수형 정수기 선택 시 냉각기가 없는 풀케어 타입을 고려하거나, 냉각기 주변 결로 관리를 정기적으로 해야 한다.",
+      "cautionSource": "아웃도어뉴스 기사의 풀케어 타입 선택 권장"
+    },
+    {
+      "id": "belief-good-taste-no-filter-change-unverified",
+      "claim": "\"필터를 안 갈아도 물맛이 괜찮으면 괜찮다\"는 통념에 대해, 맛과 안전은 별개이며 맛이 정상이어도 세균이 번식할 수 있다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "정수기 위생 관리 가이드 및 소비자 커뮤니티 분석",
+      "source_url": "https://blog.deeprooted.co.kr/2026/04/blog-post_30.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "정수기",
+        "line": "가정용 전모델",
+        "years": "통념 조사",
+        "region": "KR"
+      },
+      "caution": "세균·바이러스는 색상이나 맛으로 감지되지 않으며, 필터 교체 주기는 맛이 아닌 제조사 권장 사항과 누적 사용량에 따라 결정해야 한다.",
+      "cautionSource": "코웨이·LG 공식 필터 교체 주기 및 LG 물방울 표시등 안내"
+    }
+  ]
+}

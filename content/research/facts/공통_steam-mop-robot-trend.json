@@ -1,0 +1,403 @@
+{
+  "topic": "물걸레·스팀 로봇청소기 시장 현황과 구매 시점 판단",
+  "brand": "공통",
+  "article": "steam-mop-robot-trend",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "steam-mop-robot-market-maturity-2026",
+      "claim": "2026년 물걸레 로봇청소기는 자동 세척·건조, 온수·스팀 살균 기능이 기본화되었으며, 이전의 프리미엄 스펙이 50만 원대 중가형으로 하향 보급되고 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Smart Life Pick 2026 로봇청소기 추천 가이드",
+      "source_url": "https://thesmartlifepick.com/robot-vacuum-recommendation-top5-2026-guide/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "물걸레·스팀 모델",
+        "years": "2026",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "steam-mop-robot-price-tier-2026",
+      "claim": "2026년 물걸레 로봇청소기 가격대는 보급형 30만원대(자동세척 없음), 중가형 50~70만원대(온수 100℃·온풍 70℃·자동세척), 프리미엄 100만원 이상(스팀·직배수·AI 장애물 인식)으로 3단계로 분화했다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "다나와 2026년형 로봇청소기 가격동향",
+      "source_url": "https://review.danawa.com/2026-04-05-robotic-vacuum-models-price-trends/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "물걸레·스팀 모델",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "같은 가격대 내에서도 제조사·모델별로 자동세척·온풍 기능 유무가 다르므로 직접 비교가 필요하다",
+      "cautionSource": "Smart Life Pick 2026 로봇청소기 추천 가이드"
+    },
+    {
+      "id": "samsung-bespoke-steam-sanitization-official",
+      "claim": "삼성 비스포크 AI 스팀은 국제 공인 시험기관 Intertek을 통해 물걸레 살균 효과 99.99%를 검증받았으며, 2차 스팀 살균(100℃)을 통해 대장균·황색포도상구균·녹농균을 제거한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자 공식뉴스 비스포크 AI 스팀 살균 효과 발표",
+      "source_url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EB%B9%84%EC%8A%A4%ED%8F%AC%ED%81%AC-ai-%EC%8A%A4%ED%8C%80-%EC%8A%A4%ED%8C%80%EC%A7%91%EC%A4%91%EB%AA%A8%EB%93%9C-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "로봇청소기",
+        "line": "비스포크 AI 스팀",
+        "years": "2026",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "samsung-bespoke-steam-ultra-sanitization",
+      "claim": "삼성 비스포크 AI 스팀 울트라는 황색포도상구균·대장균·녹농균·모락셀라균 4종에 대해 99.999% 이상 살균 효과를 갖는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 공식 제품 스펙시트",
+      "source_url": "https://www.samsung.com/sec/vacuum-cleaners/jetbot-vr90f01aa-d2c/VR90F01AAG/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "로봇청소기",
+        "line": "비스포크 AI 스팀 울트라",
+        "years": "2026",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "lg-ronni-steam-sanitization-official",
+      "claim": "LG 홈봇 AI 오브제컬렉션 로니는 청소 후 거치대 내부에서 100℃ 스팀과 온수로 물걸레를 세척하여 황색포도상구균 등 유해균 4종을 99.99% 살균한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국경제 LG 로니 스팀 살균 기능 보도",
+      "source_url": "https://www.hankyung.com/amp/2026070796151",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "로봇청소기",
+        "line": "홈봇 AI 오브제컬렉션 로니",
+        "years": "2026",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "hot-water-temperature-variance-market",
+      "claim": "2026년 물걸레 로봇청소기의 온수 세척 온도는 제조사별로 65℃~100℃ 범위로 다르며, 고가 모델일수록 100℃에 가깝고 중가형은 65℃~80℃ 범위다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Roborock 공식 카펫 청소 기능 안내",
+      "source_url": "https://kr.roborock.com/blogs/roborock-kr/roborock-carpet-lug-cleaning",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "물걸레·스팀 모델",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "온수 온도가 높을수록 물때 제거 효율이 높지만 전력 소비가 증가한다",
+      "cautionSource": "Roborock 공식 카펫 청소 기능 안내"
+    },
+    {
+      "id": "hot-air-drying-temperature-market",
+      "claim": "2026년 물걸레 로봇청소기의 온풍 건조 온도는 제조사별로 55℃~70℃ 범위이며, 대부분의 중가형·프리미엄 모델이 55℃~70℃에서 30분~1시간의 건조 사이클을 운영한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dreame 공식 사양, Smart Life Pick 2026 로봇청소기 비교 가이드",
+      "source_url": "https://thesmartlifepick.com/robot-vacuum-recommendation-top5-2026-guide/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "물걸레·온풍 건조 모델",
+        "years": "2026",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "carpet-detection-auto-lifting-standard",
+      "claim": "2026년 프리미엄 물걸레 로봇청소기는 카펫 자동 감지 및 걸레 자동 리프팅을 기본으로 갖추고 있으며, 로보락 등 주요 제조사는 중단 카펫에서 22mm, 장단 카펫에서는 그 이상 높이로 물걸레를 들어올린다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Roborock 공식 카펫 청소 기능 안내",
+      "source_url": "https://kr.roborock.com/blogs/roborock-kr/roborock-carpet-lug-cleaning",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "카펫 감지 물걸레 리프팅 모델",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "보급형 모델은 카펫 감지 기능이 없거나 걸레 리프팅 높이가 제한적일 수 있다",
+      "cautionSource": "Roborock 공식 카펫 청소 기능 안내"
+    },
+    {
+      "id": "user-reported-dock-size-problem",
+      "claim": "물걸레 로봇청소기 실사용자들이 공통으로 지적하는 주요 불만점은 자동 세척·건조 스테이션의 크기가 매우 커서 주택 공간 배치가 어렵다는 점이다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "마일모아 게시판 물걸레 로봇청소기 사용자 후기",
+      "source_url": "https://www.milemoa.com/bbs/board/10984094",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "자동 세척·건조 스테이션 모델",
+        "years": "2026",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "user-reported-mop-odor-persistence",
+      "claim": "물걸레 로봇청소기 사용자들이 보고하는 실사용 불만점으로, 자동 세척·온풍 건조 기능이 있어도 며칠 사용 후 걸레에서 냄새가 나며, 완전히 제거하려면 며칠마다 수동으로 재세척해야 한다는 점이 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "마일모아 게시판, 렌트리 스토리 사용자 후기",
+      "source_url": "https://www.milemoa.com/bbs/board/10984094",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "자동 세척·온풍 건조 모델",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "물때·곰팡이는 완전히 방지할 수 없으므로, 정기적인 수동 세척이 필수다",
+      "cautionSource": "마일모아 게시판, 렌트리 스토리 사용자 후기"
+    },
+    {
+      "id": "user-reported-running-cost-increase",
+      "claim": "물걸레 로봇청소기 사용자들이 보고하는 유지비 증가 요인으로, 물탱크 정기 충전, 걸레 교체 빈도 증가(보통 2~4주 주기), 필터 교체 빈도 증가가 있으며, 총 소모품비는 일반 로봇청소기 대비 연 15~25만 원 추가된다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "마일모아 게시판, 렌트리 스토리 사용자 후기",
+      "source_url": "https://rentre.kr/story/2025%EB%85%84-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EC%B6%94%EC%B2%9C-%EC%9D%B8%EA%B8%B0-%ED%9B%84%EA%B8%B0-%EA%B0%80%EA%B2%A9-%EB%B9%84%EA%B5%90/2025-robot-vacuum-cleaner-recommendation-top6-review-price-comparison",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "물걸레 로봇청소기",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "소모품비는 사용 빈도, 거주 지역 수질(경수/연수), 청소 난이도에 따라 크게 달라질 수 있다",
+      "cautionSource": "마일모아 게시판, 렌트리 스토리 사용자 후기"
+    },
+    {
+      "id": "user-reported-noise-level-range",
+      "claim": "로봇청소기 소음은 흡입력 단계에 따라 40~60dB 범위에서 발생하며, 물걸레 동작 중 추가 펌프 소음이 3~5dB 더해진다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "마일모아 게시판, 렌트리 스토리 사용자 후기",
+      "source_url": "https://www.milemoa.com/bbs/board/10984094",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "물걸레·스팀 모델",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "야간 늦은 시간 운전은 가족 및 이웃 피해를 고려해 자제하는 것이 권장된다",
+      "cautionSource": "마일모아 게시판"
+    },
+    {
+      "id": "wet-mop-vs-suction-only-cleaning-pressure",
+      "claim": "찌든 오염(케첩·소스 자국 등) 제거에는 1.8~2.3kg 이상의 압력이 필요하며, 물걸레 겸용 로봇청소기보다 물걸레 전용 로봇청소기가 더 높은 압력을 가할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ajd.co.kr 로봇청소기 물걸레 vs 흡입력 비교 가이드",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0_%EC%B6%94%EC%B2%9C,_%ED%9D%A1%EC%9E%85%EA%B3%BC_%EB%AC%BC%EA%B1%B8%EB%A0%88%EB%A5%BC_%EB%B9%84%EA%B5%90%ED%95%B4%EC%95%BC_%ED%95%98%EB%8A%94_%EC%9D%B4%EC%9C%A0_%EC%A2%85%EB%A5%98%EB%B3%84_%EC%9E%A5%EB%8B%A8%EC%A0%90-48597",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "물걸레 모델",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "흡입력이 높은 물걸레 겸용 모델도 물걸레 전용 제품만큼의 압력을 낼 수 없으므로, 카스 또는 찌든 바닥이 주요 청소 대상이라면 물걸레 전용을 권장한다",
+      "cautionSource": "ajd.co.kr 로봇청소기 물걸레 vs 흡입력 비교 가이드"
+    },
+    {
+      "id": "suction-power-comparison-mixed-vs-vacuum-only",
+      "claim": "흡입 전용 로봇청소기의 흡입력은 물걸레 겸용 모델 대비 약 5~20% 높으며, 카펫·러그에서 깊숙이 묻은 먼지 흡입에서 물걸레 겸용보다 우수하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ajd.co.kr 로봇청소기 흡입력 비교 가이드",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0_%EC%B6%94%EC%B2%9C,_%ED%9D%A1%EC%9E%85%EA%B3%BC_%EB%AC%BC%EA%B1%B8%EB%A0%88%EB%A5%BC_%EB%B9%84%EA%B5%90%ED%95%B4%EC%95%BC_%ED%95%98%EB%8A%94_%EC%9D%B4%EC%9C%A0_%EC%A2%85%EB%A5%98%EB%B3%84_%EC%9E%A5%EB%8B%A8%EC%A0%90-48597",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "흡입 전용 vs 물걸레 겸용",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "반려동물을 키우거나 카펫이 많다면 물걸레 겸용 모델보다 흡입 전용 모델을 우선 검토해야 한다",
+      "cautionSource": "ajd.co.kr 로봇청소기 흡입력 비교 가이드"
+    },
+    {
+      "id": "budget-tier-wet-mop-no-auto-cleaning",
+      "claim": "30만 원대 보급형 물걸레 로봇청소기는 자동 세척·건조 기능이 없으므로, 사용자가 수동으로 걸레를 빼서 세척하고 다시 장착해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Smart Life Pick 2026 로봇청소기 추천 가이드",
+      "source_url": "https://thesmartlifepick.com/robot-vacuum-recommendation-top5-2026-guide/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "30만 원대 물걸레 모델",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "보급형 모델은 물걸레의 실제 편의성이 매우 낮으므로, 자동세척 스테이션이 있는 중가형 이상 모델과 사용 경험이 크게 다르다",
+      "cautionSource": "Smart Life Pick 2026 로봇청소기 추천 가이드"
+    },
+    {
+      "id": "mid-tier-hot-water-spec-2026",
+      "claim": "50~70만 원대 중가형 물걸레 로봇청소기는 최대 100℃ 온수 세척과 70℃ 온풍 건조를 기본으로 갖추고 있으며, 회전식 물걸레(분당 200~260회 회전)로 12N 정도의 압력을 가한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Smart Life Pick 2026 로봇청소기 추천 가이드",
+      "source_url": "https://thesmartlifepick.com/robot-vacuum-recommendation-top5-2026-guide/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "50~70만 원대 중가형",
+        "years": "2026",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "premium-market-standard-features-100k-plus",
+      "claim": "100만 원 이상 프리미엄 물걸레 로봇청소기의 기본 스펙은 10,000~18,000Pa 흡입력, 직배수 기능, AI 기반 장애물 인식, 스팀 살균(99.99%), 자동 물탱크 보충이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Smart Life Pick 2026 로봇청소기 추천 가이드, 다나와 프리미엄 로봇청소기 비교",
+      "source_url": "https://thesmartlifepick.com/robot-vacuum-recommendation-top5-2026-guide/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "100만 원 이상 프리미엄",
+        "years": "2026",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "roborock-s8-maxv-ultra-flagship-spec",
+      "claim": "로보락 S8 MaxV Ultra는 2026년 물걸레 로봇청소기 시장의 기준 모델로, 10,000Pa 흡입력, 회전식 물걸레(분당 200회전)로 높은 청소 성능을 갖추며, 완전 올인원 스테이션(자동 세척·건조·먼지비움·물 보충)을 제공한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Smart Life Pick 2026 로봇청소기 추천 가이드",
+      "source_url": "https://thesmartlifepick.com/robot-vacuum-recommendation-top5-2026-guide/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "로보락",
+        "category": "로봇청소기",
+        "line": "S8 MaxV Ultra",
+        "years": "2026",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "global-market-growth-projection",
+      "claim": "로봇 청소기 전체 시장은 2025년 125억 달러 규모에서 2026~2035년 사이 연평균 8.8% 성장률로 증가할 것으로 예상되며, 물걸레 기능 제품의 비중은 더욱 빠르게 증가 중이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Grand View Research 로봇청소기 시장 보고서 2026~2035",
+      "source_url": "https://www.gminsights.com/industry-analysis/robotic-vacuum-cleaner-market",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "전체 시장",
+        "years": "2025~2035",
+        "region": "Global"
+      }
+    },
+    {
+      "id": "steam-sanitization-vs-hot-water-washing-difference",
+      "claim": "스팀 살균(99.99~99.999%)과 온수 세척(100℃)은 모두 세균 제거 효과가 있으나, 스팀은 고온의 수증기로 물걸레 표면과 내부 섬유까지 살균하고, 온수 세척은 물리적 세척(분사·회전)에 고온 물을 결합한 방식으로 작동한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 비스포크 AI 스팀 공식 안내, LG 로니 공식 안내",
+      "source_url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EB%B9%84%EC%8A%A4%ED%8F%AC%ED%81%AC-ai-%EC%8A%A4%ED%8C%80-%EC%8A%A4%ED%8C%80%EC%A7%91%EC%A4%91%EB%AA%A8%EB%93%9C-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "스팀·온수 세척 모델",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "스팀 기능은 온수 세척보다 고급 모델에만 탑재되므로 가격이 더 높다",
+      "cautionSource": "Smart Life Pick 2026 로봇청소기 추천 가이드"
+    },
+    {
+      "id": "purchase-timing-assessment-mid-tier-advantage",
+      "claim": "2026년 물걸레 로봇청소기는 기술이 충분히 성숙했으므로, 50~70만 원대 중가형 모델의 자동 세척·건조, 100℃ 온수, 카펫 리프팅 기능만으로도 대부분의 일반 가정의 물걸레 청소 수요를 충분히 충족할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Smart Life Pick 2026 로봇청소기 추천 가이드, 다나와 가격동향",
+      "source_url": "https://thesmartlifepick.com/robot-vacuum-recommendation-top5-2026-guide/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "물걸레·스팀 모델",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "아토피·알레르기가 있거나 세균 걱정이 크다면 프리미엄 모델의 높은 살균 효과가 심리적 만족도를 높일 수 있다. 하지만 온수 세척만으로도 일상적 위생 수준은 충분하다",
+      "cautionSource": "Smart Life Pick 2026 로봇청소기 추천 가이드, 삼성·LG 공식 안내"
+    },
+    {
+      "id": "reasons-not-ready-for-purchase-dock-maintenance",
+      "claim": "물걸레 로봇청소기 구매를 미루는 근거: 스테이션의 물때·냄새 문제가 완전히 해결되지 않았으며, 며칠마다 오수통 청소가 필요하고, 규칙적인 필터·호스 교체 등 유지 부담이 크다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "마일모아 게시판, 렌트리 스토리 사용자 후기",
+      "source_url": "https://www.milemoa.com/bbs/board/10984094",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "자동 세척 스테이션 모델",
+        "years": "2026",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "reasons-not-ready-for-purchase-space-footprint",
+      "claim": "물걸레 로봇청소기 구매를 미루는 근거: 자동 세척·건조 스테이션은 가로 60cm, 세로 50cm, 높이 100cm 이상의 공간을 차지하므로, 좁은 주택이나 주방 공간이 제한된 가정에서는 배치 자체가 어렵다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "마일모아 게시판 사용자 후기",
+      "source_url": "https://www.milemoa.com/bbs/board/10984094",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "자동 세척 스테이션 모델",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "스테이션 설치 가능 공간을 먼저 확인한 후 구매 결정을 해야 한다. 배치 불가능하면 구매 후 반환으로 이어질 수 있다",
+      "cautionSource": "마일모아 게시판"
+    }
+  ]
+}

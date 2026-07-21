@@ -1,0 +1,259 @@
+{
+  "topic": "제습기 vs 에어컨 제습 모드: 따로 사야 하나, 전기료와 성능 비교",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "dehumidifier-electricity-cost-vs-aircon",
+      "claim": "제습기 월간 전기요금(16L급 인버터 모델 기준)은 7,000~9,000원으로, 같은 사용 시간 에어컨 제습 모드 20,000~30,000원의 절반 이하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "오늘의집, 제습기 vs 에어컨 제습 비교",
+      "source_url": "https://ohou.se/advices/12525",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "16L급 인버터 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "실제 전기요금은 제습기 모델, 사용 시간, 습도 수준에 따라 달라진다. 에어컨은 냉방과 함께 제습되므로 순수 제습 비용 비교는 어렵다.",
+      "cautionSource": "사용자 후기 기반 평가"
+    },
+    {
+      "id": "dehumidifier-power-consumption-vs-aircon",
+      "claim": "제습기 소비 전력은 250~300W인 반면, 에어컨 제습 모드는 700W 이상으로, 제습기가 벽걸이 에어컨의 1/3~1/4 수준이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "AJD 에어컨·제습 전기세 비교 기사",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%97%90%EC%96%B4%EC%BB%A8_%EC%A0%9C%EC%8A%B5_%EC%A0%84%EA%B8%B0%EC%84%B8,_%EB%83%89%EB%B0%A9%EA%B3%BC_%ED%81%B0_%EC%B0%A8%EC%9D%B4_%EC%97%86%EB%8B%A4!_%EB%B9%84%EA%B5%90,_%EC%9A%94%EA%B8%88,_%ED%8C%81_%EB%93%B1-29876",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기·에어컨",
+        "line": "일반형 제습기·벽걸이 에어컨",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "dehumidifier-vs-aircon-dehumidify-performance",
+      "claim": "제습기는 소비 전력 300W로 하루 10~16L를 제습하지만, 에어컨 제습 모드는 700W 이상 소비하면서 제습 성능은 절반 수준에 그친다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사까마까 제습 기기 비교",
+      "source_url": "https://sakamaka.kr/articles/dehumidifier-vs-aircon-dehumidify-vs-clothes-dryer-comparison",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기·에어컨",
+        "line": "일반형 16L급 제습기·벽걸이 에어컨",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "temperature-rise-dehumidifier-vs-aircon",
+      "claim": "제습기 사용 시 배출되는 건조한 공기가 열을 머금고 있어 실내 온도가 1~3도 상승하는 반면, 에어컨 제습 모드는 실내 온도를 함께 냉각시킨다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "오늘의집, 제습기 vs 에어컨 제습 비교",
+      "source_url": "https://ohou.se/advices/12525",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기·에어컨",
+        "line": "일반형 제습기·벽걸이 에어컨",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "compressed-dehumidifier-characteristics",
+      "claim": "압축식(냉방식) 제습기는 냉각 응축 원리를 사용해 에너지 효율이 높고, 넓은 공간에서도 빠르게 제습할 수 있어 가정용으로 가장 널리 사용되지만, 낮은 온도에서는 효율이 다소 떨어진다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "AJD 제습기 구매가이드 - 제습 방식 비교",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%A0%9C%EC%8A%B5%EA%B8%B0_%EC%9B%90%EB%A6%AC_%EB%B0%8F_%EC%A0%9C%EC%8A%B5_%EB%B0%A9%EC%8B%9D_%EB%B9%84%EA%B5%90!_%EC%95%95%EC%B6%95%C2%B7%EA%B1%B4%EC%A1%B0%C2%B7%ED%8E%A0%ED%8B%B0%EC%96%B4_3%EA%B0%80%EC%A7%80_%EC%A0%9C%EC%8A%B5_%EC%9B%90%EB%A6%AC_%ED%95%9C%EB%88%88%EC%97%90_%EB%B3%B4%EA%B8%B0-58882",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "압축식 제습기 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "desiccant-dehumidifier-characteristics",
+      "claim": "데시칸트식(제습제식) 제습기는 실리카겔 등의 건조제로 습기를 흡수한 뒤 히터로 가열하여 수분을 제거하는 방식으로, 저온 환경에서도 안정적인 제습이 가능하고 소음이 적다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "AJD 제습기 구매가이드 - 제습 방식 비교",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%A0%9C%EC%8A%B5%EA%B8%B0_%EC%9B%90%EB%A6%AC_%EB%B0%8F_%EC%A0%9C%EC%8A%B5_%EB%B0%A9%EC%8B%9D_%EB%B9%84%EA%B5%90!_%EC%95%95%EC%B6%95%C2%B7%EA%B1%B4%EC%A1%B0%C2%B7%ED%8E%A0%ED%8B%B0%EC%96%B4_3%EA%B0%80%EC%A7%80_%EC%A0%9C%EC%8A%B5_%EC%9B%90%EB%A6%AC_%ED%95%9C%EB%88%88%EC%97%90_%EB%B3%B4%EA%B8%B0-58882",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "데시칸트식 제습기 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "dehumidifier-capacity-calculation-apartment",
+      "claim": "아파트의 제습기 적정 용량은 1평당 0.76L 기준으로 계산되며, 예를 들어 20평 아파트에는 15L급 제습기가 적당하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "AJD 제습기 용량 계산법",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%A0%9C%EC%8A%B5%EA%B8%B0_%EC%9A%A8%EB%9F%89_%EA%B3%84%EC%82%B0%EB%B2%95!_%EC%9D%BC%EC%9D%BC_%EC%A0%9C%EC%8A%B5%EB%9F%89%EA%B3%BC_%EC%A0%9C%EC%8A%B5_%ED%9A%A8%EC%9C%A8_%EB%B9%84%EA%B5%90,_%EC%82%AC%EC%9A%A9%EB%A9%B4%EC%A0%81_%EB%B3%84_%EC%B6%94%EC%B2%9C_%EC%9A%A8%EB%9F%89_%EC%B4%9D%EC%A0%95%EB%A6%AC-58883",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "압축식 제습기 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "계산식은 평균치이며, 실제 필요 용량은 지하·반지하 여부, 환기 상태, 습한 집 정도에 따라 한 단계 크거나 작을 수 있다. 주로 사용할 공간(예: 작은방 또는 다용도실)을 기준으로 선택하는 것도 방법이다.",
+      "cautionSource": "한국 공기청정협회 제습기 전용면적 기준"
+    },
+    {
+      "id": "dehumidifier-capacity-calculation-house",
+      "claim": "주택(단독주택, 지하, 반지하 등)의 제습기 적정 용량은 1평당 1.02L 기준으로 계산되며, 아파트 기준보다 한 단계 높은 용량을 권장한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "AJD 제습기 용량 계산법",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%A0%9C%EC%8A%B5%EA%B8%B0_%EC%9A%A8%EB%9F%89_%EA%B3%84%EC%82%B0%EB%B2%95!_%EC%9D%BC%EC%9D%BC_%EC%A0%9C%EC%8A%B5%EB%9F%89%EA%B3%BC_%EC%A0%9C%EC%8A%B5_%ED%9A%A8%EC%9C%A8_%EB%B9%84%EA%B5%90,_%EC%82%AC%EC%9A%A9%EB%A9%B4%EC%A0%81_%EB%B3%84_%EC%B6%94%EC%B2%9C_%EC%9A%A8%EB%9F%89_%EC%B4%9D%EC%A0%95%EB%A6%AC-58883",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "압축식 제습기 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "laundry-drying-dehumidifier-vs-aircon",
+      "claim": "빨래 건조 시 제습기를 따뜻한 바람과 함께 가까이 두면 빠르게 말릴 수 있어 가장 효율적이지만, 에어컨 제습 모드로 거실 전체를 식히면서 말리는 방법은 전기료가 비싸고 온 집이 추워진다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사까마까 제습 기기 비교",
+      "source_url": "https://sakamaka.kr/articles/dehumidifier-vs-aircon-dehumidify-vs-clothes-dryer-comparison",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기·에어컨",
+        "line": "일반형 제습기·벽걸이 에어컨",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "humidity-adjustment-range-comparison",
+      "claim": "제습기는 실내 습도만을 기준으로 작동하여 40% 이하까지 조절 가능하지만, 에어컨 제습 모드는 대체로 50~60% 습도까지만 낮출 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사까마까 제습 기기 비교",
+      "source_url": "https://sakamaka.kr/articles/dehumidifier-vs-aircon-dehumidify-vs-clothes-dryer-comparison",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기·에어컨",
+        "line": "일반형 제습기·벽걸이 에어컨",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "winter-condensation-desiccant-dehumidifier-advantage",
+      "claim": "겨울철 결로와 곰팡이 방지에는 데시칸트식(흡착식) 제습기가 더 유리한데, 압축식은 온도가 낮을수록 성능이 떨어지지만 데시칸트식은 저온 환경에서도 안정적인 제습력을 유지한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "플러머100 겨울철 제습기 가이드",
+      "source_url": "https://plumber100.com/dehumidifier/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "데시칸트식 제습기",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "ideal-indoor-humidity-range",
+      "claim": "질병관리청 권고 겨울철 적정 실내 습도는 40~60%이며, 습도가 이미 40% 이하라면 제습기를 끄는 것이 좋다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "플러머100 겨울철 제습기 가이드",
+      "source_url": "https://plumber100.com/dehumidifier/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기·실내환경",
+        "line": "전체",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "40~60% 범위 이상의 과도한 제습은 피부 건조나 목의 불편함을 유발할 수 있으므로, 적절한 범위 내 습도 유지가 중요하다.",
+      "cautionSource": "질병관리청 실내환경 권고 기준"
+    },
+    {
+      "id": "dehumidifier-condensation-drainage-options",
+      "claim": "제습기 물 배출 방식은 수동 물통 비우기와 연속 배수 설치 두 가지가 있으며, 연속 배수는 호스 연결로 창 밖이나 하수구로 지속적으로 배출되어 사용자 개입이 최소화된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "AJD 제습기 구매가이드",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/guide/%EC%A0%9C%EC%8A%B5%EA%B8%B0",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "일반형 제습기 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "연속 배수 설치 시 배출 호스 높이가 바닥으로부터 1m 이상 낮은 위치에 있어야 물이 역류하지 않으며, 호스가 굽어지거나 막히지 않도록 주의해야 한다.",
+      "cautionSource": "LG 건조기 배수 설치 원칙(제습기도 동일 적용)"
+    },
+    {
+      "id": "use-case-aircon-dehumidify-preferred",
+      "claim": "에어컨 제습 모드는 더운 여름 거실에서 냉방을 겸한 제습이 필요할 때 유리하며, 빠르게 실내 온도를 낮으면서 습도도 제어해야 할 때 효율적이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사까마까 제습 기기 비교",
+      "source_url": "https://sakamaka.kr/articles/dehumidifier-vs-aircon-dehumidify-vs-clothes-dryer-comparison",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어컨·제습기",
+        "line": "에어컨 제습 모드",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "use-case-dehumidifier-preferred",
+      "claim": "제습기는 빨래 건조, 옷방·신발장·지하·반지하, 서늘한 장마철에 사용될 때 유리하며, 온도 상승을 피하면서 습도만 낮춰야 할 때 효율적이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사까마까 제습 기기 비교",
+      "source_url": "https://sakamaka.kr/articles/dehumidifier-vs-aircon-dehumidify-vs-clothes-dryer-comparison",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "일반형 제습기 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    }
+  ]
+}

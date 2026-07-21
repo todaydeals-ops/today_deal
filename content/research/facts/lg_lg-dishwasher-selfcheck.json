@@ -1,0 +1,341 @@
+{
+  "topic": "LG 디오스 식기세척기 에러코드·세척 불량·배수 안 됨 자가점검",
+  "brand": "LG",
+  "article": "lg_lg-dishwasher-selfcheck",
+  "captured": "2026-07-21",
+  "reused_facts": ["dishwasher-residual-water-normal", "dishwasher-rinse-aid-water-tension", "dishwasher-vinegar-rinse-warning"],
+  "declined_facts": [
+    { "id": "dishwasher-errorcode-water-leak", "why": "삼성 E03, FE, LC 코드. 제조사별 에러코드 체계가 다르므로 LG에 적용 불가" },
+    { "id": "dishwasher-errorcode-water-supply", "why": "삼성 4C 코드. LG는 IE 에러로 다른 체계" },
+    { "id": "dishwasher-errorcode-drainage", "why": "삼성 5C 코드. LG는 OE 에러로 다른 체계" },
+    { "id": "dishwasher-errorcode-pump-operation", "why": "삼성 3C 코드. LG 체계에 없음" },
+    { "id": "dishwasher-errorcode-heating", "why": "삼성 HC 코드. LG는 HE 에러로 다른 체계" }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "lg-errorcode-ie-water-inlet",
+      "claim": "LG 식기세척기 IE 에러코드는 급수 불량을 나타내며, 싱크대 급수 밸브가 열려 있는지 확인하고 급수 호스가 눌리거나 막혀 있지 않은지 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 식기세척기 표시창에 에러코드가 나타나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20154261809118",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-errorcode-oe-water-outlet",
+      "claim": "LG 식기세척기 OE 에러코드는 배수 불량을 나타내며, 배수 필터의 음식물 잔여물 막힘이나 배수 호스 꺾임을 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 배수가 안되고, 표시창에 OE 표시가 나타나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1777388",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-errorcode-fe-overfilling",
+      "claim": "LG 식기세척기 FE 에러코드는 표준량보다 많은 물이 급수될 경우 발생하는 과급수를 나타내며, 식기가 물의 흐름을 막고 있지는 않은지 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — FE 또는 AE/RE 에러가 표시돼요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1307424613417",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-errorcode-ae-re-leak",
+      "claim": "LG 식기세척기 AE/RE 에러코드는 제품 내부로 누수가 감지될 경우 발생하며, 누수 방지를 위해 배수기능이 계속 작동한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — FE 또는 AE/RE 에러가 표시돼요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1307424613417",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "열풍건조 모델의 경우 연수장치 덮개와 에어필터 덮개 위치를 혼동하여 에어필터 쪽으로 물을 넣으면 누수가 발생할 수 있다",
+      "cautionSource": "LG전자 고객지원 문서 — FE/AE/RE 에러 가이드"
+    },
+    {
+      "id": "lg-errorcode-be-foam",
+      "claim": "LG 식기세척기 bE 에러코드는 세제로 인한 다량의 거품 발생을 나타내며, 누수를 방지하는 안전 기능이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 식기세척기 표시창에 에러코드가 나타나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20154261809118",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-errorcode-te-temperature",
+      "claim": "LG 식기세척기 tE 에러코드는 온도감지센서 문제를 나타낸다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 식기세척기 표시창에 에러코드가 나타나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20154261809118",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-errorcode-he-heater",
+      "claim": "LG 식기세척기 HE 에러코드는 히터 작동 문제를 나타낸다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 식기세척기 표시창에 에러코드가 나타나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20154261809118",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-errorcode-le-motor",
+      "claim": "LG 식기세척기 LE 에러코드는 세척 모터 문제를 나타낸다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 식기세척기 표시창에 에러코드가 나타나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20154261809118",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-errorcode-pe-water-level",
+      "claim": "LG 식기세척기 PE 에러코드는 수위감지센서 문제를 나타낸다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 식기세척기 표시창에 에러코드가 나타나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20154261809118",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-errorcode-cl-lock",
+      "claim": "LG 식기세척기 CL 표시는 버튼잠금 상태를 나타내며, 코스 및 옵션 선택키가 동작되지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 식기세척기 표시창에 에러코드가 나타나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20154261809118",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-drain-filter-cleaning-frequency",
+      "claim": "LG 식기세척기 배수 필터는 1~2주에 한 번씩 청소하여 항상 깨끗한 상태로 유지해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 배수가 안되고, 표시창에 OE 표시가 나타나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1777388",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "사용 빈도에 따라 청소 주기는 달라질 수 있으며, 필터에 이물질이 남아 있으면 물이 잘 배출되지 않는다",
+      "cautionSource": "LG전자 고객지원 문서 — OE 에러 배수 불량 가이드"
+    },
+    {
+      "id": "lg-drain-filter-separation",
+      "claim": "LG 식기세척기 배수 필터는 아래 식기 바구니를 제거한 후 바닥의 필터를 반시계 방향으로 돌려 분리하며, 흐르는 물에 세척한 후 시계 방향으로 돌려 재설치한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 배수가 안되고, 표시창에 OE 표시가 나타나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1777388",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "작동을 멈춘 후 30분 정도 기다렸다가 필터를 꺼내야 한다",
+      "cautionSource": "LG전자 고객지원 문서 — 배수 불량 해결 방법"
+    },
+    {
+      "id": "lg-drain-hose-height",
+      "claim": "LG 식기세척기 배수 호스의 끝부분이 바닥으로부터 30cm 이상 떨어져 있어야 하며, 높이가 30cm 이하일 때는 하수구 냄새가 올라오거나 하수구 물이 싱크대로 역류할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 배수가 안되고, 표시창에 OE 표시가 나타나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1777388",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-drain-hose-check",
+      "claim": "LG 식기세척기 배수 호스를 펴서 눌리거나 꺾인 부분이 있다면 물이 잘 흐를 수 있도록 배수 호스를 펴주어야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 배수가 안되고, 표시창에 OE 표시가 나타나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1777388",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-forced-drainage",
+      "claim": "LG 식기세척기 배수 불량 진단 시 강제 배수 테스트는 전원 켜고 시작 버튼을 3초 누르는 방식으로 2~3분 강제 배수 사이클이 작동한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 필터 아래쪽에 물이 고여 있어요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151773945693",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "물이 필터 아래쪽을 넘어가면 강제 배수를 수행한다",
+      "cautionSource": "LG전자 고객지원 문서 — 잔수 남음 처리 방법"
+    },
+    {
+      "id": "lg-residual-water-amount",
+      "claim": "LG 식기세척기 필터 아래에 80~150ml(손가락 두세마디 높이)의 물이 고여 있는 현상은 정상이며, 설계상 구조다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 필터 아래쪽에 물이 고여 있어요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151773945693",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-odor-removal-citric-acid",
+      "claim": "LG 식기세척기 냄새 제거를 위해서는 구연산 40g을 투입구에 넣고 통살균 코스를 주기적으로 실행하는 것이 효과적이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 세척이 잘 안돼요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151678633118",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "일반 세제를 사용하지 말고 구연산(시트르산)을 사용해야 한다",
+      "cautionSource": "LG전자 고객지원 문서 — 정기적 청소 방법"
+    },
+    {
+      "id": "lg-dishwasher-detergent-type",
+      "claim": "LG 식기세척기에는 일반 주방용 세제를 사용하면 안 되며, 반드시 식기세척기 전용 세제를 사용해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 세제를 넣을 때 주의사항이 궁금해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151643376100",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-dishwasher-detergent-solid-preferred",
+      "claim": "LG 식기세척기는 액체 세제보다 고체 세제 사용을 권장하며, 액체 세제는 세척 및 건조 성능이 떨어질 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 세척이 잘 안돼요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151678633118",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-dishwasher-detergent-quantity",
+      "claim": "LG 식기세척기의 세제 양은 제조사의 권장량을 식기의 양과 더러움 정도에 맞춰 조절해야 하며, 적게 넣으면 효과가 낮고 많이 넣으면 거품이 남는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 세제를 넣을 때 주의사항이 궁금해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151643376100",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-detergent-compartment-drying",
+      "claim": "LG 식기세척기 세제 투입 시 투입구와 손의 물기를 닦아주어야 하며, 물기가 남아 있으면 세제가 투입구에 달라붙는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 세제를 넣을 때 주의사항이 궁금해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151643376100",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-detergent-lid-latch",
+      "claim": "LG 식기세척기 세제 투입 후 덮개가 '딸깍' 소리가 날 때까지 밀어야 하며, 이를 통해 세척 전 세제가 새는 것을 방지할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 세제를 넣을 때 주의사항이 궁금해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151643376100",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-washing-bad-food-removal",
+      "claim": "LG 식기세척기 세척 성능 개선을 위해서는 식기 내 남아 있는 큰 음식물을 제거하고, 눌어붙은 음식물은 불린 후 애벌세척을 권장한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 세척이 잘 안돼요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151678633118",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-washing-dish-arrangement",
+      "claim": "LG 식기세척기 올바른 수납은 접시류는 세우고, 냄비나 그릇은 오목한 부분이 아래를 향하도록 배치하되, 겹치지 않게 정렬하고 회전 날개(노즐)에 닿지 않도록 바구니 높이를 조절해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 세척이 잘 안돼요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151678633118",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-washing-course-selection",
+      "claim": "LG 식기세척기는 오염 수준에 맞는 세척 코스를 선택해야 하며, 강력, 불림, 살균세척, 스팀 등의 옵션을 활용해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 세척이 잘 안돼요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151678633118",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-drying-performance-dish-stacking",
+      "claim": "LG 식기세척기의 건조 성능 문제는 그릇을 겹쳐서 배치하면 건조 효율이 저하되므로, 식기를 겹치지 않게 배치해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 건조 성능이 불만이신가요?",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152882931235",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-drying-material-effect",
+      "claim": "LG 식기세척기에서 플라스틱이나 얇은 재질의 식기는 온도가 빠르게 떨어져 건조가 어렵다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 건조 성능이 불만이신가요?",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152882931235",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-rinse-essential-drying",
+      "claim": "LG 식기세척기에서 린스가 없거나 레벨이 낮으면 물기 제거 성능이 현저히 감소하므로, 린스 사용이 필수적이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 건조 성능이 불만이신가요?",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152882931235",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "건조 성능이 저하되면 가장 먼저 확인해야 할 항목은 린스 레벨이다",
+      "cautionSource": "LG전자 고객지원 문서 — 건조 성능 불량 진단 순서"
+    },
+    {
+      "id": "lg-drying-bowl-arrangement",
+      "claim": "LG 식기세척기에서 국그릇·밥그릇 같은 뒷굽이 있는 식기는 기울여 물이 고이지 않도록 정렬해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 건조 성능이 불만이신가요?",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152882931235",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-drying-method-condensation",
+      "claim": "LG 식기세척기는 응축 건조 후 자동으로 문이 열려 자연 건조되며, 자동 문열림 후 내부 습기가 자연스럽게 배출되는 시간이 필요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 건조 성능이 불만이신가요?",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152882931235",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "lg-thinq-smart-diagnosis",
+      "claim": "LG ThinQ 앱의 스마트진단 기능으로 식기세척기의 현재 상태를 확인할 수 있으며, Menu 탭에서 Smart Diagnosis를 선택하여 진단 결과로 제품 상태 정보와 증상별 해결책을 제공받을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — ThinQ 스마트 진단은 어떻게 사용하나요?",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152166347265",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "Wi-Fi 지원 모델", "years": "전 연식", "region": "KR" },
+      "caution": "스마트진단 기능은 Wi-Fi 지원 제품에만 제공되며, Wi-Fi가 없는 모델은 음성 기반 진단을 사용할 수 있다",
+      "cautionSource": "LG전자 고객지원 문서 — ThinQ 스마트진단 적용 범위"
+    }
+  ]
+}

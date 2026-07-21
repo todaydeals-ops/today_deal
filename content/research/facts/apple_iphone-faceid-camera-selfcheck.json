@@ -1,0 +1,340 @@
+{
+  "topic": "아이폰 Face ID 인식 안 됨·카메라 흐림 자가점검",
+  "brand": "애플",
+  "article": "iphone-faceid-camera-selfcheck",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "iphone-force-restart-generation-split",
+    "iphone-thermal-throttling-performance"
+  ],
+  "declined_facts": [
+    {
+      "id": "iphone-battery-menu-split",
+      "why": "배터리 성능 메뉴 위치이며, Face ID·카메라 문제와 무관"
+    },
+    {
+      "id": "iphone-recovery-mode-data",
+      "why": "복구 모드이며, Face ID·카메라 문제와 무관"
+    },
+    {
+      "id": "airpods-cleaning-micellar-water-method",
+      "why": "에어팟 청소 방법이며, 아이폰 카메라와 무관"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "faceid-supported-models",
+      "claim": "Face ID는 iPhone X 이후 모델에서만 지원된다. 기종별로 TrueDepth 카메라의 성능이 다르며, iPhone 12부터는 마스크를 쓴 상태에서도 Face ID를 사용할 수 있다 (iOS 15.4 이상).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Use Face ID on your iPhone or iPad Pro",
+      "source_url": "https://support.apple.com/en-us/108411",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone X 이후",
+        "years": "2017~",
+        "region": "글로벌"
+      },
+      "caution": "iPhone X~11은 마스크 지원 없음. iPhone 12 이후는 설정 > Face ID 및 암호에서 '마스크로 Face ID 사용'을 활성화해야 함.",
+      "cautionSource": "Apple Support의 기종별 마스크 지원 공식 안내"
+    },
+    {
+      "id": "faceid-optimal-distance-angle",
+      "claim": "Face ID는 약 25~50cm(10~20인치) 거리에서 최적으로 작동한다. 기기가 얼굴의 정면에서 약 45도 각도까지는 인식되지만, 그 이상 기울어지면 인식률이 떨어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Use Face ID on your iPhone or iPad Pro",
+      "source_url": "https://support.apple.com/en-us/108411",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone X 이후",
+        "years": "2017~",
+        "region": "글로벌"
+      },
+      "caution": "거리·각도 제한은 기기의 TrueDepth 카메라의 시야각에 의해 결정되므로 모든 기종에 공통 적용.",
+      "cautionSource": "Apple Support 공식 문서"
+    },
+    {
+      "id": "faceid-mask-requirements",
+      "claim": "iPhone 12 이후에서 마스크로 Face ID를 사용하려면 iOS 15.4 이상이 필요하며, 마스크가 눈을 포함한 얼굴 상단을 명확히 노출해야 한다. 마스크가 너무 높거나 눈을 덮으면 인식이 불가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Use Face ID while wearing a mask with iPhone 12 and later",
+      "source_url": "https://support.apple.com/en-us/102452",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 12 이후",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "마스크 착용 시 Face ID는 눈 주변 영역만으로 인식하므로, 안경 착용 여부나 마스크 종류가 인식률에 영향을 미친다.",
+      "cautionSource": "Apple Support의 마스크 Face ID 안내"
+    },
+    {
+      "id": "faceid-insufficient-lighting",
+      "claim": "Face ID는 적외선 기반 인식이지만 너무 어두운 환경에서는 인식이 어렵다. 반대로 매우 밝은 환경(직사광선)에서도 적외선 카메라가 제대로 작동하지 않을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If Face ID isn't working on your iPhone or iPad Pro",
+      "source_url": "https://support.apple.com/en-us/118243",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone X 이후",
+        "years": "2017~",
+        "region": "글로벌"
+      },
+      "caution": "극도로 어두운 곳이나 외부 직사광선에서 Face ID가 인식 안 될 때는 조명 환경을 변경하면 해결되는 경우가 많다.",
+      "cautionSource": "Apple Support의 Face ID 작동 환경 안내"
+    },
+    {
+      "id": "truedepth-camera-obstruction-case-screen",
+      "claim": "케이스, 화면 보호필름, 먼지, 또는 이물질이 Face ID 센서(TrueDepth 카메라)를 덮으면 인식이 불가능하다. 기기 상단 정중앙의 노치나 다이나믹 아일랜드 영역에 있는 여러 센서를 방해하면 안 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If Face ID isn't working on your iPhone or iPad Pro",
+      "source_url": "https://support.apple.com/en-us/118243",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone X 이후",
+        "years": "2017~",
+        "region": "글로벌"
+      },
+      "caution": "케이스나 필름을 제거해서 테스트하는 것이 Face ID 문제 해결의 첫 번째 단계다. 고장으로 오해하는 대표 사례."
+    },
+    {
+      "id": "faceid-face-capture-failure-message",
+      "claim": "Face ID 설정 중 '얼굴을 인식할 수 없음' 또는 '얼굴을 캡처할 수 없음' 메시지가 나타나면, 먼저 기기 카메라와 센서를 청소하고, 조명을 개선하고, 정면을 마주하고 다시 시도해야 한다. 실패가 반복되면 Face ID 재설정을 시도한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If Face ID isn't working on your iPhone or iPad Pro",
+      "source_url": "https://support.apple.com/en-us/118243",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone X 이후",
+        "years": "2017~",
+        "region": "글로벌"
+      },
+      "caution": "이 오류는 일시적 소프트웨어 버그일 수 있으므로, 기기 강제 재시작 후 다시 시도할 것."
+    },
+    {
+      "id": "faceid-disabled-message-hardware",
+      "claim": "'Face ID를 사용할 수 없음' 또는 'Face ID를 활성화할 수 없습니다'라는 메시지가 표시되면, TrueDepth 카메라 시스템 내 하나 이상의 부품에 하드웨어 결함이 있음을 의미한다. 이 경우 소프트웨어 해결은 불가능하고 Apple 정식 서비스센터 점검이 필수다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If Face ID isn't working on your iPhone or iPad Pro",
+      "source_url": "https://support.apple.com/en-us/118243",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone X 이후",
+        "years": "2017~",
+        "region": "글로벌"
+      },
+      "caution": "자가진단으로는 판별이 불가능하다. 이 메시지 자체가 하드웨어 문제의 강한 신호다."
+    },
+    {
+      "id": "faceid-reset-procedure",
+      "claim": "Face ID를 재설정하려면 설정 > Face ID 및 암호 > 'Face ID 재설정'을 선택한 후, 기존 등록 데이터를 삭제하고 처음부터 다시 등록한다. 이 과정에서 조명이 좋은 장소에서 다양한 각도로 얼굴을 스캔해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If Face ID isn't working on your iPhone or iPad Pro",
+      "source_url": "https://support.apple.com/en-us/118243",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone X 이후",
+        "years": "2017~",
+        "region": "글로벌"
+      },
+      "caution": "재설정 후에도 인식이 안 되면 TrueDepth 카메라의 물리적 손상을 의심해야 한다."
+    },
+    {
+      "id": "faceid-alternate-appearance",
+      "claim": "Face ID는 하나의 등록된 얼굴에 대해 '대체 외모' 설정으로 추가 얼굴 인식 데이터를 저장할 수 있다. 설정 > Face ID 및 암호 > '대체 외모'에서 안경을 쓴 상태, 수염이 있는 상태 등 일상의 다양한 외모를 학습시킬 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Use Face ID on your iPhone or iPad Pro",
+      "source_url": "https://support.apple.com/en-us/108411",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone X 이후",
+        "years": "2017~",
+        "region": "글로벌"
+      },
+      "caution": "대체 외모는 원래 등록된 얼굴에 추가되는 데이터이지, 다른 사람의 얼굴을 등록하는 것이 아니다."
+    },
+    {
+      "id": "camera-lens-cleaning-method",
+      "claim": "아이폰 카메라 렌즈 청소는 부드러운 마이크로파이버 천으로 렌즈 표면을 가볍게 닦는 것이 원칙이다. 물이나 용매(알코올 포함)는 사용 금지. 먼지가 제거되지 않으면 전문 서비스센터에서 청소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If the camera or flash on your iPhone, iPad, or iPod touch isn't working",
+      "source_url": "https://support.apple.com/en-us/102514",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "카메라 렌즈 코팅이 손상될 수 있으므로 거친 천이나 연마제 사용은 절대 금지."
+    },
+    {
+      "id": "camera-blur-focus-failure-causes",
+      "claim": "아이폰 카메라가 흐리거나 초점을 잡지 못하는 원인은 대부분 렌즈 먼지 또는 물때, OIS(광학 손떨림 보정) 메커니즘 손상, 또는 AF(자동초점) 모터 고장이다. 렌즈 청소로 해결되지 않으면 하드웨어 손상을 의심해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If the camera or flash on your iPhone, iPad, or iPod touch isn't working",
+      "source_url": "https://support.apple.com/en-us/102514",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 6 Plus 이후",
+        "years": "2014~",
+        "region": "글로벌"
+      },
+      "caution": "OIS는 iPhone 6 Plus부터 탑재되었으며, 모든 후속 모델에 있다. AF 메커니즘은 모든 기종에서 찾을 수 있다."
+    },
+    {
+      "id": "ois-af-vibration-damage-motorcycle",
+      "claim": "오토바이 같은 고진동 엔진의 강한 진동에 오래 노출되면 OIS(광학 손떨림 보정)와 폐루프 AF(자동초점) 시스템이 손상되어 사진과 영상의 화질이 저하될 수 있다. Apple은 고출력 오토바이에 아이폰을 직접 부착하는 것을 권장하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Exposure to vibrations, like those generated by high-powered motorcycle engines, might impact iPhone cameras",
+      "source_url": "https://support.apple.com/en-us/102175",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "OIS: iPhone 6 Plus 이후 / AF: iPhone XS 이후",
+        "years": "2014~",
+        "region": "글로벌"
+      },
+      "caution": "OIS는 iPhone 6 Plus, 6s Plus, 7 이후에 탑재되며, 폐루프 AF는 iPhone XS 이후에 탑재된다. 진동 손상은 돌이킬 수 없으므로 예방이 중요하다.",
+      "cautionSource": "Apple Support 공식 문서에서 기종별 OIS·AF 탑재 명시"
+    },
+    {
+      "id": "ois-af-vibration-mitigation",
+      "claim": "오토바이나 드론에 아이폰을 부착해야 한다면 진동 감쇠 마운트(vibration dampening mount) 또는 짐벌(gimbal)을 사용해야 한다. 스쿠터나 전동 오토바이처럼 진동이 낮은 기기에 부착하는 경우에도 진동 감쇠 마운트 사용을 권장한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Exposure to vibrations, like those generated by high-powered motorcycle engines, might impact iPhone cameras",
+      "source_url": "https://support.apple.com/en-us/102175",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "OIS/AF 탑재 모델",
+        "years": "2014~",
+        "region": "글로벌"
+      },
+      "caution": "진동 감쇠 마운트나 짐벌의 품질에 따라 효과가 달라질 수 있다. 오토바이에 아이폰을 고정할 때는 반드시 좋은 품질의 진동 대응 액세서리를 사용할 것."
+    },
+    {
+      "id": "camera-lens-fog-condensation",
+      "claim": "추운 환경에서 따뜻한 실내로 들어오거나 뜨거운 물의 증기에 노출되면 카메라 렌즈에 내부 응결이 발생할 수 있다. 급격한 온도 변화가 주 원인이며, 렌즈를 서서히 건조시키면 대부분 해결된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your iPhone or iPad gets too hot or too cold",
+      "source_url": "https://support.apple.com/en-us/118431",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "응결을 빠르게 제거하려고 드라이어 등으로 열을 가하면 렌즈 코팅이 손상될 수 있다. 자연 건조가 가장 안전하다."
+    },
+    {
+      "id": "camera-black-screen-app-crash",
+      "claim": "카메라 앱에서 검은 화면이 나타나면 원인은 대부분 앱 캐시 오류, iOS 버그, 또는 충분하지 않은 저장공간이다. 앱을 강제 종료하고 다시 열거나, 설정 > 일반 > iPhone 저장공간을 확인해 여유공간을 확보한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If the camera or flash on your iPhone, iPad, or iPot touch isn't working",
+      "source_url": "https://support.apple.com/en-us/102514",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "저장공간이 부족하면 카메라 동영상 녹화가 중단될 수 있으므로 최소 1~2GB 이상의 여유를 유지할 것.",
+      "cautionSource": "Apple Support 공식 문서에서 저장공간 부족이 카메라 앱 오류의 원인으로 명시"
+    },
+    {
+      "id": "camera-flash-low-battery",
+      "claim": "카메라 플래시가 작동하지 않는 원인은 배터리 부족(대개 15% 이하), 앱 버그, 또는 플래시 하드웨어 고장이다. 배터리를 충전한 후 카메라 앱을 재시작하면 대부분 해결된다. 배터리 상태와 관계없이 플래시가 안 나오면 하드웨어 검사가 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If the camera or flash on your iPhone, iPad, or iPod touch isn't working",
+      "source_url": "https://support.apple.com/en-us/102514",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "배터리 최적화 모드 활성화 시 플래시가 자동으로 비활성화될 수 있으므로 먼저 확인할 것."
+    },
+    {
+      "id": "camera-scratch-protection-glass",
+      "claim": "후면 카메라 렌즈에 스크래치가 있어도 사진 화질에 미치는 영향은 미미한 경우가 대부분이다. 하지만 렌즈 보호 유리 또는 렌즈 보호 필름이 손상되면 먼지나 수분이 침투할 수 있으므로 교체가 권장된다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "iFixit, Apple Community — Camera lens damage and impact on image quality",
+      "source_url": "https://www.ifixit.com/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 11 이후 (렌즈 보호 유리)",
+        "years": "2019~",
+        "region": "글로벌"
+      },
+      "caution": "렌즈 보호 유리의 스크래치 정도에 따라 영향이 크게 달라진다. 깊은 균열은 반드시 교체해야 내부 수분 침투를 방지할 수 있다.",
+      "cautionSource": "iFixit의 iPhone 카메라 렌즈 보호 유리 분석"
+    },
+    {
+      "id": "face-id-software-restart-troubleshooting",
+      "claim": "Face ID가 인식을 잘못하거나 간헐적으로 작동하지 않으면 먼저 강제 재시작을 시도해야 한다. 기종에 따라 재시작 방법이 다르므로 정확한 기종을 확인하고 Apple의 강제 재시작 가이드를 따를 것.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If Face ID isn't working on your iPhone or iPad Pro",
+      "source_url": "https://support.apple.com/en-us/118243",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone X 이후",
+        "years": "2017~",
+        "region": "글로벌"
+      },
+      "caution": "강제 재시작은 Face ID 데이터를 삭제하지 않으므로 안전하다. iPhone 기종별 강제 재시작 방법을 반드시 확인할 것."
+    }
+  ]
+}

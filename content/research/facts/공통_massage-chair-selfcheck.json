@@ -1,0 +1,312 @@
+{
+  "topic": "안마의자 자가점검·자가진단",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "remote-battery-replacement",
+      "claim": "리모컨이 작동하지 않으면 먼저 배터리를 새것으로 교체한 후 테스트한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "바디프랜드 — 마사지체어 자가점검 FAQ",
+      "source_url": "https://cs.bodyfriend.co.kr/guide/faq?product=bf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "안마의자",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "remote-reboot-procedure",
+      "claim": "새 배터리로 교체해도 작동하지 않으면 배터리를 완전히 제거하고 리모컨의 전원 버튼을 10회 이상 눌러 리모컨을 재부팅한 후 새 배터리를 다시 장착한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "바디프랜드 — 마사지체어 자가점검 FAQ",
+      "source_url": "https://cs.bodyfriend.co.kr/guide/faq?product=bf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "안마의자",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "리모컨이 여러 개인 경우 사이드 리모컨으로도 작동 여부를 확인하면 하나의 리모컨 고장 여부를 판별할 수 있다"
+    },
+    {
+      "id": "chair-power-reboot",
+      "claim": "안마의자 전원 코드를 뽑았다가 10~20초 후 다시 연결하여 안마의자를 재부팅한다. 일시적 오작동은 이 절차로 해결되는 경우가 많다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코지마 — 사용 중 문제 해결 안내",
+      "source_url": "https://cozyma.com/cs/useinfo",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "안마의자",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "전원 코드를 뽑을 때는 반드시 의자가 정지한 상태를 확인한 후 진행한다. 마사지 진행 중 느닷없이 전원을 끊으면 부품이 손상될 수 있다"
+    },
+    {
+      "id": "power-outlet-check",
+      "claim": "안마의자 전원이 안 켜지면 다른 전자기기(선풍기, 램프 등)를 같은 콘센트에 연결하여 콘센트 자체가 정상 작동하는지 먼저 확인한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "일반 가전 자가점검 커뮤니티",
+      "source_url": "https://icems2021.com/%EB%B9%84%EC%9A%98%EB%93%9C%EB%A6%B4%EB%A0%89%EC%8A%A4-%EC%95%88%EB%A7%88%EC%9D%98%EC%9E%90-%EC%A0%84%EC%9B%90-%EC%95%88%EC%BC%9C%EC%A7%90-5%EA%B0%80%EC%A7%80-as-%ED%95%84%EC%88%98-%EC%B2%B4%ED%81%AC/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "안마의자",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "power-cord-connection",
+      "claim": "전원 케이블이 의자 본체와 콘센트 양쪽에 제대로 연결되어 있는지 육안으로 확인한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "제품 수리 커뮤니티",
+      "source_url": "https://icems2021.com/%EB%B9%84%EC%9A%98%EB%93%9C%EB%A6%B4%EB%A0%89%EC%8A%A4-%EC%95%88%EB%A7%88%EC%9D%98%EC%9E%90-%EC%A0%84%EC%9B%90-%EC%95%88%EC%BC%9C%EC%A7%80-5%EA%B0%80%EC%A7%80-as-%ED%95%84%EC%88%98-%EC%B2%B4%ED%81%AC/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "안마의자",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "bluetooth-connection-lg",
+      "claim": "LG 안마의자의 무선 리모컨이 본체와 정상 연결되어 있는지 확인하려면 리모컨의 블루투스 버튼을 3초간 눌러 알림음(띠리릭)이 나는지 확인한다. 소리가 나면 정상 연결 상태다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 — 마사지체어 리모컨 작동 안 됨 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153474971845",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "LG",
+        "category": "안마의자",
+        "line": "MH21 등 무선 리모컨 모델",
+        "years": "2015~",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "automatic-stop-timer",
+      "claim": "안마 프로그램이 자동으로 종료되면 의자가 자동으로 정지되고 의자가 수직 위치로 돌아온다. 이는 모터 과열 방지를 위한 정상 작동이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "오사키 마사지체어 사용 설명서",
+      "source_url": "https://manuals.plus/osaki/3d-le-massage-chair-manual",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "안마의자",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "일반적인 안마의자는 30분 또는 60분 타이머로 자동 정지되도록 설계되어 있다. 장시간 연속 사용은 모터와 히터 부품을 손상시킬 수 있다",
+      "cautionSource": "제조사 매뉴얼의 연속 사용 금지 안내 및 타이머 제한 사항"
+    },
+    {
+      "id": "motor-overheat-protection",
+      "claim": "안마 중 의자가 느닷없이 멈추면 모터 과열 보호 기능이 작동한 것일 수 있다. 전원 코드를 뽑고 최소 30분 이상 냉각한 후 다시 사용한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "안마의자 제조사 공식 안내",
+      "source_url": "https://cozyma.com/cs/useinfo",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "안마의자",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "연속 사용 금지: 30분 마사지 후 최소 15분 이상 냉각 후 재사용을 권한다",
+      "cautionSource": "코지마 공식 사용 가이드 및 사용자 보고"
+    },
+    {
+      "id": "initial-noise-normal",
+      "claim": "새 의자를 처음 사용할 때 또는 오래 사용하지 않은 의자를 다시 사용할 때 소음이 발생하는 것은 부품들이 움직이기 시작하면서 나타나는 정상 현상이다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티",
+      "source_url": "https://cozyma.com/cs/useinfo",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "안마의자",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "몇 회 사용 후에도 소음이 계속되거나 소음이 심해지면 고장일 수 있으니 AS를 접수한다"
+    },
+    {
+      "id": "sensor-debris-cleaning",
+      "claim": "안마의자가 제대로 안 움직이거나 센서가 제대로 반응하지 않으면 센서 부분에 먼지나 이물질이 끼어 있지 않은지 확인하고 부드러운 천으로 닦아낸다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 보고",
+      "source_url": "https://cozyma.com/cs/useinfo",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "안마의자",
+        "line": "센서 내장 모델",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "센서를 청소할 때는 절대 물을 직접 뿌리지 말고 마른 천 또는 극도로 습한 정도의 천으로만 닦는다. 과도한 습기는 내부 회로를 손상시킬 수 있다"
+    },
+    {
+      "id": "leather-care-routine",
+      "claim": "가죽이나 천 커버는 가죽 클리너나 유연제를 사용하여 정기적으로 관리하면 제품 수명을 연장할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코지마 — 제품 관리 안내",
+      "source_url": "https://cozyma.com/cs/useinfo",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "안마의자",
+        "line": "가죽/천 커버 모델",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "body-scan-posture-dependent",
+      "claim": "바디스캔 기능은 착석 자세에 따라 스캔 결과가 달라진다. 같은 높이에서 반복적으로 같은 결과를 얻지 못하면 자세를 정확히 조정하고 다시 시도한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 보고",
+      "source_url": "https://www.furnitureforlife.com/ko/learning-center/massage-chairs-key-terminology/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "안마의자",
+        "line": "바디스캔 기능 내장 모델",
+        "years": "2015~",
+        "region": "글로벌"
+      },
+      "caution": "바디스캔 오작동이 의심되면 다음을 먼저 확인한다: (1) 의자에 똑바로 앉아 있는지 (2) 등이 전체적으로 의자에 닿아 있는지 (3) 머리가 헤드레스트에 접촉하고 있는지. 이들을 조정한 후 다시 바디스캔을 실행한다"
+    },
+    {
+      "id": "airbag-no-inflation-deflation-issue",
+      "claim": "에어백이 부풀지 않거나 빠지지 않는 경우, 에어 펌프와 에어백 연결 튜브에 이상이 있을 수 있다. 육안으로 튜브 손상을 확인할 수 있지만, 펌프 자체의 고장은 자가점검 범위를 벗어난다",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "사용자 보고",
+      "source_url": "https://cozyma.com/cs/useinfo",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "안마의자",
+        "line": "에어백 시스템 탑재 모델",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "에어백 튜브가 의자 밑에서 눌려 있거나 꺾여 있지 않은지 확인한다. 튜브 손상이 보이면 자가수리하지 말고 AS를 접수한다"
+    },
+    {
+      "id": "zero-gravity-mode-not-working",
+      "claim": "무중력 모드가 작동하지 않으면 등받이 각도 조절 버튼과 다리 레스트 각도 조절 버튼을 각각 눌러 둘이 동시에 작동하는지 확인한다. 한쪽만 작동하면 그 부분의 모터 고장일 수 있다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 보고",
+      "source_url": "https://cozyma.com/cs/useinfo",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "안마의자",
+        "line": "무중력 모드 탑재 모델",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "무중력 모드는 등받이와 다리레스트가 동시에 작동하여 구현되므로, 한쪽 부분이 먼저 그 위치에 도달하면 모드가 정상 작동하지 않을 수 있다. 이 경우는 각도 조절 모터의 타이밍 문제로 AS를 요청하는 것이 낫다"
+    },
+    {
+      "id": "legrest-malfunction-check",
+      "claim": "다리 레스트가 작동하지 않으면 손으로 부드럽게 눌러 수동으로 움직이는지 먼저 확인한다. 수동으로도 움직이지 않으면 레스트가 고장난 것이다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 보고",
+      "source_url": "https://cozyma.com/cs/useinfo",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "안마의자",
+        "line": "다리 레스트 탑재 모델",
+        "years": "2010~",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "backrest-angle-adjustment-issue",
+      "claim": "등받이 각도 조절이 안 되면 리모컨의 각도 조절 버튼이 제대로 눌리는지 먼저 확인하고, 버튼이 눌려도 각도가 변하지 않으면 각도 조절 모터의 고장일 수 있다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 보고",
+      "source_url": "https://cozyma.com/cs/useinfo",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "안마의자",
+        "line": "각도 조절 기능 탑재 모델",
+        "years": "2010~",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "moving-relocation-caution",
+      "claim": "안마의자를 이동하거나 이사할 때는 반드시 전원을 끄고 냉각한 후 이동한다. 특히 의자를 누워 있는 상태로 운반하면 안 된다. 의자를 세운 상태(직각)로 운반해야 내부 부품 손상을 방지할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "바디프랜드·코지마 제품 배송 및 설치 안내",
+      "source_url": "https://cozyma.com/cs/useinfo",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "안마의자",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "안마의자는 무겁고 구동부 손상에 취약하므로, 가능하면 제조사의 배송 서비스나 전문 운송업체를 이용하는 것을 권한다. 개인이 이동할 때는 두 명 이상이 함께하고, 급하게 각도를 조절하지 않는다"
+    },
+    {
+      "id": "disassembly-hazard-prohibition",
+      "claim": "안마의자를 임의로 분해하는 것은 감전 위험과 부상 위험이 있어 절대 금지다. 부품 교체나 수리가 필요하면 반드시 공식 AS센터에 의뢰한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "일반 전자기기 안전 기준",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153474971845",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "안마의자",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "구동부(모터, 펌프, 히터)에 끼임 위험이 있고, 작동 중 절대 손을 넣지 않는다. 아이가 의자 위나 아래에서 놀지 않도록 감시한다"
+    }
+  ]
+}

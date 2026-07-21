@@ -1,0 +1,76 @@
+{
+  "topic": "삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검",
+  "brand": "삼성",
+  "article": "air-purifier-selfcheck",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "purifier-filter-types-washable-vs-disposable",
+    "prefilter-water-washing-drying",
+    "hepa-filter-no-water-washing",
+    "filter-replacement-cycle-6-12-months",
+    "odor-causes-filter-end-of-life-humidity-dust",
+    "suction-weak-filter-dirty-reset",
+    "dust-sensor-monthly-cleaning",
+    "sensor-red-light-persistent-causes",
+    "noise-increase-filter-dirty-motor",
+    "filter-exchange-lamp-light-normal"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "samsung-filter-reset-bluesky-button",
+      "claim": "삼성 공기청정기 블루스카이 시리즈의 필터 교체 알림 리셋은 조명/필터 리셋 버튼을 3초 이상 누르면 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 공기청정기 필터 교환 방법/교환 주기 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37614",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "공기청정기",
+        "line": "블루스카이",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "리셋 방법은 모델에 따라 다르므로, 정확한 절차는 제품 설명서를 확인해야 한다.",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "samsung-filter-reset-cube-mode-button",
+      "claim": "삼성 공기청정기 큐브 시리즈의 필터 교체 알림 리셋은 모드 버튼을 10초 이상 누르면 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 공기청정기 필터 교환 방법/교환 주기 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37614",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "공기청정기",
+        "line": "큐브",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "리셋 시간이 블루스카이와 다르므로 반드시 자신의 모델을 확인해야 한다.",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "samsung-filter-sensor-bluesky-status-bar",
+      "claim": "삼성 공기청정기 블루스카이는 필터 센서가 있어 필터의 실제 수명 상태를 에어내비게이터의 필터 수명 게이지에 표시하며, 단순 시간 경과가 아닌 실제 필터 상태를 기준으로 교체 주기를 알려준다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung Newsroom Korea - 초미세 공기청정기 삼성 블루스카이 관리법",
+      "source_url": "https://news.samsung.com/kr/%EC%B4%88%EB%AF%B8%EC%84%B8-%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0-%EC%82%BC%EC%84%B1-%EB%B8%94%EB%A3%A8%EC%8A%A4%EC%B9%B4%EC%9D%B4-%EC%9D%B4%EB%A0%87%EA%B2%8C-%EA%B4%80%EB%A6%AC%ED%95%98",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "공기청정기",
+        "line": "블루스카이",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "필터 수명 게이지는 실제 필터 오염 상태를 반영하므로, 외출이 적거나 공기 오염도가 낮은 환경에서는 표시된 시간보다 더 오래 사용할 수 있다.",
+      "cautionSource": "없음"
+    }
+  ]
+}

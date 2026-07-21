@@ -1,0 +1,191 @@
+{
+  "topic": "영양제 유통기한 지난 후 안전성·효과 저하·보관 방법",
+  "brand": "공통",
+  "article": "팩트체크",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "expired-supplement-general-safety",
+      "claim": "유통기한이 지난 영양제 대부분은 즉시 위험하지 않으며, FDA SLEP 프로젝트 결과 약 90%가 유통기한 후 최대 15년까지 안전하고 유효했다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "인터넷 건강 자료",
+      "source_url": "https://www.chpark.co.kr/2026/03/supplement-expiration-date-safety.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "종합 영양제",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "안전성과 효과는 별개. 안전해도 효능이 떨어질 수 있다.",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "water-soluble-vitamin-c-efficacy-decline",
+      "claim": "비타민 C 같은 수용성 비타민은 유통기한이 6개월 정도 지난 제품의 경우 실제 함량이 라벨 표시량의 50~70% 수준으로 떨어진다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "인터넷 건강 자료 통합",
+      "source_url": "https://nutriko.lambpod.kr/blog/supplement-expiration-date-safety-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "비타민 C",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "수용성 비타민은 지용성보다 보관 중 효능 감소가 빠르다.",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "omega3-rancidity-hazard",
+      "claim": "오메가3가 산패되면 화학 변화로 발암물질로 변할 수 있으며, 산패한 지방산은 생체 기관 손상·염증·암 유발·동맥경화 악화를 일으킬 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "하이닥 헬시라이프 기사",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=33536",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "오메가3",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "산패 위험이 높아 유통기한이 지난 오메가3는 폐기 권장. 냉장 또는 서늘한 곳에 보관해야 산패 방지.",
+      "cautionSource": "https://news.hidoc.co.kr/news/articleView.html?idxno=33536"
+    },
+    {
+      "id": "omega3-storage-temperature",
+      "claim": "오메가3는 냉장 보관(4℃ 권장) 또는 서늘하고 건조한 곳에서 보관해야 하며, 직사광선을 피하는 것이 중요하다. 불투명한 용기 포장이 좋다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "하이닥 건강정보",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=27916",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "오메가3",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "개봉 여부와 관계없이 제조하는 순간부터 산패 위험 노출. 유통기한 내 빠르게 섭취 필요.",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "probiotic-viability-decline",
+      "claim": "유산균은 살아있는 생물로서 시간이 지나면 균 수가 줄어든다. 일반적으로 25℃ 상온에서 보관할 경우 유통기한은 제조일로부터 18~24개월이며, 라벨의 'XX CFU 보장' 문구는 유통기한 말까지 보장되는 균수를 의미한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "인터넷 건강정보 통합",
+      "source_url": "https://enjoylife002.com/entry/%EC%9C%A0%EC%82%B0%EA%B7%A0-%EC%9C%A0%ED%86%B5%EA%B8%B0%ED%95%9C-%E2%80%93-%EC%A7%80%EB%82%98%EB%8F%84-%EB%A8%B9%EC%96%B4%EB%8F%84-%EB%90%A0%EA%B9%8C-%EB%B3%B4%EA%B4%80-%EB%B0%A9%EB%B2%95%EA%B3%BC-%EC%84%AD%EC%B7%A8-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "유산균",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "유통기한 지난 유산균은 대부분 사멸해 효과가 없다. 냉장 보관(4℃)이 신선도 유지에 가장 효과적.",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "probiotic-refrigeration-best-practice",
+      "claim": "유산균 보관은 냉장 보관이 가장 좋으며 약 4℃ 온도에서 조금 더 오래 유지된다. 냉장고 문칸은 온도 변동이 심하므로 안쪽 선반이나 밀폐용기가 권장된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "하루쉼표 블로그",
+      "source_url": "https://flexitopic.com/entry/probiotics-storage",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "유산균",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "제품 보관법에 상온으로 명시되어 있어도 냉장 보관이 신선도 유지에 더 효과적이다.",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "fat-soluble-vitamin-stability",
+      "claim": "지용성 비타민(A, D, E, K)은 조리 과정에서 파괴되지 않고 보관 안정성이 우수하다. 반면 수용성 비타민(B, C)은 조리 과정에서 손실되기 쉽다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼",
+      "source_url": "https://www.msdmanuals.com/ko/home/%EC%98%81%EC%96%91-%EC%9E%A5%EC%95%A0/%EB%B9%84%ED%83%80%EB%AF%BC/%EB%B9%84%ED%83%80%EB%AF%BC-%EA%B0%9C%EC%9A%94",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "비타민",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "지용성 비타민은 체내 저장되어 과잉섭취 시 독성 위험이 있으므로 복용량 관리 필요.",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "powder-vs-liquid-stability",
+      "claim": "분말 형태는 액상 형태보다 보관과 운반 시 더 안정적이며 유통기한이 더 길다. 액상제제는 변질 우려가 높고 유통기한이 짧다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "가든오브라이프코리아 매거진",
+      "source_url": "https://gardenoflifekorea.com/article/%EB%A7%A4%EA%B1%B0%EC%A7%84/8/33194/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "종합",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "액상 형태가 분말보다 흡수가 빠를 수 있지만, 변질 위험으로 유통기한 관리가 더 중요하다.",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "silica-gel-moisture-absorption",
+      "claim": "영양제 용기에 들어있는 실리카겔은 습기를 제거하는 방습제로, 무게의 최대 40%까지 물을 흡수한다. 습도 변화가 발생하는 운송 및 보관 중 효과적이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "인터넷 제습제 정보",
+      "source_url": "https://namu.wiki/w/%EC%A0%9C%EC%8A%B5%EC%A0%9C",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "종합",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "제품에 따라 개봉 후 버리라고 지시된 경우도 있으므로 라벨 지침을 반드시 확인할 것. 별도 지시 없으면 그대로 두기.",
+      "cautionSource": "https://wave2trip.com/nutritional-supplement-storage-tips/"
+    },
+    {
+      "id": "damp-supplement-texture-deterioration",
+      "claim": "영양제 알약이 달라붙거나 습기에 노출된 것은 이미 내부로 습기가 침투했다는 신호이며, 성분이 변질되어 효과가 없거나 소화 불량을 일으킬 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "인터넷 건강정보",
+      "source_url": "https://edureina.com/entry/%EC%98%81%EC%96%91%EC%A0%9C-%EC%9C%A0%ED%86%B5%EC%86%8C%EB%B9%84%EA%B8%B0%ED%95%9C-%EC%A7%80%EB%82%98%EB%A9%B4-%EB%A8%B9%EC%96%B4%EB%8F%84-%EB%90%A0%EA%B9%8C-%EC%98%AC%EB%B0%94%EB%A5%B8-%ED%8F%90%EA%B8%B0%EB%B2%95%C2%B7%EB%B3%B4%EA%B4%80%EB%B2%95%EA%B9%8C%EC%A7%80-%EC%B4%9D%EC%A0%95%EB%A6%AC",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "종합",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "이 경우 폐기하는 것이 안전하다.",
+      "cautionSource": "없음"
+    }
+  ]
+}

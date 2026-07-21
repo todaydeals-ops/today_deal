@@ -1,0 +1,295 @@
+{
+  "topic": "애플 맥북 안 켜짐·충전·발열·배터리 자가점검",
+  "brand": "애플",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "iphone-normal-operating-temperature",
+    "iphone-thermal-throttling-performance",
+    "iphone-overheating-mitigation-immediate",
+    "iphone-overheating-what-not-to-do"
+  ],
+  "declined_facts": [
+    {
+      "id": "ipad-usb-c-lightning-port-models",
+      "why": "아이패드와 맥북의 충전 포트 타입(MagSafe vs USB-C) 기준이 다르며, 어댑터 호환성도 상이하므로 별도 조사 필요"
+    },
+    {
+      "id": "ipad-force-restart-with-home-button",
+      "why": "아이패드는 홈버튼/볼륨 버튼 기준이나, 맥북은 전원 버튼 단일 조작이므로 절차가 완전히 다름"
+    },
+    {
+      "id": "ipad-battery-health-check-location",
+      "why": "아이패드는 '설정 > 배터리 > 배터리 성능 상태'이나, 맥북은 시스템 정보(System Information)에서 확인하므로 경로가 다름"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "macbook-power-on-check-adapter",
+      "claim": "맥북이 켜지지 않을 때 첫 확인 사항은 전원 어댑터가 제대로 연결되었는지, MagSafe(신형) 또는 USB-C(구형) 포트에 빛이 들어오는지 확인하는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - If your Mac doesn't turn on",
+      "source_url": "https://support.apple.com/en-us/102623",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "맥북 전 라인",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "macbook-force-restart-procedure",
+      "claim": "맥북 전원 버튼이 반응하지 않을 때는 전원 버튼을 약 10초 동안 길게 누르고 뗀 후, 약 5초 대기했다가 다시 한 번 전원 버튼을 눌러 강제 재시작한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - If your Mac doesn't turn on",
+      "source_url": "https://support.apple.com/en-us/102623",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "맥북 전 라인",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "Apple Silicon 맥북은 SMC를 수동 리셋할 필요 없이 강제 재시작으로 충분하지만, Intel 맥북은 추가 절차가 필요할 수 있다"
+    },
+    {
+      "id": "macbook-smc-reset-intel-only",
+      "claim": "Intel 프로세서 탑재 맥북(2020년 이전 모델 대부분)이 전원이 켜지지 않을 때 강제 재시작으로도 해결되지 않으면 SMC(System Management Controller) 리셋이 필요하며, 전원 버튼을 약 10초 누르다가 손가락을 뗀 후 다시 켜기를 반복하거나, Apple Support 공식 가이드에 따라 특정 키 조합을 사용해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - If your Mac doesn't turn on",
+      "source_url": "https://support.apple.com/en-us/102623",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "맥북",
+        "years": "~2020 (Intel)",
+        "region": "글로벌"
+      },
+      "caution": "Apple Silicon 맥북(M1 이상, 2021년 이후)에는 SMC 수동 리셋이 없다. 칩 타입을 먼저 확인하고 해당 절차만 수행할 것",
+      "cautionSource": "Apple Support - If your Mac doesn't turn on (SMC reset 섹션)"
+    },
+    {
+      "id": "macbook-apple-silicon-smc-integrated",
+      "claim": "Apple Silicon 프로세서(M1, M2, M3, M4 등) 탑재 맥북(2021년 이후 MacBook Pro, MacBook Air 등)은 전원 관리가 칩에 통합되어 있어서 별도의 SMC 수동 리셋 절차가 없으며, 강제 재시작이나 표준 재시작으로 전원 관리 문제가 자동 해결된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - If your Mac doesn't turn on",
+      "source_url": "https://support.apple.com/en-us/102623",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "맥북",
+        "years": "2021~ (Apple Silicon M1+)",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "macbook-magsafe-charging-indicator",
+      "claim": "MagSafe 포트를 사용하는 맥북(2021년 MacBook Pro 14/16인치 이후, 2024년 MacBook Air 등)의 충전 상태는 MagSafe 커넥터의 LED 색상으로 표시되며, 주황색/황색은 충전 중, 녹색은 충전 완료를 의미한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - If your MagSafe cable or power adapter isn't working",
+      "source_url": "https://support.apple.com/en-us/102372",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "맥북",
+        "years": "2021~ (MagSafe 탑재)",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "macbook-usb-c-charging-models",
+      "claim": "USB-C 포트로 충전하는 맥북(2015~2020년대 초 MacBook Air/Pro)은 Apple 공식 USB-C 전원 어댑터를 사용해야 하며, 호환 가능한 고전력 USB-C 어댑터(예: iPad Pro, Mac 어댑터)도 사용 가능하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - If your USB-C power adapter isn't charging your Mac laptop",
+      "source_url": "https://support.apple.com/en-us/102464",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "맥북",
+        "years": "2015~2020",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "macbook-charging-cable-connector-check",
+      "claim": "맥북이 충전되지 않을 때 첫 확인 사항은 MagSafe 또는 USB-C 포트와 케이블에 먼지, 보풀, 손상이 없는지 육안으로 검사하는 것이다. 포트 내부에 금속 입자나 이물질이 있는지도 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - If your MagSafe cable or power adapter isn't working",
+      "source_url": "https://support.apple.com/en-us/102372",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "맥북 전 라인",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "포트 청소 시 금속 도구나 물 사용은 절대 금지. 압축 공기도 내부 부품 손상 위험이 있으므로 피할 것"
+    },
+    {
+      "id": "macbook-charging-port-power-cycle",
+      "claim": "맥북이 충전되지 않을 때 포트 재설정을 위해 전원 어댑터를 콘센트에서 분리한 후 약 30초 대기했다가 다시 연결하고, 맥북을 종료한 후 약 30초 대기했다가 다시 전원을 켠다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - If your USB-C power adapter isn't charging your Mac laptop",
+      "source_url": "https://support.apple.com/en-us/102464",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "맥북",
+        "years": "2015~2020 (USB-C)",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "macbook-optimized-battery-charging",
+      "claim": "macOS Catalina 10.15.5 이후 버전 탑재 맥북은 '최적화된 배터리 충전(Optimized Battery Charging)' 기능을 지원하며, 이 기능이 활성화되면 배터리 수명을 늘리기 위해 배터리를 80% 이상 충전하지 않을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - About Optimized Battery Charging and Charge Limit on Mac",
+      "source_url": "https://support.apple.com/en-us/102338",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "맥북 전 라인",
+        "years": "2019~",
+        "region": "글로벌"
+      },
+      "caution": "최적화된 배터리 충전이 활성화되면 전원을 연결해도 80% 이상 충전되지 않을 수 있으므로, 필요시 설정에서 해제할 수 있다",
+      "cautionSource": "Apple Support - About Optimized Battery Charging and Charge Limit on Mac"
+    },
+    {
+      "id": "macbook-battery-cycle-count-check",
+      "claim": "맥북의 배터리 사이클 횟수는 Option 키를 누른 상태에서 Apple 메뉴를 클릭하고 '시스템 정보(System Information)' 또는 '시스템 리포트(System Report)'를 선택한 후 '전원(Power)' 섹션에서 '사이클 개수(Cycle Count)'를 확인한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - Determine battery cycle count for Mac laptops",
+      "source_url": "https://support.apple.com/en-us/102888",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "맥북 전 라인",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "macbook-battery-max-capacity-replacement-threshold",
+      "claim": "맥북 배터리는 최대 사이클 수에서 원래 용량의 최대 80%를 유지하도록 설계되었으며, 배터리 성능이 이보다 떨어지면 교체가 권장된다. 사이클 수는 배터리 상태 측정의 중요한 지표다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - Determine battery cycle count for Mac laptops",
+      "source_url": "https://support.apple.com/en-us/102888",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "맥북 전 라인",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "macbook-recovery-mode-apple-silicon",
+      "claim": "Apple Silicon 맥북(M1 이상)의 복구 모드 진입은 전원을 완전히 끈 후 전원 버튼을 길게 누르고 있으면, '시동 옵션 로드(Loading startup options)' 화면이 나타나고 복구 옵션 아이콘이 보일 때까지 계속 누르고 있다가 원하는 옵션을 선택한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - How to start up from macOS Recovery",
+      "source_url": "https://support.apple.com/en-us/102518",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "맥북",
+        "years": "2021~ (Apple Silicon M1+)",
+        "region": "글로벌"
+      },
+      "caution": "Apple Silicon 맥북의 배터리가 10% 이하이고 전원에 연결되지 않은 상태에서는 '시동 옵션 로드' 화면이 표시되지 않을 수 있으므로, 먼저 충전한 후 시도할 것",
+      "cautionSource": "Apple Support - How to start up from macOS Recovery (Apple Silicon 배터리 요구사항)"
+    },
+    {
+      "id": "macbook-recovery-mode-intel",
+      "claim": "Intel 프로세서 맥북(2020년 이전 모델)의 복구 모드 진입은 전원을 켠 직후 Command(⌘) + R 키를 길게 누르고 있으면 복구 유틸리티가 로드되고 Recovery 옵션이 표시된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - How to start up from macOS Recovery",
+      "source_url": "https://support.apple.com/en-us/102518",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "맥북",
+        "years": "~2020 (Intel)",
+        "region": "글로벌"
+      },
+      "caution": "Intel 맥북과 Apple Silicon 맥북의 복구 모드 진입 방법은 완전히 다르다. 자신의 맥북 칩 종류를 확인한 후 해당 절차를 수행할 것",
+      "cautionSource": "Apple Support - How to start up from macOS Recovery (복구 모드 진입 방법 분기)"
+    },
+    {
+      "id": "macbook-overheating-external-monitor-check",
+      "claim": "맥북 화면이 나오지 않을 때 Thunderbolt, USB-C, HDMI 등으로 외부 모니터를 연결하여 화면이 나오는지 확인해야 한다. 외부 모니터에만 화면이 나오면 맥북 내장 디스플레이 부품 고장으로 판단된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - If your Mac doesn't start up all the way",
+      "source_url": "https://support.apple.com/en-us/102675",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "맥북 전 라인",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "macbook-operating-temperature-range",
+      "claim": "맥북의 정상 작동 환경 온도 범위는 섭씨 10°C ~ 35°C이며, 이 범위를 벗어나면 성능 저하, 충전 지연, 자동 종료 등이 발생할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - If your Mac gets too hot",
+      "source_url": "https://support.apple.com/en-us/102601",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "맥북 전 라인",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "macbook-external-device-disconnect-startup",
+      "claim": "맥북이 시동 시 Apple 로고에서 멈추거나 부팅이 안 될 때는 USB, SD 카드, 외장 하드드라이브, 프린터 등 연결된 모든 외부 장치를 분리한 후 재시동을 시도해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support - If your Mac doesn't start up all the way",
+      "source_url": "https://support.apple.com/en-us/102675",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "맥북 전 라인",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      }
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "topic": "스탠드형 선풍기·서큘레이터 자가점검 (전원, 날개 회전, 소음, 모터 과열)",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "portable-fan-battery-fire-risk",
+      "why": "휴대용 선풍기 배터리 팩트. 스탠드형 선풍기는 배터리 미탑재로 대상 범위 상이"
+    },
+    {
+      "id": "motor-type-noise-difference",
+      "why": "휴대용 선풍기 DC/BLDC 모터 팩트. 스탠드형은 주로 AC 모터 사용으로 비교 대상 모터 계열 다름"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "fan-power-not-on-checklist",
+      "claim": "선풍기 전원이 켜지지 않을 때는 먼저 전원 차단기(누전차단기) 상태, 리모컨 배터리, 버튼 방식(터치 vs 푸시)을 확인한 후, 전원 코드를 1분간 뽑았다가 다시 연결하는 리셋을 시도해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - 선풍기 버튼 작동이 안됩니다(solution/2421851)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/2421851",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "스탠드형·서큘레이터 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "터치 버튼 제품은 손가락 앞부분으로만 터치해야 하며, 손톱으로 누르면 작동하지 않는다. 일시적 오작동일 수 있으므로 리셋 후에도 증상이 동일하면 선풍기 내부 부품 이상일 수 있다.",
+      "cautionSource": "삼성전자서비스 터치 버튼 작동 방식"
+    },
+    {
+      "id": "remote-control-battery-cr2032",
+      "claim": "선풍기 리모컨 배터리는 CR 2032 타입이며, 교체할 때는 동전으로 배터리 커버를 시계 방향으로 열고 양극(+)이 위를 향하도록 끼운 후 반시계 방향으로 닫아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - 서큘레이터 리모컨 작동이 안돼요(solution/26013)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/26013",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "선풍기",
+        "line": "리모컨 탑재 서큘레이터(SFN-N 시리즈)",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "배터리 방전이 가장 흔한 원인이다. 배터리 교체 후에도 리모컨이 작동하지 않으면, 스마트폰 카메라로 리모컨 상단 LED를 비추었을 때 불빛이 보이는지 확인해야 한다. 불빛이 보이면 본체 수신부 이상, 보이지 않으면 리모컨 고장일 수 있다.",
+      "cautionSource": "삼성 리모컨 배터리 교체 가이드"
+    },
+    {
+      "id": "fan-blade-slow-rotation-lubrication",
+      "claim": "선풍기 날개가 느리게 돌거나 웅 소리가 나면서 멈춰 있는 증상은 모터 축의 윤활유 부족이 주요 원인이며, WD-40 같은 윤활제를 모터 축 틈새에 몇 방울 떨어뜨리면 대부분 해결된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "선풍기 자가수리 가이드 / 커뮤니티 보수 사례",
+      "source_url": "https://www.ihee.com/593",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "스탠드형·서큘레이터 전 모델",
+        "years": "3년 이상 사용 제품",
+        "region": "KR"
+      },
+      "caution": "윤활제를 분사할 때 모터 내부 전자석 코일에 기름이 묻으면 절연이 손상되므로, 반드시 모터 축 연결 부분에만 집중해서 분사해야 한다. 완전히 개선되지 않으면 모터 뒤쪽을 열어 그리스를 바르는 정비가 필요할 수 있다.",
+      "cautionSource": "선풍기 모터 윤활 방법 가이드"
+    },
+    {
+      "id": "blade-rotation-dust-accumulation",
+      "claim": "선풍기 날개가 안 돌거나 회전이 불량할 때 다른 원인은 모터 커버 주변에 쌓인 먼지로 공기 흐름이 차단되거나, 회전축이 먼지로 막혀 있는 것이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "선풍기 고장 자가 진단 커뮤니티",
+      "source_url": "https://437.howtocenter.co.kr/entry/%EC%97%AC%EB%A6%84%EC%B2%A0-%ED%95%84%EC%88%98%ED%92%88-%EC%84%A0%ED%92%8D%EA%B8%B0-%EA%B3%A0%EC%9E%A5-%EC%A0%84%EB%AC%B8%EA%B0%80-%EC%97%B0%EC%97%AC-%EC%97%98%EC%97%90-%EB%B0%94%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "스탠드형·서큘레이터 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "청소할 때는 반드시 전원 코드를 콘센트에서 뽑아야 한다. 콘센트에 꽂힌 상태에서 날개를 돌리면 갑자기 작동하여 손을 다칠 수 있다. 회전축 주변의 먼지를 제거한 후 윤활제를 분사하면 회전 성능이 크게 개선된다.",
+      "cautionSource": "선풍기 안전한 분해 청소 절차"
+    },
+    {
+      "id": "fan-motor-overheating-burning-smell-fire-risk",
+      "claim": "선풍기에서 타는 냄새가 나거나 모터 부위가 뜨거워지는 것은 모터 윤활유 산화·열화로 인한 과열 또는 먼지로 인한 열 방출 차단이 원인이며, 이는 화재 위험이 높은 상태이므로 즉시 전원 코드를 콘센트에서 뽑아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소방청·여름철 생활용품 화재 안전주의보 / 전라매일 보도",
+      "source_url": "https://www.lovelyday7.com/2026/07/2026-summer-fan-circulator-fire-prevention.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "스탠드형·서큘레이터 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "타는 냄새는 절대 무시하면 안 된다. 전류 쇼트로 인한 미세 불꽃이 기름때 섞인 먼지를 도화선으로 하여 화재로 번질 수 있다. 타는 냄새가 나면 즉시 전원을 끊고 최소 24시간 이상 사용하지 말고, 가능하면 서비스센터에 문의하거나 교체를 검토해야 한다.",
+      "cautionSource": "소방안전 화재 위험 경고"
+    },
+    {
+      "id": "fan-timer-heat-dissipation-schedule",
+      "claim": "선풍기 화재를 예방하기 위해서는 타이머 기능을 활용하여 최소 3시간 가동 후 20~30분간 모터가 스스로 식을 수 있는 오프(OFF) 시간을 예약하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국경제 - 에어컨·선풍기 화재 조심 타이머로 과열 방지",
+      "source_url": "https://www.hankyung.com/article/202006181981Y",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "타이머 기능 탑재 모든 스탠드형·서큘레이터",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "24시간 연속 가동은 모터 과열의 가장 큰 원인이다. 밤새 사용해야 할 경우 반드시 3시간 타이머 후 20~30분 쉬기를 반복하는 스케줄로 설정해야 한다.",
+      "cautionSource": "소방청 여름철 화재 예방 안내"
+    },
+    {
+      "id": "swing-rotation-button-mechanism",
+      "claim": "선풍기의 좌우 회전(스윙) 기능은 모터 뒤쪽 또는 아래쪽 본체에 있는 회전 버튼으로 제어되며, 버튼을 누르면 회전 시작, 한 번 더 누르면 한 방향으로 고정된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "선풍기 자가 관리 커뮤니티",
+      "source_url": "https://woori.to/entry/%EC%84%A0%ED%92%8D%EA%B8%B0-%EB%AA%A9%EC%9D%B4-%EC%95%88-%EB%8F%8C%EC%95%84%EA%B0%88-%EB%95%8C",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "스윙 기능 탑재 스탠드형·서큘레이터",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "선풍기 머리를 손으로 억지로 돌리면 안 된다. 내부 회전 기어에 직접 힘이 전달되어 작은 문제를 더 크게 만들 수 있다. 버튼이 중간에 걸리는 경우, 전원 코드를 뽑은 상태에서 버튼을 천천히 위아래로 움직여 보는 것이 좋다.",
+      "cautionSource": "선풍기 스윙 기구 안전한 조작 방법"
+    },
+    {
+      "id": "swing-malfunction-bearing-lubrication",
+      "claim": "선풍기 스윙이 작동하지 않을 때 원인은 회전축 베어링의 윤활제 고착 또는 버튼 내부 연결 불량이며, 전원을 뺀 상태에서 버튼을 반복 조작하거나 베어링에 윤활제를 도포하면 대부분 복구된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "선풍기 자가수리 커뮤니티 보고",
+      "source_url": "https://woori.to/entry/%EC%84%A0%ED%92%8D%EA%B8%B0-%EB%AA%A9%EC%9D%B4-%EC%95%88-%EB%8F%8C%EC%95%84%EA%B0%88-%EB%95%8C",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "회전축 베어링 탑재 스탠드형",
+        "years": "3년 이상 사용 제품",
+        "region": "KR"
+      },
+      "caution": "콘덴서 고장도 회전축 불량으로 오인될 수 있다. 윤활제 도포 후에도 작동하지 않으면 콘덴서 교체가 필요할 수 있으므로 전문 수리를 받아야 한다.",
+      "cautionSource": "선풍기 회전 불량 원인 분류"
+    },
+    {
+      "id": "fan-noise-increase-causes",
+      "claim": "선풍기의 소음이 평소보다 증가했을 때 주요 원인은 프로펠러 주변의 먼지 축적으로 공기 흐름이 차단되거나, 모터 베어링 마모로 인한 진동이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 공기청정기 소음 관련 안내(동일한 풍류 원리 적용)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/205252",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "스탠드형·서큘레이터 전 모델",
+        "years": "2년 이상 사용 제품",
+        "region": "KR"
+      },
+      "caution": "소음 증가는 단순한 불편함을 넘어 모터 과부하의 신호일 수 있다. 먼저 프로펠러와 모터 커버 주변을 청소하고, 그 후에도 소음이 지속되면 모터 베어링 마모이므로 전문가 점검을 받아야 한다.",
+      "cautionSource": "선풍기 소음 원인 진단 절차"
+    },
+    {
+      "id": "fan-motor-ac-vs-dc-performance",
+      "claim": "스탠드형 선풍기의 모터는 주로 AC 모터(약 50W)를 사용하며, 최근 고급형에는 BLDC 모터(약 30W)가 탑재되고 있다. AC 모터는 강한 바람과 저가격이 장점이나 소음이 크고, BLDC는 소음이 적고 전력소비가 적으나 바람세기가 약하고 고가다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "선풍기 구매가이드 / 제품 비교 분석",
+      "source_url": "https://nosearch.com/contents/guide/season/electric_fan",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "AC 모터 vs BLDC 모터 스탠드형",
+        "years": "2024~현행",
+        "region": "KR"
+      },
+      "caution": "BLDC 모터는 초미풍(2~5W) 설정 시에만 매우 조용하며, 중풍 이상에서는 공기 흡입음으로 인해 AC 모터 대비 소음이 더 클 수 있다. 구매 전에 제품 리뷰에서 실제 사용 소음을 확인해야 한다.",
+      "cautionSource": "선풍기 모터별 성능 비교 분석"
+    },
+    {
+      "id": "fan-disassembly-cleaning-safety",
+      "claim": "선풍기를 분해하여 청소할 때는 반드시 전원 코드를 콘센트에서 뽑은 후 진행해야 하며, 모터 커버를 열어 회전 기어의 먼지를 제거한 후 윤활제를 분사한다. 이때 전자석 코일에는 기름이 닿으면 안 되고, 모터 축 연결 부분에만 그리스를 발라야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "선풍기 안전한 분해·청소 가이드",
+      "source_url": "https://www.lovelyday7.com/2026/07/2026-summer-fan-circulator-fire-prevention.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "스탠드형·서큘레이터 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "전원 코드를 뽑은 상태에서도 회전 부품을 억지로 돌리면 내부 기계 장치에 손상을 줄 수 있다. 모터 축을 회전시켜 먼지를 제거할 때는 천천히 조심스럽게 조작해야 한다. 확신이 없으면 전문 수리소를 찾는 것이 낫다.",
+      "cautionSource": "선풍기 자가수리 안전주의사항"
+    },
+    {
+      "id": "circulator-fixed-angle-swing-toggle",
+      "claim": "서큘레이터의 고정 각도는 스윙 버튼을 누르면 회전하기 시작하고, 다시 누르면 현재 각도에서 고정되는 방식이다. 고정된 각도는 제품 구조에 따라 상향 30도, 수평, 하향 30도 등으로 자유롭게 조절할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "서큘레이터 사용설명서 / 제품 리뷰",
+      "source_url": "https://content.vendict.co.kr/80e9ea3f-b082-8302-9641-01c82bda604e",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "서큘레이터",
+        "line": "스윙 기능 탑재 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "서큘레이터는 목 부분에 각도 고정 기능이 있어 방향을 미세하게 조절할 수 있다. 제품마다 고정할 수 있는 각도 범위가 다르므로 제품 설명서를 확인해야 한다.",
+      "cautionSource": "서큘레이터 각도 조절 방식"
+    },
+    {
+      "id": "fan-blade-cleaning-power-cord-mandatory",
+      "claim": "선풍기 날개나 가드를 청소할 때는 반드시 전원 코드를 콘센트에서 뽑은 후 진행해야 한다. 콘센트에 꽂혀 있는 상태에서 청소하면 갑자기 작동하여 손이나 손가락이 회전하는 날개에 끼일 수 있어 심각한 상해를 입을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "선풍기 안전 청소 절차 / 소비자 안전주의보",
+      "source_url": "https://www.lovelyday7.com/2026/07/2026-summer-fan-circulator-fire-prevention.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "스탠드형·서큘레이터 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "전원 코드를 뽑는 것만으로는 부족할 수 있다. 일부 제품은 콘센트를 다시 꽂으면 자동 시작 기능이 있을 수 있으므로, 청소 중에는 가족 구성원에게 선풍기를 사용하지 않도록 알려야 한다.",
+      "cautionSource": "선풍기 안전한 청소 및 유지보수 지침"
+    }
+  ]
+}

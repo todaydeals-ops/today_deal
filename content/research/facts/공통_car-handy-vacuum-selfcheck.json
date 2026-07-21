@@ -1,0 +1,182 @@
+{
+  "topic": "차량용·핸디형 무선청소기 흡입 약함·충전 불량·배터리 급감 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "battery-charging-terminal-contact-cleaning",
+    "battery-overheating-danger-external-shock",
+    "battery-safe-charge-level-storage"
+  ],
+  "declined_facts": [
+    {
+      "id": "black-and-decker-official-manual",
+      "why": "블랙앤덱커 차량용 청소기 공식 가이드 검색했으나 한국어 공식 문서를 찾을 수 없음. 제조사 공식 채널 접근 불가."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "vehicle-cigarette-lighter-power-types",
+      "claim": "차량 시거잭의 전원 방식은 시동을 걸었을 때만 전원이 들어오는 '액세서리 전원' 방식과 시동이 꺼져 있어도 항상 전기가 흐르는 '상시 전원' 방식, 두 가지로 나뉜다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "나무위키 시거잭 항목 / 자동차 커뮤니티",
+      "source_url": "https://namu.wiki/w/%EC%8B%9C%EA%B1%B0%EC%9E%AD",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량용 충전기",
+        "line": "모든 자동차 시거잭",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "차종·연식에 따라 시거잭 전원 타입이 다르므로 확인 필수",
+      "cautionSource": "자동차 커뮤니티 보고"
+    },
+    {
+      "id": "vehicle-charging-when-engine-off-verification",
+      "claim": "차량용 청소기 충전기의 전원 타입을 확인하려면 시동을 끈 상태에서 충전 케이블을 시거잭에 연결해보면 된다 — 충전되면 상시 전원, 충전 안 되면 액세서리 전원이다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "a-ha.io 자동차 Q&A 커뮤니티",
+      "source_url": "https://www.a-ha.io/questions/4bd5a5d20ca2ff6ea2a0b25ecbadd34e",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량용 충전기",
+        "line": "모든 시거잭 충전기",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "상시 전원인 경우 시동을 끈 상태에서 장시간 사용하면 차량 배터리 방전 위험이 있다. 배터리 방전 우려가 있으면 스위치가 달린 멀티 시거잭 사용 권장.",
+      "cautionSource": "자동차 충전기 관리 커뮤니티"
+    },
+    {
+      "id": "handy-filter-drying-complete-required",
+      "claim": "핸디형 무선청소기 필터를 물로 세척한 후 불완전하게 건조하면 필터의 미세 구멍이 막혀 성능이 떨어지고 냄새가 날 수 있으므로, 반드시 완전히 말린 후 조립해야 한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "필터 청소 관리 Q&A 커뮤니티 / Philips 제조사 가이드",
+      "source_url": "https://www.a-ha.io/questions/4543c00cd9daf051aee59e6e4e57cd2b",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "핸디형 무선청소기",
+        "line": "모든 물세척 가능 필터",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "물기가 남아 있으면 곰팡이 발생·냄새 유발·모터 손상 위험",
+      "cautionSource": "필터 청소 관리 가이드"
+    },
+    {
+      "id": "handy-wet-debris-motor-damage",
+      "claim": "핸디형 청소기에서 젖은 이물질(습기 섞인 흙, 끈적한 물질, 액체류)을 흡입하면 내부 부품 손상·곰팡이 번식·악취 발생·전기 안전 문제를 초래할 수 있으며, 특히 젖은 이물질로 인한 막힘이 모터에 과부하를 야기하여 손상을 초래한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제조사 안내 및 사용자 안전 가이드",
+      "source_url": "https://www.asiae.co.kr/article/2025083115105766666",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "핸디형 무선청소기",
+        "line": "모든 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "젖은 이물질 흡입 금지. 과부하로 모터 보호 기능이 작동하면 기기가 일시적으로 작동 정지될 수 있음.",
+      "cautionSource": "제조사 안전 가이드"
+    },
+    {
+      "id": "handy-battery-depletion-filter-maintenance",
+      "claim": "핸디형 청소기에서 배터리가 빨리 소모되는 주요 원인은 먼지통과 필터 오염으로 인한 모터 과부하이며, 정기적으로 먼지통과 필터를 청소하면 모터 부담을 줄여 배터리 소모를 감소시킬 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "RHY 배터리 관리 가이드 / Black and Decker 공식 고객센터",
+      "source_url": "https://www.rhybattery.com/ko/news/troubleshooting-common-vacuum-cleaner-battery-problems.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "핸디형 무선청소기",
+        "line": "모든 소용량 배터리 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "청소기 내부 막힘(필터·호스·선택 구멍)이 배터리 급감의 가장 큰 원인이다. 배터리 성능 저하 전에 먼저 필터를 점검할 것.",
+      "cautionSource": "배터리 문제 해결 가이드"
+    },
+    {
+      "id": "handy-charging-20-30-percent-longevity",
+      "claim": "핸디형 청소기 배터리를 20~30% 남은 상태에서 충전하는 것이 배터리 수명 연장에 도움이 된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "무선청소기 배터리 관리 가이드",
+      "source_url": "https://www.rhybattery.com/ko/news/vacuum-cleaner-battery.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "핸디형 무선청소기",
+        "line": "리튬이온 배터리 전 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "완충 후에는 충전기를 즉시 분리해야 한다. 완충 상태로 장시간 연결하면 배터리 효율이 급속도로 떨어진다.",
+      "cautionSource": "배터리 수명 관리 기준"
+    },
+    {
+      "id": "handy-minimum-power-mode-battery-conservation",
+      "claim": "일상적인 청소는 최소 파워 모드로 하고, 강력 모드는 꼭 필요할 때만 사용하면 배터리 소모를 줄일 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "RHY 배터리 관리 가이드 / 무선청소기 배터리 유지 관리 가이드",
+      "source_url": "https://www.rhybattery.com/ko/news/vacuum-cleaner-battery-maintenance-dos-and-donts.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "핸디형 무선청소기",
+        "line": "모든 다중 모드 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "최대 모드는 배터리를 빠르게 소모하므로 전체 사용 시간이 크게 단축된다",
+      "cautionSource": "배터리 에너지 효율 관리 기준"
+    },
+    {
+      "id": "vehicle-charging-terminal-dust-cleaning-handy",
+      "claim": "핸디형 차량용 청소기가 충전되지 않을 때 가장 먼저 확인할 것은 충전 거치대와 본체의 충전 단자이며, 면봉이나 부드러운 천으로 먼지나 이물질을 제거하면 접촉이 회복될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 무선청소기 충전 불량 가이드 / 배터리 문제 해결",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40849",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "핸디형 무선청소기",
+        "line": "모든 배터리 착탈식 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "유기 용제(시너·솔벤트·아세톤)나 휘발성 용제는 사용하면 단자 손상을 초래한다. 마른 천이나 부드러운 솔만 사용할 것.",
+      "cautionSource": "제조사 청소기 관리 안내"
+    },
+    {
+      "id": "handy-battery-temperature-charging",
+      "claim": "핸디형 청소기 배터리가 충전되지 않을 때 배터리 온도가 너무 낮거나 높으면 충전 보호 회로가 작동하는 경우가 있으므로, 충전 전에 배터리 온도가 정상으로 돌아올 때까지 기다려야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "배터리 온도 관리 가이드 / 제조사 안내",
+      "source_url": "https://www.rhybattery.com/ko/news/troubleshooting-common-vacuum-cleaner-battery-problems.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "핸디형 무선청소기",
+        "line": "리튬이온 배터리 전 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "영하나 고온(40°C 이상) 환경에서는 배터리를 충전하지 말 것. 이상적 충전 온도는 10~25°C.",
+      "cautionSource": "리튬이온 배터리 안전 기준"
+    }
+  ]
+}

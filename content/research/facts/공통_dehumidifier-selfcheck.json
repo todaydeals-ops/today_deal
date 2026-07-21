@@ -1,0 +1,342 @@
+{
+  "topic": "제습기 자가점검: 물이 안 차임·제습 안 됨·냄새·고장 진단",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "compressed-dehumidifier-characteristics",
+    "desiccant-dehumidifier-characteristics",
+    "ideal-indoor-humidity-range",
+    "dehumidifier-condensation-drainage-options"
+  ],
+  "declined_facts": [
+    {
+      "id": "dehumidifier-electricity-cost-vs-aircon",
+      "why": "전기료 수치는 후기 출처(상업 사이트)라 신뢰도 낮음. 자가점검 주제와도 무관."
+    },
+    {
+      "id": "dehumidifier-power-consumption-vs-aircon",
+      "why": "구매 판단용(트렌드) 정보라 자가점검 주제와 무관."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "no-water-collection-humidity-setting-check",
+      "claim": "제습이 안 되고 물이 안 차는 첫 점검은 습도 설정 확인이며, 습도를 70% 이상으로 설정하면 자동 제습이 작동하지 않으므로 35~60% 범위로 조절해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위닉스 고객센터, 제습기 자가진단 가이드",
+      "source_url": "https://www.youtube.com/watch?v=Pm4cmdzKui8",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "일반형 제습기 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "no-water-collection-auto-dehumidify-check",
+      "claim": "제습기의 자동 제습 기능이 꺼져 있으면 물이 차지 않으므로, 자동 제습 활성화 여부를 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위닉스 고객센터, 제습기 자가진단 가이드",
+      "source_url": "https://www.youtube.com/watch?v=Pm4cmdzKui8",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "일반형 제습기 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "water-tank-float-sensor-positioning",
+      "claim": "위닉스 제습기에서 물이 안 차는 경우, 물통 비움 표시가 계속 뜨면 물통 내의 부레(플로트)가 정위치에 있는지 확인해야 하며, 청소 후 재조립 시 자석이 있는 부분이 센서 쪽으로 향하도록 주의해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위닉스 고객센터, 제습기 자가진단 가이드",
+      "source_url": "https://www.youtube.com/watch?v=Pm4cmdzKui8",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "일반형 제습기(부레식 센서)",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "부레의 방향이 센서와 제대로 정렬되지 않으면 센서가 작동하지 않으니 재설치 시 주의할 것."
+    },
+    {
+      "id": "water-tank-full-indicator-continuous",
+      "claim": "물통을 비운 후에도 '물 가득 참' 또는 '물통 비움' 표시가 계속 나타나는 경우, 물통 내부의 수위 센서(플로트)가 고정되어 움직이지 않는 것이 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 전자 고객지원, 제습기 만수 표시 문제",
+      "source_url": "https://www.lge.co.kr/support/solutions-1780874",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "물통식 제습기 전체(플로트식 센서)",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "water-tank-sensor-float-reset",
+      "claim": "물통 센서가 고정된 경우, 물통을 제거한 후 위아래로 가볍게 흔들어 센서의 움직임을 복원한 뒤 다시 장착하면 대부분 해결되며, 3분 정도 기다리면 자동으로 재운전된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 전자 고객지원, 제습기 만수 표시 문제",
+      "source_url": "https://www.lge.co.kr/support/solutions-1780874",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "물통식 제습기 전체(플로트식 센서)",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "compressed-dehumidifier-freezing-below-18-celsius",
+      "claim": "압축식(냉방식) 제습기에서 18°C 이하의 저온 환경에서는 증발기의 응축수가 얼어붙는 결빙 현상이 발생하여 제습 성능이 떨어지는데, 이는 고장이 아니라 저온 환경에서의 정상적인 작동 특성이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제습기 원리 및 저온 환경 특성 기술자료",
+      "source_url": "https://www.parkooair.com/kor/dehumidification/show-664.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "압축식 제습기",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "18°C 이하에서 제습되지 않는 것처럼 보이면, 제상(除霜)운전이 자동 작동 중이거나 설정 습도에 이미 도달했을 가능성을 먼저 확인할 것. 온도가 올라가면 성능은 정상 수준으로 회복된다.",
+      "cautionSource": "압축식 제습기 저온 결빙 원리"
+    },
+    {
+      "id": "compressed-dehumidifier-defrost-operation",
+      "claim": "압축식 제습기가 결빙을 방지하기 위해 제상(除霜) 운전 중이면 제습이 일시적으로 멈추는데, 이는 증발기를 녹이는 정상 작동이며 운전이 끝나면 다시 제습한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제습기 원리 및 저온 환경 특성 기술자료",
+      "source_url": "https://www.parkooair.com/kor/dehumidification/show-664.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "압축식 제습기",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "filter-cleaning-frequency-monthly",
+      "claim": "제습기 극세필터는 월 1회 청소 주기를 권장하며, 진공 청소기나 부드러운 솔로 표면 먼지를 제거한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 전자 고객지원, 필터 청소 방법 및 주기",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150464095311",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "일반형 제습기 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "40°C 이상의 뜨거운 물은 사용 금지. 미지근한 물과 중성세제로만 세척 가능.",
+      "cautionSource": "LG 제습기 매뉴얼"
+    },
+    {
+      "id": "filter-odor-cause-heat-exchanger",
+      "claim": "필터와 물통을 청소해도 냄새가 계속 나면, 원인은 습한 공기가 직접 닿는 냉각핀(열교환기)의 곰팡이이며, 이 경우 자가 청소가 어려우므로 서비스센터 점검이 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 전자 고객지원, 제습기 냄새 해결 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-1780694",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "일반형 제습기 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "auto-dry-mode-heat-exchanger-protection",
+      "claim": "LG 제습기의 자동 건조 기능(CO 표시)은 운전 종료 후 팬을 계속 돌려 열교환기의 잔류 수분을 제거하여 곰팡이 발생을 예방한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 전자 고객지원, 제습기 냄새 해결 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-1780694",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "LG 제습기(자동 건조 기능 탑재 모델)",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "자동 건조 모드는 모드 버튼을 3초 이상 길게 눌러 활성화한다.",
+      "cautionSource": "LG 제습기 사용설명서"
+    },
+    {
+      "id": "water-tank-cleaning-mold-prevention",
+      "claim": "물통을 주기적으로 세척하고 완전히 건조한 뒤 사용해야 냄새와 곰팡이를 예방할 수 있으며, 덜 마른 상태로 장착하면 곰팡이의 원인이 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위닉스·LG 제습기 관리 가이드",
+      "source_url": "https://useful.llily.co.kr/%EC%9C%84%EB%8B%89%EC%8A%A4-%EC%A0%9C%EC%8A%B5%EA%B8%B0-%ED%95%84%ED%84%B0-%EC%B2%AD%EC%86%8C-%EB%B0%A9%EB%B2%95-%EC%A3%BC%EA%B8%B0%C2%B7%EC%84%B8%EC%B2%99-%EC%88%9C%EC%84%9C%C2%B7%EA%B5%90",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "일반형 제습기 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "filter-washing-frequency-1-2-months",
+      "claim": "제습기 필터는 1~2개월에 한 번씩 물통과 함께 세척하는 것이 권장되며, 오염이 심할 때는 중성세제를 소량 사용할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제습기 필터 청소 관리 가이드",
+      "source_url": "https://life.utrip.kr/p/%EC%A0%9C%EC%8A%B5%EA%B8%B0-%ED%95%84%ED%84%B0-%EC%B2%AD%EC%86%8C-%EB%B8%8C%EB%9E%9C%EB%93%9C%EB%B3%84-%EA%BF%80%ED%8C%81-%EC%B4%9D%EC%A0%95%EB%A6%AC",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "일반형 제습기 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "세척 후 그늘지고 바람이 잘 통하는 곳에서 완전히 건조한 후 재장착할 것."
+    },
+    {
+      "id": "auto-stop-humidity-setting-reached",
+      "claim": "제습기는 설정한 습도에 도달하면 압축기만 정지하며, 실내 습도가 다시 올라가면 자동으로 재운전된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 제습기 스마트 제습(자동 제습) 기능 안내",
+      "source_url": "https://www.lge.co.kr/support/solutions-1781105",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "일반형 제습기 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "auto-stop-water-tank-full",
+      "claim": "물통이 가득 차면 제습기는 자동으로 작동을 멈추며, 만수 표시등이 켜지고 경보음이 3회 울린다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제습기 자동 정지 기능 안내",
+      "source_url": "https://life.utrip.kr/p/%EC%A0%9C%EC%8A%B5%EA%B8%B0-%ED%95%84%ED%84%B0-%EC%B2%AD%EC%86%8C-%EB%B8%8C%EB%9E%9C%EB%93%9C%EB%B3%84-%EA%BF%80%ED%8C%81-%EC%B4%9D%EC%A0%95%EB%A6%AC",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "물통식 제습기 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "만수 용량은 물통 넘침 방지를 위해 실제 물통 용량보다 5~20% 적게 설정된다.",
+      "cautionSource": "제습기 제조사 기술 사양"
+    },
+    {
+      "id": "compressed-dehumidifier-noise-level-normal",
+      "claim": "제습기의 정상 작동 소음은 강풍 시 약 50dB 이상, 약풍 시 약 40dB 정도이며, 압축기가 울리는 '우우웅~' 소음과 진동이 발생하는 것은 정상 작동이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국소비자원 제습기 품질 비교 시험 결과",
+      "source_url": "https://www.kca.go.kr/smartconsumer/board/download.do?menukey=7301&fno=10043261&bid=00000146&did=1003707178",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "압축식 제습기",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "소음이 60dB을 초과하거나 평소보다 현저히 커진 경우에만 이상으로 판단할 것."
+    },
+    {
+      "id": "dehumidifier-noise-increase-filter-dust",
+      "claim": "제습기의 소음과 진동이 증가하는 원인은 필터에 먼지가 쌓여 팬에 부하가 걸리거나, 제습기를 직접 바닥에 두어 진동이 울려 증폭되는 경우이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "제습기 소음 비교 정보",
+      "source_url": "https://lucky.goanywherewithmykid.com/entry/%EC%A0%9C%EC%8A%B5%EA%B8%B0-%EC%86%8C%EC%9D%8C-%EB%B9%84%EA%B5%90-%EC%A0%95%EB%A6%AC",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "일반형 제습기 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "소음 감소를 위해 바닥 진동 방지 매트를 사용하고, 벽과 최소 20cm 이상의 간격을 유지할 것.",
+      "cautionSource": "제습기 소음 관리 가이드"
+    },
+    {
+      "id": "desiccant-dehumidifier-low-noise",
+      "claim": "데시칸트식(건조식) 제습기는 히터로 수분을 제거하는 방식이라 압축식과 달리 압축기 소음이 없어 소음이 적은 것이 특징이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제습기 원리 및 제습 방식 비교",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%A0%9C%EC%8A%B5%EA%B8%B0_%EC%9B%90%EB%A6%AC_%EB%B0%8F_%EC%A0%9C%EC%8A%B5_%EB%B0%A9%EC%8B%9D_%EB%B9%84%EA%B5%90!_%EC%95%95%EC%B6%95%C2%B7%EA%B1%B4%EC%A1%B0%C2%B7%ED%8E%A0%ED%8B%B0%EC%96%B4_3%EA%B0%80%EC%A7%80_%EC%A0%9C%EC%8A%B5_%EC%9B%90%EB%A6%AC_%ED%95%9C%EB%88%88%EC%97%90_%EB%B3%B4%EA%B8%B0-58882",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "데시칸트식 제습기",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "humidity-sensor-malfunction-check",
+      "claim": "제습기가 제대로 작동하려면 습도 센서가 정확히 작동해야 하며, 센서가 고장난 경우 제습기는 제대로 작동하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위닉스 고객센터, 제습기 자가진단 가이드",
+      "source_url": "https://www.youtube.com/watch?v=Pm4cmdzKui8",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "일반형 제습기 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "seasonal-humidity-low-winter-spring-autumn",
+      "claim": "건조한 봄, 가을, 겨울철에 자동 제습으로 사용할 경우 실내 습도가 충분히 높지 않으면 물통에 물이 조금만 생기거나 안 생길 수 있으므로, 필요 시 연속 제습 모드로 전환하면 더 효율적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위닉스 고객센터, 제습기 자가진단 가이드",
+      "source_url": "https://www.youtube.com/watch?v=Pm4cmdzKui8",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "제습기",
+        "line": "일반형 제습기 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    }
+  ]
+}

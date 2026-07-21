@@ -1,0 +1,379 @@
+{
+  "topic": "SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드",
+  "brand": "공통",
+  "article": "스마트가이드",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "usb-30-backward-compatible-with-20",
+    "usb-port-color-identification",
+    "sdcard-compatibility-requirement",
+    "dashcam-memory-card-lifespan",
+    "dashcam-summer-heat-memory-card-damage",
+    "file-system-format-exfat-overview",
+    "file-system-format-fat32-overview"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sdcard-speed-class-definition",
+      "claim": "Speed Class는 SD카드의 최소 쓰기 속도를 보장하는 가장 기초적인 속도 표기로, Class 2는 최소 2MB/s, Class 10은 최소 10MB/s의 쓰기 속도를 의미한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kingston Technology · microSD 카드 명명 규칙 가이드",
+      "source_url": "https://www.kingston.com/en/blog/personal-storage/microsd-sd-memory-card-naming-conventions",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장매체",
+        "line": "SD카드·microSD 전 규격",
+        "years": "2000~현행",
+        "region": "글로벌"
+      },
+      "caution": "Speed Class는 오래된 표기 체계이며, 최신 카드는 UHS, Video Speed Class(V)로 표기하는 것이 일반적이다.",
+      "cautionSource": null
+    },
+    {
+      "id": "uhs-speed-class-definition",
+      "claim": "UHS(Ultra High Speed) Speed Class는 최신 속도 표기로, U1은 최소 10MB/s, U3은 최소 30MB/s의 쓰기 속도를 보장한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kingston Technology · 메모리 카드 속도 클래스 가이드",
+      "source_url": "https://www.kingston.com/en/blog/personal-storage/memory-card-speed-classes",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장매체",
+        "line": "SD카드·microSD SDHC, SDXC",
+        "years": "2010~현행",
+        "region": "글로벌"
+      },
+      "caution": "U3는 Video Speed Class V30과 동일하게 최소 30MB/s를 의미하지만, V 표기가 4K 비디오용으로 더 명확하다.",
+      "cautionSource": "Kingston Technology · 메모리 카드 속도 클래스 가이드"
+    },
+    {
+      "id": "video-speed-class-definition",
+      "claim": "Video Speed Class(V)는 4K 영상 촬영, 블랙박스, 드론 같은 연속 녹화 용도를 위한 표기로, V10은 최소 10MB/s, V30은 최소 30MB/s, V60은 최소 60MB/s, V90은 최소 90MB/s를 보장한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kingston Technology · 메모리 카드 속도 클래스 가이드",
+      "source_url": "https://www.kingston.com/en/blog/personal-storage/memory-card-speed-classes",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장매체",
+        "line": "SD카드·microSD",
+        "years": "2013~현행",
+        "region": "글로벌"
+      },
+      "caution": "V30과 U3는 동일하게 최소 30MB/s를 의미한다. 두 표기 중 하나라도 있으면 조건을 만족한다.",
+      "cautionSource": "Kingston Technology · 메모리 카드 속도 클래스 가이드"
+    },
+    {
+      "id": "app-performance-class-definition",
+      "claim": "App Performance Class(A)는 스마트폰에서 앱 설치·로딩 성능에 영향을 주며, A1은 최소 읽기 1500 IOPS와 쓰기 500 IOPS, A2는 최소 읽기 4000 IOPS와 쓰기 2000 IOPS를 보장한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kingston Technology · microSD 카드 명명 규칙 가이드",
+      "source_url": "https://www.kingston.com/en/blog/personal-storage/microsd-sd-memory-card-naming-conventions",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장매체",
+        "line": "SD카드·microSD",
+        "years": "2017~현행",
+        "region": "글로벌"
+      },
+      "caution": "A2는 A1보다 약 2.7배 빠른 쓰기 성능을 제공하지만, 스마트폰 일반 사용에는 A1도 충분하다.",
+      "cautionSource": "Kingston Technology · microSD 카드 명명 규칙 가이드"
+    },
+    {
+      "id": "read-write-speed-difference",
+      "claim": "SD카드 패키지의 큰 숫자(예: 170MB/s)는 최대 읽기 속도이지만, 실제 사용에서 중요한 것은 쓰기 속도(녹화·저장 속도)이며, Class·UHS·V 표기는 최소 쓰기 속도를 보장한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kingston Technology · 메모리 카드 속도 클래스 가이드",
+      "source_url": "https://www.kingston.com/en/blog/personal-storage/memory-card-speed-classes",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장매체",
+        "line": "SD카드·microSD",
+        "years": "2000~현행",
+        "region": "글로벌"
+      },
+      "caution": "소비자가 읽기 속도에만 주목하면 안 되며, 카메라·블랙박스는 반드시 쓰기 속도 규격을 확인해야 한다.",
+      "cautionSource": null
+    },
+    {
+      "id": "counterfeit-sd-card-appearance-check",
+      "claim": "정품 SD카드는 글씨가 선명하고 깔끔하지만, 가짜 카드는 글씨가 거칠고 흐리며, 뒷면 제조국 표기가 대만 등 이상한 곳으로 적혀있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "TP-Link 고객지원 · 가짜 microSD 카드 식별 가이드",
+      "source_url": "https://www.tp-link.com/kr/support/faq/2592/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장매체",
+        "line": "SD카드·microSD",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "외관만으로 판별하기는 어렵고, 의심되면 H2testw 같은 도구로 용량을 검증하는 것이 확실하다.",
+      "cautionSource": "TP-Link 공식 FAQ — 가짜 SD카드 판별 및 H2testw 용량 검증 안내"
+    },
+    {
+      "id": "h2testw-capacity-verification",
+      "claim": "가짜 SD카드의 용량 뻥튀기(예: 실제 32GB를 128GB로 표시)를 판별하려면 Windows용 무료 도구 H2testw를 사용하여 더미 파일로 테스트하며, '테스트 완료 오류 없음(Test finished without errors)'이 나타나면 정상이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "MERCUSYS 고객지원 · 가짜 메모리 카드 확인 방법",
+      "source_url": "https://www.mercusys.com/kr/faq-1169/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장매체",
+        "line": "SD카드·microSD·USB 메모리",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "H2testw 테스트는 시간이 걸리며(용량에 따라 수십 분~수 시간), 테스트 중 카드의 모든 데이터가 임시로 변경되지만 최종적으로 복원된다.",
+      "cautionSource": "https://www.mercusys.com/kr/faq-1169/"
+    },
+    {
+      "id": "counterfeit-sd-card-purchase-prevention",
+      "claim": "가짜 SD카드를 피하려면 Amazon, 공식 한국 대리점 등 공인 판매처에서 구매하고, 비정상적으로 저가인 제품과 중고·리퍼브 카드는 피해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "TP-Link 고객지원",
+      "source_url": "https://www.tp-link.com/kr/support/faq/2592/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장매체",
+        "line": "SD카드·microSD",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "온라인 마켓플레이스(알리, 아마존 로컬 판매자 등)의 저가 상품은 위험도가 높다.",
+      "cautionSource": null
+    },
+    {
+      "id": "4k-video-shooting-sd-card-requirement",
+      "claim": "4K 영상 촬영(카메라, 캠코더, 액션캠)에는 Video Speed Class V30, UHS U3 이상의 SD카드가 필수이며, 이는 최소 쓰기 속도 30MB/s를 보장하기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kingston Technology · 4K 비디오 촬영용 메모리 카드 선택 가이드",
+      "source_url": "https://www.kingston.com/en/blog/personal-storage/choose-storage-4k",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장매체",
+        "line": "SD카드",
+        "years": "2016~현행",
+        "region": "글로벌"
+      },
+      "caution": "4K 촬영 시 카드가 최소 속도를 보장하지 못하면 녹화 끊김이나 파일 손상이 발생할 수 있다. V60 이상을 권장한다.",
+      "cautionSource": "Kingston Technology · 4K 비디오 촬영용 메모리 카드 선택 가이드"
+    },
+    {
+      "id": "dashcam-sd-card-recommendation",
+      "claim": "블랙박스용 SD카드는 Class 10, UHS-I(U1), Video Speed Class V10 등급의 제품이 추천되며, 고온 환경에서 사용되므로 고내구 전문 제품을 우선한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "다나와 쇼핑기획전 · 용도별 메모리카드 추천",
+      "source_url": "https://plan.danawa.com/info/?nPlanSeq=2787",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장매체",
+        "line": "microSD카드",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "블랙박스는 차량 내부 고온(여름 90℃ 이상)에 노출되므로 1년마다 교체를 권장한다.",
+      "cautionSource": "공통_dashcam-selfcheck.json · dashcam-summer-heat-memory-card-damage"
+    },
+    {
+      "id": "drone-4k-video-capacity-requirement",
+      "claim": "드론에서 4K 영상을 촬영할 때는 쓰기 속도(V30, U3 이상)뿐만 아니라 카드 용량도 중요하며, 32GB 이하 메모리를 사용하면 촬영 중 저장 공간 부족 문제가 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "드론 스타팅 가이드 · 실생활 유용 SD카드 기본상식",
+      "source_url": "https://brunch.co.kr/@dronestarting/827",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장매체",
+        "line": "microSD카드",
+        "years": "2015~현행",
+        "region": "글로벌"
+      },
+      "caution": "드론 4K 촬영은 저장 공간을 빠르게 소모하므로 64GB 이상의 고속 카드를 권장한다.",
+      "cautionSource": "드론 스타팅 가이드 · 실생활 유용 SD카드 기본상식"
+    },
+    {
+      "id": "camera-write-speed-importance",
+      "claim": "카메라·캠코더 사용 시 SD카드 패키지의 큰 읽기 속도 수치보다 쓰기 속도가 더 중요하며, 버스트 촬영(연속 촬영) 시 쓰기 속도 부족으로 촬영이 중단될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스타일진 블로그 · 촬영 필수품 SD메모리 카드 고르는 법",
+      "source_url": "https://stylezineblog.com/4478",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장매체",
+        "line": "SD카드",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "카메라 설명서에서 권장 카드 등급을 확인하고, 가능하면 권장사양 이상의 제품을 구매하는 것이 좋다.",
+      "cautionSource": null
+    },
+    {
+      "id": "microsd-size-and-pin-definition",
+      "claim": "microSD는 표준 SD카드(24mm × 32mm)보다 훨씬 작은 카드(11mm × 15mm)이며, 아래쪽 핀 수가 다르다: UHS-I 이전은 8핀, UHS-II·III는 16핀이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "나무위키 · microSD 문서",
+      "source_url": "https://namu.wiki/w/microSD",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장매체",
+        "line": "microSD카드",
+        "years": "2005~현행",
+        "region": "글로벌"
+      },
+      "caution": "microSD는 어댑터를 사용하여 표준 SD 슬롯에서 사용 가능하다.",
+      "cautionSource": null
+    },
+    {
+      "id": "microsd-speed-performance-variance",
+      "claim": "동일 등급 표기의 SD 카드와 microSD를 비교하면, 제조 과정의 차이로 microSD의 최대 쓰기 속도가 다소 낮은 경향이 있다(예: KIOXIA 90MB/s vs SanDisk 140MB/s).",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Samsung Members 커뮤니티 · microSD 속도 체크",
+      "source_url": "https://r1.community.samsung.com/t5/%EA%B0%A4%EB%9F%AD%EC%8B%9C-a-j-%EB%85%B8%ED%8A%B8/%EC%99%B8%EC%9E%A5microsd%EC%B9%B4%EB%93%9C-%EC%86%8D%EB%8F%84-%EB%8B%A4%EB%93%A4-%EC%B2%B4%ED%81%AC-%ED%95%B4%EB%B3%B4%EC%85%A8%EB%82%98%EC%9A%94/td-p/13255064",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장매체",
+        "line": "microSD카드",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "4K 촬영이 필요하면 제조사별 실제 스펙을 비교하여 쓰기 속도가 높은 제품을 선택하는 것이 좋다.",
+      "cautionSource": "https://r1.community.samsung.com/t5"
+    },
+    {
+      "id": "card-reader-sdxc-compatibility-requirement",
+      "claim": "64GB 이상의 SDXC 카드를 사용할 때는 카드리더기도 SDXC를 지원해야 하며, SDHC 지원만 하는 리더기는 64GB 이상 카드를 인식하지 못한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SanDisk 고객지원 · SD/SDHC/SDXC 호환성 가이드",
+      "source_url": "https://support-ko.sandisk.com/app/answers/detailweb/a_id/37401/related/1",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "카드리더기",
+        "years": "2009~현행",
+        "region": "글로벌"
+      },
+      "caution": "새 카드리더기 구매 시 반드시 'SD/SDHC/SDXC 지원' 명시 제품을 선택하는 것이 향후 호환성을 위해 중요하다.",
+      "cautionSource": null
+    },
+    {
+      "id": "card-reader-usb3-speed-advantage",
+      "claim": "카드리더기는 USB 2.0에서는 최대 읽기 속도 20MB/s이지만, USB 3.0에서는 94MB/s를 기록하므로, 대용량 파일 전송 시 USB 3.0 이상 리더기를 선택하면 전송 시간을 크게 단축할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Wondershare Recoverit · SD 카드 리더기 가이드",
+      "source_url": "https://recoverit.wondershare.kr/sd-card-solutions/when-you-do-not-have-sd-card-reader.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "카드리더기",
+        "years": "2008~현행",
+        "region": "글로벌"
+      },
+      "caution": "USB 2.0 리더기로는 대용량 4K 영상 파일 전송이 오래 걸리므로, 높은 용량의 파일을 자주 전송한다면 USB 3.0 이상을 권장한다.",
+      "cautionSource": "Wondershare Recoverit — 카드리더기 USB 규격별 전송속도 안내"
+    },
+    {
+      "id": "usb-3-speed-standards-summary",
+      "claim": "USB 3.0, USB 3.1 Gen 1, USB 3.2 Gen 1은 동일하게 5Gbps 속도이고, USB 3.1 Gen 2와 USB 3.2 Gen 2는 동일하게 10Gbps, USB 3.2 Gen 2×2는 20Gbps 속도이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kingston Technology · USB 3.2 vs 3.1 vs 3.0 차이점 설명",
+      "source_url": "https://www.kingston.com/en/usb-flash-drives/usb-30/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장장치",
+        "line": "USB 포트·카드리더기",
+        "years": "2008~현행",
+        "region": "글로벌"
+      },
+      "caution": "명명이 혼동되기 쉬우므로 'Gen' 수치를 확인하고, 가능하면 10Gbps 이상의 리더기를 선택하는 것이 향후를 대비한다.",
+      "cautionSource": null
+    },
+    {
+      "id": "microsd-price-advantage",
+      "claim": "동일 용량의 SD 카드와 microSD를 비교하면 microSD가 표준 SD 카드보다 약 3분의 1 가격대로 더 저렴하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "badaro 블로그 · SD 카드 구입 시 살펴보는 것들",
+      "source_url": "http://badaro2001.blogspot.com/2016/06/sd-sd-microsd.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장매체",
+        "line": "microSD카드 vs SD카드",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "저가 때문에 선택하되, 용도에 맞는 속도 등급을 우선한다.",
+      "cautionSource": null
+    },
+    {
+      "id": "sd-card-format-choice-exfat-recommended",
+      "claim": "Windows와 Mac을 함께 사용할 계획이면 SD카드를 exFAT으로 포맷해야 하며, NTFS는 Mac에서 기본적으로 읽기만 가능하고 쓰기가 불가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support · Mac에서 외장 드라이브에 파일을 저장할 수 없는 경우",
+      "source_url": "https://support.apple.com/en-us/101830",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장매체",
+        "line": "SD카드·외장하드",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "포맷 전에 중요한 파일이 있는지 반드시 백업할 것. 포맷하면 모든 데이터가 삭제된다.",
+      "cautionSource": null
+    },
+    {
+      "id": "sd-card-capacity-recommendation-content",
+      "claim": "스마트폰, 태블릿 용도에는 64GB 이상의 microSD, 카메라·드론 4K 촬영에는 64GB 이상의 SD 카드, 블랙박스에는 32GB 이상의 microSD를 권장한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "다나와 · 용도별 메모리카드 추천",
+      "source_url": "https://plan.danawa.com/info/?nPlanSeq=2787",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "저장매체",
+        "line": "SD카드·microSD",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "용량이 클수록 가격이 높아지지만, 4K 영상은 저장 공간을 빠르게 소모하므로 충분한 용량 확보가 필수다.",
+      "cautionSource": "다나와 · 용도별 메모리카드 추천"
+    }
+  ]
+}

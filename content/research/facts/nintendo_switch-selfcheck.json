@@ -1,0 +1,345 @@
+{
+  "topic": "닌텐도 스위치 안 켜짐·충전·조이콘 드리프트·독 연결 자가점검",
+  "brand": "닌텐도",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "switch-power-off-12sec-force-restart",
+      "claim": "닌텐도 스위치 전원이 켜지지 않을 때는 전원 버튼을 12초 이상 길게 눌러 강제 재부팅을 시도한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국닌텐도 고객지원 - 본체의 전원이 켜지지 않아요",
+      "source_url": "https://www.nintendo.co.kr/support/switch/qna/129",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 (구형/OLED/Lite 전 라인)",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": "12초 이상 눌러야 하며, 빠르게 누르는 것과는 다르다. 배터리가 완전 방전된 경우 반응이 없을 수 있으므로 1~2시간 충전 후 재시도해야 한다.",
+      "cautionSource": "한국닌텐도 고객지원"
+    },
+    {
+      "id": "switch-charging-deep-discharge-recovery",
+      "claim": "배터리가 깊게 방전된 경우 1~2시간 충전한 후 전원 버튼을 12초 이상 눌러 다시 시도해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국닌텐도 고객지원",
+      "source_url": "https://www.nintendo.co.kr/support/switch/qna/129",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 전 라인",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "joycon-drift-calibration-official-method",
+      "claim": "닌텐도 스위치 조이콘 드리프트는 HOME 메뉴 → 설정 → 컨트롤러 및 센서 → 스틱 보정 메뉴에서 보정할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국닌텐도 고객지원 - 컨트롤러가 제멋대로 조작되는 경우",
+      "source_url": "https://www.nintendo.co.kr/support/switch/qna/139",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 조이콘 전 버전",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": "보정은 일시적인 해결책일 수 있으며, 시간이 지나면 드리프트가 재발할 수 있다.",
+      "cautionSource": "사용자 보고 및 후기"
+    },
+    {
+      "id": "joycon-drift-limit-sensor-cleaning",
+      "claim": "조이콘 드리프트가 보정으로 해결되지 않으면, 조이콘 본체의 아날로그 스틱 센서가 오염되었을 가능성이 높으며, 센서를 청소하거나 부품 교체가 필요하다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 및 기술 블로그",
+      "source_url": "https://namu.wiki/w/Joy-Con",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 조이콘 전 버전",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": "공식 가이드에서는 센서 청소 방법을 제공하지 않는다. 사용자들 사이에 고무덮개를 들추고 스틱을 청소하는 방법이 일시적 해결책으로 보고되고 있으나, 공식 권장 사항은 아니다.",
+      "cautionSource": "사용자 후기"
+    },
+    {
+      "id": "joycon-drift-free-repair-korea",
+      "claim": "한국닌텐도는 조이콘 드리프트(아날로그 스틱 쏠림)에 한해 원래의 보증기간 1년과 무관하게 조이콘 하나당 1회 무상 수리를 제공한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국닌텐도 온라인 수리접수 및 고객지원",
+      "source_url": "https://support.nintendo.co.kr/service.do",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 조이콘",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": "정품 한국닌텐도 제품에만 적용되며, 병행수입·해외판 제품은 대상 제외. 물에 젖었거나 파손으로 인한 고장은 유상 수리 대상.",
+      "cautionSource": "한국닌텐도 정책"
+    },
+    {
+      "id": "charging-port-check-usb-c",
+      "claim": "닌텐도 스위치가 충전되지 않을 때는 먼저 USB-C 충전 포트에 이물질이나 손상이 없는지 육안으로 점검하고, 케이블을 여러 방향으로 꽂아 접촉을 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국닌텐도 고객지원",
+      "source_url": "https://www.nintendo.co.kr/support/switch/power/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 전 라인",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": "정품 충전기를 사용해야 한다. 포트 접촉 불량이면 케이블을 흔들 때만 충전되는 증상이 나타날 수 있다.",
+      "cautionSource": "사용자 보고"
+    },
+    {
+      "id": "charging-charger-official-requirement",
+      "claim": "닌텐도 스위치 충전 시 정품 AC 어댑터를 사용해야 하며, 멀티탭보다는 직접 콘센트에 꽂아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국닌텐도 고객지원",
+      "source_url": "https://www.nintendo.co.kr/support/switch/power/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 전 라인",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "dock-connection-hdmi-direct-tv",
+      "claim": "독에 연결된 스위치가 TV에 화면을 출력하지 못할 때는 HDMI 케이블이 HDMI 분배기 등 중계 기기를 거치지 않고 TV 단자에 직접 연결되어 있는지 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국닌텐도 고객지원 - TV 모드로 설정해도 영상이 나오지 않아요",
+      "source_url": "https://www.nintendo.co.kr/support/switch/qna/141",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 전 라인",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "dock-connection-ac-adapter-direct",
+      "claim": "독의 AC 어댑터는 멀티탭을 거치지 않고 직접 콘센트에 연결해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국닌텐도 고객지원",
+      "source_url": "https://www.nintendo.co.kr/support/switch/qna/141",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 전 라인",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "dock-hdmi-resolution-adjustment",
+      "claim": "독 연결 후 TV에 화면이 나오지 않으면 HOME 메뉴에서 설정 → TV 설정 → TV 해상도를 480P 등 낮은 해상도로 변경한 후 다시 독에 꽂아 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국닌텐도 고객지원",
+      "source_url": "https://www.nintendo.co.kr/support/switch/qna/141",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 전 라인",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": "해상도 조정은 휴대 모드로 전환한 후 진행해야 한다.",
+      "cautionSource": "한국닌텐도 고객지원"
+    },
+    {
+      "id": "dock-hdmi-port-test",
+      "claim": "TV에 여러 개의 HDMI 단자가 있으면 다른 HDMI 단자에 케이블을 연결하여 영상이 표시되는지 확인한다. 또한 다른 TV에 연결해서도 테스트한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국닌텐도 고객지원",
+      "source_url": "https://www.nintendo.co.kr/support/switch/qna/141",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 전 라인",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "joycon-reconnect-pairing",
+      "claim": "조이콘의 무선 연결이 끊겼을 때는 HOME 메뉴 → 설정 → 컨트롤러 및 센서 → 그리프 및 순서 또는 재페어링 메뉴에서 조이콘을 다시 연결한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국닌텐도 고객지원",
+      "source_url": "https://www.nintendo.co.kr/support/switch/controller/index.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 조이콘",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "battery-replacement-official-service-only",
+      "claim": "닌텐도 스위치 배터리 수명이 다했을 때 배터리 교체는 사용자가 직접 할 수 없으며, 한국닌텐도 고객지원센터에서만 수리를 받을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국닌텐도 고객지원",
+      "source_url": "https://support.nintendo.co.kr/service.do",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 본체",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": "자가 분해로 배터리를 교체하려다 감전 또는 화재가 발생할 수 있으므로 절대 시도하면 안 된다. 배터리 팽창 흔적(본체가 휜 모양, 뜨거움)이 있으면 즉시 전원을 끄고 공식 센터로 이동해야 한다.",
+      "cautionSource": "안전 주의사항"
+    },
+    {
+      "id": "battery-lifespan-typical",
+      "claim": "닌텐도 스위치의 배터리는 일반적으로 400회 이상의 충방전을 견딜 수 있으며, 약 5.5시간 지속 사용 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "닌텐도 기술 사양",
+      "source_url": "https://www.nintendo.co.kr/support/switch/power/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 구형 (2017-2019), OLED (2021~)",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": "Lite 모델은 약 5.5시간이고, 신형 구형은 약 6.5시간이다. 사용 환경과 게임의 종류에 따라 차이가 난다.",
+      "cautionSource": "닌텐도 사양"
+    },
+    {
+      "id": "sdcard-compatibility-requirement",
+      "claim": "닌텐도 스위치는 마이크로SD, 마이크로SDHC, 마이크로SDXC 카드를 지원하며, 공식 권장 호환 카드를 사용해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국닌텐도 고객지원",
+      "source_url": "https://www.nintendo.co.kr/support/switch/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 전 라인",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "sdcard-slot-cleaning",
+      "claim": "SD 카드가 인식되지 않을 때는 SD 카드 슬롯에 먼지나 이물질이 끼어 있을 수 있으므로 부드러운 마른 천으로 조심스럽게 청소한 후 다시 삽입한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "기술 지원 커뮤니티",
+      "source_url": "https://recoverit.wondershare.kr/sd-card-solutions/nintendo-switch-sd-card.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 전 라인",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "built-in-stand-durability-concern",
+      "claim": "닌텐도 스위치 본체 후면의 내장된 킥스탠드(Free-Standing Design)는 반복적인 개폐에 따라 내구성 문제가 보고되고 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티",
+      "source_url": "https://namu.wiki/w/Nintendo%20Switch/%EB%AC%B8%EC%A0%9C%EC%A0%90",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 구형, Lite",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": "OLED 모델은 스탠드가 개선되었다고 보고되고 있다. 스탠드가 자주 흔들리거나 고정이 안 되면 별도의 충전 스탠드(케이블 포함) 구입을 권장한다.",
+      "cautionSource": "사용자 후기 및 제품 평가"
+    },
+    {
+      "id": "standalone-charging-stand-available",
+      "claim": "닌텐도 스위치는 AC 어댑터를 연결한 별도의 충전 스탠드(프리 스톱 방식)를 구매하여 사용할 수 있으며, 약 3시간에 완충된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "닌텐도 공식 액세서리 정보",
+      "source_url": "https://www.nintendo.co.kr/support/switch/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 전 라인",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": "스탠드 사용 시 AC 어댑터를 반드시 연결해야 하며, 스탠드만으로는 충전되지 않는다. 화면의 각도를 자유롭게 조절할 수 있다는 장점이 있다.",
+      "cautionSource": "한국닌텐도 공식 안내"
+    },
+    {
+      "id": "overheating-issue-unconfirmed",
+      "claim": "닌텐도 스위치의 발열(오버히팅) 문제는 사용자 보고가 있으나, 공식 가이드라인이 확보되지 않았다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티",
+      "source_url": "https://namu.wiki/w/Nintendo%20Switch/%EB%AC%B8%EC%A0%9C%EC%A0%90",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "닌텐도",
+        "category": "게임기",
+        "line": "스위치 전 라인",
+        "years": "2017~현행",
+        "region": "KR"
+      },
+      "caution": "발열이 심하면 통풍이 잘되는 환경에서 사용하고, 주기적으로 휴식을 취하는 것이 권장된다. 화염이나 냄새가 난다면 즉시 전원을 끄고 공식 센터로 문의해야 한다.",
+      "cautionSource": "안전 예방 차원의 권장사항"
+    }
+  ]
+}

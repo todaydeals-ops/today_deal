@@ -1,0 +1,260 @@
+{
+  "topic": "스마트 체중계·체성분계 측정 오류·앱 연동 자가점검",
+  "brand": "공통",
+  "article": "smart-scale-selfcheck",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "smartband-sensor-cleanliness-general"
+  ],
+  "declined_facts": [
+    {
+      "id": "smartband-battery-cycle-degradation",
+      "why": "스마트밴드는 충전식 리튬배터리, 체중계는 일회용 건전지로 노화 메커니즘이 다름"
+    },
+    {
+      "id": "smartband-water-resistance-rating-5atm",
+      "why": "방수 등급은 스마트밴드 특화. 체중계는 욕실 습기 관리가 주 관심사"
+    },
+    {
+      "id": "smartband-step-count-accuracy-device-limitation",
+      "why": "걸음수 측정은 스마트밴드만 해당"
+    },
+    {
+      "id": "smartband-sleep-tracking-estimation-not-medical",
+      "why": "수면 추적 기능은 스마트밴드만 탑재"
+    },
+    {
+      "id": "smartband-blood-oxygen-measurement-factors",
+      "why": "혈중산소 측정은 스마트밴드 심박센서 기능. 체중계와 무관"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "smart-scale-battery-type-lifespan",
+      "claim": "스마트 체중계(샤오미 Mi Scale 등)는 AAA 또는 CR2032 건전지를 사용하며, 정품 건전지 기준 약 2~3년 사용 가능하다. 저가 건전지는 누액, 수명 단축, 센서 오작동을 유발할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "샤오미 한국 공식 지원 — 스마트 체중계 배터리 관리",
+      "source_url": "https://www.mi.com/kr/support/faq/details/KA-32216/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 체중계",
+        "line": "스마트 체중계 대부분(샤오미, 오므론 등)",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "정품 건전지 사용. 저가 호환 건전지는 초기에는 동작하나 장기적으로 불량을 초래할 가능성이 높음",
+      "cautionSource": "샤오미 배터리 관리 안내에서 정품 권장 사항"
+    },
+    {
+      "id": "smart-scale-battery-storage-humidity",
+      "claim": "스마트 체중계 배터리는 습기가 많은 욕실에 보관하면 누액 위험이 높아진다. 장기간 사용하지 않을 때는 배터리를 체중계에서 분리해 보관해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스마트 체중계 배터리 보관 및 관리 가이드",
+      "source_url": "https://www.mi.com/kr/support/faq/details/KA-32216/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 체중계",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "smart-scale-bia-principle-fat-muscle-limitation",
+      "claim": "스마트 체중계의 체지방·근육량 측정은 BIA(생체전기저항) 기술을 사용하는데, 이는 신체에 미세 전류를 흘려보내 임피던스를 측정하는 방식이다. BIA는 추정 기술이므로 실제 값과 ±10~15% 차이가 날 수 있으며, 이는 센서의 기본 한계이지 고장이 아니다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "샤오미 Mi 체지방 측정기 공식 안내 — BIA 기술 원리",
+      "source_url": "https://www.mi.com/kr/support/faq/details/KA-29193/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 체중계",
+        "line": "BIA 센서 탑재 체중계(샤오미, 인바디, 오므론 등)",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "같은 사람이 반복 측정했을 때 수치가 조금씩 달라지는 것은 정상. 체성분 변화 추세를 보는 것이 목적이며, 절대값으로 판단하면 안 됨",
+      "cautionSource": "BIA 기술의 기본 특성으로 공식 문서에서 확인"
+    },
+    {
+      "id": "smart-scale-measurement-condition-time-body-state",
+      "claim": "스마트 체중계 측정은 같은 시간, 같은 신체 조건에서 해야 정확하다. 발열·고열 중, 과음·과식, 운동·사우나 직후, 생리 기간 중 측정값은 부정확하며, 이러한 상태에서 측정된 수치는 참고하지 않는 것이 좋다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "샤오미 스마트 체중계 측정 조건 안내",
+      "source_url": "https://www.mi.com/kr/support/faq/details/KA-29193/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 체중계",
+        "line": "BIA 체중계 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "아침 기상 직후, 공복 상태에서 같은 시간에 측정하는 것이 관례. 신체 수분 상태가 측정값에 영향을 많이 미침",
+      "cautionSource": "공식 측정 조건 안내에서 권장하는 최적 측정 시간"
+    },
+    {
+      "id": "smart-scale-floor-surface-must-be-hard-flat",
+      "claim": "스마트 체중계는 반드시 단단하고 평평한 바닥(타일, 나무바닥 등)에 놓아야 한다. 카펫, 깔개, 매트 위에 올리면 무게가 고르게 분산되지 않아 측정값이 심각하게 부정확해진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스마트 체중계 정확한 사용 방법 가이드",
+      "source_url": "https://www.mi.com/kr/support/faq/details/KA-520751/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 체중계",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "카펫 위에서 고장처럼 보이는 오측정이 발생해도 기기 고장이 아님. 바닥 상태를 바꾸면 정상 작동함",
+      "cautionSource": "체중계 센서가 바닥 상태에 극도로 민감한 기술적 특성"
+    },
+    {
+      "id": "smart-scale-zero-calibration-after-relocation",
+      "claim": "스마트 체중계를 옮기거나 보관하던 자리에서 다시 꺼낸 후 사용할 때는 전원을 켜기 전에 '영점 조정' 버튼을 눌러 초기화해야 정확한 측정이 가능하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스마트 체중계 사용 설명서 — 영점 조정",
+      "source_url": "https://www.weighinginstru.com/ko/a-news-how-to-test-a-weight-scale-w-j.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 체중계",
+        "line": "대부분의 디지털 체중계",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "smart-scale-barefoot-measurement-essential",
+      "claim": "스마트 체중계의 BIA 센서는 발가락이 금속 전극에 직접 닿아야만 신체 임피던스를 정확히 측정할 수 있다. 양말을 신거나 발을 걸레로 닦고 있으면 전극 접촉이 불완전해져 측정이 되지 않거나 부정확해진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스마트 체중계 BIA 기술 측정 원리",
+      "source_url": "https://www.mi.com/kr/support/faq/details/KA-29193/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 체중계",
+        "line": "BIA 센서 탑재 체중계 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "발이 젖은 상태는 괜찮지만(전기 전도성 향상), 양말·반창고·상처 아물이는 밴드 등으로 발이 가려지면 안 됨",
+      "cautionSource": "BIA 전극 접촉 원리에 따른 기술적 요구사항"
+    },
+    {
+      "id": "smart-scale-multi-user-recognition-setup",
+      "claim": "스마트 체중계의 앱이 여러 명 사용자를 자동으로 구분할 때는 체중 범위, 성별, 나이 같은 프로필이 정확하게 등록되어 있어야 한다. 프로필이 중복되거나 체중 범위가 겹치면 잘못된 사람으로 인식될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스마트 체중계 사용자 프로필 관리 가이드",
+      "source_url": "https://www.mi.com/kr/support/article/KA-28814/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 체중계",
+        "line": "다중 사용자 기능 탑재 모델(샤오미 등)",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "가족 내 체중이 비슷하면 올바른 인식이 어려울 수 있음. 이 경우 앱에서 수동으로 사용자를 선택해 측정하는 것을 권장",
+      "cautionSource": "스마트 체중계 사용자 프로필 관리에서 권장하는 방법"
+    },
+    {
+      "id": "smart-scale-app-sync-failure-basic-troubleshooting",
+      "claim": "스마트 체중계가 앱(MiFit 등)과 동기화되지 않을 때는 (1) Bluetooth 끄기 > 3초 대기 > 다시 켜기 (2) 앱을 완전히 닫고 다시 열기 (3) 앱을 최신 버전으로 업데이트하는 순서로 시도한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "샤오미 Mi Fit 앱 동기화 문제 해결",
+      "source_url": "https://www.mi.com/kr/support/faq/details/KA-27861/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 체중계",
+        "line": "앱 연동 모델(샤오미, 오므론 등)",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "smart-scale-app-background-permissions-essential",
+      "claim": "스마트 체중계 앱의 Bluetooth 연동이 자주 끊어질 때는 휴대폰 설정에서 해당 앱의 모든 백그라운드 실행 권한을 활성화해야 한다. 안드로이드에서는 '절전 모드 끄기', '무제한 백그라운드 선택', '응용 프로그램 자동 시작 허용'이 모두 켜져 있어야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스마트 체중계 앱 백그라운드 권한 설정 가이드",
+      "source_url": "https://www.mi.com/kr/support/faq/details/KA-30321/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 체중계",
+        "line": "앱 연동 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "OS 버전과 제조사별로 설정 메뉴 이름이 다를 수 있으니 '권한' 또는 '배터리' 섹션을 확인할 것",
+      "cautionSource": "안드로이드 OS 버전별 설정 인터페이스 차이는 스마트폰 제조사 공식 자료에 근거"
+    },
+    {
+      "id": "smart-scale-bia-contraindication-pregnancy-pacemaker",
+      "claim": "BIA 센서는 신체에 미세 전류를 흘려보내는 원리를 사용하므로 임산부와 심박기·인공 보청기·금속 보형물 착용자는 사용 전 반드시 담당의사와 상담해야 한다. 태아나 심장 박동에 미미한 영향을 줄 가능성이 있기 때문이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "인바디 InBody H30 사용자 설명서 — 사용 금지 대상",
+      "source_url": "https://inbody.com/assets/download/InBody_H30_User_Manual_2023_Rev02_KR_230530.pdf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 체중계",
+        "line": "BIA 센서 탑재 체중계 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "특히 임산부는 임신 여부가 명확한 경우 체중계 사용을 자제하고, 심박기 착용자는 의료진 승인 없이 사용하면 안 됨",
+      "cautionSource": "InBody H30 공식 사용자 설명서의 사용 금지 대상 명시"
+    },
+    {
+      "id": "smart-scale-bia-measurement-factors-skin-tattoo",
+      "claim": "BIA 측정 정확도는 피부색, 문신, 손목 움직임, 발의 착용감 정도에 따라 달라질 수 있다. 매우 어두운 피부색이나 전극 영역을 덮는 진한 문신이 있으면 신호가 약해져 측정이 불가능하거나 부정확할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스마트 체중계 BIA 센서 기술 특성",
+      "source_url": "https://www.mi.com/kr/support/faq/details/KA-491067/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 체중계",
+        "line": "BIA 센서 탑재 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "문신이 측정을 방해하면 발의 다른 부분에 전극을 대거나 다른 발을 시도해 본다. 반복 측정 후 데이터 비교로 신뢰도를 높일 수 있음",
+      "cautionSource": "BIA 광학/전기 센서의 피부색·문신 영향은 기술적 한계"
+    },
+    {
+      "id": "smart-scale-measurement-consistency-same-condition",
+      "claim": "스마트 체중계로 체성분 변화를 추적할 때는 같은 시간(보통 아침), 같은 조건(공복 상태, 배뇨 후)에서 측정해야만 의미 있는 비교가 가능하다. 다른 시간이나 다른 신체 상태에서의 측정값끼리 비교하는 것은 신뢰도가 낮다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "인바디 체성분 분석기 측정 가이드",
+      "source_url": "https://inbody.co.kr/technology/contents/technology",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 체중계",
+        "line": "체성분 추적 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    }
+  ]
+}

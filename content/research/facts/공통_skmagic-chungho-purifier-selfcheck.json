@@ -1,0 +1,292 @@
+{
+  "topic": "SK매직·청호나이스 정수기 자가점검 — 물 안 나옴·냉온수 불량·필터·얼음·렌탈 범위",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "coway-filter-flushing-required",
+      "why": "SK매직·청호나이스 공식 문서에서 필터 교체 후 플러싱(물 배출) 절차가 명시되지 않았으며, 브랜드별 절차가 상이할 수 있음"
+    },
+    {
+      "id": "coway-cold-hot-water-led-check",
+      "why": "SK매직은 LED 확인 절차 미확인, 청호나이스는 제빙 램프 등 다른 UI를 사용하므로 코웨이와 다름"
+    },
+    {
+      "id": "coway-power-reset-five-minutes",
+      "why": "SK매직·청호나이스 공식에서 전원 리셋 절차와 대기 시간이 명시되지 않았으며, 코웨이 5분 권장이 SK매직·청호나이스에도 적용되는지 미확인"
+    },
+    {
+      "id": "coway-hot-water-heating-time",
+      "why": "SK매직·청호나이스의 온수 난방 시간이 명시되지 않았으며, 코웨이와 다를 수 있음"
+    },
+    {
+      "id": "coway-leak-detection-error-e01",
+      "why": "SK매직·청호나이스의 누수 감지 에러 코드가 확인되지 않았으며, 브랜드별 에러 시스템이 다를 수 있음"
+    },
+    {
+      "id": "coway-filter-replacement-cycle",
+      "why": "SK매직·청호나이스의 필터 교체 주기가 코웨이와 다를 수 있으므로 브랜드별 정보 필요"
+    },
+    {
+      "id": "coway-rental-heart-service",
+      "why": "SK매직·청호나이스의 렌탈 서비스 명칭과 범위가 코웨이와 다르며, 상세 구성이 미확인"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "skmagic-customer-center-phone",
+      "claim": "SK매직 정수기의 모든 고객지원(AS 예약, 상담, 부품 신청, 필터 배송)은 고객센터 1600-1661로 통합 문의되며, 평일과 토요일 일부 시간 상담 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SK인텔릭스 서비스센터 공식 사이트",
+      "source_url": "https://www.skintellixservice.com/web/easy/easyMain.do?tabIndex=0&subIndex=0&selectedPrdCd=01&selectedSubPrdCd=WPU",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "SK매직",
+        "category": "정수기",
+        "line": "렌탈·자가구매 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "긴급 상황(심한 누수, 전기 오류)은 신속하게 신고해야 한다.",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "skmagic-direct-vs-tank-supply-difference",
+      "claim": "SK매직 정수기는 직수형(물탱크 없이 수도관에서 바로 물 공급)과 저수조형(정수된 물을 탱크에 저장 후 출수)의 두 가지 공급 방식으로 나뉘며, SK매직은 완전 직수형(냉수까지 탱크 없음)을 특징으로 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SK매직 공식 웹사이트 - 직수형 정수기 안내",
+      "source_url": "https://www.skmagic.com/brandstory/story/indexStoryDetail?storySeq=20251204090018",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "SK매직",
+        "category": "정수기",
+        "line": "직수형·저수조형 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "직수형은 물탱크가 없어 세균 번식 위험이 낮지만, 출수 시 물을 정수하므로 대량 취수 시 시간이 소요될 수 있다. 저수조형은 저수조 위생 관리가 중요하다.",
+      "cautionSource": "SK매직 공식 정수기 안내의 공급 방식별 설명"
+    },
+    {
+      "id": "skmagic-water-not-coming-out-troubleshooting",
+      "claim": "SK매직 정수기에서 물이 안 나올 때 자가점검 순서는 (1) 수돗물 단수 여부 확인, (2) 원수공급밸브(급수 밸브) 확인 및 개방, (3) 제품 전원 연결 확인, (4) 필터 교체 시기 확인이며, 필터가 교체 시기를 초과한 경우 물 양이 감소할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SK인텔릭스 서비스센터 자가진단 가이드",
+      "source_url": "https://www.skintellixservice.com/web/easy/easyMain.do?tabIndex=0&subIndex=0&selectedPrdCd=01&selectedSubPrdCd=WPU",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "SK매직",
+        "category": "정수기",
+        "line": "직수형·저수조형 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "밸브를 과도하게 꼬아서는 안 되며, 필터 교체·수도공사·정수기 이동 후에는 특히 밸브 상태를 확인해야 한다. 대량 취수 후에는 정수 시간이 필요하므로 약 30분 후 다시 시도할 것.",
+      "cautionSource": "SK인텔릭스 서비스센터의 자가진단 기본 순서"
+    },
+    {
+      "id": "skmagic-filter-replacement-alert-reset-model-specific",
+      "claim": "SK매직 정수기의 필터 교체 알림 리셋 방법은 모델에 따라 다르며, 냉수와 온수 버튼을 동시에 5초간 누르거나 전원을 껐다가 다시 켜면 자동으로 리셋되는 경우도 있다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "SK매직 고객센터 및 사용자 커뮤니티",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/SK%EB%A7%A4%EC%A7%81_%EC%A0%95%EC%88%98%EA%B8%B0_%EB%83%89%EC%88%98_%EC%95%88%EB%82%98%EC%98%B4,_%EC%9D%B8_%EA%B8%80%EB%A1%9C_%EC%A0%84%EB%B6%80_%ED%95%B4%EA%B2%B0%ED%95%B4_%EB%93%9C%EB%A6%B4%EA%B2%8C%EC%9A%94.-48549",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "SK매직",
+        "category": "정수기",
+        "line": "저수조형·필터 교체 알림 기능 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "정확한 리셋 방법은 제품 사용설명서 또는 정수기에 부착된 스티커 안내를 확인하거나, 고객센터(1600-1661)로 문의하는 것이 권장된다. 모델별로 버튼 위치와 조작 방법이 상이할 수 있다.",
+      "cautionSource": "SK매직 고객센터 안내 및 사용자 커뮤니티"
+    },
+    {
+      "id": "chungho-customer-center-phone",
+      "claim": "청호나이스 정수기의 고객센터는 1588-2290(AS·상담·필터 신청·렌탈 일반 문의)이며, 렌탈 상담 전용으로는 1566-1393을 이용할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "청호나이스 공식 고객지원센터",
+      "source_url": "https://help.chungho.com/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "청호나이스",
+        "category": "정수기",
+        "line": "렌탈·자가구매 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "평일 9시~18시 상담 가능. 긴급 상황(심한 누수, 전기 오류)은 신속하게 신고해야 한다.",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "chungho-water-not-coming-out-troubleshooting",
+      "claim": "청호나이스 정수기에서 물이 안 나올 때 자가점검 순서는 (1) 수돗물 단수 여부 확인, (2) 원수밸브가 잠겨 있는지 확인 후 개방(반시계 방향), (3) 제품 전원 연결 상태 확인, (4) 필터 교체 시기 초과 여부 확인이며, 필터 교체 후나 밸브 조작 후 물이 나오기까지 약 30분이 소요될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "청호나이스 공식 고객지원센터 자가진단",
+      "source_url": "https://help.chungho.com/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "청호나이스",
+        "category": "정수기",
+        "line": "직수형·저수조형 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "밸브를 과도하게 꼬아서는 안 되며, 대량 취수 후나 필터 교체 직후에는 정수 시간이 필요하므로 30분 후 물 배출을 재확인할 것. 정기점검 후에도 약 1시간 대기 후 물이 나오므로 시간 경과를 확인할 것.",
+      "cautionSource": "청호나이스 공식 고객지원센터의 물 안 나옴 자가점검 안내"
+    },
+    {
+      "id": "chungho-ice-maker-ice-not-coming-out-troubleshooting",
+      "claim": "청호나이스 얼음정수기에서 얼음이 안 나올 때 자가점검은 (1) 제빙 기능 상태 확인(제빙 램프 또는 제빙ON 표시 확인), (2) 제빙 기능이 꺼져 있으면 제빙 설정 후 1~2시간 대기, (3) 얼음 잠금기능 확인(활성화된 경우 얼음 선택 불가)이며, 확인 후에도 얼음이 안 나오면 냉각장치 고장, 온도센서 오류, 제빙 모터/팬 불량 등이 원인일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "청호나이스 공식 고객지원센터 자가진단",
+      "source_url": "https://help.chungho.com/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "청호나이스",
+        "category": "얼음정수기",
+        "line": "제빙 기능 탑재 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "제빙 설정 후 1~2시간은 얼음 생성 시간이므로 즉시 얼음이 나오지 않아도 정상이다. 설정 후에도 얼음이 안 나오거나 녹아서 나오는 경우, 또는 얼음 크기가 작고 금방 녹는 경우 고객센터(1588-2290)로 연락해야 한다.",
+      "cautionSource": "청호나이스 공식 고객지원센터의 얼음정수기 자가진단 안내"
+    },
+    {
+      "id": "chungho-rental-service-vs-self-management",
+      "claim": "청호나이스는 렌탈 서비스를 통해 정수기를 제공하며, 렌탈 상담(1566-1393)을 통해 필터 교체·정기점검 범위 등을 확인할 수 있다. 렌탈 상품에 따라 필터 교체, 필터비 포함, 정기 점검, 부품 교체 등의 서비스 내용이 상이하다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "청호나이스 공식 렌탈 상담센터",
+      "source_url": "https://help.chungho.com/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "청호나이스",
+        "category": "정수기",
+        "line": "렌탈 서비스 전 상품",
+        "years": "현행 렌탈 상품",
+        "region": "KR"
+      },
+      "caution": "렌탈 제품의 필터 교체, 정기점검 주기, 포함 범위는 상품별로 다르므로 계약 시 반드시 상담(1566-1393)을 통해 구체적인 서비스 범위를 확인해야 한다. 렌탈 제품 사용자가 자가로 부품을 교체하면 계약 위반이 될 수 있으므로 고객센터에 문의할 것.",
+      "cautionSource": "청호나이스 렌탈 상담센터 안내"
+    },
+    {
+      "id": "skmagic-hot-water-tepid-or-not-coming",
+      "claim": "SK매직 정수기에서 온수가 미지근하거나 안 나올 때는 (1) 전원 플러그가 제대로 연결되어 있는지 확인, (2) 온도 설정 메뉴를 확인하여 적절한 온도로 조정, (3) 전원 플러그를 뽑았다가 5분 뒤 다시 꽂아 리셋하는 순서로 자가점검할 수 있으며, 이 방법으로도 해결되지 않으면 히터나 온도 센서 고장일 가능성이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SK매직 공식 사이트 및 고객센터 자료",
+      "source_url": "https://www.skmagic.com/brandstory/story/indexStoryDetail?storySeq=20260206092552",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "SK매직",
+        "category": "정수기",
+        "line": "온수 기능 탑재 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "냉수 온도가 너무 높으면(약 10도 이상) 온수도 미지근하게 느껴질 수 있다. 온도 설정은 냉수 4~10도, 온수 40~60도 범위 내에서 조정하는 것이 권장된다. 렌탈 제품이면 무료 점검을 받을 수 있다.",
+      "cautionSource": "SK매직 고객센터의 온수 불량 자가진단 안내"
+    },
+    {
+      "id": "chungho-cold-water-first-cup-tepid",
+      "claim": "청호나이스 정수기에서 냉수의 첫잔이 미온수로 나오는 것은 정상 현상으로, 주변 환경 온도가 높거나 냉수를 오래 사용하지 않았을 때 취수부에서 냉수가 대기하면서 온도가 상승하기 때문이다. 첫잔을 버리고 두 번째 잔부터 냉수가 정상적으로 나온다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "청호나이스 공식 고객지원센터 자가진단",
+      "source_url": "https://help.chungho.com/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "청호나이스",
+        "category": "정수기",
+        "line": "냉수 기능 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "이것은 고장이 아니라 냉수 대기 시간이 필요한 정상 동작이다. 특히 여름철이나 정수기가 햇빛을 받는 위치에 있으면 첫잔이 더 미온수일 수 있으므로, 냉각 성능을 높이려면 정수기 뒷면과 벽 사이에 최소 10cm 이상의 공간을 두어야 한다.",
+      "cautionSource": "청호나이스 공식 고객지원센터의 냉수 온도 관련 안내"
+    },
+    {
+      "id": "chungho-cold-water-cooling-space",
+      "claim": "청호나이스 정수기의 냉각 성능은 정수기 뒷면과 벽 사이의 공간에 크게 영향을 받으며, 냉각이 제대로 작동하려면 최소 10cm 이상의 간격을 두어야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "청호나이스 공식 고객지원센터",
+      "source_url": "https://help.chungho.com/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "청호나이스",
+        "category": "정수기",
+        "line": "냉수 기능 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "냉수가 시원하지 않다고 느낄 때는 먼저 정수기 위치를 확인하고 벽과의 거리를 10cm 이상으로 조정해볼 것. 공간 확보 후에도 냉각이 개선되지 않으면 냉각장치 고장을 의심하고 고객센터(1588-2290)에 연락할 것.",
+      "cautionSource": "청호나이스 공식 고객지원센터의 냉각 성능 안내"
+    },
+    {
+      "id": "skmagic-chungho-faucet-cock-cleaning-schedule",
+      "claim": "SK매직·청호나이스 정수기의 코크(취수구)는 물 흐름을 방해하는 불순물이 쌓일 수 있으므로, 1~2주에 한 번씩 분리하여 깨끗한 물로 헹궈서 청소하고, 6개월마다 새로운 코크로 교체하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "렌트리 스토리 및 오늘의딜 정수기 관리 자료",
+      "source_url": "https://rentre.kr/story/%EC%A0%95%EC%88%98%EA%B8%B0-%EC%B2%AD%EC%86%8C-%ED%95%84%ED%84%B0-%EC%BD%94%ED%81%AC-%EC%82%B4%EA%B7%A0-%EC%BC%80%EC%96%B4-%EC%84%9C%EB%B9%84%EC%8A%A4/water-purifier-cleaning-filter-faucet-sterilization-care",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "정수기",
+        "line": "코크 기능 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "코크를 분리한 후 면봉에 정수물과 소량의 식초를 희석한 용액을 묻혀 코크 주변을 깨끗하게 닦은 후 다시 장착하면 된다. 청소 후에는 직수관이나 유로관에 고여있던 물 또는 세척 잔여물을 제거하기 위해 약 1~5분간 물을 충분히 흘려보낸 후 음용할 것.",
+      "cautionSource": "렌트리 스토리의 정수기 코크 청소 안내"
+    },
+    {
+      "id": "water-purifier-leak-emergency-response",
+      "claim": "정수기에서 누수가 발생했을 때의 응급 대처 순서는 (1) 출수 버튼을 눌러 정수기 내부의 남은 물을 완전히 배출, (2) 감전 위험을 피하기 위해 전원 플러그를 즉시 뽑기, (3) 정수기 뒤 수도관의 원수 밸브를 잠그기이며, 이 후 전문 서비스 매니저에게 점검을 받아야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "렌트리 스토리 정수기 누수 종합 가이드",
+      "source_url": "https://rentre.kr/story/%EC%A0%95%EC%88%98%EA%B8%B0-%EB%88%84%EC%88%98-%EC%9B%90%EC%9D%B8-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95-%EC%B4%9D%EC%A0%95%EB%A6%AC/water-purifier-leak-causes-solutions-summary",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "정수기",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "심한 누수가 계속되거나 전기 부분에 물이 닿았다면 즉시 전원을 차단하고 고객센터에 신고할 것. 누수가 지속되는데도 계속 사용하면 더 큰 손상이나 감전 위험이 생길 수 있다. 정수기 하단의 물받이가 넘쳤는지 먼저 확인하고, 그것이 아닌데도 물이 바닥에 고이면 전문가 점검이 필수다.",
+      "cautionSource": "렌트리 스토리의 정수기 누수 응급 대처 안내"
+    },
+    {
+      "id": "water-purifier-filter-replacement-signals",
+      "claim": "정수기 필터 교체 시기를 알려주는 주요 신호는 물맛이 달라지거나 냄새가 나는 경우, 물의 흐름 속도가 눈에 띄게 줄어드는 경우, 정수기 내부에서 퀴퀴한 냄새나 곰팡이 냄새가 나는 경우, 소음이 증가하는 경우 등이며, 이 중에서 물맛과 냄새 변화가 가장 먼저 감지되는 신호다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "오늘의딜 및 주요 정수기 관리 가이드 사이트",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%A0%95%EC%88%98%EA%B8%B0_%EB%AC%BC%EB%A7%9B_%EC%9D%B4%EC%83%81%ED%95%A0_%EB%95%8C_%EA%BC%AD_%EC%A0%90%EA%B2%80%ED%95%A0_%ED%95%84%ED%84%B0-%EA%B4%80%EB%A6%AC%EB%B2%95-30332",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "정수기",
+        "line": "필터 시스템 탑재 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "물이 텁텁하거나 쓴맛이 느껴지면 필터가 제 역할을 못하고 있다는 뜻이다. 세균이 필터 내부에서 번식하고 있을 가능성도 있으므로, 이러한 신호가 감지되면 즉시 필터를 교체해야 한다. 제조사에서는 보통 6~12개월 주기를 권장하지만, 여름철이나 습한 환경, 사용량이 많으면 3개월 단위로 더 자주 교체하는 것이 안전하다.",
+      "cautionSource": "정수기 필터 관리 가이드 종합"
+    }
+  ]
+}

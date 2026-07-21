@@ -1,0 +1,169 @@
+{
+  "topic": "가정용 탄산수 제조기(소다스트림) — 원리·비용·경제성·안전",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "soda-maker-cylinder-co2-principle",
+      "claim": "소다스트림 등 가정용 탄산수 제조기는 CO2 실린더에 저장된 이산화탄소 가스를 물에 주입하는 방식으로 탄산수를 생성한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SodaStream Korea 공식 사이트",
+      "source_url": "https://sodastream.kr/pages/co2-%EC%8B%A4%EB%A6%B0%EB%8D%94%EC%97%90-%EB%8C%80%ED%95%9C-%EB%AA%A8%EB%93%A0-%EA%B2%83-%EC%86%8C%EB%8B%A4%EC%8A%A4%ED%8A%B8%EB%A6%BC",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "탄산수 제조기",
+        "line": "가정용",
+        "years": "현재",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "sodastream-spare-cylinder-price",
+      "claim": "소다스트림 여분 실린더(새 실린더 구매) 가격은 ₩36,900이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SodaStream Korea 공식 쇼핑몰, Costco Korea",
+      "source_url": "https://sodastream.kr/products/spare-carbonator",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "소다스트림",
+        "category": "탄산수 제조기",
+        "line": "실린더",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "여분 실린더 구매는 CO2 충전료(실린더 내용물 비용) + 실린더 소유권을 포함한 가격이다. 교환 서비스(빈 실린더 반납 후 새것 교환)는 CO2 충전료만 별도로 청구되므로 장기 사용 시 비용 구조를 고려해야 한다.",
+      "cautionSource": "SodaStream Korea 고객센터 문서, 웹검색 결과"
+    },
+    {
+      "id": "soda-cylinder-capacity",
+      "claim": "소다스트림 CO2 실린더 1개당 최대 60L, 최소 38L 범위의 탄산수를 제조할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SodaStream Korea 공식 사이트",
+      "source_url": "https://sodastream.kr/products/spare-carbonator",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "소다스트림",
+        "category": "탄산수 제조기",
+        "line": "CO2 실린더",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "용량 편차는 사용자의 탄산 강도 설정(약함/보통/강함)에 따라 결정된다. 강할수록 적은 양의 실린더로 더 많은 탄산을 만들지만, 그만큼 빨리 소진된다는 의미다."
+    },
+    {
+      "id": "compatible-cylinder-availability-risk",
+      "claim": "소다스트림과 호환되는 제3자 CO2 실린더(호환품, 충전 서비스용)가 시장에 존재하며, 가격은 정품보다 저렴한 경향이 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "온라인 쇼핑몰 상품 목록, 커뮤니티 리뷰(Clien, Ppomppu)",
+      "source_url": "https://m.shoppinghow.kakao.com/m/search/q/소다스트림 실린더 충전",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "탄산수 제조기",
+        "line": "호환 실린더",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "공식 제조사(SodaStream)는 호환 실린더 사용을 권장하지 않는다. 이유는 안전 보증 불가, 기계 손상 위험, 보증 서비스 거부 가능성 때문이다. 정품 실린더는 국제 안전 인증(TUV, DOT, TC)을 획득했으나 호환품의 안전 기준은 검증되지 않았을 수 있다.",
+      "cautionSource": "SodaStream Korea 공식 페이지, 웹검색 결과"
+    },
+    {
+      "id": "sparkling-water-carbonation-retention",
+      "claim": "소다스트림 전용 밀봉 용기에 담은 탄산수는 2~3일 동안 탄산을 유지할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SodaStream 공식 사용 가이드, 얼리어답터 리뷰",
+      "source_url": "http://www.earlyadopter.co.kr/93585",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "소다스트림",
+        "category": "탄산수 제조기",
+        "line": "일반",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "밀봉 용기(Fizz Bottle)를 사용해야 2~3일의 보관 기간이 보장된다. 일반 병이나 개방 상태에서는 수 시간 내에 탄산이 대부분 빠진다. 전용 용기 자체의 수명은 약 4년이다.",
+      "cautionSource": "얼리어답터·SodaStream 사용자 후기"
+    },
+    {
+      "id": "juice-wine-carbonation-method",
+      "claim": "소다스트림에는 물 이외의 액체(주스, 와인, 알코올음료)를 직접 주입하면 안 된다. 대신 먼저 물을 탄산화한 후 음료를 첨가해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SodaStream 공식 가이드, Fizzy Delivery, Mashed",
+      "source_url": "https://fizzydelivery.ca/blogs/news/can-you-use-other-liquids-in-sodastream-heres-what-you-need-to-know",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "탄산수 제조기",
+        "line": "사용 안전",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "알코올 및 설탕 함유 액체는 CO2 흡수량이 물보다 낮아 과탄산화 및 분사 위험을 초래할 수 있다. 와인의 경우 백포도주는 제한적으로 시도 가능하나 홍포도주는 점도가 높아 사용 불가다. 이는 기계 손상 및 내부 세척 문제로도 이어질 수 있다.",
+      "cautionSource": "SodaStream 공식 가이드, Fizzy Delivery, Mashed 웹페이지"
+    },
+    {
+      "id": "sparkling-water-maker-environmental-benefit",
+      "claim": "가정용 탄산수 제조기는 시판 탄산음료 페트병 구매를 줄임으로써 플라스틱 폐기물 감소에 기여할 수 있다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 보고(Clien, Ppomppu)",
+      "source_url": "https://www.clien.net/service/board/cm_coffee/11607372",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "탄산수 제조기",
+        "line": "환경 효과",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "직접 비교 연구나 공식 통계는 조사 범위 내에서 찾지 못했다. 다만 일회용 페트병 재활용률이 20% 수준으로 낮다는 점과 가정용 제조기의 반복 사용 속성을 고려하면, 환경 개선 가능성은 있다. 다만 정량적 효과(연간 몇 개 병 절감)는 사용자의 구매 습관에 크게 의존하므로, 글에서는 '절감 가능성'으로만 표현하고 구체 수치는 피해야 한다.",
+      "cautionSource": "한국 페트병 재활용 현황 웹검색 결과"
+    },
+    {
+      "id": "sparkling-water-cost-break-even",
+      "claim": "탄산수 제조기의 경제성 여부는 초기 기계 가격, CO2 실린더 교체 비용, 시판 탄산수 가격, 개인의 소비량을 모두 고려해야 한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "온라인 커뮤니티 사용자 후기(Clien, Ppomppu, 얼리어답터)",
+      "source_url": "http://www.earlyadopter.co.kr/93585",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "탄산수 제조기",
+        "line": "경제성",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "공식 손익분기 분석은 조사 범위 내에서 찾지 못했다. 다만 사용자 후기에 따르면 '월 탄산수 소비량이 충분하면 1~2년 내 본전'이라는 의견이 다수 있다. 정확한 비용 계산은 구체적인 가격 대입(기계값·실린더 교체 간격·시판 상품 선택)이 필요하므로 글에서는 '비용 구조 인식' 차원에서만 언급해야 한다.",
+      "cautionSource": "Clien·Ppomppu·얼리어답터 사용자 후기"
+    },
+    {
+      "id": "soda-cylinder-connection-types",
+      "claim": "소다스트림 CO2 실린더는 클래식 나사형(Classic/Screw-type)과 퀵커넥트형(CQC/Quick Connect)의 두 가지 형태가 있으며, 기계 모델에 따라 호환되는 실린더 타입이 정해진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SodaStream Korea 공식 사이트",
+      "source_url": "https://sodastream.kr/pages/co2-%EC%8B%A4%EB%A6%B0%EB%8D%94%EC%97%90-%EB%8C%80%ED%95%9C-%EB%AA%A8%EB%93%A0-%EA%B2%83-%EC%86%8C%EB%8B%A4%EC%8A%A4%ED%8A%B8%EB%A6%BC",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "소다스트림",
+        "category": "탄산수 제조기",
+        "line": "기계·실린더 호환",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "기계 구입 시 자신의 모델(Terra, Art, Duo, E-Terra, Spirit 등)에 맞는 실린더 형태를 반드시 확인해야 한다. 호환되지 않는 실린더를 구입하면 사용할 수 없고, 교환 절차가 필요하다."
+    }
+  ]
+}

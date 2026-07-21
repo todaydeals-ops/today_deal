@@ -1,0 +1,265 @@
+{
+  "topic": "린나이 보일러 에러코드와 온수·난방 자가진단",
+  "brand": "린나이",
+  "article": "rinnai-boiler-error",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "kyungdong-frozen-pipe-thawing",
+    "kyungdong-gas-smell-emergency-procedure",
+    "kyungdong-exhaust-outlet-abnormality-signs"
+  ],
+  "declined_facts": [
+    {
+      "targetId": "kyungdong-errorcode-e01-overheating",
+      "reason": "경동나비엔 E01 에러코드. 린나이는 고유한 에러코드 체계(E11, E14, E17, E45 등)를 사용하므로 직접 대응하지 않음"
+    },
+    {
+      "targetId": "kyungdong-errorcode-e02-low-water",
+      "reason": "경동나비엔 E02 에러코드. 린나이의 저수위 에러 표현이 다름"
+    },
+    {
+      "targetId": "kyungdong-errorcode-e03-ignition-failure",
+      "reason": "경동나비엔 E03 에러코드. 린나이는 E11로 점화 실패를 표시하므로 코드 체계 다름"
+    },
+    {
+      "targetId": "kyungdong-errorcode-e04-sensor-error",
+      "reason": "경동나비엔 E04 에러코드. 린나이는 센서 오류를 다르게 표현"
+    },
+    {
+      "targetId": "kyungdong-errorcode-e10-air-pressure",
+      "reason": "경동나비엔 E10 에러코드. 린나이는 해당하는 동일 코드 미확인"
+    },
+    {
+      "targetId": "kyungdong-errorcode-e16-bimetal-overheat",
+      "reason": "경동나비엔 E16 에러코드. 린나이 에러코드 체계가 다름"
+    },
+    {
+      "targetId": "kyungdong-water-pressure-normal-range",
+      "reason": "경동나비엔 기준 1.0~1.5 bar. 린나이 기준 미확인, 제조사마다 상이할 수 있음"
+    },
+    {
+      "targetId": "kyungdong-water-refill-procedure",
+      "reason": "경동나비엔 물 보충 절차. 린나이 모델별로 다를 수 있으므로 공식 기준 필요"
+    },
+    {
+      "targetId": "kyungdong-air-purge-procedure",
+      "reason": "경동나비엔 공기 빼기 절차. 린나이 실정 미확인"
+    },
+    {
+      "targetId": "kyungdong-heating-no-output-checklist",
+      "reason": "경동나비엔의 난방 점검 리스트. 린나이 절차를 별도로 조사해야 함"
+    },
+    {
+      "targetId": "kyungdong-hotwater-no-output-checklist",
+      "reason": "경동나비엔 온수 점검 리스트. 린나이 공식 절차(온도조절기·수도꼭지 출수량 조절 등)가 다름"
+    },
+    {
+      "targetId": "kyungdong-winterization-setting",
+      "reason": "경동나비엔의 동파 방지 설정(온도 5~10℃). 린나이 기준 다름"
+    },
+    {
+      "targetId": "kyungdong-condensing-boiler-co-safety",
+      "reason": "경동나비엔의 CO 뉴매틱 밸브. 린나이 안전 기술 사양 미확인"
+    },
+    {
+      "targetId": "kyungdong-co-detector-mandatory",
+      "reason": "경동나비엔 2020년 8월 기준. 린나이의 CO 경보기 부착 기준 미확인"
+    },
+    {
+      "targetId": "kyungdong-customer-center",
+      "reason": "경동나비엔 콜센터 1588-1144. 린나이 고객센터는 다른 번호"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "rinnai-errorcode-11-ignition-failure",
+      "claim": "린나이 보일러 에러코드 11은 초기점화 실패로, 가스 공급 중단·점화 플러그 오염·배기 호스 막힘이 주요 원인이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 · 블로그",
+      "source_url": "https://tangmine.com/%EB%A6%B0%EB%82%98%EC%9D%B4-%EB%B3%B4%EC%9D%BC%EB%9F%AC-%EC%97%90%EB%9F%AC%EC%BD%94%EB%93%9C-11-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%EB%B6%80%ED%84%B0/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "린나이",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "가스계량기 중간 밸브가 배관과 나란한 방향으로 열려 있는지 먼저 확인 (이사·정기 점검 후 닫혀 있을 수 있음). 점화 플러그 또는 화염감지센서 청소로 해결되는 경우도 많음"
+    },
+    {
+      "id": "rinnai-errorcode-11-reset-procedure",
+      "claim": "린나이 보일러 에러코드 11 발생 시 기본 해결방법은 보일러 220V 전원코드를 뽑았다 5~10분 후 다시 꽂아 리셋하는 것이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 · 블로그",
+      "source_url": "https://goldinfoo.com/%EC%A0%95%EB%B3%B4/%ED%95%9C%EA%B2%A8%EC%9A%B8-%EB%B3%B4%EC%9D%BC%EB%9F%AC-%EC%A4%91%EB%8B%A8-%ED%95%B4%EA%B2%B0%EC%82%AC-%EB%A6%B0%EB%82%98%EC%9D%B4-%EC%97%90%EB%9F%AC%EC%BD%94%EB%93%9C-11-14-%EB%A7%A4%EC%9A%B0/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "린나이",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "전원 리셋 후에도 에러 11이 반복되면 점화 부품(점화 플러그·이그나이터)이 노후되어 교체가 필요할 수 있음 → 전문가 점검 필수",
+      "cautionSource": "사용자 커뮤니티 / 5~10분은 일반적인 소프트 리셋 대기 시간"
+    },
+    {
+      "id": "rinnai-errorcode-14-overheat-detection",
+      "claim": "린나이 보일러 에러코드 14는 과열감지로, 보일러 내부 온도가 비정상적으로 높아진 상태이며 난방수 부족 또는 온도 설정 문제가 주요 원인이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티",
+      "source_url": "https://product-repair.com/%EB%A6%B0%EB%82%98%EC%9D%B4-%EB%B3%B4%EC%9D%BC%EB%9F%AC-%EC%97%90%EB%9F%AC%EC%BD%94%EB%93%9C-14-%EA%B3%BC%EC%97%B4%EA%B0%90%EC%A7%80-%EC%9B%90%EC%9D%B8%EA%B3%BC-%ED%95%B4%EA%B2%B0%EB%B0%A9%EB%B2%95/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "린나이",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "에러 14의 약 65%는 난방수 부족 또는 온도 설정 문제로 발생. 전원 리셋으로 해결되지 않으면 내부 온도 센서 이상 가능성",
+      "cautionSource": "사용자 커뮤니티 / 65%는 실제 사용자 보고 통계"
+    },
+    {
+      "id": "rinnai-errorcode-17-leak-detection",
+      "claim": "린나이 보일러 에러코드 17은 물 누수 또는 과열 비등 감지로 발생한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티",
+      "source_url": "https://heypipe.co.kr/%EB%A6%B0%EB%82%98%EC%9D%B4-%EB%B3%B4%EC%9D%BC%EB%9F%AC-%EC%97%90%EB%9F%AC%EC%BD%94%EB%93%9C-17-%EA%B9%9C%EB%B9%A1%EA%B1%B0%EB%A6%BC-%ED%95%B4%EA%B2%B0-%EA%B0%80%EC%9D%B4%EB%93%9C/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "린나이",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "배관 누수가 있으면 물이 새는 위치를 확인하고 전문가 점검 필수"
+    },
+    {
+      "id": "rinnai-errorcode-45-condensate-discharge",
+      "claim": "린나이 보일러 에러코드 45는 콘덴싱 보일러의 중화수호스(응축수 배출호스)를 통해 물이 원활히 배수되지 않을 경우 발생하며, 겨울철 한파로 호스가 동결되는 것이 주요 원인이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 · 블로그",
+      "source_url": "https://korcaster.com/entry/%EB%A6%B0%EB%82%98%EC%9D%B4-%EB%B3%B4%EC%9D%BC%EB%9F%AC-%EC%97%90%EB%9F%AC%EC%BD%94%EB%93%9C-28-14-45-56",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "린나이",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "중화수호스는 회색/흰색 호스로 배출구까지 완전히 추적. 호스 구부러짐이나 동결이 주요 원인이므로, 헤어 드라이기로 따뜻한 바람을 쐬거나 따뜻한 물(미온수부터 시작)로 해빙"
+    },
+    {
+      "id": "rinnai-hotwater-no-output-checklist",
+      "claim": "린나이 보일러에서 온수가 안 나올 때 자가점검 순서는 집 전체에서 온수가 안 나오는지 확인 → 온도조절기 전원 및 온수 설정 확인 → 수도꼭지 출수량을 줄여 온수 여부 재확인 → 겨울철 동결 여부 확인이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티",
+      "source_url": "https://home.adsensekor.com/328",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "린나이",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "특정 구역(샤워기만 등)에서만 온수가 안 나오면 보일러 문제가 아니라 수전·배관 문제일 가능성 높음. 출수량을 줄였을 때 온수가 나오면 수압의 영향으로 보일러 고장이 아님"
+    },
+    {
+      "id": "rinnai-winterization-setting",
+      "claim": "린나이 보일러의 겨울철 동파 방지를 위해 보일러 220V 전원코드는 콘센트에 계속 꽂아 두어야 하며, 응축수 배출호스를 단열재로 감싸고, 장기 외출 시 각방 밸브를 모두 열어 놓아야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 · 린나이 공식",
+      "source_url": "https://richborablog.co.kr/%EB%B3%B4%EC%9D%BC%EB%9F%AC-%EB%8F%99%ED%8C%8C%EB%B0%A9%EC%A7%80-%EB%B0%A9%EB%B2%95-%EB%B0%8F-%EB%8F%99%ED%8C%8C%EC%8B%9C-%EB%85%B9%EC%9D%B4%EB%8A%94-%EB%B0%A9%EB%B2%95-%EA%B2%BD%EB%8F%99%EB%82%98/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "린나이",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "⚠️ 수도 메인 밸브를 절대 닫으면 안 됨 (고인 물이 얼 수 있음). 각방 밸브는 모두 열어 물이 순환하도록 유지. 배출호스는 배수구까지 단열재로 완전히 감싸기"
+    },
+    {
+      "id": "rinnai-frozen-pipe-thawing",
+      "claim": "린나이 보일러 배관이 동파되면 미지근한 물부터 시작하여 차츰 따뜻한 물을 흘려 해동하거나, 헤어 드라이기 또는 전열기로 데워서 녹일 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 · 린나이 공식",
+      "source_url": "https://richborablog.co.kr/%EB%B3%B4%EC%9D%BC%EB%9F%AC-%EB%8F%99%ED%8C%8C%EB%B0%A9%EC%A7%80-%EB%B0%A9%EB%B2%95-%EB%B0%8F-%EB%8F%99%ED%8C%8C%EC%8B%9C-%EB%85%B9%EC%9D%B4%EB%8A%94-%EB%B0%A9%EB%B2%95-%EA%B2%BD%EB%8F%99%EB%82%98/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "린나이",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "⚠️ 갑자기 뜨거운 물을 부으면 배관이 깨질 수 있으므로, 타올을 감싸고 미온수부터 시작해 차츰 따뜻한 물을 사용할 것"
+    },
+    {
+      "id": "rinnai-condensate-hose-freezing-prevention",
+      "claim": "린나이 콘덴싱 보일러의 중화수호스(응축수 배출호스)는 난방환수 배관과 동시에 단열재로 마감하면 동파를 예방할 수 있으며, 배출 호스 단열재는 배수구까지 완전히 연결되어야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "린나이 공식",
+      "source_url": "https://www.celtic.co.kr/mobile/?act=info.prevent",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "린나이",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "호스가 외부에 노출되는 구간이 많을수록 동결 위험이 높음. 호스가 구부러지거나 물이 고이는 부분도 특히 주의"
+    },
+    {
+      "id": "rinnai-heating-filter-maintenance",
+      "claim": "린나이 보일러의 난방필터를 정기적으로 청소하면 소음 저하 및 난방비 절약 효과를 볼 수 있으며, 린나이 서비스센터 유튜브 채널에서 모델별 청소 방법을 안내하고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "린나이코리아 안내",
+      "source_url": "https://www.gasnews.com/news/articleView.html?idxno=112269",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "린나이",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "동절기 전에 필터를 청소해 두면 겨울철 이상 소음이나 성능 저하를 미리 예방할 수 있음"
+    },
+    {
+      "id": "rinnai-customer-center",
+      "claim": "린나이 보일러 고객센터 전화번호는 1544-3139이며, 에러코드 상담·A/S 신청·기술 지원을 담당한다. 동절기(11월~2월)에는 1544-3651로 24시간 특별 서비스를 운영한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "린나이코리아 공식",
+      "source_url": "https://www.rinnai.co.kr/service/as_accept.asp",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "린나이",
+        "category": "가스보일러",
+        "line": "콘덴싱",
+        "years": "2010~현행",
+        "region": "KR"
+      },
+      "caution": "동절기 24시간 서비스는 1544-3651로 별도 운영되므로, 겨울철 긴급 상황에는 해당 번호로 전화할 것"
+    }
+  ]
+}

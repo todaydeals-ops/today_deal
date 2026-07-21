@@ -1,0 +1,203 @@
+{
+  "topic": "선풍기 틀고 자면 죽는다? 선풍기 사망설 팩트체크",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "fan-death-no-scientific-basis",
+      "claim": "선풍기 사망설은 과학적 근거가 없으며, Seoul National University 교수 등 공식 자료에서 선풍기는 산소 농도를 낮추지 않는다고 명시하고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Seoul National University, Wikipedia Fan death article",
+      "source_url": "https://en.wikipedia.org/wiki/Fan_death",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생활안전",
+        "line": "여름철도시전설",
+        "years": "1920년대~현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "hypothermia-fan-death-claim-false",
+      "claim": "선풍기가 저체온증을 유발한다는 주장은 과학적 근거가 없으며, 저체온증 발생에는 환경 온도가 영하 10도 이하에 가까워야 하므로 선풍기의 바람만으로는 절대 불가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Wikipedia Fan death article",
+      "source_url": "https://en.wikipedia.org/wiki/Fan_death",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생활안전",
+        "line": "여름철건강",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "oxygen-depletion-claim-false",
+      "claim": "선풍기가 산소를 소모하거나 이산화탄소를 축적시킨다는 주장은 거짓이며, 선풍기는 단순히 기존 공기를 순환시킬 뿐 정상적인 실내 밀폐 시간으로는 산소 결핍이 발생하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Seoul National University, Wikipedia Fan death article",
+      "source_url": "https://en.wikipedia.org/wiki/Fan_death",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생활안전",
+        "line": "밀폐된방",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "fan-use-heat-temperature-threshold-cdc",
+      "claim": "CDC는 실내 기온이 32.2°C(90°F) 이상일 때 선풍기 사용을 권장하지 않으며, 초고온 환경에서 선풍기가 체온을 오히려 상승시킬 수 있다고 경고한다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "CDC (Centers for Disease Control and Prevention)",
+      "source_url": "https://www.cdc.gov/heat-health/about/index.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생활안전",
+        "line": "폭염시선풍기",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "who-fan-threshold-35-celsius",
+      "claim": "세계보건기구(WHO)는 기온이 35°C를 초과할 때 선풍기 사용을 권장하지 않으나, 최신 연구는 습도와 환기 조건에 따라 40°C까지 선풍기가 안전할 수 있다고 제시한다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "WHO, Berkeley Thermal Comfort Tool, STATNEWS heat study",
+      "source_url": "https://www.science.org/content/article/when-is-it-too-hot-use-fan",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생활안전",
+        "line": "폭염시선풍기",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "actual-summer-death-causes-elderly",
+      "claim": "폭염으로 인한 여름철 사망의 80% 이상이 65세 이상 고령자에게서 발생하며, 사망자의 80% 이상이 에어컨을 사용하지 않고 있었고, 심뇌혈관 기저질환이 주요 위험 요소다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국 질병관리청, 일본 오사카부 통계",
+      "source_url": "https://bravo.etoday.co.kr/view/atc_view/17526",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생활안전",
+        "line": "폭염사망",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "summer-death-location-indoors-aircon-lack",
+      "claim": "여름철 열사병 사망의 80% 이상이 자택 실내에서 발생하며, 특히 에어컨을 사용하지 않는 밀폐된 환경에서의 고온 노출이 주요 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "일본 오사카부 공식 통계, 한국 질병관리청",
+      "source_url": "https://www.msdmanuals.com/ko/home/부상-및-중독/열중증/열사병",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생활안전",
+        "line": "폭염사망",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "low-temperature-heat-death-possible",
+      "claim": "열사병으로 인한 사망은 30°C 전후의 상대적으로 낮은 기온에서도 실내 무방송 환경에서 발생할 수 있으며, 특히 고령자나 기저질환자가 취약하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국 질병관리청, 의료일보",
+      "source_url": "https://www.medicaldaily.co.kr/post/20879",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생활안전",
+        "line": "폭염사망",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "fan-death-origin-1920s-japanese-colonial",
+      "claim": "선풍기 사망설은 1920-1930년대 일제강점기 때 신문에서 전기 팬의 위험성(산소 부족, 안면마비 등)을 경고하면서 시작되었으며, 1927년 신문 기사 'Strange Harm from Electric Fans'가 그 증거다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Wikipedia Fan death article, 나무위키",
+      "source_url": "https://en.wikipedia.org/wiki/Fan_death",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생활안전",
+        "line": "도시전설역사",
+        "years": "1920-1930년대",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "fan-death-media-perpetuation-1970s",
+      "claim": "1970년대 신문들이 미스터리 여름철 사망을 '선풍기 사망'으로 잘못 보도하면서 믿음이 강화되었으나, 정부가 에너지 절감을 위해 의도적으로 조장했다는 음모론은 증거 부족으로 뒷받침되지 않는다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Wikipedia Fan death article, Cracked.com",
+      "source_url": "https://www.cracked.com/article_28829_a-brief-history-south-koreas-weirdest-urban-legend-killer-fans.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생활안전",
+        "line": "도시전설역사",
+        "years": "1970년대",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "fan-death-unique-korean-myth",
+      "claim": "선풍기 사망설은 한국에만 존재하는 도시전설이며, 다른 나라에서는 이런 믿음이 거의 없고 과학적으로 입증된 사망 사례가 전 세계 어디에도 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Wikipedia Fan death article, Facts.net",
+      "source_url": "https://en.wikipedia.org/wiki/Fan_death",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생활안전",
+        "line": "도시전설",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "fan-safety-heatwave-ventilation-matters",
+      "claim": "폭염에서 선풍기의 안전성은 기온뿐만 아니라 습도, 실내 통풍 조건, 개인의 수분 섭취 여부 등 복합적 요소에 따라 크게 달라지며, 의학적 합의가 완전하지 않다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Science Magazine, Berkeley Thermal Comfort Tool",
+      "source_url": "https://www.science.org/content/article/when-is-it-too-hot-use-fan",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생활안전",
+        "line": "폭염시선풍기",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    }
+  ]
+}

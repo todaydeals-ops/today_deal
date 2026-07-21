@@ -1,0 +1,226 @@
+{
+  "topic": "모니터암·거치대 선택 가이드",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "vesa-standard-75x75-100x100",
+      "claim": "모니터암 호환성을 결정하는 가장 기본적인 규격은 VESA(Video Electronics Standards Association)로, 모니터 뒷면의 나사 구멍 간격이 75x75mm 또는 100x100mm이어야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "모니터·거치대 제조사 스펙 문서 및 업계 표준",
+      "source_url": "https://filezly.com/%EB%AA%A8%EB%8B%88%ED%84%B0-%EC%95%94-%EA%B5%AC%EB%A7%A4-%EC%A0%84-%ED%95%84%EC%88%98-%EC%B2%B4%ED%81%AC-vesa%EB%B2%A0%EC%82%AC-%EB%A7%88%EC%9A%B4%ED%8A%B8-%EA%B7%9C%EA%B2%A9%EA%B3%BC-%EB%82%98/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터암",
+        "line": "모든 모니터암과 거치대",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "모니터 뒷면의 나사 구멍 간격을 자로 직접 측정하거나 제조사 스펙 시트에서 'VESA' 항목을 확인해야 한다. 규격이 맞지 않으면 설치가 불가능하다",
+      "cautionSource": "제조사 기술 가이드"
+    },
+    {
+      "id": "vesa-adapter-plate-mismatch",
+      "claim": "75x75mm 규격 거치대에 100x100mm 모니터를 설치하려면 'VESA 확장 플레이트' 또는 'VESA 어댑터'라는 추가 부품을 사용하여 호환성을 맞춰야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "모니터 거치대 호환성 가이드",
+      "source_url": "https://www.icbanq.com/P015761145",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터암",
+        "line": "VESA 규격 거치대 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "monitor-weight-critical-factor",
+      "claim": "모니터암 선택 시 암의 최대 지지 하중이 모니터 무게보다 최소 2~3kg 이상 여유가 있어야 시간이 지나도 처짐이 발생하지 않는다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 실제 사용 경험담 (퀘이사존, 클리앙 등)",
+      "source_url": "https://quasarzone.com/bbs/qn_report/views/78553",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터암",
+        "line": "모든 모니터암",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "예를 들어 7kg 모니터라면 암의 최대 지지 하중이 최소 10kg 이상이어야 한다. 저가형 제품 중 6kg 이하 지지 하중만 있는 제품에 32인치 모니터(5~8kg)를 다는 경우 심각한 처짐이 발생할 수 있다",
+      "cautionSource": "사용자 실제 설치 경험 및 제품 리뷰"
+    },
+    {
+      "id": "clamp-vs-grommet-mounting",
+      "claim": "모니터암의 책상 고정 방식은 크게 클램프(클립) 방식과 그로밋(구멍) 방식 두 가지로 나뉜다. 클램프는 책상 모서리에만 설치 가능하고, 그로밋은 책상 중앙을 포함 어디든 설치할 수 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "모니터 커뮤니티 및 사용자 설치 경험 (퀘이사존, 클리앙)",
+      "source_url": "https://quasarzone.com/bbs/qf_etc/views/72462",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터암",
+        "line": "클램프·그로밋 방식 암 전체",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "그로밋 방식은 책상에 구멍을 뚫어야 하므로 한 번 설치하면 되돌리기 어렵다. 클램프 방식은 책상 가장자리 프레임 구조를 먼저 확인하고 설치 방해 요소가 없는지 점검해야 한다",
+      "cautionSource": "사용자 설치 경험 및 설치 가이드"
+    },
+    {
+      "id": "clamp-desk-thickness-limit",
+      "claim": "클램프 방식 모니터암은 책상 두께가 일정 범위 내에 있어야 고정이 가능하며, 너무 얇거나 두꺼운 책상에는 클램프가 맞지 않아 설치할 수 없다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "모니터 커뮤니티 설치 경험담 (퀘이사존)",
+      "source_url": "https://quasarzone.com/bbs/qf_etc/views/72462",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터암",
+        "line": "클램프 방식 모니터암",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "제품마다 지원하는 책상 두께 범위가 다르므로, 구매 전에 상세 스펙에서 '클램프 두께 범위'를 확인해야 한다. 두꺼운 책상의 경우 클램프 방식보다는 그로밋 방식이나 벽걸이 방식을 고려해야 한다",
+      "cautionSource": "제조사 상품 스펙 시트"
+    },
+    {
+      "id": "gas-spring-vs-mechanical-spring",
+      "claim": "모니터암의 스프링 방식은 가스스프링과 기계식 스프링으로 나뉜다. 가스스프링은 높이와 각도 조절이 세밀하고 움직임이 부드럽지만, 기계식은 조절 범위가 제한적이고 부드러움이 떨어진다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "모니터 커뮤니티 실제 사용 비교 (퀘이사존, DC 모니터 마이너 갤러리)",
+      "source_url": "https://quasarzone.com/bbs/qf_dp/views/215556",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터암",
+        "line": "모든 모니터암",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "가스스프링 암은 내부 나사로 텐션(장력)을 조절할 수 있으며, 모니터 무게에 맞게 텐션을 조절하지 않으면 암이 저절로 올라가거나 내려가는 현상이 발생한다. 구매 후 초기 설정 단계에서 반드시 텐션을 모니터 무게에 맞게 조절해야 한다",
+      "cautionSource": "제조사 설치 매뉴얼 및 사용자 실제 경험"
+    },
+    {
+      "id": "single-vs-dual-monitor-arm",
+      "claim": "모니터암은 싱글(1개 모니터용)과 듀얼(2개 모니터용) 제품이 있다. 시장 점유율은 싱글이 75%, 듀얼이 24% 정도며, 두 모니터 크기와 무게가 비슷하면 듀얼 전용 제품이 책상 공간과 케이블 정리 면에서 유리하다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "모니터 시장 분석 및 사용자 커뮤니티 의견",
+      "source_url": "https://gola4u.com/%EB%AA%A8%EB%8B%88%ED%84%B0%EC%95%94-%EC%B6%94%EC%B2%9C-top10/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터암",
+        "line": "싱글·듀얼 모니터암",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "싱글 암 2개를 사용하면 각 모니터를 완전히 독립적으로 조절할 수 있다는 장점이 있지만, 책상 뒤 선정리가 복잡해질 수 있다",
+      "cautionSource": "사용자 설치 및 운용 경험"
+    },
+    {
+      "id": "monitor-arm-adjustment-functions",
+      "claim": "모니터암의 기본 조절 기능은 엘리베이션(높이 조절), 틸트(앞뒤 각도), 스위블(좌우 회전), 피벗(세로 회전) 4가지다. 엘리베이션은 보통 115mm~479mm 범위, 틸트는 아래로 45°~위로 40°, 스위블은 좌우로 20°~45°, 피벗은 90도 회전이 일반적이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "모니터암 제조사 스펙 및 기술 가이드",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EB%AA%A8%EB%8B%88%ED%84%B0_%EB%86%92%EC%9D%B4_%EC%A1%B0%EC%A0%88_:_%EA%B0%81%EB%8F%84_%EC%A1%B0%EC%A0%88_%EA%B8%B0%EB%8A%A5_4%EA%B0%80%EC%A7%80_%EC%B6%94%EC%B2%9C_%ED%8B%B8%ED%8A%B8,_%EC%8A%A4%EC%9C%84%EB%B8%94,_%EC%97%98%EB%A6%AC%EB%B2%A0%EC%9D%B4%EC%85%98,_%ED%94%BC%EB%B2%97-52222",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터암",
+        "line": "모든 모니터암",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "모든 모니터암이 4가지 기능을 모두 제공하지는 않으며, 저가형은 일부 기능이 제한되거나 없을 수 있다. 구매 전에 필요한 기능이 포함되어 있는지 확인해야 한다",
+      "cautionSource": "제조사 상품 스펙 시트 및 사용자 리뷰"
+    },
+    {
+      "id": "curved-ultrawide-compatibility-limits",
+      "claim": "곡면 모니터와 울트라와이드 모니터는 모니터암 호환성에 제약이 있다. 암의 최대 지지 무게, VESA 규격, 그리고 모니터 크기 제한(보통 32인치 이하)을 모두 만족해야 하며, 일부 암은 울트라와이드나 곡면 모니터를 지원하지 않는다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "모니터 커뮤니티 호환성 질답 및 제조사 호환성 가이드",
+      "source_url": "https://lunalab.co.kr/19/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=2462485&t=board",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터암",
+        "line": "곡면·울트라와이드 대응 모니터암",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "울트라와이드 모니터를 사용하려면 제품 상세페이지에서 '곡면 모니터 지원', '울트라와이드 대응' 표기가 있는지 확인해야 한다. 규격이 맞지 않으면 'VESA 확장 플레이트'를 추가로 구매해야 할 수 있다",
+      "cautionSource": "제조사 호환성 가이드 및 사용자 질답"
+    },
+    {
+      "id": "weight-sagging-dropping-hazard",
+      "claim": "모니터암의 지지 하중을 초과하면 암이 처지거나 무거운 모니터가 떨어져 내려앉을 수 있으며, 최악의 경우 모니터 파손 또는 책상 손상까지 발생할 수 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "모니터 커뮤니티 사용자 보고 (퀘이사존, 클리앙)",
+      "source_url": "https://quasarzone.com/bbs/qn_partner/views/1807707",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터암",
+        "line": "모든 모니터암",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "⚠️ 하중 초과는 안전 문제다. 반드시 모니터 무게를 정확히 확인하고, 암의 최대 지지 하중을 충분히 초과하지 않는 범위에서 선택해야 한다. 설치 후 암이 처지거나 이상한 소음이 나면 즉시 사용을 중단하고 제조사 상담을 받아야 한다",
+      "cautionSource": "안전 경고 및 사용자 사고 보고"
+    },
+    {
+      "id": "budget-monitor-arm-sagging-issue",
+      "claim": "저가형 모니터암(2만원대~3만원대)은 가스스프링 품질이 낮거나 프레임 강성이 약해 시간이 지남에 따라 처짐과 흔들림이 발생하는 경향이 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "모니터 커뮤니티 사용자 경험담 및 제품 리뷰 (퀘이사존, 클리앙)",
+      "source_url": "https://coolenjoy.net/bbs/31/900685",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터암",
+        "line": "저가형 모니터암",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "구매 전에 해당 모니터+모니터암 조합의 실제 사용자 리뷰를 찾아 장기 사용 시 처짐 문제가 보고되었는지 확인하는 것이 좋다. 저가형을 선택하더라도 암의 지지 하중 여유를 충분히 확보해야 한다",
+      "cautionSource": "사용자 장기 사용 리뷰 및 커뮤니티 경험담"
+    },
+    {
+      "id": "wall-mount-alternative-option",
+      "claim": "책상 설치가 어렵거나 책상 두께가 맞지 않는 경우, 벽걸이 방식의 거치대를 선택할 수 있다. 벽걸이는 책상 공간을 차지하지 않고 견고하게 고정되는 장점이 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "모니터 거치대 설치 가이드",
+      "source_url": "",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터암",
+        "line": "벽걸이 거치대",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "벽걸이는 벽의 강도와 구조를 확인한 후 설치해야 하며, 콘크리트 벽에는 적합하지만 석고보드만 있는 벽에는 특수 앵커가 필요하다. 설치 후 모니터 낙하 위험이 있으므로 전문가에게 의뢰하거나 안전 기준을 반드시 지켜야 한다",
+      "cautionSource": "벽걸이 설치 안내 및 안전 가이드"
+    }
+  ]
+}

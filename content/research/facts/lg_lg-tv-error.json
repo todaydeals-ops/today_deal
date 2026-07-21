@@ -1,0 +1,175 @@
+{
+  "topic": "LG TV 화면 안 나옴·신호없음·전원 문제 자가점검",
+  "brand": "LG",
+  "article": "lg-tv-error",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "samsung-remote-pairing-model-year",
+      "why": "삼성 TV 리모컨 페어링은 모델 연식별로 Back+Play, Back+Guide 등 다르며, LG는 휠 버튼으로 통일된 방식이므로 거부"
+    },
+    {
+      "id": "samsung-self-diagnosis-path",
+      "why": "삼성 TV 자가진단은 홈 버튼 > 설정 > 고객지원 > 자가진단 경로이나, LG webOS는 완전히 다른 메뉴 구조(설정 > 고객지원 > 퀵 헬프/상태 진단)이므로 거부"
+    },
+    {
+      "id": "samsung-self-diagnosis-functions",
+      "why": "삼성 TV의 화질·화면·음질·HDMI 테스트는 자가진단 메뉴 내 통합되나, LG는 항목 점검하기·상태 진단으로 분류되는 다른 체계"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "lg-tv-no-picture-sound-basic-check",
+      "claim": "LG TV 화면과 소리가 모두 안 나올 때 첫 점검은 외부기기(셋톱박스) 연결 상태 확인, HDMI 케이블 양쪽 끝 완전 재연결, 입력 소스를 '현재 방송' 또는 'HDMI' 중 올바른 것으로 선택하는 순서다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG TV 화면] 화면하고 소리가 안 나와요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1777897",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "TV", "line": "webOS 전 TV", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "TV 리모컨 볼륨 버튼을 눌렀을 때 음량 조절 표시가 나타나면 TV 자체는 정상이고 외부기기 또는 신호 문제다",
+      "cautionSource": "LG전자 고객지원 공식 진단 기준"
+    },
+    {
+      "id": "lg-tv-no-signal-message-cause",
+      "claim": "'신호없음' 메시지는 외부입력 선택 오류, HDMI 연결 불량, 셋톱박스 전원 문제, 방송 신호 문제 중 하나를 나타내며, TV와 셋톱박스 전원 모두 확인 후 HDMI 케이블 분리·재연결이 기본 조치다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 손쉬운 설명 - LG TV 신호 없음 메시지 해결 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-1777960",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "TV", "line": "webOS 전 TV", "years": "현행 판매 모델", "region": "KR" },
+      "caution": null
+    },
+    {
+      "id": "lg-tv-antenna-channel-auto-search",
+      "claim": "유선방송(케이블) 또는 안테나 사용 시 신호 없음이 표시되면 자동 채널 설정을 실행해야 한다. webOS 6.0 이후는 설정 → 전체 설정 → 일반 → 방송 채널 → 채널 찾기 → 자동 채널 순서로 진행한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 손쉬운 설명 - LG TV 신호 없음 메시지 해결 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-1777960",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "TV", "line": "webOS 전 TV", "years": "webOS 6.0 이후", "region": "KR" },
+      "caution": "사용자의 TV 모델과 webOS 버전에 따라 메뉴 경로가 다를 수 있으므로 설정 메뉴를 직접 탐색할 필요가 있다",
+      "cautionSource": "LG전자 고객지원 메뉴 경로 변동 안내"
+    },
+    {
+      "id": "lg-settop-box-power-reset",
+      "claim": "셋톱박스 연결 시 신호 없음이 표시되면 셋톱박스 후면의 전원 선을 뽑았다가 다시 연결해 재부팅하며, 동시에 공유기도 같은 방식으로 재부팅해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG TV 화면] 화면하고 소리가 안 나와요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1777897",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "TV", "line": "셋톱박스 연결 TV", "years": "현행 판매 모델", "region": "KR" },
+      "caution": null
+    },
+    {
+      "id": "lg-hdmi-cable-reconnection",
+      "claim": "HDMI 연결 불량으로 신호 없음이 표시될 때는 TV와 셋톱박스의 전원을 끈 후 케이블을 양쪽에서 모두 완전히 분리했다가 다시 단단히 연결하는 것이 필수다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG TV 화면] 화면하고 소리가 안 나와요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1777897",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "TV", "line": "HDMI 입력 TV", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "HDMI 케이블을 여러 번 반복해 재연결해야 하면 케이블 손상을 의심하고 정품으로 교체하는 것이 권장된다",
+      "cautionSource": "LG전자 고객지원 HDMI 문제 진단 기준"
+    },
+    {
+      "id": "lg-magic-remote-pairing-wheel-button",
+      "claim": "LG 매직리모컨 페어링은 TV를 켜고 약 20초 후 리모컨의 휠(확인) 버튼을 누르면 자동으로 등록되며, 화면에 등록 완료 메시지가 나타난다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG TV] 매직 리모컨을 사용하는 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153749094807",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "TV", "line": "매직리모컨 지원 webOS TV", "years": "현행 판매 모델", "region": "KR" },
+      "caution": null
+    },
+    {
+      "id": "lg-magic-remote-re-pairing-settings-button",
+      "claim": "LG 매직리모컨이 TV에서 포인터가 나타나지 않거나 반응하지 않으면 이전 버튼과 설정 버튼을 동시에 5초 이상 눌러 등록을 해제한 후(리모컨 LED 깜박임), 휠 버튼을 눌러 재등록한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG TV] 매직 리모컨을 사용하는 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153749094807",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "TV", "line": "매직리모컨 지원 webOS TV", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "재등록 후 화면에 재등록 완료 알림이 나타나는지 확인해야 페어링이 성공한 것이다",
+      "cautionSource": "LG전자 고객지원 페어링 완료 기준"
+    },
+    {
+      "id": "lg-tv-power-led-indicator-off",
+      "claim": "LG TV 전원 표시등(LED)이 꺼져있으면 TV에 전원이 공급되지 않거나 설정 메뉴의 전원 대기 등 설정이 꺼진 상태다. 전원 코드 연결 상태를 먼저 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG TV 전원] 전원이 안 들어오거나 전면 대기 등에 불이 안 들어와요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1308624610740",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "TV", "line": "webOS 전 TV", "years": "현행 판매 모델", "region": "KR" },
+      "caution": null
+    },
+    {
+      "id": "lg-tv-power-reset-cold-boot",
+      "claim": "LG TV 소프트웨어 오류나 일시적 먹통 시 해결 방법은 전원 코드를 완전히 분리한 후 충분히 대기했다가 다시 연결하는 방식이며, 이 과정 중 TV 전원 버튼을 누르면 안 된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG TV 초기화 방법 및 소프트웨어 재시작]",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152067869746",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "TV", "line": "webOS 전 TV", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "전원 코드 재연결 후 TV가 자동으로 부팅될 때까지 기다려야 하며, 과정 중 임의 조작은 피해야 한다",
+      "cautionSource": "LG전자 고객지원 재시작 안전 절차"
+    },
+    {
+      "id": "lg-tv-self-diagnosis-path-webos",
+      "claim": "LG webOS TV 자가진단(상태 진단)은 리모컨 설정 버튼 → 전체 설정 → 고객지원 → 퀵 헬프 또는 상태 진단 항목에서 진행되며, 메뉴 경로는 TV 모델과 webOS 버전에 따라 다를 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — LG webOS TV 사용 설명서 및 자가진단 기능",
+      "source_url": "http://kr.eguide.lgappstv.com/manual/",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "TV", "line": "webOS 전 TV", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "구형 TV 또는 특정 모델은 자가진단 메뉴가 없거나 위치가 다를 수 있으므로 설정 메뉴를 직접 탐색해야 한다",
+      "cautionSource": "LG전자 고객지원 메뉴 구조 변동"
+    },
+    {
+      "id": "lg-tv-hdmi-test-diagnostic",
+      "claim": "LG TV HDMI 케이블 문제 진단은 2019년 이후 webOS 적용 제품에서 지원되며, 설정 → 전체 설정 → 고객지원 → 퀵 헬프(또는 상태 진단) → 항목 점검하기 → HDMI/RF 점검 경로로 진행하면 HDMI 연결 상태를 자동으로 테스트한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG TV HDMI 연결][2019년 이후 제품 webOS] HDMI 케이블 테스트 방법을 알고 싶어요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152063376950",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "TV", "line": "webOS TV HDMI", "years": "2019~", "region": "KR" },
+      "caution": "HDMI 테스트에서 케이블 불량으로 진단되면 정품 고속 HDMI 케이블로 교체해야 한다",
+      "cautionSource": "LG전자 고객지원 HDMI 진단 결과 해석"
+    },
+    {
+      "id": "lg-tv-hdmi-cable-damage-inspection",
+      "claim": "HDMI 케이블 손상 여부는 케이블 커넥터의 금속 핀이 휘었거나 이물이 없는지 육안으로 확인하고, 케이블이 심하게 꺾여있거나 손상되면 교체가 필요하다. 먼저 같은 위치에 다시 연결해본 후 다른 HDMI 포트로도 시도해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG TV HDMI 연결][2019년 이후 제품 webOS] HDMI 케이블 테스트 방법을 알고 싶어요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152063376950",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "TV", "line": "HDMI 입력 webOS TV", "years": "2019~", "region": "KR" },
+      "caution": null
+    },
+    {
+      "id": "lg-tv-initialization-reset-procedure",
+      "claim": "LG TV 초기화(공장 초기화)는 설정 → 전체 설정 → 고객지원 → 초기화 또는 리셋 메뉴에서 진행되며, 모든 설정과 설치된 앱이 제거되고 원래 상태로 복구된다. 초기화 과정 중에는 전원 코드를 분리하면 안 된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG TV] TV 초기화 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152067869746",
+      "checked": "2026-07-21",
+      "scope": { "brand": "LG", "category": "TV", "line": "webOS 전 TV", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "초기화는 리모컨 오류, TV 소프트웨어 오류, 앱 오류 등을 해결할 수 있지만, 전원·화면·음성 하드웨어 문제는 해결되지 않는다",
+      "cautionSource": "LG전자 고객지원 초기화 효과 범위"
+    }
+  ]
+}
