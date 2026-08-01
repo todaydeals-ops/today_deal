@@ -57,10 +57,10 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
           ) : (
             <>
               <h1 style={{ fontFamily: serif, fontWeight: 700, fontSize: "clamp(28px,4.4vw,44px)", lineHeight: 1.32, letterSpacing: "-1px", color: "#16140f", margin: "18px 0 0", maxWidth: 820, textWrap: "balance" }}>
-                광고 말고, <span style={{ color: "#ff5a3c" }}>논문</span>으로 검증하는 잠.
+                세상의 모든 잠, 오직 <span style={{ color: "#ff5a3c" }}>과학적 근거</span>로만 말합니다.
               </h1>
               <p style={{ fontSize: 15.5, lineHeight: 1.85, color: "#46433d", margin: "18px 0 0", maxWidth: 640 }}>
-                체험단이나 광고가 아니라 해외 수면 연구를 근거로 정리합니다. 아기부터 시니어까지, 인생 단계마다 다른 잠의 이야기입니다.
+                광고나 협찬글에 지친 당신을 위해. 해외 전문 수면 연구를 기반으로 아이부터 부모님까지, 인생 단계마다 꼭 필요한 중립적인 수면 솔루션을 정립합니다.
               </p>
             </>
           )}
