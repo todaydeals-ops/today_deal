@@ -6,6 +6,16 @@ const nextConfig = {
       { protocol: "https", hostname: "**" },
     ],
   },
+  // 서브도메인 라우팅: goodsleep.todaydeals.co.kr 루트 → /goodsleep(잠자리연구소)
+  async rewrites() {
+    return [
+      {
+        source: "/",
+        has: [{ type: "host", value: "goodsleep.todaydeals.co.kr" }],
+        destination: "/goodsleep",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
