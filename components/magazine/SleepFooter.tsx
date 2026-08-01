@@ -26,7 +26,7 @@ export default function SleepFooter() {
             © 2026 잠자리연구소 · 오늘의딜
           </div>
           <nav style={{ display: "flex", gap: 18, fontSize: 12, flexWrap: "wrap", height: "fit-content" }}>
-            <Link href="/goodsleep" style={{ color: "var(--text-body)", textDecoration: "none" }}>잠자리연구소</Link>
+            <a href="https://goodsleep.todaydeals.co.kr/" style={{ color: "var(--text-body)", textDecoration: "none" }}>잠자리연구소</a>
             <a href="https://www.todaydeals.co.kr" style={{ color: "var(--text-body)", textDecoration: "none" }}>오늘의딜</a>
             <Link href="/terms" style={{ color: "var(--text-body)", textDecoration: "none" }}>이용약관</Link>
             <Link href="/privacy" style={{ color: "var(--text-body)", textDecoration: "none" }}>개인정보처리방침</Link>

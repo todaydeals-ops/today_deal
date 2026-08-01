@@ -125,7 +125,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
             )}
             <span style={{ opacity: 0.5 }}>›</span>
             {isSleep ? (
-              <a href={`https://goodsleep.todaydeals.co.kr/goodsleep?cat=${sleepCat?.key ?? ""}`} style={{ color: "#3f5a54", fontWeight: 600, textDecoration: "none" }}>{sleepCat?.label ?? "수면"}</a>
+              <a href={`https://goodsleep.todaydeals.co.kr/?cat=${sleepCat?.key ?? ""}`} style={{ color: "#3f5a54", fontWeight: 600, textDecoration: "none" }}>{sleepCat?.label ?? "수면"}</a>
             ) : (
               <Link href={`/?corner=${a.corner}`} className="ul-sweep" style={{ color: c.color, fontWeight: 600, textDecoration: "none" }}>{c.name}</Link>
             )}

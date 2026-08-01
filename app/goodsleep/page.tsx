@@ -38,7 +38,7 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
     if (cat) q.set("cat", cat.key);
     if (p > 1) q.set("page", String(p));
     const s = q.toString();
-    return s ? `/goodsleep?${s}` : "/goodsleep";
+    return s ? `https://goodsleep.todaydeals.co.kr/?${s}` : "https://goodsleep.todaydeals.co.kr/";
   };
 
   return (
