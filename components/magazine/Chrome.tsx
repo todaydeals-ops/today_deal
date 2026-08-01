@@ -149,9 +149,6 @@ export function FeaturedImageSlot({ cornerKey, image, title }: { cornerKey: stri
       <div style={{ aspectRatio: "4 / 3", position: "relative", overflow: "hidden", background: "#ece5d9", border: "1px solid #d6cdbe" }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={image.url} alt={title ? `${title} — ${c.name} | 오늘의딜 매거진` : `${c.name} — 오늘의딜 매거진`} loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
-        {image.credit && (
-          <span style={{ position: "absolute", bottom: 6, right: 8, fontFamily: mono, fontSize: 9, color: "#fff", background: "rgba(0,0,0,.42)", padding: "2px 6px", borderRadius: 4 }}>{image.source || "Pexels"} · {image.credit}</span>
-        )}
       </div>
     );
   }

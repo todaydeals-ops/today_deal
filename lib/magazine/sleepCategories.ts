@@ -10,23 +10,23 @@ export interface SleepCategory {
 
 export const SLEEP_CATEGORIES: SleepCategory[] = [
   {
-    key: "growth", label: "성장하는 잠", en: "GROWTH", color: "#4a7c59", angle: "신체·뇌 발달",
+    key: "growth", label: "성장하는 잠", en: "GROWTH", color: "#4a7c59", angle: "우리 아이 성장 발달",
     slugs: ["baby-sleep-cycle-development", "baby-sleep-through-night", "sleep-training-methods-compare", "toddler-nap-night-sleep", "baby-sleep-environment-safety"],
   },
   {
-    key: "study", label: "공부잘하는 잠", en: "FOCUS", color: "#3f6a8a", angle: "집중·기억 공고화",
+    key: "study", label: "공부잘하는 잠", en: "FOCUS", color: "#3f6a8a", angle: "수험생 집중·기억력",
     slugs: ["sleep-academic-achievement", "teen-melatonin-phase-delay", "school-start-time-grades", "sleep-growth-hormone-height", "teen-bluelight-sleep", "teen-sleep-deprivation-mood", "allnighter-memory-consolidation", "cramming-vs-regular-sleep", "caffeine-halflife-sleep", "power-nap-cognition"],
   },
   {
-    key: "work", label: "일잘하는 잠", en: "PERFORM", color: "#8a6a3a", angle: "피로회복·생산성",
+    key: "work", label: "일잘하는 잠", en: "PERFORM", color: "#8a6a3a", angle: "직장인 피로와 생산성",
     slugs: ["sleep-debt-cognitive-performance", "sleep-deprivation-judgment", "shift-work-circadian", "social-jetlag-monday", "post-lunch-dip-coffee-nap", "burnout-insomnia-cycle"],
   },
   {
-    key: "harmony", label: "조화로운 잠", en: "BALANCE", color: "#9a5a7a", angle: "호르몬·스킨케어",
+    key: "harmony", label: "조화로운 잠", en: "BALANCE", color: "#9a5a7a", angle: "생체 리듬과 호르몬",
     slugs: ["menstrual-cycle-sleep", "pregnancy-sleep-position", "menopause-insomnia-night-sweats"],
   },
   {
-    key: "ageless", label: "늙지않는 잠", en: "AGELESS", color: "#5a7a6a", angle: "항노화·뇌 노폐물 배출",
+    key: "ageless", label: "늙지않는 잠", en: "AGELESS", color: "#5a7a6a", angle: "부모님 항노화·케어",
     slugs: ["aging-sleep-architecture", "senior-napping", "long-term-sleeping-pills", "sleep-dementia-risk"],
   },
   {
