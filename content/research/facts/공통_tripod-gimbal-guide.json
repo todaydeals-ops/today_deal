@@ -1,0 +1,279 @@
+{
+  "topic": "삼각대·짐벌 고르는 법 — 카메라·스마트폰 촬영 보조",
+  "brand": "공통",
+  "article": "tripod-gimbal-guide",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "tripod-material-aluminum-vs-carbon",
+      "claim": "삼각대 재질은 알루미늄과 카본이 주로 사용되며, 카본이 알루미늄보다 가볍고 단단하지만 가격이 더 비싸다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "카메라 제조사·전문 촬영 가이드",
+      "source_url": "https://www.nextdaily.co.kr/news/article.html?id=20080918800049",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "삼각대",
+        "line": "전체",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "카본 재질은 무게가 가볍기 때문에 장시간 사용 시 피로도가 낮지만, 비용이 높으므로 예산을 고려하여 선택해야 한다.",
+      "cautionSource": "촬영 실무 가이드"
+    },
+    {
+      "id": "tripod-max-load-selection",
+      "claim": "삼각대의 최대하중은 사용할 카메라 및 렌즈 무게에 맞게 선택해야 하며, 과도한 하중 용량의 제품을 구입할 필요는 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "촬영 장비 선택 가이드",
+      "source_url": "https://m.popco.net/forumView.php?IDX=83338&BID=dica_forum_sony",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "삼각대",
+        "line": "전체",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "최대하중이 높을수록 삼각대 자체의 무게가 무거워지는 경향이 있으므로, 실제 장비 무게보다 30~50% 정도 여유 있는 모델을 선택하는 것이 권장된다.",
+      "cautionSource": "촬영 실무 경험"
+    },
+    {
+      "id": "gimbal-three-axis-principle",
+      "claim": "3축 짐벌은 피치(pitch: 상하), 롤(roll: 좌우), 요(yaw: 회전) 3개 축의 회전 움직임을 보정하여 영상 흔들림을 제거한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "짐벌 기술 원리 문서",
+      "source_url": "https://www.elec4.co.kr/article/articleView.asp?idx=18248",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "짐벌",
+        "line": "3축 짐벌",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "gimbal-vs-tripod-stabilization-method",
+      "claim": "삼각대는 고정 지점에서 정적 안정성을 제공하고, 짐벌은 회전 모터를 통해 동적으로 움직임을 보정한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "촬영 보조 장비 비교",
+      "source_url": "https://namu.wiki/w/%EC%A7%90%EB%B2%8C",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "촬영 보조",
+        "line": "삼각대/짐벌 비교",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "삼각대는 정지 촬영, 타임랩스에 적합하고 짐벌은 이동 촬영, 팬 같은 역동적 촬영에 적합하다.",
+      "cautionSource": "촬영 용도별 선택 가이드"
+    },
+    {
+      "id": "smartphone-gimbal-portability",
+      "claim": "스마트폰 짐벌은 주로 휴대성을 강조하며 접이식 구조로 설계되어 있고, 대부분 3축 구조로 제공된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스마트폰 짐벌 제품 설계 가이드",
+      "source_url": "https://hshanu.or.kr/%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0-%EC%A7%90%EB%B2%8C%EA%B3%BC-%EC%B9%B4%EB%A9%94%EB%9D%BC-%EC%A7%90%EB%B2%8C%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "짐벌",
+        "line": "스마트폰 짐벌",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "스마트폰 짐벌은 브이로그나 개인 창작 콘텐츠 제작에 적합하며, 일상적인 촬영에 사용하기 좋다.",
+      "cautionSource": "스마트폰 짐벌 제품 가이드"
+    },
+    {
+      "id": "camera-gimbal-professional-use",
+      "claim": "카메라 짐벌은 DSLR, 미러리스 카메라 같은 무거운 장비를 지원하도록 설계되었으며, 스마트폰 짐벌보다 무겁고 비싸지만 더 높은 안정성과 다양한 기능을 제공한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "카메라 짐벌 제품 비교",
+      "source_url": "https://brunch.co.kr/@heima/6",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "짐벌",
+        "line": "카메라 짐벌",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "카메라 짐벌은 전문적인 영상 제작 환경에서 더욱 정밀한 결과물을 제공하지만, 초기 투자 비용이 크다.",
+      "cautionSource": "카메라 짐벌 제품 가이드"
+    },
+    {
+      "id": "dji-osmo-mobile-6-battery-specs",
+      "claim": "DJI Osmo Mobile 6 스마트폰 짐벌의 배터리 용량은 1000mAh이며, 단일 충전으로 약 6.4시간 연속 사용이 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DJI Osmo Mobile 6 공식 사양",
+      "source_url": "https://www.dji.com/osmo-mobile-6/specs",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "DJI",
+        "category": "짐벌",
+        "line": "Osmo Mobile 6",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "실제 사용 시간은 촬영 해상도(FHD vs 4K), 주변 온도, 팬 속도 등의 요인에 따라 단축될 수 있다.",
+      "cautionSource": "DJI Osmo Mobile 6 사용 가이드"
+    },
+    {
+      "id": "dji-osmo-mobile-6-weight",
+      "claim": "DJI Osmo Mobile 6의 무게는 약 309g이며, 휴대성을 갖춘 스마트폰 짐벌이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DJI Osmo Mobile 6 공식 사양",
+      "source_url": "https://www.dji.com/osmo-mobile-6/specs",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "DJI",
+        "category": "짐벌",
+        "line": "Osmo Mobile 6",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "320g 미만의 무게는 장시간 촬영 시에도 손과 팔에 무리를 주지 않는 수준으로 평가된다.",
+      "cautionSource": "휴대용 촬영 장비 무게 기준"
+    },
+    {
+      "id": "gorilla-pod-flexible-legs",
+      "claim": "고릴라포드는 유연한 다리 구조로 설계되어 각도를 자유롭게 조정할 수 있으며, 미니삼각대 카테고리에 속하는 여행용 촬영 보조 장비다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JOBY 고릴라포드 제품 설명",
+      "source_url": "https://www.cscamera.com/m/product_list.html?type=N&xcode=088&mcode=013&scode=003",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "미니삼각대",
+        "line": "고릴라포드",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "고릴라포드는 정품 JOBY 제품과 가품이 유통 중이며, 정품은 다리를 조정한 후 각도를 고정하는 락 노브가 있다.",
+      "cautionSource": "JOBY 고릴라포드 정품 식별 기준"
+    },
+    {
+      "id": "vlog-shooting-gimbal-recommendation",
+      "claim": "브이로그 촬영에는 스마트폰 짐벌이나 소형 카메라 짐벌이 적합하며, 한 손으로 조작 가능한 휴대성이 중요하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "브이로그 촬영 실무 가이드",
+      "source_url": "https://genape.ai/ko/tutorial-article/video-and-music/vlog-tutorial",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "짐벌",
+        "line": "스마트폰/소형 카메라",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "브이로그 촬영 중 짐벌의 배터리 시간을 미리 확인하고 예비 배터리를 준비하는 것이 권장된다.",
+      "cautionSource": "브이로그 제작 경험담"
+    },
+    {
+      "id": "night-photography-heavy-tripod",
+      "claim": "야경 촬영(장시간 노출, 저속 셔터)에는 무겁고 안정적인 삼각대가 필요하며, 바람이나 외부 진동에 견딜 수 있는 제품을 선택해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "야경 사진 촬영 기법 가이드",
+      "source_url": "https://www.sony.co.kr/electronics/support/articles/00206555",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "삼각대",
+        "line": "일반 삼각대",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "야경 촬영 시 삼각대에 달린 카메라의 무게가 최대하중의 50% 이상이면 미세한 떨림 위험이 커진다.",
+      "cautionSource": "야경 촬영 실무 경험"
+    },
+    {
+      "id": "portrait-shooting-vertical-orientation",
+      "claim": "인물 사진 촬영에는 세로 방향 촬영이 기본 원칙이며, 적절한 조명과 역광을 활용하면 피부와 머리카락이 부드러워 보이는 효과를 얻을 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "인물 사진 촬영 기법 가이드",
+      "source_url": "https://kmong.com/article/1126--%ED%94%84%EB%A1%9C%ED%95%84-%EC%82%AC%EC%A7%84-%EC%B4%AC%EC%98%81-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "사진 촬영",
+        "line": "인물 사진",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "인물 촬영에는 간단한 미니삼각대나 휴대용 거치대도 충분하며, 짐벌보다는 고정된 삼각대나 거치대를 통해 프레임 안정성을 확보하는 것이 중요하다.",
+      "cautionSource": "인물 사진 촬영 경험"
+    },
+    {
+      "id": "gimbal-payload-capacity",
+      "claim": "짐벌의 페이로드(최대 부하 무게)는 모델마다 다르며, 카메라와 렌즈의 실제 무게가 페이로드 한도 이내여야 정상 작동한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "짐벌 제품 사양 가이드",
+      "source_url": "https://imdron.com/category/%EC%B4%AC%EC%98%81%EC%9E%A5%EB%B9%84-%EC%A7%90%EB%B2%8C-%ED%8E%98%EC%9D%B4%EB%A1%9C%EB%93%9C/227/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "짐벌",
+        "line": "전체",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "짐벌 구입 전에 사용할 카메라와 렌즈의 실제 무게를 확인하여 페이로드 한도에 여유(20~30%)를 두고 선택하는 것이 권장된다.",
+      "cautionSource": "짐벌 사용 실무 가이드"
+    },
+    {
+      "id": "gimbal-temperature-operating-limit",
+      "claim": "짐벌은 극저온 환경에서는 작동이 제한될 수 있으며, 온도가 너무 낮으면 모터와 배터리 성능이 급격히 떨어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "짐벌 운영 환경 기준",
+      "source_url": "https://namu.wiki/w/%EC%A7%90%EB%B2%8C",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "짐벌",
+        "line": "전체",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "겨울철 야외 촬영 시 짐벌을 따뜻한 실내에서 미리 데운 후 사용하거나, 보온 케이스를 준비하는 것이 권장된다.",
+      "cautionSource": "짐벌 사용 환경 가이드"
+    },
+    {
+      "id": "ball-head-vs-pan-tilt-head",
+      "claim": "삼각대의 헤드는 크게 볼헤드(ball head)와 팬틸트헤드(pan-tilt head) 두 가지로 나뉘며, 볼헤드는 조작이 간단하고 팬틸트헤드는 미세한 각도 조정에 유리하다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "삼각대 헤드 타입 비교",
+      "source_url": "https://m.blog.daum.net/ats21c/7387722",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "삼각대",
+        "line": "헤드 타입",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "볼헤드는 구조가 단순하고 무게가 가볍지만 무거운 장비에서는 안정성이 떨어질 수 있다. 팬틸트헤드는 가로·세로 분리 조작이 가능해 정밀한 구도 조정이 필요할 때 유리하다.",
+      "cautionSource": "삼각대 헤드 선택 경험담"
+    }
+  ]
+}

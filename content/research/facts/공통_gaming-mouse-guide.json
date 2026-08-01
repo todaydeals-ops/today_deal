@@ -1,0 +1,397 @@
+{
+  "topic": "게이밍 마우스 선택 가이드 — DPI·무게·센서 어떻게 고르나?",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "dpi-definition",
+      "claim": "DPI(Dots Per Inch)는 마우스를 1인치(2.54cm) 움직일 때 화면 커서가 몇 픽셀 이동하는지를 나타내는 수치로, 높은 DPI일수록 같은 거리 이동 시 커서가 더 크게 이동한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CORSAIR 공식 — What is mouse DPI, and does it affect gaming?",
+      "source_url": "https://www.corsair.com/us/en/explorer/gamer/mice/what-is-dpi-does-it-affect-gaming/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "모든 마우스",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "dpi-misconception-high-not-better",
+      "claim": "DPI가 높다고 정확성이 좋아지거나 게이밍 성능이 향상되지는 않으며, '높을수록 좋다'는 것은 완전한 착각이다. 개인의 플레이 스타일에 맞는 DPI를 찾는 것이 중요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "탑랭킹 — 2026 게이밍 마우스 DPI 설정 가이드",
+      "source_url": "https://kotopranking.com/gaming-mouse-dpi-guide/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "모든 게임 장르",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "dpi-pro-gamers-usage-400-800",
+      "claim": "프로게이머의 80%가 400~800 DPI를 사용하며, 이는 높은 DPI 수치가 게이밍 성능을 향상시키지 않는다는 실증적 증거다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "탑랭킹 — 2026 게이밍 마우스 DPI 설정 가이드",
+      "source_url": "https://kotopranking.com/gaming-mouse-dpi-guide/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "경쟁 게이밍 (FPS/MOBA)",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "dpi-practical-range-800-1600",
+      "claim": "일상적인 게이밍 사용에서 권장되는 DPI 범위는 800~1600으로, 이 범위에서 대부분의 게이머가 최적의 조작감을 경험할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "탑랭킹 — 2026 게이밍 마우스 DPI 설정 가이드 및 DarkFlash 가이드",
+      "source_url": "https://kotopranking.com/gaming-mouse-dpi-guide/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "일반 게이밍",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "polling-rate-definition",
+      "claim": "폴링레이트(Polling Rate)는 마우스가 1초에 몇 번 자기 위치를 컴퓨터에 보고하는지를 나타내며, 1000Hz는 1초에 1000번, 즉 1ms(1000분의 1초)마다 한 번씩 보고하는 것을 의미한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "나무위키 — 게이밍 마우스",
+      "source_url": "https://namu.wiki/w/%EA%B2%8C%EC%9D%B4%EB%B0%8D%20%EB%A7%88%EC%9A%B0%EC%8A%A4",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "모든 마우스",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "polling-rate-gaming-standard-1000hz",
+      "claim": "2024~2025년 기준 1000Hz 폴링레이트는 게이밍 마우스의 표준 사양이며, 대부분의 신제품이 1000Hz로 출시된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "다나와 게이밍 마우스 통합검색 및 기술 커뮤니티",
+      "source_url": "https://search.danawa.com/dsearch.php?query=1000Hz%ED%8F%B4%EB%A7%81%EB%A0%88%EC%9D%B4%ED%8A%B8",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "유선 마우스",
+        "years": "2024~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "optical-sensor-advantage-light-surface",
+      "claim": "광학 센서는 LED 광원으로 표면의 미세한 요철을 감지해 움직임을 추적하며, 일반 마우스패드와 데스크 표면에서 가장 안정적으로 작동한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CORSAIR 공식 및 기술 커뮤니티",
+      "source_url": "https://coolenjoy.net/bbs/34/5629",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "광학 센서 마우스",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "optical-sensor-limitation-reflective-surface",
+      "claim": "광학 센서는 투명 유리, 거울, 매우 고광택인 대리석 표면처럼 빛을 완전히 반사하거나 흡수하는 표면에서는 작동하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Lenovo Korea 광학 마우스 용어 해설",
+      "source_url": "https://www.lenovo.com/kr/ko/glossary/optical-mouse/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "광학 센서 마우스",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "laser-sensor-advantage-varied-surfaces",
+      "claim": "레이저 센서는 파장이 짧은 레이저로 표면 변화를 광학 센서보다 더 민감하게 감지하여, 투명 유리, 금속 표면 등 다양한 재질에서 작동할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 커뮤니티 — 마우스 센서 기술 분석",
+      "source_url": "https://coolenjoy.net/bbs/34/5629",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "레이저 센서 마우스",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "laser-sensor-disadvantage-over-detection",
+      "claim": "레이저 센서는 '마우스 가속' 또는 '과감지' 현상이 발생할 수 있으며, 매우 빠르게 움직일 때 센서가 실제보다 과도하게 움직임을 포착하여 게이밍에 부정적 영향을 미친다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기술 커뮤니티 — 마우스 센서 기술 분석",
+      "source_url": "https://coolenjoy.net/bbs/34/5629",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "레이저 센서 마우스",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "게이밍 용도에는 광학 센서가 레이저 센서보다 강력히 권장된다. 레이저 센서는 이미 구형 기술로 평가된다.",
+      "cautionSource": "게이밍 마우스 커뮤니티 합의"
+    },
+    {
+      "id": "weight-trend-lightweighting-55g",
+      "claim": "최근 3년(2023~2025) 게이밍 마우스의 주요 변화는 무게 경량화이며, 현재 주류 경량 게이밍 마우스는 55~65g(무선 기준)으로 출시되고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "TILNOTE — 2026 경량 무선 게이밍 마우스 추천",
+      "source_url": "https://tilnote.io/en/pages/6a37c2b4478fbed2736f1a78",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "경량 무선 게이밍 마우스",
+        "years": "2023~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "weight-fatigue-55g-optimal",
+      "claim": "55g 이하의 초경량 마우스는 손 피로도가 매우 낮고 빠른 에임 추적이 용이하여 경쟁 게이밍에 최적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "게이밍 마우스 리뷰 및 기술 커뮤니티",
+      "source_url": "https://tilnote.io/en/pages/6a37c2b4478fbed2736f1a78",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "초경량 게이밍 마우스",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "wireless-latency-modern-negligible",
+      "claim": "2024~2025년 최신 무선 게이밍 마우스(2.4GHz RF 동글 사용)는 유선 마우스와의 지연 차이가 거의 무시할 수 있는 수준(0.001초 범위)으로 발전했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "게이밍 커뮤니티 및 프로게이머 사례",
+      "source_url": "https://www.a-ha.io/questions/41aeda81b766a7adb176cf66dca9f540",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "2.4GHz RF 동글 무선 마우스",
+        "years": "2024~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "pro-gamers-wireless-adoption-100percent",
+      "claim": "롤드컵, 발로란트 월드 챔피언십 등 국제 e스포츠 대회에 참가하는 프로게이머들은 거의 100% 무선 마우스를 사용한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "게이밍 커뮤니티 및 프로게이머 리뷰",
+      "source_url": "https://www.a-ha.io/questions/41aeda81b766a7adb176cf66dca9f540",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "무선 게이밍 마우스",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "palm-grip-stability-low-fatigue",
+      "claim": "팜 그립(손바닥 전체가 마우스에 닿는 방식)은 손과 팔 전체의 힘을 활용하므로 안정감이 높고 오래 게임해도 피로도가 낮은 장점이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CORSAIR 공식 — Mouse Grips Explained",
+      "source_url": "https://www.corsair.com/kr/ko/explorer/gamer/mice/mouse-grips-explained-fingertip-vs-palm-vs-claw/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "팜 그립 사용자",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "claw-grip-precision-quick-reaction",
+      "claim": "클로우 그립(손가락 끝을 버튼 위에 올리고 손바닥과 손목으로 조작)은 세밀한 움직임이 가능하여 정확성이 높고 빠른 반응속도가 필요한 게임(FPS, 격투게임)에 적합하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CORSAIR 공식 — Mouse Grips Explained",
+      "source_url": "https://www.corsair.com/kr/ko/explorer/gamer/mice/mouse-grips-explained-fingertip-vs-palm-vs-claw/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "클로우 그립 사용자",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "fingertip-grip-freedom-high-fatigue",
+      "claim": "핑거 그립(손바닥은 마우스에서 떼고 손가락으로만 조작)은 완벽한 자유도와 극단적 고감도 플레이가 가능하지만 손가락에 모든 힘이 집중되어 피로도가 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CORSAIR 공식 — Mouse Grips Explained",
+      "source_url": "https://www.corsair.com/kr/ko/explorer/gamer/mice/mouse-grips-explained-fingertip-vs-palm-vs-claw/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "핑거 그립 사용자",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "lod-definition-lift-off-distance",
+      "claim": "LOD(Lift-Off Distance)는 마우스를 표면에서 들었을 때 센서가 여전히 움직임을 인식하는 최대 높이를 나타내며, 낮을수록 정밀한 조작이 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "쿨엔조이 — LOD 센서에 대해 알아보자",
+      "source_url": "https://coolenjoy.net/bbs/review/558050",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "모든 마우스",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "lod-fps-gaming-critical-low-lift",
+      "claim": "FPS 게임에서는 마우스를 들었다 내려서 에임을 조정하는 기법을 사용하는데, LOD가 높으면 마우스를 들어도 센서가 인식되어 원하지 않는 에임 이동이 발생하므로 LOD가 낮아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "쿨엔조이 — 게이밍에 중요한 마우스 인풋 렉, LOD에 대한 유용한 정보",
+      "source_url": "https://coolenjoy.net/bbs/34/806485",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "FPS 게임 (발로란트, CS2, 오버워치 등)",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "lod-standard-logitch-1-2mm",
+      "claim": "로지텍의 게이밍 마우스 기준 LOD는 1.2mm 이하(CD 한 장 두께)를 권장하며, 2016년 이후 출시된 로지텍 게이밍 마우스들은 이 기준으로 설계된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "쿨엔조이 커뮤니티",
+      "source_url": "https://coolenjoy.net/bbs/34/30270",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "로지텍",
+        "category": "게이밍 마우스",
+        "line": "로지텍 게이밍 시리즈",
+        "years": "2016~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "fps-mouse-button-simplicity",
+      "claim": "FPS/MOBA 게임용 마우스는 왼쪽 클릭, 오른쪽 클릭, 휠 클릭, 사이드 버튼(앞/뒤) 2개 수준의 간단한 버튼 구성(5~7개)만 있으면 충분하며, 간단한 구성이 오히려 손에 편한 장점이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "나무위키 — 게이밍 마우스",
+      "source_url": "https://namu.wiki/w/%EA%B2%8C%EC%9D%B4%EB%B0%8D%20%EB%A7%88%EC%9A%B0%EC%8A%A4",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "FPS/MOBA 게임용",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "mmo-mouse-multi-button-macro",
+      "claim": "MMO/RPG 게임용 마우스는 사이드에 8~12개의 추가 버튼이 필요하며, 매크로 설정을 통해 다중 스킬 조합이나 반복 작업을 자동화할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "나무위키 — 게이밍 마우스",
+      "source_url": "https://namu.wiki/w/%EA%B2%8C%EC%9D%B4%EB%B0%8D%20%EB%A7%88%EC%9A%B0%EC%8A%A4",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스",
+        "line": "MMO/RPG 게임용",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "mousepad-cloth-optical-sensor-compatibility",
+      "claim": "천 재질 마우스패드는 광학 센서의 최고 궁합 재질이며, 부드러운 추적감으로 게이밍에 최적화되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "게이밍 마우스 커뮤니티 및 제조사 가이드",
+      "source_url": "https://coolenjoy.net/bbs/34/5629",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스패드",
+        "line": "천 재질 패드",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "mousepad-replacement-cycle-1-2-years",
+      "claim": "게이밍용 마우스패드는 1~2년 사용 후 표면이 매끄러워져 추적성이 저하되므로 교체가 권장된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "게이밍 커뮤니티 경험담",
+      "source_url": "https://coolenjoy.net/bbs/34/2425144",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "게이밍 마우스패드",
+        "line": "천 재질 패드",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    }
+  ]
+}

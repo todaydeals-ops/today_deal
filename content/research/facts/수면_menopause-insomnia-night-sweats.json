@@ -1,0 +1,209 @@
+{
+  "topic": "갱년기 불면증과 야간발한의 원인 및 관리",
+  "brand": "공통",
+  "article": "menopause-insomnia-night-sweats",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "vasomotor-symptoms-estrogen-temperature-regulation",
+      "claim": "갱년기의 야간발한과 안면홍조는 혈관운동증상(vasomotor symptoms)으로, 에스트로겐 감소로 인한 체온조절 중枢의 기능 이상이 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의학 문헌 & 폐경기 생리학",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6092036/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "여성 폐경기 건강",
+        "years": "폐경 전후",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "hot-flashes-night-sweats-prevalence-80-percent",
+      "claim": "여성의 약 80%가 폐경기에 안면홍조와 야간발한을 경험하며, 평균 발병 나이는 약 51세다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의학 문헌 & 대규모 역학 연구",
+      "source_url": "https://womensmentalhealth.org/posts/managing-sleep-problems-in-menopausal-women-what-options-do-we-have/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "폐경기 증상",
+        "years": "폐경 전후",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "vasomotor-symptoms-duration-7-years",
+      "claim": "혈관운동증상이 심한 여성의 경우 7년 이상 증상이 지속될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의학 문헌 & 폐경기 자연사 연구",
+      "source_url": "https://bywinona.com/journal/menopause-symptoms/night-sweats",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "폐경기 증상 기간",
+        "years": "폐경 전후",
+        "region": "글로벌"
+      },
+      "caution": "증상의 지속 기간은 개인차가 크며, 일부 여성은 수 개월, 일부는 10년 이상 경험하기도 한다.",
+      "cautionSource": "장기 추적 연구"
+    },
+    {
+      "id": "night-sweats-sleep-quality-disruption",
+      "claim": "야간발한으로 인한 야간 각성(night awakening)은 갱년기 여성의 불면증과 수면 품질 저하의 주요 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수면 의학 & 폐경기 연구",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6092036/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "폐경기 불면증",
+        "years": "폐경 전후",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "hrt-hormone-replacement-therapy-vasomotor-most-effective",
+      "claim": "호르몬 대체 치료(HRT, Hormone Replacement Therapy)는 혈관운동증상(야간발한, 안면홍조, 불면증)을 관리하기 위한 가장 효과적인 의학적 치료법이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의학 문헌 & 폐경기 치료 권장사항",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6092036/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "폐경기 약물 치료",
+        "years": "폐경 전후",
+        "region": "글로벌"
+      },
+      "caution": "HRT는 의료진의 판단에 따라 개인의 건강 상태, 가족력, 기타 위험 인자를 고려하여 결정해야 한다. 모든 여성에게 적합한 것은 아니다.",
+      "cautionSource": "폐경기 치료 가이드라인"
+    },
+    {
+      "id": "cognitive-behavioral-therapy-cbt-vasomotor-insomnia",
+      "claim": "인지행동치료(CBT, Cognitive Behavioral Therapy)는 갱년기 야간발한과 불면증을 관리하는 효과적인 비약물 치료법으로, 집단 CBT와 자가 도움 CBT 모두 증상 완화에 유의미한 효과를 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의학 문헌 & 무작위 통제 임상시험(RCT)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4823860/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "폐경기 비약물 치료",
+        "years": "폐경 전후",
+        "region": "글로벌"
+      },
+      "caution": "CBT는 약물 치료가 불가능하거나 원하지 않는 여성에게 권장되며, 의료진의 지도 하에 진행해야 한다.",
+      "cautionSource": "무작위 통제 시험"
+    },
+    {
+      "id": "gabapentin-sleep-quality-vasomotor-improvement",
+      "claim": "신경안정제 Gabapentin(가바펜틴, 상품명 Neurontin)은 갱년기 야간발한과 불면증을 감소시키고 수면 품질을 개선하는 약물 옵션이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "약학 문헌 & 갱년기 약물 치료 연구",
+      "source_url": "https://womensmentalhealth.org/posts/managing-sleep-problems-in-menopausal-women-what-options-do-we-have/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "폐경기 약물 치료",
+        "years": "폐경 전후",
+        "region": "글로벌"
+      },
+      "caution": "Gabapentin은 처방약으로, 의료진의 판단과 처방이 필요하다. 부작용(어지러움, 피로 등)이 있을 수 있다.",
+      "cautionSource": "약물 임상 정보"
+    },
+    {
+      "id": "caffeine-alcohol-worsen-night-sweats-sleep",
+      "claim": "카페인과 알코올 섭취는 야간발한과 불면증을 악화시키므로, 갱년기 증상 관리를 위해 제한하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의학 문헌 & 생활습관 관리 권장사항",
+      "source_url": "https://bywinona.com/journal/menopause-symptoms/night-sweats",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "폐경기 생활습관",
+        "years": "폐경 전후",
+        "region": "글로벌"
+      },
+      "caution": "카페인은 하루 10시간 전에, 알코올은 수면 2~3시간 전에 섭취를 피하는 것이 효과적이다.",
+      "cautionSource": "수면 의학 권장사항"
+    },
+    {
+      "id": "multimodal-approach-vasomotor-insomnia-management",
+      "claim": "갱년기 야간발한과 불면증의 최적 관리는 비호르몬 약물, 디지털 인지행동치료(digital CBT for insomnia), 자가 관리 전략을 결합한 다중 모달 접근법이 임상적으로 유의미한 개선을 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의학 문헌 & 다중 치료 임상시험",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10969475/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "폐경기 종합 관리",
+        "years": "2025~현행",
+        "region": "글로벌"
+      },
+      "caution": "다중 모달 접근법의 효과는 개인의 증상 심각도, 선호도, 의료 접근성에 따라 달라진다.",
+      "cautionSource": "임상 시험 결과"
+    },
+    {
+      "id": "psychosocial-interventions-menopause-vasomotor-symptoms",
+      "claim": "심리사회적 중재(psychosocial interventions)는 갱년기 혈관운동증상의 생리적 증상을 감소시키는 효과를 보이는 것으로 체계적 검토에서 확인되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의학 문헌 & 체계적 검토 및 메타분석",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1190205/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "폐경기 심리사회적 치료",
+        "years": "폐경 전후",
+        "region": "글로벌"
+      },
+      "caution": "심리사회적 중재에는 스트레스 관리, 이완 기법, 사회적 지지 등이 포함되며, 의료진의 안내가 필요하다.",
+      "cautionSource": "체계적 검토"
+    },
+    {
+      "id": "lamotrigine-case-report-vasomotor-insomnia-resolution",
+      "claim": "신경안정제 Lamotrigine(라모트리진)을 투여한 사례에서 갱년기 안면홍조, 야간발한, 불면증이 모두 호전된 임상 증례가 보고되었다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "임상 증례 보고 - Europe PMC",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1190205/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "폐경기 약물 치료",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": "이는 단일 증례 보고이며, lamotrigine이 갱년기 증상의 일반적 치료법으로 승인된 것은 아니다. 의료진 처방 필수.",
+      "cautionSource": "임상 증례 보고 제한사항"
+    }
+  ]
+}

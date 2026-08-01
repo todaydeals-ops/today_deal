@@ -12,7 +12,7 @@ import { FieldPill } from "@/components/magazine/Chrome";
 
 export const revalidate = 3600; // 1시간 캐시 — 매거진 아티클은 실시간 불필요
 const SITE = "https://www.todaydeals.co.kr";
-const mono = "'JetBrains Mono', monospace";
+const mono = "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif";
 const serif = "'Noto Serif KR', serif";
 const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
 
@@ -50,13 +50,12 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
     const fig = (im: { url: string; credit?: string; source?: string }) =>
       `<figure style="margin:42px 0 10px;border-radius:14px;overflow:hidden;position:relative;background:#ece5d9;border:1px solid #e4dccc;height:clamp(190px,34vw,380px);">` +
       `<img src="${esc(im.url)}" alt="${esc(a.title)}" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;" />` +
-      (im.credit ? `<figcaption style="position:absolute;bottom:8px;right:10px;font-family:'JetBrains Mono',monospace;font-size:10px;color:#fff;background:rgba(0,0,0,.42);padding:3px 8px;border-radius:5px;">${esc(im.source || "Pexels")} &middot; ${esc(im.credit)}</figcaption>` : "") +
       `</figure>`;
     const h2s = [...a.bodyHtml.matchAll(/<h2/g)].map((mm) => mm.index ?? 0);
     let spots: number[];
     if (h2s.length >= 2) {
       spots = use.length === 2
-        ? [h2s[Math.max(1, Math.floor(h2s.length / 5))], h2s[Math.floor(h2s.length / 2)]] // 초반 + 중간
+        ? [h2s[Math.max(1, Math.floor(h2s.length / 5))], h2s[Math.min(h2s.length - 1, Math.floor(h2s.length * 0.7))]] // 초반 + 후반부
         : [h2s[Math.floor(h2s.length / 2)]];
     } else {
       const p = a.bodyHtml.indexOf("</p>");

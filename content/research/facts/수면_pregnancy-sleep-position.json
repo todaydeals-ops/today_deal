@@ -1,0 +1,173 @@
+{
+  "topic": "임신기 수면 자세와 태아 안전",
+  "brand": "공통",
+  "article": "pregnancy-sleep-position",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "left-lateral-sleep-position-recommended",
+      "claim": "임신 중 좌측 옆으로 누운 자세(좌측와위)가 가장 권장되는 수면 자세다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의학 문헌 & 산과 권장사항",
+      "source_url": "https://perinatalexcellence.org/clinical-recommendations/maternal-sleep-position/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "임신 건강",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "supine-position-stillbirth-risk-5-8-percent",
+      "claim": "임신 중 앙와위(누운 자세)로 잠을 자면 stillbirth(사산) 위험이 증가하며, 전체 사산의 약 5.8%가 앙와위 수면 자세와 관련이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "산과학 임상 연구 & 전향적 코호트 연구",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6768734/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "임신 안전",
+        "years": "임신 중기~후기",
+        "region": "글로벌"
+      },
+      "caution": "특히 임신 28주 이후부터 위험이 증가한다. 이 통계는 전체 사산 중 앙와위와의 관련성이 약 5.8%라는 의미이며, 개별 위험도는 다양한 요인에 따라 달라진다.",
+      "cautionSource": "산과학 대규모 연구"
+    },
+    {
+      "id": "supine-sleep-late-stillbirth-odds-doubled",
+      "claim": "임신 중 앙와위로 잠든 경우 late stillbirth(후기 사산) 위험이 좌측와위 대비 2배 이상으로 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "산과 임상 연구 & 대규모 코호트 분석",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6768734/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "임신 후기 안전",
+        "years": "임신 28주~분만",
+        "region": "글로벌"
+      },
+      "caution": "후기 임신(3분기)에서의 관찰 자료이며, 이 위험은 다른 혼동 변수들의 영향을 조정한 수치다.",
+      "cautionSource": "산과 전향적 연구"
+    },
+    {
+      "id": "supine-sleep-fetal-weight-reduction-144g",
+      "claim": "임신 28주 이후 앙와위로 잠든 경우 평균 출생체중이 약 144g 감소하며, 이는 약 7일의 태아 성장 지연에 해당한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "산과 임상 연구 & 전향적 코호트",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6768734/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "임신 태아 성장",
+        "years": "임신 28주 이후",
+        "region": "글로벌"
+      },
+      "caution": "조정된 평균 차이(adjusted mean difference)이며, 개별 태아의 성장은 수면 자세 외 많은 요인의 영향을 받는다.",
+      "cautionSource": "산과 통계 분석"
+    },
+    {
+      "id": "supine-sleep-growth-restricted-fetus-stillbirth-15x-risk",
+      "claim": "태아가 이미 성장제한(성장부진)이 있는 경우, 임신 3분기에 앙와위로 잠든 산모의 stillbirth 위험이 그렇지 않은 경우 대비 약 15배 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "산과 임상 연구 & 위험도 분석",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6768734/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "임신 고위험군",
+        "years": "임신 3분기",
+        "region": "글로벌"
+      },
+      "caution": "이 통계는 태아 성장제한이 확인된 경우에만 적용되며, 매우 높은 위험도이므로 의료진의 상담이 필수다.",
+      "cautionSource": "산과 위험도 메타분석"
+    },
+    {
+      "id": "supine-sleep-vena-cava-compression-fetal-blood-flow",
+      "claim": "앙와위 자세는 하대정맥(inferior vena cava)을 압박하여 태반으로의 혈류를 감소시키고, 탯줄 동맥(umbilical artery) 혈류와 산소 교환에 악영향을 미친다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "산과 생리학 & 혈류 역학 연구",
+      "source_url": "https://link.springer.com/article/10.1186/1471-2393-15-S1-A4",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "임신 태아 혈류",
+        "years": "임신 중기~후기",
+        "region": "글로벌"
+      },
+      "caution": "이 압박은 특히 임신이 진행되고 자궁 크기가 커질수록 심해진다. 그래서 후기 임신에서 자세 권장사항이 더 중요하다.",
+      "cautionSource": "산과 혈역학 연구"
+    },
+    {
+      "id": "any-non-supine-position-stillbirth-reduction",
+      "claim": "최근 연구는 앙와위가 아닌 어떤 자세(좌측와위, 우측와위, 뒷면 제외 기타)로든 수면하면 stillbirth 위험이 유사하게 감소한다는 것을 보여주지만, 좌측와위가 가장 최적의 자세로 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "산과 임상 권장사항 & 최신 연구",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7356729/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "임신 수면자세",
+        "years": "임신 3분기",
+        "region": "글로벌"
+      },
+      "caution": "이는 앙와위 외 다른 자세들이 동등하다는 뜻이지만, 의료 권장사항은 여전히 좌측와위를 가장 선호한다.",
+      "cautionSource": "산과 메타분석"
+    },
+    {
+      "id": "gestational-insomnia-clinical-management-protocol",
+      "claim": "임신기 불면증(gestational insomnia) 관리를 위한 임상 알고리즘이 개발되고 있으며, 증거 기반의 단계적 관리(stepped-care) 접근법이 권장되고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Europe PMC - 임신기 불면증 임상 알고리즘",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7356729/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "임신 불면증 관리",
+        "years": "2025~현행",
+        "region": "글로벌"
+      },
+      "caution": "임신기 불면증은 약물 치료보다 비약물 중재(행동 치료, 인지 재구성 등)를 우선으로 하는 것이 원칙이다.",
+      "cautionSource": "임신 안전 권장사항"
+    },
+    {
+      "id": "maternal-position-cerebral-blood-flow-redistribution",
+      "claim": "산모의 수면 자세(특히 앙와위 대비 좌측와위)는 태아의 중뇌동맥(middle cerebral artery) 혈류 분포에 영향을 미친다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "산과 초음파 및 혈류 연구",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7356729/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "임신 태아 혈류",
+        "years": "임신 3분기",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

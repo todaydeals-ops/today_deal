@@ -1,0 +1,191 @@
+{
+  "topic": "공기청정기 구매가이드 — CADR·필터·소음·유지비·공간별 선택 기준",
+  "brand": "공통",
+  "article": "air-purifier-buying-guide",
+  "captured": "2026-07-28",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "hepa-filter-h13-standard-household-efficiency",
+      "claim": "현행 가정용 공기청정기의 90% 이상이 H13 등급 헤파필터를 탑재하며, H13은 0.3㎛ 입자를 99.95% 이상 제거하는 성능으로 가정용으로는 충분하고, 필터 간격이 덜 촘촘해 풍량과 효율성의 균형을 맞춘 표준 등급이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "에누리 공기청정기 필터 등급 가이드, TILNOTE 필터 선택 가이드",
+      "source_url": "https://m.enuri.com/knowcom/detail.jsp?kbno=579941",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "가정용 전 라인",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "H14 등급은 0.3㎛ 입자를 99.995% 제거하지만 필터가 매우 촘촘해 풍량이 약해질 수 있어 주로 산업·공업 환경에서 사용된다. 가정 구매 시 H13으로 충분하다.",
+      "cautionSource": "필터 등급별 실무 활용 기준"
+    },
+    {
+      "id": "bedroom-sleep-noise-level-30-35db-standard",
+      "claim": "공기청정기의 취침(침실) 환경 권장 소음 수준은 30~35dB(A)로, 이 범위를 초과하면 수면 방해가 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공기청정기 선택 기준 분석 자료 및 소음 건강 기준",
+      "source_url": "https://today.tomorrowbliss.com/entry/cadr-room-size-filter-choose",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "전 라인",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "저소음 모드에서도 30dB 이상이므로, 침실용 구매 시 제품 사양서의 저소음 운전 dB 수치를 반드시 확인해야 한다. 개인 수면 민감도에 따라 30dB도 수면을 방해할 수 있다.",
+      "cautionSource": "취침 소음 감도 개인차"
+    },
+    {
+      "id": "living-room-noise-40db-mid-range-acceptable",
+      "claim": "공기청정기의 거실 환경 권장 소음 수준은 40dB대 초중반으로, 이 범위에서 가족 대화나 TV 시청에 방해를 주지 않는 수준이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공기청정기 선택 기준 분석",
+      "source_url": "https://today.tomorrowbliss.com/entry/cadr-room-size-filter-choose",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "전 라인",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "고풍량 운전 시 50dB 이상으로 올라갈 수 있으므로, 고풍량 사용 시 소음을 감수해야 한다. 자동모드로 저풍량 운전 시 40dB대 수준 유지.",
+      "cautionSource": "풍량 vs 소음 관계"
+    },
+    {
+      "id": "cadr-noise-standard-korean-criteria",
+      "claim": "한국 기준의 CADR별 소음 표준은 4m³/min 미만 45dB, 4~8 범위 50dB, 8~16 범위 55dB, 16m³/min 이상 60dB로 설정되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공기청정기 소음 기준 한국 기준",
+      "source_url": "https://today.tomorrowbliss.com/entry/cadr-room-size-filter-choose",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "전 라인",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "제조사 사양표에 나열된 dB 수치는 기준 환경에서 측정된 것이므로, 실제 가정에서는 청정면적·벽면 재질·가구에 따라 체감 소음이 다를 수 있다.",
+      "cautionSource": "측정 환경 vs 실제 환경 차이"
+    },
+    {
+      "id": "filter-replacement-annual-cost-samsung-lg-winnix",
+      "claim": "정품 필터 교체 가격은 삼성 약 5.5만 원, LG 약 6만 원, 위닉스 약 6만 원 수준이며, 샤오미는 2만 원대로 브랜드별 최대 2~3배 차이가 난다. 교체 주기는 6~12개월(1일 24시간 사용 기준)이므로 연간 유지비는 제품마다 다르다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "네이트뉴스 필터 교체비용 비교, 다나와 DPG 제조사 유지비용 분석, 스트레이트뉴스",
+      "source_url": "https://news.nate.com/view/20191107n26262",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "주요 브랜드 현행 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "온라인 쇼핑몰의 비정품 필터는 정품 대비 절반 이하로 저렴하지만 성능·안전성 보장이 없다. 장기 유지비를 고려해 구매 전에 필터 가격을 반드시 확인해야 한다.",
+      "cautionSource": "비정품 필터의 위험성 및 초기 구매 시 확인 항목"
+    },
+    {
+      "id": "bedroom-room-size-10pyeong-33sqm-coverage",
+      "claim": "침실이나 원룸용 공기청정기는 33㎡(약 10평) 청정면적을 기준으로 선택하며, 이 크기면 좁은 공간을 빠르고 경제적으로 정화할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "렌트리 공기청정기 선택 기준, 공기청정기 선택 가이드",
+      "source_url": "https://rentre.kr/story/%EC%9B%90%EB%A3%B8%EC%B9%A8%EC%8B%A4-%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0-%EC%B6%94%EC%B2%9C-TOP4-%EA%B0%80%EA%B2%A9%EB%B9%84%EA%B5%90-2025%EB%85%84/oneroom-bedroom-air-purifier-recommendation-top4-price-comparison-2025",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "소형 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "침실 크기가 10평을 크게 넘으면 이 기준으로는 부족할 수 있다. 실제 침실 면적의 1.3~1.5배 커버 기준을 적용해 선택하는 것이 정확하다.",
+      "cautionSource": "공간 크기 변수"
+    },
+    {
+      "id": "living-room-size-20-25pyeong-large-model",
+      "claim": "거실용 공기청정기는 가족 모두가 함께 머무는 공간이므로 20~25평형 이상의 대형 모델이 적합하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "렌트리 공기청정기 선택 기준, 에이젠디 평수별 공기청정기 가이드",
+      "source_url": "https://rentre.kr/story/%EC%9B%90%EB%A3%B8%EC%B9%A8%EC%8B%A4-%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0-%EC%B6%94%EC%B2%9C-TOP4-%EA%B0%80%EA%B2%A9%EB%B9%84%EA%B5%90-2025%EB%85%84/oneroom-bedroom-air-purifier-recommendation-top4-price-comparison-2025",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "대형 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "실제 거실 면적에 1.3~1.5배를 곱한 청정면적을 선택하면 더 정확하다. 20평 거실이면 26~30평 청정면적 모델을 고르는 것이 소음 수준을 합리적으로 유지하면서 효율을 극대화한다.",
+      "cautionSource": "청정면적 계산 기준"
+    },
+    {
+      "id": "large-30pyeong-multi-unit-more-efficient",
+      "claim": "30평 이상 넓은 공간이나 거실과 주방이 연결된 개방형 구조에서는 대형 1대보다 중소형 2대를 나눠서 배치하는 것이 공기 순환 효율이 더 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "렌트리 평수별 공기청정기 선택 가이드",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0_%ED%9A%A8%EA%B3%BC%EB%A5%BC_92%ED%94%84%EB%A1%9C_%EC%9D%B4%EC%83%81_%EB%86%92%EC%9D%B4%EB%8A%94_%EB%B0%A9%EB%B2%95%EC%9D%80_(%EA%B3%B5%EA%B0%84%EB%B3%84_%ED%8F%89%EC%88%98,_%EA%B0%AF%EC%88%98_%EA%B3%A0%EB%A5%B4%EA%B8%B0)-10811",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "중소형 및 대형 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "2대 배치 시 필터 교체 비용이 배수로 증가하고 관리 부담도 늘어난다. 초기 구매가 저렴해도 장기 유지비를 고려해야 한다.",
+      "cautionSource": "다중 유지비 고려 항목"
+    },
+    {
+      "id": "humidifier-moisture-filter-damage-mold-risk",
+      "claim": "가습기와 공기청정기를 동시에 사용하면 가습 입자가 공기청정기 필터에 닿아 필터가 젖으면서 세균 번식, 필터 성능 저하, 곰팡이 생성 위험이 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "에이젠디 가습기·공기청정기 병용 주의사항, 뉴스앱스토리, GQ코리아 분석",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0_%EA%B0%AC%EC%8A%B5%EA%B8%B0_%EA%B2%B8%EC%9A%A9_%EC%B6%94%EC%B2%9C!_%EB%8F%99%EC%8B%9C_%EC%82%AC%EC%9A%A9_%EA%B0%80%EB%8A%A5%ED%95%A0%EA%B9%8C_%EB%A0%8C%ED%83%88_%ED%95%A0%EC%9D%B8_%EA%BF%80%ED%8C%81%EA%B9%8C%EC%A7%80-51699",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "가습 기능 없는 표준 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "반드시 필요하다면 두 기기를 최소 1~2m 이상 거리를 두고 배치해야 한다. 실내 습도를 40~60%로 유지하고, 가습기를 먼저 가동한 후 공기청정기를 켜거나 시간을 분리해 사용하는 것이 권장된다.",
+      "cautionSource": "동시 사용 시 필수 주의사항"
+    },
+    {
+      "id": "lg-hydrotower-integrated-humidifier-purifier-model",
+      "claim": "LG 하이드로타워(2023년 11월 이후 출시)는 가습기와 공기청정기를 하나의 제품으로 통합 설계해 별도 배치 없이 가습과 정화를 동시 수행할 수 있도록 만들어졌다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "GQ코리아 통합형 제품 소개, LG전자 신제품 안내",
+      "source_url": "https://www.gqkorea.co.kr/2025/02/11/%ED%95%A8%EA%BB%98-%EC%82%AC%EC%9A%A9%ED%95%A0-%EC%88%98-%EC%97%86%EB%8A%94-%EA%B0%80%EC%8A%B5%EA%B8%B0%EC%99%80-%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0-%ED%95%98%EB%82%98%EB%A7%8C-%EA%B3%A0/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "LG",
+        "category": "공기청정기",
+        "line": "하이드로타워",
+        "years": "2023.11~현행",
+        "region": "KR"
+      },
+      "caution": "통합형이라도 가습 분사 시에는 필터에 물입자가 닿을 수 있으므로, 제조사 사용설명서의 가습 기능 사용 방식을 반드시 확인해야 한다. 일반 가습기와는 달리 구조적으로 필터 보호 설계가 되어 있다.",
+      "cautionSource": "LG 제품 설계 특성"
+    }
+  ]
+}

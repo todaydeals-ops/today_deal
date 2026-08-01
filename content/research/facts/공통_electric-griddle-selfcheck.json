@@ -1,0 +1,188 @@
+{
+  "topic": "전기그릴·전기팬 자가점검 — 안 뜨거움·연기·눌어붙음·코팅 손상",
+  "brand": "공통",
+  "article": "electric-griddle-selfcheck",
+  "captured": "2026-07-28",
+  "reused_facts": [
+    "ptfe-continuous-use-temp",
+    "ptfe-decomposition-start-temp",
+    "ptfe-toxic-gas-temp",
+    "coating-damage-30-percent-threshold"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "griddle-thermostat-not-heating",
+      "claim": "전기그릴이 온도가 올라가지 않으면 온도조절기의 접점 산화 및 먼지 축적이 주요 원인이며, 전원 차단 후 조절기 외부 청소나 재시작으로 개선될 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "온도조절 기구 수리 사용자 보고 및 전문가 가이드",
+      "source_url": "https://hwany0707.com/%EC%A0%84%EA%B8%B0%EC%9E%A5%ED%8C%90-%EC%98%A8%EB%8F%84-%EC%A1%B0%EC%A0%88%EA%B8%B0-%EA%B3%A0%EC%9E%A5-%ED%99%95%EC%9D%B8%EB%B2%95/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "조리기구",
+        "type": "전기그릴·전기팬",
+        "issue": "온도 안 올라감",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "온도조절기 내부 접점을 직접 청소할 때는 감전 위험이 있으므로, 외부 청소 또는 전원 재시작 후에도 개선 안 되면 전문가 점검을 권한다.",
+      "cautionSource": "전기안전 기준"
+    },
+    {
+      "id": "griddle-relay-contact-wear",
+      "claim": "전기그릴의 릴레이 접점은 반복적인 스위칭으로 인해 마모되며, 접점 열화가 진행되면 전력 전달이 불안정해져 온도가 불규칙하게 올라갔다 내려간다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "전기 가열 기구 수리 전문가 가이드",
+      "source_url": "https://syz-shops.com/boiler-thermostat-troubleshooting-tips/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "조리기구",
+        "type": "전기그릴·전기팬",
+        "component": "릴레이",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "온도가 오락가락한다면 센서 뿐 아니라 릴레이 접점을 함께 의심해야 하며, 자가 점검을 넘어 서비스센터 진단이 필요한 단계다.",
+      "cautionSource": "전기 기구 점검 기준"
+    },
+    {
+      "id": "griddle-new-unit-burn-smell",
+      "claim": "새 전기그릴을 처음 사용할 때 나는 탄 냄새와 연기는 제조 과정에서 코팅면에 남은 오일이나 보호제가 가열되면서 타는 현상이며 정상이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전기그릴 제조사 사용 가이드 및 사용자 보고",
+      "source_url": "https://kitchenire.com/article/%EC%9D%B4%EC%9A%A9%EC%95%88%EB%82%B4-faq/3/24/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "조리기구",
+        "type": "전기그릴",
+        "condition": "신품 초기 사용",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "이 과정에서 충분히 환기해야 하며, 5~10분 정도 최고 온도로 예열하면 냄새가 사라진다. 환기 없이 밀폐 공간에서 사용하면 불쾌감이 심하므로 반드시 환풍기를 켜거나 창문을 열 것.",
+      "cautionSource": "사용자 실측 및 제품 가이드"
+    },
+    {
+      "id": "griddle-excess-smoke-causes",
+      "claim": "전기그릴에서 연기가 과도하게 나는 것은 고기의 지방층이 높은 온도에서 타거나, 기름받이에 물이 없어서 이전 조리의 기름이 재가열되거나, 소스나 양념이 타기 때문이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "전기그릴 사용자 경험 및 조리 가이드",
+      "source_url": "https://nosearch.com/contents/encyclopedia/kitchen/electric_grill/179",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "조리기구",
+        "type": "전기그릴",
+        "issue": "과도한 연기",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "기름받이에 물을 미리 붓고, 타지 않은 부위에서만 조리하며, 고기를 올리기 전에 여분의 기름을 종이타올로 닦아내면 연기를 크게 줄일 수 있다.",
+      "cautionSource": "사용자 조리 팁"
+    },
+    {
+      "id": "griddle-oilpan-water-function",
+      "claim": "전기그릴의 기름받이에 물을 미리 채우면 타는 기름에서 나오는 연기를 물이 냉각시켜 연기와 냄새 발생을 줄인다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "전기그릴 사용 가이드",
+      "source_url": "https://tefalwebzine.co.kr/living_tip/?uid=374&mod=document&pageid=1",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "조리기구",
+        "type": "전기그릴",
+        "component": "기름받이",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "기름받이에 물을 넣을 때는 조리 중 끓어서 튀지 않도록 적정량(보통 2~3cm 깊이)만 넣되, 매 조리마다 확인하여 증발한 물을 보충해야 한다.",
+      "cautionSource": "제품 사용 설명서 및 사용자 경험"
+    },
+    {
+      "id": "griddle-food-sticking-preheat",
+      "claim": "전기그릴에 고기가 눌어붙는 이유는 예열이 부족하거나 코팅이 손상되었을 때이며, 충분한 예열(약 5~10분)과 식물성 기름을 미리 발라주면 대부분 해결된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "전기그릴 조리 가이드",
+      "source_url": "https://tefalwebzine.co.kr/living_tip/?uid=374&mod=document&pageid=1",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "조리기구",
+        "type": "전기그릴",
+        "issue": "음식 눌어붙음",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "고기를 그릴에 올린 직후 4~5초 정도 건드리지 말고 기다려야 한다. 너무 빨리 뒤집으면 코팅에 더 손상을 주고 음식도 더 붙는다.",
+      "cautionSource": "사용자 조리 경험"
+    },
+    {
+      "id": "griddle-cleaning-soft-tools",
+      "claim": "전기그릴을 청소할 때는 금속 스크래퍼나 철 수세미를 피하고, 부드러운 스펀지나 실리콘 도구를 사용해야 코팅을 보호할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전기그릴 세척 가이드",
+      "source_url": "https://masterspot.decorexpro.com/ko/bytovaya-tehnika/elektrogrili/kak-myt-elektrogril/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "조리기구",
+        "type": "전기그릴",
+        "care": "세척",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "청소하기 전에 반드시 전원을 차단하고 그릴이 완전히 식을 때까지 기다려야 한다. 화상 위험이 크므로 따뜻한 상태에서 청소하지 말 것.",
+      "cautionSource": "안전 기준"
+    },
+    {
+      "id": "griddle-coating-burn-risk",
+      "claim": "전기그릴의 코팅(테프론)이 빈 팬 상태에서 고온(350℃ 이상)에 노출되면 코팅이 분해되어 독성 가스를 방출할 수 있으므로, 반드시 음식이나 기름을 먼저 올린 후 가열해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PTFE 제조사 기술 자료 및 코팅팬 안전 가이드",
+      "source_url": "https://ud-machine.com/blog/polytetrafluoroethylene-ptfe/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "조리기구",
+        "type": "전기그릴",
+        "material": "테프론 코팅",
+        "years": "전 연식",
+        "region": "전체"
+      },
+      "caution": "일반 조리 온도(180~200℃)에서는 테프론이 안전하지만, 빈 팬을 고온으로 예열하는 것은 절대 금지다. 특히 불판 위에 기름이나 음식을 올리지 않은 채 계속 가열하면 위험하다.",
+      "cautionSource": "PTFE 제조사 기술 문서"
+    },
+    {
+      "id": "griddle-coating-damage-replacement",
+      "claim": "전기그릴의 테프론 코팅이 30% 이상 벗겨져 기저 재료(알루미늄)가 넓게 드러나면 알루미늄 용출량이 급격히 증가하므로 교체를 권장한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 프라이팬 코팅 손상 기준",
+      "source_url": "https://www.mfds.go.kr/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "조리기구",
+        "type": "전기그릴",
+        "material": "테프론 코팅 알루미늄",
+        "damage_threshold": "30% 이상",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "코팅이 벗겨진 부위에서 떨어진 코팅 조각이 실수로 음식에 섞여 섭취되더라도, 소화기관을 그대로 통과해 배출되므로 독성 중독은 발생하지 않는다. 다만 미량의 알루미늄 용출이 증가할 수 있으므로 교체하는 것이 안전하다.",
+      "cautionSource": "식품의약품안전처 실험 결과"
+    }
+  ]
+}

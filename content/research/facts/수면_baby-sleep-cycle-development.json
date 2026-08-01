@@ -1,0 +1,79 @@
+{
+  "topic": "신생아·영아 수면주기 발달 및 야간각성",
+  "brand": "공통",
+  "article": "baby-sleep-cycle-development",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "infant-ultradian-cycle-lengthening",
+      "claim": "영아의 수면 주기(ultradian rhythm)는 생후 1년 동안 점진적으로 길어진다. 신생아 50-80분에서 성인 수준의 90분으로 발달.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Hammad et al., Sleep 2026",
+      "source_url": "https://doi.org/10.1093/sleep/zsag161",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 0-12개월",
+        "region": "국제"
+      },
+      "caution": "액티그래피 데이터 35,000시간 기반 종단 연구. 개인차 크며, 50-80분→90분 수치는 평균값.",
+      "cautionSource": "Hammad et al., Sleep 2026"
+    },
+    {
+      "id": "rem-sleep-percentage-infant",
+      "claim": "신생아는 총 수면 시간의 40-50%를 REM(빠른안구운동) 수면에서 보낸다. 성인은 20-25%.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Zhang et al., Int J Dev Neurosci 2026",
+      "source_url": "https://doi.org/10.1002/jdn.70078",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 0-6개월",
+        "region": "국제"
+      },
+      "caution": "REM 비율(40-50%) 발달 궤적이 개인차·환경 영향 받음. 평균값일 뿐.",
+      "cautionSource": "Zhang et al., Int J Dev Neurosci 2026"
+    },
+    {
+      "id": "nocturnal-waking-developmental",
+      "claim": "신생아의 2-3시간마다 깨는 현상(야간각성)은 수면 생리 발달 과정에서 정상적 단계. 생후 3-6개월 이후 감소.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Hammad et al., Sleep 2026",
+      "source_url": "https://doi.org/10.1093/sleep/zsag161",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 0-6개월",
+        "region": "국제"
+      },
+      "caution": "개인차 크며, 영양 상태·환경 자극 등 외부 요인도 영향. 2-3시간은 평균 간격.",
+      "cautionSource": "Hammad et al., Sleep 2026"
+    },
+    {
+      "id": "fetal-sleep-maturation",
+      "claim": "태아 수면 구조는 출생 전 30주부터 성숙 단계 진입. 생후 신생아 수면은 이를 이어받아 발전.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Tang et al., Sleep 2026",
+      "source_url": "https://doi.org/10.1093/sleep/zsag003",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "임신 30주~생후",
+        "region": "국제"
+      },
+      "caution": "태아-신생아 수면 생리 연속성 리뷰. 30주 기준은 평균값.",
+      "cautionSource": "Tang et al., Sleep 2026"
+    }
+  ]
+}

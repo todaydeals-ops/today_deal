@@ -1,0 +1,141 @@
+{
+  "topic": "아기 안전 수면 환경 (온도·빛·소음·SIDS)",
+  "brand": "공통",
+  "article": "baby-sleep-environment-safety",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "aap-safe-sleep-recommendations",
+      "claim": "AAP(미국소아과학회) 안전 수면 권고(2022): ①혼자 누우기(alone), 평평한 곳(flat), 부모 침실 내(room-sharing) 생후 1년 이상, ②천으로 된 침구 금지, ③엎드려 재우기 금지(야간), ④낙상 위험 제거.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAP(American Academy of Pediatrics) Policy Statement",
+      "source_url": "https://pediatrics.aappublications.org/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 0-12개월",
+        "region": "미국/국제 표준"
+      },
+      "caution": "AAP 권고는 미국 기준. 한국·유럽 등 지역별 가이드라인 차이 있음(방실 공유 권고 기간 등). 의료진 상담 필수."
+    },
+    {
+      "id": "sleep-environment-temperature",
+      "claim": "영아 수면 실내 온도 권고: 16-20°C(60-68°F). 과도한 보온(베개·담요·옷)은 SIDS 위험 증가. 아기 몸 따뜻함 확인은 목·등으로.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAP & NHS(영국 보건청) 안전수면 지침",
+      "source_url": "https://www.nhs.uk/conditions/sudden-infant-death-syndrome-sids/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 0-12개월",
+        "region": "미국·유럽 표준"
+      },
+      "caution": "실내 온도 권고가 16-20°C는 한국의 온열·보온 문화(방한 과다)와 충돌 가능. 개인 건강 상태(미숙아 등)에 따라 조정 필요.",
+      "cautionSource": "AAP & NHS 안전수면 지침"
+    },
+    {
+      "id": "safe-mattress-characteristics",
+      "claim": "영아용 침대 매트리스 안전 기준: 단단함(firmness) 필수, 밀도 충분(가라앉음 방지), 무독성 물질, 통기성 확보. 푹신한 메모리폼·쿠션 금지.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Oka et al., Clocks & Sleep 2025",
+      "source_url": "https://doi.org/10.3390/clockssleep7040070",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 0-12개월",
+        "region": "국제"
+      },
+      "caution": "제품 규격(firm vs medium firm) 표준화 부족. 제품 선택 시 안전 인증(ASTM·EN) 확인 필수."
+    },
+    {
+      "id": "sids-risk-factors",
+      "claim": "SIDS(영아 돌연사) 주요 위험 인자: 엎드려 수면, 과보온, 침대 공유, 부드러운 침구, 모자 사용, 부모 흡연·음주·약물. 뇌간 세로토닌 수용체 이상 생물학적 메커니즘 추정.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kinney et al., PLOS ONE 2025 + AAP",
+      "source_url": "https://doi.org/10.1371/journal.pone.0330940",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 0-12개월",
+        "region": "국제"
+      },
+      "caution": "위험 인자는 개별·누적 영향. 단일 요인만으로 SIDS 예측 불가. 다중 예방책 병행 필수."
+    },
+    {
+      "id": "co-sleeping-safety-concerns",
+      "claim": "부모-영아 침대 공유(co-sleeping)는 편의성 있으나, AAP 권고는 침대 공유 금지·방실 공유(room-sharing without bed-sharing) 권장(생후 1년). 침대 공유 시 낙상·질식 위험 증가.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAP Policy Statement 2022",
+      "source_url": "https://pediatrics.aappublications.org/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 0-12개월",
+        "region": "미국/서구"
+      },
+      "caution": "많은 문화(한국 포함)에서는 전통적으로 침대 공유 또는 방 공유 관행. 안전과 문화적 관행 간 트레이드오프 존재. 선택은 부모·의료진 상담 기반."
+    },
+    {
+      "id": "light-exposure-sleep-development",
+      "claim": "영아 생체시계 발달에 자연광(natural light) 노출 필수. 오전 햇빛 30-60분 노출은 생후 6-12주부터 야간 수면 통합 가속. 인공 조명만으로는 불충분.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "De Laet et al., Sleep 2026",
+      "source_url": "https://doi.org/10.1093/sleep/zsag010",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 6-12주",
+        "region": "국제"
+      },
+      "caution": "햇빛 노출이 30-60분이고, 오전(9-11시)이 최적이지만, 개인 감각 프로필·환경 조건에 따라 편차. 과도한 햇빛은 자극 위험(특히 고민감 아기).",
+      "cautionSource": "De Laet et al., Sleep 2026"
+    },
+    {
+      "id": "infant-product-material-breathing",
+      "claim": "일부 영아용품(범퍼 패드·베개·푹신한 장난감)의 재료가 통기성 저하 초래. 호흡 저항 증가로 CO2 재호흡 위험 경고.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Olvera et al., PLOS ONE 2025",
+      "source_url": "https://doi.org/10.29390/001c.141257",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 0-12개월",
+        "region": "국제"
+      },
+      "caution": "모든 범퍼·베개가 위험은 아니나, 매트리스 통기성 확보(가라앉음 없음) 필수. 제품 선택 시 안전 테스트 기준 확인."
+    },
+    {
+      "id": "safe-sleep-knowledge-gap",
+      "claim": "의료 전문가, 일반인 모두 안전수면 권고 인식 부족. 한국·동남아 지역에서는 전통적 관행(과보온·침대공유·베개사용)과 AAP 권고 간 충돌 심각.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Hess et al., Kan J Med 2025 + Lachore et al., PLOS ONE 2026",
+      "source_url": "https://doi.org/10.17161/kjm.vol18.22753",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 0-12개월",
+        "region": "동아시아·아프리카"
+      },
+      "caution": "지역 의료 문화와 국제 기준 간 합의 필요. 웹진은 양쪽 입장 모두 소개하되, AAP/WHO 기준을 기본으로 제시."
+    }
+  ]
+}

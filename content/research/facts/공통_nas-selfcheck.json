@@ -1,0 +1,281 @@
+{
+  "topic": "NAS(시놀로지·QNAP 등) 접속 안 됨·인식 불량·느림 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-28",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "synology-assistant-find-nas",
+      "claim": "Synology NAS를 찾을 수 없을 때는 Synology 다운로드 센터에서 무료로 제공하는 Synology Assistant 도구를 설치하면 로컬 네트워크의 모든 Synology 기기가 자동으로 검색되며 IP 주소·모델명·DSM 버전이 표시된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Synology 다운로드 센터 · Synology Assistant",
+      "source_url": "https://www.wundertech.net/how-to-find-a-synology-nas-on-a-network/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "시놀로지",
+        "category": "NAS",
+        "line": "전 라인",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "Windows·macOS·Linux 모두 지원. Assistant가 작동하지 않으면 find.synology.com 웹사이트를 시도할 것",
+      "cautionSource": null
+    },
+    {
+      "id": "find-synology-com-web-search",
+      "claim": "웹 브라우저에서 find.synology.com에 접속하면 로컬 네트워크의 Synology NAS를 브라우저 기반으로 검색할 수 있으며, 보통 몇 초 이내에 결과가 표시된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Synology · Find a Synology NAS",
+      "source_url": "https://www.wundertech.net/how-to-find-a-synology-nas-on-a-network/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "시놀로지",
+        "category": "NAS",
+        "line": "전 라인",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "nas-default-http-port-5000",
+      "claim": "Synology NAS의 기본 HTTP 웹 인터페이스 포트는 5000이며, 주소는 http://[NAS-IP]:5000 형식이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Synology DSM Settings · Network · DSM Setting",
+      "source_url": "https://kb.synology.com/en-sg/DSM/help/DSM/AdminCenter/connection_network_dsmsetting?version=6",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "시놀로지",
+        "category": "NAS",
+        "line": "전 라인",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "nas-default-https-port-5001",
+      "claim": "Synology NAS의 기본 HTTPS 웹 인터페이스 포트는 5001이며, 주소는 https://[NAS-IP]:5001 형식이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Synology DSM Settings · Network · DSM Setting",
+      "source_url": "https://kb.synology.com/en-sg/DSM/help/DSM/AdminCenter/connection_network_dsmsetting?version=6",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "시놀로지",
+        "category": "NAS",
+        "line": "전 라인",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "https-browser-security-warning-normal",
+      "claim": "IP 주소로 HTTPS(5001) 포트에 접속할 때 브라우저에 '연결이 안전하지 않습니다' 또는 인증서 경고가 나타나는 것은 정상이다. SSL/TLS 인증서가 도메인명을 기준으로 발급되기 때문이며, 경고 창에서 '계속 진행' 또는 '예외 추가'를 선택하면 접속할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Synology KB · DSM 보안 설정 및 커뮤니티",
+      "source_url": "https://www.synoforum.com/threads/change-from-http-to-https.13015/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "NAS·보안",
+        "line": "전 라인",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "도메인명을 할당하거나 자가 서명 인증서를 설정하면 경고 없음",
+      "cautionSource": null
+    },
+    {
+      "id": "nas-port-change-security-recommendation",
+      "claim": "보안상 이유로 Synology NAS의 기본 포트(HTTP 5000, HTTPS 5001)를 다른 포트로 변경하는 것이 권장되지만, 포트를 변경하면 새로운 포트 번호로 접속해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Synology KB · DSM 설정",
+      "source_url": "https://kb.synology.com/en-sg/DSM/help/DSM/AdminCenter/connection_network_dsmsetting?version=6",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "시놀로지",
+        "category": "NAS",
+        "line": "전 라인",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "변경된 포트 번호를 잊으면 초기화(하드 리셋)를 해야 하므로, 반드시 새 포트 번호를 기록해둘 것",
+      "cautionSource": null
+    },
+    {
+      "id": "quickconnect-intro",
+      "claim": "QuickConnect는 Synology가 제공하는 클라우드 기반 원격 접속 서비스로, 포트포워딩이나 DDNS 설정 없이 인터넷 어디서나 Synology 계정으로 NAS에 접속할 수 있으며 HTTPS/SSL 암호화를 통해 보안을 제공한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Synology Knowledge Center · Cloud · Set up QuickConnect",
+      "source_url": "https://kb.synology.com/ko-kr/DSM/help/DSM/Tutorial/cloud_set_up_quickconnect",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "시놀로지",
+        "category": "NAS·원격접속",
+        "line": "전 라인",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "정품 등록이 필요할 수 있음",
+      "cautionSource": null
+    },
+    {
+      "id": "quickconnect-address-format",
+      "claim": "QuickConnect의 접속 주소 형식은 quickconnect.to/[사용자지정-아이디]이다. 예: quickconnect.to/mynas123",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Synology Knowledge Center · Cloud · QuickConnect",
+      "source_url": "https://kb.synology.com/ko-kr/DSM/help/DSM/Tutorial/cloud_set_up_quickconnect",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "시놀로지",
+        "category": "NAS·원격접속",
+        "line": "전 라인",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "quickconnect-activation-path",
+      "claim": "QuickConnect를 활성화하려면 NAS 웹 인터페이스에서 메인 메뉴 → 제어판 → 외부 접근 → QuickConnect로 이동하여 '활성화' 버튼을 선택한 후 Synology 계정으로 로그인하고 커스텀 ID를 설정하면 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Synology Knowledge Center · Cloud · Set up QuickConnect",
+      "source_url": "https://kb.synology.com/ko-kr/DSM/help/DSM/Tutorial/cloud_set_up_quickconnect",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "시놀로지",
+        "category": "NAS·설정",
+        "line": "전 라인",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "nas-drive-recognition-official-guide",
+      "claim": "Synology NAS가 설치된 하드드라이브를 인식하지 못할 때는 Synology 공식 지식센터(kb.synology.com)에서 제공하는 가이드를 통해 진단 및 교체 절차를 확인할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Synology Knowledge Center · 'Synology NAS가 설치된 드라이브를 인식하지 못할 경우'",
+      "source_url": "https://kb.synology.com/ko-kr/DSM/tutorial/What_should_I_do_when_my_Synology_NAS_cannot_recognize_installed_drives",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "시놀로지",
+        "category": "NAS·저장장치",
+        "line": "전 라인",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "raid-recovery-dual-failure-data-loss-warning",
+      "claim": "Synology NAS에서 RAID 복구 중에 다른 드라이브에서 추가 오류가 발견되면 복구 작업은 중단되고 볼륨이 읽기 전용이 되어, 이 경우 데이터를 전부 백업한 후 스토리지 풀을 새로 구성해야 하며 데이터 손실 위험이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Synology Knowledge Center · 하드 드라이브 고장 복구 및 데이터 검색",
+      "source_url": "https://kb.synology.com/ko-kr/DSM/tutorial/How_to_fix_hard_drive_failure_and_retrieve_the_data_from_your_hard_drives",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "시놀로지",
+        "category": "NAS·RAID·저장장치",
+        "line": "전 RAID 모드",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "이런 상황에서는 전문가 데이터 복구 서비스 상담을 권장한다",
+      "cautionSource": "Synology KB · 하드 드라이브 고장 복구"
+    },
+    {
+      "id": "nas-fan-speed-modes-cooling-hierarchy",
+      "claim": "Synology NAS의 팬 속도 모드는 냉각 성능순으로 '최대 속도 > 냉각 모드 > 무음 모드'이며, DSM의 제어판에서 현재 온도를 확인한 후 필요에 따라 모드를 변경할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Synology Knowledge Center · 'Synology NAS에서 어떤 유형의 팬 속도 모드를 사용할 수 있습니까?'",
+      "source_url": "https://kb.synology.com/ko-kr/DSM/tutorial/What_type_of_fan_speed_modes_are_available_on_my_Synology_NAS",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "시놀로지",
+        "category": "NAS·냉각",
+        "line": "전 라인",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "온도가 높으면 현재보다 높은 팬 속도 모드로 변경할 것. 정상 범위는 보통 35~50°C",
+      "cautionSource": null
+    },
+    {
+      "id": "nas-drive-clicking-sound-mechanical-failure",
+      "claim": "Synology NAS에서 간헐적인 딱딱거림, 클릭음이 계속 들린다면 하드드라이브의 기계식 부품(읽기 헤드)이 손상되고 있다는 신호이며, 이 경우 즉시 새 파일 저장을 중단하고 기존 데이터를 백업한 후 드라이브를 교체해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Synology Knowledge Center · 'Synology NAS에서 비정상적인 소음이 발생합니다. 무엇을 할 수 있습니까?'",
+      "source_url": "https://kb.synology.com/ko-kr/DSM/tutorial/Why_does_my_Synology_NAS_make_unusual_noises",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "시놀로지",
+        "category": "NAS·저장장치·고장",
+        "line": "전 라인",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "임의로 드라이브를 제거하면 RAID 복구가 불가능해질 수 있으니 신중할 것",
+      "cautionSource": "Synology KB · 비정상 소음 해결"
+    },
+    {
+      "id": "nas-bad-sector-transfer-speed-degradation",
+      "claim": "Synology NAS의 파일 전송 속도가 느릴 때 주요 원인 중 하나는 하드드라이브의 배드섹터이며, 손상된 영역의 파일에 접근할 때 전송 속도가 급격히 떨어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Synology Knowledge Center · 'What should I do if file transfers are slow'",
+      "source_url": "https://kb.synology.com/ko-kr/DSM/tutorial/What_should_I_do_if_file_transfers_are_slow",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "NAS·성능",
+        "line": "전 라인",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "배드섹터가 많으면 드라이브 교체가 필요함. DSM의 저장소 관리자에서 드라이브 상태 정보 또는 S.M.A.R.T 데이터로 확인할 수 있음",
+      "cautionSource": null
+    },
+    {
+      "id": "nas-format-button-permanent-data-deletion",
+      "claim": "Synology NAS의 DSM 저장소 관리자에서 '포맷' 버튼을 누르면 해당 볼륨의 모든 데이터가 영구적으로 삭제되며 복구가 거의 불가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Synology Knowledge Center · Storage 관리",
+      "source_url": "https://kb.synology.com/ko-kr/DSM/help/DSM/StorageManager/storage_pool_expand_replace_disk",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "NAS·저장장치",
+        "line": "전 라인",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "복구 불가능한 상태에서만 포맷할 것. 불확실할 때는 절대 포맷하지 말고 전문가 상담을 받을 것",
+      "cautionSource": "Synology KB · Storage 관리"
+    }
+  ]
+}

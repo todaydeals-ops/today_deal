@@ -1,0 +1,245 @@
+{
+  "topic": "전기히터·온풍기 자가진단 (안 켜짐·열약함·냄새·자동꺼짐·소음·종류별 특성)",
+  "brand": "공통",
+  "article": "electric-heater-selfcheck",
+  "captured": "2026-07-28",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "heater-power-check-order",
+      "claim": "전기히터가 안 켜질 때 확인 순서: 1) 콘센트 연결 확인 2) 전원 스위치 ON 상태 확인 3) 분전함(차단기) 상태 확인 4) 전원 리셋(플러그 뽑았다 꽂기)",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전기히터 고장진단 매뉴얼 통합 안내",
+      "source_url": "https://nosearch.com/contents/encyclopedia/season/electric_heater/208",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기난방기",
+        "line": "스탠드형·벽부형·컨벡터 전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "overheat-cutoff-mechanism",
+      "claim": "과열차단(오버히트) 센서는 제품 내부 온도가 일정 수준 이상 올라가면 자동으로 전원을 차단하는 안전장치다. 작동 원리는 반사판에 부착된 바이메탈이나 온도센서가 임계값에 도달하면 회로를 끊는 방식이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전기히터 안전기능 가이드",
+      "source_url": "https://nosearch.com/contents/guide/season/fan_heater",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기난방기",
+        "line": "과열차단센서 탑재 전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "과열 차단이 작동하면 내부에 먼지가 쌓여 있을 가능성이 높다. 전원을 끄고 완전히 식힌 후 필터와 통풍구 먼지를 제거해야 한다",
+      "cautionSource": "제조사 고장진단 가이드"
+    },
+    {
+      "id": "overheating-dust-accumulation",
+      "claim": "전기히터가 과열 차단으로 자동 꺼졌을 때 가장 흔한 원인은 필터와 내부에 먼지가 축적되어 열 배출이 제대로 이루어지지 않는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전기히터 고장진단 매뉴얼",
+      "source_url": "https://nosearch.com/contents/encyclopedia/season/electric_heater/208",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기난방기",
+        "line": "장시간 사용 모든 기기",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "tip-over-cutoff-sensor",
+      "claim": "전도방지(넘어짐) 센서는 스탠드형 히터의 안전기능으로, 제품 하단부의 센서가 제품이 바닥에서 떨어지거나 내부 균형 센서가 일정 각도 이상 기울어지면 자동으로 전원을 차단한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전기히터 안전기능 가이드",
+      "source_url": "https://nosearch.com/contents/guide/season/fan_heater",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기난방기",
+        "line": "스탠드형 온풍기",
+        "years": "현행 안전기준 충족 모델",
+        "region": "KR"
+      },
+      "caution": "넘어짐 센서가 작동했다면 제품을 정상 수직 상태로 안정적으로 놓은 후 전원을 다시 켠다. 반복 낙하·기울기는 센서 손상을 유발할 수 있다",
+      "cautionSource": "제조사 안전사용설명서의 센서 민감도 주의사항"
+    },
+    {
+      "id": "burning-smell-dust-combustion",
+      "claim": "전기히터에서 타는냄새가 나는 원인은 필터에 쌓인 먼지와 내부 코일에 축적된 먼지가 가열되면서 연소되기 때문이다. 새 제품 첫 사용 시에도 제조 과정의 먼지·기름이 타는 냄새가 발생할 수 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "전기히터 사용자 경험담 종합",
+      "source_url": "https://www.milemoa.com/bbs/board/8913616",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기난방기",
+        "line": "모든 발열 방식",
+        "years": "신규 제품 첫 사용 또는 장기 미사용 후 재시작",
+        "region": "KR"
+      },
+      "caution": "새 제품의 냄새는 보통 1~2시간 사용으로 자연스럽게 사라진다. 장시간 사용 중 갑자기 심한 타는냄새가 나면 전원을 끄고 필터 상태를 확인할 것. 장시간 무시하면 화재 위험이 있다",
+      "cautionSource": "제조사 신규 제품 사용 안내 및 화재 예방 주의사항"
+    },
+    {
+      "id": "filter-cleaning-heat-recovery",
+      "claim": "필터가 먼지로 막히면 히터의 열 출력이 약해지고 온풍이 약해진다. 필터를 청소하거나 교환하면 대부분 성능이 회복된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전기히터 유지보수 가이드",
+      "source_url": "https://nosearch.com/contents/guide/season/electric_heater",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기난방기",
+        "line": "필터 탑재 모든 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "필터 청소 시 진공청소기로 먼지를 빨거나 에어건으로 불어낸다. 물 세척이 필요하면 중성세제와 미지근한 물을 사용하고 완전히 말린 후 재장착할 것",
+      "cautionSource": "제조사 필터 관리 매뉴얼"
+    },
+    {
+      "id": "fan-noise-causes",
+      "claim": "전기히터에서 소음이 나는 원인은 팬이 장시간 회전하면서 먼지를 흡입하거나, 팬 블레이드에 먼지가 축적되어 불균형을 일으키는 경우다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "온풍기 사용자 경험담 종합",
+      "source_url": "https://nosearch.com/contents/guide/season/fan_heater",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "온풍기",
+        "line": "팬 탑재 모든 기기",
+        "years": "장시간 사용 후",
+        "region": "KR"
+      },
+      "caution": "팬 청소는 필터 청소 후 진행한다. 팬 블레이드에는 부드러운 천이나 브러시로 먼지를 제거하고, 강한 수압으로 세척하지 말 것",
+      "cautionSource": "제조사 팬 유지보수 안내"
+    },
+    {
+      "id": "heater-type-quartz-tube",
+      "claim": "석영관 히터는 석영을 이용해 만든 유리관을 발열체로 사용하는 방식으로, 저렴한 가격, 빠른 예열 속도, 좁은 난방면적에 적합하다는 특징이 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전기히터 종류별 비교 가이드",
+      "source_url": "https://nosearch.com/contents/guide/season/electric_heater",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기난방기",
+        "line": "석영관 히터",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "heater-type-ptc",
+      "claim": "PTC 히터는 반도체 소재를 이용해 일정 온도에 도달하면 자동으로 발열이 제어되는 방식으로, 적정온도를 유지하고 화재 발생 위험이 가장 적다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전기히터 종류별 비교 및 PTC 히터 원리",
+      "source_url": "https://nosearch.com/contents/guide/season/electric_heater",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기난방기",
+        "line": "PTC 히터",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "heater-type-convector",
+      "claim": "컨벡터는 내부 알루미늄 열선으로 공기를 데워 내보내는 방식으로, 긴 예열 시간이 단점이지만 판넬 형태의 심플한 디자인으로 공간을 효율적으로 사용할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전기히터 종류별 비교 가이드",
+      "source_url": "https://nosearch.com/contents/guide/season/electric_heater",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기난방기",
+        "line": "컨벡터",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "heater-type-carbon",
+      "claim": "카본 히터는 작동 즉시 발열되어 체감 난방 효율이 우수하고 에너지 절감 효과가 있지만, 높은 온도로 인해 화재 위험이 높고 가격이 비싼 편이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전기히터 종류별 비교 가이드",
+      "source_url": "https://nosearch.com/contents/guide/season/electric_heater",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기난방기",
+        "line": "카본 히터",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "카본 히터는 고온이므로 직접 닿지 않도록 주의할 것. 유소아나 애완동물 근처에서는 사용하지 않는 것이 좋다",
+      "cautionSource": "제조사 화재 및 화상 예방 안내"
+    },
+    {
+      "id": "heater-type-oil-filled",
+      "claim": "오일 히터는 밀폐된 오일을 가열하여 방출하는 방식으로, 표면 온도가 상대적으로 낮아 안전하고 열복사 지속 시간이 길어 천천히 나누어 난방할 수 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "전기히터 종류별 특성 종합",
+      "source_url": "https://nosearch.com/contents/guide/season/electric_heater",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기난방기",
+        "line": "오일 히터",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "오일 누출 시 즉시 사용을 중단하고 제조사 서비스센터에 연락할 것. 오일이 나오면 화재 위험이 있다",
+      "cautionSource": "제조사 오일 누출 안전 주의사항"
+    },
+    {
+      "id": "temperature-setting-power-output",
+      "claim": "전기히터의 온도 설정이 낮으면 출력이 제한되어 실제 발열량이 낮아진다. 원하는 난방 효과를 원한다면 적절한 온도 설정이 중요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전기히터 설정 가이드",
+      "source_url": "https://nosearch.com/contents/guide/season/electric_heater",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "온도제어 기능 탑재 히터",
+        "line": "온도조절 기능 전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

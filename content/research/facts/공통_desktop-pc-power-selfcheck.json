@@ -1,0 +1,331 @@
+{
+  "topic": "데스크톱 PC 전원이 안 켜짐 — 하드웨어 물리적 원인 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "rated-capacity-15a-3300w",
+    "high-power-appliances-direct-outlet",
+    "multitap-replacement-cycle",
+    "wire-curling-heat-accumulation"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "power-supply-rear-switch-on-off",
+      "claim": "데스크톱 PC 파워서플라이 후면에는 전원 스위치(O/I 표시)가 있으며, 'I' 상태(켜짐)여야 전력이 공급된다. 'O' 상태(끔)일 때는 전원이 차단된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "컴퓨터 제조사 파워서플라이 설명서",
+      "source_url": "https://shoonyhan.com/%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0/%ED%8C%8C%EC%9B%8C%EC%84%9C%ED%94%8C%EB%9D%BC%EC%9D%B4/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "데스크톱 PC",
+        "line": "파워서플라이",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "이 스위치가 'O' 상태인 경우가 PC가 켜지지 않는 가장 흔한 원인이다. 재부팅이나 정전기 방전 후 스위치가 실수로 꺼졌을 수 있으니 먼저 확인할 것.",
+      "cautionSource": "실제 A/S 사례와 사용자 피드백"
+    },
+    {
+      "id": "power-cable-connection-check",
+      "claim": "PC와 벽면 콘센트 또는 멀티탭을 연결하는 파워 케이블이 양쪽 끝에 완전히 꽂혀 있는지 확인해야 한다. 느슨한 연결은 전원 공급 불안정을 야기한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ASUS, MSI, Gigabyte 메인보드 제조사 매뉴얼 공통 조항",
+      "source_url": "https://www.asus.com/kr/support/faq/1042632/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "데스크톱 PC",
+        "line": "전원 공급",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "케이블을 다시 연결할 때는 클릭 소리가 날 때까지 밀어 넣되, 손상이 없는지 육안으로 확인할 것. 물리적 손상, 단열 벗겨짐, 타는 냄새가 있으면 즉시 사용 중단.",
+      "cautionSource": "전기안전공사 전기용품 안전 가이드"
+    },
+    {
+      "id": "multitap-circuit-breaker-check",
+      "claim": "멀티탭을 사용 중이면 멀티탭 자체의 전원 스위치가 켜져 있고, 과부하 차단 버튼(주로 빨간색)이 튀어나와 있지 않은지 확인해야 한다. 튀어나왔다면 회로 차단기가 작동된 것이므로 버튼을 다시 눌러 리셋한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "멀티탭 제조사 안전 가이드",
+      "source_url": "https://www.nongmin.com/article/20250708500207",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "멀티탭·콘센트",
+        "line": "과부하 보호 기능",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "차단기가 자주 튀어나온다면 멀티탭의 정격 용량을 초과하거나 멀티탭 자체가 노화된 것이므로 사용을 중단하고 교체할 것.",
+      "cautionSource": "멀티탭 안전 기준"
+    },
+    {
+      "id": "psu-to-motherboard-24pin-connection",
+      "claim": "파워서플라이에서 메인보드로 공급하는 주 전원 케이블은 24핀 ATX 커넥터다. 이 케이블이 메인보드의 24핀 슬롯에 완전히 연결되어야만 전력이 공급된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Intel ATX 전원 공급 사양",
+      "source_url": "https://www.asus.com/kr/support/faq/1042632/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "데스크톱 PC",
+        "line": "메인보드 전원 연결",
+        "years": "ATX 규격(~2020년대)",
+        "region": "KR"
+      },
+      "caution": "케이스 조립 후 메인보드가 움직이면서 이 케이블이 느슨해질 수 있다. 특히 케이스를 옮기거나 충격을 받았다면 재연결을 확인할 것."
+    },
+    {
+      "id": "psu-to-cpu-8pin-connection",
+      "claim": "파워서플라이에서 CPU로 공급하는 보조 전원 케이블은 8핀(또는 4핀) 12V ATX 커넥터다. 이 케이블이 분리되면 전원이 켜지지 않거나 켜졌다 바로 꺼질 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSI 메인보드 매뉴얼 — CPU 전원 연결 가이드",
+      "source_url": "https://kr.msi.com/support/technical_details/MB_Boot_No_Display",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "데스크톱 PC",
+        "line": "CPU 보조 전원",
+        "years": "ATX 규격(~2020년대)",
+        "region": "KR"
+      },
+      "caution": "이 케이블이 분리되면 보통 부트루프(켜졌다 바로 꺼짐) 증상이 나타난다. 메인보드 상단에 위치하므로 케이스 조립 시 놓치기 쉽다."
+    },
+    {
+      "id": "front-panel-power-button-header",
+      "claim": "케이스 전면의 전원 버튼은 케이블을 통해 메인보드의 JFP1(Front Panel Header) 또는 PANEL 슬롯의 Power Switch 핀에 연결된다. 이 케이블이 분리되거나 접촉 불량이 있으면 전원 버튼이 작동하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ASUS ROG 메인보드 매뉴얼, MSI 매뉴얼",
+      "source_url": "https://www.asus.com/kr/support/faq/1042632/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "데스크톱 PC",
+        "line": "전면 패널 연결",
+        "years": "ATX 규격(~2020년대)",
+        "region": "KR"
+      },
+      "caution": "극성(+/−)이 뒤바뀌어도 작동하지 않지만 손상되지는 않는다. 메인보드 매뉴얼에서 JFP1 위치와 핀 번호를 반드시 확인할 것.",
+      "cautionSource": "ATX 전면 패널 커넥터 표준 및 메인보드 제조사 매뉴얼"
+    },
+    {
+      "id": "front-panel-button-connector-troubleshoot",
+      "claim": "전원 버튼이 반응하지 않으면 메인보드의 Power Switch 핀(JFP1)에 케이블이 정상 연결되었는지 확인하고, 정확하지 않으면 케이블을 제거한 후 금속 물체(예: 드라이버 팁, 클립)로 Power Switch 핀 두 개를 일시적으로 단락시켜 전원이 켜지는지 테스트할 수 있다. PC가 켜진다면 전면 버튼 케이블이나 연결이 문제인 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ASUS FAQ — 마더보드 문제 해결",
+      "source_url": "https://www.asus.com/kr/support/faq/1042632/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "데스크톱 PC",
+        "line": "전면 패널 진단",
+        "years": "ATX 규격(~2020년대)",
+        "region": "KR"
+      },
+      "caution": "이 테스트는 정전기 손상 위험이 있으므로 신중하게 진행해야 한다. 드라이버를 사용할 때는 핀이 아닌 해당 영역에만 접촉시키고, 이웃한 핀을 실수로 단락시키지 않도록 주의할 것."
+    },
+    {
+      "id": "cmos-clear-battery-removal",
+      "claim": "메인보드의 CMOS 배터리(CR2032 또는 유사 원형 배터리)를 제거하면 BIOS 설정이 초기화된다. 전원이 켜지지 않는 증상이 최근 BIOS 변경이나 오버클럭 설정 후부터 시작되었다면 배터리를 3~10분간 빼둔 후 다시 삽입하여 초기화를 시도할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dell 지원 센터 CMOS 배터리 교체 가이드",
+      "source_url": "https://www.dell.com/support/kbdoc/ko-kr/000135183/dell-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%83%91-%EC%BB%B4%ED%93%A8%ED%84%B0%EC%97%90%EC%84%9C-cmos-%EB%B0%B0%ED%84%B0%EB%A6%AC%EB%A5%BC-%EA%B5%90%EC%B2%B4%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "데스크톱 PC",
+        "line": "BIOS 설정",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "배터리 제거 전 반드시 PC 전원과 멀티탭 전원을 완전히 차단하고, 접지 스트랩을 착용하여 정전기 손상을 방지할 것. 배터리 주변의 플라스틱 고정장치를 조심스럽게 들어올려 배터리를 빼낼 것.",
+      "cautionSource": "정전기 방지 및 하드웨어 손상 방지 기준"
+    },
+    {
+      "id": "cmos-clear-jumper-method",
+      "claim": "일부 메인보드는 CMOS 클리어 점퍼를 제공한다. 매뉴얼에서 'CMOS_CLR' 또는 'CLR_CMOS' 점퍼를 찾은 후 핀을 다른 위치로 이동시켜 클리어할 수 있다. 점퍼 조작 후 다시 원래 위치로 복원하면 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ASUS, MSI, Gigabyte 메인보드 매뉴얼 공통 조항",
+      "source_url": "https://yellowit.co.kr/it-review/%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C-%EB%B0%94%EC%9D%B4%EC%98%A4%EC%8A%A4-%EC%B4%88%EA%B8%B0%ED%99%94-cmos-reset-2%EA%B0%80%EC%A7%80/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "데스크톱 PC",
+        "line": "BIOS 설정",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "점퍼의 정확한 위치와 이동 방향은 메인보드 매뉴얼에 명시되어 있으므로 반드시 확인할 것. 점퍼를 잘못 조작하면 CMOS 초기화 대신 다른 기능이 변경될 수 있다."
+    },
+    {
+      "id": "psu-paperclip-test",
+      "claim": "파워서플라이 자체의 고장을 확인하기 위해 클립 테스트(페이퍼클립 테스트)를 할 수 있다. 파워서플라이를 PC에서 분리한 후, 24핀 커넥터의 녹색 와이어(Power Good 신호)와 검은색 와이어(GND)를 금속 클립으로 단락시킨다. 파워서플라이의 팬이 회전하면 파워서플라이가 최소한 작동 상태다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Silverstone 파워서플라이 테스트 가이드 (PDF)",
+      "source_url": "https://www.silverstonetek.com/upload/downloads/QA/PSU/PSU-Paper%20Clip-KR.pdf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "데스크톱 PC",
+        "line": "파워서플라이 진단",
+        "years": "ATX 규격(~2020년대)",
+        "region": "KR"
+      },
+      "caution": "이 테스트는 전기적으로 위험할 수 있으므로 신중하게 진행해야 한다. 팬이 회전해도 모든 전압(3.3V, 5V, 12V)이 정상이라는 보장은 아니며, 테스트 후 파워서플라이를 PC에 재연결하기 전에 반드시 전원을 차단할 것.",
+      "cautionSource": "고전압 장비 안전 기준 및 제조사 안내"
+    },
+    {
+      "id": "ram-reseat-procedure",
+      "claim": "RAM(메모리)의 접촉 불량은 PC가 켜지지 않는 흔한 원인이다. 모든 RAM을 슬롯에서 분리한 후, 한 개씩 권장 슬롯(보통 가장 먼저)에 재장착하여 테스트한다. RAM을 슬롯에 삽입할 때는 양쪽 끝의 홈이 케이스와 맞는지 확인하고, '딸깍' 소리가 날 때까지 밀어 넣는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Corsair RAM 테스트 가이드",
+      "source_url": "https://help.corsair.com/hc/en-us/articles/14238510858637-RAM-How-to-Test-RAM-Modules-for-Memory-Issues",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "데스크톱 PC",
+        "line": "메모리(RAM)",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "RAM 재장착 전 반드시 PC 전원을 완전히 차단하고, 파워서플라이도 분리할 것. 정전기 방지 스트랩을 착용하고, RAM 금색 접촉부를 손가락으로 직접 만지지 않도록 주의할 것."
+    },
+    {
+      "id": "ram-contact-cleaning",
+      "claim": "RAM의 금색 접촉 부분에 먼지나 산화층이 쌓여 접촉 불량을 일으킬 수 있다. 부드러운 지우개로 조심스럽게 닦거나, 에어로 불어 먼지를 제거한 후 재장착하면 문제가 해결되기도 한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "PC 조립·수리 커뮤니티 및 사용자 경험담",
+      "source_url": "https://quasarzone.com/bbs/qf_cmr/views/2116865",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "데스크톱 PC",
+        "line": "메모리(RAM)",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "강하게 문지르거나 화학제(알코올 제외)를 사용하면 RAM이 손상될 수 있다. 먼지가 눈에 띄게 있을 때만 시도하고, 산화·그을림이 심하면 전문 점검을 권할 것.",
+      "cautionSource": "하드웨어 손상 방지 기준"
+    },
+    {
+      "id": "boot-loop-symptom-power-on-off-cycle",
+      "claim": "PC가 켜졌다 수 초 만에 바로 꺼지고, 자동으로 다시 켜졌다 또 꺼지는 증상(부트루프)이 반복되면, 파워 불안정·CPU 쿨러 미체결·RAM 접촉 불량·CPU 보조 전원(8핀) 미연결·쿨러로 인한 과열 보호가 가능성 높은 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSI 기술 지원 문서 — PC 부팅 후 즉시 전원 차단",
+      "source_url": "https://kr.msi.com/support/technical_details/MB_Boot_PowerOff",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "데스크톱 PC",
+        "line": "부팅 실패",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "이 증상이 나타나면 즉시 전원을 끄고, 위의 케이블 재연결·RAM 재장착·CMOS 클리어를 차례로 시도할 것. 파워서플라이 팬이 한두 번만 회전 후 멈춘다면 파워 고장 가능성이 높다."
+    },
+    {
+      "id": "motherboard-standby-led-indicator",
+      "claim": "현대 메인보드는 5V 대기 전원 공급 여부를 나타내는 LED(보통 작은 녹색 또는 주황색 불빛)를 탑재한다. 이 LED가 꺼져 있으면 파워서플라이에서 24핀 전원 공급이 되지 않는 것이고, 켜져 있으면 메인보드는 전력을 받고 있는 상태다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ASUS 메인보드 매뉴얼 공통 조항",
+      "source_url": "https://www.asus.com/kr/support/faq/1042632/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "데스크톱 PC",
+        "line": "메인보드 진단",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "대기 LED가 꺼져 있으면 파워서플라이 후면 스위치 확인 → 24핀 케이블 재연결을 우선 확인할 것. LED가 켜져 있는데 전원이 안 켜진다면 전면 버튼 연결이나 다른 부품을 의심해야 한다."
+    },
+    {
+      "id": "cpu-cooler-improper-seating-boot-failure",
+      "claim": "CPU 쿨러가 메인보드에 제대로 체결되지 않으면 CPU와 쿨러 사이에 공기가 들어가 CPU가 과열되고, 부팅 과정에서 써멀 스로틀링 또는 과열 보호가 작동하여 PC가 꺼질 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Intel CPU 설치 가이드, AMD Ryzen 설치 가이드",
+      "source_url": "https://kr.msi.com/support/technical_details/MB_Boot_PowerOff",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "데스크톱 PC",
+        "line": "CPU 냉각",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "쿨러가 반복적으로 탈착된 경우, 쿨러 베이스의 써멀 그리스가 마르거나 벗겨졌을 수 있다. 쿨러 재장착 시 새로운 써멀 그리스를 작은 양으로 발라야 한다(완전히 겹칠 정도).",
+      "cautionSource": "Intel·AMD 공식 CPU 설치 매뉴얼"
+    },
+    {
+      "id": "psu-fan-rotation-check",
+      "claim": "파워서플라이가 켜져도 팬이 전혀 회전하지 않으면 파워서플라이 고장이나 팬 고장을 의심할 수 있다. 다만 최신 파워서플라이 중 일부는 저부하 시 팬이 꺼지는 '팬리스 모드'를 지원하므로, 간단한 부하(예: 클립 테스트)에서는 팬이 회전하지 않을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "파워서플라이 제조사 기술 가이드(Corsair, Silverstone 등)",
+      "source_url": "https://help.corsair.com/hc/en-us/articles/360025085372-PSU-How-to-test-a-PSU-Power-Supply-Unit",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "데스크톱 PC",
+        "line": "파워서플라이",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "팬리스 모드와 실제 팬 고장을 구분하려면 클립 테스트 시 약간의 부하(예: 메모리 모듈 연결 등)를 더하면 팬이 회전할 수 있다."
+    },
+    {
+      "id": "psu-internal-disassembly-danger-warning",
+      "claim": "파워서플라이 내부에는 고전압 커패시터가 있어 전원을 차단한 후에도 치명적인 전기 충격을 줄 수 있다. 파워서플라이 케이스를 열어서는 절대 안 되며, 내부 문제는 교체 또는 전문 서비스센터에서만 처리해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전기안전공사 전기용품 안전 기준, 파워서플라이 제조사 매뉴얼",
+      "source_url": "https://www.kats.go.kr/cwsboard/board.do?mode=download&bid=155&cid=16762&filename=16762_201411271652343023.pdf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "데스크톱 PC",
+        "line": "파워서플라이 안전",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "파워서플라이 내부 분해는 절대 금지다. 감전·화재·치명적 부상의 위험이 있다.",
+      "cautionSource": "전기안전공사 기준 및 제조사 안내"
+    },
+    {
+      "id": "static-electricity-prevention-during-pc-assembly",
+      "claim": "PC 내부 작업 시 정전기(ESD)는 부품을 손상시킬 수 있다. 작업 전 손목 스트랩(접지 스트랩)을 착용하거나, 금속 케이스에 손을 자주 접촉하여 정전기를 방전시켜야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Intel, AMD, ASUS 등 부품 제조사 공통 안내",
+      "source_url": "https://support.intel.com/en-us/articles/000023905",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "데스크톱 PC",
+        "line": "조립·수리",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "특히 겨울철 실내 환경에서 정전기 위험이 높다. 카펫 위에서 작업하거나, 부품을 만지기 전에 콘크리트 바닥이나 금속 물체에 손을 접촉하지 않을 것."
+    }
+  ]
+}

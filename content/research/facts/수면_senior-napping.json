@@ -1,0 +1,78 @@
+{
+  "topic": "노인의 낮잠과 건강",
+  "brand": "공통",
+  "article": "senior-napping",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "daytime-napping-nocturnal-sleep-interaction",
+      "claim": "낮잠 시간과 야간 수면 시간의 상호작용이 인지 기능에 영향을 미친다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Luo X et al., Sleep quality modifies the association between nocturnal sleep, daytime napping, and mild cognitive impairment: A population-based dose-response study, Sleep Medicine X",
+      "source_url": "https://doi.org/10.1016/j.sleepx.2026.100175",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "낮잠 · 노인",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "이 연구는 집단 차원의 용량-반응 연구이므로, 개인의 낮잠이 반드시 인지 장애로 이어진다는 의미는 아니며, 전체적인 수면 질이 조절 요인임"
+    },
+    {
+      "id": "daytime-napping-nocturnal-sleep-mild-cognitive-impairment",
+      "claim": "야간 수면과 낮잠의 조합이 경도 인지 장애(MCI) 위험과 연관된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Luo X et al., Sleep quality modifies the association between nocturnal sleep, daytime napping, and mild cognitive impairment: A population-based dose-response study, Sleep Medicine X",
+      "source_url": "https://doi.org/10.1016/j.sleepx.2026.100175",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "낮잠 · 노인",
+        "years": "전체",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "daytime-napping-heart-rate-prolongation",
+      "claim": "장시간 야간 수면과 낮잠이 고혈압 환자에서 QTc 연장(심율동 이상의 지표)을 유발할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Mohammadi Z et al., The interactive effect of long nighttime sleep and daytime napping on QTc prolongation in hypertensive adults, BMC Cardiovascular Disorders",
+      "source_url": "https://doi.org/10.1186/s12872-026-05670-7",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "낮잠 · 고혈압",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "심율동 이상은 심각한 건강 위험이므로, 고혈압이 있는 노인이 낮잠을 포함한 수면 습관 변화를 할 때 의료진과 상담 필수"
+    },
+    {
+      "id": "pm25-exposure-sleep-duration-elderly",
+      "claim": "미세먼지(PM2.5) 노출이 노인의 야간 수면 시간과 낮잠 시간에 영향을 미친다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Hu L et al., Intermediate- and Long-Term Exposure to PM2.5 and Its Chemical Components in Relation to Nocturnal Sleep Duration and Daytime Napping Duration, Toxics",
+      "source_url": "https://doi.org/10.3390/toxics14050437",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "낮잠 · 환경",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "환경 요인이 수면에 미치는 영향은 개인의 민감성과 노출 기간에 따라 다르므로, 미세먼지 많은 날씨에 수면 변화를 느낀다면 실내 공기 질 관리도 고려"
+    }
+  ]
+}

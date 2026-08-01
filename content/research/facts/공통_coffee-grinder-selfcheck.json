@@ -1,0 +1,209 @@
+{
+  "topic": "커피 그라인더 분쇄 불량·안 갈림·소음 자가점검 — 날 막힘·마모·정전기·과부하 보호",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "grinder-not-grinding-causes",
+      "claim": "커피 그라인더가 원두를 갈지 못할 때의 주요 원인은 원두가 축축해서 날에 걸리는 경우, 오래된 미분과 찌꺼기로 날이 막혀 있는 경우, 그라인더 날이 심하게 마모된 경우다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "커피 커뮤니티 사용자 보고 및 바리스타뉴스",
+      "source_url": "https://baristanews.co.kr/edu/%EC%BB%A4%ED%94%BC-%EA%B7%B8%EB%9D%BC%EC%9D%B8%EB%8D%94%EA%B0%80-%EB%A7%89%ED%98%98%EB%8B%A4%EB%A9%B4-%EB%AF%B8%EB%A6%AC-%EC%95%8C%EC%95%84%EB%91%90%EB%A9%B4-%EC%A2%8B%EC%9D%80-%EC%82%AC%ED%95%AD/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동 커피 그라인더",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "안 갈린다고 해서 즉시 고장은 아니다. 원두 상태 확인·찌꺼기 청소·분해 검사를 순차적으로 진행할 것.",
+      "cautionSource": "바리스타뉴스의 자가 점검 가이드"
+    },
+    {
+      "id": "uneven-grind-size-causes",
+      "claim": "그라인더에서 분쇄된 커피 입자의 크기가 불균일할 때의 주요 원인은 그라인더 날의 청소 부족(미분 축적) 또는 그라인더 날의 마모다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "바리스타뉴스, 바리스타룰스",
+      "source_url": "https://baristanews.co.kr/tech/%EB%B2%84-%EA%B7%B8%EB%9D%BC%EC%9D%B8%EB%8D%94-%EC%B2%AD%EC%86%8C%EB%B2%95/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동 커피 그라인더",
+        "line": "코니컬·플랫버 전 모델",
+        "years": "1년 이상 사용 기계",
+        "region": "KR"
+      },
+      "caution": "굵기 불균일 = 대부분 날 청소·마모 문제다. 먼저 생쌀을 갈아 청소한 후 개선되지 않으면 날 마모를 의심하고 교체를 검토할 것.",
+      "cautionSource": "바리스타룰스의 그라인더 관리법"
+    },
+    {
+      "id": "burr-wear-inspection-method",
+      "claim": "그라인더 날의 마모 정도는 분리된 날에 손톱을 밀어 확인할 수 있다. 손톱에 자국이 생기면 날이 멀쩡한 상태이고, 자국이 생기지 않으면 마모된 상태다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "바리스타뉴스, 커피 커뮤니티",
+      "source_url": "https://baristanews.co.kr/tech/%EB%B2%84-%EA%B7%B8%EB%9D%BC%EC%9D%B8%EB%8D%94-%EC%B2%AD%EC%86%8C%EB%B2%95/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동 커피 그라인더",
+        "line": "코니컬·플랫버 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "마모된 날은 고르지 않은 분쇄를 일으키고 추출을 방해한다. 마모가 확인되면 교체하는 것이 커피 품질 유지의 기본이다.",
+      "cautionSource": "바리스타뉴스의 날 점검 방법"
+    },
+    {
+      "id": "motor-stops-overload-protection",
+      "claim": "커피 그라인더의 모터가 중간에 멈추는 현상은 과부하 보호 기능이 작동하는 정상 현상이며, 딱딱한 원두(경도 높은 원두)를 갈거나 호퍼에 원두를 과다하게 투입했을 때 발생한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "커피 커뮤니티 사용자 보고",
+      "source_url": "https://www.clien.net/service/board/cm_coffee/15822498",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동 커피 그라인더",
+        "line": "과부하 보호 탑재 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "과부하 보호로 멈추는 건 정상이다. 호퍼의 원두를 줄이고 재시작하거나, 버 나사를 풀어 찌꺼기를 청소한 후 다시 시도할 것.",
+      "cautionSource": "커뮤니티의 과부하 현상 해결 사례"
+    },
+    {
+      "id": "clean-burrs-with-rice",
+      "claim": "그라인더 날에 축적된 커피 미분과 찌꺼기는 생쌀을 그라인더에 넣고 갈아서 제거할 수 있으며, 쌀이 더 이상 나오지 않을 때까지 반복하면 청소가 완료된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "바리스타뉴스, 바리스타룰스",
+      "source_url": "https://baristanews.co.kr/tech/%EB%B2%84-%EA%B7%B8%EB%9D%BC%EC%9D%B8%EB%8D%94-%EC%B2%AD%EC%86%8C%EB%B2%95/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동 커피 그라인더",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "청소 전에 반드시 전원 코드를 분리할 것. 분해 청소와 달리 생쌀 분쇄는 분리하지 않고 안전하게 청소할 수 있으므로 정기적 관리에 추천된다.",
+      "cautionSource": "바리스타뉴스의 안전한 청소 방법"
+    },
+    {
+      "id": "conical-vs-flat-burr-difference",
+      "claim": "플랫 버(flat burr) 그라인더는 분쇄 입자 분포가 비교적 균일하고 RPM이 높지만 발열이 높으며, 코니컬 버(conical burr) 그라인더는 분쇄 입자 분포가 불균일하고 RPM이 낮지만 발열이 낮다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "블랙워터이슈, 바리스타 커뮤니티",
+      "source_url": "https://bwissue.com/BLIND/2132449",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동 커피 그라인더",
+        "line": "플랫버·코니컬버 전 모델",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "코니컬 버는 향미를 잘 살려주고 산미톤을 극대화하는 경향이 있으나, 어느 쪽이 우수한지는 개인 취향에 따라 다르다. 분쇄 입자 균일성이 중요하다면 플랫 버, 저발열이 중요하다면 코니컬 버를 선택할 것.",
+      "cautionSource": "블랙워터이슈의 버 비교 테스트"
+    },
+    {
+      "id": "coffee-bean-oil-residue-management",
+      "claim": "그라인더 날 주위에 축적된 커피 원두의 기름 찌꺼기는 시간이 지남에 따라 산화되고 부패하면서 불쾌한 냄새를 풍기고 커피의 본래 향미를 떨어뜨린다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "바리스타뉴스, 커피 커뮤니티",
+      "source_url": "https://baristanews.co.kr/tech/%EB%B2%84-%EA%B7%B8%EB%9D%BC%EC%9D%B8%EB%8D%94-%EC%B2%AD%EC%86%8C%EB%B2%95/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동 커피 그라인더",
+        "line": "전 모델",
+        "years": "1년 이상 사용 기계",
+        "region": "KR"
+      },
+      "caution": "원두를 자주 바꿀 때 또는 최소 원두 교체 시기에는 생쌀 청소나 분해 청소로 기름 찌꺼기를 정기적으로 제거할 것. 방치하면 곰팡이가 생길 수 있다.",
+      "cautionSource": "바리스타뉴스의 그라인더 관리 권장"
+    },
+    {
+      "id": "rdt-water-spray-static-reduction",
+      "claim": "커피를 분쇄할 때 정전기로 인해 원두 가루가 그라인더 내부에 달라붙는 현상을 줄이기 위해 RDT(Ross Droplet Technique)라 불리는 물 분사 방법을 사용할 수 있으며, 원두 1g당 약 20마이크로리터의 물을 뿌리면 정전기 발생량이 크게 줄어든다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KISTI 과학향기 (과학적 연구 기반)",
+      "source_url": "https://scent.kisti.re.kr/site/main/archive/article/%EA%B3%BC%ED%95%99%ED%96%A5%EA%B8%B0-story-%EC%9B%90%EB%91%90-%EA%B0%80%EA%B8%B0-%EC%A0%84-%EB%AC%BC-%EC%B9%99%EC%B9%99-%EC%B0%90%ED%95%9C-%EC%BB%A4%ED%94%BC-%EB%A7%8C%EB%93%9C%EB%8A%94-%EA%B3%BC%ED%95%99%EC%A0%81-%EB%B9%84%EB%B2%95",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동 커피 그라인더",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "RDT는 분무기나 숟가락 뒷면에 물을 살짝 묻혀 원두에 뿌리는 간단한 방법이다. 물을 과다하게 뿌리면 그라인더 날이 녹슬거나 가루가 떡질 수 있으니 소량만 사용할 것.",
+      "cautionSource": "KISTI 논문의 물 사용량 권장"
+    },
+    {
+      "id": "rdt-extraction-benefit",
+      "claim": "RDT 방법으로 분쇄한 원두를 사용하면 커피 추출량이 약 8.5% 증가하고, 커피 농도가 약 10% 높아져 맛이 더 좋아진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KISTI 과학향기 (과학적 연구 기반)",
+      "source_url": "https://scent.kisti.re.kr/site/main/archive/article/%EA%B3%BC%ED%95%99%ED%96%A5%EA%B8%B0-story-%EC%9B%90%EB%91%90-%EA%B0%80%EA%B8%B0-%EC%A0%84-%EB%AC%BC-%EC%B9%99%EC%B9%99-%EC%B0%90%ED%95%9C-%EC%BB%A4%ED%94%BC-%EB%A7%8C%EB%93%9C%EB%8A%94-%EA%B3%BC%ED%95%99%EC%A0%81-%EB%B9%84%EB%B2%95",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동 커피 그라인더",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "물의 수분 막이 원두 가루 입자에 고르게 머물면서 추출 시간이 더 길어져 결과적으로 맛이 향상된다는 과학적 원리에 기반한다.",
+      "cautionSource": "KISTI의 과학적 분석 자료"
+    },
+    {
+      "id": "motor-noise-heat-causes",
+      "claim": "그라인더 모터에서 발생하는 소음과 발열의 주요 원인은 베어링 윤활 부족 또는 과다, 베어링 마모, 축 정렬 불량이며, 무리한 힘으로 그라인더를 작동시키면 모터 과부하와 소손 위험이 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "현대모터코리아, 핸드그라인더 안전 가이드",
+      "source_url": "https://hyundaiacmotor.com/motor-noise-vibration-overheat/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동 커피 그라인더",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "소음이 지속되면 베어링 마모를 의심하고, 발열이 심하면 과부하 보호가 작동할 때까지 사용을 중단하고 식힐 것. 무리하게 분쇄하면 모터 손상이 빨라진다.",
+      "cautionSource": "전동기 점검 가이드의 안전 주의사항"
+    },
+    {
+      "id": "safety-disconnect-power-before-cleaning",
+      "claim": "그라인더의 분쇄날을 청소하거나 분해할 때는 반드시 전원 코드를 분리해야 한다. 전원이 연결된 상태에서 작업하면 손가락 부상, 뜻밖의 모터 작동으로 인한 상해 위험이 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "핸드그라인더 안전 작업 수칙",
+      "source_url": "https://m.cafe.daum.net/korea-man/7Yua/15",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "전동 커피 그라인더",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "청소 전 전원 코드 분리는 필수 안전 절차다. 콘센트에서 플러그를 완전히 빼야 한다. 생쌀 분쇄로 청소할 때는 이 과정을 생략해도 되지만, 분해 청소 시에는 반드시 지킬 것.",
+      "cautionSource": "안전 작업 수칙의 핵심 사항"
+    }
+  ]
+}

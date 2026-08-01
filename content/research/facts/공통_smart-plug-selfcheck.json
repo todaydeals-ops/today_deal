@@ -1,0 +1,236 @@
+{
+  "topic": "스마트 플러그(스마트 콘센트) 와이파이 연결 안 됨·앱 인식·원격 제어 불가 자가점검",
+  "brand": "공통",
+  "article": "smart-plug-selfcheck",
+  "captured": "2026-07-28",
+  "reused_facts": [
+    "channel-interference-2g4ghz-vs-5ghz"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "smart-plug-wifi-24ghz-only-requirement",
+      "claim": "대부분의 스마트 플러그는 2.4GHz 주파수에서만 연결 가능하며, 5GHz만 지원하는 공유기나 5GHz로만 설정된 공유기에서는 인식되지 않는다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "스마트 홈 기기 연결 커뮤니티",
+      "source_url": "https://r1.community.samsung.com/t5/smartthings/%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4-%ED%86%B5%ED%95%A9-ssid-%EC%9A%B4%EC%9A%A9-%EC%8B%9C-2-4ghz-iot-%EA%B8%B0%EA%B8%B0-%EC%97%B0%EA%B2%B0%EB%B2%95/td-p/37577673",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 콘센트",
+        "line": "일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "듀얼밴드 공유기를 사용 중이면 공유기 관리자 페이지에서 2.4GHz 대역을 별도로 활성화하거나, 2.4GHz 전용 SSID를 따로 생성하는 것이 가장 확실한 해결책이다."
+    },
+    {
+      "id": "smart-plug-24ghz-channel-manual-setting",
+      "claim": "스마트 플러그가 2.4GHz 네트워크에 연결되지 않을 때는 공유기 관리자 페이지에서 자동 채널 설정을 피하고 채널 1, 6, 11 중 하나를 수동으로 고정해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "와이파이 2.4GHz 설정 가이드",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4_2.4_ghz_%EC%84%A4%EC%A0%95_%EB%B0%A9%EB%B2%95,_%EB%82%98%EC%97%90%EA%B2%8C_%EB%A7%9E%EB%8A%94_%EC%A3%BC%ED%8C%8C%EC%88%98%EB%8A%94-47438",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 콘센트",
+        "line": "일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "채널 자동 선택 상태에서 SSID 검색이 제대로 이루어지지 않는 경우가 많으므로, 채널을 1, 6, 11 중 하나로 고정한 후 재시도하면 대부분 문제가 해결된다."
+    },
+    {
+      "id": "smart-plug-ssid-english-required",
+      "claim": "스마트 플러그가 와이파이 네트워크를 검색할 때 한글 SSID는 인식하지 못할 가능성이 높으므로, 공유기의 와이파이 이름(SSID)을 영문으로 변경해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "와이파이 SSID 설정 가이드",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4_2.4_ghz_%EC%84%A4%EC%A0%95_%EB%B0%A9%EB%B2%95,_%EB%82%98%EC%97%90%EA%B2%8C_%EB%A7%9E%EB%8A%94_%EC%A3%BC%ED%8C%8C%EC%88%98%EB%8A%94-47438",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 콘센트",
+        "line": "일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "한글 SSID로 인한 연결 실패는 기기에 따라 다를 수 있으므로, 가장 확실한 방법은 공유기 관리자 페이지에서 SSID를 영문과 숫자로만 변경하는 것이다."
+    },
+    {
+      "id": "smart-plug-ssid-broadcast-enable",
+      "claim": "스마트 플러그 등록 중 와이파이 네트워크가 검색되지 않으면, 공유기 관리자 페이지의 무선 설정에서 '네트워크 이름 알림' 또는 'SSID 방송' 옵션이 활성화되어 있는지 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "와이파이 SSID 검색 가이드",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4_2.4_ghz_%EC%84%A4%EC%A0%95_%EB%B0%A9%EB%B2%95,_%EB%82%98%EC%97%90%EA%B2%8C_%EB%A7%9E%EB%8A%94_%EC%A3%BC%ED%8C%8C%EC%88%98%EB%8A%94-47438",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 콘센트",
+        "line": "일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "SSID 방송이 비활성화되어 있으면 기기가 네트워크를 찾을 수 없으므로, 반드시 공유기 관리자 페이지에서 활성화한 후 진행해야 한다."
+    },
+    {
+      "id": "smart-plug-iot-dedicated-network-mode",
+      "claim": "최신 메시 공유기나 일부 고급 공유기는 설정 메뉴에 'IoT 전용 네트워크' 또는 '스마트 홈 모드'를 제공하며, 이 기능을 활성화하면 자동으로 2.4GHz 전용 신호가 생성된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "IoT 기기 연결 최적화 가이드",
+      "source_url": "https://livingtechlab.com/iot/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 콘센트",
+        "line": "일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "IoT 전용 모드를 켜면 스마트 플러그 같은 IoT 기기가 5GHz 신호로 자동 전환되는 것을 방지할 수 있으며, 기기 등록 후에는 다시 끌 수 있다.",
+      "cautionSource": "IoT 기기 연결 최적화 기술 자료"
+    },
+    {
+      "id": "smart-plug-soft-reset-vs-factory-reset",
+      "claim": "스마트 플러그의 리셋에는 소프트 리셋(기기 재시작)과 공장 초기화(팩토리 리셋) 두 가지가 있다. 소프트 리셋은 기존 와이파이 연결과 설정을 유지하고 임시 오류를 해결하는 반면, 공장 초기화는 모든 사용자 설정과 와이파이 정보를 삭제한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "TP-Link Tapo 스마트 플러그 초기화 방법",
+      "source_url": "https://www.tapo.com/us/faq/30/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 콘센트",
+        "line": "일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "연결 문제 해결 시 먼저 소프트 리셋을 시도하고, 그래도 안 되면 공장 초기화로 앱에서 처음부터 재등록하는 것이 권장된다. 공장 초기화 후에는 반드시 와이파이 비밀번호를 다시 입력해야 한다."
+    },
+    {
+      "id": "smart-plug-soft-reset-power-button",
+      "claim": "대부분의 스마트 플러그는 전원 버튼을 3~5초 정도 누르는 소프트 리셋 방법으로 기기를 재시작할 수 있으며, 이 방법은 앱 또는 기기 본체 버튼으로 수행 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "TP-Link Tapo 스마트 플러그 초기화 방법",
+      "source_url": "https://www.tapo.com/us/faq/30/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 콘센트",
+        "line": "일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "소프트 리셋 중에는 전원을 뽑지 말고 끝날 때까지 기다려야 하며, 기기의 LED가 깜빡이다가 안정화되면 완료된 것이다."
+    },
+    {
+      "id": "smart-plug-remote-control-wifi-connectivity-check",
+      "claim": "스마트 플러그의 원격 제어(집 밖에서)가 작동하지 않을 때 우선 확인할 사항은 기기의 와이파이 연결 상태, 신호 강도, 공유기와의 물리적 거리다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "스마트 홈 기기 원격 제어 문제 해결 가이드",
+      "source_url": "https://r1.community.samsung.com/t5/smartthings/%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%BB%A8%ED%8A%B8%EB%A1%A4-%EC%83%81%EC%8B%9C%EC%9C%A0%EC%A7%80-%EC%84%A4%EC%A0%95%EB%B2%95/td-p/35556037",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 콘센트",
+        "line": "일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "집 밖에서의 원격 제어는 스마트 플러그가 강한 와이파이 신호 범위 안에 있어야만 작동한다. 신호가 약하면 기기가 자동으로 오프라인 상태로 전환될 수 있으니, 공유기 재부팅이나 기기를 공유기 더 가까운 곳에 옮기는 것을 시도할 것."
+    },
+    {
+      "id": "smart-plug-app-connection-network-change",
+      "claim": "스마트 플러그 앱이 기기를 인식하지 못할 때는 앱 설정에서 와이파이 네트워크를 변경하거나, 공유기를 재부팅한 후 기기를 다시 페어링하는 방법이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung SmartThings 기기 연결 설정",
+      "source_url": "https://r1.community.samsung.com/t5/smartthings/%EC%8A%A4%EB%A7%88%ED%8A%B8%EB%A1%A4-%EC%97%90%EC%96%B4%EC%BB%A8%EC%97%B0%EA%B2%B0%EC%9D%B4-%EC%95%88%EB%90%A0%EB%95%8C-%EC%9D%B4%EB%A0%87%EA%B2%8C-%ED%95%B4%EB%B3%B4%EC%84%B8%EC%9A%94/td-p/12066438",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 콘센트",
+        "line": "일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "앱의 설정 메뉴에서 기기 → 우측 상단 옵션(⋯) → '설정' → '와이파이 네트워크 변경'을 선택하여 현재 와이파이 정보를 업데이트할 수 있다."
+    },
+    {
+      "id": "smart-plug-power-measurement-feature",
+      "claim": "스마트 플러그의 전력 측정 기능은 실시간 소비 전력을 모니터링하고, 누적 사용량과 예상 월간 전기요금을 계산해 표시한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "스마트 플러그 전력 측정 기능 리뷰",
+      "source_url": "http://www.earlyadopter.co.kr/91703",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 콘센트",
+        "line": "전력 측정 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "전력 측정 기능이 있는 스마트 플러그는 일반형보다 가격이 높으니, 구매 전에 제품 사양에서 확인해야 한다."
+    },
+    {
+      "id": "smart-plug-standby-power-reduction",
+      "claim": "가정의 대기전력(기기가 꺼진 상태에서도 소모되는 전력)은 전체 전기 사용량의 10% 이상을 차지하며, 스마트 플러그로 필요하지 않을 때 전원을 원격으로 차단하면 대기전력을 줄일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "대기전력 차단 플러그 사용법 가이드",
+      "source_url": "https://bewell99.com/entry/reduce-standby-power-plug-guide",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 콘센트",
+        "line": "일반형",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "전자레인지, TV, 충전기 등이 주요 대기전력 소비 기기이며, 이들을 스마트 플러그에 연결하고 앱이나 타이머로 정시에 끄면 월간 전기요금을 절감할 수 있다.",
+      "cautionSource": "대기전력 차단 기술 자료 — 전기 사용량 10% 기준"
+    },
+    {
+      "id": "smart-plug-voice-assistant-google-home",
+      "claim": "Google Home 앱에서 50,000가지 이상의 스마트 기기를 추가할 수 있으며, 연동 가능한 스마트 플러그의 경우 구글 어시스턴트 음성 명령으로도 제어 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Home 스마트 홈 기기 제어",
+      "source_url": "https://support.google.com/googlenest/answer/7073578?hl=ko",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 콘센트",
+        "line": "Google Home 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "음성 비서 연동은 제조사별로 지원 여부가 다르므로 구매 전에 'Google Home 지원' 또는 'Alexa 지원' 마크를 확인해야 한다."
+    },
+    {
+      "id": "smart-plug-voice-assistant-alexa-matter",
+      "claim": "Matter 기술을 지원하는 스마트 플러그는 Alexa와 Google Home 양쪽 플랫폼에서 모두 음성으로 제어할 수 있으며, 한 번의 설정으로 두 음성 비서 모두에서 연동된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "TP-Link Matter 기기 설정 가이드",
+      "source_url": "https://www.tp-link.com/kr/support/faq/3564/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트 콘센트",
+        "line": "Matter 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "Matter 지원 기기는 일반형보다 비싼 경향이 있으므로, 음성 비서 필요 여부와 예산을 미리 판단한 후 구매 결정을 할 것."
+    }
+  ]
+}

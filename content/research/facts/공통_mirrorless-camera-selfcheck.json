@@ -1,0 +1,258 @@
+{
+  "topic": "미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "sdcard-speed-class-definition",
+    "uhs-speed-class-definition",
+    "video-speed-class-definition",
+    "app-performance-class-definition",
+    "read-write-speed-difference",
+    "4k-video-shooting-sd-card-requirement",
+    "dashcam-sd-card-recommendation",
+    "drone-4k-video-capacity-requirement",
+    "camera-write-speed-importance",
+    "microsd-size-and-pin-definition",
+    "microsd-speed-performance-variance",
+    "card-reader-sdxc-compatibility-requirement",
+    "card-reader-usb3-speed-advantage",
+    "usb-3-speed-standards-summary",
+    "microsd-price-advantage",
+    "sd-card-format-choice-exfat-recommended",
+    "sd-card-capacity-recommendation-content",
+    "camera-lens-cleaning-method",
+    "camera-lens-fog-condensation"
+  ],
+  "declined_facts": [
+    {
+      "id": "iphone-battery-menu-split",
+      "why": "아이폰 배터리 메뉴로, 미러리스·DSLR 배터리 관리와 무관"
+    },
+    {
+      "id": "camera-blur-focus-failure-causes",
+      "why": "iPhone 6 Plus 이후의 OIS·AF 메커니즘이며, 미러리스·DSLR과 구조가 다름"
+    },
+    {
+      "id": "ois-af-vibration-damage-motorcycle",
+      "why": "iPhone의 폐루프 AF와 고진동 손상이며, DSLR/미러리스 AF와 메커니즘이 다름"
+    },
+    {
+      "id": "camera-scratch-protection-glass",
+      "why": "iPhone 11 이후의 렌즈 보호 유리 스크래치로, 미러리스·DSLR의 교환 렌즈와 무관"
+    },
+    {
+      "id": "camera-black-screen-app-crash",
+      "why": "아이폰 카메라 앱 검은 화면으로, 카메라 본체 LCD 디스플레이와 무관"
+    },
+    {
+      "id": "camera-flash-low-battery",
+      "why": "아이폰 플래시로, 미러리스·DSLR 내장 플래시·외장 플래시와 구조가 다름"
+    },
+    {
+      "id": "face-id-software-restart-troubleshooting",
+      "why": "아이폰 Face ID 재시작으로, 카메라 자가점검과 무관"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "camera-shutter-wont-press-focus-priority",
+      "claim": "카메라 셔터 버튼을 눌러도 반응이 없는 경우의 상당수는 초점이 맞지 않아서다. AF-S(싱글 AF) 모드에서 초점 우선 설정이 기본값일 때, 정초점 표시가 뜨기 전에는 셔터가 작동하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Nikon 온라인 매뉴얼 · 초점 모드 및 AF 우선 조건",
+      "source_url": "https://onlinemanual.nikonimglib.com/d780/ko/06_shooting_settings_03.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "카메라",
+        "line": "미러리스·DSLR",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "이 설정은 제조사마다 다르게 명명된다: Nikon은 'AF-S 우선 조건', Canon은 'AF 작동 우선', Sony는 초점 우선 모드 등. 자신의 카메라 매뉴얼에서 해당 항목을 확인하고 필요하면 '릴리즈 우선'으로 변경할 수 있다.",
+      "cautionSource": "각 제조사 온라인 매뉴얼의 AF 우선 조건 설명"
+    },
+    {
+      "id": "af-mode-af-s-vs-af-c-difference",
+      "claim": "AF-S(싱글 AF)는 셔터 버튼을 누르는 순간 한 번만 초점을 맞추고, 초점 우선 설정 시 정초점 표시가 나타날 때까지 셔터가 작동하지 않는다. AF-C(컨티뉴어스 AF)는 셔터 버튼을 누르고 있는 동안 계속 초점을 조정하며, 기본 설정에서는 초점 여부와 관계없이 셔터가 작동한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Nikon 온라인 매뉴얼 · AF-S와 AF-C의 우선 조건",
+      "source_url": "https://onlinemanual.nikonimglib.com/d850/ko/08_focus_01.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "카메라",
+        "line": "미러리스·DSLR",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "같은 기능이어도 제조사마다 명명이 다르다: Nikon(AF-S/AF-C), Canon(One-Shot/AI Servo), Sony(AF-S/AF-C). 특정 모드에서 셔터가 안 눌리면 우선 AF 모드와 우선 조건을 확인해야 한다.",
+      "cautionSource": "Nikon/Canon/Sony 공식 매뉴얼의 AF 모드 명명 및 설정 안내"
+    },
+    {
+      "id": "camera-autofocus-failure-lens-contact-pins",
+      "claim": "카메라가 렌즈를 인식하지 못하거나 '렌즈를 인식할 수 없음' 오류가 나타나는 주된 원인은 카메라 바디와 렌즈 사이의 금속 접점이 먼지, 습기, 또는 산화층으로 오염된 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony Support · Interchangeable lens camera shows lens detection error message",
+      "source_url": "https://www.sony-mea.com/en/electronics/support/articles/00073473",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "카메라",
+        "line": "미러리스·DSLR",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "카메라 바디의 접점(camera body contacts)과 렌즈의 접점(lens contacts)은 모두 청소해야 한다. 한쪽만 청소하면 오류가 반복될 수 있다.",
+      "cautionSource": "Sony Support 공식 안내"
+    },
+    {
+      "id": "camera-lens-contact-cleaning-method",
+      "claim": "카메라 접점과 렌즈 접점을 청소하려면 마른 부드러운 천이나 린트 없는 솜으로 금속 접점을 가볍게 닦는다. 접점이 산화되거나 더 오염되어 있다면 소량의 이소프로필 알코올을 묻힌 솜으로 닦고 완전히 건조시킨 후 렌즈를 장착한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony Support · Lens contact cleaning and attachment procedure",
+      "source_url": "https://www.sony-mea.com/en/electronics/support/articles/00073473",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "카메라",
+        "line": "미러리스·DSLR",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "접점을 닦을 때 과도한 압력을 가하거나 금속 핀을 구부리지 않도록 주의해야 한다. 핀이 손상되면 수리가 필요할 수 있다. 렌즈를 장착할 때는 흰색 인덱스 마크를 맞춘 후 시계 방향으로 돌려 카클릭음이 날 때까지 고정한다.",
+      "cautionSource": "Sony Support 공식 렌즈 장착 및 청소 안내"
+    },
+    {
+      "id": "camera-sensor-dust-detection-method",
+      "claim": "카메라 센서에 먼지가 있는지 확인하려면 조리개 우선 모드(A 또는 Av)에서 조리개 F11 이상으로 설정하고 하얀 벽, 하얀 종이, 또는 맑은 하늘을 촬영한다. 같은 위치에 검은 점이 반복되어 나타나면 센서 먼지다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony Support · 이미지 센서 클리닝 (센서 클리닝) 및 먼지 감지",
+      "source_url": "https://support.d-imaging.sony.co.jp/www/support/ilc/sensor/kr.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "카메라",
+        "line": "미러리스·DSLR",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "후보정 소프트웨어로 검은 점을 제거할 수 있지만, 실제 센서 먼지를 제거하려면 자동 청소 기능 또는 서비스 센터를 이용해야 한다.",
+      "cautionSource": "Sony Support 센서 먼지 감지 및 청소 매뉴얼"
+    },
+    {
+      "id": "camera-sensor-auto-cleaning-feature",
+      "claim": "대부분의 현대 미러리스·DSLR 카메라는 자동 센서 클리닝 기능을 탑재하고 있으며, 전원 ON/OFF 시 센서 앞이 미세하게 진동하여 먼지를 제거한다. 배터리 잔량이 3칸 이상일 때만 작동한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony Support · 이미지 센서 클리닝 및 자동 청소 기능",
+      "source_url": "https://support.d-imaging.sony.co.jp/www/support/ilc/sensor/kr.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "카메라",
+        "line": "미러리스·DSLR",
+        "years": "2005~현행",
+        "region": "글로벌"
+      },
+      "caution": "자동 클리닝만으로 제거되지 않는 먼지는 블로어를 사용하여 제거할 수 있다. 스프레이 블로어는 압력이 강해 센서를 손상시킬 수 있으므로 금지되며, 손으로 조작하는 기계식 블로어만 사용해야 한다.",
+      "cautionSource": "Sony Support 센서 클리닝 도구 및 방법 안내"
+    },
+    {
+      "id": "camera-sensor-direct-cleaning-prohibited",
+      "claim": "카메라 센서를 천이나 솜으로 직접 닦는 것은 금지된다. 센서 표면이 극도로 민감하며, 부주의한 청소로 인한 손상은 보증에서 제외되고 수리 비용이 매우 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Nikon 온라인 매뉴얼 · Camera Sensor Cleaning and Care",
+      "source_url": "https://onlinemanual.nikonimglib.com/d850/ko/19_technical_notes_08.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "카메라",
+        "line": "미러리스·DSLR",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "센서에 강한 바람을 불면 제품 내부가 손상될 수 있다. 센서 클리닝이 필요하면 공식 서비스 센터에 의뢰하는 것이 가장 안전하다.",
+      "cautionSource": "Nikon 공식 매뉴얼 · 센서 청소 금지 사유 및 손상 위험"
+    },
+    {
+      "id": "camera-battery-drain-cold-temperature",
+      "claim": "저온 환경에서 카메라 배터리가 빠르게 소모되는 현상은 배터리 용량이 일시적으로 떨어지기 때문이다. 저온에서 내부 저항이 증가하면 전압 강하(voltage sag)가 발생하고, 카메라가 높은 전력을 요구할 때 배터리 전압이 작동에 필요한 수준 이하로 내려간다. 배터리 용량이 남아 있어도 카메라가 꺼질 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Nikon 온라인 매뉴얼 · 배터리 취급 주의사항 및 저온 성능",
+      "source_url": "https://onlinemanual.nikonimglib.com/d850/ko/19_technical_notes_08.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "카메라",
+        "line": "미러리스·DSLR",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "미러리스 카메라는 LCD 화면을 계속 켜두기 때문에 DSLR보다 배터리 소모가 이미 빠른 편인데, 저온에서는 이 문제가 더욱 심화된다. 추운 환경에서 촬영할 때는 예비 배터리를 여러 개 준비하고, LCD 밝기를 낮추거나 화면을 끄는 것이 권장된다.",
+      "cautionSource": "Nikon 공식 매뉴얼 · 배터리 저온 성능 및 미러리스 전력 소비 특성"
+    },
+    {
+      "id": "camera-lcd-display-black-screen-causes",
+      "claim": "카메라 LCD 화면이 검은색으로 표시되거나 아무것도 나타나지 않는 원인은 여러 가지다: (1) 뷰파인더 근처의 접안감지 센서가 작동하여 LCD가 자동으로 꺼짐, (2) 디스플레이 모드 설정 변경, (3) HDMI 등 외부 기기 연결, (4) LCD 하드웨어 오작동.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony Support · LCD 화면이 검은색으로 표시되거나 아무 것도 나타나지 않는 경우",
+      "source_url": "https://www.sony.co.kr/electronics/support/articles/00022499",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "카메라",
+        "line": "미러리스·DSLR",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "가장 흔한 원인은 뷰파인더 센서다. 메뉴에서 접안감지 센서를 OFF로 설정하거나 눈을 뷰파인더에서 떼면 LCD가 다시 켜진다.",
+      "cautionSource": "Sony Support 공식 안내"
+    },
+    {
+      "id": "camera-viewfinder-eye-sensor-lcd-off",
+      "claim": "카메라 뷰파인더 근처의 접안감지 센서(eye sensor)가 감지되면 LCD를 자동으로 끄는 기능이 있어, 뷰파인더를 덮거나 눈으로 가까이 가면 LCD 화면이 검은색으로 변한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony Support · 뷰파인더 접안감지 센서와 LCD 자동 OFF 기능",
+      "source_url": "https://www.sony.co.kr/electronics/support/articles/00022499",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "카메라",
+        "line": "미러리스·DSLR",
+        "years": "2008~현행",
+        "region": "글로벌"
+      },
+      "caution": "이 기능은 메뉴의 '접안감지 센서' 또는 '뷰파인더 자동 감지' 옵션에서 OFF로 설정하여 비활성화할 수 있다. LCD 화면을 항상 켜두려면 이 설정을 변경하면 된다.",
+      "cautionSource": "Sony Support 공식 안내"
+    },
+    {
+      "id": "camera-condensation-rapid-temperature-change",
+      "claim": "추운 환경에서 따뜻한 실내로 들어오거나 뜨거운 물의 증기에 노출되면 카메라 렌즈와 미러 내부에 결로(응결)가 발생할 수 있다. 급격한 온도 변화가 주된 원인이며, 렌즈를 서서히 건조시키면 대부분 자동으로 해결된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support · If your iPhone or iPad gets too hot or too cold",
+      "source_url": "https://support.apple.com/en-us/118431",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "카메라",
+        "line": "미러리스·DSLR",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "결로가 발생했을 때는 카메라를 켜지 말고, 실온에서 케이스 안에 넣어 1시간 이상 자연 건조시킨다. 드라이어나 열로 급속 건조하면 렌즈 코팅이 손상될 수 있다.",
+      "cautionSource": "카메라 제조사 공식 매뉴얼의 결로 및 온도 관리 안내"
+    }
+  ]
+}

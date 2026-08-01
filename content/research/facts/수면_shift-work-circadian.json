@@ -1,0 +1,60 @@
+{
+  "topic": "교대근무와 생체시계",
+  "brand": "수면",
+  "article": "shift-work-circadian",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "shift-work-sleep-disorder-definition",
+      "claim": "교대근무수면장애(Shift Work Sleep Disorder, SWSD)는 교대근무로 인한 생체시계(circadian rhythm) 혼란으로 유발되는 불면증과 과도한 졸음을 특징으로 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep & Breathing - Circadian rhythm sleep disorders and changes in cognitive function and sleepiness among healthcare workers",
+      "source_url": "https://doi.org/10.1007/s11325-026-03726-8",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "교대근무 건강",
+        "line": "SWSD 정의 및 진단",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "circadian-disruption-impairs-cognition-healthcare",
+      "claim": "의료진에게서 교대근무로 인한 생체리듬 혼란은 인지기능 저하와 주간 졸음 증가를 초래한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep & Breathing - Circadian rhythm sleep disorders and changes in cognitive function and sleepiness among healthcare workers",
+      "source_url": "https://doi.org/10.1007/s11325-026-03726-8",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "교대근무 건강",
+        "line": "의료진 인지기능",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "night-shift-migraine-disorder-evidence",
+      "claim": "야간근무는 편두통(migraine) 발병 및 악화의 위험 요인이며, 야간근무 편두통장애(Shift Work Migraine Disorder)가 의학적으로 인정되는 질환이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Headache and Pain - Shift work migraine disorder: evidence, mechanisms, and implications for diagnosis, prevention, and management",
+      "source_url": "https://doi.org/10.1186/s10194-026-02349-4",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "교대근무 건강",
+        "line": "편두통 리스크",
+        "years": "2026",
+        "region": "일반"
+      },
+      "caution": "야간근무로 인한 편두통은 생체시계 혼란뿐만 아니라 수면 박탈, 스트레스, 식사 패턴 변화 등 복합요인이 관여한다."
+    }
+  ]
+}

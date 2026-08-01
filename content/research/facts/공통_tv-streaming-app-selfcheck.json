@@ -1,0 +1,226 @@
+{
+  "topic": "스마트TV 스트리밍 앱(Netflix·YouTube·Tving) 안 켜짐·버퍼링·로그인 오류 자가점검",
+  "brand": "공통",
+  "article": "tv-streaming-app-selfcheck",
+  "captured": "2026-07-28",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "streaming-app-uninstall-not-possible",
+      "claim": "삼성·LG TV의 Netflix, YouTube 등 기본 제공 스트리밍 앱은 삭제할 수 없으며, 앱이 오작동하면 재설치만 가능하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 스마트TV 앱 삭제 및 앱 재설치하는 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1477632",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "TV",
+        "line": "스마트TV 기본 앱",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": null
+    },
+    {
+      "id": "samsung-app-reinstall-path",
+      "claim": "삼성 TV 스트리밍 앱 재설치 경로는 홈 버튼 → 앱(또는 Apps) → 설정 → 원하는 앱 선택 → 재설치 순서다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 스마트TV 앱 삭제 및 앱 재설치하는 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1477632",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "삼성",
+        "category": "TV",
+        "line": "스마트TV",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "메뉴 경로는 TV 모델과 Tizen OS 버전에 따라 약간 다를 수 있다",
+      "cautionSource": "삼성전자서비스 메뉴 구조 안내"
+    },
+    {
+      "id": "lg-streaming-app-region-setting",
+      "claim": "LG TV에서 Netflix 등 스트리밍 앱을 정상 사용하려면 TV의 '서비스 국가' 설정이 가입한 국가와 일치해야 한다. 설정 → 전체 설정 → 서비스 국가에서 확인할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 넷플릭스와 같은 OTT App 문제는 어떻게 해결할까요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153557089934",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "LG",
+        "category": "TV",
+        "line": "webOS 스트리밍 앱",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "해외 구입 TV나 이전 사용자로부터 인수받은 TV는 서비스 국가가 한국으로 설정되지 않아 있을 수 있다",
+      "cautionSource": "LG전자 고객지원 해외 구매 TV 안내"
+    },
+    {
+      "id": "lg-streaming-app-os-compatibility",
+      "claim": "LG TV에서 스트리밍 앱 지원 여부는 webOS 버전과 모델 연식에 따라 결정된다. 앱 미지원 모델의 경우 앱 스토어 검색 결과에서 '이 제품에서 사용할 수 없음' 메시지가 표시된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 스마트 TV에 앱을 설치할 수 없어요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151045501192",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "LG",
+        "category": "TV",
+        "line": "webOS 스트리밍 앱",
+        "years": "2014년 webOS1.0 이후",
+        "region": "KR"
+      },
+      "caution": "Netflix는 webOS 1.0(2014)부터 지원되나, YouTube·Tving 등 다른 앱은 출시 연도가 더 늦을 수 있다",
+      "cautionSource": "LG전자 앱별 지원 버전 안내"
+    },
+    {
+      "id": "streaming-hd-minimum-speed",
+      "claim": "스마트TV 스트리밍에서 HD 화질은 최소 5Mbps, 4K 화질은 최소 25Mbps 이상의 인터넷 속도가 필요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Netflix·YouTube 공식 스트리밍 권장사항",
+      "source_url": "https://blog.itreebook.com/건강/스트리밍-서비스를-위한-인터넷-속도-향상-방법/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "TV",
+        "line": "스트리밍 앱",
+        "years": "모든 모델",
+        "region": "KR"
+      },
+      "caution": "최소 속도는 단일 기기 기준이며, 같은 네트워크에 여러 기기가 연결되어 있으면 그 합산 속도가 필요하다",
+      "cautionSource": "Netflix·YouTube 공식 스트리밍 기술사양"
+    },
+    {
+      "id": "wifi-vs-wired-stability",
+      "claim": "스트리밍 버퍼링이 자주 발생하면 WiFi 대신 유선 인터넷(이더넷 케이블)으로 연결하면 신호 간섭을 줄이고 속도와 안정성을 크게 향상시킬 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스트리밍 서비스 권장사항 및 사용자 실증",
+      "source_url": "https://blog.itreebook.com/건강/스트리밍-서비스를-위한-인터넷-속도-향상-방법/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "TV",
+        "line": "네트워크 연결",
+        "years": "이더넷 포트 탑재 모델",
+        "region": "KR"
+      },
+      "caution": "스마트TV가 이더넷 포트를 지원하는지 먼저 확인해야 한다. 구형 TV나 일부 저가형 모델은 WiFi만 지원할 수 있다",
+      "cautionSource": "TV 모델별 사양 확인"
+    },
+    {
+      "id": "streaming-app-cold-boot-restart",
+      "claim": "스트리밍 앱이 먹통이거나 반복적으로 오류를 일으키면 TV 전원 코드를 완전히 분리한 후 30초 이상 대기했다가 다시 연결하는 콜드 부팅을 먼저 시도한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스·LG전자 고객지원 — TV 재시작 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40598",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "TV",
+        "line": "전 스마트TV",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "콜드 부팅 중에는 TV를 켜려고 시도하면 안 되며, 최소 30초 이상 전원이 없는 상태를 유지해야 한다",
+      "cautionSource": "삼성전자서비스·LG전자 콜드 부팅 안전 절차"
+    },
+    {
+      "id": "streaming-app-cache-clear-software-reset",
+      "claim": "스트리밍 앱 오류가 콜드 부팅 후에도 반복되면 앱 캐시 삭제를 시도한다. 삼성 TV의 경우 설정 → 앱 또는 애플리케이션 → 저장공간(또는 메모리) → 캐시 삭제 경로로 진행되며, LG TV는 설정 → 앱 선택 후 삭제 후 재설치하는 방식을 권장한다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "스트리밍 앱 사용자 가이드 및 커뮤니티",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1477632",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "TV",
+        "line": "스트리밍 앱",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "캐시 삭제 경로는 TV OS 버전에 따라 크게 다를 수 있으며, 메뉴명도 '저장공간', '메모리', '애플리케이션'으로 표기가 일정하지 않다",
+      "cautionSource": "TV 모델별 메뉴 구조 변동"
+    },
+    {
+      "id": "streaming-app-login-error-hdcp",
+      "claim": "Netflix, YouTube 등에서 로그인 오류가 나거나 'HDCP 무효' 또는 '콘텐츠 재생 불가' 메시지가 뜨면 HDMI 케이블 접촉 불량이 원인일 가능성이 높다. HDMI 케이블을 TV와 셋톱박스 양쪽에서 모두 완전히 분리했다가 단단히 재연결해야 한다",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Netflix 공식·LG전자 고객지원",
+      "source_url": "https://help.netflix.com/ko/node/22497",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "TV",
+        "line": "스트리밍 앱·HDMI",
+        "years": "HDMI 입력 전 모델",
+        "region": "KR"
+      },
+      "caution": "HDCP는 저작권 보호 프로토콜로, TV와 셋톱박스 또는 외부 기기 간의 신호 전달이 차단되면 발생한다. 케이블을 여러 번 재연결해도 문제가 지속되면 HDMI 케이블 자체 손상을 의심하고 정품으로 교체해야 한다",
+      "cautionSource": "Netflix·LG전자 공식 HDCP 오류 진단 기준"
+    },
+    {
+      "id": "streaming-remote-button-not-working",
+      "claim": "스트리밍 앱에서 리모컨의 재생, 정지, 뒤로 버튼이 작동하지 않으면 먼저 리모컨 배터리를 확인하고 필요하면 새 배터리로 교체한다. 그 후에도 작동이 없으면 리모컨 페어링을 다시 시도해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스·LG전자 고객지원 — 리모컨 문제 해결",
+      "source_url": "https://www.samsungsvc.co.kr/solution/25844",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "TV",
+        "line": "스마트 리모컨",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "리모컨 LED가 켜지지 않으면 배터리 극성을 확인해야 하며, 배터리 교체 후에도 LED가 안 켜지면 리모컨 고장을 의심해야 한다",
+      "cautionSource": "삼성·LG 리모컨 배터리 확인 절차"
+    },
+    {
+      "id": "samsung-tv-internet-speed-test-path",
+      "claim": "삼성 TV의 인터넷 속도는 홈 버튼 → 설정 → 일반 → 네트워크 → 인터넷 속도 테스트 경로에서 확인할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — TV에 네트워크 연결 시 문제 해결 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1484957",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "삼성",
+        "category": "TV",
+        "line": "스마트TV",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "메뉴 경로는 모델과 Tizen OS 버전에 따라 다를 수 있으며, '인터넷 속도 테스트'가 아니라 '네트워크 상태 확인' 등으로 표기될 수 있다",
+      "cautionSource": "삼성 TV 모델별 설정 메뉴 구조"
+    },
+    {
+      "id": "lg-streaming-app-firmware-update",
+      "claim": "LG TV에서 스트리밍 앱이 지원되지 않거나 작동이 불안정하면 TV 펌웨어 업데이트를 확인해야 한다. 업데이트는 설정 → 전체 설정 → 고객지원 → 소프트웨어 업데이트 경로에서 진행되며, WiFi 또는 유선 인터넷이 연결된 상태에서 자동 업데이트 설정을 할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — TV 소프트웨어 업데이트(펌웨어) 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150911953190",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "LG",
+        "category": "TV",
+        "line": "webOS 스트리밍 앱",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "펌웨어 업데이트 중에는 절대 TV 전원을 끄면 안 되며, 업데이트가 완료될 때까지 기다려야 한다. 업데이트 소요 시간은 모델마다 다르다",
+      "cautionSource": "LG전자 펌웨어 업데이트 안전 절차"
+    }
+  ]
+}

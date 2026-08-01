@@ -1,0 +1,290 @@
+{
+  "topic": "스팀청소기 자가점검 — 스팀 안 나옴·물샘·물때 제거·바닥재 주의",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "descaling-citric-acid-soak-method",
+      "why": "스팀다리미용 구연산 비율은 물 1L당 10-20g이지만, 스팀청소기는 물 1L당 100g으로 10배 강한 농도가 필요. 고온 고압 보일러의 석회질 제거 난이도가 다르므로 비율을 별도로 확보해야 함."
+    },
+    {
+      "id": "descaling-vinegar-three-to-one-ratio",
+      "why": "스팀다리미의 식초 비율(10:1 = 물 10:식초 1)이 스팀청소기에 적용되는지 미확인. 스팀청소기 보일러에 식초 사용 여부도 제조사마다 다를 수 있으므로 재사용 불가."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "steam-cleaner-no-steam-water-level-check",
+      "claim": "스팀청소기에서 스팀이 안 나올 때 가장 먼저 확인할 것은 물탱크의 수위가 최소 표시선 이상인지 여부다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kärcher Korea 가정용 스팀청소기 가이드",
+      "source_url": "https://karcher.co.kr/page?tpl=guide/buy-steam-cleaners.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스팀청소기",
+        "line": "가정용 전 형식",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "steam-cleaner-no-steam-nozzle-clogging-minerals",
+      "claim": "스팀청소기의 스팀 출력이 약하거나 안 나올 때 주요 원인은 고온으로 인해 물 속 미네랄(칼슘, 마그네슘)이 결정화되어 노즐이나 배출구를 막는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kärcher Korea 가정용 스팀청소기 가이드 + 에누리 관리 가이드",
+      "source_url": "https://m.enuri.com/knowcom/detail.jsp?kbno=101343&bbsname=guide&cateno=1&page=117",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스팀청소기",
+        "line": "가정용 전 형식",
+        "years": "1개월 이상 사용 제품",
+        "region": "KR"
+      },
+      "caution": "수돗물을 사용한 경우 석회질이 더 빠르게 축적되므로 정수된 물 사용을 권장한다. 스팀 약화 증상이 보이면 즉시 물때 제거(탈석회화)를 수행할 것.",
+      "cautionSource": "Kärcher 유지 관리 기준"
+    },
+    {
+      "id": "steam-cleaner-water-leaking-tank-installation-error",
+      "claim": "스팀청소기에서 물이 새는 주요 원인은 물탱크가 올바르게 설치되지 않은 것이며, 특히 뚜껑이 '딸깍' 소리가 날 때까지 완전히 닫혀야 누수가 방지된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 AI 스팀청소기 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/2066133",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스팀청소기",
+        "line": "가정용 전 형식",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "뚜껑을 닫을 때 강하게 누르되, 손상이 없는지 확인하고, 재설치해도 물이 계속 새면 씰 링이 손상된 것일 수 있으므로 AS센터 방문이 필요하다.",
+      "cautionSource": "삼성SVC 설치 안내"
+    },
+    {
+      "id": "steam-cleaner-water-leaking-overfill",
+      "claim": "물탱크에 물을 너무 많이 넣으면 작동 중 물이 흘러넘치거나 새어 나갈 수 있으며, 물은 최대 표시선 또는 2/3 높이까지만 채워야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 스팀청소기 물보충 가이드 + Kärcher 사용설명서",
+      "source_url": "https://www.samsungsvc.co.kr/solution/2066133",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스팀청소기",
+        "line": "가정용 전 형식",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "물의 양 조절은 누수 방지뿐 아니라 보일러 내 수증기 생성을 원활하게 하므로 권장 수위를 지켜야 한다.",
+      "cautionSource": "제조사 사용설명서"
+    },
+    {
+      "id": "steam-cleaner-water-leaking-hose-damage",
+      "claim": "호스가 찢어지거나 손상되면 스팀이 찢어진 틈으로 새어나가거나 물이 샐 수 있으며, 호스를 밟거나 꼬아서 물리적 손상을 입으면 누수가 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 AI 스팀청소기 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/2066133",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스팀청소기",
+        "line": "호스 연결 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "호스 손상이 확인되면 즉시 사용을 중단할 것. 수증기가 고온이므로 손상된 호스에서 나오는 스팀에 노출되면 화상 위험이 있다. AS센터에서 호스 교체가 필요하다.",
+      "cautionSource": "제조사 안전 경고"
+    },
+    {
+      "id": "steam-cleaner-water-leaking-seal-ring-wear",
+      "claim": "물탱크의 씰 링(고무 패킹)이 마모되거나 노후화되면 물탱크가 올바르게 닫혀도 누수가 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제조사 누수 진단 기준",
+      "source_url": "https://www.samsungsvc.co.kr/solution/2066133",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스팀청소기",
+        "line": "가정용 전 형식",
+        "years": "1년 이상 사용 제품",
+        "region": "KR"
+      },
+      "caution": "물탱크 설치를 다시 확인했는데도 물이 계속 새면 씰 링 손상을 의심하고 AS센터에서 교체하도록 할 것.",
+      "cautionSource": "누수 원인 진단 기준"
+    },
+    {
+      "id": "steam-cleaner-limescale-removal-citric-acid-concentration",
+      "claim": "스팀청소기의 물때는 물 1L에 구연산 100g을 녹인 용액(구연산 10% 농도)을 물탱크에 넣고 탈석회화 기능을 실행하면 제거되며, 이는 스팀다리미(물 1L당 10-20g)보다 10배 강한 농도다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 AI 스팀청소기 석회질 제거 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/2079194",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스팀청소기",
+        "line": "가정용 전 형식",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "구연산 농도를 정확히 지켜야 한다. 너무 짙으면 호스를 손상시킬 수 있고, 너무 약하면 석회질 제거 효과가 없다. 탈석회화 완료 후 반드시 깨끗한 물로 여러 번 헹궈서 구연산 잔여물을 완벽히 제거해야 한다.",
+      "cautionSource": "삼성SVC 탈석회화 안내"
+    },
+    {
+      "id": "steam-cleaner-limescale-removal-vinegar-method",
+      "claim": "구연산이 없을 때는 식초를 대체 방법으로 사용할 수 있으며, 물과 식초를 혼합하여 물탱크에 넣고 분사하면 석회질을 제거할 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "클리앙, 당근마켓 사용자 경험 종합",
+      "source_url": "https://www.clien.net/service/board/park/16601712",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스팀청소기",
+        "line": "가정용 전 형식",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "식초 방법은 제조사 공식 권장이 아니므로 우선순위는 구연산보다 낮다. 식초를 사용할 경우 신 냄새가 발생할 수 있으며, 호스 내부에 신 냄새가 남을 수 있다. 사용자 보고에서 통한 경우가 많으나, 제조사 보일러 손상 가능성을 완벽히 배제할 수 없으므로, 먼저 구연산으로 시도하는 것이 권장된다.",
+      "cautionSource": "사용자 경험 기반"
+    },
+    {
+      "id": "steam-cleaner-preheat-time-long-boiler-blockage",
+      "claim": "스팀청소기의 예열 시간이 평상시보다 현저히 오래 걸리는 증상은 보일러 내부에 물 공급 라인이 석회질로 막혀 있다는 신호다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kärcher 고객센터 진단 기준",
+      "source_url": "https://karcher.co.kr/page?tpl=guide/buy-steam-cleaners.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스팀청소기",
+        "line": "가정용 전 형식",
+        "years": "6개월 이상 사용 제품",
+        "region": "KR"
+      },
+      "caution": "예열이 평상시 5분에서 15분 이상으로 늘어났다면 즉시 물때 제거(구연산 탈석회화)를 수행해야 한다. 방치하면 스팀이 아예 나오지 않는 상태로 진행될 수 있다.",
+      "cautionSource": "카로 고객센터 진단 기준"
+    },
+    {
+      "id": "steam-cleaner-auto-shutoff-overheat-protection",
+      "claim": "스팀청소기는 안전상의 이유로 내부 온도 센서를 통해 보일러 온도를 모니터링하며, 온도가 140도를 초과하면 보일러 전원을 자동으로 차단하는 과열 방지 안전장치가 작동한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스팀청소기 과열 방지 기술 (특허 KR100897046B1) + 제조사 안전 기준",
+      "source_url": "https://patents.google.com/patent/KR100897046B1/ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스팀청소기",
+        "line": "가정용 전 형식",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "자동 차단 후 온도가 내려가면 자동으로 재시작되므로 정상 작동이다. 반복적으로 차단되면 물탱크 물 부족을 먼저 확인하고, 그 다음 구연산 탈석회화로 보일러 효율성을 회복해야 한다.",
+      "cautionSource": "제조사 안전 설계"
+    },
+    {
+      "id": "steam-cleaner-auto-shutoff-water-low-temperature-high",
+      "claim": "온도가 145도 이상 올라가면서 동시에 물이 부족하면 보일러뿐 아니라 펌프까지 전원이 차단되고 경고음이 발생하며 물 부족 경고가 표시된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스팀청소기 과열·저수 자동 차단 기술 기준",
+      "source_url": "https://patents.google.com/patent/KR100897046B1/ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스팀청소기",
+        "line": "가정용 전 형식",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "이 경우 즉시 전원을 끄고 물탱크에 물을 충분히 보충한 후 재시작해야 한다. 물 부족 상태로 작동을 지속하면 보일러 손상 위험이 있다.",
+      "cautionSource": "제조사 안전 경고"
+    },
+    {
+      "id": "steam-cleaner-wooden-floor-moisture-damage",
+      "claim": "원목 바닥에 스팀청소기를 오래 사용하면 고온 증기가 목재 사이의 틈새로 침투하여 습기가 축적되고, 이로 인해 목재가 썩거나 찌그러지거나 위로 솟아오를 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "MBC 스마트 리빙 보도 + 당근마켓·82cook 사용자 보고",
+      "source_url": "https://imnews.imbc.com/replay/2021/nwtoday/article/6093060_34943.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스팀청소기",
+        "line": "가정용 전 형식",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "⚠️ 원목 마루에서는 스팀청소기 사용을 피하는 것이 권장된다. 부득이하게 사용해야 한다면 최소한의 시간만 사용하고, 사용 후 바닥을 완전히 건조시켜야 한다. 한 곳에 오래 멈춰 있으면 손상 위험이 증가한다.",
+      "cautionSource": "사용자 피해 보고 기반"
+    },
+    {
+      "id": "steam-cleaner-wax-coated-floor-discoloration",
+      "claim": "왁스 코팅된 바닥에 스팀청소기의 고온 증기를 사용하면 코팅이 손상되고 변색이 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "Roborock 바닥 청소 가이드 + 당근마켓 사용자 보고",
+      "source_url": "https://kr.roborock.com/blogs/roborock-kr/how-to-clean-floors-properly",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스팀청소기",
+        "line": "가정용 전 형식",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "왁스 코팅 바닥은 스팀청소기 사용을 피하고, 물걸레나 전용 왁스 청소제로 관리하는 것이 권장된다. 손상된 왁스는 6개월~1년마다 재코팅하여 복구할 수 있다.",
+      "cautionSource": "바닥재 관리 가이드"
+    },
+    {
+      "id": "steam-cleaner-non-polished-marble-damage-risk",
+      "claim": "무광 대리석 바닥은 스팀청소기의 고온 증기에 의해 변색이나 손상이 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "인포데이터아카이브 팩트위키 + Roborock 청소 가이드",
+      "source_url": "https://infodataarchive.co.kr/%EC%A0%95%EB%B3%B4/%EB%B2%88%EC%A9%8D%EC%9D%B4%EB%8A%94-%EB%B0%94%EB%8B%A5%EC%9D%98-%EB%B0%B0%EC%8B%A0-%EC%8A%A4%ED%8C%80%EC%B2%AD%EC%86%8C%EA%B8%B0-%EC%93%B0%EA%B8%B0-%EC%A0%84-%EB%AA%A8%EB%A5%B4%EB%A9%B4-%ED%9B%84/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스팀청소기",
+        "line": "가정용 전 형식",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "무광 대리석 바닥에는 스팀청소기 사용을 권장하지 않으며, 물걸레나 대리석 전용 세제로 관리하는 것이 낫다.",
+      "cautionSource": "바닥 손상 보고 기반"
+    },
+    {
+      "id": "steam-cleaner-high-temperature-burn-hazard",
+      "claim": "스팀청소기는 100도 이상의 고온 수증기를 120도 이상으로 가열하여 분사하므로 직접 접촉하면 2도 이상의 심각한 화상을 입을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kärcher 사용설명서 + 제조사 안전 경고",
+      "source_url": "https://karcher.co.kr/page?tpl=guide/buy-steam-cleaners.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스팀청소기",
+        "line": "가정용 전 형식",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "⚠️ 스팀 분사 중이나 방금 사용한 노즐에 맨손으로 접촉하면 안 된다. 어린이나 반려동물이 있는 가정에서는 사용 중 절대 혼자 두면 안 되며, 사용하지 않을 때는 전원을 끄고 충분히 식혀야 한다. 화상을 입었다면 즉시 찬물로 식히고 응급실에 가야 한다.",
+      "cautionSource": "제조사 안전 지침 + 응급 의료 기준"
+    }
+  ]
+}

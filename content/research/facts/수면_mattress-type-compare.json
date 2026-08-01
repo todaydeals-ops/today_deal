@@ -1,0 +1,77 @@
+{
+  "topic": "매트리스 소재별 비교 (스프링·메모리폼·라텍스)의 체압분산·지지력·온도특성",
+  "brand": "공통",
+  "article": "mattress-type-compare",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "mattress-material-selection-back-pain-prevention",
+      "claim": "매트리스 소재 선택이 요통 예방과 수면의 질에 영향을 미친다. 척추정렬 지원 능력과 체압분산이 주요 선택 기준이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Caggiari G, Talesa GR, Toro G, Jannelli E, Monteleone R. What type of mattress should be chosen to avoid back pain and improve sleep quality? A review of the literature. Journal of Physical Therapy Science",
+      "source_url": "https://doi.org/10.1186/s10195-021-00616-5",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "line": "성인",
+        "years": "2021",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "mattress-satisfaction-scale-development",
+      "claim": "매트리스 소재와 구조의 개인별 만족도를 측정하기 위해 Boston Mattress Satisfaction Questionnaire(BMSQ)가 개발되었다. 소재별(스프링, 메모리폼, 라텍스)로 사용자 반응이 구분된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Robbins R, Weaver MD, Barger LK, Quan SF, Czeisler CA. Developing a tool to assess mattress satisfaction: the Boston Mattress Satisfaction Questionnaire. Frontiers in Sleep and Wakefulness",
+      "source_url": "https://doi.org/10.3389/frsle.2025.1509420",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "line": "성인",
+        "years": "2025",
+        "region": "글로벌"
+      },
+      "caution": "소재별 만족도는 개인의 수면 자세, 체중, 체온 민감도에 따라 크게 달라진다. 일반화된 순위보다는 개별 테스트가 필수."
+    },
+    {
+      "id": "memory-foam-spring-latex-pressure-support-comparison",
+      "claim": "메모리폼, 스프링, 라텍스 매트리스는 체압 분산 방식과 지지력 특성이 각각 다르다. 메모리폼은 신체 윤곽 추종, 스프링은 탄력 반발, 라텍스는 중간 특성을 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Caggiari G, Talesa GR, Toro G, Jannelli E, Monteleone R. What type of mattress should be chosen to avoid back pain and improve sleep quality? A review of the literature. Journal of Physical Therapy Science",
+      "source_url": "https://doi.org/10.1186/s10195-021-00616-5",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "line": "성인",
+        "years": "2021",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "mattress-type-temperature-regulation-sleep-quality",
+      "claim": "매트리스 소재의 온도 조절 특성(열 축적, 통기성)이 수면 구조와 주관적 수면의 질에 영향을 미친다. 야간 과열은 수면 단계 지속성을 저해한다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Robbins R, Weaver MD, Barger LK, Quan SF, Czeisler CA. Developing a tool to assess mattress satisfaction: the Boston Mattress Satisfaction Questionnaire. Frontiers in Sleep and Wakefulness",
+      "source_url": "https://doi.org/10.3389/frsle.2025.1509420",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "line": "성인",
+        "years": "2025",
+        "region": "글로벌"
+      },
+      "caution": "개인의 체온 조절, 계절, 침실 환경(습도, 외기)에 따라 온도 민감도가 달라진다. 계절별로 다른 매트리스나 침구를 사용하는 것도 전략."
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "topic": "미니 식기세척기 용량·설치·세척력·적합성 트렌드",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": ["dishwasher-rinse-aid-water-tension", "dishwasher-residual-water-normal"],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "mini-dishwasher-capacity-inservings",
+      "claim": "미니 식기세척기의 표준 용량은 3인분이며, 이는 1회에 3명분의 일반적인 하루 식기를 세척할 수 있다는 뜻이다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "노써치 — 식기세척기 추천 및 용량 가이드",
+      "source_url": "https://nosearch.com/recommendation/pick/kitchen/dish_washer/3%EC%9D%B8%EC%9A%A9",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "미니형", "years": "2026", "region": "KR" }
+    },
+    {
+      "id": "mini-dishwasher-no-large-pot",
+      "claim": "3인용 미니 식기세척기는 큰 냄비와 28cm 이상의 프라이팬이 들어가지 않으며, 억지로 넣으면 세척 날개를 막아 세척력이 급격히 떨어지고 고장 원인이 될 수 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "요리픽, 노써치 — 소형 미니 식기세척기 실측 비교",
+      "source_url": "https://cookpick.kr/small-mini-dishwasher-recommendation-top5/",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "미니형(3인용)", "years": "2026", "region": "KR" }
+    },
+    {
+      "id": "mini-dishwasher-vs-12person-capacity",
+      "claim": "12인용 식기세척기와 달리 3인용 미니 식기세척기는 냄비와 프라이팬을 넉넉히 담을 수 없으며, 더 큰 용량이 필요하다면 6인용 이상 모델 고려이 권장된다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "노써치 — 식기세척기 용량 비교 및 선택 가이드",
+      "source_url": "https://nosearch.com/recommendation/pick/kitchen/dish_washer/3%EC%9D%B8%EC%9A%A9",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "미니형(3인용) vs 대형(12인용)", "years": "2026", "region": "KR" }
+    },
+    {
+      "id": "mini-dishwasher-installation-type-tankless",
+      "claim": "물통형(탱크형) 미니 식기세척기는 별도의 수도 배관 연결 없이 물통에 물을 직접 부어서 사용하며, 전원 코드만 연결하면 되어 완전 무설치 방식이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "노써치 — 식기세척기 설치 방법 및 타입 분석",
+      "source_url": "https://nosearch.com/contents/encyclopedia/kitchen/dish_washer/517",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "물통형", "years": "2026", "region": "KR" }
+    },
+    {
+      "id": "mini-dishwasher-installation-type-direct-water",
+      "claim": "수도직결형 미니 식기세척기는 싱크대 아래 수도 밸브에 T자형 분기수전을 달아 급수 호스를 연결하고, 배수는 싱크대 배수관에 분기관을 달거나 배수호스를 싱크대에 걸쳐놓아 연결한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "노써치, TechPIQ — 식기세척기 직수 연결 설치 방법",
+      "source_url": "https://techpiq.com/guide/dishwasher-installation/",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "수도직결형", "years": "2026", "region": "KR" }
+    },
+    {
+      "id": "mini-dishwasher-power-requirement",
+      "claim": "미니 식기세척기의 소비전력은 1,200~1,800W로 높아서 반드시 벽면 콘센트에 직접 연결해야 하며, 멀티탭에 꽂으면 과열 위험이 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "노써치 — 식기세척기 설치 필수 확인사항",
+      "source_url": "https://nosearch.com/contents/encyclopedia/kitchen/dish_washer/517",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "미니형", "years": "2026", "region": "KR" },
+      "caution": "멀티탭 사용 시 과열 화재 위험이 있으므로 절대 금지",
+      "cautionSource": "노써치 설치 안내 문서"
+    },
+    {
+      "id": "mini-dishwasher-direct-water-installation-service",
+      "claim": "수도직결형 미니 식기세척기를 설치하려면 배관에 분기수전을 달아야 하므로, 전문 설치 서비스(유상)를 받을 것이 권장된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "노써치 — 식기세척기 설치 가이드",
+      "source_url": "https://nosearch.com/contents/encyclopedia/kitchen/dish_washer/517",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "수도직결형", "years": "2026", "region": "KR" }
+    },
+    {
+      "id": "mini-dishwasher-washing-performance-rated-excellent",
+      "claim": "3인용 미니 식기세척기 세척 성능은 밥알·고춧가루·마가린 등 다양한 오염물을 제거하는 시험에서 모두 '우수'로 평가된다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "서울경제·한국경제 — 소형 식기세척기 세척력 실측 비교",
+      "source_url": "https://www.sedaily.com/article/14115773",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "미니형(3인용)", "years": "2026", "region": "KR" }
+    },
+    {
+      "id": "mini-dishwasher-washing-nozzle-high-temp",
+      "claim": "미니 식기세척기의 세척력을 좌우하는 핵심 요소는 분사 노즐의 강도, 고온수 사용, 상하로 회전하는 분사 암 2개 이상, 그리고 60도 이상의 고온 코스 유무다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "요리픽 — 미니 식기세척기 세척 성능 분석 가이드",
+      "source_url": "https://cookpick.kr/small-mini-dishwasher-recommendation-top5/",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "미니형", "years": "2026", "region": "KR" }
+    },
+    {
+      "id": "mini-dishwasher-drying-hot-air-superior",
+      "claim": "미니 식기세척기 건조 성능은 건조 방식에 따라 큰 차이가 나며, 열풍건조(쉐프본·미닉스) 방식이 상대적으로 우수하고, 송풍건조(쿠쿠)나 자연건조(삼성) 방식은 일부 수분이 남아 '양호' 수준이다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "서울경제·한국경제 — 소형 식기세척기 건조 성능 실측 비교",
+      "source_url": "https://www.sedaily.com/article/14115773",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "미니형", "years": "2026", "region": "KR" },
+      "caution": "건조 방식별 전기요금이 최대 1.9배(연 2만5000~4만7000원) 차이 나므로 구매 시 확인 필수",
+      "cautionSource": "서울경제·한국경제 비교 분석"
+    },
+    {
+      "id": "mini-dishwasher-water-consumption-per-cycle",
+      "claim": "미니 식기세척기는 1회 세척에 약 10~13리터의 물을 사용하며, 손으로 설거지할 때 40~60리터와 비교하면 약 1/4~1/3 수준이다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "AARO·버즈데일리·주마스 — 식기세척기 물 소비량 실측 비교",
+      "source_url": "https://www.aaro.kr/245/",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "미니형", "years": "2026", "region": "KR" }
+    },
+    {
+      "id": "mini-dishwasher-monthly-water-consumption",
+      "claim": "미니 식기세척기 월 수도 사용량은 약 300~390리터이며, 손설거지 월 사용량 1,200~1,800리터와 비교하면 약 65~75% 절감되어 연간 약 15만 원의 수도요금 절약이 가능하다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "AARO·주마스 — 식기세척기 vs 손설거지 물 사용 및 비용 비교",
+      "source_url": "https://www.aaro.kr/245/",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "미니형", "years": "2026", "region": "KR" }
+    },
+    {
+      "id": "mini-dishwasher-electricity-monthly-cost",
+      "claim": "미니 식기세척기의 월 전기요금은 하루 1회 사용 기준 약 3,000~6,000원(대체로 5,000원대)이며, 주 3회 사용 시 3,000원, 하루 2회 이상 사용 시 1만 원 이상도 가능하다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "AARO·버즈데일리 — 식기세척기 전기요금 실측 분석",
+      "source_url": "https://www.aaro.kr/245/",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "미니형", "years": "2026", "region": "KR" },
+      "caution": "건조 방식에 따라 월 전기료는 2배 이상 차이가 날 수 있으며, 개인 사용 빈도에 따라 변동 폭이 크다",
+      "cautionSource": "AARO 실측 분석"
+    },
+    {
+      "id": "mini-dishwasher-total-cost-efficiency",
+      "claim": "미니 식기세척기는 전기요금이 약간 증가하지만, 수도세와 급탕비 절감으로 인해 전체적으로 비용 절약 효과가 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "AARO·버즈데일리·주마스 — 식기세척기 총비용 분석",
+      "source_url": "https://www.aaro.kr/245/",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "미니형", "years": "2026", "region": "KR" }
+    },
+    {
+      "id": "mini-dishwasher-1-2person-ideal",
+      "claim": "미니 식기세척기는 1~2인 가구를 위한 제품으로, 공간이 협소하거나 사용량이 많지 않은 1인 자취방과 2인 신혼집에 이상적이다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "노써치·요리픽·tsssmoney — 미니 식기세척기 타겟 가구 분석",
+      "source_url": "https://nosearch.com/recommendation/pick/kitchen/dish_washer/3%EC%9D%B8%EC%9A%A9",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "미니형", "years": "2026", "region": "KR" }
+    },
+    {
+      "id": "mini-dishwasher-4person-insufficient",
+      "claim": "4인 가족은 미니 식기세척기의 용량(3인분)으로는 부족하며, 더 큰 용량의 제품 선택이 필요하다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "노써치 — 식기세척기 용량 선택 기준",
+      "source_url": "https://nosearch.com/contents/encyclopedia/kitchen/dish_washer/182",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "미니형(3인용)", "years": "2026", "region": "KR" }
+    },
+    {
+      "id": "mini-dishwasher-small-apartment-suitable",
+      "claim": "원룸, 오피스텔, 신혼집, 소형 아파트 등 주방이 넓지 않은 집에서는 미니 식기세척기가 공간 효율성 면에서 우월하다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "facilitye, 노써치 — 소형 주방 식기세척기 선택 가이드",
+      "source_url": "https://www.facilitye.kr/2026/04/blog-post_15.html",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "미니형", "years": "2026", "region": "KR" }
+    },
+    {
+      "id": "mini-dishwasher-tankless-portability",
+      "claim": "물통형 미니 식기세척기는 완전 무설치 방식이어서 이사 계획이 있거나 전세·월세인 경우 추가 타공이나 설치 비용 없이 자유롭게 이동할 수 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "facilitye, 노써치 — 무설치 식기세척기의 장점",
+      "source_url": "https://www.facilitye.kr/2026/04/12.html",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "물통형", "years": "2026", "region": "KR" }
+    },
+    {
+      "id": "mini-dishwasher-rental-minix-pro",
+      "claim": "미닉스 PRO 미니 식기세척기는 월 13,500원(60개월)~18,900원(36개월) 렌탈 요금으로 구독 렌탈 서비스가 제공된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "빌리고(가전 렌탈 플랫폼) — 미닉스 PRO 렌탈 상품",
+      "source_url": "https://m.bilrigo.com/model/compare.php?model_idx=24970",
+      "checked": "2026-07-21",
+      "scope": { "brand": "미닉스", "category": "식기세척기", "line": "미닉스 PRO", "years": "2026", "region": "KR" }
+    },
+    {
+      "id": "mini-dishwasher-no-pre-wash-needed-with-rinsing",
+      "claim": "미니 식기세척기를 애벌 세척 없이 사용하려면 식기에서 큰 음식물을 먼저 제거하고, 눌어붙은 음식물은 물에 불린 후 사용하면 세척력을 충분히 기대할 수 있다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "요리픽·facilitye — 미니 식기세척기 사용 팁",
+      "source_url": "https://cookpick.kr/small-mini-dishwasher-recommendation-top5/",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "미니형", "years": "2026", "region": "KR" },
+      "caution": "모든 제품이 지원하는 기능은 아니며, 제품 사용설명서에서 확인 필수",
+      "cautionSource": "후기 기반 경험담"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "topic": "게이밍 모니터 고주사율 살 만한가 - 2026년 트렌드",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-28",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "gaming-monitor-refresh-rate-perception-tier",
+      "claim": "게이밍 모니터 주사율은 144~200Hz 구간이 대부분 게이머에게 부드럽고 반응성 좋은 화면을 제공하며, 240Hz와 360Hz 이상은 FPS·배틀로얄 같은 경쟁 게임 전문가와 이스포츠 게이머 위주로 필요하다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "루시안 게이밍 모니터 가이드 2026",
+      "source_url": "https://rucian.kr/gaming-monitor-guide-2026/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "게이밍 모니터",
+        "years": "2026~",
+        "region": "KR"
+      },
+      "caution": "일반 게이머는 144~240Hz에서 충분한 체감 성능을 얻으며, 360Hz 이상은 마케팅 요소가 포함된 경우가 많다"
+    },
+    {
+      "id": "gaming-monitor-perception-difference-144-240-360",
+      "claim": "롤·발로란트 같은 경쟁 게임에서는 60Hz와 144Hz 차이가 확실히 느껴지지만, 144Hz 이상에서의 추가 주사율 증가는 인간이 구분하기 어려운 수준이 포함된다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "루시안 게이밍 모니터 가이드 2026",
+      "source_url": "https://rucian.kr/gaming-monitor-guide-2026/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "게이밍 모니터",
+        "years": "2026~",
+        "region": "KR"
+      },
+      "caution": "개인의 시각 민감도에 따라 240Hz 이상에서의 주사율 차이를 느낄 수 있으므로, 직접 매장에서 체감 비교를 권장"
+    },
+    {
+      "id": "gpu-resolution-refresh-rate-matching",
+      "claim": "RTX 4060 이하 GPU에서는 QHD(2560×1440) 고주사율보다 FHD(1920×1080) 240Hz가 실질적으로 유리하며, 4K는 RTX 4080 이상이 있어야 의미 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "루시안 게이밍 모니터 가이드 2026",
+      "source_url": "https://rucian.kr/gaming-monitor-guide-2026/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "게이밍 모니터",
+        "years": "2026~",
+        "region": "KR"
+      },
+      "caution": "해상도 증가는 픽셀 처리량을 크게 올리므로, 게임 장르와 선호 프레임레이트를 기준으로 GPU 성능을 우선 고려해야 한다"
+    },
+    {
+      "id": "resolution-refresh-rate-compromise-point",
+      "claim": "정보량이 필요한 게임(전략·시뮬레이션)과 빠른 반응을 요구하는 게임(FPS)을 모두 즐길 때 QHD 144Hz(2560×1440, 16:9)가 현실적인 타협점이다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "GOP 컴퓨터 가이드 — 게임 장르별 모니터 추천 2026",
+      "source_url": "https://www.gopgg.com/2026/06/game-genre-monitor-guide-fhd-wqhd.html",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "게이밍 모니터",
+        "years": "2026~",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "fhd-qhd-price-gap-2026",
+      "claim": "동급 주사율 기준으로 FHD 대비 QHD는 평균 30~60% 비싸며, 144Hz FHD 모니터가 15~20만 원대인 반면 QHD 144Hz는 30만 원대 이상에서 시작한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "루시안 게이밍 모니터 가이드 2026",
+      "source_url": "https://rucian.kr/gaming-monitor-guide-2026/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "게이밍 모니터",
+        "years": "2026~",
+        "region": "KR"
+      },
+      "caution": "가격대는 검색 시점 기준이므로 실시간 시세 확인이 필요하다",
+      "cautionSource": "루시안 게이밍 모니터 가이드 2026"
+    },
+    {
+      "id": "oled-gaming-monitor-price-trend",
+      "claim": "2026년 기준 QHD OLED 게이밍 모니터가 2년 전 150만 원 이상에서 70~100만 원대로 인하됐으며, 40~50만 원 예산이면 QHD 165~240Hz IPS급 모니터를 구매할 수 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "루시안 게이밍 모니터 가이드 2026",
+      "source_url": "https://rucian.kr/gaming-monitor-guide-2026/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "OLED 게이밍 모니터",
+        "years": "2026~",
+        "region": "KR"
+      },
+      "caution": "OLED 가격은 지속적으로 하락 중이며, 2년 전 대비 50~65% 가격 인하가 일어났다",
+      "cautionSource": "루시안 게이밍 모니터 가이드 2026"
+    },
+    {
+      "id": "oled-monitor-burn-in-risk-general-use",
+      "claim": "2026년 OLED 모니터의 번인 위험은 올바른 설정만 잡아두면 일반 사용 환경에서 거의 발생하지 않으며, LG 같은 주요 제조사들은 4년 번인 보증(LG OLED Care)을 제공한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 공식 고객 지원 — OLED Care 보증 정보",
+      "source_url": "https://www.lg.com/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "OLED 게이밍 모니터",
+        "years": "2026~",
+        "region": "KR"
+      },
+      "caution": "고정된 UI(게임 HUD·작업 도구)가 오래 표시되는 용도에서는 번인 발생 가능성이 높아지므로 주의가 필요하다"
+    },
+    {
+      "id": "response-time-gtg-specification-vs-reality",
+      "claim": "게이밍 모니터 광고상 GTG 1ms 응답속도는 이상적인 조건의 한 소자 기준이며, 실측값은 이보다 높다. 100만 원대 고급 LCD 게이밍 모니터도 실측 GTG 6~9ms, 중저가형 144~165Hz는 10~15ms가 측정된다",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "퀘이사존 — 응답 속도의 불편한 진실 기획기사",
+      "source_url": "https://quasarzone.com/bbs/qc_plan/views/36275",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "게이밍 모니터",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "제조사는 오버드라이브를 최대로 걸고 측정한 수치를 표기하므로, 실제 게임 사용 환경과는 차이가 있다"
+    },
+    {
+      "id": "panel-type-response-time-practical",
+      "claim": "패널 종류별 실측 응답속도는 OLED 0.9~2ms, IPS 6~7ms, VA 9ms 정도이며, OLED는 LCD와는 비교도 되지 않는 응답 속도를 제공하고 실 사용 시에도 쉬이 체감될 정도로 잔상이 적다",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "퀘이사존 — 게이밍 모니터 기술 자료",
+      "source_url": "https://quasarzone.com/bbs/qf_dp/views/539109",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "게이밍 모니터",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "1ms와 5ms 응답속도는 체감 차이가 있으나, 극저주사율(30Hz 이하)에서는 응답속도 차이가 무의미해진다"
+    },
+    {
+      "id": "gtg-1ms-vs-5ms-perception",
+      "claim": "GTG 1ms와 5ms의 응답속도 차이는 실제로 체감되며, 특히 FPS 게임처럼 빠른 마우스 조작이 필요한 환경에서 인지 가능하다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "퀘이사존 커뮤니티 토론",
+      "source_url": "https://quasarzone.com/bbs/qf_dp/views/539109",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "게이밍 모니터",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "개인의 반응 속도와 게임 장르에 따라 인지 여부가 달라질 수 있다"
+    },
+    {
+      "id": "g-sync-freesync-equivalence-2026",
+      "claim": "2026년 기준 NVIDIA G-SYNC와 AMD 프리싱크는 대부분의 경우 동일하게 작동하며 제공하는 사용자 경험도 비슷하다. NVIDIA는 G-SYNC Pulsar라는 신기술을 CES 2026에서 발표했으며, 미디어텍과의 협력으로 스케일러칩에 G-SYNC를 통합 중이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NVIDIA 공식 지원 문서 및 CES 2026 발표",
+      "source_url": "https://www.nvidia.com/content/Control-Panel-Help/vLatest/ko-kr/mergedProjects/nvdspKOR/Variable_Refresh_Rate.htm",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "게이밍 모니터",
+        "years": "2026~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "screen-tearing-adaptive-sync-solution",
+      "claim": "스크린 티어링(화면 찢김)은 모니터 재생 빈도와 GPU 프레임 속도 불일치로 발생하며, G-SYNC와 프리싱크 같은 어댑티브 싱크 기술로 완화·제거할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NVIDIA 공식 지원 문서",
+      "source_url": "https://www.nvidia.com/content/Control-Panel-Help/vLatest/ko-kr/mergedProjects/nvdspKOR/Variable_Refresh_Rate.htm",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "게이밍 모니터",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "game-genre-refresh-rate-resolution-priority",
+      "claim": "FPS·리듬 게임에는 144Hz 이상의 주사율이 권장되고, 정보량이 많은 전략·시뮬레이션 게임에는 해상도가 우선이다. 두 장르를 동시에 즐기면 QHD 144Hz가 타협점이다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "GOP 컴퓨터 가이드 — 게임 장르별 모니터 추천",
+      "source_url": "https://www.gopgg.com/2026/06/game-genre-monitor-guide-fhd-wqhd.html",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "게이밍 모니터",
+        "years": "2026~",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "pixel-count-resolution-upgrade-impact",
+      "claim": "FHD에서 QHD로 해상도를 올리면 처리해야 할 픽셀 수가 약 78% 증가하므로, 같은 주사율을 유지하려면 GPU 성능을 상향 고려해야 한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "삼성 공식 모니터 구매 가이드",
+      "source_url": "https://www.samsung.com/sec/monitors/monitor-buying-guide/how-to-select-by-resolution/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모니터",
+        "line": "게이밍 모니터",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "픽셀 증가는 프레임레이트 저하로 이어지므로, 선호 주사율 유지 시 GPU 업그레이드가 필수적일 수 있다",
+      "cautionSource": "삼성 공식 모니터 구매 가이드"
+    }
+  ]
+}

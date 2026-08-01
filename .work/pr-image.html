@@ -1,0 +1,63 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Noto Sans KR',sans-serif;}
+  body{width:1200px;height:630px;overflow:hidden;}
+  .wrap{width:1200px;height:630px;display:flex;background:#FBFAF7;position:relative;}
+  .accent{position:absolute;top:0;left:0;width:14px;height:100%;background:#FF5A3C;}
+  .left{flex:1;padding:64px 0 64px 84px;display:flex;flex-direction:column;justify-content:space-between;}
+  /* 로고 */
+  .logo{display:flex;align-items:center;gap:10px;}
+  .logo .ic{width:38px;height:38px;border-radius:11px;background:#FF5A3C;display:flex;align-items:center;justify-content:center;}
+  .logo .ic svg{width:22px;height:22px;}
+  .logo .nm{font-weight:800;font-size:23px;color:#1A1A1A;letter-spacing:-1px;}
+  .logo .nm b{color:#FF5A3C;}
+  .logo .mag{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;color:#8A857C;border-left:1px solid #E7E2D9;padding-left:10px;letter-spacing:1px;}
+  /* 헤드라인 */
+  .head h1{font-weight:900;font-size:62px;line-height:1.22;letter-spacing:-2.5px;color:#1A1A1A;}
+  .head h1 .o{color:#FF5A3C;}
+  .head p{margin-top:20px;font-size:21px;font-weight:500;color:#6F6B64;letter-spacing:-0.5px;}
+  /* 코너칩 */
+  .chips{display:flex;gap:8px;flex-wrap:wrap;}
+  .chip{font-size:14px;font-weight:700;padding:8px 14px;border-radius:999px;letter-spacing:-0.3px;}
+  .c1{background:#E3EFEE;color:#1F6B66;} .c2{background:#FFE9E2;color:#E0481F;} .c3{background:#E9EDF7;color:#38539A;}
+  .c4{background:#F1ECDF;color:#7A5F2E;} .c5{background:#EFE7F5;color:#6E4690;}
+  /* 우측 패널 */
+  .right{width:392px;background:#16140F;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:22px;padding:40px;}
+  .badge{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(180deg,#34343b,#26262b);color:#fff;font-size:19px;font-weight:700;padding:13px 20px;border-radius:13px;box-shadow:inset 0 1px 0 rgba(255,255,255,.08);}
+  .badge .dot{width:11px;height:11px;border-radius:50%;background:#EAB308;}
+  .badge .sep{color:#9a9aa2;font-weight:500;}
+  .vs{font-family:'JetBrains Mono',monospace;color:#c9c4bb;font-size:15px;text-align:center;line-height:1.7;}
+  .vs b{color:#22A45D;font-size:17px;}
+  .tag{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:2px;color:#7a766e;}
+</style></head>
+<body>
+  <div class="wrap">
+    <div class="accent"></div>
+    <div class="left">
+      <div class="logo">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="2"/><path d="M12 7v5l3.5 2" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></span>
+        <span class="nm">오늘의딜<b>.</b></span>
+        <span class="mag">MAGAZINE</span>
+      </div>
+      <div class="head">
+        <h1>팔지 않습니다<span class="o">,</span><br>방향만 드립니다<span class="o">.</span></h1>
+        <p>광고·제휴 0 · AI가 검증하는 중립 쇼핑 가이드</p>
+      </div>
+      <div class="chips">
+        <span class="chip c2">스마트가이드</span>
+        <span class="chip c1">팩트체크</span>
+        <span class="chip c3">끝장비교</span>
+        <span class="chip c4">롱런팁</span>
+        <span class="chip c5">트렌드랩</span>
+      </div>
+    </div>
+    <div class="right">
+      <div class="tag">AI 가격진단</div>
+      <div class="badge"><span class="dot"></span>AI분석<span class="sep">·</span>강추</div>
+      <div class="vs">네이버·쿠팡 최저가와 비교<br><b>“이거 진짜 싼 딜이에요”</b></div>
+    </div>
+  </div>
+</body></html>

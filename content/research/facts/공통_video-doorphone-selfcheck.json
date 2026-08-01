@@ -1,0 +1,235 @@
+{
+  "topic": "비디오 인터폰·월패드·도어폰 화면 안 나옴·벨 안 울림·통화 소리 안 됨 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "video-doorphone-screen-off-power-switch",
+      "claim": "비디오 인터폰 화면이 나오지 않을 때 첫 점검은 인터폰 옆면 또는 하단의 전원 스위치를 껐다가 다시 켜는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코콤(KOCOM) FAQ 및 설치 가이드",
+      "source_url": "https://www.kocom.co.kr/bbs/board.php?tbl=faq",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "비디오 인터폰·월패드",
+        "line": "세대 인터폰",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "video-doorphone-screen-off-breaker-check",
+      "claim": "비디오 인터폰 화면이 안 나올 때 집의 분전반(차단기)에서 인터폰 관련 차단기가 내려가지 않았는지 확인해야 한다. 내려가 있으면 올려주고, 필요시 차단기를 한 번 내렸다가 다시 올려 재부팅한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코콤·코맥스 기술 자가점검 가이드",
+      "source_url": "https://poledit.co.kr/%EC%BD%94%EC%BD%A4-kocom-%EC%9D%B8%ED%84%B0%ED%8F%B0-%EA%B3%A0%EC%9E%A5-as-%EA%B3%A0%EA%B0%9D%EC%84%BC%ED%84%B0/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "비디오 인터폰·월패드",
+        "line": "세대 인터폰",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "아파트 월패드는 배선이 공용설비라 집 내 차단기만 확인 가능하며, 공동현관 카메라나 경비실 로비폰 배선 문제는 관리사무소에 신고해야 한다.",
+      "cautionSource": "사용자 조사 범위 지시사항 및 공동주택 관리 구조"
+    },
+    {
+      "id": "video-doorphone-screen-off-wall-connection",
+      "claim": "비디오 인터폰 화면이 나오지 않을 때 본체와 벽 연결 부위를 점검하여 인터폰 본체가 벽에서 흔들리지 않는지, 케이블이 제대로 연결되어 있는지 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코콤(KOCOM) 기술 자가점검",
+      "source_url": "https://www.kocom.co.kr/bbs/board.php?tbl=faq",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "비디오 인터폰·월패드",
+        "line": "세대 인터폰",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "video-doorphone-bell-not-ringing-shared-wiring",
+      "claim": "비디오 인터폰 벨이 울리지 않거나 현관 카메라(공동현관)의 벨 신호가 안 들릴 때는 배선 문제일 가능성이 높으며, 이는 공용설비에 해당하므로 관리사무소에 신고하여 점검해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공동주택 관리사무소 권한 및 구조",
+      "source_url": "https://gyeongju.go.kr/design/downfiles/gyeongju/equipment/equipment05_260102.pdf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "비디오 인터폰·월패드",
+        "line": "공동현관 카메라·로비폰",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "세대 인터폰의 벨만 안 들리면 세대 차단기나 음량 설정 문제이므로 자가점검이 가능하지만, 현관 카메라나 경비실 신호는 관리사무소만 점검할 수 있다.",
+      "cautionSource": "공동주택 정보통신설비 관리 해설서"
+    },
+    {
+      "id": "video-doorphone-call-volume-adjustment",
+      "claim": "비디오 인터폰 통화 중 음성이 안 들리거나 너무 작을 때는 통화 중 우측 하단에 있는 통화음량조절버튼(+/-)으로 원하는 음량을 조절할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코콤(KOCOM) FAQ",
+      "source_url": "https://www.kocom.co.kr/bbs/board.php?tbl=faq",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "비디오 인터폰·월패드",
+        "line": "세대 인터폰",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "video-doorphone-system-volume-setting",
+      "claim": "비디오 인터폰 통화음이 전체적으로 작거나 안 들릴 때는 인터폰 설정 메뉴의 음성(Sound) → 시스템 음량(System Volume) 에서 전체 음량을 확인하고 조정할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코콤(KOCOM) 설정 가이드",
+      "source_url": "https://www.kocom.co.kr/bbs/board.php?tbl=faq",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "비디오 인터폰·월패드",
+        "line": "세대 인터폰",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "video-doorphone-screen-blurry-lens-cleaning",
+      "claim": "비디오 인터폰의 화면이 흐리거나 화면에 때가 있어 보일 때는 인터폰 렌즈와 투명 커버를 부드러운 천(극세사 소재, 안경닦이 등)으로 부드럽게 닦으면 대부분 해결된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "카메라·렌즈 관리 기본 원칙",
+      "source_url": "https://www.sony.co.kr/electronics/support/articles/00027109",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "비디오 인터폰·월패드",
+        "line": "세대 인터폰",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "렌즈를 청소할 때 벤젠, 나프타, 알코올, 화학 세제, 살충제 등을 사용하면 렌즈 코팅이 손상될 수 있으므로 물을 조금 묻힌 부드러운 천 또는 마른 극세사 천만 사용할 것.",
+      "cautionSource": "카메라 렌즈 청소 표준 원칙"
+    },
+    {
+      "id": "video-doorphone-camera-module-malfunction",
+      "claim": "비디오 인터폰 화면의 일부가 지지직거리거나 색상이 이상하거나 화상이 계속 끊길 때는 카메라 모듈의 설정값 오작동이 원인일 수 있으며, 이는 자가 수정이 어려우므로 기술 서비스 센터에 문의해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코콤(KOCOM) FAQ — 카메라 모듈 설정값 오작동",
+      "source_url": "https://www.kocom.co.kr/bbs/board.php?tbl=faq",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "비디오 인터폰·월패드",
+        "line": "세대 인터폰",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "video-doorphone-door-open-button-failure",
+      "claim": "비디오 인터폰의 문 열림 버튼을 눌렀을 때 반응이 없으면 세대 내 차단기 확인, 통화 상대 확인, 버튼 반응 재시도 등을 점검한 후에도 작동하지 않으면 기술 서비스를 신청해야 한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "비디오 인터폰 사용자 경험 보고",
+      "source_url": "https://poledit.co.kr/%EC%BD%94%EC%BD%A4-kocom-%EC%9D%B8%ED%84%B0%ED%8F%B0-%EA%B3%A0%EC%9E%A5-as-%EA%B3%A0%EA%B0%9D%EC%84%BC%ED%84%B0/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "비디오 인터폰·월패드",
+        "line": "세대 인터폰",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "문 열림 버튼은 전동 개폐기(모터)를 제어하는 회로이며, 이는 세대 내부 배선에 해당하지만 공동현관 개폐기와 연동되므로 공용 설비 측 문제일 수도 있다. 관리사무소에도 함께 신고할 것.",
+      "cautionSource": "공동주택 월패드 구조 및 관리 범위"
+    },
+    {
+      "id": "video-doorphone-recording-feature-setting",
+      "claim": "비디오 인터폰의 부재중 녹화(부재중 수신자 영상 기록) 기능은 인터폰 앱 또는 설정 메뉴에서 활성화할 수 있으며, 기능과 저장 시간은 제조사와 모델에 따라 다르므로 제품 매뉴얼을 확인해야 한다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "제조사별 매뉴얼 및 사용자 가이드",
+      "source_url": "https://www.kocom.co.kr/bbs/board.php?tbl=faq&mode=&page=1&category=%EB%A7%A4%EB%89%B4%EC%96%BC",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "비디오 인터폰·월패드",
+        "line": "세대 인터폰",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "부재중 녹화는 저장 용량(클라우드 또는 로컬 메모리)에 따라 보관 기간이 제한될 수 있으므로 정기적으로 확인하고 중요 영상은 별도 백업할 것.",
+      "cautionSource": "비디오 인터폰 부재중 녹화 기능 일반 안내"
+    },
+    {
+      "id": "video-doorphone-main-vs-lobby-distinction",
+      "claim": "세대 인터폰(월패드 화면)은 세대 내부에만 설치되고 각 세대에서 독립적으로 관리되지만, 현관 카메라(공동현관), 로비폰(경비실) 등 공동시설 영상은 관리사무소에서 통합 관리하는 공용설비이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공동주택 정보통신설비 유지보수 및 관리 규칙",
+      "source_url": "https://gyeongju.go.kr/design/downfiles/gyeongju/equipment/equipment05_260102.pdf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "비디오 인터폰·월패드",
+        "line": "세대 vs 공동시설",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "세대 인터폰 문제는 세대주가 자가점검·수리할 수 있으나, 현관 카메라·로비폰·공동 배선 문제는 관리사무소 권한이다. 문제 신고 시 '세대 인터폰 문제인지 공동시설 문제인지'를 명확히 하면 관리사무소의 대응이 빨라진다.",
+      "cautionSource": "공동주택 관리사무소의 책임 범위 정의"
+    },
+    {
+      "id": "video-doorphone-management-office-coordination",
+      "claim": "월패드 비디오폰을 포함한 홈네트워크 시스템은 각 세대의 주소(동-호수)와 경비실 주소를 정확하게 설정해야 관리사무소의 로비폰과 연동되므로, 설정 오류가 있으면 관리사무소에 문의하여 경비실 주소 설정값을 확인하고 필요시 재설정해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코콤(KOCOM) 월패드 연동 설정 가이드",
+      "source_url": "https://blog.0xcc2c.com/103",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "비디오 인터폰·월패드",
+        "line": "홈네트워크 시스템",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "경비실 주소는 기본값이 10으로 설정되어 있으나 드물게 20, 50, 75 등으로 변경되어 있을 수 있으므로, 설정 오류로 인한 연동 불가 시 로비폰에서 경비실 주소를 확인하거나 관리사무소에 정확한 주소 설정값을 문의할 것.",
+      "cautionSource": "코콤 홈네트워크 설정 가이드"
+    },
+    {
+      "id": "video-doorphone-electrical-wiring-safety-warning",
+      "claim": "비디오 인터폰은 전기 배선으로 연결되어 있으므로, 무단으로 분해하거나 케이블을 임의로 조작하면 감전 위험이 있다. 자가 점검은 전원 스위치, 차단기 확인, 렌즈 청소, 설정 메뉴 조정 등에 한정하고, 배선이나 내부 회로 수정이 필요하면 반드시 기술 전문가를 호출해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전기 안전 표준 및 가전기기 안전 규칙",
+      "source_url": "https://www.se.com/kr/ko/faqs/FA242537",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "비디오 인터폰·월패드",
+        "line": "전체",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "⚠️ 감전, 화재, 제품 손상 위험이 있으므로 무단 분해 절대 금지. 기술 서비스는 각 제조사의 공식 서비스 센터(코콤: 1577-0051, 코맥스: 1599-8866) 또는 관리사무소 추천 업체를 통해 신청할 것.",
+      "cautionSource": "전기 안전 표준 및 제조사 안전 공지"
+    }
+  ]
+}

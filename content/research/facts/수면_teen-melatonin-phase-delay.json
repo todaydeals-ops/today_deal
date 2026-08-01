@@ -1,0 +1,119 @@
+{
+  "topic": "사춘기 멜라토닌 위상 지연 현상",
+  "brand": "수면",
+  "article": "teen-melatonin-phase-delay",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "puberty-sleep-pattern-circadian-changes",
+      "claim": "사춘기 신체 지표가 연령보다 청소년의 수면 패턴 변화와 더 강하게 연관되며, 이는 호르몬 변화와 관련된 서카디안 리듬 재편성을 시사한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Br J Dev Psychol · Changes in sleep patterns in adolescents are more associated with pubertal indicators than age: A perfect storm with a dash of hormones",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13155287/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년 발달",
+        "line": "사춘기 호르몬과 수면",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "evening-light-sleep-restriction-circadian-phase-advance",
+      "claim": "저녁 불빛 노출과 수면 제한이 청소년의 아침 밝은 빛에 의한 서카디안 시간 선진화(circadian phase advance) 능력을 감소시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sci Rep · Late evening room light and sleep restriction reduces the ability of bright morning light to phase advance adolescents' circadian clocks",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13031836/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년 발달",
+        "line": "광선 노출과 서카디안 리듬",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "adolescent-circadian-rhythm-sleep-regularity-emotion",
+      "claim": "수면 규칙성, 서카디안 리듬, 크로노타입이 여성 청소년의 정서 조절 곤란의 위험 메커니즘으로 작용한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dev Psychopathol · Sleep regularity, circadian rhythms, and chronotype as mechanisms of risk for affective dysregulation in female adolescents",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12957652/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년 발달",
+        "line": "성별·정신건강",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "circadian-gene-expression-adolescent-disruption-cardiometabolic",
+      "claim": "청소년의 서카디안 유전자 발현 변화가 동시대 서카디안 리듬 장애와 이후 대사 위험 지표 변화와 연관된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Med · Circadian gene expression in adolescents: Associations with concurrent circadian disruption and subsequent changes in cardiometabolic risk measures",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13265021/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년 발달",
+        "line": "서카디안 리듬과 대사 건강",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "adolescent-insomnia-internet-use-nexus",
+      "claim": "청소년의 불면증과 문제적 인터넷 사용은 신경영상 생체지표, 분자 감수성, 환경-신경인지적 연쇄를 통해 수렴된 발달 궤적을 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Psychol Res Behav Manag · Adolescent Insomnia Disorder - Problematic Internet Use Nexus: A Convergent Developmental Trajectory",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12968813/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년 발달",
+        "line": "디지털 행동 중독과 불면증",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-emotion-developmental-trajectories",
+      "claim": "수면은 아동과 청소년의 정서 발달 궤적에서 성별별 차이를 보이는 핵심 요인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Children (Basel) · Sleep, Emotion, and Sex-Specific Developmental Trajectories in Childhood and Adolescence",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12939931/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년 발달",
+        "line": "성별 차이·정서 발달",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

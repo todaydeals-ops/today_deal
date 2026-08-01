@@ -1,0 +1,178 @@
+{
+  "topic": "반려동물 자동급수기(정수 급수기) 살 만한가 — 트렌드랩",
+  "brand": "공통",
+  "article": "pet-water-fountain-trend",
+  "captured": "2026-07-28",
+  "reused_facts": [
+    "filter-bacteria-growth-study",
+    "filter-bacteria-threshold-exceeded",
+    "membrane-nano-filtration-performance",
+    "coliform-bacteria-presence-disqualifies-drinking"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "cat-ckd-increased-water-intake-symptom",
+      "claim": "고양이 만성신장질환(CKD) 초기 증상으로 음수량과 배뇨량이 증가하며, 신장 기능이 저하되면서 감소된 수분 재흡수를 보상하기 위해 의도적으로 더 많은 물을 마신다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "힐스펫, 핏펫, 스마트동물병원 수의학 자료",
+      "source_url": "https://www.hillspet.co.kr/cat-care/healthcare/cat-drinking-more-water",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물급수기",
+        "line": "고양이",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "음수량 증가는 신장질환이 이미 진행 중이라는 신호이므로, 건강한 고양이의 의도적 음수 증가와는 구별 필요. 정상 고양이도 환경·계절·식이에 따라 음수량이 달라질 수 있음.",
+      "cautionSource": "힐스펫·핏펫의 신장질환 증상 설명"
+    },
+    {
+      "id": "cat-ckd-early-detection-water-intake-monitoring",
+      "claim": "고양이 만성신장질환은 증상이 완만하게 진행되어 초기 단계에 알아채기 어렵지만, 음수량과 배뇨량의 눈에 띄는 변화로 조기 발견할 수 있으며, 조기 발견 시 질병 진행 속도를 지연시킬 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "핏펫, 헬스경향, 스마트동물병원 수의학 자료",
+      "source_url": "https://www.fitpetmall.com/blog/feline-renal-failure",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "고양이신장질환",
+        "line": "만성신장질환(CKD)",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "완치는 어렵고 진행 속도를 늦추는 것이 목표이므로, 정기적 검사와 함께 음수량 모니터링이 질환 관리의 일부이다. 음수량만으로는 진단이 불가능하므로 수의사 상담 필수.",
+      "cautionSource": "핏펫·헬스경향의 신장질환 관리 가이드"
+    },
+    {
+      "id": "pet-fountain-circulating-motor-noise-typical",
+      "claim": "반려동물 자동급수기의 순환 펌프 모터는 일반적으로 40데시벨 이상의 작동음을 발생시키며, 제품 및 펌프 타입에 따라 소음 수준이 크게 달라진다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "반려동물 용품 커뮤니티 및 구매 후기 종합",
+      "source_url": "https://tilnote.io/en/pages/6a43029988a337ba1827cc86",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물급수기",
+        "line": "순환 펌프형 전제품",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "40dB는 냉장고 소음과 비슷한 수준이나, 고양이 등 야행성 동물은 야간 작동음에 예민할 수 있으므로 구매 전 소음 테스트나 후기 확인 권장. 일부 초저소음 제품(30dB 이하)도 있음.",
+      "cautionSource": "반려동물 용품 관련 상품평과 사용자 보고"
+    },
+    {
+      "id": "water-biofilm-formation-timeline-rapid-growth",
+      "claim": "물을 담는 시스템의 필터 및 관로에 미생물막(biofilm)이 형성되는데 10~20일 내에 박테리아, 균류, 원생동물 등이 복합적으로 성장하며 빠르게 두꺼워진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수질 관리 및 미생물학 기술 자료",
+      "source_url": "https://ko.wikipedia.org/wiki/%EB%AF%B8%EC%83%9D%EB%AC%BC%EB%A7%89",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "물필터·순환시스템",
+        "line": "정수기, 급수기 등 전 타입",
+        "years": "기술기준",
+        "region": "KR"
+      },
+      "caution": "미생물막은 정기적 세척으로만 관리되며, 세척 간격이 길수록 막이 두꺼워져 박테리아 번식 위험이 증가. 주 1회 이상 세척이 권장되는 이유.",
+      "cautionSource": "미생물학 자료의 biofilm 성장 메커니즘"
+    },
+    {
+      "id": "plastic-bpa-content-pet-product-risk",
+      "claim": "반려동물 급수기 등 용품에 사용되는 플라스틱에 BPA(비스페놀A)가 포함될 수 있으며, 미국 질병통제예방센터(CDC) 연구에 따르면 BPA 노출은 동물의 불임 문제와 관련이 있을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "허프포스트코리아, CDC 연구자료",
+      "source_url": "https://www.huffingtonpost.kr/entry/story_kr_5d70c28fe4b01108045a0710",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물급수기",
+        "line": "플라스틱 재질 제품",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "반려동물 제품은 어린이 장난감과 달리 BPA 함유 규제가 느슨할 수 있음. 플라스틱 바닥의 재활용 코드 #7번 또는 'PC' 표기는 가열 시 BPA 방출 위험이 높으므로 피해야 함. 가능한 스테인리스나 세라믹 제품 선택 권장.",
+      "cautionSource": "허프포스트코리아의 반려동물 제품 안전 기준 설명 및 CDC 기준"
+    },
+    {
+      "id": "pet-fountain-plastic-vs-stainless-durability",
+      "claim": "반려동물 급수기의 플라스틱 재질은 저렴하고 가볍지만 상대적으로 세균 번식과 화학물질 용출 위험이 높고, 스테인리스는 세균 번식이 적고 내구성이 우수하지만 가격이 높다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "반려동물 용품 사용자 리뷰 및 경험 종합",
+      "source_url": "https://www.fitpetmall.com/blog/cat-water-purifier",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물급수기",
+        "line": "플라스틱 vs 스테인리스 재질",
+        "years": "현행 제품",
+        "region": "KR"
+      },
+      "caution": "스테인리스도 결합부(고무 패킹, 펌프 부분)에 플라스틱이 사용되는 경우 대부분. 결합부 세척 주기도 중요하므로, 재질보다는 '분해 가능 여부'와 '세척 용이성'을 우선 기준으로 삼는 것이 실질적.",
+      "cautionSource": "반려동물 용품 구매처 상품평"
+    },
+    {
+      "id": "pet-fountain-sedentary-cats-water-intake-increase",
+      "claim": "움직이지 않는 물그릇보다 순환하는 물이 고양이 등 반려동물의 관심을 유도하는 경향이 있어, 자동급수기 사용 시 음수량이 자연스럽게 증가할 가능성이 있다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "반려동물 커뮤니티 사용자 보고 및 경험담",
+      "source_url": "https://www.fitpetmall.com/blog/cat-water-purifier",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물급수기",
+        "line": "고양이, 개 전종",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "모든 반려동물이 순환하는 물에 긍정적 반응을 보이는 것은 아니며, 개인차가 크다. 일부는 움직이는 물을 두려워하거나 무시하기도 함. 순환 펌프음에 스트레스를 받는 개체도 있음.",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "pet-fountain-maintenance-neglect-bacterial-hazard",
+      "claim": "반려동물 자동급수기의 필터 및 탱크를 정기적으로 세척하지 않으면 박테리아, 곰팡이, 미생물막이 빠르게 성장하여 음수를 통한 감염 위험이 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "정수기 필터 교체 미루면 정말 위험한가 — 팩트체크(재사용)",
+      "source_url": "https://www.mt.co.kr/future/2021/10/30/2021102908103110788",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물급수기",
+        "line": "필터형 전제품",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "정수기 관련 연구에서 미교체 필터의 물에서 70 CFU/mL 이상의 세균이 검출되었으므로(300ml당 21,000마리 이상), 반려동물 급수기도 동일한 메커니즘으로 오염될 수 있음. 주 1회 이상의 필터 세척과 월 1회 이상의 깊은 청소 권장.",
+      "cautionSource": "정수기 필터 조사의 세균 검출 사례 (머니투데이)"
+    },
+    {
+      "id": "pet-fountain-filter-activated-carbon-removal-efficiency",
+      "claim": "반려동물 급수기의 활성탄 필터는 대장균을 79.83~97.65% 제거하며, 필터 성능은 사용 기간에 따라 저하되므로 정기적 교체가 필수이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "광운대학교 이준석 - 정수기 필터 대장균 제거 성능 연구(재사용)",
+      "source_url": "https://www.dbpia.co.kr/journal/detail?nodeId=T16157509",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물급수기",
+        "line": "활성탄 필터 탑재 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "이는 새 필터의 성능이며, 오염되거나 사용 기간이 경과한 필터는 제거 효율이 급격히 떨어진다. 제조사 권장 교체 주기(보통 1~3개월)를 준수해야 함.",
+      "cautionSource": "광운대학교 연구의 필터 성능 저하 분석"
+    }
+  ]
+}

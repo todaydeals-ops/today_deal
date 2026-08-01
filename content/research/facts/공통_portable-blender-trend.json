@@ -1,0 +1,198 @@
+{
+  "topic": "휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계",
+  "brand": "공통",
+  "article": "portable-blender-trend",
+  "captured": "2026-07-28",
+  "reused_facts": [
+    "ice-crushing-limitation-most-hand-blenders",
+    "ice-crushing-damages-regular-blade",
+    "blade-extremely-sharp-cutting-risk",
+    "battery-overheating-danger-external-shock",
+    "battery-safe-charge-level-storage",
+    "high-temperature-ambient-above-35-celsius-permanent-damage"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "portable-blender-usb-rechargeable-tumbler-market-growth-2026",
+      "claim": "2026년 한국 시장의 USB 충전식 휴대용 미니 블렌더는 GIOIO, Ninja Blast, Xiaomi, 메이원 등 주요 브랜드에서 300~600mL 용기 기준으로 판매되고 있으며, 롯데ON, G마켓, 이마트몰(SSG) 등 온라인 쇼핑몰에 활발히 유통되고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "롯데ON, G마켓, 이마트몰(SSG) 제품 페이지 / 다나와 통합검색",
+      "source_url": "https://www.lotteon.com/m/product/LO2620020575",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "휴대용 블렌더",
+        "line": "USB 충전식 미니 블렌더·텀블러 블렌더",
+        "years": "2026년 현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "제품별로 용량(300~600mL), 모터 속도(7000~19500rpm), 충전 방식(USB-A/USB-C), 칼날 수(6중~10중), 가격대(30,000~200,000원대)가 다르므로, 용도에 맞는 제품 선정이 필요하다.",
+      "cautionSource": "온라인 쇼핑몰 제품 페이지 통합 검토"
+    },
+    {
+      "id": "xiaomi-portable-blender-battery-capacity-usage-cycles",
+      "claim": "Xiaomi 휴대용 블렌더의 배터리 사양은 1300mAh 용량으로, 1회 충전 시 약 12회 사용 가능하며, 완전 충전 후 총 사용 시간은 약 12시간에 이른다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Xiaomi 공식 제품 사양 페이지(대한민국)",
+      "source_url": "https://www.mi.com/kr/product/xiaomi-portable-blender/specs/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "샤오미(Xiaomi)",
+        "category": "휴대용 블렌더",
+        "line": "Xiaomi Portable Blender",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "1회 사용이란 블렌딩 1~2초를 의미하며, 실제 사용 시간은 재료의 경도와 모터 속도 설정에 따라 크게 달라진다. 냉동 과일이나 얼음을 블렌딩하면 한 번에 더 많은 배터리를 소모하므로, 12회보다 적은 횟수만 가능할 수 있다.",
+      "cautionSource": "Xiaomi 공식 제품 스펙 및 사용 설명서"
+    },
+    {
+      "id": "xiaomi-portable-blender-motor-speed-and-capacity",
+      "claim": "Xiaomi 휴대용 블렌더는 45W DC 모터로 19,500±15%rpm의 고속 회전으로 작동하며, 용기 용량은 300mL이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Xiaomi 공식 제품 사양 페이지(대한민국)",
+      "source_url": "https://www.mi.com/kr/product/xiaomi-portable-blender/specs/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "샤오미(Xiaomi)",
+        "category": "휴대용 블렌더",
+        "line": "Xiaomi Portable Blender",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "300mL 용기는 1~2명 분량이므로, 가족 2인 이상 음료를 만들 때는 여러 번 나눠 블렌딩해야 한다. 모터 속도가 높을수록 재료가 빠르게 분쇄되지만, 블레이드와 모터에 부담이 가므로 과도한 고속 사용은 배터리 소모를 가속한다.",
+      "cautionSource": "Xiaomi 공식 제품 사양"
+    },
+    {
+      "id": "portable-blender-tumbler-design-sealed-ring-leakproof",
+      "claim": "Xiaomi 휴대용 블렌더는 360도 실리콘 씰 링으로 밀폐되어 있어, 흔들거나 넘어뜨려도 누수가 발생하지 않으며, 밀폐된 텀블러로도 사용할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Xiaomi 공식 제품 사양 페이지(대한민국)",
+      "source_url": "https://www.mi.com/kr/product/xiaomi-portable-blender/specs/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "샤오미(Xiaomi)",
+        "category": "휴대용 블렌더",
+        "line": "Xiaomi Portable Blender",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "실리콘 씰은 소비재로, 사용 횟수가 증가하면서 탄력이 떨어져 시간이 지나면 누수 위험이 높아진다. 1~2년 사용 후 누수가 발생하면 실리콘 씰 교체가 필요하다.",
+      "cautionSource": "Xiaomi 제품 설명서"
+    },
+    {
+      "id": "portable-blender-container-material-heat-sensitivity",
+      "claim": "Xiaomi 휴대용 블렌더의 용기는 PCTG 소재로, 열탕 세척이나 끓는 물에 담그면 용기가 변형될 수 있으므로 따뜻한 물(40°C 이하)로만 세척해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Xiaomi 공식 제품 사양 페이지(대한민국)",
+      "source_url": "https://www.mi.com/kr/product/xiaomi-portable-blender/specs/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "샤오미(Xiaomi)",
+        "category": "휴대용 블렌더",
+        "line": "Xiaomi Portable Blender",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "PCTG 소재는 식품 접촉 안전성이 확인되었으나, 고온에 매우 취약하다. 식기세척기 사용도 금지되어 있으며, 세척 후 통풍 건조만 가능하다. 세척 시 실리콘 씰과 블레이드 부분은 분리하여 각각 세척하는 것이 권장된다.",
+      "cautionSource": "Xiaomi 제품 설명서의 세척 및 관리 지침"
+    },
+    {
+      "id": "portable-blender-ice-crushing-capability-varies-by-model",
+      "claim": "휴대용 블렌더의 얼음 분쇄 능력은 제품에 따라 다르다. Xiaomi와 Ninja Blast 같은 고속 모터(19,500rpm 이상) 제품은 작은 얼음을 분쇄할 수 있으나, 일반 저속 미니 블렌더(7000~10000rpm)는 얼음 분쇄가 어렵거나 불가능하며, 너무 큰 얼음을 분쇄하려고 하면 블레이드가 손상될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Xiaomi 공식 사양 / Ninja 제품 비교분석 자료",
+      "source_url": "https://itmiracle.kr/ninja-blast-cordless-blender/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "휴대용 블렌더",
+        "line": "USB 충전식 미니 블렌더 전 제품",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "얼음이 필요한 경우, (1) 제품 스펙에서 '얼음 분쇄 가능'을 명시한 제품을 선택하거나, (2) 충분히 작게 잘린 얼음(동전 크기)을 사용할 것. 제품 한계를 무시하고 큰 얼음을 분쇄하면 블레이드가 손상되어 수리 불가능할 수 있다.",
+      "cautionSource": "Xiaomi 공식 FAQ 및 사용자 경험 종합"
+    },
+    {
+      "id": "portable-blender-versus-countertop-blender-capacity-power-runtime",
+      "claim": "휴대용 블렌더(300~600mL, 300W 이하)와 일반 블렌더(1.5~2L, 500~1200W)는 용량, 모터 출력, 사용 시간에서 근본적으로 다르다. 휴대용 블렌더는 1~2명용 스무디·주스 1잔 용도이며, 일반 블렌더는 4명 이상 또는 수프·소스 대량 조리용이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Xiaomi·Ninja 공식 제품 사양 / 일반 블렌더 표준 스펙",
+      "source_url": "https://www.mi.com/kr/product/xiaomi-portable-blender/specs/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "블렌더",
+        "line": "휴대용 블렌더 vs 일반(데스크톱) 블렌더",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "휴대용 블렌더로 충분한 사용자: 출근길 그린 스무디, 운동 후 단백질 음료, 1인 아침용 주스 등 하루 1~2잔 정도. 가족 음료나 요리용 수프·펀칭으로는 부적합하다. 용도 오판으로 구매한 후 배터리 부담으로 1년 내 폐기되는 사례가 흔하므로, 구매 전 실제 사용 빈도를 정확히 파악할 것.",
+      "cautionSource": "제품 사양 비교 및 사용자 후기"
+    },
+    {
+      "id": "portable-blender-use-cases-sports-travel-convenience",
+      "claim": "휴대용 미니 블렌더의 주요 용도는 운동 후 단백질 음료, 여행 중 1인 스무디, 아침 출근길 영양 음료, 야외 캠핑 음료 제조 등으로, 일반 주방 조리보다는 '외출·이동 중 간편음료' 목적이 강하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "온라인 쇼핑몰 제품 리뷰 / 유튜브 사용자 영상",
+      "source_url": "https://www.youtube.com/shorts/a8DCnj2Vg30",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "휴대용 블렌더",
+        "line": "USB 충전식 미니 블렌더",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "용도를 벗어난 사용은 배터리 소모와 모터 손상을 가속한다. 예를 들어 냉동 견과류를 반복 분쇄하거나 하루 5회 이상 사용하면 배터리 수명이 급격히 단축된다. 실제 사용 빈도가 주 2~3회 정도라면 휴대용 블렌더가 적합하고, 매일 사용이 필요하다면 일반 블렌더 구매를 권장한다.",
+      "cautionSource": "사용자 리뷰 및 제품 구매 가이드"
+    },
+    {
+      "id": "portable-blender-lithium-battery-swelling-heat-risk",
+      "claim": "휴대용 블렌더에 사용되는 리튬배터리는 완전 충전 상태(100%)에서 오래 유지되면 배터리 셀 내 화학 반응이 가속되어 팽창(스웰링) 위험이 높아지며, 고온 환경(35°C 이상)에서 충전하면 이 위험이 가중된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "뉴욕주 보건청 리튬이온 배터리 소비자 안전 가이드 / 삼성뉴스룸",
+      "source_url": "https://www.dhses.ny.gov/system/files/documents/2023/11/li_batteryconsumersafetyguide-ko.pdf",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "휴대용 블렌더",
+        "line": "리튬이온 배터리 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "안전한 충전 관행: (1) 충전 후 30분~1시간 내에 플러그를 빼기, (2) 완전 방전(0%)까지 쓰지 않기, (3) 여름철에는 통풍이 잘 된 곳에서만 충전, (4) 자동차 내부 등 고온 환경에서 장시간 방치하지 않기. 배터리 팽창, 타는 냄새, 비정상 발열이 발생하면 즉시 사용을 중단하고 제조사에 연락할 것.",
+      "cautionSource": "리튬이온 배터리 안전 가이드 및 제조사 안전 안내"
+    },
+    {
+      "id": "portable-blender-one-year-typical-battery-lifespan",
+      "claim": "USB 충전식 휴대용 블렌더의 일반적인 배터리 수명은 약 1년(주 3~4회 사용 기준)이며, 그 이후 배터리 용량이 80% 이하로 저하되기 시작한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 리뷰 종합 / 도깨비방망이 고객센터 안내 (도깨비방망이는 약 1년 수명 안내)",
+      "source_url": "https://m.tokebi.com/category/%EB%AC%B4%EC%84%A0%ED%95%A8%EB%93%9C%EB%B8%94%EB%A0%8C%EB%8D%94/69/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "휴대용 블렌더",
+        "line": "USB 충전식 미니 블렌더",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "배터리 수명은 사용 빈도, 충전 습관, 환경 온도에 따라 크게 달라진다. 매일 사용하면 6~8개월, 주 1~2회 사용하면 18개월 이상 지속될 수 있다. 배터리 교체는 제조사 고객센터로 문의하되, 제품에 따라 교체 비용이 20,000~50,000원 사이이므로, 장기 사용 계획이면 초기 구매 비용에 배터리 교체 비용도 예산에 포함할 것.",
+      "cautionSource": "무선 블렌더 제조사 AS 안내 및 사용자 경험"
+    }
+  ]
+}

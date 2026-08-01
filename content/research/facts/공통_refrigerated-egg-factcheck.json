@@ -1,0 +1,227 @@
+{
+  "topic": "계란 냉장 보관 통념 팩트체크",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-28",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "egg-cuticle-washing-removal",
+      "claim": "계란을 물로 씻으면 계란 껍질의 큐티클(보호층)이 제거되어 이산화탄소와 수분 손실 속도가 빨라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "USDA · Egg Washing Guidelines and Effects on Preservation",
+      "source_url": "https://scientificdiscoveries.ars.usda.gov/tellus/stories/articles/how-we-store-our-eggs-and-why",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "생계란",
+        "years": "전 시기",
+        "region": "전 지역"
+      },
+      "caution": "USDA는 상업용 세척란에 한해 식용유(mineral oil) 코팅으로 손실 속도를 완화하는 관행 존재",
+      "cautionSource": "https://scientificdiscoveries.ars.usda.gov/tellus/stories/articles/how-we-store-our-eggs-and-why"
+    },
+    {
+      "id": "commercial-egg-washing-requirement",
+      "claim": "미국 USDA는 상업용 계란을 의무적으로 세척하며, 90°F~120°F 물에서 세척·소독 후 36시간 내 45°F 이하에서 냉장해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "USDA · Commercial Egg Washing Standards",
+      "source_url": "https://tellus.ars.usda.gov/stories/articles/how-we-store-our-eggs-and-why/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "상업용 세척란",
+        "years": "현행",
+        "region": "US"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "korean-refrigerated-egg-shelf-life",
+      "claim": "식약처 기준 세척란은 10℃ 이하 냉장 보관 시 산란일로부터 45일을 권장유통기간으로 정한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 · 계란 권장유통기간 기준",
+      "source_url": "https://www.nongmin.com/article/20231224500006",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "세척란",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "이는 권장유통기간이며, 초과해도 바로 섭취 불가는 아니지만 신선도 저하의 참고 기준",
+      "cautionSource": "https://www.nongmin.com/article/20231224500006"
+    },
+    {
+      "id": "room-temp-egg-shelf-life-korea",
+      "claim": "계란을 0~15℃ 범위의 실온(상온)에서 보관하면 산란일로부터 약 30일간 유통이 가능하다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "한국 계란 유통 실무 보고",
+      "source_url": "https://www.aflnews.co.kr/news/articleView.html?idxno=270963",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "계란",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "한국에서는 냉장 보관이 권장되며, 실온 보관은 일부 전통 유통에서만 가능한 관행. 온도 변동 큰 계절엔 위험",
+      "cautionSource": "https://www.aflnews.co.kr/news/articleView.html?idxno=270963"
+    },
+    {
+      "id": "egg-pointed-end-down-storage",
+      "claim": "계란을 뾰족한 쪽을 아래로 향하게 보관하면 둥근 쪽의 공기주머니(에어셀)가 위에 고정되어 노른자가 중앙에 안정적으로 자리하고 세균 침투를 방지한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품 보관 전문가 지침",
+      "source_url": "https://display.cjonstyle.com/nfront/content/info/%EA%B3%84%EB%9E%80-%EB%B3%B4%EA%B4%80%EB%B2%95/index.html",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "생계란",
+        "years": "전 시기",
+        "region": "전 지역"
+      },
+      "caution": "이 관행으로 신선도 유지 기간이 최대 2배까지 차이날 수 있다는 보고 있음",
+      "cautionSource": "https://v.daum.net/v/pwnzlYEonB"
+    },
+    {
+      "id": "egg-air-cell-freshness-indicator",
+      "claim": "계란의 에어셀(공기주머니)은 저장 기간이 길어질수록 이산화탄소와 수분이 배출되면서 커지고, 이로 인해 계란의 밀도가 낮아져 물 위로 뜬다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "계란 신선도 과학 지침",
+      "source_url": "https://brunch.co.kr/@honeytip/115",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "생계란",
+        "years": "전 시기",
+        "region": "전 지역"
+      },
+      "caution": "물에 담그기 테스트는 신선도 판별의 간단한 지표이지만 절대적 판단 기준은 아님",
+      "cautionSource": null
+    },
+    {
+      "id": "egg-water-test-freshness-guide",
+      "claim": "계란을 물에 담갔을 때 바닥에 가라앉으면 신선한 계란이고, 옆으로 기울어지거나 위로 뜨면 상한 계란이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "계란 신선도 판별 방법",
+      "source_url": "https://brunch.co.kr/@honeytip/115",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "생계란",
+        "years": "전 시기",
+        "region": "전 지역"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "fridge-door-vs-shelf-temperature-difference",
+      "claim": "냉장고 문 쪽은 개폐 시 온도 변화가 크고, 설정 온도가 3~4℃일 때 실제로 6~9℃까지 올라가는 반면, 내부 선반은 온도 변동이 작고 설정 온도에 가깝다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "냉장고 온도 관리 전문가 지침",
+      "source_url": "https://news.nate.com/view/20240921n01445",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "냉장고",
+        "line": "일반 냉장고",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "개인 냉장고 모델·운영 온도에 따라 편차 있을 수 있음",
+      "cautionSource": null
+    },
+    {
+      "id": "egg-fridge-placement-recommendation",
+      "claim": "계란은 냉장고의 온도가 일정한 내부 선반(특히 중단부)에 보관하는 것이 권장되며, 문 쪽은 온도 변화가 크므로 피해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품 안전 보관 지침",
+      "source_url": "https://display.cjonstyle.com/nfront/content/info/%EA%B3%84%EB%9E%80-%EB%B3%B4%EA%B4%80%EB%B2%95/index.html",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "생계란",
+        "years": "현행",
+        "region": "전 지역"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "salmonella-suppression-4celsius",
+      "claim": "국립축산과학원 연구에 따르면 계란을 4℃에서 보관하면 살모넬라균 증식이 크게 억제된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국립축산과학원 · 살모넬라균 억제 연구",
+      "source_url": "https://news.nate.com/view/20240921n01445",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "생계란",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "보관 중앙부 온도 상승 시 살모넬라 등 식중독균 성장 가능성 증가",
+      "cautionSource": "https://news.nate.com/view/20240921n01445"
+    },
+    {
+      "id": "cooked-egg-refrigeration-timing",
+      "claim": "조리된 계란(삶은 계란 포함)은 얼음물에 넣어 빨리 식힌 후 조리 완료 후 2시간 이내에 냉장고에 넣어야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 · 계란 조리 후 보관 기준",
+      "source_url": "https://v.daum.net/v/3eouJQDxIi",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "조리 계란",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "32℃가 넘는 환경에서는 조리 계란을 2시간 이상 실온에 두면 안 됨",
+      "cautionSource": "https://v.daum.net/v/3eouJQDxIi"
+    },
+    {
+      "id": "egg-expired-consumption-date-unsafe",
+      "claim": "냉장 보관 계란이라도 유통기한(소비기한)을 넘기면 섭취하지 않는 것이 안전하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 · 계란 소비기한 기준",
+      "source_url": "https://www.nongmin.com/article/20231224500006",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "생계란",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "권장유통기간과 소비기한은 별개 개념으로 구분되어야 함",
+      "cautionSource": "https://www.nongmin.com/article/20231224500006"
+    }
+  ]
+}

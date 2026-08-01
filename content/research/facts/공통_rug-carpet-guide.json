@@ -1,0 +1,361 @@
+{
+  "topic": "러그·카펫 고르는 법과 관리 — 소재·크기·세탁·진드기",
+  "brand": "공통",
+  "article": "smartguide/rug-carpet-guide",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "polypropylene-rug-characteristics",
+      "claim": "폴리프로필렌 러그는 먼지와 정전기가 없고, 가구 눌린 자국이 남지 않으며, 햇빛 변색이 없고, 보송한 촉감과 폭신한 두께감, 손쉬운 관리가 특징이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대리빙아트 카펫 재질 가이드",
+      "source_url": "https://www.hyundailivart.co.kr/community/knowhow/B200000263?sortBy=cncnCnt",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "material": "폴리프로필렌",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "polyester-rug-tactile-washable",
+      "claim": "폴리에스터 러그는 촉감이 매우 좋고 쾌적하며, 물에 젖어도 강도 변화가 없고 내구성이 우수하여 100% 폴리에스터 러그는 세탁기에 넣을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대리빙아트 카펫 재질 가이드",
+      "source_url": "https://www.hyundailivart.co.kr/community/knowhow/B200000263?sortBy=cncnCnt",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "material": "폴리에스터",
+        "region": "KR"
+      },
+      "caution": "실제 세탁 가능 여부는 제조사 라벨 확인 필수",
+      "cautionSource": null
+    },
+    {
+      "id": "nylon-rug-durability",
+      "claim": "나일론은 내성과 내구성이 강한 합성소재로, 면적이 넓고 동선이 복잡한 카펫 생산에 널리 사용된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대리빙아트 카펫 재질 가이드",
+      "source_url": "https://www.hyundailivart.co.kr/community/knowhow/B200000263?sortBy=cncnCnt",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "material": "나일론",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "pile-height-soundproofing-effect",
+      "claim": "러그의 파일(올) 높이가 높을수록 소리를 흡수하고 층간소음을 더 효과적으로 줄인다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "호미파이 인테리어 가이드",
+      "source_url": "https://www.homify.co.kr/ideabooks/867758/%EC%B8%B5%EA%B0%84-%EC%86%8C%EC%9D%8C%EC%9D%84-%ED%95%B4%EA%B2%B0%ED%95%98%EB%8A%94-%EB%98%91%EB%98%91%ED%95%9C-%EB%B0%A9%EC%9D%8C-%EC%9D%B8%ED%85%8C%EB%A6%AC%EC%96%B4",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "property": "방음·소음",
+        "region": "KR"
+      },
+      "caution": "겨울용 두꺼운 카펫이 방음 효과가 더 크다",
+      "cautionSource": "호미파이 인테리어 가이드"
+    },
+    {
+      "id": "rug-size-furniture-basis",
+      "claim": "러그 구매 시에는 평수보다 가구 사이즈를 기준으로 선택하며, 가구 사이즈와 같거나 조금 더 큰 사이즈로 구매하면 공간을 효과적으로 꾸밀 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "오늘의집 러그 가이드",
+      "source_url": "https://ohou.se/advices/3562",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "aspect": "크기·배치",
+        "region": "KR"
+      },
+      "caution": "가장 많이 판매되는 사이즈: 160×230cm, 200×290cm",
+      "cautionSource": "오늘의집 러그 가이드"
+    },
+    {
+      "id": "living-room-rug-sofa-coverage",
+      "claim": "거실 러그는 소파 뒷면 공간까지 덮어주는 것이 좋으며, 소파 다리와 테이블까지만 덮으면 공간이 불안정하고 불편해 보인다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "PHM ZINE 러그 배치법 가이드",
+      "source_url": "https://phmkorea.com/6245/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "space": "거실",
+        "aspect": "배치",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "dining-rug-margin-rule",
+      "claim": "식탁 아래 러그는 식탁보다 사방 20-30cm 넓게 깔면 안정적이고 깔끔해 보이며, 의자를 빼도 러그 안에 들어가도록 크기를 맞추면 편리하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "PHM ZINE 러그 배치법 가이드",
+      "source_url": "https://phmkorea.com/6245/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "space": "식탁·다이닝",
+        "aspect": "배치",
+        "region": "KR"
+      },
+      "caution": "사방 20-30cm 마진을 기준으로 선택",
+      "cautionSource": "PHM ZINE 러그 배치법 가이드"
+    },
+    {
+      "id": "bedroom-rug-placement",
+      "claim": "침실 러그는 침대 아래로 넓게 깔아 안정감을 주거나, 침대에서 일어날 때 발이 닿는 자리에 배치하여 포근함을 더할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "PHM ZINE 러그 배치법 가이드",
+      "source_url": "https://phmkorea.com/6245/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "space": "침실",
+        "aspect": "배치",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "non-slip-pad-washability-warning",
+      "claim": "미끄럼방지 처리가 없는 러그는 세탁기에 돌려도 되지만, 미끄럼방지 처리가 된 러그는 손으로 물빨래해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "라익디스 러그 관리 가이드",
+      "source_url": "https://likethix.com/rugcare",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "aspect": "세탁·미끄럼방지",
+        "region": "KR"
+      },
+      "caution": "미끄럼방지 처리 유무를 구매 시 확인 필수",
+      "cautionSource": null
+    },
+    {
+      "id": "domestic-rug-water-washable",
+      "claim": "국산 러그는 물세탁이 가능하지만, 올바르지 않은 방법으로 세탁하면 변형이 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "메종드모닉 러그 관리 가이드",
+      "source_url": "https://www.maisondemoniq.com/22/?bmode=view&idx=156216335",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "product_origin": "국산",
+        "aspect": "세탁",
+        "region": "KR"
+      },
+      "caution": "세탁기 용량의 60-70% 이내로 제한, 울코스 또는 약한 코스, 찬물 또는 30-40도 미지근한 온도 사용",
+      "cautionSource": "라익디스 러그 관리 가이드"
+    },
+    {
+      "id": "fabric-softener-rug-damage",
+      "claim": "섬유유연제는 러그 섬유 조직을 손상시켜 털 빠짐을 유발할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "라익디스 러그 관리 가이드",
+      "source_url": "https://likethix.com/rugcare",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "aspect": "세탁·섬유유연제",
+        "region": "KR"
+      },
+      "caution": "러그 세탁 시 섬유유연제 사용 금지",
+      "cautionSource": null
+    },
+    {
+      "id": "rug-washing-frequency-recommendation",
+      "claim": "잦은 러그 세탁은 내구성을 떨어뜨릴 수 있으므로 3-6개월 주기의 세탁이 적당하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "메종드모닉 러그 관리 가이드",
+      "source_url": "https://www.maisondemoniq.com/22/?bmode=view&idx=156216335",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "aspect": "세탁",
+        "region": "KR"
+      },
+      "caution": "3-6개월을 권장 주기로 설정하되, 오염도에 따라 조정 가능",
+      "cautionSource": "메종드모닉 러그 관리 가이드"
+    },
+    {
+      "id": "rug-drying-shade-essential",
+      "claim": "러그 세탁 후에는 잘 펴서 그늘에서 충분히 말려야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "메종드모닉 러그 관리 가이드",
+      "source_url": "https://www.maisondemoniq.com/22/?bmode=view&idx=156216335",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "aspect": "세탁·건조",
+        "region": "KR"
+      },
+      "caution": "햇빛 직사는 변색 위험",
+      "cautionSource": null
+    },
+    {
+      "id": "dust-mite-prevention-vacuuming",
+      "claim": "하루 1-2회 진공청소기로 표면 먼지를 제거하고 정기적으로 환기하면 집먼지 진드기 서식을 방지할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "라익디스 러그 관리 가이드",
+      "source_url": "https://likethix.com/rugcare",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "aspect": "진드기·먼지·관리",
+        "region": "KR"
+      },
+      "caution": "러그를 깨끗이 유지하지 않으면 집먼지 진드기 서식지가 되어 호흡기나 피부질환 유발",
+      "cautionSource": "라익디스 러그 관리 가이드"
+    },
+    {
+      "id": "rug-flipping-two-sided-cleaning",
+      "claim": "러그를 주기적으로 뒤집어서 양면을 사용하면서 청소하고, 가끔씩 야외에서 먼지를 털고 널어주는 것이 좋다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "라익디스 러그 관리 가이드",
+      "source_url": "https://likethix.com/rugcare",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "aspect": "먼지·진드기·관리",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "summer-rug-breathability",
+      "claim": "여름 러그는 통기성이 좋고 열이 머물지 않는 소재(라탄, 시어서커 등)를 선택해야 하며, 표면이 바스락거려 피부에 달라붙지 않는다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사노라면 여름 러그 선택법",
+      "source_url": "https://life.sano.co.kr/%EC%97%AC%EB%A6%84-%EB%9F%AC%EA%B7%B8-%EC%84%A0%ED%83%9D%EB%B2%95%EA%B3%BC-%EC%9D%B8%EA%B8%B0-%ED%9B%84%EA%B8%B0",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "type": "여름러그",
+        "season": "여름",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "summer-rug-thickness-guideline",
+      "claim": "여름 러그는 5-8mm 두께 제품이 바닥에 밀착되어 미끄러지지 않으면서도 쿠션감이 적당하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사노라면 여름 러그 선택법",
+      "source_url": "https://life.sano.co.kr/%EC%97%AC%EB%A6%84-%EB%9F%AC%EA%B7%B8-%EC%84%A0%ED%83%9D%EB%B2%95%EA%B3%BC-%EC%9D%B8%EA%B8%B0-%ED%9B%84%EA%B8%B0",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "type": "여름러그",
+        "thickness_mm": "5-8",
+        "season": "여름",
+        "region": "KR"
+      },
+      "caution": "5-8mm를 기준으로 선택",
+      "cautionSource": "사노라면 여름 러그 선택법"
+    },
+    {
+      "id": "synthetic-cotton-rug-for-pets-kids",
+      "claim": "집에 반려동물이나 아이가 있다면 합성소재나 면 러그를 사용하는 것이 좋으며, 오염에 강하고 세탁과 관리가 쉬워 실용적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "iMBC 스마트 리빙 가이드",
+      "source_url": "https://imnews.imbc.com/replay/2018/nwtoday/article/4491705_30187.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "type": "반려동물·키즈 전용",
+        "household": "반려동물·아이 있음",
+        "region": "KR"
+      },
+      "caution": "면 러그는 물세탁이 용이하고 오염이 잘 지워짐",
+      "cautionSource": null
+    },
+    {
+      "id": "pet-rug-water-resistant",
+      "claim": "펫 전용 러그는 생활 방수 기능과 세탁이 용이하도록 설계되어 있어 털이나 오염 관리가 편리하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "시숲 반려동물 러그 가이드",
+      "source_url": "https://www.seesoop.com/guide-tips/__37d1373f-2b59-44c7-828a-9087c0c4e03c",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "type": "반려동물 전용",
+        "feature": "방수·세탁용이",
+        "region": "KR"
+      },
+      "caution": "단모 타입을 선택하면 발톱에 걸릴 염려 적음",
+      "cautionSource": null
+    },
+    {
+      "id": "short-pile-rug-pet-safe",
+      "claim": "반려동물이 있는 집에서는 단모 러그를 선택하면 발톱에 걸릴 염려가 적다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "시숲 반려동물 러그 가이드",
+      "source_url": "https://www.seesoop.com/guide-tips/__37d1373f-2b59-44c7-828a-9087c0c4e03c",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "러그·카펫",
+        "type": "반려동물 전용",
+        "pile_type": "단모",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "topic": "청소년의 블루라이트·화면 노출과 수면",
+  "brand": "수면",
+  "article": "teen-bluelight-sleep",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "digital-sleep-disruption-technology-use-network",
+      "claim": "청소년의 기술(스마트폰·태블릿) 사용과 수면 문제는 네트워크 구조로 분석될 때 상호 강화되는 복잡한 관계를 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CNS Neurosci Ther · Digital Sleep Disruption: Unraveling the Network Structure of Technology Use and Sleep Problems Through Network Analysis",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12907764/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년 발달",
+        "line": "디지털 기기와 수면",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "light-exposure-sleep-organization-weekday-weekend",
+      "claim": "청소년의 광선 노출 리듬과 수면 구조는 평일과 주말 사이에 시간적 차이를 보이며, 이는 불규칙한 광선 노출(특히 저녁 인공광)의 영향을 시사한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Clocks Sleep · Light Exposure Rhythms and Sleep Organization in Adolescents: Temporal Differences Between Weekdays and Weekends in an Actigraphic Study",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13108061/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년 발달",
+        "line": "광선 노출과 수면 구조",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "digital-media-pediatric-health-guidelines",
+      "claim": "이탈리아 소아과학회 디지털 의존 위원회의 권고에 따르면, 디지털 미디어(스마트폰, 태블릿, 화면) 노출이 소아의 수면을 포함한 건강에 부정적 영향을 미친다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Ital J Pediatr · Digital media exposure and pediatric health: the recommendations from the Italian Society of Pediatrics Digital Dependency Commission",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13012118/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "소아 건강",
+        "line": "디지털 미디어 가이드라인",
+        "years": "2026",
+        "region": "유럽"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "mobile-phone-addiction-sleep-quality-adolescent",
+      "claim": "모바일폰 중독과 청소년 수면의 질 저하 사이의 관계에 대한 검토에서, 중독적 사용 패턴이 수면 문제의 주요 예측인자로 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cureus · Mobile Phone Addiction and Sleep Quality Among Children and Adolescents: Unraveling the Health Consequences",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12947604/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년 발달",
+        "line": "모바일폰 중독과 수면",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "screen-time-sleep-duration-cognitive-function",
+      "claim": "의학 대학생을 대상으로 한 연구에서 화면 시간이 수면시간과 스트룹 과제(인지 기능 지표)에 유의한 상관관계를 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cureus · Correlation Between Screen Time, Sleep Duration, and Stroop Effect Among First-Year Osteopathic Medical Students: A Cross-Sectional Study",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13274511/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청년 발달",
+        "line": "화면 시간과 인지 기능",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": "이 연구는 의학 대학생 대상이므로, 중고등학생 청소년과의 차이가 있을 수 있다.",
+      "cautionSource": "Cureus · Correlation Between Screen Time, Sleep Duration, and Stroop Effect"
+    }
+  ]
+}

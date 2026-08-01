@@ -1,0 +1,83 @@
+{
+  "topic": "기상등(dawn simulation light) 효과",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "smart-alarm-sleep-inertia-efficacy",
+      "claim": "침실 기반 '스마트' 알람 시스템(dawn simulation light 포함)이 수면 관성(sleep inertia, 기상 직후의 혼몽) 완화에 효과적인 것으로 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Clocks & Sleep, 2024",
+      "source_url": "https://www.mdpi.com/journal/clockssleep",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·조명",
+        "line": "스마트 알람",
+        "years": "2024",
+        "region": "국제"
+      },
+      "caution": "다중 방식(조명+음향+온도 등) 복합 개입이므로, 조명 단독 효과와 구분 필요.",
+      "cautionSource": "Campanella et al. 2024, DOI: 10.3390/clockssleep6010013"
+    },
+    {
+      "id": "artificial-dawn-cardiovascular-alertness",
+      "claim": "인공 dawn light(점진적 밝기 증가) 노출은 중년 이상 성인의 심혈관 기능, 각성도, 균형 능력 개선과 관련 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep, 2020",
+      "source_url": "https://academic.oup.com/sleep/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·조명",
+        "line": "인공 dawn light",
+        "years": "2020",
+        "region": "국제"
+      },
+      "caution": "연구 대상이 중년층 이상(middle-aged and older adults)이므로, 젊은 성인 대상 결과 일반화 시 주의.",
+      "cautionSource": "Gabel et al. 2020, DOI: 10.1093/sleep/zsaa082"
+    },
+    {
+      "id": "biodynamic-light-dementia-sleep",
+      "claim": "생동감 조명(biodynamic lighting, 24시간 자연광 변화 모방)이 치매 요양원 거주자의 휴식-활동 리듬 및 야간 수면 개선에 효과적인 것으로 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "BMC Geriatrics, 2026",
+      "source_url": "https://bmcgeriatr.biomedcentral.com/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·조명",
+        "line": "생동감 조명",
+        "years": "2026",
+        "region": "국제"
+      },
+      "caution": "연구 대상이 치매 환자이므로, 건강한 성인 또는 다른 질환군에의 효과 외삽 주의.",
+      "cautionSource": "Prins et al. 2026, DOI: 10.1186/s12877-026-07365-2"
+    },
+    {
+      "id": "light-intervention-elderly-overview",
+      "claim": "노인의 수면, 서카디안 리듬, 휴식-활동 주기, 기분, 인지 기능 개선을 목표로 한 광 노출 중재의 효과성에 대한 코크란 체계적 문헌고찰 개요가 발표되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cochrane Database of Systematic Reviews, 2025",
+      "source_url": "https://www.cochranelibrary.com/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·조명",
+        "line": "광 노출 중재(경안 light exposure)",
+        "years": "2025",
+        "region": "국제"
+      },
+      "caution": "코크란 개요(overview of reviews)이므로 근거 수준이 매우 높지만, 개별 중재 효과는 이질적일 수 있다.",
+      "cautionSource": "Murukesu et al. 2025, DOI: 10.1002/14651858.cd016157"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "topic": "파워냅의 인지 회복: 낮잠 길이별 인지 효과, 수면관성(sleep inertia)",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "power-nap-20-minutes-optimal",
+      "claim": "20분 낮잠이 최적의 파워냅 길이로, 뇌와 신체를 쉬게 하면서도 깊은 수면 단계에 들어가지 않아 깨어날 때 거의 수면관성이 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "National Sleep Foundation - The Benefits of Napping",
+      "source_url": "https://www.thensf.org/the-benefits-of-napping/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "파워냅 최적 길이",
+        "years": "2020~",
+        "region": "일반"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "short-nap-alertness-cognition",
+      "claim": "20분 미만의 짧은 낮잠은 바로 주의력(alertness)과 기능성을 개선하며, 깨어난 후 거의 또는 전혀 졸음이 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation - Do Power Naps Work",
+      "source_url": "https://www.sleepfoundation.org/sleep-hygiene/power-nap",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "단시간 낮잠 효과",
+        "years": "2020~",
+        "region": "일반"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "90-minute-nap-full-cycle",
+      "claim": "90분 낮잠은 완전한 수면 주기(full sleep cycle)를 거쳐 REM 수면을 포함하여 기억과 인지 기능을 향상시키고, 깨어날 때 가벼운 수면 단계에 있어 수면관성이 적다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "National Sleep Foundation - The Benefits of Napping",
+      "source_url": "https://www.thensf.org/the-benefits-of-napping/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "장시간 낮잠 효과",
+        "years": "2020~",
+        "region": "일반"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-inertia-definition",
+      "claim": "수면관성(sleep inertia)은 깨어났을 때 느끼는 멍한, 무거운 느낌으로, 깊은 수면 단계에서 깨어날 때 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation - Do Power Naps Work",
+      "source_url": "https://www.sleepfoundation.org/sleep-hygiene/power-nap",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면관성 개념",
+        "years": "2020~",
+        "region": "일반"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "medium-nap-worst-inertia",
+      "claim": "30~60분 길이의 중간 낮잠은 깊은 수면(deep sleep) 단계에서 깨어나게 되어 수면관성이 가장 심하며, '멍하고 무거운 느낌'을 초래한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "National Sleep Foundation - The Benefits of Napping",
+      "source_url": "https://www.thensf.org/the-benefits-of-napping/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "중간 길이 낮잠의 문제",
+        "years": "2020~",
+        "region": "일반"
+      },
+      "caution": "30~60분 낮잠은 피하는 것이 좋음",
+      "cautionSource": "National Sleep Foundation - The Benefits of Napping"
+    },
+    {
+      "id": "nap-timing-light-sleep-stages",
+      "claim": "20분 또는 약 90분에 깨어나면 수면관성이 더 적으며, 가벼운 수면 단계에서 깨어나기 때문에 15~30분 안에 수면관성이 사라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation - Do Power Naps Work",
+      "source_url": "https://www.sleepfoundation.org/sleep-hygiene/power-nap",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면관성 회복 시간",
+        "years": "2020~",
+        "region": "일반"
+      },
+      "caution": "수면관성은 15~30분 안에 자연스럽게 사라짐",
+      "cautionSource": "Sleep Foundation - Do Power Naps Work"
+    },
+    {
+      "id": "90min-nap-vs-40min-nap",
+      "claim": "90분 낮잠은 40분 낮잠에 비해 주의력이 3포인트 더 높고, 근력은 30뉴턴, 셔틀런 거리는 35미터가 각각 더 좋으며, 졸음이 54% 감소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "International Journal of Environmental Research and Public Health - Boukhris et al. 'A 90 min Daytime Nap Opportunity Is Better Than 40 min for Cognitive and Physical Performance'",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7369743/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "운동 선수 대상 낮잠 비교",
+        "years": "2020",
+        "region": "일반"
+      },
+      "caution": "DOI: 10.3390/ijerph17134650. 이 연구는 14명의 훈련된 남성 운동선수를 대상으로 한 결과이므로, 일반 인구에 대한 적용 시 고려 필요",
+      "cautionSource": "Boukhris et al. (2020) IJERPH"
+    },
+    {
+      "id": "90min-nap-mood-recovery",
+      "claim": "90분 낮잠은 40분 낮잠에 비해 기분 상태를 더 크게 개선하며, 긴장, 우울감, 피로감이 모두 낮아진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "International Journal of Environmental Research and Public Health - Boukhris et al. 'A 90 min Daytime Nap Opportunity Is Better Than 40 min for Cognitive and Physical Performance'",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7369743/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "낮잠과 심리 상태",
+        "years": "2020",
+        "region": "일반"
+      },
+      "caution": "DOI: 10.3390/ijerph17134650. 운동선수 대상 연구",
+      "cautionSource": "Boukhris et al. (2020) IJERPH"
+    },
+    {
+      "id": "caffeine-before-nap-alertness",
+      "claim": "낮잠 직전에 카페인을 마시면 낮잠에서 깨어날 때 더 각성된 상태가 되는데, 이는 카페인의 대사 시간을 이용한 전략이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "National Sleep Foundation - The Benefits of Napping",
+      "source_url": "https://www.thensf.org/the-benefits-of-napping/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "카페인-낮잠 조합 전략",
+        "years": "2020~",
+        "region": "일반"
+      },
+      "caution": "낮잠 직전(약 15분 전)에 카페인을 섭취하면 깨어날 때쯤 카페인이 효과를 발휘함",
+      "cautionSource": "National Sleep Foundation - The Benefits of Napping"
+    },
+    {
+      "id": "30min-nap-memory-cognition",
+      "claim": "약 30분 정도의 낮잠을 했을 때 사람들은 비낮잠 집단과 더 오래 낮잠을 잔 집단 모두와 비교하여 더 나은 기억 회상과 우수한 전체 인지 기능을 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "National Sleep Foundation - The Benefits of Napping",
+      "source_url": "https://www.thensf.org/the-benefits-of-napping/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "30분 낮잠의 인지 효과",
+        "years": "2020~",
+        "region": "일반"
+      },
+      "caution": "이 결과는 NSF의 요약이며, 수면관성의 부작용은 존재할 수 있음",
+      "cautionSource": "National Sleep Foundation - The Benefits of Napping"
+    }
+  ]
+}

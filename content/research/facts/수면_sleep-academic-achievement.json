@@ -1,0 +1,119 @@
+{
+  "topic": "수면시간과 학업성취의 상관관계",
+  "brand": "수면",
+  "article": "sleep-academic-achievement",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sleep-academic-achievement-meta-analysis",
+      "claim": "수면의 질이 학업성취에 미치는 영향에 대한 체계적 검토와 메타분석에 따르면, 수면 부족은 학업 성적과 자기효능감 저하와 연관된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Behav Sci (Basel) · The Effect of Sleep Quality on Academic Performance: A Systematic Review and Meta-Analysis Study",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13203443/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년·어린이 발달",
+        "line": "학업성취",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-duration-executive-function-academic",
+      "claim": "유치원 시절의 취침시간과 수면시간이 장기적으로 실행 기능(executive function)과 학업성취에 영향을 미친다는 코호트 연구가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Health · The long-term associations between kindergarten bedtime and sleep duration, executive function, and academic achievement",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13131294/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "어린이 발달",
+        "line": "유아기 수면과 인지 발달",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "childhood-sleep-duration-academic-achievement-modifiers",
+      "claim": "어린이의 수면시간과 학업성취 간 상관관계는 사회경제적·환경적 요인에 따라 다르게 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Child Care Health Dev · Childhood Sleep Duration and Academic Achievement: Effect Modification of Sociodemographic and Environmental Factors",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41649417/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "어린이 발달",
+        "line": "사회경제적 격차",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-habits-reading-math-inattention",
+      "claim": "쌍생아 연구에서 수면 습관이 읽기와 수학 성취도, 그리고 주의산만도·과잉행동과 연관된다는 증거가 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PLoS One · Associations between sleep habits, performance in reading and mathematics, and inattention and hyperactivity",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13189340/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "어린이·청소년 발달",
+        "line": "인지 및 행동",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "24-hour-movement-guidelines-academic-achievement",
+      "claim": "24시간 운동 가이드라인(수면·신체활동 포함) 준수가 학령기 어린이의 학업성취와 관련된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Am J Health Promot · Associations Between Adherence to 24-hour Movement Guidelines and Academic Achievement in School-Aged Children",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41999353/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "어린이 발달",
+        "line": "건강 가이드라인",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "smartphone-use-sleep-academic-achievement-mediation",
+      "claim": "스마트폰 과다 사용이 수면의 질 저하를 매개로 하여 학업성취에 부정적 영향을 미치는 복합 매개 모델이 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Behav Sci (Basel) · An Association Among Problematic Smartphone Use, Sleep Quality, Behavioral Engagement and Academic Achievements",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13203896/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년 발달",
+        "line": "디지털 기기와 수면",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

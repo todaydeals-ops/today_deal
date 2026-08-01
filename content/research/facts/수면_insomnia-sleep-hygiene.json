@@ -1,0 +1,119 @@
+{
+  "topic": "불면증: 수면 위생 및 인지행동치료(CBT-I)",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "cbti-opioid-withdrawal-efficacy",
+      "claim": "인지행동치료(CBT-I)와 오피오이드 점진적 중단을 함께 진행했을 때, 통증 및 오피오이드 사용 감소 효과에 대한 무작위 대조 시험이 진행 중이다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Behavioral Sleep Medicine, 2026",
+      "source_url": "https://www.tandfonline.com/journals/ubsm20",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "CBT-I",
+        "years": "2026",
+        "region": "국제"
+      },
+      "caution": "이는 임상시험 프로토콜이므로 아직 결과 발표 전. 최종 결과 확인 필요.",
+      "cautionSource": "McCrae et al. 2026, DOI: 10.1080/15402002.2026.2685151"
+    },
+    {
+      "id": "cbti-components-work-productivity-metaanalysis",
+      "claim": "인지행동치료 불면증(CBT-I)의 다양한 구성 요소(자극 조절, 수면 제한, 인지 재구성 등) 중 업무 생산성 개선에 효과적인 요소들이 체계적 문헌고찰과 메타분석으로 규명되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Health Psychology, 2026",
+      "source_url": "https://journals.sagepub.com/home/hpq",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "CBT-I",
+        "years": "2026",
+        "region": "국제"
+      },
+      "caution": "CBT-I 구성 요소 효과는 개인 특성, 치료 맥락에 따라 다를 수 있다.",
+      "cautionSource": "Nie et al. 2026, DOI: 10.1177/13591053261461928"
+    },
+    {
+      "id": "digital-cbti-chatbot-engagement",
+      "claim": "소크라테스식 질문과 자기결정을 지원하는 디지털 CBT-I 챗봇(SleepPathfinder)이 사용성과 실행 가능성 측면에서 호평을 받았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JMIR Formative Research, 2026",
+      "source_url": "https://formative.jmir.org/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "디지털 CBT-I",
+        "years": "2026",
+        "region": "국제"
+      },
+      "caution": "이는 사용성·실행 가능성 연구이므로, 임상 효과(수면 개선)는 추가 시험 필요.",
+      "cautionSource": "Roh et al. 2026, DOI: 10.2196/79242"
+    },
+    {
+      "id": "internet-cbti-autism-effectiveness",
+      "claim": "자폐성 성인을 대상으로 인터넷 기반 가이드 CBT-I(i-Sleep Autism)의 효과성을 검증하는 무작위 대조 시험이 진행 중이다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Sleep, 2026",
+      "source_url": "https://academic.oup.com/sleep/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "인터넷 CBT-I",
+        "years": "2026",
+        "region": "국제"
+      },
+      "caution": "자폐성 인구에 대한 맞춤 CBT-I 연구는 아직 초기 단계. 결과 발표 시까지 효과 규명 미완.",
+      "cautionSource": "Spaargaren et al. 2026, DOI: 10.1093/sleep/zsag199"
+    },
+    {
+      "id": "sleep-hygiene-vs-digital-cbti-perinatal",
+      "claim": "산전·산후 우울증 예방을 목표로, 디지털 CBT-I를 수면 위생 교육과 비교하는 무작위 임상시험 프로토콜이 등록되었다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "JMIR Research Protocols, 2026",
+      "source_url": "https://www.researchprotocols.org/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "CBT-I vs 수면 위생",
+        "years": "2026",
+        "region": "국제"
+      },
+      "caution": "산부인과 맥락의 CBT-I는 매우 특화된 영역. 일반 불면증 환자와 다를 수 있다. 결과 발표 전단계.",
+      "cautionSource": "Felder et al. 2026, DOI: 10.2196/90969"
+    },
+    {
+      "id": "behavioral-sleep-therapy-perinatal-scoping-review",
+      "claim": "산전·산후 시기의 행동 수면 치료(behavioral sleep therapies, BST·CBT-I 포함)에 대한 범위 문헌고찰이 수행되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Current Sleep Medicine Reports, 2026",
+      "source_url": "https://link.springer.com/journal/40675",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "행동 수면 치료",
+        "years": "2026",
+        "region": "국제"
+      },
+      "caution": "범위 문헌고찰(scoping review)은 근거 수준이 체계적 고찰보다 낮으므로, 개별 중재 효과 크기는 타당성 주의 필요.",
+      "cautionSource": "Felder et al. 2026, DOI: 10.1007/s40675-026-00359-x"
+    }
+  ]
+}

@@ -1,0 +1,478 @@
+{
+  "topic": "차량 에어컨이 안 시원함 자가진단: 냉매·필터·콘덴서·컴프레서·순환·버튼·냄새·공회전·엔진",
+  "brand": "공통",
+  "article": "car-aircon-selfcheck",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "outdoor-unit-normal-refrigerant-sound",
+      "why": "가정용 에어컨 실외기 냄새. 차량은 엔진실 마운트로 진동 특성이 다름. 부품명도 다름."
+    },
+    {
+      "id": "outdoor-unit-compressor-hum-normal",
+      "why": "가정용 컴프레서 저주파음. 차량 컴프레서는 벨트 구동, 회전 속도 변동 방식이 상이."
+    },
+    {
+      "id": "outdoor-unit-vibration-from-installation",
+      "why": "가정용 설치 기반. 차량은 고정 마운트로 설치 문제가 없음."
+    },
+    {
+      "id": "outdoor-unit-leveling-rubber-pad",
+      "why": "가정용 수평 조정. 차량은 엔진실 장착으로 수평 조정 개념이 없음."
+    },
+    {
+      "id": "outdoor-unit-nearby-obstacle-noise",
+      "why": "가정용 실외기 통풍. 차량 콘덴서는 엔진실 내 설치로 장애물 개념이 다름."
+    },
+    {
+      "id": "outdoor-unit-ventilation-requirement",
+      "why": "가정용 실외기 통풍 거리. 차량은 엔진실 구조로 통풍 기준이 다름."
+    },
+    {
+      "id": "outdoor-unit-water-dripping-cooling-normal",
+      "why": "가정용 실외기 결로. 차량은 실내기(에바포레이터)가 실내 후방 또는 언더패널에 있어 물 배출이 다름."
+    },
+    {
+      "id": "outdoor-unit-water-dripping-heating-defrost",
+      "why": "가정용 난방 제상. 차량 에어컨은 난방(히터)과 별개 시스템이므로 제상 개념이 없음."
+    },
+    {
+      "id": "outdoor-unit-water-collection-tray",
+      "why": "가정용 실외기 물받이. 차량은 에바포레이터 드레인 호스로 후방으로 배출하는 설계."
+    },
+    {
+      "id": "outdoor-unit-not-running-power-check",
+      "why": "가정용 누전차단기. 차량은 차량 전기시스템(배터리·교대기)으로 점검 항목이 다름."
+    },
+    {
+      "id": "outdoor-unit-not-running-mode-check",
+      "why": "가정용 송풍·청정 모드. 차량은 AUTO·냉방·난방·제습만 있고 청정 모드가 없음."
+    },
+    {
+      "id": "outdoor-unit-not-running-compressor-protection",
+      "why": "가정용 컴프레서 보호 대기. 차량도 유사하지만 '3~5분'은 가정용 수치이고, 차량은 온도·압력 센서로 동작하며 시간 기준이 다름."
+    },
+    {
+      "id": "outdoor-unit-dust-accumulation-fire-risk",
+      "why": "가정용 먼지 화재 위험(5년 이상). 차량 콘덴서 먼지는 냉각 저하만 일으키며, 화재 위험은 전기배선이 아니라 냉매 고압 누수에서 기인하므로 스코프가 다름."
+    },
+    {
+      "id": "outdoor-unit-electrical-hazard-aging",
+      "why": "가정용 5년 이상 배선 열화·화재. 차량은 엔진실 환경(온도·진동)이 더 악열이지만, 배선 규격(자동차 등급)이 다르고 화재 원인도 냉매 고압 누수·전기 누설 등으로 메커니즘이 다름."
+    },
+    {
+      "id": "outdoor-unit-cleaning-safety",
+      "why": "가정용 플러그·차단기 켜끔. 차량은 배터리 음극을 빼거나 시동을 끄고 AC 버튼을 끄는 절차가 다름."
+    },
+    {
+      "id": "outdoor-unit-fin-cleaning-method",
+      "why": "가정용 실외기 핀 청소. 차량 콘덴서는 위치·접근성·핀 재질이 다르고, 세차장 고압수가 일상적이므로 기준이 상이."
+    },
+    {
+      "id": "outdoor-unit-maintenance-schedule",
+      "why": "가정용 연 2회 먼지 제거. 차량 에어컨은 정기검진이 엔진오일 교환(1년/10,000km)이나 일반검진(2년)에 포함되므로 독립 일정이 없음."
+    },
+    {
+      "id": "outdoor-unit-cover-ventilation-required",
+      "why": "가정용 실외기 커버 통풍. 차량은 커버를 씌우지 않으므로 개념이 없음."
+    },
+    {
+      "id": "outdoor-unit-cover-summer-removal",
+      "why": "가정용 계절별 커버 해제. 차량 에어컨은 커버가 없으므로 해당 사항 없음."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "refrigerant-shortage-discharge-temp-diagnostic",
+      "claim": "냉매가 부족한지 자가진단하는 가장 간단한 방법은 송풍구 온도를 확인하는 것이다. 외기 30℃ 기준으로 에어컨을 최강·내기모드로 3분 가동했을 때 송풍구 온도가 15℃ 이상이면 냉매 부족을 의심해야 하며, 정상 차량은 8~12℃까지 내려간다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "자동차 커뮤니티·정비사 후기 종합",
+      "source_url": "https://tmautostory.com/car-ac-gas-low-symptoms-cost/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "측정 환경(외기·내기온도·습도·직사광선)에 따라 오차가 3~5℃ 발생할 수 있으므로, 대략적 진단일 뿐 정확한 판정은 정비소의 냉매 압력 측정이 필수.",
+      "cautionSource": "자동차 커뮤니티·정비사 후기 종합"
+    },
+    {
+      "id": "refrigerant-shortage-symptoms-pressure-cycling",
+      "claim": "냉매가 부족하면 저압 측 압력이 내려가고, 압력 스위치가 압축기를 보호하기 위해 클러치를 자주 ON/OFF 반복한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "자동차 정비 커뮤니티 종합",
+      "source_url": "https://tmautostory.com/car-ac-gas-low-symptoms-cost/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "이 현상을 사용자가 감지하기는 어렵다. 송풍량 변동이나 스스로 ON/OFF되는 느낌으로 의심할 수 있다."
+    },
+    {
+      "id": "refrigerant-shortage-fuel-economy-drop",
+      "claim": "냉매가 부족하면 에어컨 시스템의 냉각 효율이 떨어져 컴프레서가 과부하 상태로 회전하며, 결과적으로 도심 주행 연비가 에어컨 ON 상태에서 평소 대비 10~15% 이상 떨어진다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "자동차 정비·연비 커뮤니티 종합",
+      "source_url": "https://tmautostory.com/car-ac-gas-low-symptoms-cost/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "refrigerant-shortage-frost-or-condensation",
+      "claim": "냉매가 부족하면 배관 내부 압력이 비정상적으로 낮아져 송풍구 주변 배관에 성에(하얀 얼음)가 끼거나 액적이 맺혀 물이 떨어질 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "자동차 정비 커뮤니티 종합",
+      "source_url": "https://tmautostory.com/car-ac-gas-low-symptoms-cost/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "에바포레이터 결로로 인한 물 떨어짐과 혼동할 수 있으나, 냉매 부족 시 내부 배관 주변(송풍구 근처, 에어컨 베젤 틈)에서 성에나 얼음이 보이는 점이 다르다."
+    },
+    {
+      "id": "refrigerant-not-consumable-indicates-leak",
+      "claim": "자동차 에어컨 냉매는 엔진오일처럼 타서 없어지는 소모품이 아니라 밀폐된 라인에서 계속 순환해야 정상이므로, 냉매 부족이라는 것은 '어딘가 새고 있다'는 신호다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차 정비 상식 종합",
+      "source_url": "https://tmautostory.com/car-ac-gas-low-symptoms-cost/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "냉매 부족은 결과일 뿐 원인(누수처)을 찾아 고치지 않으면 1~2년 후 반복된다. 진단은 전문점 필수.",
+      "cautionSource": "냉매 누수 진단·수리 주기(정비소 경험)"
+    },
+    {
+      "id": "refrigerant-refill-interval-2to3years",
+      "claim": "자동차 에어컨 냉매 충전 주기는 평균 2~3년이며, 보통 3년에 1회 충전하면 된다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "자동차 정비 커뮤니티 종합",
+      "source_url": "https://cardvt.com/%EC%9E%90%EB%8F%99%EC%B0%A8-%EC%97%90%EC%96%B4%EC%BB%A8-%EB%83%89%EB%A7%A4/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "차량·운행 환경·사용 빈도에 따라 크게 달라진다. 정상적인 차량이라면 폐차할 때까지 충전할 필요가 없을 수도 있고, 누수가 있으면 1년 이내 재충전이 필요할 수도 있다. 구체적인 일정은 정기검진(1년/10,000km)이나 냉각 효율 저하 시점에 정비소에서 압력 점검해야 한다.",
+      "cautionSource": "자동차 정기검진 표준(1년/10,000km) 및 정비 커뮤니티"
+    },
+    {
+      "id": "cabin-filter-replacement-interval-6months-or-10k-km",
+      "claim": "자동차 캐빈필터(에어컨 필터)의 교체 주기는 6개월에 한 번(1년에 2회) 또는 주행거리 10,000km 주행 시 한 번을 기준으로 하며, 일반적으로는 12개월 또는 15,000km 전후를 기본 기준으로 본다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차 제조사·정비 가이드 종합",
+      "source_url": "https://kixxman.com/automotive-air-conditioner",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "운행 환경(도시·시골·고속도로)과 실내 환경(후방 통풍 개방 여부)에 따라 오염 속도가 달라진다. 먼지가 많은 지역이나 습기가 많은 계절(장마)에는 더 자주 점검하는 것이 좋다."
+    },
+    {
+      "id": "cabin-filter-clog-symptoms-weak-airflow",
+      "claim": "캐빈필터가 오염되거나 막혔을 때 바람이 예전보다 약해지면 필터가 막혔을 가능성이 높다. 필터가 막히면 공기가 통과하는 길이 좁아져서 같은 단계로 에어컨을 켜도 바람이 약하게 느껴진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차 정비 가이드 종합",
+      "source_url": "https://kixxman.com/automotive-air-conditioner",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "cabin-filter-clog-symptoms-smell-defog-weak",
+      "claim": "외기 모드에서 앞유리 김서림 제거가 예전보다 잘 되지 않거나, 송풍구 쪽에서 먼지·곰팡이 냄새가 난다면 캐빈필터 상태를 확인해보는 것이 좋다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차 정비 가이드 종합",
+      "source_url": "https://kixxman.com/automotive-air-conditioner",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "evaporator-odor-cause-humidity-mold",
+      "claim": "자동차 에어컨에서 시큼하거나 곰팡이 냄새가 나는 원인은 에바포레이터(증발기)에서 냉각 시 응결된 습기가 완전히 배출되지 않아 내부에 남고, 이곳에서 각종 미생물이 번식하기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차 에어컨 정비 가이드 종합",
+      "source_url": "https://web.getcha.kr/blog/car-air-conditioner-smell-removal-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "에바포레이터는 에어컨 시스템 내부 깊숙이 위치해 사용자가 접근·청소할 수 없다. 냄새 개선은 예방(습기 배출)과 전문점 에바크리닝이 유일하다."
+    },
+    {
+      "id": "evaporator-odor-prevention-blower-before-shutdown",
+      "claim": "에어컨을 끄기 3~5분 전에 A/C 버튼을 끄고 송풍 모드로 전환하여 에바포레이터에 맺혀 있던 수분을 말려주는 습관만으로도 곰팡이와 악취 발생을 크게 줄일 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "자동차 커뮤니티·정비사 권장 습관 종합",
+      "source_url": "https://topictree.co.kr/automobiles/news/how-to-prevent-car-ac-evaporator-odor/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "에어컨 끄기 직전이 아니라, '3~5분 전'에 미리 전환해야 충분한 시간 동안 습기를 배출할 수 있다.",
+      "cautionSource": "자동차 정비사 권장 습관(에바포레이터 습기 배출 시간)"
+    },
+    {
+      "id": "interior-circulation-faster-cooling",
+      "claim": "자동차 에어컨의 내기 순환 모드는 실내 공기만 순환시켜 외기 순환보다 훨씬 빠르게 실내를 냉각시킬 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차 에어컨 조작 가이드 종합",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/DN8/2026/ko_KR/id22CKHC00FBF.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "interior-circulation-air-quality-degradation",
+      "claim": "내기 순환 모드로 설정하면 외부 공기 유입이 차단되어 실내 공기가 탁해지고, 탑승객의 호흡으로 실내 이산화탄소·산소 농도 불균형이 생겨 두통과 졸음을 유발할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차 커뮤니티·보건 정보 종합",
+      "source_url": "https://mycle.co.kr/post/entry/ContentsHoneytipAirCycle230601.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "exterior-circulation-general-use-recommended",
+      "claim": "공조기를 최대한 외기 순환 모드로 사용하는 것이 건강상 좋으며, 공기 오염이 심한 날이나 터널 진입 등 필요한 순간에만 내기 순환 버튼을 눌러 외부 공기 유입을 막아주는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차 커뮤니티·보건 정보 종합",
+      "source_url": "https://mycle.co.kr/post/entry/ContentsHoneytipAirCycle230601.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "ac-button-compressor-activation-flow-direction",
+      "claim": "A/C 버튼이 활성화(보통 초록색 LED 점등)되면 컴프레서가 작동하고 냉매 시스템이 돌아가며, 에바포레이터에서 찬 바람이 나온다. A/C 버튼을 누르지 않으면 실내 공기를 송풍만 하는 모드가 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차 에어컨 조작 가이드 종합",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/DN8/2026/ko_KR/id22CKHC00FBF.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "idle-weak-cooling-underpowered-engines",
+      "claim": "경차 등 엔진 자체의 출력이 약한 차량들은 에어컨을 켜면 출력이 눈에 띄게 약화되는 경우가 있으며, 공회전 상태에서 에어컨을 작동시킬 때 냉각 성능이 약화된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "자동차 커뮤니티·정비사 후기 종합",
+      "source_url": "https://blog.bullsone.com/2679",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "경차·소형차",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "공회전에서는 엔진 회전수가 낮아 벨트 구동 컴프레서의 회전 속도가 낮아지므로 냉각력이 떨어진다. 주행 중에는 정상이어야 한다."
+    },
+    {
+      "id": "engine-overheating-ac-load-risk",
+      "claim": "엔진이 과열되었을 때 에어컨을 켜면, 엔진은 냉각팬과 별도로 무거운 컴프레서를 추가 구동해야 하며, 결과적으로 내부 온도를 더 올리는 문제를 유발할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차 엔진 과열 가이드 종합",
+      "source_url": "https://ownersmanual.kia.com/docview/webhelp/doc/5d14be9b-b783-4d5a-8d96-f65cf9f04e4f/topics/t00963.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "엔진 과열이 의심될 때(온도계 급상승·증기)는 즉시 에어컨을 끄고 안전한 곳에 정차한 뒤 전문점 진단을 받아야 한다."
+    },
+    {
+      "id": "coolant-shortage-compressor-stop-no-cooling",
+      "claim": "냉각수가 부족하여 엔진이 과열되면, 엔진 과열 방지를 위해 냉매 시스템의 압력 스위치가 자동으로 컴프레서 클러치를 차단하여 컴프레서 작동이 중단되고 시원한 바람이 나오지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차 냉각수·엔진 시스템 가이드",
+      "source_url": "https://ppacar.com/%EB%83%89%EA%B0%81%EC%88%98-%EC%98%A8%EB%8F%84-%EC%A0%95%EC%83%81-%EB%B2%94%EC%9C%84%EC%97%90-%EB%8C%80%ED%95%9C-%EC%9D%B4%ED%95%B4%EC%99%80-%EC%A4%91%EC%9A%94%EC%84%B1/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "에어컨 안 시원함의 원인이 냉각수 부족일 수 있으니, 에어컨 문제 진단 전 냉각수 액면계(수온계 옆)를 반드시 확인해야 한다."
+    },
+    {
+      "id": "coolant-temperature-normal-range-80to90",
+      "claim": "자동차 냉각수의 정상 작동 온도는 섭씨 80도에서 90도 사이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차 냉각 시스템 사양",
+      "source_url": "https://ppacar.com/%EB%83%89%EA%B0%81%EC%88%98-%EC%98%A8%EB%8F%84-%EC%A0%95%EC%83%81-%EB%B2%94%EC%9C%84%EC%97%90-%EB%8C%80%ED%95%9C-%EC%9D%B4%ED%95%B4%EC%99%80-%EC%A4%91%EC%9A%94%EC%84%B1/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "차계기판 온도계가 중간값(보통 50%) 근처에서 안정되는 것이 정상. 상향 끝(100% 또는 'H')에 도달하면 과열 상태.",
+      "cautionSource": "자동차 냉각 시스템 사양(온도 범위) 및 차계기판 표시 기준"
+    },
+    {
+      "id": "compressor-clutch-engage-disengage-sound-normal",
+      "claim": "A/C 버튼을 켰다 꺼낼 때 엔진실에서 '딱' 또는 '크르르' 같은 소리가 나면서 컴프레서 클러치가 붙었다 떨어지는 소리는 정상 작동음이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차 에어컨 시스템 가이드",
+      "source_url": "https://www.gzkasen.com/ko/blog/automotive-compressor-clutch-replacement",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "클러치 음성을 확인하려면 송풍기를 켠 상태에서 A/C 버튼을 켜고 끌 때 엔진실 소리를 귀 기울여 들어야 한다. 반복적인 시도는 컴프레서에 무리를 줄 수 있으니 1~2회만 시도.",
+      "cautionSource": "자동차 정비 가이드(컴프레서 무리 방지)"
+    },
+    {
+      "id": "refrigerant-refill-professional-high-pressure-hazard",
+      "claim": "자동차 에어컨 냉매는 고압 가스이므로 충전은 반드시 전문점(에어컨 냉매 충전 인증 정비소)에서 전문 장비로 해야 하며, 개인이 임의로 충전하면 고압 폭발·동상 부상의 위험이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차 안전 매뉴얼·정비 규정",
+      "source_url": "https://service.tesla.com/docs/Model3/ServiceManual/ko-kr/GUID-70451B7D-B952-40C0-8D63-756F73A4D07C.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "냉매 충전 장비가 없는 상태에서 캔형 냉매 제품을 사용하는 것도 위험하다. 올바른 압력 설정 없이 과충전하면 컴프레서 손상·냉매 누출로 이어진다."
+    },
+    {
+      "id": "compressor-belt-manipulation-prohibition",
+      "claim": "자동차 에어컨 컴프레서와 벨트는 고속으로 회전하는 기계 부품이므로, 임의로 분해·조작·청소하면 회전체 감김·절단 위험이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차 안전 매뉴얼",
+      "source_url": "https://service.tesla.com/docs/Model3/ServiceManual/ko-kr/GUID-70451B7D-B952-40C0-8D63-756F73A4D07C.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "condenser-fin-cleaning-with-caution",
+      "claim": "콘덴서 핀 사이에 낀 이물질(버그, 먼지)은 세차장 고압수로 세척할 때 팬이 변형되지 않도록 조심해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "자동차 커뮤니티·세차 경험담 종합",
+      "source_url": "https://kixxman.com/automotive-air-conditioner",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "차량",
+        "line": "전 라인",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "일반 세차장의 고압분사는 적절한 거리와 각도로 가할 수 없어 핀 손상 위험이 크다. 정비소에서 저압 에어건이나 전문 클리닝 제품으로 하는 것이 안전.",
+      "cautionSource": "자동차 세차장·정비소 경험담"
+    }
+  ]
+}

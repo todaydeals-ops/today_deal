@@ -15,7 +15,7 @@ import "./magazine/magazine.css";
 export const dynamic = "force-dynamic";
 
 const SITE = "https://www.todaydeals.co.kr";
-const mono = "'JetBrains Mono', monospace";
+const mono = "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif";
 const serif = "'Noto Serif KR', serif";
 const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
 const PER = 10;
@@ -206,7 +206,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ c
                       <span style={{ display: "flex", alignItems: "center", gap: 9 }}>
                         <span style={{ width: 8, height: 8, borderRadius: 9999, background: cc.color, flex: "none" }} />
                         <span style={{ display: "flex", flexDirection: "column", gap: 3 }}>
-                          <span style={{ fontFamily: mono, fontSize: 11, fontWeight: 700, color: cc.color }}>{cc.name}</span>
+                          <span style={{ fontSize: 11.5, fontWeight: 700, color: cc.color }}>{cc.name}</span>
                           {a.field && <span style={{ fontSize: 11, color: "#8a857c" }}>{a.field}</span>}
                         </span>
                       </span>

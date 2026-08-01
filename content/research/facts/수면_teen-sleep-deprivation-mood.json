@@ -1,0 +1,119 @@
+{
+  "topic": "청소년 수면 부족과 정서 조절·우울증",
+  "brand": "수면",
+  "article": "teen-sleep-deprivation-mood",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "bedtime-autonomy-sleep-patterns-daytime-functioning",
+      "claim": "청소년이 지각하는 취침 자율성(perceived bedtime autonomy)이 수면 패턴과 낮 시간 기능(주의력, 행동)에 연관되며, 이는 수면의 질뿐 아니라 심리사회적 요인의 중요성을 나타낸다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Front Sleep · The association between perceived bedtime autonomy, sleep patterns, and daytime functioning in adolescents",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13243058/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년 발달",
+        "line": "수면 자율성과 정신건강",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "gut-brain-axis-neuroinflammation-adolescent-depression",
+      "claim": "장-뇌축(gut-brain axis)의 신경염증(neuroinflammation)과 이중 민감 시기(dual-sensitive period)가 청소년 우울증의 생물학적 근저를 형성한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Front Immunol · The dual-sensitive period gut-brain crosstalk, neuroinflammation, and the biological roots of adolescent depression",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13243091/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년 정신건강",
+        "line": "신경생물학적 메커니즘",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": "이 논문은 장-뇌축과 신경염증을 다루지만, 수면과의 직접 링크는 제목에 명시되지 않았으므로, 인용 시 수면 부족이 장-뇌축 균형을 교란한다는 메커니즘을 함께 설명해야 한다.",
+      "cautionSource": "Front Immunol · The dual-sensitive period gut-brain crosstalk, neuroinflammation, and the biological roots of adolescent depression"
+    },
+    {
+      "id": "sleep-quality-fatigue-exercise-depression-mediation",
+      "claim": "청소년의 주관적 운동 경험이 수면의 질과 피로를 매개로 하여 우울증에 영향을 미치는 연쇄 매개(chain mediation) 모델이 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PLoS One · Unveiling the chain mediation model of sleep quality and fatigue in linking subjective exercise experience to depression in adolescent",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13043057/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년 발달",
+        "line": "운동·수면·정신건강",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-disorders-mental-health-allergic-rhinitis",
+      "claim": "알레르기 비염이 수면 장애를 동반하며, 수면 장애가 정신건강(우울·불안)과 연관된다는 검토가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Front Allergy · The relationship between allergic rhinitis and sleep disorders and mental health",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13106524/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년·성인 건강",
+        "line": "수면 장애와 정신건강",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": "이 팩트는 알레르기 비염을 포함하는 특정 조건을 다루므로, 원발성(primary) 수면 부족의 영향과는 구분해야 한다.",
+      "cautionSource": "Front Allergy · The relationship between allergic rhinitis and sleep disorders and mental health"
+    },
+    {
+      "id": "cognitive-behavioral-therapy-insomnia-antidepressant-brain",
+      "claim": "불면증에 대한 인지행동치료(CBT-I)의 항우울 효과가 전전두 변연 뇌 구조(fronto-limbic brain)와 수면 메커니즘의 변화를 통해 매개된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Neuropsychopharmacology · Examining fronto-limbic brain and sleep mechanisms of antidepressant effects in cognitive-behavioral therapy for insomnia",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13268098/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년·성인 정신건강",
+        "line": "불면증 치료와 우울증",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "intergenerational-depression-transmission-network-analysis",
+      "claim": "모-청소년 간 우울증의 세대간 전달이 네트워크 분석으로 드러났으며, 수면 패턴의 일관성이 이 관계의 한 경로일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Child Adolesc Psychiatry Ment Health · Intergenerational transmission of maternal and adolescent depressive symptoms: cross-sectional and cross-lagged panel network analysis",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13064285/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년 정신건강",
+        "line": "세대간 전달·가족 시스템",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": "이 팩트는 수면을 직접 다루지 않으므로, 수면의 세대간 패턴이 우울증 전달을 매개하는 메커니즘을 인용할 때는 추가 근거를 함께 제시해야 한다.",
+      "cautionSource": "Child Adolesc Psychiatry Ment Health · Intergenerational transmission of maternal and adolescent depressive symptoms"
+    }
+  ]
+}

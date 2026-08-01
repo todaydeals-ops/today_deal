@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { CORNERS, cornerOf, CORNER_SHORT, CATCH } from "@/lib/magazine/corners";
 
-const mono = "'JetBrains Mono', monospace";
+const mono = "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif";
 const serif = "'Noto Serif KR', serif";
 
 /* 유틸 바 (잉크) */

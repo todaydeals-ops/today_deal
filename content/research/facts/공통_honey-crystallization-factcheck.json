@@ -1,0 +1,227 @@
+{
+  "topic": "꿀 결정화가 변질인지 여부, 올바른 보관과 되돌리기 방법, 영아 안전",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-28",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "honey-crystallization-natural-glucose-solidification",
+      "claim": "꿀의 결정화(하얗게 굳음)는 포도당이 수분과 분리되면서 자연스럽게 응고하는 현상으로, 변질이 아니다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "일반 식품 정보 자료 종합",
+      "source_url": "https://hojuhoney.com/honey-crystallizes/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "천연 꿀",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "honey-crystallization-evidence-genuine",
+      "claim": "결정화는 100% 자연산 꿀이며 설탕을 넣지 않고 가열하지 않은 생꿀의 증거다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "당근 비즈 기업 게시물",
+      "source_url": "https://www.daangn.com/kr/business-post/%EA%BF%80%EC%9D%B4-%EA%B5%B0%EB%8A%94-%EA%B2%B0%EC%A0%95%ED%99%94-%ED%98%84%EC%83%81-%EC%B2%9C%EC%97%B0%EA%BF%80%EC%9D%B4%EB%9D%BC%EB%8A%94-%EC%A6%9D%EA%B1%B0%EC%9E%85%EB%8B%88%EB%8B%A4-%EC%A4%91%EC%A7%80%ED%95%98%EB%A9%B4-%ED%95%A0-%EC%A7%A0%EC%95%8C-i3z7sx8zj75b/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "천연 꿀",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "honey-crystallization-temperature-5-15-celsius",
+      "claim": "꿀의 결정화는 보관 온도가 5~15℃일 때 촉진된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "인터넷 식품 정보 자료",
+      "source_url": "https://m.beeman.co.kr/article/magazine/8/805/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "천연 꿀",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "냉장 보관(5℃ 이하)은 오히려 결정화를 촉진하므로 피해야 한다.",
+      "cautionSource": "https://m.beeman.co.kr/article/magazine/8/805/"
+    },
+    {
+      "id": "honey-shelf-life-indefinite-if-sealed",
+      "claim": "꿀은 약 70%의 당분과 약 20%의 수분 함량으로 인해 미생물이 번식할 수 없는 환경이므로, 밀폐 보관 시 사실상 무기한으로 저장 가능하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "공공 건강 정보 종합",
+      "source_url": "https://m.science.ytn.co.kr/view.php?s_mcd=0082&key=201610201208362631",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "천연 꿀",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "honey-opened-consumption-recommendation-2-years",
+      "claim": "개봉 후에는 섭취 과정에서 수분이 첨가되거나 숟가락 등으로 오염될 수 있으므로, 2년 이내 섭취하기를 권장한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "꿀 판매 업체 정보",
+      "source_url": "https://ripenedhoney.com/article/%EA%BF%80-%EB%8B%A8%EC%A7%80/5/389/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "천연 꿀",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "honey-storage-room-temperature-15-30-celsius",
+      "claim": "꿀의 최적 보관 온도는 실온 15~30℃이며, 직사광선이 닿지 않는 어두운 장소에 밀폐 용기로 보관해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "식품 보관 정보 종합",
+      "source_url": "https://m.beeman.co.kr/article/magazine/8/805/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "천연 꿀",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "냉장고(5℃)는 피할 것. 냉동고도 피할 것.",
+      "cautionSource": "https://m.beeman.co.kr/article/magazine/8/805/"
+    },
+    {
+      "id": "honey-warming-double-boil-under-40-celsius",
+      "claim": "결정화된 꿀을 다시 액체 상태로 되돌리려면 40℃ 이하의 따뜻한 물에 꿀 병을 담가 천천히 중탕하면 된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "식품 보관 및 조리 정보",
+      "source_url": "https://hojuhoney.com/crystallized-honey/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "천연 꿀",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "40℃ 이상으로 가열하면 꿀의 효소와 향미 성분이 파괴되므로, 40℃ 이하의 낮은 온도에서 천천히 녹여야 한다.",
+      "cautionSource": "https://hojuhoney.com/crystallized-honey/"
+    },
+    {
+      "id": "infant-botulism-under-12-months-clostridium-botulinum",
+      "claim": "1세 미만의 영아가 꿀을 섭취하면 보툴리누스균(Clostridium botulinum) 포자가 미성숙 소화기관에서 발아·증식하여 신경독소를 생성, 영아보툴리누스증을 일으킬 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 & 국민건강지식센터",
+      "source_url": "https://hqcenter.snu.ac.kr/archives/31587",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "천연 꿀",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "⚠️ 1세 미만 영아에게는 절대 꿀을 주지 마세요. 보툴리누스균의 포자는 일반적인 조리법으로 사멸되지 않습니다.",
+      "cautionSource": "https://hqcenter.snu.ac.kr/archives/31587"
+    },
+    {
+      "id": "infant-botulism-commercial-honey-contamination-rate",
+      "claim": "상업적으로 판매되는 꿀 샘플 중 약 10%가 보툴리누스 포자로 오염되어 있는 것으로 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민건강지식센터 연구 자료",
+      "source_url": "https://hqcenter.snu.ac.kr/archives/31587",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "천연 꿀",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": "없음"
+    },
+    {
+      "id": "infant-botulism-symptoms-under-6-months",
+      "claim": "영아보툴리누스증의 증상은 변비(95% 발생률), 무기력증, 근력 저하, 수유 능력 감소, 울음소리 약화, 삼키기 어려움 등이며, 심한 경우 호흡 부전으로 사망에 이를 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민건강지식센터",
+      "source_url": "https://hqcenter.snu.ac.kr/archives/31587",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "천연 꿀",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "생후 6개월 미만 영아에게 이러한 증상이 나타나면 즉시 의료 기관에 문의하세요.",
+      "cautionSource": "https://hqcenter.snu.ac.kr/archives/31587"
+    },
+    {
+      "id": "genuine-vs-fake-honey-viscosity-test",
+      "claim": "진짜 꿀은 점성이 높아 숟가락에서 천천히 실처럼 이어지며 떨어지고, 병을 기울였을 때 기포가 느리게 움직인다. 가짜 꿀은 점성이 낮아 금세 떨어진다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "일반 식품 정보",
+      "source_url": "https://www.a-ha.io/questions/468807423ba384e8b6cca25a40dc9d8f",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "꿀(진위 구별)",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "육안 테스트는 참고만 하고, 정확한 진위 판별은 성분분석(탄소동위원소비 검사)을 통해서만 가능하다.",
+      "cautionSource": "https://www.a-ha.io/questions/468807423ba384e8b6cca25a40dc9d8f"
+    },
+    {
+      "id": "genuine-honey-identification-ingredient-label",
+      "claim": "식품 기준상 천연벌꿀은 꿀벌이 꽃꿀을 채집해 효소 작용을 거쳐 숙성한 100% 벌꿀을 의미하며, 혼합꿀은 벌꿀에 액상과당이나 기타 당류를 섞은 제품이다. 제품명에 벌꿀이 있어도 성분표에 기타 당류가 표기되어 있으면 순수 벌꿀이 아니다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국 식품 기준",
+      "source_url": "https://www.a-ha.io/questions/468807423ba384e8b6cca25a40dc9d8f",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품",
+        "line": "꿀(제품 분류)",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "구매 전 반드시 성분표를 확인하세요. '벌꿀'이라는 이름이 있어도 액상과당이나 포도당이 첨가되었을 수 있습니다.",
+      "cautionSource": "한국식품안전관리인증기준"
+    }
+  ]
+}

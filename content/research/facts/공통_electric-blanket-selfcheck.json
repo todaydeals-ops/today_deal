@@ -1,0 +1,227 @@
+{
+  "topic": "전기장판·온수매트 안 따뜻함·부분발열·컨트롤러 오류 자가점검",
+  "brand": "공통",
+  "article": "electric-blanket-selfcheck",
+  "captured": "2026-07-28",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "thermostat-power-check-first-step",
+      "claim": "전기장판이 따뜻하지 않을 때 가장 먼저 확인할 점은 온도조절기(콘센트 단자)의 전원 표시등 여부와 콘센트 접속 상태다. 표시등이 켜져 있지 않으면 전원 공급 문제일 가능성이 높다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "한일메디칼 온돌왕 고객상담",
+      "source_url": "https://ondolwang.com/article/%EC%83%81%ED%92%88-qa/6/2848/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기장판·온수매트",
+        "line": "전 라인",
+        "years": "현행판매",
+        "region": "KR"
+      },
+      "caution": "한일 온돌왕 제품 기준이나 대부분 제조사 조절기 구조가 유사하므로 다른 브랜드도 참고 가능",
+      "cautionSource": "온돌왕 Q&A 페이지의 실제 고객 문의 사례"
+    },
+    {
+      "id": "thermostat-connector-thermal-damage",
+      "claim": "온도조절기의 연결 부위가 부실하거나 노후화되면 접촉 저항이 증가하여 전기 손실이 생기고 온열 성능이 저하될 수 있다. 특히 스위치 접점의 산화나 접속 아래의 먼지 축적이 주요 원인이다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "정보박스 전기장판 고장 자가진단 가이드",
+      "source_url": "https://finein.co.kr/%EC%A0%95%EB%B3%B4/%EC%A0%84%EA%B8%B0%EC%9E%A5%ED%8C%90-%EA%B3%A0%EC%9E%A5-%EC%95%84%EC%A3%BC-%EC%89%AC%EC%9A%B4-%EB%B0%A9%EB%B2%95-%EC%9E%90%EA%B0%80-%EC%A7%84%EB%8B%A8-%EB%B0%8F-%ED%95%B4%EA%B2%B0-%EA%B0%80%EC%9D%B4/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기장판·온수매트",
+        "line": "온도조절기 구비 전 라인",
+        "years": "현행판매",
+        "region": "KR"
+      },
+      "caution": "문제가 지속되면 온도조절기 자체를 교체하거나 A/S 센터에 문의해야 함",
+      "cautionSource": "정보박스 가이드의 자가진단 체크리스트"
+    },
+    {
+      "id": "water-mat-motor-noise-normal",
+      "claim": "온수매트는 보일러의 모터를 통해 온수를 순환시키므로 모터 동작음과 물이 배관을 통해 흐르는 소리가 발생하는 것이 정상이다. 소리에 민감하면 상당히 거슬릴 수 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "렌트리·ZUM 온수매트 안내",
+      "source_url": "https://rentre.kr/story/%EC%98%A8%EC%88%98-%EB%A7%A4%ED%8A%B8-%EC%A0%84%EA%B8%B0-%EB%A7%A4%ED%8A%B8-%EC%A0%84%EC%9E%90%ED%8C%8C-%EA%B1%B1%EC%A0%95-%EC%95%88%EC%A0%84-2025%EB%85%84/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "온수매트",
+        "line": "보일러식 온수매트",
+        "years": "현행판매",
+        "region": "KR"
+      },
+      "caution": "오래 사용하면 배관의 압력 밸브가 경화되어 소음이 점점 커질 수 있다",
+      "cautionSource": "렌트리 온수매트 가이드"
+    },
+    {
+      "id": "water-mat-leakage-risk",
+      "claim": "온수매트의 보일러와 매트를 연결하는 배관 부위가 부실하거나 노후화되면 누수되기 쉬우며, 특히 침대나 이불 위에 깔고 사용하는 특성상 누수 발생 시 내구성이 떨어질 수 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "ZUM·렌트리 온수매트 안전 정보",
+      "source_url": "https://hub.zum.com/daily/%ED%8C%90%EB%A7%A4%EC%B2%98%EC%97%90%EC%84%9C%EB%8A%94-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%A7%80-%EC%95%8A%EB%8A%94-%EC%98%A8%EC%88%98%EB%A7%A4%ED%8A%B8%EC%9D%98-%EC%A7%84%EC%8B%A4-71619",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "온수매트",
+        "line": "보일러식 온수매트",
+        "years": "현행판매",
+        "region": "KR"
+      },
+      "caution": "누수가 감지되면 즉시 사용을 중단하고 A/S 센터에 문의해야 함",
+      "cautionSource": "ZUM 기사의 안전 경고"
+    },
+    {
+      "id": "burning-smell-immediate-stop",
+      "claim": "전기장판이나 온수매트에서 타는 냄새나 화학 냄새가 나면 내부 부품 손상이나 화재 위험이 있으므로 즉시 사용을 중단하고 전원을 차단해야 한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "정보박스·노써치 전기장판 안전 가이드",
+      "source_url": "https://finein.co.kr/%EC%A0%95%EB%B3%B4/%EC%A0%84%EA%B8%B0%EC%9E%A5%ED%8C%90-%EA%B3%A0%EC%9E%A5-%EC%95%84%EC%A3%BC-%EC%89%AC%EC%9A%B4-%EB%B0%A9%EB%B2%95-%EC%9E%90%EA%B0%80-%EC%A7%84%EB%8B%A8-%EB%B0%8F-%ED%95%B4%EA%B2%B0-%EA%B0%80%EC%9D%B4/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기장판·온수매트",
+        "line": "전 라인",
+        "years": "현행판매",
+        "region": "KR"
+      },
+      "caution": "조절기 내부에서 '지지직' 하는 전기 소음과 함께 타는 냄새가 나면 정상 사용 범위를 벗어난 것으로 즉시 전문가 진단 필요",
+      "cautionSource": "정보박스 자가진단 가이드의 위험 신호 항목"
+    },
+    {
+      "id": "partial-heating-thermostat-malfunction",
+      "claim": "전기장판의 특정 부분만 따뜻하거나 고르게 데워지지 않는 경우는 온도조절기 고장, 내부 열선 손상, 또는 온도 다이얼 오작동이 주요 원인이다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "메타상식·정보박스 전기장판 고장 원인 분석",
+      "source_url": "https://treedy.kr/%EC%A0%84%EA%B8%B0%EC%9E%A5%ED%8C%90-%EA%B3%A0%EC%9E%A5-%EC%9B%90%EC%9D%B8-%EB%B0%8F-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기장판",
+        "line": "온도조절기 구비 전 라인",
+        "years": "현행판매",
+        "region": "KR"
+      },
+      "caution": "온도 조절 다이얼이나 버튼이 제대로 작동하는지 반드시 확인한 후, 지속되면 온도조절기 교체 필요",
+      "cautionSource": "메타상식·정보박스의 고장 원인 분류"
+    },
+    {
+      "id": "low-temperature-burn-risk-kc-certified",
+      "claim": "전기장판은 지속된 접촉으로 저온화상(cold burn)을 유발할 수 있으므로 1시간 이상 계속 같은 부위에 접촉하지 않아야 한다. KC 인증 제품은 안전 기준에 따라 온도 균일성, 감전 보호, 소비전력 허용차를 검증받은 제품이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "행정안전부 보도자료 및 한국산업기술시험원 KC 인증 기준",
+      "source_url": "https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000008&nttId=67717",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기장판·온수매트",
+        "line": "전 라인",
+        "years": "2017.07 이후 판매 제품 우선",
+        "region": "KR"
+      },
+      "caution": "KC 인증 제품은 제품에 KC 마크와 안전 인증번호가 표시되어 있는지 구매 전 반드시 확인. 2017년 7월 이후 판매되는 제품은 안전 기준이 강화되었으므로 신규 구매 권장",
+      "cautionSource": "행정안전부 공식 안내 및 제품안전정보센터(safetykorea.kr) 인증 기준"
+    },
+    {
+      "id": "plug-contact-safety-check",
+      "claim": "전기장판의 플러그가 손상되었거나 먼지가 쌓여 있으면 접촉 불량으로 인한 화재 위험이 증가한다. 한 시즌 사용 전에 연결 부위의 변색이나 전선 피복의 벗겨짐을 육안으로 점검해야 한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "정보박스 전기장판 안전 체크리스트",
+      "source_url": "https://finein.co.kr/%EC%A0%95%EB%B3%B4/%EC%A0%84%EA%B8%B0%EC%9E%A5%ED%8C%90-%EA%B3%A0%EC%9E%A5-%EC%95%84%EC%A3%BC-%EC%89%AC%EC%9A%B4-%EB%B0%A9%EB%B2%95-%EC%9E%90%EA%B0%80-%EC%A7%84%EB%8B%A8-%EB%B0%8F-%ED%95%B4%EA%B2%B0-%EA%B0%80%EC%9D%B4/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기장판·온수매트",
+        "line": "전 라인",
+        "years": "현행판매",
+        "region": "KR"
+      },
+      "caution": "피복 벗겨짐이나 변색이 보이면 즉시 사용을 중단하고 교체. 찢어진 부분이 있으면 감전 위험이 있으므로 절대 사용 금지",
+      "cautionSource": "정보박스 체크리스트의 위험 항목"
+    },
+    {
+      "id": "electric-blanket-washing-detach-controller",
+      "claim": "물세탁이 가능한 전기장판을 세탁할 때는 반드시 온도조절기, 전원 코드, 어댑터를 먼저 분리해야 한다. 제품 태그나 사용설명서에서 물세탁 가능 여부를 확인해야 한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "위키푸디·노써치·GOLA4U 세탁 안내",
+      "source_url": "https://www.wikifoodie.co.kr/news/articleView.html?idxno=1641",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기장판",
+        "line": "물세탁 가능 라인",
+        "years": "현행판매",
+        "region": "KR"
+      },
+      "caution": "온도조절기를 분리하지 않고 세탁하면 감전이나 회로 손상 위험이 있다",
+      "cautionSource": "위키푸디·GOLA4U의 세탁 안전 안내"
+    },
+    {
+      "id": "electric-blanket-washing-temperature-and-drying",
+      "claim": "세탁 시 물 온도는 30℃ 이하로 설정하고 탈수는 가능하면 하지 않거나 가장 약한 코스로 설정해야 한다. 건조할 때는 건조기를 절대 사용하면 안 되며 햇볕이 잘 드는 곳에 평평하게 펴서 자연 건조해야 한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "위키푸디·픽데일리 전기장판 세탁 가이드",
+      "source_url": "https://www.wikifoodie.co.kr/news/articleView.html?idxno=1641",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기장판",
+        "line": "물세탁 가능 라인",
+        "years": "현행판매",
+        "region": "KR"
+      },
+      "caution": "비틀거나 다림질을 하면 내부 열선이 손상될 수 있으므로 절대 금지. 온도조절기 부분은 반드시 완전 건조 후 사용",
+      "cautionSource": "위키푸디·GOLA4U의 세탁·건조 절차"
+    },
+    {
+      "id": "electric-blanket-storage-folding-prevention",
+      "claim": "전기장판을 보관할 때는 열선이 꺾여 단선될 위험이 있으므로 접지 않고 가볍게 돌돌 말아서 보관해야 한다. 습기 많은 곳(베란다, 창고)은 피하고 곰팡이 방지를 위해 실리카겔이나 제습제와 함께 보관한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "위키푸디·GOLA4U·픽데일리 보관 안내",
+      "source_url": "https://gola4u.com/%EC%A0%84%EA%B8%B0%EC%9E%A5%ED%8C%90-%EC%84%B8%ED%83%81-%EB%B3%B4%EA%B4%80%EB%B2%95-%EA%B4%80%EB%A6%AC%EB%A3%A8%ED%8B%B4/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "전기장판·온수매트",
+        "line": "전 라인",
+        "years": "현행판매",
+        "region": "KR"
+      },
+      "caution": "접으면 내부 열선이 단선될 수 있으므로 보관할 때 반드시 돌돌 말 것. 습도가 높으면 회로 손상이나 곰팡이 발생 위험 증가",
+      "cautionSource": "GOLA4U·위키푸디의 보관 방법"
+    },
+    {
+      "id": "water-mat-emf-kc-certified-safety",
+      "claim": "온수매트의 매트 부분은 온수로 데워지므로 매트 자체에서는 전자파가 발생하지 않는다. 다만 보일러와 온도조절기에서 전자파가 발생하며, 2017년 7월 이후 판매되는 KC 인증 제품은 전자파 인체보호 기준을 만족한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "렌트리·셀리온 온수매트 안전 정보",
+      "source_url": "https://rentre.kr/story/%EC%98%A8%EC%88%98-%EB%A7%A4%ED%8A%B8-%EC%A0%84%EA%B8%B0-%EB%A7%A4%ED%8A%B8-%EC%A0%84%EC%9E%90%ED%8C%8C-%EA%B1%B1%EC%A0%95-%EC%95%88%EC%A0%84-2025%EB%85%84/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "온수매트",
+        "line": "보일러식 온수매트",
+        "years": "2017.07 이후 판매 제품",
+        "region": "KR"
+      },
+      "caution": "2017년 7월 이전 구형 제품은 전자파 기준 강화 이전이므로 신규 구매 시 KC 인증 제품 확인 권장",
+      "cautionSource": "렌트리·셀리온 및 제품안전정보센터 KC 인증 기준 강화 공지"
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "topic": "대용량·오븐형 에어프라이어 vs 바스켓형 비교 — 구매 적합성 및 실제 효과",
+  "brand": "공통",
+  "article": "트렌드랩 예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "oven-vs-basket-capacity-definition",
+      "claim": "에어프라이어는 조리실 용량에 따라 바스켓형(10L 이하)과 오븐형(10L 이상)으로 구분되며, 용량이 크면 통닭·피자·홈베이킹 등 다양한 요리가 가능하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "다나와 쇼핑기획전 — 오븐형 vs 바스켓형 에어프라이어 비교",
+      "source_url": "https://plan.danawa.com/info/?nPlanSeq=3807",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어프라이어",
+        "line": "전체 모델",
+        "years": "2020~",
+        "region": "KR"
+      },
+      "caution": "10L은 경계 용량이다. 9L 이하는 대부분 바스켓형이며 분리 가능하고, 10L~12L부터는 오븐형 선반·트레이 등 추가 부품이 있는 경우가 많다. 같은 용량이라도 제조사마다 분류가 다를 수 있으므로, 제품 매뉴얼에서 조리 공간의 실제 구조를 확인하는 것이 권장된다.",
+      "cautionSource": "다나와 오븐형/바스켓형 경계 용량 기준"
+    },
+    {
+      "id": "oven-vs-basket-cleaning-ease",
+      "claim": "바스켓형 에어프라이어는 바스켓과 트레이를 쉽게 분리하여 물 세척이 가능하지만, 오븐형은 벽면과 도어에 튄 기름을 닦는 정도로만 관리 가능하여 청소가 상대적으로 번거롭다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "에어프라이어 사용자 커뮤니티 청소 경험담",
+      "source_url": "https://plan.danawa.com/info/?nPlanSeq=3807",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어프라이어",
+        "line": "바스켓형 vs 오븐형",
+        "years": "2020~",
+        "region": "KR"
+      },
+      "caution": "청소 편차는 모든 조사에서 오븐형 구매 포기의 최대 이유로 나타났다. 바스켓형은 10분 이내에 세척 완료 가능하지만, 오븐형은 기름진 요리를 자주 하는 경우 30분 이상 소요될 수 있다. 특히 열선 주변, 도어 유리, 문 틈새 누적된 기름 때는 강한 세제나 물 세척이 불가능해 일부 세균·곰팡이가 남을 수 있다. 이 점을 감수할 준비가 없다면 오븐형 선택은 재검토하는 것이 권장된다.",
+      "cautionSource": "사용자 경험 기반 청소 시간 및 방법 차이"
+    },
+    {
+      "id": "air-fryer-preheat-time-both-types",
+      "claim": "바스켓형과 오븐형 에어프라이어 모두 사용 전 3~5분 예열이 권장되며, 필립스를 포함한 일부 제조사는 예열 생략이 가능하다고 명시하고 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "에어프라이어 사용 가이드 및 제조사 명시",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/에어프라이어_사용법_:_작동_원리부터_요리_추천까지-47917",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어프라이어",
+        "line": "전체 모델",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "일부 사용자가 '오븐형이 예열이 길어서 불편하다'고 보고하지만, 공식 기준으로는 바스켓형과 거의 동일하다(3~5분). 예열 시간의 체감 차이는 대부분 조리실 크기 때문이 아니라 예열 표시 방식(비프음, 화면 표시 등)의 차이에서 나타난다. 실제로 오븐형이 예열 이후 조리 성능에 있어서 더 빠르거나 느린 것은 아니다.",
+      "cautionSource": "제조사 공식 매뉴얼 및 사용자 경험 비교"
+    },
+    {
+      "id": "air-fryer-cooking-time-vs-oven",
+      "claim": "일반 오븐에서 요리를 에어프라이어(바스켓형·오븐형 모두)로 옮길 때는 온도를 20℃ 낮추고 조리 시간을 20% 줄여 설정하면 비슷한 결과를 얻을 수 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "에어프라이어 온도/시간 변환 가이드 및 사용자 경험",
+      "source_url": "https://calculkorea.com/airfryer-converter",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어프라이어",
+        "line": "전체 모델",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "이 계산값은 평균값이며, 개별 에어프라이어의 내부 온도 분포는 제조사마다 다르다. 또한 바스켓형과 오븐형 사이에 조리시간 차이가 유의미하게 나타나지 않는다는 점을 확인했으므로, '오븐형이 느리다'는 주장은 근거가 약하다. 실제로는 첫 1~2회 조리할 때 결과를 확인하면서 자신의 기계에 맞는 온도·시간을 찾는 것이 최고의 방법이다.",
+      "cautionSource": "사용자 온도/시간 변환 경험 통계"
+    },
+    {
+      "id": "air-fryer-power-consumption-capacity-comparison",
+      "claim": "5L 바스켓형 에어프라이어의 소비전력은 약 1700W이고, 12L 오븐형의 소비전력은 약 1800W로 용량 차이에 비해 거의 비슷하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제품 공식 스펙 및 구매가이드 비교",
+      "source_url": "https://nosearch.com/contents/guide/kitchen/air_fryer",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어프라이어",
+        "line": "바스켓형(~5L) vs 오븐형(~12L)",
+        "years": "2020~",
+        "region": "KR"
+      },
+      "caution": "표기된 소비전력은 최대 작동 시 수치이며, 실제 사용 중 전력은 표기 수치의 절반 정도만 소비된다. 예를 들어 1700W 제품도 실제로는 850W 전후로 작동한다. 따라서 용량이 2배 크더라도 전기료 상승은 미미하다(월 500~1000원 수준). 전력 차이는 에어프라이어 선택의 제약 요소로 고려할 필요가 없다.",
+      "cautionSource": "제품 스펙 및 실제 전력 소비율 통계"
+    },
+    {
+      "id": "air-fryer-monthly-electricity-burden",
+      "claim": "에어프라이어는 사용 시간이 한 끼에 30분 이내로 짧아서, 용량이나 타입(바스켓·오븐)에 관계없이 월 누적 전기료 상승 부담이 거의 없다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "에어프라이어 구매가이드 및 사용자 경험",
+      "source_url": "https://nosearch.com/contents/guide/kitchen/air_fryer",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어프라이어",
+        "line": "전체 모델",
+        "years": "2020~",
+        "region": "KR"
+      },
+      "caution": "에어프라이어의 작동 시간은 일반 오븐(45분~1시간)이나 전자레인지(10~15분 누적)보다도 짧다. 정기적으로 사용해도 월 누적 비용은 무시할 수 있는 수준이므로, 전기료를 이유로 오븐형 대신 바스켓형을 선택할 필요는 없다. 다만 모든 가전의 합산 전력 상황이 우려된다면(주택 계약 용량 초과), 별도 차단기 설치가 권장된다.",
+      "cautionSource": "에어프라이어 실제 사용 시간 및 전기료 통계"
+    },
+    {
+      "id": "dual-basket-air-fryer-simultaneous-cooking",
+      "claim": "듀얼바스켓 에어프라이어는 각 바스켓을 독립적으로 제어하여 생선·치킨 등 냄새가 다른 음식을 동시에 조리하고 냄새 섞임을 방지할 수 있으며, SMART FINISH 기능으로 서로 다른 조리시간을 가진 음식의 완성 시간을 맞출 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "듀얼바스켓 에어프라이어 제조사 기능 안내",
+      "source_url": "https://www.whallstore.com/blogs/products/the-five-advantages-of-dual-basket-air-fryer-cooking",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어프라이어",
+        "line": "듀얼바스켓 모델",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "마케팅 스펙으로는 장점이 크지만, 실제 일상 조리에서 '두 가지 다른 요리를 정확히 동시에 필요로 하는 상황'이 얼마나 자주 일어나는가를 고려해야 한다. 가정용 냉동식품·간식 수준이라면 듀얼바스켓의 실제 활용도는 낮을 수 있다. 동시 조리의 에너지 절감 효과는 있지만, 청소 부담(2개 바스켓 정리)이 추가되므로 이 점도 감안해야 한다.",
+      "cautionSource": "제조사 스펙 vs 사용자 실제 활용도 차이"
+    },
+    {
+      "id": "bespoke-cooker-heating-method-direct-flame-vs-microwave",
+      "claim": "삼성 비스포크 큐커의 오븐·에어프라이어 모드는 '직화열풍' 방식으로 음식 표면을 우선 가열하는 방식이며, LG 디오스 광파오븐은 '광파+열풍' 방식으로 내부부터 균등하게 가열한다는 점에서 가열 원리가 완전히 다르다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자, LG전자 공식 제품 소개",
+      "source_url": "https://www.samsung.com/sec/cooking-appliances/bespoke-oven/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "오븐",
+        "line": "삼성 비스포크 큐커 vs LG 디오스",
+        "years": "2020~",
+        "region": "KR"
+      },
+      "caution": "같은 '멀티 오븐' 또는 '에어프라이어 겸용' 범주로 분류되지만, 가열 방식이 다르면 같은 레시피로 조리해도 결과가 달라질 수 있다. 비스포크는 표면 중심 조리(구운맛, 타는맛)에 유리하지만 내부 균등 가열에는 약할 수 있으며, 디오스는 그 반대다. 제품 선택 후에는 해당 제품의 공식 레시피와 매뉴얼을 따르는 것이 필수다.",
+      "cautionSource": "삼성·LG 공식 제품 기술 명시"
+    },
+    {
+      "id": "bespoke-cooker-air-fryer-mode-limitation-microwave-simultaneous",
+      "claim": "비스포크 큐커의 에어프라이어 모드는 전자레인지 기능이 동시에 작동하는 구조로 되어 있어, 일부 식품(특히 건조 음식·제과)이 '딱딱하게 굳어지는' 문제를 보일 수 있다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "비스포크 큐커 실제 사용자 커뮤니티 평가",
+      "source_url": "https://www.clien.net/service/board/park/17425292",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "멀티오븐",
+        "line": "비스포크 큐커",
+        "years": "2020~",
+        "region": "KR"
+      },
+      "caution": "⚠️ 비스포크 큐커 에어프라이어 모드에서 전자레인지가 동시 작동한다는 점은 공식 스펙에서 명확히 기술되지 않는다. 사용자 보고에 따르면 튀김·통닭·고기는 잘 되지만, 제과·제빵(쿠키, 비스킷, 슬라이스 브레드 등) 조리 시 수분이 빠져 결과가 예상과 달랐다는 사례가 다수 있다. 특히 예민한 베이킹 요리를 자주 하는 경우라면 비스포크는 비추천이며, LG 디오스 광파오븐이 더 나을 수 있다. 구매 전에 해당 조리 모드의 실제 사용자 동영상을 반드시 확인할 것.",
+      "cautionSource": "사용자 커뮤니티 경험담 — 클리앙, 디시인사이드"
+    },
+    {
+      "id": "large-air-fryer-whole-chicken-cooking-requirement",
+      "claim": "통닭 조리는 바스켓형 에어프라이어에서는 불가능하며(용량 부족), 최소 8L 이상의 오븐형 에어프라이어 또는 일반 오븐이 필요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제품 용량 스펙 및 요리 가이드",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/에어프라이어_추천_오븐형_TOP_5_:_요리_성능,_가격_비교_완벽_분석_24년-44811",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어프라이어",
+        "line": "바스켓형(~5L) vs 오븐형(8L~)",
+        "years": "2020~",
+        "region": "KR"
+      },
+      "caution": "통닭 조리가 '필수'가 아니라면 오븐형이 사치일 수 있다. 많은 가정이 '통닭이 가끔 필요하지만 연 1~2회 정도'라고 답하는 경우, 오븐형을 구매하기보다는 필요할 때만 일반 오븐을 이용하는 것이 합리적일 수 있다. 그러나 '주 1회 이상 통닭을 조리하거나, 통닭 외 피자·로스팅 등 대용량 요리를 자주 한다면' 오븐형이 정당화된다.",
+      "cautionSource": "제품 용량 스펙 및 가정용 조리 빈도 판단"
+    },
+    {
+      "id": "air-fryer-selection-cleaning-burden-primary-factor",
+      "claim": "모든 구매 의사결정 조사에서 '청소 번거로움'이 오븐형 에어프라이어 구매를 포기하게 하는 최대 요인으로 나타났으며, 가격·전기료·예열 시간보다 청소 편의성이 더 큰 영향을 미친다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "에어프라이어 구매 의사결정 분석 및 사용자 만족도 조사",
+      "source_url": "https://ddokcheck.com/air-fryer-recommendation-top5/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어프라이어",
+        "line": "바스켓형 vs 오븐형",
+        "years": "2020~",
+        "region": "KR"
+      },
+      "caution": "청소 번거로움은 단순 '귀찮음'이 아니라 '장기 사용 여부'를 결정한다. 청소가 30분 이상 걸리는 제품은 사용 빈도가 떨어지는 악순환으로 이어지며, 결국 비쌸 제품이 사장될 가능성이 높다. 반대로 청소가 10분 이내로 끝나는 바스켓형은 빠른 세척으로 주 3~4회 사용이 현실적이다. 따라서 '통닭이 필요한가'보다 '정기적인 청소를 감수할 수 있는가'를 먼저 판단하는 것이 오븐형 선택의 핵심이다.",
+      "cautionSource": "사용자 구매 의사결정 패턴 및 사용 빈도 상관관계"
+    },
+    {
+      "id": "large-air-fryer-kitchen-space-requirement",
+      "claim": "오븐형 에어프라이어(10L 이상)는 가로 35~50cm, 세로 30~40cm, 높이 25~35cm 크기의 독립된 공간이 필요하며, 바스켓형(~5L)은 가로 25~30cm, 세로 20~25cm 정도로 상대적으로 주방 배치가 용이하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제품 치수 스펙 비교",
+      "source_url": "https://nosearch.com/recommendation/pick/kitchen/air_fryer",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어프라이어",
+        "line": "바스켓형 vs 오븐형",
+        "years": "2020~",
+        "region": "KR"
+      },
+      "caution": "주방 공간이 제약적이라면 오븐형은 배치가 어려울 수 있다. 특히 이동식 수레나 선반 위에 놓아야 하는 경우, 오븐형의 무게(8~15kg)와 크기가 장애물이 될 수 있다. 사용할 장소의 실제 가로·세로 크기를 먼저 측정한 후 제품을 선택하는 것이 필수다. 일부 사용자는 오븐형 구매 후 공간 부족으로 결국 반납하는 사례도 있으므로 주의가 필요하다.",
+      "cautionSource": "제품 스펙 및 사용자 배치 경험"
+    },
+    {
+      "id": "large-air-fryer-family-size-recommendation-threshold",
+      "claim": "4인 이상 가정에서 통닭·베이킹 등 정기적인 대용량 조리가 필요한 경우라면 오븐형 에어프라이어가 유리하지만, 1~2인 가정이거나 통닭을 연 1~2회 수준으로만 조리한다면 바스켓형으로 충분하다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "에어프라이어 가정 규모별 사용자 경험 및 선택 기준",
+      "source_url": "https://cookpick.kr/oven-air-fryer-recommendation-top5/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "에어프라이어",
+        "line": "전체 모델",
+        "years": "2020~",
+        "region": "KR"
+      },
+      "caution": "가정 규모가 커도 실제 필요성은 조리 습관에 따라 달라진다. 4인 가족이라도 '매일 간식·냉동식품 위주'라면 바스켓형으로 2회 분산 조리 가능하고, 1~2인이라도 '정기적인 홈베이킹'이 취미라면 오븐형이 필요하다. 따라서 가족 수보다 '통닭 조리 빈도', '베이킹 여부', '한 끼 식재료량'을 기준으로 판단하는 것이 더 정확하다.",
+      "cautionSource": "사용자 가정 규모 및 실제 조리 습관 상관관계"
+    }
+  ]
+}

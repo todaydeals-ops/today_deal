@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 // 잠자리연구소 푸터 — 2톤: 위 다크 밴드(방향 강조) + 아래 라이트 정보/링크(기존 배경). 제휴고지 없음.
-const mono = "'JetBrains Mono', monospace";
+const mono = "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif";
 const serif = "'Noto Serif KR', serif";
 
 export default function SleepFooter() {

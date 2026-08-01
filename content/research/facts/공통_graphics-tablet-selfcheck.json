@@ -1,0 +1,195 @@
+{
+  "topic": "그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-28",
+  "reused_facts": [
+    "usb-mic-different-port-troubleshooting",
+    "usb-mic-device-manager-driver-update",
+    "usb3-interference-2-4ghz-rf-dongle",
+    "usb3-interference-solution-use-usb2-port",
+    "wireless-receiver-not-recognized-check-physical-connection",
+    "wireless-receiver-port-swap-troubleshooting",
+    "game-controller-pairing-reset-procedure",
+    "game-controller-connection-loss-check-battery-bluetooth-range",
+    "game-controller-usb-port-inspection-charging-issue"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "graphics-tablet-pen-not-recognized-driver-priority",
+      "claim": "그래픽 태블릿의 펜이 인식되지 않을 때 첫 번째 확인 사항은 제조사 공식 드라이버가 최신 버전으로 설치되어 있는지 확인하는 것이다. 오래된 드라이버는 Windows 업데이트와 충돌해 펜을 인식하지 못하게 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "와콤 공식 지원 — 드라이버 문제 해결",
+      "source_url": "https://support.wacom.com/hc/en-us/sections/360011600754-Wacom-Driver-Troubleshooting",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "와콤·펜타블렛·휴이온 등",
+        "category": "그래픽 태블렛",
+        "line": "모든 USB 펜 입력 태블렛",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "graphics-tablet-pen-battery-check-wireless",
+      "claim": "무선 펜 태블렛이거나 펜이 배터리 방식이면, 펜의 배터리를 먼저 확인한다. 배터리 표시등이 꺼져 있거나 배터리 부족 경고가 나타나면 배터리를 교체해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제조사 제품 설명서 및 사용자 보고",
+      "source_url": "https://support.wacom.com/hc/en-us/articles/8413647279895-How-can-I-diagnose-an-issue-with-my-Wacom-Pen-device",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "와콤·펜타블렛 등",
+        "category": "그래픽 태블렛",
+        "line": "무선 또는 배터리식 펜",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "graphics-tablet-wintab-vs-windows-ink-pressure",
+      "claim": "그래픽 태블렛의 필압이 인식되지 않을 때, 일단 싱글 모니터 사용자는 드라이버의 입력 방식을 'WinTab'으로 설정하면 필압이 정상 작동하는 경우가 많다. 반대로 듀얼 모니터 사용자는 'Windows Ink' 방식이 필요할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 및 그래픽 디자인 포럼",
+      "source_url": "https://www.inflearn.com/news/103981",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "와콤·펜타블렛 등",
+        "category": "그래픽 태블렛",
+        "line": "모든 필압식 펜 입력 태블렛",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "입력 방식 변경 후 반드시 드라이버를 다시 시작하거나 컴퓨터를 재부팅해야 변경 사항이 적용된다.",
+      "cautionSource": "사용자 보고"
+    },
+    {
+      "id": "graphics-tablet-windows-ink-conflict-disable",
+      "claim": "그래픽 태블렛 드라이버와 Windows Ink 시스템이 충돌해 필압이 먹히지 않거나 커서가 끊길 수 있다. 이 경우 타블렛 드라이버의 설정에서 'Windows Ink 사용' 항목을 체크 해제하면 해결되는 경우가 많다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 및 기술 포럼",
+      "source_url": "https://dasoda.pe.kr/design/photoshop/798/%ED%8F%AC%ED%86%A0%EC%83%B5cc%EC%97%90%EC%84%9C-%EC%99%80%EC%BD%A4-%ED%83%80%EB%B8%94%EB%A0%9B-%ED%95%84%EC%95%95%EC%9D%B4-%EC%9D%B4%EC%83%81%ED%95%A0-%EB%95%8C/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "와콤 등",
+        "category": "그래픽 태블렛",
+        "line": "모든 필압식 펜 입력 태블렛",
+        "years": "Windows 10 이후",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "graphics-tablet-cursor-offset-display-mapping",
+      "claim": "그래픽 태블렛의 커서가 펜을 터치한 위치와 다른 곳에 나타나면 태블렛의 디스플레이 매핑 설정을 확인해야 한다. 듀얼 모니터를 사용하는 경우 태블렛 드라이버에서 '활성 디스플레이' 영역을 현재 사용 중인 모니터로 명시적으로 설정해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 및 기술 포럼",
+      "source_url": "https://sunghunleelab.com/420/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "와콤·펜타블렛 등",
+        "category": "그래픽 태블렛",
+        "line": "모든 펜 입력 태블렛",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "싱글 모니터일 때도 Windows Ink가 활성화되어 있으면 커서 어긋남이 발생할 수 있으므로, Windows Ink를 비활성화한 후 다시 확인한다.",
+      "cautionSource": "사용자 보고"
+    },
+    {
+      "id": "graphics-tablet-line-breaking-pressure-jitter-driver-conflict",
+      "claim": "펜으로 선을 그을 때 선이 끊기거나 떨리는 현상(지터)이 나타나면, 그래픽카드 드라이버와 타블렛 드라이버 간의 충돌일 수 있다. 특히 NVIDIA 그래픽카드 사용자의 경우, 드라이버 설정에서 '수직 동기(V-Sync)'를 '끄기'로 변경하면 개선될 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 및 그래픽 디자인 기술 포럼",
+      "source_url": "https://dasoda.pe.kr/design/photoshop/798/%ED%8F%AC%ED%86%A0%EC%83%B5cc%EC%97%90%EC%84%9C-%EC%99%80%EC%BD%A4-%ED%83%80%EB%B8%94%EB%A0%9B-%ED%95%84%EC%95%95%EC%9D%B4-%EC%9D%B4%EC%83%81%ED%95%A0-%EB%95%8C/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "그래픽 태블렛",
+        "line": "모든 펜 입력 태블렛",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "V-Sync를 끄면 화면 티어링(화면 갈라짐)이 나타날 수 있으나, 타블렛 입력에서는 이것이 훨씬 덜 중요하다. V-Sync 해제 후에도 지터가 지속되면 타블렛 드라이버를 최신 버전으로 업데이트한다.",
+      "cautionSource": "사용자 보고"
+    },
+    {
+      "id": "graphics-tablet-pen-tip-wear-detection-replacement",
+      "claim": "펜으로 길게 그은 선이 점점 희미해지거나 인식이 약해진다면, 펜촉(니브)이 마모되었을 가능성이 크다. 펜촉은 소모품이므로 정기적으로 교체해야 한다. 대부분의 제조사는 펜촉을 따로 판매한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제조사 제품 설명서 및 사용자 보고",
+      "source_url": "https://huionshop.com/FAQ/?bmode=view&idx=889094",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "와콤·펜타블렛·휴이온 등",
+        "category": "그래픽 태블렛",
+        "line": "모든 펜 태블렛",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "펜촉 교체 전에 먼저 드라이버를 완전히 제거했다가 다시 설치한 후 인식이 개선되는지 확인하는 것이 좋다. 펜촉 교체는 마지막 수단이다.",
+      "cautionSource": "사용자 보고"
+    },
+    {
+      "id": "graphics-tablet-usb-cable-inspection-connection",
+      "claim": "펜 태블렛이 간헐적으로 인식되지 않거나 연결이 끊기면 USB 케이블의 접촉 상태를 확인해야 한다. USB 포트에 이물질(먼지, 섬유)이 끼어 있으면 핀셋이나 면봉으로 조심스럽게 제거한다. 케이블 자체가 손상되었으면(끊김, 구부러짐) 교체가 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기본적인 USB 장치 관리 가이드 및 사용자 보고",
+      "source_url": "https://www.dell.com/support/kbdoc/ko-kr/000132048/usb-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "그래픽 태블렛",
+        "line": "모든 USB 유선 펜 태블렛",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "포트 청소 시 강한 힘을 주지 말고, 액체(물, 알코올)를 사용하지 말아야 한다. 포트 손상이 심하면 공식 수리 센터에 맡겨야 한다.",
+      "cautionSource": "기본 전자기기 관리 지침"
+    },
+    {
+      "id": "graphics-tablet-driver-uninstall-reinstall-clean-boot",
+      "claim": "드라이버 업데이트나 USB 포트 변경으로도 펜이 인식되지 않으면, 기존 드라이버를 완전히 제거하고 다시 설치해야 한다. 제어판 > 프로그램 제거에서 타블렛 드라이버를 찾아 완전 제거한 후, PC를 재부팅하고 제조사 웹사이트에서 최신 드라이버를 다시 설치한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "와콤 공식 지원 및 펜타블렛 제조사 지원",
+      "source_url": "https://support.wacom.com/hc/en-us/sections/360011600754-Wacom-Driver-Troubleshooting",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "와콤·펜타블렛·휴이온 등",
+        "category": "그래픽 태블렛",
+        "line": "모든 드라이버식 펜 태블렛",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "드라이버 제거 후 재부팅 전에, 제조사 웹사이트에서 최신 버전을 미리 다운로드해 놓는 것이 좋다. 설치 중에 인터넷이 필요할 수 있기 때문이다.",
+      "cautionSource": "사용자 경험"
+    },
+    {
+      "id": "graphics-tablet-device-manager-unknown-device-check",
+      "claim": "그래픽 태블렛이 장치 관리자에 '알 수 없는 장치' 또는 '기타 기기'로 표시되면, 드라이버가 제대로 인식되지 않은 것이다. 해당 장치를 우클릭한 후 '드라이버 업데이트' > '컴퓨터에서 드라이버 찾아보기'를 선택해 제조사에서 받은 드라이버 파일의 경로를 지정하면 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Windows 공식 지원 및 제조사 가이드",
+      "source_url": "https://support.wacom.com/hc/en-us/sections/360011600754-Wacom-Driver-Troubleshooting",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "그래픽 태블렛",
+        "line": "모든 USB 펜 태블렛",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "드라이버 파일이 .inf 확장자인지 확인한다. 없으면 제조사의 설정 프로그램을 실행해 드라이버를 자동 설치하는 것이 안전하다.",
+      "cautionSource": "사용자 경험"
+    }
+  ]
+}

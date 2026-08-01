@@ -1,0 +1,317 @@
+{
+  "topic": "USB 마이크·콘덴서 마이크 소리 안 들림·잡음 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "usb-mic-not-recognized-physical-connection",
+      "claim": "USB 마이크가 Windows에서 인식되지 않을 때 먼저 USB 케이블이 컴퓨터에 제대로 연결되어 있는지 확인한다. 느슨한 연결이나 접촉 불량이 인식 불가의 가장 흔한 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support — Fix microphone problems",
+      "source_url": "https://support.microsoft.com/en-us/windows/fix-microphone-problems-5f230348-106d-bfa4-1db5-336f35576011",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB 마이크",
+        "line": "모든 USB 마이크",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-mic-different-port-troubleshooting",
+      "claim": "USB 마이크가 한 포트에서는 인식되지 않으면 다른 USB 포트에 다시 꽂아본다. 특정 USB 포트의 접촉 불량이나 전원 공급 부족이 원인일 수 있다. 데스크탑이면 후면 포트, 노트북이면 양쪽 옆면 포트를 번갈아 시도한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support — Fix microphone problems",
+      "source_url": "https://support.microsoft.com/en-us/windows/fix-microphone-problems-5f230348-106d-bfa4-1db5-336f35576011",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB 마이크",
+        "line": "모든 USB 마이크",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-mic-device-manager-driver-update",
+      "claim": "Windows 장치 관리자에서 마이크를 찾을 수 없으면, 드라이버를 업데이트해야 한다. Windows 키 + X를 눌러 '장치 관리자'를 열고, '오디오 입출력' 또는 '기타 기기' 섹션에서 해당 장치를 우클릭한 후 '드라이버 업데이트'를 선택한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support — Fix microphone problems",
+      "source_url": "https://support.microsoft.com/en-us/windows/fix-microphone-problems-5f230348-106d-bfa4-1db5-336f35576011",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB 마이크",
+        "line": "모든 USB 마이크 (Windows)",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-mic-default-recording-device-windows-settings",
+      "claim": "USB 마이크가 인식되었지만 소리가 안 들어오면, Windows 설정에서 그 마이크가 '기본 입력장치'로 설정되어 있는지 확인해야 한다. Windows 11은 설정 > 시스템 > 음향 > '입력' 섹션에서 드롭다운을 열어 USB 마이크를 선택한다. 이 설정을 하지 않으면 내장 마이크나 다른 기기가 우선되어 USB 마이크가 작동하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support — Fix microphone problems",
+      "source_url": "https://support.microsoft.com/en-us/windows/fix-microphone-problems-5f230348-106d-bfa4-1db5-336f35576011",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB 마이크",
+        "line": "모든 USB 마이크 (Windows)",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-mic-gain-zero-no-sound",
+      "claim": "USB 마이크가 인식되고 기본 입력장치로 설정되었는데도 소리가 안 나면, 마이크 게인(입력 레벨)이 0으로 설정되어 있을 가능성이 크다. '입력' 섹션에서 해당 마이크를 선택하고 '기기 속성'을 클릭한 후 'Levels' 탭을 열면 'Microphone' 슬라이더를 확인할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support — Fix microphone problems; Hollyland Store guide",
+      "source_url": "https://support.microsoft.com/en-us/windows/fix-microphone-problems-5f230348-106d-bfa4-1db5-336f35576011",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB 마이크",
+        "line": "모든 USB 마이크 (Windows)",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-mic-gain-adjustment-slider-position",
+      "claim": "Levels 탭의 'Microphone' 슬라이더를 중간값(50~100) 범위로 조정한다. 슬라이더가 맨 왼쪽(0)에 있으면 소리를 전혀 받지 못한다. '마이크 부스트(Microphone Boost)' 슬라이더가 있으면 조용한 마이크의 경우 +10dB 단위로 증가시켜 시도해볼 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support — Fix microphone problems; Hollyland Store guide",
+      "source_url": "https://support.microsoft.com/en-us/windows/fix-microphone-problems-5f230348-106d-bfa4-1db5-336f35576011",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB 마이크",
+        "line": "모든 USB 마이크 (Windows)",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "일부 Windows 11 버전에서는 마이크 부스트 옵션이 '고급 옵션' 또는 '레거시 사운드 제어판'에서만 제공될 수 있다.",
+      "cautionSource": "Microsoft Support 문서에서 Windows 11과 고급 옵션 언급"
+    },
+    {
+      "id": "usb-mic-test-input-verification",
+      "claim": "게인을 조정한 후 확인하려면 설정 > 시스템 > 음향 > '입력' 섹션에서 '마이크 테스트'를 실행한다. 마이크에 대고 말할 때 표시되는 선이 왼쪽에서 오른쪽으로 움직이면 정상 작동 중이다. 선이 움직이지 않으면 게인이 여전히 낮거나 마이크가 인식되지 않은 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support — Fix microphone problems",
+      "source_url": "https://support.microsoft.com/en-us/windows/fix-microphone-problems-5f230348-106d-bfa4-1db5-336f35576011",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB 마이크",
+        "line": "모든 USB 마이크 (Windows)",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-mic-noise-hum-ground-loop-source",
+      "claim": "USB 마이크에서 저음의 윙윙거림(60Hz/50Hz 허밍)이나 지직거리는 잡음이 나면 그라운드 루프 간섭이 원인일 수 있다. 특히 노트북 충전기의 전원 노이즈가 USB 마이크의 아날로그 회로로 전달되면서 발생한다. 이는 마이크 고장이 아니라 전기적 그라운드가 서로 다른 두 기기 간의 신호 간섭이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HiFiMe Audio — Fix USB Audio Noise, Hum and Ground Loops",
+      "source_url": "https://hifimediy.com/2026/05/fix-usb-audio-noise/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB 마이크",
+        "line": "모든 USB 마이크",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-mic-noise-different-port-solution",
+      "claim": "USB 마이크에서 잡음이 나면 먼저 다른 USB 포트에 꽂아본다. 노트북의 충전 포트와 가까운 USB 포트에서 전원 간섭이 심할 수 있으므로, 충전기에서 멀리 떨어진 포트를 시도한다. 데스크탑이면 후면 I/O 포트를 사용하고, USB 허브는 불필요한 경우 제거한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HiFiMe Audio — Fix USB Audio Noise, Hum and Ground Loops",
+      "source_url": "https://hifimediy.com/2026/05/fix-usb-audio-noise/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB 마이크",
+        "line": "모든 USB 마이크",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-mic-noise-test-another-computer",
+      "claim": "USB 마이크의 잡음이 특정 포트 변경으로도 없어지지 않으면, 다른 컴퓨터에서 같은 마이크를 테스트해본다. 다른 컴퓨터에서 잡음이 없으면 문제는 원래 컴퓨터의 그라운드 루프 또는 전원 환경이다. 같은 잡음이 나타나면 마이크 자체 결함일 가능성이 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HiFiMe Audio — Fix USB Audio Noise, Hum and Ground Loops",
+      "source_url": "https://hifimediy.com/2026/05/fix-usb-audio-noise/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB 마이크",
+        "line": "모든 USB 마이크",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-mic-noise-ground-loop-isolator",
+      "claim": "USB 마이크 잡음이 그라운드 루프 간섭 때문이라고 확정되면 USB 그라운드 루프 아이솔레이터(예: iFi iDefender 3.0 같은 전용 장치)를 USB 케이블 사이에 연결하면 잡음을 크게 줄일 수 있다. 이 장치는 USB 신호의 접지점을 분리해 간섭을 차단한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 및 기술 포럼 보고 (Amazon reviews, Sound on Sound forum)",
+      "source_url": "https://hifimediy.com/2026/05/fix-usb-audio-noise/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB 마이크",
+        "line": "모든 USB 마이크",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-mic-echo-latency-causes",
+      "claim": "USB 마이크 사용 중 본인 음성이 헤드폰에서 에코처럼 들리면 마이크 모니터링 지연 때문이다. USB 마이크는 아날로그 신호를 디지털로 변환하는 과정에서 수 밀리초(ms)의 지연이 발생한다. 이것이 축적되면 자신의 음성이 약간 뒤처진 상태로 들린다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Audio-Technica Support — How to Eliminate Echo When Using USB Microphone; RØDE — Solving Echo Issues with USB Microphone Zero-Latency Monitoring",
+      "source_url": "https://www.audio-technica.com/en-us/support/audio-solutions-question-of-the-week-how-can-i-eliminate-echo-when-using-my-usb-microphone",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB 마이크",
+        "line": "모든 USB 마이크",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-mic-echo-solution-disable-monitoring",
+      "claim": "마이크 에코를 없애는 가장 간단한 방법은 '입력 모니터링'을 끄는 것이다. 대부분의 녹음 또는 통화 애플리케이션(OBS, Audacity, Zoom, Teams)에는 '마이크 모니터링' 또는 '직접 모니터링' 옵션이 있다. 이를 비활성화하면 본인의 음성이 헤드폰으로 다시 들리지 않는다. 이미 녹음된 음성은 스피커나 헤드폰으로 재생되므로 영향이 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Audio-Technica Support — How to Eliminate Echo When Using USB Microphone",
+      "source_url": "https://www.audio-technica.com/en-us/support/audio-solutions-question-of-the-week-how-can-i-eliminate-echo-when-using-my-usb-microphone",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB 마이크",
+        "line": "모든 USB 마이크",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-mic-echo-disable-enhancements-windows",
+      "claim": "Windows 설정의 음향 효과가 에코를 유발할 수 있다. 설정 > 시스템 > 음향 > 마이크 '기기 속성' > 'Enhancements' 탭에서 음향 효과를 모두 비활성화한다. 특히 '에코 제거(Acoustic Echo Cancellation)'나 '노이즈 서프레션(Noise Suppression)' 옵션이 있으면 체크를 해제한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support — Fix microphone problems; TechBloat guide",
+      "source_url": "https://support.microsoft.com/en-us/windows/fix-microphone-problems-5f230348-106d-bfa4-1db5-336f35576011",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB 마이크",
+        "line": "모든 USB 마이크 (Windows)",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-mic-app-echo-cancellation-settings",
+      "claim": "각 애플리케이션(Zoom, Teams, Discord, OBS 등)은 자체 에코 제거 설정을 가지고 있다. 여러 애플리케이션의 에코 제거 기능이 동시에 활성화되면 처리 지연이 누적되어 에코가 더 심해질 수 있다. 한 가지 주의점은 애플리케이션의 에코 제거를 끄고 Windows의 Enhancements를 하나만 활성화하는 것이 가장 깔끔하다는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Q&A — How to add options like Noise Suppression and Acoustic Echo Cancellation",
+      "source_url": "https://learn.microsoft.com/en-us/answers/questions/3756154/how-to-add-options-like-noise-suppression-and-acou",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB 마이크",
+        "line": "모든 USB 마이크 (Windows)",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-condenser-mic-characteristics",
+      "claim": "USB 콘덴서 마이크는 고감도 설계로 미세한 음성도 포착하지만, 주변 소음에도 민감하다. 카디오이드(Cardioid) 패턴 마이크는 마이크 정면의 음만 주로 수신하고 뒤쪽은 억제하므로 배경 잡음을 줄일 수 있다. 슈퍼카디오이드(Supercardioid)는 수신각이 더 좁아서 고립된 음성만 원한다면 효과적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sonarworks Blog — Microphone Polar Patterns Guide; 제조사 제품 설명",
+      "source_url": "https://www.sonarworks.com/blog/learn/microphone-polar-patterns-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "콘덴서 마이크",
+        "line": "USB 콘덴서 마이크",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-mic-pop-filter-plosive-prevention",
+      "claim": "팝 필터는 파열음(Plosive: 'P', 'B', 'T' 등)으로 인한 저음 버스트 잡음을 방지한다. USB 콘덴서 마이크 구매 시 팝 필터가 포함되었는지 확인하고, 없다면 별도 구입해 마이크 정면 약 5~10cm 앞에 장착한다. 이것만으로도 녹음 품질이 크게 개선된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제조사 제품 가이드 및 Sonarworks Blog",
+      "source_url": "https://www.sonarworks.com/blog/learn/microphone-polar-patterns-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "콘덴서 마이크",
+        "line": "USB 콘덴서 마이크",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-mic-microphone-placement-direction",
+      "claim": "USB 카디오이드 마이크는 마이크의 정면(보통 다이어프램이 있는 쪽)에서 최고 감도를 갖는다. 음성을 녹음할 때는 항상 마이크 정면에서 약 10~15cm 거리에 위치해야 한다. 마이크 옆이나 뒤쪽에서 말하면 음량이 크게 줄어들고 음질이 나빠진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제조사 사용 설명서 및 오디오 전문가 가이드",
+      "source_url": "https://www.sonarworks.com/blog/learn/microphone-polar-patterns-guide",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "콘덴서 마이크",
+        "line": "USB 카디오이드 마이크",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "usb-mic-manufacturer-software-gain-control",
+      "claim": "일부 USB 마이크(특히 고급 모델)는 제조사 전용 소프트웨어를 제공하며, 이곳에서 Windows 설정보다 더 세밀한 게인 조정, EQ 설정, 패턴 전환이 가능하다. 구매 후 제조사 웹사이트에서 해당 모델의 전용 소프트웨어를 먼저 설치하고 사용하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Hollyland Store guide — Access and Configure Microphone Settings in Windows",
+      "source_url": "https://store.hollyland.com/blogs/creator-hub/access-and-configure-microphone-settings-in-windows",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB 마이크",
+        "line": "제조사 소프트웨어 지원 모델",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    }
+  ]
+}

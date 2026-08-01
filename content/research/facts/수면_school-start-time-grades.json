@@ -1,0 +1,29 @@
+{
+  "topic": "등교시간 변화와 청소년 학업성취·출석·정신건강",
+  "brand": "수면",
+  "article": "school-start-time-grades",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "school-start-times-alabama-policy-review",
+      "claim": "미국 앨라배마주의 학교 등교 시간 정책 검토에 따르면, 등교시간 변경이 청소년의 수면, 출석, 학업성취, 정신건강에 영향을 미치는 주요 요인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "J Sch Health · School Start Times in Alabama",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13043803/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년 발달",
+        "line": "학교 정책과 수면",
+        "years": "2026",
+        "region": "미국"
+      },
+      "caution": "이 팩트는 특정 주(앨라배마)의 정책 검토이므로, 다른 지역·국가의 등교시간 효과를 일반화할 때 주의가 필요하다.",
+      "cautionSource": "J Sch Health · School Start Times in Alabama"
+    }
+  ]
+}

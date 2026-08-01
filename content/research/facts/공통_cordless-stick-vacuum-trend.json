@@ -1,0 +1,292 @@
+{
+  "topic": "무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석",
+  "brand": "공통",
+  "article": "cordless-stick-vacuum-trend",
+  "captured": "2026-07-28",
+  "reused_facts": [
+    "dyson-battery-replacement-warning-signs",
+    "dyson-battery-replacement-coverage-two-years",
+    "dyson-battery-cost-varies-by-model",
+    "lg-battery-replacement-cost-official",
+    "samsung-battery-replacement-cost-and-cycle",
+    "samsung-battery-replacement-two-year-warranty",
+    "battery-charging-terminal-contact-cleaning",
+    "battery-charging-adapter-verification",
+    "battery-overheating-danger-external-shock",
+    "battery-safe-charge-level-storage",
+    "battery-long-term-storage-50-percent",
+    "battery-storage-environment-10-25c",
+    "battery-storage-separation-from-charger",
+    "battery-annual-reset-full-discharge",
+    "counterfeit-battery-long-term-risk",
+    "lg-battery-charge-percentage-led-indicators"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "suction-power-standard-ks-adoption-2026",
+      "claim": "무선청소기 흡입력 표기의 국가표준화가 2026년 초까지 완료될 예정이며, 국제표준(IEC)의 와트(W)와 ASTM의 에어와트(AW) 기준이 도입된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "산업통상자원부 국가기술표준원 / ZDNet Korea",
+      "source_url": "https://zdnet.co.kr/view/?no=20250918171734",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "전 모델",
+        "years": "2026~",
+        "region": "KR"
+      },
+      "caution": "표준화 이전 제품은 파스칼(Pa), 와트(W), 에어와트(AW) 등 혼합된 표기가 있어 직접 비교가 어렵다",
+      "cautionSource": "산업통상자원부 국가기술표준원 보도"
+    },
+    {
+      "id": "pascal-unit-vs-airwatt-suction-clarification",
+      "claim": "파스칼(Pa)은 기기 내부 압력 상태를 나타낼 뿐 외부 공기를 빨아들이는 흡입력과는 직접적 상관이 없으며, 실제 흡입력은 와트(W) 또는 에어와트(AW)로 표기되어야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국제표준(IEC) 정의 / 한국소비자원",
+      "source_url": "https://kinfor.kr/vacuum-specs/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "일부 제조사는 여전히 파스칼(Pa)을 주요 스펙으로 표기하고 있으나, 소비자는 와트(W) 또는 에어와트(AW) 수치를 기준으로 비교하는 것이 정확하다",
+      "cautionSource": "국제표준 및 소비자원 안내"
+    },
+    {
+      "id": "battery-mode-consumption-rate-strong-vs-basic",
+      "claim": "무선청소기의 강력(강풍) 모드는 기본(약풍) 모드 대비 배터리를 2~3배 빨리 소모한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "무선청소기 구매 가이드 / 소비자 비교 자료",
+      "source_url": "https://nosearch.com/contents/guide/living/cordless_vacuum_cleaner",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "다이슨·삼성·LG 현행 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "자동 흡입력 조절 기능이 있는 제품은 바닥 상태에 따라 세기를 자동으로 조절하므로 배터리 효율성이 높다",
+      "cautionSource": "무선청소기 사용 경험 기반 가이드"
+    },
+    {
+      "id": "battery-capacity-standard-2000-3000mah",
+      "claim": "무선청소기 배터리 용량 2,000mAh 이상이면 기본 성능을 충족하고, 3,000mAh 이상이면 넉넉한 지속시간을 제공한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "무선청소기 구매 가이드 / 사용자 비교 자료",
+      "source_url": "https://nosearch.com/recommendation/pick/living/cordless_vacuum_cleaner",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "다이슨·삼성·LG·샤크 등 현행 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "battery-runtime-basic-mode-30minutes-guideline",
+      "claim": "일반(약풍) 모드 기준 30분 이상 사용 가능한 배터리라면 원룸과 투룸 아파트 청소를 한 번에 완료할 수 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "무선청소기 구매 가이드 / 사용자 경험담",
+      "source_url": "https://www.aaro.kr/318/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "현행 모델 전반",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "거주 공간의 평수 × 0.5분을 평균 청소 시간으로 계산하면 필요한 배터리 지속시간을 예측할 수 있다. 예: 40평 아파트는 약 20분 필요",
+      "cautionSource": "사용자 경험 기반 청소 시간 계산법"
+    },
+    {
+      "id": "cordless-vacuum-market-dominance-trend",
+      "claim": "국내 청소기 시장에서 무선청소기가 대세가 되었으며, 판매량이 유선을 훨씬 뛰어넘고 브랜드와 종류도 매우 다양해졌다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "무선청소기 종합 가이드 / 시장 조사 자료",
+      "source_url": "https://nosearch.com/recommendation/overview/living/cordless_vacuum_cleaner",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "청소기",
+        "line": "전 유형",
+        "years": "2024~2026",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "corded-vacuum-strength-consistent-performance",
+      "claim": "유선청소기는 전원 공급이 안정적이라 일정하고 강력한 흡입력을 유지하며, 먼지가 많거나 카펫 청소에 특히 효과적이고 오랜 시간 사용해도 흡입력이 떨어지지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "청소기 종류별 비교 가이드",
+      "source_url": "https://kotopranking.com/vacuum-cleaner-guide-2026/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "유선청소기",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "cordless-vs-corded-usage-pattern-guideline",
+      "claim": "60㎡ 아파트에서 매일 5분씩 청소하는 스타일이면 무선청소기가, 100㎡ 집에서 주말에 한 번씩 대청소하는 스타일이면 유선청소기가 더 적합하다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "무선청소기 완벽 비교 가이드",
+      "source_url": "http://vworldsystem.dothome.co.kr/%EB%AC%B4%EC%84%A0%EC%B2%AD%EC%86%8C%EA%B8%B0-vs-%EC%9C%A0%EC%84%A0%EC%B2%AD%EC%86%8C%EA%B8%B0-%EC%99%84%EB%B2%BD-%EB%B9%84%EA%B5%90-2025-%EA%B5%AC%EB%A7%A4-%EA%B0%80%EC%9D%B4%EB%93%9C/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "청소기",
+        "line": "무선 vs 유선",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "개인의 생활 패턴·평수·반려동물 유무·예산·보관 공간 등을 종합적으로 고려해야 한다",
+      "cautionSource": "사용 패턴 기반 선택 가이드"
+    },
+    {
+      "id": "wet-mop-cordless-vacuum-trend-auto-empty-steam",
+      "claim": "2024년 이후 출시된 무선청소기에는 자동 먼지 비움 기능과 물걸레 기능을 탑재한 제품이 증가하고 있으며, 온수 자동세척 + 온풍 건조 + 스팀 살균 기능까지 포함한 모델이 인기를 얻고 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "2026년 무선청소기 추천 종합 분석 / 로보락 F25·LG A9S 신형 검토",
+      "source_url": "https://choicemon.com/cordless-vacuum-cleaner/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "물걸레 겸용 신규 모델",
+        "years": "2024~2026",
+        "region": "KR"
+      },
+      "caution": "스팀 살균 기능은 아이가 있는 집이나 반려동물 키우는 집에서 특히 선호되는 기능이다",
+      "cautionSource": "소비자 선호도 분석 자료"
+    },
+    {
+      "id": "wet-mop-cordless-vacuum-tradeoff-performance",
+      "claim": "물걸레 겸용 무선청소기는 흡입력이 좋은 제품은 물걸레가 부실하고, 물걸레가 좋은 제품은 흡입력이 약한 경향이 있으며, 둘 다 우수한 모델은 30만 원을 넘는다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "2026년 무선청소기 물걸레 겸용 모델 비교 분석",
+      "source_url": "https://mnworld.co.kr/entry/2026%EB%85%84-%EB%AC%B4%EC%84%A0-%EB%AC%BC%EA%B1%B8%EB%A0%88-%EC%B2%AD%EC%86%8C%EA%B8%B0-%EC%B6%94%EC%B2%9C-TOP-5-%EA%B0%80%EC%84%B1%EB%B9%84-%EB%81%9D%ED%8C%90%EC%99%95-%EB%B9%84%EA%B5%90",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "물걸레 겸용 모델",
+        "years": "2026 현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "개인의 우선순위(흡입력 vs 물걸레 성능)와 예산을 먼저 정한 후 선택해야 한다",
+      "cautionSource": "제품 비교 분석 결과"
+    },
+    {
+      "id": "cordless-vacuum-weight-guideline-3kg-or-less",
+      "claim": "무선청소기의 무게는 3kg 이하가 손목 부담을 최소화하는 기준이며, 3kg 이상인 제품은 장시간 사용 시 손목 피로가 누적될 수 있다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "무선청소기 구매 가이드 / 사용 편의성 분석",
+      "source_url": "https://nosearch.com/contents/guide/living/cordless_vacuum_cleaner",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "현행 판매 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "2.75kg 무게는 무거운 편이지만, 개인의 체력·청소 시간·주기에 따라 허용 범위가 달라진다",
+      "cautionSource": "사용 편의성 가이드"
+    },
+    {
+      "id": "cordless-vacuum-noise-level-decibel-range",
+      "claim": "시중 대부분의 무선청소기는 50cm 거리에서 72~86dB 사이의 소음을 내며, 강한 세기로 사용 시 80dB 이상으로 커진다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "무선청소기 소음 비교 분석 / 소비자 리뷰",
+      "source_url": "https://www.aaro.kr/112/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "현행 판매 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "같은 데시벨 수치라도 저음역대의 묵직한 소리는 상대적으로 덜 거슬리는 경향이 있으므로, 단순 수치보다 음색을 확인하는 것이 중요하다",
+      "cautionSource": "소음 평가 기준 — 소리의 음색"
+    },
+    {
+      "id": "cordless-vacuum-noise-safe-level-for-sleeping-60db",
+      "claim": "아기가 자는 동안 청소 가능한 수준의 조용함을 원한다면 60dB 이하 모델을 선택하는 것이 권장된다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "소음 저감 무선청소기 추천 가이드",
+      "source_url": "https://www.aaro.kr/112/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "저소음 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "85dB 이상 소음에 장시간 노출되면 청력 손상이 우려될 수 있다. 10dB 차이만으로도 체감 소음은 2배 이상 차이가 난다",
+      "cautionSource": "청력 안전 기준 및 소음학"
+    },
+    {
+      "id": "dust-bin-vs-dust-bag-cordless-vacuum-comparison",
+      "claim": "무선청소기는 거의 모두 먼지통(필터형) 방식을 사용하며, 유선청소기에서 일반적인 먼지봉투 방식은 무선청소기에서는 거의 찾아볼 수 없다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "무선청소기 구매 가이드 / 제품 조사",
+      "source_url": "https://nosearch.com/contents/guide/living/cordless_vacuum_cleaner",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "현행 판매 모델 대부분",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "먼지통 방식은 필터 청소를 주기적으로 해야 하며, 먼지 배출 시 먼지가 날릴 수 있으므로 주의가 필요하다",
+      "cautionSource": "청소기 방식별 유지 관리 가이드"
+    },
+    {
+      "id": "cordless-vacuum-charging-dock-positioning-convenience",
+      "claim": "무선청소기의 거치대 충전 방식은 대부분 세로로 세운 형태이며, 거치대가 차지하는 공간이 작아 부엌 구석이나 거실 코너 같은 제한된 공간에도 설치 가능하다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "무선청소기 사용 경험 기반 가이드",
+      "source_url": "https://nosearch.com/recommendation/pick/living/cordless_vacuum_cleaner",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "현행 판매 모델 대부분",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "일부 고급 모델의 자동 먼지 비움 거치대는 전원과 배치(배수) 배관이 필요하므로 설치 위치 사전 계획이 필수다",
+      "cautionSource": "거치대 설치 가이드"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "topic": "액션캠(고프로·오즈모류) 전원 불량·녹화 안 됨·배터리·방수 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "video-speed-class-definition",
+    "4k-video-shooting-sd-card-requirement",
+    "camera-lens-cleaning-method",
+    "camera-lens-fog-condensation"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "action-cam-power-not-on-battery-restart",
+      "claim": "액션캠 전원이 켜지지 않을 때 첫 조치는 배터리를 분리하여 카메라와 배터리를 각각 식힌 후, Wi-Fi·GPS·음성명령을 끈 상태에서 다시 배터리를 장착하고 전원을 누르는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "GoPro Support · 카메라 배터리 충전 및 문제 해결",
+      "source_url": "https://community.gopro.com/s/article/GoPro-Camera-Will-Not-Power-On?language=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "고프로",
+        "category": "액션캠",
+        "line": "HERO 전 시리즈",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "배터리 과열로 전원이 차단되었을 수 있으므로, 충분히 냉각시킨 후에 재장착하는 것이 중요하다.",
+      "cautionSource": "GoPro Support · 배터리 과열 문제 해결"
+    },
+    {
+      "id": "action-cam-power-on-bacpac-accessory-removal",
+      "claim": "액션캠 전원이 안 켜질 때 BacPac 배터리나 터치백스크린 같은 외부 액세서리가 장착되어 있으면 분리하고 다시 시도해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "GoPro Support · 카메라 전원 문제 해결",
+      "source_url": "https://community.gopro.com/s/article/GoPro-Camera-Will-Not-Power-On?language=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "고프로",
+        "category": "액션캠",
+        "line": "HERO 시리즈 (외부 액세서리 지원 모델)",
+        "years": "2010~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "action-cam-recording-failed-sd-card-speed-class",
+      "claim": "액션캠에서 4K 영상이 녹화되지 않는 주요 원인은 SD카드의 쓰기 속도 부족이며, 4K 촬영에는 Video Speed Class V30(최소 30MB/s) 이상이 필수다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kingston Technology · 4K 비디오 촬영용 메모리 카드 선택 가이드",
+      "source_url": "https://www.kingston.com/en/blog/personal-storage/choose-storage-4k",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "액션캠",
+        "line": "4K 녹화 지원 모델",
+        "years": "2016~",
+        "region": "글로벌"
+      },
+      "caution": "V30 등급의 카드를 사용하더라도 고해상도 고프레임(예: 4K 60fps)에서는 V60 이상을 권장한다. 카드가 V30을 만족해도 카드 내부 손상이나 포맷 오류가 있으면 녹화가 중단될 수 있다.",
+      "cautionSource": "Kingston Technology · 4K 비디오 촬영용 메모리 카드 선택 가이드"
+    },
+    {
+      "id": "action-cam-recording-failed-recovery-steps",
+      "claim": "액션캠 녹화가 중단되거나 파일이 저장되지 않으면, 다른 호환 SD카드로 시도하고, 카메라 내 포맷 기능으로 메모리카드를 초기화한 후, 저해상도로 먼저 녹화해 저장이 정상인지 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "액션캠 사용자 커뮤니티 · 저장 및 녹화 오류 해결 가이드",
+      "source_url": "https://www.curator-danbi.co.kr/youtube/microsd-card-actioncam-camera-issues-solutions",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "액션캠",
+        "line": "SD카드 호환 모델",
+        "years": "2015~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "action-cam-overheating-shutdown-normal-function",
+      "claim": "액션캠이 과열로 인해 자동 종료되는 것은 전자기기 보호 메커니즘이며, 정상 기능이다. 고해상도 촬영(4K), HyperSmooth 손떨림 보정, GPS, Wi-Fi, 스크린 사용이 겹칠 때 발열이 누적되기 쉽다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "액션캠 사용자 커뮤니티 · 고프로 발열 문제 종합 분석",
+      "source_url": "https://yellowit.co.kr/it-review/%EA%B3%A0%ED%94%84%EB%A1%9C-%ED%9E%88%EC%96%B4%EB%A1%9C-12-%EB%B0%9C%EC%97%B4-%EB%AC%B8%EC%A0%9C-%EA%B3%A0%ED%94%84%EB%A1%9C-11-%EB%B9%84%EA%B5%90-%EC%84%B1%EB%8A%A5-%EA%B5%AC%EB%A7%A4%ED%95%B4/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "고프로",
+        "category": "액션캠",
+        "line": "HERO 11, 12, 13 등 최신 모델",
+        "years": "2021~",
+        "region": "글로벌"
+      },
+      "caution": "처리량이 큰 조합(HDR·5.3K60·4K120·Bluetooth 동시 사용)에서는 고급형 모델도 발열을 피할 수 없다. 과열 종료는 고장이 아니라 보호 기능이므로, 카메라를 식힌 후 다시 사용하면 된다.",
+      "cautionSource": "고프로 사용자 커뮤니티 · HERO 12·13 발열 실측"
+    },
+    {
+      "id": "action-cam-battery-cold-weather-voltage-drop",
+      "claim": "액션캠 배터리는 저온(특히 영하 환경)에서 화학반응 속도가 떨어져 순간적으로 전압이 내려갔다가, 온도가 올라가면 다시 회복된다. 이는 배터리 손상이 아닌 정상 현상이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "배터리 화학 · 저온 성능 원리",
+      "source_url": "https://blog.lgchem.com/2016/11/24_2_winter-battery-editor/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "리튬이온 배터리",
+        "line": "액션캠·카메라 내장 배터리",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "저온에서 배터리 용량 회복을 위해서는 손상 없이 자연스럽게 실내로 옮기거나, 내의 호주머니에 넣어 체온으로 데우는 방법을 권장한다. 급속 가열(드라이어, 난로)은 배터리 손상을 초래할 수 있다.",
+      "cautionSource": "배터리 전문 정보 · 저온 충전·사용 주의"
+    },
+    {
+      "id": "action-cam-battery-cold-performance-prevention",
+      "claim": "액션캠을 겨울이나 저온 환경에서 사용할 때는 배터리를 보온 케이스나 파우치로 감싸고, 촬영 직전까지 주머니에 넣어두어 온도를 유지하는 것이 배터리 성능 손실을 줄이는 방법이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "배터리 관리 가이드 · 저온 환경 대처",
+      "source_url": "https://gumbokkyung.com/%EA%B2%A8%EC%9A%B8%EC%B2%A0-%EC%A0%84%EA%B8%B0%EC%B0%A8-%EC%A3%BC%ED%96%89%EA%B1%B0%EB%A6%AC-%EB%8A%98%EB%A6%AC%EB%8A%94-%EB%B0%A9%EB%B2%95-5%EA%B0%80%EC%A7%80/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "배터리",
+        "line": "액션캠·외부 배터리",
+        "years": "전체",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "action-cam-housing-lens-fog-prevention-inserts",
+      "claim": "액션캠을 방수 하우징에 담아 수중에서 사용할 때 렌즈 안쪽에 응결이 생기는 것을 방지하기 위해, 고프로 공식 '김서림 방지 삽입물(Anti-Fog Inserts)'을 하우징 내부 양쪽 빈공간에 미리 끼워둔다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "GoPro · New Anti-Fog Inserts 액세서리 안내",
+      "source_url": "https://powercam.kr/product/%ED%8C%8C%EC%9B%8C%EC%BA%A0-%EA%B3%A0%ED%94%84%EB%A1%9C-%EA%B9%80%EC%84%9C%EB%A6%BC-%EB%B0%A9%EC%A7%80-%EB%B6%80%EC%86%8D-gopro-new-anti-fog-inserts/488/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "고프로",
+        "category": "액션캠",
+        "line": "방수 하우징 호환 모델",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "김서림 방지 삽입물은 일회용이므로 주기적으로 교체가 필요하다. 캠핑, 수상 활동 등 습기 많은 환경에서는 여분을 준비하는 것이 좋다.",
+      "cautionSource": "GoPro Anti-Fog Inserts 제품 설명"
+    },
+    {
+      "id": "action-cam-housing-waterproof-gasket-inspection",
+      "claim": "액션캠 방수 하우징 내부의 고무 패킹(O-ring 가스켓)이 손상되거나 오염되면 물이 침투하여 카메라가 고장날 수 있으므로, 사용 전후에 패킹 상태를 점검하고 이물질이 없는지 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "수상 액션캠 사용 가이드 · 커뮤니티 보고",
+      "source_url": "https://www.curator-danbi.co.kr/youtube/microsd-card-actioncam-camera-issues-solutions",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "액션캠",
+        "line": "방수 하우징 모델",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "패킹이 마르거나 갈라지면 즉시 교체해야 하며, 미세한 모래나 소금기도 누수를 일으킬 수 있다. 수심이 깊을수록(60m 이상) 패킹 점검의 중요성이 높아진다.",
+      "cautionSource": "수상 활동 커뮤니티 · 방수 하우징 누수 사례"
+    },
+    {
+      "id": "action-cam-app-wifi-disconnection-troubleshoot",
+      "claim": "액션캠 공식 앱(GoPro Quik)과의 Wi-Fi 연결이 끊기면, 먼저 카메라의 Wi-Fi를 재활성화하고, 앱을 강제 종료 후 재시작하고, 필요하면 기기와 카메라 모두에서 Bluetooth와 Wi-Fi를 다시 활성화해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "GoPro Support · Quik Wi-Fi 연결 끊김 문제 해결",
+      "source_url": "https://community.gopro.com/s/article/GoPro-Quik-Wi-Fi-Connection-Lost?language=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "고프로",
+        "category": "액션캠",
+        "line": "모든 HERO 시리즈",
+        "years": "2015~",
+        "region": "글로벌"
+      },
+      "caution": "Wi-Fi 연결 불안정은 환경적 간섭(2.4GHz 기타 기기), 카메라 펌웨어 버전, 또는 앱 버전 오래됨으로 인한 호환성 문제일 수 있다.",
+      "cautionSource": "GoPro Support 공식 문서"
+    },
+    {
+      "id": "action-cam-hypersmooth-stabilization-setting",
+      "claim": "액션캠의 손떨림 보정 기술 'HyperSmooth'는 고프로 HERO 모델의 전자식 손떨림 보정(EIS)이며, 설정에서 Autoboost가 아닌 'ON'으로 낮추면 배터리 소비를 줄이고 야간 촬영 불안정성을 완화할 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "고프로 사용자 커뮤니티 · 촬영 팁",
+      "source_url": "https://thelife.marketing/2023/03/24/%EA%B3%A0%ED%94%84%EB%A1%9C-%EC%B4%AC%EC%98%81-%ED%8C%80/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "고프로",
+        "category": "액션캠",
+        "line": "HERO 7 이후",
+        "years": "2018~",
+        "region": "글로벌"
+      },
+      "caution": "HyperSmooth의 최고 레벨(Autoboost)일수록 처리량이 커져 발열이 증가한다. 삼각대 사용 시에는 손떨림 보정을 완전히 끄는 것도 방법이며, 야간 촬영에서는 고급 레벨의 손떨림 보정이 오히려 잔상을 증가시킬 수 있다.",
+      "cautionSource": "고프로 사용자 커뮤니티 · 촬영 환경별 설정 가이드"
+    },
+    {
+      "id": "action-cam-hypersmooth-night-recording-limitation",
+      "claim": "액션캠의 전자식 손떨림 보정(HyperSmooth)은 야간이나 저조도 환경에서 충분한 빛이 부족하면 정상 작동하지 않아 화면이 심하게 흔들리거나 잔상이 생길 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "액션캠 사용자 커뮤니티 · 야간 촬영 문제 보고",
+      "source_url": "https://focusedfrantic.com/entry/2024%EB%85%84-%EC%95%A1%EC%85%98%EC%BA%A0-3%EB%8C%80%EC%9E%A5-%EB%B9%84%EA%B5%90-%EB%B6%84%EC%84%9D-%EA%B3%A0%ED%94%84%EB%A1%9C-%ED%9E%88%EC%96%B4%EB%A1%9C-12-DJI-%EC%98%A4%EC%A6%88%EB%AA%A8-%EC%95%A1%EC%85%98-4",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "고프로",
+        "category": "액션캠",
+        "line": "HERO 7 이후 (HyperSmooth 지원)",
+        "years": "2018~",
+        "region": "글로벌"
+      },
+      "caution": "야간 촬영이 필요하면 손떨림 보정을 낮추거나 끄고, 스탠드나 헤드램프 같은 보조 조명을 사용하는 것을 권장한다.",
+      "cautionSource": "액션캠 야간 촬영 사용자 보고"
+    },
+    {
+      "id": "action-cam-firmware-update-procedure",
+      "claim": "액션캠 펌웨어 업데이트는 제조사 웹사이트에서 수동으로 다운로드하여 메모리카드에 업로드하거나, 공식 앱을 통해 자동 업데이트할 수 있다. 블랙박스와 달리 액션캠은 더 빠른 자동 업데이트를 지원한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "고프로 사용 가이드 · 펌웨어 업데이트 절차",
+      "source_url": "https://lskyub.github.io/posts/gopro-setting/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "고프로",
+        "category": "액션캠",
+        "line": "모든 HERO 시리즈",
+        "years": "2015~",
+        "region": "글로벌"
+      },
+      "caution": "펌웨어 업데이트 중에는 절대 전원을 차단하지 않아야 하며, 업데이트 전에 배터리가 충분히 충전되어 있고 메모리카드에 충분한 용량이 있는지 확인해야 한다.",
+      "cautionSource": "고프로 펌웨어 업데이트 안전 주의"
+    }
+  ]
+}

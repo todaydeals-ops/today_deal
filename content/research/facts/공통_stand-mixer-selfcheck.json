@@ -1,0 +1,259 @@
+{
+  "topic": "스탠드믹서·반죽기 작동 불량 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "no-power-outlet-check",
+      "claim": "스탠드믹서가 켜지지 않을 때는 먼저 다른 기기를 같은 콘센트에 꽂아 콘센트 정상 작동을 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KitchenAid Product Help - Not Turning On",
+      "source_url": "https://producthelp.kitchenaid.com/Countertop_Appliances/Stand_Mixers/Tilt_Head_Mixer/Operation/Not_Turning_On_-_Stand_Mixer",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스탠드믹서",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "thermal-overload-cooldown",
+      "claim": "스탠드믹서의 열 과부하 보호장치가 작동하면 20~30분 냉각 후 다시 켜진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KitchenAid Official Guidance",
+      "source_url": "https://producthelp.kitchenaid.com/Countertop_Appliances/Stand_Mixers/Tilt_Head_Mixer/Operation/Not_Turning_On_-_Stand_Mixer",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스탠드믹서",
+        "region": "글로벌"
+      },
+      "caution": "작동 중 갑자기 멈추면 과부하이므로 강제로 켜려 하지 말 것",
+      "cautionSource": "KitchenAid Product Help"
+    },
+    {
+      "id": "dough-maximum-continuous-time",
+      "claim": "무거운 반죽은 최대 10분 연속 혼합, 가벼운 반죽이나 크림류는 최대 20분 연속 혼합이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KitchenAid Official Guidance",
+      "source_url": "https://kitchprep.com/how-long-can-you-run-kitchenaid-mixer-continuously/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스탠드믹서",
+        "line": "무거운 반죽",
+        "region": "글로벌"
+      },
+      "caution": "10분을 초과하면 열 과부하 보호장치가 작동할 수 있음",
+      "cautionSource": "KitchenAid Official"
+    },
+    {
+      "id": "beater-bowl-clearance-adjustment",
+      "claim": "반죽이 섞이지 않을 때는 비터와 볼 사이의 높이를 조정한다. 조정 나사를 ¼바퀴 미만 돌려 재료가 밑바닥에 남지 않게 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KitchenAid Product Help - Adjust Beater to Bowl Clearance",
+      "source_url": "https://producthelp.kitchenaid.com/Countertop_Appliances/Stand_Mixers/Product_Info/Stand_Mixer_Assembly_and_Operation/Adjust_the_Beater_to_Bowl_Clearance",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스탠드믹서",
+        "line": "플랫 비터",
+        "region": "글로벌"
+      },
+      "caution": "¼바퀴 이상 돌리면 안 되며, 2003년 4월 이후 제조 일부 모델은 반대 방향 조정이 필요할 수 있음. 1980년 이전 모델은 조정 나사가 없어 서비스 센터 방문 필요",
+      "cautionSource": "KitchenAid Product Help - Adjust Beater to Bowl Clearance"
+    },
+    {
+      "id": "beater-height-signs",
+      "claim": "비터가 너무 높으면 재료가 볼 밑바닥에 남고, 너무 낮으면 비터가 볼 바닥을 긁으며 손상된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KitchenAid Product Help - Adjust Beater to Bowl Clearance",
+      "source_url": "https://producthelp.kitchenaid.com/Countertop_Appliances/Stand_Mixers/Product_Info/Stand_Mixer_Assembly_and_Operation/Adjust_the_Beater_to_Bowl_Clearance",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스탠드믹서",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "dough-splashing-speed-2",
+      "claim": "무거운 반죽 혼합 시 속도 2를 사용하면 반죽 튀어오름을 줄일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KitchenAid Official - Dough Mixing Instructions",
+      "source_url": "https://www.kitchenaid.com/content/dam/global/documents/202103/owners-manual-ksm90pswh.pdf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스탠드믹서",
+        "line": "무거운 반죽",
+        "region": "글로벌"
+      },
+      "caution": "초반에 반죽이 튈 수 있으므로 깊은 볼 사용 권장",
+      "cautionSource": "사용자 보고"
+    },
+    {
+      "id": "beater-rotation-stops-motor-running",
+      "claim": "모터는 작동하지만 비터가 회전하지 않으면 기어가 손상되었을 가능성이 높으므로 전문가 점검이 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KitchenAid Product Help - Beater Won't Turn or Stops",
+      "source_url": "https://producthelp.kitchenaid.com/Countertop_Appliances/Stand_Mixers/Tilt_Head_Mixer/Beater_Concerns/Beater_Won't_Turn_or_Stops_-_Stand_Mixer",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스탠드믹서",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "soft-start-feature",
+      "claim": "일부 스탠드믹서에는 소프트스타트 기능이 있어 시작 시 잠깐 멈춘 후 서서히 속도가 올라간다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KitchenAid Product Help - Beater Won't Turn or Stops",
+      "source_url": "https://producthelp.kitchenaid.com/Countertop_Appliances/Stand_Mixers/Tilt_Head_Mixer/Beater_Concerns/Beater_Won't_Turn_or_Stops_-_Stand_Mixer",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스탠드믹서",
+        "years": "현대 모델",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "foreign-object-gear-damage",
+      "claim": "측정 숟가락, 비터 허브 커버, 또는 딱딱한 재료가 비터와 헤드 사이에 끼면 기어가 손상될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KitchenAid Product Help - Beater Won't Turn or Stops",
+      "source_url": "https://producthelp.kitchenaid.com/Countertop_Appliances/Stand_Mixers/Tilt_Head_Mixer/Beater_Concerns/Beater_Won't_Turn_or_Stops_-_Stand_Mixer",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스탠드믹서",
+        "region": "글로벌"
+      },
+      "caution": "작동 중 손이나 주걱을 끼우지 말 것",
+      "cautionSource": "KitchenAid Product Help"
+    },
+    {
+      "id": "beater-replacement-availability",
+      "claim": "스탠드믹서용 비터는 플랫 비터, 도우 훅, 와이어 휩으로 개별 또는 세트로 교체할 수 있으며, 2018년부터 모든 비터가 식기세척기 안전 재질이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KitchenAid Product Help - Beater Care",
+      "source_url": "https://producthelp.kitchenaid.com/Countertop_Appliances/Stand_Mixers/Tilt_Head_Mixer/Cleaning_and_Maintenance/Beater_Care",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스탠드믹서",
+        "years": "2018~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "burnished-beater-maintenance",
+      "claim": "번리시드(코팅 없음) 알루미늄 비터는 즉시 세척 및 건조해야 산화를 방지할 수 있으며, 식기세척기 사용은 금지된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KitchenAid Product Help - Beater Care",
+      "source_url": "https://producthelp.kitchenaid.com/Countertop_Appliances/Stand_Mixers/Tilt_Head_Mixer/Cleaning_and_Maintenance/Beater_Care",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스탠드믹서",
+        "line": "번리시드 비터",
+        "region": "글로벌"
+      },
+      "caution": "즉시 말리지 않으면 산화되어 외관이 변할 수 있으나 성능에는 영향 없음",
+      "cautionSource": "KitchenAid Product Help - Beater Care"
+    },
+    {
+      "id": "stainless-beater-dishwasher-safe",
+      "claim": "스테인리스 스틸 비터, 도우 훅, 와이어 휩은 100% 식기세척기 안전이며 가장 오래 지속되는 재질이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KitchenAid Product Help - Beater Care",
+      "source_url": "https://producthelp.kitchenaid.com/Countertop_Appliances/Stand_Mixers/Tilt_Head_Mixer/Cleaning_and_Maintenance/Beater_Care",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스탠드믹서",
+        "line": "스테인리스 비터",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "wire-whip-drying",
+      "claim": "와이어 휩은 허브에 물이 고일 수 있으므로 손세척 후 즉시 건조해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KitchenAid Product Help - Beater Care",
+      "source_url": "https://producthelp.kitchenaid.com/Countertop_Appliances/Stand_Mixers/Tilt_Head_Mixer/Cleaning_and_Maintenance/Beater_Care",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스탠드믹서",
+        "line": "와이어 휩",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "head-tilt-caution",
+      "claim": "스탠드믹서 헤드를 내릴 때 손가락을 끼우지 않도록 주의해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KitchenAid Owner's Manual",
+      "source_url": "https://producthelp.kitchenaid.com/Countertop_Appliances/Stand_Mixers/Tilt_Head_Mixer/Operation/Not_Turning_On_-_Stand_Mixer",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스탠드믹서",
+        "region": "글로벌"
+      },
+      "caution": "끼임으로 인한 손상 위험",
+      "cautionSource": "KitchenAid Safety Guidelines"
+    },
+    {
+      "id": "beater-size-overcapacity",
+      "claim": "반죽 용량을 초과하면 모터가 과부하되어 가동이 멈추거나 열 과부하 보호장치가 작동한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KitchenAid Official Guidance",
+      "source_url": "https://producthelp.kitchenaid.com/Countertop_Appliances/Stand_Mixers/Tilt_Head_Mixer/Operation/Not_Turning_On_-_Stand_Mixer",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스탠드믹서",
+        "region": "글로벌"
+      },
+      "caution": "각 믹서 모델의 최대 반죽량을 매뉴얼에서 확인할 것",
+      "cautionSource": "KitchenAid Owner's Manual"
+    },
+    {
+      "id": "noise-investigation",
+      "claim": "스탠드믹서에서 기어 소리나 이상한 소음이 나면 이물질이 끼거나 기어가 손상되었을 가능성이 있으므로 즉시 멈추고 점검해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KitchenAid Product Help - Beater Won't Turn or Stops",
+      "source_url": "https://producthelp.kitchenaid.com/Countertop_Appliances/Stand_Mixers/Tilt_Head_Mixer/Beater_Concerns/Beater_Won't_Turn_or_Stops_-_Stand_Mixer",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "스탠드믹서",
+        "region": "글로벌"
+      }
+    }
+  ]
+}

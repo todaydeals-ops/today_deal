@@ -24,7 +24,7 @@
 .ul-sweep:hover::after { right: 0; }
 
 /* 유틸 바 */
-.mz-util { background: #16140f; color: #cdc6ba; font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: 0.5px; }
+.mz-util { background: #16140f; color: #cdc6ba; font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 11px; letter-spacing: 0.5px; }
 
 /* 마스트헤드 */
 .mz-mast { border-bottom: 1px solid rgba(22, 20, 15, 0.16); background: #f4efe7; }

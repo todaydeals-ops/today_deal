@@ -1,0 +1,240 @@
+{
+  "topic": "식기세척기 vs 손설거지 물·전기·경제성 팩트체크",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "dishwasher-residual-water-normal",
+    "dishwasher-rinse-aid-water-tension",
+    "dishwasher-rinse-aid-compartment",
+    "dishwasher-vinegar-rinse-warning"
+  ],
+  "declined_facts": [
+    { "id": "dishwasher-errorcode-water-leak", "why": "삼성 특정 에러코드. 이 조사의 절수·경제성 주제와 무관" },
+    { "id": "lg-errorcode-ie-water-inlet", "why": "LG 특정 에러코드. 절수·경제성 주제와 무관" },
+    { "id": "dishwasher-drain-filter-cleaning-frequency", "why": "관리 주기 정보. 물 사용량 절약과 무관" }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "dishwasher-water-consumption-korean-consumer",
+      "claim": "한국소비자원 실측 결과, 12인용 식기세척기 1회 물 사용량은 16.6리터로, 손설거지 101.2리터 대비 약 6배 적다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국소비자원 기준",
+      "source_url": "https://nosearch.com/contents/guide/kitchen/dish_washer",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "12인용 표준 모델", "years": "전 연식", "region": "KR" }
+    },
+    {
+      "id": "dishwasher-water-consumption-pusan-university",
+      "claim": "부산대학교 감각과학연구실 교수 연구 결과, 12인용 식기세척기 물 사용량은 약 14.3리터이고, 흐르는 물로 손설거지 시 평균 150리터로 10배 이상 많이 소비한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "부산대학교 감각과학연구실 — 식기세척기 vs 손설거지 비교 연구",
+      "source_url": "https://www.hankyung.com/article/2026011404577",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "12인용 표준 모델", "years": "전 연식", "region": "KR" },
+      "caution": "수치는 실험실 기준이며, 실제 손설거지의 물 사용량은 개인 습관(물 틀어놓기, 온수 사용)에 따라 훨씬 클 수 있다",
+      "cautionSource": "연구논문 원문 및 웹기사에서 '습관에 따라 편차' 명시"
+    },
+    {
+      "id": "hand-washing-running-water-consumption",
+      "claim": "흐르는 물로 손설거지 할 때 1회에 약 80~150리터의 물을 사용한다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "웹 커뮤니티 및 물 절약 가이드 자료",
+      "source_url": "https://mom-today.com/28",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "손설거지", "line": "일반 가정", "years": "전체", "region": "KR" },
+      "caution": "수치는 출처마다 편차가 크며(80~150ℓ), 물을 계속 틀어놓는 습관을 기준으로 한다. 물을 받아서 하면 20ℓ 내외로 현저히 줄일 수 있다",
+      "cautionSource": "한국수도공사·환경부 물절약 캠페인 자료에서 습관별 편차 명시"
+    },
+    {
+      "id": "hand-washing-bowl-method-water-saving",
+      "claim": "손설거지할 때 설거지통에 물을 받아서 하면 최소 20리터 수준으로 물 사용을 줄일 수 있으며, 이 방식은 흐르는 물 사용 대비 약 60% 절수 효과가 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아리수본부 및 각 지자체 상하수도사업소 물절약 안내",
+      "source_url": "https://arisu.seoul.go.kr/arisu_center/center16/seoulWater/201512/sub0702.html",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "손설거지", "line": "모든 가정", "years": "전체", "region": "KR" }
+    },
+    {
+      "id": "dishwasher-monthly-electricity-cost",
+      "claim": "식기세척기를 하루 1회 사용 시 월평균 전기료는 3,000~5,000원대이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국전력공사 기준 및 식기세척기 에너지 소비 실측",
+      "source_url": "https://eep.energy.or.kr/more/calculator.aspx",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "일반 가정용", "years": "전체", "region": "KR" },
+      "caution": "실제 비용은 전기요금 단가(시간대·계절별)와 제품 에너지등급에 따라 달라진다",
+      "cautionSource": "한국전력 요금표 기준"
+    },
+    {
+      "id": "dishwasher-power-consumption-per-cycle",
+      "claim": "식기세척기 1회 세척 시 평균 전력 소비량은 1.0~1.5 kWh이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식기세척기 제품 에너지 라벨 기준",
+      "source_url": "https://eep.energy.or.kr/more/calculator.aspx",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "일반 가정용", "years": "전체", "region": "KR" }
+    },
+    {
+      "id": "dishwasher-eco-mode-savings",
+      "claim": "식기세척기의 절약 모드(ECO)를 사용하면 표준 모드 대비 최대 30%까지 전기 소비를 줄일 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식기세척기 제품 매뉴얼 및 에너지 효율 기준",
+      "source_url": "https://nosearch.com/contents/guide/kitchen/dish_washer",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "ECO 기능 지원 모델", "years": "2010년 이후", "region": "KR" }
+    },
+    {
+      "id": "dishwasher-energy-grade-cost-difference",
+      "claim": "식기세척기 1등급과 5등급 제품의 연간 전기요금 차이는 약 3,000원 내외이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국에너지공단 에너지 효율 등급 기준",
+      "source_url": "https://eep.energy.or.kr/more/calculator.aspx",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "일반 가정용", "years": "현재 시판 모델", "region": "KR" }
+    },
+    {
+      "id": "hand-washing-hot-water-gas-cost",
+      "claim": "손설거지 시 온수를 사용하면 보일러가 점화되어 불필요한 가스 비용이 누적되며, 물을 계속 틀어놓는 습관은 냉수 사용 대비 가스 소비를 크게 증가시킨다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "한국가스안전공사 및 가정 에너지절약 가이드",
+      "source_url": "https://ebook4989.com/25/?bmode=view&idx=171221213",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "손설거지", "line": "온수 사용 가정", "years": "전체", "region": "KR" },
+      "caution": "정확한 가스비 증가액은 수도꼭지를 연 상태 지속 시간과 온수 사용 비율에 따라 달라진다",
+      "cautionSource": "한국가스공사의 가정용 가스 절약 안내"
+    },
+    {
+      "id": "dishwasher-pre-rinse-unnecessary",
+      "claim": "현대 식기세척기는 세척 능력이 우수하여 불필요한 애벌설거지는 오히려 식기세척기의 절수 이점을 낭비하는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국소비자원 식기세척기 사용 권장사항",
+      "source_url": "https://nosearch.com/contents/guide/kitchen/dish_washer",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "현행 모델", "years": "2015년 이후", "region": "KR" }
+    },
+    {
+      "id": "dishwasher-light-rinsing-necessary",
+      "claim": "식기세척기 사용 전 식기에 붙어 있는 큰 음식물 조각을 가벼운 물 헹굼으로 제거하는 것은 권장되나, 깊은 세척 단계의 애벌설거지는 불필요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자·삼성전자 식기세척기 사용설명서",
+      "source_url": "https://nosearch.com/contents/guide/kitchen/dish_washer",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "현행 모델", "years": "2015년 이후", "region": "KR" }
+    },
+    {
+      "id": "dishwasher-detergent-cost-tablet",
+      "claim": "식기세척기 고체형(타블렛) 세제는 1회 사용 기준 330~601원 범위의 가격대를 가지며, 올인원 형태는 별도 헹굼보조제 구입이 불필요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울경제 식기세척기 세제 가격 비교 기사",
+      "source_url": "https://www.sedaily.com/NewsView/2K781FYTDS",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기 세제", "line": "고체형", "years": "2024년 이후", "region": "KR" }
+    },
+    {
+      "id": "dishwasher-detergent-cost-liquid-powder",
+      "claim": "식기세척기 액체형·가루형 세제는 1회 사용 기준 89~233원 범위의 가격대로, 고체형보다 저렴하고 투입량 조절이 가능하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울경제 식기세척기 세제 가격 비교 기사",
+      "source_url": "https://www.sedaily.com/NewsView/2K781FYTDS",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기 세제", "line": "액체형·가루형", "years": "2024년 이후", "region": "KR" }
+    },
+    {
+      "id": "dishwasher-detergent-cost-range",
+      "claim": "시중 식기세척기 세제의 1회 사용 가격 범위는 최저 100원부터 최고 723원까지로 약 7배 이상 가격 차이가 난다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울경제 식기세척기 세제 가격 비교 기사",
+      "source_url": "https://www.sedaily.com/NewsView/2K781FYTDS",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기 세제", "line": "전 제품군", "years": "2024년", "region": "KR" }
+    },
+    {
+      "id": "dishwasher-partial-load-economy",
+      "claim": "식기세척기를 절반만 채워 자주 돌리거나 소용량(3~6인용) 기기를 사용할 경우, 고체형 세제보다 액체형 세제가 경제적이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식기세척기 세제 선택 가이드",
+      "source_url": "https://nosearch.com/contents/encyclopedia/kitchen/dish_washer/516",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "소용량 모델 또는 저빈도 사용", "years": "전체", "region": "KR" }
+    },
+    {
+      "id": "dishwasher-water-temperature-sanitization",
+      "claim": "식기세척기는 세척·헹굼 시 70~85°C의 고온수를 사용하여 대부분의 중온균(mesophile bacteria)을 살균할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식기세척기 제품 매뉴얼 및 위생 기준",
+      "source_url": "https://nosearch.com/contents/guide/kitchen/dish_washer",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "현행 모델", "years": "전체", "region": "KR" },
+      "caution": "완벽한 멸균(무균 상태)을 위해서는 120°C 이상의 열을 20분 이상 지속해야 하며, 식기세척기의 70~85°C는 일상 위생 수준에는 충분하지만 의료·식품 산업용 멸균과는 다르다",
+      "cautionSource": "미생물학 교과서 및 식품의약품안전처 위생 기준"
+    },
+    {
+      "id": "hand-washing-water-temperature",
+      "claim": "손설거지 시 일반적으로 사용하는 온수 온도는 40~45°C이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "보건·안전 기준 및 가정용 온수 설정 기준",
+      "source_url": "https://www.hankyung.com/article/2026011404577",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "손설거지", "line": "일반 가정", "years": "전체", "region": "KR" }
+    },
+    {
+      "id": "dishwasher-cleaning-efficiency-pusan-study",
+      "claim": "부산대학교 감각과학연구실 교수 연구 결과, 동일한 오염도의 식기를 대상으로 한 비교 실험에서 식기세척기의 세척 효율 평점은 91.7점으로 손설거지(73.3점)보다 현저히 높다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "부산대학교 감각과학연구실 — 식기세척기 vs 손설거지 비교 연구",
+      "source_url": "https://www.hankyung.com/article/2026011404577",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "12인용 표준 모델", "years": "전연식", "region": "KR" }
+    },
+    {
+      "id": "hand-washing-full-water-usage-annual",
+      "claim": "손설거지로 매일 약 80리터씩 사용할 경우 연간 약 29,200리터의 물을 소비한다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "웹 에너지절약 가이드 및 커뮤니티 자료",
+      "source_url": "https://mom-today.com/28",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "손설거지", "line": "흐르는 물 사용 기준", "years": "전체", "region": "KR" }
+    },
+    {
+      "id": "dishwasher-full-water-usage-annual",
+      "claim": "식기세척기를 매일 1회씩 사용하면 연간 약 4,380리터의 물을 소비한다(1회 12리터 기준)",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식기세척기 물 소비량 기준",
+      "source_url": "https://mom-today.com/28",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "12인용 표준 모델", "years": "전체", "region": "KR" }
+    },
+    {
+      "id": "water-usage-comparison-annual-ratio",
+      "claim": "손설거지(흐르는 물) 연간 29,200리터와 식기세척기 연간 4,380리터를 비교하면, 식기세척기가 손설거지 대비 약 87%의 물을 절약하는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기본 산술 계산(29,200ℓ - 4,380ℓ) / 29,200ℓ = 0.85",
+      "source_url": "https://mom-today.com/28",
+      "checked": "2026-07-21",
+      "scope": { "brand": "공통", "category": "식기세척기", "line": "연간 비교", "years": "전체", "region": "KR" }
+    }
+  ]
+}

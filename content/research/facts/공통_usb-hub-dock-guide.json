@@ -1,0 +1,295 @@
+{
+  "topic": "USB-C 허브·독, 어떻게 고르나? 스마트가이드",
+  "brand": "공통",
+  "article": "스마트가이드 예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "usb-30-backward-compatible-with-20",
+    "usb-port-color-identification",
+    "usb-3-speed-standards-summary"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "usb-hub-vs-dock-definition",
+      "claim": "USB-C 허브와 독의 기능적 차이는 없으며, 호칭상 허브는 휴대용(포트 추가용), 독은 책상 고정용(영구 설치)을 의도한 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CalDigit, Plugable, Anker 등 주요 제조사 제품 정의",
+      "source_url": "https://www.caldigit.com/usb-c-soho-dock/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB-C 주변기기",
+        "line": "허브·독 전제품",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "dp-alt-mode-definition",
+      "claim": "DP Alt Mode(DisplayPort Alternate Mode)는 USB-C 포트를 통해 영상 신호를 전송하는 기능으로, 노트북·태블릿이 DP Alt Mode를 지원해야만 외부 모니터를 USB-C 허브로 연결할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "BenQ 공식 DP Alt Mode 설명, Plugable 기술 문서",
+      "source_url": "https://www.benq.com/en-us/knowledge-center/knowledge/usb-c-introduction-what-is-dp-alt-mode.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB-C 주변기기",
+        "line": "모니터 출력 기능",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "DP Alt Mode를 지원하지 않으면 충전 포트로만 사용 가능하며, 모니터 연결이 불가능하다."
+    },
+    {
+      "id": "4k-60hz-requires-dp-alt-mode",
+      "claim": "4K 60Hz 해상도 출력을 원한다면 노트북이 DisplayPort 1.3 이상의 DP Alt Mode를 지원해야 한다. HDMI Alt Mode는 HDMI 1.4b 규격까지만 지원하며, 4K 30Hz가 최대이므로 4K 60Hz는 불가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "USB 기술 표준 및 HDMI Licensing Administrator 공식 스펙",
+      "source_url": "https://www.hdmi.org/spec/premiumcable",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB-C 주변기기",
+        "line": "모니터 4K 연결",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "HDMI Alt Mode만 지원하는 저가 허브로 4K 출력 시도 시 4K 30Hz로 자동 제한되어, 선명도는 높으나 영상이 버벅거릴 수 있다.",
+      "cautionSource": "ITWorld · USB-C 허브 4K 60Hz 규격 분석"
+    },
+    {
+      "id": "pd-passthrough-definition",
+      "claim": "PD 패스스루(Power Delivery Passthrough)는 USB-C 허브를 통해 노트북 충전과 데이터 전송을 동시에 수행하는 기능이다. 허브에 전원 어댑터를 연결한 후 노트북을 USB-C로 연결하면, 노트북 충전과 주변기기 사용이 동시에 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "USB Power Delivery 기술 표준 및 주요 허브 제조사 설명서",
+      "source_url": "https://www.ti.com/lit/eb/koky061/koky061.pdf?HQS=app-ipp-pwr-denusbc-bhp-ebook-null-kr",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB-C 주변기기",
+        "line": "PD 지원 허브·독",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "PD 패스스루는 허브의 전원 공급 용량이 충분해야 하므로, 최소 65W 이상의 PD 지원 어댑터와 함께 구매해야 한다.",
+      "cautionSource": "ITWorld · USB-C PD 기술 표준 및 충전기 선택 가이드"
+    },
+    {
+      "id": "usb-hub-bandwidth-sharing",
+      "claim": "USB-C 허브의 모든 포트는 호스트(노트북) 포트의 대역폭을 공유한다. 따라서 외장 SSD와 모니터, USB 기기를 동시에 연결하면 각각의 속도가 저하되며, 포트가 많을수록 각 포트가 사용 가능한 대역폭이 더 줄어든다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MakeUseOf, HowToGeek 기술 분석 + USB 표준 문서",
+      "source_url": "https://www.makeuseof.com/usb-hubs-have-a-big-limitation-shared-bandwidth/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB-C 주변기기",
+        "line": "다포트 허브",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "예를 들어 USB 3.1 Gen 2(10Gbps)를 지원하는 호스트 포트에 허브를 연결한 뒤, NVMe SSD(2,200MB/s) + 4K 모니터 + USB 오디오 인터페이스를 동시에 사용하면, SSD 속도가 크게 저하될 수 있다.",
+      "cautionSource": "MakeUseOf, Lention · USB-C 허브 대역폭 공유 실측 사례"
+    },
+    {
+      "id": "usb-hub-heat-generation",
+      "claim": "USB-C 허브는 특히 DP to HDMI 컨버터를 사용할 때, 또는 여러 고전력 장치를 동시에 연결할 때 발열이 발생하는 것이 정상이다. 따뜻한 정도에서 약간 뜨거운 수준까지 발열 범위가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Plugable 공식 기술 지원 문서",
+      "source_url": "https://kb.plugable.com/usb-hubs-cables-switches/my-usb-c-hub-is-getting-warm-hot,-is-this-normal",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB-C 주변기기",
+        "line": "모든 허브·독",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "발열은 정상이지만, 알루미늄·메탈 하우징 제품이 플라스틱 제품보다 열 분산이 우수하며, 장시간 사용 시 가끔 연결이 끊기는 현상이 보고되므로 주의가 필요하다.",
+      "cautionSource": "SLR클럽, 뽐뿌 커뮤니티 · 허브 장시간 사용 안정성 보고"
+    },
+    {
+      "id": "usb-hub-port-quality-matters",
+      "claim": "저가 또는 미지명 제조사 USB-C 허브는 저품질 칩셋을 사용하여 여러 장치를 동시에 연결했을 때 불안정한 연결이나 속도 저하가 심하게 나타난다. 신뢰할 수 있는 제조사(CalDigit, Plugable, Anker, Elgato 등) 제품 선택이 중요하다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "MakeUseOf, 사용자 커뮤니티 보고",
+      "source_url": "https://www.makeuseof.com/usb-hubs-have-a-big-limitation-shared-bandwidth/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB-C 주변기기",
+        "line": "저가 허브 vs 프리미엄 허브",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "포트 수가 많을수록 칩셋 품질이 중요해진다. 다중 장치 동시 사용이 필요하면 프리미엄 제품 선택을 권장한다."
+    },
+    {
+      "id": "macbook-dp-alt-mode-support",
+      "claim": "M1, M2, M3 칩이 탑재된 모든 MacBook Air 및 MacBook Pro는 Thunderbolt 3/4 또는 USB 4 포트를 통해 DisplayPort Alt Mode를 지원한다. 따라서 DP Alt Mode 호환 USB-C 허브로 외부 모니터 연결이 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support 공식 문서",
+      "source_url": "https://support.apple.com/en-us/109523",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "MacBook Air M1/M2/M3, MacBook Pro",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "M1, M2, M3 MacBook Air 및 13인치 MacBook Pro는 외부 모니터 1개만 지원하며, 14인치·16인치 Pro 모델은 여러 모니터 지원 가능하다.",
+      "cautionSource": "Apple Support · MacBook 포트 및 외부 디스플레이 지원 현황"
+    },
+    {
+      "id": "macbook-charging-power-requirement",
+      "claim": "MacBook Air는 45~60W PD 충전을 권장하며, MacBook Pro 14인치는 96W, 16인치는 140W USB-C 충전을 지원한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple MacBook 충전 사양 문서",
+      "source_url": "https://tidytipshub.com/%EB%A7%A5%EB%B6%81-%EC%B6%A9%EC%A0%84%EA%B8%B0-%EC%A2%85%EB%A5%98%EB%B3%84-%EC%B0%A8%EC%9D%B4%EC%A0%90-%EB%B9%84%EA%B5%90/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "애플",
+        "category": "노트북",
+        "line": "MacBook 전제품",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "허브 구매 시 USB-C PD 어댑터 용량(와트)을 반드시 확인해야 한다. MacBook Pro 16인치 사용 시 96W 이상의 PD 지원 어댑터 필수.",
+      "cautionSource": "Apple 공식 MacBook 충전 사양"
+    },
+    {
+      "id": "samsung-galaxy-book-charging-power",
+      "claim": "Samsung Galaxy Book 시리즈는 일반적으로 65W USB-C PD 충전을 지원한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung Galaxy Book 사양서",
+      "source_url": "https://it.rushmac.net/1626",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "삼성",
+        "category": "노트북",
+        "line": "Galaxy Book 전제품",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "Galaxy Book 모델에 따라 충전 사양이 다를 수 있으므로, 구매 전 정확한 사양을 확인할 것."
+    },
+    {
+      "id": "general-notebook-charging-power-guideline",
+      "claim": "일반적인 노트북 PD 충전 요구사항은 울트라북 45W, 표준 노트북 60W, 고성능 노트북 100W이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "USB PD 기술 표준 및 업계 권장사항",
+      "source_url": "https://www.itworld.co.kr/article/3562360",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "노트북",
+        "line": "일반 PC·노트북",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "허브 구매 시 자신의 노트북 필요 충전 전력을 확인하고, 그보다 20% 여유 있는 PD 어댑터를 선택하는 것이 권장된다(예: 60W 필요하면 75W 선택).",
+      "cautionSource": "ITWorld · USB-C PD 충전기 선택 가이드"
+    },
+    {
+      "id": "usb-c-hub-port-selection-guideline",
+      "claim": "일반 사용(문서 작업, 웹 서핑)에는 4포트 허브로 충분하지만, 영상 편집·음악 제작 등 고대역폭 작업이 필요하면 포트 수를 줄이고 품질 높은 제품을 선택하거나, 여러 허브를 연결하는 것이 나을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Lention, Anker 공식 가이드 및 기술 커뮤니티",
+      "source_url": "https://www.lention.com/blogs/news/usb-c-hub-slowdown-fix",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB-C 주변기기",
+        "line": "다포트 허브 선택",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "프로 워크플로우(4K 영상 처리, 고속 SSD 지속 쓰기)에는 Thunderbolt 3/4 독을 고려할 것."
+    },
+    {
+      "id": "usb-c-hub-monitor-output-power-consumption",
+      "claim": "USB-C 허브에서 HDMI 또는 DisplayPort로 모니터 출력 시 추가 전력 소비가 발생하며, 4K 60Hz 출력 시 약 30~50W 정도의 추가 전력이 필요할 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 보고 및 기술 커뮤니티",
+      "source_url": "https://ko.usbc-hub.com/blog/what-is-the-power-output-of-a-usb-c-to-hdmi-4k-60hz-adapter-704393.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB-C 주변기기",
+        "line": "모니터 출력 기능",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "노트북 충전 + 4K 모니터 출력 + 기타 장치를 동시에 사용할 때는 충분한 전원 어댑터(가급적 100W 이상)를 사용해야 병목 현상을 피할 수 있다.",
+      "cautionSource": "기술 커뮤니티 · 4K 60Hz 모니터 + PD 허브 전력 소비 실측 사례"
+    },
+    {
+      "id": "first-check-laptop-capabilities",
+      "claim": "USB-C 허브 구매 전 반드시 확인할 사항은 자신의 노트북이 1) DP Alt Mode를 지원하는지, 2) USB 3.1 Gen 2(10Gbps) 이상을 지원하는지, 3) 필요한 충전 와트수이다. 이 중 하나라도 확인 못 하면 허브 선택에 실패할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support, 업계 가이드 종합",
+      "source_url": "https://support.apple.com/en-us/109523",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB-C 주변기기",
+        "line": "허브 선택 사전 준비",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "DP Alt Mode 미지원 노트북으로는 아무리 비싼 허브를 사도 모니터를 연결할 수 없다. 구매 전에 노트북 사양서에서 DP Alt Mode 지원 여부를 반드시 확인할 것."
+    },
+    {
+      "id": "thunderbolt-3-4-vs-usb-c-compatibility",
+      "claim": "Thunderbolt 3/4 포트는 USB-C 물리 규격을 사용하며 하위 호환성을 갖춘다. 따라서 Thunderbolt 포트에 일반 USB-C 허브를 연결할 수 있지만, 역으로 USB-C 포트에 Thunderbolt 독을 연결하면 일부 기능이 제한될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Intel Thunderbolt 기술 표준 및 Apple Support",
+      "source_url": "https://support.apple.com/en-us/109523",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB-C 주변기기",
+        "line": "포트 호환성",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "고성능 독은 보통 Thunderbolt 규격으로 설계되어 있으므로, USB-C 포트 노트북 사용자는 반드시 USB-C 호환 제품을 선택할 것.",
+      "cautionSource": "CalDigit, Plugable 등 고성능 독 제조사 제품 사양 문서"
+    },
+    {
+      "id": "usb-c-hub-ethernet-speed-limitation",
+      "claim": "일부 USB-C 허브는 Ethernet 포트(1Gbps)를 포함하지만, USB 3.0 대역폭(5Gbps)을 통해 전달되므로 이론상 1Gbps까지만 네트워크 속도가 나온다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제조사 사양서 및 USB 기술 표준",
+      "source_url": "https://www.caldigit.com/usb-c-soho-dock/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "USB-C 주변기기",
+        "line": "랜포트 지원 허브",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "초고속 인터넷(초당 1Gbps 초과)이 필요하면 허브의 Ethernet 포트만으로는 충분하지 않으므로, 노트북의 WiFi 또는 별도 고속 어댑터 사용을 고려할 것."
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "topic": "헤어클리퍼(이발기) 자가점검·날 관리·오일링·청소·충전 불량",
+  "brand": "공통",
+  "article": "hair-clipper-selfcheck",
+  "captured": "2026-07-28",
+  "reused_facts": [
+    "charging-adapter-damage-check",
+    "power-outlet-verification"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "daily-oiling-after-use",
+      "claim": "헤어클리퍼는 매일 사용 후 칫솔질 날 끝에 2-3방울의 클리퍼 전용 오일을 떨어뜨려 윤활해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "VGR 전문가용 헤어클리퍼 유지보수 가이드",
+      "source_url": "https://www.cnvgr.com/how-to-clean-hair-clipper/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어클리퍼",
+        "line": "무선·유선식 전 라인",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "과도한 오일(2-3방울 이상)은 잘린 머리카락을 유착시키고 사용 중 불편함을 초래한다. 적절한 양의 오일 사용이 칼날 수명과 성능 유지의 핵심이다.",
+      "cautionSource": "VGR 공식 문서"
+    },
+    {
+      "id": "oiling-distribution-5-10sec-operation",
+      "claim": "오일을 떨어뜨린 후 클리퍼를 5-10초간 작동시켜 오일이 움직이는 날과 고정된 날 사이에 고르게 분산되도록 해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "VGR 전문가용 헤어클리퍼 유지보수 가이드",
+      "source_url": "https://www.cnvgr.com/how-to-clean-hair-clipper/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어클리퍼",
+        "line": "무선·유선식 전 라인",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "prohibited-lubricants-wd40-cooking-oil",
+      "claim": "헤어클리퍼에는 반드시 클리퍼 전용 오일만 사용해야 하며, WD-40이나 요리용유 같은 다른 윤활제를 사용하면 내부 부품이 손상된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "VGR 전문가용 헤어클리퍼 유지보수 가이드",
+      "source_url": "https://www.cnvgr.com/how-to-clean-hair-clipper/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어클리퍼",
+        "line": "무선·유선식 전 라인",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "대체 윤활제는 모터와 기어 손상, 고장 가능성을 높인다. 반드시 전문 제품을 사용하고, 모르면 제조사에 정품 오일을 구매해 사용할 것.",
+      "cautionSource": "VGR 공식 문서"
+    },
+    {
+      "id": "blade-disinfection-isopropyl-alcohol",
+      "claim": "헤어클리퍼의 날을 소독할 때는 70% 이소프로필 알코올(의료용 소독약)을 칼날 끝에 분사한 후 충분히 접촉 시간을 주고, 보풀 없는 천으로 완전히 건조시켜야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "VGR 전문가용 헤어클리퍼 유지보수 가이드",
+      "source_url": "https://www.cnvgr.com/how-to-clean-hair-clipper/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어클리퍼",
+        "line": "무선·유선식 전 라인",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "불완전한 건조는 칼날 생식과 부식을 초래한다. 전문 이발소 살균 스프레이를 사용해도 되지만, 70% 이소프로필 알코올이 가장 신뢰할 만한 살균 방법이다.",
+      "cautionSource": "VGR 공식 문서"
+    },
+    {
+      "id": "daily-hair-removal-during-use",
+      "claim": "헤어클리퍼를 사용할 때는 주기적으로 잘린 머리카락을 칼 부분에서 제거해야 성능이 저하되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "필립스 공식 헤어클리퍼 사용 가이드",
+      "source_url": "https://www.philips.co.kr/c-f/XC000019258",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "필립스",
+        "category": "헤어클리퍼",
+        "line": "회전식 클리퍼 전 라인",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "사용 중 머리카락 제거를 무시하면 모터 과열, 마찰 증가, 날 성능 저하가 가속화된다.",
+      "cautionSource": "필립스 공식 문서"
+    },
+    {
+      "id": "post-use-cleaning-mandatory",
+      "claim": "헤어클리퍼는 매번 사용 후 반드시 청소해야 머리카락 자투리와 잔해가 내부에 쌓이는 것을 방지할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "필립스 공식 헤어클리퍼 사용 가이드",
+      "source_url": "https://www.philips.co.kr/c-f/XC000019258",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "필립스",
+        "category": "헤어클리퍼",
+        "line": "회전식 클리퍼 전 라인",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "blade-cleaning-brush-method",
+      "claim": "헤어클리퍼 청소 시 뻣뻣한 브러시를 사용하여 칼날 사이 공간을 청소하고, 완벽한 청소를 위해서는 전원을 분리한 후 뻣뻣한 브러시나 압축 공기를 사용한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "VGR 전문가용 헤어클리퍼 유지보수 가이드",
+      "source_url": "https://www.cnvgr.com/how-to-clean-hair-clipper/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어클리퍼",
+        "line": "무선·유선식 전 라인",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "압축 공기 사용 시 공기 분사 방향에 주의해야 한다. 분무 방향이 잘못되면 머리카락과 이물질이 더 깊숙이 들어갈 수 있다. 칼날을 손상시키지 않도록 조심스럽게 다뤄야 한다.",
+      "cautionSource": "VGR 공식 문서"
+    },
+    {
+      "id": "charging-terminal-cleaning-contact-issue",
+      "claim": "무선 헤어클리퍼가 충전되지 않을 때 가장 흔한 원인은 충전 단자에 머리카락이나 먼지가 끼어 접촉이 불량한 것이므로, 마른 수건이나 부드러운 솔로 충전 단자를 깨끗이 청소해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 동영상 튜토리얼 및 제조사 Q&A",
+      "source_url": "https://www.youtube.com/watch?v=gCPvQmpz4vw",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어클리퍼",
+        "line": "무선식 전 라인",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "접촉식 충전 방식의 클리퍼에서 단자 오염은 흔한 고장 증상이다. 충전 단자 청소는 가장 먼저 시도해야 할 해결책이며, 이것만으로 대부분 해결된다.",
+      "cautionSource": "사용자 보고"
+    },
+    {
+      "id": "battery-depletion-timing-good-habit",
+      "claim": "무선 헤어클리퍼의 배터리를 오래 쓰려면 배터리가 완전히 방전될 때까지 사용하지 말고 정기적으로 충전해야 하며, 멈을 때까지 쓴 후 충전하는 습관은 배터리 수명을 크게 단축시킨다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 동영상 및 제조사 상담 기록",
+      "source_url": "https://www.youtube.com/watch?v=Von6ncWcynA",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어클리퍼",
+        "line": "충전식·배터리식 무선 전 라인",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "리튬배터리는 과방전(0%까지 완전히 방전)에 매우 약하다. 사용 후 20-30% 남은 상태에서 충전하는 것이 배터리 수명 연장의 핵심이다. 완전 방전이 반복되면 몇 개월 안에 용량이 급감한다.",
+      "cautionSource": "리튬배터리 관리 원칙"
+    },
+    {
+      "id": "motor-overheating-hair-buildup-prevention",
+      "claim": "헤어클리퍼의 모터 과열을 방지하려면 사용 중 머리카락 자투리를 제거하고 정기적으로 청소해야 한다. 내부 잔해가 쌓이면 마찰이 증가하고 모터가 과열될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "VGR 전문가용 헤어클리퍼 유지보수 가이드",
+      "source_url": "https://www.cnvgr.com/how-to-clean-hair-clipper/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어클리퍼",
+        "line": "무선·유선식 전 라인",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "모터 과열은 내부 부품 손상, 배터리 손상, 예기치 않은 자동 정지 등으로 이어진다. 장시간 사용이 필요하면 15-20분 사용 후 5분 휴식을 취하는 것이 권장된다.",
+      "cautionSource": "VGR 공식 문서"
+    },
+    {
+      "id": "blade-wear-symptom-pulling-uneven-cut",
+      "claim": "헤어클리퍼 날이 마모되면 머리카락을 당기는 느낌(pulling sensation)이 들고 깎임이 불균등해지며, 사용 시간이 더 오래 걸린다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 경험담 및 전문가 가이드",
+      "source_url": "https://www.cnvgr.com/how-to-clean-hair-clipper/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어클리퍼",
+        "line": "무선·유선식 전 라인",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": "이 증상이 나타나면 먼저 철저한 청소와 오일링을 시도해 본다. 개선되지 않으면 날 교체가 필요하다. 마모된 날로 계속 사용하면 피부 자극이 증가하고 모터에 추가 부담을 준다.",
+      "cautionSource": "사용자 보고"
+    },
+    {
+      "id": "regular-maintenance-extends-blade-life",
+      "claim": "정기적인 청소, 오일링, 소독 등의 유지보수는 칼날 수명을 연장하고 클리퍼의 최적 성능을 유지한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "VGR 전문가용 헤어클리퍼 유지보수 가이드",
+      "source_url": "https://www.cnvgr.com/how-to-clean-hair-clipper/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "헤어클리퍼",
+        "line": "무선·유선식 전 라인",
+        "years": "2010~",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

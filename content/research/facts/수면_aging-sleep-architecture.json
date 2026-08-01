@@ -1,0 +1,94 @@
+{
+  "topic": "노화에 따른 수면구조 변화",
+  "brand": "공통",
+  "article": "aging-sleep-architecture",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "slow-wave-sleep-reduction-aging",
+      "claim": "노화에 따라 서파수면(slow wave sleep, SWS) 밀도와 시간이 감소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Capurro L et al., Aging disrupts the temporal organization of slow oscillations beyond density reduction, PNAS Nexus",
+      "source_url": "https://doi.org/10.1093/pnasnexus/pgag108",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "노화 · 노인",
+        "years": "전체",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "slow-oscillation-temporal-organization-impairment",
+      "claim": "노화는 느린 진동(slow oscillation)의 밀도 감소를 넘어 시간적 조직 자체를 손상시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Capurro L et al., Aging disrupts the temporal organization of slow oscillations beyond density reduction, PNAS Nexus",
+      "source_url": "https://doi.org/10.1093/pnasnexus/pgag108",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "노화 · 노인",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "느린 진동의 손상은 단순한 수면시간 단축보다 더 깊은 수면 구조의 변화를 의미하므로, 노인의 수면 문제를 분석할 때 '얼마나 자느냐'보다 '어떻게 자는가'가 중요하다."
+    },
+    {
+      "id": "circadian-phase-advance-aging",
+      "claim": "노화에 따라 일주기 리듬이 앞당겨지는 위상전진(phase advance) 현상이 나타난다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "Bragazzi NL et al., The Complex Interplay Between Sleep and Healthy Aging: A Scoping Review, Nature Sleep Science",
+      "source_url": "https://doi.org/10.2147/nss.s555177",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "노화 · 노인",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "위상전진은 노인이 일찍 졸려지고 일찍 깨는 이유로 알려져 있으나, scoping review에서만 확인되었고 메커니즘 수준의 직접 증거는 별도 발굴 필요"
+    },
+    {
+      "id": "melatonin-sleep-rhythm-aging",
+      "claim": "노인은 수면-각성 리듬을 조절하는 멜라토닌 분비량이 감소하고 분비 시간이 변한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Drăgoi CM, Dumitrescu IB, Nicolae AC, Rhythms of life: melatonin, nutrition, sleep, and antioxidant strategies for healthy aging, Frontiers in Neuroscience",
+      "source_url": "https://doi.org/10.3389/fnins.2026.1736978",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "노화 · 노인",
+        "years": "전체",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "antioxidant-sleep-healthy-aging",
+      "claim": "항산화 전략과 영양이 수면을 통해 건강한 노화를 지원한다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Drăgoi CM, Dumitrescu IB, Nicolae AC, Rhythms of life: melatonin, nutrition, sleep, and antioxidant strategies for healthy aging, Frontiers in Neuroscience",
+      "source_url": "https://doi.org/10.3389/fnins.2026.1736978",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "노화 · 영양",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "메커니즘 리뷰이므로 임상 효과에 대해서는 개별 중재 시험 결과 참조 필요"
+    }
+  ]
+}

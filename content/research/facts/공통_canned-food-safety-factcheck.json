@@ -1,0 +1,219 @@
+{
+  "topic": "찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품",
+  "brand": "공통",
+  "article": "canned-food-safety-factcheck",
+  "captured": "2026-07-28",
+  "reused_facts": [
+    "consumption-date-definition",
+    "distribution-date-definition",
+    "safety-margin-difference",
+    "consumption-date-system-launch",
+    "spoilage-detection-odor",
+    "spoilage-detection-appearance",
+    "spoilage-detection-texture",
+    "unopen-prerequisite-for-consumption-date",
+    "expiration-not-equals-spoilage"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "small-dent-vs-deep-dent",
+      "claim": "통조림의 찌그러짐은 깊이에 따라 위험도가 달라진다. 모서리나 옆면의 얕고 작은 찌그러짐(1cm 미만, 움푹 파인 정도)은 진공 상태에 영향을 주지 않으므로 섭취 가능하지만, 깊게 들어간 찌그러짐(1cm 이상, 두드러지게 패인 부분)은 캔 내부의 진공 상태를 파괴할 가능성이 있어 폐기 권장.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위키푸디 '찌그러진 통조림 안전' + MSD 매뉴얼 통조림 보안",
+      "source_url": "https://www.wikifoodie.co.kr/news/articleView.html?idxno=2902",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품/주방",
+        "line": "통조림(모든 품목)",
+        "years": "2023~",
+        "region": "KR"
+      },
+      "caution": "1cm 기준은 선형 깊이이며, 실제로는 캔을 손가락으로 눌러 움직임이 없는지 확인. 움직이면 코팅이 손상되었을 가능성 있음.",
+      "cautionSource": "https://www.wikifoodie.co.kr/news/articleView.html?idxno=2902"
+    },
+    {
+      "id": "bulged-can-botulism-signal",
+      "claim": "부풀어오른 통조림(캔 뚜껑이나 옆면이 볼록하게 부은 상태)은 통조림 내부에서 보툴리누스균이 증식하며 생성한 가스의 신호이며, 매우 위험한 상태이므로 즉시 폐기해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 보툴리누스 중독 + 나무위키 보툴리누스균",
+      "source_url": "https://www.msdmanuals.com/ko/home/%EA%B0%90%EC%97%BC/%EB%B0%95%ED%85%8C%EB%A6%AC%EC%95%84-%EA%B0%90%EC%97%BC-%ED%98%90%EA%B8%B0%EC%84%B1-%EB%B0%95%ED%85%8C%EB%A6%AC%EC%95%84/%EB%B3%B4%ED%88%B4%EB%A6%AC%EB%88%84%EC%8A%A4-%EC%A4%91%EB%8F%85",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품/주방",
+        "line": "통조림(모든 품목)",
+        "years": "2023~",
+        "region": "KR"
+      },
+      "caution": "보툴리누스균은 무산소 환경에서만 번식. 부풀음은 이미 증식이 진행 중이라는 뜻. 가열해도 생성된 독소가 있으면 위험.",
+      "cautionSource": "https://www.msdmanuals.com/ko/home/%EA%B0%90%EC%97%BC/%EB%B0%95%ED%85%8C%EB%A6%AC%EC%95%84-%EA%B0%90%EC%97%BC-%ED%98%90%EA%B8%B0%EC%84%B1-%EB%B0%95%ED%85%8C%EB%A6%AC%EC%95%84/%EB%B3%B4%ED%88%B4%EB%A6%AC%EB%88%84%EC%8A%A4-%EC%A4%91%EB%8F%85"
+    },
+    {
+      "id": "botulism-toxin-heat-destruction",
+      "claim": "보툴리누스독소는 85℃ 이상의 온도에서 5분 이상 가열하면 대부분 파괴된다. 독소 자체는 비교적 쉽게 열에 파괴되지만, 보툴리누스균의 포자는 매우 열에 강하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 보툴리누스 중독 예방",
+      "source_url": "https://www.msdmanuals.com/ko/home/%EA%B0%90%EC%97%BC/%EB%B0%95%ED%85%8C%EB%A6%AC%EC%95%84-%EA%B0%90%EC%97%BC-%ED%98%90%EA%B8%B0%EC%84%B1-%EB%B0%95%ED%85%8C%EB%A6%AC%EC%95%84/%EB%B3%B4%ED%88%B4%EB%A6%AC%EB%88%84%EC%8A%A4-%EC%A4%91%EB%8F%85",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품/주강",
+        "line": "통조림(모든 품목)",
+        "years": "2023~",
+        "region": "KR"
+      },
+      "caution": "85℃ 5분 이상 가열은 이미 생성된 독소를 파괴하는 것일 뿐, 부풀어오른 캔(이미 독소 생성 완료 상태)을 안전하게 만들지는 않으므로 폐기 권장.",
+      "cautionSource": "https://www.msdmanuals.com/ko/home/%EA%B0%90%EC%97%BC/%EB%B0%95%ED%85%8C%EB%A6%AC%EC%95%84-%EA%B0%90%EC%97%BC-%ED%98%90%EA%B8%B0%EC%84%B1-%EB%B0%95%ED%85%8C%EB%A6%AC%EC%95%84/%EB%B3%B4%ED%88%B4%EB%A6%AC%EB%88%84%EC%8A%A4-%EC%A4%91%EB%8F%85"
+    },
+    {
+      "id": "botulism-anaerobic-environment",
+      "claim": "보툴리누스균(Clostridium botulinum)은 무산소(산소가 없는) 환경에서만 번식하며, 통조림 내부의 밀폐된 진공 상태가 이상적인 번식 조건이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "나무위키 보툴리누스균 + MSD 매뉴얼",
+      "source_url": "https://namu.wiki/w/%EB%B3%B4%ED%88%B4%EB%A6%AC%EB%88%84%EC%8A%A4%EA%B7%A0",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품/주강",
+        "line": "통조림(모든 품목)",
+        "years": "2023~",
+        "region": "KR"
+      },
+      "caution": "찌그러진 캔이나 새는 캔은 진공 상태가 손상되어 산소가 유입되므로, 오히려 보툴리누스 번식 위험이 감소한다. 위험은 (1) 깊은 찌그러짐으로 미세균열이 난 경우, (2) 원래 제조 과정에서 불완전한 가열·밀봉의 경우.",
+      "cautionSource": "https://namu.wiki/w/%EB%B3%B4%ED%88%B4%EB%A6%AC%EB%88%84%EC%8A%A4%EA%B7%A0"
+    },
+    {
+      "id": "can-internal-coating-epoxy-bpa",
+      "claim": "통조림 캔의 내부는 금속이 식품과 직접 접촉하는 것을 막기 위해 에폭시수지로 코팅되며, 에폭시수지의 원료에 환경호르몬인 비스페놀A(BPA)가 포함된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품음료신문 통조림 안전성 기사",
+      "source_url": "https://www.thinkfood.co.kr/news/articleView.html?idxno=49719",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품/주강",
+        "line": "통조림(모든 품목)",
+        "years": "2023~",
+        "region": "KR"
+      },
+      "caution": "한국과 EU의 통조림 BPA 기준은 0.6ppm 이하로 세계에서 가장 엄격하다. 미개봉 상태에서는 BPA 용출이 미미하지만, 개봉 후 공기 노출로 코팅이 손상되면 용출 위험이 증가한다.",
+      "cautionSource": "https://www.thinkfood.co.kr/news/articleView.html?idxno=49719"
+    },
+    {
+      "id": "acidic-food-can-corrosion",
+      "claim": "산도가 높은 식품(토마토소스, 오이 등 산성 통조림)은 캔 내부의 에폭시 코팅이 손상되었거나 노출된 금속 부분에서 부식을 촉발한다. 특히 주석 도금 캔은 음식의 염분·산성·산소와 반응하여 빠르게 녹슬기 시작한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품음료신문 + jjucubox 통조림 부식 기사",
+      "source_url": "https://www.thinkfood.co.kr/news/articleView.html?idxno=68275",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품/주강",
+        "line": "산성 통조림(토마토·오이·과일·식초 절임)",
+        "years": "2023~",
+        "region": "KR"
+      },
+      "caution": "산성 식품 통조림은 저산성 식품(콩·수프·고기)보다 유통기한이 짧고, 부식으로 인해 주석(Tin, Sn)이 음식으로 용출될 수 있다.",
+      "cautionSource": "https://www.thinkfood.co.kr/news/articleView.html?idxno=68275"
+    },
+    {
+      "id": "opened-can-metal-oxidation",
+      "claim": "개봉한 통조림을 원래 캔에 그대로 보관하면, 캔 내부 금속이 공기의 산소에 노출되면서 산화 부식이 진행된다. 특히 산성 식품이 든 캔에서 부식이 빠르게 진행된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품음료신문 통조림 개봉 후 보관",
+      "source_url": "https://www.thinkfood.co.kr/news/articleView.html?idxno=68275",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품/주강",
+        "line": "통조림(모든 품목)",
+        "years": "2023~",
+        "region": "KR"
+      },
+      "caution": "금속 산화 부산물이 음식에 녹아 들어갈 수 있으므로, 개봉 후는 반드시 밀폐용기로 옮겨야 한다.",
+      "cautionSource": "https://www.thinkfood.co.kr/news/articleView.html?idxno=68275"
+    },
+    {
+      "id": "opened-can-storage-container-transfer",
+      "claim": "개봉한 통조림의 남은 음식은 즉시 깨끗한 밀폐용기(유리 또는 식품용 플라스틱)에 옮겨 담고, 뚜껑을 닫아 냉장고에 보관하는 것이 안전하다. 냉장 보관 시 2~3일 내에 섭취할 것을 권장한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품음료신문 통조림 개봉 후 보관",
+      "source_url": "https://www.thinkfood.co.kr/news/articleView.html?idxno=68275",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품/주강",
+        "line": "통조림(모든 품목)",
+        "years": "2023~",
+        "region": "KR"
+      },
+      "caution": "개봉 후 냉동 보관도 가능하지만 냉장이 가장 권장. 통조림 종류(생선·과일·채소)에 따라 보관 전 전처리(물 헹굼·국물 버림)가 신선도 유지에 도움.",
+      "cautionSource": "https://www.thinkfood.co.kr/news/articleView.html?idxno=68275"
+    },
+    {
+      "id": "acidic-vs-low-acid-canned-shelf-life",
+      "claim": "통조림의 유통기한은 산도에 따라 다르다. 산성 식품 통조림(토마토소스, 오이 등)은 미개봉 상태에서 12~18개월, 개봉 후 냉장 5~7일이 기준이다. 반면 저산성 식품(콩, 고기, 수프)은 미개봉 상태에서 3~5년 보관 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "levapack 통조림 유통기한 가이드",
+      "source_url": "https://www.levapack.com/how-long-does-canned-food-last/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품/주강",
+        "line": "산성 vs 저산성 통조림",
+        "years": "2023~",
+        "region": "글로벌"
+      },
+      "caution": "유통기한은 적절한 보관 조건(실온, 건조, 직사광선 피함)이 전제. 미개봉이라도 고온·습기 노출이나 외부 손상이 있으면 기한이 단축된다.",
+      "cautionSource": "https://www.levapack.com/how-long-does-canned-food-last/"
+    },
+    {
+      "id": "expired-unopened-can-acidic-food-safety",
+      "claim": "산성 식품 통조림이 유통기한을 초과했어도, 미개봉 상태에서 캔이 손상되지 않았고 보관 조건이 적절했다면 소비기한(유통기한 초과 후 추가 기간)까지는 일반적으로 안전하게 섭취 가능하다. 다만 산성 식품은 저산성 식품보다 부식 위험이 높으므로 외관·냄새를 반드시 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 소비기한 표시제 + 식품음료신문",
+      "source_url": "https://www.mfds.go.kr",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품/주강",
+        "line": "산성 통조림(토마토·오이·과일)",
+        "years": "2023~",
+        "region": "KR"
+      },
+      "caution": "소비기한은 보관 조건(15~20℃ 상온, 습도 관리) 준수가 전제. 냉장고나 고온 장소에 보관했다면 기한이 다를 수 있다.",
+      "cautionSource": "https://www.mfds.go.kr"
+    },
+    {
+      "id": "can-warning-signs-checklist",
+      "claim": "섭취하기 전에 통조림을 반드시 확인해야 할 위험 신호는 다음과 같다: (1) 깊게 들어간 찌그러짐 또는 옆면 손상, (2) 부풀어오른 캔, (3) 개봉 시 내용물이 새어 나오는 경우, (4) 녹이 슨 부분, (5) 불쾌한 냄새, (6) 색깔 변색, (7) 곰팡이 피는 부분. 이 중 하나라도 해당되면 즉시 폐기해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 + 위키푸디 + 식약처",
+      "source_url": "https://www.msdmanuals.com/ko/home/%EA%B0%90%EC%97%BC/%EB%B0%95%ED%85%8C%EB%A6%AC%EC%95%84-%EA%B0%90%EC%97%BC-%ED%98%90%EA%B8%B0%EC%84%B1-%EB%B0%95%ED%85%8C%EB%A6%AC%EC%95%84/%EB%B3%B4%ED%88%B4%EB%A6%AC%EB%88%84%EC%8A%A4-%EC%A4%91%EB%8F%85",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식품/주강",
+        "line": "통조림(모든 품목)",
+        "years": "2023~",
+        "region": "KR"
+      },
+      "caution": "위험 신호 중 (2) 부풀음과 (5) 불쾌한 냄새는 보툴리누스균 감염의 강한 신호로, 의심 시 즉시 폐기하고 손을 씻어야 한다.",
+      "cautionSource": "https://www.msdmanuals.com/ko/home/%EA%B0%90%EC%97%BC/%EB%B0%95%ED%85%8C%EB%A6%AC%EC%95%84-%EA%B0%90%EC%97%BC-%ED%98%90%EA%B8%B0%EC%84%B1-%EB%B0%95%ED%85%8C%EB%A6%AC%EC%95%84/%EB%B3%B4%ED%88%B4%EB%A6%AC%EB%88%84%EC%8A%A4-%EC%A4%91%EB%8F%85"
+    }
+  ]
+}

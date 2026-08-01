@@ -1,0 +1,227 @@
+{
+  "topic": "무날개 선풍기(에어 멀티플라이어·다이슨류) 트렌드 조사",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "air-multiplier-principle-motor-hidden",
+      "claim": "무날개 선풍기(다이슨 에어 멀티플라이어)는 실제로는 내부에 숨겨진 팬과 모터를 가지고 있으며, 주변 공기를 흡입하여 압축 후 고속으로 배출하는 원리로 작동한다. 비행기 제트엔진에서 빌려온 설계 개념이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "다이슨 코리아 공식 설명 / 위키백과 날개 없는 선풍기 항목",
+      "source_url": "https://support.kr.dyson.com/fans.aspx",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "무날개 선풍기 (에어 멀티플라이어 방식)",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "\"날개 없는 선풍기\"라는 표현이 부정확할 수 있으므로, 구매 고객에게 설명할 때는 \"숨겨진 날개 방식\"으로 구분하면 이해하기 쉽다.",
+      "cautionSource": "다이슨 제품 설명서"
+    },
+    {
+      "id": "air-multiplier-15x-amplification",
+      "claim": "무날개 선풍기는 공기 증폭 원리(에어 멀티플라이어)를 통해 기둥으로 흡입한 공기량보다 약 15배 많은 양의 공기를 배출한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "다이슨 에어 멀티플라이어 기술 설명 / 아하 Q&A 다이슨 기술 답변",
+      "source_url": "https://www.a-ha.io/questions/46fd938b45e25f0e860cb182b8e6de40",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "무날개 선풍기 (에어 멀티플라이어 방식)",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "15배 증폭은 기술적 설명일 뿐, 최대 풍량 면에서는 여전히 일반 선풍기보다 약하다는 점을 독자에게 명확히 할 필요가 있다.",
+      "cautionSource": "제품 기술 사양서의 주의사항"
+    },
+    {
+      "id": "bladeless-fan-airflow-weaker-than-ac-motor",
+      "claim": "무날개 선풍기(BLDC 모터 탑재)의 최대 풍량은 일반 스탠드형 선풍기(AC 모터 약 50W)의 약 2/3 수준으로 약하며, 회전 범위도 좁은 편이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "선풍기 구매가이드 / 제품 비교 분석",
+      "source_url": "https://nosearch.com/contents/guide/season/electric_fan",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "무날개 선풍기 vs 스탠드형 AC 모터",
+        "years": "2024~",
+        "region": "KR"
+      },
+      "caution": "강한 바람을 우선하는 사용자라면 일반 선풍기가 더 적합할 수 있다. 무날개 선풍기는 '강한 바람'보다 '부드럽고 일정한 바람'을 특징으로 한다.",
+      "cautionSource": "제품 비교 가이드의 일관된 주의사항"
+    },
+    {
+      "id": "bladeless-fan-continuous-airflow-quality",
+      "claim": "무날개 선풍기는 연속적인 공기 흐름을 만들어 바람이 끊기지 않고 '부드러운 바람'으로 느껴지는 반면, 일반 선풍기는 날개가 지나가며 바람이 미세하게 끊긴다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "선풍기 구매가이드 / 다이슨 vs 일반 선풍기 비교",
+      "source_url": "https://www.groundfind.com/2026/02/dyson-vs-fan-buying-guide.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "무날개 선풍기 vs 일반 선풍기",
+        "years": "2024~",
+        "region": "KR"
+      },
+      "caution": "직바람에 민감한 사람이나 균일한 바람을 선호하면 무날개 선풍기 만족도가 높은 경향이 있다.",
+      "cautionSource": "구매가이드의 일관된 사용자 피드백"
+    },
+    {
+      "id": "bladeless-fan-noise-ultra-light-vs-medium-wind",
+      "claim": "무날개 선풍기(BLDC)는 초미풍(2~5W) 설정에서 매우 조용하여 취침·장시간 사용에 유리하나, 중풍 이상에서는 공기 흡입음으로 인해 AC 모터 선풍기 대비 소음이 더 클 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "선풍기 모터별 성능 비교 / 제품 리뷰",
+      "source_url": "https://nosearch.com/contents/guide/season/electric_fan",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "무날개 선풍기 (BLDC 모터)",
+        "years": "2024~",
+        "region": "KR"
+      },
+      "caution": "무날개 선풍기의 '조용함'은 미풍에만 해당되며, 강풍을 자주 사용하면 오히려 일반 선풍기보다 시끄러울 수 있다는 점을 구매 전에 확인해야 한다. 제품별 리뷰에서 실제 사용 소음을 확인할 것.",
+      "cautionSource": "선풍기 모터별 성능 비교 분석"
+    },
+    {
+      "id": "bladeless-fan-safety-blade-contact-risk-reduced",
+      "claim": "무날개 선풍기는 노출된 회전 날개가 없어 어린이나 반려동물이 직접 날개에 닿아 다치는 사고(손/발/꼬리 끼임)를 줄일 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "신일 날개 없는 선풍기 리뷰 / 비마이펫 강아지 선풍기 안전 가이드",
+      "source_url": "https://www.facilitye.kr/2026/05/blog-post_68.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "무날개 선풍기 (어린이·반려동물 안전)",
+        "years": "2024~",
+        "region": "KR"
+      },
+      "caution": "무날개 선풍기가 완벽하게 안전한 것은 아니다. 제품의 무게중심과 불안정성으로 인한 넘어짐 위험이 생길 수 있으며, 특히 아이가 잡고 일어나거나 반려동물이 부딪히는 환경에서는 주의가 필요하다. 제품 구입 시 안정성을 반드시 확인할 것.",
+      "cautionSource": "무날개 선풍기 리뷰의 일관된 안전 주의사항"
+    },
+    {
+      "id": "bladeless-fan-cleaning-simplicity-no-disassembly",
+      "claim": "무날개 선풍기는 회전하는 날개와 안전망이 없어 분해 청소가 불필요하며, 외부를 헝겊으로 닦아주기만 하면 일반 선풍기보다 청소가 간편하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "다이슨 코리아 공식 설명 / 제품 사용설명서",
+      "source_url": "https://support.kr.dyson.com/fans.aspx",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "무날개 선풍기 (청소·유지보수)",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "외부는 간단하게 청소되나, 내부에는 공기 흡입 과정에서 먼지가 상당히 축적될 수 있으며, 이를 제거하려면 복잡한 분해 정비가 필요할 수 있다는 점을 고려해야 한다.",
+      "cautionSource": "제품 사용설명서 유지보수 항목"
+    },
+    {
+      "id": "bladeless-fan-price-premium-justification",
+      "claim": "무날개 선풍기의 비싼 가격(10만원대 이상)은 초미풍 시 매우 저음량, 8~20+ 단계의 세밀한 풍속 조절, 약 30W 저전력 소비, 장시간 사용 시 모터 발열 최소화 등으로 정당화되고 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "선풍기 가격 가이드 / 제품 비교 분석",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/guide/%EC%84%A0%ED%92%8D%EA%B8%B0",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "무날개 선풍기 (가격 대비 성능)",
+        "years": "2024~",
+        "region": "KR"
+      },
+      "caution": "가격 정당성은 개인의 우선순위에 따라 달라진다. 강한 바람을 원하거나 저가 제품을 찾는 사용자라면 일반 선풍기가 더 나은 선택일 수 있다. 조용함, 정밀 조절, 에너지 효율을 우선하면 무날개 선풍기의 가치가 높다.",
+      "cautionSource": "제품 비교 가이드의 가격 대비 성능 분석"
+    },
+    {
+      "id": "bladeless-vs-tower-fan-airflow-range",
+      "claim": "타워팬도 무날개 선풍기처럼 스탠드형 대비 풍량이 약하고 회전 범위가 좁으며, 타워팬은 '딱 그 자리만' 시원한 특징이 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "선풍기 구매가이드 / 커뮤니티 비교",
+      "source_url": "https://nosearch.com/contents/guide/season/electric_fan",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "타워팬 vs 무날개 선풍기",
+        "years": "2024~",
+        "region": "KR"
+      },
+      "caution": "타워팬은 공간 활용도가 좋고 무날개 선풍기보다 저렴하나, 청소가 더 어렵다는 단점이 있다.",
+      "cautionSource": "제품 비교 가이드"
+    },
+    {
+      "id": "dyson-pure-cool-air-purification-99point95",
+      "claim": "다이슨 퓨어 쿨(Pure Cool) 공기청정 선풍기는 무날개 선풍기에 공기청정 필터를 통합하여 알레르기 유발 물질, 오염 물질, 초미세먼지를 99.95% 정화한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "다이슨 코리아 공식 제품 설명",
+      "source_url": "https://support.kr.dyson.com/fansandheaters.aspx",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "다이슨 퓨어 쿨 (공기청정 통합형)",
+        "years": "2024~",
+        "region": "KR"
+      },
+      "caution": "공기청정 필터는 교체 주기가 있으며, 정기적 교체 비용이 발생한다. 미세먼지 많은 계절에는 필터 교체 빈도가 높아질 수 있다.",
+      "cautionSource": "제품 사용설명서 필터 교체 안내"
+    },
+    {
+      "id": "dyson-pure-hot-cool-heating-integration",
+      "claim": "다이슨 퓨어 핫앤쿨(Pure Hot+Cool)은 무날개 선풍기에 온풍 기능을 통합하여 여름에는 냉방, 겨울에는 난방으로 사용할 수 있는 복합형 제품이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "다이슨 코리아 공식 제품 설명",
+      "source_url": "https://support.kr.dyson.com/fansandheaters.aspx",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "다이슨 퓨어 핫앤쿨 (온풍 통합형)",
+        "years": "2024~",
+        "region": "KR"
+      },
+      "caution": "온풍 기능의 난방 출력은 에어컨·히터 수준은 아니며, 보조 난방 또는 실내 공기 순환용으로 이해할 것. 제품의 실제 온풍 성능은 구매 전 리뷰를 확인해야 한다.",
+      "cautionSource": "다이슨 제품 사용설명서"
+    },
+    {
+      "id": "bladeless-fan-internal-dust-accumulation-maintenance",
+      "claim": "무날개 선풍기의 외부는 간편하게 청소되나, 공기 흡입 과정에서 내부에 먼지가 상당량 축적되며 이를 완전히 제거하려면 복잡한 분해 정비가 필요할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "선풍기 구매가이드 / 제품 리뷰",
+      "source_url": "https://nosearch.com/contents/guide/season/electric_fan",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "선풍기",
+        "line": "무날개 선풍기 (내부 먼지 축적)",
+        "years": "2024~",
+        "region": "KR"
+      },
+      "caution": "외부 청소 편의성과 달리, 내부 유지보수 어려움이 무날개 선풍기의 숨은 단점이다. 먼지가 많은 환경이라면 정기적 전문 청소를 고려해야 한다.",
+      "cautionSource": "제품 유저 리뷰의 일관된 지적"
+    }
+  ]
+}

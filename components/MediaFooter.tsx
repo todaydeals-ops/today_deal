@@ -2,7 +2,7 @@ import Link from "next/link";
 
 // 오늘의딜 미디어(매거진·홈) 푸터 — 2톤: 다크 밴드(방향) + 라이트 정보/링크. 제휴 마케팅 고지 없음.
 // 제휴 고지가 필요한 실제 딜페이지(/deals·/deal·/recommended·/board 등)는 Footer 사용.
-const mono = "'JetBrains Mono', monospace";
+const mono = "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif";
 const serif = "'Noto Serif KR', serif";
 
 export default function MediaFooter() {

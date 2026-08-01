@@ -1,0 +1,288 @@
+{
+  "topic": "세탁기 세제 과다 투입의 영향 및 적정량 팩트체크",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "excess-detergent-no-enhanced-cleaning",
+      "claim": "세제를 권장량 이상 많이 넣어도 세척력이 더 이상 향상되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 solution 39075",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39075",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼·통돌이",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "일부 사용자는 4~5배, 심한 경우 최대 20배까지 과다 사용하는 사례 보고됨",
+      "cautionSource": "식품레시피"
+    },
+    {
+      "id": "excess-detergent-rinse-failure",
+      "claim": "세제 과다 투입 시 헹굼 단계에서 세제가 충분히 제거되지 않아 섬유에 잔류한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 세탁기 사용 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150667061506",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼·통돌이",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "액체세제의 경우 예약 세탁 중 직접 투입 시 옷감 손상, 탈색, 변색 위험",
+      "cautionSource": "LG전자 고객지원"
+    },
+    {
+      "id": "excess-foam-sensor-error",
+      "claim": "세제 과다 투입으로 거품이 많이 발생하면 세탁기의 수위 센서가 급수량을 제대로 감지하지 못해 에러가 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원, 삼성전자서비스",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39075",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼·통돌이",
+        "years": "전체",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "residual-detergent-skin-irritation",
+      "claim": "세제 잔류 시 피부에 닿아 접촉성 피부염을 유발할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "식품레시피 / 온집랩",
+      "source_url": "https://foodrecipe.co.kr/life/laundry-detergent-overuse-residue-dermatitis/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼·통돌이",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "세민감한 피부, 영유아 옷 세탁 시 특히 주의 필요",
+      "cautionSource": "식품레시피"
+    },
+    {
+      "id": "residual-detergent-mold-breeding",
+      "claim": "세제 찌꺼기가 세탁조 고무 패킹과 배수관에 끈적한 막을 형성하여 곰팡이와 세균의 번식지가 된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "온집랩, 백세시대",
+      "source_url": "https://onjiplab.com/washer-mold-removal/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼·통돌이",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "클라도스포리움, 아스페르길루스 등 곰팡이는 알레르기 비염, 기침, 피부 발진 유발 가능",
+      "cautionSource": "온집랩"
+    },
+    {
+      "id": "appropriate-detergent-dosage",
+      "claim": "적정 세제량은 세탁물 부하량과 오염도를 고려하여 세제 제조사의 권장량을 따르는 것이 원칙이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 solution 39075, LG 스스로해결",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39075",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼·통돌이",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "4인 가족 기준 1회 세탁량 약 7kg일 때 세제 사용지수 7 = 계량컵 1컵이 적정량. 부하량 절반 시 세제도 비례해서 감량",
+      "cautionSource": "식품레시피"
+    },
+    {
+      "id": "drum-specific-detergent-vs-general",
+      "claim": "일반 세탁기 세제는 드럼식 세탁기용 세제보다 거품이 현저히 많이 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 solution 39075",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39075",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼식",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "드럼식 세탁기에 일반 세제를 사용할 경우 권장량의 절반 이하로 감량 필요",
+      "cautionSource": "삼성전자서비스"
+    },
+    {
+      "id": "liquid-detergent-cold-water-solubility",
+      "claim": "액체 세제는 물에 잘 녹아 세탁 후 잔여물이 거의 남지 않으며, 찬물에서도 빠르게 용해된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "세제 종류별 비교 분석 자료",
+      "source_url": "https://washertip.blogspot.com/2026/03/blog-post_4.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼·통돌이",
+        "years": "전체",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "powder-detergent-warm-water-effectiveness",
+      "claim": "가루 세제는 찬물에서 잘 녹지 않지만, 온수(40°C 이상)와 함께 사용할 때 강한 세척력을 발휘한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "세제 종류별 비교 분석 자료",
+      "source_url": "https://basictobest.com/laundry-detergent-selection-guide/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼·통돌이",
+        "years": "전체",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "capsule-detergent-direct-input-warning",
+      "claim": "캡슐형 세제는 반드시 세탁조 안에 직접 넣어야 하며, 세제함 투입구에 넣으면 필름이 제때 녹지 않으면서 세탁기 고장의 원인이 될 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "세제 종류별 비교 분석 자료",
+      "source_url": "https://basictobest.com/laundry-detergent-selection-guide/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼·통돌이",
+        "years": "전체",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "water-hardness-detergent-selection",
+      "claim": "물이 딱딱한 지역(높은 경도)에서는 석회질로 인해 세제가 잘 녹지 않으므로 큐브형·캡슐형 세제가 적합하고, 물이 부드러운 지역에서는 액체형이나 젤형이 적합하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "세제 종류별 비교 분석 자료",
+      "source_url": "https://lifebase.kr/blog/0515-washing-machine-detergent-comparison/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼·통돌이",
+        "years": "전체",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "enzyme-cold-water-effectiveness",
+      "claim": "현대 세탁 세제에 포함된 효소는 낮은 수온에서도 효과적으로 작동하며, 최신 세제는 찬물에서 잘 작용하도록 개발되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "세제 제조사 권장사항 및 연구자료",
+      "source_url": "https://v.daum.net/v/20251001210138813",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼·통돌이",
+        "years": "2000년대 이후",
+        "region": "KR"
+      },
+      "caution": "P&G 등 주요 세제 제조사는 찬물(30~40°C) 사용을 권장하고 있음",
+      "cautionSource": "세제 제조사 권장사항"
+    },
+    {
+      "id": "water-temperature-fat-dissolution",
+      "claim": "물 온도가 40°C 이상이어야 피지(지방)가 녹으며 세제의 효소가 본격적으로 활성화된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "워시엔조이 세탁 팁",
+      "source_url": "https://washenjoy.co.kr/_washtip/%EC%B0%AC%EB%AC%BC-%EC%84%B8%ED%83%81-%EC%89%BD%EC%A7%80-%EC%95%8A%EC%9D%80-%EA%B2%A8%EC%9A%B8-%EB%B9%A8%EB%9E%98-%EC%A0%81%EC%A0%88%ED%95%9C-%EC%84%B8%ED%83%81-%EB%AC%BC-%EC%98%A8%EB%8F%84%EB%8A%94/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼·통돌이",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "드럼식은 40°C 이상에서 충분한 세척력, 통식은 냉수로도 충분하다는 의견이 일반적",
+      "cautionSource": "워시엔조이 세탁 팁"
+    },
+    {
+      "id": "optimal-water-temperature-range",
+      "claim": "대부분의 일상 세탁은 30~40°C의 물 온도에서 충분한 세척력을 낼 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "세제 제조사 및 세탁 전문가 권장사항",
+      "source_url": "https://v.daum.net/v/20251001210138813",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼·통돌이",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "고온(60°C 이상) 세탁은 에너지 낭비이며, 특수한 경우(세균 번식 우려)를 제외하면 권장되지 않음",
+      "cautionSource": "세제 제조사 및 세탁 전문가 권장사항"
+    },
+    {
+      "id": "fabric-softener-overdose-same-effect",
+      "claim": "섬유유연제 과다 투입도 세제 과다와 동일한 메커니즘으로 문제를 일으킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 세탁기 사용 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150667061506",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼·통돌이",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "섬유유연제는 최종 헹굼 단계에서 자동 투입되며, 기준선(MAX)을 초과하지 않아야 함",
+      "cautionSource": "LG전자 고객지원"
+    },
+    {
+      "id": "periodic-drum-cleaning-recommendation",
+      "claim": "세제 및 섬유유연제 과다 사용으로 인한 잔류 물질 축적을 방지하기 위해 주기적으로 세탁조 통세척 코스를 실행해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원, 삼성전자서비스",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150667061506",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼·통돌이",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "세제함이 없거나 자동세제 투입 모델도 배수관·고무 패킹에 세제 찌꺼기 축적 가능"
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "topic": "음식 재가열·실온 방치 세균 통념 — 실온 2시간 법칙, 반복재가열 위험 음식, 재가열 온도 기준, 바실러스 세레우스 독소, 국찌개 보관·재가열",
+  "brand": "공통",
+  "article": "food-reheating-safety-factcheck",
+  "captured": "2026-07-28",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "room-temperature-2-hour-rule",
+      "claim": "조리한 음식은 실온에 2시간 이상 방치하지 말아야 하며, 여름철 고온에서는 1시간 이내로 냉장 보관해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 식중독 예방 권고",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=3120&bbs_no=bbs001&ntctxt_no=21793&menu_grp=MENU_NEW01",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모든 음식",
+        "line": "조리 음식 실온 방치",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "2시간 또는 1시간 초과 후 냉장 이동해도 이미 세균이 상당히 증식한 상태일 수 있다.",
+      "cautionSource": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=3120&bbs_no=bbs001&ntctxt_no=21793&menu_grp=MENU_NEW01"
+    },
+    {
+      "id": "reheating-temperature-74-celsius",
+      "claim": "남은 음식을 재가열할 때 중심부 온도를 74℃ 이상에서 1분 이상 가열해야 식중독균을 효과적으로 제거할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 식중독 예방 권고",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=3120&bbs_no=bbs001&ntctxt_no=21793&menu_grp=MENU_NEW01",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모든 음식",
+        "line": "남은 음식 재가열",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "이는 대부분의 영양 세균(vegetative cell)을 죽이는 온도이나, 일부 포자형 세균의 독소는 더 높은 온도에서도 파괴되지 않을 수 있다.",
+      "cautionSource": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=3120&bbs_no=bbs001&ntctxt_no=21793&menu_grp=MENU_NEW01"
+    },
+    {
+      "id": "danger-zone-temperature-5-60",
+      "claim": "5℃~60℃ 온도 범위는 식중독균이 가장 빠르게 증식하는 위험 구간이므로, 조리된 음식은 5℃ 이하 또는 60℃ 이상에서 보관해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 식중독 예방 권고",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=3120&bbs_no=bbs001&ntctxt_no=21793&menu_grp=MENU_NEW01",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모든 음식",
+        "line": "보관 온도 기준",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "특히 30℃~43℃는 세균 번식 최적 온도로, 6시간 만에 세균 수가 수천 배로 증가할 수 있다.",
+      "cautionSource": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=3120&bbs_no=bbs001&ntctxt_no=21793&menu_grp=MENU_NEW01"
+    },
+    {
+      "id": "chicken-internal-temperature-74",
+      "claim": "닭고기는 중심부 온도 74℃에서 1분 이상 가열해야 하며, 남은 닭고기를 재가열할 때도 동일한 온도 기준을 적용해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 식중독 예방 권고",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=3120&bbs_no=bbs001&ntctxt_no=21793&menu_grp=MENU_NEW01",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "육류",
+        "line": "닭고기",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "닭고기는 살모넬라균 오염 위험이 높으므로, 조리 전후 모두 엄격한 온도 관리가 필수.",
+      "cautionSource": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=3120&bbs_no=bbs001&ntctxt_no=21793&menu_grp=MENU_NEW01"
+    },
+    {
+      "id": "bacillus-cereus-toxin-heat-resistant",
+      "claim": "바실러스 세레우스가 생산하는 구토형 독소(세레울라이드)는 126℃에서 90분 이상 가열해야 파괴되며, 100℃에서 끓여도 파괴되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처·식품의약품안전평가원 바실러스 세레우스 식중독 정보",
+      "source_url": "https://www.fsis.go.kr/front/contents/cmsView.do?cate_id=0101&cnts_id=26850&select_list_no=4",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모든 음식",
+        "line": "바실러스 세레우스 오염",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "일반적인 재가열 온도(74℃)로는 이미 생성된 독소를 제거할 수 없으므로, 예방은 실온 방치 시간 단축과 신속한 냉동 보관이 가장 효과적이다.",
+      "cautionSource": "https://www.fsis.go.kr/front/contents/cmsView.do?cate_id=0101&cnts_id=26850&select_list_no=4"
+    },
+    {
+      "id": "bacillus-cereus-two-forms",
+      "claim": "바실러스 세레우스 식중독은 설사형(섭취 후 6~16시간 발증, 약 24시간 지속)과 구토형(1~5시간 발증, 약 24시간 지속) 두 가지 형태가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처·식품의약품안전평가원 바실러스 세레우스 식중독 정보",
+      "source_url": "https://www.fsis.go.kr/front/contents/cmsView.do?cate_id=0101&cnts_id=26850&select_list_no=4",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모든 음식",
+        "line": "바실러스 세레우스 식중독",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "구토형이 더 빠르게 증상을 나타내므로, 밥을 실온에 방치한 후 재가열하면 구토형 독소 노출 위험이 높다.",
+      "cautionSource": "https://www.fsis.go.kr/front/contents/cmsView.do?cate_id=0101&cnts_id=26850&select_list_no=4"
+    },
+    {
+      "id": "chicken-reheating-salmonella",
+      "claim": "닭고기를 실온에 방치한 후 재가열하면 살모넬라균이 증식한 상태에서 복통, 구토, 설사를 유발할 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "음식 재가열 위험성 관련 다수 보도 및 커뮤니티 보고",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=55063",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "육류",
+        "line": "닭고기",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "살모넬라균은 74℃에서 1분 가열하면 사멸하므로, 중심부 온도를 확인하며 충분히 재가열하면 안전하다.",
+      "cautionSource": "https://news.hidoc.co.kr/news/articleView.html?idxno=55063"
+    },
+    {
+      "id": "egg-reheating-hydrogen-sulfide",
+      "claim": "계란을 고온에서 재가열하면 계란의 황 성분이 단백질과 반응하여 황화수소(황화수소 가스)라는 독성 물질을 생성할 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "음식 재가열 위험성 관련 다수 보도 및 식품 가이드",
+      "source_url": "https://kormedi.com/1581121/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "계란류",
+        "line": "계란",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "황화수소 생성은 매우 높은 온도(보통 160℃ 이상)에서 주로 발생하며, 일반적인 재가열 온도에서는 위험이 낮다. 살모넬라균 번식 예방이 더 중요하다.",
+      "cautionSource": "https://kormedi.com/1581121/"
+    },
+    {
+      "id": "spinach-reheating-nitrite",
+      "claim": "시금치 같은 녹색 채소를 재가열하면 질산염이 아질산염으로 변환되면서 발암 위험과 산소 결핍 위험이 증가할 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "음식 재가열 위험성 관련 다수 보도",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=55063",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "채소",
+        "line": "시금치",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "이 위험은 특정 조건(과도한 재가열, 어린 아이·노약자 대상)에서 주로 보도되며, 일반인의 통상적인 재가열에서는 세균 번식 방지가 우선 관심사다.",
+      "cautionSource": "https://news.hidoc.co.kr/news/articleView.html?idxno=55063"
+    },
+    {
+      "id": "mushroom-reheating-protein-denaturation",
+      "claim": "버섯을 조리 후 보관하면 단백질이 빠르게 변질되면서 미생물이 분비하는 독소가 증가할 수 있으며, 특히 조리 후 24시간이 지나면 재가열하지 않는 것이 권장된다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "음식 재가열 위험성 관련 보도 및 커뮤니티 보고",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=55063",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "채소",
+        "line": "버섯",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "24시간은 권고 기준이며, 냉장 보관 시 더 길게 안전할 수 있으나, 원래부터 세균 번식을 최소화하는 것이 가장 확실한 방법이다.",
+      "cautionSource": "https://news.hidoc.co.kr/news/articleView.html?idxno=55063"
+    },
+    {
+      "id": "soup-stew-reheating-frequency",
+      "claim": "국이나 찌개는 냉장 보관 시 2~3일 내에 1회 재가열하여 충분히 끓인 후 섭취하는 것이 권장된다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "음식 보관 및 재가열 안내 관련 커뮤니티 및 식품 정보",
+      "source_url": "https://www.newskrw.com/news/articleView.html?idxno=48226",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "국·찌개",
+        "line": "모든 국·찌개류",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "하루에 여러 번 재가열하면 세균 번식과 독소 생성 누적 위험이 높아지므로, 한 번에 섭취할 양만큼 소분하여 냉장하고, 남은 양은 건드리지 않는 것이 가장 위생적이다.",
+      "cautionSource": "https://www.newskrw.com/news/articleView.html?idxno=48226"
+    },
+    {
+      "id": "soup-reheating-temperature-70",
+      "claim": "국이나 찌개를 재가열할 때는 70℃에서 3분 이상 재가열하여 섭취해야 한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "음식 보관 및 재가열 안내 관련 식품 정보",
+      "source_url": "https://www.newskrw.com/news/articleView.html?idxno=48226",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "국·찌개",
+        "line": "모든 국·찌개류",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "70℃는 일부 보도의 권고치이며, 식약처 공식 기준은 74℃ 1분이다. 더 안전하려면 공식 기준인 74℃ 1분 이상을 적용하는 것이 좋다.",
+      "cautionSource": "https://www.newskrw.com/news/articleView.html?idxno=48226"
+    },
+    {
+      "id": "cooked-food-not-reheatable-after-toxin-generation",
+      "claim": "한 번 생성된 식중독 독소(특히 바실러스 세레우스의 구토형 독소)는 일반적인 가열로 제거되지 않으므로, 아무리 끓여도 안전을 보장할 수 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처·식품의약품안전평가원 바실러스 세레우스 식중독 정보",
+      "source_url": "https://www.fsis.go.kr/front/contents/cmsView.do?cate_id=0101&cnts_id=26850&select_list_no=4",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "모든 음식",
+        "line": "남은 음식 재가열",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "따라서 식중독 예방의 핵심은 재가열이 아니라 '조리 후 신속한 냉각 및 냉장 보관'과 '실온 방치 시간 최소화'다.",
+      "cautionSource": "https://www.fsis.go.kr/front/contents/cmsView.do?cate_id=0101&cnts_id=26850&select_list_no=4"
+    }
+  ]
+}

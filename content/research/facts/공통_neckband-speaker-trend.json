@@ -1,0 +1,386 @@
+{
+  "topic": "웨어러블 넥밴드 스피커 원리, 형태, 장단점, 용도, 음질 평가",
+  "brand": "공통",
+  "article": "neckband-speaker-trend",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "neckband-speaker-form-wearable",
+      "claim": "웨어러블 넥밴드 스피커는 어깨/목에 걸어 사용하는 형태로, 아치형 본체에 배터리가 내장되어 있고 스피커 유닛은 본체 상단에 배치되어 귀를 막지 않고 음향을 상향으로 출력한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "나무위키, 웨어러블 스피커 기술 가이드",
+      "source_url": "https://namu.wiki/w/%EB%84%A5%EC%8A%A4%ED%94%BC%EC%BB%A4",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-ear-free-ambient-sound",
+      "claim": "넥밴드 스피커는 귀를 막지 않고 귀 근처에서 음향을 송출하기 때문에 음악을 들으면서 동시에 주변음(초인종, 자동차음, 가족 목소리)을 자연스럽게 인식할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티(클리앙, 나무위키)",
+      "source_url": "https://www.clien.net/service/board/park/18891057",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-long-battery-advantage",
+      "claim": "무선 이어폰의 배터리 지속시간이 4~5시간인 반면, 넥밴드 스피커는 일반적으로 10~15시간 사용 가능하여 배터리 부담이 훨씬 적다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 및 제품 기술 명세 종합",
+      "source_url": "https://namu.wiki/w/%EB%84%A5%EB%B0%B4%EB%93%9C%20%EC%9D%B4%EC%96%B4%ED%8F%B0",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "배터리 지속시간은 음량, 주변 온도, 모델에 따라 달라질 수 있다. 일부 제품은 6시간 수준, 일부는 일주일 사용 가능.",
+      "cautionSource": "다나와, 나무위키 제품 명세"
+    },
+    {
+      "id": "neckband-no-loss-risk",
+      "claim": "넥밴드 스피커는 목에 걸려 있으므로 실수로 떨어뜨려 분실할 위험이 거의 없다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티",
+      "source_url": "https://namu.wiki/w/%EB%84%A5%EB%B0%B4%EB%93%9C%20%EC%9D%B4%EC%96%B4%ED%8F%B0",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-no-ear-fatigue",
+      "claim": "귀에 끼우는 형태가 아니기 때문에 장시간 착용했을 때 귀 피로가 없으며, 특히 안경 착용자나 이어폰으로 귀가 아픈 사용자에게 유리하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티",
+      "source_url": "https://www.clien.net/service/board/park/18891057",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-sound-leakage-neighbor-impact",
+      "claim": "넥밴드 스피커에서 나오는 소리는 상단으로 솟아올라 앞·위쪽으로 퍼지므로, 옆사람에게는 상대적으로 덜 들린다. 다만 카페·도서관·버스 같은 조용한 환경에서는 주변에 음향이 새어 나갈 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티",
+      "source_url": "https://www.clien.net/service/board/park/18891057",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "옆사람에게는 덜 들리지만 '전혀 안 들린다'는 의미는 아니다. 공공장소에서 음량이 크면 타인 방해 가능."
+    },
+    {
+      "id": "neckband-unsuitable-quiet-environment",
+      "claim": "넥밴드 스피커는 카페, 도서관, 사무실 같은 조용한 환경에서는 주변인에게 음성이 새어나가 타인 방해의 우려가 있으므로 사용을 자제해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 평가 및 커뮤니티",
+      "source_url": "https://www.clien.net/service/board/park/18891057",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-audio-quality-limitation",
+      "claim": "넥밴드 스피커는 음향이 상단으로 퍼지는 구조 때문에 음질 표현에 선천적 한계가 있으며, 편의성을 우선시하는 설계다. 음질보다는 편의성이 주요 특징이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 평가, 기술 평가 종합",
+      "source_url": "https://heremyworld.com/entry/%EC%9B%A8%EC%96%B4%EB%9F%AC%EB%B8%94-%EC%8A%A4%ED%94%BC%EC%BB%A4-%EC%B6%94%EC%B2%9C-4%EA%B0%80%EC%A7%80-%ED%98%84%EC%9E%A5%EA%B0%90%EC%9D%B4-%EB%9B%B0%EC%96%B4%EB%82%98%EB%84%A4%EC%9A%94",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-bass-weakness",
+      "claim": "넥밴드 스피커는 저음 표현이 현저히 약해서, 영화나 게임에서 저음이 중요한 콘텐츠를 즐기려는 사용자에게는 부족할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 및 기술 평가",
+      "source_url": "https://heremyworld.com/entry/%EC%9B%A8%EC%96%B4%EB%9F%AC%EB%B8%94-%EC%8A%A4%ED%94%BC%EC%BB%A4-%EC%B6%94%EC%B2%9C-4%EA%B0%80%EC%A7%80-%ED%98%84%EC%9E%A5%EA%B0%90%EC%9D%B4-%EB%9B%B0%EC%96%B4%EB%82%98%EB%84%A4%EC%9A%94",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-weight-range-typical",
+      "claim": "일반적인 넥밴드 스피커의 무게는 100~300g이며, 극경량 제품은 27g까지 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "다나와, 나무위키 제품 명세",
+      "source_url": "https://search.danawa.com/dsearch.php?query=%EB%84%A5%EB%B0%B4%EB%93%9C%EC%8A%A4%ED%94%BC%EC%BB%A4",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "100~300g",
+      "cautionSource": "다나와, 나무위키 제품 명세"
+    },
+    {
+      "id": "neckband-wearing-discomfort-neck-movement",
+      "claim": "넥밴드 스피커는 목에 걸친 형태이기 때문에 목을 뒤로 젖히거나 몸을 갑자기 돌릴 때 밴드가 끌려옴으로써 불편함이 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티",
+      "source_url": "https://namu.wiki/w/%EB%84%A5%EB%B0%B4%EB%93%9C%20%EC%9D%B4%EC%96%B4%ED%8F%B0",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-summer-perspiration-maintenance",
+      "claim": "여름철에는 목과 밴드 부분에 땀이 침투하므로 물티슈 등으로 정기적인 관리가 필요하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티",
+      "source_url": "https://namu.wiki/w/%EB%84%A5%EB%B0%B4%EB%93%9C%20%EC%9D%B4%EC%96%B4%ED%8F%B0",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-best-use-case-workfromhome",
+      "claim": "넥밴드 스피커는 주변음 인식 가능, 귀 부담 없음, 배터리 길이 때문에 재택근무 환경에서 최적의 성능을 발휘한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "얼리어답터, 제조사 기술 평가",
+      "source_url": "https://www.earlyadopter.co.kr/151830",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-gaming-movie-use-case",
+      "claim": "게임이나 영화를 집에서 보면서 편하게 2~3시간 이상 착용하고 싶을 때, 이어폰보다 귀 부담이 적기 때문에 적합하다. 다만 고음질을 우선시한다면 게이밍 헤드폰이 나을 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 평가, 나무위키",
+      "source_url": "https://namu.wiki/w/%EB%84%A5%EC%8A%A4%ED%94%BC%EC%BB%A4",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-vibration-technology-principle",
+      "claim": "진동 스피커 기술은 저음역대(20Hz~500Hz)를 음향 신호에서 분리하여 진동 모터로 변환하고, 넥밴드의 쇄골 부분이 직접 진동함으로써 저음을 음향이 아니라 물리적으로 '느끼게' 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "구글 특허(KR101184469B1), 전자신문",
+      "source_url": "https://patents.google.com/patent/KR101184469B1/ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "진동 기능 탑재 모델",
+        "years": "2000년대~",
+        "region": "글로벌"
+      },
+      "caution": "진동 기술은 저음 음향의 보충이지, 완벽한 대체가 아니다. 과도한 진동은 목 피로를 유발할 수 있다.",
+      "cautionSource": "음향 물리학 및 제조사 기술 명세, 사용자 경험"
+    },
+    {
+      "id": "neckband-vibration-bass-compensation",
+      "claim": "저음은 파장이 길어 음향만으로는 약한 특성을 가지고 있으므로, 진동 기술로 저음을 물리적으로 체감하면 마치 저음이 강한 것처럼 느껴질 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "음향 기술 자료, 구글 특허",
+      "source_url": "https://wiki.homerecz.com/doku.php/%EC%9D%8C%ED%96%A5%ED%95%99/physical_acoustics/circular_membrane_vibration",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "진동 기능 탑재 모델",
+        "years": "2000년대~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-hands-free-advantage",
+      "claim": "넥밴드 스피커는 목에 걸어 사용하므로 양손이 완전히 자유로워서, 가사(요리, 청소)를 하면서 동시에 음악이나 팟캐스트를 들을 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티",
+      "source_url": "https://www.clien.net/service/board/park/18891057",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-call-quality-microphone-spec",
+      "claim": "넥밴드 스피커의 통화 품질은 제품에 탑재된 마이크 개수와 노이즈 캔슬링 기술에 따라 결정되며, 고성능 제품은 2개의 빔포밍 마이크와 노이즈 캔슬링을 장착하여 사용자의 목소리를 선명하게 포착한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제조사 기술 명세",
+      "source_url": "https://heremyworld.com/entry/%EC%9B%A8%EC%96%B4%EB%9F%AC%EB%B8%94-%EC%8A%A4%ED%94%BC%EC%BB%A4-%EC%B6%94%EC%B2%9C-4%EA%B0%80%EC%A7%80-%ED%98%84%EC%9E%A5%EA%B0%90%EC%9D%B4-%EB%9B%B0%EC%96%B4%EB%82%98%EB%84%A4%EC%9A%94",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-loud-environment-call-difficulty",
+      "claim": "공장 소음처럼 주변이 이미 매우 시끄러운 환경에서는 넥밴드 스피커의 개방형 특성 때문에 음성 통화가 어려울 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티",
+      "source_url": "https://www.clien.net/service/board/park/18891057",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-not-professional-appearance",
+      "claim": "넥밴드 스피커는 기존 헤드폰보다 눈에 띠므로, 비즈니스 미팅이나 고객 만남 같은 전문가적 환경에서는 사용을 자제하는 것이 나다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 평가",
+      "source_url": "https://heremyworld.com/entry/%EC%9B%A8%EC%96%B4%EB%9F%AC%EB%B8%94-%EC%8A%A4%ED%94%BC%EC%BB%A4-%EC%B6%94%EC%B2%9C-4%EA%B0%80%EC%A7%80-%ED%98%84%EC%9E%A5%EA%B0%90%EC%9D%B4-%EB%9B%B0%EC%96%B4%EB%82%98%EB%84%A4%EC%9A%94",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-passive-radiator-driver-config",
+      "claim": "많은 넥밴드 스피커는 풀레인지 스피커 유닛(중고음)과 패시브 라디에이터(저음 진동 보조)로 구성되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제조사 기술 명세",
+      "source_url": "https://heremyworld.com/entry/%EC%9B%A8%EC%96%B4%EB%9F%AC%EB%B8%94-%EC%8A%A4%ED%94%BC%EC%BB%A4-%EC%B6%94%EC%B2%9C-4%EA%B0%80%EC%A7%80-%ED%98%84%EC%9E%A5%EA%B0%90%EC%9D%B4-%EB%9B%B0%EC%96%B4%EB%82%98%EB%84%A4%EC%9A%94",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-vs-earphone-sound-quality-comparison",
+      "claim": "같은 가격대 기준으로, 진정한 음질을 추구한다면 무선 이어폰이나 헤드폰이 넥밴드 스피커보다 우수하다. 넥밴드는 음질보다 편의성에 특화된 제품이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 평가 및 기술 평가",
+      "source_url": "https://heremyworld.com/entry/%EC%9B%A8%EC%96%B4%EB%9F%AC%EB%B8%94-%EC%8A%A4%ED%94%BC%EC%BB%A4-%EC%B6%94%EC%B2%9C-4%EA%B0%80%EC%A7%80-%ED%98%84%EC%9E%A5%EA%B0%90%EC%9D%B4-%EB%9B%B0%EC%96%B4%EB%82%98%EB%84%A4%EC%9A%94",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "neckband-quick-attachment-detachment",
+      "claim": "넥밴드 스피커는 목에 걸치는 형태이기 때문에 장착과 탈착이 1초 내에 가능하며, 이어폰처럼 귀 구멍에 끼워야 하는 번거로움이 없다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티",
+      "source_url": "https://www.clien.net/service/board/cm_bike/13711698",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "웨어러블 스피커",
+        "line": "모든 넥밴드 스피커",
+        "years": "현행",
+        "region": "글로벌"
+      }
+    }
+  ]
+}

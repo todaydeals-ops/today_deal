@@ -1,0 +1,60 @@
+{
+  "topic": "수면부족과 판단력",
+  "brand": "수면",
+  "article": "sleep-deprivation-judgment",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sleep-deprivation-impairs-decision-making",
+      "claim": "전체적 수면박탈(total sleep deprivation)은 의사결정 능력과 판단력을 저하시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Advances - Short sleep recovery partially restores decision-making alterations induced by total sleep deprivation",
+      "source_url": "https://doi.org/10.1093/sleepadvances/zpag038",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "직장인 수면건강",
+        "line": "판단력과 의사결정",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "partial-sleep-recovery-partial-judgment-recovery",
+      "claim": "수면박탈 후 짧은 수면 회복(short sleep recovery)을 취해도 의사결정 능력이 완전히 회복되지 않으며, 부분적 개선만 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Advances - Short sleep recovery partially restores decision-making alterations induced by total sleep deprivation",
+      "source_url": "https://doi.org/10.1093/sleepadvances/zpag038",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "직장인 수면건강",
+        "line": "수면박탈 회복",
+        "years": "2026",
+        "region": "일반"
+      },
+      "caution": "한두 시간의 낮잠 정도로는 완전한 회복이 어렵다는 뜻이며, 충분한 야간 수면이 필요함을 시사한다."
+    },
+    {
+      "id": "healthcare-worker-sleep-deprivation-patient-safety",
+      "claim": "보건의료종사자의 수면부족 관련 피로는 임상 의사결정 오류를 증가시키며, 환자 안전에 위험을 초래한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cureus - Sleep Deprivation and Fatigue in Healthcare Staff: A Clinical Audit on the Risk to Patient Safety",
+      "source_url": "https://doi.org/10.7759/cureus.96543",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "의료진 수면건강",
+        "line": "환자안전 리스크",
+        "years": "2025",
+        "region": "일반"
+      }
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "topic": "생수 유통기한 지나면 못 먹나, 차 안 고온 생수 위험한가 — 팩트체크",
+  "brand": "공통",
+  "article": "bottled-water-factcheck",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "bottled-water-expiry-pet-bottle-standard",
+      "claim": "생수 유통기한은 물 자체가 아니라 페트병의 화학적 안정성을 기준으로 하며, 제조일부터 6개월 이내로 규정된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 먹는물 관리법",
+      "source_url": "https://m.easylaw.go.kr/MOB/OnhunqnaInfoRetrieve.laf?onhunqnaAstSeq=88&onhunqueSeq=5629",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생수",
+        "line": "페트병 생수",
+        "years": "현행 규정",
+        "region": "KR"
+      },
+      "caution": "6개월을 초과하여 유통기한을 설정하려면 제품의 품질변화가 없다는 것을 과학적으로 입증하여 승인받아야 한다.",
+      "cautionSource": "식약처 먹는물 관리법 유통기한 규정"
+    },
+    {
+      "id": "pet-bottle-chemical-migration-temperature",
+      "claim": "페트병에 오랫동안 물을 담아두거나 높은 온도에 노출될 경우 비스페놀A, 아세트알데하이드, 안티몬 등의 물질이 극소량 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 생활 속 식의약",
+      "source_url": "https://www.mfds.go.kr/webzine/201509/05.jsp",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생수",
+        "line": "페트병 생수",
+        "years": "현행 제품",
+        "region": "KR"
+      },
+      "caution": "이 수치는 극소량이며 안전한 수준이지만, 반복적인 온도 변화나 햇빛 노출이 많을수록 용출이 증가한다.",
+      "cautionSource": "식약처 공식 안내"
+    },
+    {
+      "id": "car-heat-exposure-antimony-microplastics",
+      "claim": "뜨거운 차 안에 방치된 페트병 생수는 직사광선 아래 병 내부 온도가 빠르게 상승하면서 안티몬과 미세플라스틱이 용출될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 고온 보관 생수 주의 안내",
+      "source_url": "https://www.mfds.go.kr/webzine/201509/05.jsp",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생수",
+        "line": "페트병 생수",
+        "years": "현행 제품",
+        "region": "KR"
+      },
+      "caution": "식약처는 고온에서 보관된 생수를 반드시 피할 것을 권고하며, 변색·변질·이물이나 이상한 냄새가 날 경우 음용하지 말 것을 당부한다.",
+      "cautionSource": "식약처 공식 안내"
+    },
+    {
+      "id": "microplastics-per-liter-bottled-water",
+      "claim": "생수병에서 발견되는 미세플라스틱은 1L당 평균 325개이며, 일부 병에서는 수천 개에 이르기도 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "생수 미세플라스틱 관련 연구 및 보도",
+      "source_url": "https://www.newsspace.kr/news/article.html?no=9033",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생수",
+        "line": "페트병 생수",
+        "years": "현행 제품",
+        "region": "KR"
+      },
+      "caution": "이 수치는 햇빛 노출이나 온도 변화에 따라 크게 변동할 수 있으며, 암실에서 낮은 온도로 보관한 생수는 미세플라스틱이 적을 가능성이 높다.",
+      "cautionSource": "미세플라스틱 검출 연구 결과"
+    },
+    {
+      "id": "opened-bottled-water-bacterial-growth-mouth-contact",
+      "claim": "입을 대고 마신 페트병은 몇 시간 내에 세균이 900마리에서 4만 마리 이상으로 증식하며, 여름철에는 한 마리에서 100만 마리까지 증가하는 데 4~5시간이 소요된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "코메디닷컴 세균 증식 실험 보도",
+      "source_url": "https://kormedi.com/1686733/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생수",
+        "line": "페트병 생수",
+        "years": "현행 제품",
+        "region": "KR"
+      },
+      "caution": "입이 닿은 병은 냉장 보관해도 1~2일 이내에 폐기하는 것이 안전하며, 상온 보관은 몇 시간 이내가 권장된다.",
+      "cautionSource": "한국수자원공사 공식 안내"
+    },
+    {
+      "id": "opened-bottled-water-shelf-life-no-mouth-contact",
+      "claim": "입이 닿지 않은 개봉 생수는 냉장 보관 시 3~5일, 상온 보관 시 몇 시간에서 하루 이내에 섭취해야 안전하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "생수 보관 방법 및 유통 기간 가이드",
+      "source_url": "https://lifeisself.co.kr/%EC%83%9D%EC%88%98-%EB%B3%B4%EA%B4%80-%EB%B0%A9%EB%B2%95-%EB%B0%8F-%EC%9C%A0%ED%86%B5-%EA%B8%B0%EA%B0%84/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생수",
+        "line": "페트병 생수",
+        "years": "현행 제품",
+        "region": "KR"
+      },
+      "caution": "개봉 후에는 가능한 한 빨리 섭취하는 것이 안전하며, 냉장 보관이라도 용기 내 세균 번식을 완벽히 방지할 수 없다.",
+      "cautionSource": "한국수자원공사·생수 관리 가이드"
+    },
+    {
+      "id": "pet-bottle-reuse-harmful-chemical-leaching",
+      "claim": "페트병을 반복적으로 재사용하거나 냉동 보관하면 플라스틱 구조가 변형되어 환경호르몬 용출 및 세균 번식 위험이 커진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 - 생수병 재사용 자제 공식 권고",
+      "source_url": "https://www.mfds.go.kr/webzine/201509/05.jsp",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생수",
+        "line": "페트병 생수",
+        "years": "현행 지침",
+        "region": "KR"
+      },
+      "caution": "식약처는 PET 생수병의 재사용을 공식적으로 자제할 것을 권고하며, 씻어서 여러 번 채워 쓰거나 뜨거운 물로 소독하는 행위도 삼가야 한다. 다만 페트병 자체는 비스페놀A를 사용하지 않아 재사용 시 환경호르몬이 나오지는 않는다.",
+      "cautionSource": "식약처 공식 권고"
+    },
+    {
+      "id": "bottled-water-vs-filtered-water-bacterial-risk",
+      "claim": "생수는 염소 성분이 없어 세균 번식을 방지하는 메커니즘이 부족한 반면, 정수기 물도 필터 교체를 미루면 세균 번식 위험이 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "물 안전성 비교 분석 및 정수기 검사 자료",
+      "source_url": "https://www.ikunkang.com/news/articleView.html?idxno=35078",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생수 vs 정수기",
+        "line": "음용수",
+        "years": "현행 제품",
+        "region": "KR"
+      },
+      "caution": "생수는 개봉 후 빠른 섭취로 세균 번식을 차단하고, 정수기는 필터를 정기적으로 교체하고 내부 부품을 관리하는 것이 핵심이다.",
+      "cautionSource": "한국수자원공사 및 정수기 안전 관리 가이드"
+    },
+    {
+      "id": "bottled-water-vs-filtered-water-mineral-content",
+      "claim": "수돗물의 미네랄 함량은 총 38.7mg/L인 반면, 역삼투압 정수기 물의 미네랄 함량은 평균 3.3mg/L에 불과하며, 생수는 제품별로 차이가 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "물 안전성 비교 분석 — 미네랄 함량 측정",
+      "source_url": "https://www.sisajournal.com/news/articleView.html?idxno=181193",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생수 vs 정수기 vs 수돗물",
+        "line": "음용수",
+        "years": "측정 기준",
+        "region": "KR"
+      },
+      "caution": "미네랄의 건강상 필요성은 논쟁이 있으며, 역삼투압 정수기는 오염물질 제거 능력이 탁월한 대신 미네랄까지 제거하는 특성이 있다.",
+      "cautionSource": "시사저널 물 비교 분석 기사"
+    },
+    {
+      "id": "storage-temperature-recommendation-bottled-water",
+      "claim": "생수는 직사광선을 피하고 15~25℃의 서늘한 장소에 보관해야 하며, 개봉 후에는 냉장고에 보관하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "생수 보관 방법 및 유통 기간 가이드",
+      "source_url": "https://lifeisself.co.kr/%EC%83%9D%EC%88%98-%EB%B3%B4%EA%B4%80-%EB%B0%A9%EB%B2%95-%EB%B0%8F-%EC%9C%A0%ED%86%B5-%EA%B8%B0%EA%B0%84/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "생수",
+        "line": "페트병 생수",
+        "years": "현행 제품",
+        "region": "KR"
+      },
+      "caution": "차 안 대시보드나 야외에 장시간 방치하면 온도 상승으로 인한 화학물질 및 미세플라스틱 용출이 증가하므로 피해야 한다.",
+      "cautionSource": "생수 보관 가이드"
+    }
+  ]
+}

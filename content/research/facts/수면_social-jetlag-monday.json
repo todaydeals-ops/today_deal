@@ -1,0 +1,61 @@
+{
+  "topic": "사회적 시차와 월요일 피로",
+  "brand": "수면",
+  "article": "social-jetlag-monday",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "social-jetlag-definition",
+      "claim": "사회적 시차(social jetlag)는 업무/학교 일정으로 인한 사회적 필요(social obligation)와 개인의 생체시계 기반 수면욕 사이의 시간 불일치로, 주말과 평일 수면 시간대의 차이를 야기하는 현상이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Health - Social jetlag is associated with body mass (BMI) in children aged 2-8years: A cross-sectional analysis",
+      "source_url": "https://doi.org/10.1016/j.sleh.2025.04.003",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "사회적 시차",
+        "line": "정의 및 개념",
+        "years": "2025",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "social-jetlag-impairs-mental-health",
+      "claim": "의료 레지던트 등 전문직에서 사회적 시차는 정신건강 문제(depression, anxiety 등)와 관련이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Clinical Sleep Medicine - Sleep, chronotype, social jetlag, and mental health in resident physicians: a cross-sectional study",
+      "source_url": "https://doi.org/10.5664/jcsm.11288",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "사회적 시차",
+        "line": "정신건강 영향",
+        "years": "2024",
+        "region": "일반"
+      },
+      "caution": "의료 레지던트는 극단적 장시간 근무자이므로, 일반 직장인의 사회적 시차 영향과는 정도가 다를 수 있다."
+    },
+    {
+      "id": "social-jetlag-associated-with-bmi",
+      "claim": "어린이(2-8세)를 대상으로 한 연구에서 사회적 시차가 클수록 체질량지수(BMI)가 높은 경향을 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Health - Social jetlag is associated with body mass (BMI) in children aged 2-8years: A cross-sectional analysis",
+      "source_url": "https://doi.org/10.1016/j.sleh.2025.04.003",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "사회적 시차",
+        "line": "체질량 영향",
+        "years": "2025",
+        "region": "일반"
+      },
+      "caution": "이 연구는 어린이 대상이므로 성인 직장인으로 일반화하기는 어렵다. 기전은 완전히 명확하지 않으나, 불규칙한 수면-각성 일정이 대사와 식욕 조절에 영향을 미친다고 추정된다."
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "topic": "수돗물 그냥 마셔도 되나? 안전성 통념",
+  "brand": "공통",
+  "article": "tap-water-safety-factcheck",
+  "captured": "2026-07-28",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "drinking-water-standard-58-items",
+      "claim": "한국 환경부의 먹는물 수질기준은 미생물, 무기물, 유기물, 소독부산물, 심미적 영향물질, 방사능 등 58개 항목으로 구성되며, 성인이 2리터씩 생涯 매일 섭취해도 건강상 영향이 없는 안전 수준으로 설정된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "환경부 먹는물 수질기준 및 검사 등에 관한 규칙",
+      "source_url": "https://www.law.go.kr/LSW/lsInfoP.do?urlMode=lsInfoP&lsId=007134",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "수도수",
+        "line": "가정용 수돗물",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "음용 기준은 정상적인 처리를 거친 수돗물 기준이며, 2차 오염(배관 이후)이나 노후 배관에서는 추가 오염이 발생할 수 있다.",
+      "cautionSource": "환경부 규칙의 2차 오염 관리 조항"
+    },
+    {
+      "id": "kwater-global-standard-231-items",
+      "claim": "K-water는 환경부 기준 외에도 자체 글로벌 수질기준을 2012년부터 적용하여 WHO 및 OECD 5개국 중 가장 엄격한 기준을 채택했으며, 총 231개 항목을 모니터링한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "K-water 고품질 수돗물 서비스",
+      "source_url": "https://www.kwater.or.kr/busi/water02/highQualityServicePage.do?s_mid=1863",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "수도수",
+        "line": "K-water 공급 지역",
+        "years": "2012~현행",
+        "region": "KR"
+      },
+      "caution": "환경부 58항목 기준과 K-water 231항목은 중복이 있으며, K-water의 추가 항목은 미량 유해물질 및 예방적 기준이다.",
+      "cautionSource": "K-water 공식 페이지의 모니터링 항목 설명"
+    },
+    {
+      "id": "boil-water-chlorine-removal-2-3-minutes",
+      "claim": "수돗물에 포함된 염소는 2~3분 이상 끓이면 대부분 제거되며, 끓이지 않아도 상온에서 24시간 방치하면 휘발성에 의해 자연적으로 제거된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "남양주시청 상하수도사업소 - 수돗물의 올바른 사용",
+      "source_url": "https://www.nyj.go.kr/www/contents.do?key=3172",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "수도수",
+        "line": "가정용 수돗물",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "염소 제거는 풍미 개선 목적이 주이며, 안전성 관점에서 염소는 미량 수준에서 필요한 소독 성분이다. 염소 제거 후에는 세균 번식 가능성이 높아지므로 제거 물을 장시간 방치하지 말 것.",
+      "cautionSource": "남양주시청 물 안전성 안내"
+    },
+    {
+      "id": "green-water-from-corroded-pipes",
+      "claim": "수돗물의 녹물은 노후 배관의 부식에서 발생하며, 물관이 오래되거나 손상되면 내부에서 녹이 떨어져 물과 함께 나온다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MBC 이브닝 이슈 - 노후 수도관 관리",
+      "source_url": "https://imnews.imbc.com/replay/2016/nw1800/article/3978688_30230.html",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "수도수",
+        "line": "노후 배관 지역",
+        "years": "배관 연식 20년 이상",
+        "region": "KR"
+      },
+      "caution": "녹물은 국가 주도의 배관 교체 사업으로 점진적으로 해결되고 있으며, 개별 가정의 경우 저수조 청소 및 가정용 필터로 부분 개선 가능하다.",
+      "cautionSource": "환경부 수도 인프라 현대화 사업"
+    },
+    {
+      "id": "secondary-contamination-after-meter",
+      "claim": "수도 계량기 이후의 개별 저수조와 옥내 급수관에서 발생하는 2차 오염이 공급 과정에서 가장 취약한 부분이며, 저수조 내 오래된 자재의 부식, 맨홀을 통한 벌레와 이물질 유입이 주요 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "행정안전부 - 수돗물 2차 오염과 관리방안",
+      "source_url": "https://www.opm.go.kr/doc/Data/file/data//3277_3144.files/Sections1.html",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "수도수",
+        "line": "아파트·건물 저수조",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "아파트 저수조 청소는 건물주 또는 관리사무소 책임이며, 개인 가정의 배수관 청소는 유상 서비스로 처리한다. 저수조 청소 후 1~2일은 물탁함 현상이 발생할 수 있다.",
+      "cautionSource": "아파트관리신문 - 2차 오염 관리 기사"
+    },
+    {
+      "id": "water-mineral-content-safe-level",
+      "claim": "한국 수돗물의 평균 미네랄 함량은 국내 먹는샘물과 비슷한 수준이며, 미네랄 농도가 건강상 기준을 초과하는 경우는 거의 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "K-water 2012년 미네랄 함량 비교 조사",
+      "source_url": "https://www.kwater.or.kr/water/sub04/sub02/healPage.do?s_mid=152",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "수도수",
+        "line": "가정용 수돗물",
+        "years": "2012년 조사 기준, 현행 기준",
+        "region": "KR"
+      },
+      "caution": "미네랄 함량은 지역의 지하수 대수층에 따라 달라질 수 있으며, 경도(경수/연수) 편차는 있으나 안전기준 내에 있다.",
+      "cautionSource": "K-water 수질 분석 보고서"
+    },
+    {
+      "id": "modern-water-purifier-minerals-preserved",
+      "claim": "현대식 정수기는 대부분 나노필터(나노멤브레인) 또는 중공사막 필터를 사용하며, 이들 방식은 유해물질은 제거하면서 미네랄을 통과시켜 보존한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "렌트리 - 정수기 필터 종류 비교 가이드",
+      "source_url": "https://rentre.kr/story/%EC%A0%95%EC%88%98%EA%B8%B0-%ED%95%84%ED%84%B0-%EC%A2%85%EB%A5%98-%EC%B0%A8%EC%9D%B4%EC%A0%90-%EA%B0%80%EC%9D%B4%EB%93%9C/water-purifier-filter-types-comparison",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "정수기",
+        "line": "가정용 나노필터·중공사막 방식",
+        "years": "2010년대 이후",
+        "region": "KR"
+      },
+      "caution": "역삼투압(RO) 필터는 미네랄을 포함한 대부분의 물질을 제거하므로, 미네랄 보충 기능이 있는 모델을 선택하거나 정수기 없이 수돗물을 마시는 것이 더 나을 수 있다.",
+      "cautionSource": "렌트리 정수기 필터 성능 비교표"
+    },
+    {
+      "id": "tap-water-safe-without-purifier",
+      "claim": "한국의 수돗물은 환경부 및 K-water의 엄격한 기준에 따라 관리되므로, 정수기 없이 직음용해도 기본적인 안전 기준을 충족한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "환경부 먹는물 안전 관리 지침 및 K-water 글로벌 수질기준",
+      "source_url": "https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=1455&ccfNo=1&cciNo=1&cnpClsNo=2",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "수도수",
+        "line": "가정용 수돗물",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "이는 정상적인 공급 경로(정수장 → 배수관)의 기준이며, 개별 저수조나 노후 배관이 있는 경우는 2차 오염 가능성이 있으므로 필터 사용이 권장될 수 있다. 또한 염소냄새가 불쾌하면 필터로 풍미 개선이 가능하다.",
+      "cautionSource": "찾기쉬운 생활법령정보 - 먹는물 관리 기준"
+    },
+    {
+      "id": "chlorine-taste-removal-not-water-disinfection",
+      "claim": "가정용 정수기나 필터가 제거하는 염소냄새는 물의 풍미 개선일 뿐, 물의 소독 및 안전성을 높이는 것이 아니다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "환경부 수돗물 안전 가이드",
+      "source_url": "https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=1455&ccfNo=2&cciNo=1&cnpClsNo=1",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "수도수",
+        "line": "가정용 수돗물",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "필터 사용 후에는 정수된 물의 세균 번식 가능성이 높아지므로, 교체 주기를 지키지 않으면 오염의 위험이 있다. 특히 직수형 정수기는 저수조형보다 추가 부품 관리가 필요하다.",
+      "cautionSource": "환경부 수돗물 관리 기본 방침"
+    }
+  ]
+}

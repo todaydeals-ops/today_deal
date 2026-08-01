@@ -72,7 +72,7 @@ export default async function MagazineReportPage({ params }: { params: Promise<{
         {/* 리포트 헤더 */}
         <header style={{ borderTop: "3px solid #1a1a1a", paddingTop: 24, marginBottom: 32 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
-            <span style={{ fontSize: 11, fontFamily: "'JetBrains Mono', monospace", fontWeight: 700, letterSpacing: "0.12em", color: "#fff", background: "#1a1a1a", padding: "3px 10px", borderRadius: 4 }}>
+            <span style={{ fontSize: 11, fontFamily: "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif", fontWeight: 700, letterSpacing: "0.12em", color: "#fff", background: "#1a1a1a", padding: "3px 10px", borderRadius: 4 }}>
               REPORT
             </span>
             <span style={{ fontSize: 13, color: "#888" }}>{report.topic}</span>
@@ -98,12 +98,12 @@ export default async function MagazineReportPage({ params }: { params: Promise<{
 
         {/* 목차 */}
         <nav style={{ marginBottom: 48 }}>
-          <p style={{ fontSize: 11, fontFamily: "'JetBrains Mono', monospace", fontWeight: 700, letterSpacing: "0.1em", color: "#aaa", marginBottom: 12 }}>목 차</p>
+          <p style={{ fontSize: 11, fontFamily: "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif", fontWeight: 700, letterSpacing: "0.1em", color: "#aaa", marginBottom: 12 }}>목 차</p>
           <ol style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 8 }}>
             {report.articles.map((a, i) => (
               <li key={a.slug}>
                 <a href={`#article-${i + 1}`} style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none", color: "#1a1a1a", padding: "10px 14px", border: "1px solid #e8e8e8", borderRadius: 6, transition: "background .15s" }}>
-                  <span style={{ fontSize: 12, fontFamily: "'JetBrains Mono', monospace", fontWeight: 700, color: "#aaa", minWidth: 24 }}>0{i + 1}</span>
+                  <span style={{ fontSize: 12, fontFamily: "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif", fontWeight: 700, color: "#aaa", minWidth: 24 }}>0{i + 1}</span>
                   <span style={{ fontSize: 8, width: 8, height: 8, borderRadius: "50%", background: cornerOf(a.corner).color, flexShrink: 0, display: "inline-block" }} />
                   <span style={{ fontSize: 15, fontWeight: 600, lineHeight: 1.4 }}>{a.title}</span>
                   {a.readMin && <span style={{ fontSize: 12, color: "#aaa", marginLeft: "auto", whiteSpace: "nowrap" }}>{a.readMin}분</span>}
@@ -121,8 +121,8 @@ export default async function MagazineReportPage({ params }: { params: Promise<{
             {/* 아티클 헤더 */}
             <header style={{ marginBottom: 24 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 10 }}>
-                <span style={{ fontSize: 11, fontFamily: "'JetBrains Mono', monospace", color: "#aaa" }}>0{i + 1}</span>
-                <span style={{ fontSize: 12, color: cornerOf(a.corner).color, fontWeight: 700, fontFamily: "'JetBrains Mono', monospace", letterSpacing: "0.08em" }}>
+                <span style={{ fontSize: 11, fontFamily: "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif", color: "#aaa" }}>0{i + 1}</span>
+                <span style={{ fontSize: 12, color: cornerOf(a.corner).color, fontWeight: 700, fontFamily: "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif", letterSpacing: "0.08em" }}>
                   {cornerOf(a.corner).name}
                 </span>
                 {a.field && <span style={{ fontSize: 12, color: "#888", background: "#f0f0f0", padding: "2px 8px", borderRadius: 99 }}>{a.field}</span>}
@@ -136,7 +136,7 @@ export default async function MagazineReportPage({ params }: { params: Promise<{
             {/* 3줄 요약 (있을 때) */}
             {a.summary && a.summary.length > 0 && (
               <div style={{ background: "#fafafa", border: "1px solid #e8e8e8", borderRadius: 8, padding: "14px 18px", marginBottom: 24 }}>
-                <p style={{ fontSize: 11, fontFamily: "'JetBrains Mono', monospace", color: "#aaa", marginBottom: 10, fontWeight: 700 }}>3줄 요약</p>
+                <p style={{ fontSize: 11, fontFamily: "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif", color: "#aaa", marginBottom: 10, fontWeight: 700 }}>3줄 요약</p>
                 <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 6 }}>
                   {a.summary.map((s, si) => (
                     <li key={si} style={{ fontSize: 14, color: "#333", lineHeight: 1.6, display: "flex", gap: 8 }}>

@@ -1,0 +1,45 @@
+{
+  "topic": "점심 후 졸음과 커피냅",
+  "brand": "수면",
+  "article": "post-lunch-dip-coffee-nap",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "post-lunch-nap-improves-evening-performance",
+      "claim": "2박의 부분 수면 제한(partial sleep restriction) 후 점심 시간의 낮잠(post-lunch nap)은 이후 저녁의 수행 능력 저하를 완화하는 데 도움이 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Brain and Behavior - Exploring a Critical Threshold in Sleep Loss on Subsequent Evening Performance, Following Two Nights Partial Sleep Restriction: A Secondary Analysis is Implementing a Post-lunch Nap Beneficial?",
+      "source_url": "https://doi.org/10.1002/brb3.70741",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "점심 후 낮잠",
+        "line": "성능 회복",
+        "years": "2025",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "nap-duration-affects-nighttime-sleep",
+      "claim": "오후 낮잠의 시간대(25분 vs 90분)는 그 밤의 야간 수면에 영향을 미친다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Sleep Research - The Influence of 25- and 90-Min Afternoon Nap Opportunities on Subsequent Nighttime Sleep in Student Athletes",
+      "source_url": "https://doi.org/10.1111/jsr.70120",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "점심 후 낮잠",
+        "line": "낮잠이 야간 수면에 미치는 영향",
+        "years": "2026",
+        "region": "일반"
+      },
+      "caution": "90분 낮잠이 그 밤 수면을 방해할 수 있으므로, 일반 직장인의 점심 낮잠은 25~30분 정도의 짧은 시간이 바람직할 수 있다. 연구 대상이 선수 운동선수(athletes)이므로 일반인과는 맥락이 다를 수 있다.",
+      "cautionSource": "Journal of Sleep Research - The Influence of 25- and 90-Min Afternoon Nap Opportunities on Subsequent Nighttime Sleep in Student Athletes (90분 vs 25분 낮잠의 야간 수면 영향 비교)"
+    }
+  ]
+}

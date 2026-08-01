@@ -1,0 +1,77 @@
+{
+  "topic": "베개 높이·소재와 경추정렬·목통증·수면자세별 선택",
+  "brand": "공통",
+  "article": "pillow-sleep-guide",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "pillow-cervical-spine-neutral-position",
+      "claim": "베개의 주된 역할은 경추(cervical spine)를 중립 위치(neutral position)에 유지하는 것이다. 베개 높이가 너무 높거나 낮으면 경추만곡도가 교란되어 목통증 위험이 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Caggiari G, Talesa GR, Toro G, Jannelli E, Monteleone R. What type of mattress should be chosen to avoid back pain and improve sleep quality? A review of the literature. Journal of Physical Therapy Science",
+      "source_url": "https://doi.org/10.1186/s10195-021-00616-5",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "line": "성인",
+        "years": "2021",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "polyurethane-foam-pillow-ergonomic-properties",
+      "claim": "생체모방형 폴리우레탄 폼(polyurethane foam)은 인체공학적 지지력(ergonomic support)과 습열 편안함(hygrothermal comfort)의 조화를 제공할 수 있다. 천연 섬유(예: Luffa fiber) 강화 설계는 통기성과 지지력을 동시에 개선한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Zhang M, Zhou J, Tang N, Hu Y, Yan F, Chen Y, Guo J. Bio-Inspired Microstructural Engineering of Polyurethane Foams with Luffa Fibers for Synergistic Optimization of Ergonomic Support and Hygrothermal Comfort. Polymers",
+      "source_url": "https://doi.org/10.3390/polym18030320",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "line": "성인",
+        "years": "2026",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "pillow-material-breathability-sleep-quality",
+      "claim": "베개 소재의 통기성이 낮으면 야간 열과 습기 축적으로 인한 불편함이 증가하며, 수면 단계 지속 시간에 영향을 미친다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Robbins R, Weaver MD, Barger LK, Quan SF, Czeisler CA. Developing a tool to assess mattress satisfaction: the Boston Mattress Satisfaction Questionnaire. Frontiers in Sleep and Wakefulness",
+      "source_url": "https://doi.org/10.3389/frsle.2025.1509420",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "line": "성인",
+        "years": "2025",
+        "region": "글로벌"
+      },
+      "caution": "베개 만족도 평가는 개인의 체온, 습도 민감도, 수면 환경 등 다양한 요인에 의존한다. 일반화된 최적 소재보다는 개인 테스트가 중요."
+    },
+    {
+      "id": "neck-pain-pillow-related-factors",
+      "claim": "목통증(neck pain)과 편두통이 동반되는 환자들의 경우, 부분적으로 수면 자세와 베개 선택이 악화 요인이 될 수 있다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Rosa MDD, Florencio LL, Marçal JCS, Dach F, Palacio MB. The experience of neck pain in people with migraine: A qualitative study. Brazilian Journal of Physical Therapy",
+      "source_url": "https://doi.org/10.1016/j.bjpt.2025.101565",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "line": "성인 (편두통 환자)",
+        "years": "2026",
+        "region": "글로벌"
+      },
+      "caution": "목통증 있는 사람은 의료진 상담 후 베개 선택이 권장되며, 베개 높이 조정만으로 편두통을 치료할 수 없다."
+    }
+  ]
+}

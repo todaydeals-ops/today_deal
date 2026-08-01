@@ -1,0 +1,208 @@
+{
+  "topic": "제빵기(홈베이커리) 반죽 안 섞임·안 부풀음·겉만 탐·패들 박힘·세척 자가점검",
+  "brand": "공통",
+  "article": "bread-maker-selfcheck",
+  "captured": "2026-07-28",
+  "reused_facts": [
+    "beater-bowl-clearance-adjustment",
+    "oven-preheat-time-convection-importance",
+    "oven-temperature-discrepancy-user-reported"
+  ],
+  "declined_facts": [
+    {
+      "id": "thermal-overload-cooldown",
+      "why": "스탠드믹서의 20~30분 냉각 기능. 홈베이커리 기계는 제조사별로 과부하 보호장치 설계가 다르므로 공식 문서 없이 일반화 불가"
+    },
+    {
+      "id": "dough-maximum-continuous-time",
+      "why": "스탠드믹서의 최대 10분 규칙. 홈베이커리는 반죽 사이클이 미리 정해져 있어 사용자가 시간을 제어할 수 없음"
+    },
+    {
+      "id": "beater-size-overcapacity",
+      "why": "스탠드믹서의 용량 초과 경고. 홈베이커리는 컵 단위 정량 사용이므로 과용량 상황이 다름"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "bread-maker-dough-unmixed-ingredient-ratio",
+      "claim": "반죽이 제대로 섞이지 않을 때 주요 원인은 재료 비율이다. 설탕이나 지방(버터·기름)이 너무 많으면 글루텐 발달을 방해하고, 물이 너무 적으면 반죽이 뭉쳐지지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "일반적인 빵 반죽 문제 해결 가이드",
+      "source_url": "https://www.cnchemsino.com/ko/blog/how-to-solve-common-bread-dough-problems.html",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빵기",
+        "line": "홈베이커리 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "레시피의 재료 비율을 정확히 지켜야 한다. 밀가루 1컵(약 130g) 기준으로 물 3/4컵(약 180ml)이 기본 비율이며, 버터나 기름은 밀가루 대비 10~20% 이내로 제한하는 것이 권장된다.",
+      "cautionSource": "홈베이킹 표준 레시피 비율"
+    },
+    {
+      "id": "bread-maker-dough-unmixed-butter-cold",
+      "claim": "반죽에 버터를 넣을 때 버터가 너무 차갑거나 단단하면 반죽과 섞이지 않고 덩어리 형태로 남을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "일반적인 빵 반죽 문제 해결 가이드",
+      "source_url": "https://www.cnchemsino.com/ko/blog/how-to-solve-common-bread-dough-problems.html",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빵기",
+        "line": "홈베이커리 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "버터는 실온(약 20~25도)에서 부드러워진 상태로 준비하거나, 제빵기 레시피에서 '버터 넣기' 신호가 울릴 때까지 기다렸다가 추가하는 것이 권장된다. 냉동실에서 꺼낸 차가운 버터는 절대 사용하지 말 것.",
+      "cautionSource": "홈베이킹 표준 관행"
+    },
+    {
+      "id": "bread-maker-not-rising-yeast-expiry",
+      "claim": "반죽이 부풀어지지 않을 때 가장 흔한 원인은 드라이이스트(건조 효모)의 유통기한이 지났거나, 개봉 후 냉장 보관하지 않아 효모가 죽은 것이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "홈베이킹 커뮤니티 및 사용자 경험",
+      "source_url": "https://digitalog.com/110",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빵기",
+        "line": "홈베이커리 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "⚠️ 드라이이스트는 개봉 후 반드시 냉장 보관(2~8도)해야 하며, 냉동 보관하면 더 오래 유지된다. 유통기한은 용기에 명시되어 있으니 확인 후 사용할 것. 이스트가 죽었으면 새로운 제품을 구입해야 한다.",
+      "cautionSource": "드라이이스트 보관 표준"
+    },
+    {
+      "id": "bread-maker-not-rising-water-temperature",
+      "claim": "제빵기에 넣는 물의 온도가 35~40도일 때 이스트 발효가 최적으로 진행되며, 물이 너무 뜨거우면(60도 이상) 이스트가 죽고, 너무 차가우면(10도 이하) 발효가 거의 진행되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "발효빵 실패 원인 총정리 및 빵 반죽 문제 해결 가이드",
+      "source_url": "https://moniyomi.com/entry/%EB%B0%9C%ED%9A%A8%EB%B9%B5-%EC%8B%A4%ED%8C%A8-%EC%9B%90%EC%9D%B8-%EC%B4%9D%EC%A0%95%EB%A6%AC-%EC%B4%88%EB%B3%B4%EC%9E%90%EA%B0%80-%EA%BC%AD-%EC%95%8C%EC%95%84%EC%95%BC-%ED%95%A0-%ED%95%B5%EC%8B%AC-%ED%8F%AC%EC%9D%B8%ED%8A%B8",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빵기",
+        "line": "홈베이커리 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "제빵기 매뉴얼에서 권장하는 물 온도가 있으면 그 지시를 따를 것. 매뉴얼이 없으면 미지근한 물(체온 정도, 약 37도)을 사용하는 것이 가장 안전하다. 겨울철에는 물 온도가 식기 쉬우므로 데워서 사용할 것.",
+      "cautionSource": "효모 배양 표준 온도 범위"
+    },
+    {
+      "id": "bread-maker-not-rising-gluten-development",
+      "claim": "반죽이 부풀어지지 않을 때 글루텐이 부족할 수도 있다. 글루텐이 충분하지 않으면 탄산가스를 제대로 가두지 못해 발효되어도 부피가 늘어나지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "빵이 부푸는 것은 효모의 장난 및 발효빵 실패 원인 총정리",
+      "source_url": "https://www.busan.com/view/busan/view.php?code=2020121122174181893",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빵기",
+        "line": "홈베이커리 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "글루텐이 충분하려면 밀가루의 단백질 함량이 중요하다. 빵용 강력분(protein 12~14%)을 사용하는 것이 권장되며, 박력분(protein 8~10%)이나 중력분(protein 10~11%)을 사용하면 부풀음이 약할 수 있다. 제빵기 매뉴얼에서 추천하는 밀가루 종류를 확인할 것.",
+      "cautionSource": "밀가루 단백질 함량 기준"
+    },
+    {
+      "id": "bread-maker-not-rising-fermentation-environment",
+      "claim": "반죽이 부풀어지지 않을 때는 발효 온도와 습도를 확인해야 한다. 온도가 낮거나 건조한 환경에서는 발효가 제대로 진행되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "발효빵 실패 원인 총정리",
+      "source_url": "https://moniyomi.com/entry/%EB%B0%9C%ED%9A%A8%EB%B9%B5-%EC%8B%A4%ED%8C%A8-%EC%9B%90%EC%9D%B8-%EC%B4%9D%EC%A0%95%EB%A6%AC-%EC%B4%88%EB%B3%B4%EC%9E%90%EA%B0%80-%EA%BC%AD-%EC%95%8C%EC%95%84%EC%95%BC-%ED%95%A0-%ED%95%B5%EC%8B%AC-%ED%8F%AC%EC%9D%B8%ED%8A%B8",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빵기",
+        "line": "홈베이커리 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "최적의 발효 환경은 온도 25~28도, 습도 70~80%이다. 겨울에 제빵기를 사용할 때는 따뜻한 장소(거실, 부엌)에 놓고, 여름에는 너무 뜨거운 곳(햇빛 직사, 히터 근처)을 피할 것. 습도가 낮으면 제빵기 옆에 따뜻한 물컵을 놓아 습도를 올릴 수 있다.",
+      "cautionSource": "발효 환경 표준 범위"
+    },
+    {
+      "id": "bread-maker-burn-surface-temperature-too-high",
+      "claim": "제빵기의 구우미 단계에서 겉만 타거나 색이 너무 짙게 변할 때는 온도 설정이 너무 높을 수 있다. 160~170도의 비교적 낮은 온도에서 천천히 익히는 것이 겉과 속이 모두 고르게 익는다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "홈베이킹 커뮤니티 및 사용자 경험",
+      "source_url": "https://www.threads.com/@sophia_0543/post/DOSyzfzkg4O/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빵기",
+        "line": "홈베이커리 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "제빵기 매뉴얼에 구우미 설정이 있으면 그것을 우선한다. 수동 설정이 가능하다면, 처음 시도 시 레시피보다 5~10도 낮춘 온도에서 시작하고, 결과를 보며 조정할 것. 제빵기 모델마다 내부 온도 편차가 있으므로 한두 번 익숙해질 때까지 모니터링하는 것이 권장된다.",
+      "cautionSource": "사용자 경험 기반 온도 조정 팁"
+    },
+    {
+      "id": "bread-maker-burn-oven-temperature-variance",
+      "claim": "제빵기는 가정용 오븐과 마찬가지로 내부 온도가 불균일할 수 있으며, 한쪽만 타거나 위아래 색이 다른 현상은 대부분 열 분포의 차이 때문이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "홈베이킹 커뮤니티 및 오븐 사용 노하우",
+      "source_url": "https://moniyomi.com/entry/%EC%98%A4%EB%B8%90-%EC%82%AC%EC%9A%A9%EB%B2%95%EA%B3%BC-%EC%98%A8%EB%8F%84-%EC%A1%B0%EC%A0%88-%EB%85%B8%ED%95%98%EC%9A%B0-%ED%99%88%EB%B2%A0%EC%9D%B4%ED%82%B9-%EC%8B%A4%ED%8C%A8%EB%A5%BC-%EC%A4%84%EC%9D%B4%EB%8A%94-%ED%95%B5%EC%8B%AC-%ED%8C%80",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빵기",
+        "line": "홈베이커리 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "상단이 너무 빨리 갈색으로 변한다면, 구우미 단계에서 제빵기 상단 부분에 알루미늄 포일을 느슨하게 덮어 복사열을 차단할 수 있다. 포일은 기계를 완전히 덮지 말고, 갈색 부분만 가볍게 덮을 것.",
+      "cautionSource": "사용자 경험 기반 해결 방법"
+    },
+    {
+      "id": "bread-maker-paddle-stuck-dough-removal",
+      "claim": "제빵이 완성되어 팬에서 빵을 꺼낼 때 패들(반죽 무지개)이 빵 밑바닥에 박혀 나오지 않는 경우, 빵과 패들이 충분히 식을 때까지 기다린 후 제거하면 빵 손상을 최소화할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "빵 제거 및 홈베이킹 표준 절차",
+      "source_url": "https://www.stadlermade.com/ko/%ED%94%BC%EC%9E%90/%EB%81%88%EC%A0%81%ED%95%9C-%EB%B0%98%EC%A3%BD%EC%9D%84-%EA%B3%A0%EC%B9%98%EB%8A%94-%EB%B0%A9%EB%B2%95/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빵기",
+        "line": "홈베이커리 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "빵이 뜨거울 때 패들을 억지로 빼려고 하면 빵이 찢어질 수 있다. 빵 팬을 꺼낸 후 냉각 랙에서 빵이 충분히 식을 때까지(최소 5~10분) 기다릴 것. 패들이 여전히 박혀 있으면 제빵기 팬과 패들을 다시 5분 더 식힌 후, 손가락으로 부드럽게 흔들거나 넓은 칼로 빵 가장자리를 천천히 떼어낼 수 있다.",
+      "cautionSource": "홈베이킹 표준 절차"
+    },
+    {
+      "id": "bread-maker-paddle-cleaning-immediate-wash",
+      "claim": "제빵 후 패들과 팬을 사용 직후 따뜻한 물로 즉시 헹굴 것. 반죽이 마르면 제거하기 어려워진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "베이킹 도구 세척 및 관리 가이드",
+      "source_url": "https://www.ehomebaking.co.kr/m/board.html?code=jhj4221_board14&page=5&type=v&num1=999846&num2=00000&number=161&lock=N",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빵기",
+        "line": "홈베이커리 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "미온수(30~40도)에서 부드러운 스펀지나 솔로 닦을 것. 뜨거운 물이나 강한 솔로 문지르면 패들이나 팬의 코팅이 손상될 수 있다. 식기세척기 사용 여부는 제빵기 매뉴얼을 확인할 것.",
+      "cautionSource": "베이킹 도구 표준 세척법"
+    }
+  ]
+}

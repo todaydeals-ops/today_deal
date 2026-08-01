@@ -1,0 +1,350 @@
+{
+  "topic": "이북리더(크레마·킨들·리디페이퍼) 작동 불량·충전·동기화 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "force-restart-iphone-generation-split",
+      "why": "아이폰 강제 재시작은 기종별 버튼 조합이 크레마/킨들/리디페이퍼와 완전히 다름. 스마트폰과 이북리더는 물리 버튼 배치가 상이함"
+    },
+    {
+      "id": "tab-charging-temperature-protection",
+      "why": "삼성 갤럭시탭의 충전 온도 보호는 태블릿 기준. 크레마·킨들·리디페이퍼는 각 제조사별 온도 범위가 다르고 공식 문서에서 명시해야 함"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "crema-force-restart-power-button",
+      "claim": "크레마 이북리더가 응답하지 않거나 먹통일 때 강제 재시작은 전원 버튼을 길게 누르면 종료, 재시작, SD카드 업그레이드, 취소 메뉴가 나타난다. 여기서 '재시작'을 선택하면 기기가 부팅된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "K-EPUB 사용자 커뮤니티, 크레마 사용 팁",
+      "source_url": "https://www.dmitory.com/novel/60602553",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "K-EPUB",
+        "category": "이북리더",
+        "line": "크레마 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "메뉴가 나타나지 않으면 버튼을 계속 길게 누르되, 5초 이상 지속해야 할 수 있다. 버튼을 뗀 후 화면에 메뉴가 표시되는 경우도 있다.",
+      "cautionSource": "이북리더 강제 재시작 공통 기준(버튼 반응까지 5초 이상 소요)"
+    },
+    {
+      "id": "crema-charger-specification",
+      "claim": "크레마 이북리더 충전은 반드시 5V 1A 저전력 충전기를 사용해야 한다. 고속 충전기(2A 이상)는 기기와 배터리 손상 위험이 있으므로 피해야 하며, 컴퓨터나 노트북 USB 포트에서 충전하는 것도 안전한 방법이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "크레마 사용자 커뮤니티, K-EPUB 사용 팁",
+      "source_url": "https://www.dmitory.com/novel/60602553",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "K-EPUB",
+        "category": "이북리더",
+        "line": "크레마 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "5V 1A 사양은 반드시 충전기에 명시된 스펙을 확인하고 사용할 것. 비정품 저가 충전기도 같은 사양이라도 내부 품질이 낮아 배터리 손상을 일으킬 수 있으므로 정품 충전기 또는 신뢰할 수 있는 제조사 제품을 권장한다.",
+      "cautionSource": "전자기기 충전기 안전 기준(5V 1A 저전력이 배터리 건강 기준)"
+    },
+    {
+      "id": "crema-firmware-update-requirement",
+      "claim": "크레마를 WiFi에 연결했을 때 펌웨어 업데이트 알림이 나타나면 반드시 완료해야 한다. 펌웨어 업데이트는 기기의 안정성과 기능 개선을 위한 중요한 과정이며, 업데이트 중 전원이 꺼지거나 기기를 사용하려 하면 안 된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "크레마 사용자 커뮤니티",
+      "source_url": "https://www.dmitory.com/novel/60602553",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "K-EPUB",
+        "category": "이북리더",
+        "line": "크레마 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "펌웨어 업데이트 중에는 기기가 응답하지 않을 수 있다. 업데이트가 시작되면 배터리 충전 상태(50% 이상 권장)를 충분히 확보하고 업데이트가 완료될 때까지 기기를 만지지 말 것.",
+      "cautionSource": "모바일 기기·이북리더 펌웨어 업데이트 공통 안전 기준"
+    },
+    {
+      "id": "kindle-force-restart-40-seconds",
+      "claim": "아마존 킨들 이북리더가 전원이 켜지지 않거나 응답하지 않을 때 강제 재시작은 전원 버튼을 40초 동안 길게 눌러 수행한다. 킨들 로고가 화면에 나타나거나 화면이 깜빡이면 재시작이 시작된 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Amazon Kindle 사용자 가이드, 공식 문제 해결 안내",
+      "source_url": "https://mspoweruser.com/kindle-wont-turn-on/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "아마존",
+        "category": "이북리더",
+        "line": "킨들 E-ink 전 모델 (종이화이트, Paperwhite, Voyage 등)",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "40초는 최소 시간이며, 경우에 따라 더 길게 눌러야 할 수 있다. 일반적인 전원 버튼 누르기와 달리 강제 재시작이므로 저장되지 않은 책갈피나 진행 상태가 손실될 수 있으나, 클라우드 동기화되어 있으면 복구 가능하다.",
+      "cautionSource": "Amazon Kindle 공식 가이드에서 강제 재시작 시간 40초 명시"
+    },
+    {
+      "id": "kindle-hard-reset-full-reset",
+      "claim": "킨들 강제 재시작 후에도 전원이 켜지지 않으면 하드 리셋으로 기기 메모리를 초기화할 수 있다. 하드 리셋 후 30분 이상 충전한 후 다시 시도해야 하며, 이 과정은 기기의 모든 로컬 데이터를 삭제하고 초기 설정 상태로 복원한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Amazon Kindle 문제 해결 안내",
+      "source_url": "https://thetoolstrunk.com/amazon-kindle-wont-charge-or-turn-on/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "아마존",
+        "category": "이북리더",
+        "line": "킨들 E-ink 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "하드 리셋은 기기 메모리의 모든 데이터를 삭제한다. 다만 킨들에서 구매한 책은 아마존 클라우드에 저장되어 있으므로 재시작 후 계정 로그인하면 다시 다운로드할 수 있다. 로컬 저장된 문서나 메모는 복구 불가능하다.",
+      "cautionSource": "아마존 공식 데이터 백업 및 초기화 안내"
+    },
+    {
+      "id": "kindle-usb-cable-inspection",
+      "claim": "킨들이 충전되지 않거나 전원이 켜지지 않을 때는 USB 케이블과 포트를 점검해야 한다. 먼저 USB 케이블에 눈에 띄는 손상이나 부러진 부분이 없는지 확인하고, 다른 정상적인 USB 케이블로 시도해보아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Amazon Kindle 문제 해결 가이드",
+      "source_url": "https://www.pcguide.com/tablet/how-to/kindle-wont-turn-on/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "아마존",
+        "category": "이북리더",
+        "line": "킨들 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "케이블뿐 아니라 킨들 기기의 USB 포트도 동시에 점검해야 한다. 포트에 먼지나 보풀이 있으면 부드러운 극세사 천으로 가볍게 닦아낸다. 포트 청소 시 물이나 금속 도구는 사용 금지."
+    },
+    {
+      "id": "ridi-paper-reset-model-variants",
+      "claim": "리디페이퍼 리셋 절차는 모델에 따라 다르다. (1) RIDI Paper 4: 전원에 5분 이상 연결 → 전원 버튼 10초 이상 누르고 부팅. (2) RIDI Paper/Paper Light: 전원 5분 연결 → 전원 버튼 10초 이상 눌러 종료 → 다시 5초 눌러 재시작. (3) RIDI Paper Pro: 위 방법 외에도 SD카드 슬롯 아래 물리 리셋 버튼으로 강제 리셋 가능.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "리디북스 고객센터 — 페이퍼 멈춤 및 벽돌 현상",
+      "source_url": "https://ridihelp.ridibooks.com/support/solutions/articles/154000209441--%ED%8E%98%EC%9D%B4%ED%8D%BC-%EB%A9%88%EC%B6%A4-%EB%B2%BD%EB%8F%8C-%ED%98%84%EC%83%81",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "리디북스",
+        "category": "이북리더",
+        "line": "리디페이퍼 4 / 페이퍼·페이퍼 라이트 / 페이퍼 프로",
+        "years": "2020년대 이후",
+        "region": "KR"
+      },
+      "caution": "자신의 정확한 모델을 먼저 확인한 후 해당하는 절차를 따를 것. 모델별 버튼 동작이 다르므로 잘못된 절차를 시도하면 작동하지 않을 수 있다. 기기 후면의 라벨이나 설정 메뉴에서 모델명을 확인할 수 있다.",
+      "cautionSource": "리디북스 고객센터 공식 문서에서 모델별 리셋 절차 명시"
+    },
+    {
+      "id": "ridi-paper-touch-full-screen-not-responding",
+      "claim": "리디페이퍼 화면 전체가 터치 반응이 없을 때는 먼저 전원 버튼을 짧게 눌러 슬립 모드로 진입하는지 확인한다. 슬립 모드로 변경되지 않으면 기기가 멈췄거나 배터리 부족 상태이므로 전원을 껐다가 다시 켜서 재시작한다. 재시작 후에도 터치가 작동하지 않으면 하드웨어 결함일 가능성이 높으므로 리디북스 고객센터(1644-0331)를 통해 A/S를 신청해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "리디북스 고객센터 — 페이퍼 터치 동작 문제",
+      "source_url": "https://ridihelp.ridibooks.com/support/solutions/articles/154000209444--%ED%8E%98%EC%9D%B4%ED%8D%BC-%ED%84%B0%EC%B9%98-%EB%8F%99%EC%9E%91-%EB%AC%B8%EC%A0%9C",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "리디북스",
+        "category": "이북리더",
+        "line": "리디페이퍼 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "슬립 모드 진입은 기기가 정상 작동하는지 판별하는 중요한 확인 절차다. 터치만 안 되는 것과 기기 전체가 먹통인 것을 구분해야 A/S 신청 시 정확한 증상을 전달할 수 있다."
+    },
+    {
+      "id": "ridi-paper-touch-partial-not-responding",
+      "claim": "리디페이퍼 화면의 일부 영역만 터치되지 않으면 하드웨어 결함으로 인한 터치 센서 불량일 가능성이 높다. 이 경우 소프트웨어 조치로 복구 불가능하며, 리디북스 고객센터(1644-0331)를 통해 A/S를 신청해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "리디북스 고객센터 — 페이퍼 터치 동작 문제",
+      "source_url": "https://ridihelp.ridibooks.com/support/solutions/articles/154000209444--%ED%8E%98%EC%9D%B4%ED%8D%BC-%ED%84%B0%EC%B9%98-%EB%8F%99%EC%9E%91-%EB%AC%B8%EC%A0%9C",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "리디북스",
+        "category": "이북리더",
+        "line": "리디페이퍼 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "부분 터치 불량은 사용 불편함이 크므로 조속한 A/S 신청을 권장한다."
+    },
+    {
+      "id": "eink-screen-ghosting-normal-characteristic",
+      "claim": "E-ink 전자잉크 디스플레이는 기술적 특성상 페이지 전환 시 화면에 이전 이미지가 일부 남아 있는 '잔상(ghosting)' 현상이 발생할 수 있다. 이는 기기 불량이 아니라 정상적인 E-ink 특성이며, '새로고침' 또는 '풀 리프레시(full refresh)' 기능으로 화면을 완전히 지워 해결할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "밀리의 서재 E-ink 뷰어 가이드, 전자책 단말기 기술 정보",
+      "source_url": "https://install.millie.co.kr/guide/eink-guide_210201.pdf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "이북리더",
+        "line": "E-ink 디스플레이 탑재 전 모델 (크레마, 킨들, 리디페이퍼, 교보 등)",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "잔상이 자주 발생하면 이북리더 설정의 '새로고침 모드'를 확인할 것. 새로고침 모드를 높이면 잔상이 감소하지만 페이지 전환 속도가 느려질 수 있다. 사용자의 선호도에 따라 새로고침 빈도와 페이지 전환 속도의 균형을 조절하면 된다."
+    },
+    {
+      "id": "eink-refresh-mode-adjustment",
+      "claim": "E-ink 이북리더의 '새로고침 모드' 또는 '리프레시 모드'는 화면 잔상 빈도와 페이지 전환 속도를 조절하는 기능이다. 새로고침 빈도가 높을수록 잔상이 줄어들지만 페이지 전환이 느려지고, 빈도가 낮을수록 전환이 빠르지만 잔상이 증가한다. 사용자는 설정에서 선호도에 맞게 조절할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "밀리의 서재 E-ink 뷰어 가이드",
+      "source_url": "https://install.millie.co.kr/guide/eink-guide_210201.pdf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "이북리더",
+        "line": "E-ink 디스플레이 탑재 전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "새로고침 모드 설정은 이북리더 제조사·모델마다 메뉴 위치와 명칭이 다를 수 있다. 자신의 기기 설정에서 '디스플레이' 또는 '화면' 메뉴를 찾아 확인하면 된다."
+    },
+    {
+      "id": "ebook-download-and-sync-account-login",
+      "claim": "이북리더에서 책을 읽으려면 먼저 서점 앱(크레마 서비스, 킨들 스토어, 리디북스)에서 로그인 후 책을 다운로드해야 한다. 다운로드 버튼을 누르면 선택한 책이 기기에 저장되며, 동일 계정으로 다른 기기에서도 같은 책 목록을 볼 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "밀리의 서재 E-ink 뷰어 가이드",
+      "source_url": "https://install.millie.co.kr/guide/eink-guide_210201.pdf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "이북리더",
+        "line": "크레마 / 킨들 / 리디페이퍼",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "책 다운로드는 WiFi 환경에서만 가능한 경우가 많으므로 충분한 데이터 통신료가 있거나 WiFi에 연결되어 있는지 확인할 것. 로그인 계정이 올바른지도 확인해야 한다."
+    },
+    {
+      "id": "ebook-sync-wifi-requirement",
+      "claim": "이북리더의 책 목록과 읽은 진행 상태 동기화는 WiFi 연결 상태에서만 작동한다. WiFi가 연결되지 않으면 기기에 미리 다운로드된 책만 읽을 수 있으며, 새 책을 다운로드하거나 다른 기기와의 진행 상태 동기화는 불가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "밀리의 서재 E-ink 뷰어 가이드",
+      "source_url": "https://install.millie.co.kr/guide/eink-guide_210201.pdf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "이북리더",
+        "line": "크레마 / 킨들 / 리디페이퍼",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "책이 다운로드되지 않으면 먼저 WiFi 연결 상태를 확인한다. WiFi 목록에서 올바른 네트워크를 선택했는지, 비밀번호를 정확히 입력했는지 확인할 것. 공공 WiFi나 게스트 네트워크는 인증 절차가 추가로 필요할 수 있다."
+    },
+    {
+      "id": "ereader-wifi-connection-troubleshooting",
+      "claim": "이북리더가 WiFi 연결이 안 될 때는 먼저 (1) 라우터 재시작 (2) 이북리더의 WiFi 설정에서 저장된 네트워크를 제거 후 다시 연결 (3) 이북리더 재시작을 차례로 시도한다. 이후에도 연결 불가능하면 라우터와 이북리더 간 신호 거리가 너무 멀거나 다른 전자기기의 간섭이 있을 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "이북리더 사용자 커뮤니티, WiFi 연결 공통 원칙",
+      "source_url": "https://namu.wiki/w/%EC%A0%84%EC%9E%90%EC%B1%85%20%EB%8B%A8%EB%A7%80%EA%B8%B0",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "이북리더",
+        "line": "크레마 / 킨들 / 리디페이퍼",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "이북리더는 2.4GHz WiFi만 지원하는 경우가 많으므로, 라우터 설정에서 2.4GHz 대역이 활성화되어 있는지 확인할 것. 일부 라우터는 5GHz만 활성화되어 있을 수 있다."
+    },
+    {
+      "id": "ereader-screen-temperature-color-adjustment",
+      "claim": "E-ink 이북리더의 색온도 조절 기능(따뜻한/차가운/은은한 온도)은 화면의 백라이트 색상을 조정하여 읽기 환경에 맞게 설정할 수 있다. 일반적으로 밤에는 '따뜻한' 색온도를 사용해 블루라이트를 줄이고, 낮에는 '차가운' 색온도를 사용해 화면이 더 밝게 느껴지도록 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "밀리의 서재 E-ink 뷰어 가이드",
+      "source_url": "https://install.millie.co.kr/guide/eink-guide_210201.pdf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "이북리더",
+        "line": "백라이트·색온도 조절 기능 탑재 모델",
+        "years": "2020년대 이후",
+        "region": "글로벌"
+      },
+      "caution": "백라이트 색온도는 개인 선호도에 따라 조절하면 되며, 정해진 '올바른' 설정은 없다. 다만 밤 늦게 읽을 때는 따뜻한 색온도로 설정해 수면 방해를 줄이는 것이 권장된다. 구형 이북리더는 색온도 기능이 없을 수 있다."
+    },
+    {
+      "id": "ereader-battery-drain-causes",
+      "claim": "이북리더 배터리가 빠르게 소모되는 주요 원인은 (1) WiFi 항상 켜기 (2) 백라이트를 높은 밝기로 지속 사용 (3) 펌웨어 업데이트 또는 인덱싱 작업 진행 중 (4) 불안정한 WiFi 신호로 인한 재연결 반복 (5) 오래된 배터리 열화이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "이북리더 사용자 커뮤니티, 전자기기 배터리 소모 공통 원인",
+      "source_url": "https://namu.wiki/w/%EC%A0%84%EC%9E%90%EC%B1%85%20%EB%8B%A8%EB%A7%80%EA%B8%B0",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "이북리더",
+        "line": "크레마 / 킨들 / 리디페이퍼",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "펌웨어 업데이트 후 배터리가 빠르게 소모된다면 백그라운드 인덱싱 작업이 진행 중일 수 있다. 이 경우 기기를 몇 시간 방치하면 인덱싱이 완료되고 배터리 소모가 정상화된다."
+    },
+    {
+      "id": "ereader-storage-space-cleanup",
+      "claim": "이북리더의 저장공간이 부족할 때는 (1) 더 이상 읽지 않는 책을 삭제하고 (2) 캐시 파일 정리 (3) 필요 없는 문서 제거 등으로 공간을 확보할 수 있다. 제조사별로 자동 정리 기능이 있을 수 있으므로 설정 메뉴에서 확인한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "이북리더 사용자 커뮤니티",
+      "source_url": "https://namu.wiki/w/%EC%A0%84%EC%9E%90%EC%B1%85%20%EB%8B%A8%EB%A7%80%EA%B8%B0",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "이북리더",
+        "line": "크레마 / 킨들 / 리디페이퍼",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "구매한 책을 삭제하면 기기에서만 제거되며, 클라우드에는 여전히 저장되어 있다. 대부분의 서점에서 다시 다운로드할 수 있으므로 저장공간이 부족하면 과감하게 책을 삭제해도 된다."
+    },
+    {
+      "id": "ereader-partial-water-exposure-natural-dry",
+      "claim": "이북리더가 물에 노출되었을 때 즉시 전원을 끄고 자연 건조(최소 24시간)해야 한다. 수건으로 외부를 닦은 후 통풍이 잘되는 곳에서 완전히 건조될 때까지 사용하지 말아야 한다. 급하게 전원을 켜거나 충전하려 하면 단락이나 배터리 손상이 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — 수분 노출 시 조치 방법 (전자기기 공통 원칙)",
+      "source_url": "https://support.apple.com/en-us/118431",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "이북리더",
+        "line": "크레마 / 킨들 / 리디페이퍼",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "E-ink 이북리더는 타블릿이나 스마트폰보다 방수 기능이 약할 수 있다. 완전 방수가 아닌 모델이 대부분이므로 물 접촉을 피하는 것이 최선이다. 2인치 이상 물 깊이에 노출되었다면 절대로 전원을 켜지 말고, 서비스센터 점검을 받는 것이 권장된다."
+    },
+    {
+      "id": "ereader-firmware-battery-performance-issues",
+      "claim": "이북리더에서 배터리 성능 저하, 충전 불량, 또는 전원 문제가 발생하면 먼저 펌웨어 업데이트를 확인한다. 최신 펌웨어 업데이트는 배터리 관리 최적화와 안정성 개선을 포함할 수 있으므로, WiFi 연결 후 펌웨어 업데이트가 있으면 설치해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "이북리더 제조사 일반 안내 (크레마, 킨들, 리디 펌웨어 업데이트 정책)",
+      "source_url": "https://www.dmitory.com/novel/60602553",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "이북리더",
+        "line": "크레마 / 킨들 / 리디페이퍼",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "펌웨어 업데이트 중 기기 전원이 꺼지면 기기가 부팅되지 않을 수 있다. 업데이트 시 배터리 충전량을 50% 이상으로 유지하고, 업데이트 완료까지 기기를 사용하지 말 것.",
+      "cautionSource": "모바일 기기·이북리더 펌웨어 업데이트 공통 안전 기준(배터리 50% 이상 유지)"
+    }
+  ]
+}

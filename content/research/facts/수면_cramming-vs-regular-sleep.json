@@ -1,0 +1,137 @@
+{
+  "topic": "벼락치기 vs 규칙수면: 수면과 시험 성적 비교 연구",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "regular-sleep-better-than-cramming",
+      "claim": "규칙적인 수면 습관을 유지한 학생이 벼락치기하는 학생보다 시험 성적이 더 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Harvard Medical School Research; Multiple peer-reviewed studies",
+      "source_url": "https://www.sleepfoundation.org/school-and-sleep/final-exams-and-sleep",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "학생 시험 성적",
+        "years": "2010~",
+        "region": "일반"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "all-nighter-lowers-grades",
+      "claim": "밤샘 시험 준비(all-night revision sessions)는 실제로 학점을 낮춘다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Harvard Medical School Research",
+      "source_url": "https://www.sleepfoundation.org/school-and-sleep/final-exams-and-sleep",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "밤샘 준비의 부작용",
+        "years": "2010~",
+        "region": "일반"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "long-term-sleep-matters-not-night-before",
+      "claim": "시험 전날의 수면과 시험 성적 사이에는 유의미한 상관관계가 없으며, 대신 시험 전 한 달간의 수면 기간과 질이 더 강하게 성적과 연관된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PLOS One - Okano et al. 'Sleep quality, duration, and consistency are associated with better academic performance in college students'",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6773696/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "MIT 학생 대상 실증 연구",
+        "years": "2019",
+        "region": "미국"
+      },
+      "caution": "이 연구는 88명의 MIT 화학 학생을 대상으로 한 학기 동안 Fitbit로 추적한 결과이므로, 표본 크기와 학생 특성 고려 필요",
+      "cautionSource": "Okano et al. (2019) PLOS One - Methods section"
+    },
+    {
+      "id": "sleep-duration-gpa-correlation",
+      "claim": "수면 시간이 길수록 학점(GPA)과 양의 상관관계를 보이며, 상관계수는 r=0.38이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Nature - Okano et al. 'Sleep quality, duration, and consistency are associated with better academic performance in college students'",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6773696/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면 시간과 학점 상관성",
+        "years": "2019",
+        "region": "미국"
+      },
+      "caution": "DOI: 10.1038/s41539-019-0055-z. 상관계수 r=0.38은 중간 정도의 양의 상관관계",
+      "cautionSource": "Okano et al. (2019) Nature Scientific Reports"
+    },
+    {
+      "id": "sleep-quality-gpa-correlation",
+      "claim": "수면 질(quality)이 더 좋을수록 학점과의 상관성이 더 높으며, 상관계수는 r=0.44이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Nature - Okano et al. 'Sleep quality, duration, and consistency are associated with better academic performance in college students'",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6773696/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면 질과 학점 상관성",
+        "years": "2019",
+        "region": "미국"
+      },
+      "caution": "DOI: 10.1038/s41539-019-0055-z. 상관계수 r=0.44는 수면 시간의 상관계수 r=0.38보다 높아서 수면 질이 더 중요함을 시사",
+      "cautionSource": "Okano et al. (2019) Nature Scientific Reports"
+    },
+    {
+      "id": "sleep-inconsistency-gpa-correlation",
+      "claim": "수면 일관성이 낮을수록(불규칙한 수면) 학점과 부의 상관관계를 보이며, 상관계수는 r=-0.36이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Nature - Okano et al. 'Sleep quality, duration, and consistency are associated with better academic performance in college students'",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6773696/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면 일관성과 학점 상관성",
+        "years": "2019",
+        "region": "미국"
+      },
+      "caution": "DOI: 10.1038/s41539-019-0055-z. 부의 상관계수는 불규칙한 수면이 학점을 낮춤을 의미",
+      "cautionSource": "Okano et al. (2019) Nature Scientific Reports"
+    },
+    {
+      "id": "sleep-consolidation-vs-acute-benefit",
+      "claim": "수면은 학습 단계 중 기억 공고화(memory consolidation)를 촉진하는 방식으로 학점 향상에 기여하며, 시험 직전의 급성 효과(acute benefit)보다는 학습 기간 동안의 누적 효과가 더 중요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Nature - Okano et al. 'Sleep quality, duration, and consistency are associated with better academic performance in college students'",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6773696/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면 메커니즘과 학습",
+        "years": "2019",
+        "region": "미국"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

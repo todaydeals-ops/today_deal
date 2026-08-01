@@ -1,0 +1,155 @@
+{
+  "topic": "카페인과 수면: 카페인 반감기, 취침 몇 시간 전 커트라인 근거",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "caffeine-half-life-range",
+      "claim": "카페인의 반감기는 개인별로 2~12시간 범위에 있으며, 평균 5~6시간이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation - Caffeine and Sleep",
+      "source_url": "https://www.sleepfoundation.org/nutrition/caffeine-and-sleep",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "카페인 약동학",
+        "years": "2020~",
+        "region": "일반"
+      },
+      "caution": "개인차가 크므로(2~12시간) 자신의 민감도에 맞게 조정 필요",
+      "cautionSource": "Sleep Foundation - Caffeine and Sleep"
+    },
+    {
+      "id": "caffeine-metabolism-factors",
+      "claim": "담배를 피우는 사람은 비흡연자보다 약 50% 빠르게 카페인을 제거하고, 임신 중인 사람은 일반인의 약 2배 느리게 카페인을 대사한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation - Caffeine and Sleep",
+      "source_url": "https://www.sleepfoundation.org/nutrition/caffeine-and-sleep",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "카페인 대사 개인 변수",
+        "years": "2020~",
+        "region": "일반"
+      },
+      "caution": "약물, 임신 상태, 흡연 여부에 따라 카페인 반감기가 크게 달라질 수 있음",
+      "cautionSource": "Sleep Foundation - Caffeine and Sleep"
+    },
+    {
+      "id": "caffeine-cutoff-8-10-hours",
+      "claim": "최적의 수면을 위해 취침 8~10시간 전에 카페인 섭취를 중단할 것을 권장한다. 예: 밤 10시에 자려면 오후 12시~2시까지 카페인 중단.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation - Caffeine and Sleep",
+      "source_url": "https://www.sleepfoundation.org/nutrition/caffeine-and-sleep",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "카페인 금기 시간대",
+        "years": "2020~",
+        "region": "일반"
+      },
+      "caution": "개인에 따라 10시간 이상 필요할 수 있음",
+      "cautionSource": "Sleep Foundation - Caffeine and Sleep"
+    },
+    {
+      "id": "caffeine-100mg-timing-safe",
+      "claim": "카페인 100mg(일반적인 커피 1잔) 용량은 취침 4시간 이내에 섭취해도 수면에 유의미한 방해가 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SLEEP Journal - Gardiner et al. 'Dose and timing effects of caffeine on subsequent sleep: a randomized clinical crossover trial'",
+      "source_url": "https://academic.oup.com/sleep/article/48/4/zsae230/7815486",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "저용량 카페인 타이밍",
+        "years": "2024",
+        "region": "일반"
+      },
+      "caution": "DOI: 10.1093/sleep/zsae230. 2024년 최신 임상 시험 결과",
+      "cautionSource": "Gardiner et al. (2024) SLEEP Journal, Oxford Academic"
+    },
+    {
+      "id": "caffeine-400mg-12-hours-before",
+      "claim": "카페인 400mg(고용량) 단회 섭취는 취침 12시간 전까지도 수면을 방해하며, 수면 개시 지연(sleep onset latency)과 수면 구조 변화(altered sleep architecture)를 초래한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SLEEP Journal - Gardiner et al. 'Dose and timing effects of caffeine on subsequent sleep: a randomized clinical crossover trial'",
+      "source_url": "https://academic.oup.com/sleep/article/48/4/zsae230/7815486",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "고용량 카페인 효과",
+        "years": "2024",
+        "region": "일반"
+      },
+      "caution": "DOI: 10.1093/sleep/zsae230. 400mg는 고용량이므로 주의 필요",
+      "cautionSource": "Gardiner et al. (2024) SLEEP Journal, Oxford Academic"
+    },
+    {
+      "id": "caffeine-400mg-8-hours-sleep-fragmentation",
+      "claim": "카페인 400mg을 취침 8시간 전에 섭취하면 수면 단편화(sleep fragmentation)를 증가시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SLEEP Journal - Gardiner et al. 'Dose and timing effects of caffeine on subsequent sleep: a randomized clinical crossover trial'",
+      "source_url": "https://academic.oup.com/sleep/article/48/4/zsae230/7815486",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "고용량 카페인 8시간 전 효과",
+        "years": "2024",
+        "region": "일반"
+      },
+      "caution": "DOI: 10.1093/sleep/zsae230. 수면 단편화는 깊은 수면을 방해",
+      "cautionSource": "Gardiner et al. (2024) SLEEP Journal, Oxford Academic"
+    },
+    {
+      "id": "caffeine-400mg-4-hours-sleep-quality",
+      "claim": "카페인 400mg을 취침 4시간 전에 섭취하면 주관적 수면 질이 34% 감소하고, 객관적으로는 수면 시간이 약 51분 단축된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SLEEP Journal - Gardiner et al. 'Dose and timing effects of caffeine on subsequent sleep: a randomized clinical crossover trial'",
+      "source_url": "https://academic.oup.com/sleep/article/48/4/zsae230/7815486",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "고용량 카페인 4시간 전 효과",
+        "years": "2024",
+        "region": "일반"
+      },
+      "caution": "DOI: 10.1093/sleep/zsae230. 취침 4시간 전도 상당한 영향 있음",
+      "cautionSource": "Gardiner et al. (2024) SLEEP Journal, Oxford Academic"
+    },
+    {
+      "id": "caffeine-perception-gap",
+      "claim": "카페인 섭취자는 자신의 수면 장애를 자각하지 못하는 경향이 있으며, 특히 4시간 이상 전에 섭취한 경우 인식 격차가 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SLEEP Journal - Gardiner et al. 'Dose and timing effects of caffeine on subsequent sleep: a randomized clinical crossover trial'",
+      "source_url": "https://academic.oup.com/sleep/article/48/4/zsae230/7815486",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "카페인 수면 영향 인식",
+        "years": "2024",
+        "region": "일반"
+      },
+      "caution": "DOI: 10.1093/sleep/zsae230. 피험자들은 자신의 수면이 실제로 나빠진 줄 모르고 있었음",
+      "cautionSource": "Gardiner et al. (2024) SLEEP Journal, Oxford Academic"
+    }
+  ]
+}

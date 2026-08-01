@@ -1,0 +1,93 @@
+{
+  "topic": "유아의 낮잠과 야간수면 관계 및 낮잠 중단 시기",
+  "brand": "공통",
+  "article": "toddler-nap-night-sleep",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "nap-does-not-disrupt-night-sleep",
+      "claim": "생후 6-36개월 유아에서 적절한 낮잠(오전·오후 각 1-2시간)은 야간 수면을 방해하지 않으며, 오히려 과피로(overtiredness) 예방으로 밤잠 품질 개선 경향.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Horger et al., Sensors 2026",
+      "source_url": "https://doi.org/10.3390/s26072275",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 6-36개월",
+        "region": "국제"
+      },
+      "caution": "낮잠 시간이 오전·오후 각 1-2시간이고, 늦은 오후(16시 이전)에 끝나야 야간수면 미영향. 개인차 있음."
+    },
+    {
+      "id": "overtiredness-paradox",
+      "claim": "낮잠 부족으로 인한 과피로 상태에서는 오히려 야간 수면이 비정상적으로 짧아지거나 자주 깨는 현상 발생. '낮잠 제한→밤에 더 잘 자는' 것은 오해.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Horger et al., Sensors 2026 + Ono et al., Clocks & Sleep 2025",
+      "source_url": "https://doi.org/10.3390/s26072275",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 12-36개월",
+        "region": "국제"
+      },
+      "caution": "과피로 신호(행동 과잉·주의산만·울음)를 부모가 놓치면 악순환 심화."
+    },
+    {
+      "id": "nap-consolidation-timeline",
+      "claim": "생후 12-18개월경 낮잠이 2회(오전·오후)에서 1회(오후)로 통합. 24-30개월경 일부 유아가 낮잠 중단. 3세 이후 대다수 낮잠 소실.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Ono et al., Clocks & Sleep 2025",
+      "source_url": "https://doi.org/10.3390/clockssleep7020025",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 12-36개월",
+        "region": "국제"
+      },
+      "caution": "12-18개월 통합, 24-30개월 중단은 평균 타이밍. 개인차·문화적 차이 매우 큼. 일부 3-4세도 낮잠 필요.",
+      "cautionSource": "Ono et al., Clocks & Sleep 2025"
+    },
+    {
+      "id": "screen-time-before-bed-sleep-degradation",
+      "claim": "자기 1시간 내 화면(태블릿·스마트폰·TV) 노출은 유아 수면 개시 시간 연장 및 수면 효율 저하. 생후 12-30개월 대상 임상 시험 결과.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Pickard et al., JAMA Pediatrics 2024",
+      "source_url": "https://doi.org/10.1001/jamapediatrics.2024.3997",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 12-30개월",
+        "region": "국제"
+      },
+      "caution": "자기 1시간 이내 화면 노출로 수면 개시 시간 평균 15-30분 지연, 수면 효율 12% 저하.",
+      "cautionSource": "Pickard et al., JAMA Pediatrics 2024"
+    },
+    {
+      "id": "nap-timing-consistency",
+      "claim": "낮잠 시간을 일관되게 유지(매일 같은 시각)하는 것이 낮잠 품질 및 야간수면 안정성에 효과. 요일별 변동 시 수면 구조 붕괴 경향.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Ono et al., Clocks & Sleep 2025",
+      "source_url": "https://doi.org/10.3390/clockssleep7020025",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 12-36개월",
+        "region": "국제"
+      },
+      "caution": "일관성 효과는 개별 생체시계 성숙도·부모 양육 철학에 따라 편차. 절대 규칙은 아님."
+    }
+  ]
+}

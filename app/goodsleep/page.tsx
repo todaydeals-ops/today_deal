@@ -11,7 +11,7 @@ import "../magazine/magazine.css";
 
 // 잠자리연구소 — 오늘의딜 파생 수면·침구 전문 미디어. field="수면·침구" + 고유 6분류.
 export const revalidate = 3600;
-const mono = "'JetBrains Mono', monospace";
+const mono = "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif";
 const serif = "'Noto Serif KR', serif";
 const PER = 12;
 const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
@@ -107,7 +107,7 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
                       <span className="mz-row-num" style={{ fontFamily: mono, fontSize: 13, fontWeight: 600, color: "#c0b8a9" }}>{String((page - 1) * PER + (page === 1 ? i + 2 : i + 1)).padStart(2, "0")}</span>
                       <span style={{ display: "flex", alignItems: "center", gap: 9 }}>
                         <span style={{ width: 8, height: 8, borderRadius: 9999, background: rc?.color ?? "#3f5a54", flex: "none" }} />
-                        <span style={{ fontFamily: mono, fontSize: 11, fontWeight: 700, color: rc?.color ?? "#3f5a54" }}>{rc?.label ?? "수면"}</span>
+                        <span style={{ fontSize: 11.5, fontWeight: 700, color: rc?.color ?? "#3f5a54" }}>{rc?.label ?? "수면"}</span>
                       </span>
                       <span className="mz-row-title" style={{ fontFamily: serif, fontWeight: 600, fontSize: 21, letterSpacing: "-0.6px", lineHeight: 1.35, color: "#16140f" }}>{a.title}</span>
                       <span className="mz-row-go row-go" style={{ fontFamily: mono, fontSize: 16, color: "#16140f" }}>&rarr;</span>

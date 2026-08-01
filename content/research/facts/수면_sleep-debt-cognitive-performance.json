@@ -1,0 +1,78 @@
+{
+  "topic": "수면부채와 인지수행 저하",
+  "brand": "수면",
+  "article": "sleep-debt-cognitive-performance",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sleep-debt-impairs-cognition",
+      "claim": "누적된 수면부채(sleep debt)는 인지기능과 운동기능을 저하시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Clocks & Sleep - The Role of Sleep Banking in Reducing Cognitive and Motor Impairments from Subsequent Sleep Restriction: A Narrative Review",
+      "source_url": "https://doi.org/10.3390/clockssleep8010008",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "직장인 수면건강",
+        "line": "수면부채 메커니즘",
+        "years": "2020~",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "sleep-banking-recovery",
+      "claim": "이전에 부족했던 수면을 충분히 취함으로써('수면 보충/banking') 수면부채로 인한 인지·운동 손상을 부분적으로 회복할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Clocks & Sleep - The Role of Sleep Banking in Reducing Cognitive and Motor Impairments from Subsequent Sleep Restriction: A Narrative Review",
+      "source_url": "https://doi.org/10.3390/clockssleep8010008",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "직장인 수면건강",
+        "line": "수면부채 회복전략",
+        "years": "2020~",
+        "region": "일반"
+      },
+      "caution": "부분 회복이므로, 규칙적인 수면이 중단된 부족을 완전히 보충할 수는 없다."
+    },
+    {
+      "id": "school-start-delay-improves-inhibition",
+      "claim": "학교 시작 시간을 1시간 뒤로 미루면 청소년의 수면량 증가, 주간 졸음 감소, 억제 통제(inhibitory control) 개선이 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Scientific Reports - A one-hour delayed school start improves sleep, sleepiness and inhibitory control in early adolescents in a randomized controlled trial",
+      "source_url": "https://doi.org/10.1038/s41598-026-50892-6",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "청소년 수면",
+        "line": "학교시간정책 영향",
+        "years": "2026",
+        "region": "일반"
+      },
+      "caution": "연구는 청소년 대상(early adolescents)이며, 성인 직장인에 대한 직접 적용은 다를 수 있다."
+    },
+    {
+      "id": "ultra-endurance-sleep-deprivation-cognition",
+      "claim": "초장거리 내구력 자전거 경주(레이스)에서 극심한 수면부족은 인지적 비용을 야기하며, 실제로 인지 수행능력 저하가 관찰된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Sleep Research - The Cognitive Costs of Sleep Deprivation in Ultra-Endurance Cycling: Insights From the Race Across France",
+      "source_url": "https://doi.org/10.1111/jsr.70295",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "극한환경 수면",
+        "line": "초장거리 운동 중 피로",
+        "years": "2026",
+        "region": "일반"
+      },
+      "caution": "극한 체력 소모 환경(수일간 거의 수면 없는 경주)에 대한 연구로, 일상적 직장인 상황과는 다르다."
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "topic": "섬유유연제 팩트체크 — 필수성·부작용·올바른 사용",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "fabric-softener-not-essential",
+      "claim": "섬유유연제는 필수 제품이 아니며 세정력이나 살균과 무관하고 부드러움만 제공하는 부가 기능이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "섬유유연제 제조사·세제 업계 가이드",
+      "source_url": "https://nosearch.com/contents/encyclopedia/living/washing_machine/842",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁용품",
+        "product_type": "섬유유연제",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "cationic-surfactant-coating",
+      "claim": "섬유유연제 주성분인 양이온 계면활성제(에스터쿼트)가 세탁 후 섬유 표면에 얇은 코팅막을 형성해 섬유 가닥 사이 마찰을 감소시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "노써치 세제 전문 기사",
+      "source_url": "https://nosearch.com/contents/encyclopedia/living/washing_machine/842",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁용품",
+        "product_type": "섬유유연제",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "antistatic-mechanism",
+      "claim": "양이온 계면활성제가 세탁 후 음이온 세제 잔류와 중화되어 정전기 방지 효과를 발생시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "노써치 세제 전문 기사",
+      "source_url": "https://nosearch.com/contents/encyclopedia/living/washing_machine/842",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁용품",
+        "product_type": "섬유유연제",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "towel-absorption-loss",
+      "claim": "섬유유연제의 계면활성제 코팅이 수건 섬유 표면에 막을 형성하여 물 흡수 속도를 저하시키며, 반복 사용 시 흡수력 지속 악화·눅눅함·냄새 배임이 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "노써치 세제 전문 기사, 푸드레시피",
+      "source_url": "https://nosearch.com/contents/encyclopedia/living_etc/bath_towel/612",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁용품",
+        "product_type": "섬유유연제",
+        "target_fabric": "수건",
+        "region": "KR"
+      },
+      "caution": "수건에 반복 사용 금지",
+      "cautionSource": "https://nosearch.com/contents/encyclopedia/living_etc/bath_towel/612"
+    },
+    {
+      "id": "performance-wear-breathability",
+      "claim": "기능성 운동복·요가복·등산복 등의 흡습성·발산성·방수 기능이 의존하는 섬유 미세구조가 계면활성제 코팅에 의해 폐쇄되어 땀 흡수·통풍 기능이 저하된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "웹 검색 결과(여러 세제 전문 매체)",
+      "source_url": "https://foodrecipe.co.kr/life/precautions-when-washing-with-fabric-softener/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁용품",
+        "product_type": "섬유유연제",
+        "target_fabric": "기능성 운동복, 요가복, 등산복",
+        "region": "KR"
+      },
+      "caution": "기능성 의류에 사용 금지",
+      "cautionSource": "https://foodrecipe.co.kr/life/precautions-when-washing-with-fabric-softener/"
+    },
+    {
+      "id": "synthetic-fragrance-respiratory-risk",
+      "claim": "일부 자료에서 섬유유연제의 인공 향료(톨루엔 의심 물질)가 호흡기 자극·천식 유발 가능성을 언급하고 있다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "온라인 건강정보 블로그(학술 근거 미검증)",
+      "source_url": "https://focusedfrantic.com/entry/%EC%84%AC%EC%9C%A0%EC%9C%A0%EC%97%B0%EC%A0%9C%EA%B0%80-%EA%B1%B4%EA%B0%95%EC%97%90-%EB%AF%B8%EC%B9%98%EB%8A%94-%EC%98%81%ED%96%A5",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁용품",
+        "product_type": "섬유유연제",
+        "health_aspect": "호흡기 자극",
+        "region": "KR"
+      },
+      "caution": "임상 데이터 없음. 글에서 사용하지 말 것.",
+      "cautionSource": null
+    },
+    {
+      "id": "infant-clothing-not-recommended",
+      "claim": "신생아 피부가 매우 민감하므로 신생아 옷에는 섬유유연제를 사용하지 않을 것을 권장한다. 계면활성제 코팅이 피부·섬유 사이 공기 순환을 차단하여 습기가 갇힐 수 있기 때문이다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "더블하트(아기 용품 브랜드), 육아 커뮤니티(82cook·클리앙)",
+      "source_url": "https://m.doubleheart.co.kr/article/%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8/3/425/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁용품",
+        "product_type": "섬유유연제",
+        "target_fabric": "신생아/아기 옷",
+        "age_group": "0-24개월",
+        "region": "KR"
+      },
+      "caution": "후기 기반 권장사항. 학술 검증 부족.",
+      "cautionSource": null
+    },
+    {
+      "id": "sensitive-skin-caution",
+      "claim": "섬유유연제의 합성 향료·방부제·색소가 민감성 피부나 아토피 병력이 있는 사람에게 증상 악화를 유발할 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "웹 검색(여러 건강정보 사이트 및 커뮤니티)",
+      "source_url": "https://focusedfrantic.com/entry/%EC%84%AC%EC%9C%A0%EC%9C%A0%EC%97%B0%EC%A0%9C%EA%B0%80-%EA%B1%B4%EA%B0%95%EC%97%90-%EB%AF%B8%EC%B9%98%EB%8A%94-%EC%98%81%ED%96%A5",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁용품",
+        "product_type": "섬유유연제",
+        "health_aspect": "피부 민감성, 아토피",
+        "region": "KR"
+      },
+      "caution": "금지 대상이 아니라 테스트 후 반응 여부로 판단. 순차 대안 톤 필수.",
+      "cautionSource": null
+    },
+    {
+      "id": "white-vinegar-neutralization",
+      "claim": "백식초(화이트 비니거)의 아세트산이 알칼리성 계면활성제·세제 잔류를 산염기 중화 반응으로 제거하여 세탁조 잔여물·냄새를 해결할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "푸드레시피 세탁 가이드 및 화학 원리",
+      "source_url": "https://foodrecipe.co.kr/life/white-vinegar-laundry-odor-rinse-tip/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁용품",
+        "problem": "세탁조 잔여물, 냄새",
+        "solution": "백식초 사용",
+        "region": "KR"
+      },
+      "caution": "백식초만 사용. 사과식초·현미식초는 얼룩 위험. 용량: 냄새 제거 1-2 티스푼, 강력 세정 1/2컵(120mL). 건조 후 식초 냄새는 휘발로 사라짐.",
+      "cautionSource": "https://foodrecipe.co.kr/life/white-vinegar-laundry-odor-rinse-tip/"
+    },
+    {
+      "id": "microplastic-capsules",
+      "claim": "일부 섬유유연제 제품에서 향을 오래 유지하기 위해 멜라민-포름알데히드 수지 기반 미세플라스틱 캡슐('마이크로캡슐')이 사용되고 있으며, 2019년 시험 검사에서 12개 제품 중 5개에서 검출되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "경향신문·국제신문(2019년 보도), 환경부 규제 자료",
+      "source_url": "https://m.khan.co.kr/economy/industry-trade/article/201902200600005",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁용품",
+        "product_type": "섬유유연제",
+        "concern": "미세플라스틱",
+        "tested_year": 2019,
+        "region": "KR"
+      },
+      "caution": "현재는 제조사들이 자발적으로 마이크로캡슐 제거 중.",
+      "cautionSource": "https://m.khan.co.kr/economy/industry-trade/article/201902200600005"
+    },
+    {
+      "id": "microplastic-environmental-impact",
+      "claim": "크기 5㎜ 이하의 미세플라스틱은 물에 녹지 않으며 세탁 후 하수도를 통해 수생태계를 오염시키고 수산물을 통해 최종적으로 인체에 유입된다. 환경부 추정에 따르면 미세플라스틱을 함유한 섬유유연제와 합성세제로부터 연간 약 13.5톤의 미세플라스틱이 국내 물 생태계로 배출된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "경향신문·국제신문(2019년 보도), 환경부",
+      "source_url": "https://m.khan.co.kr/economy/industry-trade/article/201902200600005",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁용품",
+        "product_type": "섬유유연제",
+        "concern": "환경 오염",
+        "annual_emission_ton": 13.5,
+        "year_estimated": 2019,
+        "region": "KR"
+      },
+      "caution": "인체 건강 영향은 아직 불명.",
+      "cautionSource": null
+    },
+    {
+      "id": "fabric-softener-overdose-harms",
+      "claim": "섬유유연제의 과투입(MAX선 초과)은 환경오염, 옷의 변색, 피부 자극, 곰팡이 번식을 초래한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "노써치 세제 전문 기사",
+      "source_url": "https://nosearch.com/contents/encyclopedia/living/washing_machine/842",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁용품",
+        "product_type": "섬유유연제",
+        "usage_type": "과투입",
+        "region": "KR"
+      },
+      "caution": "권장량 준수: 일반 제품 60mL, 고농축 30mL (5kg 세탁기 기준)",
+      "cautionSource": "https://nosearch.com/contents/encyclopedia/living/washing_machine/842"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "topic": "서파수면과 성장호르몬·키 성장",
+  "brand": "수면",
+  "article": "sleep-growth-hormone-height",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "reduced-slow-wave-sleep-short-stature-risk",
+      "claim": "어린이의 서파수면(slow wave sleep, 깊은 수면) 감소가 저신장(short stature)의 위험 증가와 연관된다는 단면 연구 결과가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Nat Sci Sleep · Reduced Slow Wave Sleep Is Associated with Increased Risk of Short Stature in Children: A Cross-Sectional Study",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12640098/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "어린이 발달",
+        "line": "성장호르몬·신장",
+        "years": "2025",
+        "region": "글로벌"
+      },
+      "caution": "이 결과는 단면 연구이므로 인과관계를 입증하지 못한다. 서파수면 감소가 저신장을 유발하는지, 아니면 다른 요인이 두 현상을 함께 초래하는지 확인하려면 추가 종적 연구가 필요하다.",
+      "cautionSource": "Nat Sci Sleep · Reduced Slow Wave Sleep Is Associated with Increased Risk of Short Stature in Children: A Cross-Sectional Study"
+    },
+    {
+      "id": "sleep-fragmentation-neurodevelopment-pediatric-icu",
+      "claim": "소아 중환자실에서의 수면 단편화(sleep fragmentation)가 신경발달 결과에 영향을 미친다는 메커니즘 검토가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Front Sleep · Sleep fragmentation in critically ill children: a review of contributing factors in the pediatric intensive care unit and neurodevelopmental outcomes",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12713949/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "수면",
+        "category": "어린이 발달",
+        "line": "임상 중증·신경발달",
+        "years": "2025",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

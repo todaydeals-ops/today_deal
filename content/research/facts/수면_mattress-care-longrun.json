@@ -1,0 +1,93 @@
+{
+  "topic": "매트리스 위생 관리·집먼지진드기·알레르겐 제거·수명 연장",
+  "brand": "공통",
+  "article": "mattress-care-longrun",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "house-dust-mite-mattress-concentration",
+      "claim": "집먼지진드기(house dust mite, HDM)는 매트리스에 높은 농도로 서식한다. 열대 지역에서는 종 분포(species distribution)가 다양하며, 알레르기 민감 패턴도 지역별로 상이하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Tahir HM, Nik Kamarudin NAA, Ahamad M, Che Lah EF. A narrative review of house dust mite allergy: species distribution and allergen sensitisation patterns across tropical regions. Frontiers in Allergy",
+      "source_url": "https://doi.org/10.3389/falgy.2026.1813656",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "line": "알레르기 민감성",
+        "years": "2026",
+        "region": "열대 지역·글로벌"
+      }
+    },
+    {
+      "id": "dust-mite-allergen-seasonal-variation",
+      "claim": "집먼지진드기 개체수와 알레르겐 농도는 계절·습도·온도에 따라 변동한다. 따라서 매트리스 위생 관리의 시기와 빈도도 계절 변화를 고려해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Tahir HM, Nik Kamarudin NAA, Ahamad M, Che Lah EF. A narrative review of house dust mite allergy: species distribution and allergen sensitisation patterns across tropical regions. Frontiers in Allergy",
+      "source_url": "https://doi.org/10.3389/falgy.2026.1813656",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "line": "알레르기 민감성",
+        "years": "2026",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "dust-mite-allergy-prevention-mattress",
+      "claim": "소아 천식 환자의 집먼지진드기 알레르기 예방을 위해서는 매트리스를 정기적으로 청소하고, 고효율 필터(HEPA) 사용, 방습 커버 등의 다층 전략이 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Klain A, Senatore AA, Licari A, Galletta F, Bettini A, Agostoni C, Novak D. The Prevention of House Dust Mite Allergies in Pediatric Asthma. Children",
+      "source_url": "https://doi.org/10.3390/children11040469",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "line": "소아 (천식 환자)",
+        "years": "2024",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "mattress-hygiene-infection-control-guideline",
+      "claim": "의료기관 침상 위생 기준(S2k Guideline)에 따르면, 매트리스·침구·침대 액세서리는 정기 세척, 방습 커버 사용, 진드기 및 미생물 증식 억제를 위해 관리되어야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "S2k Guideline: Hygienic requirements for patient beds, bed linen, bed accessories and personal protection when handling beds. German Association for Hospital Hygiene",
+      "source_url": "https://doi.org/10.1007/s15010-024-02256-1",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "line": "위생·감염관리",
+        "years": "2024",
+        "region": "유럽·글로벌 표준"
+      },
+      "caution": "의료기관 기준이므로 가정용으로는 덜 엄격하게 적용해도 되나, 알레르기·면역 저하 가족은 참고할 가치 있음."
+    },
+    {
+      "id": "mattress-lifespan-hygiene-related",
+      "claim": "매트리스의 위생 상태 저하는 제품 수명 단축의 중요 요인이다. 정기 관리로 물리적 손상과 미생물 증식을 동시에 억제할 수 있다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Klain A, Senatore AA, Licari A, Galletta F, Bettini A, Agostoni C, Novak D. The Prevention of House Dust Mite Allergies in Pediatric Asthma. Children",
+      "source_url": "https://doi.org/10.3390/children11040469",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "line": "유지관리",
+        "years": "2024",
+        "region": "글로벌"
+      },
+      "caution": "매트리스 수명은 위생 관리 외에도 사용 빈도, 사용자 체중, 구조적 결함에 따라 달라진다."
+    }
+  ]
+}

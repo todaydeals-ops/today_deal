@@ -1,0 +1,263 @@
+{
+  "topic": "커피 원두 보관·유통기한 팩트체크 — 냉동 보관, 유통기한 vs 로스팅 날짜, 신선도, 곰팡이 안전",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "bean-rancidity-causes",
+      "claim": "커피 원두의 산패는 주로 산소 접촉, 습기, 온도 상승, 빛 노출로 인해 발생하며, 로스팅 원두는 13~17%의 지방을 함유하고 있어 산화에 취약하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스페셜티 커피 전문 로스터리, 알라카르테 블로그",
+      "source_url": "https://blog.alacartemall.com/how-to-store-coffee-beans/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "커피",
+        "line": "로스팅 원두 (홀빈·분쇄 전)",
+        "years": "현행 판매 제품",
+        "region": "KR"
+      },
+      "caution": "네 가지 요인(산소·습기·열·빛) 중 단 하나라도 장시간 노출되면 산패가 진행되므로, 보관 방법의 모든 요소가 중요하다.",
+      "cautionSource": "로스터리 기술 자료의 산패 원인 분석"
+    },
+    {
+      "id": "whole-bean-optimal-consumption",
+      "claim": "로스팅 후 홀빈 원두의 최적 마시는 기간은 3일~2주이며, 3주를 초과하면 신선도가 점차 저하된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "알라카르테 블로그, 스페셜티 커피 전문가",
+      "source_url": "https://blog.alacartemall.com/how-to-store-coffee-beans/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "커피",
+        "line": "홀빈 (분쇄하지 않은 원두)",
+        "years": "현행 판매 제품",
+        "region": "KR"
+      },
+      "caution": "2주 이내에 마시는 것을 최고의 맛 기준으로 삼는 전문가 권장과, 3주까지 어느 정도 유지 가능하다는 실측 보고가 모두 있다. 향미 선호도에 따라 판단할 것.",
+      "cautionSource": "전문 로스터리와 커피 커뮤니티 경험담"
+    },
+    {
+      "id": "ground-bean-shelf-life",
+      "claim": "분쇄한 커피의 신선도 유지 기간은 1~2주이며, 분쇄 후 2~3일부터 산패가 시작된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "알라카르테 블로그",
+      "source_url": "https://blog.alacartemall.com/how-to-store-coffee-beans/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "커피",
+        "line": "분쇄 커피",
+        "years": "현행 판매 제품",
+        "region": "KR"
+      },
+      "caution": "분쇄하지 않은 홀빈은 2~3주 유지되나, 분쇄 후는 1~2주로 절반 이상 단축된다. 최적 맛을 위해 필요한 만큼만 분쇄할 것.",
+      "cautionSource": "전문 로스터리의 보관 기준"
+    },
+    {
+      "id": "roasting-date-as-primary-standard",
+      "claim": "커피 원두의 신선도 기준은 제품의 유통기한 표시보다 로스팅 날짜가 더 신뢰할 수 있는 지표이며, 유통기한이 1년 남았어도 로스팅 후 오래되면 향미가 크게 떨어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스페셜티 커피 로스터리 빈오너스, 커피 전문가",
+      "source_url": "https://www.beanoners.com/49/?bmode=view&idx=171752104",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "커피",
+        "line": "로스팅 원두 (패키지 판매)",
+        "years": "현행 판매 제품",
+        "region": "KR"
+      },
+      "caution": "제조사는 안전 기준으로 긴 유통기한을 표시하지만, 맛의 기준은 로스팅 날짜부터 시작된다는 점을 소비자가 이해해야 한다.",
+      "cautionSource": "스페셜티 커피 로스터리의 신선도 안내"
+    },
+    {
+      "id": "opened-package-shelf-life",
+      "claim": "개봉한 커피 원두는 2~3주 동안 고유의 향과 맛을 유지하며, 3주 경과 후에는 신선도가 점차 저하된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "알라카르테 블로그, 커피 전문 매체",
+      "source_url": "https://blog.alacartemall.com/how-to-store-coffee-beans/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "커피",
+        "line": "개봉된 로스팅 원두",
+        "years": "현행 판매 제품",
+        "region": "KR"
+      },
+      "caution": "밀폐 용기에 넣고 빛·열·습기를 피한 경우의 수치. 개봉 후 실온 노출이 길수록 기한이 단축된다.",
+      "cautionSource": "로스터리 보관 기준"
+    },
+    {
+      "id": "freezer-condensation-risk",
+      "claim": "냉동 보관한 원두를 개봉할 때 냉동 상태에서 바로 뜯으면 온도 차이로 결로가 생겨 수분이 원두에 스며들고, 이는 향 손실과 맛의 불균형을 유발한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "커피데일리, 알라카르테 블로그, 커피 전문 가이드",
+      "source_url": "https://blog.alacartemall.com/coffee-beans-freezing-storage-pros-cons-and-tips/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "커피",
+        "line": "냉동 보관 원두",
+        "years": "현행 판매 제품",
+        "region": "KR"
+      },
+      "caution": "냉동 보관이 장기 보관에는 효과적이지만, 결로 관리가 핵심. 포장을 뜯지 말고 실온에서 10~15분 해동 후 개봉할 것.",
+      "cautionSource": "전문 커피 가이드의 해동 절차"
+    },
+    {
+      "id": "freezer-storage-duration",
+      "claim": "소량씩 밀봉하여 냉동 보관한 원두는 3~4개월까지 보관 가능하며, 라이트 로스트는 최대 1개월, 다크 로스트는 최대 3개월 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "알라카르테 블로그, 커피 전문 로스터리",
+      "source_url": "https://blog.alacartemall.com/coffee-beans-freezing-storage-pros-cons-and-tips/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "커피",
+        "line": "냉동 보관 원두 (소분 밀봉)",
+        "years": "현행 판매 제품",
+        "region": "KR"
+      },
+      "caution": "냉동 보관 가능 기간은 로스트 강도에 따라 다르며, 반복적인 해동·재냉동은 품질을 크게 저하시키므로 처음부터 소분해 한 번에 사용할 분량만 꺼낼 것.",
+      "cautionSource": "로스터리 기술 안내의 로스트 강도별 보관 기준"
+    },
+    {
+      "id": "temperature-oxidation-rate",
+      "claim": "커피 원두의 향이 휘발하는 속도는 온도가 10도 상승할 때마다 약 1.5배씩 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "커피 전문 가이드, 로스터리 기술 자료",
+      "source_url": "https://blog.alacartemall.com/how-to-store-coffee-beans/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "커피",
+        "line": "로스팅 원두 (보관 중)",
+        "years": "현행 판매 제품",
+        "region": "KR"
+      },
+      "caution": "20~25도의 서늘한 곳에서 보관할 경우와 실온(25~30도) 이상의 따뜻한 곳에서의 신선도 유지 기간이 크게 차이난다는 의미. 실온 보관 위치 선택이 중요하다.",
+      "cautionSource": "로스터리 보관 환경 기준"
+    },
+    {
+      "id": "mold-toxin-disposal",
+      "claim": "커피 원두에 곰팡이가 핀 경우 오크라톡신A 독소가 생길 수 있으며, 이 독소는 고온(250도 이상)에서도 완전히 파괴되지 않고 식품에서 곰팡이 부분을 제거해도 독소가 남아있을 수 있으므로, 곰팡이 핀 원두는 폐기해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국일보 건강 기사, 식품안전 정보",
+      "source_url": "https://www.hankookilbo.com/News/Read/A2022042921230001305",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "커피",
+        "line": "로스팅 원두 (곰팡이 발생 시)",
+        "years": "모든 제품",
+        "region": "KR"
+      },
+      "caution": "⚠️ 미량의 곰팡이 독소도 간과 신장에 해를 끼칠 수 있으므로 안전을 위해 아끼지 말고 폐기할 것. 고온에서 커피를 내려도 독소 제거가 불가능하다.",
+      "cautionSource": "식품 안전 및 의학 정보의 곰팡이 독소 위험"
+    },
+    {
+      "id": "one-way-valve-function",
+      "claim": "원웨이 밸브(일방향 감압 밸브)는 로스팅 후 발생하는 탄산 가스는 빠져나가지만 외부 공기는 들어오지 않는 구조로, 막 로스팅한 원두를 포장할 때 사용된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "커피 로스터리 기술 안내, 바리스타 뉴스",
+      "source_url": "https://baristanews.co.kr/edu/집에서-원두를-오래-보관할-수-있는-방법/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "커피",
+        "line": "원웨이 밸브 포장 원두",
+        "years": "현행 판매 제품",
+        "region": "KR"
+      },
+      "caution": "원웨이 밸브는 초반 가스 배출에는 효과적이나, 이후 공기 차단 성능은 완벽하지 않으므로 상온보관도 장기 보관에는 한계가 있다.",
+      "cautionSource": "로스터리 포장 기술 설명"
+    },
+    {
+      "id": "whole-vs-ground-surface-area",
+      "claim": "홀빈 원두는 공기(산소)에 노출되는 표면적이 분쇄 커피보다 훨씬 작기 때문에 산화가 느리게 진행되며, 분쇄하면 표면적이 급증하여 산화 속도가 매우 빨라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "커피 전문가, 로스터리 기술 자료",
+      "source_url": "https://blog.alacartemall.com/how-to-store-coffee-beans/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "커피",
+        "line": "홀빈 vs 분쇄 커피",
+        "years": "현행 판매 제품",
+        "region": "KR"
+      },
+      "caution": "같은 로스팅 날짜여도 홀빈이 분쇄 커피보다 2~3배 오래 신선도를 유지하는 이유는 표면적의 차이 때문이다.",
+      "cautionSource": "로스터리 보관 이론"
+    },
+    {
+      "id": "slow-thaw-method",
+      "claim": "냉동 보관한 원두를 해동할 때는 냉동실에서 꺼낸 후 포장을 뜯지 말고 실온에서 10~15분 대기하여 포장 내부 온도가 주변 온도와 같아질 때 개봉해야 결로를 최소화할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "알라카르테 블로그, 커피데일리",
+      "source_url": "https://blog.alacartemall.com/coffee-beans-freezing-storage-pros-cons-and-tips/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "커피",
+        "line": "냉동 보관 원두 해동",
+        "years": "현행 판매 제품",
+        "region": "KR"
+      },
+      "caution": "10~15분이 최소 기준이며, 여름철 등 실온이 높으면 좀 더 기다릴 수 있다. 급하다고 해서 바로 개봉하면 결로로 인한 품질 손실이 심각할 수 있다.",
+      "cautionSource": "전문 로스터리의 냉동 해동 절차"
+    },
+    {
+      "id": "room-temperature-storage-conditions",
+      "claim": "로스팅 원두의 최적 상온 보관 환경은 20~25도의 서늘한 곳에서 습도 50% 이하, 직사광선과 열원 피하기이며, 이 조건에서는 병이나 캔 같은 밀폐 용기에 넣어 3주 정도 맛있게 마실 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "알라카르테 블로그, 로스터리 기술 안내",
+      "source_url": "https://blog.alacartemall.com/how-to-store-coffee-beans/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "커피",
+        "line": "로스팅 원두 (상온 보관)",
+        "years": "현행 판매 제품",
+        "region": "KR"
+      },
+      "caution": "냉장고 보관은 금지. 냉장실을 열고 닫을 때마다 온도·습도 변화와 결로가 발생하고, 원두가 냉장고의 다른 음식 냄새를 흡수한다.",
+      "cautionSource": "로스터리 보관 금지 사항"
+    },
+    {
+      "id": "freezer-vs-refrigerator",
+      "claim": "커피 보관용으로는 냉동실이 냉장실보다 훨씬 효과적이다. 냉장실은 개폐 시마다 온도·습도 변화로 결로가 발생하고 냄새 흡수가 심하지만, 냉동실은 온도 안정성이 높고 수분 노출이 적다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "알라카르테 블로그",
+      "source_url": "https://blog.alacartemall.com/coffee-beans-freezing-storage-pros-cons-and-tips/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "커피",
+        "line": "냉동실 vs 냉장실 보관",
+        "years": "현행 판매 제품",
+        "region": "KR"
+      },
+      "caution": "냉장실은 원두 보관에 부적합. 냉동실 사용 시에도 냉동실 출입문 근처는 온도 변화가 심하므로 냉동실 깊숙한 곳에 보관할 것.",
+      "cautionSource": "로스터리의 냉동 vs 냉장 비교 분석"
+    }
+  ]
+}

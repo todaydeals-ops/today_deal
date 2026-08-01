@@ -1,0 +1,128 @@
+{
+  "topic": "수면과 치매 위험의 관계",
+  "brand": "공통",
+  "article": "sleep-dementia-risk",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "short-sleep-dementia-risk-46percent",
+      "claim": "하루 6시간 이하의 짧은 수면은 미래 치매 발병 위험을 약 46% 증가시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "메타분석 - 수면 부족과 치매 위험 종합 연구",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0749379723000090",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면 시간 · 치매",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "46% 증가는 상대 위험도이며, 절대 위험은 개인의 나이, 유전, 생활 방식 등 다른 요인에 따라 달라진다.",
+      "cautionSource": "메타분석 - 수면 부족과 치매 위험 종합 연구 (https://www.sciencedirect.com/science/article/abs/pii/S0749379723000090)"
+    },
+    {
+      "id": "chronic-sleep-disturbance-dementia-19-50percent",
+      "claim": "만성 수면 장애는 치매 위험을 19~50% 증가시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Journal of Preventive Medicine - 10년 전향적 미국 코호트 연구",
+      "source_url": "https://www.ajpmonline.org/article/S0749-3797(23)00009-0/fulltext",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면 질 · 치매",
+        "years": "전체",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "insomnia-dementia-population-attributable-12percent",
+      "claim": "미국 65세 이상 성인 중 불면증으로 인한 가능성 있는 치매의 인구 기인 분율은 12.8%이며, 여성(13.4%)이 남성(12.0%)보다 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가 대표 샘플 연구 - Population-level Impact of Insomnia on Dementia",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12760222/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "불면증 · 치매",
+        "years": "2020s",
+        "region": "미국"
+      },
+      "caution": "인구 기인 분율은 그룹 차원의 통계이며, 개인의 불면증이 반드시 치매로 진행된다는 의미는 아니다."
+    },
+    {
+      "id": "sleep-disturbance-cognitive-impairment-dementia-10year",
+      "claim": "수면 장애가 있는 노인은 10년간 경도 인지 장애 및 치매 위험이 유의미하게 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Huang J et al., Sleep Disturbance, Physical Frailty, and Risk of Cognitive Impairment and Dementia in Older Adults with Subjective Cognitive Decline: A 10-Year Longitudinal Study, Journals of Gerontology",
+      "source_url": "https://doi.org/10.1093/gerona/glag178",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면 장애 · 인지 기능",
+        "years": "2020s",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "increasing-sleepiness-dementia-risk-doubled",
+      "claim": "80대 여성 중 5년간 24시간 졸음이 증가한 경우 그 기간 동안 치매 위험이 2배가 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Five-Year Changes in 24-Hour Sleep-Wake Activity and Dementia Risk in Oldest Old Women, PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40106755/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면각성 리듬 · 초고령",
+        "years": "2020s",
+        "region": "글로벌"
+      },
+      "caution": "이는 80대 여성의 특정 집단을 대상으로 한 분석이므로, 모든 노인에게 동일하게 적용되지 않을 수 있다.",
+      "cautionSource": "Five-Year Changes in 24-Hour Sleep-Wake Activity and Dementia Risk in Oldest Old Women (https://pubmed.ncbi.nlm.nih.gov/40106755/)"
+    },
+    {
+      "id": "obstructive-sleep-apnea-dementia-cognitive-decline",
+      "claim": "수면무호흡증(OSA)은 노인의 인지 기능 저하 및 치매 위험과 관련된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Pengo MF et al., OSA in the aging population: Diagnostic and therapeutic considerations, Sleep Medicine Reviews",
+      "source_url": "https://doi.org/10.1016/j.smrv.2026.102247",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면무호흡 · 치매",
+        "years": "전체",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "sleep-quality-alzheimers-cognitive-function",
+      "claim": "수면의 질은 알츠하이머병 환자의 인지 기능에 직접적인 영향을 미친다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Qi W et al., Impact of Sleep Quality on Cognitive Function in Elderly Patients With Alzheimer's Disease, Applied & Environmental Microbiology",
+      "source_url": "https://doi.org/10.62641/aep.v54i2.2126",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면 질 · 알츠하이머",
+        "years": "2020s",
+        "region": "글로벌"
+      }
+    }
+  ]
+}

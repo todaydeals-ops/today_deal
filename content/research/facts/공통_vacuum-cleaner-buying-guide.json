@@ -1,0 +1,341 @@
+{
+  "topic": "청소기 구매가이드 — 유형별·흡입력·필터·집먼지진드기·바닥재별·소음·용량·가격대 선택 기준",
+  "brand": "공통",
+  "article": "vacuum-cleaner-buying-guide",
+  "captured": "2026-07-24",
+  "reused_facts": [
+    "vacuum-suction-unit-iec-vs-astm",
+    "vacuum-suction-w-vs-aw-equivalent",
+    "vacuum-suction-pa-kpa-vs-w-aw",
+    "vacuum-suction-pa-marketing-issue",
+    "vacuum-head-brush-type-performance-impact",
+    "vacuum-filter-clogging-suction-loss",
+    "vacuum-suction-max-mode-only",
+    "vacuum-suction-mode-runtime-tradeoff"
+  ],
+  "declined_facts": [
+    {
+      "id": "dyson-filter-cleaning-frequency",
+      "why": "다이슨 자가점검 절차(월 1회 필터 세척) — 구매가이드에는 필터 관리 원칙만 필요하고, 브랜드별 자동알림 차이는 배제"
+    },
+    {
+      "id": "dyson-filter-drying-24hours",
+      "why": "다이슨·LG 공통 필터 건조 24시간 — 이미 vacuum-suction-spec에 포함되어 있고, 자가점검 절차 범위"
+    },
+    {
+      "id": "dyson-filter-not-sealed-motor-damage",
+      "why": "다이슨 특화 경고(필터 미장착 시 모터 손상) — 구매 선택 기준이 아닌 사용 주의사항"
+    },
+    {
+      "id": "lg-codezero-model-year-prefix",
+      "why": "LG 모델명 연식 규칙 — 특정 무선청소기 모델 식별용이며, 구매가이드 범위 아님"
+    },
+    {
+      "id": "lg-codezero-charging-terminal-dirty",
+      "why": "LG 무선청소기 충전 단자 청소 — 자가점검 절차로, 구매 선택 기준 아님"
+    },
+    {
+      "id": "samsung-jetbot-suction-weak-dustbin-full",
+      "why": "삼성 로봇청소기 먼지통 청소 절차 — 자가점검 범위로, 구매가이드에는 '먼지통 용량 고려' 원칙만 필요"
+    },
+    {
+      "id": "lg-r9-suction-weak-filter-dirty",
+      "why": "로봇청소기 필터 청소 절차 — 자가점검용 세부 방법이며, 구매가이드에는 필터 관리 원칙 적용"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "vacuum-type-corded-characteristics",
+      "claim": "유선청소기는 무제한 전력 공급으로 강력한 흡입력을 일관되게 유지할 수 있으며, 전실 청소 시에도 성능 저하가 없다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Roborock 청소기 비교 가이드",
+      "source_url": "https://kr.roborock.com/blogs/roborock-kr/vacuum-cleaner-comparison-guide",
+      "checked": "2026-07-24",
+      "scope": {
+        "brand": "공통",
+        "category": "유선청소기",
+        "line": "전 유형",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "코드의 물리적 제약으로 이동 범위가 제한되며, 코드 걸림 위험이 있다"
+    },
+    {
+      "id": "vacuum-type-cordless-characteristics",
+      "claim": "무선청소기는 코드 없이 자유로운 이동이 가능하고 다양한 공간(계단·가구 위·자동차)을 청소할 수 있으나, 배터리 작동 시간이 제한되고 손목에 가해지는 무게가 유선보다 무겁다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 무선청소기 FAQ / 무선청소기 구매가이드",
+      "source_url": "https://www.samsung.com/sec/home-appliances/faq-cordless-vacuum-cleaners",
+      "checked": "2026-07-24",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "무선청소기는 제품 가격이 유선보다 높으며, 배터리 교체 비용도 고려해야 한다"
+    },
+    {
+      "id": "vacuum-type-robot-characteristics",
+      "claim": "로봇청소기는 사용자 개입 없이 자동으로 움직여 정기적 청소에 효율적이며, 사각지대 문제를 매핑 기술로 보완한 최신 모델은 대부분의 공간을 스스로 판단해 청소한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "로봇청소기 구매가이드",
+      "source_url": "https://nosearch.com/contents/guide/living/robotic_vacuum_cleaner",
+      "checked": "2026-07-24",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "로봇청소기는 모서리·카펫 가장자리·가구 밑 같은 공간을 완전히 청소하지 못할 수 있으며, 정기적 수동 청소가 여전히 필요하다"
+    },
+    {
+      "id": "vacuum-type-handy-characteristics",
+      "claim": "핸디형청소기는 가볍고 휴대하기 쉬워 소파·침대·테이블 등 좁은 공간과 높은 곳을 빠르게 청소할 수 있으며, 자동차 내부 청소에도 적합하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "핸디형청소기 추천 가이드",
+      "source_url": "https://nosearch.com/recommendation/pick/living/portable_vacuum_cleaner",
+      "checked": "2026-07-24",
+      "scope": {
+        "brand": "공통",
+        "category": "핸디형청소기",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "핸디형은 주력 청소기가 아닌 보조 용도로 활용하는 것이 효율적이며, 전실 청소에는 부적합하다"
+    },
+    {
+      "id": "vacuum-cordless-suction-power-range",
+      "claim": "무선청소기의 흡입력은 60~80 AW가 일반 가정의 먼지와 이물질 제거에 충분하며, 100 AW 이상은 카펫이나 반려동물 털까지 효과적으로 제거한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "무선청소기 구매가이드",
+      "source_url": "https://nosearch.com/contents/guide/living/cordless_vacuum_cleaner",
+      "checked": "2026-07-24",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "광고된 '최대 흡입력'은 부스트 모드에서만 달성되며, 일반 모드에서는 이보다 훨씬 낮다. 실제 사용 시간과 흡입력을 함께 고려해야 한다",
+      "cautionSource": "기존 vacuum-suction-max-mode-only 팩트"
+    },
+    {
+      "id": "vacuum-robot-suction-range-pa",
+      "claim": "로봇청소기의 흡입력은 2,000~5,000Pa로 기본적인 먼지 제거에 충분하며, 5,000Pa 이상이면 카펫과 틈새까지 효과적으로 청소할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "로봇청소기 구매가이드",
+      "source_url": "https://nosearch.com/contents/guide/living/robotic_vacuum_cleaner",
+      "checked": "2026-07-24",
+      "scope": {
+        "brand": "공통",
+        "category": "로봇청소기",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "로봇청소기의 흡입력은 파스칼(Pa) 단위로 표기되어 무선청소기의 와트(AW)·와트(W)와 직접 비교할 수 없다. 두 제품을 비교할 때는 같은 단위 기준을 사용해야 한다"
+    },
+    {
+      "id": "vacuum-hepa-filter-grade-h13-standard",
+      "claim": "HEPA 필터는 H13 등급 이상일 때 0.3㎛ 크기의 미세 입자를 99.9% 이상 걸러낼 수 있으며, 일반 가정에서는 E11 등급 필터로도 충분한 청정 환경을 유지할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HEPA 필터레이션 기준 / 공기청정기 필터 등급 정리",
+      "source_url": "https://rentre.kr/story/%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0-%ED%95%84%ED%84%B0-%EB%93%B1%EA%B8%89-%EC%9A%A9%EC%96%B4-%EC%A0%95%EB%A6%AC/air-purifier-filter-grade-guide",
+      "checked": "2026-07-24",
+      "scope": {
+        "brand": "공통",
+        "category": "진공청소기·공기청정기",
+        "line": "HEPA 필터 전 제품",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "필터 등급이 높을수록 공기 통과 저항이 증가해 모터 부담이 커질 수 있다. 가정 환경에 맞는 등급을 선택하는 것이 중요하다",
+      "cautionSource": "공기청정기 필터 등급 정리 문서"
+    },
+    {
+      "id": "vacuum-hepa-dust-mite-removal-effectiveness",
+      "claim": "HEPA 필터가 장착된 진공청소기로 매트리스·소파를 주 2회 청소하면 진드기 사체·배설물·곰팡이 포자 같은 미세 입자 제거율이 높아져 재부유를 줄일 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HEPA 필터레이션의 중요성 / 집먼지진드기 제거법 가이드",
+      "source_url": "https://www.dyson.co.kr/newsroom/hepa-product",
+      "checked": "2026-07-24",
+      "scope": {
+        "brand": "공통",
+        "category": "진공청소기",
+        "line": "HEPA 필터 탑재 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "완벽한 진드기 제거는 불가능하며, HEPA 필터와 정기적인 환기·세제 세탁을 함께 해야 알러지 증상을 줄일 수 있다"
+    },
+    {
+      "id": "vacuum-dust-mite-allergen-guanine-protein",
+      "claim": "진드기 배설물에는 '구아닌(Guanin)'이라는 특이 단백질 성분이 함유되어 있으며, 이 성분이 공기 중을 떠다니면서 흡입될 때 알러지성 비염을 유발한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "알러지성 비염 유발 메커니즘 / 집먼지진드기 특이성 단백질",
+      "source_url": "https://www.waterjournal.co.kr/news/articleView.html?idxno=6845",
+      "checked": "2026-07-24",
+      "scope": {
+        "brand": "공통",
+        "category": "청소 환경 관리",
+        "line": "집먼지진드기 알러지 대상",
+        "years": "현재",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "vacuum-dust-mite-cleaning-frequency-recommendation",
+      "claim": "집먼지진드기 알러지 예방을 위해 침구류·매트리스·소파는 주 2회 이상 진공청소기로 청소하고, 세제를 사용해 60°C 이상의 뜨거운 물로 정기적으로 세탁해야 한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "집먼지진드기 제거법·알러지 예방 가이드",
+      "source_url": "https://kim60.com/entry/%EC%A7%91%EB%A8%BC%EC%A7%80-%EC%A7%84%EB%93%9C%EA%B8%B0-%EC%A0%9C%EA%B1%B0%EB%B2%95-%EC%95%8C%EB%A0%88%EB%A5%B4%EA%B8%B0-%EC%98%88%EB%B0%A9%ED%95%98%EB%8A%94-%EA%BF%80%ED%8C%81?category=1252517",
+      "checked": "2026-07-24",
+      "scope": {
+        "brand": "공통",
+        "category": "청소 환경 관리",
+        "line": "진드기 알러지 있는 가정",
+        "years": "현재",
+        "region": "KR"
+      },
+      "caution": "실내 습도를 50% 이하로 유지하는 것도 진드기 번식을 억제하는 데 도움이 된다",
+      "cautionSource": "집먼지진드기 제거법·알러지 예방 가이드"
+    },
+    {
+      "id": "vacuum-noise-level-db-range",
+      "claim": "청소기의 소음은 제품에 따라 60~90dB 사이에 분포하며, 10dB 차이는 체감 소음으로 2배 이상의 차이를 만든다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "무선청소기 소음·필터 비교 추천",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%ED%9D%A1%EC%9E%85%EB%A0%A5_%EB%86%92%EC%9C%BC%EB%A9%B4_%EC%A1%B0%EC%9A%A9%ED%95%A0%EA%B9%8C_%EB%AC%B4%EC%84%A0%EC%B2%AD%EC%86%8C%EA%B8%B0_%EC%86%8C%EC%9D%8C%C2%B7%ED%95%84%ED%84%B0_%EB%B9%84%EA%B5%90_%EC%B6%94%EC%B2%9C-49337",
+      "checked": "2026-07-24",
+      "scope": {
+        "brand": "공통",
+        "category": "청소기 전 유형",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "고층 아파트에서는 저소음 모델을 선택해도 층간소음 민원이 발생할 수 있으니 사용 시간을 고려해야 한다"
+    },
+    {
+      "id": "vacuum-noise-60db-baby-sleep-criteria",
+      "claim": "아기가 자고 있는 동안 청소를 해야 한다면 60dB 이하의 저소음 청소기를 선택하는 것이 권장된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "무선청소기 소음·필터 비교 추천",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%ED%9D%A1%EC%9E%85%EB%A0%A5_%EB%86%92%EC%9C%BC%EB%A9%B4_%EC%A1%B0%EC%9A%A9%ED%95%A0%EA%B9%8C_%EB%AC%B4%EC%84%A0%EC%B2%AD%EC%86%8C%EA%B8%B0_%EC%86%8C%EC%9D%8C%C2%B7%ED%95%84%ED%84%B0_%EB%B9%84%EA%B5%90_%EC%B6%94%EC%B2%9C-49337",
+      "checked": "2026-07-24",
+      "scope": {
+        "brand": "공통",
+        "category": "청소기",
+        "line": "저소음 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "60dB은 일반 대화 정도의 소음 수준이며, 실제 청소기 부스트 모드는 70dB 이상에 도달할 수 있다. 전 시간 청소가 필요하면 에코 모드 사용을 권장한다"
+    },
+    {
+      "id": "vacuum-pet-hair-suction-power-requirement",
+      "claim": "반려동물 털을 효과적으로 제거하거나 카펫을 주로 청소하는 가정은 최소 150W(또는 150 AW) 이상의 강력한 흡입력이 필수적이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "무선청소기 구매가이드 / 반려동물 가정 청소 기준",
+      "source_url": "https://nosearch.com/contents/guide/living/cordless_vacuum_cleaner",
+      "checked": "2026-07-24",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "반려동물 가정용",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "흡입력이 높을수록 배터리 소모가 빠르므로 작동 시간이 짧아진다. 반려동물 가정은 런타임(최소 30분 이상)도 함께 확인해야 한다",
+      "cautionSource": "무선청소기 구매가이드"
+    },
+    {
+      "id": "vacuum-dust-bin-capacity-cordless-range",
+      "claim": "무선청소기의 먼지통 용량은 일반적으로 0.3~0.7L 범위로 제품마다 차이가 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "무선청소기 구매가이드",
+      "source_url": "https://nosearch.com/contents/guide/living/cordless_vacuum_cleaner",
+      "checked": "2026-07-24",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "vacuum-dust-bin-capacity-experience-difference",
+      "claim": "먼지통 용량의 수치상 차이(예: 0.3L vs 0.7L)는 실사용 환경에서 체감되는 차이가 크지 않으며, 자주 비우는 것이 흡입력 저하 방지에 더 중요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "무선청소기 구매가이드",
+      "source_url": "https://nosearch.com/contents/guide/living/cordless_vacuum_cleaner",
+      "checked": "2026-07-24",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "먼지통이 MAX 표시선을 넘으면 필터 오염이 가속화되어 흡입력이 급감한다. 용량 크기보다 정기적 비움이 성능 유지의 핵심이다"
+    },
+    {
+      "id": "vacuum-brush-type-flooring-selection-korea",
+      "claim": "청소기 헤드의 브러시 형태는 바닥 재질에 따라 선택해야 한다 — 마루형 브러시는 매끄러운 바닥(마루·장판)에, 카펫형 브러시는 털과 먼지 제거에 유리하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마루용·카펫용 무선청소기 추천 비교",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EB%A7%88%EB%A3%A8%EC%9A%A9_%EC%B9%B4%ED%8E%AB%EC%9A%A9_%EB%AC%B4%EC%84%A0%EC%B2%AD%EC%86%8C%EA%B8%B0_%EC%B6%94%EC%B2%9C,_%EB%B8%8C%EB%9F%AC%EC%8B%9C%EC%99%80_%EB%A1%A4%EB%9F%AC%EC%9D%98_%EC%84%B1%EB%8A%A5,_%EA%B0%80%EA%B2%A9%EC%B0%A8%EC%9D%B4_%EC%99%84%EB%B2%BD_%EB%B9%84%EA%B5%90-49341",
+      "checked": "2026-07-24",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기·로봇청소기",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "한국 가정은 장판과 마룻바닥이 주류이므로 마루형 브러시가 유리하다. 해외 제품은 카펫용 브러시만 포함된 경우가 많으니 구매 전 확인 필수",
+      "cautionSource": "마루용·카펫용 무선청소기 비교 가이드"
+    },
+    {
+      "id": "vacuum-brush-type-price-difference",
+      "claim": "청소기 브러시 종류가 다양할수록(마루용·카펫용·매트리스용 등) 가격 차이가 10~40만원까지 발생할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마루용·카펫용 무선청소기 추천 비교",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EB%A7%88%EB%A3%A8%EC%9A%A9_%EC%B9%B4%ED%8E%AB%EC%9A%A9_%EB%AC%B4%EC%84%A0%EC%B2%AD%EC%86%8C%EA%B8%B0_%EC%B6%94%EC%B2%9C,_%EB%B8%8C%EB%9F%AC%EC%8B%9C%EC%99%80_%EB%A1%A4%EB%9F%AC%EC%9D%98_%EC%84%B1%EB%8A%A5,_%EA%B0%80%EA%B2%A9%EC%B0%A8%EC%9D%B4_%EC%99%84%EB%B2%BD_%EB%B9%84%EA%B5%90-49341",
+      "checked": "2026-07-24",
+      "scope": {
+        "brand": "공통",
+        "category": "무선청소기",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "추가 브러시는 별도 구매도 가능하므로, 기본 세트로 충분하면 가격이 낮은 모델을 선택하고 필요할 때 브러시를 추가하는 것도 전략이다"
+    }
+  ]
+}

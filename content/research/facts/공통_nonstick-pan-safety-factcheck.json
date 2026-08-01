@@ -1,0 +1,234 @@
+{
+  "topic": "테프론(PTFE) 프라이팬 코팅 벗겨짐 안전성 팩트체크",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "ptfe-ingestion-safety",
+      "claim": "테프론 코팅이 벗겨져 음식에 섞여 삼킨 경우, PTFE 입자는 소화기관을 그대로 통과해 배출되고 중독을 유발하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 실험",
+      "source_url": "https://www.mfds.go.kr/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "조리용품",
+        "type": "프라이팬 코팅",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "중금속(납·카드뮴·비소) 검출은 코팅 벗겨짐만으로는 발생하지 않으나, 코팅이 30% 이상 벗겨지면 알루미늄·니켈 용출이 증가하므로 교체 권장.",
+      "cautionSource": "식품의약품안전처 실험 결과"
+    },
+    {
+      "id": "ptfe-heavy-metal-test",
+      "claim": "식약처 실험 결과, 철 수세미로 테프론 코팅을 심하게 마모시킨 후에도 납·카드뮴·비소 등 중금속은 거의 검출되지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처",
+      "source_url": "https://www.mfds.go.kr/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "조리용품",
+        "type": "프라이팬",
+        "material": "PTFE 코팅 알루미늄",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "이 결과는 산화 알루미늄 또는 니켈 용출 여부와는 별개다. 30% 이상 벗겨지면 이들 금속의 용출량은 증가한다.",
+      "cautionSource": "식품의약품안전처 실험 결과"
+    },
+    {
+      "id": "ptfe-continuous-use-temp",
+      "claim": "PTFE의 고온 연속 사용 온도는 260℃다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PTFE 제조사 기술 사양",
+      "source_url": "https://www.gujin.co.kr/ptfe-teflon/ptfe-characteristics.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "조리용품",
+        "type": "PTFE 코팅",
+        "years": "전체",
+        "region": "전체"
+      }
+    },
+    {
+      "id": "ptfe-decomposition-start-temp",
+      "claim": "테프론 코팅제는 200~300℃의 온도에서 분해되기 시작한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PTFE 제조사 기술 자료, 웹 검색 다중 출처",
+      "source_url": "https://ud-machine.com/blog/polytetrafluoroethylene-ptfe/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "조리용품",
+        "type": "PTFE 코팅",
+        "years": "전체",
+        "region": "전체"
+      },
+      "caution": "분해 시작 온도와 독성 가스 방출 온도는 다르다. 분해 시작 후 독성 가스는 360℃ 이상에서 본격화된다.",
+      "cautionSource": "PTFE 제조사 기술 자료"
+    },
+    {
+      "id": "ptfe-toxic-gas-temp",
+      "claim": "PTFE가 분해될 때 유해한 가스를 발생시키는 온도는 360℃ 이상이다. 일반 조리 온도(180~200℃) 범위 내에서는 거의 발생하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PTFE 제조사 기술 자료, 웹 검색 다중 출처",
+      "source_url": "https://ud-machine.com/blog/polytetrafluoroethylene-ptfe/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "조리용품",
+        "type": "PTFE 코팅 팬",
+        "cooking_temp": "조리(180~200℃) vs 공열(350℃ 이상)",
+        "years": "전체",
+        "region": "전체"
+      },
+      "caution": "빈 팬을 방치하면 350℃ 이상 도달 가능하므로, '팬을 비운 채로 고온 가열하지 말 것'이 중요한 안전 규칙이다.",
+      "cautionSource": "검색 결과 다중 출처에서 일관되게 보고됨"
+    },
+    {
+      "id": "pfoa-past-issue-current-status",
+      "claim": "PFOA(과불화옥탄산)는 과거 테프론 코팅 시 사용되었으나, 현재 시장의 대부분 제품은 PFOA-free 포뮬러를 사용한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처, EU POPs 규정, 제조사 정보",
+      "source_url": "https://www.mfds.go.kr/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "조리용품",
+        "type": "PTFE 코팅",
+        "years": "현행 제품(2020년대)",
+        "region": "KR, EU, 미국"
+      },
+      "caution": "제조사마다 기술력과 제조 방법이 다르므로, PFOA-free 제품 구매 시 '논스틱 팬' 상품명 대신 '코팅 방식' 확인이 안전하다."
+    },
+    {
+      "id": "pfoa-korea-regulation",
+      "claim": "한국 식품의약품안전처는 기구 및 용기·포장 제조 시 PFOS, PFOA, PFHxS 등 잔류성오염물질의 사용을 금지하고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 규정",
+      "source_url": "https://www.mfds.go.kr/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "조리용품",
+        "regulation": "한국 식약처",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "coating-damage-30-percent-threshold",
+      "claim": "테프론 코팅이 30% 이상 벗겨져 알루미늄 본체가 넓게 드러난 상태가 되면, 알루미늄·니켈 용출량이 급격히 증가하므로 교체를 권장한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처",
+      "source_url": "https://www.mfds.go.kr/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "조리용품",
+        "type": "프라이팬",
+        "material": "PTFE 코팅 알루미늄",
+        "damage_threshold": "30% 이상",
+        "years": "전체",
+        "region": "KR"
+      },
+      "caution": "손톱으로 코팅을 만졌을 때 깊은 단차가 느껴지거나, 중앙 부분이 심하게 긁혀 있으면 교체 대상이다.",
+      "cautionSource": "식품의약품안전처 안내"
+    },
+    {
+      "id": "coating-damage-visual-check",
+      "claim": "프라이팬 코팅 손상을 육안으로 판별하는 방법은 중앙 부분의 긁힘 깊이와 손톱 테스트(깊은 단차 감각)다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처",
+      "source_url": "https://www.mfds.go.kr/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "조리용품",
+        "type": "프라이팬",
+        "years": "전체",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "coating-scratch-prevention-tools",
+      "claim": "테프론 코팅을 보호하려면 금속 도구 대신 나무 또는 실리콘 도구만 사용해야 하며, 세척 시에도 철 수세미를 피하고 부드러운 수세미나 손수건을 사용해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "생활용품 관리 가이드, 제품 매뉴얼",
+      "source_url": "https://foodrecipe.co.kr/life/nonstick-pan-coating-care-guide/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "조리용품",
+        "type": "프라이팬 관리",
+        "years": "전체",
+        "region": "전체"
+      }
+    },
+    {
+      "id": "ceramic-vs-ptfe-safety",
+      "claim": "세라믹 코팅 팬은 PTFE, 카드뮴 등 유해 성분을 포함하지 않아 고온 안전성이 우수하지만, 충격에 취약하고 조리 시간이 길어진다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "프라이팬 비교 블로그, 제품 후기",
+      "source_url": "https://onewandoo-blog.com/life-00006/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "조리용품",
+        "type": "세라믹 코팅 팬",
+        "years": "현행",
+        "region": "전체"
+      }
+    },
+    {
+      "id": "stainless-steel-durability",
+      "claim": "스테인리스 팬은 테프론이나 세라믹 대비 내구성이 매우 좋으며, 조리 환경에 따라 반영구적으로 사용 가능하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "프라이팬 비교 가이드, POSCO 뉴스룸",
+      "source_url": "https://newsroom.posco.com/kr/%EC%A3%BC%EB%B0%A9%EC%9D%98-%EA%B0%95%EC%9E%90%EB%8A%94-%EC%8A%A4%ED%85%8C%EC%9D%B8%EB%A6%AC%EC%8A%A4-vs-%EC%84%B8%EB%9D%BC%EB%AF%B9/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "조리용품",
+        "type": "스테인리스 팬",
+        "years": "전체",
+        "region": "전체"
+      }
+    },
+    {
+      "id": "enamel-cookware-safety",
+      "claim": "법랑(에나멜) 코팅 팬은 가장 안전한 조리 도구로, 유해 물질 위험이 최소화되고 수십 년 사용이 가능하다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "프라이팬 비교 가이드",
+      "source_url": "https://onewandoo-blog.com/life-00006/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "조리용품",
+        "type": "법랑 코팅 팬",
+        "years": "전체",
+        "region": "전체"
+      }
+    }
+  ]
+}

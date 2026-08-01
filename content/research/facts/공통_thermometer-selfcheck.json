@@ -1,0 +1,302 @@
+{
+  "topic": "전자체온계·비접촉 적외선 체온계 측정 오류 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "infrared-thermometer-distance",
+      "claim": "비접촉 적외선 체온계는 측정 부위로부터 3~5cm 거리를 유지해야 정확한 측정이 가능하며, 이 거리를 벗어나면 오차가 커진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소비자24(한국소비자원) - 피부적외선체온계 올바른 사용방법",
+      "source_url": "https://www.consumer.go.kr/user/bbs/consumer/261/731/bbsDataView/2520.do",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "체온계",
+        "line": "비접촉식 적외선",
+        "years": "모든 연식",
+        "region": "KR"
+      },
+      "caution": "1cm 내외에서도 거리에 따라 측정값이 달라질 수 있으므로 권장 거리 준수가 중요하다.",
+      "cautionSource": "소비자24(한국소비자원) - 피부적외선체온계 올바른 사용방법 - 거리 오차 언급"
+    },
+    {
+      "id": "environmental-temperature-error",
+      "claim": "환경 온도와 배경 온도가 물체의 온도와 다르면 비접촉 체온계의 측정 오류가 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소비자24(한국소비자원) - 피부적외선체온계 올바른 사용방법",
+      "source_url": "https://www.consumer.go.kr/user/bbs/consumer/261/731/bbsDataView/2520.do",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "체온계",
+        "line": "비접촉식 적외선",
+        "years": "모든 연식",
+        "region": "KR"
+      },
+      "caution": "실내에서 안정적인 환경 조건에서 측정하고, 실외나 급격한 온도 변화가 있는 장소에서의 측정은 오차가 크다."
+    },
+    {
+      "id": "sweat-moisture-affects-reading",
+      "claim": "측정 부위에 땀이나 수분이 있으면 기화열로 체열을 빼앗겨 실제보다 낮게 측정된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소비자24(한국소비자원) - 피부적외선체온계 올바른 사용방법",
+      "source_url": "https://www.consumer.go.kr/user/bbs/consumer/261/731/bbsDataView/2520.do",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "체온계",
+        "line": "비접촉식 적외선",
+        "years": "모든 연식",
+        "region": "KR"
+      },
+      "caution": "측정 전에 측정 부위의 땀을 제거하고 건조한 상태에서 측정해야 한다."
+    },
+    {
+      "id": "lens-fouling-causes-error",
+      "claim": "비접촉 체온계의 렌즈(센서)가 오염되면 정확한 측정이 불가능해진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소비자24(한국소비자원) - 피부적외선체온계 올바른 사용방법",
+      "source_url": "https://www.consumer.go.kr/user/bbs/consumer/261/731/bbsDataView/2520.do",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "체온계",
+        "line": "비접촉식 적외선",
+        "years": "모든 연식",
+        "region": "KR"
+      },
+      "caution": "렌즈 손상 여부를 정기적으로 확인하고 청결 상태를 유지하는 것이 필수이다."
+    },
+    {
+      "id": "lens-cleaning-method",
+      "claim": "비접촉 체온계의 렌즈는 부드러운 면봉으로 닦되, 알코올이 완전히 증발한 후 새 필터를 장착해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "머니트리 정보뉴스 - 브라운체온계 에러 메세지 오류코드 완벽정리",
+      "source_url": "https://www.bbmt24.com/%EB%B8%8C%EB%9D%BC%EC%9A%B4%EC%B2%B4%EC%98%A8%EA%B3%84-%EC%97%90%EB%9F%AC-%EB%A9%94%EC%84%B8%EC%A7%80-%EC%98%A4%EB%A5%98%EC%BD%94%EB%93%9C-%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC%EC%99%80-%ED%95%B4/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "체온계",
+        "line": "비접촉식 적외선",
+        "years": "모든 연식",
+        "region": "KR"
+      },
+      "caution": "제품 설명서의 세부 청소 방법을 따르는 것이 권장되며, 제조사별로 권장 방식이 다를 수 있다."
+    },
+    {
+      "id": "accuracy-by-site",
+      "claim": "체온 측정 정확도는 직장(항문) > 고막(귀) > 구강 > 겨드랑이 > 이마(피부) 순서로 떨어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 - 영아 및 소아의 열",
+      "source_url": "https://www.msdmanuals.com/ko/home/%EC%95%84%EB%8F%99%EC%9D%98-%EA%B1%B4%EA%B0%95-%EB%AC%B8%EC%A0%9C/%EC%98%81%EC%95%84-%EB%B0%8F-%EC%86%8C%EC%95%84%EC%9D%98-%EC%A6%9D%EC%83%81/%EC%98%81%EC%95%84-%EB%B0%8F-%EC%86%8C%EC%95%84%EC%9D%98-%EC%97%B4",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "체온계",
+        "line": "모든 유형",
+        "years": "모든 연식",
+        "region": "KR"
+      },
+      "caution": "이마 측정은 비접촉식에서 간편하지만 외부 환경 영향으로 오차가 가장 크다는 점을 이해하고 사용해야 한다."
+    },
+    {
+      "id": "infrared-forehead-affected-by-environment",
+      "claim": "비접촉식 이마 체온계는 외부 온도, 땀, 피부 상태, 측정 거리 등에 영향을 받아 정확도가 상대적으로 낮다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AJD - 체온계 종류 총정리",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%B2%B4%EC%98%A8%EA%B3%84_%EC%A2%85%EB%A5%98_%EC%B4%9D%EC%A0%95%EB%A6%AC!_%EC%A0%84%EC%9E%90,_%EA%B7%80_%EC%A0%81%EC%99%B8%EC%84%A0,_%EB%B9%84%EC%A0%91%EC%B4%89%EC%8B%9D_%ED%94%BC%EB%B6%80_%EC%B2%B4%EC%98%A8%EA%B3%84_%EC%A2%85%EB%A5%98_%EB%B3%84_%EC%B0%A8%EC%9D%B4%EC%A0%90%EA%B3%BC_%EC%B6%94%EC%B2%9C-61266",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "체온계",
+        "line": "비접촉식 적외선 - 이마",
+        "years": "모든 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "ear-infrared-more-accurate",
+      "claim": "귀(고막) 체온계는 고막이 체온을 반영하는 혈관과 가까워 비접촉식 이마보다 정확한 측정이 가능하지만, 귀 내부 왁스나 측정 방법이 잘못되면 오차가 생긴다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "닥터나우 - 비접촉 체온계 정확한 사용법",
+      "source_url": "https://doctornow.co.kr/content/qna/d4fbd2ef7817403bbf42f5b04a302dc4",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "체온계",
+        "line": "귀(고막) 적외선",
+        "years": "모든 연식",
+        "region": "KR"
+      },
+      "caution": "귀 측정은 정확하지만 귀지 제거와 올바른 각도가 중요하다."
+    },
+    {
+      "id": "error-code-hi-meaning",
+      "claim": "체온계에서 'Hi' 에러 메시지는 측정 대상의 온도가 42.2도 이상임을 나타낸다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "머니트리 정보뉴스 - 브라운체온계 에러 메세지 오류코드 완벽정리",
+      "source_url": "https://www.bbmt24.com/%EB%B8%8C%EB%9D%BC%EC%9A%B4%EC%B2%B4%EC%98%A8%EA%B3%84-%EC%97%90%EB%9F%AC-%EB%A9%94%EC%84%B8%EC%A7%80-%EC%98%A4%EB%A5%98%EC%BD%94%EB%93%9C-%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC%EC%99%80-%ED%95%B4/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "체온계",
+        "line": "모든 유형",
+        "years": "모든 연식",
+        "region": "KR"
+      },
+      "caution": "Hi가 표시되면 고열 상태이므로 의료 전문가의 상담이 필요할 수 있다."
+    },
+    {
+      "id": "error-code-lo-meaning",
+      "claim": "체온계에서 'Lo' 에러 메시지는 측정 대상의 온도가 32.0도 이하임을 나타낸다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "머니트리 정보뉴스 - 브라운체온계 에러 메세지 오류코드 완벽정리",
+      "source_url": "https://www.bbmt24.com/%EB%B8%8C%EB%9D%BC%EC%9A%B4%EC%B2%B4%EC%98%A8%EA%B3%84-%EC%97%90%EB%9F%AC-%EB%A9%94%EC%84%B8%EC%A7%80-%EC%98%A4%EB%A5%98%EC%BD%94%EB%93%9C-%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC%EC%99%80-%ED%95%B4/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "체온계",
+        "line": "모든 유형",
+        "years": "모든 연식",
+        "region": "KR"
+      },
+      "caution": "Lo가 표시되면 측정 오류이거나 저체온 상태일 수 있으므로 재측정이 필요하다."
+    },
+    {
+      "id": "battery-replacement",
+      "claim": "배터리 수명이 다한 경우 새로운 배터리로 교체하면 체온계의 정상 작동을 복구할 수 있다. 브라운 체온계의 대부분 모델은 AA 또는 AAA 배터리를 사용한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "머니트리 정보뉴스 - 브라운체온계 에러 메세지 오류코드 완벽정리",
+      "source_url": "https://www.bbmt24.com/%EB%B8%8C%EB%9D%BC%EC%9A%B4%EC%B2%B4%EC%98%A8%EA%B3%84-%EC%97%90%EB%9F%AC-%EB%A9%94%EC%84%B8%EC%A7%80-%EC%98%A4%EB%A5%98%EC%BD%94%EB%93%9C-%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC%EC%99%80-%ED%95%B4/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "체온계",
+        "line": "전자식·적외선",
+        "years": "모든 연식",
+        "region": "KR"
+      },
+      "caution": "배터리 교체 후에도 작동하지 않으면 전원 재설정이나 제조사 A/S를 고려해야 한다."
+    },
+    {
+      "id": "wait-before-measurement",
+      "claim": "운동, 목욕, 음식 섭취 후에는 최소 30분 경과 후에 체온을 측정해야 정확한 결과를 얻을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소비자24(한국소비자원) - 피부적외선체온계 올바른 사용방법",
+      "source_url": "https://www.consumer.go.kr/user/bbs/consumer/261/731/bbsDataView/2520.do",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "체온계",
+        "line": "모든 유형",
+        "years": "모든 연식",
+        "region": "KR"
+      },
+      "caution": "특히 비접촉식은 이 대기 시간을 엄격히 지킬 필요가 있다."
+    },
+    {
+      "id": "multiple-measurements-highest",
+      "claim": "비접촉식 체온계로 정확한 측정을 위해서는 2~3회 측정하여 가장 높은 수치로 판단하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소비자24(한국소비자원) - 피부적외선체온계 올바른 사용방법",
+      "source_url": "https://www.consumer.go.kr/user/bbs/consumer/261/731/bbsDataView/2520.do",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "체온계",
+        "line": "비접촉식 적외선",
+        "years": "모든 연식",
+        "region": "KR"
+      },
+      "caution": "일회 측정만으로 판단하지 말고 복수 측정으로 신뢰도를 높이는 것이 좋다."
+    },
+    {
+      "id": "infant-armpit-first",
+      "claim": "3개월 미만의 아기에게는 먼저 겨드랑이 체온을 측정하고, 37.2℃가 넘으면 항문 체온을 측정하여 확인하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 - 영아 및 소아의 열",
+      "source_url": "https://www.msdmanuals.com/ko/home/%EC%95%84%EB%8F%99%EC%9D%98-%EA%B1%B4%EA%B0%95-%EB%AC%B8%EC%A0%9C/%EC%98%81%EC%95%84-%EB%B0%8F-%EC%86%8C%EC%95%84%EC%9D%98-%EC%A6%9D%EC%83%81/%EC%98%81%EC%95%84-%EB%B0%8F-%EC%86%8C%EC%95%84%EC%9D%98-%EC%97%B4",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "체온계",
+        "line": "모든 유형",
+        "years": "모든 연식",
+        "region": "KR"
+      },
+      "caution": "아기는 정확한 체온 측정이 중요하므로 권장 방법을 따르는 것이 필수이다."
+    },
+    {
+      "id": "infant-thermometer-usage-rule",
+      "claim": "한 체온계는 한 가지 측정 방식으로만 사용해야 하며, 항문 체온 측정에 사용된 체온계를 구강 체온 측정에 사용하지 말아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 - 영아 및 소아의 열",
+      "source_url": "https://www.msdmanuals.com/ko/home/%EC%95%84%EB%8F%99%EC%9D%98-%EA%B1%B4%EA%B0%95-%EB%AC%B8%EC%A0%9C/%EC%98%81%EC%95%84-%EB%B0%8F-%EC%86%8C%EC%95%84%EC%9D%98-%EC%A6%9D%EC%83%81/%EC%98%81%EC%95%84-%EB%B0%8F-%EC%86%8C%EC%95%84%EC%9D%98-%EC%97%B4",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "체온계",
+        "line": "모든 유형",
+        "years": "모든 연식",
+        "region": "KR"
+      },
+      "caution": "위생상 이유로 중요한 규칙이다."
+    },
+    {
+      "id": "oral-measurement-timing",
+      "claim": "입으로 체온을 측정할 때 아이가 찬 음식이나 뜨거운 음식을 먹은 직후에는 측정하지 말아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 - 영아 및 소아의 열",
+      "source_url": "https://www.msdmanuals.com/ko/home/%EC%95%84%EB%8F%99%EC%9D%98-%EA%B1%B4%EA%B0%95-%EB%AC%B8%EC%A0%9C/%EC%98%81%EC%95%84-%EB%B0%8F-%EC%86%8C%EC%95%84%EC%9D%98-%EC%A6%9D%EC%83%81/%EC%98%81%EC%95%84-%EB%B0%8F-%EC%86%8C%EC%95%84%EC%9D%98-%EC%97%B4",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "체온계",
+        "line": "구강 측정",
+        "years": "모든 연식",
+        "region": "KR"
+      },
+      "caution": "최소 15~30분 정도 기다린 후 측정하는 것이 권장된다.",
+      "cautionSource": "MSD 매뉴얼 - 영아 및 소아의 열 - 구강 측정 시 식사 후 대기시간 언급"
+    },
+    {
+      "id": "persistent-fever-see-doctor",
+      "claim": "지속적인 고열이나 아기의 발열은 의료 전문가의 진단이 필요하므로 병원 방문을 권장한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 - 영아 및 소아의 열",
+      "source_url": "https://www.msdmanuals.com/ko/home/%EC%95%84%EB%8F%99%EC%9D%98-%EA%B1%B4%EA%B0%95-%EB%AC%B8%EC%A0%9C/%EC%98%81%EC%95%84-%EB%B0%8F-%EC%86%8C%EC%95%84%EC%9D%98-%EC%A6%9D%EC%83%81/%EC%98%81%EC%95%84-%EB%B0%8F-%EC%86%8C%EC%95%84%EC%9D%98-%EC%97%B4",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "체온계",
+        "line": "모든 유형",
+        "years": "모든 연식",
+        "region": "KR"
+      },
+      "caution": "특히 영아(3개월 미만)나 다른 증상이 동반되면 즉시 병원 방문이 필요하다.",
+      "cautionSource": "MSD 매뉴얼 - 영아 및 소아의 열 - 영아 연령 기준 3개월 미만 명시"
+    }
+  ]
+}

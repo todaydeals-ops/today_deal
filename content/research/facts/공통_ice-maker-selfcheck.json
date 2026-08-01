@@ -1,0 +1,384 @@
+{
+  "topic": "가정용 제빙기 자가점검 — 얼음 안 만들어짐·얼음 작아짐·누수·냄새·소음",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-28",
+  "reused_facts": [
+    "descaling-citric-acid-soak-method",
+    "humidifier-limescale-removal-citric-acid",
+    "humidifier-limescale-removal-vinegar"
+  ],
+  "declined_facts": [
+    {
+      "id": "weak-water-flow-descaling-scale-buildup",
+      "why": "커피머신의 히터·노즐 석회질 팩트이며, 제빙기는 물 공급 라인과 설계가 다르므로 적용 불가"
+    },
+    {
+      "id": "descaling-frequency-six-months-to-one-year",
+      "why": "캡슐 커피머신의 디스케알링 주기인데, 제빙기의 물때 관리와는 부위·방법이 다름"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "ice-not-produced-water-supply-issue",
+      "claim": "제빙기에서 얼음이 안 만들어질 때 가장 흔한 원인은 물 공급 문제로, 냉장고 뒤의 급수 호스가 꺾여있거나 수돗물이 잠겨 있거나, 정수기 필터가 막혀 수압이 낮으면 제빙기가 얼음 트레이에 물을 채울 수 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - 냉장고 얼음 불생성 해결 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37428",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빙기",
+        "line": "내장형 제빙기 탑재 냉장고 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "물 공급 문제는 사용자가 자가 점검할 수 있다. 냉장고 뒤 급수 호스를 확인하고, 수도 잠금을 열고, 정수기 필터가 있으면 필터 교체를 시도할 것. 이 조치 후에도 물이 안 나오면 펌프·밸브 고장을 의심할 수 있다.",
+      "cautionSource": "삼성전자서비스 자가 대응 절차"
+    },
+    {
+      "id": "ice-not-produced-temperature-setting",
+      "claim": "냉동실 온도가 -18°C 이상이어야 얼음이 잘 생기며, -20°C 이하로 설정하면 얼음 생성 속도가 현저히 느려지고, 여름철 등 실내 온도가 높거나 냉동실이 자주 열리면 온도를 한 두 단계 낮춰야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - 냉장고 제빙기 성능 최적화 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/33849",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빙기",
+        "line": "온도 조절식 냉동실 탑재 냉장고",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "최적 온도 범위는 -17°C ~ -19°C이며, 냉동실이 가득 차 있으면 냉기 순환이 방해되므로 70% 정도로 정리할 것. 온도 조절 후 24~48시간 후에 얼음 생성 효과를 확인하는 것이 좋다.",
+      "cautionSource": "삼성전자서비스 온도 설정 가이드"
+    },
+    {
+      "id": "ice-production-mode-disabled-check",
+      "claim": "냉장고 디스플레이에서 '제빙 정지' 표시등이 켜져 있거나 아이스 메이커 기능이 꺼져 있으면 얼음이 만들어지지 않으며, 설정 메뉴에서 제빙 기능을 활성화해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - 냉장고 제빙기 설정 확인",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37428",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빙기",
+        "line": "디지털 디스플레이 탑재 냉장고",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "모델마다 설정 위치가 다를 수 있으므로 매뉴얼 확인 필수. 제빙 정지 모드는 수동으로 비활성화할 때까지 계속 유지된다.",
+      "cautionSource": "제조사 사용설명서"
+    },
+    {
+      "id": "ice-production-power-freeze-mode",
+      "claim": "얼음 생성이 늦으면 전원 冷동 모드를 사용할 수 있다. 잠금/해제 버튼을 3초 이상 누른 후 파워 프리즈 버튼을 누르면 2.5~72시간 동안 냉동실을 더욱 강하게 식혀 빠른 얼음 생성을 도와준다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - 냉장고 제빙기 성능 최적화 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/33849",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "삼성",
+        "category": "제빙기",
+        "line": "파워 프리즈 기능 탑재 냉장고",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "파워 프리즈 모드는 전력 소비가 증가하므로 필요한 기간만 사용할 것. 과도한 냉각은 냉동실 내부를 과도하게 얼려 성에 축적을 유발할 수 있다.",
+      "cautionSource": "삼성 전자 사용설명서의 에너지 사용 주의"
+    },
+    {
+      "id": "ice-maker-freezer-filter-blockage",
+      "claim": "냉동실 공기 필터가 막혀 있으면 냉기 순환이 차단되어 컴프레셔 냉각핀의 냉각 성능이 저하되고, 이로 인해 얼음이 제대로 생기지 않을 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "냉장고 사용자 커뮤니티 경험 및 제조사 진단 기준",
+      "source_url": "https://www.clien.net/service/board/park/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빙기",
+        "line": "공기 필터 탑재 냉장고",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "냉동실 필터는 3~6개월마다 교체하는 것이 권장된다. 필터 위치는 모델마다 다르므로 매뉴얼 확인 필수.",
+      "cautionSource": "제조사 필터 교체 가이드"
+    },
+    {
+      "id": "ice-production-refrigerant-pressure-low",
+      "claim": "냉매 압력이 부족하면 냉동실이 충분히 식지 않아 얼음이 천천히 얼거나 안 얼 수 있으며, 이는 사용자가 직접 수리하기 어려운 부품 고장이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "가전 수리 서비스 가이드 및 제조사 기술 지원",
+      "source_url": "https://greenallfix.com/entry/%EC%A0%9C%EB%B9%99%EA%B8%B0-%EA%B3%A0%EC%9E%A5-%EC%9B%90%EC%9D%B8%EA%B3%BC-%ED%95%B4%EA%B2%B0%EB%B2%95-%EC%B4%9D%EC%A0%95%EB%A6%AC",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빙기",
+        "line": "냉매 순환식 냉장고 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "냉매 점검·충전은 반드시 공인된 서비스센터에서만 수행해야 한다. 냉매 누출이 의심되면 즉시 A/S를 신청할 것.",
+      "cautionSource": "냉장고 안전 서비스 가이드"
+    },
+    {
+      "id": "ice-tray-blockage-frozen-water",
+      "claim": "냉동실 얼음 트레이에 얼음이 걸려 있거나 살짝 녹은 얼음이 다시 얼면서 트레이 입구를 막으면 제빙기가 물을 채울 수 없어 얼음이 안 생긴다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "냉장고 사용자 커뮤니티 경험",
+      "source_url": "https://www.threads.com/@inforestmiri/post/DNfnEbQKNeP/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빙기",
+        "line": "얼음 트레이식 내장형 제빙기",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "얼음 트레이는 수동으로 꺼낼 수 있는 모델이 많으니 매뉴얼 확인 후 막힌 얼음을 제거할 것. 뜨거운 물이나 드라이기로 녹이면 트레이를 손상할 수 있으니 자연 해동을 권장한다.",
+      "cautionSource": "사용자 경험 기반 대처법"
+    },
+    {
+      "id": "ice-size-small-water-supply-insufficient",
+      "claim": "얼음이 평소보다 작아지는 주요 원인은 물 공급 부족으로, 급수 호스의 막힘, 정수기 필터 노후, 수압 저하 등이 원인이 되어 제빙기에 정량의 물이 공급되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "냉장고 제빙기 고장 원인 분석 종합",
+      "source_url": "https://greenallfix.com/entry/%EC%A0%9C%EB%B9%99%EA%B8%B0-%EA%B3%A0%EC%9E%A5-%EC%9B%90%EC%9D%B8%EA%B3%BC-%ED%95%B4%EA%B2%B0%EB%B2%95-%EC%B4%9D%EC%A0%95%EB%A6%AC",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빙기",
+        "line": "내장형 제빙기 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "얼음 크기가 점진적으로 작아지면 물 공급이 서서히 줄어들고 있다는 신호다. 급수 호스와 정수기 필터를 먼저 확인할 것.",
+      "cautionSource": "제조사 진단 기준"
+    },
+    {
+      "id": "ice-size-small-water-pump-noise",
+      "claim": "얼음이 불규칙하고 작아지며 워터펌프에서 '웅웅' 또는 '북북북' 하는 소리가 나면, 물 공급 부족으로 워터펌프가 충분한 물을 끌어올리지 못하고 있다는 신호다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "냉장고 제빙기 고장 원인 분석 및 사용자 보고",
+      "source_url": "https://greenallfix.com/entry/%EC%A0%9C%EB%B9%99%EA%B8%B0-%EB%AA%A8%EC%96%91-%EB%B6%88%EA%B7%A0%EC%9D%BC-%EC%9B%90%EC%9D%B8%EA%B3%BC-%EB%AC%BC-%EB%84%98%EC%B9%A8-%ED%98%84%EC%83%81",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빙기",
+        "line": "워터펌프 탑재 제빙기 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "펌프 소음은 물 공급이 부족할 때 나는 정상 신호이다. 급수 호스·필터 확인 후에도 같은 소리가 계속 나고 얼음이 여전히 작으면, 펌프 모터 고장을 의심할 수 있으며 A/S 필요.",
+      "cautionSource": "제조사 진단 기준"
+    },
+    {
+      "id": "refrigerator-water-leak-drain-clog",
+      "claim": "냉장고 바닥에 물이 고이는 가장 흔한 원인은 냉동실 배수구가 얼음이나 이물질로 막혀 있어서, 성에가 녹은 물이 물받이로 흐르지 못하고 냉장실로 넘치거나 바닥으로 흘러나오는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 + LG전자 고객지원 - 냉장고 누수 해결 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/38793",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "냉장고",
+        "line": "냉동실 배수구 탑재 냉장고 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "냉동실 배수구는 보통 냉동실 뒤쪽 하단이나 내벽 한쪽에 위치한다. 면봉이나 가는 철사로 조심스럽게 청소하면 대부분 해결된다. 힘을 주어 파고들면 배수구를 손상할 수 있으니 주의할 것.",
+      "cautionSource": "삼성·LG 공식 수리 가이드"
+    },
+    {
+      "id": "ice-maker-water-inlet-valve-malfunction",
+      "claim": "얼음통에 물이 고이거나 넘치는 경우는 대부분 급수밸브가 닫히지 않아서 발생하며, 밸브 고장으로 물이 계속 유입되면 저장통이 과도하게 채워지고 얼음과 물이 뒤섞여 흘러난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "냉장고 제빙기 누수 원인 분석",
+      "source_url": "https://greenallfix.com/entry/%EC%A0%9C%EB%B9%99%EA%B8%B0-%EA%B3%A0%EC%9E%A5-%EC%9B%90%EC%9D%B8%EA%B3%BC-%ED%95%B4%EA%B2%B0%EB%B2%95-%EC%B4%9D%EC%A0%95%EB%A6%AC",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빙기",
+        "line": "전자식 급수밸브 탑재 제빙기",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "급수밸브 고장은 사용자가 직접 수리하기 어렵다. 얼음통에 물이 자꾸 고이면 반드시 A/S를 신청할 것.",
+      "cautionSource": "제조사 A/S 기준"
+    },
+    {
+      "id": "refrigerator-water-leak-drain-hose-issue",
+      "claim": "배수관이 막혀 있거나 경사가 부족해 배수가 원활하지 않으면 내부 물이 역류하여 냉장실이나 바닥으로 넘치게 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "냉장고 누수 원인 분석 - LG·삼성 고객지원",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151288380744",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "냉장고",
+        "line": "배수호스 탑재 냉장고 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "배수호스는 냉장고 뒤쪽 하단에 위치하며, 이물질이 막혔거나 구부러져 있을 수 있다. 호스를 뽑아 청소한 후 약간의 경사를 유지하며 다시 연결할 것.",
+      "cautionSource": "냉장고 설치 및 유지 가이드"
+    },
+    {
+      "id": "refrigerator-seal-degradation-condensation-leak",
+      "claim": "에바판(냉각판) 커버나 배수구 주변의 실리콘 실링이 오래되면 틈이 벌어져 미세한 누수가 발생하거나, 결로 현상으로 물이 새어나올 수 있다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "냉장고 누수 사용자 보고 및 서비스 진단 기준",
+      "source_url": "https://pdbig.com/freeboard/8664",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "냉장고",
+        "line": "냉각판 탑재 냉장고",
+        "years": "5년 이상 사용 제품",
+        "region": "KR"
+      },
+      "caution": "실링 손상은 외부에서 눈에 띄지 않을 수 있으므로, 계절 변화(가을·겨울)에 갑자기 누수가 시작되면 결로 현상을 의심해볼 수 있다. 실링 교체는 기술적으로 어려우므로 전문 기사 방문이 필요하다.",
+      "cautionSource": "냉장고 서비스 경험 기반"
+    },
+    {
+      "id": "ice-maker-odor-limescale-mineral-buildup",
+      "claim": "제빙기에서 냄새가 나거나 물때가 보이는 원인은 물 공급 라인·얼음 트레이·얼음통에 미네랄이 축적되고 세균이 번식하기 때문이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "냉장고 제빙기 위생 관리 가이드 및 커뮤니티 경험",
+      "source_url": "https://watermanager.kr/article/%EC%B2%AD%EC%86%8C%EB%B0%A9%EB%B2%95-as-%EA%B4%80%EB%A0%A8%EC%82%AC%ED%95%AD/6/483/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빙기",
+        "line": "내장형 제빙기 전 모델",
+        "years": "1년 이상 사용 제품",
+        "region": "KR"
+      },
+      "caution": "물의 경도가 높은 지역(수도권 외곽, 시골 지역)에서는 미네랄 축적이 더 빨리 진행되므로 정기적 청소가 중요하다.",
+      "cautionSource": "물의 경도와 미네랄 축적의 상관관계"
+    },
+    {
+      "id": "ice-maker-descaling-citric-acid-method",
+      "claim": "제빙기의 물때는 냉동실에 물 1컵에 구연산 1~2스푼(10~20g)을 섞은 용액을 얼음 트레이나 물받이에 부어 얼린 후, 자연적으로 해동되면서 구연산이 물때를 녹이고 악취를 흡수하는 방법으로 제거할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "냉장고 제빙기 청소 가이드 및 사용자 경험 종합",
+      "source_url": "https://watermanager.kr/article/%EC%B2%AD%EC%86%8C%EB%B0%A9%EB%B2%95-as-%EA%B4%80%EB%A0%A8%EC%82%AC%ED%95%AD/6/483/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빙기",
+        "line": "내장형 제빙기 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "구연산 용액이 얼어 제빙이 된 후, 물받이나 얼음통에 고인 물을 버릴 때 구연산 냄새가 남을 수 있으니 충분히 헹굴 것. 제빙기 내부 라인까지 청소할 수는 없으므로, 이 방법은 냉동실 내부의 냄새 제거와 표면 물때 제거 목적이다.",
+      "cautionSource": "구연산 세척 안전 가이드"
+    },
+    {
+      "id": "ice-maker-descaling-vinegar-method",
+      "claim": "제빙기의 물때는 식초와 물을 10:1 비율로 섞어 냉동실에 얼린 후 해동하는 방법으로도 제거할 수 있으며, 구연산이 없을 때 대체 방법으로 사용할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "냉장고 청소 가이드 및 사용자 경험",
+      "source_url": "https://lifetiply.com/%EA%B5%AC%EC%97%B0%EC%82%B0-%EB%AC%BC%EB%95%8C-%EC%A0%9C%EA%B1%B0-%ED%99%94%EC%9E%A5%EC%8B%A4-%EC%A3%BC%EB%B0%A9-%EC%B2%AD%EC%86%8C-%EA%BF%80%ED%8C%81/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빙기",
+        "line": "내장형 제빙기 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "식초의 신 냄새가 냉장고·냉동실에 남을 수 있으므로, 세척 후 여러 번 헹굴 것. 세척 후에도 냄새가 지속되면 냉장고 문을 열어두고 몇 시간 방치했다가 사용할 것.",
+      "cautionSource": "사용자 경험 기반 대처법"
+    },
+    {
+      "id": "ice-maker-odor-removal-baking-soda",
+      "claim": "약알칼리성의 베이킹소다는 산성 악취를 중화시키는 효과가 있으므로, 냉동실의 일반 악취 제거에는 베이킹소다를, 구연산과 병행 사용할 때는 냄새가 더욱 빠르게 제거된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "냉장고 탈취 가이드 및 전문가 추천",
+      "source_url": "https://zip.googling.pw/entry/%EB%83%89%EC%9E%A5%EA%B3%A0-%EC%B2%AD%EC%86%8C%ED%95%98%EB%8A%94-%EB%B2%A0%EC%9D%B4%ED%82%B9%EC%86%8C%EB%8B%A4-%EA%B5%AC%EC%97%B0%EC%82%B0",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "냉장고",
+        "line": "냉동실 탈취 필요 제품 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "베이킹소다는 냉동실에 개방식으로 두거나 얼음 형태로 얼렸을 때 냄새를 흡수한다. 정기적으로 교체해주면 추가 세척 없이 냄새 제거 효과를 볼 수 있다.",
+      "cautionSource": "냉장고 위생 관리 가이드"
+    },
+    {
+      "id": "ice-maker-noise-ice-falling-normal",
+      "claim": "제빙기에서 '쿵', '달그락' 하는 소리는 제빙기가 얼음을 만든 후 얼음통으로 떨어뜨릴 때 나는 정상 소음으로, 얼음 양에 따라 크기가 달라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - 정수기 냉장고 제빙기 소음 안내",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151463175089",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빙기",
+        "line": "내장형 제빙기 탑재 냉장고 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "이 소음은 정상이지만 밤에 거슬리면 야간 조용히 모드 설정(ThinQ 앱 지원 모델)으로 설정한 시간대에는 얼음 취출을 멈출 수 있다.",
+      "cautionSource": "제조사 정상 작동 안내"
+    },
+    {
+      "id": "ice-maker-noise-water-inlet-valve",
+      "claim": "제빙기에서 '드드득', '딸깍' 하는 소리는 냉장고 뒤 기계실의 급수 밸브가 동작하면서 나는 정상 소음이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 - 냉장고 제빙기 소음 분석",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151463175089",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빙기",
+        "line": "내장형 제빙기 탑재 냉장고 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "이 소음도 정상 작동음이다. 이 소리가 나면 제빙기가 물을 공급받고 있다는 신호다.",
+      "cautionSource": "제조사 정상 작동 안내"
+    },
+    {
+      "id": "ice-maker-noise-water-pump-abnormal",
+      "claim": "워터펌프에서 물을 끌어올리는 정상적인 소음이 나지 않고, 대신 빈 소리만 난다면 높은 확률로 워터펌프 모터가 고장났을 가능성이 있으며 사용자가 직접 수리하기 어렵다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "냉장고 제빙기 소음 및 워터펌프 고장 진단",
+      "source_url": "https://blog.hansungshowcase.kr/jebitgibuput-gyoche-jeon-pilsu-chekeu-gojat-jeutsatbyeol-haeksit-buputgwa-gagyeo",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "제빙기",
+        "line": "워터펌프 탑재 제빙기 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "워터펌프 소음이 나지 않으면서 얼음이 안 만들어지거나 물이 줄어들면, A/S를 즉시 신청할 것. 펌프 고장은 냉장고 전체 기능에 영향을 미칠 수 있다.",
+      "cautionSource": "제조사 A/S 진단 기준"
+    }
+  ]
+}

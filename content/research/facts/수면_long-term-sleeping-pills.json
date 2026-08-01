@@ -1,0 +1,91 @@
+{
+  "topic": "수면제 장기복용의 위험과 대안",
+  "brand": "공통",
+  "article": "long-term-sleeping-pills",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "benzodiazepine-long-term-use-risks",
+      "claim": "벤조디아제핀의 장기 복용은 의존성, 인지 장애, 낙상 위험, 치매 연관성 등 여러 부작용을 유발할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samardžić J, Tandon N, Branković M, Rational Use of Benzodiazepines in Modern Healthcare: Evidence-Based Strategies, Healthcare",
+      "source_url": "https://doi.org/10.3390/healthcare14101392",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면제 · 벤조디아제핀",
+        "years": "전체",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "benzodiazepine-misuse-therapeutic-challenges",
+      "claim": "벤조디아제핀은 치료 효과와 오용·남용 위험 사이의 딜레마를 안고 있으며, 근거 기반의 신중한 사용이 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Figg JW et al., Benzodiazepines at the crossroads: navigating therapeutic promise and perils of misuse, BMC Medicine",
+      "source_url": "https://doi.org/10.1186/s12991-025-00627-0",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면제 · 벤조디아제핀",
+        "years": "전체",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "non-benzodiazepine-receptor-agonist-alternative",
+      "claim": "벤조디아제핀의 대안으로 비벤조디아제핀 수용체 작용제(Z-드럭)가 사용되며, 이 약물들의 효과와 안전성이 지속 비교 중이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Gao S et al., Comparative pharmacovigilance of non-benzodiazepine receptor agonists versus dual orexin receptor antagonists for insomnia in older adults, Frontiers in Pharmacology",
+      "source_url": "https://doi.org/10.3389/fphar.2026.1788736",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면제 · 비벤조디아제핀",
+        "years": "전체",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "dual-orexin-receptor-antagonist-insomnia",
+      "claim": "이중 오렉신 수용체 길항제(DORAs)는 노년층 불면증 치료의 새로운 옵션으로 부상하고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Rollo E et al., Treatment of chronic insomnia in elderly adults with dual orexin receptor antagonists: A systematic review and meta-analysis, Sleep",
+      "source_url": "https://doi.org/10.1093/sleep/zsag135",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면제 · 오렉신",
+        "years": "전체",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "cbt-i-alternative-pharmacotherapy",
+      "claim": "인지행동 수면치료(CBT-I)는 약물 없이 장기 불면증을 치료하는 비약물 중재로 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samardžić J, Tandon N, Branković M, Rational Use of Benzodiazepines in Modern Healthcare: Evidence-Based Strategies, Healthcare",
+      "source_url": "https://doi.org/10.3390/healthcare14101392",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면제 · CBT-I",
+        "years": "전체",
+        "region": "글로벌"
+      }
+    }
+  ]
+}

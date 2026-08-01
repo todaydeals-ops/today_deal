@@ -1,0 +1,312 @@
+{
+  "topic": "가정용 혈압계 측정 오류·오차 자가점검",
+  "brand": "공통",
+  "article": "blood-pressure-monitor-selfcheck",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "bp-monitor-reading-varies-by-condition",
+      "claim": "같은 사람이 같은 날 혈압계로 여러 번 측정하면 값이 다르게 나온다. 이는 고장이 아니라 혈압이 시간, 자세, 심리 상태, 신체 활동에 따라 자연스럽게 변한다는 뜻이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "오므론 혈압계 공식 안내",
+      "source_url": "https://www.omron-healthcare.co.kr/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "혈압계",
+        "line": "전자동식",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "수치 변동은 정상이지만, 의료 판단은 자신의 판독값으로 하지 말고 반드시 의사와 상의할 것"
+    },
+    {
+      "id": "bp-measurement-stabilization-required",
+      "claim": "정확한 혈압 측정을 위해서는 측정 5분 이상 전에 카페인(커피·차) 섭취와 흡연을 삼가고, 편안한 자세로 5분 이상 안정한 후에 측정해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "연수구 보건소 올바른 혈압 측정법 가이드",
+      "source_url": "https://www.yeonsu.go.kr/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "혈압계",
+        "line": "전 타입",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "아침 측정 시에는 기상 후 1시간 이내, 소변을 본 후에 측정하는 것이 표준"
+    },
+    {
+      "id": "bp-measurement-proper-posture",
+      "claim": "혈압 측정 시 올바른 자세는 등받이가 있는 의자에 등을 기대고, 발을 바닥에 붙이며, 팔의 위팔(상완)이 심장과 같은 높이에 오도록 하는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "연수구 보건소 올바른 혈압 측정법 가이드",
+      "source_url": "https://www.yeonsu.go.kr/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "혈압계",
+        "line": "상완식, 손목식",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "손목형 혈압계 사용 시 팔을 테이블에 올려놓으면 손목이 심장보다 낮아져 측정값이 약 7~8mmHg 높게 나올 수 있다",
+      "cautionSource": "손목형 혈압계 정확도 가이드 (웹 검색: 손목형 혈압계 정확도)"
+    },
+    {
+      "id": "bp-cuff-size-measurement-accuracy",
+      "claim": "혈압계 커프의 크기가 팔 둘레에 맞지 않으면 측정 오차가 발생한다. 커프가 너무 작으면 혈압이 실제보다 높게 측정되며, 대형 커프가 필요한 사람에게 일반 커프를 사용하면 최대 19.7mmHg까지 높게 측정될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "오므론 헬스케어 혈압계 정확도 확인 방법",
+      "source_url": "https://www.omron-healthcare.co.kr/health-and-lifestyle/all/view?bbsSq=312",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "혈압계",
+        "line": "상완식",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "팔뚝 둘레를 정확히 측정하고 그에 맞는 커프 사이즈를 구매하거나 제조사에서 제공하는 대체 커프를 요청할 것",
+      "cautionSource": "커프 크기별 측정 오차에 관한 임상 연구"
+    },
+    {
+      "id": "bp-cuff-fitting-technique",
+      "claim": "혈압계 커프를 팔에 착용할 때는 맨살에 직접 감아야 하며, 옷 위에 감으면 정확한 측정이 불가능하다. 커프는 팔뚝을 고르게 감싸되, 손가락 한두 개가 커프와 팔 사이에 들어갈 정도로 느슨하지도, 너무 조이지도 않게 감아야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "오므론 혈압계 공식 가이드",
+      "source_url": "https://m.omron-healthcare.co.kr/comm/filedown/?file=kBV3urHDv0uFZeYCzl9sZw%3D%3D",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "혈압계",
+        "line": "상완식",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "bp-monitor-error-e1-cuff-fitting",
+      "claim": "오므론 혈압계에서 E1 에러가 표시되면 커프를 감지 않거나 너무 느슨하게 감은 경우, 또는 옷 위에 감은 경우이다. 해결 방법은 맨살에 커프를 단단히 감고 다시 측정하는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "오므론 혈압계 공식 가이드",
+      "source_url": "https://m.omron-healthcare.co.kr/comm/filedown/?file=dPKBSVA8XHYqBdf0om8IJQ%3D%3D",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "오므론",
+        "category": "혈압계",
+        "line": "전자동식",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "bp-monitor-error-e2-movement",
+      "claim": "오므론 혈압계에서 E2 에러가 표시되면 측정 중에 팔을 움직이거나 말을 한 경우이다. 해결 방법은 측정 중에 움직이지 말고, 편안한 자세를 유지하며, 말을 하지 않고 기다리는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "오므론 혈압계 공식 가이드",
+      "source_url": "https://m.omron-healthcare.co.kr/comm/filedown/?file=dPKBSVA8XHYqBdf0om8IJQ%3D%3D",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "오므론",
+        "category": "혈압계",
+        "line": "전자동식",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "bp-monitor-error-e3-pressure-failure",
+      "claim": "오므론 혈압계에서 E3 에러가 표시되면 커프의 공기 주머니에 작은 구멍이 생겼거나, 에어 튜브가 느슨하게 연결된 경우이다. 해결 방법은 튜브 연결을 다시 확인하고, 계속 에러가 나면 제조사에 문의하는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "오므론 혈압계 공식 가이드",
+      "source_url": "https://m.omron-healthcare.co.kr/comm/filedown/?file=dPKBSVA8XHYqBdf0om8IJQ%3D%3D",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "오므론",
+        "category": "혈압계",
+        "line": "전자동식",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "bp-monitor-error-e4-pulse-signal",
+      "claim": "오므론 혈압계에서 E4 에러가 표시되면 측정 중에 모니터가 불규칙한 맥박 신호를 감지한 경우이다. 부정맥이 있는 경우 이 에러가 자주 발생할 수 있으며, 이 경우 의료 전문가와 상담해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "오므론 혈압계 공식 가이드",
+      "source_url": "https://m.omron-healthcare.co.kr/comm/filedown/?file=dPKBSVA8XHYqBdf0om8IJQ%3D%3D",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "오므론",
+        "category": "혈압계",
+        "line": "전자동식",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "부정맥 에러가 반복되면 기기 오류가 아니라 의료 상태를 나타낼 수 있으므로, 즉시 의사와 상담할 것"
+    },
+    {
+      "id": "bp-monitor-error-e5-irregular-pulse",
+      "claim": "오므론 혈압계에서 E5 에러가 표시되면 맥박이 감지되지 않거나 부정맥이 있는 경우이다. 나이가 들수록, 또는 서맥(느린 맥박)이 있으면 이 에러가 나타날 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "오므론 혈압계 공식 가이드",
+      "source_url": "https://m.omron-healthcare.co.kr/comm/filedown/?file=dPKBSVA8XHYqBdf0om8IJQ%3D%3D",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "오므론",
+        "category": "혈압계",
+        "line": "전자동식",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "upper-arm-vs-wrist-bp-monitor-accuracy",
+      "claim": "상완형(팔뚝) 혈압계가 손목형보다 정확하다. 상완동맥에서 측정하는 상완형은 심장 높이와 거의 같아 실제 혈압을 잘 반영하지만, 손목형은 요골동맥에서 측정하므로 손목 위치에 따라 10~30mmHg까지 오차가 생길 수 있다. 미국·유럽·대한민국의 주요 의학 학회는 모두 상완형 사용을 1순위로 권고한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "보이러 건강 가이드, 대한고혈압학회 권고",
+      "source_url": "https://beurer.kr/152/?bmode=view&idx=169952745",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "혈압계",
+        "line": "상완형 vs 손목형",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "손목형은 팔둘레가 크거나 팔에 상처가 있는 예외 상황에서만 보조적으로 사용할 것. 고령자나 동맥경화가 있는 경우 상완형이 필수"
+    },
+    {
+      "id": "wrist-bp-monitor-position-accuracy",
+      "claim": "손목형 혈압계 사용 시 손목이 반드시 심장과 같은 높이에 위치해야 한다. 테이블 위에 팔을 내려놓으면 손목이 심장보다 낮아져 측정값이 약 7~8mmHg 높게 나온다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "손목형 혈압계 정확도 가이드",
+      "source_url": "https://www.a-ha.io/questions/4e7fb727c352a61b9f8da89558de15a5",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "혈압계",
+        "line": "손목형",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "bp-recording-multiple-measurements-average",
+      "claim": "정확한 혈압 기록을 위해서는 한 번의 측정값을 기준으로 하지 말고, 같은 시간에 2~3회 측정해 그 평균을 기록하는 것이 권장된다. 혈압은 하루종일 변하는 그래프이므로 여러 날의 평균 추세가 실제 혈압 상태를 반영한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "가정혈압 측정 가이드",
+      "source_url": "https://www.bodyvitalia.com/insight/home-blood-pressure-measurement/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "혈압계",
+        "line": "전 타입",
+        "years": "전 연식",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "white-coat-hypertension-home-vs-hospital",
+      "claim": "집에서 측정한 혈압과 병원(의료기관)에서 측정한 혈압이 다르게 나올 수 있다. 이를 '백의 고혈압(흰 가운 고혈압)' 현상이라 하며, 병원 환경에서의 긴장과 불안 때문에 혈압이 일시적으로 올라가는 것이 원인이다. 고혈압 진단을 위해서는 여러 날의 가정 혈압 평균을 더 신뢰할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "가정혈압 측정 가이드",
+      "source_url": "https://www.bodyvitalia.com/insight/home-blood-pressure-measurement/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "혈압계",
+        "line": "전 타입",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "가정에서 측정한 혈압으로 독단적인 약물 조절을 하면 안 되며, 반드시 의사와 상담해 진단과 치료 방침을 결정할 것"
+    },
+    {
+      "id": "bp-monitor-battery-verification",
+      "claim": "혈압계가 정확한 측정값을 제공하려면 배터리가 충분해야 한다. 배터리 부족하면 센서 감지 신호가 약해져 측정이 실패하거나 오류가 발생할 수 있다. 주기적으로 배터리를 점검하고, 필요 시 새 배터리로 교체해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "혈압계 사용 설명서 일반 안내",
+      "source_url": "https://www.omron-healthcare.co.kr/support/download/blood-pressure-monitors",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "혈압계",
+        "line": "배터리식 전자동식",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "혈압계가 측정 중에 꺼지거나 화면에 배터리 부족 표시가 나면 즉시 배터리를 교체할 것"
+    },
+    {
+      "id": "bp-monitor-app-connectivity-setup",
+      "claim": "스마트폰 앱 연동 혈압계의 경우, 앱이 최신 버전인지 확인하고, Bluetooth 연결 상태를 확인한 후 앱의 기기 추가 메뉴에서 혈압계를 등록해야 한다. 앱과 기기 간 동기화 실패 시에는 앱을 완전히 종료한 후 다시 열거나, 휴대폰의 Bluetooth를 껐다가 켜는 방법을 시도한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스마트 혈압계 앱 연동 일반 안내",
+      "source_url": "https://www.omron-healthcare.co.kr/support/download/blood-pressure-monitors",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "혈압계",
+        "line": "앱 연동 모델",
+        "years": "2020~",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "bp-monitor-periodical-calibration",
+      "claim": "혈압계의 정확도는 시간이 지남에 따라 저하될 수 있다. 제조사에서는 1~2년마다 병원이나 정품 서비스센터에서 혈압계의 정확도를 점검받을 것을 권고한다. 정확도 확인 방법은 병원의 수동 혈압계(수은주 혈압계)와 동시에 측정해 오차 범위를 비교하는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "오므론 혈압계 정확도 확인 방법",
+      "source_url": "https://www.omron-healthcare.co.kr/health-and-lifestyle/all/view?bbsSq=312",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "혈압계",
+        "line": "전 타입",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "정기 교정 없이 오래된 혈압계로 측정한 값은 신뢰도가 떨어질 수 있으므로, 장기 고혈압 관리 중이라면 1~2년마다 정확도 점검을 권장",
+      "cautionSource": "오므론 혈압계 정확도 확인 방법 — 제조사 권고 기준"
+    },
+    {
+      "id": "bp-measurement-medical-judgment-prohibition",
+      "claim": "혈압계 측정값을 바탕으로 자가 진단하거나 약물을 임의로 조절하면 안 된다. 혈압 판정과 치료 방침은 반드시 의료 전문가(의사)와 상담해 결정해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "오므론 혈압계 공식 안내",
+      "source_url": "https://www.omron-healthcare.co.kr/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "혈압계",
+        "line": "전 타입",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "자가측정은 혈압 추세를 파악하는 참고 도구일 뿐, 의료 진단 기기가 아니다. 계속 높은 수치가 나오거나 어지러움 등 증상이 동반되면 반드시 의사와 상담할 것"
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "topic": "펫 드라이룸(반려동물 자동 건조기) 구매 가이드 — 원리·장점·안전성·적합성",
+  "brand": "공통",
+  "article": "pet-dryroom-trend (예정)",
+  "captured": "2026-07-28",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "hair-dryer-filter-cleaning-monthly",
+      "why": "펫 드라이룸은 헤어드라이어와 다른 목적의 기기로, 동물털의 특성상 필터 청소 주기와 필터 타입이 상이할 가능성 높음. 명확한 펫용 필터 청소 주기 정보 별도 필요"
+    },
+    {
+      "id": "hair-dryer-overheating-thermal-cutoff",
+      "why": "헤어드라이어는 훨씬 고온 운영(80~100도대 예상)되는 반면 펫 드라이룸은 저온 설계(38~42도대)로 작동 원리와 안전 기준이 완전히 다름. 펫용의 저온화상 위험이라는 별도의 안전성 이슈가 있음"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "pet-dryroom-circulation-principle",
+      "claim": "펫 드라이룸은 상자 모양의 내부에서 온풍이 순환되어 반려동물의 털을 자동으로 말려주는 기기로, 직접 드라이기로 말리지 않아도 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "비마이펫 라이프 · 펫 드라이룸 가이드",
+      "source_url": "https://mypetlife.co.kr/128657/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "pet-dryroom-vs-handheld-dryer-stress-reduction",
+      "claim": "펫 드라이룸은 목욕 후 집사가 직접 드라이기로 말려주지 않아도 되므로, 손드라이어 사용 시 반려동물이 받는 스트레스를 줄일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "비마이펫 라이프 · 펫 드라이룸 추천 가이드",
+      "source_url": "https://mypetlife.co.kr/128657/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "pet-dryroom-vs-handheld-dryer-time-efficiency",
+      "claim": "펫 드라이룸을 사용하면 손드라이어로 직접 말릴 때보다 반려동물의 털 말리는 시간이 줄어든다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "비마이펫 라이프 · 펫 드라이룸 가이드",
+      "source_url": "https://mypetlife.co.kr/143435/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "pet-dryroom-vs-handheld-dryer-noise-advantage",
+      "claim": "펫 드라이룸은 손드라이어보다 소음이 적은 편으로, 이는 반려동물의 청각 스트레스를 줄여준다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "비마이펫 라이프 · 펫 드라이룸 추천 가이드",
+      "source_url": "https://mypetlife.co.kr/128657/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "pet-dryroom-undercoat-drying-efficiency",
+      "claim": "펫 드라이룸은 온풍 순환으로 고양이의 속털까지 빠르게 말려주어, 손드라이어로 말릴 때보다 건조가 더 꼼꼼하게 이루어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "비마이펫 라이프 · 펫 드라이룸 추천 가이드",
+      "source_url": "https://mypetlife.co.kr/128657/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "pet-dryroom-additional-cleaning-function",
+      "claim": "펫 드라이룸은 목욕 후 건조 외에 산책 후 반려동물 털에 묻은 풀, 먼지, 흙 등을 제거하는 추가 용도로도 사용할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "비마이펫 라이프 · 펫 드라이룸 가이드",
+      "source_url": "https://mypetlife.co.kr/128657/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "pet-dryroom-price-range",
+      "claim": "시판 중인 펫 드라이룸의 가격은 50만 원대부터 70만 원대까지 다양한 가격대로 출시되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "비마이펫 라이프 · 펫 드라이룸 추천 가이드",
+      "source_url": "https://mypetlife.co.kr/143435/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "pet-dryroom-space-requirement",
+      "claim": "펫 드라이룸은 제품 자체의 부피가 크고 차지하는 공간이 많은 편으로, 가정의 주거 공간 계획 시 고려가 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소비자24 · 펫드라이룸 비교정보",
+      "source_url": "https://www.consumer.go.kr/user/ftc/consumer/cnsmrBBS/80/selectInfoCmprDetail.do?infoId=A1080733",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "pet-dryroom-noise-level-range",
+      "claim": "펫 드라이룸의 소음은 바람 세기에 따라 달라지며, 최저 23dB 수준으로 측정된 제품이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "비마이펫 라이프 · 펫 드라이룸 추천 가이드",
+      "source_url": "https://mypetlife.co.kr/128657/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "pet-dryroom-high-noise-with-increase-wind-speed",
+      "claim": "펫 드라이룸은 바람 세기를 높일수록 소음도 커진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소비자24 · 펫드라이룸 비교정보",
+      "source_url": "https://www.consumer.go.kr/user/ftc/consumer/cnsmrBBS/80/selectInfoCmprDetail.do?infoId=A1080733",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "pet-dryroom-cat-noise-sensitivity-resistance",
+      "claim": "소리에 민감한 고양이는 펫 드라이룸에서 나오는 소음으로 인해 드라이룸 사용을 거부할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "비마이펫 라이프 · 펫 드라이룸 추천 가이드",
+      "source_url": "https://mypetlife.co.kr/128657/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "pet-dryroom-cat-heat-anxiety",
+      "claim": "펫 드라이룸 내부에서 나오는 뜨거운 바람으로 인해 고양이가 숨쉬기 어려워하거나 불편함을 느낄 수 있으며, 내부 온도 급상승으로 고양이가 더워할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "비마이펫 라이프 · 펫 드라이룸 추천 가이드",
+      "source_url": "https://mypetlife.co.kr/139523/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "고양이의 호흡 불편 및 열스트레스 위험이 있으므로, 드라이룸 사용 시 고양이의 반응을 주의깊게 관찰하고 필요 시 중단할 것",
+      "cautionSource": "비마이펫 라이프의 고양이 스트레스 가이드"
+    },
+    {
+      "id": "pet-dryroom-safe-temperature-range",
+      "claim": "펫 드라이룸의 적정 작동 온도는 38.5도 이상으로 올라가지 않는 수준이며, 대부분의 시판 제품은 39도 정도 또는 그 이하의 온도로 설계되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "경향신문·YTN · 펫드라이룸 비교분석",
+      "source_url": "https://www.khan.co.kr/article/202412171703001",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "온도 조절 기능이 잘 되는 제품을 선택하고, 자동 온도 조절 기능이 있는 제품을 우선 고려할 것",
+      "cautionSource": "소비자24의 펫드라이룸 안전성 평가"
+    },
+    {
+      "id": "pet-dryroom-auto-shutoff-safety-feature",
+      "claim": "일부 펫 드라이룸 제품은 내부 온도가 42도 이상으로 올라가면 자동으로 작동을 중단하는 안전 기능을 갖추고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "경향신문·YTN · 펫드라이룸 비교분석",
+      "source_url": "https://www.khan.co.kr/article/202412171703001",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 일부 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "자동 차단 기능이 있는 제품이 안전성 측면에서 유리하다",
+      "cautionSource": "제조사 안전 기능 명시"
+    },
+    {
+      "id": "pet-dryroom-low-temperature-burn-risk",
+      "claim": "반려동물의 저온화상은 40~50도의 비교적 낮은 온도에 피부가 장시간 노출될 때 발생하며, 낮은 온도라도 지속적으로 접촉하면 피부 조직 내부에 열이 축적되어 깊은 곳까지 손상을 입힐 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "반려동물 용품 정보 · 저온화상 안전 가이드",
+      "source_url": "https://babyanimal88.blogspot.com/2026/01/blog-post_13.html",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 용품 안전",
+        "line": "전 반려동물",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "반려동물은 사람보다 피부가 약하고 털 때문에 뜨거움을 늦게 감지할 수 있어 저온화상 위험이 더욱 높다. 펫 드라이룸 사용 시 온도와 노출 시간을 엄격히 관리할 것",
+      "cautionSource": "반려동물 용품 정보의 저온화상 특성 설명"
+    },
+    {
+      "id": "pet-dryroom-consumer-safety-assessment",
+      "claim": "한국소비자원의 펫드라이룸 품질비교시험 결과, 모든 테스트 제품의 안전성이 관련 기준에 적합한 것으로 평가되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국소비자원 · 펫드라이룸 품질비교시험 결과보고서",
+      "source_url": "https://www.consumer.go.kr/user/ftc/consumer/cnsmrBBS/80/selectInfoCmprDetail.do?infoId=A1080733",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "pet-dryroom-filter-replacement-alert",
+      "claim": "펫 드라이룸의 필터 교체 알림 기능은 사용자에게 필터 교체 시기를 알려주어 유지보수를 용이하게 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "비마이펫 라이프 · 펫 드라이룸 추천 가이드",
+      "source_url": "https://mypetlife.co.kr/128657/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 일부 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "pet-dryroom-small-dog-suitability",
+      "claim": "펫 드라이룸은 소형견 건조에 적합하며, 소형견의 체형에 맞는 내부 공간을 제공한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "비마이펫 라이프 · 펫 드라이룸 추천 가이드",
+      "source_url": "https://mypetlife.co.kr/143435/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "pet-dryroom-large-cat-space-limitation",
+      "claim": "펫 드라이룸의 내부 공간이 좁아, 체구가 큰 고양이는 드라이룸 사용이 불편할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소비자24 · 펫드라이룸 비교정보",
+      "source_url": "https://www.consumer.go.kr/user/ftc/consumer/cnsmrBBS/80/selectInfoCmprDetail.do?infoId=A1080733",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 표준 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "고양이 체형이 크거나 장모종인 경우, 구매 전 드라이룸 내부 공간 규격을 확인할 것. 일부 제품은 내부 공간이 넓은 모델도 있으므로 비교 검토가 필요함",
+      "cautionSource": "소비자24의 펫드라이룸 비교정보"
+    },
+    {
+      "id": "pet-dryroom-wide-interior-model-available",
+      "claim": "일부 펫 드라이룸 제품은 표준 모델보다 내부 공간이 넓은 모델로 설계되어 있어, 대형 고양이나 장모종 반려동물의 사용에 더 적합할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "비마이펫 라이프 · 펫 드라이룸 추천 가이드",
+      "source_url": "https://mypetlife.co.kr/128657/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 넓은 공간 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "pet-dryroom-cat-adaptation-training-recommended",
+      "claim": "고양이가 펫 드라이룸을 거부하는 경우, 드라이룸 사용 전에 1~2주 정도의 적응 훈련이 도움이 될 수 있으며, 처음에는 드라이룸 냄새를 맡을 때 간식을 제공하고, 점차 간식을 드라이룸 안쪽까지 두면서 천천히 적응시킬 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "비마이펫 라이프 · 펫 드라이룸 추천 가이드",
+      "source_url": "https://mypetlife.co.kr/139523/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "반려동물 건조기",
+        "line": "펫 드라이룸 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "적응 훈련은 1일 2~3회 반복하는 것이 효과적이다",
+      "cautionSource": "비마이펫 라이프의 고양이 적응 가이드"
+    }
+  ]
+}

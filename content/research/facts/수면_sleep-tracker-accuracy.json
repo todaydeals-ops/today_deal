@@ -1,0 +1,65 @@
+{
+  "topic": "수면추적기·스마트워치 정확도 검증",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "oura-ring-psg-metaanalysis",
+      "claim": "Oura Ring과 의료용 수면검사(PSG)를 비교한 체계적 문헌고찰 및 메타분석이 수행되었으며, 웨어러블 기기의 정확도 한계가 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "OTO Open (American Academy of Otolaryngology), 2025",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41230431/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "Oura",
+        "category": "수면·웨어러블",
+        "line": "Oura Ring",
+        "years": "2025",
+        "region": "국제"
+      },
+      "caution": "메타분석 결과의 구체적 수치(민감도, 특이도)는 원문 참조 필요. 기기 버전에 따라 정확도 차이 있을 수 있다.",
+      "cautionSource": "Khan et al. 2025, DOI: 10.1002/oto2.70181"
+    },
+    {
+      "id": "consumer-wearable-accuracy-variability",
+      "claim": "소비자용 수면추적 기기(Oura, Whoop 등)는 의료용 기기에 비해 정확도가 낮으며, 개별 사용자마다 정확도 편차가 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sensors (Basel), 2026",
+      "source_url": "https://www.mdpi.com/journal/sensors",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·웨어러블",
+        "line": "저가 비접촉 수면추적기",
+        "years": "2026",
+        "region": "국제"
+      },
+      "caution": "웨어러블 기기는 연구용 도구로는 제한된 역할만 할 수 있으며, 임상 진단 용도로는 부적합하다.",
+      "cautionSource": "Zhai et al. 2026, DOI: 10.3390/s26082371"
+    },
+    {
+      "id": "wearable-vascular-age-proxy",
+      "claim": "소비자용 수면추적 기기의 데이터(심박수변이도 등)가 혈관 나이 추정의 프록시로 활용될 수 있다는 연구가 있다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PLOS Digital Health, 2026",
+      "source_url": "https://journals.plos.org/digitalhealth/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·웨어러블",
+        "line": "수면추적기",
+        "years": "2026",
+        "region": "국제"
+      },
+      "caution": "이 방법은 새로운 접근이며, 임상 타당성 확립 단계. 혈관 나이 추정은 심혈관 위험 스크리닝 도구로는 아직 검증 부족.",
+      "cautionSource": "Yilmaz et al. 2026, DOI: 10.1371/journal.pdig.0001329"
+    }
+  ]
+}

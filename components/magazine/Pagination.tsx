@@ -2,7 +2,7 @@
 import Link from "next/link";
 import type { CSSProperties } from "react";
 
-const mono = "'JetBrains Mono', monospace";
+const mono = "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif";
 const cell: CSSProperties = { fontFamily: mono, fontSize: 13, fontWeight: 700, color: "#16140f", textDecoration: "none", padding: "7px 11px", border: "1px solid #ddd5c8", borderRadius: 8, minWidth: 38, textAlign: "center", lineHeight: 1 };
 const muted: CSSProperties = { ...cell, color: "#c9c1b3", borderColor: "#efe9df", pointerEvents: "none" };
 const active: CSSProperties = { ...cell, background: "#16140f", color: "#fff", borderColor: "#16140f" };

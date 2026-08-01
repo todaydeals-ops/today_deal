@@ -1,0 +1,184 @@
+{
+  "topic": "종이컵에 뜨거운 물·라면 안전? 환경호르몬·미세플라스틱 통념 팩트체크",
+  "brand": "공통",
+  "article": "paper-cup-safety-factcheck",
+  "captured": "2026-07-28",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "paper-cup-pe-coating-melting-point",
+      "claim": "일회용 종이컵의 PE(폴리에틸렌) 코팅은 녹는점이 105~110℃이며, 100℃의 뜨거운 물을 부어도 녹을 염려가 없다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 식품안전정보포털",
+      "source_url": "https://www.foodsafetykorea.go.kr/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류·용기",
+        "line": "종이컵/PE코팅",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "이는 이론적 녹는점이며, 반복 가열·고온 노출·산성 음료·기름진 음식 조건에서는 화학물질 용출량이 증가할 수 있다",
+      "cautionSource": "식약처 플라스틱 용기 안전 기준"
+    },
+    {
+      "id": "paper-cup-microwave-prohibited",
+      "claim": "일회용 종이컵을 전자레인지에서 가열하면 PE 코팅이 105~110℃ 이상으로 올라가 녹거나 변형되며, 음료에 플라스틱이 섞일 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 전자레인지 사용 안내, 제조사 안전 가이드",
+      "source_url": "https://www.foodsafetykorea.go.kr/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류·용기",
+        "line": "일반 종이컵",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "⚠️ 절대 금지. 일반 카페·편의점 종이컵은 전자레인지용이 아님. '전자레인지용 종이컵'이라는 명시가 있는 제품만 상대적으로 안전."
+    },
+    {
+      "id": "paper-cup-oily-food-damage",
+      "claim": "기름기가 많은 음식을 종이컵에 담아 가열하거나 전자레인지에 데우면, 기름의 온도가 PE 녹는점을 초과하여 코팅이 녹거나 벗겨진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "인천광역시 연수구청 식품 안전 안내",
+      "source_url": "https://www.yeonsu.go.kr/main/part/food/info.asp?page=v&gotopage=6&seq=74",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류·용기",
+        "line": "종이컵 기름진 음식 용도",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "튀김, 순대, 감자튀김 등 고온의 기름진 음식은 종이컵에 담거나 가열하지 말 것. 특히 전자레인지에서는 절대 금지."
+    },
+    {
+      "id": "paper-cup-acidic-beverage-damage",
+      "claim": "산성 음료나 알코올이 종이컵에 닿으면 PE 코팅 손상이 더 빨라지며, 음료에 부유하는 미세플라스틱과 유해 화학물질 생성 가능성이 높아진다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "소비자 언론 기사, 온라인 커뮤니티 경험담",
+      "source_url": "https://www.sisajournal.com/news/articleView.html?idxno=170662",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류·용기",
+        "line": "종이컵 산성·알코올 음료",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "순차 대안 톤: 산성 강도가 높거나 알코올이 섞인 음료는 가능하면 다른 용기에 옮겨 마시는 것이 권장됨. 일반적인 물·차는 단기 음용 시 문제 없으나, 장시간 보관은 피할 것."
+    },
+    {
+      "id": "paper-cup-nanoplastic-emission-study",
+      "claim": "종이컵에 뜨거운 물(100℃)을 가득 채우면 1.3해(垓, 10^19) 개의 나노미터 이하의 미세플라스틱이 용출되며, 실온(22℃) 대비 2배 증가한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "인하대학교 연구팀 논문(Chemical Engineering Journal 게재), 미국 국립표준기술연구소(NIST) 연구",
+      "source_url": "https://plaza.inha.ac.kr/bbs/kr/11/37972/artclView.do",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류·용기",
+        "line": "PE코팅 종이컵",
+        "years": "2022~",
+        "region": "글로벌"
+      },
+      "caution": "이 수치는 나노포어 센싱 방법으로 기존 기술으로 찾아낼 수 없었던 나노 단위 입자를 측정한 결과. 발견된 플라스틱 나노입자는 면역세포의 염증 반응을 유발할 수 있다는 점이 확인됨.",
+      "cautionSource": "인하대 논문, NIST 연구 기준값"
+    },
+    {
+      "id": "paper-cup-reuse-coating-degradation",
+      "claim": "일회용 종이컵을 여러 번 재사용하면 PE 코팅이 느슨해지고 손상되어, 환경호르몬 검출 가능성이 높아진다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "소비자 언론 기사, 온라인 커뮤니티 보고",
+      "source_url": "https://www.consumernews.co.kr/news/articleView.html?idxno=520704",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류·용기",
+        "line": "종이컵 재사용",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "종이컵은 일회용으로 설계됨. 반복 재사용하거나 뜨거운 물로 반복 소독하면 코팅 손상이 누적됨. 재사용이 필요하면 전용 다회용 컵(유리·도자기·스테인리스)으로 전환할 것."
+    },
+    {
+      "id": "cupnoodle-ps-vs-pp-container",
+      "claim": "컵라면 용기는 주로 PS(폴리스티렌) 재질이며, PP(폴리프로필렌) 용기보다 스티렌 디머·트리머 같은 유해물질이 더 많이 검출될 가능성이 있다",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "식약처 컵라면 용기 안전 안내, 식품 업계 자료",
+      "source_url": "http://www.ftoday.co.kr/news/articleView.html?idxno=105370",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류·용기",
+        "line": "컵라면 PS/PP 용기",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "식약처는 PS 용기의 안전성을 공식 입장으로 발표했으나, 업계에서는 PS보다 PP가 더 안전하다고 주장. 선택할 수 있다면 PP 용기 제품을 우선하는 것이 권장됨."
+    },
+    {
+      "id": "paper-lined-cup-noodle-non-recyclable",
+      "claim": "종이 코팅 컵라면 용기는 내부 PE나 PP 코팅 때문에 일반 종이 분리수거가 불가능하며, 특별 재활용(열분해 재활용) 대상이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "경향신문 컵라면 재활용 보도, 정부 열분해 재활용 정책",
+      "source_url": "https://www.khan.co.kr/article/202605311212001/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류·용기",
+        "line": "컵라면 용기 재활용",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "종이 코팅 컵라면 용기는 종이류 분리수거함에 넣지 말고, 지역별 특별 재활용 지정 수거함(있는 경우)에 버릴 것. 분리수거가 불확실하면 일반 쓰레기로."
+    },
+    {
+      "id": "microwave-paper-cup-alternative-containers",
+      "claim": "종이컵을 데워야 할 때 안전한 대안은 '전자레인지용' 표시가 있는 전용 종이컵, 또는 유리·도자기·스테인리스 다회용 컵으로 옮겨 가열하는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 전자레인지 안전 가이드, 제조사 권고",
+      "source_url": "https://www.foodsafetykorea.go.kr/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류·용기",
+        "line": "전자레인지 안전 용기",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "가장 안전한 방법은 음료를 다회용 컵에 옮겨 데우는 것. 일반 카페 종이컵을 그대로 전자레인지에 넣지 말 것. 또한 전자레인지용이라도 장시간 가열은 피하고, 가열 직후 뜨거운 컵에서 나는 냄새를 맡지 말 것.",
+      "cautionSource": "식약처 전자레인지 사용 주의사항"
+    },
+    {
+      "id": "paper-cup-environmental-hormone-food-contact",
+      "claim": "종이컵의 PE 코팅은 원재료로 가소제(BPA, 프탈레이트)를 사용하지 않으므로, 정상 조건(뜨거운 물 음용)에서는 환경호르몬 용출이 거의 없는 것으로 알려졌다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 식품안전정보포털, 소비자 뉴스",
+      "source_url": "https://www.consumernews.co.kr/news/articleView.html?idxno=520704",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "식기류·용기",
+        "line": "PE코팅 종이컵",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "다만 고온·산성·기름진 음식·반복 재사용 같은 이상 조건에서는 코팅 손상으로 인한 화학물질 용출 가능성이 높아질 수 있다. 또한 미세플라스틱(PE 코팅 입자) 자체는 정상 조건에서도 소량 검출됨."
+    }
+  ]
+}

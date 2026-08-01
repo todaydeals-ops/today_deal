@@ -1,0 +1,439 @@
+{
+  "topic": "입문·취미용 드론 연결 안 됨·조종 불량·배터리 자가점검",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "drone-controller-pairing-repairing-needed",
+      "claim": "드론과 조종기가 연결되지 않으면 먼저 드론을 기체에 다시 페어링(연동)해야 한다. 전원 버튼을 길게 누르면 연동 모드에 진입하여 신호음이 한 번 울리고, 성공적으로 연결되면 신호음이 두 번 울린다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DJI 기체 연동 가이드",
+      "source_url": "https://support.dji.com/help/content?customId=ko-kr03400006734&spaceId=34&re=KR&lang=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-controller-pairing-app-procedure",
+      "claim": "DJI Fly 앱을 실행한 후 상단 우측의 '...'을 눌러 '기체 다시 페어링(연동)'을 선택하고, 드론 전원 버튼을 길게 누르면 연동이 완료된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DJI Fly 앱 계정 및 기기 바인딩 가이드",
+      "source_url": "https://support.dji.com/help/content?customId=ko-kr03400006568&spaceId=34&re=KR&lang=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Fly 앱 지원 모델 (Mini/Air/Mavic)",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-takeoff-fail-propeller-check",
+      "claim": "드론이 이륙하지 않으면 먼저 프로펠러가 제대로 장착되었는지, 부러지거나 구부러져 있지 않은지, 모든 프로펠러가 완전히 펼쳐져 있는지 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DJI 드론 이륙/착륙 방법 가이드",
+      "source_url": "https://repair.dji.com/help/content?customId=01700006838&spaceId=17&re=KR&lang=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-takeoff-fail-battery-check",
+      "claim": "이륙 불가 시 배터리가 완전히 충전되었는지 확인해야 하며, 배터리를 완전히 충전한 후 드론을 비행하는 것을 권장한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DJI 드론 이륙/착륙 방법 가이드",
+      "source_url": "https://repair.dji.com/help/content?customId=01700006838&spaceId=17&re=KR&lang=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-takeoff-fail-sensor-error",
+      "claim": "앱의 기체 상태에 나침반(콤파스), IMU(관성측정장치) 또는 비전 센서 오류 경고가 표시되어 있으면 해당 센서의 보정이나 점검이 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DJI 드론 이륙/착륙 방법 가이드",
+      "source_url": "https://repair.dji.com/help/content?customId=01700006838&spaceId=17&re=KR&lang=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-compass-calibration-procedure",
+      "claim": "드론 나침반 보정은 DJI Fly 앱의 카메라 뷰에서 시스템 설정을 열어 '센서' 메뉴에서 '나침반 보정'을 선택하고 앱의 지시에 따라 드론을 수평면에서 시계 방향으로 360도 회전시키면 된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "DJI 드론 센서 보정 가이드 · 사용자 커뮤니티",
+      "source_url": "https://support.dji.com/help/content?customId=ko-kr03400006874&spaceId=34&re=KR&lang=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "나침반 보정은 넓고 개방된 야외 공간에서 수행해야 하며, 금속 물체나 강한 자기장 근처에서는 보정하지 않을 것. 보정 중 드론을 흔들거나 멈추지 말 것.",
+      "cautionSource": "DJI 센서 보정 안내 — 보정 환경 및 주의사항"
+    },
+    {
+      "id": "drone-firmware-update-importance",
+      "claim": "드론이 이륙하지 않으면 펌웨어 업데이트도 확인해야 한다. 펌웨어가 최신 버전이 아니거나 펌웨어 업데이트가 실패하면 드론과 조종기 간 호환성 문제로 연결되지 않을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DJI 드론 펌웨어 업데이트 가이드",
+      "source_url": "https://repair.dji.com/help/content?customId=ko-kr03400006835&spaceId=34&re=KR&lang=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-gps-weak-indoor-highrise",
+      "claim": "GPS 신호가 약해지는 주요 원인은 실내나 고층 건물 주변이다. GPS 신호가 없으면 드론의 최대 호버링 고도는 5m로 제한된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DJI 드론 이륙/착륙 방법 가이드",
+      "source_url": "https://repair.dji.com/help/content?customId=01700006838&spaceId=17&re=KR&lang=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-tilting-trim-adjustment",
+      "claim": "드론이 호버링 중 한쪽으로 기울어지면 조종기의 오른쪽 스틱 왼쪽에 달린 트림 장치를 기울어지는 반대 방향으로 천천히 조정하여 수평이 될 때까지 설정한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "드론 조종 가이드 및 커뮤니티",
+      "source_url": "http://drone-plus.co.kr/article/자주하는-질문/3/16/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "트림 조정은 천천히 조금씩 진행할 것. 조정 후 한 번에 높게 날려 균형을 확인하는 것이 좋음. 트림으로도 해결되지 않으면 프로펠러 파손이나 모터 손상을 의심해볼 것.",
+      "cautionSource": "드론 자가점검 가이드 — 트림 조정 방법 및 한계"
+    },
+    {
+      "id": "drone-spinning-yaw-trim",
+      "claim": "드론이 호버링 중 한쪽으로 계속 회전하면 조종기의 왼쪽 스틱 아래에 달린 트림 장치를 회전하는 반대 방향으로 조정한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "드론 조종 원리 및 조정 가이드",
+      "source_url": "http://drone-plus.co.kr/article/자주하는-질문/3/16/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-propeller-damage-inspection",
+      "claim": "프로펠러를 자세히 살펴보아 각진 모양(chip)·균열·휨이 있는지 확인한다. 손상된 프로펠러는 비행 중 불균형을 일으켜 드론이 한쪽으로 기울거나 흔들린다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "드론 프로펠러 점검 및 교체 가이드",
+      "source_url": "http://drone-plus.co.kr/article/자주하는-질문/3/16/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-propeller-orientation-marking",
+      "claim": "DJI 드론 프로펠러는 회전 방향에 따라 표기(예: CW/CCW 또는 1=시계방향, 2=반시계방향)되어 있다. 각 팔에 맞는 방향의 프로펠러를 장착해야 하며, 잘못된 방향에 장착하면 비행 불균형이 발생한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "드론 프로펠러 장착 방법 가이드",
+      "source_url": "https://dl.djicdn.com/downloads/DJI_Mini_2/20230331/DJI_Mini_2_User_Manual_KR.pdf",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-battery-capacity-cold-weather",
+      "claim": "저온 환경(0°C~5°C)에서 비행하면 배터리 용량이 현저히 줄어들며, 저온에서는 기체의 풍속 저항 성능도 저하된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DJI 배터리 일상 유지 관리 가이드",
+      "source_url": "https://support.dji.com/help/content?customId=ko-kr03400006549&spaceId=34&re=KR&lang=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-battery-optimal-temperature",
+      "claim": "최적의 드론 배터리 성능을 위해 배터리 온도는 20°C 이상으로 유지해야 한다. 추운 지역에서는 배터리를 보온함에 넣고 이륙하기 전에 기체를 예열하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DJI 배터리 저온 성능 관리 가이드",
+      "source_url": "https://support.dji.com/help/content?customId=ko-kr03400006549&spaceId=34&re=KR&lang=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "추운 날씨에 비행할 때는 비행 시간이 정상 온도의 30~40% 수준으로 단축될 수 있으므로, 충분한 시간 여유를 두고 안전하게 착륙할 수 있는 지점까지만 비행할 것.",
+      "cautionSource": "DJI 저온 비행 주의사항 — 배터리 용량 급감 및 비행 시간 단축 안내"
+    },
+    {
+      "id": "drone-battery-charge-temp-range",
+      "claim": "드론 배터리는 5°C~40°C 사이의 온도에서만 충전된다. 충전 과정에서 배터리 온도가 50°C를 초과하면 충전이 자동으로 중지된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DJI 배터리 충전 온도 범위 가이드",
+      "source_url": "https://support.dji.com/help/content?customId=ko-kr03400006549&spaceId=34&re=KR&lang=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-battery-abnormal-indicator",
+      "claim": "배터리 전원 버튼을 누르지 않은 상태에서 LED 3과 LED 4가 동시에 깜박이면 배터리가 비정상임을 나타낸다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DJI 배터리 상태 표시 가이드",
+      "source_url": "https://support.dji.com/help/content?customId=ko-kr03400006549&spaceId=34&re=KR&lang=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-gimbal-calibration",
+      "claim": "드론 짐벌(카메라 회전축)이 흔들리거나 흔들린 영상이 나오면 짐벌 캘리브레이션을 수행한다. DJI Fly 앱의 카메라 뷰에서 시스템 설정을 통해 '짐벌 캘리브레이션'을 선택하고 '자동'을 선택하면 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DJI 짐벌 기울어짐 문제 해결 가이드",
+      "source_url": "https://support.dji.com/help/content?customId=01700006790&spaceId=17&re=KR&lang=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 짐벌 탑재 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-app-video-lag-wifi-signal",
+      "claim": "드론 앱의 영상이 끊기거나 지연되는 주요 원인은 무선 신호 강도가 낮거나 조종기와 모바일 기기 간의 Wi-Fi 연결이 불안정한 것이다. 공유기에 가까이 가거나 신호 강도를 확인하면 개선될 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "드론 앱 연결 문제 해결 가이드",
+      "source_url": "https://repair.dji.com/help/content?customId=01700006810&spaceId=17&re=KR&lang=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-app-video-lag-interference",
+      "claim": "앱 영상 끊김은 2.4GHz Wi-Fi 주파수의 혼잡, 전자레인지·베이비 모니터·무선 조명 등 다른 전자기기로 인한 주파수 간섭으로도 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "Wi-Fi 연결 문제 해결 가이드",
+      "source_url": "https://repair.dji.com/help/content?customId=01700006810&spaceId=17&re=KR&lang=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-app-restart-troubleshooting",
+      "claim": "드론 앱이 먹통이거나 응답하지 않으면 앱을 완전히 종료한 후 최근 앱 목록에서도 제거하고, 30초 후 다시 실행하면 대부분 복구된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "드론 앱 오류 해결 기본 가이드",
+      "source_url": "https://repair.dji.com/help/content?customId=01700006810&spaceId=17&re=KR&lang=ko",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-vlos-visual-line-of-sight-requirement",
+      "claim": "대한민국 항공법상 드론 조종자는 항상 육안으로 드론을 직접 볼 수 있는 범위(VLOS: Visual Line of Sight) 내에서만 비행해야 한다. 드론을 육안으로 직접 볼 수 없는 거리까지 비행하는 것은 불법이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국 항공법 무인비행장치 조종자 준수사항",
+      "source_url": "https://www.easylaw.go.kr/CSP/CnpClsMain.laf?csmSeq=1814&ccfNo=3&cciNo=1&cnpClsNo=1",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "모든 입문·취미용 드론",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "안개, 황사, 저시정 등으로 시야가 방해받으면 VLOS 범위 내에서도 비행이 불가능할 수 있으므로, 날씨 조건을 먼저 확인할 것.",
+      "cautionSource": "항공법 시야 확보 관련 안내 — 기상 조건 고려사항"
+    },
+    {
+      "id": "drone-restricted-areas-airport-presidential",
+      "claim": "비행 금지 구역에는 비행장으로부터 반경 9.3km 이내 지역(관제권), 휴전선 인근, 서울 도심 상공 일부, 원전 주변 등이 포함된다. DJI 드론은 이러한 구역에서 자동으로 비행이 차단된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국 항공법 무인비행장치 비행금지구역",
+      "source_url": "https://www.easylaw.go.kr/CSP/CnpClsMain.laf?csmSeq=1814&ccfNo=3&cciNo=1&cnpClsNo=1",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "모든 입문·취미용 드론",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-altitude-limit-150m",
+      "claim": "대한민국 항공법상 기본 고도 제한은 지표면·수면·물건 상단으로부터 150m 이상이다. 사람이나 건축물이 밀집된 지역에서 150m 이상 고도로 비행하려면 사전 비행승인이 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국 항공법 무인비행장치 고도 제한 규정",
+      "source_url": "https://www.easylaw.go.kr/CSP/CnpClsMain.laf?csmSeq=1814&ccfNo=3&cciNo=1&cnpClsNo=1",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "모든 입문·취미용 드론",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "고도 제한은 해당 지점의 지표면을 기준으로 하므로, 산지에서는 지표면 고도를 먼저 파악한 후 150m를 더한 절대 고도를 계산해야 함.",
+      "cautionSource": "항공법 고도 제한 안내 — 산지 등 지형 기준 계산 방법"
+    },
+    {
+      "id": "drone-preflight-area-check",
+      "claim": "비행 전에 드론원스톱(https://drone.onestop.go.kr) 또는 DJI FlySafe를 통해 비행 가능 지역을 미리 확인해야 한다. 이 시스템들은 비행금지구역과 제한 고도를 자동으로 표시한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국 비행 계획 시스템 안내",
+      "source_url": "https://drone.onestop.go.kr/common/flightArea",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "모든 입문·취미용 드론",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "drone-strong-wind-flight-prohibition",
+      "claim": "강풍 환경에서는 드론이 제어 불가능해질 수 있으므로 비행해서는 안 된다. DJI 공식 사양에 명시된 최대 풍속을 초과하는 환경에서는 반드시 비행을 중단해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "드론 안전 비행 가이드",
+      "source_url": "https://www.kdrone.org/bbs/board.php?bo_table=board_not&wr_id=718",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "DJI Mini/Air/Mavic 등 입문·취미용",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "DJI Mini 시리즈의 최대 풍속은 약 10.5~12m/s(시리즈별 상이), Air 시리즈는 12m/s, Mavic은 최대 17~19m/s 수준. 제조사 스펙을 확인하고 풍속이 그 이상이면 비행을 연기할 것.",
+      "cautionSource": "DJI 공식 드론 사양 — 모델별 최대 풍속 기준"
+    },
+    {
+      "id": "drone-people-overhead-prohibition",
+      "claim": "대한민국 항공법상 드론은 사람의 머리 위에서 비행해서는 안 된다. 혹시 추락했을 경우 인명피해를 초래할 수 있기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국 항공법 무인비행장치 운영 규정",
+      "source_url": "https://www.easylaw.go.kr/CSP/CnpClsMain.laf?csmSeq=1814&ccfNo=3&cciNo=1&cnpClsNo=1",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "드론",
+        "line": "모든 입문·취미용 드론",
+        "years": "현행",
+        "region": "KR"
+      }
+    }
+  ]
+}

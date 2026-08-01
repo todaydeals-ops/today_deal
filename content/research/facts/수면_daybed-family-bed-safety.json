@@ -1,0 +1,65 @@
+{
+  "topic": "데이베드·패밀리침대 안전 및 선택 기준",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "cosleep-safety-caregiver-guidance",
+      "claim": "아기 독립침대(cot) 사용을 권장하는 안전 지침이 있으나, 실제 보호자들은 지침 준수에 어려움을 겪고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Primary Health Care Research & Development",
+      "source_url": "https://www.cambridge.org/core/journals/primary-health-care-research-and-development",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "침구",
+        "line": "유아용 침대",
+        "years": "2026",
+        "region": "국제"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "cosleep-dental-health-risk",
+      "claim": "부모와의 동침(co-sleeping)은 유아 충치(early childhood caries)의 위험 요인으로 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Medicine (Baltimore), 2026",
+      "source_url": "https://journals.lww.com/md-journal",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "침구",
+        "line": "패밀리침대",
+        "years": "2026",
+        "region": "국제"
+      },
+      "caution": "충치 발생 기전은 행동 요인과 관련 있으며, 수면 환경뿐 아니라 보육 습관 개선도 필요하다.",
+      "cautionSource": "Bayón-Hernández et al. 2026, DOI: 10.1097/md.0000000000048384"
+    },
+    {
+      "id": "family-bed-safety-equipment-effectiveness",
+      "claim": "취약계층 가정에 안전 침구류 및 장비를 제공하는 프로그램이 보호자 관계 증진과 안전 수면에 효과적인 것으로 평가되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Public Health Practice, 2026",
+      "source_url": "https://www.sciencedirect.com/journal/public-health-practice",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "침구",
+        "line": "패밀리침대",
+        "years": "2026",
+        "region": "국제"
+      },
+      "caution": "연구 대상이 특정 인구층(저소득 가정)이므로, 일반화 시에는 사회경제적 맥락 고려 필요",
+      "cautionSource": "Bates et al. 2026, DOI: 10.1016/j.puhip.2026.100733"
+    }
+  ]
+}

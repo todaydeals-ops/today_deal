@@ -1,0 +1,173 @@
+{
+  "topic": "차량용 공기청정기 효과·선택·필터 방식·에어컨 필터와의 차이",
+  "brand": "공통",
+  "article": "car-air-purifier-trend",
+  "captured": "2026-07-28",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "car-aircon-filter-removal-efficiency-90percent",
+      "claim": "차량용 에어컨 필터의 미세먼지 제거 효율은 제품별로 다르지만, 보쉬·불스원·현대모비스 등 주요 제품들은 모든 입자 크기 구간에서 90% 이상의 제거율을 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국소비자원 차량용 에어컨필터 성능 비교 시험 결과",
+      "source_url": "https://www.consumer.go.kr/user/ftc/consumer/cnsmrBBS/80/selectInfoCmprDetail.do?infoId=A1080406",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "차량용 공기정화",
+        "line": "차량용 에어컨 필터",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "시험 대상은 보쉬, 불스원, 현대모비스 등 11개 주요 제품이므로, 저가 제품이나 해외 브랜드는 성능이 다를 수 있다.",
+      "cautionSource": "한국소비자원 시험 범위"
+    },
+    {
+      "id": "hepa-filter-95percent-vs-ion-20-30percent",
+      "claim": "공기청정기 필터 방식 중 헤파필터(기계식)는 미세먼지 제거율 약 95%를 달성하는 반면, 이온식(전기식) 필터는 기계식보다 20~30% 저렴하지만 오존이 필연적으로 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공조냉동공학회 및 공기청정기 기술 자료",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0_%EC%9B%90%EB%A6%AC%EC%97%90_%EB%94%B0%EB%9D%BC_%EC%84%B1%EB%8A%A5%EC%9D%B4_%EB%8B%A4%EB%A5%B4%EB%8B%A4!_%EC%9A%B0%EB%A6%AC_%EC%A7%91_%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0_%EA%B5%AC%EC%A1%B0%EB%8A%A9-27598",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "헤파식 vs 이온식",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "이온식 공기청정기는 오존 발생 때문에 밀폐된 차량 환경에서 사용할 경우 건강상 위험이 있으므로, 헤파필터 방식 선택이 권장된다.",
+      "cautionSource": "이온식 오존 발생 위험성"
+    },
+    {
+      "id": "car-aircon-vs-purifier-efficiency-better",
+      "claim": "차량 에어컨의 송풍 성능이 차량용 공기청정기보다 우수하므로, 에어컨 필터를 프리필터와 헤파필터로 주기적으로 교체하며 관리하면 별도 공기청정기 구입이 불필요할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "차량용 공기청정기 효과 및 비용 분석",
+      "source_url": "https://m.sedaily.com/amparticle/12259229",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "차량용 공기정화",
+        "line": "에어컨 필터 vs 별치형 공기청정기",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "에어컨 필터의 효율은 필터 종류와 교체 주기에 따라 달라진다. 최소 6개월마다 교체할 것이 권장되며, 프리미엄 필터 사용이 실내 공기질 관리의 핵심이다.",
+      "cautionSource": "에어컨 필터 관리 기준"
+    },
+    {
+      "id": "car-aircon-filter-cost-3800-50000-vs-purifier-30000-990000",
+      "claim": "차량용 에어컨 필터는 3,800원에서 5만원 사이의 가격대로 판매되는 반면, 별도의 차량용 공기청정기는 3만원부터 99만원 수준의 가격대를 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국내 자동차 부품 및 전자제품 판매 시장 가격 조사",
+      "source_url": "https://m.sedaily.com/amparticle/12259229",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "차량용 공기정화",
+        "line": "비용 비교",
+        "years": "2026년 기준",
+        "region": "KR"
+      },
+      "caution": "에어컨 필터는 6개월마다 교체를 권장하므로 연간 비용을 고려해야 한다. 또한 공기청정기도 필터 교체 비용이 발생하므로 초기 구입가만으로 판단하면 안 된다.",
+      "cautionSource": "유지비 고려 필요"
+    },
+    {
+      "id": "negative-ion-purifier-ozone-inevitable",
+      "claim": "음이온 발생식 공기청정기는 코로나 방전(아크 방전) 방식의 경우 음이온 발생과 오존이 필연적으로 동시에 발생하며, 음이온을 많이 발생시키려면 오존 발생도 비례적으로 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국소비자원 음이온발생식 공기청정기 시험결과 보고서",
+      "source_url": "https://www.kca.go.kr/home/board/download.do?menukey=4062&fno=10003814&bid=00000146&did=1000605384",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "음이온식(이온화식)",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "음이온 공기청정기는 차량처럼 밀폐된 공간에서 오존 농도가 빠르게 상승하기 쉽다. 음이온 효과를 원한다면 헤파필터 + 이온 복합식 또는 순수 헤파필터 방식 선택이 안전하다.",
+      "cautionSource": "음이온식 오존 발생 메커니즘"
+    },
+    {
+      "id": "ozone-epa-0-05ppm-limit-health-risk",
+      "claim": "미국 환경청(EPA)은 오존 노출 기준을 0.05ppm 미만으로 권장하고 있으며, 이 수치 이상의 오존 노출은 눈·호흡기·피부 건강에 문제를 일으킬 수 있고, 흉통·기침·숨이참·인후염 등을 유발할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미국 환경청(EPA) 오존 건강 영향 권고",
+      "source_url": "https://www.iqair.com/ko/newsroom/do-air-purifiers-work-air-purifier-myths-and-facts-debunked",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "공기청정기",
+        "line": "음이온식 오존 건강상 영향",
+        "years": "전 연식",
+        "region": "International"
+      },
+      "caution": "좁고 환기가 안 되는 차량 내부에서 이온화 장치를 사용하면 오존 수치가 0.05ppm 이상으로 급상승할 수 있으므로, 밀폐 공간에서의 사용은 피해야 한다.",
+      "cautionSource": "EPA 오존 노출 기준 및 차량 환경 특수성"
+    },
+    {
+      "id": "internal-circulation-mode-co2-increase-danger",
+      "claim": "차량의 내기순환 모드를 장시간 설정하면 외부 공기 유입이 차단되면서 차 안의 이산화탄소(CO2) 농도가 높아져 탑승자들의 건강에 좋지 않다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차 공조 및 실내 공기질 관련 기술 자료",
+      "source_url": "https://mycle.co.kr/post/entry/ContentsHoneytipAirCycle230601.html",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "차량용 공기정화",
+        "line": "내·외기순환 모드",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "내기순환 모드는 필터를 거쳐 공기를 재순환시키므로 단기적으로는 청정 효과가 있지만, 30분 이상 장시간 사용 시 CO2 농도 증가로 졸음이나 피로감이 발생할 수 있다. 주기적으로 외기 순환으로 전환하는 것이 권장된다.",
+      "cautionSource": "내기순환 모드 위험성 및 권장 사용 시간"
+    },
+    {
+      "id": "car-purifier-effective-areas-traffic-congestion-odor",
+      "claim": "차량용 공기청정기는 차 안에서 음식을 먹을 때, 장거리 여행 시 쾌적함 유지, 매연이 심한 지역 주행, 시내 정체 주행 시에 효과가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "차량용 공기청정기 활용 방안 및 효과 분석",
+      "source_url": "https://m.sedaily.com/amparticle/12259229",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "차량용 공기청정기",
+        "line": "전 제품",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "공기청정기의 효과는 차량의 환기 성능, 필터 교체 주기, 외부 오염도에 따라 달라진다. 에어컨 필터를 먼저 프리미엄급으로 교체하는 것이 기본이고, 추가 필요성을 느낄 때 공기청정기 구입을 검토하는 것이 현명하다.",
+      "cautionSource": "공기청정기 추천 사용 시나리오"
+    },
+    {
+      "id": "car-purifier-power-sources-cigarette-lighter-usb-12v",
+      "claim": "차량용 공기청정기는 크게 시거잭(12V 직류) 전원을 사용하는 제품과 USB 전원을 사용하는 제품으로 나뉘며, 시거잭은 더 많은 전력을 공급할 수 있어 성능이 상대적으로 우수하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차 전장용품 및 공기청정기 전원 규격 정보",
+      "source_url": "https://namu.wiki/w/%EC%8B%9C%EA%B1%B0%EC%9E%AD",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "차량용 공기청정기",
+        "line": "시거잭형 vs USB형",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "USB 전원 방식은 휴대성과 설치 편의성이 좋지만 전력 제한으로 필터 성능이 제한될 수 있다. 시거잭형은 전력이 충분하지만 콘솔 공간을 차지한다. 차량 사용 패턴과 설치 공간에 따라 선택해야 한다.",
+      "cautionSource": "전원 방식별 장단점"
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "topic": "포터블 파워스테이션 충전 안 됨·출력 안 됨·발열·배터리 팽창 자가점검 및 보관 기준",
+  "brand": "공통",
+  "article": "portable-power-station-selfcheck",
+  "captured": "2026-07-28",
+  "reused_facts": [
+    "battery-cycle-definition-cumulative",
+    "deep-discharge-vs-shallow-discharge-cycle-life",
+    "fast-charging-mechanism-lithium-plating-degradation",
+    "charging-heat-accelerates-degradation-above-60celsius",
+    "partial-charge-80-percent-recommendation-basis",
+    "high-temperature-ambient-above-35-celsius-permanent-damage"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "charging-port-dust-debris-inspection",
+      "claim": "포터블 파워스테이션이 충전되지 않을 때 입력 포트 내부의 먼지, 흙, 이물질 또는 습기로 인한 접촉 불량이 원인일 수 있다. 케이블이 완전히 결합되지 않았을 수도 있으므로, 포트를 시각적으로 검사하고 케이블이 단단히 연결되어 있는지 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "VoltX 및 Jackery 공식 가이드 — 포터블 파워스테이션 충전 문제 해결",
+      "source_url": "https://www.jackery.com/blogs/buying-advice/why-is-my-jackery-not-charging-common-causes-and-fixes",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "대용량 충방전 제품",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "포트 청소 시 물이 들어가지 않도록 주의하고, 곰팡이나 부식이 보이면 서비스센터 문의 권장"
+    },
+    {
+      "id": "charging-adapter-voltage-current-mismatch",
+      "claim": "잘못된 충전기를 사용하면 파워스테이션이 올바른 전압 또는 전류를 받지 못해 충전이 안 된다. 원본 충전기 또는 제조사 승인 충전 액세서리만 사용해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "VoltX 및 PowerStationLab 공식 가이드",
+      "source_url": "https://voltx.com.au/blogs/voltx-blogs/portable-power-station-not-charging-here-s-how-to-fix-it",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "모든 대용량 충방전 제품",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "멀티탭 과부하도 전압 강하를 초래할 수 있으므로, 충전할 때는 벽 콘센트에 직접 연결할 것"
+    },
+    {
+      "id": "charging-cable-adapter-physical-damage",
+      "claim": "충전 케이블과 어댑터의 육안 검사에서 구부러진 핀, 절단, 느슨한 연결, 과열 흔적, 이상한 냄새가 보이면 교체 필요다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "VoltX 및 Exspenditure 공식 가이드",
+      "source_url": "https://voltx.com.au/blogs/voltx-blogs/portable-power-station-not-charging-here-s-how-to-fix-it",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "모든 대용량 충방전 제품",
+        "years": "2020~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "wall-outlet-power-source-check",
+      "claim": "파워스테이션이 충전되지 않을 때 가장 흔한 원인 중 하나는 벽 콘센트 문제, 과부하된 멀티탭, 느슨한 플러그, 손상된 케이블 또는 어댑터다. 다른 기기(예: 스탠드)를 같은 콘센트에 연결하여 콘센트가 정상 작동하는지 먼저 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PowerStationLab 및 WildSmartGear 공식 가이드",
+      "source_url": "https://wildsmartgear.com/portable-power-station-troubleshooting/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "모든 대용량 충방전 제품",
+        "years": "2020~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "bms-overload-protection-shutdown",
+      "claim": "포터블 파워스테이션이 출력되지 않을 때, 부하 전력이 정격 지속 전력이나 순간 최대 전력을 초과하면 인버터가 자동으로 차단되어 과열이나 회로 스트레스를 방지한다. BMS가 과도한 전류를 감지하면 '오버로드(OVERLOAD)' 에러 표시 또는 경보음과 함께 셧다운된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "EcoFlow 및 PowerStationHQ 공식 가이드 — BMS 보호 메커니즘",
+      "source_url": "https://www.ecoflow.com/us/blog/overload-power-station-ports-fixes-prevention",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "모든 대용량 충방전 제품",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "오버로드 상태에서 벗어나려면 연결된 기기를 제거하고 30초~1분 대기 후 전원을 재연결해야 한다. 반복적인 오버로드는 배터리와 BMS 수명을 단축시킨다.",
+      "cautionSource": "EcoFlow 및 PowerStationHQ 공식 가이드에서 오버로드 복구 절차의 시간 수치 명시"
+    },
+    {
+      "id": "bms-short-circuit-protection-latched-lockout",
+      "claim": "BMS가 과부하, 단락, 또는 비정상 전압 스파이크를 감지하면 보호 이벤트가 발생하고 잠금 모드(latched lockout)로 진입하여 기기가 작동을 중단한다. 이 경우 사용자가 리셋을 시도해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PowerStationHQ 공식 가이드 — BMS 보호 메커니즘",
+      "source_url": "https://powerstationhq.com/toolbox/power-guides/portable-power-station-safety-what-you-need-to-know-to-prevent-accidents/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "모든 대용량 충방전 제품",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "잠금 모드에서 벗어나려면 30초 이상 전원을 끈 후 리셋 버튼(있는 경우)을 누르거나 냉각 시간을 기다린 후 재시동해야 한다.",
+      "cautionSource": "PowerStationHQ 공식 가이드에서 BMS 잠금 해제 절차의 시간 기준(30초 이상) 명시"
+    },
+    {
+      "id": "lifepo4-cell-voltage-3-2-3-3v-nominal",
+      "claim": "LiFePO4 배터리 셀의 명목 전압은 3.2~3.3V이며, 완전 충전 시 3.65V에 도달한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Anker, Redodo Power, LiTime 공식 가이드 — LiFePO4 배터리 사양",
+      "source_url": "https://www.anker.com/blogs/others/lifepo4-vs-lithium-ion",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "LiFePO4 탑재 모델",
+        "years": "2020~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "lifepo4-vs-lithium-ion-charger-incompatibility",
+      "claim": "LiFePO4 전용 충전기는 더 엄격한 전압 범위(tighter voltage tolerance)를 요구하며, trickle charging 또는 float charging 기능이 없다. 따라서 LiFePO4 배터리를 리튬이온용 충전기로 충전하거나 그 반대는 하면 안 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Anker, Anern, LiTime 공식 가이드",
+      "source_url": "https://www.anker.com/blogs/others/lifepo4-vs-lithium-ion",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "LiFePO4 탑재 모델",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "포터블 파워스테이션 구매 시 배터리 타입(LiFePO4 vs NMC 리튬이온)을 확인하고, 함께 제공되는 공식 충전기를 사용해야 한다.",
+      "cautionSource": "Anker, Anern, LiTime 공식 가이드에서 LiFePO4와 NMC 리튬이온 배터리 타입 구분 및 충전기 호환성 명시"
+    },
+    {
+      "id": "lifepo4-overcharge-tolerance-thermal-stability",
+      "claim": "LiFePO4 배터리는 리튬이온보다 과충전에 대한 내성이 높고 열 안정성이 우수하다. LiFePO4의 양극 재료는 300°C 이상의 고온에서도 분해되지 않아 열폭주 위험이 적다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Anker, Renogy, Anern 공식 가이드",
+      "source_url": "https://www.anker.com/blogs/others/lifepo4-vs-lithium-ion",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "LiFePO4 탑재 모델",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "LiFePO4가 더 안전하지만, 충전 속도는 리튬이온보다 느리다(약 3시간 vs 1~2시간).",
+      "cautionSource": "Anker, LiTime, Redodo Power 공식 가이드에서 LiFePO4와 리튬이온의 충전 시간 비교 명시"
+    },
+    {
+      "id": "lifepo4-charging-time-1c-rate",
+      "claim": "LiFePO4 배터리는 1C 충전 속도로 약 3시간에 충전되며 충전 효율은 약 95%다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Anker, LiTime, Redodo Power 공식 가이드",
+      "source_url": "https://www.anker.com/blogs/others/lifepo4-vs-lithium-ion",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "LiFePO4 탑재 모델",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "1C 충전율이란 배터리 용량 시간(Ah) 내에 완전 충전되는 속도를 의미한다. 예: 100Ah 배터리는 1C 속도로 1시간에 100A 전류를 받는다.",
+      "cautionSource": "Anker, LiTime 공식 가이드에서 1C 충전율 정의 및 예시 제시"
+    },
+    {
+      "id": "battery-storage-60-70-percent-optimal",
+      "claim": "포터블 파워스테이션을 장기간(수개월 이상) 보관할 때는 배터리를 60~70% 상태로 유지하면 열화를 최소화할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PowerStationLab 및 Battery Skills 공식 가이드",
+      "source_url": "https://powerstationlab.com/how-to-charge-portable-power-station/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "리튬이온·LiFePO4 모든 타입",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "3개월마다 한 번씩 배터리를 30%로 방전한 후 60%까지 재충전하는 유지보수 루틴을 권장한다.",
+      "cautionSource": "PowerStationLab 공식 가이드에서 장기 보관 시 3개월 주기 및 30%-60% 충방전 절차 명시"
+    },
+    {
+      "id": "daily-use-20-80-percent-range",
+      "claim": "일상 사용에서는 배터리를 20~80% 범위로 유지하면 수명 연장에 도움이 된다. 마지막 20% 충전은 열과 화학적 스트레스를 유발하기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PowerStationLab 공식 가이드",
+      "source_url": "https://powerstationlab.com/how-to-charge-portable-power-station/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "리튬이온·LiFePO4 모든 타입",
+        "years": "2020~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "charging-below-freezing-point-anode-damage",
+      "claim": "0°C 이하 환경에서 충전하면 음극이 손상될 수 있다. 파워스테이션은 반드시 실온(15°C 이상, 또는 60°F 이상)에서 충전해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PowerStationLab 공식 가이드 — 극저온 충전 위험",
+      "source_url": "https://powerstationlab.com/how-to-charge-portable-power-station/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "리튬이온·LiFePO4 모든 타입",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "겨울철이나 야외 저온 환경에서 사용할 때 실내에 옮겨 따뜨해진 후 충전할 것.",
+      "cautionSource": "PowerStationLab의 극저온 환경 충전 경고"
+    },
+    {
+      "id": "storage-temperature-range-15-27-celsius",
+      "claim": "포터블 파워스테이션은 상온(60°F ~ 80°F, 또는 15°C ~ 27°C) 범위에서 보관해야 한다. 고온(100°F 이상, 37.8°C 이상) 환경에 장시간 노출하면 배터리 화학이 급격히 열화된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PowerStationLab 공식 가이드",
+      "source_url": "https://powerstationlab.com/how-to-charge-portable-power-station/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "리튬이온·LiFePO4 모든 타입",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "자동차 트렁크나 햇빛이 직사광선으로 드는 장소는 100°F를 쉽게 넘으므로 피할 것.",
+      "cautionSource": "PowerStationLab의 고온 환경 경고 및 온도 범위(15°C~27°C, 60°F~80°F, 100°F 기준) 명시"
+    },
+    {
+      "id": "battery-swelling-causes-cheap-cells-weak-protection",
+      "claim": "배터리 팽창은 '운이 나쁜' 무작위 사건이 아니라 저가 배터리 셀, 약한 보호 회로, 또는 부족한 열 관리의 결과다. 고온 환경은 전해질 분해를 가속화하여 배터리 수명을 단축하고 시간이 지남에 따라 배터리 팽창으로 이어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PowerStationLab 및 VoltaCharger 공식 가이드",
+      "source_url": "https://powerstationlab.com/portable-power-station-mistakes/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "리튬이온·LiFePO4 모든 타입",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "배터리 팽창이 보이면 즉시 사용을 중단하고 서비스센터에 문의할 것. 폭발 위험이 있다."
+    },
+    {
+      "id": "continuous-load-80-percent-heat-mitigation",
+      "claim": "포터블 파워스테이션을 정격 용량의 100%로 지속적으로 사용하면 대량의 열이 발생한다. 80% 이하의 지속 부하로 제한하면 과열 위험을 완화할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PowerStationLab 공식 가이드 — '80% Rule'",
+      "source_url": "https://powerstationlab.com/how-to-charge-portable-power-station/",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "리튬이온·LiFePO4 모든 타입",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "순간 최대 전력(surge capacity)은 초 단위로만 사용 가능하다. 지속 전력 기준으로 부하를 계산해야 한다.",
+      "cautionSource": "PowerStationLab의 '80% Rule' 명시"
+    },
+    {
+      "id": "passthrough-charging-bms-stability",
+      "claim": "패스스루 충전(pass-through charging)은 포터블 파워스테이션이 자신의 배터리를 충전받으면서 동시에 외부 기기에 전력을 공급하는 기능이다. 안전한 설계에서는 발열이 최소화되고 전원 공급이 안정적이어서 BMS가 배터리를 추가 스트레스 없이 보호할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "EcoFlow 및 Bluetti 공식 가이드 — 패스스루 충전 안전성",
+      "source_url": "https://www.ecoflow.com/us/blog/is-pass-through-charging-safe-complete-guide",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "패스스루 충전 지원 모델",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "패스스루 충전 중에 동시에 고부하 기기를 사용하면 배터리 충전 속도가 늦어질 수 있다."
+    },
+    {
+      "id": "passthrough-charging-bms-protection-layers",
+      "claim": "고품질 포터블 파워스테이션의 패스스루 충전 안전 기능은 지능형 전원 관리 IC(집적회로)로 전력 단락 보호, 과전류 보호, 과전압 보호, 과열 보호를 제공하고, 정교한 BMS가 모든 작동 매개변수를 지속적으로 모니터링하여 과전압, 과전류, 과열을 방지한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Bluetti 공식 가이드 — 패스스루 충전 보호 메커니즘",
+      "source_url": "https://www.bluettipower.com/blogs/knowledge/what-is-pass-through-charging",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "패스스루 충전 지원 모델",
+        "years": "2020~",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "lifepo4-cycle-life-advantage",
+      "claim": "LiFePO4 배터리를 탑재한 프리미엄 포터블 파워스테이션은 3,000회 이상의 충방전 사이클에서 안전성과 열 안정성을 우선시한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "EcoFlow 및 Bluetti 공식 가이드",
+      "source_url": "https://www.ecoflow.com/us/blog/is-pass-through-charging-safe-complete-guide",
+      "checked": "2026-07-28",
+      "scope": {
+        "brand": "공통",
+        "category": "포터블 파워스테이션",
+        "line": "LiFePO4 탑재 모델",
+        "years": "2020~",
+        "region": "글로벌"
+      },
+      "caution": "NMC(니켈 망간 코발트) 리튬이온은 사이클 수명이 더 짧지만 충전 속도가 빠르다.",
+      "cautionSource": "EcoFlow 및 Bluetti 공식 가이드에서 LiFePO4 3,000+ 사이클 수치 명시"
+    }
+  ]
+}

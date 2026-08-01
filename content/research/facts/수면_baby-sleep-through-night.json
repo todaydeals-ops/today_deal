@@ -1,0 +1,77 @@
+{
+  "topic": "아기 통잠(연속 야간수면) 발달 시점",
+  "brand": "공통",
+  "article": "baby-sleep-through-night",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sleep-consolidation-3month",
+      "claim": "생후 3개월경부터 수면 통합(sleep consolidation) 과정 시작. 야간 수면 블록이 4-6시간 단위로 형성.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Ahmed et al., Eur Respir Rev 2026",
+      "source_url": "https://doi.org/10.1183/16000617.0335-2025",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 3-6개월",
+        "region": "국제"
+      },
+      "caution": "수면 통합 시작이 생후 3개월이지만, 4-6시간 연속수면 달성 시점은 개인차 크며, 일부는 6개월 이후.",
+      "cautionSource": "Ahmed et al., Eur Respir Rev 2026"
+    },
+    {
+      "id": "circadian-rhythm-development",
+      "claim": "신생아의 생체시계(circadian rhythm)는 생후 6-12주부터 발달 시작. 이때부터 야간-낮 수면 차이 명확.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kerff et al., Chronobiology Int 2026",
+      "source_url": "https://doi.org/10.1080/29933935.2026.2649096",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 6-12주",
+        "region": "국제"
+      },
+      "caution": "생체시계 성숙이 6-12주부터 시작되지만 완성은 생후 12주 이후. 빛·수유 리듬·실내온도 등 환경 신호에 따라 개인차 큼.",
+      "cautionSource": "Kerff et al., Chronobiology Int 2026"
+    },
+    {
+      "id": "bedtime-routine-effect",
+      "claim": "생후 초기부터 규칙적인 자기 전 루틴(목욕, 읽어주기, 마사지 등)을 실천하면 통잠 형성 시기 단축 보고.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Mindell et al., Sleep Health 2025",
+      "source_url": "https://doi.org/10.1016/j.sleh.2025.04.001",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 0-6개월",
+        "region": "국제"
+      },
+      "caution": "루틴의 효과는 영아 기질·부모 일관성·환경에 따라 크게 달라짐. 일부 연구는 '루틴 무관' 주장도 존재."
+    },
+    {
+      "id": "vocabulary-sleep-connection",
+      "claim": "생후 6-24개월 영아의 야간 수면 질과 길이가 언어 발달 속도와 정적 상관(correlate) 보인다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Belia et al., Infancy 2025",
+      "source_url": "https://doi.org/10.1111/infa.12650",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "years": "생후 6-24개월",
+        "region": "국제"
+      },
+      "caution": "상관성 발견이지만 인과 관계 미확정. 유전·부모 양육 환경 등 교란변수 많음."
+    }
+  ]
+}

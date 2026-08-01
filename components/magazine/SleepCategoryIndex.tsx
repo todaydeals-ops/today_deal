@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { SLEEP_CATEGORIES } from "@/lib/magazine/sleepCategories";
 
-const mono = "'JetBrains Mono', monospace";
+const mono = "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif";
 
 export default function SleepCategoryIndex() {
   return (

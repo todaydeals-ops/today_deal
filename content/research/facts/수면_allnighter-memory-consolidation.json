@@ -1,0 +1,101 @@
+{
+  "topic": "밤샘 공부의 대가: 수면과 기억 공고화(memory consolidation)",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-31",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "rem-sws-memory-consolidation",
+      "claim": "REM 수면과 느린파수면(SWS)은 선언적 기억(declarative memory)과 절차적 기억(procedural memory)을 공고화하는 데 중요한 역할을 하며, 많은 과제에서 SWS의 영향이 REM 수면보다 더 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Harvard Medical School - Healthy Sleep",
+      "source_url": "https://healthysleep.med.harvard.edu/healthy/matters/benefits-of-sleep/learning-memory",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "기억 공고화",
+        "years": "2020~",
+        "region": "일반"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-deprivation-focus-attention",
+      "claim": "수면 부족 시 초점(focus), 주의력(attention), 경각심(vigilance)이 약화되어 정보 습득이 어려워진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Harvard Medical School - Healthy Sleep",
+      "source_url": "https://healthysleep.med.harvard.edu/healthy/matters/benefits-of-sleep/learning-memory",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "수면 부족 영향",
+        "years": "2020~",
+        "region": "일반"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "rem-deprivation-learning-rats",
+      "claim": "REM 수면 박탈 후 쥐는 학습 활동에서 성과가 저하되어, 동물은 과제 관련 기억을 통합하기 위해 REM 수면이 필요함을 시사한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Harvard Medical School - Healthy Sleep",
+      "source_url": "https://healthysleep.med.harvard.edu/healthy/matters/benefits-of-sleep/learning-memory",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "동물 실험 - REM 박탈",
+        "years": "2020~",
+        "region": "일반"
+      },
+      "caution": "쥐 실험이므로 인간 적용 시 주의 필요",
+      "cautionSource": "Harvard Medical School - Healthy Sleep"
+    },
+    {
+      "id": "emotional-memory-not-rem-dependent",
+      "claim": "선택적 REM 수면 박탈 후에도 정서적 기억의 공고화는 손상되지 않으며, 정서적 기억 공고화가 REM 수면에만 의존하지 않음을 시사한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PLOS ONE - Morgenthaler et al. 'Selective REM-Sleep Deprivation Does Not Diminish Emotional Memory Consolidation in Young Healthy Subjects'",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3937423/",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "정서적 기억 공고화",
+        "years": "2014",
+        "region": "일반"
+      },
+      "caution": "이 연구는 REM 수면이 정서적 기억에 필수가 아님을 보여주나, 다른 종류의 기억(절차적, 선언적)에는 여전히 중요할 수 있음",
+      "cautionSource": "Morgenthaler et al. (2014) PLOS ONE"
+    },
+    {
+      "id": "memory-consolidation-timing",
+      "claim": "기억 공고화는 학습 직후의 휴식 단계에서 일어나며, 밤샘 공부 후의 수면이 학습 내용을 장기 기억으로 전환하는 과정을 지원한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Harvard Medical School - Healthy Sleep",
+      "source_url": "https://healthysleep.med.harvard.edu/healthy/matters/benefits-of-sleep/learning-memory",
+      "checked": "2026-07-31",
+      "scope": {
+        "brand": "공통",
+        "category": "수면",
+        "line": "기억 공고화 타이밍",
+        "years": "2020~",
+        "region": "일반"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

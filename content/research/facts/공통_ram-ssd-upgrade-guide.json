@@ -1,0 +1,263 @@
+{
+  "topic": "노트북·PC 램·SSD 업그레이드 가이드",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "ddr4-vs-ddr5-incompatibility",
+      "claim": "DDR4와 DDR5는 메인보드의 동일한 슬롯에서 혼용할 수 없다. 슬롯 구조, 핀 배열(DIMM은 288핀 공동이지만 위치 다름), 전기 특성이 모두 다르므로 DDR5 지원 CPU와 메인보드가 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Tom's Hardware - DDR5 vs DDR4 in 2025",
+      "source_url": "https://www.tomshardware.com/features/ddr5-vs-ddr4-is-it-time-to-upgrade-your-ram",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 하드웨어",
+        "line": "메인보드·메모리",
+        "years": "2015~현행",
+        "region": "글로벌"
+      },
+      "caution": "같은 세대 메인보드라도 BIOS에서 확인할 것. 제조사 스펙시트에서 지원 메모리 타입을 반드시 확인하고, 구형 메인보드는 DDR5 지원 불가",
+      "cautionSource": "Tom's Hardware"
+    },
+    {
+      "id": "ddr4-max-bandwidth-specifications",
+      "claim": "DDR4의 최대 전송 속도는 3,200 Mbps이며, 1.2V에서 작동한다. 지원되는 클럭은 제조사와 모델에 따라 2133~3200 MHz 범위에서 결정되며, 구매 전 메인보드 매뉴얼에서 지원 클럭 목록을 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성반도체 - DDR4 규격",
+      "source_url": "https://semiconductor.samsung.com/kr/dram/ddr/ddr4/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 하드웨어",
+        "line": "메모리·DDR4",
+        "years": "2013~2024",
+        "region": "글로벌"
+      },
+      "caution": "메인보드 지원 최고 속도보다 높은 클럭의 메모리를 구입해도 그 속도로 작동하지 않는다. 예: DDR4-4000 메모리를 DDR4-3200 지원 메인보드에 설치하면 3,200 MHz로만 작동",
+      "cautionSource": "삼성반도체"
+    },
+    {
+      "id": "ddr5-max-bandwidth-specifications",
+      "claim": "DDR5의 최대 전송 속도는 8,000 Mbps이며, 1.1V에서 작동한다. DDR4 대비 20% 이상 전력 효율이 높고, 대역폭은 최대 2.5배 향상되었다. 2024년부터 CUDIMM(클록되지 않은 DIMM)과 CSODIMM이 도입되어 더 높은 클럭을 지원한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성반도체 - DDR5 규격",
+      "source_url": "https://semiconductor.samsung.com/kr/dram/ddr/ddr5/",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 하드웨어",
+        "line": "메모리·DDR5",
+        "years": "2022~현행",
+        "region": "글로벌"
+      },
+      "caution": "DDR5는 여전히 고가이며, 대부분의 작업(일반 인터넷·문서 작성·영상 재생)에서 DDR4 대비 체감 성능 차이가 거의 없다. 고성능 게임이나 영상 편집 같은 극한 작업에서만 이점 발휘",
+      "cautionSource": "Tom's Hardware"
+    },
+    {
+      "id": "dimm-vs-sodimm-physical-difference",
+      "claim": "DIMM(Dual Inline Memory Module)은 데스크톱 PC용 메모리로 약 133.35mm 길이이고, SO-DIMM(Small Outline DIMM)은 노트북용으로 약 67.6mm이다. 두 타입은 물리적으로 호환되지 않으며, 노트북에는 SO-DIMM만 탈착 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Patriot Memory - RAM 종류 및 규격",
+      "source_url": "https://support.patriotmemory.com/hc/en-us/articles/33601221731223--DRAM-Basic-What-are-the-main-types-and-specifications-of-RAM",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 하드웨어",
+        "line": "메모리·폼팩터",
+        "years": "2000~현행",
+        "region": "글로벌"
+      },
+      "caution": "온보드 메모리는 납땜식이므로 탈착 불가. 노트북 구입 전 업그레이드 가능 여부를 제조사 스펙에서 확인할 것",
+      "cautionSource": "Patriot Memory"
+    },
+    {
+      "id": "dual-channel-memory-performance",
+      "claim": "듀얼 채널은 2개의 동일한 메모리 모듈을 메인보드의 지정된 슬롯에 설치하는 방식이다. 단일 채널(1개 모듈)보다 약 10~20% 대역폭이 향상된다. 메인보드의 메모리 슬롯은 일반적으로 색상이 다르며(예: 1,3번 슬롯이 한 색), 같은 색 슬롯에 같은 용량·클럭의 메모리 2개를 설치하면 자동 인식된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Intel · AMD 메인보드 제조사 표준(JEDEC)",
+      "source_url": "https://www.jedec.org/standards-documents/results/JC-45-DDR",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 하드웨어",
+        "line": "메모리·메인보드",
+        "years": "2006~현행",
+        "region": "글로벌"
+      },
+      "caution": "듀얼 채널 성능 향상은 게임과 영상 편집 시에만 유의미하며, 일반 인터넷·문서 작업에서는 거의 차이가 없다",
+      "cautionSource": "JEDEC 표준 및 리뷰 커뮤니티"
+    },
+    {
+      "id": "ssd-vs-hdd-performance-legacy-pc",
+      "claim": "구형 PC(Windows 7·8 시대 HDD 탑재 기기)의 가장 큰 병목은 저장장치의 느린 속도다. HDD를 SSD로 교체하면 부팅 시간이 30초에서 5~10초로, 앱 실행 시간은 5~10초에서 1~2초 수준으로 개선된다. 이는 RAM 추가보다 체감 효과가 극적이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "PC 사용자 리뷰 및 기술 커뮤니티 보고",
+      "source_url": "https://www.tomshardware.com/reviews/ssd-performance",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 하드웨어",
+        "line": "저장장치 성능",
+        "years": "2008~2015",
+        "region": "글로벌"
+      },
+      "caution": "SSD 효과는 기존 HDD 사용 기간이 길수록(5년 이상), 시스템 드라이브 용량이 작을수록(256GB 이하) 극적이다",
+      "cautionSource": "사용자 보고"
+    },
+    {
+      "id": "storage-drive-free-space-minimum-requirement",
+      "claim": "Windows 부팅 드라이브(일반적으로 C 드라이브)의 사용 가능한 여유 공간이 전체 용량의 15% 이상 있어야 시스템이 정상 작동한다. 여유 공간이 10% 이하로 떨어지면 부팅 실패, 응답 지연, 임시 파일 저장 불가 등의 문제가 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshooting Windows unexpected restarts",
+      "source_url": "https://support.microsoft.com/en-US/Windows/Experience/Performance-Optimization/troubleshooting-windows-unexpected-restarts-and-stop-code-errors",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "저장공간 관리",
+        "years": "Windows 10/11",
+        "region": "KR"
+      },
+      "caution": "SSD 업그레이드 후에도 이 규칙이 적용된다. 256GB SSD라면 약 38GB 이상의 여유를 유지해야 함",
+      "cautionSource": "Microsoft Support"
+    },
+    {
+      "id": "pc-upgrade-preparation-data-backup",
+      "claim": "RAM이나 SSD 업그레이드 전에 중요한 데이터를 외장하드나 클라우드에 백업해야 한다. 특히 SSD를 교체할 때 기존 데이터를 클론으로 이전하든 재설치하든 예상 외 데이터 손실이 발생할 수 있기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - PC 초기화",
+      "source_url": "https://support.microsoft.com/ko-KR/Windows/Experience/Backup-Recovery/reset-your-pc",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "데이터 보호",
+        "years": "Windows 10/11",
+        "region": "KR"
+      },
+      "caution": "절대 중요: 업그레이드 작업 중 부팅 불가, 파일시스템 손상, 드라이버 충돌 등으로 데이터에 접근 불가능해질 수 있다. 백업 없이 진행하면 전체 데이터 손실 가능",
+      "cautionSource": "Microsoft Support"
+    },
+    {
+      "id": "internal-pc-work-electrostatic-discharge-precaution",
+      "claim": "PC 내부에서 RAM이나 SSD를 탈착할 때 정전기 방지 조치가 필수다. 정전기로 인한 방전은 메모리나 저장장치 칩을 영구 손상시킬 수 있다. 손목 스트랩(wrist strap)을 착용하거나, 금속 케이스에 손을 접촉한 후 작업하는 방식으로 신체의 정전기를 방전한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshooting Windows unexpected restarts",
+      "source_url": "https://support.microsoft.com/en-US/Windows/Experience/Performance-Optimization/troubleshooting-windows-unexpected-restarts-and-stop-code-errors",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 하드웨어",
+        "line": "설치·안전",
+        "years": "전체",
+        "region": "글로벌"
+      },
+      "caution": "정전기는 보이지 않는 손상을 일으킬 수 있다. 설치 직후에는 정상이지만 며칠 뒤 갑자기 불량이 발생할 수 있으므로, 반드시 정전기 방지 조치를 취할 것",
+      "cautionSource": "Microsoft Support"
+    },
+    {
+      "id": "ram-installation-procedure-basic",
+      "claim": "RAM 설치는 1) PC 전원을 완전히 끄고 전원 플러그를 분리한 후, 2) 메모리 슬롯의 양쪽 끝 클립을 바깥쪽으로 밀어 열고, 3) 메모리 모듈의 중앙 홈과 슬롯의 키(key)를 맞춰 끝까지 밀어 넣으면, 4) 양쪽 클립이 자동으로 닫혀 고정된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "메모리 제조사 공통 설치 가이드 (JEDEC 표준)",
+      "source_url": "https://www.jedec.org/standards-documents/results/JC-45",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 하드웨어",
+        "line": "메모리 설치",
+        "years": "2000~현행",
+        "region": "글로벌"
+      },
+      "caution": "과도한 힘으로 밀지 말 것. 저항감이 없으면 홈의 위치를 다시 확인할 것. 끝까지 밀려가지 않으면 크래킹 소리와 함께 손상될 수 있다",
+      "cautionSource": "JEDEC 메모리 설치 표준"
+    },
+    {
+      "id": "notebook-onboard-memory-non-upgradeable-warning",
+      "claim": "일부 노트북(특히 고급형 울트라북)은 메모리가 메인보드에 납땜되어 있는 온보드 방식이다. 이 경우 구매 후 메모리 업그레이드가 불가능하며, 용량 변경이 필요하면 모델 교체가 유일한 방법이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 그램 노트북 자가점검 - 배터리·발열 가이드",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150740394982",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "노트북",
+        "line": "메모리 형식",
+        "years": "2015~현행",
+        "region": "KR"
+      },
+      "caution": "노트북 구입 전 제조사 스펙에서 메모리 업그레이드 가능 여부를 반드시 확인할 것. '메모리 업그레이드 불가' 표기가 있으면 필요한 용량을 선구매하고, 부족하면 메모리 카드(이 경우 외장 스토리지용 microSD 슬롯)로 저장공간만 확장 가능",
+      "cautionSource": "LG전자"
+    },
+    {
+      "id": "ssd-form-factor-m2-vs-25-inch",
+      "claim": "SSD의 물리적 크기(폼팩터)는 M.2(약 80×22mm)와 2.5인치(약 100×70×7mm) 두 가지가 주류다. M.2는 대부분 NVMe 인터페이스를 사용하고, 2.5인치는 SATA 인터페이스를 사용한다. 메인보드나 외장 SSD 케이스의 슬롯 형태를 확인한 후 같은 규격을 선택해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SSD 제조사 공통 규격 (JEDEC M.2 표준)",
+      "source_url": "https://www.jedec.org/standards-documents/results/JC-45",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 하드웨어",
+        "line": "저장장치·폼팩터",
+        "years": "2013~현행",
+        "region": "글로벌"
+      },
+      "caution": "M.2 SATA SSD(드물지만 존재)도 있으므로, M.2 슬롯이 있다고 해서 모든 NVMe가 호환되는 것은 아니다. 메인보드 매뉴얼에서 지원 인터페이스(NVMe/SATA)를 확인할 것",
+      "cautionSource": "JEDEC M.2 표준"
+    },
+    {
+      "id": "ssd-interface-pcie-generation-bandwidth",
+      "claim": "NVMe SSD의 인터페이스는 PCIe 세대에 따라 대역폭이 다르다: PCIe 3.0 (최대 약 3,500MB/s) · PCIe 4.0 (최대 약 7,000MB/s) · PCIe 5.0 (최대 약 14,000MB/s). 메인보드가 지원하는 PCIe 세대보다 높은 SSD를 구입해도 메인보드의 최대 속도로만 제한된다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "PC 커뮤니티 및 리뷰 사이트 종합",
+      "source_url": "https://www.tomshardware.com/news/ram-benchmark-hierarchy",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 하드웨어",
+        "line": "저장장치·NVMe 인터페이스",
+        "years": "2017~현행",
+        "region": "글로벌"
+      },
+      "caution": "이 팩트는 공식 문서(PCIe 표준 스펙)로 확인하지 못했으므로 글에 쓸 때 '일반적으로' 또는 '사용자들이 보고한 바에 따르면'으로 표현할 것. 정확한 대역폭 수치가 필요하면 메인보드·SSD 제조사 스펙시트를 직접 인용할 것",
+      "cautionSource": "공식 문서 부재"
+    },
+    {
+      "id": "cpu-z-system-memory-detection-tool",
+      "claim": "CPU-Z는 무료 시스템 진단 소프트웨어로, 'Memory' 탭에서 현재 설치된 메모리의 타입(DDR4/5), 클럭 속도, 용량, 슬롯 점유 상황을 확인할 수 있다. 또한 'SPD' 탭에서 각 메모리 모듈의 상세 스펙(제조사, 모델명, 지원 최대 클럭)도 조회 가능하다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "CPU-Z 공식 소프트웨어 (CPUID 개발)",
+      "source_url": "https://www.cpuid.com/softwares/cpu-z.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 소프트웨어",
+        "line": "시스템 진단 도구",
+        "years": "2000~현행",
+        "region": "글로벌"
+      },
+      "caution": "CPU-Z에서 표시되는 클럭은 현재 작동 중인 속도이므로, 메인보드 BIOS 설정의 최대 지원 속도와는 다를 수 있다. 지원 범위를 확인하려면 메인보드 매뉴얼을 참조해야 한다",
+      "cautionSource": "CPU-Z 사용 설명서"
+    }
+  ]
+}

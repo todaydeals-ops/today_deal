@@ -1,0 +1,276 @@
+{
+  "topic": "넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-07-21",
+  "reused_facts": [
+    "battery-charging-terminal-contact-cleaning",
+    "battery-charging-adapter-verification",
+    "battery-swelling-stop-immediately",
+    "massage-gun-battery-not-power-on-check",
+    "massage-gun-charging-not-working-diagnostic",
+    "massage-gun-battery-reset-procedure",
+    "massage-gun-motor-overheat-protection",
+    "massage-gun-continuous-use-time-limit",
+    "massage-gun-neck-spine-forbidden",
+    "massage-gun-sensor-cleaning-water-prohibition",
+    "chair-power-reboot",
+    "power-outlet-check",
+    "automatic-stop-timer",
+    "motor-overheat-protection"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "neck-massager-power-not-on-diagnosis",
+      "claim": "넥마사지기 전원이 안 켜지면 먼저 배터리가 제대로 끼워져 있는지 확인하고, 충전 포트(단자)에 이물질이 없는지 마른 천으로 닦아낸 후 충전한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마사지건 제조사 공식 가이드 및 넥마사지기 통상 설계",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EB%A7%88%EC%82%AC%EC%A7%80%EA%B1%B4_%EB%B6%80%EC%9E%91%EC%9A%A9_%EB%A7%89%EC%9C%BC%EB%A0%A4%EB%A9%B4_%EC%98%AC%EB%B0%94%EB%A5%B8_%EC%82%AC%EC%9A%A9%EB%B0%A9%EB%B2%95%EA%B3%BC_%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD_%EA%B0%80%EC%9D%B4%EB%93%9C-59565",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "넥마사지기",
+        "line": "충전식 넥마사지기 (포켓형, 패드형 등)",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "충전이 안 되는 경우 어댑터(충전기) 자체가 고장났을 수 있으니, 제조사 정품 충전기만 사용할 것. 호환되지 않는 충전기는 배터리를 손상시킨다.",
+      "cautionSource": "제조사 배터리 안전 가이드"
+    },
+    {
+      "id": "neck-massager-charging-trouble",
+      "claim": "넥마사지기 충전이 안 될 때 확인 순서: (1) 충전기 어댑터 전원 플러그가 콘센트에 꽂혀 있는가 (2) 충전 포트에 먼지가 끼어 있지 않은가 (마른 천으로 닦기) (3) 배터리가 제대로 착용되어 있는가 (4) 30~60분 충전 지속",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마사지건 제조사 공식 충전 트러블슈팅 가이드",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EB%A7%88%EC%82%AC%EC%A7%80%EA%B1%B4_%EB%B6%80%EC%9E%91%EC%9A%A9_%EB%A7%89%EC%9C%BC%EB%A0%A4%EB%A9%B4_%EC%98%AC%EB%B0%94%EB%A5%B8_%EC%82%AC%EC%9A%A9%EB%B0%A9%EB%B2%95%EA%B3%BC_%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD_%EA%B0%80%EC%9D%B4%EB%93%9C-59565",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "넥마사지기",
+        "line": "충전식 넥마사지기",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "유기용제(시너·솔벤트·아세톤)나 휘발성 용제는 충전 포트 청소에 절대 금지. 마른 천이나 극도로 습한 정도의 천만 사용할 것.",
+      "cautionSource": "제조사 포트 청소 및 배터리 관리 규범"
+    },
+    {
+      "id": "neck-massager-vibration-not-working",
+      "claim": "넥마사지기의 진동(롤러 구동)이 작동하지 않으면, 배터리를 완전히 제거한 후 전원 버튼을 10초 이상 눌러 기기를 재부팅하고 새 배터리를 다시 끼운다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마사지기기 제조사 공식 리셋 절차",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EB%A7%88%EC%82%AC%EC%A7%80%EA%B1%B4_%EB%B6%80%EC%9E%91%EC%9A%A9_%EB%A7%89%EC%9C%BC%EB%A0%A4%EB%A9%B4_%EC%98%AC%EB%B0%94%EB%A5%B8_%EC%82%AC%EC%9A%A9%EB%B0%A9%EB%B2%95%EA%B3%BC_%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD_%EA%B0%80%EC%9D%B4%EB%93%9C-59565",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "넥마사지기",
+        "line": "충전식 넥마사지기",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "배터리 제거 전 기기가 완전히 정지되어 있는지 확인할 것. 작동 중 강제로 배터리를 제거하면 내부 기판 손상 위험.",
+      "cautionSource": "제조사 안전 매뉴얼"
+    },
+    {
+      "id": "neck-massager-intensity-control-issue",
+      "claim": "넥마사지기의 강도 조절 버튼이 작동하지 않으면 (1) 버튼 주변의 먼지를 마른 천으로 청소하고 (2) 배터리를 재부팅해 본다. 이후에도 작동하지 않으면 내부 회로 고장으로 AS를 접수한다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 보고 및 일반 전자기기 자가점검 커뮤니티",
+      "source_url": "https://www.a-ha.io/questions/4b8778030cd10cc3a419354e76a00d98",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "넥마사지기",
+        "line": "강도 조절 버튼 탑재 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "강도 조절이 안 되면 배터리 부족 상태에서는 기능이 제한될 수 있으므로, 먼저 완전 충전한 후 다시 시도해 본다"
+    },
+    {
+      "id": "neck-massager-heating-not-working",
+      "claim": "넥마사지기의 온열(히터) 기능이 작동하지 않으면 (1) 전원이 제대로 켜져 있는지 확인 (2) 온열 버튼을 누르면 표시등이 변하는지 확인 (3) 30초~1분 경과 후 열감이 나타나는지 기다려 본다. 여전히 열이 나지 않으면 히터 부품 고장으로 AS를 접수한다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "제조사 가이드 및 사용자 보고",
+      "source_url": "https://www.ptcntcsensor.com/ko/blog/ptc-heating-element-9",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "넥마사지기",
+        "line": "온열 기능 탑재 모델",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "온열이 작동할 때 피부에 직접 10분 이상 계속 대면 저온화상 위험이 있다. 온열 기능은 15~20분 간격으로 작동하며, 최대 30분 연속 사용을 초과하면 안 된다.",
+      "cautionSource": "온열 기기 저온화상 예방 기준 및 제조사 안전 가이드"
+    },
+    {
+      "id": "neck-massager-automatic-shutoff-normal",
+      "claim": "넥마사지기가 15~20분 사용 후 자동으로 꺼지는 것은 모터 과열 방지를 위한 정상 안전 기능이다. 고장이 아니다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마사지기기 제조사 공식 안내 및 제품 사용설명서",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EB%A7%88%EC%82%AC%EC%A7%80%EA%B1%B4_%EB%B6%80%EC%9E%91%EC%9A%A9_%EB%A7%89%EC%9C%BC%EB%A0%A4%EB%A9%B4_%EC%98%AC%EB%B0%94%EB%A5%B8_%EC%82%AC%EC%9A%A9%EB%B0%A9%EB%B2%95%EA%B3%BC_%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD_%EA%B0%80%EC%9D%B4%EB%93%9C-59565",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "넥마사지기",
+        "line": "타이머 기능 탑재 모든 모델",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "타이머 작동 후 다시 켜려면 최소 10~15분 냉각 시간을 가진 후 재사용할 것. 강제로 계속 켜려고 하면 모터·배터리 손상 위험.",
+      "cautionSource": "제조사 모터 과열 보호 기능 안내"
+    },
+    {
+      "id": "neck-massager-continuous-use-limit",
+      "claim": "넥마사지기는 모터 과열을 방지하기 위해 15~30분 연속 사용 후 냉각을 권한다. 정확한 사용 시간 제한은 제품 사용설명서마다 다르므로 제조사 지침을 확인할 것",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마사지기기 제조사 공식 사용 설명서",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EB%A7%88%EC%82%AC%EC%A7%80%EA%B1%B4_%EB%B6%80%EC%9E%91%EC%9A%A9_%EB%A7%89%EC%9C%BC%EB%A0%A4%EB%A9%B4_%EC%98%AC%EB%B0%94%EB%A5%B8_%EC%82%AC%EC%9A%A9%EB%B0%A9%EB%B2%95%EA%B3%BC_%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD_%EA%B0%80%EC%9D%B4%EB%93%9C-59565",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "넥마사지기",
+        "line": "넥마사지기 전 모델",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "한 부위에 5분 이상 연속 사용하지 말 것. 목은 신경과 혈관이 밀집된 예민한 부위이므로 과도한 자극은 뇌혈관·척추동맥 손상 위험을 높인다.",
+      "cautionSource": "제조사 사용설명서 및 의료 전문가 권고"
+    },
+    {
+      "id": "neck-massager-front-neck-carotid-prohibited",
+      "claim": "넥마사지기를 목의 앞부분(경동맥·인후부)에 직접 사용하면 안 된다. 경동맥이 손상되면 혈류 차단으로 뇌졸중, 심정지 위험이 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 전문가 권고 및 제품 안전 안내",
+      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EB%A7%88%EC%82%AC%EC%A7%80%EA%B1%B4_%EB%B6%80%EC%9E%91%EC%9A%A9_%EB%A7%89%EC%9C%BC%EB%A0%A4%EB%A9%B4_%EC%98%AC%EB%B0%94%EB%A5%B8_%EC%82%AC%EC%9A%A9%EB%B0%A9%EB%B2%95%EA%B3%BC_%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD_%EA%B0%80%EC%9D%B4%EB%93%9C-59565",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "넥마사지기",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "안전한 사용 부위: 목의 옆면 근육(흉쇄유돌근)과 어깨 승모근(어깨 위쪽)만. 목 중앙부(목구멍)와 목 앞부분은 절대 금지. 척추뼈 위치에 직접 사용도 금지.",
+      "cautionSource": "혈관 및 신경 손상 위험 기준 (혈액 공급 차단 위험)"
+    },
+    {
+      "id": "neck-massager-pregnancy-caution",
+      "claim": "임산부가 넥마사지기를 사용하면 자궁수축을 유발할 수 있으므로 사용을 피해야 한다. 사용하려면 반드시 산부인과 의사와 상담 후 허가를 받을 것",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 전문가 권고 및 제조사 안전 안내",
+      "source_url": "https://www.a-ha.io/questions/43c6b66c94c56104a0b98a307510644c",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "넥마사지기",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "임신 중 전기 자극·진동 마사지 기기는 태아 발달에 미치는 영향이 완전히 규명되지 않았으므로, 의료 전문가 지도 없이 사용하면 안 된다.",
+      "cautionSource": "산부인과 안전 가이드 및 마사지기 제조사 주의사항"
+    },
+    {
+      "id": "neck-massager-cervical-spine-patient-caution",
+      "claim": "목 디스크(경추질환), 일자목(거북목), 척추전방전위증 등 경추 질환자는 넥마사지기 사용 전 반드시 의사의 진찰을 받을 것. 의사 허가 없이 사용하면 증상 악화 위험",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 전문가 권고 및 거북목 증후군 임상 가이드",
+      "source_url": "https://www.snuh.org/health/nMedInfo/nView.do?category=DIS&medid=AA000732",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "넥마사지기",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "경추 질환자의 경우 과도한 진동·자극은 신경 압박을 악화시킬 수 있다. 물리치료사나 의사의 지도 아래에서 사용해야 한다.",
+      "cautionSource": "의료 전문가 경고 및 척추질환 관리 가이드"
+    },
+    {
+      "id": "neck-massager-cover-maintenance",
+      "claim": "넥마사지기의 패드(접촉면) 커버는 사용 후 마른 천으로 닦아내고, 가죽이나 천 커버는 정기적으로 가죽 클리너나 부드러운 세제로 세척할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "마사지기기 제조사 관리 안내",
+      "source_url": "https://cozyma.com/cs/useinfo",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "넥마사지기",
+        "line": "가죽/천 커버 탑재 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "세척 시 물을 직접 본체에 분사하지 말 것. 커버만 분리하여 세척하거나 마른 천으로 닦을 것. 내부 전자 부품에 물이 들어가면 단락 위험.",
+      "cautionSource": "제조사 유지보수 안전 가이드"
+    },
+    {
+      "id": "neck-massager-battery-swelling-emergency",
+      "claim": "넥마사지기 배터리가 부풀어 오르거나 모양이 변형되면 즉시 전원을 끄고 사용을 중단한 후 통풍이 잘 되는 곳에 격리할 것. 절대 물에 담그거나 분해하지 말고 폐기 전문업체에 의뢰한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "배터리 안전 표준 및 제조사 긴급 조치 안내",
+      "source_url": "https://consumer.go.kr/user/ftc/consumer/cnsmrBBS/80/selectInfoCmprDetail.do?cntntsId=00000205",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "넥마사지기",
+        "line": "리튬이온 배터리 탑재 모든 모델",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "배터리 팽창은 화재·폭발 위험 신호다. 강제로 사용하거나 충격을 주지 말 것. 개인이 배터리를 교체하려고 분해하면 감전·화상 위험.",
+      "cautionSource": "리튬배터리 안전 기준 및 소비자 안전 공시"
+    },
+    {
+      "id": "neck-massager-noise-initial-normal",
+      "claim": "새 넥마사지기를 처음 사용할 때 또는 오래 사용하지 않던 제품을 다시 사용할 때 소음이 나는 것은 부품들이 움직이기 시작하면서 나타나는 정상 현상이다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 및 제조사 안내",
+      "source_url": "https://cozyma.com/cs/useinfo",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "넥마사지기",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "몇 회 사용 후에도 소음이 계속되거나 소음이 심해지거나 삐걱거리는 소리가 나면 고장일 수 있으니 AS를 접수한다"
+    },
+    {
+      "id": "neck-massager-lithium-battery-storage",
+      "claim": "넥마사지기를 장기간 보관할 때는 배터리를 50% 정도 충전한 상태에서 보관하는 것이 배터리 수명을 가장 오래 유지한다. 완전 방전이나 완전 충전 상태는 배터리 열화를 가속화한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "리튬배터리 화학 및 제조사 보관 기준",
+      "source_url": "https://www.rhybattery.com/ko/news/vacuum-cleaner-battery.html",
+      "checked": "2026-07-21",
+      "scope": {
+        "brand": "공통",
+        "category": "넥마사지기",
+        "line": "리튬이온 배터리 탑재 모든 모델",
+        "years": "현행 판매 모델",
+        "region": "글로벌"
+      },
+      "caution": "직사광선·고온(25°C 이상)·습한 환경에서 보관하면 안 된다. 서늘하고 건조한 곳에 보관할 것. 3개월 이상 사용하지 않으려면 한 달에 한 번씩 50% 상태를 유지하도록 재충전한다.",
+      "cautionSource": "리튬이온 배터리 보관 기준"
+    }
+  ]
+}
