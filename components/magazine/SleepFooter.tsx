@@ -11,7 +11,10 @@ export default function SleepFooter() {
         <div className="mz-wrap" style={{ paddingTop: 42, paddingBottom: 40 }}>
           <div style={{ fontWeight: 800, fontSize: 19, color: "#f3efe9", letterSpacing: "-0.5px" }}>잠자리연구소</div>
           <div style={{ fontFamily: serif, fontSize: 23, fontWeight: 700, color: "#f3efe9", letterSpacing: "-0.5px", marginTop: 14, lineHeight: 1.4 }}>
-            광고 말고, <span style={{ color: "#ff8a6f" }}>논문</span>으로 검증하는 잠.
+            당신의 완벽한 밤을 위해, <span style={{ color: "#ff8a6f" }}>논문</span>으로 검증하다.
+          </div>
+          <div style={{ fontSize: 13.5, color: "#a8a298", marginTop: 12, lineHeight: 1.7, maxWidth: 560 }}>
+            느낌이나 소문이 아닌, 과학적 근거로 엄선한 최상의 잠자리를 만나보세요.
           </div>
         </div>
       </div>
