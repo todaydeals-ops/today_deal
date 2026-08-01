@@ -135,7 +135,10 @@ export async function fetchMagazineBySlug(slug: string): Promise<MagazineArticle
 
 // 관련 글: 같은 코너(+2)·같은 분야(+1) 가중치 후 최신순. 내부링크/색인용.
 export async function fetchRelatedMagazine(article: MagazineArticle, limit = 4): Promise<MagazineArticle[]> {
-  const all = await fetchMagazineList({ limit: 60 });
+  // 수면·침구(잠자리연구소) 글은 같은 섹션 안에서만 관련글을 뽑는다 — 오늘의딜 글과 섞이지 않게.
+  const all = article.field === "수면·침구"
+    ? await fetchMagazineList({ field: "수면·침구", limit: 60 })
+    : await fetchMagazineList({ limit: 60 });
   const scored = all
     .filter((x) => x.slug !== article.slug)
     .map((x) => {

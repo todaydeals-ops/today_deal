@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { fetchMagazineBySlug, fetchRelatedMagazine } from "@/lib/data/magazine";
 import { cornerOf } from "@/lib/magazine/corners";
 import Header from "@/components/Header";
+import SleepHeader from "@/components/magazine/SleepHeader";
+import { sleepCategoryOf } from "@/lib/magazine/sleepCategories";
 import Footer from "@/components/Footer";
 import { FieldPill } from "@/components/magazine/Chrome";
 
@@ -32,6 +34,8 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   const a = await fetchMagazineBySlug(slug);
   if (!a) notFound();
   const c = cornerOf(a.corner);
+  const isSleep = a.field === "수면·침구"; // 잠자리연구소 소속 글 → 잠자리연구소 정체성으로 렌더
+  const sleepCat = isSleep ? sleepCategoryOf(a.slug) : undefined; // 잠자리연구소 고유 6분류
   const related = await fetchRelatedMagazine(a, 4);
 
   // 대표 이미지를 본문 소제목 사이에 배치 — 짧은 글 1장, 긴 글(본문 2,800자+) 2장
@@ -104,7 +108,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
 
   return (
     <>
-      <Header />
+      {isSleep ? <SleepHeader /> : <Header />}
       <div className="mz-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
@@ -113,9 +117,17 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
         {/* ── 타이틀 블록 (풀폭) ── */}
         <div style={{ padding: "50px 0 0" }}>
           <div style={{ fontFamily: mono, fontSize: 11.5, letterSpacing: ".5px", color: "#9a9286", display: "flex", alignItems: "center", gap: 8 }}>
-            <Link href="/" className="ul-sweep" style={{ color: "#9a9286", textDecoration: "none" }}>매거진</Link>
+            {isSleep ? (
+              <a href="https://goodsleep.todaydeals.co.kr" style={{ color: "#9a9286", textDecoration: "none" }}>잠자리연구소</a>
+            ) : (
+              <Link href="/" className="ul-sweep" style={{ color: "#9a9286", textDecoration: "none" }}>매거진</Link>
+            )}
             <span style={{ opacity: 0.5 }}>›</span>
-            <Link href={`/?corner=${a.corner}`} className="ul-sweep" style={{ color: c.color, fontWeight: 600, textDecoration: "none" }}>{c.name}</Link>
+            {isSleep ? (
+              <a href={`https://goodsleep.todaydeals.co.kr/goodsleep?cat=${sleepCat?.key ?? ""}`} style={{ color: "#3f5a54", fontWeight: 600, textDecoration: "none" }}>{sleepCat?.label ?? "수면"}</a>
+            ) : (
+              <Link href={`/?corner=${a.corner}`} className="ul-sweep" style={{ color: c.color, fontWeight: 600, textDecoration: "none" }}>{c.name}</Link>
+            )}
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 9, marginTop: 18, flexWrap: "wrap" }}>
             <span style={{ display: "flex", alignItems: "center", gap: 7 }}>
