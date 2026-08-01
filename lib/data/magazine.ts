@@ -83,7 +83,7 @@ function map(r: Row): MagazineArticle {
   };
 }
 
-export async function fetchMagazineList(opts?: { corner?: string; limit?: number; offset?: number }): Promise<MagazineArticle[]> {
+export async function fetchMagazineList(opts?: { corner?: string; field?: string; limit?: number; offset?: number }): Promise<MagazineArticle[]> {
   const sb = getSupabaseAdmin();
   if (!sb) return [];
   try {
@@ -94,6 +94,8 @@ export async function fetchMagazineList(opts?: { corner?: string; limit?: number
       .neq("corner", "report")   // 리포트는 별도 데이터레이어(magazine-report.ts) 사용
       .order("created_at", { ascending: false });
     if (opts?.corner) q = q.eq("corner", opts.corner);
+    if (opts?.field) q = q.eq("field", opts.field); // 섹션(잠자리연구소=수면·침구) 전용 필터
+    else q = q.neq("field", "수면·침구"); // 메인 매거진에선 잠자리연구소(수면·침구) 글 제외 — 격리
     const limit = opts?.limit ?? 60;
     if (opts?.offset != null) q = q.range(opts.offset, opts.offset + limit - 1);
     else q = q.limit(limit);
@@ -110,7 +112,7 @@ export async function fetchMagazineCount(corner?: string): Promise<number> {
   const sb = getSupabaseAdmin();
   if (!sb) return 0;
   try {
-    let q = sb.from("magazine").select("*", { count: "exact", head: true }).eq("is_published", true).neq("corner", "report");
+    let q = sb.from("magazine").select("*", { count: "exact", head: true }).eq("is_published", true).neq("corner", "report").neq("field", "수면·침구");
     if (corner) q = q.eq("corner", corner);
     const { count } = await q;
     return count ?? 0;

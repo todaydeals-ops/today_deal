@@ -60,6 +60,16 @@ export function CornerIndex() {
             <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>{CORNER_SHORT[c.key] ?? c.desc}</div>
           </Link>
         ))}
+        {/* 05 — 잠자리연구소(수면 전문, 서브도메인). 새창. */}
+        <a className="corner-cell" href="https://goodsleep.todaydeals.co.kr" target="_blank" rel="noopener">
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            <span className="cc-n" style={{ fontFamily: mono, fontSize: 11, fontWeight: 600, color: "#9a9286" }}>05</span>
+            <span style={{ width: 9, height: 9, borderRadius: 9999, background: "#3f5a54" }} />
+          </div>
+          <div className="cc-t" style={{ fontWeight: 800, fontSize: 16, marginTop: 14 }}>잠자리연구소</div>
+          <div className="cc-en" style={{ fontFamily: mono, fontSize: 9.5, letterSpacing: "1px", color: "#3f5a54", marginTop: 2 }}>SLEEP LAB &#8599;</div>
+          <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>근거로 검증하는 수면</div>
+        </a>
       </div>
     </section>
   );
