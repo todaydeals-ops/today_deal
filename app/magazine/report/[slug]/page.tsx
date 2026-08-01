@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { fetchReportBySlug, fetchReportSlugs } from "@/lib/data/magazine-report";
 import { cornerOf } from "@/lib/magazine/corners";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import MediaFooter from "@/components/MediaFooter";
 
 export const revalidate = 3600; // 1시간 캐시
 const SITE = "https://www.todaydeals.co.kr";
@@ -191,7 +191,7 @@ export default async function MagazineReportPage({ params }: { params: Promise<{
           </div>
         </footer>
       </div>
-      <Footer />
+      <MediaFooter />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import MediaFooter from "@/components/MediaFooter";
 import { fetchUnifiedDeals } from "@/lib/data/deals";
 import { verdictRank } from "@/components/PriceVerdict";
 import { BADGE_META, type Deal } from "@/lib/types";
@@ -226,7 +226,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ c
         <NeutralBand />
       </div>
 
-      <Footer />
+      <MediaFooter />
     </>
   );
 }

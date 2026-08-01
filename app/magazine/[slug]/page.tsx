@@ -6,7 +6,7 @@ import { cornerOf } from "@/lib/magazine/corners";
 import Header from "@/components/Header";
 import SleepHeader from "@/components/magazine/SleepHeader";
 import { sleepCategoryOf } from "@/lib/magazine/sleepCategories";
-import Footer from "@/components/Footer";
+import MediaFooter from "@/components/MediaFooter";
 import SleepFooter from "@/components/magazine/SleepFooter";
 import { FieldPill } from "@/components/magazine/Chrome";
 
@@ -279,7 +279,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
       </div>
 
       </div>
-      {isSleep ? <SleepFooter /> : <Footer />}
+      {isSleep ? <SleepFooter /> : <MediaFooter />}
     </>
   );
 }
