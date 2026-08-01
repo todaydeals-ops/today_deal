@@ -1,9 +1,6 @@
 import Link from "next/link";
 import Header from "@/components/Header";
-import DealGrid from "@/components/DealGrid";
-import LiveViewers from "@/components/LiveViewers";
 import Footer from "@/components/Footer";
-import PriceVerdictLegend from "@/components/PriceVerdictLegend";
 import { fetchUnifiedDeals } from "@/lib/data/deals";
 import { verdictRank } from "@/components/PriceVerdict";
 import { BADGE_META, type Deal } from "@/lib/types";
@@ -12,7 +9,6 @@ import { fetchReportList } from "@/lib/data/magazine-report";
 import { isCorner, cornerOf, CATCH } from "@/lib/magazine/corners";
 import { CornerIndex, NeutralBand, CornerDot, FieldPill, FeaturedImageSlot } from "@/components/magazine/Chrome";
 import "./magazine/magazine.css";
-import styles from "./page.module.css";
 
 // 딜은 자주 바뀌고 신선도가 핵심 → 항상 최신 렌더(SSR).
 export const dynamic = "force-dynamic";
@@ -128,7 +124,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ c
             <CornerIndex />
 
             {reports.length > 0 && (
-              <section className="mz-wrap" style={{ paddingTop: 0, paddingBottom: 40 }}>
+              <section className="mz-wrap" style={{ paddingTop: 52, paddingBottom: 40 }}>
                 <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", borderTop: "1px solid rgba(22,20,15,0.16)", paddingTop: 16, marginBottom: 14 }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                     <span style={{ fontFamily: mono, fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", color: "#fff", background: "#16140f", padding: "3px 9px", borderRadius: 4 }}>REPORT</span>
@@ -245,25 +241,6 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ c
         <NeutralBand />
       </div>
 
-      {/* 오늘의 딜 15개 (서브) */}
-      <main className="wrap" style={{ paddingBottom: 60 }}>
-        <div style={{ margin: "10px 0 2px" }}>
-          <LiveViewers />
-        </div>
-        <div className={styles.sectionHead}>
-          <h2 className={styles.title}>
-            <span aria-hidden style={{ marginRight: 4 }}>🤖</span>
-            AI가 골라낸 오늘의 특가
-          </h2>
-          <p className={styles.sub}>네이버·쿠팡 최저가와 비교해 매긴 AI 진단으로 정렬했어요</p>
-          <PriceVerdictLegend />
-        </div>
-        <DealGrid deals={feed} />
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 10, marginTop: 14 }}>
-          <p style={{ fontSize: 11, color: "#9A958C", lineHeight: 1.5, margin: 0 }}>※ AI 가격분석 추정치예요. 분석 시점·옵션·용량에 따라 실제 가격과 달라질 수 있어요.</p>
-          <Link href="/deals" style={{ fontSize: 13.5, fontWeight: 700, color: "var(--accent-deal)", textDecoration: "none", whiteSpace: "nowrap" }}>오늘의 딜 전체 보기 →</Link>
-        </div>
-      </main>
       <Footer />
     </>
   );

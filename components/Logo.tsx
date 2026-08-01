@@ -1,17 +1,12 @@
-// 오늘의딜 로고 (테라코타 시계 아이콘 + "오늘의딜" + 테라코타 점)
-// 데모 시안의 SVG를 그대로 컴포넌트화. 디자이너 최종 다듬기 예정.
+// 오늘의딜 로고 ("오늘의딜" 워드마크 + 테라코타 점) — 시계 아이콘 제거(the real deal 리뉴얼)
 export default function Logo() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 -4.1 177.2 36.7"
+      viewBox="44 -4.1 134 36.7"
       role="img"
       aria-label="오늘의딜"
     >
-      <rect x="2.0" y="-4.1" width="36.7" height="36.7" rx="9.5" fill="#D85A30" />
-      <circle cx="20.4" cy="14.3" r="11.0" fill="none" stroke="#FFFFFF" strokeWidth="2.0" />
-      <line x1="20.4" y1="14.3" x2="20.4" y2="8.2" stroke="#FFFFFF" strokeWidth="2.0" strokeLinecap="round" />
-      <line x1="20.4" y1="14.3" x2="13.5" y2="14.3" stroke="#FFFFFF" strokeWidth="2.0" strokeLinecap="round" />
       <path
         d="M884 1556C488 1558 190 1354 190 1048C190 769 419 583 742 542V250H48V16H1726V250H1026V542C1351 583 1582 769 1582 1048C1582 1354 1280 1558 884 1556ZM884 1328C1130 1328 1296 1224 1296 1048C1296 860 1130 760 884 760C642 760 474 860 476 1048C474 1224 642 1328 884 1328Z"
         transform="translate(47.72,26.57) scale(0.01660,-0.01660)"
