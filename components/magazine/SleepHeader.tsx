@@ -1,19 +1,18 @@
-// 잠자리연구소(수면·침구 글) 전용 헤더 — 오늘의딜 헤더 대신, 잠자리연구소 정체성 + 고유 6분류 메뉴.
+// 잠자리연구소 전용 헤더 — 오늘의딜 헤더와 동일한 높이(62px)·정렬. 로고는 Pretendard.
 import Link from "next/link";
 import { SLEEP_CATEGORIES } from "@/lib/magazine/sleepCategories";
 
 const mono = "'JetBrains Mono', monospace";
-const serif = "'Noto Serif KR', serif";
 
 export default function SleepHeader() {
   return (
-    <header style={{ borderBottom: "1px solid rgba(22,20,15,0.10)", background: "#fff" }}>
-      <div className="mz-wrap" style={{ paddingTop: 15, paddingBottom: 13, display: "flex", alignItems: "center", justifyContent: "space-between", gap: 14, flexWrap: "wrap" }}>
+    <header style={{ background: "#fff", borderBottom: "1px solid #ece8e0", position: "sticky", top: 0, zIndex: 10 }}>
+      <div className="mz-wrap" style={{ height: 62, display: "flex", alignItems: "center", justifyContent: "space-between", gap: 14 }}>
         <Link href="/goodsleep" style={{ display: "flex", alignItems: "baseline", gap: 10, textDecoration: "none", color: "#16140f", flexShrink: 0 }}>
-          <span style={{ fontFamily: serif, fontWeight: 800, fontSize: 21, letterSpacing: "-0.5px", whiteSpace: "nowrap" }}>잠자리연구소</span>
+          <span style={{ fontWeight: 800, fontSize: 23, letterSpacing: "-0.6px", whiteSpace: "nowrap" }}>잠자리연구소</span>
           <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: "1.5px", fontWeight: 700, color: "#76726b", borderLeft: "1px solid #c8c0b3", paddingLeft: 10 }}>SLEEP LAB</span>
         </Link>
-        <nav style={{ display: "flex", alignItems: "center", gap: 15, flexWrap: "wrap", fontSize: 14 }}>
+        <nav style={{ display: "flex", alignItems: "center", gap: 20, fontSize: 14, overflowX: "auto" }}>
           {SLEEP_CATEGORIES.map((c) => (
             <Link key={c.key} href={`/goodsleep?cat=${c.key}`} style={{ color: "#5b564d", textDecoration: "none", whiteSpace: "nowrap" }}>{c.label}</Link>
           ))}

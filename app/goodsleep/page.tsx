@@ -5,6 +5,7 @@ import { FieldPill, FeaturedImageSlot } from "@/components/magazine/Chrome";
 import SleepHeader from "@/components/magazine/SleepHeader";
 import SleepCategoryIndex from "@/components/magazine/SleepCategoryIndex";
 import Pagination from "@/components/magazine/Pagination";
+import SleepFooter from "@/components/magazine/SleepFooter";
 import { sleepCategoryByKey, sleepCategoryOf } from "@/lib/magazine/sleepCategories";
 import "../magazine/magazine.css";
 
@@ -12,7 +13,6 @@ import "../magazine/magazine.css";
 export const revalidate = 3600;
 const mono = "'JetBrains Mono', monospace";
 const serif = "'Noto Serif KR', serif";
-const MAIN = "https://www.todaydeals.co.kr";
 const PER = 12;
 const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
 
@@ -122,12 +122,7 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
         )}
       </div>
 
-      <footer style={{ background: "#0f0e0a", color: "#8a857c" }}>
-        <div className="mz-wrap" style={{ paddingTop: 26, paddingBottom: 26, display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16, flexWrap: "wrap", fontFamily: mono, fontSize: 11 }}>
-          <span>잠자리연구소 · 광고 0 · 협찬 0 · 해외 논문 근거</span>
-          <a href={MAIN} style={{ color: "#cdc6ba", textDecoration: "none" }}>오늘의딜 &rarr;</a>
-        </div>
-      </footer>
+      <SleepFooter />
     </>
   );
 }

@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import SleepHeader from "@/components/magazine/SleepHeader";
 import { sleepCategoryOf } from "@/lib/magazine/sleepCategories";
 import Footer from "@/components/Footer";
+import SleepFooter from "@/components/magazine/SleepFooter";
 import { FieldPill } from "@/components/magazine/Chrome";
 
 export const revalidate = 3600; // 1시간 캐시 — 매거진 아티클은 실시간 불필요
@@ -278,7 +279,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
       </div>
 
       </div>
-      <Footer />
+      {isSleep ? <SleepFooter /> : <Footer />}
     </>
   );
 }
