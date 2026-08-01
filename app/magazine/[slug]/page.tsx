@@ -37,6 +37,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   const c = cornerOf(a.corner);
   const isSleep = a.field === "수면·침구"; // 잠자리연구소 소속 글 → 잠자리연구소 정체성으로 렌더
   const sleepCat = isSleep ? sleepCategoryOf(a.slug) : undefined; // 잠자리연구소 고유 6분류
+  const accent = isSleep ? (sleepCat?.color ?? "#3f5a54") : c.color; // 강조색: 잠자리는 분류색, 그 외 코너색
   const related = await fetchRelatedMagazine(a, 4);
 
   // 대표 이미지를 본문 소제목 사이에 배치 — 짧은 글 1장, 긴 글(본문 2,800자+) 2장
@@ -130,11 +131,20 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
             )}
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 9, marginTop: 18, flexWrap: "wrap" }}>
-            <span style={{ display: "flex", alignItems: "center", gap: 7 }}>
-              <span style={{ width: 8, height: 8, borderRadius: 9999, background: c.color }} />
-              <span style={{ fontFamily: mono, fontSize: 11, fontWeight: 700, letterSpacing: ".5px", color: c.color }}>{c.name}</span>
-            </span>
-            <FieldPill field={a.field} />
+            {isSleep ? (
+              <span style={{ display: "flex", alignItems: "center", gap: 7 }}>
+                <span style={{ width: 8, height: 8, borderRadius: 9999, background: sleepCat?.color ?? "#3f5a54" }} />
+                <span style={{ fontSize: 12, fontWeight: 700, letterSpacing: ".3px", color: sleepCat?.color ?? "#3f5a54" }}>{sleepCat?.label ?? "수면"}</span>
+              </span>
+            ) : (
+              <>
+                <span style={{ display: "flex", alignItems: "center", gap: 7 }}>
+                  <span style={{ width: 8, height: 8, borderRadius: 9999, background: c.color }} />
+                  <span style={{ fontFamily: mono, fontSize: 11, fontWeight: 700, letterSpacing: ".5px", color: c.color }}>{c.name}</span>
+                </span>
+                <FieldPill field={a.field} />
+              </>
+            )}
           </div>
           <h1 style={{ fontFamily: serif, fontWeight: 700, fontSize: 46, letterSpacing: "-1.6px", lineHeight: 1.26, margin: "18px 0 0", color: "#16140f", textWrap: "balance", maxWidth: 900 }}>{a.title}</h1>
           {a.subtitle && <div style={{ fontFamily: serif, fontWeight: 500, fontSize: 20, lineHeight: 1.6, color: "#7a756a", margin: "14px 0 0" }}>{a.subtitle}</div>}
@@ -146,11 +156,11 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
         {/* ── 핵심 요약 (GEO: AI가 본문 첫머리에서 즉답 발췌) ── */}
         {a.summary && a.summary.length > 0 && (
           <section aria-label="핵심 요약" style={{ margin: "28px 0 0", border: "1px solid rgba(22,20,15,0.14)", borderRadius: 14, padding: "20px 24px", background: "#faf8f5" }}>
-            <div style={{ fontFamily: mono, fontSize: 11, letterSpacing: "1.5px", color: c.color, fontWeight: 700, marginBottom: 14 }}>핵심 요약</div>
+            <div style={{ fontFamily: mono, fontSize: 11, letterSpacing: "1.5px", color: accent, fontWeight: 700, marginBottom: 14 }}>핵심 요약</div>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
               {a.summary.map((s, i) => (
                 <li key={i} style={{ display: "flex", gap: 12, fontSize: 16, lineHeight: 1.65, color: "#2c2a24" }}>
-                  <span style={{ fontFamily: mono, fontWeight: 700, fontSize: 13, color: c.color, flex: "none", marginTop: 2 }}>{String(i + 1).padStart(2, "0")}</span>
+                  <span style={{ fontFamily: mono, fontWeight: 700, fontSize: 13, color: accent, flex: "none", marginTop: 2 }}>{String(i + 1).padStart(2, "0")}</span>
                   <span dangerouslySetInnerHTML={{ __html: s }} />
                 </li>
               ))}
