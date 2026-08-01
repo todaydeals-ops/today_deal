@@ -120,10 +120,10 @@ export function HonestyBadge() {
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#ff5a3c" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
       </span>
       <div>
-        <div style={{ fontSize: 13, fontWeight: 700, color: "#16140f", lineHeight: 1.5 }}>이 글은 끝까지 읽어도 특정 제품을 추천하지 않습니다.</div>
-        <div style={{ fontSize: 12, color: "#76726b", lineHeight: 1.5 }}>소비자의 바른 선택, 그 방향만 제시합니다.</div>
+        <div style={{ fontSize: 13, fontWeight: 700, color: "#16140f", lineHeight: 1.5 }}>치우침 없는 객관적인 정보를 제공합니다</div>
+        <div style={{ fontSize: 12, color: "#76726b", lineHeight: 1.5 }}>소비자의 바른 선택을 위해, 투명한 정보와 객관적인 기준만 제시합니다.</div>
       </div>
-      <span style={{ marginLeft: "auto", flex: "none", fontFamily: mono, fontSize: 9.5, fontWeight: 600, color: "#ff5a3c", border: "1px solid #f3c3b4", borderRadius: 9999, padding: "4px 8px" }}>AD-FREE</span>
+      <span style={{ marginLeft: "auto", flex: "none", fontFamily: mono, fontSize: 9.5, fontWeight: 600, color: "#ff5a3c", border: "1px solid #f3c3b4", borderRadius: 9999, padding: "4px 8px", whiteSpace: "nowrap" }}>TRUSTED PARTNER</span>
     </div>
   );
 }

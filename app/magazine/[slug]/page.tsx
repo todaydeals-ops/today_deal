@@ -179,10 +179,10 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
                 <span style={{ width: 30, height: 30, borderRadius: 9999, border: "2px solid #ff5a3c", display: "flex", alignItems: "center", justifyContent: "center", flex: "none" }}>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#ff5a3c" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </span>
-                <span style={{ fontFamily: mono, fontSize: 10, fontWeight: 600, letterSpacing: ".5px", color: "#ff5a3c" }}>AD-FREE</span>
+                <span style={{ fontFamily: mono, fontSize: 10, fontWeight: 600, letterSpacing: ".5px", color: "#ff5a3c" }}>TRUSTED PARTNER</span>
               </div>
-              <div style={{ fontSize: 13, fontWeight: 700, lineHeight: 1.5, marginTop: 12 }}>특정 제품을 추천하지 않습니다</div>
-              <div style={{ fontSize: 12, color: "#76726b", lineHeight: 1.55, marginTop: 4 }}>소비자의 바른 선택, 그 방향만 제시합니다.</div>
+              <div style={{ fontSize: 13, fontWeight: 700, lineHeight: 1.5, marginTop: 12 }}>치우침 없는 객관적인 정보를 제공합니다</div>
+              <div style={{ fontSize: 12, color: "#76726b", lineHeight: 1.55, marginTop: 4 }}>소비자의 바른 선택을 위해, 투명한 정보와 객관적인 기준만 제시합니다.</div>
             </div>
 
             {/* 짚고 가요 */}
