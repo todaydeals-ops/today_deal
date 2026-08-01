@@ -17,7 +17,6 @@ export default function SleepHeader() {
           {SLEEP_CATEGORIES.map((c) => (
             <Link key={c.key} href={`/goodsleep?cat=${c.key}`} style={{ color: "#5b564d", textDecoration: "none", whiteSpace: "nowrap" }}>{c.label}</Link>
           ))}
-          <a href="https://www.todaydeals.co.kr" style={{ fontFamily: mono, fontSize: 11.5, color: "#9a9286", textDecoration: "none", whiteSpace: "nowrap", borderLeft: "1px solid #e4dccc", paddingLeft: 14 }}>오늘의딜 &rarr;</a>
         </nav>
       </div>
     </header>

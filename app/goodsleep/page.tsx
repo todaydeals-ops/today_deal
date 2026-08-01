@@ -3,7 +3,8 @@ import Link from "next/link";
 import { fetchMagazineList } from "@/lib/data/magazine";
 import { FieldPill, FeaturedImageSlot } from "@/components/magazine/Chrome";
 import SleepHeader from "@/components/magazine/SleepHeader";
-import { cornerOf } from "@/lib/magazine/corners";
+import SleepCategoryIndex from "@/components/magazine/SleepCategoryIndex";
+import Pagination from "@/components/magazine/Pagination";
 import { sleepCategoryByKey, sleepCategoryOf } from "@/lib/magazine/sleepCategories";
 import "../magazine/magazine.css";
 
@@ -12,6 +13,7 @@ export const revalidate = 3600;
 const mono = "'JetBrains Mono', monospace";
 const serif = "'Noto Serif KR', serif";
 const MAIN = "https://www.todaydeals.co.kr";
+const PER = 12;
 const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
 
 export const metadata: Metadata = {
@@ -19,13 +21,25 @@ export const metadata: Metadata = {
   description: "광고도 협찬도 없이, 해외 수면 연구를 근거로 검증합니다. 성장하는 잠·공부잘하는 잠·일잘하는 잠·조화로운 잠·늙지않는 잠·잠자리장비학.",
 };
 
-export default async function GoodSleepHome({ searchParams }: { searchParams: Promise<{ cat?: string }> }) {
+export default async function GoodSleepHome({ searchParams }: { searchParams: Promise<{ cat?: string; page?: string }> }) {
   const sp = await searchParams;
   const cat = sleepCategoryByKey(sp.cat);
+  const page = Math.max(1, Number(sp.page) || 1);
   const all = await fetchMagazineList({ field: "수면·침구", limit: 60 });
-  const list = cat ? all.filter((a) => cat.slugs.includes(a.slug)) : all;
-  const featured = list[0];
-  const rows = list.slice(1);
+  const filtered = cat ? all.filter((a) => cat.slugs.includes(a.slug)) : all;
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PER));
+  const pageList = filtered.slice((page - 1) * PER, page * PER);
+  const featured = page === 1 ? pageList[0] : undefined;
+  const rows = page === 1 ? pageList.slice(1) : pageList;
+  const showIndex = !cat && page === 1;
+
+  const pageHref = (p: number) => {
+    const q = new URLSearchParams();
+    if (cat) q.set("cat", cat.key);
+    if (p > 1) q.set("page", String(p));
+    const s = q.toString();
+    return s ? `/goodsleep?${s}` : "/goodsleep";
+  };
 
   return (
     <>
@@ -52,14 +66,16 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
           )}
         </section>
 
-        {list.length === 0 ? (
+        {showIndex && <SleepCategoryIndex />}
+
+        {filtered.length === 0 ? (
           <section className="mz-wrap" style={{ paddingTop: 20, paddingBottom: 80, color: "#9a9286" }}>
             <div style={{ fontFamily: serif, fontSize: 20, fontWeight: 600, color: "#46433d" }}>이 분류의 칼럼을 준비하고 있어요.</div>
           </section>
         ) : (
           <>
             {featured && (
-              <section className="mz-wrap" style={{ paddingTop: 8, paddingBottom: 30 }}>
+              <section className="mz-wrap" style={{ paddingTop: 34, paddingBottom: 30 }}>
                 <Link href={`/magazine/${featured.slug}`} className="mz-feat">
                   <div>
                     <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
@@ -79,19 +95,19 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
             )}
 
             {rows.length > 0 && (
-              <section className="mz-wrap" style={{ paddingTop: 14, paddingBottom: 24 }}>
+              <section className="mz-wrap" style={{ paddingTop: 14, paddingBottom: 10 }}>
                 <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", borderTop: "1px solid rgba(22,20,15,0.16)", paddingTop: 16, marginBottom: 6 }}>
                   <span style={{ fontWeight: 800, fontSize: 18 }}>{cat ? cat.label : "수면 칼럼"}</span>
-                  <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: "2px", color: "#9a9286" }}>{cat ? String(list.length) + "편" : "ALL"}</span>
+                  <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: "2px", color: "#9a9286" }}>{filtered.length}편</span>
                 </div>
                 {rows.map((a, i) => {
                   const rc = sleepCategoryOf(a.slug);
                   return (
                     <Link key={a.id} href={`/magazine/${a.slug}`} className="mz-row row-link">
-                      <span className="mz-row-num" style={{ fontFamily: mono, fontSize: 13, fontWeight: 600, color: "#c0b8a9" }}>{String(i + 1).padStart(2, "0")}</span>
+                      <span className="mz-row-num" style={{ fontFamily: mono, fontSize: 13, fontWeight: 600, color: "#c0b8a9" }}>{String((page - 1) * PER + (page === 1 ? i + 2 : i + 1)).padStart(2, "0")}</span>
                       <span style={{ display: "flex", alignItems: "center", gap: 9 }}>
-                        <span style={{ width: 8, height: 8, borderRadius: 9999, background: "#3f5a54", flex: "none" }} />
-                        <span style={{ fontFamily: mono, fontSize: 11, fontWeight: 700, color: "#3f5a54" }}>{rc?.label ?? "수면"}</span>
+                        <span style={{ width: 8, height: 8, borderRadius: 9999, background: rc?.color ?? "#3f5a54", flex: "none" }} />
+                        <span style={{ fontFamily: mono, fontSize: 11, fontWeight: 700, color: rc?.color ?? "#3f5a54" }}>{rc?.label ?? "수면"}</span>
                       </span>
                       <span className="mz-row-title" style={{ fontFamily: serif, fontWeight: 600, fontSize: 21, letterSpacing: "-0.6px", lineHeight: 1.35, color: "#16140f" }}>{a.title}</span>
                       <span className="mz-row-go row-go" style={{ fontFamily: mono, fontSize: 16, color: "#16140f" }}>&rarr;</span>
@@ -100,16 +116,10 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
                 })}
               </section>
             )}
+
+            <Pagination page={page} totalPages={totalPages} href={pageHref} />
           </>
         )}
-
-        {/* 오늘의딜 연결 */}
-        <section className="mz-wrap" style={{ paddingTop: 34, paddingBottom: 60 }}>
-          <a href={MAIN} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 14, padding: "18px 22px", border: "1px solid #e4dccc", borderRadius: 12, background: "#faf8f5", textDecoration: "none", color: "#16140f" }}>
-            <span style={{ fontSize: 15, fontWeight: 700, lineHeight: 1.5 }}>잠자리연구소는 오늘의딜 매거진에서 독립했습니다.<br /><span style={{ fontWeight: 500, fontSize: 13.5, color: "#76726b" }}>가전·리빙·디지털 등 그 외 분야는 오늘의딜에서.</span></span>
-            <span style={{ fontFamily: mono, fontSize: 13, color: "#ff5a3c", fontWeight: 700, whiteSpace: "nowrap" }}>오늘의딜 &rarr;</span>
-          </a>
-        </section>
       </div>
 
       <footer style={{ background: "#0f0e0a", color: "#8a857c" }}>

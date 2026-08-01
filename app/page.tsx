@@ -8,6 +8,7 @@ import { fetchMagazineList, fetchMagazineCount } from "@/lib/data/magazine";
 import { fetchReportList } from "@/lib/data/magazine-report";
 import { isCorner, cornerOf, CATCH } from "@/lib/magazine/corners";
 import { CornerIndex, NeutralBand, CornerDot, FieldPill, FeaturedImageSlot } from "@/components/magazine/Chrome";
+import Pagination from "@/components/magazine/Pagination";
 import "./magazine/magazine.css";
 
 // 딜은 자주 바뀌고 신선도가 핵심 → 항상 최신 렌더(SSR).
@@ -218,23 +219,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ c
             )}
 
             {/* 페이지네이션 */}
-            {totalPages > 1 && (
-              <section className="mz-wrap" style={{ paddingBottom: 48 }}>
-                <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 14, borderTop: "1px solid rgba(22,20,15,0.10)", paddingTop: 22 }}>
-                  {page > 1 ? (
-                    <Link href={pageHref(page - 1)} style={{ fontFamily: mono, fontSize: 13, fontWeight: 700, color: "#16140f", textDecoration: "none", padding: "8px 14px", border: "1px solid #ddd5c8", borderRadius: 8 }}>← 이전</Link>
-                  ) : (
-                    <span style={{ fontFamily: mono, fontSize: 13, color: "#c0b8a9", padding: "8px 14px", border: "1px solid #efe9df", borderRadius: 8 }}>← 이전</span>
-                  )}
-                  <span style={{ fontFamily: mono, fontSize: 13, color: "#7a756a" }}>{page} / {totalPages}</span>
-                  {page < totalPages ? (
-                    <Link href={pageHref(page + 1)} style={{ fontFamily: mono, fontSize: 13, fontWeight: 700, color: "#16140f", textDecoration: "none", padding: "8px 14px", border: "1px solid #ddd5c8", borderRadius: 8 }}>다음 →</Link>
-                  ) : (
-                    <span style={{ fontFamily: mono, fontSize: 13, color: "#c0b8a9", padding: "8px 14px", border: "1px solid #efe9df", borderRadius: 8 }}>다음 →</span>
-                  )}
-                </div>
-              </section>
-            )}
+            <Pagination page={page} totalPages={totalPages} href={pageHref} />
           </>
         )}
 

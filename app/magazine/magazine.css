@@ -47,6 +47,21 @@
 .corner-cell:hover .cc-t, .corner-cell:hover .cc-n, .corner-cell:hover .cc-d { color: #fff !important; }
 .corner-cell:hover .cc-en { color: #ff8a6f !important; }
 
+/* 잠자리연구소 6분류 인덱스 — CornerIndex 카드 틀 재사용, 3열(2행) */
+.sleep-cat-index {
+  border-top: 1px solid rgba(22, 20, 15, 0.16);
+  border-bottom: 1px solid rgba(22, 20, 15, 0.08);
+  display: grid; grid-template-columns: repeat(3, 1fr);
+}
+.sleep-cat-index .corner-cell:nth-child(3n) { border-right: none; }
+.sleep-cat-index .corner-cell:nth-child(n+4) { border-top: 1px solid #ddd5c8; }
+@media (max-width: 760px) {
+  .sleep-cat-index { grid-template-columns: repeat(2, 1fr); }
+  .sleep-cat-index .corner-cell:nth-child(3n) { border-right: 1px solid #ddd5c8; }
+  .sleep-cat-index .corner-cell:nth-child(2n) { border-right: none; }
+  .sleep-cat-index .corner-cell:nth-child(n+3) { border-top: 1px solid #ddd5c8; }
+}
+
 /* 피처드 */
 .mz-feat { display: grid; grid-template-columns: 1.15fr 1fr; gap: 46px; cursor: pointer; align-items: start; text-decoration: none; color: inherit; }
 .feat-title { transition: color 0.2s ease; }
