@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { fetchMagazineList } from "@/lib/data/magazine";
-import { FieldPill, FeaturedImageSlot } from "@/components/magazine/Chrome";
+import { FeaturedImageSlot } from "@/components/magazine/Chrome";
 import SleepHeader from "@/components/magazine/SleepHeader";
 import SleepCategoryIndex from "@/components/magazine/SleepCategoryIndex";
 import Pagination from "@/components/magazine/Pagination";
@@ -79,7 +79,7 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
                 <Link href={`/magazine/${featured.slug}`} className="mz-feat">
                   <div>
                     <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
-                      <FieldPill field={featured.field} />
+                      <span style={{ fontSize: 11.5, fontWeight: 600, color: sleepCategoryOf(featured.slug)?.color ?? "#46433d", background: "#efeae1", borderRadius: 9999, padding: "4px 12px" }}>{sleepCategoryOf(featured.slug)?.label ?? "수면·침구"}</span>
                       <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: "1px", color: "#9a9286" }}>FEATURED</span>
                     </div>
                     <h2 className="feat-title" style={{ fontFamily: serif, fontWeight: 700, fontSize: 40, letterSpacing: "-1.4px", lineHeight: 1.22, margin: "18px 0 0", color: "#16140f", textWrap: "balance" }}>{featured.title}</h2>
