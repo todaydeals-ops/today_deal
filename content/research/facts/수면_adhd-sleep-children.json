@@ -1,0 +1,122 @@
+{
+  "topic": "ADHD 아동의 수면 문제, 양방향 관계, 약물 영향",
+  "brand": "공통",
+  "article": "adhd-sleep-children",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "adhd-core-symptoms-definition",
+      "claim": "ADHD(주의력결핍과잉행동장애)의 3대 핵심 증상: (1)부주의 - 끈기 부족·집중 곤란·물건 자주 잃어버림, (2)과잉행동 - 부적절한 상황에서도 계속 움직임·팔다리 끊임없이 움직임, (3)충동성 - 사전 생각 없이 행동·차례 기다리기 어려움",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ADHD 진단 기준·가이드라인",
+      "source_url": "https://www.cnuh.com/board/B0146.cs?act=read&articleId=23630",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "ADHD 소아",
+        "분류": "진단 기준",
+        "시기": "일반",
+        "지역": "KR·국제"
+      }
+    },
+    {
+      "id": "adhd-comorbid-sleep-disorder",
+      "claim": "ADHD 아동의 동반 정신질환 및 수면장애: ADHD 아동은 학습장애, 우울장애, 불안장애, 수면장애 등 다른 질환을 함께 가지고 있을 가능성이 높으며, 이 중 수면장애가 30~50% 정도로 높은 비율을 차지",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ADHD 임상 특성 연구",
+      "source_url": "https://www.cnuh.com/board/B0146.cs?act=read&articleId=23630",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "ADHD 소아",
+        "분류": "동반 정신질환 유병률",
+        "시기": "일반",
+        "지역": "KR·국제"
+      },
+      "caution": "30~50% 범위는 연구마다 다름. 수면장애의 심각도·유형도 개인차 큼."
+    },
+    {
+      "id": "adhd-sleep-impairment-mechanism-bidirectional",
+      "claim": "ADHD와 수면의 양방향 관계: (1)ADHD 증상이 수면을 방해 - 과잉활동·충동성으로 야간 각성·입면 어려움 유발, (2)수면 부족이 ADHD 악화 - 수면 부족 시 주의력 저하·과잉행동 심화·충동 조절 능력 저하",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수면신경과학·ADHD 병인론",
+      "source_url": "https://www.cnuh.com/board/B0146.cs?act=read&articleId=23630",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "ADHD 소아",
+        "분류": "수면-ADHD 양방향 메커니즘",
+        "시기": "일반",
+        "지역": "국제"
+      },
+      "caution": "양방향 관계이므로 '어느 것이 원인'인지 판별 어려움. 개인마다 어느 방향이 우선 문제인지 다를 수 있음."
+    },
+    {
+      "id": "methylphenidate-sleep-side-effects",
+      "claim": "메틸페니데이트(정신자극제) 부작용: 두통, 위통, 불면증, 식욕저하, 심계항진, 불안, 구역 등. 특히 불면증은 약물의 각성 효과로 인해 발생하므로 가능한 한 아침 시간대 복용을 권장",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ADHD 약물 부작용·복약 지침",
+      "source_url": "https://www.cnuh.com/board/B0146.cs?act=read&articleId=23630",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "메틸페니데이트 복용 ADHD 소아",
+        "분류": "약물 부작용",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "부작용 빈도·심각도는 용량·개인 체질에 따라 다름. 아침 복용도 개인차에 따라 저녁까지 영향 줄 수 있으므로 의사 상담 필수."
+    },
+    {
+      "id": "atomoxetine-sleep-side-effects",
+      "claim": "아토목세틴(비-정신자극제) 부작용: 소화불량, 구역, 구토, 피로감. 메틸페니데이트보다 불면증이 적은 편이나 정신과적 증상(자살 생각·행동, 불안, 흥분) 주의 필요",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ADHD 약물 부작용·복약 지침",
+      "source_url": "https://www.cnuh.com/board/B0146.cs?act=read&articleId=23630",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "아토목세틴 복용 ADHD 소아",
+        "분류": "약물 부작용",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "자살 생각·행동은 특히 치료 초기 또는 용량 증가 시 주의 필요. 보호자의 정기적 모니터링 필수."
+    },
+    {
+      "id": "adhd-medication-timing-sleep-hygiene",
+      "claim": "ADHD 약물 복용 시 수면 부작용 최소화 전략: (1)정신자극제는 아침 시간대 규칙적 복용, (2)오후 4시 이후 복용 금지, (3)약물 복용과 동시에 규칙적 수면시간·취침 루틴 실시, (4)저녁 카페인 피하기",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ADHD 임상 관리 가이드라인",
+      "source_url": "https://www.cnuh.com/board/B0146.cs?act=read&articleId=23630",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "ADHD 약물 복용 소아",
+        "분류": "수면 관리 전략",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "복용 시간은 약물 반감기·개인 체질·학교 일정 등을 함께 고려해야 함. 의사 지시 따를 것."
+    },
+    {
+      "id": "adhd-comprehensive-treatment-approach",
+      "claim": "ADHD 치료의 최적 방법: 약물 요법 단독보다 약물 치료에 행동 치료·상담·놀이 치료 등 심리사회적 중재를 병행할 때 효과 증대. 수면 개선도 함께 추구하는 통합 접근 필요",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ADHD 임상 근거 기반 치료 연구",
+      "source_url": "https://www.cnuh.com/board/B0146.cs?act=read&articleId=23630",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "ADHD 소아",
+        "분류": "치료 접근법",
+        "시기": "일반",
+        "지역": "KR·국제"
+      },
+      "caution": "심리사회적 중재 효과는 치료자 역량·아동·가족의 참여도에 따라 달라짐. 약물 효과와 병행하되 '약물이 전부'라는 오해 피할 것."
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "topic": "취침 전 생각 폭주와 인지적 각성",
+  "brand": "수면과학",
+  "article": "racing-thoughts-bedtime",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "racing-thoughts-distinct-from-worry",
+      "claim": "취침 전 '생각 폭주(racing thoughts)'는 반추(rumination)나 걱정(worry)과는 다른 현상으로, 생각 폭주와 우울증 증상은 불면증 심각도와 연관되지만, 반추와 걱정은 그렇지 않다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect, 불면증 연구",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0010440X21000493",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "불면증 환자",
+        "category": "수면",
+        "line": "생각 폭주 vs 반추/걱정의 구분",
+        "years": "취침 전 및 야간",
+        "region": "임상"
+      },
+      "caution": "생각 폭주는 임상 환자 연구 기반이므로, 일반 인구에서의 빈도·심각도는 다를 수 있음",
+      "cautionSource": "ScienceDirect 연구"
+    },
+    {
+      "id": "racing-thoughts-sleep-onset-insomnia",
+      "claim": "생각 폭주는 저녁과 취침 전 시간대에 현저히 증가하며, 특히 수면 입면 불면증 환자에게서 두드러진다. 반면 수면 유지 불면증 환자에게서는 이런 증가가 관찰되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect, 불면증 연구",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0010440X21000493",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "불면증 환자",
+        "category": "수면",
+        "line": "불면증 유형별 생각 폭주 시간대 패턴",
+        "years": "저녁~취침",
+        "region": "임상"
+      },
+      "caution": "불면증 하위 유형에 따라 증상 프로필이 달라지므로, 집단 수준의 일반화에 주의 필요",
+      "cautionSource": "ScienceDirect 연구"
+    },
+    {
+      "id": "cognitive-hyperarousal-mechanism",
+      "claim": "취침 전 인지적 과각성(cognitive hyperarousal)은 뇌의 과도한 각성 상태로, 특히 전두엽·전방 측두엽·전방 대상회피(frontal, anterior temporal, anterior cingulate)에서 포도당 대사 증가로 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Physiological Reviews, 미국생리학회",
+      "source_url": "https://journals.physiology.org/doi/full/10.1152/physrev.00046.2019",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "불면증 환자",
+        "category": "수면",
+        "line": "인지적 과각성의 신경생리 메커니즘",
+        "years": "수면 중",
+        "region": "신경영상"
+      },
+      "caution": "뇌 영상은 임상 집단 연구이므로, 일반 불면증 또는 일시적 생각 폭주와의 대응 관계는 미분화",
+      "cautionSource": "Physiological Reviews"
+    },
+    {
+      "id": "rem-fragmentation-hyperarousal",
+      "claim": "불면증 환자의 REM 수면은 방대한 수의 각성 사건과 안구 운동으로 특징지어지며('불안정한 REM'), 이는 깨어있을 때 같은 생각-유사 야간 정신 활동(wake-like mental content)과 더 쉬운 회상을 초래한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Physiological Reviews, 뇌 영상 메타 분석",
+      "source_url": "https://journals.physiology.org/doi/full/10.1152/physrev.00046.2019",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "불면증 환자",
+        "category": "수면",
+        "line": "REM 수면 구조의 변화",
+        "years": "야간 수면",
+        "region": "수면실"
+      },
+      "caution": "REM 불안정화가 생각 폭주의 단독 원인인지, 결과인지, 양방향 연관인지는 아직 미분화",
+      "cautionSource": "Physiological Reviews"
+    },
+    {
+      "id": "cognitive-arousal-cyclothymic-anxiety",
+      "claim": "취침 전 인지적 생각 폭주는 순환기질(cyclothymic traits)과 불안과 특히 강한 관련이 있으며, 이는 과각성(hyperarousal)과 정서 조절 부전의 내재적 특성을 시사한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect, 불면증 연구",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0010440X21000493",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "불면증 환자",
+        "category": "수면",
+        "line": "생각 폭주와 기분 장애 기질의 연관",
+        "years": "수면 장애 진단 시점",
+        "region": "임상"
+      },
+      "caution": "불안과 기분 기질이 생각 폭주를 악화시키는 주요 요인으로 확인되었으므로, 불안 관리가 치료의 핵심",
+      "cautionSource": "ScienceDirect 연구"
+    },
+    {
+      "id": "cbt-insomnia-racing-thoughts",
+      "claim": "불면증 인지행동치료(CBT-I)는 야간 스트레스와 생각 폭주를 완화하고, 동시에 수면에 대한 부적응적 신념을 교정하는 방식으로 작용한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "불면증 치료 가이드라인",
+      "source_url": "https://journals.physiology.org/doi/full/10.1152/physrev.00046.2019",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "불면증 환자",
+        "category": "수면",
+        "line": "증거 기반 심리 치료",
+        "years": "4-8주 치료",
+        "region": "임상"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

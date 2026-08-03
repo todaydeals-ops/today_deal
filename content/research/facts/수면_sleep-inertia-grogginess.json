@@ -1,0 +1,119 @@
+{
+  "topic": "수면관성(sleep inertia)과 아침 멍함",
+  "brand": "수면과학",
+  "article": "sleep-inertia-grogginess",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sleep-inertia-definition",
+      "claim": "수면관성(sleep inertia)은 깨어났을 때 느끼는 멍하고 무거운 느낌, 혼동, 반응 속도 저하, 인지 기능 감소의 일시적 상태다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Doctor, Sleep Foundation 정의",
+      "source_url": "https://sleepdoctor.com/pages/health/sleep-inertia",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "일반 인구",
+        "category": "수면",
+        "line": "수면관성 현상",
+        "years": "각성 직후",
+        "region": "일반"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-inertia-duration-general",
+      "claim": "수면관성은 일반적으로 15-60분 지속되며, 깊은 수면(slow-wave sleep) 중간에 깨어나면 30-90분 이상 지속될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Doctor 임상 가이드",
+      "source_url": "https://sleepdoctor.com/pages/health/sleep-inertia",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "일반 성인",
+        "category": "수면",
+        "line": "수면관성 지속 시간",
+        "years": "각성 후 회복",
+        "region": "임상"
+      },
+      "caution": "깨어난 수면 단계와 시간에 따라 개인차 큼",
+      "cautionSource": "Sleep Doctor"
+    },
+    {
+      "id": "sleep-inertia-korean-study-16min",
+      "claim": "한국의 대규모 유병률 연구(n=2,355)에서 성인의 평균 아침 수면관성은 약 16분이며, 여성이 남성보다 약간 더 길게 보고했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC, 한국 전국 표본 연구",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12758700/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "한국 성인",
+        "category": "수면",
+        "line": "아침 수면관성 지속 시간",
+        "years": "각성 직후 자가 보고",
+        "region": "한국"
+      },
+      "caution": "자가 보고 단일 문항이므로 객관적 신경인지 검사보다 정밀도 낮을 수 있음",
+      "cautionSource": "NIH/PMC 연구 제한점"
+    },
+    {
+      "id": "anxiety-sleep-inertia-14min-excess",
+      "claim": "불안 장애를 가진 사람들은 불안이 없는 사람에 비해 아침 수면관성이 약 14분 더 길다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC, 한국 전국 표본 연구 (n=2,355)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12758700/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "한국 성인",
+        "category": "수면",
+        "line": "불안 장애와 수면관성의 연관",
+        "years": "아침 각성",
+        "region": "한국"
+      },
+      "caution": "불안이 수면관성의 가장 강력한 연관 요인이며, 관리 가능한 요인으로 제시됨",
+      "cautionSource": "NIH/PMC 연구"
+    },
+    {
+      "id": "sleep-inertia-associated-factors",
+      "claim": "수면관성을 악화시키는 요인은 저녁형 크로노타입, 불면증 증상, 지나친 주간 졸음이며, 완화 요인은 충분한 수면 시간과 아침형 크로노타입이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC, 한국 전국 표본 연구 (n=2,355)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12758700/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "한국 성인",
+        "category": "수면",
+        "line": "수면관성 관련 요인 분석",
+        "years": "일상 수면 패턴",
+        "region": "한국"
+      },
+      "caution": "연관성 관찰 결과이며, 인과성 입증은 아님. 수면 시간과 불안 관리로 수면관성 부분 개선 가능",
+      "cautionSource": "NIH/PMC 연구"
+    },
+    {
+      "id": "sleep-inertia-deep-sleep-stage-severity",
+      "claim": "깊은 수면(Stage 3) 중간에 깨어나면 가장 심하고 오래 지속되는 수면관성이 발생하며, 가벼운 수면 단계에서 깨어나면 15-30분 안에 사라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Doctor 임상 설명",
+      "source_url": "https://sleepdoctor.com/pages/health/sleep-inertia",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "일반 성인",
+        "category": "수면",
+        "line": "각성 시점의 수면 단계별 심각도",
+        "years": "단회 각성",
+        "region": "임상"
+      },
+      "caution": "타이밍 알람앱이 개인의 수면 주기를 정확히 예측하기는 어려워서, 실제 예측 효과는 제한적",
+      "cautionSource": "Sleep Doctor"
+    }
+  ]
+}

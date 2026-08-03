@@ -1,0 +1,113 @@
+{
+  "topic": "사건수면(몽유병·잠꼬대)의 원인, 위험도, 유전성",
+  "brand": "잠자리연구소",
+  "article": "자다가 걷고 말하는 몽유병과 잠꼬대",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "parasomnia-nrem-origin",
+      "claim": "몽유병과 야경증은 깊은 비렘 수면(NREM 3단계)에서 발생하며, 발생 중 의식이 몽롱하여 기억에 남지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 - 사건수면",
+      "source_url": "https://www.msdmanuals.com/ko/%ED%99%88/%EB%87%8C,-%EC%B2%99%EC%88%98,-%EC%8B%A0%EA%B2%BD-%EC%9E%A5%EC%95%A0/%EC%88%98%EB%A9%B4-%EC%9E%A5%EC%95%A0/%EC%82%AC%EA%B1%B4%EC%88%98%EB%A9%B4",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "몽유병 환자 전체",
+        "분류": "생리학",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "렘 수면이 아닌 비렘 수면 발생이므로 악몽과 다름",
+      "cautionSource": null
+    },
+    {
+      "id": "parasomnia-genetic-both-parents",
+      "claim": "부모가 모두 어렸을 때 몽유병이 있었으면 자녀의 발생 확률은 50~60%다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 - 사건수면",
+      "source_url": "https://www.msdmanuals.com/ko/%ED%99%88/%EB%87%8C,-%EC%B2%99%EC%88%98,-%EC%8B%A0%EA%B2%BD-%EC%9E%A5%EC%95%A0/%EC%88%98%EB%A9%B4-%EC%9E%A5%EC%95%A0/%EC%82%AC%EA%B1%B4%EC%88%98%EB%A9%B4",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "가족력 있는 소아",
+        "분류": "유전",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "유전 위험이 높으므로 미리 안전 환경 조성(가구 배치, 창문 잠금) 권장",
+      "cautionSource": null
+    },
+    {
+      "id": "parasomnia-genetic-one-parent",
+      "claim": "부모 중 한쪽만 어렸을 때 몽유병이 있었으면 자녀의 발생 확률은 30~40%다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 - 사건수면",
+      "source_url": "https://www.msdmanuals.com/ko/%ED%99%88/%EB%87%8C,-%EC%B2%99%EC%88%98,-%EC%8B%A0%EA%B2%BD-%EC%9E%A5%EC%95%A0/%EC%88%98%EB%A9%B4-%EC%9E%A5%EC%95%A0/%EC%82%AC%EA%B1%B4%EC%88%98%EB%A9%B4",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "편측 가족력 소아",
+        "분류": "유전",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "parasomnia-safety-injury-risk",
+      "claim": "몽유병 중 장애물에 부딪혀 신체 부상을 입을 수 있으며, 차량 운전 시 생명 위험에 이른다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 - 사건수면",
+      "source_url": "https://www.msdmanuals.com/ko/%ED%99%88/%EB%87%8C,-%EC%B2%99%EC%88%98,-%EC%8B%A0%EA%B2%BD-%EC%9E%A5%EC%95%A0/%EC%88%98%EB%A9%B4-%EC%9E%A5%EC%95%A0/%EC%82%AC%EA%B1%B4%EC%88%98%EB%A9%B4",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "몽유병 성인·청소년",
+        "분류": "안전",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "성인의 경우 취침 전 운전 금지, 야간 돌아다니는 패턴이 있으면 수면다원검사 권장",
+      "cautionSource": null
+    },
+    {
+      "id": "parasomnia-triggers-sleep-deprivation",
+      "claim": "몽유병의 주요 유발 요인은 수면 부족, 카페인 섭취(취침 수시간 전), 운동, 스트레스, 폐쇄성 수면무호흡증이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 - 사건수면",
+      "source_url": "https://www.msdmanuals.com/ko/%ED%99%88/%EB%87%8C,-%EC%B2%99%EC%88%98,-%EC%8B%A0%EA%B2%BD-%EC%9E%A5%EC%95%A0/%EC%88%98%EB%A9%B4-%EC%9E%A5%EC%95%A0/%EC%82%AC%EA%B1%B4%EC%88%98%EB%A9%B4",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "몽유병 소인 있는 사람",
+        "분류": "예방",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "유발 요인 회피가 재발 예방의 일차 전략",
+      "cautionSource": null
+    },
+    {
+      "id": "parasomnia-childhood-onset",
+      "claim": "몽유병과 야경증은 아동기 후반과 사춘기에 가장 흔하며, 대부분 성장하면서 자연 소멸한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 - 사건수면",
+      "source_url": "https://www.msdmanuals.com/ko/%ED%99%88/%EB%87%8C,-%EC%B2%99%EC%88%98,-%EC%8B%A0%EA%B2%BD-%EC%9E%A5%EC%95%A0/%EC%88%98%EB%A9%B4-%EC%9E%A5%EC%95%A0/%EC%82%AC%EA%B1%B4%EC%88%98%EB%A9%B4",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "소아·청소년",
+        "분류": "발달",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "성인에서의 발생이나 악화는 기저 수면장애(수면무호흡) 평가 필요",
+      "cautionSource": null
+    }
+  ]
+}

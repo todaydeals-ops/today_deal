@@ -1,0 +1,209 @@
+{
+  "topic": "임신부 수면무호흡증(Obstructive Sleep Apnea in Pregnancy)",
+  "brand": "공통",
+  "article": "pregnancy-sleep-apnea",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "pregnancy-osa-prevalence-15-percent-global",
+      "claim": "임신 중 폐쇄성 수면무호흡(OSA)의 전 세계 평균 유병율은 15%(95% CI 12-18%)로, 지역별로 유럽 5%에서 미주 20% 범위에서 변동한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Springer Nature & 메타분석",
+      "source_url": "https://link.springer.com/article/10.1007/s11325-018-1714-7",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "OSA 유병율",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "유병율은 비만도, 임신 나이, 폐경 전후 상태에 따라 크게 변동한다.",
+      "cautionSource": "메타분석 신뢰구간"
+    },
+    {
+      "id": "pregnancy-osa-by-trimester-3-6-to-8-3-percent",
+      "claim": "임신 중 OSA는 임신 진행에 따라 증가하며, 임신 초기 3.6%에서 중기 8.3%까지 상향된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "메타분석 & 종단 데이터",
+      "source_url": "https://link.springer.com/article/10.1007/s11325-018-1714-7",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "OSA 임신 진행",
+        "years": "임신 0-28주",
+        "region": "글로벌"
+      },
+      "caution": "3분기 데이터는 더 많은 연구가 필요하지만, 임신 후반부로 갈수록 호흡 역학의 변화로 OSA 위험이 높아진다.",
+      "cautionSource": "중앙값 분석"
+    },
+    {
+      "id": "pregnancy-osa-preeclampsia-risk-2-22-fold",
+      "claim": "임신 중 OSA는 자간전증(preeclampsia) 위험을 약 2.22배 증가시킨다(95% CI 1.94-2.54).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "메타분석 & 산과 결과 연구",
+      "source_url": "https://link.springer.com/article/10.1007/s11325-018-1714-7",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "OSA와 자간전증",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "자간전증은 임신부와 태아 모두에게 치명적 합병증이 될 수 있으므로, OSA 증상이 있으면 의료진 상담이 필수다.",
+      "cautionSource": "산과 임상 경고"
+    },
+    {
+      "id": "pregnancy-osa-gestational-hypertension-1-97-fold",
+      "claim": "임신 중 OSA는 임신성 고혈압(gestational hypertension) 위험을 약 1.97배 증가시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "메타분석 & 혈압 연구",
+      "source_url": "https://link.springer.com/article/10.1007/s11325-018-1714-7",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "OSA와 임신성 고혈압",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "임신성 고혈압은 자간전증으로 진행할 수 있으므로 조기 발견과 모니터링이 중요하다.",
+      "cautionSource": "산과 임상 가이드"
+    },
+    {
+      "id": "pregnancy-osa-preterm-birth-1-62-fold",
+      "claim": "임신 중 OSA는 조산(preterm birth) 위험을 약 1.62배 증가시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "메타분석 & 신생아 결과 연구",
+      "source_url": "https://link.springer.com/article/10.1007/s11325-018-1714-7",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "OSA와 조산",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "조산은 신생아의 호흡곤란, 패혈증 등 심각한 합병증 위험을 높인다.",
+      "cautionSource": "신생아학 위험 평가"
+    },
+    {
+      "id": "pregnancy-osa-nicu-admission-1-28-fold",
+      "claim": "임신 중 OSA는 신생아 중환자실(NICU) 입원 위험을 약 1.28배 증가시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "메타분석 & 신생아 입원 데이터",
+      "source_url": "https://link.springer.com/article/10.1007/s11325-018-1714-7",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "OSA와 NICU",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "NICU 입원은 신생아와 가족에 심리적·경제적 부담을 가져온다.",
+      "cautionSource": "신생아 임상 데이터"
+    },
+    {
+      "id": "pregnancy-osa-intrauterine-growth-restriction-risk",
+      "claim": "임신 중 OSA는 자궁 내 성장 제한(intrauterine growth restriction, IUGR) 위험과 연관되어 있으며, 태아의 산소 부족이 주요 메커니즘으로 추정된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "메타분석 & 태아 결과 연구",
+      "source_url": "https://link.springer.com/article/10.1007/s11325-018-1714-7",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "OSA와 태아 성장",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "IUGR은 태아의 신경발달 지연과 출생 후 건강 문제의 위험을 높인다.",
+      "cautionSource": "산부인과 태아 의학"
+    },
+    {
+      "id": "pregnancy-osa-estrogen-nasal-edema-upper-airway",
+      "claim": "임신 중 에스트로겐 증가는 비인두 부종과 비염을 유발하여 상기도를 협착시키고 OSA 위험을 증가시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국 의료 문헌 & 호르몬 생리학",
+      "source_url": "https://schmc.ac.kr/bucheon/selectBbsNttView.do?key=1006&bbsNo=203&nttNo=251099&searchCnd=all&pageIndex=10",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "호르몬과 상기도",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "이 현상은 임신 초기부터 나타나므로, 코골이나 코막힘이 새로 생기면 의료진 평가가 필요하다.",
+      "cautionSource": "이비인후과 병태생리"
+    },
+    {
+      "id": "pregnancy-osa-cpap-treatment-blood-pressure-preeclampsia-reduction",
+      "claim": "경도~중등도 OSA를 가진 고위험 임산부에 대한 CPAP 치료는 이완기 혈압을 낮추고 자간전증 발생률을 감소시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "메타분석 & 임상시험",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10294320/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "OSA 치료 효과",
+        "years": "고위험 임신",
+        "region": "글로벌"
+      },
+      "caution": "CPAP는 임신 중 안전하며, 부작용 위험이 매우 낮아 의료진이 권장하면 치료를 고려할 가치가 있다. 의료진 상담 필수.",
+      "cautionSource": "임상시험 안전 데이터"
+    },
+    {
+      "id": "pregnancy-osa-diagnosis-polysomnography-required",
+      "claim": "임신 중 OSA의 최종 진단은 수면다원검사(polysomnography)를 통해 이루어지며, 코골이나 수면 중 호흡 불규칙이 의심되면 검사가 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국 의료 지침",
+      "source_url": "https://schmc.ac.kr/bucheon/selectBbsNttView.do?key=1006&bbsNo=203&nttNo=251099&searchCnd=all&pageIndex=10",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "OSA 진단",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "자가진단은 불가능하며, 배우자나 의료진의 관찰 후 수면 검사를 받아야 한다. 임신 중 수면다원검사는 안전하다.",
+      "cautionSource": "수면의학 진단 표준"
+    },
+    {
+      "id": "pregnancy-osa-treatment-mild-positional-therapy-sleep-hygiene",
+      "claim": "경도의 임신부 OSA는 옆으로 자는 자세(좌측와위) 치료와 수면 습관 개선으로 호전될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국 의료 지침",
+      "source_url": "https://schmc.ac.kr/bucheon/selectBbsNttView.do?key=1006&bbsNo=203&nttNo=251099&searchCnd=all&pageIndex=10",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "경도 OSA 치료",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "좌측와위는 태아 혈류와 모체 혈압 모두에 최적이므로, OSA 관리와 태아 안전을 동시에 충족한다.",
+      "cautionSource": "산부인과 치료 권장사항"
+    }
+  ]
+}

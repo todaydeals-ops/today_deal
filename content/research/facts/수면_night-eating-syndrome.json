@@ -1,0 +1,155 @@
+{
+  "topic": "야식증후군과 수면의 관계",
+  "brand": "수면과학",
+  "article": "night-eating-syndrome",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "nes-definition-diagnostic",
+      "claim": "야식증후군(Night Eating Syndrome, NES)은 식사 후에 하루 칼로리의 25% 이상을 밤에 섭취하고, 저녁/야간 식사 에피소드에 대한 기억과 인식이 있으며, 임상적 고통이나 일상 기능 저해를 초래하는 진단 가능한 섭식 장애이자 순환생리 장애다(DSM-V 307.59).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC, 임상 사례 보고",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10479722/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "환자",
+        "category": "수면",
+        "line": "야식증후군의 임상 정의",
+        "years": "진단 시점",
+        "region": "임상"
+      },
+      "caution": "수면 중 섭식 장애(sleep-related eating disorder)와는 구별되며, NES 환자는 야간 섭식을 기억하고 인식함",
+      "cautionSource": "NIH/PMC 진단 기준"
+    },
+    {
+      "id": "nes-original-description-1955",
+      "claim": "야식증후군은 1955년 처음 기술되었으며, 아침 식욕부진(morning anorexia), 야간 과식(nocturnal hyperphagia, 하루 칼로리 25% 야간 섭취), 불면증으로 특징지어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation, 역사 기술",
+      "source_url": "https://www.sleepfoundation.org/nutrition/night-eating-syndrome",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "환자",
+        "category": "수면",
+        "line": "증후군의 역사적 처음 기술",
+        "years": "1955년",
+        "region": "의학"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "nes-circadian-hormone-disruption",
+      "claim": "야식증후군은 순환생리 리듬의 교란으로, 멜라토닌(melatonin)의 야간 상승이 현저히 둔화되고, 렙틴(leptin)이 밤에 증가하지 않으며, 코르티솔(cortisol)이 24시간 내내 증가된 상태를 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation 호르몬 설명",
+      "source_url": "https://www.sleepfoundation.org/nutrition/night-eating-syndrome",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "환자",
+        "category": "수면",
+        "line": "순환생리 호르몬의 이상",
+        "years": "24시간",
+        "region": "임상"
+      },
+      "caution": "호르몬 측정은 소규모 임상 표본에서 나온 것이므로, 모든 NES 환자에게 같은 수준으로 나타나는지는 미확인",
+      "cautionSource": "Sleep Foundation"
+    },
+    {
+      "id": "melatonin-blunting-sleep-maintenance",
+      "claim": "야식증후군 환자의 멜라토닌 야간 상승 감소는 수면 유지 불면증을 초래하는 것으로 시사되며, 렙틴 억제 실패는 야간 식욕 억제 불능을 설명한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation 호르몬 기전",
+      "source_url": "https://www.sleepfoundation.org/nutrition/night-eating-syndrome",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "환자",
+        "category": "수면",
+        "line": "호르몬 이상과 증상의 기전",
+        "years": "야간",
+        "region": "임상"
+      },
+      "caution": "기전 제안은 관찰 근거이며, 인과성 입증을 위해서는 추가 연구 필요",
+      "cautionSource": "Sleep Foundation"
+    },
+    {
+      "id": "nes-insomnia-bidirectional",
+      "claim": "야식증후군과 불면증은 양방향 관계로, 수면 곤란이 야간 섭식으로 이어지고, 야간 섭식은 다시 수면을 더욱 분절(fragmentation)시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation, Cleveland Clinic",
+      "source_url": "https://www.sleepfoundation.org/nutrition/night-eating-syndrome",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "환자",
+        "category": "수면",
+        "line": "불면증과의 악순환 관계",
+        "years": "장기 반복",
+        "region": "임상"
+      },
+      "caution": "이 악순환을 끊기 위해서는 수면 개선과 섭식 행동 수정을 동시에 다루어야 함",
+      "cautionSource": "Sleep Foundation"
+    },
+    {
+      "id": "nes-prevalence-us",
+      "claim": "야식증후군은 미국 인구의 약 1.5%(약 500만 명)에 영향을 미친다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic",
+      "source_url": "https://my.clevelandclinic.org/health/diseases/21731-night-eating-syndrome-nes",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "성인",
+        "category": "수면",
+        "line": "야식증후군 유병률",
+        "years": "현재",
+        "region": "미국"
+      },
+      "caution": "유병률은 진단 기준 적용에 따라 다를 수 있으며, 비진단 야간 과식의 실제 빈도는 더 높을 것으로 예상",
+      "cautionSource": "Cleveland Clinic"
+    },
+    {
+      "id": "nes-treatment-ssri-cbt-light",
+      "claim": "야식증후군의 치료에는 선택적 세로토닌 재흡수 억제제(SSRI), 인지행동치료(CBT), 광치료(light therapy)를 통한 순환생리 재설정, 멜라토닌 보충제, 진행적 근육이완, 체중 관리, 최면치료가 포함된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic 치료 지침",
+      "source_url": "https://my.clevelandclinic.org/health/diseases/21731-night-eating-syndrome-nes",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "환자",
+        "category": "수면",
+        "line": "다층적 치료 접근",
+        "years": "장기 치료",
+        "region": "임상"
+      },
+      "caution": "개별 환자의 기저 원인(불안·우울·순환생리 기질)에 따라 치료 효과와 우선순위가 달라짐",
+      "cautionSource": "Cleveland Clinic"
+    },
+    {
+      "id": "nes-diagnostic-criteria-full",
+      "claim": "야식증후군의 진단 기준은 ①저녁 식사 후 또는 밤 중 강한 식욕, ②수면 입면 및 수면 유지 불면증, ③밤에 먹어야 다시 잠들 수 있다는 신념, ④저녁 시간대에 우울 기분이 악화되는 4가지를 포함한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation 진단 기준",
+      "source_url": "https://www.sleepfoundation.org/nutrition/night-eating-syndrome",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "환자",
+        "category": "수면",
+        "line": "진단 기준 전문",
+        "years": "진단 평가",
+        "region": "임상"
+      },
+      "caution": "이 기준 중 최소 3가지가 있어야 함. 자가 진단이 아니라 전문가 평가 필요",
+      "cautionSource": "Sleep Foundation / DSM-V"
+    }
+  ]
+}

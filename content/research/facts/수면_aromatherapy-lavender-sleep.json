@@ -1,0 +1,96 @@
+{
+  "topic": "라벤더 에센셜 오일과 아로마테라피의 수면 개선 효과 및 근거 수준",
+  "brand": "잠자리연구소",
+  "article": "라벤더 향이 잠에 도움될까",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "lavender-ema-regulatory-approval",
+      "claim": "유럽 의약품청(EMA)은 라벤더 차를 비롯한 라벤더 꽃 제제가 피로와 가벼운 스트레스 증상 완화, 수면 개선에 사용될 수 있음을 인정했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "유럽 의약품청(EMA) 규제 승인",
+      "source_url": null,
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "일반인(가벼운 스트레스)",
+        "분류": "규제승인",
+        "시기": "현재",
+        "지역": "유럽"
+      },
+      "caution": "한국에서는 식품 또는 건강보조식품으로만 판매되므로, 의약품으로 인정되지 않음",
+      "cautionSource": "한국 식약처 기준"
+    },
+    {
+      "id": "lavender-capsule-rct-ijpcp",
+      "claim": "International Journal of Psychiatry in Clinical Practice에 발표된 임상시험에서 라벤더 에센셜 오일 80mg 캡슐이 긴장, 불면증, 우울감을 유의미하게 완화시켰으며 부작용은 보고되지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "International Journal of Psychiatry in Clinical Practice - Lavender capsule RCT",
+      "source_url": null,
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "긴장·불면·가벼운 우울 성인",
+        "분류": "임상시험(RCT)",
+        "시기": "2010년대",
+        "지역": "국제 다기관"
+      },
+      "caution": "표본 크기, 추적 기간, 대조약 종류 등은 원문 확인 필수",
+      "cautionSource": "원문 논문 필요"
+    },
+    {
+      "id": "lavender-oil-southampton-study-sleep-quality",
+      "claim": "영국 사우샘프턴 대학 연구에서 라벤더 오일 사용자가 미사용자 대비 수면질이 20% 향상되었다고 보고했다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "사우샘프턴 대학 연구",
+      "source_url": null,
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "일반인(건강한 성인)",
+        "분류": "관찰 연구",
+        "시기": "2010년대",
+        "지역": "영국"
+      },
+      "caution": "20% 수치는 주관적 수면질 평가(PSQI 점수 변화)로 해석하므로, 객관적 수면 구조(수면다원검사) 개선과는 다를 수 있음. 또한 위약 효과와 개인차가 크므로 신중히 제시해야 함.",
+      "cautionSource": "원문 논문 필요 (방법론 검토)"
+    },
+    {
+      "id": "lavender-active-compounds-linalool",
+      "claim": "라벤더 에센셜 오일의 주요 활성 성분은 리날올(linalool)과 리날릴 아세테이트(linalyl acetate)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "라벤더 오일 화학 성분 분석",
+      "source_url": null,
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "라벤더 에센셜 오일 전체",
+        "분류": "성분학",
+        "시기": "현재",
+        "지역": "국제"
+      },
+      "caution": "리날올의 진정 메커니즘은 완전히 규명되지 않음. GABA 수용체 조절 가설이 있으나 인간 대상 증명이 필수.",
+      "cautionSource": null
+    },
+    {
+      "id": "lavender-sleep-rct-evidence-level",
+      "claim": "라벤더의 수면 개선 효과는 RCT 근거가 존재하나, 현재까지 대규모 다기관 메타분석이 부족하여 권고 수준은 '조건부' 또는 '제한적 근거'로 평가된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임상 근거 수준 평가 기준",
+      "source_url": null,
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "수면장애 성인",
+        "분류": "근거 평가",
+        "시기": "현재",
+        "지역": "국제"
+      },
+      "caution": "집필 시 '근거가 있으나 확실하지 않으니 먼저 시도해보기 좋은 선택지'로 안내. 의약품을 대체하는 것으로 제시하면 안 됨.",
+      "cautionSource": "GRADE 근거 수준 기준"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "topic": "'8시간 수면' 통념의 과학적 검증과 개인별 필요 수면량",
+  "brand": "잠자리연구소",
+  "article": "sleep-8hour-myth",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "8hour-myth-origin",
+      "claim": "8시간 수면 규칙은 산업혁명 시대의 '8시간 노동, 8시간 여가, 8시간 수면' 이념에서 유래했으며, 과학적 필수량이 아니라 평균값이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Quartz (historical analysis)",
+      "source_url": "https://qz.com/quartzy/1476218/how-much-sleep-do-i-need-the-eight-hour-rule-is-a-myth",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "역사·통념",
+        "시기": "산업혁명 이후",
+        "지역": "국제"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "recommended-sleep-hours-adults",
+      "claim": "미국 국립수면재단(NSF)과 미국수면의학회(AASM)는 성인(18-64세)에게 7-9시간의 야간 수면을 권장하며, 미국질병통제예방센터(CDC)는 7시간 이상을 권고한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "National Sleep Foundation, American Academy of Sleep Medicine, CDC",
+      "source_url": "https://www.thensf.org/how-many-hours-of-sleep-do-you-really-need/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인(18-64세)",
+        "분류": "공식 권고",
+        "시기": "현재",
+        "지역": "북미"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "sleep-needs-by-age",
+      "claim": "수면 필요량은 연령별로 크게 차이난다: 신생아 14-17시간, 유아(4-11개월) 12-15시간, 유아(1-2세) 11-14시간, 미취학(3-5세) 10-13시간, 학령기(6-13세) 9-11시간, 청소년(14-17세) 8-10시간, 성인(18-64세) 7-9시간, 고령(65세+) 7-8시간이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "National Sleep Foundation",
+      "source_url": "https://www.thensf.org/how-many-hours-of-sleep-do-you-really-need/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "전연령(신생아-고령)",
+        "분류": "연령별 수면량",
+        "시기": "현재",
+        "지역": "북미"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "individual-variation-genetics",
+      "claim": "개인이 필요한 수면량은 유전, 나이, 건강 상태, 환경·행동 요인에 의해 결정되며, 정상 수면 필요량의 개인 차이와 일주기 리듬은 유전적으로 결정될 가능성이 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CDC, National Sleep Foundation",
+      "source_url": "https://www.cdc.gov/sleep/about/index.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "개인 차이·유전",
+        "시기": "현재",
+        "지역": "국제"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "short-sleepers-long-sleepers",
+      "claim": "일부 사람은 6시간 미만의 '단수면자(short sleeper)'이고, 다른 사람은 9시간 이상이 필요한 '장수면자(long sleeper)'다. 이는 정상적인 개인 차이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "National Sleep Foundation, Quartz",
+      "source_url": "https://qz.com/quartzy/1476218/how-much-sleep-do-i-need-the-eight-hour-rule-is-a-myth",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "개인 변이",
+        "시기": "현재",
+        "지역": "국제"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "sleep-quality-indicator",
+      "claim": "8시간을 자지 못해도 안정적인 에너지, 일중 졸음 없음, 집중력 유지가 있으면 개인에게는 충분한 수면이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "National Sleep Foundation",
+      "source_url": "https://www.thensf.org/how-many-hours-of-sleep-do-you-really-need/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "수면질 평가",
+        "시기": "현재",
+        "지역": "북미"
+      },
+      "caution": "객관적 수면량보다 주간 기능이 더 신뢰성 있는 지표다.",
+      "cautionSource": "National Sleep Foundation"
+    },
+    {
+      "id": "short-sleep-health-risks",
+      "claim": "7시간 미만의 수면은 비만, 당뇨병, 고혈압, 심질환, 뇌졸중, 우울증, 조기 사망 위험 증가와 연관되며, 면역 기능 약화, 통증 증가, 주간 집중력·수행력 저하, 실수·사고 증가를 초래한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Academy of Sleep Medicine, CDC, Journal research",
+      "source_url": "https://psychiatryonline.org/doi/10.1176/appi.pn.2015.9b12",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "건강 결과",
+        "시기": "복수 장기 연구",
+        "지역": "국제"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "optimal-sleep-duration-u-shaped",
+      "claim": "수면 지속시간과 건강 결과 사이에 U자형 관계가 존재한다: 7-8시간이 대사증후군 발병과 심대사 위험이 최소이고, 7시간 미만이거나 9시간 이상이면 위험이 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Clinical Sleep Medicine - Metabolic Syndrome Study (PMC3764138)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3764138/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "대사증후군·심혈관 위험",
+        "시기": "연구 기반",
+        "지역": "국제"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "us-adults-sleep-deprivation",
+      "claim": "미국 성인 3분의 1 이상이 평균적으로 7시간 미만의 수면을 보고한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CDC",
+      "source_url": "https://www.cdc.gov/sleep/about/index.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "미국 성인",
+        "분류": "역학",
+        "시기": "현재",
+        "지역": "미국"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "8hour-rigid-rule-harmful",
+      "claim": "8시간 고집 자체가 해로울 수 있다: 필요한 시간이 7시간인 사람이 억지로 8시간을 자려 노력하면 불면증 증상이 나타날 수 있고, 9시간 이상이 필요한 사람이 8시간으로 제한되면 수면 부족 영향을 받는다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Sleep medicine clinician reports and patient forums",
+      "source_url": "https://www.sleepfoundation.org/dreams/lucid-dreams",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "개인 최적화",
+        "시기": "현재",
+        "지역": "국제"
+      },
+      "caution": "8시간이 필수가 아닌 이상, 개인의 최적 시간을 찾는 것이 중요하다. 체계적 실험(주말 제약 없이 자연 수면, 기상 후 피로도 평가)으로 필요량을 파악할 수 있다.",
+      "cautionSource": "Sleep medicine expertise"
+    }
+  ]
+}

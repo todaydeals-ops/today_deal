@@ -1,0 +1,137 @@
+{
+  "topic": "낮잠 문화와 시에스타의 생산성 효과",
+  "brand": "수면과학",
+  "article": "nap-culture-siesta",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "biphasic-sleep-historical-pattern",
+      "claim": "양분(biphasic) 수면은 산업화 이전 전 세계 다양한 문화에서 널리 관찰된 패턴으로, 15-20세기에 걸쳐 500개 이상의 '첫 수면(first sleep)'과 '둘째 수면(second sleep)' 언급이 의료 문헌, 일기, 법정 기록, 문학에 남아 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation, 역사 자료",
+      "source_url": "https://www.sleepfoundation.org/how-sleep-works/biphasic-sleep",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "산업화 전 인구",
+        "category": "수면",
+        "line": "양분 수면 문화적 패턴의 역사적 증거",
+        "years": "15-20세기",
+        "region": "전 세계"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "siesta-mediterranean-structure",
+      "claim": "시에스타(siesta)는 지중해·라틴아메리카 전통으로, 전형적으로 야간 수면 5-6시간과 점심 후 하루 중간의 낮잠 60-90분으로 구성된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Doctor, Sleep Foundation",
+      "source_url": "https://sleepdoctor.com/pages/health/biphasic-sleep",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "지중해·라틴아메리카 문화권",
+        "category": "수면",
+        "line": "시에스타의 전형적 구조",
+        "years": "정오 전후",
+        "region": "지중해, 라틴아메리카"
+      },
+      "caution": "현대 지중해 국가들도 표준화된 근무 시간으로 인해 시에스타 관행이 축소되는 중",
+      "cautionSource": "Sleep Doctor"
+    },
+    {
+      "id": "global-afternoon-dip-circadian",
+      "claim": "오후 2-4시 사이에 에너지와 인지 수행능력의 자연스러운 저하는 식사 섭취와 무관하게 모든 인구에서 관찰되는 순환생리적 현상이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Doctor 순환생리 설명",
+      "source_url": "https://sleepdoctor.com/pages/health/biphasic-sleep",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "일반 성인",
+        "category": "수면",
+        "line": "하루 중 오후의 서주기 각성 저하",
+        "years": "오후 2-4시",
+        "region": "일반"
+      },
+      "caution": "개인 크로노타입과 전일 활동량에 따라 저하의 시기와 심각도가 변할 수 있음",
+      "cautionSource": "Sleep Doctor"
+    },
+    {
+      "id": "nasa-26min-nap-alertness-54percent",
+      "claim": "NASA 연구에서 26분의 낮잠이 조종사의 경각성을 54% 향상시키고 수행 능력을 34% 개선시켰다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation, NASA 연구 인용",
+      "source_url": "https://www.sleepfoundation.org/how-sleep-works/biphasic-sleep",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "항공 조종사",
+        "category": "수면",
+        "line": "초단시간 낮잠의 각성 및 수행 효과",
+        "years": "26분 단회",
+        "region": "항공"
+      },
+      "caution": "이 수치는 항공 운영 환경의 매우 구체적 시나리오이며, 일반 업무자에게의 대응 효과는 다를 수 있음",
+      "cautionSource": "NASA 연구 원문 인용(Sleep Foundation)"
+    },
+    {
+      "id": "midday-nap-cognitive-improvement",
+      "claim": "오후 초 낮잠을 규칙적으로 취하는 사람들은 인지 수행능력에서 현저한 개선을 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Doctor 분석",
+      "source_url": "https://sleepdoctor.com/pages/health/biphasic-sleep",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "일반 성인",
+        "category": "수면",
+        "line": "낮잠과 인지 수행의 연관",
+        "years": "오후 초",
+        "region": "일반"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "biphasic-sleep-modern-adoption-concerns",
+      "claim": "양분 수면을 실행하는 사람들은 단상(monophasic) 수면자에 비해 수면의 질이 더 낮고 주간 졸음이 더 많으며, 장시간 낮잠은 각성 시 수면관성을 유발할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Doctor 현대 연구 검토",
+      "source_url": "https://sleepdoctor.com/pages/health/biphasic-sleep",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "양분 수면 시도자",
+        "category": "수면",
+        "line": "현대 양분 수면의 부작용",
+        "years": "일상적 실행",
+        "region": "현대"
+      },
+      "caution": "양분 수면의 성공 여부는 개인 크로노타입, 일정의 유연성, 총 24시간 수면 시간에 달려 있음",
+      "cautionSource": "Sleep Doctor"
+    },
+    {
+      "id": "biphasic-sleep-evidence-insufficient",
+      "claim": "양분 수면이 단상 수면보다 자연스럽거나 건강에 더 나은지를 판정할 충분한 증거는 없으며, 일관성과 24시간 총 수면 시간(7-9시간) 유지가 가장 중요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Doctor 종합 평가",
+      "source_url": "https://sleepdoctor.com/pages/health/biphasic-sleep",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "일반 인구",
+        "category": "수면",
+        "line": "양분 vs 단상 수면의 건강 효과 비교",
+        "years": "장기 생활 패턴",
+        "region": "일반"
+      },
+      "caution": "개인의 필요와 생활 일정에 맞게 조정 필요",
+      "cautionSource": "Sleep Doctor"
+    }
+  ]
+}

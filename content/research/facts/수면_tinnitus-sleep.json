@@ -1,0 +1,163 @@
+{
+  "topic": "이명과 수면",
+  "brand": "수면",
+  "article": "수면_tinnitus-sleep",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "tinnitus-prevalence-adult-population",
+      "claim": "성인 중 약 5%는 이명 증상이 있으며, 그 중 1%는 수면장애, 집중력 저하, 우울증 등의 이차 증상으로 생활에 심각한 장애를 경험한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "이비인후과 임상 데이터·질병관리청",
+      "source_url": "https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=5706",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "유병률·심각도",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "tinnitus-sleep-disruption-mechanism",
+      "claim": "이명이 수면을 방해하는 이유는 조용한 수면 환경에서 이명음이 더 크게 들리고, 음향 자극이 뇌의 각성 시스템을 활성화하기 때문이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "이비인후과·신경과학 연구",
+      "source_url": "https://schmc.ac.kr/gumi/selectBbsNttView.do?key=1082&bbsNo=208&nttNo=255799&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=5",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "이명 환자",
+        "분류": "수면 방해 기전",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "tinnitus-attention-focus-worsens-perception",
+      "claim": "이명에 신경을 집중하고 생각할수록 음향 인지가 악화되므로, 신경을 쓰지 않도록 마음의 전환이 증상 완화의 핵심이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "이명 심리 치료 연구",
+      "source_url": "https://www.koreahealthlog.com/news/articleView.html?idxno=44894",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "이명 환자",
+        "분류": "심리적 요인",
+        "시기": "일般",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "tinnitus-sound-masking-white-noise",
+      "claim": "백색소음이나 환경음(창문 바람음, 빗소리, 새소리)을 깔아주면 이명을 상대적으로 덜 느끼게 하여 수면 진입을 돕는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "이비인후과 치료 지침",
+      "source_url": "https://www.koreahealthlog.com/news/articleView.html?idxno=44894",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "이명 환자",
+        "分류": "음향 치료",
+        "시기": "일般",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "tinnitus-asmr-effective-for-some",
+      "claim": "일부 이명 환자들은 ASMR(자율감각 경락 반응) 음향 콘텐츠가 마음을 진정시켜 수면에 도움이 된다고 보고한다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "이명 환자 자조 커뮤니티·임상 관찰",
+      "source_url": "https://www.koreahealthlog.com/news/articleView.html?idxno=44894",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "이명 환자 중 일부",
+        "분류": "음향 치료",
+        "시기": "일般",
+        "지역": "KR"
+      },
+      "caution": "ASMR의 효과는 개인차가 크며, 일부에게는 오히려 방해가 될 수 있으므로 자신에게 맞는 소리를 찾아야 함"
+    },
+    {
+      "id": "tinnitus-stress-sleep-bidirectional",
+      "claim": "이명으로 인한 스트레스가 수면을 방해하고, 수면 부족이 다시 이명을 악화시키는 악순환 구조가 형성된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "이비인후과·수면의학 임상 연구",
+      "source_url": "https://www.kjorl.org/journal/view.php?number=227",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "이명 환자",
+        "分類": "양방향 관계",
+        "시기": "일般",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "tinnitus-sleep-hygiene-stress-management",
+      "claim": "규칙적인 수면 시간, 조용하면서도 백색소음이 깔린 수면 환경, 카페인·알코올 제한, 스트레스 관리가 이명 환자의 수면 개선에 효과적이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "이비인후과 임상 권장사항",
+      "source_url": "https://schmc.ac.kr/gumi/selectBbsNttView.do?key=1082&bbsNo=208&nttNo=255799&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=5",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "이명 환자",
+        "分類": "수면 위생 및 관리",
+        "시기": "일般",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "tinnitus-retraining-therapy-trt",
+      "claim": "이명 재훈련 치료(Tinnitus Retraining Therapy, TRT)는 이명에 대한 신경계의 자동 반응을 줄이고 적응시키는 최신 치료법으로, 대부분의 환자가 호전을 보인다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "이비인후과 임상 연구",
+      "source_url": "https://www.korl.or.kr/info/sub01_15.php",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "만성 이명 환자",
+        "分類": "전문 치료법",
+        "시기": "일般",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "tinnitus-hearing-aid-masking-benefit",
+      "claim": "청력 손실이 동반된 이명 환자는 보청기 착용이 청력을 보정하면서 동시에 음향 차폐(masking) 효과를 제공하여 수면 개선에 도움이 된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "이비인후과·청각학 임상 데이터",
+      "source_url": "https://www.resound.com/ko-kr/hearing-loss/tinnitus/treatment",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "청력 손실 동반 이명 환자",
+        "分類": "보청기 치료",
+        "시기": "일般",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "tinnitus-red-flag-sleep-depression-consultation",
+      "claim": "이명으로 인한 수면 방해가 2주 이상 지속되거나 우울증 증상(무기력, 절망감)이 동반되면, 이비인후과와 정신건강의학과 협진이 필요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "이비인후과·정신건강의학 진료 지침",
+      "source_url": "https://www.kjorl.org/journal/view.php?number=227",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "증상자",
+        "分類": "진료 신호",
+        "시기": "일般",
+        "지역": "KR"
+      },
+      "caution": "이명 관련 우울증은 악순환을 악화시킬 수 있으므로, 조기 개입과 통합 치료가 예후 개선에 중요"
+    }
+  ]
+}

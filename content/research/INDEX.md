@@ -3,16 +3,42 @@
 > 자동 생성 파일. 직접 수정하지 마세요. `node scripts/research-index.mjs`로 갱신합니다.
 > **기계적 대조 기준은 이 파일이 아니라 `facts/*.json` 원본입니다.**
 
-생성: 2026-08-03 · 조사 257건 · 팩트 3335개
+생성: 2026-08-03 · 조사 287건 · 팩트 3579개
 
 ## ⚠️ 무결성 경고
 
-### cautionSource 누락 (caution에 수치·연식·코드가 있는데 근거 없음) (1)
+### 중복 id (1)
 
+- sleep-inertia-definition (수면_power-nap-cognition.json ↔ 수면_sleep-inertia-grogginess.json)
+
+### cautionSource 누락 (caution에 수치·연식·코드가 있는데 근거 없음) (9)
+
+- adhd-comorbid-sleep-disorder (수면_adhd-sleep-children.json)
+- nasal-congestion-sleep-quality-deterioration (수면_nasal-congestion-sleep.json)
+- pacifier-sids-reduction-mechanisms (수면_pacifier-sleep-weaning.json)
+- pacifier-sleep-initiation-benefit (수면_pacifier-sleep-weaning.json)
+- sleep-deprivation-cardiovascular-risk (수면_sleep-heart-health.json)
+- migraine-sleep-disturbance-vicious-cycle (수면_sleep-migraine.json)
 - sleep-loss-insulin-resistance-immediate (수면_sleep-weight-appetite.json)
+- thyroid-diagnosis-tsh-test (수면_thyroid-sleep.json)
+- toddler-boundary-setting-clear-expectations (수면_toddler-bedtime-resistance.json)
 
-### scope 구조 문제 (층위 혼동 위험) (176)
+### scope 구조 문제 (층위 혼동 위험) (444)
 
+- adhd-core-symptoms-definition: scope.brand 누락
+- adhd-core-symptoms-definition: scope.category 누락
+- adhd-comorbid-sleep-disorder: scope.brand 누락
+- adhd-comorbid-sleep-disorder: scope.category 누락
+- adhd-sleep-impairment-mechanism-bidirectional: scope.brand 누락
+- adhd-sleep-impairment-mechanism-bidirectional: scope.category 누락
+- methylphenidate-sleep-side-effects: scope.brand 누락
+- methylphenidate-sleep-side-effects: scope.category 누락
+- atomoxetine-sleep-side-effects: scope.brand 누락
+- atomoxetine-sleep-side-effects: scope.category 누락
+- adhd-medication-timing-sleep-hygiene: scope.brand 누락
+- adhd-medication-timing-sleep-hygiene: scope.category 누락
+- adhd-comprehensive-treatment-approach: scope.brand 누락
+- adhd-comprehensive-treatment-approach: scope.category 누락
 - low-dose-alcohol-rem-suppression: scope.brand 누락
 - low-dose-alcohol-rem-suppression: scope.category 누락
 - alcohol-initial-slowwave-sleep-increase: scope.brand 누락
@@ -25,31 +51,17 @@
 - alcohol-timing-bedtime-importance: scope.category 누락
 - alcohol-emotional-memory-impact: scope.brand 누락
 - alcohol-emotional-memory-impact: scope.category 누락
-- rem-sleep-memory-consolidation: scope.brand 누락
-- rem-sleep-memory-consolidation: scope.category 누락
-- rem-sleep-memory-types: scope.brand 누락
-- rem-sleep-memory-types: scope.category 누락
-- rem-deprivation-spatial-memory: scope.brand 누락
-- rem-deprivation-spatial-memory: scope.category 누락
-- dream-memory-filtering-hypothesis: scope.brand 누락
-- dream-memory-filtering-hypothesis: scope.category 누락
-- dream-recall-mechanism: scope.brand 누락
-- dream-recall-mechanism: scope.category 누락
-- sleep-necessary-for-learning-retention: scope.brand 누락
-- sleep-necessary-for-learning-retention: scope.category 누락
-- rem-non-rem-complementary-system: scope.brand 누락
-- rem-non-rem-complementary-system: scope.category 누락
-- exam-anxiety-sleep-disruption: scope.brand 누락
-- exam-anxiety-sleep-disruption: scope.category 누락
-- sleep-effort-paradox: scope.brand 누락
-- sleep-effort-paradox: scope.category 누락
-- …외 146건
+- lavender-ema-regulatory-approval: scope.brand 누락
+- lavender-ema-regulatory-approval: scope.category 누락
+- lavender-capsule-rct-ijpcp: scope.brand 누락
+- lavender-capsule-rct-ijpcp: scope.category 누락
+- …외 414건
 
 ## 통계
 
-- 확신도: 확실 3146 · 논쟁 160 · 확인실패 29
-- 근거: 공식 2676 · 후기 654 · 실측 5
-- **순차 대안 톤 대상: 693개** (tier=논쟁 또는 evidence=후기 → "먼저 해보고 안 되면" 서술 필수)
+- 확신도: 확실 3383 · 논쟁 167 · 확인실패 29
+- 근거: 공식 2917 · 후기 657 · 실측 5
+- **순차 대안 톤 대상: 701개** (tier=논쟁 또는 evidence=후기 → "먼저 해보고 안 되면" 서술 필수)
 
 ## HP
 
@@ -3339,6 +3351,18 @@
 | `wireless-frequency-band-interference-wifi-microwave` | 확실 🔶 | 후기 | 무선 키보드·마우스(2.4GHz)가 간헐적으로 끊기면 Wi-Fi, 블루투스 스피커, 전자레인지, 무선 CCTV 등 같은 2.4GHz 대역을 사용하는 다른 기기가 주변에 있을 수 있다. 이 경우 무선 채널을 변경하거나 간섭원에서 기기를 멀리 배치한다. | 공통 / 무선 입력기기 / 2.4GHz RF 동글·블루투스 / 현행 / 글로벌 |
 | `wireless-dongle-receiver-firmware-update-availability` | 확인실패 🔶 | 후기 | 제조사에서 무선 동글(리시버)의 펌웨어 업데이트를 제공하는 경우, 제품 공식 웹사이트의 지원 페이지에서 다운로드해 설치하면 연결 안정성이 개선될 수 있다. | 공통 / 무선 입력기기 / USB RF 동글 (2.4GHz) / 현행 / 글로벌 |
 
+### ADHD 아동의 수면 문제, 양방향 관계, 약물 영향 <sub>2026-08-04 · adhd-sleep-children</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `adhd-core-symptoms-definition` | 확실 | 공식 | ADHD(주의력결핍과잉행동장애)의 3대 핵심 증상: (1)부주의 - 끈기 부족·집중 곤란·물건 자주 잃어버림, (2)과잉행동 - 부적절한 상황에서도 계속 움직임·팔다리 끊임없이 움직임, (3)충동성 - 사전 생각 없이 행동·차례 기다리기 어려움 |  |
+| `adhd-comorbid-sleep-disorder` | 확실 | 공식 | ADHD 아동의 동반 정신질환 및 수면장애: ADHD 아동은 학습장애, 우울장애, 불안장애, 수면장애 등 다른 질환을 함께 가지고 있을 가능성이 높으며, 이 중 수면장애가 30~50% 정도로 높은 비율을 차지 |  |
+| `adhd-sleep-impairment-mechanism-bidirectional` | 확실 | 공식 | ADHD와 수면의 양방향 관계: (1)ADHD 증상이 수면을 방해 - 과잉활동·충동성으로 야간 각성·입면 어려움 유발, (2)수면 부족이 ADHD 악화 - 수면 부족 시 주의력 저하·과잉행동 심화·충동 조절 능력 저하 |  |
+| `methylphenidate-sleep-side-effects` | 확실 | 공식 | 메틸페니데이트(정신자극제) 부작용: 두통, 위통, 불면증, 식욕저하, 심계항진, 불안, 구역 등. 특히 불면증은 약물의 각성 효과로 인해 발생하므로 가능한 한 아침 시간대 복용을 권장 |  |
+| `atomoxetine-sleep-side-effects` | 확실 | 공식 | 아토목세틴(비-정신자극제) 부작용: 소화불량, 구역, 구토, 피로감. 메틸페니데이트보다 불면증이 적은 편이나 정신과적 증상(자살 생각·행동, 불안, 흥분) 주의 필요 |  |
+| `adhd-medication-timing-sleep-hygiene` | 확실 | 공식 | ADHD 약물 복용 시 수면 부작용 최소화 전략: (1)정신자극제는 아침 시간대 규칙적 복용, (2)오후 4시 이후 복용 금지, (3)약물 복용과 동시에 규칙적 수면시간·취침 루틴 실시, (4)저녁 카페인 피하기 |  |
+| `adhd-comprehensive-treatment-approach` | 확실 | 공식 | ADHD 치료의 최적 방법: 약물 요법 단독보다 약물 치료에 행동 치료·상담·놀이 치료 등 심리사회적 중재를 병행할 때 효과 증대. 수면 개선도 함께 추구하는 통합 접근 필요 |  |
+
 ### 노화에 따른 수면구조 변화 <sub>2026-07-31 · aging-sleep-architecture</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -3414,6 +3438,19 @@
 | `swaddle-back-sleep-only` | 확실 | 공식 | AAP는 속싸개 사용 아기를 절대 옆으로 눕히거나 엎드려 재우면 안 되며, 항상 바로 누운 자세(Back Sleep)로만 재워야 한다고 강조한다. | 공통 / 수면·침구 / 국제 |
 | `sleep-sack-alternative-safe` | 확실 | 공식 | 속싸개 중단 후에도 팔을 묶지 않는 Sleep Sack(수면봉투)이나 Wearable Blanket은 원하는 만큼 오래 사용해도 안전하며, SIDS 위험 감소에 도움이 된다. | 공통 / 수면·침구 / 국제 |
 
+### 미용수면과 피부건강: 콜라겐·주름·다크서클 <sub>2026-08-04 · beauty-sleep-skin</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `sleep-growth-hormone-collagen-synthesis` | 확실 | 공식 | 수면 중 분비되는 성장호르몬은 섬유아세포(fibroblast)에 신호를 보내 콜라겐과 엘라스틴 생성을 직접 자극한다. | 공통 / 수면·피부 / 성장호르몬과 콜라겐 / 전 연령 / 글로벌 |
+| `sleep-deprivation-cortisol-collagen-breakdown` | 확실 | 공식 | 수면 부족 시 스트레스 호르몬 코르티솔이 상승하여 콜라겐과 엘라스틴을 분해하는 효소(matrix metalloproteinases)를 활성화한다. | 공통 / 수면·피부 / 코르티솔과 콜라겐 분해 / 전 연령 / 글로벌 |
+| `melatonin-collagen-synthesis-skin-regeneration` | 확실 | 공식 | 수면 중 분비되는 멜라토닌은 피부 진피의 콜라겐 합성을 증가시키고 산소·영양 공급을 촉진하여 피부를 밝고 탄력 있게 한다. | 공통 / 수면·피부 / 멜라토닌과 피부 / 전 연령 / 글로벌 |
+| `sleep-deprivation-4hours-4days-wrinkles-uneven-pigmentation` | 확실 | 공식 | 4시간 수면을 4일 지속하면 주름, 색소침착 불균형, 건조함이 현저히 악화되는 임상 관찰이 있다. | 공통 / 수면·피부 / 급성 수면 부족 효과 / 성인 / 글로벌 |
+| `dark-circles-sleep-deprivation-blood-circulation-fluid-retention` | 확실 | 공식 | 수면 부족 시 혈액 순환이 저하되어 안와 주변에 혈액이 정체되고 체액이 축적되어 다크서클과 부종이 발생한다. | 공통 / 수면·피부 / 다크서클 기전 / 전 연령 / 글로벌 |
+| `skin-barrier-recovery-sleep-deprivation-gag-hyaluronic-acid` | 확실 | 공식 | 충분한 수면 중 글리노사미노글리칸(GAG)의 합성이 활발하여 자연적 히알루론산, 콜라겐, 엘라스틴 생성을 촉진한다. 수면 부족 시 GAG 합성이 저하되어 보습 부족과 잔주름이 증가한다. | 공통 / 수면·피부 / 히알루론산과 수분 보유 / 전 연령 / 글로벌 |
+| `sleep-7-9-hours-skin-restoration-recommendation` | 확실 | 공식 | 성장호르몬 분비와 세포 재생에 충분한 수면 시간은 7-9시간이며, 5시간 이하는 의미 있는 피부 복구에 불충분하다. | 공통 / 수면·피부 / 권장 수면 시간 / 성인 / 글로벌 |
+| `rapid-eye-movement-sleep-skin-cell-proliferation` | 확실 | 공식 | REM(빠른안구운동) 수면 중 신경성장인자(NGF)와 산화질소가 증가하여 피부 세포 증식과 손상 복구를 촉진한다. | 공통 / 수면·피부 / REM 수면과 피부 / 전 연령 / 글로벌 |
+
 ### 침구 세탁·관리·집먼지진드기 및 알레르겐 제거·권장 세탁 주기 <sub>2026-07-31 · bedding-care-longrun</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -3474,6 +3511,17 @@
 | `caffeine-400mg-4-hours-sleep-quality` | 확실 | 공식 | 카페인 400mg을 취침 4시간 전에 섭취하면 주관적 수면 질이 34% 감소하고, 객관적으로는 수면 시간이 약 51분 단축된다. | 공통 / 수면 / 고용량 카페인 4시간 전 효과 / 2024 / 일반 |
 | `caffeine-perception-gap` | 확실 | 공식 | 카페인 섭취자는 자신의 수면 장애를 자각하지 못하는 경향이 있으며, 특히 4시간 이상 전에 섭취한 경우 인식 격차가 크다. | 공통 / 수면 / 카페인 수면 영향 인식 / 2024 / 일반 |
 
+### 소아 야뇨증의 원인, 발달 범위, 대처법 <sub>2026-08-04 · child-bedwetting-enuresis</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `enuresis-medical-definition-age-criteria` | 확실 | 공식 | 의학적 야뇨증 진단 기준: 만 5세 이상 소아가 수면 중 본인의 의지와 무관하게 주 2회 이상, 최소 3개월 동안 야간 수면 중 불수의적 배뇨를 반복하는 경우 | 공통 / 수면·침구 |
+| `enuresis-prevalence-by-age` | 확실 | 공식 | 연령별 야뇨증 유병률: 만 5세 약 15~20%, 7세 약 10%, 15세 약 1~2%로 연령 증가에 따라 자연 소실 | 공통 / 수면·침구 |
+| `enuresis-primary-vs-secondary-etiology` | 확실 | 공식 | 야뇨증 분류: 원발성(전체 80~90%)은 야간 항이뇨호르몬 분비 미성숙·방광용적 감소·수면 각성 장애가 원인이며, 속발성은 동생 출생·이사·부모 이혼·학교 입학 등 환경 스트레스 또는 요로감염·당뇨·만성 변비·수면무호흡증이 원인 | 공통 / 수면·침구 |
+| `enuresis-genetic-predisposition` | 확실 | 공식 | 야뇨증의 강력한 유전 요인: 부모 한쪽이 야뇨증 경험 시 자녀의 야뇨증 발생률 약 44%, 양쪽 부모 모두 경험한 경우 약 77% | 공통 / 수면·침구 |
+| `enuresis-natural-resolution-rate` | 확실 | 공식 | 적극적 개입 없이 매년 약 15%의 아이가 야뇨증에서 자연 소실되며, 이 비율이 지속되면 성인기까지 증상이 남는 경우는 약 1~2% | 공통 / 수면·침구 |
+| `enuresis-modern-treatment-approach` | 확실 | 공식 | 현대 소아비뇨의학은 야뇨증을 단순 대기의 대상이 아닌 '체계적인 진단과 맞춤형 치료가 필요한 능동적 질환'으로 정의하며, 조기 진단·관리는 가족의 심리 스트레스 완화를 고려하여 결정 | 공통 / 수면·침구 |
+
 ### 벼락치기 vs 규칙수면: 수면과 시험 성적 비교 연구 <sub>2026-07-31 · 예정</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -3504,6 +3552,20 @@
 | `internet-cbti-autism-effectiveness` | 논쟁 🔶 | 공식 | 자폐성 성인을 대상으로 인터넷 기반 가이드 CBT-I(i-Sleep Autism)의 효과성을 검증하는 무작위 대조 시험이 진행 중이다. | 공통 / 수면 / 인터넷 CBT-I / 2026 / 국제 |
 | `sleep-hygiene-vs-digital-cbti-perinatal` | 논쟁 🔶 | 공식 | 산전·산후 우울증 예방을 목표로, 디지털 CBT-I를 수면 위생 교육과 비교하는 무작위 임상시험 프로토콜이 등록되었다. | 공통 / 수면 / CBT-I vs 수면 위생 / 2026 / 국제 |
 | `behavioral-sleep-therapy-perinatal-scoping-review` | 확실 | 공식 | 산전·산후 시기의 행동 수면 치료(behavioral sleep therapies, BST·CBT-I 포함)에 대한 범위 문헌고찰이 수행되었다. | 공통 / 수면 / 행동 수면 치료 / 2026 / 국제 |
+
+### 소아 코골이, 아데노이드 비대, 수면무호흡 <sub>2026-08-04 · kids-snoring-adenoids</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `adenoid-anatomy-immune-function` | 확실 | 공식 | 아데노이드는 코 뒤쪽(비인두)에 위치한 림프조직으로 구개 편도와 함께 인체의 일차적 면역 기능을 담당하는 조직 | 공통 / 수면·침구 |
+| `adenoid-hypertrophy-age-pattern` | 확실 | 공식 | 아데노이드 크기의 발달 궤적: 3세경 최대 크기에 도달한 후 점진적으로 축소되며, 7세 이후에는 거의 남아 있지 않는 패턴. 주로 2~7세에 호흡 증상 유발 가능성 높음 | 공통 / 수면·침구 |
+| `adenoid-prevalence-in-children` | 확실 | 공식 | 아데노이드 비대 증상을 보이는 소아의 비율은 약 10~15%이며, 3세~6세 사이에 가장 흔히 나타남 | 공통 / 수면·침구 |
+| `adenoid-etiology-repeated-infection-inflammation` | 확실 | 공식 | 아데노이드 비대의 주요 원인: 급성 세균 감염의 반복, 비강 또는 부비동의 만성 염증에 의한 림프조직 증식. 1~5세 면역 발달 과정에서 자연적으로 커지는 경향도 있음 | 공통 / 수면·침구 |
+| `adenoid-snoring-symptoms` | 확실 | 공식 | 아데노이드 비대의 주요 증상: 구강 호흡(입으로만 숨 쉬기), 심한 코골이, 수면 중 호흡 정지(수면 무호흡), 야뇨증 및 수면 중 빈번한 각성, 낮 시간의 과도한 졸음 | 공통 / 수면·침구 |
+| `adenoid-sleep-apnea-mechanism` | 확실 | 공식 | 아데노이드·편도선 비대가 소아 상기도 폐쇄의 원인 중 약 70%를 차지하며, 이로 인해 수면 중 코골이 및 수면 무호흡이 생겨서 깊이 잠을 자지 못하고 학습 능력 저하·학교 적응력 저하로 이어짐 | 공통 / 수면·침구 |
+| `adenoid-secondary-complications` | 확실 | 공식 | 아데노이드 비대 방치 시 만성 중이염, 부비동염, 얼굴 골격 발달 지연('아데노이드 얼굴' - 긴 얼굴, 좁은 턱, 입 벌림)으로 이어질 수 있음 | 공통 / 수면·침구 |
+| `adenoid-treatment-surgical-indication` | 확실 | 공식 | 수술(아데노이드 절제술) 고려 기준: 반복적 중이염·부비동염 발생, 만성 코막힘, 수면 무호흡 증상, 치아 부정교합·안면 발달 장애 소견. 수술 후 90% 이상의 증상 호전율 | 공통 / 수면·침구 |
+| `adenoid-conservative-treatment-first-line` | 확실 | 공식 | 아데노이드 비대의 초기 치료는 비강 스테로이드 스프레이와 항생제 등 보존적 치료로 시작하며, 이 치료에 반응이 없거나 증상이 심할 때 수술적 절제를 고려 | 공통 / 수면·침구 |
 
 ### 수면제 장기복용의 위험과 대안 <sub>2026-07-31 · long-term-sleeping-pills</sub>
 
@@ -3584,6 +3646,33 @@
 | `night-terror-do-not-wake` | 확실 | 공식 | 야경증 중 아이를 깨우려 하거나 제지하면 오히려 더 격렬한 반응을 유발하므로, 부드럽고 낮은 목소리로 말하며 부드럽게 침대로 유도하는 것이 안전하다. | 공통 / 수면·침구 / 국제 |
 | `night-terror-adequate-sleep-importance` | 확실 | 공식 | 야경증은 수면 부채와 스트레스로 악화되므로, 규칙적 기상·취침 시간과 충분한 야간 수면(3~5세: 10~13시간)이 에피소드 감소에 기여한다. | 공통 / 수면·침구 / 국제 |
 
+### 공갈젖꼭지와 수면: 영향, 젖떼기 시기, 치아 건강 <sub>2026-08-04 · pacifier-sleep-weaning</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `pacifier-sids-reduction-mechanisms` | 확실 | 공식 | 공갈젖꼭지의 수면 안전 효과: 신생아~12개월 대상 메타분석에서 공갈젖꼭지 사용 시 영아급사증(SIDS) 위험이 약 30~50% 감소. 기전은 (1)상기도 폐쇄 방지, (2)수면 자세 개선, (3)각성 역치 조정으로 추정 | 공통 / 수면·침구 |
+| `pacifier-sleep-initiation-benefit` | 확실 | 공식 | 공갈젖꼭지의 수면 개시 효과: 신생아~2세 대상 연구에서 공갈젖꼭지 사용이 입면 시간 단축·야간 각성 감소와 연관. 빨기 반사(sucking reflex)와 자율신경계 안정화(vagal tone 증가)가 기전 | 공통 / 수면·침구 |
+| `pacifier-sleep-dependency-risk` | 확실 | 공식 | 공갈젖꼭지 장기 사용의 수면 부작용: 생후 6개월 이후 공갈젖꼭지에 대한 의존성 형성 가능. 아이가 잠들 때마다 젖꼭지가 필요하고, 밤 중에 젖꼭지를 잃으면 깨어 부모의 재삽입 요청이 야간 각성 증가로 이어질 수 있음 | 공통 / 수면·침구 |
+| `pacifier-weaning-recommended-age` | 확실 | 공식 | 공갈젖꼭지 젖떼기 권장 시기: (1)미국 소아과학회(AAP) - 생후 6개월~12개월 사이 시작, (2)국제 치과학회 - 치아 맹출 전(생후 18개월~2세 이전) 완료, (3)한국 가이드라인 - 2세(24개월) 전후를 권장. 조기 중단(6개월 미만)은 SIDS 예방 효과 상실, 지연 중단(3세 이후)은 치아 부정교합 위험 증가 | 공통 / 수면·침구 |
+| `pacifier-dental-malocclusion-risk` | 확실 | 공식 | 공갈젖꼭지의 치아 영향: 생후 18개월 이후 장기 사용 시 개방교합(open bite, 앞니가 닫히지 않는 상태)·교차교합(cross bite)·돌출된 앞니 등 부정교합 위험 증가. 위험은 사용 강도(하루 중 사용 시간)와 기간에 비례. 심각한 변형은 성인기 교정 치료 필요 | 공통 / 수면·침구 |
+| `pacifier-weaning-method-gradual-approach` | 확실 | 공식 | 공갈젖꼭지 젖떼기 방법: (1)단계적 감소 - '밤에만' → '밤중 깬 후' → '완전 제거' 순서로 진행, (2)시간 제한 - 허용 시간 점진적 단축, (3)긍정 강화 - 젖꼭지 없이 자면 칭찬·작은 보상, (4)감정적 이유 인정 - '젖꼭지를 보내자'는 이야기로 아이의 감정 수용. 완전 중단까지 2~4주 소요 경우 많음 | 공통 / 수면·침구 |
+| `pacifier-sleep-alternative-self-soothing` | 확실 | 공식 | 공갈젖꼭지 대체 자기진정 방법(self-soothing): 손가락·손·인형 쥐기, 특정 음악 또는 백색소음(white noise), 부드러운 담요 등. 이런 방법이 발달할수록 공갈젖꼭지 의존성 낮아짐. 생후 3~4개월부터 자기진정 능력 도출 시작 권장 | 공통 / 수면·침구 |
+| `pacifier-otitis-media-risk` | 논쟁 🔶 | 공식 | 공갈젖꼭지 장기 사용 시 추가 위험: 생후 12개월~3세에서 급성 중이염 위험 약간 증가. 기전은 공갈젖꼭지 사용 중 이스타키우스관(eustachian tube)의 폐쇄 메커니즘 변화. 하지만 위험 증가폭은 작으며, 상기도 감염과 함께 있을 때 두드러짐 | 공통 / 수면·침구 |
+
+### 다낭성난소증후군(PCOS)과 수면장애 <sub>2026-08-04 · pcos-sleep</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `pcos-osa-risk-9-74-fold-higher` | 확실 | 공식 | PCOS가 있는 성인 여성은 일반인보다 수면무호흡증(OSA) 위험이 9.74배 높다. | 공통 / 수면·건강 / PCOS 수면무호흡 / 성인 생식연령 / 글로벌 |
+| `pcos-osa-prevalence-bmi-dependent` | 확실 | 공식 | PCOS가 있는 여성 중 약 19.5%가 수면무호흡증 고위험군이며, 비만(BMI>30)인 경우 37.3%까지 증가한다. | 공통 / 수면·건강 / PCOS OSA 유병율 / 성인 여성 / 글로벌 |
+| `pcos-hyperandrogenemia-airway-dysfunction` | 확실 | 공식 | PCOS의 특징인 높은 남성호르몬(안드로겐)은 상기도 안정성을 감소시키고 지방 분포를 복부에 집중시켜 수면무호흡을 악화시킨다. | 공통 / 수면·건강 / PCOS 호르몬 기전 / 성인 생식연령 / 글로벌 |
+| `pcos-progesterone-deficiency-osa-risk` | 확실 | 공식 | PCOS 여성은 무배란으로 인한 프로게스테론 결핍이 있으며, 프로게스테론의 상기도 근육 이완 작용 부족이 OSA 위험을 증가시킨다. | 공통 / 수면·건강 / PCOS 호르몬 기전 / 성인 생식연령 / 글로벌 |
+| `pcos-insulin-resistance-osa-link` | 확실 | 공식 | 인슐린저항성이 있는 PCOS 여성은 정상 포도당 대사 여성 대비 OSA 고위험 확률이 2.1배 높다(25.5% vs 12.0%). | 공통 / 수면·건강 / 대사 이상과 OSA / 성인 여성 / 글로벌 |
+| `pcos-sleep-disturbance-prevalence-90-percent` | 확실 | 공식 | PCOS가 있는 여성의 약 90%가 수면 장애를 겪으며, 60.5%는 경증, 29.7%는 만성 수면 장애를 보인다. | 공통 / 수면·건강 / PCOS 수면 장애 / 성인 여성 / 글로벌 |
+| `pcos-anxiety-prevalence-52-percent` | 확실 | 공식 | PCOS 여성의 약 52%가 중등도에서 심각한 불안 수준을 보이며, 불안은 수면 장애와 OSA 위험을 증가시킨다. | 공통 / 수면·정신건강 / PCOS 불안 / 성인 여성 / 글로벌 |
+| `pcos-depression-prevalence-28-percent` | 확실 | 공식 | PCOS 여성의 약 27.8%가 중등도에서 심각한 우울증을 보이며, 만성 수면 장애와 밀접한 상관관계가 있다. | 공통 / 수면·정신건강 / PCOS 우울증 / 성인 여성 / 글로벌 |
+| `pcos-melatonin-abnormality-sleep-quality` | 확실 | 공식 | PCOS 여성은 멜라토닌 대사 이상을 보이며, 멜라토닌 수용체 유전자 변이는 대사 합병증과 수면 문제와 연관된다. | 공통 / 수면·건강 / PCOS 멜라토닌 / 성인 생식연령 / 글로벌 |
+
 ### 베개 높이·소재와 경추정렬·목통증·수면자세별 선택 <sub>2026-07-31 · pillow-sleep-guide</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -3654,6 +3743,37 @@
 | `fetal-movement-nighttime-awakening-third-trimester` | 확실 | 공식 | 제3삼분기의 심한 태동(fetal movement)은 직접적 야간 각성의 원인이 되며, 특히 산모가 누운 자세에서 두드러진다. | 공통 / 수면·임신 / 태동으로 인한 각성 / 임신 27-40주 / 글로벌 |
 | `insomnia-higher-in-pregnant-than-general-population` | 확실 | 공식 | 임신 중 불면증 유병율(62%)은 일반 인구(10-15%)보다 4-6배 높다. | 공통 / 수면·임신 / 임신 불면증 vs 일반 / 임신 전 기간 / 글로벌 |
 
+### 임신 중 하지불안증후군(Restless Legs Syndrome) <sub>2026-08-04 · pregnancy-restless-legs</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `pregnancy-rls-prevalence-29-2-percent` | 확실 | 공식 | 임신 중 하지불안증후군(RLS)의 유병율은 전체 임산부의 29.2%로, 비임신 여성(약 5-10%) 대비 3배 이상 높다. | 공통 / 수면·임신 / RLS 유병율 / 임신 전 기간 / 글로벌 |
+| `pregnancy-rls-by-trimester-4-8-30-8-64-4` | 확실 | 공식 | 임신 중 RLS는 삼분기에 따라 극적으로 증가한다: 1분기 4.8%, 2분기 30.8%, 3분기 64.4%. | 공통 / 수면·임신 / RLS 삼분기별 / 임신 0-40주 / 글로벌 |
+| `pregnancy-rls-iron-ferritin-deficiency` | 확실 | 공식 | 임신 중 철분(ferritin) 결핍은 RLS의 주요 위험 인자로, 철분은 도파민 합성의 필수 보조인자이며 결핍 시 도파민 합성이 지연된다. | 공통 / 수면·임신 / RLS 철분 연관 / 임신 전 기간 / 글로벌 |
+| `pregnancy-rls-vitamin-b12-deficiency-10x-risk` | 확실 | 공식 | 임신 중 낮은 비타민 B12 수치는 RLS 위험을 약 10배 증가시킨다(OR: 10.347, p<0.001). | 공통 / 수면·임신 / RLS B12 연관 / 임신 전 기간 / 글로벌 |
+| `pregnancy-rls-folate-deficiency-predictor` | 확실 | 공식 | 임신 중 낮은 엽산(folate) 수치는 RLS의 주요 예측 인자이며, 엽산 요구량은 비임신 시 대비 8-10배 증가한다. | 공통 / 수면·임신 / RLS 엽산 연관 / 임신 전 기간 / 글로벌 |
+| `pregnancy-rls-family-history-9fold-risk` | 확실 | 공식 | RLS의 가족력이 있는 여성은 임신 중 RLS 위험이 약 9배 높다. | 공통 / 수면·임신 / RLS 유전 위험 / 임신 전 기간 / 글로벌 |
+| `pregnancy-rls-prior-history-5fold-risk` | 확실 | 공식 | 이전 임신에서 RLS를 경험한 여성은 다음 임신에서 약 5배 높은 재발 위험을 보인다. | 공통 / 수면·임신 / RLS 반복 위험 / 반복 임신 / 글로벌 |
+| `pregnancy-rls-hemoglobin-low-risk-factor` | 확실 | 공식 | 임신 중 헤모글로빈 수치가 11 g/dL 이하로 낮으면 RLS 위험 인자이며, 철분 보충이 필수다. | 공통 / 수면·임신 / RLS 빈혈 연관 / 임신 전 기간 / 글로벌 |
+| `pregnancy-rls-iron-supplementation-inadequate-risk` | 확실 | 공식 | 임신 중 철분과 엽산 보충이 부적절하면 RLS 위험이 크게 증가하며, 특히 철분 결핍이 동반되면 위험이 극대화된다. | 공통 / 수면·임신 / RLS 보충 치료 / 임신 전 기간 / 글로벌 |
+| `pregnancy-rls-resolution-postpartum-expected` | 확실 | 공식 | 임신 중 RLS는 출산 후 호르몬 정상화와 철분 회복으로 대부분 호전되며, 대부분의 여성은 산후 수주 내 증상이 개선된다. | 공통 / 수면·임신 / RLS 산후 회복 / 산후 기간 / 글로벌 |
+
+### 임신부 수면무호흡증(Obstructive Sleep Apnea in Pregnancy) <sub>2026-08-04 · pregnancy-sleep-apnea</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `pregnancy-osa-prevalence-15-percent-global` | 확실 | 공식 | 임신 중 폐쇄성 수면무호흡(OSA)의 전 세계 평균 유병율은 15%(95% CI 12-18%)로, 지역별로 유럽 5%에서 미주 20% 범위에서 변동한다. | 공통 / 수면·임신 / OSA 유병율 / 임신 전 기간 / 글로벌 |
+| `pregnancy-osa-by-trimester-3-6-to-8-3-percent` | 확실 | 공식 | 임신 중 OSA는 임신 진행에 따라 증가하며, 임신 초기 3.6%에서 중기 8.3%까지 상향된다. | 공통 / 수면·임신 / OSA 임신 진행 / 임신 0-28주 / 글로벌 |
+| `pregnancy-osa-preeclampsia-risk-2-22-fold` | 확실 | 공식 | 임신 중 OSA는 자간전증(preeclampsia) 위험을 약 2.22배 증가시킨다(95% CI 1.94-2.54). | 공통 / 수면·임신 / OSA와 자간전증 / 임신 전 기간 / 글로벌 |
+| `pregnancy-osa-gestational-hypertension-1-97-fold` | 확실 | 공식 | 임신 중 OSA는 임신성 고혈압(gestational hypertension) 위험을 약 1.97배 증가시킨다. | 공통 / 수면·임신 / OSA와 임신성 고혈압 / 임신 전 기간 / 글로벌 |
+| `pregnancy-osa-preterm-birth-1-62-fold` | 확실 | 공식 | 임신 중 OSA는 조산(preterm birth) 위험을 약 1.62배 증가시킨다. | 공통 / 수면·임신 / OSA와 조산 / 임신 전 기간 / 글로벌 |
+| `pregnancy-osa-nicu-admission-1-28-fold` | 확실 | 공식 | 임신 중 OSA는 신생아 중환자실(NICU) 입원 위험을 약 1.28배 증가시킨다. | 공통 / 수면·임신 / OSA와 NICU / 임신 전 기간 / 글로벌 |
+| `pregnancy-osa-intrauterine-growth-restriction-risk` | 확실 | 공식 | 임신 중 OSA는 자궁 내 성장 제한(intrauterine growth restriction, IUGR) 위험과 연관되어 있으며, 태아의 산소 부족이 주요 메커니즘으로 추정된다. | 공통 / 수면·임신 / OSA와 태아 성장 / 임신 전 기간 / 글로벌 |
+| `pregnancy-osa-estrogen-nasal-edema-upper-airway` | 확실 | 공식 | 임신 중 에스트로겐 증가는 비인두 부종과 비염을 유발하여 상기도를 협착시키고 OSA 위험을 증가시킨다. | 공통 / 수면·임신 / 호르몬과 상기도 / 임신 전 기간 / 글로벌 |
+| `pregnancy-osa-cpap-treatment-blood-pressure-preeclampsia-reduction` | 확실 | 공식 | 경도~중등도 OSA를 가진 고위험 임산부에 대한 CPAP 치료는 이완기 혈압을 낮추고 자간전증 발생률을 감소시킨다. | 공통 / 수면·임신 / OSA 치료 효과 / 고위험 임신 / 글로벌 |
+| `pregnancy-osa-diagnosis-polysomnography-required` | 확실 | 공식 | 임신 중 OSA의 최종 진단은 수면다원검사(polysomnography)를 통해 이루어지며, 코골이나 수면 중 호흡 불규칙이 의심되면 검사가 권장된다. | 공통 / 수면·임신 / OSA 진단 / 임신 전 기간 / 글로벌 |
+| `pregnancy-osa-treatment-mild-positional-therapy-sleep-hygiene` | 확실 | 공식 | 경도의 임신부 OSA는 옆으로 자는 자세(좌측와위) 치료와 수면 습관 개선으로 호전될 수 있다. | 공통 / 수면·임신 / 경도 OSA 치료 / 임신 전 기간 / 글로벌 |
+
 ### 임신기 수면 자세와 태아 안전 <sub>2026-07-31 · pregnancy-sleep-position</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -3706,6 +3826,19 @@
 | `fading-method-gradual-independence` | 논쟁 🔶 | 공식 | Fading 방법: 부모가 수면 공간 내 점진적으로 물러나는 방식(예: 침대옆→방 모서리→방 밖). 안아재우기보다 천천히 진행, 6개월 이상 소요 경우 많음. | 공통 / 수면·침구 / 생후 3개월 이상 / 국제 |
 | `behavioral-model-infant-sleep-disturbance` | 확실 | 공식 | 영아 수면 문제의 행동 모델: 부모-영아 상호작용 패턴이 수면 문제 형성·유지에 핵심 역할. 부모 불안·보상 심화 사이클 존재. | 공통 / 수면·침구 / 생후 0-24개월 / 국제 |
 | `safety-concern-cry-it-out-stress` | 논쟁 🔶 | 공식 | 극단적 울리기 방법(부모 완전 무시)의 장기 심리 영향은 과학적 합의 없음. 단기 수면 개선 효과와 별개로 스트레스 호르몬(cortisol) 증가 우려 논쟁 중. | 공통 / 수면·침구 / 생후 6개월 이상 / 국제 |
+
+### 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 <sub>2026-08-04 · toddler-bedtime-resistance</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `toddler-bedtime-resistance-developmental-peak` | 확실 | 공식 | 취침 거부(bedtime resistance)의 발달적 절정: 18개월~3세 사이에 가장 흔히 나타나며, 이 시기 아이들의 자율성 발달·독립욕구 표현이 주요 원인. 4세 이후 점진적으로 감소 | 공통 / 수면·침구 |
+| `toddler-bedtime-resistance-causes` | 확실 | 공식 | 취침 거부의 주요 원인: (1)발달 단계 - 자율성·독립욕구 표현, (2)환경 변화 - 동생 출생·이사·부모 근무 변경, (3)기질적 요인 - 높은 활동성·감각 민감도·불안 경향, (4)부모 요인 - 일관되지 않은 경계·야간 보상(먹거리·주의 관심), (5)수면 드라이브 부족 - 낮잠이 남아 있거나 낮 활동 부족 | 공통 / 수면·침구 |
+| `toddler-consistent-bedtime-routine` | 확실 | 공식 | 취침 거부 관리의 핵심: 매일 같은 시간에 같은 순서로 진행하는 일관된 취침 루틴. 효과적 루틴 구성: 저녁 식사(잠들기 2시간 전) → 목욕 또는 따뜻한 물 접촉 → 조용한 활동(그림책·부드러운 음악) → 침실 환기·어두운 환경 → 잠자리에 누우기. 루틴 전체 20~30분 소요 | 공통 / 수면·침구 |
+| `toddler-boundary-setting-clear-expectations` | 확실 | 공식 | 취침 거부 해결 위한 경계 설정: (1)침실 규칙 명확화 - '침실은 수면 전용 공간'이라 반복 설명, (2)요청 제한 - '잠자기 전에 화장실 다녀오세요, 물 한 잔 마세요' 등 2~3가지로 제한, (3)일관된 대응 - 아이가 자리에서 일어나면 조용히 손을 잡고 다시 누우키며 말 최소화, (4)보상 체계 - 야간 간섭 없이 밤을 지나면 아침에 간단한 칭찬(스티커·그림 등) | 공통 / 수면·침구 |
+| `toddler-nighttime-reinforcement-avoidance` | 확실 | 공식 | 취침 거부 악화시키는 부모 행동: (1)야간 설득·협상 - 아이의 요청에 응하려 대화하기, (2)야간 보상 제공 - 물·우유·간식 주기, (3)과도한 주의 관심 - 야간에 아이를 안아주거나 침대에서 자기, (4)불규칙한 대응 - 때로는 요청을 들어주고 때로는 거부하기. 이런 행동이 야간 각성을 강화하므로 체계적 제거 필요 | 공통 / 수면·침구 |
+| `toddler-bedtime-resistance-vs-sleep-deprivation` | 확실 | 공식 | 취침 거부와 수면 부족의 구분 필요: 취침 거부는 '침대에 누웠을 때 자리 떠나기·요청 반복'이고, 수면 부족은 '낮 시간에 과도한 졸음·짜증·주의력 저하'. 전자는 행동 중재 중심, 후자는 낮잠 조정·야간 수면 시간 연장 필요 | 공통 / 수면·침구 |
+| `toddler-sleep-training-method-choice` | 확실 | 공식 | 취침 거부에 적용 가능한 수면 교육 방법: (1)Ferber 방법(점진적 소거) - 부모 개입 간격 점진적 증가, 생후 5~6개월 이상 적용 가능, 2~4주 소요, (2)Fading 방법 - 부모가 침실에서 천천히 물러남, 느리지만 아이 스트레스 적음, 3~6개월 소요. 가족 상황·아이 기질·부모 역량에 따라 선택 | 공통 / 수면·침구 |
+| `toddler-bedtime-resistance-parental-stress-cycle` | 확실 | 공식 | 취침 거부가 가족에 미치는 영향: 아이의 저항 → 부모 스트레스·피로 증가 → 부모 인내심 저하·일관성 유실 → 아이 거부 심화 → 악순환 형성. 이 사이클을 끊으려면 부모 자신의 스트레스 관리와 '수면 교육도 장기 프로젝트'라는 현실적 기대 필요 | 공통 / 수면·침구 |
 
 ### 유아의 낮잠과 야간수면 관계 및 낮잠 중단 시기 <sub>2026-07-31 · toddler-nap-night-sleep</sub>
 
@@ -4182,6 +4315,21 @@
 | `drowsy-driving-allnighter-high-risk` | 확실 | 공식 | 밤샘 운전(allnighter)은 심각한 안전 위험이며, 밤샘 후 운전할 경우 음주 운전(BAC 0.08%) 수준의 인지 손상을 경험한다. | 수면 / 졸음운전 / 밤샘 운전 위험 / 2026 / 일반 |
 | `environment-ventilation-window-alert` | 확실 | 공식 | 차량 환기를 높이고 창문을 열어 신선한 공기와 시각적 자극을 제공하면 단기적 각성 유지에 도움이 되지만, 이는 근본적인 졸음운전 해결책이 아니며 휴식을 대체할 수 없다. | 수면 / 졸음운전 / 환경 개선 한계 / 2026 / 일반 |
 
+### 역류성 식도염(GERD)과 수면 <sub>2026-08-04 · 수면_gerd-sleep</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `gerd-supine-position-worsens-reflux` | 확실 | 공식 | 누운 자세는 위 내용물이 식도로 역류할 조건을 만들기 쉬우므로, 역류성 식도염이 있으면 자는 자세 조절이 중요하다 |  |
+| `gerd-left-lateral-position-recommended` | 확실 | 공식 | 왼쪽으로 누운 자세(left lateral decubitus)는 위가 신체 중심에서 왼쪽에 위치하여 상대적으로 역류가 적으므로 권장된다 |  |
+| `gerd-elevated-head-position-30-degrees` | 확실 | 공식 | 상체를 약 30도 이상 높이는 자세는 복압을 낮추고 위액이 식도로 역류하는 것을 물리적으로 방지한다 |  |
+| `gerd-postprandial-supine-position-avoidance` | 확실 | 공식 | 식후 바로 누우면 위 내부 압력이 식도 쪽으로 쏠리면서 역류가 심해지므로, 식사 후 최소 3~4시간 후에 자야 한다 |  |
+| `gerd-late-night-eating-worsens-symptoms` | 확실 | 공식 | 밤이 되면 위에서 음식이 장으로 내려가는 속도가 느려져서 위에 음식물이 오래 머물고, 이로 인해 위 내부 압력과 역류 위험이 증가한다 |  |
+| `gerd-fatty-foods-increase-gastric-residence` | 확실 | 공식 | 기름진 음식은 위에 머무는 시간이 길어져 역류를 유발하므로, 저지방 식단이 도움이 된다 |  |
+| `gerd-common-trigger-foods` | 확실 | 공식 | 초콜릿, 카페인, 알코올, 산성 음식(토마토, 오렌지 주스), 맵고 기름진 음식은 역류성 식도염을 악화시키는 주요 식이 요인이다 |  |
+| `gerd-sleep-quality-impact` | 확실 | 공식 | 밤시간의 역류는 수면을 방해하여 불면증을 유발하고, 이는 다시 소화 기능을 악화시키는 악순환을 만든다 |  |
+| `gerd-proton-pump-inhibitor-bedtime-dosing` | 확실 | 공식 | 역류성 식도염의 약물 치료(양성자펌프억제제, PPI)는 자기 전에 복용하는 것이 야간 역류 방지에 더 효과적이다 |  |
+| `gerd-red-flag-symptoms-doctor-visit` | 확실 | 공식 | 밤마다 가슴 쓰림이 수면을 방해하거나, 2주 이상 지속되는 역류 증상, 삼킴곤란, 검은 변 등은 소화기내과 진료가 필요하다 |  |
+
 ### 마이크로슬립의 위험성 <sub>2026-08-04 · microsleep-danger</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4196,6 +4344,22 @@
 | `microsleep-warning-signs-detectable` | 확실 | 공식 | 마이크로슬립의 경고 신호로는 머리 끄덕거림, 무거운 눈꺼풀, 높이 변화에 따른 차선이탈, 도로 표지판 놓침, 기억 공백이 있다. | 수면 / 마이크로슬립 / 경고 신호 / 2026 / 일반 |
 | `microsleep-fatigue-assessment-unreliable` | 확실 | 공식 | 자가 피로도 평가는 특히 고압 업무 환경에서 신뢰도가 낮다. 근로자는 피로를 과소평가하거나 정상화하는 경향이 있어, 객관적 피로 평가와 의료 전문가의 판정이 필요하다. | 수면 / 마이크로슬립 / 피로 평가 신뢰도 / 2026 / 일반 |
 | `high-fatigue-accident-risk-multiplier` | 확실 | 공식 | 매우 피곤한 근로자는 피로도가 낮은 근로자 대비 사고 발생률이 70% 높다. | 수면 / 마이크로슬립 / 사고 위험도 / 2026 / 일반 |
+
+### 기면증(Narcolepsy) <sub>2026-08-04 · 수면_narcolepsy</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `narcolepsy-four-hallmark-symptoms` | 확실 | 공식 | 기면증의 네 가지 특징적 증상은 수면발작(야간 충분한 수면에도 낮에 심한 졸음), 탈력발작(감정적 흥분 시 힘 빠짐), 입수면 환각, 수면마비(가위눌림)다 |  |
+| `narcolepsy-symptom-onset-age` | 확실 | 공식 | 기면증의 증상은 일반적으로 청소년기나 성인 초기(만 20~40세)에 나타난다 |  |
+| `narcolepsy-nap-refreshing` | 확실 | 공식 | 기면증 환자의 낮잠은 보통 15분 정도로 짧지만 깬 직후에는 매우 개운하고, 수 시간 후 다시 졸려진다 |  |
+| `narcolepsy-cataplexy-emotion-trigger` | 확실 | 공식 | 탈력발작은 웃음, 분노, 놀람 같은 감정적 자극이 주요 유발 요인이며, 수초~수십 초 지속된다 |  |
+| `narcolepsy-sleep-paralysis-morning` | 확실 | 공식 | 수면마비(가위눌림)는 아침 깨어날 때 가장 흔하게 발생하며, 의식은 있으나 근육을 움직일 수 없는 상태로 수초~수분 지속된다 |  |
+| `narcolepsy-hypocretin-mechanism` | 확실 | 공식 | 기면증의 원인은 뇌의 하이포크레틴(orexin) 신경전달물질 결핍으로, 중추신경계의 각성 조절이 손상되는 것으로 알려져 있다 |  |
+| `narcolepsy-diagnosis-icsd3-criteria` | 확실 | 공식 | 기면증 진단 기준(ICSD-3)은 최소 3개월 동안 거의 매일 반복되는 저항할 수 없는 수면발작이 있어야 하며, 탈력발작이 있거나 수면다원검사 결과와 뇌척수액 하이포크레틴 농도 측정으로 확진한다 |  |
+| `narcolepsy-polysomnography-diagnosis` | 확실 | 공식 | 기면증 진단을 위해 1박 2일 입원하여 야간 수면다원검사와 주간 반복 수면검사를 시행하며, 뇌파·근육전도·안구운동·호흡·산소포화도를 측정한다 |  |
+| `narcolepsy-treatment-stimulants` | 확실 | 공식 | 기면증의 주간 졸음증은 암페타민, 메틸페니데이트, 모다피닐 등의 중추신경자극제로 치료하며, 탈력발작과 수면마비는 항우울제(SSRI, 삼환계)로 관리한다 |  |
+| `narcolepsy-non-pharmacological-management` | 확실 | 공식 | 약물 치료 외에도 규칙적인 수면 일정 유지, 일일 2~3회 짧은 낮잠(10~30분) 스케줄링, 스트레스 관리로 증상 완화를 도모한다 |  |
+| `narcolepsy-red-flag-symptoms` | 확실 | 공식 | 낮 시간에 저항할 수 없는 심한 졸음, 갑자기 쓰러지려는 느낌, 자다가 헐떡이며 깨기, 아침 두통이 2주 이상 지속되면 신경과 진료가 필요하다 |  |
 
 ### 야간뇨·밤에 자꾸 화장실 가서 깬다 <sub>2026-08-04 · 수면_nocturia-sleep</sub>
 
@@ -4312,6 +4476,21 @@
 | `apnea-parkinson-risk-reduction` | 확실 | 공식 | 수면무호흡증 진단 초기부터 CPAP 치료를 시작하면 파킨슨병 발병 위험을 약 30% 감소시킬 수 있다 |  |
 | `apnea-red-flag-signals` | 확실 | 공식 | 심한 코골이, 자다가 헐떡이며 깨기, 아침 두통, 주간 졸림증이 2주 이상 지속되면 수면클리닉 방문이 필요하다 |  |
 
+### 만성통증과 수면 <sub>2026-08-04 · 수면_sleep-chronic-pain</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `chronic-pain-insomnia-bidirectional` | 확실 | 공식 | 만성통증과 불면증은 양방향 관계로, 통증이 수면을 방해하고 수면 부족이 통증을 악화시키는 악순환을 형성한다 |  |
+| `sleep-deprivation-lowers-pain-threshold` | 확실 | 공식 | 수면 부족은 통증역치(pain threshold)를 낮추어 같은 정도의 자극도 더 심한 통증으로 느끼게 한다 |  |
+| `insufficient-sleep-hyperarousal` | 확실 | 공식 | 수면 부족은 신체의 과다각성(hyperarousal) 상태를 초래하여 통증에 대한 감수성을 높이고 염증 반응을 증폭시킨다 |  |
+| `sleep-improves-pain-modulation` | 확실 | 공식 | 질 좋은 수면은 신체의 통증 조절 시스템을 강화하여 만성통증 관리에 중요하다 |  |
+| `cbt-i-effective-chronic-pain-insomnia` | 확실 | 공식 | 불면증에 대한 인지행동치료(CBT-I)는 수면제한, 자극조절, 이완훈련, 수면위생 교육을 병용하며, 만성통증 환자의 불면증 개선에 효과적이다 |  |
+| `cbt-i-recommended-first-line-treatment` | 확실 | 공식 | 만성통증과 불면증 환자의 초기 치료로 CBT-I를 시행할 것이 강하게 권고되며, 약물 치료보다 효과가 더 지속적이다 |  |
+| `sleep-restriction-therapy-insomnia` | 확실 | 공식 | 수면제한 치료는 침대에서의 시간을 실제 수면 시간에 가깝게 제한하여 수면의 질을 높이는 CBT-I의 핵심 기법이다 |  |
+| `relaxation-training-pain-sleep` | 확실 | 공식 | 진행성 근육이완훈련(progressive muscle relaxation)과 명상은 신체의 긴장을 풀어 통증을 완화하고 수면 진입을 돕는다 |  |
+| `pain-insomnia-vicious-cycle-breaking` | 확실 | 공식 | 통증-불면증 악순환을 끊기 위해서는 통증 관리와 수면 관리를 동시에 진행해야 하며, 신경과·정형외과·정신건강의학 협진이 효과적이다 |  |
+| `chronic-pain-sleep-clinic-referral` | 확실 | 공식 | 만성통증으로 인한 불면증이 2주 이상 지속되거나, 생활 기능 장애가 있으면 수면 클리닉이나 통증 관리 전문가 상담이 필요하다 |  |
+
 ### 수면부채와 인지수행 저하 <sub>2026-07-31 · sleep-debt-cognitive-performance</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4335,6 +4514,36 @@
 |---|---|---|---|---|
 | `reduced-slow-wave-sleep-short-stature-risk` | 확실 | 공식 | 어린이의 서파수면(slow wave sleep, 깊은 수면) 감소가 저신장(short stature)의 위험 증가와 연관된다는 단면 연구 결과가 있다. | 수면 / 어린이 발달 / 성장호르몬·신장 / 2025 / 글로벌 |
 | `sleep-fragmentation-neurodevelopment-pediatric-icu` | 확실 | 공식 | 소아 중환자실에서의 수면 단편화(sleep fragmentation)가 신경발달 결과에 영향을 미친다는 메커니즘 검토가 있다. | 수면 / 어린이 발달 / 임상 중증·신경발달 / 2025 / 글로벌 |
+
+### 수면과 심장 건강·혈압·부정맥 <sub>2026-08-04 · 수면_sleep-heart-health</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `sleep-deprivation-sympathetic-activation` | 확실 | 공식 | 수면 부족 시 교감신경계가 활성화되어 혈관이 수축하고 혈압이 상승한다 |  |
+| `sleep-deprivation-systolic-bp-increase` | 확실 | 공식 | 만성적인 수면 부족은 수축기 혈압을 평균 5~10mmHg 정도 상승시킨다 |  |
+| `sleep-deprivation-cardiovascular-risk` | 확실 | 공식 | 수면 부족은 고혈압, 심근경색, 뇌졸중, 부정맥 같은 심혈관계 질환의 발병 위험을 명확하게 증가시킨다 |  |
+| `short-sleep-duration-heart-risk` | 확실 | 공식 | 수면 시간이 7시간 미만인 사람들의 심장질환 발병 위험이 증가하며, 6시간 미만인 경우 뇌졸중과 심근경색 위험이 약 2배 높다 |  |
+| `sleep-deprivation-hormone-stress-response` | 확실 | 공식 | 수면 부족 시 스트레스 호르몬(코르티솔), 교감신경 활성화, 갑상선 호르몬 증가 등 신경내분비 반응이 일어나 혈압과 심박수가 상승한다 |  |
+| `sleep-apnea-oxygen-desaturation-cardiovascular` | 확실 | 공식 | 수면무호흡증이 반복되면 혈중 산소포화도가 저하되어 고혈압, 부정맥, 심근경색, 뇌졸중의 위험이 증가한다 |  |
+| `adequate-sleep-cardiovascular-protection` | 확실 | 공식 | 성인에게 권장되는 충분한 수면 시간(7~8시간)을 유지하면 심혈관 건강을 효과적으로 보호할 수 있다 |  |
+| `heart-rate-variability-sleep-quality` | 확실 | 공식 | 충분하고 질 좋은 수면은 심박변이(HRV)를 정상화하여 자율신경계 균형을 유지하는 데 중요한 역할을 한다 |  |
+| `sleep-improvement-blood-pressure-management` | 확실 | 공식 | 수면 시간을 늘리거나 수면의 질을 개선하면 혈압을 낮출 수 있으므로, 고혈압 관리의 중요한 비약물적 개입이다 |  |
+| `arrhythmia-sleep-deprivation-risk` | 논쟁 🔶 | 공식 | 만성적인 수면 부족은 부정맥 발생 위험을 높이며, 특히 심방세동(atrial fibrillation) 위험이 증가한다 |  |
+
+### 수면과 편두통 <sub>2026-08-04 · 수면_sleep-migraine</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `migraine-sleep-deprivation-trigger` | 확실 | 공식 | 수면 부족은 편두통의 주요 유발 인자 중 하나로, 충분한 수면을 취하지 못하면 신체가 스트레스 상태에 빠져 편두통 발생 위험이 증가한다 |  |
+| `migraine-sleep-excess-also-trigger` | 확실 | 공식 | 과도한 수면도 편두통을 유발할 수 있으므로, 과다수면 후 두통 발생은 흔한 패턴이다 |  |
+| `migraine-common-triggers` | 확실 | 공식 | 편두통의 흔한 유발 인자는 고혈압, 수면부족, 스트레스, 정서적 변화, 소음, 생리 주기이다 |  |
+| `regular-sleep-schedule-migraine-prevention` | 확실 | 공식 | 규칙적인 수면 일정을 유지하기(매일 같은 시간에 자고 일어남)는 편두통 발생 빈도를 줄이는 비약물적 예방법이다 |  |
+| `migraine-sleep-duration-7-8hours` | 확실 | 공식 | 편두통 환자에게 권장되는 수면 시간은 7~8시간으로, 일관된 수면 시간 유지가 증상 악화를 방지한다 |  |
+| `sleep-hygiene-pre-bedtime-relaxation` | 확실 | 공식 | 자기 전에 긴장을 푸는 방법을 습관화하기(명상, 점진적 근육 이완, 따뜻한 목욕)는 편두통 예방에 도움이 된다 |  |
+| `sleep-environment-dark-cool-quiet` | 확실 | 공식 | 어둡고, 시원하고(18~21°C), 조용한 수면 환경 조성은 수면의 질을 높여 편두통 예방에 기여한다 |  |
+| `caffeine-limit-sleep-migraine` | 확실 | 공식 | 카페인은 수면의 질을 해치고 편두통을 악화시킬 수 있으므로, 편두통 환자는 오후 3시 이후 카페인 섭취를 제한해야 한다 |  |
+| `migraine-prophylactic-treatment-inadequate-sleep` | 확실 | 공식 | 편두통 예방약의 효과는 충분한 수면을 전제로 하므로, 수면이 부족하면 약물 치료의 효율이 저하된다 |  |
+| `migraine-sleep-disturbance-vicious-cycle` | 확실 | 공식 | 편두통이 수면을 방해하고, 수면 부족이 다시 편두통을 악화시키는 악순환 구조가 형성되므로, 조기에 신경과 진료를 받아 악순환 차단이 중요하다 |  |
 
 ### 사회적 시차와 월요일 피로 <sub>2026-07-31 · social-jetlag-monday</sub>
 
@@ -4376,6 +4585,21 @@
 | `cognitive-behavioral-therapy-insomnia-antidepressant-brain` | 확실 | 공식 | 불면증에 대한 인지행동치료(CBT-I)의 항우울 효과가 전전두 변연 뇌 구조(fronto-limbic brain)와 수면 메커니즘의 변화를 통해 매개된다. | 수면 / 청소년·성인 정신건강 / 불면증 치료와 우울증 / 2026 / 글로벌 |
 | `intergenerational-depression-transmission-network-analysis` | 확실 | 공식 | 모-청소년 간 우울증의 세대간 전달이 네트워크 분석으로 드러났으며, 수면 패턴의 일관성이 이 관계의 한 경로일 수 있다. | 수면 / 청소년 정신건강 / 세대간 전달·가족 시스템 / 2026 / 글로벌 |
 
+### 이명과 수면 <sub>2026-08-04 · 수면_tinnitus-sleep</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `tinnitus-prevalence-adult-population` | 확실 | 공식 | 성인 중 약 5%는 이명 증상이 있으며, 그 중 1%는 수면장애, 집중력 저하, 우울증 등의 이차 증상으로 생활에 심각한 장애를 경험한다 |  |
+| `tinnitus-sleep-disruption-mechanism` | 확실 | 공식 | 이명이 수면을 방해하는 이유는 조용한 수면 환경에서 이명음이 더 크게 들리고, 음향 자극이 뇌의 각성 시스템을 활성화하기 때문이다 |  |
+| `tinnitus-attention-focus-worsens-perception` | 확실 | 공식 | 이명에 신경을 집중하고 생각할수록 음향 인지가 악화되므로, 신경을 쓰지 않도록 마음의 전환이 증상 완화의 핵심이다 |  |
+| `tinnitus-sound-masking-white-noise` | 확실 | 공식 | 백색소음이나 환경음(창문 바람음, 빗소리, 새소리)을 깔아주면 이명을 상대적으로 덜 느끼게 하여 수면 진입을 돕는다 |  |
+| `tinnitus-asmr-effective-for-some` | 논쟁 🔶 | 후기 | 일부 이명 환자들은 ASMR(자율감각 경락 반응) 음향 콘텐츠가 마음을 진정시켜 수면에 도움이 된다고 보고한다 |  |
+| `tinnitus-stress-sleep-bidirectional` | 확실 | 공식 | 이명으로 인한 스트레스가 수면을 방해하고, 수면 부족이 다시 이명을 악화시키는 악순환 구조가 형성된다 |  |
+| `tinnitus-sleep-hygiene-stress-management` | 확실 | 공식 | 규칙적인 수면 시간, 조용하면서도 백색소음이 깔린 수면 환경, 카페인·알코올 제한, 스트레스 관리가 이명 환자의 수면 개선에 효과적이다 |  |
+| `tinnitus-retraining-therapy-trt` | 확실 | 공식 | 이명 재훈련 치료(Tinnitus Retraining Therapy, TRT)는 이명에 대한 신경계의 자동 반응을 줄이고 적응시키는 최신 치료법으로, 대부분의 환자가 호전을 보인다 |  |
+| `tinnitus-hearing-aid-masking-benefit` | 확실 | 공식 | 청력 손실이 동반된 이명 환자는 보청기 착용이 청력을 보정하면서 동시에 음향 차폐(masking) 효과를 제공하여 수면 개선에 도움이 된다 |  |
+| `tinnitus-red-flag-sleep-depression-consultation` | 확실 | 공식 | 이명으로 인한 수면 방해가 2주 이상 지속되거나 우울증 증상(무기력, 절망감)이 동반되면, 이비인후과와 정신건강의학과 협진이 필요하다 |  |
+
 ## 수면과학
 
 ### 자기 전 음주와 수면의 질 <sub>2026-08-04 · alcohol-sleep-quality</sub>
@@ -4389,6 +4613,30 @@
 | `alcohol-timing-bedtime-importance` | 확실 | 공식 | 입면 시간에 가까울수록 음주의 수면 방해 정도가 크다. |  |
 | `alcohol-emotional-memory-impact` | 확실 | 공식 | REM 억제로 인한 감정 조절·학습·기억 공고화(memory consolidation) 기능 저하가 발생한다. |  |
 
+### 운동선수의 수면과 회복 <sub>2026-08-04 · athlete-sleep-recovery</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `sleep-growth-hormone-muscle-repair` | 확실 | 공식 | 깊은 수면 중에 성장호르몬(growth hormone)이 분비되어 근육 단백질 합성과 조직 회복을 촉진하며, 일일 성장호르몬 분비의 최대 75%가 수면 중에 일어난다. | 성인 / 수면 / 성장호르몬과 근육 회복 / 깊은 수면 / 일반 |
+| `rem-sleep-motor-learning` | 확실 | 공식 | REM 수면은 운동 학습의 신경 회복과 기억 고착(motor memory consolidation)을 담당하여 운동 기술 습득과 개선에 필수적이다. | 운동선수 / 수면 / 운동 학습과 신경 회복 / 훈련 후 야간 / 신경생리학 |
+| `sleep-extension-performance-stanford` | 확실 | 공식 | Stanford 대학교의 수면 연장 연구에서 수영선수는 500m 거리를 0.5초 빠르게 헤엄쳤고, 반응 시간은 0.15초 개선되었으며, 농구선수는 스프린트 시간 4% 개선, 자유투 정확도 9% 향상, 3점슛 정확도 9.2% 향상을 보였다. | 대학 운동선수 / 수면 / 수면 연장의 운동 수행 개선 / 수주간 / 미국 |
+| `sleep-extension-55min-performance` | 확실 | 공식 | 2025년 무작위 교차 설계 연구에서 단 하루의 약 55분 수면 증가가 신체 및 인지 수행을 현저히 향상시켰다. | 운동선수 / 수면 / 단회 수면 연장의 즉시 효과 / 1박 / 연구실 |
+| `sleep-extension-precompetition-5days` | 확실 | 공식 | 대회 전 5-7일간 하루 1-2시간의 수면 연장은 급성 수면 부족으로 인한 인지 장애를 최대 60% 감소시키고, 반응 시간 저하를 완화시킨다. | 운동선수 / 수면 / 선제적 수면 연장의 보호 효과 / 대회 전 5-7일 / 스포츠 의학 |
+| `deep-sleep-glycogen-replenishment` | 확실 | 공식 | 깊은 수면(Stage 3-4) 중에 근육 글리코겐(muscle glycogen)이 재충전되고, 에너지 저장이 회복되어 다음 운동 세션의 지구력을 보장한다. | 운동선수 / 수면 / 에너지 저장 회복 / 깊은 수면 / 생리학 |
+| `sleep-deprivation-metabolic-cost` | 확실 | 공식 | 급성 수면 부족은 깨어 있기 위한 대사 비용을 증가시키고, 운동 후 회복을 저해하며, 대사, 인지, 염증 경로를 통해 운동 수행을 악화시킨다. | 운동선수 / 수면 / 수면 부족의 다층적 성과 해 / 단회 수면 부족 / 스포츠 과학 |
+| `circadian-chronotype-alignment-sleep-quality` | 확실 | 공식 | 순환생리 리듬이 일관된 시간에 맞춰 자고 자신의 크로노타입과 일치한 수면 시간은 불규칙하거나 크로노타입 불일치 수면보다 더 나은 수면 구조를 만든다. | 운동선수 / 수면 / 수면 일관성과 크로노타입 정렬 / 장기 패턴 / 스포츠 의학 |
+| `rugby-sleep-extension-limitation` | 확실 | 공식 | 팀 스포츠 운동선수를 대상으로 한 연구에서 야간 훈련 후 수면 연장 목표 설정(10시간)에도 불구하고, 실제 수면은 약 7시간(기저선 대비 1시간 증가)에 그쳤으며, 오히려 수면 분절(fragmentation)과 수면 효율 악화를 보였다. | 운동선수 / 수면 / 야간 훈련 후 급성 수면 연장의 실제 효과 / 단회 훈련 후 / 팀 스포츠 |
+
+### 크로노타입과 업무 생산성 <sub>2026-08-04 · chronotype-productivity</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `chronotype-optimal-performance-gain` | 확실 | 공식 | 개인의 서주기 최적 시간대에 업무를 할 때 최적이 아닌 시간대에 비해 10-20% 더 나은 성과를 낸다. | 성인 업무자 / 수면 / 크로노타입 최적 시간대의 생산성 효과 / 일일 단회 / 국제 |
+| `evening-chronotype-work-impairment` | 확실 | 공식 | 저녁형(evening chronotype) 사람들은 아침형(morning chronotype)에 비해 업무 능력이 더 떨어지며, 특히 업무 생산성 저하와 건강 관련 생산성 손실(건강 문제로 인한 결근·저하)이 더 크다. | 성인 노동자 / 수면 / 크로노타입별 업무 능력 차이 / 일상 근무 시간 / 국제 |
+| `social-jetlag-sleep-debt` | 확실 | 공식 | 사회적 제약(고정된 근무 시간)과 개인 크로노타입 간 불일치는 '사회적 시차'를 일으키며, 이는 주중 '수면 부채'를 쌓아 피로와 인지 능력 저하를 초래한다. | 성인 / 수면 / 사회적 시차와 수면 부채 / 주중 누적 / 국제 |
+| `evening-type-adhd-symptoms-morning-task` | 확실 | 공식 | 저녁형 크로노타입의 ADHD 증상 대학생들은 아침 인지 과제(주의력·작업 기억)에서 저녁 과제보다 상당히 더 느린 반응 시간과 주의력 결손을 보인다. | 대학생 / 수면 / ADHD 증상과 인지 과제 성과 / 아침 vs 저녁 단일 세션 / 미국 |
+| `circadian-misalignment-long-term-disease` | 확실 | 공식 | 내부 생물시계와 근무·수면 일정의 불일치는 장기적으로 사고·부상 위험 증가, 생산성 저하, 나아가 만성질환 위험 증가와 연결된다. | 성인 / 수면 / 순환생리 불일치의 중장기 건강 영향 / 수개월~수년 / 국제 |
+
 ### 저녁 운동 시간대와 수면 품질 <sub>2026-08-04 · exercise-timing-sleep</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4398,6 +4646,53 @@
 | `evening-exercise-rem-suppression` | 확실 | 공식 | 저녁 고강도 운동은 REM 수면을 억제하고 REM 잠복기를 연장하며, 특히 입면 30분~4시간 범위의 운동이 가장 영향이 크다. |  |
 | `morning-vs-evening-exercise` | 논쟁 🔶 | 공식 | 아침 운동은 코르티솔 감소·수면의 질 개선·야간 각성 시간 단축을 가져오는 반면, 저녁 운동은 순환 호르몬 리듬을 변경하고 모든 경우 수면을 방해하지는 않아도 개인차가 크다. |  |
 | `body-temperature-cooling` | 확실 | 공식 | 운동 후 코어체온이 정상으로 복귀하는 냉각 기간은 아침 운동일수록 짧아서 입면까지 충분한 시간을 가지지만, 저녁 운동은 냉각이 지연되어 자연스러운 체온 하강 리듬을 방해한다. |  |
+
+### 낮잠 문화와 시에스타의 생산성 효과 <sub>2026-08-04 · nap-culture-siesta</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `biphasic-sleep-historical-pattern` | 확실 | 공식 | 양분(biphasic) 수면은 산업화 이전 전 세계 다양한 문화에서 널리 관찰된 패턴으로, 15-20세기에 걸쳐 500개 이상의 '첫 수면(first sleep)'과 '둘째 수면(second sleep)' 언급이 의료 문헌, 일기, 법정 기록, 문학에 남아 있다. | 산업화 전 인구 / 수면 / 양분 수면 문화적 패턴의 역사적 증거 / 15-20세기 / 전 세계 |
+| `siesta-mediterranean-structure` | 확실 | 공식 | 시에스타(siesta)는 지중해·라틴아메리카 전통으로, 전형적으로 야간 수면 5-6시간과 점심 후 하루 중간의 낮잠 60-90분으로 구성된다. | 지중해·라틴아메리카 문화권 / 수면 / 시에스타의 전형적 구조 / 정오 전후 / 지중해, 라틴아메리카 |
+| `global-afternoon-dip-circadian` | 확실 | 공식 | 오후 2-4시 사이에 에너지와 인지 수행능력의 자연스러운 저하는 식사 섭취와 무관하게 모든 인구에서 관찰되는 순환생리적 현상이다. | 일반 성인 / 수면 / 하루 중 오후의 서주기 각성 저하 / 오후 2-4시 / 일반 |
+| `nasa-26min-nap-alertness-54percent` | 확실 | 공식 | NASA 연구에서 26분의 낮잠이 조종사의 경각성을 54% 향상시키고 수행 능력을 34% 개선시켰다. | 항공 조종사 / 수면 / 초단시간 낮잠의 각성 및 수행 효과 / 26분 단회 / 항공 |
+| `midday-nap-cognitive-improvement` | 확실 | 공식 | 오후 초 낮잠을 규칙적으로 취하는 사람들은 인지 수행능력에서 현저한 개선을 보인다. | 일반 성인 / 수면 / 낮잠과 인지 수행의 연관 / 오후 초 / 일반 |
+| `biphasic-sleep-modern-adoption-concerns` | 확실 | 공식 | 양분 수면을 실행하는 사람들은 단상(monophasic) 수면자에 비해 수면의 질이 더 낮고 주간 졸음이 더 많으며, 장시간 낮잠은 각성 시 수면관성을 유발할 수 있다. | 양분 수면 시도자 / 수면 / 현대 양분 수면의 부작용 / 일상적 실행 / 현대 |
+| `biphasic-sleep-evidence-insufficient` | 확실 | 공식 | 양분 수면이 단상 수면보다 자연스럽거나 건강에 더 나은지를 판정할 충분한 증거는 없으며, 일관성과 24시간 총 수면 시간(7-9시간) 유지가 가장 중요하다. | 일반 인구 / 수면 / 양분 vs 단상 수면의 건강 효과 비교 / 장기 생활 패턴 / 일반 |
+
+### 야식증후군과 수면의 관계 <sub>2026-08-04 · night-eating-syndrome</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `nes-definition-diagnostic` | 확실 | 공식 | 야식증후군(Night Eating Syndrome, NES)은 식사 후에 하루 칼로리의 25% 이상을 밤에 섭취하고, 저녁/야간 식사 에피소드에 대한 기억과 인식이 있으며, 임상적 고통이나 일상 기능 저해를 초래하는 진단 가능한 섭식 장애이자 순환생리 장애다(DSM-V 307.59). | 환자 / 수면 / 야식증후군의 임상 정의 / 진단 시점 / 임상 |
+| `nes-original-description-1955` | 확실 | 공식 | 야식증후군은 1955년 처음 기술되었으며, 아침 식욕부진(morning anorexia), 야간 과식(nocturnal hyperphagia, 하루 칼로리 25% 야간 섭취), 불면증으로 특징지어진다. | 환자 / 수면 / 증후군의 역사적 처음 기술 / 1955년 / 의학 |
+| `nes-circadian-hormone-disruption` | 확실 | 공식 | 야식증후군은 순환생리 리듬의 교란으로, 멜라토닌(melatonin)의 야간 상승이 현저히 둔화되고, 렙틴(leptin)이 밤에 증가하지 않으며, 코르티솔(cortisol)이 24시간 내내 증가된 상태를 보인다. | 환자 / 수면 / 순환생리 호르몬의 이상 / 24시간 / 임상 |
+| `melatonin-blunting-sleep-maintenance` | 확실 | 공식 | 야식증후군 환자의 멜라토닌 야간 상승 감소는 수면 유지 불면증을 초래하는 것으로 시사되며, 렙틴 억제 실패는 야간 식욕 억제 불능을 설명한다. | 환자 / 수면 / 호르몬 이상과 증상의 기전 / 야간 / 임상 |
+| `nes-insomnia-bidirectional` | 확실 | 공식 | 야식증후군과 불면증은 양방향 관계로, 수면 곤란이 야간 섭식으로 이어지고, 야간 섭식은 다시 수면을 더욱 분절(fragmentation)시킨다. | 환자 / 수면 / 불면증과의 악순환 관계 / 장기 반복 / 임상 |
+| `nes-prevalence-us` | 확실 | 공식 | 야식증후군은 미국 인구의 약 1.5%(약 500만 명)에 영향을 미친다. | 성인 / 수면 / 야식증후군 유병률 / 현재 / 미국 |
+| `nes-treatment-ssri-cbt-light` | 확실 | 공식 | 야식증후군의 치료에는 선택적 세로토닌 재흡수 억제제(SSRI), 인지행동치료(CBT), 광치료(light therapy)를 통한 순환생리 재설정, 멜라토닌 보충제, 진행적 근육이완, 체중 관리, 최면치료가 포함된다. | 환자 / 수면 / 다층적 치료 접근 / 장기 치료 / 임상 |
+| `nes-diagnostic-criteria-full` | 확실 | 공식 | 야식증후군의 진단 기준은 ①저녁 식사 후 또는 밤 중 강한 식욕, ②수면 입면 및 수면 유지 불면증, ③밤에 먹어야 다시 잠들 수 있다는 신념, ④저녁 시간대에 우울 기분이 악화되는 4가지를 포함한다. | 환자 / 수면 / 진단 기준 전문 / 진단 평가 / 임상 |
+
+### 취침 전 생각 폭주와 인지적 각성 <sub>2026-08-04 · racing-thoughts-bedtime</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `racing-thoughts-distinct-from-worry` | 확실 | 공식 | 취침 전 '생각 폭주(racing thoughts)'는 반추(rumination)나 걱정(worry)과는 다른 현상으로, 생각 폭주와 우울증 증상은 불면증 심각도와 연관되지만, 반추와 걱정은 그렇지 않다. | 불면증 환자 / 수면 / 생각 폭주 vs 반추/걱정의 구분 / 취침 전 및 야간 / 임상 |
+| `racing-thoughts-sleep-onset-insomnia` | 확실 | 공식 | 생각 폭주는 저녁과 취침 전 시간대에 현저히 증가하며, 특히 수면 입면 불면증 환자에게서 두드러진다. 반면 수면 유지 불면증 환자에게서는 이런 증가가 관찰되지 않는다. | 불면증 환자 / 수면 / 불면증 유형별 생각 폭주 시간대 패턴 / 저녁~취침 / 임상 |
+| `cognitive-hyperarousal-mechanism` | 확실 | 공식 | 취침 전 인지적 과각성(cognitive hyperarousal)은 뇌의 과도한 각성 상태로, 특히 전두엽·전방 측두엽·전방 대상회피(frontal, anterior temporal, anterior cingulate)에서 포도당 대사 증가로 나타난다. | 불면증 환자 / 수면 / 인지적 과각성의 신경생리 메커니즘 / 수면 중 / 신경영상 |
+| `rem-fragmentation-hyperarousal` | 확실 | 공식 | 불면증 환자의 REM 수면은 방대한 수의 각성 사건과 안구 운동으로 특징지어지며('불안정한 REM'), 이는 깨어있을 때 같은 생각-유사 야간 정신 활동(wake-like mental content)과 더 쉬운 회상을 초래한다. | 불면증 환자 / 수면 / REM 수면 구조의 변화 / 야간 수면 / 수면실 |
+| `cognitive-arousal-cyclothymic-anxiety` | 확실 | 공식 | 취침 전 인지적 생각 폭주는 순환기질(cyclothymic traits)과 불안과 특히 강한 관련이 있으며, 이는 과각성(hyperarousal)과 정서 조절 부전의 내재적 특성을 시사한다. | 불면증 환자 / 수면 / 생각 폭주와 기분 장애 기질의 연관 / 수면 장애 진단 시점 / 임상 |
+| `cbt-insomnia-racing-thoughts` | 확실 | 공식 | 불면증 인지행동치료(CBT-I)는 야간 스트레스와 생각 폭주를 완화하고, 동시에 수면에 대한 부적응적 신념을 교정하는 방식으로 작용한다. | 불면증 환자 / 수면 / 증거 기반 심리 치료 / 4-8주 치료 / 임상 |
+
+### 수면관성(sleep inertia)과 아침 멍함 <sub>2026-08-04 · sleep-inertia-grogginess</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `sleep-inertia-definition` | 확실 | 공식 | 수면관성(sleep inertia)은 깨어났을 때 느끼는 멍하고 무거운 느낌, 혼동, 반응 속도 저하, 인지 기능 감소의 일시적 상태다. | 일반 인구 / 수면 / 수면관성 현상 / 각성 직후 / 일반 |
+| `sleep-inertia-duration-general` | 확실 | 공식 | 수면관성은 일반적으로 15-60분 지속되며, 깊은 수면(slow-wave sleep) 중간에 깨어나면 30-90분 이상 지속될 수 있다. | 일반 성인 / 수면 / 수면관성 지속 시간 / 각성 후 회복 / 임상 |
+| `sleep-inertia-korean-study-16min` | 확실 | 공식 | 한국의 대규모 유병률 연구(n=2,355)에서 성인의 평균 아침 수면관성은 약 16분이며, 여성이 남성보다 약간 더 길게 보고했다. | 한국 성인 / 수면 / 아침 수면관성 지속 시간 / 각성 직후 자가 보고 / 한국 |
+| `anxiety-sleep-inertia-14min-excess` | 확실 | 공식 | 불안 장애를 가진 사람들은 불안이 없는 사람에 비해 아침 수면관성이 약 14분 더 길다. | 한국 성인 / 수면 / 불안 장애와 수면관성의 연관 / 아침 각성 / 한국 |
+| `sleep-inertia-associated-factors` | 확실 | 공식 | 수면관성을 악화시키는 요인은 저녁형 크로노타입, 불면증 증상, 지나친 주간 졸음이며, 완화 요인은 충분한 수면 시간과 아침형 크로노타입이다. | 한국 성인 / 수면 / 수면관성 관련 요인 분석 / 일상 수면 패턴 / 한국 |
+| `sleep-inertia-deep-sleep-stage-severity` | 확실 | 공식 | 깊은 수면(Stage 3) 중간에 깨어나면 가장 심하고 오래 지속되는 수면관성이 발생하며, 가벼운 수면 단계에서 깨어나면 15-30분 안에 사라진다. | 일반 성인 / 수면 / 각성 시점의 수면 단계별 심각도 / 단회 각성 / 임상 |
 
 ### 수면부족과 체중·식욕의 관계: 그렐린과 렙틴 <sub>2026-08-04 · sleep-weight-appetite</sub>
 
@@ -4614,6 +4909,16 @@
 
 ## 잠자리연구소
 
+### 라벤더 에센셜 오일과 아로마테라피의 수면 개선 효과 및 근거 수준 <sub>2026-08-04 · 라벤더 향이 잠에 도움될까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `lavender-ema-regulatory-approval` | 확실 | 공식 | 유럽 의약품청(EMA)은 라벤더 차를 비롯한 라벤더 꽃 제제가 피로와 가벼운 스트레스 증상 완화, 수면 개선에 사용될 수 있음을 인정했다. |  |
+| `lavender-capsule-rct-ijpcp` | 확실 | 공식 | International Journal of Psychiatry in Clinical Practice에 발표된 임상시험에서 라벤더 에센셜 오일 80mg 캡슐이 긴장, 불면증, 우울감을 유의미하게 완화시켰으며 부작용은 보고되지 않았다. |  |
+| `lavender-oil-southampton-study-sleep-quality` | 논쟁 🔶 | 공식 | 영국 사우샘프턴 대학 연구에서 라벤더 오일 사용자가 미사용자 대비 수면질이 20% 향상되었다고 보고했다. |  |
+| `lavender-active-compounds-linalool` | 확실 | 공식 | 라벤더 에센셜 오일의 주요 활성 성분은 리날올(linalool)과 리날릴 아세테이트(linalyl acetate)이다. |  |
+| `lavender-sleep-rct-evidence-level` | 확실 | 공식 | 라벤더의 수면 개선 효과는 RCT 근거가 존재하나, 현재까지 대규모 다기관 메타분석이 부족하여 권고 수준은 '조건부' 또는 '제한적 근거'로 평가된다. |  |
+
 ### 수면 중 이갈이(bruxism)의 원인·기전·치아 손상·대처 <sub>2026-08-04 · bruxism-teeth-grinding</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4626,6 +4931,30 @@
 | `bruxism-night-guard-dental-splint` | 확실 | 공식 | 이갈이 관리의 표준 치료는 교합 안정장치(dental splint, night guard)로, 위아래 어금니 사이에 보호막을 두어 직접적인 치아 마모와 손상을 방지한다. | sleep / bruxism / treatment-standard / all / global |
 | `bruxism-muscle-relaxer-limited-evidence` | 논쟁 🔶 | 공식 | 근육이완제(예: 디아제팜)를 자기 전에 복용하면 이갈이를 줄일 수 있지만, 실제 임상 시험에서는 수면 중 그라인딩 감소에 대한 명확한 증거가 부족하다. | sleep / bruxism / pharmacological / all / global |
 | `bruxism-facial-relaxation-exercises` | 확실 | 공식 | 턱 근육 이완 운동(facial relaxation exercises)과 목·머리 부위 마사지는 일부 환자의 턱/목 통증을 경감시키고 근육 긴장을 줄인다. | sleep / bruxism / conservative-treatment / all / global |
+
+### 성인 우울증과 불면의 연관성 및 메커니즘 <sub>2026-08-04 · 우울증과 불면, 무엇이 먼저일까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `depression-insomnia-bidirectional` | 확실 | 공식 | 우울증과 불면은 양방향 인과관계를 가지며, 불면이 우울증의 위험 요소이면서 동시에 우울증이 불면을 유발한다. |  |
+| `depression-insomnia-medication-futility` | 확실 | 공식 | 우울증으로 인한 불면은 수면제 단독 투여로는 해결되지 않으며, 우울증 치료가 병행되어야 불면도 자연스럽게 개선된다. |  |
+| `depression-neurochemistry-serotonin` | 확실 | 공식 | 우울증의 기저 원인은 뇌 내 신경전달물질(세로토닌, 노르에피네프린 등)의 불균형으로, 이것이 수면-각성 리듬을 교란한다. |  |
+| `depression-insomnia-comorbid-risk` | 확실 | 공식 | 불면증은 만성질환, 만성통증 등의 건강 문제와 함께 우울증 발생 위험을 높이는 독립적 위험 요소다. |  |
+
+### 자각몽(루시드드림)의 신경과학적 기전과 수면질 영향 <sub>2026-08-04 · lucid-dreaming</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `lucid-dreaming-definition` | 확실 | 공식 | 자각몽은 꿈을 꾸면서 자신이 꿈 상태임을 인식하고 메타인지(자기 생각을 평가하는 능력)가 활성화되는 상태다. |  |
+| `lucid-dreaming-brain-regions` | 확실 | 공식 | 자각몽 중 활성화되는 주요 뇌 영역은 전전두엽(메타인지), 전쐐기엽, 측두-후두엽이며, 이들 사이의 통신이 증가한다. |  |
+| `lucid-dreaming-eeg-activity` | 확실 | 공식 | 자각몽 중 뇌파 패턴은 정상 REM과 달리 후부 지역의 알파파(8-12Hz) 연결성이 증가하고, 우측 중앙·두정엽 지역의 베타파는 감소하며, 초기 안구 운동 신호 시 우측 측두-후두 지역(특히 전쐐기엽)의 감마1파(30-36Hz)가 증가한다. |  |
+| `lucid-dreaming-induction-methods` | 확실 | 공식 | 자각몽 유도 방법은 세 가지가 주요하다: MILD(니모닉 유도)는 5시간 후 깨어나 30-120분 깨어있다 다시 누우며, WBTB(자연스럽게 깨서 다시 누우기)는 아침에 자연히 깬 뒤 낮잠 중 유도하는 방식이고, 현실 확인(Reality Testing)은 깨어있을 때 자주 하는 행동이 꿈에도 나타나 꿈임을 깨닫게 하는 방법이다. |  |
+| `lucid-dreaming-sleep-fragmentation` | 확실 | 공식 | 특정 자각몽 유도 방법(MILD, WBTB)은 수면 단편화를 초래할 수 있으며, 2020년 연구에서 자각몽과 더 많은 깬 상태 변환 및 가벼운 수면으로의 이행이 연관되었다. |  |
+| `lucid-dreaming-sleep-quality` | 논쟁 🔶 | 공식 | 자각몽 빈도와 직접적인 수면 방해 사이에는 직접적 연관이 없지만, 특정 유도 방법과 개인의 수면 조건에 따라 수면질이 악화될 수 있다. |  |
+| `lucid-dreaming-mental-health-benefits` | 확실 | 공식 | 자각몽은 악몽 빈도 감소와 PTSD 관련 악몽 치료에 도움이 되며, 미국 수면의학회는 악몽장애와 PTSD 악몽에 대한 자각몽 치료를 권고한다. |  |
+| `lucid-dreaming-psychiatric-risks` | 확실 | 공식 | 자각몽이 정신분열병, 양극성장애, 정신병 등 기존 정신질환을 악화시킬 수 있다. |  |
+| `lucid-dreaming-side-effects` | 확실 | 공식 | 자각몽의 주요 부작용은 수면마비 가능성 증가, 현실과 꿈의 경계 혼동(해리), 악성 악몽이다. |  |
+| `lucid-dreaming-practical-uses` | 확실 | 공식 | 자각몽은 두려움과 트라우마 극복, 운동 훈련, 문제 해결, 바람 실현, 영적 발달에 활용된다. |  |
 
 ### 멜라토닌 보충제의 효과·안전성·국내 처방 규정 <sub>2026-08-04 · melatonin-supplement-truth</sub>
 
@@ -4642,6 +4971,45 @@
 | `melatonin-adverse-effects-common` | 확실 | 공식 | 멜라토닌의 부작용은 드물지만 두통, 다음날 졸음, 생생한 꿈(vivid dreams), 메스꺼움이 보고되었으며, 개인차가 크다. | melatonin / adverse-effects / reported / all / global |
 | `melatonin-contraindication-autoimmune-anticoagulant` | 확실 | 공식 | 자가면역질환, 혈액응고제(항응고제) 복용자, 임신·수유 중인 여성, 우울증·발작 장애 환자는 멜라토닌 복용 전 의료 전문가와 상담해야 한다. | melatonin / contraindications / medical-conditions / all / global |
 
+### 비염·코막힘으로 인한 구강호흡이 수면질에 미치는 영향 및 완화법 <sub>2026-08-04 · 코가 막혀 입으로 자는 밤, 어떻게 뚫을까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `nasal-congestion-oral-breathing-mechanism` | 확실 | 공식 | 비강 호흡이 충분하지 못할 때 구강호흡이 일어나며, 이는 코골이와 폐쇄성 수면무호흡을 악화시킨다. |  |
+| `nasal-congestion-sleep-quality-deterioration` | 확실 🔶 | 후기 | 비염으로 인한 코막힘을 방치하면 만성 비염과 수면장애로 진행할 수 있다. |  |
+| `nasal-congestion-sleep-posture-head-elevation` | 확실 | 공식 | 수면 시 상체를 15~30도 정도 높게 유지하면 비강 혈류 압력이 낮아져 코막힘 완화에 도움이 된다. |  |
+| `nasal-congestion-sleep-saline-irrigation` | 확실 | 공식 | 잠들기 전에 콧속을 생리식염수(식염수)로 세척하면 코막힘 완화에 도움이 된다. |  |
+| `nasal-congestion-sleep-lateral-position` | 확실 | 공식 | 옆으로 누워 자는 자세도 코막힘 완화에 도움이 될 수 있다. |  |
+| `indoor-humidity-nasal-health` | 확실 | 공식 | 실내 습도를 50~60%로 적절히 조절하면 비강 점막 건조를 방지하여 코막힘 완화에 도움이 된다. |  |
+| `nasal-spray-short-term-use` | 확실 | 공식 | 자기 전에 비강 스프레이(비충혈 제거제)를 사용하면 일시적으로 코막힘 완화에 도움이 될 수 있다. |  |
+| `nasal-congestion-ent-referral-criteria` | 확실 | 공식 | 3주 이상 지속되는 코막힘, 코골이를 동반하는 코막힘, 수면무호흡이 의심되는 경우는 이비인후과 진료가 필수다. |  |
+
+### 수면다원검사(polysomnography)의 대상, 절차, 비용, 급여 기준(한국) <sub>2026-08-04 · 수면다원검사, 언제 어떻게 받을까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `psg-insurance-coverage-start` | 확실 | 공식 | 수면다원검사는 2018년 7월부터 건강보험 급여 대상에 포함되었다. |  |
+| `psg-copay-amount-2026` | 확실 | 공식 | 2026년 기준 건강보험 적용 수면다원검사의 본인부담금은 약 136,000원이다. |  |
+| `psg-insurance-eligibility-criteria` | 확실 | 공식 | 건강보험 급여 대상은 코골이, 수면무호흡, 주간 졸림, 수면 각성 등 수면 관련 증상이 있으면서 진료 시 이학적 검사에서 이상 소견을 보이는 경우다. |  |
+| `psg-provider-accreditation-requirement` | 확실 | 공식 | 건강보험 급여 청구가 가능한 의료기관은 시설 기준을 충족하면서 수면다원검사 정도관리위원회에서 인증한 자격기준을 갖춘 곳만 해당한다. |  |
+| `psg-monitoring-parameters` | 확실 | 공식 | 수면다원검사는 뇌파(EEG), 안구 운동, 호흡곡선, 호흡 노력, 심전도, 산소포화도, 다리 움직임을 동시에 모니터링한다. |  |
+| `psg-procedure-timeline` | 확실 | 공식 | 수면다원검사는 약 1~2시간의 사전 준비(전극 부착 등), 야간 수면 모니터링(약 8시간), 약 2시간의 분석, 의사와의 약 1시간 상담으로 구성된다. |  |
+
+### '8시간 수면' 통념의 과학적 검증과 개인별 필요 수면량 <sub>2026-08-04 · sleep-8hour-myth</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `8hour-myth-origin` | 확실 | 공식 | 8시간 수면 규칙은 산업혁명 시대의 '8시간 노동, 8시간 여가, 8시간 수면' 이념에서 유래했으며, 과학적 필수량이 아니라 평균값이다. |  |
+| `recommended-sleep-hours-adults` | 확실 | 공식 | 미국 국립수면재단(NSF)과 미국수면의학회(AASM)는 성인(18-64세)에게 7-9시간의 야간 수면을 권장하며, 미국질병통제예방센터(CDC)는 7시간 이상을 권고한다. |  |
+| `sleep-needs-by-age` | 확실 | 공식 | 수면 필요량은 연령별로 크게 차이난다: 신생아 14-17시간, 유아(4-11개월) 12-15시간, 유아(1-2세) 11-14시간, 미취학(3-5세) 10-13시간, 학령기(6-13세) 9-11시간, 청소년(14-17세) 8-10시간, 성인(18-64세) 7-9시간, 고령(65세+) 7-8시간이다. |  |
+| `individual-variation-genetics` | 확실 | 공식 | 개인이 필요한 수면량은 유전, 나이, 건강 상태, 환경·행동 요인에 의해 결정되며, 정상 수면 필요량의 개인 차이와 일주기 리듬은 유전적으로 결정될 가능성이 높다. |  |
+| `short-sleepers-long-sleepers` | 확실 | 공식 | 일부 사람은 6시간 미만의 '단수면자(short sleeper)'이고, 다른 사람은 9시간 이상이 필요한 '장수면자(long sleeper)'다. 이는 정상적인 개인 차이다. |  |
+| `sleep-quality-indicator` | 확실 | 공식 | 8시간을 자지 못해도 안정적인 에너지, 일중 졸음 없음, 집중력 유지가 있으면 개인에게는 충분한 수면이다. |  |
+| `short-sleep-health-risks` | 확실 | 공식 | 7시간 미만의 수면은 비만, 당뇨병, 고혈압, 심질환, 뇌졸중, 우울증, 조기 사망 위험 증가와 연관되며, 면역 기능 약화, 통증 증가, 주간 집중력·수행력 저하, 실수·사고 증가를 초래한다. |  |
+| `optimal-sleep-duration-u-shaped` | 확실 | 공식 | 수면 지속시간과 건강 결과 사이에 U자형 관계가 존재한다: 7-8시간이 대사증후군 발병과 심대사 위험이 최소이고, 7시간 미만이거나 9시간 이상이면 위험이 증가한다. |  |
+| `us-adults-sleep-deprivation` | 확실 | 공식 | 미국 성인 3분의 1 이상이 평균적으로 7시간 미만의 수면을 보고한다. |  |
+| `8hour-rigid-rule-harmful` | 논쟁 🔶 | 후기 | 8시간 고집 자체가 해로울 수 있다: 필요한 시간이 7시간인 사람이 억지로 8시간을 자려 노력하면 불면증 증상이 나타날 수 있고, 9시간 이상이 필요한 사람이 8시간으로 제한되면 수면 부족 영향을 받는다. |  |
+
 ### 수면 부족과 인슐린 저항·혈당 상승·당뇨 위험 <sub>2026-08-04 · sleep-blood-sugar</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4653,6 +5021,24 @@
 | `short-sleep-diabetes-risk-epidemiology` | 확실 | 공식 | 6.5시간 미만의 수면을 보고하는 사람들은 시간이 지남에 따라 체중 증가 위험이 더 높고, 비만과 독립적으로도 인슐린 저항성과 제2형 당뇨 위험이 증가한다. | sleep / diabetes-risk / epidemiology / all / global |
 | `appetite-hormone-ghrelin-leptin` | 확실 | 공식 | 수면 부족은 렙틴(포만호르몬) 수치를 낮추고 그렐린(식욕호르몬) 수치를 높여 과식 욕구를 증가시키고, 이것이 체중 증가와 인슐린 저항성으로 이어진다. | sleep / appetite-hormone / ghrelin-leptin / all / global |
 
+### 90분 수면주기 알람 미신의 과학적 검증 <sub>2026-08-04 · sleep-cycle-90min-myth</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `sleep-cycle-average-duration` | 확실 | 공식 | 수면주기의 평균 지속시간은 90-110분이지만, 개인 간 및 개인 내 변이가 크다: 실제 범위는 70-120분이다. |  |
+| `sleep-cycle-progression` | 확실 | 공식 | 밤 동안 수면주기의 지속시간이 변한다: 첫 번째 주기는 70-80분, 이후 주기는 점진적으로 90-110분으로 증가한다. |  |
+| `nrem-rem-progression-night` | 확실 | 공식 | 밤이 진행되면서 각 단계의 구성이 변한다: 초반 주기는 깊은 수면(N3) 비중이 높고, 후반 주기는 REM 수면 시간이 길어지고 N3 시간은 줄어든다. |  |
+| `sleep-stage-percentages` | 확실 | 공식 | 전체 수면 중 NREM 수면이 약 75%, REM 수면이 약 25%를 차지하며, NREM 중에서는 N2(수면의 45%)가 가장 많고, N3(깊은 수면)이 약 25%, REM이 25%다. |  |
+| `individual-cycle-variation` | 확실 | 공식 | 개인 간 수면주기 길이의 변이는 크며(70-120분), 특히 영아는 50분 주기를 보인다. 나이가 들면서 주기는 길어진다. |  |
+| `nrem-rem-cycle-asymmetric-hypothesis` | 논쟁 🔶 | 공식 | 최신 이론(Le Bon의 비대칭 가설)은 REM 수면이 다음 REM 시작 시간을 직접 결정하는 것이 아니라, REM 후 불응기(Post-REM Refractory Period, PRRP)의 길이만 결정한다고 제안한다. 실제 다음 REM 시도는 REM 압박 충분성·NREM 완료·PRRP 종료 세 조건이 만족될 때만 나타난다. |  |
+| `90min-alarm-theory` | 확실 | 공식 | 90분 알람 이론: 깊은 수면 중에서보다 주기 끝의 가벼운 수면 중 깨면 수면관성(sleep inertia)이 적어 덜 피곤하다는 아이디어다. |  |
+| `90min-alarm-scientific-evidence-lacking` | 확실 | 공식 | 90분 알람의 이론은 그럴듯하지만, 실제 효과에 대한 과학적 증거는 부족하다. 수면 건강 재단은 수면 계산기의 가정과 조언이 과학적 증거에 기반하지 않다고 명시한다. |  |
+| `rem-sleep-easy-to-wake` | 확실 | 공식 | REM 수면은 깨어나기 상대적으로 쉬운 단계이며, REM에서 깨어난 사람들은 놀랍게도 매우 경각해 있다고 보고한다. |  |
+| `sleep-inertia-key-factor` | 확실 | 공식 | 실제로 중요한 것은 수면관성(sleep inertia)이다: 깊은 수면에서 급작스럽게 깨어나면 경각심 저하, 인지 속도 둔화, 혼란스러운 방향감각이 나타난다. 깨어나는 타이밍이 주기 경계 정렬보다 더 중요하다. |  |
+| `most-refreshed-from-rem` | 확실 | 공식 | 사람들이 가장 개운하다고 느끼는 때는 밤 늦은 시간의 REM 수면에서 깨어날 때이며, 특히 수면 부족이 없을 때 그렇다. |  |
+| `best-practice-sleep-refreshed` | 확실 | 공식 | 개운하게 아침을 맞이하는 가장 좋은 방법은 90분 알람이 아니라, 일관된 수면/기상 시간과 양질의 수면 습관 유지(규칙적 운동, 카페인 제한, 어두운 환경, 스트레스 관리)다. |  |
+| `90min-app-accuracy-question` | 확실 | 공식 | 스마트폰 수면 추적 앱이 실제 수면 단계를 정확하게 측정할 수 없으므로, 90분 계산에 기반한 알람 설정의 신뢰도가 낮다. |  |
+
 ### 수면과 면역력·감염 취약성·백신 반응 <sub>2026-08-04 · sleep-immune-function</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4662,6 +5048,26 @@
 | `sleep-deprivation-infection-risk` | 확실 | 공식 | 수면 부족(특히 4시간 이하)이 지속되면 면역 기능이 현저히 떨어지고 염증 수치가 상승하여 감염 위험이 증가한다. | sleep / infection-risk / chronic-deprivation / all / KR |
 | `vaccination-sleep-antibody-response` | 확실 | 공식 | 예방접종 전후 수면이 6시간 미만이면 항체 반응이 유의하게 감소하며, 접종 후 충분한 수면을 취한 사람은 4주 후 항체 역가가 약 2배 높다. | sleep / vaccination-response / vaccine-antibody / 2020~ / global |
 | `sleep-restriction-hematopoietic-stem-cells` | 확실 | 공식 | 만성적 수면 부족은 면역 줄기세포의 DNA 구조를 변화시켜 장기적으로 염증 질환과 심혈관 질환 위험을 높인다. | sleep / stem-cell-dna / long-term / 2022 / global |
+
+### 사건수면(몽유병·잠꼬대)의 원인, 위험도, 유전성 <sub>2026-08-04 · 자다가 걷고 말하는 몽유병과 잠꼬대</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `parasomnia-nrem-origin` | 확실 | 공식 | 몽유병과 야경증은 깊은 비렘 수면(NREM 3단계)에서 발생하며, 발생 중 의식이 몽롱하여 기억에 남지 않는다. |  |
+| `parasomnia-genetic-both-parents` | 확실 | 공식 | 부모가 모두 어렸을 때 몽유병이 있었으면 자녀의 발생 확률은 50~60%다. |  |
+| `parasomnia-genetic-one-parent` | 확실 | 공식 | 부모 중 한쪽만 어렸을 때 몽유병이 있었으면 자녀의 발생 확률은 30~40%다. |  |
+| `parasomnia-safety-injury-risk` | 확실 | 공식 | 몽유병 중 장애물에 부딪혀 신체 부상을 입을 수 있으며, 차량 운전 시 생명 위험에 이른다. |  |
+| `parasomnia-triggers-sleep-deprivation` | 확실 | 공식 | 몽유병의 주요 유발 요인은 수면 부족, 카페인 섭취(취침 수시간 전), 운동, 스트레스, 폐쇄성 수면무호흡증이다. |  |
+| `parasomnia-childhood-onset` | 확실 | 공식 | 몽유병과 야경증은 아동기 후반과 사춘기에 가장 흔하며, 대부분 성장하면서 자연 소멸한다. |  |
+
+### 갑상선 기능항진증·저하증과 수면장애의 메커니즘 <sub>2026-08-04 · 갑상선이 흔드는 잠, 항진과 저하</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `thyroid-circadian-rhythm-link` | 확실 | 공식 | 뇌의 시상하부 시상상핵(SCN)이 일주기 리듬을 조절하며, 갑상선 자극 호르몬(TSH)을 비롯한 호르몬의 분비를 조절하는 중추 역할을 한다. |  |
+| `hyperthyroidism-insomnia-anxiety` | 확실 | 공식 | 갑상선기능항진증은 심박수와 혈압 증가, 과도한 발한, 긴장과 불안감, 쉬운 흥분을 유발하여 불면증을 초래한다. |  |
+| `hypothyroidism-fatigue-hypersomnia` | 확실 | 공식 | 갑상선기능저하증은 갑상선 호르몬의 부적절한 생산으로 인해 만성 피로, 무기력, 과도한 수면(과다수면), 체중 증가, 변비, 냉감을 초래한다. |  |
+| `thyroid-diagnosis-tsh-test` | 확실 | 공식 | 갑상선 기능 이상은 TSH를 측정하는 혈액 검사로 진단할 수 있으며, TSH 상승은 저하증, 저하된 TSH는 항진증을 시사한다. |  |
 
 ## 코웨이
 
@@ -4728,6 +5134,8 @@
 | `battery-storage-separation-from-charger` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |
 | `battery-swelling-stop-immediately` | 에어팟 한쪽 안 들림·연결 안 됨 자가진단, 아이폰 발열 — 원인, 증상, 대처, 애플워치 연결 끊김·충전 안 됨·배터리 소모 자가점검, 무선이어폰 충전 케이스 불량·한쪽 충전 안 됨·배터리 문제 자가점검, 마사지건(안마건) 자가점검·배터리·안전, 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `beater-bowl-clearance-adjustment` | 제빵기(홈베이커리) 반죽 안 섞임·안 부풀음·겉만 탐·패들 박힘·세척 자가점검 |
+| `behavioral-insomnia-clinical-management` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
+| `behavioral-model-infant-sleep-disturbance` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `bidet-circuit-breaker-leakage-protection` | 비데 자가점검 2차 — 물·온수·누수·동파·노즘 기계 고장 |
 | `bidet-water-stoppage-check-steps` | 비데 자가점검 2차 — 물·온수·누수·동파·노즘 기계 고장 |
 | `blade-extremely-sharp-cutting-risk` | 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
@@ -4781,6 +5189,7 @@
 | `energy-efficiency-rating-1st-vs-5th` | 냉장고 전기료 팩트체크: 문 자주 열기, 채우기, 온도설정의 실제 영향 |
 | `expiration-not-equals-spoilage` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
 | `factory-reset-data-loss` | IPTV 셋톱박스 화면 안 나옴·먹통·리모컨 안 될 때 자가점검 |
+| `fading-method-gradual-independence` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `fast-charging-mechanism-lithium-plating-degradation` | 포터블 파워스테이션 충전 안 됨·출력 안 됨·발열·배터리 팽창 자가점검 및 보관 기준 |
 | `file-system-format-exfat-overview` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
 | `file-system-format-fat32-overview` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
@@ -4792,6 +5201,7 @@
 | `game-controller-pairing-reset-procedure` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
 | `game-controller-usb-port-inspection-charging-issue` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
 | `genuine-filter-lg-sensor-recognition` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검 |
+| `graduated-extinction-ferber-method` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `hair-dryer-after-use-unplug-safety-practice` | 헤어 에어랩·컬링기·고데기 자가점검 — 필터 청소·과열·타는 냄새·코팅 손상 |
 | `hair-dryer-burning-smell-immediate-stop` | 헤어 에어랩·컬링기·고데기 자가점검 — 필터 청소·과열·타는 냄새·코팅 손상 |
 | `hair-dryer-filter-cleaning-monthly` | 헤어 에어랩·컬링기·고데기 자가점검 — 필터 청소·과열·타는 냄새·코팅 손상 |
@@ -4875,6 +5285,7 @@
 | `rated-capacity-15a-3300w` | 데스크톱 PC 전원이 안 켜짐 — 하드웨어 물리적 원인 자가점검 |
 | `read-write-speed-difference` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `safe-mode-entry-method` | 스마트폰 터치 불량·고스트터치·액정 반응 없음 자가점검 |
+| `safety-concern-cry-it-out-stress` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `safety-margin-difference` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
 | `samsung-battery-replacement-cost-and-cycle` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |
 | `samsung-battery-replacement-two-year-warranty` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |

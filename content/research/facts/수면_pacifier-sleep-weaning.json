@@ -1,0 +1,155 @@
+{
+  "topic": "공갈젖꼭지와 수면: 영향, 젖떼기 시기, 치아 건강",
+  "brand": "공통",
+  "article": "pacifier-sleep-weaning",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "pacifier-sids-reduction-mechanisms",
+      "claim": "공갈젖꼭지의 수면 안전 효과: 신생아~12개월 대상 메타분석에서 공갈젖꼭지 사용 시 영아급사증(SIDS) 위험이 약 30~50% 감소. 기전은 (1)상기도 폐쇄 방지, (2)수면 자세 개선, (3)각성 역치 조정으로 추정",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소아과학 가이드라인·메타분석",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/검색:pacifier-SIDS-meta-analysis",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "대상": "신생아~12개월",
+        "분류": "SIDS 위험 감소",
+        "시기": "생후 0-12개월",
+        "지역": "국제"
+      },
+      "caution": "30~50% 감소는 상대 위험도. 절대 위험도는 여전히 낮음. 공갈젖꼭지만으로는 SIDS 완전 예방 불가능하며 수면 환경(바로 누우기·쿠션 없기 등) 함께 중요."
+    },
+    {
+      "id": "pacifier-sleep-initiation-benefit",
+      "claim": "공갈젖꼭지의 수면 개시 효과: 신생아~2세 대상 연구에서 공갈젖꼭지 사용이 입면 시간 단축·야간 각성 감소와 연관. 빨기 반사(sucking reflex)와 자율신경계 안정화(vagal tone 증가)가 기전",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "영아 신경행동 발달 연구",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/검색:pacifier-sleep-initiation-infants",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "대상": "신생아~2세",
+        "분류": "수면 개시 효과",
+        "시기": "생후 0-24개월",
+        "지역": "국제"
+      },
+      "caution": "효과는 개인차. 모든 영아가 공갈젖꼭지에 반응하는 것은 아님. 모유 수유 초기(생후 4주 이내)에는 유두 혼동 위험 고려 필요."
+    },
+    {
+      "id": "pacifier-sleep-dependency-risk",
+      "claim": "공갈젖꼭지 장기 사용의 수면 부작용: 생후 6개월 이후 공갈젖꼭지에 대한 의존성 형성 가능. 아이가 잠들 때마다 젖꼭지가 필요하고, 밤 중에 젖꼭지를 잃으면 깨어 부모의 재삽입 요청이 야간 각성 증가로 이어질 수 있음",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소아 수면 행동 연구",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/검색:pacifier-sleep-dependency",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "대상": "생후 6개월~3세",
+        "분류": "공갈젖꼭지 의존성",
+        "시기": "생후 6개월 이후",
+        "지역": "국제"
+      },
+      "caution": "의존성 형성은 점진적. 아이 기질·부모의 반응 패턴에 따라 개인차 크다. 미리 '야간 재삽입 거부' 루틴(예: 숨겨두기)으로 예방 가능."
+    },
+    {
+      "id": "pacifier-weaning-recommended-age",
+      "claim": "공갈젖꼭지 젖떼기 권장 시기: (1)미국 소아과학회(AAP) - 생후 6개월~12개월 사이 시작, (2)국제 치과학회 - 치아 맹출 전(생후 18개월~2세 이전) 완료, (3)한국 가이드라인 - 2세(24개월) 전후를 권장. 조기 중단(6개월 미만)은 SIDS 예방 효과 상실, 지연 중단(3세 이후)은 치아 부정교합 위험 증가",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소아과학회·치과학회 가이드라인",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/검색:pacifier-weaning-guidelines",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "대상": "신생아~3세",
+        "분류": "젖떼기 권장 시기",
+        "시기": "생후 6개월~3세",
+        "지역": "국제"
+      },
+      "caution": "연령 기준은 평균값. 개인 발달 속도·치아 맹출 시기·부모-아이 준비도 고려하여 유연하게 결정 필수."
+    },
+    {
+      "id": "pacifier-dental-malocclusion-risk",
+      "claim": "공갈젖꼭지의 치아 영향: 생후 18개월 이후 장기 사용 시 개방교합(open bite, 앞니가 닫히지 않는 상태)·교차교합(cross bite)·돌출된 앞니 등 부정교합 위험 증가. 위험은 사용 강도(하루 중 사용 시간)와 기간에 비례. 심각한 변형은 성인기 교정 치료 필요",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소아 교정치과학 임상 관찰",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/검색:pacifier-dental-malocclusion-children",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "대상": "생후 18개월~4세",
+        "분류": "치아 부정교합 위험",
+        "시기": "생후 18개월~4세",
+        "지역": "국제"
+      },
+      "caution": "개인차 크며, 유치(어린 이)는 자연 교체되므로 모든 부정교합이 성인 치아에 지속되는 것은 아님. 하지만 조기 중단으로 치아 발달 방해 최소화 권장."
+    },
+    {
+      "id": "pacifier-weaning-method-gradual-approach",
+      "claim": "공갈젖꼭지 젖떼기 방법: (1)단계적 감소 - '밤에만' → '밤중 깬 후' → '완전 제거' 순서로 진행, (2)시간 제한 - 허용 시간 점진적 단축, (3)긍정 강화 - 젖꼭지 없이 자면 칭찬·작은 보상, (4)감정적 이유 인정 - '젖꼭지를 보내자'는 이야기로 아이의 감정 수용. 완전 중단까지 2~4주 소요 경우 많음",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소아 행동 중재 프로토콜",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/검색:pacifier-weaning-behavioral-intervention",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "대상": "공갈젖꼭지 사용 12개월~3세",
+        "분류": "젖떼기 전략",
+        "시기": "생후 12개월~3세",
+        "지역": "국제"
+      },
+      "caution": "급격한 중단보다 단계적 접근이 저항 적음. 새로운 스트레스(이사·학교 입학·형제 탄생) 시기는 피할 것."
+    },
+    {
+      "id": "pacifier-sleep-alternative-self-soothing",
+      "claim": "공갈젖꼭지 대체 자기진정 방법(self-soothing): 손가락·손·인형 쥐기, 특정 음악 또는 백색소음(white noise), 부드러운 담요 등. 이런 방법이 발달할수록 공갈젖꼭지 의존성 낮아짐. 생후 3~4개월부터 자기진정 능력 도출 시작 권장",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "영아 신경행동 발달 연구",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/검색:infant-self-soothing-development",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "대상": "신생아~2세",
+        "분류": "자기진정 능력 발달",
+        "시기": "생후 3~4개월 이후",
+        "지역": "국제"
+      },
+      "caution": "자기진정 능력 발달는 개인차 크고 강요 불가. 아이가 인형·손가락에 관심 보이면 자연스럽게 발달 격려하기."
+    },
+    {
+      "id": "pacifier-otitis-media-risk",
+      "claim": "공갈젖꼭지 장기 사용 시 추가 위험: 생후 12개월~3세에서 급성 중이염 위험 약간 증가. 기전은 공갈젖꼭지 사용 중 이스타키우스관(eustachian tube)의 폐쇄 메커니즘 변화. 하지만 위험 증가폭은 작으며, 상기도 감염과 함께 있을 때 두드러짐",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "소아 이비인후과학·역학 연구",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/검색:pacifier-otitis-media-risk",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "대상": "생후 12개월~3세",
+        "분류": "중이염 위험",
+        "시기": "생후 12개월~3세",
+        "지역": "국제"
+      },
+      "caution": "중이염 위험은 공갈젖꼭지만으로 충분 원인이 아니며, 일반적인 감기·염증과 함께할 때만 유의미. 공갈젖꼭지 사용자 모두가 중이염에 걸리는 것은 아님."
+    }
+  ]
+}

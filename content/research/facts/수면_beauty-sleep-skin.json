@@ -1,0 +1,155 @@
+{
+  "topic": "미용수면과 피부건강: 콜라겐·주름·다크서클",
+  "brand": "공통",
+  "article": "beauty-sleep-skin",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sleep-growth-hormone-collagen-synthesis",
+      "claim": "수면 중 분비되는 성장호르몬은 섬유아세포(fibroblast)에 신호를 보내 콜라겐과 엘라스틴 생성을 직접 자극한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIOD & 피부과학 리뷰",
+      "source_url": "https://niod.com/en-us/blog/impact-of-sleep-on-skin-ageing.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·피부",
+        "line": "성장호르몬과 콜라겐",
+        "years": "전 연령",
+        "region": "글로벌"
+      },
+      "caution": "성장호르몬은 주로 깊은 수면(slow-wave sleep) 중에 분비되므로, 수면의 질이 양만큼 중요하다.",
+      "cautionSource": "수면과학 연구"
+    },
+    {
+      "id": "sleep-deprivation-cortisol-collagen-breakdown",
+      "claim": "수면 부족 시 스트레스 호르몬 코르티솔이 상승하여 콜라겐과 엘라스틴을 분해하는 효소(matrix metalloproteinases)를 활성화한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIOD & 스트레스 호르몬 연구",
+      "source_url": "https://niod.com/en-us/blog/impact-of-sleep-on-skin-ageing.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·피부",
+        "line": "코르티솔과 콜라겐 분해",
+        "years": "전 연령",
+        "region": "글로벌"
+      },
+      "caution": "코르티솔 상승은 또한 피부 장벽을 약화시켜 건조함과 민감성을 유발한다.",
+      "cautionSource": "내분비학 및 피부과학"
+    },
+    {
+      "id": "melatonin-collagen-synthesis-skin-regeneration",
+      "claim": "수면 중 분비되는 멜라토닌은 피부 진피의 콜라겐 합성을 증가시키고 산소·영양 공급을 촉진하여 피부를 밝고 탄력 있게 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국 의료 문헌 & 수면 호르몬 연구",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=58712",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·피부",
+        "line": "멜라토닌과 피부",
+        "years": "전 연령",
+        "region": "글로벌"
+      },
+      "caution": "멜라토닌은 항산화제로도 작용하여 자유기 손상으로부터 피부를 보호한다.",
+      "cautionSource": "항산화 피부과학"
+    },
+    {
+      "id": "sleep-deprivation-4hours-4days-wrinkles-uneven-pigmentation",
+      "claim": "4시간 수면을 4일 지속하면 주름, 색소침착 불균형, 건조함이 현저히 악화되는 임상 관찰이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "피부과학 연구 & 임상 시험",
+      "source_url": "https://niod.com/en-us/blog/impact-of-sleep-on-skin-ageing.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·피부",
+        "line": "급성 수면 부족 효과",
+        "years": "성인",
+        "region": "글로벌"
+      },
+      "caution": "이 효과는 4일 내 가역적이나, 만성 수면 부족은 누적 손상을 초래한다.",
+      "cautionSource": "임상 연구 데이터"
+    },
+    {
+      "id": "dark-circles-sleep-deprivation-blood-circulation-fluid-retention",
+      "claim": "수면 부족 시 혈액 순환이 저하되어 안와 주변에 혈액이 정체되고 체액이 축적되어 다크서클과 부종이 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Skin and Cancer Institute & 혈액순환 연구",
+      "source_url": "https://skinandcancerinstitute.com/sleep-and-skin-health-connection/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·피부",
+        "line": "다크서클 기전",
+        "years": "전 연령",
+        "region": "글로벌"
+      },
+      "caution": "다크서클은 미용적 문제뿐만 아니라 신체 피로의 외시적 신호로도 해석된다.",
+      "cautionSource": "피부혈관학"
+    },
+    {
+      "id": "skin-barrier-recovery-sleep-deprivation-gag-hyaluronic-acid",
+      "claim": "충분한 수면 중 글리노사미노글리칸(GAG)의 합성이 활발하여 자연적 히알루론산, 콜라겐, 엘라스틴 생성을 촉진한다. 수면 부족 시 GAG 합성이 저하되어 보습 부족과 잔주름이 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국 의료 문헌 & 피부생화학",
+      "source_url": "https://www.signaturemg.co.kr/news_view.php?idx=3042&cate=2&cate_sub=",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·피부",
+        "line": "히알루론산과 수분 보유",
+        "years": "전 연령",
+        "region": "글로벌"
+      },
+      "caution": "히알루론산은 자체 무게의 1000배 수분을 보유할 수 있으므로, 수면을 통한 내인성 GAG 생성이 외부 스킨케어만큼 중요하다.",
+      "cautionSource": "생화학 및 피부 구조"
+    },
+    {
+      "id": "sleep-7-9-hours-skin-restoration-recommendation",
+      "claim": "성장호르몬 분비와 세포 재생에 충분한 수면 시간은 7-9시간이며, 5시간 이하는 의미 있는 피부 복구에 불충분하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수면과학 리뷰 & 전문가 권장",
+      "source_url": "https://theordinary.com/en-us/blog/impact-of-sleep-on-skin-ageing.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·피부",
+        "line": "권장 수면 시간",
+        "years": "성인",
+        "region": "글로벌"
+      },
+      "caution": "개인차가 있지만, 대다수의 성인은 7시간 이상이 최적이며, 단기 수면 제한(5시간)은 회피하는 것이 피부 건강에 유리하다.",
+      "cautionSource": "수면 의학 합의 지침"
+    },
+    {
+      "id": "rapid-eye-movement-sleep-skin-cell-proliferation",
+      "claim": "REM(빠른안구운동) 수면 중 신경성장인자(NGF)와 산화질소가 증가하여 피부 세포 증식과 손상 복구를 촉진한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수면과학 연구",
+      "source_url": "https://theordinary.com/en-us/blog/impact-of-sleep-on-skin-ageing.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·피부",
+        "line": "REM 수면과 피부",
+        "years": "전 연령",
+        "region": "글로벌"
+      },
+      "caution": "REM 수면은 총 수면의 약 20-25%를 차지하므로, 완전한 수면 구조 유지(입면 → NREM → REM 주기)가 피부 건강에 필수다.",
+      "cautionSource": "수면 구조 생리학"
+    }
+  ]
+}

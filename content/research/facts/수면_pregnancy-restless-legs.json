@@ -1,0 +1,191 @@
+{
+  "topic": "임신 중 하지불안증후군(Restless Legs Syndrome)",
+  "brand": "공통",
+  "article": "pregnancy-restless-legs",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "pregnancy-rls-prevalence-29-2-percent",
+      "claim": "임신 중 하지불안증후군(RLS)의 유병율은 전체 임산부의 29.2%로, 비임신 여성(약 5-10%) 대비 3배 이상 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC 논문 & 메타분석",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10485731/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "RLS 유병율",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "연구에 따라 15%-64%까지 변동하며, 삼분기와 평가 도구에 따라 큰 차이가 난다.",
+      "cautionSource": "메타분석 신뢰구간"
+    },
+    {
+      "id": "pregnancy-rls-by-trimester-4-8-30-8-64-4",
+      "claim": "임신 중 RLS는 삼분기에 따라 극적으로 증가한다: 1분기 4.8%, 2분기 30.8%, 3분기 64.4%.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC 논문 & 세로종단 스터디",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10485731/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "RLS 삼분기별",
+        "years": "임신 0-40주",
+        "region": "글로벌"
+      },
+      "caution": "3분기의 매우 높은 유병율(64.4%)은 철분과 엽산 요구량 극대화 시기와 일치한다.",
+      "cautionSource": "세로 데이터 분석"
+    },
+    {
+      "id": "pregnancy-rls-iron-ferritin-deficiency",
+      "claim": "임신 중 철분(ferritin) 결핍은 RLS의 주요 위험 인자로, 철분은 도파민 합성의 필수 보조인자이며 결핍 시 도파민 합성이 지연된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC 논문 & 메타분석",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10485731/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "RLS 철분 연관",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "임신 중 철분 요구량은 임신 전 대비 3-4배 증가하며, 보충 없이는 결핍이 거의 피할 수 없다.",
+      "cautionSource": "산부인과 영양 지침"
+    },
+    {
+      "id": "pregnancy-rls-vitamin-b12-deficiency-10x-risk",
+      "claim": "임신 중 낮은 비타민 B12 수치는 RLS 위험을 약 10배 증가시킨다(OR: 10.347, p<0.001).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC 논문 & 스터디",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10485731/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "RLS B12 연관",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "B12 결핍은 신경근 기능에 직접 영향을 미치므로, RLS 증상이 심하면 B12 검사가 필수다.",
+      "cautionSource": "신경화학 연구"
+    },
+    {
+      "id": "pregnancy-rls-folate-deficiency-predictor",
+      "claim": "임신 중 낮은 엽산(folate) 수치는 RLS의 주요 예측 인자이며, 엽산 요구량은 비임신 시 대비 8-10배 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC 논문 & 메타분석",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10485731/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "RLS 엽산 연관",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "엽산은 신경세포 기능과 미엘린 형성에 필수적이므로, 보충이 신경 증상 개선에 도움이 될 수 있다.",
+      "cautionSource": "신경생화학 연구"
+    },
+    {
+      "id": "pregnancy-rls-family-history-9fold-risk",
+      "claim": "RLS의 가족력이 있는 여성은 임신 중 RLS 위험이 약 9배 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC 논문 & 스터디",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10485731/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "RLS 유전 위험",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "가족력이 있으면 임신 중 철분·엽산·B12 모니터링이 더욱 중요하다.",
+      "cautionSource": "유전 역학 데이터"
+    },
+    {
+      "id": "pregnancy-rls-prior-history-5fold-risk",
+      "claim": "이전 임신에서 RLS를 경험한 여성은 다음 임신에서 약 5배 높은 재발 위험을 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC 논문 & 스터디",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10485731/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "RLS 반복 위험",
+        "years": "반복 임신",
+        "region": "글로벌"
+      },
+      "caution": "재발 위험이 있는 여성은 임신 계획 단계부터 철분·엽산 저장량을 높이는 것이 권장된다.",
+      "cautionSource": "종단 스터디 데이터"
+    },
+    {
+      "id": "pregnancy-rls-hemoglobin-low-risk-factor",
+      "claim": "임신 중 헤모글로빈 수치가 11 g/dL 이하로 낮으면 RLS 위험 인자이며, 철분 보충이 필수다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC 논문 & 메타분석",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10485731/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "RLS 빈혈 연관",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "헤모글로빈이 낮으면 산소 운반 능력이 떨어져 신경근 증상이 악화될 수 있다.",
+      "cautionSource": "혈액학 생리학"
+    },
+    {
+      "id": "pregnancy-rls-iron-supplementation-inadequate-risk",
+      "claim": "임신 중 철분과 엽산 보충이 부적절하면 RLS 위험이 크게 증가하며, 특히 철분 결핍이 동반되면 위험이 극대화된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC 논문 & 위험 인자 분석",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10485731/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "RLS 보충 치료",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "20주 이후 모든 임산부는 예방적 철분 보충이 권장되며, RLS 증상이 있으면 의료진 상담이 필수다.",
+      "cautionSource": "산부인과 치료 지침"
+    },
+    {
+      "id": "pregnancy-rls-resolution-postpartum-expected",
+      "claim": "임신 중 RLS는 출산 후 호르몬 정상화와 철분 회복으로 대부분 호전되며, 대부분의 여성은 산후 수주 내 증상이 개선된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC 논문 & 문헌 리뷰",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10485731/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "RLS 산후 회복",
+        "years": "산후 기간",
+        "region": "글로벌"
+      },
+      "caution": "일부 여성은 산후 모유수유 중 철분 손실로 인해 증상이 지속될 수 있으므로, 산후 영양 모니터링이 권장된다.",
+      "cautionSource": "임상 관찰"
+    }
+  ]
+}

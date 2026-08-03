@@ -1,0 +1,162 @@
+{
+  "topic": "만성통증과 수면",
+  "brand": "수면",
+  "article": "수면_sleep-chronic-pain",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "chronic-pain-insomnia-bidirectional",
+      "claim": "만성통증과 불면증은 양방향 관계로, 통증이 수면을 방해하고 수면 부족이 통증을 악화시키는 악순환을 형성한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수면의학·통증의학 임상 연구",
+      "source_url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002676431",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "만성통증 환자",
+        "분류": "양방향 관계",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "sleep-deprivation-lowers-pain-threshold",
+      "claim": "수면 부족은 통증역치(pain threshold)를 낮추어 같은 정도의 자극도 더 심한 통증으로 느끼게 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신경생리학·수면과 통증 연구",
+      "source_url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002676431",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "일반 성인·만성통증 환자",
+        "分류": "신경생리적 기전",
+        "시기": "일般",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "insufficient-sleep-hyperarousal",
+      "claim": "수면 부족은 신체의 과다각성(hyperarousal) 상태를 초래하여 통증에 대한 감수성을 높이고 염증 반응을 증폭시킨다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신경생리학 연구",
+      "source_url": "https://synapse.koreamed.org/upload/synapsedata/pdfdata/0130hmr/hmr-33-210.pdf",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "일반 성인",
+        "分류": "신경생리적 기전",
+        "시기": "일반",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "sleep-improves-pain-modulation",
+      "claim": "질 좋은 수면은 신체의 통증 조절 시스템을 강화하여 만성통증 관리에 중요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신경생리학·통증의학 연구",
+      "source_url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002676431",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "만성통증 환자",
+        "분류": "수면의 역할",
+        "시기": "일반",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "cbt-i-effective-chronic-pain-insomnia",
+      "claim": "불면증에 대한 인지행동치료(CBT-I)는 수면제한, 자극조절, 이완훈련, 수면위생 교육을 병용하며, 만성통증 환자의 불면증 개선에 효과적이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국의학학술지·CBT-I 임상 연구",
+      "source_url": "https://jkma.org/journal/view.php?number=3144&viewtype=pubreader",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "만성통증 환자",
+        "分類": "불면증 치료",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "cbt-i-recommended-first-line-treatment",
+      "claim": "만성통증과 불면증 환자의 초기 치료로 CBT-I를 시행할 것이 강하게 권고되며, 약물 치료보다 효과가 더 지속적이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국의료진료지침·불면증 학술 권고",
+      "source_url": "https://www.monews.co.kr/news/articleView.html?idxno=91824",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "불면증 환자",
+        "分류": "치료 지침",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "sleep-restriction-therapy-insomnia",
+      "claim": "수면제한 치료는 침대에서의 시간을 실제 수면 시간에 가깝게 제한하여 수면의 질을 높이는 CBT-I의 핵심 기법이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "불면증 인지행동치료 임상 프로토콜",
+      "source_url": "https://synapse.koreamed.org/upload/synapsedata/pdfdata/0130hmr/hmr-33-210.pdf",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "불면증·만성통증 환자",
+        "分類": "치료 기법",
+        "시기": "일般",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "relaxation-training-pain-sleep",
+      "claim": "진행성 근육이완훈련(progressive muscle relaxation)과 명상은 신체의 긴장을 풀어 통증을 완화하고 수면 진입을 돕는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수면·통증 관리 임상 프로토콜",
+      "source_url": "https://synapse.koreamed.org/upload/synapsedata/pdfdata/0130hmr/hmr-33-210.pdf",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "만성통증 환자·불면증",
+        "分類": "비약물 중재",
+        "시기": "일般",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "pain-insomnia-vicious-cycle-breaking",
+      "claim": "통증-불면증 악순환을 끊기 위해서는 통증 관리와 수면 관리를 동시에 진행해야 하며, 신경과·정형외과·정신건강의학 협진이 효과적이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "만성통증 클리닉 운영 지침",
+      "source_url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002676431",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "만성통증 환자",
+        "分類": "통합 치료",
+        "시기": "일般",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "chronic-pain-sleep-clinic-referral",
+      "claim": "만성통증으로 인한 불면증이 2주 이상 지속되거나, 생활 기능 장애가 있으면 수면 클리닉이나 통증 관리 전문가 상담이 필요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수면의학 진료 지침",
+      "source_url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002676431",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "증상자",
+        "分類": "진료 신호",
+        "시기": "일般",
+        "지역": "KR"
+      },
+      "caution": "자가 약물 치료나 수면제 남용은 오히려 악순환을 심화시킬 수 있으므로, 전문의 상담 후 치료 계획을 세워야 함"
+    }
+  ]
+}

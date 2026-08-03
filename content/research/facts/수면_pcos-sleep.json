@@ -1,0 +1,173 @@
+{
+  "topic": "다낭성난소증후군(PCOS)과 수면장애",
+  "brand": "공통",
+  "article": "pcos-sleep",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "pcos-osa-risk-9-74-fold-higher",
+      "claim": "PCOS가 있는 성인 여성은 일반인보다 수면무호흡증(OSA) 위험이 9.74배 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sage Journals & 메타분석 - Susan Sam et al., 2019",
+      "source_url": "https://journals.sagepub.com/doi/10.1177/1179558119871269",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "PCOS 수면무호흡",
+        "years": "성인 생식연령",
+        "region": "글로벌"
+      },
+      "caution": "BMI 통제 후에도 유의미하게 높은 위험도를 유지하며, OSA는 PCOS 여성의 주요 수면 장애다.",
+      "cautionSource": "메타분석 통제분석"
+    },
+    {
+      "id": "pcos-osa-prevalence-bmi-dependent",
+      "claim": "PCOS가 있는 여성 중 약 19.5%가 수면무호흡증 고위험군이며, 비만(BMI>30)인 경우 37.3%까지 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC 논문 & 크로스섹셔널 스터디 - 2024",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12334535/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "PCOS OSA 유병율",
+        "years": "성인 여성",
+        "region": "글로벌"
+      },
+      "caution": "BMI가 OSA 위험의 강력한 조절 인자이나, PCOS 자체의 호르몬 이상도 독립적으로 기여한다.",
+      "cautionSource": "스터디 회귀분석"
+    },
+    {
+      "id": "pcos-hyperandrogenemia-airway-dysfunction",
+      "claim": "PCOS의 특징인 높은 남성호르몬(안드로겐)은 상기도 안정성을 감소시키고 지방 분포를 복부에 집중시켜 수면무호흡을 악화시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sage Journals & 호르몬 기전 연구",
+      "source_url": "https://journals.sagepub.com/doi/10.1177/1179558119871269",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "PCOS 호르몬 기전",
+        "years": "성인 생식연령",
+        "region": "글로벌"
+      },
+      "caution": "안드로겐 수치가 높을수록 상기도 폐쇄 위험이 증가하며, 이는 PCOS 여성의 OSA가 남성만큼 높은 이유 중 하나다.",
+      "cautionSource": "신경생리학 연구"
+    },
+    {
+      "id": "pcos-progesterone-deficiency-osa-risk",
+      "claim": "PCOS 여성은 무배란으로 인한 프로게스테론 결핍이 있으며, 프로게스테론의 상기도 근육 이완 작용 부족이 OSA 위험을 증가시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sage Journals & 호르몬 생리학",
+      "source_url": "https://journals.sagepub.com/doi/10.1177/1179558119871269",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "PCOS 호르몬 기전",
+        "years": "성인 생식연령",
+        "region": "글로벌"
+      },
+      "caution": "프로게스테론은 일반적으로 수면을 유도하지만, 상기도 안정성에도 중요한 역할을 한다.",
+      "cautionSource": "호르몬 호흡 생리학"
+    },
+    {
+      "id": "pcos-insulin-resistance-osa-link",
+      "claim": "인슐린저항성이 있는 PCOS 여성은 정상 포도당 대사 여성 대비 OSA 고위험 확률이 2.1배 높다(25.5% vs 12.0%).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC 논문 & 크로스섹셔널 스터디",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12334535/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "대사 이상과 OSA",
+        "years": "성인 여성",
+        "region": "글로벌"
+      },
+      "caution": "인슐린저항성은 염증 증가와 산화스트레스를 유발하여 수면 구조를 방해한다.",
+      "cautionSource": "메타데이터 회귀분석"
+    },
+    {
+      "id": "pcos-sleep-disturbance-prevalence-90-percent",
+      "claim": "PCOS가 있는 여성의 약 90%가 수면 장애를 겪으며, 60.5%는 경증, 29.7%는 만성 수면 장애를 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC 논문 & 크로스섹셔널 스터디",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12334535/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "PCOS 수면 장애",
+        "years": "성인 여성",
+        "region": "글로벌"
+      },
+      "caution": "PCOS의 일반적인 증상 외에도 수면 장애가 거의 보편적으로 나타나므로 수면 평가가 임상적 필수다.",
+      "cautionSource": "질적 데이터 분석"
+    },
+    {
+      "id": "pcos-anxiety-prevalence-52-percent",
+      "claim": "PCOS 여성의 약 52%가 중등도에서 심각한 불안 수준을 보이며, 불안은 수면 장애와 OSA 위험을 증가시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC 논문 & 심리평가 스터디",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12334535/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·정신건강",
+        "line": "PCOS 불안",
+        "years": "성인 여성",
+        "region": "글로벌"
+      },
+      "caution": "불안과 수면 장애는 양방향 관계를 보이며, 약 30분의 깊은 수면만 해도 불안 증상이 개선될 수 있다.",
+      "cautionSource": "심리신경학 연구"
+    },
+    {
+      "id": "pcos-depression-prevalence-28-percent",
+      "claim": "PCOS 여성의 약 27.8%가 중등도에서 심각한 우울증을 보이며, 만성 수면 장애와 밀접한 상관관계가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC 논문 & 임상 스터디",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12334535/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·정신건강",
+        "line": "PCOS 우울증",
+        "years": "성인 여성",
+        "region": "글로벌"
+      },
+      "caution": "PCOS 여성의 우울증 위험은 호르몬 이상뿐만 아니라 수면 부족의 누적 효과에도 영향을 받는다. 의료진 상담 권장.",
+      "cautionSource": "다인성 회귀분석"
+    },
+    {
+      "id": "pcos-melatonin-abnormality-sleep-quality",
+      "claim": "PCOS 여성은 멜라토닌 대사 이상을 보이며, 멜라토닌 수용체 유전자 변이는 대사 합병증과 수면 문제와 연관된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sage Journals & 신경내분비 연구",
+      "source_url": "https://journals.sagepub.com/doi/10.1177/1179558119871269",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·건강",
+        "line": "PCOS 멜라토닌",
+        "years": "성인 생식연령",
+        "region": "글로벌"
+      },
+      "caution": "멜라토닌 보충은 예비 연구에서 수면 질 개선과 인슐린 수치 저하를 보였으나, 개인차가 크다.",
+      "cautionSource": "임상시험 데이터"
+    }
+  ]
+}

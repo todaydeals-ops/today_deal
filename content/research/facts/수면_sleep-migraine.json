@@ -1,0 +1,163 @@
+{
+  "topic": "수면과 편두통",
+  "brand": "수면",
+  "article": "수면_sleep-migraine",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "migraine-sleep-deprivation-trigger",
+      "claim": "수면 부족은 편두통의 주요 유발 인자 중 하나로, 충분한 수면을 취하지 못하면 신체가 스트레스 상태에 빠져 편두통 발생 위험이 증가한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원 의료정보·신경과 문헌",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31876",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "편두통 환자",
+        "분류": "유발 인자",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "migraine-sleep-excess-also-trigger",
+      "claim": "과도한 수면도 편두통을 유발할 수 있으므로, 과다수면 후 두통 발생은 흔한 패턴이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신경과 임상 경험·편두통 연구",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31876",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "편두통 환자",
+        "분류": "유발 인자",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "수면 부족과 과다수면 모두 피해야 하므로, 규칙적인 수면 시간 유지가 중요"
+    },
+    {
+      "id": "migraine-common-triggers",
+      "claim": "편두통의 흔한 유발 인자는 고혈압, 수면부족, 스트레스, 정서적 변화, 소음, 생리 주기이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신경과 의료정보",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31876",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "편두통 환자",
+        "분류": "유발 인자",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "regular-sleep-schedule-migraine-prevention",
+      "claim": "규칙적인 수면 일정을 유지하기(매일 같은 시간에 자고 일어남)는 편두통 발생 빈도를 줄이는 비약물적 예방법이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신경과 예방 지침",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31876",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "편두통 환자",
+        "분류": "예방법",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "migraine-sleep-duration-7-8hours",
+      "claim": "편두통 환자에게 권장되는 수면 시간은 7~8시간으로, 일관된 수면 시간 유지가 증상 악화를 방지한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신경과 진료 지침",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31876",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "편두통 환자",
+        "분류": "예방 수면 시간",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "sleep-hygiene-pre-bedtime-relaxation",
+      "claim": "자기 전에 긴장을 푸는 방법을 습관화하기(명상, 점진적 근육 이완, 따뜻한 목욕)는 편두통 예방에 도움이 된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수면 위생 지침·신경과 권장사항",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31876",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "편두통 환자",
+        "분류": "수면 전 이완",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "sleep-environment-dark-cool-quiet",
+      "claim": "어둡고, 시원하고(18~21°C), 조용한 수면 환경 조성은 수면의 질을 높여 편두통 예방에 기여한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수면 위생 표준 지침",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31876",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "편두통 환자",
+        "분류": "수면 환경",
+        "시기": "일반",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "caffeine-limit-sleep-migraine",
+      "claim": "카페인은 수면의 질을 해치고 편두통을 악화시킬 수 있으므로, 편두통 환자는 오후 3시 이후 카페인 섭취를 제한해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신경과 예방 지침",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31876",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "편두통 환자",
+        "분류": "식이 조절",
+        "시기": "일般",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "migraine-prophylactic-treatment-inadequate-sleep",
+      "claim": "편두통 예방약의 효과는 충분한 수면을 전제로 하므로, 수면이 부족하면 약물 치료의 효율이 저하된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신경과 임상 경험",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31876",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "편두통 환자",
+        "분류": "치료 효율",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "migraine-sleep-disturbance-vicious-cycle",
+      "claim": "편두통이 수면을 방해하고, 수면 부족이 다시 편두통을 악화시키는 악순환 구조가 형성되므로, 조기에 신경과 진료를 받아 악순환 차단이 중요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신경과 진료 지침",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31876",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "편두통 환자",
+        "분류": "악순환 구조",
+        "시기": "일般",
+        "지역": "KR"
+      },
+      "caution": "주 4회 이상 편두통이 있거나, 규칙수면·음식·스트레스 조절에도 불구하고 2주 이상 지속되면 신경과 예방 치료 상담 필요"
+    }
+  ]
+}

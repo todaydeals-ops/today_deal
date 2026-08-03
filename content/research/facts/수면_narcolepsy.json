@@ -1,0 +1,181 @@
+{
+  "topic": "기면증(Narcolepsy)",
+  "brand": "수면",
+  "article": "수면_narcolepsy",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "narcolepsy-four-hallmark-symptoms",
+      "claim": "기면증의 네 가지 특징적 증상은 수면발작(야간 충분한 수면에도 낮에 심한 졸음), 탈력발작(감정적 흥분 시 힘 빠짐), 입수면 환각, 수면마비(가위눌림)다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원 의료정보",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31912",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "기면증 환자",
+        "분류": "증상",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "narcolepsy-symptom-onset-age",
+      "claim": "기면증의 증상은 일반적으로 청소년기나 성인 초기(만 20~40세)에 나타난다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원 의료정보",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31912",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "일반 성인",
+        "분류": "발병 시기",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "narcolepsy-nap-refreshing",
+      "claim": "기면증 환자의 낮잠은 보통 15분 정도로 짧지만 깬 직후에는 매우 개운하고, 수 시간 후 다시 졸려진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원 의료정보",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31912",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "기면증 환자",
+        "분류": "낮잠 특성",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "narcolepsy-cataplexy-emotion-trigger",
+      "claim": "탈력발작은 웃음, 분노, 놀람 같은 감정적 자극이 주요 유발 요인이며, 수초~수십 초 지속된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원 의료정보",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31912",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "기면증 환자",
+        "분류": "탈력발작 특성",
+        "시기": "일般",
+        "지역": "KR"
+      },
+      "caution": "탈력발작 중 낙상하면 외상 위험이 있으므로, 직장·학교에서 상황 인지와 안전 대책이 필요"
+    },
+    {
+      "id": "narcolepsy-sleep-paralysis-morning",
+      "claim": "수면마비(가위눌림)는 아침 깨어날 때 가장 흔하게 발생하며, 의식은 있으나 근육을 움직일 수 없는 상태로 수초~수분 지속된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원 의료정보",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31912",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "기면증 환자",
+        "분류": "수면마비 특성",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "수면마비 중 공포감이 들 수 있으나 신체적 위험은 없음. 침착함 유지와 정기적 호흡으로 회복 촉진 가능"
+    },
+    {
+      "id": "narcolepsy-hypocretin-mechanism",
+      "claim": "기면증의 원인은 뇌의 하이포크레틴(orexin) 신경전달물질 결핍으로, 중추신경계의 각성 조절이 손상되는 것으로 알려져 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원 의료정보",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31912",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "의료진",
+        "분류": "생물학적 기전",
+        "시기": "일반",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "narcolepsy-diagnosis-icsd3-criteria",
+      "claim": "기면증 진단 기준(ICSD-3)은 최소 3개월 동안 거의 매일 반복되는 저항할 수 없는 수면발작이 있어야 하며, 탈력발작이 있거나 수면다원검사 결과와 뇌척수액 하이포크레틴 농도 측정으로 확진한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원 의료정보·수면장애 국제분류",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31912",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "의료진",
+        "분류": "진단 기준",
+        "시기": "일반",
+        "지역": "국제"
+      },
+      "caution": "뇌척수액 검사(lumbar puncture)는 침습적이므로 임상 증상이 명확한 경우에만 시행하며, 수면다원검사가 1차 진단 도구"
+    },
+    {
+      "id": "narcolepsy-polysomnography-diagnosis",
+      "claim": "기면증 진단을 위해 1박 2일 입원하여 야간 수면다원검사와 주간 반복 수면검사를 시행하며, 뇌파·근육전도·안구운동·호흡·산소포화도를 측정한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원 의료정보",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31912",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "의료진·진단 대상자",
+        "분류": "진단 검사",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "narcolepsy-treatment-stimulants",
+      "claim": "기면증의 주간 졸음증은 암페타민, 메틸페니데이트, 모다피닐 등의 중추신경자극제로 치료하며, 탈력발작과 수면마비는 항우울제(SSRI, 삼환계)로 관리한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원 의료정보",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31912",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "기면증 환자",
+        "분류": "약물 치료",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "중추신경자극제는 의존성과 부작용(불안, 두통, 빈맥) 위험이 있으므로, 개인별 복용량 조절과 정기 모니터링 필수"
+    },
+    {
+      "id": "narcolepsy-non-pharmacological-management",
+      "claim": "약물 치료 외에도 규칙적인 수면 일정 유지, 일일 2~3회 짧은 낮잠(10~30분) 스케줄링, 스트레스 관리로 증상 완화를 도모한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원 의료정보",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31912",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "기면증 환자",
+        "분류": "생활 관리",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "narcolepsy-red-flag-symptoms",
+      "claim": "낮 시간에 저항할 수 없는 심한 졸음, 갑자기 쓰러지려는 느낌, 자다가 헐떡이며 깨기, 아침 두통이 2주 이상 지속되면 신경과 진료가 필요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원 의료정보",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31912",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "증상자",
+        "분류": "진료 신호",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "기면증은 운전 중 돌발상황에 위험하므로, 진단 전 운전 피하고 확진 후에는 의사 지시 따라야 함"
+    }
+  ]
+}

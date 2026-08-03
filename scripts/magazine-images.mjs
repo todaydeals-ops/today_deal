@@ -63,7 +63,7 @@ const KW_OVERRIDE = {
   "baby-swaddle-when-stop": "swaddled newborn baby",
   "wake-window-by-age": "awake baby daytime play",
   "exam-anxiety-insomnia": "student stressed late night desk",
-  "teen-morning-person-transition": "teenager waking morning alarm",
+  "teen-morning-person-transition": "teenager bedroom curtains sunlight",
   "dream-memory-learning": "person dreaming peaceful sleep",
   "sleep-paralysis": "person lying awake dark bedroom",
   "business-trip-jetlag": "tired traveler airport",

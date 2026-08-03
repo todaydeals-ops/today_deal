@@ -1,0 +1,101 @@
+{
+  "topic": "크로노타입과 업무 생산성",
+  "brand": "수면과학",
+  "article": "chronotype-productivity",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "chronotype-optimal-performance-gain",
+      "claim": "개인의 서주기 최적 시간대에 업무를 할 때 최적이 아닌 시간대에 비해 10-20% 더 나은 성과를 낸다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수면 과학 연구 종합",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9150742/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "성인 업무자",
+        "category": "수면",
+        "line": "크로노타입 최적 시간대의 생산성 효과",
+        "years": "일일 단회",
+        "region": "국제"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "evening-chronotype-work-impairment",
+      "claim": "저녁형(evening chronotype) 사람들은 아침형(morning chronotype)에 비해 업무 능력이 더 떨어지며, 특히 업무 생산성 저하와 건강 관련 생산성 손실(건강 문제로 인한 결근·저하)이 더 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect, 연구 기반 분석",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S138994572200079X",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "성인 노동자",
+        "category": "수면",
+        "line": "크로노타입별 업무 능력 차이",
+        "years": "일상 근무 시간",
+        "region": "국제"
+      },
+      "caution": "저녁형이 경험하는 생산성 손실은 순환생리(circadian misalignment)의 결과로, 생활 패턴 조정으로 부분적 개선 가능",
+      "cautionSource": "ScienceDirect 분석"
+    },
+    {
+      "id": "social-jetlag-sleep-debt",
+      "claim": "사회적 제약(고정된 근무 시간)과 개인 크로노타입 간 불일치는 '사회적 시차'를 일으키며, 이는 주중 '수면 부채'를 쌓아 피로와 인지 능력 저하를 초래한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "순환생리학 및 수면 과학 기본 개념",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9150742/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "성인",
+        "category": "수면",
+        "line": "사회적 시차와 수면 부채",
+        "years": "주중 누적",
+        "region": "국제"
+      },
+      "caution": "주말에 자려고 해서 주중 수면 부채를 완전히 회복하기는 어려움",
+      "cautionSource": "수면 과학 합의"
+    },
+    {
+      "id": "evening-type-adhd-symptoms-morning-task",
+      "claim": "저녁형 크로노타입의 ADHD 증상 대학생들은 아침 인지 과제(주의력·작업 기억)에서 저녁 과제보다 상당히 더 느린 반응 시간과 주의력 결손을 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC, 미국 대학 연구 (n=363 선별, n=43 실험실 검사)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9150742/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "대학생",
+        "category": "수면",
+        "line": "ADHD 증상과 인지 과제 성과",
+        "years": "아침 vs 저녁 단일 세션",
+        "region": "미국"
+      },
+      "caution": "이 결과는 ADHD 진단 기준을 충족하거나 증상을 보이는 참가자 대상이므로, 일반 인구에 적용 시 효과 크기가 다를 수 있음",
+      "cautionSource": "NIH/PMC 연구 설계"
+    },
+    {
+      "id": "circadian-misalignment-long-term-disease",
+      "claim": "내부 생물시계와 근무·수면 일정의 불일치는 장기적으로 사고·부상 위험 증가, 생산성 저하, 나아가 만성질환 위험 증가와 연결된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "순환생리학 역학 연구",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9150742/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "성인",
+        "category": "수면",
+        "line": "순환생리 불일치의 중장기 건강 영향",
+        "years": "수개월~수년",
+        "region": "국제"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "topic": "역류성 식도염(GERD)과 수면",
+  "brand": "수면",
+  "article": "수면_gerd-sleep",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "gerd-supine-position-worsens-reflux",
+      "claim": "누운 자세는 위 내용물이 식도로 역류할 조건을 만들기 쉬우므로, 역류성 식도염이 있으면 자는 자세 조절이 중요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소화기내과 진료 지침",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=47328",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "역류성 식도염 환자",
+        "분류": "자세의 역할",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "gerd-left-lateral-position-recommended",
+      "claim": "왼쪽으로 누운 자세(left lateral decubitus)는 위가 신체 중심에서 왼쪽에 위치하여 상대적으로 역류가 적으므로 권장된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소화기내과 진료 권장사항",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=47328",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "역류성 식도염 환자",
+        "分류": "권장 자세",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "gerd-elevated-head-position-30-degrees",
+      "claim": "상체를 약 30도 이상 높이는 자세는 복압을 낮추고 위액이 식도로 역류하는 것을 물리적으로 방지한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소화기내과 진료 지침",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=47328",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "역류성 식도염 환자",
+        "분류": "머리 높이 효과",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "일반 베개는 충분하지 않으며, 경사형 베개(wedge pillow)나 침대 머리 부분을 올려 침대 각도를 조정해야 효과적"
+    },
+    {
+      "id": "gerd-postprandial-supine-position-avoidance",
+      "claim": "식후 바로 누우면 위 내부 압력이 식도 쪽으로 쏠리면서 역류가 심해지므로, 식사 후 최소 3~4시간 후에 자야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소화기내과 진료 지침",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=47328",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "역류성 식도염 환자",
+        "분류": "식사 타이밍",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "gerd-late-night-eating-worsens-symptoms",
+      "claim": "밤이 되면 위에서 음식이 장으로 내려가는 속도가 느려져서 위에 음식물이 오래 머물고, 이로 인해 위 내부 압력과 역류 위험이 증가한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소화기내과 생리학",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=47328",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "역류성 식도염 환자",
+        "분류": "야식의 문제",
+        "시기": "밤시간",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "gerd-fatty-foods-increase-gastric-residence",
+      "claim": "기름진 음식은 위에 머무는 시간이 길어져 역류를 유발하므로, 저지방 식단이 도움이 된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소화기내과 식이 지침",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=47328",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "역류성 식도염 환자",
+        "分類": "식이 조절",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "gerd-common-trigger-foods",
+      "claim": "초콜릿, 카페인, 알코올, 산성 음식(토마토, 오렌지 주스), 맵고 기름진 음식은 역류성 식도염을 악화시키는 주요 식이 요인이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소화기내과 식이 지침",
+      "source_url": "https://www.hyunmyoung.co.kr/general-medicine/gerd-prevention/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "역류성 식도염 환자",
+        "분류": "악화 식품",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "gerd-sleep-quality-impact",
+      "claim": "밤시간의 역류는 수면을 방해하여 불면증을 유발하고, 이는 다시 소화 기능을 악화시키는 악순환을 만든다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소화기내과·수면의학 임상 경험",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=47328",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "역류성 식도염 환자",
+        "분류": "수면 영향",
+        "시기": "밤시간",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "gerd-proton-pump-inhibitor-bedtime-dosing",
+      "claim": "역류성 식도염의 약물 치료(양성자펌프억제제, PPI)는 자기 전에 복용하는 것이 야간 역류 방지에 더 효과적이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소화기내과 약물 치료 지침",
+      "source_url": "https://www.hyunmyoung.co.kr/general-medicine/gerd-prevention/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "역류성 식도염 약물 사용자",
+        "分類": "약물 복용 타이밍",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "약물 복용 시간은 개인 증상과 의사 처방에 따라 다르므로, 반드시 처방 의사와 상의 필요"
+    },
+    {
+      "id": "gerd-red-flag-symptoms-doctor-visit",
+      "claim": "밤마다 가슴 쓰림이 수면을 방해하거나, 2주 이상 지속되는 역류 증상, 삼킴곤란, 검은 변 등은 소화기내과 진료가 필요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소화기내과 진료 지침",
+      "source_url": "https://www.hyunmyoung.co.kr/general-medicine/gerd-prevention/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "증상자",
+        "분류": "진료 신호",
+        "시기": "일般",
+        "지역": "KR"
+      },
+      "caution": "만성 역류는 식도 협착, 바렛 식도, 선암종 위험을 높일 수 있으므로, 조기 진료와 정기적 모니터링 필수"
+    }
+  ]
+}

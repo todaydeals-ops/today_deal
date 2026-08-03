@@ -1,0 +1,166 @@
+{
+  "topic": "수면과 심장 건강·혈압·부정맥",
+  "brand": "수면",
+  "article": "수면_sleep-heart-health",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sleep-deprivation-sympathetic-activation",
+      "claim": "수면 부족 시 교감신경계가 활성화되어 혈관이 수축하고 혈압이 상승한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민건강보험 건강정보",
+      "source_url": "https://www.nhis.or.kr/magazin/160/html/sub2.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "생리적 기전",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "sleep-deprivation-systolic-bp-increase",
+      "claim": "만성적인 수면 부족은 수축기 혈압을 평균 5~10mmHg 정도 상승시킨다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수면 부족이 질병을 부르다·임상 연구",
+      "source_url": "https://www.nhis.or.kr/magazin/160/html/sub2.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "수면 부족자",
+        "분류": "혈압 상승",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "혈압 상승 정도는 개인의 기저 혈압, 건강 상태, 수면 부족 기간에 따라 다르므로 정기적 혈압 측정 권장"
+    },
+    {
+      "id": "sleep-deprivation-cardiovascular-risk",
+      "claim": "수면 부족은 고혈압, 심근경색, 뇌졸중, 부정맥 같은 심혈관계 질환의 발병 위험을 명확하게 증가시킨다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민건강보험 건강정보·의료기관 임상 데이터",
+      "source_url": "https://www.nhis.or.kr/magazin/160/html/sub2.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "심혈관 질환 위험",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "이는 '무시해도 괜찮은 증상'이 아니라 생명 위협 가능성이 있는 만큼, 수면 부족 상태가 2주 이상 지속되면 의사 진료 권장"
+    },
+    {
+      "id": "short-sleep-duration-heart-risk",
+      "claim": "수면 시간이 7시간 미만인 사람들의 심장질환 발병 위험이 증가하며, 6시간 미만인 경우 뇌졸중과 심근경색 위험이 약 2배 높다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임상 역학 연구·수면과 건강 관련 문헌",
+      "source_url": "https://www.nhis.or.kr/magazin/160/html/sub2.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "수면 시간별 위험도",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "이는 평균적 수치이며, 연령, 기저질환, 다른 위험요소(흡연, 비만)에 따라 위험도가 달라짐. 개인 위험도는 의사 상담 필요"
+    },
+    {
+      "id": "sleep-deprivation-hormone-stress-response",
+      "claim": "수면 부족 시 스트레스 호르몬(코르티솔), 교감신경 활성화, 갑상선 호르몬 증가 등 신경내분비 반응이 일어나 혈압과 심박수가 상승한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료기관 임상 연구",
+      "source_url": "https://www.nhis.or.kr/magazin/160/html/sub2.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "신경 호르몬 기전",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "sleep-apnea-oxygen-desaturation-cardiovascular",
+      "claim": "수면무호흡증이 반복되면 혈중 산소포화도가 저하되어 고혈압, 부정맥, 심근경색, 뇌졸중의 위험이 증가한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료기관 진료 지침·심혈관 의학 문헌",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31880",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "수면무호흡증 환자",
+        "분류": "합병증 위험",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "심한 코골이나 수면 중 숨 정지 신호가 있으면 지체하지 말고 수면다원검사를 받아야 함"
+    },
+    {
+      "id": "adequate-sleep-cardiovascular-protection",
+      "claim": "성인에게 권장되는 충분한 수면 시간(7~8시간)을 유지하면 심혈관 건강을 효과적으로 보호할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민건강보험 건강정보",
+      "source_url": "https://www.nhis.or.kr/magazin/160/html/sub2.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "예방 지침",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "heart-rate-variability-sleep-quality",
+      "claim": "충분하고 질 좋은 수면은 심박변이(HRV)를 정상화하여 자율신경계 균형을 유지하는 데 중요한 역할을 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임상 생리학 연구",
+      "source_url": "https://www.nhis.or.kr/magazin/160/html/sub2.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "심박변이 조절",
+        "시기": "일반",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "sleep-improvement-blood-pressure-management",
+      "claim": "수면 시간을 늘리거나 수면의 질을 개선하면 혈압을 낮출 수 있으므로, 고혈압 관리의 중요한 비약물적 개입이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "고혈압 관리 지침·임상 연구",
+      "source_url": "https://www.nhis.or.kr/magazin/160/html/sub2.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "고혈압 환자 또는 고위험군",
+        "분류": "혈압 관리 방법",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "arrhythmia-sleep-deprivation-risk",
+      "claim": "만성적인 수면 부족은 부정맥 발생 위험을 높이며, 특히 심방세동(atrial fibrillation) 위험이 증가한다",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "임상 연구·심장학 문헌",
+      "source_url": "https://www.nhis.or.kr/magazin/160/html/sub2.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "수면 부족자",
+        "분류": "부정맥 위험",
+        "시기": "일반",
+        "지역": "국제"
+      },
+      "caution": "부정맥 발생은 수면 부족 외에도 개인 소인, 카페인 섭취, 스트레스 등 여러 요소가 작용하므로, 심장 증상 발생 시 즉시 순환기내과 진료 필요"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "topic": "갑상선 기능항진증·저하증과 수면장애의 메커니즘",
+  "brand": "잠자리연구소",
+  "article": "갑상선이 흔드는 잠, 항진과 저하",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "thyroid-circadian-rhythm-link",
+      "claim": "뇌의 시상하부 시상상핵(SCN)이 일주기 리듬을 조절하며, 갑상선 자극 호르몬(TSH)을 비롯한 호르몬의 분비를 조절하는 중추 역할을 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 국가건강정보포털 - 갑상선기능항진증",
+      "source_url": "https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=1831",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인 일반",
+        "분류": "생리학",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "hyperthyroidism-insomnia-anxiety",
+      "claim": "갑상선기능항진증은 심박수와 혈압 증가, 과도한 발한, 긴장과 불안감, 쉬운 흥분을 유발하여 불면증을 초래한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 국가건강정보포털 - 갑상선기능항진증",
+      "source_url": "https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=1831",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "갑상선기능항진증 성인",
+        "분류": "증상",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "심계항진과 불안이 심하면 호흡 이완법, 보정 운동은 증상 완화에 도움이 될 수 있으나 약물 치료가 필수",
+      "cautionSource": null
+    },
+    {
+      "id": "hypothyroidism-fatigue-hypersomnia",
+      "claim": "갑상선기능저하증은 갑상선 호르몬의 부적절한 생산으로 인해 만성 피로, 무기력, 과도한 수면(과다수면), 체중 증가, 변비, 냉감을 초래한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 - 갑상선기능저하증",
+      "source_url": "https://www.msdmanuals.com/ko/home/%ED%98%B8%EB%A5%B4%EB%AA%AC-%EB%B0%8F-%EB%8C%80%EC%82%AC-%EC%9E%A5%EC%95%A0/%EA%B0%91%EC%83%81%EC%84%A0-%EC%9E%A5%EC%95%A0/%EA%B0%91%EC%83%81%EC%84%A0%EA%B8%B0%EB%8A%A5%EC%A0%80%ED%95%98%EC%A6%9D",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "갑상선기능저하증 성인",
+        "분류": "증상",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "갑상선 호르몬 대체 치료로 호전되므로 진단이 최우선",
+      "cautionSource": null
+    },
+    {
+      "id": "thyroid-diagnosis-tsh-test",
+      "claim": "갑상선 기능 이상은 TSH를 측정하는 혈액 검사로 진단할 수 있으며, TSH 상승은 저하증, 저하된 TSH는 항진증을 시사한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 - 갑상선기능저하증",
+      "source_url": "https://www.msdmanuals.com/ko/home/%ED%98%B8%EB%A5%B4%EB%AA%AC-%EB%B0%8F-%EB%8C%80%EC%82%AC-%EC%9E%A5%EC%95%A0/%EA%B0%91%EC%83%81%EC%84%A0-%EC%9E%A5%EC%95%A0/%EA%B0%91%EC%83%81%EC%84%A0%EA%B8%B0%EB%8A%A5%EC%A0%80%ED%95%98%EC%A6%9D",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "갑상선 의심 성인",
+        "분류": "진단",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "이상 수면 증상이 3주 이상 지속되고 피로·온도 불내증이 동반되면 갑상선 검사 권장",
+      "cautionSource": null
+    }
+  ]
+}

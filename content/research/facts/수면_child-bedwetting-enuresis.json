@@ -1,0 +1,123 @@
+{
+  "topic": "소아 야뇨증의 원인, 발달 범위, 대처법",
+  "brand": "공통",
+  "article": "child-bedwetting-enuresis",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "enuresis-medical-definition-age-criteria",
+      "claim": "의학적 야뇨증 진단 기준: 만 5세 이상 소아가 수면 중 본인의 의지와 무관하게 주 2회 이상, 최소 3개월 동안 야간 수면 중 불수의적 배뇨를 반복하는 경우",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소아비뇨의학 임상 가이드라인",
+      "source_url": "https://brunch.co.kr/@kid008/996",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "대상": "5세 이상 소아",
+        "분류": "진단 기준",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "3개월은 일시적 실수와 구별하기 위한 최소 기간. 주 2회 이상 기준은 통계적으로 신의미한 빈도.",
+      "cautionSource": "소아비뇨의학 가이드라인"
+    },
+    {
+      "id": "enuresis-prevalence-by-age",
+      "claim": "연령별 야뇨증 유병률: 만 5세 약 15~20%, 7세 약 10%, 15세 약 1~2%로 연령 증가에 따라 자연 소실",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소아비뇨의학 역학 자료",
+      "source_url": "https://brunch.co.kr/@kid008/996",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "대상": "일반 소아 집단",
+        "분류": "연령별 유병률",
+        "시기": "일반",
+        "지역": "KR·국제"
+      },
+      "caution": "5세 15~20%는 진단 기준 충족 비율이 아니라 야뇨 증상 보유자 비율. 개인차와 환경 영향 크다.",
+      "cautionSource": "소아비뇨의학 역학 자료"
+    },
+    {
+      "id": "enuresis-primary-vs-secondary-etiology",
+      "claim": "야뇨증 분류: 원발성(전체 80~90%)은 야간 항이뇨호르몬 분비 미성숙·방광용적 감소·수면 각성 장애가 원인이며, 속발성은 동생 출생·이사·부모 이혼·학교 입학 등 환경 스트레스 또는 요로감염·당뇨·만성 변비·수면무호흡증이 원인",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소아비뇨의학 임상 분류",
+      "source_url": "https://brunch.co.kr/@kid008/996",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "대상": "야뇨증 소아",
+        "분류": "병인 분류",
+        "시기": "일반",
+        "지역": "KR·국제"
+      },
+      "caution": "원발성 80~90% 비율은 치료 받으러 온 집단 기반. 환경 요인과 생물학적 요인이 동시에 작용하는 경우 많음.",
+      "cautionSource": "소아비뇨의학 임상 분류"
+    },
+    {
+      "id": "enuresis-genetic-predisposition",
+      "claim": "야뇨증의 강력한 유전 요인: 부모 한쪽이 야뇨증 경험 시 자녀의 야뇨증 발생률 약 44%, 양쪽 부모 모두 경험한 경우 약 77%",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소아발달 유전학 연구",
+      "source_url": "https://brunch.co.kr/@kid008/996",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "대상": "야뇨증 가족력 있는 소아",
+        "분류": "유전 위험도",
+        "시기": "일반",
+        "지역": "KR·국제"
+      },
+      "caution": "44%, 77% 수치는 통계 기반이나 개인차 크다. 유전 소인이 있어도 환경 관리로 예방·완화 가능.",
+      "cautionSource": "소아발달 유전학 연구"
+    },
+    {
+      "id": "enuresis-natural-resolution-rate",
+      "claim": "적극적 개입 없이 매년 약 15%의 아이가 야뇨증에서 자연 소실되며, 이 비율이 지속되면 성인기까지 증상이 남는 경우는 약 1~2%",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소아비뇨의학 자연사 연구",
+      "source_url": "https://brunch.co.kr/@kid008/996",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "대상": "야뇨증 소아",
+        "분류": "자연 경과",
+        "시기": "일반",
+        "지역": "KR·국제"
+      },
+      "caution": "자연 소실 연간 15% 비율은 평균값. 개인차 크며, 심각한 경우는 자연 회복이 느릴 수 있음.",
+      "cautionSource": "소아비뇨의학 자연사 연구"
+    },
+    {
+      "id": "enuresis-modern-treatment-approach",
+      "claim": "현대 소아비뇨의학은 야뇨증을 단순 대기의 대상이 아닌 '체계적인 진단과 맞춤형 치료가 필요한 능동적 질환'으로 정의하며, 조기 진단·관리는 가족의 심리 스트레스 완화를 고려하여 결정",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소아비뇨의학 임상 가이드라인",
+      "source_url": "https://brunch.co.kr/@kid008/996",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "대상": "야뇨증 소아·가족",
+        "분류": "치료 철학",
+        "시기": "현대(2020년대)",
+        "지역": "KR·국제"
+      }
+    }
+  ]
+}

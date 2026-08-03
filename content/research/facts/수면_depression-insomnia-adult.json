@@ -1,0 +1,79 @@
+{
+  "topic": "성인 우울증과 불면의 연관성 및 메커니즘",
+  "brand": "잠자리연구소",
+  "article": "우울증과 불면, 무엇이 먼저일까",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "depression-insomnia-bidirectional",
+      "claim": "우울증과 불면은 양방향 인과관계를 가지며, 불면이 우울증의 위험 요소이면서 동시에 우울증이 불면을 유발한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울대학교 국민건강지식센터 - 우울감",
+      "source_url": "https://hqcenter.snu.ac.kr/archives/jiphyunjeon/%EC%9A%B0%EC%9A%B8%EA%B0%90",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인 일반",
+        "분류": "정신건강",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "불면증 자체가 우울증의 조기 신호일 수 있으므로 조기 진단 중요",
+      "cautionSource": null
+    },
+    {
+      "id": "depression-insomnia-medication-futility",
+      "claim": "우울증으로 인한 불면은 수면제 단독 투여로는 해결되지 않으며, 우울증 치료가 병행되어야 불면도 자연스럽게 개선된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울대학교 국민건강지식센터 - 우울감",
+      "source_url": "https://hqcenter.snu.ac.kr/archives/jiphyunjeon/%EC%9A%B0%EC%9A%B8%EA%B0%90",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "우울증 동반 불면 성인",
+        "분류": "치료",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "자살 신호(식욕 부진, 무망감, 자해 사고)를 동반하면 즉시 정신건강의학과 또는 정신응급센터 방문 필수",
+      "cautionSource": "정신건강 선별 임상 기준"
+    },
+    {
+      "id": "depression-neurochemistry-serotonin",
+      "claim": "우울증의 기저 원인은 뇌 내 신경전달물질(세로토닌, 노르에피네프린 등)의 불균형으로, 이것이 수면-각성 리듬을 교란한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울대학교 국민건강지식센터 - 우울감",
+      "source_url": "https://hqcenter.snu.ac.kr/archives/jiphyunjeon/%EC%9A%B0%EC%9A%B8%EA%B0%90",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "우울증 성인",
+        "분류": "생리학",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "depression-insomnia-comorbid-risk",
+      "claim": "불면증은 만성질환, 만성통증 등의 건강 문제와 함께 우울증 발생 위험을 높이는 독립적 위험 요소다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울대학교 국민건강지식센터 - 우울감",
+      "source_url": "https://hqcenter.snu.ac.kr/archives/jiphyunjeon/%EC%9A%B0%EC%9A%B8%EA%B0%90",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인 일반",
+        "분류": "예방",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "불면증 만성화 방지가 정신건강 유지의 중요 변수",
+      "cautionSource": null
+    }
+  ]
+}

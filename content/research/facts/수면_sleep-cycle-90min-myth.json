@@ -1,0 +1,232 @@
+{
+  "topic": "90분 수면주기 알람 미신의 과학적 검증",
+  "brand": "잠자리연구소",
+  "article": "sleep-cycle-90min-myth",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sleep-cycle-average-duration",
+      "claim": "수면주기의 평균 지속시간은 90-110분이지만, 개인 간 및 개인 내 변이가 크다: 실제 범위는 70-120분이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI Bookshelf - Physiology, Sleep Stages (StatPearls)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK526132/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "수면 생리학",
+        "시기": "현재 의학 표준",
+        "지역": "국제"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "sleep-cycle-progression",
+      "claim": "밤 동안 수면주기의 지속시간이 변한다: 첫 번째 주기는 70-80분, 이후 주기는 점진적으로 90-110분으로 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI Bookshelf - Physiology, Sleep Stages; Carskadon & Rechtschaffen polysomnographic data",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK526132/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "수면 아키텍처",
+        "시기": "현재",
+        "지역": "국제"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "nrem-rem-progression-night",
+      "claim": "밤이 진행되면서 각 단계의 구성이 변한다: 초반 주기는 깊은 수면(N3) 비중이 높고, 후반 주기는 REM 수면 시간이 길어지고 N3 시간은 줄어든다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI Bookshelf - Physiology, Sleep Stages",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK526132/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "수면 단계 분포",
+        "시기": "현재",
+        "지역": "국제"
+      },
+      "caution": "따라서 정해진 시간에 같은 깊이의 수면 단계에서 깨어날 수 없다.",
+      "cautionSource": "NCBI Bookshelf"
+    },
+    {
+      "id": "sleep-stage-percentages",
+      "claim": "전체 수면 중 NREM 수면이 약 75%, REM 수면이 약 25%를 차지하며, NREM 중에서는 N2(수면의 45%)가 가장 많고, N3(깊은 수면)이 약 25%, REM이 25%다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI Bookshelf - Physiology, Sleep Stages",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK526132/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "수면 구성",
+        "시기": "현재",
+        "지역": "국제"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "individual-cycle-variation",
+      "claim": "개인 간 수면주기 길이의 변이는 크며(70-120분), 특히 영아는 50분 주기를 보인다. 나이가 들면서 주기는 길어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI Bookshelf - Physiology, Sleep Stages",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK526132/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "전연령(영아-성인)",
+        "분류": "발달 변화",
+        "시기": "현재",
+        "지역": "국제"
+      },
+      "caution": "90분 알람은 개인별·밤 시간별 변이를 무시한다.",
+      "cautionSource": "NCBI Bookshelf"
+    },
+    {
+      "id": "nrem-rem-cycle-asymmetric-hypothesis",
+      "claim": "최신 이론(Le Bon의 비대칭 가설)은 REM 수면이 다음 REM 시작 시간을 직접 결정하는 것이 아니라, REM 후 불응기(Post-REM Refractory Period, PRRP)의 길이만 결정한다고 제안한다. 실제 다음 REM 시도는 REM 압박 충분성·NREM 완료·PRRP 종료 세 조건이 만족될 때만 나타난다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PMC National Center for Biotechnology Information - Asymmetrical Hypothesis for NREM-REM Sleep Alternation",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8060555/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "수면 주기 생리학",
+        "시기": "최신 가설",
+        "지역": "국제"
+      },
+      "caution": "전통적 '울트라일주기 진동기' 개념을 도전한다. 이 이론이 채택되면 '90분 알람'의 이론적 근거는 더욱 약해진다.",
+      "cautionSource": "PMC article"
+    },
+    {
+      "id": "90min-alarm-theory",
+      "claim": "90분 알람 이론: 깊은 수면 중에서보다 주기 끝의 가벼운 수면 중 깨면 수면관성(sleep inertia)이 적어 덜 피곤하다는 아이디어다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Popular Science, Smart Sleep Calc",
+      "source_url": "https://www.popsci.com/health/do-sleep-cycle-alarms-work/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "알람 이론",
+        "시기": "현재",
+        "지역": "국제"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "90min-alarm-scientific-evidence-lacking",
+      "claim": "90분 알람의 이론은 그럴듯하지만, 실제 효과에 대한 과학적 증거는 부족하다. 수면 건강 재단은 수면 계산기의 가정과 조언이 과학적 증거에 기반하지 않다고 명시한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Health Foundation Australia",
+      "source_url": "https://www.sleephealthfoundation.org.au/news-and-articles/the-sleep-calculator-is-just-scientific-hype",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "증거 평가",
+        "시기": "현재",
+        "지역": "호주"
+      },
+      "caution": "실제 수면은 교과서 설명보다 복잡하며, 개인의 실제 주기 길이를 알 수 없는 상황에서 90분 배수로 알람을 설정하는 것은 불확실하다.",
+      "cautionSource": "Sleep Health Foundation"
+    },
+    {
+      "id": "rem-sleep-easy-to-wake",
+      "claim": "REM 수면은 깨어나기 상대적으로 쉬운 단계이며, REM에서 깨어난 사람들은 놀랍게도 매우 경각해 있다고 보고한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Popular Science",
+      "source_url": "https://www.popsci.com/health/do-sleep-cycle-alarms-work/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "수면 단계 특성",
+        "시기": "현재",
+        "지역": "국제"
+      },
+      "caution": "따라서 '주기 끝의 가벼운 수면에서 깨면 덜 피곤하다'는 주장은 REM 자체의 깨어나기 용이성 때문일 수 있으며, 90분 배수와의 정확한 정렬이 핵심이 아닐 수 있다.",
+      "cautionSource": "Popular Science"
+    },
+    {
+      "id": "sleep-inertia-key-factor",
+      "claim": "실제로 중요한 것은 수면관성(sleep inertia)이다: 깊은 수면에서 급작스럽게 깨어나면 경각심 저하, 인지 속도 둔화, 혼란스러운 방향감각이 나타난다. 깨어나는 타이밍이 주기 경계 정렬보다 더 중요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC National Center for Biotechnology Information - Multimodal Smart Alarm System",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10969141/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "각성 품질",
+        "시기": "2024년 연구",
+        "지역": "국제"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "most-refreshed-from-rem",
+      "claim": "사람들이 가장 개운하다고 느끼는 때는 밤 늦은 시간의 REM 수면에서 깨어날 때이며, 특히 수면 부족이 없을 때 그렇다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Popular Science",
+      "source_url": "https://www.popsci.com/health/do-sleep-cycle-alarms-work/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "주관적 휴식감",
+        "시기": "현재",
+        "지역": "국제"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "best-practice-sleep-refreshed",
+      "claim": "개운하게 아침을 맞이하는 가장 좋은 방법은 90분 알람이 아니라, 일관된 수면/기상 시간과 양질의 수면 습관 유지(규칙적 운동, 카페인 제한, 어두운 환경, 스트레스 관리)다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Health Foundation, Popular Science",
+      "source_url": "https://www.sleephealthfoundation.org.au/news-and-articles/the-sleep-calculator-is-just-scientific-hype",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "수면 위생",
+        "시기": "현재",
+        "지역": "국제"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "90min-app-accuracy-question",
+      "claim": "스마트폰 수면 추적 앱이 실제 수면 단계를 정확하게 측정할 수 없으므로, 90분 계산에 기반한 알람 설정의 신뢰도가 낮다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Health Foundation",
+      "source_url": "https://www.sleephealthfoundation.org.au/news-and-articles/the-sleep-calculator-is-just-scientific-hype",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "기술 한계",
+        "시기": "현재",
+        "지역": "국제"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    }
+  ]
+}

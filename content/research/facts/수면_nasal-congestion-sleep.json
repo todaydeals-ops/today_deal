@@ -1,0 +1,147 @@
+{
+  "topic": "비염·코막힘으로 인한 구강호흡이 수면질에 미치는 영향 및 완화법",
+  "brand": "잠자리연구소",
+  "article": "코가 막혀 입으로 자는 밤, 어떻게 뚫을까",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "nasal-congestion-oral-breathing-mechanism",
+      "claim": "비강 호흡이 충분하지 못할 때 구강호흡이 일어나며, 이는 코골이와 폐쇄성 수면무호흡을 악화시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "닥터나우 - 비염으로 인한 코막힘 완화",
+      "source_url": "https://doctornow.co.kr/content/qna/ed14a5f158894d6fab6f41ca1b96bf12",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "만성 비염·비강협착 성인",
+        "분류": "생리학",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "nasal-congestion-sleep-quality-deterioration",
+      "claim": "비염으로 인한 코막힘을 방치하면 만성 비염과 수면장애로 진행할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "설명한의원 - 코막힘 방치",
+      "source_url": "https://seolmyungclinic.com/notes/respiratory-260504-55mM103R",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "급성·아급성 비염 성인",
+        "분류": "예방",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "악화 전 조기 관리가 중요하므로 3주 이상 지속되는 코막힘은 이비인후과 진료 권장",
+      "cautionSource": null
+    },
+    {
+      "id": "nasal-congestion-sleep-posture-head-elevation",
+      "claim": "수면 시 상체를 15~30도 정도 높게 유지하면 비강 혈류 압력이 낮아져 코막힘 완화에 도움이 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "닥터나우 - 비염으로 인한 코막힘 완화",
+      "source_url": "https://doctornow.co.kr/content/qna/ed14a5f158894d6fab6f41ca1b96bf12",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "코막힘이 있는 성인",
+        "분류": "생활습관",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "15~30도 범위 지키기. 너무 높으면 목이 뻐근하고 식도 역류 위험 증가.",
+      "cautionSource": "임상 자세 권장사항"
+    },
+    {
+      "id": "nasal-congestion-sleep-saline-irrigation",
+      "claim": "잠들기 전에 콧속을 생리식염수(식염수)로 세척하면 코막힘 완화에 도움이 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "닥터나우 - 비염으로 인한 코막힘 완화",
+      "source_url": "https://doctornow.co.kr/content/qna/ed14a5f158894d6fab6f41ca1b96bf12",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "만성 비염·축농증 성인",
+        "분류": "생활습관",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "매일 세척하면 비강 점막 면역력 저하 가능하므로 증상이 심할 때만 사용. 물기를 완전히 제거해야 중이염 예방 가능.",
+      "cautionSource": "이비인후과 임상 지침"
+    },
+    {
+      "id": "nasal-congestion-sleep-lateral-position",
+      "claim": "옆으로 누워 자는 자세도 코막힘 완화에 도움이 될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "닥터나우 - 비염으로 인한 코막힘 완화",
+      "source_url": "https://doctornow.co.kr/content/qna/ed14a5f158894d6fab6f41ca1b96bf12",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "코막힘이 있는 성인",
+        "분류": "생활습관",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "옆으로 누우면 아래쪽 코가 막힐 수 있으니 2시간마다 좌우 변경 권장",
+      "cautionSource": null
+    },
+    {
+      "id": "indoor-humidity-nasal-health",
+      "claim": "실내 습도를 50~60%로 적절히 조절하면 비강 점막 건조를 방지하여 코막힘 완화에 도움이 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "닥터나우 - 비염으로 인한 코막힘 완화",
+      "source_url": "https://doctornow.co.kr/content/qna/ed14a5f158894d6fab6f41ca1b96bf12",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "건조 환경 거주자·비염 성인",
+        "분류": "환경",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "습도 60% 초과 시 곰팡이·진드기 번식 위험. 겨울철 난방은 습도를 저하시키므로 가습기 사용 권장.",
+      "cautionSource": "실내 건강 기준"
+    },
+    {
+      "id": "nasal-spray-short-term-use",
+      "claim": "자기 전에 비강 스프레이(비충혈 제거제)를 사용하면 일시적으로 코막힘 완화에 도움이 될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "닥터나우 - 비염으로 인한 코막힘 완화",
+      "source_url": "https://doctornow.co.kr/content/qna/ed14a5f158894d6fab6f41ca1b96bf12",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "급성 코막힘 성인",
+        "분류": "약물",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "3~7일 이상 연속 사용하면 반동성 코막힘(rebound nasal congestion)이 발생하여 오히려 악화될 수 있으므로 단기간만 사용. 만성 비염은 비강 코르티코스테로이드 스프레이가 안전.",
+      "cautionSource": "약물 사용 기준 및 이비인후과 지침"
+    },
+    {
+      "id": "nasal-congestion-ent-referral-criteria",
+      "claim": "3주 이상 지속되는 코막힘, 코골이를 동반하는 코막힘, 수면무호흡이 의심되는 경우는 이비인후과 진료가 필수다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "이비인후과 진료 기준",
+      "source_url": null,
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "만성·반복 코막힘 성인",
+        "분류": "진료 기준",
+        "시기": "현재",
+        "지역": "한국"
+      },
+      "caution": "자가 관리만으로 3주 이상 개선 없으면 의료 평가 권장. 코골이·주간 졸림·숨 멈춤은 위험 신호.",
+      "cautionSource": "임상 진료 기준"
+    }
+  ]
+}
