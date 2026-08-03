@@ -1,0 +1,136 @@
+{
+  "topic": "야간뇨·밤에 자꾸 화장실 가서 깬다",
+  "brand": "수면",
+  "article": "수면_nocturia-sleep",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "nocturia-definition-threshold",
+      "claim": "야간뇨는 수면 중 1회 이상 깨는 증상을 말하며, 임상적으로는 2회 이상을 진단 기준으로 본다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원 건강이야기",
+      "source_url": "https://news.amc.seoul.kr/news/con/detail.do?cntId=9574",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인 남성·여성",
+        "분류": "수면장애·배뇨 증상",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "nocturia-prevalence-by-age",
+      "claim": "국내 성인에서 야간뇨 유병률은 30대 20%, 40대 이상 48%, 60대 이상 40% 수준으로 나이가 들수록 증가하는 경향을 보인다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "하이닥·의료기관 통계",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=49232",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "유병률",
+        "시기": "현재(2024~)",
+        "지역": "KR"
+      },
+      "caution": "40대 이상 데이터는 1회 이상 깬 경우(33%)와 2회 이상(48%)이 혼재 표기되므로 정확한 진단 기준으로 재확인 권장",
+      "cautionSource": "https://news.hidoc.co.kr/news/articleView.html?idxno=49232"
+    },
+    {
+      "id": "nocturia-cause-adh-reduction",
+      "claim": "정상적으로 항이뇨호르몬(ADH)에 의해 수면 중 소변 생성이 감소하는데, 나이가 들수록 항이뇨호르몬이 부족해져 야간뇨가 발생한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 국가건강정보포털·의료기관 자료",
+      "source_url": "https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=3193",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "고령층(60세 이상)",
+        "분류": "생리적 원인",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "nocturia-cause-primary-factors",
+      "claim": "야간뇨의 주요 원인은 야간다뇨(과다소변 생성), 전립선비대증, 과민성 방광, 신장질환으로 나뉘며, 대부분은 잘못된 수분 습관이 원인이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원·의료기관 진료 경험",
+      "source_url": "https://news.amc.seoul.kr/news/con/detail.do?cntId=9574",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "질환별 원인",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "nocturia-treatment-lifestyle",
+      "claim": "일차 치료로는 야간 수분 섭취 제한, 저녁 식사 후 카페인·알코올 제거, 취침 전 배뇨, 신체운동, 수면 환경 최적화 등 생활습관 개선을 시행한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청·의료기관 가이드",
+      "source_url": "https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=3193",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "야간뇨 환자",
+        "분류": "일차 대처",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "생활습관 개선으로 차도가 없으면 의료진 진찰 필수(전립선 질환·당뇨·신장 질환 확인)"
+    },
+    {
+      "id": "nocturia-treatment-medication",
+      "claim": "야간 다뇨가 있을 때는 항이뇨호르몬 약물을, 과민성 방광이나 전립선비대증이 동반되면 해당 질환 약물을 병용하여 효과를 높인다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료기관 치료 지침",
+      "source_url": "https://news.amc.seoul.kr/news/con/detail.do?cntId=9574",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "야간뇨 환자 중 약물 치료 대상자",
+        "분류": "약물 치료",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "nocturia-bph-surgery",
+      "claim": "전립선비대증이 원인인 야간뇨는 약물 치료로 호전 없거나 결석·감염이 반복되면 경요도 전립선절제술이나 레이저 적출술 등 수술을 고려한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청·의료기관 진료 가이드",
+      "source_url": "https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=3193",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "전립선비대증 환자 중 약물 치료 무반응",
+        "분류": "수술 치료",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "nocturia-red-flag-criteria",
+      "claim": "생활습관 개선만으로 차도가 없거나, 배뇨 곤란·잔뇨감·당뇨 증상 등이 함께 있으면 비뇨의학과 진료를 받아야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료기관 권고",
+      "source_url": "https://news.amc.seoul.kr/news/con/detail.do?cntId=9574",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "야간뇨 증상자",
+        "분류": "병원 방문 신호",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "야간뇨가 질환의 초기 신호일 수 있으므로 2~3주 이상 개선 없으면 진료 필수",
+      "cautionSource": "https://news.amc.seoul.kr/news/con/detail.do?cntId=9574"
+    }
+  ]
+}

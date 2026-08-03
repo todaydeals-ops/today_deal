@@ -1,0 +1,40 @@
+{
+  "batch": "goodsleep-batch2",
+  "note": "잠자리연구소 +30편. field=수면·침구. 장비학은 오늘의딜 제품가이드와 충돌해 제외. corner는 표시엔 안 쓰이나 필수필드라 성격에 맞춰 지정(smartguide/factcheck). cat=잠자리 6분류 key.",
+  "topics": [
+    { "slug": "baby-sleep-regression-by-age", "cat": "growth", "corner": "smartguide", "title": "아기 수면퇴행, 4·8·18개월에 왜 다시 깰까", "angle": "월령별 수면퇴행 시기·발달적 원인·대처, 정상범위와 병원 신호 구분" },
+    { "slug": "toddler-separation-anxiety-sleep", "cat": "growth", "corner": "smartguide", "title": "밤마다 엄마 찾는 아이, 분리불안과 밤잠", "angle": "분리불안기 야간 각성 원인·점진적 대처·안심 루틴" },
+    { "slug": "night-terror-vs-nightmare", "cat": "growth", "corner": "factcheck", "title": "야경증과 악몽, 뭐가 다를까", "angle": "야경증 vs 악몽 발생 수면단계·증상·대응 차이, 깨워야 하나" },
+    { "slug": "baby-swaddle-when-stop", "cat": "growth", "corner": "smartguide", "title": "속싸개, 언제 어떻게 졸업할까", "angle": "속싸개 중단 신호(뒤집기)·전환법·안전(SIDS) 원칙" },
+    { "slug": "wake-window-by-age", "cat": "growth", "corner": "smartguide", "title": "월령별 깨어있는 시간, wake window 이해하기", "angle": "wake window 개념·월령별 기준·과피로 방지" },
+
+    { "slug": "exam-anxiety-insomnia", "cat": "study", "corner": "smartguide", "title": "시험 전날 잠이 안 올 때", "angle": "시험불안 불면·역설적 각성·수면노력 역효과·대처" },
+    { "slug": "teen-morning-person-transition", "cat": "study", "corner": "smartguide", "title": "올빼미 청소년, 아침형으로 바꾸는 법", "angle": "위상 앞당기기·아침 빛·취침 루틴·주말 리듬" },
+    { "slug": "dream-memory-learning", "cat": "study", "corner": "factcheck", "title": "꿈은 공부에 도움이 될까, 렘수면과 기억", "angle": "렘수면·기억 공고화·꿈의 역할, 과장과 근거 구분" },
+    { "slug": "sleep-paralysis", "cat": "study", "corner": "factcheck", "title": "가위눌림의 정체, 수면마비란 무엇인가", "angle": "수면마비 기전(렘수면)·유발요인·안전·대처, 미신 구분" },
+
+    { "slug": "business-trip-jetlag", "cat": "work", "corner": "smartguide", "title": "출장 시차, 빠르게 회복하는 법", "angle": "비행 방향별 전략·빛 노출·멜라토닌·현지적응" },
+    { "slug": "remote-work-sleep-rhythm", "cat": "work", "corner": "smartguide", "title": "재택근무가 망친 수면리듬 되돌리기", "angle": "일·수면 경계 붕괴·기상 앵커·빛·루틴 복구" },
+    { "slug": "microsleep-danger", "cat": "work", "corner": "factcheck", "title": "눈 뜨고 조는 마이크로슬립의 위험", "angle": "마이크로슬립 정의·발생 조건·업무/운전 위험·대처" },
+    { "slug": "drowsy-driving-prevention", "cat": "work", "corner": "smartguide", "title": "졸음운전, 커피보다 확실한 예방", "angle": "졸음 신호·커피냅·환기·휴식주기, 밤샘운전 위험" },
+    { "slug": "exercise-timing-sleep", "cat": "work", "corner": "factcheck", "title": "운동은 몇 시에 해야 잘 잘까", "angle": "저녁 운동 수면방해설 검증·강도·타이밍·개인차" },
+    { "slug": "alcohol-sleep-quality", "cat": "work", "corner": "factcheck", "title": "자기 전 술 한잔, 정말 숙면에 도움될까", "angle": "알코올 초반 진정·후반 각성·렘 억제·해장수면" },
+    { "slug": "sleep-weight-appetite", "cat": "work", "corner": "factcheck", "title": "잠이 부족하면 왜 살이 찔까", "angle": "그렐린·렙틴·야식 충동·대사, 수면과 체중 근거" },
+
+    { "slug": "postpartum-sleep-deprivation", "cat": "harmony", "corner": "smartguide", "title": "산후 수면부족, 어떻게 버틸까", "angle": "분할수면 대처·수면 분담·산후우울 경계 신호" },
+    { "slug": "breastfeeding-caffeine-sleep", "cat": "harmony", "corner": "factcheck", "title": "수유 중 카페인, 아기 잠에 영향 줄까", "angle": "모유 카페인 전달·아기 각성·안전 한도·타이밍" },
+    { "slug": "birth-control-pill-sleep", "cat": "harmony", "corner": "factcheck", "title": "피임약이 수면에 미치는 영향", "angle": "호르몬 변화·체온·수면구조 영향, 근거 수준" },
+    { "slug": "pregnancy-early-fatigue", "cat": "harmony", "corner": "smartguide", "title": "임신 초기, 왜 이렇게 졸릴까", "angle": "프로게스테론·주간 졸음·안전한 낮잠·대처" },
+    { "slug": "pregnancy-late-insomnia", "cat": "harmony", "corner": "smartguide", "title": "임신 후기 불면, 자세 너머의 대처", "angle": "역류·요통·빈뇨·태동·베개활용, 자세는 별글 참조" },
+
+    { "slug": "nocturia-sleep", "cat": "ageless", "corner": "smartguide", "title": "밤에 자꾸 화장실 가서 깬다면", "angle": "야간뇨 원인·수분/카페인 조절·질환 신호(전립선 등)" },
+    { "slug": "parkinson-rbd", "cat": "ageless", "corner": "factcheck", "title": "자다가 소리치고 발길질한다면, 렘수면행동장애", "angle": "RBD 꿈 행동화·파킨슨 연관·안전조치·진료" },
+    { "slug": "sleep-apnea-snoring", "cat": "ageless", "corner": "factcheck", "title": "코골이와 수면무호흡, 방치하면 안 되는 이유", "angle": "무호흡 위험신호·심혈관 위험·검사·CPAP" },
+    { "slug": "restless-legs-syndrome", "cat": "ageless", "corner": "smartguide", "title": "다리가 근질근질 잠 못 드는 하지불안증후군", "angle": "증상·철분/도파민·카페인·생활 대처·진료 신호" },
+    { "slug": "seasonal-oversleep-winter", "cat": "ageless", "corner": "factcheck", "title": "겨울마다 늘어지는 잠, 계절성 수면", "angle": "빛 부족·멜라토닌·계절성정서장애(SAD)·광치료" },
+    { "slug": "sleep-immune-function", "cat": "ageless", "corner": "factcheck", "title": "잠이 부족하면 왜 감기에 잘 걸릴까", "angle": "수면·면역세포·감염 취약·백신 반응 근거" },
+    { "slug": "sleep-blood-sugar", "cat": "ageless", "corner": "factcheck", "title": "수면 부족과 혈당, 당뇨 위험의 관계", "angle": "수면부족·인슐린 저항·식욕·당뇨 위험 근거" },
+    { "slug": "bruxism-teeth-grinding", "cat": "ageless", "corner": "smartguide", "title": "자면서 이 가는 이갈이, 원인과 대처", "angle": "이갈이 원인(스트레스/수면)·치아손상·마우스피스" },
+    { "slug": "melatonin-supplement-truth", "cat": "ageless", "corner": "factcheck", "title": "멜라토닌 보충제, 먹어도 될까", "angle": "효과 범위(시차/위상)·용량·안전·오해, 국내 처방여부" }
+  ]
+}

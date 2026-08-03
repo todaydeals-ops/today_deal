@@ -1,0 +1,172 @@
+{
+  "topic": "겨울마다 늘어지는 잠·계절성 정서장애(SAD)와 과다수면",
+  "brand": "수면",
+  "article": "수면_seasonal-oversleep-winter",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sad-definition-symptoms",
+      "claim": "계절성 정서장애(SAD)는 가을·겨울에 우울감, 무기력, 수면 과다, 식욕 증가 등이 나타나는 기분장애로, 봄·여름에는 정상으로 회복된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "연세의료원·정신의학 자료",
+      "source_url": "https://sev.severance.healthcare/health/encyclopedia/disease/disease.do?mode=view&articleNo=66627",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인(여성이 남성의 1.5~2배)",
+        "분류": "계절성 기분장애·수면장애",
+        "시기": "가을·겨울(9월~3월)",
+        "지역": "KR·고위도 지역"
+      }
+    },
+    {
+      "id": "sad-winter-pattern-manifestation",
+      "claim": "겨울형 SAD는 슬픈 기분과 무기력, 피로감이 특징이며, 과수면(9시간 이상)과 주간 졸림이 나타난다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의학문헌·임상 진료 경험",
+      "source_url": "https://sev.severance.healthcare/health/encyclopedia/disease/disease.do?mode=view&articleNo=66627",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "겨울철 SAD 환자",
+        "분류": "증상 특성",
+        "시기": "겨울",
+        "지역": "KR"
+      },
+      "caution": "단순 '겨울에 많이 자는 것'이 아니라 일상 기능 저하·직업 능력 감소가 동반될 때 SAD 진단 기준 충족"
+    },
+    {
+      "id": "sad-cause-melatonin-dysregulation",
+      "claim": "일조 시간이 줄어들면서 생체리듬을 조절하는 멜라토닌이 과잉 생산되어 아침의 멜라토닌 수치가 비정상적으로 높아진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신경과학 연구·의료기관",
+      "source_url": "https://www.chcrr.org/ko/health-topic/seasonal-affective-disorder/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "SAD 환자",
+        "분류": "생리적 원인",
+        "시기": "겨울",
+        "지역": "KR·고위도"
+      },
+      "caution": "멜라토닌 과잉 분비는 늦잠·피로를 초래하며, 이것이 '겨울잠'의 주요 생리적 기제임"
+    },
+    {
+      "id": "sad-cause-serotonin-deficit",
+      "claim": "기분·수면·식욕을 조절하는 신경전달물질 세로토닌의 감소도 SAD의 주요 원인이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신경정신의학 문헌",
+      "source_url": "https://www.maum-sopoong.or.kr/infor_story/55526",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "SAD 환자·의료진",
+        "분류": "신경생화학적 원인",
+        "시기": "일반",
+        "지역": "KR·국제"
+      }
+    },
+    {
+      "id": "sad-cause-vitamin-d-deficiency",
+      "claim": "겨울철 일조 부족으로 인한 비타민 D 결핍도 SAD 환자에게 흔하게 관찰되므로 보충이 도움이 될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료기관·임상 경험",
+      "source_url": "https://sev.severance.healthcare/health/encyclopedia/disease/disease.do?mode=view&articleNo=66627",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "겨울형 SAD 환자",
+        "분류": "영양 결핍·치료",
+        "시기": "겨울",
+        "지역": "KR"
+      },
+      "caution": "비타민 D 보충제는 의료진 지도 하에 혈중 수치 확인 후 복용하는 것이 안전"
+    },
+    {
+      "id": "sad-treatment-light-therapy",
+      "claim": "광치료는 10,000lux 정도의 빛을 아침(30분~1시간)에 노출시켜 멜라토닌 분비를 정상화하는 효과적인 1차 치료법이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료기관·정신건강 자료",
+      "source_url": "https://sev.severance.healthcare/health/encyclopedia/disease/disease.do?mode=view&articleNo=66627",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "SAD 진단자",
+        "분류": "비약물 치료",
+        "시기": "겨울",
+        "지역": "KR·국제"
+      },
+      "caution": "광치료는 의료용 장비를 사용해야 하며, 일반 실내등(300~500lux)이나 실외 태닝(자외선 손상 위험)으로 효과 없음"
+    },
+    {
+      "id": "sad-treatment-antidepressant",
+      "claim": "약물 치료는 항우울제(선택적 세로토닌 재흡수 억제제)가 기본이며, 광치료와 병행 시 효과가 더 높다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "정신의학·의료기관 가이드",
+      "source_url": "https://sev.severance.healthcare/health/encyclopedia/disease/disease.do?mode=view&articleNo=66627",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "SAD 진단자",
+        "분류": "약물 치료",
+        "시기": "겨울",
+        "지역": "KR"
+      },
+      "caution": "항우울제는 의료진 처방이 필수이며, 복용 2~4주 후 효과 판정 권장",
+      "cautionSource": "https://sev.severance.healthcare/health/encyclopedia/disease/disease.do?mode=view&articleNo=66627"
+    },
+    {
+      "id": "sad-preventive-strategies",
+      "claim": "겨울 SAD 예방을 위해 아침 햇빛 노출, 야외 활동, 규칙적 운동, 비타민 D 보충이 도움이 된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료기관·정신건강 문헌",
+      "source_url": "https://www.chcrr.org/ko/health-topic/seasonal-affective-disorder/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "SAD 고위험군·예방 대상자",
+        "분류": "생활 예방",
+        "시기": "가을~겨울",
+        "지역": "KR"
+      },
+      "caution": "예방 시작 시기는 증상 시작 1~2개월 전(9월 초)이 효과적이므로, 前年 증상 기록 후 계획 수립 권장",
+      "cautionSource": "https://www.chcrr.org/ko/health-topic/seasonal-affective-disorder/"
+    },
+    {
+      "id": "sad-prevalence-latitude",
+      "claim": "SAD는 고위도 지역(북위 30도 이상)에서 더 흔하게 나타나며, 위도가 높을수록 유병률이 증가한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "역학 연구·의료기관",
+      "source_url": "https://www.chcrr.org/ko/health-topic/seasonal-affective-disorder/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "일반 인구",
+        "분류": "지역별 유병률",
+        "시기": "일반",
+        "지역": "북반구·고위도"
+      },
+      "caution": "한반도(북위 33~43도)는 고위도 지역이므로 겨울 SAD 유병률이 중위도 국가보다 높을 것으로 예상되나, 정확한 국내 통계 자료는 별도 조사 필요",
+      "cautionSource": "https://www.chcrr.org/ko/health-topic/seasonal-affective-disorder/"
+    },
+    {
+      "id": "sad-when-to-consult",
+      "claim": "매년 같은 계절(특히 가을·겨울)에 우울감·무기력·과수면이 2주 이상 지속되면 정신건강의학과 진료를 받아야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료기관·정신의학 지침",
+      "source_url": "https://sev.severance.healthcare/health/encyclopedia/disease/disease.do?mode=view&articleNo=66627",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "의심 증상자",
+        "분류": "진료 신호",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "SAD는 자가진단 불가능하며, 반복되는 패턴 기록이 진단에 도움이 되므로 매년 증상 메모 권장"
+    }
+  ]
+}

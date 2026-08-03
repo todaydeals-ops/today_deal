@@ -1,0 +1,164 @@
+{
+  "topic": "유아 분리불안과 밤잠 — 발생 시기·야간각성·대처",
+  "brand": "공통",
+  "article": "toddler-separation-anxiety-sleep",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "separation-anxiety-developmental-stage",
+      "claim": "분리불안은 정상적 정서 발달 단계로, 아이가 부재중인 사람/물체가 계속 존재함을 이해하는 능력(물체 지속성)이 발달하면서 시작된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Academy of Pediatrics (AAP) - HealthyChildren.org",
+      "source_url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/separation-anxiety-and-sleeping.aspx",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "유아(생후 2개월~36개월)",
+        "region": "국제"
+      },
+      "caution": "물체 지속성 발달은 인지 건강함의 신호. 분리불안 자체는 질환이 아니라 발달 마일스톤.",
+      "cautionSource": "AAP"
+    },
+    {
+      "id": "separation-anxiety-onset-timing",
+      "claim": "분리불안은 생후 6개월부터 시작되나, 생후 후반부(생후 6~12개월)에서 본격적으로 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAP - HealthyChildren.org",
+      "source_url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/separation-anxiety-and-sleeping.aspx",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "영아(6~12개월)",
+        "region": "국제"
+      },
+      "caution": "개인차 크며, 어떤 아기는 8개월부터, 어떤 아기는 10개월부터 명확한 증상을 보임.",
+      "cautionSource": "AAP"
+    },
+    {
+      "id": "separation-anxiety-peak-15-18months",
+      "claim": "분리불안은 15~18개월에 피크에 도달하며, 이 시기 대부분 유아(AAP 기준 거의 모든 아이)가 분리불안을 경험한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Huckleberry - Separation Anxiety at Bedtime",
+      "source_url": "https://huckleberrycare.com/blog/separation-anxiety-at-bedtime-sleep-regression-or-separation-anxiety",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "유아(15~18개월)",
+        "region": "국제"
+      },
+      "caution": "15~18개월 피크는 18개월 수면퇴행(운동 발달·독립 욕구 등이 겹침)과 일치해 복합 요인으로 작용. 한 가지 원인이 아님.",
+      "cautionSource": "Huckleberry"
+    },
+    {
+      "id": "separation-anxiety-second-wave-18-24months",
+      "claim": "분리불안은 18개월 후 일부 감소했다가, 18~24개월에 다시 큰 파도를 일으킨다(18개월·2년 수면퇴행과 일치).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Huckleberry - Separation Anxiety at Bedtime",
+      "source_url": "https://huckleberrycare.com/blog/separation-anxiety-at-bedtime-sleep-regression-or-separation-anxiety",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "유아(18~24개월)",
+        "region": "국제"
+      },
+      "caution": "두 번째 파도는 첫 번째보다 강할 수 있으며, 보호자는 이를 '퇴행'이 아니라 발달 과정으로 이해해야 함.",
+      "cautionSource": "Huckleberry"
+    },
+    {
+      "id": "separation-anxiety-resolution-timeline",
+      "claim": "분리불안은 대부분 아이의 2번째 생일 무렵(18~24개월)부터 해소되기 시작하며, 3세 무렵에는 대부분 아이가 자연 소멸된 분리불안을 경험하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAP - HealthyChildren.org",
+      "source_url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/separation-anxiety-and-sleeping.aspx",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "유아(18~36개월)",
+        "region": "국제"
+      },
+      "caution": "해소 타이밍은 매우 개인차가 크며, 일부 아이는 3세를 넘어 4세까지 증상을 보일 수 있음.",
+      "cautionSource": "AAP"
+    },
+    {
+      "id": "separation-anxiety-sleep-disruption-pattern",
+      "claim": "분리불안이 높은 시기(15~24개월)의 유아는 야간에 반복적으로(수회 이상) 깨어나 울음으로 부모를 찾으며, 때로 한 부모만 원하기도 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Huckleberry - Separation Anxiety at Bedtime",
+      "source_url": "https://huckleberrycare.com/blog/separation-anxiety-at-bedtime-sleep-regression-or-separation-anxiety",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "유아(15~24개월)",
+        "region": "국제"
+      },
+      "caution": "다중 각성은 아이 입장에서 부모 소재 확인이 필요한 상태이므로, 부모는 인내심을 가지고 일관되게 응답해야 함.",
+      "cautionSource": "Huckleberry"
+    },
+    {
+      "id": "separation-anxiety-coping-strategy-predictability",
+      "claim": "아이에게 '잠깐 나갔다 올게'라고 말하고 떠나가고, 같은 보육자를 규칙적으로(예: 주 1회 특정 요일) 만나도록 하면 예측 가능성이 높아져 불안이 감소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAP - HealthyChildren.org",
+      "source_url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/separation-anxiety-and-sleeping.aspx",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "유아(15~36개월)",
+        "region": "국제"
+      },
+      "caution": "나간 뒤 '슬쩍 나가기(Slip Away)'는 피해야 함. 명확한 작별이 재만남을 더 안전하게 함.",
+      "cautionSource": "AAP"
+    },
+    {
+      "id": "separation-anxiety-distraction-strategy",
+      "claim": "부모가 떠나기 전에 친숙한 보육자(보모·할머니)가 아이의 관심을 새로운 활동이나 장난감으로 돌리면, 부모 대한 주의가 분산돼 불안이 줄어든다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAP - HealthyChildren.org",
+      "source_url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/separation-anxiety-and-sleeping.aspx",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "유아(15~36개월)",
+        "region": "국제"
+      },
+      "caution": "단순 기계적 분산이 아니라, 아이의 흥미를 진정으로 사로잡는 활동이어야 함. 무심한 제안은 역효과.",
+      "cautionSource": "AAP"
+    },
+    {
+      "id": "separation-anxiety-new-caregiver-introduction",
+      "claim": "새로운 보육자(베이비시터)는 아이의 취침 시간 이전에 도착해 부모가 있는 상태에서 짧은 시간 만나도록 하면, 밤시간 분리불안을 완화할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAP - HealthyChildren.org",
+      "source_url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/separation-anxiety-and-sleeping.aspx",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "유아(15~36개월)",
+        "region": "국제"
+      },
+      "caution": "새로운 얼굴을 자기 직전에 마주치면 낯섦으로 인한 불안이 분리불안에 더해져 악순환. 낮시간 소개가 필수.",
+      "cautionSource": "AAP"
+    }
+  ]
+}

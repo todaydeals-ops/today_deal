@@ -1,0 +1,209 @@
+{
+  "topic": "임신 후기 불면증: 역류, 빈뇨, 태동",
+  "brand": "공통",
+  "article": "pregnancy-late-insomnia",
+  "captured": "2026-08-04",
+  "reused_facts": ["left-lateral-sleep-position-recommended"],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "pregnancy-insomnia-two-thirds-prevalence",
+      "claim": "임신 중 약 2/3(약 66%)의 여성이 불면증을 경험하며, 심각도는 임신 진행에 따라 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임신 수면 장애 임상 리뷰",
+      "source_url": "https://www.sleepfoundation.org/pregnancy/sleeping-during-3rd-trimester",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "임신 불면증",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "third-trimester-insomnia-most-severe-42-4-percent",
+      "claim": "제3삼분기(임신 27-40주) 불면증 발생률은 메타분석 기준 42.4%이며, 임신 진행에 따라 악화된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "메타분석 & 체계적 검토(8,798명)",
+      "source_url": "https://academic.oup.com/sleep/article/45/10/zsac175/6651333",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "제3삼분기 불면증",
+        "years": "임신 27-40주",
+        "region": "글로벌"
+      },
+      "caution": "연구마다 불면증의 정의와 측정 방법이 달라 38%-59.8% 범위로 보고된다. 심각도 기준과 문화적 차이에 따라 변동한다.",
+      "cautionSource": "메타분석 신뢰구간 95% CI: 32.9-52.5%"
+    },
+    {
+      "id": "first-trimester-insomnia-25-percent",
+      "claim": "첫 삼분기(임신 0-13주) 불면증 발생률은 약 25%로, 제3삼분기의 42.4% 대비 낮다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임신 단계별 불면증 비교 연구",
+      "source_url": "https://academic.oup.com/sleep/article/45/10/zsac175/6651333",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "임신 단계별 불면증",
+        "years": "임신 0-13주",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "third-trimester-acid-reflux-heartburn-major-cause",
+      "claim": "제3삼분기 불면증의 주요 원인 중 하나는 산 역류(acid reflux)와 속쓰림(heartburn)이며, 누워있는 자세에서 악화된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "산부인과 수면 장애 리뷰",
+      "source_url": "https://www.sleepfoundation.org/pregnancy/sleeping-during-3rd-trimester",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "역류성 불면증",
+        "years": "임신 27-40주",
+        "region": "글로벌"
+      },
+      "caution": "자궁의 상향 압력으로 인해 위산이 식도로 역류하며, 이 현상은 제2-3삼분기에서 특히 문제가 된다.",
+      "cautionSource": "산부인과 생리학"
+    },
+    {
+      "id": "pregnancy-reflux-supine-position-worsens",
+      "claim": "임신 중 산 역류는 누운 자세(앙와위)에서 악화되므로, 30도 이상 상체를 높이거나 좌측와위 자세가 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "산부인과 역류 관리 지침",
+      "source_url": "https://www.boppy.com/blogs/boppy/pregnancy-insomnia",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "역류 자세 관리",
+        "years": "임신 27-40주",
+        "region": "글로벌"
+      },
+      "caution": "좌측와위는 태아 안전과 역류 예방 두 목표를 동시에 충족한다.",
+      "cautionSource": "산부인과 수면 자세 권장사항"
+    },
+    {
+      "id": "nocturia-pregnancy-frequent-urination-causes",
+      "claim": "임신 후기의 빈뇨(야간 소변)는 자궁이 방광을 압박하고 신장이 과활성화되기 때문에 발생하며, 야간 각성의 주요 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "산부인과 배뇨 생리학 연구",
+      "source_url": "https://www.sleepfoundation.org/pregnancy/sleeping-during-3rd-trimester",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "야간뇨 기전",
+        "years": "임신 27-40주",
+        "region": "글로벌"
+      },
+      "caution": "야간뇨로 인한 각성은 수면 분절을 심화시키고 총 수면 시간 감소와 별개로 수면 질 저하를 유발한다.",
+      "cautionSource": "산부인과 배뇨 연구"
+    },
+    {
+      "id": "third-trimester-insomnia-anxiety-depression-disturbed-dreams",
+      "claim": "제3삼분기 불면증의 주요 원인에는 불안, 우울증, 악몽(disturbed dreams) 외에도 태동, 요통, 빈뇨 등이 포함된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임신 불면증 다인성 분석",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12172522/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "다중 불면증 원인",
+        "years": "임신 27-40주",
+        "region": "글로벌"
+      },
+      "caution": "불면증이 다양한 원인의 합작이므로, 개별적이고 단계적 대처가 필요하다.",
+      "cautionSource": "임상 다인성 분석"
+    },
+    {
+      "id": "pregnancy-insomnia-preeclampsia-preterm-birth-risk",
+      "claim": "제3삼분기 불면증과 수면 장애는 자간전증(preeclampsia) 위험과 조산(preterm birth) 증가와 관련이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임신 합병증 임상 연구",
+      "source_url": "https://academic.oup.com/sleep/article/45/10/zsac175/6651333",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "임신 합병증 위험",
+        "years": "임신 27-40주",
+        "region": "글로벌"
+      },
+      "caution": "수면 부족이 직접 원인인지 아니면 유해 인자의 표지자인지는 더 연구가 필요하지만, 임상적 중요성은 입증되었다.",
+      "cautionSource": "임상 연구 메타분석"
+    },
+    {
+      "id": "pregnancy-insomnia-cesarean-delivery-likelihood-increase",
+      "claim": "임신 중 불면증과 수면 장애는 제왕절개 분만 확률과 조산의 가능성을 높인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임신 수면 부족과 산과 결과 연구",
+      "source_url": "https://academic.oup.com/sleep/article/45/10/zsac175/6651333",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "분만 방식 및 조산 위험",
+        "years": "임신 후기",
+        "region": "글로벌"
+      },
+      "caution": "이는 상관관계이며, 인과관계 확립에는 추가 연구가 필요하다.",
+      "cautionSource": "산과 결과 분석"
+    },
+    {
+      "id": "fetal-movement-nighttime-awakening-third-trimester",
+      "claim": "제3삼분기의 심한 태동(fetal movement)은 직접적 야간 각성의 원인이 되며, 특히 산모가 누운 자세에서 두드러진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임신 수면 장애 임상 리뷰",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12172522/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "태동으로 인한 각성",
+        "years": "임신 27-40주",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "insomnia-higher-in-pregnant-than-general-population",
+      "claim": "임신 중 불면증 유병율(62%)은 일반 인구(10-15%)보다 4-6배 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "인구 기반 비교 연구",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11348333/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·임신",
+        "line": "임신 불면증 vs 일반",
+        "years": "임신 전 기간",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

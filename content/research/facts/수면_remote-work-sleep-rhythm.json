@@ -1,0 +1,172 @@
+{
+  "topic": "재택근무로 인한 수면리듬 복구",
+  "brand": "수면",
+  "article": "remote-work-sleep-rhythm",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "remote-work-boundary-collapse",
+      "claim": "재택근무는 업무 공간과 개인생활 공간의 경계 붕괴를 초래하며, 이는 저녁 시간까지 업무 스트레스 지속, 수면 준비 루틴 부재, 침실에서의 업무 수행으로 인한 정신적 긴장 상태를 야기한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH - Working from home impact on sleep",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9293935/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "재택근무",
+        "line": "일-수면 경계 붕괴",
+        "years": "2022",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "irregular-sleep-schedule-remote-work",
+      "claim": "재택근무 환경에서는 구조화된 출근 일정이 없어서 불규칙한 수면-각성 일정을 초래하며, 이는 수면의 질 저하와 주간 피로를 악화시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "WorkDesign Research - Hybrid work circadian rhythm disruption",
+      "source_url": "https://www.workdesign.com/2023/06/hybrid-work-is-disrupting-your-circadian-rhythm/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "재택근무",
+        "line": "수면 일정 불규칙성",
+        "years": "2023",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "screen-time-melatonin-suppression",
+      "claim": "재택근무 중 지속적인 화면(모니터/스마트폰) 사용은 청색광을 통해 멜라토닌 분비를 억제하고, 이는 저녁 수면의 질과 입면 시간을 악화시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Cycle - Remote work screen time impact",
+      "source_url": "https://sleepcycle.com/sleep-talk/remote-work-impact-sleep",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "재택근무",
+        "line": "청색광 노출",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "morning-light-anchor-consistent-wake-time",
+      "claim": "기상 시간을 고정하고 기상 후 15-30분 이내에 야외 일광 노출(자연광)을 하면, 이는 생체시계의 가장 강력한 동기신호 역할을 하여 전체 수면-각성 리듬을 안정시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Rise Science - Circadian rhythm reset guide",
+      "source_url": "https://www.risescience.com/blog/reset-circadian-rhythm",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "재택근무",
+        "line": "기상 앵커",
+        "years": "2026",
+        "region": "일반"
+      },
+      "caution": "주말을 포함해 일관되게 같은 시간에 기상해야 효과가 있다. 주말에 2시간 이상 늦게 자면 사회적 시차가 재발한다."
+    },
+    {
+      "id": "consistent-wake-window-weekly-variation",
+      "claim": "일과 수면을 분리하기 위해 기상 시간을 고정해야 하며, 권장하는 기상 시간 범위는 1시간(예: 오전 7-8시)이며 주중-주말 차이는 1시간 이내로 제한해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Rise Science + Cleveland Clinic",
+      "source_url": "https://health.clevelandclinic.org/how-to-reset-circadian-rhythm",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "재택근무",
+        "line": "기상 시간 고정",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "evening-light-restriction-screen-cutoff",
+      "claim": "저녁 시간(자정 2시간 전부터)에 밝은 화면(모니터, 스마트폰) 사용을 제한하고 청색광 차단 안경이나 야간 모드 사용을 권장한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation + AYO study",
+      "source_url": "https://www.sleepfoundation.org/circadian-rhythm/can-you-change-your-circadian-rhythm",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "재택근무",
+        "line": "저녁 빛 제한",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "work-boundary-physical-space-separation",
+      "claim": "침실을 업무 공간으로 사용하는 것을 피하고, 가능하면 별도 업무 공간을 정하여 일과 수면을 공간적으로 분리하면 침실이 '수면 환경'으로 재정의된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH - Sleep and boundary collapse",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9293935/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "재택근무",
+        "line": "공간 분리",
+        "years": "2022",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "exercise-timing-circadian-shift",
+      "claim": "낮 시간 운동(오전/오후)은 생체시계를 앞당기고 생체리듬 안정성을 높인다. 반대로 자기 1시간 이내의 격렬한 운동은 각성을 유지해 수면을 방해한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic + Sleep Foundation",
+      "source_url": "https://health.clevelandclinic.org/how-to-reset-circadian-rhythm",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "재택근무",
+        "line": "운동 타이밍",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "meal-timing-consistency",
+      "claim": "매일 같은 시간에 아침 식사를 하는 것은 기상 시간 고정만큼 중요한 생체시계 신호로서, 말초 생체시계를 동기화시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Rise Science - Meal timing circadian signal",
+      "source_url": "https://www.risescience.com/blog/reset-circadian-rhythm",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "재택근무",
+        "line": "아침 식사 타이밍",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "circadian-adaptation-timeline-weeks",
+      "claim": "불규칙한 수면 리듬을 복구하는 데는 보통 1-2주간의 일관된 실행이 필요하며, 초기 개선은 수일 내에 나타나지만 완전한 적응에는 2주 이상이 소요된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation circadian rhythm guide",
+      "source_url": "https://www.sleepfoundation.org/circadian-rhythm/can-you-change-your-circadian-rhythm",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "재택근무",
+        "line": "회복 소요 시간",
+        "years": "2026",
+        "region": "일반"
+      }
+    }
+  ]
+}

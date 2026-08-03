@@ -1,0 +1,168 @@
+{
+  "topic": "하지불안증후군(RLS)·다리가 근질근질 잠 못 드는 증상",
+  "brand": "수면",
+  "article": "수면_restless-legs-syndrome",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "rls-definition-core-symptom",
+      "claim": "하지불안증후군(RLS)은 다리에 불쾌한 감각을 느끼고 다리를 움직이고 싶은 충동을 억제할 수 없는 증상으로 정의된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울대학교병원·의학정보",
+      "source_url": "https://www.snuh.org/health/nMedInfo/nView.do?category=DIS&medid=AA000361",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인(모든 연령 가능, 고령층 증가)",
+        "분류": "수면장애·신경계 질환",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "rls-symptom-characteristics",
+      "claim": "RLS의 핵심 증상은 다리의 불쾌감(저림·가려움·뜨거움·통증), 움직임으로 일시적 완화, 활동 없을 때 악화, 저녁·밤에 심화되는 특징을 보인다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의학문헌·진료 경험",
+      "source_url": "https://www.snuh.org/health/nMedInfo/nView.do?category=DIS&medid=AA000361",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "RLS 증상자",
+        "분류": "진단 특징",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "단순 '다리가 저린 증상'은 RLS가 아니며, '움직여야 한다는 충동'이 핵심 특징이므로 자가 진단 금지"
+    },
+    {
+      "id": "rls-cause-dopamine-hypothesis",
+      "claim": "RLS의 원인은 명확하지 않으나, 뇌의 도파민 시스템 불균형이 주요 인자로 추측되고 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신경과학 연구·의료기관",
+      "source_url": "https://www.snuh.org/health/nMedInfo/nView.do?category=DIS&medid=AA000361",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "의료진·환자",
+        "분류": "병인",
+        "시기": "일반",
+        "지역": "KR·국제"
+      }
+    },
+    {
+      "id": "rls-cause-iron-deficiency",
+      "claim": "철분 결핍은 빈혈 증상이 없어도 하지불안증후군을 유발하거나 악화시킬 수 있으므로 혈청 페리틴 검사가 진단에 필수이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임상진료 가이드·의료기관",
+      "source_url": "https://synapse.koreamed.org/upload/synapsedata/pdfdata/0130hmr/hmr-33-216.pdf",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "RLS 진단 대상자",
+        "분류": "이차적 원인·검사",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "철분제 복용 전 반드시 혈청 페리틴 수치 확인(낮은 수치일수록 효과 높음) 필수"
+    },
+    {
+      "id": "rls-cause-secondary-conditions",
+      "claim": "신부전, 말초신경병증, 임신(3분기), 당뇨도 RLS를 유발하는 이차적 원인이 될 수 있으므로 감별 진단이 필요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임상진료 가이드",
+      "source_url": "https://synapse.koreamed.org/upload/synapsedata/pdfdata/0130hmr/hmr-33-216.pdf",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "RLS 환자·의료진",
+        "분류": "이차 원인",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "신질환 환자의 RLS는 투석 개선·신장 이식으로 호전될 수 있으므로, 기저 질환 치료가 먼저 중요"
+    },
+    {
+      "id": "rls-diagnosis-clinical-criteria",
+      "claim": "RLS 진단은 임상 증상과 함께 철분 상태(혈청 페리틴), 빈혈, 당뇨, 신질환 검사 및 필요 시 신경전도검사를 통해 이루어진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료기관 진료 기준",
+      "source_url": "https://synapse.koreamed.org/upload/synapsedata/pdfdata/0130hmr/hmr-33-216.pdf",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "의료 진료자",
+        "분류": "진단 방법",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "rls-treatment-first-line",
+      "claim": "최근 RLS 치료 지침은 pregabalin, gabapentin 등 알파-2-델타 리간드 항경련제를 1차 약물로 권고한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신경과학회·최신 임상 가이드(2020~)",
+      "source_url": "https://jknpa.org/pdf/10.4306/jknpa.2020.59.1.13",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "RLS 약물 치료 대상자",
+        "분류": "약물 치료",
+        "시기": "2020년 이후",
+        "지역": "KR"
+      },
+      "caution": "도파민 작용제(레보도파·프라미프렉솔)도 효과적이나 장기 사용 시 '증강(augmentation)' 부작용이 있어 조심스러운 사용 권장"
+    },
+    {
+      "id": "rls-treatment-iron-supplementation",
+      "claim": "철분 결핍이나 요독증, 임신 중기~후기 RLS에서는 철분제 투여가 유용할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임상진료 경험·의료기관",
+      "source_url": "https://synapse.koreamed.org/upload/synapsedata/pdfdata/0130hmr/hmr-33-216.pdf",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "철분 결핍 RLS 환자",
+        "분류": "약물·영양 치료",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "철분제는 위장 부작용(변비·메스꺼움)이 흔하므로, 의료진 지도 하에 복용량·타이밍 조정 필수"
+    },
+    {
+      "id": "rls-lifestyle-management",
+      "claim": "RLS 증상 악화 인자인 카페인·알코올·스트레스 제거, 규칙적 운동, 따뜻한 목욕, 다리 마사지가 보조 치료로 도움이 될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료기관 진료 가이드",
+      "source_url": "https://www.snuh.org/health/nMedInfo/nView.do?category=DIS&medid=AA000361",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "RLS 환자",
+        "분류": "생활 관리",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "생활 개선만으로는 일반적으로 부족하며, 약물 치료와 병행이 효과적"
+    },
+    {
+      "id": "rls-when-to-consult",
+      "claim": "저녁·밤에 다리가 근질거리고 움직여야 할 충동이 반복되어 수면이 방해받으면 신경과 진료를 받아야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료기관 진료 지침",
+      "source_url": "https://www.snuh.org/health/nMedInfo/nView.do?category=DIS&medid=AA000361",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "증상자",
+        "분류": "진료 신호",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "RLS는 자가 진단 불가능하며, 단순 피로·저림과의 구분을 위해 전문의 진찰 필수"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "topic": "산후 수면부족과 산후우울증 경계",
+  "brand": "공통",
+  "article": "postpartum-sleep-deprivation",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "postpartum-sleep-first-week-4-4-hours",
+      "claim": "산후 첫 주 모성의 평균 수면 시간은 4.4시간으로, 산전 7.8시간 대비 56% 감소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SLEEP 저널 & 2025년 임상 연구",
+      "source_url": "https://www.sleepmeeting.org/study-quantifies-sleep-loss-disruption-experienced-new-mothers/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·산후",
+        "line": "산후 초기",
+        "years": "산후 1주",
+        "region": "글로벌"
+      },
+      "caution": "이 통계는 모유수유 여성에게서 가장 심하게 나타나며, 신생아가 2-4시간 간격으로 먹이기를 요구하기 때문이다.",
+      "cautionSource": "SLEEP 저널 2025 연구"
+    },
+    {
+      "id": "postpartum-24hr-no-sleep-31-7-percent",
+      "claim": "산후 1주일 내 약 31.7%의 산모가 24시간 이상 수면을 취하지 못한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임상 연구 & 모성 피로 연구",
+      "source_url": "https://www.sleepmeeting.org/study-quantifies-sleep-loss-disruption-experienced-new-mothers/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·산후",
+        "line": "극단적 수면부족",
+        "years": "산후 1주",
+        "region": "글로벌"
+      },
+      "caution": "이는 신생아 관리의 혼란과 모유수유 학습 곡선이 겹쳐지는 시기에 발생한다.",
+      "cautionSource": "SLEEP 저널 2025 연구"
+    },
+    {
+      "id": "postpartum-sleep-weeks-2-7-6-7-hours",
+      "claim": "산후 2-7주 기간 평균 수면 시간은 6.7시간으로 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임상 연구 & 수면 회복 추적",
+      "source_url": "https://www.sleepmeeting.org/study-quantifies-sleep-loss-disruption-experienced-new-mothers/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·산후",
+        "line": "산후 초기 회복",
+        "years": "산후 2-7주",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "postpartum-sleep-weeks-8-13-7-3-hours",
+      "claim": "산후 8-13주 기간 평균 수면 시간은 7.3시간으로 산전 수준에 가까워진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임상 연구 & 수면 회복 추적",
+      "source_url": "https://www.sleepmeeting.org/study-quantifies-sleep-loss-disruption-experienced-new-mothers/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·산후",
+        "line": "산후 중기 회복",
+        "years": "산후 8-13주",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "postpartum-longest-uninterrupted-sleep-2-2-hours",
+      "claim": "산후 1주일 내 가장 긴 연속 수면 시간은 2.2시간으로, 산전 5.6시간 대비 60% 감소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SLEEP 저널 & 임상 수면 분석",
+      "source_url": "https://www.sleepmeeting.org/study-quantifies-sleep-loss-disruption-experienced-new-mothers/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·산후",
+        "line": "수면 분절성(fragmentation)",
+        "years": "산후 1주",
+        "region": "글로벌"
+      },
+      "caution": "연속 수면의 길이 단축이 총 수면 시간 감소만큼 또는 그 이상으로 중요하다. 인지 기능과 정서 회복에 미치는 영향이 더 크다.",
+      "cautionSource": "SLEEP 저널 수면 분절성 연구"
+    },
+    {
+      "id": "postpartum-depression-rate-12-5-percent-severe",
+      "claim": "산후 우울증(PPD)의 심각한 경우는 산모 8명 중 1명(12.5%)에서 발생하며, 50-80%는 일시적 기분 변화인 '베이비 블루스'를 경험한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미국소아과학회(AAP) & 산후 정신건강 연구",
+      "source_url": "https://www.aap.org/en/patient-care/perinatal-mental-health-and-social-support/integrating-postpartum-depression-screening-in-your-practice-in-4-steps/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "산후·정신건강",
+        "line": "산후우울증 진단",
+        "years": "산후 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "베이비 블루스(50-80%)는 산후 며칠 내 시작되어 2주 내 자연 회복된다. 심각한 PPD(12.5%)는 의료 개입이 필수다.",
+      "cautionSource": "AAP 임상 권장사항"
+    },
+    {
+      "id": "postpartum-sleep-deprivation-ppd-risk-factor",
+      "claim": "수면 부족은 산후 우울증의 주요 위험 인자로, 수면 박탈과 우울증은 악순환을 형성한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MGH 여성정신건강센터 & 산후우울증 연구",
+      "source_url": "https://womensmentalhealth.org/posts/postpartum-depression-and-poor-sleep-quality-occur-together/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "산후·정신건강",
+        "line": "산후우울증 기전",
+        "years": "산후 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "수면 박탈이 PPD의 원인인지 결과인지는 명확하지 않지만, 수면 부족은 강력한 상관관계를 보인다.",
+      "cautionSource": "MGH 임상 문헌"
+    },
+    {
+      "id": "postpartum-depression-screening-6months-aap",
+      "claim": "미국소아과학회(AAP)는 산후 6개월 내 정기 검진 시 산후 우울증 선별검사를 권장한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미국소아과학회 2019 정책성명",
+      "source_url": "https://www.aap.org/en/patient-care/perinatal-mental-health-and-social-support/integrating-postpartum-depression-screening-in-your-practice-in-4-steps/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "산후·정신건강",
+        "line": "PPD 선별검사",
+        "years": "산후 0-6개월",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "consolidated-sleep-protection-4-5hours-ppd-prevention",
+      "claim": "산후 우울증 고위험 여성의 경우, 4-5시간의 연속 야간 수면을 보호하는 것(다른 양육자가 1-2회 야간 수유를 담당)이 PPD 예방 및 치료에 효과적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "산후 수면 보호 임상 권장사항 & ScienceDirect",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0146000524000818",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "산후·정신건강",
+        "line": "PPD 예방 전략",
+        "years": "산후 초기",
+        "region": "글로벌"
+      },
+      "caution": "이 전략은 모유수유를 포기하는 것이 아니라, 수유 방식 조정(유축)을 통해 한 명이라도 연속 수면을 취하도록 하는 것이 핵심이다. 산부인과 의사 상담 필수.",
+      "cautionSource": "ScienceDirect 임상 증거"
+    },
+    {
+      "id": "insomnia-60percent-8weeks-postpartum",
+      "claim": "산후 8주 시점에서 산모의 약 60%가 불면증을 호소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임상 연구 & 산후 수면 추적",
+      "source_url": "https://www.sleepfoundation.org/sleep-deprivation/parents",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "산후·수면",
+        "line": "산후 불면증",
+        "years": "산후 8주",
+        "region": "글로벌"
+      },
+      "caution": "이는 신생아가 수면을 덜 요구하는 시점에도 산모의 불안/경각심 때문에 주관적 불면감이 지속됨을 나타낸다.",
+      "cautionSource": "Sleep Foundation 분석"
+    }
+  ]
+}

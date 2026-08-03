@@ -1,0 +1,190 @@
+{
+  "topic": "출장 시차 극복 전략",
+  "brand": "수면",
+  "article": "business-trip-jetlag",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "jetlag-definition-circadian-desync",
+      "claim": "시차 부적응(jet lag)은 시간대 변화 속도가 체내 생체시계 조절 속도를 초과할 때 발생하는 현상으로, 내부 시계가 홈타임에 고정된 상태에서 외부 시간이 변화하면서 생기는 불일치다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CDC Yellow Book - Jet Lag Disorder",
+      "source_url": "https://www.cdc.gov/yellow-book/hcp/travel-air-sea/jet-lag-disorder.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "시차",
+        "line": "정의 및 기전",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "jetlag-eastbound-harder-than-westbound",
+      "claim": "동진(동쪽)은 서진(서쪽) 여행보다 회복이 오래 걸리고 심각하다. 이유는 인간의 평균 생체시계가 24시간보다 약 24.2시간이라서, 더 빨리 자는 것(시간 앞당기기)이 더 늦게 자는 것(시간 미루기)보다 생리적으로 어렵기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "National Sleep Foundation - Jet Lag Recovery Guide",
+      "source_url": "https://www.thensf.org/what-is-jet-lag",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "시차",
+        "line": "방향별 회복 차이",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "jetlag-recovery-time-eastbound-westbound",
+      "claim": "시간대 변화 회복 시간은 일반 경험칙으로 동진은 시간대 1개당 1일, 서진은 시간대 1개당 0.5일이다. 구체적으로 시간대 6시간 변화 시 서진 약 4-5일, 동진 약 6-7일이 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Reset - Jet Lag Recovery Guide",
+      "source_url": "https://www.thesleepreset.com/learn/jet-lag",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "시차",
+        "line": "회복 소요 시간",
+        "years": "2026",
+        "region": "일반"
+      },
+      "caution": "개인차가 크고, 나이, 건강상태, 수면 적응력에 따라 회복 시간이 ±2-3일 달라질 수 있다.",
+      "cautionSource": "Sleep Reset, LAzyHolidayPlanner jet lag recovery guides - 개인차 범위"
+    },
+    {
+      "id": "light-exposure-direction-specific-timing",
+      "claim": "빛 노출 타이밍은 비행 방향에 따라 달라진다. 동진(동쪽) 여행 시 목적지의 아침 빛(기상 후 가장 빨리)을 이용해 생체시계를 앞당기고, 서진(서쪽) 여행 시 저녁 빛을 이용해 생체시계를 미룬다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep medicine journal - Phase-Shifting Effects of Bright Morning Light",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10475014/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "시차",
+        "line": "빛 치료 타이밍",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "bright-light-exposure-intensity-duration",
+      "claim": "시차 극복용 빛 치료는 10,000룩스 이상의 밝은 광원을 아침 또는 저녁 20-40분 노출할 때 효과적이다. 목적지 아침 햇빛이 10,000룩스 이상을 제공하므로 실내 활동보다 야외 활동이 우선된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AASM Clinical Practice Guideline",
+      "source_url": "https://aasm.org/resources/practiceparameters/pp_circadianrhythm.pdf",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "시차",
+        "line": "빛 치료 강도",
+        "years": "2015",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "melatonin-dosage-low-dose-effectiveness",
+      "claim": "시차 극복용 멜라토닌은 저용량(0.5-0.3mg)이 고용량(5mg)과 효과가 비슷하면서 부작용이 적다. 국제 권장량은 0.5-3mg이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AASM - Missing the mark with melatonin guideline",
+      "source_url": "https://aasm.org/missing-the-mark-melatonin-finding-best-treatment-insomnia/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "시차",
+        "line": "멜라토닌 용량",
+        "years": "2026",
+        "region": "일반"
+      },
+      "caution": "멜라토닌 용량이 높을수록 좋은 건 아니고, 저용량이 추천된다. 국내에서는 처방약이 아니라 의료용품으로 분류되므로 구매 시 확인이 필요하다."
+    },
+    {
+      "id": "melatonin-timing-eastbound-westbound",
+      "claim": "멜라토닌 투약 타이밍도 방향에 따라 다르다. 동진(동쪽) 여행 시 목적지의 자정 2-3시간 전(저녁)에 투약해 생체시계를 앞당기고, 서진(서쪽) 여행 시 목적지의 아침에 투약해 생체시계를 미룬다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CDC Yellow Book + AASM Clinical Guideline",
+      "source_url": "https://www.cdc.gov/yellow-book/hcp/travel-air-sea/jet-lag-disorder.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "시차",
+        "line": "멜라토닌 타이밍",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "pre-travel-schedule-shift-preparation",
+      "claim": "출발 1-3일 전부터 일정을 미리 조절하면 회복을 앞당길 수 있다. 동진 시 매일 자리 시간을 1-2시간씩 앞당기고, 서진 시 1-2시간씩 미룬다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Reset travel guide",
+      "source_url": "https://www.thesleepreset.com/learn/jet-lag",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "시차",
+        "line": "사전 준비",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "meal-timing-as-circadian-anchor",
+      "claim": "식사 시간은 생체시계의 강력한 동기신호(entrainment cue)로서, 목적지 도착 즉시부터 현지 시간의 식사 일정을 따르면 말초 생체시계가 빠르게 조절된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "UCLA Health research - Food timing jet lag",
+      "source_url": "https://www.uclahealth.org/news/article/research-suggests-jet-lag-can-be-managed-with-food-schedules",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "시차",
+        "line": "식사 시간",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "nap-timing-and-duration-limit",
+      "claim": "목적지 도착 후 낮잠은 30분 이내로 제한하고, 현지 시간 오후 3시(15시) 이후에는 낮잠을 피해야 한다. 긴 낮잠은 생체시계 조절을 방해한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Reset + CDC guidance",
+      "source_url": "https://www.thesleepreset.com/learn/jet-lag",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "시차",
+        "line": "낮잠 관리",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "light-exposure-circadian-adjustment-rate",
+      "claim": "아무 개입이 없으면 생체시계는 하루에 0.5-1시간씩만 조절되지만, 전략적 빛 노출과 멜라토닌 병합 사용하면 조절 속도가 2-3배 빨라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/NIH - Moving time zones with light therapy",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10475014/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "시차",
+        "line": "회복 속도",
+        "years": "2026",
+        "region": "일반"
+      }
+    }
+  ]
+}

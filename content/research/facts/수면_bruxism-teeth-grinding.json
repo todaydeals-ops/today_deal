@@ -1,0 +1,155 @@
+{
+  "topic": "수면 중 이갈이(bruxism)의 원인·기전·치아 손상·대처",
+  "brand": "잠자리연구소",
+  "article": "bruxism-teeth-grinding",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "bruxism-definition-muscle-activity",
+      "claim": "이갈이(sleep bruxism)는 수면 중 비정상적인 턱 근육 수축으로 인해 치아를 갈거나 꽉 무는 현상이며, 낮 동안의 스트레스 반응과 달리 수면 중 무의식적으로 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic, Sleep Foundation 의료 정의",
+      "source_url": "https://my.clevelandclinic.org/health/diseases/10955-teeth-grinding-bruxism",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "bruxism",
+        "line": "definition",
+        "years": "all",
+        "region": "global"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "bruxism-timing-nrem-stage1-2",
+      "claim": "수면 이갈이의 대부분은 수면 초기 비REM 1~2단계에서 발생하며, 억압된 분노 등의 심리 상태는 REM 수면 중 더 강한 그라인딩을 유발할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation, MedLink Neurology",
+      "source_url": "https://www.sleepfoundation.org/bruxism",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "bruxism",
+        "line": "sleep-stage",
+        "years": "all",
+        "region": "global"
+      },
+      "caution": "REM 수면 중 이갈이는 덜 흔하지만, 발생 시 더 강할 수 있다.",
+      "cautionSource": "Sleep Foundation·MedLink Neurology"
+    },
+    {
+      "id": "bruxism-causes-multifactorial",
+      "claim": "이갈이의 원인은 스트레스·불안·분노, 카페인 과다 섭취, 수면무호흡증·불면증 등 수면 장애, 일부 약물(항우울제 등), 생활 습관(흡연·음주)의 복합 요인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic, Sleep Foundation, 치과 임상가 자료",
+      "source_url": "https://my.clevelandclinic.org/health/diseases/10955-teeth-grinding-bruxism",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "bruxism",
+        "line": "etiology",
+        "years": "all",
+        "region": "global"
+      },
+      "caution": "단일 원인으로 진단하기 어려우며, 의료 평가가 필요할 수 있다.",
+      "cautionSource": "Cleveland Clinic"
+    },
+    {
+      "id": "bruxism-bite-force-dental-damage",
+      "claim": "이갈이 중 가해지는 저작력은 평소 음식을 씹을 때보다 훨씬 크며, 약 50kg 이상의 강한 힘이 치아에 전달되어 치아 마모, 균열, 파절을 일으킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "하이닥 치과 전문가 칼럼, 치과 임상 자료",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=19856",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "bruxism",
+        "line": "dental-damage",
+        "years": "all",
+        "region": "global"
+      },
+      "caution": "50kg은 일반적 추정치이며, 개인차가 크다. 치아 손상 정도는 이갈이 강도·빈도·기간에 따라 다르다.",
+      "cautionSource": "치과 임상 자료"
+    },
+    {
+      "id": "bruxism-tmj-disorder-headache",
+      "claim": "턱 근육에 지속적인 비정상 힘이 가해지면 턱관절장애(TMJ disorder)가 발생하여 두통, 턱관절 개구제한(입을 벌릴 때 통증), 턱뼈 통증을 야기한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "하이닥, 치과 진료 정보",
+      "source_url": "https://www.hidoc.co.kr/healthstory/news/C0000473417",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "bruxism",
+        "line": "tmj-disorder",
+        "years": "all",
+        "region": "global"
+      },
+      "caution": "이러한 증상은 다른 원인(자세, 외상)에서도 발생할 수 있으므로, 치과·구강외과 전문의 진료 필요.",
+      "cautionSource": "치과 임상 자료"
+    },
+    {
+      "id": "bruxism-night-guard-dental-splint",
+      "claim": "이갈이 관리의 표준 치료는 교합 안정장치(dental splint, night guard)로, 위아래 어금니 사이에 보호막을 두어 직접적인 치아 마모와 손상을 방지한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic, Sleep Foundation, 치과학 표준 진료",
+      "source_url": "https://my.clevelandclinic.org/health/diseases/10955-teeth-grinding-bruxism",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "bruxism",
+        "line": "treatment-standard",
+        "years": "all",
+        "region": "global"
+      },
+      "caution": "보호장치는 증상을 완화하지만 근본 원인을 해결하지는 않으므로, 원인 제거와 병행해야 한다.",
+      "cautionSource": "Cleveland Clinic·Sleep Foundation"
+    },
+    {
+      "id": "bruxism-muscle-relaxer-limited-evidence",
+      "claim": "근육이완제(예: 디아제팜)를 자기 전에 복용하면 이갈이를 줄일 수 있지만, 실제 임상 시험에서는 수면 중 그라인딩 감소에 대한 명확한 증거가 부족하다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Cleveland Clinic, Sleep Foundation 검토",
+      "source_url": "https://www.sleepfoundation.org/bruxism/tips",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "bruxism",
+        "line": "pharmacological",
+        "years": "all",
+        "region": "global"
+      },
+      "caution": "근육이완제는 약물 부작용(의존성, 다음날 졸음)이 있으므로, 의료 전문가와 상담 후 필요시에만 사용해야 한다.",
+      "cautionSource": "Cleveland Clinic·Sleep Foundation"
+    },
+    {
+      "id": "bruxism-facial-relaxation-exercises",
+      "claim": "턱 근육 이완 운동(facial relaxation exercises)과 목·머리 부위 마사지는 일부 환자의 턱/목 통증을 경감시키고 근육 긴장을 줄인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation, 물리치료 자료",
+      "source_url": "https://www.sleepfoundation.org/bruxism/tips",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "bruxism",
+        "line": "conservative-treatment",
+        "years": "all",
+        "region": "global"
+      },
+      "caution": "이는 증상 완화일 뿐 근본 치료가 아니며, 개인차가 있다.",
+      "cautionSource": "Sleep Foundation"
+    }
+  ]
+}

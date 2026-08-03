@@ -1,0 +1,130 @@
+{
+  "topic": "렘수면·꿈·기억 공고화",
+  "brand": "수면의학",
+  "article": "예정",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "rem-sleep-memory-consolidation",
+      "claim": "렘수면 중 해마 시타파(hippocampal theta oscillations)가 기억 통합, 추상화, 정서 표지 지정을 촉진하여, 시타 활동은 시냅스 가소성 증가와 정서 기억 처리와 연관된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC, Systems memory consolidation during sleep",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12576410/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "모든 학습자",
+        "분류": "렘수면 신경 기전",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "rem-sleep-memory-types",
+      "claim": "렘수면은 복합 운동 과제 학습, 정서 기억 강화, 내적 표상 조직화를 선택적으로 촉진하며, 비렘·렘 수면이 함께 작용하여 일시적 경험을 지속적이고 접근 가능한 기억으로 변환한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC, Mechanisms Underlying Memory Consolidation by Adult-Born Neurons During Sleep",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7726349/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "학습 및 정서 처리하는 모든 개인",
+        "분류": "기억 공고화 기전",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "rem-deprivation-spatial-memory",
+      "claim": "학습 후 렘수면 박탈 기간 동안 훈련 유도 렘수면 창(REM window)이 제거되면 미로 학습에서의 공간 참조 기억이 방해받는 것으로 확인된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC, Role of Circadian Rhythm and REM Sleep For Memory Consolidation",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8051942/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "학습 과제 수행자",
+        "분류": "공간 기억 및 렘수면 의존성",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "dream-memory-filtering-hypothesis",
+      "claim": "꿈은 학습한 내용을 반복 경험하거나 왜곡된 형태로 재구성하는 기억 필터링 역할을 수행하여, 뇌가 정보를 장기기억으로 전환하거나 불필요한 데이터를 제거하는 과정으로 가설화된다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "ScienceTimes, 잠 부족하면 학습 기억 방해받는 이유",
+      "source_url": "https://www.sciencetimes.co.kr/?news=%EC%9E%A0-%EB%B6%80%EC%A1%B1%ED%95%98%EB%A9%B4-%ED%95%99%EC%8A%B5-%EA%B8%B0%EC%96%B5-%EB%B0%A9%ED%95%B4%EB%B0%9B%EB%8A%94-%EC%9D%B4%EC%9C%A0",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "모든 학습자",
+        "분류": "꿈과 기억 필터링 이론",
+        "시기": "현재 진행 중인 연구",
+        "지역": "글로벌"
+      },
+      "caution": "확정된 사실이 아닌 유력 가설이며, 꿈 기억 자체도 불완전하므로 증명이 제한적",
+      "cautionSource": "https://www.sciencetimes.co.kr/?news=%EC%9E%A0-%EB%B6%80%EC%A1%B1%ED%95%98%EB%A9%B4-%ED%95%99%EC%8A%B5-%EA%B8%B0%EC%96%B5-%EB%B0%A9%ED%95%B4%EB%B0%9B%EB%8A%94-%EC%9D%B4%EC%9C%A0"
+    },
+    {
+      "id": "dream-recall-mechanism",
+      "claim": "대다수의 꿈은 깼을 때 기억되지 않는 것이 정상이며, 이는 렘수면 중 노르에피네프린 감소로 인해 기억 회상 신경전달물질이 저하되는 뇌의 설계 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국심리상담센터, 우리는 왜 꿈을 거의 기억하지 못할까",
+      "source_url": "http://www.mykpcc.com/43/?bmode=view&idx=169930763",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "모든 개인",
+        "분류": "꿈 기억 메커니즘",
+        "시기": "현재",
+        "지역": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-necessary-for-learning-retention",
+      "claim": "새로운 기술을 학습한 후 렘수면을 취하는 사람이 취하지 않는 사람보다 기억 유지율이 높게 나타나며, 뇌는 렘수면 동안 기억 재처리와 정서 조절을 수행한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceTimes, 잠 부족하면 학습 기억 방해받는 이유",
+      "source_url": "https://www.sciencetimes.co.kr/?news=%EC%9E%A0-%EB%B6%80%EC%A1%B1%ED%95%98%EB%A9%B4-%ED%95%99%EC%8A%B5-%EA%B8%B0%EC%96%B5-%EB%B0%A9%ED%95%B4%EB%B0%9B%EB%8A%94-%EC%9D%B4%EC%9C%A0",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "학습자 (특히 스포츠, 기술 학습)",
+        "분류": "학습 후 수면의 필요성",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": "꿈을 꿔야 한다는 표현보다 정확하게는 렘수면 자체가 필수",
+      "cautionSource": "https://www.sciencetimes.co.kr/?news=%EC%9E%A0-%EB%B6%80%EC%A1%B1%ED%95%98%EB%A9%B4-%ED%95%99%EC%8A%B5-%EA%B8%B0%EC%96%B5-%EB%B0%A9%ED%95%B4%EB%B0%9B%EB%8A%94-%EC%9D%B4%EC%9C%A0"
+    },
+    {
+      "id": "rem-non-rem-complementary-system",
+      "claim": "렘과 비렘 수면은 상호보완적 기억 처리 시스템을 형성하여, 렘은 정서·복합 과제 기억을 강화하고 비렘은 선언적·절차적 학습을 강화한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC, Mechanisms Underlying Memory Consolidation by Adult-Born Neurons During Sleep",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7726349/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "모든 학습자",
+        "분류": "수면 단계별 기억 역할",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

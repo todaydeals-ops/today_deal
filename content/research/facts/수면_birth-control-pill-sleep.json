@@ -1,0 +1,173 @@
+{
+  "topic": "피임약과 수면의 관계",
+  "brand": "공통",
+  "article": "birth-control-pill-sleep",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "oral-contraceptive-sleep-architecture-stage2-nrem-increase",
+      "claim": "경구 피임약 사용자는 활성 약물 단계에서 2단계 비렘수면(stage-2 NREM)이 자연 주기 여성이나 약물 미사용자 대비 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수면 구조 비교 임상 연구",
+      "source_url": "https://link.springer.com/article/10.1007/s004240100582",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "피임·수면",
+        "line": "수면구조 변화",
+        "years": "현행 피임약 사용자",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "oral-contraceptive-slow-wave-sleep-decrease",
+      "claim": "경구 피임약 사용자는 서파수면(slow-wave sleep, SWS)이 자연 주기의 황체기 여성 대비 감소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수면 구조 비교 임상 연구",
+      "source_url": "https://link.springer.com/article/10.1007/s004240100582",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "피임·수면",
+        "line": "수면구조 변화",
+        "years": "현행 피임약 사용자",
+        "region": "글로벌"
+      },
+      "caution": "서파수면은 신체 회복과 기억 공고화에 중요하므로, 이 감소가 수면 질에 미치는 임상적 의미는 더 연구가 필요하다.",
+      "cautionSource": "수면 생리학 문헌"
+    },
+    {
+      "id": "oral-contraceptive-body-temperature-24hr-elevation",
+      "claim": "경구 피임약 사용자(활성 약물 단계)의 24시간 체온은 자연 주기의 난포기 여성이나 약물 미사용자 대비 전체적으로 상승한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신경내분비 체온 조절 연구",
+      "source_url": "https://ncbi.nlm.nih.gov/sites/ppmc/articles/PMC2278431",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "피임·수면",
+        "line": "체온 조절",
+        "years": "현행 피임약 사용자",
+        "region": "글로벌"
+      },
+      "caution": "이 체온 상승은 합성 프로게스틴의 열량 효과(thermogenic effect) 때문이며, 자연 황체기의 0.3-0.7°C 상승과 유사한 수준이다.",
+      "cautionSource": "신경내분비학 연구"
+    },
+    {
+      "id": "hormonal-contraceptive-sleep-effects-mixed-evidence",
+      "claim": "호르몬 피임약이 수면에 미치는 영향에 대한 연구 결과는 혼재되어 있으며, 일부는 수면 효율 개선을, 일부는 불면증 증가를 보고한다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "수면 질 메타분석 & 임상 리뷰",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S1047279722001491",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "피임·수면",
+        "line": "종합 효과",
+        "years": "현행 피임약",
+        "region": "글로벌"
+      },
+      "caution": "표본 크기가 작고 개인차가 크므로, 일반화하기 어렵다. 개인의 호르몬 민감성에 따라 수면 반응이 달라질 수 있다.",
+      "cautionSource": "ScienceDirect 메타분석"
+    },
+    {
+      "id": "progestin-only-pill-sleep-duration-510-minutes-8-5-hours",
+      "claim": "프로게스틴 단독 피임약(미니필, POP) 사용자의 평균 야간 수면은 510분(8.5시간)으로, 대조군 450분(7.5시간) 대비 길다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수면 시간 비교 임상 연구",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S1047279722001491",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "피임·수면",
+        "line": "피임약 종류별 효과",
+        "years": "현행 POP 사용자",
+        "region": "글로벌"
+      },
+      "caution": "프로게스틴 단독 피임약이 결합 피임약보다 수면 시간에 긍정적 영향을 미치는 것으로 보이지만, 표본 크기가 작아 더 큰 규모 연구가 필요하다.",
+      "cautionSource": "임상 수면 시간 데이터"
+    },
+    {
+      "id": "combination-pill-sleep-efficiency-higher-than-natural-cycle",
+      "claim": "일부 연구에서는 결합 피임약 사용자가 자연 주기의 난포기 또는 황체기 여성 대비 수면 효율(sleep efficiency)이 더 높다고 보고했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수면 효율 비교 연구",
+      "source_url": "https://amerisleep.com/blog/can-birth-control-cause-insomnia/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "피임·수면",
+        "line": "수면 효율",
+        "years": "현행 결합 피임약",
+        "region": "글로벌"
+      },
+      "caution": "수면 효율은 실제 수면한 시간 ÷ 침대에 있던 시간의 비율을 의미한다. 총 수면 시간 증가가 아니라 수면의 집중도 증가를 의미할 수 있다.",
+      "cautionSource": "수면 효율 정의 및 연구"
+    },
+    {
+      "id": "synthetic-hormones-vs-endogenous-sleep-effect-different",
+      "claim": "합성 호르몬(피임약)이 체온과 수면에 미치는 영향은 자연 프로게스테론과 에스트로겐의 영향과 다르다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신경내분비 호르몬 작용 기전 연구",
+      "source_url": "https://link.springer.com/article/10.1007/s004240100582",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "피임·수면",
+        "line": "호르몬 메커니즘",
+        "years": "현행 연구",
+        "region": "글로벌"
+      },
+      "caution": "합성 호르몬은 자연 호르몬의 작용을 100% 모방하지 않으므로, 체온과 수면 구조에서 질적으로 다른 변화를 가져온다.",
+      "cautionSource": "신경내분비학 연구"
+    },
+    {
+      "id": "birth-control-pill-sleep-small-sample-sizes-limited-evidence",
+      "claim": "피임약이 수면에 미치는 영향에 관한 대부분의 연구는 표본 크기가 작아서 결론을 확정하기 어렵다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수면 질 메타분석 & 연구 제한점 검토",
+      "source_url": "https://amerisleep.com/blog/can-birth-control-cause-insomnia/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "피임·수면",
+        "line": "근거 수준",
+        "years": "현행 연구 현황",
+        "region": "글로벌"
+      },
+      "caution": "더 큰 표본, 장기 추적, 다양한 피임약 종류를 포함한 연구가 필요하다. 개인차가 크므로 개인의 반응을 기준으로 판단해야 한다.",
+      "cautionSource": "메타분석 제한점 분석"
+    },
+    {
+      "id": "daytime-sleepiness-increase-some-women-oral-contraceptive",
+      "claim": "일부 여성은 경구 피임약 사용 후 주간 졸음(daytime sleepiness) 증가를 보고한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "임상 환자 보고 & 부작용 추적",
+      "source_url": "https://amerisleep.com/blog/can-birth-control-cause-insomnia/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "피임·수면",
+        "line": "개인 부작용",
+        "years": "현행 피임약 사용자",
+        "region": "글로벌"
+      },
+      "caution": "주간 졸음이 피임약 때문인지, 다른 요인(스트레스, 수면 환경, 기저 질환)인지 구별하기 위해 산부인과 의사와 상담이 필요하다.",
+      "cautionSource": "환자 자가 보고"
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "topic": "마이크로슬립의 위험성",
+  "brand": "수면",
+  "article": "microsleep-danger",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "microsleep-definition-duration",
+      "claim": "마이크로슬립(microsleep)은 통상 1-5초 범위의 순간적 수면으로, 최대 30초를 초과하지 않는 무의식적 수면 현상이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "National Sleep Foundation",
+      "source_url": "https://www.thensf.org/what-is-microsleep/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "마이크로슬립",
+        "line": "정의 및 지속시간",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "microsleep-eyes-open-phenomenon",
+      "claim": "마이크로슬립의 특징적 위험성은 눈이 열린 상태에서도 발생할 수 있다는 것으로, 눈이 열려 있어도 뇌는 완전히 각성하지 못한 상태가 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation - Microsleep",
+      "source_url": "https://www.sleepfoundation.org/how-sleep-works/microsleep",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "마이크로슬립",
+        "line": "눈 개방 중 발생",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "microsleep-brain-wave-pattern",
+      "claim": "마이크로슬립 중 뇌파는 각성 상태의 베타파에서 가벼운 수면의 세타파로 전환되며, 이는 1단계 NREM(비급속안구운동) 수면의 신경생리 특성과 일치한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic - What is microsleep",
+      "source_url": "https://health.clevelandclinic.org/what-you-should-know-about-microsleep",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "마이크로슬립",
+        "line": "신경생리 기전",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "microsleep-triggers-sleep-deprivation",
+      "claim": "마이크로슬립은 수면 부족, 극심한 피로, 교대근무, 단조로운 작업, 생체리듐 혼란이 주 발생 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Advisor - Microsleep causes",
+      "source_url": "https://www.sleepadvisor.org/microsleep/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "마이크로슬립",
+        "line": "발생 조건",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "microsleep-driving-hazard-distance",
+      "claim": "고속도로 주행 중 마이크로슬립 4-5초 동안 차량은 축구장 길이(약 100m) 거리를 아무 조종 없이 주행하며, 이는 충돌 위험을 급격히 높인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NHTSA - Drowsy driving fact sheet",
+      "source_url": "https://www.nhtsa.gov/risky-driving/drowsy-driving",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "마이크로슬립",
+        "line": "운전 중 거리 위험",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "microsleep-workplace-prevalence-rate",
+      "claim": "직장인 27%가 업무 중 마이크로슬립을 경험했으며, 그 중 16%는 도로 운전 중 마이크로슬립을 경험했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Phoenix Occupational Medicine - Fatigue management",
+      "source_url": "https://www.phoenixoccmed.com.au/blog/occupational-fatigue-management-microsleeps/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "마이크로슬립",
+        "line": "유병률",
+        "years": "2026",
+        "region": "호주"
+      },
+      "caution": "호주 선진국 직장인 통계이며, 정확한 대규모 샘플 크기는 원문 인용 논문 확인 필요.",
+      "cautionSource": "Phoenix Occ Med 블로그"
+    },
+    {
+      "id": "microsleep-safety-critical-task-risk",
+      "claim": "안전에 중요한 업무(운전, 기계 조종, 의료 시술) 중 마이크로슬립은 순간적 상황 인식(situational awareness) 상실을 초래하여 심각한 사고 위험을 낳는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Healthy Sleep resource - Microsleep hazards",
+      "source_url": "https://healthysleep.org/sleep-health/microsleep/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "마이크로슬립",
+        "line": "안전 업무 위험",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "microsleep-warning-signs-detectable",
+      "claim": "마이크로슬립의 경고 신호로는 머리 끄덕거림, 무거운 눈꺼풀, 높이 변화에 따른 차선이탈, 도로 표지판 놓침, 기억 공백이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Phoenix Occ Med + Sleep Foundation",
+      "source_url": "https://www.phoenixoccmed.com.au/blog/occupational-fatigue-management-microsleeps/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "마이크로슬립",
+        "line": "경고 신호",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "microsleep-fatigue-assessment-unreliable",
+      "claim": "자가 피로도 평가는 특히 고압 업무 환경에서 신뢰도가 낮다. 근로자는 피로를 과소평가하거나 정상화하는 경향이 있어, 객관적 피로 평가와 의료 전문가의 판정이 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Phoenix Occupational Medicine",
+      "source_url": "https://www.phoenixoccmed.com.au/blog/occupational-fatigue-management-microsleeps/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "마이크로슬립",
+        "line": "피로 평가 신뢰도",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "high-fatigue-accident-risk-multiplier",
+      "claim": "매우 피곤한 근로자는 피로도가 낮은 근로자 대비 사고 발생률이 70% 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Phoenix Occupational Medicine fatigue study",
+      "source_url": "https://www.phoenixoccmed.com.au/blog/occupational-fatigue-management-microsleeps/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "마이크로슬립",
+        "line": "사고 위험도",
+        "years": "2026",
+        "region": "일반"
+      }
+    }
+  ]
+}

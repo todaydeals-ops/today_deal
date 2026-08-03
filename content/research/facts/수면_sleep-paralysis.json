@@ -1,0 +1,147 @@
+{
+  "topic": "가위눌림·수면마비의 정체",
+  "brand": "수면의학",
+  "article": "예정",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sleep-paralysis-definition",
+      "claim": "수면마비는 의식이 깨어난 상태에서 렘수면의 근육 마비(atonia)가 지속되는 현상으로, 정신은 멀쩡하지만 신체는 움직일 수 없는 상태다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic, Sleep Paralysis: What It Is, Causes, Symptoms & Treatment",
+      "source_url": "https://my.clevelandclinic.org/health/diseases/21974-sleep-paralysis",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "모든 연령",
+        "분류": "수면마비 정의",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "rem-atonia-protective-mechanism",
+      "claim": "렘수면 중 뇌간(pons의 배외측)이 근육 해포닌(muscle atonia)을 생성하여, 신체가 꿈을 안전하게 꿀 수 있도록 대부분의 수의근을 일시적으로 마비시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed, Physiology of REM sleep, cataplexy, and sleep paralysis",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/8848973/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "모든 개인",
+        "분류": "렘수면 신경생리학",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-paralysis-rem-dissociation",
+      "claim": "수면마비는 각성 수준과 근육 해포닌 사이의 심한 불일치(dissociation)로 발생하며, 주로 렘수면 진입기(SOREM) 또는 렘수면 퇴출기에 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI Bookshelf, Sleep Paralysis - StatPearls",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK562322/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "모든 개인",
+        "분류": "수면-각성 경계 현상",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-paralysis-safety",
+      "claim": "수면마비는 신체 건강에 해를 미치지 않으며, 두렵거나 불편함을 유발하지만 신경학적 손상이나 응급 상황은 아니다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic, Sleep Paralysis",
+      "source_url": "https://my.clevelandclinic.org/health/diseases/21974-sleep-paralysis",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "모든 수면마비 경험자",
+        "분류": "안전성",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": "반복적이거나 심각한 증상은 의료 전문가 상담 필요",
+      "cautionSource": "https://my.clevelandclinic.org/health/diseases/21974-sleep-paralysis"
+    },
+    {
+      "id": "sleep-paralysis-hallucinations",
+      "claim": "수면마비 에피소드 중 뇌가 완전히 각성하지 않았기 때문에, 침입자 환각(intruder hallucinations), 인쿠버스(incubus) 같은 압박감, 귀에서의 속삭임, 신체 접촉 감각 등의 환각이 동반될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "위키백과, 가위눌림",
+      "source_url": "https://ko.wikipedia.org/wiki/%EA%B0%80%EC%9C%84%EB%88%8C%EB%A6%BC",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "일부 수면마비 경험자 (모두는 아님)",
+        "분류": "동반 증상",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": "환각은 현실이 아니며, 에피소드는 일반적으로 수 초~수십 초 내에 해결됨",
+      "cautionSource": "https://ko.wikipedia.org/wiki/%EA%B0%80%EC%9C%84%EB%88%8C%EB%A6%BC"
+    },
+    {
+      "id": "sleep-paralysis-risk-factors",
+      "claim": "수면 부족, 불규칙한 수면, 스트레스, 정신 질환, 유전적 소인, 고혈압 등이 수면마비의 위험 요인으로 알려져 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC, Recent Insights Into Sleep Paralysis: Mechanisms and Management",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11344621/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "모든 개인",
+        "분류": "위험 요인",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-paralysis-treatment-approach",
+      "claim": "수면마비의 치료는 원인에 따라 달라지며, 수면 위생 개선, 스트레스 관리, 규칙적인 수면 시간 유지, 필요시 렘수면을 억제하는 약물(항우울제 등)이 사용될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic, Sleep Paralysis: What It Is, Causes, Symptoms & Treatment",
+      "source_url": "https://my.clevelandclinic.org/health/diseases/21974-sleep-paralysis",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "반복적인 수면마비 환자",
+        "분류": "치료 접근",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": "약물 치료는 의료 전문가의 지도 필수",
+      "cautionSource": "https://my.clevelandclinic.org/health/diseases/21974-sleep-paralysis"
+    },
+    {
+      "id": "sleep-paralysis-not-seizure-or-stroke",
+      "claim": "수면마비는 경련(seizure)이나 뇌졸중(stroke) 같은 신경학적 응급이 아니며, 의식 있는 근육 마비 현상이므로 위험 신호를 포함하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "UCLA Health, Abnormal sleep behaviors may require medical intervention",
+      "source_url": "https://www.uclahealth.org/news/article/abnormal-sleep-behaviors-may-require-medical-intervention",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "모든 수면마비 경험자",
+        "분류": "오진 방지",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": "파킨슨병 초기 증상인 렘수면행동장애(RBD)와는 다르므로 감별 필요",
+      "cautionSource": "https://www.uclahealth.org/news/article/abnormal-sleep-behaviors-may-require-medical-intervention"
+    }
+  ]
+}

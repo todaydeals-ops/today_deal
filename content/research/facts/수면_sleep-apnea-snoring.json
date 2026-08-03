@@ -1,0 +1,138 @@
+{
+  "topic": "코골이와 수면무호흡증",
+  "brand": "수면",
+  "article": "수면_sleep-apnea-snoring",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "apnea-vs-snoring-prevalence",
+      "claim": "모든 코골이가 수면무호흡증은 아니며, 코골이가 있는 사람 중 5~10%만이 실제 수면무호흡증을 진단받는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료기관 진료 경험·의학문헌",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31880",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인(남성이 여성의 2~3배)",
+        "분류": "유병률·구분",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "apnea-diagnostic-criteria",
+      "claim": "폐쇄성 수면무호흡증의 진단 기준은 10초 이상 호흡 정지가 시간당 5회 이상 반복되는 경우로 정의된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의학 정의·진료 기준",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31880",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "의료 진료자",
+        "분류": "진단 기준",
+        "시기": "일반",
+        "지역": "KR·국제"
+      },
+      "caution": "시간당 5~15회는 경증, 15~30회는 중증, 30회 이상은 심각으로 분류되어 치료 강도가 달라짐",
+      "cautionSource": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31880"
+    },
+    {
+      "id": "apnea-symptoms",
+      "claim": "수면무호흡증의 주요 증상은 심한 코골이, 수면 중 숨 막힐 때 깨기, 밤중 잦은 각성, 주간 졸림증, 피로감이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원·의료기관 진료 정보",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31880",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "환자",
+        "분류": "증상",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "apnea-cardiovascular-risk",
+      "claim": "수면무호흡이 반복되면 혈중 산소포화도가 저하되어 고혈압, 부정맥, 심근경색, 뇌졸중의 위험이 명확하게 증가한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료기관·심혈관 의학 문헌",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31880",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "수면무호흡증 환자",
+        "분류": "심혈관 합병증 위험",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "이는 '방치해도 괜찮은 증상'이 아니라 생명 위협 가능성이 있으므로 진단 시 즉시 치료 권장"
+    },
+    {
+      "id": "apnea-diagnosis-polysomnography",
+      "claim": "정확한 수면무호흡증 진단을 위해서는 수면다원검사를 시행하여 호흡, 맥박, 혈중 산소 포화도, 뇌파, 코골이를 측정한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료기관 진료 기준",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31880",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "의료진·환자",
+        "분류": "진단 검사",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "집에서의 간단한 수면센서도 선별 검사로 쓰일 수 있으나, 확진은 병원 수면다원검사 필수"
+    },
+    {
+      "id": "apnea-cpap-therapy",
+      "claim": "수면무호흡증의 표준 치료는 지속적 양압 호흡(CPAP)기로, 공기압을 코를 통해 전달하여 기도 폐쇄를 방지한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료기관·호흡기의학 문헌",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31880",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "수면무호흡증 확진자",
+        "분류": "1차 치료",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "CPAP은 질병 치료이므로 건강보험 급여 대상이나, 개인 순응도(착용 시간 5시간 이상/일)가 치료 성공을 좌우함"
+    },
+    {
+      "id": "apnea-parkinson-risk-reduction",
+      "claim": "수면무호흡증 진단 초기부터 CPAP 치료를 시작하면 파킨슨병 발병 위험을 약 30% 감소시킬 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "2025년 신경과학 연구·의료기관",
+      "source_url": "https://news.nate.com/view/20251224n15941",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "수면무호흡증 환자",
+        "분류": "신경질환 예방",
+        "시기": "2025년 최신 연구",
+        "지역": "KR"
+      },
+      "caution": "이는 조기 진단과 적극 치료의 중요성을 강조하는 데이터이므로, 코골이 또는 호흡 정지 신호가 있으면 즉시 진료 권장"
+    },
+    {
+      "id": "apnea-red-flag-signals",
+      "claim": "심한 코골이, 자다가 헐떡이며 깨기, 아침 두통, 주간 졸림증이 2주 이상 지속되면 수면클리닉 방문이 필요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료기관 진료 지침",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31880",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "증상자",
+        "분류": "진료 신호",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "동침자가 '숨을 안 쉬는 순간'을 목격했다면 더욱 긴급한 신호이므로, 주말이라도 응급센터 수면검사 상담 권장"
+    }
+  ]
+}

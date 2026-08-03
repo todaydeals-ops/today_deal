@@ -1,0 +1,101 @@
+{
+  "topic": "수면과 면역력·감염 취약성·백신 반응",
+  "brand": "잠자리연구소",
+  "article": "sleep-immune-function",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sleep-immune-mechanism-cytokine",
+      "claim": "수면 중에는 T세포 등 면역세포의 증식과 분화를 돕는 호르몬 환경이 형성되어 적응면역 반응이 강화된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "The Lancet Respiratory Medicine 외 다수 동료평가 저널",
+      "source_url": "https://www.thelancet.com/journals/lanres/article/PIIS2213-2600(21)00126-0/fulltext",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "immune-function",
+        "line": "adult",
+        "years": "2020~",
+        "region": "global"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-deprivation-t-cell-binding",
+      "claim": "수면을 충분히 취한 사람(8시간)의 T세포와 전야 수면박탈 상태의 T세포를 비교할 때, 수면박탈 그룹의 T세포는 면역 반응의 핵심 분자에 결합하는 능력이 현저히 낮다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "다수 동료평가 실험실 연구(Sleep Foundation, News-Medical 종합)",
+      "source_url": "https://www.sleepstation.org.uk/articles/health/sleep-and-immunity/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "t-cell-function",
+        "line": "acute-deprivation",
+        "years": "2020~",
+        "region": "global"
+      },
+      "caution": "이는 실험실 환경이며, 자연적 수면 부족의 영향도 유사하지만 개인차가 있다.",
+      "cautionSource": "Sleep Foundation 종합 리뷰"
+    },
+    {
+      "id": "sleep-deprivation-infection-risk",
+      "claim": "수면 부족(특히 4시간 이하)이 지속되면 면역 기능이 현저히 떨어지고 염증 수치가 상승하여 감염 위험이 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울대학교 국민건강지식센터, 정신의학신문 종합",
+      "source_url": "https://hqcenter.snu.ac.kr/archives/jiphyunjeon/%EB%A7%8C%EC%84%B1%ED%94%BC%EB%A1%9C%EC%A6%9D%ED%9B%84%EA%B5%B0",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "infection-risk",
+        "line": "chronic-deprivation",
+        "years": "all",
+        "region": "KR"
+      },
+      "caution": "4시간 이하는 극도의 부족 상태이며, 권장 7~9시간이 기준이다.",
+      "cautionSource": "정신의학신문·서울대 건강지식센터"
+    },
+    {
+      "id": "vaccination-sleep-antibody-response",
+      "claim": "예방접종 전후 수면이 6시간 미만이면 항체 반응이 유의하게 감소하며, 접종 후 충분한 수면을 취한 사람은 4주 후 항체 역가가 약 2배 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "University of Chicago Medicine, PubMed 임상시험",
+      "source_url": "https://www.uchicagomedicine.org/forefront/research-and-discoveries-articles/not-getting-enough-sleep-could-blunt-antibody-response-to-vaccination-leaving-you-more-vulnerable-to-infection",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "vaccination-response",
+        "line": "vaccine-antibody",
+        "years": "2020~",
+        "region": "global"
+      },
+      "caution": "접종 전 2박, 접종 후 2박의 수면이 특히 중요하며, 항체 역가는 의료기관 기준에 따라 해석된다.",
+      "cautionSource": "University of Chicago Medicine·PubMed 2024 연구"
+    },
+    {
+      "id": "sleep-restriction-hematopoietic-stem-cells",
+      "claim": "만성적 수면 부족은 면역 줄기세포의 DNA 구조를 변화시켜 장기적으로 염증 질환과 심혈관 질환 위험을 높인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Mount Sinai Medical Center 연구보고",
+      "source_url": "https://www.mountsinai.org/about/newsroom/2022/a-consistent-lack-of-sleep-negatively-impacts-immune-stem-cells-increasing-risk-of-inflammatory-disorders-and-heart-disease",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "stem-cell-dna",
+        "line": "long-term",
+        "years": "2022",
+        "region": "global"
+      },
+      "caution": "이는 장기적(수개월 이상) 누적 영향이므로 단기 수면 부족과는 메커니즘이 다르다.",
+      "cautionSource": "Mount Sinai 2022 연구"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "topic": "수면 부족과 인슐린 저항·혈당 상승·당뇨 위험",
+  "brand": "잠자리연구소",
+  "article": "sleep-blood-sugar",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sleep-restriction-glucose-tolerance",
+      "claim": "부분적 수면 제한(sleep restriction) 상태의 건강한 성인은 포도당 내약성(glucose tolerance)이 감소하고 인슐린 감수성이 유의하게 떨어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Applied Physiology, 미국 당뇨병 학회 임상시험",
+      "source_url": "https://journals.physiology.org/doi/full/10.1152/japplphysiol.00660.2005",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "glucose-metabolism",
+        "line": "insulin-sensitivity",
+        "years": "2005~",
+        "region": "global"
+      },
+      "caution": "이는 대사적 변화이며, 혈당 수치가 정상 범위라도 인슐린 저항성이 발생할 수 있다.",
+      "cautionSource": "American Diabetes Association"
+    },
+    {
+      "id": "sleep-reduction-insulin-resistance-women",
+      "claim": "컬럼비아 대학교 연구에서 6주간 매일 90분가량 수면을 줄인 여성은 혈당은 상승하지 않았지만 인슐린 저항성이 유의하게 높아져 당뇨병 위험이 증가했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Columbia University Irving Medical Center, Diabetes Care 저널",
+      "source_url": "https://www.cuimc.columbia.edu/news/shortening-sleep-time-increases-diabetes-risk-women",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "diabetes-risk",
+        "line": "women-90min-reduction",
+        "years": "2024",
+        "region": "global"
+      },
+      "caution": "이는 여성을 대상으로 한 연구이며, 6주는 단기 개입이므로 장기 영향과는 다를 수 있다.",
+      "cautionSource": "Columbia University 2024 연구"
+    },
+    {
+      "id": "korean-adult-sleep-insulin-resistance-men",
+      "claim": "한국 성인 남성 대상 연구에서 6시간 이하의 짧은 수면시간을 취하는 그룹은 적절한 수면시간(권장 7~9시간) 그룹에 비해 인슐린 저항성이 유의하게 높았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "대한민국 국민건강영양조사 2019-2020, 학술논문",
+      "source_url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002905501",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "insulin-resistance",
+        "line": "korean-men",
+        "years": "2019-2020",
+        "region": "KR"
+      },
+      "caution": "6시간 이하를 '짧은' 기준으로 보는 것은 개인 편차가 있을 수 있으며, 권장은 7~9시간이다.",
+      "cautionSource": "국민건강영양조사"
+    },
+    {
+      "id": "cortisol-stress-hormone-insulin",
+      "claim": "수면이 부족하면 스트레스 호르몬 코르티솔 분비가 증가하여 교감신경계를 활성화시키고, 이것이 인슐린의 작용을 방해하고 혈당을 상승시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "하이닥, 메디컬타임즈 등 의료 기관 종합",
+      "source_url": "https://news.hidoc.co.kr/news/articleView.html?idxno=40853",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "cortisol-mechanism",
+        "line": "hormone-regulation",
+        "years": "all",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "short-sleep-diabetes-risk-epidemiology",
+      "claim": "6.5시간 미만의 수면을 보고하는 사람들은 시간이 지남에 따라 체중 증가 위험이 더 높고, 비만과 독립적으로도 인슐린 저항성과 제2형 당뇨 위험이 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation, CDC 다중 역학 연구 종합",
+      "source_url": "https://www.sleepfoundation.org/physical-health/lack-of-sleep-and-diabetes",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "diabetes-risk",
+        "line": "epidemiology",
+        "years": "all",
+        "region": "global"
+      },
+      "caution": "6.5시간 기준은 대규모 역학 연구 기반이며, 개인의 필요 수면시간은 다를 수 있다.",
+      "cautionSource": "CDC 역학 데이터"
+    },
+    {
+      "id": "appetite-hormone-ghrelin-leptin",
+      "claim": "수면 부족은 렙틴(포만호르몬) 수치를 낮추고 그렐린(식욕호르몬) 수치를 높여 과식 욕구를 증가시키고, 이것이 체중 증가와 인슐린 저항성으로 이어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation, 다중 신경내분비 연구",
+      "source_url": "https://www.sleepfoundation.org/physical-health/lack-of-sleep-and-diabetes",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "sleep",
+        "category": "appetite-hormone",
+        "line": "ghrelin-leptin",
+        "years": "all",
+        "region": "global"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

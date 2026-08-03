@@ -1,0 +1,113 @@
+{
+  "topic": "아기 수면퇴행 — 4·8·18개월 발달 단계별 원인 및 대처",
+  "brand": "공통",
+  "article": "baby-sleep-regression-by-age",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sleep-regression-definition-duration",
+      "claim": "수면퇴행은 잘 자던 아기가 갑자기 밤에 자주 깨거나 낮잠을 줄이는 현상으로, 일반적으로 2~6주 지속된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation - 4-Month Sleep Regression",
+      "source_url": "https://www.sleepfoundation.org/baby-sleep/4-month-sleep-regression",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "영아(4~18개월)",
+        "region": "국제"
+      },
+      "caution": "개인차 크며, 보호자의 수면습관 지도가 회복 속도에 영향. 2~6주는 평균값.",
+      "cautionSource": "Sleep Foundation"
+    },
+    {
+      "id": "4-month-regression-neurology",
+      "claim": "4개월 수면퇴행은 뇌의 신경 연결 발달, 신생아 수면(1~3시간 분절)에서 성숙한 수면 구조(90분 주기, 더 긴 야간 연속)로의 전환이 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation - Neurological Development in 4-Month Sleep Regression",
+      "source_url": "https://www.sleepfoundation.org/baby-sleep/4-month-sleep-regression",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "영아(4개월)",
+        "region": "국제"
+      },
+      "caution": "4개월이 수면 구조 전환의 전형적 시점이지만, 개인차로 3~5개월에 걸쳐 진행할 수 있음.",
+      "cautionSource": "Sleep Foundation"
+    },
+    {
+      "id": "4-month-regression-secondary-causes",
+      "claim": "4개월 수면퇴행의 부차적 원인은 분리불안 증가, 환경 자극에 대한 각성 민감도 증가, 수면통합 불안정성을 포함한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation - 4-Month Sleep Regression: Causes",
+      "source_url": "https://www.sleepfoundation.org/baby-sleep/4-month-sleep-regression",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "영아(4개월)",
+        "region": "국제"
+      },
+      "caution": "모든 4개월 아기가 수면퇴행을 경험하는 것은 아님. 일부는 스킵하거나 경미한 증상만 보임.",
+      "cautionSource": "Sleep Foundation"
+    },
+    {
+      "id": "sleep-regression-7-8-month-motor",
+      "claim": "8개월(7~10개월) 수면퇴행의 주요 원인은 기어가기, 앉기 자세 유지, 기립 시도 등 새로운 운동 발달 이정표이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Mattress Miracle - Sleep Regression Schedule",
+      "source_url": "https://mattressmiracle.ca/blogs/mattress-miracle-blog/sleep-regression-schedule",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "영아(7~10개월)",
+        "region": "국제"
+      },
+      "caution": "운동 발달 시기는 개인차 크므로, 정확한 월령보다 발달 마일스톤 관찰이 중요.",
+      "cautionSource": "Mattress Miracle"
+    },
+    {
+      "id": "sleep-regression-18-month-causes",
+      "claim": "18개월 수면퇴행은 분리불안 강화, 새로운 인지 능력(물체 지속성 이해), 독립 욕구 증가가 결합된 현상이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Taking Cara Babies - Sleep Regressions",
+      "source_url": "https://www.takingcarababies.com/blogs/regressions/sleep-regressions",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "유아(18개월)",
+        "region": "국제"
+      },
+      "caution": "18개월 퇴행은 18개월 수면훈련 회귀와 중첩될 수 있어 부모가 구분하기 어려울 수 있음.",
+      "cautionSource": "Taking Cara Babies"
+    },
+    {
+      "id": "regression-not-medical-condition",
+      "claim": "수면퇴행은 질환이나 고정적 의료 사건이 아니라 정상적 발달 변화의 신호이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation - 4-Month Sleep Regression",
+      "source_url": "https://www.sleepfoundation.org/baby-sleep/4-month-sleep-regression",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "영아(4~18개월)",
+        "region": "국제"
+      },
+      "caution": "정상 발달이지만, 지속적 야간각성이나 극심한 울음은 원인(제1치아 통증, 감염, 배고픔 등)을 배제하고 소아과 상담 권장.",
+      "cautionSource": "Sleep Foundation"
+    }
+  ]
+}

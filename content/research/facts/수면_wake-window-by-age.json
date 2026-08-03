@@ -1,0 +1,147 @@
+{
+  "topic": "월령별 깨어있는 시간(Wake Window) 기준 및 과피로 방지",
+  "brand": "공통",
+  "article": "wake-window-by-age",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "wake-window-definition",
+      "claim": "Wake window(각성 윈도우)는 신생아가 한 번의 수면 주기 사이에 쾌적하게 깨어있을 수 있는 최대 시간으로, 월령이 증가하면서 점진적으로 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic - Pediatrics, Wake Windows by Age",
+      "source_url": "https://health.clevelandclinic.org/wake-windows-by-age",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "영아(생후~12개월)",
+        "region": "국제"
+      },
+      "caution": "Wake window는 수면 부채가 없는 아기 기준. 수면 부족 누적, 질환, 정서 변화 등으로 변동 가능.",
+      "cautionSource": "Cleveland Clinic"
+    },
+    {
+      "id": "wake-window-0-1month",
+      "claim": "생후 0~1개월 신생아의 권장 각성 시간은 30~60분(평균 45분)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic - Wake Windows by Age",
+      "source_url": "https://health.clevelandclinic.org/wake-windows-by-age",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "신생아(0~1개월)",
+        "region": "국제"
+      },
+      "caution": "신생아는 기저귀 갈기, 수유 후 짧은 상호작용 이상은 과피로 신호 보임. 개인차 큼.",
+      "cautionSource": "Cleveland Clinic"
+    },
+    {
+      "id": "wake-window-1-3month",
+      "claim": "생후 1~3개월 영아의 권장 각성 시간은 1~2시간이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic - Wake Windows by Age",
+      "source_url": "https://health.clevelandclinic.org/wake-windows-by-age",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "영아(1~3개월)",
+        "region": "국제"
+      },
+      "caution": "1개월 초반과 3개월 말은 개인차가 크므로, 하한 60분, 상한 120분을 참고하되 개별 신호 관찰 필요.",
+      "cautionSource": "Cleveland Clinic"
+    },
+    {
+      "id": "wake-window-3-4month",
+      "claim": "생후 3~4개월 영아의 권장 각성 시간은 1.25~2.5시간(평균 1.5~2시간)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic - Wake Windows by Age",
+      "source_url": "https://health.clevelandclinic.org/wake-windows-by-age",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "영아(3~4개월)",
+        "region": "국제"
+      },
+      "caution": "3~4개월은 4개월 수면퇴행 시작 시기와 겹치므로, 각성 윈도우 한도를 초과해도 과피로 신호(짜증·울음)가 평년보다 뚜렷할 수 있음.",
+      "cautionSource": "Cleveland Clinic"
+    },
+    {
+      "id": "wake-window-5-7month",
+      "claim": "생후 5~7개월 영아의 권장 각성 시간은 2~4시간(평균 2.5~3.5시간)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic - Wake Windows by Age",
+      "source_url": "https://health.clevelandclinic.org/wake-windows-by-age",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "영아(5~7개월)",
+        "region": "국제"
+      },
+      "caution": "5~7개월은 이유식 시작, 수유 간격 증가 등 급식 변화가 있을 시기. 배고픔과 과피로를 혼동하기 쉬움.",
+      "cautionSource": "Cleveland Clinic"
+    },
+    {
+      "id": "wake-window-7-10month",
+      "claim": "생후 7~10개월 영아의 권장 각성 시간은 2.5~4.5시간(평균 3~4시간)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic - Wake Windows by Age",
+      "source_url": "https://health.clevelandclinic.org/wake-windows-by-age",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "영아(7~10개월)",
+        "region": "국제"
+      },
+      "caution": "7~10개월은 8개월 수면퇴행, 첫 치아 발출, 분리불안 강화가 겹칠 수 있어 낮잠 통합(2~3개 낮잠에서 2개로)과 관계없이 야간각성 증가 가능.",
+      "cautionSource": "Cleveland Clinic"
+    },
+    {
+      "id": "wake-window-10-12month",
+      "claim": "생후 10~12개월 영아의 권장 각성 시간은 3~6시간(평균 3.5~5시간)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic - Wake Windows by Age",
+      "source_url": "https://health.clevelandclinic.org/wake-windows-by-age",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "영아(10~12개월)",
+        "region": "국제"
+      },
+      "caution": "10~12개월 후반부에는 낮잠이 1~2개로 완전 통합되기 시작하므로, 최대 각성 시간이 예전보다 길어지는 것이 정상. 개인차(11~14개월) 큼.",
+      "cautionSource": "Cleveland Clinic"
+    },
+    {
+      "id": "wake-window-guideline-not-rule",
+      "claim": "각성 윈도우는 절대 기준이 아니라 출발점이며, 보호자는 개별 아기의 피로 신호(하품, 눈 비비기, 활동 저하)를 관찰해 낮잠 타이밍을 결정해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic - Wake Windows by Age",
+      "source_url": "https://health.clevelandclinic.org/wake-windows-by-age",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수면·침구",
+        "target": "영아(0~12개월)",
+        "region": "국제"
+      },
+      "caution": "과피로의 신호가 보이면 윈도우 끝에 도달하기 전에라도 낮잠을 유도하는 것이 나음. 역설적 과흥분(과피로 역설)은 더 심한 수면 저항을 일으킴.",
+      "cautionSource": "Cleveland Clinic"
+    }
+  ]
+}

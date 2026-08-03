@@ -1,0 +1,147 @@
+{
+  "topic": "수면부족과 체중·식욕의 관계: 그렐린과 렙틴",
+  "brand": "수면과학",
+  "article": "sleep-weight-appetite",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "short-sleep-low-leptin-high-ghrelin",
+      "claim": "수면 부족은 렙틴(포만 호르몬)을 감소시키고 그렐린(배고픔 호르몬)을 증가시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PLOS Medicine, Wisconsin Sleep Cohort Study 1,024명",
+      "source_url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0010062",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인 1,024명",
+        "분류": "식욕 조절 호르몬 (렙틴·그렐린)",
+        "시기": "만성 수면 부족",
+        "지역": "미국 위스콘신"
+      },
+      "caution": "최근 메타분석은 단기 수면 부족에서는 렙틴·그렐린 변화가 일관되지 않는다고 지적: 연구 설계·개인차·만성/급성 차이가 결과에 영향.",
+      "cautionSource": "수면 호르몬 메타분석 2024"
+    },
+    {
+      "id": "sleep-restriction-4hour-leptin-drop",
+      "claim": "6일간 매일 4시간 수면 제한 시 렙틴이 현저히 감소하며, 특히 야간에 감소폭이 크고, 이는 일일 900kcal 결식에 상응한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH 연구, 수면 제한 실험",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9783730/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "실험 참여자",
+        "분류": "렙틴 수치 변화",
+        "시기": "6일 4시간/밤 수면 제한",
+        "지역": "실험실"
+      },
+      "caution": "4시간은 극단적 제한: 일상의 5~6시간 수면도 그렐린 상승을 가져오지만 렙틴 하강은 4시간 수준이 아님. 용량-반응 곡선이 비선형일 가능성.",
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-loss-increased-hunger-carbs",
+      "claim": "수면 부족은 배고픔·식욕 증가를 야기하며, 특히 고탄수화물 식품에 대한 야식 충동이 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH PMC, Sleep Deprivation and Central Appetite Regulation",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9783730/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "식욕 증가·음식 섭취 패턴",
+        "시기": "급성 및 만성 수면 부족",
+        "지역": "국제"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-restriction-weight-gain-excess-calories",
+      "claim": "수면 제한으로 인한 칼로리 과잉 섭취는 깨어 있는 시간 연장으로 인한 에너지 증가분을 초과하며, 결과적으로 체중 증가·피하지방 증가로 이어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Obesity 저널, 수면 제한 연구",
+      "source_url": "https://onlinelibrary.wiley.com/doi/full/10.1002/oby.23616",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인 및 마우스 모델",
+        "분류": "칼로리 섭취 vs 에너지 소비",
+        "시기": "수면 제한 기간 및 그 이후",
+        "지역": "실험실"
+      },
+      "caution": "마우스 모델에서는 고지방 식이 후속 시 더 큰 체중 증가가 관찰됨: 수면 부족 → 호르몬 불균형 → 고지방 음식 민감화 상승.",
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-loss-insulin-resistance-immediate",
+      "claim": "수면 제한 직후 혈중 인슐린·레지스틴 농도가 상승하며, 즉각적인 인슐린 저항성이 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH, 수면 제한 실험",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3402517/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "청년 남성",
+        "분류": "포도당 대사·인슐린 저항성",
+        "시기": "5일 수면 제한 직후",
+        "지역": "실험실"
+      },
+      "caution": "장기 관찰 데이터는 제한적: 5일 수준의 단기 영향이 만성화되는 메커니즘은 별도 연구 필요.",
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-deprivation-orexin-activation",
+      "claim": "수면 부족 중 각성을 촉진하는 신경펩타이드 오렉신(orexin)이 과활성화되어 식욕 항진을 야기한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH PMC, Sleep Deprivation and Central Appetite Regulation",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9783730/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "동물 및 인간 연구",
+        "분류": "신경펩타이드 (오렉신)",
+        "시기": "수면 부족 중 및 직후",
+        "지역": "국제"
+      },
+      "caution": "오렉신은 각성과 식욕을 모두 조절하므로, 야간 깨어있음 자체가 자동으로 식욕을 높인다 (호르몬 변화와 독립적).",
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-circadian-appetite-genes-disruption",
+      "claim": "수면 부족은 가설하부(hypothalamus)의 순환 시계 유전자를 손상시켜 렙틴 저항성을 유도하고, 뇌가 포만 신호에 반응하지 않게 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH PMC, Sleep Deprivation and Central Appetite Regulation",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9783730/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "동물 및 인간 연구",
+        "분류": "순환 시계 유전자·렙틴 신호 경로",
+        "시기": "만성 수면 부족",
+        "지역": "국제"
+      },
+      "caution": "렙틴 저항성은 비만 진행의 악순환 고리: 수면 부족 → 렙틴 저항 → 식욕 억제 신호 무시 → 체중 증가 → 더 심한 렙틴 저항.",
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-improvement-obesity-intervention",
+      "claim": "수면 시간 증가는 비만 예방의 효과적 중재이며, 특히 소아·청소년에서 민감하게 작용한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH PMC, Sleep Deprivation and Central Appetite Regulation",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9783730/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "소아·청소년·성인",
+        "분류": "수면 개선 vs 비만 감소",
+        "시기": "중장기 추적",
+        "지역": "국제"
+      },
+      "caution": "성인의 경우 식이·운동 개선 없이 수면만으로는 한계가 있고, 통합 중재가 필요.",
+      "cautionSource": null
+    }
+  ]
+}

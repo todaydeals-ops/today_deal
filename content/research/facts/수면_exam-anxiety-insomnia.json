@@ -1,0 +1,96 @@
+{
+  "topic": "시험 전날 불면·수면노력 역효과",
+  "brand": "수면의학",
+  "article": "예정",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "exam-anxiety-sleep-disruption",
+      "claim": "시험불안 정도가 낮은 군은 좋은 수면군의 73.2%가 속했으나, 불안 정도가 높은 군은 나쁜 수면군에 속하는 비율이 51.1%로 유의하게 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "대학생 수면 관련 요인 연구",
+      "source_url": "https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=JAKO201909055502852",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "대학생",
+        "분류": "시험불안과 수면 연관성",
+        "시기": "연구 당시",
+        "지역": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "sleep-effort-paradox",
+      "claim": "수면은 자발적 생리 반응이지만, 불면증 환자는 완전히 깨어난 상태에서 잠을 자려고 노력하면 자율신경 각성이 증가하여 수면 시도 → 실패 → 불안 증가의 악순환이 형성된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Forbes, Sleep Effort Paradox 리뷰",
+      "source_url": "https://www.forbes.com/sites/traversmark/2024/01/12/how-to-beat-sleeplessness-with-paradoxical-intention/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "불면증 환자",
+        "분류": "수면노력 역설",
+        "시기": "현재 연구 진행 중",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "paradoxical-intention-mechanism",
+      "claim": "역설적 의도 기법은 '잠을 자려고 노력하기'를 '깨어 있으려고 노력하기'로 전환하여 수행 불안을 감소시키고, 2021년 메타분석에서 역설적 의도가 수면 불안을 유의하게 감소시키는 것으로 확인되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Sleep Research, Paradoxical intention meta-analysis",
+      "source_url": "https://onlinelibrary.wiley.com/doi/10.1111/jsr.13464",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "수면불안 환자",
+        "분류": "치료 기법",
+        "시기": "2021",
+        "지역": "글로벌"
+      },
+      "caution": "확증된 치료법이지만 전문가 지도 하에 시작 권장",
+      "cautionSource": "https://onlinelibrary.wiley.com/doi/10.1111/jsr.13464"
+    },
+    {
+      "id": "cortisol-caffeine-arousal",
+      "claim": "시험 스트레스로 증가한 코르티솔과 불안으로 섭취하는 카페인, 그리고 부정적 반추(rumination)는 중추신경계 각성을 심화시켜 수면을 방해한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "각성 메커니즘 리뷰 (Forbes)",
+      "source_url": "https://www.forbes.com/sites/traversmark/2024/01/12/how-to-beat-sleeplessness-with-paradoxical-intention/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "스트레스 상황의 모든 연령",
+        "분류": "신경내분비 기전",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "performance-anxiety-sleep-loop",
+      "claim": "수면 불안은 '잠을 못 자면 어쩌지'라는 자기충족 예언으로 작동하며, 이 불안 자체가 잠을 방해하는 자각적 악순환을 형성한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Anxiety: Why Worrying About Sleep Keeps You Awake 리뷰",
+      "source_url": "https://declutterthemind.com/blog/sleep-anxiety",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "불면증 환자",
+        "분류": "심리적 기전",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

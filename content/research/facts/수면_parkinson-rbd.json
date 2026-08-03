@@ -1,0 +1,123 @@
+{
+  "topic": "렘수면행동장애(RBD)와 파킨슨병 연관성",
+  "brand": "수면",
+  "article": "수면_parkinson-rbd",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "rbd-definition-mechanism",
+      "claim": "렘수면행동장애(RBD)는 렘수면 중 정상적으로 나타나야 하는 근육 무긴장이 소실되고, 꿈속 행동이 실제로 신체에서 재현되는 증상이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "대한수면학회·신경과학회 진료 가이드",
+      "source_url": "https://www.e-jsm.org/journal/view.php?viewtype=pubreader&number=367",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인 남성(여성보다 3~4배 많음)",
+        "분류": "수면장애·신경계 질환",
+        "시기": "일반(대부분 50세 이상)",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "rbd-parkinson-progression-rate",
+      "claim": "RBD 환자의 약 5%가 매년 파킨슨병으로 진행하며, 10년 추적 관찰 시 연간 6.3%가 신경퇴행성 질환(파킨슨·치매)로 진행된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "다기관 임상 연구·서울대병원 신경과",
+      "source_url": "https://snuh.org/m/board/B003/view.do?bbs_no=7207",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "RBD 진단자",
+        "분류": "장기 추적 유병률",
+        "시기": "10년 관찰 기준",
+        "지역": "KR·국제 다기관"
+      },
+      "caution": "12년 추적 시 73.5% 진행률은 RBD 환자가 반드시 파킨슨이 되는 것은 아니며 진행 위험만을 나타냄",
+      "cautionSource": "https://snuh.org/m/board/B003/view.do?bbs_no=7207"
+    },
+    {
+      "id": "rbd-symptom-manifestation",
+      "claim": "RBD 환자는 수면 중 큰 소리로 외치거나 주먹질·발길질 등 폭력적인 움직임을 보이며, 동침자가 상처를 입을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "대한신경과학회·수면의학 문헌",
+      "source_url": "https://www.jkna.org/journal/view.php?viewtype=pubreader&number=6777",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "RBD 진단자",
+        "분류": "증상 특징",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "rbd-diagnostic-criteria",
+      "claim": "RBD 진단 기준은 (1)수면 중 소리내기·복합 움직임 (2)렘수면 중 발생 (3)수면다원검사에서 렘수면 무긴장 소실 확인으로 이루어진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국제수면장애분류 3판(ICSD-3)·대한수면학회",
+      "source_url": "https://www.e-jsm.org/journal/view.php?viewtype=pubreader&number=367",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "의료 진료자",
+        "분류": "진단 기준",
+        "시기": "일반",
+        "지역": "KR·국제"
+      },
+      "caution": "수면다원검사 없이 임상 증상만으로 진단하면 진행성 신경질환 발견이 지연될 수 있으므로 반드시 수면다원검사 필수"
+    },
+    {
+      "id": "rbd-parkinson-independent",
+      "claim": "RBD와 파킨슨병의 관계는 독립적인 신경생물학적 경로를 따르므로, RBD가 있다고 해서 반드시 파킨슨병이 되는 것은 아니다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울대병원 신경과·2024년 연구",
+      "source_url": "https://snuh.org/m/board/B003/view.do?bbs_no=7207",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "RBD 환자·의료진",
+        "분류": "질환 연관성",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "RBD 진단 후 1~2년마다 정기적 신경과 추적 관찰을 권장하여 파킨슨 진행 신호 감시",
+      "cautionSource": "https://snuh.org/m/board/B003/view.do?bbs_no=7207"
+    },
+    {
+      "id": "rbd-safety-measures",
+      "claim": "RBD 환자는 침실 안전 조치(날카로운 물건 제거·침대 낙상 방지·동침자 분리)와 상해 예방이 중요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "대한신경과학회·수면의학 문헌",
+      "source_url": "https://www.jkna.org/journal/view.php?viewtype=pubreader&number=6777",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "RBD 환자·보호자",
+        "분류": "생활 관리·안전",
+        "시기": "일반",
+        "지역": "KR"
+      }
+    },
+    {
+      "id": "rbd-when-to-consult",
+      "claim": "자면서 큰 소리로 외치거나 폭력적인 움직임이 반복되거나, 60세 이상 남성이면 신경과 진료 및 수면다원검사를 받아야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료기관 진료 지침",
+      "source_url": "https://snuh.org/m/board/B003/view.do?bbs_no=7207",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "증상자",
+        "분류": "진료 신호",
+        "시기": "일반",
+        "지역": "KR"
+      },
+      "caution": "RBD는 파킨슨병 진단 5~10년 이전에 나타날 수 있는 초기 신호이므로 증상 발생 직후 신경과 진료 권장",
+      "cautionSource": "https://snuh.org/m/board/B003/view.do?bbs_no=7207"
+    }
+  ]
+}

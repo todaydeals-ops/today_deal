@@ -1,0 +1,173 @@
+{
+  "topic": "수유 중 카페인 섭취와 아기 수면",
+  "brand": "공통",
+  "article": "breastfeeding-caffeine-sleep",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "caffeine-milk-transfer-0-06-1-5-percent",
+      "claim": "모유로 이행되는 카페인은 모체가 섭취한 양의 0.06-1.5%에 불과하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "InfantRisk Center & 모유수유 약리학 연구",
+      "source_url": "https://www.infantrisk.com/content/breastfeeding-caffeine-energy-drinks",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수유·영양",
+        "line": "카페인 이행",
+        "years": "모유수유 전 기간",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "caffeine-300mg-infant-dose-0-18-4-5mg",
+      "claim": "모체가 하루 300mg의 카페인을 섭취할 경우, 아기가 모유를 통해 받는 카페인은 0.18-4.5mg 범위다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "InfantRisk Center & 모유수유 영양 분석",
+      "source_url": "https://www.infantrisk.com/content/breastfeeding-caffeine-energy-drinks",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수유·영양",
+        "line": "카페인 용량 계산",
+        "years": "모유수유 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "이 용량은 신생아의 치료 용량 이하로 간주되기 때문에 일반적으로 안전한 것으로 평가된다.",
+      "cautionSource": "InfantRisk Center 약리학 자료"
+    },
+    {
+      "id": "breastfeeding-caffeine-safe-300mg-per-day-aap",
+      "claim": "미국소아과학회(AAP)는 모유수유 중 하루 300mg 이하의 카페인 섭취를 안전한 것으로 간주한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미국소아과학회(AAP) & 모유수유 지침",
+      "source_url": "https://www.webmd.com/baby/is-caffeine-safe-while-breastfeeding",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수유·영양",
+        "line": "카페인 안전 한도",
+        "years": "모유수유 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "300mg은 일반적인 커피 2-3잔(약 200ml씩 8oz 컵)에 해당한다. 에너지 음료나 초콜릿도 카페인을 함유하므로 총 섭취량에 포함시켜야 한다.",
+      "cautionSource": "AAP 모유수유 임상 권장사항"
+    },
+    {
+      "id": "caffeine-half-life-newborn-97-5-hours",
+      "claim": "신생아의 몸에서 카페인의 반감기는 약 97.5시간(4일)으로, 성인의 3-7시간 대비 13배 이상 길다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "모유수유 카페인 약물동역학 연구",
+      "source_url": "https://www.droracle.ai/articles/292219/what-is-the-half-life-of-caffeine-in-breast-milk",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수유·영양",
+        "line": "신생아 카페인 대사",
+        "years": "생후 0-4주",
+        "region": "글로벌"
+      },
+      "caution": "신생아의 미성숙한 간 대사 때문이다. 3-5개월 아기는 14시간, 6개월 이상은 2.6시간으로 연령에 따라 큰 차이가 난다.",
+      "cautionSource": "모유수유 약리학 연구"
+    },
+    {
+      "id": "caffeine-half-life-infant-3-5months-14-hours",
+      "claim": "생후 3-5개월 아기의 카페인 반감기는 약 14시간이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소아 약물동역학 연구",
+      "source_url": "https://lllusa.org/caffeine-and-breastfeeding/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수유·영양",
+        "line": "영아 카페인 대사",
+        "years": "생후 3-5개월",
+        "region": "글로벌"
+      },
+      "caution": "신생아 시기(97.5시간)보다 7배 빨라지지만, 여전히 성인보다 2배 이상 느리다.",
+      "cautionSource": "La Leche League 모유수유 지침"
+    },
+    {
+      "id": "caffeine-half-life-infant-6months-2-6-hours",
+      "claim": "생후 6개월 이상 아기의 카페인 반감기는 약 2.6시간으로 성인 수준에 도달한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소아 약물동역학 연구",
+      "source_url": "https://lllusa.org/caffeine-and-breastfeeding/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수유·영양",
+        "line": "영아 카페인 대사",
+        "years": "생후 6개월 이상",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "caffeine-10cups-coffee-baby-effects-fussiness-poor-sleep",
+      "claim": "모체가 하루 10잔 이상의 커피를 마실 경우 모유수유 아기에게서 불안감, 보챔, 야뇨(불규칙한 수면)가 나타날 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "모유수유 카페인 영향 임상 연구",
+      "source_url": "https://www.infantrisk.com/content/breastfeeding-caffeine-energy-drinks",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수유·영양",
+        "line": "카페인 부작용",
+        "years": "모유수유 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "10잔은 극단적 수준이며, 300mg 권고보다 3배 이상 높다. 일반적인 수유 모체가 이 수준에 도달하기는 드물다.",
+      "cautionSource": "임상 카페인 영향 연구"
+    },
+    {
+      "id": "caffeine-sensitive-baby-signs-irritability-fussiness-wakefulness",
+      "claim": "카페인에 민감한 아기(특히 미숙아나 신생아)는 불안감, 신경과민, 장시간 각성 등의 신호를 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "InfantRisk Center & 모유수유 임상 권장사항",
+      "source_url": "https://www.infantrisk.com/content/breastfeeding-caffeine-energy-drinks",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수유·영양",
+        "line": "카페인 민감성 신호",
+        "years": "생후 0-6개월",
+        "region": "글로벌"
+      },
+      "caution": "이런 신호가 보이면 모체의 카페인 섭취를 줄이거나 피하는 것이 권장된다. 다만 개인차가 크므로 모든 아기가 카페인에 반응하는 것은 아니다.",
+      "cautionSource": "InfantRisk Center 임상 관찰"
+    },
+    {
+      "id": "caffeine-timing-after-breastfeeding-20-30minutes",
+      "claim": "카페인 섭취 후 최고 농도는 약 20-30분에 도달하므로, 모유수유 직후 카페인을 섭취하면 다음 수유 시간까지 카페인 농도가 일부 감소할 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "모유수유 커뮤니티 권장사항 & 임상 경험",
+      "source_url": "https://www.quabbinbirthservices.com/new-blog/what-time-is-best-for-caffeine-while-breastfeeding",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "수유·영양",
+        "line": "카페인 타이밍 전략",
+        "years": "모유수유 전 기간",
+        "region": "글로벌"
+      },
+      "caution": "카페인 이행이 0.06-1.5%로 극히 소량이므로, 타이밍만으로 아기의 수면에 실질적 차이를 만들지 못할 가능성이 높다. 더 근거 있는 연구가 필요하다.",
+      "cautionSource": "사용자 보고 기반 권장사항"
+    }
+  ]
+}

@@ -130,22 +130,15 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
               <Link href={`/?corner=${a.corner}`} className="ul-sweep" style={{ color: c.color, fontWeight: 600, textDecoration: "none" }}>{c.name}</Link>
             )}
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 9, marginTop: 18, flexWrap: "wrap" }}>
-            {isSleep ? (
+          {!isSleep && (
+            <div style={{ display: "flex", alignItems: "center", gap: 9, marginTop: 18, flexWrap: "wrap" }}>
               <span style={{ display: "flex", alignItems: "center", gap: 7 }}>
-                <span style={{ width: 8, height: 8, borderRadius: 9999, background: sleepCat?.color ?? "#3f5a54" }} />
-                <span style={{ fontSize: 12, fontWeight: 700, letterSpacing: ".3px", color: sleepCat?.color ?? "#3f5a54" }}>{sleepCat?.label ?? "수면"}</span>
+                <span style={{ width: 8, height: 8, borderRadius: 9999, background: c.color }} />
+                <span style={{ fontFamily: mono, fontSize: 11, fontWeight: 700, letterSpacing: ".5px", color: c.color }}>{c.name}</span>
               </span>
-            ) : (
-              <>
-                <span style={{ display: "flex", alignItems: "center", gap: 7 }}>
-                  <span style={{ width: 8, height: 8, borderRadius: 9999, background: c.color }} />
-                  <span style={{ fontFamily: mono, fontSize: 11, fontWeight: 700, letterSpacing: ".5px", color: c.color }}>{c.name}</span>
-                </span>
-                <FieldPill field={a.field} />
-              </>
-            )}
-          </div>
+              <FieldPill field={a.field} />
+            </div>
+          )}
           <h1 style={{ fontFamily: serif, fontWeight: 700, fontSize: 46, letterSpacing: "-1.6px", lineHeight: 1.26, margin: "18px 0 0", color: "#16140f", textWrap: "balance", maxWidth: 900 }}>{a.title}</h1>
           {a.subtitle && <div style={{ fontFamily: serif, fontWeight: 500, fontSize: 20, lineHeight: 1.6, color: "#7a756a", margin: "14px 0 0" }}>{a.subtitle}</div>}
           <div style={{ fontFamily: mono, fontSize: 12, color: "#9a9286", marginTop: 20, paddingBottom: 30, borderBottom: "1px solid rgba(22,20,15,0.16)" }}>

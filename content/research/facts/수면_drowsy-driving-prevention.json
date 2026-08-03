@@ -1,0 +1,205 @@
+{
+  "topic": "졸음운전 예방 및 안전 전략",
+  "brand": "수면",
+  "article": "drowsy-driving-prevention",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "drowsy-driving-warning-signs-early",
+      "claim": "졸음운전의 경고 신호로는 지난 몇 km에 대한 기억 상실, 멍한 생각이나 자동운전(daydreaming), 눈초리나 눈감기 어려움, 머리가 무거움 느낌, 차선 이탈, 반복 야악, 의도하지 않은 차선 변경(tailgating)이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NHTSA - Drowsy driving warning signs",
+      "source_url": "https://www.nhtsa.gov/risky-driving/drowsy-driving",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "졸음운전",
+        "line": "경고 신호",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "drowsy-driving-nhtsa-statistics",
+      "claim": "미국 국도교통안전청(NHTSA) 2017년 통계에 따르면 졸음운전으로 인한 사고는 최소 91,000건이며, 약 50,000명의 부상과 800명의 사망을 야기했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NHTSA",
+      "source_url": "https://www.nhtsa.gov/risky-driving/drowsy-driving",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "졸음운전",
+        "line": "통계",
+        "years": "2017",
+        "region": "미국"
+      },
+      "caution": "2017년 통계이며, 실제 졸음운전 사고는 보고되지 않은 경우가 많아 실제 수치는 더 높을 수 있다.",
+      "cautionSource": "NHTSA official statistics database - 저보율(underreporting) 문제는 업계 표준 경고"
+    },
+    {
+      "id": "cdc-drowsy-driving-prevalence",
+      "claim": "미국 질병통제예방센터(CDC) 조사에 따르면 지난 30일간 차량 운전 중 잠들었다고 보고한 드라이버는 25명 중 1명(약 4%)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CDC",
+      "source_url": "https://www.cdc.gov/yellow-book/hcp/travel-air-sea/jet-lag-disorder.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "졸음운전",
+        "line": "유병률",
+        "years": "2026",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "microsleep-distance-football-field",
+      "claim": "운전 중 4-5초의 마이크로슬립 동안 고속도로 속도에서 차량은 축구장 길이(약 100m)에 해당하는 거리를 조종 없이 주행한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NHTSA",
+      "source_url": "https://www.nhtsa.gov/risky-driving/drowsy-driving",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "졸음운전",
+        "line": "마이크로슬립 거리",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "coffee-nap-caffeine-timing-absorption",
+      "claim": "커피냅(caffeine nap)은 카페인 섭취 직후 15-20분의 낮잠을 자는 방법으로, 카페인의 뇌 도달 시간이 약 20분이므로 깨어날 때 정확히 카페인이 작용한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Nature Scientific Reports - Optimising the caffeine nap",
+      "source_url": "https://www.nature.com/articles/s41598-026-42894-1",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "졸음운전",
+        "line": "커피냅 기전",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "coffee-nap-effectiveness-vs-single-intervention",
+      "claim": "카페인만 섭취하거나 낮잠만 자는 것보다 커피냅(카페인+낮잠)을 병합하면 각성도가 더 높으며, 시뮬레이션 운전 시험에서 커피냅은 카페인 단독 대비 사고 발생률을 약 9% 수준으로 낮추었다(카페인 단독은 34%).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Nature Scientific Reports - Caffeine nap driving study",
+      "source_url": "https://www.nature.com/articles/s41598-026-42894-1",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "졸음운전",
+        "line": "커피냅 효과",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "coffee-nap-optimal-duration",
+      "claim": "커피냅의 최적 지속시간은 15-20분이며, 30분 이상의 깊은 수면은 깨어난 후 기면(sleep inertia)을 초래해 역효과가 난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NHTSA + Sleep Foundation",
+      "source_url": "https://www.sleepfoundation.org/sleep-hygiene/coffee-nap",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "졸음운전",
+        "line": "낮잠 최적 시간",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "drowsy-driving-prevention-sleep-quality",
+      "claim": "졸음운전 예방의 근본은 출발 전 충분한 수면(최소 7시간)이며, 특히 장시간 운전(2시간 이상)을 계획할 때는 전일 밤의 수면 부족이 가장 큰 위험 요인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAA Foundation + NHTSA",
+      "source_url": "https://newsroom.aaa.com/2014/11/one-five-fatal-crashes-involve-drowsy-drivers/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "졸음운전",
+        "line": "사전 예방",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "driving-rest-schedule-2hour-100mile",
+      "claim": "2시간 또는 100마일(약 160km) 주행마다 휴식을 취하고, 휴식 중 15-20분의 낮잠이나 신체 활동으로 각성도를 회복해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAA Foundation guidelines",
+      "source_url": "https://newsroom.aaa.com/2014/11/one-five-fatal-crashes-involve-drowsy-drivers/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "졸음운전",
+        "line": "휴식 주기",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "nighttime-driving-circadian-low-point",
+      "claim": "자정 이후 새벽 5-6시 사이는 생체시계상 각성도가 가장 낮은 시간대(circadian low point)로, 이 시간 운전은 졸음운전 위험이 최대에 이른다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation + CDC guidelines",
+      "source_url": "https://www.sleepfoundation.org/drowsy-driving",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "졸음운전",
+        "line": "시간대별 위험",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "drowsy-driving-allnighter-high-risk",
+      "claim": "밤샘 운전(allnighter)은 심각한 안전 위험이며, 밤샘 후 운전할 경우 음주 운전(BAC 0.08%) 수준의 인지 손상을 경험한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CDC + NHTSA guidelines",
+      "source_url": "https://www.nhtsa.gov/risky-driving/drowsy-driving",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "졸음운전",
+        "line": "밤샘 운전 위험",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "environment-ventilation-window-alert",
+      "claim": "차량 환기를 높이고 창문을 열어 신선한 공기와 시각적 자극을 제공하면 단기적 각성 유지에 도움이 되지만, 이는 근본적인 졸음운전 해결책이 아니며 휴식을 대체할 수 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NHTSA guidelines",
+      "source_url": "https://www.nhtsa.gov/risky-driving/drowsy-driving",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "수면",
+        "category": "졸음운전",
+        "line": "환경 개선 한계",
+        "years": "2026",
+        "region": "일반"
+      }
+    }
+  ]
+}

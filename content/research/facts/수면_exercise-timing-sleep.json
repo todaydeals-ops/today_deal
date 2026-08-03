@@ -1,0 +1,96 @@
+{
+  "topic": "저녁 운동 시간대와 수면 품질",
+  "brand": "수면과학",
+  "article": "exercise-timing-sleep",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "evening-exercise-4hour-threshold",
+      "claim": "운동 종료 후 4시간 이상의 여유가 있으면 수면에 미치는 영향이 없고, 4시간 이내 저녁운동은 입면 지연·수면 시간 단축·수면 질 악화로 이어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Nature Communications, 국제 연구 14,689명 1년 400만 야간 데이터",
+      "source_url": "https://www.nature.com/articles/s41467-025-58271-x",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "일반 성인 14,689명",
+        "분류": "저녁운동 후 입면까지 시간",
+        "시기": "1년 추적",
+        "지역": "국제 다중지역"
+      },
+      "caution": "운동 강도도 함께 작용: 같은 4시간 이내라도 고강도 운동(높은 운동 부하)이 저강도보다 수면 방해가 크다.",
+      "cautionSource": "Nature Communications 2025"
+    },
+    {
+      "id": "exercise-strain-sleep-disruption",
+      "claim": "저녁 운동의 강도(strain)가 높을수록 입면 지연·수면 지속력 저하·야간 심박수 상승·심박변이도(HRV) 저하가 더 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Nature Communications, 국제 연구 14,689명",
+      "source_url": "https://www.nature.com/articles/s41467-025-58271-x",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "일반 성인",
+        "분류": "운동 강도(strain) 수준에 따른 수면 영향",
+        "시기": "단회 운동",
+        "지역": "국제"
+      },
+      "caution": "개인차 있음: 반복 훈련이 되면 건강한 성인의 경우 나이트 슬립이 통상적으로 방해받지 않을 수 있다.",
+      "cautionSource": "Nature, npj Biological Timing and Sleep 2024"
+    },
+    {
+      "id": "evening-exercise-rem-suppression",
+      "claim": "저녁 고강도 운동은 REM 수면을 억제하고 REM 잠복기를 연장하며, 특히 입면 30분~4시간 범위의 운동이 가장 영향이 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Scientific Reports, Nature 저널 계열",
+      "source_url": "https://www.nature.com/articles/s41598-024-56332-7",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인 및 청소년",
+        "분류": "수면 아키텍처(REM 억제)",
+        "시기": "입면 근처 고강도 운동",
+        "지역": "국제"
+      },
+      "caution": "기전: 운동 중 코어체온 상승 → 교감신경 활성화 → 부교감신경 회복 지연",
+      "cautionSource": null
+    },
+    {
+      "id": "morning-vs-evening-exercise",
+      "claim": "아침 운동은 코르티솔 감소·수면의 질 개선·야간 각성 시간 단축을 가져오는 반면, 저녁 운동은 순환 호르몬 리듬을 변경하고 모든 경우 수면을 방해하지는 않아도 개인차가 크다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Journal of Sleep Research 2024, 생태학적 연구",
+      "source_url": "https://onlinelibrary.wiley.com/doi/10.1111/jsr.13996",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "운동 시간대 (아침 vs 저녁)",
+        "시기": "단회 운동",
+        "지역": "연구 미명시"
+      },
+      "caution": "이 연구(2024)에서는 아침·저녁 모두 NREM 증가를 보였으나, Nature Communications 2025 연구와 상충 가능: 연구 설계·참여자 모니터링 방식·개인 훈련 상태에 따라 결과 상이.",
+      "cautionSource": "두 연구의 메타-인상 차이"
+    },
+    {
+      "id": "body-temperature-cooling",
+      "claim": "운동 후 코어체온이 정상으로 복귀하는 냉각 기간은 아침 운동일수록 짧아서 입면까지 충분한 시간을 가지지만, 저녁 운동은 냉각이 지연되어 자연스러운 체온 하강 리듬을 방해한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "일반 수면생리학, 여러 연구 통합",
+      "source_url": "https://sleepdoctor.com/pages/health/exercise",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "일반 성인",
+        "분류": "서주기(circadian) 체온 리듬",
+        "시기": "운동 후 2~4시간",
+        "지역": "일반"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

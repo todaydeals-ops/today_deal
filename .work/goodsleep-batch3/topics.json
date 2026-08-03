@@ -1,0 +1,42 @@
+{
+  "batch": "goodsleep-batch3",
+  "status": "reserve-topics-only",
+  "note": "예약용 리저브 30편(다음 금요일 8/7부터 화·금 앞으로 배정). 주제 발굴+중복대조 완료. 조사·집필은 다음 세션(웹검색 예산 리셋 후). batch2 30편과도 중복 회피 완료. 장비학은 오늘의딜 제품가이드와 충돌해 제외.",
+  "schedule_hint": "8/7(금)부터 화·금 앞으로, 종류별 인터리브",
+  "topics": [
+    { "slug": "child-bedwetting-enuresis", "cat": "growth", "corner": "smartguide", "title": "밤에 이불에 실수하는 아이, 야뇨증 이해하기", "angle": "소아 야뇨증 원인·정상 발달 범위·대처·병원 신호" },
+    { "slug": "kids-snoring-adenoids", "cat": "growth", "corner": "factcheck", "title": "아이가 코를 곤다면, 아데노이드와 수면", "angle": "소아 코골이·아데노이드 비대·수면무호흡·수술 판단" },
+    { "slug": "adhd-sleep-children", "cat": "growth", "corner": "smartguide", "title": "ADHD 아이의 잠, 왜 더 어려울까", "angle": "ADHD와 수면문제 양방향·약물영향·수면습관 관리" },
+    { "slug": "toddler-bedtime-resistance", "cat": "growth", "corner": "smartguide", "title": "안 자려고 버티는 아이, 취침 실랑이 줄이기", "angle": "취침 거부 원인·일관된 루틴·경계 설정" },
+    { "slug": "pacifier-sleep-weaning", "cat": "growth", "corner": "smartguide", "title": "공갈젖꼭지와 잠, 언제 어떻게 뗄까", "angle": "젖꼭지 수면연관·젖떼기 시기·치아영향" },
+
+    { "slug": "lucid-dreaming", "cat": "study", "corner": "factcheck", "title": "꿈을 조종하는 자각몽, 과학과 주의점", "angle": "자각몽(루시드드림) 기전·유도법·수면질 영향 주의" },
+    { "slug": "sleep-8hour-myth", "cat": "study", "corner": "factcheck", "title": "누구나 8시간 자야 할까, 필요 수면량의 진실", "angle": "8시간 통념 검증·개인·연령별 필요량·과학 근거" },
+    { "slug": "sleep-cycle-90min-myth", "cat": "study", "corner": "factcheck", "title": "90분 주기에 맞춰 깨면 개운할까", "angle": "수면주기 알람앱 미신·주기 가변성·근거" },
+
+    { "slug": "chronotype-productivity", "cat": "work", "corner": "smartguide", "title": "아침형·저녁형, 크로노타입에 맞춰 일하기", "angle": "크로노타입 유전·업무 배치·생산성 최적화" },
+    { "slug": "sleep-inertia-grogginess", "cat": "work", "corner": "factcheck", "title": "자고 일어나도 개운찮은 수면관성", "angle": "수면관성 기전·지속시간·깨는 타이밍·대처" },
+    { "slug": "racing-thoughts-bedtime", "cat": "work", "corner": "smartguide", "title": "잠들기 전 생각이 폭주할 때", "angle": "취침 전 반추·불안·인지적 각성 끄는 법" },
+    { "slug": "nap-culture-siesta", "cat": "work", "corner": "trendlab", "title": "낮잠은 게으름일까, 시에스타의 과학", "angle": "낮잠 문화·업무 낮잠 효과·기업 도입 사례" },
+    { "slug": "night-eating-syndrome", "cat": "work", "corner": "factcheck", "title": "밤마다 먹게 되는 야식증후군과 수면", "angle": "야식증후군·수면 연관·식욕 리듬·관리" },
+    { "slug": "athlete-sleep-recovery", "cat": "work", "corner": "smartguide", "title": "운동선수는 왜 더 자야 할까, 수면과 회복", "angle": "수면·근회복·수행력·수면연장 효과" },
+
+    { "slug": "pcos-sleep", "cat": "harmony", "corner": "factcheck", "title": "다낭성난소증후군과 수면장애", "angle": "PCOS·수면무호흡·인슐린저항·호르몬 연관" },
+    { "slug": "pregnancy-restless-legs", "cat": "harmony", "corner": "smartguide", "title": "임신 중 다리가 근질거려 잠 못 들 때", "angle": "임신기 하지불안·철분·엽산·대처·분만 후 호전" },
+    { "slug": "beauty-sleep-skin", "cat": "harmony", "corner": "factcheck", "title": "미용수면은 진짜일까, 잠과 피부", "angle": "수면·피부 재생·콜라겐·다크서클 근거 검증" },
+    { "slug": "pregnancy-sleep-apnea", "cat": "harmony", "corner": "factcheck", "title": "임신부 코골이, 그냥 넘겨도 될까", "angle": "임신 중 수면무호흡·임신성 고혈압·태아 위험·검사" },
+
+    { "slug": "narcolepsy", "cat": "ageless", "corner": "factcheck", "title": "낮에 갑자기 쏟아지는 잠, 기면증", "angle": "기면증 증상·탈력발작·진단·관리·오해" },
+    { "slug": "sleep-heart-health", "cat": "ageless", "corner": "factcheck", "title": "잠이 심장에 미치는 영향, 혈압과 부정맥", "angle": "수면·혈압·심박변이·부정맥·심혈관 위험" },
+    { "slug": "sleep-migraine", "cat": "ageless", "corner": "factcheck", "title": "수면과 편두통, 서로를 부르는 관계", "angle": "수면부족·과다·편두통 유발·규칙수면 예방" },
+    { "slug": "gerd-sleep", "cat": "ageless", "corner": "smartguide", "title": "자려고 누우면 올라오는 역류, 수면과 GERD", "angle": "역류성식도염·수면자세·머리높이·식사시간" },
+    { "slug": "sleep-chronic-pain", "cat": "ageless", "corner": "smartguide", "title": "아파서 못 자고, 못 자서 더 아픈 악순환", "angle": "만성통증·수면 양방향·통증역치·CBT·관리" },
+    { "slug": "tinnitus-sleep", "cat": "ageless", "corner": "smartguide", "title": "이명 때문에 잠들기 힘들 때", "angle": "이명·수면 방해·소리치료(사운드마스킹)·습관" },
+    { "slug": "depression-insomnia-adult", "cat": "ageless", "corner": "factcheck", "title": "우울증과 불면, 무엇이 먼저일까", "angle": "성인 우울·불면 양방향·조기각성·치료 병행" },
+    { "slug": "sleepwalking-parasomnia", "cat": "ageless", "corner": "factcheck", "title": "자다가 걷고 말하는 몽유병과 잠꼬대", "angle": "사건수면(parasomnia)·비렘·안전·유발요인·진료" },
+    { "slug": "thyroid-sleep", "cat": "ageless", "corner": "factcheck", "title": "갑상선이 흔드는 잠, 항진과 저하", "angle": "갑상선기능항진/저하·불면·과다수면·검사" },
+    { "slug": "aromatherapy-lavender-sleep", "cat": "ageless", "corner": "factcheck", "title": "라벤더 향이 잠에 도움될까", "angle": "아로마·라벤더 수면효과 근거 수준·활용·주의" },
+    { "slug": "polysomnography-guide", "cat": "ageless", "corner": "smartguide", "title": "수면다원검사, 언제 어떻게 받을까", "angle": "수면클리닉·수면다원검사 대상·과정·비용·해석" },
+    { "slug": "nasal-congestion-sleep", "cat": "ageless", "corner": "smartguide", "title": "코가 막혀 입으로 자는 밤, 어떻게 뚫을까", "angle": "비염·코막힘·구강호흡·수면질·완화법·이비인후과 신호" }
+  ]
+}
