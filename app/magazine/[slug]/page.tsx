@@ -172,7 +172,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
         <div className="art-grid" style={{ display: "grid", gridTemplateColumns: "1fr 320px", gap: 64, padding: "40px 0 0", alignItems: "start" }}>
           <main className="mz-body" style={{ minWidth: 0 }} dangerouslySetInnerHTML={{ __html: bodyWithImages }} />
 
-          <aside className="art-rail" style={{ position: "sticky", top: 24, display: "flex", flexDirection: "column", gap: 18 }}>
+          <aside className="art-rail" style={{ position: "sticky", top: 86, display: "flex", flexDirection: "column", gap: 18, alignSelf: "start" }}>
             {/* 정직성 배지 */}
             <div style={{ border: "1px solid rgba(22,20,15,0.12)", background: "#faf8f5", borderRadius: 14, padding: 16 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
