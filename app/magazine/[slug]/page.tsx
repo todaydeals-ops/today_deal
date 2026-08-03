@@ -178,13 +178,20 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
               <div style={{ fontSize: 12, color: "#76726b", lineHeight: 1.55, marginTop: 4 }}>소비자의 바른 선택을 위해, 투명한 정보와 객관적인 기준만 제시합니다.</div>
             </div>
 
-            {/* 짚고 가요 */}
-            {a.callout && (
-              <div style={{ border: "1px solid #f0c3b5", background: "#fff5f1", borderRadius: 14, padding: 18 }}>
-                <div style={{ fontFamily: mono, fontSize: 10.5, fontWeight: 700, letterSpacing: "1px", color: "#ff5a3c" }}>짚고 가요</div>
-                <p style={{ fontSize: 13, lineHeight: 1.7, color: "#8a3a22", margin: "10px 0 0" }} dangerouslySetInnerHTML={{ __html: a.callout }} />
-              </div>
-            )}
+            {/* 짚고 가요 — 문장 2개씩 문단 분리로 가독성 확보 */}
+            {a.callout && (() => {
+              const cs = a.callout.split(/(?<=[.!?])\s+/).filter(Boolean);
+              const cps: string[] = [];
+              for (let i = 0; i < cs.length; i += 2) cps.push(cs.slice(i, i + 2).join(" "));
+              return (
+                <div style={{ border: "1px solid #f0c3b5", background: "#fff5f1", borderRadius: 14, padding: "18px 18px 16px" }}>
+                  <div style={{ fontFamily: mono, fontSize: 10.5, fontWeight: 700, letterSpacing: "1px", color: "#ff5a3c" }}>짚고 가요</div>
+                  {cps.map((p, i) => (
+                    <p key={i} style={{ fontSize: 13, lineHeight: 1.82, color: "#8a3a22", margin: i === 0 ? "11px 0 0" : "10px 0 0" }} dangerouslySetInnerHTML={{ __html: p }} />
+                  ))}
+                </div>
+              );
+            })()}
           </aside>
         </div>
 

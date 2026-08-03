@@ -44,6 +44,7 @@ export async function GET(request: Request): Promise<Response> {
     .select("slug,corner,title,read_min,body_html,created_at")
     .eq("is_published", false)
     .neq("corner", "report")
+    .neq("field", "수면·침구") // 잠자리연구소는 아래 별도 화·금 스케줄로 공개
     .order("created_at", { ascending: true });
 
   const drafts = (data ?? []) as Row[];
@@ -85,11 +86,36 @@ export async function GET(request: Request): Promise<Response> {
     if (!error) released.push(`[${a.corner}] ${a.slug}`);
   }
 
+  // ── 잠자리연구소(goodsleep, field=수면·침구) — KST 화·금에만 1편 공개(예약 발행) ──
+  // 리저브 created_at 오름차순(카테고리 인터리브 순서로 미리 세팅됨) → 오래된 것부터 1편.
+  const kstDow = new Date(Date.now() + 9 * 3600 * 1000).getUTCDay(); // 0일 1월 2화 … 5금 6토
+  const sleepReleased: string[] = [];
+  if (kstDow === 2 || kstDow === 5) {
+    const { data: sleepDrafts } = await sb
+      .from("magazine")
+      .select("slug,body_html")
+      .eq("is_published", false)
+      .eq("field", "수면·침구")
+      .order("created_at", { ascending: true })
+      .limit(5);
+    for (const a of (sleepDrafts ?? []) as { slug: string; body_html: string }[]) {
+      const plain = (a.body_html || "").replace(/<!--[\s\S]*?-->/g, "").replace(/<[^>]+>/g, "").trim().length;
+      if (plain < 1500) continue; // 분량 게이트(검증필 원고라 통상 통과)
+      const { error } = await sb
+        .from("magazine")
+        .update({ is_published: true, created_at: new Date().toISOString() })
+        .eq("slug", a.slug);
+      if (!error) { sleepReleased.push(a.slug); break; } // 화·금 각 1편만
+    }
+  }
+
   const remaining = drafts.length - released.length;
   return Response.json({
     ok: true,
     released: released.length,
     titles: released,
+    sleepReleased,
+    sleepReleasedCount: sleepReleased.length,
     blocked: blocked.length,
     blockedDetail: blocked.slice(0, 5),
     remainingDrafts: remaining,
