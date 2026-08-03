@@ -269,13 +269,15 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
             </div>
             <div className="mz-rel-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 14 }}>
               {related.map((r) => {
+                const rsc = isSleep ? sleepCategoryOf(r.slug) : undefined;
                 const rc = cornerOf(r.corner);
+                const rColor = rsc?.color ?? rc.color;
                 return (
                   <Link key={r.id} href={`/magazine/${r.slug}`} className="mz-rel-card" style={{ display: "block", border: "1px solid rgba(22,20,15,0.14)", borderRadius: 14, padding: "18px 20px", textDecoration: "none", background: "#fff" }}>
                     <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                      <span style={{ width: 8, height: 8, borderRadius: 9999, background: rc.color, flex: "none" }} />
-                      <span style={{ fontFamily: mono, fontSize: 10.5, fontWeight: 700, letterSpacing: ".5px", color: rc.color }}>{rc.name}</span>
-                      {r.field && <span style={{ fontSize: 11, color: "#8a857c" }}>· {r.field}</span>}
+                      <span style={{ width: 8, height: 8, borderRadius: 9999, background: rColor, flex: "none" }} />
+                      <span style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: ".5px", color: rColor }}>{rsc?.label ?? rc.name}</span>
+                      {!isSleep && r.field && <span style={{ fontSize: 11, color: "#8a857c" }}>· {r.field}</span>}
                     </span>
                     <span style={{ display: "block", fontFamily: serif, fontWeight: 600, fontSize: 18, letterSpacing: "-0.5px", lineHeight: 1.4, color: "#16140f", margin: "10px 0 0" }}>{r.title}</span>
                     {r.subtitle && <span style={{ display: "block", fontSize: 13, lineHeight: 1.6, color: "#7a756a", margin: "7px 0 0" }}>{r.subtitle}</span>}
