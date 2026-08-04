@@ -1,0 +1,101 @@
+{
+  "topic": "마그네슘과 다리 쥐: 임상적 효과 근거 수준과 특정 인구군별 차이",
+  "brand": "공통",
+  "article": "muscle-cramp-magnesium",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "upper-limit-intake-UL-definition-safety-threshold",
+    "korea-health-food-function-claim-disease-prevention-prohibition",
+    "antibiotic-probiotic-simultaneous-administration-interference",
+    "meta-analysis-systematic-review-highest-evidence-hierarchy"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "magnesium-idiopathic-muscle-cramps-negative-cochrane-2020",
+      "claim": "2020년 Cochrane 메타분석에서 735명(11개 무작위대조시험)을 분석한 결과, 마그네슘 보충은 특히 고령자의 원인 불명 야간 다리 경련 빈도나 강도를 임상적으로 의미 있게 감소시키지 못했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cochrane Database of Systematic Reviews: Magnesium for skeletal muscle cramps",
+      "source_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009402.pub3/full",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "고령자 및 일반 성인 (원인 불명 야간 다리 경련)",
+        "분류": "효과 검증",
+        "시기": "2020",
+        "지역": "글로벌"
+      },
+      "caution": "이 결론은 특히 건강한 일반 성인의 야간 다리 쥐에 해당하며, 특정 질환(갑상선질환, 신장질환) 관련 경련이나 임신부는 별도 분석 대상이다.",
+      "cautionSource": "Cochrane 리뷰"
+    },
+    {
+      "id": "magnesium-pregnancy-leg-cramps-cochrane-2020-mixed",
+      "claim": "임신 중 다리 경련에 대한 2020년 Cochrane 리뷰(8개 RCT, 576명의 임신부)에서 마그네슘은 위약 대비 경련 빈도 감소를 보인 연구도 있으나 일관되지 않았으며, 통증 개선도 불확실했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cochrane Database of Systematic Reviews: Interventions for leg cramps during pregnancy",
+      "source_url": "https://www.cochrane.org/evidence/CD010655_interventions-leg-cramps-during-pregnancy",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "임신 14~36주 여성",
+        "분류": "효과 검증",
+        "시기": "2020 (8개 RCT 통합)",
+        "지역": "글로벌"
+      },
+      "caution": "근거 확실성은 낮음(연구 설계 제한, 소규모 표본). 메타분석이 불가능했던 이유는 측정 방법과 결과 보고의 불일치였다.",
+      "cautionSource": "Cochrane 리뷰"
+    },
+    {
+      "id": "magnesium-pregnancy-leg-cramps-meta-analysis-2021-negative",
+      "claim": "2021년 Taiwanese Journal of Obstetrics and Gynecology 메타분석(4개 RCT, 332명의 임신부)에서 경구 마그네슘 보충은 치료 후 경련 빈도를 대조군 대비 감소시키지 못했으며, 회복 정도에도 차이가 없었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Taiwanese Journal of Obstetrics and Gynecology: Effect of oral magnesium supplementation for relieving leg cramps during pregnancy",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S1028455921001182",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "임신 여성 332명",
+        "분류": "효과 검증",
+        "시기": "2021 (4개 RCT 통합)",
+        "지역": "글로벌"
+      },
+      "caution": "안전성은 양호했으나, 효과 없음 결론이 일관됐다. 리드에서 언급한 '혼재' 결과와 다소 다르게, 이 메타분석은 더 명확한 부정적 결과를 제시한다.",
+      "cautionSource": "Taiwanese Journal of Obstetrics and Gynecology"
+    },
+    {
+      "id": "magnesium-hydroxide-oxide-citrate-form-absorption-diarrhea",
+      "claim": "마그네슘의 형태에 따라 흡수율과 부작용이 다르다: 산화 마그네슘(MgO)은 흡수 효율이 낮고 설사를 유발하기 쉬우며, 구연산 마그네슘(citrate)은 흡수가 더 잘되지만 역시 설사 위험이 높다. 복용 용량과 형태에 따라 소화 증상의 정도가 좌우된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Magnesium in the treatment and prevention of muscle cramps",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9416674/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "마그네슘 보충 사용자",
+        "분류": "흡수·부작용",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "설사를 피하려면 분할 복용과 함께 저용량에서 시작해야 한다. 신장기능이 저하되면 고마그네슘혈증 위험이 높아지므로 의료진 상담 필수.",
+      "cautionSource": "NCBI/PMC 약학 문헌"
+    },
+    {
+      "id": "magnesium-deficiency-vs-idiopathic-cramps-distinction",
+      "claim": "원인 불명의 야간 다리 쥐가 곧 마그네슘 결핍을 의미하지 않는다. 검사상 마그네슘 부족이 있는 경우와 결핍이 없는데 경련이 있는 경우는 치료 접근이 다르다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cochrane Collaboration; clinical practice guidelines",
+      "source_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009402.pub3/full",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "야간 다리 경련자",
+        "분류": "진단 기준",
+        "시기": "2020-2026",
+        "지역": "글로벌"
+      },
+      "caution": "집필 시, 경련 원인을 마그네슘 결핍으로 단정하지 않도록 주의. 신경계 질환, 약물 부작용, 혈관 질환 등도 감별 필요. 혈청 마그네슘 검사는 필요한 경우 의료진이 요청한다.",
+      "cautionSource": "임상 진료 기준"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "topic": "커큐민(강황): 생체이용률 개선 기술과 간 이상사례 보고의 신뢰도",
+  "brand": "공통",
+  "article": "turmeric-curcumin",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "fat-soluble-vitamin-requires-meal-absorption",
+    "anticoagulant-vitamin-k-interaction-thrombosis-risk",
+    "korea-health-food-function-claim-disease-prevention-prohibition",
+    "industry-sponsored-research-bias-conflict-of-interest"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "curcumin-bioavailability-low-hepatic-metabolism",
+      "claim": "커큐민은 물에 잘 녹지 않고(친지용성), 경구 섭취 후 간과 장벽에서 빠르게 대사되어 혈중 농도가 낮으며 체내 생체이용률이 현저히 떨어진다. 단독 복용 시 혈중 도달하는 활성 커큐민 비율은 5% 미만에 불과하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Shoba G et al., Planta Medica 1998; 강황의 약동학 기본 문헌",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/9619120/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "경구 커큐민 섭취자",
+        "분류": "약동학",
+        "시기": "1998-2026",
+        "지역": "글로벌"
+      },
+      "caution": "커큐민 함유 제품 광고에서 '함량'과 '혈중 도달량'을 혼동하지 않도록 주의.",
+      "cautionSource": "약학 기본 원리"
+    },
+    {
+      "id": "piperine-curcumin-bioavailability-enhancement-1998",
+      "claim": "1998년 Planta Medica 연구(Shoba et al.)에서 검은 후추 추출물의 피페린을 병용하면 동물과 인체 모두에서 커큐민의 혈중 농도와 생체이용률을 현저히 증가시켰다. 단독 복용보다 단기 혈중 노출이 크게 올랐으나, 장기 임상 증상이나 질병 진행을 평가한 것은 아니었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Planta Medica 1998: Influence of Piperine on the Pharmacokinetics of Curcumin in Animals and Human Volunteers",
+      "source_url": "https://www.thieme-connect.com/products/ejournals/pdf/10.1055/s-2006-957450.pdf",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "건강한 성인 자원자 (인체), 동물 모델",
+        "분류": "약동학",
+        "시기": "1998",
+        "지역": "글로벌"
+      },
+      "caution": "★흡수율 증가(생체이용률 개선) ≠ 임상 효과 증가. 혈중 농도가 올라도 임상 증상(통증, 염증 지표)이 같은 비율로 개선된다는 근거는 별도.",
+      "cautionSource": "약동학 vs 임상 결과 구분"
+    },
+    {
+      "id": "turmeric-liver-injury-dilin-2023-ten-cases",
+      "claim": "2023년 American Journal of Medicine의 약인성간손상네트워크(DILIN) 사례 분석에서 강황 제품 섭취 후 간손상이 의심된 10명의 미국 환자가 확인됐으며, 이 중 9명은 간세포성 간염 양상, 1명은 혼합형이었다. 일부 사례는 흡수 개선 성분(피페린 등)을 포함한 제품이었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Journal of Medicine 2023: Liver Injury Associated with Turmeric—A Growing Problem: Ten Cases from the Drug-Induced Liver Injury Network",
+      "source_url": "https://www.amjmed.com/article/S0002-9343(22)00740-9/fulltext",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "강황 제품 섭취자 (미국)",
+        "분류": "안전성·이상사례",
+        "시기": "2011-2022 (6건은 2017 이후)",
+        "지역": "미국"
+      },
+      "caution": "10명은 드문 보고이지만 임상적으로 뚜렷한 간손상(중증 간세포 손상, 황달)이 확인됐다. 환자 8명이 여성, 중위 연령 56세(35~71)였다.",
+      "cautionSource": "DILIN 사례 보고"
+    },
+    {
+      "id": "turmeric-livertox-nih-hepatotoxicity-documented",
+      "claim": "NIH의 LiverTox 데이터베이스(2025년 6월 16일 업데이트)에서 강황과 커큐민은 역사적으로 낮은 간 손상 빈도를 보였으나, 최근 수십 건의 간손상 사례가 보고되면서 안전성 우려가 제기됐다. 중단 후 호전되는 사례들이 확인되어 약인성 간손상의 임상적 연관성이 인정된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LiverTox (NCBI Bookshelf): Turmeric - U.S. National Institute of Diabetes and Digestive and Kidney Diseases",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK548561/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "강황·커큐민 함유 제품 섭취자",
+        "분류": "안전성·간독성",
+        "시기": "2025",
+        "지역": "글로벌"
+      },
+      "caution": "★고용량 또는 흡수 개선 제형(피페린 포함)에서 위험이 높을 가능성이 제기되지만, 도용량·제형·개인 유전 요인에 따른 정확한 위험 규모는 아직 미확인. 황달, 진한 소변, 심한 피로, 가려움이 나타나면 즉시 중단 및 진료 필요.",
+      "cautionSource": "LiverTox, DILIN 사례 보고"
+    },
+    {
+      "id": "curcumin-anticoagulant-interaction-caution",
+      "claim": "커큐민(및 피페린)은 항응고제(와파린, 다비가트란 등) 및 항혈소판제와 병용 시 출혈 위험을 높일 수 있으므로, 복용 중인 항응고제가 있으면 의료진과 상담해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Drug-induced Liver Injury Secondary to Turmeric Supplement Containing Piperine; Curcumin-drug interactions",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12633785/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "항응고제 복용자",
+        "분류": "약물 상호작용",
+        "시기": "2025",
+        "지역": "글로벌"
+      },
+      "caution": "피페린은 CYP3A4, CYP2C8 등 약물 대사 효소를 억제할 수 있어, 다른 약물의 혈중 농도를 상승시킬 가능성도 있다.",
+      "cautionSource": "약학 상호작용 문헌"
+    },
+    {
+      "id": "curcumin-cholesterol-gallstone-caution",
+      "claim": "담석 병력이 있거나 담도 폐쇄, 담낭질환이 있는 경우 커큐민 섭취로 증상 악화가 가능하므로 의료진과 사전 상담이 필요하다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "권위 출처 미확보 (일반적 임상 주의사항)",
+      "source_url": null,
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "담낭질환자",
+        "분류": "금기·주의",
+        "시기": "2025",
+        "지역": "글로벌"
+      },
+      "caution": "★GPT 리드에서 제시했으나 원문 미확보. 집필 시 담낭 자극 메커니즘을 PubMed에서 별도 확인 필수.",
+      "cautionSource": "GPT 리드, 원문 미확인"
+    },
+    {
+      "id": "curcumin-gastrointestinal-side-effects-dose-dependent",
+      "claim": "고용량 커큐민 또는 흡수 개선 제형에서 위장 불편, 설사, 메스꺼움이 나타날 수 있으며, 부작용 발생은 용량과 제형에 의존한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LiverTox; clinical case reports",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK548561/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "커큐민 고용량 섭취자",
+        "분류": "부작용",
+        "시기": "2025",
+        "지역": "글로벌"
+      },
+      "caution": "저용량(≤1,000 mg/일) 범위에서는 내약성이 대체로 양호하며, 고용량 또는 나노화·피페린 포함 제형에서는 부작용 모니터링이 필요하다.",
+      "cautionSource": "임상 부작용 보고"
+    }
+  ]
+}
