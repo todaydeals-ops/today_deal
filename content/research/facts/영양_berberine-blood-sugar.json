@@ -1,0 +1,79 @@
+{
+  "topic": "베르베린의 혈당 개선 기전·소규모 임상·메트포르민 비교·약물 상호작용·자가치료 위험",
+  "brand": "공통",
+  "article": "berberine-blood-sugar 예정",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "berberine-2008-metabolism-rct-glucose-improvement",
+      "claim": "2008년 Metabolism 소규모 무작위대조시험(연구A: 36명·3개월, 연구B: 48명·3개월)에서 베르베린은 제2형 당뇨병 환자의 공복혈당·식후혈당·당화혈색소를 유의하게 감소시켰으며, 메트포르민과 유사한 효과를 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Metabolism 2008;57(5):712-717, Yin J et al.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/18442638/",
+      "checked": "2026-08-04",
+      "scope": {
+        "target": "제2형 당뇨병 환자 (새로 진단 및 조절 불충분)",
+        "population": "연구A 36명, 연구B 48명",
+        "timeframe": "각 3개월",
+        "region": "중국"
+      },
+      "caution": "★표본이 작고 단기간이므로 장기 안전성과 대규모 집단에서의 재현성은 미확인이다.",
+      "cautionSource": "임상 설계"
+    },
+    {
+      "id": "berberine-mechanism-ampk-glucose-metabolism",
+      "claim": "베르베린은 AMPK 활성화·간의 포도당 생성 억제·장내미생물 변화·인슐린 신호 조절 등 여러 경로에서 혈당 개선을 제안하는 연구가 있으나, 인체에서 우선순위 기전은 미확립이다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "웹검색 기회 초과 — 기전 논문 미확보",
+      "source_url": null,
+      "checked": "2026-08-04",
+      "scope": {
+        "target": "베르베린 기전",
+        "population": "일반",
+        "timeframe": "전연식",
+        "region": "글로벌"
+      },
+      "caution": "기전의 복합성이 높아 최적 용량·섭취 조건을 정하기 어렵다.",
+      "cautionSource": "미확인"
+    },
+    {
+      "id": "berberine-drug-interaction-cyp3a4-cyclosporine",
+      "claim": "베르베린은 CYP3A4 및 P-당단백 수송체를 억제하므로, 사이클로스포린·스타틴·칼시뉴린 억제제 등 약물대사에 의존하는 약물과 상호작용할 수 있다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "웹검색 기회 초과 — 약물 상호작용 논문 미확보",
+      "source_url": null,
+      "checked": "2026-08-04",
+      "scope": {
+        "target": "약물 복용자",
+        "population": "다약제 복용자",
+        "timeframe": "전연식",
+        "region": "글로벌"
+      },
+      "caution": "GPT 리드 기반. 복합 약물 복용 중인 환자는 절대 자의로 베르베린을 추가하면 안 되며, 의료진 상담 필수다.",
+      "cautionSource": "미확인 — 다음 조사 필요"
+    },
+    {
+      "id": "berberine-self-treatment-blood-sugar-danger",
+      "claim": "베르베린을 혈당강하제로 자가치료하면 저혈당 위험, 의료진 지도 없는 용량 조정의 위험, 실제 당뇨병 관리 지연 위험이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "당뇨병 임상 가이드 기반 (원래 GPT 리드, 직접 임상 논문 미확보)",
+      "source_url": null,
+      "checked": "2026-08-04",
+      "scope": {
+        "target": "제2형 당뇨병 환자",
+        "population": "혈당 개선 희망자",
+        "timeframe": "전연식",
+        "region": "글로벌"
+      },
+      "caution": "★집필에서 '천연 메트포르민'이라는 광고 표현의 위험성을 명확히 해야 한다. 당뇨병은 의료진 진료 필수 질환이다.",
+      "cautionSource": "임상적 판단"
+    }
+  ]
+}

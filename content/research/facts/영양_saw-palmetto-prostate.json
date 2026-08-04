@@ -1,0 +1,79 @@
+{
+  "topic": "쏘팔메토의 전립선 증상 완화·배뇨 개선·대규모 임상 음성 결과",
+  "brand": "공통",
+  "article": "saw-palmetto-prostate 예정",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "saw-palmetto-2006-nejm-negative-trial-bent",
+      "claim": "2006년 New England Journal of Medicine 무작위대조시험(225명 남성, 1년)에서 쏘팔메토 추출물 160mg 2회/일은 미국비뇨기과학회 증상지수(AUASI) 및 최대 요속을 포함한 배뇨 증상·전립선 크기 지표에서 위약보다 개선하지 못했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "New England Journal of Medicine 2006;354:557-566, Bent S, Avins A et al.",
+      "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa053085",
+      "checked": "2026-08-04",
+      "scope": {
+        "target": "중등도 이상 양성 전립선비대증 증상 남성",
+        "population": "225명, 49세 이상",
+        "timeframe": "1년",
+        "region": "미국"
+      },
+      "caution": "증상 심한군·경한군·전립선 크기 큰군·작은군 모든 부군에서 위약과 차이 없었다.",
+      "cautionSource": "NEJM 임상"
+    },
+    {
+      "id": "saw-palmetto-2011-jama-high-dose-null-effect",
+      "claim": "2011년 JAMA 무작위대조시험(369명 남성)에서 쏘팔메토를 표준 용량의 최대 3배까지 증량했지만 하부요로증상 개선이 위약과 달라지지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JAMA 2011;305(12):1213-1221 (Complementary and Alternative Medicine for Urological Symptoms Trial)",
+      "source_url": null,
+      "checked": "2026-08-04",
+      "scope": {
+        "target": "하부요로증상 중년·고령 남성",
+        "population": "369명",
+        "timeframe": "1년",
+        "region": "미국"
+      },
+      "caution": "용량 증가도 효과를 가져오지 못했다.",
+      "cautionSource": "JAMA 임상"
+    },
+    {
+      "id": "saw-palmetto-mechanism-5-alpha-reductase-uncertain",
+      "claim": "쏘팔메토 열매 추출물은 5알파환원효소 억제·안드로겐 신호 조절·염증 경로 조절을 제안하는 시험관 연구가 있지만, 인체에서 전립선 크기 감소 또는 배뇨 증상 개선으로 이어진다는 임상 근거는 부족하다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "웹검색 기회 초과 — 기전 논문 미확보",
+      "source_url": null,
+      "checked": "2026-08-04",
+      "scope": {
+        "target": "쏘팔메토 기전",
+        "population": "일반",
+        "timeframe": "전연식",
+        "region": "글로벌"
+      },
+      "caution": "기전은 있지만 임상으로 입증되지 않았다.",
+      "cautionSource": "미확인"
+    },
+    {
+      "id": "saw-palmetto-psa-masking-cancer-symptom",
+      "claim": "쏘팔메토는 PSA 수치를 낮춀서 전립선암의 증상 신호를 가릴 수 있으므로, 전립선 건강에 대해 우려가 있는 남성은 먼저 의료진 진찰을 받아야 한다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "웹검색 기회 초과 — 임상 근거 미확보",
+      "source_url": null,
+      "checked": "2026-08-04",
+      "scope": {
+        "target": "전립선암 위험군",
+        "population": "고령 남성",
+        "timeframe": "전연식",
+        "region": "글로벌"
+      },
+      "caution": "GPT 리드 기반. 중요한 안전 주의사항이므로, 집필 시 임상 가이드 확인 필수 (American Urological Association 등).",
+      "cautionSource": "미확인 — 다음 조사 필요"
+    }
+  ]
+}

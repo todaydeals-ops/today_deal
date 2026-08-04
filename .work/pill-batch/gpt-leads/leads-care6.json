@@ -1,0 +1,322 @@
+[
+ {
+  "target": "folate / folic acid (엽산)",
+  "mechanism": "엽산은 일탄소 대사와 DNA 합성, 세포분열에 필요한 비타민이다. 임신 초기 신경관이 닫히기 전에 충분히 공급하면 태아 신경관결손 발생 위험을 낮추며, 이미 생긴 결손을 치료하는 용도는 아니다.",
+  "landmark_evidence": [
+   {
+    "name": "MRC Vitamin Study",
+    "year": "1991",
+    "journal_or_body": "The Lancet",
+    "design": "RCT",
+    "population": "신경관결손 임신력이 있는 여성",
+    "finding_direction": "긍정: 임신 전후 고용량 엽산 투여가 신경관결손 재발 위험을 크게 낮췄다.",
+    "confidence": "높음"
+   },
+   {
+    "name": "Periconceptional Multivitamin Supplementation and Neural-Tube Defects",
+    "year": "1992",
+    "journal_or_body": "The New England Journal of Medicine",
+    "design": "RCT",
+    "population": "임신을 계획한 헝가리 여성",
+    "finding_direction": "긍정: 엽산 함유 종합비타민을 임신 전후 복용한 군에서 첫 신경관결손 발생이 감소했다.",
+    "confidence": "높음"
+   },
+   {
+    "name": "Folic Acid Supplementation to Prevent Neural Tube Defects",
+    "year": "2023",
+    "journal_or_body": "U.S. Preventive Services Task Force",
+    "design": "가이드라인",
+    "population": "임신을 계획하거나 임신 가능성이 있는 사람",
+    "finding_direction": "긍정: 임신 전부터 초기 임신까지 매일 엽산을 복용해 신경관결손을 예방하도록 권고했다.",
+    "confidence": "높음"
+   }
+  ],
+  "common_ad_claims": [
+   "임신 준비 필수 영양소",
+   "태아 신경관결손 예방",
+   "건강한 태아 발달 지원",
+   "빈혈과 피로 개선"
+  ],
+  "where_ads_overreach": "근거가 확립된 핵심은 임신 전부터 임신 초기까지의 신경관결손 위험 감소다. 모든 선천성 질환을 예방하거나 임신 성공률과 태아 지능을 높인다는 주장은 근거 범위를 벗어난다. 엽산 결핍이 아닌 사람의 피로를 일반적으로 개선한다는 근거도 제한적이다.",
+  "safety_issues": [
+   "고용량을 장기간 복용하면 비타민 B12 결핍성 빈혈의 혈액 소견을 가려 신경 손상 진단이 늦어질 수 있다.",
+   "신경관결손 임신력이나 특정 항경련제 복용자는 일반 권장량보다 높은 용량이 필요할 수 있으므로 의료진 지도가 필요하다.",
+   "메토트렉세이트의 사용 목적에 따라 엽산 병용 방법이 달라질 수 있다.",
+   "임신 사실을 확인한 뒤 시작하면 신경관 폐쇄 시기를 이미 지난 경우가 있어 임신 전 복용이 중요하다."
+  ],
+  "korea_regulatory_notes": "식약처 고시형 건강기능식품 영양성분이다. 기능성 범위에는 세포와 혈액 생성, 태아 신경관의 정상 발달, 혈액 호모시스테인 수준을 정상으로 유지하는 데 필요하다는 내용이 포함된다. 제품별 일일섭취량과 표시 문구는 최신 기준 확인이 필요하다.",
+  "unknowns": [
+   "고용량 엽산의 장기간 섭취가 특정 암이나 신경발달 결과에 미치는 영향은 일관되게 확정되지 않았다.",
+   "엽산과 5-MTHF 형태가 일반 임신부의 신경관결손 예방 효과에서 임상적으로 차이가 나는지는 직접 비교 근거가 부족하다."
+  ]
+ },
+ {
+  "target": "iron supplement (철분제)",
+  "mechanism": "철은 헤모글로빈과 미오글로빈을 구성해 산소 운반에 관여한다. 철결핍성 빈혈에서는 철 저장량을 회복하고 헤모글로빈 생성을 돕지만, 철결핍이 없는 피로와 탈모에 대한 효과는 제한적이다. 흡수율은 철의 형태, 투여량, 음식과 약물, 헵시딘 반응에 영향을 받는다.",
+  "landmark_evidence": [
+   {
+    "name": "Guideline: Daily Iron Supplementation in Adult Women and Adolescent Girls",
+    "year": "2016",
+    "journal_or_body": "World Health Organization",
+    "design": "가이드라인",
+    "population": "월경 중인 성인 여성과 청소년 여성",
+    "finding_direction": "긍정: 빈혈 유병률이 높은 지역에서 철분 보충이 빈혈과 철결핍 예방에 도움이 된다고 권고했다.",
+    "confidence": "높음"
+   },
+   {
+    "name": "Iron Absorption from Oral Iron Supplements Given on Consecutive versus Alternate Days",
+    "year": "2017",
+    "journal_or_body": "The Lancet Haematology",
+    "design": "RCT",
+    "population": "철결핍 여성",
+    "finding_direction": "긍정: 격일 투여가 연속 일일 투여보다 분획 철 흡수율을 높일 수 있음을 보였다.",
+    "confidence": "중간"
+   },
+   {
+    "name": "Ferrous Sulfate Supplementation Causes Significant Gastrointestinal Side-Effects in Adults",
+    "year": "2015",
+    "journal_or_body": "PLOS ONE",
+    "design": "메타분석",
+    "population": "경구 황산철을 복용한 성인",
+    "finding_direction": "부정: 황산철은 위약이나 정맥 철분과 비교해 위장관 부작용 위험을 높였다.",
+    "confidence": "높음"
+   }
+  ],
+  "common_ad_claims": [
+   "빈혈 개선",
+   "피로와 무기력 개선",
+   "흡수율이 높은 철분",
+   "탈모와 창백함 개선"
+  ],
+  "where_ads_overreach": "철결핍 또는 철결핍성 빈혈이 확인된 사람에게는 효과가 분명하지만, 원인이 다른 빈혈이나 정상 철 저장량을 가진 사람에게 무조건 도움이 되는 것은 아니다. 특정 철 형태가 모든 사람에게 월등하게 흡수되거나 부작용이 없다는 광고는 직접 비교 근거보다 앞서는 경우가 많다.",
+  "safety_issues": [
+   "오심, 복통, 변비, 설사, 검은 변이 흔하다.",
+   "소아의 철분 과량 섭취는 치명적 중독을 일으킬 수 있으므로 잠금 보관이 필요하다.",
+   "혈색소침착증, 철과잉 또는 반복 수혈 환자는 임의 복용을 피해야 한다.",
+   "레보티록신, 테트라사이클린계·퀴놀론계 항생제, 비스포스포네이트 등의 흡수를 방해할 수 있어 복용 간격이 필요하다.",
+   "칼슘, 제산제, 차와 커피는 흡수를 낮출 수 있다.",
+   "임신 중 필요량은 증가하지만 빈혈 원인과 용량을 확인해 복용하는 것이 바람직하다."
+  ],
+  "korea_regulatory_notes": "식약처 고시형 건강기능식품 영양성분이다. 체내 산소 운반과 혈액 생성, 에너지 생성에 필요하다는 범위로 표시할 수 있다. 빈혈의 진단·치료를 직접 표방하는 것은 건강기능식품의 기능성 표시 범위를 넘어설 수 있다.",
+  "unknowns": [
+   "일일 투여와 격일 투여 중 실제 헤모글로빈 회복, 순응도, 장기 결과가 누구에게 더 우수한지는 상황별로 다르다.",
+   "비스글리시네이트 등 여러 철 형태의 임상적 우월성은 연구마다 용량과 대상자가 달라 확정하기 어렵다.",
+   "철결핍은 있으나 빈혈이 없는 사람의 피로 개선 효과는 일부 긍정적이나 대상자 선별이 중요하다."
+  ]
+ },
+ {
+  "target": "soy isoflavone (대두이소플라본)",
+  "mechanism": "대두이소플라본은 에스트로겐 수용체에 약하게 결합하는 식물성 에스트로겐이다. 특히 에스트로겐 수용체 베타에 상대적으로 높은 친화성을 보이지만, 효과는 장내 대사와 에쿠올 생성 여부, 제제 조성에 따라 달라질 수 있다.",
+  "landmark_evidence": [
+   {
+    "name": "Efficacy of Isoflavones in Relieving Vasomotor Menopausal Symptoms",
+    "year": "2009",
+    "journal_or_body": "Maturitas",
+    "design": "메타분석",
+    "population": "혈관운동성 갱년기 증상이 있는 여성",
+    "finding_direction": "혼재: 연구 간 이질성이 커서 안면홍조 개선 효과를 확정하기 어렵다고 평가했다.",
+    "confidence": "중간"
+   },
+   {
+    "name": "Extracted or Synthesized Soybean Isoflavones Reduce Menopausal Hot Flash Frequency and Severity",
+    "year": "2012",
+    "journal_or_body": "Menopause",
+    "design": "메타분석",
+    "population": "폐경기 안면홍조가 있는 여성",
+    "finding_direction": "긍정: 안면홍조 빈도와 중증도가 위약보다 소폭 감소했으나 효과 발현이 느리고 연구 차이가 컸다.",
+    "confidence": "중간"
+   },
+   {
+    "name": "Association of Phytoestrogen Use With Menopausal Symptoms",
+    "year": "2016",
+    "journal_or_body": "JAMA",
+    "design": "메타분석",
+    "population": "자연 폐경 전후 여성",
+    "finding_direction": "혼재: 식물성 에스트로겐은 안면홍조와 질 건조를 소폭 줄였지만 야간 발한에는 명확한 효과가 없었다.",
+    "confidence": "중간"
+   }
+  ],
+  "common_ad_claims": [
+   "갱년기 안면홍조 개선",
+   "여성호르몬 균형",
+   "골다공증 예방",
+   "피부 노화와 질 건조 개선"
+  ],
+  "where_ads_overreach": "안면홍조에 대한 평균 효과는 있더라도 대체로 작고 개인차가 크며, 호르몬치료와 동등하다고 볼 근거는 없다. 여성호르몬 자체를 보충하거나 정상화한다는 표현은 기전을 과장한다. 골절 예방이나 갱년기 전반의 모든 증상 개선도 확립되지 않았다.",
+  "safety_issues": [
+   "대두 알레르기가 있는 사람은 피해야 한다.",
+   "복부 팽만, 오심, 변비나 설사 등의 위장관 증상이 생길 수 있다.",
+   "유방암·자궁내막암 등 호르몬 민감성 질환의 병력이 있거나 치료 중인 사람은 농축 보충제 사용 전 담당 의료진과 상의해야 한다.",
+   "레보티록신의 흡수를 방해할 수 있어 복용 간격과 갑상선 기능 추적이 필요할 수 있다.",
+   "임신·수유 중 고농축 이소플라본 보충제의 안전성 자료는 충분하지 않다."
+  ],
+  "korea_regulatory_notes": "대두이소플라본 또는 이를 함유한 개별인정형 원료의 인정 여부와 기능성 문구는 원료별로 다를 수 있다. 일반 대두 식품의 영양적 가치와 농축 이소플라본 건강기능식품의 기능성은 구분해야 하며, 갱년기 기능성 인정 범위는 제품별 인정서를 확인할 필요가 있다.",
+  "unknowns": [
+   "에쿠올 생성자와 비생성자 사이의 효과 차이가 임상적으로 얼마나 중요한지 확정되지 않았다.",
+   "장기간 고용량 보충이 유방과 자궁내막에 미치는 영향은 일반 대두 식품 섭취 근거와 동일하게 볼 수 없다.",
+   "골밀도 지표의 변화가 실제 골절 예방으로 이어지는지는 불확실하다."
+  ]
+ },
+ {
+  "target": "evening primrose oil / GLA (달맞이꽃종자유 / 감마리놀렌산)",
+  "mechanism": "감마리놀렌산은 오메가-6 지방산으로 체내에서 디호모감마리놀렌산과 프로스타글란딘 계열 물질의 전구체가 된다. 염증과 혈소판 기능, 피부 장벽에 영향을 줄 가능성이 제안됐지만 경구 보충의 임상 효과는 질환별로 일관되지 않다.",
+  "landmark_evidence": [
+   {
+    "name": "Evening Primrose Oil and Borage Oil for Eczema",
+    "year": "2013",
+    "journal_or_body": "Cochrane Database of Systematic Reviews",
+    "design": "메타분석",
+    "population": "아토피성 습진이 있는 성인과 소아",
+    "finding_direction": "부정: 달맞이꽃종자유와 보라지유는 위약보다 의미 있는 습진 개선 효과를 보이지 않았다.",
+    "confidence": "높음"
+   },
+   {
+    "name": "Evening Primrose Oil for Cyclical Mastalgia",
+    "year": "2002",
+    "journal_or_body": "The Breast",
+    "design": "RCT",
+    "population": "주기성 유방통이 있는 여성",
+    "finding_direction": "부정: 달맞이꽃종자유가 위약보다 유방통을 뚜렷하게 줄이지 못했다.",
+    "confidence": "중간"
+   },
+   {
+    "name": "Evening Primrose Oil for Menopause Hot Flashes",
+    "year": "2024",
+    "journal_or_body": "Journal of Menopausal Medicine",
+    "design": "체계적 문헌고찰",
+    "population": "폐경기 안면홍조가 있는 여성",
+    "finding_direction": "혼재: 일부 지표에서 개선 신호가 있었으나 안면홍조 완화 효과를 결론내리기에는 근거가 부족했다.",
+    "confidence": "중간"
+   }
+  ],
+  "common_ad_claims": [
+   "월경전 불편감 개선",
+   "갱년기 안면홍조 개선",
+   "혈행과 콜레스테롤 개선",
+   "아토피와 건조한 피부 개선"
+  ],
+  "where_ads_overreach": "생화학적 항염 가능성이 곧 임상 증상 개선을 의미하지는 않는다. 특히 아토피성 피부염, 유방통, 갱년기 안면홍조에 대한 독립 임상근거는 부정적이거나 불충분하다. 여러 기능성을 한 제품이 동시에 확실하게 개선한다고 표현하면 근거보다 과장될 수 있다.",
+  "safety_issues": [
+   "복통, 오심, 설사, 두통이 나타날 수 있다.",
+   "항응고제나 항혈소판제와 병용할 때 출혈 위험 가능성에 주의해야 한다.",
+   "경련성 질환이 있거나 경련 역치를 낮추는 약물을 복용하는 경우 주의가 필요하다.",
+   "임신 중 자궁경부 숙성이나 분만 촉진 목적으로 임의 사용해서는 안 되며 안전성과 효과가 확립되지 않았다.",
+   "수술 전에는 출혈 가능성을 고려해 복용 사실을 의료진에게 알려야 한다."
+  ],
+  "korea_regulatory_notes": "감마리놀렌산 함유 유지로서 식약처 고시형 기능성 원료에 해당할 수 있다. 알려진 기능성 범위에는 혈중 콜레스테롤 개선, 혈행 개선, 월경전 변화에 의한 불편한 상태 개선, 면역과민반응에 의한 피부 상태 개선이 포함되지만, 최신 일일섭취량과 원료 규격은 확인 필요하다.",
+  "unknowns": [
+   "PMS의 어떤 증상군에서 의미 있는 효과가 있는지 일관된 결론이 없다.",
+   "제품별 GLA 함량과 산화 상태가 달라 연구 결과를 시판 제품에 그대로 적용하기 어렵다.",
+   "장기간 섭취의 임상적 이득과 출혈 위험은 충분히 규명되지 않았다."
+  ]
+ },
+ {
+  "target": "biotin (비오틴)",
+  "mechanism": "비오틴은 지방산 합성, 포도당 생성, 아미노산 대사에 관여하는 카복실화효소의 보조인자다. 결핍 시 탈모와 피부염, 손발톱 이상이 나타날 수 있지만 일반인에서 임상적 결핍은 드물다. 고용량 비오틴은 스트렙타비딘-비오틴 방식을 쓰는 면역검사를 방해할 수 있다.",
+  "landmark_evidence": [
+   {
+    "name": "A Review of the Use of Biotin for Hair Loss",
+    "year": "2017",
+    "journal_or_body": "Skin Appendage Disorders",
+    "design": "체계적 문헌고찰",
+    "population": "탈모 또는 모발 이상이 있는 사람",
+    "finding_direction": "혼재: 비오틴 결핍이나 기저질환이 있는 사례에서는 개선됐지만 건강한 사람의 일반적 탈모 치료 근거는 부족했다.",
+    "confidence": "중간"
+   },
+   {
+    "name": "Biotin Treatment of Brittle Fingernails",
+    "year": "1990",
+    "journal_or_body": "Journal of the American Academy of Dermatology",
+    "design": "관찰 연구",
+    "population": "부서지기 쉬운 손발톱이 있는 환자",
+    "finding_direction": "긍정: 손발톱 두께 증가가 보고됐으나 소규모 비대조 연구여서 효과를 확정하기 어렵다.",
+    "confidence": "낮음"
+   },
+   {
+    "name": "The FDA Warns that Biotin May Interfere with Lab Tests",
+    "year": "2017",
+    "journal_or_body": "U.S. Food and Drug Administration",
+    "design": "기관 안전성 문서",
+    "population": "비오틴 보충제 복용자와 검사실·의료진",
+    "finding_direction": "부정: 고용량 비오틴이 트로포닌 등 검사 결과를 잘못 높이거나 낮춰 오진을 유발할 수 있다고 경고했다.",
+    "confidence": "높음"
+   }
+  ],
+  "common_ad_claims": [
+   "모발 성장 촉진",
+   "탈모 예방",
+   "손발톱 강화",
+   "피부 건강과 에너지 증진"
+  ],
+  "where_ads_overreach": "비오틴 결핍으로 생긴 탈모와 손발톱 이상을 교정하는 것과, 결핍이 없는 사람의 유전성·호르몬성 탈모를 치료하는 것은 다르다. 고용량을 먹을수록 머리카락이 빨리 자란다는 용량반응 근거는 없다. 손발톱 근거도 소규모 비대조 연구가 중심이다.",
+  "safety_issues": [
+   "트로포닌 검사가 실제보다 낮게 나와 심근경색 진단이 지연될 수 있다.",
+   "갑상선호르몬, 부갑상선호르몬, 성호르몬, 코르티솔, 비타민 D 등 일부 검사 결과를 잘못 높이거나 낮출 수 있다.",
+   "혈액검사 전 복용 사실과 용량을 반드시 의료진과 검사실에 알려야 하며 중단 기간은 검사법과 용량에 따라 달라진다.",
+   "비오틴은 종합비타민, 임신부용 비타민, 모발 제품에 중복 포함될 수 있다.",
+   "임신·수유 중 영양 권장량 수준과 미용 목적 고용량 섭취는 구분해야 한다."
+  ],
+  "korea_regulatory_notes": "식약처 고시형 건강기능식품 영양성분이다. 지방·탄수화물·단백질 대사와 에너지 생성에 필요하다는 범위의 기능성을 표시할 수 있다. 탈모 치료나 발모 효과는 인정된 영양 기능성 범위가 아니며, 임상검사 수치에 영향을 줄 수 있다는 섭취 주의사항을 확인해야 한다.",
+  "unknowns": [
+   "결핍이 없는 탈모 환자에서 비오틴 단독 보충의 유효성은 입증되지 않았다.",
+   "손발톱 취약성에 대한 적정 용량과 치료 기간은 확립되지 않았다.",
+   "검사 간섭이 사라지는 데 필요한 중단 시간은 복용량, 신장 기능, 검사 장비에 따라 달라 일률적으로 정하기 어렵다."
+  ]
+ },
+ {
+  "target": "melatonin (멜라토닌)",
+  "mechanism": "멜라토닌은 송과선에서 분비되는 호르몬으로 어두워지는 시간에 맞춰 생체시계에 야간 신호를 전달한다. 강한 진정제라기보다 수면 시점을 조절하는 크로노바이오틱 효과가 중심이며, 투여 시각이 용량만큼 중요하다.",
+  "landmark_evidence": [
+   {
+    "name": "Melatonin for the Prevention and Treatment of Jet Lag",
+    "year": "2002",
+    "journal_or_body": "Cochrane Database of Systematic Reviews",
+    "design": "메타분석",
+    "population": "여러 시간대를 이동한 항공 여행자",
+    "finding_direction": "긍정: 목적지 취침 시각에 맞춘 멜라토닌이 특히 여러 시간대를 넘는 여행의 시차 증상을 줄였다.",
+    "confidence": "높음"
+   },
+   {
+    "name": "Melatonin for the Treatment of Primary Sleep Disorders",
+    "year": "2013",
+    "journal_or_body": "PLOS ONE",
+    "design": "메타분석",
+    "population": "원발성 수면장애가 있는 소아와 성인",
+    "finding_direction": "긍정: 수면 시작 시간을 소폭 단축하고 총 수면시간과 주관적 수면의 질을 조금 개선했다.",
+    "confidence": "중간"
+   },
+   {
+    "name": "Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults",
+    "year": "2017",
+    "journal_or_body": "American Academy of Sleep Medicine",
+    "design": "가이드라인",
+    "population": "만성 불면장애가 있는 성인",
+    "finding_direction": "부정: 근거의 질과 효과 크기를 고려해 성인 만성 불면의 입면·수면유지 치료제로 일반 멜라토닌을 사용하지 않도록 약하게 권고했다.",
+    "confidence": "높음"
+   }
+  ],
+  "common_ad_claims": [
+   "먹으면 즉시 깊은 잠 유도",
+   "불면증 치료",
+   "시차와 교대근무 수면 개선",
+   "수면시간과 수면의 질 대폭 향상"
+  ],
+  "where_ads_overreach": "효과가 비교적 분명한 영역은 시차 적응과 일부 일주기 수면장애처럼 수면 시점이 어긋난 경우다. 일반 성인의 만성 불면에서는 평균 입면 단축 폭이 작고 인지행동치료를 대체하지 못한다. 복용량을 높이면 깊은 잠과 수면 유지가 계속 좋아진다는 근거도 없다.",
+  "safety_issues": [
+   "졸림, 두통, 어지럼, 생생한 꿈, 다음 날 주의력 저하가 나타날 수 있다.",
+   "복용 후 운전이나 위험한 기계 조작을 피해야 한다.",
+   "진정제, 수면제, 알코올과 함께 사용하면 졸림이 증가할 수 있다.",
+   "항응고제, 면역억제제, 일부 항경련제·혈압약·당뇨약과의 상호작용 가능성이 있다.",
+   "임신·수유 중 안전성 자료가 충분하지 않다.",
+   "소아·청소년의 장기 복용이 성장과 사춘기 발달에 미치는 영향은 충분히 확립되지 않았다.",
+   "제품의 실제 함량과 표시 함량이 다를 수 있다는 해외 조사 결과가 있어 의약품과 보충제를 동일하게 보면 안 된다."
+  ],
+  "korea_regulatory_notes": "한국에서 멜라토닌은 건강기능식품 고시형 기능성 원료가 아니며 식품에 사용할 수 없는 성분으로 관리된다. 멜라토닌 함유 해외 식품은 구매대행 금지 또는 해외직구 위해식품 차단 대상이 될 수 있다. 의약품 멜라토닌 제제는 처방 영역으로 취급되며, 허가된 제형·연령·적응증은 제품별 의약품 허가사항 확인이 필요하다.",
+  "unknowns": [
+   "장기 연속 복용의 유효성과 안전성 자료는 단기 연구보다 부족하다.",
+   "일반 불면증에서 최적 용량과 복용 시각은 개인의 생체리듬에 따라 달라 일률적으로 정하기 어렵다.",
+   "교대근무 수면장애에 대한 효과는 근무 일정과 투여 시점에 따라 연구 결과가 혼재한다.",
+   "최근 관찰연구에서 보고된 장기 복용과 심혈관 위험의 연관성은 인과관계가 입증되지 않았다."
+  ]
+ }
+]
