@@ -7,6 +7,7 @@ import PillCategoryIndex from "@/components/magazine/PillCategoryIndex";
 import Pagination from "@/components/magazine/Pagination";
 import PillFooter from "@/components/magazine/PillFooter";
 import { pillCategoryByKey, pillCategoryOf } from "@/lib/magazine/pillCategories";
+import { pillOnSubdomain, pillHref } from "@/lib/magazine/subdomain";
 import "../magazine/magazine.css";
 
 // 알약연구소 — 오늘의딜 파생 건강기능식품 검증 미디어. field="건강기능식품" + 고유 6분류.
@@ -33,13 +34,8 @@ export default async function PillHome({ searchParams }: { searchParams: Promise
   const rows = page === 1 ? pageList.slice(1) : pageList;
   const showIndex = !cat && page === 1;
 
-  const pageHref = (p: number) => {
-    const q = new URLSearchParams();
-    if (cat) q.set("cat", cat.key);
-    if (p > 1) q.set("page", String(p));
-    const s = q.toString();
-    return s ? `https://pill.todaydeals.co.kr/?${s}` : "https://pill.todaydeals.co.kr/";
-  };
+  const onSub = await pillOnSubdomain();
+  const pageHref = (p: number) => pillHref(onSub, cat?.key, p);
 
   return (
     <>

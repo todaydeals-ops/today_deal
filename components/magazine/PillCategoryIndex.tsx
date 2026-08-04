@@ -1,15 +1,17 @@
 // 알약연구소 6분류 인덱스 — 잠자리연구소 SleepCategoryIndex와 같은 카드 틀(번호·점·제목·영문·설명).
+// ★링크는 호스트 감지로 생성(서브도메인 미연결 상태에서도 동작).
 import { PILL_CATEGORIES } from "@/lib/magazine/pillCategories";
+import { pillOnSubdomain, pillHref } from "@/lib/magazine/subdomain";
 
 const mono = "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif";
-const PL = "https://pill.todaydeals.co.kr";
 
-export default function PillCategoryIndex() {
+export default async function PillCategoryIndex() {
+  const onSub = await pillOnSubdomain();
   return (
     <section className="mz-wrap" style={{ paddingTop: 34 }}>
       <div className="sleep-cat-index">
         {PILL_CATEGORIES.map((c, i) => (
-          <a key={c.key} className="corner-cell" href={`${PL}/?cat=${c.key}`}>
+          <a key={c.key} className="corner-cell" href={pillHref(onSub, c.key)}>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
               <span className="cc-n" style={{ fontFamily: mono, fontSize: 11, fontWeight: 600, color: "#9a9286" }}>{String(i + 1).padStart(2, "0")}</span>
               <span style={{ width: 9, height: 9, borderRadius: 9999, background: c.color }} />

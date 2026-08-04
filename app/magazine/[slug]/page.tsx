@@ -44,7 +44,8 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   const sleepCat = isSleep ? sleepCategoryOf(a.slug) : undefined; // 잠자리연구소 고유 6분류
   const pillCat = isPill ? pillCategoryOf(a.slug) : undefined; // 알약연구소 고유 6분류
   const subCat = sleepCat ?? pillCat;
-  const subHome = isPill ? "https://pill.todaydeals.co.kr" : "https://goodsleep.todaydeals.co.kr";
+  // 알약연구소는 서브도메인이 아직 미연결일 수 있어 상대경로(/pill)로 — 어느 호스트에서든 동작.
+  const subHome = isPill ? "/pill" : "https://goodsleep.todaydeals.co.kr";
   const subName = isPill ? "알약연구소" : "잠자리연구소";
   const accent = isSub ? (subCat?.color ?? "#3f5a54") : c.color; // 강조색: 서브는 분류색, 그 외 코너색
   const related = await fetchRelatedMagazine(a, 4);
@@ -134,7 +135,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
             )}
             <span style={{ opacity: 0.5 }}>›</span>
             {isSub ? (
-              <a href={`${subHome}/?cat=${subCat?.key ?? ""}`} style={{ color: subCat?.color ?? "#3f5a54", fontWeight: 600, textDecoration: "none" }}>{subCat?.label ?? (isPill ? "영양" : "수면")}</a>
+              <a href={isPill ? `/pill?cat=${subCat?.key ?? ""}` : `${subHome}/?cat=${subCat?.key ?? ""}`} style={{ color: subCat?.color ?? "#3f5a54", fontWeight: 600, textDecoration: "none" }}>{subCat?.label ?? (isPill ? "영양" : "수면")}</a>
             ) : (
               <Link href={`/?corner=${a.corner}`} className="ul-sweep" style={{ color: c.color, fontWeight: 600, textDecoration: "none" }}>{c.name}</Link>
             )}
