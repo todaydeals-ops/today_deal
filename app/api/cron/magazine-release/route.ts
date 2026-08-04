@@ -86,28 +86,34 @@ export async function GET(request: Request): Promise<Response> {
     if (!error) released.push(`[${a.corner}] ${a.slug}`);
   }
 
-  // ── 잠자리연구소(goodsleep, field=수면·침구) — KST 화·금에만 1편 공개(예약 발행) ──
-  // 리저브 created_at 오름차순(카테고리 인터리브 순서로 미리 세팅됨) → 오래된 것부터 1편.
-  const kstDow = new Date(Date.now() + 9 * 3600 * 1000).getUTCDay(); // 0일 1월 2화 … 5금 6토
-  const sleepReleased: string[] = [];
-  if (kstDow === 2 || kstDow === 5) {
-    const { data: sleepDrafts } = await sb
+  // ── 서브 미디어 예약 발행 — 각자 정해진 요일(KST)에 1편씩 공개 ──
+  // 잠자리연구소=화·금, 알약연구소=월·목. 리저브 created_at 오름차순(카테고리 인터리브 순서로 미리 세팅) → 오래된 것부터.
+  const kstDow = new Date(Date.now() + 9 * 3600 * 1000).getUTCDay(); // 0일 1월 2화 3수 4목 5금 6토
+  const SUB_SCHEDULE: { field: string; days: number[] }[] = [
+    { field: "수면·침구", days: [2, 5] },   // 잠자리연구소 화·금
+    { field: "건강기능식품", days: [1, 4] }, // 알약연구소 월·목
+  ];
+  const subReleased: string[] = [];
+  for (const s of SUB_SCHEDULE) {
+    if (!s.days.includes(kstDow)) continue;
+    const { data: subDrafts } = await sb
       .from("magazine")
       .select("slug,body_html")
       .eq("is_published", false)
-      .eq("field", "수면·침구")
+      .eq("field", s.field)
       .order("created_at", { ascending: true })
       .limit(5);
-    for (const a of (sleepDrafts ?? []) as { slug: string; body_html: string }[]) {
+    for (const a of (subDrafts ?? []) as { slug: string; body_html: string }[]) {
       const plain = (a.body_html || "").replace(/<!--[\s\S]*?-->/g, "").replace(/<[^>]+>/g, "").trim().length;
       if (plain < 1500) continue; // 분량 게이트(검증필 원고라 통상 통과)
       const { error } = await sb
         .from("magazine")
         .update({ is_published: true, created_at: new Date().toISOString() })
         .eq("slug", a.slug);
-      if (!error) { sleepReleased.push(a.slug); break; } // 화·금 각 1편만
+      if (!error) { subReleased.push(`[${s.field}] ${a.slug}`); break; } // 해당 요일 1편만
     }
   }
+  const sleepReleased = subReleased; // 응답 하위호환
 
   const remaining = drafts.length - released.length;
   return Response.json({

@@ -1,0 +1,680 @@
+{
+ "batch": "pill-92",
+ "goal": "알약연구소를 잠자리연구소와 동일 규모(발행 63 + 리저브 30 = 93편)로. 파일럿 lutein 1편 발행됨 → 92편 추가.",
+ "rules": "field=건강기능식품 고정. corner는 필수필드라 성격에 맞춰 factcheck/smartguide/trendlab 지정. 오늘의딜 기존 건기식 팩트체크(오메가3·프로바이오틱스·콜라겐·마그네슘비타민D·비타민C·단백질·다이어트보조·숙취해소·고함량흡수·유통기한)는 중복 회피 위해 제외.",
+ "format": "성분 완전분해 표준형(기전 → 임상이 증명한 범위 → 광고 과장 → 형태·용량 → 안 먹어도 되는 사람 → 결정트리 → FAQ). 2,300~3,000자.",
+ "topics": [
+  {
+   "slug": "astaxanthin-eye-fatigue",
+   "cat": "eye",
+   "corner": "factcheck",
+   "title": "아스타잔틴, 눈 피로에 정말 듣나",
+   "angle": "항산화 기전·눈 조절력 근거 수준·용량"
+  },
+  {
+   "slug": "bilberry-anthocyanin-eye",
+   "cat": "eye",
+   "corner": "factcheck",
+   "title": "빌베리 안토시아닌, 야간시력 전설의 진위",
+   "angle": "2차대전 조종사 설화·실제 근거·로돕신"
+  },
+  {
+   "slug": "dry-eye-omega-supplement",
+   "cat": "eye",
+   "corner": "factcheck",
+   "title": "안구건조증에 오메가3 먹으면 나아질까",
+   "angle": "DREAM 임상·눈물막·인공눈물 우선순위"
+  },
+  {
+   "slug": "vitamin-a-night-blindness",
+   "cat": "eye",
+   "corner": "smartguide",
+   "title": "비타민A와 야맹증, 과잉이 더 무서운 이유",
+   "angle": "결핍 vs 과잉·상한섭취량·임산부 기형 위험"
+  },
+  {
+   "slug": "eye-supplement-compare",
+   "cat": "eye",
+   "corner": "smartguide",
+   "title": "눈 영양제 뭐부터 볼까, 성분별 정리",
+   "angle": "루테인·아스타잔틴·오메가3 목적별 선택"
+  },
+  {
+   "slug": "blue-light-supplement-claim",
+   "cat": "eye",
+   "corner": "factcheck",
+   "title": "블루라이트 차단 영양제라는 말, 근거 있나",
+   "angle": "청색광 유해성 논쟁·마케팅 표현 검증"
+  },
+  {
+   "slug": "macular-degeneration-prevention",
+   "cat": "eye",
+   "corner": "smartguide",
+   "title": "황반변성, 영양제로 예방된다는 말의 진실",
+   "angle": "예방 vs 진행지연·위험군·안과 검진"
+  },
+  {
+   "slug": "eye-drops-vs-supplement",
+   "cat": "eye",
+   "corner": "smartguide",
+   "title": "인공눈물이 먼저일까 영양제가 먼저일까",
+   "angle": "증상별 우선순위·생활습관·진료 신호"
+  },
+  {
+   "slug": "msm-joint-supplement",
+   "cat": "joint",
+   "corner": "factcheck",
+   "title": "MSM, 관절 통증에 효과 있다는 근거는",
+   "angle": "황 화합물 기전·RCT 수준·용량"
+  },
+  {
+   "slug": "glucosamine-knee",
+   "cat": "joint",
+   "corner": "factcheck",
+   "title": "글루코사민, 연골이 정말 재생될까",
+   "angle": "GAIT 임상·황산염 vs 염산염·효과 논쟁"
+  },
+  {
+   "slug": "chondroitin-joint",
+   "cat": "joint",
+   "corner": "factcheck",
+   "title": "콘드로이틴, 글루코사민과 같이 먹어야 하나",
+   "angle": "병용 근거·순도 문제·유럽 처방 지위"
+  },
+  {
+   "slug": "boswellia-arthritis",
+   "cat": "joint",
+   "corner": "factcheck",
+   "title": "보스웰리아, 소염제 대신 쓸 수 있을까",
+   "angle": "AKBA 기전·염증 지표·NSAID 비교"
+  },
+  {
+   "slug": "calcium-supplement-absorption",
+   "cat": "joint",
+   "corner": "smartguide",
+   "title": "칼슘제, 어떤 형태를 언제 먹어야 흡수될까",
+   "angle": "탄산 vs 구연산·분할복용·철분 간격"
+  },
+  {
+   "slug": "vitamin-k2-bone",
+   "cat": "joint",
+   "corner": "factcheck",
+   "title": "비타민K2가 칼슘을 뼈로 보낸다는 말",
+   "angle": "MK-4/MK-7 차이·오스테오칼신·와파린 금기"
+  },
+  {
+   "slug": "vitamin-d-deficiency-korea",
+   "cat": "joint",
+   "corner": "smartguide",
+   "title": "한국인 비타민D 부족, 얼마나 먹어야 하나",
+   "angle": "혈중농도 기준·일광·상한섭취량"
+  },
+  {
+   "slug": "collagen-joint-vs-skin",
+   "cat": "joint",
+   "corner": "factcheck",
+   "title": "관절용 콜라겐과 피부용 콜라겐은 다른가",
+   "angle": "UC-II vs 저분자 펩타이드·타입 차이"
+  },
+  {
+   "slug": "osteoporosis-supplement",
+   "cat": "joint",
+   "corner": "smartguide",
+   "title": "골다공증, 영양제로 버틸 수 있을까",
+   "angle": "칼슘·비타민D 한계·약물치료 필요 시점"
+  },
+  {
+   "slug": "joint-supplement-compare",
+   "cat": "joint",
+   "corner": "smartguide",
+   "title": "무릎이 시큰할 때 뭐부터 볼까",
+   "angle": "MSM·글루코사민·보스웰리아 목적별"
+  },
+  {
+   "slug": "hyaluronic-acid-oral",
+   "cat": "joint",
+   "corner": "factcheck",
+   "title": "먹는 히알루론산, 관절과 피부에 도달할까",
+   "angle": "분자량·경구 흡수 논쟁·주사 비교"
+  },
+  {
+   "slug": "muscle-cramp-magnesium",
+   "cat": "joint",
+   "corner": "factcheck",
+   "title": "다리에 쥐가 날 때 마그네슘이 답일까",
+   "angle": "쥐 원인 다양성·근거 수준·형태별"
+  },
+  {
+   "slug": "milk-thistle-liver",
+   "cat": "vital",
+   "corner": "factcheck",
+   "title": "밀크씨슬, 간 수치를 정말 낮출까",
+   "angle": "실리마린 기전·임상 결과·음주 면죄부 아님"
+  },
+  {
+   "slug": "vitamin-b-complex-fatigue",
+   "cat": "vital",
+   "corner": "smartguide",
+   "title": "비타민B군, 피로에 효과 보는 사람과 아닌 사람",
+   "angle": "결핍 여부가 관건·활성형 논쟁·소변색"
+  },
+  {
+   "slug": "coq10-energy",
+   "cat": "vital",
+   "corner": "factcheck",
+   "title": "코엔자임Q10, 스타틴 복용자에게 필요할까",
+   "angle": "미토콘드리아·스타틴 근육통·유비퀴놀 차이"
+  },
+  {
+   "slug": "arginine-citrulline",
+   "cat": "vital",
+   "corner": "factcheck",
+   "title": "아르기닌·시트룰린, 정말 힘이 나게 할까",
+   "angle": "산화질소 기전·운동 수행·혈압"
+  },
+  {
+   "slug": "red-ginseng-ginsenoside",
+   "cat": "vital",
+   "corner": "factcheck",
+   "title": "홍삼, 진세노사이드 함량이 전부일까",
+   "angle": "Rg3·Rb1 차이·흡수 개인차·기능성 인정 범위"
+  },
+  {
+   "slug": "taurine-fatigue",
+   "cat": "vital",
+   "corner": "factcheck",
+   "title": "타우린 드링크, 피로에 근거가 있나",
+   "angle": "에너지드링크 조합·카페인 동반 문제"
+  },
+  {
+   "slug": "nmn-nad-antiaging",
+   "cat": "vital",
+   "corner": "trendlab",
+   "title": "NMN·NAD+ 항노화, 어디까지 왔나",
+   "angle": "동물 vs 인체 근거 격차·국내 규제 지위"
+  },
+  {
+   "slug": "maca-energy-libido",
+   "cat": "vital",
+   "corner": "factcheck",
+   "title": "마카, 활력에 대한 근거는 얼마나 단단한가",
+   "angle": "소규모 RCT·플라시보·품종 차이"
+  },
+  {
+   "slug": "glutathione-whitening",
+   "cat": "vital",
+   "corner": "factcheck",
+   "title": "먹는 글루타치온, 미백에 도달할까",
+   "angle": "경구 흡수 논쟁·주사 안전성 경고"
+  },
+  {
+   "slug": "vitamin-b12-vegan",
+   "cat": "vital",
+   "corner": "smartguide",
+   "title": "채식하면 비타민B12는 어떻게 채우나",
+   "angle": "동물성 편중 영양소·결핍 신경증상·검사"
+  },
+  {
+   "slug": "adrenal-fatigue-myth",
+   "cat": "vital",
+   "corner": "factcheck",
+   "title": "부신피로증후군이라는 진단은 존재하는가",
+   "angle": "학계 미인정·마케팅 용어·진짜 감별질환"
+  },
+  {
+   "slug": "chronic-fatigue-supplement",
+   "cat": "vital",
+   "corner": "smartguide",
+   "title": "만성피로에 영양제를 쌓기 전에 볼 것",
+   "angle": "빈혈·갑상선·수면 우선 감별·검사 안내"
+  },
+  {
+   "slug": "zinc-immune",
+   "cat": "shield",
+   "corner": "factcheck",
+   "title": "아연, 감기를 짧게 만든다는 말의 조건",
+   "angle": "로젠지 형태·복용 타이밍·구리 균형"
+  },
+  {
+   "slug": "probiotics-strain-guide",
+   "cat": "shield",
+   "corner": "smartguide",
+   "title": "유산균, 균주 이름을 봐야 하는 이유",
+   "angle": "균주 특이성·CFU 함정·목적별 균주"
+  },
+  {
+   "slug": "prebiotics-synbiotics",
+   "cat": "shield",
+   "corner": "smartguide",
+   "title": "프리바이오틱스·신바이오틱스, 뭐가 다른가",
+   "angle": "식이섬유 종류·가스 부작용·병용"
+  },
+  {
+   "slug": "postbiotics-trend",
+   "cat": "shield",
+   "corner": "trendlab",
+   "title": "포스트바이오틱스(사균체), 새 유행의 실체",
+   "angle": "사균 vs 생균·근거 수준·보관 장점"
+  },
+  {
+   "slug": "propolis-throat",
+   "cat": "shield",
+   "corner": "factcheck",
+   "title": "프로폴리스, 목에 정말 도움이 될까",
+   "angle": "플라보노이드 규격·알레르기 주의"
+  },
+  {
+   "slug": "beta-glucan-immune",
+   "cat": "shield",
+   "corner": "factcheck",
+   "title": "베타글루칸, 면역력을 올린다는 근거",
+   "angle": "효모/버섯 유래 차이·면역 과활성 우려"
+  },
+  {
+   "slug": "elderberry-cold",
+   "cat": "shield",
+   "corner": "factcheck",
+   "title": "엘더베리, 독감에 효과 있다는 연구의 크기",
+   "angle": "소규모 RCT·사이토카인 논쟁"
+  },
+  {
+   "slug": "nac-antioxidant",
+   "cat": "shield",
+   "corner": "factcheck",
+   "title": "NAC(N아세틸시스테인), 만능 항산화제라는 평판",
+   "angle": "기전·해독 사용례·국내 지위·근거 한계"
+  },
+  {
+   "slug": "gut-leaky-gut-claim",
+   "cat": "shield",
+   "corner": "factcheck",
+   "title": "장누수증후군, 의학적으로 인정된 병명인가",
+   "angle": "학계 지위·장투과성 연구·마케팅 경계"
+  },
+  {
+   "slug": "kids-immune-supplement",
+   "cat": "shield",
+   "corner": "smartguide",
+   "title": "아이 면역 영양제, 꼭 필요한 나이가 있을까",
+   "angle": "성장기 결핍·시럽 당분·소아과 상담"
+  },
+  {
+   "slug": "antibiotics-probiotic-timing",
+   "cat": "shield",
+   "corner": "smartguide",
+   "title": "항생제 먹을 때 유산균은 언제 먹나",
+   "angle": "복용 간격·항생제 관련 설사 근거"
+  },
+  {
+   "slug": "immune-supplement-overhype",
+   "cat": "shield",
+   "corner": "factcheck",
+   "title": "면역력 강화라는 표현은 어디까지 허용되나",
+   "angle": "식약처 표시 규정·과대광고 유형"
+  },
+  {
+   "slug": "nattokinase-blood-clot",
+   "cat": "flow",
+   "corner": "factcheck",
+   "title": "나토키나제, 혈전을 녹인다는 주장의 근거",
+   "angle": "시험관 vs 인체·항응고제 병용 위험"
+  },
+  {
+   "slug": "red-yeast-rice-cholesterol",
+   "cat": "flow",
+   "corner": "factcheck",
+   "title": "홍국, 사실상 스타틴이라는 말이 맞나",
+   "angle": "모나콜린K=로바스타틴·시트리닌·근육 부작용"
+  },
+  {
+   "slug": "policosanol-hdl",
+   "cat": "flow",
+   "corner": "factcheck",
+   "title": "폴리코사놀, HDL을 올린다는 연구의 출처",
+   "angle": "쿠바 연구 편향 논쟁·재현성"
+  },
+  {
+   "slug": "ginkgo-circulation",
+   "cat": "flow",
+   "corner": "factcheck",
+   "title": "은행잎 추출물, 기억력과 혈액순환에 듣나",
+   "angle": "GEM 임상·출혈 위험·수술 전 중단"
+  },
+  {
+   "slug": "omega3-form-rtg-ee",
+   "cat": "flow",
+   "corner": "smartguide",
+   "title": "오메가3 rTG·TG·EE, 형태가 정말 중요할까",
+   "angle": "형태별 흡수·산패도(TOTOX)·중금속"
+  },
+  {
+   "slug": "blood-pressure-supplement",
+   "cat": "flow",
+   "corner": "smartguide",
+   "title": "혈압 영양제, 약을 대신할 수 있을까",
+   "angle": "근거 있는 성분·약물 대체 금지 경고"
+  },
+  {
+   "slug": "homocysteine-b-vitamins",
+   "cat": "flow",
+   "corner": "factcheck",
+   "title": "호모시스테인 낮추면 심혈관이 좋아질까",
+   "angle": "대리지표 함정·대규모 임상 결과"
+  },
+  {
+   "slug": "coq10-heart-failure",
+   "cat": "flow",
+   "corner": "factcheck",
+   "title": "코엔자임Q10과 심부전, 임상은 뭐라 하나",
+   "angle": "Q-SYMBIO 임상·보조요법 위치"
+  },
+  {
+   "slug": "circulation-supplement-warning",
+   "cat": "flow",
+   "corner": "smartguide",
+   "title": "혈행 개선 영양제와 수술·시술 전 주의",
+   "angle": "출혈 위험 성분·중단 시점·의료진 고지"
+  },
+  {
+   "slug": "varicose-vein-supplement",
+   "cat": "flow",
+   "corner": "factcheck",
+   "title": "하지정맥류에 먹는 약이 도움이 될까",
+   "angle": "정맥활성약물 근거·압박스타킹 우선"
+  },
+  {
+   "slug": "saw-palmetto-prostate",
+   "cat": "care",
+   "corner": "factcheck",
+   "title": "쏘팔메토, 전립선 증상에 근거가 있나",
+   "angle": "대규모 RCT 음성 결과·약물치료 비교"
+  },
+  {
+   "slug": "cranberry-uti",
+   "cat": "care",
+   "corner": "factcheck",
+   "title": "크랜베리, 방광염을 정말 예방할까",
+   "angle": "PAC 함량·Cochrane 결론·주스 vs 캡슐"
+  },
+  {
+   "slug": "folate-pregnancy",
+   "cat": "care",
+   "corner": "smartguide",
+   "title": "엽산, 언제부터 얼마나 먹어야 하나",
+   "angle": "신경관 결손 예방·임신 전 시작·MTHFR 논쟁"
+  },
+  {
+   "slug": "iron-supplement-anemia",
+   "cat": "care",
+   "corner": "smartguide",
+   "title": "철분제, 속이 불편하지 않게 먹는 법",
+   "angle": "형태별 부작용·격일 복용 근거·흡수 조합"
+  },
+  {
+   "slug": "soy-isoflavone-menopause",
+   "cat": "care",
+   "corner": "factcheck",
+   "title": "대두이소플라본, 갱년기 증상에 듣나",
+   "angle": "에쿠올 대사 개인차·유방암 우려 검증"
+  },
+  {
+   "slug": "evening-primrose-gla",
+   "cat": "care",
+   "corner": "factcheck",
+   "title": "감마리놀렌산, 여성 건강에 대한 근거",
+   "angle": "달맞이꽃종자유·PMS·아토피 연구"
+  },
+  {
+   "slug": "inner-beauty-skin",
+   "cat": "care",
+   "corner": "factcheck",
+   "title": "먹는 화장품이라는 이너뷰티, 어디까지 사실인가",
+   "angle": "피부 기능성 인정 범위·광고 표현"
+  },
+  {
+   "slug": "biotin-hair-nail",
+   "cat": "care",
+   "corner": "factcheck",
+   "title": "비오틴, 머리카락과 손톱에 효과 있을까",
+   "angle": "결핍 아니면 효과 제한·검사 수치 교란"
+  },
+  {
+   "slug": "male-fertility-supplement",
+   "cat": "care",
+   "corner": "factcheck",
+   "title": "남성 정자 건강 영양제, 근거는 어디까지",
+   "angle": "아연·엽산·항산화 임상·생활습관 우선"
+  },
+  {
+   "slug": "female-pms-supplement",
+   "cat": "care",
+   "corner": "smartguide",
+   "title": "생리 전 증후군에 도움 되는 영양소",
+   "angle": "칼슘·B6 근거·과용량 신경병증 경고"
+  },
+  {
+   "slug": "pregnancy-supplement-guide",
+   "cat": "care",
+   "corner": "smartguide",
+   "title": "임신 중 영양제, 무엇을 빼고 무엇을 챙길까",
+   "angle": "비타민A 금기·철분·요오드·의료진 상담"
+  },
+  {
+   "slug": "senior-supplement-guide",
+   "cat": "care",
+   "corner": "smartguide",
+   "title": "부모님 영양제, 약과 겹치지 않게 고르기",
+   "angle": "다약제 복용·상호작용·신장 기능"
+  },
+  {
+   "slug": "multivitamin-worth-it",
+   "cat": "shield",
+   "corner": "factcheck",
+   "title": "종합비타민, 먹을 가치가 있다는 근거는",
+   "angle": "대규모 코호트 결과·식사 대체 불가"
+  },
+  {
+   "slug": "supplement-stacking-limit",
+   "cat": "shield",
+   "corner": "smartguide",
+   "title": "영양제 몇 개까지 같이 먹어도 될까",
+   "angle": "중복 성분·상한 초과·조합 원칙"
+  },
+  {
+   "slug": "supplement-timing-guide",
+   "cat": "shield",
+   "corner": "smartguide",
+   "title": "영양제 복용 시간, 아침 저녁 식후 정리",
+   "angle": "지용성·수용성·흡수 방해 조합"
+  },
+  {
+   "slug": "supplement-drug-interaction",
+   "cat": "shield",
+   "corner": "smartguide",
+   "title": "먹는 약이 있다면 반드시 확인할 상호작용",
+   "angle": "와파린·갑상선약·항생제 등 대표 사례"
+  },
+  {
+   "slug": "supplement-dosage-form",
+   "cat": "shield",
+   "corner": "smartguide",
+   "title": "정제·캡슐·액상·젤리, 제형이 흡수를 바꾸나",
+   "angle": "붕해·부형제·젤리 당분·복용 편의"
+  },
+  {
+   "slug": "supplement-label-reading",
+   "cat": "shield",
+   "corner": "smartguide",
+   "title": "영양제 라벨 읽는 법, 원료량과 함량의 차이",
+   "angle": "추출물 표기 함정·부형제·비율 표시"
+  },
+  {
+   "slug": "functional-vs-general-food",
+   "cat": "shield",
+   "corner": "factcheck",
+   "title": "건강기능식품과 건강식품, 마크 하나 차이",
+   "angle": "인증 마크·표시 규정·일반식품 광고 위반"
+  },
+  {
+   "slug": "individual-approval-ingredient",
+   "cat": "shield",
+   "corner": "smartguide",
+   "title": "개별인정형 원료가 더 좋다는 말은 사실일까",
+   "angle": "고시형 vs 개별인정형·독점기간"
+  },
+  {
+   "slug": "overseas-direct-supplement",
+   "cat": "shield",
+   "corner": "smartguide",
+   "title": "해외직구 영양제, 통관과 안전의 경계",
+   "angle": "반입 금지 성분·용량 차이·이상사례"
+  },
+  {
+   "slug": "supplement-side-effect-report",
+   "cat": "shield",
+   "corner": "smartguide",
+   "title": "영양제 먹고 이상하면 어디에 신고하나",
+   "angle": "부작용 신고 체계·중단 판단·진료"
+  },
+  {
+   "slug": "supplement-clinical-reading",
+   "cat": "shield",
+   "corner": "smartguide",
+   "title": "영양제 광고 속 연구, 믿을지 판단하는 법",
+   "angle": "RCT·메타분석 위계·상대위험 함정·후원 편향"
+  },
+  {
+   "slug": "supplement-vs-food",
+   "cat": "shield",
+   "corner": "factcheck",
+   "title": "음식으로 먹는 것과 영양제로 먹는 것의 차이",
+   "angle": "식품 매트릭스·생체이용률·과잉 위험"
+  },
+  {
+   "slug": "hmb-sarcopenia",
+   "cat": "joint",
+   "corner": "factcheck",
+   "title": "HMB, 근감소증 노인에게 근거가 있나",
+   "angle": "근단백 분해 억제·고령자 임상·운동 병행"
+  },
+  {
+   "slug": "creatine-safety",
+   "cat": "vital",
+   "corner": "factcheck",
+   "title": "크레아틴, 안전성과 효과의 근거",
+   "angle": "신장 우려 검증·로딩 필요성"
+  },
+  {
+   "slug": "bcaa-eaa",
+   "cat": "vital",
+   "corner": "factcheck",
+   "title": "BCAA와 EAA, 돈값을 하는 쪽은",
+   "angle": "필수아미노산 균형·단백질 충분 시 무용"
+  },
+  {
+   "slug": "carnitine-fat-burn",
+   "cat": "vital",
+   "corner": "factcheck",
+   "title": "L카르니틴, 지방을 태운다는 주장의 실제",
+   "angle": "지방산 운반 기전 vs 체중 감량 결과"
+  },
+  {
+   "slug": "garcinia-weight",
+   "cat": "vital",
+   "corner": "factcheck",
+   "title": "가르시니아, 효과와 간 손상 보고 사이",
+   "angle": "HCA 기전·이상사례·중단 기준"
+  },
+  {
+   "slug": "cla-body-fat",
+   "cat": "vital",
+   "corner": "factcheck",
+   "title": "CLA, 체지방 감소 광고의 근거 수준",
+   "angle": "메타분석 효과크기·인슐린 저항 우려"
+  },
+  {
+   "slug": "lactoferrin-trend",
+   "cat": "shield",
+   "corner": "trendlab",
+   "title": "락토페린, 왜 갑자기 유행했나",
+   "angle": "면역·철 결합 기전·근거와 마케팅 거리"
+  },
+  {
+   "slug": "spirulina-chlorella",
+   "cat": "shield",
+   "corner": "factcheck",
+   "title": "스피루리나·클로렐라, 슈퍼푸드라는 이름값",
+   "angle": "영양 밀도·중금속 오염 이슈"
+  },
+  {
+   "slug": "apple-cider-vinegar",
+   "cat": "vital",
+   "corner": "factcheck",
+   "title": "사과식초 다이어트, 혈당과 체중의 근거",
+   "angle": "소규모 연구·치아 부식·역류 주의"
+  },
+  {
+   "slug": "turmeric-curcumin",
+   "cat": "joint",
+   "corner": "factcheck",
+   "title": "커큐민, 흡수율이 낮다는 문제는 해결됐나",
+   "angle": "피페린·나노화 기술·간 이상사례 보고"
+  },
+  {
+   "slug": "berberine-blood-sugar",
+   "cat": "flow",
+   "corner": "factcheck",
+   "title": "베르베린, 천연 메트포르민이라는 별명의 위험",
+   "angle": "혈당 근거·약물 상호작용·자가치료 금지"
+  },
+  {
+   "slug": "melatonin-vs-sleep-supplement",
+   "cat": "shield",
+   "corner": "smartguide",
+   "title": "수면 영양제, 국내에서 살 수 있는 것과 없는 것",
+   "angle": "멜라토닌 전문의약품·테아닌·감태 등 대체"
+  },
+  {
+   "slug": "vitamin-e-selenium",
+   "cat": "shield",
+   "corner": "factcheck",
+   "title": "비타민E와 셀레늄, 항산화의 역설",
+   "angle": "SELECT 임상·고용량 위험·상한"
+  },
+  {
+   "slug": "iodine-thyroid",
+   "cat": "care",
+   "corner": "smartguide",
+   "title": "요오드, 한국인에게 부족일까 과잉일까",
+   "angle": "해조류 섭취량·갑상선 질환자 주의"
+  },
+  {
+   "slug": "kids-growth-supplement",
+   "cat": "care",
+   "corner": "factcheck",
+   "title": "키 크는 영양제, 성장기 광고의 실제",
+   "angle": "성장호르몬 오해·아연/칼슘 역할·성장클리닉"
+  },
+  {
+   "slug": "student-brain-supplement",
+   "cat": "vital",
+   "corner": "factcheck",
+   "title": "수험생 두뇌 영양제, 집중력에 근거가 있나",
+   "angle": "오메가3·포스파티딜세린 근거·수면 우선"
+  },
+  {
+   "slug": "pet-owner-supplement-caution",
+   "cat": "shield",
+   "corner": "smartguide",
+   "title": "사람 영양제를 반려동물에게 주면 안 되는 이유",
+   "angle": "종별 대사 차이·중독 성분·수의사 상담"
+  },
+  {
+   "slug": "supplement-subscription-trend",
+   "cat": "shield",
+   "corner": "trendlab",
+   "title": "맞춤형 영양제 구독, 무엇을 근거로 추천하나",
+   "angle": "설문 기반 한계·유전자검사 마케팅·규제"
+  }
+ ]
+}
