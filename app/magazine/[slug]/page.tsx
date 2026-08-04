@@ -8,6 +8,9 @@ import SleepHeader from "@/components/magazine/SleepHeader";
 import { sleepCategoryOf } from "@/lib/magazine/sleepCategories";
 import MediaFooter from "@/components/MediaFooter";
 import SleepFooter from "@/components/magazine/SleepFooter";
+import PillHeader from "@/components/magazine/PillHeader";
+import PillFooter from "@/components/magazine/PillFooter";
+import { pillCategoryOf } from "@/lib/magazine/pillCategories";
 import { FieldPill } from "@/components/magazine/Chrome";
 
 export const revalidate = 3600; // 1시간 캐시 — 매거진 아티클은 실시간 불필요
@@ -36,8 +39,14 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   if (!a) notFound();
   const c = cornerOf(a.corner);
   const isSleep = a.field === "수면·침구"; // 잠자리연구소 소속 글 → 잠자리연구소 정체성으로 렌더
+  const isPill = a.field === "건강기능식품"; // 알약연구소 소속 글
+  const isSub = isSleep || isPill; // 서브 미디어 공통 처리(헤더·푸터·배지·관련글)
   const sleepCat = isSleep ? sleepCategoryOf(a.slug) : undefined; // 잠자리연구소 고유 6분류
-  const accent = isSleep ? (sleepCat?.color ?? "#3f5a54") : c.color; // 강조색: 잠자리는 분류색, 그 외 코너색
+  const pillCat = isPill ? pillCategoryOf(a.slug) : undefined; // 알약연구소 고유 6분류
+  const subCat = sleepCat ?? pillCat;
+  const subHome = isPill ? "https://pill.todaydeals.co.kr" : "https://goodsleep.todaydeals.co.kr";
+  const subName = isPill ? "알약연구소" : "잠자리연구소";
+  const accent = isSub ? (subCat?.color ?? "#3f5a54") : c.color; // 강조색: 서브는 분류색, 그 외 코너색
   const related = await fetchRelatedMagazine(a, 4);
 
   // 대표 이미지를 본문 소제목 사이에 배치 — 짧은 글 1장, 긴 글(본문 2,800자+) 2장
@@ -109,7 +118,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
 
   return (
     <>
-      {isSleep ? <SleepHeader /> : <Header />}
+      {isSleep ? <SleepHeader /> : isPill ? <PillHeader /> : <Header />}
       <div className="mz-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
@@ -118,19 +127,19 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
         {/* ── 타이틀 블록 (풀폭) ── */}
         <div style={{ padding: "50px 0 0" }}>
           <div style={{ fontFamily: mono, fontSize: 11.5, letterSpacing: ".5px", color: "#9a9286", display: "flex", alignItems: "center", gap: 8 }}>
-            {isSleep ? (
-              <a href="https://goodsleep.todaydeals.co.kr" style={{ color: "#9a9286", textDecoration: "none" }}>잠자리연구소</a>
+            {isSub ? (
+              <a href={subHome} style={{ color: "#9a9286", textDecoration: "none" }}>{subName}</a>
             ) : (
               <Link href="/" className="ul-sweep" style={{ color: "#9a9286", textDecoration: "none" }}>매거진</Link>
             )}
             <span style={{ opacity: 0.5 }}>›</span>
-            {isSleep ? (
-              <a href={`https://goodsleep.todaydeals.co.kr/?cat=${sleepCat?.key ?? ""}`} style={{ color: "#3f5a54", fontWeight: 600, textDecoration: "none" }}>{sleepCat?.label ?? "수면"}</a>
+            {isSub ? (
+              <a href={`${subHome}/?cat=${subCat?.key ?? ""}`} style={{ color: subCat?.color ?? "#3f5a54", fontWeight: 600, textDecoration: "none" }}>{subCat?.label ?? (isPill ? "영양" : "수면")}</a>
             ) : (
               <Link href={`/?corner=${a.corner}`} className="ul-sweep" style={{ color: c.color, fontWeight: 600, textDecoration: "none" }}>{c.name}</Link>
             )}
           </div>
-          {!isSleep && (
+          {!isSub && (
             <div style={{ display: "flex", alignItems: "center", gap: 9, marginTop: 18, flexWrap: "wrap" }}>
               <span style={{ display: "flex", alignItems: "center", gap: 7 }}>
                 <span style={{ width: 8, height: 8, borderRadius: 9999, background: c.color }} />
@@ -269,7 +278,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
             </div>
             <div className="mz-rel-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 14 }}>
               {related.map((r) => {
-                const rsc = isSleep ? sleepCategoryOf(r.slug) : undefined;
+                const rsc = isSleep ? sleepCategoryOf(r.slug) : isPill ? pillCategoryOf(r.slug) : undefined;
                 const rc = cornerOf(r.corner);
                 const rColor = rsc?.color ?? rc.color;
                 return (
@@ -277,7 +286,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
                     <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
                       <span style={{ width: 8, height: 8, borderRadius: 9999, background: rColor, flex: "none" }} />
                       <span style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: ".5px", color: rColor }}>{rsc?.label ?? rc.name}</span>
-                      {!isSleep && r.field && <span style={{ fontSize: 11, color: "#8a857c" }}>· {r.field}</span>}
+                      {!isSub && r.field && <span style={{ fontSize: 11, color: "#8a857c" }}>· {r.field}</span>}
                     </span>
                     <span style={{ display: "block", fontFamily: serif, fontWeight: 600, fontSize: 18, letterSpacing: "-0.5px", lineHeight: 1.4, color: "#16140f", margin: "10px 0 0" }}>{r.title}</span>
                     {r.subtitle && <span style={{ display: "block", fontSize: 13, lineHeight: 1.6, color: "#7a756a", margin: "7px 0 0" }}>{r.subtitle}</span>}
@@ -290,7 +299,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
       </div>
 
       </div>
-      {isSleep ? <SleepFooter /> : <MediaFooter />}
+      {isSleep ? <SleepFooter /> : isPill ? <PillFooter /> : <MediaFooter />}
     </>
   );
 }

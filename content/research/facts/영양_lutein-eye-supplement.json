@@ -1,0 +1,355 @@
+{
+  "topic": "루테인(루테인+제아잔틴) 눈 건강 보충제의 임상 근거·효과·안전성·국내 규제",
+  "brand": "영양",
+  "article": "lutein-eye-supplement",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "fat-soluble-vitamin-stability"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "lutein-zeaxanthin-basic-function-macular-pigment",
+      "claim": "루테인과 제아잔틴은 망막 황반부의 색소(macular pigment)를 형성하며, 청색광의 필터 역할과 항산화 활성으로 빛으로 인한 활성산소를 흡수하여 망막 광수용체를 보호한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/NEI 안구 건강 정보, 의학 문헌",
+      "source_url": "https://www.nei.nih.gov/eye-health-information/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "루테인/제아잔틴",
+        "category": "영양제",
+        "line": "눈 건강 보충제",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "areds2-trial-population-advanced-amd",
+      "claim": "AREDS2 임상시험은 50~85세의 이미 황반변성(AMD) 진행 위험군을 대상으로 했으며, 양쪽 눈에 큰 드루젠(large drusen)이 있거나 한쪽 눈에 진행된 AMD를 가진 참가자 4,203명을 등록했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JAMA 및 PubMed - AREDS2 임상시험 원문",
+      "source_url": "https://jamanetwork.com/journals/jama/fullarticle/1684847",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "AREDS2",
+        "category": "임상시험",
+        "line": "대상군",
+        "years": "2006-2008 등록, 중앙 5년 추적",
+        "region": "글로벌"
+      },
+      "caution": "★중요: AREDS2는 '건강한 일반인 예방'이 아니라 '이미 AMD 진행 위험이 높은 사람'의 진행 지연을 본 시험이다.",
+      "cautionSource": "https://jamanetwork.com/journals/jama/fullarticle/1684847"
+    },
+    {
+      "id": "areds2-lutein-zeaxanthin-dose-protocol",
+      "claim": "AREDS2에서 사용된 루테인+제아잔틴 용량은 일일 루테인 10mg + 제아잔틴 2mg이었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JAMA - AREDS2 임상시험 프로토콜",
+      "source_url": "https://jamanetwork.com/journals/jama/fullarticle/1684847",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "AREDS2",
+        "category": "임상시험",
+        "line": "투여량",
+        "years": "2006-2008",
+        "region": "글로벌"
+      },
+      "caution": "이 용량이 일반 보충제의 권장 용량과 일치하지 않음을 주의할 것. 많은 제품이 10~20mg 단독으로 표기한다.",
+      "cautionSource": "제품 표기 대조"
+    },
+    {
+      "id": "areds2-primary-outcome-no-benefit-beyond-areds",
+      "claim": "AREDS2 주 분석에서 루테인+제아잔틴을 기존 AREDS 포뮬라에 추가해도 진행된 AMD로의 진행 위험이 통계적으로 유의미하게 감소하지 않았다(HR 0.90, P=0.12).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JAMA Ophthalmology - AREDS2 임상시험 결과",
+      "source_url": "https://jamanetwork.com/journals/jama/fullarticle/1684847",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "AREDS2",
+        "category": "임상시험",
+        "line": "1차 결과",
+        "years": "중앙 5년 추적",
+        "region": "글로벌"
+      },
+      "caution": "★'예방 효과 없음'이 아니라 '기존 AREDS 외에 추가 효과 없음'이다. AREDS2는 이미 보충제를 복용하는 사람에 더 넣었을 때를 본 것이다.",
+      "cautionSource": "https://jamanetwork.com/journals/jama/fullarticle/1684847"
+    },
+    {
+      "id": "areds2-subgroup-low-dietary-lutein",
+      "claim": "AREDS2 분석에서 식이 루테인 섭취가 가장 낮은 부분군에서만 루테인+제아잔틴이 AMD 진행 보호 효과를 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JAMA - AREDS2 탐색적 부분군 분석",
+      "source_url": "https://jamanetwork.com/journals/jama/fullarticle/1684847",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "AREDS2",
+        "category": "임상시험",
+        "line": "부분군 분석",
+        "years": "중앙 5년 추적",
+        "region": "글로벌"
+      },
+      "caution": "이는 가설 생성적 결과이며, 기존 루테인 섭취량이 충분한 사람에게는 보충제가 이득이 없을 수 있음을 시사한다.",
+      "cautionSource": "https://pubmed.ncbi.nlm.nih.gov/23644932/"
+    },
+    {
+      "id": "areds2-betacarotene-risk-vs-lutein",
+      "claim": "AREDS2에서 기존 AREDS 포뮬라의 베타카로틴은 폐암 발생 위험을 약 2배 증가시켰으나, 루테인+제아잔틴은 그러한 발암 위험이 없었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AREDS2 임상시험 결과 분석",
+      "source_url": "https://jamanetwork.com/journals/jama/fullarticle/1684847",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "AREDS2",
+        "category": "임상시험",
+        "line": "안전성 비교",
+        "years": "중앙 5년 추적",
+        "region": "글로벌"
+      },
+      "caution": "흡연자 또는 흡연 이력이 있는 사람은 베타카로틴 함유 제품을 특히 피해야 한다.",
+      "cautionSource": "https://jamanetwork.com/journals/jama/fullarticle/1684847"
+    },
+    {
+      "id": "korea-food-safety-lutein-function-claim",
+      "claim": "한국 식품의약품안전처는 루테인의 건강기능식품 기능성 표현을 '노화로 인해 감소될 수 있는 황반부 색소 밀도를 유지하여 눈 건강에 도움을 줄 수 있음'으로 인정한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 건강기능식품 기능성 고시",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_grp=MENU_NEW01&menu_no=2660&bbs_no=bbs987",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "루테인",
+        "category": "규제",
+        "line": "기능성 표현",
+        "years": "2026 현행",
+        "region": "KR"
+      },
+      "caution": "'눈 피로 개선' 또는 '시력 향상' 같은 다른 표현은 허용되지 않는다.",
+      "cautionSource": "식약처 건강기능식품 고시"
+    },
+    {
+      "id": "korea-daily-intake-lutein-10-20mg",
+      "claim": "한국 식약처가 인정하는 루테인의 일일 섭취량 기준은 10~20mg(허용오차 적용 시 8~24mg)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 건강기능식품 기능성 원료 기준·규격",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=2859",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "루테인",
+        "category": "규제",
+        "line": "일일섭취량",
+        "years": "2026 현행",
+        "region": "KR"
+      },
+      "caution": "제품에 따라 루테인 단독 또는 루테인+제아잔틴 합 12mg으로 표기되는 경우도 있으므로 라벨을 반드시 확인할 것.",
+      "cautionSource": "식약처 고시"
+    },
+    {
+      "id": "lutein-ester-vs-freeform-bioavailability",
+      "claim": "루테인 에스테르형(esterified)과 유리형(free form)의 생체이용성(흡수)은 비슷하며, 형태보다 포뮬레이션 매트릭스(오일 캐리어, 비드렛 타입, 소프트젤 조성)가 흡수에 더 큰 영향을 미친다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CRN(Council for Responsible Nutrition) 루테인/제아잔틴 검토, NIH 생체이용성 연구",
+      "source_url": "https://www.crnusa.org/sites/default/files/CRNVMS4-Lutein%20Zeaxanthin%20Meso_30Sept2025.pdf",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "루테인",
+        "category": "영양제",
+        "line": "형태·흡수",
+        "years": "2024-2025 현행 문헌",
+        "region": "글로벌"
+      },
+      "caution": "유리형이 화학적·생물학적 악화에 더 취약하므로 보관 안정성은 에스테르형이 더 우수할 수 있다.",
+      "cautionSource": "CRN 루테인/제아잔틴 모노그래프"
+    },
+    {
+      "id": "lutein-fat-soluble-with-meals",
+      "claim": "루테인은 지용성 카로테노이드이므로 장 내 흡수를 위해 식이 지방과 함께 복용해야 최적의 흡수가 이루어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CRN, 의료 문헌",
+      "source_url": "https://www.crnusa.org/sites/default/files/CRNVMS4-Lutein%20Zeaxanthin%20Meso_30Sept2025.pdf",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "루테인",
+        "category": "영양제",
+        "line": "흡수·식후 복용",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "공복에 복용하면 흡수가 크게 저하될 수 있다. 반드시 끼니와 함께 복용할 것.",
+      "cautionSource": "CRN 루테인/제아잔틴 모노그래프"
+    },
+    {
+      "id": "lutein-recommended-dose-20mg-daily-safe",
+      "claim": "루테인의 안전한 일일 권장 용량은 20mg/day까지이며, 이 용량까지 임상적으로 중요한 부작용이 보고되지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CRN, 의료 문헌",
+      "source_url": "https://www.crnusa.org/sites/default/files/CRNVMS4-Lutein%20Zeaxanthin%20Meso_30Sept2025.pdf",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "루테인",
+        "category": "안전성",
+        "line": "권장 용량",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "카로테노이드는 천연 식품에도 존재하며 알려진 독성 한계가 없다.",
+      "cautionSource": "CRN 루테인/제아잔틴 모노그래프"
+    },
+    {
+      "id": "lutein-carotenodermia-excess-skin-yellowing",
+      "claim": "루테인을 과다하게 또는 장기간 섭취하면 혈중 루테인 수치가 높아져 황피증(carotenodermia)이라 불리는 황색 피부 변색이 나타날 수 있으나, 혈중 루테인이 감소하면 원래 색으로 돌아온다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "의료 정보, 건강 문헌",
+      "source_url": "https://www.apollohospitals.com/ko/medicines/lutein",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "루테인",
+        "category": "안전성",
+        "line": "부작용",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "황피증은 심각한 독성이 아니며 가역적이지만, 권장량 초과를 피해야 한다.",
+      "cautionSource": "https://www.apollohospitals.com/ko/medicines/lutein"
+    },
+    {
+      "id": "lutein-longterm-overdose-lung-cancer-concern",
+      "claim": "합성 루테인을 장기간 과다복용할 경우, 포함된 카로테노이드 성분 자체가 폐암 발병 위험을 증가시킬 수 있다는 보고가 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "의료 문헌, 한국 보도 기사",
+      "source_url": "https://www.econovill.com/news/articleView.html?idxno=305418",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "루테인",
+        "category": "안전성",
+        "line": "장기 과다 부작용",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "★이것은 매우 드문 보고이며 AREDS2에서는 루테인 관련 폐암 위험이 없었다. 다만 흡연자나 흡연 이력이 있는 경우 주의가 필요하다.",
+      "cautionSource": "https://jamanetwork.com/journals/jama/fullarticle/1684847"
+    },
+    {
+      "id": "lutein-orlistat-interaction-fat-blocker",
+      "claim": "올리스타트(orlistat)와 같은 지방 차단제는 루테인의 장내 흡수를 감소시킬 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 문헌, 약물 상호작용 정보",
+      "source_url": "https://www.apollohospitals.com/ko/medicines/lutein",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "루테인",
+        "category": "안전성",
+        "line": "약물 상호작용",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "지방 차단제를 복용 중이라면 의료 전문가와 상담 후 루테인 보충제 복용을 결정해야 한다.",
+      "cautionSource": "https://www.apollohospitals.com/ko/medicines/lutein"
+    },
+    {
+      "id": "lutein-synthetic-vs-natural-deposit-concern",
+      "claim": "합성 루테인을 습관적으로 장기 복용하면 인체에 잔류하여 망막에 결정체를 형성하거나 시야 굴절 현상을 보인 사례가 드물게 보고되었다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "의료 보도, 건강 정보 사이트",
+      "source_url": "https://www.fneyefocus.com/news/articleView.html?idxno=14158",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "루테인",
+        "category": "안전성",
+        "line": "장기 합성 루테인 부작용",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "이런 사례가 '드물다'고 표현되지만, 구체적 임상 증거나 기전이 명확하지 않다. 권장량 내 복용이면 실질적 위험은 낮다.",
+      "cautionSource": "임상 근거 불충분"
+    },
+    {
+      "id": "lutein-dosage-labeling-ester-weight-confusion",
+      "claim": "루테인 제품 라벨에서 에스테르형 루테인의 함량을 표기할 때, 에스테르 원료의 전체 무게로 표기하면 실제 루테인 함량과 차이가 난다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "제품 표기 비교, 보충제 선택 가이드",
+      "source_url": "https://koreabioethics.kr/2026/lutein-selection-guide/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "루테인",
+        "category": "영양제",
+        "line": "표기 투명성",
+        "years": "2026 현행",
+        "region": "KR"
+      },
+      "caution": "구체적 계산 방식(에스테르 분자 무게 차이)은 직접 확인되지 않았으나, 제품마다 표기가 다르므로 구성 성분을 자세히 읽을 필요가 있다.",
+      "cautionSource": "제품 표기 대조 필요"
+    },
+    {
+      "id": "who-consider-lutein-supplement-insufficient-diet",
+      "claim": "루테인 보충제 복용을 고려할 만한 대상은 식이로 충분한 루테인을 섭취하지 못하는 사람, 특히 이미 황반변성 위험이 높은 사람이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AREDS2 결과 해석, 의료 권고",
+      "source_url": "https://www.brightfocus.org/resource/new-study-confirms-the-efficacy-of-areds2-eye-vitamin-supplement-for-slowing-age-related-macular-degeneration/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "루테인",
+        "category": "영양제",
+        "line": "적응증",
+        "years": "2026 현행",
+        "region": "글로벌"
+      },
+      "caution": "일반적인 건강한 성인이 예방 목적으로 복용하는 것의 효과는 증명되지 않았다. 의료 전문가와 상담 후 결정하는 것이 좋다.",
+      "cautionSource": "https://www.brightfocus.org/resource/new-study-confirms-the-efficacy-of-areds2-eye-vitamin-supplement-for-slowing-age-related-macular-degeneration/"
+    },
+    {
+      "id": "dietary-sources-lutein-zeaxanthin-greens-eggs",
+      "claim": "루테인과 제아잔틴은 케일, 시금치, 브로콜리 같은 짙은 녹색 채소와 달걀 노른자 같은 천연 식품에 풍부하게 함유되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 문헌, 영양 정보",
+      "source_url": "https://www.nei.nih.gov/eye-health-information/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "루테인",
+        "category": "영양",
+        "line": "식이 출처",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "식이 루테인은 보충제보다 흡수가 더 효과적일 수 있다. AREDS2에서 이미 충분한 식이 루테인을 섭취하는 사람에게는 보충제가 추가 이득이 없었다.",
+      "cautionSource": "https://jamanetwork.com/journals/jama/fullarticle/1684847"
+    },
+    {
+      "id": "lutein-consultation-amd-symptoms",
+      "claim": "갑작스러운 시력 변화, 중심 시야 왜곡, 직선이 구부러져 보이는 현상(metamorphopsia) 등 황반변성 증상이 있다면 보충제 복용 전에 안과 전문의의 진단을 받아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 가이드라인, 안과 진료 권고",
+      "source_url": "https://www.nei.nih.gov/eye-health-information/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "루테인",
+        "category": "안전성",
+        "line": "자가진단 금지",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "★루테인은 치료제가 아니며, 황반변성 의심 증상은 자가 진단하지 말고 반드시 전문의 진료가 필수다.",
+      "cautionSource": "의료 가이드라인"
+    }
+  ]
+}

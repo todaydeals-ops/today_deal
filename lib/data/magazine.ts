@@ -22,6 +22,10 @@ export interface MagazineArticle {
   createdAt: string;
 }
 
+// 서브 미디어 field — 각자 전용 서브도메인에서만 노출하고 메인 매거진에선 제외(격리).
+// 잠자리연구소=수면·침구(goodsleep), 알약연구소=건강기능식품(pill).
+export const SUB_MEDIA_FIELDS = ["수면·침구", "건강기능식품"];
+
 interface Row {
   id: string;
   slug: string;
@@ -94,8 +98,8 @@ export async function fetchMagazineList(opts?: { corner?: string; field?: string
       .neq("corner", "report")   // 리포트는 별도 데이터레이어(magazine-report.ts) 사용
       .order("created_at", { ascending: false });
     if (opts?.corner) q = q.eq("corner", opts.corner);
-    if (opts?.field) q = q.eq("field", opts.field); // 섹션(잠자리연구소=수면·침구) 전용 필터
-    else q = q.neq("field", "수면·침구"); // 메인 매거진에선 잠자리연구소(수면·침구) 글 제외 — 격리
+    if (opts?.field) q = q.eq("field", opts.field); // 섹션(잠자리연구소·알약연구소) 전용 필터
+    else q = q.not("field", "in", `("${SUB_MEDIA_FIELDS.join('","')}")`); // 메인 매거진에선 서브 미디어 글 제외 — 격리
     const limit = opts?.limit ?? 60;
     if (opts?.offset != null) q = q.range(opts.offset, opts.offset + limit - 1);
     else q = q.limit(limit);
@@ -112,7 +116,7 @@ export async function fetchMagazineCount(corner?: string): Promise<number> {
   const sb = getSupabaseAdmin();
   if (!sb) return 0;
   try {
-    let q = sb.from("magazine").select("*", { count: "exact", head: true }).eq("is_published", true).neq("corner", "report").neq("field", "수면·침구");
+    let q = sb.from("magazine").select("*", { count: "exact", head: true }).eq("is_published", true).neq("corner", "report").not("field", "in", `("${SUB_MEDIA_FIELDS.join('","')}")`);
     if (corner) q = q.eq("corner", corner);
     const { count } = await q;
     return count ?? 0;
@@ -135,9 +139,9 @@ export async function fetchMagazineBySlug(slug: string): Promise<MagazineArticle
 
 // 관련 글: 같은 코너(+2)·같은 분야(+1) 가중치 후 최신순. 내부링크/색인용.
 export async function fetchRelatedMagazine(article: MagazineArticle, limit = 4): Promise<MagazineArticle[]> {
-  // 수면·침구(잠자리연구소) 글은 같은 섹션 안에서만 관련글을 뽑는다 — 오늘의딜 글과 섞이지 않게.
-  const all = article.field === "수면·침구"
-    ? await fetchMagazineList({ field: "수면·침구", limit: 60 })
+  // 서브 미디어(잠자리연구소·알약연구소) 글은 같은 섹션 안에서만 관련글을 뽑는다 — 오늘의딜 글과 섞이지 않게.
+  const all = article.field && SUB_MEDIA_FIELDS.includes(article.field)
+    ? await fetchMagazineList({ field: article.field, limit: 60 })
     : await fetchMagazineList({ limit: 60 });
   const scored = all
     .filter((x) => x.slug !== article.slug)

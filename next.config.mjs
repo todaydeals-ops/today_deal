@@ -6,7 +6,7 @@ const nextConfig = {
       { protocol: "https", hostname: "**" },
     ],
   },
-  // 서브도메인 라우팅: goodsleep.todaydeals.co.kr 루트 → /goodsleep(잠자리연구소)
+  // 서브도메인 라우팅: goodsleep→잠자리연구소, pill→알약연구소.
   // ★ beforeFiles 필수 — afterFiles면 "/"가 이미 app/page.tsx(메인)로 처리돼 rewrite가 안 먹음.
   async rewrites() {
     return {
@@ -15,6 +15,11 @@ const nextConfig = {
           source: "/",
           has: [{ type: "host", value: "goodsleep.todaydeals.co.kr" }],
           destination: "/goodsleep",
+        },
+        {
+          source: "/",
+          has: [{ type: "host", value: "pill.todaydeals.co.kr" }],
+          destination: "/pill",
         },
       ],
     };

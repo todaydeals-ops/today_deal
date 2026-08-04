@@ -3,7 +3,7 @@
 > 자동 생성 파일. 직접 수정하지 마세요. `node scripts/research-index.mjs`로 갱신합니다.
 > **기계적 대조 기준은 이 파일이 아니라 `facts/*.json` 원본입니다.**
 
-생성: 2026-08-03 · 조사 287건 · 팩트 3579개
+생성: 2026-08-04 · 조사 288건 · 팩트 3598개
 
 ## ⚠️ 무결성 경고
 
@@ -59,9 +59,9 @@
 
 ## 통계
 
-- 확신도: 확실 3383 · 논쟁 167 · 확인실패 29
-- 근거: 공식 2917 · 후기 657 · 실측 5
-- **순차 대안 톤 대상: 701개** (tier=논쟁 또는 evidence=후기 → "먼저 해보고 안 되면" 서술 필수)
+- 확신도: 확실 3399 · 논쟁 168 · 확인실패 31
+- 근거: 공식 2932 · 후기 661 · 실측 5
+- **순차 대안 톤 대상: 705개** (tier=논쟁 또는 evidence=후기 → "먼저 해보고 안 되면" 서술 필수)
 
 ## HP
 
@@ -4875,6 +4875,32 @@
 | `apple-watch-watchos-update-internet-connectivity` | 확실 | 공식 | watchOS 업데이트는 인터넷 연결이 필요하다. 애플워치는 iPhone을 통하거나 Wi-Fi 또는 셀룰러(Apple Watch LTE 모델)로 인터넷에 연결되어 있어야 한다. 업데이트 중 인터넷 연결이 끊기면 설치가 중단될 수 있다. | 애플 / 스마트워치 / Apple Watch 전 모델 / 전 연식 / 글로벌 |
 | `apple-watch-watchos-update-unpair-as-last-resort` | 확실 | 공식 | watchOS 업데이트가 여러 번 실패할 경우, 마지막 수단으로 iPhone의 Watch 앱에서 Apple Watch 페어링을 제거한 후 처음부터 다시 페어링하면 업데이트가 성공할 수 있다. | 애플 / 스마트워치 / Apple Watch 전 모델 / 전 연식 / 글로벌 |
 
+## 영양
+
+### 루테인(루테인+제아잔틴) 눈 건강 보충제의 임상 근거·효과·안전성·국내 규제 <sub>2026-08-04 · lutein-eye-supplement</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `lutein-zeaxanthin-basic-function-macular-pigment` | 확실 | 공식 | 루테인과 제아잔틴은 망막 황반부의 색소(macular pigment)를 형성하며, 청색광의 필터 역할과 항산화 활성으로 빛으로 인한 활성산소를 흡수하여 망막 광수용체를 보호한다. | 루테인/제아잔틴 / 영양제 / 눈 건강 보충제 / 전 연식 / 글로벌 |
+| `areds2-trial-population-advanced-amd` | 확실 | 공식 | AREDS2 임상시험은 50~85세의 이미 황반변성(AMD) 진행 위험군을 대상으로 했으며, 양쪽 눈에 큰 드루젠(large drusen)이 있거나 한쪽 눈에 진행된 AMD를 가진 참가자 4,203명을 등록했다. | AREDS2 / 임상시험 / 대상군 / 2006-2008 등록, 중앙 5년 추적 / 글로벌 |
+| `areds2-lutein-zeaxanthin-dose-protocol` | 확실 | 공식 | AREDS2에서 사용된 루테인+제아잔틴 용량은 일일 루테인 10mg + 제아잔틴 2mg이었다. | AREDS2 / 임상시험 / 투여량 / 2006-2008 / 글로벌 |
+| `areds2-primary-outcome-no-benefit-beyond-areds` | 확실 | 공식 | AREDS2 주 분석에서 루테인+제아잔틴을 기존 AREDS 포뮬라에 추가해도 진행된 AMD로의 진행 위험이 통계적으로 유의미하게 감소하지 않았다(HR 0.90, P=0.12). | AREDS2 / 임상시험 / 1차 결과 / 중앙 5년 추적 / 글로벌 |
+| `areds2-subgroup-low-dietary-lutein` | 확실 | 공식 | AREDS2 분석에서 식이 루테인 섭취가 가장 낮은 부분군에서만 루테인+제아잔틴이 AMD 진행 보호 효과를 보였다. | AREDS2 / 임상시험 / 부분군 분석 / 중앙 5년 추적 / 글로벌 |
+| `areds2-betacarotene-risk-vs-lutein` | 확실 | 공식 | AREDS2에서 기존 AREDS 포뮬라의 베타카로틴은 폐암 발생 위험을 약 2배 증가시켰으나, 루테인+제아잔틴은 그러한 발암 위험이 없었다. | AREDS2 / 임상시험 / 안전성 비교 / 중앙 5년 추적 / 글로벌 |
+| `korea-food-safety-lutein-function-claim` | 확실 | 공식 | 한국 식품의약품안전처는 루테인의 건강기능식품 기능성 표현을 '노화로 인해 감소될 수 있는 황반부 색소 밀도를 유지하여 눈 건강에 도움을 줄 수 있음'으로 인정한다. | 루테인 / 규제 / 기능성 표현 / 2026 현행 / KR |
+| `korea-daily-intake-lutein-10-20mg` | 확실 | 공식 | 한국 식약처가 인정하는 루테인의 일일 섭취량 기준은 10~20mg(허용오차 적용 시 8~24mg)이다. | 루테인 / 규제 / 일일섭취량 / 2026 현행 / KR |
+| `lutein-ester-vs-freeform-bioavailability` | 확실 | 공식 | 루테인 에스테르형(esterified)과 유리형(free form)의 생체이용성(흡수)은 비슷하며, 형태보다 포뮬레이션 매트릭스(오일 캐리어, 비드렛 타입, 소프트젤 조성)가 흡수에 더 큰 영향을 미친다. | 루테인 / 영양제 / 형태·흡수 / 2024-2025 현행 문헌 / 글로벌 |
+| `lutein-fat-soluble-with-meals` | 확실 | 공식 | 루테인은 지용성 카로테노이드이므로 장 내 흡수를 위해 식이 지방과 함께 복용해야 최적의 흡수가 이루어진다. | 루테인 / 영양제 / 흡수·식후 복용 / 전 연식 / 글로벌 |
+| `lutein-recommended-dose-20mg-daily-safe` | 확실 | 공식 | 루테인의 안전한 일일 권장 용량은 20mg/day까지이며, 이 용량까지 임상적으로 중요한 부작용이 보고되지 않았다. | 루테인 / 안전성 / 권장 용량 / 전 연식 / 글로벌 |
+| `lutein-carotenodermia-excess-skin-yellowing` | 확실 🔶 | 후기 | 루테인을 과다하게 또는 장기간 섭취하면 혈중 루테인 수치가 높아져 황피증(carotenodermia)이라 불리는 황색 피부 변색이 나타날 수 있으나, 혈중 루테인이 감소하면 원래 색으로 돌아온다. | 루테인 / 안전성 / 부작용 / 전 연식 / 글로벌 |
+| `lutein-longterm-overdose-lung-cancer-concern` | 논쟁 🔶 | 후기 | 합성 루테인을 장기간 과다복용할 경우, 포함된 카로테노이드 성분 자체가 폐암 발병 위험을 증가시킬 수 있다는 보고가 있다. | 루테인 / 안전성 / 장기 과다 부작용 / 전 연식 / 글로벌 |
+| `lutein-orlistat-interaction-fat-blocker` | 확실 | 공식 | 올리스타트(orlistat)와 같은 지방 차단제는 루테인의 장내 흡수를 감소시킬 수 있다. | 루테인 / 안전성 / 약물 상호작용 / 전 연식 / 글로벌 |
+| `lutein-synthetic-vs-natural-deposit-concern` | 확인실패 🔶 | 후기 | 합성 루테인을 습관적으로 장기 복용하면 인체에 잔류하여 망막에 결정체를 형성하거나 시야 굴절 현상을 보인 사례가 드물게 보고되었다. | 루테인 / 안전성 / 장기 합성 루테인 부작용 / 전 연식 / 글로벌 |
+| `lutein-dosage-labeling-ester-weight-confusion` | 확인실패 🔶 | 후기 | 루테인 제품 라벨에서 에스테르형 루테인의 함량을 표기할 때, 에스테르 원료의 전체 무게로 표기하면 실제 루테인 함량과 차이가 난다. | 루테인 / 영양제 / 표기 투명성 / 2026 현행 / KR |
+| `who-consider-lutein-supplement-insufficient-diet` | 확실 | 공식 | 루테인 보충제 복용을 고려할 만한 대상은 식이로 충분한 루테인을 섭취하지 못하는 사람, 특히 이미 황반변성 위험이 높은 사람이다. | 루테인 / 영양제 / 적응증 / 2026 현행 / 글로벌 |
+| `dietary-sources-lutein-zeaxanthin-greens-eggs` | 확실 | 공식 | 루테인과 제아잔틴은 케일, 시금치, 브로콜리 같은 짙은 녹색 채소와 달걀 노른자 같은 천연 식품에 풍부하게 함유되어 있다. | 루테인 / 영양 / 식이 출처 / 전 연식 / 글로벌 |
+| `lutein-consultation-amd-symptoms` | 확실 | 공식 | 갑작스러운 시력 변화, 중심 시야 왜곡, 직선이 구부러져 보이는 현상(metamorphopsia) 등 황반변성 증상이 있다면 보충제 복용 전에 안과 전문의의 진단을 받아야 한다. | 루테인 / 안전성 / 자가진단 금지 / 전 연식 / 글로벌 |
+
 ## 위니아
 
 ### 위니아 딤채 김치냉장고 에러·냉각 불량 자가점검 <sub>2026-07-20 · winia-kimchi-fridge</sub>
@@ -5191,6 +5217,7 @@
 | `factory-reset-data-loss` | IPTV 셋톱박스 화면 안 나옴·먹통·리모컨 안 될 때 자가점검 |
 | `fading-method-gradual-independence` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `fast-charging-mechanism-lithium-plating-degradation` | 포터블 파워스테이션 충전 안 됨·출력 안 됨·발열·배터리 팽창 자가점검 및 보관 기준 |
+| `fat-soluble-vitamin-stability` | 루테인(루테인+제아잔틴) 눈 건강 보충제의 임상 근거·효과·안전성·국내 규제 |
 | `file-system-format-exfat-overview` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
 | `file-system-format-fat32-overview` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
 | `filter-bacteria-growth-study` | 반려동물 자동급수기(정수 급수기) 살 만한가 — 트렌드랩 |
