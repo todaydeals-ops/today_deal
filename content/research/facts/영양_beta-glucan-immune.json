@@ -1,0 +1,79 @@
+{
+  "topic": "베타글루칸의 면역 활성화: 효모/버섯 유래 차이·면역 과활성 우려",
+  "brand": "알약연구소",
+  "article": "베타글루칸, 면역력을 올린다는 근거",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "beta-glucan-source-yeast-mushroom-clinical-evidence",
+      "claim": "베타글루칸의 임상 근거는 주로 효모 유래(Saccharomyces cerevisiae 등)와 버섯 유래(표고·팽이·느타리 등)에서 나온다. 효모 유래 베타글루칸 500 mg/day는 독감 예방접종 후 항체 반응을 향상시키는 임상 근거가 있으며, 버섯 유래 블렌드는 암 화학요법 중 면역 억제 회복에 사용되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Dietary Supplements: Yeast Beta-Glucan Enhances Antibody Response Following Influenza Vaccination (2025); MDPI Molecules: Effects of β-Glucan-Rich Blend of Medicinal Mushrooms (2024)",
+      "source_url": "https://www.tandfonline.com/doi/full/10.1080/19390211.2025.2539876 ; https://www.mdpi.com/1420-3049/29/12/2787",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "면역 건강 관심 인구",
+        "분류": "베타글루칸 유래",
+        "시기": "보충 기간",
+        "지역": "글로벌"
+      },
+      "caution": "효모 vs 버섯 유래는 면역 활성 메커니즘이 다르므로, 제품의 유래를 확인하고 선택해야 한다.",
+      "cautionSource": "임상 연구 비교"
+    },
+    {
+      "id": "beta-glucan-immune-mechanism-trained-immunity",
+      "claim": "베타글루칸은 선천 면역계의 훈련 면역(trained immunity)을 유도하는 것으로 이해된다. 비특이적 면역 활성화가 아니라 특정 면역 경로(예: TLR/NOD 수용체)를 통해 NK 세포와 T 세포 활성화를 증가시키며, 이 과정에서 사이토카인(예: TNF-α, IL-6)이 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Frontiers in Nutrition: β-glucans from Agaricus bisporus mushroom products drive Trained Immunity (2024)",
+      "source_url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1346706/full",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "베타글루칸 섭취자",
+        "분류": "면역 기전",
+        "시기": "섭취 후 생리적 변화",
+        "지역": "글로벌"
+      },
+      "caution": "특정 경로 활성화는 '면역 과활성'과 다르며, 신체가 필요한 범위 내에서의 활성화를 의미한다.",
+      "cautionSource": "면역학 문헌"
+    },
+    {
+      "id": "beta-glucan-autoimmune-risk-theoretical-vs-actual",
+      "claim": "베타글루칸이 자가면역질환을 악화시킬 수 있다는 이론적 우려가 있으나, 실제 임상 증거에서는 자가면역질환 환자에서 뚜렷한 질환 악화가 보고되지 않았다. 다만 특정 유전적 취약성(HLA 유형 등)이 있는 개인에서는 질환이 악화될 가능성이 있으므로 주의가 필요하다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "VitaWellness: Will Beta Glucan Harm an Autoimmune Condition?; ScienceInsights: Is Beta Glucan Safe?",
+      "source_url": "https://help.betterwayhealth.com/hc/en-us/articles/219394827-Will-Beta-Glucan-Harm-an-Autoimmune-Condition- ; https://scienceinsights.org/is-beta-glucan-safe-side-effects-and-risks-explained/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "자가면역질환 환자",
+        "분류": "안전성",
+        "시기": "장기 섭취",
+        "지역": "글로벌"
+      },
+      "caution": "★자가면역질환이 있는 사람은 베타글루칸 시작 전 반드시 의료 전문가와 상담해야 한다. 보고된 악화 사례는 드물지만, 이론적 위험과 개인차를 무시할 수 없다.",
+      "cautionSource": "자가면역 안전 문헌"
+    },
+    {
+      "id": "beta-glucan-safety-profile-fda-efsa-approval",
+      "claim": "베타글루칸은 FDA와 EFSA(유럽식품안전청)에 의해 생물학적으로 안전한 물질로 분류되었으며, 광범위한 전임상 및 임상 연구에서 안전한 프로필을 보였다. 현재까지 알려진 부작용은 극히 드문 알레르기 반응(심한 경우 저혈압, IV 투여 시)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: β-Glucan Metabolic and Immunomodulatory Properties and Potential for Clinical Application",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7770584/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "베타글루칸 섭취자",
+        "분류": "안전성",
+        "시기": "단기·장기",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

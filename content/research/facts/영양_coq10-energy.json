@@ -1,0 +1,132 @@
+{
+  "topic": "코엔자임Q10(CoQ10)의 스타틴 근육통 완화 임상 근거 및 형태별 차이",
+  "brand": "알약연구소",
+  "article": "코엔자임Q10, 스타틴 복용자에게 필요할까",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "anticoagulant-vitamin-k-interaction-thrombosis-risk"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "coq10-ubiquinol-ubiquinone-form-difference",
+      "claim": "코엔자임Q10은 산화형(ubiquinone)과 환원형(ubiquinol) 두 가지 형태로 존재한다. 환원형이 인체에서 직접 이용되는 활성 형태이며, 산화형은 체내에서 환원형으로 변환되어야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect: Effects of Coenzyme Q10 on Statin-Induced Myopathy",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S2161831322012479",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "코엔자임Q10 형태",
+        "분류": "화학 성질",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "환원형이 더 비싼 경우가 많으나, 건강한 사람의 일상 섭취에서 형태별 효과 차이를 입증한 대규모 임상은 부족하다.",
+      "cautionSource": "임상 근거 수준"
+    },
+    {
+      "id": "statin-induced-muscle-symptoms-sams-mechanism",
+      "claim": "스타틴(HMG-CoA 환원효소 억제제)은 콜레스테롤 합성을 억제하는데, 같은 경로에서 코엔자임Q10의 합성도 억제하여 미토콘드리아 에너지 생산 저하로 근육 약화 또는 통증(SAMS, Statin-Associated Muscle Symptoms)이 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Mayo Clinic Proceedings: Effects of Coenzyme Q10 on Statin-Induced Myopathy",
+      "source_url": "https://www.mayoclinicproceedings.org/article/S0025-6196(14)00799-X/abstract",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "스타틴 근육 부작용",
+        "분류": "기전",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "coq10-statin-myopathy-conflicting-evidence",
+      "claim": "CoQ10 보충이 스타틴 근육통을 완화하는지에 대한 임상 근거는 상충된다. 2014년 고용량(600mg/일 환원형) 이중맹검 RCT는 효과 없음을 보였으나, 최신 메타분석(2024~2025)에서는 일부 효과가 있다는 보고도 있다. 2015년 합의 패널은 근거 부족으로 권장하지 않았다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "ScienceDirect: Effect of Coenzyme Q10 on statin-associated myalgia and adherence to statin therapy: A systematic review and meta-analysis",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0021915020301386",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "스타틴 근육통",
+        "분류": "임상 효과",
+        "시기": "2014~2025",
+        "지역": "글로벌"
+      },
+      "caution": "★집필 시 중요: '근거가 엇갈린다'고 명확히 표기할 것. '반드시 도움이 된다'는 표현은 금지. 초기 RCT는 음성, 최근 분석은 양성 경향이지만 결론이 아직 나지 않았다.",
+      "cautionSource": "임상 합의 부족"
+    },
+    {
+      "id": "coq10-muscle-level-supplementation-paradox",
+      "claim": "코엔자임Q10 경구 보충이 혈중 CoQ10 농도는 높일 수 있으나, 근육 내 CoQ10 농도 변화와 미토콘드리아 기능 개선은 입증되지 않았다. 2014년 600mg 환원형 투여 임상에서도 근육 CoQ10 수치와 미토콘드리아 기능이 유의하게 변하지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Atherosclerosis Journal: A randomized trial of coenzyme Q10 in patients with confirmed Statin Myopathy",
+      "source_url": "https://www.atherosclerosis-journal.com/article/S0021-9150(14)01636-0/fulltext",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "코엔자임Q10 생체이용률",
+        "분류": "흡수·전달 한계",
+        "시기": "2014",
+        "지역": "글로벌"
+      },
+      "caution": "★흡수 문제: CoQ10이 지용성 물질이어서 고함량 복용해도 목표 조직에 충분히 도달하기 어려울 수 있다는 한계가 있다.",
+      "cautionSource": "임상 근거"
+    },
+    {
+      "id": "coq10-dosage-for-statin-myopathy-range",
+      "claim": "스타틴 근육통 완화를 목표로 한 임상 연구에서 사용된 CoQ10 용량은 주로 100~600mg/일이며, 하루 200~300mg이 흔히 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Coenzyme Q10 Supplementation in Statin Treated Patients",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9495827/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "스타틴 근육통",
+        "분류": "용량",
+        "시기": "전 연식",
+        "지역": "글로벨"
+      },
+      "caution": "고용량이 더 효과적이라는 보장은 없으며, 과다 복용도 마찬가지다. 개인차가 크므로 반응을 보면서 조정해야 한다.",
+      "cautionSource": "임상 실무"
+    },
+    {
+      "id": "coq10-anticoagulant-interaction-warfarin-caution",
+      "claim": "코엔자임Q10은 지용성 비타민처럼 항응고제(특히 와파린)의 효과를 상쇄할 수 있으므로, 와파린 복용 중인 환자가 CoQ10 보충을 고려한다면 의료 전문가와 반드시 상담해야 한다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Levothyroxine Interactions with Food and Dietary Supplements",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8002057/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "항응고제 복용자",
+        "분류": "약물 상호작용",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "와파린 복용자는 CoQ10뿐만 아니라 모든 영양제 추가 섭취를 의료진에게 반드시 고지할 것.",
+      "cautionSource": "약학 문헌"
+    },
+    {
+      "id": "coq10-energy-production-asthenia-aging",
+      "claim": "코엔자임Q10은 미토콘드리아에서 ATP 에너지 생산에 필수적이므로, 노화나 질병으로 근력이 떨어진 고령자에게 보충의 이론적 근거가 있으나, 건강한 젊은 성인의 일반 피로에 대한 효과는 제한적으로 보인다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Effect of Coenzyme Q10 on Physical Performance in Older Adults with Statin-Associated Asthenia",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11242215/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "피로·무력감",
+        "분류": "임상 효과",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
+      "caution": "★일반인의 '일상 피로'에 CoQ10이 효과적이라는 광고는 검증되지 않았다. 스타틴 근육통이 아닌 일반 피로에는 근거가 약하다.",
+      "cautionSource": "임상 근거 부족"
+    }
+  ]
+}

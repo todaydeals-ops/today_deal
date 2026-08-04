@@ -1,0 +1,134 @@
+{
+  "topic": "빌베리 안토시아닌의 야간시력·로돕신 기전, 임상 근거, WWII 조종사 설화 검증",
+  "brand": "알약연구소·눈 건강",
+  "article": "bilberry-anthocyanin-eye",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "korea-health-food-function-claim-disease-prevention-prohibition",
+    "rct-randomized-controlled-trial-definition-gold-standard",
+    "small-sample-size-low-statistical-power"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "bilberry-anthocyanin-mechanism-rhodopsin-regeneration",
+      "claim": "빌베리의 안토시아닌은 망막 간상세포(rod cell)의 로돕신 재생을 생화학적으로 지원하는 기전이 있으며, 저조도 환경에서 빛 감지를 위해 필요한 단백질이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI: Anthocyanosides of Vaccinium myrtillus (Bilberry) for night vision - Systematic Review",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK71210/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "야간시력 필요 상황",
+        "분류": "기전",
+        "시기": "정상 생리",
+        "지역": "글로벌"
+      },
+      "caution": "기전은 타당하나, 인체 임상에서 실제 효과가 입증되는 것과는 별개다.",
+      "cautionSource": "임상 연구 설계"
+    },
+    {
+      "id": "bilberry-wwii-raf-pilots-jam-myth-radar-cover-story",
+      "claim": "2차 세계대전 당시 영국 공군(RAF) 조종사들이 야간 공습 성공률을 올리기 위해 빌베리 잼을 먹었다는 설화는 80년간 반복되었으나, 실제 역사 기록에는 증거가 없으며, 영국 군부가 당시 개발 중이던 레이더 기술을 은폐하기 위한 위장 선전일 가능성이 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "McGill University - Office for Science and Society",
+      "source_url": "https://www.mcgill.ca/oss/article/nutrition-you-asked-it-true-bilberries-are-good-eyes",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "역사적 주장",
+        "분류": "설화 검증",
+        "시기": "1940s-현재",
+        "지역": "영국/글로벌"
+      },
+      "caution": "★이 설화는 마케팅에 자주 사용되지만, 학계에서 검증된 내용과 다르다. 집필 시 이 점을 명확히 해야 한다.",
+      "cautionSource": "McGill University 과학 평가"
+    },
+    {
+      "id": "bilberry-night-vision-rct-4-recent-studies-negative",
+      "claim": "빌베리 안토시아닌의 야간시력 효과를 평가한 최근 4개의 무작위 대조 시험(RCT)이 모두 통계적으로 유의한 개선을 보이지 못했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cochrane Collaboration: Anthocyanosides of Vaccinium myrtillus for night vision - Systematic Review",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK71210/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "일반 성인 및 건강인",
+        "분류": "야간시력 개선",
+        "시기": "4-12주 투여",
+        "지역": "글로벌"
+      },
+      "caution": "메타분석 결론: '건강한 사람의 정상 야간시력 개선 근거 없음'. 비정상 야간시력이 있는 사람(야맹증 환자 등)에 대한 연구는 별도 평가 필요.",
+      "cautionSource": "Cochrane 체계적 고찰"
+    },
+    {
+      "id": "bilberry-study-population-limitation-healthy-subjects-only",
+      "claim": "빌베리 야간시력 연구 12개 중 11개가 정상 또는 평균 이상의 시력을 가진 건강한 성인을 대상으로 했으며, 실제 야맹증이나 어두운 환경에 적응이 필요한 집단은 거의 포함되지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cochrane Collaboration: Anthocyanosides of Vaccinium myrtillus for night vision",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK71210/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "건강인",
+        "분류": "연구 설계 한계",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★이는 연구의 외적 타당도 문제다. 건강한 사람에서 효과 없음 = 질환 대상군에서도 효과 없다는 뜻은 아니나, 임상 적용이 제한된다.",
+      "cautionSource": "Cochrane 방법론 평가"
+    },
+    {
+      "id": "bilberry-anthocyanin-dosage-range-studies-variability",
+      "claim": "빌베리 안토시아닌 임상시험에서 사용된 용량이 연구마다 다양하여(특정 표준화 추출물 기준으로 160~480mg, 일일 섭취 기준 불명확), 메타분석 비교가 어렵다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "Cochrane Collaboration",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK71210/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "빌베리 제품",
+        "분류": "용량 표준화",
+        "시기": "임상시험",
+        "지역": "글로벌"
+      },
+      "caution": "표준화된 추출물(25~36% 안토시아닌 함량)이라도 제품마다 표기가 다르므로, 구체적 임상 근거가 있는 용량이 명시되지 않으면 신뢰하기 어렵다.",
+      "cautionSource": "임상시험 프로토콜 불일치"
+    },
+    {
+      "id": "bilberry-non-rct-studies-mixed-results-methodological-issues",
+      "claim": "빌베리 야간시력에 관한 비무작위 통제 연구 7개는 일부 긍정 결과를 보였으나, 이들 연구는 맹검화 부족, 소규모 표본, 높은 탈락률 등 방법론적 한계가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cochrane Collaboration: Anthocyanosides of Vaccinium myrtillus for night vision",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK71210/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "빌베리 야간시력 연구",
+        "분류": "비RCT 연구 질",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★비RCT 긍정 결과는 주로 편향이나 대기 효과(가짜 약효)일 가능성이 높다. 임상 근거로는 RCT 결과를 우선해야 한다.",
+      "cautionSource": "Cochrane 방법론 기준"
+    },
+    {
+      "id": "bilberry-extraction-standardization-lack-transparency",
+      "claim": "빌베리 제품에 사용되는 추출물은 안토시아닌 함량 기준(25~36%)이 다양하며, 추출 방법·용매·보관 조건에 따라 활성 성분 손실이 크지만, 제품 표기에서 이를 명시하지 않는 경우가 많다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "제품 라벨 비교, 보충제 선택 가이드",
+      "source_url": "https://supplementsinreview.com/vision/bilberry-vision/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "빌베리 보충제",
+        "분류": "표기 투명성",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": "임상 연구에서 효과를 본 제품과 상업 제품이 동일한 추출물을 사용한다고 보장할 수 없다.",
+      "cautionSource": "제품 표기 현황"
+    }
+  ]
+}

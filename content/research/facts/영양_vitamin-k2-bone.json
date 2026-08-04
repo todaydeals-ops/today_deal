@@ -1,0 +1,105 @@
+{
+  "topic": "비타민K2의 뼈 건강 기전과 항응고제 금기",
+  "brand": "공통",
+  "article": "vitamin-k2-bone",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "anticoagulant-vitamin-k-interaction-thrombosis-risk",
+    "fat-soluble-vitamin-requires-meal-absorption",
+    "fat-soluble-vitamin-accumulation-toxicity-risk"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "vitamin-k2-osteocalcin-carboxylation-mechanism",
+      "claim": "비타민K2는 골모세포가 만드는 단백질 오스테오칼신의 카복실화 반응에 필수 조효소로 작용한다. 미활성화된 오스테오칼신은 수산화인회석과 결합할 수 없으나, K2의 도움으로 활성화된 오스테오칼신은 혈중 칼슘을 뼈 기질로 운반한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Vitamin K2-7 Roles for Bone Health; MK-7 and Its Effects on Bone Quality and Strength",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9237441/ ; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7230802/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "비타민K2 기전",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "vitamin-k2-matrix-gla-protein-calcium-channeling",
+      "claim": "비타민K2는 또한 기질 글라 단백질(matrix Gla protein)의 활성화에도 관여하여, 칼슘이 동맥 등 부적절한 부위로 가는 것을 방지하고 뼈로만 집중되도록 돕는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Vitamin K2-7 Roles for Bone Health",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9237441/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "비타민K2 기전",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "이 기전이 '칼슘을 뼈로 보낸다'는 마케팅의 이론적 기반이나, 실제 뼈 밀도 개선 규모는 미미할 수 있다.",
+      "cautionSource": "임상 근거 평가"
+    },
+    {
+      "id": "vitamin-k2-mk-4-vs-mk-7-bioavailability-half-life",
+      "claim": "MK-4(4-메나퀴논)는 단쇄형으로 반감기가 짧아 하루 여러 회 섭취가 필요하지만, MK-7(7-메나퀴논)는 장쇄형으로 생체이용률이 높고 반감기가 길어 1회 일일 섭취로 효과적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: MK-7 and Its Effects on Bone Quality; Vitamin K2 MK-7: Healthy Bone, Healthy Body",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7230802/ ; https://www.nutraceuticalbusinessreview.com/news/article_page/Vitamin_K2_MK-7_healthy_bone_healthy_body/115898",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "K2 형태 비교",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "두 형태 모두 뼈 건강에 이로우나, MK-7이 편의성과 지속성에서 우수하다.",
+      "cautionSource": "약학 문헌"
+    },
+    {
+      "id": "vitamin-k2-mk-7-osteocalcin-activation-superior",
+      "claim": "MK-7이 MK-4보다 오스테오칼신 활성화 비율이 높으므로, 뼈 관련 영양제에서 MK-7이 선호된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: MK-7 and Its Effects on Bone Quality; Vitamin K2 MK-7",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7230802/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "K2 형태",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "vitamin-k2-warfarin-absolute-contraindication",
+      "claim": "항응고제(특히 와파린)를 복용하는 사람이 비타민K2를 추가 섭취하면, K2가 혈액 응고를 촉진하여 항응고제 약효를 직접 상쇄하고 혈전 형성 위험을 높인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Anticoagulant–Vitamin K Interaction; Levothyroxine Interactions with Food and Dietary Supplements",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8002057/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "약물 상호작용",
+        "line": "항응고제",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "★와파린 복용 중이면 비타민K2 영양제 추가 섭취 금지. 음식 K는 상대적으로 양이 적으나, 농축 영양제는 위험.",
+      "cautionSource": "의료 전문가 지침"
+    }
+  ]
+}

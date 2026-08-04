@@ -1,0 +1,109 @@
+{
+  "topic": "콘드로이틴 황산염의 관절 건강 효과와 국제 규제 위치",
+  "brand": "공통",
+  "article": "chondroitin-joint",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "rct-randomized-controlled-trial-definition-gold-standard",
+    "disease-prevention-vs-disease-progression-delay-distinction"
+  ],
+  "declined_facts": [
+    {
+      "id": "water-soluble-vitamin-absorption-no-meal-required",
+      "why": "비타민 흡수이며 콘드로이틴은 다당체이므로 스코프 불일치"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "chondroitin-cartilage-matrix-protease-inhibition",
+      "claim": "콘드로이틴 황산염은 연골 기질의 주요 성분으로, 단백질분해효소(프로테아제)로부터 연골을 보호하고 수분 유지를 돕는 기능을 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/NIH Biochemistry: Chondroitin in Extracellular Matrix",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "콘드로이틴 기전",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "생화학적 기능은 확립됐으나, 경구 섭취 콘드로이틴이 실제 무릎 연골에 도달하는지는 논쟁 중.",
+      "cautionSource": "임상 근거 평가"
+    },
+    {
+      "id": "chondroitin-gait-combined-subgroup-efficacy-same-as-glucosamine",
+      "claim": "GAIT 임상에서 콘드로이틴 단독은 위약과 차이 없었으나, 글루코사민+콘드로이틴 병용은 중등도-심한 통증 부분군에서만 유의성을 보였다(단, 저자들은 부분군 분석의 한계 명시).",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "NEJM: GAIT Study",
+      "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa052771",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "GAIT 콘드로이틴",
+        "years": "2006",
+        "region": "미국"
+      },
+      "caution": "★'같이 먹어야 한다'는 주장은 부분군 사후 분석이며, 사전 동력 계산이 없었으므로 재현성 미확인.",
+      "cautionSource": "GAIT 논문"
+    },
+    {
+      "id": "chondroitin-european-regulatory-status-sysadoa",
+      "claim": "유럽에서는 콘드로이틴 황산염을 느린작용 골관절염약(SYSADOA, Symptomatic Slow-Acting Drug for Osteoarthritis)으로 분류하며, 많은 유럽 국가에서 의약품(처방약)으로 취급한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ESCEO Treatment Algorithm; European Medicines Agency",
+      "source_url": "https://healthcare.utah.edu/press-releases/2006/02/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "규제",
+        "line": "유럽 의약품 분류",
+        "years": "2019-현재",
+        "region": "EU"
+      },
+      "caution": "★유럽은 건강기능식품이 아니라 의약품이며, 한국·미국의 식품 분류와 다르다. 규제 지위 차이는 임상 효과 차이를 의미하지 않으나, 마케팅에서 '유럽에서는 처방약'이라는 표현은 임상 효과를 암시한다.",
+      "cautionSource": "ESCEO 공식 성명"
+    },
+    {
+      "id": "chondroitin-product-quality-variance-content-deficit",
+      "claim": "2019년 유럽 식품 보충제 분석에서 25개 표본 중 19개(76%) 이상이 표시된 콘드로이틴 및 글루코사민 함량보다 실제 함량이 낮았으며, 최대 -60.3%의 함량 결손이 있었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect: European Chondroitin Sulfate and Glucosamine Food Supplements Quality Assessment",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0144861719306447",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "제품 품질 문제",
+        "years": "2019",
+        "region": "유럽"
+      },
+      "caution": "★표기 용량 미만의 제품을 복용하면 임상 시험 용량보다 훨씬 낮을 수 있다. 제품 진위 확인 (공인 검사 지표: 함량 분석 성적서)이 필수.",
+      "cautionSource": "2019년 유럽 분석"
+    },
+    {
+      "id": "chondroitin-dosage-standard-clinical",
+      "claim": "임상 GAIT에서 사용된 콘드로이틴 황산염 표준 용량은 1,200mg/일(400mg×3회 분할)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NEJM: GAIT Study",
+      "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa052771",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "콘드로이틴 용량",
+        "years": "2006",
+        "region": "미국"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "topic": "비타민A와 야맹증·결핍 증상·과잉 독성·임신 기형 위험·상한섭취량",
+  "brand": "알약연구소·눈 건강",
+  "article": "vitamin-a-night-blindness",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "upper-limit-intake-UL-definition-safety-threshold",
+    "vitamin-a-excessive-intake-headache-skin-dryness",
+    "fat-soluble-vitamin-accumulation-toxicity-risk"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "vitamin-a-deficiency-night-blindness-earliest-symptom",
+      "claim": "비타민A 결핍에 의한 야맹증(nyctalopia)은 안과적 증상으로서 가장 초기에 나타나는 지표이며, 혈청 레티놀(retinol) 저하의 민감하고 특이적인 임상 신호다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "WHO: Xerophthalmia and Nyctalopia as Presenting Signs of Vitamin A Deficiency",
+      "source_url": "https://www.who.int/publications/i/item/WHO-NMH-NHD-EPG-14.4",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "비타민A 결핍군",
+        "분류": "야맹증",
+        "시기": "만성 결핍",
+        "지역": "개발도상국·글로벌"
+      },
+      "caution": "★야맹증이 있다면 비타민A 결핍을 반드시 진단해야 하며, 보충제가 아닌 의료 전문가 진료가 필수다.",
+      "cautionSource": "WHO 진단 기준"
+    },
+    {
+      "id": "vitamin-a-mechanism-retinal-pigment-rhodopsin",
+      "claim": "비타민A의 활성 형태인 레티날(retinal)은 망막의 간상세포에서 로돕신(rhodopsin)의 필수 구성 성분이며, 저조도 환경에서 빛 감지를 가능하게 하는 시각 사이클의 핵심이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/NIH Biochemistry - Vision Cycle",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK534869/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "모든 성인",
+        "분류": "생화학 기전",
+        "시기": "정상 생리",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "vitamin-a-deficiency-treatment-dosage-10000-25000-iu",
+      "claim": "비타민A 결핍으로 인한 야맹증 치료 용량은 경구 비타민A 10,000~25,000 IU를 1~2주간 일일 복용하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "WHO/AAO Treatment Guidelines, MSF Medical Guidelines",
+      "source_url": "https://medicalguidelines.msf.org/en/viewport/CG/english/xerophthalmia-vitamin-a-deficiency-16689721.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "비타민A 결핍 야맹증",
+        "분류": "치료 용량",
+        "시기": "1-2주",
+        "지역": "글로벌"
+      },
+      "caution": "이는 의료용 치료 용량이며, 보충제 자가복용이 아니다. 반드시 의료 전문가 지시 필요.",
+      "cautionSource": "WHO/MSF 진료 지침"
+    },
+    {
+      "id": "vitamin-a-upper-limit-3000mcg-10000iu-adults",
+      "claim": "성인(임산부 포함)의 비타민A(전형 레티놀) 상한섭취량(UL)은 3,000 μg RE(레티놀 등가물)/일이며, 이는 약 10,000 IU에 해당한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "EFSA Scientific Opinion on Tolerable Upper Intake Level for Preformed Vitamin A",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11154838/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인 및 임산부",
+        "분류": "상한섭취량",
+        "시기": "일일 기준",
+        "지역": "글로벌"
+      },
+      "caution": "이 상한은 장기 섭취(수 개월~수년)의 독성을 고려한 값이며, 단기 고용량은 다른 평가가 필요하다.",
+      "cautionSource": "EFSA 과학 의견"
+    },
+    {
+      "id": "vitamin-a-teratogenic-risk-pregnancy-10000iu-threshold",
+      "claim": "임신 중 비타민A 섭취가 일일 10,000 IU 이상이면 태아 기형(기형, 신경관 결손)의 위험이 증가하며, 특히 임신 초기 60일 이내 노출이 위험하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NEJM: Teratogenicity of High Vitamin A Intake; EFSA: Tolerable Upper Intake Level",
+      "source_url": "https://www.nejm.org/doi/full/10.1056/NEJM199511233332101",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "임산부",
+        "분류": "기형 위험",
+        "시기": "임신 1분기",
+        "지역": "글로벌"
+      },
+      "caution": "★임산부는 비타민A 10,000 IU 이상의 보충제를 자의로 복용하면 안 된다. 의료 전문가 상담 필수.",
+      "cautionSource": "NEJM 임상시험"
+    },
+    {
+      "id": "vitamin-a-deficiency-vs-normal-intake-distinction",
+      "claim": "야맹증을 비타민A 보충제로 개선하려는 접근은 '실제 비타민A 결핍이 있는 경우'에만 타당하며, 정상 섭취 상태의 건강한 사람에서는 야간시력 개선 효과가 입증되지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "WHO 야맹증 진단 기준",
+      "source_url": "https://www.who.int/publications/i/item/WHO-NMH-NHD-EPG-14.4",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "야맹증 의심자",
+        "분류": "결핍 vs 정상",
+        "시기": "만성",
+        "지역": "글로벌"
+      },
+      "caution": "★'야간시력 개선' 목적의 비타민A 보충제 광고는 개인 진단(결핍 확인) 없이는 위험하다.",
+      "cautionSource": "WHO 진료 지침"
+    },
+    {
+      "id": "vitamin-a-toxicity-symptoms-headache-skin-dryness-cns-pressure",
+      "claim": "비타민A 과다 섭취 시 두통, 피부 건조, 가려움, 심한 경우 두개내압 증가, 뼈 통증, 구역질 등이 나타날 수 있으며, 이를 비타민A 과다증(hypervitaminosis A)이라 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼",
+      "source_url": "https://www.msdmanuals.com/ko/home/%EC%98%81%EC%96%91-%EC%9E%A5%EC%95%A0/%EB%B9%84%ED%83%80%EB%AF%BC/%EB%B9%84%ED%83%80%EB%AF%BC-%EA%B0%9C%EC%9A%94",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "고용량 비타민A 복용자",
+        "분류": "과다증 증상",
+        "시기": "급성 및 만성",
+        "지역": "글로벌"
+      },
+      "caution": "이런 증상이 나타나면 즉시 복용을 중단하고 의료 전문가와 상담할 것.",
+      "cautionSource": "MSD 매뉴얼"
+    },
+    {
+      "id": "beta-carotene-vs-retinol-pregnancy-safe-alternative",
+      "claim": "베타카로틴은 비타민A와 달리 체내에서 필요한 만큼만 레티놀로 전환되므로(피드백 조절), 아무리 고용량으로 섭취해도 기형 위험을 일으키지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "EFSA/NEJM 비타민A 기형 평가",
+      "source_url": "https://www.nejm.org/doi/full/10.1056/NEJM199511233332101",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "임산부",
+        "분류": "안전한 대체",
+        "시기": "임신 전체",
+        "지역": "글로벌"
+      },
+      "caution": "임산부 영양제는 베타카로틴이 표기된 제품을 선택하는 것이 현명하다.",
+      "cautionSource": "EFSA/NEJM"
+    }
+  ]
+}

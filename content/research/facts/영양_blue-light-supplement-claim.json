@@ -1,0 +1,151 @@
+{
+  "topic": "블루라이트 차단 영양제·청색광 유해성 논쟁·루테인 필터링 효과·마케팅 표현 검증",
+  "brand": "알약연구소·눈 건강",
+  "article": "blue-light-supplement-claim",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "korea-health-food-function-claim-disease-prevention-prohibition",
+    "surrogate-endpoint-vs-clinical-outcome-discordance",
+    "rct-randomized-controlled-trial-definition-gold-standard"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "blue-light-spectrum-definition-wavelength",
+      "claim": "청색광(blue light)은 전자기 스펙트럼에서 380~500nm 범위의 가시광선으로, 자연광과 LED 화면 모두에서 방출되는 일반적인 광선이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH Photoechnology Research",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4997915/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "모든 광 환경",
+        "분류": "물리적 특성",
+        "시기": "항시",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "blue-light-hazard-claim-limited-evidence-in-humans",
+      "claim": "청색광이 망막 손상을 유발한다는 주장은 실험실 동물 연구와 시험관 연구에 기초하고 있으며, 인간에서의 일상적 청색광 노출로 인한 망막 손상을 증명하는 임상 근거는 제한적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cochrane Collaboration: Blue-light filtering spectacle lenses for visual performance, sleep, and macular health",
+      "source_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013244.pub2/full",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "컴퓨터·스마트폰 사용자",
+        "분류": "청색광 유해성",
+        "시기": "일상적 노출",
+        "지역": "글로벌"
+      },
+      "caution": "★마케팅에서는 '청색광 = 망막 손상'이라 단순화하지만, 실제 임상 증거는 훨씬 약하다.",
+      "cautionSource": "Cochrane 체계적 고찰"
+    },
+    {
+      "id": "blue-light-filtering-lenses-cochrane-review-no-benefit",
+      "claim": "Cochrane 체계적 고찰에서 블루라이트 차단 렌즈는 일반 렌즈와 비교해 시력, 눈 피로, 수면 개선에 임상적으로 유의미한 효과가 없으며, 망막 보호 증거도 없었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cochrane Collaboration",
+      "source_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013244.pub2/full",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인",
+        "분류": "블루라이트 필터 렌즈",
+        "시기": "단기 추적",
+        "지역": "글로벌"
+      },
+      "caution": "★'블루라이트 차단 렌즈'와 '블루라이트 차단 영양제'는 별개지만, 둘 다 과학적 근거가 약하다.",
+      "cautionSource": "Cochrane 메타분석"
+    },
+    {
+      "id": "lutein-zeaxanthin-macular-pigment-blue-light-filter-mechanism",
+      "claim": "루테인과 제아잔틴은 망막 황반부 색소(macular pigment)를 형성하며, 청색광의 일부를 필터링하는 물리적 특성이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH NEI AREDS Research",
+      "source_url": "https://www.nei.nih.gov/eye-health-information/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "모든 성인",
+        "분류": "루테인 기전",
+        "시기": "장기 축적",
+        "지역": "글로벌"
+      },
+      "caution": "청색광 필터링은 사실이나, 이것이 '청색광으로부터의 망막 보호'나 '수면 개선'으로 이어진다는 증거는 없다.",
+      "cautionSource": "임상 근거 평가"
+    },
+    {
+      "id": "lutein-zeaxanthin-blue-light-supplement-8-12-weeks-optical-density",
+      "claim": "루테인과 제아잔틴 보충제 임상 연구에서 황반부 색소 광학 밀도(macular pigment optical density, MPOD)는 8~12주 일일 복용 후 측정 가능한 증가를 보였으며, 12개월까지 계속 개선되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CRN: Lutein/Zeaxanthin Monograph; NIH",
+      "source_url": "https://www.crnusa.org/sites/default/files/CRNVMS4-Lutein%20Zeaxanthin%20Meso_30Sept2025.pdf",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "일반 성인",
+        "분류": "황반부 색소 밀도",
+        "시기": "8주-12개월",
+        "지역": "글로벌"
+      },
+      "caution": "★이것은 대리지표(surrogate endpoint)다. 황반부 색소 증가 = 눈 건강 개선이 아닐 수 있다.",
+      "cautionSource": "임상 근거 평가"
+    },
+    {
+      "id": "blue-light-melatonin-suppression-screen-evening-mechanism",
+      "claim": "저녁 스크린 사용 중 청색광은 멜라토닌 분비를 억제하여 수면 지연을 초래하는 메커니즘이 있으며, 이론상 루테인/제아잔틴이 망막 수준에서 청색광을 필터링하면 멜라토닌 억제를 줄일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Chronobiology/Sleep Research Literature",
+      "source_url": "https://www.crnusa.org/sites/default/files/CRNVMS4-Lutein%20Zeaxanthin%20Meso_30Sept2025.pdf",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "저녁 스크린 사용자",
+        "분류": "수면 메커니즘",
+        "시기": "저녁시간",
+        "지역": "글로벌"
+      },
+      "caution": "★이것은 '이론상' 가능성일 뿐, 루테인 보충이 실제 수면 개선을 한다는 임상 증거는 없다.",
+      "cautionSource": "생리 기전 vs 임상 결과 불일치"
+    },
+    {
+      "id": "blue-light-supplement-marketing-exaggeration-risk-profile",
+      "claim": "시중의 '블루라이트 차단 영양제' 광고는 '청색광 = 망막 손상 위험' → '우리 제품이 차단함' → '눈 건강 개선'이라는 인과 사슬을 암시하나, 각 단계마다 임상 근거 부족이나 과장의 위험이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cochrane/CRN 평가",
+      "source_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013244.pub2/full",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "블루라이트 차단 제품",
+        "분류": "광고 검증",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": "★'블루라이트 차단' 표현만으로는 허위·과대광고는 아니나, '눈 건강 개선' 같은 주장은 입증되지 않았다.",
+      "cautionSource": "Cochrane/식약처 광고 검토"
+    },
+    {
+      "id": "korea-blue-light-supplement-regulation-unclear-status",
+      "claim": "한국 식약처는 블루라이트 차단 또는 청색광 보호를 '기능성'으로 공식 인정하지 않았으나, 루테인·제아잔틴 제품의 '황반부 색소 유지' 기능성으로 간접적 마케팅이 발생하고 있다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "식약처 건강기능식품 고시(직접 확인 필요)",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=2859",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "국내 제품 광고",
+        "분류": "규제 지위",
+        "시기": "2026 현행",
+        "지역": "KR"
+      },
+      "caution": "집필 전 식약처 공식 웹사이트에서 인정 성분·기능 목록을 최종 확인할 것.",
+      "cautionSource": "식약처 공시 미확인"
+    }
+  ]
+}

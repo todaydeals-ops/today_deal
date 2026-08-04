@@ -1,0 +1,123 @@
+{
+  "topic": "한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량",
+  "brand": "공통",
+  "article": "vitamin-d-deficiency-korea",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "fat-soluble-vitamin-requires-meal-absorption",
+    "fat-soluble-vitamin-accumulation-toxicity-risk",
+    "calcium-absorption-vitamin-d-magnesium-synergy"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "vitamin-d-serum-level-sufficiency-definition-korea",
+      "claim": "혈중 25-하이드록시비타민D [25(OH)D] 충분 기준은 30ng/mL 이상, 결핍 기준은 20ng/mL 미만이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Optimal Serum 25(OH)D Level in Korean Women; Evidence and Suggestions for Vitamin D Intake Standards",
+      "source_url": "https://www.mdpi.com/2072-6643/14/22/4845 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC9127520/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "비타민D 혈중 기준",
+        "years": "2026 현행",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "vitamin-d-deficiency-prevalence-korea-gender",
+      "claim": "2008년 한국국민건강영양조사(KNHANES IV) 기준 비타민D 부족률: 남성 47.3%, 여성 64.5%. 특히 젊은 여성의 결핍률이 다른 연령층보다 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Vitamin D Intake and Serum 25-Hydroxyvitamin D Levels in Korean Adults",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5083998/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "한국인 비타민D 결핍률",
+        "years": "2008",
+        "region": "KR"
+      },
+      "caution": "2008년 통계이며, 2024년 현황은 별도 조사 필요. 하지만 한국의 실내 활동 비중이 높으므로 개선 가능성은 낮다.",
+      "cautionSource": "KNHANES 통계"
+    },
+    {
+      "id": "vitamin-d-sun-exposure-seasonal-synthesis-impossibility",
+      "claim": "한국에서 여름은 30분 이내 일광 노출로 충분하나, 겨울은 100분 이상 노출이 필요하며, UV 지수 부족으로 겨울 일광만으로는 비타민D 합성이 불가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JKMS(Journal of Korean Medical Science): Can Current Recommendations on Sun Exposure Sufficiently Increase Serum Vitamin D Level?",
+      "source_url": "https://jkms.org/DOIx.php?id=10.3346%2Fjkms.2020.35.e50",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "한국 계절별 일광 요구",
+        "years": "2020",
+        "region": "KR"
+      },
+      "caution": "★'햇볕을 충분히 쬐면 된다'는 조언은 겨울에 실현 불가능. 특히 실내 근무자, 겨울철 결핍 위험이 매우 높다.",
+      "cautionSource": "JKMS RCT"
+    },
+    {
+      "id": "vitamin-d-dietary-insufficiency-korean-diet",
+      "claim": "한국 식단의 비타민D 함량이 낮고 대부분 실내 활동을 하므로, 식사 + 일광만으로는 충분 수준 달성이 어렵다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Dietary Vitamin D Intake in Low Ultraviolet Irradiation Seasons",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0271531722000562",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "한국 식이 비타민D",
+        "years": "2013-2014",
+        "region": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "vitamin-d-adequate-intake-recommendation-korea-2010",
+      "claim": "2010년 한국인 비타민D 적정섭취량: 성인 여성 5μg/일, 임산부 10μg/일, 65세 이상 노인 15μg/일.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Evidence and Suggestions for Establishing Vitamin D Intake Standards in Koreans",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9127520/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "한국 비타민D 적정섭취량",
+        "years": "2010",
+        "region": "KR"
+      },
+      "caution": "이는 결핍 방지 기준이며, 혈중 30ng/mL 달성을 위한 필요량은 더 높을 수 있다.",
+      "cautionSource": "한국영양학회"
+    },
+    {
+      "id": "vitamin-d-upper-limit-intake-tolerable-level",
+      "claim": "비타민D 상한섭취량(UL, Tolerable Upper Intake Level)은 하루 4,000IU(100μg)이다. 이 이상 장기 복용 시 혈중 칼슘 상승, 신장 손상, 혈관 석회화 위험이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼",
+      "source_url": "https://www.msdmanuals.com/ko/home/%EC%98%81%EC%96%91-%EC%9E%A5%EC%95%A0/%EB%B9%84%ED%83%80%EB%AF%BC/%EB%B9%84%ED%83%80%EB%AF%BC-%EA%B0%9C%EC%9A%94",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "안전성",
+        "line": "비타민D 상한섭취량",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "★고용량 장기 복용은 과잉섭취 위험. 혈중 50ng/mL 이상은 오히려 골절 위험 증가 가능성도 있으니, 30-40ng/mL 유지가 적절.",
+      "cautionSource": "안전성 기준"
+    }
+  ]
+}

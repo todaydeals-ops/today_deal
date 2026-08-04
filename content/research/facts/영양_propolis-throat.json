@@ -1,0 +1,96 @@
+{
+  "topic": "프로폴리스의 목 건강: 플라보노이드 규격·알레르기 위험",
+  "brand": "알약연구소",
+  "article": "프로폴리스, 목에 정말 도움이 될까",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "propolis-throat-symptom-reduction-clinical-trial",
+      "claim": "표준화된 포플러형 프로폴리스 추출물 함유 인후 스프레이는 무작위 대조 임상시험에서 인후통·쉰목소리·인후 부종/발적 등 상기도 감염 증상을 일반군(위약군) 대비 약 2일 빠르게 회복시켰다. 캐나다 프로폴리스(플라보노이드 풍부)를 사용한 라이노바이러스 감염 임상에서는 질병 기간이 2.5배 단축되었다(치료군 3일 vs 위약군 4.8일).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect: A standardized polyphenol mixture extracted from poplar-type propolis for remission of symptoms of uncomplicated upper respiratory tract infection (URTI); PubMed: Propolis for Sore Throat studies",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0944711320301999 ; https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "상기도 감염·인후통 환자",
+        "분류": "증상 개선",
+        "시기": "급성기 (감염 초기)",
+        "지역": "글로벌"
+      },
+      "caution": "프로폴리스의 효과는 표준화된 제형(특정 플라보노이드 함유 규격)에서 입증되었으므로, 일반 프로폴리스 제품이 모두 효과적인 것은 아니다.",
+      "cautionSource": "임상시험 데이터"
+    },
+    {
+      "id": "propolis-flavonoid-standardized-markers",
+      "claim": "프로폴리스의 임상 효과는 6가지 주요 플라보노이드 마커(apigenin, chrysin, galangin, pinobanksin, pinocembrin, quercetin)의 함유량으로 표준화된 제형에서 입증되었다. 이들 플라보노이드는 항바이러스·항염증·면역조절 작용을 통해 상기도 증상 개선에 기여한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect: A standardized polyphenol mixture extracted from poplar-type propolis for remission of symptoms of uncomplicated upper respiratory tract infection",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0944711320301999",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "프로폴리스 제품 선택 사용자",
+        "분류": "성분 규격",
+        "시기": "제품 선택 시",
+        "지역": "글로벌"
+      },
+      "caution": "구매 시 제품 라벨에서 플라보노이드 함유량(또는 '표준화 추출물')을 확인하는 것이 효과를 보장하는 중요한 포인트이다.",
+      "cautionSource": "임상 성분 규격"
+    },
+    {
+      "id": "propolis-allergy-bee-product-sensitization",
+      "claim": "꿀벌 제품에 민감한 사람에서 프로폴리스는 두드러기에서 아나필락시스까지 심각한 알레르기 반응을 유발할 수 있다. 특히 꽃가루 알레르기(화분증) 또는 아토피 소인이 있는 사람에서 위험이 높다. 응급실 방문 또는 입원 필요한 사례도 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MDPI: Ensuring the Safe Use of Bee Products - A Review of Allergic Risks and Management (2025)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12732908/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "꿀벌 제품 민감 인구",
+        "분류": "알레르기 위험",
+        "시기": "섭취 직후 즉시~수시간",
+        "지역": "글로벌"
+      },
+      "caution": "★꽃가루 알레르기·천식·기존 꿀벌 제품 알레르기 병력이 있으면 프로폴리스를 피해야 한다. 교차반응도 위험하다(발루삼(Myroxylon pereirae)과 13개 성분이 공통).",
+      "cautionSource": "알레르기 안전 문헌"
+    },
+    {
+      "id": "propolis-cross-reactivity-myroxylon-peru-balsam",
+      "claim": "프로폴리스는 발루삼(Myroxylon pereirae, 페루 향유)과 13개 화학 성분을 공유하여 교차반응을 일으킬 수 있다. 발루삼에 알레르기가 있는 사람은 프로폴리스 제품에서도 반응할 가능성이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MDPI: Ensuring the Safe Use of Bee Products - A Review of Allergic Risks and Management",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12732908/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "발루삼 알레르기 또는 접촉 민감증 있는 인구",
+        "분류": "교차반응",
+        "시기": "섭취 시",
+        "지역": "글로벌"
+      },
+      "caution": "의료 기록에서 발루삼 민감증이 있으면 프로폴리스 제품을 피해야 한다.",
+      "cautionSource": "알레르기학 문헌"
+    },
+    {
+      "id": "propolis-safety-profile-adverse-event-surveillance",
+      "claim": "프로폴리스의 내약성 프로필은 좋으며, 여러 대조임상시험에서 보고된 부작용이 거의 없다. 프로폴리스는 1.4 mg/kg(약 70 mg/일)의 용량에서 비독성, 비유전독성이며 안전한 것으로 분류된다. 다만 알레르기 반응이 유일한 의미 있는 문서화된 부작용이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MDPI: Ensuring the Safe Use of Bee Products - A Review of Allergic Risks and Management",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12732908/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "프로폴리스 사용자 (비알레르기 인구)",
+        "분류": "안전성",
+        "시기": "일반 용량 섭취",
+        "지역": "글로벌"
+      },
+      "caution": "알레르기 병력이 없으면 안전하나, 첫 복용 시 알레르기 신호(가려움, 부종, 호흡곤란)에 주의해야 한다.",
+      "cautionSource": "약물감시 데이터"
+    }
+  ]
+}

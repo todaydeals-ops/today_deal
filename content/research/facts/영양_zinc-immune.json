@@ -1,0 +1,82 @@
+{
+  "topic": "아연 보충제와 감기 기간 단축: 형태·타이밍·구리 균형",
+  "brand": "알약연구소",
+  "article": "아연, 감기를 짧게 만든다는 말의 조건",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "upper-limit-intake-UL-definition-safety-threshold",
+    "fat-soluble-vitamin-accumulation-toxicity-risk"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "zinc-cold-duration-reduction-lozenge-form-requirement",
+      "claim": "아연 로젠지 형태에서 >75 mg/day로 감기 증상 발생 24시간 내에 복용하면 감기 기간을 평균 33% 단축할 수 있으며, 아연 아세테이트 로젠지는 회복률을 3배 향상시킨다는 메타분석 결과가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Zinc Acetate Lozenges May Improve the Recovery Rate of Common Cold Patients - Individual Patient Data Meta-Analysis",
+      "source_url": "https://academic.oup.com/ofid/article/4/2/ofx059/3098578",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "감기 환자",
+        "분류": "아연 로젠지",
+        "시기": "증상 발생 24시간 내",
+        "지역": "글로벌"
+      },
+      "caution": "★효과는 로젠지 형태에만 증명되었으며, 정제·캡슐 형태는 효과가 입증되지 않았다. 또한 >75 mg/day 미만의 저용량에서는 효과가 없을 수 있다.",
+      "cautionSource": "메타분석 결과"
+    },
+    {
+      "id": "zinc-lozenge-timing-critical-24-hour-onset",
+      "claim": "아연의 감기 기간 단축 효과는 감기 증상 발생 후 24시간 내에 복용을 시작해야 효과가 있으며, 증상이 시작된 지 24시간 이후 복용은 효과가 제한적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cochrane Review: Zinc for prevention and treatment of the common cold (2024)",
+      "source_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD014914.pub2/references",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "감기 환자",
+        "분류": "복용 타이밍",
+        "시기": "증상 발생 후 24시간",
+        "지역": "글로벌"
+      },
+      "caution": "24시간의 시간 제약이 엄격하므로, 의심 증상이 시작된 즉시 로젠지를 복용하는 것이 중요하다.",
+      "cautionSource": "Cochrane 2024 리뷰"
+    },
+    {
+      "id": "zinc-long-term-high-dose-copper-deficiency-risk",
+      "claim": "아연을 장기간 100 mg/day 이상의 고용량으로 복용하면 소장에서 구리 흡수를 경쟁적으로 억제하여 철결핍성 빈혈, 호중구감소증, 신경계 손상(척수증) 등 구리 결핍 증상이 나타날 수 있으며, 이 상태는 구리 보충 후에도 완전히 회복되지 않을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "British Journal of Clinical Pharmacology: Iatrogenic copper deficiency - Risks and cautions with zinc prescribing (2023)",
+      "source_url": "https://bpspubs.onlinelibrary.wiley.com/doi/10.1111/bcp.15749",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "고용량 아연 보충 사용자",
+        "분류": "아연-구리 길항",
+        "시기": "장기 복용",
+        "지역": "글로벌"
+      },
+      "caution": "★구리 결핍으로 인한 신경계 손상은 회복되지 않을 수 있으므로, 100 mg/day 이상의 장기 복용은 피해야 한다. 상한섭취량(UL) 40 mg/day를 초과하지 않는 것이 권장된다.",
+      "cautionSource": "British Journal of Clinical Pharmacology 임상 가이드"
+    },
+    {
+      "id": "zinc-supplement-form-comparison-efficacy",
+      "claim": "아연 로젠지 형태 중에서 아연 아세테이트와 아연 글루코네이트가 감기 기간 단축에 효과적이며, 아연 아세테이트가 약간 더 효과적인 것으로 보고되었다. 일반 정제·캡슐 형태의 아연은 감기 기간 단축에 임상적 효과가 입증되지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Individual Patient Data Meta-Analysis of Zinc Lozenges",
+      "source_url": "https://academic.oup.com/ofid/article/4/2/ofx059/3098578",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "감기 환자",
+        "분류": "아연 제형",
+        "시기": "급성기",
+        "지역": "글로벌"
+      },
+      "caution": "로젠지 형태가 아닌 다른 제형은 효과가 없으므로, 감기 치료 목적이면 반드시 로젠지를 선택해야 한다.",
+      "cautionSource": "메타분석"
+    }
+  ]
+}

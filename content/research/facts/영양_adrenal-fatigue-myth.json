@@ -1,0 +1,147 @@
+{
+  "topic": "부신피로증후군의 의학적 인정 여부 및 감별 질환",
+  "brand": "알약연구소",
+  "article": "부신피로증후군이라는 진단은 존재하는가",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "adrenal-fatigue-endocrine-society-not-recognized",
+      "claim": "미국 내분비학회(Endocrine Society)와 다른 주요 의료 단체들은 '부신피로증후군(Adrenal Fatigue Syndrome)'을 의학적으로 인정된 질환으로 간주하지 않는다. 공식 성명에서 '과학적 증거가 없다'고 명시했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Endocrine Society: Adrenal Fatigue",
+      "source_url": "https://www.endocrine.org/patient-engagement/endocrine-library/adrenal-fatigue",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "부신피로증후군",
+        "분류": "진단 인정",
+        "시기": "현행",
+        "지역": "USA"
+      },
+      "caution": "★'부신피로증후군'은 과학적 지위가 없는 마케팅 용어다. 이를 '질병'이나 '증후군'으로 표기하면 규제 위반이 될 수 있다.",
+      "cautionSource": "내분비학회 공식 입장"
+    },
+    {
+      "id": "adrenal-fatigue-no-scientific-validation-symptom-scoring",
+      "claim": "부신피로증후군을 진단하기 위해 사용되는 증상 채점 시스템과 타액 코르티솔(salivary cortisol) 검사는 과학적으로 검증되거나 표준화되지 않았으며, 시상하부-뇌하수체-부신축(HPA axis) 기능을 평가하는 공식 의료 진단 도구가 아니다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Adrenal fatigue does not exist: a systematic review",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4997656/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "부신피로증후군 진단",
+        "분류": "진단 방법 검증",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
+      "caution": "★'타액 코르티솔 검사'를 받고 '부신 피로'라는 진단을 받았다면, 그것은 의학적 진단이 아니라 판매자의 마케팅이다.",
+      "cautionSource": "체계적 문헌고찰"
+    },
+    {
+      "id": "adrenal-fatigue-symptom-overlap-misdiagnosis-risk",
+      "claim": "부신피로증후군으로 진단받는 증상(피로, 무기력, 집중력 저하, 수면 장애, 근골격 통증)은 우울증, 수면무호흡증, 갑상선 기능 저하증, 빈혈, 만성 스트레스 등 진실한 의학적 질환과 거의 동일하다. 따라서 잘못된 진단은 진짜 원인을 찾기 어렵게 할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "WebMD: Adrenal Fatigue: Is It Real?",
+      "source_url": "https://www.webmd.com/a-to-z-guides/adrenal-fatigue-is-it-real",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "부신피로증후군",
+        "분류": "감별 진단",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
+      "caution": "★'부신 피로'라는 진단을 받으면 진짜 질환 검사를 미루게 될 수 있다. 의료진은 의무적으로 다른 원인을 먼저 배제해야 한다.",
+      "cautionSource": "의료 안전"
+    },
+    {
+      "id": "adrenal-insufficiency-vs-adrenal-fatigue-distinction",
+      "claim": "진실한 부신 질환인 '부신 부전(Addison's disease)'은 부신 피질에서 코르티솔 분비가 현저히 감소하는 자가면역 질환이며, 혈액 검사로 진단되고 호르몬 대체 치료가 필수다. 이와 '부신피로증후군'은 완전히 다른 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Mayo Clinic: Adrenal fatigue FAQ",
+      "source_url": "https://www.mayoclinic.org/diseases-conditions/addisons-disease/expert-answers/adrenal-fatigue/faq-20057906",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "부신 질환 분류",
+        "분류": "진단 구분",
+        "시기": "현행",
+        "지역": "USA"
+      },
+      "caution": "부신 부전과 부신피로증후군을 혼동하면 안 된다. 전자는 진실한 질병이고 후자는 미인정 개념이다.",
+      "cautionSource": "의료 진단 기준"
+    },
+    {
+      "id": "fatigue-differential-diagnosis-checklist",
+      "claim": "만성 피로를 호소하는 환자가 먼저 검사받아야 할 질환: (1) 갑상선 기능 저하증(TSH, free T4), (2) 빈혈(CBC, ferritin), (3) 비타민 B12/엽산 결핍, (4) 수면무호흡증(수면 다원검사), (5) 우울증·불안장애(정신과 상담), (6) 만성질환(당뇨, 만성신질환), (7) 약물 부작용 검토.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Adrenal fatigue does not exist: a systematic review",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4997656/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "피로 원인 감별",
+        "분류": "진단 절차",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
+      "caution": "★집필 시 이 목록을 반드시 포함할 것. 독자가 '부신 피로'가 아닌 진정한 원인을 찾도록 유도하는 것이 우리의 책임이다.",
+      "cautionSource": "의료 실무"
+    },
+    {
+      "id": "adrenal-fatigue-marketing-term-supplement-sales",
+      "claim": "'부신피로증후군'은 주로 보충제 판매사, 건강 코치, 미인증 의료인에 의해 마케팅 용어로 사용되며, 진정한 의료 전문가는 이 진단명을 사용하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Ubie Doctor's Note: Adrenal Fatigue",
+      "source_url": "https://ubiehealth.com/doctors-note/doctors-experts-insights-adrenal-fatigue-debate-4762q2",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "부신피로증후군의 역사",
+        "분류": "마케팅",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
+      "caution": "★광고의 신호: '부신 피로 테스트', '부신 회복 프로그램', '부신 건강 영양제' 같은 표현은 의학 외 마케팅이다.",
+      "cautionSource": "비판적 평가"
+    },
+    {
+      "id": "chronic-fatigue-hpa-axis-stress-relationship-research",
+      "claim": "만성 피로와 스트레스 호르몬 축(HPA axis) 사이에 관계가 있다는 연구는 있으나, 이것이 '부신 피로'라는 새로운 질병 진단을 정당화하지는 않는다. HPA 기능 이상은 이미 기존 질환(우울증, 불안장애, PTSD 등)에 포함되어 연구되고 있다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Adrenal fatigue does not exist: a systematic review",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4997656/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "스트레스와 피로",
+        "분류": "기전 연구",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
+      "caution": "HPA 축 이상은 이미 정신의학, 내분비학에서 인정되는 개념이다. 그것을 새롭게 '부신 피로'라고 부를 이유는 없다.",
+      "cautionSource": "학문적 중복성"
+    },
+    {
+      "id": "treatment-adrenal-fatigue-unapproved-expensive-insurance",
+      "claim": "부신피로증후군에 대해 제시되는 치료(특정 보충제, 생활습관 프로그램, 아드레날린 지원 제품)는 FDA나 식약처에서 승인하지 않았으며, 대부분 비용이 높고 보험이 적용되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Mayo Clinic: Adrenal fatigue FAQ",
+      "source_url": "https://www.mayoclinic.org/diseases-conditions/addisons-disease/expert-answers/adrenal-fatigue/faq-20057906",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "부신피로증후군 치료",
+        "분류": "규제·경제",
+        "시기": "현행",
+        "지역": "USA/글로벌"
+      },
+      "caution": "★비승인 치료에 고비용을 지출하는 것은 경제적 피해다. 의료보험이 적용되지 않는다는 것 자체가 의료 전문가들이 인정하지 않는다는 신호다.",
+      "cautionSource": "의료 안전"
+    }
+  ]
+}

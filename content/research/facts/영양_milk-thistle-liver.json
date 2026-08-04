@@ -1,0 +1,133 @@
+{
+  "topic": "밀크씨슬(실리마린)의 간 수치 개선 임상 근거 및 음주와의 관계",
+  "brand": "알약연구소",
+  "article": "밀크씨슬, 간 수치를 정말 낮출까",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "korea-health-food-function-claim-disease-prevention-prohibition",
+    "upper-limit-intake-UL-definition-safety-threshold"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "silymarin-mechanism-antioxidant-hepatoprotective",
+      "claim": "밀크씨슬에 함유된 실리마린은 항산화 작용을 통해 활성산소를 제거하고, 간세포를 직접 보호하며, 염증과 섬유화를 억제하는 기전을 가진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Silymarin as an Antioxidant Therapy in Chronic Liver Diseases",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/39286715/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "만성 간질환 일반",
+        "분류": "기전",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "silymarin-NAFLD-ALT-AST-reduction-meta-analysis",
+      "claim": "2024년 메타분석에서 실리마린 140~420mg/일을 8~24주간 투여한 NAFLD(비알코올성 지방간질환) 환자에게서 ALT와 AST가 통계적으로 유의하게 감소했으며, 간 조직학적 개선(간 지방변성)도 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Administration of silymarin in NAFLD/NASH: A systematic review and meta-analysis",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/38579127/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "비알코올성 지방간질환(NAFLD)",
+        "분류": "임상 효과",
+        "시기": "2024",
+        "지역": "글로벌"
+      },
+      "caution": "★NAFLD는 음주와 무관하게 발생하는 질환이므로, 이 근거를 '음주자의 간 수치 개선'으로 해석하면 안 된다.",
+      "cautionSource": "임상 근거 범위 제한"
+    },
+    {
+      "id": "silymarin-alcoholic-cirrhosis-limited-evidence",
+      "claim": "알코올성 간경변 환자 170명을 대상으로 한 임상시험에서 실리마린 투여군의 58%가 개선을 보였고, 4년 생존율이 실리마린군 58% vs 플라시보군 39%였으나, 이는 단일 연구이며 이후 메타분석에서 알코올성 간질환에 대한 일관된 효과가 입증되지 않았다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Silymarin/Silybin and Chronic Liver Disease",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6155865/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "알코올성 간경변",
+        "분류": "임상 효과",
+        "시기": "고전적 연구",
+        "지역": "글로벌"
+      },
+      "caution": "★알코올성 간질환에 대한 실리마린의 효과는 근거가 제한적이며, 현재 의학계는 이를 확정 치료법으로 인정하지 않는다. '음주 면죄부'로 해석될 여지를 엄격히 차단할 것.",
+      "cautionSource": "메타분석 결과 불일치"
+    },
+    {
+      "id": "silymarin-nash-fibrosis-improvement-trial",
+      "claim": "48주간 실리마린 700mg을 투여받은 NASH(비알코올성 지방간염) 환자에게서 간 조직 검사(biopsy)상 섬유화 개선이 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed/NCBI: Silymarin in non-cirrhotics with non-alcoholic steatohepatitis",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6752871/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "비알코올성 지방간염(NASH)",
+        "분류": "임상 효과",
+        "시기": "선행 연구",
+        "지역": "글로벌"
+      },
+      "caution": "조직 검사를 통한 직접 확인이 이루어져 신뢰도가 높으나, 단일 시험이며 장기 추적이 필요하다.",
+      "cautionSource": "임상 근거 수준"
+    },
+    {
+      "id": "silymarin-alcohol-induced-liver-injury-protective-only",
+      "claim": "실리마린이 알코올 남용 시 간세포 생명력 감소와 지질 과산화, 세포 괴사를 억제할 수 있다는 기전 연구가 있으나, 음주자에게 간경변 진행을 '예방'한다는 임상 증거는 부족하다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "기전 연구는 있으나 인체 예방 근거 부족",
+      "source_url": null,
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "음주 관련 간손상",
+        "분류": "예방 효과",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★집필 시 절대 피할 표현: '음주하면서 실리마린을 먹으면 간을 보호할 수 있다' → 이는 음주를 용인하는 오류. 정확한 표현: '음주 손상을 완전히 막을 수는 없으며, 금주가 최우선'.",
+      "cautionSource": "규제 표시 기준"
+    },
+    {
+      "id": "silymarin-dosage-range-korean-market",
+      "claim": "국내에서 판매되는 밀크씨슬 제품은 대부분 실리마린 함량 140~200mg/정 형태로 표시되며, 권장 복용량은 제품마다 다르지만 일일 300~420mg 범위가 임상 연구의 기초가 되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 건강기능식품공전; 임상 메타분석 결과",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=3811&bbs_no=bbs464",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "국내 건강기능식품",
+        "분류": "용량",
+        "시기": "2026 현행",
+        "지역": "KR"
+      },
+      "caution": "고함량 제품이 더 효과적인 것은 아니며, 과다 복용 시 소화계 부작용(설사, 복부 불편감)이 보고될 수 있다.",
+      "cautionSource": "임상 용량 기준"
+    },
+    {
+      "id": "silymarin-interaction-warfarin-caution",
+      "claim": "일부 보고에서 실리마린이 항응고제 와파린의 효과를 상승시킬 수 있다는 우려가 제기되었으므로, 와파린 복용자는 의료 전문가와 상담해야 한다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Levothyroxine Interactions with Food and Dietary Supplements",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8002057/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "항응고제 복용자",
+        "분류": "약물 상호작용",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "와파린 복용 시 밀크씨슬 추가 섭취 전 반드시 의료진에게 고지할 것.",
+      "cautionSource": "약물 상호작용 문헌"
+    }
+  ]
+}

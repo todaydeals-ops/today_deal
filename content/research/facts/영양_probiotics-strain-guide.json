@@ -1,0 +1,81 @@
+{
+  "topic": "프로바이오틱스 균주 특이성·CFU 함정·목적별 균주 선택",
+  "brand": "알약연구소",
+  "article": "유산균, 균주 이름을 봐야 하는 이유",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "antibiotic-probiotic-simultaneous-administration-interference"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "probiotic-strain-specificity-not-species-level",
+      "claim": "프로바이오틱스의 효과는 종(species) 수준이 아니라 균주(strain) 수준에서 결정되며, 같은 Lactobacillus plantarum이라도 균주마다 효과가 완전히 다를 수 있다. ICU 감염 예방 효과도 균주 특이적이며, 새로 개발된 균주는 특정 질환에 목표화(targeted)되어야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect: Effect of probiotic strain, duration, and dose on preventing ICU-acquired infection - A scoping review",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0924857926000038",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "프로바이오틱스 사용자",
+        "분류": "균주 선택",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★'프로바이오틱스'라는 일반명으로 구매해서는 안 되며, 반드시 균주명(예: Lactobacillus rhamnosus GG, L. plantarum 299v)을 확인하고 본인의 증상에 맞는지 확인해야 한다.",
+      "cautionSource": "균주 특이성 임상 근거"
+    },
+    {
+      "id": "probiotic-cfu-count-trap-efficacy-not-proportional",
+      "claim": "CFU(집락형성단위) 수가 높다고 효과가 높은 것이 아니며, 올바른 균주를 적절한 용량으로 섭취하는 것이 중요하다. 목적에 맞지 않는 균주는 CFU가 아무리 높아도 효과가 없을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Magnitude Biosciences: Probiota 2024 - Exploring Probiotic Efficacy Beyond CFUs",
+      "source_url": "https://magnitudebiosciences.com/2024/03/06/understanding-the-importance-of-cfus/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "프로바이오틱스 사용자",
+        "분류": "CFU 함정",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "높은 CFU는 마케팅 표현일 뿐이며, 실제 효과는 균주와 용량의 조합에 달려 있다.",
+      "cautionSource": "2024 프로바이오틱스 리뷰"
+    },
+    {
+      "id": "probiotic-strain-matched-to-condition-examples",
+      "claim": "목적에 따라 추천되는 균주가 다르다: L. rhamnosus GG(LGG)는 과민성장증후군 설사형(IBS-D)과 장벽 기능 복구에, L. plantarum 299v는 복통과 복부팽만감에, L. plantarum IS-10506은 아토피피부염 면역조절에, L. plantarum LB931은 질 건강에, L. plantarum CCFM8724는 유아 우식증 예방에 각각 임상 근거가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Strain-Specific Therapeutic Potential of Lactiplantibacillus plantarum - A Systematic Scoping Review; Seed Health: Lactiplantibacillus plantarum",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11990516/ ; https://seed.com/cultured/lactiplantibacillus-plantarum-benefits-science-guide/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "증상별 프로바이오틱스 선택 필요 인구",
+        "분류": "목적별 균주",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "본인의 증상(장 증상, 피부 증상, 여성 건강 등)이 무엇인지 파악한 후 그에 맞는 균주를 선택해야 하며, 무분별한 다균주 조합보다는 목표화된 단일·소수 균주가 더 효과적일 수 있다.",
+      "cautionSource": "균주별 임상 근거"
+    },
+    {
+      "id": "probiotic-icu-dose-recommendation",
+      "claim": "ICU 감염 예방에 효과 있는 프로바이오틱스 용량은 최소 14일 이상의 복용 기간과 5 × 10⁹ CFU/day 이상의 용량이 필요하며, ≥22 × 10⁹ CFU/day는 더 높은 효과를 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect: Effect of probiotic strain, duration, and dose on preventing ICU-acquired infection - A scoping review",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0924857926000038",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "ICU 환자 또는 감염 예방 목적",
+        "분류": "용량 기준",
+        "시기": "14일 이상",
+        "지역": "글로벌"
+      },
+      "caution": "일반적인 건강 유지 목적과 임상적 개입 목적의 용량은 다르다. 의료진의 지시 없이 고용량 장기 복용은 권장되지 않는다.",
+      "cautionSource": "메타분석 근거"
+    }
+  ]
+}

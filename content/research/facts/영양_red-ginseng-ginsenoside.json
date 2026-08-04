@@ -1,0 +1,133 @@
+{
+  "topic": "홍삼 진세노사이드의 종류별 효과 및 식약처 기능성 인정 범위",
+  "brand": "알약연구소",
+  "article": "홍삼, 진세노사이드 함량이 전부일까",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "korea-health-food-certified-form-standard-raw-material",
+    "korea-health-food-function-claim-disease-prevention-prohibition"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "ginsenoside-rg3-rb1-difference-bioavailability",
+      "claim": "진세노사이드 Rb1은 홍삼의 원래 형태이고, Rg3는 홍삼을 찌고 말리는 과정(steaming & drying)에서 Rb1이 열에 의해 변환된 더 활성적인 형태다. Rg3는 Rb1보다 체내에서 더 빠르게 흡수되고 생물이용률이 높을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Molecular signaling of ginsenosides Rb1, Rg1, and Rg3 and their mode of actions",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5926405/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "진세노사이드 형태",
+        "분류": "화학·생화학",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★집필 시 주의: 'Rg3가 더 좋다'는 광고가 있으나, 두 형태가 인체에서 구별되는 임상 효과를 보인 대규모 RCT는 부족하다.",
+      "cautionSource": "임상 비교 연구 미충분"
+    },
+    {
+      "id": "ginsenoside-absorption-variability-individual-difference",
+      "claim": "진세노사이드의 장내 흡수는 개인의 장내 미생물 구성에 따라 크게 달라질 수 있으며, 장내 박테리아가 진세노사이드를 대사하는 능력이 개인차가 크다는 연구 결과가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Pharmacokinetics of Ginsenoside Rb1, Rg3, Rk1, Rg5, F2, and Compound K from Red Ginseng Extract in Healthy Korean Volunteers",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8803428/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "진세노사이드 흡수",
+        "분류": "개인차",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★같은 제품을 먹어도 A는 효과가 있고 B는 없을 수 있다는 의미. 개인의 장내 미생물 환경과 소화 능력이 중요하다.",
+      "cautionSource": "약리학 근거"
+    },
+    {
+      "id": "korea-red-ginseng-mfds-approved-function-claims",
+      "claim": "한국 식약처가 인정한 홍삼의 기능성 표시는 면역력 증강, 피로 개선, 혈액순환 개선, 기억력 개선, 항산화 작용, 갱년기 여성 증상 완화이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 건강기능식품공전; 뉴트라인그레디언츠 보도",
+      "source_url": "https://www.nutraingredients.com/Article/2021/01/21/Menopause-and-immune-health-Korea-Yakult-develops-fermented-red-ginseng-product-with-patented-tech/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "홍삼",
+        "분류": "규제",
+        "시기": "2026 현행",
+        "지역": "KR"
+      },
+      "caution": "식약처 인정 범위를 벗어난 표시(예: '혈당 조절', '혈압 강화', '항암')는 불법 광고다. 집필 시 절대 허용 범위를 넘어서지 말 것.",
+      "cautionSource": "식약처 표시 기준"
+    },
+    {
+      "id": "ginsenoside-content-high-vs-effect-relationship-unclear",
+      "claim": "제품의 진세노사이드 함량이 높다고 해서 효과가 반드시 뛰어난 것은 아니며, 개인의 흡수력, 장내 미생물, 투여 기간 등 여러 변수가 실제 임상 결과에 영향을 미친다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "NCBI/PMC 약리학 문헌; 개인차 연구",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8803428/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "홍삼 함량과 효과",
+        "분류": "임상 효과",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★광고에서 '고함량 = 고효과'라는 등식은 성립하지 않는다는 점을 강조할 것.",
+      "cautionSource": "약리학 원리"
+    },
+    {
+      "id": "red-ginseng-fermentation-ginsenoside-bioavailability-increase",
+      "claim": "발효 홍삼은 발효 과정에서 장내 박테리아 환경을 모방하여 진세노사이드를 작은 분자(예: compound K)로 분해하므로, 경구 흡수가 더 빠를 수 있다는 주장이 있다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "NutraIngredients: Immunity gift - Korea's Youguth launches fermented red ginseng",
+      "source_url": "https://www.nutraingredients.com/Article/2021/04/15/Immunity-gift-Korea-s-Youguth-launches-fermented-red-ginseng-with-probiotic-supplement-in-Singapore-unveils-NPD-plans",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "발효 홍삼",
+        "분류": "기술·가공",
+        "시기": "2021~",
+        "지역": "KR"
+      },
+      "caution": "발효가 흡수를 높인다는 원리는 있으나, 임상 효과 차이를 입증한 대규모 비교 연구는 부족하다. 마케팅 과장을 피할 것.",
+      "cautionSource": "임상 근거 부족"
+    },
+    {
+      "id": "ginseng-dosage-typical-range",
+      "claim": "임상 연구에서 사용된 홍삼 용량은 일반적으로 하루 1~3g(진세노사이드 약 5~15mg)이며, 국내 제품은 대부분 하루 1~2정으로 이 범위 내다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임상 메타분석; 식약처 기준",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=3811&bbs_no=bbs464",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "홍삼",
+        "분류": "용량",
+        "시기": "현행",
+        "지역": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "red-ginseng-safety-drug-interaction-warfarin-caution",
+      "claim": "홍삼에는 항응고 효과가 있을 수 있으므로, 와파린이나 아스피린 같은 항응고제를 복용 중인 환자는 홍삼 추가 섭취 전 의료진과 상담해야 한다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Safety of red ginseng and herb extract complex",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9270655/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "항응고제 복용자",
+        "분류": "약물 상호작용",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "항응고제와의 상호작용은 확실하지 않지만, '혈액을 묽게 한다'는 광고는 오해를 불러일으킬 수 있다.",
+      "cautionSource": "약학 문헌"
+    }
+  ]
+}

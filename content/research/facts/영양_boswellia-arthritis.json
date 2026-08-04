@@ -1,0 +1,106 @@
+{
+ "topic": "보스웰리아 추출물의 관절염 효과와 NSAID 비교",
+ "brand": "공통",
+ "article": "boswellia-arthritis",
+ "captured": "2026-08-04",
+ "reused_facts": [
+  "rct-randomized-controlled-trial-definition-gold-standard",
+  "meta-analysis-systematic-review-highest-evidence-hierarchy"
+ ],
+ "declined_facts": [],
+ "disputes": [],
+ "facts": [
+  {
+   "id": "boswellia-akba-5-lipoxygenase-inhibition-mechanism",
+   "claim": "보스웰리아 추출물의 활성 성분 AKBA(3-Acetyl-11-Keto-Boswellic Acid)는 5-리포옥시게나제(5-LOX) 효소를 직접 억제하여 류코트리엔 B4 등 염증 매개물질 생성을 차단한다.",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "NCBI/PMC: Boswellia serrata Extract Containing 30% AKBA Attenuates Inflammatory Mediators",
+   "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8506213/",
+   "checked": "2026-08-04",
+   "scope": {
+    "brand": "공통",
+    "category": "영양제",
+    "line": "보스웰리아 기전",
+    "years": "전 연식",
+    "region": "글로벌"
+   },
+   "caution": "AKBA의 5-LOX 억제는 입증됐으나, COX 억제(NSAID 기전)와는 다른 경로이므로 '천연 NSAID'라는 표현은 부정확.",
+   "cautionSource": "생화학 문헌"
+  },
+  {
+   "id": "boswellia-rct-knee-osteoarthritis-efficacy",
+   "claim": "인도 개발 보스웰리아 추출물(AKBA 농축)은 무릎 관절염 환자를 대상으로 한 RCT에서 30일 내 위약 대비 무릎 통증 및 증상을 유의하게 개선시켰다.",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "BMC Complementary Medicine and Therapies (메타분석)",
+   "source_url": "https://link.springer.com/article/10.1186/s12906-020-02985-6",
+   "checked": "2026-08-04",
+   "scope": {
+    "brand": "공통",
+    "category": "영양제",
+    "line": "보스웰리아 RCT",
+    "years": "전 연식",
+    "region": "글로벌"
+   },
+   "caution": "단기(30일) 효과만 입증됐으며, 장기 안전성·효과 지속성은 미확인.",
+   "cautionSource": "RCT 논문",
+   "note": "출처 교체: 자연요법 단체 자료 → 동료심사 메타분석(BMC)."
+  },
+  {
+   "id": "boswellia-meta-analysis-pain-function-improvement",
+   "claim": "2020년 메타분석(7개 RCT, n=545)은 무릎 관절염에서 보스웰리아 추출물이 통증과 신체 기능을 위약 대비 유의하게 개선시켰다고 결론지었다.",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "BMC Complementary Medicine and Therapies: Effectiveness of Boswellia and Boswellia Extract for Osteoarthritis Patients",
+   "source_url": "https://link.springer.com/article/10.1186/s12906-020-02985-6",
+   "checked": "2026-08-04",
+   "scope": {
+    "brand": "공통",
+    "category": "영양제",
+    "line": "보스웰리아 메타분석",
+    "years": "2020",
+    "region": "글로벌"
+   },
+   "caution": "메타분석이지만 개별 RCT 질 편차, AKBA 함량 표준화 여부 미상.",
+   "cautionSource": "메타분석 논문"
+  },
+  {
+   "id": "boswellia-vs-nsaid-gi-safety-advantage",
+   "claim": "2018년 메타분석에서 커큐민·보스웰리아 복합 포뮬레이션이 무릎 관절염에서 NSAID 대비 통증·기능 개선은 유사하나, NSAID보다 위장관계 부작용이 적었다.",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "ScienceDirect: Evaluating the Efficacy and Safety of Curcuma longa, Boswellia serrata, and Their Mixed Formulation",
+   "source_url": "https://www.sciencedirect.com/science/article/pii/S0965229925001323",
+   "checked": "2026-08-04",
+   "scope": {
+    "brand": "공통",
+    "category": "영양제",
+    "line": "보스웰리아 vs NSAID",
+    "years": "2018",
+    "region": "글로벌"
+   },
+   "caution": "★'NSAID 대신 쓸 수 있다'는 해석은 과장이나, '소화 편한 대안'으로는 근거 있음. 단, 약물치료 필요 판단은 의료 전문가 몫.",
+   "cautionSource": "2018 메타분석"
+  },
+  {
+   "id": "akba-content-variance-commercial-products",
+   "claim": "AKBA 함유 상품 13배 편차: '보스웰리아 추출물(AKBA 강조)' 제품은 평균 98mg/g AKBA이나, '보스웰리아 추출물'으로만 표기된 제품은 평균 7.4mg/g AKBA였다.",
+   "tier": "확인실패",
+   "evidence": "공식",
+   "source": "권위 출처 미확보",
+   "source_url": null,
+   "checked": "2026-08-04",
+   "scope": {
+    "brand": "공통",
+    "category": "영양제",
+    "line": "AKBA 함량 편차",
+    "years": "전 연식",
+    "region": "글로벌"
+   },
+   "caution": "★'보스웰리아 추출물'이라는 표기만으로는 AKBA 함량을 알 수 없다. 제품 선택 시 '30% AKBA 표준화' 또는 'AKBA XXmg 함유' 명시 여부를 반드시 확인해야 함.",
+   "cautionSource": "보스웰리아 제조사 정보",
+   "note": "제품별 AKBA 함량 편차 주장은 1차 출처 미확보. ★집필 시 인용 금지(수치 언급 불가)."
+  }
+ ]
+}

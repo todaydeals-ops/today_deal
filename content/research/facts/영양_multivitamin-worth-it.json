@@ -1,0 +1,100 @@
+{
+  "topic": "종합비타민의 가치: 대규모 임상 결과·식사 대체 불가",
+  "brand": "알약연구소",
+  "article": "종합비타민, 먹을 가치가 있다는 근거는",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "statistical-significance-vs-clinical-significance-distinction",
+    "surrogate-endpoint-vs-clinical-outcome-discordance",
+    "industry-sponsored-research-bias-conflict-of-interest"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "multivitamin-rct-mortality-no-benefit-suvi-max-vital-cosmos",
+      "claim": "대규모 무작위 대조 임상(RCT)에서 종합비타민 또는 종합미네랄 보충제는 전체 사망률(all-cause mortality)을 감소시키지 못했다. SU.VI.MAX(n=13,017, 중앙값 7.5년)에서 항산화 복합제(비타민 E, C, 베타카로틴, 셀레늄, 아연)는 사망률에 영향을 주지 않았으며, PHS-II와 COSMOS 연구도 동일한 결론을 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI: Results - Vitamin, Mineral, and Multivitamin Supplements for the Primary Prevention of Cardiovascular Disease and Cancer; ScienceDirect: Multivitamin-multimineral supplementation and mortality - a meta-analysis of randomized controlled trials (2023)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK173991/ ; https://www.sciencedirect.com/science/article/pii/S0002916523054242",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "건강한 성인 (1차 예방)",
+        "분류": "사망률·심혈관 효과",
+        "시기": "5~7.5년 추적",
+        "지역": "글로벌"
+      },
+      "caution": "★대규모 임상에서 장기 추적 시 건강한 사람의 사망률 또는 심혈관질환 예방에 종합비타민의 효과가 없었다.",
+      "cautionSource": "메타분석"
+    },
+    {
+      "id": "multivitamin-cardiovascular-outcomes-no-effect",
+      "claim": "종합비타민·종합미네랄 보충제는 혈관 사망률(vascular mortality), 뇌혈관질환, 심부전에 영향을 미치지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI: Results - Vitamin, Mineral, and Multivitamin Supplements for the Primary Prevention of Cardiovascular Disease and Cancer",
+      "source_url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK173991/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "일반 성인",
+        "분류": "심혈관질환 예방",
+        "시기": "5~7.5년",
+        "지역": "글로벌"
+      },
+      "caution": "심혈관질환 예방을 목적으로 종합비타민을 복용하는 것은 임상적 근거가 없다.",
+      "cautionSource": "대규모 RCT 메타분석"
+    },
+    {
+      "id": "multivitamin-deficiency-gap-filling-not-food-replacement",
+      "claim": "종합비타민은 영양결핍 위험이 높은 인구(식이가 나쁜 사람, 특정 영양소 결핍 인구)의 영양 공백을 메우는 데는 효과적이다. 다만 식사로 전환할 수 없는 음식의 다양한 생리활성물질(파이토뉴트리언트, 식이섬유, 장내 미생물군 변화)을 대체할 수 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Addressing nutritional gaps with multivitamin and mineral supplements; DSM-Firmenich: Will a Multivitamin Reduce the Risk of Vitamin Deficiencies?",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4109789/ ; https://www.dsm-firmenich.com/en/businesses/health-nutrition-care/news/talking-nutrition/multivitamin-reduce-risk-deficiency.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "영양결핍 위험 인구 vs 일반 인구",
+        "분류": "역할 구분",
+        "시기": "보충 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★식사가 부실한 사람은 종합비타민을 복용하되, 이것이 음식을 대체하지 않으며 '영양 격차 메우기'만 가능하다는 점을 이해해야 한다. 좋은 식사가 우선이다.",
+      "cautionSource": "영양학 기본 원칙"
+    },
+    {
+      "id": "multivitamin-adequacy-improvement-15-nutrients",
+      "claim": "미국 성인을 대상으로 한 연구에서 종합비타민 사용은 조사된 17개 영양소 중 15개 영양소의 부족(inadequacy) 유병률을 감소시켰다. 단, 칼슘·마그네슘·비타민 D는 대부분의 제품에서 충분한 함량을 제공하지 못했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MDPI: Impact of Frequency of Multi-Vitamin/Multi-Mineral Supplement Intake on Nutritional Adequacy and Nutrient Deficiencies in U.S. Adults",
+      "source_url": "https://www.mdpi.com/2072-6643/9/8/849",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "미국 성인",
+        "분류": "영양소별 효과",
+        "시기": "정기 섭취",
+        "지역": "미국"
+      },
+      "caution": "종합비타민만으로는 칼슘·마그네슘·비타민 D 부족을 충분히 보충할 수 없으므로, 이 세 영양소는 별도 보충 또는 음식 섭취가 필요할 수 있다.",
+      "cautionSource": "영양소 부족 데이터"
+    },
+    {
+      "id": "multivitamin-target-population-poor-diet",
+      "claim": "영양 부족 위험이 높은 인구(과식이 나쁜 사람, 고령자, 특정 질환자)에서 종합비타민은 결핍 위험을 70%에서 30%로 감소시킬 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HSIS: Taking a Multivitamin is Shown To Fill Nutrient Gaps in our Diet",
+      "source_url": "https://www.hsis.org/taking-a-multivitamin-is-shown-to-fill-nutrient-gaps-in-our-diet/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "영양 부족 위험 인구",
+        "분류": "영양결핍 예방",
+        "시기": "정기 섭취",
+        "지역": "글로벌"
+      },
+      "caution": "일반인(음식 섭취가 충분한 사람)은 종합비타민으로 사망률·질병 이득을 기대할 수 없다.",
+      "cautionSource": "대상 선정 기준"
+    }
+  ]
+}

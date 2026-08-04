@@ -1,0 +1,151 @@
+{
+  "topic": "아스타잔틴의 눈 피로·조절력 개선 임상 근거, 용량, 광고 표현",
+  "brand": "알약연구소·눈 건강",
+  "article": "astaxanthin-eye-fatigue",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "korea-health-food-function-claim-disease-prevention-prohibition",
+    "fat-soluble-vitamin-requires-meal-absorption",
+    "rct-randomized-controlled-trial-definition-gold-standard"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "astaxanthin-basic-mechanism-antioxidant-ciliary-body",
+      "claim": "아스타잔틴은 카로테노이드 계열 항산화제로서 먹인 후 안구 맑은 체(ciliary body) 조절 근육에 축적되어 디지털 화면 사용으로 인한 활성산소 손상을 방지하고 눈 조절 능력을 지원한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PubMed: Effects of anthocyanin, astaxanthin, and lutein on eye functions",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/34376917/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "컴퓨터 사용자, 눈 피로",
+        "분류": "성분 기전",
+        "시기": "급성 및 만성 피로",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "astaxanthin-digital-eye-strain-rct-dosage-4-12mg",
+      "claim": "임상 RCT 연구들에서 일일 4~12mg의 아스타잔틴을 4~12주 복용한 결과, 컴퓨터 사용자의 주관적 눈 피로(computer vision syndrome) 증상 감소와 눈 조절력(accommodation) 개선을 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Astaxanthin (AstaReal®) Improved Acute and Chronic Digital Eye Strain in Children",
+      "source_url": "https://link.springer.com/article/10.1007/s12325-025-03125-7",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "성인 및 학령기 아동(10-14세)",
+        "분류": "디지털 눈 피로",
+        "시기": "4-84일 중재",
+        "지역": "글로벌"
+      },
+      "caution": "★투여량과 기간이 연구마다 다르므로, 임상 근거는 4-12mg, 4-12주 범위를 기준으로 본다.",
+      "cautionSource": "PubMed 임상시험 데이터"
+    },
+    {
+      "id": "astaxanthin-accommodation-improvement-6mg-4weeks",
+      "claim": "46~65세 노인 22명을 대상으로 일일 6mg 아스타잔틴을 4주 복용한 결과, 눈 조절력 개선도가 평균 19%, 노안(presbyopia) 관련 주관적 증상 개선율이 77%에 이르렀다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 문헌·일본 안과임상 연구",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4997915/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "46-65세 노인, 눈 조절력 저하",
+        "분류": "노안 개선",
+        "시기": "4주 투여",
+        "지역": "일본"
+      },
+      "caution": "이는 소규모 연구(n=22)이며, 표본이 남성만 포함되었을 가능성이 있다. 임상적 의미는 있으나 대규모 확인 필요.",
+      "cautionSource": "연구 설계 평가"
+    },
+    {
+      "id": "astaxanthin-recommended-dosage-4-6mg-daily",
+      "claim": "임상 연구에 기반한 아스타잔틴의 권장 용량은 일일 4~6mg이며, 일부 연구에서는 최대 12mg까지 사용했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed·의료 문헌",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/36777084/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "일반 성인",
+        "분류": "권장 용량",
+        "시기": "일일 복용",
+        "지역": "글로벌"
+      },
+      "caution": "상업 제품의 권장량이 2~8mg으로 다양하므로, 제품별 라벨을 확인할 필요가 있다.",
+      "cautionSource": "제품 표기 현황"
+    },
+    {
+      "id": "astaxanthin-safety-no-major-adverse-events-reported",
+      "claim": "현재까지 아스타잔틴 임상시험에서 용량 관련 심각한 부작용(adverse events)이 보고되지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed 임상시험 검색",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/34376917/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "일반 성인 및 아동",
+        "분류": "안전성",
+        "시기": "4-84주 투여",
+        "지역": "글로벌"
+      },
+      "caution": "알려진 독성 한계가 없으나, 개인 과민성이나 드문 부작용은 항상 가능하다.",
+      "cautionSource": null
+    },
+    {
+      "id": "astaxanthin-eye-fatigue-improvement-not-prevention",
+      "claim": "아스타잔틴 연구는 이미 발생한 눈 피로(증상 개선) 효과를 보았으며, 건강한 사람의 피로 '예방'이나 시력 '향상' 효과는 입증되지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "RCT 메타 분석 기준",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/34376917/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "눈 피로 증상자",
+        "분류": "증상 개선 vs 예방",
+        "시기": "급성 증상",
+        "지역": "글로벌"
+      },
+      "caution": "★광고에서 '피로 예방', '시력 개선', '눈 건강' 같은 표현은 허위·과대광고 가능성이 높다. 식약처 규제 표현만 사용 필수.",
+      "cautionSource": "식약처 기능성 표시 기준"
+    },
+    {
+      "id": "astaxanthin-formulation-matrix-bioavailability",
+      "claim": "아스타잔틴은 카로테노이드로서 지용성이므로, 포뮬레이션의 운반체(오일 매트릭스, 나노입자, 비드렛 형태 등)가 생체이용성을 결정하는 핵심 요소이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 문헌·생체이용성 연구",
+      "source_url": "https://link.springer.com/article/10.1007/s12325-025-03125-7",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "아스타잔틴 제품",
+        "분류": "흡수 메커니즘",
+        "시기": "경구 섭취",
+        "지역": "글로벌"
+      },
+      "caution": "같은 용량이라도 제형이 다르면 흡수가 달라질 수 있다. 소프트젤, 오일 기반 형태가 일반 정제보다 흡수가 나을 가능성이 높다.",
+      "cautionSource": "생체이용성 연구"
+    },
+    {
+      "id": "astaxanthin-with-fatty-meal-absorption-optimization",
+      "claim": "아스타잔틴은 지용성 항산화제이므로, 지방이 포함된 식사와 함께 복용할 때 소장 흡수가 최적화된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/NIH 지용성 비타민 기전",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK534869/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "아스타잔틴 복용자",
+        "분류": "흡수 조건",
+        "시기": "식사 중·직후",
+        "지역": "글로벌"
+      },
+      "caution": "공복에 복용하면 흡수가 현저히 저하될 수 있다. 끼니와 함께 섭취 필수.",
+      "cautionSource": "NCBI/NIH 약학 문헌"
+    }
+  ]
+}

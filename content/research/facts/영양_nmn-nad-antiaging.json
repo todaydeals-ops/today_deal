@@ -1,0 +1,130 @@
+{
+  "topic": "NMN·NAD+ 항노화의 동물 vs 인체 근거 격차 및 국내 규제 현황",
+  "brand": "알약연구소",
+  "article": "NMN·NAD+ 항노화, 어디까지 왔나",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "nmn-nad-mechanism-atp-energy-mitochondria",
+      "claim": "니코틴아미드 모노뉴클레오타이드(NMN)는 체내에서 NAD+(산화형 니코틴아미드 아데닌 디뉴클레오타이드)로 변환되며, NAD+는 미토콘드리아에서 ATP 에너지 생산과 세포 노화 관련 단백질(sirtuins, PARPs) 활성화에 관여한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Frontiers in Pharmacology: The versatile multi-functional substance NMN",
+      "source_url": "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2024.1436597/full",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "NMN/NAD+ 기전",
+        "분류": "생화학",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "nmn-animal-studies-lifespan-healthspan-improvement",
+      "claim": "마우스, 나이 든 쥐, 초파리 등 동물 모델에서 NMN 보충은 NAD+ 수치를 높이고, 수명 연장(lifespan), 건강 수명 개선(healthspan), 근력 개선, 대사 건강 개선 등 긍정적 결과를 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect: The Safety and Antiaging Effects of Nicotinamide Mononucleotide in Human Clinical Trials: an Update",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S2161831323013595",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "NMN 동물 연구",
+        "분류": "동물 임상",
+        "시기": "2010~2023",
+        "지역": "글로벌"
+      },
+      "caution": "★동물 연구는 희소식, 통제된 환경, 짧은 생명주기 등 인체와 전혀 다른 조건이다. 동물에서 수명 연장이 입증됐다고 인체에서도 동일할 것으로 기대하면 안 된다.",
+      "cautionSource": "임상 전환 원칙"
+    },
+    {
+      "id": "nmn-human-clinical-trials-nad-level-increase-only",
+      "claim": "2020~2024년 진행된 인체 임상 시험에서 NMN 경구 투여는 혈중 NAD+ 농도를 약 2배 증가시켰으며, 최대 900mg/일 용량까지 안전했다. 그러나 현재까지의 인체 시험은 3주~12주의 단기간이며, 동물 모델에서 보인 수명 연장이나 건강 수명 개선은 아직 인체에서 입증되지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: The efficacy and safety of β-nicotinamide mononucleotide (NMN) supplementation in healthy middle-aged adults",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/36482258/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "NMN 인체 임상",
+        "분류": "임상 효과",
+        "시기": "2020~2024",
+        "지역": "글로벌"
+      },
+      "caution": "★핵심: NAD+ 수치 증가 = 효과 입증이 아니다. 이는 대리지표(surrogate endpoint)이며, 실제 노화 지연이나 수명 연장이 확인되어야 한다.",
+      "cautionSource": "임상 근거 평가 기준"
+    },
+    {
+      "id": "nmn-human-trials-current-focus-neurodegenerative-disease",
+      "claim": "현재 진행 중인 대부분의 인체 NMN 임상 시험은 알츠하이머병, 파킨슨병 같은 신경퇴행질환에 초점이 맞춰져 있으며, 건강한 사람의 '항노화' 효과를 목표로 하는 대규모 임상은 아직 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Frontiers in Pharmacology: The versatile multi-functional substance NMN",
+      "source_url": "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2024.1436597/full",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "NMN 임상 연구 방향",
+        "분류": "연구 현황",
+        "시기": "2024",
+        "지역": "글로벌"
+      },
+      "caution": "일반인을 대상으로 한 '항노화'는 아직 미해결 영역이다. 신경퇴행질환 임상 결과가 나와야 다음 단계를 기대할 수 있다.",
+      "cautionSource": "임상 진행 상황"
+    },
+    {
+      "id": "nmn-korea-mfds-unapproved-ingredient",
+      "claim": "한국 식품의약품안전처는 현재(2026년) NMN을 건강기능식품의 고시형 원료로 인정하지 않았다. 안전성과 기능성 자료가 충분하지 않다는 이유로 식약처 승인을 받지 못했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 식품원료 한시적 인정 데이터베이스",
+      "source_url": "https://foodsafetykorea.go.kr/portal/safefoodlife/foodMeterial/foodMeterialDB.do?menu_no=2966&menu_grp=MENU_NEW04",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "NMN 국내 규제",
+        "분류": "규제 현황",
+        "시기": "2026 현행",
+        "지역": "KR"
+      },
+      "caution": "★국내에서 NMN 제품을 구매할 수 있으나, 이는 일반식품으로만 판매되며 '건강기능식품'으로 표기할 수 없다. 해외 직구 제품의 품질과 안전성은 보장받기 어렵다.",
+      "cautionSource": "식약처 규제"
+    },
+    {
+      "id": "nmn-side-effects-high-dose-nausea-headache",
+      "claim": "고용량(900mg 이상) NMN 섭취 시 두통, 오심, 소화불편, 혈압 일시적 변화 등의 부작용이 보고되었다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "ScienceDirect: The Safety and Antiaging Effects of Nicotinamide Mononucleotide in Human Clinical Trials",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S2161831323013595",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "NMN 부작용",
+        "분류": "안전성",
+        "시기": "2020~2024",
+        "지역": "글로벌"
+      },
+      "caution": "장기 복용 안전성 자료가 부족하므로, 특히 기존 질환이 있거나 약물을 복용 중인 사람은 의료진과 상담해야 한다.",
+      "cautionSource": "임상 안전성 데이터 제한"
+    },
+    {
+      "id": "nmn-bioavailability-question-blood-vs-tissue",
+      "claim": "경구 NMN이 혈중 NAD+ 농도는 높이지만, 실제로 목표 조직(근육, 뇌, 장기)에 도달하는 양이 충분한지는 여전히 의문의 여지가 있다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "약리학 문헌 (구체적 인체 조직 검사 미확보)",
+      "source_url": null,
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "NMN 생체이용률",
+        "분류": "흡수·전달",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "혈중 NAD+와 조직 내 NAD+는 다른 문제다. 이 점을 명확히 하지 않으면 집필에서 과장으로 이어질 수 있다.",
+      "cautionSource": "임상 근거 부족"
+    }
+  ]
+}

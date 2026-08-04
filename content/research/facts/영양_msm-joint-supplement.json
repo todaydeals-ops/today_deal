@@ -1,0 +1,92 @@
+{
+  "topic": "MSM(메틸설포닐메탄)의 관절 통증 효과와 근거 수준",
+  "brand": "공통",
+  "article": "msm-joint-supplement",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "rct-randomized-controlled-trial-definition-gold-standard",
+    "meta-analysis-systematic-review-highest-evidence-hierarchy",
+    "statistical-significance-vs-clinical-significance-distinction"
+  ],
+  "declined_facts": [
+    {
+      "id": "water-soluble-vitamin-absorption-no-meal-required",
+      "why": "비타민 흡수 팩트이나 MSM은 미네랄이므로 스코프 불일치"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "msm-sulfur-compound-mechanism-cartilage-joint",
+      "claim": "MSM(메틸설포닐메탄)은 생체이용 가능한 유기 황 화합물로서 콜라겐, 글루코사민, 콘드로이틴 합성에 필요한 원료이며, 항염증·항산화 작용으로 연골 기질 유지에 기여한다고 알려져 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cochrane Library, NCBI/PMC: Meta-Analysis of MSM in Osteoarthritis",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3135791/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "MSM",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "기전은 이론적이며, 인체 임상에서 입증 수준은 제한적이다.",
+      "cautionSource": "Cochrane 메타분석"
+    },
+    {
+      "id": "msm-rct-modest-effect-limited-clinical-significance",
+      "claim": "2006년 RCT(n=50, 6g/12주)는 WOMAC 통증 및 신체 기능 지표에서 위약 대비 통계적 유의성을 보였으나(P<0.05), 메타분석(3개 고질 RCT, n=326)은 '통계적 유의성이 있더라도 임상적으로 의미 있는 통증 감소는 아니다'고 결론지었다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Meta-Analysis of MSM in Osteoarthritis; PubMed: Efficacy of MSM in Knee Osteoarthritis",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3135791/ ; https://pubmed.ncbi.nlm.nih.gov/16309928/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "MSM 임상 효과",
+        "years": "2006-현재",
+        "region": "글로벌"
+      },
+      "caution": "개별 RCT에서 P<0.05는 나왔으나, 종합 메타분석은 '임상적 효과는 미미할 수 있음'을 경고했다. 통계적 유의성≠임상적 의미.",
+      "cautionSource": "NCBI/PMC 메타분석"
+    },
+    {
+      "id": "msm-2023-mild-pain-quality-life-improvement",
+      "claim": "2023년 무작위 이중맹검 위약 대조 RCT(경미한 무릎 통증)에서 12주 후 전체 삶의 질 점수 차이가 통계적으로 유의했고(p=0.046), 건강 상태도 개선됐다(p=0.032).",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "MDPI Nutrients: Methylsulfonylmethane Improves Knee Quality of Life",
+      "source_url": "https://www.mdpi.com/2072-6643/15/13/2995",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "MSM 최근 RCT",
+        "years": "2023",
+        "region": "글로벌"
+      },
+      "caution": "경미한(mild) 무릎 통증 대상자만 대상이며, 중등도 이상 통증 효과는 불명확. 메타분석보다 최근이나 표본 크기·맹검화 정도 미상.",
+      "cautionSource": "2023 RCT 논문"
+    },
+    {
+      "id": "msm-dosage-standard-clinical-use",
+      "claim": "임상 RCT에서 사용된 표준 용량은 일일 6g(3g×2회 분할)을 12주 이상 복용하는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Meta-Analysis of MSM in Osteoarthritis",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3135791/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "MSM 용량",
+        "years": "2006-현재",
+        "region": "글로벌"
+      },
+      "caution": "광고에서 보이는 고용량(8-15g)은 임상 RCT 기준보다 높으며, 근거 부족.",
+      "cautionSource": "메타분석 논문"
+    }
+  ]
+}

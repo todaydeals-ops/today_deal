@@ -1,0 +1,96 @@
+{
+  "topic": "장누수증후군: 의학적 인정 지위·장투과성 연구의 실제 범위·마케팅 경계",
+  "brand": "알약연구소",
+  "article": "장누수증후군, 의학적으로 인정된 병명인가",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "leaky-gut-syndrome-not-recognized-medical-diagnosis",
+      "claim": "장누수증후군(leaky gut syndrome)은 현재 의학 교과서에서 정식 진단명으로 인정되지 않으며, 대부분의 의료 전문가는 이를 진단 가능한 질환으로 보지 않는다. 의료 문헌에서도 '증후군'이 아니라 '현상'으로 취급되는 경우가 많다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic: Leaky Gut Syndrome - Symptoms, Diet, Tests & Treatment; BadGut.org: Debunking the Myth of 'Leaky Gut Syndrome'",
+      "source_url": "https://my.clevelandclinic.org/health/diseases/22724-leaky-gut-syndrome ; https://badgut.org/information-centre/a-z-digestive-topics/leaky-gut-syndrome/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "일반 인구",
+        "분류": "의학적 지위",
+        "시기": "2026 현재",
+        "지역": "글로벌"
+      },
+      "caution": "★'장누수증후군'은 마케팅 용어이며, 의료진과 상담할 때 이 용어로는 진단받을 수 없다.",
+      "cautionSource": "의학 교과서 기준"
+    },
+    {
+      "id": "intestinal-permeability-real-phenomenon-symptom-not-disease",
+      "claim": "장투과성 증가(increased intestinal permeability)는 실제로 존재하는 생리적 현상이지만, 질병 그 자체가 아니라 다른 질환의 증상일 수 있다. 염증성장질환(Crohn병·궤양성대장염), 셀리악병, 화학요법 중 환자, 급성 췌장염·다기관 부전·외상 후 환자에서 관찰된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Intestinal Permeability in Inflammatory Bowel Disease: Pathogenesis, Clinical Evaluation, and Therapy of Leaky Gut; NCBI/PMC: Leaky gut mechanisms, measurement and clinical implications in humans",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4637104/ ; https://pubmed.ncbi.nlm.nih.gov/31076401/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "특정 질환 보유자",
+        "분류": "증상의 의미",
+        "시기": "질환 활성기",
+        "지역": "글로벌"
+      },
+      "caution": "장투과성 증가 자체는 원인이 아니라 다른 질환(염증성장질환, 셀리악병 등)의 결과다. 장투과성 '정상화'를 약속하는 제품을 경계해야 한다.",
+      "cautionSource": "임상 의료 문헌"
+    },
+    {
+      "id": "leaky-gut-etiology-unknown-evidence-insufficient",
+      "claim": "장누수증후군의 정의·원인·진단 기준이 명확하지 않으며, 건강한 사람에서 그것이 질병을 일으킨다는 임상적 증거가 부족하다. 공중 보건 정보와 웰니스 광고에서 '장 누수'라는 개념이 확대·과장되는 경향이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: The Influence of Nutrition on Intestinal Permeability and the Microbiome in Health and Disease",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9082752/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "건강한 인구와 웰니스 시장",
+        "분류": "근거 부족",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★'장 누수 복구' 또는 '투과성 정상화'를 주장하는 제품·프로그램은 과학적 근거가 불충분하다. 구매 전 임상적 증거를 요청하거나 의료 전문가와 상담할 것.",
+      "cautionSource": "증거 기반 의료"
+    },
+    {
+      "id": "leaky-gut-alternative-medicine-marketing-term",
+      "claim": "장누수증후군은 대체의학 실무자들에 의해 광범위한 건강 문제(피로, 피부 질환, 정신 건강, 면역 저하)의 설명 단일 원인으로 제시되고 있으나, 의학계는 이를 증거 기반이라고 보지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic: Leaky Gut Syndrome; BadGut.org: Debunking the Myth of 'Leaky Gut Syndrome'",
+      "source_url": "https://my.clevelandclinic.org/health/diseases/22724-leaky-gut-syndrome ; https://badgut.org/information-centre/a-z-digestive-topics/leaky-gut-syndrome/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "웰니스 시장 소비자",
+        "분류": "마케팅 경계",
+        "시기": "2020~2026",
+        "지역": "글로벌"
+      },
+      "caution": "★일반 판매처·블로그·웰니스 상담에서 '장 누수가 많은 질병의 원인'이라는 주장은 이해충돌이 있을 가능성이 높다.",
+      "cautionSource": "의료 및 규제 기관 입장"
+    },
+    {
+      "id": "intestinal-permeability-measurement-standardization-lacking",
+      "claim": "장투과성의 임상적 측정·진단 표준화가 부족하다. 락투로스/만니톨 비뇨(lactulose/mannitol ratio), 존 단백질 농도(zonula occludens-1, ZO-1) 등 여러 측정 방법이 있지만 표준화되지 않았으며, 임상 해석도 일관성이 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Leaky gut mechanisms, measurement and clinical implications in humans",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/31076401/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "장투과성 검사 고려 인구",
+        "분류": "진단 기준 부족",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "일반 검진 센터나 온라인에서 제공하는 '장 투과성 검사'는 표준화된 의료 검사로 보기 어렵다. 의료 전문가 의뢰 없이는 신뢰도가 낮을 수 있다.",
+      "cautionSource": "검사 표준화 기준"
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "topic": "황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성",
+  "brand": "알약연구소·눈 건강",
+  "article": "macular-degeneration-prevention",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "disease-prevention-vs-disease-progression-delay-distinction",
+    "surrogate-endpoint-vs-clinical-outcome-discordance",
+    "rct-randomized-controlled-trial-definition-gold-standard",
+    "areds2-primary-outcome-no-benefit-beyond-areds",
+    "areds2-subgroup-low-dietary-lutein"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "amd-age-related-macular-degeneration-definition-pathology",
+      "claim": "연령관련황반변성(AMD, Age-Related Macular Degeneration)은 50세 이상 성인의 중심 시야를 담당하는 망막 황반부의 점진적 손상으로 인해 발생하며, 드루젠(drusen) 축적, 지질 침착, 신생혈관 형성 등이 특징이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH NEI AREDS Resource",
+      "source_url": "https://www.nei.nih.gov/eye-health-information/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "50세 이상",
+        "분류": "질환 정의",
+        "시기": "중년 이후",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "amd-stages-early-intermediate-advanced-risk-stratification",
+      "claim": "황반변성은 조기(early), 중간(intermediate), 진행성(advanced) 단계로 분류되며, AREDS/AREDS2 보충제의 효과는 '중간 단계' 이상의 위험군에만 입증되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH AREDS/AREDS2 Classification System",
+      "source_url": "https://www.nei.nih.gov/eye-health-information/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "50세 이상 성인",
+        "분류": "질환 단계",
+        "시기": "진행 과정",
+        "지역": "글로벌"
+      },
+      "caution": "★'예방'과 '진행 지연'은 다르다. 이미 황반변성 증상이 있는 사람의 악화 방지와 건강한 사람의 질병 발생 방지는 임상 의미가 전혀 다르다.",
+      "cautionSource": "임상 기준"
+    },
+    {
+      "id": "areds-trial-design-inclusion-criteria-risk-population",
+      "claim": "AREDS 임상시험은 50~80세의 이미 황반변성 위험이 있는 인구(한쪽 또는 양쪽 눈에 중간 크기 이상의 드루젠)를 대상으로 약 3,600명을 등록했으며, 건강한 일반인을 대상으로 하지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AREDS Trial Publication - JAMA",
+      "source_url": "https://jamanetwork.com/journals/jama/article-abstract/189076",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "황반변성 위험군",
+        "분류": "임상시험 설계",
+        "시기": "6년 추적",
+        "지역": "북미"
+      },
+      "caution": "★'건강한 성인의 황반변성 예방'이 아니라 '이미 위험이 있는 사람의 진행 지연'을 본 시험이다.",
+      "cautionSource": "AREDS 논문"
+    },
+    {
+      "id": "areds-primary-finding-25-percent-progression-reduction",
+      "claim": "AREDS 임상시험의 주 결과는 고용량 항산화 비타민(C, E, 베타카로틴)과 아연 보충이 진행된 AMD로의 진행 위험을 약 25% 감소시켰다(5년 추적).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AREDS Trial - JAMA",
+      "source_url": "https://jamanetwork.com/journals/jama/article-abstract/189076",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "황반변성 중간 위험군",
+        "분류": "1차 결과",
+        "시기": "5년 추적",
+        "지역": "북미"
+      },
+      "caution": "25% 위험 감소는 상대위험도이며, 절대위험도는 훨씬 작을 수 있다(약 8% 절대 감소). 개인차가 크다.",
+      "cautionSource": "임상 통계 해석"
+    },
+    {
+      "id": "areds2-beta-carotene-replacement-lung-cancer-risk",
+      "claim": "원래 AREDS 포뮬라의 베타카로틴은 흡연자에서 폐암 발생 위험을 약 2배 증가시켰으므로, AREDS2에서는 베타카로틴을 루테인과 제아잔틴으로 교체했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AREDS2 Trial - JAMA",
+      "source_url": "https://jamanetwork.com/journals/jama/fullarticle/1684847",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "황반변성 중간-진행 위험군",
+        "분류": "안전성 개선",
+        "시기": "2006-2008 시험기간",
+        "지역": "북미"
+      },
+      "caution": "★흡연자는 절대 베타카로틴이 많은 제품을 피해야 한다. 루테인으로 대체된 최신 포뮬라를 선택할 것.",
+      "cautionSource": "AREDS/AREDS2 논문"
+    },
+    {
+      "id": "areds2-lutein-zeaxanthin-no-additional-benefit-beyond-areds",
+      "claim": "AREDS2 시험에서 이미 AREDS 포뮬라(항산화제+아연)를 복용하는 환자에게 루테인+제아잔틴을 추가 투여해도 진행된 AMD로의 진행 위험이 통계적으로 유의하게 더 감소하지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AREDS2 Trial - JAMA Ophthalmology",
+      "source_url": "https://jamanetwork.com/journals/jama/fullarticle/1684847",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "황반변성 중간-진행 위험군",
+        "분류": "1차 결과",
+        "시기": "중앙 5년 추적",
+        "지역": "북미"
+      },
+      "caution": "★루테인이 '효과 없다'는 뜻이 아니라, '이미 항산화제를 복용하는 사람에게 추가 효과 없다'는 뜻이다.",
+      "cautionSource": "AREDS2 논문"
+    },
+    {
+      "id": "areds2-subgroup-low-dietary-lutein-response",
+      "claim": "AREDS2 분석에서는 기존 식이 루테인 섭취가 가장 낮은 부분군(dietary lutein <8 μmol/day)에서만 루테인+제아잔틴 보충이 AMD 진행 보호를 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AREDS2 Exploratory Subgroup Analysis",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/23644932/",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "황반변성 위험군",
+        "분류": "부분군 분석",
+        "시기": "5년 추적",
+        "지역": "북미"
+      },
+      "caution": "이것은 '가설 생성적' 사후 분석이며, 기존에 충분한 루테인을 섭취하는 사람에게는 보충제의 추가 이득이 없을 수 있음을 시사한다.",
+      "cautionSource": "AREDS2 탐색적 분석"
+    },
+    {
+      "id": "healthy-individuals-amd-prevention-supplement-no-proven-benefit",
+      "claim": "황반변성이 없는 건강한 성인이 질병 예방 목적으로 AREDS/AREDS2 보충제를 복용하는 것의 효과는 임상 증거로 입증되지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AREDS/AREDS2 inclusion criteria and results",
+      "source_url": "https://www.nei.nih.gov/eye-health-information/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "건강한 성인 50세 이상",
+        "분류": "예방",
+        "시기": "질병 전",
+        "지역": "글로벌"
+      },
+      "caution": "★'황반변성 예방'을 광고하는 제품은 집필 금지 또는 최소 '입증되지 않음' 주의 명시 필수.",
+      "cautionSource": "AREDS/AREDS2 설계 및 결론"
+    },
+    {
+      "id": "amd-risk-factors-age-smoking-genetics-family-history",
+      "claim": "황반변성의 주요 위험 인자는 연령(50세 이상), 흡연, 유전, 가족력, 고혈압, 비만이며, 이 중 흡연과 생활습관 개선이 가장 변경 가능한 인자다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH NEI AMD Risk Factors",
+      "source_url": "https://www.nei.nih.gov/eye-health-information/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "50세 이상 일반인",
+        "분류": "위험 인자",
+        "시기": "일생",
+        "지역": "글로벌"
+      },
+      "caution": "영양제 복용보다 금연, 혈압 관리, 균형잡힌 식사가 더 중요하다.",
+      "cautionSource": "NIH NEI"
+    },
+    {
+      "id": "amd-symptoms-central-vision-loss-metamorphopsia-immediate-consultation",
+      "claim": "중심 시야 흐려짐, 직선이 구부러져 보이는 현상(metamorphopsia), 색상 변화 같은 황반변성 의심 증상이 나타나면 즉시 안과 전문의의 진단을 받아야 하며, 보충제 복용은 이후 의료진 지시에 따른다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Academy of Ophthalmology - AMD Diagnosis",
+      "source_url": "https://www.nei.nih.gov/eye-health-information/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "50세 이상 모두",
+        "분류": "진단 신호",
+        "시기": "급성 증상 발생",
+        "지역": "글로벌"
+      },
+      "caution": "★보충제는 치료제가 아니며, 황반변성 의심 증상은 자가진단 금지. 반드시 안과 검진 필수.",
+      "cautionSource": "AAO 진료 지침"
+    },
+    {
+      "id": "amd-screening-age-50-regular-eye-examination-importance",
+      "claim": "황반변성의 조기 발견을 위해 50세 이상 성인은 최소 연 1회 안과 검진(특히 망막 검사)을 받을 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAO Prevention Guidelines",
+      "source_url": "https://www.nei.nih.gov/eye-health-information/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2",
+      "checked": "2026-08-04",
+      "scope": {
+        "대상": "50세 이상",
+        "분류": "스크리닝",
+        "시기": "연 1회",
+        "지역": "글로벌"
+      },
+      "caution": "영양제 복용은 안과 검진 후 의료진 판단에 따를 것.",
+      "cautionSource": "AAO 예방 지침"
+    }
+  ]
+}
