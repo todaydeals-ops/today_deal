@@ -3,7 +3,7 @@
 > 자동 생성 파일. 직접 수정하지 마세요. `node scripts/research-index.mjs`로 갱신합니다.
 > **기계적 대조 기준은 이 파일이 아니라 `facts/*.json` 원본입니다.**
 
-생성: 2026-08-04 · 조사 288건 · 팩트 3598개
+생성: 2026-08-04 · 조사 292건 · 팩트 3639개
 
 ## ⚠️ 무결성 경고
 
@@ -59,9 +59,9 @@
 
 ## 통계
 
-- 확신도: 확실 3399 · 논쟁 168 · 확인실패 31
-- 근거: 공식 2932 · 후기 661 · 실측 5
-- **순차 대안 톤 대상: 705개** (tier=논쟁 또는 evidence=후기 → "먼저 해보고 안 되면" 서술 필수)
+- 확신도: 확실 3439 · 논쟁 169 · 확인실패 31
+- 근거: 공식 2972 · 후기 662 · 실측 5
+- **순차 대안 톤 대상: 706개** (tier=논쟁 또는 evidence=후기 → "먼저 해보고 안 되면" 서술 필수)
 
 ## HP
 
@@ -3886,6 +3886,67 @@
 | `wake-window-10-12month` | 확실 | 공식 | 생후 10~12개월 영아의 권장 각성 시간은 3~6시간(평균 3.5~5시간)이다. | 공통 / 수면·침구 / 국제 |
 | `wake-window-guideline-not-rule` | 확실 | 공식 | 각성 윈도우는 절대 기준이 아니라 출발점이며, 보호자는 개별 아기의 피로 신호(하품, 눈 비비기, 활동 저하)를 관찰해 낮잠 타이밍을 결정해야 한다. | 공통 / 수면·침구 / 국제 |
 
+### 영양제 안전성: 상한섭취량, 약물 상호작용, 이상사례 신고, 특정 성분 금기 <sub>2026-08-04 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `upper-limit-intake-UL-definition-safety-threshold` | 확실 | 공식 | 상한섭취량(UL, Tolerable Upper Intake Level)은 인체에 유해한 영향이 나타나지 않는 최대 영양소 섭취 수준을 뜻하며, 이 상한치보다 더 많이 섭취할 경우 유해 영향(독성)의 위험이 증가한다. | 공통 / 안전성 / 상한섭취량 / 전 연식 / 글로벌 |
+| `fat-soluble-vitamin-accumulation-toxicity-risk` | 확실 | 공식 | 지용성 비타민(A, D, E, K)은 간 및 지방 조직에 저장되므로, 장기간 고함량으로 섭취하면 체내에 축적되어 독성을 유발할 수 있다. | 공통 / 안전성 / 축적 독성 / 전 연식 / 글로벌 |
+| `vitamin-a-excessive-intake-headache-skin-dryness` | 확실 | 공식 | 비타민 A를 과다 섭취하면 두통, 피부 건조, 가려움, 심한 경우 두개내압 증가 등의 독성 증상이 나타날 수 있다. | 공통 / 안전성 / 비타민 A 독성 / 전 연식 / 글로벌 |
+| `anticoagulant-vitamin-K-interaction-thrombosis-risk` | 확실 | 공식 | 항응고제(와파린, 아스피린 등)를 복용 중인 사람이 비타민 K를 추가 섭취하면, 비타민 K가 혈액 응고를 촉진하여 항응고제 효과를 직접 상쇄하고 혈전 형성 위험을 높인다. | 공통 / 약물 상호작용 / 항응고제 / 전 연식 / 글로벌 |
+| `thyroid-medication-mineral-chelation-spacing-required` | 확실 | 공식 | 갑상선약을 복용 중이면 칼슘·마그네슘은 최소 2시간 이상, 철분제는 최소 4시간 이상 시간 간격을 두어야 한다. 이 미네랄들이 갑상선 호르몬제와 결합하여 흡수되지 않는 착화물을 만들기 때문이다. | 공통 / 약물 상호작용 / 갑상선약 / 전 연식 / 글로벌 |
+| `antibiotic-probiotic-simultaneous-administration-interference` | 확실 | 공식 | 항생제와 프로바이오틱스를 동시에 복용하면 항생제가 유익균을 죽이므로, 항생제 복용 후 2시간 이상 간격을 두고 프로바이오틱스를 섭취하는 것이 권장된다. | 공통 / 약물 상호작용 / 항생제·프로바이오틱스 / 전 연식 / 글로벌 |
+| `health-supplement-adverse-event-reporting-system-korea` | 확실 | 공식 | 한국의 건강기능식품 이상사례는 소비자, 사업자, 의료 전문가가 식약처 통합민원상담(1339) 또는 식품안전나라를 통해 언제 어디서든 신고할 수 있으며, 사업자는 인지 후 7일 이내에 보고해야 한다. | 공통 / 안전 체계 / 이상사례 신고 / 2026 현행 / KR |
+| `health-supplement-adverse-event-definition` | 확실 | 공식 | 이상사례는 건강기능식품 섭취로 인해 의심되는 바람직하지 않고 의도하지 않은 징후, 증상, 질병을 뜻하며, 인과관계가 반드시 확립되어야 하는 것은 아니다. | 공통 / 안전 체계 / 이상사례 정의 / 2026 현행 / KR |
+| `pregnant-lactating-women-supplement-caution` | 확실 | 공식 | 임신·수유 중인 여성은 영양제 추가 섭취 전 반드시 의료 전문가와 상담해야 하며, 특히 고함량 지용성 비타민은 금지될 수 있다. | 공통 / 안전성 / 특수 인구군 / 전 연식 / 글로벌 |
+| `autoimmune-disease-supplement-contraindication` | 확실 | 공식 | 자가면역질환 환자는 면역력 강화 영양제(홍삼, 비타민 D 고함량 등) 추가 복용 전 의료 전문가와 상담해야 하며, 자가항체를 악화시킬 가능성이 있다. | 공통 / 안전성 / 자가면역질환 / 전 연식 / 글로벌 |
+| `seizure-disorder-epilepsy-supplement-drug-interaction` | 확실 | 공식 | 간질·발작 장애 환자는 영양제 추가 섭취 전 의료 전문가와 상담해야 하며, 일부 영양제(비타민 B6 고함량 등)가 항경련제 약효를 감소시킬 수 있다. | 공통 / 약물 상호작용 / 항경련제 / 전 연식 / 글로벌 |
+
+### 영양제 효과 근거 평가: 임상 연구 방법론, 신뢰도 위계, 통계 함정, 편향 이해 <sub>2026-08-04 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `rct-randomized-controlled-trial-definition-gold-standard` | 확실 | 공식 | 무작위 대조 시험(RCT, Randomized Controlled Trial)은 참가자를 무작위로 치료군과 대조군에 할당하여 다른 변수의 영향을 통계적으로 제어하는 연구 설계이며, 개별 임상 연구로서는 가장 높은 신뢰도를 갖는다. | 공통 / 임상 근거 / RCT / 전 연식 / 글로벌 |
+| `cohort-study-observational-lower-hierarchy` | 확실 | 공식 | 코호트 연구(Cohort Study)는 노출군과 비노출군을 장기간 추적하는 관찰 연구로서, RCT보다 신뢰도가 낮지만 장기 추적이 가능하고 현실적인 인구집단을 대상으로 할 수 있는 장점이 있다. | 공통 / 임상 근거 / 코호트연구 / 전 연식 / 글로벌 |
+| `meta-analysis-systematic-review-highest-evidence-hierarchy` | 확실 | 공식 | 체계적 문헌고찰(Systematic Review)로 여러 RCT를 수집한 후 그 결과를 통계적으로 합산하는 메타분석(Meta-analysis)이 임상 근거 피라미드 꼭대기에 있으며, 개별 임상시험 하나가 가질 수 있는 한계를 보완하기 때문에 가장 높은 신뢰도를 갖는다. | 공통 / 임상 근거 / 메타분석·체계적고찰 / 전 연식 / 글로벌 |
+| `relative-risk-reduction-vs-absolute-risk-reduction-trap` | 확실 | 공식 | 상대위험도(RR) 감소만으로 결과를 표현하면 절대 발생률 자체가 낮은 경우 상대위험도가 크더라도 실제 임상 의미가 과장될 수 있으며, 절대위험도도 함께 제시해야 한다. | 공통 / 통계 해석 / 위험도 함정 / 전 연식 / 글로벌 |
+| `surrogate-endpoint-vs-clinical-outcome-discordance` | 확실 | 공식 | 혈중 영양소 농도 개선(혈중 루테인, 혈중 오메가3 등) 같은 대리지표(surrogate endpoint)의 개선이 반드시 질병 예방이나 증상 개선으로 이어지지 않을 수 있으며, 실제 임상 결과(clinical outcome)와 괴리가 있을 수 있다. | 공통 / 임상 근거 / 대리지표 함정 / 전 연식 / 글로벌 |
+| `statistical-significance-vs-clinical-significance-distinction` | 확실 | 공식 | 통계적 유의성(P<0.05)과 임상적 의미(clinical significance)는 별개이며, 표본 크기가 매우 크면 아무리 작은 차이도 통계적으로 유의해질 수 있다. | 공통 / 통계 해석 / P값 함정 / 전 연식 / 글로벌 |
+| `p-value-definition-type-I-error-interpretation` | 확실 | 공식 | P값은 '영가설(차이 없음)이 맞다고 가정할 때 관측된 데이터 이상의 극단적 결과가 나올 확률'이며, 작을수록 영가설과 데이터가 일치하지 않음을 의미한다. 일반적으로 P<0.05를 유의성의 기준으로 본다. | 공통 / 통계 해석 / P값 정의 / 전 연식 / 글로벌 |
+| `p-hacking-significance-chasing-publication-bias` | 확실 | 공식 | P-해킹(P-hacking)은 많은 가설을 테스트하거나 데이터를 선택적으로 분석하여 유의한 결과만 골라내는 행위를 뜻하며, 허위 양성(false positive) 결과를 유의미한 데이터로 위장하게 된다. | 공통 / 연구 편향 / P-해킹 / 전 연식 / 글로벌 |
+| `industry-sponsored-research-bias-conflict-of-interest` | 확실 | 공식 | 영양제 제조사가 후원하는 연구는 독립적 연구보다 긍정적 결과가 나올 가능성이 높으며, 출판 편향으로 부정적 결과는 발표되지 않을 가능성이 크다. | 공통 / 연구 편향 / 이해충돌 / 전 연식 / 글로벌 |
+| `small-sample-size-low-statistical-power` | 확실 | 공식 | 표본 크기가 작은 연구는 통계적 검정력(statistical power)이 낮아 실제 효과를 놓칠 가능성이 높으며, 작은 표본에서 유의한 결과가 나왔더라도 신뢰도가 낮을 수 있다. | 공통 / 임상 근거 / 표본 크기 / 전 연식 / 글로벌 |
+| `confounding-variable-causation-correlation-trap` | 확실 | 공식 | 관찰 연구에서 교란변수(confounding variable) — 예: 오메가3를 많이 먹는 사람은 건강한 생활 습관도 많을 확률이 높음 — 때문에 인과관계를 착각할 수 있다. | 공통 / 연구 설계 함정 / 교란변수 / 전 연식 / 글로벌 |
+| `disease-prevention-vs-disease-progression-delay-distinction` | 확실 | 공식 | 영양제 연구에서 '예방'과 '진행 지연'은 명확히 구분해야 하며, 건강한 사람의 질병 발생 방지와 이미 질병이 있는 사람의 악화 방지는 다른 의미다. | 공통 / 임상 근거 / 용어 정의 / 전 연식 / 글로벌 |
+
+### 영양제의 지용성·수용성 차이, 복용 타이밍, 성분 상호작용, 흡수율 결정 요인 <sub>2026-08-04 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `water-soluble-vitamin-absorption-no-meal-required` | 확실 | 공식 | 비타민 B군과 비타민 C 같은 수용성 비타민은 물에 잘 녹는 성질 때문에 흡수가 빠르고 식사 여부와 무관하게 흡수되며, 체내에 축적되지 않고 초과분이 소변으로 배출된다. | 공통 / 영양제 / 수용성 비타민 / 전 연식 / 글로벌 |
+| `fat-soluble-vitamin-requires-meal-absorption` | 확실 | 공식 | 지용성 비타민(A, D, E, K)은 빈속에 복용하면 흡수율이 낮아지고 위장 불편감이 생길 수 있으므로, 지방이 포함된 식사를 한 직후에 복용하는 것이 흡수 효율을 높인다. | 공통 / 영양제 / 지용성 비타민 / 전 연식 / 글로벌 |
+| `vitamin-c-stomach-irritation-empty-stomach` | 확실 | 공식 | 산성 성분인 비타민 C는 공복에 복용하면 위장 자극으로 속쓰림이 나타날 수 있으며, 위장이 예민한 사람은 식후에 복용하는 것이 더 안전하다. | 공통 / 영양제 / 비타민 C / 전 연식 / 글로벌 |
+| `calcium-iron-competitive-absorption-spacing` | 확실 | 공식 | 철분제와 칼슘제는 소장 점막에서 흡수될 때 동일한 이동 통로를 공유하여 경쟁하므로, 한 번에 들어오면 두 영양소 모두의 흡수율이 떨어진다. | 공통 / 영양제 / 미네랄 상호작용 / 전 연식 / 글로벌 |
+| `iron-absorption-enhancement-vitamin-c` | 확실 | 공식 | 비타민 C는 철분의 흡수를 촉진하므로, 철분제를 복용할 때 오렌지 주스 등 비타민 C가 많은 음식을 함께 섭취하면 흡수를 높일 수 있다. | 공통 / 영양제 / 흡수 촉진 / 전 연식 / 글로벌 |
+| `iron-absorption-inhibition-tannin-caffeine` | 확실 | 공식 | 칼슘, 탄닌(커피·차), 카페인 등은 철분 흡수를 방해하므로, 빈혈약을 복용한 후 2시간 전후로는 우유, 커피, 녹차, 홍차의 섭취를 자제해야 한다. | 공통 / 영양제 / 흡수 방해 요인 / 전 연식 / 글로벌 |
+| `calcium-absorption-vitamin-d-magnesium-synergy` | 확실 | 공식 | 칼슘 보충제 흡수 시 비타민 D가 풍부한 음식이 흡수를 도와주며, 마그네슘도 칼슘 흡수에 중요한 역할을 한다. | 공통 / 영양제 / 미네랄 시너지 / 전 연식 / 글로벌 |
+| `water-soluble-vitamin-divided-doses-more-effective` | 확실 | 공식 | 수용성 비타민은 체내에 축적되지 않고 배설되므로, 한 번에 고용량을 복용하는 것보다 하루에 2~3회에 나누어 복용하는 것이 혈중 농도를 유지하는 데 더 효과적이다. | 공통 / 영양제 / 복용 방식 / 전 연식 / 글로벌 |
+| `high-dose-supplement-paradox-bioavailability` | 확실 | 공식 | 고함량 영양제가 반드시 고효과를 제공하지 않으며, 신체가 필요한 양 이상을 섭취하면 초과분이 배설되거나 체내 이용률이 낮아질 수 있다. | 공통 / 영양제 / 흡수의 한계 / 전 연식 / 글로벌 |
+| `nutrient-synergy-magnesium-calcium-vitamin-d-trinity` | 확실 | 공식 | 마그네슘이 없으면 칼슘이 제대로 활용되지 못하고, 비타민 D가 없으면 칼슘 흡수 자체가 어렵다. 이 3가지 영양소는 셋이 함께 일할 때 비로소 제 역할을 한다. | 공통 / 영양제 / 영양소 균형 / 전 연식 / 글로벌 |
+| `excess-supplement-excess-burden-liver` | 논쟁 🔶 | 후기 | 과도한 영양제 섭취는 오히려 간에 부담을 주고 있으며, 정작 필요한 영양소는 제대로 흡수되지 못할 수 있다. | 공통 / 영양제 / 과다섭취 부작용 / 전 연식 / 글로벌 |
+
+### 한국 건강기능식품 제도의 원료 분류·기능성 표시 규정·광고 규제 <sub>2026-08-04 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `korea-health-food-certified-form-standard-raw-material` | 확실 | 공식 | 한국의 건강기능식품 고시형 원료는 기능성이 널리 알려져 있어 별도의 인정절차 없이 식약처 건강기능식품공전에 고시된 약 100여 개의 원료만 사용 가능하며, 식품제조기준만 충족하면 별도 심사 없이 허가된다. | 공통 / 규제 / 고시형 원료 / 2026 현행 / KR |
+| `korea-health-food-individual-approval-raw-material` | 확실 | 공식 | 한국의 건강기능식품 개별인정형 원료는 기업이나 연구기관이 자체 개발한 기능성 원료를 식약처에 개별 신청하여 심사를 거쳐 인정받은 제품이며, 인정받은 지 6년이 넘고 품목제조신고가 50건 이상(생산실적 있는 경우)이라면 고시형 원료로 전환될 수 있다. | 공통 / 규제 / 개별인정형 원료 / 2026 현행 / KR |
+| `korea-health-food-certification-mark-requirement` | 확실 | 공식 | 한국의 건강기능식품은 제조·유통 허가 후 '건강기능식품' 문구 또는 마크가 부착되어야만 정식 건강기능식품으로 분류되며, 마크는 해당 제품이 식약처의 인정 기준을 통과했다는 의미다. | 공통 / 규제 / 인증 마크 / 2026 현행 / KR |
+| `korea-health-food-function-claim-disease-prevention-prohibition` | 확실 | 공식 | 한국 식약처는 건강기능식품의 기능성 표시에서 질병의 예방·치료에 효능이 있는 것으로 인식할 우려가 있는 표현을 금지하며, 기능성 표시는 '~에 도움을 줄 수 있음'의 형태로 제한된다. | 공통 / 규제 / 기능성 표시 / 2026 현행 / KR |
+| `korea-health-food-unsubstantiated-comparative-advertising-ban` | 확실 | 공식 | 한국 식약처는 객관적인 근거 없이 자신의 건강기능식품을 다른 영업자의 제품과 부당하게 비교하는 표시·광고를 금지한다. | 공통 / 규제 / 부당광고 / 2026 현행 / KR |
+| `korea-health-food-general-food-misrepresentation-violation` | 확실 | 공식 | 최근 식약처 적발 사례에서 일반식품을 '체지방 감소', '면역력 강화' 등 건강기능식품으로 오인시킨 광고가 97건(41.1%), '변비 개선', '감기 예방' 등 질병 예방·치료 효능으로 오인시킨 광고가 74건(31.4%)에 달했다. | 공통 / 규제 / 부당광고 적발 현황 / 2024-2025 / KR |
+| `korea-health-food-unapproved-ingredient-risk` | 확실 | 공식 | 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 표시·광고도 식약처에서 금지하며, 미인가 성분을 포함한 제품도 규제 대상이다. | 공통 / 규제 / 미인가 성분 / 2026 현행 / KR |
+
 ## 닌텐도
 
 ### 닌텐도 스위치 안 켜짐·충전·조이콘 드리프트·독 연결 자가점검 <sub>2026-07-21 · 예정</sub>
@@ -5217,7 +5278,7 @@
 | `factory-reset-data-loss` | IPTV 셋톱박스 화면 안 나옴·먹통·리모컨 안 될 때 자가점검 |
 | `fading-method-gradual-independence` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `fast-charging-mechanism-lithium-plating-degradation` | 포터블 파워스테이션 충전 안 됨·출력 안 됨·발열·배터리 팽창 자가점검 및 보관 기준 |
-| `fat-soluble-vitamin-stability` | 루테인(루테인+제아잔틴) 눈 건강 보충제의 임상 근거·효과·안전성·국내 규제 |
+| `fat-soluble-vitamin-stability` | 루테인(루테인+제아잔틴) 눈 건강 보충제의 임상 근거·효과·안전성·국내 규제, 영양제의 지용성·수용성 차이, 복용 타이밍, 성분 상호작용, 흡수율 결정 요인 |
 | `file-system-format-exfat-overview` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
 | `file-system-format-fat32-overview` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
 | `filter-bacteria-growth-study` | 반려동물 자동급수기(정수 급수기) 살 만한가 — 트렌드랩 |
@@ -5258,6 +5319,8 @@
 | `iphone-thermal-throttling-performance` | 아이패드 충전 안 됨·느림 자가점검, 아이폰 Face ID 인식 안 됨·카메라 흐림 자가점검, 애플 맥북 안 켜짐·충전·발열·배터리 자가점검, 배터리 충전 통념 팩트체크: 고속충전·100% 충전·0% 방전·밤새 충전·발열의 실제 영향 |
 | `iptime-2g4-vs-5g-characteristics` | 가정용 CCTV·홈캠 연결 안 됨·영상 끊김·녹화 안 됨 자가점검, 무선 키보드·마우스 연결 끊김·인식 안 됨·입력 지연 자가점검 |
 | `joycon-drift-calibration-official-method` | 게임 컨트롤러(엑스박스·듀얼센스·닌텐도) PC 연결·버튼·진동·배터리 자가점검 |
+| `korea-daily-intake-lutein-10-20mg` | 한국 건강기능식품 제도의 원료 분류·기능성 표시 규정·광고 규제 |
+| `korea-food-safety-lutein-function-claim` | 한국 건강기능식품 제도의 원료 분류·기능성 표시 규정·광고 규제 |
 | `kyungdong-exhaust-outlet-abnormality-signs` | 린나이 보일러 에러코드와 온수·난방 자가진단 |
 | `kyungdong-frozen-pipe-thawing` | 린나이 보일러 에러코드와 온수·난방 자가진단 |
 | `kyungdong-gas-smell-emergency-procedure` | 린나이 보일러 에러코드와 온수·난방 자가진단 |

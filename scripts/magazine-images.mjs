@@ -118,6 +118,8 @@ const KW_OVERRIDE = {
   "aromatherapy-lavender-sleep": "lavender bedside relaxation",
   "polysomnography-guide": "sleep study clinic sensors",
   "nasal-congestion-sleep": "person tissue cold in bed",
+  // ── 알약연구소(건강기능식품) ──
+  "lutein-eye-supplement": "leafy greens kale spinach eggs",
   // ── batch19 30편(30일치 비축) ──
   "nas-selfcheck": "network attached storage server",
   "tv-streaming-app-selfcheck": "smart tv streaming app",

@@ -1,0 +1,211 @@
+{
+  "topic": "영양제의 지용성·수용성 차이, 복용 타이밍, 성분 상호작용, 흡수율 결정 요인",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "fat-soluble-vitamin-stability"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "water-soluble-vitamin-absorption-no-meal-required",
+      "claim": "비타민 B군과 비타민 C 같은 수용성 비타민은 물에 잘 녹는 성질 때문에 흡수가 빠르고 식사 여부와 무관하게 흡수되며, 체내에 축적되지 않고 초과분이 소변으로 배출된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/NIH Biochemistry: Water-Soluble Vitamins (StatPearls)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK538510/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "수용성 비타민",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "체내 축적이 안 되므로 한 번에 고용량을 복용하는 것보다 하루에 나누어 복용하는 것이 더 효과적이다.",
+      "cautionSource": "NCBI/NIH 약학 문헌"
+    },
+    {
+      "id": "fat-soluble-vitamin-requires-meal-absorption",
+      "claim": "지용성 비타민(A, D, E, K)은 빈속에 복용하면 흡수율이 낮아지고, 지방이 포함된 식사를 한 직후에 복용하는 것이 흡수 효율을 높인다. 지용성 비타민은 담즙산과 췌장 효소에 의해 미셀 형태로 소장에서 흡수되며, 체내 지방 조직에 저장되어 장기간 유지된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/NIH Biochemistry: Fat-Soluble Vitamins (StatPearls)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK534869/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "지용성 비타민",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "지용성 비타민은 체내에 축적될 수 있으며, 특히 비타민 A·D는 과다 섭취 시 독성(두통, 피부건조, 두개내압 증가)이 나타날 수 있다.",
+      "cautionSource": "NCBI/NIH 약학 문헌"
+    },
+    {
+      "id": "vitamin-c-stomach-irritation-empty-stomach",
+      "claim": "산성 성분인 비타민 C는 공복에 복용하면 위장 자극으로 속쓰림이 나타날 수 있으며, 위장이 예민한 사람은 식후에 복용하는 것이 더 안전하다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "NIH ODS Vitamin C (접근 제한)",
+      "source_url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "비타민 C",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "권위 출처 미확보 — 집필 시 인용 시 신중히. 학술 근거를 먼저 확인 필요.",
+      "cautionSource": "출처 미확인"
+    },
+    {
+      "id": "calcium-iron-competitive-absorption-spacing",
+      "claim": "칼슘과 철분은 소장 점막의 DMT1(divalent metal transporter-1) 흡수 기전을 통해 상호작용하므로, 한 번에 들어오면 철분 흡수율이 떨어질 수 있다. 칼슘은 비경쟁 억제자로 작용하여 철분 흡수를 방해한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Interaction of Calcium with Human DMT1",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/20152801/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "미네랄 상호작용",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "철분은 아침 공복에, 칼슘은 저녁 식후에 복용하는 식으로 최소 2시간 이상 간격을 두는 것이 바람직하다.",
+      "cautionSource": "약학 문헌"
+    },
+    {
+      "id": "iron-absorption-enhancement-vitamin-c",
+      "claim": "비타민 C(아스코르브산)는 철분 흡수를 촉진하는 두 가지 기전을 가지고 있다: 불용성 철 화합물 형성을 방지하고, 3가 철을 2가로 환원하여 소장 점막의 흡수를 용이하게 한다. 철분제를 복용할 때 오렌지 주스 등 비타민 C가 많은 음식을 함께 섭취하면 흡수를 높일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH ODS Iron, PubMed: Role of Vitamin C in Iron Absorption",
+      "source_url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/ ; https://pubmed.ncbi.nlm.nih.gov/2507689/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "흡수 촉진",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "iron-absorption-inhibition-tannin-caffeine",
+      "claim": "탄닌(커피·차), 카페인 등은 철분 흡수를 방해한다. 특히 탄닌은 소장 내에서 철분과 불용성 착화물을 형성하여 흡수를 억제하며, 차는 철분 흡수를 41~95% 감소시킬 수 있다. 칼슘도 철분 흡수에 영향을 미치므로, 빈혈약을 복용한 후 2시간 전후로는 우유, 커피, 녹차, 홍차의 섭취를 자제해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Inhibition of Iron Absorption by Tea and Coffee",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/1862/ ; https://pubmed.ncbi.nlm.nih.gov/6402915/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "흡수 방해 요인",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "철분 흡수가 낮으면 치료 효과가 떨어지므로 복용 간격 관리가 중요하다.",
+      "cautionSource": "약학 문헌"
+    },
+    {
+      "id": "calcium-absorption-vitamin-d-magnesium-synergy",
+      "claim": "칼슘 흡수는 비타민 D에 의해 조절된다. 비타민 D는 장의 칼슘 수송 단백질 발현을 유도하는 호르몬으로서 칼슘 흡수의 필수 요소이며, 마그네슘도 뼈 형성과 미네랄 대사에 중요한 역할을 한다. 비타민 D와 마그네슘이 부족하면 칼슘을 고함량으로 복용해도 효과가 제한될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Vitamin D-Mediated Regulation of Intestinal Calcium Absorption",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9416674/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "미네랄 시너지",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "비타민 D와 마그네슘이 부족하면 칼슘을 고함량으로 복용해도 효과가 제한될 수 있다.",
+      "cautionSource": "NCBI/PMC 의료 문헌"
+    },
+    {
+      "id": "water-soluble-vitamin-divided-doses-more-effective",
+      "claim": "수용성 비타민은 체내에 축적되지 않고 배설되므로, 한 번에 고용량을 복용하는 것보다 하루에 2~3회에 나누어 복용하는 것이 혈중 농도를 유지하는 데 더 효과적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/NIH Biochemistry: Water-Soluble Vitamins (StatPearls)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK538510/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "복용 방식",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "분할 복용이 어려우면 최소 아침·저녁 2회는 권장된다.",
+      "cautionSource": "NCBI/NIH 약학 문헌"
+    },
+    {
+      "id": "high-dose-supplement-paradox-bioavailability",
+      "claim": "고함량 영양제가 반드시 고효과를 제공하지 않으며, 신체가 필요한 양 이상을 섭취하면 초과분이 배설되거나 체내 이용률(생물이용률)이 낮아질 수 있다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "생물이용률 관련 권위 출처 미확보",
+      "source_url": null,
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "흡수의 한계",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "일반적 약학 원리로 보이나 권위 출처 미확보 — 집필 시 PubMed bioavailability 검색 필요",
+      "cautionSource": "출처 미확인"
+    },
+    {
+      "id": "nutrient-synergy-magnesium-calcium-vitamin-d-trinity",
+      "claim": "마그네슘, 칼슘, 비타민 D는 상호 의존적 관계를 가지고 있다. 비타민 D가 없으면 칼슘 흡수 자체가 어렵고, 마그네슘이 부족하면 칼슘이 제대로 활용되지 못하며, 마그네슘 결핍은 비타민 D 저항성을 초래할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Vitamin D and Magnesium in Athletes; Low Magnesium Enforces Bone Calcium Deposition",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12114196/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC10218185/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "영양소 균형",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "단일 성분만 고함량으로 섭취하면 오히려 부작용이 생길 수 있으니, 균형잡힌 포뮬레이션을 선택하는 것이 중요하다.",
+      "cautionSource": "NCBI/PMC 의료 문헌"
+    },
+    {
+      "id": "excess-supplement-excess-burden-liver",
+      "claim": "과도한 영양제 섭취는 오히려 간에 부담을 주고 있으며, 정작 필요한 영양소는 제대로 흡수되지 못할 수 있다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "권위 출처 미확보",
+      "source_url": null,
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "영양제",
+        "line": "과다섭취 부작용",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "권위 출처 미확보 — 집필 시 인용 금지. 간 독성에 관한 임상 근거 필요",
+      "cautionSource": "출처 미확인"
+    }
+  ]
+}

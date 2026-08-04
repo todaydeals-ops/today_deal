@@ -1,0 +1,209 @@
+{
+  "topic": "영양제 안전성: 상한섭취량, 약물 상호작용, 이상사례 신고, 특정 성분 금기",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "upper-limit-intake-UL-definition-safety-threshold",
+      "claim": "상한섭취량(UL, Tolerable Upper Intake Level)은 인체에 유해한 영향이 나타나지 않는 최대 영양소 섭취 수준을 뜻하며, 이 상한치보다 더 많이 섭취할 경우 유해 영향(독성)의 위험이 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼, 미국 의학원(IOM)",
+      "source_url": "https://www.msdmanuals.com/ko/home/%EC%98%81%EC%96%91-%EC%9E%A5%EC%95%A0/%EB%B9%84%ED%83%80%EB%AF%BC/%EB%B9%84%ED%83%80%EB%AF%BC-%EA%B0%9C%EC%9A%94",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "안전성",
+        "line": "상한섭취량",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "상한섭취량은 성인 기준이며, 어린이·임산부·수유부는 더 낮은 기준이 적용될 수 있다.",
+      "cautionSource": "MSD 매뉴얼"
+    },
+    {
+      "id": "fat-soluble-vitamin-accumulation-toxicity-risk",
+      "claim": "지용성 비타민(A, D, E, K)은 간 및 지방 조직에 저장되므로, 장기간 고함량으로 섭취하면 체내에 축적되어 독성을 유발할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼, 의료 문헌",
+      "source_url": "https://www.msdmanuals.com/ko/home/%EC%98%81%EC%96%91-%EC%9E%A5%EC%95%A0/%EB%B9%84%ED%83%80%EB%AF%BC/%EB%B9%84%ED%83%80%EB%AF%BC-%EA%B0%9C%EC%9A%94",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "안전성",
+        "line": "축적 독성",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "특히 비타민 A·D는 독성 위험이 높으므로, 장기 복용 시 혈중 수치를 정기적으로 확인해야 한다.",
+      "cautionSource": "의료 문헌"
+    },
+    {
+      "id": "vitamin-a-excessive-intake-headache-skin-dryness",
+      "claim": "비타민 A를 과다 섭취하면 두통, 피부 건조, 가려움, 심한 경우 두개내압 증가 등의 독성 증상이 나타날 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼",
+      "source_url": "https://www.msdmanuals.com/ko/home/%EC%98%81%EC%96%91-%EC%9E%A5%EC%95%A0/%EB%B9%84%ED%83%80%EB%AF%BC/%EB%B9%84%ED%83%80%EB%AF%BC-%EA%B0%9C%EC%9A%94",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "안전성",
+        "line": "비타민 A 독성",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "임신 초기 과다 비타민 A 섭취는 기형 위험까지 있으므로, 임산부는 특히 주의해야 한다.",
+      "cautionSource": "MSD 매뉴얼"
+    },
+    {
+      "id": "anticoagulant-vitamin-K-interaction-thrombosis-risk",
+      "claim": "항응고제(와파린, 아스피린 등)를 복용 중인 사람이 비타민 K를 추가 섭취하면, 비타민 K가 혈액 응고를 촉진하여 항응고제 효과를 직접 상쇄하고 혈전 형성 위험을 높인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 문헌, 약학 정보",
+      "source_url": "https://my-doctor.io/healthLab/info/1933/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "약물 상호작용",
+        "line": "항응고제",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "항응고제를 복용하면 비타민 K, 오메가3, 홍삼 등 항응고 기능이 있는 영양제 추가 섭취 전 반드시 의료 전문가와 상담해야 한다.",
+      "cautionSource": "의료 문헌"
+    },
+    {
+      "id": "thyroid-medication-mineral-chelation-spacing-required",
+      "claim": "갑상선약을 복용 중이면 칼슘·마그네슘은 최소 2시간 이상, 철분제는 최소 4시간 이상 시간 간격을 두어야 한다. 이 미네랄들이 갑상선 호르몬제와 결합하여 흡수되지 않는 착화물을 만들기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 문헌, 약학 정보",
+      "source_url": "https://my-doctor.io/healthLab/info/1933/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "약물 상호작용",
+        "line": "갑상선약",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "갑상선약의 흡수율이 떨어지면 호르몬 수치 조절이 안 되므로, 복용 간격 관리가 중요하다.",
+      "cautionSource": "약학 문헌"
+    },
+    {
+      "id": "antibiotic-probiotic-simultaneous-administration-interference",
+      "claim": "항생제와 프로바이오틱스를 동시에 복용하면 항생제가 유익균을 죽이므로, 항생제 복용 후 2시간 이상 간격을 두고 프로바이오틱스를 섭취하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 문헌, 약학 정보",
+      "source_url": "https://my-doctor.io/healthLab/info/1933/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "약물 상호작용",
+        "line": "항생제·프로바이오틱스",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "항생제로 인한 유익균 손실을 방지하려면 치료 후 충분한 간격을 두고 프로바이오틱스를 복용하는 것이 효과적이다.",
+      "cautionSource": "약학 문헌"
+    },
+    {
+      "id": "health-supplement-adverse-event-reporting-system-korea",
+      "claim": "한국의 건강기능식품 이상사례는 소비자, 사업자, 의료 전문가가 식약처 통합민원상담(1339) 또는 식품안전나라를 통해 언제 어디서든 신고할 수 있으며, 사업자는 인지 후 7일 이내에 보고해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 이상사례 보고 가이드라인",
+      "source_url": "https://www.mfds.go.kr/brd/m_1060/view.do?seq=14590",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "안전 체계",
+        "line": "이상사례 신고",
+        "years": "2026 현행",
+        "region": "KR"
+      },
+      "caution": "이상사례 신고는 인과관계가 확실하지 않아도 신고 대상이며, 신고자는 보호받는다.",
+      "cautionSource": "식약처 이상사례 보고 가이드라인"
+    },
+    {
+      "id": "health-supplement-adverse-event-definition",
+      "claim": "이상사례는 건강기능식품 섭취로 인해 의심되는 바람직하지 않고 의도하지 않은 징후, 증상, 질병을 뜻하며, 인과관계가 반드시 확립되어야 하는 것은 아니다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 이상사례 보고 가이드라인",
+      "source_url": "https://www.mfds.go.kr/brd/m_1060/view.do?seq=14590",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "안전 체계",
+        "line": "이상사례 정의",
+        "years": "2026 현행",
+        "region": "KR"
+      },
+      "caution": "증상의 원인이 불명확해도 이상사례로 신고하면 식약처가 과학적으로 분석한다.",
+      "cautionSource": "식약처 가이드라인"
+    },
+    {
+      "id": "pregnant-lactating-women-supplement-caution",
+      "claim": "임신·수유 중인 여성은 영양제 추가 섭취 전 반드시 의료 전문가와 상담해야 하며, 특히 고함량 지용성 비타민은 금지될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 문헌, 약학 정보",
+      "source_url": "https://my-doctor.io/healthLab/info/1933/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "안전성",
+        "line": "특수 인구군",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "비타민 A, 비타민 D 과다섭취는 태자 기형 위험 또는 수유아 건강에 영향을 줄 수 있다.",
+      "cautionSource": "의료 가이드라인"
+    },
+    {
+      "id": "autoimmune-disease-supplement-contraindication",
+      "claim": "자가면역질환 환자는 면역력 강화 영양제(홍삼, 비타민 D 고함량 등) 추가 복용 전 의료 전문가와 상담해야 하며, 자가항체를 악화시킬 가능성이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 문헌",
+      "source_url": "https://my-doctor.io/healthLab/info/1933/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "안전성",
+        "line": "자가면역질환",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "면역 활성화는 자가면역질환 환자에게 이로울 수 있지만 악화를 초래할 수도 있으므로, 전문가의 판단이 필수다.",
+      "cautionSource": "의료 문헌"
+    },
+    {
+      "id": "seizure-disorder-epilepsy-supplement-drug-interaction",
+      "claim": "간질·발작 장애 환자는 영양제 추가 섭취 전 의료 전문가와 상담해야 하며, 일부 영양제(비타민 B6 고함량 등)가 항경련제 약효를 감소시킬 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의료 문헌",
+      "source_url": "https://my-doctor.io/healthLab/info/1933/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "공통",
+        "category": "약물 상호작용",
+        "line": "항경련제",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "항경련제 약효 감소는 발작 재발 위험을 높이므로, 절대 자의로 영양제를 추가하면 안 된다.",
+      "cautionSource": "의료 문헌"
+    }
+  ]
+}
