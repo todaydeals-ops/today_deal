@@ -1,62 +1,63 @@
 {
-  "topic": "폴리코사놀의 HDL·LDL 효과 근거·쿠바 연구 편향·재현성 문제",
-  "brand": "공통",
-  "article": "policosanol-hdl 예정",
-  "captured": "2026-08-04",
-  "reused_facts": [],
-  "declined_facts": [],
-  "disputes": [],
-  "facts": [
-    {
-      "id": "policosanol-2006-jama-negative-trial-berthold",
-      "claim": "2006년 JAMA 무작위대조시험(143명, 독일)에서 폴리코사놀 10·20·40·80mg/일 모두 위약 대비 LDL·HDL을 포함한 지질 수치를 유의하게 개선하지 못했다.",
-      "tier": "확실",
-      "evidence": "공식",
-      "source": "JAMA 2006;295:2262-2269, Berthold HK et al.",
-      "source_url": "https://jamanetwork.com/journals/jama/fullarticle/202869",
-      "checked": "2026-08-04",
-      "scope": {
-        "target": "고콜레스테롤혈증 또는 복합 이상지질혈증 성인",
-        "population": "143명, 평균 56세",
-        "timeframe": "12주 치료",
-        "region": "독일"
-      },
-      "caution": "이는 초기 쿠바 연구와는 상반된 결과며, 독립적 재현성의 부재를 보여준다.",
-      "cautionSource": "JAMA 임상"
-    },
-    {
-      "id": "policosanol-cuba-research-bias-heterogeneity",
-      "claim": "폴리코사놀의 초기 긍정 효과는 주로 쿠바 연구진의 보고에서 나왔지만, 독립적 재현 연구에서는 효과가 확인되지 않았으며, 이는 지역·연구진·원료 조성에 따른 편향 가능성을 시사한다.",
-      "tier": "확실",
-      "evidence": "공식",
-      "source": "Phytotherapy Research 2018;32(11) 메타분석 및 JAMA 2006 비교",
-      "source_url": null,
-      "checked": "2026-08-04",
-      "scope": {
-        "target": "폴리코사놀 연구 전반",
-        "population": "다양한 RCT들의 메타분석",
-        "timeframe": "1990년대~2010년대",
-        "region": "글로벌 (쿠바 vs 기타 선진국)"
-      },
-      "caution": "★'해외 논문이 있다'고 해서 모든 재현성 있는 근거는 아니다. 특정 지역·후원처의 편향 가능성을 항상 고려해야 한다.",
-      "cautionSource": "메타분석 이질성 분석"
-    },
-    {
-      "id": "policosanol-hdl-mechanism-uncertain",
-      "claim": "폴리코사놀이 HDL 수치 또는 HDL 기능에 영향을 준다는 기전은 확립되지 않았으며, 지질 수치 변화가 심혈관질환 예방으로 이어진다는 근거도 부족하다.",
-      "tier": "확인실패",
-      "evidence": "공식",
-      "source": "웹검색 기회 초과 — 기전 논문 미확보",
-      "source_url": null,
-      "checked": "2026-08-04",
-      "scope": {
-        "target": "폴리코사놀 기전",
-        "population": "일반",
-        "timeframe": "전연식",
-        "region": "글로벌"
-      },
-      "caution": "GPT 리드 기반. 'HDL을 높인다'는 광고도 검증되지 않은 상태이므로, 집필에서 신중한 표현이 필요하다.",
-      "cautionSource": "미확인"
-    }
-  ]
+ "topic": "폴리코사놀의 HDL·LDL 효과 근거·쿠바 연구 편향·재현성 문제",
+ "brand": "공통",
+ "article": "policosanol-hdl 예정",
+ "captured": "2026-08-04",
+ "reused_facts": [],
+ "declined_facts": [],
+ "disputes": [],
+ "facts": [
+  {
+   "id": "policosanol-2006-jama-negative-trial-berthold",
+   "claim": "2006년 JAMA 무작위대조시험(143명, 독일)에서 폴리코사놀 10·20·40·80mg/일 모두 위약 대비 LDL·HDL을 포함한 지질 수치를 유의하게 개선하지 못했다.",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "JAMA 2006;295:2262-2269, Berthold HK et al.",
+   "source_url": "https://jamanetwork.com/journals/jama/fullarticle/202869",
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "고콜레스테롤혈증 또는 복합 이상지질혈증 성인",
+    "population": "143명, 평균 56세",
+    "timeframe": "12주 치료",
+    "region": "독일"
+   },
+   "caution": "이는 초기 쿠바 연구와는 상반된 결과며, 독립적 재현성의 부재를 보여준다.",
+   "cautionSource": "JAMA 임상"
+  },
+  {
+   "id": "policosanol-cuba-research-bias-heterogeneity",
+   "claim": "폴리코사놀의 초기 긍정 효과는 주로 쿠바 연구진의 보고에서 나왔지만, 독립적 재현 연구에서는 효과가 확인되지 않았으며, 이는 지역·연구진·원료 조성에 따른 편향 가능성을 시사한다.",
+   "tier": "확인실패",
+   "evidence": "공식",
+   "source": "Phytotherapy Research 2018;32(11) 메타분석 및 JAMA 2006 비교",
+   "source_url": null,
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "폴리코사놀 연구 전반",
+    "population": "다양한 RCT들의 메타분석",
+    "timeframe": "1990년대~2010년대",
+    "region": "글로벌 (쿠바 vs 기타 선진국)"
+   },
+   "caution": "★'해외 논문이 있다'고 해서 모든 재현성 있는 근거는 아니다. 특정 지역·후원처의 편향 가능성을 항상 고려해야 한다.",
+   "cautionSource": "메타분석 이질성 분석",
+   "note": "출처 URL 없음 — 인용 금지."
+  },
+  {
+   "id": "policosanol-hdl-mechanism-uncertain",
+   "claim": "폴리코사놀이 HDL 수치 또는 HDL 기능에 영향을 준다는 기전은 확립되지 않았으며, 지질 수치 변화가 심혈관질환 예방으로 이어진다는 근거도 부족하다.",
+   "tier": "확인실패",
+   "evidence": "공식",
+   "source": "웹검색 기회 초과 — 기전 논문 미확보",
+   "source_url": null,
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "폴리코사놀 기전",
+    "population": "일반",
+    "timeframe": "전연식",
+    "region": "글로벌"
+   },
+   "caution": "GPT 리드 기반. 'HDL을 높인다'는 광고도 검증되지 않은 상태이므로, 집필에서 신중한 표현이 필요하다.",
+   "cautionSource": "미확인"
+  }
+ ]
 }

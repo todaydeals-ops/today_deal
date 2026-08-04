@@ -3,7 +3,7 @@
 > 자동 생성 파일. 직접 수정하지 마세요. `node scripts/research-index.mjs`로 갱신합니다.
 > **기계적 대조 기준은 이 파일이 아니라 `facts/*.json` 원본입니다.**
 
-생성: 2026-08-04 · 조사 292건 · 팩트 3639개
+생성: 2026-08-04 · 조사 330건 · 팩트 3843개
 
 ## ⚠️ 무결성 경고
 
@@ -23,7 +23,7 @@
 - thyroid-diagnosis-tsh-test (수면_thyroid-sleep.json)
 - toddler-boundary-setting-clear-expectations (수면_toddler-bedtime-resistance.json)
 
-### scope 구조 문제 (층위 혼동 위험) (444)
+### scope 구조 문제 (층위 혼동 위험) (790)
 
 - adhd-core-symptoms-definition: scope.brand 누락
 - adhd-core-symptoms-definition: scope.category 누락
@@ -55,13 +55,13 @@
 - lavender-ema-regulatory-approval: scope.category 누락
 - lavender-capsule-rct-ijpcp: scope.brand 누락
 - lavender-capsule-rct-ijpcp: scope.category 누락
-- …외 414건
+- …외 760건
 
 ## 통계
 
-- 확신도: 확실 3439 · 논쟁 169 · 확인실패 31
-- 근거: 공식 2972 · 후기 662 · 실측 5
-- **순차 대안 톤 대상: 706개** (tier=논쟁 또는 evidence=후기 → "먼저 해보고 안 되면" 서술 필수)
+- 확신도: 확실 3595 · 논쟁 188 · 확인실패 60
+- 근거: 공식 3174 · 후기 664 · 실측 5
+- **순차 대안 톤 대상: 728개** (tier=논쟁 또는 evidence=후기 → "먼저 해보고 안 되면" 서술 필수)
 
 ## HP
 
@@ -3886,6 +3886,190 @@
 | `wake-window-10-12month` | 확실 | 공식 | 생후 10~12개월 영아의 권장 각성 시간은 3~6시간(평균 3.5~5시간)이다. | 공통 / 수면·침구 / 국제 |
 | `wake-window-guideline-not-rule` | 확실 | 공식 | 각성 윈도우는 절대 기준이 아니라 출발점이며, 보호자는 개별 아기의 피로 신호(하품, 눈 비비기, 활동 저하)를 관찰해 낮잠 타이밍을 결정해야 한다. | 공통 / 수면·침구 / 국제 |
 
+### 베르베린의 혈당 개선 기전·소규모 임상·메트포르민 비교·약물 상호작용·자가치료 위험 <sub>2026-08-04 · berberine-blood-sugar 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `berberine-2008-metabolism-rct-glucose-improvement` | 확실 | 공식 | 2008년 Metabolism 소규모 무작위대조시험(연구A: 36명·3개월, 연구B: 48명·3개월)에서 베르베린은 제2형 당뇨병 환자의 공복혈당·식후혈당·당화혈색소를 유의하게 감소시켰으며, 메트포르민과 유사한 효과를 보였다. | 중국 |
+| `berberine-mechanism-ampk-glucose-metabolism` | 확인실패 | 공식 | 베르베린은 AMPK 활성화·간의 포도당 생성 억제·장내미생물 변화·인슐린 신호 조절 등 여러 경로에서 혈당 개선을 제안하는 연구가 있으나, 인체에서 우선순위 기전은 미확립이다. | 글로벌 |
+| `berberine-drug-interaction-cyp3a4-cyclosporine` | 확실 | 공식 | 베르베린은 CYP2D6·CYP2C9·CYP3A4 등 여러 시토크롬 P450 효소를 억제하므로, 이들 효소로 대사되는 스타틴·사이클로스포린·칼시뉴린 억제제·면역억제제 등과 상호작용하여 약물 혈중 농도를 상승시킬 수 있다. | 글로벌 |
+| `berberine-hypoglycemia-additive-sulfonylurea-metformin` | 확실 | 공식 | 베르베린 자체가 혈당을 저하시키므로, 설포닐우레아(glimepiride 등)·메트포르민·인슐린·GLP-1 수용체 작용제 등 혈당강하제와 함께 복용하면 저혈당(hypoglycemia)의 가산 위험이 증가한다. 특히 설포닐우레아와의 병용은 식후 저혈당 위험이 높다. | 글로벌 |
+| `berberine-self-treatment-blood-sugar-danger` | 확실 | 공식 | 베르베린을 혈당강하제로 자가치료하면 저혈당 위험, 의료진 지도 없는 용량 조정의 위험, 실제 당뇨병 관리 지연 위험이 있다. | 글로벌 |
+
+### 비오틴의 탈모·손톱 효과, 고용량 검사 간섭 위험 <sub>2026-08-04 · biotin-hair-nail</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `biotin-hair-loss-review-deficiency-vs-healthy-2017` | 확실 | 공식 | 탈모 또는 모발 이상을 대상으로 한 체계적 문헌고찰(2017, Skin Appendage Disorders)은 비오틴 결핍이나 기저질환이 있는 경우 개선됐으나, 비오틴 결핍이 없는 건강한 사람의 일반적 탈모 치료 근거는 부족하다고 결론 내렸다. |  |
+| `biotin-brittle-fingernails-treatment-1990-small-study` | 논쟁 🔶 | 공식 | 부서지기 쉬운 손톱을 대상으로 한 관찰 연구(1990, Journal of American Academy of Dermatology, N=25)에서 비오틴 2.5mg 일일 투여 시 손톱 두께가 25% 증가했으며, 대조군은 7% 증가했다. |  |
+| `biotin-high-dose-lab-test-interference-troponin-2017-fda` | 확실 | 공식 | 고용량 비오틴(>5 mg/day)은 스트렙타비딘-비오틴 방식을 쓰는 면역검사(immunoassay)를 간섭하여 심근 트로포닌(troponin), 갑상선호르몬, 성호르몬, 부갑상선호르몬 등의 검사 결과를 잘못 높이거나 낮춰 오진을 초래할 수 있다. FDA는 2017년 이를 경고했다. |  |
+| `biotin-lab-test-interference-recovery-time-variable` | 확실 | 공식 | 비오틴이 검사 결과에서 제거되는 시간은 복용량, 신장 기능, 검사 장비에 따라 다르며, 일반적으로 중단 후 24~72시간이 필요하다고 알려져 있으나 개인차가 크다. |  |
+
+### 보스웰리아 추출물의 관절염 효과와 NSAID 비교 <sub>2026-08-04 · boswellia-arthritis</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `boswellia-akba-5-lipoxygenase-inhibition-mechanism` | 확실 | 공식 | 보스웰리아 추출물의 활성 성분 AKBA(3-Acetyl-11-Keto-Boswellic Acid)는 5-리포옥시게나제(5-LOX) 효소를 직접 억제하여 류코트리엔 B4 등 염증 매개물질 생성을 차단한다. | 공통 / 영양제 / 보스웰리아 기전 / 전 연식 / 글로벌 |
+| `boswellia-rct-knee-osteoarthritis-efficacy` | 확실 | 공식 | 인도 개발 보스웰리아 추출물(AKBA 농축)은 무릎 관절염 환자를 대상으로 한 RCT에서 30일 내 위약 대비 무릎 통증 및 증상을 유의하게 개선시켰다. | 공통 / 영양제 / 보스웰리아 RCT / 전 연식 / 글로벌 |
+| `boswellia-meta-analysis-pain-function-improvement` | 확실 | 공식 | 2020년 메타분석(7개 RCT, n=545)은 무릎 관절염에서 보스웰리아 추출물이 통증과 신체 기능을 위약 대비 유의하게 개선시켰다고 결론지었다. | 공통 / 영양제 / 보스웰리아 메타분석 / 2020 / 글로벌 |
+| `boswellia-vs-nsaid-gi-safety-advantage` | 확실 | 공식 | 2018년 메타분석에서 커큐민·보스웰리아 복합 포뮬레이션이 무릎 관절염에서 NSAID 대비 통증·기능 개선은 유사하나, NSAID보다 위장관계 부작용이 적었다. | 공통 / 영양제 / 보스웰리아 vs NSAID / 2018 / 글로벌 |
+| `akba-content-variance-commercial-products` | 확인실패 | 공식 | AKBA 함유 상품 13배 편차: '보스웰리아 추출물(AKBA 강조)' 제품은 평균 98mg/g AKBA이나, '보스웰리아 추출물'으로만 표기된 제품은 평균 7.4mg/g AKBA였다. | 공통 / 영양제 / AKBA 함량 편차 / 전 연식 / 글로벌 |
+
+### 콘드로이틴 황산염의 관절 건강 효과와 국제 규제 위치 <sub>2026-08-04 · chondroitin-joint</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `chondroitin-cartilage-matrix-protease-inhibition` | 확실 | 공식 | 콘드로이틴 황산염은 연골 기질의 주요 성분으로, 단백질분해효소(프로테아제)로부터 연골을 보호하고 수분 유지를 돕는 기능을 한다. | 공통 / 영양제 / 콘드로이틴 기전 / 전 연식 / 글로벌 |
+| `chondroitin-gait-combined-subgroup-efficacy-same-as-glucosamine` | 논쟁 🔶 | 공식 | GAIT 임상에서 콘드로이틴 단독은 위약과 차이 없었으나, 글루코사민+콘드로이틴 병용은 중등도-심한 통증 부분군에서만 유의성을 보였다(단, 저자들은 부분군 분석의 한계 명시). | 공통 / 영양제 / GAIT 콘드로이틴 / 2006 / 미국 |
+| `chondroitin-european-regulatory-status-sysadoa` | 확실 | 공식 | 유럽에서는 콘드로이틴 황산염을 느린작용 골관절염약(SYSADOA, Symptomatic Slow-Acting Drug for Osteoarthritis)으로 분류하며, 많은 유럽 국가에서 의약품(처방약)으로 취급한다. | 공통 / 규제 / 유럽 의약품 분류 / 2019-현재 / EU |
+| `chondroitin-product-quality-variance-content-deficit` | 확실 | 공식 | 2019년 유럽 식품 보충제 분석에서 25개 표본 중 19개(76%) 이상이 표시된 콘드로이틴 및 글루코사민 함량보다 실제 함량이 낮았으며, 최대 -60.3%의 함량 결손이 있었다. | 공통 / 영양제 / 제품 품질 문제 / 2019 / 유럽 |
+| `chondroitin-dosage-standard-clinical` | 확실 | 공식 | 임상 GAIT에서 사용된 콘드로이틴 황산염 표준 용량은 1,200mg/일(400mg×3회 분할)이다. | 공통 / 영양제 / 콘드로이틴 용량 / 2006 / 미국 |
+
+### 크랜베리의 요로감염 예방·재발 방지·프로안토시아니딘·효과의 대상 한계 <sub>2026-08-04 · cranberry-uti 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `cranberry-2023-cochrane-review-recurrent-uti-prevention` | 확실 | 공식 | 2023년 Cochrane 체계적 문헌고찰(50개 RCT, 8,857명)에서 크랜베리 제품은 재발성 요로감염 여성(8개 연구, 1,555명)과 소아에서 증상성 배양확인 요로감염 위험을 유의하게 감소시켰으나(RR 0.74), 고령자·임신부·신경인성 방광 환자에서는 효과가 확인되지 않았다. | 글로벌 |
+| `cranberry-pac-proanthocyanidin-mechanism` | 확인실패 | 공식 | 크랜베리의 A형 프로안토시아니딘(PAC)은 일부 요로병원성 대장균의 요로상피 부착을 방해함으로써 감염 기회를 줄일 수 있지만, 세균을 직접 살균하지는 않는다. | 글로벌 |
+| `cranberry-treatment-vs-prevention-distinction` | 확실 | 공식 | 2023년 Cochrane 리뷰의 또 다른 메타분석('현재 요로감염 치료'로 검색)에서는 크랜베리가 진행 중인 감염을 치료할 근거가 충분하지 않아 항생제 치료를 대체할 수 없다. | 글로벌 |
+| `cranberry-product-heterogeneity-pac-content` | 확인실패 | 공식 | 크랜베리 주스·캡슐·분말은 프로안토시아니딘(PAC) 함량과 생물학적 이용 가능성이 크게 다르며, 당분 첨가 주스는 당뇨병 환자에게 불리할 수 있다. | 글로벌 |
+| `cranberry-population-limit-elderly-pregnant-dysfunctional-bladder` | 확실 | 공식 | Cochrane 메타분석에서 크랜베리의 효과가 확인되지 않은 집단: 고령자, 임신부, 신경인성 방광(배뇨장애) 환자. 따라서 '모든 여성이 매일 먹어야 한다'는 주장은 근거 부족이다. | 글로벌 |
+
+### 감마리놀렌산(GLA)의 여성 건강 효과, 아토피성 피부염, 월경전 증후군 <sub>2026-08-04 · evening-primrose-gla</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `evening-primrose-oil-borage-oil-eczema-negative-2013-cochrane` | 확실 | 공식 | 달맞이꽃종자유(evening primrose oil)와 보라지유의 아토피성 습진 치료 효과를 검토한 Cochrane 메타분석(2013)은 27건 연구(1,596명)를 분석했으며, 두 오일 모두 위약 대비 의미 있는 습진 개선 효과를 보이지 않았다. |  |
+| `evening-primrose-oil-cyclical-mastalgia-negative-2002` | 논쟁 🔶 | 공식 | 달맞이꽃종자유의 주기성 유방통(cyclical mastalgia) 치료 효과를 평가한 RCT(2002, The Breast)에서 달맞이꽃종자유가 위약 대비 유방통을 뚜렷하게 줄이지 못했다. |  |
+| `evening-primrose-oil-menopausal-hot-flash-mixed-evidence-2024` | 논쟁 🔶 | 공식 | 달맞이꽃종자유의 갱년기 안면홍조 개선 효과를 검토한 체계적 문헌고찰(2024, Journal of Menopausal Medicine)에서 일부 지표에서 개선 신호가 있었으나, 안면홍조 완화 효과를 결론 짓기에는 근거가 부족하다고 평가했다. |  |
+| `gla-gamma-linolenic-acid-mechanism-prostaglandin-precursor` | 확실 | 공식 | 감마리놀렌산(GLA)은 오메가-6 지방산으로, 체내에서 디호모감마리놀렌산과 프로스타글란딘 계열 물질의 전구체가 되어 염증 조절과 호르몬 민감성에 영향을 줄 수 있다고 제안되었으나, 경구 보충의 임상 유효성은 질환별로 일관되지 않다. |  |
+
+### 엽산(엽산염)의 신경관결손 예방 효과, 기전, 용량, 안전성 <sub>2026-08-04 · folate-pregnancy</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `mrc-vitamin-study-neural-tube-defect-prevention-1991` | 확실 | 공식 | 신경관결손 임신력이 있는 1,817명의 여성을 대상으로 한 MRC Vitamin Study(1991)에서 임신 전후 고용량 엽산 투여 군은 신경관결손 재발을 72% 감소시켰다(상대위험도 0.28, 95% CI 0.12-0.71). |  |
+| `periconceptional-multivitamin-first-neural-tube-defect-prevention-1992` | 확실 | 공식 | 임신을 계획한 헝가리 여성 5,453명을 대상으로 한 RCT(1992)에서 엽산을 포함한 종합비타민을 임신 전후 복용한 군은 첫 신경관결손 발생이 100% 감소했다(사건 0건 vs 6건). |  |
+| `folic-acid-neural-tube-defect-prevention-mechanism-dna-synthesis-cell-division` | 확실 | 공식 | 엽산은 일탄소 대사에서 필수 보조인자로 작용하여 DNA 합성과 세포 분열에 필요한 뉴클레오타이드 형성을 지원하며, 임신 초기 신경관이 닫히는 시기(임신 19-28일경)에 충분한 엽산 공급이 신경관결손 발생 위험을 낮춘다. |  |
+| `folic-acid-high-dose-b12-deficiency-masking-risk` | 확실 | 공식 | 고용량 엽산을 장기간 복용하면 비타민 B12 결핍성 빈혈의 초기 혈액 소견(거대적혈구빈혈)을 가려서 신경 손상(신경병증) 진단이 늦어질 수 있다. |  |
+
+### 은행잎 추출물의 기억력·치매 예방 효과·혈액순환·출혈 위험 <sub>2026-08-04 · ginkgo-circulation 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `ginkgo-2008-gem-study-jama-null-dementia-prevention` | 확실 | 공식 | 2008년 Ginkgo Evaluation of Memory(GEM) 무작위대조시험(3,069명, 중앙 6.1년 추적)에서 은행잎 추출물 120mg 2회/일은 정상인지기능 또는 경도인지장애 노인에서 치매 또는 알츠하이머병 발생을 예방하지 못했다. | 미국 5개 의료기관 |
+| `ginkgo-mechanism-antioxidant-platelet-circulation` | 확인실패 | 공식 | 표준화 은행잎 추출물에는 플라보노이드와 테르펜락톤이 포함되며, 항산화·혈소판활성인자 조절·미세순환 및 신경전달계 조절 작용이 제안되지만, 이는 주로 시험관 또는 동물 연구에 기반한다. | 글로벌 |
+| `ginkgo-anticoagulant-bleeding-risk-surgery` | 확실 | 공식 | 은행잎 추출물은 항응고제·항혈소판제·비스테로이드성 소염진통제와 병용 시 출혈 위험을 증가시킬 수 있으며, 수술·시술 전 복용 사실을 의료진에게 고지해야 한다. | 글로벌 |
+| `ginkgo-standardization-ginkgolic-acid-limit` | 확인실패 | 공식 | 은행잎 추출물은 플라보놀배당체와 테르펜락톤 함량으로 표준화되며, 깅콜산(ginkgolic acid)은 알레르기 및 독성 우려로 일정 이상 함유되면 안 된다. | KR |
+
+### 글루코사민의 무릎 관절염 효과와 GAIT 임상 결과 <sub>2026-08-04 · glucosamine-knee</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `glucosamine-mechanism-cartilage-matrix-synthesis` | 확실 | 공식 | 글루코사민은 우리 몸이 연골 기질을 만드는 데 필요한 아미노당으로, 프로테오글리칸 합성에 사용되며 이론적으로 연골 재생에 역할할 수 있다. | 공통 / 영양제 / 글루코사민 기전 / 전 연식 / 글로벌 |
+| `glucosamine-form-sulfate-vs-hydrochloride-absorption` | 논쟁 🔶 | 공식 | 황산염 형태(glucosamine sulfate)와 염산염 형태(glucosamine hydrochloride)는 생체이용률이 다르며, 일부 연구에서 황산염이 더 높은 흡수율을 보인다. | 공통 / 영양제 / 글루코사민 형태 / 전 연식 / 글로벌 |
+| `gait-trial-overall-population-no-efficacy` | 확실 | 공식 | 미국 NIH 주도 GAIT(Glucosamine/Chondroitin Arthritis Intervention Trial, 24주, 무릎 관절염)에서 글루코사민 단독, 콘드로이틴 단독, 병용 모두 위약(60% 반응률)과 비교하여 통계적 유의 효과 없음(글루코사민 64%, 콘드로이틴 65%, 병용 66%). | 공통 / 영양제 / GAIT 임상 전체 모집단 / 2006 / 미국 |
+| `gait-trial-moderate-severe-pain-subgroup-efficacy` | 논쟁 🔶 | 공식 | GAIT의 사전 규정된 부분군 분석에서 중등도-심한 통증을 가진 환자(약 20%)에게만 글루코사민+콘드로이틴 병용이 통계적 유의성을 보였으나, 저자들은 이 부분군 분석이 충분히 큰 표본으로 설계되지 않았으며 임상 권장사항을 도출할 수 없다고 명시했다. | 공통 / 영양제 / GAIT 중등도-심한 통증 부분군 / 2006 / 미국 |
+| `glucosamine-clinical-guideline-divergence-nih-vs-european` | 확실 | 공식 | 미국 NIH/ACR은 GAIT 기반으로 무릎 관절염에 글루코사민 사용을 권장하지 않으나, 유럽 ESCEO는 글루코사민 황산염을 느린작용 골관절염약(SYSADOA)으로 분류하여 1차 치료로 권장하는 등 국제 가이드라인이 다르다. | 공통 / 영양제 / 국제 가이드라인 차이 / 2012-현재 / 미국/유럽 |
+| `glucosamine-dosage-standard-clinical` | 확실 | 공식 | 임상 GAIT에서 사용된 글루코사민 황산염 표준 용량은 1,500mg/일(500mg×3회 분할)이다. | 공통 / 영양제 / 글루코사민 용량 / 2006 / 미국 |
+
+### 철분제의 흡수, 복용 방법, 위장 부작용, 약물 상호작용 <sub>2026-08-04 · iron-supplement-anemia</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `iron-absorption-alternate-day-vs-consecutive-day-2017` | 확실 | 공식 | 철분 결핍 여성을 대상으로 한 RCT(2017, Lancet Haematology)에서 격일 투여(alternate day dosing)가 연속 일일 투여보다 철분 흡수율을 더 높였으며, 이는 헵시딘 반응(hepcidin response)과 관련이 있다. |  |
+| `ferrous-sulfate-gastrointestinal-side-effects-2015-meta-analysis` | 확실 | 공식 | 황산철(ferrous sulfate) 복용자를 대상으로 한 메타분석(2015, PLOS ONE, 43건 6,831명)에서 황산철은 위약 대비 위장 부작용 위험을 2.32배 증가시켰으며, 부작용에는 오심, 복부통증, 변비, 설사, 검은 변 등이 포함된다. |  |
+| `iron-absorption-hepcidin-regulation-consecutive-dosing-impairs` | 확실 | 공식 | 연속 일일 투여는 혈중 헵시딘(hepcidin)을 높여서 다음 날의 철분 흡수를 억제하는 반면, 격일 투여는 헵시딘이 낮아져서 높은 흡수율을 유지할 수 있다. |  |
+| `iron-absorption-inhibitors-calcium-tannin-interval-separation` | 확실 | 공식 | 칼슘, 제산제, 찻잎과 커피에 함유된 타닌은 철분 흡수를 방해하므로, 철분제와 이들 물질을 최소 2시간 이상 시간을 두고 복용해야 한다. |  |
+
+### 멜라토닌과 국내 수면 영양제 대안(테아닌, 감태, GABA 등), 효과와 안전성 <sub>2026-08-04 · melatonin-vs-sleep-supplement</sub>
+
+_(팩트 없음)_
+
+### MSM(메틸설포닐메탄)의 관절 통증 효과와 근거 수준 <sub>2026-08-04 · msm-joint-supplement</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `msm-sulfur-compound-mechanism-cartilage-joint` | 확실 | 공식 | MSM(메틸설포닐메탄)은 생체이용 가능한 유기 황 화합물로서 콜라겐, 글루코사민, 콘드로이틴 합성에 필요한 원료이며, 항염증·항산화 작용으로 연골 기질 유지에 기여한다고 알려져 있다. | 공통 / 영양제 / MSM / 전 연식 / 글로벌 |
+| `msm-rct-modest-effect-limited-clinical-significance` | 논쟁 🔶 | 공식 | 2006년 RCT(n=50, 6g/12주)는 WOMAC 통증 및 신체 기능 지표에서 위약 대비 통계적 유의성을 보였으나(P<0.05), 메타분석(3개 고질 RCT, n=326)은 '통계적 유의성이 있더라도 임상적으로 의미 있는 통증 감소는 아니다'고 결론지었다. | 공통 / 영양제 / MSM 임상 효과 / 2006-현재 / 글로벌 |
+| `msm-2023-mild-pain-quality-life-improvement` | 논쟁 🔶 | 공식 | 2023년 무작위 이중맹검 위약 대조 RCT(경미한 무릎 통증)에서 12주 후 전체 삶의 질 점수 차이가 통계적으로 유의했고(p=0.046), 건강 상태도 개선됐다(p=0.032). | 공통 / 영양제 / MSM 최근 RCT / 2023 / 글로벌 |
+| `msm-dosage-standard-clinical-use` | 확실 | 공식 | 임상 RCT에서 사용된 표준 용량은 일일 6g(3g×2회 분할)을 12주 이상 복용하는 것이다. | 공통 / 영양제 / MSM 용량 / 2006-현재 / 글로벌 |
+
+### 나토키나제의 혈전 용해 기전·임상 근거·출혈 위험 <sub>2026-08-04 · nattokinase-blood-clot 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `nattokinase-rct-2021-cahs-null-effect` | 확실 | 공식 | 2021년 나토키나제 무작위대조시험(265명, 중앙값 3년 추적)에서 경동맥 내중막 두께, 경동맥 경직도, 혈압 및 혈액 검사 지표 모두에서 위약 대비 유의한 개선이 없었다. | 미국 |
+| `nattokinase-mechanism-fibrin-enzyme` | 확인실패 | 공식 | 나토키나제는 낫토 발효 과정에서 생성되는 단백질분해효소로, 시험관 연구에서 피브린 분해 효과가 보고되었지만 경구 섭취 후 장에서 활성 효소가 전신 순환으로 얼마나 흡수되는지는 미확립되어 있다. | 글로벌 |
+| `nattokinase-anticoagulant-bleeding-risk` | 확인실패 🔶 | 후기 | 항응고제(와파린, 항혈소판제 등)와 나토키나제를 병용할 경우 출혈 위험이 증가할 가능성이 있으며, 수술·시술 전 복용 사실을 의료진에게 고지해야 한다. | 글로벌 |
+
+### 오메가-3 제형(rTG·TG·EE)별 생체이용률·산패도 관리·형태에 따른 임상 효과 차이 <sub>2026-08-04 · omega3-form-rtg-ee 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `omega3-rtg-ee-bioavailability-difference-2010` | 확인실패 | 공식 | 2010년 Prostaglandins, Leukotrienes and Essential Fatty Acids 무작위대조시험에서 rTG(재에스테르화 트리글리세라이드) 형태의 EPA·DHA 생체이용률이 EE(에틸 에스테르) 형태보다 높게 나타났다. | 글로벌 |
+| `omega3-rtg-ee-clinical-superiority-unproven` | 확실 | 공식 | rTG 또는 TG 형태가 일부 단회·단기 흡수 연구에서 EE보다 유리했지만, 충분한 지방과 함께 복용하면 형태 간 차이가 줄어들 수 있으며, 흡수율 차이가 심혈관 사건 예방이나 중성지방 감소의 임상적 우월성으로 곧바로 이어진다는 근거는 부족하다. | 글로벌 |
+| `omega3-oxidation-totox-peroxide-value` | 확인실패 | 공식 | 오메가-3의 산패는 EPA·DHA의 불포화 결합이 산화되어 과산화물과 2차 산화물이 생성되는 과정이며, 과산화물가(POV)와 아니시딘가(AV)를 합산한 TOTOX 지수로 평가한다. | 글로벌 |
+| `omega3-meal-dependency-lipid-absorption` | 확인실패 | 공식 | 오메가-3(특히 EE)의 흡수는 제형 차이만 아니라 식사 중 지방 포함 여부·시간·복용 기간·개인 소화 상태의 영향도 받는다. | 글로벌 |
+| `omega3-high-dose-atrial-fibrillation-signal` | 확인실패 | 공식 | 일부 고용량 심혈관 임상시험에서 오메가-3 보충이 심방세동 위험 증가 신호를 보였으므로, 기저 심장 질환자는 고용량 추가 섭취 전 의료진 상담이 필수다. | 글로벌 |
+| `omega3-form-not-guarantee-disease-prevention-efficacy` | 확실 | 공식 | rTG·TG·EE라는 형태 자체는 별도의 질병 예방 기능성을 보장하지 않으며, 한국 건강기능식품 인정 기능성(혈중 중성지질 개선, 혈행 개선 등)은 형태가 아니라 EPA+DHA 합계 섭취량과 대상자 상태에 따라 결정된다. | KR |
+
+### 폴리코사놀의 HDL·LDL 효과 근거·쿠바 연구 편향·재현성 문제 <sub>2026-08-04 · policosanol-hdl 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `policosanol-2006-jama-negative-trial-berthold` | 확실 | 공식 | 2006년 JAMA 무작위대조시험(143명, 독일)에서 폴리코사놀 10·20·40·80mg/일 모두 위약 대비 LDL·HDL을 포함한 지질 수치를 유의하게 개선하지 못했다. | 독일 |
+| `policosanol-cuba-research-bias-heterogeneity` | 확실 | 공식 | 폴리코사놀의 초기 긍정 효과는 주로 쿠바 연구진의 보고에서 나왔지만, 독립적 재현 연구에서는 효과가 확인되지 않았으며, 이는 지역·연구진·원료 조성에 따른 편향 가능성을 시사한다. | 글로벌 (쿠바 vs 기타 선진국) |
+| `policosanol-hdl-mechanism-uncertain` | 확인실패 | 공식 | 폴리코사놀이 HDL 수치 또는 HDL 기능에 영향을 준다는 기전은 확립되지 않았으며, 지질 수치 변화가 심혈관질환 예방으로 이어진다는 근거도 부족하다. | 글로벌 |
+
+### 홍국의 모나콜린K 기전·LDL 저하 근거·스타틴 대체 위험·시트리닌 <sub>2026-08-04 · red-yeast-rice-cholesterol 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `red-yeast-rice-2015-atherosclerosis-meta-analysis` | 확실 | 공식 | 2015년 Atherosclerosis 메타분석(20개 RCT 검토)에서 모나콜린K 함량이 명시된 홍국이 위약 대비 LDL 콜레스테롤을 1.02 mmol/L 저하시켰지만, 연구별 제품 조성의 불균일성과 안전성 평가 품질이 낮았다. | 글로벌 |
+| `red-yeast-rice-monacolin-k-equals-lovastatin` | 확실 | 공식 | 홍국의 모나콜린K는 사실상 로바스타틴(statin 계열 약물)과 동일한 화합물이며, HMG-CoA 환원효소 억제 기전도 의약품과 같다. | 글로벌 |
+| `red-yeast-rice-statin-drug-interaction-myopathy` | 확실 | 공식 | 홍국을 스타틴 계열 약물과 병용하면 근육병증과 간 손상 위험이 증가할 수 있으며, CYP3A4 억제제(자몽, 강력한 약물)와의 상호작용도 발생할 수 있다. | 글로벌 |
+| `red-yeast-rice-citrinin-contamination-risk` | 확인실패 | 공식 | 일부 홍국 원료에서 곰팡이 독소인 시트리닌(citrinin) 오염이 보고되었으며, 신장독성 우려가 있다. | 글로벌 |
+
+### 쏘팔메토의 전립선 증상 완화·배뇨 개선·대규모 임상 음성 결과 <sub>2026-08-04 · saw-palmetto-prostate 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `saw-palmetto-2006-nejm-negative-trial-bent` | 확실 | 공식 | 2006년 New England Journal of Medicine 무작위대조시험(225명 남성, 1년)에서 쏘팔메토 추출물 160mg 2회/일은 미국비뇨기과학회 증상지수(AUASI) 및 최대 요속을 포함한 배뇨 증상·전립선 크기 지표에서 위약보다 개선하지 못했다. | 미국 |
+| `saw-palmetto-2011-jama-high-dose-null-effect` | 확실 | 공식 | 2011년 JAMA 무작위대조시험(369명 남성)에서 쏘팔메토를 표준 용량의 최대 3배까지 증량했지만 하부요로증상 개선이 위약과 달라지지 않았다. | 미국 |
+| `saw-palmetto-mechanism-5-alpha-reductase-uncertain` | 확인실패 | 공식 | 쏘팔메토 열매 추출물은 5알파환원효소 억제·안드로겐 신호 조절·염증 경로 조절을 제안하는 시험관 연구가 있지만, 인체에서 전립선 크기 감소 또는 배뇨 증상 개선으로 이어진다는 임상 근거는 부족하다. | 글로벌 |
+| `saw-palmetto-psa-masking-cancer-symptom` | 확인실패 | 공식 | 쏘팔메토는 PSA 수치를 낮춀서 전립선암의 증상 신호를 가릴 수 있으므로, 전립선 건강에 대해 우려가 있는 남성은 먼저 의료진 진찰을 받아야 한다. | 글로벌 |
+
+### 대두이소플라본의 갱년기 증상 완화 효과, 개인차, 유방암 안전성 <sub>2026-08-04 · soy-isoflavone-menopause</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `efficacy-isoflavones-vasomotor-symptoms-meta-analysis-2009-corrected` | 논쟁 🔶 | 공식 | 대두이소플라본의 갱년기 안면홍조 효과를 검토한 체계적 문헌고찰(2009)은 23건의 RCT를 분석했으며, 안면홍조 개선 효과가 연구 간 이질성이 높아서 확정 결론을 내리기 어렵다고 평가했다. |  |
+| `extracted-synthesized-soybean-isoflavones-hot-flash-frequency-severity-2012` | 확실 | 공식 | 추출/합성 대두이소플라본(median 54 mg aglycone equivalents)의 갱년기 안면홍조 효과를 검토한 메타분석(2012, Menopause)에서 안면홍조 빈도는 위약 대비 20.6% 감소했고, 심각도는 26.2% 감소했다. |  |
+| `soy-isoflavone-equol-producer-metabolism-individual-variation` | 확실 | 공식 | 대두이소플라본의 효과는 장내 미생물이 다이드제인(daidzein)을 에쿠올(equol)로 대사하는지 여부에 크게 영향을 받으며, 에쿠올 생성자(20-60%)와 비생성자는 임상 결과가 다를 수 있다. |  |
+| `soy-isoflavone-breast-cancer-history-caution-medical-consultation` | 확실 | 공식 | 유방암 또는 자궁내막암의 병력이 있거나 호르몬 민감성 질환 치료 중인 여성은 농축 대두이소플라본 보충제 사용 전에 반드시 담당 의료진과 상담해야 한다. |  |
+
+### 한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량 <sub>2026-08-04 · vitamin-d-deficiency-korea</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `vitamin-d-serum-level-sufficiency-definition-korea` | 확실 | 공식 | 혈중 25-하이드록시비타민D [25(OH)D] 충분 기준은 30ng/mL 이상, 결핍 기준은 20ng/mL 미만이다. | 공통 / 영양제 / 비타민D 혈중 기준 / 2026 현행 / KR |
+| `vitamin-d-deficiency-prevalence-korea-gender` | 확실 | 공식 | 2008년 한국국민건강영양조사(KNHANES IV) 기준 비타민D 부족률: 남성 47.3%, 여성 64.5%. 특히 젊은 여성의 결핍률이 다른 연령층보다 높다. | 공통 / 영양제 / 한국인 비타민D 결핍률 / 2008 / KR |
+| `vitamin-d-sun-exposure-seasonal-synthesis-impossibility` | 확실 | 공식 | 한국에서 여름은 30분 이내 일광 노출로 충분하나, 겨울은 100분 이상 노출이 필요하며, UV 지수 부족으로 겨울 일광만으로는 비타민D 합성이 불가능하다. | 공통 / 영양제 / 한국 계절별 일광 요구 / 2020 / KR |
+| `vitamin-d-dietary-insufficiency-korean-diet` | 확실 | 공식 | 한국 식단의 비타민D 함량이 낮고 대부분 실내 활동을 하므로, 식사 + 일광만으로는 충분 수준 달성이 어렵다. | 공통 / 영양제 / 한국 식이 비타민D / 2013-2014 / KR |
+| `vitamin-d-adequate-intake-recommendation-korea-2010` | 확실 | 공식 | 2010년 한국인 비타민D 적정섭취량: 성인 여성 5μg/일, 임산부 10μg/일, 65세 이상 노인 15μg/일. | 공통 / 영양제 / 한국 비타민D 적정섭취량 / 2010 / KR |
+| `vitamin-d-upper-limit-intake-tolerable-level` | 확실 | 공식 | 비타민D 상한섭취량(UL, Tolerable Upper Intake Level)은 하루 4,000IU(100μg)이다. 이 이상 장기 복용 시 혈중 칼슘 상승, 신장 손상, 혈관 석회화 위험이 있다. | 공통 / 안전성 / 비타민D 상한섭취량 / 전 연식 / 글로벌 |
+
+### 비타민K2의 뼈 건강 기전과 항응고제 금기 <sub>2026-08-04 · vitamin-k2-bone</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `vitamin-k2-osteocalcin-carboxylation-mechanism` | 확실 | 공식 | 비타민K2는 골모세포가 만드는 단백질 오스테오칼신의 카복실화 반응에 필수 조효소로 작용한다. 미활성화된 오스테오칼신은 수산화인회석과 결합할 수 없으나, K2의 도움으로 활성화된 오스테오칼신은 혈중 칼슘을 뼈 기질로 운반한다. | 공통 / 영양제 / 비타민K2 기전 / 전 연식 / 글로벌 |
+| `vitamin-k2-matrix-gla-protein-calcium-channeling` | 확실 | 공식 | 비타민K2는 또한 기질 글라 단백질(matrix Gla protein)의 활성화에도 관여하여, 칼슘이 동맥 등 부적절한 부위로 가는 것을 방지하고 뼈로만 집중되도록 돕는다. | 공통 / 영양제 / 비타민K2 기전 / 전 연식 / 글로벌 |
+| `vitamin-k2-mk-4-vs-mk-7-bioavailability-half-life` | 확실 | 공식 | MK-4(4-메나퀴논)는 단쇄형으로 반감기가 짧아 하루 여러 회 섭취가 필요하지만, MK-7(7-메나퀴논)는 장쇄형으로 생체이용률이 높고 반감기가 길어 1회 일일 섭취로 효과적이다. | 공통 / 영양제 / K2 형태 비교 / 전 연식 / 글로벌 |
+| `vitamin-k2-mk-7-osteocalcin-activation-superior` | 확실 | 공식 | MK-7이 MK-4보다 오스테오칼신 활성화 비율이 높으므로, 뼈 관련 영양제에서 MK-7이 선호된다. | 공통 / 영양제 / K2 형태 / 전 연식 / 글로벌 |
+| `vitamin-k2-warfarin-absolute-contraindication` | 확실 | 공식 | 항응고제(특히 와파린)를 복용하는 사람이 비타민K2를 추가 섭취하면, K2가 혈액 응고를 촉진하여 항응고제 약효를 직접 상쇄하고 혈전 형성 위험을 높인다. | 공통 / 약물 상호작용 / 항응고제 / 전 연식 / 글로벌 |
+
 ### 영양제 안전성: 상한섭취량, 약물 상호작용, 이상사례 신고, 특정 성분 금기 <sub>2026-08-04 · 예정</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -3893,14 +4077,14 @@
 | `upper-limit-intake-UL-definition-safety-threshold` | 확실 | 공식 | 상한섭취량(UL, Tolerable Upper Intake Level)은 인체에 유해한 영향이 나타나지 않는 최대 영양소 섭취 수준을 뜻하며, 이 상한치보다 더 많이 섭취할 경우 유해 영향(독성)의 위험이 증가한다. | 공통 / 안전성 / 상한섭취량 / 전 연식 / 글로벌 |
 | `fat-soluble-vitamin-accumulation-toxicity-risk` | 확실 | 공식 | 지용성 비타민(A, D, E, K)은 간 및 지방 조직에 저장되므로, 장기간 고함량으로 섭취하면 체내에 축적되어 독성을 유발할 수 있다. | 공통 / 안전성 / 축적 독성 / 전 연식 / 글로벌 |
 | `vitamin-a-excessive-intake-headache-skin-dryness` | 확실 | 공식 | 비타민 A를 과다 섭취하면 두통, 피부 건조, 가려움, 심한 경우 두개내압 증가 등의 독성 증상이 나타날 수 있다. | 공통 / 안전성 / 비타민 A 독성 / 전 연식 / 글로벌 |
-| `anticoagulant-vitamin-K-interaction-thrombosis-risk` | 확실 | 공식 | 항응고제(와파린, 아스피린 등)를 복용 중인 사람이 비타민 K를 추가 섭취하면, 비타민 K가 혈액 응고를 촉진하여 항응고제 효과를 직접 상쇄하고 혈전 형성 위험을 높인다. | 공통 / 약물 상호작용 / 항응고제 / 전 연식 / 글로벌 |
-| `thyroid-medication-mineral-chelation-spacing-required` | 확실 | 공식 | 갑상선약을 복용 중이면 칼슘·마그네슘은 최소 2시간 이상, 철분제는 최소 4시간 이상 시간 간격을 두어야 한다. 이 미네랄들이 갑상선 호르몬제와 결합하여 흡수되지 않는 착화물을 만들기 때문이다. | 공통 / 약물 상호작용 / 갑상선약 / 전 연식 / 글로벌 |
-| `antibiotic-probiotic-simultaneous-administration-interference` | 확실 | 공식 | 항생제와 프로바이오틱스를 동시에 복용하면 항생제가 유익균을 죽이므로, 항생제 복용 후 2시간 이상 간격을 두고 프로바이오틱스를 섭취하는 것이 권장된다. | 공통 / 약물 상호작용 / 항생제·프로바이오틱스 / 전 연식 / 글로벌 |
+| `anticoagulant-vitamin-k-interaction-thrombosis-risk` | 확실 | 공식 | 항응고제(와파린, 아스피린 등)를 복용 중인 사람이 비타민 K를 추가 섭취하면, 비타민 K가 혈액 응고를 촉진하여 항응고제 효과를 직접 상쇄하고 혈전 형성 위험을 높인다. | 공통 / 약물 상호작용 / 항응고제 / 전 연식 / 글로벌 |
+| `thyroid-medication-mineral-chelation-spacing-required` | 확실 | 공식 | 갑상선약(레보티록신)을 복용 중이면 칼슘·마그네슘은 최소 2시간 이상, 철분제는 최소 4시간 이상 시간 간격을 두어야 한다. 이 미네랄들이 갑상선 호르몬제와 결합하여 흡수되지 않는 착화물(chelate)을 만들기 때문이다. | 공통 / 약물 상호작용 / 갑상선약 / 전 연식 / 글로벌 |
+| `antibiotic-probiotic-simultaneous-administration-interference` | 확실 | 공식 | 항생제와 프로바이오틱스를 동시에 복용하면 항생제가 유익균을 직접 사멸시키므로, 항생제 복용 후 2시간 이상 간격을 두고 프로바이오틱스를 섭취하는 것이 권장된다. 항생제 시작 후 48시간 이내에 프로바이오틱스를 복용하면 항생제 관련 설사(AAD) 위험을 최대 60%까지 감소시킬 수 있다. | 공통 / 약물 상호작용 / 항생제·프로바이오틱스 / 전 연식 / 글로벌 |
 | `health-supplement-adverse-event-reporting-system-korea` | 확실 | 공식 | 한국의 건강기능식품 이상사례는 소비자, 사업자, 의료 전문가가 식약처 통합민원상담(1339) 또는 식품안전나라를 통해 언제 어디서든 신고할 수 있으며, 사업자는 인지 후 7일 이내에 보고해야 한다. | 공통 / 안전 체계 / 이상사례 신고 / 2026 현행 / KR |
 | `health-supplement-adverse-event-definition` | 확실 | 공식 | 이상사례는 건강기능식품 섭취로 인해 의심되는 바람직하지 않고 의도하지 않은 징후, 증상, 질병을 뜻하며, 인과관계가 반드시 확립되어야 하는 것은 아니다. | 공통 / 안전 체계 / 이상사례 정의 / 2026 현행 / KR |
-| `pregnant-lactating-women-supplement-caution` | 확실 | 공식 | 임신·수유 중인 여성은 영양제 추가 섭취 전 반드시 의료 전문가와 상담해야 하며, 특히 고함량 지용성 비타민은 금지될 수 있다. | 공통 / 안전성 / 특수 인구군 / 전 연식 / 글로벌 |
-| `autoimmune-disease-supplement-contraindication` | 확실 | 공식 | 자가면역질환 환자는 면역력 강화 영양제(홍삼, 비타민 D 고함량 등) 추가 복용 전 의료 전문가와 상담해야 하며, 자가항체를 악화시킬 가능성이 있다. | 공통 / 안전성 / 자가면역질환 / 전 연식 / 글로벌 |
-| `seizure-disorder-epilepsy-supplement-drug-interaction` | 확실 | 공식 | 간질·발작 장애 환자는 영양제 추가 섭취 전 의료 전문가와 상담해야 하며, 일부 영양제(비타민 B6 고함량 등)가 항경련제 약효를 감소시킬 수 있다. | 공통 / 약물 상호작용 / 항경련제 / 전 연식 / 글로벌 |
+| `pregnant-lactating-women-supplement-caution` | 확인실패 | 공식 | 임신·수유 중인 여성은 영양제 추가 섭취 전 반드시 의료 전문가와 상담해야 하며, 특히 고함량 지용성 비타민은 금지될 수 있다. | 공통 / 안전성 / 특수 인구군 / 전 연식 / 글로벌 |
+| `autoimmune-disease-supplement-contraindication` | 확인실패 | 공식 | 자가면역질환 환자는 면역력 강화 영양제(홍삼, 비타민 D 고함량 등) 추가 복용 전 의료 전문가와 상담해야 하며, 자가항체를 악화시킬 가능성이 있다. | 공통 / 안전성 / 자가면역질환 / 전 연식 / 글로벌 |
+| `seizure-disorder-epilepsy-supplement-drug-interaction` | 확인실패 | 공식 | 간질·발작 장애 환자는 영양제 추가 섭취 전 의료 전문가와 상담해야 하며, 일부 영양제(비타민 B6 고함량 등)가 항경련제 약효를 감소시킬 수 있다. | 공통 / 약물 상호작용 / 항경련제 / 전 연식 / 글로벌 |
 
 ### 영양제 효과 근거 평가: 임상 연구 방법론, 신뢰도 위계, 통계 함정, 편향 이해 <sub>2026-08-04 · 예정</sub>
 
@@ -3910,7 +4094,7 @@
 | `cohort-study-observational-lower-hierarchy` | 확실 | 공식 | 코호트 연구(Cohort Study)는 노출군과 비노출군을 장기간 추적하는 관찰 연구로서, RCT보다 신뢰도가 낮지만 장기 추적이 가능하고 현실적인 인구집단을 대상으로 할 수 있는 장점이 있다. | 공통 / 임상 근거 / 코호트연구 / 전 연식 / 글로벌 |
 | `meta-analysis-systematic-review-highest-evidence-hierarchy` | 확실 | 공식 | 체계적 문헌고찰(Systematic Review)로 여러 RCT를 수집한 후 그 결과를 통계적으로 합산하는 메타분석(Meta-analysis)이 임상 근거 피라미드 꼭대기에 있으며, 개별 임상시험 하나가 가질 수 있는 한계를 보완하기 때문에 가장 높은 신뢰도를 갖는다. | 공통 / 임상 근거 / 메타분석·체계적고찰 / 전 연식 / 글로벌 |
 | `relative-risk-reduction-vs-absolute-risk-reduction-trap` | 확실 | 공식 | 상대위험도(RR) 감소만으로 결과를 표현하면 절대 발생률 자체가 낮은 경우 상대위험도가 크더라도 실제 임상 의미가 과장될 수 있으며, 절대위험도도 함께 제시해야 한다. | 공통 / 통계 해석 / 위험도 함정 / 전 연식 / 글로벌 |
-| `surrogate-endpoint-vs-clinical-outcome-discordance` | 확실 | 공식 | 혈중 영양소 농도 개선(혈중 루테인, 혈중 오메가3 등) 같은 대리지표(surrogate endpoint)의 개선이 반드시 질병 예방이나 증상 개선으로 이어지지 않을 수 있으며, 실제 임상 결과(clinical outcome)와 괴리가 있을 수 있다. | 공통 / 임상 근거 / 대리지표 함정 / 전 연식 / 글로벌 |
+| `surrogate-endpoint-vs-clinical-outcome-discordance` | 확실 | 공식 | 혈중 영양소 농도 개선(혈중 루테인, 혈중 오메가3 등) 같은 대리지표(surrogate endpoint)의 개선이 반드시 질병 예방이나 증상 개선으로 이어지지 않을 수 있으며, 실제 임상 결과(clinical outcome)와 괴리가 있을 수 있다. AREDS2 연구는 루테인 보충이 혈중 루테인을 높였으나, 연령관련 황반변성 진행을 의미 있게 지연시키지 못했다. | 공통 / 임상 근거 / 대리지표 함정 / 전 연식 / 글로벌 |
 | `statistical-significance-vs-clinical-significance-distinction` | 확실 | 공식 | 통계적 유의성(P<0.05)과 임상적 의미(clinical significance)는 별개이며, 표본 크기가 매우 크면 아무리 작은 차이도 통계적으로 유의해질 수 있다. | 공통 / 통계 해석 / P값 함정 / 전 연식 / 글로벌 |
 | `p-value-definition-type-I-error-interpretation` | 확실 | 공식 | P값은 '영가설(차이 없음)이 맞다고 가정할 때 관측된 데이터 이상의 극단적 결과가 나올 확률'이며, 작을수록 영가설과 데이터가 일치하지 않음을 의미한다. 일반적으로 P<0.05를 유의성의 기준으로 본다. | 공통 / 통계 해석 / P값 정의 / 전 연식 / 글로벌 |
 | `p-hacking-significance-chasing-publication-bias` | 확실 | 공식 | P-해킹(P-hacking)은 많은 가설을 테스트하거나 데이터를 선택적으로 분석하여 유의한 결과만 골라내는 행위를 뜻하며, 허위 양성(false positive) 결과를 유의미한 데이터로 위장하게 된다. | 공통 / 연구 편향 / P-해킹 / 전 연식 / 글로벌 |
@@ -3924,16 +4108,16 @@
 | id | 확신도 | 근거 | claim | 적용 범위 |
 |---|---|---|---|---|
 | `water-soluble-vitamin-absorption-no-meal-required` | 확실 | 공식 | 비타민 B군과 비타민 C 같은 수용성 비타민은 물에 잘 녹는 성질 때문에 흡수가 빠르고 식사 여부와 무관하게 흡수되며, 체내에 축적되지 않고 초과분이 소변으로 배출된다. | 공통 / 영양제 / 수용성 비타민 / 전 연식 / 글로벌 |
-| `fat-soluble-vitamin-requires-meal-absorption` | 확실 | 공식 | 지용성 비타민(A, D, E, K)은 빈속에 복용하면 흡수율이 낮아지고 위장 불편감이 생길 수 있으므로, 지방이 포함된 식사를 한 직후에 복용하는 것이 흡수 효율을 높인다. | 공통 / 영양제 / 지용성 비타민 / 전 연식 / 글로벌 |
-| `vitamin-c-stomach-irritation-empty-stomach` | 확실 | 공식 | 산성 성분인 비타민 C는 공복에 복용하면 위장 자극으로 속쓰림이 나타날 수 있으며, 위장이 예민한 사람은 식후에 복용하는 것이 더 안전하다. | 공통 / 영양제 / 비타민 C / 전 연식 / 글로벌 |
-| `calcium-iron-competitive-absorption-spacing` | 확실 | 공식 | 철분제와 칼슘제는 소장 점막에서 흡수될 때 동일한 이동 통로를 공유하여 경쟁하므로, 한 번에 들어오면 두 영양소 모두의 흡수율이 떨어진다. | 공통 / 영양제 / 미네랄 상호작용 / 전 연식 / 글로벌 |
-| `iron-absorption-enhancement-vitamin-c` | 확실 | 공식 | 비타민 C는 철분의 흡수를 촉진하므로, 철분제를 복용할 때 오렌지 주스 등 비타민 C가 많은 음식을 함께 섭취하면 흡수를 높일 수 있다. | 공통 / 영양제 / 흡수 촉진 / 전 연식 / 글로벌 |
-| `iron-absorption-inhibition-tannin-caffeine` | 확실 | 공식 | 칼슘, 탄닌(커피·차), 카페인 등은 철분 흡수를 방해하므로, 빈혈약을 복용한 후 2시간 전후로는 우유, 커피, 녹차, 홍차의 섭취를 자제해야 한다. | 공통 / 영양제 / 흡수 방해 요인 / 전 연식 / 글로벌 |
-| `calcium-absorption-vitamin-d-magnesium-synergy` | 확실 | 공식 | 칼슘 보충제 흡수 시 비타민 D가 풍부한 음식이 흡수를 도와주며, 마그네슘도 칼슘 흡수에 중요한 역할을 한다. | 공통 / 영양제 / 미네랄 시너지 / 전 연식 / 글로벌 |
+| `fat-soluble-vitamin-requires-meal-absorption` | 확실 | 공식 | 지용성 비타민(A, D, E, K)은 빈속에 복용하면 흡수율이 낮아지고, 지방이 포함된 식사를 한 직후에 복용하는 것이 흡수 효율을 높인다. 지용성 비타민은 담즙산과 췌장 효소에 의해 미셀 형태로 소장에서 흡수되며, 체내 지방 조직에 저장되어 장기간 유지된다. | 공통 / 영양제 / 지용성 비타민 / 전 연식 / 글로벌 |
+| `vitamin-c-stomach-irritation-empty-stomach` | 확인실패 | 공식 | 산성 성분인 비타민 C는 공복에 복용하면 위장 자극으로 속쓰림이 나타날 수 있으며, 위장이 예민한 사람은 식후에 복용하는 것이 더 안전하다. | 공통 / 영양제 / 비타민 C / 전 연식 / 글로벌 |
+| `calcium-iron-competitive-absorption-spacing` | 확실 | 공식 | 칼슘과 철분은 소장 점막의 DMT1(divalent metal transporter-1) 흡수 기전을 통해 상호작용하므로, 한 번에 들어오면 철분 흡수율이 떨어질 수 있다. 칼슘은 비경쟁 억제자로 작용하여 철분 흡수를 방해한다. | 공통 / 영양제 / 미네랄 상호작용 / 전 연식 / 글로벌 |
+| `iron-absorption-enhancement-vitamin-c` | 확실 | 공식 | 비타민 C(아스코르브산)는 철분 흡수를 촉진하는 두 가지 기전을 가지고 있다: 불용성 철 화합물 형성을 방지하고, 3가 철을 2가로 환원하여 소장 점막의 흡수를 용이하게 한다. 철분제를 복용할 때 오렌지 주스 등 비타민 C가 많은 음식을 함께 섭취하면 흡수를 높일 수 있다. | 공통 / 영양제 / 흡수 촉진 / 전 연식 / 글로벌 |
+| `iron-absorption-inhibition-tannin-caffeine` | 확실 | 공식 | 탄닌(커피·차), 카페인 등은 철분 흡수를 방해한다. 특히 탄닌은 소장 내에서 철분과 불용성 착화물을 형성하여 흡수를 억제하며, 차는 철분 흡수를 41~95% 감소시킬 수 있다. 칼슘도 철분 흡수에 영향을 미치므로, 빈혈약을 복용한 후 2시간 전후로는 우유, 커피, 녹차, 홍차의 섭취를 자제해야 한다. | 공통 / 영양제 / 흡수 방해 요인 / 전 연식 / 글로벌 |
+| `calcium-absorption-vitamin-d-magnesium-synergy` | 확실 | 공식 | 칼슘 흡수는 비타민 D에 의해 조절된다. 비타민 D는 장의 칼슘 수송 단백질 발현을 유도하는 호르몬으로서 칼슘 흡수의 필수 요소이며, 마그네슘도 뼈 형성과 미네랄 대사에 중요한 역할을 한다. 비타민 D와 마그네슘이 부족하면 칼슘을 고함량으로 복용해도 효과가 제한될 수 있다. | 공통 / 영양제 / 미네랄 시너지 / 전 연식 / 글로벌 |
 | `water-soluble-vitamin-divided-doses-more-effective` | 확실 | 공식 | 수용성 비타민은 체내에 축적되지 않고 배설되므로, 한 번에 고용량을 복용하는 것보다 하루에 2~3회에 나누어 복용하는 것이 혈중 농도를 유지하는 데 더 효과적이다. | 공통 / 영양제 / 복용 방식 / 전 연식 / 글로벌 |
-| `high-dose-supplement-paradox-bioavailability` | 확실 | 공식 | 고함량 영양제가 반드시 고효과를 제공하지 않으며, 신체가 필요한 양 이상을 섭취하면 초과분이 배설되거나 체내 이용률이 낮아질 수 있다. | 공통 / 영양제 / 흡수의 한계 / 전 연식 / 글로벌 |
-| `nutrient-synergy-magnesium-calcium-vitamin-d-trinity` | 확실 | 공식 | 마그네슘이 없으면 칼슘이 제대로 활용되지 못하고, 비타민 D가 없으면 칼슘 흡수 자체가 어렵다. 이 3가지 영양소는 셋이 함께 일할 때 비로소 제 역할을 한다. | 공통 / 영양제 / 영양소 균형 / 전 연식 / 글로벌 |
-| `excess-supplement-excess-burden-liver` | 논쟁 🔶 | 후기 | 과도한 영양제 섭취는 오히려 간에 부담을 주고 있으며, 정작 필요한 영양소는 제대로 흡수되지 못할 수 있다. | 공통 / 영양제 / 과다섭취 부작용 / 전 연식 / 글로벌 |
+| `high-dose-supplement-paradox-bioavailability` | 확인실패 | 공식 | 고함량 영양제가 반드시 고효과를 제공하지 않으며, 신체가 필요한 양 이상을 섭취하면 초과분이 배설되거나 체내 이용률(생물이용률)이 낮아질 수 있다. | 공통 / 영양제 / 흡수의 한계 / 전 연식 / 글로벌 |
+| `nutrient-synergy-magnesium-calcium-vitamin-d-trinity` | 확실 | 공식 | 마그네슘, 칼슘, 비타민 D는 상호 의존적 관계를 가지고 있다. 비타민 D가 없으면 칼슘 흡수 자체가 어렵고, 마그네슘이 부족하면 칼슘이 제대로 활용되지 못하며, 마그네슘 결핍은 비타민 D 저항성을 초래할 수 있다. | 공통 / 영양제 / 영양소 균형 / 전 연식 / 글로벌 |
+| `excess-supplement-excess-burden-liver` | 확인실패 🔶 | 후기 | 과도한 영양제 섭취는 오히려 간에 부담을 주고 있으며, 정작 필요한 영양소는 제대로 흡수되지 못할 수 있다. | 공통 / 영양제 / 과다섭취 부작용 / 전 연식 / 글로벌 |
 
 ### 한국 건강기능식품 제도의 원료 분류·기능성 표시 규정·광고 규제 <sub>2026-08-04 · 예정</sub>
 
@@ -4816,6 +5000,219 @@
 | `evening-screen-light-worsens-delay` | 확실 | 공식 | 야간 스크린 노출(컴퓨터 게임, TV)은 저녁 시간의 밝은 빛으로 작동하여 수면 위상 지연을 더욱 악화시킨다. |  |
 | `melatonin-supplement-timing` | 논쟁 🔶 | 공식 | 멜라토닌 보충제는 위상 지연된 청소년의 순환계 위상 앞당기기에 사용될 수 있으나, 안전성과 효과는 나이와 용량에 따라 다르므로 의료 전문가의 지도가 필수다. |  |
 
+## 알약연구소
+
+### 부신피로증후군의 의학적 인정 여부 및 감별 질환 <sub>2026-08-04 · 부신피로증후군이라는 진단은 존재하는가</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `adrenal-fatigue-endocrine-society-not-recognized` | 확실 | 공식 | 미국 내분비학회(Endocrine Society)와 다른 주요 의료 단체들은 '부신피로증후군(Adrenal Fatigue Syndrome)'을 의학적으로 인정된 질환으로 간주하지 않는다. 공식 성명에서 '과학적 증거가 없다'고 명시했다. |  |
+| `adrenal-fatigue-no-scientific-validation-symptom-scoring` | 확실 | 공식 | 부신피로증후군을 진단하기 위해 사용되는 증상 채점 시스템과 타액 코르티솔(salivary cortisol) 검사는 과학적으로 검증되거나 표준화되지 않았으며, 시상하부-뇌하수체-부신축(HPA axis) 기능을 평가하는 공식 의료 진단 도구가 아니다. |  |
+| `adrenal-fatigue-symptom-overlap-misdiagnosis-risk` | 확실 | 공식 | 부신피로증후군으로 진단받는 증상(피로, 무기력, 집중력 저하, 수면 장애, 근골격 통증)은 우울증, 수면무호흡증, 갑상선 기능 저하증, 빈혈, 만성 스트레스 등 진실한 의학적 질환과 거의 동일하다. 따라서 잘못된 진단은 진짜 원인을 찾기 어렵게 할 수 있다. |  |
+| `adrenal-insufficiency-vs-adrenal-fatigue-distinction` | 확실 | 공식 | 진실한 부신 질환인 '부신 부전(Addison's disease)'은 부신 피질에서 코르티솔 분비가 현저히 감소하는 자가면역 질환이며, 혈액 검사로 진단되고 호르몬 대체 치료가 필수다. 이와 '부신피로증후군'은 완전히 다른 것이다. |  |
+| `fatigue-differential-diagnosis-checklist` | 확실 | 공식 | 만성 피로를 호소하는 환자가 먼저 검사받아야 할 질환: (1) 갑상선 기능 저하증(TSH, free T4), (2) 빈혈(CBC, ferritin), (3) 비타민 B12/엽산 결핍, (4) 수면무호흡증(수면 다원검사), (5) 우울증·불안장애(정신과 상담), (6) 만성질환(당뇨, 만성신질환), (7) 약물 부작용 검토. |  |
+| `adrenal-fatigue-marketing-term-supplement-sales` | 확실 | 공식 | '부신피로증후군'은 주로 보충제 판매사, 건강 코치, 미인증 의료인에 의해 마케팅 용어로 사용되며, 진정한 의료 전문가는 이 진단명을 사용하지 않는다. |  |
+| `chronic-fatigue-hpa-axis-stress-relationship-research` | 논쟁 🔶 | 공식 | 만성 피로와 스트레스 호르몬 축(HPA axis) 사이에 관계가 있다는 연구는 있으나, 이것이 '부신 피로'라는 새로운 질병 진단을 정당화하지는 않는다. HPA 기능 이상은 이미 기존 질환(우울증, 불안장애, PTSD 등)에 포함되어 연구되고 있다. |  |
+| `treatment-adrenal-fatigue-unapproved-expensive-insurance` | 확실 | 공식 | 부신피로증후군에 대해 제시되는 치료(특정 보충제, 생활습관 프로그램, 아드레날린 지원 제품)는 FDA나 식약처에서 승인하지 않았으며, 대부분 비용이 높고 보험이 적용되지 않는다. |  |
+
+### 베타글루칸의 면역 활성화: 효모/버섯 유래 차이·면역 과활성 우려 <sub>2026-08-04 · 베타글루칸, 면역력을 올린다는 근거</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `beta-glucan-source-yeast-mushroom-clinical-evidence` | 확실 | 공식 | 베타글루칸의 임상 근거는 주로 효모 유래(Saccharomyces cerevisiae 등)와 버섯 유래(표고·팽이·느타리 등)에서 나온다. 효모 유래 베타글루칸 500 mg/day는 독감 예방접종 후 항체 반응을 향상시키는 임상 근거가 있으며, 버섯 유래 블렌드는 암 화학요법 중 면역 억제 회복에 사용되었다. |  |
+| `beta-glucan-immune-mechanism-trained-immunity` | 확실 | 공식 | 베타글루칸은 선천 면역계의 훈련 면역(trained immunity)을 유도하는 것으로 이해된다. 비특이적 면역 활성화가 아니라 특정 면역 경로(예: TLR/NOD 수용체)를 통해 NK 세포와 T 세포 활성화를 증가시키며, 이 과정에서 사이토카인(예: TNF-α, IL-6)이 증가한다. |  |
+| `beta-glucan-autoimmune-risk-theoretical-vs-actual` | 확인실패 | 공식 | 베타글루칸이 자가면역질환을 악화시킬 수 있다는 이론적 우려가 있으나, 실제 임상 증거에서는 자가면역질환 환자에서 뚜렷한 질환 악화가 보고되지 않았다. 다만 특정 유전적 취약성(HLA 유형 등)이 있는 개인에서는 질환이 악화될 가능성이 있으므로 주의가 필요하다. |  |
+| `beta-glucan-safety-profile-fda-efsa-approval` | 확실 | 공식 | 베타글루칸은 FDA와 EFSA(유럽식품안전청)에 의해 생물학적으로 안전한 물질로 분류되었으며, 광범위한 전임상 및 임상 연구에서 안전한 프로필을 보였다. 현재까지 알려진 부작용은 극히 드문 알레르기 반응(심한 경우 저혈압, IV 투여 시)이다. |  |
+
+### 코엔자임Q10(CoQ10)의 스타틴 근육통 완화 임상 근거 및 형태별 차이 <sub>2026-08-04 · 코엔자임Q10, 스타틴 복용자에게 필요할까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `coq10-ubiquinol-ubiquinone-form-difference` | 확실 | 공식 | 코엔자임Q10은 산화형(ubiquinone)과 환원형(ubiquinol) 두 가지 형태로 존재한다. 환원형이 인체에서 직접 이용되는 활성 형태이며, 산화형은 체내에서 환원형으로 변환되어야 한다. |  |
+| `statin-induced-muscle-symptoms-sams-mechanism` | 확실 | 공식 | 스타틴(HMG-CoA 환원효소 억제제)은 콜레스테롤 합성을 억제하는데, 같은 경로에서 코엔자임Q10의 합성도 억제하여 미토콘드리아 에너지 생산 저하로 근육 약화 또는 통증(SAMS, Statin-Associated Muscle Symptoms)이 발생할 수 있다. |  |
+| `coq10-statin-myopathy-conflicting-evidence` | 논쟁 🔶 | 공식 | CoQ10 보충이 스타틴 근육통을 완화하는지에 대한 임상 근거는 상충된다. 2014년 고용량(600mg/일 환원형) 이중맹검 RCT는 효과 없음을 보였으나, 최신 메타분석(2024~2025)에서는 일부 효과가 있다는 보고도 있다. 2015년 합의 패널은 근거 부족으로 권장하지 않았다. |  |
+| `coq10-muscle-level-supplementation-paradox` | 확실 | 공식 | 코엔자임Q10 경구 보충이 혈중 CoQ10 농도는 높일 수 있으나, 근육 내 CoQ10 농도 변화와 미토콘드리아 기능 개선은 입증되지 않았다. 2014년 600mg 환원형 투여 임상에서도 근육 CoQ10 수치와 미토콘드리아 기능이 유의하게 변하지 않았다. |  |
+| `coq10-dosage-for-statin-myopathy-range` | 확실 | 공식 | 스타틴 근육통 완화를 목표로 한 임상 연구에서 사용된 CoQ10 용량은 주로 100~600mg/일이며, 하루 200~300mg이 흔히 권장된다. |  |
+| `coq10-anticoagulant-interaction-warfarin-caution` | 논쟁 🔶 | 공식 | 코엔자임Q10은 지용성 비타민처럼 항응고제(특히 와파린)의 효과를 상쇄할 수 있으므로, 와파린 복용 중인 환자가 CoQ10 보충을 고려한다면 의료 전문가와 반드시 상담해야 한다. |  |
+| `coq10-energy-production-asthenia-aging` | 논쟁 🔶 | 공식 | 코엔자임Q10은 미토콘드리아에서 ATP 에너지 생산에 필수적이므로, 노화나 질병으로 근력이 떨어진 고령자에게 보충의 이론적 근거가 있으나, 건강한 젊은 성인의 일반 피로에 대한 효과는 제한적으로 보인다. |  |
+
+### 장누수증후군: 의학적 인정 지위·장투과성 연구의 실제 범위·마케팅 경계 <sub>2026-08-04 · 장누수증후군, 의학적으로 인정된 병명인가</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `leaky-gut-syndrome-not-recognized-medical-diagnosis` | 확실 | 공식 | 장누수증후군(leaky gut syndrome)은 현재 의학 교과서에서 정식 진단명으로 인정되지 않으며, 대부분의 의료 전문가는 이를 진단 가능한 질환으로 보지 않는다. 의료 문헌에서도 '증후군'이 아니라 '현상'으로 취급되는 경우가 많다. |  |
+| `intestinal-permeability-real-phenomenon-symptom-not-disease` | 확실 | 공식 | 장투과성 증가(increased intestinal permeability)는 실제로 존재하는 생리적 현상이지만, 질병 그 자체가 아니라 다른 질환의 증상일 수 있다. 염증성장질환(Crohn병·궤양성대장염), 셀리악병, 화학요법 중 환자, 급성 췌장염·다기관 부전·외상 후 환자에서 관찰된다. |  |
+| `leaky-gut-etiology-unknown-evidence-insufficient` | 확실 | 공식 | 장누수증후군의 정의·원인·진단 기준이 명확하지 않으며, 건강한 사람에서 그것이 질병을 일으킨다는 임상적 증거가 부족하다. 공중 보건 정보와 웰니스 광고에서 '장 누수'라는 개념이 확대·과장되는 경향이 있다. |  |
+| `leaky-gut-alternative-medicine-marketing-term` | 확실 | 공식 | 장누수증후군은 대체의학 실무자들에 의해 광범위한 건강 문제(피로, 피부 질환, 정신 건강, 면역 저하)의 설명 단일 원인으로 제시되고 있으나, 의학계는 이를 증거 기반이라고 보지 않는다. |  |
+| `intestinal-permeability-measurement-standardization-lacking` | 확실 | 공식 | 장투과성의 임상적 측정·진단 표준화가 부족하다. 락투로스/만니톨 비뇨(lactulose/mannitol ratio), 존 단백질 농도(zonula occludens-1, ZO-1) 등 여러 측정 방법이 있지만 표준화되지 않았으며, 임상 해석도 일관성이 없다. |  |
+
+### 밀크씨슬(실리마린)의 간 수치 개선 임상 근거 및 음주와의 관계 <sub>2026-08-04 · 밀크씨슬, 간 수치를 정말 낮출까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `silymarin-mechanism-antioxidant-hepatoprotective` | 확실 | 공식 | 밀크씨슬에 함유된 실리마린은 항산화 작용을 통해 활성산소를 제거하고, 간세포를 직접 보호하며, 염증과 섬유화를 억제하는 기전을 가진다. |  |
+| `silymarin-NAFLD-ALT-AST-reduction-meta-analysis` | 확실 | 공식 | 2024년 메타분석에서 실리마린 140~420mg/일을 8~24주간 투여한 NAFLD(비알코올성 지방간질환) 환자에게서 ALT와 AST가 통계적으로 유의하게 감소했으며, 간 조직학적 개선(간 지방변성)도 보고되었다. |  |
+| `silymarin-alcoholic-cirrhosis-limited-evidence` | 논쟁 🔶 | 공식 | 알코올성 간경변 환자 170명을 대상으로 한 임상시험에서 실리마린 투여군의 58%가 개선을 보였고, 4년 생존율이 실리마린군 58% vs 플라시보군 39%였으나, 이는 단일 연구이며 이후 메타분석에서 알코올성 간질환에 대한 일관된 효과가 입증되지 않았다. |  |
+| `silymarin-nash-fibrosis-improvement-trial` | 확실 | 공식 | 48주간 실리마린 700mg을 투여받은 NASH(비알코올성 지방간염) 환자에게서 간 조직 검사(biopsy)상 섬유화 개선이 보고되었다. |  |
+| `silymarin-alcohol-induced-liver-injury-protective-only` | 확인실패 | 공식 | 실리마린이 알코올 남용 시 간세포 생명력 감소와 지질 과산화, 세포 괴사를 억제할 수 있다는 기전 연구가 있으나, 음주자에게 간경변 진행을 '예방'한다는 임상 증거는 부족하다. |  |
+| `silymarin-dosage-range-korean-market` | 확실 | 공식 | 국내에서 판매되는 밀크씨슬 제품은 대부분 실리마린 함량 140~200mg/정 형태로 표시되며, 권장 복용량은 제품마다 다르지만 일일 300~420mg 범위가 임상 연구의 기초가 되었다. |  |
+| `silymarin-interaction-warfarin-caution` | 논쟁 🔶 | 공식 | 일부 보고에서 실리마린이 항응고제 와파린의 효과를 상승시킬 수 있다는 우려가 제기되었으므로, 와파린 복용자는 의료 전문가와 상담해야 한다. |  |
+
+### 종합비타민의 가치: 대규모 임상 결과·식사 대체 불가 <sub>2026-08-04 · 종합비타민, 먹을 가치가 있다는 근거는</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `multivitamin-rct-mortality-no-benefit-suvi-max-vital-cosmos` | 확실 | 공식 | 대규모 무작위 대조 임상(RCT)에서 종합비타민 또는 종합미네랄 보충제는 전체 사망률(all-cause mortality)을 감소시키지 못했다. SU.VI.MAX(n=13,017, 중앙값 7.5년)에서 항산화 복합제(비타민 E, C, 베타카로틴, 셀레늄, 아연)는 사망률에 영향을 주지 않았으며, PHS-II와 COSMOS 연구도 동일한 결론을 보였다. |  |
+| `multivitamin-cardiovascular-outcomes-no-effect` | 확실 | 공식 | 종합비타민·종합미네랄 보충제는 혈관 사망률(vascular mortality), 뇌혈관질환, 심부전에 영향을 미치지 않았다. |  |
+| `multivitamin-deficiency-gap-filling-not-food-replacement` | 확실 | 공식 | 종합비타민은 영양결핍 위험이 높은 인구(식이가 나쁜 사람, 특정 영양소 결핍 인구)의 영양 공백을 메우는 데는 효과적이다. 다만 식사로 전환할 수 없는 음식의 다양한 생리활성물질(파이토뉴트리언트, 식이섬유, 장내 미생물군 변화)을 대체할 수 없다. |  |
+| `multivitamin-adequacy-improvement-15-nutrients` | 확실 | 공식 | 미국 성인을 대상으로 한 연구에서 종합비타민 사용은 조사된 17개 영양소 중 15개 영양소의 부족(inadequacy) 유병률을 감소시켰다. 단, 칼슘·마그네슘·비타민 D는 대부분의 제품에서 충분한 함량을 제공하지 못했다. |  |
+| `multivitamin-target-population-poor-diet` | 확실 | 공식 | 영양 부족 위험이 높은 인구(과식이 나쁜 사람, 고령자, 특정 질환자)에서 종합비타민은 결핍 위험을 70%에서 30%로 감소시킬 수 있다. |  |
+
+### NMN·NAD+ 항노화의 동물 vs 인체 근거 격차 및 국내 규제 현황 <sub>2026-08-04 · NMN·NAD+ 항노화, 어디까지 왔나</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `nmn-nad-mechanism-atp-energy-mitochondria` | 확실 | 공식 | 니코틴아미드 모노뉴클레오타이드(NMN)는 체내에서 NAD+(산화형 니코틴아미드 아데닌 디뉴클레오타이드)로 변환되며, NAD+는 미토콘드리아에서 ATP 에너지 생산과 세포 노화 관련 단백질(sirtuins, PARPs) 활성화에 관여한다. |  |
+| `nmn-animal-studies-lifespan-healthspan-improvement` | 확실 | 공식 | 마우스, 나이 든 쥐, 초파리 등 동물 모델에서 NMN 보충은 NAD+ 수치를 높이고, 수명 연장(lifespan), 건강 수명 개선(healthspan), 근력 개선, 대사 건강 개선 등 긍정적 결과를 보였다. |  |
+| `nmn-human-clinical-trials-nad-level-increase-only` | 확실 | 공식 | 2020~2024년 진행된 인체 임상 시험에서 NMN 경구 투여는 혈중 NAD+ 농도를 약 2배 증가시켰으며, 최대 900mg/일 용량까지 안전했다. 그러나 현재까지의 인체 시험은 3주~12주의 단기간이며, 동물 모델에서 보인 수명 연장이나 건강 수명 개선은 아직 인체에서 입증되지 않았다. |  |
+| `nmn-human-trials-current-focus-neurodegenerative-disease` | 확실 | 공식 | 현재 진행 중인 대부분의 인체 NMN 임상 시험은 알츠하이머병, 파킨슨병 같은 신경퇴행질환에 초점이 맞춰져 있으며, 건강한 사람의 '항노화' 효과를 목표로 하는 대규모 임상은 아직 없다. |  |
+| `nmn-korea-mfds-unapproved-ingredient` | 확실 | 공식 | 한국 식품의약품안전처는 현재(2026년) NMN을 건강기능식품의 고시형 원료로 인정하지 않았다. 안전성과 기능성 자료가 충분하지 않다는 이유로 식약처 승인을 받지 못했다. |  |
+| `nmn-side-effects-high-dose-nausea-headache` | 논쟁 🔶 | 공식 | 고용량(900mg 이상) NMN 섭취 시 두통, 오심, 소화불편, 혈압 일시적 변화 등의 부작용이 보고되었다. |  |
+| `nmn-bioavailability-question-blood-vs-tissue` | 확인실패 | 공식 | 경구 NMN이 혈중 NAD+ 농도는 높이지만, 실제로 목표 조직(근육, 뇌, 장기)에 도달하는 양이 충분한지는 여전히 의문의 여지가 있다. |  |
+
+### 프로바이오틱스 균주 특이성·CFU 함정·목적별 균주 선택 <sub>2026-08-04 · 유산균, 균주 이름을 봐야 하는 이유</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `probiotic-strain-specificity-not-species-level` | 확실 | 공식 | 프로바이오틱스의 효과는 종(species) 수준이 아니라 균주(strain) 수준에서 결정되며, 같은 Lactobacillus plantarum이라도 균주마다 효과가 완전히 다를 수 있다. ICU 감염 예방 효과도 균주 특이적이며, 새로 개발된 균주는 특정 질환에 목표화(targeted)되어야 한다. |  |
+| `probiotic-cfu-count-trap-efficacy-not-proportional` | 확실 | 공식 | CFU(집락형성단위) 수가 높다고 효과가 높은 것이 아니며, 올바른 균주를 적절한 용량으로 섭취하는 것이 중요하다. 목적에 맞지 않는 균주는 CFU가 아무리 높아도 효과가 없을 수 있다. |  |
+| `probiotic-strain-matched-to-condition-examples` | 확실 | 공식 | 목적에 따라 추천되는 균주가 다르다: L. rhamnosus GG(LGG)는 과민성장증후군 설사형(IBS-D)과 장벽 기능 복구에, L. plantarum 299v는 복통과 복부팽만감에, L. plantarum IS-10506은 아토피피부염 면역조절에, L. plantarum LB931은 질 건강에, L. plantarum CCFM8724는 유아 우식증 예방에 각각 임상 근거가 있다. |  |
+| `probiotic-icu-dose-recommendation` | 확실 | 공식 | ICU 감염 예방에 효과 있는 프로바이오틱스 용량은 최소 14일 이상의 복용 기간과 5 × 10⁹ CFU/day 이상의 용량이 필요하며, ≥22 × 10⁹ CFU/day는 더 높은 효과를 보였다. |  |
+
+### 프로폴리스의 목 건강: 플라보노이드 규격·알레르기 위험 <sub>2026-08-04 · 프로폴리스, 목에 정말 도움이 될까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `propolis-throat-symptom-reduction-clinical-trial` | 확실 | 공식 | 표준화된 포플러형 프로폴리스 추출물 함유 인후 스프레이는 무작위 대조 임상시험에서 인후통·쉰목소리·인후 부종/발적 등 상기도 감염 증상을 일반군(위약군) 대비 약 2일 빠르게 회복시켰다. 캐나다 프로폴리스(플라보노이드 풍부)를 사용한 라이노바이러스 감염 임상에서는 질병 기간이 2.5배 단축되었다(치료군 3일 vs 위약군 4.8일). |  |
+| `propolis-flavonoid-standardized-markers` | 확실 | 공식 | 프로폴리스의 임상 효과는 6가지 주요 플라보노이드 마커(apigenin, chrysin, galangin, pinobanksin, pinocembrin, quercetin)의 함유량으로 표준화된 제형에서 입증되었다. 이들 플라보노이드는 항바이러스·항염증·면역조절 작용을 통해 상기도 증상 개선에 기여한다. |  |
+| `propolis-allergy-bee-product-sensitization` | 확실 | 공식 | 꿀벌 제품에 민감한 사람에서 프로폴리스는 두드러기에서 아나필락시스까지 심각한 알레르기 반응을 유발할 수 있다. 특히 꽃가루 알레르기(화분증) 또는 아토피 소인이 있는 사람에서 위험이 높다. 응급실 방문 또는 입원 필요한 사례도 보고되었다. |  |
+| `propolis-cross-reactivity-myroxylon-peru-balsam` | 확실 | 공식 | 프로폴리스는 발루삼(Myroxylon pereirae, 페루 향유)과 13개 화학 성분을 공유하여 교차반응을 일으킬 수 있다. 발루삼에 알레르기가 있는 사람은 프로폴리스 제품에서도 반응할 가능성이 있다. |  |
+| `propolis-safety-profile-adverse-event-surveillance` | 확실 | 공식 | 프로폴리스의 내약성 프로필은 좋으며, 여러 대조임상시험에서 보고된 부작용이 거의 없다. 프로폴리스는 1.4 mg/kg(약 70 mg/일)의 용량에서 비독성, 비유전독성이며 안전한 것으로 분류된다. 다만 알레르기 반응이 유일한 의미 있는 문서화된 부작용이다. |  |
+
+### 홍삼 진세노사이드의 종류별 효과 및 식약처 기능성 인정 범위 <sub>2026-08-04 · 홍삼, 진세노사이드 함량이 전부일까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `ginsenoside-rg3-rb1-difference-bioavailability` | 확실 | 공식 | 진세노사이드 Rb1은 홍삼의 원래 형태이고, Rg3는 홍삼을 찌고 말리는 과정(steaming & drying)에서 Rb1이 열에 의해 변환된 더 활성적인 형태다. Rg3는 Rb1보다 체내에서 더 빠르게 흡수되고 생물이용률이 높을 수 있다. |  |
+| `ginsenoside-absorption-variability-individual-difference` | 확실 | 공식 | 진세노사이드의 장내 흡수는 개인의 장내 미생물 구성에 따라 크게 달라질 수 있으며, 장내 박테리아가 진세노사이드를 대사하는 능력이 개인차가 크다는 연구 결과가 있다. |  |
+| `korea-red-ginseng-mfds-approved-function-claims` | 확실 | 공식 | 한국 식약처가 인정한 홍삼의 기능성 표시는 면역력 증강, 피로 개선, 혈액순환 개선, 기억력 개선, 항산화 작용, 갱년기 여성 증상 완화이다. |  |
+| `ginsenoside-content-high-vs-effect-relationship-unclear` | 논쟁 🔶 | 공식 | 제품의 진세노사이드 함량이 높다고 해서 효과가 반드시 뛰어난 것은 아니며, 개인의 흡수력, 장내 미생물, 투여 기간 등 여러 변수가 실제 임상 결과에 영향을 미친다. |  |
+| `red-ginseng-fermentation-ginsenoside-bioavailability-increase` | 논쟁 🔶 | 공식 | 발효 홍삼은 발효 과정에서 장내 박테리아 환경을 모방하여 진세노사이드를 작은 분자(예: compound K)로 분해하므로, 경구 흡수가 더 빠를 수 있다는 주장이 있다. |  |
+| `ginseng-dosage-typical-range` | 확실 | 공식 | 임상 연구에서 사용된 홍삼 용량은 일반적으로 하루 1~3g(진세노사이드 약 5~15mg)이며, 국내 제품은 대부분 하루 1~2정으로 이 범위 내다. |  |
+| `red-ginseng-safety-drug-interaction-warfarin-caution` | 논쟁 🔶 | 공식 | 홍삼에는 항응고 효과가 있을 수 있으므로, 와파린이나 아스피린 같은 항응고제를 복용 중인 환자는 홍삼 추가 섭취 전 의료진과 상담해야 한다. |  |
+
+### 비타민B군 결핍 진단 방법 및 피로 증상 개선 근거 <sub>2026-08-04 · 비타민B군, 피로에 효과 보는 사람과 아닌 사람</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `vitamin-b12-deficiency-diagnosis-serum-level` | 확실 | 공식 | 비타민B12 결핍은 혈청 B12 수치 측정으로 진단되며, 정상 범위는 대개 200~900 pg/mL이다. B12 수치가 낮으면서 신경 증상(손발 저림, 어지러움)이 있으면 메틸말론산(MMA) 수치를 함께 측정하여 B12의 생리적 활성도를 평가한다. |  |
+| `folate-deficiency-diagnosis-serum-level` | 확실 | 공식 | 엽산(folate) 결핍은 혈청 엽산 수치(정상: 5.4~16 ng/mL)로 진단되며, 결핍 시 거대 적혈구성 빈혈(macrocytic anemia)이 나타날 수 있다. 완전 혈구 계산(CBC)으로 빈혈 유형을 구분할 수 있다. |  |
+| `vitamin-b6-deficiency-testing-plasma-level` | 확실 | 공식 | 비타민B6(피리독신) 결핍은 혈장 B6 수치(정상: 2.0~10.0 ng/mL)로 측정되며, 결핍 시 피부염, 신경 증상, 우울증 등이 나타날 수 있다. |  |
+| `b-vitamin-deficiency-fatigue-symptom-reversal` | 논쟁 🔶 | 공식 | B12, 엽산, B6 결핍이 확인된 환자에서 보충 치료 후 피로 증상이 호전되는 경우가 많으나, 결핍이 없는 건강한 사람에게 추가 섭취가 피로를 개선하는지는 근거가 제한적이다. |  |
+| `active-form-b-vitamin-vs-standard-form-bioavailability` | 확인실패 | 공식 | 일부 제품에서 '활성형 비타민B'(예: methylcobalamin, 5-MTHF)가 일반형(cyanocobalamin)보다 흡수가 뛰어나다고 주장하나, 건강한 사람에게 임상적 효과 차이를 보인 대규모 RCT는 부족하다. |  |
+| `b-vitamin-excess-urine-yellow-harmless` | 확실 | 공식 | 과다한 비타민B 섭취는 수용성 비타민의 특성상 잉여분이 소변으로 배설되는데, 이때 소변이 노란색 또는 형광색으로 변하는 것은 B2(리보플라빈) 과잉 배설의 신호이며, 건강상 해로움은 없다. |  |
+| `b-complex-supplement-vegan-vegetarian-necessity` | 확실 | 공식 | B12는 주로 동물성 식품에 함유되어 있어 채식인·특히 완전 채식인(vegan)은 B12 결핍 위험이 높으므로 의료진의 상담 후 보충이 필수적일 수 있다. |  |
+
+### 아연 보충제와 감기 기간 단축: 형태·타이밍·구리 균형 <sub>2026-08-04 · 아연, 감기를 짧게 만든다는 말의 조건</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `zinc-cold-duration-reduction-lozenge-form-requirement` | 확실 | 공식 | 아연 로젠지 형태에서 >75 mg/day로 감기 증상 발생 24시간 내에 복용하면 감기 기간을 평균 33% 단축할 수 있으며, 아연 아세테이트 로젠지는 회복률을 3배 향상시킨다는 메타분석 결과가 있다. |  |
+| `zinc-lozenge-timing-critical-24-hour-onset` | 확실 | 공식 | 아연의 감기 기간 단축 효과는 감기 증상 발생 후 24시간 내에 복용을 시작해야 효과가 있으며, 증상이 시작된 지 24시간 이후 복용은 효과가 제한적이다. |  |
+| `zinc-long-term-high-dose-copper-deficiency-risk` | 확실 | 공식 | 아연을 장기간 100 mg/day 이상의 고용량으로 복용하면 소장에서 구리 흡수를 경쟁적으로 억제하여 철결핍성 빈혈, 호중구감소증, 신경계 손상(척수증) 등 구리 결핍 증상이 나타날 수 있으며, 이 상태는 구리 보충 후에도 완전히 회복되지 않을 수 있다. |  |
+| `zinc-supplement-form-comparison-efficacy` | 확실 | 공식 | 아연 로젠지 형태 중에서 아연 아세테이트와 아연 글루코네이트가 감기 기간 단축에 효과적이며, 아연 아세테이트가 약간 더 효과적인 것으로 보고되었다. 일반 정제·캡슐 형태의 아연은 감기 기간 단축에 임상적 효과가 입증되지 않았다. |  |
+
+## 알약연구소·눈 건강
+
+### 아스타잔틴의 눈 피로·조절력 개선 임상 근거, 용량, 광고 표현 <sub>2026-08-04 · astaxanthin-eye-fatigue</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `astaxanthin-basic-mechanism-antioxidant-ciliary-body` | 확실 | 공식 | 아스타잔틴은 카로테노이드 계열 항산화제로서 먹인 후 안구 맑은 체(ciliary body) 조절 근육에 축적되어 디지털 화면 사용으로 인한 활성산소 손상을 방지하고 눈 조절 능력을 지원한다. |  |
+| `astaxanthin-digital-eye-strain-rct-dosage-4-12mg` | 확실 | 공식 | 임상 RCT 연구들에서 일일 4~12mg의 아스타잔틴을 4~12주 복용한 결과, 컴퓨터 사용자의 주관적 눈 피로(computer vision syndrome) 증상 감소와 눈 조절력(accommodation) 개선을 보였다. |  |
+| `astaxanthin-accommodation-improvement-6mg-4weeks` | 확실 | 공식 | 46~65세 노인 22명을 대상으로 일일 6mg 아스타잔틴을 4주 복용한 결과, 눈 조절력 개선도가 평균 19%, 노안(presbyopia) 관련 주관적 증상 개선율이 77%에 이르렀다. |  |
+| `astaxanthin-recommended-dosage-4-6mg-daily` | 확실 | 공식 | 임상 연구에 기반한 아스타잔틴의 권장 용량은 일일 4~6mg이며, 일부 연구에서는 최대 12mg까지 사용했다. |  |
+| `astaxanthin-safety-no-major-adverse-events-reported` | 확실 | 공식 | 현재까지 아스타잔틴 임상시험에서 용량 관련 심각한 부작용(adverse events)이 보고되지 않았다. |  |
+| `astaxanthin-eye-fatigue-improvement-not-prevention` | 확실 | 공식 | 아스타잔틴 연구는 이미 발생한 눈 피로(증상 개선) 효과를 보았으며, 건강한 사람의 피로 '예방'이나 시력 '향상' 효과는 입증되지 않았다. |  |
+| `astaxanthin-formulation-matrix-bioavailability` | 확실 | 공식 | 아스타잔틴은 카로테노이드로서 지용성이므로, 포뮬레이션의 운반체(오일 매트릭스, 나노입자, 비드렛 형태 등)가 생체이용성을 결정하는 핵심 요소이다. |  |
+| `astaxanthin-with-fatty-meal-absorption-optimization` | 확실 | 공식 | 아스타잔틴은 지용성 항산화제이므로, 지방이 포함된 식사와 함께 복용할 때 소장 흡수가 최적화된다. |  |
+
+### 빌베리 안토시아닌의 야간시력·로돕신 기전, 임상 근거, WWII 조종사 설화 검증 <sub>2026-08-04 · bilberry-anthocyanin-eye</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `bilberry-anthocyanin-mechanism-rhodopsin-regeneration` | 확실 | 공식 | 빌베리의 안토시아닌은 망막 간상세포(rod cell)의 로돕신 재생을 생화학적으로 지원하는 기전이 있으며, 저조도 환경에서 빛 감지를 위해 필요한 단백질이다. |  |
+| `bilberry-wwii-raf-pilots-jam-myth-radar-cover-story` | 확실 | 공식 | 2차 세계대전 당시 영국 공군(RAF) 조종사들이 야간 공습 성공률을 올리기 위해 빌베리 잼을 먹었다는 설화는 80년간 반복되었으나, 실제 역사 기록에는 증거가 없으며, 영국 군부가 당시 개발 중이던 레이더 기술을 은폐하기 위한 위장 선전일 가능성이 높다. |  |
+| `bilberry-night-vision-rct-4-recent-studies-negative` | 확실 | 공식 | 빌베리 안토시아닌의 야간시력 효과를 평가한 최근 4개의 무작위 대조 시험(RCT)이 모두 통계적으로 유의한 개선을 보이지 못했다. |  |
+| `bilberry-study-population-limitation-healthy-subjects-only` | 확실 | 공식 | 빌베리 야간시력 연구 12개 중 11개가 정상 또는 평균 이상의 시력을 가진 건강한 성인을 대상으로 했으며, 실제 야맹증이나 어두운 환경에 적응이 필요한 집단은 거의 포함되지 않았다. |  |
+| `bilberry-anthocyanin-dosage-range-studies-variability` | 확인실패 | 공식 | 빌베리 안토시아닌 임상시험에서 사용된 용량이 연구마다 다양하여(특정 표준화 추출물 기준으로 160~480mg, 일일 섭취 기준 불명확), 메타분석 비교가 어렵다. |  |
+| `bilberry-non-rct-studies-mixed-results-methodological-issues` | 확실 | 공식 | 빌베리 야간시력에 관한 비무작위 통제 연구 7개는 일부 긍정 결과를 보였으나, 이들 연구는 맹검화 부족, 소규모 표본, 높은 탈락률 등 방법론적 한계가 있다. |  |
+| `bilberry-extraction-standardization-lack-transparency` | 확인실패 🔶 | 후기 | 빌베리 제품에 사용되는 추출물은 안토시아닌 함량 기준(25~36%)이 다양하며, 추출 방법·용매·보관 조건에 따라 활성 성분 손실이 크지만, 제품 표기에서 이를 명시하지 않는 경우가 많다. |  |
+
+### 블루라이트 차단 영양제·청색광 유해성 논쟁·루테인 필터링 효과·마케팅 표현 검증 <sub>2026-08-04 · blue-light-supplement-claim</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `blue-light-spectrum-definition-wavelength` | 확실 | 공식 | 청색광(blue light)은 전자기 스펙트럼에서 380~500nm 범위의 가시광선으로, 자연광과 LED 화면 모두에서 방출되는 일반적인 광선이다. |  |
+| `blue-light-hazard-claim-limited-evidence-in-humans` | 확실 | 공식 | 청색광이 망막 손상을 유발한다는 주장은 실험실 동물 연구와 시험관 연구에 기초하고 있으며, 인간에서의 일상적 청색광 노출로 인한 망막 손상을 증명하는 임상 근거는 제한적이다. |  |
+| `blue-light-filtering-lenses-cochrane-review-no-benefit` | 확실 | 공식 | Cochrane 체계적 고찰에서 블루라이트 차단 렌즈는 일반 렌즈와 비교해 시력, 눈 피로, 수면 개선에 임상적으로 유의미한 효과가 없으며, 망막 보호 증거도 없었다. |  |
+| `lutein-zeaxanthin-macular-pigment-blue-light-filter-mechanism` | 확실 | 공식 | 루테인과 제아잔틴은 망막 황반부 색소(macular pigment)를 형성하며, 청색광의 일부를 필터링하는 물리적 특성이 있다. |  |
+| `lutein-zeaxanthin-blue-light-supplement-8-12-weeks-optical-density` | 확실 | 공식 | 루테인과 제아잔틴 보충제 임상 연구에서 황반부 색소 광학 밀도(macular pigment optical density, MPOD)는 8~12주 일일 복용 후 측정 가능한 증가를 보였으며, 12개월까지 계속 개선되었다. |  |
+| `blue-light-melatonin-suppression-screen-evening-mechanism` | 확실 | 공식 | 저녁 스크린 사용 중 청색광은 멜라토닌 분비를 억제하여 수면 지연을 초래하는 메커니즘이 있으며, 이론상 루테인/제아잔틴이 망막 수준에서 청색광을 필터링하면 멜라토닌 억제를 줄일 수 있다. |  |
+| `blue-light-supplement-marketing-exaggeration-risk-profile` | 확실 | 공식 | 시중의 '블루라이트 차단 영양제' 광고는 '청색광 = 망막 손상 위험' → '우리 제품이 차단함' → '눈 건강 개선'이라는 인과 사슬을 암시하나, 각 단계마다 임상 근거 부족이나 과장의 위험이 있다. |  |
+| `korea-blue-light-supplement-regulation-unclear-status` | 확인실패 | 공식 | 한국 식약처는 블루라이트 차단 또는 청색광 보호를 '기능성'으로 공식 인정하지 않았으나, 루테인·제아잔틴 제품의 '황반부 색소 유지' 기능성으로 간접적 마케팅이 발생하고 있다. |  |
+
+### 오메가3의 안구건조증 개선 효과·DREAM 임상시험·인공눈물 우선순위 <sub>2026-08-04 · dry-eye-omega-supplement</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `omega3-mechanism-tear-film-lipid-layer-production` | 확실 | 공식 | 오메가3 지방산(EPA, DHA)은 눈물막의 지질층(lipid layer) 형성에 필요한 성분이며, 안구 표면의 염증 반응을 조절하는 생화학적 기전이 있다. |  |
+| `dream-trial-sample-size-535-participants-double-masked-rct` | 확실 | 공식 | Dry Eye Assessment and Management(DREAM) 임상시험은 2014년 10월~2016년 7월 기간에 경증~중등증 안구건조증 환자 535명을 등록하여 2:1 비율로 오메가3 보충제와 위약(올리브유)에 무작위 배정하는 이중맹검 RCT였다. |  |
+| `dream-trial-omega3-dosage-epa-2g-dha-1g-daily` | 확실 | 공식 | DREAM 시험에서 투여된 오메가3 일일 용량은 에이코사펜타에노산(EPA) 2g + 도코사헥사에노산(DHA) 1g(총 3g)이었다. |  |
+| `dream-trial-primary-outcome-no-significant-benefit` | 확실 | 공식 | DREAM 임상시험의 주 분석에서 오메가3 보충제는 위약(올리브유)에 비해 안구건조증의 증상(안구 불편감, 건조감)과 임상 징후(Schirmer 검사, 각결막 상피 손상)를 통계적으로 유의하게 개선하지 못했다. |  |
+| `dream-extension-study-omega3-withdrawal-no-worsening` | 확실 | 공식 | DREAM 연장 연구(Extension Study)에서 12개월간 오메가3를 복용한 환자 중 일부가 추가 12개월간 오메가3 복용을 중단했으나, 중단 군이 계속 복용한 군과 비교해 유의미하게 악화되지 않았다. |  |
+| `artificial-tears-first-line-treatment-dry-eye` | 확실 | 공식 | 의료 지침에서 안구건조증의 1차 치료는 인공눈물(인공눈액)이며, 보충제는 보조 치료로만 고려된다. |  |
+| `dry-eye-multifactorial-omega3-single-component-limitation` | 확실 | 공식 | 안구건조증은 다원인 질환(지질층 결핍, 수성층 결핍, 염증, 이물감, 눈꺼풀 기능이상 등)이므로, 오메가3 단독 보충은 모든 환자에게 효과적이지 않을 수 있다. |  |
+
+### 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성 <sub>2026-08-04 · macular-degeneration-prevention</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `amd-age-related-macular-degeneration-definition-pathology` | 확실 | 공식 | 연령관련황반변성(AMD, Age-Related Macular Degeneration)은 50세 이상 성인의 중심 시야를 담당하는 망막 황반부의 점진적 손상으로 인해 발생하며, 드루젠(drusen) 축적, 지질 침착, 신생혈관 형성 등이 특징이다. |  |
+| `amd-stages-early-intermediate-advanced-risk-stratification` | 확실 | 공식 | 황반변성은 조기(early), 중간(intermediate), 진행성(advanced) 단계로 분류되며, AREDS/AREDS2 보충제의 효과는 '중간 단계' 이상의 위험군에만 입증되었다. |  |
+| `areds-trial-design-inclusion-criteria-risk-population` | 확실 | 공식 | AREDS 임상시험은 50~80세의 이미 황반변성 위험이 있는 인구(한쪽 또는 양쪽 눈에 중간 크기 이상의 드루젠)를 대상으로 약 3,600명을 등록했으며, 건강한 일반인을 대상으로 하지 않았다. |  |
+| `areds-primary-finding-25-percent-progression-reduction` | 확실 | 공식 | AREDS 임상시험의 주 결과는 고용량 항산화 비타민(C, E, 베타카로틴)과 아연 보충이 진행된 AMD로의 진행 위험을 약 25% 감소시켰다(5년 추적). |  |
+| `areds2-beta-carotene-replacement-lung-cancer-risk` | 확실 | 공식 | 원래 AREDS 포뮬라의 베타카로틴은 흡연자에서 폐암 발생 위험을 약 2배 증가시켰으므로, AREDS2에서는 베타카로틴을 루테인과 제아잔틴으로 교체했다. |  |
+| `areds2-lutein-zeaxanthin-no-additional-benefit-beyond-areds` | 확실 | 공식 | AREDS2 시험에서 이미 AREDS 포뮬라(항산화제+아연)를 복용하는 환자에게 루테인+제아잔틴을 추가 투여해도 진행된 AMD로의 진행 위험이 통계적으로 유의하게 더 감소하지 않았다. |  |
+| `areds2-subgroup-low-dietary-lutein-response` | 확실 | 공식 | AREDS2 분석에서는 기존 식이 루테인 섭취가 가장 낮은 부분군(dietary lutein <8 μmol/day)에서만 루테인+제아잔틴 보충이 AMD 진행 보호를 보였다. |  |
+| `healthy-individuals-amd-prevention-supplement-no-proven-benefit` | 확실 | 공식 | 황반변성이 없는 건강한 성인이 질병 예방 목적으로 AREDS/AREDS2 보충제를 복용하는 것의 효과는 임상 증거로 입증되지 않았다. |  |
+| `amd-risk-factors-age-smoking-genetics-family-history` | 확실 | 공식 | 황반변성의 주요 위험 인자는 연령(50세 이상), 흡연, 유전, 가족력, 고혈압, 비만이며, 이 중 흡연과 생활습관 개선이 가장 변경 가능한 인자다. |  |
+| `amd-symptoms-central-vision-loss-metamorphopsia-immediate-consultation` | 확실 | 공식 | 중심 시야 흐려짐, 직선이 구부러져 보이는 현상(metamorphopsia), 색상 변화 같은 황반변성 의심 증상이 나타나면 즉시 안과 전문의의 진단을 받아야 하며, 보충제 복용은 이후 의료진 지시에 따른다. |  |
+| `amd-screening-age-50-regular-eye-examination-importance` | 확실 | 공식 | 황반변성의 조기 발견을 위해 50세 이상 성인은 최소 연 1회 안과 검진(특히 망막 검사)을 받을 것이 권장된다. |  |
+
+### 비타민A와 야맹증·결핍 증상·과잉 독성·임신 기형 위험·상한섭취량 <sub>2026-08-04 · vitamin-a-night-blindness</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `vitamin-a-deficiency-night-blindness-earliest-symptom` | 확실 | 공식 | 비타민A 결핍에 의한 야맹증(nyctalopia)은 안과적 증상으로서 가장 초기에 나타나는 지표이며, 혈청 레티놀(retinol) 저하의 민감하고 특이적인 임상 신호다. |  |
+| `vitamin-a-mechanism-retinal-pigment-rhodopsin` | 확실 | 공식 | 비타민A의 활성 형태인 레티날(retinal)은 망막의 간상세포에서 로돕신(rhodopsin)의 필수 구성 성분이며, 저조도 환경에서 빛 감지를 가능하게 하는 시각 사이클의 핵심이다. |  |
+| `vitamin-a-deficiency-treatment-dosage-10000-25000-iu` | 확실 | 공식 | 비타민A 결핍으로 인한 야맹증 치료 용량은 경구 비타민A 10,000~25,000 IU를 1~2주간 일일 복용하는 것이 권장된다. |  |
+| `vitamin-a-upper-limit-3000mcg-10000iu-adults` | 확실 | 공식 | 성인(임산부 포함)의 비타민A(전형 레티놀) 상한섭취량(UL)은 3,000 μg RE(레티놀 등가물)/일이며, 이는 약 10,000 IU에 해당한다. |  |
+| `vitamin-a-teratogenic-risk-pregnancy-10000iu-threshold` | 확실 | 공식 | 임신 중 비타민A 섭취가 일일 10,000 IU 이상이면 태아 기형(기형, 신경관 결손)의 위험이 증가하며, 특히 임신 초기 60일 이내 노출이 위험하다. |  |
+| `vitamin-a-deficiency-vs-normal-intake-distinction` | 확실 | 공식 | 야맹증을 비타민A 보충제로 개선하려는 접근은 '실제 비타민A 결핍이 있는 경우'에만 타당하며, 정상 섭취 상태의 건강한 사람에서는 야간시력 개선 효과가 입증되지 않았다. |  |
+| `vitamin-a-toxicity-symptoms-headache-skin-dryness-cns-pressure` | 확실 | 공식 | 비타민A 과다 섭취 시 두통, 피부 건조, 가려움, 심한 경우 두개내압 증가, 뼈 통증, 구역질 등이 나타날 수 있으며, 이를 비타민A 과다증(hypervitaminosis A)이라 한다. |  |
+| `beta-carotene-vs-retinol-pregnancy-safe-alternative` | 확실 | 공식 | 베타카로틴은 비타민A와 달리 체내에서 필요한 만큼만 레티놀로 전환되므로(피드백 조절), 아무리 고용량으로 섭취해도 기형 위험을 일으키지 않는다. |  |
+
 ## 애플
 
 ### 에어팟 한쪽 안 들림·연결 안 됨 자가진단 <sub>2026-07-21 · airpods-selfcheck</sub>
@@ -5207,8 +5604,12 @@
 | 팩트 id | 인용한 조사 |
 |---|---|
 | `4k-video-shooting-sd-card-requirement` | 액션캠(고프로·오즈모류) 전원 불량·녹화 안 됨·배터리·방수 자가점검, 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
+| `antibiotic-probiotic-simultaneous-administration-interference` | 프로바이오틱스 균주 특이성·CFU 함정·목적별 균주 선택 |
+| `anticoagulant-vitamin-k-interaction-thrombosis-risk` | 코엔자임Q10(CoQ10)의 스타틴 근육통 완화 임상 근거 및 형태별 차이, 비타민K2의 뼈 건강 기전과 항응고제 금기 |
 | `app-performance-class-definition` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `apple-watch-heart-rate-wearing-position` | 스마트밴드(샤오미 미밴드·핏빗 등) 충전·측정·앱 연동 자가점검 |
+| `areds2-primary-outcome-no-benefit-beyond-areds` | 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성 |
+| `areds2-subgroup-low-dietary-lutein` | 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성 |
 | `automatic-stop-timer` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `battery-annual-reset-full-discharge` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |
 | `battery-charging-adapter-verification` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석, 휴대용 손선풍기(핸디형·넥밴드형) AS셀프체크: 충전안됨·안돌아감·약풍·소음·배터리팽창, 마사지건(안마건) 자가점검·배터리·안전, 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
@@ -5226,6 +5627,7 @@
 | `bidet-circuit-breaker-leakage-protection` | 비데 자가점검 2차 — 물·온수·누수·동파·노즘 기계 고장 |
 | `bidet-water-stoppage-check-steps` | 비데 자가점검 2차 — 물·온수·누수·동파·노즘 기계 고장 |
 | `blade-extremely-sharp-cutting-risk` | 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
+| `calcium-absorption-vitamin-d-magnesium-synergy` | 한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량 |
 | `camera-lens-cleaning-method` | 액션캠(고프로·오즈모류) 전원 불량·녹화 안 됨·배터리·방수 자가점검, 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `camera-lens-fog-condensation` | 액션캠(고프로·오즈모류) 전원 불량·녹화 안 됨·배터리·방수 자가점검, 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `camera-write-speed-importance` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
@@ -5259,6 +5661,7 @@
 | `descaling-frequency-three-months-daily-use` | 구강세정기·워터픽 자가점검 — 물 안 나옴·약함·충전 불량·노즐 막힘·물새는 증상·잇몸 출혈·관리 |
 | `descaling-vinegar-three-to-one-ratio` | 스팀다리미·핸디스티머 자가점검 — 스팀 안 나옴·물 샘·옷에 물자국·열판 하얀 자국·예열 안 됨·석회질 제거·정수 vs 수돗물 |
 | `desiccant-dehumidifier-characteristics` | 제습기 자가점검: 물이 안 차임·제습 안 됨·냄새·고장 진단 |
+| `disease-prevention-vs-disease-progression-delay-distinction` | 콘드로이틴 황산염의 관절 건강 효과와 국제 규제 위치, 글루코사민의 무릎 관절염 효과와 GAIT 임상 결과, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성 |
 | `dishwasher-residual-water-normal` | LG 디오스 식기세척기 에러코드·세척 불량·배수 안 됨 자가점검, 식기세척기 vs 손설거지 물·전기·경제성 팩트체크, 미니 식기세척기 용량·설치·세척력·적합성 트렌드 |
 | `dishwasher-rinse-aid-compartment` | 식기세척기 vs 손설거지 물·전기·경제성 팩트체크 |
 | `dishwasher-rinse-aid-water-tension` | LG 디오스 식기세척기 에러코드·세척 불량·배수 안 됨 자가점검, 식기세척기 vs 손설거지 물·전기·경제성 팩트체크, 미니 식기세척기 용량·설치·세척력·적합성 트렌드 |
@@ -5278,6 +5681,8 @@
 | `factory-reset-data-loss` | IPTV 셋톱박스 화면 안 나옴·먹통·리모컨 안 될 때 자가점검 |
 | `fading-method-gradual-independence` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `fast-charging-mechanism-lithium-plating-degradation` | 포터블 파워스테이션 충전 안 됨·출력 안 됨·발열·배터리 팽창 자가점검 및 보관 기준 |
+| `fat-soluble-vitamin-accumulation-toxicity-risk` | 비타민A와 야맹증·결핍 증상·과잉 독성·임신 기형 위험·상한섭취량, 한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량, 비타민K2의 뼈 건강 기전과 항응고제 금기, 아연 보충제와 감기 기간 단축: 형태·타이밍·구리 균형 |
+| `fat-soluble-vitamin-requires-meal-absorption` | 아스타잔틴의 눈 피로·조절력 개선 임상 근거, 용량, 광고 표현, 오메가3의 안구건조증 개선 효과·DREAM 임상시험·인공눈물 우선순위, 한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량, 비타민K2의 뼈 건강 기전과 항응고제 금기 |
 | `fat-soluble-vitamin-stability` | 루테인(루테인+제아잔틴) 눈 건강 보충제의 임상 근거·효과·안전성·국내 규제, 영양제의 지용성·수용성 차이, 복용 타이밍, 성분 상호작용, 흡수율 결정 요인 |
 | `file-system-format-exfat-overview` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
 | `file-system-format-fat32-overview` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
@@ -5311,6 +5716,7 @@
 | `ice-crushing-damages-regular-blade` | 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
 | `ice-crushing-limitation-most-hand-blenders` | 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
 | `ideal-indoor-humidity-range` | 제습기 자가점검: 물이 안 차임·제습 안 됨·냄새·고장 진단, 가습기 자가점검 — 분무 안 됨·냄새·백색가루·물 종류 논쟁·살균제 주의 |
+| `industry-sponsored-research-bias-conflict-of-interest` | 종합비타민의 가치: 대규모 임상 결과·식사 대체 불가 |
 | `ipad-charging-temperature-range` | 배터리 충전 통념 팩트체크: 고속충전·100% 충전·0% 방전·밤새 충전·발열의 실제 영향 |
 | `iphone-force-restart-generation-split` | 아이폰 Face ID 인식 안 됨·카메라 흐림 자가점검 |
 | `iphone-normal-operating-temperature` | 아이패드 충전 안 됨·느림 자가점검, 애플 맥북 안 켜짐·충전·발열·배터리 자가점검, 배터리 충전 통념 팩트체크: 고속충전·100% 충전·0% 방전·밤새 충전·발열의 실제 영향 |
@@ -5321,6 +5727,8 @@
 | `joycon-drift-calibration-official-method` | 게임 컨트롤러(엑스박스·듀얼센스·닌텐도) PC 연결·버튼·진동·배터리 자가점검 |
 | `korea-daily-intake-lutein-10-20mg` | 한국 건강기능식품 제도의 원료 분류·기능성 표시 규정·광고 규제 |
 | `korea-food-safety-lutein-function-claim` | 한국 건강기능식품 제도의 원료 분류·기능성 표시 규정·광고 규제 |
+| `korea-health-food-certified-form-standard-raw-material` | 엽산(엽산염)의 신경관결손 예방 효과, 기전, 용량, 안전성, 철분제의 흡수, 복용 방법, 위장 부작용, 약물 상호작용, 홍삼 진세노사이드의 종류별 효과 및 식약처 기능성 인정 범위 |
+| `korea-health-food-function-claim-disease-prevention-prohibition` | 아스타잔틴의 눈 피로·조절력 개선 임상 근거, 용량, 광고 표현, 빌베리 안토시아닌의 야간시력·로돕신 기전, 임상 근거, WWII 조종사 설화 검증, 블루라이트 차단 영양제·청색광 유해성 논쟁·루테인 필터링 효과·마케팅 표현 검증, 엽산(엽산염)의 신경관결손 예방 효과, 기전, 용량, 안전성, 밀크씨슬(실리마린)의 간 수치 개선 임상 근거 및 음주와의 관계, 홍삼 진세노사이드의 종류별 효과 및 식약처 기능성 인정 범위 |
 | `kyungdong-exhaust-outlet-abnormality-signs` | 린나이 보일러 에러코드와 온수·난방 자가진단 |
 | `kyungdong-frozen-pipe-thawing` | 린나이 보일러 에러코드와 온수·난방 자가진단 |
 | `kyungdong-gas-smell-emergency-procedure` | 린나이 보일러 에러코드와 온수·난방 자가진단 |
@@ -5338,7 +5746,18 @@
 | `massage-gun-motor-overheat-protection` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `massage-gun-neck-spine-forbidden` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `massage-gun-sensor-cleaning-water-prohibition` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
+| `melatonin-adverse-effects-common` | 멜라토닌과 국내 수면 영양제 대안(테아닌, 감태, GABA 등), 효과와 안전성 |
+| `melatonin-contraindication-autoimmune-anticoagulant` | 멜라토닌과 국내 수면 영양제 대안(테아닌, 감태, GABA 등), 효과와 안전성 |
+| `melatonin-effectiveness-jet-lag-circadian` | 멜라토닌과 국내 수면 영양제 대안(테아닌, 감태, GABA 등), 효과와 안전성 |
+| `melatonin-insomnia-limited-evidence` | 멜라토닌과 국내 수면 영양제 대안(테아닌, 감태, GABA 등), 효과와 안전성 |
+| `melatonin-korea-drug-classification` | 멜라토닌과 국내 수면 영양제 대안(테아닌, 감태, GABA 등), 효과와 안전성 |
+| `melatonin-korea-prescription-only` | 멜라토닌과 국내 수면 영양제 대안(테아닌, 감태, GABA 등), 효과와 안전성 |
+| `melatonin-overseas-purchase-import-restriction` | 멜라토닌과 국내 수면 영양제 대안(테아닌, 감태, GABA 등), 효과와 안전성 |
+| `melatonin-plant-derived-korea-loophole` | 멜라토닌과 국내 수면 영양제 대안(테아닌, 감태, GABA 등), 효과와 안전성 |
+| `melatonin-recommended-dose-0.5-3mg` | 멜라토닌과 국내 수면 영양제 대안(테아닌, 감태, GABA 등), 효과와 안전성 |
+| `melatonin-safety-short-term-uncertain-long-term` | 멜라토닌과 국내 수면 영양제 대안(테아닌, 감태, GABA 등), 효과와 안전성 |
 | `membrane-nano-filtration-performance` | 반려동물 자동급수기(정수 급수기) 살 만한가 — 트렌드랩 |
+| `meta-analysis-systematic-review-highest-evidence-hierarchy` | 보스웰리아 추출물의 관절염 효과와 NSAID 비교, MSM(메틸설포닐메탄)의 관절 통증 효과와 근거 수준 |
 | `microsd-price-advantage` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `microsd-size-and-pin-definition` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `microsd-speed-performance-variance` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
@@ -5373,7 +5792,9 @@
 | `ptfe-toxic-gas-temp` | 전기그릴·전기팬 자가점검 — 안 뜨거움·연기·눌어붙음·코팅 손상 |
 | `purifier-filter-types-washable-vs-disposable` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
 | `rated-capacity-15a-3300w` | 데스크톱 PC 전원이 안 켜짐 — 하드웨어 물리적 원인 자가점검 |
+| `rct-randomized-controlled-trial-definition-gold-standard` | 아스타잔틴의 눈 피로·조절력 개선 임상 근거, 용량, 광고 표현, 빌베리 안토시아닌의 야간시력·로돕신 기전, 임상 근거, WWII 조종사 설화 검증, 블루라이트 차단 영양제·청색광 유해성 논쟁·루테인 필터링 효과·마케팅 표현 검증, 보스웰리아 추출물의 관절염 효과와 NSAID 비교, 콘드로이틴 황산염의 관절 건강 효과와 국제 규제 위치, 오메가3의 안구건조증 개선 효과·DREAM 임상시험·인공눈물 우선순위, 글루코사민의 무릎 관절염 효과와 GAIT 임상 결과, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성, MSM(메틸설포닐메탄)의 관절 통증 효과와 근거 수준 |
 | `read-write-speed-difference` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
+| `relative-risk-reduction-vs-absolute-risk-reduction-trap` | 글루코사민의 무릎 관절염 효과와 GAIT 임상 결과 |
 | `safe-mode-entry-method` | 스마트폰 터치 불량·고스트터치·액정 반응 없음 자가점검 |
 | `safety-concern-cry-it-out-stress` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `safety-margin-difference` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
@@ -5384,16 +5805,20 @@
 | `sdcard-compatibility-requirement` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
 | `sdcard-speed-class-definition` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `sensor-red-light-persistent-causes` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
+| `small-sample-size-low-statistical-power` | 빌베리 안토시아닌의 야간시력·로돕신 기전, 임상 근거, WWII 조종사 설화 검증 |
 | `smartband-sensor-cleanliness-general` | 스마트 체중계·체성분계 측정 오류·앱 연동 자가점검 |
 | `sound-cutout-two-point-four-ghz-interference` | 사운드바 소리 안 남·TV 연결 안 됨 자가점검 |
 | `spoilage-detection-appearance` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
 | `spoilage-detection-odor` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
 | `spoilage-detection-texture` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
+| `statistical-significance-vs-clinical-significance-distinction` | 오메가3의 안구건조증 개선 효과·DREAM 임상시험·인공눈물 우선순위, MSM(메틸설포닐메탄)의 관절 통증 효과와 근거 수준, 종합비타민의 가치: 대규모 임상 결과·식사 대체 불가 |
 | `suction-weak-filter-dirty-reset` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
+| `surrogate-endpoint-vs-clinical-outcome-discordance` | 블루라이트 차단 영양제·청색광 유해성 논쟁·루테인 필터링 효과·마케팅 표현 검증, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성, 종합비타민의 가치: 대규모 임상 결과·식사 대체 불가 |
 | `travel-charger-dual-voltage` | 전기면도기 자가점검·날 관리·물세척·회전식vs왕복식·충전 불량 |
 | `tv-arc-port-identification` | HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
 | `uhs-speed-class-definition` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `unopen-prerequisite-for-consumption-date` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
+| `upper-limit-intake-UL-definition-safety-threshold` | 밀크씨슬(실리마린)의 간 수치 개선 임상 근거 및 음주와의 관계, 비타민A와 야맹증·결핍 증상·과잉 독성·임신 기형 위험·상한섭취량, 아연 보충제와 감기 기간 단축: 형태·타이밍·구리 균형 |
 | `usb-3-speed-standards-summary` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검, USB-C 허브·독, 어떻게 고르나? 스마트가이드 |
 | `usb-30-backward-compatible-with-20` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드, USB-C 허브·독, 어떻게 고르나? 스마트가이드 |
 | `usb-condenser-mic-characteristics` | 마이크 구매 가이드 — 종류·연결·지향성·용도별 선택 |
@@ -5415,6 +5840,9 @@
 | `vacuum-suction-unit-iec-vs-astm` | 청소기 구매가이드 — 유형별·흡입력·필터·집먼지진드기·바닥재별·소음·용량·가격대 선택 기준 |
 | `vacuum-suction-w-vs-aw-equivalent` | 청소기 구매가이드 — 유형별·흡입력·필터·집먼지진드기·바닥재별·소음·용량·가격대 선택 기준 |
 | `video-speed-class-definition` | 액션캠(고프로·오즈모류) 전원 불량·녹화 안 됨·배터리·방수 자가점검, 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
+| `vitamin-a-excessive-intake-headache-skin-dryness` | 비타민A와 야맹증·결핍 증상·과잉 독성·임신 기형 위험·상한섭취량 |
+| `water-soluble-vitamin-absorption-no-meal-required` | 비타민B군 결핍 진단 방법 및 피로 증상 개선 근거 |
+| `water-soluble-vitamin-divided-doses-more-effective` | 비타민B군 결핍 진단 방법 및 피로 증상 개선 근거 |
 | `wire-curling-heat-accumulation` | 데스크톱 PC 전원이 안 켜짐 — 하드웨어 물리적 원인 자가점검 |
 | `wireless-receiver-not-recognized-check-physical-connection` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
 | `wireless-receiver-port-swap-troubleshooting` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |

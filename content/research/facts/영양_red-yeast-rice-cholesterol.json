@@ -1,79 +1,80 @@
 {
-  "topic": "홍국의 모나콜린K 기전·LDL 저하 근거·스타틴 대체 위험·시트리닌",
-  "brand": "공통",
-  "article": "red-yeast-rice-cholesterol 예정",
-  "captured": "2026-08-04",
-  "reused_facts": [],
-  "declined_facts": [],
-  "disputes": [],
-  "facts": [
-    {
-      "id": "red-yeast-rice-2015-atherosclerosis-meta-analysis",
-      "claim": "2015년 Atherosclerosis 메타분석(20개 RCT 검토)에서 모나콜린K 함량이 명시된 홍국이 위약 대비 LDL 콜레스테롤을 1.02 mmol/L 저하시켰지만, 연구별 제품 조성의 불균일성과 안전성 평가 품질이 낮았다.",
-      "tier": "확실",
-      "evidence": "공식",
-      "source": "Atherosclerosis 2015;240:415-423, Gerards C et al.",
-      "source_url": "https://www.atherosclerosis-journal.com/article/S0021-9150(15)00222-1/fulltext",
-      "checked": "2026-08-04",
-      "scope": {
-        "target": "고지혈증·이상지질혈증 성인",
-        "population": "20개 RCT 통합 메타분석",
-        "timeframe": "단기(주로 8-12주)",
-        "region": "글로벌"
-      },
-      "caution": "모나콜린 함량이 불일정한 제품들이 섞여 있어 효과 편차가 컸다. 한국 제품도 함량 표시·검증 여부를 반드시 확인해야 한다.",
-      "cautionSource": "메타분석 결론"
-    },
-    {
-      "id": "red-yeast-rice-monacolin-k-equals-lovastatin",
-      "claim": "홍국의 모나콜린K는 사실상 로바스타틴(statin 계열 약물)과 동일한 화합물이며, HMG-CoA 환원효소 억제 기전도 의약품과 같다.",
-      "tier": "확실",
-      "evidence": "공식",
-      "source": "FDA 및 의약학 문헌에서 확인되는 사실",
-      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/Monacolin-K",
-      "checked": "2026-08-04",
-      "scope": {
-        "target": "홍국 성분 분류",
-        "population": "일반",
-        "timeframe": "전연식",
-        "region": "글로벌"
-      },
-      "caution": "★따라서 '천연이므로 부작용이 없다'는 광고는 거짓이다. 스타틴의 부작용인 근육병증, 간 이상, CYP3A4 상호작용도 발생할 수 있다.",
-      "cautionSource": "약학 사실"
-    },
-    {
-      "id": "red-yeast-rice-statin-drug-interaction-myopathy",
-      "claim": "홍국을 스타틴 계열 약물과 병용하면 근육병증과 간 손상 위험이 증가할 수 있으며, CYP3A4 억제제(자몽, 강력한 약물)와의 상호작용도 발생할 수 있다.",
-      "tier": "확실",
-      "evidence": "공식",
-      "source": "Atherosclerosis 메타분석 및 임상 약학 문헌",
-      "source_url": null,
-      "checked": "2026-08-04",
-      "scope": {
-        "target": "스타틴 병용자",
-        "population": "고지혈증 환자",
-        "timeframe": "장기복용 시",
-        "region": "글로벌"
-      },
-      "caution": "근육통, 근력 저하, 짙은 소변이 나타나면 즉시 의료진 상담이 필수다. 절대 자의로 스타틴과 함께 대체·병용하면 안 된다.",
-      "cautionSource": "임상 경험칙"
-    },
-    {
-      "id": "red-yeast-rice-citrinin-contamination-risk",
-      "claim": "일부 홍국 원료에서 곰팡이 독소인 시트리닌(citrinin) 오염이 보고되었으며, 신장독성 우려가 있다.",
-      "tier": "확인실패",
-      "evidence": "공식",
-      "source": "웹검색 기회 초과 — 논문 미확보",
-      "source_url": null,
-      "checked": "2026-08-04",
-      "scope": {
-        "target": "홍국 원료 안전성",
-        "population": "일반",
-        "timeframe": "전연식",
-        "region": "글로벌"
-      },
-      "caution": "GPT 리드 기반. 식약처 공전·원료 규격에서 시트리닌 기준 확인 필요. 특히 발효 공정이 덜 규격화된 해외 직구 제품에 주의.",
-      "cautionSource": "미확인 — 다음 조사 필요"
-    }
-  ]
+ "topic": "홍국의 모나콜린K 기전·LDL 저하 근거·스타틴 대체 위험·시트리닌",
+ "brand": "공통",
+ "article": "red-yeast-rice-cholesterol 예정",
+ "captured": "2026-08-04",
+ "reused_facts": [],
+ "declined_facts": [],
+ "disputes": [],
+ "facts": [
+  {
+   "id": "red-yeast-rice-2015-atherosclerosis-meta-analysis",
+   "claim": "2015년 Atherosclerosis 메타분석(20개 RCT 검토)에서 모나콜린K 함량이 명시된 홍국이 위약 대비 LDL 콜레스테롤을 1.02 mmol/L 저하시켰지만, 연구별 제품 조성의 불균일성과 안전성 평가 품질이 낮았다.",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "Atherosclerosis 2015;240:415-423, Gerards C et al.",
+   "source_url": "https://www.atherosclerosis-journal.com/article/S0021-9150(15)00222-1/fulltext",
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "고지혈증·이상지질혈증 성인",
+    "population": "20개 RCT 통합 메타분석",
+    "timeframe": "단기(주로 8-12주)",
+    "region": "글로벌"
+   },
+   "caution": "모나콜린 함량이 불일정한 제품들이 섞여 있어 효과 편차가 컸다. 한국 제품도 함량 표시·검증 여부를 반드시 확인해야 한다.",
+   "cautionSource": "메타분석 결론"
+  },
+  {
+   "id": "red-yeast-rice-monacolin-k-equals-lovastatin",
+   "claim": "홍국의 모나콜린K는 사실상 로바스타틴(statin 계열 약물)과 동일한 화합물이며, HMG-CoA 환원효소 억제 기전도 의약품과 같다.",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "FDA 및 의약학 문헌에서 확인되는 사실",
+   "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/Monacolin-K",
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "홍국 성분 분류",
+    "population": "일반",
+    "timeframe": "전연식",
+    "region": "글로벌"
+   },
+   "caution": "★따라서 '천연이므로 부작용이 없다'는 광고는 거짓이다. 스타틴의 부작용인 근육병증, 간 이상, CYP3A4 상호작용도 발생할 수 있다.",
+   "cautionSource": "약학 사실"
+  },
+  {
+   "id": "red-yeast-rice-statin-drug-interaction-myopathy",
+   "claim": "홍국을 스타틴 계열 약물과 병용하면 근육병증과 간 손상 위험이 증가할 수 있으며, CYP3A4 억제제(자몽, 강력한 약물)와의 상호작용도 발생할 수 있다.",
+   "tier": "확인실패",
+   "evidence": "공식",
+   "source": "Atherosclerosis 메타분석 및 임상 약학 문헌",
+   "source_url": null,
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "스타틴 병용자",
+    "population": "고지혈증 환자",
+    "timeframe": "장기복용 시",
+    "region": "글로벌"
+   },
+   "caution": "근육통, 근력 저하, 짙은 소변이 나타나면 즉시 의료진 상담이 필수다. 절대 자의로 스타틴과 함께 대체·병용하면 안 된다.",
+   "cautionSource": "임상 경험칙",
+   "note": "출처 URL 없음 — 인용 금지."
+  },
+  {
+   "id": "red-yeast-rice-citrinin-contamination-risk",
+   "claim": "일부 홍국 원료 및 제품에서 곰팡이 독소인 시트리닌(citrinin) 오염이 광범위하게 보고되었다. 미국 제품 조사에서는 10개 중 4개(40%)에서 시트리닌이 검출되었고, 대만 조사(2009-2012)에서는 홍국 원료의 69%, 식이보충제의 35.1%, 가공 제품의 5.7%에서 검출되었다. 분석 대상 37개 홍국 보충제 중 단 1개만 안전 수준을 만족했다.",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "NatMed Pro (Natural Medicines), Mayo Clinic, ScienceDirect (Taiwan contamination study)",
+   "source_url": "https://www.mayoclinic.org/drugs-supplements-red-yeast-rice/art-20363074",
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "홍국 원료 및 보충제",
+    "population": "일반",
+    "timeframe": "2009-2012 조사",
+    "region": "글로벌 (미국, 대만 포함)"
+   },
+   "caution": "★시트리닌은 신장 독성 물질로, 전자전달계 방해·칼슘 항상성 교란·산화 스트레스 생성 등의 메커니즘으로 신독성을 일으킨다. 만성 노출도 저용량에서 건강 위협이 될 수 있다. 특히 신기능이 약한 환자, 장기 복용자는 절대 위험하다.",
+   "cautionSource": "FDA 조사 + 대만 연구 + 임상 사례보고"
+  }
+ ]
 }

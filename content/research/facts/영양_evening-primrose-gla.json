@@ -1,0 +1,83 @@
+{
+  "topic": "감마리놀렌산(GLA)의 여성 건강 효과, 아토피성 피부염, 월경전 증후군",
+  "brand": "공통",
+  "article": "evening-primrose-gla",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "evening-primrose-oil-borage-oil-eczema-negative-2013-cochrane",
+      "claim": "달맞이꽃종자유(evening primrose oil)와 보라지유의 아토피성 습진 치료 효과를 검토한 Cochrane 메타분석(2013)은 27건 연구(1,596명)를 분석했으며, 두 오일 모두 위약 대비 의미 있는 습진 개선 효과를 보이지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cochrane Database of Systematic Reviews 2013, Issue 4, CD004416. Bamford JTM, Ray S, et al.",
+      "source_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004416.pub2/full",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "달맞이꽃종자유",
+        "category": "습진 효과",
+        "line": "아토피성 습진(메타분석 27건)",
+        "years": "12주 이상 보충",
+        "region": "글로벌(메타분석)"
+      },
+      "caution": "★광고에서는 '아토피 완화'를 강조하지만 Cochrane의 최고 수준 메타분석(27건)은 효과를 지지하지 않는다. 연구 대상과 용량, 추출 방법이 달라 결과가 편차를 보일 수 있으나, 일반적으로 근거가 약하다.",
+      "cautionSource": "Cochrane 2013 메타분석"
+    },
+    {
+      "id": "evening-primrose-oil-cyclical-mastalgia-negative-2002",
+      "claim": "달맞이꽃종자유의 주기성 유방통(cyclical mastalgia) 치료 효과를 평가한 RCT(2002, The Breast)에서 달맞이꽃종자유가 위약 대비 유방통을 뚜렷하게 줄이지 못했다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "The Breast 2002; 11(3):203-208",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/14965586/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "달맞이꽃종자유",
+        "category": "유방통 효과",
+        "line": "주기성 유방통",
+        "years": "임상시험 기간(보통 3개월)",
+        "region": "글로벌"
+      },
+      "caution": "주기성 유방통은 월경 주기와 관련된 호르몬 변동에서 비롯되는데, 달맞이꽃종자유의 프로스타글란딘 효과가 충분하지 않은 것으로 보인다.",
+      "cautionSource": "The Breast 2002 RCT"
+    },
+    {
+      "id": "evening-primrose-oil-menopausal-hot-flash-mixed-evidence-2024",
+      "claim": "달맞이꽃종자유의 갱년기 안면홍조 개선 효과를 검토한 체계적 문헌고찰(2024, Journal of Menopausal Medicine)에서 일부 지표에서 개선 신호가 있었으나, 안면홍조 완화 효과를 결론 짓기에는 근거가 부족하다고 평가했다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Journal of Menopausal Medicine 2024; 체계적 문헌고찰",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "달맞이꽃종자유",
+        "category": "안면홍조 효과",
+        "line": "갱년기 안면홍조",
+        "years": "6주~12개월 보충",
+        "region": "글로벌"
+      },
+      "caution": "★근거가 '혼재(mixed)'로 평가되므로, 효과를 장담할 수 없다. 일부 사용자는 효과를 보지만 대다수는 그렇지 않을 수 있다.",
+      "cautionSource": "Journal of Menopausal Medicine 2024 체계적 고찰"
+    },
+    {
+      "id": "gla-gamma-linolenic-acid-mechanism-prostaglandin-precursor",
+      "claim": "감마리놀렌산(GLA)은 오메가-6 지방산으로, 체내에서 디호모감마리놀렌산과 프로스타글란딘 계열 물질의 전구체가 되어 염증 조절과 호르몬 민감성에 영향을 줄 수 있다고 제안되었으나, 경구 보충의 임상 유효성은 질환별로 일관되지 않다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PubMed Central: GLA and Inflammation Review",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "감마리놀렌산",
+        "category": "기전",
+        "line": "프로스타글란딘 형성",
+        "years": "모든 보충 기간",
+        "region": "글로벌"
+      },
+      "caution": "생화학적 기전(프로스타글란딘 형성)이 입증되었다고 해서 임상 증상 개선으로 이어지는 것은 아니다. 대리지표와 실제 임상 결과의 괴리를 주의할 것.",
+      "cautionSource": "대리지표 함정(surrogate endpoint)"
+    }
+  ]
+}

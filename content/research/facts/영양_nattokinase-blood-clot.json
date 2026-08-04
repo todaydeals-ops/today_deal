@@ -1,62 +1,63 @@
 {
-  "topic": "나토키나제의 혈전 용해 기전·임상 근거·출혈 위험",
-  "brand": "공통",
-  "article": "nattokinase-blood-clot 예정",
-  "captured": "2026-08-04",
-  "reused_facts": [],
-  "declined_facts": [],
-  "disputes": [],
-  "facts": [
-    {
-      "id": "nattokinase-rct-2021-cahs-null-effect",
-      "claim": "2021년 나토키나제 무작위대조시험(265명, 중앙값 3년 추적)에서 경동맥 내중막 두께, 경동맥 경직도, 혈압 및 혈액 검사 지표 모두에서 위약 대비 유의한 개선이 없었다.",
-      "tier": "확실",
-      "evidence": "공식",
-      "source": "Clinical Hemorheology and Microcirculation 2021;78:339-353, Nattokinase atherothrombotic prevention study by Hodis HN et al.",
-      "source_url": "https://pubmed.ncbi.nlm.nih.gov/33843667/",
-      "checked": "2026-08-04",
-      "scope": {
-        "target": "심혈관질환 저위험 성인",
-        "population": "265명, 중앙 연령 65.3세",
-        "timeframe": "3년",
-        "region": "미국"
-      },
-      "caution": "이 연구는 건강한 사람의 혈관 변화(CIMT, 경직도)를 측정했으며, 이미 발생한 혈전 치료나 임상적 심혈관 사건 예방을 평가하지 않았다.",
-      "cautionSource": "CAHS 임상 설계"
-    },
-    {
-      "id": "nattokinase-mechanism-fibrin-enzyme",
-      "claim": "나토키나제는 낫토 발효 과정에서 생성되는 단백질분해효소로, 시험관 연구에서 피브린 분해 효과가 보고되었지만 경구 섭취 후 장에서 활성 효소가 전신 순환으로 얼마나 흡수되는지는 미확립되어 있다.",
-      "tier": "확인실패",
-      "evidence": "공식",
-      "source": "웹검색으로 생체이용률 논문 미확보",
-      "source_url": null,
-      "checked": "2026-08-04",
-      "scope": {
-        "target": "나토키나제 특성",
-        "population": "일반",
-        "timeframe": "전연식",
-        "region": "글로벌"
-      },
-      "caution": "GPT 리드 기반 — 집필 시 PubMed에서 'nattokinase bioavailability' 'nattokinase absorption' 검색 필요. 장 흡수율이 효과의 핵심 한계다.",
-      "cautionSource": "미확인 — 다음 조사 라운드 필요"
-    },
-    {
-      "id": "nattokinase-anticoagulant-bleeding-risk",
-      "claim": "항응고제(와파린, 항혈소판제 등)와 나토키나제를 병용할 경우 출혈 위험이 증가할 가능성이 있으며, 수술·시술 전 복용 사실을 의료진에게 고지해야 한다.",
-      "tier": "확인실패",
-      "evidence": "후기",
-      "source": "사용자 보고 및 임상 경험칙",
-      "source_url": null,
-      "checked": "2026-08-04",
-      "scope": {
-        "target": "항응고제 복용자",
-        "population": "고령자, 심혈관질환자",
-        "timeframe": "전연식",
-        "region": "글로벌"
-      },
-      "caution": "직접 비교 임상시험 미확인. 그러나 나토키나제의 섬유소용해 작용과 항응고제의 상가효과 우려는 임상적으로 타당하므로, 절대 자의로 병용하면 안 된다. 의료진과 상담 필수.",
-      "cautionSource": "임상경험 기반 주의(논문 출처 미확보)"
-    }
-  ]
+ "topic": "나토키나제의 혈전 용해 기전·임상 근거·출혈 위험",
+ "brand": "공통",
+ "article": "nattokinase-blood-clot 예정",
+ "captured": "2026-08-04",
+ "reused_facts": [],
+ "declined_facts": [],
+ "disputes": [],
+ "facts": [
+  {
+   "id": "nattokinase-rct-2021-cahs-null-effect",
+   "claim": "2021년 나토키나제 무작위대조시험(265명, 중앙값 3년 추적)에서 경동맥 내중막 두께, 경동맥 경직도, 혈압 및 혈액 검사 지표 모두에서 위약 대비 유의한 개선이 없었다.",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "Clinical Hemorheology and Microcirculation 2021;78:339-353, Nattokinase atherothrombotic prevention study by Hodis HN et al.",
+   "source_url": "https://pubmed.ncbi.nlm.nih.gov/33843667/",
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "심혈관질환 저위험 성인",
+    "population": "265명, 중앙 연령 65.3세",
+    "timeframe": "3년",
+    "region": "미국"
+   },
+   "caution": "이 연구는 건강한 사람의 혈관 변화(CIMT, 경직도)를 측정했으며, 이미 발생한 혈전 치료나 임상적 심혈관 사건 예방을 평가하지 않았다.",
+   "cautionSource": "CAHS 임상 설계"
+  },
+  {
+   "id": "nattokinase-mechanism-fibrin-enzyme",
+   "claim": "나토키나제는 낫토 발효 과정에서 생성되는 단백질분해효소로, 시험관 연구에서 피브린 분해 효과가 보고되었지만 경구 섭취 후 장에서 활성 효소가 전신 순환으로 얼마나 흡수되는지는 미확립되어 있다.",
+   "tier": "확인실패",
+   "evidence": "공식",
+   "source": "웹검색으로 생체이용률 논문 미확보",
+   "source_url": null,
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "나토키나제 특성",
+    "population": "일반",
+    "timeframe": "전연식",
+    "region": "글로벌"
+   },
+   "caution": "GPT 리드 기반 — 집필 시 PubMed에서 'nattokinase bioavailability' 'nattokinase absorption' 검색 필요. 장 흡수율이 효과의 핵심 한계다.",
+   "cautionSource": "미확인 — 다음 조사 라운드 필요"
+  },
+  {
+   "id": "nattokinase-anticoagulant-bleeding-risk",
+   "claim": "나토키나제는 피브린 분해(fibrinolysis) 촉진·혈소판 응집 억제·응고 인자 조절을 통해 항응고·항혈소판 효과를 나타낸다. 따라서 와파린·클로피도그렐·아스피린 등 항응고제 또는 항혈소판제와 병용할 경우 이들 약물의 효과가 가산되어 출혈 위험이 증가할 수 있다. 특히 기계 판막 이식이나 심방세동 환자에서 보고된 사례가 있다.",
+   "tier": "확인실패",
+   "evidence": "공식",
+   "source": "Drugs.com, Memorial Sloan Kettering Cancer Center, HelloPharmacist, 임상 사례보고",
+   "source_url": "https://www.drugs.com/drug-interactions/nattokinase-with-warfarin-3655-0-2311-0.html",
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "항응고제/항혈소판제 복용자",
+    "population": "심혈관질환자, 고령자",
+    "timeframe": "전연식",
+    "region": "글로벌"
+   },
+   "caution": "★나토키나제에 함유된 비타민 K2도 와파린의 효과를 감소시켜 INR(국제정상화비율)을 낮춘다는 우려도 있다. 절대 자의로 항응고제와 병용하면 안 되며, 수술·시술 전 의료진에게 반드시 고지해야 한다.",
+   "cautionSource": "임상경험 기반 + 사례보고",
+   "note": "소비자 건강정보 사이트 출처(권위 1차 아님) — 인용 금지, 재검증 필요."
+  }
+ ]
 }

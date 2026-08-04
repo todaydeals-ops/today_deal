@@ -1,0 +1,114 @@
+{
+ "topic": "오메가-3 제형(rTG·TG·EE)별 생체이용률·산패도 관리·형태에 따른 임상 효과 차이",
+ "brand": "공통",
+ "article": "omega3-form-rtg-ee 예정",
+ "captured": "2026-08-04",
+ "reused_facts": [],
+ "declined_facts": [],
+ "disputes": [],
+ "facts": [
+  {
+   "id": "omega3-rtg-ee-bioavailability-difference-2010",
+   "claim": "2010년 Prostaglandins, Leukotrienes and Essential Fatty Acids 무작위대조시험에서 rTG(재에스테르화 트리글리세라이드) 형태의 EPA·DHA 생체이용률이 EE(에틸 에스테르) 형태보다 높게 나타났다.",
+   "tier": "확인실패",
+   "evidence": "공식",
+   "source": "Prostaglandins, Leukotrienes and Essential Fatty Acids 2010 (GPT 리드 기반 — 원문 미확보)",
+   "source_url": null,
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "건강한 성인",
+    "population": "소규모 RCT (구체 규모 미확인)",
+    "timeframe": "단회·단기 흡수 비교",
+    "region": "글로벌"
+   },
+   "caution": "이 연구는 '단회 투여 후 단기 혈중 농도'만 비교했을 가능성이 높다. 식사 지방량·장기 복용·임상 결과 우월성은 별개이다.",
+   "cautionSource": "GPT 리드 주의사항"
+  },
+  {
+   "id": "omega3-rtg-ee-clinical-superiority-unproven",
+   "claim": "rTG 또는 TG 형태가 일부 단회·단기 흡수 연구에서 EE보다 유리했지만, 충분한 지방과 함께 복용하면 형태 간 차이가 줄어들 수 있으며, 흡수율 차이가 심혈관 사건 예방이나 중성지방 감소의 임상적 우월성으로 곧바로 이어진다는 근거는 부족하다.",
+   "tier": "확인실패",
+   "evidence": "공식",
+   "source": "GPT 리드 종합 + 임상 논리",
+   "source_url": null,
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "오메가-3 형태 선택",
+    "population": "일반",
+    "timeframe": "전연식",
+    "region": "글로벌"
+   },
+   "caution": "★광고에서 'rTG는 무조건 두 배 이상 흡수된다' '오직 rTG만 진짜다' 같은 표현은 과장이다. 형태보다 용량·복용법·대상자 상태가 더 중요할 수 있다.",
+   "cautionSource": "광고 검증 논리",
+   "note": "출처 URL 없음 — 인용 금지."
+  },
+  {
+   "id": "omega3-oxidation-totox-peroxide-value",
+   "claim": "오메가-3의 산패는 EPA·DHA의 불포화 결합이 산화되어 과산화물과 2차 산화물이 생성되는 과정이며, 과산화물가(POV)와 아니시딘가(AV)를 합산한 TOTOX 지수로 평가한다.",
+   "tier": "확인실패",
+   "evidence": "공식",
+   "source": "웹검색 기회 초과 — 산패 평가 기준 미확보",
+   "source_url": null,
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "오메가-3 품질 평가",
+    "population": "일반",
+    "timeframe": "전연식",
+    "region": "글로벌"
+   },
+   "caution": "GPT 리드 기반. '비린내가 나면 산패했다'는 식의 소비자 판단은 부정확하다. TOTOX·POV·AV 등 화학 검사가 필요하다. 한국의 건강기능식품 규격 확인 필수.",
+   "cautionSource": "미확인 — 식약처 공전 확인 필요"
+  },
+  {
+   "id": "omega3-meal-dependency-lipid-absorption",
+   "claim": "오메가-3(특히 EE)의 흡수는 제형 차이만 아니라 식사 중 지방 포함 여부·시간·복용 기간·개인 소화 상태의 영향도 받는다.",
+   "tier": "확인실패",
+   "evidence": "공식",
+   "source": "GPT 리드 기반 (2021 Journal of Nutrition 연구 미확보)",
+   "source_url": null,
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "오메가-3 흡수 요인",
+    "population": "일반",
+    "timeframe": "전연식",
+    "region": "글로벌"
+   },
+   "caution": "형태 차이를 강조하는 광고는 다른 변수를 무시한다. 실제로는 '지방식과 함께 복용'이 형태 선택만큼 중요할 수 있다.",
+   "cautionSource": "임상 논리"
+  },
+  {
+   "id": "omega3-high-dose-atrial-fibrillation-signal",
+   "claim": "34개 임상시험의 메타분석(114,326명)에서 고용량(>1,500 mg/일 이상 EPA+DHA) 오메가-3 보충은 심혈관질환 고위험 환자에서 심방세동(atrial fibrillation) 위험을 약 1.48배 증가시키는 신호를 보였다. REDUCE-IT(4g/일 icosapent ethyl = 3.84g EPA)와 STRENGTH(약 4g/일) 등 주요 심혈관 임상시험에서도 고용량 투여 군에서 심방세동 위험 증가가 관찰되었다.",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "NIH/PMC 메타분석 (2025), 순환기학회(Circulation) 메타분석 (2021)",
+   "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12723971/",
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "심혈관질환 환자, 고용량 오메가-3 복용자",
+    "population": "34개 시험, 114,326명",
+    "timeframe": "고용량 장기 복용",
+    "region": "글로벌"
+   },
+   "caution": "★이는 중요한 안전 신호다. 고용량 오메가-3는 심혈관질환 위험 감소(REDUCE-IT: 25% 상대위험도 감소)와 심방세동 위험 증가 사이의 임상적 트레이드오프가 존재한다는 의미다. 특히 부정맥 병력이나 기저 심장질환(특히 심방세동)이 있는 환자는 고용량(>1,500 mg/일) 오메가-3 추가 복용 전 의료진과 반드시 상담해야 한다.",
+   "cautionSource": "NIH/PMC 메타분석 + 심혈관학 임상시험"
+  },
+  {
+   "id": "omega3-form-not-guarantee-disease-prevention-efficacy",
+   "claim": "rTG·TG·EE라는 형태 자체는 별도의 질병 예방 기능성을 보장하지 않으며, 한국 건강기능식품 인정 기능성(혈중 중성지질 개선, 혈행 개선 등)은 형태가 아니라 EPA+DHA 합계 섭취량과 대상자 상태에 따라 결정된다.",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "식약처 건강기능식품 기능성 원료 기준 (공통 팩트 재사용)",
+   "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=3811&bbs_no=bbs464",
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "오메가-3 기능성 표시",
+    "population": "일반",
+    "timeframe": "2026 현행",
+    "region": "KR"
+   },
+   "caution": "형태 광고는 소비자를 혼동시킨다. 집필에서 '형태가 중요한 게 아니라, 필요한 용량을 충분히 섭취하는 게 우선'이라고 명확히 해야 한다.",
+   "cautionSource": "식약처 기준"
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+  "topic": "엽산(엽산염)의 신경관결손 예방 효과, 기전, 용량, 안전성",
+  "brand": "공통",
+  "article": "folate-pregnancy",
+  "captured": "2026-08-04",
+  "reused_facts": [
+    "korea-health-food-certified-form-standard-raw-material",
+    "korea-health-food-function-claim-disease-prevention-prohibition"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "mrc-vitamin-study-neural-tube-defect-prevention-1991",
+      "claim": "신경관결손 임신력이 있는 1,817명의 여성을 대상으로 한 MRC Vitamin Study(1991)에서 임신 전후 고용량 엽산 투여 군은 신경관결손 재발을 72% 감소시켰다(상대위험도 0.28, 95% CI 0.12-0.71).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "The Lancet 1991; 338(8760):131-7. Medical Research Council Vitamin Study Research Group",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/1677062/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "엽산",
+        "category": "신경관결손 예방",
+        "line": "고위험군(이전 결손력)",
+        "years": "임신 전후",
+        "region": "글로벌"
+      },
+      "caution": "이 연구는 고위험군(이전 신경관결손 임신력)을 대상으로 했으므로, 일반 임신부 결과와는 다를 수 있다.",
+      "cautionSource": "MRC Vitamin Study 설계"
+    },
+    {
+      "id": "periconceptional-multivitamin-first-neural-tube-defect-prevention-1992",
+      "claim": "임신을 계획한 헝가리 여성 5,453명을 대상으로 한 RCT(1992)에서 엽산을 포함한 종합비타민을 임신 전후 복용한 군은 첫 신경관결손 발생이 100% 감소했다(사건 0건 vs 6건).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "The New England Journal of Medicine 1992; 327(26):1832-5. Czeizel AE, Dudas I",
+      "source_url": "https://www.nejm.org/doi/full/10.1056/NEJM199212243272602",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "엽산",
+        "category": "신경관결손 예방",
+        "line": "일반군(처음 임신)",
+        "years": "임신 전후",
+        "region": "헝가리"
+      },
+      "caution": "이 연구는 종합비타민이 사용되었으므로 엽산 단독 효과를 분리하기 어렵다. 또한 사건 수가 적어(0 vs 6) 신뢰구간이 넓을 수 있다.",
+      "cautionSource": "연구 설계"
+    },
+    {
+      "id": "folic-acid-neural-tube-defect-prevention-mechanism-dna-synthesis-cell-division",
+      "claim": "엽산은 일탄소 대사에서 필수 보조인자로 작용하여 DNA 합성과 세포 분열에 필요한 뉴클레오타이드 형성을 지원하며, 임신 초기 신경관이 닫히는 시기(임신 19-28일경)에 충분한 엽산 공급이 신경관결손 발생 위험을 낮춘다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미국 NIH, 미국 질병통제센터(CDC) 태아건강 가이드라인",
+      "source_url": "https://www.cdc.gov/ncbddd/birthdefects/prevention/facts-about-birth-defects.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "엽산",
+        "category": "기전",
+        "line": "DNA 합성, 신경관 형성",
+        "years": "임신 초기(19-28일경)",
+        "region": "글로벌"
+      },
+      "caution": "신경관 폐쇄 시기 이후에 엽산을 시작하면 이미 생긴 결손을 치료할 수 없으므로 임신 전 또는 임신 초기부터 복용이 중요하다.",
+      "cautionSource": "CDC 신경관결손 예방 가이드"
+    },
+    {
+      "id": "folic-acid-high-dose-b12-deficiency-masking-risk",
+      "claim": "고용량 엽산을 장기간 복용하면 비타민 B12 결핍성 빈혈의 초기 혈액 소견(거대적혈구빈혈)을 가려서 신경 손상(신경병증) 진단이 늦어질 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미국 FDA, 영양제 엽산 안전성 정보",
+      "source_url": "https://www.fda.gov/food/dietary-supplements/folate-folic-acid",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "엽산",
+        "category": "안전성",
+        "line": "B12 결핍 마스킹",
+        "years": "장기 복용",
+        "region": "글로벌"
+      },
+      "caution": "★B12 결핍이 있거나 의심되는 경우, 엽산 고용량 보충 전에 B12 수치를 반드시 확인해야 한다. 고용량 엽산과 함께 B12 검사를 정기적으로 받아야 한다.",
+      "cautionSource": "FDA 영양제 안전성 기준"
+    }
+  ]
+}

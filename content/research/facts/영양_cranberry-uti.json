@@ -1,96 +1,96 @@
 {
-  "topic": "크랜베리의 요로감염 예방·재발 방지·프로안토시아니딘·효과의 대상 한계",
-  "brand": "공통",
-  "article": "cranberry-uti 예정",
-  "captured": "2026-08-04",
-  "reused_facts": [],
-  "declined_facts": [],
-  "disputes": [],
-  "facts": [
-    {
-      "id": "cranberry-2023-cochrane-review-recurrent-uti-prevention",
-      "claim": "2023년 Cochrane 체계적 문헌고찰(50개 RCT, 8,857명)에서 크랜베리 제품은 재발성 요로감염 여성(8개 연구, 1,555명)과 소아에서 증상성 배양확인 요로감염 위험을 유의하게 감소시켰으나(RR 0.74), 고령자·임신부·신경인성 방광 환자에서는 효과가 확인되지 않았다.",
-      "tier": "확실",
-      "evidence": "공식",
-      "source": "Cochrane Database of Systematic Reviews 2023, Issue 4. Williams G, Hahn D, Stephens JH, Craig JC, Hodson EM.",
-      "source_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD001321.pub7/full",
-      "checked": "2026-08-04",
-      "scope": {
-        "target": "재발성 요로감염 여성, 소아, 시술 후 감염 위험군",
-        "population": "50개 RCT, 8,857명",
-        "timeframe": "메타분석 (개별 연구는 3개월~12개월)",
-        "region": "글로벌"
-      },
-      "caution": "재발성 감염 예방에만 효과 있고, 현재 진행 중인 감염 치료는 효과 없다.",
-      "cautionSource": "Cochrane 메타분석"
-    },
-    {
-      "id": "cranberry-pac-proanthocyanidin-mechanism",
-      "claim": "크랜베리의 A형 프로안토시아니딘(PAC)은 일부 요로병원성 대장균의 요로상피 부착을 방해함으로써 감염 기회를 줄일 수 있지만, 세균을 직접 살균하지는 않는다.",
-      "tier": "확인실패",
-      "evidence": "공식",
-      "source": "웹검색 기회 초과 — 기전 논문 미확보",
-      "source_url": null,
-      "checked": "2026-08-04",
-      "scope": {
-        "target": "크랜베리 성분·기전",
-        "population": "일반",
-        "timeframe": "전연식",
-        "region": "글로벌"
-      },
-      "caution": "부착 방해 = 예방. 집필에서 '세균을 없앤다'는 표현과 구분해야 한다.",
-      "cautionSource": "미확인"
-    },
-    {
-      "id": "cranberry-treatment-vs-prevention-distinction",
-      "claim": "2023년 Cochrane 리뷰의 또 다른 메타분석('현재 요로감염 치료'로 검색)에서는 크랜베리가 진행 중인 감염을 치료할 근거가 충분하지 않아 항생제 치료를 대체할 수 없다.",
-      "tier": "확실",
-      "evidence": "공식",
-      "source": "Cochrane Database of Systematic Reviews 2023, Issue 4 ('Cranberries for treating urinary tract infections')",
-      "source_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD001321.pub7/full",
-      "checked": "2026-08-04",
-      "scope": {
-        "target": "현재 요로감염이 있는 환자",
-        "population": "메타분석 (적절한 무작위시험 부족)",
-        "timeframe": "전연식",
-        "region": "글로벌"
-      },
-      "caution": "★광고에서 '방광염을 치료한다'는 표현은 허위다. 예방만 가능하고, 그것도 대상·제품 형태에 따라 달라진다.",
-      "cautionSource": "Cochrane 결론"
-    },
-    {
-      "id": "cranberry-product-heterogeneity-pac-content",
-      "claim": "크랜베리 주스·캡슐·분말은 프로안토시아니딘(PAC) 함량과 생물학적 이용 가능성이 크게 다르며, 당분 첨가 주스는 당뇨병 환자에게 불리할 수 있다.",
-      "tier": "확인실패",
-      "evidence": "공식",
-      "source": "Cochrane 리뷰 중 이질성 언급 부분 (직접 논문 미확보)",
-      "source_url": null,
-      "checked": "2026-08-04",
-      "scope": {
-        "target": "크랜베리 제형 및 조성 차이",
-        "population": "일반",
-        "timeframe": "전연식",
-        "region": "글로벌"
-      },
-      "caution": "Cochrane에서도 제품 간 효과 차이가 있다고 지적했다. 단순히 '크랜베리'라고 해서 모두 같지 않다.",
-      "cautionSource": "Cochrane 이질성 분석"
-    },
-    {
-      "id": "cranberry-population-limit-elderly-pregnant-dysfunctional-bladder",
-      "claim": "Cochrane 메타분석에서 크랜베리의 효과가 확인되지 않은 집단: 고령자, 임신부, 신경인성 방광(배뇨장애) 환자. 따라서 '모든 여성이 매일 먹어야 한다'는 주장은 근거 부족이다.",
-      "tier": "확실",
-      "evidence": "공식",
-      "source": "Cochrane Database of Systematic Reviews 2023, Issue 4",
-      "source_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD001321.pub7/full",
-      "checked": "2026-08-04",
-      "scope": {
-        "target": "특정 인구군 (고령자, 임신부, 신경인성 방광)",
-        "population": "다양한 RCT 통합",
-        "timeframe": "전연식",
-        "region": "글로벌"
-      },
-      "caution": "재발성 감염이 없는데 예방 목적으로만 먹는 것도 근거 부족이다. 목적과 대상을 명확히 해야 한다.",
-      "cautionSource": "Cochrane 부군분석"
-    }
-  ]
+ "topic": "크랜베리의 요로감염 예방·재발 방지·프로안토시아니딘·효과의 대상 한계",
+ "brand": "공통",
+ "article": "cranberry-uti 예정",
+ "captured": "2026-08-04",
+ "reused_facts": [],
+ "declined_facts": [],
+ "disputes": [],
+ "facts": [
+  {
+   "id": "cranberry-2023-cochrane-review-recurrent-uti-prevention",
+   "claim": "2023년 Cochrane 체계적 문헌고찰(50개 RCT, 8,857명)에서 크랜베리 제품은 재발성 요로감염 여성(8개 연구, 1,555명)과 소아에서 증상성 배양확인 요로감염 위험을 유의하게 감소시켰으나(RR 0.74), 고령자·임신부·신경인성 방광 환자에서는 효과가 확인되지 않았다.",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "Cochrane Database of Systematic Reviews 2023, Issue 4. Williams G, Hahn D, Stephens JH, Craig JC, Hodson EM.",
+   "source_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD001321.pub7/full",
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "재발성 요로감염 여성, 소아, 시술 후 감염 위험군",
+    "population": "50개 RCT, 8,857명",
+    "timeframe": "메타분석 (개별 연구는 3개월~12개월)",
+    "region": "글로벌"
+   },
+   "caution": "재발성 감염 예방에만 효과 있고, 현재 진행 중인 감염 치료는 효과 없다.",
+   "cautionSource": "Cochrane 메타분석"
+  },
+  {
+   "id": "cranberry-pac-proanthocyanidin-mechanism",
+   "claim": "크랜베리의 A형 프로안토시아니딘(PAC)은 일부 요로병원성 대장균의 요로상피 부착을 방해함으로써 감염 기회를 줄일 수 있지만, 세균을 직접 살균하지는 않는다.",
+   "tier": "확인실패",
+   "evidence": "공식",
+   "source": "웹검색 기회 초과 — 기전 논문 미확보",
+   "source_url": null,
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "크랜베리 성분·기전",
+    "population": "일반",
+    "timeframe": "전연식",
+    "region": "글로벌"
+   },
+   "caution": "부착 방해 = 예방. 집필에서 '세균을 없앤다'는 표현과 구분해야 한다.",
+   "cautionSource": "미확인"
+  },
+  {
+   "id": "cranberry-treatment-vs-prevention-distinction",
+   "claim": "2023년 Cochrane 리뷰의 또 다른 메타분석('현재 요로감염 치료'로 검색)에서는 크랜베리가 진행 중인 감염을 치료할 근거가 충분하지 않아 항생제 치료를 대체할 수 없다.",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "Cochrane Database of Systematic Reviews 2023, Issue 4 ('Cranberries for treating urinary tract infections')",
+   "source_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD001321.pub7/full",
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "현재 요로감염이 있는 환자",
+    "population": "메타분석 (적절한 무작위시험 부족)",
+    "timeframe": "전연식",
+    "region": "글로벌"
+   },
+   "caution": "★광고에서 '방광염을 치료한다'는 표현은 허위다. 예방만 가능하고, 그것도 대상·제품 형태에 따라 달라진다.",
+   "cautionSource": "Cochrane 결론"
+  },
+  {
+   "id": "cranberry-product-heterogeneity-pac-content",
+   "claim": "크랜베리 주스·캡슐·분말은 프로안토시아니딘(PAC) 함량과 생물학적 이용 가능성이 크게 다르며, 당분 첨가 주스는 당뇨병 환자에게 불리할 수 있다.",
+   "tier": "확인실패",
+   "evidence": "공식",
+   "source": "Cochrane 리뷰 중 이질성 언급 부분 (직접 논문 미확보)",
+   "source_url": null,
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "크랜베리 제형 및 조성 차이",
+    "population": "일반",
+    "timeframe": "전연식",
+    "region": "글로벌"
+   },
+   "caution": "Cochrane에서도 제품 간 효과 차이가 있다고 지적했다. 단순히 '크랜베리'라고 해서 모두 같지 않다.",
+   "cautionSource": "Cochrane 이질성 분석"
+  },
+  {
+   "id": "cranberry-population-limit-elderly-pregnant-dysfunctional-bladder",
+   "claim": "Cochrane 메타분석에서 크랜베리의 효과가 확인되지 않은 집단: 고령자, 임신부, 신경인성 방광(배뇨장애) 환자. 따라서 '모든 여성이 매일 먹어야 한다'는 주장은 근거 부족이다.",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "Cochrane Database of Systematic Reviews 2023, Issue 4",
+   "source_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD001321.pub7/full",
+   "checked": "2026-08-04",
+   "scope": {
+    "target": "특정 인구군 (고령자, 임신부, 신경인성 방광)",
+    "population": "다양한 RCT 통합",
+    "timeframe": "전연식",
+    "region": "글로벌"
+   },
+   "caution": "재발성 감염이 없는데 예방 목적으로만 먹는 것도 근거 부족이다. 목적과 대상을 명확히 해야 한다.",
+   "cautionSource": "Cochrane 부군분석"
+  }
+ ]
 }

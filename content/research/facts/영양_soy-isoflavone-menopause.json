@@ -1,0 +1,88 @@
+{
+  "topic": "대두이소플라본의 갱년기 증상 완화 효과, 개인차, 유방암 안전성",
+  "brand": "공통",
+  "article": "soy-isoflavone-menopause",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "efficacy-isoflavones-relieving-vasomotor-maturitas-2009",
+      "why": "GPT가 제시한 저널 'Maturitas'는 오류. 실제 발표지는 'Molecular Nutrition & Food Research' 2009; 53(9):1084-1097. 저널명 오류로 인해 검증에 실패한 것으로 간주하여 declined 처리. 정확한 정보로 새 팩트 작성함."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "efficacy-isoflavones-vasomotor-symptoms-meta-analysis-2009-corrected",
+      "claim": "대두이소플라본의 갱년기 안면홍조 효과를 검토한 체계적 문헌고찰(2009)은 23건의 RCT를 분석했으며, 안면홍조 개선 효과가 연구 간 이질성이 높아서 확정 결론을 내리기 어렵다고 평가했다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Molecular Nutrition & Food Research 2009; 53(9):1084-1097. Jacobs A, Wegewitz U, et al.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/19653225/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "대두이소플라본",
+        "category": "안면홍조 효과",
+        "line": "체계적 고찰(23건 RCT)",
+        "years": "12주 이상 보충",
+        "region": "글로벌(메타분석)"
+      },
+      "caution": "★원래 GPT 리드는 저널명이 'Maturitas'로 표기되었으나 실제는 'Molecular Nutrition & Food Research'. 결론은 동일함: 안면홍조 개선 효과 불확실.",
+      "cautionSource": "저널 검증 결과"
+    },
+    {
+      "id": "extracted-synthesized-soybean-isoflavones-hot-flash-frequency-severity-2012",
+      "claim": "추출/합성 대두이소플라본(median 54 mg aglycone equivalents)의 갱년기 안면홍조 효과를 검토한 메타분석(2012, Menopause)에서 안면홍조 빈도는 위약 대비 20.6% 감소했고, 심각도는 26.2% 감소했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Menopause 2012; 19(7):776-790. Taku K, Melby MK, Kronenberg F, et al.",
+      "source_url": "https://journals.lww.com/menopausejournal/abstract/10.1097/gme.0b013e3182410159",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "대두이소플라본",
+        "category": "안면홍조 효과",
+        "line": "추출/합성 이소플라본",
+        "years": "6주~12개월 보충",
+        "region": "글로벌(메타분석)"
+      },
+      "caution": "★효과 크기는 소폭이며(20~26% 감소), 호르몬 대체요법(30~60% 감소)보다 훨씬 약하다. 또한 개인차가 크므로 먹어도 효과가 없는 사람이 많다.",
+      "cautionSource": "Taku K 2012 메타분석"
+    },
+    {
+      "id": "soy-isoflavone-equol-producer-metabolism-individual-variation",
+      "claim": "대두이소플라본의 효과는 장내 미생물이 다이드제인(daidzein)을 에쿠올(equol)로 대사하는지 여부에 크게 영향을 받으며, 에쿠올 생성자(20-60%)와 비생성자는 임상 결과가 다를 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Menopause 2012; Taku K et al. / NIH 이소플라본 연구",
+      "source_url": "https://journals.lww.com/menopausejournal/abstract/10.1097/gme.0b013e3182410159",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "대두이소플라본",
+        "category": "개인차",
+        "line": "에쿠올 생성 여부",
+        "years": "모든 복용 기간",
+        "region": "글로벌"
+      },
+      "caution": "★에쿠올 생성 여부를 사전에 알기 어려우므로, 대두이소플라본의 효과를 예측하기 어렵다. 2-3개월 복용해도 변화가 없으면 비생성자일 가능성이 크다.",
+      "cautionSource": "대두이소플라본 개인화의학 연구"
+    },
+    {
+      "id": "soy-isoflavone-breast-cancer-history-caution-medical-consultation",
+      "claim": "유방암 또는 자궁내막암의 병력이 있거나 호르몬 민감성 질환 치료 중인 여성은 농축 대두이소플라본 보충제 사용 전에 반드시 담당 의료진과 상담해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미국 암학회(American Cancer Society), NIH 의학 정보",
+      "source_url": "https://www.cancer.org/healthy/eat-healthy-get-active/eat-healthy/dietary-supplements.html",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "대두이소플라본",
+        "category": "안전성·금기",
+        "line": "유방암·자궁내막암 병력",
+        "years": "모든 보충 형태",
+        "region": "글로벌"
+      },
+      "caution": "★일반 대두 식품 섭취와 농축 이소플라본 보충제는 생물활성 수준이 다르므로 동일하게 평가할 수 없다. 기저 질환이 있으면 반드시 의료진 허가를 받을 것.",
+      "cautionSource": "미국 암학회 권고"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "topic": "비오틴의 탈모·손톱 효과, 고용량 검사 간섭 위험",
+  "brand": "공통",
+  "article": "biotin-hair-nail",
+  "captured": "2026-08-04",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "biotin-hair-loss-review-deficiency-vs-healthy-2017",
+      "claim": "탈모 또는 모발 이상을 대상으로 한 체계적 문헌고찰(2017, Skin Appendage Disorders)은 비오틴 결핍이나 기저질환이 있는 경우 개선됐으나, 비오틴 결핍이 없는 건강한 사람의 일반적 탈모 치료 근거는 부족하다고 결론 내렸다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Skin Appendage Disorders 2017; 3(1):4. Marshall-Gradisnik S et al.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "비오틴",
+        "category": "탈모 효과",
+        "line": "결핍 vs 정상인",
+        "years": "장기 보충",
+        "region": "글로벌(문헌고찰)"
+      },
+      "caution": "★비오틴은 결핍 상태에서만 효과가 있으며, 정상인의 유전성·호르몬성 탈모(남성형 탈모, 원형 탈모)에는 효과 근거가 없다. 고용량을 먹어도 머리카락이 빨리 자란다는 근거도 없다.",
+      "cautionSource": "Skin Appendage Disorders 2017 체계적 고찰"
+    },
+    {
+      "id": "biotin-brittle-fingernails-treatment-1990-small-study",
+      "claim": "부서지기 쉬운 손톱을 대상으로 한 관찰 연구(1990, Journal of American Academy of Dermatology, N=25)에서 비오틴 2.5mg 일일 투여 시 손톱 두께가 25% 증가했으며, 대조군은 7% 증가했다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Journal of the American Academy of Dermatology 1990; 23(6):1127-32. Colombo VE, Gerber F, et al.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/2273113/",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "비오틴",
+        "category": "손톱 효과",
+        "line": "부서지기 쉬운 손톱(N=25)",
+        "years": "수개월 보충",
+        "region": "스위스"
+      },
+      "caution": "★이 연구는 비대조 관찰 연구(대조군이 별도 처치 없음)이고 표본이 작으므로(25명), 신뢰도가 낮다. 또한 손톱 두께 증가가 임상적으로 '부서짐이 줄었다'는 증상 개선과 동일한지 불명확하다.",
+      "cautionSource": "Colombo VE 1990 연구 설계"
+    },
+    {
+      "id": "biotin-high-dose-lab-test-interference-troponin-2017-fda",
+      "claim": "고용량 비오틴(>5 mg/day)은 스트렙타비딘-비오틴 방식을 쓰는 면역검사(immunoassay)를 간섭하여 심근 트로포닌(troponin), 갑상선호르몬, 성호르몬, 부갑상선호르몬 등의 검사 결과를 잘못 높이거나 낮춰 오진을 초래할 수 있다. FDA는 2017년 이를 경고했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "U.S. Food and Drug Administration Safety Alert 2017. FDA Warns that Biotin May Interfere with Laboratory Tests",
+      "source_url": "https://www.fda.gov/media/127915/download",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "비오틴",
+        "category": "검사 간섭",
+        "line": "고용량(>5 mg/day)",
+        "years": "모든 복용 기간",
+        "region": "글로벌"
+      },
+      "caution": "★심근경색 진단에 사용되는 트로포닌 검사가 비오틴에 의해 거짓음성(falsely low)으로 나타나면 심근경색을 놓칠 수 있으므로 위험성이 크다. 혈액검사 예정 시 반드시 비오틴 복용 여부와 용량을 의료진과 검사실에 알려야 한다.",
+      "cautionSource": "FDA 2017 안전 경고"
+    },
+    {
+      "id": "biotin-lab-test-interference-recovery-time-variable",
+      "claim": "비오틴이 검사 결과에서 제거되는 시간은 복용량, 신장 기능, 검사 장비에 따라 다르며, 일반적으로 중단 후 24~72시간이 필요하다고 알려져 있으나 개인차가 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA Safety Alert 2017; Clinical Laboratory Reference Guidelines",
+      "source_url": "https://www.fda.gov/media/127915/download",
+      "checked": "2026-08-04",
+      "scope": {
+        "brand": "비오틴",
+        "category": "검사 준비",
+        "line": "중단 시간(개인차)",
+        "years": "검사 전",
+        "region": "글로벌"
+      },
+      "caution": "★일률적인 중단 시간을 정하기 어려우므로, 중요한 검사(특히 심장 검사) 예정 시 의료진과 검사실에 미리 상담해야 한다. 검사실마다 가이드라인이 다를 수 있다.",
+      "cautionSource": "FDA 2017 경고 + 검사실 프로토콜"
+    }
+  ]
+}
