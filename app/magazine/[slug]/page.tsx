@@ -23,13 +23,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const a = await fetchMagazineBySlug(slug);
   if (!a) return { title: "오늘의딜 매거진" };
-  const desc = (a.excerpt || a.subtitle || `${a.title} — 오늘의딜 매거진의 중립 쇼핑 가이드.`).slice(0, 155);
+  // 서브 미디어 글은 자기 브랜드로 표기 — 잠자리연구소·알약연구소 글이 "오늘의딜 매거진"으로 나가지 않게.
+  const brand = a.field === "수면·침구" ? "잠자리연구소" : a.field === "건강기능식품" ? "알약연구소" : "오늘의딜 매거진";
+  const blurb = brand === "잠자리연구소" ? "근거로 검증하는 수면 미디어" : brand === "알약연구소" ? "임상으로 검증하는 영양 미디어" : "중립 쇼핑 가이드";
+  const desc = (a.excerpt || a.subtitle || `${a.title} — ${brand}의 ${blurb}.`).slice(0, 155);
   return {
-    title: `${a.title} | 오늘의딜 매거진`,
+    title: `${a.title} | ${brand}`,
     description: desc,
     ...(a.tags?.length ? { keywords: a.tags } : {}),
     alternates: { canonical: `${SITE}/magazine/${slug}` },
-    openGraph: { title: a.title, description: desc, url: `${SITE}/magazine/${slug}`, type: "article", images: [...(a.image?.url ? [{ url: a.image.url, alt: a.title }] : []), { url: `${SITE}/magazine/opengraph-image`, width: 1200, height: 630, alt: "오늘의딜 매거진" }] },
+    openGraph: { title: a.title, description: desc, url: `${SITE}/magazine/${slug}`, type: "article", siteName: brand, images: [...(a.image?.url ? [{ url: a.image.url, alt: a.title }] : []), { url: `${SITE}/magazine/opengraph-image`, width: 1200, height: 630, alt: brand }] },
   };
 }
 
