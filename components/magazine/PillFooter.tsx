@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BrandFamily from "@/components/BrandFamily";
 
 // 알약연구소 푸터 — 2톤: 위 다크 밴드(방향 강조) + 아래 라이트 정보/링크. 제휴고지 없음(딜 페이지 전용).
 const mono = "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif";
@@ -27,11 +28,12 @@ export default function PillFooter() {
           </div>
           <nav style={{ display: "flex", gap: 18, fontSize: 12, flexWrap: "wrap", height: "fit-content" }}>
             <Link href="/pill" style={{ color: "var(--text-body)", textDecoration: "none" }}>알약연구소</Link>
-            <a href="https://goodsleep.todaydeals.co.kr/" style={{ color: "var(--text-body)", textDecoration: "none" }}>잠자리연구소</a>
-            <a href="https://www.todaydeals.co.kr" style={{ color: "var(--text-body)", textDecoration: "none" }}>오늘의딜</a>
             <Link href="/terms" style={{ color: "var(--text-body)", textDecoration: "none" }}>이용약관</Link>
             <Link href="/privacy" style={{ color: "var(--text-body)", textDecoration: "none" }}>개인정보처리방침</Link>
           </nav>
+        </div>
+        <div className="mz-wrap" style={{ paddingBottom: 34 }}>
+          <BrandFamily current="pill" />
         </div>
       </div>
     </footer>

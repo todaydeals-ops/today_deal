@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BrandFamily from "./BrandFamily";
 
 // 오늘의딜 미디어(매거진·홈) 푸터 — 2톤: 다크 밴드(방향) + 라이트 정보/링크. 제휴 마케팅 고지 없음.
 // 제휴 고지가 필요한 실제 딜페이지(/deals·/deal·/recommended·/board 등)는 Footer 사용.
@@ -25,12 +26,14 @@ export default function MediaFooter() {
           </div>
           <nav style={{ display: "flex", gap: 18, fontSize: 12, flexWrap: "wrap", height: "fit-content" }}>
             <Link href="/" style={{ color: "var(--text-body)", textDecoration: "none" }}>매거진</Link>
-            <a href="https://goodsleep.todaydeals.co.kr" style={{ color: "var(--text-body)", textDecoration: "none" }}>잠자리연구소</a>
             <Link href="/terms" style={{ color: "var(--text-body)", textDecoration: "none" }}>이용약관</Link>
             <Link href="/privacy" style={{ color: "var(--text-body)", textDecoration: "none" }}>개인정보처리방침</Link>
             <Link href="/partnership" style={{ color: "var(--text-body)", textDecoration: "none" }}>제휴문의</Link>
             <Link href="/admin" style={{ color: "var(--text-muted)", opacity: 0.5, textDecoration: "none" }}>admin</Link>
           </nav>
+        </div>
+        <div className="wrap" style={{ paddingBottom: 34 }}>
+          <BrandFamily current="deal" />
         </div>
       </div>
     </footer>

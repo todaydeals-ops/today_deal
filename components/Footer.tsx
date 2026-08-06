@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
+import BrandFamily from "./BrandFamily";
 
 // 제휴 고지 (법적 의무 — 기획안 5.3 / DESIGN_SYSTEM §8). 상시 노출.
 export default function Footer() {
@@ -24,6 +25,9 @@ export default function Footer() {
           <Link href="/privacy">개인정보처리방침</Link>
           <Link href="/partnership">제휴문의</Link>
           <Link href="/admin" className={styles.admin} aria-label="관리자">admin</Link>
+        </div>
+        <div style={{ marginTop: 22 }}>
+          <BrandFamily current="deal" />
         </div>
       </div>
     </footer>
