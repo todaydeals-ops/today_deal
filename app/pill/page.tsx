@@ -85,7 +85,7 @@ export default async function PillHome({ searchParams }: { searchParams: Promise
                       <span style={{ fontFamily: mono, fontSize: 12, color: "#9a9286" }}>알약연구소 · {fmtDate(featured.createdAt)}{featured.readMin ? ` · 읽기 ${featured.readMin}분` : ""}</span>
                     </div>
                   </div>
-                  <FeaturedImageSlot cornerKey={featured.corner} image={featured.image} title={featured.title} />
+                  <FeaturedImageSlot cornerKey={featured.corner} image={featured.image} title={featured.title} label={pillCategoryOf(featured.slug)?.label ?? "영양"} brand="알약연구소" />
                 </Link>
               </section>
             )}

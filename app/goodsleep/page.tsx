@@ -89,7 +89,7 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
                       <span style={{ fontFamily: mono, fontSize: 12, color: "#9a9286" }}>잠자리연구소 · {fmtDate(featured.createdAt)}{featured.readMin ? ` · 읽기 ${featured.readMin}분` : ""}</span>
                     </div>
                   </div>
-                  <FeaturedImageSlot cornerKey={featured.corner} image={featured.image} title={featured.title} />
+                  <FeaturedImageSlot cornerKey={featured.corner} image={featured.image} title={featured.title} label={sleepCategoryOf(featured.slug)?.label ?? "수면"} brand="잠자리연구소" />
                 </Link>
               </section>
             )}

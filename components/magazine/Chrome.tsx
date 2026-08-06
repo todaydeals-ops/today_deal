@@ -151,21 +151,24 @@ export function FieldPill({ field }: { field?: string }) {
 }
 
 /* 피처드 이미지 슬롯 — 대표 이미지 있으면 사진, 없으면 타이포 플레이스홀더 */
-export function FeaturedImageSlot({ cornerKey, image, title }: { cornerKey: string; image?: { url: string; credit?: string; source?: string }; title?: string }) {
+// label·brand를 넘기면 그 값으로 표기한다(잠자리·알약 등 서브 미디어에서 오늘의딜 코너명이 새지 않게).
+export function FeaturedImageSlot({ cornerKey, image, title, label, brand }: { cornerKey: string; image?: { url: string; credit?: string; source?: string }; title?: string; label?: string; brand?: string }) {
   const c = cornerOf(cornerKey);
-  const wm = c.nameEn.split(" ")[0];
+  const secName = label ?? c.name;
+  const brandName = brand ?? "오늘의딜 매거진";
+  const wm = (label ? label.slice(0, 2) : c.nameEn.split(" ")[0]);
   if (image?.url) {
     return (
       <div style={{ aspectRatio: "4 / 3", position: "relative", overflow: "hidden", background: "#ece5d9", border: "1px solid #d6cdbe" }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={image.url} alt={title ? `${title} — ${c.name} | 오늘의딜 매거진` : `${c.name} — 오늘의딜 매거진`} loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+        <img src={image.url} alt={title ? `${title}, ${secName} | ${brandName}` : `${secName} | ${brandName}`} loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
       </div>
     );
   }
   return (
     <div style={{ aspectRatio: "4 / 3", background: "linear-gradient(140deg,#ece5d9,#ddd4c5)", border: "1px solid #d6cdbe", display: "flex", alignItems: "flex-end", padding: 22, position: "relative", overflow: "hidden" }}>
       <span style={{ position: "absolute", top: 16, right: 20, fontFamily: mono, fontSize: 56, fontWeight: 700, color: "rgba(22,20,15,.07)", lineHeight: 0.8, letterSpacing: "-1px" }}>{wm}</span>
-      <span style={{ fontFamily: mono, fontSize: 11, color: "#a89e8d" }}>{c.name} · 오늘의딜 매거진</span>
+      <span style={{ fontFamily: mono, fontSize: 11, color: "#a89e8d" }}>{secName} · {brandName}</span>
     </div>
   );
 }

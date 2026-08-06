@@ -49,8 +49,13 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   const subCat = sleepCat ?? pillCat;
   // 알약연구소는 서브도메인이 아직 미연결일 수 있어 상대경로(/pill)로 — 어느 호스트에서든 동작.
   const subHome = isPill ? "/pill" : "https://goodsleep.todaydeals.co.kr";
+  const subHomeAbs = isPill ? "https://pill.todaydeals.co.kr" : "https://goodsleep.todaydeals.co.kr";
   const subName = isPill ? "알약연구소" : "잠자리연구소";
   const accent = isSub ? (subCat?.color ?? "#3f5a54") : c.color; // 강조색: 서브는 분류색, 그 외 코너색
+  // 구조화 데이터·표기용 브랜드 — 서브 미디어 글에 오늘의딜 코너명(팩트체크 등)이 새지 않게.
+  const brandName = isSub ? subName : "오늘의딜 매거진";
+  const brandUrl = isSub ? subHomeAbs : SITE;
+  const sectionName = isSub ? (subCat?.label ?? (isPill ? "영양" : "수면")) : c.name;
   const related = await fetchRelatedMagazine(a, 4);
 
   // 대표 이미지를 본문 소제목 사이에 배치 — 짧은 글 1장, 긴 글(본문 2,800자+) 2장
@@ -92,12 +97,12 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
     ...(a.image?.url ? { image: [a.image.url] } : {}),
     datePublished: a.createdAt,
     dateModified: a.createdAt,
-    author: { "@type": "Organization", name: "오늘의딜 편집국" },
-    publisher: { "@type": "Organization", name: "오늘의딜", url: SITE },
+    author: { "@type": "Organization", name: `${brandName} 편집국` },
+    publisher: { "@type": "Organization", name: brandName, url: brandUrl },
     mainEntityOfPage: `${SITE}/magazine/${slug}`,
-    articleSection: c.name,
+    articleSection: sectionName,
     inLanguage: "ko-KR",
-    keywords: [...(a.tags ?? []), a.field, c.name, a.title].filter(Boolean).join(", "),
+    keywords: [...(a.tags ?? []), a.field, sectionName, a.title].filter(Boolean).join(", "),
     ...(a.tags?.length ? { about: a.tags.slice(0, 12).map((t) => ({ "@type": "Thing", name: t })) } : {}),
     isAccessibleForFree: true,
     ...(related.length ? { relatedLink: related.map((r) => `${SITE}/magazine/${r.slug}`) } : {}),
@@ -107,8 +112,8 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "매거진", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: c.name, item: `${SITE}/?corner=${a.corner}` },
+      { "@type": "ListItem", position: 1, name: brandName, item: brandUrl },
+      { "@type": "ListItem", position: 2, name: sectionName, item: isSub ? `${brandUrl}/?cat=${subCat?.key ?? ""}` : `${SITE}/?corner=${a.corner}` },
       { "@type": "ListItem", position: 3, name: a.title, item: `${SITE}/magazine/${slug}` },
     ],
   };
