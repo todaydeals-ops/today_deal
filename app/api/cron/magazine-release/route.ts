@@ -92,6 +92,7 @@ export async function GET(request: Request): Promise<Response> {
   const SUB_SCHEDULE: { field: string; days: number[] }[] = [
     { field: "수면·침구", days: [2, 5] },   // 잠자리연구소 화·금
     { field: "건강기능식품", days: [1, 4] }, // 알약연구소 월·목
+    { field: "뷰티·성분", days: [3, 6] },    // 성분연구소 수·토
   ];
   const subReleased: string[] = [];
   for (const s of SUB_SCHEDULE) {

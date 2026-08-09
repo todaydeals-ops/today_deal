@@ -31,7 +31,7 @@ export const BEAUTY_CATEGORIES: BeautyCategory[] = [
   },
   {
     key: "hair", label: "두피·모발", en: "HAIR", color: "#6a5a4a", angle: "탈모와 두피 관리",
-    slugs: ["minoxidil-hairloss"],
+    slugs: ["minoxidil-hairloss","hairloss-shampoo-ingredient","scalp-care-dandruff"],
   },
   {
     key: "body", label: "다이어트·바디", en: "BODY", color: "#9a5a6a", angle: "체중감량과 바디케어",

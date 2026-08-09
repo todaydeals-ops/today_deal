@@ -182,6 +182,8 @@ const KW_OVERRIDE = {
   "minoxidil-hairloss": "hair loss comb scalp",
   "garcinia-weight": "weight scale measuring tape",
   "cla-body-fat": "fitness diet meal healthy",
+  "hairloss-shampoo-ingredient": "shampoo bottle bathroom hair",
+  "scalp-care-dandruff": "scalp hair brush closeup",
   // ── batch19 30편(30일치 비축) ──
   "nas-selfcheck": "network attached storage server",
   "tv-streaming-app-selfcheck": "smart tv streaming app",
