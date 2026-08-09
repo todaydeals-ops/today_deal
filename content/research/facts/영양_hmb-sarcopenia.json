@@ -1,0 +1,143 @@
+{
+  "topic": "HMB(베타-하이드록시-베타-메틸부티레이트): 근감소증·고령자의 근거 수준",
+  "brand": "알약연구소",
+  "article": "hmb-sarcopenia — HMB, 근감소증 노인에게 근거가 있나",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "hmb-mechanism",
+      "claim": "HMB(β-hydroxy-β-methylbutyrate)는 필수아미노산 류신의 대사산물로, 근단백질 분해 경로(ubiquitin-proteasome)를 억제하고 단백질 합성 신호(mTOR)를 보조하는 것으로 제안된다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "HMB 기본 생화학 + 리드 mechanism",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {"대상": "근육 단백질 대사", "분류": "기전 가설", "시기": "투여 후 세포 수준", "지역": "근 세포(myocyte)"},
+      "caution": "기전은 체외·동물 모델 근거이며, 인체에서의 임상적 효과는 상황별로 다름. 단순히 '근육 증강'으로 일반화하면 안 됨.",
+      "cautionSource": "기초 영양학 + 임상 근거 분리"
+    },
+    {
+      "id": "hmb-bed-rest-preservation",
+      "claim": "침상 안정(bed rest) 중 HMB 3g/day는 건강한 고령자(60~76세)의 제지방량(lean body mass) 감소를 유의하게 억제한다(2013년 RCT, n=24, 10일).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Clinical Nutrition (2013) RCT",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0261561413000757",
+      "checked": "2026-08-10",
+      "scope": {"대상": "건강한 고령자(60~76세)", "분류": "근량 보존", "시기": "10일 침상 안정", "지역": "전신 제지방량"},
+      "caution": "표본이 매우 작고(n=24, 여 20/남 4), 단기(10일)이며 기능 개선(strength, mobility)은 평가되지 않음. 침상 안정이라는 극한 상황 특수.",
+      "cautionSource": "Clinical Nutrition 원문 limitations"
+    },
+    {
+      "id": "hmb-hip-fracture-combined-supplement",
+      "claim": "고관절 골절 후 재활 중 HMB가 포함된 복합 영양 보충(단백질·마이크로영양소 등)은 근량·영양 지표 유지를 개선한다(2017년 RCT, n=107, 65세 이상, Maturitas).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Maturitas (2017) RCT — Malafarina et al. HYPERPROT-GER Study",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/28539168/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "고관절 골절 환자(65세 이상)", "분류": "근량 유지·영양상태", "시기": "재활 기간", "지역": "전신 근육"},
+      "caution": "HMB 단독 효과와 단백질·다른 영양소의 효과를 분리하지 않았음. 복합 개입이므로 HMB만의 기여도는 불명확.",
+      "cautionSource": "Maturitas 연구 설계 제한점"
+    },
+    {
+      "id": "hmb-sarcopenia-older-women-limited",
+      "claim": "저항운동 없이 HMB 보충만으로는 저근량 고령 여성(65~79세)의 근량·근력·보행 등 대부분의 기능을 유의하게 개선하지 못한다. 운동이 주 효과이고 HMB 추가는 보행속도에만 미소 개선을 보였다(2021년 AJCN, n=156).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "The American Journal of Clinical Nutrition (2021) RCT",
+      "source_url": "https://ajcn.nutrition.org/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "근량 감소 고령 여성(65~79세)", "분류": "운동 병행 필요성", "시기": "12~16주 중재", "지역": "근력·신체기능"},
+      "caution": "운동 없는 상황과 운동과 병행한 상황의 분석이 필수. 단독 보충으로는 기능 회복이 제한적임.",
+      "cautionSource": "AJCN 2021 RCT 결론"
+    },
+    {
+      "id": "hmb-not-substitute-for-exercise",
+      "claim": "HMB 보충은 저항운동·충분한 단백질·에너지 섭취를 대체할 수 없다. 고령자 근감소증의 1차 중재는 운동이고, HMB는 보조 수단일 뿐이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "2021 AJCN RCT 결과 + 리드 분석",
+      "source_url": "https://ajcn.nutrition.org/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "근감소증 고령자", "분류": "치료 우선순위", "시기": "임상진료", "지역": "근육·기능"},
+      "caution": "보충제만 복용하고 운동을 하지 않으면 효과가 제한적임. 의료진과 함께 운동 계획을 수립해야 함.",
+      "cautionSource": "AJCN + 근감소증 임상진료지침"
+    },
+    {
+      "id": "hmb-long-term-safety-limited",
+      "claim": "HMB의 단기(8~12주) 연구에서는 대체로 내약성이 양호하나 장기 안전성 자료가 제한적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Clinical Nutrition (2013) + 리드 안전성",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0261561413000757",
+      "checked": "2026-08-10",
+      "scope": {"대상": "HMB 보충제 사용자", "분류": "장기 안전성", "시기": ">3개월", "지역": "전신"},
+      "caution": "장기 복용 시 신장·간 기능, 전해질 균형, 상호작용 등을 모니터링해야 함.",
+      "cautionSource": "임상 증거 부족 + 근거기반 의학 원칙"
+    },
+    {
+      "id": "hmb-kidney-liver-caution",
+      "claim": "신장질환 또는 간질환이 있는 경우 HMB 보충 전 의료진 상담이 필수. 단백질 대사산물이므로 신장 부담 가능성.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "리드 안전성 + 기본 약리학",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {"대상": "신장·간질환자", "분류": "금기·주의", "시기": "보충제 시작 전", "지역": "신장·간 기능"},
+      "caution": "신장 기능 검사(GFR, 크레아티닌) 후 의료진 판단 필수. 중증 신장질환(eGFR <30)이면 개별 상담 필수.",
+      "cautionSource": "기본 약리학 + 임상진료지침"
+    },
+    {
+      "id": "hmb-complex-product-component-consideration",
+      "claim": "HMB는 보통 단백질·비타민D·기타 미량영양소가 함유된 복합 제품으로 판매되므로, HMB만의 효과가 아니라 전체 성분의 효과·부작용을 고려해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "리드 분석 + Maturitas 2017 연구 설계",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/28539168/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "복합 영양 보충제 사용자", "분류": "성분 고려", "시기": "제품 선택 시", "지역": "건강기능식품"},
+      "caution": "제품 라벨에서 단백질 함량, 당분(당뇨 주의), 알레르기 원료, 약물 상호작용 가능한 성분을 반드시 확인.",
+      "cautionSource": "제품 규격 + 라벨 읽기"
+    },
+    {
+      "id": "hmb-unexplained-weight-loss-warning",
+      "claim": "원인 불명의 체중 감소, 근력 저하, 기능 악화가 있으면 HMB 보충보다 의료진의 질환 평가가 우선이다. 근감소증이 아닌 다른 질환의 신호일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "리드 안전성 + 임상진료 기본 원칙",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {"대상": "체중 감소·근력 저하 환자", "분류": "감별 진단 신호", "시기": "증상 발생 시", "지역": "임상 평가"},
+      "caution": "악성종양, 갑상선질환, 만성질환, 약물 부작용 등이 근감소증과 유사한 증상을 보일 수 있음. 의료진 진찰 필수.",
+      "cautionSource": "임상진료지침 + 감별진단 원칙"
+    },
+    {
+      "id": "hmb-ad-claim-exercise-free-false",
+      "claim": "광고 과장: '운동 없이도 근육이 늘어난다', '근감소증을 예방하고 치료한다' — 거짓. HMB 보충만으로는 건강한 고령자의 근력·기능 개선이 일관되지 않고, 운동·단백질이 1차이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "2021 AJCN RCT + 리드 분석",
+      "source_url": "https://ajcn.nutrition.org/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "마케팅 표현", "분류": "과학적 오류", "시기": "현재 광고", "지역": "한국 건강기능식품"},
+      "caution": "근감소증은 의료 진단 용어이므로 건강기능식품이 '치료'를 표현하면 안 됨. '운동 시 보조'라는 수준만 허용 가능.",
+      "cautionSource": "식약처 표시·광고 기준"
+    },
+    {
+      "id": "hmb-korea-regulation-status",
+      "claim": "HMB 또는 HMB칼슘의 식약처 건강기능식품 기능성 인정 여부와 허용 문구는 원료·제품별로 확인 필요. 근감소증 예방·치료는 질병 관련 표현이므로 일반적 건강기능식품 기능성과 구분.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "GPT 리드 기술 + 식약처 기준",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {"대상": "국내 건강기능식품", "분류": "규제·표시", "시기": "현재", "지역": "한국"},
+      "caution": "제품 라벨의 기능성 표시, 개별인정 번호, 일일 섭취량을 확인. 의료용어(근감소증 치료, 낙상 예방)가 있으면 규제 위반 가능성 있음.",
+      "cautionSource": "식약처 건강기능식품 기준 및 규격"
+    }
+  ]
+}

@@ -14,10 +14,28 @@ export async function pillOnSubdomain(): Promise<boolean> {
 }
 
 export function pillHref(onSub: boolean, cat?: string, page?: number): string {
+  return subHref(onSub, "/pill", cat, page);
+}
+
+// 성분연구소(beauty.todaydeals.co.kr)
+export async function beautyOnSubdomain(): Promise<boolean> {
+  try {
+    const h = await headers();
+    return (h.get("host") || "").startsWith("beauty.");
+  } catch {
+    return false;
+  }
+}
+
+export function beautyHref(onSub: boolean, cat?: string, page?: number): string {
+  return subHref(onSub, "/beauty", cat, page);
+}
+
+function subHref(onSub: boolean, base: string, cat?: string, page?: number): string {
   const q = new URLSearchParams();
   if (cat) q.set("cat", cat);
   if (page && page > 1) q.set("page", String(page));
   const s = q.toString();
-  const path = onSub ? "/" : "/pill";
+  const path = onSub ? "/" : base;
   return s ? `${path}?${s}` : path;
 }

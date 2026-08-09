@@ -43,5 +43,6 @@ a {
 }
 
 /* 브랜드 패밀리 블록 — 푸터 공통(오늘의딜·잠자리·알약 상호 연결) */
-.brand-family { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-@media (max-width: 760px) { .brand-family { grid-template-columns: 1fr; gap: 16px; } }
+.brand-family { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+@media (max-width: 900px) { .brand-family { grid-template-columns: repeat(2, 1fr); gap: 18px; } }
+@media (max-width: 560px) { .brand-family { grid-template-columns: 1fr; gap: 16px; } }

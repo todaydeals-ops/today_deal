@@ -2,12 +2,13 @@
 // 모든 푸터(딜·매거진·잠자리·알약)에 공통으로 넣어 사이트끼리 유기적으로 연결한다.
 // 알약연구소는 서브도메인(pill.)이 아직 연결되지 않았을 수 있어 www 경로를 쓴다. 연결되면 URL만 바꾸면 된다.
 
-type BrandKey = "deal" | "sleep" | "pill";
+type BrandKey = "deal" | "sleep" | "pill" | "beauty";
 
 const BRANDS: { key: BrandKey; name: string; desc: string; url: string; color: string }[] = [
   { key: "deal", name: "오늘의딜", desc: "광고가 끝나는 곳에서 시작하는 기준", url: "https://www.todaydeals.co.kr", color: "#ff5a3c" },
   { key: "sleep", name: "잠자리연구소", desc: "논문으로 검증하는 잠", url: "https://goodsleep.todaydeals.co.kr", color: "#3f5a54" },
-  { key: "pill", name: "알약연구소", desc: "임상으로 따지는 영양제", url: "https://www.todaydeals.co.kr/pill", color: "#8a6a3a" },
+  { key: "pill", name: "알약연구소", desc: "임상으로 따지는 영양제", url: "https://pill.todaydeals.co.kr", color: "#8a6a3a" },
+  { key: "beauty", name: "성분연구소", desc: "광고를 지우면 남는 성분", url: "https://www.todaydeals.co.kr/beauty", color: "#8a5a6a" },
 ];
 
 export default function BrandFamily({ current, dark = false }: { current: BrandKey; dark?: boolean }) {

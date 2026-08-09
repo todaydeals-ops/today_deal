@@ -39,9 +39,9 @@
 .mz-corner-index {
   border-top: 1px solid rgba(22, 20, 15, 0.16);
   border-bottom: 1px solid rgba(22, 20, 15, 0.08);
-  display: grid; grid-template-columns: repeat(6, 1fr);
+  display: grid; grid-template-columns: repeat(7, 1fr);
 }
-.mz-corner-index .corner-cell { padding: 20px 15px; }
+.mz-corner-index .corner-cell { padding: 20px 12px; }
 .corner-cell { padding: 20px 18px; cursor: pointer; border-right: 1px solid #ddd5c8; transition: background 0.18s ease; text-decoration: none; color: inherit; }
 .corner-cell:last-child { border-right: none; }
 .corner-cell:hover { background: #16140f; }
@@ -146,5 +146,6 @@
 }
 
 /* 브랜드 패밀리 블록 — 푸터 공통(오늘의딜·잠자리·알약 상호 연결) */
-.brand-family { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-@media (max-width: 760px) { .brand-family { grid-template-columns: 1fr; gap: 16px; } }
+.brand-family { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+@media (max-width: 900px) { .brand-family { grid-template-columns: repeat(2, 1fr); gap: 18px; } }
+@media (max-width: 560px) { .brand-family { grid-template-columns: 1fr; gap: 16px; } }

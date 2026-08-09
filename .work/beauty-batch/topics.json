@@ -1,0 +1,29 @@
+{
+ "batch": "beauty-1",
+ "goal": "성분연구소(뷰티·성분) 신설 — 잠자리·알약과 동일 규격(2,300~3,000자). 목표 규모는 추후 확정.",
+ "rules": "field=\"뷰티·성분\" 고정. corner는 필수필드라 성격에 맞춰 factcheck/smartguide/trendlab 지정. ★오늘의딜 기존 뷰티 팩트체크(탈모샴푸·선크림SPF·미백주름화장품·LED마스크·천연유기농화장품·이온드라이어·먹는콜라겐)와 중복 회피 필수 — magazine-topics.mjs --check 로 반드시 대조할 것.",
+ "format": "성분 완전분해 표준형(기전 → 임상이 증명한 범위 → 광고 과장 → 제형·농도 → 안 써도 되는 사람 → 결정트리 → FAQ)",
+ "topics": [
+  {
+   "slug": "carnitine-fat-burn",
+   "cat": "body",
+   "corner": "factcheck",
+   "title": "L카르니틴, 지방을 태운다는 주장의 실제",
+   "angle": "지방산 운반 기전 vs 체중 감량 결과"
+  },
+  {
+   "slug": "garcinia-weight",
+   "cat": "body",
+   "corner": "factcheck",
+   "title": "가르시니아, 효과와 간 손상 보고 사이",
+   "angle": "HCA 기전·이상사례·중단 기준"
+  },
+  {
+   "slug": "cla-body-fat",
+   "cat": "body",
+   "corner": "factcheck",
+   "title": "CLA, 체지방 감소 광고의 근거 수준",
+   "angle": "메타분석 효과크기·인슐린 저항 우려"
+  }
+ ]
+}

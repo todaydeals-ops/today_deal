@@ -1,0 +1,119 @@
+{
+  "topic": "콜라겐 펩타이드 vs 비변성 제2형 콜라겐: 용도별 차이와 임상 근거",
+  "brand": "알약연구소",
+  "article": "collagen-joint-vs-skin — 관절용 콜라겐과 피부용 콜라겐은 다른가",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "collagen-skin-mechanism",
+      "claim": "피부용 가수분해 콜라겐 펩타이드(저분자, 보통 2~3 kDa)는 소장에서 아미노산·디펩타이드·트리펩타이드로 흡수된 뒤 섬유아세포의 콜라겐·히알루론산 생성 신호를 자극하는 것으로 제안된다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "MDPI Nutrients (2023) Meta-Analysis 기술, 리드 mechanism",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10180699/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "피부 섬유아세포", "분류": "기전 가설", "시기": "투여 후 흡수·신호", "지역": "피부 진피층"},
+      "caution": "기전은 가설 수준이며, 실제 흡수된 펩타이드가 피부에 특이적으로 축적되는지 확인 어려움. 임상 효과는 증명되었으나 작용 기전의 세부사항은 미해명.",
+      "cautionSource": "Nutrients 메타분석의 제한점 기술"
+    },
+    {
+      "id": "collagen-skin-efficacy-meta",
+      "claim": "경구 가수분해 콜라겐은 피부 수분도와 탄력을 위약 대비 유의하게 개선한다(2023년 메타분석 26개 RCT, n=1,721).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MDPI Nutrients (2023) Systematic Review and Meta-Analysis",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10180699/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "성인 여성·남성", "분류": "피부 수분도·탄력", "시기": "8~12주", "지역": "피부 전신"},
+      "caution": "제품 간 차이 크고 산업계 지원 연구 비율 높음. 피부 노화 예방이나 주름 구조 개선은 증명 안 됨.",
+      "cautionSource": "Nutrients 논문 subgroup analysis & limitations"
+    },
+    {
+      "id": "collagen-uc2-mechanism",
+      "claim": "비변성(undenatured) 제2형 콜라겐(UC-II)은 저분자 펩타이드 공급원이 아니라 고용량의 원형 3중 나선 단백질을 소량(40mg/day 등) 투여해 장 면역계에 경구 면역관용(oral tolerance) 신호를 일으키는 것이 핵심 기전이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Lugo et al. (2016) Nutrition Journal RCT + 리드 mechanism",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4731911/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "관절 면역 환경", "분류": "기전", "시기": "투여 후 장 면역반응", "지역": "장 GALT·관절"},
+      "caution": "저분자 펩타이드와는 제조, 용량, 기전이 완전히 다름. UC-II 40mg과 콜라겐 펩타이드 5~10g은 같은 제품이 아님.",
+      "cautionSource": "Lugo et al. 연구 설계 및 기술"
+    },
+    {
+      "id": "collagen-uc2-knee-efficacy",
+      "claim": "비변성 제2형 콜라겐(UC-II 40mg/day)은 무릎 골관절염 환자의 WOMAC·LFI·VAS 점수를 글루코사민+콘드로이틴 및 위약 대비 유의하게 개선한다(2016년 RCT, n=191, 180일).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Lugo et al. (2016) Nutrition Journal Multicenter RCT",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4731911/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "무릎 골관절염 성인", "분류": "관절 증상·기능", "시기": "6개월", "지역": "무릎 활액·연골"},
+      "caution": "소규모 단기 연구이며, 연골 구조 보존이나 질환 진행 지연은 평가 안 함. 재현성 연구 필요.",
+      "cautionSource": "Lugo et al. limitations 섹션"
+    },
+    {
+      "id": "collagen-derivative-meta-2024",
+      "claim": "2024년 메타분석(35개 RCT, n=3,165, 1991~2023년)은 콜라겐 유도체가 골관절염 통증과 기능을 소~중간 효과 크기로 개선한다는 강한 근거를 제시한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Osteoarthritis and Cartilage (2024) Trial Sequential Meta-Analysis",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S1063458424000049",
+      "checked": "2026-08-10",
+      "scope": {"대상": "골관절염 환자", "분류": "통증·기능 지표", "시기": "8~24주 중재", "지역": "관절(주로 무릎)"},
+      "caution": "이질적 연구(UC-II, 저분자 펩타이드, 다른 형태)를 통합한 분석이므로 용도별 효과 크기는 다를 수 있음. 원료 유형 구분 필수.",
+      "cautionSource": "메타분석 subgroup analysis"
+    },
+    {
+      "id": "collagen-ad-claim-direct-use-false",
+      "claim": "광고 과장: '먹은 콜라겐이 피부 콜라겐으로 바로 바뀐다' — 거짓. 흡수된 펩타이드는 재조립되지 않고 신호 자극으로 작용할 뿐.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Nutrients 메타분석 기술부, 기본 생화학",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10180699/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "마케팅 표현", "분류": "생화학적 오류", "시기": "현재 광고", "지역": "한국 건강기능식품"},
+      "caution": "원료 종류, 분자량, 기능성 표시 범위를 제품별로 확인해야 정확한 정보 전달 가능.",
+      "cautionSource": "기초 생화학 + 식약처 기능성 인정 범위"
+    },
+    {
+      "id": "collagen-uc2-vs-hydrolyzed-not-interchangeable",
+      "claim": "비변성 제2형 콜라겐(UC-II)과 저분자 가수분해 콜라겐 펩타이드는 제조(끓이지 않음 vs 가수분해), 용량(40mg vs 5~10g), 기전(면역관용 vs 신호자극)이 다르므로 상호대체 불가.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Lugo et al. (2016) 대비 Nutrients (2023) 기술 비교",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4731911/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "원료 유형", "분류": "제조·용량·기전", "시기": "제품 선택 시", "지역": "건강기능식품 규격"},
+      "caution": "같은 '콜라겐' 이름이라도 라벨에 'UC-II', '저분자', '비변성', '가수분해' 등의 표시를 확인해야 함.",
+      "cautionSource": "Lugo et al. + Nutrients 원문 비교"
+    },
+    {
+      "id": "collagen-allergy-source-dependent",
+      "claim": "콜라겐의 안전성은 원료 출처에 따라 다르다: 어류·소·돼지·닭 등 동물 유래 원료 알레르기 가능. 비변성 제2형 콜라겐은 주로 닭 연골 유래이므로 닭 알레르기 확인 필수.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Lugo et al. (2016) + 리드 안전성",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4731911/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "알레르기 위험군", "분류": "안전성", "시기": "투여 전·후", "지역": "소화기·면역"},
+      "caution": "동물 알레르기 또는 식품 불내증이 있으면 원료 확인 후 의료진 상담 필수.",
+      "cautionSource": "Lugo et al. + 일반적 알레르기 주의사항"
+    },
+    {
+      "id": "collagen-korea-regulation-separate",
+      "claim": "한국 식약처에서 저분자콜라겐펩타이드와 비변성 제2형 콜라겐은 원료별로 개별인정 여부, 기능성 문구, 일일섭취량이 다를 수 있다. 단순 식품용 콜라겐과 건강기능식품 기능성 원료를 구분해야 함.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "GPT 리드 기술 + 식약처 건강기능식품 기준",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {"대상": "국내 건강기능식품", "분류": "규제·표시", "시기": "현재", "지역": "한국"},
+      "caution": "제품 라벨의 기능성 표시, 원료명, 인정 번호를 반드시 확인하고, 의료진 상담이 필요한 경우 즉시 문의.",
+      "cautionSource": "식약처 건강기능식품 개별인정 평가 기준"
+    }
+  ]
+}

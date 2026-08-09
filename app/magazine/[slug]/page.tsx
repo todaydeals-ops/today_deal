@@ -11,6 +11,9 @@ import SleepFooter from "@/components/magazine/SleepFooter";
 import PillHeader from "@/components/magazine/PillHeader";
 import PillFooter from "@/components/magazine/PillFooter";
 import { pillCategoryOf } from "@/lib/magazine/pillCategories";
+import BeautyHeader from "@/components/magazine/BeautyHeader";
+import BeautyFooter from "@/components/magazine/BeautyFooter";
+import { beautyCategoryOf } from "@/lib/magazine/beautyCategories";
 import { FieldPill } from "@/components/magazine/Chrome";
 
 export const revalidate = 3600; // 1시간 캐시 — 매거진 아티클은 실시간 불필요
@@ -24,8 +27,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const a = await fetchMagazineBySlug(slug);
   if (!a) return { title: "오늘의딜 매거진" };
   // 서브 미디어 글은 자기 브랜드로 표기 — 잠자리연구소·알약연구소 글이 "오늘의딜 매거진"으로 나가지 않게.
-  const brand = a.field === "수면·침구" ? "잠자리연구소" : a.field === "건강기능식품" ? "알약연구소" : "오늘의딜 매거진";
-  const blurb = brand === "잠자리연구소" ? "근거로 검증하는 수면 미디어" : brand === "알약연구소" ? "임상으로 검증하는 영양 미디어" : "중립 쇼핑 가이드";
+  const brand = a.field === "수면·침구" ? "잠자리연구소" : a.field === "건강기능식품" ? "알약연구소" : a.field === "뷰티·성분" ? "성분연구소" : "오늘의딜 매거진";
+  const blurb = brand === "잠자리연구소" ? "근거로 검증하는 수면 미디어" : brand === "알약연구소" ? "임상으로 검증하는 영양 미디어" : brand === "성분연구소" ? "임상으로 검증하는 뷰티 성분 미디어" : "중립 쇼핑 가이드";
   const desc = (a.excerpt || a.subtitle || `${a.title} — ${brand}의 ${blurb}.`).slice(0, 155);
   return {
     title: `${a.title} | ${brand}`,
@@ -43,14 +46,16 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   const c = cornerOf(a.corner);
   const isSleep = a.field === "수면·침구"; // 잠자리연구소 소속 글 → 잠자리연구소 정체성으로 렌더
   const isPill = a.field === "건강기능식품"; // 알약연구소 소속 글
-  const isSub = isSleep || isPill; // 서브 미디어 공통 처리(헤더·푸터·배지·관련글)
+  const isBeauty = a.field === "뷰티·성분"; // 성분연구소 소속 글
+  const isSub = isSleep || isPill || isBeauty; // 서브 미디어 공통 처리(헤더·푸터·배지·관련글)
   const sleepCat = isSleep ? sleepCategoryOf(a.slug) : undefined; // 잠자리연구소 고유 6분류
   const pillCat = isPill ? pillCategoryOf(a.slug) : undefined; // 알약연구소 고유 6분류
-  const subCat = sleepCat ?? pillCat;
+  const beautyCat = isBeauty ? beautyCategoryOf(a.slug) : undefined; // 성분연구소 고유 6분류
+  const subCat = sleepCat ?? pillCat ?? beautyCat;
   // 알약연구소는 서브도메인이 아직 미연결일 수 있어 상대경로(/pill)로 — 어느 호스트에서든 동작.
-  const subHome = isPill ? "/pill" : "https://goodsleep.todaydeals.co.kr";
-  const subHomeAbs = isPill ? "https://pill.todaydeals.co.kr" : "https://goodsleep.todaydeals.co.kr";
-  const subName = isPill ? "알약연구소" : "잠자리연구소";
+  const subHome = isPill ? "/pill" : isBeauty ? "/beauty" : "https://goodsleep.todaydeals.co.kr";
+  const subHomeAbs = isPill ? "https://pill.todaydeals.co.kr" : isBeauty ? "https://beauty.todaydeals.co.kr" : "https://goodsleep.todaydeals.co.kr";
+  const subName = isPill ? "알약연구소" : isBeauty ? "성분연구소" : "잠자리연구소";
   const accent = isSub ? (subCat?.color ?? "#3f5a54") : c.color; // 강조색: 서브는 분류색, 그 외 코너색
   // 구조화 데이터·표기용 브랜드 — 서브 미디어 글에 오늘의딜 코너명(팩트체크 등)이 새지 않게.
   const brandName = isSub ? subName : "오늘의딜 매거진";
@@ -127,7 +132,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
 
   return (
     <>
-      {isSleep ? <SleepHeader /> : isPill ? <PillHeader /> : <Header />}
+      {isSleep ? <SleepHeader /> : isPill ? <PillHeader /> : isBeauty ? <BeautyHeader /> : <Header />}
       <div className="mz-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
@@ -143,7 +148,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
             )}
             <span style={{ opacity: 0.5 }}>›</span>
             {isSub ? (
-              <a href={isPill ? `/pill?cat=${subCat?.key ?? ""}` : `${subHome}/?cat=${subCat?.key ?? ""}`} style={{ color: subCat?.color ?? "#3f5a54", fontWeight: 600, textDecoration: "none" }}>{subCat?.label ?? (isPill ? "영양" : "수면")}</a>
+              <a href={isPill ? `/pill?cat=${subCat?.key ?? ""}` : isBeauty ? `/beauty?cat=${subCat?.key ?? ""}` : `${subHome}/?cat=${subCat?.key ?? ""}`} style={{ color: subCat?.color ?? "#3f5a54", fontWeight: 600, textDecoration: "none" }}>{subCat?.label ?? (isPill ? "영양" : "수면")}</a>
             ) : (
               <Link href={`/?corner=${a.corner}`} className="ul-sweep" style={{ color: c.color, fontWeight: 600, textDecoration: "none" }}>{c.name}</Link>
             )}
@@ -287,7 +292,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
             </div>
             <div className="mz-rel-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 14 }}>
               {related.map((r) => {
-                const rsc = isSleep ? sleepCategoryOf(r.slug) : isPill ? pillCategoryOf(r.slug) : undefined;
+                const rsc = isSleep ? sleepCategoryOf(r.slug) : isPill ? pillCategoryOf(r.slug) : isBeauty ? beautyCategoryOf(r.slug) : undefined;
                 const rc = cornerOf(r.corner);
                 const rColor = rsc?.color ?? rc.color;
                 return (
@@ -308,7 +313,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
       </div>
 
       </div>
-      {isSleep ? <SleepFooter /> : isPill ? <PillFooter /> : <MediaFooter />}
+      {isSleep ? <SleepFooter /> : isPill ? <PillFooter /> : isBeauty ? <BeautyFooter /> : <MediaFooter />}
     </>
   );
 }

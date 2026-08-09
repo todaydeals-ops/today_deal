@@ -80,6 +80,16 @@ export function CornerIndex() {
           <div className="cc-en" style={{ fontFamily: mono, fontSize: 9.5, letterSpacing: "1px", color: "#8a6a3a", marginTop: 2 }}>PILL LAB &#8599;</div>
           <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>임상으로 따지는 영양제</div>
         </a>
+        {/* 07 — 성분연구소(뷰티·다이어트 성분 검증, 서브도메인). 새창. */}
+        <a className="corner-cell" href="https://www.todaydeals.co.kr/beauty" target="_blank" rel="noopener">
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            <span className="cc-n" style={{ fontFamily: mono, fontSize: 11, fontWeight: 600, color: "#9a9286" }}>07</span>
+            <span style={{ width: 9, height: 9, borderRadius: 9999, background: "#8a5a6a" }} />
+          </div>
+          <div className="cc-t" style={{ fontWeight: 800, fontSize: 16, marginTop: 14 }}>성분연구소</div>
+          <div className="cc-en" style={{ fontFamily: mono, fontSize: 9.5, letterSpacing: "1px", color: "#8a5a6a", marginTop: 2 }}>INGREDIENT LAB &#8599;</div>
+          <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>광고를 지우면 남는 성분</div>
+        </a>
       </div>
     </section>
   );

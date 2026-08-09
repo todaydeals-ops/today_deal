@@ -1,0 +1,107 @@
+{
+  "topic": "경구 히알루론산(Hyaluronic acid)의 기전과 임상 근거",
+  "brand": "알약연구소",
+  "article": "hyaluronic-acid-oral — 먹는 히알루론산, 관절과 피부에 도달할까",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "hya-absorption-challenge",
+      "claim": "히알루론산은 분자량이 크기(5~10 kDa가 아닌 경우 수십 kDa)때문에 경구 섭취 후 그대로 흡수되지 않고 소화 과정에서 저분자 조각으로 분해된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Gao et al. (2023) Skin Research and Technology",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10661223/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "성인", "분류": "흡수 기전", "시기": "경구 투여 후", "지역": "인체 생리"},
+      "caution": "분자량 크기는 제품마다 다르고, 흡수 개선 제형(저분자화, 나노화, 아세틸화)이 있으나 임상 효과 증명은 별개.",
+      "cautionSource": "리드 분석 및 기전 검토"
+    },
+    {
+      "id": "hya-skin-hydration-efficacy",
+      "claim": "경구 히알루론산 섭취는 피부 수분도를 2~8주 후 유의하게 개선한다(RCT 129명 여성, young & elderly groups).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Gao et al. (2023) Skin Research and Technology RCT",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10661223/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "성인 여성(20~60대)", "분류": "피부 수분도", "시기": "2~8주", "지역": "피부 진피층"},
+      "caution": "단일 시험이고 제품·용량 의존성이 있으며, 피부 타입별 반응 차이 가능성.",
+      "cautionSource": "Gao et al. 원문 기술"
+    },
+    {
+      "id": "hya-joint-symptom-modest",
+      "claim": "경구 히알루론산(200mg/day, 12개월)은 무릎 골관절염 증상 개선을 보였으나 표본이 작고(n=60) 운동요법 병용 효과의 분리가 명확하지 않다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Tashiro et al. (2012) The Scientific World Journal RCT",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3512263/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "무릎 골관절염 성인(Kellgren-Lawrence grade 2-3)", "분류": "관절 증상", "시기": "12개월 중재", "지역": "무릎 활액"},
+      "caution": "효과가 있더라도 연골 재생이나 질환 진행 지연이 아닌 증상 개선 수준이며, 표본 규모가 작아 일반화 주의.",
+      "cautionSource": "Tashiro et al. 연구 설계 및 결론"
+    },
+    {
+      "id": "hya-systemic-review-2024",
+      "claim": "경구 히알루론산의 골관절염 및 요통에 대한 2024년 체계적 문헌고찰(n=597, 11개 논문)은 통증과 기능 개선 가능성을 시사하나 소규모·이질적 연구가 많아 확정적 근거 수준이 중간이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Carvalho & Davidson (2024) Mediterranean Journal of Rheumatology Systematic Review",
+      "source_url": "https://www.mjrheum.org/dec-2024/showreferences792/nv/newsid792/606/showfulltext792/1",
+      "checked": "2026-08-10",
+      "scope": {"대상": "골관절염·요통 환자", "분류": "임상 효과 메타평가", "시기": "1966~2024년 문헌", "지역": "국제 학술"},
+      "caution": "용량 편차 크고(30~300mg/day) 제품 규격 차이가 있으며, 연골 구조 변화나 질환 진행 지연은 평가하지 않음.",
+      "cautionSource": "Carvalho & Davidson 체계적 문헌고찰 방법론"
+    },
+    {
+      "id": "hya-ad-claim-cartilage-regen-false",
+      "claim": "광고 과장: '연골을 재생한다', '연골이 닳은 부분을 채운다' — 근거 없음. 임상 연구는 증상 개선만 평가했으며 구조적 연골 재생 입증 없음.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "GPT 리드 분석 + Tashiro/Carvalho 원문 검토",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3512263/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "마케팅 표현", "분류": "과학적 근거 수준", "시기": "현재 광고", "지역": "한국 건강기능식품"},
+      "caution": "건강기능식품의 기능성 표시는 식약처 승인 범위 내여야 하며, 의약품 치료 효과는 표현 금지.",
+      "cautionSource": "식약처 건강기능식품 표시·광고 기준(참고: 의료용어 금지)"
+    },
+    {
+      "id": "hya-safety-gi-allergy",
+      "claim": "경구 히알루론산의 일반적 안전성은 양호하나 위장 불편(복부팽만감, 설사 가능), 동물 유래(닭벼슬, 어류) 원료 알레르기 주의 필요.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Gao et al. (2023), Tashiro et al. (2012)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10661223/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "일반 성인", "분류": "안전성", "시기": "단기 복용(8~12주)", "지역": "위장관"},
+      "caution": "임신·수유 중 장기 고용량 섭취 자료 부족. 암 환자에서 종양 관련 히알루론산 신호의 임상적 의미 미명확하므로 의료진 상담 필수.",
+      "cautionSource": "리드 원문 안전성 섹션"
+    },
+    {
+      "id": "hya-korea-regulation-skin-only",
+      "claim": "한국 식약처에서 히알루론산은 고시형 또는 개별인정형 원료로 '피부 보습' 기능성만 표시 가능. 관절 기능성은 동일하게 적용되지 않을 수 있으므로 제품별 확인 필수.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "GPT 리드 기술 + 식약처 건강기능식품 기준(참고)",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {"대상": "국내 건강기능식품", "분류": "규제·표시", "시기": "현재", "지역": "한국"},
+      "caution": "동일 성분이라도 원료 규격, 투여량, 임상 근거에 따라 기능성 인정 여부가 달라질 수 있음.",
+      "cautionSource": "식약처 건강기능식품 개별인정 평가 기준"
+    },
+    {
+      "id": "hya-vs-injection",
+      "claim": "경구 히알루론산은 장에서 대부분 분해되므로 관절 직접 주입(intra-articular injection)과는 작용 기전이 전혀 다르다. 경구 형태는 간접 신호 전달이 가설일 뿐 직접 관절 내 히알루론산 공급이 아님.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기전 고찰(Gao et al., 리드 mechanism)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10661223/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "치료 경로 비교", "분류": "투여 경로별 기전", "시기": "투여 후 생리", "지역": "인체 약동학"},
+      "caution": "주사제는 의약품 또는 의료기기이고 경구 보충제는 식품으로 분류가 다름. 효과 기대치 설정 필요.",
+      "cautionSource": "의약품 vs 건강기능식품 분류 구분"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
  "batch": "pill-92",
  "goal": "알약연구소를 잠자리연구소와 동일 규모(발행 63 + 리저브 30 = 93편)로. 파일럿 lutein 1편 발행됨 → 92편 추가.",
- "rules": "field=건강기능식품 고정. corner는 필수필드라 성격에 맞춰 factcheck/smartguide/trendlab 지정. 오늘의딜 기존 건기식 팩트체크(오메가3·프로바이오틱스·콜라겐·마그네슘비타민D·비타민C·단백질·다이어트보조·숙취해소·고함량흡수·유통기한)는 중복 회피 위해 제외.",
+ "rules": "field=건강기능식품 고정. corner는 필수필드라 성격에 맞춰 factcheck/smartguide/trendlab 지정. 오늘의딜 기존 건기식 팩트체크(오메가3·프로바이오틱스·콜라겐·마그네슘비타민D·비타민C·단백질·다이어트보조·숙취해소·고함량흡수·유통기한)는 중복 회피 위해 제외. ★체중감량 성분(가르시니아·CLA·L카르니틴)은 성분연구소(뷰티·성분)로 이관됨 — 여기서 다루지 않는다. 근육·수행력(크레아틴·BCAA·HMB)만 알약 소관.",
  "format": "성분 완전분해 표준형(기전 → 임상이 증명한 범위 → 광고 과장 → 형태·용량 → 안 먹어도 되는 사람 → 결정트리 → FAQ). 2,300~3,000자.",
  "topics": [
   {
@@ -570,27 +570,6 @@
    "corner": "factcheck",
    "title": "BCAA와 EAA, 돈값을 하는 쪽은",
    "angle": "필수아미노산 균형·단백질 충분 시 무용"
-  },
-  {
-   "slug": "carnitine-fat-burn",
-   "cat": "vital",
-   "corner": "factcheck",
-   "title": "L카르니틴, 지방을 태운다는 주장의 실제",
-   "angle": "지방산 운반 기전 vs 체중 감량 결과"
-  },
-  {
-   "slug": "garcinia-weight",
-   "cat": "vital",
-   "corner": "factcheck",
-   "title": "가르시니아, 효과와 간 손상 보고 사이",
-   "angle": "HCA 기전·이상사례·중단 기준"
-  },
-  {
-   "slug": "cla-body-fat",
-   "cat": "vital",
-   "corner": "factcheck",
-   "title": "CLA, 체지방 감소 광고의 근거 수준",
-   "angle": "메타분석 효과크기·인슐린 저항 우려"
   },
   {
    "slug": "lactoferrin-trend",

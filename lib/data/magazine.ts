@@ -24,7 +24,7 @@ export interface MagazineArticle {
 
 // 서브 미디어 field — 각자 전용 서브도메인에서만 노출하고 메인 매거진에선 제외(격리).
 // 잠자리연구소=수면·침구(goodsleep), 알약연구소=건강기능식품(pill).
-export const SUB_MEDIA_FIELDS = ["수면·침구", "건강기능식품"];
+export const SUB_MEDIA_FIELDS = ["수면·침구", "건강기능식품", "뷰티·성분"];
 
 interface Row {
   id: string;

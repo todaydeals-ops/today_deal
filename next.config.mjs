@@ -21,6 +21,11 @@ const nextConfig = {
           has: [{ type: "host", value: "pill.todaydeals.co.kr" }],
           destination: "/pill",
         },
+        {
+          source: "/",
+          has: [{ type: "host", value: "beauty.todaydeals.co.kr" }],
+          destination: "/beauty",
+        },
       ],
     };
   },
