@@ -22,7 +22,7 @@ export default function SleepFooter() {
       <div style={{ borderTop: "1px solid var(--border-soft)" }}>
         <div className="mz-wrap" style={{ paddingTop: 24, paddingBottom: 34, display: "flex", justifyContent: "space-between", gap: 20, flexWrap: "wrap" }}>
           <div style={{ fontFamily: mono, fontSize: 12, color: "var(--text-muted)", lineHeight: 1.7 }}>
-            잠자리연구소 · 오늘의딜 매거진<br />
+            잠자리연구소<br />
             문의 hello@todaydeals.co.kr<br />
             © 2026 잠자리연구소 · 오늘의딜
           </div>
