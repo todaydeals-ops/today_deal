@@ -24,8 +24,28 @@ function bodyText(a) {
 }
 const cnt = (s) => strip(s).replace(/\s+/g, "").length;
 
-const files = process.argv.slice(2);
+// --fix-sources: sources[].label의 em-dash를 가운뎃점으로 자동 치환(본문은 손대지 않는다).
+// 집필 에이전트가 라벨에만 em-dash를 남기는 일이 잦아 왕복을 줄이려는 장치.
+const FIX = process.argv.includes("--fix-sources");
+const files = process.argv.slice(2).filter((x) => !x.startsWith("--"));
 if (!files.length) { console.error("원고 JSON 경로 필요"); process.exit(1); }
+
+if (FIX) {
+  let fixed = 0;
+  for (const f of files) {
+    if (!fs.existsSync(f)) continue;
+    let j; try { j = JSON.parse(fs.readFileSync(f, "utf8")); } catch { continue; }
+    const arts0 = j.articles || j;
+    if (!Array.isArray(arts0)) continue; // 원고 파일이 아님(계획서 등) — 건너뜀
+    for (const a of arts0) {
+      for (const s of (a.sources || [])) {
+        if (s.label && s.label.includes("—")) { s.label = s.label.replace(/\s*—\s*/g, " · "); fixed++; }
+      }
+    }
+    fs.writeFileSync(f, JSON.stringify(j, null, 1));
+  }
+  if (fixed) console.log(`[--fix-sources] sources 라벨 em-dash ${fixed}건 치환\n`);
+}
 
 let total = 0, pass = 0;
 const failures = [];
@@ -37,6 +57,7 @@ for (const f of files) {
   try { j = JSON.parse(fs.readFileSync(f, "utf8")); }
   catch (e) { console.error(`✗ JSON 깨짐: ${f} — ${e.message}`); process.exitCode = 1; continue; }
   const arts = j.articles || j;
+  if (!Array.isArray(arts)) continue; // 원고 파일이 아님(주제 계획서 등) — 조용히 건너뜀
   console.log(`\n${f.split(/[\\/]/).pop()} — ${arts.length}편`);
   console.log("slug".padEnd(34), "본문  h2 FAQ sum callout em  판정");
   for (const a of arts) {
