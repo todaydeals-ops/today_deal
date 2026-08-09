@@ -475,21 +475,21 @@
     },
     {
       "slug": "supplement-stacking-limit",
-      "cat": "shield",
+      "cat": "basics",
       "corner": "smartguide",
       "title": "영양제 몇 개까지 같이 먹어도 될까",
       "angle": "중복 성분·상한 초과·조합 원칙"
     },
     {
       "slug": "supplement-timing-guide",
-      "cat": "shield",
+      "cat": "basics",
       "corner": "smartguide",
       "title": "영양제 복용 시간, 아침 저녁 식후 정리",
       "angle": "지용성·수용성·흡수 방해 조합"
     },
     {
       "slug": "supplement-drug-interaction",
-      "cat": "shield",
+      "cat": "basics",
       "corner": "smartguide",
       "title": "먹는 약이 있다면 반드시 확인할 상호작용",
       "angle": "와파린·갑상선약·항생제 등 대표 사례"
@@ -503,21 +503,21 @@
     },
     {
       "slug": "supplement-label-reading",
-      "cat": "shield",
+      "cat": "basics",
       "corner": "smartguide",
       "title": "영양제 라벨 읽는 법, 원료량과 함량의 차이",
       "angle": "추출물 표기 함정·부형제·비율 표시"
     },
     {
       "slug": "functional-vs-general-food",
-      "cat": "shield",
+      "cat": "basics",
       "corner": "factcheck",
       "title": "건강기능식품과 건강식품, 마크 하나 차이",
       "angle": "인증 마크·표시 규정·일반식품 광고 위반"
     },
     {
       "slug": "individual-approval-ingredient",
-      "cat": "shield",
+      "cat": "basics",
       "corner": "smartguide",
       "title": "개별인정형 원료, 고시형과 무엇이 다를까",
       "angle": "고시형 vs 개별인정형·독점기간"
@@ -538,7 +538,7 @@
     },
     {
       "slug": "supplement-clinical-reading",
-      "cat": "shield",
+      "cat": "basics",
       "corner": "smartguide",
       "title": "영양제 광고 속 연구, 믿을지 판단하는 법",
       "angle": "RCT·메타분석 위계·상대위험 함정·후원 편향"

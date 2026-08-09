@@ -9,7 +9,8 @@ export default async function PillCategoryIndex() {
   const onSub = await pillOnSubdomain();
   return (
     <section className="mz-wrap" style={{ paddingTop: 34 }}>
-      <div className="sleep-cat-index">
+      {/* 알약연구소만 7분류(성분 6 + 기초·가이드 1) — 그리드 열 수를 변수로 넘긴다 */}
+      <div className="sleep-cat-index" style={{ "--cat-cols": 7, "--cat-cols-md": 4 } as React.CSSProperties}>
         {PILL_CATEGORIES.map((c, i) => (
           <a key={c.key} className="corner-cell" href={pillHref(onSub, c.key)}>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>

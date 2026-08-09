@@ -52,14 +52,18 @@
 .sleep-cat-index {
   border-top: 1px solid rgba(22, 20, 15, 0.16);
   border-bottom: 1px solid rgba(22, 20, 15, 0.08);
-  display: grid; grid-template-columns: repeat(6, 1fr);
+  /* 기본 6분류. 분류 수가 다른 미디어는 --cat-cols / --cat-cols-md 를 인라인으로 넘긴다. */
+  display: grid; grid-template-columns: repeat(var(--cat-cols, 6), 1fr);
 }
 .sleep-cat-index .corner-cell { padding: 20px 15px; }
 .sleep-cat-index .corner-cell:last-child { border-right: none; }
 @media (max-width: 1100px) {
-  .sleep-cat-index { grid-template-columns: repeat(3, 1fr); }
+  .sleep-cat-index { grid-template-columns: repeat(var(--cat-cols-md, 3), 1fr); }
   .sleep-cat-index .corner-cell { border-bottom: 1px solid #ddd5c8; }
   .sleep-cat-index .corner-cell:nth-child(3n) { border-right: none; }
+  /* 7분류(알약)는 태블릿에서 4+3으로 떨어져 3n 규칙이 어긋난다 — 4n 기준으로 덮어쓴다. */
+  .sleep-cat-index[style*="--cat-cols-md: 4"] .corner-cell:nth-child(3n) { border-right: 1px solid #ddd5c8; }
+  .sleep-cat-index[style*="--cat-cols-md: 4"] .corner-cell:nth-child(4n) { border-right: none; }
 }
 @media (max-width: 640px) {
   .sleep-cat-index { grid-template-columns: repeat(2, 1fr); }

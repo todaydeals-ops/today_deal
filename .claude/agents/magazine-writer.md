@@ -1,7 +1,7 @@
 ---
 name: magazine-writer
 description: 오늘의딜 매거진 집필 전담. 리서처가 남긴 facts JSON을 근거로 원고(blocks JSON)를 쓴다. 웹 검색은 하지 않는다.
-tools: Read, Write, Glob, Grep
+tools: Read, Write, Glob, Grep, Bash
 model: sonnet
 ---
 
@@ -151,3 +151,14 @@ model: sonnet
 
 최종 텍스트가 반환값이다. **원고 전문을 붙여넣지 말고** 다음만 보고한다:
 저장 경로 / 본문 글자수 / 인용한 팩트 id / 근거 부족으로 못 쓴 항목 / 순차 대안 톤을 적용한 지점.
+
+# 자기 검수 — 글자수를 손으로 세지 마라
+
+저장을 마치면 **반드시 Bash로** 검수 스크립트를 돌려 통과를 확인하고, 실패 항목만 고쳐 재실행한다.
+
+```
+node scripts/magazine-verify.mjs <저장한 파일 경로>
+```
+
+본문 글자수는 **추정하지 말고 이 스크립트 값을 그대로** 보고한다(집필자는 통상 30~40% 과대추정한다).
+Grep·Read로 글자를 세려 하지 마라 — 토큰만 태우고 값도 틀린다. 스크립트가 정본이다.
