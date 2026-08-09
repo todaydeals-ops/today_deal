@@ -1,8 +1,9 @@
 // 잠자리연구소 6분류 인덱스 — 오늘의딜 CornerIndex와 같은 카드 틀(번호·점·제목·영문·설명).
+import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
 import { SLEEP_CATEGORIES } from "@/lib/magazine/sleepCategories";
 
 const mono = "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif";
-const GS = "https://goodsleep.todaydeals.co.kr";
+const GS = SUB_ORIGIN.sleep;
 
 export default function SleepCategoryIndex() {
   return (

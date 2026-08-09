@@ -7,7 +7,7 @@ import BeautyCategoryIndex from "@/components/magazine/BeautyCategoryIndex";
 import Pagination from "@/components/magazine/Pagination";
 import BeautyFooter from "@/components/magazine/BeautyFooter";
 import { beautyCategoryByKey, beautyCategoryOf } from "@/lib/magazine/beautyCategories";
-import { beautyOnSubdomain, beautyHref } from "@/lib/magazine/subdomain";
+import { beautyHref } from "@/lib/magazine/subdomain";
 import "../magazine/magazine.css";
 
 // 성분연구소 — 오늘의딜 파생 뷰티·다이어트 성분 검증 미디어. field="뷰티·성분" + 고유 6분류.
@@ -34,8 +34,7 @@ export default async function BeautyHome({ searchParams }: { searchParams: Promi
   const rows = page === 1 ? pageList.slice(1) : pageList;
   const showIndex = !cat && page === 1;
 
-  const onSub = await beautyOnSubdomain();
-  const pageHref = (p: number) => beautyHref(onSub, cat?.key, p);
+  const pageHref = (p: number) => beautyHref(cat?.key, p);
 
   return (
     <>

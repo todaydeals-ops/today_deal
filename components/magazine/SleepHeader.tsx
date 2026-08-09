@@ -1,8 +1,9 @@
 // 잠자리연구소 전용 헤더 — 오늘의딜 헤더와 동일한 높이(62px)·정렬. 로고 Pretendard.
+import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
 // 서브도메인(goodsleep.todaydeals.co.kr) 루트가 /goodsleep로 rewrite되므로, 링크는 루트 절대 URL로.
 import { SLEEP_CATEGORIES } from "@/lib/magazine/sleepCategories";
 
-const GS = "https://goodsleep.todaydeals.co.kr";
+const GS = SUB_ORIGIN.sleep;
 
 export default function SleepHeader() {
   return (

@@ -1,4 +1,5 @@
 "use client";
+import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
 
 // 상호연결 토스트 — 메인(오늘의딜) ↔ 잠자리연구소 교차 유도.
 // goodsleep에선 오늘의딜을, 그 외에선 잠자리연구소를 비침투적으로 안내. 세션당 1회, 6초 후, /magazine·/admin 숨김.
@@ -27,7 +28,7 @@ export default function MagazineHookPopup() {
     setPromo(
       onSleep
         ? { label: "오늘의딜", hook: "가전·리빙·디지털, 살 때 뭘 봐야 할까. 광고 없는 구매 기준.", href: "https://www.todaydeals.co.kr", color: "#d85a30" }
-        : { label: "잠자리연구소", hook: "잠 못 자는 진짜 이유, 논문 근거로 확인해보세요.", href: "https://goodsleep.todaydeals.co.kr", color: "#3f5a54" }
+        : { label: "잠자리연구소", hook: "잠 못 자는 진짜 이유, 논문 근거로 확인해보세요.", href: SUB_ORIGIN.sleep, color: "#3f5a54" }
     );
     const timer = setTimeout(() => {
       setVisible(true);

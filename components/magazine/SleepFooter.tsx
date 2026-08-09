@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
 import BrandFamily from "@/components/BrandFamily";
 
 // 잠자리연구소 푸터 — 2톤: 위 다크 밴드(방향 강조) + 아래 라이트 정보/링크(기존 배경). 제휴고지 없음.
@@ -27,7 +28,7 @@ export default function SleepFooter() {
             © 2026 잠자리연구소 · 오늘의딜
           </div>
           <nav style={{ display: "flex", gap: 18, fontSize: 12, flexWrap: "wrap", height: "fit-content" }}>
-            <a href="https://goodsleep.todaydeals.co.kr/" style={{ color: "var(--text-body)", textDecoration: "none" }}>잠자리연구소</a>
+            <a href={SUB_ORIGIN.sleep} style={{ color: "var(--text-body)", textDecoration: "none" }}>잠자리연구소</a>
             <Link href="/terms" style={{ color: "var(--text-body)", textDecoration: "none" }}>이용약관</Link>
             <Link href="/privacy" style={{ color: "var(--text-body)", textDecoration: "none" }}>개인정보처리방침</Link>
           </nav>

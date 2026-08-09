@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { fetchMagazineBySlug, fetchRelatedMagazine } from "@/lib/data/magazine";
@@ -53,8 +54,8 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   const beautyCat = isBeauty ? beautyCategoryOf(a.slug) : undefined; // 성분연구소 고유 6분류
   const subCat = sleepCat ?? pillCat ?? beautyCat;
   // 알약연구소는 서브도메인이 아직 미연결일 수 있어 상대경로(/pill)로 — 어느 호스트에서든 동작.
-  const subHome = isPill ? "/pill" : isBeauty ? "/beauty" : "https://goodsleep.todaydeals.co.kr";
-  const subHomeAbs = isPill ? "https://pill.todaydeals.co.kr" : isBeauty ? "https://beauty.todaydeals.co.kr" : "https://goodsleep.todaydeals.co.kr";
+  const subHome = isPill ? SUB_ORIGIN.pill : isBeauty ? SUB_ORIGIN.beauty : SUB_ORIGIN.sleep;
+  const subHomeAbs = subHome;
   const subName = isPill ? "알약연구소" : isBeauty ? "성분연구소" : "잠자리연구소";
   const accent = isSub ? (subCat?.color ?? "#3f5a54") : c.color; // 강조색: 서브는 분류색, 그 외 코너색
   // 구조화 데이터·표기용 브랜드 — 서브 미디어 글에 오늘의딜 코너명(팩트체크 등)이 새지 않게.

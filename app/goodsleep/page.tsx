@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
 import Link from "next/link";
 import { fetchMagazineList } from "@/lib/data/magazine";
 import { FeaturedImageSlot } from "@/components/magazine/Chrome";
@@ -38,7 +39,7 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
     if (cat) q.set("cat", cat.key);
     if (p > 1) q.set("page", String(p));
     const s = q.toString();
-    return s ? `https://goodsleep.todaydeals.co.kr/?${s}` : "https://goodsleep.todaydeals.co.kr/";
+    return s ? `${SUB_ORIGIN.sleep}/?${s}` : `${SUB_ORIGIN.sleep}/`;
   };
 
   return (

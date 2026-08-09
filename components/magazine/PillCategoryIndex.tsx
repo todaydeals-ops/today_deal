@@ -1,18 +1,17 @@
 // 알약연구소 6분류 인덱스 — 잠자리연구소 SleepCategoryIndex와 같은 카드 틀(번호·점·제목·영문·설명).
-// ★링크는 호스트 감지로 생성(서브도메인 미연결 상태에서도 동작).
+// ★링크는 SUB_ORIGIN 절대 URL로 통일.
 import { PILL_CATEGORIES } from "@/lib/magazine/pillCategories";
-import { pillOnSubdomain, pillHref } from "@/lib/magazine/subdomain";
+import { pillHref } from "@/lib/magazine/subdomain";
 
 const mono = "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif";
 
 export default async function PillCategoryIndex() {
-  const onSub = await pillOnSubdomain();
   return (
     <section className="mz-wrap" style={{ paddingTop: 34 }}>
       {/* 알약연구소만 7분류(성분 6 + 기초·가이드 1) — 그리드 열 수를 변수로 넘긴다 */}
       <div className="sleep-cat-index" style={{ "--cat-cols": 7, "--cat-cols-md": 4 } as React.CSSProperties}>
         {PILL_CATEGORIES.map((c, i) => (
-          <a key={c.key} className="corner-cell" href={pillHref(onSub, c.key)}>
+          <a key={c.key} className="corner-cell" href={pillHref(c.key)}>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
               <span className="cc-n" style={{ fontFamily: mono, fontSize: 11, fontWeight: 600, color: "#9a9286" }}>{String(i + 1).padStart(2, "0")}</span>
               <span style={{ width: 9, height: 9, borderRadius: 9999, background: c.color }} />

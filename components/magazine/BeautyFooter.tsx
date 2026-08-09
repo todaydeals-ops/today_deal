@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
 import BrandFamily from "@/components/BrandFamily";
 
 // 성분연구소 푸터 — 2톤: 위 다크 밴드(방향 강조) + 아래 라이트 정보/링크. 제휴고지 없음(딜 페이지 전용).
@@ -27,7 +28,7 @@ export default function BeautyFooter() {
             © 2026 성분연구소 · 오늘의딜
           </div>
           <nav style={{ display: "flex", gap: 18, fontSize: 12, flexWrap: "wrap", height: "fit-content" }}>
-            <Link href="/beauty" style={{ color: "var(--text-body)", textDecoration: "none" }}>성분연구소</Link>
+            <a href={SUB_ORIGIN.beauty} style={{ color: "var(--text-body)", textDecoration: "none" }}>성분연구소</a>
             <Link href="/terms" style={{ color: "var(--text-body)", textDecoration: "none" }}>이용약관</Link>
             <Link href="/privacy" style={{ color: "var(--text-body)", textDecoration: "none" }}>개인정보처리방침</Link>
           </nav>
