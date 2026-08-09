@@ -160,6 +160,10 @@ const KW_OVERRIDE = {
   "evening-primrose-gla": "evening primrose yellow flower",
   "turmeric-curcumin": "turmeric powder root spice",
   "muscle-cramp-magnesium": "leg calf stretch night",
+  "hyaluronic-acid-oral": "water glass hydration skin",
+  "collagen-joint-vs-skin": "collagen powder supplement scoop",
+  "osteoporosis-supplement": "senior woman walking bone health",
+  "hmb-sarcopenia": "elderly man exercise resistance band",
   // ── batch19 30편(30일치 비축) ──
   "nas-selfcheck": "network attached storage server",
   "tv-streaming-app-selfcheck": "smart tv streaming app",
