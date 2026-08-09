@@ -1,0 +1,150 @@
+{
+  "topic": "두피 케어·비듬: 케토코나졸·징크피리치온·피루옥톤올아민의 효능 비교",
+  "brand": "성분연구소",
+  "article": "성분연구소 비듬·두피 기획글",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "meta-analysis-systematic-review-highest-evidence-hierarchy",
+    "small-sample-size-low-statistical-power"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "malassezia-yeast-dandruff-seborrheic-dermatitis-pathogenesis",
+      "claim": "비듬과 지루성 피부염의 주요 원인은 Malassezia 효모균(M. globosa, M. restricta)의 이상 증식이며, 이에 대한 항진균 성분이 치료의 핵심이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: A multicenter randomized trial of ketoconazole 2% and zinc pyrithione 1% shampoos",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/12476017/",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "비듬·지루성 피부염 환자",
+        "classification": "병태생리",
+        "timing": "전 기간",
+        "region": "글로벌"
+      },
+      "caution": "Malassezia는 피부 상재균이므로, 단순 존재가 아니라 '이상 증식'이 문제라는 점을 구분할 것.",
+      "cautionSource": "피부미생물학 기초"
+    },
+    {
+      "id": "ketoconazole-2percent-vs-zinc-pyrithione-1percent-dandruff-efficacy",
+      "claim": "다중센터 RCT(331명, 심한 지루성 두피염/비듬)에서 4주 치료 후 케토코나졸 2% 샴푸의 임상 반응률은 73%였던 반면, 징크피리치온 1% 샴푸는 67%로, 케토코나졸이 통계적으로 유의하게 우월했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Skin Pharmacology and Physiology, PubMed: A multicenter randomized trial",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/12476017/",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "심한 비듬·지루성 피부염 환자",
+        "classification": "임상 효과",
+        "timing": "4주 사용 후",
+        "region": "글로벌"
+      },
+      "caution": "경증 비듬의 경우 차이가 더 작을 수 있음. 또한 6% 차이(73% vs 67%)가 임상적으로 의미 있는 수준인지는 논쟁 가능.",
+      "cautionSource": "RCT 결과"
+    },
+    {
+      "id": "ketoconazole-shampoo-relapse-rate-posttreatment",
+      "claim": "케토코나졸 2% 샴푸 중단 후 추적 기간(2~26주)에서 재발률은 31%였으나, 위약 샴푸의 재발률은 48%로, 케토코나졸의 지속적 효과를 시사한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Skin Pharmacology and Physiology, PubMed: A multicenter randomized trial",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/12476017/",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "비듬·지루성 피부염 환자",
+        "classification": "임상 효과",
+        "timing": "중단 후 2~26주",
+        "region": "글로벌"
+      },
+      "caution": "재발률 차이(48% vs 31%)는 통계적 의미가 있지만, 31%의 재발률은 케토코나졸도 장기 완치가 아님을 보여준다.",
+      "cautionSource": "RCT 결과"
+    },
+    {
+      "id": "ketoconazole-shampoo-meta-analysis-64-trials-8189-patients",
+      "claim": "케토코나졸 샴푸의 지루성 피부염·비듬 치료 효과를 조사한 64개 임상시험(총 8189명)의 메타분석에서, 케토코나졸은 징크피리치온·피루옥톤올아민 등 다른 항진균 성분에 비해 일관되게 우월한 효능과 안전성을 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JEADV Clinical Practice 2025: Role of Topical Ketoconazole in Therapeutic Hair Care Beyond Seborrhoeic Dermatitis and Dandruff",
+      "source_url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jvc2.70026",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "비듬·지루성 피부염 환자",
+        "classification": "임상 근거",
+        "timing": "전 기간",
+        "region": "글로벌"
+      },
+      "caution": "메타분석이라도 이질성(heterogeneity)이 있을 수 있음. 공용 근거에서 '메타분석의 한계' 참조.",
+      "cautionSource": "JEADV meta-analysis, Cochrane 핸드북"
+    },
+    {
+      "id": "zinc-pyrithione-limited-evidence-hair-loss-reduction",
+      "claim": "징크피리치온은 비듬 치료에는 효과가 있으나, 탈모 감소에 대한 임상 근거는 제한적이거나 혼합적이며, PubMed에서 확인되는 동료심사 논문이 부족하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Nudging hair shedding by antidandruff shampoos, JEADV Clinical Practice 2025",
+      "source_url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jvc2.70026",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "탈모 완화 찾는 소비자",
+        "classification": "임상 근거",
+        "timing": "전 기간",
+        "region": "글로벌"
+      },
+      "caution": "징크피리치온을 '탈모 치료 성분'으로 표기하는 제품이 많으나, 근거는 비듬 효과에만 한정된다는 점을 강조할 것.",
+      "cautionSource": "PubMed 임상 근거 부족"
+    },
+    {
+      "id": "pyroctone-olamine-vs-ketoconazole-hair-diameter-comparison",
+      "claim": "150명 남성을 대상으로 한 6개월 RCT(주 2~3회 사용)에서, 케토코나졸 1% 사용군은 모발 직경 5.4% 증가를, 피루옥톤올아민 1% 사용군은 7.7% 증가를 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "International Journal of Cosmetic Science 2002: Nudging hair shedding by antidandruff shampoos",
+      "source_url": "https://onlinelibrary.wiley.com/doi/10.1046/j.1467-2494.2002.00145.x",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "탈모·비듬 환자 남성",
+        "classification": "임상 효과",
+        "timing": "6개월 사용 후",
+        "region": "글로벌"
+      },
+      "caution": "표본 크기가 150명으로 중간 규모이며, 모발 직경 차이(5.4% vs 7.7%)의 임상적 의미는 제한적일 수 있다. 또한 농도 차이(1% vs 1%)를 고려할 때 피루옥톤올아민이 2% 케토코나졸과 비교할 때 상대 위치를 재평가해야 함.",
+      "cautionSource": "RCT 결과, 표본 크기 고려"
+    },
+    {
+      "id": "pyroctone-olamine-efficacy-vs-ketoconazole-tolerability",
+      "claim": "피루옥톤올아민과 케토코나졸(2%)을 비교한 연구에서 둘 다 4주 후 비듬을 유의하게 감소시켰으나, 피루옥톤올아민이 더 우수한 모발 품질 개선과 두피 자극 감소를 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "International Journal of Cosmetic Science, 항진균 성분 비교 연구",
+      "source_url": "https://onlinelibrary.wiley.com/doi/10.1046/j.1467-2494.2002.00145.x",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "비듬·민감두피 환자",
+        "classification": "임상 효과·안전성",
+        "timing": "4주 사용 후",
+        "region": "글로벌"
+      },
+      "caution": "용량 차이(피루옥톤올아민 1% vs 케토코나졸 2%)를 고려할 때, 피루옥톤올아민이 저농도에서도 효과를 보였다는 의미로 해석할 수 있다.",
+      "cautionSource": "비교 RCT"
+    },
+    {
+      "id": "antidandruff-shampoo-malassezia-efficacy-vs-androgenetic-alopecia-efficacy",
+      "claim": "비듬 제거용 샴푸(항진균 성분)와 탈모 완화용 샴푸(영양 성분)는 기전이 다르므로, 비듬이 없는 사람의 탈모 치료에 항진균 샴푸 효과는 제한적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "피부과학 기초, 다수 피부과 가이드",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "탈모 환자",
+        "classification": "임상 기초",
+        "timing": "전 기간",
+        "region": "글로벌"
+      },
+      "caution": "마케팅에서 '비듬도 없애고 탈모도 막는다'는 표현을 볼 수 있으나, 두 기전은 독립적이라는 점을 강조할 것.",
+      "cautionSource": "피부약리학"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "topic": "트라넥삼산·아젤라산 색소질환: 기미·염증후색소침착, 용량, 한국 규제상 위치",
+  "brand": "성분 (트라넥삼산·아젤라산)",
+  "article": "예정",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "rct-randomized-controlled-trial-definition-gold-standard",
+    "meta-analysis-systematic-review-highest-evidence-hierarchy"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "tranexamic-acid-melasma-pih-multiple-routes-efficacy",
+      "claim": "무작위 대조 및 비교 임상 시험에서 경구·국소·진피 주입 경로 모두에서 트라넥삼산이 기미 및 염증후색소침착(PIH)의 색소 지수를 유의미하게 감소시키고 삶의 질 점수를 개선했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Tranexamic Acid for Hyperpigmentation Disorders: A Literature Review on Efficacy and Safety in Melasma and PIH",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12848551/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "기미·PIH 환자",
+        "분류": "색소질환 치료",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "tranexamic-acid-oral-250-500mg-twice-daily-dosage",
+      "claim": "경구 트라넥삼산의 임상 용량은 1일 2회 250~500mg이며, 부작용은 경미한 위장 증상과 월경 불규칙이 가장 흔했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Tranexamic Acid for Hyperpigmentation Disorders: A Literature Review",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12848551/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인 환자",
+        "분류": "용량·안전성",
+        "지역": "글로벌"
+      },
+      "caution": "경구 용량은 약물 범주이므로 의사 처방이 필요. 화장품 성분으로 국소 도포는 별도의 효능·안전 데이터가 필요하다.",
+      "cautionSource": "약학 규제"
+    },
+    {
+      "id": "tranexamic-acid-topical-vs-hydroquinone-less-irritation",
+      "claim": "국소 및 진피 주입 트라넥삼산 포뮬레이션이 하이드로퀴논보다 비슷하거나 우수한 효능을 보였으나 자극 반응이 더 적었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Tranexamic Acid for Hyperpigmentation Disorders: A Literature Review",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12848551/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "색소질환 환자",
+        "분류": "효능·내약성 비교",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "tranexamic-acid-plasmin-inhibitor-depigmenting-mechanism",
+      "claim": "트라넥삼산은 플라스민 억제제(plasmin inhibitor)로서 멜라노생성 인자를 감소시키는 미백 메커니즘을 가진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Tranexamic Acid for Hyperpigmentation Disorders: A Literature Review",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12848551/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반",
+        "분류": "생화학 기전",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "tranexamic-acid-combination-therapy-enhanced-durability",
+      "claim": "트라넥삼산과 하이드로퀴논 또는 레이저 요법의 병용이 단독 요법보다 개선 효과가 더 크고 지속 기간이 더 길었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Tranexamic Acid for Hyperpigmentation Disorders: A Literature Review",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12848551/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "색소질환 환자",
+        "분류": "병용 요법",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "azelaic-acid-15-percent-post-inflammatory-hyperpigmentation-pih",
+      "claim": "15% 아젤라산 젤을 1일 2회 12주간 도포했을 때 여드름으로 인한 염증후색소침착과 홍반 모두에서 유의미한 개선이 있었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Efficacy and safety of azelaic acid (AzA) gel 15% in the treatment of post-inflammatory hyperpigmentation and acne",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/21637899/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "가벼운~중등도 여드름 환자",
+        "분류": "염증후색소 치료",
+        "시기": "12주",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "azelaic-acid-20-percent-vs-hydroquinone-melasma",
+      "claim": "기미 환자 대상 임상 연구에서 20% 아젤라산이 2% 하이드로퀴논보다 우수하고, 4% 하이드로퀴논과 동등하게 효과적이었으며, 후자의 바람직하지 않은 부작용을 피할 수 있었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Melanin hyperpigmentation of skin: melasma, topical treatment with azelaic acid, and other therapies",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/8654129/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "기미 환자",
+        "분류": "효능 비교",
+        "지역": "글로벌"
+      },
+      "caution": "★20% 아젤라산은 화장품 농도를 초과하며, 한국 규제상 아젤라산의 정확한 지위(약품 vs 기능성 성분)를 확인해야 한다.",
+      "cautionSource": "한국 식약처 규제 미확인"
+    },
+    {
+      "id": "azelaic-acid-tretinoin-synergy-melasma",
+      "claim": "트레티노인과 아젤라산 병용이 아젤라산 단독보다 3개월 후 피부 명도를 더 증가시켰다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Melanin hyperpigmentation of skin: melasma, topical treatment with azelaic acid",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/8654129/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "기미 환자",
+        "분류": "병용 요법",
+        "시기": "3개월",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "azelaic-acid-15-20-percent-mild-transient-irritation",
+      "claim": "15~20% 아젤라산 포뮬레이션은 임상적으로 의미 있는 개선을 가져왔으나 경미하고 일시적인 국소 자극이 나타났다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: A Comprehensive Review of Azelaic Acid Pharmacological Properties, Clinical Applications, and Innovative Topical Formulations",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12472904/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반",
+        "분류": "안전성·내약성",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "azelaic-acid-rosacea-erythema-inflammatory-efficacy",
+      "claim": "메타분석(20개 장미증 연구)에서 아젤라산이 비히클 대조군 대비 12주 후 홍반 심각도, 염증성 병변 수, 전체 개선도, 치료 성공률 모두에서 유의미하게 개선되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: A Comprehensive Review of Azelaic Acid Pharmacological Properties, Clinical Applications, and Innovative Topical Formulations",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12472904/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "장미증 환자",
+        "분류": "염증·홍반 치료",
+        "시기": "12주",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "azelaic-acid-regulatory-status-korea-uncertain",
+      "claim": "웹 검색 결과 아젤라산의 한국 식약처 규제 지위(의약품 vs 기능성화장품 인정 성분)를 명확히 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "웹검색",
+      "source": "한국 식약처 공식 문서 미접근",
+      "source_url": "https://www.law.go.kr/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "한국 규제",
+        "분류": "법적 지위",
+        "지역": "KR"
+      },
+      "caution": "★집필 시 아젤라산 고농도 제품은 의약품 가능성이 높으므로 한국 규제 상한을 먼저 확인하고 표현할 것.",
+      "cautionSource": "미확인 상태"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "topic": "벤조일퍼옥사이드: 여드름 제어 기전, 농도 기준, 한국 규제 지위, 박테리아 저항성",
+  "brand": "성분연구소",
+  "article": "뷰티_benzoyl-peroxide-acne",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "benzoyl-peroxide-oxidative-mechanism-bacteria",
+      "claim": "벤조일퍼옥사이드는 산화 작용으로 자유 산소 라디칼을 방출하여 여드름 원인균(Cutibacterium acnes)의 세포막을 파괴한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Benzoyl Peroxide Review - Current Use in Acne Treatment",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/19761357/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "여드름 원인균 제어",
+        "분류": "벤조일퍼옥사이드 기전",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "benzoyl-peroxide-concentration-efficacy-2-5-percent",
+      "claim": "2.5% 벤조일퍼옥사이드는 박테리아의 95% 감소를 달성하면서 자극성 피부염 위험을 최소화한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Niosomal Benzoyl Peroxide and Clindamycin Study",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6912181/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "여드름 제어",
+        "분류": "벤조일퍼옥사이드 농도·효과",
+        "시기": "2020년",
+        "지역": "글로벌"
+      },
+      "caution": "2.5%, 5%, 10% 농도가 모두 효과적이지만, 농도가 높을수록 자극성 피부염 위험이 농도 의존적으로 증가한다.",
+      "cautionSource": "PubMed 임상 문헌"
+    },
+    {
+      "id": "benzoyl-peroxide-korea-regulation-otc-drug",
+      "claim": "한국 식약처 분류상 벤조일퍼옥사이드는 화장품이 아니라 처방전 없이 구입 가능한 OTC 의약품으로 지정되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "의약품안전나라(의약품안전정보서비스)",
+      "source_url": "https://nedrug.mfds.go.kr/pbp/CCBDF01",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "한국 규제 지위",
+        "분류": "벤조일퍼옥사이드",
+        "시기": "2026년",
+        "지역": "한국(KR)"
+      },
+      "caution": "화장품으로 판매되는 제품 중 벤조일퍼옥사이드 함유는 사실상 불법이며, 의약품으로만 유통 가능하다. 구매 시 의약품 지위 확인 필수.",
+      "cautionSource": "식약처 규제 기준"
+    },
+    {
+      "id": "benzoyl-peroxide-no-bacterial-resistance",
+      "claim": "박테리아는 벤조일퍼옥사이드의 산화 기전에 저항성을 발달시킬 수 없으며, 클린다마이신이나 에리스로마이신 같은 항생제와 달리 6~12개월 내 내성균 출현이 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Benzoyl Peroxide - Review of Current Use in Acne Treatment",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/19761357/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "약물 저항성",
+        "분류": "벤조일퍼옥사이드",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "항생제와 조합 사용 시에도 항생제 내성을 지연시킬 수 있다는 점에서 병합 요법에 선호된다.",
+      "cautionSource": "PubMed 임상 문헌"
+    },
+    {
+      "id": "benzoyl-peroxide-combination-efficacy-clindamycin",
+      "claim": "벤조일퍼옥사이드 5% + 클린다마이신 1% 젤 10~16주 사용은 단독 성분 사용보다 염증성 여드름 감소에서 더 효과적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Benzoyl Peroxide Efficacy Studies",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6912181/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "중등도 여드름",
+        "분류": "벤조일퍼옥사이드 병합 요법",
+        "시기": "2020년",
+        "지역": "글로벌"
+      },
+      "caution": "장기 사용(>3개월)에는 항생제 내성 방지를 위해 주기적 중단이나 벤조일퍼옥사이드 단독 유지가 권장된다.",
+      "cautionSource": "임상 연구 문헌"
+    }
+  ]
+}

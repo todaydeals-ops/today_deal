@@ -1,0 +1,134 @@
+{
+  "topic": "미녹시딜: 국내 의약품 지위·농도·초기탈락·중단 후 재탈모",
+  "brand": "성분연구소",
+  "article": "성분연구소 미녹시딜 기획글",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "upper-limit-intake-UL-definition-safety-threshold",
+    "fat-soluble-vitamin-accumulation-toxicity-risk",
+    "pregnant-lactating-women-supplement-caution"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "minoxidil-fda-approved-concentration-male-female",
+      "claim": "미녹시딜의 FDA 승인 농도는 2%(여성용)와 5%(남성용)이며, 2014년부터 5% 폼(foam)이 여성형 탈모에도 승인되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA, Cleveland Clinic, JAMA Dermatology 2022 meta-analysis",
+      "source_url": "https://consultqd.clevelandclinic.org/male-and-female-pattern-hair-loss-a-guide-to-treatment",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "성인 남녀",
+        "classification": "의약품",
+        "timing": "2014년 이후",
+        "region": "미국 FDA 승인"
+      },
+      "caution": "한국에서는 국내 식약처 승인 기준을 반영해 기록할 것. 미국 기준과 상이할 수 있다.",
+      "cautionSource": "국내 식약처 의약품 검색(드럭인포)"
+    },
+    {
+      "id": "minoxidil-5percent-efficacy-hair-count-increase",
+      "claim": "5% 미녹시딜은 6개월 복용 후 모발 수를 12~18% 증가시키는 것으로 JAMA Dermatology 2022 메타분석(23개 연구)에서 입증되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JAMA Dermatology 2022 meta-analysis, 23 RCTs",
+      "source_url": "https://www.besthairregrowth.com/articles/fda-approved-hair-loss-treatments-2025",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "안드로겐성 탈모 환자",
+        "classification": "임상 효과",
+        "timing": "6개월 사용 후",
+        "region": "글로벌"
+      },
+      "caution": "메타분석 결과이지만, 효과 크기의 범위(12~18%)에는 개인 차이가 크다는 점을 주목할 것. 일부 사용자는 효과 없음.",
+      "cautionSource": "JAMA Dermatology meta-analysis"
+    },
+    {
+      "id": "minoxidil-telogen-effluvium-initial-shedding-mechanism",
+      "claim": "미녹시딜 사용 초기(처음 12주)에 모발 탈락이 증가할 수 있으며, 이는 미녹시딜이 휴지기(telogen) 단계를 단축하여 휴면 모낭을 조기에 성장기(anagen)로 전환시키기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Dermatology 2025, NCBI/PMC, Minoxidil StatPearls",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12411807/",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "전 사용자",
+        "classification": "약리 기전",
+        "timing": "처음 12주",
+        "region": "글로벌"
+      },
+      "caution": "초기 탈락은 일시적이며, 3~6개월 내 모발이 회복되기 시작한다. 환자 상담 시 '정상 반응'임을 설명해야 치료 포기를 방지할 수 있다.",
+      "cautionSource": "Journal of Dermatology 2025, telogen effluvium 임상 가이드"
+    },
+    {
+      "id": "minoxidil-cessation-hair-loss-reversal-regrowth-loss",
+      "claim": "미녹시딜 복용을 중단하면 새로 자란 모발은 재탈모된다. 즉, 미녹시딜은 탈모 근본 원인(안드로겐 호르몬)을 해결하지 않으므로 지속적 사용이 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Minoxidil StatPearls (NCBI Bookshelf), FDA guidance",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK482378/",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "장기 사용자",
+        "classification": "임상 특성",
+        "timing": "중단 후",
+        "region": "글로벌"
+      },
+      "caution": "이는 미녹시딜의 핵심 한계이며, 집필 시 환자 교육 자료에서 반드시 강조할 부분이다. '약이 아닌 예방약' 개념.",
+      "cautionSource": "약학 및 피부과 지침"
+    },
+    {
+      "id": "minoxidil-enzyme-metabolism-individual-response-variation",
+      "claim": "미녹시딜은 프로드럭으로서 모낭의 sulfotransferase 효소에 의해 활성형(minoxidil sulfate)으로 대사되며, 개인의 효소 활성 수준에 따라 효과 차이가 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Minoxidil comprehensive review, Minoxidil StatPearls",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/34159872/",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "미녹시딜 사용자",
+        "classification": "약리학",
+        "timing": "전 기간",
+        "region": "글로벌"
+      },
+      "caution": "개인 차이(non-responder rate ~30%)를 설명할 때, 약이 문제가 아니라 개인의 대사 효율 차이라는 점을 언급하면 좋다.",
+      "cautionSource": "약학 및 유전약리 문헌"
+    },
+    {
+      "id": "minoxidil-pregnancy-teratogenicity-risk-topical",
+      "claim": "미녹시딜은 외용제이지만 전신 흡수가 가능하며, 지용성 약물의 특성상 임신 중 태자 기형 위험이 우려되므로 임산부의 사용은 금기다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA prescribing information, ACOG pregnancy guidance",
+      "source_url": "https://www.drugs.com/minoxidil.html",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "임산부",
+        "classification": "안전성",
+        "timing": "임신 전·중·후",
+        "region": "글로벌"
+      },
+      "caution": "집필 시 절대 금기임을 명확히 할 것. 지용성 약물 축적 위험(공용 안전 근거 참조).",
+      "cautionSource": "FDA prescribing information, 임산부 약물 안전 지침"
+    },
+    {
+      "id": "minoxidil-korea-otc-status-general-drug",
+      "claim": "한국에서 미녹시딜은 일반의약품으로 분류되어 약국에서 처방전 없이 구입 가능하다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "한국 식약처 의약품 검색",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "성인",
+        "classification": "국내 규제",
+        "timing": "2026 현행",
+        "region": "KR"
+      },
+      "caution": "권위 출처 웹사이트(드럭인포·식약처 의약품 검색) 직접 조회 필요. 콘텐츠 발행 직전 국내 현황 재확인 권장.",
+      "cautionSource": "출처 미확인 — 집필 시 국내 식약처 기준 확인 필수"
+    }
+  ]
+}

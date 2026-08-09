@@ -1,0 +1,116 @@
+{
+  "topic": "판테놀(panthenol)과 마데카소사이드(madecassoside)의 피부 진정 및 상처 치유 효과",
+  "brand": "뷰티·성분연구소",
+  "article": "panthenol-madecassoside",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "rct-randomized-controlled-trial-definition-gold-standard",
+    "industry-sponsored-research-bias-conflict-of-interest"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "panthenol-dexpanthenol-definition-humectant",
+      "claim": "판테놀(panthenol, 프로비타민 B5) 또는 덱스판테놀(dexpanthenol)은 습윤제 계열로 분류되며, 피부의 판토텐산(비타민 B5)으로 변환되어 피부 수화 및 진정에 관여하는 것으로 알려져 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Comprehensive Review on Role of Moisturizers in Cosmetic Preparations",
+      "source_url": "https://www.ijpsjournal.com/article/A+Comprehensive+Review+on+Role+of+Moisturizers+in+Cosmetic+Preparations+",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 피부",
+        "시기": "전 연식",
+        "지역": "글로벌",
+        "분류": "성분 기전"
+      },
+      "caution": "판테놀이 '비타민'이라고 해서 내부 대사적 효과(systemic effect)까지 기대하는 것은 오류. 피부 표면 수화와 로컬 진정만 증명되었다.",
+      "cautionSource": null
+    },
+    {
+      "id": "madecassoside-centella-asiatica-triterpenoid-mechanism",
+      "claim": "마데카소사이드는 센텔라 아시아티카(Centella asiatica) 식물의 주요 삼테르페노이드(triterpene) 성분으로, 세라마이드 같은 세포간 지질 재구성을 통해 피부 장벽 회복, 항염증, 상처 치유를 촉진하며, ERK 인산화와 Ca²⁺/AMPK 신호 경로를 매개한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Centella asiatica Phytochemical Madecassoside Enhances Skin Wound Healing",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40667819/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "상처 또는 손상된 피부",
+        "시기": "상처 직후~회복 기간",
+        "지역": "글로벌",
+        "분류": "생화학 메커니즘"
+      },
+      "caution": "기전 연구는 주로 시험관(in vitro) 또는 동물 모델에서 진행되었으며, 인간 임상 증거는 제한적이다.",
+      "cautionSource": "연구 설계 특성"
+    },
+    {
+      "id": "madecassoside-uvb-keratinocyte-protection",
+      "claim": "마데카소사이드는 자외선 B(UVB) 조사 후 케라틴세포 손상을 감소시키고 세포 사멸을 억제하는 보호 효과를 보이며, 이는 UVB 유발 피부 손상 후 피부 회복을 지원할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Tissue Barriers: Centella asiatica Madecassoside and UVB-Induced Keratinocyte Damage (2025)",
+      "source_url": "https://doi.org/10.1080/21688370.2025.2532229",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "자외선 손상 피부",
+        "시기": "UVB 직후 회복 기간",
+        "지역": "글로벌",
+        "분류": "광보호 메커니즘"
+      },
+      "caution": "이 연구도 주로 세포 실험 기반이며, 실제 인간 피부에서의 자외선 차단 효율은 별개의 평가가 필요하다. 마데카소사이드가 '자외선 차단제'는 아니고 '손상 후 회복 지원'에 가깝다.",
+      "cautionSource": "임상 vs 기초 연구 구분"
+    },
+    {
+      "id": "panthenol-madecassoside-combination-laser-wound-rct",
+      "claim": "5% 판테놀 + 마데카소사이드 + 구리-아연-망간 복합체를 함유한 크림을 레이저 후 피부손상 치유에 사용한 분할면 무작위대조시험(split-face RCT)에서, 치료군이 대조군 대비 3일차, 7일차, 14일차에 유의미하게 낮은 홍반지수와 색소침착지수를 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dermatology Therapy (2020): Effects of Cream Containing Madecassoside, 5% Panthenol for Post-laser Resurfacing",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/32378273/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "레이저 피부 시술 환자",
+        "시기": "레이저 직후 2주",
+        "지역": "글로벌",
+        "분류": "임상 효과"
+      },
+      "caution": "★이 연구는 3가지 성분 조합 평가이므로 판테놀 단독이나 마데카소사이드 단독 효과를 분리할 수 없다. 또한 업계 협력 연구(Shanghai Dermatology Hospital + L'Oreal China)이므로 이해 충돌 선언 확인이 필수다.",
+      "cautionSource": "임상시험 설계 및 후원처"
+    },
+    {
+      "id": "centella-asiatica-scar-treatment-280-patient-rct",
+      "claim": "센텔라 아시아티카 1% 크림을 수술 후 흉터 치료에 사용한 280명 규모의 무작위대조시험(분할면 설계)에서 하루 2회 도포로 밴쿠버 흉터 척도(Vancouver Scar Scale) 개선이 입증되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Systematic Review of RCTs on Centella asiatica for Wound Healing (Journal of Health Science and Alternative Medicine)",
+      "source_url": "https://he01.tci-thaijo.org/index.php/jhealthscialternmed/article/view/257756",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "수술 후 환자(손목굴 증후군 수술 환자)",
+        "시기": "수술 직후 ~ 흉터 성숙기",
+        "지역": "글로벌",
+        "분류": "흉터 치료"
+      },
+      "caution": "이 연구는 순수 센텔라 아시아티카 추출물(마데카소사이드 포함)이지만, 정확한 마데카소사이드 농도나 표준화 정도가 명시되지 않았다.",
+      "cautionSource": null
+    },
+    {
+      "id": "panthenol-clinical-evidence-limited-topical-use",
+      "claim": "판테놀의 임상 효과는 마데카소사이드나 다른 활성 성분보다 연구가 적으며, 주로 항염증 크림 조합 성분으로 사용되고 있다. 판테놀 단독 효과의 대규모 임상시험은 많지 않다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "PubMed/NIH Search: Panthenol Monotherapy Clinical Trials",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 피부",
+        "시기": "현재까지",
+        "지역": "글로벌",
+        "분류": "근거 수준"
+      },
+      "caution": "★집필에서 판테놀을 다룰 때는 '기본 보습 성분으로 널리 쓰이지만 임상 증거는 제한적'이라고 명시하는 것이 정직하다. 과장된 효능 표현은 삼가야 한다.",
+      "cautionSource": null
+    }
+  ]
+}

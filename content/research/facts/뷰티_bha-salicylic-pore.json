@@ -1,0 +1,79 @@
+{
+  "topic": "BHA 살리실산: 모공·피지 제어 기전, 임상 효과, 농도 기준, 안전성",
+  "brand": "성분연구소",
+  "article": "뷰티_bha-salicylic-pore",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "bha-salicylic-acid-oil-soluble-mechanism",
+      "claim": "살리실산(BHA)은 유일한 지용성 각질제거 성분으로서, 피지로 가득 찬 모공 내부로 침투하여 각질 찌꺼기를 용해하고 항염증 작용을 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Clinical Efficacy of Salicylic Acid Gel Study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12274963/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "여드름·모공·피지성 피부",
+        "분류": "BHA",
+        "시기": "2025년 임상",
+        "지역": "글로벌"
+      },
+      "caution": "물에 녹는 AHA(글리콜산)는 피지 환경에 접근할 수 없으므로 모공 관리 목적으로는 살리실산만 효과적이다.",
+      "cautionSource": "NCBI/PMC 임상 문헌"
+    },
+    {
+      "id": "bha-concentration-1-2-percent-efficacy",
+      "claim": "임상 연구의 표준 농도는 1~2% 살리실산이며, 2% 농도 12주 사용으로 여드름 병변이 52% 감소했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Cosmetic Dermatology; NCBI/PMC 2% Salicylic Acid Study",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12274963/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "여드름·모공 관리",
+        "분류": "BHA 농도",
+        "시기": "2025년",
+        "지역": "글로벌"
+      },
+      "caution": "1% 이상이 임상 유효성 기준이며, 1% 미만은 유지 용도에만 적합하다.",
+      "cautionSource": "Journal of Cosmetic Dermatology"
+    },
+    {
+      "id": "bha-21day-sebum-reduction-hydration-increase",
+      "claim": "2% 살리실산 함유 젤 21일 사용 결과, 피지가 23.65% 감소했고 피부 수분은 40.5% 증가했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Clinical Efficacy of Salicylic Acid–Containing Gel on Acne Management (Liu, 2025)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12274963/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "피지 과다 분비",
+        "분류": "BHA 효과 측정",
+        "시기": "2025년",
+        "지역": "글로벌"
+      },
+      "caution": "이 연구는 글리콜산(2.9%)과 락틱산(2.5%), 나이아신아마이드, 세라마이드 복합 포뮬레이션이라 순수 살리실산 단독 효과와는 다를 수 있다.",
+      "cautionSource": "NCBI/PMC 논문 Methods 섹션"
+    },
+    {
+      "id": "bha-safety-adverse-effects-minimal",
+      "claim": "2% 살리실산 젤은 안전성이 우수하며, 5% 참가자만 경미한 일시적 가려움을 보고했고 탈락자는 없었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Clinical Efficacy of Salicylic Acid–Containing Gel (Liu, 2025)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12274963/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "안전성·부작용",
+        "분류": "BHA 내약성",
+        "시기": "2025년 21일 연구",
+        "지역": "글로벌"
+      },
+      "caution": "고농도(5% 이상)는 자극성 피부염을 유발할 수 있으므로 농도와 개인의 피부 민감도를 함께 고려해야 한다.",
+      "cautionSource": "임상 문헌"
+    }
+  ]
+}

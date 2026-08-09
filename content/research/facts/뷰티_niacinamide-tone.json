@@ -1,0 +1,108 @@
+{
+  "topic": "나이아신아마이드(비타민B3) 미백·톤: 농도별 근거, 홍조 논쟁, 멜라노솜 이전 억제",
+  "brand": "성분 (나이아신아마이드·비타민B3)",
+  "article": "예정",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "rct-randomized-controlled-trial-definition-gold-standard",
+    "meta-analysis-systematic-review-highest-evidence-hierarchy"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "niacinamide-2-5-percent-hyperpigmentation-efficacy",
+      "claim": "나이아신아마이드 2~5% 농도가 임상 시험에서 기미·색소 개선에 효과적이며, 4주 후 차량(vehicle) 대조군보다 피부 명도를 유의하게 증가시켰다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: The effect of niacinamide on reducing cutaneous pigmentation and suppression of melanosome transfer",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/12100180/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "색소과다 성인",
+        "분류": "미백·톤개선",
+        "시기": "4주",
+        "지역": "글로벌"
+      },
+      "caution": "2% 농도는 선스크린 병용, 5% 농도는 단독 사용 임상시험으로 데이터 분리됨.",
+      "cautionSource": "임상 설계"
+    },
+    {
+      "id": "niacinamide-melanosome-transfer-mechanism",
+      "claim": "나이아신아마이드는 멜라노솜(melanosome)이 멜라노사이트에서 각질세포로 이동하는 과정을 억제하는 기전으로 작동하며, 이는 색소 감소의 직접적 메커니즘이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: The effect of niacinamide on reducing cutaneous pigmentation and suppression of melanosome transfer",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/12100180/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반",
+        "분류": "생화학 기전",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "niacinamide-not-niacin-no-flushing-at-cosmetic-levels",
+      "claim": "나이아신아마이드(nicotinamide)는 니아신(niacin)과 다른 물질이며, 홍조(flushing)는 니아신의 특성이지 나이아신아마이드에서는 일어나지 않는다. 나이아신아마이드는 10% 농도까지 자극이 없음이 임상 테스트로 입증되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Final report of the safety assessment of niacinamide and niacin; A review of nicotinamide: treatment of skin diseases and potential side effects",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/16596767/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반",
+        "분류": "안전성",
+        "지역": "글로벌"
+      },
+      "caution": "★'홍조한다'는 통념은 고급용량 니아신(약용)과의 혼동. 저pH 포뮬레이션에서 나이아신아마이드가 니아신으로 변환될 가능성이 있으므로 니아신 함량을 <0.03%(더 안전하게 <0.015%)로 관리해야 한다.",
+      "cautionSource": "화장품 안전 평가 보고서"
+    },
+    {
+      "id": "niacinamide-5-percent-21-day-cumulative-irritation-none",
+      "claim": "나이아신아마이드 5% 농도로 21일 누적 자극 시험 결과 자극성이 없었으며, 감작원성(sensitizer)도 광감작성(photosensitizer)도 없음이 확인되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: A review of nicotinamide: treatment of skin diseases and potential side effects",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/25399625/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반",
+        "분류": "안전성",
+        "시기": "21일",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "niacinamide-ultrasound-combination-skin-aging-efficacy",
+      "claim": "무작위 대조 임상 시험에서 나이아신아마이드 포뮬레이션과 5MHz 초음파 병용이 피부 노화 개선에 효과적이었으며, 통계적 유의성을 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Topical Formulation with Niacinamide Combined with 5 MHz Ultrasound for Improving Skin Ageing",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/39171587/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인",
+        "분류": "노화방지",
+        "지역": "글로벌"
+      },
+      "caution": "초음파 병용 효과이므로, 나이아신아마이드 단독의 효과와는 구분해야 한다.",
+      "cautionSource": "임상 설계"
+    },
+    {
+      "id": "niacinamide-collagen-peptide-retinol-combination-trial",
+      "claim": "나이아신아마이드·펩타이드·레티닐프로피오네이트 조합 제품이 무작위 대조 시험(n=불명)에서 처방 0.02% 트레티노인 레짐과 유사한 주름 개선을 보였으나, 레티노이드 제품의 강도가 낮은 편에 속함을 주의해야 한다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PubMed: A randomized, controlled comparative study of the wrinkle reduction benefits of a cosmetic niacinamide/peptide/retinyl propionate product regimen",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2841824/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인",
+        "분류": "주름개선·조합 효과",
+        "지역": "글로벌"
+      },
+      "caution": "★이 조합은 0.02% 트레티노인(저농도)과만 비교되었으며, 고농도 처방 레티노이드(0.05~0.1%)와의 비교는 없다. 홍보용 연구일 가능성이 높다.",
+      "cautionSource": "연구 설계 검토"
+    }
+  ]
+}

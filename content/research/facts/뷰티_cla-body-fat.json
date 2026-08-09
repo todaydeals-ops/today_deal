@@ -1,0 +1,219 @@
+{
+  "topic": "CLA(켤레 리놀레산): 체지방 감소 효과의 임상적 의미와 인슐린 저항성 우려",
+  "brand": "성분연구소",
+  "article": "성분연구소 CLA 기획글",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "meta-analysis-systematic-review-highest-evidence-hierarchy",
+    "statistical-significance-vs-clinical-significance-distinction",
+    "relative-risk-reduction-vs-absolute-risk-reduction-trap"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "cla-conjugated-linoleic-acid-definition-natural-source",
+      "claim": "CLA(켤레 리놀레산)는 소, 양, 버터, 치즈 등 반추동물 제품에 자연 존재하는 다중불포화 지방산의 혼합물이며, 보충제로는 식물유(홍화유 등)에서 추출·정제된 형태로 판매된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Journal of Clinical Nutrition",
+      "source_url": "https://ajcn.nutrition.org/article/S0002-9165(23)28055-7/fulltext",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "체중관리 찾는 사람",
+        "classification": "성분 정의",
+        "timing": "전 기간",
+        "region": "글로벌"
+      },
+      "caution": "천연 식품 성분이라는 마케팅 표현이 있으나, 보충제 형태는 고도로 정제·농축된 형태다.",
+      "cautionSource": "보충제 제조 과정"
+    },
+    {
+      "id": "cla-mechanism-adipocyte-lipolysis-fat-oxidation",
+      "claim": "CLA는 지방세포의 호르몬 민감성 지질가수분해효소(hormone-sensitive lipase)를 활성화하고 지방산 산화를 촉진하여 체지방 감소를 유도한다는 기전이 제시되고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Journal of Clinical Nutrition meta-analysis",
+      "source_url": "https://ajcn.nutrition.org/article/S0002-9165(23)28055-7/fulltext",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "체중관리 관심자",
+        "classification": "약리 기전",
+        "timing": "전 기간",
+        "region": "글로벌"
+      },
+      "caution": "기전은 시험관·동물 연구에 기반하며, 인체에서 같은 강도로 작용하는지는 별개의 문제.",
+      "cautionSource": "기초 약리학"
+    },
+    {
+      "id": "cla-3point2g-body-fat-loss-modest-dose-response",
+      "claim": "3.2 g/day 용량에서 CLA는 체지방 감소를 보이는 것으로 보고되고 있으나, 용량-반응 메타분석에서 개인 차이가 크고 효과 크기는 작은(modest) 수준으로 평가된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Journal of Clinical Nutrition meta-analysis, Cambridge Core: Systematic Review and Dose-Response Meta-Analysis",
+      "source_url": "https://ajcn.nutrition.org/article/S0002-9165(23)28055-7/fulltext",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "CLA 섭취자",
+        "classification": "임상 효과",
+        "timing": "연구별 상이(12주~52주)",
+        "region": "글로벌"
+      },
+      "caution": "'modest'는 통계적 유의성은 있으나 임상적으로 눈에 띄지 않는 수준을 의미한다. 개인이 실제로 느낄 수 있는 체형 변화로는 미미할 가능성이 높다.",
+      "cautionSource": "메타분석 표현 해석"
+    },
+    {
+      "id": "cla-high-quality-evidence-limited-body-fat-efficacy",
+      "claim": "고품질 연구(RCT)만 포함한 분석에서 CLA의 체지방 감소 효과는 선(先)임상 및 저품질 연구보다 훨씬 약했으며, 이는 과거 연구의 선택적 보고나 산업 후원 편향을 시사한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Journal of Clinical Nutrition meta-analysis, Cambridge Core",
+      "source_url": "https://ajcn.nutrition.org/article/S0002-9165(23)28055-7/fulltext",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "CLA 효과 평가자",
+        "classification": "임상 근거",
+        "timing": "전 기간",
+        "region": "글로벌"
+      },
+      "caution": "★중요: 이는 공용 근거의 '산업 후원 편향'(공용 근거 참조)을 실제 사례로 보여준다. 초기 연구에서 높은 효과가 보인 것은 방법론 한계나 선택적 보고 때문일 가능성이 크다.",
+      "cautionSource": "메타분석 방법론, 연구 설계 질 평가"
+    },
+    {
+      "id": "cla-fasting-glucose-increase-pooled-analysis",
+      "claim": "13개 RCT 풀링 분석에서 CLA 보충 후 공복 혈당이 유의하게 증가했으나, HbA1c나 HOMA-IR(인슐린 저항성)에는 유의한 변화가 없었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Nutrition Journal, Springer Nature meta-analysis",
+      "source_url": "https://link.springer.com/article/10.1186/s12937-023-00876-3",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "CLA 사용자",
+        "classification": "대사 효과",
+        "timing": "CLA 사용 중",
+        "region": "글로벌"
+      },
+      "caution": "공복 혈당 증가는 '즉각적' 반응이지만, 장기 당화혈색소(HbA1c)에는 영향 없다는 점이 흥미롭다. 단기 혈당 상승이 임상적 의미가 있는지는 불확실.",
+      "cautionSource": "meta-analysis, 메타분석 해석"
+    },
+    {
+      "id": "cla-insulin-resistance-adverse-effect-high-dose-mice",
+      "claim": "마우스 연구에서 고용량 CLA(400 mg/kg 체중)는 인슐린 저항성을 악화시켰으며, HOMA-IR 증가와 포도당 불내증을 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PLOS One: A high dose of conjugated linoleic acid increases fatty liver and insulin resistance in lactating mice",
+      "source_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214903",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "CLA 보충제 사용자",
+        "classification": "독성학",
+        "timing": "고용량·장기 사용",
+        "region": "동물 연구"
+      },
+      "caution": "동물 연구이므로 직접 인체 적용은 할 수 없으나, 고용량의 위험성을 시사한다.",
+      "cautionSource": "동물 실험 연구"
+    },
+    {
+      "id": "cla-insulin-resistance-type2-diabetes-study-homa-increase",
+      "claim": "제2형 당뇨병 환자를 대상으로 한 연구에서 CLA 보충 후 HOMA-IR(인슐린 저항성 지수)이 19% 증가했으며, 공복 혈당도 유의하게 상승했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect: Conjugated linoleic acid supplementation, insulin sensitivity, and lipoprotein metabolism in patients with type 2 diabetes mellitus",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0002916522036218",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "제2형 당뇨병 환자",
+        "classification": "대사 악화",
+        "timing": "CLA 사용 중",
+        "region": "글로벌"
+      },
+      "caution": "★핵심 우려: 체지방 감소(미미)를 얻으려다 인슐린 저항성(악화)을 초래할 수 있다. 특히 당뇨병 위험군은 금기 수준이다.",
+      "cautionSource": "당뇨병 대사 RCT"
+    },
+    {
+      "id": "cla-conflicting-evidence-insulin-sensitivity-dose-composition-dependent",
+      "claim": "CLA와 인슐린 저항성의 관계는 상충하는 결과들을 보이고 있으며, 용량, 이성질체 조성(c9t11 vs t10c12), 기저 건강 상태(비만도, 당뇨병 여부)에 따라 결과가 달라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Conjugated Linoleic Acid Ameliorates High Fat-Induced Insulin Resistance",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11053735/",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "CLA 효과 평가자",
+        "classification": "대사 효과",
+        "timing": "전 기간",
+        "region": "글로벌"
+      },
+      "caution": "일부 고용량 또는 특정 이성질체(t10c12)는 인슐린 저항성을 악화시키는 반면, 다른 조건에서는 개선을 보인다. 개인화된 평가가 필수.",
+      "cautionSource": "메타분석, 다중 조건 비교"
+    },
+    {
+      "id": "cla-hepatic-steatosis-fatty-liver-concern-high-dose",
+      "claim": "고용량 CLA는 간 지방증(hepatic steatosis)을 유발할 수 있으며, 마우스 연구에서 지방간 증가와 간 염증 지표 상승이 관찰되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PLOS One: A high dose of conjugated linoleic acid increases fatty liver and insulin resistance in lactating mice",
+      "source_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214903",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "고용량 CLA 사용자",
+        "classification": "간 독성",
+        "timing": "고용량·장기 사용",
+        "region": "동물 연구"
+      },
+      "caution": "지방간은 무증상으로 진행될 수 있으므로, 정기적 간 기능 검사(AST, ALT, 초음파)가 필요할 수 있다.",
+      "cautionSource": "동물 실험, 기초 의학"
+    },
+    {
+      "id": "cla-body-composition-effect-size-clinical-significance-limitation",
+      "claim": "CLA가 체지방 감소를 보이더라도, 절대 효과 크기는 작아서(예: 3~4개월에 1~2 kg 정도) 개인이 외형상 변화를 느끼기는 어려울 수 있으며, 특히 동시에 나타나는 인슐린 저항성 악화는 대사 건강에 부정적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Journal of Clinical Nutrition, Cambridge Core meta-analyses",
+      "source_url": "https://ajcn.nutrition.org/article/S0002-9165(23)28055-7/fulltext",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "CLA 보충제 사용자",
+        "classification": "임상적 의미",
+        "timing": "3~12개월 사용",
+        "region": "글로벌"
+      },
+      "caution": "★종합 평가: 효과는 미미하고, 인슐린 저항성 악화·간 손상 우려는 있다. 비용-편익 분석이 부정적이다. 식단·운동이 일차 전략이어야 한다.",
+      "cautionSource": "임상 근거 통합 해석"
+    },
+    {
+      "id": "cla-individual-variability-responder-non-responder-phenotype",
+      "claim": "CLA 효과의 개인 차이가 크며, 일부 개인은 우호적 반응을 보이는 반면 다른 사람은 체지방 감소가 거의 없거나 역설적인 악화(지방 증가)를 경험할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Journal of Clinical Nutrition dose-response meta-analysis",
+      "source_url": "https://ajcn.nutrition.org/article/S0002-9165(23)28055-7/fulltext",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "CLA 보충제 사용자",
+        "classification": "개인 차이",
+        "timing": "사용 전·후",
+        "region": "글로벌"
+      },
+      "caution": "개인화된 평가와 단기 모니터링(4~8주)이 중요. 효과가 없거나 대사 악화 신호가 있으면 즉시 중단하고 의료 전문가와 상담할 것.",
+      "cautionSource": "메타분석 이질성(heterogeneity)"
+    },
+    {
+      "id": "cla-korea-health-supplement-regulatory-status",
+      "claim": "한국에서 CLA는 건강기능식품 개별인정형 원료로 '체지방 감소에 도움을 주는' 기능성이 인정되어 있으며, 일부 제품이 유통 중이다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "한국 식약처 기능성 원료 인정 현황",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "한국 소비자",
+        "classification": "규제",
+        "timing": "2026 현행",
+        "region": "KR"
+      },
+      "caution": "한국 식약처 공식 '기능성 원료 인정 현황' 검색 필요. 개별인정형이라면 심사 기준과 허가 근거(임상 자료)를 확인할 것.",
+      "cautionSource": "출처 미확인 — 집필 시 식약처 기능성 원료 검색 필수(https://fmis.kr)"
+    }
+  ]
+}

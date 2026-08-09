@@ -1,0 +1,113 @@
+{
+  "topic": "피부 장벽(skin barrier)의 구조, '무너졌다'는 표현의 실체, 회복 원리",
+  "brand": "뷰티·성분연구소",
+  "article": "skin-barrier-basics",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "skin-barrier-stratum-corneum-bricks-mortar-structure",
+      "claim": "피부 장벽은 각질층(stratum corneum) 내 각질세포(corneocytes, '벽돌')와 세포 사이 지질 매트릭스(lipid lamellae, '시멘트')로 이루어진 '벽돌-시멘트' 구조(brick-and-mortar model)이며, 이 구조가 경표피수분손실(TEWL)을 방지한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Skin Barrier Function and Disruption Mechanisms",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11510310/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 인간 피부",
+        "시기": "생리적 항상성",
+        "지역": "글로벌",
+        "분류": "해부학·생리"
+      },
+      "caution": "이 모델은 단순화이며, 실제로는 각질층이 15~20층의 세포층으로 이루어져 있고, 층상 구조도 동적으로 변한다.",
+      "cautionSource": "피부생리학 문헌"
+    },
+    {
+      "id": "skin-barrier-lipid-composition-ceramide-cholesterol-fatty-acid",
+      "claim": "피부 장벽의 지질 매트릭스는 세라마이드(~50%), 콜레스테롤(~25%), 유리지방산(~15%)으로 이루어져 있으며, 이 세 성분의 비율이 최적 상태(대략 1:1:1 몰 비율 근처)일 때 장벽 기능이 최대화된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Pathogenic and Therapeutic Implications of Ceramide Abnormalities in Atopic Dermatitis",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8468445/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "건강한 피부",
+        "시기": "정상 상태",
+        "지역": "글로벌",
+        "분류": "생화학 조성"
+      },
+      "caution": "★비율이 정확히 몇 %인지에 대해서는 연구마다 약간의 편차가 있으며, 신체 부위에 따라서도 달라질 수 있다. 절대값보다는 '비율의 균형이 중요'라는 원리가 핵심이다.",
+      "cautionSource": "피부 지질학 문헌"
+    },
+    {
+      "id": "barrier-disruption-causes-tewl-increase-inflammation",
+      "claim": "피부 장벽이 손상되면 경표피수분손실(TEWL)이 증가하고, 동시에 외부 자극원(irritants, allergens)의 침투 증가로 염증이 시작된다. 이는 악순환을 형성하여 추가 장벽 손상을 초래한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Skin Pharmacology and Physiology: The Skin Barrier and Moisturization",
+      "source_url": "https://karger.com/spp/article/36/4/174/863006/The-Skin-Barrier-and-Moisturization-Function",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "손상된 피부",
+        "시기": "손상 직후 및 진행 기간",
+        "지역": "글로벤",
+        "분류": "병리 메커니즘"
+      },
+      "caution": "이것이 광고에서 '장벽 손상 = 모든 피부 문제의 원인'처럼 단순화되는 것을 경계해야 한다. 장벽 손상은 증상을 악화시키지만 원인은 다양하다.",
+      "cautionSource": null
+    },
+    {
+      "id": "barrier-recovery-timeline-weeks-to-months",
+      "claim": "완전히 손상된 피부 장벽의 회복은 통상적으로 2~4주의 집중 관리로 증상 개선이 가능하지만, 완전한 지질 조성 복원에는 수주~수개월이 소요될 수 있다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Clinical Studies on Barrier Recovery Timeline (Various RCTs)",
+      "source_url": "https://clinicaltrials.gov/search?cond=Skin+Barrier+Repair",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "장벽 손상 환자",
+        "시기": "손상 직후 ~ 6개월",
+        "지역": "글로벨",
+        "분류": "회복 기간"
+      },
+      "caution": "★'7일 안에 장벽 복구'는 마케팅 과장이고, 실제로는 개인차가 크며 심한 손상은 전문가 진료가 필요하다. 경증 건조증은 2주 내 개선, 심한 아토피는 개월 단위 관리가 현실적이다.",
+      "cautionSource": "임상 경험 및 RCT 메타 분석"
+    },
+    {
+      "id": "barrier-damage-causes-multiple-pathways-sensitivity-allergy-eczema",
+      "claim": "장벽 손상은 '민감 피부' 상태를 만들며, 이는 자극 반응성 증가(irritant contact dermatitis), 알레르기 감작 증가, 또는 기존 아토피 악화를 초래할 수 있다. 각각 다른 메커니즘이고 다른 관리 방식이 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Topical Application of Centella asiatica in Wound Healing and Barrier Dysfunction",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11510310/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "피부염 또는 민감 피부 환자",
+        "시기": "손상 상태 진행 중",
+        "지역": "글로벌",
+        "분류": "병생리학"
+      },
+      "caution": "★'장벽 손상'이라는 단일 진단으로 모든 피부 문제를 설명하는 것을 조심. 근본 원인이 자극성인지, 알레르기성인지, 염증성인지에 따라 치료가 달라진다.",
+      "cautionSource": "피부의학 진료 기준"
+    },
+    {
+      "id": "barrier-disruption-lyso-sphingolipids-inflammatory-pathway",
+      "claim": "아토피성 피부염에서 세라마이드와 스핑고미엘린의 비정상 수해(hydrolysis)로 글루코실스핑고신(GS)과 스핑고신-인산-콜린(SPC) 같은 리소스핑고지질이 축적되며, 이들이 NF-κB 신호와 염증을 증폭시키는 악순환을 형성한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Lysosphingolipids in Ceramide-Deficient Skin Lipid Models",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11743119/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "아토피성 피부염 환자",
+        "시기": "질환 진행 중",
+        "지역": "글로벌",
+        "분류": "생화학 메커니즘"
+      },
+      "caution": "이것은 기초 생화학 메커니즘이며, 아직 이 경로를 타겟하는 임상 치료법이 제한적이다. 집필에서 과도한 희망을 주면 안 된다.",
+      "cautionSource": "세포 생물학 문헌"
+    }
+  ]
+}

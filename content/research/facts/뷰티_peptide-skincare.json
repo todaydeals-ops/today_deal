@@ -1,0 +1,172 @@
+{
+  "topic": "펩타이드 스킨케어: 신호펩타이드·캐리어펩타이드, 피부 침투 한계, 콜라겐 자극 근거",
+  "brand": "성분 (펩타이드)",
+  "article": "예정",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "rct-randomized-controlled-trial-definition-gold-standard",
+    "small-sample-size-low-statistical-power",
+    "surrogate-endpoint-vs-clinical-outcome-discordance"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "copper-tripeptide-1-signal-peptide-collagen-elastin-stimulation",
+      "claim": "구리 삼펩타이드(copper tripeptide-1)는 신호펩타이드(signaling peptide)이면서 캐리어펩타이드(carrier peptide) 역할을 하며, 콜라겐과 엘라스틴 생성을 자극하여 피부를 더 탄력 있고 매끄럽게 보이도록 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: An Open-Label Study to Assess the Efficacy and Tolerability of a Multifunctional, 10-Peptide Face and Neck Serum",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12968976/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인",
+        "분류": "신호전달·생성자극",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "signal-inhibitory-peptides-collagen-elastin-antiaging",
+      "claim": "신호펩타이드와 억제펩타이드는 콜라겐과 엘라스틴을 생성하고 노화 징후를 예방하며 피부 질감을 개선한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: An Open-Label Study to Assess the Efficacy and Tolerability of a Multifunctional, 10-Peptide Face and Neck Serum",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12968976/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인",
+        "분류": "항노화 메커니즘",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "oral-low-molecular-weight-collagen-peptide-12-week-wrinkle-efficacy",
+      "claim": "저분자 콜라겐 펩타이드 경구 섭취 무작위 대조 시험에서 12주 후 주름 평가 점수와 주름 깊이, 높이, 시각적 심각도 3가지 파라미터가 플라시보군보다 유의미하게 개선되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Oral Intake of Low-Molecular-Weight Collagen Peptide Improves Hydration, Elasticity, and Wrinkling in Human Skin",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6073484/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인",
+        "분류": "주름개선",
+        "시기": "12주",
+        "경로": "경구 섭취",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "bioactive-collagen-peptide-eye-wrinkle-volume-49-percent-reduction",
+      "claim": "생리활성 콜라겐 펩타이드 2.5g 1일 1회 114명 여성(45~65세) 무작위 대조 시험에서 4주 후 눈 주름 부피가 플라시보 대비 유의미하게 감소했으며, 8주 후 최대 49.9% 감소를 기록했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Oral intake of specific bioactive collagen peptides reduces skin wrinkles and increases dermal matrix synthesis",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/24401291/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "중년 여성(45~65세)",
+        "분류": "주름개선",
+        "부위": "눈 주름",
+        "시기": "4~8주",
+        "경로": "경구 섭취",
+        "지역": "글로벌"
+      },
+      "caution": "★경구 콜라겐 펩타이드는 국소 도포와 다른 대리지표. 혈중 흡수 후 피부 콜라겐으로 재합성되는지 직접 입증된 임상 기전은 불명확.",
+      "cautionSource": "임상 기전 평가"
+    },
+    {
+      "id": "collagen-peptide-mmp-inhibition-collagenase-reduction",
+      "claim": "생리활성 콜라겐 펩타이드 섭취는 콜라게나제 발현과 젤라티나제(gelatinase) 활성을 감소시켜 진피 콜라겐 분해를 억제하고, 그 결과 피부 주름과 경피수분손실이 유의미하게 감소했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Oral intake of specific bioactive collagen peptides reduces skin wrinkles and increases dermal matrix synthesis",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/24401291/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반",
+        "분류": "생화학 기전",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "topical-peptide-skin-penetration-500da-molecular-weight-barrier",
+      "claim": "500 Da 이상의 분자량을 가진 펩타이드와 단백질은 각질층을 독립적으로 투과하기 어렵다. 각질층의 고도로 조직된 구조 때문에 대분자 물질의 투과가 주요 과제다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Enhancing Dermal Absorption of Cosmeceuticals: Innovations and Techniques for Targeted Skin Delivery; Interaction of nanoparticles and cell-penetrating peptides with skin",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12547863/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반",
+        "분류": "피부 침투 생물물리학",
+        "지역": "글로벌"
+      },
+      "caution": "★국소 펩타이드 제품의 표기 '콜라겐 펩타이드가 피부 깊숙이 침투'는 과학적 기반이 약하다. 대부분의 펩타이드는 각질층 하부로 가지 못한다.",
+      "cautionSource": "생물물리학 원칙"
+    },
+    {
+      "id": "topical-peptide-hydrophilic-stratum-corneum-barrier-challenge",
+      "claim": "대부분의 펩타이드는 친수성(hydrophilic)이고 분자량이 크므로, 지질로 된 각질층을 통과하기가 극히 어렵다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Enhancing Dermal Absorption of Cosmeceuticals: Innovations and Techniques for Targeted Skin Delivery",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12547863/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반",
+        "분류": "물리화학적 장벽",
+        "지역": "글로벌"
+      },
+      "caution": "★국소 도포 펩타이드 제품이 실제 진피에 도달하는 양은 추정값도 제시되지 않는 경우가 많다.",
+      "cautionSource": "제형 과학"
+    },
+    {
+      "id": "topical-peptide-bioavailability-mechanism-understanding-limited",
+      "claim": "국소 적용 시 펩타이드의 실제 피부 투과성, 생체이용률, 작용 메커니즘에 대한 이해는 제한적이며, 특히 일반 처방전 없이 구매할 수 있는 포뮬레이션에서는 더욱 그렇다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Enhancing Dermal Absorption of Cosmeceuticals: Innovations and Techniques for Targeted Skin Delivery",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12547863/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화장품 등급",
+        "분류": "메커니즘 불명확",
+        "지역": "글로벌"
+      },
+      "caution": "★'펩타이드=효과'라는 광고 표현은 생체이용률 미확인으로 부정확할 가능성이 높다.",
+      "cautionSource": "임상 근거 부족"
+    },
+    {
+      "id": "peptide-delivery-enhancement-chemical-penetration-enhancers-cpp",
+      "claim": "펩타이드의 피부 투과를 강화하기 위해 화학적 투과 증강제(CPE)와 세포투과펩타이드(CPP, cell-penetrating peptides)가 널리 연구되고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Enhancing Dermal Absorption of Cosmeceuticals: Innovations and Techniques for Targeted Skin Delivery; Topical Delivery of Protein and Peptide Using Novel Cell Penetrating Peptide IMT-P8",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12547863/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "제형 혁신",
+        "분류": "투과 증강 기술",
+        "지역": "글로벌"
+      },
+      "caution": "★투과 증강제 사용은 피부 자극 위험과 트레이드오프가 있다.",
+      "cautionSource": "제형 개발 지식"
+    },
+    {
+      "id": "peptide-skincare-efficacy-evidence-mostly-surrogate-endpoint",
+      "claim": "펩타이드 스킨케어 제품의 대부분의 임상 효능 보고는 피부 색상, 탄력성 등 대리지표(surrogate endpoint)에 기반하며, 콜라겐 신합성 같은 생화학 지표나 광학 측정(biomechanics)을 근거로 한다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PubMed: Skin permeability, a dismissed necessity for anti-wrinkle peptide performance",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/35302659/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "펩타이드 제품군",
+        "분류": "효능 평가 수준",
+        "지역": "글로벌"
+      },
+      "caution": "★생화학 지표 개선이 임상적 주름 개선(visible wrinkle reduction)으로 이어지는지 의문. 경구 콜라겐 펩타이드 연구는 경로(oral)가 다름.",
+      "cautionSource": "임상 근거 위계 검토"
+    }
+  ]
+}

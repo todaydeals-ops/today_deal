@@ -1,0 +1,114 @@
+{
+  "topic": "레티놀 · 레티노이드 계열 주름개선: 강도별 비교, 자극 프로파일, 임신부 금기",
+  "brand": "성분 (레티놀·레티노이드)",
+  "article": "예정",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "rct-randomized-controlled-trial-definition-gold-standard",
+    "meta-analysis-systematic-review-highest-evidence-hierarchy",
+    "industry-sponsored-research-bias-conflict-of-interest"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "adapinoid-vs-retinol-12-week-wrinkle-efficacy",
+      "claim": "12주 무작위 대조 시험에서 올레일 아다팔레네이트(OA)는 주름 심각도를 9.45% 개선했으나, 레티놀은 4.11% 개선하여 아다팔렌 계열이 기초 레티놀보다 약 2.3배 효과적이었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: A prospective, double-blinded, randomized head-to-head clinical trial of topical adapinoid (oleyl adapalenate) versus retinol",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11608876/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인",
+        "분류": "주름개선",
+        "시기": "12주",
+        "지역": "글로벌"
+      },
+      "caution": "기초 레티놀과 처방 트레티노인은 다른 분자. 아다팔렌은 화장품용 강한 레티노이드이며, 일반 OTC 레티놀과 시간-반응 곡선이 다를 수 있다.",
+      "cautionSource": "임상 시험 설계"
+    },
+    {
+      "id": "retinaldehyde-vs-retinol-bioavailability-10fold",
+      "claim": "레티날데히드(retinaldehyde, retinal)는 기초 레티놀보다 생체이용률이 약 10배 높으며, 최근 코스메틱 업계에서 강력한 OTC 레티노이드로 주목받고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: The Clinical Efficacy and Tolerability of a Novel Retinaldehyde Serum with Firming Peptides",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/39496127/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인",
+        "분류": "생체이용률",
+        "시기": "단기",
+        "지역": "글로벌"
+      },
+      "caution": "레티날데히드도 초기 자극(retinization)을 일으킬 수 있으며, 점진적 농도 올림이 권장된다.",
+      "cautionSource": "임상 경험"
+    },
+    {
+      "id": "retinyl-retinoate-vs-retinol-periorbital-wrinkles",
+      "claim": "레티닐 레티노에이트(retinyl retinoate)를 1일 2회 도포했을 때 기초 레티놀보다 안주위 주름 개선에 통계적으로 유의하게 더 효과적이었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Improvement in skin wrinkles from the use of photostable retinyl retinoate: a randomized controlled trial",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/19849696/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인",
+        "분류": "주름개선",
+        "부위": "안주위(periorbital)",
+        "시기": "임상시험 기간",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "retinoid-pregnancy-topical-tretinoin-category-c",
+      "claim": "처방용 트레티노인(all-trans retinoic acid)은 FDA 분류 C, 호주 치료용품청 분류 D로 기형유발 가능성이 있어 임신 가능성이 있는 여성은 피해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI StatPearls: Tretinoin",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK557478/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "임신 가능 여성",
+        "분류": "안전성",
+        "지역": "글로벌"
+      },
+      "caution": "★일부 예향 연구(n=106)에서 임신 1기 topical tretinoin 노출이 증가된 위험을 보이지 않았으나, 예방 차원에서 피하는 것이 권장된다. 경구 isotretinoin(accutane)은 명확한 기형유발성이 있어 절대 금기.",
+      "cautionSource": "PubMed: Minor malformations characteristic of the retinoic acid embryopathy and other birth outcomes"
+    },
+    {
+      "id": "topical-retinoid-photoirritant-uv-caution",
+      "claim": "국소 레티노이드는 자외선 민감성을 증가시키며, 레티노이드 사용 중 자외선 차단이 필수이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Tretinoin - StatPearls - NCBI",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK557478/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인",
+        "분류": "안전성",
+        "지역": "글로벌"
+      },
+      "caution": "★피부과 권장: SPF 30 이상 자외선 차단제를 매일 사용할 것.",
+      "cautionSource": "임상 가이드"
+    },
+    {
+      "id": "retinization-initial-irritation-adjustment-period",
+      "claim": "레티노이드 사용 초기(2~4주)에 피부가 홍조, 박리, 건조함을 경험하는 '레티니제이션(retinization)' 적응 과정이 일어나며, 저농도로 시작해 점진적으로 올리는 것이 내약성을 높인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Enhancement of Efficacy of Retinoids through Enhancing Retinoid-Induced RAR Activity",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/36365229/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인",
+        "분류": "부작용·내약성",
+        "시기": "2~4주",
+        "지역": "글로벌"
+      },
+      "caution": "적응 과정은 개인차가 크며, 민감성 피부는 더 오래 걸릴 수 있다.",
+      "cautionSource": "임상 경험"
+    }
+  ]
+}

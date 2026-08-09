@@ -1,0 +1,147 @@
+{
+  "topic": "보습제의 3가지 분류: 밀폐제(occlusive), 습윤제(humectant), 연화제(emollient)의 메커니즘과 효과",
+  "brand": "뷰티·성분연구소",
+  "article": "moisturizer-occlusive-humectant",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "moisturizer-three-classes-definition-function",
+      "claim": "보습제는 3가지 기능 클래스로 분류된다: 밀폐제(occlusive, 수분 손실 방지), 습윤제(humectant, 수분 흡수 증가), 연화제(emollient, 세포 사이 공간 충전과 부드러움).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Comprehensive Review on Role of Moisturizers in Cosmetic Preparations (IJPS)",
+      "source_url": "https://www.ijpsjournal.com/article/A+Comprehensive+Review+on+Role+of+Moisturizers+in+Cosmetic+Preparations+",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 피부 타입",
+        "시기": "보습제 제형 설계 기준",
+        "지역": "글로벌",
+        "분류": "분류학"
+      },
+      "caution": "제품이 항상 한 가지 클래스에만 속하지는 않는다. 대부분의 현대 보습제는 3가지를 모두 조합한 '다중 모드' 제형이다.",
+      "cautionSource": null
+    },
+    {
+      "id": "occlusive-definition-petrolatum-tewl-reduction",
+      "claim": "밀폐제(occlusive)는 피부 표면에 소수성(hydrophobic) 배리어를 형성하여 경표피수분손실(TEWL)을 감소시키는 성분이며, 바셀린(petrolatum)이 황금 표준으로, 5% 농도에서도 TEWL을 최대 99% 감소시킬 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Clinical Measurement of Transepidermal Water Loss",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12359141/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 피부",
+        "시기": "제품 도포 직후",
+        "지역": "글로벌",
+        "분류": "TEWL 감소 효율"
+      },
+      "caution": "★'99% 감소'는 통제된 실험실 조건에서의 수치이며, 실제 생활 환경(주변 습도, 활동도, 옷 마찰 등)에서는 더 낮을 수 있다.",
+      "cautionSource": "임상 측정 환경 제약"
+    },
+    {
+      "id": "occlusive-examples-plant-oils-silicones-waxes",
+      "claim": "밀폐제 예시: 바셀린, 샐러드유, 식물유(동백오일, 아르간오일), 실리콘(디메티콘), 밀랍 등. 분자량이 크거나 소수성이 강할수록 밀폐 효과가 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "StatPearls: Moisturizers (NCBI Bookshelf)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK545171/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화장품 원료",
+        "시기": "제형 설계",
+        "지역": "글로벌",
+        "분류": "원료 목록"
+      },
+      "caution": "모든 식물유가 같은 수준의 밀폐 효과를 갖지는 않으며, 포화지방산 함량과 산화 안정성에 따라 다르다.",
+      "cautionSource": null
+    },
+    {
+      "id": "humectant-definition-water-absorption-hygroscopic",
+      "claim": "습윤제(humectant)는 그래서(hygroscopic) 성질로 주변 환경의 수분을 흡수하여 각질층의 수화도를 증가시키는 성분이며, 글리세린(glycerin), 히알루론산, 판테놀, 소르비톨, 우레아 등이 대표 예이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Comprehensive Review on Role of Moisturizers in Cosmetic Preparations (IJPS)",
+      "source_url": "https://www.ijpsjournal.com/article/A+Comprehensive+Review+on+Role+of+Moisturizers+in+Cosmetic+Preparations+",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 피부",
+        "시기": "제품 도포 후",
+        "지역": "글로벌",
+        "분류": "수화 메커니즘"
+      },
+      "caution": "★습윤제는 주변 습도에 의존한다. 상대습도 30% 이하의 건조한 환경에서는 오히려 피부의 수분을 빨아들일 수 있다는 우려가 이론적으로 존재하지만(아직 임상 증명 부족), 반드시 밀폐제와 함께 사용해야 최적 효과를 낸다.",
+      "cautionSource": "습윤제 물리화학"
+    },
+    {
+      "id": "humectant-humidity-dependent-efficacy-low-humidity-risk",
+      "claim": "습윤제 성분의 효과는 환경 습도에 크게 의존하며, 습도가 낮은 환경에서는 습윤제가 흡수한 수분이 다시 증발하면서 피부 건조를 악화시킬 수 있다는 이론이 있다. 그러나 현재까지 이를 명확히 입증한 대규모 임상시험은 제한적이다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Topical Hyaluronic Acid Efficacy Study (Seasonal Design, PubMed 2023)",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/35833366/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 피부",
+        "시기": "저습도 환경(겨울)",
+        "지역": "글로벌",
+        "분류": "환경 의존성"
+      },
+      "caution": "★'습윤제 = 저습도에서 역효과'는 아직 미증명 가설이다. 실제 임상 데이터는 저습도 시즌에도 습윤제 포함 제품의 수화 이득이 지속되었음을 보여준다. 이 부분을 글에서 다룰 때는 반드시 '이론적 우려도 있지만 현재까지의 임상 증거는 다르다'고 균형있게 표현해야 한다.",
+      "cautionSource": "습윤제 약리학 및 임상시험"
+    },
+    {
+      "id": "emollient-definition-intercellular-softening",
+      "claim": "연화제(emollient)는 에스터(esters), 트리글리세라이드(triglycerides) 등의 유성 성분으로 각질세포 사이의 틈을 채워 피부를 부드럽게 하고 탄력을 개선하는 효과를 갖는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "StatPearls: Moisturizers (NCBI Bookshelf)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK545171/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 피부",
+        "시기": "제품 도포 후",
+        "지역": "글로벌",
+        "분류": "촉감 개선"
+      },
+      "caution": "연화제는 보습(수화)보다는 '촉감 개선'에 더 초점을 맞춘 것이며, TEWL 감소 효과는 밀폐제보다 약하다.",
+      "cautionSource": null
+    },
+    {
+      "id": "multimodal-moisturizer-combination-efficacy",
+      "claim": "현대 보습제는 3가지 기능을 모두 포함하는 '다중 모드' 제형이 대부분이며, 밀폐제 + 습윤제 + 연화제의 조합이 단일 기능 제품보다 더 높은 임상 효과를 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Comprehensive Review on Role of Moisturizers in Cosmetic Preparations (IJPS)",
+      "source_url": "https://www.ijpsjournal.com/article/A+Comprehensive+Review+on+Role+of+Moisturizers+in+Cosmetic+Preparations+",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 피부 타입",
+        "시기": "현대 제형 표준",
+        "지역": "글로벌",
+        "분류": "제형 설계 트렌드"
+      },
+      "caution": "각각의 기능 비율이 제품마다 다르므로, 개인의 피부 타입(지성·건성·민감)에 따라 최적 조합이 달라질 수 있다.",
+      "cautionSource": null
+    },
+    {
+      "id": "moisturizer-efficacy-dermatological-conditions-eczema-xerosis-psoriasis",
+      "claim": "보습제는 습진(eczema), 건성증(xerosis), 건선(psoriasis) 등 다양한 피부 질환에서 증상 완화와 악화 방지에 임상적으로 입증된 효과를 보이며, 의료진이 권장하는 1차 치료 수단이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "StatPearls: Moisturizers (NCBI Bookshelf)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK545171/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "습진·건성증·건선 환자",
+        "시기": "질환 관리 중",
+        "지역": "글로벌",
+        "분류": "의료 필수성"
+      },
+      "caution": "보습제만으로 완전히 질환을 치유하지는 못하며, 질환의 원인에 따라 의약품(스테로이드, 칼시뉴린 억제제 등)이 추가로 필요할 수 있다.",
+      "cautionSource": "피부의학 임상 기준"
+    }
+  ]
+}

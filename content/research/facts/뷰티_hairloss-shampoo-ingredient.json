@@ -1,0 +1,151 @@
+{
+  "topic": "탈모 샴푸 성분: 식약처 탈모 완화 기능성 고시 성분과 실제 임상 의미",
+  "brand": "성분연구소",
+  "article": "성분연구소 탈모 샴푸 기획글",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "korea-health-food-function-claim-disease-prevention-prohibition",
+    "statistical-significance-vs-clinical-significance-distinction",
+    "disease-prevention-vs-disease-progression-delay-distinction"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "korea-hairloss-cosmetic-function-claim-category",
+      "claim": "한국 식약처는 2017년 탈모 완화 효능을 의약외품에서 기능성 화장품으로 재분류했으며, '탈모 증상 완화에 도움을 주는 화장품'으로 기능성을 인정하고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 기능성 화장품 기준 및 시험방법",
+      "source_url": "https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000196467",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "성인 소비자",
+        "classification": "규제",
+        "timing": "2017년 이후",
+        "region": "KR"
+      },
+      "caution": "의약품(치료)이 아니라 기능성 화장품(완화 보조)임을 반드시 구분할 것.",
+      "cautionSource": "식약처 기능성 화장품 기준"
+    },
+    {
+      "id": "korea-hairloss-shampoo-formula1-dexpanthenol-salicylic-menthol",
+      "claim": "한국 식약처 고시형 탈모 완화 기능성 화장품 성분 조합 1: 덱스판테놀 0.2% + 살리실릭애씨드 0.25% + 엘-멘톨 0.3%를 함유한 샴푸는 임상시험 없이 제품 허가가 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 기능성 화장품 고시",
+      "source_url": "https://www.mfds.go.kr/brd/m_1060/view.do?seq=14267",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "건강기능식품·화장품 제조사",
+        "classification": "기능성 고시 성분",
+        "timing": "2026 현행",
+        "region": "KR"
+      },
+      "caution": "고시형이므로 별도 임상시험 면제. 각 성분의 정확한 농도 준수 필수.",
+      "cautionSource": "식약처 기능성 화장품 공전"
+    },
+    {
+      "id": "korea-hairloss-shampoo-formula2-niacinamide-biotin-zinc-pyrithione",
+      "claim": "한국 식약처 고시형 탈모 완화 기능성 화장품 성분 조합 2: 나이아신아마이드 0.3% + 덱스판테놀 0.5% + 비오틴 0.06% + 징크피리치온액(50%) 2%를 함유한 샴푸는 임상시험 없이 제품 허가가 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 기능성 화장품 고시",
+      "source_url": "https://www.mfds.go.kr/brd/m_1060/view.do?seq=14267",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "건강기능식품·화장품 제조사",
+        "classification": "기능성 고시 성분",
+        "timing": "2026 현행",
+        "region": "KR"
+      },
+      "caution": "조합2에는 징크피리치온이 포함되어 있으나, 징크피리치온 단독의 탈모 감소 효과는 제한적(공식 출처는 비듬 효능만 인정).",
+      "cautionSource": "식약처 기능성 화장품 공전 및 PubMed 탈모 연구"
+    },
+    {
+      "id": "dexpanthenol-hair-collagen-synthesis-scalp-environment",
+      "claim": "덱스판테놀은 모발의 주요 구성 성분인 콜라겐 합성에 관여하고 피지 분비를 감소시켜 두피 환경을 개선하는 역할을 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 기능성 화장품 성분 정보",
+      "source_url": "https://www.mfds.go.kr/brd/m_1060/view.do?seq=14267",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "탈모 환자·일반인",
+        "classification": "성분 기전",
+        "timing": "전 기간",
+        "region": "KR"
+      },
+      "caution": "덱스판테놀의 정확한 기전에 대한 임상 근거는 제한적. 이는 '가능성'에 대한 설명이지, 입증된 탈모 치료제가 아니다.",
+      "cautionSource": "식약처 정보"
+    },
+    {
+      "id": "biotin-carbohydrate-metabolism-hair-synthesis",
+      "claim": "비오틴은 탄수화물과 아미노산 대사에 관여하여 모발 생성과 피부 장벽 복구를 돕는 역할을 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 기능성 화장품 성분 정보",
+      "source_url": "https://www.mfds.go.kr/brd/m_1060/view.do?seq=14267",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "탈모 환자·일반인",
+        "classification": "성분 기전",
+        "timing": "전 기간",
+        "region": "KR"
+      },
+      "caution": "비오틴의 탈모 효과에 대한 독립적 임상 근거는 제한적. 비오틴 단독 보충이 탈모를 치료한다는 주장은 근거 부족.",
+      "cautionSource": "식약처 정보"
+    },
+    {
+      "id": "niacinamide-scalp-blood-flow-inflammation-reduction",
+      "claim": "나이아신아마이드(비타민 B3)는 두피의 혈류 흐름을 개선하고 염증을 완화하여 건강한 두피 환경을 조성한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 기능성 화장품 성분 정보",
+      "source_url": "https://www.mfds.go.kr/brd/m_1060/view.do?seq=14267",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "탈모 환자·일반인",
+        "classification": "성분 기전",
+        "timing": "전 기간",
+        "region": "KR"
+      },
+      "caution": "혈류 개선과 실제 탈모 감소는 다른 문제. 샴푸 접촉 시간이 짧아 피부 투과성이 제한적.",
+      "cautionSource": "피부약리학 기초"
+    },
+    {
+      "id": "hairloss-shampoo-contact-time-limitation-efficacy",
+      "claim": "탈모 완화 샴푸는 사용 시 두피 접촉 시간이 1~3분으로 제한되어, 성분이 모낭까지 깊숙이 침투하기 어려운 구조적 한계가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "피부 흡수 과학, 화장품 처방학",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "탈모 샴푸 사용자",
+        "classification": "제형 한계",
+        "timing": "매 사용 시",
+        "region": "글로벌"
+      },
+      "caution": "집필 시 이 한계를 명확히 해야 '샴푸만으로 탈모 치료 가능'이라는 과대 기대를 줄일 수 있다.",
+      "cautionSource": "피부과학 기초"
+    },
+    {
+      "id": "hairloss-shampoo-vs-topical-medication-efficacy-difference",
+      "claim": "탈모 샴푸(기능성 화장품)의 효과 입증 기준은 의약품(미녹시딜, 피나스테리드)보다 훨씬 낮으며, 'RCT로 확인된 임상적 모발 증가'가 아니라 '사용감 개선' 정도의 수준이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식약처 기능성 화장품 기준 vs 의약품 기준",
+      "source_url": "https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000196467",
+      "checked": "2026-08-10",
+      "scope": {
+        "target": "소비자·의료 전문가",
+        "classification": "규제 비교",
+        "timing": "전 기간",
+        "region": "KR"
+      },
+      "caution": "규제 수준 차이를 명확히 표기할 것. 이것이 '완화 보조'와 '치료'의 차이다.",
+      "cautionSource": "식약처 화장품·의약품 분류 기준"
+    }
+  ]
+}

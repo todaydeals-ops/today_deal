@@ -1,0 +1,126 @@
+{
+  "topic": "바르는 비타민C 세럼: L-아스코르브산 안정성, pH 의존성, 유도체 동등성, 산화",
+  "brand": "성분 (L-아스코르브산·비타민C 유도체)",
+  "article": "예정",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "rct-randomized-controlled-trial-definition-gold-standard",
+    "surrogate-endpoint-vs-clinical-outcome-discordance"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "l-ascorbic-acid-ph3-most-stable-oxidation",
+      "claim": "L-아스코르브산 용액에서 최저 산화율은 pH 3에서 관찰되며, pH를 5로 올리면 산화율이 약 2배 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Influence of Trace Elements on Stabilization of Aqueous Solutions of Ascorbic Acid",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3510389/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화장품 포뮬레이션",
+        "분류": "안정성·pH",
+        "지역": "글로벌"
+      },
+      "caution": "★생리적 pH(7.35~7.45)에서는 L-아스코르브산이 불안정하므로, 역설적이게도 피부친화적 pH가 화학 안정성과 충돌한다. 실제 적용 후 산화가 빨라질 수 있다.",
+      "cautionSource": "화학 분석"
+    },
+    {
+      "id": "l-ascorbic-acid-degradation-factors-oxygen-temperature-metals",
+      "claim": "L-아스코르브산은 물에 용해되면 빠르게 분해되며, pH, 온도, 산소, 철·구리 같은 촉매제(catalyst)가 분해 속도에 영향을 미친다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Topical delivery of l-ascorbic acid spanlastics for stability enhancement",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7909477/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화장품 포뮬레이션",
+        "분류": "안정성·분해",
+        "지역": "글로벌"
+      },
+      "caution": "철·구리 같은 중금속 오염이 있으면 급격히 산화된다. 고순도 물과 산화방지제(예: 비타민E)가 필수.",
+      "cautionSource": "화학 조성"
+    },
+    {
+      "id": "vitamin-c-serum-ambient-storage-content-loss",
+      "claim": "상온 보관(15~35℃)에서의 상용 비타민C 세럼 안정성 조사에서 초기 L-아스코르브산 함량이 1.05~169.91 mg/L로 극단적으로 산포되었으며, 시간 경과에 따라 함량이 감소했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Rapid determination of L-ascorbic acid content in vitamin C serums by ultra-high-performance liquid chromatography",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/34986505/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "상용 세럼",
+        "분류": "안정성·보관",
+        "지역": "글로벌"
+      },
+      "caution": "★산포폭이 크다는 것은 제품 간 실제 유효 농도 편차가 매우 크다는 뜻. 표기된 비타민C 농도가 실제 활성 L-아스코르브산을 보증하지 않을 수 있다.",
+      "cautionSource": "분석 화학 연구"
+    },
+    {
+      "id": "stabilized-vitamin-c-serum-ph6-clinical-efficacy",
+      "claim": "안정화된 비타민C 세럼(pH 6)의 임상 시험에서 피부 광택, 톤 균등성, 방사성, 탄력성, 부드러움, 매끄러움이 진행적이고 유의미하게 개선되었으며, 세미라인도 감소했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: In vivo efficacy of a stabilized Vitamin C-based serum at pH 6 on some ageing facial signs",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/39788601/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인 여성",
+        "분류": "안티에이징·미백",
+        "지역": "글로벌"
+      },
+      "caution": "pH 6은 최적 안정성(pH 3)과 생리적 호환성의 타협점. 안정화 기술(나노입자·봉입 등)이 포함되었을 가능성 높음.",
+      "cautionSource": "포뮬레이션 추론"
+    },
+    {
+      "id": "vitamin-c-derivative-stability-hierarchy-map-sap-ap",
+      "claim": "비타민C 유도체의 안정성 순서: 마그네슘 아스코르브산포스페이트(MAP) > 소듐 아스코르브산포스페이트(SAP) > 아스코르빌팔미테이트(AP). L-아스코르브산은 유도체보다 산화 안정성이 떨어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Stability of vitamin C derivatives in solution and topical formulations; In vitro antioxidant activity and in vivo efficacy",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/9172105/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화장품 포뮬레이션",
+        "분류": "안정성 비교",
+        "지역": "글로벌"
+      },
+      "caution": "아스코르빌팔미테이트는 가수분해 위험이 있으며, 유도체라도 직접 L-아스코르브산과 동등한 임상 효능을 입증한 비교 연구는 제한적이다.",
+      "cautionSource": "문헌 검토"
+    },
+    {
+      "id": "vitamin-c-derivative-limited-efficacy-comparison-data",
+      "claim": "비타민C 유도체(MAP, SAP, AP)는 광범위하게 사용되고 산화 저항성이 있지만, 실제 임상 사용에서 이들 간의 직접 효능 비교 데이터는 제한적이며, 모두 항산화제로 작동한다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PubMed: In vitro antioxidant activity and in vivo efficacy of topical formulations containing vitamin C and its derivatives",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/19159387/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화장품 제형",
+        "분류": "효능 비교",
+        "지역": "글로벌"
+      },
+      "caution": "★'유도체=L-아스코르브산 대체'라는 가정은 근거 부족. In vitro 항산화력과 in vivo 피부 효과가 일치하지 않을 수 있다.",
+      "cautionSource": "임상 근거 평가"
+    },
+    {
+      "id": "ascorbyl-palmitate-skin-penetration-better-than-l-ascorbic-acid",
+      "claim": "아스코르빌팔미테이트(ascorbyl palmitate)는 L-아스코르브산보다 피부 침투 능력이 우수하다는 보고가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: In vitro antioxidant activity and in vivo efficacy of topical formulations containing vitamin C and its derivatives",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/19159387/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "피부 투과",
+        "분류": "생체이용률",
+        "지역": "글로벌"
+      },
+      "caution": "침투 능력이 높아도 피부 내에서 활성 L-아스코르브산으로 변환되는 효율성은 별개 문제.",
+      "cautionSource": "제형 과학"
+    }
+  ]
+}

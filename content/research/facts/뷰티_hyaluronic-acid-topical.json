@@ -1,0 +1,117 @@
+{
+  "topic": "바르는 히알루론산의 피부 수화 효과, 분자량 역할, 저습도 논쟁",
+  "brand": "뷰티·성분연구소",
+  "article": "hyaluronic-acid-topical",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "rct-randomized-controlled-trial-definition-gold-standard",
+    "surrogate-endpoint-vs-clinical-outcome-discordance",
+    "industry-sponsored-research-bias-conflict-of-interest"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "hyaluronic-acid-humectant-definition-mechanism",
+      "claim": "히알루론산은 습윤제(humectant)로 분류되며, 표피 내 수분을 더 깊은 층(진피)에서 끌어올려 각질층의 수화도를 증가시키는 물리적 작용 메커니즘을 갖는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Hyaluronic Acid in Topical Applications - Forms and Biological Effects",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41463312/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 피부",
+        "시기": "전 연식",
+        "지역": "글로벌",
+        "분류": "성분 기전"
+      },
+      "caution": "습윤제는 주변 습도에 크게 의존하며, 특히 저습도 환경(상대습도 30% 이하)에서는 역효과 가능성이 이론적으로 존재한다.",
+      "cautionSource": "습윤제 물리화학 문헌"
+    },
+    {
+      "id": "hyaluronic-acid-molecular-weight-penetration-efficacy",
+      "claim": "히알루론산의 분자량이 효과에 영향을 미치며, 100 kDa 이상의 고분자 히알루론산은 피부 표면에 머물러 수화 막을 형성하고, 100 kDa 이하의 저분자 히알루론산은 표피 깊숙이 침투할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Multicenter Clinical Evaluation of Topical Hyaluronic Acid Serum (PubMed, 2023)",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/35833366/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 건강 피부",
+        "시기": "제품 도포 직후~4개월",
+        "지역": "글로벌",
+        "분류": "제형·분자량"
+      },
+      "caution": "★저분자 히알루론산이 더 깊이 침투한다고 해서 무조건 효과가 크지는 않다. 고분자 버전이 표피 수화에만 특화되면 그것도 유효한 설계일 수 있다.",
+      "cautionSource": "피부약리학 문헌"
+    },
+    {
+      "id": "hyaluronic-acid-clinical-trial-hydration-improvement",
+      "claim": "다기관 임상시험(4개월, 고분자 히알루론산 + 펩타이드 조합)에서 4주차와 8주차에 기저선 대비 수화도 유의미한 증가(p<0.0001)가 관찰되었으며, 세밀한 주름, 거친 질감, 홍반, 건조함의 유의미한 개선이 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Multicenter Clinical Evaluation of Topical Hyaluronic Acid Serum (PubMed, 2023)",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/35833366/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 성인 지원자",
+        "시기": "2021년 11월~2022년 3월(가을-겨울)",
+        "지역": "글로벌(다기관)",
+        "분류": "임상 효과"
+      },
+      "caution": "★이 연구는 제조사(Alastin Skincare/Galderma) 후원이며, 개방형 시험(open-label)이므로 맹검화되지 않았다. 또한 히알루론산 + 펩타이드 조합이므로 히알루론산 단독 효과 분리가 어렵다.",
+      "cautionSource": "임상시험 메타데이터"
+    },
+    {
+      "id": "hyaluronic-acid-low-humidity-water-loss-theoretical-risk",
+      "claim": "이론적으로 습윤제는 저습도 환경에서 역효과를 낼 수 있으며, 한 임상 연구는 가을-겨울(저습도 시기)에 위약군에서 약 8.6%의 계절적 수화도 감소를 관찰했다(히알루론산군에서는 유의미한 감소 없음).",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Topical Hyaluronic Acid Efficacy Study (Seasonal Design)",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/35833366/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 성인",
+        "시기": "저습도 계절(가을-겨울)",
+        "지역": "글로벌",
+        "분류": "환경 의존성"
+      },
+      "caution": "★중요한 주의: '히알루론산이 저습도에서 오히려 수분을 뺏는다'는 명제는 **증명되지 않았다.** 이론적 우려일 뿐이며, 실제 임상 데이터는 저습도 계절에도 히알루론산의 수화 이득이 지속되었음을 보여준다. 이 논쟁을 글에서 다룰 때는 '과학적 우려도 있지만 임상 증거는 그렇지 않다'는 균형잡힌 표현이 필수다.",
+      "cautionSource": "임상 설계 및 습윤제 물리화학"
+    },
+    {
+      "id": "hyaluronic-acid-occlusive-necessity-complementary",
+      "claim": "히알루론산과 같은 습윤제는 밀폐제(occlusive, 예: 바셀린, 식물유)와 함께 사용할 때 가장 효과적이며, 습윤제만 사용하면 흡수한 수분이 다시 증발할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Clinical Measurement of TEWL and Moisturizer Efficacy (NCBI/PMC)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12359141/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 피부 타입",
+        "시기": "제품 설계 원칙",
+        "지역": "글로벌",
+        "분류": "처방 원리"
+      },
+      "caution": "★'히알루론산만 써도 된다'는 마케팅은 과장이며, 실제로는 유분(오일, 연화제)이나 밀폐제 성분이 병행되어야 최적 효과를 발휘한다.",
+      "cautionSource": "보습제 처방 기준"
+    },
+    {
+      "id": "hyaluronic-acid-oral-vs-topical-distinction",
+      "claim": "경구 히알루론산(oral HA)과 바르는 히알루론산(topical HA)은 기전이 다르며, 경구 히알루론산의 효과는 섭취된 히알루론산 자체가 피부에 축적된다는 증거가 부족하고 대신 장내 소화 대사산물 또는 면역 자극이 역할할 가능성이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Oral Sodium Hyaluronate Study (Nature Scientific Reports, 2025)",
+      "source_url": "https://www.nature.com/articles/s41598-025-32758-5",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 성인",
+        "시기": "2025",
+        "지역": "글로벌",
+        "분류": "투여 경로"
+      },
+      "caution": "★'경구 히알루론산 = 피부 수화'로 단순화하면 안 된다. 경구 제품의 임상 근거는 아직 제한적이며, 피부 도포 제품과는 다른 기전을 고려해야 한다.",
+      "cautionSource": "약물 동태학 원리"
+    }
+  ]
+}

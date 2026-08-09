@@ -1,0 +1,164 @@
+{
+  "topic": "무기자차 vs 유기자차: 성분·메커니즘·흡수·안전성·규제 지위 비교, 옥시벤존 혼란 정리, 산호초 이슈",
+  "brand": "성분연구소",
+  "article": "뷰티_physical-vs-chemical-sunscreen",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "mineral-sunscreen-zinc-oxide-titanium-dioxide-fda-grase",
+      "claim": "산화아연과 이산화티탄은 FDA로부터 GRASE(Generally Recognized As Safe and Effective) 지정을 받은 유일한 자외선차단 성분이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA: OTC Sunscreen Ingredients - Category Status",
+      "source_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/labeling-and-effectiveness-testing-sunscreen-drug-products-over-counter-human-use-small-entity",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "무기자차 규제",
+        "분류": "FDA 지위",
+        "시기": "2026년",
+        "지역": "미국"
+      },
+      "caution": "한국 식약처도 동일하게 산화아연·이산화티탄을 기능성화장품으로 승인했다.",
+      "cautionSource": "식약처 기능성화장품 고시"
+    },
+    {
+      "id": "mineral-sunscreen-mechanism-physical-blocking-scattering",
+      "claim": "무기자차(산화아연·이산화티탄)는 피부 표면에 머물면서 자외선을 물리적으로 차단하거나 산란시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Mineral vs Chemical Sunscreen Comparison",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "무기자차 메커니즘",
+        "분류": "작동 원리",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "mineral-sunscreen-zinc-oxide-broad-spectrum-titanium-uva-limited",
+      "claim": "산화아연은 광범위 스펙트럼(UVA·UVB) 차단을 제공하지만, 이산화티탄은 UVB 차단에 더 효과적이고 UVA 차단은 제한적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed/Dermatology Literature: Mineral Sunscreen Spectrum Coverage",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "자외선 차단 범위",
+        "분류": "무기자차 타입별 효과",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "이산화티탄만으로는 UVA 차단이 불충분하므로 광범위 보호가 필요하면 산화아연을 선택하거나 다른 UVA 차단제를 병합해야 한다.",
+      "cautionSource": "피부과 문헌"
+    },
+    {
+      "id": "chemical-sunscreen-absorption-bloodstream-detection",
+      "claim": "화학 자차(옥시벤존, 호모살레이트 등)는 자외선을 흡수하며, 일부 성분(옥시벤존, 호모살레이트)은 혈장에서 감지되는 수준으로 체내 흡수된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JAMA Dermatology: Chemical Sunscreen Absorption Study",
+      "source_url": "https://jamanetwork.com/journals/jamadermatology",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "유기자차 흡수",
+        "분류": "혈장 검출",
+        "시기": "임상 연구",
+        "지역": "글로벌"
+      },
+      "caution": "★혼동 방지: 혈장 검출 = 유해하다는 뜻이 아니다. 현재 증거는 해롭지 않음을 시사하지만, FDA는 추가 안전 자료를 요청했다.",
+      "cautionSource": "JAMA Dermatology"
+    },
+    {
+      "id": "chemical-sunscreen-fda-category-iii-more-data-needed",
+      "claim": "FDA는 2021년 대부분의 화학 자차(옥시벤존, 호모살레이트, 아보벤존, 옥톡릴렌, 호모살레이트, 옥티녹세이트)를 Category III로 분류했으며, 이는 더 많은 안전 자료가 필요하다는 뜻이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA: OTC Sunscreen Monograph - Proposed Rule (2021)",
+      "source_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/labeling-and-effectiveness-testing-sunscreen-drug-products-over-counter-human-use-small-entity",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "유기자차 규제 지위",
+        "분류": "FDA Category III",
+        "시기": "2021년",
+        "지역": "미국"
+      },
+      "caution": "Category III는 금지가 아니라 '추가 안전성 입증 필요'를 의미한다. 현재도 판매 가능하지만 규제 불확실성이 있다.",
+      "cautionSource": "FDA 규정"
+    },
+    {
+      "id": "chemical-sunscreen-oxybenzone-fda-absorption-threshold-0-5-ng-ml",
+      "claim": "JAMA 연구에 따르면 화학 자차는 단 한 번의 도포 후에도 FDA 안전 기준(0.5 ng/mL)을 초과하는 혈중 수치를 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JAMA Dermatology: Chemical Sunscreen Absorption After Single Application",
+      "source_url": "https://jamanetwork.com/journals/jamadermatology",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화학 자차 혈중 수치",
+        "분류": "안전성 평가",
+        "시기": "임상 연구",
+        "지역": "미국"
+      },
+      "caution": "★중요: 혈중 수치가 기준을 초과 ≠ 유해하다는 증명. FDA는 이를 '더 연구해야 할 신호'로 봤지, '해로움'으로 판정하지 않았다. 하지만 무기자차는 혈중 검출이 없어 이 논쟁을 피한다.",
+      "cautionSource": "JAMA Dermatology"
+    },
+    {
+      "id": "mineral-sunscreen-no-blood-detection-skin-barrier-retention",
+      "claim": "무기자차(산화아연, 이산화티탄)는 입자 크기가 커서 피부 표면에 머물고 혈중에서 검출되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dermatology Literature: Mineral Sunscreen Safety Profile",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "무기자차 혈중 흡수",
+        "분류": "안전성 프로필",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "chemical-sunscreen-lighter-better-cosmetic-feel-no-whitcast",
+      "claim": "화학 자차는 무기자차보다 가볍고 백탁(white cast)이 적으며 화장 감이 더 좋다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dermatology Consensus: Chemical vs Mineral Sunscreen Cosmetics",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "피부감 비교",
+        "분류": "사용성",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "coral-reef-concern-oxybenzone-not-proven-causation",
+      "claim": "'산호초 파괴'는 옥시벤존 규제의 정치적 명분으로 사용되었으나, 실제 인과관계는 입증되지 않았으며 오히려 산호초 스트레스의 주요 원인은 해수 온난화다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Marine Biology Literature, FDA Policy Review",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "산호초 영향",
+        "분류": "환경 논쟁",
+        "시기": "규제 동향",
+        "지역": "글로벌"
+      },
+      "caution": "★집필 시 중점: '산호초 보호'를 옥시벤존의 주 위험으로 제시하지 말 것. 선크림 제한이 산호초 보호에 도움이 된다는 증거가 약하며, 실제 위험은 기후 변화 정책 부재에 있다. 이 부분의 과장은 우리 미디어 신뢰도를 크게 손상시킬 수 있다.",
+      "cautionSource": "환경 과학 문헌"
+    }
+  ]
+}

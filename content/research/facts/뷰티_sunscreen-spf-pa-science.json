@@ -1,0 +1,96 @@
+{
+  "topic": "자외선차단 지수의 과학: SPF·PA 측정 방식, 표준 도포량(2mg/cm²) vs 실제 도포량, 식약처 기능성화장품 기준",
+  "brand": "성분연구소",
+  "article": "뷰티_sunscreen-spf-pa-science",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "spf-measurement-standard-dose-2mg-cm2-fda",
+      "claim": "FDA 표준에 따르면 SPF 측정은 2mg/cm²의 도포량을 기준으로 하며, 이는 약 80±2mg을 더블 가중치 절차로 전달하는 것과 같다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA: Labeling and Effectiveness Testing - Sunscreen Drug Products for OTC Use",
+      "source_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/labeling-and-effectiveness-testing-sunscreen-drug-products-over-counter-human-use-small-entity",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "SPF 측정 표준",
+        "분류": "도포량 기준",
+        "시기": "FDA 규정",
+        "지역": "미국"
+      },
+      "caution": "한국 식약처의 기능성화장품 기준도 동일하게 2mg/cm²를 기준으로 설정하고 있다.",
+      "cautionSource": "식약처 기능성화장품 고시"
+    },
+    {
+      "id": "spf-measurement-method-med-ratio-erythemal-dose",
+      "claim": "SPF는 제품 적용 시 최소홍반용량(MEDp)을 제품 무적용 시 최소홍반용량(MEDu)으로 나눈 비율이며, 자외선 시뮬레이터에서 증가하는 6단계 용량으로 도포 후 16~24시간 후 홍반 반응을 평가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA: Clinical Study Protocol for SPF Evaluation",
+      "source_url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/order/supportDoc/OTC000039/1.3_Administrative_Information/rev_PROTOCOL_HP-25-0307a_Rev2_090026f88e12e701.pdf",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "SPF 측정 원리",
+        "분류": "임상 평가 방법",
+        "시기": "FDA 규정",
+        "지역": "미국"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "spf-real-world-application-dose-gap-0-5-1-0-mg-cm2",
+      "claim": "일반인의 평균 도포량은 0.5~1.0mg/cm²이므로, 표시된 SPF의 실제 효과는 1/4에서 1/2 수준이다. 예: SPF50 제품은 실제 SPF12~25만 제공한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA: Sunscreen Labeling and Effectiveness Testing Guidelines",
+      "source_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/labeling-and-effectiveness-testing-sunscreen-drug-products-over-counter-human-use-small-entity",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "실사용 시 SPF 효과",
+        "분류": "도포량에 따른 효과 저하",
+        "시기": "임상 실측",
+        "지역": "글로벌"
+      },
+      "caution": "★집필 시 중점: 독자에게 '표시 SPF를 얻으려면 충분히 많은 양을 도포해야 한다'는 점을 명확히 전달해야 한다. 이것이 선크림의 최대 오해 원인이다.",
+      "cautionSource": "FDA 가이드라인"
+    },
+    {
+      "id": "sunscreen-waiting-time-15-minutes-before-uv-exposure",
+      "claim": "도포 후 최소 15분 이상의 대기 시간이 필요하며, 이는 제품이 피부에 안정적으로 정착하는 데 필요한 시간이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA: Clinical Study Protocol for SPF Evaluation",
+      "source_url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/order/supportDoc/OTC000039/1.3_Administrative_Information/rev_PROTOCOL_HP-25-0307a_Rev2_090026f88e12e701.pdf",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "선크림 사용 프로토콜",
+        "분류": "효과 발현 시간",
+        "시기": "FDA 기준",
+        "지역": "글로벌"
+      },
+      "caution": "실내에서 도포 후 바로 외출해도 효과가 있지만, 최적 효과는 15분 후부터다.",
+      "cautionSource": "FDA 규정"
+    },
+    {
+      "id": "sunscreen-reapplication-frequency-2-hours-water-exposure",
+      "claim": "표준 선크림은 2시간마다 재도포가 권장되며, 수영이나 땀 노출 시에는 즉시 재도포가 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA: Sunscreen Labeling Guidelines",
+      "source_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/labeling-and-effectiveness-testing-sunscreen-drug-products-over-counter-human-use-small-entity",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "선크림 재도포 기준",
+        "분류": "효과 유지",
+        "시기": "FDA 규정",
+        "지역": "미국"
+      },
+      "caution": "방수 선크림도 2시간이 기준이며, '12시간 방수' 같은 표현은 미국에서는 규제되어 허용되지 않는다.",
+      "cautionSource": "FDA 규정"
+    }
+  ]
+}

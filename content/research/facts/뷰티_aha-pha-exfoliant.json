@@ -1,0 +1,113 @@
+{
+  "topic": "AHA·PHA 각질제거: 글리콜산·락틱산 분자량·농도·pH 기준, 임상 효과, 자극도 차이",
+  "brand": "성분연구소",
+  "article": "뷰티_aha-pha-exfoliant",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "aha-glycolic-acid-smallest-molecule-weight",
+      "claim": "글리콜산은 모든 AHA 중 가장 작은 분자량(76 달톤)을 가지고 있어, 다른 AHA보다 각질층을 빠르고 깊게 침투한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MDPI: Topical AHA in Dermatology - Formulations, Mechanisms of Action, Efficacy",
+      "source_url": "https://www.mdpi.com/2079-9284/10/5/131",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화학적 각질제거제",
+        "분류": "AHA 분자량 비교",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "분자가 작을수록 침투력이 강하므로 자극 위험도 더 높다. 민감한 피부에는 락틱산이 더 적합할 수 있다.",
+      "cautionSource": "MDPI 피부과 문헌"
+    },
+    {
+      "id": "aha-concentration-minimum-8-percent-efficacy",
+      "claim": "임상 효과를 보려면 최소 8% AHA 농도가 필요하며, pH가 최적화되면 4%도 가능하지만 저자극용 유지 제품에 국한된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MDPI: Topical AHA in Dermatology - Formulations, Mechanisms of Action, Efficacy",
+      "source_url": "https://www.mdpi.com/2079-9284/10/5/131",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "AHA 농도 기준",
+        "분류": "효과적 농도",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "낮은 농도(4% 이하)는 유지용이며, 실제 각질 제거·피부 재생을 원하면 8% 이상이 필요하다.",
+      "cautionSource": "MDPI 임상 기준"
+    },
+    {
+      "id": "aha-ph-requirement-3-5-4-5-optimal",
+      "claim": "AHA는 pH 3.5~4.5에서 가장 효과적이며, pH 3.8 이하가 최적 활성 범위이고, pH 4.5 이상에서는 각질 제거 활성이 급격히 감소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MDPI: Topical AHA in Dermatology - Formulations, Mechanisms of Action, Efficacy",
+      "source_url": "https://www.mdpi.com/2079-9284/10/5/131",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "AHA 효과 pH 범위",
+        "분류": "pH 기준",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "높은 pH는 자극을 줄이지만 효과도 뚝 떨어진다. pH 3.8 이하 제품은 자극 가능성이 높으므로 야간 용도 또는 저농도 병행이 권장된다.",
+      "cautionSource": "MDPI 포뮬레이션 기준"
+    },
+    {
+      "id": "aha-glycolic-acid-collagen-stimulation-timeline",
+      "claim": "글리콜산은 4~12주의 일관된 사용으로 콜라겐 생성을 촉진하고 피부 질감을 개선한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MDPI: Topical AHA in Dermatology - Formulations, Mechanisms of Action, Efficacy",
+      "source_url": "https://www.mdpi.com/2079-9284/10/5/131",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "글리콜산 효과",
+        "분류": "콜라겐 자극 타이밍",
+        "시기": "임상 연구",
+        "지역": "글로벌"
+      },
+      "caution": "초기 2주는 적응 기간이며, 실제 효과는 3주차부터 눈에 띈다. 개인차가 크므로 최소 4주 이상 사용이 필요하다.",
+      "cautionSource": "MDPI 임상 기준"
+    },
+    {
+      "id": "aha-lactic-acid-12-percent-efficacy-lower-irritation",
+      "claim": "12% 락틱산은 같은 농도의 글리콜산보다 피부 자극을 덜 일으키면서 질감과 색소침착을 개선한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MDPI: Topical AHA in Dermatology - Formulations, Mechanisms of Action, Efficacy",
+      "source_url": "https://www.mdpi.com/2079-9284/10/5/131",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "락틱산 vs 글리콜산",
+        "분류": "AHA 비교",
+        "시기": "임상 연구",
+        "지역": "글로벌"
+      },
+      "caution": "락틱산은 더 큰 분자이므로 침투력은 낮지만, 민감한 피부나 처음 AHA를 쓰는 사람에게 더 적합하다.",
+      "cautionSource": "MDPI 임상 기준"
+    },
+    {
+      "id": "pha-polyhydroxy-acid-higher-ph-tolerance",
+      "claim": "PHA(폴리하이드록시산)는 AHA보다 분자가 크고 높은 pH에서 작동하므로, 민감한 피부에서도 더 나은 내약성을 제공한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MDPI: Topical AHA in Dermatology - Formulations, Mechanisms of Action, Efficacy",
+      "source_url": "https://www.mdpi.com/2079-9284/10/5/131",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "PHA 특성",
+        "분류": "초민감 피부용 각질제거",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "PHA는 AHA보다 효과가 약하므로, 효과를 원하면 더 높은 농도 또는 더 오래 사용이 필요할 수 있다.",
+      "cautionSource": "MDPI 포뮬레이션 기준"
+    }
+  ]
+}
