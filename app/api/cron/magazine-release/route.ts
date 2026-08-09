@@ -2,6 +2,7 @@
 // 로컬 Windows 작업 스케줄러(run-magazine-release.cmd)가 PC 상태에 따라 멈추는 문제를 없애려고
 // Vercel Cron으로 옮긴 것. 게이트 로직은 scripts/magazine-release.mjs와 동일 기준.
 import { getSupabaseAdmin } from "@/lib/supabase/server";
+import { SUB_MEDIA_FIELDS } from "@/lib/data/magazine";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
@@ -36,15 +37,20 @@ export async function GET(request: Request): Promise<Response> {
   const sb = getSupabaseAdmin();
   if (!sb) return Response.json({ ok: false, error: "Supabase 미설정" }, { status: 500 });
 
-  // 기본 하루 2편. ?n=으로 덮어쓸 수 있고 상한은 5편.
-  const count = Math.max(1, Math.min(5, Number(new URL(request.url).searchParams.get("n")) || 2));
+  // 기본 하루 1편. 서브 미디어 3개가 주 6일을 채우게 되면서 메인까지 2편씩 낼 이유가 없어졌다.
+  // 리저브 소진 속도를 절반으로 늦춰 집필 여력을 서브 미디어 쪽에 돌린다. ?n=으로 덮어쓴다(상한 5).
+  const count = Math.max(1, Math.min(5, Number(new URL(request.url).searchParams.get("n")) || 1));
 
   const { data } = await sb
     .from("magazine")
     .select("slug,corner,title,read_min,body_html,created_at")
     .eq("is_published", false)
     .neq("corner", "report")
-    .neq("field", "수면·침구") // 잠자리연구소는 아래 별도 화·금 스케줄로 공개
+    // 서브 미디어(잠자리·알약·성분)는 아래 SUB_SCHEDULE의 요일 스케줄로만 공개한다.
+    // 여기서 "수면·침구"만 빼던 시절, 알약·성분 리저브가 메인 풀로 새어
+    // 재고 최다 코너 우선 로직에 매번 이겨버렸다(일요일 발행·요일 무시).
+    // 그 사이 메인 자체 리저브는 repair를 빼고 한 편도 못 나갔다.
+    .not("field", "in", `("${SUB_MEDIA_FIELDS.join('","')}")`)
     .order("created_at", { ascending: true });
 
   const drafts = (data ?? []) as Row[];
@@ -56,9 +62,7 @@ export async function GET(request: Request): Promise<Response> {
     (byCorner[a.corner] ||= []).push(a);
   }
 
-  // 하루 2편 = AS셀프체크(repair) 1편 + 나머지 3코너 중 1편.
-  // AS가 유입의 핵심이라 매일 1편은 반드시 나가야 하고, 나머지 한 자리는
-  // 재고가 가장 많은 코너가 가져가 편중을 막는다.
+  // 같은 코너에 편중되지 않게, 뽑을 때는 재고가 가장 많은 코너가 가져간다.
   const OTHERS = ["factcheck", "smartguide", "trendlab"];
   const pickFrom = (pool: string[]): Row | null => {
     const avail = pool.filter((c) => byCorner[c]?.length > 0);
@@ -67,9 +71,14 @@ export async function GET(request: Request): Promise<Response> {
     return byCorner[avail[0]].shift() ?? null;
   };
 
+  // 하루 1편 체제에서 repair를 언제나 1순위로 두면 나머지 3코너가 영영 못 나간다.
+  // 요일로 갈라 재고 소진 속도를 맞춘다(repair 화·목·토 3일, 나머지 4일).
+  const kstDowMain = new Date(Date.now() + 9 * 3600 * 1000).getUTCDay();
+  const repairDay = [2, 4, 6].includes(kstDowMain);
+
   const picked: Row[] = [];
-  const repairFirst = pickFrom(["repair"]); // 1순위는 언제나 AS
-  if (repairFirst) picked.push(repairFirst);
+  const first = repairDay ? pickFrom(["repair"]) ?? pickFrom(OTHERS) : pickFrom(OTHERS) ?? pickFrom(["repair"]);
+  if (first) picked.push(first);
   while (picked.length < count) {
     // AS 재고가 비면 나머지로 채우고, 나머지가 비면 AS를 한 편 더 낸다
     const row = pickFrom(OTHERS) ?? pickFrom(["repair"]);
