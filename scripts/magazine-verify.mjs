@@ -69,7 +69,22 @@ for (const f of files) {
     const call = (a.callout || "").length;
     const em = (JSON.stringify(a).match(/—/g) || []).length;
 
+    // ── 부정묘사 게이트 ── 다루는 성분·제품은 전부 향후 판매·광고 유치 대상이다.
+    // 깎아내린 글이 남으면 그 카테고리 영업이 막힌다(agents/magazine-writer.md §5).
+    // 제목: 의심 제기형("정말 ~할까")은 선택을 돕는 제목으로 바꾼다.
+    const TITLE_NEG = /정말|진짜|진위|과연|사실일까|허와 실|믿어도|전설|신화|있는가|인가\?*$/;
+    // 본문: 단정적 폄하만 잡는다. 인용형 어미(없다고·없다는·없을까)는 제외 —
+    // "효과 없다고 단정하기는 이릅니다"는 오히려 우리가 원하는 서술이라 오탐이 된다.
+    // "없다면"(조건절)·"하기만 하면"(부분문자열)도 오탐이라 어미·앞말까지 묶어서 본다.
+    const NO = "(?:습니다|어요|다(?![고는을면]))";
+    const BODY_NEG = new RegExp(
+      `(?:효과|효능|의미)가?\\s*없${NO}|쓸모없${NO}|소용없${NO}` +
+      `|돈 낭비|과대광고|[를을]\\s*기만|기만(?:적|하)|속이고 있|마케팅에 불과|허위·?과장`, "g");
+    const negHits = [...new Set((bodyText(a) + " " + (a.callout || "")).match(BODY_NEG) || [])];
+
     const bad = [];
+    if (TITLE_NEG.test(a.title || "")) bad.push("제목 의심제기형");
+    if (negHits.length) bad.push(`부정묘사(${negHits.join("/")})`);
     if (body < MIN || body > MAX) bad.push(`본문 ${body}`);
     if (faq < FAQ_MIN) bad.push(`FAQ ${faq}`);
     if (sum !== 3) bad.push(`summary ${sum}`);
@@ -101,5 +116,6 @@ console.log(`\n판정: ${pass}/${total} 통과${failures.length ? ` · ${failure
 for (const f of failures) console.log("  ✗", f);
 if (failures.length) {
   console.log(`\n기준: 본문 ${MIN}~${MAX}자(공백 제외) · FAQ ${FAQ_MIN}+ · summary 3문장 · callout ${CALLOUT_MIN}자+ · em-dash 0 · sources 1+`);
+  console.log(`      부정묘사 0 · 제목 의심제기형 금지 — "효과 없다"가 아니라 "어떤 경우에 도움이 되는지"로 쓴다(.claude/agents/magazine-writer.md §5)`);
   process.exit(1);
 }
