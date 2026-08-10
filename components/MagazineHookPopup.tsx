@@ -1,17 +1,16 @@
 "use client";
-import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
-
-// 상호연결 토스트 — 메인(오늘의딜) ↔ 잠자리연구소 교차 유도.
-// goodsleep에선 오늘의딜을, 그 외에선 잠자리연구소를 비침투적으로 안내. 세션당 1회, 6초 후, /magazine·/admin 숨김.
+// 상호연결 토스트 — 패밀리 5개 미디어를 서로 안내한다.
+// 지금 보고 있는 브랜드만 빼고 **랜덤으로 하나**를 뽑는다(예전엔 잠자리연구소로 고정이었다).
+// 세션당 1회, 6초 후 노출, /magazine·/admin에서는 숨김.
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { BRANDS, brandKeyFromHost, type Brand } from "@/lib/brands";
 
 const SEEN_KEY = "xpromo_seen_v1";
-type Promo = { label: string; hook: string; href: string; color: string };
 
 export default function MagazineHookPopup() {
   const pathname = usePathname();
-  const [promo, setPromo] = useState<Promo | null>(null);
+  const [promo, setPromo] = useState<Brand | null>(null);
   const [visible, setVisible] = useState(false);
 
   const hidden = !!pathname && (pathname.startsWith("/magazine") || pathname.startsWith("/admin"));
@@ -23,13 +22,16 @@ export default function MagazineHookPopup() {
     } catch {
       /* ignore */
     }
-    const host = window.location.hostname.toLowerCase();
-    const onSleep = host.startsWith("goodsleep") || window.location.pathname.startsWith("/goodsleep");
-    setPromo(
-      onSleep
-        ? { label: "오늘의딜", hook: "가전·리빙·디지털, 살 때 뭘 봐야 할까. 광고 없는 구매 기준.", href: "https://www.todaydeals.co.kr", color: "#d85a30" }
-        : { label: "잠자리연구소", hook: "잠 못 자는 진짜 이유, 논문 근거로 확인해보세요.", href: SUB_ORIGIN.sleep, color: "#3f5a54" }
-    );
+
+    // 서브도메인이 안 붙은 경로 접근(www/pill 등)도 함께 본다.
+    const path = window.location.pathname;
+    const pathKey = path.startsWith("/goodsleep") ? "sleep" : path.startsWith("/pill") ? "pill" : path.startsWith("/beauty") ? "beauty" : path.startsWith("/b4as") ? "b4as" : null;
+    const current = pathKey ?? brandKeyFromHost(window.location.hostname);
+
+    const pool = BRANDS.filter((b) => b.key !== current);
+    if (!pool.length) return;
+    setPromo(pool[Math.floor(Math.random() * pool.length)]);
+
     const timer = setTimeout(() => {
       setVisible(true);
       try {
@@ -62,10 +64,10 @@ export default function MagazineHookPopup() {
         >
           ✕
         </button>
-        <a href={promo.href} onClick={() => setVisible(false)} style={{ display: "block", textDecoration: "none" }}>
+        <a href={promo.url} onClick={() => setVisible(false)} style={{ display: "block", textDecoration: "none" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 11, fontWeight: 700, letterSpacing: ".3px", color: promo.color }}>
             <span style={{ width: 6, height: 6, borderRadius: 9999, background: promo.color }} />
-            {promo.label}
+            {promo.name}
           </div>
           <div style={{ fontSize: 15.5, fontWeight: 700, lineHeight: 1.5, color: "#2c2a26", margin: "9px 0 0", paddingRight: 16 }}>{promo.hook}</div>
           <div style={{ fontSize: 13, fontWeight: 700, color: promo.color, marginTop: 12, display: "inline-flex", alignItems: "center", gap: 6 }}>
