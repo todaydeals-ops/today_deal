@@ -1,0 +1,147 @@
+{
+  "topic": "식이섬유: 포만감 및 체중관리에서의 역할, 섭취 방식에 따른 주의",
+  "brand": "성분연구소",
+  "article": "예정",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "fiber-mechanism-gastric-emptying-satiety",
+      "claim": "수용성 섬유는 위 배출을 지연시키고 인지된 포만감을 증가시키며 식욕 조절에 중요한 역할을 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Unravelling the Effects of Soluble Dietary Fibre Supplementation on Energy Intake",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6352252/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "포만감 관심자",
+        "분류": "기전",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "기전은 확실하지만, 개인차가 크다.",
+      "cautionSource": "생리학"
+    },
+    {
+      "id": "fiber-weight-loss-1-25kg-meta-analysis-27rct",
+      "claim": "27개 RCT 메타분석(n=1,428)에서 식이섬유 보충군은 대조군 대비 체중이 -1.25 kg 감소했으며, 동시에 BMI, 허리둘레, 공복 인슐린, HOMA-IR도 유의하게 감소했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Journal of Clinical Nutrition: Effects of isolated soluble fiber supplementation on body weight",
+      "source_url": "https://ajcn.nutrition.org/article/S0002-9165%2822%2902702-2/fulltext",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "과체중·비만 성인",
+        "분류": "임상 효과",
+        "시기": "12주 이상",
+        "지역": "글로벌"
+      },
+      "caution": "★중요: 1.25 kg는 임상적 의미가 제한적이며, 개인이 외형 변화를 느끼기 어려울 수 있다.",
+      "cautionSource": "메타분석 효과 크기"
+    },
+    {
+      "id": "fiber-daily-intake-14g-additional-average-1-9kg-loss",
+      "claim": "식이섬유 보충 연구에서 일일 14 g 추가 섬유 섭취 시 평균 3.8개월에 1.9 kg의 체중감소가 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Prolonged Isolated Soluble Dietary Fibre Supplementation in Overweight and Obese Patients",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9268533/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "과체중·비만자",
+        "분류": "용량-반응",
+        "시기": "3.8개월",
+        "지역": "글로벌"
+      },
+      "caution": "14 g이 어느 식품에 포함되는지 파악 필요. 보충제 형태와 식품 형태의 효과 차이 가능.",
+      "cautionSource": "용량 기준"
+    },
+    {
+      "id": "soluble-vs-insoluble-fiber-soluble-more-effective",
+      "claim": "고립된 수용성 섬유는 불용성 섬유보다 에너지 섭취 감소(69% vs 30%)와 식욕 감소(59% vs 14%)에 더 자주 효과적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Unravelling the Effects of Soluble Dietary Fibre",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6352252/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "섬유 보충 사용자",
+        "분류": "섬유 종류 비교",
+        "시기": "사용 중",
+        "지역": "글로벌"
+      },
+      "caution": "개인차가 크므로, 2-4주 시도 후 반응을 평가할 것.",
+      "cautionSource": "메타분석 비교"
+    },
+    {
+      "id": "fiber-side-effects-bloating-gas-cramping-rapid-increase",
+      "claim": "섬유 섭취를 급격히 증가시키거나 수분 섭취 없이 진행하면 복부 팽만감, 가스, 경련 등의 위장관 부작용이 발생할 수 있다. 장내 박테리아가 섬유를 발효하여 가스가 생성되기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Gastrointestinal Effects and Tolerance of Nondigestible Carbohydrate Consumption",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9776669/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "섬유 보충 시작자",
+        "분류": "부작용",
+        "시기": "증량 초기",
+        "지역": "글로벌"
+      },
+      "caution": "★선택 기준: 천천히 증량(3-5일마다 5g씩)하고 충분한 물을 함께 섭취할 것.",
+      "cautionSource": "GI 부작용 가이드"
+    },
+    {
+      "id": "fiber-water-intake-8oz-per-5g-fiber",
+      "claim": "섬유 5 g당 약 8 온스(240 ml) 물을 함께 섭취할 것이 권장된다. 일반적으로 일일 최소 8컵(64 온스, 약 1.9L) 물 섭취가 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "UC Health, Northwell Health: Fiber and water intake guidance",
+      "source_url": "https://www.uchealth.com/en/media-room/articles/eating-the-right-amount-of-fiber",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "섬유 보충 사용자",
+        "분류": "복용 방법",
+        "시기": "매 섭취 시",
+        "지역": "글로벌"
+      },
+      "caution": "수분 섭취 부족 시 변비나 복부 불편감이 심해진다.",
+      "cautionSource": "의료 가이드"
+    },
+    {
+      "id": "fiber-recommended-daily-intake-25-38g-adults",
+      "claim": "성인의 권장 일일 식이섬유 섭취량은 25-38 g이며, 70 g 이상 섭취는 복부 팽만감, 가스, 위경련을 유발할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "UC Health, Weight Watchers: Fiber intake recommendations",
+      "source_url": "https://www.uchealth.com/en/media-room/articles/eating-the-right-amount-of-fiber",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인",
+        "분류": "상한 섭취량",
+        "시기": "일일",
+        "지역": "글로벌"
+      },
+      "caution": "개인차가 크므로, 개인의 소화 용량에 맞춰 조정할 것.",
+      "cautionSource": "영양 권고안"
+    },
+    {
+      "id": "fiber-gradual-increase-3-5g-every-days-gut-adaptation",
+      "claim": "섬유를 갑자기 증량하면 장내 박테리아가 적응하지 못하므로, 3-5일마다 5 g씩 천천히 증량하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Weight Watchers, Northwell Health: Increasing fiber without bloating",
+      "source_url": "https://thewell.northwell.edu/healthy-living-fitness/fiber-causing-bloating-add-water-and-follow-gi-approved-plan",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "섬유 보충 시작자",
+        "분류": "증량 전략",
+        "시기": "초기 2-3주",
+        "지역": "글로벌"
+      },
+      "caution": "★선택 기준: 빠른 효과보다는 장기 내성 구축을 우선할 것.",
+      "cautionSource": "GI 적응 가이드"
+    }
+  ]
+}

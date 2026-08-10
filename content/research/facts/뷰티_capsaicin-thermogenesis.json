@@ -1,0 +1,164 @@
+{
+  "topic": "캡사이신: 열생성 및 에너지 소비의 근거와 생물학적 메커니즘",
+  "brand": "성분연구소",
+  "article": "예정",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "capsaicin-trpv1-channel-activation-mechanism",
+      "claim": "캡사이신은 TRPV1(transient receptor potential vanilloid 1) 이온 채널을 활성화하여 세포 내 칼슘(Ca²⁺) 농도를 증가시키고, 이를 통해 열생성과 인슐린 분비 등의 하위 신호 경로를 활성화한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: TRPV1 Receptor-Mediated Hypoglycemic Mechanism of Capsaicin in Streptozotocin-Induced Diabetic Rats",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8526734/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "열생성 관심자",
+        "분류": "분자 기전",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "TRPV1 활성화는 주로 동물 연구에 기반하며, 인체에서의 강도와 임상 의미는 별개다.",
+      "cautionSource": "기초 약리학"
+    },
+    {
+      "id": "capsaicin-resting-metabolic-rate-33-99kcal-increase",
+      "claim": "13개 연구의 메타분석에서 캡사이신/캡시노이드는 휴식 대사율(RMR)을 위약 대비 33.99 kcal/day 증가시켰으며, 에너지 소비와 지방산화도 함께 증가했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: The effect of Capsaicinoids or Capsinoids in red pepper on thermogenesis in healthy adults",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/33063385/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "건강한 성인",
+        "분류": "열생성 효과",
+        "시기": "급성",
+        "지역": "글로벌"
+      },
+      "caution": "★중요: 34 kcal/day 증가는 한 달에 약 1020 kcal에 불과하므로, 외형 변화를 기대하기 어렵다.",
+      "cautionSource": "메타분석 효과 크기"
+    },
+    {
+      "id": "capsaicin-minimum-dose-2mg-appetite-suppression",
+      "claim": "캡사이신의 ad libitum 에너지 섭취 감소 효과를 나타내기 위해서는 최소 2 mg의 캡사이신이 필요하며, 저용량에서는 지방산화에 유의한 영향이 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Oxford Academic: Effects of Capsaicin and Capsiate on Energy Balance",
+      "source_url": "https://academic.oup.com/chemse/article/37/2/103/273510",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "캡사이신 보충제 사용자",
+        "분류": "용량",
+        "시기": "사용 중",
+        "지역": "글로벌"
+      },
+      "caution": "2 mg은 매우 낮은 용량이며, 일반적인 상용 제품은 훨씬 높을 수 있다.",
+      "cautionSource": "임상 용량"
+    },
+    {
+      "id": "capsaicin-high-dose-study-2-56mg-fat-oxidation",
+      "claim": "한 연구에서 2.56 mg 캡사이신(고추 1.03 g, 39,050 Scoville heat units)을 투여했을 때 음성 에너지 균형 상태에서 지방산화가 증가했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Acute Effects of Capsaicin on Energy Expenditure and Fat Oxidation in Negative Energy Balance",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3699483/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "음성 에너지 균형 상태의 사람",
+        "분류": "지방산화",
+        "시기": "급성",
+        "지역": "글로벌"
+      },
+      "caution": "★선택 기준: 음성 에너지 균형(칼로리 부족) 상태에서만 효과가 있을 수 있다.",
+      "cautionSource": "임상 연구 조건"
+    },
+    {
+      "id": "capsaicin-pre-meal-energy-intake-reduction-74kcal",
+      "claim": "캡사이신 투여 후 식사 전에 측정했을 때 ad libitum 에너지 섭취가 309.9 kJ(약 74 kcal) 감소했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Could capsaicinoids help to support weight management",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/24246368/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "캡사이신 사용자",
+        "분류": "식욕 억제",
+        "시기": "식전",
+        "지역": "글로벌"
+      },
+      "caution": "74 kcal는 하루 에너지 섭취의 약 3-4%이므로, 실제 체중감량으로 이어지려면 장기간 일관성 있는 사용이 필요하다.",
+      "cautionSource": "효과 크기"
+    },
+    {
+      "id": "capsaicin-weight-loss-effect-small-magnitude-modest",
+      "claim": "2023년 메타분석(15개 연구, n=2,377)에서 캡사이신 섭취는 과체중·비만 인구의 체중감소에 작은(small) 효과 크기를 나타냈다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cambridge Core: The effects of capsaicin intake on weight loss among overweight and obese subjects",
+      "source_url": "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/effects-of-capsaicin-intake-on-weight-loss-among-overweight-and-obese-subjects-a-systematic-review-and-metaanalysis-of-randomised-controlled-trials/AF1C3A4331A35BA12CE925B0B56818B8",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "과체중·비만자",
+        "분류": "임상 효과",
+        "시기": "연구별 상이",
+        "지역": "글로벌"
+      },
+      "caution": "★중요: 캡사이신도 L-카르니틴, 가르시니아처럼 효과가 미미하다.",
+      "cautionSource": "메타분석"
+    },
+    {
+      "id": "capsaicin-concentration-dependent-trpv1-vs-independent",
+      "claim": "캡사이신은 농도에 따라 TRPV1 의존적 또는 비의존적 방식으로 위장관에 작용하며, 농도가 작용 방식을 주로 결정한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect: Beneficial effects of dietary capsaicin in gastrointestinal health and disease",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0014482722002208",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "기초 과학자",
+        "분류": "기전",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "농도에 따른 효과 차이가 있으므로, 임상 연구의 용량이 중요하다.",
+      "cautionSource": "약리학"
+    },
+    {
+      "id": "capsaicin-low-dose-gastroprotective-high-dose-harmful",
+      "claim": "낮은 농도의 캡사이신은 쥐의 위에서 여러 해로운 인자로부터 위장 점막 손상을 예방했으나, 고용량의 식이 캡사이신 섭취는 인체 건강에 해로울 수 있다. 다만 적절한 용량 섭취는 위장 건강에 이로울 가능성이 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect: Beneficial effects of dietary capsaicin in gastrointestinal health and disease",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0014482722002208",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "캡사이신 사용자",
+        "분류": "안전성",
+        "시기": "장기",
+        "지역": "글로벌"
+      },
+      "caution": "★중요: 적절한 용량의 정의가 명확하지 않다. 개인의 위장 민감도에 따라 조정이 필요하다.",
+      "cautionSource": "GI 안전성"
+    },
+    {
+      "id": "capsaicin-upper-limit-dose-human-not-specified",
+      "claim": "웹 검색 결과 캡사이신의 명확한 인체 상한 섭취량(UL, Upper Limit)이 규정되지 않았다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "문헌 검색 미완",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "캡사이신 사용자",
+        "분류": "규제",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "FDA, EFSA, 한국 식약처 등에서 명시한 상한 용량을 확인할 필요가 있다.",
+      "cautionSource": "출처 미확인"
+    }
+  ]
+}

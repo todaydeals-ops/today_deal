@@ -1,0 +1,93 @@
+{
+  "topic": "알부틴: 미백 기능성 원료로서의 효능, 알파/베타 구분, 국내 허용 농도",
+  "brand": "성분 (알부틴·arbutin)",
+  "article": "arbutin-whitening",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "alpha-arbutin-vs-beta-arbutin-10-fold-potency-tyrosinase-inhibition",
+      "claim": "알파-알부틴(α-arbutin)은 베타-알부틴(β-arbutin)보다 티로시나제 효소 억제 능력이 약 10배 높으며, 알파 형태의 α-글루코시드 결합이 베타의 β-글루코시드 결합보다 화학적으로 더 안정하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Action of tyrosinase on alpha and beta-arbutin: A kinetic study",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5426667/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반",
+        "분류": "효소 억제 능력·화학 안정성",
+        "지역": "글로벤"
+      },
+      "caution": "효소 억제 능력이 높다고 해서 피부 침투와 임상 효과가 그에 비례하는 것은 아니며, 최종 효능은 제형과 농도에도 영향을 받는다.",
+      "cautionSource": "화학 분석"
+    },
+    {
+      "id": "alpha-arbutin-5-percent-melasma-clinical-trial-comparable-triple-combo",
+      "claim": "알파-알부틴 5%와 코직산 2% 조합 크림이 기미 치료에서 하이드로퀴논 4%, 트레티노인 0.05%, 플루오신올론 아세토나이드 0.01%의 트리플 콤보(표준 치료)와 동등한 효과를 보였으며, 재발률은 더 낮았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Cosmetic Dermatology 2025: The Efficacy of Topical Cosmetic Containing Alpha-Arbutin 5% and Kojic Acid 2%",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11740261/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "기미 환자",
+        "분류": "임상 효능",
+        "시기": "12주",
+        "지역": "글로벌"
+      },
+      "caution": "복합 제품이므로 알부틴 단독의 효과와 구분해야 함. 알파-알부틴 + 코직산의 상승작용이 입증되었으나, 알부틴 농도가 국내 허용 규제를 초과할 수 있으므로 확인 필수.",
+      "cautionSource": "임상 설계 + 국내 규제 미확인"
+    },
+    {
+      "id": "alpha-arbutin-10-percent-uv-induced-hyperpigmentation-43-5-percent-reduction",
+      "claim": "10% 알파-알부틴을 도포했을 때 자외선 유도 색소 침착이 43.5% 감소했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Clinical trial data cited in: Alpha Arbutin for Dark Spots research literature",
+      "source_url": "https://shop.skinaa.com/blogs/news/alpha-arbutin-dark-spots-pigmentation-research",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "자외선 유도 색소",
+        "분류": "효능",
+        "지역": "글로벌"
+      },
+      "caution": "원본 논문 정보가 명확하지 않아, 직접 임상 설계와 대상을 재확인할 필요가 있다.",
+      "cautionSource": "2차 인용"
+    },
+    {
+      "id": "alpha-arbutin-conversion-hydroquinone-slow-vs-beta-arbutin",
+      "claim": "알파-알부틴은 피부 상재균(Staphylococcus epidermidis 등)에 의해 하이드로퀴논으로 변환되지만, 베타-알부틴이 더 쉽게 분해되므로, 알파 형태가 간접 독성 측면에서 더 안전하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Cosmetic Dermatology 2008: Hydrolysis of arbutin to hydroquinone by human skin bacteria and its effect on antioxidant activity",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/18789053/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반",
+        "분류": "안전성·변환 경로",
+        "지역": "글로벌"
+      },
+      "caution": "하이드로퀴논은 고농도 또는 장기 사용 시 오크로노시스(paradoxical darkening) 위험이 있으므로, 알부틴 선택 시 이러한 간접 위험을 고려해야 한다.",
+      "cautionSource": "약리학"
+    },
+    {
+      "id": "alpha-arbutin-safety-no-ochronosis-no-cytotoxicity-at-1-2-percent",
+      "claim": "알파-알부틴 1~2% 농도에서는 자극(irritation), 세포독성(cytotoxicity), 오크로노시스(blue-gray darkening) 위험이 없는 것으로 확인되었으며, 하이드로퀴논 대비 안전 프로파일이 명확히 우수하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Literature review: Alpha Arbutin for Dark Spots — Research & Evidence Guide",
+      "source_url": "https://shop.skinaa.com/blogs/news/alpha-arbutin-dark-spots-pigmentation-research",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반",
+        "분류": "안전성",
+        "시기": "단기·장기 노출",
+        "지역": "글로벌"
+      },
+      "caution": "★농도 상한이 중요하다. 집필 시 국내 기능성화장품 고시에서 알부틴 허용 농도를 반드시 확인할 것.",
+      "cautionSource": "안전성 평가"
+    }
+  ]
+}

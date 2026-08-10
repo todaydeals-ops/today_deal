@@ -1,0 +1,91 @@
+{
+  "topic": "레스베라트롤 국소 도포: 경피 흡수 어려움과 해결 기술, 항산화 및 항노화 근거",
+  "brand": "성분 (레스베라트롤·resveratrol)",
+  "article": "resveratrol-topical",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "resveratrol-topical-fine-lines-wrinkles-firmness-clinical-improvement",
+      "claim": "레스베라트롤·바이칼린·비타민E 함유 야간 항산화 포뮬레이션을 12주 도포했을 때 세밀한 주름(fine lines), 피부 탄력성, 탄성, 풍성도, 색소 침착, 피부 거칠기에서 통계적으로 유의미한 개선이 관찰되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Drugs in Dermatology 2014: Evaluation of efficacy and tolerance of a nighttime topical antioxidant containing resveratrol, baicalin, and vitamin e for treatment of mild to moderately photodamaged skin",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/25607790/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "광손상 성인",
+        "분류": "항노화·미백",
+        "시기": "12주",
+        "지역": "글로벌"
+      },
+      "caution": "복합 포뮬레이션이므로 레스베라트롤 단독의 효과와 구분해야 함. 야간 제품으로 사용된 점도 임상 설계의 일부.",
+      "cautionSource": "임상 설계"
+    },
+    {
+      "id": "resveratrol-topical-skin-penetration-challenge-low-bioavailability",
+      "claim": "레스베라트롤은 소수성 물질로서 피부 투과 능력이 낮으며, 포뮬레이션 성분에 크게 좌우된다. 특히 포스파티딜콜린 기반 에토솜(ethosome)만이 in vitro 경피 투과를 실현했으나, 다른 전달 시스템은 효과가 제한적이었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Systematic Study of Resveratrol Nanoliposomes Transdermal Delivery System",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10058087/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "제형 기술",
+        "분류": "경피 흡수",
+        "지역": "글로벨"
+      },
+      "caution": "★경피 투과가 어렵다는 것은 레스베라트롤 함유 제품을 선택할 때 포뮬레이션 기술(나노 리포솜, 에토솜 등)을 확인해야 함을 의미한다. 단순한 세럼 제형은 효과가 제한적일 수 있다.",
+      "cautionSource": "전달 시스템 연구"
+    },
+    {
+      "id": "resveratrol-antioxidant-anti-inflammatory-mechanisms-gene-expression",
+      "claim": "레스베라트롤은 자유 라디컬을 중화하고 내재적 항산화 능력을 증가시키는 이중 항산화제이며, 또한 미토콘드리아 생성, 항염증, 항당뇨병, 항암 활성을 나타낸다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Literature review: Resveratrol: A Promising Antiaging Agent for Cosmetic Skin Treatments",
+      "source_url": "https://www.intechopen.com/chapters/84181",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반",
+        "분류": "생화학 기전",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "resveratrol-formulation-alters-gene-expression-ho1-vegfa-col3a1",
+      "claim": "안정화되고 고농도의 레스베라트롤 포뮬레이션이 경피 흡수를 나타낼 때, HO1(헤모옥시게나제-1), VEGFA(혈관내피성장인자), COL3A1(제3형 콜라겐) 등의 유전자 발현에 변화를 일으킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Literature: Topical use of resveratrol: technological aspects",
+      "source_url": "https://www.sciencedirect.com/org/science/article/pii/S042802962000058X",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "피부 세포",
+        "분류": "유전자 발현·분자 효과",
+        "지역": "글로벌"
+      },
+      "caution": "유전자 발현 변화가 긍정적인 임상 결과(주름 개선 등)로 직결되는지는 추가 임상 연구가 필요하다.",
+      "cautionSource": "분자 메커니즘"
+    },
+    {
+      "id": "resveratrol-oral-topical-combination-synergy-greater-wrinkle-improvement",
+      "claim": "134명의 여성(40세 이상)을 대상으로 한 8주 무작위 대조 임상시험에서 경구 레스베라트롤 캡슐(75mg) + 국소 크림(1.5%) 병용군이 가장 큰 주름 개선(11.9%)을 보였으며, 위약 병용군(6.3%)보다 유의미하게 우수했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Frontiers in Aging 2025: Trans-resveratrol reduces visible signs of skin ageing in healthy adult females over 40: an 8-week randomized placebo-controlled trial",
+      "source_url": "https://www.frontiersin.org/journals/aging/articles/10.3389/fragi.2025.1727244/full",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "40대 이상 여성",
+        "분류": "경구+국소 병용",
+        "시기": "8주",
+        "지역": "글로벌"
+      },
+      "caution": "★경구 제품은 식이보충제 범주이므로, 약사-의약품 규제를 받는 국소 제품과 달리 효능이 보장되지 않을 수 있다. 집필 시 병용 전략보다는 국소 도포의 효능에 중심을 두는 것이 좋다.",
+      "cautionSource": "규제 분류"
+    }
+  ]
+}

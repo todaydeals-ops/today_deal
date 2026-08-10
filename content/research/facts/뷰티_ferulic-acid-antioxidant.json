@@ -1,0 +1,87 @@
+{
+  "topic": "페룰산: 비타민C 세럼에 함께 들어가는 이유, 안정화·광보호 강화 메커니즘",
+  "brand": "성분 (페룰산·ferulic acid)",
+  "article": "ferulic-acid-antioxidant",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "ferulic-acid-stabilizes-vitamin-c-e-solution-chemical-stability",
+      "claim": "페룰산을 L-아스코르브산 15% + 알파-토코페롤 1% 용액에 첨가하면 두 비타민의 화학적 안정성을 현저히 향상시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of the American Academy of Dermatology 2004: Ferulic acid stabilizes a topical solution containing vitamins C and E and doubles its photoprotection for skin",
+      "source_url": "https://www.jaad.org/article/S0190-9622(04)03422-X/fulltext",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화장품 포뮬레이션",
+        "분류": "안정성·화학",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "ferulic-acid-doubles-photoprotection-c-e-from-4-fold-to-8-fold",
+      "claim": "페룰산을 추가하면 L-아스코르브산 15% + 알파-토코페롤 1% 조합의 광보호 효율이 4배에서 약 8배로 2배 상향되며, 자외선 홍반(erythema)과 선번(sunburn cell) 형성 양쪽 모두에서 확인되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of the American Academy of Dermatology 2004: Ferulic acid stabilizes a solution of vitamins C and E and doubles its photoprotection of skin",
+      "source_url": "https://www.jaad.org/article/S0190-9622(04)03422-X/fulltext",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "자외선 방호",
+        "분류": "광보호 강화",
+        "지역": "글로벌"
+      },
+      "caution": "★이는 정규 자외선(solar-simulated irradiation) 조건의 결과이며, 실제 일광 노출 조건에서도 동일한 배수 개선을 기대하기는 어려울 수 있다.",
+      "cautionSource": "임상 설계"
+    },
+    {
+      "id": "ferulic-acid-mechanism-antioxidant-radical-scavenging",
+      "claim": "페룰산은 자유 라디컬을 직접 소거(radical scavenging)하는 항산화 기전을 가지며, 또한 비타민C와 E의 항산화 능력을 강화하는 시너지 효과를 나타낸다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Literature: Ferulic Acid Stabilizes a Solution of Vitamins C and E and Doubles its Photoprotection of Skin",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0022202X1532491X",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반",
+        "분류": "생화학 기전",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "ferulic-acid-uv-damage-prevention-apoptosis-caspase-3-7",
+      "claim": "페룰산 포함 항산화 포뮬레이션(C+E+ferulic acid)은 자외선 손상으로부터 피부를 보호하며, 이는 카스파제-3과 7의 유도 감소와 티민 이량체(thymine dimer) 형성 억제로 확인되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of the American Academy of Dermatology 2008: A topical antioxidant solution containing vitamins C and E stabilized by ferulic acid provides protection for human skin against damage caused by ultraviolet irradiation",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0190962208005410",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "자외선 손상 예방",
+        "분류": "분자 메커니즘",
+        "지역": "글로벌"
+      },
+      "caution": "이 결과들은 in vitro 또는 ex vivo 피부 모델에서의 측정이므로, 실제 생체 내(in vivo) 임상 효과는 추가 고려가 필요할 수 있다.",
+      "cautionSource": "임상 설계"
+    },
+    {
+      "id": "ferulic-acid-concentration-15-percent-c-1-percent-e-formulation-standard",
+      "claim": "광보호 효과가 입증된 표준 포뮬레이션은 L-아스코르브산 15% + 알파-토코페롤 1% + 페룰산(농도 명시 않음)의 조합이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of the American Academy of Dermatology 2004: Ferulic acid stabilizes...",
+      "source_url": "https://www.jaad.org/article/S0190-9622(04)03422-X/fulltext",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화장품 포뮬레이션",
+        "분류": "제형 규격",
+        "지역": "글로벌"
+      },
+      "caution": "★페룰산의 정확한 농도 데이터가 학술 문헌에서 명시되지 않은 경우가 많다. 시판 제품 선택 시 성분 표기를 확인하되, 농도 상한을 별도 조사해야 한다.",
+      "cautionSource": "문헌 검토"
+    }
+  ]
+}

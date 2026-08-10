@@ -1,0 +1,79 @@
+{
+  "topic": "레티날데하이드: 레티놀과 트레티노인 사이의 강도, 자극 프로파일, 농도별 효능",
+  "brand": "성분 (레티날데하이드·retinaldehyde)",
+  "article": "retinaldehyde-retinoid",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "retinaldehyde-vs-retinol-bioavailability-10fold"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "retinaldehyde-0-1-percent-wrinkle-reduction-12-week-clinical",
+      "claim": "0.1% 레티날데하이드 세럼을 8주간 도포했을 때 얼굴 주름이 12% 개선되었으며, 흉부 주름은 점진적으로 11%→19% 개선되고, 색소 과다는 19% 감소했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Drugs in Dermatology 2024: Clinical Efficacy and Tolerability of a Novel Retinaldehyde Serum with Firming Peptides",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/39496127/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "광손상 성인 (일부 민감성 피부)",
+        "분류": "주름개선·미백",
+        "시기": "8주",
+        "지역": "글로벌"
+      },
+      "caution": "제품에는 펩타이드, 세라마이드, 지질 등 보조 성분이 포함되어 순수 레티날데하이드 단독의 효과와 다를 수 있다.",
+      "cautionSource": "임상 설계"
+    },
+    {
+      "id": "retinaldehyde-0-1-and-0-05-percent-both-95-percent-improvement",
+      "claim": "0.1% 및 0.05% 레티날데하이드 크림 모두 3개월 도포 후 광손상 개선도 95%를 달성했으며, 농도 간 통계적으로 유의한 차이가 없었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Cosmetic Dermatology 2018: Efficacy and safety of retinaldehyde 0.1% and 0.05% creams used to treat photoaged skin",
+      "source_url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/jocd.12551",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "광손상 성인",
+        "분류": "농도별 효과",
+        "시기": "12주",
+        "지역": "글로벌"
+      },
+      "caution": "★두 농도가 동등한 효과를 보였으므로, 더 낮은 농도(0.05%)가 자극을 최소화하면서도 효능을 제공할 수 있다는 의미. 민감성 피부는 저농도부터 시작 권장.",
+      "cautionSource": "임상 비교 연구"
+    },
+    {
+      "id": "retinaldehyde-vs-tretinoin-tolerability-lower-irritation",
+      "claim": "레티날데하이드는 천연 레티놀 경로의 중간체로서, 트레티노인 대비 국소 자극(burning, dryness, erythema)이 훨씬 적으면서도 광손상 개선 효과는 비슷하게 나타났다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Literature review: Retinaldehyde as an OTC retinoid intermediate between retinol and tretinoin",
+      "source_url": "https://link.springer.com/article/10.1007/s12325-022-02319-7",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인",
+        "분류": "내약성·안전성",
+        "지역": "글로벌"
+      },
+      "caution": "초기 적응 기간(retinization)은 여전히 발생할 수 있으며, 민감성이 높은 피부는 점진적 도입이 필수.",
+      "cautionSource": "임상 경험"
+    },
+    {
+      "id": "retinaldehyde-formulation-stability-challenge-delivery-systems",
+      "claim": "레티날데하이드는 수용성이 낮고 산화에 취약하여 안정화가 어려운데, 최근 나노 리포솜·에토솜·아드엔실 시스템 등의 제형 혁신으로 피부 전달성과 안정성이 개선되고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Cosmetic Dermatology 2024: Topical retinoids: Novel derivatives, nano lipid-based carriers, and combinations",
+      "source_url": "https://onlinelibrary.wiley.com/doi/10.1111/jocd.16415",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "제형 개발",
+        "분류": "기술·제형",
+        "지역": "글로벌"
+      },
+      "caution": "시판 레티날데하이드 제품의 실제 활성 농도가 표기와 다를 수 있으므로, 경시 변화율(decomposition rate) 데이터를 포함한 COA를 확인하는 것이 좋다.",
+      "cautionSource": "화학 안정성"
+    }
+  ]
+}

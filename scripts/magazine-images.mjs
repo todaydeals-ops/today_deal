@@ -17,7 +17,12 @@ const UA = { "User-Agent": "todaydeals-magazine/1.0 (hello@todaydeals.co.kr)" };
 const DRY = process.argv.includes("--dry");
 const FORCE = process.argv.includes("--force");
 const LIMIT = Number(process.argv.find((a) => a.startsWith("--limit="))?.split("=")[1] || 0);
-const ONLY = (process.argv.find((a) => a.startsWith("--slugs="))?.split("=")[1] || "").split(",").filter(Boolean); // 특정 slug만 재수집
+// 특정 slug만 재수집. `--slugs=a,b` 와 `--slugs a,b` 둘 다 받는다.
+// (등호를 빼먹어 필터가 조용히 무시된 채 --force 가 걸려 전체 530편이 재수집된 사고가 있었다.)
+const slugArgIdx = process.argv.findIndex((a) => a === "--slugs" || a.startsWith("--slugs="));
+const slugArgRaw = slugArgIdx === -1 ? "" : (process.argv[slugArgIdx].includes("=") ? process.argv[slugArgIdx].split("=")[1] : (process.argv[slugArgIdx + 1] || ""));
+if (slugArgIdx !== -1 && !slugArgRaw) { console.error("✖ --slugs 뒤에 slug 목록이 없다. 예: --slugs=a,b"); process.exit(1); }
+const ONLY = slugArgRaw.split(",").filter(Boolean);
 
 const DROP = new Set(["guide", "fact", "factcheck", "check", "compare", "trend", "longrun", "care", "vs", "buying", "types", "type", "dosage", "size", "capacity", "999", "refresh", "self", "selfcheck", "maintenance", "sweetener", "safety", "organic", "inbody", "worth", "it", "direct", "tank", "dose", "absorption", "ratio"]);
 // 다의어·약자로 자동 키워드가 엉뚱한 이미지를 부르는 글은 수동 교정(drum=악기, msg=약자, scale=저울 등)
@@ -446,7 +451,34 @@ function railSet(bodyHtml, images) {
   return `<!--RAIL:${JSON.stringify(rail)}-->\n` + rest.trim();
 }
 
+// ★안전장치 — 발행글 이미지는 고정이 원칙이다(글을 손댈 때마다 사진이 바뀌면 안 된다).
+// --force 는 파괴적이라 대상을 반드시 좁혀야 한다. 전수 재수집은 --all 을 명시할 때만.
+if (FORCE && !ONLY.length && !process.argv.includes("--all")) {
+  console.error("✖ --force 를 전체에 걸려면 --all 을 함께 줘야 한다. 보통은 --slugs=a,b 로 대상을 좁혀라.");
+  console.error("  (등호 누락으로 필터가 무시된 채 전체 530편이 재수집된 사고가 있었다.)");
+  process.exit(1);
+}
+
 const rows = await (await rest("magazine?corner=neq.report&select=slug,corner,field,title,body_html&order=created_at.desc&limit=1000")).json();
+
+// ── 브랜드 내 이미지 중복 방지 ──
+// spread()는 한 글 안에서만 중복을 막는다. 그래서 같은 키워드가 나오는 글끼리는
+// 같은 사진을 물어와 브랜드 전체에서 중복이 생겼다(실측 알약 5건·성분 1건·잠자리 1건).
+// 이미 그 브랜드(field)에서 쓰인 URL을 모아두고, 새로 뽑을 때 걸러낸다.
+const usedByField = new Map(); // field -> Set(url)
+for (const r of rows) {
+  const { rail } = railGet(r.body_html);
+  const set = usedByField.get(r.field) || usedByField.set(r.field, new Set()).get(r.field);
+  for (const im of rail.images || []) if (im?.url) set.add(im.url);
+}
+/** 이 글에 새로 넣을 이미지에서 같은 브랜드의 "다른 글"이 이미 쓴 것을 뺀다.
+ *  자기 기존 이미지는 미리 used에서 빼고 부르므로 여기서 예외 처리하지 않는다.
+ *  (예외를 두면 --force 재수집 때 바꾸려던 중복을 그대로 다시 넣는다. 실제로 겪었다.) */
+function dedupeInField(imgs, field) {
+  const used = usedByField.get(field) || new Set();
+  return imgs.filter((im) => !used.has(im.url));
+}
+
 let done = 0, skip = 0, fail = 0, n = 0;
 for (const row of rows) {
   if (LIMIT && n >= LIMIT) break;
@@ -455,11 +487,24 @@ for (const row of rows) {
   if ((rail.images?.length >= 2 || (!FORCE && rail.images?.length)) && !FORCE) { skip++; continue; }
   n++;
   const kw = keyword(row.slug);
-  const page = (hash(row.slug) % 3) + 1;
+  // 자기 기존 이미지는 used에서 빼둔다. 그래야 다른 글이 쓴 것만 회피 대상이 되고,
+  // 재수집일 때 자기 중복 이미지를 "이미 내 것"이라며 되집는 일이 없다.
+  const ownUrls = new Set((railGet(row.body_html).rail.images || []).map((x) => x.url));
+  { const set = usedByField.get(row.field); if (set) for (const u of ownUrls) set.delete(u); }
   let imgs = [];
-  try { imgs = await pexels(kw, page, 2); } catch {}
-  if (imgs.length < 2) { try { imgs = imgs.concat(await openverse(kw, page, 2 - imgs.length)); } catch {} }
-  if (!imgs.length) { console.log(`  ✖ [${row.slug}] "${kw}" 이미지 없음`); fail++; continue; }
+  // 같은 브랜드에서 이미 쓴 사진이 걸리면 다음 페이지로 넘겨 다시 뽑는다(최대 4페이지).
+  for (let page = (hash(row.slug) % 3) + 1; page <= 6 && imgs.length < 2; page++) {
+    let batch = [];
+    try { batch = await pexels(kw, page, 4); } catch {}
+    if (batch.length < 2) { try { batch = batch.concat(await openverse(kw, page, 4 - batch.length)); } catch {} }
+    for (const im of dedupeInField(batch, row.field)) {
+      if (imgs.length >= 2) break;
+      if (!imgs.some((x) => x.url === im.url)) imgs.push(im);
+    }
+  }
+  if (!imgs.length) { console.log(`  ✖ [${row.slug}] "${kw}" 이미지 없음(브랜드 내 중복 제외 후)`); fail++; continue; }
+  { const set = usedByField.get(row.field) || usedByField.set(row.field, new Set()).get(row.field);
+    for (const im of imgs) set.add(im.url); } // 다음 글이 같은 걸 안 뽑도록 즉시 등록
   console.log(`  ✓ [${row.slug}] "${kw}" → ${imgs.length}장 (${imgs.map((x) => x.source.split(" ")[0]).join(",")})`);
   if (!DRY) {
     const body_html = railSet(row.body_html, imgs);

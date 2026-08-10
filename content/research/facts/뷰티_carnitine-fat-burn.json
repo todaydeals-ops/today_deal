@@ -1,0 +1,133 @@
+{
+  "topic": "L-카르니틴: 지방산 산화와 체중감량의 근거 수준 및 경구 흡수의 한계",
+  "brand": "성분연구소",
+  "article": "예정",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "meta-analysis-systematic-review-highest-evidence-hierarchy",
+    "statistical-significance-vs-clinical-significance-distinction"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "carnitine-cpt1-mitochondrial-transport-mechanism",
+      "claim": "L-카르니틴은 CPT1(카르니틴 팔미토일트랜스퍼라제 1)과 협력하여 장쇄 지방산을 미토콘드리아 내로 운반하는 카르니틴-아실카르니틴 셔틀 시스템의 핵심 성분이며, CPT1은 지방산 산화의 rate-limiting enzyme이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cell Reports 2024, NIH/PMC: Carnitine palmitoyltransferase 1 facilitates fatty acid oxidation",
+      "source_url": "https://www.cell.com/cell-reports/fulltext/S2211-1247(24)01357-3",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "에너지대사 관심자",
+        "분류": "약리 기전",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "기전은 생화학적으로 확실하지만, 경구 카르니틴 보충이 실제로 지방산화를 증진시키는지는 별개의 임상 문제다.",
+      "cautionSource": "생화학 기초"
+    },
+    {
+      "id": "carnitine-oral-bioavailability-14-18-percent-low",
+      "claim": "경구 L-카르니틴 보충제(0.5-6g)의 생물이용률은 14-18%로 매우 낮으며, 이는 흡수되지 않은 L-카르니틴 대부분이 대장의 미생물에 의해 분해되기 때문이다. 반면 식품 출처의 카르니틴 흡수율은 54-86%로 훨씬 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: L-Carnitine Supplementation in Recovery after Exercise",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5872767/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "카르니틴 보충제 사용자",
+        "분류": "흡수",
+        "시기": "사용 중",
+        "지역": "글로벌"
+      },
+      "caution": "★핵심 문제: 경구 생물이용률이 15% 미만이므로, 고용량 복용이 필요하지만 효과 보장이 없다. 식품(소 제품, 버터, 치즈)에서의 흡수가 우수하나, 양이 한정적이다.",
+      "cautionSource": "약물동학 연구"
+    },
+    {
+      "id": "carnitine-weight-loss-37-rct-meta-analysis-1-21kg",
+      "claim": "37개 RCT 메타분석(n=2,292)에서 L-카르니틴 보충은 체중을 -1.21 kg, BMI를 -0.24 kg/m² 감소시켰으나, 허리둘레와 체지방률에는 유의한 효과가 없었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Clinical Nutrition ESPEN, ScienceDirect: Effects of l-carnitine supplementation on weight loss and body composition",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S240545772030053X",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "체중감량 희망자",
+        "분류": "임상 효과",
+        "시기": "연구별 상이",
+        "지역": "글로벌"
+      },
+      "caution": "★중요: -1.21 kg는 통계적 유의성만 있고, 개인이 느낄 수 있는 임상적 변화로는 미미하다. 메타분석의 '통계 vs 임상 의미' 함정 참조.",
+      "cautionSource": "메타분석 효과 크기"
+    },
+    {
+      "id": "carnitine-optimal-dose-2000mg-daily-non-linear",
+      "claim": "메타분석의 용량-반응 분석 결과, L-카르니틴 2000 mg/day 용량에서 최대 효과를 나타내며, 비선형 관계를 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "International Journal of Vitamins and Nutrition Research: dose-response meta-analysis",
+      "source_url": "https://www.imrpress.com/journal/ijvnr/95/2/10.31083/IJVNR40033",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "카르니틴 보충제 사용자",
+        "분류": "용량",
+        "시기": "사용 중",
+        "지역": "글로벌"
+      },
+      "caution": "최적 용량이 2000 mg이라도, 전체 효과가 미미(1.21 kg)하므로 비용-편익이 낮다.",
+      "cautionSource": "용량-반응 메타분석"
+    },
+    {
+      "id": "carnitine-high-quality-rct-only-smaller-effect",
+      "claim": "고품질 RCT만을 포함한 분석에서 L-카르니틴의 체중감소 효과는 저품질 연구나 선임상 데이터보다 훨씬 약했으며, 이는 과거 연구의 방법론 한계나 선택적 보고의 가능성을 시사한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Clinical Nutrition ESPEN meta-analysis quality assessment",
+      "source_url": "https://www.clinicalnutritionespen.com/article/S2405-4577(20)30053-X/abstract",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "카르니틴 효과 평가자",
+        "분류": "근거 질",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★공용 근거의 '산업 후원 편향' 참조. 초기 긍정적 결과는 연구 설계 한계 때문일 수 있다.",
+      "cautionSource": "메타분석 방법론 검토"
+    },
+    {
+      "id": "carnitine-exercise-performance-mixed-evidence",
+      "claim": "L-카르니틴 보충은 고강도 운동 성능 개선에서 혼합된 근거를 보이며, 중등도 운동 성능에는 효과가 없는 것으로 보고된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Effect of Acute and Chronic Oral l-Carnitine Supplementation on Exercise Performance",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8704793/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "운동 성능 추구자",
+        "분류": "운동 효과",
+        "시기": "운동 중/후",
+        "지역": "글로벌"
+      },
+      "caution": "지방 연소 효과와 달리 운동 성능 개선은 더욱 불확실하다.",
+      "cautionSource": "체계적 문헌고찰"
+    },
+    {
+      "id": "carnitine-korea-regulatory-status-unclear",
+      "claim": "한국 식약처의 기능성 원료 인정 목록에서 L-카르니틴의 명시적 기능성 인정 여부가 확인되지 않았다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "식약처 기능성 원료 인정 현황 (직접 조회 미완)",
+      "source_url": "https://www.fmis.kr/public/pro/hfg/htfsIndvdlzRcognList.do",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "한국 소비자",
+        "분류": "규제",
+        "시기": "2026 현행",
+        "지역": "KR"
+      },
+      "caution": "한국 식약처 기능성 원료 검색 필수. 체지방 감소 관련 기능성이 인정되었는지 명확히 할 것.",
+      "cautionSource": "출처 미확인"
+    }
+  ]
+}

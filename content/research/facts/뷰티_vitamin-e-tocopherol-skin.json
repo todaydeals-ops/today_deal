@@ -1,0 +1,73 @@
+{
+  "topic": "비타민E(토코페롤): 국소 항산화제의 실제 역할, 비타민C 병용 효과, UV 방호",
+  "brand": "성분 (비타민E·토코페롤·tocopherol)",
+  "article": "vitamin-e-tocopherol-skin",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "vitamin-e-alpha-tocopherol-antioxidant-uv-photoprotection",
+      "claim": "비타민E(알파-토코페롤)는 피부 항산화제로서 UV 방사선으로부터의 보호, 세포막 안정성 개선, 건성 피부 보습, 항염증 작용을 나타낸다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Literature: Vitamin E and Vitamin C for Skin: The Science of Synergy",
+      "source_url": "https://www.phyto-c.com/blogs/news/vitamin-e-vitamin-c-skin-protection-synergy",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인",
+        "분류": "항산화·방호",
+        "지역": "글로벌"
+      }
+    },
+    {
+      "id": "vitamin-c-e-combination-superior-to-either-alone-erythema-sunburn",
+      "claim": "L-아스코르브산 15% + 알파-토코페롤 1% 조합이 단독 사용보다 자외선 홍반(erythema)과 선번(sunburn cell formation) 형성에서 통계적으로 유의미하게 더 효과적인 보호를 제공했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of the American Academy of Dermatology: UV photoprotection by combination topical antioxidants vitamin C and vitamin E",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0190962203007813",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "피부",
+        "분류": "광보호",
+        "지역": "글로벌"
+      },
+      "caution": "이 조합은 페룰산이 포함되지 않은 버전이므로, 페룰산 추가 시 더욱 향상된 효과가 예상된다.",
+      "cautionSource": "임상 설계"
+    },
+    {
+      "id": "vitamin-c-regenerates-vitamin-e-radical-electron-donation",
+      "claim": "비타민C(L-아스코르브산)는 산화된 비타민E 래디컬을 환원함으로써 비타민E의 항산화 능력을 재생하여, 비타민E의 보호 효율을 높인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Literature: Skin Benefits of Vitamin C + Vitamin E",
+      "source_url": "https://www.marykay.ca/en-ca/love-your-skin/2020-07-skin-care-articles/2020-10-skin-benefits-vitamin-c-e",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반",
+        "분류": "생화학 기전",
+        "지역": "글로벌"
+      },
+      "caution": "이 상호작용이 최적으로 작동하려면 적절한 pH와 농도 비율이 필수이며, 안정화 기술(페룰산 등)의 보조가 도움이 된다.",
+      "cautionSource": "포뮬레이션 화학"
+    },
+    {
+      "id": "vitamin-e-limited-skin-penetration-challenges",
+      "claim": "비타민E는 지용성 분자로서 피부 투과 능력이 제한적이며, 단독으로는 표피층에 깊숙이 침투하기 어렵다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Research: Stability of Vitamins C and E in Topical Microemulsions",
+      "source_url": "https://www.tandfonline.com/doi/full/10.1080/10717540601067786",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화장품 과학",
+        "분류": "생체이용률",
+        "지역": "글로벌"
+      },
+      "caution": "제형 혁신(마이크로에멀젼, 나노입자 등)이 비타민E 침투를 개선할 수 있으며, 비타민C와의 병용이 이를 지원한다.",
+      "cautionSource": "제형 기술"
+    }
+  ]
+}
