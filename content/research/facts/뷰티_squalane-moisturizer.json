@@ -4,20 +4,25 @@
   "article": "squalane-moisturizer",
   "captured": "2026-08-10",
   "reused_facts": [],
-  "declined_facts": [],
+  "declined_facts": [
+    {
+      "id": "squalane-hydrogenated-squalene-chemical-difference",
+      "reason": "이해상충: 출처가 화장품 브랜드 자체 콘텐츠(typology.com). CIR 공식 평가서를 1차 출처로 재확보. 첫 번째 fact로 대체됨."
+    }
+  ],
   "disputes": [],
   "facts": [
     {
-      "id": "squalane-hydrogenated-squalene-chemical-difference",
-      "claim": "스쿠알렌(squalene)은 불포화 탄소 사슬을 가진 천연 성분으로 산화되기 쉽지만, 스쿠알란(squalane)은 스쿠알렌을 수소화(hydrogenation)하여 완전히 포화시킨 형태로, 산화에 저항성이 있어 화장품 배합에 적합하다.",
+      "id": "squalane-hydrogenation-stabilization-official-cir",
+      "claim": "스쿠알렌(unsaturated)을 수소화(hydrogenation)하여 포화시킨 스쿠알란은 미국 화장품 성분 안전성 평가위원회(CIR)에서 화장품 용 안전 성분으로 평가되었으며, 산화 안정성이 스쿠알렌보다 현저히 높다.",
       "tier": "확실",
       "evidence": "공식",
-      "source": "Typology: Squalane, a comedogenic ingredient?",
-      "source_url": "https://us.typology.com/library/is-vegetable-squalane-from-olives-comedogenic",
+      "source": "CIR Safety Assessment: Squalane and Squalene as Used in Cosmetics",
+      "source_url": "https://www.cir-safety.org/sites/default/files/Squalene%20and%20Squalane.pdf",
       "checked": "2026-08-10",
       "scope": {
         "대상": "화장품 원료",
-        "분류": "화학 구조",
+        "분류": "화학 구조·안정성",
         "시기": "제형 설계 단계",
         "지역": "글로벌"
       },
@@ -29,7 +34,7 @@
       "claim": "스쿠알렌과 달리 스쿠알란은 지질 과산화(lipid peroxidation) 현상이 발생하지 않아 보관 중 성분 변성이 일어나지 않으며, 제품의 유효 기간이 훨씬 길다.",
       "tier": "확실",
       "evidence": "공식",
-      "source": "CIR (Cosmetic Ingredient Review): Safety Assessment of Squalane and Squalene as Used in Cosmetics",
+      "source": "CIR Safety Assessment: Squalane and Squalene as Used in Cosmetics",
       "source_url": "https://www.cir-safety.org/sites/default/files/Squalene%20and%20Squalane.pdf",
       "checked": "2026-08-10",
       "scope": {

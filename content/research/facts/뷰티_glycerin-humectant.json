@@ -8,25 +8,30 @@
     "humectant-humidity-dependent-efficacy-low-humidity-risk",
     "moisturizer-three-classes-definition-function"
   ],
-  "declined_facts": [],
+  "declined_facts": [
+    {
+      "id": "glycerin-optimal-concentration-5-10-percent",
+      "reason": "원출처 불명: AI 생성 요약 사이트(droracle.ai). 공식 CIR 평가서는 '최대 78.5% (leave-on)', 임상 RCT는 15-20% 범위 주로 다룸. '2-10% 최적'이라는 범위의 1차 학술 근거 미확보."
+    }
+  ],
   "disputes": [],
   "facts": [
     {
-      "id": "glycerin-optimal-concentration-5-10-percent",
-      "claim": "글리세린은 일반 화장품에서 5~10% 농도로 사용되며, 더 높은 농도(20%)도 존재하지만, 최적의 보습 효과와 사용감을 위해 2~10% 농도가 이상적이다.",
+      "id": "glycerin-safety-official-cir-conclusion",
+      "claim": "미국 화장품 성분 안전성 평가위원회(CIR)는 글리세린을 '화장품에서 안전한 성분'으로 결론지었으며, 보고된 사용 농도는 leave-on 제품에서 최대 78.5%, rinse-off 제품에서 최대 68.6%, 목욕 희석 제품에서 최대 47%이다.",
       "tier": "확실",
       "evidence": "공식",
-      "source": "Dr.Oracle: What is the optimal concentration of glycerin (Glycerol) as a moisturizer?",
-      "source_url": "https://www.droracle.ai/articles/72669/what-is-the-optimal-concentration-of-glycerin-glycerol-as",
+      "source": "CIR Final Report: Safety Assessment of Glycerin as Used in Cosmetics",
+      "source_url": "https://www.cir-safety.org/sites/default/files/glycer_122014_FR.pdf",
       "checked": "2026-08-10",
       "scope": {
-        "대상": "일반 화장품",
-        "분류": "제형 규격",
-        "시기": "제형 설계 단계",
-        "지역": "글로벌"
+        "대상": "모든 피부 타입",
+        "분류": "공식 안전성 평가",
+        "시기": "현재까지",
+        "지역": "미국(글로벌 표준)"
       },
-      "caution": "★고농도(>20%)의 글리세린은 순수 제품(원액)이며, 피부에 직접 도포하면 오히려 피부의 깊은 층에서 수분을 빨아들여 건조함을 악화시킬 수 있다. '글리세린 원액'과 '희석된 글리세린 함유 제품'은 다른 효과를 보인다.",
-      "cautionSource": "화장품 농도 안전성 가이드"
+      "caution": "★이 농도 범위는 '최대 허용 농도'이며, '최적 효과 농도'와는 다르다. 고농도 제품(50% 이상)은 피부 자극 또는 추가 이점 없이 비용만 증가할 수 있다.",
+      "cautionSource": "CIR 평가 기준"
     },
     {
       "id": "glycerin-humidity-dependent-sticky-feel-humidification",
@@ -78,6 +83,23 @@
       },
       "caution": "글리세린 단독만으로는 장시간 보습을 유지하기 어려울 수 있다. 현대 보습제의 '3가지 클래스 조합'(occlusive + humectant + emollient)이 이러한 이유 때문에 표준이 되었다.",
       "cautionSource": "보습제 포뮬레이션 기준"
+    },
+    {
+      "id": "glycerin-clinical-trial-concentrations-15-20-percent",
+      "claim": "글리세린 농도에 대한 임상 RCT는 주로 15-20% 범위를 다루며, 이 범위에서 24시간 이상의 피부 수화 개선이 입증되었다. CIR의 최대 허용 농도(78.5%)와는 별개로, 실제 임상 효과 평가는 더 낮은 농도에 집중되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Quantitation of 24-Hour Moisturization by Electrical Measurements of Skin Hydration",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/28877115/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "건강한 성인",
+        "분류": "임상 효과",
+        "시기": "24시간",
+        "지역": "글로벌"
+      },
+      "caution": "'최적 농도'는 존재하지 않으며, 목적(응급 보습 vs 장기 관리)과 제형(leave-on vs rinse-off)에 따라 적절한 농도가 달라진다.",
+      "cautionSource": "임상 연구 설계"
     }
   ]
 }
