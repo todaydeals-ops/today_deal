@@ -31,6 +31,14 @@ const TRUSTED = [
   "easylaw.go.kr", "fmis.kr", "synapse.koreamed.org", "e-jnh.org", "mjrheum.org",
   "lpi.oregonstate.edu", "uchealth.com", "northwell.edu", "webstore.ansi.org", "iso.org",
   "vcahospitals.com", // 반려동물 독성은 임상 수의 정보원이 실질 1차에 가깝다
+  // 기기·통신 공식(AS연구소·공통 파일용)
+  "samsungsvc.co.kr", "samsung.com", "lge.co.kr", "lg.com", "kt.com", "help.kt.com",
+  "skbroadband.com", "bworld.co.kr", "lguplus.com", "iptime.com", "efm.co.kr",
+  "tp-link.com", "asus.com", "netgear.com", "netflix.com", "help.netflix.com",
+  "support.google.com", "support.apple.com", "support.microsoft.com",
+  "coway.co.kr", "chungho.co.kr", "skmagic.com", "cuckoo.co.kr", "cuchen.com",
+  "rinnai.co.kr", "kdnavien.co.kr", "winix.com", "dyson.co.kr", "philips.co.kr",
+  "speed.nia.or.kr", "kisa.or.kr", "safetykorea.kr", "msit.go.kr",
   // 3차 확장 — 학회·정부·대학병원·정식 저널
   "health.harvard.edu", "aafp.org", "cancer.org", "jkms.org", "korea.kr", "healthychildren.org",
   "aoa.org", "auanet.org", "ccjm.org", "amjmed.com", "clinicalnutritionjournal.com",
@@ -56,6 +64,8 @@ const DENY = [
   { re: /naturecan|livemomentous|apollohospitals|ubiehealth|prescriberpoint|todayspractitioner/i, why: "판매처·상업 헬스 사이트" },
   { re: /crnusa\.org|gssiweb\.org/i, why: "업계 협회(이해상충)" },
   { re: /researchgate\.net|auctoresonline|ijpsjournal|scienceinsights/i, why: "프리프린트·약탈적 저널 의심" },
+  { re: /clien\.net|dcinside|ppomppu|ruliweb|cafe\.naver|todayhumor|82cook|bobaedream/i, why: "커뮤니티 게시판" },
+  { re: /fastercapital|tipbox\.co\.kr|blogspot|wordpress\.com|100mb\.kr|exocctv|ajd\.co\.kr/i, why: "콘텐츠팜·팁블로그·판매처" },
 ];
 
 const safetyRe = /간독성|독성|상호작용|금기|임신|수유|부작용|출혈|중단|과다|상한|toxicity|interaction|contraindicat|bleeding|pregnan|adverse|overdose|upper-limit/i;
@@ -105,6 +115,9 @@ for (const [h, list] of Object.entries(byHost).sort((a, b) => b[1].length - a[1]
 // 보고한 배치에서 suntribesunscreen·porecloggingchecker·dermalogica·boldpurity가
 // 그대로 통과했다(2026-08-10). 건강·뷰티는 사람 몸에 관한 주장이라 반대로 간다.
 // tier="확실"을 붙이려면 TRUSTED 도메인이어야 한다. 아니면 등급을 내리거나 재조사한다.
+// 허용목록(TRUSTED 밖이면 확실 등급 불가)은 **건강 버티컬에만** 적용한다.
+// 기기·통신은 정당한 출처 범위가 훨씬 넓어(제조사 수백 곳·표준화 기구) 허용목록으로
+// 관리하면 노이즈가 1,600건 넘게 나온다. 그쪽은 아래 DENY(커뮤니티·콘텐츠팜)로 막는다.
 const healthScoped = rows.filter((r) => /^(영양|뷰티)_/.test(r.f));
 const notAllowed = healthScoped.filter((r) => r.tier === "확실");
 if (notAllowed.length) {

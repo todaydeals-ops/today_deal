@@ -1,0 +1,86 @@
+{
+  "topic": "넷플릭스·유튜브 등 스트리밍 앱 버퍼링 원인 진단 및 해결",
+  "brand": "공통",
+  "article": "tv-streaming-app-buffering",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "hd-video-minimum-5mbps-required",
+      "claim": "HD(고화질) 비디오를 버퍼링 없이 재생하려면 최소 5Mbps의 인터넷 속도가 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스트리밍 서비스 기술 표준",
+      "source_url": "https://fastercapital.com/ko/content/%EB%B2%84%ED%8D%BC%EB%A7%81--%EC%9D%91%EB%8B%B5-%EC%A7%80%EC%97%B0%EC%9D%B4-%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%B0%8D-%ED%92%88%EC%A7%88%EC%97%90-%EB%AF%B8%EC%B9%98%EB%8A%94-%EC%98%81%ED%96%A5.html",
+      "checked": "2026-08-10",
+      "scope": { "brand": "공통", "category": "스트리밍", "line": "HD", "years": "현행", "region": "KR" },
+      "caution": "필요 속도는 스트리밍 서비스별로 다를 수 있으며, 넷플릭스는 HD 권장 3Mbps, 유튜브는 HD 2.5Mbps이지만 안정적 재생을 위해 5Mbps 이상을 권장한다."
+    },
+    {
+      "id": "4k-video-minimum-25mbps-required",
+      "claim": "4K(초고화질) 비디오를 버퍼링 없이 재생하려면 최소 25Mbps 이상의 인터넷 속도가 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스트리밍 서비스 기술 표준",
+      "source_url": "https://fastercapital.com/ko/content/%EB%B2%84%ED%8D%BC%EB%A7%81--%EC%9D%91%EB%8B%B5-%EC%A7%80%EC%97%B0%EC%9D%B4-%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%B0%8D-%ED%92%88%EC%A7%88%EC%97%90-%EB%AF%B8%EC%B9%98%EB%8A%94-%EC%98%81%ED%96%A5.html",
+      "checked": "2026-08-10",
+      "scope": { "brand": "공통", "category": "스트리밍", "line": "4K", "years": "현행", "region": "KR" },
+      "caution": "4K는 대역폭을 많이 소비하므로, 여러 기기가 동시에 인터넷을 사용 중이면 필요한 속도가 더 높아진다."
+    },
+    {
+      "id": "streaming-buffering-multiple-devices-simultaneous",
+      "claim": "스트리밍 버퍼링의 주요 원인은 여러 기기가 동시에 인터넷을 사용할 때 충분한 대역폭이 할당되지 않기 때문이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "스트리밍 버퍼링 원인 분석 커뮤니티",
+      "source_url": "https://infoworldkorea.blogspot.com/2026/02/6-pc.html",
+      "checked": "2026-08-10",
+      "scope": { "brand": "공통", "category": "스트리밍", "line": "모든 앱", "years": "현행", "region": "KR" },
+      "caution": "가정 내에서 여러 명이 동시에 스트리밍하거나 백그라운드에서 업로드·다운로드가 진행 중이면 버퍼링이 발생할 수 있다."
+    },
+    {
+      "id": "app-outdated-version-buffering-cause",
+      "claim": "스트리밍 앱의 버전이 오래되었거나 최신 업데이트가 설치되지 않았으면 버퍼링이나 재생 오류가 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "스트리밍 앱 버퍼링 해결 가이드",
+      "source_url": "https://3points.co.kr/%EC%B9%98%EC%A7%80%EC%A7%81-%EB%B2%84%ED%8D%BC%EB%A7%81-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%84%EC%9D%B4%ED%8F%B0-%ED%95%B8%EB%93%9C%ED%8F%B0-%ED%95%B4%EA%B2%B0%EB%B2%95-%EC%B4%9D%EC%A0%95%EB%A6%AC/",
+      "checked": "2026-08-10",
+      "scope": { "brand": "공통", "category": "스트리밍", "line": "모든 앱", "years": "현행", "region": "KR" }
+    },
+    {
+      "id": "wired-connection-more-stable-than-wifi",
+      "claim": "가능하다면 스트리밍 기기를 랜선으로 유선 연결하면 와이파이보다 더 안정적이고 버퍼링이 적다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "스트리밍 안정성 개선 가이드",
+      "source_url": "https://allinfo.leedolife.com/%EC%B9%98%EC%A7%80%EC%A7%81-%EB%B2%84%ED%8D%BC%EB%A7%81-%ED%95%B4%EA%B2%B0-6%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95-pc-%EB%AA%A8%EB%B0%94%EC%9D%BC/",
+      "checked": "2026-08-10",
+      "scope": { "brand": "공통", "category": "스트리밍", "line": "모든 기기", "years": "현행", "region": "KR" },
+      "caution": "TV나 스트리밍 박스가 유선 연결을 지원하는지 확인하고, 불가능하면 와이파이 신호가 강한 위치에 기기를 배치할 것."
+    },
+    {
+      "id": "modem-router-reboot-network-initialization",
+      "claim": "스트리밍 버퍼링이 발생하면 모뎀과 공유기의 전원을 끄고 1~2분 대기 후 다시 켜서 네트워크를 초기화하는 것이 도움이 될 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "스트리밍 버퍼링 해결 기초 방법",
+      "source_url": "https://infoworldkorea.blogspot.com/2026/02/6-pc.html",
+      "checked": "2026-08-10",
+      "scope": { "brand": "공통", "category": "스트리밍", "line": "모든 앱", "years": "현행", "region": "KR" }
+    },
+    {
+      "id": "streaming-quality-reduce-lower-buffering",
+      "claim": "현재의 인터넷 속도로 고화질을 재생할 수 없다면, 스트리밍 앱의 화질 설정을 중간 또는 낮음으로 변경하면 버퍼링이 감소하고 더 부드러운 재생 경험을 얻을 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "스트리밍 화질 조정 버퍼링 해결",
+      "source_url": "https://fastercapital.com/ko/content/%EB%B2%84%ED%8D%BC%EB%A7%81--%EC%9D%91%EB%8B%B5-%EC%A7%80%EC%97%B0%EC%9D%B4-%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%B0%8D-%ED%92%88%EC%A7%88%EC%97%90-%EB%AF%B8%EC%B9%98%EB%8A%94-%EC%98%81%ED%96%A5.html",
+      "checked": "2026-08-10",
+      "scope": { "brand": "공통", "category": "스트리밍", "line": "모든 앱", "years": "현행", "region": "KR" },
+      "caution": "대부분의 스트리밍 앱에서 자동 화질 선택 옵션을 제공하므로, 이를 활성화하면 인터넷 상태에 따라 화질이 자동으로 조정된다."
+    }
+  ]
+}

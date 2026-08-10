@@ -1,0 +1,75 @@
+{
+  "topic": "SK브로드밴드·LG유플러스 인터넷 장애 확인 및 접수 방법",
+  "brand": "공통",
+  "article": "skb-lgu-internet-selfcheck",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "skb-customer-service-number-1588-7000",
+      "claim": "SK브로드밴드 고객센터는 1588-7000번으로 연결되며, 상담 시간은 08:00–22:00이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SK브로드밴드 공식",
+      "source_url": "https://blog.bworld.co.kr/2025/12/17/internet-not-working-modem-router-guide/",
+      "checked": "2026-08-10",
+      "scope": { "brand": "SK브로드밴드", "category": "고객센터", "line": "전 라인", "years": "현행", "region": "KR" },
+      "caution": "기존 정보에서는 106번 ARS가 안내되었으나, 최신 공식 가이드에서는 1588-7000 직통번호 사용을 권장한다."
+    },
+    {
+      "id": "lgu-service-status-page-online-check",
+      "claim": "LG유플러스는 공식 홈페이지의 서비스 장애 안내 페이지(https://www.lguplus.com/footer/issue-status)에서 실시간 장애 현황을 확인할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG유플러스 고객지원",
+      "source_url": "https://www.lguplus.com/footer/issue-status",
+      "checked": "2026-08-10",
+      "scope": { "brand": "LG유플러스", "category": "고객센터", "line": "전 라인", "years": "현행", "region": "KR" },
+      "caution": "장애 페이지에 해당 지역·서비스 장애가 없어도 개인 가입선에는 문제가 있을 수 있으므로, 개인 진단이 필요하면 고객센터에 문의할 것."
+    },
+    {
+      "id": "skb-online-failure-reporting-bworld",
+      "claim": "SK브로드밴드의 인터넷 장애 신고는 전화 1588-7000 외에 B world 홈페이지(bworld.co.kr)에서 온라인으로도 접수할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SK브로드밴드 공식블로그",
+      "source_url": "https://blog.bworld.co.kr/2025/12/17/internet-not-working-modem-router-guide/",
+      "checked": "2026-08-10",
+      "scope": { "brand": "SK브로드밴드", "category": "고객센터", "line": "전 라인", "years": "현행", "region": "KR" }
+    },
+    {
+      "id": "lgu-hd-video-5mbps-4k-25mbps-required",
+      "claim": "스트리밍 서비스 재생 시 HD(고화질) 비디오는 최소 5Mbps, 4K 비디오는 최소 25Mbps의 인터넷 속도가 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스트리밍 서비스 표준 권장 사양",
+      "source_url": "https://fastercapital.com/ko/content/%EB%B2%84%ED%8D%BC%EB%A7%81--%EC%9D%91%EB%8B%B5-%EC%A7%80%EC%97%B0%EC%9D%B4-%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%B0%8D-%ED%92%88%EC%A7%88%EC%97%90-%EB%AF%B8%EC%B9%98%EB%8A%94-%EC%98%81%ED%96%A5.html",
+      "checked": "2026-08-10",
+      "scope": { "brand": "공통", "category": "인터넷 속도", "line": "스트리밍", "years": "현행", "region": "KR" },
+      "caution": "개인의 실제 인터넷 속도가 이보다 낮으면 버퍼링이 발생할 수 있으며, 여러 기기가 동시에 사용 중이면 필요 속도가 더 높아진다."
+    },
+    {
+      "id": "lgu-app-chat-support-available",
+      "claim": "LG유플러스는 U+ 앱의 챗봇 상담과 영상통화를 통한 원격 기술지원도 제공한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG유플러스 고객지원",
+      "source_url": "https://www.lguplus.com/support/self-troubleshoot/guide",
+      "checked": "2026-08-10",
+      "scope": { "brand": "LG유플러스", "category": "고객센터", "line": "전 라인", "years": "현행", "region": "KR" }
+    },
+    {
+      "id": "skb-modem-led-general-meaning",
+      "claim": "SK브로드밴드 모뎀의 LED도 KT와 유사하게 작동하지만, 모델별로 색상과 위치가 다를 수 있으므로 모뎀 뒷면 라벨이나 매뉴얼을 확인해야 한다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "SK브로드밴드 공식 안내 부재",
+      "source_url": "https://www.bworld.co.kr/customer/center/service.do",
+      "checked": "2026-08-10",
+      "scope": { "brand": "SK브로드밴드", "category": "모뎀", "line": "전 모델", "years": "현행", "region": "KR" },
+      "caution": "SK브로드밴드는 공식 LED 색상 기준을 명확히 공시하지 않으므로, 구체적인 LED 상태 확인은 고객센터 문의가 필요하다."
+    }
+  ]
+}

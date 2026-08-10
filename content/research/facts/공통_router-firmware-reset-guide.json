@@ -1,0 +1,86 @@
+{
+  "topic": "공유기 펌웨어 업그레이드·초기화·설정 백업 가이드",
+  "brand": "공통",
+  "article": "router-firmware-reset-guide",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "firmware-upgrade-settings-may-reset",
+      "claim": "공유기의 펌웨어 업그레이드 후 일부 설정이 공장 초기화될 수 있으므로, 업그레이드 전에 현재 설정을 파일로 백업해두는 것이 필수다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공유기 펌웨어 업그레이드 안내",
+      "source_url": "https://tipbox.co.kr/%EA%B3%B5%EC%9C%A0%EA%B8%B0-%ED%8E%8C%EC%9B%A8%EC%96%B4-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%EB%B0%A9%EB%B2%95/",
+      "checked": "2026-08-10",
+      "scope": { "brand": "공통", "category": "펌웨어", "line": "모든 공유기", "years": "현행", "region": "KR" },
+      "caution": "업그레이드 후 초기화되는 설정에는 SSID(네트워크 이름), 와이파이 비밀번호, IP 대역, DHCP 예약, 포트 포워딩, DDNS, 게스트 네트워크 등이 포함될 수 있다."
+    },
+    {
+      "id": "firmware-upgrade-during-disconnect-risk",
+      "claim": "공유기 펌웨어 업그레이드 중 인터넷이 끊기면 오류가 발생할 수 있으므로, PC를 공유기에 랜선으로 직접 연결하여 업그레이드해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공유기 펌웨어 업그레이드 안전 가이드",
+      "source_url": "https://tipbox.co.kr/%EA%B3%B5%EC%9C%A0%EA%B8%B0-%ED%8E%8C%EC%9B%A8%EC%96%B4-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%EB%B0%A9%EB%B2%95/",
+      "checked": "2026-08-10",
+      "scope": { "brand": "공통", "category": "펌웨어", "line": "모든 공유기", "years": "현행", "region": "KR" },
+      "caution": "와이파이를 통한 업그레이드는 비상시에만 사용하고, 가능하면 항상 유선 연결로 진행할 것."
+    },
+    {
+      "id": "firmware-upgrade-power-outage-brick-risk",
+      "claim": "펌웨어 업그레이드 중 전원이 꺼지면 공유기가 벽돌화(부팅 불가 상태)될 수 있으므로, 업그레이드 중에는 반드시 안정적인 전원 공급을 확보해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공유기 펌웨어 업그레이드 주의사항",
+      "source_url": "https://tipbox.co.kr/%EA%B3%B5%EC%9C%A0%EA%B8%B0-%ED%8E%8C%EC%9B%A8%EC%96%B4-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%EB%B0%A9%EB%B2%95/",
+      "checked": "2026-08-10",
+      "scope": { "brand": "공통", "category": "펌웨어", "line": "모든 공유기", "years": "현행", "region": "KR" },
+      "caution": "벽돌화가 발생했을 경우 제조사 복구 모드를 사용해 재플래시를 시도하거나 고객센터에 문의해야 한다."
+    },
+    {
+      "id": "factory-reset-before-checklist-reboot-first",
+      "claim": "공유기 공장 초기화를 하기 전에 먼저 모뎀과 공우기의 전원을 껐다가 켜서 재부팅을 시도하고, 그것으로 증상이 해결되는지 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공유기 초기화 가이드",
+      "source_url": "https://www.cosmosfarm.com/threads/document/73814",
+      "checked": "2026-08-10",
+      "scope": { "brand": "공통", "category": "초기화", "line": "모든 공유기", "years": "현행", "region": "KR" },
+      "caution": "대부분의 인터넷 끊김은 전원 재부팅만으로 해결되므로, 초기화는 반드시 필요한 경우에만 진행할 것."
+    },
+    {
+      "id": "factory-reset-isp-router-requires-consultation",
+      "claim": "통신사 임대 공유기(KT, SK브로드밴드, LG유플러스 등)의 공장 초기화는 IPTV 설정에도 영향을 줄 수 있으므로, 반드시 고객센터에 문의한 후 진행해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "통신사 공유기 초기화 가이드",
+      "source_url": "https://www.cosmosfarm.com/threads/document/73814",
+      "checked": "2026-08-10",
+      "scope": { "brand": "공통", "category": "초기화", "line": "통신사 공유기", "years": "현행", "region": "KR" }
+    },
+    {
+      "id": "factory-reset-record-admin-info-before",
+      "claim": "공장 초기화 전에 공유기 하단의 라벨에서 기본 관리자 주소(예: 192.168.0.1), 기본 아이디, 기본 비밀번호를 미리 기록해두어야 초기화 후 접속할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공유기 초기화 체크리스트",
+      "source_url": "https://www.cosmosfarm.com/threads/document/73814",
+      "checked": "2026-08-10",
+      "scope": { "brand": "공통", "category": "초기화", "line": "모든 공유기", "years": "현행", "region": "KR" }
+    },
+    {
+      "id": "settings-backup-includes-ssid-password-ip-dhcp",
+      "claim": "공유기 설정 백업 파일에는 SSID(네트워크 이름), 와이파이 비밀번호, 내부 IP 대역, DHCP 예약, 포트 포워딩, DDNS, 게스트 네트워크 등 모든 커스텀 설정이 포함된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공유기 설정 백업 및 복구 가이드",
+      "source_url": "https://jab-guyver.co.kr/1705",
+      "checked": "2026-08-10",
+      "scope": { "brand": "공통", "category": "초기화", "line": "모든 공유기", "years": "현행", "region": "KR" },
+      "caution": "백업 파일은 안전한 위치(클라우드, USB 등)에 여러 개 보관하는 것이 좋다. 또한 백업 파일 생성 시간을 기록해두면 이후 복구 시 혼동을 피할 수 있다."
+    }
+  ]
+}
