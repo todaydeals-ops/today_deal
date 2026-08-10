@@ -1,0 +1,119 @@
+{
+  "topic": "아르기닌·시트룰린: 약동학적 차이, NO 생성 경로, 운동수행력 근거",
+  "brand": "알약연구소",
+  "article": "arginine-citrulline — 아르기닌·시트룰린, 어떤 상황에 도움이 될까",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "citrulline-bioavailability-superior-to-arginine",
+      "claim": "경구 L-시트룰린은 L-아르기닌보다 혈중 L-아르기닌 농도를 더 효과적으로 높인다. L-아르기닌은 소장 벽과 간에서 아르기나제에 의해 광범위하게 대사되지만, L-시트룰린은 간 대사를 거치지 않고 신장으로 수송되어 새로운 L-아르기닌 합성(de novo synthesis)에 참여한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Pharmacokinetic and pharmacodynamic properties of oral L-citrulline and L-arginine",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2291275/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "아르기닌 vs 시트룰린", "분류": "약동학·생물이용률", "시기": "경구 투여 후", "지역": "글로벌"},
+      "caution": "시트룰린 3g 1일 2회 투여 시 혈중 L-아르기닌의 C_min을 올리고 L-아르기닌/ADMA 비율을 개선한다.",
+      "cautionSource": "임상 약동학 연구"
+    },
+    {
+      "id": "citrulline-malate-form-additional-benefits",
+      "claim": "시트룰린-말레이트(citrulline malate) 형태는 순수 L-시트룰린에 말산(malate)을 결합한 것으로, 추가 효과에 대한 주장이 있으나, 순수 L-시트룰린과의 직접 비교 연구는 제한적이다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "약동학 문헌 검토",
+      "source_url": "https://www.researchgate.net/publication/6177218_Pharmacokinetic_and_pharmacodynamic_properties_of_oral_L-citrulline_and_L-arginine_Impact_on_nitric_oxide_metabolism",
+      "checked": "2026-08-10",
+      "scope": {"대상": "시트룰린 형태", "분류": "제제 비교", "시기": "현재", "지역": "글로벌"},
+      "caution": "말산의 추가 기여는 이론적이나, 임상 근거는 아직 명확하지 않다. 제품 마케팅에서 말산의 역할이 과장될 수 있다.",
+      "cautionSource": "임상 근거 부족"
+    },
+    {
+      "id": "nitric-oxide-pathway-arginine-citrulline-endothelial",
+      "claim": "아르기닌과 시트룰린은 모두 일산화질소(NO) 합성의 기질(substrate)로 작용한다. NO는 혈관 내피에서 산화질소 합성효소(eNOS)에 의해 생성되며, 혈관 확장, 혈류 개선, 혈압 조절을 매개한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Frontiers in Sports and Active Living: Ergogenic effects of L-citrulline supplementation",
+      "source_url": "https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2025.1627743/full",
+      "checked": "2026-08-10",
+      "scope": {"대상": "혈관 내피", "분류": "생화학 기전", "시기": "투여 후 수분 이내", "지역": "글로벌"},
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "citrulline-endothelial-function-improvement-rct-evidence",
+      "claim": "L-시트룰린 보충은 안정시 대혈관(macrovascular) 내피 기능을 개선하고, 특히 고혈압 폐경기 여성에서 다리 혈류 반응을 증가시킨다는 2024년 연구가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Physiological Society: L-Citrulline Supplementation Improves Leg Endothelial Function and Blood Flow Responses to Plantarflexion Exercise in Hypertensive Postmenopausal Women (2024)",
+      "source_url": "https://journals.physiology.org/doi/abs/10.1152/physiol.2024.39.S1.1338",
+      "checked": "2026-08-10",
+      "scope": {"대상": "고혈압 폐경기 여성", "분류": "혈관 기능", "시기": "보충 후 단기", "지역": "글로벌"},
+      "caution": "표본이 특정 인구집단(폐경기 여성, 고혈압)이므로 일반화 제약이 있다.",
+      "cautionSource": "임상 시험 설계 제한"
+    },
+    {
+      "id": "arginine-exercise-performance-meta-analysis-mixed",
+      "claim": "아르기닌 보충에 대한 메타분석(15개 RCT 포함)은 유산소 운동 성능(효과크기 0.84)과 무산소 운동 성능(효과크기 0.24)의 개선을 보였으나, 연구 간 이질성이 크고 운동 양식(유산소 vs 무산소)에 따라 결과가 다르다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Effects of Arginine Supplementation on Athletic Performance Based on Energy Metabolism: A Systematic Review and Meta-Analysis (Nutrients 2020)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7282262/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "운동 선수", "분류": "운동수행력", "시기": "전 연식", "지역": "글로벌"},
+      "caution": "★최근 비판: 이 메타분석에는 스포츠 영양 분야의 일반적 오류(데이터 선택, 다중 비교)가 지적되었으므로, 효과크기를 신중히 해석할 필요가 있다. 또한 2024년 연구에서는 더 견제적인 결과가 보고되고 있다.",
+      "cautionSource": "메타분석 방법론 비판 논문 + 최신 연구"
+    },
+    {
+      "id": "acute-arginine-citrulline-nox-exercise-response",
+      "claim": "2025년 연구에 따르면, 아르기닌·시트룰린 혼합 음료의 급성 투여는 고강도 반복 운동 중 총 산화질소(NOx) 증가, 심폐 지표, 인지된 운동 강도 개선을 나타냈다(대학 축구 선수 대상, 무작위 이중맹검 병렬 설계).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Scientific Reports: Acute effects of combined supplementation of L-arginine and citrulline malate (2025)",
+      "source_url": "https://www.nature.com/articles/s41598-025-16374-x",
+      "checked": "2026-08-10",
+      "scope": {"대상": "젊은 성인 운동 선수", "분류": "운동 중 NO 대사", "시기": "급성 투여", "지역": "글로벌"},
+      "caution": "표본 특성(젊은 훈련 선수)과 단기 측정 기간. 만성 효과와 일반인에 대한 근거는 별도 필요.",
+      "cautionSource": "임상 시험 특성"
+    },
+    {
+      "id": "citrulline-muscle-pgc1alpha-fatigue-resistance",
+      "claim": "L-시트룰린 보충은 골격근 PGC-1α 발현을 상향조절하며, 이는 근력 개선과 근육 무게 증가와 관련이 있다. 한 연구에서는 시트룰린-말레이트가 피로까지의 시간(time to exhaustion)을 개선했다고 보고했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: l‐Citrulline Supplementation‐Increased Skeletal Muscle PGC‐1α Expression",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6099278/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "저항운동 실시자", "분류": "근력·피로 저항성", "시기": "보충 중기", "지역": "글로벌"},
+      "caution": "동물 모델 기초 연구도 포함되어 있으므로, 인체 임상 효과의 규모는 별도 확인 필요.",
+      "cautionSource": "연구 설계 이질성"
+    },
+    {
+      "id": "recommended-dosage-citrulline-arginine-performance",
+      "claim": "운동 성능 개선을 목표로 한 아르기닌 보충 프로토콜은 운동 60~90분 전에 체중 kg당 0.15g을 투여하는 것이 권장되며, 시트룰린은 일반적으로 3~6g/일 범위에서 임상 연구가 진행되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임상 연구 및 운동 영양학 문헌",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7282262/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "운동 선수", "분류": "용량 및 타이밍", "시기": "현행", "지역": "글로벌"},
+      "caution": "용량-반응 관계가 명확하지 않은 경우가 많고, 개인차가 크다. 고용량이 더 효과적이라는 보장은 없다.",
+      "cautionSource": "임상 근거 보고"
+    },
+    {
+      "id": "blood-pressure-gastrointestinal-tolerability-concern",
+      "claim": "고용량 아르기닌(특히 6g 이상)은 소화기 부작용(복통, 설사)을 유발할 수 있고, 혈압 저하 경향이 있을 수 있으므로 저혈압 환자는 주의가 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임상 보고 및 영양학 문헌",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {"대상": "고용량 보충자", "분류": "부작용·금기", "시기": "보충 중", "지역": "글로벌"},
+      "caution": "저혈압, 신질환, 헤르페스 바이러스 감염 병력이 있으면 의료 전문가 상담 필수.",
+      "cautionSource": "임상 실무"
+    }
+  ]
+}

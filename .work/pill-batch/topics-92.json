@@ -57,7 +57,7 @@
       "slug": "eye-drops-vs-supplement",
       "cat": "eye",
       "corner": "smartguide",
-      "title": "인공눈물이 먼저일까 영양제가 먼저일까",
+      "title": "인공눈물과 눈 영양제, 어떤 순서로 쓸까",
       "angle": "증상별 우선순위·생활습관·진료 신호"
     },
     {
@@ -169,7 +169,7 @@
       "slug": "arginine-citrulline",
       "cat": "vital",
       "corner": "factcheck",
-      "title": "아르기닌·시트룰린, 정말 힘이 나게 할까",
+      "title": "아르기닌·시트룰린, 어떤 상황에 도움이 될까",
       "angle": "산화질소 기전·운동 수행·혈압"
     },
     {
@@ -183,7 +183,7 @@
       "slug": "taurine-fatigue",
       "cat": "vital",
       "corner": "factcheck",
-      "title": "타우린 드링크, 피로에 근거가 있나",
+      "title": "타우린 드링크, 어떤 피로에 맞을까",
       "angle": "에너지드링크 조합·카페인 동반 문제"
     },
     {
@@ -197,14 +197,14 @@
       "slug": "maca-energy-libido",
       "cat": "vital",
       "corner": "factcheck",
-      "title": "마카, 활력에 대한 근거는 얼마나 단단한가",
+      "title": "마카, 활력 관리에서 어디에 두면 좋을까",
       "angle": "소규모 RCT·플라시보·품종 차이"
     },
     {
       "slug": "glutathione-whitening",
       "cat": "vital",
       "corner": "factcheck",
-      "title": "먹는 글루타치온, 미백에 도달할까",
+      "title": "먹는 글루타치온, 무엇을 기준으로 고를까",
       "angle": "경구 흡수 논쟁·주사 안전성 경고"
     },
     {
@@ -253,7 +253,7 @@
       "slug": "postbiotics-trend",
       "cat": "shield",
       "corner": "trendlab",
-      "title": "포스트바이오틱스(사균체), 새 유행의 실체",
+      "title": "포스트바이오틱스(사균체), 생균과 어떻게 다를까",
       "angle": "사균 vs 생균·근거 수준·보관 장점"
     },
     {
@@ -309,7 +309,7 @@
       "slug": "immune-supplement-overhype",
       "cat": "shield",
       "corner": "factcheck",
-      "title": "면역력 강화라는 표현은 어디까지 허용되나",
+      "title": "면역 관련 표시, 어디까지 표기할 수 있을까",
       "angle": "식약처 표시 규정·과대광고 유형"
     },
     {
@@ -351,21 +351,21 @@
       "slug": "blood-pressure-supplement",
       "cat": "flow",
       "corner": "smartguide",
-      "title": "혈압 영양제, 약을 대신할 수 있을까",
+      "title": "혈압 관리 영양제, 약과 어떻게 역할이 나뉠까",
       "angle": "근거 있는 성분·약물 대체 금지 경고"
     },
     {
       "slug": "homocysteine-b-vitamins",
       "cat": "flow",
       "corner": "factcheck",
-      "title": "호모시스테인 낮추면 심혈관이 좋아질까",
+      "title": "호모시스테인과 비타민B, 어떤 지표를 보면 될까",
       "angle": "대리지표 함정·대규모 임상 결과"
     },
     {
       "slug": "coq10-heart-failure",
       "cat": "flow",
       "corner": "factcheck",
-      "title": "코엔자임Q10과 심부전, 임상은 뭐라 하나",
+      "title": "코엔자임Q10과 심장, 임상에서 확인된 범위",
       "angle": "Q-SYMBIO 임상·보조요법 위치"
     },
     {
@@ -379,7 +379,7 @@
       "slug": "varicose-vein-supplement",
       "cat": "flow",
       "corner": "factcheck",
-      "title": "하지정맥류에 먹는 약이 도움이 될까",
+      "title": "하지정맥류, 먹는 관리가 어디까지 도움이 될까",
       "angle": "정맥활성약물 근거·압박스타킹 우선"
     },
     {
@@ -428,7 +428,7 @@
       "slug": "inner-beauty-skin",
       "cat": "care",
       "corner": "factcheck",
-      "title": "먹는 화장품이라는 이너뷰티, 어디까지 사실인가",
+      "title": "이너뷰티, 어떤 성분이 어디까지 도달할까",
       "angle": "피부 기능성 인정 범위·광고 표현"
     },
     {
@@ -442,7 +442,7 @@
       "slug": "male-fertility-supplement",
       "cat": "care",
       "corner": "factcheck",
-      "title": "남성 정자 건강 영양제, 근거는 어디까지",
+      "title": "남성 생식 건강 영양제, 근거가 있는 성분은",
       "angle": "아연·엽산·항산화 임상·생활습관 우선"
     },
     {
@@ -547,7 +547,7 @@
       "slug": "supplement-vs-food",
       "cat": "shield",
       "corner": "factcheck",
-      "title": "음식으로 먹는 것과 영양제로 먹는 것의 차이",
+      "title": "음식으로 먹을 때와 영양제로 먹을 때의 차이",
       "angle": "식품 매트릭스·생체이용률·과잉 위험"
     },
     {
@@ -561,35 +561,35 @@
       "slug": "creatine-safety",
       "cat": "vital",
       "corner": "factcheck",
-      "title": "크레아틴, 안전성과 효과의 근거",
+      "title": "크레아틴, 안전하게 쓰는 기준",
       "angle": "신장 우려 검증·로딩 필요성"
     },
     {
       "slug": "bcaa-eaa",
       "cat": "vital",
       "corner": "factcheck",
-      "title": "BCAA와 EAA, 돈값을 하는 쪽은",
+      "title": "BCAA와 EAA, 어떤 경우에 어느 쪽이 맞을까",
       "angle": "필수아미노산 균형·단백질 충분 시 무용"
     },
     {
       "slug": "lactoferrin-trend",
       "cat": "shield",
       "corner": "trendlab",
-      "title": "락토페린, 왜 갑자기 유행했나",
+      "title": "락토페린, 어떤 사람에게 맞는 성분일까",
       "angle": "면역·철 결합 기전·근거와 마케팅 거리"
     },
     {
       "slug": "spirulina-chlorella",
       "cat": "shield",
       "corner": "factcheck",
-      "title": "스피루리나·클로렐라, 슈퍼푸드라는 이름값",
+      "title": "스피루리나·클로렐라, 어떤 영양을 채워줄까",
       "angle": "영양 밀도·중금속 오염 이슈"
     },
     {
       "slug": "apple-cider-vinegar",
       "cat": "vital",
       "corner": "factcheck",
-      "title": "사과식초 다이어트, 혈당과 체중의 근거",
+      "title": "사과식초, 혈당과 체중 관리에서의 자리",
       "angle": "소규모 연구·치아 부식·역류 주의"
     },
     {
@@ -617,42 +617,42 @@
       "slug": "vitamin-e-selenium",
       "cat": "shield",
       "corner": "factcheck",
-      "title": "비타민E와 셀레늄, 항산화의 역설",
+      "title": "비타민E와 셀레늄, 얼마나 먹는 게 적당할까",
       "angle": "SELECT 임상·고용량 위험·상한"
     },
     {
       "slug": "iodine-thyroid",
       "cat": "care",
       "corner": "smartguide",
-      "title": "요오드, 한국인에게 부족일까 과잉일까",
+      "title": "요오드, 한국인 식단에서 얼마나 필요할까",
       "angle": "해조류 섭취량·갑상선 질환자 주의"
     },
     {
       "slug": "kids-growth-supplement",
       "cat": "care",
       "corner": "factcheck",
-      "title": "키 크는 영양제, 성장기 광고의 실제",
+      "title": "성장기 영양제, 무엇을 기준으로 고를까",
       "angle": "성장호르몬 오해·아연/칼슘 역할·성장클리닉"
     },
     {
       "slug": "student-brain-supplement",
       "cat": "vital",
       "corner": "factcheck",
-      "title": "수험생 두뇌 영양제, 집중력에 근거가 있나",
+      "title": "수험생 영양제, 집중력 관리에 어디까지 도움이 될까",
       "angle": "오메가3·포스파티딜세린 근거·수면 우선"
     },
     {
       "slug": "pet-owner-supplement-caution",
       "cat": "shield",
       "corner": "smartguide",
-      "title": "사람 영양제를 반려동물에게 주면 안 되는 이유",
+      "title": "반려동물에게 사람 영양제를 주면 안 되는 이유",
       "angle": "종별 대사 차이·중독 성분·수의사 상담"
     },
     {
       "slug": "supplement-subscription-trend",
       "cat": "shield",
       "corner": "trendlab",
-      "title": "맞춤형 영양제 구독, 무엇을 근거로 추천하나",
+      "title": "맞춤형 영양제 구독, 무엇을 근거로 추천할까",
       "angle": "설문 기반 한계·유전자검사 마케팅·규제"
     }
   ]

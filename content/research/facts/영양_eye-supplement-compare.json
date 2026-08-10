@@ -1,0 +1,126 @@
+{
+  "topic": "눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위",
+  "brand": "알약연구소·눈 건강",
+  "article": "eye-supplement-compare",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "lutein-zeaxanthin-basic-function-macular-pigment",
+    "areds2-lutein-zeaxanthin-dose-protocol",
+    "areds2-primary-outcome-no-benefit-beyond-areds",
+    "areds2-subgroup-low-dietary-lutein",
+    "astaxanthin-basic-mechanism-antioxidant-ciliary-body",
+    "astaxanthin-digital-eye-strain-rct-dosage-4-12mg",
+    "astaxanthin-accommodation-improvement-6mg-4weeks",
+    "astaxanthin-recommended-dosage-4-6mg-daily",
+    "omega3-mechanism-tear-film-lipid-layer-production",
+    "dream-trial-sample-size-535-participants-double-masked-rct",
+    "dream-trial-omega3-dosage-epa-2g-dha-1g-daily",
+    "dream-trial-primary-outcome-no-significant-benefit"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "eye-supplement-comparison-target-symptoms-by-ingredient",
+      "claim": "눈 영양제 성분들은 증상별로 다르게 효과를 나타낸다: 루테인/제아잔틴은 황반변성 위험군의 진행 지연, 아스타잔틴은 눈 조절력(노안)과 디지털 피로 개선, 빌베리는 화면 피로 감소, 오메가3는 눈물막 지질층 지원(증거 약함).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Effect of Multiple Dietary Supplement on Accommodative Ability; PubMed/NEJM 메타분석",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4997915/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "다양한 눈 건강 상태 (황반변성 위험군, 디지털 장치 사용자, 노안, 건성안)",
+        "분류": "성분별 효과 범위",
+        "시기": "만성 투여(4주~5년)",
+        "지역": "글로벌"
+      },
+      "caution": "★같은 '눈 건강'도 증상이 다르면 성분이 달라야 한다. 일반적인 '눈 건강 보조'는 성분 혼합을 주로 한다.",
+      "cautionSource": "임상 근거 종합"
+    },
+    {
+      "id": "lutein-zeaxanthin-macular-degeneration-prevention-vs-progression-delay",
+      "claim": "루테인+제아잔틴은 황반변성이 없는 일반인의 '예방'보다는, 이미 황반변성 진행 위험이 높은 사람의 '진행 지연'에 근거가 있다(AREDS2 연구 결과).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JAMA Ophthalmology: AREDS2 Trial",
+      "source_url": "https://jamanetwork.com/journals/jama/fullarticle/1684847",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "황반변성 진행 위험군(50~85세)",
+        "분류": "예방 vs 진행 지연",
+        "시기": "중앙 5년 추적",
+        "지역": "글로벌"
+      },
+      "caution": "일반인의 '황반변성 예방'을 위한 1순위는 루테인이 아니라 식이 개선(시금치, 케일 등 녹색 채소)이다.",
+      "cautionSource": "AREDS2 임상 기준"
+    },
+    {
+      "id": "astaxanthin-accommodation-presbyopia-effective-4-6mg-daily",
+      "claim": "아스타잔틴 4~6mg을 4~12주 복용한 임상 연구들에서 눈 조절력(accommodation) 개선과 노안 관련 증상 감소가 보고되었으며, 46~65세 노인 대상 연구에서 조절력이 평균 19% 개선되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Astaxanthin Improved Acute and Chronic Digital Eye Strain; NCBI/PMC 노안 개선 연구",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4997915/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "노안(presbyopia) 있는 중장년층(40대 이상)",
+        "분류": "조절력 개선",
+        "시기": "4주~12주 투여",
+        "지역": "일본, 글로벌"
+      },
+      "caution": "표본 크기가 작은 연구(n=22)도 포함되어 있으므로 대규모 확인이 필요하지만, 현재까지는 가장 강한 근거가 있는 성분이다.",
+      "cautionSource": "임상 근거 평가"
+    },
+    {
+      "id": "astaxanthin-digital-eye-strain-symptom-relief-evidence",
+      "claim": "컴퓨터/스마트폰 사용으로 인한 디지털 안정피로(CVS)에는 아스타잔틴이 가장 잘 연구되었으며, 안경 조절 개선과 주관적 피로 감소가 4~12mg 용량, 4~84일 투여에서 입증되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Springer/PubMed: Astaxanthin (AstaReal®) Improved Acute and Chronic Digital Eye Strain in Children",
+      "source_url": "https://link.springer.com/article/10.1007/s12325-025-03125-7",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "디지털 기기 장시간 사용자(성인 및 학령기 아동)",
+        "분류": "디지털 안정 피로",
+        "시기": "4일~84일(단기~중기)",
+        "지역": "글로벌"
+      },
+      "caution": "아스타잔틴은 루테인보다 디지털 피로에 더 많이 연구되었으며, 비타민 A 축적 독성은 낮으므로 안전성이 좋다.",
+      "cautionSource": "PubMed 임상 근거"
+    },
+    {
+      "id": "bilberry-anthocyanin-screen-fatigue-12week-reduction",
+      "claim": "빌베리 추출물(안토시아닌 함유, ~240mg/일)은 12주 RCT에서 화면 관련 안정 피로를 감소시켰다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Bilberry anthocyanin supplementation on screen-related ocular fatigue",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "디지털 기기 사용자",
+        "분류": "화면 피로",
+        "시기": "12주 투여",
+        "지역": "글로벌"
+      },
+      "caution": "아스타잔틴보다 연구가 적지만, 전통 약용 역사가 길고 안전성 프로필이 우수하다.",
+      "cautionSource": "PubMed 문헌"
+    },
+    {
+      "id": "combined-eye-supplement-lutein-astaxanthin-bilberry-dha-efficacy",
+      "claim": "루테인 10mg, 아스타잔틴 4mg, 빌베리 추출물, 검은콩 안토시아닌 2.3mg, DHA 50mg의 복합 포뮬라를 4주 복용한 결과 눈 조절력과 눈 피로·흐림 증상이 위약보다 개선되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Effect of Multiple Dietary Supplement Containing Lutein, Astaxanthin, Cyanidin-3-Glucoside, and DHA on Accommodative Ability",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4997915/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "노안 및 눈 피로 증상 있는 사람",
+        "분류": "복합 포뮬라 효과",
+        "시기": "4주 투여",
+        "지역": "일본"
+      },
+      "caution": "단일 성분보다는 복합 포뮬라가 더 많은 경로를 커버할 수 있으므로, 일반 소비자 입장에서는 균형잡힌 복합제가 더 실용적일 수 있다.",
+      "cautionSource": "임상 근거"
+    }
+  ]
+}

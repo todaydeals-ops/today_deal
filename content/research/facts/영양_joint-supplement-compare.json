@@ -1,0 +1,104 @@
+{
+  "topic": "관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과",
+  "brand": "알약연구소·관절 건강",
+  "article": "joint-supplement-compare",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "glucosamine-mechanism-cartilage-matrix-synthesis",
+    "glucosamine-form-sulfate-vs-hydrochloride-absorption",
+    "gait-trial-overall-population-no-efficacy",
+    "chondroitin-cartilage-matrix-protease-inhibition",
+    "chondroitin-gait-combined-subgroup-efficacy-same-as-glucosamine",
+    "disease-prevention-vs-disease-progression-delay-distinction",
+    "rct-randomized-controlled-trial-definition-gold-standard"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "joint-supplement-overview-5-ingredients-with-varying-evidence",
+      "claim": "관절 건강 영양제 5가지(글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐)는 각각 생화학적 기전은 그럴듯하나, 임상 효과에 대한 근거의 강도와 일관성이 크게 다르다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NEJM GAIT Study, PubMed 메타분석",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "관절염 또는 관절 건강 관심층",
+        "분류": "성분 비교",
+        "시기": "만성 투여",
+        "지역": "글로벌"
+      },
+      "caution": "★'효과 없음'이 입증된 성분과 '아직 충분히 연구 안 됨' 성분을 구분해야 한다. 후자도 개인차가 있을 수 있다.",
+      "cautionSource": "임상 근거 종합"
+    },
+    {
+      "id": "glucosamine-chondroitin-gait-trial-window-summary",
+      "claim": "미국 NIH 주도 GAIT 임상(24주, 무릎관절염 1,583명)의 주요 결과: 글루코사민 64%, 콘드로이틴 65%, 병용 66% vs 위약 60% 반응 — 통계적 유의 차이 없음. 다만 중등도-심한 통증 부분군에서만 병용군이 위약보다 유의성을 보임(사후분석).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NEJM: Glucosamine, Chondroitin Sulfate, and the Two in Combination for Painful Knee Osteoarthritis",
+      "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa052771",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "무릎관절염 환자",
+        "분류": "주요 임상시험",
+        "시기": "24주 중재",
+        "지역": "미국"
+      },
+      "caution": "★부분군 분석은 '탐색적(exploratory)'이며 확인(confirmatory) 결과가 아니다. 중등도-심한 통증 환자에게도 반드시 효과가 있다는 보장은 아니다.",
+      "cautionSource": "NEJM 논문, 임상 방법론"
+    },
+    {
+      "id": "msm-methylsulfonylmethane-limited-evidence-small-trials",
+      "claim": "MSM(메틸설포닐메탄)은 생화학적으로 황 공급원이지만, 무릎 관절염 치료에 대한 근거는 표본 크기가 작은 시험들에만 기반되어 있으며 대규모 RCT가 부족하다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PubMed 메타분석: MSM in Osteoarthritis",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "무릎관절염 환자",
+        "분류": "근거 수준",
+        "시기": "만성 투여",
+        "지역": "글로벌"
+      },
+      "caution": "안전성은 높지만, GAIT처럼 규모 있는 임상시험이 없으므로 집필할 때 매우 신중해야 한다.",
+      "cautionSource": "메타분석, 임상 근거 평가"
+    },
+    {
+      "id": "boswellia-extract-arthritis-pain-modest-evidence",
+      "claim": "보스웰리아 추출물(boswellia serrata resin)은 항염증 성분 보스웰산을 함유하며, 무릎 관절염 및 관절 뻣뻣함 증상의 일부 임상시험에서 위약보다 나은 결과를 보였으나, 전체적 근거는 아직 제한적이다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PubMed: Boswellia serrata Extract for Treatment of Osteoarthritis",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "관절염 증상 있는 사람",
+        "분류": "항염증 성분",
+        "시기": "8~12주 투여",
+        "지역": "글로벌"
+      },
+      "caution": "보스웰리아는 GAIT에 포함되지 않았으므로 글루코사민·콘드로이틴과 직접 비교 근거가 없다.",
+      "cautionSource": "PubMed 문헌"
+    },
+    {
+      "id": "collagen-joint-vs-skin-evidence-pathway-difference",
+      "claim": "콜라겐은 연골과 피부의 주요 성분이지만, 경구 섭취 콜라겐이 무릎 연골에 도달하는 기전은 명확하지 않으며, 피부 탄력 개선과 관절 건강은 서로 다른 용량·부위에 대한 임상시험이 필요하다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Oral Collagen Supplementation—Benefits and Sources",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "관절 건강 또는 피부 건강 관심층",
+        "분류": "형태별 효과 차이",
+        "시기": "만성 투여",
+        "지역": "글로벌"
+      },
+      "caution": "콜라겐 보충제의 일부 연구는 피부 탄력 개선만 보고했으므로, 관절 건강 효과는 독립적 근거 필요.",
+      "cautionSource": "임상 근거 평가"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "topic": "비타민B12 채식인 섭취: 흡수 기전, 결핍 지표, 강화식품 vs 미신",
+  "brand": "알약연구소",
+  "article": "vitamin-b12-vegan — 채식하면 비타민B12는 어떻게 채우나",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "vitamin-b12-deficiency-diagnosis-serum-level",
+    "b-complex-supplement-vegan-vegetarian-necessity"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "b12-intrinsic-factor-absorption-mechanism",
+      "claim": "비타민B12는 위의 벽세포(parietal cell)에서 분비하는 내재인자(intrinsic factor, IF)와 결합해야만 소장 말단부(terminal ileum)에서 흡수될 수 있다. 음식에서 분리된 B12는 먼저 haptocorin(HC)과 결합했다가, 십이지장에서 췌장 단백분해효소에 의해 HC-B12 복합체가 분해되고, B12가 내재인자(IF)와 새롭게 결합하여 소장 말단부의 cubam 수용체를 통해 내포작용(receptor-mediated endocytosis)으로 흡수된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI Bookshelf: Physiology, Gastric Intrinsic Factor (StatPearls)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK441923/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "B12 흡수", "분류": "생화학 기전", "시기": "식후 수시간", "지역": "소장"},
+      "caution": "내재인자 부족(악성빈혈, 위절제) 또는 소장 질환이 있으면 음식 B12도 흡수되지 않으므로 주사 또는 고용량 경구 보충 필요.",
+      "cautionSource": "임상진료지침"
+    },
+    {
+      "id": "b12-fortified-food-only-reliable-plant-source",
+      "claim": "60년 이상의 채식인 실험 결과, B12 강화식품(fortified food)과 B12 보충제만이 최적 건강을 지탱할 수 있는 신뢰할 만한 식물 기반 B12 출처로 입증되었다. 강화 영양효모, 강화 식물성 음료, 강화 시리얼, 강화 채식 육류 대체 제품 등이 유효하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Vegan Society 자료집: What every vegan should know about vitamin B12",
+      "source_url": "https://www.vegansociety.com/resources/nutrition-and-health/nutrients/vitamin-b12/what-every-vegan-should-know-about-vitamin-b12",
+      "checked": "2026-08-10",
+      "scope": {"대상": "채식인", "분류": "신뢰할 만한 식품 출처", "시기": "현행", "지역": "글로벌"},
+      "caution": "강화식품을 선택할 때 라벨의 B12 함량과 흡수율(예: 경구 보충제는 약 50% 흡수율)을 고려해야 함.",
+      "cautionSource": "영양학 기준"
+    },
+    {
+      "id": "spirulina-pseudovitamin-b12-not-bioavailable",
+      "claim": "스피룰리나에 측정되는 B12의 약 80%는 유사 B12(pseudovitamin B12, B12 아날로그)이며, 인체에서 이용할 수 없다. 실제 바이오이용률은 매우 낮거나 0에 가깝다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식물 기반 영양 전문 자료",
+      "source_url": "https://plantbasedrds.com/blog/b12-vegan-sources/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "스피룰리나", "분류": "B12 생물이용률", "시기": "현행", "지역": "글로벌"},
+      "caution": "스피룰리나를 B12 '출처'로 광고하는 제품·블로그는 기만적이다. 절대 신뢰할 수 없다.",
+      "cautionSource": "바이오이용률 데이터"
+    },
+    {
+      "id": "fermented-plant-foods-tempeh-kimchi-b12-analog-interfere",
+      "claim": "템페, 김치, 사우어크라우트, 콤부차 같은 발효 식품은 미량의 B12만 함유하며, 이들이 포함한 B12 유사물질(B12 아날로그)은 인체 대사에서 실제 B12와 경쟁하여 흡수를 방해할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Plant Based Nutrition Wellness: Vitamin B12 Sources, Absorption, Supplements & Deficiency",
+      "source_url": "https://www.plantnutritionwellness.com/vegan-vitamin-b12-sources-absorption-supplements-and-deficiency/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "발효식품", "분류": "B12 효율", "시기": "현행", "지역": "글로벌"},
+      "caution": "발효식품의 B12 '함유'를 선전하는 자료는 미량이고 바이오이용률이 낮다는 점을 외면한다.",
+      "cautionSource": "생물이용률 해석"
+    },
+    {
+      "id": "b12-fortified-food-spacing-optimal-absorption-4-hours",
+      "claim": "강화식품만으로 B12 권장량을 충족하려면 최소 2~3 끼의 강화식품을 하루에 최소 4시간 간격으로 섭취해야 최적 흡수가 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Vegan Society + 영양학 기준",
+      "source_url": "https://www.vegansociety.com/resources/nutrition-and-health/nutrients/vitamin-b12/what-every-vegan-should-know-about-vitamin-b12",
+      "checked": "2026-08-10",
+      "scope": {"대상": "채식인", "분류": "복용 타이밍", "시기": "일일", "지역": "글로벌"},
+      "caution": "매일 일정 시간 간격으로 섭취해야 하므로, 불규칙한 식생활을 하는 사람은 보충제가 더 실용적.",
+      "cautionSource": "흡수 생리"
+    },
+    {
+      "id": "b12-recommended-dietary-allowance-rda-adults-vegan",
+      "claim": "성인 B12 권장 일일섭취량(RDA)은 2.4mcg(마이크로그램)이며, 이를 강화식품만으로 충족하려면 매일 여러 차례의 섭취가 필요하므로, 많은 영양학 가이드는 채식인에게 정기적 보충제 또는 보충된 음식을 권장한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH ODS: Vitamin B12 (수정 2024)",
+      "source_url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "성인 채식인", "분류": "권장량 및 전략", "시기": "현행", "지역": "글로벌"},
+      "caution": "권장량은 음식에서의 흡수율(60%)을 기반으로 하므로, 강화식품의 흡수율이 변할 수 있다는 점을 고려해야 함.",
+      "cautionSource": "영양 권장 기준"
+    },
+    {
+      "id": "b12-supplement-form-cyanocobalamin-methylcobalamin-efficacy-equal",
+      "claim": "채식인 대상의 B12 보충제는 시아노코발라민(cyanocobalamin, 일반형)과 메틸코발라민(methylcobalamin, 활성형) 모두 유효하다는 대규모 임상 근거가 있으며, 비용 대비 효과 측면에서 시아노코발라민이 더 실용적이다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Vitamin B12 deficiency: testing and treatment",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13095491/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "B12 보충제", "분류": "제제 선택", "시기": "현행", "지역": "글로벌"},
+      "caution": "활성형 메틸코발라민은 더 비싼 경우가 많으나, 건강한 채식인에게 시아노코발라민보다 뚜렷한 임상 이점이 입증되지 않았다.",
+      "cautionSource": "비용-효과 분석"
+    },
+    {
+      "id": "b12-deficiency-nervous-symptom-warning-sign",
+      "claim": "B12 결핍이 진행되면 신경 증상(손발 저림, 어지러움, 인지 변화)이 나타날 수 있으며, 이는 돌이킬 수 없는 신경 손상의 신호다. 채식인은 주기적으로(최소 연 1회) 혈중 B12 수치를 확인해야 하며, 신경 증상이 나타나면 즉시 의료 전문가 상담이 필수다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC + 임상진료지침",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13095491/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "채식인", "분류": "결핍 증상·모니터링", "시기": "현행", "지역": "글로벌"},
+      "caution": "신경 증상이 오래되면 회복이 어려울 수 있으므로, 조기 진단과 치료가 중요.",
+      "cautionSource": "신경학 기준"
+    }
+  ]
+}

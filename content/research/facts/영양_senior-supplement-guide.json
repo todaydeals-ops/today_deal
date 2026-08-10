@@ -1,0 +1,139 @@
+{
+  "topic": "노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항",
+  "brand": "알약연구소·노년층 건강",
+  "article": "senior-supplement-guide",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "upper-limit-intake-UL-definition-safety-threshold",
+    "thyroid-medication-mineral-chelation-spacing-required",
+    "anticoagulant-vitamin-k-interaction-thrombosis-risk",
+    "antibiotic-probiotic-simultaneous-administration-interference",
+    "fat-soluble-vitamin-accumulation-toxicity-risk",
+    "pregnant-lactating-women-supplement-caution",
+    "autoimmune-disease-supplement-contraindication",
+    "seizure-disorder-epilepsy-supplement-drug-interaction"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "elderly-polypharmacy-definition-44-percent-prevalence",
+      "claim": "다약제(polypharmacy)는 5개 이상의 약물을 동시에 복용하는 것을 의미하며, 65세 이상 노년층의 44%가 다약제 복용 상태이고, 80세 이상에서는 50% 근처까지 높아진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Silent Dangers in Elderly Pharmacotherapy—Polypharmacy, Multimorbidity, and Drug Interactions",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12482850/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "노년층(65세 이상, 특히 80세 이상)",
+        "분류": "현황",
+        "시기": "현재(2026)",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "age-related-kidney-function-decline-drug-clearance-impairment",
+      "claim": "신장 기능은 나이와 함께 저하되며, 많은 약물과 영양제가 신장을 통해 배출되므로, 노년층의 신기능 저하는 약물 및 영양제의 체내 축적으로 이어질 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Kidney Function and Polypharmacy in Older Patients",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6093216/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "노년층(65세 이상)",
+        "분류": "약동학 변화",
+        "시기": "연령 증가에 따라",
+        "지역": "글로벌"
+      },
+      "caution": "특히 칼슘, 마그네슘, 비타민 D 같은 미네랄과 지용성 비타민은 신기능 저하 시 체내 축적이 빨라질 수 있다.",
+      "cautionSource": "약학 및 신장학 문헌"
+    },
+    {
+      "id": "elderly-adverse-drug-event-3-10fold-higher-without-ckd",
+      "claim": "노년층의 약물 부작용 발생률은 일반 성인보다 3~10배 높으며, 특히 만성 신장질환이 있으면 더 높아진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Medication Burden and Inappropriate Prescription Risk among Elderly with Advanced Chronic Kidney Disease",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7057617/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "노년층(특히 만성 신장질환 있는 사람)",
+        "분류": "안전성",
+        "시기": "약물 복용 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★노년층의 영양제 추가 시에는 먼저 신기능 검사(creatinine, eGFR)를 확인하는 것이 권장된다.",
+      "cautionSource": "임상 안전 가이드"
+    },
+    {
+      "id": "elderly-supplement-drug-interaction-risk-common-drugs",
+      "claim": "노년층이 복용하는 일반적 약물(항응고제, 갑상선약, 항생제)과 영양제(칼슘, 철분, 비타민 K, 프로바이오틱스 등)의 상호작용이 자주 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Staying Safe with Supplements—Herbal–Prescription Interactions in Older Adults",
+      "source_url": "https://guardianpharmacy.com/blog/2025/07/21/staying-safe-with-supplements-herbal-prescription-interactions-in-older-adults/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "다약제 복용 노년층",
+        "분류": "약물-영양제 상호작용",
+        "시기": "복용 기간",
+        "지역": "글로벌"
+      },
+      "caution": "칼슘·철분은 최소 2~4시간 간격을 두고 복용해야 하며, 비타민 K가 많은 보충제는 항응고제 효과를 약화시킬 수 있다.",
+      "cautionSource": "약학 문헌"
+    },
+    {
+      "id": "elderly-physician-pharmacist-coordination-essential",
+      "claim": "노년층이 영양제를 추가하기 전에 담당 의사나 약사와 반드시 상담해야 하며, 현재 복용 약물 목록과 함께 검토하는 것이 필수다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Tackling Polypharmacy in Geriatric Patients",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S2950307825000669",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "노년층(특히 다약제 복용자)",
+        "분류": "안전 가이드",
+        "시기": "영양제 추가 전",
+        "지역": "글로벌"
+      },
+      "caution": "약사의 약물 상호작용 검사 서비스는 무료인 경우가 많으니 적극 활용할 것.",
+      "cautionSource": "임상 안전 권장사항"
+    },
+    {
+      "id": "elderly-supplement-upper-limit-compliance-critical",
+      "claim": "노년층은 상한섭취량(UL)을 초과하지 않도록 특히 주의해야 하며, 지용성 비타민(A, D, E, K)의 장기 고함량 복용은 신기능 저하 상황에서 독성 위험이 높아진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼, NIH ODS 가이드라인",
+      "source_url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "노년층(신기능 저하 또는 정상)",
+        "분류": "용량 제한",
+        "시기": "장기 복용",
+        "지역": "글로벌"
+      },
+      "caution": "일반인용 고함량 '부스트' 제품보다는 의료 전문가가 권장한 표준 용량을 선택할 것.",
+      "cautionSource": "약학 및 노인의학 문헌"
+    },
+    {
+      "id": "elderly-cognitive-decline-supplement-adherence-challenge",
+      "claim": "일부 노년층의 인지 기능 저하(경도인지장애 등)는 복잡한 복용 시간표 준수를 어렵게 하므로, 영양제 복용이 간단하게 설계되어야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "일반 노인의학 임상 경험 및 가이드",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "인지 기능이 저하된 노년층",
+        "분류": "복용 편의성",
+        "시기": "일상적 복용",
+        "지역": "글로벌"
+      },
+      "caution": "가능하면 하루 1회, 또는 최대 2회 정도로 간단히 설계된 제품을 선택하고, 가족이나 간병인의 감시 하에 복용하는 것이 안전하다.",
+      "cautionSource": "임상 권장사항"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "topic": "프리바이오틱스·신바이오틱스: 정의·구성 기준·함량·부작용",
+  "brand": "알약연구소",
+  "article": "예정",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "water-soluble-vitamin-absorption-no-meal-required",
+    "calcium-iron-competitive-absorption-spacing"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "prebiotic-definition-isapp-2016-substrate-selective-utilization",
+      "claim": "프리바이오틱스는 ISAPP(2016)에서 '사람의 위산과 소장의 효소에 의해 소화되지 않고 장내 미생물에 의해 선택적으로 분해되어 숙주 미생물의 생장과 활성을 촉진하는 물질'로 정의되며, 유익 미생물의 기질(먹이)로서 기능한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ISAPP (International Scientific Association for Probiotics and Prebiotics) Consensus Statement 2016",
+      "source_url": "https://www.nature.com/articles/nrgastro.2017.75",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "건강한 일반인",
+        "분류": "프리바이오틱스 정의",
+        "시기": "2016 현행",
+        "지역": "글로벌"
+      },
+      "caution": "모든 식이섬유가 프리바이오틱스는 아니며, 기질 선택성(selectivity)이 필수 조건이다.",
+      "cautionSource": "ISAPP 정의 기준"
+    },
+    {
+      "id": "prebiotic-examples-inulin-fos-gos-daily-intake-3-5g",
+      "claim": "프리바이오틱스 예시는 이눌린(치커리 추출물), 프락토올리고당(FOS), 갈락토올리고당(GOS), 난소화성말토덱스트린 등이며, ISAPP 권장 일일 섭취량은 약 3~5g이다. 한국 식약처 권장량은 프락토올리고당 3~8g이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ISAPP; 식품의약품안전처 건강기능식품공전",
+      "source_url": "https://isappscience.org/resource/what-is-a-prebiotic/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반인",
+        "분류": "프리바이오틱스 종류·용량",
+        "시기": "2026 현행",
+        "지역": "글로벌·KR"
+      },
+      "caution": "초기에는 가스·팽만감이 나타날 수 있으므로 소량(2~3g)부터 시작해 점진적으로 증량하는 것이 권장된다.",
+      "cautionSource": "식약처 및 임상 가이드"
+    },
+    {
+      "id": "prebiotic-initial-side-effect-gas-bloating-adaptation-1-2weeks",
+      "claim": "프리바이오틱스 초기 복용 시 배에 가스가 차거나 팽만감을 느낄 수 있으나, 이는 굶주렸던 유익균이 갑자기 주어진 먹이를 섭취하며 발효 활동을 시작한 신호이며, 1~2주 꾸준한 복용으로 장이 적응하면 증상이 자연스럽게 사라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "임상 영양학 문헌 및 약학 가이드",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "프리바이오틱스 초사용자",
+        "분류": "부작용·적응",
+        "시기": "복용 초기",
+        "지역": "글로벌"
+      },
+      "caution": "과민성대장증후군(IBS) 보유자나 FODMAP 민감성이 있는 사람은 더 주의가 필요하며, 이눌린은 포드맵에 속하는 프락탄이므로 유의해야 한다.",
+      "cautionSource": "약학 문헌 및 FODMAP 기준"
+    },
+    {
+      "id": "synbiotic-isapp-2019-definition-live-microorganisms-substrate",
+      "claim": "신바이오틱스는 ISAPP(2019)에서 '살아있는 미생물과 기질이 혼합되어 있으며, 그 기질이 숙주 미생물에 의해 선택적으로 이용되어 숙주에게 건강 이익을 주는 제제'로 정의되며, 프로바이오틱스와 프리바이오틱스의 단순 혼합이 아니라 상호협력적 기능을 전제한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ISAPP Consensus Statement on the Definition and Scope of Synbiotics 2019",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7581511/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "신바이오틱스 소비자",
+        "분류": "신바이오틱스 정의",
+        "시기": "2019 현행",
+        "지역": "글로벌"
+      },
+      "caution": "신바이오틱스는 단순히 프로바이오틱스 + 프리바이오틱스가 아니라, 특정 균주가 해당 기질을 선택적으로 이용할 수 있도록 설계되어야 한다.",
+      "cautionSource": "ISAPP 정의 기준"
+    },
+    {
+      "id": "synbiotic-two-types-complementary-synergistic-isapp-2019",
+      "claim": "ISAPP(2019)는 신바이오틱스를 두 가지 유형으로 구분한다: (1) 보완형 신바이오틱스(Complementary): 프로바이오틱스 + 프리바이오틱스 조합으로, 각 성분이 독립적으로 기능하며 기질의 기능성 입증이 반드시 필요하지 않음. (2) 협력형 신바이오틱스(Synergistic): 기질이 동시투여 미생물에 의해 선택적으로 이용되도록 설계되었으며, 협력 기능을 입증하는 임상 근거 필요.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ISAPP Consensus Statement on the Definition and Scope of Synbiotics 2019; Nature Reviews Gastroenterology & Hepatology",
+      "source_url": "https://www.nature.com/articles/s41575-020-0344-2",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "신바이오틱스 개발자·소비자",
+        "분류": "신바이오틱스 분류",
+        "시기": "2019 현행",
+        "지역": "글로벌"
+      },
+      "caution": "★보완형 신바이오틱스는 각 성분의 개별 기능성만으로도 인정 가능하나, 협력형은 상호작용 임상 근거가 필요하므로 개발 난이도와 비용이 높다.",
+      "cautionSource": "ISAPP 설계 기준"
+    }
+  ]
+}

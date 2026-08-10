@@ -1,0 +1,81 @@
+{
+  "topic": "항생제 복용 중 유산균: 항생제 관련 설사 근거·복용 간격·실제 효과",
+  "brand": "알약연구소",
+  "article": "예정",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "antibiotic-probiotic-simultaneous-administration-interference"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "antibiotic-associated-diarrhea-aad-incidence-5-30percent",
+      "claim": "항생제 관련 설사(AAD, Antibiotic-Associated Diarrhea)는 항생제 치료를 받는 환자의 5~30%에서 발생하며, 특히 aminopenicillins, cephalosporins, clindamycin 계열에서 높은 빈도를 보인다. 국내 보고에서는 항생제 종류와 환자 상태에 따라 3.2~29% 범위의 발생률이 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect: Antibiotic Associated Diarrhea (Nursing and Health Professions); Seoul National University Hospital",
+      "source_url": "https://sciencedirect.com/topics/nursing-and-health-professions/antibiotic-associated-diarrhea",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "항생제 복용자",
+        "분류": "AAD 발생률",
+        "시기": "전 연식",
+        "지역": "글로벌·KR"
+      },
+      "caution": "항생제 관련 설사는 항생제 복용 2~8일 후, 또는 최대 6~8주 이내에 발생할 수 있다.",
+      "cautionSource": "임상 진료 가이드"
+    },
+    {
+      "id": "clostridioides-difficile-cdi-aad-only-15-25percent",
+      "claim": "Clostridioides difficile 감염(CDI)은 항생제 관련 설사의 일부이며, 전체 AAD 중 15~25%만을 차지한다. CDI 발생률은 지난 10년간 2~4배 증가했으며, 캐나다 보고에 따르면 13년 동안 CDI 발생률이 5배, 중증 CDI가 2.5배, 사망률이 3배 증가했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Clostridioides difficile Infections and Antibiotherapy; 한국 의료 문헌",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11728022/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "항생제 복용자",
+        "분류": "CDI 위험도",
+        "시기": "최근 10년 추세",
+        "지역": "글로벌·KR"
+      },
+      "caution": "CDI 재발률은 첫 치료 후 약 25%이며, 한 번 재발한 환자는 35~45%에서 두 번째 재발을 경험한다.",
+      "cautionSource": "CDI 재발 임상 통계"
+    },
+    {
+      "id": "probiotic-aad-prevention-meta-analysis-52-percent-risk-reduction",
+      "claim": "프로바이오틱스의 항생제 관련 설사 예방 효과에 대한 메타분석 결과, 프로바이오틱스는 항생제 관련 설사 위험을 약 52% 감소시켰다. 그 외 여행자 설사 8% 감소, 소아 급성 설사 57% 감소, 성인 설사 26% 감소가 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "메타분석 연구; 식품음료신문(약학 보고)",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "항생제 복용자",
+        "분류": "프로바이오틱스 효과",
+        "시기": "최근 메타분석",
+        "지역": "글로벌"
+      },
+      "caution": "★최근 미국소화기내과학회(ASGE)는 항생제로 인한 설사 관리를 위해 프로바이오틱스를 쓰지 말라고 권고하고 있으며, 이는 프로바이오틱스 효과에 대한 과학적 근거 수준을 재검토하고 있음을 의미한다.",
+      "cautionSource": "미국소화기내과학회 권고"
+    },
+    {
+      "id": "probiotic-strain-specificity-lg-only-korea-approved",
+      "claim": "프로바이오틱스의 항생제 관련 설사 예방 효과는 특정 균주에만 제한적으로 입증되어 있다. 예를 들어, 한국 식약처 건강기능식품 고시형 원료 중 Lactobacillus rhamnosus에서 항생제 사용 설사 효능이 입증된 것은 GG(L.GG) 균주인데, 이는 식약처 공식 승인 범위를 벗어난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 건강기능식품공전; 약사공론",
+      "source_url": "https://www.kpanews.co.kr/news/articleView.html?idxno=252999",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "항생제 복용자",
+        "분류": "균주별 효과·국내 규제",
+        "시기": "2026 현행",
+        "지역": "KR"
+      },
+      "caution": "★일반적인 '프로바이오틱스'라는 명칭만으로는 효과를 보장할 수 없으며, 반드시 임상 근거가 있는 특정 균주명을 확인해야 한다.",
+      "cautionSource": "식약처 건강기능식품 규제"
+    }
+  ]
+}

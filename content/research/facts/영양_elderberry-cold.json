@@ -1,0 +1,96 @@
+{
+  "topic": "엘더베리(Sambucus nigra): 감기·독감 임상 근거·효과크기·연구 한계",
+  "brand": "알약연구소",
+  "article": "예정",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "elderberry-flu-symptom-duration-reduction-rct-evidence-4-days",
+      "claim": "엘더베리 추출물의 독감 증상 지속 기간 단축에 관한 두 개의 무작위 이중맹검 대조시험(RCT)에서 표본 크기 27명과 60명 수준으로, 엘더베리 투여군이 위약군 대비 독감 지속 기간을 약 4일 단축시킨 것으로 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Today's Practitioner: Elderberry (Sambucus nigra); Clinical Trials.gov",
+      "source_url": "https://todayspractitioner.com/immune-health/elderberry-sambucus-nigra-setting-the-record-straight/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "독감 환자",
+        "분류": "증상 지속 기간",
+        "시기": "과거 RCT",
+        "지역": "글로벌"
+      },
+      "caution": "★이 효과는 소규모 임상시험(n=27, n=60)에 기반하므로, 큰 규모의 후속 연구가 필요하다.",
+      "cautionSource": "RCT 표본 크기 제한"
+    },
+    {
+      "id": "elderberry-early-rct-effect-size-large-d-1-36-2-78",
+      "claim": "엘더베리 관련 초기 RCT에서 효과크기(Cohen's d)는 매우 크게 보고되었다. 1995년 Zakay-Rones 연구는 n=27에서 d=1.36, 2009년 Kong 연구는 d=2.78로, 임상적으로 큰 효과를 나타냈다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Today's Practitioner: Elderberry Review; RCT 원문",
+      "source_url": "https://todayspractitioner.com/immune-health/elderberry-sambucus-nigra-setting-the-record-straight/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "감기·독감 환자",
+        "분류": "효과크기",
+        "시기": "1995, 2009년 RCT",
+        "지역": "글로벌"
+      },
+      "caution": "★매우 크게 보고된 효과크기는 작은 표본 크기와 선별 편향으로 인해 과대평가되었을 가능성이 높다. 최근 대규모 시험에서 효과가 감소했다.",
+      "cautionSource": "통계적 해석 기준"
+    },
+    {
+      "id": "elderberry-cold-symptom-duration-rct-air-travelers-57-vs-117-days",
+      "claim": "엘더베리 보충제의 감기 예방에 관한 항공여행객 대상 RCT(n=64)에서 엘더베리군의 감기 지속 기간이 평균 57일, 위약군이 117일로 보고되었으며(p=0.02), 평균 증상점수도 엘더베리군 247, 위약군 583으로 차이를 보였다(p=0.05).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Elderberry Supplementation Reduces Cold Duration and Symptoms in Air-Travellers",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4848651/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "항공여행객",
+        "분류": "감기 지속 기간·증상",
+        "시기": "과거 RCT",
+        "지역": "글로벌"
+      },
+      "caution": "다만 기저 상태(여행 스트레스, 탈진)가 일반인과 다르므로, 일반 인구에 적용 시 외삽(extrapolation) 주의가 필요하다.",
+      "cautionSource": "연구 설계의 내적 타당성 한계"
+    },
+    {
+      "id": "elderberry-recent-2020-rct-contradictory-no-significant-benefit",
+      "claim": "2020년의 더 최근 RCT에서는 엘더베리가 독감 지속 기간이나 중증도에 임상적으로 의미 있는 차이를 보이지 않았다. 위약군 4.9±2.8일, 엘더베리군 5.3±3.6일로 통계적·임상적으로 유의한 차이가 없었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of General Internal Medicine; NCBI/PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/32929634/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "독감 환자",
+        "분류": "최근 RCT 결과 불일치",
+        "시기": "2020년",
+        "지역": "글로벌"
+      },
+      "caution": "★초기 소규모 RCT와 최근 대규모 RCT의 결과 불일치는 발행 편향(publication bias)·표본 크기 효과·선별 편향의 가능성을 시사한다.",
+      "cautionSource": "메타분석 편향 평가 기준"
+    },
+    {
+      "id": "elderberry-limitation-not-treatment-symptomatic-relief-only",
+      "claim": "전문가들은 엘더베리가 감기나 독감을 치료하는 것이 아니라, 일부 사람들에게는 증상 완화와 병의 지속 기간을 '약간' 줄이는 데 도움을 줄 수 있다고 강조하고 있다. 엘더베리에 포함된 안토시아닌과 플라보노이드, 비타민 C가 항산화 특성을 가지지만, 감염 치료는 면역계의 역할이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Korea Times; Khan Academy Health; 의료 전문가 권고",
+      "source_url": "http://www.koreatimes.com/article/20250115/1547829",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 인구",
+        "분류": "임상적 한계·기대값 관리",
+        "시기": "2026 현행",
+        "지역": "글로벌·KR"
+      },
+      "caution": "★'엘더베리가 감기·독감을 예방/치료한다'는 마케팅 주장은 근거가 제한적이며, 실제 기대 효과는 '증상 약간 완화' 수준이다.",
+      "cautionSource": "의료 전문가 권고"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "topic": "건성안 관리: 인공눈물 vs 영양제 순서, 의료 표준 치료, 오메가3 근거",
+  "brand": "알약연구소·눈 건강",
+  "article": "eye-drops-vs-supplement",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "artificial-tears-first-line-treatment-dry-eye",
+    "dream-trial-omega3-no-significant-benefit",
+    "omega3-mechanism-tear-film-lipid-layer"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "dry-eye-first-line-therapy-artificial-tears-why",
+      "claim": "건성안 질환(DED)의 1차 표준 치료는 인공눈물이며, 이유는 (1) 즉시 증상 완화, (2) 쉬운 접근성, (3) 최소 부작용, (4) 충분한 임상 근거 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Categorization of Marketed Artificial Tear Formulations; 미국 안과의학회(AAO) 가이드",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8003881/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "경증~중등증 건성안 환자",
+        "분류": "치료 순위",
+        "시기": "급성 및 만성",
+        "지역": "글로벌"
+      },
+      "caution": "★인공눈물이 1차이며, 영양제(오메가3·루테인 등)는 보조 요법이다.",
+      "cautionSource": "AAO, NIH 진료 가이드"
+    },
+    {
+      "id": "artificial-tears-demulcent-ingredients-tear-film-restoration",
+      "claim": "인공눈물의 주 성분은 윤활제(carboxymethylcellulose, 히알루론산 등)이며, 이들은 눈물막을 직접 보충하고 눈 표면의 건조함을 즉각 완화한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Artificial Tears—Biological Role of Their Ingredients",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8910031/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 건성안 환자",
+        "분류": "약물 기전",
+        "시기": "즉각적(몇 초~분)",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "omega3-supplement-dry-eye-dream-trial-no-benefit-vs-placebo",
+      "claim": "535명의 경증~중등증 건성안 환자를 12개월간 추적한 DREAM 임상시험에서 오메가3 보충제(EPA 2g + DHA 1g 일일)는 위약(올리브유)과 비교해 증상과 임상 징후를 유의미하게 개선하지 못했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "New England Journal of Medicine (NEJM): n-3 Fatty Acid Supplementation for Treatment of Dry Eye Disease",
+      "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1709691",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "경증~중등증 건성안 환자(최대 규모 RCT)",
+        "분류": "오메가3 효과",
+        "시기": "12개월 중재",
+        "지역": "다국가 임상시험"
+      },
+      "caution": "★'해롭다'는 뜻이 아니라 '예방이나 개선에 통계적 이득이 없다'는 의미다. 일부 개인에겐 도움이 될 수 있으니 절대 금지는 아니다.",
+      "cautionSource": "NEJM 논문"
+    },
+    {
+      "id": "omega3-dry-eye-not-first-line-complementary-therapy",
+      "claim": "오메가3는 건성안의 1차 치료가 아니며, 인공눈물이나 처방 항염증 점안액(lifitegrast 등) 이후의 보조 요법(complementary therapy)으로 고려된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Optometric Association (AOA): Omega-3 and Dry Eyes",
+      "source_url": "https://www.aoa.org/news/clinical-eye-care/diseases-and-conditions/omega-3-and-dry-eyes",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "건성안 환자",
+        "분류": "치료 순위",
+        "시기": "장기 관리",
+        "지역": "미국(보편적 원칙)"
+      },
+      "caution": "오메가3를 복용해도 인공눈물 사용을 중단하면 안 된다.",
+      "cautionSource": "AOA 임상 가이드"
+    },
+    {
+      "id": "artificial-tears-preservative-free-recommendation-frequent-use",
+      "claim": "하루 2회 이상 자주 인공눈물을 사용해야 한다면 방부제 없는 일회용(single-dose) 인공눈물이 권장되며, 방부제의 독성 축적을 피할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Categorization of Marketed Artificial Tear Formulations",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8003881/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "빈번한 인공눈물 사용자",
+        "분류": "제형 선택",
+        "시기": "일일 2회 이상",
+        "지역": "글로벌"
+      },
+      "caution": "다회 용기 인공눈물도 안전하지만, 자주 사용하면 방부제가 축적될 수 있으니 일회용을 선호하는 것이 더 안전하다.",
+      "cautionSource": "약학 및 안과 문헌"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "topic": "타우린: 에너지음료 함량, 피로 회복 작용, 카페인 상호작용, 심혈관 안전성",
+  "brand": "알약연구소",
+  "article": "taurine-fatigue — 타우린 드링크, 어떤 피로에 맞을까",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "taurine-energy-drink-typical-content-range",
+      "claim": "상업 에너지드링크의 타우린 함량은 일반적으로 1000~2000mg(1~2g)이며, 이는 임상 연구에서 사용된 용량(1000~3000mg)과 유사하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Effects of energy drink major bioactive compounds on the performance of young adults",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4226910/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "에너지드링크", "분류": "성분 함량", "시기": "현행", "지역": "글로벌"},
+      "caution": "제품별 함량 편차가 크므로, 구체적 제품의 라벨 확인 필수.",
+      "cautionSource": "식품영양정보"
+    },
+    {
+      "id": "taurine-mechanism-cellular-protection-fatigue",
+      "claim": "타우린은 근육 기능 지원, 칼슘 신호전달 조절, 항산화 작용, 염증 억제 역할을 한다. 운동 유발 피로의 생리적 기전(산화 스트레스, 락테이트 축적, 염증)을 일부 완화할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Mayo Clinic + NCBI/PMC: Taurine, energy drinks, and neuroendocrine effects",
+      "source_url": "https://www.ccjm.org/content/83/12/895",
+      "checked": "2026-08-10",
+      "scope": {"대상": "근육 생리", "분류": "항피로 기전", "시기": "운동 중", "지역": "글로벌"},
+      "caution": "이론적 기전과 임상 효과의 크기 사이에 괴리가 있을 수 있다.",
+      "cautionSource": "임상 해석의 간극"
+    },
+    {
+      "id": "taurine-performance-benefit-limited-evidence-rct",
+      "claim": "에너지드링크의 카페인(80mg)과 타우린(1000mg) 또는 이들의 혼합물만으로는 젊은 성인의 신체 및 인지 능력을 운동 중 유의하게 증가시키지 않는다는 이중맹검 위약 대조 무작위 교차 시험이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Does Single or Combined Caffeine and Taurine Supplementation Improve Athletic and Cognitive Performance in Elite Boxers?",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9610400/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "젊은 성인·엘리트 복서", "분류": "운동 성능", "시기": "급성 투여", "지역": "글로벌"},
+      "caution": "표본이 운동 훈련자이며, 일반인의 피로 감소에는 다른 결과가 있을 수 있다.",
+      "cautionSource": "임상 시험 특성"
+    },
+    {
+      "id": "caffeine-primary-driver-fatigue-reduction-energy-drink",
+      "claim": "에너지드링크의 피로 감소는 주로 카페인(중추신경계 자극제)이 담당하며, 타우린은 부정맥·산화 스트레스 등 카페인의 심혈관 부작용을 완화하는 보조 역할을 할 가능성이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect: Differential cognitive effects of energy drink ingredients: caffeine, taurine, and glucose",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/22819803/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "에너지드링크 성분", "분류": "작용 메커니즘", "시기": "급성 효과", "지역": "글로벌"},
+      "caution": "타우린의 '피로 개선' 마케팅은 카페인의 효과와 혼동되기 쉽다. 독립적 피로 감소 효과는 근거 부족.",
+      "cautionSource": "약리학 문헌"
+    },
+    {
+      "id": "taurine-fatigue-recovery-recovery-acceleration-partial-support",
+      "claim": "타우린의 항염증·항산화 작용이 운동 후 회복을 가속화할 수 있다는 가설이 있고, 반복 스프린트 후 타우린 투여가 피로 생리 지표를 일부 개선한다는 보고가 있으나, 기능적 회복 속도(근력, 파워 회복)에 대한 증거는 제한적이다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Frontiers in Nutrition: Effects of different doses of taurine supplementation on repeated-sprint performance (2026)",
+      "source_url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1766546/full",
+      "checked": "2026-08-10",
+      "scope": {"대상": "운동 회복", "분류": "회복 속도·기능", "시기": "운동 후 수시간~며칠", "지역": "글로벌"},
+      "caution": "생리 지표(락테이트, 염증 마커) 개선 ≠ 기능적 회복 속도 개선. 혼동하면 안 된다.",
+      "cautionSource": "임상 해석 기준"
+    },
+    {
+      "id": "caffeine-taurine-arrhythmia-animal-model-evidence",
+      "claim": "동물 모델(전체 심장 실험)에서 카페인과 타우린의 병용 투여는 심실 부정맥을 유발했으며, 이는 심장 재분극 단축과 유효 불응기 단축을 통한 재진입(re-entry) 메커니즘이었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Cardiovascular Electrophysiology: Cardiovascular risk of energy drinks (2022)",
+      "source_url": "https://onlinelibrary.wiley.com/doi/10.1111/jce.15458",
+      "checked": "2026-08-10",
+      "scope": {"대상": "심장 전기생리", "분류": "부정맥 위험", "시기": "급성 투여", "지역": "글로벌"},
+      "caution": "동물 모델이므로 인체 임상적 해석은 신중해야 한다. 특정 심장 상태(long QT 증후군)의 환자가 고위험군.",
+      "cautionSource": "모델 시스템의 한계"
+    },
+    {
+      "id": "caffeine-taurine-blood-pressure-increase-human-study",
+      "claim": "인체 연구에서 타우린·카페인 함유 에너지드링크 섭취는 혈압 상승을 보였으며, 특히 기저 hypertension이 있거나 유전적 장 QT 증후군 환자에서 부정맥 위험이 증가했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Acute effects of commercial energy drink consumption on exercise performance and cardiovascular safety (2024)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10783828/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "심혈관 건강", "분류": "혈압·심율·부정맥", "시기": "급성 섭취", "지역": "글로벨"},
+      "caution": "★카페인 함유 에너지드링크는 고혈압, 부정맥, 심질환 병력이 있으면 피해야 한다. 유전적 장 QT 증후군은 특히 위험.",
+      "cautionSource": "임상 금기"
+    },
+    {
+      "id": "european-union-taurine-caffeine-protective-potential",
+      "claim": "EU 과학 식품 위원회는 '타우린과 카페인 사이에 상호작용이 있다면, 타우린이 카페인의 심혈관 효과를 감소시킬 가능성이 있다'고 결론지었다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "EU Scientific Committee on Food 성명",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {"대상": "약물 상호작용", "분류": "보호 효과", "시기": "현행", "지역": "EU"},
+      "caution": "이는 가설이며 인체에서 입증된 보호 효과는 제한적이다. 마케팅에서 과장될 수 있다.",
+      "cautionSource": "규제 가이드 불확실성"
+    },
+    {
+      "id": "taurine-no-ergogenic-effect-energy-drink-alone",
+      "claim": "에너지드링크 성분을 분리하여 평가한 결과, 비타민, 글루쿠론산, 인삼 등의 성분과 마찬가지로 타우린만으로는 운동 능력에 유의한 인상적 효과(ergogenic effect)를 보이지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Gatorade Sports Science Institute: Branched-Chain Amino Acid Supplementation",
+      "source_url": "https://www.gssiweb.org/sports-science-exchange/article/branched-chain-amino-acid-supplementation-to-support-muscle-anabolism-following-exercise",
+      "checked": "2026-08-10",
+      "scope": {"대상": "운동 성능", "분류": "단독 효과", "시기": "전 연식", "지역": "글로벌"},
+      "caution": "타우린의 마케팅은 '피로 감소', '회복 촉진' 등으로 표현되는데, 단독 효과 입증이 부족하다.",
+      "cautionSource": "임상 근거 수준"
+    },
+    {
+      "id": "taurine-age-related-decline-oxidative-metabolism-animal-study",
+      "claim": "동물 연구에서 상대적으로 낮은 용량의 타우린을 장기 투여했을 때 나이 관련 산소 소비(O2 consumption) 저하와 자발 운동 활동 감소를 어느 정도 완화했다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "동물 모델 기초 연구",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {"대상": "노화 관련 피로", "분류": "미토콘드리아 기능", "시기": "장기 투여", "지역": "동물 모델"},
+      "caution": "동물 연구이므로 인체 적용 가능성은 별도 임상 연구 필요.",
+      "cautionSource": "모델 시스템의 한계"
+    }
+  ]
+}

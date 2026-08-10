@@ -1,0 +1,96 @@
+{
+  "topic": "포스트바이오틱스: 정의·사균체 근거·열처리 안정성·보관 이점",
+  "brand": "알약연구소",
+  "article": "예정",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "postbiotic-isapp-2021-definition-inanimate-microorganisms-components",
+      "claim": "포스트바이오틱스는 ISAPP(2021)에서 '숙주에게 건강 이익을 주는 생명력이 없는 미생물 및/또는 그 미생물의 구성 성분을 포함한 제제'로 정의되며, 생물학적으로 활성인 성분(사멸된 세포, 세포벽, 표면 구조, 캡슐 등)으로 구성된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ISAPP Consensus Statement on the Definition and Scope of Postbiotics 2021; Nature Reviews Gastroenterology & Hepatology",
+      "source_url": "https://www.nature.com/articles/s41575-021-00440-6",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "건강한 일반인·환자",
+        "분류": "포스트바이오틱스 정의",
+        "시기": "2021 현행",
+        "지역": "글로벌"
+      },
+      "caution": "정제된 미생물 대사산물(메타볼라이트)만으로는 포스트바이오틱스로 인정되지 않으며, 반드시 사멸된 세포 또는 세포 구성 요소가 남아 있어야 한다.",
+      "cautionSource": "ISAPP 정의 기준"
+    },
+    {
+      "id": "postbiotic-metabolites-may-present-not-required-definition",
+      "claim": "포스트바이오틱스에 미생물 대사산물(단쇄지방산, 비타민, 박테리오신 등)이 포함될 수 있지만, 이들은 포스트바이오틱스 정의상 필수 요소가 아니다. 효능의 핵심은 불활성화된 미생물의 세포 구성 요소와 대사산물의 복합 작용이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ISAPP Consensus Statement; Frontiers in Microbiology Frequently Asked Questions",
+      "source_url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2023.1324565/full",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "포스트바이오틱스 제품 개발자",
+        "분류": "메타볼라이트 역할",
+        "시기": "2021 현행",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "postbiotic-heat-inactivated-stability-shelf-life-advantage",
+      "claim": "포스트바이오틱스는 생명력이 없는 미생물이므로 냉동 유통 비용이 불필요하고, 보관 중 세포 사멸 변수가 없으며, 열에 안정적이어서 열처리된 또는 상온 보관 가능한 제품에도 통합 가능하다. 이는 생균 프로바이오틱스보다 일관성 있는 용량 관리와 장기 보관 수명을 제공한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Emerging Nonthermal Technologies for the Production of Postbiotics; Biomedical Research Review",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12639491/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "포스트바이오틱스 제조·유통업체",
+        "분류": "안정성·보관",
+        "시기": "2025-2026",
+        "지역": "글로벌"
+      },
+      "caution": "열처리 공정 중 일부 면역조절 분자와 기능성 대사산물이 손실될 수 있으므로, 제조 공정 선택이 최종 효능에 영향을 미친다.",
+      "cautionSource": "NCBI/PMC 제조 기술 문헌"
+    },
+    {
+      "id": "postbiotic-heat-killed-safety-no-translocation-antibiotic-resistance",
+      "claim": "포스트바이오틱스는 사멸된 미생물이므로 생균의 위험(균혈증 위험, 항생제 내성유전자 전달)이 없으며, 면역저하자 또는 ICU 환자에서도 세균 전위(bacterial translocation) 위험이 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ISAPP Postbiotics Safety Assessment",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8387231/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "면역저하자·중증환자",
+        "분류": "안전성",
+        "시기": "2021 현행",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "postbiotic-strain-specificity-inactivation-method-matters",
+      "claim": "같은 균주라도 열처리, 동결건조, 초음파 처리 등 불활성화 방법에 따라 남는 세포 구성 요소가 다르므로, 포스트바이오틱스의 효능은 특정 불활성화 공정과 균주의 조합에 따라 결정된다. 생균일 때 효능이 입증된 균주도 사균체로 만들면 효과가 달라질 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MDPI Foods; NCBI/PMC: The Role of Inactivation Methods in Shaping Postbiotic Composition",
+      "source_url": "https://www.mdpi.com/2304-8158/14/13/2358",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "포스트바이오틱스 제품 선택자",
+        "분류": "불활성화 방법·효능 변이",
+        "시기": "2024-2026",
+        "지역": "글로벌"
+      },
+      "caution": "★'사균체 포스트바이오틱스'는 반드시 그 불활성화 방식으로 임상 근거를 갖춘 제품을 선택해야 하며, 단순히 사멸했다는 사실만으로는 효능을 보장하지 않는다.",
+      "cautionSource": "불활성화 기술 임상 문헌"
+    }
+  ]
+}

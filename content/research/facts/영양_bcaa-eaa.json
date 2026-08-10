@@ -1,0 +1,143 @@
+{
+  "topic": "BCAA vs EAA: 단백질 충분 섭취 시 추가 이득 논쟁, 근단백질 합성, 운동 시 역할",
+  "brand": "알약연구소",
+  "article": "bcaa-eaa — BCAA와 EAA, 어떤 경우에 어느 쪽이 맞을까",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "bcaa-three-amino-acids-leucine-isoleucine-valine",
+      "claim": "BCAA(분지쇄아미노산)는 류신, 이소류신, 발린 3가지 필수 아미노산의 조합이며, 9가지 필수 아미노산(EAA)의 부분 집합이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기본 영양학",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {"대상": "아미노산 분류", "분류": "생화학", "시기": "전 연식", "지역": "글로벌"},
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "bcaa-incomplete-profile-cannot-support-muscle-building-alone",
+      "claim": "BCAA는 9가지 필수 아미노산 중 3가지만 제공하므로, 충분한 전체 단백질 섭취 없이는 근육 합성을 충분히 지원할 수 없다. 특히 메티오닌, 라이신 등 다른 필수 아미노산이 없으면 제한 아미노산(limiting amino acid)이 되어 근 단백질 합성을 억제한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC + 운동 과학",
+      "source_url": "https://www.gssiweb.org/sports-science-exchange/article/branched-chain-amino-acid-supplementation-to-support-muscle-anabolism-following-exercise",
+      "checked": "2026-08-10",
+      "scope": {"대상": "근단백질 합성", "분류": "아미노산 프로필", "시기": "운동 후", "지역": "글로벌"},
+      "caution": "★BCAA 보충이 효과적으로 작용하려면 다른 필수 아미노산도 식이에서 충분해야 한다.",
+      "cautionSource": "단백질 영양학"
+    },
+    {
+      "id": "eaa-stimulate-mtorc1-muscle-protein-synthesis-better-than-bcaa",
+      "claim": "필수 아미노산 전체(EAA)는 무작위 대조 시험에서 BCAA만보다 근 단백질 합성(muscle protein synthesis, MPS)을 더 효과적으로 자극하며, 특히 mTORC1 신호 활성화가 더 강하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Activation of mTORC1 by leucine is potentiated by branched-chain amino acids and even more so by essential amino acids following resistance exercise",
+      "source_url": "https://journals.physiology.org/doi/full/10.1152/ajpcell.00374.2015",
+      "checked": "2026-08-10",
+      "scope": {"대상": "저항운동 후 근단백질", "분류": "운동 반응", "시기": "운동 직후", "지역": "글로벌"},
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "leucine-mtor-activation-primary-driver",
+      "claim": "9가지 필수 아미노산 중 류신이 가장 강력한 mTORC1 신호 활성화제이며, 류신 단독이 mTOR 신호를 시작할 수 있다. 하지만 다른 필수 아미노산(메티오닌, 라이신 등)이 있어야 전체 근단백질 합성 응답이 완성된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Novel metabolic and physiological functions of branched chain amino acids + Leucine and mTORC1 review",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5260006/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "mTOR 신호", "분류": "기전", "시기": "단백질 섭취 후", "지역": "글로벌"},
+      "caution": "류신 고함량 제품이 자동으로 최고 효과를 낸다는 주장은 오해다. 다른 필수 아미노산도 필요하다.",
+      "cautionSource": "신호전달 생리학"
+    },
+    {
+      "id": "eaa-ingestion-leucine-retention-60-percent",
+      "claim": "집 기반 저항운동 후 EAA 섭취 시, 투여된 류신의 약 60%가 근 단백질 합성을 위해 보유되고, EAA가 BCAA만보다 근 단백질 분해를 더 효과적으로 억제한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Essential Amino Acid Ingestion Facilitates Leucine Retention and Attenuates Myofibrillar Protein Breakdown following Bodyweight Resistance Exercise in Young Adults in a Home-Based Setting",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9460609/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "젊은 성인", "분류": "단백질 대사", "시기": "운동 후", "지역": "글로벌"},
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "bcaa-no-evidence-inhibit-protein-breakdown",
+      "claim": "BCAA 섭취만으로는 운동 후 근 단백질 분해를 억제한다는 증거가 인체에서 입증되지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Branched-Chain Amino Acid Supplementation",
+      "source_url": "https://www.gssiweb.org/sports-science-exchange/article/branched-chain-amino-acid-supplementation-to-support-muscle-anabolism-following-exercise",
+      "checked": "2026-08-10",
+      "scope": {"대상": "운동 후 단백질", "분류": "분해 억제", "시기": "운동 후", "지역": "글로벌"},
+      "caution": "BCAA의 분해 억제 마케팅은 과학적 근거가 없다.",
+      "cautionSource": "임상 증거 부족"
+    },
+    {
+      "id": "adequate-protein-intake-bcaa-limited-additional-benefit",
+      "claim": "단백질 섭취가 충분한 사람(하루 체중 kg당 1.6~2.0g 이상)에게 BCAA 추가는 근 단백질 합성이나 근력 증가에 추가 이득을 주지 않는다. BCAA의 효과는 저단백 식이(1.0g/kg 이하)에서만 제한적 이득을 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "메타분석 및 임상 리뷰",
+      "source_url": "https://uk.naturecan.com/a/blog/fitness/eaa-vs-bcaa-which-is-better/",
+      "checked": "2026-08-10",
+      "scope": {"대상": "저항운동 선수", "분류": "추가 효과", "시기": "장기", "지역": "글로벌"},
+      "caution": "★핵심: 단백질을 충분히 섭취하는 사람에게 BCAA 추가는 돈 낭비일 가능성이 높다.",
+      "cautionSource": "근거 기반 영양학"
+    },
+    {
+      "id": "eaa-effective-fasted-low-protein-diet-advantage",
+      "claim": "EAA는 공복 상태나 저단백 식이에서 BCAA보다 더 효과적이다. 왜냐하면 다른 필수 아미노산도 함께 제공되기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "운동 영양학 문헌",
+      "source_url": "https://www.livemomentous.com/blogs/product-education/bcaa-vs-eaa",
+      "checked": "2026-08-10",
+      "scope": {"대상": "공복 운동 또는 저단백 식이자", "분류": "조건부 효율", "시기": "운동 중/후", "지역": "글로벌"},
+      "caution": "공복 운동이나 단백질 섭취가 부족한 사람에게는 EAA가 BCAA보다 나은 선택이다.",
+      "cautionSource": "영양학 원리"
+    },
+    {
+      "id": "bcaa-cost-effective-high-protein-diet-sufficient-protein",
+      "claim": "단백질 섭취가 충분한 운동선수에게는 BCAA가 비용 대비 효과 측면에서 EAA보다 경제적이다. 왜냐하면 다른 필수 아미노산은 이미 식이에서 충분하기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "영양학 실무",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {"대상": "고단백 식이 운동선수", "분류": "비용-효율", "시기": "현행", "지역": "글로벌"},
+      "caution": "BCAA는 운동 중 에너지원과 근단백질 자극용으로 사용할 때 가성비가 좋다.",
+      "cautionSource": "경제학"
+    },
+    {
+      "id": "bcaa-vs-eaa-practical-recommendation-adequate-protein-context",
+      "claim": "실무 권장사항: (1) 단백질 섭취 충분(1.6~2.0g/kg 이상) → BCAA 충분, 비용 절감; (2) 공복 운동 또는 저단백 식이 → EAA 더 효과적; (3) 최고 효과 원함 + 예산 충분 → EAA 선택.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "운동 영양학 합의",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {"대상": "운동선수", "분류": "선택 가이드", "시기": "현행", "지역": "글로벌"},
+      "caution": "일반인의 단백질 섭취 부족은 흔하므로, EAA가 더 현실적일 수 있다.",
+      "cautionSource": "임상 실무"
+    },
+    {
+      "id": "whole-protein-vs-bcaa-eaa-superior-efficacy",
+      "claim": "전체 단백질(whey protein 등)은 BCAA/EAA 보충제보다 비용 대비 단백질 전체 구성을 더 완전하게 제공하므로, 근 합성 목표로는 전체 단백질 보충이 더 효율적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "운동 과학 리드",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {"대상": "근력 운동선수", "분류": "보충 전략", "시기": "현행", "지역": "글로벌"},
+      "caution": "가용성·편의성(운동 중 BCAA)이 전체 단백질과 다르므로, 목적에 따라 선택해야 한다.",
+      "cautionSource": "실무 경험"
+    }
+  ]
+}

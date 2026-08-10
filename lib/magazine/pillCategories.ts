@@ -24,7 +24,7 @@ export const PILL_CATEGORIES: PillCategory[] = [
   },
   {
     key: "shield", label: "면역·장", en: "SHIELD", color: "#5a7a6a", angle: "면역력과 장 건강",
-    slugs: ["probiotics-strain-guide","propolis-throat","gut-leaky-gut-claim","beta-glucan-immune","melatonin-vs-sleep-supplement","zinc-immune","multivitamin-worth-it"],
+    slugs: ["probiotics-strain-guide","propolis-throat","gut-leaky-gut-claim","beta-glucan-immune","melatonin-vs-sleep-supplement","zinc-immune","multivitamin-worth-it","prebiotics-synbiotics","postbiotics-trend","antibiotics-probiotic-timing","nac-antioxidant","elderberry-cold"],
   },
   {
     key: "flow", label: "혈관·심장", en: "FLOW", color: "#9a5a5a", angle: "혈행과 콜레스테롤",
