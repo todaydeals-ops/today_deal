@@ -97,8 +97,8 @@
       "claim": "비오틴이 일반적인 검사 기기에서 간섭을 일으키는 최저 농도는 10 ng/mL이며, 일일 10,000 mcg의 비오틴 복용은 TSH, Free T4, 전체 T3, 갑상선글로불린 검사를 모두 교란할 수 있다. 다만 다른 기기의 임계값은 더 높거나 낮을 수 있다.",
       "tier": "확실",
       "evidence": "공식",
-      "source": "FDA 안전 경고, Ann Clin Lab Sci: Significant Interference of Biotin in Thyroid Function Tests",
-      "source_url": "https://www.annclinlabsci.org/content/53/1/130.full",
+      "source": "PubMed: Significant Interference of Biotin in Thyroid Function Tests",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/36889777/",
       "checked": "2026-08-10",
       "scope": {
         "대상": "고용량 비오틴 사용자 (≥10,000 mcg/day)",
