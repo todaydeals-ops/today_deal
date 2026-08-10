@@ -8,6 +8,14 @@
     {
       "id": "squalane-hydrogenated-squalene-chemical-difference",
       "reason": "이해상충: 출처가 화장품 브랜드 자체 콘텐츠(typology.com). CIR 공식 평가서를 1차 출처로 재확보. 첫 번째 fact로 대체됨."
+    },
+    {
+      "id": "squalane-non-comedogenic-uva-stable-acne-prone-skin",
+      "reason": "이해상충: 출처가 뷰티 블로그(loved01.com). comedogenic rating 0~1/5는 공식이지만, 'UVA 노출 후에도 코메도 생성 관찰 안 됨'은 1차 임상 논문 미확보."
+    },
+    {
+      "id": "squalane-emollient-source-animal-vs-vegetable-stability-identical",
+      "reason": "이해상충: 출처가 스쿠알란 제조사(sophim.com). 자사 제품에 대한 기술 자료로 객관성 의문. 화학적 동등성은 입증되나, 제조사 마케팅 자료로 분류됨."
     }
   ],
   "disputes": [],
@@ -51,8 +59,8 @@
       "claim": "스쿠알렌이 자외선 A(UVA)에 노출되거나 공기 중에서 산화될 때 생성되는 스쿠알렌 과산화물(squalene peroxides)은 강한 코메도제닉 성질을 보이며, 여포 증식(follicular hyperplasia)과 과다각화증(hyperkeratosis)을 유발한다.",
       "tier": "확실",
       "evidence": "공식",
-      "source": "Skin Type Solutions: Squalene and Squalane in Skin Care Products",
-      "source_url": "https://skintypesolutions.com/blogs/skincare/squalene-and-squalane-in-skin-care",
+      "source": "PubMed: Comedogenicity of squalene monohydroperoxide in the skin after topical application",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/10845185/",
       "checked": "2026-08-10",
       "scope": {
         "대상": "여드름·민감성 피부",
@@ -62,40 +70,6 @@
       },
       "caution": "★스쿠알렌이 '천연이므로 안전'하다는 마케팅은 오류다. 산화된 형태는 오히려 여드름을 유발할 수 있다. 반면 스쿠알란은 산화 위험이 없어 여드름 유발성이 매우 낮다.",
       "cautionSource": "산화 화학 및 코메도제닉 평가"
-    },
-    {
-      "id": "squalane-non-comedogenic-uva-stable-acne-prone-skin",
-      "claim": "스쿠알란은 UVA 노출 후에도 코메도 생성이 관찰되지 않으며, 여드름 유발성(comedogenic rating) 0~1/5로 분류되어 여드름 경향 피부에 안전한 emollient이다.",
-      "tier": "확실",
-      "evidence": "공식",
-      "source": "Loved01: Squalane for Skin: Benefits of This Emollient",
-      "source_url": "https://loved01.com/blogs/hydrating-ingredients/squalane-skin-benefits",
-      "checked": "2026-08-10",
-      "scope": {
-        "대상": "여드름 경향 피부",
-        "분류": "안전성·코메도제닉",
-        "시기": "전 기간",
-        "지역": "글로벌"
-      },
-      "caution": "comedogenic rating 0~1/5는 실내 보관 조건이 전제되며, 외출 시 UVA 노출을 피할 수 없으므로 자외선 차단을 병행할 것.",
-      "cautionSource": "코메도제닉 평가 기준"
-    },
-    {
-      "id": "squalane-emollient-source-animal-vs-vegetable-stability-identical",
-      "claim": "스쿠알란은 동물성(주로 상어 간유)과 식물성(올리브유, 사탕수수) 두 가지 출처로 생산되지만, 수소화 후 화학 구조가 동일하므로 안정성과 효과는 출처 무관하게 동등하다.",
-      "tier": "확실",
-      "evidence": "공식",
-      "source": "Sophim: Squalane - Non-comedogenic Squalane",
-      "source_url": "https://www.sophim.com/en/non-comedogenic-squalane/",
-      "checked": "2026-08-10",
-      "scope": {
-        "대상": "화장품 원료",
-        "분류": "원료 특성",
-        "시기": "제형 설계",
-        "지역": "글로벌"
-      },
-      "caution": "★'식물성 스쿠알란이 더 낫다'는 마케팅은 근거가 없다. 다만 채식주의자나 환경 고려 소비자를 위한 선택지일 뿐, 피부 효과는 동등하다. 가격은 식물성이 더 비싼 경향이 있다.",
-      "cautionSource": "화학·마케팅 분석"
     }
   ]
 }

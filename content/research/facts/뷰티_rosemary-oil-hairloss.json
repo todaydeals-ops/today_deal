@@ -1,0 +1,133 @@
+{
+  "topic": "로즈마리 오일과 탈모: 어디까지 확인됐나 (미녹시딜 비교 RCT)",
+  "brand": "뷰티·성분연구소",
+  "article": "rosemary-oil-hairloss",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "minoxidil-5percent-efficacy-hair-count-increase",
+    "minoxidil-cessation-hair-loss-reversal-regrowth-loss"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "rosemary-oil-vs-minoxidil-2-percent-rct-6-month-androgenetic-alopecia",
+      "claim": "로즈마리 오일과 미녹시딜 2%를 비교한 무작위 대조 임상시험(RCT)은 안드로겐성 탈모(androgenetic alopecia) 환자 100명(각 그룹 50명)을 6개월 동안 추적했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Rosemary oil vs minoxidil 2% for the treatment of androgenetic alopecia: a randomized comparative trial",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/25842469/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "안드로겐성 탈모 환자",
+        "분류": "임상시험",
+        "시기": "6개월",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": "PubMed 임상시험"
+    },
+    {
+      "id": "rosemary-oil-vs-minoxidil-2-percent-no-significant-difference-6-months",
+      "claim": "임상시험 결과, 6개월 후 로즈마리 오일 그룹과 미녹시딜 2% 그룹 모두에서 베이스라인 대비 모발 수가 유의미하게 증가했으며, 두 그룹 간에는 통계적 차이가 없었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed RCT: Rosemary oil vs minoxidil 2%",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/25842469/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "임상시험 참여자",
+        "분류": "효과 비교",
+        "시기": "6개월",
+        "지역": "글로벌"
+      },
+      "caution": "★이 연구는 '로즈마리가 미녹시딜만큼 효과가 있다'고 해석되곤 하는데, 실제로는 '이 특정 로즈마리 추출물이 미녹시딜 2%만큼 효과를 보였다'는 제한적 결론이다.",
+      "cautionSource": "임상 데이터"
+    },
+    {
+      "id": "rosemary-oil-vs-minoxidil-2-percent-side-effects-fewer-with-rosemary",
+      "claim": "로즈마리 오일 그룹에서는 미녹시딜 2% 그룹보다 부작용(특히 두피 가려움증)이 더 적게 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed RCT: Rosemary oil vs minoxidil 2%, safety profile comparison",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/25842469/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "임상시험 참여자",
+        "분류": "안전성",
+        "시기": "6개월",
+        "지역": "글로벌"
+      },
+      "caution": "로즈마리가 '안전한' 대안일 가능성은 있으나, 미녹시딜의 더 많은 부작용은 더 높은 경혈관 활성과 관련이 있을 수 있다.",
+      "cautionSource": "임상 데이터"
+    },
+    {
+      "id": "rosemary-oil-rct-specific-extract-not-essential-oil-clarification",
+      "claim": "논문에서 사용된 로즈마리 제품은 순수 에센셜 오일이 아니라 특정 추출·처리된 로즈마리 추출물이었으며, 이 점은 '로즈마리 에센셜 오일'과 구분해서 이해해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed RCT 방법 섹션 검토",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/25842469/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "로즈마리 제품",
+        "분류": "제형 명확화",
+        "시기": "임상시험",
+        "지역": "글로벌"
+      },
+      "caution": "★이것이 중요한 주의점이다. 이 RCT 결과를 '로즈마리 에센셜 오일은 탈모를 치료한다'로 일반화하는 것은 오류다.",
+      "cautionSource": "임상시험 설계"
+    },
+    {
+      "id": "rosemary-oil-rct-minoxidil-2-percent-not-5-percent-comparison",
+      "claim": "이 RCT에서 사용된 미녹시딜은 2% 강도였으며, 더 광범위하게 사용되는 5% 미녹시딜과는 비교되지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed RCT: Minoxidil concentration specification",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/25842469/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "임상시험 설계",
+        "분류": "방법론",
+        "시기": "연구 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★미녹시딜 5%는 2%보다 효과가 더 강하다. 따라서 로즈마리 vs 미녹시딜 5%의 결과는 이 RCT와 다를 가능성이 높다.",
+      "cautionSource": "미녹시딜 농도별 효과 데이터"
+    },
+    {
+      "id": "rosemary-oil-hairloss-mechanism-unclear-pubmed",
+      "claim": "로즈마리 오일이 탈모 감소 메커니즘에 대한 PubMed 상 명확한 학술적 설명은 확인되지 않았다. 일반적인 가설은 '항산화·항염증 성분 함유'이나, 이것이 모낭에 어떻게 작용하는지는 입증되지 않았다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "PubMed 일반 검색",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "로즈마리 성분",
+        "분류": "약리 기전",
+        "시기": "연구 단계",
+        "지역": "글로벌"
+      },
+      "caution": "효과(RCT 결과)가 있더라도 기전이 불명확하면 '왜 효과가 나는지' 예측할 수 없다. 따라서 개인별 반응 차이 설명과 최적 사용법 개발이 어렵다.",
+      "cautionSource": "메커니즘 연구 부재"
+    },
+    {
+      "id": "rosemary-oil-single-trial-replication-needed",
+      "claim": "이 RCT는 단 1건의 연구이며, 발견을 확인하기 위한 독립적인 재현 연구(replication study)가 부족하다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "PubMed 검색 결과: 로즈마리 vs 미녹시딜 비교 연구 1건만 존재",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "임상 근거 평가",
+        "분류": "근거의 강도",
+        "시기": "현재",
+        "지역": "글로벌"
+      },
+      "caution": "★단일 RCT는 과학적 기준에서 '낮은 수준의 근거'다. 여러 연구의 반복 확인이 필요하다.",
+      "cautionSource": "메타분석·체계적 검토 부재"
+    }
+  ]
+}

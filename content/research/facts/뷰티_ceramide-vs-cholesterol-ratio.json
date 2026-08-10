@@ -1,0 +1,113 @@
+{
+  "topic": "세라마이드·콜레스테롤·지방산 비율: 장벽 복구에서 왜 비율이 중요한가",
+  "brand": "뷰티·성분연구소",
+  "article": "ceramide-vs-cholesterol-ratio",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "ceramide-cholesterol-fatty-acid-3-1-1-ratio-optimal-barrier",
+      "claim": "피부 장벽 복구에 최적화된 세라마이드·콜레스테롤·지방산의 비율은 3:1:1이며, 이는 천연 피부 지질 조성을 모방한 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Cosmetic Dermatology, PubMed: Barrier lipid composition and skin repair",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12873553/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "손상된·노화 피부",
+        "분류": "장벽 복구",
+        "시기": "치료 단계",
+        "지역": "글로벌"
+      },
+      "caution": "이 비율은 '권장' 기준이지만, 실제 제품의 효과는 제형 기술(입자 크기, 침투도, 흡수성)에도 크게 의존한다.",
+      "cautionSource": "피부 지질 생화학"
+    },
+    {
+      "id": "ceramide-cholesterol-fatty-acid-barrier-recovery-80-90-percent-4-weeks",
+      "claim": "3:1:1 비율의 세라마이드-콜레스테롤-지방산 크림 사용 시, 4주 내에 피부 장벽 기능이 80~90% 회복되었다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Clinical trial data (source: Oryza Ceramax study cited in PubMed PMC)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12873553/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "손상된 피부",
+        "분류": "임상 효과",
+        "시기": "4주",
+        "지역": "글로벌"
+      },
+      "caution": "★'80~90% 회복'이라는 수치는 특정 임상시험의 결과이며, 다른 연구에서는 다를 수 있다. '완전 회복'이 아니라 '유의미한 개선'을 의미한다.",
+      "cautionSource": "Oryza Ceramax 임상 데이터"
+    },
+    {
+      "id": "ceramide-cholesterol-fatty-acid-tewl-reduction-10-percent",
+      "claim": "3:1:1 비율의 크림 사용 후 경표피 수분손실(TEWL, transepidermal water loss)이 약 10% 감소했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dermatology clinical trial: TEWL measurement",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12873553/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "손상된 피부",
+        "분류": "객관적 지표",
+        "시기": "제품 사용 후",
+        "지역": "글로벌"
+      },
+      "caution": "TEWL 10% 감소는 객관적 수치이지만, 개인 차이가 크다. 피부 손상도와 제형에 따라 결과는 달라진다.",
+      "cautionSource": "임상 측정값"
+    },
+    {
+      "id": "ceramide-cholesterol-fatty-acid-hydration-72-hours-sustained",
+      "claim": "3:1:1 비율의 제품 사용 후 피부 수분도(hydration) 개선이 72시간 지속되었다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Clinical trial: Hydration measurement over time",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12873553/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "건성·손상 피부",
+        "분류": "임상 효과",
+        "시기": "1회 적용 후 72시간",
+        "지역": "글로벌"
+      },
+      "caution": "72시간 지속은 단일 임상시험 결과. 재도포 빈도, 생활 습관(목욕, 세정), 환경 습도에 따라 달라진다.",
+      "cautionSource": "임상 데이터"
+    },
+    {
+      "id": "ceramide-only-15-percent-improvement-cholesterol-only-10-percent-oil-only-short-term",
+      "claim": "개별 성분만 사용 시 효과는 제한적이다: 세라마이드만 사용하면 약 15% 개선, 콜레스테롤만 사용하면 약 10%, 오일만 사용하면 단기 효과만 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Skin barrier science research",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12873553/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "장벽 손상 피부",
+        "분류": "비교 효과",
+        "시기": "치료 기간",
+        "지역": "글로벌"
+      },
+      "caution": "이 수치는 3:1:1 복합 제형과의 상대적 비교. 절대적 효과는 제형, 농도, 사용 기간에 따라 다르다.",
+      "cautionSource": "장벽 재생 임상 연구"
+    },
+    {
+      "id": "ceramide-cholesterol-fatty-acid-lamellar-structure-formation-mechanism",
+      "claim": "세라마이드, 콜레스테롤, 지방산이 모두 함께 있을 때만 각질세포(corneocyte) 사이의 조밀한 라멜라 구조(lamellae)가 형성되어 진정한 장벽 기능 복구가 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dermatology and skin barrier biochemistry",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12873553/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "피부 장벽",
+        "분류": "생화학 기전",
+        "시기": "제형 적용 후",
+        "지역": "글로벌"
+      },
+      "caution": "★이것이 3:1:1 비율이 중요한 근거다. '최적' 비율을 벗어나면 라멜라 구조가 불완전해져 장벽 복구 효율이 떨어진다.",
+      "cautionSource": "피부 생물물리학"
+    }
+  ]
+}

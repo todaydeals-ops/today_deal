@@ -44,6 +44,74 @@
       },
       "caution": "★일반적인 '카페인이 빠르게 침투한다'는 설명과 다르게, 실제 카페인은 친수성으로 인해 피부 침투가 제한적이며, 상업 제품의 효과는 제형 기술(나노입자, 유화제)에 크게 의존한다.",
       "cautionSource": "PubMed 피부 약동학 연구"
+    },
+    {
+      "id": "caffeine-phosphodiesterase-inhibitor-cyclic-amp-vasoconstriction",
+      "claim": "카페인은 인산디에스터라제(phosphodiesterase) 억제제로서 순환 AMP(cAMP)의 분해를 방지하여, 눈 주변의 혈관을 수축(vasoconstriction)시키고 부종으로 인한 어두움과 충혈을 감소시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Caffeine mechanism of action in topical skin care",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "안주변 미세순환",
+        "분류": "약리 기전",
+        "시기": "외용 적용 후",
+        "지역": "글로벌"
+      },
+      "caution": "이 메커니즘은 근본적 해결이 아니라 일시적 미용 개선이다. 부종의 원인(염증, 수분 정체, 수면 부족)을 해결하지 않는다.",
+      "cautionSource": "PubMed 약리학 기초"
+    },
+    {
+      "id": "caffeine-clinical-trial-4-week-puffiness-reduction-38-percent",
+      "claim": "4주 사용 후 사용자 평가로 38.94%의 눈 아래 주머니(eye bags) 개선이 보고되었으며, 부기 감소(puffiness volume)는 2시간 후 측정되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Clinical efficacy of caffeine-containing formulations for periorbital edema",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/38112168/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "카페인 제품 사용자",
+        "분류": "임상 효과",
+        "시기": "4주 사용 후",
+        "지역": "글로벌"
+      },
+      "caution": "이는 사용감 개선(subjective)이며, 객관적 측정(3D facial scanning)에서는 2시간 후 유의미한 개선으로 보고되었으나, 지속시간은 제형에 따라 다르다.",
+      "cautionSource": "PubMed 임상시험 데이터"
+    },
+    {
+      "id": "caffeine-responder-rate-variability-23-to-100-percent",
+      "claim": "카페인 제품의 반응률이 연구마다 크게 다르다. 한 연구에서는 100% 대상자가 어두운 원을 개선했으나, 다른 RCT에서는 3% 카페인 젤이 34명 중 8명(23.5%)만 부기 감소에 반응했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Effectiveness and tolerance of multicorrective topical treatment (2024), randomized placebo-controlled trial",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/38112168/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 성인",
+        "분류": "개인 차이",
+        "시기": "6개월 임상 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★반응률 변이는 농도, 제형(젤/세럼/크림), 대상자 특성(피부타입, 유전, 생활방식)에 따라 발생한다. '모든 사람에게 효과'라는 주장은 근거 부족.",
+      "cautionSource": "PubMed 메타분석 및 개별 RCT"
+    },
+    {
+      "id": "caffeine-topical-safe-tolerability-no-serious-adverse-events",
+      "claim": "12주 임상시험에서 카페인 함유 아이크림 사용 그룹에서 심각한 부작용(serious adverse events)이 보고되지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Effectiveness and tolerance of multicorrective topical treatment for infraorbital dark circles and puffiness (2024)",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/38112168/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "아이크림 사용자",
+        "분류": "안전성",
+        "시기": "12주",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": "임상시험 데이터"
     }
   ]
 }

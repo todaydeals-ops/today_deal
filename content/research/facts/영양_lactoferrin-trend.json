@@ -1,0 +1,113 @@
+{
+  "topic": "락토페린: 한국 기능성 인정, 철 결합 기전, 면역 기능, 임상 근거 수준",
+  "brand": "알약연구소",
+  "article": "락토페린, 어떤 사람에게 맞는 성분일까",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "lactoferrin-korea-individual-approval-immune-function",
+      "claim": "락토페린(우유 유래)은 한국 식약처에서 2021년 11월 개별인정형 기능성 원료로 '면역력 증진'에 대한 기능성을 인정받았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 개별인정형 기능성 원료 목록",
+      "source_url": "https://www.fmis.kr/public/pro/hfg/htfsIndvdlzRcognList.do",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "락토페린 함유 영양제",
+        "분류": "한국 기능성 인정",
+        "시기": "2021-11 이후",
+        "지역": "KR"
+      },
+      "caution": "개별인정형이므로, 고시형(약 100개 일반 원료)보다 엄격한 심사를 거쳤으며 해당 제품에만 기능성 표시가 가능하다.",
+      "cautionSource": "식약처 기능성 원료 기준"
+    },
+    {
+      "id": "lactoferrin-iron-binding-mechanism-antimicrobial",
+      "claim": "락토페린은 '유청 단백질'로, 철과 강력하게 결합하는 '페린' 단백질이다. 철과 결합한 락토페린은 박테리아 증식에 필요한 철분 공급을 차단하여 항균 효과를 발휘하며, 동시에 결합된 철은 모든 체내 세포에 산소를 공급하는 촉매로 작용한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kormedidotcom - 락토페린 산업화 및 기능성 리뷰",
+      "source_url": "https://www.bioin.or.kr/board.do?num=1181&cmd=view&bid=tech",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "락토페린",
+        "분류": "철 결합 기전",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "락토페린의 항균 효과는 철분 공급 차단에 있으므로, 철결핍성 빈혈 환자와 함께 복용하면 철분 흡수가 방해받을 수 있다.",
+      "cautionSource": "생화학 문헌"
+    },
+    {
+      "id": "lactoferrin-innate-immune-system-antiviral-antibacterial",
+      "claim": "락토페린은 선천 면역계의 중요한 성분으로, 그람 양성·음성 박테리아에 대한 항균 효과와 DNA·RNA 바이러스에 대한 항바이러스 활성을 가지고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Kormedi - 락토페린 기능성 분석 및 업계 동향",
+      "source_url": "https://kormedi.com/1664638/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "락토페린",
+        "분류": "면역 기능 기전",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "항균·항바이러스 효과는 in vitro(시험관) 수준에서 주로 입증되었으며, 인체에서의 임상적 효과(감기 예방·기간 단축)는 아직 제한적이다.",
+      "cautionSource": "임상 연구 현황"
+    },
+    {
+      "id": "lactoferrin-body-fat-reduction-clinical-evidence-weak",
+      "claim": "락토페린이 복부지방 감소·다이어트 효과가 있다는 광고가 있으나, 임상 근거는 소규모 연구에 제한되어 있고 효과 크기는 작다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "소셜타임스 - 락토페린 분석: 다이어트·복부지방 감소 효과 검증",
+      "source_url": "https://www.esocialtimes.com/news/articleView.html?idxno=31761",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "다이어트 목적 락토페린 제품",
+        "분류": "체지방 감소 근거",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★식약처 기능성 인정은 '면역력 증진'에만 해당하며, 다이어트·체지방 감소는 인정된 기능이 아니다. 이 표시는 광고법 위반이 될 수 있다.",
+      "cautionSource": "식약처 기능성 표시 기준"
+    },
+    {
+      "id": "lactoferrin-colostrum-vs-milk-concentration",
+      "claim": "초유(colostrum) 유래 락토페린이 성숙유 유래보다 농도가 약 100배 높으며, 일부 제품은 이를 강조하여 판매하나 초유도 한국에서는 개별인정형 기능성으로만 표시 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "우유 성분의 기능성과 이를 활용한 국내 기능성 원료 - 학술 리뷰",
+      "source_url": "https://www.elabp.org/archive/view_article?pid=labp-10-1-1",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "초유 vs 성숙유 락토페린",
+        "분류": "원료 구분",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "초유 제품이라고 반드시 효과가 높은 것은 아니며, 제품마다 임상시험 결과가 다를 수 있다.",
+      "cautionSource": "영양학 문헌"
+    },
+    {
+      "id": "lactoferrin-optimal-dose-clinical-trial-100-mg-range",
+      "claim": "라토페린의 임상시험 중 일부는 100 mg 전후의 용량으로 수행되었으며, 효과 크기를 판별하려면 더 크고 장기적인 무작위 대조 시험이 필요한 상태다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "최적 용량에 관한 표준 임상시험 데이터 미확보",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "락토페린 최적 용량",
+        "분류": "임상 근거 미흡",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "시판 제품의 용량은 일반적으로 100~300 mg 범위이나, 각 제품의 임상 근거를 따로 확인이 필요하다.",
+      "cautionSource": "임상시험 현황 분석"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "topic": "음식으로 먹을 때 vs 영양제로 먹을 때: 생체이용률, 식품 매트릭스 효과, 흡수 차이",
+  "brand": "알약연구소",
+  "article": "영양소는 음식에서 먹는 게 더 좋을까, 보충제에서?",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "iron-absorption-enhancement-vitamin-c",
+    "calcium-absorption-vitamin-d-magnesium-synergy"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "food-matrix-effect-nutrient-bioavailability-trap",
+      "claim": "식품 매트릭스는 음식 내 다양한 성분들의 물리적 구조를 뜻하며, 이것이 영양소의 생체이용률에 영향을 준다. 예를 들어 채소의 셀룰로스 세포벽에 갇힌 영양소는 흡수가 어려우나, 식품이 가공(조리·분쇄)되면 식품 매트릭스가 파괴되어 영양소가 더 잘 흡수된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Bioavailability of nutraceuticals: Role of the food matrix, processing conditions, the gastrointestinal tract, and nanodelivery systems - PubMed; Unleashing nutrient potential: Why the food matrix matters for bioavailability",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/33331687/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "음식 유래 영양소",
+        "분류": "식품 매트릭스",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "가공식품의 영양소 흡수율이 생것보다 높을 수 있으므로, '가공=나쁘다'는 고정관념은 재검토가 필요하다.",
+      "cautionSource": "영양학 문헌"
+    },
+    {
+      "id": "supplement-bioavailability-equal-or-superior-to-food",
+      "claim": "보충제(정제·캡슐) 형태의 비타민·미네랄이 음식에 첨가되거나 복용될 때, 그 생체이용률은 자연 식품 유래 영양소와 최소한 동등하거나 더 높을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Micronutrient bioavailability: concepts, influencing factors, and strategies for improvement - PMC",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12673670/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "영양제 vs 자연식품",
+        "분류": "생체이용률 비교",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★보충제가 음식보다 흡수율이 낮다는 통념은 근거가 약하다. 다만 영양제 과다복용은 문제가 될 수 있다.",
+      "cautionSource": "영양학 메타분석"
+    },
+    {
+      "id": "phytate-fiber-antagonist-plant-nutrient-bioavailability-reduction",
+      "claim": "식물성 음식에 함유된 피테이트(phytate)와 식이섬유는 철·칼슘·아연 등 미네랄과 결합하여 불용성 착화물을 형성하므로, 식물성 영양소의 생체이용률은 동물성 영양소보다 20~50% 낮을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Perspective: Nutrient bioavailability is the missing ingredient connecting food systems to nutrition security and environmental sustainability - The American Journal of Clinical Nutrition",
+      "source_url": "https://ajcn.nutrition.org/article/S0002-9165(26)00062-6/fulltext",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "식물성 음식 유래 미네랄",
+        "분류": "길항 물질의 영향",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "채소·곡류에서 얻는 미네랄은 흡수율이 낮으므로, 음식만으로 충분한 섭취를 기대하기 어려울 수 있다. 특히 완전채식자(비건)는 보충제가 필요할 수 있다.",
+      "cautionSource": "영양학 문헌"
+    },
+    {
+      "id": "nutrient-synergy-in-food-vs-isolated-supplement",
+      "claim": "음식 속 영양소는 여러 비타민·미네랄·파이토케미칼이 함께 존재하여 시너지 효과가 있을 수 있으나, 단일 성분 보충제는 이 상승작용을 제공하지 못할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Bioavailability of nutraceuticals: Role of the food matrix, processing conditions, the gastrointestinal tract, and nanodelivery systems",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/33331687/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "음식 유래 영양소",
+        "분류": "영양소 시너지",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "그러나 음식 섭취만으로는 현대인의 필요량을 충족하기 어려우므로, 음식 + 보충제 병행이 실질적 방법이다.",
+      "cautionSource": "임상 영양학 기준"
+    },
+    {
+      "id": "fat-soluble-vitamin-absorption-enhanced-by-dietary-fat",
+      "claim": "비타민 A·D·E·K 같은 지용성 비타민은 음식에 포함된 지방에 의해 흡수가 크게 향상되며, 보충제 형태라도 지방 섭취와 함께하면 생체이용률이 올라간다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Micronutrient bioavailability: concepts, influencing factors, and strategies for improvement",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12673670/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "지용성 비타민",
+        "분류": "지방 동반 섭취",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "지용성 비타민 보충제를 복용할 때는 반드시 식사(특히 지방 함유 음식)와 함께해야 한다.",
+      "cautionSource": "공용 파일: fat-soluble-vitamin-requires-meal-absorption"
+    },
+    {
+      "id": "processed-food-high-nutrient-density-vs-bioavailability-paradox",
+      "claim": "초가공식품(ultra-processed foods)은 영양 매트릭스가 파괴되어 영양소의 생체이용률이 높지만, 영양가는 낮고 첨가물이 많다는 역설이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Micronutrient bioavailability: concepts, influencing factors, and strategies for improvement",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12673670/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "초가공식품",
+        "분류": "식품 매트릭스와 영양가",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "흡수율만 높다고 좋은 것은 아니며, 균형잡힌 음식 + 필요한 보충제가 최선이다.",
+      "cautionSource": "영양학 기준"
+    }
+  ]
+}

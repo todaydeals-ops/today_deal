@@ -1,0 +1,130 @@
+{
+  "topic": "자외선 차단제 덧바르기: 현실적으로 얼마나 지켜야 하는가",
+  "brand": "뷰티·성분연구소",
+  "article": "sunscreen-reapplication-reality",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "who-sunscreen-reapplication-every-2-hours-application-20-minutes-before",
+      "claim": "세계보건기구(WHO)는 자외선 차단제를 햇빛 노출 20분 전에 바르고, 2시간마다 재도포할 것을 권장하며, 수영이나 목욕 후에도 재도포할 것을 명시하고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "WHO sun protection guidelines",
+      "source_url": "https://www.who.int/news-room/questions-and-answers/item/sun-exposure",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 연령",
+        "분류": "공중 보건 지침",
+        "시기": "야외 활동 중",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": "WHO 공식 안내"
+    },
+    {
+      "id": "sunscreen-standard-application-dose-2-mg-cm2",
+      "claim": "자외선 차단제의 SPF 지수는 2 mg/cm²의 도포량 기준으로 시험되며, 이는 성인 얼굴 전체에 약 28ml(1 온스)에 해당한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA sunscreen testing standards, ISO 24444 standard",
+      "source_url": "https://www.fda.gov/drugs/over-counter-drugs/sunscreen-faqs",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "SPF 시험 기준",
+        "분류": "표준 도포량",
+        "시기": "제품 테스트 단계",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": "FDA·ISO 표준"
+    },
+    {
+      "id": "sunscreen-actual-application-dose-0-39-to-1-0-mg-cm2-user-behavior",
+      "claim": "실제 사용 환경에서 사람들이 도포하는 자외선 차단제의 양은 0.39~1.0 mg/cm²로, 표준 테스트 용량의 약 1/4에서 1/2 수준이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Application of sunscreen — theory and reality (Photodermatology 2014), clinical observation studies",
+      "source_url": "https://onlinelibrary.wiley.com/doi/10.1111/phpp.12099",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 사용자",
+        "분류": "실제 행동",
+        "시기": "매 사용 시",
+        "지역": "글로벌"
+      },
+      "caution": "이것이 차단제 효과가 이론과 현실에서 다른 근본 원인이다. 사용자는 충분한 양을 모르거나 불편해서 덜 바른다.",
+      "cautionSource": "사용자 행동 연구"
+    },
+    {
+      "id": "sunscreen-dose-reduction-half-spf-reduction-greater-than-half",
+      "claim": "도포량이 절반으로 줄어들면 SPF(자외선 차단지수)는 절반 이상으로 감소한다. SPF와 도포량의 관계는 선형이 아니라 비선형(nonlinear)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Dose-response relationship of sunscreen efficacy",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0190962201584303",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "차단제 효과",
+        "분류": "약리학",
+        "시기": "도포 직후",
+        "지역": "글로벌"
+      },
+      "caution": "SPF 30을 반쯤 바르면 SPF 15가 된다는 것은 거짓. 실제로는 훨씬 더 많이 떨어진다. 집필 시 이 점을 강조해야 과대 신뢰를 방지할 수 있다.",
+      "cautionSource": "임상 약리학 연구"
+    },
+    {
+      "id": "sunscreen-no-rct-spf-degradation-2-to-4-hours",
+      "claim": "자외선 차단제가 2~4시간 동안 SPF 저하를 겪는다는 주장을 뒷받침하는 단일 RCT는 존재하지 않는 것으로 알려져 있다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PubMed: Review of sunscreen reapplication literature",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "차단제 효과 지속",
+        "분류": "근거 평가",
+        "시기": "2~4시간",
+        "지역": "글로벌"
+      },
+      "caution": "2시간마다 덧발라야 한다는 흔한 권고도 이 이면에는 단일 강력한 RCT 근거가 부족하다. 목욕, 땀, 마찰로 인한 제거와 화학적 분해를 분리해서 생각해야 한다.",
+      "cautionSource": "체계적 문헌 검토"
+    },
+    {
+      "id": "sunscreen-early-reapplication-first-30-minutes-high-spf-compensation-strategies",
+      "claim": "제한된 도포량의 단점을 보상하는 전략으로는 (1) 최초 30분 내에 조기 재도포, (2) 매우 높은 SPF(70~100) 제품 사용이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Sunscreen application strategies for real-world UV protection",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 사용자",
+        "분류": "실무 전략",
+        "시기": "야외 활동",
+        "지역": "글로벌"
+      },
+      "caution": "높은 SPF도 도포량이 부족하면 무용지물. 또한 SPF 30과 50, 70 사이의 추가 보호도는 생각보다 크지 않다(SPF 30 vs 50은 약 2% 더 많은 UV 차단).",
+      "cautionSource": "임상 데이터"
+    },
+    {
+      "id": "sunscreen-reapplication-swimming-sweating-mechanical-removal",
+      "claim": "자외선 차단제 재도포가 필수적인 것은 화학적 분해보다는 물, 땀, 마찰로 인한 기계적 제거 때문이다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "피부 약리학·흡수 과학 기초",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "차단제 사용자",
+        "분류": "기전",
+        "시기": "사용 중",
+        "지역": "글로벌"
+      },
+      "caution": "Water-resistant 표기도 완전 방수가 아니라 제한된 저항성을 의미한다. 수영 후 반드시 재도포할 것.",
+      "cautionSource": "피부 약리학"
+    }
+  ]
+}

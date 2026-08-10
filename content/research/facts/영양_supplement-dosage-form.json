@@ -1,0 +1,116 @@
+{
+  "topic": "영양제 제형(정제·캡슐·액상·젤리)의 흡수율 차이: 붕해·용출·당 함량",
+  "brand": "알약연구소",
+  "article": "알약, 캡슐, 액상, 젤리... 어떤 제형이 더 잘 흡수될까",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "water-soluble-vitamin-absorption-no-meal-required",
+    "fat-soluble-vitamin-requires-meal-absorption"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "tablet-vs-capsule-absorption-rate-difference",
+      "claim": "정제(알약)는 붕해 및 용출 과정이 필요한 반면, 연질캡슐은 위의 산성 환경에서 더 빠르게 녹아 액상 형태로 변하므로, 연질캡슐의 약효 발현이 정제보다 더 빠르게 일어난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Pharmacokinetics of vitamin dosage forms: A complete overview - PMC",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10804103/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "영양제 일반",
+        "분류": "정제 vs 캡슐 제형",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★같은 성분이라면 최종적인 약효는 동일하지만, 흡수 속도에서만 차이가 난다. 빠른 효과가 필요한 경우(감기 초기 아연 등)는 캡슐을 선택할 수 있다.",
+      "cautionSource": "제약학 문헌"
+    },
+    {
+      "id": "liquid-supplement-higher-bioavailability-than-solid",
+      "claim": "액상 영양제는 정제나 캡슐보다 생물이용률이 높다. 이미 용해된 형태이므로 소화 흡수 과정이 단축되고, 위산 및 소장 효소에 노출되는 시간이 짧다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Bioavailability: How to Get More From the Supplements You Already Take - SuppCo; What Is Bioavailability? A Clear Guide to Absorption",
+      "source_url": "https://supp.co/articles/bioavailability ; https://synchronicity.health/blogs/news/what-is-bioavailability-a-clear-guide-to-absorption",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "영양제 일반",
+        "분류": "액상 vs 고형 제형",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "액상 제품은 방부제 함량이 고형보다 많을 수 있으므로, 첨가물을 확인하고 개봉 후 냉장 보관이 필수다.",
+      "cautionSource": "제약학 문헌"
+    },
+    {
+      "id": "gummy-supplement-high-sugar-content-concern",
+      "claim": "젤리형 영양제의 당 함량은 100g당 60~70g으로 매우 높으며, 이 정도의 고당분 섭취는 혈당을 급격히 올리고 인슐린 저항성을 유발할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품안전정보 - 건강기능식품 당 함량 및 혈당 영향 연구",
+      "source_url": "https://v.daum.net/v/5N1Y8t2XH9",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "젤리형 영양제 (특히 어린이용)",
+        "분류": "당 함량",
+        "시기": "전 연식",
+        "지역": "KR"
+      },
+      "caution": "★혈당 조절이 필요한 사람(당뇨·대사증후군)이나 어린이는 젤리형 피하기를 권장한다. 정제나 캡슐 제형을 우선하거나, 무가당 젤리를 확인해야 한다.",
+      "cautionSource": "영양학 문헌"
+    },
+    {
+      "id": "gummy-supplement-vitamin-overdose-risk-berin",
+      "claim": "시판 젤리형 비타민 제품 중 일부는 구미 2개 섭취만으로 비오틴(B7)의 하루 권장량을 1만 배 이상 초과하는 양이 포함되어 있으며, 성인이 비오틴 1만 µg/day 이상 섭취하면 소화불량·혈당 조절 이상·피부 트러블 등 부작용이 생길 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품안전정보 및 FDA 기준",
+      "source_url": "https://v.daum.net/v/5N1Y8t2XH9",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "젤리형 비타민 제품",
+        "분류": "고함량 비타민 위험",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "젤리형 제품을 선택할 때는 반드시 성분 및 함량을 확인하고, 과다복용 방지를 위해 권장량을 엄격히 지켜야 한다.",
+      "cautionSource": "영양제 안전 가이드"
+    },
+    {
+      "id": "liposomal-formulation-enhanced-bioavailability",
+      "claim": "리포소말 제형(지질 소낭으로 포장)은 영양소를 세포막 투과에 최적화된 형태로 만들어 기존 정제나 캡슐보다 생물이용률을 크게 향상시킬 수 있으며, 리포소말 비타민 C는 기존 정제 형태보다 생체이용률이 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Bioavailability and formulation science literature",
+      "source_url": "https://prlabs.com/blog/the-science-of-bioavailability-why-some-supplements-work-better.html",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "고급 제형 영양제",
+        "분류": "리포소말 제형",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "리포소말 제품은 일반 제형보다 가격이 훨씬 비싸며, 냉장 보관이 필요한 경우가 많다. 기본 영양소 충족에는 일반 제형으로도 충분하다.",
+      "cautionSource": "제약학 문헌"
+    },
+    {
+      "id": "supplement-form-absorption-dependent-on-content",
+      "claim": "영양제 흡수율은 제형 자체뿐 아니라 장내 pH, 소화 기능, 첨가물(바인더·필러), 코팅 종류에 따라 크게 달라질 수 있으며, 같은 캡슐 제형이라도 제품마다 질이 다를 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Bioavailability: How to Get More From the Supplements You Already Take; Pharmacokinetics of vitamin dosage forms",
+      "source_url": "https://synchronicity.health/blogs/news/what-is-bioavailability-a-clear-guide-to-absorption",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 영양제 제형",
+        "분류": "흡수에 영향을 주는 요인",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "신뢰할 수 있는 제조사의 제품을 선택하고, 불필요한 첨가물이 적은 제품을 우선하는 것이 흡수율 개선의 실질적 방법이다.",
+      "cautionSource": "제약학 기준"
+    }
+  ]
+}

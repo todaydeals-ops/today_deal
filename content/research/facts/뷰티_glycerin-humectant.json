@@ -12,6 +12,10 @@
     {
       "id": "glycerin-optimal-concentration-5-10-percent",
       "reason": "원출처 불명: AI 생성 요약 사이트(droracle.ai). 공식 CIR 평가서는 '최대 78.5% (leave-on)', 임상 RCT는 15-20% 범위 주로 다룸. '2-10% 최적'이라는 범위의 1차 학술 근거 미확보."
+    },
+    {
+      "id": "glycerin-efficacy-broader-humidity-range-vs-hyaluronic-acid",
+      "reason": "이해상충: 출처가 뷰티 전문 블로그(thekosmetics.com). 글리세린과 히알루론산의 직접 비교 1차 임상 논문 미확보."
     }
   ],
   "disputes": [],
@@ -49,23 +53,6 @@
       },
       "caution": "★건조한 환경에서는 글리세린이 더 효과적이지만, 습한 계절(여름)이나 습도 높은 지역에서는 과도한 수분 흡수로 인해 불편함을 느낄 수 있다. 이 경우 글리세린 농도를 낮추거나 occlusive 성분(바셀린, 실리콘)과 함께 사용할 것.",
       "cautionSource": "계절·환경 요인"
-    },
-    {
-      "id": "glycerin-efficacy-broader-humidity-range-vs-hyaluronic-acid",
-      "claim": "글리세린은 히알루론산보다 더 넓은 습도 범위에서 일관되게 수화 효과를 보이며, 건조한 환경에서도 피부의 깊은 층(dermis)과 환경의 수분을 모두 흡수할 수 있다.",
-      "tier": "확실",
-      "evidence": "공식",
-      "source": "The Kosmetics: Humectants in Skincare - Glycerin vs Hyaluronic Acid",
-      "source_url": "https://thekosmetics.com/blog/humectants-in-skincare-guide/",
-      "checked": "2026-08-10",
-      "scope": {
-        "대상": "일반 피부",
-        "분류": "성분 비교",
-        "시기": "전 계절",
-        "지역": "글로벌"
-      },
-      "caution": "이것은 글리세린의 장점이지만, 히알루론산이 우수하지 않다는 의미는 아니다. 두 성분은 분자량·수화 깊이·지속시간이 다르므로 조합 사용이 권장된다.",
-      "cautionSource": "성분 물리화학"
     },
     {
       "id": "glycerin-occlusive-pairing-essential-dry-climates",
