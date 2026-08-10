@@ -1,0 +1,147 @@
+{
+  "topic": "사과식초: 혈당·체중 관리 임상 근거, 치아 부식 위험, 위장 자극, 안전성 한계",
+  "brand": "알약연구소",
+  "article": "사과식초, 혈당과 체중 관리에서의 자리",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "apple-cider-vinegar-blood-glucose-modest-reduction-gastric-emptying",
+      "claim": "사과식초(ACV)의 혈당 감소 효과는 주로 아세트산(acetic acid)이 위의 음식 배출을 지연시켜 식후 혈당 급상승을 완화하는 메커니즘으로 작동하며, RCT에서 공복 혈당이 유의미하게 감소했고(p = 0.01) 8주 후 헤모글로빈 A1C에 유의미한 차이를 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Effect of Apple Cider Vinegar on Glycemic Control - Randomized Controlled Trial",
+      "source_url": "https://www.ijmrhs.com/medical-research/effect-of-apple-cider-vinegar-on-glycemic-control-hyperlipidemia-and-control-on-body-weight-in-type-2-diabetes-patients.pdf",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "제2형 당뇨병 환자",
+        "분류": "혈당 개선",
+        "시기": "8주 단기",
+        "지역": "글로벌"
+      },
+      "caution": "효과는 식사와 함께 복용할 때만 입증되었으며, 장기 효과나 건강한 사람의 예방 효과는 미흡하다.",
+      "cautionSource": "RCT 기준"
+    },
+    {
+      "id": "apple-cider-vinegar-weight-loss-meta-analysis-789-participants",
+      "claim": "사과식초의 체중 감소 효과에 대한 메타분석(10개 RCT, 789명 참가자)에서 매일 섭취 시 체중·BMI·허리둘레가 유의미하게 감소했으나, 절대 감소량은 크지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Effect of Apple Cider Vinegar Intake on Body Composition in Humans with Type 2 Diabetes and/or Overweight: A Systematic Review and Meta-Analysis of Randomized Controlled Trials - NCBI",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12472926/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "당뇨·과체중 성인",
+        "분류": "체중 감소",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "메타분석은 여러 소규모 RCT를 합산한 것이므로, 개별 연구의 질이 높지 않을 수 있다. 또한 효과 크기가 작아 임상적 의의가 제한적이다.",
+      "cautionSource": "메타분석 방법론"
+    },
+    {
+      "id": "apple-cider-vinegar-weight-loss-bmj-retraction-quality-concern",
+      "claim": "BMJ에 발표된 12주 체중 감소 RCT는 양호한 결과를 보였으나, 이후 BMJ Group이 연구의 질적 우려를 이유로 논문을 철회했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Study supporting apple cider vinegar for weight loss retracted - Healio",
+      "source_url": "https://www.healio.com/news/primary-care/20250924/study-supporting-apple-cider-vinegar-for-weight-loss-retracted",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "과체중 성인",
+        "분류": "체중 감소 RCT 철회",
+        "시기": "2025년 철회",
+        "지역": "글로벌"
+      },
+      "caution": "사과식초 체중 감소 근거는 '약한' 수준에 머물러 있으며, 단일 RCT만으로 효과를 주장할 수 없다.",
+      "cautionSource": "BMJ 철회 공지"
+    },
+    {
+      "id": "apple-cider-vinegar-dental-erosion-palatal-surface-tooth-wear",
+      "claim": "사과식초를 매일 섭취하는 것은 치아 에나멜 부식(erosive tooth wear)을 유발할 수 있으며, 특히 위쪽 앞니의 입천장 쪽 표면(palatal surfaces)이 먼저 손상되어 깎인 움푹한 자국(cupped lesions)과 표면질감 소실이 특징적으로 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Unhealthy weight loss. Erosion by apple cider vinegar - PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/23373303/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "매일 사과식초 섭취자",
+        "분류": "치아 부식",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★사과식초를 마실 때는 빨대를 사용하여 치아 접촉을 최소화하고, 섭취 후 입을 헹굴 것이 권장된다.",
+      "cautionSource": "치의학 임상 보고서"
+    },
+    {
+      "id": "apple-cider-vinegar-gastrointestinal-irritation-esophageal-damage",
+      "claim": "사과식초의 산성(pH 약 2.4~3.3)으로 인해 위장 자극, 식도 자극, 심한 경우 식도 손상이 발생할 수 있으며, 특히 소량을 매일 마시는 경우보다는 대량 섭취 시 위험이 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple cider vinegar and your teeth: the dental price – Minvelle; Apple cider vinegar: myths and realities",
+      "source_url": "https://www.minvelle.com/blogs/oral-health/apple-cider-vinegar-and-teeth",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "사과식초 섭취자",
+        "분류": "위장 및 식도 손상",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "역류성 식도염·위궤양·식도암 병력이 있는 사람은 사과식초 섭취를 피해야 한다.",
+      "cautionSource": "의료 안전 기준"
+    },
+    {
+      "id": "apple-cider-vinegar-acid-composition-pH-low-enamel-solubility",
+      "claim": "사과식초의 주요 성분인 아세트산은 pH를 낮춰 치아 에나멜의 미네랄 용해도를 증가시키며, 이것이 치아 부식의 직접적 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Unhealthy weight loss. Erosion by apple cider vinegar",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/23373303/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "사과식초",
+        "분류": "치아 부식 메커니즘",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "산성 음료 일반(레모네이드·스포츠 음료·탄산음료)과 유사한 위험이 있으며, 사과식초가 특별히 안전한 것은 아니다.",
+      "cautionSource": "치의학 문헌"
+    },
+    {
+      "id": "apple-cider-vinegar-medication-interaction-potassium-sparing-diuretic",
+      "claim": "사과식초는 칼륨 보존 이뇨제(spironolactone 등)를 복용하는 사람과 함께 섭취하면 혈중 칼륨을 과도하게 높일 위험이 있으며, 기타 약물(인슐린·당뇨병 약)과의 상호작용도 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple cider vinegar: myths and realities - Bonjour-Santé",
+      "source_url": "https://bonjour-sante.ca/blogue/articles-en/apple-cider-vinegar.html",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "약물 복용자",
+        "분류": "약물 상호작용",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "고혈압약·이뇨제·당뇨병약을 복용 중이면 사과식초 섭취 전 의료 전문가와 상담해야 한다.",
+      "cautionSource": "약학 상호작용 기준"
+    },
+    {
+      "id": "apple-cider-vinegar-no-strong-evidence-large-rct-multiple-risks",
+      "claim": "사과식초는 혈당·체중 감소에 미약한 단기 효과가 있을 수 있으나, 대규모 고품질 RCT가 부족하고 치아 부식·위장 손상·약물 상호작용 등 여러 위험이 있으므로, 건강 증진 목적의 일상 섭취는 권장되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "종합 임상 근거 및 위험 평가",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12472926/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "건강한 성인",
+        "분류": "사과식초 일상 섭취의 득실",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "혈당·체중 감소가 필요하다면 의료 전문가가 권장하는 식이요법·운동·약물 치료를 우선하고, 사과식초는 보조 수단으로만 고려해야 한다.",
+      "cautionSource": "종합 임상 가이드"
+    }
+  ]
+}

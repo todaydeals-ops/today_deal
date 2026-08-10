@@ -47,7 +47,7 @@
       "tier": "확실",
       "evidence": "공식",
       "source": "비타민 B12 - 나무위키",
-      "source_url": "https://namu.wiki/w/%EB%B9%84%ED%83%80%EB%AF%BCB12",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/10552882/",
       "checked": "2026-08-10",
       "scope": {
         "대상": "클로렐라·남조류 제품",
@@ -56,7 +56,8 @@
         "지역": "글로벌"
       },
       "caution": "★클로렐라를 B12 보충 목적으로 선택하면 안 되며, 오히려 B12 흡수를 방해할 수 있다. 비건(완전채식)은 진정한 B12 공급원(보충제·강화 식품)을 찾아야 한다.",
-      "cautionSource": "생화학 기준"
+      "cautionSource": "https://pubmed.ncbi.nlm.nih.gov/10552882/",
+      "note": "출처가 나무위키였던 것을 PubMed 1차 문헌으로 교체(2026-08-10 출처감사). 리서처는 '나무위키 완전 배제'로 보고했으나 실제로는 남아 있었다."
     },
     {
       "id": "spirulina-chlorella-heavy-metal-contamination-risk",

@@ -1,0 +1,133 @@
+{
+  "topic": "비타민E와 셀레늄: SELECT 시험 결과, 상한섭취량, 한국인 섭취 현황, 고용량 위험성",
+  "brand": "알약연구소",
+  "article": "비타민E와 셀레늄, 얼마나 먹는 게 적당할까",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "upper-limit-intake-UL-definition-safety-threshold",
+    "fat-soluble-vitamin-accumulation-toxicity-risk"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "selenium-upper-limit-korea-400-mcg-per-day",
+      "claim": "한국 성인의 셀레늄 상한섭취량(UL)은 400 µg/일로 설정되었으며, 이는 연구 결과 0.85 mg/일의 최대무해용량에 불확실계수 2.0을 적용하여 결정되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "2020 한국인 영양소 섭취기준 - 셀레늄",
+      "source_url": "https://e-jnh.org/DOIx.php?id=10.4163/jnh.2022.55.4.430",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "한국 성인",
+        "분류": "셀레늄 상한섭취량",
+        "시기": "2020 현행",
+        "지역": "KR"
+      },
+      "caution": "일반적인 한국 식단에서는 셀레늄이 충분히 섭취되는 경우가 많으므로, 보충제를 추가하기 전에 음식 섭취를 먼저 확인해야 한다.",
+      "cautionSource": "2020 영양소 섭취기준"
+    },
+    {
+      "id": "select-trial-vitamin-e-selenium-prostate-cancer-ineffective",
+      "claim": "Selenium and Vitamin E Cancer Prevention Trial(SELECT)는 35,533명 참가자를 대상으로 한 대규모 RCT로서, 셀레늄과 비타민 E가 단독 또는 함께 복용했을 때 전립선암을 예방하지 못한다는 결론에 도달했다(2008년).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Effect of Selenium and Vitamin E on Risk of Prostate Cancer and Other Cancers: The Selenium and Vitamin E Cancer Prevention Trial (SELECT) - JAMA",
+      "source_url": "https://jamanetwork.com/journals/jama/fullarticle/183163",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "건강한 남성 (전립선암 예방)",
+        "분류": "암 예방 임상시험",
+        "시기": "2008년 시험 완료",
+        "지역": "글로벌 다국가"
+      },
+      "caution": "이 결과는 '예방'이 목표였으므로, 이미 결핍 상태인 사람에게는 다른 결론이 적용될 수 있다.",
+      "cautionSource": "JAMA 임상 보고서"
+    },
+    {
+      "id": "select-trial-vitamin-e-alone-prostate-cancer-risk-increase-17-percent",
+      "claim": "SELECT 시험에서 비타민 E만 복용한 남성에서 전립선암 발생 위험이 17% 증가했으며, 위험도 차이는 1,000 인년당 1.6건의 추가 전립선암 사례였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Vitamin E and the Risk of Prostate Cancer: The Selenium and Vitamin E Cancer Prevention Trial (SELECT) - JAMA",
+      "source_url": "https://jamanetwork.com/journals/jama/fullarticle/1104493",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "건강한 남성",
+        "분류": "비타민 E 고용량(400 IU/day)의 위험성",
+        "시기": "2008년 시험 결과",
+        "지역": "글로벌"
+      },
+      "caution": "★고용량 비타민 E 장기 복용의 안전성이 의문의 여지가 있으므로, 필요한 경우에만 상한섭취량 범위 내에서 복용해야 한다.",
+      "cautionSource": "SELECT 시험 결과 및 메타분석"
+    },
+    {
+      "id": "select-trial-selenium-high-grade-prostate-cancer-risk-increase",
+      "claim": "SELECT 시험에서 셀레늄 보충제 복용 그룹은 전체 전립선암은 예방하지 못했으나, 고등급 전립선암 발생 위험은 증가하고 제2형 당뇨병 발생률도 높아졌다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Selenium and Prostate Cancer Prevention: Insights from the Selenium and Vitamin E Cancer Prevention Trial (SELECT) - NCBI",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3705339/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "건강한 남성",
+        "분류": "셀레늄 보충제의 예기치 않은 위험",
+        "시기": "2008년 시험 결과",
+        "지역": "글로벌"
+      },
+      "caution": "예방 목적의 셀레늄 고용량 보충은 오히려 특정 위험을 증가시킬 수 있으므로 부주의한 복용을 피해야 한다.",
+      "cautionSource": "SELECT 임상시험 데이터"
+    },
+    {
+      "id": "korea-selenium-intake-adequacy-dietary-shift-recent-years",
+      "claim": "과거에는 한국인의 셀레늄 섭취 부족이 우려되었으나, 최근 사회적으로 육류 섭취와 밀가공식품 및 견과류(브라질너트 등) 섭취가 증가하면서 일반 식단만으로도 상당한 셀레늄 섭취가 가능해진 상태다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "2020 한국인 영양소 섭취기준 - 셀레늄 섭취 현황 분석",
+      "source_url": "https://e-jnh.org/DOIx.php?id=10.4163/jnh.2022.55.4.430",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "한국 성인 일반",
+        "분류": "셀레늄 섭취 현황",
+        "시기": "최근 10년",
+        "지역": "KR"
+      },
+      "caution": "한국인 대다수는 음식에서 충분한 셀레늄을 섭취하고 있을 가능성이 높으므로, 보충제 추가는 상한섭취량 초과 위험을 초래할 수 있다.",
+      "cautionSource": "영양소 섭취기준"
+    },
+    {
+      "id": "vitamin-e-upper-limit-1000-iu-day-iom-toxicity-threshold",
+      "claim": "비타민 E의 상한섭취량은 1,000 IU/day(약 900 mg/day, d-alpha-tocopherol 기준)로 설정되었으며, 이를 초과하는 장기 복용은 출혈 위험과 기타 독성을 초래할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD Manual, Institute of Medicine (IOM) 비타민 E 기준",
+      "source_url": "https://www.msdmanuals.com/ko/home/%EC%98%81%EC%96%91-%EC%9E%A5%EC%95%A0/%EB%B9%84%ED%83%80%EB%AF%BC/%EB%B9%84%ED%83%80%EB%AF%BC-%EA%B0%9C%EC%9A%94",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인",
+        "분류": "비타민 E 상한섭취량",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "SELECT 시험에서 사용한 비타민 E 용량(400 IU/day)도 상한 이하였는데도 발암 위험이 나타났으므로, 예방 목적의 고용량 복용은 더욱 위험하다.",
+      "cautionSource": "영양소 기준 및 임상 시험"
+    },
+    {
+      "id": "select-trial-trial-cost-114-million-lack-of-efficacy",
+      "claim": "SELECT 시험은 미국 NIH가 1억 1,400만 달러를 투자한 대규모 시험이었으나, 예방 효과 부재와 예기치 않은 부작용으로 인해 중단되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SELECT data shows vitamin E increases prostate cancer risk - Fred Hutch",
+      "source_url": "https://www.fredhutch.org/en/news/center-news/2011/11/SELECT-prostate-cancer.html",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "전립선암 예방 연구",
+        "분류": "대규모 임상시험 결과",
+        "시기": "2008년",
+        "지역": "USA"
+      },
+      "caution": "이는 '건강한 예방'을 목표로 한 고용량 보충제의 한계를 보여준다. 결핍 치료와 건강 예방은 다른 기준으로 평가되어야 한다.",
+      "cautionSource": "Fred Hutchinson Cancer Center 보도"
+    }
+  ]
+}

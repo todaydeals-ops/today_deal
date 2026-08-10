@@ -34,6 +34,9 @@ const DENY = [
   { re: /namu\.wiki|namu\.moe/i, why: "나무위키" },
   { re: /blog\.naver|tistory|blogspot|medium\.com|brunch\.co\.kr/i, why: "개인 블로그" },
   { re: /betterwayhealth|seed\.com|thorne|iherb|now-?foods|swansonvitamins|vitacost|gnc\./i, why: "보충제 판매사" },
+  // 영양사·전문가 개인 사이트도 1차 출처가 아니다. B12 결핍처럼 건강 직결 주장이
+  // plantbasedrds.com/blog 같은 곳에서 온 사례가 있었다(2026-08-10).
+  { re: /plantbasedrds|plantnutritionwellness|nutritionfacts\.org|precisionnutrition/i, why: "영양 전문가 개인 사이트" },
   { re: /dsm-firmenich|basf|nutraceuticalbusinessreview|nutraingredients|foodnavigator/i, why: "원료사·업계지" },
   // 주의: 제조사 공식 블로그(kingston.com/blog 등)는 §4 기준 1순위 출처다.
   // "/blog/" 경로만으로 배제하면 오탐이 쏟아진다 — 플랫폼형 블로그만 위에서 걸러낸다.

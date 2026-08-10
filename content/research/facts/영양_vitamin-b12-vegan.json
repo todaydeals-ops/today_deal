@@ -18,7 +18,12 @@
       "source": "NCBI Bookshelf: Physiology, Gastric Intrinsic Factor (StatPearls)",
       "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK441923/",
       "checked": "2026-08-10",
-      "scope": {"대상": "B12 흡수", "분류": "생화학 기전", "시기": "식후 수시간", "지역": "소장"},
+      "scope": {
+        "대상": "B12 흡수",
+        "분류": "생화학 기전",
+        "시기": "식후 수시간",
+        "지역": "소장"
+      },
       "caution": "내재인자 부족(악성빈혈, 위절제) 또는 소장 질환이 있으면 음식 B12도 흡수되지 않으므로 주사 또는 고용량 경구 보충 필요.",
       "cautionSource": "임상진료지침"
     },
@@ -30,7 +35,12 @@
       "source": "Vegan Society 자료집: What every vegan should know about vitamin B12",
       "source_url": "https://www.vegansociety.com/resources/nutrition-and-health/nutrients/vitamin-b12/what-every-vegan-should-know-about-vitamin-b12",
       "checked": "2026-08-10",
-      "scope": {"대상": "채식인", "분류": "신뢰할 만한 식품 출처", "시기": "현행", "지역": "글로벌"},
+      "scope": {
+        "대상": "채식인",
+        "분류": "신뢰할 만한 식품 출처",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
       "caution": "강화식품을 선택할 때 라벨의 B12 함량과 흡수율(예: 경구 보충제는 약 50% 흡수율)을 고려해야 함.",
       "cautionSource": "영양학 기준"
     },
@@ -40,23 +50,35 @@
       "tier": "확실",
       "evidence": "공식",
       "source": "식물 기반 영양 전문 자료",
-      "source_url": "https://plantbasedrds.com/blog/b12-vegan-sources/",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/10552882/",
       "checked": "2026-08-10",
-      "scope": {"대상": "스피룰리나", "분류": "B12 생물이용률", "시기": "현행", "지역": "글로벌"},
+      "scope": {
+        "대상": "스피룰리나",
+        "분류": "B12 생물이용률",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
       "caution": "스피룰리나를 B12 '출처'로 광고하는 제품·블로그는 기만적이다. 절대 신뢰할 수 없다.",
-      "cautionSource": "바이오이용률 데이터"
+      "cautionSource": "https://pubmed.ncbi.nlm.nih.gov/10552882/",
+      "note": "출처가 영양사 블로그(plantbasedrds.com)였던 것을 PubMed 1차 문헌으로 교체(2026-08-10 출처감사). 결핍과 직결되는 주장이라 블로그 출처를 허용하지 않는다."
     },
     {
       "id": "fermented-plant-foods-tempeh-kimchi-b12-analog-interfere",
       "claim": "템페, 김치, 사우어크라우트, 콤부차 같은 발효 식품은 미량의 B12만 함유하며, 이들이 포함한 B12 유사물질(B12 아날로그)은 인체 대사에서 실제 B12와 경쟁하여 흡수를 방해할 수 있다.",
-      "tier": "확실",
+      "tier": "논쟁",
       "evidence": "공식",
       "source": "Plant Based Nutrition Wellness: Vitamin B12 Sources, Absorption, Supplements & Deficiency",
-      "source_url": "https://www.plantnutritionwellness.com/vegan-vitamin-b12-sources-absorption-supplements-and-deficiency/",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/12656203/",
       "checked": "2026-08-10",
-      "scope": {"대상": "발효식품", "분류": "B12 효율", "시기": "현행", "지역": "글로벌"},
+      "scope": {
+        "대상": "발효식품",
+        "분류": "B12 효율",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
       "caution": "발효식품의 B12 '함유'를 선전하는 자료는 미량이고 바이오이용률이 낮다는 점을 외면한다.",
-      "cautionSource": "생물이용률 해석"
+      "cautionSource": "https://pubmed.ncbi.nlm.nih.gov/12656203/",
+      "note": "출처가 개인 블로그(plantnutritionwellness.com)였다. 발효식품의 B12 아날로그가 흡수를 '방해'한다는 부분은 1차 문헌으로 확인하지 못해 등급을 논쟁으로 내린다. 아날로그 함유 자체는 조류 연구로 뒷받침된다."
     },
     {
       "id": "b12-fortified-food-spacing-optimal-absorption-4-hours",
@@ -66,7 +88,12 @@
       "source": "Vegan Society + 영양학 기준",
       "source_url": "https://www.vegansociety.com/resources/nutrition-and-health/nutrients/vitamin-b12/what-every-vegan-should-know-about-vitamin-b12",
       "checked": "2026-08-10",
-      "scope": {"대상": "채식인", "분류": "복용 타이밍", "시기": "일일", "지역": "글로벌"},
+      "scope": {
+        "대상": "채식인",
+        "분류": "복용 타이밍",
+        "시기": "일일",
+        "지역": "글로벌"
+      },
       "caution": "매일 일정 시간 간격으로 섭취해야 하므로, 불규칙한 식생활을 하는 사람은 보충제가 더 실용적.",
       "cautionSource": "흡수 생리"
     },
@@ -78,7 +105,12 @@
       "source": "NIH ODS: Vitamin B12 (수정 2024)",
       "source_url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
       "checked": "2026-08-10",
-      "scope": {"대상": "성인 채식인", "분류": "권장량 및 전략", "시기": "현행", "지역": "글로벌"},
+      "scope": {
+        "대상": "성인 채식인",
+        "분류": "권장량 및 전략",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
       "caution": "권장량은 음식에서의 흡수율(60%)을 기반으로 하므로, 강화식품의 흡수율이 변할 수 있다는 점을 고려해야 함.",
       "cautionSource": "영양 권장 기준"
     },
@@ -90,7 +122,12 @@
       "source": "NCBI/PMC: Vitamin B12 deficiency: testing and treatment",
       "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13095491/",
       "checked": "2026-08-10",
-      "scope": {"대상": "B12 보충제", "분류": "제제 선택", "시기": "현행", "지역": "글로벌"},
+      "scope": {
+        "대상": "B12 보충제",
+        "분류": "제제 선택",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
       "caution": "활성형 메틸코발라민은 더 비싼 경우가 많으나, 건강한 채식인에게 시아노코발라민보다 뚜렷한 임상 이점이 입증되지 않았다.",
       "cautionSource": "비용-효과 분석"
     },
@@ -102,7 +139,12 @@
       "source": "NCBI/PMC + 임상진료지침",
       "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13095491/",
       "checked": "2026-08-10",
-      "scope": {"대상": "채식인", "분류": "결핍 증상·모니터링", "시기": "현행", "지역": "글로벌"},
+      "scope": {
+        "대상": "채식인",
+        "분류": "결핍 증상·모니터링",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
       "caution": "신경 증상이 오래되면 회복이 어려울 수 있으므로, 조기 진단과 치료가 중요.",
       "cautionSource": "신경학 기준"
     }
