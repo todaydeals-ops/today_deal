@@ -20,11 +20,11 @@ export const PILL_CATEGORIES: PillCategory[] = [
   },
   {
     key: "vital", label: "피로·간", en: "VITAL", color: "#3f6a8a", angle: "만성피로와 간",
-    slugs: ["coq10-energy","red-ginseng-ginsenoside","nmn-nad-antiaging","vitamin-b-complex-fatigue","milk-thistle-liver","adrenal-fatigue-myth","arginine-citrulline","taurine-fatigue","vitamin-b12-vegan","creatine-safety","bcaa-eaa","apple-cider-vinegar"],
+    slugs: ["coq10-energy","red-ginseng-ginsenoside","nmn-nad-antiaging","vitamin-b-complex-fatigue","milk-thistle-liver","adrenal-fatigue-myth","arginine-citrulline","taurine-fatigue","vitamin-b12-vegan","creatine-safety","bcaa-eaa","apple-cider-vinegar","student-brain-supplement","maca-energy-libido","glutathione-whitening","chronic-fatigue-supplement"],
   },
   {
     key: "shield", label: "면역·장", en: "SHIELD", color: "#5a7a6a", angle: "면역력과 장 건강",
-    slugs: ["probiotics-strain-guide","propolis-throat","gut-leaky-gut-claim","beta-glucan-immune","melatonin-vs-sleep-supplement","zinc-immune","multivitamin-worth-it","prebiotics-synbiotics","postbiotics-trend","antibiotics-probiotic-timing","nac-antioxidant","elderberry-cold","lactoferrin-trend","spirulina-chlorella","vitamin-e-selenium"],
+    slugs: ["probiotics-strain-guide","propolis-throat","gut-leaky-gut-claim","beta-glucan-immune","melatonin-vs-sleep-supplement","zinc-immune","multivitamin-worth-it","prebiotics-synbiotics","postbiotics-trend","antibiotics-probiotic-timing","nac-antioxidant","elderberry-cold","lactoferrin-trend","spirulina-chlorella","vitamin-e-selenium","pet-owner-supplement-caution","immune-supplement-overhype"],
   },
   {
     key: "flow", label: "혈관·심장", en: "FLOW", color: "#9a5a5a", angle: "혈행과 콜레스테롤",
@@ -33,11 +33,11 @@ export const PILL_CATEGORIES: PillCategory[] = [
   {
     key: "basics", label: "기초·가이드", en: "BASICS", color: "#6a6a7a", angle: "복용법과 라벨 읽는 법",
     // 성분별이 아니라 전 성분에 공통으로 걸리는 가이드. 어느 성분 분류에도 안 맞아 따로 뺐다.
-    slugs: ["supplement-timing-guide","supplement-drug-interaction","supplement-stacking-limit","functional-vs-general-food","individual-approval-ingredient","supplement-label-reading","supplement-clinical-reading","supplement-dosage-form","overseas-direct-supplement","supplement-side-effect-report","supplement-vs-food"],
+    slugs: ["supplement-timing-guide","supplement-drug-interaction","supplement-stacking-limit","functional-vs-general-food","individual-approval-ingredient","supplement-label-reading","supplement-clinical-reading","supplement-dosage-form","overseas-direct-supplement","supplement-side-effect-report","supplement-vs-food","supplement-subscription-trend"],
   },
   {
     key: "care", label: "여성·남성", en: "CARE", color: "#9a5a7a", angle: "성별 맞춤 영양",
-    slugs: ["iron-supplement-anemia","folate-pregnancy","soy-isoflavone-menopause","saw-palmetto-prostate","cranberry-uti","evening-primrose-gla","biotin-hair-nail","senior-supplement-guide","pregnancy-supplement-guide","female-pms-supplement","male-fertility-supplement","kids-immune-supplement","iodine-thyroid"],
+    slugs: ["iron-supplement-anemia","folate-pregnancy","soy-isoflavone-menopause","saw-palmetto-prostate","cranberry-uti","evening-primrose-gla","biotin-hair-nail","senior-supplement-guide","pregnancy-supplement-guide","female-pms-supplement","male-fertility-supplement","kids-immune-supplement","iodine-thyroid","kids-growth-supplement","inner-beauty-skin"],
   },
 ];
 
