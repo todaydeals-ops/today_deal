@@ -57,8 +57,7 @@
       },
       "outro": "필터 구매 전에 제품 본체 라벨의 모델명을 정확히 확인하고, 제조사 공식 부품을 구매하세요. 호환 필터를 썼다가 성능 저하나 곰팡이 번식으로 이어질 수 있습니다.",
       "sources": [
-        { "label": "[공식] 위닉스 필터 관리 가이드", "url": "https://www.winix.com/customer/filter" },
-        { "label": "[공식] 일반 가습기 필터 관리", "url": "https://kr.bluesky-filter.com/%EA%B0%80%EC%8A%B5%EA%B8%B0-%ED%95%84%ED%84%B0%EB%8A%94-%EC%96%BC%EB%A7%88%EB%82%98-%EC%9E%90%EC%A3%BC-%EA%B5%90%EC%B2%B4%ED%95%B4%EC%95%BC-%ED%95%98%EB%82%98%EC%9A%94%3F-id47033167.html" }
+        { "label": "[공식] 위닉스 필터 관리 가이드", "url": "https://www.winix.com/customer/filter" }
       ]
     },
     {
@@ -77,7 +76,7 @@
       },
       "outro": "신축성 있는 천(니트, 스판덱스)이나 투명한 나이론실을 쓸 때는 볼펜바늘이나 니트바늘로 바꿔야 합니다. 바늘이 휘었거나 끝이 뭉뭉해 보이면 새 바늘로 교체하고 다시 시작하세요.",
       "sources": [
-        { "label": "[공식] 재봉용품 제조사 가이드", "url": "https://ko.actince.com/%EC%9E%AC%EB%B4%89%ED%8B%80-%EB%B0%94%EB%8A%98%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EC%95%BC-%ED%95%A0-%EB%AA%A8%EB%93%A0-%EA%B2%83/" }
+        { "label": "[공식] Brother 재봉틀 지원", "url": "https://support.brother.com/g/b/productsearch.aspx?c=kr&lang=ko&content=ml" }
       ]
     }
   ]

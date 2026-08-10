@@ -61,6 +61,29 @@ const file = process.argv[2];
 if (!file) { console.error("패치 JSON 경로 필요"); process.exit(1); }
 const patches = (JSON.parse(fs.readFileSync(file, "utf8")).patches) ?? [];
 
+// ── 적재 전 게이트 ──
+// 출처 없는 표가 그대로 통과한 사고가 있었다(2026-08-10 주방가전 배치).
+// 존재하지 않는 브랜드("보어드뮤쉘레"), 없는 제품("LG 정수기형 그릴"),
+// 해로운 조언("그라인더 날에 올리브유")이 11개 표 중 7개에 출처 0으로 들어왔다.
+// 에러코드·모델 정보는 틀리면 독자가 헛수고한다. 기계로 막는다.
+const OFFICIAL = /samsungsvc|samsung\.com|lge?\.co\.kr|lg\.com|winix|coway|chungho|skmagic|cuckoo|cuchen|rinnai|kdnavien|kyungdong|philips|tefal|delonghi|dyson|iptime|efm|asus|tp-link|netgear|kt\.com|skbroadband|lguplus|\.go\.kr|\.or\.kr/i;
+const bad = [];
+for (const p of patches) {
+  const src = (p.sources || []).filter((s) => s && s.url);
+  if (!src.length) { bad.push(`${p.slug}: 출처 0`); continue; }
+  if (!src.some((s) => OFFICIAL.test(s.url))) bad.push(`${p.slug}: 제조사·공공 공식 출처 없음(${src.map((s) => s.url).join(", ").slice(0, 60)})`);
+  const flat = JSON.stringify(p);
+  if (flat.includes("—")) bad.push(`${p.slug}: em-dash 혼입`);
+  if (/[一-鿿぀-ヿ]/.test(flat)) bad.push(`${p.slug}: 한자·일본어 혼입`);
+  if ((p.table?.rows || []).length < 3) bad.push(`${p.slug}: 표 ${(p.table?.rows || []).length}행(3행 미만)`);
+}
+if (bad.length) {
+  console.error("✖ 적재 거부. 아래를 고쳐라.\n");
+  for (const b of bad) console.error("   " + b);
+  console.error("\n출처 없는 표는 적용하지 않는다. 확인 못 한 항목은 표에서 빼라.");
+  process.exit(1);
+}
+
 let done = 0, skip = 0, fail = 0;
 for (const p of patches) {
   const r = await fetch(`${SUPA}/rest/v1/magazine?slug=eq.${encodeURIComponent(p.slug)}&select=slug,body_html`, { headers: H });
