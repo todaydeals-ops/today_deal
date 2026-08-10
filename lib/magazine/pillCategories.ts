@@ -28,7 +28,7 @@ export const PILL_CATEGORIES: PillCategory[] = [
   },
   {
     key: "flow", label: "혈관·심장", en: "FLOW", color: "#9a5a5a", angle: "혈행과 콜레스테롤",
-    slugs: ["policosanol-hdl","berberine-blood-sugar","omega3-form-rtg-ee","ginkgo-circulation","nattokinase-blood-clot","red-yeast-rice-cholesterol","blood-pressure-supplement","homocysteine-b-vitamins","coq10-heart-failure"],
+    slugs: ["policosanol-hdl","berberine-blood-sugar","omega3-form-rtg-ee","ginkgo-circulation","nattokinase-blood-clot","red-yeast-rice-cholesterol","blood-pressure-supplement","homocysteine-b-vitamins","coq10-heart-failure","circulation-supplement-warning","varicose-vein-supplement"],
   },
   {
     key: "basics", label: "기초·가이드", en: "BASICS", color: "#6a6a7a", angle: "복용법과 라벨 읽는 법",
