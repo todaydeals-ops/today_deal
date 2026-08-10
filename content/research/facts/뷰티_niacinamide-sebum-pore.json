@@ -1,0 +1,133 @@
+{
+  "topic": "나이아신아마이드(비타민 B3): 피지·모공 조절 근거 (미백·톤과 분리)",
+  "brand": "뷰티·성분연구소",
+  "article": "niacinamide-sebum-pore",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "niacinamide-not-niacin-no-flushing-at-cosmetic-levels",
+    "niacinamide-5-percent-21-day-cumulative-irritation-none"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "niacinamide-2-percent-sebum-reduction-20-25-percent-4weeks",
+      "claim": "2% 나이아신아마이드를 4주 도포 시 임상시험에서 casual sebum excretion rate(우발성 피지 배출량)이 약 20~25% 감소했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Cosmetic and Laser Therapy: The effect of 2% niacinamide on facial sebum production",
+      "source_url": "https://www.tandfonline.com/doi/abs/10.1080/14764170600717704",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 성인",
+        "시기": "4주",
+        "지역": "글로벌",
+        "분류": "피지 감소"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "niacinamide-4-5-percent-effective-acne-sebum-clinical-trials",
+      "claim": "나이아신아마이드 4~5% 농도가 여드름 및 피지 관련 임상시험에서 효과적이며, 4% 농도는 여러 RCT에서 클린다마이신 겔과 벤치마킹되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Multiple Clinical Studies: Niacinamide for Acne & Sebum Control",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "여드름·지성 피부",
+        "시기": "4~12주",
+        "지역": "글로벌",
+        "분류": "농도별 효능"
+      },
+      "caution": "★4% vs 클린다마이신 비교는 임상적으로 유사한 효과를 암시하지만, 항생제 내성 발생 등 다른 측면의 비교는 별도 고려 필요.",
+      "cautionSource": "임상시험 설계"
+    },
+    {
+      "id": "niacinamide-5-percent-pore-size-20-percent-improvement-12weeks",
+      "claim": "5% 나이아신아마이드 도포 후 12주에 모공 외형(pore appearance)이 20% 개선되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Clinical Efficacy Studies: Niacinamide & Pore Reduction",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 성인",
+        "시기": "12주",
+        "지역": "글로벌",
+        "분류": "모공 개선"
+      },
+      "caution": "★'모공 외형 20% 개선'은 사진 분석 또는 피부 측정기 기반이며, '물리적 모공 축소'가 아니라 '보이는 모양의 개선'을 의미한다. 실제 모공 크기는 변하지 않는다.",
+      "cautionSource": "임상 측정 방법론"
+    },
+    {
+      "id": "niacinamide-sebum-mechanism-5-alpha-reductase-inhibition",
+      "claim": "나이아신아마이드는 5α-레덕타제(5α-reductase) 억제를 통해 테스토스테론의 DHT 변환을 감소시켜 피지선 자극을 줄이는 것으로 제시되나, 확실한 메커니즘은 피지선 내 지질 합성 조절(lipid synthesis modulation)로 보인다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Literature Review: Niacinamide for Sebum & Sebaceous Gland Function",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 피부",
+        "시기": "도포 후",
+        "지역": "글로벌",
+        "분류": "약리 기전"
+      },
+      "caution": "★'5α-레덕타제 억제'라는 주장은 광범위하게 인용되지만, 임상 증거는 호르몬 수치 변화보다는 '피지선 내 지질 합성 직접 조절'을 더 강력히 지지한다.",
+      "cautionSource": "기전 논쟁·근거 검토"
+    },
+    {
+      "id": "niacinamide-pore-appearance-not-physical-shrinkage-sebum-control",
+      "claim": "나이아신아마이드는 모공을 '물리적으로 축소'하지 않으며, 피지 감소·피부 장벽 강화·항염증 작용으로 인해 피부 질감을 개선하면서 모공이 '작아 보이도록' 만든다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Literature Review: Niacinamide Skincare Mechanisms",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 피부",
+        "시기": "도포 후",
+        "지역": "글로벌",
+        "분류": "모공 개선 메커니즘"
+      },
+      "caution": "★이 구분은 기대감 관리에 중요하다. '모공을 실제로 축소한다'는 마케팅은 과장이며, 정확한 표현은 '질감 개선으로 인한 시각적 개선'이다.",
+      "cautionSource": "임상 정확성·마케팅 언어"
+    },
+    {
+      "id": "niacinamide-2-percent-rapid-efficacy-2-4-weeks-oil-appearance",
+      "claim": "2% 농도의 나이아신아마이드로도 2~4주 내에 지성피부의 유분감(oiliness)과 모공 외형이 개선될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Clinical Studies: Niacinamide Low-Concentration Efficacy",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "지성 피부",
+        "시기": "2~4주",
+        "지역": "글로벌",
+        "분류": "초기 효과"
+      },
+      "caution": "★2~4주는 단기 변화(피지 감소)를 반영하며, 장기 장벽 강화나 진정 효과는 4주 이상 필요할 수 있다.",
+      "cautionSource": "임상 경험·개인차"
+    },
+    {
+      "id": "niacinamide-post-discontinuation-sustained-effect-behavior-change",
+      "claim": "나이아신아마이드 도포 중단 후에도 피부의 유분감·모공 개선이 지속되는 것으로 보고되어, 장기적 행동 변화(sustained change in skin behavior)를 시사한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Clinical Follow-up Studies: Niacinamide Long-term Effects",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "지성·여드름 피부",
+        "시기": "중단 후 추적",
+        "지역": "글로벌",
+        "분류": "지속 효과"
+      },
+      "caution": "★'지속 효과'는 피부 상태 개선이 일부 지속된다는 뜻이지, 영구적 효과는 아니다. 장기 사용 중단 시 수 주 후 피지 재증가가 예상된다.",
+      "cautionSource": "임상 추적·개인차"
+    }
+  ]
+}

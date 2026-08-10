@@ -1,0 +1,113 @@
+{
+  "topic": "카페인과 모낭: 국소 도포 효과의 체외 연구와 임상 거리",
+  "brand": "성분연구소",
+  "article": "뷰티_caffeine-hair-follicle",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "caffeine-antagonize-testosterone-hair-follicle-in-vitro-0-0001-0-005-percent",
+      "claim": "체외 모낭 기관 배양(hair organ culture) 모델에서 카페인 0.0001%와 0.005% 농도는 5 μg/ml 테스토스테론의 안드로겐성 탈모(AGA) 억제 효과를 중화시켰다. 즉, 카페인이 테스토스테론의 모낭 억제 작용에 길항했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Effect of caffeine and testosterone on the proliferation of human hair follicles in vitro",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/17214716/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "남성형 탈모 환자 두피 생검 모낭",
+        "분류": "체외(in vitro) 약리",
+        "시기": "배양 중",
+        "지역": "글로벌"
+      },
+      "caution": "★이는 체외 연구(실험실 세포 배양)이며, 사람 두피에서 같은 농도와 효과를 기대할 수 없다.",
+      "cautionSource": "연구 방법론 한계"
+    },
+    {
+      "id": "caffeine-hair-shaft-elongation-in-vitro-ki67-immunohistochemistry-p-0-001",
+      "claim": "카페인만 단독 처리한 모낭은 대조 배지 대비 현저한 모발 신장(hair shaft elongation)을 보였으며, Ki-67 면역조직화학으로 확인한 세포 증식도 통계적으로 유의미했다(P < 0.001).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Effect of caffeine and testosterone on the proliferation of human hair follicles in vitro",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/17214716/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "남성형 탈모 모낭 기관 배양",
+        "분류": "세포 성장 지표",
+        "시기": "배양 중",
+        "지역": "글로벌"
+      },
+      "caution": "★P < 0.001은 통계적 유의성이지, 임상적 의미와는 다르다. 체외 모낭이 사람 두피에서 같은 반응을 보인다는 보장은 없다.",
+      "cautionSource": "통계 vs 임상 의미 구분"
+    },
+    {
+      "id": "caffeine-clinical-evidence-human-limited-combination-products-predominant",
+      "claim": "카페인의 임상(in vivo, 인체) 증거는 제한적이다. 대부분의 발표된 연구가 카페인을 다른 활성 성분과 병용한 제품 평가로, 순수 카페인 단독 효과의 잘 설계된 임상 시험은 많지 않다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Dermatology and Dermatologic Surgery: Therapeutic Use of Caffeine in Dermatology - A Literature Review",
+      "source_url": "https://journals.lww.com/jdds/fulltext/2020/24010/therapeutic_use_of_caffeine_in_dermatology__a.4.aspx",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "카페인 제품 및 임상 연구",
+        "분류": "증거 수준",
+        "시기": "기존 문헌",
+        "지역": "글로벌"
+      },
+      "caution": "★문헌 검토에서 지적: 카페인이 주도적 역할인지, 아니면 병용 성분이 실제 효과를 내는지 판별하기 어렵다.",
+      "cautionSource": "근거 평가"
+    },
+    {
+      "id": "caffeine-hair-loss-reduction-reported-across-studies-minimal-adverse-events",
+      "claim": "여러 연구에서 국소 카페인은 모발 성장 증가 또는 탈모 감소를 보였으며, 보고된 부작용은 최소였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Dermatology and Dermatologic Surgery: Therapeutic Use of Caffeine in Dermatology - A Literature Review",
+      "source_url": "https://journals.lww.com/jdds/fulltext/2020/24010/therapeutic_use_of_caffeine_in_dermatology__a.4.aspx",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "탈모 환자 피험자",
+        "분류": "임상 결과",
+        "시기": "여러 연구 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★'모든 연구'가 긍정이 아니며, 메타분석 또는 체계적 리뷰로 통합 평가가 필요하다. 개별 연구마다 설계·대상·기간이 다르다.",
+      "cautionSource": "문헌 이질성"
+    },
+    {
+      "id": "caffeine-androgenetic-alopecia-dht-mechanism-proposed-but-not-definitively-proven-in-human",
+      "claim": "카페인이 안드로겐성 탈모의 주요 원인인 DHT(dihydrotestosterone)를 감소시킨다는 기전이 체외 연구에서 제안되었으나, 사람 두피에서 이를 입증한 임상 데이터는 제한적이다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PubMed, Journal of Dermatology and Dermatologic Surgery",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/17214716/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "안드로겐성 탈모 환자",
+        "분류": "기전 가설",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★체외 연구의 메커니즘이 반드시 인체 두피에서 재현되는 것은 아니다. 특히 두피의 혈류, 피부 배리어, 호르몬 환경이 모두 다르다.",
+      "cautionSource": "체외→임상 전환의 한계"
+    },
+    {
+      "id": "caffeine-concentration-pharmacologically-relevant-topical-delivery-challenge",
+      "claim": "체외에서 효과를 본 카페인 농도(0.0001~0.005%)가 상업용 제품에서 실제로 달성되는지, 그리고 그 농도가 피부 투과 후 모낭에 도달하는지는 확인되지 않았다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "PubMed, 상업 제품 정보 미공개",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "카페인 제품",
+        "분류": "제형 검증",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★핵심 공백: 실험실 효과(in vitro)에서 임상 효과(in vivo)로의 전환 과정이 명확하지 않다.",
+      "cautionSource": "약동학 데이터 부재"
+    }
+  ]
+}

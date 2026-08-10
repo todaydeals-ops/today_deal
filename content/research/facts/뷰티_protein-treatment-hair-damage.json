@@ -1,0 +1,147 @@
+{
+  "topic": "단백질 트리트먼트와 손상모: 복구 기전과 한계(과잉 사용의 위험)",
+  "brand": "성분연구소",
+  "article": "뷰티_protein-treatment-hair-damage",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "hair-damage-disulfide-bond-disruption-keratin-network-loss-mechanical-strength",
+      "claim": "모발 구조 손상의 분자적 근거는 사이스테인(cysteine) 잔기 사이의 이황화 결합(disulfide bond) 파괴이며, 이는 케라틴 네트워크의 공유 가교결합과 기계적 안정성을 잃게 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC: Enzymatic Crosslinking of Amino Acids Improves the Repair Effect of Keratin on Hair Fibre",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10180764/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "손상 모발",
+        "분류": "구조 생화학",
+        "시기": "손상 후",
+        "지역": "글로벌"
+      },
+      "caution": "★손상의 원인(열, 화학, 기계적)에 따라 이황화 결합 복구의 가능성이 다르다.",
+      "cautionSource": "손상 유형별 복구 가능성"
+    },
+    {
+      "id": "small-molecular-weight-peptide-permeability-lipid-layer-penetration-hair-interior",
+      "claim": "저분자 단백질과 펩타이드는 높은 침투성을 가지고 있어, 모발 표면의 지질층을 통과하여 모발 내부에 도달할 수 있으며, 이를 통해 내부 화학 결합의 재배열(rearrangement)이 가능해진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC: Enzymatic Crosslinking of Amino Acids Improves the Repair Effect of Keratin on Hair Fibre",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10180764/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "펩타이드 함유 트리트먼트",
+        "분류": "약물 동력학",
+        "시기": "적용 중",
+        "지역": "글로벌"
+      },
+      "caution": "★침투성은 펩타이드의 크기, 제형, 적용 시간에 따라 크게 달라진다.",
+      "cautionSource": "제형 변수"
+    },
+    {
+      "id": "transglutaminase-keratin-crosslinking-disulfide-bond-rearrangement-mechanism",
+      "claim": "트랜스글루타미나제(transglutaminase, TGase)는 세린(serine) 및 가수분해 양모 케라틴(hydrolysed wool keratin)의 가교결합을 촉진하며, 이는 모발 단백질의 아마이드 결합(amide bond)을 증가시키고 결합 상호작용력을 강화하여 모발 강도를 높인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC: Enzymatic Crosslinking of Amino Acids Improves the Repair Effect of Keratin on Hair Fibre",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10180764/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "손상 모발",
+        "분류": "효소적 복구 기전",
+        "시기": "트리트먼트 중",
+        "지역": "글로벌"
+      },
+      "caution": "★이것은 체외 연구이며, 두피의 온도·습도·산도·미생물군이 효소 활성에 영향을 줄 수 있다.",
+      "cautionSource": "체외→임상의 거리"
+    },
+    {
+      "id": "protein-treatment-alkali-solubility-decrease-50-percent-damaged-hair",
+      "claim": "손상 모발 샘플에 단백질 트리트먼트를 적용하면 알카리 용해성이 50.53% 감소하였으며, 이는 단백질 교차결합이 모발 구조를 더욱 단단히 묶음을 의미한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC: Enzymatic Crosslinking of Amino Acids Improves the Repair Effect of Keratin on Hair Fibre",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10180764/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화학 손상 모발",
+        "분류": "물리적 변화",
+        "시기": "트리트먼트 후",
+        "지역": "글로벌"
+      },
+      "caution": "★알카리 용해성 감소는 구조 강화를 의미하지만, 동시에 경화(hardening)의 위험도 있다.",
+      "cautionSource": "긍정과 부작용의 양면"
+    },
+    {
+      "id": "protein-treatment-fracture-stress-significant-increase-tensile-strength-elasticity",
+      "claim": "프로테인 트리트먼트는 손상 모발의 파열 응력(fracture stress)을 현저히 증가시켰으며, 인장강도(tensile strength)와 탄성력(elasticity)이 복구되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC: Novel Compounds for Hair Repair - Chemical Characterization and In Vitro Analysis of Thiol Cross-Linking Agents",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12115070/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "손상 모발",
+        "분류": "물리적 특성 복구",
+        "시기": "트리트먼트 후",
+        "지역": "글로벌"
+      },
+      "caution": "★이는 모발 샘플 검사이며, 실제 모발에서의 임상 지속성(5회 세정 후)은 별개다.",
+      "cautionSource": "실험실 vs 실제 사용"
+    },
+    {
+      "id": "protein-treatment-efficacy-persist-5-washing-cycles",
+      "claim": "프로테인 트리트먼트의 복구 효과는 5회 세정 후에도 여전히 두드러졌으며, 이는 효소적 교차결합이 비교적 지속성 있음을 시사한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC: Enzymatic Crosslinking of Amino Acids Improves the Repair Effect of Keratin on Hair Fibre",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10180764/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "프로테인 트리트먼트 모발",
+        "분류": "지속성",
+        "시기": "5회 세정",
+        "지역": "글로벌"
+      },
+      "caution": "★'5회 세정'은 약 2~3주 사용에 해당한다. 더 이상의 지속성은 검증되지 않았다.",
+      "cautionSource": "추적 기간 한계"
+    },
+    {
+      "id": "hair-crystallinity-increase-protein-treatment-structural-order-enhancement",
+      "claim": "프로테인 트리트먼트는 손상 모발의 결정성(crystallinity)을 증가시켰으며, 이는 모발 단백질의 구조 질서(structural order) 회복을 의미한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC: Enzymatic Crosslinking of Amino Acids Improves the Repair Effect of Keratin on Hair Fibre",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10180764/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "손상 모발",
+        "분류": "구조 특성",
+        "시기": "트리트먼트 후",
+        "지역": "글로벌"
+      },
+      "caution": "★결정성 증가는 경화로도 나타날 수 있다. 현미경 또는 탄성 측정이 필수다.",
+      "cautionSource": "구조적 변화의 양면성"
+    },
+    {
+      "id": "protein-overuse-excessive-crosslinking-risk-brittleness",
+      "claim": "프로테인 트리트먼트의 과다 사용 또는 과도한 농도는 이황화 결합·아마이드 결합의 과잉 교차결합을 초래할 수 있으며, 이는 모발 경화와 취약성 증가를 야기할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "모발 생화학 및 트리트먼트 과다 사용 임상 관찰",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "고농도 또는 빈번한 프로테인 트리트먼트 사용자",
+        "분류": "부작용 위험",
+        "시기": "장기 사용",
+        "지역": "글로벌"
+      },
+      "caution": "★과도한 교차결합은 복구를 넘어 손상을 가한다. 모발의 '너무 강하면 깨진다(brittleness)' 원칙.",
+      "cautionSource": "과잉 치료의 위험"
+    }
+  ]
+}

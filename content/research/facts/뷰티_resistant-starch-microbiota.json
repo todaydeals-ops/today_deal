@@ -1,0 +1,164 @@
+{
+  "topic": "저항성 전분과 장내 미생물: 단쇄 지방산 생성과 대사 영향",
+  "brand": "성분연구소",
+  "article": "뷰티_resistant-starch-microbiota",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "resistant-starch-definition-small-intestine-colon-fermentation",
+      "claim": "저항성 전분(resistant starch)은 소장에서 소화를 피하고 대장으로 진입하여 박테리아 발효를 거치는 탄수화물이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Frontiers in Nutrition: The gastrointestinal and microbiome impact of resistant starch",
+      "source_url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2022.987216/full",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반인",
+        "분류": "정의",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "resistant-starch-bacterial-families-prevotellaceae-ruminococcaceae-bacteroidaceae-fermentation",
+      "claim": "저항성 전분을 발효할 수 있는 박테리아 가족은 Prevotellaceae, Ruminococcaceae, Bacteroidaceae이며, 이들의 혐기 발효는 단쇄 지방산(SCFA)을 생성한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Frontiers in Nutrition: The gastrointestinal and microbiome impact of resistant starch",
+      "source_url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2022.987216/full",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반인",
+        "분류": "미생물 기전",
+        "시기": "섭취 후",
+        "지역": "글로벌"
+      },
+      "caution": "★개인의 미생물군 조성에 따라 SCFA 생성량과 비율이 크게 달라질 수 있다.",
+      "cautionSource": "개인차 큼"
+    },
+    {
+      "id": "scfa-production-acetate-propionate-butyrate-metabolic-effects",
+      "claim": "저항성 전분의 발효로 생성되는 단쇄 지방산(SCFA)은 아세트산(acetate), 프로피온산(propionate), 부티르산(butyrate) 3종이며, 이들은 장 건강과 전신 대사에 깊은 생리적 영향을 미친다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC: Resistant Starch And Short-Chain Fatty Acids - A Comprehensive Review",
+      "source_url": "https://globalrph.com/2026/01/resistant-starch-and-short-chain-fatty-acids-a-comprehensive-review-of-physiologic-mechanisms/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반인",
+        "분류": "생화학",
+        "시기": "발효 후",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "resistant-starch-potato-butyrate-increase-21-percent-30days",
+      "claim": "저항성 감자 전분 섭취 후 30일 후 대변 부티르산이 21.1% 증가했으며, 소화 불편감(소화불량, 복부팽만감)도 다른 군 대비 더 많이 개선되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "medRxiv: Clinical Study on Human Gut Microbiota and Short-Chain Fatty Acids in Response to Dietary Interventions with high resistance Potato starch",
+      "source_url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358131v1.full",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "저항성 감자 전분 섭취자",
+        "분류": "SCFA 생성",
+        "시기": "30일 후",
+        "지역": "글로벌"
+      },
+      "caution": "★21.1% 증가는 절대값이 아닌 상대 증가율이다. 기저 부티르산 수치가 낮으면 절대 증가량도 작을 수 있다.",
+      "cautionSource": "수치 해석"
+    },
+    {
+      "id": "resistant-starch-blend-study-gi-symptoms-improvement-diarrhea-constipation-gas",
+      "claim": "저항성 전분 혼합제(potato, banana, apple fiber) 6주 연구에서 모든 군이 GI 증상 개선을 보였으며, PROMIS 설문 기반 설사, 변비, 가스·복부팽만감 점수가 모두 감소했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Frontiers in Nutrition: The gastrointestinal and microbiome impact of a resistant starch blend",
+      "source_url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2022.987216/full",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 성인",
+        "분류": "GI 증상",
+        "시기": "6주",
+        "지역": "글로벌"
+      },
+      "caution": "★'모든 군이 개선'은 위약 효과, 시간 경과, 식이 변화의 종합 결과일 수 있다.",
+      "cautionSource": "대조군 효과"
+    },
+    {
+      "id": "resistant-starch-resista-pd-trial-parkinson-disease-fecal-butyrate-increase",
+      "claim": "파킨슨병 환자를 대상으로 한 RESISTA-PD 무작위 대조 시험에서 저항성 전분군(PD + RS)은 8주 후 대변 부티르산 농도가 유의미하게 증가했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Effects of Resistant Starch on Symptoms, Fecal Markers, and Gut Microbiota in Parkinson's Disease — The RESISTA-PD Trial",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9684155/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "파킨슨병 환자",
+        "분류": "SCFA 생성",
+        "시기": "8주",
+        "지역": "글로벌"
+      },
+      "caution": "★이 연구는 신경변성질환 맥락이므로, 건강한 성인에게 적용할 때는 별도 검증이 필요하다.",
+      "cautionSource": "질환 특이성"
+    },
+    {
+      "id": "resistant-starch-fecal-calprotectin-decrease-resista-pd-inflammation-marker",
+      "claim": "RESISTA-PD 시험에서 저항성 전분 섭취군의 대변 칼프로텍틴(fecal calprotectin) 수치가 유의미하게 감소했으며, 이는 장 염증 감소를 시사한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Effects of Resistant Starch on Symptoms, Fecal Markers, and Gut Microbiota in Parkinson's Disease — The RESISTA-PD Trial",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9684155/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "파킨슨병 환자",
+        "분류": "염증 마커",
+        "시기": "8주",
+        "지역": "글로벌"
+      },
+      "caution": "★칼프로텍틴 감소는 장 상피 염증 감소를 의미하나, 전신 건강 영향은 임상 증상(파킨슨 비운동 증상)을 통해 확인되어야 한다.",
+      "cautionSource": "바이오마커 vs 임상 결과"
+    },
+    {
+      "id": "resistant-starch-resista-pd-parkinsons-non-motor-symptom-reduction-clinical-observation",
+      "claim": "RESISTA-PD 시험에서 저항성 전분 섭취군은 임상적으로 관찰 가능한 비운동 증상 부하(non-motor symptom load) 감소를 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Effects of Resistant Starch on Symptoms, Fecal Markers, and Gut Microbiota in Parkinson's Disease — The RESISTA-PD Trial",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9684155/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "파킨슨병 환자",
+        "분류": "임상 증상",
+        "시기": "8주",
+        "지역": "글로벌"
+      },
+      "caution": "★비운동 증상은 장 증상(변비, 설사), 수면, 우울감 등 다양하다. 구체적 증상이 명시되지 않으면 일반인에게 직접 외삽하기 어렵다.",
+      "cautionSource": "증상 다양성"
+    },
+    {
+      "id": "resistant-starch-individual-microbiota-composition-scfa-response-variable",
+      "claim": "저항성 전분의 SCFA 생성 반응은 개인의 기초 미생물 조성에 따라 크게 달라지며, 특정 박테리아(예: Prevotella의 높은 풍도)가 있는 사람은 더 많은 부티르산을 생성하는 경향이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Frontiers in Nutrition, NIH/PMC: 미생물 다양성과 SCFA 반응",
+      "source_url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2022.987216/full",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반인",
+        "분류": "개인차",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★'저항성 전분이 모두에게 부티르산을 증가시킨다'는 가정은 틀렸다. 미생물군이 없으면 효과가 없을 수 있다.",
+      "cautionSource": "반응자/비반응자 구분 필요"
+    }
+  ]
+}

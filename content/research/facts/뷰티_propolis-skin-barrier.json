@@ -1,0 +1,130 @@
+{
+  "topic": "프로폴리스: 진정·항균 효과와 접촉 알레르기 위험(벌 제품 교차반응)",
+  "brand": "뷰티·성분연구소",
+  "article": "propolis-skin-barrier",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "propolis-phenolic-compounds-antimicrobial-anti-inflammatory",
+      "claim": "프로폴리스의 치유 특성은 페놀계 화합물(phenolic compounds) 함량에서 비롯되며, 항미생물, 항염증, 진통, 혈관신생 촉진 효과가 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC/NCBI: Healing Potential of Propolis in Skin Wounds Evidenced by Clinical Studies",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9504298/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "상처 치유·피부",
+        "시기": "치유 단계",
+        "지역": "글로벌",
+        "분류": "약리 성분"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "propolis-antibacterial-staphylococcus-aureus-sensitive",
+      "claim": "프로폴리스는 임상 상처 분리균에 대한 항균 효과를 보이며, 메탄올 추출물이 가장 우수한 항균 활성을 나타냈고, Staphylococcus aureus(황색포도상구균)이 가장 민감했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC/NCBI: Antibacterial, Antifungal, and Wound-Healing Activities and Chemical Characterization of Propolis",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12526293/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "황색포도상구균·상처 분리균",
+        "시기": "시험관/동물 모델",
+        "지역": "글로벌",
+        "분류": "항균 효력"
+      },
+      "caution": "★항균 효과는 주로 시험관(in vitro) 및 동물 모델(in vivo) 연구 기반이며, 인간 피부 감염 임상시험은 제한적이다.",
+      "cautionSource": "임상 근거 수준"
+    },
+    {
+      "id": "propolis-clinical-evidence-limited-few-studies",
+      "claim": "프로폴리스의 치료 효능을 입증하는 대규모 임상 연구는 매우 부족하며, 현재까지의 출판 데이터는 주로 시험관 및 동물 모델에 기반한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC/NCBI: Healing Potential of Propolis in Skin Wounds Evidenced by Clinical Studies",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9504298/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "프로폴리스 일반",
+        "시기": "현 시점",
+        "지역": "글로벌",
+        "분류": "근거 수준·연구 갭"
+      },
+      "caution": "★'근거 부족'은 무효를 뜻하지 않으나, 화장품 효능 주장은 임상시험으로 뒷받침되어야 한다는 점에서 신중이 필요하다.",
+      "cautionSource": "근거 위계"
+    },
+    {
+      "id": "propolis-contact-dermatitis-allergen-risk",
+      "claim": "프로폴리스는 접촉 알레르기를 유발할 수 있으며, 반응은 가려움, 작열감, 두드러기, 국소 발진이며, 이전 감작자에서 노출 후 시간~일 이내에 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DermNet NZ: Contact allergy to propolis",
+      "source_url": "https://dermnetnz.org/topics/contact-allergy-to-propolis",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "프로폴리스 감작자",
+        "시기": "초기 감작 10~15일, 이후 노출 시 수 시간~수일",
+        "지역": "글로벌",
+        "분류": "안전성·알레르기"
+      },
+      "caution": "★접촉 알레르기는 실제 위험이며, 벌 제품 민감성이 있는 사람은 제품 테스트가 필수다. 벌에 쏘인 이력이나 벌독 알레르기가 있는 사람도 주의해야 한다.",
+      "cautionSource": "피부의학 합의"
+    },
+    {
+      "id": "propolis-beeswax-cross-reaction-uncommon-low-propolis-content",
+      "claim": "프로폴리스와 밀랍(beeswax) 간 교차반응은 드물며, 밀랍의 프로폴리스 오염도는 교차반응을 일으킬 수 있는 수준 이하로 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Contact Dermatitis Journal: Propolis and Beeswax in Cosmetics - Allergy Analysis",
+      "source_url": "https://onlinelibrary.wiley.com/doi/full/10.1111/cod.70108",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "벌 제품 사용자",
+        "시기": "만성 노출",
+        "지역": "글로벌",
+        "분류": "교차반응 위험"
+      },
+      "caution": "★'드물다'는 0이 아니라는 뜻이다. 벌 제품 여러 개를 동시 사용하는 경우 교차감작 누적 위험을 고려해야 한다.",
+      "cautionSource": "접촉 알레르기 연구"
+    },
+    {
+      "id": "propolis-fragrance-cross-reactivity-pseudo-cross-reaction",
+      "claim": "프로폴리스 함유 화장품에서의 접촉피부염 반응 대다수는 향료(fragrance)와의 교차반응 또는 가교차반응(pseudo-cross-reaction)으로 해석된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Contact Dermatitis Journal: Propolis and Beeswax in Cosmetics - Allergy Analysis",
+      "source_url": "https://onlinelibrary.wiley.com/doi/full/10.1111/cod.70108",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "프로폴리스 화장품 사용자",
+        "시기": "도포 후",
+        "지역": "글로벌",
+        "분류": "알레르기 원인 규명"
+      },
+      "caution": "★프로폴리스 함유 제품 중 향료도 포함된 제품에서 반응이 나면, '프로폴리스 때문'인지 '향료 때문'인지 개별 패치 테스트로 구분이 필요하다.",
+      "cautionSource": "패치 테스트 프로토콜"
+    },
+    {
+      "id": "propolis-occupational-allergy-beekeeper-0-76-to-4-04-percent",
+      "claim": "양봉가(beekeepers)에서 프로폴리스 알레르기 발생률은 0.76%~4.04%로 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Literature Review: Allergy to Propolis in Beekeepers",
+      "source_url": "https://sciencedirect.com/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "양봉가",
+        "시기": "만성 노출",
+        "지역": "글로벌",
+        "분류": "직업성 알레르기"
+      },
+      "caution": "★일반 소비자의 알레르기 발생률은 이보다 훨씬 낮을 것으로 예상되지만, 정확한 정보는 부족하다.",
+      "cautionSource": "역학 자료 부족"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "topic": "리놀레산과 올레산: 여드름 피부의 피지 조성과 장벽 기능 (세라마이드 결핍 메커니즘)",
+  "brand": "뷰티·성분연구소",
+  "article": "linoleic-acid-ceramide-ratio",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "linoleic-acid-decreased-acne-prone-skin-sebum",
+      "claim": "여드름 피부의 피지에서는 리놀레산(linoleic acid, C18:2)이 정상 피부보다 현저히 감소하고, 폴리불포화 지방산(polyunsaturated fatty acids)이 감소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC/NCBI: Lipid Mediators in Acne",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2943135/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "여드름 환자 vs 정상 피부",
+        "시기": "질환 상태",
+        "지역": "글로벌",
+        "분류": "피지 지질 조성"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "oleic-acid-increased-acne-prone-sebum-sticky",
+      "claim": "리놀레산 감소 시, 피지에서 올레산(oleic acid, C18:1, 단일불포화 지방산)이 보상적으로 증가하여 피지가 더 점성(viscous)이 되고 모낭 막힘이 쉬워진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC/NCBI: Lipidomics of facial sebum in the comparison between acne and non-acne adolescents with dark skin",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8367971/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "여드름 환자(아프리카계 피부 청소년)",
+        "시기": "질환 상태",
+        "지역": "나이지리아(1차), 글로벌 적용",
+        "분류": "피지 점성 변화"
+      },
+      "caution": "★올레산 증가는 '모공 막힘'을 직접 야기하는 것이 아니라, 피지의 유동성 저하로 배출을 어렵게 한다는 점에서 간접 원인이다.",
+      "cautionSource": "지질 물리화학"
+    },
+    {
+      "id": "linoleic-acid-ceramide-synthesis-precursor",
+      "claim": "리놀레산은 피부의 특정 세라마이드 생합성의 전구물질(precursor)이며, 리놀레산 결핍 시 세라마이드 부족으로 이어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC/NCBI: Lipid Mediators in Acne - Sphingolipid Pathway",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2943135/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "여드름·건성 피부",
+        "시기": "만성 상태",
+        "지역": "글로벌",
+        "분류": "생합성 메커니즘"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "linoleic-acid-deficiency-barrier-hyperkeratinization",
+      "claim": "피부 표면 지질(skin surface lipids)에서 리놀레산 감소는 각질층 스핑고지질 구성을 변화시켜, 모낭 과각화증(follicular hyperkeratosis)을 유발하고 면포(comedone) 형성을 촉진한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC/NCBI: Lipid Mediators in Acne - Follicular Hyperkeratosis",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2943135/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "여드름 환자",
+        "시기": "질환 진행",
+        "지역": "글로벌",
+        "분류": "모낭 폐쇄 메커니즘"
+      },
+      "caution": "★과각화증은 여드름의 4대 원인 중 하나(피지, 박테리아, 염증과 함께). 리놀레산 결핍은 '근본 원인'이 아니라 과각화를 악화시키는 촉발 인자다.",
+      "cautionSource": "여드름 병태생리"
+    },
+    {
+      "id": "saturated-unsaturated-ratio-acne-marker-c16",
+      "claim": "여드름 피부에서 포화 지방산 대 불포화 지방산의 비율(특히 C16:0/C16:1 비율)이 증가하며, 이는 여드름 진단의 지질 바이오마커로 작용한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC/NCBI: Lipid Mediators in Acne",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2943135/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "여드름 환자 vs 정상",
+        "시기": "질환 상태",
+        "지역": "글로벌",
+        "분류": "지질 바이오마커"
+      },
+      "caution": "★비율 변화는 개별 성분 절대량 변화와 독립적이다. 비율만 보고 '포화 지방산을 피해야 한다'고 결론지을 수 없다.",
+      "cautionSource": "지질 분석 통계"
+    },
+    {
+      "id": "linoleic-acid-topical-supplementation-barrier-recovery",
+      "claim": "리놀레산을 함유한 국소 제품은 손상된 피부 장벽의 회복을 촉진하고, 장벽 기능 개선 및 염증 감소에 임상 효과를 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC/NCBI: Barrier Recovery and Linoleic Acid Supplementation",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2943135/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "민감·손상 피부",
+        "시기": "4주 이상",
+        "지역": "글로벌",
+        "분류": "임상 효과"
+      },
+      "caution": "★리놀레산 '보충'만으로는 여드름을 완전히 치료할 수 없다. 여드름은 다인자 질환(박테리아, 염증, 피지, 과각화)이므로, 단일 성분 보충은 보조 역할만 한다.",
+      "cautionSource": "여드름 병태생리·임상 경험"
+    }
+  ]
+}

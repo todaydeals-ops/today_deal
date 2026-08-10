@@ -1,0 +1,96 @@
+{
+  "topic": "모발 펩타이드(구리펩타이드): 두피 적용 근거와 임상 증거의 수준",
+  "brand": "성분연구소",
+  "article": "뷰티_peptide-hair-strengthening",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "copper-cofactor-lysyl-oxidase-collagen-crosslinking-mechanism",
+      "claim": "구리는 라이실옥시다제(lysyl oxidase)의 필수 보조인자이며, 이 효소는 콜라겐과 엘라스틴의 가교결합을 촉진하여 세포외 기질의 구조 안정성을 높인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "생화학 교과서, PubMed: Copper-dependent enzymes in connective tissue",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "조직 재생 기전",
+        "분류": "생화학",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★이것은 기초 생화학이며, 국소 펩타이드 도포가 두피에서 같은 효과를 낸다는 보장은 없다.",
+      "cautionSource": "기초→응용의 거리"
+    },
+    {
+      "id": "ghk-cu-collagen-production-fibroblast-in-vitro-mechanism",
+      "claim": "구리펩타이드(GHK-Cu)는 인간 피부 섬유아세포에서 콜라겐과 엘라스틴 생성을 촉진하는 것으로 체외 연구에서 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "분자 생물학 문헌, 세포 생물학 데이터베이스",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "피부 섬유아세포",
+        "분류": "체외(in vitro) 효과",
+        "시기": "배양 중",
+        "지역": "글로벌"
+      },
+      "caution": "★이는 체외 섬유아세포 실험이며, 사람 두피에서의 효과는 별개다.",
+      "cautionSource": "연구 방법론"
+    },
+    {
+      "id": "ghk-cu-skin-density-thickness-laxity-fine-lines-photoaged-women-2002-leyden-trial",
+      "claim": "2002년 Leyden 외 연구진의 12주 무작위 대조 시험(n=71, 광노화 여성)에서 구리펩타이드 안면·눈가 크림은 피부 밀도, 두께, 탄력, 세선의 유의미한 개선을 나타냈다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "2002 RCT: GHK-Cu facial and eye cream in photoaged skin",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "광노화 피부 여성",
+        "분류": "피부 질감 개선",
+        "시기": "12주",
+        "지역": "글로벌"
+      },
+      "caution": "★이는 피부(안면) 연구이며, 두피·모낭 연구는 아니다. 외삽(extrapolation)의 위험이 있다.",
+      "cautionSource": "조직 특이성"
+    },
+    {
+      "id": "ghk-cu-hair-growth-mechanism-proposed-limited-human-rct-evidence",
+      "claim": "구리펩타이드의 모발 성장 기전(콜라겐·혈관신생·DHT 감소 등)은 기초 연구에서 제안되었으나, 대규모 무작위 대조 시험(RCT) 수준의 임상 증거는 미녹시딜·피나스테리드처럼 충분하지 않다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미충족 임상 증거 평가, 문헌 검토",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "구리펩타이드 제품",
+        "분류": "증거 수준 평가",
+        "시기": "2026 현황",
+        "지역": "글로벌"
+      },
+      "caution": "★'우수한 기전'과 '강력한 임상 증거'는 다르다. 구리펩타이드는 전자는 있으나 후자는 부족하다.",
+      "cautionSource": "근거 위계"
+    },
+    {
+      "id": "ghk-cu-topical-penetration-bioavailability-intact-peptide-scalp-not-established",
+      "claim": "국소 적용된 구리펩타이드가 피부 배리어를 통과하여 완전한 상태로 두피 모낭에 도달하는지는 명확하게 입증되지 않았다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "펩타이드 약동학 문헌 검색 미완료",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "펩타이드 제품",
+        "분류": "제형 및 투과성",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★큰 분자(펩타이드)는 피부 침투가 어렵다. 상업 제품의 제형 기술(캡슐화 등)이 실제로 생체이용률을 높이는지 임상 검증이 필요하다.",
+      "cautionSource": "약동학 데이터 부재"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "topic": "아스타잔틴 국소 도포: 항산화 강도, 콜라겐 생성 기전, 피부 임상 근거",
+  "brand": "뷰티·성분연구소",
+  "article": "astaxanthin-topical-collagen",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "astaxanthin-antioxidant-capacity-100fold-vitamin-e",
+      "claim": "아스타잔틴의 항산화 용량(antioxidant capacity)은 다른 카로테노이드보다 10배, 비타민 E보다 약 100배 높다고 보고된다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "In vitro Antioxidant Studies & Literature Review",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8147608/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "항산화제 비교",
+        "시기": "시험관(in vitro)",
+        "지역": "글로벌",
+        "분류": "생화학 측정"
+      },
+      "caution": "★이 '100배' 수치는 시험관 조건(in vitro)에서의 측정이며, 실제 피부 환경에서의 생물학적 효율은 이보다 훨씬 낮을 수 있다. 또한 흡수율·피부 침투성을 고려하면 이론적 항산화력과 임상 효과는 별개다.",
+      "cautionSource": "약리학 기초·임상 전환"
+    },
+    {
+      "id": "astaxanthin-collagen-synthesis-anti-inflammatory",
+      "claim": "아스타잔틴은 피부의 일산화질소(nitrous oxide) 생성 억제를 통한 항염증 작용으로, 상처 치유를 촉진하고 피부 콜라겐 함량 증가를 유도한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC/NCBI: Systematic Review and Meta-Analysis on the Effects of Astaxanthin on Human Skin Ageing",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8472736/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 피부",
+        "시기": "도포·경구 병용",
+        "지역": "글로벌",
+        "분류": "콜라겐 생성 기전"
+      },
+      "caution": "★'콜라겐 함량 증가'는 주로 동물 모델(쥐) 연구에서 관찰되었고, 인간 피부에서의 직접 측정은 제한적이다.",
+      "cautionSource": "임상 증거 수준"
+    },
+    {
+      "id": "astaxanthin-aquaporin-3-expression-water-retention",
+      "claim": "아스타잔틴이 피부의 수채널 단백질 아쿠아포린-3(Aquaporin-3) 발현을 증가시켜, 피부 수화(skin moisture) 개선에 기여한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC/NCBI: Effect of Astaxanthin on the Expression and Activity of Aquaporin-3 in Skin",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7554991/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 피부",
+        "시기": "도포 후",
+        "지역": "글로벌",
+        "분류": "수화 기전"
+      },
+      "caution": "★이는 in vitro 또는 동물 모델 데이터이며, 인간 피부에서의 아쿠아포린-3 변화를 직접 입증한 임상시험은 많지 않다.",
+      "cautionSource": "임상 근거 제한"
+    },
+    {
+      "id": "astaxanthin-topical-open-label-study-slight-prevention-wrinkle",
+      "claim": "개방형(open-label), 전향적 임상 연구에서 국소 및 경구 병용 아스타잔틴이 피부 노화를 '약간 예방'하는 것으로 보고되었으나, 주름 감소와 탄력 증가가 피부 수분 함량 증가와의 직접 인과관계 입증은 부족하다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PMC/NCBI: Systematic Review and Meta-Analysis on the Effects of Astaxanthin on Human Skin Ageing",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8472736/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인",
+        "시기": "4주 이상",
+        "지역": "글로벌",
+        "분류": "임상 효과·근거 수준"
+      },
+      "caution": "★개방형 연구(맹검화 없음)이므로 위약 효과(placebo effect) 가능성이 크다. 또한 '약간의 예방'은 명확한 정량화가 부족하다.",
+      "cautionSource": "임상시험 설계·통계"
+    },
+    {
+      "id": "astaxanthin-oral-vs-topical-efficacy-moisture-collagen-structure",
+      "claim": "경구 아스타잔틴 보충은 피부 수분과 탄력을 유의미하게 개선했으나, 주름 깊이는 위약과 유의한 차이를 보이지 않았다. 피부 주름과 색소반 개선은 경구·국소 병용(미세조류 유래)에서만 관찰되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC/NCBI: Systematic Review and Meta-Analysis on the Effects of Astaxanthin on Human Skin Ageing",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8472736/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인 여성",
+        "시기": "8주 이상",
+        "지역": "글로벌",
+        "분류": "경구·국소 비교"
+      },
+      "caution": "★주름 개선(주름 깊이 감소)은 경구 단독에서는 입증되지 않았다. 콜라겐 구조 변화(collagen remodeling)는 추측이지, 직접 측정된 데이터는 부족하다.",
+      "cautionSource": "임상시험 데이터·콜라겐 측정 한계"
+    },
+    {
+      "id": "astaxanthin-mechanism-confirmation-needed-further-studies",
+      "claim": "아스타잔틴의 피부 미용 작용 기전(mechanism of action)과 뷰티 효과는 추가 연구가 필요하며, 현재 대부분의 국소 연구는 소규모 개방형 시험이다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "PMC/NCBI: Systematic Review and Meta-Analysis on the Effects of Astaxanthin on Human Skin Ageing",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8472736/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "아스타잔틴 일반",
+        "시기": "현 시점",
+        "지역": "글로벌",
+        "분류": "근거 수준·연구 갭"
+      },
+      "caution": "★'확인실패'는 기술적 한계가 아니라 현재 과학적 합의의 부재를 의미한다. 더 큰 규모의 맹검, 위약 대조 임상시험이 필요하다.",
+      "cautionSource": "체계적 문헌 검토 결론"
+    }
+  ]
+}

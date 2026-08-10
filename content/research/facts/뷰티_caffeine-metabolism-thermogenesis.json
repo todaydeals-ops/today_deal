@@ -1,0 +1,164 @@
+{
+  "topic": "카페인과 대사·열발생: 에너지 소비와 체중 관리에서의 역할",
+  "brand": "성분연구소",
+  "article": "뷰티_caffeine-metabolism-thermogenesis",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "caffeine-phosphodiesterase-inhibitor-camp-thermogenesis-mechanism",
+      "claim": "카페인은 인산디에스터라제(phosphodiesterase) 억제제로서 순환 AMP(cAMP)의 분해를 방지하여, 갈색 지방 세포와 미토콘드리아의 열발생 과정을 촉진한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "생화학 및 약리학 교과서, PubMed 카페인 메커니즘",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/2333832/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반인",
+        "분류": "분자 메커니즘",
+        "시기": "섭취 후",
+        "지역": "글로벌"
+      },
+      "caution": "★이것은 기초 약리학이며, 인체에서 실제 열발생 증가로 이어지는 정도는 개인, 용량, 체성분에 따라 다르다.",
+      "cautionSource": "기초→임상의 거리"
+    },
+    {
+      "id": "caffeine-energy-expenditure-dose-dependent-increase-human-study",
+      "claim": "이중맹검 플라시보 대조 인체 연구에서 카페인은 용량 의존적으로 에너지 소비를 증가시켰으며, 열발생 반응은 혈장 카페인 농도와 양의 상관관계를 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Caffeine: a double-blind, placebo-controlled study of its thermogenic, metabolic, and cardiovascular effects in healthy volunteers",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/2333832/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "건강한 성인",
+        "분류": "임상 효과",
+        "시기": "급성(섭취 후)",
+        "지역": "글로벌"
+      },
+      "caution": "★용량 의존적이라는 것은 많이 먹을수록 효과가 크다는 뜻이다. 그러나 안전 상한(400 mg/day)을 초과하면 부작용 위험이 있다.",
+      "cautionSource": "용량 안전성"
+    },
+    {
+      "id": "caffeine-flavonoid-mixed-supplement-22-hour-energy-expenditure-1582-vs-1535-kcal",
+      "claim": "프리메노폐경 여성을 대상으로 한 무작위 교차 시험에서 혼합 플라보노이드-카페인 보충제는 위약 대비 22시간 에너지 소비를 유의미하게 증가시켰다(1582 ± 143 vs 1535 ± 154 kcal/day).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC: Acute Ingestion of a Mixed Flavonoid and Caffeine Supplement Increases Energy Expenditure and Fat Oxidation in Adult Women",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6893703/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "프리메노폐경 여성",
+        "분류": "에너지 소비",
+        "시기": "22시간",
+        "지역": "글로벌"
+      },
+      "caution": "★47 kcal/day 증가(1582-1535)는 한 달에 약 1,410 kcal = 약 0.4 kg 지방 소실에 해당한다. 극히 작은 효과다.",
+      "cautionSource": "효과 크기 평가"
+    },
+    {
+      "id": "caffeine-fat-oxidation-increase-mixed-flavonoid-supplement",
+      "claim": "혼합 플라보노이드-카페인 보충제는 에너지 소비 증가뿐 아니라 지방산화(fat oxidation)도 유의미하게 증가시켰다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC: Acute Ingestion of a Mixed Flavonoid and Caffeine Supplement Increases Energy Expenditure and Fat Oxidation in Adult Women",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6893703/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "프리메노폐경 여성",
+        "분류": "지질 대사",
+        "시기": "급성",
+        "지역": "글로벤"
+      },
+      "caution": "★지방산화 증가가 체중감량으로 이어지려면 음의 에너지 균형(칼로리 부족)이 전제되어야 한다.",
+      "cautionSource": "대사 vs 결과"
+    },
+    {
+      "id": "caffeine-tea-coffee-weight-loss-diabetes-risk-factor-reduction",
+      "claim": "차와 커피에 함유된 카페인과 페놀 화합물은 에너지 소비 증가 및 대사 개선과 연관되며, 일부 임상 연구에서 정기적 섭취와 당뇨병 위험 인자 개선이 관찰되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC 및 임상 역학 데이터",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "당뇨병 전단계 또는 관심 대상",
+        "분류": "대사 개선",
+        "시기": "중기(주/월)",
+        "지역": "글로벌"
+      },
+      "caution": "★당뇨병 위험 감소는 카페인이 아니라 체중감량 자체가 주요 원인일 가능성이 높다. 혼동 변수 조정 필요.",
+      "cautionSource": "인과 관계 불명확"
+    },
+    {
+      "id": "caffeine-ephedrine-combination-weight-loss-small-to-moderate-obese",
+      "claim": "카페인과 에페드린(ephedrine)의 병용 투여는 비만 환자에서 소~중등도 체중감량을 유도했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC: Muscle Uncoupling Protein 3 Expression Is Unchanged by Chronic Ephedrine/Caffeine Treatment",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4048162/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "비만 환자",
+        "분류": "체중감량",
+        "시기": "중기(주/월)",
+        "지역": "글로벌"
+      },
+      "caution": "★에페드린은 FDA가 규제하는 약물이며, 단독 카페인보다 위험도가 높다. '소~중등도'는 수 kg 수준이다.",
+      "cautionSource": "규제 성분, 효과 크기"
+    },
+    {
+      "id": "caffeine-thermogenesis-effect-modest-contributing-factor-weight-management",
+      "claim": "카페인의 열발생 효과는 상대적으로 미미하며, 전체 에너지 균형 관리에서 보조적 역할만 한다. 주요 체중감량 수단은 식이와 운동이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "메타분석 및 임상 개요, PubMed systematic review",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반인",
+        "분류": "효과 평가",
+        "시기": "장기(월)",
+        "지역": "글로벌"
+      },
+      "caution": "★'도움이 되지 않는다'는 아니지만, '혁신적이지도 않다'는 의미다. 마케팅 과장이 많은 영역이다.",
+      "cautionSource": "기대치 관리"
+    },
+    {
+      "id": "caffeine-brown-adipose-tissue-activation-genetic-environmental-variability",
+      "claim": "카페인은 갈색 지방(brown adipose tissue, BAT) 활성화를 통해 열발생을 촉진하지만, BAT 양과 활성화 정도는 유전, 나이, 환경(기온, 운동)에 따라 크게 달라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/PMC: Interventions associated with brown adipose tissue activation",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9780295/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반인",
+        "분류": "개인차",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★'갈색 지방 활성화'는 인기 있는 설명이지만, 개인차가 극도로 크다. 당신의 갈색 지방이 적거나 활성화되지 않으면 효과가 없을 수 있다.",
+      "cautionSource": "개인 반응 변동성"
+    },
+    {
+      "id": "caffeine-metabolic-tolerance-chronic-use-diminished-thermogenic-effect",
+      "claim": "카페인의 에너지 소비 증가 효과는 만성 섭취에 따른 내성(tolerance) 발달로 시간에 따라 감소하는 경향을 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "카페인 약리 문헌, PubMed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "카페인 상용 섭취자",
+        "분류": "내성 발달",
+        "시기": "주/월",
+        "지역": "글로벌"
+      },
+      "caution": "★'커피를 매일 마시면 효과가 줄어든다'는 실제 현상이다. 체중감량 목적이면 사이클(복용→휴지) 고려가 필요하다.",
+      "cautionSource": "약리 내성"
+    }
+  ]
+}

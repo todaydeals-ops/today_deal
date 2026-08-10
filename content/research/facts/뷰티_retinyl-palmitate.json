@@ -1,0 +1,113 @@
+{
+  "topic": "레티닐 팔미테이트(retinyl palmitate): 레티노이드 전환 사슬에서의 자리, 약한 이유, 안정성과 광분해 논란",
+  "brand": "뷰티·성분연구소",
+  "article": "retinyl-palmitate",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "retinyl-palmitate-conversion-pathway-two-step",
+      "claim": "레티닐 팔미테이트의 피부 활성화는 에스터라제에 의한 가수분해로 레티놀 생성 후, 산화 경로(retinol → retinaldehyde → retinoic acid)를 거쳐 활성형 레티노산으로 변환되는 2단계 과정을 거친다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect Topics: Retinol Palmitate Overview & Mechanism",
+      "source_url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/retinol-palmitate",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 피부",
+        "시기": "도포 후",
+        "지역": "글로벌",
+        "분류": "생화학 전환 경로"
+      },
+      "caution": "★2단계 변환은 '이론적' 경로이며, 실제 피부의 효소 활성도와 변환 효율은 개인차·피부 상태에 따라 큰 편차를 보인다.",
+      "cautionSource": "레티노이드 약리학"
+    },
+    {
+      "id": "retinyl-palmitate-low-bioavailability-high-concentration-requirement",
+      "claim": "레티닐 팔미테이트는 피부에서 생체이용가능성(bioavailability)이 매우 낮아, 유의미한 효소 유도 활성을 위해서는 폐쇄(occlusion) 조건에서 0.6% 농도가 필요하다. 비교하면 레티놀은 0.025%, 레티날데히드는 0.01%에 불과하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Unoccluded retinol penetrates human skin in vivo more effectively than unoccluded retinyl palmitate or retinoic acid",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/9284094/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 피부",
+        "시기": "도포 후",
+        "지역": "글로벌",
+        "분류": "효능 비교·농도 요구"
+      },
+      "caution": "★0.6% vs 0.025% 비교는 폐쇄 조건 RCT 데이터이므로, 일반 화장품(미폐쇄)에서는 실제 효능이 더 낮을 가능성이 크다.",
+      "cautionSource": "임상 시험 설계"
+    },
+    {
+      "id": "retinyl-palmitate-most-stable-least-potent-tradeoff",
+      "claim": "레티닐 팔미테이트는 비타민 A 에스터 중 열 안정성이 가장 높지만, 생물학적 활성도는 가장 낮다. 이는 안정성과 효능 사이의 트레이드오프다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed/Literature Review: Retinoid Derivatives in Cosmetics",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화장품 포뮬레이션",
+        "시기": "제품 개발·보관",
+        "지역": "글로벌",
+        "분류": "제형 특성"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "retinyl-palmitate-photodegradation-uva-faster-than-retinol",
+      "claim": "레티닐 팔미테이트는 UVA 방사선(320–400 nm)에 노출되면 레티놀보다 더 빠르게 광분해(photodegradation)되어 생물학적 활성을 잃는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Frontiers in Pharmacology: Synergistic effects of retinol and retinyl palmitate in alleviating UVB-induced DNA damage",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12058701/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화장품·스킨케어",
+        "시기": "UV 노출 시",
+        "지역": "글로벌",
+        "분류": "안정성·분해"
+      },
+      "caution": "★'광분해 우려'는 실제이지만, 일반 실내용 제품(자외선 차단 포장)에서는 임상 의미가 낮다. 실외 노출 제품이나 오일 포맷은 주의 필요.",
+      "cautionSource": "광화학·제형 설계"
+    },
+    {
+      "id": "retinyl-palmitate-thermal-instability-7day-38percent-loss",
+      "claim": "4°C에 보관 중인 2% 레티닐 팔미테이트 O/W 에멀전에서 7일 후 38% 손실이 관찰되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Chemistry & Formulation Studies: Retinoid Stability",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12058701/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "에멀전 제형",
+        "시기": "7일",
+        "지역": "글로벌",
+        "분류": "보관 안정성"
+      },
+      "caution": "★이 수치는 저온 보관(4°C)에서도 발생한 것으로, 상온 보관 제품은 손실이 더 클 가능성이 높다. 제조사의 안정성 데이터(COA, 경시변화율) 확인 필수.",
+      "cautionSource": "화학 안정성 연구"
+    },
+    {
+      "id": "retinyl-palmitate-weak-evidence-systematic-review-no-significant-efficacy",
+      "claim": "체계적 문헌 검토(systematic review)에서 국소 레티닐 아세테이트 및 레티닐 팔미테이트 사용을 뒷받침하는 유의미한 임상 근거를 찾지 못했다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Journal of Cosmetic Dermatology: Evidence Review of OTC Vitamin A Derivatives",
+      "source_url": "https://jcadonline.com/efficacy-of-over-the-counter-vitamin-a/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화장품급 비타민 A",
+        "시기": "시판 제품",
+        "지역": "글로벌",
+        "분류": "효능 근거 수준"
+      },
+      "caution": "★'근거 부족'은 '무효'를 의미하지 않는다. 오히려 대규모 RCT가 드물다는 뜻이다. 소규모·개방형 연구에서는 효과를 보이기도 했으나, 엄격한 기준으로 보면 강력한 증거가 제한적이다.",
+      "cautionSource": "근거 위계 평가"
+    }
+  ]
+}

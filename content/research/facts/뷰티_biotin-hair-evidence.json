@@ -1,0 +1,130 @@
+{
+  "topic": "비오틴과 모발: 결핍 시 효과와 혈액검사 간섭 이슈",
+  "brand": "성분연구소",
+  "article": "뷰티_biotin-hair-evidence",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "biotin-deficiency-prevalence-hair-loss-women-38percent",
+      "claim": "탈모를 호소하는 여성의 38%에서 비오틴 결핍이 발견되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Serum Biotin Levels in Women Complaining of Hair Loss",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/27601860/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "탈모 호소 여성",
+        "분류": "결핍 유병률",
+        "시기": "단면 조사",
+        "지역": "글로벌"
+      },
+      "caution": "★이 비율이 임상적으로 의미 있는 결핍은 아니다. 일반적인 식단을 섭취하는 개인의 경우 의미 있는 비오틴 결핍은 드물다.",
+      "cautionSource": "임상 효과 불일치"
+    },
+    {
+      "id": "biotin-supplementation-efficacy-no-superior-to-placebo",
+      "claim": "비오틴 보충제의 모발 성장 효과는 위약 대비 우월성이 입증되지 않았다. 이중맹검 위약 대조 연구에서 비오틴군과 위약군 간 차이가 없었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Biotin for Hair Loss - Teasing Out the Evidence",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/39148962/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "탈모 환자",
+        "분류": "보충제 효과",
+        "시기": "임상 연구",
+        "지역": "글로벌"
+      },
+      "caution": "★비오틴 보충은 결핍이 입증된 경우에만 권장되며, 정상 수치에서의 추가 보충은 증거가 부족하다.",
+      "cautionSource": "임상 근거"
+    },
+    {
+      "id": "biotin-deficiency-clinical-benefit-limited-to-deficiency-state",
+      "claim": "비오틴의 모발 성장 보조 효과는 획득성 또는 유전성 비오틴 결핍 및 관련 병리(예: 취약한 손톱 증후군, 빗질 불가능한 모발)에서만 기대할 수 있다. 결핍이 없는 경우 보충의 효과는 증거가 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed Central: Biotin for Hair Loss - Teasing Out the Evidence",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/39148962/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "비오틴 결핍자 vs 정상자",
+        "분류": "임상 적응증",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★결핍 판정은 혈청 비오틴 검사로 확인해야 한다. 자가 진단으로 보충제를 복용하면 검사 결과를 왜곡할 수 있다.",
+      "cautionSource": "임상 실전"
+    },
+    {
+      "id": "biotin-interference-tsh-t4-t3-thyroid-assay-false-results",
+      "claim": "고용량 비오틴 섭취는 생물소재-스트렙타비딘 상호작용에 기반한 갑상선 기능 검사(TSH, Free T4, 전체 T3, 갑상선글로불린)의 결과를 왜곡하여 거짓 양성(T4/T3 증가, TSH 감소)을 초래할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미국 갑상선학회(American Thyroid Association) 환자 정보 및 FDA 안전 경고",
+      "source_url": "https://www.thyroid.org/patient-thyroid-information/ct-for-patients/january-2022/vol-15-issue-1-p-7-8/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "갑상선 검사 대상자",
+        "분류": "검사 간섭",
+        "시기": "검사 시점 전후",
+        "지역": "글로벌"
+      },
+      "caution": "★갑상선 환자와 고용량 비오틴 사용자는 필수 공지 대상이다. 미국 갑상선학회는 검사 2일 전 비오틴 중단을 권고한다.",
+      "cautionSource": "ATA 임상 지침"
+    },
+    {
+      "id": "biotin-high-dose-troponin-interference-cardiac-enzyme-false-negative",
+      "claim": "보충제에 포함된 비오틴은 20 mg에 이를 수 있으며, 고용량 비오틴 섭취는 심근 트로포닌(troponin) 측정을 간섭하여 거짓 음성 결과(너무 낮음)를 초래할 수 있다. FDA는 이로 인한 심근경색 진단 지연과 1건의 사망 보고를 기록했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA 안전 통신(2019년 11월 5일), NIH/PMC 임상 사례 보고",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6802814/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "고용량 비오틴 사용자 (특히 심장 위험군)",
+        "분류": "검사 간섭 (중대한 임상 영향)",
+        "시기": "보충제 사용 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★생명 위협 이슈. 비오틴을 헤어·스킨·네일 보충제에서 받는다면, 심장 관련 증상(흉통, 호흡곤란)이 있을 때는 반드시 의료진에게 비오틴 복용 사실을 알려야 한다.",
+      "cautionSource": "FDA 안전 경고 및 임상 사례"
+    },
+    {
+      "id": "biotin-interference-threshold-10ng-ml-and-higher-dose-variants",
+      "claim": "비오틴이 일반적인 검사 기기에서 간섭을 일으키는 최저 농도는 10 ng/mL이며, 일일 10,000 mcg의 비오틴 복용은 TSH, Free T4, 전체 T3, 갑상선글로불린 검사를 모두 교란할 수 있다. 다만 다른 기기의 임계값은 더 높거나 낮을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA 안전 경고, Ann Clin Lab Sci: Significant Interference of Biotin in Thyroid Function Tests",
+      "source_url": "https://www.annclinlabsci.org/content/53/1/130.full",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "고용량 비오틴 사용자 (≥10,000 mcg/day)",
+        "분류": "용량-반응 관계",
+        "시기": "사용 중",
+        "지역": "글로벌"
+      },
+      "caution": "★10,000 mcg는 권장 비오틴의 300배 이상이다. 헤어·스킨 보충제가 이 용량을 포함할 수 있다.",
+      "cautionSource": "FDA 권장 섭취량 기준"
+    },
+    {
+      "id": "biotin-pre-test-discontinuation-2days-ata-recommendation",
+      "claim": "미국 갑상선학회는 갑상선 기능 검사 전 최소 2일 동안 비오틴 복용을 중단할 것을 권고한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Thyroid Association 환자 정보",
+      "source_url": "https://www.thyroid.org/patient-thyroid-information/ct-for-patients/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "갑상선 검사 예정자",
+        "분류": "임상 실전",
+        "시기": "검사 2일 전",
+        "지역": "글로벌"
+      },
+      "caution": "★모든 비오틴 출처를 피해야 한다(보충제, 멀티비타민, 산전 비타민, 헤어/스킨/네일 제품).",
+      "cautionSource": "ATA 임상 권고"
+    }
+  ]
+}
