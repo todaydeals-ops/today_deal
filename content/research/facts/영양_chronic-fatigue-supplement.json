@@ -1,0 +1,166 @@
+{
+  "topic": "만성피로의 감별진단(빈혈·갑상선·수면무호흡·영양 결핍), 보충제 선택 기준",
+  "brand": "알약연구소",
+  "article": "만성피로에 영양제를 쌓기 전에 볼 것",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "disease-prevention-vs-disease-progression-delay-distinction"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "chronic-fatigue-differential-diagnosis-priority-anemia-thyroid-sleep",
+      "claim": "만성피로(6개월 이상 지속)의 감별진단에서 1순위로 배제해야 할 기질적 질환은 철결핍성 빈혈, 갑상선 기능 저하증, 수면무호흡증이며, 이들이 해결되지 않으면 영양제 효과가 제한적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 국가건강정보포털, MSD 매뉴얼",
+      "source_url": "https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=6549",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "만성피로 환자",
+        "분류": "감별진단",
+        "시기": "초기 진단 단계",
+        "지역": "KR"
+      },
+      "caution": "★피로가 6개월 이상 지속되면 반드시 의료 검진을 먼저 받아 기저 질환을 확인해야 한다.",
+      "cautionSource": "질병관리청 가이드"
+    },
+    {
+      "id": "chronic-fatigue-msd-manual-8-exclusion-targets",
+      "claim": "MSD 매뉴얼의 피로 진단 기준에서 제시한 배제 대상 질환은 빈혈, 갑상선질환, 수면무호흡증, 우울증, 전해질 불균형, 신장질환, 류마티스 관절염, 섬유근육통이며, 이들을 완전히 제외한 후 만성피로증후군을 진단한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 - 만성 피로 증후군",
+      "source_url": "https://www.msdmanuals.com/ko/home/%ED%8A%B9%EB%B3%84-%EC%A3%BC%EC%A0%9C/%EB%A7%8C%EC%84%B1-%ED%94%BC%EB%A1%9C-%EC%A6%9D%ED%9B%84%EA%B5%B0/%EB%A7%8C%EC%84%B1-%ED%94%BC%EB%A1%9C-%EC%A6%9D%ED%9B%84%EA%B5%B0",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "만성피로 환자",
+        "분류": "감별진단 8개 질환",
+        "시기": "표준 진단 기준",
+        "지역": "글로벌"
+      },
+      "caution": "★만성피로증후군은 진단 자체가 '배제 진단'이므로, 피로 원인이 명확하지 않을 때 최종 진단된다.",
+      "cautionSource": "MSD 매뉴얼 진단 기준"
+    },
+    {
+      "id": "depression-fatigue-neurotransmitter-deficit",
+      "claim": "우울증은 신경전달물질(세로토닌, 노르에피네프린) 부족으로 지속적 피로, 무기력, 의욕 저하를 일으키며, 만성피로 환자의 주요 감별 대상 질환이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 - 만성 피로 증후군",
+      "source_url": "https://www.msdmanuals.com/ko/home/%ED%8A%B9%EB%B3%84-%EC%A3%BC%EC%A0%9C/%EB%A7%8C%EC%84%B1-%ED%94%BC%EB%A1%9C-%EC%A6%9D%ED%9B%84%EA%B5%B0/%EB%A7%8C%EC%84%B1-%ED%94%BC%EB%A1%9C-%EC%A6%9D%ED%9B%84%EA%B5%B0",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "우울증 환자 vs 만성피로 환자",
+        "분류": "감별진단",
+        "시기": "초기 평가",
+        "지역": "글로벌"
+      },
+      "caution": "우울증과 만성피로는 겹치는 증상이 많아 감별이 어렵고, 동시 진단도 가능하다.",
+      "cautionSource": "MSD 매뉴얼"
+    },
+    {
+      "id": "rheumatoid-arthritis-inflammatory-fatigue-cytokine",
+      "claim": "류마티스 관절염은 TNF-α, IL-6 등 염증성 사이토카인 증가로 인한 전신 피로를 유발하며, 만성피로와 혼동될 수 있는 주요 염증성 질환이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 - 만성 피로 증후군",
+      "source_url": "https://www.msdmanuals.com/ko/home/%ED%8A%B9%EB%B3%84-%EC%A3%BC%EC%A0%9C/%EB%A7%8C%EC%84%B1-%ED%94%BC%EB%A1%9C-%EC%A6%9D%ED%9B%84%EA%B5%B0/%EB%A7%8C%EC%84%B1-%ED%94%BC%EB%A1%9C-%EC%A6%9D%ED%9B%84%EA%B5%B0",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "류마티스 관절염 환자",
+        "분류": "감별진단",
+        "시기": "초기 평가",
+        "지역": "글로벌"
+      },
+      "caution": "류마티스 관절염은 관절통, 종창, 경직 같은 추가 증상이 동반되므로 임상 검사(RF, anti-CCP)로 감별이능하다.",
+      "cautionSource": "MSD 매뉴얼"
+    },
+    {
+      "id": "iron-deficiency-anemia-fatigue-primary-cause",
+      "claim": "철결핍성 빈혈은 만성피로의 가장 흔한 기질적 원인이며, 적혈구의 산소 운반 용량 감소로 조직의 에너지 생성이 저해된다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "의학 교과서·임상 가이드 (권위 출처 미확보)",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "피로 환자",
+        "분류": "철결핍 감별",
+        "시기": "모든 연령",
+        "지역": "글로벌"
+      },
+      "caution": "혈청 철, TIBC, 페리틴 검사로 확인 필수. 권위 임상 문헌 재확보 필요.",
+      "cautionSource": "임상 기준"
+    },
+    {
+      "id": "hypothyroidism-fatigue-metabolism-depletion",
+      "claim": "갑상선 기능 저하증은 신진대사 둔화로 지속적 피로, 무기력, 인지 저하를 유발하며, TSH·Free T4 검사로 진단된다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "의료 교과서 (권위 출처 미확보)",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "피로 + 체중 증가·추위 불내증 환자",
+        "분류": "갑상선 기능 저하",
+        "시기": "모든 연령",
+        "지역": "글로벌"
+      },
+      "caution": "갑상선 호르몬 치료 없이 영양제로는 호전되지 않는다. 권위 임상 문헌 재확보 필요.",
+      "cautionSource": "임상 기준"
+    },
+    {
+      "id": "sleep-apnea-nocturnal-hypoxemia-fragmented-sleep",
+      "claim": "수면무호흡증은 야간 반복적 호흡 중단으로 산소 포화도 저하 및 수면 분절을 초래하여 회복적 수면 거부되고 낮 시간 피로가 지속된다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "의료 교과서·임상 가이드 (권위 출처 미확보)",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "코골이·주간 졸음 환자",
+        "분류": "수면 호흡 장애",
+        "시기": "모든 연령",
+        "지역": "글로벌"
+      },
+      "caution": "수면 다원검사(PSG) 진단 필요. 영양제로 치료되지 않으며 CPAP 등 의료 개입 필수. 권위 출처 재확보 필요.",
+      "cautionSource": "임상 기준"
+    },
+    {
+      "id": "vitamin-b12-folate-deficiency-anemia-energy-metabolism",
+      "claim": "비타민 B12 및 엽산 결핍은 DNA 합성 저해로 거대적혈구성 빈혈을 유발하고, 세포 대사 감소로 피로가 발생한다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "의료 교과서 (권위 출처 미확보)",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "채식인·위장 질환자·노인",
+        "분류": "영양 결핍",
+        "시기": "모든 연령",
+        "지역": "글로벌"
+      },
+      "caution": "혈청 B12·엽산 검사로 확인 후 보충 필요. 권위 출처 재확보 필요.",
+      "cautionSource": "임상 기준"
+    },
+    {
+      "id": "cdc-chronic-fatigue-criteria-6-months-functional-impairment",
+      "claim": "미국 CDC 1994년 기준에서 만성피로증후군은 6개월 이상 설명할 수 없는 피로 + 기능 장애 + 인지 또는 정위 증상 중 4개 이상이 필수이며, 이는 표준 진단 기준으로 널리 사용된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 국가건강정보포털 - 만성피로증후군",
+      "source_url": "https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=6549",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "6개월 이상 피로 환자",
+        "분류": "진단 기준",
+        "시기": "CDC 1994년 기준",
+        "지역": "글로벌"
+      },
+      "caution": "이 기준은 만성피로증후군 진단용이며, 6개월 미만 피로는 '만성피로'이지 '증후군'은 아니다.",
+      "cautionSource": "질병관리청 가이드"
+    }
+  ]
+}

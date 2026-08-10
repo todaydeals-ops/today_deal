@@ -1,0 +1,82 @@
+{
+  "topic": "성장 관련 기능성 원료 인정 현황, 연령별 상한섭취량, 성장 보충제 선택 기준",
+  "brand": "알약연구소",
+  "article": "성장기 영양제, 무엇을 기준으로 고를까",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "calcium-absorption-vitamin-d-magnesium-synergy",
+    "upper-limit-intake-UL-definition-safety-threshold"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "korea-bone-health-function-claims-recognized-calcium-vitamin-d",
+      "claim": "한국 식약처가 성장·골격계 건강과 관련하여 인정한 기능성은 '뼈 건강', '치아 형성', '골다공증 위험 감소' 등 7가지이며, 이들은 칼슘, 비타민D, 아연 등을 포함한 기능성 원료로 표시 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 건강기능식품공전",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=3811&bbs_no=bbs464&ntctxt_no=1070220",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성장기 아동·청소년",
+        "분류": "골격계 기능성",
+        "시기": "2026 현행",
+        "지역": "KR"
+      },
+      "caution": "성장 속도 자체는 기능성으로 인정되지 않았으며, '뼈 건강' 범위 내에서만 표시 가능하다.",
+      "cautionSource": "식약처 건강기능식품공전"
+    },
+    {
+      "id": "children-calcium-upper-limit-1000mg-4-8years",
+      "claim": "4-8세 어린이의 칼슘 상한섭취량(UL)은 하루 1,000mg이며, 9-13세는 1,300mg이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Institute of Medicine (IOM) 칼슘 상한섭취량 기준",
+      "source_url": "https://lpi.oregonstate.edu/mic/life-stages/children",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "어린이 (연령별)",
+        "분류": "칼슘 상한섭취량",
+        "시기": "현행 기준",
+        "지역": "글로벌"
+      },
+      "caution": "고함량 칼슘 제품 동시 섭취 시 상한을 초과할 수 있으니 주의.",
+      "cautionSource": "IOM 기준"
+    },
+    {
+      "id": "children-vitamin-d-upper-limit-3000-4000-iu-age-based",
+      "claim": "4-8세 어린이의 비타민D 상한섭취량은 하루 3,000 IU(75 μg)이고, 9-13세는 4,000 IU(100 μg)이다. 12개월 이하 유아는 1,000 IU, 1-3세는 2,000 IU가 상한이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Institute of Medicine (IOM) 비타민D 상한섭취량 기준",
+      "source_url": "https://lpi.oregonstate.edu/mic/life-stages/children",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "어린이·영유아 (연령별)",
+        "분류": "비타민D 상한섭취량",
+        "시기": "현행 기준",
+        "지역": "글로벌"
+      },
+      "caution": "★비타민D 과다섭취는 고칼슘혈증을 초래할 수 있으므로 연령별 상한 준수 필수.",
+      "cautionSource": "IOM 기준"
+    },
+    {
+      "id": "children-aap-vitamin-d-recommendation-600iu-daily",
+      "claim": "미국 소아과학회(AAP)의 표준 권장량은 12개월 이상 어린이가 하루 600 IU 비타민D이며, 12개월 미만 영아는 400 IU다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Academy of Pediatrics (AAP)",
+      "source_url": "https://www.healthychildren.org/English/healthy-living/nutrition/Pages/vitamin-d-on-the-double.aspx",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "영아·어린이",
+        "분류": "권장량",
+        "시기": "현행 기준",
+        "지역": "US 기준"
+      },
+      "caution": "권장량은 결핍 예방 기준이며, 고위험군은 의료진과 상담 후 높은 용량이 필요할 수 있다.",
+      "cautionSource": "AAP 가이드"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "topic": "마카의 임상 근거 수준, 성욕 관련 효과, 국내 기능성 인정 범위",
+  "brand": "알약연구소",
+  "article": "마카, 활력 관리에서 어디에 두면 좋을까",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "rct-randomized-controlled-trial-definition-gold-standard",
+    "surrogate-endpoint-vs-clinical-outcome-discordance",
+    "industry-sponsored-research-bias-conflict-of-interest"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "maca-rct-evidence-sexual-desire-effect-size-modest",
+      "claim": "마카의 성욕 개선 효과는 RCT에서 입증되었으나 임상적 의미는 modest하며, 효과 크기는 Cohen's d = 0.37-0.44(저용량)이고, 음의 효과 크기는 d = 0.88(고산지)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Acceptability, Safety, and Efficacy of Oral Administration of Extracts of Black or Red Maca (Lepidium meyenii)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5039502/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인 (RCT N=175)",
+        "분류": "마카 추출물",
+        "시기": "12주 투여",
+        "지역": "페루(저산지·고산지)"
+      },
+      "caution": "효과 크기가 0.37-0.44로 작으며, 성욕 개선은 약 50% 참가자만 보고했다. 이는 모든 사용자에게 효과를 기대하기 어렵다는 의미다.",
+      "cautionSource": "RCT 결과"
+    },
+    {
+      "id": "maca-mood-energy-improvement-80-percent-report",
+      "claim": "마카 추출물(3g/일, 12주)에서 기분과 에너지 개선은 80% 이상의 참가자가 보고했으며, 이는 성욕 개선(약 50%)보다 높은 비율이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Acceptability, Safety, and Efficacy of Oral Administration of Extracts of Black or Red Maca (Lepidium meyenii)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5039502/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 성인",
+        "분류": "마카 추출물 (red/black)",
+        "시기": "12주",
+        "지역": "글로벌 RCT"
+      },
+      "caution": "기분과 에너지 개선은 자체 보고(subjective)이므로 위약 효과와 구분 필요.",
+      "cautionSource": "RCT 결과"
+    },
+    {
+      "id": "korea-maca-gelatinized-function-claim-sperm-motility-menopause",
+      "claim": "한국 식약처는 마카 젤라틴화 분말(제2011-7호)을 승인했으며, 기능성 표시는 '정자운동성 개선에 도움'과 '갱년기 남성 건강에 도움을 줄 수 있음'으로 제한된다. 여성의 피로·활력 개선은 국내 기능성으로 인정되지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 건강기능식품공전",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=2660&bbs_no=bbs987&ntctxt_no=21571&menu_grp=MENU_NEW01",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "남성(갱년기)",
+        "분류": "마카 젤라틴화 분말",
+        "시기": "현행 기준",
+        "지역": "KR"
+      },
+      "caution": "★국내 기능성은 정자운동성과 갱년기 남성만 인정되었다. 여성 피로나 일반 활력은 기능성 표시 불가.",
+      "cautionSource": "식약처 건강기능식품공전"
+    },
+    {
+      "id": "maca-daily-dose-standard-5-grams-gelatinized",
+      "claim": "국내 인정된 마카 젤라틴화 분말의 일일섭취량 기준은 5.0g/일이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 건강기능식품공전",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=2660&bbs_no=bbs987&ntctxt_no=21571&menu_grp=MENU_NEW01",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "마카 젤라틴화 분말 제품",
+        "분류": "용량 기준",
+        "시기": "2026 현행",
+        "지역": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "maca-menopause-women-rct-symptom-reduction",
+      "claim": "초경폐후기 여성 168명을 대상으로 한 이중맹검 RCT에서 Pre-Gelatinized 마카(Maca-GO)는 안면홍조(hot flush) 및 야간발한(night sweating) 빈도와 심각도를 유의미하게 감소시켰다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Hormone-Balancing Effect of Pre-Gelatinized Organic Maca (Lepidium peruvianum)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3614644/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "초경폐후기 여성 (N=168)",
+        "분류": "Pre-Gelatinized 마카",
+        "시기": "이중맹검 RCT",
+        "지역": "글로벌"
+      },
+      "caution": "갱년기 증상 개선은 여성 대상 RCT에서 입증되었으나, 국내 기능성은 갱년기 남성에만 인정되었다.",
+      "cautionSource": "RCT 결과·식약처 기준"
+    }
+  ]
+}

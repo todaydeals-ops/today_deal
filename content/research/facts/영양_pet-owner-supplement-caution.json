@@ -1,0 +1,96 @@
+{
+  "topic": "반려동물에게 위험한 사람 영양제 성분(자일리톨·비타민D·마늘), 종간 독성 차이, 중독 증상",
+  "brand": "알약연구소",
+  "article": "반려동물에게 사람 영양제를 주면 안 되는 이유",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "xylitol-dog-toxicity-dose-50mg-per-pound-hypoglycemia",
+      "claim": "자일리톨은 개에게 체중 파운드당 50mg 미만 용량부터 독성을 나타내며(0.03-0.045g/파운드), 자일리톨을 섭취한 개는 급속한 인슐린 분비로 저혈당(hypoglycemia)을 일으킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "VCA Animal Hospitals, PetMD, Merck Veterinary Manual",
+      "source_url": "https://vcahospitals.com/know-your-pet/xylitol-toxicity-in-dogs",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "개",
+        "분류": "자일리톨 독성",
+        "시기": "즉각적",
+        "지역": "글로벌"
+      },
+      "caution": "★체중 10파운드(약 4.5kg) 개에게 자일리톨 500mg도 중독을 초래할 수 있다.",
+      "cautionSource": "수의학 기준"
+    },
+    {
+      "id": "xylitol-dog-poisoning-symptoms-onset-20-minutes",
+      "claim": "개의 자일리톨 중독 증상은 섭취 후 20분 이내에 시작되며, 첫 증상은 구토이고, 진행하면 무기력, 약화, 몸 떨림, 경련이 발생하며 간 손상·사망까지 초래할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "VCA Animal Hospitals, PetMD",
+      "source_url": "https://vcahospitals.com/know-your-pet/xylitol-toxicity-in-dogs",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "개",
+        "분류": "중독 증상",
+        "시기": "20분~수 시간",
+        "지역": "글로벌"
+      },
+      "caution": "★즉각적 수의학 처치가 필수이며, 자일리톨은 많은 비타민과 영양제에 첨가되어 있다.",
+      "cautionSource": "수의학 임상 지침"
+    },
+    {
+      "id": "vitamin-d-dog-toxicity-symptoms-vomiting-drinking-urination",
+      "claim": "개의 비타민D 중독은 저용량에서는 구토, 설사, 음수·뇨량 증가, 복통, 무기력을 일으키고, 섭취 후 12-36시간 내에 증상이 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "VCA Animal Hospitals",
+      "source_url": "https://vcahospitals.com/know-your-pet/d",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "개",
+        "분류": "비타민D 독성",
+        "시기": "12-36시간 내 증상 발현",
+        "지역": "글로벌"
+      },
+      "caution": "비타민D는 칼슘 대사를 교란하여 고칼슘혈증·신장 손상을 초래할 수 있다.",
+      "cautionSource": "수의학 임상 지침"
+    },
+    {
+      "id": "xylitol-common-in-vitamins-supplements-pet-hazard",
+      "claim": "자일리톨은 많은 인간용 비타민·영양제·무설탕 제품의 감미료로 첨가되어 있으며, 개에게는 매우 위험하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "VCA Animal Hospitals, PetMD",
+      "source_url": "https://vcahospitals.com/know-your-pet/xylitol-toxicity-in-dogs",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "반려동물 소유자",
+        "분류": "성분 주의",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
+      "caution": "★인간용 영양제의 성분표를 항상 확인하고, 자일리톨 또는 'sugar alcohol' 표기가 있으면 반려동물에게 절대 주지 않을 것.",
+      "cautionSource": "수의학 권장사항"
+    },
+    {
+      "id": "garlic-onion-cat-dog-hemolytic-anemia-thiosulfate",
+      "claim": "마늘과 양파의 황화물(thiosulfate) 성분은 개와 고양이의 적혈구를 손상시켜 용혈성 빈혈을 일으키며, 인간보다 훨씬 더 낮은 용량에서 중독이 발생한다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "수의학 독성학 문헌 (권위 출처 미확보)",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "개·고양이",
+        "분류": "마늘·양파 독성",
+        "시기": "급성",
+        "지역": "글로벌"
+      },
+      "caution": "마늘·양파 추출물을 포함한 영양제는 반려동물에게 금지된다. 권위 수의학 출처 재확보 필요.",
+      "cautionSource": "수의학 기준"
+    }
+  ]
+}

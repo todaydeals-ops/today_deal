@@ -1,0 +1,82 @@
+{
+  "topic": "글루타치온의 경구 생물이용률 논쟁, 피부 미백 효과, 국내 기능성 미인정",
+  "brand": "알약연구소",
+  "article": "먹는 글루타치온, 무엇을 기준으로 고를까",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "surrogate-endpoint-vs-clinical-outcome-discordance",
+    "high-dose-supplement-paradox-bioavailability"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "glutathione-oral-bioavailability-below-1-percent",
+      "claim": "경구 글루타치온의 생물이용률은 1% 미만으로 극히 낮으며, 소화 효소(감마글루타밀전이효소)에 의해 분해되고 위산에 의해 손상되어 거의 혈류에 도달하지 못한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Glutathione Absorption and Bioavailability Studies",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11945201/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "경구 글루타치온",
+        "분류": "생물이용률",
+        "시기": "현행 기준",
+        "지역": "글로벌"
+      },
+      "caution": "★리포소말 형태의 글루타치온은 인지질 캡슐화로 보호되어 흡수가 향상되지만, 일반 경구 형태는 효과가 제한적이다.",
+      "cautionSource": "생물이용률 연구"
+    },
+    {
+      "id": "glutathione-skin-whitening-efficacy-localized-temporary-effect",
+      "claim": "글루타치온의 피부 미백 효과는 3개 RCT의 체계적 고찰에서 혼합 결과를 보였으며, 일부 연구는 얼굴·팔뚝 등 특정 부위에서만 효과를 보였고, 중단 후 6개월 내 효과가 사라진다(n=16, 6.2%만 지속 개선).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Systemic Glutathione as a Skin-Whitening Agent in Adult (Systematic Review)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7196133/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 성인",
+        "분류": "글루타치온 보충제",
+        "시기": "12주 투여·중단 후 6개월 추적",
+        "지역": "글로벌 RCT"
+      },
+      "caution": "효과가 신체 일부에만 나타나고 지속성이 없으므로, 미백 효과를 근거로 장기 복용을 권하기 어렵다.",
+      "cautionSource": "체계적 고찰 결론"
+    },
+    {
+      "id": "korea-glutathione-no-functional-claim-approved",
+      "claim": "한국 식약처는 글루타치온을 건강기능식품의 기능성 원료로 인정하지 않았으며, 피부 미백·간 기능 개선·피로 회복 등의 효과로 표시하면 부당광고에 해당한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 건강기능식품공전, 부당광고 규제",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/safefoodlife/notification.do?ntfc_dvs=NTFC09&menu_grp=MENU_NEW04&menu_no=3797",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "국내 글루타치온 제품",
+        "분류": "기능성 인정 여부",
+        "시기": "2018년 이후 현행",
+        "지역": "KR"
+      },
+      "caution": "★2018년 5월 식약처는 피부 미백 목적의 글루타치온 주사 사용을 공식 권장하지 않았다.",
+      "cautionSource": "식약처 공식 입장"
+    },
+    {
+      "id": "glutathione-40-years-old-women-higher-efficacy",
+      "claim": "글루타치온 피부 미백 효과는 40세 이상 여성에서만 통계적으로 유의한 개선을 보였으며, 젊은 연령층에서는 효과가 제한적이었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Systemic Glutathione as a Skin-Whitening Agent (Weschawalit et al., 2017)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7196133/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "여성 (연령별 분석)",
+        "분류": "피부 미백 효과",
+        "시기": "RCT",
+        "지역": "글로벌"
+      },
+      "caution": "40세 미만은 효과가 제한적이므로, 연령별로 다른 접근이 필요하다.",
+      "cautionSource": "RCT 부분석"
+    }
+  ]
+}

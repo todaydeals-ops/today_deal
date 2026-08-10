@@ -1,0 +1,133 @@
+{
+  "topic": "국내 맞춤형 영양제 소분 판매 규제, 추천 알고리즘의 한계, 구독 서비스 현황",
+  "brand": "알약연구소",
+  "article": "맞춤형 영양제 구독, 무엇을 근거로 추천할까",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "korea-health-food-certified-form-standard-raw-material",
+    "korea-health-food-individual-approval-raw-material"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "korea-customized-health-supplement-division-system-2025-launched",
+      "claim": "한국은 2025년 1월 3일부터 '맞춤형 건강기능식품판매업' 제도를 공식 시행했으며, 이전에는 2020-2022년 규제 샌드박스로 시범 운영했다. 제도 시행으로 소비자가 개인 건강 상태와 생활습관에 맞춰 원하는 제품을 1회분씩 구매할 수 있게 되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 신규 산업 지원 공고",
+      "source_url": "https://www.mfds.go.kr/usr/rgltnInvtView.do?seq=202300006",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "국내 맞춤형 영양제 판매",
+        "분류": "규제 변화",
+        "시기": "2025-01-03 시행",
+        "지역": "KR"
+      },
+      "caution": "★맞춤형 판매는 약사·영양사 등 전문가와의 상담을 전제로 하며, 무분별한 알고리즘 추천만으로는 법적 요건을 충족하지 못한다.",
+      "cautionSource": "식약처 제도 안내"
+    },
+    {
+      "id": "korea-customized-supplement-portioning-form-limit-3types",
+      "claim": "맞춤형 건강기능식품 소분 허용 제형은 정제, 캡슐, 환 3가지로 제한되며, 액상·분말·차 등 다른 형태의 소분은 허용되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품안전나라 맞춤형 건강기능식품 제도 안내",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?bbs_no=bbs001&ntctxt_no=1104163&menu_no=3120",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "소분 판매 제형",
+        "분류": "규제 범위",
+        "시기": "2025 현행",
+        "지역": "KR"
+      },
+      "caution": "액상이나 분말 형태의 맞춤 조합은 별도 별도 판매해야 하며, 혼합 소분 불가.",
+      "cautionSource": "식품안전나라 기준"
+    },
+    {
+      "id": "korea-customized-supplement-manager-credential-7categories",
+      "claim": "맞춤형 건강기능식품 소분·조합 판매업소는 반드시 약사, 의사, 한의사, 간호사, 영양사, 한약사, 치과의사 중 한 명의 전문가를 선임해야 하며, 전문가의 개별 상담(대면·영상·전화·채팅)을 거친 후에만 판매 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품안전나라 맞춤형 건강기능식품 제도 안내",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?bbs_no=bbs001&ntctxt_no=1104163&menu_no=3120",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "맞춤형 판매업 운영자",
+        "분류": "전문가 자격 요건",
+        "시기": "2025 현행",
+        "지역": "KR"
+      },
+      "caution": "★알고리즘만으로는 법적 요건을 충족할 수 없으며, 반드시 생의(生의) 상담자가 필요하다.",
+      "cautionSource": "식품안전나라 제도 기준"
+    },
+    {
+      "id": "korea-customized-supplement-labeling-requirement-consumer-name",
+      "claim": "맞춤형 건강기능식품 판매시 제작된 맞춤 라벨에는 소비자 이름, 일일섭취량, 제조일, 업체명/소재지, 보관방법을 반드시 기재해야 하며, 원본 제품 정보도 함께 제공되어야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품안전나라 맞춤형 건강기능식품 제도 안내",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?bbs_no=bbs001&ntctxt_no=1104163&menu_no=3120",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "맞춤형 소분 제품",
+        "분류": "표시 기준",
+        "시기": "2025 현행",
+        "지역": "KR"
+      },
+      "caution": "표시 누락이나 부정확한 정보는 식약처 적발 대상이며, 소비자 정보 보호와 추적성이 핵심이다.",
+      "cautionSource": "식품안전나라 제도 기준"
+    },
+    {
+      "id": "ai-customized-supplement-recommendation-algorithm-limitation",
+      "claim": "AI 알고리즘 기반 영양제 추천 서비스는 사용자 건강 설문과 생활습관 데이터로 맞춤 조합을 제안하지만, 설문 기반 평가는 의료 검진을 대체할 수 없으며 개인의 생화학적 검사(혈액·대사) 결과를 반영하지 못한다는 근본적 한계가 있다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "산업 전문가·미디어 분석 (권위 출처 미확보)",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "AI 맞춤형 추천 서비스",
+        "분류": "알고리즘 한계",
+        "시기": "현행",
+        "지역": "KR"
+      },
+      "caution": "★설문 만으로는 실제 영양 결핍(예: B12·철분·비타민D)을 진단할 수 없으므로, 정확한 추천을 위해서는 의료진의 혈액 검사 기반 상담이 필수다.",
+      "cautionSource": "산업 분석"
+    },
+    {
+      "id": "customized-supplement-individual-packaging-convenience-and-adherence",
+      "claim": "맞춤형 영양제의 개별 포장·정기 배송 모델은 소비자의 복용 편의성과 약물 순응도를 높이는 장점이 있으며, 개인마다 다른 건강 상태를 반영한 조합을 제공한다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "산업 보도, 소비자 평가 (권위 출처 미확보)",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "맞춤형 구독 서비스 사용자",
+        "분류": "편의성·순응도",
+        "시기": "현행",
+        "지역": "KR"
+      },
+      "caution": "편의성은 장점이지만, 추천 근거가 부족하면 불필요한 영양제 복용으로 이어질 수 있다.",
+      "cautionSource": "사용자 후기"
+    },
+    {
+      "id": "customized-supplement-regulatory-gap-elderly-digital-literacy",
+      "claim": "맞춤형 건강기능식품 제도는 복잡한 신고 체계와 전문 용어로 인해 고령층·정보 이해도가 낮은 소비자들이 제도를 이해하고 접근하기 어려운 구조적 한계를 가지고 있다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "산업 분석·소비자보호 평가 (권위 출처 미확보)",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "고령·저정보층 소비자",
+        "분류": "제도 접근성 격차",
+        "시기": "2025 시행 이후",
+        "지역": "KR"
+      },
+      "caution": "★제도 시행으로 혜택을 받을 수 있는 집단과 소외될 집단의 양극화 가능성이 있다.",
+      "cautionSource": "산업·정책 분석"
+    }
+  ]
+}

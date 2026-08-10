@@ -1,0 +1,82 @@
+{
+  "topic": "오메가3·DHA·포스파티딜세린의 인지 기능·집중력 효과, RCT 근거 수준",
+  "brand": "알약연구소",
+  "article": "수험생 영양제, 집중력 관리에 어디까지 도움이 될까",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "small-sample-size-low-statistical-power",
+    "industry-sponsored-research-bias-conflict-of-interest"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "omega3-dha-attention-improvement-meta-analysis-2000mg",
+      "claim": "오메가3 58개 RCT 메타분석에서 하루 2,000mg 투여 시 주의력(attention)이 유의미하게 개선되었으나, 근거 질이 낮고(low quality evidence), 26주 이상 장기 투여와 BMI > 25인 참가자에서 효과가 두드러졌다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Nature/Scientific Reports: A systematic review and dose response meta analysis of Omega 3 supplementation on cognitive function",
+      "source_url": "https://www.nature.com/articles/s41598-025-16129-8",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 아동·청년·성인",
+        "분류": "오메가3 DHA",
+        "시기": "메타분석 N=58 RCT",
+        "지역": "글로벌"
+      },
+      "caution": "★근거 질이 낮으므로 단기 수험 기간보다는 장기(26주 이상) 꾸준한 복용이 효과적일 수 있다.",
+      "cautionSource": "메타분석 결론"
+    },
+    {
+      "id": "omega3-adhd-children-mixed-evidence-some-benefit",
+      "claim": "ADHD 아동 대상 오메가3 RCT는 혼합된 결과를 보였으며, 일부는 인지·행동 개선을 보고했고 일부는 위약과 차이가 없었다. 오메가3 상태와 주의력의 연관은 일부 연구에서 입증되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Omega-3 Polyunsaturated Fatty Acid Supplementation in Children With Attention-Deficit Hyperactivity Disorder",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12553300/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "ADHD 아동",
+        "분류": "오메가3 효과",
+        "시기": "RCT",
+        "지역": "글로벌"
+      },
+      "caution": "ADHD는 의료진 진단이 필수이며, 영양제만으로는 불충분할 수 있다.",
+      "cautionSource": "RCT 혼합 결과"
+    },
+    {
+      "id": "phosphatidylserine-cognitive-function-modest-improvement-long-term",
+      "claim": "포스파티딜세린(PS) 임상 시험은 30년 이상 축적되었으며, 메모리 테스트뿐 아니라 주의력·정보처리 속도 개선이 보고되었다. 최근 RCT는 12개월 투여 후 혈청 신경영양인자(BDNF)와 신경전달물질 증가를 동반한 인지 점수 개선을 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Alzheimer's Drug Discovery Foundation, Springer Nature (Neurology and Therapy)",
+      "source_url": "https://link.springer.com/article/10.1007/s40120-023-00454-z",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 성인·노인",
+        "분류": "포스파티딜세린",
+        "시기": "RCT 12개월",
+        "지역": "글로벌"
+      },
+      "caution": "포스파티딜세린 화학 구성이 연구마다 다르므로 결과 비교 어려우며, 장기 데이터가 부족하다.",
+      "cautionSource": "임상 근거 평가"
+    },
+    {
+      "id": "phosphatidylserine-neuronal-membrane-function-mechanism",
+      "claim": "포스파티딜세린은 신경 세포막의 신호 전달, 분비 소포 방출, 세포 간 통신을 촉진하여 신경 기계의 효율성을 높인다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "의학 생화학 문헌 (권위 출처 미확보)",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "신경계",
+        "분류": "작용 기전",
+        "시기": "기초 연구",
+        "지역": "글로벌"
+      },
+      "caution": "기전의 입증이 효과 입증을 의미하지 않으며, 실제 인지 개선의 임상적 크기는 modest하다. 권위 출처 재확보 필요.",
+      "cautionSource": "기초 신경과학"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "topic": "건강기능식품 면역 기능성 표시 범위, 질병예방 표현 금지선, 베타글루칸·프로바이오틱스 인정 현황",
+  "brand": "알약연구소",
+  "article": "면역 관련 표시, 어디까지 표기할 수 있을까",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "korea-health-food-function-claim-disease-prevention-prohibition",
+    "korea-health-food-unsubstantiated-comparative-advertising-ban"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "immunity-function-claim-permitted-scope-korea",
+      "claim": "한국 식약처가 인정하는 면역 관련 기능성 표시는 '면역력 증진에 도움을 줄 수 있음', '건강한 면역기능 유지에 도움' 등 '도움을 주다/줄 수 있음' 형태로 제한되며, '감기 예방', '질병 예방·치료'는 절대 금지된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 건강기능식품 표시기준, 부당광고 규제",
+      "source_url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000218988",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "면역 기능성 표시",
+        "분류": "표시 기준",
+        "시기": "2026 현행",
+        "지역": "KR"
+      },
+      "caution": "★'감기 예방', '항바이러스', '질병 치료'는 의약품 표현으로 부당광고 적발 대상이다.",
+      "cautionSource": "식약처 표시기준"
+    },
+    {
+      "id": "korea-beta-glucan-immune-function-approved",
+      "claim": "베타글루칸은 한국 식약처에서 '면역기능 증진에 도움을 줄 수 있음'으로 기능성을 인정한 고시형 원료이며, 부작용이 거의 없으면서도 강력한 면역조절 효과가 입증되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 건강기능식품공전",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=3811&bbs_no=bbs464",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "베타글루칸 원료",
+        "분류": "기능성 인정",
+        "시기": "2026 현행",
+        "지역": "KR"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "korea-probiotics-multiple-function-claims-recognized",
+      "claim": "프로바이오틱스는 식약처에서 장 건강 외에 '면역과민반응에 의한 피부 상태 개선', '코 상태 개선', '갱년기 여성 건강', '질 내 유익균 증식·유해균 억제', '체지방 감소' 등 다양한 기능성으로 인정하였으며, 균주마다 인정된 기능이 다르다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 기능성 원료 인정 현황",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=3811&bbs_no=bbs464",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "프로바이오틱스 균주",
+        "분류": "다중 기능성",
+        "시기": "2026 현행",
+        "지역": "KR"
+      },
+      "caution": "★제품이 포함한 균주가 어느 기능성을 인정받았는지 반드시 확인해야 한다. 일반적 프로바이오틱스는 장 건강만 인정될 수 있다.",
+      "cautionSource": "식약처 기능성 원료 인정 체계"
+    },
+    {
+      "id": "disease-prevention-expression-prohibition-clinical-interpretation",
+      "claim": "한국에서 '감기 예방', '감염 예방', '항바이러스' 같은 표현은 질병 예방으로 분류되어 건강기능식품에서 절대 사용 불가하며, 이를 위반한 광고는 행정처분 대상이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 부당광고 규제 지침",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/board.do?menu_grp=MENU_NEW01&menu_no=4838",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 건강기능식품",
+        "분류": "질병예방 표현 금지",
+        "시기": "2026 현행",
+        "지역": "KR"
+      },
+      "caution": "면역제 광고 시 '면역력 강화'는 되고, '감기·질병 예방'은 안 된다는 명확한 경계를 인식해야 한다.",
+      "cautionSource": "식약처 부당광고 규제"
+    }
+  ]
+}

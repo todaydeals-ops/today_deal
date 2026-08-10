@@ -1,0 +1,99 @@
+{
+  "topic": "먹는 콜라겐·히알루론산의 소화·흡수·분포 경로, 피부 도달 메커니즘, 임상 근거",
+  "brand": "알약연구소",
+  "article": "이너뷰티, 어떤 성분이 어디까지 도달할까",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "high-dose-supplement-paradox-bioavailability",
+    "surrogate-endpoint-vs-clinical-outcome-discordance"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "collagen-peptide-oral-absorption-bioavailability-50-percent",
+      "claim": "경구 콜라겐 펩타이드의 생물이용률은 약 50%(쥐 동물 모델)에서 74-86%(인간 젤라틴 흡수)까지 보고되었으며, 소장에서 63% 이상이 펩타이드 형태로 흡수된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Determination of bioavailability and identification of collagen peptide in blood after oral ingestion of gelatin",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/25410396/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "경구 콜라겐 펩타이드",
+        "분류": "생물이용률",
+        "시기": "in vivo RCT",
+        "지역": "글로벌"
+      },
+      "caution": "콜라겐은 소장에서 주로 펩타이드 형태로 흡수되며, 완전한 콜라겐 분자는 소화되지 않는다.",
+      "cautionSource": "RCT 결과"
+    },
+    {
+      "id": "collagen-dipeptide-tripeptide-rapid-absorption-1-hour",
+      "claim": "콜라겐 펩타이드 중 글리실프롤릴히드록시프롤린과 프롤릴히드록시프롤린 같은 이펜타이드·삼펜타이드 형태만 소장에서 1시간 내에 빠르게 흡수되며, 이는 콜라겐 펩타이드의 생리활성을 결정하는 핵심 형태다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Frontiers in Nutrition: Absorption of bioactive peptides following collagen hydrolysate intake",
+      "source_url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1416643/full",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "콜라겐 가수분해물",
+        "분류": "펩타이드 형태별 흡수",
+        "시기": "RCT 1시간 추적",
+        "지역": "글로벌"
+      },
+      "caution": "★콜라겐 제품의 효과는 펩타이드 형태에 따라 달라지며, 분자 크기 규격이 중요하다.",
+      "cautionSource": "RCT 결과"
+    },
+    {
+      "id": "collagen-protease-degradation-functionality-loss-stomach-intestine",
+      "claim": "콜라겐 펩타이드는 산성 위장 환경과 프로테아제 풍부한 소장에서 대부분 분해되어 기능성 펩타이드로서 활성을 잃을 수 있으며, 41.91%만 펩타이드 형태로 흡수된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect: Bioavailability and Bioavailable Forms of Collagen after Oral Administration",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0924224424005259",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "경구 콜라겐",
+        "분류": "소화 분해",
+        "시기": "GIT 통과",
+        "지역": "글로벌"
+      },
+      "caution": "제조 과정의 펩타이드 규격(분자량 크기)이 최종 흡수율에 큰 영향을 미친다.",
+      "cautionSource": "생물이용률 연구"
+    },
+    {
+      "id": "hyaluronic-acid-oral-absorption-intact-molecules-lymphoid-tissue",
+      "claim": "경구 히알루론산은 일부가 온전한 분자 형태로 흡수되며, 장 관련 림프조직(Peyer's patch)을 통해 흡수된 후 결합 조직(피부·관절)에 분포한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Scientific Reports: Oral sodium hyaluronate improves skin hydration, barrier function and signs of aging",
+      "source_url": "https://www.nature.com/articles/s41598-025-32758-5",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "저분자 히알루론산",
+        "분류": "흡수 경로",
+        "시기": "RCT",
+        "지역": "글로벌"
+      },
+      "caution": "히알루론산은 콜라겐과 달리 일부가 온전한 형태로 흡수되며, 이것이 피부 수화 효과의 기전이다.",
+      "cautionSource": "약동학 연구"
+    },
+    {
+      "id": "hyaluronic-acid-skin-hydration-rct-12-weeks",
+      "claim": "저분자 히알루론산의 RCT(129명, 이중맹검)에서 경구 투여 후 2-8주 내 피부 수화 유의미 개선, 4-8주에 피부 톤 개선, 12주에 표피 두께 증가가 관찰되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Oral administration of hyaluronic acid to improve skin conditions via randomized double-blind clinical test",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10661223/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인 여성 (N=129)",
+        "분류": "히알루론산 경구",
+        "시기": "12주 RCT",
+        "지역": "글로벌"
+      },
+      "caution": "효과는 용량·형태·투여 기간에 따라 달라지며, 중단 후 효과의 지속성은 추가 연구가 필요하다.",
+      "cautionSource": "RCT 결과"
+    }
+  ]
+}
