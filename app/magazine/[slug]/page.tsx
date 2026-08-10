@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
 import { b4asCategoryOf } from "@/lib/magazine/b4asCategories";
+import { canonicalArticleUrl } from "@/lib/magazine/owner";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { fetchMagazineBySlug, fetchRelatedMagazine } from "@/lib/data/magazine";
@@ -38,7 +39,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${a.title} | ${brand}`,
     description: desc,
     ...(a.tags?.length ? { keywords: a.tags } : {}),
-    alternates: { canonical: `${SITE}/magazine/${slug}` },
+    // canonical 은 주인 브랜드 호스트로 — 같은 글이 5개 호스트에서 열리던 중복을 정본 하나로 모은다.
+    alternates: { canonical: canonicalArticleUrl(slug) },
     openGraph: { title: a.title, description: desc, url: `${SITE}/magazine/${slug}`, type: "article", siteName: brand, images: [...(a.image?.url ? [{ url: a.image.url, alt: a.title }] : []), { url: `${SITE}/magazine/opengraph-image`, width: 1200, height: 630, alt: brand }] },
   };
 }

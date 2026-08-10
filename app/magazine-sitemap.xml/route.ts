@@ -1,5 +1,6 @@
 import { fetchMagazineList } from "@/lib/data/magazine";
 import { fetchReportList } from "@/lib/data/magazine-report";
+import { canonicalArticleUrl } from "@/lib/magazine/owner";
 
 export const revalidate = 3600; // 1시간 CDN 캐시 — 하루 2편 발행분이 사이트맵에 빨리 반영되도록(콜드스타트 부담 적음)
 const SITE = "https://www.todaydeals.co.kr";
@@ -15,7 +16,7 @@ export async function GET() {
     `<url><loc>${SITE}/magazine</loc><changefreq>daily</changefreq><priority>0.9</priority></url>`,
     // 개별 아티클
     ...articles.map((a) =>
-      `<url><loc>${SITE}/magazine/${a.slug}</loc><lastmod>${a.createdAt.slice(0, 10)}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`
+      `<url><loc>${canonicalArticleUrl(a.slug)}</loc><lastmod>${a.createdAt.slice(0, 10)}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`
     ),
     // 리포트
     ...reports.map((r) =>

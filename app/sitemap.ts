@@ -4,6 +4,7 @@ import { fetchCuratedSlugs } from "@/lib/data/curated";
 import { fetchBoardSitemap, BOARD_CATEGORIES } from "@/lib/data/board";
 import { fetchMagazineList } from "@/lib/data/magazine";
 import { fetchReportList } from "@/lib/data/magazine-report";
+import { canonicalArticleUrl } from "@/lib/magazine/owner";
 
 const SITE = "https://www.todaydeals.co.kr";
 
@@ -56,7 +57,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // 매거진(중립 쇼핑 가이드) 글 — 실제 발행일을 lastmod로
   const mag = await fetchMagazineList({ limit: 1000, all: true });
   const magazinePages: MetadataRoute.Sitemap = mag.map((a) => ({
-    url: `${SITE}/magazine/${a.slug}`,
+    url: canonicalArticleUrl(a.slug),
     lastModified: new Date(a.createdAt),
     changeFrequency: "monthly",
     priority: 0.7,
