@@ -19,7 +19,7 @@ export const BEAUTY_CATEGORIES: BeautyCategory[] = [
   },
   {
     key: "renew", label: "미백·주름", en: "RENEW", color: "#8a7a3a", angle: "색소와 노화 개선",
-    slugs: ["retinol-wrinkle","niacinamide-tone","vitamin-c-serum","tranexamic-azelaic-pigment","peptide-skincare","caffeine-eye-puffiness"],
+    slugs: ["retinol-wrinkle","niacinamide-tone","vitamin-c-serum","tranexamic-azelaic-pigment","peptide-skincare","caffeine-eye-puffiness","retinaldehyde-retinoid","arbutin-whitening","vitamin-e-tocopherol-skin","ferulic-acid-antioxidant","resveratrol-topical"],
   },
   {
     key: "clear", label: "트러블·모공", en: "CLEAR", color: "#5a7a5a", angle: "여드름과 피지",
@@ -35,7 +35,7 @@ export const BEAUTY_CATEGORIES: BeautyCategory[] = [
   },
   {
     key: "body", label: "다이어트·바디", en: "BODY", color: "#9a5a6a", angle: "체중감량과 바디케어",
-    slugs: ["garcinia-weight","cla-body-fat"],
+    slugs: ["garcinia-weight","cla-body-fat","carnitine-fat-burn","green-tea-egcg","chromium-blood-sugar","dietary-fiber-satiety","glucomannan-appetite","capsaicin-thermogenesis"],
   },
 ];
 
