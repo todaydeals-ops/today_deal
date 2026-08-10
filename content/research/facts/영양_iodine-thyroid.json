@@ -1,0 +1,113 @@
+{
+  "topic": "요오드와 갑상선: 한국인 과잉 섭취, 갑상선 질환자 제한 가이드",
+  "brand": "알약연구소",
+  "article": "iodine-thyroid",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "iodine-requirement-adult-150-mcg-daily",
+      "claim": "성인의 요오드 일일 권장 섭취량은 150μg이며, 임신부·수유부는 각각 240μg과 290μg이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국인 영양소 섭취기준(2020, KDRI), NIH ODS",
+      "source_url": "https://ods.od.nih.gov/factsheets/Iodine-HealthProfessional/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인(19-64세), 임신부, 수유부",
+        "분류": "요오드 권장량",
+        "시기": "연중",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "korean-iodine-intake-417-mcg-daily-4.8-fold-recommendation",
+      "claim": "한국인의 평균 일일 요오드 섭취량은 417μg으로, 권장량(150μg)의 2.8~4.8배에 달하며, 주 원인은 해조류(다시마, 미역, 김) 섭취로, 전체 요오드의 75% 이상을 공급받는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국영양학회 요오드 섭취 현황 보고(2022), 대한급식신문",
+      "source_url": "https://synapse.koreamed.org/upload/synapsedata/pdfdata/0124kjn/kjn-44-82.pdf",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "한국인 전체",
+        "분류": "현황 조사",
+        "시기": "현재(2022-2026)",
+        "지역": "KR"
+      },
+      "caution": "★한국인은 평소 식생활(특히 국 종류)만으로도 충분하므로, 추가 요오드 보충제는 일반적으로 필요하지 않다.",
+      "cautionSource": "한국영양학회 권고"
+    },
+    {
+      "id": "iodine-upper-limit-intake-2400-mcg-daily",
+      "claim": "성인의 요오드 상한섭취량은 2,400μg이며, 이를 초과하면 갑상선 기능 이상(갑상선염, 기능 저하증, 기능 항진증) 위험이 높아진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH ODS, 미국 내분비학회(ATA)",
+      "source_url": "https://ods.od.nih.gov/factsheets/Iodine-HealthProfessional/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인",
+        "분류": "요오드 상한량",
+        "시기": "연중",
+        "지역": "글로벌"
+      },
+      "caution": "한국인은 평균 417μg이므로 상한까지 여유가 있으나, 임신부가 다시마를 과다 섭취하면 위험에 근접할 수 있다.",
+      "cautionSource": "갑상선 기능 이상 임상 보고"
+    },
+    {
+      "id": "kelp-seaweed-iodine-content-extremely-high-179000-mcg-100g",
+      "claim": "다시마 100g은 약 179,060μg의 요오드를 포함하여 일일 상한치(2,400μg)의 약 100배에 해당하며, 미역은 약 2,000-3,000μg, 김은 1,000-5,000μg을 포함한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미국 국립보건원(NIH), 명지병원 당뇨내분비센터 분석",
+      "source_url": "https://mjh.or.kr/diabete/health/class/iodine.do",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "해조류 소비자",
+        "분류": "식품 요오드 함량",
+        "시기": "일상 섭취",
+        "지역": "한국"
+      },
+      "caution": "★다시마를 한 번에 많은 양 섭취하거나 다시마 환·가루를 과다 복용하면 급성 갑상선 기능 저하 또는 염증이 올 수 있다.",
+      "cautionSource": "갑상선 임상 경험"
+    },
+    {
+      "id": "hashimoto-hypothyroidism-graves-hyperthyroidism-iodine-caution",
+      "claim": "하시모토 갑상선염(자가면역 갑상선염)이나 그레이브스병(자가면역 갑상선항진증) 환자가 요오드를 과도하게 섭취하면 자가항체 활성화로 질병이 악화될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미국 내분비학회(ATA) 갑상선 질환 가이드라인, 명지병원 내분비과",
+      "source_url": "https://mjh.or.kr/diabete/health/class/iodine.do",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "하시모토 갑상선염, 그레이브스병 환자",
+        "분류": "요오드 제한",
+        "시기": "질병 진행 중",
+        "지역": "글로벌"
+      },
+      "caution": "★평상시 식사량의 해조류(국, 밥 한끼분)는 문제 없으나, 다시마 환·미역 가루·요오드 보충제는 피해야 한다. 의료진과 상담 후 식이를 결정할 것.",
+      "cautionSource": "ATA 갑상선 질환 식이 가이드라인"
+    },
+    {
+      "id": "radioactive-iodine-therapy-low-iodine-diet-2-weeks-prior",
+      "claim": "갑상선암 환자의 방사성 요오드(I-131) 치료를 받을 경우, 치료 2주 전부터 저요오드 식단을 실시해야 하며, 해조류·유제품·계란·어패류 등 요오드 함유 식품을 엄격히 제한한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원 핵의학과 저요오드식 가이드, ATA 방사성 요오드 치료 지침",
+      "source_url": "https://nm.amc.seoul.kr/asan/depts/nm/K/content.do?menuId=938",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "방사성 요오드 치료 예정 갑상선암 환자",
+        "분류": "치료 식이 제한",
+        "시기": "치료 2주 전~치료 직후",
+        "지역": "글로벌(한국 병원 기준)"
+      },
+      "caution": "★저요오드식은 의료진의 명시적 지시 하에서만 진행해야 하며, 일반 갑상선 환자가 무단으로 저요오드식을 시행하면 갑상선 호르몬 부족이 올 수 있다.",
+      "cautionSource": "방사성 요오드 치료 안전 프로토콜"
+    }
+  ]
+}

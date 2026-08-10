@@ -1,0 +1,117 @@
+{
+  "topic": "코엔자임Q10과 심부전, 임상 근거·스타틴 병용·심혈관 사건 예방",
+  "brand": "알약연구소",
+  "article": "코엔자임Q10 심부전 환자 복용, 근거가 있나",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "coq10-ubiquinol-ubiquinone-form-difference",
+    "statin-induced-muscle-symptoms-sams-mechanism",
+    "coq10-anticoagulant-interaction-warfarin-caution"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "q-symbio-trial-heart-failure-mortality-reduction",
+      "claim": "2014년 Q-SYMBIO 무작위대조시험(441명, 만성심부전 NYHA III-IV, 중앙 추적 2년)에서 코엔자임Q10 100mg 3회/일 투여는 주요 심혈관 사건(심혈관 사망·입원)을 유의하게 감소시켰다. 심부전 증상 개선(NYHA 등급 1단계 이상 호전)도 58%에서 나타났다(위약 45%).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JACC: Heart Failure 2014, Q-SYMBIO Trial",
+      "source_url": "https://www.jacc.org/doi/10.1016/j.jchf.2014.06.008",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "중등도~중증 심부전(NYHA III-IV) 환자",
+        "분류": "임상 결과",
+        "시기": "2014년",
+        "지역": "유럽(다국가)"
+      },
+      "caution": "★Q-SYMBIO는 심부전 환자에서 코엔자임Q10의 유일한 양성 RCT다. 하지만 표본 크기가 작고 단일 지역 연구이며, 다른 국가의 추가 재현 연구가 부족하다. 아직도 대규모 다기관 확인 임상이 필요하다.",
+      "cautionSource": "임상 설계 제한"
+    },
+    {
+      "id": "coq10-heart-failure-safety-profile",
+      "claim": "Q-SYMBIO 시험에서 코엔자임Q10 300mg/day 투여는 위약과 유사한 수준의 안전성을 보였으며, 주요 이상사례가 증가하지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JACC: Heart Failure 2014, Q-SYMBIO Trial Safety Analysis",
+      "source_url": "https://www.jacc.org/doi/10.1016/j.jchf.2014.06.008",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "심부전 환자",
+        "분류": "안전성",
+        "시기": "2014년",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "coq10-statin-interaction-heart-failure",
+      "claim": "스타틴은 HMG-CoA 환원효소를 억제하여 콜레스테롤과 함께 코엔자임Q10 합성도 억제한다. 따라서 심부전 환자가 스타틴과 코엔자임Q10을 병용할 경우, 스타틴의 혈청 CoQ10 저하 효과를 상쇄하는 이론적 근거가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Mayo Clinic Proceedings: Coenzyme Q10 and Statin-Induced Myopathy",
+      "source_url": "https://www.mayoclinicproceedings.org/article/S0025-6196(14)00799-X/abstract",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "스타틴 복용 심부전 환자",
+        "분류": "약물 상호작용·기전",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "Q-SYMBIO 시험 참가자도 많은 수가 스타틴을 복용 중이었으므로, 스타틴 병용 상황에서 코엔자임Q10이 도움이 될 수 있다는 간접 근거가 있다. 하지만 스타틴 근육통(SAMS) 완화와 심부전 개선은 별개 임상 문제다.",
+      "cautionSource": "임상 시험 설계"
+    },
+    {
+      "id": "coq10-heart-failure-mechanism-mitochondrial-atp",
+      "claim": "코엔자임Q10은 미토콘드리아 호흡 사슬(electron transport chain)에서 ATP 에너지 생산에 필수적이다. 심부전 환자에서 미토콘드리아 기능이 저하되면 심근 수축력이 감소하므로, 이론적으로 CoQ10 보충이 에너지 생산을 개선할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Circulation: Heart Failure - Coenzyme Q10 and Heart Failure",
+      "source_url": "https://www.ahajournals.org/doi/10.1161/circheartfailure.115.002639",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "심부전 환자",
+        "분류": "생화학 기전",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "기전이 있지만 모든 심부전 환자에게 효과가 있는 것은 아니다. Q-SYMBIO는 NYHA III-IV(중등도~중증)에서만 효과를 보였으며, 경도 심부전이나 예방 적응증은 아직 입증되지 않았다.",
+      "cautionSource": "임상 집단 제한"
+    },
+    {
+      "id": "coq10-heart-failure-bioavailability-variability",
+      "claim": "코엔자임Q10은 지용성 성분이므로 생체이용률이 개인차가 크고, 제형(유비퀴논 vs 유비퀴놀)·동반 식사 지방 함량·개인 흡수 능력에 따라 혈중 농도가 크게 달라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect: Bioavailability of CoQ10 Ubiquinone vs Ubiquinol",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S2161831322012479",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "코엔자임Q10 섭취자",
+        "분류": "흡수 변이성",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "Q-SYMBIO 시험이 100mg 3회(총 300mg/day)를 사용했으므로, 이보다 훨씬 낮은 용량(예: 30~50mg)에서는 효과 검증이 안 되었다. 일반 건강기능식품이 Q-SYMBIO 프로토콜과 다를 경우 결과를 기대하기 어렵다.",
+      "cautionSource": "임상 용량 확보 필수"
+    },
+    {
+      "id": "coq10-hypertrophic-dilated-heart-failure-distinction",
+      "claim": "Q-SYMBIO 시험은 확장성 심부전(dilated cardiomyopathy) 중심이었으며, 비후성 심부전(hypertrophic cardiomyopathy) 또는 수축성 심부전(systolic) vs 이완성 심부전(diastolic)에서의 효과는 아직 명확하지 않다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "웹검색으로 아형별 데이터 미확보",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "심부전 아형",
+        "분류": "임상 효과의 세부",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
+      "caution": "Q-SYMBIO 원문 또는 추가 서브그룹 분석 논문 확인 필요. 일반화하기 전에 자신의 심부전 타입(LVEF, 아형)을 의료진과 확인하면, 코엔자임Q10의 개인 적용 가능성을 판단할 수 있다.",
+      "cautionSource": "임상 설계 세부 미확인"
+    }
+  ]
+}

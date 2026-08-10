@@ -1,0 +1,96 @@
+{
+  "topic": "카페인의 눈 밑 붓기 완화 기전: 혈관수축·침투·지속시간",
+  "brand": "뷰티·성분연구소",
+  "article": "caffeine-eye-puffiness",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "caffeine-phosphodiesterase-inhibitor-vasoconstrictive-mechanism",
+      "claim": "카페인은 포스포디에스터라제(phosphodiesterase) 억제제로 작동하여 순환 AMP(cAMP)의 분해를 막고, cAMP 증가로 인해 국소 혈관수축(vasoconstriction)을 일으키고, 혈관의 체액 누수와 부종을 감소시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "The Derma Co: Why Caffeine Targets Vascular, Not Pigment, Dark Circles",
+      "source_url": "https://thedermaco.com/pages/caffeine",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "눈 밑 부종",
+        "분류": "생화학 기전",
+        "시기": "도포 직후",
+        "지역": "글로벌"
+      },
+      "caution": "★카페인은 혈관 수축으로 '부종'을 줄이는 것이지, 멜라닌 색소(어두운 자국)를 제거하지는 않는다. '다크서클'의 원인이 부종이 아니라 색소 침착인 경우 카페인은 효과가 제한적이다.",
+      "cautionSource": "작용 기전 분석"
+    },
+    {
+      "id": "caffeine-topical-dermal-penetration-minutes-water-soluble",
+      "claim": "국소 도포한 카페인은 수용성(water-soluble)으로 분류되어 각질층(stratum corneum)을 빠르게 통과하며, 분 단위로 진피층(dermis)에 도달한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MedSpot: Caffeine in skincare - under-eye circles, puffiness, and what the evidence shows",
+      "source_url": "https://medspot.ai/blog/caffeine-skincare-guide",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "눈 밑 부종",
+        "분류": "약물 동력학",
+        "시기": "도포 직후",
+        "지역": "글로벌"
+      },
+      "caution": "침투 속도는 제형에 따라 달라진다. gel/serum 제형이 cream 제형보다 빠르게 흡수되므로, 제형 선택이 효과에 영향을 미친다.",
+      "cautionSource": "제형 약동학"
+    },
+    {
+      "id": "caffeine-formulation-gel-serum-outperform-cream-eye-products",
+      "claim": "카페인 함유 아이 제품에서 gel과 serum 제형이 cream 제형보다 빠른 흡수와 더 높은 효과를 보이는 이유는 가벼운 기질이 카페인의 침투를 방해하지 않기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DRMTLGY: Are Caffeine Eye Creams Effective for Reducing Puffiness?",
+      "source_url": "https://www.drmtlgy.com/blogs/drm-digest/are-caffeine-eye-creams-effective-for-reducing-puffiness",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "눈 밑 부종",
+        "분류": "제형 선택",
+        "시기": "도포 직후",
+        "지역": "글로벌"
+      },
+      "caution": "크림 제형도 효과가 없는 것은 아니지만, 보습과 장시간 지속 효과를 원한다면 크림을, 빠른 응급 대처를 원한다면 gel/serum을 선택할 것.",
+      "cautionSource": "제형 특성"
+    },
+    {
+      "id": "caffeine-depuffing-duration-30-minutes-to-4-hours",
+      "claim": "카페인의 눈 밑 붓기 완화 효과는 도포 후 약 30분 내에 눈에 띄게 나타나며, 최대 효과는 1~4시간 지속되며 이후 감소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Clinikally: Revitalise Your Eyes - The Ultimate Guide to Caffeine Eye Creams",
+      "source_url": "https://www.clinikally.com/blogs/news/the-ultimate-guide-to-caffeine-eye-creams",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "눈 밑 부종",
+        "분류": "임상 효과 지속시간",
+        "시기": "도포 후 30분~4시간",
+        "지역": "글로벌"
+      },
+      "caution": "★카페인의 부종 감소 효과는 일시적이므로, 장기적 근본 해결을 위해서는 수면 개선, 염분 섭취 조절, 알레르기 관리 등 생활 습관 개선이 병행되어야 한다.",
+      "cautionSource": "약물 약동학 및 임상 데이터"
+    },
+    {
+      "id": "caffeine-cumulative-efficacy-4-8-weeks-consistent-use",
+      "claim": "매일 꾸준히 사용할 경우, 카페인 함유 아이 제품은 4~8주 사용 후 눈 밑 어두움(darkness)의 누적적 개선을 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HOIA homespa: Caffeine Eye Cream - Does It Actually Reduce Puffiness?",
+      "source_url": "https://hoiahomespa.com/caffeine-eye-cream-benefits/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "눈 밑 어두움(부종 + 혈류 개선)",
+        "분류": "장기 임상 효과",
+        "시기": "4~8주 연속 사용",
+        "지역": "글로벌"
+      },
+      "caution": "단기 효과(30분~4시간)는 혈관수축이 주요 기전이지만, 4~8주의 누적 효과는 혈류 개선, 부종 감소, 피부 수화 개선 등 복합 메커니즘이 관여한다.",
+      "cautionSource": "임상 추적 연구"
+    }
+  ]
+}

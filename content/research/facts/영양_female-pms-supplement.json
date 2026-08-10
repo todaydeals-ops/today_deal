@@ -1,0 +1,99 @@
+{
+  "topic": "생리 전 증후군(PMS) 영양소 치료: 칼슘·마그네슘·비타민B6의 임상 근거",
+  "brand": "알약연구소",
+  "article": "female-pms-supplement",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "gla-gamma-linolenic-acid-mechanism-prostaglandin-precursor",
+    "evening-primrose-oil-menopausal-hot-flash-mixed-evidence-2024"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "pms-calcium-supplementation-1000mg-daily-effective-2007",
+      "claim": "여성 3,025명을 대상으로 한 메타분석(2007)에서 칼슘 보충(1,000mg/일 이상)은 위약 대비 PMS 증상 심각도를 48% 감소시켰으며, 특히 기분 변화, 피로감, 식욕 변화 같은 심리적 증상에 효과적이었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Journal of Obstetrics and Gynecology 2007; 196(5):406-12",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/17466684/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "생리 전 증후군 진단 여성",
+        "분류": "칼슘 보충 효과",
+        "시기": "월경 주기 전체",
+        "지역": "글로벌(메타분석)"
+      },
+      "caution": "칼슘 보충 효과는 투여 후 2~3개월 후부터 나타나므로, 최소 2~3주기 이상 지속해야 효과를 판정할 수 있다.",
+      "cautionSource": "메타분석 논문 권장사항"
+    },
+    {
+      "id": "pms-vitamin-b6-50mg-daily-psychological-symptoms",
+      "claim": "비타민 B6 보충(50mg 이상/일)은 PMS의 심리적 증상(우울감, 불안감, 과민성)을 위약 대비 유의미하게 감소시키는 것으로 보고되었으며, 신체적 증상에는 효과가 제한적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of the American Board of Family Medicine 체계적 문헌고찰",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/19923637/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "생리 전 증후군 여성",
+        "분류": "비타민 B6 효과",
+        "시기": "월경 주기 전체 또는 황체기",
+        "지역": "글로벌"
+      },
+      "caution": "★50mg 이상 장기 복용은 말초신경병증 위험이 있으므로, 의료진 감시 하에 복용하되 상한(100mg/일)을 초과하지 않아야 한다.",
+      "cautionSource": "FDA 비타민 B6 안전성 권고"
+    },
+    {
+      "id": "pms-magnesium-effect-limited-evidence-mixed-results",
+      "claim": "마그네슘 보충(300-360mg/일)이 PMS 증상 개선에 도움이 될 수 있다는 동물 및 소규모 연구가 있으나, 대규모 메타분석의 근거는 제한적이고 결과가 일관되지 않다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Nutrition Reviews 2023 체계적 고찰; 다중 RCT 통합",
+      "source_url": "https://academic.oup.com/nutritionreviews/article/83/2/280/7659847",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "생리 전 증후군 여성",
+        "분류": "마그네슘 효과",
+        "시기": "월경 주기 전체",
+        "지역": "글로벌"
+      },
+      "caution": "마그네슘의 PMS 효과는 칼슘이나 비타민 B6만큼 강력하지 않으므로, 단독보다는 다른 성분과 함께 복용하는 것이 더 합리적이다.",
+      "cautionSource": "Nutrition Reviews 2023 체계적 고찰"
+    },
+    {
+      "id": "pms-calcium-magnesium-b6-combination-synergy-evidence-weak",
+      "claim": "칼슘·마그네슘·비타민 B6을 함께 복용했을 때의 상승 효과(시너지)에 대한 임상 근거는 부족하며, 개별 성분의 효과 합보다 나은지 확인하는 대규모 비교 연구가 필요하다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "근거 미확보 — 임상시험 필요",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "PMS 여성",
+        "분류": "복합 보충제 효과",
+        "시기": "월경 주기 전체",
+        "지역": "글로벌"
+      },
+      "caution": "조합 제품의 효과를 단정하지 말고, 개별 성분의 근거가 입증된 것만 선택할 것.",
+      "cautionSource": "문헌 미확보"
+    },
+    {
+      "id": "pms-dietary-factors-simple-carbs-salt-fat-avoidance",
+      "claim": "PMS 증상 완화를 위해서는 영양제 보충보다 단순 탄수화물(설탕, 흰 밀가루), 염분, 포화지방 섭취를 줄이고, 복합 탄수화물, 오메가-3 지방산, 칼슘·마그네슘 풍부 식품을 늘리는 것이 1차 중재다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Frontiers in Nutrition 2023 영양 요법 체계적 고찰",
+      "source_url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2023.1079417/full",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 PMS 증상 여성",
+        "분류": "식이 중재",
+        "시기": "월경 주기 전체",
+        "지역": "글로벌"
+      },
+      "caution": "식이 개선의 효과는 4~6주 후부터 나타나므로 충분한 기간 유지가 필요하며, 영양제는 보조 수단으로 봐야 한다.",
+      "cautionSource": "영양학 문헌"
+    }
+  ]
+}

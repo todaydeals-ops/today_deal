@@ -1,0 +1,99 @@
+{
+  "topic": "남성 생식 건강 영양제: 아연·엽산·CoQ10·항산화제의 정자 품질 개선 근거",
+  "brand": "알약연구소",
+  "article": "male-fertility-supplement",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "zinc-cold-duration-reduction-lozenge-form-requirement",
+    "zinc-long-term-high-dose-copper-deficiency-risk"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "male-fertility-zinc-semen-quality-meta-analysis-2019",
+      "claim": "아연 보충(25-100mg/일, 평균 12주)이 남성 불임 환자의 정액 농도, 정자 운동성, 형태학을 위약 대비 유의미하게 개선했다는 메타분석(2019, 12개 RCT)이 있으나, 임신율 또는 출산율 증가를 직접 입증한 연구는 부족하다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Andrologia 2019 메타분석; 다중 RCT 통합",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "정액 이상 또는 불임 남성",
+        "분류": "아연 보충 효과",
+        "시기": "8-12주 이상",
+        "지역": "글로벌"
+      },
+      "caution": "★정액 파라미터(농도, 운동성) 개선이 반드시 임신율 증가로 이어지지 않으므로, 대리지표로만 평가해야 한다.",
+      "cautionSource": "대리지표 함정(surrogate endpoint)"
+    },
+    {
+      "id": "male-fertility-coq10-sperm-parameters-improvement",
+      "claim": "CoQ10 보충(100-300mg/일, 3-6개월)이 불임 남성의 정액 농도, 정자 운동성, 정상 형태 비율을 개선하고, 일부 연구에서는 임상 임신율 증가도 보고했으나, 근거 수준은 약하고 연구 이질성이 크다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Journal of Assisted Reproduction and Genetics 2014 메타분석; World Journal of Men's Health 2025 체계적 고찰",
+      "source_url": "https://link.springer.com/article/10.1007/s10815-013-0047-5",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "남성 불임(특발성 또는 정액 이상)",
+        "분류": "CoQ10 효과",
+        "시기": "3-6개월",
+        "지역": "글로벌"
+      },
+      "caution": "CoQ10의 효과는 연구마다 결과가 일관되지 않으므로, 개별 환자의 효과를 예측하기 어렵다. 시도 기간은 최소 3개월 필요.",
+      "cautionSource": "메타분석 이질성(heterogeneity) 평가"
+    },
+    {
+      "id": "male-fertility-antioxidant-vitamins-c-e-selenium-sperm-protection",
+      "claim": "비타민 C·E, 셀레늄 같은 항산화제는 정자 세포의 산화 스트레스를 감소시켜 운동성과 DNA 무결성을 보호하는 기전이 입증되었으나, 불임 치료로서의 임상 유효성은 산화 스트레스 수준과 개인 상태에 따라 다르다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Fertility and Sterility 2016 리뷰; 항산화 기전 학술지",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "산화 스트레스 관련 남성 불임",
+        "분류": "항산화제 기전",
+        "시기": "장기 보충",
+        "지역": "글로벌"
+      },
+      "caution": "항산화제의 기전은 입증되었으나, 모든 불임 남성이 항산화제에 반응하는 것은 아니다. 사전 산화 스트레스 검사(ROS 검사)를 통해 필요 여부를 판정하는 것이 이상적이다.",
+      "cautionSource": "임상 가이드라인"
+    },
+    {
+      "id": "male-fertility-folate-dna-integrity-chromosome-abnormality",
+      "claim": "엽산(엽산염) 결핍은 남성 생식세포의 DNA 메틸화 저하와 염색체 이상을 야기하며, 엽산 보충(500-1,000μg/일)은 정자 농도와 DNA 완전성을 개선할 수 있다는 연구가 있으나, 대규모 임상시험 근거는 부족하다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Andrologia 리뷰; 남성 생식 영양 가이드",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "남성 불임 또는 정자 DNA 이상",
+        "분류": "엽산 효과",
+        "시기": "3-6개월 이상",
+        "지역": "글로벌"
+      },
+      "caution": "엽산 보충 효과가 개별 엽산 상태와 불임 원인에 따라 크게 달라지므로, 먼저 혈중 엽산 수치 확인 후 필요 여부를 판정할 것.",
+      "cautionSource": "임상 근거 평가"
+    },
+    {
+      "id": "male-fertility-supplement-lifestyle-smoking-heat-weight-primary",
+      "claim": "영양제 보충보다는 금연, 고열 노출 회피(꽉 끼는 팬티·사우나 제한), 정상 체중 유지, 규칙적 운동, 스트레스 감소 같은 생활 습관 개선이 남성 생식 건강의 1차 중재이며, 영양제는 보조 수단이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Urological Association(AUA) 남성 불임 진료지침",
+      "source_url": "https://www.auanet.org/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 불임 남성",
+        "분류": "생활 습관 중재",
+        "시기": "지속적",
+        "지역": "글로벌"
+      },
+      "caution": "정자 생성 주기는 약 72-90일이므로, 모든 개선책은 최소 3개월 이상 지속해야 효과를 판정할 수 있다.",
+      "cautionSource": "비뇨기과 임상 경험"
+    }
+  ]
+}

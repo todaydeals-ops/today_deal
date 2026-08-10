@@ -1,0 +1,116 @@
+{
+  "topic": "혈행 개선 영양제와 수술·시술 전 주의, 항혈소판·항응고 병용 위험",
+  "brand": "알약연구소",
+  "article": "혈행 영양제, 수술 며칠 전에 중단해야 할까",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "anticoagulant-vitamin-k-interaction-thrombosis-risk",
+    "ginkgo-anticoagulant-bleeding-risk-surgery"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "supplement-surgery-preoperative-discontinuation-2-weeks",
+      "claim": "혈행 개선 또는 항응고 작용이 있는 영양제(은행잎, 홍삼, 오메가3 등)는 수술 예정일 2주 전부터 중단하는 것이 권장된다. JAMA 리뷰(Ang-Lee et al., 2001)와 ASA/AANA는 허브 의약품의 1-2주 전 중단을 권장하고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JAMA: Herbal Medicines and Perioperative Care (Ang-Lee MK et al.) + ASA/AANA Guidelines",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/11448284/ ; https://www.mayoclinicproceedings.org/article/S0025-6196(20)30920-4/fulltext",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "수술 또는 시술 예정자",
+        "분류": "수술 전 준비",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
+      "caution": "★2주는 보수적 권장이며, 실제 필요한 중단 기간은 성분·개인 대사·수술 종류에 따라 다르다. 예정된 수술이 있으면 반드시 의료진에게 복용 중인 모든 영양제를 미리 알려야 한다.",
+      "cautionSource": "JAMA 리뷰 + ASA 가이드라인"
+    },
+    {
+      "id": "ginkgo-platelet-inhibition-surgery-bleeding",
+      "claim": "은행잎 추출물은 혈소판 응집을 억제하는 작용(주로 ginkgolide B와 flavonoid)을 가지므로, 수술·시술·치과 시술 중 출혈을 증가시킬 수 있다. 특히 신경외과·척추 수술·망막 수술처럼 출혈이 위험한 수술에서는 더욱 주의가 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Mayo Clinic Proceedings: Preoperative Management of Surgical Patients Using Dietary Supplements",
+      "source_url": "https://www.mayoclinicproceedings.org/article/S0025-6196(20)30920-4/fulltext",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "은행잎 섭취 중 수술 예정자",
+        "분류": "수술 전 위험",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
+      "caution": "은행잎이 항혈소판 효과를 가지고 있다고 해서 수술 후 혈전 예방에 도움이 되는 것은 아니다. 오히려 의료진의 통제 없이 복용하면 예측 불가능한 출혈을 초래할 수 있다.",
+      "cautionSource": "수술 안전 가이드라인"
+    },
+    {
+      "id": "ginseng-platelet-inhibition-surgical-bleeding",
+      "claim": "홍삼(인삼)은 ginsenoside 성분이 혈소판 응집을 억제하는 작용을 보이며, 시험관 연구에서 비가역적(irreversible) 혈소판 억제 효과가 보고되었다. 따라서 수술 전 2주 중단이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JAMA: Herbal Medicines and Perioperative Care + Mayo Clinic Proceedings",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/11448284/ ; https://www.mayoclinicproceedings.org/article/S0025-6196(20)30920-4/fulltext",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "홍삼 섭취 중 수술 예정자",
+        "분류": "수술 전 위험",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
+      "caution": "홍삼은 한국에서 매우 흔한 영양제이므로, 환자가 자각하지 못하고 복용할 수 있다. 수술 전 문진에서 '인삼 제품 있습니까?'를 명시적으로 물어야 한다.",
+      "cautionSource": "임상 실무"
+    },
+    {
+      "id": "antiplatelet-anticoagulant-supplement-interaction-doubled-effect",
+      "claim": "이미 항혈소판제(아스피린, 클로피도그렐) 또는 항응고제(와파린, 신약 DOAC)를 복용 중인 환자가 은행잎·홍삼·오메가3 고함량을 추가 섭취하면, 약물의 효과가 상승되어 자발성 출혈 위험(비위장 출혈·뇌출혈·직장 출혈 등)이 증가할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Commonly Used Dietary Supplements on Coagulation Function during Surgery",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4777343/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "항혈소판제·항응고제 복용자",
+        "분류": "약물 상호작용·출혈 위험",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
+      "caution": "★절대 금지: 항응고제 복용 중 영양제를 임의로 추가하면 안 됨. 약물이 목표 수준(INR, PT)을 유지하지 못하거나 과다 항응고되어 출혈이 생길 수 있다.",
+      "cautionSource": "약학 문헌·임상 경험"
+    },
+    {
+      "id": "surgery-procedure-risk-stratification-supplement-timing",
+      "claim": "수술 종류에 따라 출혈 위험이 다르다. 신경외과·척추·망막·관절경 수술 같이 출혈이 위험한 대수술이면 2주 전 중단이 필수다. 피부 생검·백내장 수술처럼 출혈이 덜 위험한 시술이면 의료진 판단으로 1주일 또는 더 짧은 기간일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Mayo Clinic Proceedings: Preoperative Management of Surgical Patients",
+      "source_url": "https://www.mayoclinicproceedings.org/article/S0025-6196(20)30920-4/fulltext",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "수술 또는 시술 예정자",
+        "분류": "위험 분류·중단 시기",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
+      "caution": "일괄적으로 '2주 전'이라는 원칙을 적용할 수 없다. 예정된 수술을 의료진에게 반드시 고지하고, 의료진이 영양제 중단 시기를 결정하도록 해야 한다.",
+      "cautionSource": "임상 실무 기준"
+    },
+    {
+      "id": "postoperative-bleeding-supplement-dosage-dependent",
+      "claim": "수술 후 출혈 위험은 영양제 용량과도 관련이 있다. 고용량 오메가3(>3g/day), 고함량 은행잎(>240mg/day) 등에서 위험이 더 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Dietary Supplements on Coagulation Function",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4777343/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "고용량 영양제 섭취자",
+        "분류": "용량 의존성 위험",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
+      "caution": "일반적 일일섭취 용량은 안전할 수 있으나, 제품마다 용량 표기가 다르므로 의료진에게 정확한 용량(mg/day)을 알려야 한다.",
+      "cautionSource": "실증 데이터"
+    }
+  ]
+}

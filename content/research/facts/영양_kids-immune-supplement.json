@@ -1,0 +1,100 @@
+{
+  "topic": "소아 면역 영양제: 비타민D·아연·철분 권장량·상한·안전성",
+  "brand": "알약연구소",
+  "article": "kids-immune-supplement",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "upper-limit-intake-UL-definition-safety-threshold",
+    "zinc-cold-duration-reduction-lozenge-form-requirement",
+    "iron-absorption-alternate-day-vs-consecutive-day-2017"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "children-vitamin-d-recommendation-600-iu-daily-under-19",
+      "claim": "1~18세 소아의 비타민D 일일 권장 섭취량은 600 IU(15μg)이며, 상한섭취량은 연령에 따라 4세 이하 3,000 IU, 9~18세 4,000 IU로 제한된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국인 영양소 섭취기준(2020, KDRI), NIH ODS",
+      "source_url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "소아(1-18세)",
+        "분류": "비타민D 권장·상한량",
+        "시기": "연중",
+        "지역": "한국/글로벌"
+      },
+      "caution": "★4세 이하 영유아의 비타민D 과다 섭취(3,000 IU 초과)는 고칼슘혈증, 신장 손상 위험이 있으므로 각별히 주의해야 한다.",
+      "cautionSource": "한국인 영양소 섭취기준; NIH 소아 안전성 권고"
+    },
+    {
+      "id": "children-zinc-recommendation-3-5mg-infants-11mg-adolescent",
+      "claim": "소아 아연 권장 섭취량은 1~3세 3mg, 4~8세 5mg, 9~13세 8mg, 14~18세 9-11mg이며, 상한섭취량은 4세 이하 7mg, 9~13세 23mg, 14~18세 34mg이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국인 영양소 섭취기준(2020, KDRI), 미국 IOM",
+      "source_url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "소아(1-18세)",
+        "분류": "아연 권장·상한량",
+        "시기": "연중",
+        "지역": "한국/글로벌"
+      },
+      "caution": "★아연 상한을 초과하면 구리 흡수 억제, 호중구감소증, 면역 역설(오히려 감염 취약) 위험이 있으므로 상한을 엄격히 지켜야 한다.",
+      "cautionSource": "아연-구리 길항 기전; 독성학 문헌"
+    },
+    {
+      "id": "children-iron-recommendation-6-10mg-infants",
+      "claim": "소아 철분 권장 섭취량은 1~3세 7mg, 4~8세 10mg, 9~13세 8mg(여), 9~13세 8mg(남), 14~18세 15mg(여)/11mg(남)이며, 상한섭취량은 4세 이하 40mg, 9~18세 45mg이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국인 영양소 섭취기준(2020, KDRI), NIH ODS",
+      "source_url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "소아(1-18세)",
+        "분류": "철분 권장·상한량",
+        "시기": "연중",
+        "지역": "한국/글로벌"
+      },
+      "caution": "★철분 과다 섭취(상한 초과)는 산화 스트레스, 장 점막 손상, 심한 경우 철 중독증을 야기할 수 있으므로 주의가 필요하다.",
+      "cautionSource": "철분 독성학 문헌"
+    },
+    {
+      "id": "children-immunity-supplement-multivitamin-evidence-weak",
+      "claim": "건강한 소아의 일반적 면역력 증진을 위한 일반 종합비타민 보충의 임상 근거는 약하며, Cochrane 메타분석에서도 영양 결핍이 없는 아이의 감염 예방 효과를 확인하지 못했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cochrane Database 영양제 메타분석; Pediatrics 리뷰",
+      "source_url": "https://www.cochranelibrary.com/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "영양 결핍 없는 건강 소아",
+        "분류": "종합비타민 효과",
+        "시기": "장기 보충",
+        "지역": "글로벌"
+      },
+      "caution": "종합비타민은 영양 결핍(철분 결핍, 비타민D 부족)이 확인된 경우에만 필요하며, 예방 목적의 무분별한 보충은 피해야 한다.",
+      "cautionSource": "Cochrane 체계적 고찰"
+    },
+    {
+      "id": "children-fat-soluble-vitamin-accumulation-toxicity-caution",
+      "claim": "비타민 A, D, E, K 같은 지용성 비타민은 소아의 간과 지방 조직에 축적되어 독성을 야기할 수 있으므로, 4세 이하는 특히 상한량을 엄격히 지켜야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD 매뉴얼 소아 영양 부분, NIH ODS",
+      "source_url": "https://www.msdmanuals.com/ko/home/%EC%98%81%EC%96%91-%EC%9E%A5%EC%95%A0/%EB%B9%84%ED%83%80%EB%AF%BC/%EB%B9%84%ED%83%80%EB%AF%BC-%EA%B0%9C%EC%9A%94",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "소아 전체(특히 4세 이하)",
+        "분류": "축적 독성",
+        "시기": "장기 보충",
+        "지역": "글로벌"
+      },
+      "caution": "일반인용 '부스트' 고함량 제품은 소아에게 절대 사용하면 안 되며, 의료진 처방 또는 표준 소아용 용량만 사용할 것.",
+      "cautionSource": "소아과 임상 안전 가이드라인"
+    }
+  ]
+}

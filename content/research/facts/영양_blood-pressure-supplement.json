@@ -1,0 +1,118 @@
+{
+  "topic": "혈압 관리 영양제와 약물 치료의 역할 분담, 국내 기능성 원료",
+  "brand": "알약연구소",
+  "article": "혈압 관리 영양제, 약을 대신할 수 있을까",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "korea-health-food-certified-form-standard-raw-material",
+    "korea-health-food-individual-approval-raw-material",
+    "statistical-significance-vs-clinical-significance-distinction",
+    "relative-risk-reduction-vs-absolute-risk-reduction-trap"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "korea-blood-pressure-function-coq10-only-approved-form",
+      "claim": "한국 식약처에서 '높은 혈압 감소'에 도움을 줄 수 있음으로 기능성이 승인된 고시형 원료는 코엔자임Q10이 유일하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 건강기능식품공전 고시형 원료",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=4847&bbs_no=bbs039&ntctxt_no=22299&menu_grp=MENU_NEW03",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "고혈압 또는 혈압 관리 필요 성인",
+        "분류": "기능성 원료 승인 현황",
+        "시기": "2026 현행",
+        "지역": "KR"
+      },
+      "caution": "고시형은 개별인정형이 포화되면 자동 전환되는 것이 아니며, 식약처의 별도 심사가 필요하다.",
+      "cautionSource": "식약처 공전 규정"
+    },
+    {
+      "id": "korea-individual-approval-blood-pressure-ingredients",
+      "claim": "혈압 관리를 돕는 개별인정형 원료로는 폴리코사놀(폴리코사놀-사탕수수왁스알코올), 나토균배양분말, 정어리펩타이드, 올리브잎주정추출물 등이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 개별인정형 원료 목록",
+      "source_url": "https://www.fmis.kr/public/pro/hfg/htfsIndvdlzRcognList.do",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "혈압 관리 원료",
+        "분류": "개별인정형",
+        "시기": "2026 현행",
+        "지역": "KR"
+      },
+      "caution": "개별인정형은 해당 기업이 임상 근거로 입증해야 하며, 제품마다 기능성 표시가 다를 수 있다.",
+      "cautionSource": "식약처 개별인정형 원료 규정"
+    },
+    {
+      "id": "coq10-blood-pressure-reduction-clinical-meta-analysis",
+      "claim": "코엔자임Q10 100~200mg/day 투여 시 무작위대조시험 메타분석(약 1,800명)에서 수축기 혈압 평균 4.77mmHg, 이완기 혈압 평균 1.67mmHg 감소가 보고되었으며, 특히 이상지질혈증이나 제2형 당뇨병 환자에서는 더 큰 감소 효과를 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect: Dose-Response Effect of Coenzyme Q10 Supplementation on Blood Pressure",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S2161831323000716",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "고혈압 또는 대사증후군 환자",
+        "분류": "임상 효과",
+        "시기": "메타분석(다중 RCT)",
+        "지역": "글로벌"
+      },
+      "caution": "★수축기 감소 4.77mmHg는 '중등도 근거'로 평가됨. 혈압약(보통 10~20mmHg 감소)에 비하면 작은 효과다. 고혈압 진단 기준이 130/80 이상인 점을 고려하면, 영양제만으로는 부족하며 생활 요법과 필요시 약물 병용이 기본이다.",
+      "cautionSource": "메타분석 효과 크기 평가"
+    },
+    {
+      "id": "blood-pressure-supplement-adjunctive-role-not-replacement",
+      "claim": "혈압 관리 영양제는 의학적 이론상 항산화·혈관내피 기능 개선 등의 기전을 가지고 있으나, 임상 효과는 의약품 혈압약보다 훨씬 약하므로, 기존 혈압약 대신 쓸 수 없으며 보조 역할에 한정된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Mayo Clinic Proceedings, ACC Heart Failure Guidelines",
+      "source_url": "https://www.mayoclinicproceedings.org/article/S0025-6196(20)30920-4/fulltext",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "고혈압 또는 전고혈압 환자",
+        "분류": "영양제 vs 약물 역할",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★독자가 따라야 할 원칙: 혈압이 130/80 이상이면 의료진 상담 필수. 영양제는 생활 요법(DASH 식단·운동·염분 제한)과 함께 보조로만 고려하고, 약물 필요 여부는 의료진이 판정한다.",
+      "cautionSource": "임상 가이드라인"
+    },
+    {
+      "id": "l-arginine-l-citrulline-blood-pressure-inconsistent-evidence",
+      "claim": "L-아르기닌과 L-시트룰린의 혈압 강하 효과는 연구마다 엇갈린다. L-시트룰린 15건 메타분석에서는 수축기 -7.54mmHg, 이완기 -3.77mmHg 감소를 보였으나, 다른 분석에서는 유의한 효과가 없었다. L-아르기닌도 마찬가지로 효과 크기가 일관되지 않다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Assessment of Registered Clinical Trial Designs: L-Arginine and L-Citrulline for Hypertension",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11053694/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "고혈압 또는 전고혈압 환자",
+        "분류": "아미노산 보충제 효과",
+        "시기": "다중 RCT",
+        "지역": "글로벤"
+      },
+      "caution": "연구 설계의 이질성이 크므로, L-아르기닌/시트룰린 제품 광고의 '혈압 개선' 표현은 근거 수준을 반드시 확인할 것. 일부 연구는 양성, 일부는 음성이므로 절대적 권장은 할 수 없다.",
+      "cautionSource": "메타분석 이질성 문제"
+    },
+    {
+      "id": "blood-pressure-lifestyle-modification-foundation",
+      "claim": "혈압 관리의 기초는 DASH 식단(채소·과일·저지방유제품 증가·염분 감소)·규칙 운동·체중 감량·스트레스 관리이며, 이들 생활 요법만으로도 수축기 혈압 8~14mmHg 감소가 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/NHLBI DASH Diet Study, ACC/AHA Hypertension Guidelines",
+      "source_url": "https://health.gov/our-work/nutrition-physical-activity/dietary-guidelines",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "고혈압 또는 전고혈압 성인",
+        "분류": "비약물 치료",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "영양제 추천 전에 먼저 독자에게 생활 요법의 효과를 설명하면, 과도한 기대치를 조정하는 데 도움이 된다. 영양제는 생활 요법 완료 후의 추가 옵션이어야 한다.",
+      "cautionSource": "ACC/AHA 고혈압 가이드라인"
+    }
+  ]
+}

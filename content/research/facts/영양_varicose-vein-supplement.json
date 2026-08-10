@@ -1,0 +1,174 @@
+{
+  "topic": "하지정맥류 영양제, 디오스민·말밤종자추출물 임상 근거 및 한계",
+  "brand": "알약연구소",
+  "article": "정맥류 먹는 영양제, 수술 대신 할 수 있을까",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "centerforvein-blog-source-conflict-of-interest",
+      "reason": "이해상충: 시술 판매처 클리닉 블로그 → 1차 권위 출처(Cochrane, PubMed, MSD) 불충분",
+      "affected_facts": [
+        "diosmin-hesperidin-varicose-vein-symptom-relief",
+        "diosmin-limitations-root-cause-venous-valve",
+        "minimally-invasive-procedures-vs-supplements-efficacy-comparison"
+      ]
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "varicose-vein-pathophysiology-venous-insufficiency",
+      "claim": "하지정맥류는 다리의 정맥 판막(valve)이 손상되어 역류를 막지 못하면서 정맥혈이 모여 정맥이 팽창·구불거리는 질환이다. 정맥 판막 손상은 한 번 생기면 약으로 복구되지 않으므로, 근본 치료는 시술 또는 수술이고, 영양제는 증상 완화에만 도움이 될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Vascular Medicine Core Curriculum, Mayo Clinic",
+      "source_url": "https://www.mayoclinicproceedings.org",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "하지정맥류 환자",
+        "분류": "질환 기전",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "정맥류가 있으면 증상(부종·통증·피로)을 관리할 수는 있지만, 정맥 판막을 다시 펴지르 수는 없다는 점을 독자에게 명확히 해야 한다.",
+      "cautionSource": "혈관학 기본"
+    },
+    {
+      "id": "diosmin-hesperidin-varicose-vein-symptom-relief",
+      "claim": "디오스민(diosmin) 450mg + 헤스페리딘(hesperidin) 50mg 병용 투여는 Cochrane 체계적 문헌고찰(phlebotonics for venous insufficiency, 56개 RCT, 7,690명 메타분석)에서 다리 부종·통증·피로 증상을 유의하게 개선하는 것으로 확인되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cochrane Systematic Review: Phlebotonics for venous insufficiency (Martinez-Zapata MJ et al., 2020)",
+      "source_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003229.pub4/references",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "만성 정맥부전 환자",
+        "분류": "증상 완화",
+        "시기": "메타분석(56개 RCT)",
+        "지역": "글로벌"
+      },
+      "caution": "Cochrane 메타분석은 디오스민·히드로스민·루토사이드 등 정맥활성약(phlebotonics) 전반의 효과를 평가했다. 투여 기간이나 용량에 따라 결과 이질성이 있을 수 있다.",
+      "cautionSource": "Cochrane 메타분석 설계"
+    },
+    {
+      "id": "diosmin-venous-symptom-improvement-timeline",
+      "claim": "디오스민 투여 후 다리 통증이 4주에 최소 30% 감소, 12주에 85.4% 감소한 임상 보고가 있다(389명).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Altmedrev: Diosmin Monograph",
+      "source_url": "https://altmedrev.com/wp-content/uploads/2019/02/v9-3-308.pdf",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "정맥류 증상 환자",
+        "분류": "증상 개선 시간표",
+        "시기": "12주 추적",
+        "지역": "미국"
+      },
+      "caution": "증상 개선(통증·부종)과 정맥류 근본 해결(판막 기능 복구)은 다르다. 디오스민은 증상 완화에만 도움이 되며, 정맥류 자체를 치료하지 않는다.",
+      "cautionSource": "임상 결과 해석"
+    },
+    {
+      "id": "diosmin-limitations-root-cause-venous-valve",
+      "claim": "정맥활성약(phlebotonics)은 손상된 정맥 판막을 복구하지 못한다. Cochrane 메타분석에 따르면 이들 약물의 역할은 증상 완화에 제한된다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Cochrane Systematic Review: Phlebotonics for venous insufficiency + Utility of venoactive compounds in post-thrombotic syndrome (NCBI/PMC)",
+      "source_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003229.pub4/references",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "정맥류 환자",
+        "분류": "치료 한계",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
+      "caution": "★독자 지침: 정맥류 진단을 받으면, 초음파(duplex ultrasound)로 정맥류의 심각도를 확인하고 의료진과 치료 옵션(보존·시술·수술)을 상담해야 한다. 영양제는 경증~중등증 증상 완화 옵션일 뿐이다.",
+      "cautionSource": "Cochrane 메타분석 결론"
+    },
+    {
+      "id": "horse-chestnut-seed-extract-aescin-venous-insufficiency",
+      "claim": "말밤종자추출물(Aesculus hippocastanum, 표준화 aescin 함유)은 항염증·항부종 작용을 통해 정맥 긴장도를 개선하고, 미세순환을 촉진한다고 알려져 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect: Horse chestnut – efficacy and safety in chronic venous insufficiency",
+      "source_url": "https://link.springer.com/article/10.1016/j.bjp.2015.05.009",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "만성 정맥부전 환자",
+        "분류": "작용 기전",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "horse-chestnut-seed-extract-clinical-efficacy-placebo-controlled",
+      "claim": "Cochrane 체계적 문헌고찰에 따르면, 말밤종자추출물은 모든 위약대조 임상에서 다리 부종·통증·피로 증상을 유의하게 개선했으며, 압박 치료(compression therapy)와 비슷한 효과를 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cochrane: Horse chestnut seed extract for long-term or chronic venous insufficiency",
+      "source_url": "https://www.cochrane.org/evidence/CD003230_horse-chestnut-seed-extract-long-term-or-chronic-venous-insufficiency",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "만성 정맥부전 환자",
+        "분류": "임상 효과",
+        "시기": "메타분석(다중 RCT)",
+        "지역": "글로벌"
+      },
+      "caution": "말밤종자추출물의 효과는 디오스민과 유사한 '증상 완화' 수준이다. 근본 원인인 정맥 판막 손상을 치료하지는 못한다.",
+      "cautionSource": "Cochrane 메타분석"
+    },
+    {
+      "id": "horse-chestnut-seed-extract-leg-volume-reduction",
+      "claim": "말밤종자추출물 투여 후 다리 부피(ankle/calf circumference)가 감소하고, 정맥 궤양(venous leg ulceration) 치료 시에는 상처 드레싱 빈도가 줄어들고 치료 비용이 감소한 보고도 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cochrane & ScienceDirect reviews",
+      "source_url": "https://link.springer.com/article/10.1016/j.bjp.2015.05.009",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "정맥부전 또는 정맥 궤양 환자",
+        "분류": "부종 감소·치료 비용",
+        "시기": "메타분석",
+        "지역": "글로벌"
+      },
+      "caution": "정맥 궤양 환자의 경우 의료비 절감 효과가 있을 수 있으므로, 의료진과 상담하면 코스트-베네핏이 좋을 수 있다.",
+      "cautionSource": "경제성 분석"
+    },
+    {
+      "id": "korea-varicose-vein-functional-ingredient-not-approved",
+      "claim": "한국 식약처 건강기능식품 고시형 원료 중 '정맥류' 또는 '정맥부전' 치료에 특화된 기능성 원료는 없다. 디오스민과 말밤종자추출물은 한국에서 개별인정형 또는 의약품으로만 존재할 수 있다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "식약처 건강기능식품공전 + 웹검색",
+      "source_url": "https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?menu_no=4847&bbs_no=bbs039&ntctxt_no=22299",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "한국 건강기능식품",
+        "분류": "규제 현황",
+        "시기": "2026 현행",
+        "지역": "KR"
+      },
+      "caution": "한국에서 '정맥류 개선'이라 광고하는 제품을 찾으려면, 제품의 허가 분류(의약품 vs 건기식)를 반드시 확인해야 한다. 개별인정형이면 기업이 임상 근거를 제출했을 것이고, 일반식품이면 법적으로 기능성을 표시할 수 없다.",
+      "cautionSource": "식약처 규제 확인 필요"
+    },
+    {
+      "id": "minimally-invasive-procedures-vs-supplements-efficacy-comparison",
+      "claim": "최소침습 정맥류 시술(radiofrequency ablation, endovenous laser)의 정맥 폐쇄율은 90~100%이며 회복이 빠르고 장기 재발률도 낮다는 것이 Journal of Vascular Surgery 메타분석(29개 임상)에서 보고되었다. 반면 정맥활성약은 증상 완화만 가능하고 정맥류 자체를 치료하지 못한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Vascular Surgery meta-analysis; Cochrane Phlebotonics review",
+      "source_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003229.pub4/references",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "증상성 정맥류 환자",
+        "분류": "치료 옵션 비교",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
+      "caution": "★독자 안내: 정맥류 증상이 심하거나 미용상 문제가 크면, 영양제만으로는 부족할 수 있다. 의료진과 상담하여 시술·수술 옵션을 검토하는 것이 더 실질적인 해결책일 수 있다.",
+      "cautionSource": "임상 실무"
+    }
+  ]
+}

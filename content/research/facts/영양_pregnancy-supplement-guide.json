@@ -1,0 +1,102 @@
+{
+  "topic": "임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성",
+  "brand": "알약연구소",
+  "article": "pregnancy-supplement-guide",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "mrc-vitamin-study-neural-tube-defect-prevention-1991",
+    "folic-acid-neural-tube-defect-prevention-mechanism-dna-synthesis-cell-division",
+    "folic-acid-high-dose-b12-deficiency-masking-risk",
+    "calcium-iron-competitive-absorption-spacing",
+    "vitamin-a-excessive-intake-headache-skin-dryness"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "pregnancy-iron-intake-recommendation-27mg",
+      "claim": "임신 중 철분 일일 권장 섭취량은 27mg으로, 비임신 여성(18mg)보다 50% 많으며, 특히 임신 2분기 이후 혈액량 증가로 인한 생리적 빈혈 예방에 중요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미국 국립보건원(NIH) 영양소 섭취기준, 미국 의학원(IOM)",
+      "source_url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "임신부(19세 이상)",
+        "분류": "철분 권장량",
+        "시기": "임신 전체 기간",
+        "지역": "글로벌"
+      },
+      "caution": "철분 보충 시 칼슘, 커피, 녹차와 최소 2시간 이상 간격을 두어야 하며, 위장 부작용이 있으면 격일 투여가 효과적이다.",
+      "cautionSource": "철분 흡수 상호작용 문헌"
+    },
+    {
+      "id": "pregnancy-vitamin-d-recommendation-400-iu-daily",
+      "claim": "임신 중 비타민D 충분섭취량은 하루 400 IU(10μg)이나, 최근 임상 권고는 하루 2,000 IU(50μg) 범위 내에서 필요한 용량을 복용하는 것을 권장하며, 상한섭취량은 4,000 IU(100μg)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미국 산부인과학회(ACOG) 가이드라인, NIH ODS",
+      "source_url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "임신부",
+        "분류": "비타민D 권장량",
+        "시기": "임신 전체 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★비타민D 상한을 초과하면 고칼슘혈증, 태자 저칼슘증 위험이 있으므로 4,000 IU를 넘지 않아야 한다.",
+      "cautionSource": "ACOG 임신 중 영양 가이드라인"
+    },
+    {
+      "id": "pregnancy-iodine-intake-recommendation-240-mcg",
+      "claim": "임신 중 요오드 일일 권장 섭취량은 240μg(임신 전 150μg에서 60% 증가)이며, 태자의 신경 발달과 갑상선 호르몬 합성에 필수적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미국 내분비학회(ATA), 질병관리청 임신 영양 가이드",
+      "source_url": "https://www.cdc.gov/ncbddd/birthdefects/prevention/facts-about-birth-defects.html",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "임신부",
+        "분류": "요오드 권장량",
+        "시기": "임신 전체 기간",
+        "지역": "글로벌(한국인은 해조류로 충분)"
+      },
+      "caution": "한국인은 해조류(김, 미역, 다시마) 섭취만으로도 평균 417μg을 섭취하므로 추가 요오드 보충은 권장되지 않는다.",
+      "cautionSource": "한국 영양학회 요오드 섭취 현황 보고"
+    },
+    {
+      "id": "pregnancy-vitamin-a-retinol-limit-3000-ug",
+      "claim": "임신 중 비타민A(레티놀) 상한섭취량은 3,000μg(10,000 IU)이며, 이를 초과하는 고용량 보충은 기형 위험(구순열, 심장질환, 신경 결손)을 높일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미국 산부인과학회(ACOG), 미국 식품의약국(FDA), MSD 매뉴얼",
+      "source_url": "https://www.msdmanuals.com/ko/home/%EC%98%81%EC%96%91-%EC%9E%A5%EC%95%A0/%EB%B9%84%ED%83%80%EB%AF%BC/%EB%B9%84%ED%83%80%EB%AF%BC-%EA%B0%9C%EC%9A%94",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "임신부(특히 임신 초기)",
+        "분류": "비타민A 금기 용량",
+        "시기": "임신 전체, 특히 1분기",
+        "지역": "글로벌"
+      },
+      "caution": "★800μg 이상의 레티놀 보충은 피해야 하며, 베타카로틴은 체내에서 천천히 변환되므로 더 안전하다. 임신 중 레티놀 함유 스킨케어(레티노이드) 사용도 피할 것.",
+      "cautionSource": "ACOG 임신 영양 및 약물 안전 가이드라인"
+    },
+    {
+      "id": "pregnancy-supplement-prenatal-multivitamin-standard",
+      "claim": "일반적인 산전 종합비타민은 엽산 400-800μg, 철분 27mg, 칼슘(또는 별도 보충), 비타민D 400 IU, 아연 11-15mg을 포함하며, 의료진의 처방 또는 권고 하에 복용하는 것이 안전하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미국 산부인과학회(ACOG) 산전 비타민 권장안",
+      "source_url": "https://www.acog.org/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "임신을 계획 중인 여성 및 임신부",
+        "분류": "산전 영양제 포뮬레이션",
+        "시기": "임신 계획 3개월 전~임신 전체 기간",
+        "지역": "글로벌"
+      },
+      "caution": "의료진 처방 없이 개인적으로 추가 보충(예: 비타민A 고함량, 한약)을 더하면 안 되며, 모든 보충제 목록을 담당 의사에게 보고해야 한다.",
+      "cautionSource": "ACOG 임신 중 약물 상호작용 및 안전 가이드"
+    }
+  ]
+}
