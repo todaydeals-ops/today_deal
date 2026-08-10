@@ -12,8 +12,7 @@ import { PILL_CATEGORIES } from "@/lib/magazine/pillCategories";
 import { BEAUTY_CATEGORIES } from "@/lib/magazine/beautyCategories";
 import { B4AS_CATEGORIES } from "@/lib/magazine/b4asCategories";
 import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
-import { fetchMagazineList } from "@/lib/data/magazine";
-import { ownerOfSlug, type OwnerKey } from "@/lib/magazine/owner";
+import { type OwnerKey } from "@/lib/magazine/owner";
 
 export const revalidate = 3600;
 
@@ -34,12 +33,11 @@ export async function GET(): Promise<Response> {
   let urls: string[] = [];
   if (m) {
     // 이 브랜드가 주인인 아티클도 함께 낸다 — 정본이 이 호스트이므로 여기서 제출하는 게 맞다.
-    const all = await fetchMagazineList({ limit: 1000, all: true });
-    const mine = all.filter((a) => ownerOfSlug(a.slug) === m.owner);
+    // 아티클은 넣지 않는다. 정본이 www 라 www 사이트맵이 담당한다.
+    // 여기는 이 호스트에만 있는 URL(홈·분류)만 낸다.
     urls = [
       `<url><loc>${m.origin}/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>`,
       ...m.cats.map((c) => `<url><loc>${m.origin}/?cat=${c.key}</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`),
-      ...mine.map((a) => `<url><loc>${m.origin}/magazine/${a.slug}</loc><lastmod>${a.createdAt.slice(0, 10)}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`),
     ];
   }
 

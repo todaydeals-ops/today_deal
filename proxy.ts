@@ -20,11 +20,11 @@ function canonicalRedirect(req: NextRequest): string | null {
     }
   }
 
-  // 아티클은 주인 브랜드 호스트에서만 연다. 나머지 호스트로 들어오면 주인에게 넘긴다.
-  const m = path.match(/^\/magazine\/([^/]+)\/?$/);
-  if (m) {
-    const owner = ownerOfSlug(decodeURIComponent(m[1]));
-    if (owner !== here) return OWNER_ORIGIN[owner] + path + req.nextUrl.search;
+  // 아티클 정본은 www 다(서브도메인이 아니다). 서브도메인으로 들어온 아티클은 www 로 접는다.
+  // ★방향을 반대로 하면 안 된다 — www 의 AS 글들이 이미 색인되고 클릭을 받고 있다(2026-08-10 실측).
+  //   순위가 붙은 페이지를 이력 0인 새 호스트로 옮기면 재색인 몇 주 동안 순위를 잃는다.
+  if (/^\/magazine\//.test(path)) {
+    if (here !== "deal") return OWNER_ORIGIN.deal + path + req.nextUrl.search;
     return null;
   }
 
