@@ -20,11 +20,11 @@ export const PILL_CATEGORIES: PillCategory[] = [
   },
   {
     key: "vital", label: "피로·간", en: "VITAL", color: "#3f6a8a", angle: "만성피로와 간",
-    slugs: ["coq10-energy","red-ginseng-ginsenoside","nmn-nad-antiaging","vitamin-b-complex-fatigue","milk-thistle-liver","adrenal-fatigue-myth","arginine-citrulline","taurine-fatigue","vitamin-b12-vegan","creatine-safety","bcaa-eaa"],
+    slugs: ["coq10-energy","red-ginseng-ginsenoside","nmn-nad-antiaging","vitamin-b-complex-fatigue","milk-thistle-liver","adrenal-fatigue-myth","arginine-citrulline","taurine-fatigue","vitamin-b12-vegan","creatine-safety","bcaa-eaa","apple-cider-vinegar"],
   },
   {
     key: "shield", label: "면역·장", en: "SHIELD", color: "#5a7a6a", angle: "면역력과 장 건강",
-    slugs: ["probiotics-strain-guide","propolis-throat","gut-leaky-gut-claim","beta-glucan-immune","melatonin-vs-sleep-supplement","zinc-immune","multivitamin-worth-it","prebiotics-synbiotics","postbiotics-trend","antibiotics-probiotic-timing","nac-antioxidant","elderberry-cold"],
+    slugs: ["probiotics-strain-guide","propolis-throat","gut-leaky-gut-claim","beta-glucan-immune","melatonin-vs-sleep-supplement","zinc-immune","multivitamin-worth-it","prebiotics-synbiotics","postbiotics-trend","antibiotics-probiotic-timing","nac-antioxidant","elderberry-cold","lactoferrin-trend","spirulina-chlorella","vitamin-e-selenium"],
   },
   {
     key: "flow", label: "혈관·심장", en: "FLOW", color: "#9a5a5a", angle: "혈행과 콜레스테롤",
