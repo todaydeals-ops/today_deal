@@ -66,7 +66,7 @@ const patches = (JSON.parse(fs.readFileSync(file, "utf8")).patches) ?? [];
 // 존재하지 않는 브랜드("보어드뮤쉘레"), 없는 제품("LG 정수기형 그릴"),
 // 해로운 조언("그라인더 날에 올리브유")이 11개 표 중 7개에 출처 0으로 들어왔다.
 // 에러코드·모델 정보는 틀리면 독자가 헛수고한다. 기계로 막는다.
-const OFFICIAL = /samsungsvc|samsung\.com|lge?\.co\.kr|lg\.com|winix|coway|chungho|skmagic|cuckoo|cuchen|rinnai|kdnavien|kyungdong|philips|tefal|delonghi|dyson|iptime|efm|asus|tp-link|netgear|kt\.com|skbroadband|lguplus|\.go\.kr|\.or\.kr/i;
+const OFFICIAL = /samsungsvc|samsung\.com|lge?\.co\.kr|lg\.com|winix|coway|chungho|skmagic|cuckoo|cuchen|rinnai|kdnavien|kyungdong|philips|tefal|delonghi|dyson|iptime|efm|asus|tp-link|netgear|kt\.com|skbroadband|lguplus|kitchenaid|whirlpool|electrolux|bosch-home|miele|breville|balmuda|xiaomi|lotte|winia|caraz|hanssem|\.go\.kr|\.or\.kr/i;
 const bad = [];
 for (const p of patches) {
   const src = (p.sources || []).filter((s) => s && s.url);
