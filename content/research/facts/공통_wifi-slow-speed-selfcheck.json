@@ -7,11 +7,11 @@
   "declined_facts": [
     {
       "id": "iptime-wireless-channel-manual-setting",
-      "why": "ipTIME 공유기 특화 기능으로, 일반적인 속도 진단 기법과는 무관. 별도 글에서 다룸."
+      "why": "ipTIME 공우기 특화 기능으로, 일반적인 속도 진단 기법과는 무관. 별도 글에서 다룸."
     },
     {
       "id": "iptime-bandwidth-setting-options",
-      "why": "ipTIME 대역폭 설정 메뉴는 공유기 모델별로 다르므로, 통용되는 진단 방법만 수집"
+      "why": "ipTIME 대역폭 설정 메뉴는 공우기 모델별로 다르므로, 통용되는 진단 방법만 수집"
     }
   ],
   "disputes": [],
@@ -51,8 +51,8 @@
       "claim": "와이파이 2.4GHz 대역은 전자레인지, 블루투스 기기 등이 같은 주파수를 사용하기 때문에 이들 기기 근처에서는 간섭이 발생할 수 있다.",
       "tier": "확실",
       "evidence": "공식",
-      "source": "와이파이 기술 표준 및 커뮤니티",
-      "source_url": "https://www.gqkorea.co.kr/2026/07/25/%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4-%EC%86%8D%EB%8F%84-%EA%B0%91%EC%9E%90%EA%B8%B0-%EB%8A%90%EB%A0%A4%EC%A1%8C%EB%8B%A4%EB%A9%B4-%EB%A8%BC%EC%A0%80-%ED%99%95%EC%9D%B8%ED%95%B4%EC%95%BC-%ED%95%A0",
+      "source": "TP-Link 공식 — 무선 WiFi 주파수 간섭 문제 해결",
+      "source_url": "https://www.tp-link.com/kr/support/faq/468/",
       "checked": "2026-08-10",
       "scope": { "brand": "공통", "category": "와이파이", "line": "2.4GHz 대역", "years": "현행", "region": "KR" },
       "caution": "2.4GHz는 범위가 넓어 장거리 통신에 유리하지만, 간섭이 많아 속도가 불안정할 수 있다. 가까운 거리에서는 5GHz 사용이 권장된다."
@@ -60,23 +60,24 @@
     {
       "id": "wifi-analyzer-app-channel-scan",
       "claim": "안드로이드의 WiFi Analyzer 앱이나 iOS의 Airport Utility 앱을 사용하면 주변 와이파이의 채널 사용 현황을 스캔할 수 있으며, 이를 통해 가장 덜 혼잡한 채널을 선택할 수 있다.",
-      "tier": "확실",
+      "tier": "확인실패",
       "evidence": "후기",
-      "source": "와이파이 최적화 커뮤니티",
-      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%9D%B8%ED%84%B0%EB%84%B7_%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4_%EC%B0%A8%EC%9D%B4,_2.4GHz_5Ghz_%ED%84%B0%EC%B9%98_%ED%95%9C%EB%B2%88%EC%9C%BC%EB%A1%9C_%EB%81%8A%EA%B9%80_%ED%95%B4%EC%86%8C-43225",
+      "source": "앱 스토어(공식 검증 없음)",
+      "source_url": "https://www.tp-link.com/kr/support/faq/2292/",
       "checked": "2026-08-10",
-      "scope": { "brand": "공통", "category": "와이파이", "line": "모든 공유기", "years": "현행", "region": "KR" }
+      "scope": { "brand": "공통", "category": "와이파이", "line": "모든 공우기", "years": "현행", "region": "KR" },
+      "caution": "WiFi Analyzer 앱은 사용자 리뷰에서만 검증되었으므로, 사용 시 신뢰할 수 있는 출처의 안내를 함께 참고할 것."
     },
     {
       "id": "wifi-2-4ghz-recommended-channels-1-6-11",
       "claim": "2.4GHz 대역의 무선 채널은 1, 6, 11번이 겹치지 않으므로, 이 세 채널 중에서 가장 덜 혼잡한 것을 선택하는 것이 권장된다.",
       "tier": "확실",
       "evidence": "공식",
-      "source": "와이파이 기술 표준 및 채널 가이드",
-      "source_url": "https://exocctv.com/networkguide/wifi-channel-optimization/",
+      "source": "TP-Link 공식 — 무선 채널, 채널 폭, DFS 소개",
+      "source_url": "https://www.tp-link.com/kr/support/faq/4309/",
       "checked": "2026-08-10",
       "scope": { "brand": "공통", "category": "와이파이", "line": "2.4GHz 대역", "years": "현행", "region": "KR" },
-      "caution": "채널 설정은 공유기 관리자 페이지에서 변경할 수 있으며, 많은 공유기가 '자동 채널 선택' 기능을 제공하므로 그것을 활용하는 것도 방법이다."
+      "caution": "채널 설정은 공우기 관리자 페이지에서 변경할 수 있으며, 많은 공우기가 '자동 채널 선택' 기능을 제공하므로 그것을 활용하는 것도 방법이다."
     }
   ]
 }

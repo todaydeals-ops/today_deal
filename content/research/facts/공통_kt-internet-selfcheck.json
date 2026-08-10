@@ -9,67 +9,67 @@
   "facts": [
     {
       "id": "kt-modem-power-led-green-normal",
-      "claim": "KT 모뎀의 전원 LED가 초록색으로 켜져 있으면 정상 작동 중이다.",
+      "claim": "KT 모뎡의 전원 LED가 초록색으로 켜져 있으면 정상 작동 중이다.",
       "tier": "확실",
       "evidence": "공식",
-      "source": "KT 고객지원 — 모뎀 LED 가이드",
+      "source": "KT 고객지원 — 모뎡 LED 가이드",
       "source_url": "https://help.kt.com/servicetip/ServiceTipInfo.do?idx=69",
       "checked": "2026-08-10",
-      "scope": { "brand": "KT", "category": "모뎀", "line": "모든 라인", "years": "현행", "region": "KR" }
+      "scope": { "brand": "KT", "category": "모뎡", "line": "모든 라인", "years": "현행", "region": "KR" }
     },
     {
       "id": "kt-modem-internet-led-colors-by-speed",
-      "claim": "KT 모뎀의 인터넷 LED는 100Mbps 이상 연결 시 초록색, 1Gbps 연결 시 파란색, 2.5G/5G 연결 시 보라색으로 표시되며, 이들은 모두 정상 상태다.",
+      "claim": "KT 모뎡의 인터넷 LED는 100Mbps 이상 연결 시 초록색, 1Gbps 연결 시 파란색, 2.5G/5G 연결 시 보라색으로 표시되며, 이들은 모두 정상 상태다.",
       "tier": "확실",
       "evidence": "공식",
-      "source": "KT 고객지원 — 모뎀 LED 상태 안내",
+      "source": "KT 고객지원 — 모뎡 LED 상태 안내",
       "source_url": "https://help.kt.com/servicetip/ServiceTipInfo.do?idx=69",
       "checked": "2026-08-10",
-      "scope": { "brand": "KT", "category": "모뎀", "line": "기가, 기가 와이파이 등", "years": "현행", "region": "KR" },
-      "caution": "LED 색상은 회선 속도에 따라 달라지므로, 파란색이 반드시 1Gbps를 의미하는 것은 아니고 현재의 실제 연결 속도를 나타낸다. 구형 모뎀은 색상 구분이 다를 수 있으므로 모뎀 뒷면 라벨을 확인할 것.",
-      "cautionSource": "KT 고객지원 문서에서 모뎀 모델별 LED 색상 다양성 언급"
+      "scope": { "brand": "KT", "category": "모뎡", "line": "기가, 기가 와이파이 등", "years": "현행", "region": "KR" },
+      "caution": "LED 색상은 회선 속도에 따라 달라지므로, 파란색이 반드시 1Gbps를 의미하는 것은 아니고 현재의 실제 연결 속도를 나타낸다. 구형 모뎡은 색상 구분이 다를 수 있으므로 모뎡 뒷면 라벨을 확인할 것.",
+      "cautionSource": "KT 고객지원 문서에서 모뎡 모델별 LED 색상 다양성 언급"
     },
     {
       "id": "kt-modem-lan-led-green-connected",
-      "claim": "KT 모뎀의 LAN LED는 기기가 연결된 포트에 초록색 불이 켜져 있으면 정상 연결 상태다.",
+      "claim": "KT 모뎡의 LAN LED는 기기가 연결된 포트에 초록색 불이 켜져 있으면 정상 연결 상태다.",
       "tier": "확실",
       "evidence": "공식",
-      "source": "KT 고객지원 — 모뎀 LED 가이드",
+      "source": "KT 고객지원 — 모뎡 LED 가이드",
       "source_url": "https://help.kt.com/servicetip/ServiceTipInfo.do?idx=69",
       "checked": "2026-08-10",
-      "scope": { "brand": "KT", "category": "모뎀", "line": "모든 라인", "years": "현행", "region": "KR" }
+      "scope": { "brand": "KT", "category": "모뎡", "line": "모든 라인", "years": "현행", "region": "KR" }
     },
     {
       "id": "kt-modem-opt-led-red-line-broken",
-      "claim": "KT 모뎀의 OPT(광신호) LED가 빨간색으로 표시되면 광케이블의 단선이나 접촉 불량을 의미한다.",
+      "claim": "KT 모뎡의 OPT(광신호) LED가 빨간색으로 표시되면 광케이블의 단선이나 접촉 불량을 의미한다.",
       "tier": "확실",
       "evidence": "공식",
-      "source": "KT 고객지원 및 기술 커뮤니티",
+      "source": "KT 고객지원 — 모뎡 LED 안내",
       "source_url": "https://help.kt.com/servicetip/ServiceTipInfo.do?idx=69",
       "checked": "2026-08-10",
-      "scope": { "brand": "KT", "category": "모뎀", "line": "광가입 모뎀", "years": "현행", "region": "KR" },
+      "scope": { "brand": "KT", "category": "모뎡", "line": "광가입 모뎡", "years": "현행", "region": "KR" },
       "caution": "OPT 빨간색은 회선 문제로, 사용자가 해결할 수 없으므로 즉시 KT 고객센터(100번)에 신고해야 한다."
     },
     {
       "id": "kt-modem-opt-led-orange-weak-signal",
-      "claim": "KT 모뎀의 OPT LED가 주황색으로 표시되면 광신호 레벨이 미약한 상태로, 접촉 불량이나 신호 감쇠를 의미한다.",
-      "tier": "확실",
-      "evidence": "공식",
-      "source": "KT 및 통신 기술 자료",
-      "source_url": "https://www.ajd.co.kr/contents/basic-tip/detail/%EC%9D%B8%ED%84%B0%EB%84%B7_%EB%AA%A8%EB%8E%80_OPT,_%EB%B9%A8%EA%B0%84_%EB%B6%88%EC%9D%B4%EB%9D%BC%EB%A9%B4_'%EC%9D%B0%EA%B2%83'_%EB%A8%BC%EC%A0%80_%ED%95%B4%EB%B3%B4%EC%84%B8%EC%9A%94.-46743",
+      "claim": "KT 모뎡의 OPT LED가 주황색으로 표시되면 광신호 레벨이 미약한 상태로, 접촉 불량이나 신호 감쇠를 의미할 수 있다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "기술 커뮤니티(공식 문서 부재)",
+      "source_url": "https://help.kt.com/servicetip/ServiceTipInfo.do?idx=69",
       "checked": "2026-08-10",
-      "scope": { "brand": "KT", "category": "모뎀", "line": "광가입 모뎀", "years": "현행", "region": "KR" },
-      "caution": "주황색 OPT는 빨강보다 덜 긴급하지만, 광케이블 연결 부분(벽 안쪽 커넥터)을 먼저 재연결해보고 개선되지 않으면 기술 A/S를 신청해야 한다."
+      "scope": { "brand": "KT", "category": "모뎡", "line": "광가입 모뎡", "years": "현행", "region": "KR" },
+      "caution": "OPT 주황색에 대한 공식 기준은 KT에서 명확히 공시하지 않으므로, 이러한 상태가 나타나면 고객센터(100번)에 문의하는 것이 권장된다."
     },
     {
       "id": "kt-modem-no-power-led-check-cord",
-      "claim": "KT 모뎀의 전원 LED가 꺼져 있으면 전원 케이블이 제대로 연결되었는지 확인하고, 콘센트에 전기가 공급되는지 다른 기기로 테스트해야 한다.",
+      "claim": "KT 모뎡의 전원 LED가 꺼져 있으면 전원 케이블이 제대로 연결되었는지 확인하고, 콘센트에 전기가 공급되는지 다른 기기로 테스트해야 한다.",
       "tier": "확실",
       "evidence": "공식",
-      "source": "KT 고객지원 — 모뎀 전원 문제 해결",
+      "source": "KT 고객지원 — 모뎡 전원 문제 해결",
       "source_url": "https://help.kt.com/servicetip/ServiceTipInfo.do?idx=69",
       "checked": "2026-08-10",
-      "scope": { "brand": "KT", "category": "모뎀", "line": "모든 라인", "years": "현행", "region": "KR" }
+      "scope": { "brand": "KT", "category": "모뎡", "line": "모든 라인", "years": "현행", "region": "KR" }
     }
   ]
 }

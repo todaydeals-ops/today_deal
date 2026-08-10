@@ -3,17 +3,38 @@
 > 자동 생성 파일. 직접 수정하지 마세요. `node scripts/research-index.mjs`로 갱신합니다.
 > **기계적 대조 기준은 이 파일이 아니라 `facts/*.json` 원본입니다.**
 
-생성: 2026-08-09 · 조사 355건 · 팩트 4028개
+생성: 2026-08-10 · 조사 466건 · 팩트 4655개
 
 ## ⚠️ 무결성 경고
 
-### 중복 id (1)
+### 중복 id (19)
 
+- madecassoside-vs-asiaticoside-both-triterpenoid-glycosides (centella-wound-repair.json ↔ 뷰티_centella-wound-repair.json)
+- madecassoside-superior-wound-healing-speed-vs-asiaticoside (centella-wound-repair.json ↔ 뷰티_centella-wound-repair.json)
+- asiaticoside-madecassic-acid-collagen-synthesis-mechanism (centella-wound-repair.json ↔ 뷰티_centella-wound-repair.json)
+- centella-asiatica-extract-madecassoside-concentration-variability (centella-wound-repair.json ↔ 뷰티_centella-wound-repair.json)
+- glycerin-humidity-dependent-sticky-feel-humidification (glycerin-humectant.json ↔ 뷰티_glycerin-humectant.json)
+- glycerin-occlusive-pairing-essential-dry-climates (glycerin-humectant.json ↔ 뷰티_glycerin-humectant.json)
+- ketoconazole-shampoo-1-percent-vs-2-percent-indication-concentration (ketoconazole-scalp.json ↔ 뷰티_ketoconazole-scalp.json)
+- ketoconazole-frequency-every-3-4-days-vs-3-times-per-week (ketoconazole-scalp.json ↔ 뷰티_ketoconazole-scalp.json)
+- ketoconazole-contact-time-5-10-minutes-efficacy-requirement (ketoconazole-scalp.json ↔ 뷰티_ketoconazole-scalp.json)
+- ketoconazole-maintenance-therapy-post-treatment-relapse-prevention (ketoconazole-scalp.json ↔ 뷰티_ketoconazole-scalp.json)
+- ketoconazole-korea-classification-status-unconfirmed-regulatory (ketoconazole-scalp.json ↔ 뷰티_ketoconazole-scalp.json)
+- occlusive-examples-plant-oils-silicones-waxes (뷰티_dimethicone-occlusive.json ↔ 뷰티_moisturizer-occlusive-humectant.json)
+- squalane-oxidative-stability-no-lipid-peroxidation (squalane-moisturizer.json ↔ 뷰티_squalane-moisturizer.json)
+- squalene-peroxide-comedogenic-uva-irradiation (squalane-moisturizer.json ↔ 뷰티_squalane-moisturizer.json)
+- sunscreen-dose-reduction-half-spf-reduction-greater-than-half (뷰티_spf-pa-increment-real-benefit.json ↔ 뷰티_sunscreen-reapplication-reality.json)
+- spf-real-world-application-dose-gap-0-5-1-0-mg-cm2 (뷰티_spf-pa-increment-real-benefit.json ↔ 뷰티_sunscreen-spf-pa-science.json)
+- mineral-sunscreen-zinc-oxide-broad-spectrum-titanium-uva-limited (뷰티_physical-vs-chemical-sunscreen.json ↔ 뷰티_zinc-oxide-vs-titanium.json)
+- zinc-pca-sebum-reduction-placebo-controlled-4-week-trial (zinc-pca-sebum.json ↔ 뷰티_zinc-pca-sebum.json)
 - sleep-inertia-definition (수면_power-nap-cognition.json ↔ 수면_sleep-inertia-grogginess.json)
 
-### cautionSource 누락 (caution에 수치·연식·코드가 있는데 근거 없음) (9)
+### cautionSource 누락 (caution에 수치·연식·코드가 있는데 근거 없음) (12)
 
 - adhd-comorbid-sleep-disorder (수면_adhd-sleep-children.json)
+- adenoid-sleep-apnea-mechanism (수면_kids-snoring-adenoids.json)
+- adenoid-treatment-surgical-indication (수면_kids-snoring-adenoids.json)
+- adenoid-conservative-treatment-first-line (수면_kids-snoring-adenoids.json)
 - nasal-congestion-sleep-quality-deterioration (수면_nasal-congestion-sleep.json)
 - pacifier-sids-reduction-mechanisms (수면_pacifier-sleep-weaning.json)
 - pacifier-sleep-initiation-benefit (수면_pacifier-sleep-weaning.json)
@@ -23,49 +44,138 @@
 - thyroid-diagnosis-tsh-test (수면_thyroid-sleep.json)
 - toddler-boundary-setting-clear-expectations (수면_toddler-bedtime-resistance.json)
 
-### scope 구조 문제 (층위 혼동 위험) (1120)
+### 필수 필드 누락 (21)
 
-- aha-glycolic-acid-smallest-molecule-weight: scope.brand 누락
-- aha-glycolic-acid-smallest-molecule-weight: scope.category 누락
-- aha-concentration-minimum-8-percent-efficacy: scope.brand 누락
-- aha-concentration-minimum-8-percent-efficacy: scope.category 누락
-- aha-ph-requirement-3-5-4-5-optimal: scope.brand 누락
-- aha-ph-requirement-3-5-4-5-optimal: scope.category 누락
-- aha-glycolic-acid-collagen-stimulation-timeline: scope.brand 누락
-- aha-glycolic-acid-collagen-stimulation-timeline: scope.category 누락
-- aha-lactic-acid-12-percent-efficacy-lower-irritation: scope.brand 누락
-- aha-lactic-acid-12-percent-efficacy-lower-irritation: scope.category 누락
-- pha-polyhydroxy-acid-higher-ph-tolerance: scope.brand 누락
-- pha-polyhydroxy-acid-higher-ph-tolerance: scope.category 누락
-- benzoyl-peroxide-oxidative-mechanism-bacteria: scope.brand 누락
-- benzoyl-peroxide-oxidative-mechanism-bacteria: scope.category 누락
-- benzoyl-peroxide-concentration-efficacy-2-5-percent: scope.brand 누락
-- benzoyl-peroxide-concentration-efficacy-2-5-percent: scope.category 누락
-- benzoyl-peroxide-korea-regulation-otc-drug: scope.brand 누락
-- benzoyl-peroxide-korea-regulation-otc-drug: scope.category 누락
-- benzoyl-peroxide-no-bacterial-resistance: scope.brand 누락
-- benzoyl-peroxide-no-bacterial-resistance: scope.category 누락
-- benzoyl-peroxide-combination-efficacy-clindamycin: scope.brand 누락
-- benzoyl-peroxide-combination-efficacy-clindamycin: scope.category 누락
-- bha-salicylic-acid-oil-soluble-mechanism: scope.brand 누락
-- bha-salicylic-acid-oil-soluble-mechanism: scope.category 누락
-- bha-concentration-1-2-percent-efficacy: scope.brand 누락
-- bha-concentration-1-2-percent-efficacy: scope.category 누락
-- bha-21day-sebum-reduction-hydration-increase: scope.brand 누락
-- bha-21day-sebum-reduction-hydration-increase: scope.category 누락
-- bha-safety-adverse-effects-minimal: scope.brand 누락
-- bha-safety-adverse-effects-minimal: scope.category 누락
-- …외 1090건
+- article2.json → reused_facts
+- article2.json → declined_facts
+- article2.json → disputes
+- article3.json → reused_facts
+- article3.json → declined_facts
+- article3.json → disputes
+- article4.json → reused_facts
+- article4.json → declined_facts
+- article4.json → disputes
+- article5.json → reused_facts
+- article5.json → declined_facts
+- article5.json → disputes
+- gpt-leads-care6-parsed.json → reused_facts
+- gpt-leads-care6-parsed.json → declined_facts
+- gpt-leads-care6-parsed.json → disputes
+- gpt-leads-parsed.json → reused_facts
+- gpt-leads-parsed.json → declined_facts
+- gpt-leads-parsed.json → disputes
+- weak-sources.json → reused_facts
+- weak-sources.json → declined_facts
+- weak-sources.json → disputes
 
-### tier/evidence 값 오류 (1)
+### scope 구조 문제 (층위 혼동 위험) (2362)
 
+- caffeine-phosphodiesterase-inhibitor-vasoconstrictive-mechanism: scope.brand 누락
+- caffeine-phosphodiesterase-inhibitor-vasoconstrictive-mechanism: scope.category 누락
+- caffeine-topical-dermal-penetration-minutes-water-soluble: scope.brand 누락
+- caffeine-topical-dermal-penetration-minutes-water-soluble: scope.category 누락
+- caffeine-formulation-gel-serum-outperform-cream-eye-products: scope.brand 누락
+- caffeine-formulation-gel-serum-outperform-cream-eye-products: scope.category 누락
+- caffeine-depuffing-duration-30-minutes-to-4-hours: scope.brand 누락
+- caffeine-depuffing-duration-30-minutes-to-4-hours: scope.category 누락
+- caffeine-cumulative-efficacy-4-8-weeks-consistent-use: scope.brand 누락
+- caffeine-cumulative-efficacy-4-8-weeks-consistent-use: scope.category 누락
+- madecassoside-vs-asiaticoside-both-triterpenoid-glycosides: scope.brand 누락
+- madecassoside-vs-asiaticoside-both-triterpenoid-glycosides: scope.category 누락
+- madecassoside-superior-wound-healing-speed-vs-asiaticoside: scope.brand 누락
+- madecassoside-superior-wound-healing-speed-vs-asiaticoside: scope.category 누락
+- asiaticoside-madecassic-acid-collagen-synthesis-mechanism: scope.brand 누락
+- asiaticoside-madecassic-acid-collagen-synthesis-mechanism: scope.category 누락
+- centella-asiatica-extract-madecassoside-concentration-variability: scope.brand 누락
+- centella-asiatica-extract-madecassoside-concentration-variability: scope.category 누락
+- glycerin-optimal-concentration-5-10-percent: scope.brand 누락
+- glycerin-optimal-concentration-5-10-percent: scope.category 누락
+- glycerin-humidity-dependent-sticky-feel-humidification: scope.brand 누락
+- glycerin-humidity-dependent-sticky-feel-humidification: scope.category 누락
+- glycerin-efficacy-broader-humidity-range-vs-hyaluronic-acid: scope.brand 누락
+- glycerin-efficacy-broader-humidity-range-vs-hyaluronic-acid: scope.category 누락
+- glycerin-occlusive-pairing-essential-dry-climates: scope.brand 누락
+- glycerin-occlusive-pairing-essential-dry-climates: scope.category 누락
+- ketoconazole-shampoo-1-percent-vs-2-percent-indication-concentration: scope.brand 누락
+- ketoconazole-shampoo-1-percent-vs-2-percent-indication-concentration: scope.category 누락
+- ketoconazole-frequency-every-3-4-days-vs-3-times-per-week: scope.brand 누락
+- ketoconazole-frequency-every-3-4-days-vs-3-times-per-week: scope.category 누락
+- …외 2332건
+
+### tier/evidence 값 오류 (2)
+
+- kojic-acid-korea-regulatory-status-unconfirmed: evidence="웹검색"
 - azelaic-acid-regulatory-status-korea-uncertain: evidence="웹검색"
+
+### 링크 부패 (407)
+
+- 접속 실패 — https://smart.moneyrules.co.kr/%EC%BD%94%EC%9B%A8%EC%9D%B4-%EB%B9%84%EB%8D%B0-%EA%B3%A0%EC%9E%A5-%EC%9E%90%EA%B0%80%EC%A7%84%EB%8B%A8%EB%B6%80%ED%84%B0-as-%EC%8B%A0%EC%B2%AD-%EB%B0%A9%EB%B2%95-%EC%B4%9D%EC%A0%95%EB%A6%AC/
+      인용 팩트: bidet-power-reset-basic, bidet-water-stoppage-check-steps
+- HTTP 404 — https://product-repair.com/%EC%BD%94%EC%9B%A8%EC%9D%B5-%EC%A0%95%EC%88%98%EA%B8%B0-%EC%98%A8%EC%88%98-%EC%95%88%EB%82%98%EC%98%B4-%EC%9E%90%EA%B0%80%EC%88%98%EB%A6%AC%EB%B0%A9%EB%B2%95/
+      인용 팩트: coway-leak-detection-error-e01
+- 접속 실패 — https://wiz.credtris.com/%EC%9A%B0%EB%A6%AC-%EC%A7%91-%EC%BF%A0%EC%B2%B8-%EB%B0%A5%EC%86%A5-%EC%9E%A0%EA%B8%B8-%EA%B8%B0%EB%8A%A5-%ED%95%B4%EC%A0%9C%ED%95%98%EB%8A%94-%EC%89%AC%EC%9A%B4-%EB%B0%A9%EB%B2%95/
+      인용 팩트: cuchen-initialization-basic-steps
+- HTTP 404 — https://bebeyam.com/%EC%A0%84%EA%B8%B0%EB%B0%A5%EC%86%A5-%EA%B3%A0%EB%AC%B4%ED%8C%A8%ED%82%B9-%EA%B5%90%EC%B2%B8-%EC%BF%A0%EC%B2%B8-cjs-fa1002dv/
+      인용 팩트: cuchen-packing-replacement-alignment
+- HTTP 403 — https://www.dermatologytimes.com/view/high-concentration-glycerin-serves-humectant-attract-water-skin
+      인용 팩트: glycerin-occlusive-pairing-essential-dry-climates, glycerin-occlusive-pairing-essential-dry-climates
+- HTTP 404 — http://www.mygnit.co.kr/bbs/board.php?bo_table=bo_02&wr_id=24
+      인용 팩트: iptime-wps-button-function
+- HTTP 403 — https://prescriberpoint.com/therapies/ketoconazole-a4bb3f4
+      인용 팩트: ketoconazole-frequency-every-3-4-days-vs-3-times-per-week, ketoconazole-frequency-every-3-4-days-vs-3-times-per-week
+- HTTP 403 — http://kr.eguide.lgappstv.com/manual/
+      인용 팩트: lg-tv-self-diagnosis-path-webos
+- 접속 실패 — https://support.nintendo.co.kr/service.do
+      인용 팩트: joycon-drift-free-repair-korea, battery-replacement-official-service-only
+- HTTP 403 — https://r1.community.samsung.com/t5/%EC%86%90%EC%89%AC%EC%9A%B4-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95/%EC%82%BC%EC%84%B1-%EA%B0%A4%EB%9F%AD%EC%8B%9C-%EC%9B%8C%EC%B9%98%EC%99%80-%EA%B0%A4%EB%9F%AD%EC%8B%9C-%EB%B2%84%EC%A6%88-%EC%9E%90%EA%B0%80-%EC%A7%84%EB%8B%A8-%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95/ba-p/21432079
+      인용 팩트: galaxy-wearable-app-diagnostic-support, samsung-members-selfcheck-limited-support
+- HTTP 403 — https://r1.community.samsung.com/t5/%EA%B0%A4%EB%9F%AD%EC%8B%9C-a-j-%EB%85%B8%ED%8A%B8/%ED%86%B5%ED%99%94-%EC%8A%A4%ED%94%BC%EC%BB%A4%EC%97%90-%EB%82%80-%EB%A8%BC%EC%A7%80%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%A0%9C%EA%B1%B0%ED%95%98%EB%82%98%EC%97%AC/td-p/4475317
+      인용 팩트: speaker-dust-debris-removal-method
+- HTTP 403 — https://r1.community.samsung.com/t5/%EC%9B%A8%EC%96%B4%EB%9F%AC%EB%B8%94-%EC%9B%8C%EC%B9%98-%EB%B2%84%EC%A6%88-%EA%B8%B0%ED%83%80/%EC%9B%8C%EC%B9%987-%EB%B0%B0%ED%84%B0%EB%A6%AC-%EA%B4%91%ED%83%88-%ED%95%B4%EA%B2%B0%EB%93%A4-%EB%90%98%EC%85%A8%EB%82%98%EC%9A%94/td-p/28340464
+      인용 팩트: loose-wearing-sensor-detection-loop
+- HTTP 403 — https://r1.community.samsung.com/t5/smartthings/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EC%B2%AD%EC%86%8C-%EC%A4%91-%EB%B0%A4%ED%99%A9%ED%95%98%EB%8A%94-%EC%98%A4%EB%A5%98/td-p/17180323
+      인용 팩트: samsung-jetbot-3d-sensor-auto-calibration, samsung-jetbot-3d-sensor-manual-calibration
+- HTTP 404 — https://www.samsungsvc.co.kr/solution/28337
+      인용 팩트: tv-screen-not-showing-basic-check
+- HTTP 404 — https://www.samsungsvc.co.kr/solution/996881
+      인용 팩트: tv-oneconnect-box-hdmi-verify
+- 접속 실패 — https://www.pocket-lint.com/how-to-fix-ps5-controller-drift/
+      인용 팩트: ps5-dualsense-deep-clean-alcohol
+- HTTP 403 — https://onlinelibrary.wiley.com/doi/full/10.1111/jocd.71034
+      인용 팩트: zinc-pca-sebum-reduction-placebo-controlled-4-week-trial, zinc-pca-sebum-reduction-placebo-controlled-4-week-trial
+- HTTP 404 — https://www.kdnavien.co.kr/product/detail/2119
+      인용 팩트: kyungdong-condensing-boiler-co-safety
+- HTTP 403 — https://www.kingston.com/en/blog/personal-storage/choose-storage-4k
+      인용 팩트: action-cam-recording-failed-sd-card-speed-class, 4k-video-shooting-sd-card-requirement
+- HTTP 404 — https://yellowit.co.kr/it-review/%EA%B3%A0%ED%94%84%EB%A1%9C-%ED%9E%88%EC%96%B4%EB%A1%9C-12-%EB%B0%9C%EC%97%B4-%EB%AC%B8%EC%A0%9C-%EA%B3%A0%ED%94%84%EB%A1%9C-11-%EB%B9%84%EA%B5%90-%EC%84%B1%EB%8A%A5-%EA%B5%AC%EB%A7%A4%ED%95%B4/
+      인용 팩트: action-cam-overheating-shutdown-normal-function
+- HTTP 404 — https://powercam.kr/product/%ED%8C%8C%EC%9B%8C%EC%BA%A0-%EA%B3%A0%ED%94%84%EB%A1%9C-%EA%B9%80%EC%84%9C%EB%A6%BC-%EB%B0%A9%EC%A7%80-%EB%B6%80%EC%86%8D-gopro-new-anti-fog-inserts/488/
+      인용 팩트: action-cam-housing-lens-fog-prevention-inserts
+- HTTP 404 — https://thelife.marketing/2023/03/24/%EA%B3%A0%ED%94%84%EB%A1%9C-%EC%B4%AC%EC%98%81-%ED%8C%80/
+      인용 팩트: action-cam-hypersmooth-stabilization-setting
+- HTTP 404 — https://mojofriends.co.kr/entry/에어프라이어_연기/
+      인용 팩트: air-fryer-smoke-cause-grease-accumulation
+- HTTP 404 — https://bloggerlife.net/air-fryer-basket-coating-care-guide/
+      인용 팩트: air-fryer-basket-coating-protection-method
+- HTTP 404 — https://www.aaro.kr/636/
+      인용 팩트: 24h-operation-electricity-cost
+- HTTP 404 — https://rentre.kr/story/%ED%8F%89%EC%88%98%EB%B3%84-%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0-%EC%9E%98-%EA%B3%A0%EB%A5%B4%EB%8A%94-%EB%B0%A9%EB%B2%95-%EC%A0%81%EC%A0%95-%EC%9A%A9%EB%9F%89-%ED%9A%A8%EA%B3%BC-%EA%B0%9C%EC%88%98-%EA%B3%A0%EB%A5%B4%EA%B8%B0-2025%EB%85%84/
+      인용 팩트: multiple-small-vs-single-large-cost-benefit
+- HTTP 429 — https://www.iqair.com/ko/newsroom/how-often-should-you-change-an-air-purifier-filter
+      인용 팩트: pet-cooking-intensive-filter-replacement-cycle-shortened
+- HTTP 404 — https://ownersmanual.kia.com/docview/webhelp/Kia/16f1ac02-6c37-4173-910f-9c968f6a0540/topics/t01128.html
+      인용 팩트: jumpstart-cable-order
+- HTTP 403 — https://www.reddit.com/r/backpacks/
+      인용 팩트: synthetic-backpack-no-machine-wash, backpack-hand-wash-method, backpack-drying-method, water-repellent-spray-reapply, zipper-waxing-maintenance, backpack-shape-storage, backpack-mold-prevention, backpack-odor-removal, backpack-weight-distribution, laptop-backpack-padding-check, backpack-back-panel-strap-cleaning, backpack-stain-removal, canvas-backpack-washing-caution, leather-bag-water-avoidance
+- HTTP 403 — https://www.sciencedirect.com/science/article/abs/pii/S2352152X22008209
+      인용 팩트: fast-charging-mechanism-lithium-plating-degradation
+- …외 377건
 
 ## 통계
 
-- 확신도: 확실 3761 · 논쟁 198 · 확인실패 69
-- 근거: 공식 3359 · 후기 663 · 실측 5
-- **순차 대안 톤 대상: 737개** (tier=논쟁 또는 evidence=후기 → "먼저 해보고 안 되면" 서술 필수)
+- 확신도: 확실 4308 · 논쟁 240 · 확인실패 107
+- 근거: 공식 3968 · 후기 680 · 실측 5
+- **순차 대안 톤 대상: 791개** (tier=논쟁 또는 evidence=후기 → "먼저 해보고 안 되면" 서술 필수)
 
 ## HP
 
@@ -1818,6 +1928,17 @@
 | `noise-level-low-speed-juicer-normal` | 확실 | 공식 | 저속 착즙기는 모터가 저속으로 회전하므로 소음이 고속 블렌더(80~100dB)에 비해 상대적으로 작지만(보통 50~70dB), 모델별로 다르다. 일부 모델은 굴러떨어지는 소리나 미세한 진동음이 들릴 수 있다. | 공통 / 착즙기 / 저속 원액기 / 현행 판매 모델 / KR |
 | `soft-ingredients-alone-insufficient-extraction` | 확실 | 공식 | 바나나, 시금치, 토마토 같은 소프트 재료만으로는 착즙이 거의 안 되거나 매우 적어진다. 저속 착즙기는 압축으로 즙을 짜내는 방식이므로 딱딱한 과일·채소(사과, 당근, 파인애플)와 혼합해야 효율적이다. | 공통 / 착즙기 / 저속 원액기 / 현행 판매 모델 / KR |
 
+### KT 인터넷 모뎀 LED 색상으로 문제 원인 판별 <sub>2026-08-10 · kt-internet-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `kt-modem-power-led-green-normal` | 확실 | 공식 | KT 모뎡의 전원 LED가 초록색으로 켜져 있으면 정상 작동 중이다. | KT / 모뎡 / 모든 라인 / 현행 / KR |
+| `kt-modem-internet-led-colors-by-speed` | 확실 | 공식 | KT 모뎡의 인터넷 LED는 100Mbps 이상 연결 시 초록색, 1Gbps 연결 시 파란색, 2.5G/5G 연결 시 보라색으로 표시되며, 이들은 모두 정상 상태다. | KT / 모뎡 / 기가, 기가 와이파이 등 / 현행 / KR |
+| `kt-modem-lan-led-green-connected` | 확실 | 공식 | KT 모뎡의 LAN LED는 기기가 연결된 포트에 초록색 불이 켜져 있으면 정상 연결 상태다. | KT / 모뎡 / 모든 라인 / 현행 / KR |
+| `kt-modem-opt-led-red-line-broken` | 확실 | 공식 | KT 모뎡의 OPT(광신호) LED가 빨간색으로 표시되면 광케이블의 단선이나 접촉 불량을 의미한다. | KT / 모뎡 / 광가입 모뎡 / 현행 / KR |
+| `kt-modem-opt-led-orange-weak-signal` | 확인실패 🔶 | 후기 | KT 모뎡의 OPT LED가 주황색으로 표시되면 광신호 레벨이 미약한 상태로, 접촉 불량이나 신호 감쇠를 의미할 수 있다. | KT / 모뎡 / 광가입 모뎡 / 현행 / KR |
+| `kt-modem-no-power-led-check-cord` | 확실 | 공식 | KT 모뎡의 전원 LED가 꺼져 있으면 전원 케이블이 제대로 연결되었는지 확인하고, 콘센트에 전기가 공급되는지 다른 기기로 테스트해야 한다. | KT / 모뎡 / 모든 라인 / 현행 / KR |
+
 ### 노트북 내장 키보드 특정 키 안 눌림·고스트·한/영 전환 등 자가점검 <sub>2026-07-21 · 예정</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -1941,6 +2062,17 @@
 | `use-case-gaming-red-switch` | 확실 | 공식 | 게이밍 중심 사용자는 적축(Red Switch)을 추천하며, 이유는 빠른 반응속도, 낮은 피로도, 우수한 연타 성능이기 때문이다. | 공통 / 기계식 키보드 / 게이밍용 / 현행 / 글로벌 |
 | `use-case-office-silent-switch` | 확실 | 공식 | 사무실·공용 공간 사용자는 저소음 적축 또는 저소음 갈축을 추천하며, 저소음 적축은 최고 수준의 조용함(35.6dB)을 제공하고 저소음 갈축은 구분감과 조용함의 중간 선택이다. | 공통 / 기계식 키보드 / 사무실용 / 현행 / KR |
 | `use-case-typing-brown-switch` | 확실 | 공식 | 타이핑·글쓰기 중심 사용자는 갈축(Brown Switch)을 추천하며, 택타일 피드백으로 입력을 확인할 수 있어 오타가 줄어든다. | 공통 / 기계식 키보드 / 타이핑용 / 현행 / 글로벌 |
+
+### 메시·증폭기 설치 최적화 및 성능 저하 원인 진단 <sub>2026-08-10 · mesh-extender-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `mesh-main-router-center-placement` | 확실 | 공식 | 메시 네트워크에서 메인 공우기는 집의 중앙(주로 거실)에 설치하는 것이 가장 이상적이며, 이렇게 하면 서브 공우기까지의 거리가 균등해져 신호 강도가 높아진다. | 공통 / 메시 네트워크 / 메시 지원 공우기 / 현행 / KR |
+| `mesh-sub-router-middle-distance-placement` | 확실 | 공식 | 메시의 서브 공우기(또는 증폭기)는 메인 공우기와 너무 가깝지도, 너무 멀지도 않은 중간 지점에 배치해야 가장 좋은 신호를 중계할 수 있다. | 공통 / 메시 네트워크 / 메시 지원 공우기 / 현행 / KR |
+| `mesh-star-topology-better-than-chain` | 확실 | 공식 | 메시 네트워크의 토폴로지는 체인형(공우기가 일렬로 연결) 대신 성형(메인에서 모든 서브가 직접 연결)을 사용하는 것이 성능이 더 좋다. | 공통 / 메시 네트워크 / 메시 지원 공우기 / 현행 / KR |
+| `mesh-wired-backhaul-vs-wireless-backhaul` | 확실 | 공식 | 메시 네트워크에서 메인과 서브 공우기를 유선 랜선으로 연결하는 '유선 백홀'이 와이파이로만 연결하는 '무선 백홀'보다 성능이 훨씬 좋다. | 공통 / 메시 네트워크 / 메시 지원 공우기 / 현행 / KR |
+| `mesh-band-separation-2-4ghz-5ghz-iot` | 확인실패 🔶 | 후기 | 메시 네트워크에서 2.4GHz와 5GHz 대역을 분리하여 사용하면, IoT 기기들은 2.4GHz로 연결하게 하고 모바일 기기는 5GHz로만 연결하도록 설정할 수 있어 네트워크 효율이 높아진다. | 공통 / 메시 네트워크 / 메시 지원 공우기 / 현행 / KR |
+| `mesh-wireless-only-one-band-allocated` | 확실 | 공식 | 메시의 무선 에이전트(서브 공우기)로 구성할 때, 2.4GHz 또는 5GHz 중 하나는 자동으로 백홀 통신 전용으로 할당되어 클라이언트 기기들이 사용할 수 없게 된다. | 공통 / 메시 네트워크 / 메시 지원 공우기 / 현행 / KR |
 
 ### 마이크 구매 가이드 — 종류·연결·지향성·용도별 선택 <sub>2026-07-28 · microphone-buying-guide</sub>
 
@@ -2517,6 +2649,18 @@
 | `cooked-egg-refrigeration-timing` | 확실 | 공식 | 조리된 계란(삶은 계란 포함)은 얼음물에 넣어 빨리 식힌 후 조리 완료 후 2시간 이내에 냉장고에 넣어야 한다. | 공통 / 식품 / 조리 계란 / 현행 / KR |
 | `egg-expired-consumption-date-unsafe` | 확실 | 공식 | 냉장 보관 계란이라도 유통기한(소비기한)을 넘기면 섭취하지 않는 것이 안전하다. | 공통 / 식품 / 생계란 / 현행 / KR |
 
+### 공유기 펌웨어 업그레이드·초기화·설정 백업 가이드 <sub>2026-08-10 · router-firmware-reset-guide</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `firmware-upgrade-settings-may-reset` | 확실 | 공식 | 공유기의 펌웨어 업그레이드 후 일부 설정이 공장 초기화될 수 있으므로, 업그레이드 전에 현재 설정을 파일로 백업해두는 것이 필수다. | 공통 / 펌웨어 / 모든 공유기 / 현행 / KR |
+| `firmware-upgrade-during-disconnect-risk` | 확실 | 공식 | 공유기 펌웨어 업그레이드 중 인터넷이 끊기면 오류가 발생할 수 있으므로, PC를 공유기에 랜선으로 직접 연결하여 업그레이드해야 한다. | 공통 / 펌웨어 / 모든 공유기 / 현행 / KR |
+| `firmware-upgrade-power-outage-brick-risk` | 확실 | 공식 | 펌웨어 업그레이드 중 전원이 꺼지면 공유기가 벽돌화(부팅 불가 상태)될 수 있으므로, 업그레이드 중에는 반드시 안정적인 전원 공급을 확보해야 한다. | 공통 / 펌웨어 / 모든 공유기 / 현행 / KR |
+| `factory-reset-before-checklist-reboot-first` | 확실 | 공식 | 공유기 공장 초기화를 하기 전에 먼저 모뎀과 공우기의 전원을 껐다가 켜서 재부팅을 시도하고, 그것으로 증상이 해결되는지 확인해야 한다. | 공통 / 초기화 / 모든 공유기 / 현행 / KR |
+| `factory-reset-isp-router-requires-consultation` | 확실 | 공식 | 통신사 임대 공유기(KT, SK브로드밴드, LG유플러스 등)의 공장 초기화는 IPTV 설정에도 영향을 줄 수 있으므로, 반드시 고객센터에 문의한 후 진행해야 한다. | 공통 / 초기화 / 통신사 공유기 / 현행 / KR |
+| `factory-reset-record-admin-info-before` | 확실 | 공식 | 공장 초기화 전에 공우기 하단의 라벨에서 기본 관리자 주소(예: 192.168.0.1), 기본 아이디, 기본 비밀번호를 미리 기록해두어야 초기화 후 접속할 수 있다. | 공통 / 초기화 / 모든 공유기 / 현행 / KR |
+| `settings-backup-includes-ssid-password-ip-dhcp` | 확실 | 공식 | 공우기 설정 백업 파일에는 SSID(네트워크 이름), 와이파이 비밀번호, 내부 IP 대역, DHCP 예약, 포트 포워딩, DDNS, 게스트 네트워크 등 모든 커스텀 설정이 포함된다. | 공통 / 초기화 / 모든 공유기 / 현행 / KR |
+
 ### 러그·카펫 고르는 법과 관리 — 소재·크기·세탁·진드기 <sub>2026-07-21 · smartguide/rug-carpet-guide</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -2608,6 +2752,16 @@
 | `bobbin-case-tension-disc-adjustment` | 확실 🔶 | 후기 | 밑실 장력은 보빈 케이스 플레이트의 스프링으로 조정되며, 보빈 케이스를 끼울 때도 '로드 포인트'라 불리는 특정 위치에 장력 스프링을 정확히 맞춰야 한다. 보빈을 너무 많이 감으면 보빈 케이스에 맞지 않는다 | 공통 / 재봉틀 / 가정용 전 라인 / 전 연식 / KR |
 | `stitch-skipping-feed-dog-height` | 확실 🔶 | 후기 | 박음질이 건너뛰는 원인은 ① 노루발 높이가 맞지 않음 ② 톱니가 원단을 제대로 잡지 못함(먼지·보풀 낀 경우) ③ 바늘이 마모되거나 손상됨이다. 노루발을 올렸을 때 톱니가 원단 위에 살짝 보일 정도가 정상이다 | 공통 / 재봉틀 / 가정용 전 라인 / 전 연식 / KR |
 | `fabric-not-advancing-presser-foot-pressure` | 확실 🔶 | 후기 | 원단이 전진하지 않는 원인은 ① 노루발 높이가 너무 낮아 톱니가 원단을 잡지 못함 ② 톱니가 먼지·보풀로 막힘 ③ 윗실 또는 밑실이 너무 팽팽해 원단 이동을 방해함이다 | 공통 / 재봉틀 / 가정용 전 라인 / 전 연식 / KR |
+
+### SK브로드밴드·LG유플러스 인터넷 장애 확인 및 접수 방법 <sub>2026-08-10 · skb-lgu-internet-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `skb-customer-service-number-1588-7000` | 확실 | 공식 | SK브로드밴드 고객센터는 1588-7000번으로 연결되며, 상담 시간은 08:00–22:00이다. | SK브로드밴드 / 고객센터 / 전 라인 / 현행 / KR |
+| `lgu-service-status-page-online-check` | 확실 | 공식 | LG유플러스는 공식 홈페이지의 서비스 장애 안내 페이지(https://www.lguplus.com/footer/issue-status)에서 실시간 장애 현황을 확인할 수 있다. | LG유플러스 / 고객센터 / 전 라인 / 현행 / KR |
+| `skb-online-failure-reporting-bworld` | 확실 | 공식 | SK브로드밴드의 인터넷 장애 신고는 전화 1588-7000 외에 B world 홈페이지(bworld.co.kr)에서 온라인으로도 접수할 수 있다. | SK브로드밴드 / 고객센터 / 전 라인 / 현행 / KR |
+| `lgu-app-chat-support-available` | 확실 | 공식 | LG유플러스는 U+ 앱의 챗봇 상담과 영상통화를 통한 원격 기술지원도 제공한다. | LG유플러스 / 고객센터 / 전 라인 / 현행 / KR |
+| `skb-modem-led-general-meaning` | 확인실패 🔶 | 후기 | SK브로드밴드 모뎡의 LED도 KT와 유사하게 작동하지만, 모델별로 색상과 위치가 다를 수 있으므로 모뎡 뒷면 라벨이나 매뉴얼을 확인해야 한다. | SK브로드밴드 / 모뎡 / 전 모델 / 현행 / KR |
 
 ### SK매직·청호나이스 정수기 자가점검 — 물 안 나옴·냉온수 불량·필터·얼음·렌탈 범위 <sub>2026-07-21 · 예정</sub>
 
@@ -3008,6 +3162,18 @@
 | `fluorine-coating-durability` | 논쟁 🔶 | 공식 | 불소코팅 제품은 염분·산성 음료에 더 강하지만, 코팅이 벗겨지면 원래 스테인리스 수준의 내식성만 남는다. | 공통 / 보온병·텀블러 / 불소코팅 제품 / 2000년대 이후 / KR |
 | `weekly-deep-clean-maintenance` | 확실 🔶 | 후기 | 물때가 자주 생기는 제품은 매일 세척과 별도로 주 1회 따뜻한 물에 베이킹소다나 구연산을 풀어 1~2시간 침지하는 관리가 효과적이다. | 공통 / 보온병·텀블러 / 모든 보온병 / 전체 / KR |
 
+### 넷플릭스·유튜브 등 스트리밍 앱 버퍼링 원인 진단 및 해결 <sub>2026-08-10 · tv-streaming-app-buffering</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `hd-video-minimum-5mbps-netflix` | 확실 | 공식 | Netflix 공식 가이드에서는 HD(고화질) 비디오 재생을 위해 최소 5Mbps의 인터넷 속도를 권장한다. | Netflix / 스트리밍 / HD / 현행 / KR |
+| `4k-video-minimum-25mbps-youtube` | 확실 | 공식 | YouTube 공식 가이드에서는 4K(초고화질) 비디오 재생을 위해 최소 25Mbps 이상의 인터넷 속도가 필요하다고 안내한다. | YouTube / 스트리밍 / 4K / 현행 / KR |
+| `streaming-buffering-multiple-devices-simultaneous` | 논쟁 🔶 | 후기 | 스트리밍 버퍼링의 주요 원인은 여러 기기가 동시에 인터넷을 사용할 때 충분한 대역폭이 할당되지 않기 때문이다. | 공통 / 스트리밍 / 모든 앱 / 현행 / KR |
+| `app-outdated-version-buffering-cause` | 확인실패 🔶 | 후기 | 스트리밍 앱의 버전이 오래되었거나 최신 업데이트가 설치되지 않았으면 버퍼링이나 재생 오류가 발생할 수 있다. | 공통 / 스트리밍 / 모든 앱 / 현행 / KR |
+| `wired-connection-more-stable-than-wifi` | 확실 🔶 | 후기 | 가능하다면 스트리밍 기기를 랜선으로 유선 연결하면 와이파이보다 더 안정적이고 버퍼링이 적다. | 공통 / 스트리밍 / 모든 기기 / 현행 / KR |
+| `modem-router-reboot-network-initialization` | 확실 🔶 | 후기 | 스트리밍 버퍼링이 발생하면 모뎀과 공우기의 전원을 끄고 1~2분 대기 후 다시 켜서 네트워크를 초기화하는 것이 도움이 될 수 있다. | 공통 / 스트리밍 / 모든 앱 / 현행 / KR |
+| `streaming-quality-reduce-lower-buffering` | 확실 🔶 | 후기 | 현재의 인터넷 속도로 고화질을 재생할 수 없다면, 스트리밍 앱의 화질 설정을 중간 또는 낮음으로 변경하면 버퍼링이 감소하고 더 부드러운 재생 경험을 얻을 수 있다. | 공통 / 스트리밍 / 모든 앱 / 현행 / KR |
+
 ### 스마트TV 스트리밍 앱(Netflix·YouTube·Tving) 안 켜짐·버퍼링·로그인 오류 자가점검 <sub>2026-07-28 · tv-streaming-app-selfcheck</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -3227,6 +3393,17 @@
 | `webcam-frame-rate-fps-smooth-movement` | 확실 | 공식 | 웹캠 영상이 끊기거나 움직임이 버벅거리면 프레임 레이트(FPS) 설정을 확인한다. 화상회의는 30fps가 표준이며, 고정 자세라면 30fps로, 움직임이 많으면 60fps를 시도해볼 수 있다 | 공통 / 웹캠 / 전 모델 / 현행 / KR |
 | `webcam-driver-rollback-after-windows-update` | 확실 | 공식 | Windows 업데이트 후 웹캠이 갑자기 작동하지 않으면 장치 관리자에서 카메라 드라이버를 이전 버전으로 롤백하는 것을 시도해볼 수 있다. 우클릭 > '드라이버' > '이전 드라이버로 롤백'을 선택한다 | 공통 / 웹캠 / 전 모델 / Windows 10/11 / KR |
 | `webcam-windows-update-importance` | 확실 | 공식 | 웹캠 문제 해결의 기본 단계로 Windows를 최신 버전으로 업데이트해야 한다. 웹캠 관련 OS 패치 또는 드라이버 업데이트가 포함될 수 있다 | 공통 / 웹캠 / 전 모델 / Windows 10/11 / KR |
+
+### 와이파이 느려짐 진단: 속도측정·채널 간섭·대역 선택 <sub>2026-08-10 · wifi-slow-speed-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `nia-speedtest-url-official` | 확실 | 공식 | 한국인터넷진흥원(NIA)의 공식 인터넷 속도측정 서비스는 https://speed.nia.or.kr/에서 제공되며, 통신사 민원이나 품질 보증 요청 시 이 결과가 인정된다. | 공통 / 속도측정 / 고정 인터넷 / 현행 / KR |
+| `nia-speedtest-duration-1-2-minutes` | 확실 | 공식 | NIA 인터넷 속도측정은 측정에 약 1~2분이 소요되며, 완료 후 다운로드 속도(Mbps), 업로드 속도(Mbps), 지연시간(ms)의 세 가지 결과를 제공한다. | 공통 / 속도측정 / 고정 인터넷 / 현행 / KR |
+| `nia-speedtest-comparison-nationwide-average` | 확실 | 공식 | NIA 속도측정 서비스의 통계 페이지에서는 전국 통신사별 평균 속도와 개인의 측정값을 비교할 수 있어, 자신의 인터넷 속도가 지역·통신사 평균 대비 정상 범위인지 판단할 수 있다. | 공통 / 속도측정 / 고정 인터넷 / 현행 / KR |
+| `wifi-2-4ghz-interference-microwave-bluetooth` | 확실 | 공식 | 와이파이 2.4GHz 대역은 전자레인지, 블루투스 기기 등이 같은 주파수를 사용하기 때문에 이들 기기 근처에서는 간섭이 발생할 수 있다. | 공통 / 와이파이 / 2.4GHz 대역 / 현행 / KR |
+| `wifi-analyzer-app-channel-scan` | 확인실패 🔶 | 후기 | 안드로이드의 WiFi Analyzer 앱이나 iOS의 Airport Utility 앱을 사용하면 주변 와이파이의 채널 사용 현황을 스캔할 수 있으며, 이를 통해 가장 덜 혼잡한 채널을 선택할 수 있다. | 공통 / 와이파이 / 모든 공우기 / 현행 / KR |
+| `wifi-2-4ghz-recommended-channels-1-6-11` | 확실 | 공식 | 2.4GHz 대역의 무선 채널은 1, 6, 11번이 겹치지 않으므로, 이 세 채널 중에서 가장 덜 혼잡한 것을 선택하는 것이 권장된다. | 공통 / 와이파이 / 2.4GHz 대역 / 현행 / KR |
 
 ### 창문형 에어컨: 실외기 일체형 원리, 설치·성능·소음·세입자 활용 <sub>2026-07-21 · 예정</sub>
 
@@ -3519,12 +3696,12 @@
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
 |---|---|---|---|---|
-| `enuresis-medical-definition-age-criteria` | 확실 | 공식 | 의학적 야뇨증 진단 기준: 만 5세 이상 소아가 수면 중 본인의 의지와 무관하게 주 2회 이상, 최소 3개월 동안 야간 수면 중 불수의적 배뇨를 반복하는 경우 | 공통 / 수면·침구 |
-| `enuresis-prevalence-by-age` | 확실 | 공식 | 연령별 야뇨증 유병률: 만 5세 약 15~20%, 7세 약 10%, 15세 약 1~2%로 연령 증가에 따라 자연 소실 | 공통 / 수면·침구 |
-| `enuresis-primary-vs-secondary-etiology` | 확실 | 공식 | 야뇨증 분류: 원발성(전체 80~90%)은 야간 항이뇨호르몬 분비 미성숙·방광용적 감소·수면 각성 장애가 원인이며, 속발성은 동생 출생·이사·부모 이혼·학교 입학 등 환경 스트레스 또는 요로감염·당뇨·만성 변비·수면무호흡증이 원인 | 공통 / 수면·침구 |
-| `enuresis-genetic-predisposition` | 확실 | 공식 | 야뇨증의 강력한 유전 요인: 부모 한쪽이 야뇨증 경험 시 자녀의 야뇨증 발생률 약 44%, 양쪽 부모 모두 경험한 경우 약 77% | 공통 / 수면·침구 |
-| `enuresis-natural-resolution-rate` | 확실 | 공식 | 적극적 개입 없이 매년 약 15%의 아이가 야뇨증에서 자연 소실되며, 이 비율이 지속되면 성인기까지 증상이 남는 경우는 약 1~2% | 공통 / 수면·침구 |
-| `enuresis-modern-treatment-approach` | 확실 | 공식 | 현대 소아비뇨의학은 야뇨증을 단순 대기의 대상이 아닌 '체계적인 진단과 맞춤형 치료가 필요한 능동적 질환'으로 정의하며, 조기 진단·관리는 가족의 심리 스트레스 완화를 고려하여 결정 | 공통 / 수면·침구 |
+| `enuresis-medical-definition-age-criteria` | 확실 | 공식 | 의학적 야뇨증 진단 기준: 만 5세 이상 소아가 수면 중 본인의 의지와 무관하게 주 2회 이상, 최소 3개월 동안 야간 수면 중 불수의적 배뇨를 반복하는 경우 |  |
+| `enuresis-prevalence-by-age` | 확실 | 공식 | 연령별 야뇨증 유병률: 만 5세 약 15~20%, 7세 약 10%, 15세 약 1~2%로 연령 증가에 따라 자연 소실 |  |
+| `enuresis-primary-vs-secondary-etiology` | 확실 | 공식 | 야뇨증 분류: 원발성(전체 80~90%)은 야간 항이뇨호르몬 분비 미성숙·방광용적 감소·수면 각성 장애가 원인이며, 속발성은 동생 출생·이사·부모 이혼·학교 입학 등 환경 스트레스 또는 요로감염·당뇨·만성 변비·수면무호흡증이 원인 |  |
+| `enuresis-genetic-predisposition` | 확실 | 공식 | 야뇨증의 강력한 유전 요인: 부모 한쪽이 야뇨증 경험 시 자녀의 야뇨증 발생률 약 44%, 양쪽 부모 모두 경험한 경우 약 77% |  |
+| `enuresis-natural-resolution-rate` | 확실 | 공식 | 적극적 개입 없이 매년 약 15%의 아이가 야뇨증에서 자연 소실되며, 이 비율이 지속되면 성인기까지 증상이 남는 경우는 약 1~2% |  |
+| `enuresis-modern-treatment-approach` | 확실 | 공식 | 현대 소아비뇨의학은 야뇨증을 단순 대기의 대상이 아닌 '체계적인 진단과 맞춤형 치료가 필요한 능동적 질환'으로 정의하며, 조기 진단·관리는 가족의 심리 스트레스 완화를 고려하여 결정 |  |
 
 ### 벼락치기 vs 규칙수면: 수면과 시험 성적 비교 연구 <sub>2026-07-31 · 예정</sub>
 
@@ -3561,15 +3738,15 @@
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
 |---|---|---|---|---|
-| `adenoid-anatomy-immune-function` | 확실 | 공식 | 아데노이드는 코 뒤쪽(비인두)에 위치한 림프조직으로 구개 편도와 함께 인체의 일차적 면역 기능을 담당하는 조직 | 공통 / 수면·침구 |
-| `adenoid-hypertrophy-age-pattern` | 확실 | 공식 | 아데노이드 크기의 발달 궤적: 3세경 최대 크기에 도달한 후 점진적으로 축소되며, 7세 이후에는 거의 남아 있지 않는 패턴. 주로 2~7세에 호흡 증상 유발 가능성 높음 | 공통 / 수면·침구 |
-| `adenoid-prevalence-in-children` | 확실 | 공식 | 아데노이드 비대 증상을 보이는 소아의 비율은 약 10~15%이며, 3세~6세 사이에 가장 흔히 나타남 | 공통 / 수면·침구 |
-| `adenoid-etiology-repeated-infection-inflammation` | 확실 | 공식 | 아데노이드 비대의 주요 원인: 급성 세균 감염의 반복, 비강 또는 부비동의 만성 염증에 의한 림프조직 증식. 1~5세 면역 발달 과정에서 자연적으로 커지는 경향도 있음 | 공통 / 수면·침구 |
-| `adenoid-snoring-symptoms` | 확실 | 공식 | 아데노이드 비대의 주요 증상: 구강 호흡(입으로만 숨 쉬기), 심한 코골이, 수면 중 호흡 정지(수면 무호흡), 야뇨증 및 수면 중 빈번한 각성, 낮 시간의 과도한 졸음 | 공통 / 수면·침구 |
-| `adenoid-sleep-apnea-mechanism` | 확실 | 공식 | 아데노이드·편도선 비대가 소아 상기도 폐쇄의 원인 중 약 70%를 차지하며, 이로 인해 수면 중 코골이 및 수면 무호흡이 생겨서 깊이 잠을 자지 못하고 학습 능력 저하·학교 적응력 저하로 이어짐 | 공통 / 수면·침구 |
-| `adenoid-secondary-complications` | 확실 | 공식 | 아데노이드 비대 방치 시 만성 중이염, 부비동염, 얼굴 골격 발달 지연('아데노이드 얼굴' - 긴 얼굴, 좁은 턱, 입 벌림)으로 이어질 수 있음 | 공통 / 수면·침구 |
-| `adenoid-treatment-surgical-indication` | 확실 | 공식 | 수술(아데노이드 절제술) 고려 기준: 반복적 중이염·부비동염 발생, 만성 코막힘, 수면 무호흡 증상, 치아 부정교합·안면 발달 장애 소견. 수술 후 90% 이상의 증상 호전율 | 공통 / 수면·침구 |
-| `adenoid-conservative-treatment-first-line` | 확실 | 공식 | 아데노이드 비대의 초기 치료는 비강 스테로이드 스프레이와 항생제 등 보존적 치료로 시작하며, 이 치료에 반응이 없거나 증상이 심할 때 수술적 절제를 고려 | 공통 / 수면·침구 |
+| `adenoid-anatomy-immune-function` | 확실 | 공식 | 아데노이드는 코 뒤쪽(비인두)에 위치한 림프조직으로 구개 편도와 함께 인체의 일차적 면역 기능을 담당하는 조직 |  |
+| `adenoid-hypertrophy-age-pattern` | 확실 | 공식 | 아데노이드 크기의 발달 궤적: 3세경 최대 크기에 도달한 후 점진적으로 축소되며, 7세 이후에는 거의 남아 있지 않는 패턴. 주로 2~7세에 호흡 증상 유발 가능성 높음 |  |
+| `adenoid-prevalence-in-children` | 확실 | 공식 | 아데노이드 비대 증상을 보이는 소아의 비율은 약 10~15%이며, 3세~6세 사이에 가장 흔히 나타남 |  |
+| `adenoid-etiology-repeated-infection-inflammation` | 확실 | 공식 | 아데노이드 비대의 주요 원인: 급성 세균 감염의 반복, 비강 또는 부비동의 만성 염증에 의한 림프조직 증식. 1~5세 면역 발달 과정에서 자연적으로 커지는 경향도 있음 |  |
+| `adenoid-snoring-symptoms` | 확실 | 공식 | 아데노이드 비대의 주요 증상: 구강 호흡(입으로만 숨 쉬기), 심한 코골이, 수면 중 호흡 정지(수면 무호흡), 야뇨증 및 수면 중 빈번한 각성, 낮 시간의 과도한 졸음 |  |
+| `adenoid-sleep-apnea-mechanism` | 확실 | 공식 | 아데노이드·편도선 비대가 소아 상기도 폐쇄의 원인 중 약 70%를 차지하며, 이로 인해 수면 중 코골이 및 수면 무호흡이 생겨서 깊이 잠을 자지 못하고 학습 능력 저하·학교 적응력 저하로 이어짐 |  |
+| `adenoid-secondary-complications` | 확실 | 공식 | 아데노이드 비대 방치 시 만성 중이염, 부비동염, 얼굴 골격 발달 지연('아데노이드 얼굴' - 긴 얼굴, 좁은 턱, 입 벌림)으로 이어질 수 있음 |  |
+| `adenoid-treatment-surgical-indication` | 확실 | 공식 | 수술(아데노이드 절제술) 고려 기준: 반복적 중이염·부비동염 발생, 만성 코막힘, 수면 무호흡 증상, 치아 부정교합·안면 발달 장애 소견. 수술 후 90% 이상의 증상 호전율 |  |
+| `adenoid-conservative-treatment-first-line` | 확실 | 공식 | 아데노이드 비대의 초기 치료는 비강 스테로이드 스프레이와 항생제 등 보존적 치료로 시작하며, 이 치료에 반응이 없거나 증상이 심할 때 수술적 절제를 고려 |  |
 
 ### 수면제 장기복용의 위험과 대안 <sub>2026-07-31 · long-term-sleeping-pills</sub>
 
@@ -3654,14 +3831,14 @@
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
 |---|---|---|---|---|
-| `pacifier-sids-reduction-mechanisms` | 확실 | 공식 | 공갈젖꼭지의 수면 안전 효과: 신생아~12개월 대상 메타분석에서 공갈젖꼭지 사용 시 영아급사증(SIDS) 위험이 약 30~50% 감소. 기전은 (1)상기도 폐쇄 방지, (2)수면 자세 개선, (3)각성 역치 조정으로 추정 | 공통 / 수면·침구 |
-| `pacifier-sleep-initiation-benefit` | 확실 | 공식 | 공갈젖꼭지의 수면 개시 효과: 신생아~2세 대상 연구에서 공갈젖꼭지 사용이 입면 시간 단축·야간 각성 감소와 연관. 빨기 반사(sucking reflex)와 자율신경계 안정화(vagal tone 증가)가 기전 | 공통 / 수면·침구 |
-| `pacifier-sleep-dependency-risk` | 확실 | 공식 | 공갈젖꼭지 장기 사용의 수면 부작용: 생후 6개월 이후 공갈젖꼭지에 대한 의존성 형성 가능. 아이가 잠들 때마다 젖꼭지가 필요하고, 밤 중에 젖꼭지를 잃으면 깨어 부모의 재삽입 요청이 야간 각성 증가로 이어질 수 있음 | 공통 / 수면·침구 |
-| `pacifier-weaning-recommended-age` | 확실 | 공식 | 공갈젖꼭지 젖떼기 권장 시기: (1)미국 소아과학회(AAP) - 생후 6개월~12개월 사이 시작, (2)국제 치과학회 - 치아 맹출 전(생후 18개월~2세 이전) 완료, (3)한국 가이드라인 - 2세(24개월) 전후를 권장. 조기 중단(6개월 미만)은 SIDS 예방 효과 상실, 지연 중단(3세 이후)은 치아 부정교합 위험 증가 | 공통 / 수면·침구 |
-| `pacifier-dental-malocclusion-risk` | 확실 | 공식 | 공갈젖꼭지의 치아 영향: 생후 18개월 이후 장기 사용 시 개방교합(open bite, 앞니가 닫히지 않는 상태)·교차교합(cross bite)·돌출된 앞니 등 부정교합 위험 증가. 위험은 사용 강도(하루 중 사용 시간)와 기간에 비례. 심각한 변형은 성인기 교정 치료 필요 | 공통 / 수면·침구 |
-| `pacifier-weaning-method-gradual-approach` | 확실 | 공식 | 공갈젖꼭지 젖떼기 방법: (1)단계적 감소 - '밤에만' → '밤중 깬 후' → '완전 제거' 순서로 진행, (2)시간 제한 - 허용 시간 점진적 단축, (3)긍정 강화 - 젖꼭지 없이 자면 칭찬·작은 보상, (4)감정적 이유 인정 - '젖꼭지를 보내자'는 이야기로 아이의 감정 수용. 완전 중단까지 2~4주 소요 경우 많음 | 공통 / 수면·침구 |
-| `pacifier-sleep-alternative-self-soothing` | 확실 | 공식 | 공갈젖꼭지 대체 자기진정 방법(self-soothing): 손가락·손·인형 쥐기, 특정 음악 또는 백색소음(white noise), 부드러운 담요 등. 이런 방법이 발달할수록 공갈젖꼭지 의존성 낮아짐. 생후 3~4개월부터 자기진정 능력 도출 시작 권장 | 공통 / 수면·침구 |
-| `pacifier-otitis-media-risk` | 논쟁 🔶 | 공식 | 공갈젖꼭지 장기 사용 시 추가 위험: 생후 12개월~3세에서 급성 중이염 위험 약간 증가. 기전은 공갈젖꼭지 사용 중 이스타키우스관(eustachian tube)의 폐쇄 메커니즘 변화. 하지만 위험 증가폭은 작으며, 상기도 감염과 함께 있을 때 두드러짐 | 공통 / 수면·침구 |
+| `pacifier-sids-reduction-mechanisms` | 확실 | 공식 | 공갈젖꼭지의 수면 안전 효과: 신생아~12개월 대상 메타분석에서 공갈젖꼭지 사용 시 영아급사증(SIDS) 위험이 약 30~50% 감소. 기전은 (1)상기도 폐쇄 방지, (2)수면 자세 개선, (3)각성 역치 조정으로 추정 |  |
+| `pacifier-sleep-initiation-benefit` | 확실 | 공식 | 공갈젖꼭지의 수면 개시 효과: 신생아~2세 대상 연구에서 공갈젖꼭지 사용이 입면 시간 단축·야간 각성 감소와 연관. 빨기 반사(sucking reflex)와 자율신경계 안정화(vagal tone 증가)가 기전 |  |
+| `pacifier-sleep-dependency-risk` | 확실 | 공식 | 공갈젖꼭지 장기 사용의 수면 부작용: 생후 6개월 이후 공갈젖꼭지에 대한 의존성 형성 가능. 아이가 잠들 때마다 젖꼭지가 필요하고, 밤 중에 젖꼭지를 잃으면 깨어 부모의 재삽입 요청이 야간 각성 증가로 이어질 수 있음 |  |
+| `pacifier-weaning-recommended-age` | 확실 | 공식 | 공갈젖꼭지 젖떼기 권장 시기: (1)미국 소아과학회(AAP) - 생후 6개월~12개월 사이 시작, (2)국제 치과학회 - 치아 맹출 전(생후 18개월~2세 이전) 완료, (3)한국 가이드라인 - 2세(24개월) 전후를 권장. 조기 중단(6개월 미만)은 SIDS 예방 효과 상실, 지연 중단(3세 이후)은 치아 부정교합 위험 증가 |  |
+| `pacifier-dental-malocclusion-risk` | 확실 | 공식 | 공갈젖꼭지의 치아 영향: 생후 18개월 이후 장기 사용 시 개방교합(open bite, 앞니가 닫히지 않는 상태)·교차교합(cross bite)·돌출된 앞니 등 부정교합 위험 증가. 위험은 사용 강도(하루 중 사용 시간)와 기간에 비례. 심각한 변형은 성인기 교정 치료 필요 |  |
+| `pacifier-weaning-method-gradual-approach` | 확실 | 공식 | 공갈젖꼭지 젖떼기 방법: (1)단계적 감소 - '밤에만' → '밤중 깬 후' → '완전 제거' 순서로 진행, (2)시간 제한 - 허용 시간 점진적 단축, (3)긍정 강화 - 젖꼭지 없이 자면 칭찬·작은 보상, (4)감정적 이유 인정 - '젖꼭지를 보내자'는 이야기로 아이의 감정 수용. 완전 중단까지 2~4주 소요 경우 많음 |  |
+| `pacifier-sleep-alternative-self-soothing` | 확실 | 공식 | 공갈젖꼭지 대체 자기진정 방법(self-soothing): 손가락·손·인형 쥐기, 특정 음악 또는 백색소음(white noise), 부드러운 담요 등. 이런 방법이 발달할수록 공갈젖꼭지 의존성 낮아짐. 생후 3~4개월부터 자기진정 능력 도출 시작 권장 |  |
+| `pacifier-otitis-media-risk` | 논쟁 🔶 | 공식 | 공갈젖꼭지 장기 사용 시 추가 위험: 생후 12개월~3세에서 급성 중이염 위험 약간 증가. 기전은 공갈젖꼭지 사용 중 이스타키우스관(eustachian tube)의 폐쇄 메커니즘 변화. 하지만 위험 증가폭은 작으며, 상기도 감염과 함께 있을 때 두드러짐 |  |
 
 ### 다낭성난소증후군(PCOS)과 수면장애 <sub>2026-08-04 · pcos-sleep</sub>
 
@@ -3835,14 +4012,14 @@
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
 |---|---|---|---|---|
-| `toddler-bedtime-resistance-developmental-peak` | 확실 | 공식 | 취침 거부(bedtime resistance)의 발달적 절정: 18개월~3세 사이에 가장 흔히 나타나며, 이 시기 아이들의 자율성 발달·독립욕구 표현이 주요 원인. 4세 이후 점진적으로 감소 | 공통 / 수면·침구 |
-| `toddler-bedtime-resistance-causes` | 확실 | 공식 | 취침 거부의 주요 원인: (1)발달 단계 - 자율성·독립욕구 표현, (2)환경 변화 - 동생 출생·이사·부모 근무 변경, (3)기질적 요인 - 높은 활동성·감각 민감도·불안 경향, (4)부모 요인 - 일관되지 않은 경계·야간 보상(먹거리·주의 관심), (5)수면 드라이브 부족 - 낮잠이 남아 있거나 낮 활동 부족 | 공통 / 수면·침구 |
-| `toddler-consistent-bedtime-routine` | 확실 | 공식 | 취침 거부 관리의 핵심: 매일 같은 시간에 같은 순서로 진행하는 일관된 취침 루틴. 효과적 루틴 구성: 저녁 식사(잠들기 2시간 전) → 목욕 또는 따뜻한 물 접촉 → 조용한 활동(그림책·부드러운 음악) → 침실 환기·어두운 환경 → 잠자리에 누우기. 루틴 전체 20~30분 소요 | 공통 / 수면·침구 |
-| `toddler-boundary-setting-clear-expectations` | 확실 | 공식 | 취침 거부 해결 위한 경계 설정: (1)침실 규칙 명확화 - '침실은 수면 전용 공간'이라 반복 설명, (2)요청 제한 - '잠자기 전에 화장실 다녀오세요, 물 한 잔 마세요' 등 2~3가지로 제한, (3)일관된 대응 - 아이가 자리에서 일어나면 조용히 손을 잡고 다시 누우키며 말 최소화, (4)보상 체계 - 야간 간섭 없이 밤을 지나면 아침에 간단한 칭찬(스티커·그림 등) | 공통 / 수면·침구 |
-| `toddler-nighttime-reinforcement-avoidance` | 확실 | 공식 | 취침 거부 악화시키는 부모 행동: (1)야간 설득·협상 - 아이의 요청에 응하려 대화하기, (2)야간 보상 제공 - 물·우유·간식 주기, (3)과도한 주의 관심 - 야간에 아이를 안아주거나 침대에서 자기, (4)불규칙한 대응 - 때로는 요청을 들어주고 때로는 거부하기. 이런 행동이 야간 각성을 강화하므로 체계적 제거 필요 | 공통 / 수면·침구 |
-| `toddler-bedtime-resistance-vs-sleep-deprivation` | 확실 | 공식 | 취침 거부와 수면 부족의 구분 필요: 취침 거부는 '침대에 누웠을 때 자리 떠나기·요청 반복'이고, 수면 부족은 '낮 시간에 과도한 졸음·짜증·주의력 저하'. 전자는 행동 중재 중심, 후자는 낮잠 조정·야간 수면 시간 연장 필요 | 공통 / 수면·침구 |
-| `toddler-sleep-training-method-choice` | 확실 | 공식 | 취침 거부에 적용 가능한 수면 교육 방법: (1)Ferber 방법(점진적 소거) - 부모 개입 간격 점진적 증가, 생후 5~6개월 이상 적용 가능, 2~4주 소요, (2)Fading 방법 - 부모가 침실에서 천천히 물러남, 느리지만 아이 스트레스 적음, 3~6개월 소요. 가족 상황·아이 기질·부모 역량에 따라 선택 | 공통 / 수면·침구 |
-| `toddler-bedtime-resistance-parental-stress-cycle` | 확실 | 공식 | 취침 거부가 가족에 미치는 영향: 아이의 저항 → 부모 스트레스·피로 증가 → 부모 인내심 저하·일관성 유실 → 아이 거부 심화 → 악순환 형성. 이 사이클을 끊으려면 부모 자신의 스트레스 관리와 '수면 교육도 장기 프로젝트'라는 현실적 기대 필요 | 공통 / 수면·침구 |
+| `toddler-bedtime-resistance-developmental-peak` | 확실 | 공식 | 취침 거부(bedtime resistance)의 발달적 절정: 18개월~3세 사이에 가장 흔히 나타나며, 이 시기 아이들의 자율성 발달·독립욕구 표현이 주요 원인. 4세 이후 점진적으로 감소 |  |
+| `toddler-bedtime-resistance-causes` | 확실 | 공식 | 취침 거부의 주요 원인: (1)발달 단계 - 자율성·독립욕구 표현, (2)환경 변화 - 동생 출생·이사·부모 근무 변경, (3)기질적 요인 - 높은 활동성·감각 민감도·불안 경향, (4)부모 요인 - 일관되지 않은 경계·야간 보상(먹거리·주의 관심), (5)수면 드라이브 부족 - 낮잠이 남아 있거나 낮 활동 부족 |  |
+| `toddler-consistent-bedtime-routine` | 확실 | 공식 | 취침 거부 관리의 핵심: 매일 같은 시간에 같은 순서로 진행하는 일관된 취침 루틴. 효과적 루틴 구성: 저녁 식사(잠들기 2시간 전) → 목욕 또는 따뜻한 물 접촉 → 조용한 활동(그림책·부드러운 음악) → 침실 환기·어두운 환경 → 잠자리에 누우기. 루틴 전체 20~30분 소요 |  |
+| `toddler-boundary-setting-clear-expectations` | 확실 | 공식 | 취침 거부 해결 위한 경계 설정: (1)침실 규칙 명확화 - '침실은 수면 전용 공간'이라 반복 설명, (2)요청 제한 - '잠자기 전에 화장실 다녀오세요, 물 한 잔 마세요' 등 2~3가지로 제한, (3)일관된 대응 - 아이가 자리에서 일어나면 조용히 손을 잡고 다시 누우키며 말 최소화, (4)보상 체계 - 야간 간섭 없이 밤을 지나면 아침에 간단한 칭찬(스티커·그림 등) |  |
+| `toddler-nighttime-reinforcement-avoidance` | 확실 | 공식 | 취침 거부 악화시키는 부모 행동: (1)야간 설득·협상 - 아이의 요청에 응하려 대화하기, (2)야간 보상 제공 - 물·우유·간식 주기, (3)과도한 주의 관심 - 야간에 아이를 안아주거나 침대에서 자기, (4)불규칙한 대응 - 때로는 요청을 들어주고 때로는 거부하기. 이런 행동이 야간 각성을 강화하므로 체계적 제거 필요 |  |
+| `toddler-bedtime-resistance-vs-sleep-deprivation` | 확실 | 공식 | 취침 거부와 수면 부족의 구분 필요: 취침 거부는 '침대에 누웠을 때 자리 떠나기·요청 반복'이고, 수면 부족은 '낮 시간에 과도한 졸음·짜증·주의력 저하'. 전자는 행동 중재 중심, 후자는 낮잠 조정·야간 수면 시간 연장 필요 |  |
+| `toddler-sleep-training-method-choice` | 확실 | 공식 | 취침 거부에 적용 가능한 수면 교육 방법: (1)Ferber 방법(점진적 소거) - 부모 개입 간격 점진적 증가, 생후 5~6개월 이상 적용 가능, 2~4주 소요, (2)Fading 방법 - 부모가 침실에서 천천히 물러남, 느리지만 아이 스트레스 적음, 3~6개월 소요. 가족 상황·아이 기질·부모 역량에 따라 선택 |  |
+| `toddler-bedtime-resistance-parental-stress-cycle` | 확실 | 공식 | 취침 거부가 가족에 미치는 영향: 아이의 저항 → 부모 스트레스·피로 증가 → 부모 인내심 저하·일관성 유실 → 아이 거부 심화 → 악순환 형성. 이 사이클을 끊으려면 부모 자신의 스트레스 관리와 '수면 교육도 장기 프로젝트'라는 현실적 기대 필요 |  |
 
 ### 유아의 낮잠과 야간수면 관계 및 낮잠 중단 시기 <sub>2026-07-31 · toddler-nap-night-sleep</sub>
 
@@ -4219,7 +4396,145 @@ _(팩트 없음)_
 | `rinnai-heating-filter-maintenance` | 확실 | 공식 | 린나이 보일러의 난방필터를 정기적으로 청소하면 소음 저하 및 난방비 절약 효과를 볼 수 있으며, 린나이 서비스센터 유튜브 채널에서 모델별 청소 방법을 안내하고 있다. | 린나이 / 가스보일러 / 콘덴싱 / 2010~현행 / KR |
 | `rinnai-customer-center` | 확실 | 공식 | 린나이 보일러 고객센터 전화번호는 1544-3139이며, 에러코드 상담·A/S 신청·기술 지원을 담당한다. 동절기(11월~2월)에는 1544-3651로 24시간 특별 서비스를 운영한다. | 린나이 / 가스보일러 / 콘덴싱 / 2010~현행 / KR |
 
+## 미분류
+
+### article2.json <sub> · 예정</sub>
+
+_(팩트 없음)_
+
+### article3.json <sub> · 예정</sub>
+
+_(팩트 없음)_
+
+### article4.json <sub> · 예정</sub>
+
+_(팩트 없음)_
+
+### article5.json <sub> · 예정</sub>
+
+_(팩트 없음)_
+
+### gpt-leads-care6-parsed.json <sub> · 예정</sub>
+
+_(팩트 없음)_
+
+### gpt-leads-parsed.json <sub> · 예정</sub>
+
+_(팩트 없음)_
+
+### weak-sources.json <sub> · 예정</sub>
+
+_(팩트 없음)_
+
 ## 뷰티·성분연구소
+
+### 카페인의 눈 밑 붓기 완화 기전: 혈관수축·침투·지속시간 <sub>2026-08-10 · caffeine-eye-puffiness</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `caffeine-phosphodiesterase-inhibitor-vasoconstrictive-mechanism` | 확실 | 공식 | 카페인은 포스포디에스터라제(phosphodiesterase) 억제제로 작동하여 순환 AMP(cAMP)의 분해를 막고, cAMP 증가로 인해 국소 혈관수축(vasoconstriction)을 일으키고, 혈관의 체액 누수와 부종을 감소시킨다. |  |
+| `caffeine-topical-dermal-penetration-minutes-water-soluble` | 확실 | 공식 | 국소 도포한 카페인은 수용성(water-soluble)으로 분류되어 각질층(stratum corneum)을 빠르게 통과하며, 분 단위로 진피층(dermis)에 도달한다. |  |
+| `caffeine-formulation-gel-serum-outperform-cream-eye-products` | 확실 | 공식 | 카페인 함유 아이 제품에서 gel과 serum 제형이 cream 제형보다 빠른 흡수와 더 높은 효과를 보이는 이유는 가벼운 기질이 카페인의 침투를 방해하지 않기 때문이다. |  |
+| `caffeine-depuffing-duration-30-minutes-to-4-hours` | 확실 | 공식 | 카페인의 눈 밑 붓기 완화 효과는 도포 후 약 30분 내에 눈에 띄게 나타나며, 최대 효과는 1~4시간 지속되며 이후 감소한다. |  |
+| `caffeine-cumulative-efficacy-4-8-weeks-consistent-use` | 확실 | 공식 | 매일 꾸준히 사용할 경우, 카페인 함유 아이 제품은 4~8주 사용 후 눈 밑 어두움(darkness)의 누적적 개선을 보인다. |  |
+
+### 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드 <sub>2026-08-10 · centella-wound-repair</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `madecassoside-vs-asiaticoside-both-triterpenoid-glycosides` | 확실 | 공식 | 마데카소사이드와 아시아티코사이드는 모두 센텔라 아시아티카의 주요 활성 성분으로, 삼테르페노이드(triterpenoid) 구조에 당 사슬(glycone)이 붙은 글리코사이드(glycoside) 형태이며, 비글리코사이드 형태는 각각 마데카식산(madecassic acid)과 아시아틱산(asiatic acid)이다. |  |
+| `madecassoside-superior-wound-healing-speed-vs-asiaticoside` | 확실 | 공식 | 동물 모델(burn wound) 실험에서 마데카소사이드는 아시아티코사이드보다 상처 치유 속도가 더 빠르고, 상처 치유 패턴(healing pattern)이 더 우수하다는 비교 결과가 보고되었다. |  |
+| `asiaticoside-madecassic-acid-collagen-synthesis-mechanism` | 확실 | 공식 | 아시아티코사이드와 마데카소사이드 모두 콜라겐 합성을 촉진하고, 염증을 조절하며, 항산화 보호를 제공함으로써 상처 치유를 지원하는 유사한 기전으로 작동한다. |  |
+| `centella-asiatica-extract-madecassoside-concentration-variability` | 확실 | 공식 | 센텔라 추출물의 마데카소사이드 농도는 식물의 재배 조건, 추출 방법, 정제 수준에 따라 크게 변동하며, 제품에 따라 1~50% 범위로 보고된다. |  |
+
+### 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과 <sub>2026-08-10 · glycerin-humectant</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `glycerin-optimal-concentration-5-10-percent` | 확실 | 공식 | 글리세린은 일반 화장품에서 5~10% 농도로 사용되며, 더 높은 농도(20%)도 존재하지만, 최적의 보습 효과와 사용감을 위해 2~10% 농도가 이상적이다. |  |
+| `glycerin-humidity-dependent-sticky-feel-humidification` | 확실 | 공식 | 글리세린의 효과는 환경 습도에 크게 의존하며, 습한 환경에서는 공기 중의 수분을 흡수하여 피부에 끈기는 느낌(sticky texture)을 남길 수 있다. |  |
+| `glycerin-efficacy-broader-humidity-range-vs-hyaluronic-acid` | 확실 | 공식 | 글리세린은 히알루론산보다 더 넓은 습도 범위에서 일관되게 수화 효과를 보이며, 건조한 환경에서도 피부의 깊은 층(dermis)과 환경의 수분을 모두 흡수할 수 있다. |  |
+| `glycerin-occlusive-pairing-essential-dry-climates` | 확실 | 공식 | 건조한 환경에서 글리세린의 최적 효과를 위해서는 occlusive 성분(바셀린, 동백오일, 실리콘)과 함께 사용하여 글리세린이 흡수한 수분이 다시 증발하는 것을 방지해야 한다. |  |
+
+### 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 <sub>2026-08-10 · ketoconazole-scalp</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `ketoconazole-shampoo-1-percent-vs-2-percent-indication-concentration` | 확실 | 공식 | 케토코나졸 샴푸는 1% 농도(비듬 치료)와 2% 농도(지루성 피부염·중증 비듬 치료)로 구분되어 판매되며, 농도가 높을수록 더 강한 항진균 효과를 제공한다. |  |
+| `ketoconazole-frequency-every-3-4-days-vs-3-times-per-week` | 확실 | 공식 | 케토코나졸 샴푸의 사용 빈도는 적응증에 따라 다르며, 비듬 치료는 3~4일마다 1회, 지루성 두피염(임상 연구)은 주 3회(격일)로 처방된다. |  |
+| `ketoconazole-contact-time-5-10-minutes-efficacy-requirement` | 확실 | 공식 | 케토코나졸 샴푸의 최적 효과를 위해서는 두피에 5~10분간 접촉시킨 후(lather를 유지하며) 헹굼하는 것이 일반적인 권고 사항이다. |  |
+| `ketoconazole-maintenance-therapy-post-treatment-relapse-prevention` | 확실 | 공식 | 케토코나졸 샴푸로 급성 증상이 호전된 후, 재발을 방지하기 위해 주 1회 또는 2주마다 1회의 유지 요법(maintenance therapy)을 계속하는 것이 권장되며, 이는 Malassezia의 재증식을 억제한다. |  |
+| `ketoconazole-korea-classification-status-unconfirmed-regulatory` | 확인실패 | 공식 | 미국과 글로벌 데이터베이스에서 케토코나졸 샴푸는 의약품(처방약 또는 OTC)으로 분류되지만, 한국에서의 의약품/의약외품/화장품 분류와 허가 농도는 현재 웹 검색으로 확인되지 않았으며, 식약처 공식 자료 확인이 필수다. |  |
+
+### 스쿠알란(squalane)의 보습·안정성: 스쿠알렌과의 차이, 코메도제닉 위험, 적용 대상 <sub>2026-08-10 · squalane-moisturizer</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `squalane-hydrogenated-squalene-chemical-difference` | 확실 | 공식 | 스쿠알렌(squalene)은 불포화 탄소 사슬을 가진 천연 성분으로 산화되기 쉽지만, 스쿠알란(squalane)은 스쿠알렌을 수소화(hydrogenation)하여 완전히 포화시킨 형태로, 산화에 저항성이 있어 화장품 배합에 적합하다. |  |
+| `squalane-oxidative-stability-no-lipid-peroxidation` | 확실 | 공식 | 스쿠알렌과 달리 스쿠알란은 지질 과산화(lipid peroxidation) 현상이 발생하지 않아 보관 중 성분 변성이 일어나지 않으며, 제품의 유효 기간이 훨씬 길다. |  |
+| `squalene-peroxide-comedogenic-uva-irradiation` | 확실 | 공식 | 스쿠알렌이 자외선 A(UVA)에 노출되거나 공기 중에서 산화될 때 생성되는 스쿠알렌 과산화물(squalene peroxides)은 강한 코메도제닉 성질을 보이며, 여포 증식(follicular hyperplasia)과 과다각화증(hyperkeratosis)을 유발한다. |  |
+| `squalane-non-comedogenic-uva-stable-acne-prone-skin` | 확실 | 공식 | 스쿠알란은 UVA 노출 후에도 코메도 생성이 관찰되지 않으며, 여드름 유발성(comedogenic rating) 0~1/5로 분류되어 여드름 경향 피부에 안전한 emollient이다. |  |
+| `squalane-emollient-source-animal-vs-vegetable-stability-identical` | 확실 | 공식 | 스쿠알란은 동물성(주로 상어 간유)과 식물성(올리브유, 사탕수수) 두 가지 출처로 생산되지만, 수소화 후 화학 구조가 동일하므로 안정성과 효과는 출처 무관하게 동등하다. |  |
+
+### 징크 PCA의 피지 조절 기전: 5α-리덕타제 억제·항균·임상 근거 <sub>2026-08-10 · zinc-pca-sebum</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `zinc-pca-sebum-reduction-placebo-controlled-4-week-trial` | 확실 | 공식 | 징크 PCA를 함유한 제품을 4주간 사용한 피부에서 위약 대조군과 비교하여 통계적으로 유의한 수준의 피지 생성 감소와 C. acnes 세균 감소가 관찰되었다. |  |
+| `zinc-pca-5-alpha-reductase-inhibition-androgen-sebum` | 확실 | 공식 | 징크 PCA는 5α-리덕타제(5α-reductase) 효소를 억제하여 안드로겐(androgen) 의존 피지 과생성을 감소시키는 메커니즘으로 작동한다. |  |
+| `zinc-pca-antimicrobial-cutibacterium-staphylococcus-aureus` | 확실 | 공식 | 징크 PCA는 여드름 유발 세균인 Cutibacterium acnes(구 Propionibacterium acnes)와 황색포도상구균(Staphylococcus aureus)에 대한 항균 활성을 가지며, 피지 조절뿐 아니라 세균 증식 억제로도 여드름 관리에 기여한다. |  |
+| `zinc-pca-effective-concentration-1-2-percent` | 확실 | 공식 | 징크 PCA의 피지 조절 임상 효과는 1~2% 농도에서 입증되었으며, 이 농도 범위가 효과와 자극도의 균형을 이룬다. |  |
+| `zinc-pca-pca-sebophilic-zinc-bioavailability-enhancement` | 확실 | 공식 | PCA(pyrrolidone carboxylic acid)는 sebophilic(지성 환경 친화) 특성을 가져서 징크를 피지 조직으로 효율적으로 전달하며, 이는 다른 징크 화합물(산화아연, 황산아연)보다 우수한 생체이용률을 제공한다. |  |
+
+### 아달팔렌: 국내에서 살 수 있는 레티노이드, 농도·초기 자극·안전성 <sub>2026-08-10 · adapalene-otc-retinoid</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `adapalene-otc-concentration-0-1-percent-differin` | 확실 | 공식 | 아달팔렌 0.1%는 미국 FDA에서 일반의약품(OTC)으로 승인되었으며, 브랜드명 Differin으로 판매된다. 더 높은 농도인 0.3%는 처방약이다. |  |
+| `adapalene-0-1-percent-vs-tretinoin-0-025-percent-irritation` | 확실 | 공식 | 아달팔렌 0.1% 젤과 트레티노인 0.025% 젤을 비교한 임상시험에서, 아달팔렌이 더 빠른 효과 발현을 보였고 자극도(irritation) 더 낮았다. |  |
+| `adapalene-local-irritation-rate-skin-of-color-32-vs-46-percent` | 확실 | 공식 | 유색인종 대상 임상시험에서 아달팔렌 0.1%의 국소 자극(erythema, scaling, burning, pruritus, dryness) 발생률은 32.4%였으며, 트레티노인 0.025%는 45.7%였다. |  |
+| `adapalene-initial-adjustment-period-2-to-4-weeks` | 확실 | 공식 | 아달팔렌 사용 초기에 국소 자극(burning, dryness, erythema)이 발생할 수 있으며, 이 적응 기간은 일반적으로 2~4주 동안 지속되고 이후 개선된다. |  |
+| `adapalene-korea-classification-unconfirmed` | 확인실패 | 공식 | 아달팔렌의 국내 식약처 분류(일반의약품/전문의약품/기능성화장품/미승인)는 이 조사에서 확인되지 않았다. |  |
+
+### 아스타잔틴 국소 도포: 항산화 강도, 콜라겐 생성 기전, 피부 임상 근거 <sub>2026-08-10 · astaxanthin-topical-collagen</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `astaxanthin-antioxidant-capacity-100fold-vitamin-e` | 논쟁 🔶 | 공식 | 아스타잔틴의 항산화 용량(antioxidant capacity)은 다른 카로테노이드보다 10배, 비타민 E보다 약 100배 높다고 보고된다. |  |
+| `astaxanthin-collagen-synthesis-anti-inflammatory` | 확실 | 공식 | 아스타잔틴은 피부의 일산화질소(nitrous oxide) 생성 억제를 통한 항염증 작용으로, 상처 치유를 촉진하고 피부 콜라겐 함량 증가를 유도한다. |  |
+| `astaxanthin-aquaporin-3-expression-water-retention` | 확실 | 공식 | 아스타잔틴이 피부의 수채널 단백질 아쿠아포린-3(Aquaporin-3) 발현을 증가시켜, 피부 수화(skin moisture) 개선에 기여한다. |  |
+| `astaxanthin-topical-open-label-study-slight-prevention-wrinkle` | 논쟁 🔶 | 공식 | 개방형(open-label), 전향적 임상 연구에서 국소 및 경구 병용 아스타잔틴이 피부 노화를 '약간 예방'하는 것으로 보고되었으나, 주름 감소와 탄력 증가가 피부 수분 함량 증가와의 직접 인과관계 입증은 부족하다. |  |
+| `astaxanthin-oral-vs-topical-efficacy-moisture-collagen-structure` | 확실 | 공식 | 경구 아스타잔틴 보충은 피부 수분과 탄력을 유의미하게 개선했으나, 주름 깊이는 위약과 유의한 차이를 보이지 않았다. 피부 주름과 색소반 개선은 경구·국소 병용(미세조류 유래)에서만 관찰되었다. |  |
+| `astaxanthin-mechanism-confirmation-needed-further-studies` | 확인실패 | 공식 | 아스타잔틴의 피부 미용 작용 기전(mechanism of action)과 뷰티 효과는 추가 연구가 필요하며, 현재 대부분의 국소 연구는 소규모 개방형 시험이다. |  |
+
+### 아젤라산: 여드름·장미증 효과, 농도별 근거, 국내 분류 <sub>2026-08-10 · azelaic-acid-acne-redness</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `azelaic-acid-clinical-concentration-15-to-20-percent` | 확실 | 공식 | 아젤라산의 임상 효과가 입증된 농도는 15~20%이며, 거의 모든 임상 연구가 15% 농도로 수행되었고, 20%가 조사관의 전체 평가(investigator global assessment) 점수에서 가장 높은 효과를 보였다. |  |
+| `azelaic-acid-rosacea-efficacy-vs-vehicle-metronidazole` | 확실 | 공식 | 아젤라산 15% 겔은 위약(vehicle) 대비 통계적으로 유의미한 효과를 보였고, 메트로니다졸 0.75% 대비 홍반(erythema) 심각도 개선과 전체 개선율에서 우월했다. |  |
+| `azelaic-acid-acne-vulgaris-efficacy-comparable-retinoid` | 확실 | 공식 | 아젤라산은 여드름 치료에서 염증성(inflammatory) 및 비염증성(non-inflammatory) 병변 감소 효과가 국소 레티노이드와 비슷하며, 내성(tolerability)이 더 우수한 경우도 있었다. |  |
+| `azelaic-acid-safety-profile-minimal-adverse-events` | 확실 | 공식 | 아젤라산은 효과적인 치료제이면서 심각한 부작용(serious side-effects)이 없거나 거의 없는 것으로 입증되었다. |  |
+| `azelaic-acid-korea-classification-unconfirmed` | 확인실패 | 공식 | 아젤라산의 국내 식약처 분류(일반의약품/전문의약품/기능성화장품)는 이 조사에서 확인되지 않았다. |  |
+
+### 카페인의 눈 밑 붓기 완화 기전: 혈관수축·침투·지속시간 <sub>2026-08-10 · caffeine-eye-puffiness</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `caffeine-hydrophilic-transdermal-penetration-challenge-pubmed` | 확실 | 공식 | 카페인은 로그 P(Log P) -0.07의 친수성(hydrophilic) 물질로, 피부 투과의 이상적 특성을 갖지 않는 것으로 보고되며, 피부 침투를 위해 나노에멀전·화학 투과 증강제 등의 제형 개선이 필요하다. |  |
+| `caffeine-phosphodiesterase-inhibitor-cyclic-amp-vasoconstriction` | 확실 | 공식 | 카페인은 인산디에스터라제(phosphodiesterase) 억제제로서 순환 AMP(cAMP)의 분해를 방지하여, 눈 주변의 혈관을 수축(vasoconstriction)시키고 부종으로 인한 어두움과 충혈을 감소시킨다. |  |
+| `caffeine-clinical-trial-4-week-puffiness-reduction-38-percent` | 확실 | 공식 | 4주 사용 후 사용자 평가로 38.94%의 눈 아래 주머니(eye bags) 개선이 보고되었으며, 부기 감소(puffiness volume)는 2시간 후 측정되었다. |  |
+| `caffeine-responder-rate-variability-23-to-100-percent` | 확실 | 공식 | 카페인 제품의 반응률이 연구마다 크게 다르다. 한 연구에서는 100% 대상자가 어두운 원을 개선했으나, 다른 RCT에서는 3% 카페인 젤이 34명 중 8명(23.5%)만 부기 감소에 반응했다. |  |
+| `caffeine-topical-safe-tolerability-no-serious-adverse-events` | 확실 | 공식 | 12주 임상시험에서 카페인 함유 아이크림 사용 그룹에서 심각한 부작용(serious adverse events)이 보고되지 않았다. |  |
+
+### 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드 <sub>2026-08-10 · centella-wound-repair</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `madecassoside-vs-asiaticoside-both-triterpenoid-glycosides` | 확실 | 공식 | 마데카소사이드와 아시아티코사이드는 모두 센텔라 아시아티카의 주요 활성 성분으로, 삼테르페노이드(triterpenoid) 구조에 당 사슬(glycone)이 붙은 글리코사이드(glycoside) 형태이며, 비글리코사이드 형태는 각각 마데카식산(madecassic acid)과 아시아틱산(asiatic acid)이다. |  |
+| `madecassoside-superior-wound-healing-speed-vs-asiaticoside` | 확실 | 공식 | 동물 모델(burn wound) 실험에서 마데카소사이드는 아시아티코사이드보다 상처 치유 속도가 더 빠르고, 상처 치유 패턴(healing pattern)이 더 우수하다는 비교 결과가 보고되었다. |  |
+| `asiaticoside-madecassic-acid-collagen-synthesis-mechanism` | 확실 | 공식 | 아시아티코사이드와 마데카소사이드 모두 콜라겐 합성을 촉진하고, 염증을 조절하며, 항산화 보호를 제공함으로써 상처 치유를 지원하는 유사한 기전으로 작동한다. |  |
+| `centella-asiatica-extract-madecassoside-concentration-variability` | 확실 | 공식 | 센텔라 추출물의 마데카소사이드 농도는 식물의 재배 조건, 추출 방법, 정제 수준에 따라 크게 변동하며, 제품에 따라 1~50% 범위로 보고된다. |  |
 
 ### 세라마이드(ceramide)의 피부 장벽 기능 및 임상 효과 <sub>2026-08-10 · ceramide-barrier</sub>
 
@@ -4231,6 +4546,26 @@ _(팩트 없음)_
 | `ceramide-lipid-ratio-importance-improper-formulation-harm` | 확실 | 공식 | 세라마이드-콜레스테롤-유리지방산의 비율이 부정확한 불완전한 지질 혼합물을 손상된 피부에 도포하면, 올바른 비율의 제품을 사용하는 것보다 층상 구조 회복을 오히려 방해할 수 있다. |  |
 | `ceramide-reduction-30percent-barrier-permeability-increase` | 확실 | 공식 | 피부 장벽에서 세라마이드가 30% 이상 감소하면, 장주기 상(long-periodicity phase, LPP) 층상 구조의 손실과 지질 매트릭스 내 상분리로 인해 바리어 투과성이 유의미하게 증가한다. |  |
 
+### 세라마이드·콜레스테롤·지방산 비율: 장벽 복구에서 왜 비율이 중요한가 <sub>2026-08-10 · ceramide-vs-cholesterol-ratio</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `ceramide-cholesterol-fatty-acid-3-1-1-ratio-optimal-barrier` | 확실 | 공식 | 피부 장벽 복구에 최적화된 세라마이드·콜레스테롤·지방산의 비율은 3:1:1이며, 이는 천연 피부 지질 조성을 모방한 것이다. |  |
+| `ceramide-cholesterol-fatty-acid-barrier-recovery-80-90-percent-4-weeks` | 논쟁 🔶 | 공식 | 3:1:1 비율의 세라마이드-콜레스테롤-지방산 크림 사용 시, 4주 내에 피부 장벽 기능이 80~90% 회복되었다. |  |
+| `ceramide-cholesterol-fatty-acid-tewl-reduction-10-percent` | 확실 | 공식 | 3:1:1 비율의 크림 사용 후 경표피 수분손실(TEWL, transepidermal water loss)이 약 10% 감소했다. |  |
+| `ceramide-cholesterol-fatty-acid-hydration-72-hours-sustained` | 논쟁 🔶 | 공식 | 3:1:1 비율의 제품 사용 후 피부 수분도(hydration) 개선이 72시간 지속되었다. |  |
+| `ceramide-only-15-percent-improvement-cholesterol-only-10-percent-oil-only-short-term` | 확실 | 공식 | 개별 성분만 사용 시 효과는 제한적이다: 세라마이드만 사용하면 약 15% 개선, 콜레스테롤만 사용하면 약 10%, 오일만 사용하면 단기 효과만 나타난다. |  |
+| `ceramide-cholesterol-fatty-acid-lamellar-structure-formation-mechanism` | 확실 | 공식 | 세라마이드, 콜레스테롤, 지방산이 모두 함께 있을 때만 각질세포(corneocyte) 사이의 조밀한 라멜라 구조(lamellae)가 형성되어 진정한 장벽 기능 복구가 가능하다. |  |
+
+### 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과 <sub>2026-08-10 · glycerin-humectant</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `glycerin-safety-official-cir-conclusion` | 확실 | 공식 | 미국 화장품 성분 안전성 평가위원회(CIR)는 글리세린을 '화장품에서 안전한 성분'으로 결론지었으며, 보고된 사용 농도는 leave-on 제품에서 최대 78.5%, rinse-off 제품에서 최대 68.6%, 목욕 희석 제품에서 최대 47%이다. |  |
+| `glycerin-humidity-dependent-sticky-feel-humidification` | 확실 | 공식 | 글리세린의 효과는 환경 습도에 크게 의존하며, 습한 환경에서는 공기 중의 수분을 흡수하여 피부에 끈기는 느낌(sticky texture)을 남길 수 있다. |  |
+| `glycerin-occlusive-pairing-essential-dry-climates` | 확실 | 공식 | 건조한 환경에서 글리세린의 최적 효과를 위해서는 occlusive 성분(바셀린, 동백오일, 실리콘)과 함께 사용하여 글리세린이 흡수한 수분이 다시 증발하는 것을 방지해야 한다. |  |
+| `glycerin-clinical-trial-concentrations-15-20-percent` | 확실 | 공식 | 글리세린 농도에 대한 임상 RCT는 주로 15-20% 범위를 다루며, 이 범위에서 24시간 이상의 피부 수화 개선이 입증되었다. CIR의 최대 허용 농도(78.5%)와는 별개로, 실제 임상 효과 평가는 더 낮은 농도에 집중되어 있다. |  |
+
 ### 바르는 히알루론산의 피부 수화 효과, 분자량 역할, 저습도 논쟁 <sub>2026-08-10 · hyaluronic-acid-topical</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4241,6 +4576,27 @@ _(팩트 없음)_
 | `hyaluronic-acid-low-humidity-water-loss-theoretical-risk` | 논쟁 🔶 | 공식 | 이론적으로 습윤제는 저습도 환경에서 역효과를 낼 수 있으며, 한 임상 연구는 가을-겨울(저습도 시기)에 위약군에서 약 8.6%의 계절적 수화도 감소를 관찰했다(히알루론산군에서는 유의미한 감소 없음). |  |
 | `hyaluronic-acid-occlusive-necessity-complementary` | 확실 | 공식 | 히알루론산과 같은 습윤제는 밀폐제(occlusive, 예: 바셀린, 식물유)와 함께 사용할 때 가장 효과적이며, 습윤제만 사용하면 흡수한 수분이 다시 증발할 수 있다. |  |
 | `hyaluronic-acid-oral-vs-topical-distinction` | 확실 | 공식 | 경구 히알루론산(oral HA)과 바르는 히알루론산(topical HA)은 기전이 다르며, 경구 히알루론산의 효과는 섭취된 히알루론산 자체가 피부에 축적된다는 증거가 부족하고 대신 장내 소화 대사산물 또는 면역 자극이 역할할 가능성이 있다. |  |
+
+### 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 <sub>2026-08-10 · ketoconazole-scalp</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `ketoconazole-shampoo-1-percent-vs-2-percent-indication-concentration` | 확실 | 공식 | 케토코나졸 샴푸는 1% 농도(비듬 치료)와 2% 농도(지루성 피부염·중증 비듬 치료)로 구분되어 판매되며, 농도가 높을수록 더 강한 항진균 효과를 제공한다. |  |
+| `ketoconazole-frequency-every-3-4-days-vs-3-times-per-week` | 확실 | 공식 | 케토코나졸 샴푸의 사용 빈도는 적응증에 따라 다르며, 비듬 치료는 3~4일마다 1회, 지루성 두피염(임상 연구)은 주 3회(격일)로 처방된다. |  |
+| `ketoconazole-contact-time-5-10-minutes-efficacy-requirement` | 확실 | 공식 | 케토코나졸 샴푸의 최적 효과를 위해서는 두피에 5~10분간 접촉시킨 후(lather를 유지하며) 헹굼하는 것이 일반적인 권고 사항이다. |  |
+| `ketoconazole-maintenance-therapy-post-treatment-relapse-prevention` | 확실 | 공식 | 케토코나졸 샴푸로 급성 증상이 호전된 후, 재발을 방지하기 위해 주 1회 또는 2주마다 1회의 유지 요법(maintenance therapy)을 계속하는 것이 권장되며, 이는 Malassezia의 재증식을 억제한다. |  |
+| `ketoconazole-korea-classification-status-unconfirmed-regulatory` | 확인실패 | 공식 | 미국과 글로벌 데이터베이스에서 케토코나졸 샴푸는 의약품(처방약 또는 OTC)으로 분류되지만, 한국에서의 의약품/의약외품/화장품 분류와 허가 농도는 현재 웹 검색으로 확인되지 않았으며, 식약처 공식 자료 확인이 필수다. |  |
+
+### 리놀레산과 올레산: 여드름 피부의 피지 조성과 장벽 기능 (세라마이드 결핍 메커니즘) <sub>2026-08-10 · linoleic-acid-ceramide-ratio</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `linoleic-acid-decreased-acne-prone-skin-sebum` | 확실 | 공식 | 여드름 피부의 피지에서는 리놀레산(linoleic acid, C18:2)이 정상 피부보다 현저히 감소하고, 폴리불포화 지방산(polyunsaturated fatty acids)이 감소한다. |  |
+| `oleic-acid-increased-acne-prone-sebum-sticky` | 확실 | 공식 | 리놀레산 감소 시, 피지에서 올레산(oleic acid, C18:1, 단일불포화 지방산)이 보상적으로 증가하여 피지가 더 점성(viscous)이 되고 모낭 막힘이 쉬워진다. |  |
+| `linoleic-acid-ceramide-synthesis-precursor` | 확실 | 공식 | 리놀레산은 피부의 특정 세라마이드 생합성의 전구물질(precursor)이며, 리놀레산 결핍 시 세라마이드 부족으로 이어진다. |  |
+| `linoleic-acid-deficiency-barrier-hyperkeratinization` | 확실 | 공식 | 피부 표면 지질(skin surface lipids)에서 리놀레산 감소는 각질층 스핑고지질 구성을 변화시켜, 모낭 과각화증(follicular hyperkeratosis)을 유발하고 면포(comedone) 형성을 촉진한다. |  |
+| `saturated-unsaturated-ratio-acne-marker-c16` | 확실 | 공식 | 여드름 피부에서 포화 지방산 대 불포화 지방산의 비율(특히 C16:0/C16:1 비율)이 증가하며, 이는 여드름 진단의 지질 바이오마커로 작용한다. |  |
+| `linoleic-acid-topical-supplementation-barrier-recovery` | 확실 | 공식 | 리놀레산을 함유한 국소 제품은 손상된 피부 장벽의 회복을 촉진하고, 장벽 기능 개선 및 염증 감소에 임상 효과를 보인다. |  |
 
 ### 보습제의 3가지 분류: 밀폐제(occlusive), 습윤제(humectant), 연화제(emollient)의 메커니즘과 효과 <sub>2026-08-10 · moisturizer-occlusive-humectant</sub>
 
@@ -4255,6 +4611,18 @@ _(팩트 없음)_
 | `multimodal-moisturizer-combination-efficacy` | 확실 | 공식 | 현대 보습제는 3가지 기능을 모두 포함하는 '다중 모드' 제형이 대부분이며, 밀폐제 + 습윤제 + 연화제의 조합이 단일 기능 제품보다 더 높은 임상 효과를 보인다. |  |
 | `moisturizer-efficacy-dermatological-conditions-eczema-xerosis-psoriasis` | 확실 | 공식 | 보습제는 습진(eczema), 건성증(xerosis), 건선(psoriasis) 등 다양한 피부 질환에서 증상 완화와 악화 방지에 임상적으로 입증된 효과를 보이며, 의료진이 권장하는 1차 치료 수단이다. |  |
 
+### 나이아신아마이드(비타민 B3): 피지·모공 조절 근거 (미백·톤과 분리) <sub>2026-08-10 · niacinamide-sebum-pore</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `niacinamide-2-percent-sebum-reduction-20-25-percent-4weeks` | 확실 | 공식 | 2% 나이아신아마이드를 4주 도포 시 임상시험에서 casual sebum excretion rate(우발성 피지 배출량)이 약 20~25% 감소했다. |  |
+| `niacinamide-4-5-percent-effective-acne-sebum-clinical-trials` | 확실 | 공식 | 나이아신아마이드 4~5% 농도가 여드름 및 피지 관련 임상시험에서 효과적이며, 4% 농도는 여러 RCT에서 클린다마이신 겔과 벤치마킹되었다. |  |
+| `niacinamide-5-percent-pore-size-20-percent-improvement-12weeks` | 확실 | 공식 | 5% 나이아신아마이드 도포 후 12주에 모공 외형(pore appearance)이 20% 개선되었다. |  |
+| `niacinamide-sebum-mechanism-5-alpha-reductase-inhibition` | 논쟁 🔶 | 공식 | 나이아신아마이드는 5α-레덕타제(5α-reductase) 억제를 통해 테스토스테론의 DHT 변환을 감소시켜 피지선 자극을 줄이는 것으로 제시되나, 확실한 메커니즘은 피지선 내 지질 합성 조절(lipid synthesis modulation)로 보인다. |  |
+| `niacinamide-pore-appearance-not-physical-shrinkage-sebum-control` | 확실 | 공식 | 나이아신아마이드는 모공을 '물리적으로 축소'하지 않으며, 피지 감소·피부 장벽 강화·항염증 작용으로 인해 피부 질감을 개선하면서 모공이 '작아 보이도록' 만든다. |  |
+| `niacinamide-2-percent-rapid-efficacy-2-4-weeks-oil-appearance` | 확실 | 공식 | 2% 농도의 나이아신아마이드로도 2~4주 내에 지성피부의 유분감(oiliness)과 모공 외형이 개선될 수 있다. |  |
+| `niacinamide-post-discontinuation-sustained-effect-behavior-change` | 확실 | 공식 | 나이아신아마이드 도포 중단 후에도 피부의 유분감·모공 개선이 지속되는 것으로 보고되어, 장기적 행동 변화(sustained change in skin behavior)를 시사한다. |  |
+
 ### 판테놀(panthenol)과 마데카소사이드(madecassoside)의 피부 진정 및 상처 치유 효과 <sub>2026-08-10 · panthenol-madecassoside</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4266,6 +4634,51 @@ _(팩트 없음)_
 | `centella-asiatica-scar-treatment-280-patient-rct` | 확실 | 공식 | 센텔라 아시아티카 1% 크림을 수술 후 흉터 치료에 사용한 280명 규모의 무작위대조시험(분할면 설계)에서 하루 2회 도포로 밴쿠버 흉터 척도(Vancouver Scar Scale) 개선이 입증되었다. |  |
 | `panthenol-clinical-evidence-limited-topical-use` | 확인실패 | 공식 | 판테놀의 임상 효과는 마데카소사이드나 다른 활성 성분보다 연구가 적으며, 주로 항염증 크림 조합 성분으로 사용되고 있다. 판테놀 단독 효과의 대규모 임상시험은 많지 않다. |  |
 
+### 바셀린(페트롤라툼): 밀폐 보습의 기준점, TEWL 감소율과 모공 막힘 논란 <sub>2026-08-10 · petrolatum-barrier-repair</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `petrolatum-barrier-repair-antimicrobial-filaggrin` | 논쟁 🔶 | 공식 | 바셀린 도포는 피부 장벽 단백질(filaggrin, loricrin) 생산을 촉진하고, 습진 피부에서 염증성 면역세포 수를 감소시키며, 천연 항균 화합물 생산을 증가시킨다. |  |
+| `petrolatum-cleft-formation-stratum-corneum` | 확실 | 공식 | 바셀린 도포는 각질층(stratum corneum) 내에 열림(cleft formation)을 유도하여 장벽 기능을 개선하고 경표피수분손실(TEWL)을 감소시킨다. |  |
+| `petrolatum-vs-olive-oil-occlusive-superiority` | 확실 | 공식 | 바셀린은 올리브유(EVOO)와의 비교 임상시험(n=54)에서 '반투과성 박막'으로 더 우수한 밀폐 효과를 보였고, 경표피수분손실(TEWL) 감소에서 올리브유를 능가했다. |  |
+| `petrolatum-comedogenicity-pore-clogging-myth-no-evidence` | 확실 | 공식 | 바셀린이 모공을 막힌다는 우려는 임상 근거가 없다. Journal of the American Academy of Dermatology에 따르면, 바셀린의 분자 크기가 모공 개구부에 침투할 수 없으며, 여드름 유발 물질(comedogenic ingredient)로 지목되지 않는다. |  |
+| `petrolatum-eczema-barrier-thickness-improvement` | 논쟁 🔶 | 공식 | 습진 환자에게 바셀린을 도포하면 피부 외부층(outer skin layer) 두께가 증가하고, 염증성 면역세포 수가 감소한다. |  |
+
+### 프로폴리스: 진정·항균 효과와 접촉 알레르기 위험(벌 제품 교차반응) <sub>2026-08-10 · propolis-skin-barrier</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `propolis-phenolic-compounds-antimicrobial-anti-inflammatory` | 확실 | 공식 | 프로폴리스의 치유 특성은 페놀계 화합물(phenolic compounds) 함량에서 비롯되며, 항미생물, 항염증, 진통, 혈관신생 촉진 효과가 보고되었다. |  |
+| `propolis-antibacterial-staphylococcus-aureus-sensitive` | 확실 | 공식 | 프로폴리스는 임상 상처 분리균에 대한 항균 효과를 보이며, 메탄올 추출물이 가장 우수한 항균 활성을 나타냈고, Staphylococcus aureus(황색포도상구균)이 가장 민감했다. |  |
+| `propolis-clinical-evidence-limited-few-studies` | 확실 | 공식 | 프로폴리스의 치료 효능을 입증하는 대규모 임상 연구는 매우 부족하며, 현재까지의 출판 데이터는 주로 시험관 및 동물 모델에 기반한다. |  |
+| `propolis-contact-dermatitis-allergen-risk` | 확실 | 공식 | 프로폴리스는 접촉 알레르기를 유발할 수 있으며, 반응은 가려움, 작열감, 두드러기, 국소 발진이며, 이전 감작자에서 노출 후 시간~일 이내에 발생한다. |  |
+| `propolis-beeswax-cross-reaction-uncommon-low-propolis-content` | 확실 | 공식 | 프로폴리스와 밀랍(beeswax) 간 교차반응은 드물며, 밀랍의 프로폴리스 오염도는 교차반응을 일으킬 수 있는 수준 이하로 보인다. |  |
+| `propolis-fragrance-cross-reactivity-pseudo-cross-reaction` | 확실 | 공식 | 프로폴리스 함유 화장품에서의 접촉피부염 반응 대다수는 향료(fragrance)와의 교차반응 또는 가교차반응(pseudo-cross-reaction)으로 해석된다. |  |
+| `propolis-occupational-allergy-beekeeper-0-76-to-4-04-percent` | 확실 | 공식 | 양봉가(beekeepers)에서 프로폴리스 알레르기 발생률은 0.76%~4.04%로 보고되었다. |  |
+
+### 레티닐 팔미테이트(retinyl palmitate): 레티노이드 전환 사슬에서의 자리, 약한 이유, 안정성과 광분해 논란 <sub>2026-08-10 · retinyl-palmitate</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `retinyl-palmitate-conversion-pathway-two-step` | 확실 | 공식 | 레티닐 팔미테이트의 피부 활성화는 에스터라제에 의한 가수분해로 레티놀 생성 후, 산화 경로(retinol → retinaldehyde → retinoic acid)를 거쳐 활성형 레티노산으로 변환되는 2단계 과정을 거친다. |  |
+| `retinyl-palmitate-low-bioavailability-high-concentration-requirement` | 확실 | 공식 | 레티닐 팔미테이트는 피부에서 생체이용가능성(bioavailability)이 매우 낮아, 유의미한 효소 유도 활성을 위해서는 폐쇄(occlusion) 조건에서 0.6% 농도가 필요하다. 비교하면 레티놀은 0.025%, 레티날데히드는 0.01%에 불과하다. |  |
+| `retinyl-palmitate-most-stable-least-potent-tradeoff` | 확실 | 공식 | 레티닐 팔미테이트는 비타민 A 에스터 중 열 안정성이 가장 높지만, 생물학적 활성도는 가장 낮다. 이는 안정성과 효능 사이의 트레이드오프다. |  |
+| `retinyl-palmitate-photodegradation-uva-faster-than-retinol` | 확실 | 공식 | 레티닐 팔미테이트는 UVA 방사선(320–400 nm)에 노출되면 레티놀보다 더 빠르게 광분해(photodegradation)되어 생물학적 활성을 잃는다. |  |
+| `retinyl-palmitate-thermal-instability-7day-38percent-loss` | 확실 | 공식 | 4°C에 보관 중인 2% 레티닐 팔미테이트 O/W 에멀전에서 7일 후 38% 손실이 관찰되었다. |  |
+| `retinyl-palmitate-weak-evidence-systematic-review-no-significant-efficacy` | 논쟁 🔶 | 공식 | 체계적 문헌 검토(systematic review)에서 국소 레티닐 아세테이트 및 레티닐 팔미테이트 사용을 뒷받침하는 유의미한 임상 근거를 찾지 못했다. |  |
+
+### 로즈마리 오일과 탈모: 어디까지 확인됐나 (미녹시딜 비교 RCT) <sub>2026-08-10 · rosemary-oil-hairloss</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `rosemary-oil-vs-minoxidil-2-percent-rct-6-month-androgenetic-alopecia` | 확실 | 공식 | 로즈마리 오일과 미녹시딜 2%를 비교한 무작위 대조 임상시험(RCT)은 안드로겐성 탈모(androgenetic alopecia) 환자 100명(각 그룹 50명)을 6개월 동안 추적했다. |  |
+| `rosemary-oil-vs-minoxidil-2-percent-no-significant-difference-6-months` | 확실 | 공식 | 임상시험 결과, 6개월 후 로즈마리 오일 그룹과 미녹시딜 2% 그룹 모두에서 베이스라인 대비 모발 수가 유의미하게 증가했으며, 두 그룹 간에는 통계적 차이가 없었다. |  |
+| `rosemary-oil-vs-minoxidil-2-percent-side-effects-fewer-with-rosemary` | 확실 | 공식 | 로즈마리 오일 그룹에서는 미녹시딜 2% 그룹보다 부작용(특히 두피 가려움증)이 더 적게 보고되었다. |  |
+| `rosemary-oil-rct-specific-extract-not-essential-oil-clarification` | 확실 | 공식 | 논문에서 사용된 로즈마리 제품은 순수 에센셜 오일이 아니라 특정 추출·처리된 로즈마리 추출물이었으며, 이 점은 '로즈마리 에센셜 오일'과 구분해서 이해해야 한다. |  |
+| `rosemary-oil-rct-minoxidil-2-percent-not-5-percent-comparison` | 확실 | 공식 | 이 RCT에서 사용된 미녹시딜은 2% 강도였으며, 더 광범위하게 사용되는 5% 미녹시딜과는 비교되지 않았다. |  |
+| `rosemary-oil-hairloss-mechanism-unclear-pubmed` | 확인실패 | 공식 | 로즈마리 오일이 탈모 감소 메커니즘에 대한 PubMed 상 명확한 학술적 설명은 확인되지 않았다. 일반적인 가설은 '항산화·항염증 성분 함유'이나, 이것이 모낭에 어떻게 작용하는지는 입증되지 않았다. |  |
+| `rosemary-oil-single-trial-replication-needed` | 확인실패 | 공식 | 이 RCT는 단 1건의 연구이며, 발견을 확인하기 위한 독립적인 재현 연구(replication study)가 부족하다. |  |
+
 ### 피부 장벽(skin barrier)의 구조, '무너졌다'는 표현의 실체, 회복 원리 <sub>2026-08-10 · skin-barrier-basics</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4276,6 +4689,34 @@ _(팩트 없음)_
 | `barrier-recovery-timeline-weeks-to-months` | 논쟁 🔶 | 공식 | 완전히 손상된 피부 장벽의 회복은 통상적으로 2~4주의 집중 관리로 증상 개선이 가능하지만, 완전한 지질 조성 복원에는 수주~수개월이 소요될 수 있다. |  |
 | `barrier-damage-causes-multiple-pathways-sensitivity-allergy-eczema` | 확실 | 공식 | 장벽 손상은 '민감 피부' 상태를 만들며, 이는 자극 반응성 증가(irritant contact dermatitis), 알레르기 감작 증가, 또는 기존 아토피 악화를 초래할 수 있다. 각각 다른 메커니즘이고 다른 관리 방식이 필요하다. |  |
 | `barrier-disruption-lyso-sphingolipids-inflammatory-pathway` | 확실 | 공식 | 아토피성 피부염에서 세라마이드와 스핑고미엘린의 비정상 수해(hydrolysis)로 글루코실스핑고신(GS)과 스핑고신-인산-콜린(SPC) 같은 리소스핑고지질이 축적되며, 이들이 NF-κB 신호와 염증을 증폭시키는 악순환을 형성한다. |  |
+
+### 스쿠알란(squalane)의 보습·안정성: 스쿠알렌과의 차이, 코메도제닉 위험, 적용 대상 <sub>2026-08-10 · squalane-moisturizer</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `squalane-hydrogenation-stabilization-official-cir` | 확실 | 공식 | 스쿠알렌(unsaturated)을 수소화(hydrogenation)하여 포화시킨 스쿠알란은 미국 화장품 성분 안전성 평가위원회(CIR)에서 화장품 용 안전 성분으로 평가되었으며, 산화 안정성이 스쿠알렌보다 현저히 높다. |  |
+| `squalane-oxidative-stability-no-lipid-peroxidation` | 확실 | 공식 | 스쿠알렌과 달리 스쿠알란은 지질 과산화(lipid peroxidation) 현상이 발생하지 않아 보관 중 성분 변성이 일어나지 않으며, 제품의 유효 기간이 훨씬 길다. |  |
+| `squalene-peroxide-comedogenic-uva-irradiation` | 확실 | 공식 | 스쿠알렌이 자외선 A(UVA)에 노출되거나 공기 중에서 산화될 때 생성되는 스쿠알렌 과산화물(squalene peroxides)은 강한 코메도제닉 성질을 보이며, 여포 증식(follicular hyperplasia)과 과다각화증(hyperkeratosis)을 유발한다. |  |
+
+### 자외선 차단제 덧바르기: 현실적으로 얼마나 지켜야 하는가 <sub>2026-08-10 · sunscreen-reapplication-reality</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `who-sunscreen-reapplication-every-2-hours-application-20-minutes-before` | 확실 | 공식 | 세계보건기구(WHO)는 자외선 차단제를 햇빛 노출 20분 전에 바르고, 2시간마다 재도포할 것을 권장하며, 수영이나 목욕 후에도 재도포할 것을 명시하고 있다. |  |
+| `sunscreen-standard-application-dose-2-mg-cm2` | 확실 | 공식 | 자외선 차단제의 SPF 지수는 2 mg/cm²의 도포량 기준으로 시험되며, 이는 성인 얼굴 전체에 약 28ml(1 온스)에 해당한다. |  |
+| `sunscreen-actual-application-dose-0-39-to-1-0-mg-cm2-user-behavior` | 확실 | 공식 | 실제 사용 환경에서 사람들이 도포하는 자외선 차단제의 양은 0.39~1.0 mg/cm²로, 표준 테스트 용량의 약 1/4에서 1/2 수준이다. |  |
+| `sunscreen-dose-reduction-half-spf-reduction-greater-than-half` | 확실 | 공식 | 도포량이 절반으로 줄어들면 SPF(자외선 차단지수)는 절반 이상으로 감소한다. SPF와 도포량의 관계는 선형이 아니라 비선형(nonlinear)이다. |  |
+| `sunscreen-no-rct-spf-degradation-2-to-4-hours` | 논쟁 🔶 | 공식 | 자외선 차단제가 2~4시간 동안 SPF 저하를 겪는다는 주장을 뒷받침하는 단일 RCT는 존재하지 않는 것으로 알려져 있다. |  |
+| `sunscreen-early-reapplication-first-30-minutes-high-spf-compensation-strategies` | 확실 | 공식 | 제한된 도포량의 단점을 보상하는 전략으로는 (1) 최초 30분 내에 조기 재도포, (2) 매우 높은 SPF(70~100) 제품 사용이 있다. |  |
+| `sunscreen-reapplication-swimming-sweating-mechanical-removal` | 논쟁 🔶 | 공식 | 자외선 차단제 재도포가 필수적인 것은 화학적 분해보다는 물, 땀, 마찰로 인한 기계적 제거 때문이다. |  |
+
+### 징크 PCA의 피지 조절 기전: 5α-리덕타제 억제·항균·임상 근거 <sub>2026-08-10 · zinc-pca-sebum</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `zinc-pca-sebum-reduction-placebo-controlled-4-week-trial` | 확실 | 공식 | 징크 PCA를 함유한 제품을 4주간 사용한 피부에서 위약 대조군과 비교하여 통계적으로 유의한 수준의 피지 생성 감소와 C. acnes 세균 감소가 관찰되었다. |  |
+| `zinc-general-5-alpha-reductase-inhibition-historical` | 논쟁 🔶 | 공식 | 일반 징크 성분(징크 황산염 등)의 5α-리덕타제 억제 기전은 1988년 연구에서 보고되었으나, 이 기전은 징크 PCA에 특화된 메커니즘이 아니며, 징크 전반의 가설적 가능성이다. |  |
+| `zinc-sebum-secretion-reduction-placebo-trial` | 확실 | 공식 | 징크 황산염(zinc sulfate)의 국소 징크 제제는 임상 시험에서 통계적으로 유의한 피지 분비 감소(p<0.028)를 보였으며, 이는 징크의 일반적 피지 조절 효과를 시사한다. |  |
 
 ## 삼성
 
@@ -4584,6 +5025,29 @@ _(팩트 없음)_
 | `niacinamide-ultrasound-combination-skin-aging-efficacy` | 확실 | 공식 | 무작위 대조 임상 시험에서 나이아신아마이드 포뮬레이션과 5MHz 초음파 병용이 피부 노화 개선에 효과적이었으며, 통계적 유의성을 보였다. |  |
 | `niacinamide-collagen-peptide-retinol-combination-trial` | 논쟁 🔶 | 공식 | 나이아신아마이드·펩타이드·레티닐프로피오네이트 조합 제품이 무작위 대조 시험(n=불명)에서 처방 0.02% 트레티노인 레짐과 유사한 주름 개선을 보였으나, 레티노이드 제품의 강도가 낮은 편에 속함을 주의해야 한다. |  |
 
+## 성분 (레스베라트롤·resveratrol)
+
+### 레스베라트롤 국소 도포: 경피 흡수 어려움과 해결 기술, 항산화 및 항노화 근거 <sub>2026-08-10 · resveratrol-topical</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `resveratrol-topical-fine-lines-wrinkles-firmness-clinical-improvement` | 확실 | 공식 | 레스베라트롤·바이칼린·비타민E 함유 야간 항산화 포뮬레이션을 12주 도포했을 때 세밀한 주름(fine lines), 피부 탄력성, 탄성, 풍성도, 색소 침착, 피부 거칠기에서 통계적으로 유의미한 개선이 관찰되었다. |  |
+| `resveratrol-topical-skin-penetration-challenge-low-bioavailability` | 확실 | 공식 | 레스베라트롤은 소수성 물질로서 피부 투과 능력이 낮으며, 포뮬레이션 성분에 크게 좌우된다. 특히 포스파티딜콜린 기반 에토솜(ethosome)만이 in vitro 경피 투과를 실현했으나, 다른 전달 시스템은 효과가 제한적이었다. |  |
+| `resveratrol-antioxidant-anti-inflammatory-mechanisms-gene-expression` | 확실 | 공식 | 레스베라트롤은 자유 라디컬을 중화하고 내재적 항산화 능력을 증가시키는 이중 항산화제이며, 또한 미토콘드리아 생성, 항염증, 항당뇨병, 항암 활성을 나타낸다. |  |
+| `resveratrol-formulation-alters-gene-expression-ho1-vegfa-col3a1` | 확실 | 공식 | 안정화되고 고농도의 레스베라트롤 포뮬레이션이 경피 흡수를 나타낼 때, HO1(헤모옥시게나제-1), VEGFA(혈관내피성장인자), COL3A1(제3형 콜라겐) 등의 유전자 발현에 변화를 일으킨다. |  |
+| `resveratrol-oral-topical-combination-synergy-greater-wrinkle-improvement` | 확실 | 공식 | 134명의 여성(40세 이상)을 대상으로 한 8주 무작위 대조 임상시험에서 경구 레스베라트롤 캡슐(75mg) + 국소 크림(1.5%) 병용군이 가장 큰 주름 개선(11.9%)을 보였으며, 위약 병용군(6.3%)보다 유의미하게 우수했다. |  |
+
+## 성분 (레티날데하이드·retinaldehyde)
+
+### 레티날데하이드: 레티놀과 트레티노인 사이의 강도, 자극 프로파일, 농도별 효능 <sub>2026-08-10 · retinaldehyde-retinoid</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `retinaldehyde-0-1-percent-wrinkle-reduction-12-week-clinical` | 확실 | 공식 | 0.1% 레티날데하이드 세럼을 8주간 도포했을 때 얼굴 주름이 12% 개선되었으며, 흉부 주름은 점진적으로 11%→19% 개선되고, 색소 과다는 19% 감소했다. |  |
+| `retinaldehyde-0-1-and-0-05-percent-both-95-percent-improvement` | 확실 | 공식 | 0.1% 및 0.05% 레티날데하이드 크림 모두 3개월 도포 후 광손상 개선도 95%를 달성했으며, 농도 간 통계적으로 유의한 차이가 없었다. |  |
+| `retinaldehyde-vs-tretinoin-tolerability-lower-irritation` | 확실 | 공식 | 레티날데하이드는 천연 레티놀 경로의 중간체로서, 트레티노인 대비 국소 자극(burning, dryness, erythema)이 훨씬 적으면서도 광손상 개선 효과는 비슷하게 나타났다. |  |
+| `retinaldehyde-formulation-stability-challenge-delivery-systems` | 확실 | 공식 | 레티날데하이드는 수용성이 낮고 산화에 취약하여 안정화가 어려운데, 최근 나노 리포솜·에토솜·아드엔실 시스템 등의 제형 혁신으로 피부 전달성과 안정성이 개선되고 있다. |  |
+
 ## 성분 (레티놀·레티노이드)
 
 ### 레티놀 · 레티노이드 계열 주름개선: 강도별 비교, 자극 프로파일, 임신부 금기 <sub>2026-08-10 · 예정</sub>
@@ -4596,6 +5060,40 @@ _(팩트 없음)_
 | `retinoid-pregnancy-topical-tretinoin-category-c` | 확실 | 공식 | 처방용 트레티노인(all-trans retinoic acid)은 FDA 분류 C, 호주 치료용품청 분류 D로 기형유발 가능성이 있어 임신 가능성이 있는 여성은 피해야 한다. |  |
 | `topical-retinoid-photoirritant-uv-caution` | 확실 | 공식 | 국소 레티노이드는 자외선 민감성을 증가시키며, 레티노이드 사용 중 자외선 차단이 필수이다. |  |
 | `retinization-initial-irritation-adjustment-period` | 확실 | 공식 | 레티노이드 사용 초기(2~4주)에 피부가 홍조, 박리, 건조함을 경험하는 '레티니제이션(retinization)' 적응 과정이 일어나며, 저농도로 시작해 점진적으로 올리는 것이 내약성을 높인다. |  |
+
+## 성분 (비타민E·토코페롤·tocopherol)
+
+### 비타민E(토코페롤): 국소 항산화제의 실제 역할, 비타민C 병용 효과, UV 방호 <sub>2026-08-10 · vitamin-e-tocopherol-skin</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `vitamin-e-alpha-tocopherol-antioxidant-uv-photoprotection` | 확실 | 공식 | 비타민E(알파-토코페롤)는 피부 항산화제로서 UV 방사선으로부터의 보호, 세포막 안정성 개선, 건성 피부 보습, 항염증 작용을 나타낸다. |  |
+| `vitamin-c-e-combination-superior-to-either-alone-erythema-sunburn` | 확실 | 공식 | L-아스코르브산 15% + 알파-토코페롤 1% 조합이 단독 사용보다 자외선 홍반(erythema)과 선번(sunburn cell formation) 형성에서 통계적으로 유의미하게 더 효과적인 보호를 제공했다. |  |
+| `vitamin-c-regenerates-vitamin-e-radical-electron-donation` | 확실 | 공식 | 비타민C(L-아스코르브산)는 산화된 비타민E 래디컬을 환원함으로써 비타민E의 항산화 능력을 재생하여, 비타민E의 보호 효율을 높인다. |  |
+| `vitamin-e-limited-skin-penetration-challenges` | 확실 | 공식 | 비타민E는 지용성 분자로서 피부 투과 능력이 제한적이며, 단독으로는 표피층에 깊숙이 침투하기 어렵다. |  |
+
+## 성분 (알부틴·arbutin)
+
+### 알부틴: 미백 기능성 원료로서의 효능, 알파/베타 구분, 국내 허용 농도 <sub>2026-08-10 · arbutin-whitening</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `alpha-arbutin-vs-beta-arbutin-10-fold-potency-tyrosinase-inhibition` | 확실 | 공식 | 알파-알부틴(α-arbutin)은 베타-알부틴(β-arbutin)보다 티로시나제 효소 억제 능력이 약 10배 높으며, 알파 형태의 α-글루코시드 결합이 베타의 β-글루코시드 결합보다 화학적으로 더 안정하다. |  |
+| `alpha-arbutin-5-percent-melasma-clinical-trial-comparable-triple-combo` | 확실 | 공식 | 알파-알부틴 5%와 코직산 2% 조합 크림이 기미 치료에서 하이드로퀴논 4%, 트레티노인 0.05%, 플루오신올론 아세토나이드 0.01%의 트리플 콤보(표준 치료)와 동등한 효과를 보였으며, 재발률은 더 낮았다. |  |
+| `alpha-arbutin-10-percent-uv-induced-hyperpigmentation-43-5-percent-reduction` | 확실 | 공식 | 10% 알파-알부틴을 도포했을 때 자외선 유도 색소 침착이 43.5% 감소했다. |  |
+| `alpha-arbutin-conversion-hydroquinone-slow-vs-beta-arbutin` | 확실 | 공식 | 알파-알부틴은 피부 상재균(Staphylococcus epidermidis 등)에 의해 하이드로퀴논으로 변환되지만, 베타-알부틴이 더 쉽게 분해되므로, 알파 형태가 간접 독성 측면에서 더 안전하다. |  |
+| `alpha-arbutin-safety-no-ochronosis-no-cytotoxicity-at-1-2-percent` | 확실 | 공식 | 알파-알부틴 1~2% 농도에서는 자극(irritation), 세포독성(cytotoxicity), 오크로노시스(blue-gray darkening) 위험이 없는 것으로 확인되었으며, 하이드로퀴논 대비 안전 프로파일이 명확히 우수하다. |  |
+
+## 성분 (코직산·kojic acid)
+
+### 코직산: 미백 기능성 원료로서의 티로시나제 억제 근거, 농도, 국내 규제 지위 <sub>2026-08-10 · kojic-acid-brightening</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `kojic-acid-tyrosinase-inhibition-copper-chelation-mechanism` | 확실 | 공식 | 코직산은 티로시나제 효소의 기질인 구리 이온(copper ions)을 킬레이트(chelate)하여 효소를 불활성화함으로써 멜라닌 생성을 억제한다. |  |
+| `kojic-acid-2-percent-alpha-arbutin-5-percent-vs-hydroquinone-4-percent-melasma` | 확실 | 공식 | 코직산 2% + 알파-알부틴 5% 복합 크림을 12주 도포했을 때 기미 치료에서 하이드로퀴논 4%와 동등한 효능을 보였으며, 재발률이 더 낮고 부작용이 적었다. |  |
+| `kojic-acid-combination-therapy-vs-monotherapy-superior-efficacy` | 확실 | 공식 | 코직산을 다른 미백 성분(알파-알부틴, 글리콜산 등)과 병용했을 때 코직산 단독 치료보다 색소 개선 결과가 더 우수했다. |  |
+| `kojic-acid-korea-regulatory-status-unconfirmed` | 확인실패 | 웹검색 | 웹 검색 결과 코직산의 한국 식약처 기능성화장품 성분 지위(허용 농도 등)를 명확히 확인하지 못했다. |  |
 
 ## 성분 (트라넥삼산·아젤라산)
 
@@ -4614,6 +5112,18 @@ _(팩트 없음)_
 | `azelaic-acid-15-20-percent-mild-transient-irritation` | 확실 | 공식 | 15~20% 아젤라산 포뮬레이션은 임상적으로 의미 있는 개선을 가져왔으나 경미하고 일시적인 국소 자극이 나타났다. |  |
 | `azelaic-acid-rosacea-erythema-inflammatory-efficacy` | 확실 | 공식 | 메타분석(20개 장미증 연구)에서 아젤라산이 비히클 대조군 대비 12주 후 홍반 심각도, 염증성 병변 수, 전체 개선도, 치료 성공률 모두에서 유의미하게 개선되었다. |  |
 | `azelaic-acid-regulatory-status-korea-uncertain` | 확인실패 | 웹검색 | 웹 검색 결과 아젤라산의 한국 식약처 규제 지위(의약품 vs 기능성화장품 인정 성분)를 명확히 확인하지 못했다. |  |
+
+## 성분 (페룰산·ferulic acid)
+
+### 페룰산: 비타민C 세럼에 함께 들어가는 이유, 안정화·광보호 강화 메커니즘 <sub>2026-08-10 · ferulic-acid-antioxidant</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `ferulic-acid-stabilizes-vitamin-c-e-solution-chemical-stability` | 확실 | 공식 | 페룰산을 L-아스코르브산 15% + 알파-토코페롤 1% 용액에 첨가하면 두 비타민의 화학적 안정성을 현저히 향상시킨다. |  |
+| `ferulic-acid-doubles-photoprotection-c-e-from-4-fold-to-8-fold` | 확실 | 공식 | 페룰산을 추가하면 L-아스코르브산 15% + 알파-토코페롤 1% 조합의 광보호 효율이 4배에서 약 8배로 2배 상향되며, 자외선 홍반(erythema)과 선번(sunburn cell) 형성 양쪽 모두에서 확인되었다. |  |
+| `ferulic-acid-mechanism-antioxidant-radical-scavenging` | 확실 | 공식 | 페룰산은 자유 라디컬을 직접 소거(radical scavenging)하는 항산화 기전을 가지며, 또한 비타민C와 E의 항산화 능력을 강화하는 시너지 효과를 나타낸다. |  |
+| `ferulic-acid-uv-damage-prevention-apoptosis-caspase-3-7` | 확실 | 공식 | 페룰산 포함 항산화 포뮬레이션(C+E+ferulic acid)은 자외선 손상으로부터 피부를 보호하며, 이는 카스파제-3과 7의 유도 감소와 티민 이량체(thymine dimer) 형성 억제로 확인되었다. |  |
+| `ferulic-acid-concentration-15-percent-c-1-percent-e-formulation-standard` | 확실 | 공식 | 광보호 효과가 입증된 표준 포뮬레이션은 L-아스코르브산 15% + 알파-토코페롤 1% + 페룰산(농도 명시 않음)의 조합이다. |  |
 
 ## 성분 (펩타이드)
 
@@ -4645,6 +5155,17 @@ _(팩트 없음)_
 | `aha-lactic-acid-12-percent-efficacy-lower-irritation` | 확실 | 공식 | 12% 락틱산은 같은 농도의 글리콜산보다 피부 자극을 덜 일으키면서 질감과 색소침착을 개선한다. |  |
 | `pha-polyhydroxy-acid-higher-ph-tolerance` | 확실 | 공식 | PHA(폴리하이드록시산)는 AHA보다 분자가 크고 높은 pH에서 작동하므로, 민감한 피부에서도 더 나은 내약성을 제공한다. |  |
 
+### 아보벤존의 광불안정성 문제와 안정화 전략: 옥토크릴렌, 옥시벤존, 항산화제 <sub>2026-08-10 · 뷰티_avobenzone-photostability</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `avobenzone-photodegradation-instability-uva-filter` | 확실 | 공식 | 아보벤존(avobenzone)은 광범위 UVA 차단이 가능한 유기 자차이지만, 자외선 노출 시 광분해(photodegradation)되어 불안정하며, 이로 인해 시간 경과에 따라 UVA 차단 효과가 감소한다. |  |
+| `avobenzone-octocrylene-stabilization-23-to-90-percent` | 확실 | 공식 | 옥토크릴렌(octocrylene) 3.6% 첨가로 아보벤존 4% 제형의 안정성이 23%(baseline)에서 90%로 개선되었으며, 이는 25 MED(minimum erythema dose) 자외선 노출 후 측정했을 때의 결과다. |  |
+| `oxybenzone-quenching-mechanism-avobenzone-singlet-triplet` | 확실 | 공식 | 옥시벤존(oxybenzone)은 아보벤존의 형광을 소광(quenching)하여 일중 항 흥분 상태(singlet excited state)에서 삼중 항 상태(triplet-excited state)로의 에너지 흐름을 억제함으로써, 광분해를 유발하는 삼중항 반응을 감소시킨다. |  |
+| `4-methylbenzylidene-camphor-avobenzone-stabilization-100-percent` | 확실 | 공식 | 4-메틸벤질리덴 캠퍼(4-methylbenzylidene camphor)는 아보벤존 안정화에서 100% 효율을 달성했으며, 삼중항 소광자(triplet quencher) 중 가장 효과적인 성분 중 하나로 알려져 있다. |  |
+| `antioxidants-ubiquinone-transresveratrol-avobenzone-stabilization` | 논쟁 🔶 | 공식 | 항산화제(ubiquinone, transresveratrol 등)는 옥토크릴렌이나 옥시벤존과 함께 사용되어 아보벤존 안정화를 추가로 향상시킬 수 있으며, 95-100% 안정화에 도달할 수 있다. |  |
+| `octocrylene-phototoxicity-concern-alternative-research` | 논쟁 🔶 | 공식 | 옥토크릴렌은 최근 잠재적 광독성(phototoxicity)을 보였다는 연구가 제시되었으며, 이로 인해 대체 안정화 방법에 대한 연구가 진행되고 있다. |  |
+
 ### 벤조일퍼옥사이드: 여드름 제어 기전, 농도 기준, 한국 규제 지위, 박테리아 저항성 <sub>2026-08-10 · 뷰티_benzoyl-peroxide-acne</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4664,6 +5185,143 @@ _(팩트 없음)_
 | `bha-21day-sebum-reduction-hydration-increase` | 확실 | 공식 | 2% 살리실산 함유 젤 21일 사용 결과, 피지가 23.65% 감소했고 피부 수분은 40.5% 증가했다. |  |
 | `bha-safety-adverse-effects-minimal` | 확실 | 공식 | 2% 살리실산 젤은 안전성이 우수하며, 5% 참가자만 경미한 일시적 가려움을 보고했고 탈락자는 없었다. |  |
 
+### 비오틴과 모발: 결핍 시 효과와 혈액검사 간섭 이슈 <sub>2026-08-10 · 뷰티_biotin-hair-evidence</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `biotin-deficiency-prevalence-hair-loss-women-38percent` | 확실 | 공식 | 탈모를 호소하는 여성의 38%에서 비오틴 결핍이 발견되었다. |  |
+| `biotin-supplementation-efficacy-no-superior-to-placebo` | 확실 | 공식 | 비오틴 보충제의 모발 성장 효과는 위약 대비 우월성이 입증되지 않았다. 이중맹검 위약 대조 연구에서 비오틴군과 위약군 간 차이가 없었다. |  |
+| `biotin-deficiency-clinical-benefit-limited-to-deficiency-state` | 확실 | 공식 | 비오틴의 모발 성장 보조 효과는 획득성 또는 유전성 비오틴 결핍 및 관련 병리(예: 취약한 손톱 증후군, 빗질 불가능한 모발)에서만 기대할 수 있다. 결핍이 없는 경우 보충의 효과는 증거가 없다. |  |
+| `biotin-interference-tsh-t4-t3-thyroid-assay-false-results` | 확실 | 공식 | 고용량 비오틴 섭취는 생물소재-스트렙타비딘 상호작용에 기반한 갑상선 기능 검사(TSH, Free T4, 전체 T3, 갑상선글로불린)의 결과를 왜곡하여 거짓 양성(T4/T3 증가, TSH 감소)을 초래할 수 있다. |  |
+| `biotin-high-dose-troponin-interference-cardiac-enzyme-false-negative` | 확실 | 공식 | 보충제에 포함된 비오틴은 20 mg에 이를 수 있으며, 고용량 비오틴 섭취는 심근 트로포닌(troponin) 측정을 간섭하여 거짓 음성 결과(너무 낮음)를 초래할 수 있다. FDA는 이로 인한 심근경색 진단 지연과 1건의 사망 보고를 기록했다. |  |
+| `biotin-interference-threshold-10ng-ml-and-higher-dose-variants` | 확실 | 공식 | 비오틴이 일반적인 검사 기기에서 간섭을 일으키는 최저 농도는 10 ng/mL이며, 일일 10,000 mcg의 비오틴 복용은 TSH, Free T4, 전체 T3, 갑상선글로불린 검사를 모두 교란할 수 있다. 다만 다른 기기의 임계값은 더 높거나 낮을 수 있다. |  |
+| `biotin-pre-test-discontinuation-2days-ata-recommendation` | 확실 | 공식 | 미국 갑상선학회는 갑상선 기능 검사 전 최소 2일 동안 비오틴 복용을 중단할 것을 권고한다. |  |
+
+### 카페인과 모낭: 국소 도포 효과의 체외 연구와 임상 거리 <sub>2026-08-10 · 뷰티_caffeine-hair-follicle</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `caffeine-antagonize-testosterone-hair-follicle-in-vitro-0-0001-0-005-percent` | 확실 | 공식 | 체외 모낭 기관 배양(hair organ culture) 모델에서 카페인 0.0001%와 0.005% 농도는 5 μg/ml 테스토스테론의 안드로겐성 탈모(AGA) 억제 효과를 중화시켰다. 즉, 카페인이 테스토스테론의 모낭 억제 작용에 길항했다. |  |
+| `caffeine-hair-shaft-elongation-in-vitro-ki67-immunohistochemistry-p-0-001` | 확실 | 공식 | 카페인만 단독 처리한 모낭은 대조 배지 대비 현저한 모발 신장(hair shaft elongation)을 보였으며, Ki-67 면역조직화학으로 확인한 세포 증식도 통계적으로 유의미했다(P < 0.001). |  |
+| `caffeine-clinical-evidence-human-limited-combination-products-predominant` | 확실 | 공식 | 카페인의 임상(in vivo, 인체) 증거는 제한적이다. 대부분의 발표된 연구가 카페인을 다른 활성 성분과 병용한 제품 평가로, 순수 카페인 단독 효과의 잘 설계된 임상 시험은 많지 않다. |  |
+| `caffeine-hair-loss-reduction-reported-across-studies-minimal-adverse-events` | 확실 | 공식 | 여러 연구에서 국소 카페인은 모발 성장 증가 또는 탈모 감소를 보였으며, 보고된 부작용은 최소였다. |  |
+| `caffeine-androgenetic-alopecia-dht-mechanism-proposed-but-not-definitively-proven-in-human` | 논쟁 🔶 | 공식 | 카페인이 안드로겐성 탈모의 주요 원인인 DHT(dihydrotestosterone)를 감소시킨다는 기전이 체외 연구에서 제안되었으나, 사람 두피에서 이를 입증한 임상 데이터는 제한적이다. |  |
+| `caffeine-concentration-pharmacologically-relevant-topical-delivery-challenge` | 확인실패 | 공식 | 체외에서 효과를 본 카페인 농도(0.0001~0.005%)가 상업용 제품에서 실제로 달성되는지, 그리고 그 농도가 피부 투과 후 모낭에 도달하는지는 확인되지 않았다. |  |
+
+### 카페인과 대사·열발생: 에너지 소비와 체중 관리에서의 역할 <sub>2026-08-10 · 뷰티_caffeine-metabolism-thermogenesis</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `caffeine-phosphodiesterase-inhibitor-camp-thermogenesis-mechanism` | 확실 | 공식 | 카페인은 인산디에스터라제(phosphodiesterase) 억제제로서 순환 AMP(cAMP)의 분해를 방지하여, 갈색 지방 세포와 미토콘드리아의 열발생 과정을 촉진한다. |  |
+| `caffeine-energy-expenditure-dose-dependent-increase-human-study` | 확실 | 공식 | 이중맹검 플라시보 대조 인체 연구에서 카페인은 용량 의존적으로 에너지 소비를 증가시켰으며, 열발생 반응은 혈장 카페인 농도와 양의 상관관계를 보였다. |  |
+| `caffeine-flavonoid-mixed-supplement-22-hour-energy-expenditure-1582-vs-1535-kcal` | 확실 | 공식 | 프리메노폐경 여성을 대상으로 한 무작위 교차 시험에서 혼합 플라보노이드-카페인 보충제는 위약 대비 22시간 에너지 소비를 유의미하게 증가시켰다(1582 ± 143 vs 1535 ± 154 kcal/day). |  |
+| `caffeine-fat-oxidation-increase-mixed-flavonoid-supplement` | 확실 | 공식 | 혼합 플라보노이드-카페인 보충제는 에너지 소비 증가뿐 아니라 지방산화(fat oxidation)도 유의미하게 증가시켰다. |  |
+| `caffeine-tea-coffee-weight-loss-diabetes-risk-factor-reduction` | 확실 | 공식 | 차와 커피에 함유된 카페인과 페놀 화합물은 에너지 소비 증가 및 대사 개선과 연관되며, 일부 임상 연구에서 정기적 섭취와 당뇨병 위험 인자 개선이 관찰되었다. |  |
+| `caffeine-ephedrine-combination-weight-loss-small-to-moderate-obese` | 확실 | 공식 | 카페인과 에페드린(ephedrine)의 병용 투여는 비만 환자에서 소~중등도 체중감량을 유도했다. |  |
+| `caffeine-thermogenesis-effect-modest-contributing-factor-weight-management` | 확실 | 공식 | 카페인의 열발생 효과는 상대적으로 미미하며, 전체 에너지 균형 관리에서 보조적 역할만 한다. 주요 체중감량 수단은 식이와 운동이다. |  |
+| `caffeine-brown-adipose-tissue-activation-genetic-environmental-variability` | 확실 | 공식 | 카페인은 갈색 지방(brown adipose tissue, BAT) 활성화를 통해 열발생을 촉진하지만, BAT 양과 활성화 정도는 유전, 나이, 환경(기온, 운동)에 따라 크게 달라진다. |  |
+| `caffeine-metabolic-tolerance-chronic-use-diminished-thermogenic-effect` | 확실 | 공식 | 카페인의 에너지 소비 증가 효과는 만성 섭취에 따른 내성(tolerance) 발달로 시간에 따라 감소하는 경향을 보인다. |  |
+
+### 캡사이신: 열생성 및 에너지 소비의 근거와 생물학적 메커니즘 <sub>2026-08-10 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `capsaicin-trpv1-channel-activation-mechanism` | 확실 | 공식 | 캡사이신은 TRPV1(transient receptor potential vanilloid 1) 이온 채널을 활성화하여 세포 내 칼슘(Ca²⁺) 농도를 증가시키고, 이를 통해 열생성과 인슐린 분비 등의 하위 신호 경로를 활성화한다. |  |
+| `capsaicin-resting-metabolic-rate-33-99kcal-increase` | 확실 | 공식 | 13개 연구의 메타분석에서 캡사이신/캡시노이드는 휴식 대사율(RMR)을 위약 대비 33.99 kcal/day 증가시켰으며, 에너지 소비와 지방산화도 함께 증가했다. |  |
+| `capsaicin-minimum-dose-2mg-appetite-suppression` | 확실 | 공식 | 캡사이신의 ad libitum 에너지 섭취 감소 효과를 나타내기 위해서는 최소 2 mg의 캡사이신이 필요하며, 저용량에서는 지방산화에 유의한 영향이 없다. |  |
+| `capsaicin-high-dose-study-2-56mg-fat-oxidation` | 확실 | 공식 | 한 연구에서 2.56 mg 캡사이신(고추 1.03 g, 39,050 Scoville heat units)을 투여했을 때 음성 에너지 균형 상태에서 지방산화가 증가했다. |  |
+| `capsaicin-pre-meal-energy-intake-reduction-74kcal` | 확실 | 공식 | 캡사이신 투여 후 식사 전에 측정했을 때 ad libitum 에너지 섭취가 309.9 kJ(약 74 kcal) 감소했다. |  |
+| `capsaicin-weight-loss-effect-small-magnitude-modest` | 확실 | 공식 | 2023년 메타분석(15개 연구, n=2,377)에서 캡사이신 섭취는 과체중·비만 인구의 체중감소에 작은(small) 효과 크기를 나타냈다. |  |
+| `capsaicin-concentration-dependent-trpv1-vs-independent` | 확실 | 공식 | 캡사이신은 농도에 따라 TRPV1 의존적 또는 비의존적 방식으로 위장관에 작용하며, 농도가 작용 방식을 주로 결정한다. |  |
+| `capsaicin-low-dose-gastroprotective-high-dose-harmful` | 확실 | 공식 | 낮은 농도의 캡사이신은 쥐의 위에서 여러 해로운 인자로부터 위장 점막 손상을 예방했으나, 고용량의 식이 캡사이신 섭취는 인체 건강에 해로울 수 있다. 다만 적절한 용량 섭취는 위장 건강에 이로울 가능성이 높다. |  |
+| `capsaicin-upper-limit-dose-human-not-specified` | 확인실패 | 공식 | 웹 검색 결과 캡사이신의 명확한 인체 상한 섭취량(UL, Upper Limit)이 규정되지 않았다. |  |
+
+### L-카르니틴: 지방산 산화와 체중감량의 근거 수준 및 경구 흡수의 한계 <sub>2026-08-10 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `carnitine-cpt1-mitochondrial-transport-mechanism` | 확실 | 공식 | L-카르니틴은 CPT1(카르니틴 팔미토일트랜스퍼라제 1)과 협력하여 장쇄 지방산을 미토콘드리아 내로 운반하는 카르니틴-아실카르니틴 셔틀 시스템의 핵심 성분이며, CPT1은 지방산 산화의 rate-limiting enzyme이다. |  |
+| `carnitine-oral-bioavailability-14-18-percent-low` | 확실 | 공식 | 경구 L-카르니틴 보충제(0.5-6g)의 생물이용률은 14-18%로 매우 낮으며, 이는 흡수되지 않은 L-카르니틴 대부분이 대장의 미생물에 의해 분해되기 때문이다. 반면 식품 출처의 카르니틴 흡수율은 54-86%로 훨씬 높다. |  |
+| `carnitine-weight-loss-37-rct-meta-analysis-1-21kg` | 확실 | 공식 | 37개 RCT 메타분석(n=2,292)에서 L-카르니틴 보충은 체중을 -1.21 kg, BMI를 -0.24 kg/m² 감소시켰으나, 허리둘레와 체지방률에는 유의한 효과가 없었다. |  |
+| `carnitine-optimal-dose-2000mg-daily-non-linear` | 확실 | 공식 | 메타분석의 용량-반응 분석 결과, L-카르니틴 2000 mg/day 용량에서 최대 효과를 나타내며, 비선형 관계를 보였다. |  |
+| `carnitine-high-quality-rct-only-smaller-effect` | 확실 | 공식 | 고품질 RCT만을 포함한 분석에서 L-카르니틴의 체중감소 효과는 저품질 연구나 선임상 데이터보다 훨씬 약했으며, 이는 과거 연구의 방법론 한계나 선택적 보고의 가능성을 시사한다. |  |
+| `carnitine-exercise-performance-mixed-evidence` | 확실 | 공식 | L-카르니틴 보충은 고강도 운동 성능 개선에서 혼합된 근거를 보이며, 중등도 운동 성능에는 효과가 없는 것으로 보고된다. |  |
+| `carnitine-korea-regulatory-status-unclear` | 확인실패 | 공식 | 한국 식약처의 기능성 원료 인정 목록에서 L-카르니틴의 명시적 기능성 인정 여부가 확인되지 않았다. |  |
+
+### 크로뮴: 혈당 조절에서의 근거 수준과 국내 기능성 인정 현황 <sub>2026-08-10 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `chromium-glucose-metabolism-cofactor-mechanism` | 확실 | 공식 | 크로뮴은 포도당 인자(glucose tolerance factor)의 핵심 성분으로서 인슐린 신호 전달 경로에 개입하는 생화학적 메커니즘을 가지고 있다. |  |
+| `chromium-nondiabetic-subjects-no-effect-meta-analysis` | 확실 | 공식 | 비당뇨병 인구를 대상으로 한 RCT 메타분석에서 크로뮴 보충은 공복 혈당이나 인슐린 농도에 유의한 영향을 미치지 않는다. |  |
+| `chromium-type2-diabetes-geographic-variation-china-effect` | 확실 | 공식 | 당뇨병 인구에 대한 크로뮴 효과는 지역별로 상충하는 결과를 보인다: 중국의 155명 제2형 당뇨병 환자 대상 연구에서는 크로뮴이 혈당과 인슐린을 감소시켰으나, 다른 국가의 38명 피험자 통합 데이터에서는 효과가 없었다. |  |
+| `chromium-2020-meta-analysis-glycemic-indices-reduction` | 확실 | 공식 | 2020년 체계적 문헌고찰과 메타분석에서는 크로뮴 보충 후 공복 혈당(FPG), 인슐린, HbA1c, HOMA-IR 등 모든 혈당 조절 지표가 유의하게 감소했다고 보고했다. |  |
+| `chromium-korea-functional-ingredient-carb-fat-protein-2020` | 확실 | 공식 | 한국 식약처는 2020년 9월 23일 건강기능식품공전 개정을 통해 크로뮴의 기능성에 '탄수화물·지방·단백질 분해에 도움'을 추가했으며, 같은 날 발효된다. |  |
+| `chromium-clinical-heterogeneity-well-characterized-population-needed` | 확실 | 공식 | 연구자들은 크로뮴의 글루코스·인슐린·HbA1c 효과를 확정하기 위해 명확히 특성화된 고위험 인구를 대상으로 한 잘 설계된 RCT가 필요하다고 권고했다. |  |
+
+### CLA(켤레 리놀레산): 체지방 감소 효과의 임상적 의미와 인슐린 저항성 우려 <sub>2026-08-10 · 성분연구소 CLA 기획글</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `cla-conjugated-linoleic-acid-definition-natural-source` | 확실 | 공식 | CLA(켤레 리놀레산)는 소, 양, 버터, 치즈 등 반추동물 제품에 자연 존재하는 다중불포화 지방산의 혼합물이며, 보충제로는 식물유(홍화유 등)에서 추출·정제된 형태로 판매된다. | 글로벌 |
+| `cla-mechanism-adipocyte-lipolysis-fat-oxidation` | 확실 | 공식 | CLA는 지방세포의 호르몬 민감성 지질가수분해효소(hormone-sensitive lipase)를 활성화하고 지방산 산화를 촉진하여 체지방 감소를 유도한다는 기전이 제시되고 있다. | 글로벌 |
+| `cla-3point2g-body-fat-loss-modest-dose-response` | 확실 | 공식 | 3.2 g/day 용량에서 CLA는 체지방 감소를 보이는 것으로 보고되고 있으나, 용량-반응 메타분석에서 개인 차이가 크고 효과 크기는 작은(modest) 수준으로 평가된다. | 글로벌 |
+| `cla-high-quality-evidence-limited-body-fat-efficacy` | 확실 | 공식 | 고품질 연구(RCT)만 포함한 분석에서 CLA의 체지방 감소 효과는 선(先)임상 및 저품질 연구보다 훨씬 약했으며, 이는 과거 연구의 선택적 보고나 산업 후원 편향을 시사한다. | 글로벌 |
+| `cla-fasting-glucose-increase-pooled-analysis` | 확실 | 공식 | 13개 RCT 풀링 분석에서 CLA 보충 후 공복 혈당이 유의하게 증가했으나, HbA1c나 HOMA-IR(인슐린 저항성)에는 유의한 변화가 없었다. | 글로벌 |
+| `cla-insulin-resistance-adverse-effect-high-dose-mice` | 확실 | 공식 | 마우스 연구에서 고용량 CLA(400 mg/kg 체중)는 인슐린 저항성을 악화시켰으며, HOMA-IR 증가와 포도당 불내증을 보였다. | 동물 연구 |
+| `cla-insulin-resistance-type2-diabetes-study-homa-increase` | 확실 | 공식 | 제2형 당뇨병 환자를 대상으로 한 연구에서 CLA 보충 후 HOMA-IR(인슐린 저항성 지수)이 19% 증가했으며, 공복 혈당도 유의하게 상승했다. | 글로벌 |
+| `cla-conflicting-evidence-insulin-sensitivity-dose-composition-dependent` | 확실 | 공식 | CLA와 인슐린 저항성의 관계는 상충하는 결과들을 보이고 있으며, 용량, 이성질체 조성(c9t11 vs t10c12), 기저 건강 상태(비만도, 당뇨병 여부)에 따라 결과가 달라진다. | 글로벌 |
+| `cla-hepatic-steatosis-fatty-liver-concern-high-dose` | 확실 | 공식 | 고용량 CLA는 간 지방증(hepatic steatosis)을 유발할 수 있으며, 마우스 연구에서 지방간 증가와 간 염증 지표 상승이 관찰되었다. | 동물 연구 |
+| `cla-body-composition-effect-size-clinical-significance-limitation` | 확실 | 공식 | CLA가 체지방 감소를 보이더라도, 절대 효과 크기는 작아서(예: 3~4개월에 1~2 kg 정도) 개인이 외형상 변화를 느끼기는 어려울 수 있으며, 특히 동시에 나타나는 인슐린 저항성 악화는 대사 건강에 부정적이다. | 글로벌 |
+| `cla-individual-variability-responder-non-responder-phenotype` | 확실 | 공식 | CLA 효과의 개인 차이가 크며, 일부 개인은 우호적 반응을 보이는 반면 다른 사람은 체지방 감소가 거의 없거나 역설적인 악화(지방 증가)를 경험할 수 있다. | 글로벌 |
+| `cla-korea-health-supplement-regulatory-status` | 확인실패 | 공식 | 한국에서 CLA는 건강기능식품 개별인정형 원료로 '체지방 감소에 도움을 주는' 기능성이 인정되어 있으며, 일부 제품이 유통 중이다. | KR |
+
+### 클레이 마스크: 피지 흡착의 기전과 한계 <sub>2026-08-10 · 뷰티_clay-mask-sebum</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `clay-sebum-adsorption-mechanism-electrostatic` | 확실 | 공식 | 클레이의 피지 흡착은 물리적 '흡수(absorption)'가 아니라 '흡착(adsorption)'이며, 클레이의 음전하 광물 표면이 피지와 불순물의 양전하 입자를 정전기적으로 끌어당긴다. |  |
+| `kaolin-clay-oil-absorption-capacity-1-5-times-weight` | 확실 | 공식 | 카올린 클레이는 자신의 무게의 약 1.5배에 해당하는 오일을 흡착할 수 있다. |  |
+| `bentonite-clay-swelling-aggressive-oil-absorption-10-times` | 확실 | 공식 | 벤토나이트(몬모릴로나이트 함유) 클레이는 물에 접하면 부풀어 오르며, 자신의 무게의 최대 10배에 해당하는 오일과 수분을 흡착한다. |  |
+| `kaolin-non-swelling-stable-structure-sensitive-skin` | 확실 | 공식 | 카올린은 물에 닿아도 부풀지 않고 안정적인 결정 구조를 유지하므로, 벤토나이트보다 순하며 민감한 피부에 더 적합하다. |  |
+| `clay-mask-effect-temporary-surface-level` | 확실 | 공식 | 클레이 마스크의 피지 제어 효과는 주로 피부 표면의 일시적 제어이며, 피지선의 생리적 활동을 억제하지 않는다. |  |
+
+### 식이섬유: 포만감 및 체중관리에서의 역할, 섭취 방식에 따른 주의 <sub>2026-08-10 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `fiber-mechanism-gastric-emptying-satiety` | 확실 | 공식 | 수용성 섬유는 위 배출을 지연시키고 인지된 포만감을 증가시키며 식욕 조절에 중요한 역할을 한다. |  |
+| `fiber-weight-loss-1-25kg-meta-analysis-27rct` | 확실 | 공식 | 27개 RCT 메타분석(n=1,428)에서 식이섬유 보충군은 대조군 대비 체중이 -1.25 kg 감소했으며, 동시에 BMI, 허리둘레, 공복 인슐린, HOMA-IR도 유의하게 감소했다. |  |
+| `fiber-daily-intake-14g-additional-average-1-9kg-loss` | 확실 | 공식 | 식이섬유 보충 연구에서 일일 14 g 추가 섬유 섭취 시 평균 3.8개월에 1.9 kg의 체중감소가 보고되었다. |  |
+| `soluble-vs-insoluble-fiber-soluble-more-effective` | 확실 | 공식 | 고립된 수용성 섬유는 불용성 섬유보다 에너지 섭취 감소(69% vs 30%)와 식욕 감소(59% vs 14%)에 더 자주 효과적이다. |  |
+| `fiber-side-effects-bloating-gas-cramping-rapid-increase` | 확실 | 공식 | 섬유 섭취를 급격히 증가시키거나 수분 섭취 없이 진행하면 복부 팽만감, 가스, 경련 등의 위장관 부작용이 발생할 수 있다. 장내 박테리아가 섬유를 발효하여 가스가 생성되기 때문이다. |  |
+| `fiber-water-intake-8oz-per-5g-fiber` | 확실 | 공식 | 섬유 5 g당 약 8 온스(240 ml) 물을 함께 섭취할 것이 권장된다. 일반적으로 일일 최소 8컵(64 온스, 약 1.9L) 물 섭취가 필요하다. |  |
+| `fiber-recommended-daily-intake-25-38g-adults` | 확실 | 공식 | 성인의 권장 일일 식이섬유 섭취량은 25-38 g이며, 70 g 이상 섭취는 복부 팽만감, 가스, 위경련을 유발할 수 있다. |  |
+| `fiber-gradual-increase-3-5g-every-days-gut-adaptation` | 확실 | 공식 | 섬유를 갑자기 증량하면 장내 박테리아가 적응하지 못하므로, 3-5일마다 5 g씩 천천히 증량하는 것이 권장된다. |  |
+
+### 다이메티콘(실리콘): 밀폐제 역할, 모공 막힘 논란, TEWL 감소, 안전성 <sub>2026-08-10 · 뷰티_dimethicone-occlusive</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `occlusive-examples-plant-oils-silicones-waxes` | 확실 | 공식 | 밀폐제(occlusive) 예시: 바셀린, 샐러드유, 식물유(동백오일, 아르간오일), 실리콘(다이메티콘), 밀랍 등. 분자량이 크거나 소수성이 강할수록 밀폐 효과가 크다. |  |
+| `dimethicone-molecular-size-non-comedogenic-pore-clogging-myth` | 확인실패 | 공식 | 다이메티콘(dimethicone)은 분자 크기가 매우 커서 모공 개구부(pore opening)로 들어갈 수 없으며, 따라서 모공을 물리적으로 막을 수 없다. 다이메티콘의 비코메도제 지수(comedogenicity rating)는 0~1로 매우 낮다. |  |
+| `dimethicone-tewl-reduction-20-to-30-percent` | 확실 | 공식 | 다이메티콘은 경표피수분손실(TEWL)을 약 20-30% 감소시키며, 농도와 제형에 따라 변동폭이 크다. 구체적으로 3% 다이메티콘 함유 물티슈는 28일 후 TEWL을 16.44% 감소시켰다. |  |
+| `dimethicone-breathable-film-gas-exchange` | 확인실패 | 공식 | 다이메티콘이 형성하는 필름은 '호흡가능'하여 산소와 이산화탄소 같은 기체 교환이 가능하며, 피부 호흡을 방해한다는 '질식' 우려는 과학적 근거가 없다. |  |
+| `dimethicone-cir-sccs-safety-approval-no-absorption` | 확인실패 | 공식 | 미국 화장품 안전성 위원회(CIR)와 유럽 화장품과학위원회(SCCS)는 다이메티콘을 화장품에 안전하다고 결론지었으며, 다이메티콘은 무손상 피부에서 흡수되지 않는다는 것이 확인되었다. |  |
+| `dimethicone-partial-occlusive-complementary-use-hydration` | 확실 | 공식 | 다이메티콘의 부분적 밀폐 효과를 최대화하려면 습윤제(glycerin, hyaluronic acid)와 함께 사용하는 것이 좋으며, 이러한 조합은 수화도와 TEWL 감소 양쪽 모두에서 단독 사용보다 우수하다. |  |
+
+### 피나스테리드와 쏘팔메토: 5알파환원효소 억제의 층위 차이 <sub>2026-08-10 · 뷰티_finasteride-saw-palmetto</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `finasteride-5-alpha-reductase-type-ii-iii-inhibition` | 확실 | 공식 | 피나스테리드는 5α-리덕타제 II형과 III형을 강력하게 억제하여 전신 및 두피 DHT 생성을 약 64~68% 감소시킨다. |  |
+| `saw-palmetto-dht-reduction-32-percent-prostate-study` | 확실 | 공식 | 쏘팔메토는 전립선 DHT를 약 32% 감소시키는 것으로 보고되었으며, 이는 피나스테리드의 약 80% DHT 감소율보다 훨씬 낮다. |  |
+| `finasteride-prescription-required-oral-medication` | 확실 | 공식 | 피나스테리드는 전문의약품으로, 의사 처방전이 필수이며 경구(먹는 약) 형태로만 사용된다. |  |
+| `saw-palmetto-dietary-supplement-otc-availability` | 확실 | 공식 | 쏘팔메토는 식이 보충제로 분류되어 처방전 없이 구입 가능하며, 경구 추출물 또는 캡슐 형태로 판매된다. |  |
+| `finasteride-pregnancy-exposure-teratogenic-risk-absolute-contraindication` | 확실 | 공식 | 피나스테리드는 임산부의 노출이 절대 금기이며, 특히 태자 외부 생식기 기형을 유발할 수 있다. 임신 가능 여성이 피나스테리드 환자와 접촉하거나 약물을 분쇄한 먼지에 노출되면 안 된다. |  |
+| `finasteride-efficacy-response-rate-66-68-percent-stabilization` | 확실 | 공식 | 피나스테리드의 임상 효과는 모발 재성장 66~68%, 탈모 중단(안정화) 83% 정도로 보고된다. |  |
+| `saw-palmetto-clinical-efficacy-hair-loss-weak-evidence` | 논쟁 🔶 | 공식 | 쏘팔메토의 탈모 억제 효과는 피나스테리드에 비해 임상 증거가 약하며, 일부 소규모 연구에서만 효과를 보였다. |  |
+
 ### 가르시니아: 체중감량 효과의 근거 수준과 간 손상 위험 <sub>2026-08-10 · 성분연구소 가르시니아 기획글</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4680,6 +5338,34 @@ _(팩트 없음)_
 | `garcinia-cambogia-multisupplement-confounding-ingredient-mislabeling` | 확실 | 공식 | 보고된 가르시니아 관련 간 손상 사례 중 상당수가 다른 성분을 포함한 다중 성분 제품이었으며, 제품 표기 오류와 위변조(adulteration)도 보고되고 있어 단일 성분으로서의 위험도 평가를 어렵게 한다. | 글로벌 |
 | `garcinia-cambogia-korea-food-safety-caution-recommendation` | 확인실패 | 공식 | 한국 식약처는 가르시니아 성분에 대해 공식적인 금지는 아니나, 일부 제품에서 표시 기준 위반(질병 치료 효능 암시)으로 적발 사례가 있으며, 소비자에게 주의를 권고하고 있다. | KR |
 
+### 글루코만난: 팽창성 섬유의 포만감 메커니즘과 식도 폐색 위험 <sub>2026-08-10 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `glucomannan-konjac-soluble-fiber-definition` | 확실 | 공식 | 글루코만난은 곤약 식물(Amorphophallus konjac)의 뿌리에서 추출한 수용성 다당류이며, 물에 매우 잘 용해되고 약 50배 이상 팽창할 수 있는 특성을 가진다. |  |
+| `glucomannan-weight-loss-0-8-1-7kg-5-8weeks` | 확실 | 공식 | 글루코만난 보충 연구에서 5-8주 동안 위약 대비 0.8-1.7 kg의 체중감소가 보고되었으며, 일부 8주 시험에서는 5.5 파운드(약 2.5 kg)의 의미 있는 체중감소가 나타났다. |  |
+| `glucomannan-8week-average-weight-loss-1-34kg` | 확실 | 공식 | 6개 RCT 메타분석에서 8주 이내 글루코만난 섭취 시 평균 1.34 kg의 체중감소가 나타났다. |  |
+| `glucomannan-mechanism-satiety-not-thermogenesis` | 확실 | 공식 | 글루코만난의 체중감량 메커니즘은 주로 포만감 증가와 에너지 섭취 감소로 인한 것이며, 열생성(thermogenesis)은 관여하지 않는다. |  |
+| `glucomannan-dosage-1g-three-times-daily-water` | 확실 | 공식 | 글루코만난 임상시험에서 일반적인 용량은 500 mg 캡슐 2개씩(1 g) 하루 3회를 식전 1시간에 8 온스(약 240 ml) 물과 함께 복용했다. |  |
+| `glucomannan-esophageal-obstruction-risk-dry-powder` | 확실 | 공식 | 글루코만난 및 기타 수용성 고무(psyllium, guar gum)는 건조한 분말이나 물 부족으로 충분히 수화되지 않으면 식도에서 팽창하여 식도 폐색을 초래할 수 있다. 이는 의료 응급상황이다. |  |
+| `glucomannan-water-requirement-8oz-minimum-health-canada` | 확실 | 공식 | 캐나다 보건부(Health Canada)는 글루코만난 정제·캡슐·분말 형태 천연 건강 제품을 복용할 때 최소 8 온스(약 240 ml) 이상의 물이나 다른 액체와 함께 복용할 것을 권고했으며, 그렇지 않으면 질식·목구멍·식도·장의 폐색 위험이 있다. |  |
+| `glucomannan-high-risk-populations-swallowing-difficulty` | 확실 | 공식 | 고령자, 연하곤란이 있는 사람, 과거 위장관 수술로 장이 좁아진 사람, 구조적 이상이 있는 사람 등이 글루코만난으로 인한 폐색 위험이 더 높다. |  |
+| `glucomannan-pre-hydrated-form-shirataki-safer` | 확실 | 공식 | 미리 충분히 수화된 글루코만난 형태(예: 곤약 국수·시라타키)는 일반적으로 안전하며, 정상적으로 준비하고 씹어서 섭취할 때 식도 폐색 위험이 낮다. |  |
+
+### 녹차 카테킨-EGCG: 체중감량 효과의 근거와 고용량 간독성 위험 <sub>2026-08-10 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `egcg-definition-green-tea-catechin-polyphenol` | 확실 | 공식 | EGCG(에피갈로카테킨 갈레이트)는 녹차에 풍부한 폴리페놀 카테킨의 주요 성분이며, 녹차 총 폴리페놀의 30-50%를 차지한다. |  |
+| `egcg-weight-loss-modest-1kg-effect` | 확실 | 공식 | 메타분석에서 녹차 카테킨 보충은 약 1 kg 정도의 체중감량을 나타내며, 특히 복부 지방 감소 효과가 있다. |  |
+| `egcg-minimum-dose-300mg-daily-required` | 확실 | 공식 | 녹차 카테킨의 체중감량 효과는 일일 최소 300 mg 이상의 EGCG를 섭취해야 나타난다. |  |
+| `egcg-energy-expenditure-increase-4percent-with-caffeine` | 확실 | 공식 | 270 mg EGCG + 150 mg 카페인 함유 녹차 추출물을 섭취한 건강한 남성에서 에너지 소비가 카페인만 섭취했을 때보다 4% 증가했으며, 지방산화는 33%에서 41%로 증가했다. |  |
+| `egcg-with-exercise-minimal-additive-effect` | 확실 | 공식 | 운동 훈련과 함께 녹차 카테킨 보충을 병행했을 때, 운동만 했을 때보다 추가적인 체중감량 효과는 최소한(minimal)이다. |  |
+| `egcg-800mg-daily-hepatotoxicity-risk-efsa-warning` | 확실 | 공식 | 2018년 EFSA(유럽 식품안전청) 과학적 의견에서 일일 EGCG 섭취량 800 mg 이상은 간 손상 위험을 증가시킬 수 있다고 결론했으며, 4개월 이상 800 mg/day 이상 복용 시 일부 인구집단(보통 10% 미만)에서 혈청 트랜스아미나제(ALT, AST) 상승이 관찰되었다. |  |
+| `egcg-800mg-daily-label-warning-regulatory-requirement` | 확실 | 공식 | EU 규제 개정 결과 EGCG 함유 식품·보충제는 일일 최대 800 mg EGCG를 초과하면 안 되며, 라벨에 이를 초과하면 안 된다는 경고문구와 임산부·18세 미만 어린이·수유부에 대한 경고를 부착하도록 요구된다. |  |
+| `egcg-traditional-green-tea-infusion-safe` | 확실 | 공식 | EFSA는 전통 방식의 녹차 우림액(hot water infusion)에서 추출한 카테킨은 고용량 섭취 후에도 간 손상 지표가 나타나지 않으므로 일반적으로 안전하다고 결론했다. |  |
+| `egcg-korea-regulatory-status-unclear` | 확인실패 | 공식 | 한국 식약처의 기능성 원료 인정 목록에서 EGCG 또는 녹차 추출물의 명시적 기능성 인정 여부가 확인되지 않았다. |  |
+
 ### 탈모 샴푸 성분: 식약처 탈모 완화 기능성 고시 성분과 실제 임상 의미 <sub>2026-08-10 · 성분연구소 탈모 샴푸 기획글</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4693,6 +5379,15 @@ _(팩트 없음)_
 | `hairloss-shampoo-contact-time-limitation-efficacy` | 확실 | 공식 | 탈모 완화 샴푸는 사용 시 두피 접촉 시간이 1~3분으로 제한되어, 성분이 모낭까지 깊숙이 침투하기 어려운 구조적 한계가 있다. | 글로벌 |
 | `hairloss-shampoo-vs-topical-medication-efficacy-difference` | 확실 | 공식 | 탈모 샴푸(기능성 화장품)의 효과 입증 기준은 의약품(미녹시딜, 피나스테리드)보다 훨씬 낮으며, 'RCT로 확인된 임상적 모발 증가'가 아니라 '사용감 개선' 정도의 수준이다. | KR |
 
+### 만델산: 민감성 피부의 부드러운 각질 관리 <sub>2026-08-10 · 뷰티_mandelic-acid-gentle-exfoliant</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `mandelic-acid-molecular-weight-152-daltons` | 확실 | 공식 | 만델산은 분자량 152 달톤으로, 글리콜산(76 달톤)의 약 2배이며, 이로 인해 피부 침투 속도가 느리다. |  |
+| `mandelic-acid-slower-penetration-lower-irritation` | 논쟁 🔶 | 후기 | 만델산은 분자가 크기 때문에 글리콜산보다 피부 침투가 느리므로, 민감한 피부에서 자극 위험이 더 낮다. |  |
+| `mandelic-acid-humectant-moisture-retention` | 논쟁 🔶 | 후기 | 만델산은 각질제거 기능 외에도 습윤제(humectant) 특성을 가져 피부 수분을 끌어당기고 유지하도록 돕는다. |  |
+| `mandelic-acid-suitable-darker-skin-tones` | 논쟁 🔶 | 후기 | 만델산은 글리콜산에 비해 피부 자극이 적으므로, 검은 피부 톤에서 염증 후 색소침착(PIH) 위험이 더 낮은 것으로 여겨진다. |  |
+
 ### 미녹시딜: 국내 의약품 지위·농도·초기탈락·중단 후 재탈모 <sub>2026-08-10 · 성분연구소 미녹시딜 기획글</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4704,6 +5399,16 @@ _(팩트 없음)_
 | `minoxidil-enzyme-metabolism-individual-response-variation` | 확실 | 공식 | 미녹시딜은 프로드럭으로서 모낭의 sulfotransferase 효소에 의해 활성형(minoxidil sulfate)으로 대사되며, 개인의 효소 활성 수준에 따라 효과 차이가 발생한다. | 글로벌 |
 | `minoxidil-pregnancy-teratogenicity-risk-topical` | 확실 | 공식 | 미녹시딜은 외용제이지만 전신 흡수가 가능하며, 지용성 약물의 특성상 임신 중 태자 기형 위험이 우려되므로 임산부의 사용은 금기다. | 글로벌 |
 | `minoxidil-korea-otc-status-general-drug` | 확인실패 | 공식 | 한국에서 미녹시딜은 일반의약품으로 분류되어 약국에서 처방전 없이 구입 가능하다. | KR |
+
+### 모발 펩타이드(구리펩타이드): 두피 적용 근거와 임상 증거의 수준 <sub>2026-08-10 · 뷰티_peptide-hair-strengthening</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `copper-cofactor-lysyl-oxidase-collagen-crosslinking-mechanism` | 확실 | 공식 | 구리는 라이실옥시다제(lysyl oxidase)의 필수 보조인자이며, 이 효소는 콜라겐과 엘라스틴의 가교결합을 촉진하여 세포외 기질의 구조 안정성을 높인다. |  |
+| `ghk-cu-collagen-production-fibroblast-in-vitro-mechanism` | 확실 | 공식 | 구리펩타이드(GHK-Cu)는 인간 피부 섬유아세포에서 콜라겐과 엘라스틴 생성을 촉진하는 것으로 체외 연구에서 보고되었다. |  |
+| `ghk-cu-skin-density-thickness-laxity-fine-lines-photoaged-women-2002-leyden-trial` | 확실 | 공식 | 2002년 Leyden 외 연구진의 12주 무작위 대조 시험(n=71, 광노화 여성)에서 구리펩타이드 안면·눈가 크림은 피부 밀도, 두께, 탄력, 세선의 유의미한 개선을 나타냈다. |  |
+| `ghk-cu-hair-growth-mechanism-proposed-limited-human-rct-evidence` | 확실 | 공식 | 구리펩타이드의 모발 성장 기전(콜라겐·혈관신생·DHT 감소 등)은 기초 연구에서 제안되었으나, 대규모 무작위 대조 시험(RCT) 수준의 임상 증거는 미녹시딜·피나스테리드처럼 충분하지 않다. |  |
+| `ghk-cu-topical-penetration-bioavailability-intact-peptide-scalp-not-established` | 확인실패 | 공식 | 국소 적용된 구리펩타이드가 피부 배리어를 통과하여 완전한 상태로 두피 모낭에 도달하는지는 명확하게 입증되지 않았다. |  |
 
 ### 무기자차 vs 유기자차: 성분·메커니즘·흡수·안전성·규제 지위 비교, 옥시벤존 혼란 정리, 산호초 이슈 <sub>2026-08-10 · 뷰티_physical-vs-chemical-sunscreen</sub>
 
@@ -4719,6 +5424,33 @@ _(팩트 없음)_
 | `chemical-sunscreen-lighter-better-cosmetic-feel-no-whitcast` | 확실 | 공식 | 화학 자차는 무기자차보다 가볍고 백탁(white cast)이 적으며 화장 감이 더 좋다. |  |
 | `coral-reef-concern-oxybenzone-not-proven-causation` | 논쟁 🔶 | 공식 | '산호초 파괴'는 옥시벤존 규제의 정치적 명분으로 사용되었으나, 실제 인과관계는 입증되지 않았으며 오히려 산호초 스트레스의 주요 원인은 해수 온난화다. |  |
 
+### 단백질 트리트먼트와 손상모: 복구 기전과 한계(과잉 사용의 위험) <sub>2026-08-10 · 뷰티_protein-treatment-hair-damage</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `hair-damage-disulfide-bond-disruption-keratin-network-loss-mechanical-strength` | 확실 | 공식 | 모발 구조 손상의 분자적 근거는 사이스테인(cysteine) 잔기 사이의 이황화 결합(disulfide bond) 파괴이며, 이는 케라틴 네트워크의 공유 가교결합과 기계적 안정성을 잃게 한다. |  |
+| `small-molecular-weight-peptide-permeability-lipid-layer-penetration-hair-interior` | 확실 | 공식 | 저분자 단백질과 펩타이드는 높은 침투성을 가지고 있어, 모발 표면의 지질층을 통과하여 모발 내부에 도달할 수 있으며, 이를 통해 내부 화학 결합의 재배열(rearrangement)이 가능해진다. |  |
+| `transglutaminase-keratin-crosslinking-disulfide-bond-rearrangement-mechanism` | 확실 | 공식 | 트랜스글루타미나제(transglutaminase, TGase)는 세린(serine) 및 가수분해 양모 케라틴(hydrolysed wool keratin)의 가교결합을 촉진하며, 이는 모발 단백질의 아마이드 결합(amide bond)을 증가시키고 결합 상호작용력을 강화하여 모발 강도를 높인다. |  |
+| `protein-treatment-alkali-solubility-decrease-50-percent-damaged-hair` | 확실 | 공식 | 손상 모발 샘플에 단백질 트리트먼트를 적용하면 알카리 용해성이 50.53% 감소하였으며, 이는 단백질 교차결합이 모발 구조를 더욱 단단히 묶음을 의미한다. |  |
+| `protein-treatment-fracture-stress-significant-increase-tensile-strength-elasticity` | 확실 | 공식 | 프로테인 트리트먼트는 손상 모발의 파열 응력(fracture stress)을 현저히 증가시켰으며, 인장강도(tensile strength)와 탄성력(elasticity)이 복구되었다. |  |
+| `protein-treatment-efficacy-persist-5-washing-cycles` | 확실 | 공식 | 프로테인 트리트먼트의 복구 효과는 5회 세정 후에도 여전히 두드러졌으며, 이는 효소적 교차결합이 비교적 지속성 있음을 시사한다. |  |
+| `hair-crystallinity-increase-protein-treatment-structural-order-enhancement` | 확실 | 공식 | 프로테인 트리트먼트는 손상 모발의 결정성(crystallinity)을 증가시켰으며, 이는 모발 단백질의 구조 질서(structural order) 회복을 의미한다. |  |
+| `protein-overuse-excessive-crosslinking-risk-brittleness` | 확실 | 공식 | 프로테인 트리트먼트의 과다 사용 또는 과도한 농도는 이황화 결합·아마이드 결합의 과잉 교차결합을 초래할 수 있으며, 이는 모발 경화와 취약성 증가를 야기할 수 있다. |  |
+
+### 저항성 전분과 장내 미생물: 단쇄 지방산 생성과 대사 영향 <sub>2026-08-10 · 뷰티_resistant-starch-microbiota</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `resistant-starch-definition-small-intestine-colon-fermentation` | 확실 | 공식 | 저항성 전분(resistant starch)은 소장에서 소화를 피하고 대장으로 진입하여 박테리아 발효를 거치는 탄수화물이다. |  |
+| `resistant-starch-bacterial-families-prevotellaceae-ruminococcaceae-bacteroidaceae-fermentation` | 확실 | 공식 | 저항성 전분을 발효할 수 있는 박테리아 가족은 Prevotellaceae, Ruminococcaceae, Bacteroidaceae이며, 이들의 혐기 발효는 단쇄 지방산(SCFA)을 생성한다. |  |
+| `scfa-production-acetate-propionate-butyrate-metabolic-effects` | 확실 | 공식 | 저항성 전분의 발효로 생성되는 단쇄 지방산(SCFA)은 아세트산(acetate), 프로피온산(propionate), 부티르산(butyrate) 3종이며, 이들은 장 건강과 전신 대사에 깊은 생리적 영향을 미친다. |  |
+| `resistant-starch-potato-butyrate-increase-21-percent-30days` | 확실 | 공식 | 저항성 감자 전분 섭취 후 30일 후 대변 부티르산이 21.1% 증가했으며, 소화 불편감(소화불량, 복부팽만감)도 다른 군 대비 더 많이 개선되었다. |  |
+| `resistant-starch-blend-study-gi-symptoms-improvement-diarrhea-constipation-gas` | 확실 | 공식 | 저항성 전분 혼합제(potato, banana, apple fiber) 6주 연구에서 모든 군이 GI 증상 개선을 보였으며, PROMIS 설문 기반 설사, 변비, 가스·복부팽만감 점수가 모두 감소했다. |  |
+| `resistant-starch-resista-pd-trial-parkinson-disease-fecal-butyrate-increase` | 확실 | 공식 | 파킨슨병 환자를 대상으로 한 RESISTA-PD 무작위 대조 시험에서 저항성 전분군(PD + RS)은 8주 후 대변 부티르산 농도가 유의미하게 증가했다. |  |
+| `resistant-starch-fecal-calprotectin-decrease-resista-pd-inflammation-marker` | 확실 | 공식 | RESISTA-PD 시험에서 저항성 전분 섭취군의 대변 칼프로텍틴(fecal calprotectin) 수치가 유의미하게 감소했으며, 이는 장 염증 감소를 시사한다. |  |
+| `resistant-starch-resista-pd-parkinsons-non-motor-symptom-reduction-clinical-observation` | 확실 | 공식 | RESISTA-PD 시험에서 저항성 전분 섭취군은 임상적으로 관찰 가능한 비운동 증상 부하(non-motor symptom load) 감소를 보였다. |  |
+| `resistant-starch-individual-microbiota-composition-scfa-response-variable` | 확실 | 공식 | 저항성 전분의 SCFA 생성 반응은 개인의 기초 미생물 조성에 따라 크게 달라지며, 특정 박테리아(예: Prevotella의 높은 풍도)가 있는 사람은 더 많은 부티르산을 생성하는 경향이 있다. |  |
+
 ### 두피 케어·비듬: 케토코나졸·징크피리치온·피루옥톤올아민의 효능 비교 <sub>2026-08-10 · 성분연구소 비듬·두피 기획글</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4732,6 +5464,26 @@ _(팩트 없음)_
 | `pyroctone-olamine-efficacy-vs-ketoconazole-tolerability` | 확실 | 공식 | 피루옥톤올아민과 케토코나졸(2%)을 비교한 연구에서 둘 다 4주 후 비듬을 유의하게 감소시켰으나, 피루옥톤올아민이 더 우수한 모발 품질 개선과 두피 자극 감소를 보였다. | 글로벌 |
 | `antidandruff-shampoo-malassezia-efficacy-vs-androgenetic-alopecia-efficacy` | 확실 | 공식 | 비듬 제거용 샴푸(항진균 성분)와 탈모 완화용 샴푸(영양 성분)는 기전이 다르므로, 비듬이 없는 사람의 탈모 치료에 항진균 샴푸 효과는 제한적이다. | 글로벌 |
 
+### SPF 30과 50의 실제 차이: 차단율 곡선, 증분 이득, 도포량 영향 <sub>2026-08-10 · 뷰티_spf-pa-increment-real-benefit</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `spf-real-world-application-dose-gap-0-5-1-0-mg-cm2` | 확실 | 공식 | 일반인의 평균 도포량은 0.5~1.0mg/cm²이므로, 표시된 SPF의 실제 효과는 1/4에서 1/2 수준이다. 예: SPF50 제품은 실제 SPF12~25만 제공한다. |  |
+| `sunscreen-dose-reduction-half-spf-reduction-greater-than-half` | 확실 | 공식 | 도포량이 절반으로 줄어들면 SPF(자외선 차단지수)는 절반 이상으로 감소한다. SPF와 도포량의 관계는 선형이 아니라 비선형(nonlinear)이다. |  |
+| `spf-30-vs-50-uv-blockage-percentage-96-7-vs-98` | 확인실패 | 공식 | SPF 30은 UVB의 96.7%(3.3% 통과)을 차단하고, SPF 50은 98%(2% 통과)을 차단한다. 1% 차이로 보이지만, SPF 30 사용자는 SPF 50 사용자보다 50% 더 많은 UVB가 피부에 도달한다. |  |
+| `spf-logarithmic-curve-diminishing-returns-above-30` | 확실 | 공식 | SPF가 30을 넘어가면서 추가 보호의 증분이 로그적으로 감소한다. SPF 50, 70, 100으로 올라가도 차단율은 98%, 98.6%, 99% 정도에만 머물러 있어 마케팅 효과 대비 실제 이득이 크지 않다. |  |
+| `spf-real-benefit-dependent-on-adequate-reapplication` | 논쟁 🔶 | 공식 | SPF 30과 50의 수치적 차이는 2%에 불과하지만, 이것이 의미 있으려면 표준 도포량(2mg/cm²)을 유지하고 2시간마다 재도포하는 조건이 전제되어야 한다. 실제 사용에서 이 조건을 충족하는 사용자는 극히 드물다. |  |
+
+### 유황(설퍼): 여드름 관리에서의 기전, 농도, 자극도 <sub>2026-08-10 · 뷰티_sulfur-acne</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `sulfur-keratolytic-hydrogen-sulfide-mechanism` | 확실 | 공식 | 유황의 각질용해(keratolytic) 기전은 유황 입자가 각질층과 직접 상호작용하여 황화수소를 형성하는 화학 반응에 기반한다. |  |
+| `sulfur-particle-size-efficacy-correlation` | 확실 | 공식 | 유황 입자가 작을수록 각질층 침투도가 높아져 치료 효과가 증가한다. |  |
+| `sulfur-antifungal-antibacterial-properties` | 확실 | 공식 | 유황은 항균·항진균 활성을 보유하며, 벤조일퍼옥사이드나 살리실산과 조합하여 여드름 치료에 사용된다. |  |
+| `sulfur-systemic-absorption-safety-1-percent` | 확실 | 공식 | 국소 도포된 유황의 약 1%만 전신 흡수되므로 전신 부작용 위험은 낮다. |  |
+| `sulfur-korea-oci-status-cosmetic-ingredient` | 확인실패 | 공식 | 한국 식약처 기준으로 유황은 화장품 성분으로 허용되며, OCI(화장품 성분) 목록에 등재되어 있다. |  |
+
 ### 자외선차단 지수의 과학: SPF·PA 측정 방식, 표준 도포량(2mg/cm²) vs 실제 도포량, 식약처 기능성화장품 기준 <sub>2026-08-10 · 뷰티_sunscreen-spf-pa-science</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4741,6 +5493,81 @@ _(팩트 없음)_
 | `spf-real-world-application-dose-gap-0-5-1-0-mg-cm2` | 확실 | 공식 | 일반인의 평균 도포량은 0.5~1.0mg/cm²이므로, 표시된 SPF의 실제 효과는 1/4에서 1/2 수준이다. 예: SPF50 제품은 실제 SPF12~25만 제공한다. |  |
 | `sunscreen-waiting-time-15-minutes-before-uv-exposure` | 확실 | 공식 | 도포 후 최소 15분 이상의 대기 시간이 필요하며, 이는 제품이 피부에 안정적으로 정착하는 데 필요한 시간이다. |  |
 | `sunscreen-reapplication-frequency-2-hours-water-exposure` | 확실 | 공식 | 표준 선크림은 2시간마다 재도포가 권장되며, 수영이나 땀 노출 시에는 즉시 재도포가 필요하다. |  |
+
+### 내수성 선크림 표시: 40분 vs 80분 테스트 기준, 규제 정의, 현실성 <sub>2026-08-10 · 뷰티_sunscreen-water-resistant</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `water-resistant-40-minutes-test-protocol-fda` | 확실 | 공식 | FDA 기준 "water-resistant(40분)" 표시를 위해서는 2회의 20분 침수 사이클과 15분의 건조 시간이 필요하며, 이후 SPF 재측정을 통해 40분 물 노출 후에도 표시된 SPF의 50% 이상이 유지되는지 확인한다. |  |
+| `water-resistant-80-minutes-test-protocol-fda` | 확실 | 공식 | FDA 기준 "water-resistant(80분)" 표시를 위해서는 4회의 20분 침수와 15분 건조 사이클을 반복해야 하며, 80분 누적 물 노출 후에도 표시된 SPF의 50% 이상이 유지되어야 한다. |  |
+| `water-resistant-spf-retention-50-percent-threshold` | 확실 | 공식 | "water-resistant" 표시의 핵심은 물 노출 후에도 SPF의 50% 이상이 유지되어야 한다는 것이다. 따라서 SPF 50 제품은 물 노출 후 SPF 25 이상만 유지되면 표시 조건을 만족한다. |  |
+| `water-resistant-definition-not-waterproof-complete-protection` | 확실 | 공식 | "water-resistant"는 "waterproof(방수)"가 아니며, 물 노출 시 선크림의 일부가 떨어지는 것을 완전히 방지하지 못한다. 표시는 단지 50% 이상의 효과가 유지된다는 뜻일 뿐이다. |  |
+| `iso-water-resistance-testing-europe-percentage-retention` | 확실 | 공식 | 유럽의 ISO 기반 표준도 미국 FDA와 유사한 침수 사이클과 퍼센트 유지 기준을 사용하지만, 일부 국가에서는 추가 요구사항(예: 모래 노출 테스트)이 포함될 수 있다. |  |
+
+### 티트리 오일: 여드름 근거와 접촉피부염 주의 <sub>2026-08-10 · 뷰티_tea-tree-oil-acne</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `tea-tree-oil-terpinen-4-ol-antimicrobial` | 확실 | 공식 | 티트리 오일의 주요 활성 성분은 terpinen-4-ol이며, 광범위 항균·항바이러스·항진균 활성을 가진다. |  |
+| `tea-tree-oil-acne-vulgaris-mild-moderate-efficacy` | 확실 | 공식 | 티트리 오일 겔을 12주간 사용한 경증·중등도 여드름 환자에서 통계적으로 유의한 개선이 관찰되었으며, 제품은 잘 내약됐다. |  |
+| `tea-tree-oil-contact-dermatitis-patch-test-prevalence` | 확실 | 공식 | 티트리 오일은 접촉 감작 반응을 유발할 수 있으며, 패치 테스트 대상자 중 약 1.4%에서 양성 반응이 보고되었다. |  |
+| `tea-tree-oil-concentration-lower-safer` | 논쟁 🔶 | 공식 | 티트리 오일의 농도가 높을수록 접촉 피부염 위험이 증가하며, 낮은 농도에서 더 안전하다. |  |
+| `tea-tree-oil-anti-inflammatory-wound-healing` | 확실 | 공식 | 티트리 오일은 항염증 효과를 가지며 상처 치유를 가속화한다. |  |
+
+### 요소와 젖산의 이중 작용: 농도별 각질 연화 vs 보습, 메커니즘 전환점 <sub>2026-08-10 · 뷰티_urea-lactic-acid-hydration</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `urea-natural-moisturizing-factor-nmf-component` | 확실 | 공식 | 요소(urea)는 천연 보습 인자(NMF, Natural Moisturizing Factor)의 일부이며, 정상 표피에 존재하는 수화 성분이다. 외부 도포 시 피부의 수화도를 높이고 보습 기능을 강화할 수 있다. |  |
+| `urea-concentration-below-10-percent-humectant-effect` | 확실 | 공식 | 요소 10% 미만의 저농도에서는 주로 습윤제(humectant) 기능을 하며, 주변 환경에서 수분을 흡수하여 각질층의 수화도를 증가시킨다. |  |
+| `urea-10-percent-and-above-keratolytic-transition-point` | 확실 | 공식 | 요소 농도가 10% 이상이 되면, 각질세포 사이의 수소 결합을 파괴하여 각질을 연화시키는 케라톨리틱(keratolytic) 작용으로 전환된다. 이것이 요소 기능의 중요한 '전환점'이다. |  |
+| `urea-20-30-percent-keratin-breakdown-itch-relief` | 확실 | 공식 | 요소 20-30% 농도에서는 각질(keratin) 구조를 더욱 효과적으로 분해하여 각질층 두께를 감소시키고, 가려움(pruritus)을 완화시킨다. 이 범위는 각질화증(keratosis pilaris) 및 건성 질환 치료에 사용된다. |  |
+| `lactic-acid-alpha-hydroxy-acid-exfoliation-hydration-dual` | 확실 | 공식 | 젖산(lactic acid)은 알파-하이드록시산(AHA)으로 분류되며, 각질세포 사이의 데스모솜 결합을 파괴하여 각질을 벗겨내는 동시에 습윤제 특성도 가진다. 따라서 요소처럼 '이중 기능' 성분이다. |  |
+| `urea-lactic-acid-complementary-mechanism-combination-use` | 논쟁 🔶 | 공식 | 요소와 젖산은 기전이 보완적이다. 요소는 수소 결합 파괴, 젖산은 데스모솜 효소 활성화라는 서로 다른 방식으로 각질을 제거하므로, 두 성분을 함께 사용하면 단독 사용보다 더 효과적인 각질 제거와 수화를 달성할 수 있다. |  |
+
+### UVA와 UVB 자외선의 파장 차이, 피부 손상 메커니즘, PA-SPF 대응 관계 <sub>2026-08-10 · 뷰티_uva-uvb-difference</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `uva-uvb-wavelength-ranges-penetration` | 확실 | 공식 | UVA는 340-400nm(UVA1)과 320-340nm(UVA2) 두 범위로 나뉘며, UVB는 290-320nm이다. UVA1은 가장 깊이 침투하여 광노화를 주로 유발하고, UVB는 주로 홍반(erythema)과 일광화상을 일으킨다. |  |
+| `spf-rating-uva-pa-rating-distinction` | 확실 | 공식 | SPF(Sun Protection Factor)는 UVB 차단을 측정하는 지수이며, PA는 UVA 차단을 측정하는 별도의 등급 시스템이다. SPF와 PA는 서로 다른 자외선을 평가하므로 독립적으로 비교해야 한다. |  |
+| `fda-broad-spectrum-designation-uva-coverage-370nm` | 확실 | 공식 | FDA의 "broad-spectrum" 표시는 UV 흡수의 90%가 370nm 이상 파장에서 나타난다는 뜻이며, 이는 UVA2(320-340nm)를 일부 커버하지만 UVA1(340-400nm, 특히 deepest dermal damage)의 완전한 커버를 보장하지 않는다. |  |
+| `pa-rating-ppd-uva-blockage-percentage` | 확실 | 공식 | PA 등급은 PPD(Persistent Pigment Darkening) 수치로 환산되며, PA+(2-4 PPD)는 UVA 50-75% 차단, PA++(4-8 PPD)는 75-88%, PA+++(8-16 PPD)는 88-94%, PA++++(16+ PPD)는 94% 이상을 차단한다. |  |
+| `iso-24444-24442-measurement-standard` | 확실 | 공식 | ISO 24444는 in vivo SPF(UVB) 측정 표준이며, ISO 24442는 in vivo UVAPF(UVA) 측정 표준이다. 유럽과 많은 국가에서 이 표준을 채택하고 있다. |  |
+| `uva-penetration-photoaging-collagen-elastin` | 확실 | 공식 | UVA는 표피층을 투과해 진피층까지 깊이 침투하며, 진피의 콜라겐과 엘라스틴을 직접 손상시켜 주름, 처짐, 탄력 손실 등 광노화를 유발한다. |  |
+
+### 위치하젤: 수렴 토너 성분의 실제 작용과 알코올 이슈 <sub>2026-08-10 · 뷰티_witch-hazel-toner</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `witch-hazel-tannin-content-astringent-mechanism` | 확실 | 공식 | 위치하젤 잎과 껍질은 타닌을 최대 10% 함유하며, 타닌의 단백질 결합 작용으로 피부 조직을 일시적으로 수렴시킨다. |  |
+| `witch-hazel-pore-appearance-temporary-effect` | 논쟁 🔶 | 공식 | 위치하젤의 수렴 효과는 모공 크기를 물리적으로 축소하지 않으며, 피부 수분 손실로 인한 일시적 외형상 축소일 뿐이다. |  |
+| `witch-hazel-alcohol-content-14-15-percent-irritant` | 확실 | 공식 | 상업용 위치하젤 토너는 주로 알코올로 추출·보존되며, 14~15% 알코올을 함유한다. |  |
+| `witch-hazel-no-acne-benefit-proven` | 확인실패 🔶 | 후기 | 피부과 평가에 따르면 위치하젤의 수렴 작용은 여드름 유발 미생물 제어에 효과적이지 않은 것으로 알려져 있다. |  |
+| `witch-hazel-alcohol-free-formulation-tannin-retention` | 논쟁 🔶 | 후기 | 무알코올 위치하젤 제품은 알코올의 자극을 제거하면서도 타닌의 항염증·수렴 효과를 유지한다. |  |
+
+### 산화아연과 이산화티탄의 무기 자차 비교: 파장 커버리지, 백탁, 효과 차이 <sub>2026-08-10 · 뷰티_zinc-oxide-vs-titanium</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `mineral-sunscreen-zinc-oxide-broad-spectrum-titanium-uva-limited` | 확실 | 공식 | 산화아연은 광범위 스펙트럼(UVA·UVB) 차단을 제공하지만, 이산화티탄은 UVB 차단에 더 효과적이고 UVA 차단은 제한적이다. |  |
+| `zinc-oxide-uva-coverage-340-400nm` | 확실 | 공식 | 산화아연은 UVA1(340-400nm) 범위까지 효과적으로 차단하여 깊은 피부 침투 손상을 방지한다. |  |
+| `titanium-dioxide-uvb-preference-uva-weak` | 확실 | 공식 | 이산화티탄은 290-320nm(UVB) 범위에서 강한 차단 능력을 보이지만, 340nm 이상(UVA1) 파장에서는 차단력이 현저히 떨어진다. |  |
+| `zinc-oxide-titanium-dioxide-white-cast-cosmetic-feel` | 확실 | 공식 | 산화아연과 이산화티탄 모두 입자 크기가 크면 백탁(white cast)을 일으키며, 일반적으로 이산화티탄이 산화아연보다 백탁이 적고 화장감이 더 좋다고 보고된다. |  |
+| `iso-24443-mineral-sunscreen-in-vitro-uva-testing` | 확실 | 공식 | ISO 24443은 무기 자차의 UVA 보호를 in vitro 방법으로 측정하는 표준이며, 거친 PMMA 판에 제품을 펴 바르고 UV 투과도를 분광측정법으로 평가한다. |  |
+
+### 아연·셀레늄과 모발: 결핍일 때와 아닐 때의 층위 구분 <sub>2026-08-10 · 뷰티_zinc-selenium-hair-growth</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `zinc-hair-synthesis-protein-synthesis-requirement` | 확실 | 공식 | 아연은 세포 분열과 단백질 합성에 필수이며, 모발 단백질(케라틴) 생성과 모낭 유지에 직결된다. |  |
+| `zinc-deficiency-telogen-effluvium-hair-shedding` | 확실 | 공식 | 아연 결핍은 휴지기 탈모(telogen effluvium)와 미세한 모발 약화를 초래하며, 혈청 아연 수치 정상화로 개선 가능하다. |  |
+| `zinc-excess-copper-absorption-block-shedding-risk` | 확실 | 공식 | 과다한 아연 섭취는 구리 흡수를 방해하여 오히려 탈모를 유발할 수 있다. |  |
+| `selenium-antioxidant-thyroid-hormone-metabolism` | 확실 | 공식 | 셀레늄은 항산화제로 작용하며 모낭과 갑상선 호르몬 대사를 지탱한다. 갑상선 호르몬은 모발 성장 주기를 조절한다. |  |
+| `selenium-deficiency-hair-loss-selenoprotein-impairment` | 확실 | 공식 | 셀레늄 결핍은 셀레노단백질 합성을 저해하여 모낭 기능 장애와 탈모를 초래한다. |  |
+| `selenium-toxicity-threshold-400-micrograms-daily` | 확실 | 공식 | 일일 400μg 이상의 셀레늄 과잉 섭취는 셀레늄 독성(selenosis)을 유발하며, 탈모를 포함한 여러 부작용이 나타난다. |  |
+| `zinc-alopecia-areata-supplementation-study-results` | 논쟁 🔶 | 공식 | 원형탈모(alopecia areata) 환자를 대상으로 한 일부 연구에서 아연 보충제는 모발 재생을 보였다. |  |
+| `mineral-supplementation-benefit-only-in-deficiency` | 확실 | 공식 | 아연·셀레늄의 모발 성장 보충 효과는 사전 결핍이 입증된 경우에만 기대할 수 있으며, 정상 수치에서의 추가 보충은 효과 증거가 부족하다. |  |
 
 ## 소니
 
@@ -5284,6 +6111,58 @@ _(팩트 없음)_
 | `chronic-fatigue-hpa-axis-stress-relationship-research` | 논쟁 🔶 | 공식 | 만성 피로와 스트레스 호르몬 축(HPA axis) 사이에 관계가 있다는 연구는 있으나, 이것이 '부신 피로'라는 새로운 질병 진단을 정당화하지는 않는다. HPA 기능 이상은 이미 기존 질환(우울증, 불안장애, PTSD 등)에 포함되어 연구되고 있다. |  |
 | `treatment-adrenal-fatigue-unapproved-expensive-insurance` | 확실 | 공식 | 부신피로증후군에 대해 제시되는 치료(특정 보충제, 생활습관 프로그램, 아드레날린 지원 제품)는 FDA나 식약처에서 승인하지 않았으며, 대부분 비용이 높고 보험이 적용되지 않는다. |  |
 
+### 항생제 복용 중 유산균: 항생제 관련 설사 근거·복용 간격·실제 효과 <sub>2026-08-10 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `antibiotic-associated-diarrhea-aad-incidence-5-30percent` | 확실 | 공식 | 항생제 관련 설사(AAD, Antibiotic-Associated Diarrhea)는 항생제 치료를 받는 환자의 5~30%에서 발생하며, 특히 aminopenicillins, cephalosporins, clindamycin 계열에서 높은 빈도를 보인다. 국내 보고에서는 항생제 종류와 환자 상태에 따라 3.2~29% 범위의 발생률이 보고되었다. |  |
+| `clostridioides-difficile-cdi-aad-only-15-25percent` | 확실 | 공식 | Clostridioides difficile 감염(CDI)은 항생제 관련 설사의 일부이며, 전체 AAD 중 15~25%만을 차지한다. CDI 발생률은 지난 10년간 2~4배 증가했으며, 캐나다 보고에 따르면 13년 동안 CDI 발생률이 5배, 중증 CDI가 2.5배, 사망률이 3배 증가했다. |  |
+| `probiotic-aad-prevention-meta-analysis-52-percent-risk-reduction` | 확실 | 공식 | 프로바이오틱스의 항생제 관련 설사 예방 효과에 대한 메타분석 결과, 프로바이오틱스는 항생제 관련 설사 위험을 약 52% 감소시켰다. 그 외 여행자 설사 8% 감소, 소아 급성 설사 57% 감소, 성인 설사 26% 감소가 보고되었다. |  |
+| `probiotic-strain-specificity-lg-only-korea-approved` | 확실 | 공식 | 프로바이오틱스의 항생제 관련 설사 예방 효과는 특정 균주에만 제한적으로 입증되어 있다. 예를 들어, 한국 식약처 건강기능식품 고시형 원료 중 Lactobacillus rhamnosus에서 항생제 사용 설사 효능이 입증된 것은 GG(L.GG) 균주인데, 이는 식약처 공식 승인 범위를 벗어난다. |  |
+
+### 사과식초: 혈당·체중 관리 임상 근거, 치아 부식 위험, 위장 자극, 안전성 한계 <sub>2026-08-10 · 사과식초, 혈당과 체중 관리에서의 자리</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `apple-cider-vinegar-blood-glucose-modest-reduction-gastric-emptying` | 확실 | 공식 | 사과식초(ACV)의 혈당 감소 효과는 주로 아세트산(acetic acid)이 위의 음식 배출을 지연시켜 식후 혈당 급상승을 완화하는 메커니즘으로 작동하며, RCT에서 공복 혈당이 유의미하게 감소했고(p = 0.01) 8주 후 헤모글로빈 A1C에 유의미한 차이를 보였다. |  |
+| `apple-cider-vinegar-weight-loss-meta-analysis-789-participants` | 확실 | 공식 | 사과식초의 체중 감소 효과에 대한 메타분석(10개 RCT, 789명 참가자)에서 매일 섭취 시 체중·BMI·허리둘레가 유의미하게 감소했으나, 절대 감소량은 크지 않았다. |  |
+| `apple-cider-vinegar-weight-loss-bmj-retraction-quality-concern` | 확실 | 공식 | BMJ에 발표된 12주 체중 감소 RCT는 양호한 결과를 보였으나, 이후 BMJ Group이 연구의 질적 우려를 이유로 논문을 철회했다. |  |
+| `apple-cider-vinegar-dental-erosion-palatal-surface-tooth-wear` | 확실 | 공식 | 사과식초를 매일 섭취하는 것은 치아 에나멜 부식(erosive tooth wear)을 유발할 수 있으며, 특히 위쪽 앞니의 입천장 쪽 표면(palatal surfaces)이 먼저 손상되어 깎인 움푹한 자국(cupped lesions)과 표면질감 소실이 특징적으로 나타난다. |  |
+| `apple-cider-vinegar-gastrointestinal-irritation-esophageal-damage` | 확실 | 공식 | 사과식초의 산성(pH 약 2.4~3.3)으로 인해 위장 자극, 식도 자극, 심한 경우 식도 손상이 발생할 수 있으며, 특히 소량을 매일 마시는 경우보다는 대량 섭취 시 위험이 높다. |  |
+| `apple-cider-vinegar-acid-composition-pH-low-enamel-solubility` | 확실 | 공식 | 사과식초의 주요 성분인 아세트산은 pH를 낮춰 치아 에나멜의 미네랄 용해도를 증가시키며, 이것이 치아 부식의 직접적 원인이다. |  |
+| `apple-cider-vinegar-medication-interaction-potassium-sparing-diuretic` | 확실 | 공식 | 사과식초는 칼륨 보존 이뇨제(spironolactone 등)를 복용하는 사람과 함께 섭취하면 혈중 칼륨을 과도하게 높일 위험이 있으며, 기타 약물(인슐린·당뇨병 약)과의 상호작용도 가능하다. |  |
+| `apple-cider-vinegar-no-strong-evidence-large-rct-multiple-risks` | 확실 | 공식 | 사과식초는 혈당·체중 감소에 미약한 단기 효과가 있을 수 있으나, 대규모 고품질 RCT가 부족하고 치아 부식·위장 손상·약물 상호작용 등 여러 위험이 있으므로, 건강 증진 목적의 일상 섭취는 권장되지 않는다. |  |
+
+### 아르기닌·시트룰린: 약동학적 차이, NO 생성 경로, 운동수행력 근거 <sub>2026-08-10 · arginine-citrulline — 아르기닌·시트룰린, 어떤 상황에 도움이 될까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `citrulline-bioavailability-superior-to-arginine` | 확실 | 공식 | 경구 L-시트룰린은 L-아르기닌보다 혈중 L-아르기닌 농도를 더 효과적으로 높인다. L-아르기닌은 소장 벽과 간에서 아르기나제에 의해 광범위하게 대사되지만, L-시트룰린은 간 대사를 거치지 않고 신장으로 수송되어 새로운 L-아르기닌 합성(de novo synthesis)에 참여한다. |  |
+| `citrulline-malate-form-additional-benefits` | 논쟁 🔶 | 공식 | 시트룰린-말레이트(citrulline malate) 형태는 순수 L-시트룰린에 말산(malate)을 결합한 것으로, 추가 효과에 대한 주장이 있으나, 순수 L-시트룰린과의 직접 비교 연구는 제한적이다. |  |
+| `nitric-oxide-pathway-arginine-citrulline-endothelial` | 확실 | 공식 | 아르기닌과 시트룰린은 모두 일산화질소(NO) 합성의 기질(substrate)로 작용한다. NO는 혈관 내피에서 산화질소 합성효소(eNOS)에 의해 생성되며, 혈관 확장, 혈류 개선, 혈압 조절을 매개한다. |  |
+| `citrulline-endothelial-function-improvement-rct-evidence` | 확실 | 공식 | L-시트룰린 보충은 안정시 대혈관(macrovascular) 내피 기능을 개선하고, 특히 고혈압 폐경기 여성에서 다리 혈류 반응을 증가시킨다는 2024년 연구가 있다. |  |
+| `arginine-exercise-performance-meta-analysis-mixed` | 논쟁 🔶 | 공식 | 아르기닌 보충에 대한 메타분석(15개 RCT 포함)은 유산소 운동 성능(효과크기 0.84)과 무산소 운동 성능(효과크기 0.24)의 개선을 보였으나, 연구 간 이질성이 크고 운동 양식(유산소 vs 무산소)에 따라 결과가 다르다. |  |
+| `acute-arginine-citrulline-nox-exercise-response` | 확실 | 공식 | 2025년 연구에 따르면, 아르기닌·시트룰린 혼합 음료의 급성 투여는 고강도 반복 운동 중 총 산화질소(NOx) 증가, 심폐 지표, 인지된 운동 강도 개선을 나타냈다(대학 축구 선수 대상, 무작위 이중맹검 병렬 설계). |  |
+| `citrulline-muscle-pgc1alpha-fatigue-resistance` | 확실 | 공식 | L-시트룰린 보충은 골격근 PGC-1α 발현을 상향조절하며, 이는 근력 개선과 근육 무게 증가와 관련이 있다. 한 연구에서는 시트룰린-말레이트가 피로까지의 시간(time to exhaustion)을 개선했다고 보고했다. |  |
+| `recommended-dosage-citrulline-arginine-performance` | 확실 | 공식 | 운동 성능 개선을 목표로 한 아르기닌 보충 프로토콜은 운동 60~90분 전에 체중 kg당 0.15g을 투여하는 것이 권장되며, 시트룰린은 일반적으로 3~6g/일 범위에서 임상 연구가 진행되었다. |  |
+| `blood-pressure-gastrointestinal-tolerability-concern` | 확실 | 공식 | 고용량 아르기닌(특히 6g 이상)은 소화기 부작용(복통, 설사)을 유발할 수 있고, 혈압 저하 경향이 있을 수 있으므로 저혈압 환자는 주의가 필요하다. |  |
+
+### BCAA vs EAA: 단백질 충분 섭취 시 추가 이득 논쟁, 근단백질 합성, 운동 시 역할 <sub>2026-08-10 · bcaa-eaa — BCAA와 EAA, 어떤 경우에 어느 쪽이 맞을까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `bcaa-three-amino-acids-leucine-isoleucine-valine` | 확실 | 공식 | BCAA(분지쇄아미노산)는 류신, 이소류신, 발린 3가지 필수 아미노산의 조합이며, 9가지 필수 아미노산(EAA)의 부분 집합이다. |  |
+| `bcaa-incomplete-profile-cannot-support-muscle-building-alone` | 확실 | 공식 | BCAA는 9가지 필수 아미노산 중 3가지만 제공하므로, 충분한 전체 단백질 섭취 없이는 근육 합성을 충분히 지원할 수 없다. 특히 메티오닌, 라이신 등 다른 필수 아미노산이 없으면 제한 아미노산(limiting amino acid)이 되어 근 단백질 합성을 억제한다. |  |
+| `eaa-stimulate-mtorc1-muscle-protein-synthesis-better-than-bcaa` | 확실 | 공식 | 필수 아미노산 전체(EAA)는 무작위 대조 시험에서 BCAA만보다 근 단백질 합성(muscle protein synthesis, MPS)을 더 효과적으로 자극하며, 특히 mTORC1 신호 활성화가 더 강하다. |  |
+| `leucine-mtor-activation-primary-driver` | 확실 | 공식 | 9가지 필수 아미노산 중 류신이 가장 강력한 mTORC1 신호 활성화제이며, 류신 단독이 mTOR 신호를 시작할 수 있다. 하지만 다른 필수 아미노산(메티오닌, 라이신 등)이 있어야 전체 근단백질 합성 응답이 완성된다. |  |
+| `eaa-ingestion-leucine-retention-60-percent` | 확실 | 공식 | 집 기반 저항운동 후 EAA 섭취 시, 투여된 류신의 약 60%가 근 단백질 합성을 위해 보유되고, EAA가 BCAA만보다 근 단백질 분해를 더 효과적으로 억제한다. |  |
+| `bcaa-no-evidence-inhibit-protein-breakdown` | 확실 | 공식 | BCAA 섭취만으로는 운동 후 근 단백질 분해를 억제한다는 증거가 인체에서 입증되지 않았다. |  |
+| `adequate-protein-intake-bcaa-limited-additional-benefit` | 확실 | 공식 | 단백질 섭취가 충분한 사람(하루 체중 kg당 1.6~2.0g 이상)에게 BCAA 추가는 근 단백질 합성이나 근력 증가에 추가 이득을 주지 않는다. BCAA의 효과는 저단백 식이(1.0g/kg 이하)에서만 제한적 이득을 보인다. |  |
+| `eaa-effective-fasted-low-protein-diet-advantage` | 확실 | 공식 | EAA는 공복 상태나 저단백 식이에서 BCAA보다 더 효과적이다. 왜냐하면 다른 필수 아미노산도 함께 제공되기 때문이다. |  |
+| `bcaa-cost-effective-high-protein-diet-sufficient-protein` | 확실 | 공식 | 단백질 섭취가 충분한 운동선수에게는 BCAA가 비용 대비 효과 측면에서 EAA보다 경제적이다. 왜냐하면 다른 필수 아미노산은 이미 식이에서 충분하기 때문이다. |  |
+| `bcaa-vs-eaa-practical-recommendation-adequate-protein-context` | 확실 | 공식 | 실무 권장사항: (1) 단백질 섭취 충분(1.6~2.0g/kg 이상) → BCAA 충분, 비용 절감; (2) 공복 운동 또는 저단백 식이 → EAA 더 효과적; (3) 최고 효과 원함 + 예산 충분 → EAA 선택. |  |
+| `whole-protein-vs-bcaa-eaa-superior-efficacy` | 확실 | 공식 | 전체 단백질(whey protein 등)은 BCAA/EAA 보충제보다 비용 대비 단백질 전체 구성을 더 완전하게 제공하므로, 근 합성 목표로는 전체 단백질 보충이 더 효율적이다. |  |
+
 ### 베타글루칸의 면역 활성화: 효모/버섯 유래 차이·면역 과활성 우려 <sub>2026-08-04 · 베타글루칸, 면역력을 올린다는 근거</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -5292,6 +6171,42 @@ _(팩트 없음)_
 | `beta-glucan-immune-mechanism-trained-immunity` | 확실 | 공식 | 베타글루칸은 선천 면역계의 훈련 면역(trained immunity)을 유도하는 것으로 이해된다. 비특이적 면역 활성화가 아니라 특정 면역 경로(예: TLR/NOD 수용체)를 통해 NK 세포와 T 세포 활성화를 증가시키며, 이 과정에서 사이토카인(예: TNF-α, IL-6)이 증가한다. |  |
 | `beta-glucan-autoimmune-risk-theoretical-vs-actual` | 확인실패 | 공식 | 베타글루칸이 자가면역질환을 악화시킬 수 있다는 이론적 우려가 있으나, 실제 임상 증거에서는 자가면역질환 환자에서 뚜렷한 질환 악화가 보고되지 않았다. 다만 특정 유전적 취약성(HLA 유형 등)이 있는 개인에서는 질환이 악화될 가능성이 있으므로 주의가 필요하다. |  |
 | `beta-glucan-safety-profile-fda-efsa-approval` | 확실 | 공식 | 베타글루칸은 FDA와 EFSA(유럽식품안전청)에 의해 생물학적으로 안전한 물질로 분류되었으며, 광범위한 전임상 및 임상 연구에서 안전한 프로필을 보였다. 현재까지 알려진 부작용은 극히 드문 알레르기 반응(심한 경우 저혈압, IV 투여 시)이다. |  |
+
+### 혈압 관리 영양제와 약물 치료의 역할 분담, 국내 기능성 원료 <sub>2026-08-10 · 혈압 관리 영양제, 약을 대신할 수 있을까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `korea-blood-pressure-function-coq10-only-approved-form` | 확실 | 공식 | 한국 식약처에서 '높은 혈압 감소'에 도움을 줄 수 있음으로 기능성이 승인된 고시형 원료는 코엔자임Q10이 유일하다. |  |
+| `korea-individual-approval-blood-pressure-ingredients` | 확실 | 공식 | 혈압 관리를 돕는 개별인정형 원료로는 폴리코사놀(폴리코사놀-사탕수수왁스알코올), 나토균배양분말, 정어리펩타이드, 올리브잎주정추출물 등이 있다. |  |
+| `coq10-blood-pressure-reduction-clinical-meta-analysis` | 확실 | 공식 | 코엔자임Q10 100~200mg/day 투여 시 무작위대조시험 메타분석(약 1,800명)에서 수축기 혈압 평균 4.77mmHg, 이완기 혈압 평균 1.67mmHg 감소가 보고되었으며, 특히 이상지질혈증이나 제2형 당뇨병 환자에서는 더 큰 감소 효과를 보였다. |  |
+| `blood-pressure-supplement-adjunctive-role-not-replacement` | 확실 | 공식 | 혈압 관리 영양제는 의학적 이론상 항산화·혈관내피 기능 개선 등의 기전을 가지고 있으나, 임상 효과는 의약품 혈압약보다 훨씬 약하므로, 기존 혈압약 대신 쓸 수 없으며 보조 역할에 한정된다. |  |
+| `l-arginine-l-citrulline-blood-pressure-inconsistent-evidence` | 논쟁 🔶 | 공식 | L-아르기닌과 L-시트룰린의 혈압 강하 효과는 연구마다 엇갈린다. L-시트룰린 15건 메타분석에서는 수축기 -7.54mmHg, 이완기 -3.77mmHg 감소를 보였으나, 다른 분석에서는 유의한 효과가 없었다. L-아르기닌도 마찬가지로 효과 크기가 일관되지 않다. |  |
+| `blood-pressure-lifestyle-modification-foundation` | 확실 | 공식 | 혈압 관리의 기초는 DASH 식단(채소·과일·저지방유제품 증가·염분 감소)·규칙 운동·체중 감량·스트레스 관리이며, 이들 생활 요법만으로도 수축기 혈압 8~14mmHg 감소가 가능하다. |  |
+
+### 만성피로의 감별진단(빈혈·갑상선·수면무호흡·영양 결핍), 보충제 선택 기준 <sub>2026-08-10 · 만성피로에 영양제를 쌓기 전에 볼 것</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `chronic-fatigue-differential-diagnosis-priority-anemia-thyroid-sleep` | 확실 | 공식 | 만성피로(6개월 이상 지속)의 감별진단에서 1순위로 배제해야 할 기질적 질환은 철결핍성 빈혈, 갑상선 기능 저하증, 수면무호흡증이며, 이들이 해결되지 않으면 영양제 효과가 제한적이다. |  |
+| `chronic-fatigue-msd-manual-8-exclusion-targets` | 확실 | 공식 | MSD 매뉴얼의 피로 진단 기준에서 제시한 배제 대상 질환은 빈혈, 갑상선질환, 수면무호흡증, 우울증, 전해질 불균형, 신장질환, 류마티스 관절염, 섬유근육통이며, 이들을 완전히 제외한 후 만성피로증후군을 진단한다. |  |
+| `depression-fatigue-neurotransmitter-deficit` | 확실 | 공식 | 우울증은 신경전달물질(세로토닌, 노르에피네프린) 부족으로 지속적 피로, 무기력, 의욕 저하를 일으키며, 만성피로 환자의 주요 감별 대상 질환이다. |  |
+| `rheumatoid-arthritis-inflammatory-fatigue-cytokine` | 확실 | 공식 | 류마티스 관절염은 TNF-α, IL-6 등 염증성 사이토카인 증가로 인한 전신 피로를 유발하며, 만성피로와 혼동될 수 있는 주요 염증성 질환이다. |  |
+| `iron-deficiency-anemia-fatigue-primary-cause` | 확인실패 | 공식 | 철결핍성 빈혈은 만성피로의 가장 흔한 기질적 원인이며, 적혈구의 산소 운반 용량 감소로 조직의 에너지 생성이 저해된다. |  |
+| `hypothyroidism-fatigue-metabolism-depletion` | 확인실패 | 공식 | 갑상선 기능 저하증은 신진대사 둔화로 지속적 피로, 무기력, 인지 저하를 유발하며, TSH·Free T4 검사로 진단된다. |  |
+| `sleep-apnea-nocturnal-hypoxemia-fragmented-sleep` | 확인실패 | 공식 | 수면무호흡증은 야간 반복적 호흡 중단으로 산소 포화도 저하 및 수면 분절을 초래하여 회복적 수면 거부되고 낮 시간 피로가 지속된다. |  |
+| `vitamin-b12-folate-deficiency-anemia-energy-metabolism` | 확인실패 | 공식 | 비타민 B12 및 엽산 결핍은 DNA 합성 저해로 거대적혈구성 빈혈을 유발하고, 세포 대사 감소로 피로가 발생한다. |  |
+| `cdc-chronic-fatigue-criteria-6-months-functional-impairment` | 확실 | 공식 | 미국 CDC 1994년 기준에서 만성피로증후군은 6개월 이상 설명할 수 없는 피로 + 기능 장애 + 인지 또는 정위 증상 중 4개 이상이 필수이며, 이는 표준 진단 기준으로 널리 사용된다. |  |
+
+### 혈행 개선 영양제와 수술·시술 전 주의, 항혈소판·항응고 병용 위험 <sub>2026-08-10 · 혈행 영양제, 수술 며칠 전에 중단해야 할까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `supplement-surgery-preoperative-discontinuation-2-weeks` | 확실 | 공식 | 혈행 개선 또는 항응고 작용이 있는 영양제(은행잎, 홍삼, 오메가3 등)는 수술 예정일 2주 전부터 중단하는 것이 권장된다. JAMA 리뷰(Ang-Lee et al., 2001)와 ASA/AANA는 허브 의약품의 1-2주 전 중단을 권장하고 있다. |  |
+| `ginkgo-platelet-inhibition-surgery-bleeding` | 확실 | 공식 | 은행잎 추출물은 혈소판 응집을 억제하는 작용(주로 ginkgolide B와 flavonoid)을 가지므로, 수술·시술·치과 시술 중 출혈을 증가시킬 수 있다. 특히 신경외과·척추 수술·망막 수술처럼 출혈이 위험한 수술에서는 더욱 주의가 필요하다. |  |
+| `ginseng-platelet-inhibition-surgical-bleeding` | 확실 | 공식 | 홍삼(인삼)은 ginsenoside 성분이 혈소판 응집을 억제하는 작용을 보이며, 시험관 연구에서 비가역적(irreversible) 혈소판 억제 효과가 보고되었다. 따라서 수술 전 2주 중단이 권장된다. |  |
+| `antiplatelet-anticoagulant-supplement-interaction-doubled-effect` | 확실 | 공식 | 이미 항혈소판제(아스피린, 클로피도그렐) 또는 항응고제(와파린, 신약 DOAC)를 복용 중인 환자가 은행잎·홍삼·오메가3 고함량을 추가 섭취하면, 약물의 효과가 상승되어 자발성 출혈 위험(비위장 출혈·뇌출혈·직장 출혈 등)이 증가할 수 있다. |  |
+| `surgery-procedure-risk-stratification-supplement-timing` | 확실 | 공식 | 수술 종류에 따라 출혈 위험이 다르다. 신경외과·척추·망막·관절경 수술 같이 출혈이 위험한 대수술이면 2주 전 중단이 필수다. 피부 생검·백내장 수술처럼 출혈이 덜 위험한 시술이면 의료진 판단으로 1주일 또는 더 짧은 기간일 수 있다. |  |
+| `postoperative-bleeding-supplement-dosage-dependent` | 확실 | 공식 | 수술 후 출혈 위험은 영양제 용량과도 관련이 있다. 고용량 오메가3(>3g/day), 고함량 은행잎(>240mg/day) 등에서 위험이 더 크다. |  |
 
 ### 콜라겐 펩타이드 vs 비변성 제2형 콜라겐: 용도별 차이와 임상 근거 <sub>2026-08-10 · collagen-joint-vs-skin — 관절용 콜라겐과 피부용 콜라겐은 다른가</sub>
 
@@ -5319,6 +6234,64 @@ _(팩트 없음)_
 | `coq10-anticoagulant-interaction-warfarin-caution` | 논쟁 🔶 | 공식 | 코엔자임Q10은 지용성 비타민처럼 항응고제(특히 와파린)의 효과를 상쇄할 수 있으므로, 와파린 복용 중인 환자가 CoQ10 보충을 고려한다면 의료 전문가와 반드시 상담해야 한다. |  |
 | `coq10-energy-production-asthenia-aging` | 논쟁 🔶 | 공식 | 코엔자임Q10은 미토콘드리아에서 ATP 에너지 생산에 필수적이므로, 노화나 질병으로 근력이 떨어진 고령자에게 보충의 이론적 근거가 있으나, 건강한 젊은 성인의 일반 피로에 대한 효과는 제한적으로 보인다. |  |
 
+### 코엔자임Q10과 심부전, 임상 근거·스타틴 병용·심혈관 사건 예방 <sub>2026-08-10 · 코엔자임Q10 심부전 환자 복용, 근거가 있나</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `q-symbio-trial-heart-failure-mortality-reduction` | 확실 | 공식 | 2014년 Q-SYMBIO 무작위대조시험(441명, 만성심부전 NYHA III-IV, 중앙 추적 2년)에서 코엔자임Q10 100mg 3회/일 투여는 주요 심혈관 사건(심혈관 사망·입원)을 유의하게 감소시켰다. 심부전 증상 개선(NYHA 등급 1단계 이상 호전)도 58%에서 나타났다(위약 45%). |  |
+| `coq10-heart-failure-safety-profile` | 확실 | 공식 | Q-SYMBIO 시험에서 코엔자임Q10 300mg/day 투여는 위약과 유사한 수준의 안전성을 보였으며, 주요 이상사례가 증가하지 않았다. |  |
+| `coq10-statin-interaction-heart-failure` | 확실 | 공식 | 스타틴은 HMG-CoA 환원효소를 억제하여 콜레스테롤과 함께 코엔자임Q10 합성도 억제한다. 따라서 심부전 환자가 스타틴과 코엔자임Q10을 병용할 경우, 스타틴의 혈청 CoQ10 저하 효과를 상쇄하는 이론적 근거가 있다. |  |
+| `coq10-heart-failure-mechanism-mitochondrial-atp` | 확실 | 공식 | 코엔자임Q10은 미토콘드리아 호흡 사슬(electron transport chain)에서 ATP 에너지 생산에 필수적이다. 심부전 환자에서 미토콘드리아 기능이 저하되면 심근 수축력이 감소하므로, 이론적으로 CoQ10 보충이 에너지 생산을 개선할 수 있다. |  |
+| `coq10-heart-failure-bioavailability-variability` | 확실 | 공식 | 코엔자임Q10은 지용성 성분이므로 생체이용률이 개인차가 크고, 제형(유비퀴논 vs 유비퀴놀)·동반 식사 지방 함량·개인 흡수 능력에 따라 혈중 농도가 크게 달라진다. |  |
+| `coq10-hypertrophic-dilated-heart-failure-distinction` | 확인실패 | 공식 | Q-SYMBIO 시험은 확장성 심부전(dilated cardiomyopathy) 중심이었으며, 비후성 심부전(hypertrophic cardiomyopathy) 또는 수축성 심부전(systolic) vs 이완성 심부전(diastolic)에서의 효과는 아직 명확하지 않다. |  |
+
+### 크레아틴: 신기능 안전성 논쟁의 실제 근거, 로딩 프로토콜, 수분 요구량 <sub>2026-08-10 · creatine-safety — 크레아틴, 안전하게 쓰는 기준</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `creatine-serum-creatinine-increase-not-renal-impairment` | 확실 | 공식 | 크레아틴 보충은 혈청 크레아티닌(serum creatinine)을 상승시키나, 이는 신장 기능 악화를 의미하지 않는다. 메타분석(19개 RCT)에서 크레아틴 보충 후 혈청 크레아티닌이 증가했으나, 요소(urea) 농도와 사구체 여과율(eGFR)에는 유의한 변화가 없었다. |  |
+| `creatine-short-term-no-gfr-change-healthy-individual` | 확실 | 공식 | 건강한 개인에서 단기(수주) 크레아틴 보충은 사구체 여과율(GFR)을 변화시키지 않는다. |  |
+| `creatine-long-term-5-years-safety-healthy-athletes` | 확실 | 공식 | 건강한 운동선수에서 5년 이상 만성 크레아틴 보충은 신장 기능을 손상하지 않는다는 장기 추적 연구가 있다. 저항 운동 훈련자들의 12주 크레아틴 보충(고 단백질식 병행)도 신기능에 영향을 주지 않았다. |  |
+| `creatine-preexisting-kidney-disease-caution-required` | 확실 | 공식 | 신장질환 병력이 있거나 신기능이 저하된 개인은 크레아틴 보충 전 의료 전문가 상담이 필수다. 사구체 여과율(eGFR <60 mL/min/1.73m²)이 낮으면 크레아틴 보충이 추가 신부담을 줄 수 있다. |  |
+| `creatine-cancer-risk-theoretical-not-confirmed` | 확실 | 공식 | 크레아틴이 발암 물질을 형성할 수 있다는 이론적 우려가 있으나, 현재까지 크레아틴 보충과 암 발생 사이의 인과관계를 입증한 인체 연구는 없다. |  |
+| `creatine-dehydration-muscle-cramps-not-supported` | 확실 | 공식 | 크레아틴이 탈수나 근육경련을 유발한다는 주장은 대조 연구로는 지지되지 않는다. 사실상 통제된 연구에서는 크레아틴이 수분 균형이나 체온 조절에 영향을 주지 않는 것으로 나타났다. |  |
+| `creatine-gastrointestinal-distress-dose-dependent` | 확실 | 공식 | 높은 용량의 크레아틴(특히 로딩 단계의 20g/일)은 소화기 불편(복통, 복부 팽만감, 설사)을 유발할 수 있다. 이 부작용은 용량에 따라 달라지며, 보편적이지 않다. |  |
+| `creatine-loading-protocol-standard-20-25g-5-7days` | 확실 | 공식 | 크레아틴 로딩 프로토콜의 표준은 5~7일 동안 하루 20~25g을 4등분하여 복용하는 것이다(예: 4회 × 5g). 이는 근육 크레아틴 저장량을 빠르게 포화시킨다. |  |
+| `creatine-maintenance-dose-3-5g-after-loading` | 확실 | 공식 | 로딩 후 유지 단계(maintenance phase)는 일반적으로 하루 3~5g의 크레아틴 복용으로 충분하다. |  |
+| `creatine-hydration-requirement-4-5liters-loading-phase` | 확실 | 공식 | 크레아틴 로딩 단계(5~7일)에는 일일 수분 섭취를 4~5리터(16~20컵)로 증가시켜야 한다. 이는 평상시 섭취량의 1.5~2배이다. |  |
+| `creatine-maintenance-hydration-3-4liters-daily` | 확실 | 공식 | 유지 단계(하루 3~5g 크레아틴)에는 하루 3~4리터(12~16컵)의 수분 섭취가 권장된다. 이는 보충하지 않는 일반인의 권장치(2~3리터)보다 높다. |  |
+| `creatine-body-weight-increase-water-retention-expected` | 확실 | 공식 | 크레아틴 로딩 후 체중이 1~2kg 증가할 수 있으나, 이는 근육 세포 내 수분 저류(intracellular water retention)이며, 지방 증가가 아니다. |  |
+| `creatine-no-increased-side-effect-vs-placebo` | 확실 | 공식 | 임상 시험 분석에서 크레아틴 보충은 위약 대비 부작용 빈도를 증가시키지 않았다. '크레아틴 보충이 부작용 위험을 높인다'는 주장은 과학적 근거가 없다. |  |
+
+### 엘더베리(Sambucus nigra): 감기·독감 임상 근거·효과크기·연구 한계 <sub>2026-08-10 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `elderberry-flu-symptom-duration-reduction-rct-evidence-4-days` | 확실 | 공식 | 엘더베리 추출물의 독감 증상 지속 기간 단축에 관한 두 개의 무작위 이중맹검 대조시험(RCT)에서 표본 크기 27명과 60명 수준으로, 엘더베리 투여군이 위약군 대비 독감 지속 기간을 약 4일 단축시킨 것으로 보고되었다. |  |
+| `elderberry-early-rct-effect-size-large-d-1-36-2-78` | 확실 | 공식 | 엘더베리 관련 초기 RCT에서 효과크기(Cohen's d)는 매우 크게 보고되었다. 1995년 Zakay-Rones 연구는 n=27에서 d=1.36, 2009년 Kong 연구는 d=2.78로, 임상적으로 큰 효과를 나타냈다. |  |
+| `elderberry-cold-symptom-duration-rct-air-travelers-57-vs-117-days` | 확실 | 공식 | 엘더베리 보충제의 감기 예방에 관한 항공여행객 대상 RCT(n=64)에서 엘더베리군의 감기 지속 기간이 평균 57일, 위약군이 117일로 보고되었으며(p=0.02), 평균 증상점수도 엘더베리군 247, 위약군 583으로 차이를 보였다(p=0.05). |  |
+| `elderberry-recent-2020-rct-contradictory-no-significant-benefit` | 확실 | 공식 | 2020년의 더 최근 RCT에서는 엘더베리가 독감 지속 기간이나 중증도에 임상적으로 의미 있는 차이를 보이지 않았다. 위약군 4.9±2.8일, 엘더베리군 5.3±3.6일로 통계적·임상적으로 유의한 차이가 없었다. |  |
+| `elderberry-limitation-not-treatment-symptomatic-relief-only` | 확실 | 공식 | 전문가들은 엘더베리가 감기나 독감을 치료하는 것이 아니라, 일부 사람들에게는 증상 완화와 병의 지속 기간을 '약간' 줄이는 데 도움을 줄 수 있다고 강조하고 있다. 엘더베리에 포함된 안토시아닌과 플라보노이드, 비타민 C가 항산화 특성을 가지지만, 감염 치료는 면역계의 역할이다. |  |
+
+### 생리 전 증후군(PMS) 영양소 치료: 칼슘·마그네슘·비타민B6의 임상 근거 <sub>2026-08-10 · female-pms-supplement</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `pms-calcium-supplementation-1000mg-daily-effective-2007` | 확실 | 공식 | 여성 3,025명을 대상으로 한 메타분석(2007)에서 칼슘 보충(1,000mg/일 이상)은 위약 대비 PMS 증상 심각도를 48% 감소시켰으며, 특히 기분 변화, 피로감, 식욕 변화 같은 심리적 증상에 효과적이었다. |  |
+| `pms-vitamin-b6-50mg-daily-psychological-symptoms` | 확실 | 공식 | 비타민 B6 보충(50mg 이상/일)은 PMS의 심리적 증상(우울감, 불안감, 과민성)을 위약 대비 유의미하게 감소시키는 것으로 보고되었으며, 신체적 증상에는 효과가 제한적이다. |  |
+| `pms-magnesium-effect-limited-evidence-mixed-results` | 논쟁 🔶 | 공식 | 마그네슘 보충(300-360mg/일)이 PMS 증상 개선에 도움이 될 수 있다는 동물 및 소규모 연구가 있으나, 대규모 메타분석의 근거는 제한적이고 결과가 일관되지 않다. |  |
+| `pms-calcium-magnesium-b6-combination-synergy-evidence-weak` | 확인실패 | 공식 | 칼슘·마그네슘·비타민 B6을 함께 복용했을 때의 상승 효과(시너지)에 대한 임상 근거는 부족하며, 개별 성분의 효과 합보다 나은지 확인하는 대규모 비교 연구가 필요하다. |  |
+| `pms-dietary-factors-simple-carbs-salt-fat-avoidance` | 확실 | 공식 | PMS 증상 완화를 위해서는 영양제 보충보다 단순 탄수화물(설탕, 흰 밀가루), 염분, 포화지방 섭취를 줄이고, 복합 탄수화물, 오메가-3 지방산, 칼슘·마그네슘 풍부 식품을 늘리는 것이 1차 중재다. |  |
+
+### 글루타치온의 경구 생물이용률 논쟁, 피부 미백 효과, 국내 기능성 미인정 <sub>2026-08-10 · 먹는 글루타치온, 무엇을 기준으로 고를까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `glutathione-oral-bioavailability-below-1-percent` | 확실 | 공식 | 경구 글루타치온의 생물이용률은 1% 미만으로 극히 낮으며, 소화 효소(감마글루타밀전이효소)에 의해 분해되고 위산에 의해 손상되어 거의 혈류에 도달하지 못한다. |  |
+| `glutathione-skin-whitening-efficacy-localized-temporary-effect` | 확실 | 공식 | 글루타치온의 피부 미백 효과는 3개 RCT의 체계적 고찰에서 혼합 결과를 보였으며, 일부 연구는 얼굴·팔뚝 등 특정 부위에서만 효과를 보였고, 중단 후 6개월 내 효과가 사라진다(n=16, 6.2%만 지속 개선). |  |
+| `korea-glutathione-no-functional-claim-approved` | 확실 | 공식 | 한국 식약처는 글루타치온을 건강기능식품의 기능성 원료로 인정하지 않았으며, 피부 미백·간 기능 개선·피로 회복 등의 효과로 표시하면 부당광고에 해당한다. |  |
+| `glutathione-40-years-old-women-higher-efficacy` | 확실 | 공식 | 글루타치온 피부 미백 효과는 40세 이상 여성에서만 통계적으로 유의한 개선을 보였으며, 젊은 연령층에서는 효과가 제한적이었다. |  |
+
 ### 장누수증후군: 의학적 인정 지위·장투과성 연구의 실제 범위·마케팅 경계 <sub>2026-08-04 · 장누수증후군, 의학적으로 인정된 병명인가</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -5345,6 +6318,18 @@ _(팩트 없음)_
 | `hmb-ad-claim-exercise-free-false` | 확실 | 공식 | 광고 과장: '운동 없이도 근육이 늘어난다', '근감소증을 예방하고 치료한다' — 거짓. HMB 보충만으로는 건강한 고령자의 근력·기능 개선이 일관되지 않고, 운동·단백질이 1차이다. |  |
 | `hmb-korea-regulation-status` | 확실 | 공식 | HMB 또는 HMB칼슘의 식약처 건강기능식품 기능성 인정 여부와 허용 문구는 원료·제품별로 확인 필요. 근감소증 예방·치료는 질병 관련 표현이므로 일반적 건강기능식품 기능성과 구분. |  |
 
+### 호모시스테인 수치와 비타민B, 임상 결과의 괴리·대리지표 함정 <sub>2026-08-10 · 호모시스테인 높으면 B 비타민을 먹을 때 실제 효과</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `homocysteine-definition-cardiovascular-risk-marker` | 확실 | 공식 | 호모시스테인은 메티오닌 대사 과정에서 생기는 아미노산으로, 혈중 농도가 높으면 혈관 손상·염증·혈전 형성을 촉진하는 것으로 알려져 있으며, 관찰 연구에서는 호모시스테인이 높은 사람이 심혈관질환·뇌졸중 위험이 높은 것으로 보인다. |  |
+| `b-vitamin-homocysteine-reduction-mechanism` | 확실 | 공식 | 엽산(B9)·비타민B12·비타민B6는 호모시스테인 대사 경로의 핵심 보조인자로, 부족하면 호모시스테인 축적이 생긴다. 엽산 보충은 호모시스테인을 약 25% 감소시키고, B12 추가 투여 시 추가 7% 감소, B6는 유의한 추가 효과가 없다. |  |
+| `hope-2-trial-b-vitamin-homocysteine-no-cardiovascular-benefit` | 확실 | 공식 | 2004년 HOPE-2 무작위대조시험(5,522명, 평균 추적 2.4년)에서 엽산 2.5mg + B6 50mg + B12 1mg 병용 투여는 호모시스테인을 약 25% 감소시켰으나, 심근경색·관상동맥사망·뇌졸중의 주요 복합 심혈관 결과는 위약과 차이가 없었다(HR 0.95, 95% CI 0.84-1.07). |  |
+| `hope-2-stroke-subgroup-modest-reduction` | 확실 | 공식 | HOPE-2 시험의 사후 분석에서 뇌졸중만 약간 감소했다(HR 0.75, 95% CI 0.59-0.97). 하지만 주요 결과(심근경색, 심혈관 사망)는 개선되지 않았다. |  |
+| `visp-trial-b-vitamin-stroke-recurrence-no-benefit` | 확실 | 공식 | 2004년 VISP(Vitamin Intervention for Stroke Prevention) 시험에서 고용량 멀티비타민(B6 25mg, B12 400mcg, 엽산 2mg) 투여는 뇌졸중 재발을 예방하지 못했다(RR 1.0, 95% CI 0.8-1.3). |  |
+| `surrogate-vs-clinical-outcome-homocysteine-paradox` | 확실 | 공식 | 호모시스테인은 대표적인 대리지표(surrogate marker)로, 수치 개선과 임상 결과가 일치하지 않는다. 호모시스테인을 25~30% 낮춰도 심근경색·사망은 예방되지 않는 것이 HOPE-2, VISP 등에서 증명되었다. |  |
+| `homocysteine-screening-not-routine-clinical-practice` | 확실 | 공식 | 현재 미국, 유럽, 한국 임상 가이드라인에서는 호모시스테인 검사를 일반 건강검진 항목으로 권장하지 않으며, 특정 심혈관질환 위험군에서만 선별 검사를 고려한다. |  |
+
 ### 경구 히알루론산(Hyaluronic acid)의 기전과 임상 근거 <sub>2026-08-10 · hyaluronic-acid-oral — 먹는 히알루론산, 관절과 피부에 도달할까</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -5357,6 +6342,86 @@ _(팩트 없음)_
 | `hya-safety-gi-allergy` | 확실 | 공식 | 경구 히알루론산의 일반적 안전성은 양호하나 위장 불편(복부팽만감, 설사 가능), 동물 유래(닭벼슬, 어류) 원료 알레르기 주의 필요. |  |
 | `hya-korea-regulation-skin-only` | 확실 | 공식 | 한국 식약처에서 히알루론산은 고시형 또는 개별인정형 원료로 '피부 보습' 기능성만 표시 가능. 관절 기능성은 동일하게 적용되지 않을 수 있으므로 제품별 확인 필수. |  |
 | `hya-vs-injection` | 확실 | 공식 | 경구 히알루론산은 장에서 대부분 분해되므로 관절 직접 주입(intra-articular injection)과는 작용 기전이 전혀 다르다. 경구 형태는 간접 신호 전달이 가설일 뿐 직접 관절 내 히알루론산 공급이 아님. |  |
+
+### 건강기능식품 면역 기능성 표시 범위, 질병예방 표현 금지선, 베타글루칸·프로바이오틱스 인정 현황 <sub>2026-08-10 · 면역 관련 표시, 어디까지 표기할 수 있을까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `immunity-function-claim-permitted-scope-korea` | 확실 | 공식 | 한국 식약처가 인정하는 면역 관련 기능성 표시는 '면역력 증진에 도움을 줄 수 있음', '건강한 면역기능 유지에 도움' 등 '도움을 주다/줄 수 있음' 형태로 제한되며, '감기 예방', '질병 예방·치료'는 절대 금지된다. |  |
+| `korea-beta-glucan-immune-function-approved` | 확실 | 공식 | 베타글루칸은 한국 식약처에서 '면역기능 증진에 도움을 줄 수 있음'으로 기능성을 인정한 고시형 원료이며, 부작용이 거의 없으면서도 강력한 면역조절 효과가 입증되었다. |  |
+| `korea-probiotics-multiple-function-claims-recognized` | 확실 | 공식 | 프로바이오틱스는 식약처에서 장 건강 외에 '면역과민반응에 의한 피부 상태 개선', '코 상태 개선', '갱년기 여성 건강', '질 내 유익균 증식·유해균 억제', '체지방 감소' 등 다양한 기능성으로 인정하였으며, 균주마다 인정된 기능이 다르다. |  |
+| `disease-prevention-expression-prohibition-clinical-interpretation` | 확실 | 공식 | 한국에서 '감기 예방', '감염 예방', '항바이러스' 같은 표현은 질병 예방으로 분류되어 건강기능식품에서 절대 사용 불가하며, 이를 위반한 광고는 행정처분 대상이다. |  |
+
+### 먹는 콜라겐·히알루론산의 소화·흡수·분포 경로, 피부 도달 메커니즘, 임상 근거 <sub>2026-08-10 · 이너뷰티, 어떤 성분이 어디까지 도달할까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `collagen-peptide-oral-absorption-bioavailability-50-percent` | 확실 | 공식 | 경구 콜라겐 펩타이드의 생물이용률은 약 50%(쥐 동물 모델)에서 74-86%(인간 젤라틴 흡수)까지 보고되었으며, 소장에서 63% 이상이 펩타이드 형태로 흡수된다. |  |
+| `collagen-dipeptide-tripeptide-rapid-absorption-1-hour` | 확실 | 공식 | 콜라겐 펩타이드 중 글리실프롤릴히드록시프롤린과 프롤릴히드록시프롤린 같은 이펜타이드·삼펜타이드 형태만 소장에서 1시간 내에 빠르게 흡수되며, 이는 콜라겐 펩타이드의 생리활성을 결정하는 핵심 형태다. |  |
+| `collagen-protease-degradation-functionality-loss-stomach-intestine` | 확실 | 공식 | 콜라겐 펩타이드는 산성 위장 환경과 프로테아제 풍부한 소장에서 대부분 분해되어 기능성 펩타이드로서 활성을 잃을 수 있으며, 41.91%만 펩타이드 형태로 흡수된다. |  |
+| `hyaluronic-acid-oral-absorption-intact-molecules-lymphoid-tissue` | 확실 | 공식 | 경구 히알루론산은 일부가 온전한 분자 형태로 흡수되며, 장 관련 림프조직(Peyer's patch)을 통해 흡수된 후 결합 조직(피부·관절)에 분포한다. |  |
+| `hyaluronic-acid-skin-hydration-rct-12-weeks` | 확실 | 공식 | 저분자 히알루론산의 RCT(129명, 이중맹검)에서 경구 투여 후 2-8주 내 피부 수화 유의미 개선, 4-8주에 피부 톤 개선, 12주에 표피 두께 증가가 관찰되었다. |  |
+
+### 요오드와 갑상선: 한국인 과잉 섭취, 갑상선 질환자 제한 가이드 <sub>2026-08-10 · iodine-thyroid</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `iodine-requirement-adult-150-mcg-daily` | 확실 | 공식 | 성인의 요오드 일일 권장 섭취량은 150μg이며, 임신부·수유부는 각각 240μg과 290μg이 권장된다. |  |
+| `korean-iodine-intake-417-mcg-daily-4.8-fold-recommendation` | 확실 | 공식 | 한국인의 평균 일일 요오드 섭취량은 417μg으로, 권장량(150μg)의 2.8~4.8배에 달하며, 주 원인은 해조류(다시마, 미역, 김) 섭취로, 전체 요오드의 75% 이상을 공급받는다. |  |
+| `iodine-upper-limit-intake-2400-mcg-daily` | 확실 | 공식 | 성인의 요오드 상한섭취량은 2,400μg이며, 이를 초과하면 갑상선 기능 이상(갑상선염, 기능 저하증, 기능 항진증) 위험이 높아진다. |  |
+| `kelp-seaweed-iodine-content-extremely-high-179000-mcg-100g` | 확실 | 공식 | 다시마 100g은 약 179,060μg의 요오드를 포함하여 일일 상한치(2,400μg)의 약 100배에 해당하며, 미역은 약 2,000-3,000μg, 김은 1,000-5,000μg을 포함한다. |  |
+| `hashimoto-hypothyroidism-graves-hyperthyroidism-iodine-caution` | 확실 | 공식 | 하시모토 갑상선염(자가면역 갑상선염)이나 그레이브스병(자가면역 갑상선항진증) 환자가 요오드를 과도하게 섭취하면 자가항체 활성화로 질병이 악화될 수 있다. |  |
+| `radioactive-iodine-therapy-low-iodine-diet-2-weeks-prior` | 확실 | 공식 | 갑상선암 환자의 방사성 요오드(I-131) 치료를 받을 경우, 치료 2주 전부터 저요오드 식단을 실시해야 하며, 해조류·유제품·계란·어패류 등 요오드 함유 식품을 엄격히 제한한다. |  |
+
+### 성장 관련 기능성 원료 인정 현황, 연령별 상한섭취량, 성장 보충제 선택 기준 <sub>2026-08-10 · 성장기 영양제, 무엇을 기준으로 고를까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `korea-bone-health-function-claims-recognized-calcium-vitamin-d` | 확실 | 공식 | 한국 식약처가 성장·골격계 건강과 관련하여 인정한 기능성은 '뼈 건강', '치아 형성', '골다공증 위험 감소' 등 7가지이며, 이들은 칼슘, 비타민D, 아연 등을 포함한 기능성 원료로 표시 가능하다. |  |
+| `children-calcium-upper-limit-1000mg-4-8years` | 확실 | 공식 | 4-8세 어린이의 칼슘 상한섭취량(UL)은 하루 1,000mg이며, 9-13세는 1,300mg이다. |  |
+| `children-vitamin-d-upper-limit-3000-4000-iu-age-based` | 확실 | 공식 | 4-8세 어린이의 비타민D 상한섭취량은 하루 3,000 IU(75 μg)이고, 9-13세는 4,000 IU(100 μg)이다. 12개월 이하 유아는 1,000 IU, 1-3세는 2,000 IU가 상한이다. |  |
+| `children-aap-vitamin-d-recommendation-600iu-daily` | 확실 | 공식 | 미국 소아과학회(AAP)의 표준 권장량은 12개월 이상 어린이가 하루 600 IU 비타민D이며, 12개월 미만 영아는 400 IU다. |  |
+
+### 소아 면역 영양제: 비타민D·아연·철분 권장량·상한·안전성 <sub>2026-08-10 · kids-immune-supplement</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `children-vitamin-d-recommendation-600-iu-daily-under-19` | 확실 | 공식 | 1~18세 소아의 비타민D 일일 권장 섭취량은 600 IU(15μg)이며, 상한섭취량은 연령에 따라 4세 이하 3,000 IU, 9~18세 4,000 IU로 제한된다. |  |
+| `children-zinc-recommendation-3-5mg-infants-11mg-adolescent` | 확실 | 공식 | 소아 아연 권장 섭취량은 1~3세 3mg, 4~8세 5mg, 9~13세 8mg, 14~18세 9-11mg이며, 상한섭취량은 4세 이하 7mg, 9~13세 23mg, 14~18세 34mg이다. |  |
+| `children-iron-recommendation-6-10mg-infants` | 확실 | 공식 | 소아 철분 권장 섭취량은 1~3세 7mg, 4~8세 10mg, 9~13세 8mg(여), 9~13세 8mg(남), 14~18세 15mg(여)/11mg(남)이며, 상한섭취량은 4세 이하 40mg, 9~18세 45mg이다. |  |
+| `children-immunity-supplement-multivitamin-evidence-weak` | 확실 | 공식 | 건강한 소아의 일반적 면역력 증진을 위한 일반 종합비타민 보충의 임상 근거는 약하며, Cochrane 메타분석에서도 영양 결핍이 없는 아이의 감염 예방 효과를 확인하지 못했다. |  |
+| `children-fat-soluble-vitamin-accumulation-toxicity-caution` | 확실 | 공식 | 비타민 A, D, E, K 같은 지용성 비타민은 소아의 간과 지방 조직에 축적되어 독성을 야기할 수 있으므로, 4세 이하는 특히 상한량을 엄격히 지켜야 한다. |  |
+
+### 락토페린: 한국 기능성 인정, 철 결합 기전, 면역 기능, 임상 근거 수준 <sub>2026-08-10 · 락토페린, 어떤 사람에게 맞는 성분일까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `lactoferrin-korea-individual-approval-immune-function` | 확실 | 공식 | 락토페린(우유 유래)은 한국 식약처에서 2021년 11월 개별인정형 기능성 원료로 '면역력 증진'에 대한 기능성을 인정받았다. |  |
+| `lactoferrin-iron-binding-mechanism-antimicrobial` | 확실 | 공식 | 락토페린은 '유청 단백질'로, 철과 강력하게 결합하는 '페린' 단백질이다. 철과 결합한 락토페린은 박테리아 증식에 필요한 철분 공급을 차단하여 항균 효과를 발휘하며, 동시에 결합된 철은 모든 체내 세포에 산소를 공급하는 촉매로 작용한다. |  |
+| `lactoferrin-innate-immune-system-antiviral-antibacterial` | 확실 | 공식 | 락토페린은 선천 면역계의 중요한 성분으로, 그람 양성·음성 박테리아에 대한 항균 효과와 DNA·RNA 바이러스에 대한 항바이러스 활성을 가지고 있다. |  |
+| `lactoferrin-body-fat-reduction-clinical-evidence-weak` | 논쟁 🔶 | 공식 | 락토페린이 복부지방 감소·다이어트 효과가 있다는 광고가 있으나, 임상 근거는 소규모 연구에 제한되어 있고 효과 크기는 작다. |  |
+| `lactoferrin-colostrum-vs-milk-concentration` | 확실 | 공식 | 초유(colostrum) 유래 락토페린이 성숙유 유래보다 농도가 약 100배 높으며, 일부 제품은 이를 강조하여 판매하나 초유도 한국에서는 개별인정형 기능성으로만 표시 가능하다. |  |
+| `lactoferrin-optimal-dose-clinical-trial-100-mg-range` | 확인실패 | 공식 | 라토페린의 임상시험 중 일부는 100 mg 전후의 용량으로 수행되었으며, 효과 크기를 판별하려면 더 크고 장기적인 무작위 대조 시험이 필요한 상태다. |  |
+
+### 마카의 임상 근거 수준, 성욕 관련 효과, 국내 기능성 인정 범위 <sub>2026-08-10 · 마카, 활력 관리에서 어디에 두면 좋을까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `maca-rct-evidence-sexual-desire-effect-size-modest` | 확실 | 공식 | 마카의 성욕 개선 효과는 RCT에서 입증되었으나 임상적 의미는 modest하며, 효과 크기는 Cohen's d = 0.37-0.44(저용량)이고, 음의 효과 크기는 d = 0.88(고산지)이다. |  |
+| `maca-mood-energy-improvement-80-percent-report` | 확실 | 공식 | 마카 추출물(3g/일, 12주)에서 기분과 에너지 개선은 80% 이상의 참가자가 보고했으며, 이는 성욕 개선(약 50%)보다 높은 비율이다. |  |
+| `korea-maca-gelatinized-function-claim-sperm-motility-menopause` | 확실 | 공식 | 한국 식약처는 마카 젤라틴화 분말(제2011-7호)을 승인했으며, 기능성 표시는 '정자운동성 개선에 도움'과 '갱년기 남성 건강에 도움을 줄 수 있음'으로 제한된다. 여성의 피로·활력 개선은 국내 기능성으로 인정되지 않았다. |  |
+| `maca-daily-dose-standard-5-grams-gelatinized` | 확실 | 공식 | 국내 인정된 마카 젤라틴화 분말의 일일섭취량 기준은 5.0g/일이다. |  |
+| `maca-menopause-women-rct-symptom-reduction` | 확실 | 공식 | 초경폐후기 여성 168명을 대상으로 한 이중맹검 RCT에서 Pre-Gelatinized 마카(Maca-GO)는 안면홍조(hot flush) 및 야간발한(night sweating) 빈도와 심각도를 유의미하게 감소시켰다. |  |
+
+### 남성 생식 건강 영양제: 아연·엽산·CoQ10·항산화제의 정자 품질 개선 근거 <sub>2026-08-10 · male-fertility-supplement</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `male-fertility-zinc-semen-quality-meta-analysis-2019` | 논쟁 🔶 | 공식 | 아연 보충(25-100mg/일, 평균 12주)이 남성 불임 환자의 정액 농도, 정자 운동성, 형태학을 위약 대비 유의미하게 개선했다는 메타분석(2019, 12개 RCT)이 있으나, 임신율 또는 출산율 증가를 직접 입증한 연구는 부족하다. |  |
+| `male-fertility-coq10-sperm-parameters-improvement` | 논쟁 🔶 | 공식 | CoQ10 보충(100-300mg/일, 3-6개월)이 불임 남성의 정액 농도, 정자 운동성, 정상 형태 비율을 개선하고, 일부 연구에서는 임상 임신율 증가도 보고했으나, 근거 수준은 약하고 연구 이질성이 크다. |  |
+| `male-fertility-antioxidant-vitamins-c-e-selenium-sperm-protection` | 확실 | 공식 | 비타민 C·E, 셀레늄 같은 항산화제는 정자 세포의 산화 스트레스를 감소시켜 운동성과 DNA 무결성을 보호하는 기전이 입증되었으나, 불임 치료로서의 임상 유효성은 산화 스트레스 수준과 개인 상태에 따라 다르다. |  |
+| `male-fertility-folate-dna-integrity-chromosome-abnormality` | 논쟁 🔶 | 공식 | 엽산(엽산염) 결핍은 남성 생식세포의 DNA 메틸화 저하와 염색체 이상을 야기하며, 엽산 보충(500-1,000μg/일)은 정자 농도와 DNA 완전성을 개선할 수 있다는 연구가 있으나, 대규모 임상시험 근거는 부족하다. |  |
+| `male-fertility-supplement-lifestyle-smoking-heat-weight-primary` | 확실 | 공식 | 영양제 보충보다는 금연, 고열 노출 회피(꽉 끼는 팬티·사우나 제한), 정상 체중 유지, 규칙적 운동, 스트레스 감소 같은 생활 습관 개선이 남성 생식 건강의 1차 중재이며, 영양제는 보조 수단이다. |  |
 
 ### 밀크씨슬(실리마린)의 간 수치 개선 임상 근거 및 음주와의 관계 <sub>2026-08-04 · 밀크씨슬, 간 수치를 정말 낮출까</sub>
 
@@ -5379,6 +6444,16 @@ _(팩트 없음)_
 | `multivitamin-deficiency-gap-filling-not-food-replacement` | 확실 | 공식 | 종합비타민은 영양결핍 위험이 높은 인구(식이가 나쁜 사람, 특정 영양소 결핍 인구)의 영양 공백을 메우는 데는 효과적이다. 다만 식사로 전환할 수 없는 음식의 다양한 생리활성물질(파이토뉴트리언트, 식이섬유, 장내 미생물군 변화)을 대체할 수 없다. |  |
 | `multivitamin-adequacy-improvement-15-nutrients` | 확실 | 공식 | 미국 성인을 대상으로 한 연구에서 종합비타민 사용은 조사된 17개 영양소 중 15개 영양소의 부족(inadequacy) 유병률을 감소시켰다. 단, 칼슘·마그네슘·비타민 D는 대부분의 제품에서 충분한 함량을 제공하지 못했다. |  |
 | `multivitamin-target-population-poor-diet` | 확실 | 공식 | 영양 부족 위험이 높은 인구(과식이 나쁜 사람, 고령자, 특정 질환자)에서 종합비타민은 결핍 위험을 70%에서 30%로 감소시킬 수 있다. |  |
+
+### NAC(N-Acetylcysteine): 정의·작용기전·국내 규제 지위·승인 용도 <sub>2026-08-10 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `nac-definition-amino-acid-acetylated-derivative-cysteine` | 확실 | 공식 | NAC(N-acetylcysteine)는 아미노산 L-시스테인에 아세틸기가 붙은 아세틸화 유도체이며, 1960년대 이후 점액용해제로, 1980년대 이후 아세트아미노펜(파라세타몰) 과다복용의 해독제로 널리 사용되고 있다. |  |
+| `nac-antioxidant-mechanism-glutathione-replenishment-gsh` | 확실 | 공식 | NAC의 항산화 작용 기전은 세포 내 글루타치온(GSH) 농도를 증가시키는 능력에서 비롯된다. 글루타치온은 세포의 산화-환원 불균형을 담당하는 가장 중요한 생체 티올이며, 신체에서 가장 강력한 항산화제 중 하나로 건강한 면역계를 유지하고 세포 손상과 싸우는 데 필수 성분이다. |  |
+| `nac-korea-regulation-classified-as-drug-not-food` | 확실 | 공식 | 한국에서 NAC는 의약품(전문 및 일반의약품)으로 분류되어 있으며, 건강기능식품이나 식품첨가물로 허용되지 않는다. 식품위생법 및 건강기능식품법에 따라 의약품으로 분류된 성분은 식품에 사용할 수 없다. |  |
+| `nac-approved-indication-acetaminophen-toxicity-fda-1985-2004` | 확실 | 공식 | NAC는 FDA에서 아세트아미노펜(파라세타몰) 과다 복용에 대한 해독제로 유일하게 승인된 약물이며, 경구형은 1985년, 정맥주사형(Acetadote®)은 2004년 승인받았다. NAC는 아세트아미노펜 섭취 후 8시간 이내에 투여 시 거의 100% 간 보호 효과를 보이며, 24시간 이상 경과한 환자에서도 효과적일 수 있다. |  |
+| `nac-mechanism-acetaminophen-detoxification-napqi-glutathione-replenishment` | 확실 | 공식 | NAC가 아세트아미노펜 독성을 해독하는 기전은 NAC가 아세트아미노펜의 반응성 대사산물인 N-acetyl-p-benzoquinone imine(NAPQI)을 중화시키고, 동시에 간에서 고갈된 글루타치온을 재충전하여 간 세포 손상을 방지하는 것이다. |  |
 
 ### NMN·NAD+ 항노화의 동물 vs 인체 근거 격차 및 국내 규제 현황 <sub>2026-08-04 · NMN·NAD+ 항노화, 어디까지 왔나</sub>
 
@@ -5407,6 +6482,58 @@ _(팩트 없음)_
 | `food-first-supplementation-second` | 확실 | 공식 | 비타민D의 합성은 일광(자외선 B), 식사(기름진 생선·계란 등)가 1차이고, 보충제는 식사·일광으로 부족한 경우에만 고려된다. |  |
 | `osteoporosis-ad-claim-supplement-only-false` | 확실 | 공식 | 광고 과장: '칼슘만 꾸준히 먹으면 골다공증을 예방한다' — 거짓. 저용량 칼슘·비타민D만으로는 진단된 골다공증의 치료나 높은 골절 위험의 경감이 증명되지 않음. |  |
 | `korea-regulation-risk-reduction-only` | 확실 | 공식 | 한국 식약처에서 칼슘·비타민D의 허용 기능성 문구는 '뼈 형성 및 유지', '골다공증 위험 감소' 등 위험도 감소 표현만 가능. 질병 진단·치료·합병증 예방은 표현 금지. |  |
+
+### 해외직구 영양제: 통관 기준, 미허용 성분, 용량 제한, 한국과 해외의 규제 차이 <sub>2026-08-10 · 해외에서 산 영양제, 한국에 반입할 수 있나?</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `korea-overseas-supplement-import-limit-6-units-personal-use` | 확실 | 공식 | 한국의 건강기능식품·의약품 자가사용 인정 기준은 총 6병입이며, 이를 초과하는 수량의 직구 제품은 통관이 제한될 수 있다. |  |
+| `korea-prohibited-supplement-ingredient-melatonin` | 확실 | 공식 | 멜라토닌은 한국에서 미허용 성분으로 지정되어 있어 건강기능식품에 함유된 멜라토닌 함유 제품의 반입이 차단된다. |  |
+| `korea-prohibited-supplement-ingredients-ephedrine-pseudoephedrine` | 확실 | 공식 | 에페드린(ephedrine)·놀에페드린(norephedrine)·슈도에페드린(pseudoephedrine)·에르고타민(ergotamine)·에르고메트린(ergometrine) 함유 단일 완제의약품은 통관이 제한된다. |  |
+| `korea-cites-protected-species-ingredient-musk` | 확실 | 공식 | CITES(멸종위기에 처한 야생동식물 국제거래 협약) 규제물품인 사향 등이 함유된 제품은 국제 야생동물 보호 규정에 따라 통관이 제한된다. |  |
+| `korea-overseas-supplement-verification-food-safety-korea-database` | 확실 | 공식 | 해외 직구 제품의 반입 가능 여부는 식품안전나라 웹사이트의 '해외직구 정보' - '해외직구 위해식품 목록'에서 확인할 수 있으며, 관세청 홈페이지(www.customs.go.kr)와 함께 확인하면 안전하다. |  |
+| `usa-fda-vs-korea-mfds-different-ingredient-approval` | 확실 | 공식 | 미국 FDA는 건강보조식품(Dietary Supplements)에 대해 제조사 책임 제도를 운영하여 사전 승인을 요구하지 않는 반면, 한국 식약처는 건강기능식품 원료를 고시형(약 100개)과 개별인정형으로 구분하여 더 엄격한 사전 심사를 요구한다. |  |
+| `overseas-supplement-dosage-difference-higher-usa` | 확실 | 공식 | 미국과 한국의 영양제 기준량이 다를 수 있으며, 미국에서 일반의약품 수준의 고함량 제품이 한국에서는 미허용되거나 상한섭취량을 초과할 수 있다. |  |
+
+### 반려동물에게 위험한 사람 영양제 성분(자일리톨·비타민D·마늘), 종간 독성 차이, 중독 증상 <sub>2026-08-10 · 반려동물에게 사람 영양제를 주면 안 되는 이유</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `xylitol-dog-toxicity-dose-50mg-per-pound-hypoglycemia` | 확실 | 공식 | 자일리톨은 개에게 체중 파운드당 50mg 미만 용량부터 독성을 나타내며(0.03-0.045g/파운드), 자일리톨을 섭취한 개는 급속한 인슐린 분비로 저혈당(hypoglycemia)을 일으킨다. |  |
+| `xylitol-dog-poisoning-symptoms-onset-20-minutes` | 확실 | 공식 | 개의 자일리톨 중독 증상은 섭취 후 20분 이내에 시작되며, 첫 증상은 구토이고, 진행하면 무기력, 약화, 몸 떨림, 경련이 발생하며 간 손상·사망까지 초래할 수 있다. |  |
+| `vitamin-d-dog-toxicity-symptoms-vomiting-drinking-urination` | 확실 | 공식 | 개의 비타민D 중독은 저용량에서는 구토, 설사, 음수·뇨량 증가, 복통, 무기력을 일으키고, 섭취 후 12-36시간 내에 증상이 나타난다. |  |
+| `xylitol-common-in-vitamins-supplements-pet-hazard` | 확실 | 공식 | 자일리톨은 많은 인간용 비타민·영양제·무설탕 제품의 감미료로 첨가되어 있으며, 개에게는 매우 위험하다. |  |
+| `garlic-onion-cat-dog-hemolytic-anemia-thiosulfate` | 확인실패 | 공식 | 마늘과 양파의 황화물(thiosulfate) 성분은 개와 고양이의 적혈구를 손상시켜 용혈성 빈혈을 일으키며, 인간보다 훨씬 더 낮은 용량에서 중독이 발생한다. |  |
+
+### 포스트바이오틱스: 정의·사균체 근거·열처리 안정성·보관 이점 <sub>2026-08-10 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `postbiotic-isapp-2021-definition-inanimate-microorganisms-components` | 확실 | 공식 | 포스트바이오틱스는 ISAPP(2021)에서 '숙주에게 건강 이익을 주는 생명력이 없는 미생물 및/또는 그 미생물의 구성 성분을 포함한 제제'로 정의되며, 생물학적으로 활성인 성분(사멸된 세포, 세포벽, 표면 구조, 캡슐 등)으로 구성된다. |  |
+| `postbiotic-metabolites-may-present-not-required-definition` | 확실 | 공식 | 포스트바이오틱스에 미생물 대사산물(단쇄지방산, 비타민, 박테리오신 등)이 포함될 수 있지만, 이들은 포스트바이오틱스 정의상 필수 요소가 아니다. 효능의 핵심은 불활성화된 미생물의 세포 구성 요소와 대사산물의 복합 작용이다. |  |
+| `postbiotic-heat-inactivated-stability-shelf-life-advantage` | 확실 | 공식 | 포스트바이오틱스는 생명력이 없는 미생물이므로 냉동 유통 비용이 불필요하고, 보관 중 세포 사멸 변수가 없으며, 열에 안정적이어서 열처리된 또는 상온 보관 가능한 제품에도 통합 가능하다. 이는 생균 프로바이오틱스보다 일관성 있는 용량 관리와 장기 보관 수명을 제공한다. |  |
+| `postbiotic-heat-killed-safety-no-translocation-antibiotic-resistance` | 확실 | 공식 | 포스트바이오틱스는 사멸된 미생물이므로 생균의 위험(균혈증 위험, 항생제 내성유전자 전달)이 없으며, 면역저하자 또는 ICU 환자에서도 세균 전위(bacterial translocation) 위험이 없다. |  |
+| `postbiotic-strain-specificity-inactivation-method-matters` | 확실 | 공식 | 같은 균주라도 열처리, 동결건조, 초음파 처리 등 불활성화 방법에 따라 남는 세포 구성 요소가 다르므로, 포스트바이오틱스의 효능은 특정 불활성화 공정과 균주의 조합에 따라 결정된다. 생균일 때 효능이 입증된 균주도 사균체로 만들면 효과가 달라질 수 있다. |  |
+
+### 프리바이오틱스·신바이오틱스: 정의·구성 기준·함량·부작용 <sub>2026-08-10 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `prebiotic-definition-isapp-2016-substrate-selective-utilization` | 확실 | 공식 | 프리바이오틱스는 ISAPP(2016)에서 '사람의 위산과 소장의 효소에 의해 소화되지 않고 장내 미생물에 의해 선택적으로 분해되어 숙주 미생물의 생장과 활성을 촉진하는 물질'로 정의되며, 유익 미생물의 기질(먹이)로서 기능한다. |  |
+| `prebiotic-examples-inulin-fos-gos-daily-intake-3-5g` | 확실 | 공식 | 프리바이오틱스 예시는 이눌린(치커리 추출물), 프락토올리고당(FOS), 갈락토올리고당(GOS), 난소화성말토덱스트린 등이며, ISAPP 권장 일일 섭취량은 약 3~5g이다. 한국 식약처 권장량은 프락토올리고당 3~8g이다. |  |
+| `prebiotic-initial-side-effect-gas-bloating-adaptation-1-2weeks` | 확실 | 공식 | 프리바이오틱스 초기 복용 시 배에 가스가 차거나 팽만감을 느낄 수 있으나, 이는 굶주렸던 유익균이 갑자기 주어진 먹이를 섭취하며 발효 활동을 시작한 신호이며, 1~2주 꾸준한 복용으로 장이 적응하면 증상이 자연스럽게 사라진다. |  |
+| `synbiotic-isapp-2019-definition-live-microorganisms-substrate` | 확실 | 공식 | 신바이오틱스는 ISAPP(2019)에서 '살아있는 미생물과 기질이 혼합되어 있으며, 그 기질이 숙주 미생물에 의해 선택적으로 이용되어 숙주에게 건강 이익을 주는 제제'로 정의되며, 프로바이오틱스와 프리바이오틱스의 단순 혼합이 아니라 상호협력적 기능을 전제한다. |  |
+| `synbiotic-two-types-complementary-synergistic-isapp-2019` | 확실 | 공식 | ISAPP(2019)는 신바이오틱스를 두 가지 유형으로 구분한다: (1) 보완형 신바이오틱스(Complementary): 프로바이오틱스 + 프리바이오틱스 조합으로, 각 성분이 독립적으로 기능하며 기질의 기능성 입증이 반드시 필요하지 않음. (2) 협력형 신바이오틱스(Synergistic): 기질이 동시투여 미생물에 의해 선택적으로 이용되도록 설계되었으며, 협력 기능을 입증하는 임상 근거 필요. |  |
+
+### 임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성 <sub>2026-08-10 · pregnancy-supplement-guide</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `pregnancy-iron-intake-recommendation-27mg` | 확실 | 공식 | 임신 중 철분 일일 권장 섭취량은 27mg으로, 비임신 여성(18mg)보다 50% 많으며, 특히 임신 2분기 이후 혈액량 증가로 인한 생리적 빈혈 예방에 중요하다. |  |
+| `pregnancy-vitamin-d-recommendation-400-iu-daily` | 확실 | 공식 | 임신 중 비타민D 충분섭취량은 하루 400 IU(10μg)이나, 최근 임상 권고는 하루 2,000 IU(50μg) 범위 내에서 필요한 용량을 복용하는 것을 권장하며, 상한섭취량은 4,000 IU(100μg)이다. |  |
+| `pregnancy-iodine-intake-recommendation-240-mcg` | 확실 | 공식 | 임신 중 요오드 일일 권장 섭취량은 240μg(임신 전 150μg에서 60% 증가)이며, 태자의 신경 발달과 갑상선 호르몬 합성에 필수적이다. |  |
+| `pregnancy-vitamin-a-retinol-limit-3000-ug` | 확실 | 공식 | 임신 중 비타민A(레티놀) 상한섭취량은 3,000μg(10,000 IU)이며, 이를 초과하는 고용량 보충은 기형 위험(구순열, 심장질환, 신경 결손)을 높일 수 있다. |  |
+| `pregnancy-supplement-prenatal-multivitamin-standard` | 확실 | 공식 | 일반적인 산전 종합비타민은 엽산 400-800μg, 철분 27mg, 칼슘(또는 별도 보충), 비타민D 400 IU, 아연 11-15mg을 포함하며, 의료진의 처방 또는 권고 하에 복용하는 것이 안전하다. |  |
 
 ### 프로바이오틱스 균주 특이성·CFU 함정·목적별 균주 선택 <sub>2026-08-04 · 유산균, 균주 이름을 봐야 하는 이유</sub>
 
@@ -5439,6 +6566,99 @@ _(팩트 없음)_
 | `ginseng-dosage-typical-range` | 확실 | 공식 | 임상 연구에서 사용된 홍삼 용량은 일반적으로 하루 1~3g(진세노사이드 약 5~15mg)이며, 국내 제품은 대부분 하루 1~2정으로 이 범위 내다. |  |
 | `red-ginseng-safety-drug-interaction-warfarin-caution` | 논쟁 🔶 | 공식 | 홍삼에는 항응고 효과가 있을 수 있으므로, 와파린이나 아스피린 같은 항응고제를 복용 중인 환자는 홍삼 추가 섭취 전 의료진과 상담해야 한다. |  |
 
+### 스피루리나·클로렐라: 단백질·엽록소·영양소, 중금속·유사 B12 이슈, 흡수율 차이 <sub>2026-08-10 · 스피루리나와 클로렐라, 어떤 영양을 채워줄까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `spirulina-protein-content-60-70-percent` | 확실 | 공식 | 스피루리나의 단백질 함량은 건조 기준 60~70%에 달하여 우수한 식물성 단백질 공급원으로 평가받으며, 9가지 필수 아미노산을 모두 포함한다. |  |
+| `spirulina-chlorella-cell-wall-digestion-absorption-difference` | 확실 | 공식 | 스피루리나는 세포벽이 없는 다세포 생물이므로 소화 흡수율이 매우 높은 반면, 클로렐라는 단세포 생물로 세포막이 두꺼워 소화가 어려우므로 '세포벽 파쇄' 제품(Cracked cell chlorella)을 선택해야 흡수율을 높일 수 있다. |  |
+| `chlorella-pseudovitamin-b12-false-form-bioavailability-zero` | 확실 | 공식 | 클로렐라를 포함한 남조류(Cyanobacteria)는 진정한 비타민 B12 대신 헛비타민 B12(pseudovitamin B12, cyanocobalamin analogs)를 함유하고 있으며, 이는 인간을 포함한 포유류에서 생물학적으로 불활성이고 실제 B12 흡수를 방해할 수 있다. |  |
+| `spirulina-chlorella-heavy-metal-contamination-risk` | 확실 | 공식 | 스피루리나와 클로렐라는 채취 및 제조 과정에서 수질 오염으로 인해 납(Pb)·카드뮴(Cd) 등의 중금속이나 시아노톡신(microcystin 등) 같은 조류 독소가 검출될 수 있다. |  |
+| `chlorella-lead-standard-0.05ppm-below-verification` | 확실 | 공식 | 클로렐라의 납 함량 기준은 국제 규제 기준보다 낮게 설정되어 0.05ppm 미만으로 검증되며, 수은·카드뮴·비소를 포함한 포괄적인 중금속 검사가 포함되어야 한다. |  |
+| `spirulina-chlorella-nutrient-profile-complementary-not-comprehensive` | 확실 | 공식 | 스피루리나와 클로렐라는 단백질·엽록소·미네랄(철·마그네슘·칼슘)을 함유하지만, 어느 하나도 모든 영양소를 '완벽하게' 제공하지 못하며, 특히 비타민 C·D·B12(진정)는 충분하지 않다. |  |
+| `spirulina-vs-chlorella-cost-effectiveness-spirulina-advantage` | 확실 | 공식 | 스피루리나는 클로렐라보다 재배 기술이 간단하고 생산 비용이 낮으므로, 가격 대비 영양가(특히 단백질)에서 우위에 있다. |  |
+
+### 오메가3·DHA·포스파티딜세린의 인지 기능·집중력 효과, RCT 근거 수준 <sub>2026-08-10 · 수험생 영양제, 집중력 관리에 어디까지 도움이 될까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `omega3-dha-attention-improvement-meta-analysis-2000mg` | 확실 | 공식 | 오메가3 58개 RCT 메타분석에서 하루 2,000mg 투여 시 주의력(attention)이 유의미하게 개선되었으나, 근거 질이 낮고(low quality evidence), 26주 이상 장기 투여와 BMI > 25인 참가자에서 효과가 두드러졌다. |  |
+| `omega3-adhd-children-mixed-evidence-some-benefit` | 확실 | 공식 | ADHD 아동 대상 오메가3 RCT는 혼합된 결과를 보였으며, 일부는 인지·행동 개선을 보고했고 일부는 위약과 차이가 없었다. 오메가3 상태와 주의력의 연관은 일부 연구에서 입증되었다. |  |
+| `phosphatidylserine-cognitive-function-modest-improvement-long-term` | 확실 | 공식 | 포스파티딜세린(PS) 임상 시험은 30년 이상 축적되었으며, 메모리 테스트뿐 아니라 주의력·정보처리 속도 개선이 보고되었다. 최근 RCT는 12개월 투여 후 혈청 신경영양인자(BDNF)와 신경전달물질 증가를 동반한 인지 점수 개선을 보였다. |  |
+| `phosphatidylserine-neuronal-membrane-function-mechanism` | 확인실패 | 공식 | 포스파티딜세린은 신경 세포막의 신호 전달, 분비 소포 방출, 세포 간 통신을 촉진하여 신경 기계의 효율성을 높인다. |  |
+
+### 영양제 제형(정제·캡슐·액상·젤리)의 흡수율 차이: 붕해·용출·당 함량 <sub>2026-08-10 · 알약, 캡슐, 액상, 젤리... 어떤 제형이 더 잘 흡수될까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `tablet-vs-capsule-absorption-rate-difference` | 확실 | 공식 | 정제(알약)는 붕해 및 용출 과정이 필요한 반면, 연질캡슐은 위의 산성 환경에서 더 빠르게 녹아 액상 형태로 변하므로, 연질캡슐의 약효 발현이 정제보다 더 빠르게 일어난다. |  |
+| `liquid-supplement-higher-bioavailability-than-solid` | 확실 | 공식 | 액상 영양제는 정제나 캡슐보다 생물이용률이 높다. 이미 용해된 형태이므로 소화 흡수 과정이 단축되고, 위산 및 소장 효소에 노출되는 시간이 짧다. |  |
+| `gummy-supplement-high-sugar-content-concern` | 확실 | 공식 | 젤리형 영양제의 당 함량은 100g당 60~70g으로 매우 높으며, 이 정도의 고당분 섭취는 혈당을 급격히 올리고 인슐린 저항성을 유발할 수 있다. |  |
+| `gummy-supplement-vitamin-overdose-risk-berin` | 확실 | 공식 | 시판 젤리형 비타민 제품 중 일부는 구미 2개 섭취만으로 비오틴(B7)의 하루 권장량을 1만 배 이상 초과하는 양이 포함되어 있으며, 성인이 비오틴 1만 µg/day 이상 섭취하면 소화불량·혈당 조절 이상·피부 트러블 등 부작용이 생길 수 있다. |  |
+| `liposomal-formulation-enhanced-bioavailability` | 확실 | 공식 | 리포소말 제형(지질 소낭으로 포장)은 영양소를 세포막 투과에 최적화된 형태로 만들어 기존 정제나 캡슐보다 생물이용률을 크게 향상시킬 수 있으며, 리포소말 비타민 C는 기존 정제 형태보다 생체이용률이 높다. |  |
+| `supplement-form-absorption-dependent-on-content` | 확실 | 공식 | 영양제 흡수율은 제형 자체뿐 아니라 장내 pH, 소화 기능, 첨가물(바인더·필러), 코팅 종류에 따라 크게 달라질 수 있으며, 같은 캡슐 제형이라도 제품마다 질이 다를 수 있다. |  |
+
+### 영양제 이상사례 신고 체계: 식약처 신고 절차, 신고 대상, 보호 규칙 <sub>2026-08-10 · 영양제 먹고 이상하면, 어디에 어떻게 신고하나</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `supplement-adverse-event-reporting-channels-korea` | 확실 | 공식 | 한국에서 건강기능식품 이상사례는 소비자·사업자·의료 전문가가 식약처 통합민원상담(1339) 또는 식품안전나라 웹사이트를 통해 언제 어디서든 신고할 수 있으며, 사업자는 인지 후 7일 이내에 보고해야 한다. |  |
+| `supplement-adverse-event-definition-no-causality-required` | 확실 | 공식 | 이상사례는 건강기능식품 섭취로 인해 의심되는 바람직하지 않고 의도하지 않은 징후·증상·질병을 뜻하며, 인과관계가 반드시 확립되어야 하는 것은 아니다. |  |
+| `supplement-adverse-event-whistleblower-protection-korea` | 확실 | 공식 | 식약처는 건강기능식품 이상사례 신고자에 대한 신고자 보호 규칙을 시행하고 있으며, 신고자의 신원 보호와 신고로 인한 불이익으로부터의 보호를 보장한다. |  |
+| `supplement-adverse-event-severity-classification` | 확실 | 공식 | 이상사례는 심각도에 따라 사망·입원·장애·선천성 이상·의료 중재·기타 의학적으로 중요한 사례로 분류되며, 분류 기준에 따라 조치의 우선순위가 결정된다. |  |
+
+### 국내 맞춤형 영양제 소분 판매 규제, 추천 알고리즘의 한계, 구독 서비스 현황 <sub>2026-08-10 · 맞춤형 영양제 구독, 무엇을 근거로 추천할까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `korea-customized-health-supplement-division-system-2025-launched` | 확실 | 공식 | 한국은 2025년 1월 3일부터 '맞춤형 건강기능식품판매업' 제도를 공식 시행했으며, 이전에는 2020-2022년 규제 샌드박스로 시범 운영했다. 제도 시행으로 소비자가 개인 건강 상태와 생활습관에 맞춰 원하는 제품을 1회분씩 구매할 수 있게 되었다. |  |
+| `korea-customized-supplement-portioning-form-limit-3types` | 확실 | 공식 | 맞춤형 건강기능식품 소분 허용 제형은 정제, 캡슐, 환 3가지로 제한되며, 액상·분말·차 등 다른 형태의 소분은 허용되지 않는다. |  |
+| `korea-customized-supplement-manager-credential-7categories` | 확실 | 공식 | 맞춤형 건강기능식품 소분·조합 판매업소는 반드시 약사, 의사, 한의사, 간호사, 영양사, 한약사, 치과의사 중 한 명의 전문가를 선임해야 하며, 전문가의 개별 상담(대면·영상·전화·채팅)을 거친 후에만 판매 가능하다. |  |
+| `korea-customized-supplement-labeling-requirement-consumer-name` | 확실 | 공식 | 맞춤형 건강기능식품 판매시 제작된 맞춤 라벨에는 소비자 이름, 일일섭취량, 제조일, 업체명/소재지, 보관방법을 반드시 기재해야 하며, 원본 제품 정보도 함께 제공되어야 한다. |  |
+| `ai-customized-supplement-recommendation-algorithm-limitation` | 확인실패 🔶 | 후기 | AI 알고리즘 기반 영양제 추천 서비스는 사용자 건강 설문과 생활습관 데이터로 맞춤 조합을 제안하지만, 설문 기반 평가는 의료 검진을 대체할 수 없으며 개인의 생화학적 검사(혈액·대사) 결과를 반영하지 못한다는 근본적 한계가 있다. |  |
+| `customized-supplement-individual-packaging-convenience-and-adherence` | 확인실패 🔶 | 후기 | 맞춤형 영양제의 개별 포장·정기 배송 모델은 소비자의 복용 편의성과 약물 순응도를 높이는 장점이 있으며, 개인마다 다른 건강 상태를 반영한 조합을 제공한다. |  |
+| `customized-supplement-regulatory-gap-elderly-digital-literacy` | 확인실패 🔶 | 후기 | 맞춤형 건강기능식품 제도는 복잡한 신고 체계와 전문 용어로 인해 고령층·정보 이해도가 낮은 소비자들이 제도를 이해하고 접근하기 어려운 구조적 한계를 가지고 있다. |  |
+
+### 음식으로 먹을 때 vs 영양제로 먹을 때: 생체이용률, 식품 매트릭스 효과, 흡수 차이 <sub>2026-08-10 · 영양소는 음식에서 먹는 게 더 좋을까, 보충제에서?</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `food-matrix-effect-nutrient-bioavailability-trap` | 확실 | 공식 | 식품 매트릭스는 음식 내 다양한 성분들의 물리적 구조를 뜻하며, 이것이 영양소의 생체이용률에 영향을 준다. 예를 들어 채소의 셀룰로스 세포벽에 갇힌 영양소는 흡수가 어려우나, 식품이 가공(조리·분쇄)되면 식품 매트릭스가 파괴되어 영양소가 더 잘 흡수된다. |  |
+| `supplement-bioavailability-equal-or-superior-to-food` | 확실 | 공식 | 보충제(정제·캡슐) 형태의 비타민·미네랄이 음식에 첨가되거나 복용될 때, 그 생체이용률은 자연 식품 유래 영양소와 최소한 동등하거나 더 높을 수 있다. |  |
+| `phytate-fiber-antagonist-plant-nutrient-bioavailability-reduction` | 확실 | 공식 | 식물성 음식에 함유된 피테이트(phytate)와 식이섬유는 철·칼슘·아연 등 미네랄과 결합하여 불용성 착화물을 형성하므로, 식물성 영양소의 생체이용률은 동물성 영양소보다 20~50% 낮을 수 있다. |  |
+| `nutrient-synergy-in-food-vs-isolated-supplement` | 확실 | 공식 | 음식 속 영양소는 여러 비타민·미네랄·파이토케미칼이 함께 존재하여 시너지 효과가 있을 수 있으나, 단일 성분 보충제는 이 상승작용을 제공하지 못할 수 있다. |  |
+| `fat-soluble-vitamin-absorption-enhanced-by-dietary-fat` | 확실 | 공식 | 비타민 A·D·E·K 같은 지용성 비타민은 음식에 포함된 지방에 의해 흡수가 크게 향상되며, 보충제 형태라도 지방 섭취와 함께하면 생체이용률이 올라간다. |  |
+| `processed-food-high-nutrient-density-vs-bioavailability-paradox` | 확실 | 공식 | 초가공식품(ultra-processed foods)은 영양 매트릭스가 파괴되어 영양소의 생체이용률이 높지만, 영양가는 낮고 첨가물이 많다는 역설이 있다. |  |
+
+### 타우린: 에너지음료 함량, 피로 회복 작용, 카페인 상호작용, 심혈관 안전성 <sub>2026-08-10 · taurine-fatigue — 타우린 드링크, 어떤 피로에 맞을까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `taurine-energy-drink-typical-content-range` | 확실 | 공식 | 상업 에너지드링크의 타우린 함량은 일반적으로 1000~2000mg(1~2g)이며, 이는 임상 연구에서 사용된 용량(1000~3000mg)과 유사하다. |  |
+| `taurine-mechanism-cellular-protection-fatigue` | 확실 | 공식 | 타우린은 근육 기능 지원, 칼슘 신호전달 조절, 항산화 작용, 염증 억제 역할을 한다. 운동 유발 피로의 생리적 기전(산화 스트레스, 락테이트 축적, 염증)을 일부 완화할 수 있다. |  |
+| `taurine-performance-benefit-limited-evidence-rct` | 확실 | 공식 | 에너지드링크의 카페인(80mg)과 타우린(1000mg) 또는 이들의 혼합물만으로는 젊은 성인의 신체 및 인지 능력을 운동 중 유의하게 증가시키지 않는다는 이중맹검 위약 대조 무작위 교차 시험이 있다. |  |
+| `caffeine-primary-driver-fatigue-reduction-energy-drink` | 확실 | 공식 | 에너지드링크의 피로 감소는 주로 카페인(중추신경계 자극제)이 담당하며, 타우린은 부정맥·산화 스트레스 등 카페인의 심혈관 부작용을 완화하는 보조 역할을 할 가능성이 있다. |  |
+| `taurine-fatigue-recovery-recovery-acceleration-partial-support` | 논쟁 🔶 | 공식 | 타우린의 항염증·항산화 작용이 운동 후 회복을 가속화할 수 있다는 가설이 있고, 반복 스프린트 후 타우린 투여가 피로 생리 지표를 일부 개선한다는 보고가 있으나, 기능적 회복 속도(근력, 파워 회복)에 대한 증거는 제한적이다. |  |
+| `caffeine-taurine-arrhythmia-animal-model-evidence` | 확실 | 공식 | 동물 모델(전체 심장 실험)에서 카페인과 타우린의 병용 투여는 심실 부정맥을 유발했으며, 이는 심장 재분극 단축과 유효 불응기 단축을 통한 재진입(re-entry) 메커니즘이었다. |  |
+| `caffeine-taurine-blood-pressure-increase-human-study` | 확실 | 공식 | 인체 연구에서 타우린·카페인 함유 에너지드링크 섭취는 혈압 상승을 보였으며, 특히 기저 hypertension이 있거나 유전적 장 QT 증후군 환자에서 부정맥 위험이 증가했다. |  |
+| `european-union-taurine-caffeine-protective-potential` | 논쟁 🔶 | 공식 | EU 과학 식품 위원회는 '타우린과 카페인 사이에 상호작용이 있다면, 타우린이 카페인의 심혈관 효과를 감소시킬 가능성이 있다'고 결론지었다. |  |
+| `taurine-no-ergogenic-effect-energy-drink-alone` | 확실 | 공식 | 에너지드링크 성분을 분리하여 평가한 결과, 비타민, 글루쿠론산, 인삼 등의 성분과 마찬가지로 타우린만으로는 운동 능력에 유의한 인상적 효과(ergogenic effect)를 보이지 않는다. |  |
+| `taurine-age-related-decline-oxidative-metabolism-animal-study` | 논쟁 🔶 | 공식 | 동물 연구에서 상대적으로 낮은 용량의 타우린을 장기 투여했을 때 나이 관련 산소 소비(O2 consumption) 저하와 자발 운동 활동 감소를 어느 정도 완화했다. |  |
+
+### 하지정맥류 영양제, 디오스민·말밤종자추출물 임상 근거 및 한계 <sub>2026-08-10 · 정맥류 먹는 영양제, 수술 대신 할 수 있을까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `varicose-vein-pathophysiology-venous-insufficiency` | 확실 | 공식 | 하지정맥류는 다리의 정맥 판막(valve)이 손상되어 역류를 막지 못하면서 정맥혈이 모여 정맥이 팽창·구불거리는 질환이다. 정맥 판막 손상은 한 번 생기면 약으로 복구되지 않으므로, 근본 치료는 시술 또는 수술이고, 영양제는 증상 완화에만 도움이 될 수 있다. |  |
+| `diosmin-hesperidin-varicose-vein-symptom-relief` | 확실 | 공식 | 디오스민(diosmin) 450mg + 헤스페리딘(hesperidin) 50mg 병용 투여는 Cochrane 체계적 문헌고찰(phlebotonics for venous insufficiency, 56개 RCT, 7,690명 메타분석)에서 다리 부종·통증·피로 증상을 유의하게 개선하는 것으로 확인되었다. |  |
+| `diosmin-venous-symptom-improvement-timeline` | 확실 | 공식 | 디오스민 투여 후 다리 통증이 4주에 최소 30% 감소, 12주에 85.4% 감소한 임상 보고가 있다(389명). |  |
+| `diosmin-limitations-root-cause-venous-valve` | 논쟁 🔶 | 공식 | 정맥활성약(phlebotonics)은 손상된 정맥 판막을 복구하지 못한다. Cochrane 메타분석에 따르면 이들 약물의 역할은 증상 완화에 제한된다. |  |
+| `horse-chestnut-seed-extract-aescin-venous-insufficiency` | 확실 | 공식 | 말밤종자추출물(Aesculus hippocastanum, 표준화 aescin 함유)은 항염증·항부종 작용을 통해 정맥 긴장도를 개선하고, 미세순환을 촉진한다고 알려져 있다. |  |
+| `horse-chestnut-seed-extract-clinical-efficacy-placebo-controlled` | 확실 | 공식 | Cochrane 체계적 문헌고찰에 따르면, 말밤종자추출물은 모든 위약대조 임상에서 다리 부종·통증·피로 증상을 유의하게 개선했으며, 압박 치료(compression therapy)와 비슷한 효과를 보였다. |  |
+| `horse-chestnut-seed-extract-leg-volume-reduction` | 확실 | 공식 | 말밤종자추출물 투여 후 다리 부피(ankle/calf circumference)가 감소하고, 정맥 궤양(venous leg ulceration) 치료 시에는 상처 드레싱 빈도가 줄어들고 치료 비용이 감소한 보고도 있다. |  |
+| `korea-varicose-vein-functional-ingredient-not-approved` | 확인실패 | 공식 | 한국 식약처 건강기능식품 고시형 원료 중 '정맥류' 또는 '정맥부전' 치료에 특화된 기능성 원료는 없다. 디오스민과 말밤종자추출물은 한국에서 개별인정형 또는 의약품으로만 존재할 수 있다. |  |
+| `minimally-invasive-procedures-vs-supplements-efficacy-comparison` | 확실 | 공식 | 최소침습 정맥류 시술(radiofrequency ablation, endovenous laser)의 정맥 폐쇄율은 90~100%이며 회복이 빠르고 장기 재발률도 낮다는 것이 Journal of Vascular Surgery 메타분석(29개 임상)에서 보고되었다. 반면 정맥활성약은 증상 완화만 가능하고 정맥류 자체를 치료하지 못한다. |  |
+
 ### 비타민B군 결핍 진단 방법 및 피로 증상 개선 근거 <sub>2026-08-04 · 비타민B군, 피로에 효과 보는 사람과 아닌 사람</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -5451,6 +6671,31 @@ _(팩트 없음)_
 | `b-vitamin-excess-urine-yellow-harmless` | 확실 | 공식 | 과다한 비타민B 섭취는 수용성 비타민의 특성상 잉여분이 소변으로 배설되는데, 이때 소변이 노란색 또는 형광색으로 변하는 것은 B2(리보플라빈) 과잉 배설의 신호이며, 건강상 해로움은 없다. |  |
 | `b-complex-supplement-vegan-vegetarian-necessity` | 확실 | 공식 | B12는 주로 동물성 식품에 함유되어 있어 채식인·특히 완전 채식인(vegan)은 B12 결핍 위험이 높으므로 의료진의 상담 후 보충이 필수적일 수 있다. |  |
 
+### 비타민B12 채식인 섭취: 흡수 기전, 결핍 지표, 강화식품 vs 미신 <sub>2026-08-10 · vitamin-b12-vegan — 채식하면 비타민B12는 어떻게 채우나</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `b12-intrinsic-factor-absorption-mechanism` | 확실 | 공식 | 비타민B12는 위의 벽세포(parietal cell)에서 분비하는 내재인자(intrinsic factor, IF)와 결합해야만 소장 말단부(terminal ileum)에서 흡수될 수 있다. 음식에서 분리된 B12는 먼저 haptocorin(HC)과 결합했다가, 십이지장에서 췌장 단백분해효소에 의해 HC-B12 복합체가 분해되고, B12가 내재인자(IF)와 새롭게 결합하여 소장 말단부의 cubam 수용체를 통해 내포작용(receptor-mediated endocytosis)으로 흡수된다. |  |
+| `b12-fortified-food-only-reliable-plant-source` | 확실 | 공식 | 60년 이상의 채식인 실험 결과, B12 강화식품(fortified food)과 B12 보충제만이 최적 건강을 지탱할 수 있는 신뢰할 만한 식물 기반 B12 출처로 입증되었다. 강화 영양효모, 강화 식물성 음료, 강화 시리얼, 강화 채식 육류 대체 제품 등이 유효하다. |  |
+| `spirulina-pseudovitamin-b12-not-bioavailable` | 확실 | 공식 | 스피룰리나에 측정되는 B12의 약 80%는 유사 B12(pseudovitamin B12, B12 아날로그)이며, 인체에서 이용할 수 없다. 실제 바이오이용률은 매우 낮거나 0에 가깝다. |  |
+| `fermented-plant-foods-tempeh-kimchi-b12-analog-interfere` | 논쟁 🔶 | 공식 | 템페, 김치, 사우어크라우트, 콤부차 같은 발효 식품은 미량의 B12만 함유하며, 이들이 포함한 B12 유사물질(B12 아날로그)은 인체 대사에서 실제 B12와 경쟁하여 흡수를 방해할 수 있다. |  |
+| `b12-fortified-food-spacing-optimal-absorption-4-hours` | 확실 | 공식 | 강화식품만으로 B12 권장량을 충족하려면 최소 2~3 끼의 강화식품을 하루에 최소 4시간 간격으로 섭취해야 최적 흡수가 가능하다. |  |
+| `b12-recommended-dietary-allowance-rda-adults-vegan` | 확실 | 공식 | 성인 B12 권장 일일섭취량(RDA)은 2.4mcg(마이크로그램)이며, 이를 강화식품만으로 충족하려면 매일 여러 차례의 섭취가 필요하므로, 많은 영양학 가이드는 채식인에게 정기적 보충제 또는 보충된 음식을 권장한다. |  |
+| `b12-supplement-form-cyanocobalamin-methylcobalamin-efficacy-equal` | 논쟁 🔶 | 공식 | 채식인 대상의 B12 보충제는 시아노코발라민(cyanocobalamin, 일반형)과 메틸코발라민(methylcobalamin, 활성형) 모두 유효하다는 대규모 임상 근거가 있으며, 비용 대비 효과 측면에서 시아노코발라민이 더 실용적이다. |  |
+| `b12-deficiency-nervous-symptom-warning-sign` | 확실 | 공식 | B12 결핍이 진행되면 신경 증상(손발 저림, 어지러움, 인지 변화)이 나타날 수 있으며, 이는 돌이킬 수 없는 신경 손상의 신호다. 채식인은 주기적으로(최소 연 1회) 혈중 B12 수치를 확인해야 하며, 신경 증상이 나타나면 즉시 의료 전문가 상담이 필수다. |  |
+
+### 비타민E와 셀레늄: SELECT 시험 결과, 상한섭취량, 한국인 섭취 현황, 고용량 위험성 <sub>2026-08-10 · 비타민E와 셀레늄, 얼마나 먹는 게 적당할까</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `selenium-upper-limit-korea-400-mcg-per-day` | 확실 | 공식 | 한국 성인의 셀레늄 상한섭취량(UL)은 400 µg/일로 설정되었으며, 이는 연구 결과 0.85 mg/일의 최대무해용량에 불확실계수 2.0을 적용하여 결정되었다. |  |
+| `select-trial-vitamin-e-selenium-prostate-cancer-ineffective` | 확실 | 공식 | Selenium and Vitamin E Cancer Prevention Trial(SELECT)는 35,533명 참가자를 대상으로 한 대규모 RCT로서, 셀레늄과 비타민 E가 단독 또는 함께 복용했을 때 전립선암을 예방하지 못한다는 결론에 도달했다(2008년). |  |
+| `select-trial-vitamin-e-alone-prostate-cancer-risk-increase-17-percent` | 확실 | 공식 | SELECT 시험에서 비타민 E만 복용한 남성에서 전립선암 발생 위험이 17% 증가했으며, 위험도 차이는 1,000 인년당 1.6건의 추가 전립선암 사례였다. |  |
+| `select-trial-selenium-high-grade-prostate-cancer-risk-increase` | 확실 | 공식 | SELECT 시험에서 셀레늄 보충제 복용 그룹은 전체 전립선암은 예방하지 못했으나, 고등급 전립선암 발생 위험은 증가하고 제2형 당뇨병 발생률도 높아졌다. |  |
+| `korea-selenium-intake-adequacy-dietary-shift-recent-years` | 확실 | 공식 | 과거에는 한국인의 셀레늄 섭취 부족이 우려되었으나, 최근 사회적으로 육류 섭취와 밀가공식품 및 견과류(브라질너트 등) 섭취가 증가하면서 일반 식단만으로도 상당한 셀레늄 섭취가 가능해진 상태다. |  |
+| `vitamin-e-upper-limit-1000-iu-day-iom-toxicity-threshold` | 확실 | 공식 | 비타민 E의 상한섭취량은 1,000 IU/day(약 900 mg/day, d-alpha-tocopherol 기준)로 설정되었으며, 이를 초과하는 장기 복용은 출혈 위험과 기타 독성을 초래할 수 있다. |  |
+| `select-trial-trial-cost-114-million-lack-of-efficacy` | 확실 | 공식 | SELECT 시험은 미국 NIH가 1억 1,400만 달러를 투자한 대규모 시험이었으나, 예방 효과 부재와 예기치 않은 부작용으로 인해 중단되었다. |  |
+
 ### 아연 보충제와 감기 기간 단축: 형태·타이밍·구리 균형 <sub>2026-08-04 · 아연, 감기를 짧게 만든다는 말의 조건</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -5459,6 +6704,32 @@ _(팩트 없음)_
 | `zinc-lozenge-timing-critical-24-hour-onset` | 확실 | 공식 | 아연의 감기 기간 단축 효과는 감기 증상 발생 후 24시간 내에 복용을 시작해야 효과가 있으며, 증상이 시작된 지 24시간 이후 복용은 효과가 제한적이다. |  |
 | `zinc-long-term-high-dose-copper-deficiency-risk` | 확실 | 공식 | 아연을 장기간 100 mg/day 이상의 고용량으로 복용하면 소장에서 구리 흡수를 경쟁적으로 억제하여 철결핍성 빈혈, 호중구감소증, 신경계 손상(척수증) 등 구리 결핍 증상이 나타날 수 있으며, 이 상태는 구리 보충 후에도 완전히 회복되지 않을 수 있다. |  |
 | `zinc-supplement-form-comparison-efficacy` | 확실 | 공식 | 아연 로젠지 형태 중에서 아연 아세테이트와 아연 글루코네이트가 감기 기간 단축에 효과적이며, 아연 아세테이트가 약간 더 효과적인 것으로 보고되었다. 일반 정제·캡슐 형태의 아연은 감기 기간 단축에 임상적 효과가 입증되지 않았다. |  |
+
+## 알약연구소·관절 건강
+
+### 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과 <sub>2026-08-10 · joint-supplement-compare</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `joint-supplement-overview-5-ingredients-with-varying-evidence` | 확실 | 공식 | 관절 건강 영양제 5가지(글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐)는 각각 생화학적 기전은 그럴듯하나, 임상 효과에 대한 근거의 강도와 일관성이 크게 다르다. |  |
+| `glucosamine-chondroitin-gait-trial-window-summary` | 확실 | 공식 | 미국 NIH 주도 GAIT 임상(24주, 무릎관절염 1,583명)의 주요 결과: 글루코사민 64%, 콘드로이틴 65%, 병용 66% vs 위약 60% 반응 — 통계적 유의 차이 없음. 다만 중등도-심한 통증 부분군에서만 병용군이 위약보다 유의성을 보임(사후분석). |  |
+| `msm-methylsulfonylmethane-limited-evidence-small-trials` | 논쟁 🔶 | 공식 | MSM(메틸설포닐메탄)은 생화학적으로 황 공급원이지만, 무릎 관절염 치료에 대한 근거는 표본 크기가 작은 시험들에만 기반되어 있으며 대규모 RCT가 부족하다. |  |
+| `boswellia-extract-arthritis-pain-modest-evidence` | 논쟁 🔶 | 공식 | 보스웰리아 추출물(boswellia serrata resin)은 항염증 성분 보스웰산을 함유하며, 무릎 관절염 및 관절 뻣뻣함 증상의 일부 임상시험에서 위약보다 나은 결과를 보였으나, 전체적 근거는 아직 제한적이다. |  |
+| `collagen-joint-vs-skin-evidence-pathway-difference` | 논쟁 🔶 | 공식 | 콜라겐은 연골과 피부의 주요 성분이지만, 경구 섭취 콜라겐이 무릎 연골에 도달하는 기전은 명확하지 않으며, 피부 탄력 개선과 관절 건강은 서로 다른 용량·부위에 대한 임상시험이 필요하다. |  |
+
+## 알약연구소·노년층 건강
+
+### 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항 <sub>2026-08-10 · senior-supplement-guide</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `elderly-polypharmacy-definition-44-percent-prevalence` | 확실 | 공식 | 다약제(polypharmacy)는 5개 이상의 약물을 동시에 복용하는 것을 의미하며, 65세 이상 노년층의 44%가 다약제 복용 상태이고, 80세 이상에서는 50% 근처까지 높아진다. |  |
+| `age-related-kidney-function-decline-drug-clearance-impairment` | 확실 | 공식 | 신장 기능은 나이와 함께 저하되며, 많은 약물과 영양제가 신장을 통해 배출되므로, 노년층의 신기능 저하는 약물 및 영양제의 체내 축적으로 이어질 수 있다. |  |
+| `elderly-adverse-drug-event-3-10fold-higher-without-ckd` | 확실 | 공식 | 노년층의 약물 부작용 발생률은 일반 성인보다 3~10배 높으며, 특히 만성 신장질환이 있으면 더 높아진다. |  |
+| `elderly-supplement-drug-interaction-risk-common-drugs` | 확실 | 공식 | 노년층이 복용하는 일반적 약물(항응고제, 갑상선약, 항생제)과 영양제(칼슘, 철분, 비타민 K, 프로바이오틱스 등)의 상호작용이 자주 발생한다. |  |
+| `elderly-physician-pharmacist-coordination-essential` | 확실 | 공식 | 노년층이 영양제를 추가하기 전에 담당 의사나 약사와 반드시 상담해야 하며, 현재 복용 약물 목록과 함께 검토하는 것이 필수다. |  |
+| `elderly-supplement-upper-limit-compliance-critical` | 확실 | 공식 | 노년층은 상한섭취량(UL)을 초과하지 않도록 특히 주의해야 하며, 지용성 비타민(A, D, E, K)의 장기 고함량 복용은 신기능 저하 상황에서 독성 위험이 높아진다. |  |
+| `elderly-cognitive-decline-supplement-adherence-challenge` | 확실 | 공식 | 일부 노년층의 인지 기능 저하(경도인지장애 등)는 복잡한 복용 시간표 준수를 어렵게 하므로, 영양제 복용이 간단하게 설계되어야 한다. |  |
 
 ## 알약연구소·눈 건강
 
@@ -5512,6 +6783,27 @@ _(팩트 없음)_
 | `artificial-tears-first-line-treatment-dry-eye` | 확실 | 공식 | 의료 지침에서 안구건조증의 1차 치료는 인공눈물(인공눈액)이며, 보충제는 보조 치료로만 고려된다. |  |
 | `dry-eye-multifactorial-omega3-single-component-limitation` | 확실 | 공식 | 안구건조증은 다원인 질환(지질층 결핍, 수성층 결핍, 염증, 이물감, 눈꺼풀 기능이상 등)이므로, 오메가3 단독 보충은 모든 환자에게 효과적이지 않을 수 있다. |  |
 
+### 건성안 관리: 인공눈물 vs 영양제 순서, 의료 표준 치료, 오메가3 근거 <sub>2026-08-10 · eye-drops-vs-supplement</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `dry-eye-first-line-therapy-artificial-tears-why` | 확실 | 공식 | 건성안 질환(DED)의 1차 표준 치료는 인공눈물이며, 이유는 (1) 즉시 증상 완화, (2) 쉬운 접근성, (3) 최소 부작용, (4) 충분한 임상 근거 때문이다. |  |
+| `artificial-tears-demulcent-ingredients-tear-film-restoration` | 확실 | 공식 | 인공눈물의 주 성분은 윤활제(carboxymethylcellulose, 히알루론산 등)이며, 이들은 눈물막을 직접 보충하고 눈 표면의 건조함을 즉각 완화한다. |  |
+| `omega3-supplement-dry-eye-dream-trial-no-benefit-vs-placebo` | 확실 | 공식 | 535명의 경증~중등증 건성안 환자를 12개월간 추적한 DREAM 임상시험에서 오메가3 보충제(EPA 2g + DHA 1g 일일)는 위약(올리브유)과 비교해 증상과 임상 징후를 유의미하게 개선하지 못했다. |  |
+| `omega3-dry-eye-not-first-line-complementary-therapy` | 확실 | 공식 | 오메가3는 건성안의 1차 치료가 아니며, 인공눈물이나 처방 항염증 점안액(lifitegrast 등) 이후의 보조 요법(complementary therapy)으로 고려된다. |  |
+| `artificial-tears-preservative-free-recommendation-frequent-use` | 확실 | 공식 | 하루 2회 이상 자주 인공눈물을 사용해야 한다면 방부제 없는 일회용(single-dose) 인공눈물이 권장되며, 방부제의 독성 축적을 피할 수 있다. |  |
+
+### 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 <sub>2026-08-10 · eye-supplement-compare</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `eye-supplement-comparison-target-symptoms-by-ingredient` | 확실 | 공식 | 눈 영양제 성분들은 증상별로 다르게 효과를 나타낸다: 루테인/제아잔틴은 황반변성 위험군의 진행 지연, 아스타잔틴은 눈 조절력(노안)과 디지털 피로 개선, 빌베리는 화면 피로 감소, 오메가3는 눈물막 지질층 지원(증거 약함). |  |
+| `lutein-zeaxanthin-macular-degeneration-prevention-vs-progression-delay` | 확실 | 공식 | 루테인+제아잔틴은 황반변성이 없는 일반인의 '예방'보다는, 이미 황반변성 진행 위험이 높은 사람의 '진행 지연'에 근거가 있다(AREDS2 연구 결과). |  |
+| `astaxanthin-accommodation-presbyopia-effective-4-6mg-daily` | 확실 | 공식 | 아스타잔틴 4~6mg을 4~12주 복용한 임상 연구들에서 눈 조절력(accommodation) 개선과 노안 관련 증상 감소가 보고되었으며, 46~65세 노인 대상 연구에서 조절력이 평균 19% 개선되었다. |  |
+| `astaxanthin-digital-eye-strain-symptom-relief-evidence` | 확실 | 공식 | 컴퓨터/스마트폰 사용으로 인한 디지털 안정피로(CVS)에는 아스타잔틴이 가장 잘 연구되었으며, 안경 조절 개선과 주관적 피로 감소가 4~12mg 용량, 4~84일 투여에서 입증되었다. |  |
+| `bilberry-anthocyanin-screen-fatigue-12week-reduction` | 확실 | 공식 | 빌베리 추출물(안토시아닌 함유, ~240mg/일)은 12주 RCT에서 화면 관련 안정 피로를 감소시켰다. |  |
+| `combined-eye-supplement-lutein-astaxanthin-bilberry-dha-efficacy` | 확실 | 공식 | 루테인 10mg, 아스타잔틴 4mg, 빌베리 추출물, 검은콩 안토시아닌 2.3mg, DHA 50mg의 복합 포뮬라를 4주 복용한 결과 눈 조절력과 눈 피로·흐림 증상이 위약보다 개선되었다. |  |
+
 ### 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성 <sub>2026-08-04 · macular-degeneration-prevention</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -5540,6 +6832,19 @@ _(팩트 없음)_
 | `vitamin-a-deficiency-vs-normal-intake-distinction` | 확실 | 공식 | 야맹증을 비타민A 보충제로 개선하려는 접근은 '실제 비타민A 결핍이 있는 경우'에만 타당하며, 정상 섭취 상태의 건강한 사람에서는 야간시력 개선 효과가 입증되지 않았다. |  |
 | `vitamin-a-toxicity-symptoms-headache-skin-dryness-cns-pressure` | 확실 | 공식 | 비타민A 과다 섭취 시 두통, 피부 건조, 가려움, 심한 경우 두개내압 증가, 뼈 통증, 구역질 등이 나타날 수 있으며, 이를 비타민A 과다증(hypervitaminosis A)이라 한다. |  |
 | `beta-carotene-vs-retinol-pregnancy-safe-alternative` | 확실 | 공식 | 베타카로틴은 비타민A와 달리 체내에서 필요한 만큼만 레티놀로 전환되므로(피드백 조절), 아무리 고용량으로 섭취해도 기형 위험을 일으키지 않는다. |  |
+
+## 알약연구소·뼈 건강
+
+### 칼슘 보충제 흡수: 형태별 생물이용률, 1회 최대 흡수량, 마그네슘 병용 효과 <sub>2026-08-10 · calcium-supplement-absorption</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `calcium-citrate-superior-bioavailability-vs-carbonate` | 확실 | 공식 | 메타분석 결과, 구연산칼슘(calcium citrate)은 탄산칼슘(calcium carbonate)보다 생물이용률이 22~27% 높으며, 공복이든 식사 후든 흡수율 차이가 일정하다. |  |
+| `calcium-absorption-plateau-500mg-single-dose` | 확실 | 공식 | 칼슘 흡수는 1회 투여량이 500~600mg을 초과하면 흡수 효율이 급격히 저하되며, 약 36%의 칼슘이 300mg 용량에서 흡수되지만 1,000mg 용량에서는 약 28%만 흡수된다. |  |
+| `calcium-citrate-absorbable-empty-stomach-carbonate-needs-acid` | 확실 | 공식 | 탄산칼슘은 위산이 필요해 공복에 복용하면 흡수가 떨어질 수 있으나, 구연산칼슘은 이미 산성 형태이므로 공복이든 식후든 상관없다. |  |
+| `magnesium-calcium-concurrent-supplementation-safe` | 확실 | 공식 | 마그네슘과 칼슘을 동시에 복용해도 서로의 흡수를 유의미하게 감소시키지 않으며, 이론적 경쟁 흡수는 실제로는 미미하다. |  |
+| `magnesium-essential-calcium-utilization-bone-formation` | 확실 | 공식 | 마그네슘은 칼슘 흡수와 활용에 필수적이며, 마그네슘이 부족하면 충분한 칼슘을 섭취해도 뼈 형성에 제대로 활용되지 않을 수 있다. |  |
+| `calcium-carbonate-better-with-food-citrate-anytime` | 확실 | 공식 | 탄산칼슘은 음식과 함께 복용했을 때 흡수가 가장 좋으나, 구연산칼슘은 식사 여부와 무관하게 일정한 흡수율을 유지한다. |  |
 
 ## 애플
 
@@ -5680,7 +6985,7 @@ _(팩트 없음)_
 | `lutein-recommended-dose-20mg-daily-safe` | 확실 | 공식 | 루테인의 안전한 일일 권장 용량은 20mg/day까지이며, 이 용량까지 임상적으로 중요한 부작용이 보고되지 않았다. | 루테인 / 안전성 / 권장 용량 / 전 연식 / 글로벌 |
 | `lutein-carotenodermia-excess-skin-yellowing` | 확실 🔶 | 후기 | 루테인을 과다하게 또는 장기간 섭취하면 혈중 루테인 수치가 높아져 황피증(carotenodermia)이라 불리는 황색 피부 변색이 나타날 수 있으나, 혈중 루테인이 감소하면 원래 색으로 돌아온다. | 루테인 / 안전성 / 부작용 / 전 연식 / 글로벌 |
 | `lutein-longterm-overdose-lung-cancer-concern` | 논쟁 🔶 | 후기 | 합성 루테인을 장기간 과다복용할 경우, 포함된 카로테노이드 성분 자체가 폐암 발병 위험을 증가시킬 수 있다는 보고가 있다. | 루테인 / 안전성 / 장기 과다 부작용 / 전 연식 / 글로벌 |
-| `lutein-orlistat-interaction-fat-blocker` | 확실 | 공식 | 올리스타트(orlistat)와 같은 지방 차단제는 루테인의 장내 흡수를 감소시킬 수 있다. | 루테인 / 안전성 / 약물 상호작용 / 전 연식 / 글로벌 |
+| `lutein-orlistat-interaction-fat-blocker` | 확실 | 공식 | 오르리스타트 같은 지방 흡수 억제제는 지용성 영양소와 카로티노이드(베타카로틴 등)의 흡수를 줄인다. FDA 라벨은 지용성 비타민 보충제를 오르리스타트 복용 2시간 전후로 띄워 먹도록 권고한다. 루테인도 카로티노이드라 같은 영향을 받을 수 있다. | 루테인 / 안전성 / 약물 상호작용 / 전 연식 / 글로벌 |
 | `lutein-synthetic-vs-natural-deposit-concern` | 확인실패 🔶 | 후기 | 합성 루테인을 습관적으로 장기 복용하면 인체에 잔류하여 망막에 결정체를 형성하거나 시야 굴절 현상을 보인 사례가 드물게 보고되었다. | 루테인 / 안전성 / 장기 합성 루테인 부작용 / 전 연식 / 글로벌 |
 | `lutein-dosage-labeling-ester-weight-confusion` | 확인실패 🔶 | 후기 | 루테인 제품 라벨에서 에스테르형 루테인의 함량을 표기할 때, 에스테르 원료의 전체 무게로 표기하면 실제 루테인 함량과 차이가 난다. | 루테인 / 영양제 / 표기 투명성 / 2026 현행 / KR |
 | `who-consider-lutein-supplement-insufficient-diet` | 확실 | 공식 | 루테인 보충제 복용을 고려할 만한 대상은 식이로 충분한 루테인을 섭취하지 못하는 사람, 특히 이미 황반변성 위험이 높은 사람이다. | 루테인 / 영양제 / 적응증 / 2026 현행 / 글로벌 |
@@ -5932,13 +7237,22 @@ _(팩트 없음)_
 | 팩트 id | 인용한 조사 |
 |---|---|
 | `4k-video-shooting-sd-card-requirement` | 액션캠(고프로·오즈모류) 전원 불량·녹화 안 됨·배터리·방수 자가점검, 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
-| `antibiotic-probiotic-simultaneous-administration-interference` | 마그네슘과 다리 쥐: 임상적 효과 근거 수준과 특정 인구군별 차이, 프로바이오틱스 균주 특이성·CFU 함정·목적별 균주 선택 |
-| `anticoagulant-vitamin-k-interaction-thrombosis-risk` | 코엔자임Q10(CoQ10)의 스타틴 근육통 완화 임상 근거 및 형태별 차이, 커큐민(강황): 생체이용률 개선 기술과 간 이상사례 보고의 신뢰도, 비타민K2의 뼈 건강 기전과 항응고제 금기 |
+| `aha-glycolic-acid-smallest-molecule-weight` | 만델산: 민감성 피부의 부드러운 각질 관리 |
+| `antibiotic-probiotic-simultaneous-administration-interference` | 항생제 복용 중 유산균: 항생제 관련 설사 근거·복용 간격·실제 효과, 마그네슘과 다리 쥐: 임상적 효과 근거 수준과 특정 인구군별 차이, 프로바이오틱스 균주 특이성·CFU 함정·목적별 균주 선택, 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항 |
+| `anticoagulant-vitamin-k-interaction-thrombosis-risk` | 혈행 개선 영양제와 수술·시술 전 주의, 항혈소판·항응고 병용 위험, 코엔자임Q10(CoQ10)의 스타틴 근육통 완화 임상 근거 및 형태별 차이, 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항, 커큐민(강황): 생체이용률 개선 기술과 간 이상사례 보고의 신뢰도, 비타민K2의 뼈 건강 기전과 항응고제 금기 |
 | `app-performance-class-definition` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `apple-watch-heart-rate-wearing-position` | 스마트밴드(샤오미 미밴드·핏빗 등) 충전·측정·앱 연동 자가점검 |
-| `areds2-primary-outcome-no-benefit-beyond-areds` | 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성 |
-| `areds2-subgroup-low-dietary-lutein` | 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성 |
+| `areds2-lutein-zeaxanthin-dose-protocol` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
+| `areds2-primary-outcome-no-benefit-beyond-areds` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성 |
+| `areds2-subgroup-low-dietary-lutein` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성 |
+| `artificial-tears-first-line-treatment-dry-eye` | 건성안 관리: 인공눈물 vs 영양제 순서, 의료 표준 치료, 오메가3 근거 |
+| `astaxanthin-accommodation-improvement-6mg-4weeks` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
+| `astaxanthin-basic-mechanism-antioxidant-ciliary-body` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
+| `astaxanthin-digital-eye-strain-rct-dosage-4-12mg` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
+| `astaxanthin-recommended-dosage-4-6mg-daily` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
+| `autoimmune-disease-supplement-contraindication` | 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항 |
 | `automatic-stop-timer` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
+| `b-complex-supplement-vegan-vegetarian-necessity` | 비타민B12 채식인 섭취: 흡수 기전, 결핍 지표, 강화식품 vs 미신 |
 | `battery-annual-reset-full-discharge` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |
 | `battery-charging-adapter-verification` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석, 휴대용 손선풍기(핸디형·넥밴드형) AS셀프체크: 충전안됨·안돌아감·약풍·소음·배터리팽창, 마사지건(안마건) 자가점검·배터리·안전, 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `battery-charging-terminal-contact-cleaning` | 차량용·핸디형 무선청소기 흡입 약함·충전 불량·배터리 급감 자가점검, 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석, 휴대용 손선풍기(핸디형·넥밴드형) AS셀프체크: 충전안됨·안돌아감·약풍·소음·배터리팽창, 마사지건(안마건) 자가점검·배터리·안전, 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
@@ -5955,18 +7269,22 @@ _(팩트 없음)_
 | `bidet-circuit-breaker-leakage-protection` | 비데 자가점검 2차 — 물·온수·누수·동파·노즘 기계 고장 |
 | `bidet-water-stoppage-check-steps` | 비데 자가점검 2차 — 물·온수·누수·동파·노즘 기계 고장 |
 | `blade-extremely-sharp-cutting-risk` | 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
-| `calcium-absorption-vitamin-d-magnesium-synergy` | 한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량 |
+| `calcium-absorption-vitamin-d-magnesium-synergy` | 칼슘 보충제 흡수: 형태별 생물이용률, 1회 최대 흡수량, 마그네슘 병용 효과, 성장 관련 기능성 원료 인정 현황, 연령별 상한섭취량, 성장 보충제 선택 기준, 음식으로 먹을 때 vs 영양제로 먹을 때: 생체이용률, 식품 매트릭스 효과, 흡수 차이, 한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량 |
+| `calcium-iron-competitive-absorption-spacing` | 칼슘 보충제 흡수: 형태별 생물이용률, 1회 최대 흡수량, 마그네슘 병용 효과, 프리바이오틱스·신바이오틱스: 정의·구성 기준·함량·부작용, 임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성 |
 | `camera-lens-cleaning-method` | 액션캠(고프로·오즈모류) 전원 불량·녹화 안 됨·배터리·방수 자가점검, 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `camera-lens-fog-condensation` | 액션캠(고프로·오즈모류) 전원 불량·녹화 안 됨·배터리·방수 자가점검, 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `camera-write-speed-importance` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `card-reader-sdxc-compatibility-requirement` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `card-reader-usb3-speed-advantage` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
+| `centella-asiatica-scar-treatment-280-patient-rct` | 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드, 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드 |
 | `chair-power-reboot` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
-| `channel-interference-2g4ghz-vs-5ghz` | 가정용 CCTV·홈캠 연결 안 됨·영상 끊김·녹화 안 됨 자가점검, 스마트 플러그(스마트 콘센트) 와이파이 연결 안 됨·앱 인식·원격 제어 불가 자가점검 |
+| `channel-interference-2g4ghz-vs-5ghz` | 가정용 CCTV·홈캠 연결 안 됨·영상 끊김·녹화 안 됨 자가점검, 스마트 플러그(스마트 콘센트) 와이파이 연결 안 됨·앱 인식·원격 제어 불가 자가점검, 와이파이 느려짐 진단: 속도측정·채널 간섭·대역 선택 |
 | `charging-adapter-damage-check` | 전기면도기 자가점검·날 관리·물세척·회전식vs왕복식·충전 불량, 헤어클리퍼(이발기) 자가점검·날 관리·오일링·청소·충전 불량, 구강세정기·워터픽 자가점검 — 물 안 나옴·약함·충전 불량·노즐 막힘·물새는 증상·잇몸 출혈·관리 |
 | `charging-disabled-high-temperature` | 배터리 충전 통념 팩트체크: 고속충전·100% 충전·0% 방전·밤새 충전·발열의 실제 영향 |
 | `charging-heat-accelerates-degradation-above-60celsius` | 포터블 파워스테이션 충전 안 됨·출력 안 됨·발열·배터리 팽창 자가점검 및 보관 기준 |
 | `charging-inductive-position` | 구강세정기·워터픽 자가점검 — 물 안 나옴·약함·충전 불량·노즐 막힘·물새는 증상·잇몸 출혈·관리 |
+| `chondroitin-cartilage-matrix-protease-inhibition` | 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과 |
+| `chondroitin-gait-combined-subgroup-efficacy-same-as-glucosamine` | 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과 |
 | `coating-damage-30-percent-threshold` | 전기그릴·전기팬 자가점검 — 안 뜨거움·연기·눌어붙음·코팅 손상 |
 | `coliform-bacteria-presence-disqualifies-drinking` | 반려동물 자동급수기(정수 급수기) 살 만한가 — 트렌드랩 |
 | `common-induction-cooktop-crack-hazard` | 하이라이트(전열식) 전기레인지 가열 불량·에러 표시·자가점검 |
@@ -5978,6 +7296,8 @@ _(팩트 없음)_
 | `compressed-dehumidifier-characteristics` | 제습기 자가점검: 물이 안 차임·제습 안 됨·냄새·고장 진단 |
 | `consumption-date-definition` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
 | `consumption-date-system-launch` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
+| `coq10-anticoagulant-interaction-warfarin-caution` | 코엔자임Q10과 심부전, 임상 근거·스타틴 병용·심혈관 사건 예방 |
+| `coq10-ubiquinol-ubiquinone-form-difference` | 코엔자임Q10과 심부전, 임상 근거·스타틴 병용·심혈관 사건 예방 |
 | `counterfeit-battery-long-term-risk` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |
 | `coway-filter-replacement-cycle` | 정수기 필터 교체 미루면 정말 위험한가 — 팩트체크 |
 | `dashcam-memory-card-lifespan` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
@@ -5989,12 +7309,16 @@ _(팩트 없음)_
 | `descaling-frequency-three-months-daily-use` | 구강세정기·워터픽 자가점검 — 물 안 나옴·약함·충전 불량·노즐 막힘·물새는 증상·잇몸 출혈·관리 |
 | `descaling-vinegar-three-to-one-ratio` | 스팀다리미·핸디스티머 자가점검 — 스팀 안 나옴·물 샘·옷에 물자국·열판 하얀 자국·예열 안 됨·석회질 제거·정수 vs 수돗물 |
 | `desiccant-dehumidifier-characteristics` | 제습기 자가점검: 물이 안 차임·제습 안 됨·냄새·고장 진단 |
-| `disease-prevention-vs-disease-progression-delay-distinction` | 탈모 샴푸 성분: 식약처 탈모 완화 기능성 고시 성분과 실제 임상 의미, 콘드로이틴 황산염의 관절 건강 효과와 국제 규제 위치, 글루코사민의 무릎 관절염 효과와 GAIT 임상 결과, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성 |
+| `disease-prevention-vs-disease-progression-delay-distinction` | 탈모 샴푸 성분: 식약처 탈모 완화 기능성 고시 성분과 실제 임상 의미, 콘드로이틴 황산염의 관절 건강 효과와 국제 규제 위치, 만성피로의 감별진단(빈혈·갑상선·수면무호흡·영양 결핍), 보충제 선택 기준, 글루코사민의 무릎 관절염 효과와 GAIT 임상 결과, 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성 |
 | `dishwasher-residual-water-normal` | LG 디오스 식기세척기 에러코드·세척 불량·배수 안 됨 자가점검, 식기세척기 vs 손설거지 물·전기·경제성 팩트체크, 미니 식기세척기 용량·설치·세척력·적합성 트렌드 |
 | `dishwasher-rinse-aid-compartment` | 식기세척기 vs 손설거지 물·전기·경제성 팩트체크 |
 | `dishwasher-rinse-aid-water-tension` | LG 디오스 식기세척기 에러코드·세척 불량·배수 안 됨 자가점검, 식기세척기 vs 손설거지 물·전기·경제성 팩트체크, 미니 식기세척기 용량·설치·세척력·적합성 트렌드 |
 | `dishwasher-vinegar-rinse-warning` | LG 디오스 식기세척기 에러코드·세척 불량·배수 안 됨 자가점검, 식기세척기 vs 손설거지 물·전기·경제성 팩트체크 |
 | `distribution-date-definition` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
+| `dream-trial-omega3-dosage-epa-2g-dha-1g-daily` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
+| `dream-trial-omega3-no-significant-benefit` | 건성안 관리: 인공눈물 vs 영양제 순서, 의료 표준 치료, 오메가3 근거 |
+| `dream-trial-primary-outcome-no-significant-benefit` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
+| `dream-trial-sample-size-535-participants-double-masked-rct` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
 | `drone-4k-video-capacity-requirement` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `dust-sensor-monthly-cleaning` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
 | `dyson-battery-cost-varies-by-model` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |
@@ -6005,12 +7329,13 @@ _(팩트 없음)_
 | `dyson-filter-not-sealed-motor-damage` | LG 코드제로 무선청소기 흡입력 저하·작동 불량 자가점검 |
 | `dyson-soft-reset-battery-separation` | 무선청소기 배터리 급감·충전 안 됨 자가점검 |
 | `energy-efficiency-rating-1st-vs-5th` | 냉장고 전기료 팩트체크: 문 자주 열기, 채우기, 온도설정의 실제 영향 |
+| `evening-primrose-oil-menopausal-hot-flash-mixed-evidence-2024` | 생리 전 증후군(PMS) 영양소 치료: 칼슘·마그네슘·비타민B6의 임상 근거 |
 | `expiration-not-equals-spoilage` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
 | `factory-reset-data-loss` | IPTV 셋톱박스 화면 안 나옴·먹통·리모컨 안 될 때 자가점검 |
 | `fading-method-gradual-independence` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `fast-charging-mechanism-lithium-plating-degradation` | 포터블 파워스테이션 충전 안 됨·출력 안 됨·발열·배터리 팽창 자가점검 및 보관 기준 |
-| `fat-soluble-vitamin-accumulation-toxicity-risk` | 미녹시딜: 국내 의약품 지위·농도·초기탈락·중단 후 재탈모, 비타민A와 야맹증·결핍 증상·과잉 독성·임신 기형 위험·상한섭취량, 한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량, 비타민K2의 뼈 건강 기전과 항응고제 금기, 아연 보충제와 감기 기간 단축: 형태·타이밍·구리 균형 |
-| `fat-soluble-vitamin-requires-meal-absorption` | 아스타잔틴의 눈 피로·조절력 개선 임상 근거, 용량, 광고 표현, 오메가3의 안구건조증 개선 효과·DREAM 임상시험·인공눈물 우선순위, 커큐민(강황): 생체이용률 개선 기술과 간 이상사례 보고의 신뢰도, 한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량, 비타민K2의 뼈 건강 기전과 항응고제 금기 |
+| `fat-soluble-vitamin-accumulation-toxicity-risk` | 미녹시딜: 국내 의약품 지위·농도·초기탈락·중단 후 재탈모, 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항, 비타민A와 야맹증·결핍 증상·과잉 독성·임신 기형 위험·상한섭취량, 한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량, 비타민E와 셀레늄: SELECT 시험 결과, 상한섭취량, 한국인 섭취 현황, 고용량 위험성, 비타민K2의 뼈 건강 기전과 항응고제 금기, 아연 보충제와 감기 기간 단축: 형태·타이밍·구리 균형 |
+| `fat-soluble-vitamin-requires-meal-absorption` | 아스타잔틴의 눈 피로·조절력 개선 임상 근거, 용량, 광고 표현, 칼슘 보충제 흡수: 형태별 생물이용률, 1회 최대 흡수량, 마그네슘 병용 효과, 오메가3의 안구건조증 개선 효과·DREAM 임상시험·인공눈물 우선순위, 영양제 제형(정제·캡슐·액상·젤리)의 흡수율 차이: 붕해·용출·당 함량, 커큐민(강황): 생체이용률 개선 기술과 간 이상사례 보고의 신뢰도, 한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량, 비타민K2의 뼈 건강 기전과 항응고제 금기 |
 | `fat-soluble-vitamin-stability` | 루테인(루테인+제아잔틴) 눈 건강 보충제의 임상 근거·효과·안전성·국내 규제, 영양제의 지용성·수용성 차이, 복용 타이밍, 성분 상호작용, 흡수율 결정 요인 |
 | `file-system-format-exfat-overview` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
 | `file-system-format-fat32-overview` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
@@ -6018,10 +7343,17 @@ _(팩트 없음)_
 | `filter-bacteria-threshold-exceeded` | 반려동물 자동급수기(정수 급수기) 살 만한가 — 트렌드랩 |
 | `filter-exchange-lamp-light-normal` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
 | `filter-replacement-cycle-6-12-months` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
+| `folic-acid-high-dose-b12-deficiency-masking-risk` | 임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성 |
+| `folic-acid-neural-tube-defect-prevention-mechanism-dna-synthesis-cell-division` | 임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성 |
+| `gait-trial-overall-population-no-efficacy` | 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과 |
 | `game-controller-connection-loss-check-battery-bluetooth-range` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
 | `game-controller-pairing-reset-procedure` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
 | `game-controller-usb-port-inspection-charging-issue` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
 | `genuine-filter-lg-sensor-recognition` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검 |
+| `ginkgo-anticoagulant-bleeding-risk-surgery` | 혈행 개선 영양제와 수술·시술 전 주의, 항혈소판·항응고 병용 위험 |
+| `gla-gamma-linolenic-acid-mechanism-prostaglandin-precursor` | 생리 전 증후군(PMS) 영양소 치료: 칼슘·마그네슘·비타민B6의 임상 근거 |
+| `glucosamine-form-sulfate-vs-hydrochloride-absorption` | 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과 |
+| `glucosamine-mechanism-cartilage-matrix-synthesis` | 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과 |
 | `graduated-extinction-ferber-method` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `hair-dryer-after-use-unplug-safety-practice` | 헤어 에어랩·컬링기·고데기 자가점검 — 필터 청소·과열·타는 냄새·코팅 손상 |
 | `hair-dryer-burning-smell-immediate-stop` | 헤어 에어랩·컬링기·고데기 자가점검 — 필터 청소·과열·타는 냄새·코팅 손상 |
@@ -6029,8 +7361,11 @@ _(팩트 없음)_
 | `hdmi-arc-cable-connection-sequence` | HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
 | `hdmi-arc-eArc-definition` | HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
 | `hdmi-cec-remote-control-function` | HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
+| `health-supplement-adverse-event-definition` | 영양제 이상사례 신고 체계: 식약처 신고 절차, 신고 대상, 보호 규칙 |
+| `health-supplement-adverse-event-reporting-system-korea` | 영양제 이상사례 신고 체계: 식약처 신고 절차, 신고 대상, 보호 규칙 |
 | `heart-rate-sensor-wearing-position` | 스마트밴드(샤오미 미밴드·핏빗 등) 충전·측정·앱 연동 자가점검 |
 | `hepa-filter-no-water-washing` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
+| `high-dose-supplement-paradox-bioavailability` | 글루타치온의 경구 생물이용률 논쟁, 피부 미백 효과, 국내 기능성 미인정, 먹는 콜라겐·히알루론산의 소화·흡수·분포 경로, 피부 도달 메커니즘, 임상 근거 |
 | `high-power-appliances-direct-outlet` | 데스크톱 PC 전원이 안 켜짐 — 하드웨어 물리적 원인 자가점검 |
 | `high-temperature-ambient-above-35-celsius-permanent-damage` | 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계, 포터블 파워스테이션 충전 안 됨·출력 안 됨·발열·배터리 팽창 자가점검 및 보관 기준 |
 | `hp-cold-reset-power-cycle` | 캐논·엡손 프린터 인쇄 불량·잉크 오류·폐잉크 패드 자가점검 |
@@ -6039,24 +7374,34 @@ _(팩트 없음)_
 | `hp-paper-jam-removal-precaution` | 캐논·엡손 프린터 인쇄 불량·잉크 오류·폐잉크 패드 자가점검 |
 | `hp-printer-connection-usb-wireless-check` | 캐논·엡손 프린터 인쇄 불량·잉크 오류·폐잉크 패드 자가점검 |
 | `hp-printer-troubleshooting-sequence` | 캐논·엡손 프린터 인쇄 불량·잉크 오류·폐잉크 패드 자가점검 |
+| `humectant-definition-water-absorption-hygroscopic` | 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과, 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과 |
+| `humectant-humidity-dependent-efficacy-low-humidity-risk` | 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과, 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과 |
 | `humidifier-limescale-removal-citric-acid` | 가정용 제빙기 자가점검 — 얼음 안 만들어짐·얼음 작아짐·누수·냄새·소음 |
 | `humidifier-limescale-removal-vinegar` | 가정용 제빙기 자가점검 — 얼음 안 만들어짐·얼음 작아짐·누수·냄새·소음 |
 | `ice-crushing-damages-regular-blade` | 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
 | `ice-crushing-limitation-most-hand-blenders` | 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
 | `ideal-indoor-humidity-range` | 제습기 자가점검: 물이 안 차임·제습 안 됨·냄새·고장 진단, 가습기 자가점검 — 분무 안 됨·냄새·백색가루·물 종류 논쟁·살균제 주의 |
-| `industry-sponsored-research-bias-conflict-of-interest` | 세라마이드(ceramide)의 피부 장벽 기능 및 임상 효과, 가르시니아: 체중감량 효과의 근거 수준과 간 손상 위험, 바르는 히알루론산의 피부 수화 효과, 분자량 역할, 저습도 논쟁, 판테놀(panthenol)과 마데카소사이드(madecassoside)의 피부 진정 및 상처 치유 효과, 레티놀 · 레티노이드 계열 주름개선: 강도별 비교, 자극 프로파일, 임신부 금기, 종합비타민의 가치: 대규모 임상 결과·식사 대체 불가, 커큐민(강황): 생체이용률 개선 기술과 간 이상사례 보고의 신뢰도 |
+| `industry-sponsored-research-bias-conflict-of-interest` | 세라마이드(ceramide)의 피부 장벽 기능 및 임상 효과, 가르시니아: 체중감량 효과의 근거 수준과 간 손상 위험, 바르는 히알루론산의 피부 수화 효과, 분자량 역할, 저습도 논쟁, 판테놀(panthenol)과 마데카소사이드(madecassoside)의 피부 진정 및 상처 치유 효과, 레티놀 · 레티노이드 계열 주름개선: 강도별 비교, 자극 프로파일, 임신부 금기, 마카의 임상 근거 수준, 성욕 관련 효과, 국내 기능성 인정 범위, 종합비타민의 가치: 대규모 임상 결과·식사 대체 불가, 오메가3·DHA·포스파티딜세린의 인지 기능·집중력 효과, RCT 근거 수준, 커큐민(강황): 생체이용률 개선 기술과 간 이상사례 보고의 신뢰도 |
 | `ipad-charging-temperature-range` | 배터리 충전 통념 팩트체크: 고속충전·100% 충전·0% 방전·밤새 충전·발열의 실제 영향 |
 | `iphone-force-restart-generation-split` | 아이폰 Face ID 인식 안 됨·카메라 흐림 자가점검 |
 | `iphone-normal-operating-temperature` | 아이패드 충전 안 됨·느림 자가점검, 애플 맥북 안 켜짐·충전·발열·배터리 자가점검, 배터리 충전 통념 팩트체크: 고속충전·100% 충전·0% 방전·밤새 충전·발열의 실제 영향 |
 | `iphone-overheating-mitigation-immediate` | 아이패드 충전 안 됨·느림 자가점검, 애플 맥북 안 켜짐·충전·발열·배터리 자가점검 |
 | `iphone-overheating-what-not-to-do` | 아이패드 충전 안 됨·느림 자가점검, 애플 맥북 안 켜짐·충전·발열·배터리 자가점검, 배터리 충전 통념 팩트체크: 고속충전·100% 충전·0% 방전·밤새 충전·발열의 실제 영향 |
 | `iphone-thermal-throttling-performance` | 아이패드 충전 안 됨·느림 자가점검, 아이폰 Face ID 인식 안 됨·카메라 흐림 자가점검, 애플 맥북 안 켜짐·충전·발열·배터리 자가점검, 배터리 충전 통념 팩트체크: 고속충전·100% 충전·0% 방전·밤새 충전·발열의 실제 영향 |
-| `iptime-2g4-vs-5g-characteristics` | 가정용 CCTV·홈캠 연결 안 됨·영상 끊김·녹화 안 됨 자가점검, 무선 키보드·마우스 연결 끊김·인식 안 됨·입력 지연 자가점검 |
+| `iptime-2g4-vs-5g-characteristics` | 가정용 CCTV·홈캠 연결 안 됨·영상 끊김·녹화 안 됨 자가점검, 메시·증폭기 설치 최적화 및 성능 저하 원인 진단, 무선 키보드·마우스 연결 끊김·인식 안 됨·입력 지연 자가점검 |
+| `iron-absorption-alternate-day-vs-consecutive-day-2017` | 소아 면역 영양제: 비타민D·아연·철분 권장량·상한·안전성 |
+| `iron-absorption-enhancement-vitamin-c` | 음식으로 먹을 때 vs 영양제로 먹을 때: 생체이용률, 식품 매트릭스 효과, 흡수 차이 |
 | `joycon-drift-calibration-official-method` | 게임 컨트롤러(엑스박스·듀얼센스·닌텐도) PC 연결·버튼·진동·배터리 자가점검 |
+| `ketoconazole-2percent-vs-zinc-pyrithione-1percent-dandruff-efficacy` | 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도, 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 |
+| `ketoconazole-shampoo-meta-analysis-64-trials-8189-patients` | 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도, 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 |
+| `ketoconazole-shampoo-relapse-rate-posttreatment` | 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도, 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 |
 | `korea-daily-intake-lutein-10-20mg` | 한국 건강기능식품 제도의 원료 분류·기능성 표시 규정·광고 규제 |
 | `korea-food-safety-lutein-function-claim` | 한국 건강기능식품 제도의 원료 분류·기능성 표시 규정·광고 규제 |
-| `korea-health-food-certified-form-standard-raw-material` | 엽산(엽산염)의 신경관결손 예방 효과, 기전, 용량, 안전성, 철분제의 흡수, 복용 방법, 위장 부작용, 약물 상호작용, 홍삼 진세노사이드의 종류별 효과 및 식약처 기능성 인정 범위 |
-| `korea-health-food-function-claim-disease-prevention-prohibition` | 탈모 샴푸 성분: 식약처 탈모 완화 기능성 고시 성분과 실제 임상 의미, 아스타잔틴의 눈 피로·조절력 개선 임상 근거, 용량, 광고 표현, 빌베리 안토시아닌의 야간시력·로돕신 기전, 임상 근거, WWII 조종사 설화 검증, 블루라이트 차단 영양제·청색광 유해성 논쟁·루테인 필터링 효과·마케팅 표현 검증, 엽산(엽산염)의 신경관결손 예방 효과, 기전, 용량, 안전성, 밀크씨슬(실리마린)의 간 수치 개선 임상 근거 및 음주와의 관계, 마그네슘과 다리 쥐: 임상적 효과 근거 수준과 특정 인구군별 차이, 홍삼 진세노사이드의 종류별 효과 및 식약처 기능성 인정 범위, 커큐민(강황): 생체이용률 개선 기술과 간 이상사례 보고의 신뢰도 |
+| `korea-health-food-certified-form-standard-raw-material` | 혈압 관리 영양제와 약물 치료의 역할 분담, 국내 기능성 원료, 엽산(엽산염)의 신경관결손 예방 효과, 기전, 용량, 안전성, 철분제의 흡수, 복용 방법, 위장 부작용, 약물 상호작용, 홍삼 진세노사이드의 종류별 효과 및 식약처 기능성 인정 범위, 국내 맞춤형 영양제 소분 판매 규제, 추천 알고리즘의 한계, 구독 서비스 현황 |
+| `korea-health-food-function-claim-disease-prevention-prohibition` | 탈모 샴푸 성분: 식약처 탈모 완화 기능성 고시 성분과 실제 임상 의미, 아스타잔틴의 눈 피로·조절력 개선 임상 근거, 용량, 광고 표현, 빌베리 안토시아닌의 야간시력·로돕신 기전, 임상 근거, WWII 조종사 설화 검증, 블루라이트 차단 영양제·청색광 유해성 논쟁·루테인 필터링 효과·마케팅 표현 검증, 엽산(엽산염)의 신경관결손 예방 효과, 기전, 용량, 안전성, 건강기능식품 면역 기능성 표시 범위, 질병예방 표현 금지선, 베타글루칸·프로바이오틱스 인정 현황, 밀크씨슬(실리마린)의 간 수치 개선 임상 근거 및 음주와의 관계, 마그네슘과 다리 쥐: 임상적 효과 근거 수준과 특정 인구군별 차이, 홍삼 진세노사이드의 종류별 효과 및 식약처 기능성 인정 범위, 커큐민(강황): 생체이용률 개선 기술과 간 이상사례 보고의 신뢰도 |
+| `korea-health-food-individual-approval-raw-material` | 혈압 관리 영양제와 약물 치료의 역할 분담, 국내 기능성 원료, 국내 맞춤형 영양제 소분 판매 규제, 추천 알고리즘의 한계, 구독 서비스 현황 |
+| `korea-health-food-unapproved-ingredient-risk` | 해외직구 영양제: 통관 기준, 미허용 성분, 용량 제한, 한국과 해외의 규제 차이 |
+| `korea-health-food-unsubstantiated-comparative-advertising-ban` | 건강기능식품 면역 기능성 표시 범위, 질병예방 표현 금지선, 베타글루칸·프로바이오틱스 인정 현황 |
 | `kyungdong-exhaust-outlet-abnormality-signs` | 린나이 보일러 에러코드와 온수·난방 자가진단 |
 | `kyungdong-frozen-pipe-thawing` | 린나이 보일러 에러코드와 온수·난방 자가진단 |
 | `kyungdong-gas-smell-emergency-procedure` | 린나이 보일러 에러코드와 온수·난방 자가진단 |
@@ -6067,6 +7412,10 @@ _(팩트 없음)_
 | `lg-filter-replacement-cycle` | 정수기 필터 교체 미루면 정말 위험한가 — 팩트체크 |
 | `lg-thinq-smart-diagnosis-procedure` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검 |
 | `luteal-phase-body-temperature-melatonin-disruption` | 임신 초기 피로와 프로게스테론 |
+| `lutein-zeaxanthin-basic-function-macular-pigment` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
+| `madecassoside-centella-asiatica-triterpenoid-mechanism` | 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드, 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드 |
+| `madecassoside-uvb-keratinocyte-protection` | 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드, 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드 |
+| `malassezia-yeast-dandruff-seborrheic-dermatitis-pathogenesis` | 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도, 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 |
 | `massage-gun-battery-not-power-on-check` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `massage-gun-battery-reset-procedure` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `massage-gun-charging-not-working-diagnostic` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
@@ -6085,7 +7434,7 @@ _(팩트 없음)_
 | `melatonin-recommended-dose-0.5-3mg` | 멜라토닌과 국내 수면 영양제 대안(테아닌, 감태, GABA 등), 효과와 안전성 |
 | `melatonin-safety-short-term-uncertain-long-term` | 멜라토닌과 국내 수면 영양제 대안(테아닌, 감태, GABA 등), 효과와 안전성 |
 | `membrane-nano-filtration-performance` | 반려동물 자동급수기(정수 급수기) 살 만한가 — 트렌드랩 |
-| `meta-analysis-systematic-review-highest-evidence-hierarchy` | 가르시니아: 체중감량 효과의 근거 수준과 간 손상 위험, 나이아신아마이드(비타민B3) 미백·톤: 농도별 근거, 홍조 논쟁, 멜라노솜 이전 억제, 레티놀 · 레티노이드 계열 주름개선: 강도별 비교, 자극 프로파일, 임신부 금기, 두피 케어·비듬: 케토코나졸·징크피리치온·피루옥톤올아민의 효능 비교, 트라넥삼산·아젤라산 색소질환: 기미·염증후색소침착, 용량, 한국 규제상 위치, 보스웰리아 추출물의 관절염 효과와 NSAID 비교, MSM(메틸설포닐메탄)의 관절 통증 효과와 근거 수준, 마그네슘과 다리 쥐: 임상적 효과 근거 수준과 특정 인구군별 차이 |
+| `meta-analysis-systematic-review-highest-evidence-hierarchy` | L-카르니틴: 지방산 산화와 체중감량의 근거 수준 및 경구 흡수의 한계, CLA(켤레 리놀레산): 체지방 감소 효과의 임상적 의미와 인슐린 저항성 우려, 가르시니아: 체중감량 효과의 근거 수준과 간 손상 위험, 녹차 카테킨-EGCG: 체중감량 효과의 근거와 고용량 간독성 위험, 나이아신아마이드(비타민B3) 미백·톤: 농도별 근거, 홍조 논쟁, 멜라노솜 이전 억제, 레티놀 · 레티노이드 계열 주름개선: 강도별 비교, 자극 프로파일, 임신부 금기, 두피 케어·비듬: 케토코나졸·징크피리치온·피루옥톤올아민의 효능 비교, 트라넥삼산·아젤라산 색소질환: 기미·염증후색소침착, 용량, 한국 규제상 위치, 보스웰리아 추출물의 관절염 효과와 NSAID 비교, MSM(메틸설포닐메탄)의 관절 통증 효과와 근거 수준, 마그네슘과 다리 쥐: 임상적 효과 근거 수준과 특정 인구군별 차이 |
 | `microsd-price-advantage` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `microsd-size-and-pin-definition` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `microsd-speed-performance-variance` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
@@ -6097,11 +7446,23 @@ _(팩트 없음)_
 | `microwave-spark-interior-debris` | 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
 | `microwave-spark-metal-container` | 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
 | `microwave-spark-metal-trim-food` | 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
+| `mineral-sunscreen-zinc-oxide-broad-spectrum-titanium-uva-limited` | 산화아연과 이산화티탄의 무기 자차 비교: 파장 커버리지, 백탁, 효과 차이 |
+| `minoxidil-5percent-efficacy-hair-count-increase` | 로즈마리 오일과 탈모: 어디까지 확인됐나 (미녹시딜 비교 RCT) |
+| `minoxidil-cessation-hair-loss-reversal-regrowth-loss` | 로즈마리 오일과 탈모: 어디까지 확인됐나 (미녹시딜 비교 RCT) |
+| `moisturizer-three-classes-definition-function` | 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과, 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과 |
 | `monitor-flickering-hdmi-version-issue` | HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
 | `motor-overheat-protection` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
+| `mrc-vitamin-study-neural-tube-defect-prevention-1991` | 임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성 |
 | `multitap-replacement-cycle` | 데스크톱 PC 전원이 안 켜짐 — 하드웨어 물리적 원인 자가점검 |
+| `niacinamide-5-percent-21-day-cumulative-irritation-none` | 나이아신아마이드(비타민 B3): 피지·모공 조절 근거 (미백·톤과 분리) |
+| `niacinamide-not-niacin-no-flushing-at-cosmetic-levels` | 나이아신아마이드(비타민 B3): 피지·모공 조절 근거 (미백·톤과 분리) |
 | `noise-increase-filter-dirty-motor` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
+| `nutrient-synergy-magnesium-calcium-vitamin-d-trinity` | 칼슘 보충제 흡수: 형태별 생물이용률, 1회 최대 흡수량, 마그네슘 병용 효과 |
+| `occlusive-definition-petrolatum-tewl-reduction` | 바셀린(페트롤라툼): 밀폐 보습의 기준점, TEWL 감소율과 모공 막힘 논란 |
+| `occlusive-examples-plant-oils-silicones-waxes` | 다이메티콘(실리콘): 밀폐제 역할, 모공 막힘 논란, TEWL 감소, 안전성 |
 | `odor-causes-filter-end-of-life-humidity-dust` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
+| `omega3-mechanism-tear-film-lipid-layer` | 건성안 관리: 인공눈물 vs 영양제 순서, 의료 표준 치료, 오메가3 근거 |
+| `omega3-mechanism-tear-film-lipid-layer-production` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
 | `optical-cable-arc-alternative` | HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
 | `oven-preheat-time-convection-importance` | 제빵기(홈베이커리) 반죽 안 섞임·안 부풀음·겉만 탐·패들 박힘·세척 자가점검 |
 | `oven-temperature-discrepancy-user-reported` | 제빵기(홈베이커리) 반죽 안 섞임·안 부풀음·겉만 탐·패들 박힘·세척 자가점검 |
@@ -6110,7 +7471,7 @@ _(팩트 없음)_
 | `power-outlet-check` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `power-outlet-verification` | 전기면도기 자가점검·날 관리·물세척·회전식vs왕복식·충전 불량, 헤어클리퍼(이발기) 자가점검·날 관리·오일링·청소·충전 불량, 구강세정기·워터픽 자가점검 — 물 안 나옴·약함·충전 불량·노즐 막힘·물새는 증상·잇몸 출혈·관리 |
 | `prefilter-water-washing-drying` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
-| `pregnant-lactating-women-supplement-caution` | 미녹시딜: 국내 의약품 지위·농도·초기탈락·중단 후 재탈모 |
+| `pregnant-lactating-women-supplement-caution` | 미녹시딜: 국내 의약품 지위·농도·초기탈락·중단 후 재탈모, 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항 |
 | `progesterone-drop-luteal-phase-insomnia` | 임신 초기 피로와 프로게스테론 |
 | `ps5-dualsense-battery-low-disconnection` | 게임 컨트롤러(엑스박스·듀얼센스·닌텐도) PC 연결·버튼·진동·배터리 자가점검 |
 | `ps5-dualsense-deep-clean-alcohol` | 게임 컨트롤러(엑스박스·듀얼센스·닌텐도) PC 연결·버튼·진동·배터리 자가점검 |
@@ -6120,10 +7481,12 @@ _(팩트 없음)_
 | `ptfe-decomposition-start-temp` | 전기그릴·전기팬 자가점검 — 안 뜨거움·연기·눌어붙음·코팅 손상 |
 | `ptfe-toxic-gas-temp` | 전기그릴·전기팬 자가점검 — 안 뜨거움·연기·눌어붙음·코팅 손상 |
 | `purifier-filter-types-washable-vs-disposable` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
+| `pyroctone-olamine-efficacy-vs-ketoconazole-tolerability` | 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도, 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 |
 | `rated-capacity-15a-3300w` | 데스크톱 PC 전원이 안 켜짐 — 하드웨어 물리적 원인 자가점검 |
-| `rct-randomized-controlled-trial-definition-gold-standard` | 세라마이드(ceramide)의 피부 장벽 기능 및 임상 효과, 바르는 히알루론산의 피부 수화 효과, 분자량 역할, 저습도 논쟁, 나이아신아마이드(비타민B3) 미백·톤: 농도별 근거, 홍조 논쟁, 멜라노솜 이전 억제, 판테놀(panthenol)과 마데카소사이드(madecassoside)의 피부 진정 및 상처 치유 효과, 펩타이드 스킨케어: 신호펩타이드·캐리어펩타이드, 피부 침투 한계, 콜라겐 자극 근거, 레티놀 · 레티노이드 계열 주름개선: 강도별 비교, 자극 프로파일, 임신부 금기, 트라넥삼산·아젤라산 색소질환: 기미·염증후색소침착, 용량, 한국 규제상 위치, 바르는 비타민C 세럼: L-아스코르브산 안정성, pH 의존성, 유도체 동등성, 산화, 아스타잔틴의 눈 피로·조절력 개선 임상 근거, 용량, 광고 표현, 빌베리 안토시아닌의 야간시력·로돕신 기전, 임상 근거, WWII 조종사 설화 검증, 블루라이트 차단 영양제·청색광 유해성 논쟁·루테인 필터링 효과·마케팅 표현 검증, 보스웰리아 추출물의 관절염 효과와 NSAID 비교, 콘드로이틴 황산염의 관절 건강 효과와 국제 규제 위치, 오메가3의 안구건조증 개선 효과·DREAM 임상시험·인공눈물 우선순위, 글루코사민의 무릎 관절염 효과와 GAIT 임상 결과, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성, MSM(메틸설포닐메탄)의 관절 통증 효과와 근거 수준 |
+| `rct-randomized-controlled-trial-definition-gold-standard` | 세라마이드(ceramide)의 피부 장벽 기능 및 임상 효과, 바르는 히알루론산의 피부 수화 효과, 분자량 역할, 저습도 논쟁, 나이아신아마이드(비타민B3) 미백·톤: 농도별 근거, 홍조 논쟁, 멜라노솜 이전 억제, 판테놀(panthenol)과 마데카소사이드(madecassoside)의 피부 진정 및 상처 치유 효과, 펩타이드 스킨케어: 신호펩타이드·캐리어펩타이드, 피부 침투 한계, 콜라겐 자극 근거, 레티놀 · 레티노이드 계열 주름개선: 강도별 비교, 자극 프로파일, 임신부 금기, 트라넥삼산·아젤라산 색소질환: 기미·염증후색소침착, 용량, 한국 규제상 위치, 바르는 비타민C 세럼: L-아스코르브산 안정성, pH 의존성, 유도체 동등성, 산화, 아스타잔틴의 눈 피로·조절력 개선 임상 근거, 용량, 광고 표현, 빌베리 안토시아닌의 야간시력·로돕신 기전, 임상 근거, WWII 조종사 설화 검증, 블루라이트 차단 영양제·청색광 유해성 논쟁·루테인 필터링 효과·마케팅 표현 검증, 보스웰리아 추출물의 관절염 효과와 NSAID 비교, 콘드로이틴 황산염의 관절 건강 효과와 국제 규제 위치, 오메가3의 안구건조증 개선 효과·DREAM 임상시험·인공눈물 우선순위, 글루코사민의 무릎 관절염 효과와 GAIT 임상 결과, 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과, 마카의 임상 근거 수준, 성욕 관련 효과, 국내 기능성 인정 범위, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성, MSM(메틸설포닐메탄)의 관절 통증 효과와 근거 수준 |
 | `read-write-speed-difference` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
-| `relative-risk-reduction-vs-absolute-risk-reduction-trap` | 가르시니아: 체중감량 효과의 근거 수준과 간 손상 위험, 글루코사민의 무릎 관절염 효과와 GAIT 임상 결과 |
+| `relative-risk-reduction-vs-absolute-risk-reduction-trap` | CLA(켤레 리놀레산): 체지방 감소 효과의 임상적 의미와 인슐린 저항성 우려, 가르시니아: 체중감량 효과의 근거 수준과 간 손상 위험, 혈압 관리 영양제와 약물 치료의 역할 분담, 국내 기능성 원료, 글루코사민의 무릎 관절염 효과와 GAIT 임상 결과, 호모시스테인 수치와 비타민B, 임상 결과의 괴리·대리지표 함정 |
+| `retinaldehyde-vs-retinol-bioavailability-10fold` | 레티날데하이드: 레티놀과 트레티노인 사이의 강도, 자극 프로파일, 농도별 효능 |
 | `safe-mode-entry-method` | 스마트폰 터치 불량·고스트터치·액정 반응 없음 자가점검 |
 | `safety-concern-cry-it-out-stress` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `safety-margin-difference` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
@@ -6133,21 +7496,26 @@ _(팩트 없음)_
 | `sd-card-format-choice-exfat-recommended` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `sdcard-compatibility-requirement` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
 | `sdcard-speed-class-definition` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
+| `seizure-disorder-epilepsy-supplement-drug-interaction` | 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항 |
 | `sensor-red-light-persistent-causes` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
-| `small-sample-size-low-statistical-power` | 펩타이드 스킨케어: 신호펩타이드·캐리어펩타이드, 피부 침투 한계, 콜라겐 자극 근거, 두피 케어·비듬: 케토코나졸·징크피리치온·피루옥톤올아민의 효능 비교, 빌베리 안토시아닌의 야간시력·로돕신 기전, 임상 근거, WWII 조종사 설화 검증 |
+| `small-sample-size-low-statistical-power` | 펩타이드 스킨케어: 신호펩타이드·캐리어펩타이드, 피부 침투 한계, 콜라겐 자극 근거, 두피 케어·비듬: 케토코나졸·징크피리치온·피루옥톤올아민의 효능 비교, 빌베리 안토시아닌의 야간시력·로돕신 기전, 임상 근거, WWII 조종사 설화 검증, 오메가3·DHA·포스파티딜세린의 인지 기능·집중력 효과, RCT 근거 수준 |
 | `smartband-sensor-cleanliness-general` | 스마트 체중계·체성분계 측정 오류·앱 연동 자가점검 |
 | `sound-cutout-two-point-four-ghz-interference` | 사운드바 소리 안 남·TV 연결 안 됨 자가점검 |
+| `spf-real-world-application-dose-gap-0-5-1-0-mg-cm2` | SPF 30과 50의 실제 차이: 차단율 곡선, 증분 이득, 도포량 영향 |
 | `spoilage-detection-appearance` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
 | `spoilage-detection-odor` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
 | `spoilage-detection-texture` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
-| `statistical-significance-vs-clinical-significance-distinction` | 가르시니아: 체중감량 효과의 근거 수준과 간 손상 위험, 탈모 샴푸 성분: 식약처 탈모 완화 기능성 고시 성분과 실제 임상 의미, 오메가3의 안구건조증 개선 효과·DREAM 임상시험·인공눈물 우선순위, MSM(메틸설포닐메탄)의 관절 통증 효과와 근거 수준, 종합비타민의 가치: 대규모 임상 결과·식사 대체 불가 |
+| `statin-induced-muscle-symptoms-sams-mechanism` | 코엔자임Q10과 심부전, 임상 근거·스타틴 병용·심혈관 사건 예방 |
+| `statistical-significance-vs-clinical-significance-distinction` | L-카르니틴: 지방산 산화와 체중감량의 근거 수준 및 경구 흡수의 한계, CLA(켤레 리놀레산): 체지방 감소 효과의 임상적 의미와 인슐린 저항성 우려, 가르시니아: 체중감량 효과의 근거 수준과 간 손상 위험, 녹차 카테킨-EGCG: 체중감량 효과의 근거와 고용량 간독성 위험, 탈모 샴푸 성분: 식약처 탈모 완화 기능성 고시 성분과 실제 임상 의미, 혈압 관리 영양제와 약물 치료의 역할 분담, 국내 기능성 원료, 오메가3의 안구건조증 개선 효과·DREAM 임상시험·인공눈물 우선순위, 호모시스테인 수치와 비타민B, 임상 결과의 괴리·대리지표 함정, MSM(메틸설포닐메탄)의 관절 통증 효과와 근거 수준, 종합비타민의 가치: 대규모 임상 결과·식사 대체 불가 |
 | `suction-weak-filter-dirty-reset` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
-| `surrogate-endpoint-vs-clinical-outcome-discordance` | 바르는 히알루론산의 피부 수화 효과, 분자량 역할, 저습도 논쟁, 펩타이드 스킨케어: 신호펩타이드·캐리어펩타이드, 피부 침투 한계, 콜라겐 자극 근거, 바르는 비타민C 세럼: L-아스코르브산 안정성, pH 의존성, 유도체 동등성, 산화, 블루라이트 차단 영양제·청색광 유해성 논쟁·루테인 필터링 효과·마케팅 표현 검증, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성, 종합비타민의 가치: 대규모 임상 결과·식사 대체 불가 |
+| `sunscreen-dose-reduction-half-spf-reduction-greater-than-half` | SPF 30과 50의 실제 차이: 차단율 곡선, 증분 이득, 도포량 영향 |
+| `surrogate-endpoint-vs-clinical-outcome-discordance` | 바르는 히알루론산의 피부 수화 효과, 분자량 역할, 저습도 논쟁, 펩타이드 스킨케어: 신호펩타이드·캐리어펩타이드, 피부 침투 한계, 콜라겐 자극 근거, 바르는 비타민C 세럼: L-아스코르브산 안정성, pH 의존성, 유도체 동등성, 산화, 블루라이트 차단 영양제·청색광 유해성 논쟁·루테인 필터링 효과·마케팅 표현 검증, 글루타치온의 경구 생물이용률 논쟁, 피부 미백 효과, 국내 기능성 미인정, 호모시스테인 수치와 비타민B, 임상 결과의 괴리·대리지표 함정, 먹는 콜라겐·히알루론산의 소화·흡수·분포 경로, 피부 도달 메커니즘, 임상 근거, 마카의 임상 근거 수준, 성욕 관련 효과, 국내 기능성 인정 범위, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성, 종합비타민의 가치: 대규모 임상 결과·식사 대체 불가 |
+| `thyroid-medication-mineral-chelation-spacing-required` | 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항 |
 | `travel-charger-dual-voltage` | 전기면도기 자가점검·날 관리·물세척·회전식vs왕복식·충전 불량 |
 | `tv-arc-port-identification` | HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
 | `uhs-speed-class-definition` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `unopen-prerequisite-for-consumption-date` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
-| `upper-limit-intake-UL-definition-safety-threshold` | 미녹시딜: 국내 의약품 지위·농도·초기탈락·중단 후 재탈모, 밀크씨슬(실리마린)의 간 수치 개선 임상 근거 및 음주와의 관계, 마그네슘과 다리 쥐: 임상적 효과 근거 수준과 특정 인구군별 차이, 비타민A와 야맹증·결핍 증상·과잉 독성·임신 기형 위험·상한섭취량, 아연 보충제와 감기 기간 단축: 형태·타이밍·구리 균형 |
+| `upper-limit-intake-UL-definition-safety-threshold` | 미녹시딜: 국내 의약품 지위·농도·초기탈락·중단 후 재탈모, 성장 관련 기능성 원료 인정 현황, 연령별 상한섭취량, 성장 보충제 선택 기준, 소아 면역 영양제: 비타민D·아연·철분 권장량·상한·안전성, 밀크씨슬(실리마린)의 간 수치 개선 임상 근거 및 음주와의 관계, 마그네슘과 다리 쥐: 임상적 효과 근거 수준과 특정 인구군별 차이, 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항, 비타민A와 야맹증·결핍 증상·과잉 독성·임신 기형 위험·상한섭취량, 비타민E와 셀레늄: SELECT 시험 결과, 상한섭취량, 한국인 섭취 현황, 고용량 위험성, 아연 보충제와 감기 기간 단축: 형태·타이밍·구리 균형 |
 | `usb-3-speed-standards-summary` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검, USB-C 허브·독, 어떻게 고르나? 스마트가이드 |
 | `usb-30-backward-compatible-with-20` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드, USB-C 허브·독, 어떻게 고르나? 스마트가이드 |
 | `usb-condenser-mic-characteristics` | 마이크 구매 가이드 — 종류·연결·지향성·용도별 선택 |
@@ -6169,9 +7537,12 @@ _(팩트 없음)_
 | `vacuum-suction-unit-iec-vs-astm` | 청소기 구매가이드 — 유형별·흡입력·필터·집먼지진드기·바닥재별·소음·용량·가격대 선택 기준 |
 | `vacuum-suction-w-vs-aw-equivalent` | 청소기 구매가이드 — 유형별·흡입력·필터·집먼지진드기·바닥재별·소음·용량·가격대 선택 기준 |
 | `video-speed-class-definition` | 액션캠(고프로·오즈모류) 전원 불량·녹화 안 됨·배터리·방수 자가점검, 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
-| `vitamin-a-excessive-intake-headache-skin-dryness` | 비타민A와 야맹증·결핍 증상·과잉 독성·임신 기형 위험·상한섭취량 |
-| `water-soluble-vitamin-absorption-no-meal-required` | 비타민B군 결핍 진단 방법 및 피로 증상 개선 근거 |
+| `vitamin-a-excessive-intake-headache-skin-dryness` | 임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성, 비타민A와 야맹증·결핍 증상·과잉 독성·임신 기형 위험·상한섭취량 |
+| `vitamin-b12-deficiency-diagnosis-serum-level` | 비타민B12 채식인 섭취: 흡수 기전, 결핍 지표, 강화식품 vs 미신 |
+| `water-soluble-vitamin-absorption-no-meal-required` | 호모시스테인 수치와 비타민B, 임상 결과의 괴리·대리지표 함정, 프리바이오틱스·신바이오틱스: 정의·구성 기준·함량·부작용, 영양제 제형(정제·캡슐·액상·젤리)의 흡수율 차이: 붕해·용출·당 함량, 비타민B군 결핍 진단 방법 및 피로 증상 개선 근거 |
 | `water-soluble-vitamin-divided-doses-more-effective` | 비타민B군 결핍 진단 방법 및 피로 증상 개선 근거 |
 | `wire-curling-heat-accumulation` | 데스크톱 PC 전원이 안 켜짐 — 하드웨어 물리적 원인 자가점검 |
 | `wireless-receiver-not-recognized-check-physical-connection` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
 | `wireless-receiver-port-swap-troubleshooting` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
+| `zinc-cold-duration-reduction-lozenge-form-requirement` | 소아 면역 영양제: 비타민D·아연·철분 권장량·상한·안전성, 남성 생식 건강 영양제: 아연·엽산·CoQ10·항산화제의 정자 품질 개선 근거 |
+| `zinc-long-term-high-dose-copper-deficiency-risk` | 남성 생식 건강 영양제: 아연·엽산·CoQ10·항산화제의 정자 품질 개선 근거 |

@@ -69,7 +69,7 @@ export const B4AS_CATEGORIES: B4asCategory[] = [
     key: "service", label: "홈·통신", en: "SERVICE", color: "#8a5a3a",
     angle: "인터넷·공유기·IPTV·도어락",
     seoTitle: "인터넷·공유기 안 될 때 자가점검",
-    slugs: ["account-login-selfcheck","doorlock-selfcheck","home-cam-selfcheck","iptime-router-selfcheck","isp-router-selfcheck","mobile-data-call-selfcheck","settop-box-selfcheck","smart-plug-selfcheck","video-doorphone-selfcheck","wifi-disconnect-selfcheck"],
+    slugs: ["account-login-selfcheck","doorlock-selfcheck","home-cam-selfcheck","iptime-router-selfcheck","isp-router-selfcheck","mobile-data-call-selfcheck","settop-box-selfcheck","smart-plug-selfcheck","video-doorphone-selfcheck","wifi-disconnect-selfcheck","kt-internet-selfcheck","skb-lgu-internet-selfcheck","wifi-slow-speed-selfcheck","router-firmware-reset-guide","mesh-extender-selfcheck","tv-streaming-app-buffering"],
   },
   {
     key: "car", label: "자동차", en: "MOBILITY", color: "#7a4a4a",
