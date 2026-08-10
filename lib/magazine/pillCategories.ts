@@ -33,7 +33,7 @@ export const PILL_CATEGORIES: PillCategory[] = [
   {
     key: "basics", label: "기초·가이드", en: "BASICS", color: "#6a6a7a", angle: "복용법과 라벨 읽는 법",
     // 성분별이 아니라 전 성분에 공통으로 걸리는 가이드. 어느 성분 분류에도 안 맞아 따로 뺐다.
-    slugs: ["supplement-timing-guide","supplement-drug-interaction","supplement-stacking-limit","functional-vs-general-food","individual-approval-ingredient","supplement-label-reading","supplement-clinical-reading"],
+    slugs: ["supplement-timing-guide","supplement-drug-interaction","supplement-stacking-limit","functional-vs-general-food","individual-approval-ingredient","supplement-label-reading","supplement-clinical-reading","supplement-dosage-form","overseas-direct-supplement","supplement-side-effect-report","supplement-vs-food"],
   },
   {
     key: "care", label: "여성·남성", en: "CARE", color: "#9a5a7a", angle: "성별 맞춤 영양",
