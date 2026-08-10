@@ -6,7 +6,20 @@
   "reused_facts": [
     "occlusive-examples-plant-oils-silicones-waxes"
   ],
-  "declined_facts": [],
+  "declined_facts": [
+    {
+      "id": "dimethicone-molecular-size-non-comedogenic-pore-clogging-myth-source-not-primary",
+      "reason": "브랜드·판매처 자체 콘텐츠 — 1차 출처 아님"
+    },
+    {
+      "id": "dimethicone-breathable-film-gas-exchange-source-not-primary",
+      "reason": "브랜드·판매처 자체 콘텐츠 — 1차 출처 아님"
+    },
+    {
+      "id": "dimethicone-cir-sccs-safety-approval-no-absorption-source-not-primary",
+      "reason": "브랜드·판매처 자체 콘텐츠 — 1차 출처 아님"
+    }
+  ],
   "disputes": [],
   "facts": [
     {
@@ -29,7 +42,7 @@
     {
       "id": "dimethicone-molecular-size-non-comedogenic-pore-clogging-myth",
       "claim": "다이메티콘(dimethicone)은 분자 크기가 매우 커서 모공 개구부(pore opening)로 들어갈 수 없으며, 따라서 모공을 물리적으로 막을 수 없다. 다이메티콘의 비코메도제 지수(comedogenicity rating)는 0~1로 매우 낮다.",
-      "tier": "확실",
+      "tier": "확인실패",
       "evidence": "공식",
       "source": "PoreCloggingChecker.org, Basic Maintenance: Silicone Comedogenicity Evidence",
       "source_url": "https://porecloggingchecker.org/blog/does-dimethicone-clog-pores-fact-vs-skincare-fiction",
@@ -41,7 +54,8 @@
         "지역": "글로벌"
       },
       "caution": "★'실리콘 = 모공 막힘'은 인터넷 통설이지만, 임상 증거는 다르다. 집필에서 '이 우려는 과학적 근거가 약하다'고 명확히 밝혀야 한다.",
-      "cautionSource": "임상 비코메도제니티 데이터"
+      "cautionSource": "임상 비코메도제니티 데이터",
+      "note": "출처가 브랜드·판매처 자체 콘텐츠라 1차 출처로 재확보 전까지 인용 금지(2026-08-10 출처감사)."
     },
     {
       "id": "dimethicone-tewl-reduction-20-to-30-percent",
@@ -63,7 +77,7 @@
     {
       "id": "dimethicone-breathable-film-gas-exchange",
       "claim": "다이메티콘이 형성하는 필름은 '호흡가능'하여 산소와 이산화탄소 같은 기체 교환이 가능하며, 피부 호흡을 방해한다는 '질식' 우려는 과학적 근거가 없다.",
-      "tier": "확실",
+      "tier": "확인실패",
       "evidence": "공식",
       "source": "Dermalogica, Boldpurity: Silicones and Skin Breathability",
       "source_url": "https://www.dermalogica.com/blogs/living-skin/what-silicones-do-in-skincare",
@@ -75,12 +89,13 @@
         "지역": "글로벌"
       },
       "caution": "\"피부가 숨을 쉬지 못한다\"는 표현은 잘못된 피부 생리학이다. 피부의 호흡은 분자 수준이며, 필름이 이를 방해하지 못한다.",
-      "cautionSource": "피부 생리학"
+      "cautionSource": "피부 생리학",
+      "note": "출처가 브랜드·판매처 자체 콘텐츠라 1차 출처로 재확보 전까지 인용 금지(2026-08-10 출처감사)."
     },
     {
       "id": "dimethicone-cir-sccs-safety-approval-no-absorption",
       "claim": "미국 화장품 안전성 위원회(CIR)와 유럽 화장품과학위원회(SCCS)는 다이메티콘을 화장품에 안전하다고 결론지었으며, 다이메티콘은 무손상 피부에서 흡수되지 않는다는 것이 확인되었다.",
-      "tier": "확실",
+      "tier": "확인실패",
       "evidence": "공식",
       "source": "CIR Safety Assessment, SCCS Opinion on Silicones",
       "source_url": "https://boldpurity.com/blogs/ingredient-directory/silicones-dimethicone-for-skin-safety-acne-pore-clogging",
@@ -92,7 +107,8 @@
         "지역": "미국·유럽"
       },
       "caution": "다이메티콘은 비자극성, 비감작성이며, 글로벌 규제 기관의 승인을 받았다. 오래된 안전 우려는 무시해도 된다.",
-      "cautionSource": "규제 기관 승인"
+      "cautionSource": "규제 기관 승인",
+      "note": "출처가 브랜드·판매처 자체 콘텐츠라 1차 출처로 재확보 전까지 인용 금지(2026-08-10 출처감사)."
     },
     {
       "id": "dimethicone-partial-occlusive-complementary-use-hydration",

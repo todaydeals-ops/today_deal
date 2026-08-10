@@ -43,7 +43,8 @@ export async function GET(request: Request): Promise<Response> {
   // ── 발행 요일 (KST) ──
   // 서브 미디어 4개가 요일을 나눠 가지면서 메인까지 매일 낼 이유가 없어졌다.
   // 메인도 주 2회(화·금)로 맞춘다. 요일이 서브와 겹치는 건 상관없다(사장님 확인).
-  //   월 알약 / 화 AS+매거진 / 수 성분 / 목 알약 / 금 잠자리+매거진 / 토 성분 / 일 AS
+  //   월 알약 / 화 잠자리+AS+매거진 / 수 성분 / 목 알약 / 금 잠자리+매거진 / 토 성분 / 일 AS
+  //   ※ 요일이 겹치는 것은 상관없다. 각 사이트는 자기 요일에만 1편 낸다.
   const kstDow = new Date(Date.now() + 9 * 3600 * 1000).getUTCDay(); // 0일 1월 2화 3수 4목 5금 6토
   const MAIN_DAYS = [2, 5]; // 화·금
   const isMainDay = MAIN_DAYS.includes(kstDow) || new URL(request.url).searchParams.get("force") === "1";
@@ -103,7 +104,7 @@ export async function GET(request: Request): Promise<Response> {
   // 리저브는 created_at 오름차순(분류 인터리브 순서로 미리 세팅)이라 오래된 것부터 나간다.
   // field 또는 corner 하나로 대상을 고른다. AS연구소만 corner 기준이다.
   const SUB_SCHEDULE: { field?: string; corner?: string; label: string; days: number[] }[] = [
-    { field: "수면·침구", label: "잠자리연구소", days: [5] },      // 93편 목표 달성 → 금 1회로 축소
+    { field: "수면·침구", label: "잠자리연구소", days: [2, 5] },   // 화·금
     { field: "건강기능식품", label: "알약연구소", days: [1, 4] },   // 월·목
     { field: "뷰티·성분", label: "성분연구소", days: [3, 6] },      // 수·토
     { corner: "repair", label: "AS연구소", days: [2, 0] },         // 화·일 (잠자리에서 넘겨받은 화요일)

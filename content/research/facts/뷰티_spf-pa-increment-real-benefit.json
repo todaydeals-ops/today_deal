@@ -7,7 +7,12 @@
     "spf-real-world-application-dose-gap-0-5-1-0-mg-cm2",
     "sunscreen-dose-reduction-half-spf-reduction-greater-than-half"
   ],
-  "declined_facts": [],
+  "declined_facts": [
+    {
+      "id": "spf-30-vs-50-uv-blockage-percentage-96-7-vs-98-source-not-primary",
+      "reason": "브랜드·판매처 자체 콘텐츠 — 1차 출처 아님"
+    }
+  ],
   "disputes": [],
   "facts": [
     {
@@ -47,7 +52,7 @@
     {
       "id": "spf-30-vs-50-uv-blockage-percentage-96-7-vs-98",
       "claim": "SPF 30은 UVB의 96.7%(3.3% 통과)을 차단하고, SPF 50은 98%(2% 통과)을 차단한다. 1% 차이로 보이지만, SPF 30 사용자는 SPF 50 사용자보다 50% 더 많은 UVB가 피부에 도달한다.",
-      "tier": "확실",
+      "tier": "확인실패",
       "evidence": "공식",
       "source": "Suntribe Sunscreen, Dr. Ken Dembny: SPF Protection Mathematics",
       "source_url": "https://suntribesunscreen.com/blogs/blog/the-difference-between-spf-30-and-spf-50",
@@ -59,7 +64,8 @@
         "지역": "글로벌"
       },
       "caution": "1% 차이가 50% 더 많은 UV라는 것은 로그 곡선의 특성이다. 독자가 '30과 50은 큰 차이가 아니다'라고 오해하면 안 된다.",
-      "cautionSource": "자외선 차단 수학"
+      "cautionSource": "자외선 차단 수학",
+      "note": "출처가 브랜드·판매처 자체 콘텐츠라 1차 출처로 재확보 전까지 인용 금지(2026-08-10 출처감사)."
     },
     {
       "id": "spf-logarithmic-curve-diminishing-returns-above-30",

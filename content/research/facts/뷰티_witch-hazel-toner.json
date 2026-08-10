@@ -4,7 +4,12 @@
   "article": "뷰티_witch-hazel-toner",
   "captured": "2026-08-10",
   "reused_facts": [],
-  "declined_facts": [],
+  "declined_facts": [
+    {
+      "id": "witch-hazel-no-acne-benefit-proven-source-not-primary",
+      "reason": "브랜드·판매처 자체 콘텐츠 — 1차 출처 아님"
+    }
+  ],
   "disputes": [],
   "facts": [
     {
@@ -61,7 +66,7 @@
     {
       "id": "witch-hazel-no-acne-benefit-proven",
       "claim": "피부과 평가에 따르면 위치하젤의 수렴 작용은 여드름 유발 미생물 제어에 효과적이지 않은 것으로 알려져 있다.",
-      "tier": "논쟁",
+      "tier": "확인실패",
       "evidence": "후기",
       "source": "피부과 성분 평가 (Paula's Choice)",
       "source_url": "https://www.paulaschoice-eu.com/why-witch-hazel-is-a-problem-for-skin",
@@ -73,7 +78,8 @@
         "지역": "글로벌"
       },
       "caution": "★위치하젤의 항균·항진균 효과에 대한 정식 임상 RCT는 부재하다. 성분 평가는 전문가 견해이나, 공식 임상 근거는 확보되지 않음.",
-      "cautionSource": "출처는 전문가 의견이나 RCT 미확보"
+      "cautionSource": "출처는 전문가 의견이나 RCT 미확보",
+      "note": "출처가 브랜드·판매처 자체 콘텐츠라 1차 출처로 재확보 전까지 인용 금지(2026-08-10 출처감사)."
     },
     {
       "id": "witch-hazel-alcohol-free-formulation-tannin-retention",
