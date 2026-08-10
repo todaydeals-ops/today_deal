@@ -1,5 +1,6 @@
 // 매거진 공통 UI — 리디자인 확정안(페이퍼·세리프·얇은 룰, 오렌지=점)
 import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
+import { BRANDS } from "@/lib/brands";
 import Link from "next/link";
 import { CORNERS, cornerOf, CORNER_SHORT, CATCH } from "@/lib/magazine/corners";
 
@@ -47,12 +48,17 @@ export function MagazineMasthead() {
   );
 }
 
-/* 코너 인덱스 (5칸) */
+// 패밀리 미디어(오늘의딜 자신 제외) — 코너 인덱스 뒤에 아웃링크 칸으로 붙는다.
+const FAMILY = BRANDS.filter((b) => b.key !== "deal");
+const FAMILY_EN: Record<string, string> = { sleep: "SLEEP LAB", pill: "PILL LAB", beauty: "INGREDIENT LAB", b4as: "SELF CHECK" };
+
+/* 코너 인덱스 — 메인 코너 3 + 패밀리 아웃링크 4 = 7칸 */
 export function CornerIndex() {
   return (
     <section id="guides" className="mz-wrap mz-cornerwrap" style={{ paddingTop: 34, scrollMarginTop: 80 }}>
       <div className="mz-corner-index">
-        {CORNERS.map((c, i) => (
+        {/* repair(AS셀프체크)는 AS연구소로 분리됐다 — 여기 두면 빈 목록으로 간다. */}
+        {CORNERS.filter((c) => c.key !== "repair").map((c, i) => (
           <Link key={c.key} className="corner-cell" href={`/?corner=${c.key}`}>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
               <span className="cc-n" style={{ fontFamily: mono, fontSize: 11, fontWeight: 600, color: "#9a9286" }}>{String(i + 1).padStart(2, "0")}</span>
@@ -63,46 +69,21 @@ export function CornerIndex() {
             <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>{CORNER_SHORT[c.key] ?? c.desc}</div>
           </Link>
         ))}
-        {/* 05 — 잠자리연구소(수면 전문, 서브도메인). 새창. */}
-        <a className="corner-cell" href={SUB_ORIGIN.sleep} target="_blank" rel="noopener">
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-            <span className="cc-n" style={{ fontFamily: mono, fontSize: 11, fontWeight: 600, color: "#9a9286" }}>05</span>
-            <span style={{ width: 9, height: 9, borderRadius: 9999, background: "#3f5a54" }} />
-          </div>
-          <div className="cc-t" style={{ fontWeight: 800, fontSize: 16, marginTop: 14 }}>잠자리연구소</div>
-          <div className="cc-en" style={{ fontFamily: mono, fontSize: 9.5, letterSpacing: "1px", color: "#3f5a54", marginTop: 2 }}>SLEEP LAB &#8599;</div>
-          <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>근거로 검증하는 수면</div>
-        </a>
-        {/* 06 — 알약연구소(건강기능식품 전문, 서브도메인). 새창. */}
-        <a className="corner-cell" href={SUB_ORIGIN.pill} target="_blank" rel="noopener">
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-            <span className="cc-n" style={{ fontFamily: mono, fontSize: 11, fontWeight: 600, color: "#9a9286" }}>06</span>
-            <span style={{ width: 9, height: 9, borderRadius: 9999, background: "#8a6a3a" }} />
-          </div>
-          <div className="cc-t" style={{ fontWeight: 800, fontSize: 16, marginTop: 14 }}>알약연구소</div>
-          <div className="cc-en" style={{ fontFamily: mono, fontSize: 9.5, letterSpacing: "1px", color: "#8a6a3a", marginTop: 2 }}>PILL LAB &#8599;</div>
-          <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>임상으로 따지는 영양제</div>
-        </a>
-        {/* 08 — AS연구소(고장 자가진단, 서브도메인). 새창. */}
-        <a className="corner-cell" href={SUB_ORIGIN.b4as} target="_blank" rel="noopener">
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-            <span className="cc-n" style={{ fontFamily: mono, fontSize: 11, fontWeight: 600, color: "#9a9286" }}>08</span>
-            <span style={{ width: 9, height: 9, borderRadius: 9999, background: "#38539a" }} />
-          </div>
-          <div className="cc-t" style={{ fontWeight: 800, fontSize: 16, marginTop: 14 }}>AS연구소</div>
-          <div className="cc-en" style={{ fontFamily: mono, fontSize: 9.5, letterSpacing: "1px", color: "#38539a", marginTop: 2 }}>SELF CHECK &#8599;</div>
-          <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>부르기 전 5분 셀프체크</div>
-        </a>
-        {/* 07 — 성분연구소(뷰티·다이어트 성분 검증, 서브도메인). 새창. */}
-        <a className="corner-cell" href={SUB_ORIGIN.beauty} target="_blank" rel="noopener">
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-            <span className="cc-n" style={{ fontFamily: mono, fontSize: 11, fontWeight: 600, color: "#9a9286" }}>07</span>
-            <span style={{ width: 9, height: 9, borderRadius: 9999, background: "#8a5a6a" }} />
-          </div>
-          <div className="cc-t" style={{ fontWeight: 800, fontSize: 16, marginTop: 14 }}>성분연구소</div>
-          <div className="cc-en" style={{ fontFamily: mono, fontSize: 9.5, letterSpacing: "1px", color: "#8a5a6a", marginTop: 2 }}>INGREDIENT LAB &#8599;</div>
-          <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>광고를 지우면 남는 성분</div>
-        </a>
+        {/* 패밀리 미디어 — 별도 사이트로 나가는 아웃링크다. 새창으로 열고 시각적으로 구분한다. */}
+        {FAMILY.map((b) => (
+          <a key={b.key} className="corner-cell is-external" href={b.url} target="_blank" rel="noopener">
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+              <span className="cc-out">다른 사이트</span>
+              <span style={{ width: 9, height: 9, borderRadius: 9999, background: b.color }} />
+            </div>
+            <div className="cc-t" style={{ fontWeight: 800, fontSize: 16, marginTop: 14, display: "flex", alignItems: "center", gap: 5 }}>
+              {b.name}
+              <span aria-hidden style={{ fontSize: 12, color: b.color }}>&#8599;</span>
+            </div>
+            <div className="cc-en" style={{ fontFamily: mono, fontSize: 9.5, letterSpacing: "1px", color: b.color, marginTop: 2 }}>{FAMILY_EN[b.key] ?? ""}</div>
+            <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>{b.desc}</div>
+          </a>
+        ))}
       </div>
     </section>
   );

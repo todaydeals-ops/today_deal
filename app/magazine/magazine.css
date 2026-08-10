@@ -48,6 +48,19 @@
 .corner-cell:hover .cc-t, .corner-cell:hover .cc-n, .corner-cell:hover .cc-d { color: #fff !important; }
 .corner-cell:hover .cc-en { color: #ff8a6f !important; }
 
+/* 아웃링크 칸(패밀리 미디어) — 같은 사이트 코너와 헷갈리지 않게 시각적으로 가른다.
+   바탕을 살짝 눕히고 왼쪽에 색 띠를 둬서 "여기서부터는 다른 사이트"가 보이게. */
+.corner-cell.is-external { background: rgba(22, 20, 15, 0.028); }
+.corner-cell.is-external:hover { background: #16140f; }
+.cc-out {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 9.5px; font-weight: 700; letter-spacing: 1px; color: #a8a094;
+  border: 1px solid #ddd5c8; border-radius: 9999px; padding: 2px 7px; line-height: 1.4;
+}
+.corner-cell.is-external:hover .cc-out { color: #cdc6ba; border-color: rgba(255,255,255,0.28); }
+/* 아웃링크 그룹의 첫 칸 앞에 세로 경계 — 메인 코너와 시작점을 가른다 */
+.corner-cell.is-external:first-of-type { border-left: 2px solid #ddd5c8; }
+
 /* 잠자리연구소 6분류 인덱스 — CornerIndex 카드 틀 재사용, 한 줄(6열) */
 .sleep-cat-index {
   border-top: 1px solid rgba(22, 20, 15, 0.16);
@@ -121,10 +134,13 @@
 }
 @media (max-width: 980px) {
   .mz-wrap { padding: 0 22px; }
-  /* 코너 인덱스 → 2열(2x2), 셀 하단선 추가 */
+  /* 코너 인덱스 → 2열. 7칸이라 마지막 한 칸이 홀로 남으므로 그 칸은 두 열을 다 쓴다. */
   .mz-corner-index { grid-template-columns: repeat(2, 1fr); }
+  .mz-corner-index .corner-cell:last-child:nth-child(odd) { grid-column: 1 / -1; }
   .corner-cell { border-bottom: 1px solid #ddd5c8; }
   .corner-cell:nth-child(2n) { border-right: none; }
+  /* 2열에서는 아웃링크 왼쪽 띠가 어정쩡하게 걸린다 — 위쪽 띠로 바꾼다 */
+  .corner-cell.is-external:first-of-type { border-left: none; border-top: 2px solid #ddd5c8; }
   /* 피처드 세로 스택 */
   .mz-feat { grid-template-columns: 1fr; gap: 24px; }
   .mz-h1-2 { font-size: clamp(30px, 7vw, 40px); }
