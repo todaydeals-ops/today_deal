@@ -37,9 +37,16 @@ export async function GET(request: Request): Promise<Response> {
   const sb = getSupabaseAdmin();
   if (!sb) return Response.json({ ok: false, error: "Supabase 미설정" }, { status: 500 });
 
-  // 기본 하루 1편. 서브 미디어 3개가 주 6일을 채우게 되면서 메인까지 2편씩 낼 이유가 없어졌다.
-  // 리저브 소진 속도를 절반으로 늦춰 집필 여력을 서브 미디어 쪽에 돌린다. ?n=으로 덮어쓴다(상한 5).
+  // 회당 1편. ?n=으로 덮어쓴다(상한 5).
   const count = Math.max(1, Math.min(5, Number(new URL(request.url).searchParams.get("n")) || 1));
+
+  // ── 발행 요일 (KST) ──
+  // 서브 미디어 4개가 요일을 나눠 가지면서 메인까지 매일 낼 이유가 없어졌다.
+  // 메인도 주 2회(화·금)로 맞춘다. 요일이 서브와 겹치는 건 상관없다(사장님 확인).
+  //   월 알약 / 화 AS+매거진 / 수 성분 / 목 알약 / 금 잠자리+매거진 / 토 성분 / 일 AS
+  const kstDow = new Date(Date.now() + 9 * 3600 * 1000).getUTCDay(); // 0일 1월 2화 3수 4목 5금 6토
+  const MAIN_DAYS = [2, 5]; // 화·금
+  const isMainDay = MAIN_DAYS.includes(kstDow) || new URL(request.url).searchParams.get("force") === "1";
 
   const { data } = await sb
     .from("magazine")
@@ -75,10 +82,12 @@ export async function GET(request: Request): Promise<Response> {
   };
 
   const picked: Row[] = [];
-  while (picked.length < count) {
-    const row = pickFrom(OTHERS);
-    if (!row) break;
-    picked.push(row);
+  if (isMainDay) {
+    while (picked.length < count) {
+      const row = pickFrom(OTHERS);
+      if (!row) break;
+      picked.push(row);
+    }
   }
 
   const released: string[] = [];
@@ -91,9 +100,7 @@ export async function GET(request: Request): Promise<Response> {
   }
 
   // ── 서브 미디어 예약 발행 — 각자 정해진 요일(KST)에 1편씩 공개 ──
-  // 월 알약 / 화 AS / 수 성분 / 목 알약 / 금 잠자리 / 토 성분 / 일 AS.
   // 리저브는 created_at 오름차순(분류 인터리브 순서로 미리 세팅)이라 오래된 것부터 나간다.
-  const kstDow = new Date(Date.now() + 9 * 3600 * 1000).getUTCDay(); // 0일 1월 2화 3수 4목 5금 6토
   // field 또는 corner 하나로 대상을 고른다. AS연구소만 corner 기준이다.
   const SUB_SCHEDULE: { field?: string; corner?: string; label: string; days: number[] }[] = [
     { field: "수면·침구", label: "잠자리연구소", days: [5] },      // 93편 목표 달성 → 금 1회로 축소
@@ -126,6 +133,8 @@ export async function GET(request: Request): Promise<Response> {
     titles: released,
     sleepReleased,
     sleepReleasedCount: sleepReleased.length,
+    mainDay: isMainDay,
+    kstDow,
     blocked: blocked.length,
     blockedDetail: blocked.slice(0, 5),
     remainingDrafts: remaining,
