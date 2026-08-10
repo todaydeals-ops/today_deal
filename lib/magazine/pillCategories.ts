@@ -12,15 +12,15 @@ export interface PillCategory {
 export const PILL_CATEGORIES: PillCategory[] = [
   {
     key: "eye", label: "눈 건강", en: "EYE", color: "#4a7c59", angle: "눈 피로와 황반",
-    slugs: ["dry-eye-omega-supplement","lutein-eye-supplement","astaxanthin-eye-fatigue","bilberry-anthocyanin-eye","vitamin-a-night-blindness","blue-light-supplement-claim","macular-degeneration-prevention"],
+    slugs: ["dry-eye-omega-supplement","lutein-eye-supplement","astaxanthin-eye-fatigue","bilberry-anthocyanin-eye","vitamin-a-night-blindness","blue-light-supplement-claim","macular-degeneration-prevention","eye-supplement-compare","eye-drops-vs-supplement"],
   },
   {
     key: "joint", label: "관절·뼈", en: "JOINT", color: "#8a6a3a", angle: "무릎·허리와 뼈",
-    slugs: ["msm-joint-supplement","vitamin-d-deficiency-korea","vitamin-k2-bone","boswellia-arthritis","glucosamine-knee","muscle-cramp-magnesium","turmeric-curcumin","chondroitin-joint","hyaluronic-acid-oral","collagen-joint-vs-skin","osteoporosis-supplement","hmb-sarcopenia"],
+    slugs: ["msm-joint-supplement","vitamin-d-deficiency-korea","vitamin-k2-bone","boswellia-arthritis","glucosamine-knee","muscle-cramp-magnesium","turmeric-curcumin","chondroitin-joint","hyaluronic-acid-oral","collagen-joint-vs-skin","osteoporosis-supplement","hmb-sarcopenia","calcium-supplement-absorption","joint-supplement-compare"],
   },
   {
     key: "vital", label: "피로·간", en: "VITAL", color: "#3f6a8a", angle: "만성피로와 간",
-    slugs: ["coq10-energy","red-ginseng-ginsenoside","nmn-nad-antiaging","vitamin-b-complex-fatigue","milk-thistle-liver","adrenal-fatigue-myth"],
+    slugs: ["coq10-energy","red-ginseng-ginsenoside","nmn-nad-antiaging","vitamin-b-complex-fatigue","milk-thistle-liver","adrenal-fatigue-myth","arginine-citrulline","taurine-fatigue","vitamin-b12-vegan","creatine-safety","bcaa-eaa"],
   },
   {
     key: "shield", label: "면역·장", en: "SHIELD", color: "#5a7a6a", angle: "면역력과 장 건강",
@@ -37,7 +37,7 @@ export const PILL_CATEGORIES: PillCategory[] = [
   },
   {
     key: "care", label: "여성·남성", en: "CARE", color: "#9a5a7a", angle: "성별 맞춤 영양",
-    slugs: ["iron-supplement-anemia","folate-pregnancy","soy-isoflavone-menopause","saw-palmetto-prostate","cranberry-uti","evening-primrose-gla","biotin-hair-nail"],
+    slugs: ["iron-supplement-anemia","folate-pregnancy","soy-isoflavone-menopause","saw-palmetto-prostate","cranberry-uti","evening-primrose-gla","biotin-hair-nail","senior-supplement-guide"],
   },
 ];
 
