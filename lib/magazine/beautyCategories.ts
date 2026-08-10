@@ -15,23 +15,23 @@ export interface BeautyCategory {
 export const BEAUTY_CATEGORIES: BeautyCategory[] = [
   {
     key: "barrier", label: "보습·장벽", en: "BARRIER", color: "#4a7c8a", angle: "건조함과 피부 장벽",
-    slugs: ["ceramide-barrier","hyaluronic-acid-topical","skin-barrier-basics","panthenol-madecassoside","moisturizer-occlusive-humectant","centella-wound-repair","glycerin-humectant","squalane-moisturizer"],
+    slugs: ["ceramide-barrier","hyaluronic-acid-topical","skin-barrier-basics","panthenol-madecassoside","moisturizer-occlusive-humectant","centella-wound-repair","glycerin-humectant","squalane-moisturizer","ceramide-vs-cholesterol-ratio"],
   },
   {
     key: "renew", label: "미백·주름", en: "RENEW", color: "#8a7a3a", angle: "색소와 노화 개선",
-    slugs: ["retinol-wrinkle","niacinamide-tone","vitamin-c-serum","tranexamic-azelaic-pigment","peptide-skincare"],
+    slugs: ["retinol-wrinkle","niacinamide-tone","vitamin-c-serum","tranexamic-azelaic-pigment","peptide-skincare","caffeine-eye-puffiness"],
   },
   {
     key: "clear", label: "트러블·모공", en: "CLEAR", color: "#5a7a5a", angle: "여드름과 피지",
-    slugs: ["bha-salicylic-pore","benzoyl-peroxide-acne","aha-pha-exfoliant","zinc-pca-sebum"],
+    slugs: ["bha-salicylic-pore","benzoyl-peroxide-acne","aha-pha-exfoliant","zinc-pca-sebum","azelaic-acid-acne-redness","adapalene-otc-retinoid"],
   },
   {
     key: "shield", label: "자외선·환경", en: "SHIELD", color: "#7a6a9a", angle: "자외선 차단과 외부 자극",
-    slugs: ["sunscreen-spf-pa-science","physical-vs-chemical-sunscreen"],
+    slugs: ["sunscreen-spf-pa-science","physical-vs-chemical-sunscreen","sunscreen-reapplication-reality"],
   },
   {
     key: "hair", label: "두피·모발", en: "HAIR", color: "#6a5a4a", angle: "탈모와 두피 관리",
-    slugs: ["minoxidil-hairloss","hairloss-shampoo-ingredient","scalp-care-dandruff","ketoconazole-scalp"],
+    slugs: ["minoxidil-hairloss","hairloss-shampoo-ingredient","scalp-care-dandruff","ketoconazole-scalp","rosemary-oil-hairloss"],
   },
   {
     key: "body", label: "다이어트·바디", en: "BODY", color: "#9a5a6a", angle: "체중감량과 바디케어",
