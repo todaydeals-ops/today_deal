@@ -7,7 +7,7 @@ import PillCategoryIndex from "@/components/magazine/PillCategoryIndex";
 import Pagination from "@/components/magazine/Pagination";
 import PillFooter from "@/components/magazine/PillFooter";
 import { pillCategoryByKey, pillCategoryOf } from "@/lib/magazine/pillCategories";
-import { pillHref } from "@/lib/magazine/subdomain";
+import { pillHref, SUB_ORIGIN } from "@/lib/magazine/subdomain";
 import "../magazine/magazine.css";
 
 // 알약연구소 — 오늘의딜 파생 건강기능식품 검증 미디어. field="건강기능식품" + 고유 6분류.
@@ -18,6 +18,7 @@ const PER = 12;
 const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
 
 export const metadata: Metadata = {
+  alternates: { canonical: `${SUB_ORIGIN.pill}/` },
   title: "알약연구소 — 임상으로 검증하는 영양제",
   description: "광고 문구가 아니라 실제 연구 결과로 성분을 따져봅니다. 눈 건강·관절과 뼈·피로와 간·면역과 장·혈관과 심장·여성과 남성.",
 };

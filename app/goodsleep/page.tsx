@@ -18,6 +18,7 @@ const PER = 12;
 const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
 
 export const metadata: Metadata = {
+  alternates: { canonical: `${SUB_ORIGIN.sleep}/` },
   title: "잠자리연구소 — 근거로 검증하는 수면 미디어",
   description: "광고도 협찬도 없이, 해외 수면 연구를 근거로 검증합니다. 성장하는 잠·공부잘하는 잠·일잘하는 잠·조화로운 잠·늙지않는 잠·잠자리장비학.",
 };

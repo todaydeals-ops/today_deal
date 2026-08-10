@@ -7,7 +7,7 @@ import B4asCategoryIndex from "@/components/magazine/B4asCategoryIndex";
 import Pagination from "@/components/magazine/Pagination";
 import B4asFooter from "@/components/magazine/B4asFooter";
 import { b4asCategoryByKey, b4asCategoryOf } from "@/lib/magazine/b4asCategories";
-import { b4asHref } from "@/lib/magazine/subdomain";
+import { b4asHref, SUB_ORIGIN } from "@/lib/magazine/subdomain";
 import "../magazine/magazine.css";
 
 // AS연구소 — 오늘의딜 파생 자가진단 미디어.
@@ -24,11 +24,13 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   const cat = b4asCategoryByKey((await searchParams).cat);
   if (!cat) {
     return {
+      alternates: { canonical: `${SUB_ORIGIN.b4as}/` },
       title: "AS연구소 — AS 부르기 전 5분 셀프체크",
       description: "고장 같아 보이는 증상의 상당수는 설정·연결·청소로 끝납니다. 기기별 증상별로 무엇을 먼저 확인하고 어디까지 직접 해도 되는지 정리합니다.",
     };
   }
   return {
+    alternates: { canonical: `${SUB_ORIGIN.b4as}/?cat=${cat.key}` },
     title: `${cat.seoTitle} | AS연구소`,
     description: `${cat.angle} 증상별로 무엇을 먼저 확인하고, 어디까지 직접 해도 되는지, 언제 기사님을 불러야 하는지 순서대로 정리했습니다.`,
   };

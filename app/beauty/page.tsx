@@ -7,7 +7,7 @@ import BeautyCategoryIndex from "@/components/magazine/BeautyCategoryIndex";
 import Pagination from "@/components/magazine/Pagination";
 import BeautyFooter from "@/components/magazine/BeautyFooter";
 import { beautyCategoryByKey, beautyCategoryOf } from "@/lib/magazine/beautyCategories";
-import { beautyHref } from "@/lib/magazine/subdomain";
+import { beautyHref, SUB_ORIGIN } from "@/lib/magazine/subdomain";
 import "../magazine/magazine.css";
 
 // 성분연구소 — 오늘의딜 파생 뷰티·다이어트 성분 검증 미디어. field="뷰티·성분" + 고유 6분류.
@@ -18,6 +18,7 @@ const PER = 12;
 const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
 
 export const metadata: Metadata = {
+  alternates: { canonical: `${SUB_ORIGIN.beauty}/` },
   title: "성분연구소 — 임상으로 검증하는 뷰티 성분",
   description: "화제성이나 후기가 아니라 임상 근거로 성분을 따집니다. 보습·장벽, 미백·주름, 트러블·모공, 자외선·환경, 두피·모발, 다이어트·바디.",
 };

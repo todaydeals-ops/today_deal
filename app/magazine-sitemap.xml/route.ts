@@ -6,7 +6,7 @@ const SITE = "https://www.todaydeals.co.kr";
 
 export async function GET() {
   const [articles, reports] = await Promise.all([
-    fetchMagazineList({ limit: 1000 }),
+    fetchMagazineList({ limit: 1000, all: true }),
     fetchReportList(200),
   ]);
 

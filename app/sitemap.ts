@@ -54,7 +54,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
 
   // 매거진(중립 쇼핑 가이드) 글 — 실제 발행일을 lastmod로
-  const mag = await fetchMagazineList({ limit: 1000 });
+  const mag = await fetchMagazineList({ limit: 1000, all: true });
   const magazinePages: MetadataRoute.Sitemap = mag.map((a) => ({
     url: `${SITE}/magazine/${a.slug}`,
     lastModified: new Date(a.createdAt),

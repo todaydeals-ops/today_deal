@@ -92,7 +92,15 @@ function map(r: Row): MagazineArticle {
   };
 }
 
-export async function fetchMagazineList(opts?: { corner?: string; field?: string; limit?: number; offset?: number }): Promise<MagazineArticle[]> {
+/**
+ * 매거진 목록. 옵션 없이 부르면 서브 미디어(잠자리·알약·성분·AS)를 **격리해서 뺀다.**
+ *
+ * ★`all: true`는 격리를 끄고 전부 가져온다. 사이트맵 전용이다.
+ *   격리를 사이트맵에도 그대로 적용했더니 발행글 468편 중 323편이 사이트맵에서
+ *   빠져 구글이 존재 자체를 몰랐다(2026-08-10 발견). 서브 미디어 글의 canonical은
+ *   www/magazine/<slug> 이므로 www 사이트맵에 실어야 색인된다.
+ */
+export async function fetchMagazineList(opts?: { corner?: string; field?: string; limit?: number; offset?: number; all?: boolean }): Promise<MagazineArticle[]> {
   const sb = getSupabaseAdmin();
   if (!sb) return [];
   try {
@@ -103,10 +111,12 @@ export async function fetchMagazineList(opts?: { corner?: string; field?: string
       .neq("corner", "report")   // 리포트는 별도 데이터레이어(magazine-report.ts) 사용
       .order("created_at", { ascending: false });
     if (opts?.corner) q = q.eq("corner", opts.corner);
-    if (opts?.field) q = q.eq("field", opts.field); // 섹션(잠자리·알약·성분) 전용 필터
-    else q = q.not("field", "in", `("${SUB_MEDIA_FIELDS.join('","')}")`); // 메인 매거진에선 서브 미디어 글 제외 — 격리
-    // AS연구소 격리 — corner를 명시해 부른 경우(=AS 홈)는 통과시키고, 그 외에는 뺀다.
-    if (!opts?.corner) q = q.not("corner", "in", `("${SUB_MEDIA_CORNERS.join('","')}")`);
+    if (!opts?.all) {
+      if (opts?.field) q = q.eq("field", opts.field); // 섹션(잠자리·알약·성분) 전용 필터
+      else q = q.not("field", "in", `("${SUB_MEDIA_FIELDS.join('","')}")`); // 메인 매거진에선 서브 미디어 글 제외 — 격리
+      // AS연구소 격리 — corner를 명시해 부른 경우(=AS 홈)는 통과시키고, 그 외에는 뺀다.
+      if (!opts?.corner) q = q.not("corner", "in", `("${SUB_MEDIA_CORNERS.join('","')}")`);
+    }
     const limit = opts?.limit ?? 60;
     if (opts?.offset != null) q = q.range(opts.offset, opts.offset + limit - 1);
     else q = q.limit(limit);
