@@ -1,0 +1,96 @@
+{
+  "topic": "클레이 마스크: 피지 흡착의 기전과 한계",
+  "brand": "성분연구소",
+  "article": "뷰티_clay-mask-sebum",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "clay-sebum-adsorption-mechanism-electrostatic",
+      "claim": "클레이의 피지 흡착은 물리적 '흡수(absorption)'가 아니라 '흡착(adsorption)'이며, 클레이의 음전하 광물 표면이 피지와 불순물의 양전하 입자를 정전기적으로 끌어당긴다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "클레이 성분 분석 및 미네랄 화학",
+      "source_url": "https://www.esmiskin.com/blogs/esmi-skin-central/how-clay-masks-work",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "클레이 기전",
+        "분류": "피지 제어",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "kaolin-clay-oil-absorption-capacity-1-5-times-weight",
+      "claim": "카올린 클레이는 자신의 무게의 약 1.5배에 해당하는 오일을 흡착할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "클레이 성분 기술 자료",
+      "source_url": "https://www.dermalogica.com/blogs/living-skin/kaolin-clay-for-oily-skin",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "카올린",
+        "분류": "오일 흡착량",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "이는 실험실 조건에서의 최대 흡착량이므로, 실제 스킨케어 제품의 효율은 제형·접촉 시간·농도에 따라 다르다.",
+      "cautionSource": "기술 명세서"
+    },
+    {
+      "id": "bentonite-clay-swelling-aggressive-oil-absorption-10-times",
+      "claim": "벤토나이트(몬모릴로나이트 함유) 클레이는 물에 접하면 부풀어 오르며, 자신의 무게의 최대 10배에 해당하는 오일과 수분을 흡착한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "클레이 성분 비교 자료",
+      "source_url": "https://ismellwell.com/kaolin-and-bentonite-clay/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "벤토나이트",
+        "분류": "오일 흡착량",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "벤토나이트의 높은 흡착력은 피부 수분까지 빼앗을 수 있으므로, 건성 피부나 민감한 피부에는 부담이 될 수 있다. 과다 사용 또는 장시간 적용은 피부 건조를 악화시킬 수 있다.",
+      "cautionSource": "피부 생리학"
+    },
+    {
+      "id": "kaolin-non-swelling-stable-structure-sensitive-skin",
+      "claim": "카올린은 물에 닿아도 부풀지 않고 안정적인 결정 구조를 유지하므로, 벤토나이트보다 순하며 민감한 피부에 더 적합하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "클레이 성분 비교 자료",
+      "source_url": "https://ismellwell.com/kaolin-and-bentonite-clay/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "카올린 vs 벤토나이트",
+        "분류": "자극도 차이",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "clay-mask-effect-temporary-surface-level",
+      "claim": "클레이 마스크의 피지 제어 효과는 주로 피부 표면의 일시적 제어이며, 피지선의 생리적 활동을 억제하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "피부과 성분 평가",
+      "source_url": "https://pieraugeusa.com/blogs/beauty-tips/what-do-clay-masks-do-for-your-skin",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "클레이의 한계",
+        "분류": "일시적 효과",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★마스크를 씻어낸 후 피지 재분비가 곧바로 시작되므로, '장기 피지 제어' 기대는 현실적이지 않다. 일회 또는 주 1~2회 트리트먼트 개념이 적절하다.",
+      "cautionSource": "피부 생리학"
+    }
+  ]
+}

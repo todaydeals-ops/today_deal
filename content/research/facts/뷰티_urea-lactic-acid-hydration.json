@@ -1,0 +1,113 @@
+{
+  "topic": "요소와 젖산의 이중 작용: 농도별 각질 연화 vs 보습, 메커니즘 전환점",
+  "brand": "성분연구소",
+  "article": "뷰티_urea-lactic-acid-hydration",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "urea-natural-moisturizing-factor-nmf-component",
+      "claim": "요소(urea)는 천연 보습 인자(NMF, Natural Moisturizing Factor)의 일부이며, 정상 표피에 존재하는 수화 성분이다. 외부 도포 시 피부의 수화도를 높이고 보습 기능을 강화할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cureus, PMC: Keratolytics in Dermatology Literature",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12860576/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "건성 피부",
+        "분류": "천연 보습 메커니즘",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "NMF의 일부는 요소뿐만 아니라 아미노산, 락트산, 구연산 등도 포함된다.",
+      "cautionSource": "피부 보습 생화학"
+    },
+    {
+      "id": "urea-concentration-below-10-percent-humectant-effect",
+      "claim": "요소 10% 미만의 저농도에서는 주로 습윤제(humectant) 기능을 하며, 주변 환경에서 수분을 흡수하여 각질층의 수화도를 증가시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: The Effectiveness of Topical Keratolytics",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12860576/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 피부",
+        "분류": "농도별 기능",
+        "시기": "저농도 범위",
+        "지역": "글로벌"
+      },
+      "caution": "저농도 요소 제품은 습윤 효과만 기대하면 되며, 각질 제거 효과는 기대하면 안 된다.",
+      "cautionSource": "피부약학"
+    },
+    {
+      "id": "urea-10-percent-and-above-keratolytic-transition-point",
+      "claim": "요소 농도가 10% 이상이 되면, 각질세포 사이의 수소 결합을 파괴하여 각질을 연화시키는 케라톨리틱(keratolytic) 작용으로 전환된다. 이것이 요소 기능의 중요한 '전환점'이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Urea as a Keratolytic Agent in Dermatology",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12860576/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "각질 제거 필요 피부",
+        "분류": "농도별 기능 전환",
+        "시기": "제형 설계 단계",
+        "지역": "글로벌"
+      },
+      "caution": "★이 전환점(10%)을 모르면, 같은 성분이 두 가지 완전히 다른 기능을 한다는 것을 이해 못 한다. 집필에서 반드시 농도에 따른 기능 변화를 명시할 것.",
+      "cautionSource": "요소 약리학"
+    },
+    {
+      "id": "urea-20-30-percent-keratin-breakdown-itch-relief",
+      "claim": "요소 20-30% 농도에서는 각질(keratin) 구조를 더욱 효과적으로 분해하여 각질층 두께를 감소시키고, 가려움(pruritus)을 완화시킨다. 이 범위는 각질화증(keratosis pilaris) 및 건성 질환 치료에 사용된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Clinical Applications of Urea in Dermatology",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12860576/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "각질화 피부 질환",
+        "분류": "고농도 케라톨리틱 효과",
+        "시기": "치료 단계",
+        "지역": "글로벌"
+      },
+      "caution": "★20-30% 요소는 의료용 등급이며, 일반 화장품 수준의 저농도와는 다르다. 높은 농도는 자극 가능성도 증가한다.",
+      "cautionSource": "의료용 화장품 규칙"
+    },
+    {
+      "id": "lactic-acid-alpha-hydroxy-acid-exfoliation-hydration-dual",
+      "claim": "젖산(lactic acid)은 알파-하이드록시산(AHA)으로 분류되며, 각질세포 사이의 데스모솜 결합을 파괴하여 각질을 벗겨내는 동시에 습윤제 특성도 가진다. 따라서 요소처럼 '이중 기능' 성분이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Keratolytic Agents in Dermatology",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12860576/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "각질 제거 및 보습 필요 피부",
+        "분류": "성분 기전",
+        "시기": "도포 후",
+        "지역": "글로벌"
+      },
+      "caution": "젖산은 산성이므로(pH 의존성), 형태(L-lactic acid vs D-form)와 제형 pH에 따라 효과가 크게 달라진다.",
+      "cautionSource": "AHA 화학"
+    },
+    {
+      "id": "urea-lactic-acid-complementary-mechanism-combination-use",
+      "claim": "요소와 젖산은 기전이 보완적이다. 요소는 수소 결합 파괴, 젖산은 데스모솜 효소 활성화라는 서로 다른 방식으로 각질을 제거하므로, 두 성분을 함께 사용하면 단독 사용보다 더 효과적인 각질 제거와 수화를 달성할 수 있다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PMC, Dermatology Literature: Combination Keratolytic Strategies",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12860576/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "각질화 피부 질환",
+        "분류": "병용 효과",
+        "시기": "복합 제형",
+        "지역": "글로벌"
+      },
+      "caution": "두 성분의 병용은 이득이 있지만, 동시에 자극 위험도 증가한다. 민감 피부에서는 농도와 사용 빈도를 신중히 조정해야 한다.",
+      "cautionSource": "임상 부작용 고려"
+    }
+  ]
+}

@@ -26,6 +26,17 @@ const TRUSTED = [
   "clinicaltrials.gov", "law.go.kr", "doi.org", "atherosclerosis-journal.com", "foodandnutritionresearch.net",
   "endocrine.org", "bonehealthandosteoporosis.org", "dermatologytimes.com", "cir-safety.org",
   "dailymed.nlm.nih.gov", "nedrug.mfds.go.kr", "mjh.or.kr", "kpanews.co.kr", "he01.tci-thaijo.org",
+  // 2차 확장 — 감사 실행에서 "미확인"으로 잡힌 것 중 정식 학술지·공공기관만 확인해 편입
+  "cambridge.org", "cell.com", "jaad.org", "thieme-connect.com", "ovid.com", "imrpress.com",
+  "easylaw.go.kr", "fmis.kr", "synapse.koreamed.org", "e-jnh.org", "mjrheum.org",
+  "lpi.oregonstate.edu", "uchealth.com", "northwell.edu", "webstore.ansi.org", "iso.org",
+  "vcahospitals.com", // 반려동물 독성은 임상 수의 정보원이 실질 1차에 가깝다
+  // 3차 확장 — 학회·정부·대학병원·정식 저널
+  "health.harvard.edu", "aafp.org", "cancer.org", "jkms.org", "korea.kr", "healthychildren.org",
+  "aoa.org", "auanet.org", "ccjm.org", "amjmed.com", "clinicalnutritionjournal.com",
+  "clinicalnutritionespen.com", "healio.com", "medicalguidelines.msf.org", "mcgill.ca",
+  "fredhutch.org", "healthcare.utah.edu", "health.gov", "hsis.org", "brightfocus.org",
+  "elabp.org", "foodinfo.or.kr", "bioin.or.kr", "food-safety.com", "kati.net",
 ];
 
 // 명백히 배제할 성격 — 판매·마케팅·커뮤니티
@@ -89,8 +100,27 @@ for (const [h, list] of Object.entries(byHost).sort((a, b) => b[1].length - a[1]
   console.log(`  ${String(list.length).padStart(3)}건  ${h}`);
 }
 
+// ── 허용목록 판정(건강 버티컬 전용) ──
+// DENY 목록 방식은 새 도메인이 나올 때마다 뚫린다. 실제로 리서처가 "배제 대상 0"으로
+// 보고한 배치에서 suntribesunscreen·porecloggingchecker·dermalogica·boldpurity가
+// 그대로 통과했다(2026-08-10). 건강·뷰티는 사람 몸에 관한 주장이라 반대로 간다.
+// tier="확실"을 붙이려면 TRUSTED 도메인이어야 한다. 아니면 등급을 내리거나 재조사한다.
+const healthScoped = rows.filter((r) => /^(영양|뷰티)_/.test(r.f));
+const notAllowed = healthScoped.filter((r) => r.tier === "확실");
+if (notAllowed.length) {
+  console.log(`
+■ 건강 버티컬 허용목록 위반 ${notAllowed.length}건 — tier="확실"인데 1차 출처가 아니다`);
+  for (const r of notAllowed) console.log(`  ${r.f}
+      ${r.id}
+      ${r.why} · ${r.url.slice(0, 80)}`);
+  console.log(`
+  → 1차 출처로 재확보하거나 tier를 "논쟁"·"확인실패"로 내려라.`);
+  console.log(`     TRUSTED 목록에 넣을 만한 정식 학술지·공공기관이면 스크립트 상단 TRUSTED에 추가.`);
+}
+
 // 안전 관련인데 배제 대상 출처면 즉시 실패로 본다(사람이 다치는 주장이라 등급 유지 불가)
 const fatal = rows.filter((r) => safetyRe.test(r.id) && !/미확인 도메인/.test(r.why) && r.tier === "확실");
+if (notAllowed.length && process.argv.includes("--strict")) process.exitCode = 1;
 if (fatal.length) {
   console.log(`\n★★ 안전 관련 팩트가 배제 대상 출처로 tier="확실" — ${fatal.length}건. 재조사하거나 등급을 내려야 한다.`);
   for (const r of fatal) console.log(`  ${r.f} :: ${r.id}`);

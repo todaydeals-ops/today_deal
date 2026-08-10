@@ -1,0 +1,147 @@
+{
+  "topic": "아연·셀레늄과 모발: 결핍일 때와 아닐 때의 층위 구분",
+  "brand": "성분연구소",
+  "article": "뷰티_zinc-selenium-hair-growth",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "zinc-hair-synthesis-protein-synthesis-requirement",
+      "claim": "아연은 세포 분열과 단백질 합성에 필수이며, 모발 단백질(케라틴) 생성과 모낭 유지에 직결된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "영양 생화학 및 피부 건강 자료",
+      "source_url": "https://myhairdoctor.com/zinc-hair-loss-growth/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모발 영양",
+        "분류": "아연의 역할",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "zinc-deficiency-telogen-effluvium-hair-shedding",
+      "claim": "아연 결핍은 휴지기 탈모(telogen effluvium)와 미세한 모발 약화를 초래하며, 혈청 아연 수치 정상화로 개선 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "영양 피부학 자료",
+      "source_url": "https://myhairdoctor.com/zinc-hair-loss-growth/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "아연 결핍 환자",
+        "분류": "탈모 원인",
+        "시기": "결핍 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★휴지기 탈모는 복합 원인이며 아연 결핍 유무를 반드시 혈액 검사로 확인해야 한다. 아연 수치가 정상이면 보충제는 효과 없다.",
+      "cautionSource": "진단의 필요성"
+    },
+    {
+      "id": "zinc-excess-copper-absorption-block-shedding-risk",
+      "claim": "과다한 아연 섭취는 구리 흡수를 방해하여 오히려 탈모를 유발할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "영양 균형 및 미네랄 상호작용 자료",
+      "source_url": "https://hairtamin.com/blogs/hair-health/zinc-and-selenium-for-hair-health-finding-the-sweet-spot",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "아연 보충제 과용",
+        "분류": "미네랄 불균형",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★'많을수록 좋다'는 보충제 오용이 위험하다. 권장 일일 섭취량(RDA) 11mg을 초과한 장기 보충은 전문가 감시 필요.",
+      "cautionSource": "영양학 가이드"
+    },
+    {
+      "id": "selenium-antioxidant-thyroid-hormone-metabolism",
+      "claim": "셀레늄은 항산화제로 작용하며 모낭과 갑상선 호르몬 대사를 지탱한다. 갑상선 호르몬은 모발 성장 주기를 조절한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "영양학 및 내분비 자료",
+      "source_url": "https://neofollics.com/blogs/articles/selenium-for-hair",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모발 성장 조절",
+        "분류": "셀레늄의 역할",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "selenium-deficiency-hair-loss-selenoprotein-impairment",
+      "claim": "셀레늄 결핍은 셀레노단백질 합성을 저해하여 모낭 기능 장애와 탈모를 초래한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "영양 피부학 자료",
+      "source_url": "https://hairlove.com/blogs/hairlove/selenium-deficiency-and-hair-health",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "셀레늄 결핍 환자",
+        "분류": "탈모 원인",
+        "시기": "결핍 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★셀레늄 결핍은 지역별로 드물다(한국은 충분 섭취 지역). 보충제 복용 전 혈액 검사로 결핍 여부 확인이 필수다.",
+      "cautionSource": "진단의 필요성"
+    },
+    {
+      "id": "selenium-toxicity-threshold-400-micrograms-daily",
+      "claim": "일일 400μg 이상의 셀레늄 과잉 섭취는 셀레늄 독성(selenosis)을 유발하며, 탈모를 포함한 여러 부작용이 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "영양 독성학 및 안전 가이드",
+      "source_url": "https://hairtamin.com/blogs/hair-health/zinc-and-selenium-for-hair-health-finding-the-sweet-spot",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "셀레늄 과다",
+        "분류": "독성 임계값",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★흥미롭게도 셀레늄 결핍도, 과잉도 탈모를 부른다. 정확한 혈액 수치 범위(보통 70~150 μg/L)를 목표로 해야 한다.",
+      "cautionSource": "안전 임계값"
+    },
+    {
+      "id": "zinc-alopecia-areata-supplementation-study-results",
+      "claim": "원형탈모(alopecia areata) 환자를 대상으로 한 일부 연구에서 아연 보충제는 모발 재생을 보였다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "영양 피부학 자료",
+      "source_url": "https://wimpoleclinic.com/blog/do-selenium-supplements-benefit-your-hair-evidence-review/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "원형탈모 환자",
+        "분류": "아연 보충 효과",
+        "시기": "임상 연구",
+        "지역": "글로벌"
+      },
+      "caution": "★연구 규모가 작으며, 원형탈모 환자 선정 기준·추적 기간이 다양해 일반화가 어렵다. 전문의 진단 후 진행해야 한다.",
+      "cautionSource": "임상 근거 수준"
+    },
+    {
+      "id": "mineral-supplementation-benefit-only-in-deficiency",
+      "claim": "아연·셀레늄의 모발 성장 보충 효과는 사전 결핍이 입증된 경우에만 기대할 수 있으며, 정상 수치에서의 추가 보충은 효과 증거가 부족하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "영양 피부학 가이드",
+      "source_url": "https://www.health.harvard.edu/diseases-and-conditions/vitamins-minerals-and-hair-loss-is-there-a-connection",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반인",
+        "분류": "보충제 사용의 한계",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★마케팅은 '모발 건강'을 강조하지만, 임상 역할은 결핍 복구에 한정된다. 건강한 사람의 과다 보충은 오히려 미네랄 불균형을 초래한다.",
+      "cautionSource": "영양학 기본 원칙"
+    }
+  ]
+}

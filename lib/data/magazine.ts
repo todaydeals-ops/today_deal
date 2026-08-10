@@ -26,6 +26,11 @@ export interface MagazineArticle {
 // 잠자리연구소=수면·침구(goodsleep), 알약연구소=건강기능식품(pill).
 export const SUB_MEDIA_FIELDS = ["수면·침구", "건강기능식품", "뷰티·성분"];
 
+// AS연구소(b4as)는 field가 아니라 corner로 격리한다.
+// AS는 주제가 아니라 상황("고장났다")이라 field가 가전·디지털·IT·리빙·주방·자동차로
+// 흩어져 있다. 그 field는 AS연구소 안에서 제품유형 분류의 재료로 그대로 쓴다.
+export const SUB_MEDIA_CORNERS = ["repair"];
+
 interface Row {
   id: string;
   slug: string;
@@ -98,8 +103,10 @@ export async function fetchMagazineList(opts?: { corner?: string; field?: string
       .neq("corner", "report")   // 리포트는 별도 데이터레이어(magazine-report.ts) 사용
       .order("created_at", { ascending: false });
     if (opts?.corner) q = q.eq("corner", opts.corner);
-    if (opts?.field) q = q.eq("field", opts.field); // 섹션(잠자리연구소·알약연구소) 전용 필터
+    if (opts?.field) q = q.eq("field", opts.field); // 섹션(잠자리·알약·성분) 전용 필터
     else q = q.not("field", "in", `("${SUB_MEDIA_FIELDS.join('","')}")`); // 메인 매거진에선 서브 미디어 글 제외 — 격리
+    // AS연구소 격리 — corner를 명시해 부른 경우(=AS 홈)는 통과시키고, 그 외에는 뺀다.
+    if (!opts?.corner) q = q.not("corner", "in", `("${SUB_MEDIA_CORNERS.join('","')}")`);
     const limit = opts?.limit ?? 60;
     if (opts?.offset != null) q = q.range(opts.offset, opts.offset + limit - 1);
     else q = q.limit(limit);
@@ -118,6 +125,7 @@ export async function fetchMagazineCount(corner?: string): Promise<number> {
   try {
     let q = sb.from("magazine").select("*", { count: "exact", head: true }).eq("is_published", true).neq("corner", "report").not("field", "in", `("${SUB_MEDIA_FIELDS.join('","')}")`);
     if (corner) q = q.eq("corner", corner);
+    else q = q.not("corner", "in", `("${SUB_MEDIA_CORNERS.join('","')}")`); // AS연구소 격리
     const { count } = await q;
     return count ?? 0;
   } catch {

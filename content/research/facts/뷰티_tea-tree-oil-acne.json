@@ -1,0 +1,96 @@
+{
+  "topic": "티트리 오일: 여드름 근거와 접촉피부염 주의",
+  "brand": "성분연구소",
+  "article": "뷰티_tea-tree-oil-acne",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "tea-tree-oil-terpinen-4-ol-antimicrobial",
+      "claim": "티트리 오일의 주요 활성 성분은 terpinen-4-ol이며, 광범위 항균·항바이러스·항진균 활성을 가진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "International Journal of Dermatology 2013: A review of applications of tea tree oil in dermatology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/22998411/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "티트리 오일 성분",
+        "분류": "항균 기전",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "tea-tree-oil-acne-vulgaris-mild-moderate-efficacy",
+      "claim": "티트리 오일 겔을 12주간 사용한 경증·중등도 여드름 환자에서 통계적으로 유의한 개선이 관찰되었으며, 제품은 잘 내약됐다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Tea tree oil gel for mild to moderate acne; a 12 week uncontrolled, open-label phase II pilot study",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/27000386/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "경증·중등도 여드름",
+        "분류": "임상 효과",
+        "시기": "12주",
+        "지역": "글로벌"
+      },
+      "caution": "★이 연구는 위약 대조군이 없는 open-label 파일럿 연구이므로, 위약 효과를 배제할 수 없다. RCT 근거가 필요하다.",
+      "cautionSource": "임상시험 설계의 한계"
+    },
+    {
+      "id": "tea-tree-oil-contact-dermatitis-patch-test-prevalence",
+      "claim": "티트리 오일은 접촉 감작 반응을 유발할 수 있으며, 패치 테스트 대상자 중 약 1.4%에서 양성 반응이 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Spreading Allergic Contact Dermatitis to Tea Tree Oil in an Over-the-Counter Product Applied on a Wart",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9146230/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "피부 감작",
+        "분류": "접촉피부염 위험",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "농도 5~10% 범위에서도 접촉 감작이 보고되었다. 민감한 피부나 환부 적용 후 가려움증·발적이 나타나면 즉시 중단할 것.",
+      "cautionSource": "패치 테스트 임상 데이터"
+    },
+    {
+      "id": "tea-tree-oil-concentration-lower-safer",
+      "claim": "티트리 오일의 농도가 높을수록 접촉 피부염 위험이 증가하며, 낮은 농도에서 더 안전하다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PubMed: A review of applications of tea tree oil in dermatology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/22998411/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "농도 의존성",
+        "분류": "안전 프로필",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★시판 제품의 티트리 오일 농도(%)는 표기되지 않은 경우가 많다. 순수 티트리 오일은 농도가 높아 희석이 권장되나, 희석 배율은 제품마다 다르다.",
+      "cautionSource": "표기 부재 및 포뮬레이션 다양성"
+    },
+    {
+      "id": "tea-tree-oil-anti-inflammatory-wound-healing",
+      "claim": "티트리 오일은 항염증 효과를 가지며 상처 치유를 가속화한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "International Journal of Dermatology 2013: A review of applications of tea tree oil in dermatology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/22998411/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "피부 상처",
+        "분류": "항염증·상처 치유",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    }
+  ]
+}

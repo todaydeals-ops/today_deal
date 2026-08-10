@@ -57,6 +57,9 @@
 }
 .sleep-cat-index .corner-cell { padding: 20px 15px; }
 .sleep-cat-index .corner-cell:last-child { border-right: none; }
+/* 5열(AS연구소 9분류)은 두 줄로 떨어지므로 5n마다 오른쪽 테두리를 지우고 아래 테두리를 준다 */
+.sleep-cat-index[style*="--cat-cols: 5"] .corner-cell:nth-child(5n) { border-right: none; }
+.sleep-cat-index[style*="--cat-cols: 5"] .corner-cell:nth-child(-n+5) { border-bottom: 1px solid #ddd5c8; }
 @media (max-width: 1100px) {
   .sleep-cat-index { grid-template-columns: repeat(var(--cat-cols-md, 3), 1fr); }
   .sleep-cat-index .corner-cell { border-bottom: 1px solid #ddd5c8; }
@@ -149,7 +152,8 @@
   .cc-d { margin-top: 5px !important; }
 }
 
-/* 브랜드 패밀리 블록 — 푸터 공통(오늘의딜·잠자리·알약 상호 연결) */
-.brand-family { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+/* 브랜드 패밀리 블록 — 푸터 공통(오늘의딜·잠자리·알약·성분·AS 상호 연결) */
+.brand-family { display: grid; grid-template-columns: repeat(5, 1fr); gap: 22px; }
+@media (max-width: 1100px) { .brand-family { grid-template-columns: repeat(3, 1fr); gap: 18px; } }
 @media (max-width: 900px) { .brand-family { grid-template-columns: repeat(2, 1fr); gap: 18px; } }
 @media (max-width: 560px) { .brand-family { grid-template-columns: 1fr; gap: 16px; } }

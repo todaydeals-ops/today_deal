@@ -36,9 +36,11 @@ export function MagazineMasthead() {
           </span>
         </Link>
         <nav className="mz-nav">
-          {CORNERS.map((c) => (
+          {/* repair(AS셀프체크)는 AS연구소로 분리됐다 — 메인 코너 메뉴에서 빼고 아래 패밀리 칸으로 안내한다. */}
+          {CORNERS.filter((c) => c.key !== "repair").map((c) => (
             <Link key={c.key} className="ul-sweep" href={`/magazine?corner=${c.key}`} style={{ textDecoration: "none", color: "#5b564d" }}>{c.name}</Link>
           ))}
+          <a className="ul-sweep" href={SUB_ORIGIN.b4as} target="_blank" rel="noopener" style={{ textDecoration: "none", color: "#5b564d" }}>AS연구소 &#8599;</a>
         </nav>
       </div>
     </header>
@@ -80,6 +82,16 @@ export function CornerIndex() {
           <div className="cc-t" style={{ fontWeight: 800, fontSize: 16, marginTop: 14 }}>알약연구소</div>
           <div className="cc-en" style={{ fontFamily: mono, fontSize: 9.5, letterSpacing: "1px", color: "#8a6a3a", marginTop: 2 }}>PILL LAB &#8599;</div>
           <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>임상으로 따지는 영양제</div>
+        </a>
+        {/* 08 — AS연구소(고장 자가진단, 서브도메인). 새창. */}
+        <a className="corner-cell" href={SUB_ORIGIN.b4as} target="_blank" rel="noopener">
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            <span className="cc-n" style={{ fontFamily: mono, fontSize: 11, fontWeight: 600, color: "#9a9286" }}>08</span>
+            <span style={{ width: 9, height: 9, borderRadius: 9999, background: "#38539a" }} />
+          </div>
+          <div className="cc-t" style={{ fontWeight: 800, fontSize: 16, marginTop: 14 }}>AS연구소</div>
+          <div className="cc-en" style={{ fontFamily: mono, fontSize: 9.5, letterSpacing: "1px", color: "#38539a", marginTop: 2 }}>SELF CHECK &#8599;</div>
+          <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>부르기 전 5분 셀프체크</div>
         </a>
         {/* 07 — 성분연구소(뷰티·다이어트 성분 검증, 서브도메인). 새창. */}
         <a className="corner-cell" href={SUB_ORIGIN.beauty} target="_blank" rel="noopener">

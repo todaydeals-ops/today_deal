@@ -1,0 +1,115 @@
+{
+  "topic": "다이메티콘(실리콘): 밀폐제 역할, 모공 막힘 논란, TEWL 감소, 안전성",
+  "brand": "성분연구소",
+  "article": "뷰티_dimethicone-occlusive",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "occlusive-examples-plant-oils-silicones-waxes"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "occlusive-examples-plant-oils-silicones-waxes",
+      "claim": "밀폐제(occlusive) 예시: 바셀린, 샐러드유, 식물유(동백오일, 아르간오일), 실리콘(다이메티콘), 밀랍 등. 분자량이 크거나 소수성이 강할수록 밀폐 효과가 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "StatPearls: Moisturizers (NCBI Bookshelf)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK545171/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화장품 원료",
+        "시기": "제형 설계",
+        "지역": "글로벌",
+        "분류": "원료 목록"
+      },
+      "caution": "모든 식물유가 같은 수준의 밀폐 효과를 갖지는 않으며, 포화지방산 함량과 산화 안정성에 따라 다르다.",
+      "cautionSource": null
+    },
+    {
+      "id": "dimethicone-molecular-size-non-comedogenic-pore-clogging-myth",
+      "claim": "다이메티콘(dimethicone)은 분자 크기가 매우 커서 모공 개구부(pore opening)로 들어갈 수 없으며, 따라서 모공을 물리적으로 막을 수 없다. 다이메티콘의 비코메도제 지수(comedogenicity rating)는 0~1로 매우 낮다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PoreCloggingChecker.org, Basic Maintenance: Silicone Comedogenicity Evidence",
+      "source_url": "https://porecloggingchecker.org/blog/does-dimethicone-clog-pores-fact-vs-skincare-fiction",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "지성 피부·여드름 우려",
+        "분류": "모공 막힘 논쟁",
+        "시기": "현재 과학적 합의",
+        "지역": "글로벌"
+      },
+      "caution": "★'실리콘 = 모공 막힘'은 인터넷 통설이지만, 임상 증거는 다르다. 집필에서 '이 우려는 과학적 근거가 약하다'고 명확히 밝혀야 한다.",
+      "cautionSource": "임상 비코메도제니티 데이터"
+    },
+    {
+      "id": "dimethicone-tewl-reduction-20-to-30-percent",
+      "claim": "다이메티콘은 경표피수분손실(TEWL)을 약 20-30% 감소시키며, 농도와 제형에 따라 변동폭이 크다. 구체적으로 3% 다이메티콘 함유 물티슈는 28일 후 TEWL을 16.44% 감소시켰다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI: Clinical Study on Dimethicone-Containing Wet Wipe",
+      "source_url": "https://doi.org/10.3390/cosmetics13020088",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "건조 피부",
+        "분류": "TEWL 감소 효율",
+        "시기": "단기 도포 후",
+        "지역": "글로벌"
+      },
+      "caution": "★20-30% TEWL 감소는 바셀린(98% 감소)보다 훨씬 낮다. 다이메티콘은 '부분 밀폐제'이며 강력한 밀폐 효과를 기대하면 안 된다.",
+      "cautionSource": "임상 측정값"
+    },
+    {
+      "id": "dimethicone-breathable-film-gas-exchange",
+      "claim": "다이메티콘이 형성하는 필름은 '호흡가능'하여 산소와 이산화탄소 같은 기체 교환이 가능하며, 피부 호흡을 방해한다는 '질식' 우려는 과학적 근거가 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dermalogica, Boldpurity: Silicones and Skin Breathability",
+      "source_url": "https://www.dermalogica.com/blogs/living-skin/what-silicones-do-in-skincare",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 피부",
+        "분류": "막 물리성",
+        "시기": "도포 후",
+        "지역": "글로벌"
+      },
+      "caution": "\"피부가 숨을 쉬지 못한다\"는 표현은 잘못된 피부 생리학이다. 피부의 호흡은 분자 수준이며, 필름이 이를 방해하지 못한다.",
+      "cautionSource": "피부 생리학"
+    },
+    {
+      "id": "dimethicone-cir-sccs-safety-approval-no-absorption",
+      "claim": "미국 화장품 안전성 위원회(CIR)와 유럽 화장품과학위원회(SCCS)는 다이메티콘을 화장품에 안전하다고 결론지었으며, 다이메티콘은 무손상 피부에서 흡수되지 않는다는 것이 확인되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "CIR Safety Assessment, SCCS Opinion on Silicones",
+      "source_url": "https://boldpurity.com/blogs/ingredient-directory/silicones-dimethicone-for-skin-safety-acne-pore-clogging",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 피부 타입",
+        "분류": "규제 안전 지위",
+        "시기": "현재까지",
+        "지역": "미국·유럽"
+      },
+      "caution": "다이메티콘은 비자극성, 비감작성이며, 글로벌 규제 기관의 승인을 받았다. 오래된 안전 우려는 무시해도 된다.",
+      "cautionSource": "규제 기관 승인"
+    },
+    {
+      "id": "dimethicone-partial-occlusive-complementary-use-hydration",
+      "claim": "다이메티콘의 부분적 밀폐 효과를 최대화하려면 습윤제(glycerin, hyaluronic acid)와 함께 사용하는 것이 좋으며, 이러한 조합은 수화도와 TEWL 감소 양쪽 모두에서 단독 사용보다 우수하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dermatology and Skincare Science: Multimodal Moisturizer Strategy",
+      "source_url": "https://www.stratiaskin.com/blogs/ingredients/dimethicone",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "건조·민감 피부",
+        "분류": "제형 설계 원칙",
+        "시기": "보습제 조합",
+        "지역": "글로벌"
+      },
+      "caution": "다이메티콘 단독만으로는 보습 효과가 제한적이므로, 현대 보습제의 '3가지 클래스 조합'(밀폐+습윤+연화)이 표준이 되었다.",
+      "cautionSource": "보습제 포뮬레이션 기준"
+    }
+  ]
+}

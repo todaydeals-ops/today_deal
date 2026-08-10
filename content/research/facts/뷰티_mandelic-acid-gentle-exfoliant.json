@@ -1,0 +1,79 @@
+{
+  "topic": "만델산: 민감성 피부의 부드러운 각질 관리",
+  "brand": "성분연구소",
+  "article": "뷰티_mandelic-acid-gentle-exfoliant",
+  "captured": "2026-08-10",
+  "reused_facts": ["aha-glycolic-acid-smallest-molecule-weight"],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "mandelic-acid-molecular-weight-152-daltons",
+      "claim": "만델산은 분자량 152 달톤으로, 글리콜산(76 달톤)의 약 2배이며, 이로 인해 피부 침투 속도가 느리다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Skincare 제품 성분 비교 (분자량 데이터)",
+      "source_url": "https://www.phyto-c.com/blogs/news/mandelic-acid-gentle-exfoliant-sensitive-skin",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "AHA 분자 크기 비교",
+        "분류": "만델산",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "분자량 데이터는 화학 구조 기반이므로 확실하나, 출처가 상업 웹사이트이다. PubMed RCT 임상 데이터는 별도 확인 필요.",
+      "cautionSource": "화학 데이터베이스"
+    },
+    {
+      "id": "mandelic-acid-slower-penetration-lower-irritation",
+      "claim": "만델산은 분자가 크기 때문에 글리콜산보다 피부 침투가 느리므로, 민감한 피부에서 자극 위험이 더 낮다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "스킨케어 브랜드 및 피부과 자료",
+      "source_url": "https://boldpurity.com/blogs/ingredient-directory/mandelic-acid-the-gentlest-aha-for-sensitive-reactive-skin",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "민감 피부",
+        "분류": "자극도 비교",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★이 주장은 분자 물리학에 기반한 논리적 추론이나, RCT 임상 비교 논문이 보인다. 글리콜산 vs 만델산 직접 RCT는 아직 확보 미흡.",
+      "cautionSource": "추론 기반, RCT 근거 미확보"
+    },
+    {
+      "id": "mandelic-acid-humectant-moisture-retention",
+      "claim": "만델산은 각질제거 기능 외에도 습윤제(humectant) 특성을 가져 피부 수분을 끌어당기고 유지하도록 돕는다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "스킨케어 성분 해설 자료",
+      "source_url": "https://seoulceuticals.com/blogs/news/mandelic-acid-the-gentler-aha-that-works-for-every-skin-type-including-sensitive",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "각질제거·보습",
+        "분류": "만델산 추가 효과",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "습윤제 특성은 화학 구조에 기반하나, 임상 습윤도 개선 RCT는 현재 확보되지 않음.",
+      "cautionSource": "화학 특성 추론, RCT 미확보"
+    },
+    {
+      "id": "mandelic-acid-suitable-darker-skin-tones",
+      "claim": "만델산은 글리콜산에 비해 피부 자극이 적으므로, 검은 피부 톤에서 염증 후 색소침착(PIH) 위험이 더 낮은 것으로 여겨진다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "피부 화학 및 스킨케어 블로그",
+      "source_url": "https://www.dermapproved.com/blog/mandelic-acid-the-gentle-aha-built-for-sensitive-and-deeper-skin/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "깊은 피부 톤",
+        "분류": "색소침착 위험도",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★이는 논리적 추론(낮은 자극 = 낮은 PIH)이나, 깊은 톤 환자 대상 RCT 비교는 현재 부재.",
+      "cautionSource": "추론 기반, 임상 근거 미확보"
+    }
+  ]
+}

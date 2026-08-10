@@ -1,0 +1,96 @@
+{
+  "topic": "위치하젤: 수렴 토너 성분의 실제 작용과 알코올 이슈",
+  "brand": "성분연구소",
+  "article": "뷰티_witch-hazel-toner",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "witch-hazel-tannin-content-astringent-mechanism",
+      "claim": "위치하젤 잎과 껍질은 타닌을 최대 10% 함유하며, 타닌의 단백질 결합 작용으로 피부 조직을 일시적으로 수렴시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식물 화학 및 스킨케어 성분 자료",
+      "source_url": "https://misumiskincare.com/blogs/news/everything-you-need-to-know-about-witch-hazel-face-toners",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "위치하젤 성분",
+        "분류": "타닌 함량·기전",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "witch-hazel-pore-appearance-temporary-effect",
+      "claim": "위치하젤의 수렴 효과는 모공 크기를 물리적으로 축소하지 않으며, 피부 수분 손실로 인한 일시적 외형상 축소일 뿐이다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "피부과 성분 해석 자료",
+      "source_url": "https://www.thayers.com/the-blog/unpacking-the-skin-benefits-of-alcohol-free-witch-hazel",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모공 외형",
+        "분류": "수렴 메커니즘",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★수렴은 일시적(보통 수 시간)이며, 모공의 생리적 크기 변화는 아니다. 제품 설명에서 '모공 축소'라는 표현은 오해의 소지가 있다.",
+      "cautionSource": "피부 생리학"
+    },
+    {
+      "id": "witch-hazel-alcohol-content-14-15-percent-irritant",
+      "claim": "상업용 위치하젤 토너는 주로 알코올로 추출·보존되며, 14~15% 알코올을 함유한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스킨케어 제품 성분 분석",
+      "source_url": "https://www.thelist.com/1216713/its-time-to-stop-using-witch-hazel-as-a-toner-heres-why-and-what-to-use-instead",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "위치하젤 제형",
+        "분류": "알코올 농도",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "14~15% 알코올은 피부 유분을 제거하면서 천연 보습 장벽을 손상시킬 수 있으며, 건성 피부나 민감한 피부에서 자극·건조를 유발할 수 있다.",
+      "cautionSource": "피부 화학 및 제품 분석"
+    },
+    {
+      "id": "witch-hazel-no-acne-benefit-proven",
+      "claim": "피부과 평가에 따르면 위치하젤의 수렴 작용은 여드름 유발 미생물 제어에 효과적이지 않은 것으로 알려져 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "피부과 성분 평가 (Paula's Choice)",
+      "source_url": "https://www.paulaschoice-eu.com/why-witch-hazel-is-a-problem-for-skin",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "여드름 제어",
+        "분류": "위치하젤 한계",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★위치하젤의 항균·항진균 효과에 대한 정식 임상 RCT는 부재하다. 성분 평가는 전문가 견해이나, 공식 임상 근거는 확보되지 않음.",
+      "cautionSource": "출처는 전문가 의견이나 RCT 미확보"
+    },
+    {
+      "id": "witch-hazel-alcohol-free-formulation-tannin-retention",
+      "claim": "무알코올 위치하젤 제품은 알코올의 자극을 제거하면서도 타닌의 항염증·수렴 효과를 유지한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "무알코올 위치하젤 제품 설명",
+      "source_url": "https://www.thayers.com/the-blog/unpacking-the-skin-benefits-of-alcohol-free-witch-hazel",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "제형 대안",
+        "분류": "무알코올 타입",
+        "시기": "현행",
+        "지역": "글로벌"
+      },
+      "caution": "★무알코올 제품도 제형에 따라 타닌 함량이 달라질 수 있다. 제품 라벨에서 타닌 또는 활성성분 함량을 확인하지 않으면 효과를 보장할 수 없다.",
+      "cautionSource": "포뮬레이션 변수성"
+    }
+  ]
+}

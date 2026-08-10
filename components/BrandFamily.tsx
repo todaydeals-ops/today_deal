@@ -3,13 +3,14 @@
 // 주소는 SUB_ORIGIN 한 곳에서만 관리한다(서브도메인 3개 모두 연결 완료).
 import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
 
-type BrandKey = "deal" | "sleep" | "pill" | "beauty";
+type BrandKey = "deal" | "sleep" | "pill" | "beauty" | "b4as";
 
 const BRANDS: { key: BrandKey; name: string; desc: string; url: string; color: string }[] = [
   { key: "deal", name: "오늘의딜", desc: "광고가 끝나는 곳에서 시작하는 기준", url: "https://www.todaydeals.co.kr", color: "#ff5a3c" },
   { key: "sleep", name: "잠자리연구소", desc: "논문으로 검증하는 잠", url: SUB_ORIGIN.sleep, color: "#3f5a54" },
   { key: "pill", name: "알약연구소", desc: "임상으로 따지는 영양제", url: SUB_ORIGIN.pill, color: "#8a6a3a" },
   { key: "beauty", name: "성분연구소", desc: "광고를 지우면 남는 성분", url: SUB_ORIGIN.beauty, color: "#8a5a6a" },
+  { key: "b4as", name: "AS연구소", desc: "부르기 전 5분 셀프체크", url: SUB_ORIGIN.b4as, color: "#38539a" },
 ];
 
 export default function BrandFamily({ current, dark = false }: { current: BrandKey; dark?: boolean }) {

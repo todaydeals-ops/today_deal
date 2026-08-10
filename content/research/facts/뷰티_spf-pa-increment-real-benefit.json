@@ -1,0 +1,99 @@
+{
+  "topic": "SPF 30과 50의 실제 차이: 차단율 곡선, 증분 이득, 도포량 영향",
+  "brand": "성분연구소",
+  "article": "뷰티_spf-pa-increment-real-benefit",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "spf-real-world-application-dose-gap-0-5-1-0-mg-cm2",
+    "sunscreen-dose-reduction-half-spf-reduction-greater-than-half"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "spf-real-world-application-dose-gap-0-5-1-0-mg-cm2",
+      "claim": "일반인의 평균 도포량은 0.5~1.0mg/cm²이므로, 표시된 SPF의 실제 효과는 1/4에서 1/2 수준이다. 예: SPF50 제품은 실제 SPF12~25만 제공한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA: Sunscreen Labeling and Effectiveness Testing Guidelines",
+      "source_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/labeling-and-effectiveness-testing-sunscreen-drug-products-over-counter-human-use-small-entity",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "실사용 시 SPF 효과",
+        "분류": "도포량에 따른 효과 저하",
+        "시기": "임상 실측",
+        "지역": "글로벌"
+      },
+      "caution": "★집필 시 중점: 독자에게 '표시 SPF를 얻으려면 충분히 많은 양을 도포해야 한다'는 점을 명확히 전달해야 한다. 이것이 선크림의 최대 오해 원인이다.",
+      "cautionSource": "FDA 가이드라인"
+    },
+    {
+      "id": "sunscreen-dose-reduction-half-spf-reduction-greater-than-half",
+      "claim": "도포량이 절반으로 줄어들면 SPF(자외선 차단지수)는 절반 이상으로 감소한다. SPF와 도포량의 관계는 선형이 아니라 비선형(nonlinear)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Dose-response relationship of sunscreen efficacy",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0190962201584303",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "차단제 효과",
+        "분류": "약리학",
+        "시기": "도포 직후",
+        "지역": "글로벌"
+      },
+      "caution": "SPF 30을 반쯤 바르면 SPF 15가 된다는 것은 거짓. 실제로는 훨씬 더 많이 떨어진다. 집필 시 이 점을 강조해야 과대 신뢰를 방지할 수 있다.",
+      "cautionSource": "임상 약리학 연구"
+    },
+    {
+      "id": "spf-30-vs-50-uv-blockage-percentage-96-7-vs-98",
+      "claim": "SPF 30은 UVB의 96.7%(3.3% 통과)을 차단하고, SPF 50은 98%(2% 통과)을 차단한다. 1% 차이로 보이지만, SPF 30 사용자는 SPF 50 사용자보다 50% 더 많은 UVB가 피부에 도달한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Suntribe Sunscreen, Dr. Ken Dembny: SPF Protection Mathematics",
+      "source_url": "https://suntribesunscreen.com/blogs/blog/the-difference-between-spf-30-and-spf-50",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "SPF 비교",
+        "분류": "차단율 수학",
+        "시기": "표준 도포량 기준",
+        "지역": "글로벌"
+      },
+      "caution": "1% 차이가 50% 더 많은 UV라는 것은 로그 곡선의 특성이다. 독자가 '30과 50은 큰 차이가 아니다'라고 오해하면 안 된다.",
+      "cautionSource": "자외선 차단 수학"
+    },
+    {
+      "id": "spf-logarithmic-curve-diminishing-returns-above-30",
+      "claim": "SPF가 30을 넘어가면서 추가 보호의 증분이 로그적으로 감소한다. SPF 50, 70, 100으로 올라가도 차단율은 98%, 98.6%, 99% 정도에만 머물러 있어 마케팅 효과 대비 실제 이득이 크지 않다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Standard Groups, Dr. Ken Dembny: SPF Rating System",
+      "source_url": "https://www.standard-groups.com/en/News/2334.html",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "고 SPF 제품 평가",
+        "분류": "로그 곡선 특성",
+        "시기": "ISO 24444 기준",
+        "지역": "글로벌"
+      },
+      "caution": "★집필에서 '높은 SPF = 훨씬 더 많은 보호'는 거짓이다. SPF 50 이상의 제품은 마케팅 가치가 크지 실제 추가 보호는 크지 않다. 이를 균형있게 설명할 것.",
+      "cautionSource": "ISO 24444 표준"
+    },
+    {
+      "id": "spf-real-benefit-dependent-on-adequate-reapplication",
+      "claim": "SPF 30과 50의 수치적 차이는 2%에 불과하지만, 이것이 의미 있으려면 표준 도포량(2mg/cm²)을 유지하고 2시간마다 재도포하는 조건이 전제되어야 한다. 실제 사용에서 이 조건을 충족하는 사용자는 극히 드물다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "FDA, PubMed: Sunscreen Application and Reapplication Reality",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "선크림 사용자",
+        "분류": "현실적 효과",
+        "시기": "실사용 환경",
+        "지역": "글로벌"
+      },
+      "caution": "★중요: '높은 SPF를 선택하면 덜 신경 써도 된다'는 오해를 바로잡아야 한다. SPF 30과 50의 미묘한 차이는 완벽한 사용 조건에서만 의미가 있다.",
+      "cautionSource": "임상 근거와 행동 연구"
+    }
+  ]
+}

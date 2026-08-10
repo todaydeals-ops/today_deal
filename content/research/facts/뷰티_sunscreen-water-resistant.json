@@ -1,0 +1,96 @@
+{
+  "topic": "내수성 선크림 표시: 40분 vs 80분 테스트 기준, 규제 정의, 현실성",
+  "brand": "성분연구소",
+  "article": "뷰티_sunscreen-water-resistant",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "water-resistant-40-minutes-test-protocol-fda",
+      "claim": "FDA 기준 \"water-resistant(40분)\" 표시를 위해서는 2회의 20분 침수 사이클과 15분의 건조 시간이 필요하며, 이후 SPF 재측정을 통해 40분 물 노출 후에도 표시된 SPF의 50% 이상이 유지되는지 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA: Labeling and Effectiveness Testing - Sunscreen Drug Products for OTC Use",
+      "source_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/labeling-and-effectiveness-testing-sunscreen-drug-products-over-counter-human-use-small-entity",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "내수성 선크림",
+        "분류": "규제 시험 기준",
+        "시기": "FDA 규정",
+        "지역": "미국"
+      },
+      "caution": "\"50% 이상 유지\"가 기준이므로, SPF 50 제품이 40분 후 SPF 25만 남아도 표시 가능하다는 뜻이다.",
+      "cautionSource": "FDA Final Rule"
+    },
+    {
+      "id": "water-resistant-80-minutes-test-protocol-fda",
+      "claim": "FDA 기준 \"water-resistant(80분)\" 표시를 위해서는 4회의 20분 침수와 15분 건조 사이클을 반복해야 하며, 80분 누적 물 노출 후에도 표시된 SPF의 50% 이상이 유지되어야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA: Final Rule on Sunscreen Drug Products (2021)",
+      "source_url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "고급 내수성 선크림",
+        "분류": "규제 시험 기준",
+        "시기": "FDA 2021 최종 규정",
+        "지역": "미국"
+      },
+      "caution": "40분과 80분 모두 \"50% 이상 유지\"라는 동일한 기준이 사용된다. 80분 표시는 더 많은 침수 사이클을 견디는 것일 뿐, 최종 효과 기준은 같다.",
+      "cautionSource": "FDA OTC 규정"
+    },
+    {
+      "id": "water-resistant-spf-retention-50-percent-threshold",
+      "claim": "\"water-resistant\" 표시의 핵심은 물 노출 후에도 SPF의 50% 이상이 유지되어야 한다는 것이다. 따라서 SPF 50 제품은 물 노출 후 SPF 25 이상만 유지되면 표시 조건을 만족한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA OTC Monograph: Sunscreen Drug Products",
+      "source_url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "내수성 제품 표시",
+        "분류": "효과 기준",
+        "시기": "물 노출 후",
+        "지역": "미국"
+      },
+      "caution": "★집필 시 주의: \"water-resistant 40/80분\" 표시가 '그 시간 동안 완전히 방수'라는 뜻이 아니다. 50% 유지만으로도 표시 가능하므로 독자 기대를 적절히 조정해야 한다.",
+      "cautionSource": "규제 정의"
+    },
+    {
+      "id": "water-resistant-definition-not-waterproof-complete-protection",
+      "claim": "\"water-resistant\"는 \"waterproof(방수)\"가 아니며, 물 노출 시 선크림의 일부가 떨어지는 것을 완전히 방지하지 못한다. 표시는 단지 50% 이상의 효과가 유지된다는 뜻일 뿐이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA: Sunscreen How to Help Protect Your Skin from the Sun",
+      "source_url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/sunscreen-how-help-protect-your-skin-sun",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 선크림 사용자",
+        "분류": "용어 정의",
+        "시기": "규제 기준",
+        "지역": "글로벌"
+      },
+      "caution": "\"water-resistant\"라는 용어가 완전한 보호를 약속하는 것처럼 보이지만, 수영 후나 땀을 많이 흘렸을 때는 재도포가 필수다.",
+      "cautionSource": "FDA 권고사항"
+    },
+    {
+      "id": "iso-water-resistance-testing-europe-percentage-retention",
+      "claim": "유럽의 ISO 기반 표준도 미국 FDA와 유사한 침수 사이클과 퍼센트 유지 기준을 사용하지만, 일부 국가에서는 추가 요구사항(예: 모래 노출 테스트)이 포함될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "GBA Group Cosmetics: Water Resistance Testing Regulations",
+      "source_url": "https://www.gba-group-cosmetics.com/regulations-regarding-water-resistance-testing-of-sunscreens",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "국제 규제",
+        "분류": "테스트 기준 변동",
+        "시기": "현재",
+        "지역": "유럽·글로벌"
+      },
+      "caution": "제품을 여러 국가에 판매할 때는 각 지역의 내수성 테스트 기준을 확인해야 한다.",
+      "cautionSource": "국가별 규제"
+    }
+  ]
+}

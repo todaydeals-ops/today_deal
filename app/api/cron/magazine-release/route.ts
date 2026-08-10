@@ -2,7 +2,7 @@
 // 로컬 Windows 작업 스케줄러(run-magazine-release.cmd)가 PC 상태에 따라 멈추는 문제를 없애려고
 // Vercel Cron으로 옮긴 것. 게이트 로직은 scripts/magazine-release.mjs와 동일 기준.
 import { getSupabaseAdmin } from "@/lib/supabase/server";
-import { SUB_MEDIA_FIELDS } from "@/lib/data/magazine";
+import { SUB_MEDIA_FIELDS, SUB_MEDIA_CORNERS } from "@/lib/data/magazine";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
@@ -51,6 +51,8 @@ export async function GET(request: Request): Promise<Response> {
     // 재고 최다 코너 우선 로직에 매번 이겨버렸다(일요일 발행·요일 무시).
     // 그 사이 메인 자체 리저브는 repair를 빼고 한 편도 못 나갔다.
     .not("field", "in", `("${SUB_MEDIA_FIELDS.join('","')}")`)
+    // AS연구소도 별도 요일 스케줄로 나가므로 메인 풀에서 뺀다(corner 격리).
+    .not("corner", "in", `("${SUB_MEDIA_CORNERS.join('","')}")`)
     .order("created_at", { ascending: true });
 
   const drafts = (data ?? []) as Row[];
@@ -63,6 +65,7 @@ export async function GET(request: Request): Promise<Response> {
   }
 
   // 같은 코너에 편중되지 않게, 뽑을 때는 재고가 가장 많은 코너가 가져간다.
+  // repair(AS셀프체크)는 AS연구소로 분리돼 위 쿼리에서 이미 빠졌다 — 여기 남은 건 메인 3코너뿐.
   const OTHERS = ["factcheck", "smartguide", "trendlab"];
   const pickFrom = (pool: string[]): Row | null => {
     const avail = pool.filter((c) => byCorner[c]?.length > 0);
@@ -71,17 +74,9 @@ export async function GET(request: Request): Promise<Response> {
     return byCorner[avail[0]].shift() ?? null;
   };
 
-  // 하루 1편 체제에서 repair를 언제나 1순위로 두면 나머지 3코너가 영영 못 나간다.
-  // 요일로 갈라 재고 소진 속도를 맞춘다(repair 화·목·토 3일, 나머지 4일).
-  const kstDowMain = new Date(Date.now() + 9 * 3600 * 1000).getUTCDay();
-  const repairDay = [2, 4, 6].includes(kstDowMain);
-
   const picked: Row[] = [];
-  const first = repairDay ? pickFrom(["repair"]) ?? pickFrom(OTHERS) : pickFrom(OTHERS) ?? pickFrom(["repair"]);
-  if (first) picked.push(first);
   while (picked.length < count) {
-    // AS 재고가 비면 나머지로 채우고, 나머지가 비면 AS를 한 편 더 낸다
-    const row = pickFrom(OTHERS) ?? pickFrom(["repair"]);
+    const row = pickFrom(OTHERS);
     if (!row) break;
     picked.push(row);
   }
@@ -96,23 +91,22 @@ export async function GET(request: Request): Promise<Response> {
   }
 
   // ── 서브 미디어 예약 발행 — 각자 정해진 요일(KST)에 1편씩 공개 ──
-  // 잠자리연구소=화·금, 알약연구소=월·목. 리저브 created_at 오름차순(카테고리 인터리브 순서로 미리 세팅) → 오래된 것부터.
+  // 월 알약 / 화 AS / 수 성분 / 목 알약 / 금 잠자리 / 토 성분 / 일 AS.
+  // 리저브는 created_at 오름차순(분류 인터리브 순서로 미리 세팅)이라 오래된 것부터 나간다.
   const kstDow = new Date(Date.now() + 9 * 3600 * 1000).getUTCDay(); // 0일 1월 2화 3수 4목 5금 6토
-  const SUB_SCHEDULE: { field: string; days: number[] }[] = [
-    { field: "수면·침구", days: [2, 5] },   // 잠자리연구소 화·금
-    { field: "건강기능식품", days: [1, 4] }, // 알약연구소 월·목
-    { field: "뷰티·성분", days: [3, 6] },    // 성분연구소 수·토
+  // field 또는 corner 하나로 대상을 고른다. AS연구소만 corner 기준이다.
+  const SUB_SCHEDULE: { field?: string; corner?: string; label: string; days: number[] }[] = [
+    { field: "수면·침구", label: "잠자리연구소", days: [5] },      // 93편 목표 달성 → 금 1회로 축소
+    { field: "건강기능식품", label: "알약연구소", days: [1, 4] },   // 월·목
+    { field: "뷰티·성분", label: "성분연구소", days: [3, 6] },      // 수·토
+    { corner: "repair", label: "AS연구소", days: [2, 0] },         // 화·일 (잠자리에서 넘겨받은 화요일)
   ];
   const subReleased: string[] = [];
   for (const s of SUB_SCHEDULE) {
     if (!s.days.includes(kstDow)) continue;
-    const { data: subDrafts } = await sb
-      .from("magazine")
-      .select("slug,body_html")
-      .eq("is_published", false)
-      .eq("field", s.field)
-      .order("created_at", { ascending: true })
-      .limit(5);
+    let sq = sb.from("magazine").select("slug,body_html").eq("is_published", false);
+    sq = s.corner ? sq.eq("corner", s.corner) : sq.eq("field", s.field!);
+    const { data: subDrafts } = await sq.order("created_at", { ascending: true }).limit(5);
     for (const a of (subDrafts ?? []) as { slug: string; body_html: string }[]) {
       const plain = (a.body_html || "").replace(/<!--[\s\S]*?-->/g, "").replace(/<[^>]+>/g, "").trim().length;
       if (plain < 1500) continue; // 분량 게이트(검증필 원고라 통상 통과)
@@ -120,7 +114,7 @@ export async function GET(request: Request): Promise<Response> {
         .from("magazine")
         .update({ is_published: true, created_at: new Date().toISOString() })
         .eq("slug", a.slug);
-      if (!error) { subReleased.push(`[${s.field}] ${a.slug}`); break; } // 해당 요일 1편만
+      if (!error) { subReleased.push(`[${s.label}] ${a.slug}`); break; } // 해당 요일 1편만
     }
   }
   const sleepReleased = subReleased; // 응답 하위호환

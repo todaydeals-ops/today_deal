@@ -1,0 +1,113 @@
+{
+  "topic": "아보벤존의 광불안정성 문제와 안정화 전략: 옥토크릴렌, 옥시벤존, 항산화제",
+  "brand": "성분연구소",
+  "article": "뷰티_avobenzone-photostability",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "avobenzone-photodegradation-instability-uva-filter",
+      "claim": "아보벤존(avobenzone)은 광범위 UVA 차단이 가능한 유기 자차이지만, 자외선 노출 시 광분해(photodegradation)되어 불안정하며, 이로 인해 시간 경과에 따라 UVA 차단 효과가 감소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect, PubMed: Photodegradation of Avobenzone",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S101113441400222X",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화학 자차",
+        "분류": "안정성 문제",
+        "시기": "자외선 노출 중",
+        "지역": "글로벌"
+      },
+      "caution": "아보벤존의 광불안정성이 바로 '광안정화' 기술이 필수인 이유다. 안정화제 없는 아보벤존 제품은 효과가 제한적이다.",
+      "cautionSource": "자외선 필터 화학"
+    },
+    {
+      "id": "avobenzone-octocrylene-stabilization-23-to-90-percent",
+      "claim": "옥토크릴렌(octocrylene) 3.6% 첨가로 아보벤존 4% 제형의 안정성이 23%(baseline)에서 90%로 개선되었으며, 이는 25 MED(minimum erythema dose) 자외선 노출 후 측정했을 때의 결과다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cosmetics & Toiletries: The Quest for Avobenzone Stabilizers",
+      "source_url": "https://www.cosmeticsandtoiletries.com/formulas-products/sun-care/article/21836968/the-quest-for-avobenzone-stabilizers-and-sunscreen-photostability",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "화학 자차 안정화",
+        "분류": "삼중항 소광자",
+        "시기": "안정성 시험",
+        "지역": "글로벌"
+      },
+      "caution": "이 수치는 실험실 조건(25 MED)에서의 측정이며, 실제 야외 사용 환경에서는 변수가 많을 수 있다.",
+      "cautionSource": "실험실 안정성 시험"
+    },
+    {
+      "id": "oxybenzone-quenching-mechanism-avobenzone-singlet-triplet",
+      "claim": "옥시벤존(oxybenzone)은 아보벤존의 형광을 소광(quenching)하여 일중 항 흥분 상태(singlet excited state)에서 삼중 항 상태(triplet-excited state)로의 에너지 흐름을 억제함으로써, 광분해를 유발하는 삼중항 반응을 감소시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cosmetics & Toiletries: Understanding Avobenzone Stabilization",
+      "source_url": "https://www.cosmeticsandtoiletries.com/formulas-products/sun-care/article/21837078/in-light-of-exposure-understanding-avobenzone-part-ii-application",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "자외선 필터 화학",
+        "분류": "분자 기전",
+        "시기": "제형 설계",
+        "지역": "글로벌"
+      },
+      "caution": "이는 이론적 기전이며, 실제 제품에서 옥시벤존의 효율성은 농도와 제형 기술에 크게 의존한다.",
+      "cautionSource": "광화학 기전"
+    },
+    {
+      "id": "4-methylbenzylidene-camphor-avobenzone-stabilization-100-percent",
+      "claim": "4-메틸벤질리덴 캠퍼(4-methylbenzylidene camphor)는 아보벤존 안정화에서 100% 효율을 달성했으며, 삼중항 소광자(triplet quencher) 중 가장 효과적인 성분 중 하나로 알려져 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cosmetics & Toiletries, Patent Literature: High Photostability Sunscreen",
+      "source_url": "https://image-ppubs.julius.uspto.gov/dirsearch-public/print/downloadPdf/8603443",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "광안정화 성분",
+        "분류": "효과",
+        "시기": "연구 수준",
+        "지역": "글로벌"
+      },
+      "caution": "★100% 안정화는 실험실 조건일 수 있으며, 제품 수명 동안 완전 유지를 보장하지 않는다. 또한 일부 국가에서는 4-메틸벤질리덴 캠퍼의 규제 상태가 불명확할 수 있다.",
+      "cautionSource": "규제 가능성"
+    },
+    {
+      "id": "antioxidants-ubiquinone-transresveratrol-avobenzone-stabilization",
+      "claim": "항산화제(ubiquinone, transresveratrol 등)는 옥토크릴렌이나 옥시벤존과 함께 사용되어 아보벤존 안정화를 추가로 향상시킬 수 있으며, 95-100% 안정화에 도달할 수 있다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Cosmetics & Toiletries: Advanced Stabilization Strategies",
+      "source_url": "https://www.cosmeticsandtoiletries.com/formulas-products/sun-care/article/21836968/the-quest-for-avobenzone-stabilizers-and-sunscreen-photostability",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "다중 안정화 시스템",
+        "분류": "복합 기전",
+        "시기": "연구 단계",
+        "지역": "글로벌"
+      },
+      "caution": "복합 안정화 시스템이 복잡할수록 제형 비용이 증가하고, 다른 성분의 상호작용 가능성이 높아진다.",
+      "cautionSource": "제형 복잡성"
+    },
+    {
+      "id": "octocrylene-phototoxicity-concern-alternative-research",
+      "claim": "옥토크릴렌은 최근 잠재적 광독성(phototoxicity)을 보였다는 연구가 제시되었으며, 이로 인해 대체 안정화 방법에 대한 연구가 진행되고 있다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Cosmetics & Toiletries: Octocrylene Safety Concerns",
+      "source_url": "https://www.cosmeticsandtoiletries.com/formulas-products/sun-care/article/21836968/the-quest-for-avobenzone-stabilizers-and-sunscreen-photostability",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "광안정화 성분 안전성",
+        "분류": "규제 동향",
+        "시기": "2020년대",
+        "지역": "글로벌"
+      },
+      "caution": "★옥토크릴렌의 광독성 우려는 아직 확정되지 않았으며, 현재 각국 규제 기관의 재평가가 진행 중이다. 혼동하지 말 것.",
+      "cautionSource": "규제 검토 진행 중"
+    }
+  ]
+}

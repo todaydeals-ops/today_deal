@@ -16,6 +16,9 @@ const MEDIA = [
   { name: "잠자리연구소", field: "수면·침구", file: "lib/magazine/sleepCategories.ts", topics: [".work/goodsleep-batch2/topics.json", ".work/goodsleep-batch3/topics.json"] },
   { name: "알약연구소", field: "건강기능식품", file: "lib/magazine/pillCategories.ts", topics: [".work/pill-batch/topics-92.json"] },
   { name: "성분연구소", field: "뷰티·성분", file: "lib/magazine/beautyCategories.ts", topics: [".work/beauty-batch/topics.json"] },
+  // AS연구소만 field가 아니라 corner로 격리한다.
+  // AS는 주제가 아니라 상황("고장났다")이라 field가 가전·디지털·리빙·자동차로 흩어져 있다.
+  { name: "AS연구소", corner: "repair", file: "lib/magazine/b4asCategories.ts", topics: [] },
 ];
 
 const WANT_TOPICS = process.argv.includes("--topics");
@@ -31,7 +34,7 @@ for (const m of MEDIA) {
     for (const s of blk.match(/"[^"]+"/g) || []) registered.add(s.slice(1, -1));
   }
 
-  const r = await fetch(`${SUPA}/rest/v1/magazine?field=eq.${encodeURIComponent(m.field)}&select=slug,is_published`, { headers: H });
+  const r = await fetch(`${SUPA}/rest/v1/magazine?${m.corner ? `corner=eq.${m.corner}` : `field=eq.${encodeURIComponent(m.field)}`}&select=slug,is_published`, { headers: H });
   const rows = await r.json();
   if (!Array.isArray(rows)) { console.error(`✗ ${m.name}: DB 조회 실패`); bad++; continue; }
 

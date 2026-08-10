@@ -1,0 +1,83 @@
+{
+  "topic": "글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과",
+  "brand": "뷰티·성분연구소",
+  "article": "glycerin-humectant",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "humectant-definition-water-absorption-hygroscopic",
+    "humectant-humidity-dependent-efficacy-low-humidity-risk",
+    "moisturizer-three-classes-definition-function"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "glycerin-optimal-concentration-5-10-percent",
+      "claim": "글리세린은 일반 화장품에서 5~10% 농도로 사용되며, 더 높은 농도(20%)도 존재하지만, 최적의 보습 효과와 사용감을 위해 2~10% 농도가 이상적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dr.Oracle: What is the optimal concentration of glycerin (Glycerol) as a moisturizer?",
+      "source_url": "https://www.droracle.ai/articles/72669/what-is-the-optimal-concentration-of-glycerin-glycerol-as",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 화장품",
+        "분류": "제형 규격",
+        "시기": "제형 설계 단계",
+        "지역": "글로벌"
+      },
+      "caution": "★고농도(>20%)의 글리세린은 순수 제품(원액)이며, 피부에 직접 도포하면 오히려 피부의 깊은 층에서 수분을 빨아들여 건조함을 악화시킬 수 있다. '글리세린 원액'과 '희석된 글리세린 함유 제품'은 다른 효과를 보인다.",
+      "cautionSource": "화장품 농도 안전성 가이드"
+    },
+    {
+      "id": "glycerin-humidity-dependent-sticky-feel-humidification",
+      "claim": "글리세린의 효과는 환경 습도에 크게 의존하며, 습한 환경에서는 공기 중의 수분을 흡수하여 피부에 끈기는 느낌(sticky texture)을 남길 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Alliance Chemical: Glycerin in Pharmaceutical & Cosmetic Formulation Guide",
+      "source_url": "https://alliancechemical.com/blogs/articles/glycerin-in-pharmaceutical-amp-cosmetic-formulation",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 피부",
+        "분류": "환경 의존성",
+        "시기": "사용 환경 기준",
+        "지역": "글로벌"
+      },
+      "caution": "★건조한 환경에서는 글리세린이 더 효과적이지만, 습한 계절(여름)이나 습도 높은 지역에서는 과도한 수분 흡수로 인해 불편함을 느낄 수 있다. 이 경우 글리세린 농도를 낮추거나 occlusive 성분(바셀린, 실리콘)과 함께 사용할 것.",
+      "cautionSource": "계절·환경 요인"
+    },
+    {
+      "id": "glycerin-efficacy-broader-humidity-range-vs-hyaluronic-acid",
+      "claim": "글리세린은 히알루론산보다 더 넓은 습도 범위에서 일관되게 수화 효과를 보이며, 건조한 환경에서도 피부의 깊은 층(dermis)과 환경의 수분을 모두 흡수할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "The Kosmetics: Humectants in Skincare - Glycerin vs Hyaluronic Acid",
+      "source_url": "https://thekosmetics.com/blog/humectants-in-skincare-guide/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "일반 피부",
+        "분류": "성분 비교",
+        "시기": "전 계절",
+        "지역": "글로벌"
+      },
+      "caution": "이것은 글리세린의 장점이지만, 히알루론산이 우수하지 않다는 의미는 아니다. 두 성분은 분자량·수화 깊이·지속시간이 다르므로 조합 사용이 권장된다.",
+      "cautionSource": "성분 물리화학"
+    },
+    {
+      "id": "glycerin-occlusive-pairing-essential-dry-climates",
+      "claim": "건조한 환경에서 글리세린의 최적 효과를 위해서는 occlusive 성분(바셀린, 동백오일, 실리콘)과 함께 사용하여 글리세린이 흡수한 수분이 다시 증발하는 것을 방지해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dermatology Times: High-concentration glycerin serves as humectant to attract water to skin",
+      "source_url": "https://www.dermatologytimes.com/view/high-concentration-glycerin-serves-humectant-attract-water-skin",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "건조한 환경의 사용자",
+        "분류": "제품 구성 권칙",
+        "시기": "건조 계절",
+        "지역": "글로벌"
+      },
+      "caution": "글리세린 단독만으로는 장시간 보습을 유지하기 어려울 수 있다. 현대 보습제의 '3가지 클래스 조합'(occlusive + humectant + emollient)이 이러한 이유 때문에 표준이 되었다.",
+      "cautionSource": "보습제 포뮬레이션 기준"
+    }
+  ]
+}

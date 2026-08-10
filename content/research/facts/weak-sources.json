@@ -1,0 +1,182 @@
+[
+ {
+  "f": "영양_규제-식약처-기능성원료",
+  "id": "korea-health-food-general-food-misrepresentation-violation",
+  "claim": "최근 식약처 적발 사례에서 일반식품을 '체지방 감소', '면역력 강화' 등 건강기능식품으로 오인시킨 광고가 ",
+  "url": "https://www.kpanews.co.kr/news/articleView.html?idxno=260179"
+ },
+ {
+  "f": "영양_공통-흡수와복용법",
+  "id": "water-soluble-vitamin-absorption-no-meal-required",
+  "claim": "비타민 B군과 비타민 C 같은 수용성 비타민은 물에 잘 녹는 성질 때문에 흡수가 빠르고 식사 여부와 무관하게",
+  "url": "https://kbthink.com/life/wellness/supplement-timing.html"
+ },
+ {
+  "f": "영양_공통-흡수와복용법",
+  "id": "fat-soluble-vitamin-requires-meal-absorption",
+  "claim": "지용성 비타민(A, D, E, K)은 빈속에 복용하면 흡수율이 낮아지고 위장 불편감이 생길 수 있으므로, 지",
+  "url": "https://yuyu.co.kr/blog/111a42d2-f534-4430-a0d3-e7720ffa0b0c/"
+ },
+ {
+  "f": "영양_공통-흡수와복용법",
+  "id": "vitamin-c-stomach-irritation-empty-stomach",
+  "claim": "산성 성분인 비타민 C는 공복에 복용하면 위장 자극으로 속쓰림이 나타날 수 있으며, 위장이 예민한 사람은 식",
+  "url": "https://my-doctor.io/healthLab/info/1058/"
+ },
+ {
+  "f": "영양_공통-흡수와복용법",
+  "id": "calcium-iron-competitive-absorption-spacing",
+  "claim": "철분제와 칼슘제는 소장 점막에서 흡수될 때 동일한 이동 통로를 공유하여 경쟁하므로, 한 번에 들어오면 두 영",
+  "url": "https://www.hankyung.com/article/2016042259401"
+ },
+ {
+  "f": "영양_공통-흡수와복용법",
+  "id": "iron-absorption-enhancement-vitamin-c",
+  "claim": "비타민 C는 철분의 흡수를 촉진하므로, 철분제를 복용할 때 오렌지 주스 등 비타민 C가 많은 음식을 함께 섭",
+  "url": "https://my-doctor.io/healthLab/info/1836/"
+ },
+ {
+  "f": "영양_공통-흡수와복용법",
+  "id": "iron-absorption-inhibition-tannin-caffeine",
+  "claim": "칼슘, 탄닌(커피·차), 카페인 등은 철분 흡수를 방해하므로, 빈혈약을 복용한 후 2시간 전후로는 우유, 커",
+  "url": "https://my-doctor.io/healthLab/info/1836/"
+ },
+ {
+  "f": "영양_공통-흡수와복용법",
+  "id": "calcium-absorption-vitamin-d-magnesium-synergy",
+  "claim": "칼슘 보충제 흡수 시 비타민 D가 풍부한 음식이 흡수를 도와주며, 마그네슘도 칼슘 흡수에 중요한 역할을 한다",
+  "url": "https://my-doctor.io/healthLab/info/1836/"
+ },
+ {
+  "f": "영양_공통-흡수와복용법",
+  "id": "water-soluble-vitamin-divided-doses-more-effective",
+  "claim": "수용성 비타민은 체내에 축적되지 않고 배설되므로, 한 번에 고용량을 복용하는 것보다 하루에 2~3회에 나누어",
+  "url": "https://kbthink.com/life/wellness/supplement-timing.html"
+ },
+ {
+  "f": "영양_공통-흡수와복용법",
+  "id": "high-dose-supplement-paradox-bioavailability",
+  "claim": "고함량 영양제가 반드시 고효과를 제공하지 않으며, 신체가 필요한 양 이상을 섭취하면 초과분이 배설되거나 체내",
+  "url": "https://kormedi.com/2786491/"
+ },
+ {
+  "f": "영양_공통-흡수와복용법",
+  "id": "nutrient-synergy-magnesium-calcium-vitamin-d-trinity",
+  "claim": "마그네슘이 없으면 칼슘이 제대로 활용되지 못하고, 비타민 D가 없으면 칼슘 흡수 자체가 어렵다. 이 3가지 ",
+  "url": "https://kormedi.com/2786491/"
+ },
+ {
+  "f": "영양_공통-흡수와복용법",
+  "id": "excess-supplement-excess-burden-liver",
+  "claim": "과도한 영양제 섭취는 오히려 간에 부담을 주고 있으며, 정작 필요한 영양소는 제대로 흡수되지 못할 수 있다.",
+  "url": "https://blog.himapclinic.com/different-effects-supplements"
+ },
+ {
+  "f": "영양_공통-안전과상호작용",
+  "id": "anticoagulant-vitamin-K-interaction-thrombosis-risk",
+  "claim": "항응고제(와파린, 아스피린 등)를 복용 중인 사람이 비타민 K를 추가 섭취하면, 비타민 K가 혈액 응고를 촉",
+  "url": "https://my-doctor.io/healthLab/info/1933/"
+ },
+ {
+  "f": "영양_공통-안전과상호작용",
+  "id": "thyroid-medication-mineral-chelation-spacing-required",
+  "claim": "갑상선약을 복용 중이면 칼슘·마그네슘은 최소 2시간 이상, 철분제는 최소 4시간 이상 시간 간격을 두어야 한",
+  "url": "https://my-doctor.io/healthLab/info/1933/"
+ },
+ {
+  "f": "영양_공통-안전과상호작용",
+  "id": "antibiotic-probiotic-simultaneous-administration-interference",
+  "claim": "항생제와 프로바이오틱스를 동시에 복용하면 항생제가 유익균을 죽이므로, 항생제 복용 후 2시간 이상 간격을 두",
+  "url": "https://my-doctor.io/healthLab/info/1933/"
+ },
+ {
+  "f": "영양_공통-안전과상호작용",
+  "id": "pregnant-lactating-women-supplement-caution",
+  "claim": "임신·수유 중인 여성은 영양제 추가 섭취 전 반드시 의료 전문가와 상담해야 하며, 특히 고함량 지용성 비타민",
+  "url": "https://my-doctor.io/healthLab/info/1933/"
+ },
+ {
+  "f": "영양_공통-안전과상호작용",
+  "id": "autoimmune-disease-supplement-contraindication",
+  "claim": "자가면역질환 환자는 면역력 강화 영양제(홍삼, 비타민 D 고함량 등) 추가 복용 전 의료 전문가와 상담해야 ",
+  "url": "https://my-doctor.io/healthLab/info/1933/"
+ },
+ {
+  "f": "영양_공통-안전과상호작용",
+  "id": "seizure-disorder-epilepsy-supplement-drug-interaction",
+  "claim": "간질·발작 장애 환자는 영양제 추가 섭취 전 의료 전문가와 상담해야 하며, 일부 영양제(비타민 B6 고함량 ",
+  "url": "https://my-doctor.io/healthLab/info/1933/"
+ },
+ {
+  "f": "영양_공통-효과검증-임상읽는법",
+  "id": "rct-randomized-controlled-trial-definition-gold-standard",
+  "claim": "무작위 대조 시험(RCT, Randomized Controlled Trial)은 참가자를 무작위로 치료군과 ",
+  "url": "https://euihak.com/rct-randomized-controlled-trial/"
+ },
+ {
+  "f": "영양_공통-효과검증-임상읽는법",
+  "id": "cohort-study-observational-lower-hierarchy",
+  "claim": "코호트 연구(Cohort Study)는 노출군과 비노출군을 장기간 추적하는 관찰 연구로서, RCT보다 신뢰도",
+  "url": "https://miragen.clinic/blog/"
+ },
+ {
+  "f": "영양_공통-효과검증-임상읽는법",
+  "id": "meta-analysis-systematic-review-highest-evidence-hierarchy",
+  "claim": "체계적 문헌고찰(Systematic Review)로 여러 RCT를 수집한 후 그 결과를 통계적으로 합산하는 ",
+  "url": "https://miragen.clinic/blog/"
+ },
+ {
+  "f": "영양_공통-효과검증-임상읽는법",
+  "id": "relative-risk-reduction-vs-absolute-risk-reduction-trap",
+  "claim": "상대위험도(RR) 감소만으로 결과를 표현하면 절대 발생률 자체가 낮은 경우 상대위험도가 크더라도 실제 임상 ",
+  "url": "https://namu.wiki/w/%EC%97%AD%ED%95%99(%EC%9D%98%ED%95%99)/%EA%B4%80%EB%A0%A8%EB%8F%84%EC%99%80%20%EC%98%81%ED%96%A5%EB%8F%84%EC%9D%98%20%EC%B8%A1%EC%A0%95"
+ },
+ {
+  "f": "영양_공통-효과검증-임상읽는법",
+  "id": "surrogate-endpoint-vs-clinical-outcome-discordance",
+  "claim": "혈중 영양소 농도 개선(혈중 루테인, 혈중 오메가3 등) 같은 대리지표(surrogate endpoint)의",
+  "url": "https://miragen.clinic/blog/"
+ },
+ {
+  "f": "영양_공통-효과검증-임상읽는법",
+  "id": "statistical-significance-vs-clinical-significance-distinction",
+  "claim": "통계적 유의성(P<0.05)과 임상적 의미(clinical significance)는 별개이며, 표본 크기가",
+  "url": "https://www.editage.co.kr/insights/reporting-p-values-a-handy-guide-for-biomedical-researchers"
+ },
+ {
+  "f": "영양_공통-효과검증-임상읽는법",
+  "id": "p-value-definition-type-I-error-interpretation",
+  "claim": "P값은 '영가설(차이 없음)이 맞다고 가정할 때 관측된 데이터 이상의 극단적 결과가 나올 확률'이며, 작을수",
+  "url": "https://velog.io/@livelikesloth/P-Value"
+ },
+ {
+  "f": "영양_공통-효과검증-임상읽는법",
+  "id": "p-hacking-significance-chasing-publication-bias",
+  "claim": "P-해킹(P-hacking)은 많은 가설을 테스트하거나 데이터를 선택적으로 분석하여 유의한 결과만 골라내는 ",
+  "url": "https://namu.wiki/w/p-%ED%95%B4%ED%82%B9"
+ },
+ {
+  "f": "영양_공통-효과검증-임상읽는법",
+  "id": "industry-sponsored-research-bias-conflict-of-interest",
+  "claim": "영양제 제조사가 후원하는 연구는 독립적 연구보다 긍정적 결과가 나올 가능성이 높으며, 출판 편향으로 부정적 ",
+  "url": "https://cre.nrf.re.kr/bbs/BoardDetail.do?bbsId=BBSMSTR_000000000180&nttId=14016"
+ },
+ {
+  "f": "영양_공통-효과검증-임상읽는법",
+  "id": "small-sample-size-low-statistical-power",
+  "claim": "표본 크기가 작은 연구는 통계적 검정력(statistical power)이 낮아 실제 효과를 놓칠 가능성이 ",
+  "url": "https://www.kjfm.or.kr/upload/pdf/Jkafm025-02-03.pdf"
+ },
+ {
+  "f": "영양_공통-효과검증-임상읽는법",
+  "id": "confounding-variable-causation-correlation-trap",
+  "claim": "관찰 연구에서 교란변수(confounding variable) — 예: 오메가3를 많이 먹는 사람은 건강한 ",
+  "url": "https://donmain.dev/stats/statistical-pitfalls/"
+ },
+ {
+  "f": "영양_공통-효과검증-임상읽는법",
+  "id": "disease-prevention-vs-disease-progression-delay-distinction",
+  "claim": "영양제 연구에서 '예방'과 '진행 지연'은 명확히 구분해야 하며, 건강한 사람의 질병 발생 방지와 이미 질병",
+  "url": "https://www.brightfocus.org/resource/new-study-confirms-the-efficacy-of-areds2-eye-vitamin-supplement-for-slowing-age-related-macular-degeneration/"
+ }
+]

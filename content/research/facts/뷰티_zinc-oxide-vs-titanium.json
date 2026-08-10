@@ -1,0 +1,98 @@
+{
+  "topic": "산화아연과 이산화티탄의 무기 자차 비교: 파장 커버리지, 백탁, 효과 차이",
+  "brand": "성분연구소",
+  "article": "뷰티_zinc-oxide-vs-titanium",
+  "captured": "2026-08-10",
+  "reused_facts": [
+    "mineral-sunscreen-zinc-oxide-broad-spectrum-titanium-uva-limited"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "mineral-sunscreen-zinc-oxide-broad-spectrum-titanium-uva-limited",
+      "claim": "산화아연은 광범위 스펙트럼(UVA·UVB) 차단을 제공하지만, 이산화티탄은 UVB 차단에 더 효과적이고 UVA 차단은 제한적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed/Dermatology Literature: Mineral Sunscreen Spectrum Coverage",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "자외선 차단 범위",
+        "분류": "무기자차 타입별 효과",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "이산화티탄만으로는 UVA 차단이 불충분하므로 광범위 보호가 필요하면 산화아연을 선택하거나 다른 UVA 차단제를 병합해야 한다.",
+      "cautionSource": "피부과 문헌"
+    },
+    {
+      "id": "zinc-oxide-uva-coverage-340-400nm",
+      "claim": "산화아연은 UVA1(340-400nm) 범위까지 효과적으로 차단하여 깊은 피부 침투 손상을 방지한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Mineral Sunscreen Science Literature",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "무기자차 성분",
+        "분류": "파장 커버리지",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "산화아연의 UVA1 차단이 우수하기 때문에, 광노화 방지가 목표라면 산화아연 함유 제품이 이산화티탄 단독보다 낫다.",
+      "cautionSource": "자외선 차단 과학"
+    },
+    {
+      "id": "titanium-dioxide-uvb-preference-uva-weak",
+      "claim": "이산화티탄은 290-320nm(UVB) 범위에서 강한 차단 능력을 보이지만, 340nm 이상(UVA1) 파장에서는 차단력이 현저히 떨어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dermatology and Cosmetic Science: Titanium Dioxide Spectral Properties",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "이산화티탄 성분",
+        "분류": "파장 선택성",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "이산화티탄 단독 제품은 광노화 방지보다 일광화상 방지에 최적화되어 있다. 광범위 보호를 원하면 산화아연 병합 또는 산화아연 단독 선택.",
+      "cautionSource": "선크림 설계 원칙"
+    },
+    {
+      "id": "zinc-oxide-titanium-dioxide-white-cast-cosmetic-feel",
+      "claim": "산화아연과 이산화티탄 모두 입자 크기가 크면 백탁(white cast)을 일으키며, 일반적으로 이산화티탄이 산화아연보다 백탁이 적고 화장감이 더 좋다고 보고된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cosmetic Science Literature: Mineral Sunscreen Cosmetic Elegance",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "무기자차 제형",
+        "분류": "사용성",
+        "시기": "제형 설계 단계",
+        "지역": "글로벌"
+      },
+      "caution": "★나노입자 기술(nano-sized particles)을 사용하면 백탁을 줄일 수 있지만, 입자 크기가 작을수록 나노 입자 피부 흡수에 대한 우려가 생긴다. 이를 설명할 때는 현재 과학적 합의를 반영할 것.",
+      "cautionSource": "나노 입자 처방 기술"
+    },
+    {
+      "id": "iso-24443-mineral-sunscreen-in-vitro-uva-testing",
+      "claim": "ISO 24443은 무기 자차의 UVA 보호를 in vitro 방법으로 측정하는 표준이며, 거친 PMMA 판에 제품을 펴 바르고 UV 투과도를 분광측정법으로 평가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ISO Standards: ISO 24443:2021 Determination of sunscreen UVA photoprotection in vitro",
+      "source_url": "https://webstore.ansi.org/standards/iso/ISOFDIS244432021",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "무기 자차 평가",
+        "분류": "시험 기준",
+        "시기": "2021",
+        "지역": "글로벌"
+      },
+      "caution": "ISO 24443은 in vitro(피부 아님) 방법이므로 실제 피부 효과와 100% 일치하지 않을 수 있다.",
+      "cautionSource": "ISO 표준"
+    }
+  ]
+}

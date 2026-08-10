@@ -1,0 +1,113 @@
+{
+  "topic": "UVA와 UVB 자외선의 파장 차이, 피부 손상 메커니즘, PA-SPF 대응 관계",
+  "brand": "성분연구소",
+  "article": "뷰티_uva-uvb-difference",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "uva-uvb-wavelength-ranges-penetration",
+      "claim": "UVA는 340-400nm(UVA1)과 320-340nm(UVA2) 두 범위로 나뉘며, UVB는 290-320nm이다. UVA1은 가장 깊이 침투하여 광노화를 주로 유발하고, UVB는 주로 홍반(erythema)과 일광화상을 일으킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ISO 24442/24444 자외선 표준, 의료·과학 문헌",
+      "source_url": "https://blog.ansi.org/ansi/iso-24442-2022-sun-protection-test-methods/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 피부 타입",
+        "분류": "자외선 파장 과학",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "UVA1이 더 깊이 침투하는 이유는 산란 및 흡수가 적기 때문이며, 이것이 광노화의 주요 원인이다.",
+      "cautionSource": "자외선 생물물리학"
+    },
+    {
+      "id": "spf-rating-uva-pa-rating-distinction",
+      "claim": "SPF(Sun Protection Factor)는 UVB 차단을 측정하는 지수이며, PA는 UVA 차단을 측정하는 별도의 등급 시스템이다. SPF와 PA는 서로 다른 자외선을 평가하므로 독립적으로 비교해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ISO 24442 표준, FDA 규제 기준",
+      "source_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/labeling-and-effectiveness-testing-sunscreen-drug-products-over-counter-human-use-small-entity",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "선크림 분류",
+        "분류": "측정 기준",
+        "시기": "규제 표준",
+        "지역": "글로벌"
+      },
+      "caution": "★집필 시 중점: \"SPF 50이니까 충분\"이라는 단순화 금지. SPF는 UVB만 측정하며, 광노화를 주유발하는 UVA1 보호는 PA 등급으로 확인해야 한다.",
+      "cautionSource": "선크림 규제 기준"
+    },
+    {
+      "id": "fda-broad-spectrum-designation-uva-coverage-370nm",
+      "claim": "FDA의 \"broad-spectrum\" 표시는 UV 흡수의 90%가 370nm 이상 파장에서 나타난다는 뜻이며, 이는 UVA2(320-340nm)를 일부 커버하지만 UVA1(340-400nm, 특히 deepest dermal damage)의 완전한 커버를 보장하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA OTC Sunscreen Monograph, 21 CFR 352",
+      "source_url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/labeling-and-effectiveness-testing-sunscreen-drug-products-over-counter-human-use-small-entity",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "광범위 차단제 표시",
+        "분류": "규제 정의",
+        "시기": "FDA 기준",
+        "지역": "미국"
+      },
+      "caution": "\"Broad-spectrum\"이라고 해서 UVA1까지 완전 차단하지 않을 수 있다는 점을 독자에게 명확히 해야 한다.",
+      "cautionSource": "FDA 규제 지침"
+    },
+    {
+      "id": "pa-rating-ppd-uva-blockage-percentage",
+      "claim": "PA 등급은 PPD(Persistent Pigment Darkening) 수치로 환산되며, PA+(2-4 PPD)는 UVA 50-75% 차단, PA++(4-8 PPD)는 75-88%, PA+++(8-16 PPD)는 88-94%, PA++++(16+ PPD)는 94% 이상을 차단한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ISO 24442 표준, 아시아 선크림 규제 기준",
+      "source_url": "https://blog.ansi.org/ansi/iso-24442-2022-sun-protection-test-methods/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "모든 피부 타입",
+        "분류": "UVA 차단 등급",
+        "시기": "현재 표준",
+        "지역": "아시아·글로벌"
+      },
+      "caution": "PPD와 PA 등급은 특정 측정 프로토콜(ISO 24442, in vivo)에서 도출되므로, 제품 선택 시 PA 등급을 확인하는 것이 필수다.",
+      "cautionSource": "ISO 24442 표준"
+    },
+    {
+      "id": "iso-24444-24442-measurement-standard",
+      "claim": "ISO 24444는 in vivo SPF(UVB) 측정 표준이며, ISO 24442는 in vivo UVAPF(UVA) 측정 표준이다. 유럽과 많은 국가에서 이 표준을 채택하고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ISO International Standards, ANSI Blog",
+      "source_url": "https://blog.ansi.org/ansi/iso-24442-2022-sun-protection-test-methods/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "자외선차단 측정",
+        "분류": "국제 표준",
+        "시기": "2019-2022",
+        "지역": "글로벌"
+      },
+      "caution": "ISO 24442는 in vivo 방법이라 시간과 비용이 많이 들며, ISO 24443(in vitro)도 존재한다.",
+      "cautionSource": "ISO 표준 명세"
+    },
+    {
+      "id": "uva-penetration-photoaging-collagen-elastin",
+      "claim": "UVA는 표피층을 투과해 진피층까지 깊이 침투하며, 진피의 콜라겐과 엘라스틴을 직접 손상시켜 주름, 처짐, 탄력 손실 등 광노화를 유발한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dermatology Literature, PubMed: UVA Penetration and Photoaging",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "성인 피부",
+        "분류": "광손상 메커니즘",
+        "시기": "누적 노출",
+        "지역": "글로벌"
+      },
+      "caution": "UVB도 손상을 일으키지만, 누적 광노화의 주요 원인은 UVA(특히 UVA1)이다.",
+      "cautionSource": "피부 노화 생물학"
+    }
+  ]
+}

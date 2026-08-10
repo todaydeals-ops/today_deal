@@ -16,8 +16,6 @@
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/검색:pacifier-SIDS-meta-analysis",
       "checked": "2026-08-04",
       "scope": {
-        "brand": "공통",
-        "category": "수면·침구",
         "대상": "신생아~12개월",
         "분류": "SIDS 위험 감소",
         "시기": "생후 0-12개월",
@@ -34,8 +32,6 @@
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/검색:pacifier-sleep-initiation-infants",
       "checked": "2026-08-04",
       "scope": {
-        "brand": "공통",
-        "category": "수면·침구",
         "대상": "신생아~2세",
         "분류": "수면 개시 효과",
         "시기": "생후 0-24개월",
@@ -52,8 +48,6 @@
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/검색:pacifier-sleep-dependency",
       "checked": "2026-08-04",
       "scope": {
-        "brand": "공통",
-        "category": "수면·침구",
         "대상": "생후 6개월~3세",
         "분류": "공갈젖꼭지 의존성",
         "시기": "생후 6개월 이후",
@@ -70,8 +64,6 @@
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/검색:pacifier-weaning-guidelines",
       "checked": "2026-08-04",
       "scope": {
-        "brand": "공통",
-        "category": "수면·침구",
         "대상": "신생아~3세",
         "분류": "젖떼기 권장 시기",
         "시기": "생후 6개월~3세",
@@ -88,8 +80,6 @@
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/검색:pacifier-dental-malocclusion-children",
       "checked": "2026-08-04",
       "scope": {
-        "brand": "공통",
-        "category": "수면·침구",
         "대상": "생후 18개월~4세",
         "분류": "치아 부정교합 위험",
         "시기": "생후 18개월~4세",
@@ -106,8 +96,6 @@
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/검색:pacifier-weaning-behavioral-intervention",
       "checked": "2026-08-04",
       "scope": {
-        "brand": "공통",
-        "category": "수면·침구",
         "대상": "공갈젖꼭지 사용 12개월~3세",
         "분류": "젖떼기 전략",
         "시기": "생후 12개월~3세",
@@ -124,8 +112,6 @@
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/검색:infant-self-soothing-development",
       "checked": "2026-08-04",
       "scope": {
-        "brand": "공통",
-        "category": "수면·침구",
         "대상": "신생아~2세",
         "분류": "자기진정 능력 발달",
         "시기": "생후 3~4개월 이후",
@@ -142,8 +128,6 @@
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/검색:pacifier-otitis-media-risk",
       "checked": "2026-08-04",
       "scope": {
-        "brand": "공통",
-        "category": "수면·침구",
         "대상": "생후 12개월~3세",
         "분류": "중이염 위험",
         "시기": "생후 12개월~3세",

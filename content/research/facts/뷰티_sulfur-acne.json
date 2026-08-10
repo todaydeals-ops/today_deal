@@ -1,0 +1,96 @@
+{
+  "topic": "유황(설퍼): 여드름 관리에서의 기전, 농도, 자극도",
+  "brand": "성분연구소",
+  "article": "뷰티_sulfur-acne",
+  "captured": "2026-08-10",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sulfur-keratolytic-hydrogen-sulfide-mechanism",
+      "claim": "유황의 각질용해(keratolytic) 기전은 유황 입자가 각질층과 직접 상호작용하여 황화수소를 형성하는 화학 반응에 기반한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Sulfur revisited",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/2450900/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "여드름 성분",
+        "분류": "유황 기전",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "sulfur-particle-size-efficacy-correlation",
+      "claim": "유황 입자가 작을수록 각질층 침투도가 높아져 치료 효과가 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Sulfur revisited",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/2450900/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "제형의 효과",
+        "분류": "입자 크기",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★제품 선택 시 입자 크기는 지표되지 않으므로, 임상 연구나 사용자 후기를 통해 효과를 판단해야 한다.",
+      "cautionSource": "포뮬레이션 변수"
+    },
+    {
+      "id": "sulfur-antifungal-antibacterial-properties",
+      "claim": "유황은 항균·항진균 활성을 보유하며, 벤조일퍼옥사이드나 살리실산과 조합하여 여드름 치료에 사용된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: The use of sulfur in dermatology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/15303787/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "여드름 원인균",
+        "분류": "유황의 항균 효과",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "없음",
+      "cautionSource": ""
+    },
+    {
+      "id": "sulfur-systemic-absorption-safety-1-percent",
+      "claim": "국소 도포된 유황의 약 1%만 전신 흡수되므로 전신 부작용 위험은 낮다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Sulfur revisited",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/2450900/",
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "전신 안전성",
+        "분류": "흡수율",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "영아에 대한 광범위 도포는 사망 사례가 보고되었으므로 유아용 제품은 피부과 의뢰 필수.",
+      "cautionSource": "PubMed 역사적 안전 기록"
+    },
+    {
+      "id": "sulfur-korea-oci-status-cosmetic-ingredient",
+      "claim": "한국 식약처 기준으로 유황은 화장품 성분으로 허용되며, OCI(화장품 성분) 목록에 등재되어 있다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "식약처 화장품 성분 데이터베이스",
+      "source_url": null,
+      "checked": "2026-08-10",
+      "scope": {
+        "대상": "국내 규제",
+        "분류": "유황",
+        "시기": "2026 현행",
+        "지역": "KR"
+      },
+      "caution": "국내 기준 재확인 필요. 일부 제형(특히 의약외품)은 제한이 있을 수 있다.",
+      "cautionSource": "출처 미확인 — 발행 전 식약처 직접 확인 필수"
+    }
+  ]
+}
