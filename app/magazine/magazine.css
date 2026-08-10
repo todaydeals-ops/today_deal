@@ -74,6 +74,20 @@
   .sleep-cat-index .corner-cell:nth-child(2n) { border-right: none; }
 }
 
+/* 서브 미디어 헤더 내비 — 분류가 많아도 스크롤바가 보이지 않게.
+   가로 스와이프 자체는 살려두되(모바일), 스크롤바 UI만 감춘다. */
+.sub-nav {
+  display: flex; align-items: center; gap: 20px; font-size: 14px;
+  overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none;
+  min-width: 0; flex: 1 1 auto; justify-content: flex-end;
+}
+.sub-nav::-webkit-scrollbar { display: none; }
+/* 라벨이 길거나 분류가 아주 많을 때 쓰는 보조 클래스. AS연구소 9분류는 라벨을
+   3~5자로 줄여(생활·계절가전 → 생활가전) 기본 간격으로 들어가므로 지금은 안 쓴다. */
+.sub-nav.is-wide { gap: 14px; font-size: 13.5px; }
+@media (max-width: 1180px) { .sub-nav.is-wide { gap: 11px; font-size: 13px; } }
+@media (max-width: 1024px) { .sub-nav { gap: 15px; } .sub-nav.is-wide { gap: 10px; font-size: 12.5px; } }
+
 /* 피처드 */
 .mz-feat { display: grid; grid-template-columns: 1.15fr 1fr; gap: 46px; cursor: pointer; align-items: start; text-decoration: none; color: inherit; }
 .feat-title { transition: color 0.2s ease; }

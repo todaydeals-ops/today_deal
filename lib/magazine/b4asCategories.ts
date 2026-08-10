@@ -14,7 +14,7 @@
 //   등록 누락은 `node scripts/magazine-catcheck.mjs`로 잡는다.
 export interface B4asCategory {
   key: string;      // URL용 ASCII
-  label: string;    // 메뉴에 보이는 짧은 이름
+  label: string;    // 메뉴·배지에 보이는 짧은 이름(헤드 키워드는 seoTitle 이 싣는다)
   en: string;       // 영문 서브
   color: string;    // 점·강조색
   angle: string;    // 카드 설명
@@ -42,7 +42,7 @@ export const B4AS_CATEGORIES: B4asCategory[] = [
     slugs: ["air-fryer-selfcheck","bread-maker-selfcheck","coffee-grinder-selfcheck","coffee-machine-selfcheck","cuchen-ricecooker-reset","cuckoo-ricecooker-reset","electric-griddle-selfcheck","electric-kettle-selfcheck","food-waste-processor-selfcheck","gas-range-selfcheck","hand-blender-selfcheck","highlight-cooktop-selfcheck","induction-selfcheck","juicer-selfcheck","lg-dishwasher-selfcheck","microwave-not-heating-selfcheck","oven-selfcheck","samsung-dishwasher-error","stand-mixer-selfcheck","toaster-selfcheck"],
   },
   {
-    key: "living", label: "생활·계절가전", en: "LIVING", color: "#5a7a5a",
+    key: "living", label: "생활가전", en: "LIVING", color: "#5a7a5a",
     angle: "청소기·공기청정기·정수기·전기장판",
     seoTitle: "청소기·공기청정기·정수기 고장 자가점검",
     slugs: ["air-purifier-selfcheck","bidet-selfcheck","bidet-selfcheck2","cordless-vacuum-battery-selfcheck","coway-purifier-selfcheck","dehumidifier-selfcheck","dyson-vacuum-selfcheck","electric-blanket-selfcheck","fan-circulator-selfcheck","handy-fan-selfcheck","humidifier-selfcheck","lg-codezero-vacuum","lg-purifier-selfcheck","robot-vacuum-selfcheck","sewing-machine-selfcheck","skmagic-chungho-purifier-selfcheck","steam-cleaner-selfcheck","steam-iron-selfcheck","water-purifier-selfcheck"],
@@ -54,25 +54,25 @@ export const B4AS_CATEGORIES: B4asCategory[] = [
     slugs: ["action-cam-selfcheck","airpods-selfcheck","bluetooth-speaker-selfcheck","drone-selfcheck","earbuds-case-charging-selfcheck","game-controller-selfcheck","lg-tv-selfcheck","mirrorless-camera-selfcheck","nintendo-switch-selfcheck","projector-selfcheck","ps5-selfcheck","samsung-tv-error","soundbar-selfcheck","tv-no-signal-selfcheck","tv-streaming-app-selfcheck"],
   },
   {
-    key: "pc", label: "PC·주변기기", en: "PC", color: "#4a6a8a",
+    key: "pc", label: "PC·주변", en: "PC", color: "#4a6a8a",
     angle: "노트북·모니터·프린터·외장하드",
     seoTitle: "노트북·모니터·프린터 고장 자가진단",
     slugs: ["canon-epson-printer-selfcheck","desktop-pc-power-selfcheck","external-drive-selfcheck","galaxy-book-selfcheck","graphics-tablet-selfcheck","hp-printer-selfcheck","laptop-keyboard-selfcheck","laptop-overheat-selfcheck","lg-gram-selfcheck","macbook-selfcheck","monitor-no-signal-selfcheck","nas-selfcheck","printer-not-printing-selfcheck","usb-mic-selfcheck","webcam-selfcheck","windows-boot-selfcheck","wireless-keyboard-mouse-selfcheck"],
   },
   {
-    key: "wellness", label: "뷰티·헬스기기", en: "WELLNESS", color: "#9a5a7a",
+    key: "wellness", label: "헬스기기", en: "WELLNESS", color: "#9a5a7a",
     angle: "고데기·면도기·안마의자·체중계",
     seoTitle: "고데기·면도기·안마의자 고장 자가점검",
     slugs: ["blood-pressure-monitor-selfcheck","electric-shaver-selfcheck","electric-toothbrush-selfcheck","foot-spa-selfcheck","hair-clipper-selfcheck","hair-dryer-selfcheck","hair-styler-selfcheck","ipl-epilator-selfcheck","massage-chair-selfcheck","massage-gun-selfcheck","nebulizer-selfcheck","neck-massager-selfcheck","smart-scale-selfcheck","thermometer-selfcheck","walking-pad-selfcheck","water-flosser-selfcheck"],
   },
   {
-    key: "service", label: "홈·통신 서비스", en: "SERVICE", color: "#8a5a3a",
+    key: "service", label: "홈·통신", en: "SERVICE", color: "#8a5a3a",
     angle: "인터넷·공유기·IPTV·도어락",
     seoTitle: "인터넷·공유기 안 될 때 자가점검",
     slugs: ["account-login-selfcheck","doorlock-selfcheck","home-cam-selfcheck","iptime-router-selfcheck","isp-router-selfcheck","mobile-data-call-selfcheck","settop-box-selfcheck","smart-plug-selfcheck","video-doorphone-selfcheck","wifi-disconnect-selfcheck"],
   },
   {
-    key: "car", label: "자동차·모빌리티", en: "MOBILITY", color: "#7a4a4a",
+    key: "car", label: "자동차", en: "MOBILITY", color: "#7a4a4a",
     angle: "시동·배터리·경고등·전동킥보드",
     seoTitle: "자동차 시동·배터리 문제 자가점검",
     slugs: ["car-aircon-selfcheck","car-battery-selfcheck","car-handy-vacuum-selfcheck","dashcam-selfcheck","escooter-ebike-selfcheck"],

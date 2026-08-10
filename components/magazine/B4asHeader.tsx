@@ -10,7 +10,7 @@ export default async function B4asHeader() {
         <a href={b4asHref()} style={{ textDecoration: "none", color: "#16140f", flexShrink: 0 }}>
           <span style={{ fontWeight: 800, fontSize: 23, letterSpacing: "-0.6px", whiteSpace: "nowrap" }}>AS연구소</span>
         </a>
-        <nav style={{ display: "flex", alignItems: "center", gap: 20, fontSize: 14, overflowX: "auto" }}>
+        <nav className="sub-nav">
           {B4AS_CATEGORIES.map((c) => (
             <a key={c.key} href={b4asHref(c.key)} style={{ color: "#5b564d", textDecoration: "none", whiteSpace: "nowrap" }}>{c.label}</a>
           ))}
