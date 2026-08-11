@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "pet-bed-sleep",
+    "field": "수면·침구",
+    "cat": "gear",
+    "corner": "스마트가이드",
+    "title": "반려동물과 함께 자기: 수면 질과 건강 영향",
+    "angle": "침대 공유의 장단점 과학 분석",
+    "demand": 450000
+  },
+  {
+    "slug": "travel-sleep-insomnia",
+    "field": "수면·침구",
+    "cat": "work",
+    "corner": "스마트가이드",
+    "title": "낯선 곳에서 숙면하기: 여행지 수면 과학",
+    "angle": "첫 밤 효과 극복 전략",
+    "demand": 252000
+  },
+  {
+    "slug": "mattress-hygiene-dust-mites",
+    "field": "수면·침구",
+    "cat": "gear",
+    "corner": "스마트가이드",
+    "title": "매트리스 위생과 진드기: 침구 청결의 과학",
+    "angle": "청소 주기와 방법의 근거",
+    "demand": 77000
+  },
+  {
+    "slug": "supplement-storage-preservation",
+    "field": "건강기능식품",
+    "cat": "basics",
+    "corner": "스마트가이드",
+    "title": "영양제 보관과 변질: 냉장·차광·습도 관리",
+    "angle": "보관 조건에 따른 성분 안정성",
+    "demand": 418000
+  }
+]

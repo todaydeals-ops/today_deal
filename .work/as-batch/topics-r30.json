@@ -1,0 +1,142 @@
+{
+  "as": [
+    {
+      "slug": "condensation-removal-selfcheck",
+      "field": "가전",
+      "corner": "repair",
+      "title": "베란다·실내 결로 자가 제거 순서",
+      "angle": "결로는 제거보다 예방이 중요. 원인별 해결법.",
+      "demand": "네이버 블로그 190,304개"
+    },
+    {
+      "slug": "circuit-breaker-keeps-tripping-selfcheck",
+      "field": "리빙·주방",
+      "corner": "repair",
+      "title": "차단기가 자꾸 내려갈 때 체크포인트",
+      "angle": "안전차단기가 자주 작동하는 건 회로 과부하 신호.",
+      "demand": "네이버 블로그 139,216개"
+    },
+    {
+      "slug": "frozen-pipe-thawing-selfcheck",
+      "field": "리빙·주방",
+      "corner": "repair",
+      "title": "동파된 수도관 녹이는 법",
+      "angle": "수도관 동파는 예방이 최우선. 응급 대처는 미지근한 물에서 시작.",
+      "demand": "미측정"
+    },
+    {
+      "slug": "mold-removal-selfcheck",
+      "field": "리빙·주방",
+      "corner": "repair",
+      "title": "욕실·벽 곰팡이 원인 파악과 제거법",
+      "angle": "곰팡이 원인은 환기 부족과 습도. 제거보다 조건 관리가 먼저.",
+      "demand": "미측정"
+    },
+    {
+      "slug": "clothing-styler-error-selfcheck",
+      "field": "가전",
+      "corner": "repair",
+      "title": "의류관리기(스타일러) 오류 코드 읽기 및 초기화",
+      "angle": "의류관리기는 고장보다 오작동이 많다. 초기화로 해결되는 경우 대부분.",
+      "demand": "네이버 블로그 2,204개"
+    },
+    {
+      "slug": "power-restoration-after-outage-selfcheck",
+      "field": "리빙·주방",
+      "corner": "repair",
+      "title": "정전 후 가전 자동재시작·리셋 순서",
+      "angle": "정전 후 모든 가전이 동시에 작동하면 차단기가 내려간다. 차례로 켜기.",
+      "demand": "미측정"
+    },
+    {
+      "slug": "outlet-overheating-safety-selfcheck",
+      "field": "리빙·주방",
+      "corner": "repair",
+      "title": "멀티탭·콘센트가 뜨거울 때 대처법",
+      "angle": "과열 콘센트는 화재 위험. 현상별 해결법과 교체 시기.",
+      "demand": "미측정"
+    },
+    {
+      "slug": "wall-pad-error-selfcheck",
+      "field": "디지털·IT",
+      "corner": "repair",
+      "title": "월패드 먹통·느린 연결 자가 점검",
+      "angle": "월패드는 연결 상태 확인이 먼저. 초기화·재부팅 순서.",
+      "demand": "미측정"
+    },
+    {
+      "slug": "food-dehydrator-error-selfcheck",
+      "field": "가전",
+      "corner": "repair",
+      "title": "음식 건조기 건조 안 됨 증상 점검",
+      "angle": "건조 안 되는 것은 필터·습도·온도 설정부터 확인.",
+      "demand": "미측정"
+    }
+  ],
+  "magazine": [
+    {
+      "slug": "appliance-installation-cost",
+      "field": "가전",
+      "corner": "smartguide",
+      "title": "가전 설치비·배송료·사후관리·숨은 비용까지 정산법",
+      "angle": "설치비만 있는 게 아니다. 사후 관리비·폐기비·교체 부품까지.",
+      "demand": "네이버 블로그 67,875개"
+    },
+    {
+      "slug": "fridge-energy-efficiency",
+      "field": "가전",
+      "corner": "factcheck",
+      "title": "에너지효율등급, 전기료가 얼마나 차이 날까",
+      "angle": "높은 등급이 무조건 저전력은 아니다. 실제 사용 패턴 반영.",
+      "demand": "네이버 블로그 60,201개"
+    },
+    {
+      "slug": "appliance-size-capacity-guide",
+      "field": "가전",
+      "corner": "smartguide",
+      "title": "내 집에 맞는 냉장고·세탁기 사이즈 선택 기준",
+      "angle": "세탁기 용량은 가족 수가 아니라 세탁 빈도로 정한다.",
+      "demand": "미측정"
+    },
+    {
+      "slug": "warranty-consumer-protection",
+      "field": "가전",
+      "corner": "smartguide",
+      "title": "구매 전 필수 확인: 제조사 보증과 소비자분쟁해결기준",
+      "angle": "제조사 보증과 소비자분쟁해결기준은 다르다. 구매 전 필수확인.",
+      "demand": "미측정"
+    },
+    {
+      "slug": "extended-warranty-value",
+      "field": "리빙·주방",
+      "corner": "smartguide",
+      "title": "가전 연장보증, 들어야 할 제품과 보험처럼 안 드는 경우",
+      "angle": "연장보증은 제품 특성에 따라 가치가 다르다. 리스크 진단 필수.",
+      "demand": "미측정"
+    },
+    {
+      "slug": "refurbished-open-box-guide",
+      "field": "가전",
+      "corner": "smartguide",
+      "title": "리퍼·전시품·A급 할인상품, 살 때 체크할 것",
+      "angle": "할인상품의 종류와 보증 차이를 알면 좋은 거래 찾을 수 있다.",
+      "demand": "미측정"
+    },
+    {
+      "slug": "rental-vs-purchase",
+      "field": "가전",
+      "corner": "factcheck",
+      "title": "에어컨·가습기 렌탈이 구매보다 싼 경우는",
+      "angle": "렌탈 비용 계산법. 렌탈이 싼 경우와 구매가 나은 경우 구분.",
+      "demand": "네이버 블로그 4,000개"
+    },
+    {
+      "slug": "second-hand-appliance-guide",
+      "field": "가전",
+      "corner": "trendlab",
+      "title": "중고·해외직구 가전, 검수하고 사기",
+      "angle": "중고는 저렴하지만 보증과 A/S 가능성을 먼저 확인해야 한다.",
+      "demand": "미측정"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "fixes": [
+    {
+      "slug": "condensation-removal-selfcheck",
+      "from": "blog.energy.or.kr",
+      "note": "DNS NXDOMAIN. 한국에너지공단이 블로그 서브도메인을 없앴다. 본문의 환기 권장(하루 2~3회·10~20분)은 같은 글에 살아 있는 서울시 올바른 환기법 출처가 받친다"
+    }
+  ]
+}

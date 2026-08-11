@@ -1,0 +1,255 @@
+{
+  "topics": [
+    {
+      "slug": "seasonal-skin-dryness",
+      "cat": "barrier",
+      "title": "환절기 각질, 어떤 성분이 도움이 될까",
+      "query": "환절기 피부 각질 케어",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 249,918",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "winter-indoor-humidity",
+      "cat": "barrier",
+      "title": "겨울 실내 건조, 보습 순서를 다시 짜다",
+      "query": "겨울 실내 건조 피부",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 453,661",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "mask-irritation-recovery",
+      "cat": "barrier",
+      "title": "마스크 자극 받은 피부, 회복 속도를 올릴 성분",
+      "query": "마스크 피부 자극 진정",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 743,897",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "sensitive-skin-calming",
+      "cat": "barrier",
+      "title": "민감한 피부를 가라앉히는 성분 조합",
+      "query": "민감성 피부 관리 성분",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 2,016,494",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "chlorine-damage-recovery",
+      "cat": "barrier",
+      "title": "수영장 염소, 헹군 후 피부 관리",
+      "query": "수영 염소 피부 손상",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 10,566",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "vitamin-c-retinol-together",
+      "cat": "renew",
+      "title": "비타민C와 레티놀, 함께 써도 될까",
+      "query": "비타민C 레티놀 함께 사용",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 59,433",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "aha-bha-combination-safety",
+      "cat": "renew",
+      "title": "AHA와 BHA, 조합 시 주의점",
+      "query": "AHA BHA 동시 사용",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 30,343",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "skincare-layering-order",
+      "cat": "renew",
+      "title": "바르는 순서가 결과를 얼마나 바꾸나",
+      "query": "스킨케어 제품 순서",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 215,959",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "pregnancy-safe-skincare",
+      "cat": "renew",
+      "title": "임신 중 피부 성분, 금기와 안전",
+      "query": "임신 중 금지 성분",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 56,089",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "wrinkle-fading-mechanism",
+      "cat": "renew",
+      "title": "미백 성분이 주름에도 쓰이는 이유",
+      "query": "미백 크림 효과",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 891,500",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "teen-acne-protocol",
+      "cat": "clear",
+      "title": "10대 여드름 관리 단계별",
+      "query": "10대 청소년 여드름",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 33,468",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "adult-hormonal-acne",
+      "cat": "clear",
+      "title": "성인 호르몬 여드름 대응법",
+      "query": "성인 호르몬 여드름",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 153,403",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "itchy-vs-pustule-acne",
+      "cat": "clear",
+      "title": "가려운 여드름 vs 곪은 여드름",
+      "query": "가려운 여드름 vs 고름 여드름",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 1,022",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "post-shave-irritation",
+      "cat": "clear",
+      "title": "면도 후 피부 자극 회복",
+      "query": "면도 후 피부 자극",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 300,363",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "summer-sebum-management",
+      "cat": "clear",
+      "title": "여름 피지 관리 핵심 성분",
+      "query": "여름 지성 피부 피지",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 183,264",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "post-laser-sun-protection",
+      "cat": "shield",
+      "title": "레이저 시술 후 자외선 차단 강도",
+      "query": "레이저 시술 후 관리",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 1,025,083",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "sunscreen-texture-comparison",
+      "cat": "shield",
+      "title": "선크림 제형: 비지 vs 파우더 vs 스프레이",
+      "query": "선크림 제형 비교",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 84,069",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "sunscreen-for-kids",
+      "cat": "shield",
+      "corner": "smartguide",
+      "title": "아이 선크림, 성인용과 무엇이 다를까",
+      "angle": "영유아 사용 연령·무기자차 선호 이유·자극 낮추는 제형",
+      "demand": "미측정"
+    },
+    {
+      "slug": "pm25-skin-penetration",
+      "cat": "shield",
+      "title": "미세먼지와 피부, 무엇을 씻어내야 하나",
+      "query": "PM2.5 미세먼지 피부",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 9,106",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "male-female-hairloss-difference",
+      "cat": "hair",
+      "title": "남성 vs 여성 탈모 성분 차이",
+      "query": "남성 탈모 여성 탈모",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 312,842",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "perm-magic-hair-care",
+      "cat": "hair",
+      "title": "펌·매직 후 손상 회복 관리",
+      "query": "펌 매직 후 헤어 케어",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 181,946",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "dandruff-vs-seborrheic",
+      "cat": "hair",
+      "title": "비듬 vs 지루성두피염, 정확한 구분",
+      "query": "비듬 지루성두피염",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 69,931",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "gray-hair-emergence-nutrition",
+      "cat": "hair",
+      "title": "흰머리 출현과 영양 보충",
+      "query": "흰머리 원인",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 38,994",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "cellulite-reduction-science",
+      "cat": "body",
+      "title": "셀룰라이트, 성분으로 어디까지 가능할까",
+      "query": "셀룰라이트 제거",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 165,881",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "depilatory-without-irritation",
+      "cat": "body",
+      "title": "제모, 자극 없는 방법",
+      "query": "제모 방법",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 409,553",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "basal-metabolism-boosters",
+      "cat": "body",
+      "title": "기초대사 올리는 성분",
+      "query": "기초대사",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 1,439,410",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "daily-protein-requirement",
+      "cat": "body",
+      "title": "단백질 1일 필요량과 피부",
+      "query": "단백질 하루 필요량",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 41,564",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    },
+    {
+      "slug": "vitamin-d-deficiency-signs",
+      "cat": "body",
+      "title": "비타민D 결핍의 피부 신호",
+      "query": "비타민D 결핍",
+      "corner": "smartguide",
+      "demand": "네이버 블로그 307,019",
+      "angle": "이 글이 다룰 핵심 한 줄"
+    }
+  ]
+}

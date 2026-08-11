@@ -49,6 +49,7 @@ if (FIX) {
 
 let total = 0, pass = 0;
 const failures = [];
+const thin = [];        // 통과는 하지만 출처가 1건뿐인 글
 const seenSlug = new Map();
 
 for (const f of files) {
@@ -59,7 +60,7 @@ for (const f of files) {
   const arts = j.articles || j;
   if (!Array.isArray(arts)) continue; // 원고 파일이 아님(주제 계획서 등) — 조용히 건너뜀
   console.log(`\n${f.split(/[\\/]/).pop()} — ${arts.length}편`);
-  console.log("slug".padEnd(34), "본문  h2 FAQ sum callout em  판정");
+  console.log("slug".padEnd(34), "본문  h2 FAQ sum callout em src 판정");
   for (const a of arts) {
     total++;
     const body = cnt(bodyText(a));
@@ -92,7 +93,14 @@ for (const f of files) {
     if (call < CALLOUT_MIN) bad.push(`callout ${call}`);
     if (!a.field) bad.push("field 없음");
     if (!VALID_CORNERS.includes(a.corner)) bad.push(`corner ${a.corner}`);
-    if (!(a.sources || []).length) bad.push("sources 0");
+    // 출처 개수는 실패로 만들지 않는다(1건만 남는 게 정직한 경우가 있다).
+    // 다만 눈에는 보여야 한다 — 글 전체가 문서 하나에 얹혀 있다는 뜻이라,
+    // 그 문서가 뒤집히면 글도 같이 뒤집힌다. 실제로 염소·수영장 편이 리뷰
+    // 논문 한 편에서만 나왔다(2026-08-11). 억지로 채우게 만들면 약한 출처를
+    // 끼워 넣는 쪽으로 가므로, 강제하지 않고 표시만 한다.
+    const src = (a.sources || []).length;
+    if (!src) bad.push("sources 0");
+    else if (src < 2) thin.push(`${a.slug}: 출처 1건 — 이 문서가 뒤집히면 글도 뒤집힌다`);
     // 파일 간 슬러그 중복(같은 배치에서 두 번 쓰면 적재 시 하나가 덮인다)
     if (seenSlug.has(a.slug)) bad.push(`slug 중복(${seenSlug.get(a.slug)})`);
     else seenSlug.set(a.slug, f.split(/[\\/]/).pop());
@@ -107,6 +115,7 @@ for (const f of files) {
       String(sum).padStart(3),
       String(call).padStart(6),
       String(em).padStart(3),
+      String(src).padStart(3),
       ok ? " ✓" : " ✗"
     );
   }
@@ -114,6 +123,10 @@ for (const f of files) {
 
 console.log(`\n판정: ${pass}/${total} 통과${failures.length ? ` · ${failures.length}편 재작업` : ""}`);
 for (const f of failures) console.log("  ✗", f);
+if (thin.length) {
+  console.log(`\n△ 출처가 얇은 글 ${thin.length}편 (통과는 하지만 확인해라)`);
+  for (const t of thin) console.log("   " + t);
+}
 if (failures.length) {
   console.log(`\n기준: 본문 ${MIN}~${MAX}자(공백 제외) · FAQ ${FAQ_MIN}+ · summary 3문장 · callout ${CALLOUT_MIN}자+ · em-dash 0 · sources 1+`);
   console.log(`      부정묘사 0 · 제목 의심제기형 금지 — "효과 없다"가 아니라 "어떤 경우에 도움이 되는지"로 쓴다(.claude/agents/magazine-writer.md §5)`);
