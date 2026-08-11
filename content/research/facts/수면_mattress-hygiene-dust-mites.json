@@ -1,0 +1,221 @@
+{
+  "topic": "매트리스 위생과 진드기: 침구 청결의 과학",
+  "brand": "수면",
+  "article": "mattress-hygiene-dust-mites",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "dust-mites-what-they-are",
+      "claim": "먼지진드기(house dust mites)는 미시적 해충으로 죽은 피부 세포를 먹이로 하며 습한 환경에서 번식한다. 사람들이 알레르기 반응을 보이는 것은 진드기 자체가 아니라 진드기의 배설물, 소변, 시체에서 나오는 단백질이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Lung Association - Dust Mites",
+      "source_url": "https://www.lung.org/clean-air/indoor-air/indoor-air-pollutants/dust-mites",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "진드기 정의",
+        "years": "2026",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "dust-mites-asthma-trigger",
+      "claim": "먼지진드기는 실내 천식 유발 요소 중 선두 주자이며, 민감한 천식 환자에게 심각한 발작을 야기할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Lung Association",
+      "source_url": "https://www.lung.org/clean-air/indoor-air/indoor-air-pollutants/dust-mites",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "건강 영향",
+        "years": "2026",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "dust-mite-home-prevalence",
+      "claim": "미국 가정의 약 80%(4/5)에서 최소한 한 침대의 먼지진드기 알레르겐이 검출된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Lung Association",
+      "source_url": "https://www.lung.org/clean-air/indoor-air/indoor-air-pollutants/dust-mites",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "유병률",
+        "years": "2026",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "daily-vacuuming-allergen-reduction",
+      "claim": "8주간 매일 매트리스를 청소기로 청소한 결과 먼지진드기 알레르겐이 85.1% 감소했다(Journal of Asthma, 2012, n=20가정).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Asthma - Daily vacuuming mattresses study",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/22316179/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "청소 효과",
+        "years": "2012",
+        "region": "미국"
+      },
+      "caution": "이 수치는 일일 청소를 기반으로 하며, 개인의 실행 가능성이나 주간 청소만으로도 실질적인 감소를 기대할 수 있다."
+    },
+    {
+      "id": "daily-vacuuming-endotoxin-reduction",
+      "claim": "같은 8주 연구에서 세균 내독소(endotoxin)는 71.0% 감소했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Asthma - Daily vacuuming mattresses study",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/22316179/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "세균 오염",
+        "years": "2012",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "daily-vacuuming-fungal-reduction",
+      "claim": "곰팡이 베타글루칸(β-glucan)은 8주 청소로 75.7% 감소했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Asthma - Daily vacuuming mattresses study",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/22316179/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "곰팡이 감소",
+        "years": "2012",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "mattress-cleaning-frequency-recommendation",
+      "claim": "매트리스 표면은 최소한 1~2주마다 한 번 청소기로 청소하고, 천식이나 알레르기가 있으면 더 자주(2주마다 권장). 종합적 청소는 1년에 최소 2회, 매일 사용하는 침대면 3개월마다 이상적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation + Expert Guidelines",
+      "source_url": "https://dustro.co.uk/blog/mattress-hygiene/how-often-should-you-clean-your-mattress-for-optimal-hygiene-expert-guidelines-for-a-healthier-sleep-environment",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "청소 주기",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "humidity-control-dust-mite-prevention",
+      "claim": "먼지진드기는 습도가 50% 이하일 때 번식이 어렵다. 진드기는 음식이나 물을 마시지 않고 공기 중 습도에서 수분을 흡수하기 때문에, 에어컨이나 제습기로 습도를 제어하는 것이 중요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Lung Association",
+      "source_url": "https://www.lung.org/clean-air/indoor-air/indoor-air-pollutants/dust-mites",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "환경 제어",
+        "years": "2026",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "bedding-wash-temperature-frequency",
+      "claim": "침구류는 주 1회 최소 화씨 120도(섭씨 약 49도) 이상의 뜨거운 물에 세탁해야 진드기와 알레르겐을 효과적으로 제거할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Lung Association",
+      "source_url": "https://www.lung.org/clean-air/indoor-air/indoor-air-pollutants/dust-mites",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "침구 세탁",
+        "years": "2026",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "allergen-proof-encasement-recommendation",
+      "claim": "매트리스와 베개에 알레르겐 방지 커버(allergen-proof encasement)를 사용하는 것이 먼지진드기 노출을 줄이는 효과적인 방법이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Lung Association",
+      "source_url": "https://www.lung.org/clean-air/indoor-air/indoor-air-pollutants/dust-mites",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "물리적 차단",
+        "years": "2026",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "vacuum-vs-covers-cost-benefit",
+      "claim": "매일 청소기질(vacuuming)은 비싼 알레르겐 방지 매트리스 커버에 비해 실용적이고 저렴한 대안으로, 특히 알레르기나 천식이 있는 사람에게 유용하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Asthma - Daily vacuuming study",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/22316179/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "방법 선택",
+        "years": "2012",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "dust-cloth-over-dry-dusting",
+      "claim": "먼지를 제거할 때 마른 천으로 닦으면 먼지를 공기 중으로 날릴 수 있으므로, 축축한 천으로 닦아서 먼지를 잡아두는 것이 낫다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Lung Association",
+      "source_url": "https://www.lung.org/clean-air/indoor-air/indoor-air-pollutants/dust-mites",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "청소 기법",
+        "years": "2026",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "mattress-replacement-cleaning-limitations",
+      "claim": "매트리스 진드기 문제가 심하고 청소만으로 제어가 안 되면 교체를 고려해야 할 수도 있다. 다만 청소만으로도 상당한 감소(85% 이상)를 기대할 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Sleep Expert guidance + Study implications",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/22316179/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "교체 판단",
+        "years": "2026",
+        "region": "일반"
+      },
+      "caution": "개인의 알레르기 심각도와 청소 실행력에 따라 교체 필요성이 달라진다."
+    }
+  ]
+}

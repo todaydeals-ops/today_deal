@@ -1,0 +1,89 @@
+{
+  "topic": "실내 곰팡이 발생 조건과 안전한 제거 및 재발 방지",
+  "brand": "공통",
+  "article": "mold-removal-selfcheck",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "humidity-threshold-60percent-from-condensation-study"
+  ],
+  "declined_facts": [
+    {
+      "id": "declined-lxzin-wall-moisture-barrier",
+      "reason": "LX하우시스(단열재 판매회사) 출처 — 자체 제품 판매를 위해 벽 방습 공사를 과장할 수 있음"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "mold-growth-humidity-above-60percent",
+      "claim": "실내 습도가 60% 이상일 때 곰팡이가 서식하기 시작하고, 습도가 높을수록 곰팡이 번식이 빨라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 연계 보건복지부 권장사항",
+      "source_url": "https://www.nhis.or.kr/magazin/165/html/sub2.html",
+      "checked": "2026-08-11",
+      "scope": { "condition": "상대습도", "threshold": "60%", "region": "KR" }
+    },
+    {
+      "id": "mold-dark-damp-warm-environments",
+      "claim": "곰팡이는 따뜻하고 어두우며 습한 환경에서 빠르게 성장한다. 욕실, 주방, 세탁실 등이 곰팡이 발생 고위험 지역이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 — 실내공기질 관리 방법",
+      "source_url": "https://www.ehtis.or.kr/cmn/sym/mnu/mpm/60001024/htmlMenuView.do",
+      "checked": "2026-08-11",
+      "scope": { "location": "실내 습한 공간", "region": "KR" }
+    },
+    {
+      "id": "mold-bleach-ventilation-safe-removal",
+      "claim": "곰팡이 제거 시 염소 계열 표백제(락스)를 사용하되, 반드시 충분한 환기를 하면서 사용해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 권장 곰팡이 관리 지침",
+      "source_url": "https://www.ehtis.or.kr/cmn/sym/mnu/mpm/60001024/htmlMenuView.do",
+      "checked": "2026-08-11",
+      "scope": { "method": "표백제 사용", "safety": "환기 필수", "region": "KR" }
+    },
+    {
+      "id": "bleach-acid-mixing-prohibited-toxic-chlorine-gas",
+      "claim": "락스와 산성 세제(아메스, 식초, 화장실 클리너 등)를 혼합하면 독성 염소 가스가 발생하여 심각한 호흡 곤란과 중독을 초래할 수 있으므로 절대 금지다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 및 환경부 화학물질 안전 정보",
+      "source_url": "https://www.ehtis.or.kr/cmn/sym/mnu/mpm/60001024/htmlMenuView.do",
+      "checked": "2026-08-11",
+      "scope": { "danger": "화학 중독", "hazard": "염소 가스 발생", "region": "KR" },
+      "caution": "실수로라도 산성 세제가 남아 있는 곳에 락스를 붓지 말 것. 사용 전 충분히 물로 헹굴 것."
+    },
+    {
+      "id": "mold-prevention-humidity-below-50percent",
+      "claim": "곰팡이 발생을 예방하려면 실내 습도를 50% 이하로 유지하는 것이 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 및 보건복지부 실내 습도 관리 기준",
+      "source_url": "https://www.ehtis.or.kr/cmn/sym/mnu/mpm/60001024/htmlMenuView.do",
+      "checked": "2026-08-11",
+      "scope": { "prevention": "습도 관리", "target": "50% 이하", "region": "KR" }
+    },
+    {
+      "id": "mold-prevention-ventilation-frequency",
+      "claim": "곰팡이 재발 방지를 위해 하루 2~3회, 한 번에 10~20분 정도의 정기적 환기가 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 권장 실내공기질 관리방법",
+      "source_url": "https://www.ehtis.or.kr/cmn/sym/mnu/mpm/60001024/htmlMenuView.do",
+      "checked": "2026-08-11",
+      "scope": { "action": "환기", "frequency": "2~3회/일", "duration": "10~20분", "region": "KR" }
+    },
+    {
+      "id": "mold-remove-affected-materials-severe-cases",
+      "claim": "곰팡이가 심각하게 발생한 벽지나 욕실 재료는 제거하고 교체해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 권장 실내공기질 관리방법",
+      "source_url": "https://www.ehtis.or.kr/cmn/sym/mnu/mpm/60001024/htmlMenuView.do",
+      "checked": "2026-08-11",
+      "scope": { "severity": "심각한 경우", "action": "재료 교체", "region": "KR" }
+    }
+  ]
+}

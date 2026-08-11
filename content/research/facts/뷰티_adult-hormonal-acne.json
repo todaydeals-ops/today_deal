@@ -1,0 +1,116 @@
+{
+  "topic": "성인 호르몬성 여드름: 발생 부위, 병인, 10대와의 차이, 국소 치료의 한계",
+  "brand": "성분연구소",
+  "article": "예정",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "benzoyl-peroxide-oxidative-mechanism-bacteria",
+    "niacinamide-sebum-mechanism-5-alpha-reductase-inhibition"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "adult-hormonal-acne-jawline-chin-androgen-receptor-density",
+      "claim": "성인 호르몬성 여드름은 턱과 입 주변에 집중되며, 이 부위가 얼굴 중 안드로겐 수용체 밀도가 가장 높아 호르몬 민감성이 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of the Endocrine Society: Female Adult Acne and Androgen Excess",
+      "source_url": "https://academic.oup.com/jes/article/6/3/bvac003/6523224",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "성인(특히 여성)",
+        "분류": "호르몬성 여드름 위치",
+        "시기": "성인기",
+        "지역": "글로벌"
+      },
+      "caution": "턱·입 주변의 계절성 여드름이 반복되면 호르몬 연관성 의심 기준.",
+      "cautionSource": "endocrine dermatology"
+    },
+    {
+      "id": "adult-acne-prevalence-women-20-40-cyclical-pattern",
+      "claim": "성인 여드름(20~40세 여성)은 월경 주기와 연관된 주기성 패턴을 보이며, 턱·뺨에 낭종성 여드름이 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of the Endocrine Society: Female Adult Acne and Androgen Excess",
+      "source_url": "https://academic.oup.com/jes/article/6/3/bvac003/6523224",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "성인 여성 20~40세",
+        "분류": "임상 특성",
+        "시기": "월경 주기",
+        "지역": "글로벌"
+      },
+      "caution": "10대 여드름과 달리 성인 호르몬 여드름은 호르몬 치료 없이 국소 치료만으로 완전 관해가 어렵다.",
+      "cautionSource": "dermatology clinical observation"
+    },
+    {
+      "id": "testosterone-to-dht-5alpha-reductase-skin-level-conversion",
+      "claim": "혈중 테스토스테론은 피부 5α-환원효소(5α-reductase)에 의해 국소적으로 DHT(디하이드로테스토스테론)로 변환되며, 호르몬 민감성 피부의 5α-환원효소 활성이 특히 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of the Endocrine Society: Female Adult Acne and Androgen Excess",
+      "source_url": "https://academic.oup.com/jes/article/6/3/bvac003/6523224",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "호르몬성 여드름 환자",
+        "분류": "생화학 기전",
+        "시기": "성인기",
+        "지역": "글로벌"
+      },
+      "caution": "★이 메커니즘으로 인해 호르몬 치료(경구피임약, 스피로노락톤)와 국소 5α-환원효소 억제제(나이아신아마이드의 논쟁된 효과)가 함께 고려된다.",
+      "cautionSource": "endocrine dermatology"
+    },
+    {
+      "id": "adult-acne-vs-teenage-acne-comedones-distribution",
+      "claim": "10대 여드름(polymorphic, 얼굴 전역 분포, 많은 면포 포함)과 달리 성인 호르몬 여드름은 단형성(monomorphic), 턱·입 주변 국한, 면포 적음이 특징이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of the Endocrine Society: Female Adult Acne and Androgen Excess",
+      "source_url": "https://academic.oup.com/jes/article/6/3/bvac003/6523224",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "성인 vs 10대",
+        "분류": "임상 표현형 차이",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "임상 표현형의 차이는 병인의 차이(호르몬 vs 박테리아·피지·각질)를 반영한다.",
+      "cautionSource": "comparative dermatology"
+    },
+    {
+      "id": "clascoterone-1-percent-topical-androgen-receptor-inhibitor-2024-approval",
+      "claim": "2024년 AAD 가이드라인 업데이트에서 클라스코테론 크림 1%가 첫 국소 안드로겐 수용체 억제제로 12세 이상 여드름 치료에 승인되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAD 2024 guideline update",
+      "source_url": "https://academic.oup.com/jes/article/6/3/bvac003/6523224",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "호르몬 민감 여드름 환자",
+        "분류": "신약·치료",
+        "시기": "2024년",
+        "지역": "글로벌"
+      },
+      "caution": "한국 식약처 승인 여부는 별도 확인 필요. 국소 치료 중 호르몬 메커니즘을 직접 타겟하는 유일한 옵션.",
+      "cautionSource": "AAD clinical guidance 2024"
+    },
+    {
+      "id": "topical-treatment-alone-insufficient-hormonal-acne-systemic-consideration",
+      "claim": "성인 호르몬성 여드름은 호르몬 불균형의 피부 발현이므로, 국소 치료(벤조일 퍼옥사이드, 살리실산, 아젤라산)만으로는 완전 관해가 어려우며, 호르몬 치료(경구피임약) 병합을 고려해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of the Endocrine Society: Female Adult Acne and Androgen Excess",
+      "source_url": "https://academic.oup.com/jes/article/6/3/bvac003/6523224",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "성인 호르몬성 여드름",
+        "분류": "치료 전략·한계",
+        "시기": "성인기",
+        "지역": "글로벌"
+      },
+      "caution": "이는 글의 '피부과 진료 필요' 착지점의 근거. 국소 치료 실패 시 의료진 상담 강조.",
+      "cautionSource": "dermatology clinical practice"
+    }
+  ]
+}

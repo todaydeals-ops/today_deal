@@ -1,0 +1,173 @@
+{
+  "topic": "영양제 보관과 변질: 냉장·차광·습도 관리",
+  "brand": "건강기능식품",
+  "article": "supplement-storage-preservation",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "light-sensitivity-opaque-vs-clear",
+      "why": "팩트 원문 미존재 - 다른 파일에서 재사용 거부"
+    },
+    {
+      "id": "humidity-water-soluble-vitamin-loss",
+      "why": "팩트 원문 미존재 - 다른 파일에서 재사용 거부"
+    },
+    {
+      "id": "vitamin-c-storage-duration-loss",
+      "why": "냉장 유리 용기에서 12개월 후 '초기 농도의 10%만 남음'이라는 주장을 공식 출처에서 확인 불가. 실제 연구(2021 IJ Pharm): 냉장(5°C)에서 12개월 후 94% 보유 기록. 출처(greencirclecap.com)는 캡슐 제조사로 이해상충. 제조사 마케팅 추측"
+    },
+    {
+      "id": "vitamin-c-temperature-retention",
+      "why": "온도별 보유율(30도 87.6%, 50도 84.7%, 70도 73.8%, 90도 43.6%)을 공식 출처에서 확인 불가. 출처(journals.innovareacademics.in)는 약탈적 저널로 분류. 팩트체크 결과 공개 학술지에서 동일 수치 미발견"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "supplement-four-degradation-factors",
+      "claim": "USP(미국약전) 표준에 따르면 영양제 성분 안정성에 영향을 미치는 주요 요인은 온도, 습도, 빛, 산소다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "USP <659> Packaging and Storage Requirements",
+      "source_url": "https://www.usp.org/reference-standards/use-and-storage",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "건강기능식품",
+        "category": "basics",
+        "line": "변질 기전",
+        "years": "2026",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "ideal-supplement-storage-temperature",
+      "claim": "USP 표준상 '실온(controlled room temperature)'은 섭씨 20~25도(화씨 68~77도)로 정의되며, 허용 범위 편차는 섭씨 15~30도(화씨 59~86도)다. 냉장은 섭씨 2~8도(화씨 36~46도), 서늘한 곳은 섭씨 8~15도(화씨 46~59도)로 정의된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "USP <659> Packaging and Storage Requirements",
+      "source_url": "https://www.usp.org/reference-standards/use-and-storage",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "건강기능식품",
+        "category": "basics",
+        "line": "온도 관리",
+        "years": "2026",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "temperature-fluctuation-condensation-problem",
+      "claim": "온도가 추위와 따뜻함을 오갈 때 응결 수증기가 생기며, 특히 비타민 C는 습도 노출로 인한 분해(hydrolysis)가 가속화된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Agricultural and Food Chemistry - Influence of storage conditions on vitamin C stability",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/20163110/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "건강기능식품",
+        "category": "basics",
+        "line": "환경 변화",
+        "years": "2010",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "vitamin-c-humidity-degradation",
+      "claim": "비타민 C는 수용성 비타민 중에서도 습도에 가장 취약하다. PubMed 연구에 따르면 상대습도(RH)와 온도 모두 비타민 안정성에 유의미한 영향을 미치지만, 상대습도가 더 큰 영향을 미친다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Journal of Agricultural and Food Chemistry - Influence of simultaneous temperature and humidity variations on vitamin C stability",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/20163110/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "건강기능식품",
+        "category": "basics",
+        "line": "습도 민감도",
+        "years": "2010",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "probiotic-room-temperature-viability",
+      "claim": "대부분의 Lactobacillus와 Bifidobacterium 균주는 실온에서 보관할 때 냉장 보관보다 더 빠르게 생존력을 잃는다. 다만 Saccharomyces boulardii와 특정 Bacillus 균주는 실온 안정적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed - Viability, Acid and Bile Tolerance of Spray Dried Probiotic Bacteria and Some Commercial Probiotic Supplement Products Kept at Room Temperature",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/27145163/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "건강기능식품",
+        "category": "shield",
+        "line": "유산균 보관",
+        "years": "2015",
+        "region": "일반"
+      },
+      "caution": "상품의 label을 확인해야 하며, 균주별로 요구 사항이 다르다."
+    },
+    {
+      "id": "fish-oil-omega3-refrigeration-benefit",
+      "claim": "액체 피시오일과 오메가-3 제품은 열, 빛, 공기에 노출되면 산화되어 영양가가 손실되고 불쾌한 냄새와 맛이 난다. 냉장은 필수는 아니지만 오메가-3 지방산의 산화를 느리게 해준다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Pharmaceuticals - Effect of packaging and encapsulation on the oxidative and sensory stability of omega‐3 supplements",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10003024/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "건강기능식품",
+        "category": "flow",
+        "line": "오메가-3 보관",
+        "years": "2023",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "fish-oil-softgel-capsule-stability",
+      "claim": "소프트젤 캡슐 형태의 피시오일은 산소 노출로부터 더 잘 보호되어 실온에서도 일반적으로 안정적이다. 다만 냉암소에 보관하면 산화 속도가 더 느려진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Pharmaceuticals - Effect of packaging and encapsulation on the oxidative and sensory stability of omega‐3 supplements",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10003024/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "건강기능식품",
+        "category": "flow",
+        "line": "제형별 안정성",
+        "years": "2023",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "supplement-label-storage-instruction",
+      "claim": "영양제의 적절한 보관 방법은 상품 label에 명시되어 있으며, 불명확할 때는 label 지침을 따르는 것이 안전하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA Dietary Supplement Labeling Guide",
+      "source_url": "https://www.fda.gov/food/dietary-supplements-guidance-documents-regulatory-information/dietary-supplement-labeling-guide",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "건강기능식품",
+        "category": "basics",
+        "line": "사용자 행동",
+        "years": "2026",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "plastic-vs-glass-container",
+      "claim": "비타민 C는 저온(4도)과 유리 용기 보관이 최고지만, 플라스틱 용기에 담긴 주스는 7일 동안 5.95~23.37%의 비타민 C를 손실한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MDPI Applied Sciences - Stability of Vitamin C Content in Plant and Vegetable Juices under Different Storing Conditions",
+      "source_url": "https://www.mdpi.com/2076-3417/13/19/10640",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "건강기능식품",
+        "category": "basics",
+        "line": "용기 재질",
+        "years": "2023",
+        "region": "일반"
+      }
+    }
+  ]
+}

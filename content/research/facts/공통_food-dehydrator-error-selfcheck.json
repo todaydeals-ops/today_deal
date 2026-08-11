@@ -1,0 +1,93 @@
+{
+  "topic": "식품건조기 건조 불량 원인과 최적 사용 조건",
+  "brand": "공통",
+  "article": "food-dehydrator-error-selfcheck",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "food-dehydrator-temperature-range",
+      "claim": "가정용 식품건조기의 일반적인 작동 온도는 35℃~70℃ 범위이며, 대부분의 야채와 과일은 50℃~65℃에서 건조된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품건조기 사용 설명서 및 일반 식품 건조 가이드",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "device": "식품건조기", "measure": "온도", "region": "KR" },
+      "caution": "온도가 너무 높으면 식품의 영양가가 손실되고, 너무 낮으면 건조가 불완전할 수 있다."
+    },
+    {
+      "id": "food-dehydrator-drying-time-depends-on-moisture",
+      "claim": "식품건조기의 건조 시간은 식품의 종류, 두께, 수분 함량에 따라 4시간~24시간까지 다양하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품건조기 사용 설명서",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "device": "식품건조기", "measure": "시간", "variable": "식품별", "region": "KR" }
+    },
+    {
+      "id": "food-dehydrator-even-distribution-prevents-uneven-drying",
+      "claim": "식품이 건조실 내에 고르게 배치되지 않으면 일부는 과도 건조되고 일부는 덜 건조될 수 있으므로, 식품들 사이에 충분한 공간을 두고 배열해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품건조기 사용 설명서 및 건조 기술 가이드",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "device": "식품건조기", "issue": "불균등 건조", "solution": "배치 간격", "region": "KR" }
+    },
+    {
+      "id": "food-dehydrator-overfilling-reduces-efficiency",
+      "claim": "건조실을 과도하게 채우면 공기 순환이 방해되어 건조 효율이 저하되고 건조 시간이 길어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품건조기 사용 설명서",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "device": "식품건조기", "issue": "과다 적재", "consequence": "건조 효율 저하", "region": "KR" }
+    },
+    {
+      "id": "food-dehydrator-auto-shutoff-safety",
+      "claim": "최신 식품건조기는 자동 종료(타이머) 기능을 갖추고 있어, 설정된 시간 도달 시 자동으로 작동을 멈춘다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품건조기 제조사 사양 정보",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "device": "식품건조기", "feature": "자동 종료", "region": "KR" }
+    },
+    {
+      "id": "food-dehydrator-temperature-control-thermostat",
+      "claim": "식품건조기의 온도 조절은 내장된 온도 센서와 써모스탯에 의해 자동으로 관리되므로, 사용자가 원하는 온도를 설정하면 기기가 온도를 유지한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품건조기 기술 사양",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "device": "식품건조기", "mechanism": "온도 제어", "region": "KR" }
+    },
+    {
+      "id": "food-dehydrator-inadequate-air-circulation",
+      "claim": "건조기 내부 필터나 환기구가 먼지로 막혀 있으면 공기 순환이 방해되어 건조가 불완전할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품건조기 유지보수 가이드",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "device": "식품건조기", "maintenance": "필터 청소", "region": "KR" },
+      "caution": "정기적으로 필터와 환기구를 청소하지 않으면 건조 효율이 점진적으로 저하된다."
+    },
+    {
+      "id": "food-dehydrator-humidity-sensor-optional",
+      "claim": "일부 고급형 식품건조기는 습도 센서를 갖추고 있어, 식품의 수분 함량을 감지하여 자동으로 건조를 멈출 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품건조기 고급 기능 설명서",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "device": "식품건조기", "feature": "습도 센서", "type": "선택 기능", "region": "KR" }
+    }
+  ]
+}

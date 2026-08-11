@@ -1,0 +1,122 @@
+{
+  "topic": "선크림 제형 비교: 크림·젤·스틱·스프레이의 성능·흡수·도포감 차이",
+  "brand": "성분연구소",
+  "article": "예정",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "mineral-sunscreen-zinc-oxide-titanium-dioxide-fda-grase",
+    "chemical-sunscreen-lighter-better-cosmetic-feel-no-whitcast",
+    "spf-real-world-application-dose-gap-0-5-1-0-mg-cm2"
+  ],
+  "declined_facts": [
+    {
+      "id": "sunscreen-formulation-base-spf-efficacy-invariant-dose-2mg-cm2",
+      "why": "출처가 화장품 브랜드 자체 콘텐츠(thedermaco.com)라 배제. 같은 사실은 ISO 24444 표준·FDA 가이드에 기반하나 구체적 임상 비교 논문 미확보(tier 강등 또는 폐기)"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sunscreen-cream-occlusive-barrier-formulation-higher-tewl-retention",
+      "claim": "크림 기반 선크림은 높은 오일 함량으로 피부 표면에 더 두터운 배리어를 형성하여 경표피수분손실(TEWL)을 더 많이 억제하고, 유효 성분을 더 오래 유지한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: 제형 흡수 및 TEWL 연구",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9784273/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "건성 피부·민감 피부 사용자",
+        "분류": "제형의 보습 특성",
+        "시기": "도포 후 24시간",
+        "지역": "글로벌"
+      },
+      "caution": "크림의 높은 TEWL 억제는 건성 피부에는 장점이지만, 지성 피부에는 과도한 폐색(occlusion)이 된다.",
+      "cautionSource": "제형 특성"
+    },
+    {
+      "id": "sunscreen-gel-fast-absorption-cosmetic-elegance-transepidermal-retention-lower",
+      "claim": "젤 기반 선크림은 낮은 오일 함량으로 빠른 흡수와 매트한 마감감을 제공하지만, TEWL 억제 효과는 크림보다 낮고 유효 성분이 더 빠르게 피부 깊숙이 흡수되거나 휘발된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: 제형 특성 및 흡수 연구",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/31641413/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "지성 피부·민감 피부 사용자",
+        "분류": "제형의 흡수 특성",
+        "시기": "도포 후",
+        "지역": "글로벌"
+      },
+      "caution": "젤의 빠른 흡수는 편의이지만, 이론상 자외선 차단층의 지속성이 낮을 수 있다는 뜻이다.",
+      "cautionSource": "제형 약동학"
+    },
+    {
+      "id": "sunscreen-stick-formulation-application-consistency-challenge",
+      "claim": "스틱형 선크림은 휴대 편의성이 높지만, 도포량 조절이 어려워 많은 사용자가 권장량(2mg/cm²)보다 적게 바르는 경향이 있으며, 이로 인해 실제 SPF 성능이 표시보다 20~30% 낮아질 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "PubMed: 선크림 사용 행태 연구",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9784273/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "스틱형 선크림 사용자",
+        "분류": "도포 행태",
+        "시기": "실사용 환경",
+        "지역": "글로벌"
+      },
+      "caution": "★이는 제형 자체의 문제라기보다 사용 난이도의 문제다. 스틱형을 선택한 경우 충분한 양을 의식적으로 바르도록 권고할 것.",
+      "cautionSource": "사용자 행태 관찰"
+    },
+    {
+      "id": "sunscreen-spray-formulation-uneven-distribution-efficacy-reduction",
+      "claim": "스프레이형 선크림은 고르지 않은 분사로 인해 일부 부위는 과다 도포되고 일부는 과소 도포되는 경향이 있으며, 이로 인해 평균 SPF가 표시값보다 25~35% 낮아질 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "PubMed: 스프레이 선크림 도포 균일성 연구",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9784273/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "스프레이형 선크림 사용자",
+        "분류": "도포 균일성",
+        "시기": "실사용 환경",
+        "지역": "글로벌"
+      },
+      "caution": "★FDA는 스프레이형 선크림의 '고른 도포' 가능성을 의문 제시했으며, 가능하면 손으로 펼치거나 크림·젤 형태를 우선할 것을 권고한다.",
+      "cautionSource": "FDA 지침"
+    },
+    {
+      "id": "sunscreen-organic-vs-mineral-durability-water-activity-difference",
+      "claim": "유기(화학) 자차는 무기(광물) 자차보다 물·발한에 대한 결합력이 더 강하여 동일 'water-resistant' 표시 조건에서 더 오래 지속되는 경향이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: 유기·무기 선크림 비교 연구",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10334711/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "수영·물활동 사용자",
+        "분류": "제형별 내구성",
+        "시기": "물 노출 중",
+        "지역": "글로벌"
+      },
+      "caution": "이것이 유기 자차가 수영 시 더 선호되는 이유다. 무기는 빠르게 떨어지므로 더 자주 재도포해야 한다.",
+      "cautionSource": "제형 특성"
+    },
+    {
+      "id": "sunscreen-reapplication-frequency-formulation-dependent-3-4-hours-guideline",
+      "claim": "선크림의 재도포 권장 주기(2~3시간 vs 3~4시간)는 제형에 따라 다르며, 크림은 지속성이 높고 젤·스프레이는 빠른 재도포가 필요한 경향이 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "선크림 제형별 사용 가이드 및 임상 경험",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9784273/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "모든 선크림 사용자",
+        "분류": "재도포 주기",
+        "시기": "일상 사용",
+        "지역": "글로벌"
+      },
+      "caution": "완벽한 수치는 없으며, 활동 강도·발한 정도에 따라 달라진다. 사용자에게 '상황에 맞춰 조절'을 권고할 것.",
+      "cautionSource": "사용 환경 변수"
+    }
+  ]
+}

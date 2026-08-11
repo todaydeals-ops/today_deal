@@ -1,0 +1,77 @@
+{
+  "topic": "제조사 보증기간과 소비자분쟁해결기준의 관계",
+  "brand": "공통",
+  "article": "warranty-consumer-protection",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "warranty-period-ftc-standard",
+      "claim": "공정거래위원회 소비자분쟁해결기준에서 정한 보증기간은 제조사가 품질보증서에 기재한 기간이 이보다 짧을 경우의 최소 보장선이며, 제품별로 상이하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공정거래위원회 고시 제2023-28호 소비자분쟁해결기준",
+      "source_url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000236196",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "가전제품",
+        "line": "냉장고, 세탁기, 에어컨 등",
+        "years": "2023-",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "warranty-calculation-from-purchase",
+      "claim": "품질보증기간은 소비자가 물품을 구입하거나 제공받은 날부터 산정한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공정거래위원회 고시 제2023-28호 소비자분쟁해결기준",
+      "source_url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000236196",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "가전제품",
+        "line": "전 제품",
+        "years": "2023-",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "parts-replacement-warranty",
+      "claim": "유상으로 수리한 부품에 대해서는 수리 완료일부터 12개월 내에 정상 사용 과정에서 동일 부품이 재고장될 경우 무상수리한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공정거래위원회 고시 제2023-28호 소비자분쟁해결기준",
+      "source_url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000236196",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "가전제품",
+        "line": "전 제품",
+        "years": "2023-",
+        "region": "KR"
+      },
+      "caution": "보증기간 만료 후의 유상수리를 말하며, 보증기간 내에는 별도의 규정이 적용된다"
+    },
+    {
+      "id": "repair-delay-consumer-remedy",
+      "claim": "수리는 지체없이 진행되어야 하며, 소비자 의뢰 후 1개월이 경과해도 수리 완료 물품을 인도하지 못할 경우, 보증기간 내라면 동종 물품 교환 또는 불가능 시 환금한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공정거래위원회 고시 제2023-28호 소비자분쟁해결기준",
+      "source_url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000236196",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "가전제품",
+        "line": "전 제품",
+        "years": "2023-",
+        "region": "KR"
+      },
+      "caution": "1개월은 소비자가 수리를 의뢰한 시점부터 계산하며, 이는 기준 기간이므로 제품군에 따라 상이할 수 있다"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "topic": "주부습진·손 건조: 자극원 기전과 세정제·보습제·장갑 관리",
+  "brand": "성분연구소",
+  "article": "hand-eczema-care",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "humidity-drop-tewl-increase-seasonal",
+    "moisturizer-three-classes-definition-function",
+    "occlusive-definition-petrolatum-tewl-reduction",
+    "humectant-definition-water-absorption-hygroscopic",
+    "glycerin-occlusive-pairing-essential-dry-climates",
+    "moisturizer-efficacy-dermatological-conditions-eczema-xerosis-psoriasis"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "irritant-contact-dermatitis-mechanism-surfactant-barrier-damage",
+      "claim": "자극성 접촉피부염은 계면활성제·물·잦은 세척이 피부 지질층의 지방을 제거(defatting)하고 각질층의 수분 결합 메커니즘을 손상시켜 경표피수분손실(TEWL)을 증가시킨다. 동시에 케라티노사이트에서 IL-1α, IL-1β, TNF-α, IL-8 등 염증 매개물질이 방출되어 호중구(neutrophil)와 비만세포(mast cell)가 침윤한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAD & DermNet NZ: Irritant Contact Dermatitis",
+      "source_url": "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis/causes",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "손 건조·습진 호소자",
+        "분류": "기전",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "물도 자극원이다. 잦은 물 노출이 계면활성제만큼 피부를 손상시킬 수 있다.",
+      "cautionSource": "AAD"
+    },
+    {
+      "id": "occupational-hand-dermatitis-wet-work-80-percent-irritant",
+      "claim": "직업성 손습진의 80%가 자극성 접촉피부염이며, 주부(housewives)·청소부·식품 취급자·의료 종사자 등 물에 자주 노출되는 직업군에서 높은 유병률을 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DermNet NZ: Hand Dermatitis",
+      "source_url": "https://dermnetnz.org/topics/hand-dermatitis",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "물에 자주 노출되는 직업군",
+        "분류": "유병률",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★'주부습진'은 의학용어이며, 알레르기성과 자극성 양쪽이 복합될 수 있다.",
+      "cautionSource": "DermNet"
+    },
+    {
+      "id": "gentle-cleanser-low-pH-syndet-hand-eczema-improvement",
+      "claim": "비누 대신 순한 세정제(gentle cleanser)와 낮은 pH 세정제(pH 4.5~5.5, syndet 제품)를 사용하면 손습진이 유의미하게 개선되며, 전통 액체 비누보다 에멀전 세정제가 더 효과적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Interventions for hand eczema",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/31025714/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "손습진 환자",
+        "분류": "세정제 선택",
+        "시기": "일상 관리",
+        "지역": "글로벌"
+      },
+      "caution": "추천되는 저자극 제품: Cetaphil, Dove(여러 라인), Aderma 등. 향수·색소·알코올이 없는 제품을 선택할 것.",
+      "cautionSource": "PubMed RCT"
+    },
+    {
+      "id": "moisturizer-application-timing-immediately-after-water-exposure",
+      "claim": "보습제는 세척 직후, 손이 약간 축축한 상태에서 즉시 도포해야 한다(critical timing). 물 노출·세척·습진 악화 직후 언제든지 보습해야 최적 효과를 낸다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAD & Occupational Hand Dermatitis Management Guidelines",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9903276/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "손습진·건조 케어자",
+        "분류": "케어 타이밍",
+        "시기": "일상",
+        "지역": "글로벌"
+      },
+      "caution": "★'나중에 발라도 된다'는 생각은 틀렸다. 수분 손실이 이미 시작된 후에는 보습 효과가 떨어진다.",
+      "cautionSource": "임상 권장"
+    },
+    {
+      "id": "hand-eczema-glove-use-cotton-liner-occlusive-glove-hazard",
+      "claim": "손습진이 심한 경우 물에 노출될 때 면 장갑 안쪽 라이너를 깐 상태에서 occlusive(방수) 장갑을 착용한다. 장기간 occlusive 장갑 착용은 Staphylococcus aureus 밀도를 증가시키므로, 작업 후 즉시 벗고 환기시켜야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Wearing Occlusive Gloves Increases the Density of Staphylococcus aureus in Patients with Hand Eczema",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/34219178/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "손습진 환자",
+        "분류": "장갑 사용법·2차 감염 예방",
+        "시기": "습진 악화 시",
+        "지역": "글로벌"
+      },
+      "caution": "★Occlusive 장갑을 벗은 후 손을 씻지 않은 채 놔두면 세균 번식이 가속화된다. 벗은 직후 순한 세정제로 씻고 즉시 보습할 것.",
+      "cautionSource": "미생물학·감염관리"
+    },
+    {
+      "id": "hand-eczema-secondary-infection-warning-signs-honey-crust",
+      "claim": "자극성 손습진이 2차 세균 감염으로 진행하면 **꿀색 딱지(honey-colored crust), 진물(oozing), 부종, 따뜻함, 홍반이 강해진다.** 이 징후가 나타나면 피부과 진료가 필요하며, 자가 관리만으로는 개선되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MSD Manual Professional Edition: Contact Dermatitis",
+      "source_url": "https://www.msdmanuals.com/professional/dermatologic-disorders/dermatitis/contact-dermatitis",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "손습진 환자",
+        "분류": "감염 징후·경계선",
+        "시기": "악화 시",
+        "지역": "글로벌"
+      },
+      "caution": "★꿀색 딱지는 세균 감염의 명확한 신호다. 절대 자기 판단으로 항생제 크림을 장기 사용하지 말고 피부과 진료를 받을 것.",
+      "cautionSource": "감염관리·안전"
+    },
+    {
+      "id": "hand-eczema-when-to-see-dermatologist-topical-steroid-systemic-steroid",
+      "claim": "자극성 손습진이 자가 관리(세정제 변경, 보습, 장갑)로 2~3주 이상 개선되지 않거나, 심한 급성 악화(진물·부종·감염 징후)가 있으면 피부과 진료가 필수다. 의료진은 국소 스테로이드(topical corticosteroid) 또는 경구 프레드니손(systemic steroid, 2~4주)을 처방할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DermNet NZ: Hand Dermatitis Treatment",
+      "source_url": "https://dermnetnz.org/topics/hand-dermatitis",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "손습진 환자",
+        "분류": "자가관리 vs 의료 진료 경계",
+        "시기": "2주 이상 미개선 시",
+        "지역": "글로벌"
+      },
+      "caution": "★만성 손습진은 완치가 느리고, 자극원 노출을 계속하면 회복이 지연된다. '여기까지 해봤는데 나아지지 않으면 피부과'가 정답이다.",
+      "cautionSource": "임상 가이드"
+    }
+  ]
+}

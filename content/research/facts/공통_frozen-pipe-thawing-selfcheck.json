@@ -1,0 +1,97 @@
+{
+  "topic": "동파 배관 안전한 해빙 방법과 위험 행동",
+  "brand": "공통",
+  "article": "frozen-pipe-thawing-selfcheck",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "declined-cpdrain-thawing-methods",
+      "reason": "배관 시공업체(cpdrain.com) 출처 — 자체 서비스 판매를 위해 위험을 과장하거나 축소할 수 있음"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "frozen-pipe-thawing-definition",
+      "claim": "동파 해빙은 동파된 배관 내의 얼음을 따뜻한 열로 녹여 배관을 복구하는 응급 조치다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국수자원공사 — 겨울철 동파 대응 안내",
+      "source_url": "https://www.kwater.or.kr",
+      "checked": "2026-08-11",
+      "scope": { "action": "해빙", "target": "수도·난방 배관", "season": "겨울", "region": "KR" }
+    },
+    {
+      "id": "frozen-pipe-gradual-warming-safe-method",
+      "claim": "동파된 배관의 안전한 해빙은 미지근한 물(따뜻하지만 뜨겁지 않은)을 서서히 부어 온도를 점진적으로 올리는 방식이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국수자원공사 겨울철 동파 방지 안내",
+      "source_url": "https://www.kwater.or.kr",
+      "checked": "2026-08-11",
+      "scope": { "method": "점진적 가열", "region": "KR" }
+    },
+    {
+      "id": "frozen-pipe-direct-flame-prohibited-fire-hazard",
+      "claim": "라이터, 토치, 헤어드라이기 등의 직화나 고온 열원으로 배관을 직접 가열하는 것은 화재와 배관 손상을 초래하므로 절대 금지다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소방청 — 난방용품 화재 예방 안내",
+      "source_url": "https://www.fire.go.kr",
+      "checked": "2026-08-11",
+      "scope": { "danger": "화재", "method": "직화 가열 금지", "region": "KR" },
+      "caution": "직화는 배관뿐 아니라 주변 벽면, 단열재, 건축물 전체의 화재를 유발할 수 있다."
+    },
+    {
+      "id": "frozen-pipe-rapid-heating-thermal-shock-damage",
+      "claim": "급격한 온도 변화로 인한 열 충격은 플라스틱 배관을 휘거나 터지게 할 수 있으므로 점진적 가열이 필수다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "한국수자원공사 기술 자료 (구체 수치 미확인)",
+      "source_url": "https://www.kwater.or.kr",
+      "checked": "2026-08-11",
+      "scope": { "risk": "열 충격", "material": "플라스틱 배관", "region": "KR" }
+    },
+    {
+      "id": "frozen-pipe-prevention-insulation-heating",
+      "claim": "동파 방지의 기본은 난방 유지와 배관 단열이다. 장시간 외출 시 보일러를 최저 온도로 유지하고 배관에 단열재를 감싸면 효과적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국수자원공사 — 겨울철 동파 예방 가이드",
+      "source_url": "https://www.kwater.or.kr",
+      "checked": "2026-08-11",
+      "scope": { "action": "예방", "method": "난방·단열 유지", "season": "겨울", "region": "KR" }
+    },
+    {
+      "id": "frozen-pipe-exposed-pipes-water-drip-prevention",
+      "claim": "외부에 노출된 수도관에서 물을 서서히 떨어지게 하면(물 흐름이 동파되기 어려우므로) 동파를 예방할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "행정안전부 국민재난안전포털 — 동파 예방법",
+      "source_url": "https://safekorea.go.kr",
+      "checked": "2026-08-11",
+      "scope": { "action": "예방", "method": "물 흐름 유지", "target": "외부 노출 배관", "region": "KR" }
+    },
+    {
+      "id": "frozen-pipe-professional-service-severe-cases",
+      "claim": "실내 배관뿐 아니라 보일러나 외부 연결 배관의 동파·해빙은 전문 설비업체에 의뢰하는 것이 안전하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국수자원공사 긴급 상황 대응 안내",
+      "source_url": "https://www.kwater.or.kr",
+      "checked": "2026-08-11",
+      "scope": { "severity": "심각한 경우", "action": "전문가 의뢰", "region": "KR" }
+    },
+    {
+      "id": "frozen-pipe-contact-local-water-authority",
+      "claim": "동파로 인한 수도관 파열이나 복구 불가능한 경우, 지역 상수도사업본부(서울 아리수본부 등)에 신고하면 긴급 대응을 받을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울 아리수본부·각 지자체 상수도 긴급 신고 안내",
+      "source_url": "https://arisu.seoul.go.kr",
+      "checked": "2026-08-11",
+      "scope": { "action": "긴급 신고", "target": "상수도 파열", "region": "서울 및 전국" }
+    }
+  ]
+}

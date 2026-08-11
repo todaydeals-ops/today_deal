@@ -1,0 +1,116 @@
+{
+  "topic": "펌·매직 후 손상 모발: 화학 기전과 단계별 복구 전략",
+  "brand": "성분연구소",
+  "article": "예정",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "hair-damage-disulfide-bond-disruption-keratin-network-loss-mechanical-strength",
+    "protein-treatment-efficacy-persist-5-washing-cycles"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "perm-chemical-process-reduction-oxidation-disulfide-bond-rearrangement",
+      "claim": "펌은 3단계 화학 공정이다: 1) 알칼리 환경(pH 8~10)에서 환원제(티오글리콜산, DTT)가 이황화 결합을 절단, 2) 금속 또는 로드로 모발 형태 고정, 3) 산화제(과산화수소 등)로 이황화 결합 재형성.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "모발 화학 기초 및 펌 처방학",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "펌 처리 모발",
+        "분류": "화학 기전",
+        "시기": "시술 중",
+        "지역": "글로벌"
+      },
+      "caution": "이 과정에서 불완전한 재결합 또는 부분 산화로 인해 손상이 누적된다.",
+      "cautionSource": "모발 화학"
+    },
+    {
+      "id": "magic-straight-chemical-process-reduction-breaking-bonds-neutralization-relaxation",
+      "claim": "매직(직모화)은 유사하게 환원제로 이황화 결합을 절단하되, 열(고온 프레싱)과 알칼리로 모발 구조를 펼치고, 산화 단계에서 낮은 강도의 산화(저농도 과산화수소)를 사용한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "직모화 처리 화학",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "매직 처리 모발",
+        "분류": "화학 기전",
+        "시기": "시술 중",
+        "지역": "글로벌"
+      },
+      "caution": "매직은 펌보다 알칼리 강도와 열 강도가 높아 손상이 더 심할 수 있다.",
+      "cautionSource": "모발 손상도 비교"
+    },
+    {
+      "id": "perm-magic-cumulative-damage-incomplete-disulfide-bond-reformation",
+      "claim": "펌과 매직을 반복하면 이황화 결합이 완전히 재형성되지 않거나 부정확하게 배열되어, 모발의 인장강도와 탄성이 누적적으로 저하된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "반복 화학 처리 누적 손상 연구",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "반복 펌/매직 사용자",
+        "분류": "누적 손상",
+        "시기": "3개월 이상 반복",
+        "지역": "글로벌"
+      },
+      "caution": "한 번의 펌/매직은 회복 가능하지만, 1~2개월 간격 반복은 회복 시간이 부족해 악화된다.",
+      "cautionSource": "회복 생물학"
+    },
+    {
+      "id": "post-perm-magic-protein-treatment-efficacy-transglutaminase-crosslinking",
+      "claim": "펌/매직 후 단백질 트리트먼트(특히 트랜스글루타미나제 함유)는 손상된 이황화 결합 구간에서 새로운 아마이드 결합을 형성하여 인장강도와 탄성을 회복시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "효소적 단백질 트리트먼트 복구 기전",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10180764/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "손상 모발",
+        "분류": "단백질 트리트먼트 효과",
+        "시기": "시술 후 1주~4주",
+        "지역": "글로벌"
+      },
+      "caution": "단백질 트리트먼트는 원래의 이황화 결합을 복구하지 않고, 새로운 결합으로 '대체'하는 것이다.",
+      "cautionSource": "복구 메커니즘의 한계"
+    },
+    {
+      "id": "post-perm-magic-deep-conditioning-weekly-schedule-barrier-restoration",
+      "claim": "펌/매직 후 첫 2주는 주 1~2회 심층 트리트먼트, 이후 4주까지 주 1회 유지로 케라틴 손실 보충과 피질층 지질 회복을 돕는 것이 권고된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "미용 전문 가이드 및 사용자 경험",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "펌/매직 후 환자",
+        "분류": "관리 계획",
+        "시기": "시술 후 6주",
+        "지역": "글로벌"
+      },
+      "caution": "과도한 트리트먼트는 경화(brittleness) 위험이 있으므로 6주 이후는 월 1~2회 유지로 조정.",
+      "cautionSource": "과치료 위험"
+    },
+    {
+      "id": "post-perm-magic-avoid-heat-styling-drying-time-air-dry-recommendation",
+      "claim": "펌/매직 후 2주 내 드라이 열(고온 드라이기)과 추가 고열 스타일링(고데기, 아이롱)을 피하고, 찬바람 드라이 또는 자연 건조로 열 손상을 최소화해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "모발 손상 누적 방지 가이드",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "펌/매직 후",
+        "분류": "관리 주의",
+        "시기": "시술 후 2주",
+        "지역": "글로벌"
+      },
+      "caution": "열은 화학 손상과 누적되어 모발을 '부서지기 쉬운' 상태로 만든다.",
+      "cautionSource": "손상 누적 기전"
+    }
+  ]
+}

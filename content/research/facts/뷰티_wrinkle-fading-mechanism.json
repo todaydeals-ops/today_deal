@@ -1,0 +1,99 @@
+{
+  "topic": "미백 성분이 주름 관리에도 쓰이는 이유: 항산화·콜라겐·단백질 당화 메커니즘",
+  "brand": "성분연구소",
+  "article": "wrinkle-fading-mechanism",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "adapinoid-vs-retinol-12-week-wrinkle-efficacy",
+    "retinaldehyde-vs-retinol-bioavailability-10fold",
+    "retinyl-retinoate-vs-retinol-periorbital-wrinkles",
+    "tranexamic-acid-melasma-pih-multiple-routes-efficacy",
+    "azelaic-acid-15-percent-post-inflammatory-hyperpigmentation-pih",
+    "alpha-arbutin-vs-beta-arbutin-10-fold-potency-tyrosinase-inhibition"
+  ],
+  "declined_facts": [
+    {
+      "id": "niacinamide-protein-glycation-collagen-elastin-crosslinking-prevention",
+      "reason": "출처 세탁 — bareskincare.com(화장품 브랜드)에서 가져옴. 1차 문헌(Bare Skin Care)이 아니라 브랜드 블로그."
+    },
+    {
+      "id": "niacinamide-12-week-fine-line-improvement-21-percent-clinical-study",
+      "reason": "출처 세탁 — innerbalance.com(보충제 판매사)에서 가져옴. 실제 연구(Bissett et al., PubMed 18492135)로 교체 필요."
+    },
+    {
+      "id": "whitening-ingredients-overlap-wrinkle-mechanism-antioxidant-collagen-barrier-common",
+      "reason": "출처 없음 — source_url이 null. 종합 기술이므로 declined."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "niacinamide-collagen-stimulation-wrinkle-fine-line-mechanism",
+      "claim": "나이아신아마이드(비타민B3)는 콜라겐 합성을 촉진하여 피부 탄력성과 팽팽함을 증진시키며, 이는 주름과 세선 개선의 기본 메커니즘이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dermatology Times, Cleveland Clinic: Anti-aging effects of niacinamide",
+      "source_url": "https://www.dermatologytimes.com/view/anti-aging-effects-niacinamide",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "주름·세선 개선 관심자",
+        "분류": "항노화 메커니즘",
+        "시기": "장기 사용",
+        "지역": "글로벌"
+      },
+      "caution": "콜라겐 합성 촉진이 임상적으로 측정 가능한 주름 감소로 이어지려면 4주 이상 필요하다.",
+      "cautionSource": "임상 시험 기간"
+    },
+    {
+      "id": "niacinamide-antiglycation-antioxidant-mechanism-nad-precursor",
+      "claim": "나이아신아마이드는 NAD와 NADPH의 전구체로서 항산화 작용을 하며, 이를 통해 단백질 당화를 억제하여 교차결합된 콜라겐과 엘라스틴 분자의 축적을 감소시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MDPI Antioxidants: Mechanistic Insights into the Multiple Functions of Niacinamide",
+      "source_url": "https://www.mdpi.com/2076-3921/13/4/425",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "노화 피부",
+        "분류": "항산화·당화 방지",
+        "시기": "장기",
+        "지역": "글로벌"
+      },
+      "caution": "★당화는 나이·고혈당·고지방식에 의해 가속화되므로, 나이아신아마이드만으로는 완벽한 예방이 불가능하다.",
+      "cautionSource": "대사 스트레스 요인"
+    },
+    {
+      "id": "niacinamide-barrier-strengthening-ceramide-lipid-hydration-fine-line-reduction",
+      "claim": "나이아신아마이드는 세라마이드와 피부 지질 합성을 촉진하여 피부 장벽을 강화하고, 수분 보유력을 높인다. 잘 수분공급된 피부는 세선과 주름이 덜 두드러진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic: Niacinamide for Wrinkles & Fine Lines",
+      "source_url": "https://health.clevelandclinic.org/niacinamide",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "건성·민감 피부",
+        "분류": "보습·장벽 강화",
+        "시기": "2~4주",
+        "지역": "글로벌"
+      },
+      "caution": "장벽 강화 효과는 보습 제품(글리세린, 히알루론산)과의 병용에서 극대화된다.",
+      "cautionSource": "제형 상승작용"
+    },
+    {
+      "id": "niacinamide-12-week-fine-line-improvement-double-blind-rct-bissett",
+      "claim": "50명 여성을 대상으로 한 12주 이중맹검 무작위 대조 시험에서 5% 나이아신아마이드 국소제를 도포한 쪽이 위약 대조쪽보다 세선, 주름, 기미, 피부 톤 개선에서 유의한 효과를 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Topical niacinamide reduces yellowing, wrinkling, red blotchiness, and hyperpigmented spots in aging facial skin",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/18492135/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "성인 여성",
+        "분류": "임상 효과",
+        "시기": "12주",
+        "지역": "글로벌"
+      },
+      "caution": "개별 반응의 편차가 있으며, 개인의 주관적 만족도는 다를 수 있다.",
+      "cautionSource": "임상 설계"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "topic": "비듬 vs 지루성두피염: 임상 진단·증상·치료 차이",
+  "brand": "성분연구소",
+  "article": "예정",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "malassezia-yeast-dandruff-seborrheic-dermatitis-pathogenesis",
+    "ketoconazole-2percent-vs-zinc-pyrithione-1percent-dandruff-efficacy",
+    "ketoconazole-shampoo-meta-analysis-64-trials-8189-patients"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "dandruff-clinical-definition-no-inflammation-scaling-only-asymptomatic",
+      "claim": "비듬(dandruff)은 Malassezia 효모균 이상 증식으로 인한 각질 박리(scaling)만 나타나며, 염증, 가려움, 발적이 없거나 최소한 수준이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "피부과 진단 기준 및 비듬 정의",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/12476017/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "비듬 환자",
+        "분류": "임상 진단",
+        "시기": "진단 시점",
+        "지역": "글로벌"
+      },
+      "caution": "비듬은 미용적 문제이지 질병이 아니라고 간주하는 임상가도 있다.",
+      "cautionSource": "질병 분류 기준"
+    },
+    {
+      "id": "seborrheic-dermatitis-clinical-definition-inflammation-erythema-pruritus",
+      "claim": "지루성피부염(seborrheic dermatitis)은 Malassezia 유도 염증으로 발적(erythema), 가려움(pruritus), 발열감이 동반되며, 비듬보다 심한 증상을 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "지루성피부염 진단 기준 및 병태생리",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/12476017/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "지루성피부염 환자",
+        "분류": "임상 진단",
+        "시기": "진단 시점",
+        "지역": "글로벌"
+      },
+      "caution": "지루성피부염은 만성 염증성 질환이므로 비듬보다 치료 기간이 길고 재발 빈도가 높다.",
+      "cautionSource": "질병 특성"
+    },
+    {
+      "id": "dandruff-seborrheic-spectrum-disease-continuum-malassezia-driven",
+      "claim": "비듬과 지루성피부염은 같은 Malassezia 유도 스펙트럼의 양 끝이며, 개인의 면역 반응·두피 pH·피지 분비가 어느 쪽으로 표현될지 결정한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "비듬·지루성피부염 병인론 및 스펙트럼 개념",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/12476017/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "비듬·지루성피부염 환자",
+        "분류": "병인론",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "한 사람이 시간에 따라 비듬(경증)에서 지루성피부염(중증)으로 악화될 수 있다.",
+      "cautionSource": "질병 경과"
+    },
+    {
+      "id": "dandruff-ketoconazole-efficacy-high-symptomatic-relief-swift",
+      "claim": "비듬에 대한 케토코나졸 2% 샴푸 치료는 4주 후 73% 임상 반응률을 보이며 빠른 증상 완화가 특징이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "케토코나졸 효능 RCT 연구",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/12476017/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "비듬 환자",
+        "분류": "치료 효과",
+        "시기": "4주 사용 후",
+        "지역": "글로벌"
+      },
+      "caution": "반응하지 않은 27%에 대해서는 다른 진균제 또는 피부과 진료 권고.",
+      "cautionSource": "응답률"
+    },
+    {
+      "id": "seborrheic-dermatitis-ketoconazole-sustained-treatment-necessary-relapse-rate-high",
+      "claim": "지루성피부염은 케토코나졸만으로 완치가 어렵고, 치료 중단 후 31%가 재발하며, 장기 유지 치료 또는 정기적 재치료(월 1~2회)가 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "지루성피부염 재발 추적 연구",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/12476017/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "지루성피부염 환자",
+        "분류": "치료 지속성",
+        "시기": "장기 추적",
+        "지역": "글로벌"
+      },
+      "caution": "★지루성피부염은 만성 질환이므로, 독자에게 '완치 대신 관리'라는 기대치 조정이 중요.",
+      "cautionSource": "질병 예후"
+    },
+    {
+      "id": "dandruff-discontinuation-relapse-rate-lower-seborrheic-comparison",
+      "claim": "비듬은 치료 중단 후 재발률이 지루성피부염(31%)보다 낮으며(약 20% 정도), 일부는 자연 완화되거나 간헐적 유지 관리만으로 조절된다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "비듬 관리 경험 및 임상 관찰",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/12476017/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "비듬 환자",
+        "분류": "예후",
+        "시기": "중단 후",
+        "지역": "글로벌"
+      },
+      "caution": "개인차가 크므로 절대적 수치보다는 '경향'으로 이해할 것.",
+      "cautionSource": "개인 변이성"
+    },
+    {
+      "id": "dandruff-vs-seborrheic-diagnostic-key-inflammation-pruritus-severity",
+      "claim": "임상 진단의 핵심은: 비듬은 '각질 + 최소 증상', 지루성피부염은 '각질 + 명확한 발적·가려움·따끔거림'이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "피부과 진단 체크리스트",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/12476017/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "자가진단 또는 의료진 판별",
+        "분류": "진단 기준",
+        "시기": "증상 평가",
+        "지역": "글로벌"
+      },
+      "caution": "★독자가 자가진단할 때 '우리 집 사람은 어디에 해당하나'를 구분하는 가이드로 제시할 것.",
+      "cautionSource": "임상 진단 기준"
+    }
+  ]
+}

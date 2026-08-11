@@ -1,0 +1,100 @@
+{
+  "topic": "민감성 피부의 정의, 기전 및 진정 전략",
+  "brand": "뷰티·성분연구소",
+  "article": "sensitive-skin-calming",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "centella-wound-repair",
+    "propolis-skin-barrier",
+    "skin-barrier-basics"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sensitive-skin-definition-chronic-heightened-response",
+      "claim": "민감성 피부(sensitive skin)는 의학 진단이 아니라 일상 용어로, 화장품이나 외부 자극에 대해 지속적으로 높아진 반응을 보이는 만성 상태를 의미한다. 이는 일시적 반응성(reactive skin, 특정 자극 후 일시적 반응)과 구분된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DermNet NZ: Sensitive Skin - Dermatological Definition",
+      "source_url": "https://dermnetnz.org/topics/sensitive-skin",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "일반 피부",
+        "분류": "정의 및 분류",
+        "시기": "만성",
+        "지역": "글로벌"
+      },
+      "caution": "★\"민감성 피부\" 자체는 질병이 아니므로 의료 처방이 필요 없다. 다만 베이스 장벽 기능 강화와 자극 회피가 관리 원칙이다.",
+      "cautionSource": "dermatological terminology"
+    },
+    {
+      "id": "sensitive-skin-barrier-dysfunction-increased-permeability",
+      "claim": "민감성 피부의 핵심은 장벽 기능 이상(barrier dysfunction)이며, 특징은: ① 각질층 투과성 증가(stratum corneum permeability) ② 경표피수분손실(TEWL) 증가 ③ 외부 자극물질의 표피 내 침투 용이. 이로 인해 정상 농도의 자극물도 반응을 일으킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC/ScienceDirect: A Systemic Pathophysiological View of Sensitive Skin Revealed by Proteomics",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12780307/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "민감성 피부",
+        "분류": "생물물리학적 메커니즘",
+        "시기": "만성",
+        "지역": "글로벤"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "sensitive-skin-irritant-contact-dermatitis-not-allergy",
+      "claim": "민감성 피부에서 일어나는 대부분의 반응은 진정한 알레르기(IgE 매개)가 아니라 자극성 접촉피부염(irritant contact dermatitis)이다. 이는 사전 감작 없이 발생하는 염증 반응이며, 외부 자극물이 표피 투과성 증가로 인해 쉽게 침투할 수 있기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Sensitive Skin Syndrome - Mechanisms and Applications",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12780307/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "민감성 피부",
+        "분류": "피부염 분류",
+        "시기": "반응 시",
+        "지역": "글로벌"
+      },
+      "caution": "★민감성 피부 = 물리적 장벽 이상인 경우가 대부분이므로, 패치 테스트(allergy test)를 먼저 해도 음성일 가능성이 높다. 치료는 회피 + 장벽 복구에 집중해야 한다.",
+      "cautionSource": "임상 진단 경험"
+    },
+    {
+      "id": "sensitive-skin-neurosensory-dysfunction-elevated-neuropeptides",
+      "claim": "민감성 피부는 단순 장벽 이상을 넘어 신경감각 이상(neurosensory dysfunction)도 포함한다. 케라틴세포와 신경 말단의 상호작용이 비정상화되어 통상적 수준의 자극물도 타는 듯함, 따끔거림, 가려움, 통증 같은 신경 증상을 유발한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Sensitive Skin - Neurosensory and Barrier Dysfunction",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12780307/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "민감성 피부, 특히 신경성 증상",
+        "분류": "신경생물학적 메커니즘",
+        "시기": "만성",
+        "지역": "글로벌"
+      },
+      "caution": "★신경 기반 증상(타는 느낌 등)을 가진 민감성 피부는 물리적 장벽 복구만으로 불충분할 수 있으며, 신경 진정 성분(센텔라, 판테놀 등)의 역할이 크다.",
+      "cautionSource": "신경피부의학 연구"
+    },
+    {
+      "id": "sensitive-skin-avoidance-high-concentration-actives",
+      "claim": "민감성 피부의 급성 진정 및 회복 단계에서는 고농도 액티브(레티노이드, 산성 박피제, 고농도 비타민 C, 나이아신아마이드 >5% 등)를 피해야 하며, 대신 저농도 순한 성분(글리세린, 판테놀, 센텔라 추출물, 낮은 pH의 마일드 보습제)으로 장벽 회복을 우선한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dermatology consensus: Sensitive skin management hierarchy",
+      "source_url": "https://dermnetnz.org/topics/sensitive-skin",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "민감성 피부·활성화된 피부",
+        "분류": "성분 회피 목록",
+        "시기": "급성 진정 중",
+        "지역": "글로벌"
+      },
+      "caution": "★\"민감성 피부니까 아무것도 못 쓴다\"는 오해는 피할 것. 순하고 낮은 농도의 성분은 사용 가능하며, 장벽이 회복되면 액티브를 단계적으로 재도입할 수 있다.",
+      "cautionSource": "임상 지침"
+    }
+  ]
+}

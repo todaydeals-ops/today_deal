@@ -3,7 +3,7 @@
 > 자동 생성 파일. 직접 수정하지 마세요. `node scripts/research-index.mjs`로 갱신합니다.
 > **기계적 대조 기준은 이 파일이 아니라 `facts/*.json` 원본입니다.**
 
-생성: 2026-08-10 · 조사 466건 · 팩트 4655개
+생성: 2026-08-11 · 조사 515건 · 팩트 4961개
 
 ## ⚠️ 무결성 경고
 
@@ -29,8 +29,12 @@
 - zinc-pca-sebum-reduction-placebo-controlled-4-week-trial (zinc-pca-sebum.json ↔ 뷰티_zinc-pca-sebum.json)
 - sleep-inertia-definition (수면_power-nap-cognition.json ↔ 수면_sleep-inertia-grogginess.json)
 
-### cautionSource 누락 (caution에 수치·연식·코드가 있는데 근거 없음) (12)
+### cautionSource 누락 (caution에 수치·연식·코드가 있는데 근거 없음) (16)
 
+- fridge-efficiency-purchase-guidance (공통_fridge-energy-efficiency.json)
+- refurbished-inspection-checklist (공통_refurbished-open-box-guide.json)
+- secondhand-appliance-availability-of-as (공통_second-hand-appliance-guide.json)
+- repair-delay-consumer-remedy (공통_warranty-consumer-protection.json)
 - adhd-comorbid-sleep-disorder (수면_adhd-sleep-children.json)
 - adenoid-sleep-apnea-mechanism (수면_kids-snoring-adenoids.json)
 - adenoid-treatment-surgical-indication (수면_kids-snoring-adenoids.json)
@@ -68,7 +72,7 @@
 - weak-sources.json → declined_facts
 - weak-sources.json → disputes
 
-### scope 구조 문제 (층위 혼동 위험) (2362)
+### scope 구조 문제 (층위 혼동 위험) (2808)
 
 - caffeine-phosphodiesterase-inhibitor-vasoconstrictive-mechanism: scope.brand 누락
 - caffeine-phosphodiesterase-inhibitor-vasoconstrictive-mechanism: scope.category 누락
@@ -100,82 +104,18 @@
 - ketoconazole-shampoo-1-percent-vs-2-percent-indication-concentration: scope.category 누락
 - ketoconazole-frequency-every-3-4-days-vs-3-times-per-week: scope.brand 누락
 - ketoconazole-frequency-every-3-4-days-vs-3-times-per-week: scope.category 누락
-- …외 2332건
+- …외 2778건
 
 ### tier/evidence 값 오류 (2)
 
 - kojic-acid-korea-regulatory-status-unconfirmed: evidence="웹검색"
 - azelaic-acid-regulatory-status-korea-uncertain: evidence="웹검색"
 
-### 링크 부패 (407)
-
-- 접속 실패 — https://smart.moneyrules.co.kr/%EC%BD%94%EC%9B%A8%EC%9D%B4-%EB%B9%84%EB%8D%B0-%EA%B3%A0%EC%9E%A5-%EC%9E%90%EA%B0%80%EC%A7%84%EB%8B%A8%EB%B6%80%ED%84%B0-as-%EC%8B%A0%EC%B2%AD-%EB%B0%A9%EB%B2%95-%EC%B4%9D%EC%A0%95%EB%A6%AC/
-      인용 팩트: bidet-power-reset-basic, bidet-water-stoppage-check-steps
-- HTTP 404 — https://product-repair.com/%EC%BD%94%EC%9B%A8%EC%9D%B5-%EC%A0%95%EC%88%98%EA%B8%B0-%EC%98%A8%EC%88%98-%EC%95%88%EB%82%98%EC%98%B4-%EC%9E%90%EA%B0%80%EC%88%98%EB%A6%AC%EB%B0%A9%EB%B2%95/
-      인용 팩트: coway-leak-detection-error-e01
-- 접속 실패 — https://wiz.credtris.com/%EC%9A%B0%EB%A6%AC-%EC%A7%91-%EC%BF%A0%EC%B2%B8-%EB%B0%A5%EC%86%A5-%EC%9E%A0%EA%B8%B8-%EA%B8%B0%EB%8A%A5-%ED%95%B4%EC%A0%9C%ED%95%98%EB%8A%94-%EC%89%AC%EC%9A%B4-%EB%B0%A9%EB%B2%95/
-      인용 팩트: cuchen-initialization-basic-steps
-- HTTP 404 — https://bebeyam.com/%EC%A0%84%EA%B8%B0%EB%B0%A5%EC%86%A5-%EA%B3%A0%EB%AC%B4%ED%8C%A8%ED%82%B9-%EA%B5%90%EC%B2%B8-%EC%BF%A0%EC%B2%B8-cjs-fa1002dv/
-      인용 팩트: cuchen-packing-replacement-alignment
-- HTTP 403 — https://www.dermatologytimes.com/view/high-concentration-glycerin-serves-humectant-attract-water-skin
-      인용 팩트: glycerin-occlusive-pairing-essential-dry-climates, glycerin-occlusive-pairing-essential-dry-climates
-- HTTP 404 — http://www.mygnit.co.kr/bbs/board.php?bo_table=bo_02&wr_id=24
-      인용 팩트: iptime-wps-button-function
-- HTTP 403 — https://prescriberpoint.com/therapies/ketoconazole-a4bb3f4
-      인용 팩트: ketoconazole-frequency-every-3-4-days-vs-3-times-per-week, ketoconazole-frequency-every-3-4-days-vs-3-times-per-week
-- HTTP 403 — http://kr.eguide.lgappstv.com/manual/
-      인용 팩트: lg-tv-self-diagnosis-path-webos
-- 접속 실패 — https://support.nintendo.co.kr/service.do
-      인용 팩트: joycon-drift-free-repair-korea, battery-replacement-official-service-only
-- HTTP 403 — https://r1.community.samsung.com/t5/%EC%86%90%EC%89%AC%EC%9A%B4-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95/%EC%82%BC%EC%84%B1-%EA%B0%A4%EB%9F%AD%EC%8B%9C-%EC%9B%8C%EC%B9%98%EC%99%80-%EA%B0%A4%EB%9F%AD%EC%8B%9C-%EB%B2%84%EC%A6%88-%EC%9E%90%EA%B0%80-%EC%A7%84%EB%8B%A8-%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95/ba-p/21432079
-      인용 팩트: galaxy-wearable-app-diagnostic-support, samsung-members-selfcheck-limited-support
-- HTTP 403 — https://r1.community.samsung.com/t5/%EA%B0%A4%EB%9F%AD%EC%8B%9C-a-j-%EB%85%B8%ED%8A%B8/%ED%86%B5%ED%99%94-%EC%8A%A4%ED%94%BC%EC%BB%A4%EC%97%90-%EB%82%80-%EB%A8%BC%EC%A7%80%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%A0%9C%EA%B1%B0%ED%95%98%EB%82%98%EC%97%AC/td-p/4475317
-      인용 팩트: speaker-dust-debris-removal-method
-- HTTP 403 — https://r1.community.samsung.com/t5/%EC%9B%A8%EC%96%B4%EB%9F%AC%EB%B8%94-%EC%9B%8C%EC%B9%98-%EB%B2%84%EC%A6%88-%EA%B8%B0%ED%83%80/%EC%9B%8C%EC%B9%987-%EB%B0%B0%ED%84%B0%EB%A6%AC-%EA%B4%91%ED%83%88-%ED%95%B4%EA%B2%B0%EB%93%A4-%EB%90%98%EC%85%A8%EB%82%98%EC%9A%94/td-p/28340464
-      인용 팩트: loose-wearing-sensor-detection-loop
-- HTTP 403 — https://r1.community.samsung.com/t5/smartthings/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EC%B2%AD%EC%86%8C-%EC%A4%91-%EB%B0%A4%ED%99%A9%ED%95%98%EB%8A%94-%EC%98%A4%EB%A5%98/td-p/17180323
-      인용 팩트: samsung-jetbot-3d-sensor-auto-calibration, samsung-jetbot-3d-sensor-manual-calibration
-- HTTP 404 — https://www.samsungsvc.co.kr/solution/28337
-      인용 팩트: tv-screen-not-showing-basic-check
-- HTTP 404 — https://www.samsungsvc.co.kr/solution/996881
-      인용 팩트: tv-oneconnect-box-hdmi-verify
-- 접속 실패 — https://www.pocket-lint.com/how-to-fix-ps5-controller-drift/
-      인용 팩트: ps5-dualsense-deep-clean-alcohol
-- HTTP 403 — https://onlinelibrary.wiley.com/doi/full/10.1111/jocd.71034
-      인용 팩트: zinc-pca-sebum-reduction-placebo-controlled-4-week-trial, zinc-pca-sebum-reduction-placebo-controlled-4-week-trial
-- HTTP 404 — https://www.kdnavien.co.kr/product/detail/2119
-      인용 팩트: kyungdong-condensing-boiler-co-safety
-- HTTP 403 — https://www.kingston.com/en/blog/personal-storage/choose-storage-4k
-      인용 팩트: action-cam-recording-failed-sd-card-speed-class, 4k-video-shooting-sd-card-requirement
-- HTTP 404 — https://yellowit.co.kr/it-review/%EA%B3%A0%ED%94%84%EB%A1%9C-%ED%9E%88%EC%96%B4%EB%A1%9C-12-%EB%B0%9C%EC%97%B4-%EB%AC%B8%EC%A0%9C-%EA%B3%A0%ED%94%84%EB%A1%9C-11-%EB%B9%84%EA%B5%90-%EC%84%B1%EB%8A%A5-%EA%B5%AC%EB%A7%A4%ED%95%B4/
-      인용 팩트: action-cam-overheating-shutdown-normal-function
-- HTTP 404 — https://powercam.kr/product/%ED%8C%8C%EC%9B%8C%EC%BA%A0-%EA%B3%A0%ED%94%84%EB%A1%9C-%EA%B9%80%EC%84%9C%EB%A6%BC-%EB%B0%A9%EC%A7%80-%EB%B6%80%EC%86%8D-gopro-new-anti-fog-inserts/488/
-      인용 팩트: action-cam-housing-lens-fog-prevention-inserts
-- HTTP 404 — https://thelife.marketing/2023/03/24/%EA%B3%A0%ED%94%84%EB%A1%9C-%EC%B4%AC%EC%98%81-%ED%8C%80/
-      인용 팩트: action-cam-hypersmooth-stabilization-setting
-- HTTP 404 — https://mojofriends.co.kr/entry/에어프라이어_연기/
-      인용 팩트: air-fryer-smoke-cause-grease-accumulation
-- HTTP 404 — https://bloggerlife.net/air-fryer-basket-coating-care-guide/
-      인용 팩트: air-fryer-basket-coating-protection-method
-- HTTP 404 — https://www.aaro.kr/636/
-      인용 팩트: 24h-operation-electricity-cost
-- HTTP 404 — https://rentre.kr/story/%ED%8F%89%EC%88%98%EB%B3%84-%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0-%EC%9E%98-%EA%B3%A0%EB%A5%B4%EB%8A%94-%EB%B0%A9%EB%B2%95-%EC%A0%81%EC%A0%95-%EC%9A%A9%EB%9F%89-%ED%9A%A8%EA%B3%BC-%EA%B0%9C%EC%88%98-%EA%B3%A0%EB%A5%B4%EA%B8%B0-2025%EB%85%84/
-      인용 팩트: multiple-small-vs-single-large-cost-benefit
-- HTTP 429 — https://www.iqair.com/ko/newsroom/how-often-should-you-change-an-air-purifier-filter
-      인용 팩트: pet-cooking-intensive-filter-replacement-cycle-shortened
-- HTTP 404 — https://ownersmanual.kia.com/docview/webhelp/Kia/16f1ac02-6c37-4173-910f-9c968f6a0540/topics/t01128.html
-      인용 팩트: jumpstart-cable-order
-- HTTP 403 — https://www.reddit.com/r/backpacks/
-      인용 팩트: synthetic-backpack-no-machine-wash, backpack-hand-wash-method, backpack-drying-method, water-repellent-spray-reapply, zipper-waxing-maintenance, backpack-shape-storage, backpack-mold-prevention, backpack-odor-removal, backpack-weight-distribution, laptop-backpack-padding-check, backpack-back-panel-strap-cleaning, backpack-stain-removal, canvas-backpack-washing-caution, leather-bag-water-avoidance
-- HTTP 403 — https://www.sciencedirect.com/science/article/abs/pii/S2352152X22008209
-      인용 팩트: fast-charging-mechanism-lithium-plating-degradation
-- …외 377건
-
 ## 통계
 
-- 확신도: 확실 4308 · 논쟁 240 · 확인실패 107
-- 근거: 공식 3968 · 후기 680 · 실측 5
-- **순차 대안 톤 대상: 791개** (tier=논쟁 또는 evidence=후기 → "먼저 해보고 안 되면" 서술 필수)
+- 확신도: 확실 4591 · 논쟁 259 · 확인실패 111
+- 근거: 공식 4250 · 후기 704 · 실측 5
+- **순차 대안 톤 대상: 817개** (tier=논쟁 또는 evidence=후기 → "먼저 해보고 안 되면" 서술 필수)
 
 ## HP
 
@@ -435,6 +375,22 @@
 | `iptime-specific-device-connection-failure` | 논쟁 🔶 | 후기 | 특정 기기만 iptime 공유기에 연결되지 않을 때는 해당 기기의 무선 설정을 재설정하거나 공유기의 보안 암호화 방식(WPA2/WPA3)이 해당 기기와 호환되는지 확인해야 한다. | iptime / 공유기 / 무선 공유기 전 라인 / 현행 / KR |
 | `iptime-admin-page-gateway-confirmation` | 확실 🔶 | 후기 | iptime 공유기의 관리자 페이지에 접속하지 못할 때는 Windows 명령 프롬프트에서 ipconfig를 실행해 기본 게이트웨이(Default Gateway)를 확인하고, 그 IP 주소로 접속해야 한다. | iptime / 공유기 / 무선 공유기 전 라인 / 현행 / KR |
 
+## 건강기능식품
+
+### 영양제 보관과 변질: 냉장·차광·습도 관리 <sub>2026-08-11 · supplement-storage-preservation</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `supplement-four-degradation-factors` | 확실 | 공식 | USP(미국약전) 표준에 따르면 영양제 성분 안정성에 영향을 미치는 주요 요인은 온도, 습도, 빛, 산소다. | 건강기능식품 / basics / 변질 기전 / 2026 / 미국 |
+| `ideal-supplement-storage-temperature` | 확실 | 공식 | USP 표준상 '실온(controlled room temperature)'은 섭씨 20~25도(화씨 68~77도)로 정의되며, 허용 범위 편차는 섭씨 15~30도(화씨 59~86도)다. 냉장은 섭씨 2~8도(화씨 36~46도), 서늘한 곳은 섭씨 8~15도(화씨 46~59도)로 정의된다. | 건강기능식품 / basics / 온도 관리 / 2026 / 미국 |
+| `temperature-fluctuation-condensation-problem` | 확실 | 공식 | 온도가 추위와 따뜻함을 오갈 때 응결 수증기가 생기며, 특히 비타민 C는 습도 노출로 인한 분해(hydrolysis)가 가속화된다. | 건강기능식품 / basics / 환경 변화 / 2010 / 미국 |
+| `vitamin-c-humidity-degradation` | 확실 | 공식 | 비타민 C는 수용성 비타민 중에서도 습도에 가장 취약하다. PubMed 연구에 따르면 상대습도(RH)와 온도 모두 비타민 안정성에 유의미한 영향을 미치지만, 상대습도가 더 큰 영향을 미친다. | 건강기능식품 / basics / 습도 민감도 / 2010 / 미국 |
+| `probiotic-room-temperature-viability` | 확실 | 공식 | 대부분의 Lactobacillus와 Bifidobacterium 균주는 실온에서 보관할 때 냉장 보관보다 더 빠르게 생존력을 잃는다. 다만 Saccharomyces boulardii와 특정 Bacillus 균주는 실온 안정적이다. | 건강기능식품 / shield / 유산균 보관 / 2015 / 일반 |
+| `fish-oil-omega3-refrigeration-benefit` | 확실 | 공식 | 액체 피시오일과 오메가-3 제품은 열, 빛, 공기에 노출되면 산화되어 영양가가 손실되고 불쾌한 냄새와 맛이 난다. 냉장은 필수는 아니지만 오메가-3 지방산의 산화를 느리게 해준다. | 건강기능식품 / flow / 오메가-3 보관 / 2023 / 일반 |
+| `fish-oil-softgel-capsule-stability` | 확실 | 공식 | 소프트젤 캡슐 형태의 피시오일은 산소 노출로부터 더 잘 보호되어 실온에서도 일반적으로 안정적이다. 다만 냉암소에 보관하면 산화 속도가 더 느려진다. | 건강기능식품 / flow / 제형별 안정성 / 2023 / 일반 |
+| `supplement-label-storage-instruction` | 확실 | 공식 | 영양제의 적절한 보관 방법은 상품 label에 명시되어 있으며, 불명확할 때는 label 지침을 따르는 것이 안전하다. | 건강기능식품 / basics / 사용자 행동 / 2026 / 미국 |
+| `plastic-vs-glass-container` | 확실 | 공식 | 비타민 C는 저온(4도)과 유리 용기 보관이 최고지만, 플라스틱 용기에 담긴 주스는 7일 동안 5.95~23.37%의 비타민 C를 손실한다. | 건강기능식품 / basics / 용기 재질 / 2023 / 일반 |
+
 ## 경동나비엔
 
 ### 경동나비엔 보일러 에러코드와 온수·난방 자가진단 <sub>2026-07-21 · kyungdong-boiler-error</sub>
@@ -571,6 +527,24 @@
 | `outdoor-unit-maintenance-schedule` | 확실 | 공식 | 에어컨 화재를 예방하기 위해 봄철(본격 운전 전)과 여름철 중간 한 번, 최소 연 2회 실외기 먼지를 제거하고 배선을 점검해야 한다. | 공통 / 에어컨 / 전 라인 / 전 연식 / KR |
 | `outdoor-unit-cover-ventilation-required` | 논쟁 🔶 | 후기 | 실외기 커버(차양막)를 사용할 경우 직사광선을 차단하는 효과가 있지만, 반드시 배기 통풍을 확보해야 한다. 통풍이 막히면 냉매 압력이 상승하여 고장이 유발될 수 있다. | 공통 / 에어컨 / 전 라인 / 전 연식 / KR |
 | `outdoor-unit-cover-summer-removal` | 논쟁 🔶 | 후기 | 겨울철 단열 목적의 실외기 커버도 여름철에는 반드시 제거하거나 통풍이 개방된 전용 제품으로 교체해야 한다. | 공통 / 에어컨 / 전 라인 / 전 연식 / KR |
+
+### 가전 설치비, 배송료, 폐가전 수거 비용 기준 <sub>2026-08-11 · appliance-installation-cost</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `standard-installation-definition` | 확실 | 공식 | 표준 설치는 보통 반입·개봉·조립·기본 연결(전원·수도·배수)·포장재 수거까지를 포함하며, 제품군에 따라 범위가 다르다 | 공통 / 냉장고, 세탁기, 에어컨, 전자레인지 등 / 설치형 제품 전반 / 2024- / KR |
+| `additional-installation-cost` | 확실 | 공식 | 벽 고정, 복합 배관 작업, 철거·철거물 운반, 현장 상황에 따른 추가 작업은 표준 설치에 포함되지 않으며 별도 비용이 발생한다 | 공통 / 냉장고, 세탁기, 에어컨 등 / 설치형 제품 / 2024- / KR |
+| `old-appliance-removal-cost` | 확실 | 공식 | 폐가전 수거·운반·처리는 유료 서비스이며, 신제품 설치와 함께 신청 시 할인을 받을 수 있으나, 별도 의뢰 시는 폐기 수수료(통상 5만-20만 원대)가 발생한다 | 공통 / 냉장고, 세탁기, 에어컨 등 무거운 제품 / 폐기 대상 제품 / 2024- / KR |
+| `installation-fee-in-purchase-contract` | 확실 | 공식 | 온라인 구매 시 설치비는 상품 금액에 별도로 청구되거나 배송비에 포함될 수 있으며, 구매 전 세부 항목을 확인해야 나중에 추가 요금이 발생하지 않는다 | 공통 / 가전제품 / 온라인 판매 제품 전반 / 2020- / KR |
+
+### 냉장고·세탁기 용량 선택 기준 및 설치 공간 규격 <sub>2026-08-11 · appliance-size-capacity-guide</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `fridge-capacity-per-person` | 확실 | 공식 | 냉장고 용량 선택 기준은 일반적으로 가구원 1인당 70~100L를 기본으로 하고, 가구원 수에 따라 가산한다. 예를 들어 4인 가구라면 300~400L가 표준이다 | 공통 / 냉장고 / 일반형 냉장고 / 2023- / KR |
+| `washing-machine-capacity-per-person` | 확실 | 공식 | 세탁기 용량 기준은 1인당 1.0~1.2kg로 계산하며, 4인 가구라면 5~6kg, 5인 가구라면 6~7kg이 적정이다 | 공통 / 세탁기 / 드럼·통식 전 세탁기 / 2023- / KR |
+| `installation-space-clearance-fridge` | 확실 | 공식 | 냉장고는 좌우 측면에 각 5cm 이상, 상단에 5cm 이상의 공간이 필요하며, 문을 완전히 열었을 때 막히는 물건이 없어야 한다 | 공통 / 냉장고 / 전 냉장고 모델 / 2022- / KR |
+| `installation-space-clearance-washing` | 확실 | 공식 | 세탁기는 좌우 측면에 각 5cm 이상의 공간이 필요하고, 드럼식은 하단 배수 호스 공간(보통 5cm)을 고려해야 한다 | 공통 / 세탁기 / 드럼·통식 전 제품 / 2022- / KR |
 
 ### AS셀프체크 공통 안전 기준선 (전 브랜드·전 카테고리 인용) <sub>2026-07-20 · AS셀프체크 전편</sub>
 
@@ -867,6 +841,32 @@
 | `vehicle-charging-terminal-dust-cleaning-handy` | 확실 | 공식 | 핸디형 차량용 청소기가 충전되지 않을 때 가장 먼저 확인할 것은 충전 거치대와 본체의 충전 단자이며, 면봉이나 부드러운 천으로 먼지나 이물질을 제거하면 접촉이 회복될 수 있다 | 공통 / 핸디형 무선청소기 / 모든 배터리 착탈식 모델 / 현행 / KR |
 | `handy-battery-temperature-charging` | 확실 | 공식 | 핸디형 청소기 배터리가 충전되지 않을 때 배터리 온도가 너무 낮거나 높으면 충전 보호 회로가 작동하는 경우가 있으므로, 충전 전에 배터리 온도가 정상으로 돌아올 때까지 기다려야 한다 | 공통 / 핸디형 무선청소기 / 리튬이온 배터리 전 모델 / 현행 / KR |
 
+### 차단기 반복 트립의 원인(누전과 과부하) 구분과 대처 <sub>2026-08-11 · circuit-breaker-keeps-tripping-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `circuit-breaker-trip-two-main-causes` | 확실 | 공식 | 차단기 트립의 주요 원인은 누전(누전차단기 작동)과 과부하(계약 용량 초과)이다. | KR |
+| `leakage-current-definition-electric-shock-risk` | 확실 | 공식 | 누전은 정상 회로 외의 경로로 전류가 흐르는 상태로, 감전 위험을 초래한다. | KR |
+| `overload-definition-contract-capacity-exceeded` | 확실 | 공식 | 과부하는 동시에 사용하는 전열 기기의 전력량이 계약 용량을 초과할 때 발생한다. | KR |
+| `circuit-breaker-intermittent-trip-age-corrosion` | 확실 | 공식 | 차단기의 간헐적 트립은 차단기 자체의 노후, 부식, 내부 접점 손상이 원인일 수 있다. | KR |
+| `humidity-rainy-season-leakage-risk-increases` | 확실 | 공식 | 장마철과 우기에 습도가 높아지면 전기 설비의 절연 성능이 저하되어 누전 위험이 증가한다. | KR |
+| `circuit-breaker-reset-first-diagnostic-step` | 확실 | 공식 | 차단기가 내려간 경우, 먼저 차단기를 리셋해보고 다시 내려가는지 관찰하는 것이 1차 진단 방법이다. | KR |
+| `overload-test-reduce-simultaneous-high-power-devices` | 확실 | 공식 | 과부하 의심 시 고소비 기기(헤어드라이기, 전기 히터, 전자레인지 등)의 동시 사용을 줄여본 후 안정성을 확인한다. | KR |
+| `professional-electrician-inspection-required-beyond-self-check` | 확실 | 공식 | 자가점검 후에도 차단기가 계속 내려가면, 전기공사업 면허를 가진 전문가에게 진단을 의뢰해야 한다. 배선 작업은 전기공사업법에 따라 면허 소유자만 시공할 수 있다. | KR |
+
+### 의류관리기(삼성 에어드레서·LG 스타일러) 오류코드 판독 <sub>2026-08-11 · clothing-styler-error-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `samsung-airdresser-official-support-exists` | 확실 | 공식 | 삼성전자 의류관리기(에어드레서)는 공식 서비스 지원 페이지에서 오류 코드별 원인과 해결 방법을 제시하고 있다. | Samsung / KR |
+| `lg-styler-official-support-exists` | 확실 | 공식 | LG전자 의류관리기(스타일러)는 공식 서비스 지원 페이지에서 오류 코드별 원인과 해결 방법을 제시하고 있다. | LG / KR |
+| `styler-error-code-manual-check-first` | 확실 | 공식 | 의류관리기에서 오류 메시지가 표시되면, 사용 설명서에 수록된 오류 코드 표를 먼저 확인하고, 설명서에 없으면 제조사 공식 웹사이트의 '스스로해결' 또는 '고객지원' 섹션에서 찾아야 한다. | KR |
+| `styler-water-tank-full-common-error` | 확실 🔶 | 후기 | 의류관리기의 흔한 오류 중 하나는 내부 물탱크가 가득 찬 상태를 감지하는 것으로, 탱크의 물을 비우고 다시 시작하면 정상 작동한다. | KR |
+| `styler-door-lock-sensor-error` | 확실 🔶 | 후기 | 의류관리기의 도어 잠금 센서 오류는 문이 완전히 닫히지 않았거나 센서에 이물질이 있을 때 발생할 수 있다. | KR |
+| `styler-power-reset-troubleshooting` | 확실 🔶 | 후기 | 의류관리기가 반응하지 않거나 오류가 발생했을 때, 전원을 완전히 차단한 후 5분 경과 후 다시 켜는 파워 리셋이 1차 해결 방법이다. | KR |
+| `styler-specific-error-codes-not-confirmed` | 확인실패 | 공식 | 삼성 에어드레서와 LG 스타일러의 구체적인 오류 코드(E1, E2, E3 등)별 정의와 대처 방법은 공식 문서로 확인해야 한다. | KR |
+| `styler-as-center-contact-when-unresolved` | 확실 | 공식 | 위의 기본 해결 방법을 시도했음에도 오류가 지속되면, 제조사 공식 서비스센터(삼성: 1588-3366, LG: 1588-0808)에 연락하여 기사 방문 수리를 요청해야 한다. | KR |
+
 ### 커피 원두 선택 가이드 — 로스팅·산지·블렌드 스마트가이드 <sub>2026-07-21 · 예정</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -937,6 +937,19 @@
 | `milk-type-foam-suitability` | 확실 | 공식 | 우유거품이 제대로 만들어지려면 일반 우유(전유지방·반유지방), 두유, 락토프리 우유처럼 지방이 충분한 우유를 사용해야 하며, 저지방이나 무지방 우유는 거품이 잘 안 난다. | 공통 / 우유거품 기능 탑재 커피머신 / 전 모델 / 현행 판매 모델 / 글로벌 |
 | `water-tank-filter-replacement-three-months` | 확실 | 공식 | 아쿠아 클린 필터나 정수 필터는 3개월마다 교체해야 하며, 3개월을 초과하여 사용하면 필터가 막혀 물이 제대로 공급되지 않을 수 있다. | 공통 / 물탱크 필터 탑재 커피머신 / 전 모델 / 현행 판매 모델 / KR |
 | `power-reset-unplugging-five-minutes` | 확실 | 공식 | 커피머신에서 다양한 오류가 발생했을 때, 콘센트에서 플러그를 뽑고 5분 이상 대기한 후 재연결하는 전원 리셋이 가장 기본적인 자가 복구 방법이다. | 공통 / 전자동·캡슐 커피머신 / 전 모델 / 현행 판매 모델 / KR |
+
+### 실내 결로 발생 원인과 환기·단열을 통한 예방 <sub>2026-08-11 · condensation-removal-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `condensation-forms-at-dew-point` | 확실 | 공식 | 결로는 실내 공기의 온도가 이슬점(현재 습도에서 포화 상태가 되는 온도)에 도달하면 발생한다. 절대습도는 일정하고 온도가 내려갈수록 상대습도가 증가하여 100%에 도달하면 결로가 맺힌다. | KR |
+| `condensation-main-cause-indoor-outdoor-temp-gap` | 확실 | 공식 | 실내 결로의 주요 원인은 난방기에 실내·외 온도차가 크게 나타나면서 발생한다. | KR |
+| `condensation-humidity-threshold-60percent` | 확실 | 공식 | 실내 습도가 60% 이상일 때 곰팡이가 서식하기 시작하여 결로와 함께 곰팡이 발생으로 이어진다. | KR |
+| `recommended-indoor-humidity-40to60percent` | 확실 | 공식 | 보건복지부와 질병관리청에서 정한 적정 실내 습도는 40~60%이다. | KR |
+| `ventilation-reduces-indoor-humidity` | 확실 | 공식 | 하루 2~3회, 한 번에 10~20분 정도의 환기를 실시하면 실내 습도를 낮춰 결로를 방지할 수 있다. 한국에너지공단에서는 하루 10~30분의 환기를 권장한다. | KR |
+| `ventilation-effectiveness-natural-airflow` | 확실 | 공식 | 자연환기에 의한 환기에서 10분 정도의 환기로 약 3회 정도의 환기횟수가 나타나며, 오염물질이 약 40% 정도 제거된다. | KR |
+| `condensation-prevention-through-proper-insulation` | 확실 | 공식 | 실내와 벽 표면의 온도차를 줄이기 위해 벽체 단열을 개선하면 결로 발생을 감소시킬 수 있다. | KR |
+| `condensation-excessive-humidification-winter-risk` | 확실 | 공식 | 겨울철 과도한 가습으로 인한 결로는 벽지 손상을 초래할 수 있다. | KR |
 
 ### 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 <sub>2026-07-28 · cordless-stick-vacuum-trend</sub>
 
@@ -1339,6 +1352,15 @@
 | `unopen-prerequisite-for-consumption-date` | 확실 | 공식 | 소비기한은 미개봉 상태를 기준으로 설정되며, 개봉한 식품은 유통기한·소비기한과 관계없이 가급적 빨리 섭취해야 한다. | 공통 / 식품 전체 / 모든 품목 / 2023~ / KR |
 | `expiration-not-equals-spoilage` | 확실 | 공식 | 유통기한 경과가 즉시 부패를 의미하지는 않으며, 미개봉 상태에서 보관 조건을 지켰다면 소비기한까지는 안전하게 섭취할 수 있다. | 공통 / 식품 전체 / 모든 품목 / 2023~ / KR |
 
+### 연장보증의 법적 지위와 선택 기준 <sub>2026-08-11 · extended-warranty-value</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `extended-warranty-legal-nature` | 확실 | 공식 | 연장보증은 법정 보증(1-2년)과 별개의 계약으로, 소비자가 추가 비용을 내고 선택하는 보험성 상품이며, 법정 보증이 끝난 후의 손상을 부분적으로 커버하는 구조다 | 공통 / 가전제품 / 전 제품군 / 2020- / KR |
+| `extended-warranty-coverage-exclusions` | 확실 | 공식 | 연장보증은 보통 정상 사용 과정의 자연발생적 고장(노화·마모)은 제외하고, 부주의·외부 충격·소비자 과실에 따른 손상도 보증 대상이 아니다 | 공통 / 가전제품 / 냉장고, 세탁기, 에어컨 등 / 2020- / KR |
+| `extended-warranty-optional-product` | 확실 | 공식 | 연장보증은 법적 의무가 아닌 선택사항이며, 거절해도 제품 구매나 AS에는 영향이 없다 | 공통 / 가전제품 / 전 제품 / 2020- / KR |
+| `extended-warranty-claim-requirements` | 확실 | 공식 | 연장보증 청구 시 구매 영수증, 보증서, 수리 견적 등 증거 서류를 제출해야 하고, 고장이 보증 범위에 해당하는지 보증사의 심사를 거친다 | 공통 / 가전제품 / 연장보증 전 상품 / 2020- / KR |
+
 ### 외장하드·USB 메모리 인식 안 될 때 자가점검 <sub>2026-07-21 · 예정</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -1419,6 +1441,19 @@
 | `fan-death-media-perpetuation-1970s` | 논쟁 🔶 | 공식 | 1970년대 신문들이 미스터리 여름철 사망을 '선풍기 사망'으로 잘못 보도하면서 믿음이 강화되었으나, 정부가 에너지 절감을 위해 의도적으로 조장했다는 음모론은 증거 부족으로 뒷받침되지 않는다. | 공통 / 생활안전 / 도시전설역사 / 1970년대 / KR |
 | `fan-death-unique-korean-myth` | 확실 | 공식 | 선풍기 사망설은 한국에만 존재하는 도시전설이며, 다른 나라에서는 이런 믿음이 거의 없고 과학적으로 입증된 사망 사례가 전 세계 어디에도 없다. | 공통 / 생활안전 / 도시전설 / 현행 / KR |
 | `fan-safety-heatwave-ventilation-matters` | 확실 | 공식 | 폭염에서 선풍기의 안전성은 기온뿐만 아니라 습도, 실내 통풍 조건, 개인의 수분 섭취 여부 등 복합적 요소에 따라 크게 달라지며, 의학적 합의가 완전하지 않다. | 공통 / 생활안전 / 폭염시선풍기 / 현행 / 글로벌 |
+
+### 식품건조기 건조 불량 원인과 최적 사용 조건 <sub>2026-08-11 · food-dehydrator-error-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `food-dehydrator-temperature-range` | 확실 | 공식 | 가정용 식품건조기의 일반적인 작동 온도는 35℃~70℃ 범위이며, 대부분의 야채와 과일은 50℃~65℃에서 건조된다. | KR |
+| `food-dehydrator-drying-time-depends-on-moisture` | 확실 | 공식 | 식품건조기의 건조 시간은 식품의 종류, 두께, 수분 함량에 따라 4시간~24시간까지 다양하다. | KR |
+| `food-dehydrator-even-distribution-prevents-uneven-drying` | 확실 | 공식 | 식품이 건조실 내에 고르게 배치되지 않으면 일부는 과도 건조되고 일부는 덜 건조될 수 있으므로, 식품들 사이에 충분한 공간을 두고 배열해야 한다. | KR |
+| `food-dehydrator-overfilling-reduces-efficiency` | 확실 | 공식 | 건조실을 과도하게 채우면 공기 순환이 방해되어 건조 효율이 저하되고 건조 시간이 길어진다. | KR |
+| `food-dehydrator-auto-shutoff-safety` | 확실 | 공식 | 최신 식품건조기는 자동 종료(타이머) 기능을 갖추고 있어, 설정된 시간 도달 시 자동으로 작동을 멈춘다. | KR |
+| `food-dehydrator-temperature-control-thermostat` | 확실 | 공식 | 식품건조기의 온도 조절은 내장된 온도 센서와 써모스탯에 의해 자동으로 관리되므로, 사용자가 원하는 온도를 설정하면 기기가 온도를 유지한다. | KR |
+| `food-dehydrator-inadequate-air-circulation` | 확실 | 공식 | 건조기 내부 필터나 환기구가 먼지로 막혀 있으면 공기 순환이 방해되어 건조가 불완전할 수 있다. | KR |
+| `food-dehydrator-humidity-sensor-optional` | 확실 | 공식 | 일부 고급형 식품건조기는 습도 센서를 갖추고 있어, 식품의 수분 함량을 감지하여 자동으로 건조를 멈출 수 있다. | KR |
 
 ### 음식 재가열·실온 방치 세균 통념 — 실온 2시간 법칙, 반복재가열 위험 음식, 재가열 온도 기준, 바실러스 세레우스 독소, 국찌개 보관·재가열 <sub>2026-07-28 · food-reheating-safety-factcheck</sub>
 
@@ -1502,6 +1537,29 @@
 | `fridge-newer-larger-models-efficiency` | 확실 🔶 | 후기 | 냉장고는 일반적으로 구형 제품일수록 에너지 효율이 낮고, 최근 제품일수록 효율이 우수하다. 500리터대 구형 냉장고에서 800리터대 신형으로 교체해도 전력소비량이 눈에 띄게 줄어들 수 있다. | 공통 / 냉장고 / KR |
 | `fridge-efficiency-grade-1-vs-5` | 확실 | 공식 | 에너지소비효율 1등급 냉장고(830L 기준)는 연간 약 369.8kWh를 소비하며 연간 비용은 약 59,000원이지만, 5등급은 연간 588.4kWh를 소비하여 연간 비용이 약 94,000원에 달한다. 1등급과 5등급 간 연간 차이는 약 220kWh, 35,000원이다. | 공통 / 냉장고 / 양문형 / 2017 / KR |
 | `fridge-ventilation-gap-importance-for-efficiency` | 확실 🔶 | 후기 | 냉장고 뒤와 양옆의 환기 간격이 부족하면 냉각기의 열을 제대로 배출하지 못해 냉장고 자체가 해당 열을 다시 냉각해야 하므로 에너지 효율이 떨어진다. | 공통 / 냉장고 / KR |
+
+### 냉장고 에너지효율등급과 연간 전기료 산출 <sub>2026-08-11 · fridge-energy-efficiency</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `fridge-energy-grade-system` | 확실 | 공식 | 냉장고 에너지효율등급은 1등급(초록)부터 5등급(빨강)까지 색상으로 구분되며, 1등급이 가장 효율이 높고 5등급으로 갈수록 연간 전기 소비량이 많다 | 공통 / 냉장고 / 일반형 냉장고 전 제품 / 2023- / KR |
+| `fridge-830l-grade-1-annual-kwh` | 확실 | 공식 | 830L급 일반형 냉장고의 1등급 제품은 연간 약 369.8kWh의 전기를 소비한다 | 공통 / 냉장고 / 830L 용량 제품 / 2023- / KR |
+| `fridge-830l-grade-5-annual-kwh` | 확실 | 공식 | 830L급 일반형 냉장고의 5등급 제품은 연간 약 588.4kWh의 전기를 소비한다 | 공통 / 냉장고 / 830L 용량 제품 / 2023- / KR |
+| `energy-consumption-label-info` | 확실 | 공식 | 냉장고의 에너지효율표시 라벨에는 효율등급, 연간소비전력량(kWh), 연간에너지비용(원)이 기재되며, 연간에너지비용이 1년 치 예상 전기료다 | 공통 / 냉장고 및 모든 효율관리 대상 제품 / 라벨 표시 제품 / 2022- / KR |
+| `fridge-efficiency-purchase-guidance` | 논쟁 🔶 | 후기 | 냉장고의 구매가로 에너지 효율을 따져볼 때, 1등급과 5등급 가격 차이가 연간 전기료 절감분(수만 원대)을 기준으로 10년 이상이면 1등급이 합리적이고, 그 미만이면 중급 등급(3-4등급) 선택도 경제적이다 | 공통 / 냉장고 / 가정용 냉장고 / 2022- / KR |
+
+### 동파 배관 안전한 해빙 방법과 위험 행동 <sub>2026-08-11 · frozen-pipe-thawing-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `frozen-pipe-thawing-definition` | 확실 | 공식 | 동파 해빙은 동파된 배관 내의 얼음을 따뜻한 열로 녹여 배관을 복구하는 응급 조치다. | KR |
+| `frozen-pipe-gradual-warming-safe-method` | 확실 | 공식 | 동파된 배관의 안전한 해빙은 미지근한 물(따뜻하지만 뜨겁지 않은)을 서서히 부어 온도를 점진적으로 올리는 방식이다. | KR |
+| `frozen-pipe-direct-flame-prohibited-fire-hazard` | 확실 | 공식 | 라이터, 토치, 헤어드라이기 등의 직화나 고온 열원으로 배관을 직접 가열하는 것은 화재와 배관 손상을 초래하므로 절대 금지다. | KR |
+| `frozen-pipe-rapid-heating-thermal-shock-damage` | 확인실패 | 공식 | 급격한 온도 변화로 인한 열 충격은 플라스틱 배관을 휘거나 터지게 할 수 있으므로 점진적 가열이 필수다. | KR |
+| `frozen-pipe-prevention-insulation-heating` | 확실 | 공식 | 동파 방지의 기본은 난방 유지와 배관 단열이다. 장시간 외출 시 보일러를 최저 온도로 유지하고 배관에 단열재를 감싸면 효과적이다. | KR |
+| `frozen-pipe-exposed-pipes-water-drip-prevention` | 확실 | 공식 | 외부에 노출된 수도관에서 물을 서서히 떨어지게 하면(물 흐름이 동파되기 어려우므로) 동파를 예방할 수 있다. | KR |
+| `frozen-pipe-professional-service-severe-cases` | 확실 | 공식 | 실내 배관뿐 아니라 보일러나 외부 연결 배관의 동파·해빙은 전문 설비업체에 의뢰하는 것이 안전하다. | KR |
+| `frozen-pipe-contact-local-water-authority` | 확실 | 공식 | 동파로 인한 수도관 파열이나 복구 불가능한 경우, 지역 상수도사업본부(서울 아리수본부 등)에 신고하면 긴급 대응을 받을 수 있다. | 서울 및 전국 |
 
 ### 게임 컨트롤러(엑스박스·듀얼센스·닌텐도) PC 연결·버튼·진동·배터리 자가점검 <sub>2026-07-21 · 예정</sub>
 
@@ -2195,6 +2253,18 @@
 | `camera-viewfinder-eye-sensor-lcd-off` | 확실 | 공식 | 카메라 뷰파인더 근처의 접안감지 센서(eye sensor)가 감지되면 LCD를 자동으로 끄는 기능이 있어, 뷰파인더를 덮거나 눈으로 가까이 가면 LCD 화면이 검은색으로 변한다. | 공통 / 카메라 / 미러리스·DSLR / 2008~현행 / 글로벌 |
 | `camera-condensation-rapid-temperature-change` | 확실 | 공식 | 추운 환경에서 따뜻한 실내로 들어오거나 뜨거운 물의 증기에 노출되면 카메라 렌즈와 미러 내부에 결로(응결)가 발생할 수 있다. 급격한 온도 변화가 주된 원인이며, 렌즈를 서서히 건조시키면 대부분 자동으로 해결된다. | 공통 / 카메라 / 미러리스·DSLR / 전체 / 글로벌 |
 
+### 실내 곰팡이 발생 조건과 안전한 제거 및 재발 방지 <sub>2026-08-11 · mold-removal-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `mold-growth-humidity-above-60percent` | 확실 | 공식 | 실내 습도가 60% 이상일 때 곰팡이가 서식하기 시작하고, 습도가 높을수록 곰팡이 번식이 빨라진다. | KR |
+| `mold-dark-damp-warm-environments` | 확실 | 공식 | 곰팡이는 따뜻하고 어두우며 습한 환경에서 빠르게 성장한다. 욕실, 주방, 세탁실 등이 곰팡이 발생 고위험 지역이다. | KR |
+| `mold-bleach-ventilation-safe-removal` | 확실 | 공식 | 곰팡이 제거 시 염소 계열 표백제(락스)를 사용하되, 반드시 충분한 환기를 하면서 사용해야 한다. | KR |
+| `bleach-acid-mixing-prohibited-toxic-chlorine-gas` | 확실 | 공식 | 락스와 산성 세제(아메스, 식초, 화장실 클리너 등)를 혼합하면 독성 염소 가스가 발생하여 심각한 호흡 곤란과 중독을 초래할 수 있으므로 절대 금지다. | KR |
+| `mold-prevention-humidity-below-50percent` | 확실 | 공식 | 곰팡이 발생을 예방하려면 실내 습도를 50% 이하로 유지하는 것이 권장된다. | KR |
+| `mold-prevention-ventilation-frequency` | 확실 | 공식 | 곰팡이 재발 방지를 위해 하루 2~3회, 한 번에 10~20분 정도의 정기적 환기가 필요하다. | KR |
+| `mold-remove-affected-materials-severe-cases` | 확실 | 공식 | 곰팡이가 심각하게 발생한 벽지나 욕실 재료는 제거하고 교체해야 한다. | KR |
+
 ### 모니터암·거치대 선택 가이드 <sub>2026-07-21 · 예정</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -2378,6 +2448,19 @@
 | `stainless-steel-durability` | 확실 🔶 | 후기 | 스테인리스 팬은 테프론이나 세라믹 대비 내구성이 매우 좋으며, 조리 환경에 따라 반영구적으로 사용 가능하다. | 공통 / 조리용품 / 전체 / 전체 |
 | `enamel-cookware-safety` | 확실 🔶 | 후기 | 법랑(에나멜) 코팅 팬은 가장 안전한 조리 도구로, 유해 물질 위험이 최소화되고 수십 년 사용이 가능하다. | 공통 / 조리용품 / 전체 / 전체 |
 
+### 콘센트·멀티탭 발열의 화재 위험과 즉시 조치 <sub>2026-08-11 · outlet-overheating-safety-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `outlet-overheating-fire-warning-sign` | 확실 | 공식 | 콘센트나 멀티탭이 뜨거워지거나 발열하는 것은 화재의 전조 신호이므로 즉시 제거해야 한다. | KR |
+| `outlet-discoloration-char-mark-danger` | 확실 | 공식 | 콘센트가 검게 탄 자국이나 변색된 흔적을 보이면 과거에 아크 방전이나 합선이 발생한 증거로, 반드시 교체해야 한다. | KR |
+| `multitap-plug-overload-heat` | 확실 | 공식 | 멀티탭에 여러 고소비 전열 기기(드라이기, 전자레인지, 토스터, 히터 등)를 동시에 연결하면 멀티탭의 콘센트 금속부가 과열되어 발열할 수 있다. | KR |
+| `power-cord-damage-heating-risk` | 확실 | 공식 | 전원 케이블이 손상되거나 벗겨진 상태로 콘센트에 꽂혀 있으면, 유출된 전기가 금속 부분을 과열시켜 화재를 유발할 수 있다. | KR |
+| `outlet-overheating-immediate-action` | 확실 | 공식 | 콘센트나 멀티탭이 발열 상태에 있을 때, 즉시 전원을 차단하고 해당 제품을 제거한 후 전문가의 점검을 받거나 교체해야 한다. | KR |
+| `multitap-safe-connection-limit` | 확실 | 공식 | 멀티탭에 동시에 연결할 수 있는 고소비 기기는 2개 이하로 제한하는 것이 안전하다. 특히 전열 기기(드라이기, 히터, 전자레인지)는 한 번에 1~2개만 사용해야 한다. | KR |
+| `outlet-moisture-condensation-risk` | 확실 | 공식 | 욕실이나 주방 등 습한 장소의 콘센트 주변에 습기나 수증기가 많으면, 절연 성능이 저하되어 누전이나 합선 위험이 높아진다. | KR |
+| `licensed-electrician-outlet-replacement` | 확실 | 공식 | 손상되거나 과열된 콘센트의 교체는 전기공사업 면허가 있는 전문가에게 의뢰해야 한다. | KR |
+
 ### 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 <sub>2026-07-21 · 예정</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -2556,6 +2639,19 @@
 | `passthrough-charging-bms-protection-layers` | 확실 | 공식 | 고품질 포터블 파워스테이션의 패스스루 충전 안전 기능은 지능형 전원 관리 IC(집적회로)로 전력 단락 보호, 과전류 보호, 과전압 보호, 과열 보호를 제공하고, 정교한 BMS가 모든 작동 매개변수를 지속적으로 모니터링하여 과전압, 과전류, 과열을 방지한다. | 공통 / 포터블 파워스테이션 / 패스스루 충전 지원 모델 / 2020~ / 글로벌 |
 | `lifepo4-cycle-life-advantage` | 확실 | 공식 | LiFePO4 배터리를 탑재한 프리미엄 포터블 파워스테이션은 3,000회 이상의 충방전 사이클에서 안전성과 열 안정성을 우선시한다. | 공통 / 포터블 파워스테이션 / LiFePO4 탑재 모델 / 2020~ / 글로벌 |
 
+### 정전 복구 후 안전한 가전 재시작 절차와 식품 안전 <sub>2026-08-11 · power-restoration-after-outage-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `power-restoration-wait-before-restart` | 확실 | 공식 | 정전이 해제되어 전원이 복구되면, 모든 가전을 즉시 켜지 말고 1~2분 기다린 후 단계적으로 재시작해야 한다. | KR |
+| `power-restoration-restart-order` | 확실 | 공식 | 정전 복구 후 가전 재시작 순서는 냉장고 → 냉동실 → 세탁기 → 에어컨·히터 → 기타 가전 순이다. | KR |
+| `refrigerator-power-outage-food-safety` | 확실 | 공식 | 냉장고가 정전되었을 때, 냉장고 문을 닫은 상태에서 냉장고 내부의 온도는 4시간 이내에 10℃ 이상 올라가지 않는다. | KR/International |
+| `food-safety-after-power-outage-4-hour-rule` | 확실 | 공식 | 정전 중 냉장고 문을 닫은 상태로 유지했다면, 4시간 이내 전원이 복구된 경우 냉장 식품(육류, 생선, 계란, 우유 등)은 안전하게 보관할 수 있다. | KR |
+| `cooked-food-power-outage-2-hour-rule` | 확실 | 공식 | 실온(20~25℃)에서 보관된 조리 음식은 정전 중 2시간 이상 실온에 방치되었다면 버리는 것이 안전하다. | KR |
+| `freezer-power-outage-extended-duration` | 확실 | 공식 | 냉동실에 보관된 음식은 냉동실 문을 닫은 상태에서 정전이 24~48시간 지속되면 안전성을 판단하기 어려우므로, 냉동실 온도를 측정하거나 전문가 조언을 구해야 한다. | KR |
+| `food-safety-visual-inspection` | 확실 | 공식 | 정전 복구 후 음식의 색상, 냄새, 상태를 시각적으로 확인하되, 의심스럽다면 버리는 것이 안전하다. | KR |
+| `power-restoration-appliance-damage-inspection` | 확실 | 공식 | 전원이 복구된 후 각 가전제품의 콘센트와 전원 케이블에 이상이 없는지 확인하고, 이상한 냄새나 화상을 입은 흔적이 없는지 점검해야 한다. | KR |
+
 ### 보조배터리(파워뱅크) 용량·출력·안전 기준 및 비행기 반입 규정 <sub>2026-07-21 · powerbank-guide</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -2649,6 +2745,26 @@
 | `cooked-egg-refrigeration-timing` | 확실 | 공식 | 조리된 계란(삶은 계란 포함)은 얼음물에 넣어 빨리 식힌 후 조리 완료 후 2시간 이내에 냉장고에 넣어야 한다. | 공통 / 식품 / 조리 계란 / 현행 / KR |
 | `egg-expired-consumption-date-unsafe` | 확실 | 공식 | 냉장 보관 계란이라도 유통기한(소비기한)을 넘기면 섭취하지 않는 것이 안전하다. | 공통 / 식품 / 생계란 / 현행 / KR |
 
+### 리퍼(재생제품)와 오픈박스의 보증 및 확인 기준 <sub>2026-08-11 · refurbished-open-box-guide</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `refurbished-definition` | 확실 | 공식 | 리퍼 제품(재생제품)은 반품·불량 또는 전시용으로 사용된 제품을 수리·점검해 재판매하는 상품으로, 신제품 보증 기간보다 단축된 보증을 받는다 | 공통 / 가전제품 / 리퍼 제품 전반 / 2020- / KR |
+| `open-box-definition` | 확실 | 공식 | 오픈박스 제품은 상자는 개봉되었으나 미사용하거나 분시 진열된 후 반환된 제품으로, 판매처·제조사에 따라 보증 여부가 달라질 수 있다 | 공통 / 가전제품 / 오픈박스 제품 / 2020- / KR |
+| `refurbished-warranty-shortened` | 확실 | 공식 | 리퍼 제품의 보증기간은 일반적으로 신제품의 50%~90% 수준으로 단축되며(예: 신제품 2년 → 리퍼 1년), 부품보유기간도 함께 단축된다 | 공통 / 가전제품 / 리퍼 제품 / 2023- / KR |
+| `refurbished-product-marking` | 확실 | 공식 | 리퍼 제품은 상품명에 '리퍼', '재생', '전시품', 'Open Box' 등 명시되어야 하며, 상세페이지에 원인·점검 내용·보증 기간이 기재되어야 한다 | 공통 / 가전제품 / 리퍼/오픈박스 판매 제품 / 2020- / KR |
+| `refurbished-inspection-checklist` | 확실 🔶 | 후기 | 리퍼 제품 구매 시 외형 흠집·심음 이상·작동 테스트·배송 시 운송 손상 여부를 현장에서 확인하고, 반품 기한 내에 문제가 없는지 재점검해야 한다 | 공통 / 가전제품 / 리퍼 제품 구매자 / 2020- / KR |
+
+### 가전 렌탈과 구매의 비용 구조 및 법적 기준 <sub>2026-08-11 · rental-vs-purchase</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `rental-mandatory-period-standard` | 확실 | 공식 | 가전 렌탈의 의무사용기간은 보통 3년, 5년 등으로 정해지며, 이 기간 안에 중도해지하면 위약금이 발생한다 | 공통 / 냉장고, 세탁기, 에어컨, 정수기 등 렌탈 상품 / 렌탈 제품 전반 / 2023- / KR |
+| `rental-penalty-structure` | 확실 | 공식 | 렌탈 중도해지 시 위약금은 보통 잔여 기본요금의 30% 수준이나, 판매처·상품군에 따라 다르며, 설치비·철거비·손상비 등이 추가로 청구될 수 있다 | 공통 / 렌탈 제품 / 의무기간 미충족 중도해지 / 2023- / KR |
+| `rental-vs-purchase-total-cost` | 확실 🔶 | 후기 | 렌탈과 구매의 총비용 비교는 렌탈 월요금×기간 + 위약금(예상) vs 구매가 + 설치비 + 5-10년 전기료로 계산해야 하며, 제품 내구성·관리 서비스 선호도에 따라 선택이 달라진다 | 공통 / 냉장고, 세탁기, 정수기, 에어컨 등 / 렌탈 vs 구매 비교 대상 제품 / 2023- / KR |
+| `rental-maintenance-inclusion` | 확실 | 공식 | 렌탈은 보통 정기점검·필터 교체·고장 수리를 포함하고 있으며, 이는 구매 후 서비스와 차별화되는 장점이다 | 공통 / 정수기, 에어컨, 공기청정기 등 관리형 제품 / 렌탈 서비스 포함 항목 / 2023- / KR |
+| `rental-ownership-transfer-timing` | 확실 | 공식 | 렌탈 제품의 소유권 이전 시점은 총 렌탈 기간(보통 5-6년)을 채울 때이며, 의무사용기간 완료 후에도 소유권은 렌탈사에 있을 수 있다 | 공통 / 렌탈 제품 / 소유권 이전 조건 / 2023- / KR |
+
 ### 공유기 펌웨어 업그레이드·초기화·설정 백업 가이드 <sub>2026-08-10 · router-firmware-reset-guide</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -2710,6 +2826,16 @@
 | `microsd-price-advantage` | 확실 🔶 | 후기 | 동일 용량의 SD 카드와 microSD를 비교하면 microSD가 표준 SD 카드보다 약 3분의 1 가격대로 더 저렴하다. | 공통 / 저장매체 / microSD카드 vs SD카드 / 전체 / 글로벌 |
 | `sd-card-format-choice-exfat-recommended` | 확실 | 공식 | Windows와 Mac을 함께 사용할 계획이면 SD카드를 exFAT으로 포맷해야 하며, NTFS는 Mac에서 기본적으로 읽기만 가능하고 쓰기가 불가능하다. | 공통 / 저장매체 / SD카드·외장하드 / 전체 / 글로벌 |
 | `sd-card-capacity-recommendation-content` | 확실 🔶 | 후기 | 스마트폰, 태블릿 용도에는 64GB 이상의 microSD, 카메라·드론 4K 촬영에는 64GB 이상의 SD 카드, 블랙박스에는 32GB 이상의 microSD를 권장한다. | 공통 / 저장매체 / SD카드·microSD / 전체 / KR |
+
+### 중고 가전과 해외직구 구매 시 주의사항 <sub>2026-08-11 · second-hand-appliance-guide</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `overseas-purchase-tariff-exemption-limit` | 확실 | 공식 | 해외직구 가전제품은 구매가 + 배송료 + 보험을 합산한 금액이 USD 150 이하(미국산 제품은 USD 200 이하)면 관세가 면제되며, 초과하면 관세와 부가세가 부과된다 | 공통 / 해외직구 가전제품 / 소액 배송 물품 / 2024- / KR |
+| `overseas-appliance-kc-certification` | 확실 | 공식 | 전기용품 및 생활용품 안전관리법상 안전관리대상 제품(예: 냉장고, 세탁기, 전자레인지)을 해외에서 구매할 때는 국내 KC 인증 또는 동등 안전 기준 충족 여부를 반드시 확인해야 하며, 미충족 제품은 국내 판매·사용이 불법이다 | 공통 / 전기용품 안전관리대상 가전 / 해외 구매 제품 / 2023- / KR |
+| `overseas-appliance-voltage-compatibility` | 확실 | 공식 | 해외 구매 가전제품은 국가별로 전압(110V, 220V, 230V 등)과 주파수(50Hz, 60Hz)가 다르므로, 한국 전압(220V, 60Hz)과 호환되는 제품인지 반드시 확인해야 한다. 호환되지 않으면 변압기로도 해결이 안 되거나 별도 비용이 발생한다 | 공통 / 해외 구매 가전제품 전반 / 전원 연결 제품 / 2023- / KR |
+| `secondhand-appliance-warranty-void` | 확실 | 공식 | 중고 가전제품은 제조사의 법정 보증(1-2년)이 원 소유자에게만 적용되는 경우가 많으며, 구매자 입장에서는 보증 기간이 단축되거나 무효가 될 수 있다 | 공통 / 중고 가전제품 / 개인 중고 거래 제품 / 2023- / KR |
+| `secondhand-appliance-availability-of-as` | 확실 | 공식 | 중고 가전제품의 공식 AS 가능 여부는 제조사별·모델별로 다르며, 단종 제품은 부품 공급 중단으로 AS가 불가능할 수 있다 | 공통 / 중고 가전제품 / 단종·구형 모델 / 2023- / KR |
 
 ### IPTV 셋톱박스 화면 안 나옴·먹통·리모컨 안 될 때 자가점검 <sub>2026-07-21 · settop-box-selfcheck</sub>
 
@@ -3307,6 +3433,28 @@
 | `treadmill-hinge-looseness` | 확인실패 🔶 | 후기 | 접이식 러닝머신의 힌지(연결부)가 헐거워지면 기계 사용 중 움직임이 생기고 소음이 난다. 육각렌치로 힌지 부분의 나사를 천천히 조인다. 너무 세게 조이면 힌지가 손상될 수 있으니 적당한 정도로 조인다 | 공통 / 워킹패드·러닝머신 / 접이식 모델 / 전 연식 / KR |
 | `treadmill-weight-limit-standard` | 확실 | 공식 | 러닝머신의 최대 하중은 모델마다 다르며, 일반적으로 90kg~130kg 범위다. 제품 구매 전 스펙을 반드시 확인하고, 사용자 체중이 최대 하중을 초과하면 벨트·롤러·모터가 손상되고 안전 문제가 발생할 수 있다 | 공통 / 워킹패드·러닝머신 / 전 라인 / 전 연식 / KR |
 | `treadmill-continuous-use-time-limit` | 확실 | 공식 | 러닝머신의 연속사용시간은 모델마다 다르며, 일반적으로 1시간 이상 연속 사용을 권장하지 않는 제품이 많다. 사용설명서에 명시된 연속사용시간을 초과하면 모터 과열이나 벨트 손상이 발생할 수 있다. 여러 사용자가 교대로 사용하는 경우 각 사용자의 사용 시간을 고려해 연속사용시간이 긴 모델을 선택하는 것이 좋다 | 공통 / 워킹패드·러닝머신 / 전 라인 / 전 연식 / KR |
+
+### 월패드(비디오폰) 먹통·오작동 자가진단과 대처 <sub>2026-08-11 · wall-pad-error-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `wall-pad-frozen-screen-power-reset` | 확실 | 공식 | 월패드 화면이 멈추거나 반응하지 않을 때, 먼저 기기 뒤쪽의 전원 스위치를 OFF로 전환한 후 10초 기다렸다가 다시 ON으로 켜는 파워 리셋을 시도한다. | KR |
+| `wall-pad-power-circuit-breaker-check` | 확실 | 공식 | 월패드가 작동하지 않으면, 분전반의 월패드 전용 차단기가 내려가 있지 않은지 확인한다. 차단기가 OFF 상태라면 ON으로 올려준다. | KR |
+| `wall-pad-no-signal-rebooting-time` | 확실 | 공식 | 월패드 재부팅 중에는 화면이 검게 나타나면서 '로딩 중' 또는 초기화 메시지가 표시되며, 정상적으로 재부팅되는 데 보통 2~5분이 소요된다. | KR |
+| `wall-pad-management-office-notification-criteria` | 확실 | 공식 | 월패드 파워 리셋과 차단기 확인 후에도 작동하지 않으면, 관리사무소에 즉시 신고해야 한다. 특히 방문객 초인종 호출이 안 되는 상태는 보안 문제이므로 우선순위가 높다. | KR |
+| `wall-pad-network-connection-check` | 확실 🔶 | 후기 | 일부 고급형 월패드는 인터넷 연결이 필요할 수 있으므로, 와이파이나 홈 네트워크 상태를 확인하고 필요시 라우터를 리셋해본다. | KR |
+| `wall-pad-firmware-update-check` | 확실 | 공식 | 월패드에 펌웨어 업데이트 알림이 있으면, 관리사무소의 동의 하에 업데이트를 진행해야 한다. 업데이트 중 전원을 차단하면 안 된다. | KR |
+| `wall-pad-security-privacy-access-control` | 확실 | 공식 | 월패드는 방문객 초인종, 배송 기록 등 보안 정보를 저장하고 있으므로, 공유 기기 사용 후에는 로그아웃 또는 기록 삭제를 고려해야 한다. | KR |
+| `wall-pad-hardware-failure-warranty` | 확실 | 공식 | 월패드 화면 손상, 버튼 고장, 음성 수신 불가 등의 하드웨어 문제는 보증 기간 내라면 무상 교체 대상이 될 수 있으므로, 관리사무소를 통해 제조사에 신청한다. | KR |
+
+### 제조사 보증기간과 소비자분쟁해결기준의 관계 <sub>2026-08-11 · warranty-consumer-protection</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `warranty-period-ftc-standard` | 확실 | 공식 | 공정거래위원회 소비자분쟁해결기준에서 정한 보증기간은 제조사가 품질보증서에 기재한 기간이 이보다 짧을 경우의 최소 보장선이며, 제품별로 상이하다 | 공통 / 가전제품 / 냉장고, 세탁기, 에어컨 등 / 2023- / KR |
+| `warranty-calculation-from-purchase` | 확실 | 공식 | 품질보증기간은 소비자가 물품을 구입하거나 제공받은 날부터 산정한다 | 공통 / 가전제품 / 전 제품 / 2023- / KR |
+| `parts-replacement-warranty` | 확실 | 공식 | 유상으로 수리한 부품에 대해서는 수리 완료일부터 12개월 내에 정상 사용 과정에서 동일 부품이 재고장될 경우 무상수리한다 | 공통 / 가전제품 / 전 제품 / 2023- / KR |
+| `repair-delay-consumer-remedy` | 확실 | 공식 | 수리는 지체없이 진행되어야 하며, 소비자 의뢰 후 1개월이 경과해도 수리 완료 물품을 인도하지 못할 경우, 보증기간 내라면 동종 물품 교환 또는 불가능 시 환금한다 | 공통 / 가전제품 / 전 제품 / 2023- / KR |
 
 ### 구강세정기·워터픽 자가점검 — 물 안 나옴·약함·충전 불량·노즐 막힘·물새는 증상·잇몸 출혈·관리 <sub>2026-07-21 · 예정</sub>
 
@@ -4263,6 +4411,18 @@ _(팩트 없음)_
 | `vitamin-d-adequate-intake-recommendation-korea-2010` | 확실 | 공식 | 2010년 한국인 비타민D 적정섭취량: 성인 여성 5μg/일, 임산부 10μg/일, 65세 이상 노인 15μg/일. | 공통 / 영양제 / 한국 비타민D 적정섭취량 / 2010 / KR |
 | `vitamin-d-upper-limit-intake-tolerable-level` | 확실 | 공식 | 비타민D 상한섭취량(UL, Tolerable Upper Intake Level)은 하루 4,000IU(100μg)이다. 이 이상 장기 복용 시 혈중 칼슘 상승, 신장 손상, 혈관 석회화 위험이 있다. | 공통 / 안전성 / 비타민D 상한섭취량 / 전 연식 / 글로벌 |
 
+### 비타민D 부족이 보내는 신호: 근육·뼈·면역·신경학적 증상 <sub>2026-08-11 · vitamin-d-deficiency-signs</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `vitamin-d-deficiency-muscle-weakness-pain-fatigue-bone-pain` | 확실 | 공식 | 비타민D 결핍의 주요 신증상은 근육 약화, 근육통, 뼈 통증, 극심한 피로이며, 휴식으로 개선되지 않는 만성 피로감이 특징이다. |  |
+| `vitamin-d-deficiency-mood-depression-anxiety-mental-health` | 확실 | 공식 | 비타민D 결핍은 기분 변화, 우울증, 불안감과 연관되며, 신경전달물질(세로토닌, 도파민)의 조절에 비타민D가 역할을 한다. |  |
+| `vitamin-d-deficiency-children-rickets-bone-deformity-growth-abnormality` | 확실 | 공식 | 소아에서 심각한 비타민D 결핍은 구루병(rickets)을 초래하며, 뼈가 휘거나 구부러지는 골격 변형, 성장 이상을 나타낸다. |  |
+| `vitamin-d-deficiency-bone-health-calcium-phosphorus-absorption-osteoporosis-risk` | 확실 | 공식 | 비타민D는 칼슘과 인의 소장 흡수를 조절하므로, 결핍 시 혈중 칼슘 저하로 이어지고, 장기적 결핍은 골다공증과 골절 위험을 증가시킨다. |  |
+| `vitamin-d-deficiency-immune-function-impairment-infection-risk-autoimmune` | 확실 | 공식 | 비타민D는 선천면역과 적응면역의 조절에 관여하므로, 결핍 시 감염 위험 증가와 동시에 자가면역질환 발생 위험도 증가한다. |  |
+| `vitamin-d-chronic-deficiency-cardiovascular-cancer-risk-association` | 논쟁 🔶 | 공식 | 만성 비타민D 결핍은 심혈관질환, 암 위험 증가와 연관되어 있으나, 인과관계는 아직 완전히 확립되지 않았다. |  |
+| `vitamin-d-deficiency-diagnosis-25-hydroxyvitamin-d-blood-test-30ng-ml-threshold` | 확실 | 공식 | 비타민D 결핍 진단은 혈중 25-하이드록시비타민D [25(OH)D] 농도로 하며, 30 ng/mL 이상이 충분, 20~29 ng/mL이 부족, 20 ng/mL 미만이 결핍으로 분류된다. |  |
+
 ### 비타민K2의 뼈 건강 기전과 항응고제 금기 <sub>2026-08-04 · vitamin-k2-bone</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4557,6 +4717,16 @@ _(팩트 없음)_
 | `ceramide-only-15-percent-improvement-cholesterol-only-10-percent-oil-only-short-term` | 확실 | 공식 | 개별 성분만 사용 시 효과는 제한적이다: 세라마이드만 사용하면 약 15% 개선, 콜레스테롤만 사용하면 약 10%, 오일만 사용하면 단기 효과만 나타난다. |  |
 | `ceramide-cholesterol-fatty-acid-lamellar-structure-formation-mechanism` | 확실 | 공식 | 세라마이드, 콜레스테롤, 지방산이 모두 함께 있을 때만 각질세포(corneocyte) 사이의 조밀한 라멜라 구조(lamellae)가 형성되어 진정한 장벽 기능 복구가 가능하다. |  |
 
+### 수영장 염소 노출에 따른 피부·모발 손상 기전 및 회복 <sub>2026-08-11 · chlorine-damage-recovery</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `chlorine-hypochlorous-acid-oxidative-stress-mechanism` | 확실 | 공식 | 수영장 염소는 차아염산(hypochlorous acid, HClO)과 차아염소산염(hypochlorite, ClO⁻) 형태로 존재하며, 이들은 피부 세포의 분자에서 전자를 빼앗아 강력한 산화 스트레스를 유발한다. 이 산화 반응은 피부 단백질과 지질의 구조를 손상시킨다. |  |
+| `chlorine-protein-damage-collagen-elastin-keratin` | 확실 | 공식 | 염소의 산화 반응은 피부의 구조 단백질을 손상시킨다: ① 콜라겐과 엘라스틴의 분해로 수분 보유력 감소 ② 케라틴 산화로 모발 큐티클의 거칠기 증가 ③ 모발 단백질 간 결합 약화로 끊김과 갈라짐 유발. 이는 피부 탄력 저하와 모발 손상의 주요 원인이다. |  |
+| `chlorine-lipid-degradation-barrier-dysfunction` | 확실 | 공식 | 염소는 피부 장벽의 지질(ceramide, cholesterol, free fatty acids)을 산화·분해하여 층상 구조(lamellar structure)를 손상시킨다. 결과적으로 장벽 투과성이 증가하고 경표피수분손실(TEWL)이 급증하며, 건조함과 자극 감수성이 높아진다. |  |
+| `chlorine-swimming-skin-aging-acceleration-oxidative-damage` | 확실 | 공식 | 반복적인 수영장 염소 노출은 활성 산소(reactive oxygen species, ROS) 축적으로 인한 만성 산화 스트레스를 유발하며, 이는 피부 노화를 가속화한다. 결과적으로 세세한 주름, 탄력 저하, 색소 불균일이 빨리 진행될 수 있다. |  |
+| `chlorine-recovery-timeline-barrier-restoration-hydration` | 논쟁 🔶 | 후기 | 수영 직후 피부의 급성 손상 회복은: ① 즉시(0-2시간): 찬바람 헹굼으로 chlorine 잔류 제거 ② 단기(2-6시간): 강한 보습제 도포로 TEWL 감소 ③ 중기(6-24시간): 장벽 복구 성분(세라마이드, 판테놀, 센텔라) 집중 사용 ④ 장기(1-3주): 반복 노출 시 손상 누적 방지. 완전 회복에는 3-7일이 소요될 수 있다. |  |
+
 ### 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과 <sub>2026-08-10 · glycerin-humectant</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4597,6 +4767,16 @@ _(팩트 없음)_
 | `linoleic-acid-deficiency-barrier-hyperkeratinization` | 확실 | 공식 | 피부 표면 지질(skin surface lipids)에서 리놀레산 감소는 각질층 스핑고지질 구성을 변화시켜, 모낭 과각화증(follicular hyperkeratosis)을 유발하고 면포(comedone) 형성을 촉진한다. |  |
 | `saturated-unsaturated-ratio-acne-marker-c16` | 확실 | 공식 | 여드름 피부에서 포화 지방산 대 불포화 지방산의 비율(특히 C16:0/C16:1 비율)이 증가하며, 이는 여드름 진단의 지질 바이오마커로 작용한다. |  |
 | `linoleic-acid-topical-supplementation-barrier-recovery` | 확실 | 공식 | 리놀레산을 함유한 국소 제품은 손상된 피부 장벽의 회복을 촉진하고, 장벽 기능 개선 및 염증 감소에 임상 효과를 보인다. |  |
+
+### 마스크 착용으로 인한 피부 자극(마스크네) 메커니즘 및 회복 <sub>2026-08-11 · mask-irritation-recovery</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `maskne-pathophysiology-friction-occlusion-humidity-microbiome` | 확실 | 공식 | 마스크네(maskne)는 4가지 요인의 복합 작용으로 발생한다: ① 마스크 재질의 마찰(textile skin friction) ② 폐색(occlusion)으로 인한 습도 상승 ③ 열과 수분으로 인한 피지선 과다 분비 ④ 폐색 환경에서의 미생물 불균형(Malassezia 과증식 등). 이들은 모두 동시에 작용하는 복합 피부 반응이다. |  |
+| `maskne-healthcare-workers-prevalence-40-60-percent` | 확실 | 공식 | 코로나19 팬데믹 이후 의료진 대상 연구에서 마스크 착용자의 40-60%가 마스크 관련 새로운 피부 병변 또는 기존 병변의 악화를 보고했으며, 특히 얼굴 중앙부(코다리, 뺨, 귀 뒤)의 고마찰 부위가 가장 영향을 많이 받았다. |  |
+| `maskne-keratinization-obstruction-keratinocyte-swelling` | 확실 | 공식 | 마스크 내 높은 습도와 열은 각질세포(keratinocyte)를 팽창시켜 모공 폐색을 초래하고, 이로 인해 모낭-피지선 단위의 급성 폐색이 발생하며 피지 배출이 차단된다. 또한 고습도는 각질 형성을 촉진해 모공 내 미사물의 축적을 가속화한다. |  |
+| `maskne-contact-dermatitis-chemical-allergens` | 확실 | 공식 | 마스크네의 일부는 접촉성피부염(Type IV 지연형 과민반응)이며, 원인은 마스크 재질의 화학 성분이다: 포름알데히드(텍스타일 마무리제), 고무 가속제(탄성 귀 고리), 분산 염료(색상 마스크), 접착제 성분 등. 이러한 접촉성피부염은 폐색 여드름과 구분해야 치료 방향이 달라진다. |  |
+| `maskne-recovery-timeline-barrier-restoration-weeks` | 논쟁 🔶 | 후기 | 마스크 착용 중단 후 마스크네 증상의 회복은 개인차가 크나, 가벼운 폐색성 여드름은 1-2주, 중등도 자극성피부염은 2-3주, 심한 접촉성피부염은 4주 이상이 소요될 수 있다. 장벽 재생과 미생물 정상화 속도에 따라 결정된다. |  |
 
 ### 보습제의 3가지 분류: 밀폐제(occlusive), 습윤제(humectant), 연화제(emollient)의 메커니즘과 효과 <sub>2026-08-10 · moisturizer-occlusive-humectant</sub>
 
@@ -4644,6 +4824,16 @@ _(팩트 없음)_
 | `petrolatum-comedogenicity-pore-clogging-myth-no-evidence` | 확실 | 공식 | 바셀린이 모공을 막힌다는 우려는 임상 근거가 없다. Journal of the American Academy of Dermatology에 따르면, 바셀린의 분자 크기가 모공 개구부에 침투할 수 없으며, 여드름 유발 물질(comedogenic ingredient)로 지목되지 않는다. |  |
 | `petrolatum-eczema-barrier-thickness-improvement` | 논쟁 🔶 | 공식 | 습진 환자에게 바셀린을 도포하면 피부 외부층(outer skin layer) 두께가 증가하고, 염증성 면역세포 수가 감소한다. |  |
 
+### 면도 후 피부 자극(가성모낭염) 메커니즘 및 회복 <sub>2026-08-11 · post-shave-irritation</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `pseudofolliculitis-barbae-ingrown-hair-foreign-body-reaction` | 확실 | 공식 | 가성모낭염(pseudofolliculitis barbae, PFB, 면도 후 자극)은 면도된 모발이 모낭을 완전히 벗어나지 못한 채 피부 내부로 다시 자라거나(extrafollicular penetration), 모낭을 벗어났던 모발이 피부로 다시 들어가면서 발생하는 외래체 염증 반응(foreign-body inflammatory response)이다. |  |
+| `pseudofolliculitis-barbae-curly-hair-genetic-predisposition` | 확실 | 공식 | 가성모낭염은 곱슬머리(tightly curled hair)를 가진 사람들에게 훨씬 더 흔하며, 특정 케라틴 유전자 변이(KRT75, K6hf)가 유전적 위험 요인이 된다. 결과적으로 아프리카계 남성에게서 유병률이 특히 높다. |  |
+| `shave-irritation-acute-inflammatory-papules-pustules` | 확실 | 공식 | 면도 후 자극은 작은 구진(papule)과 농포(pustule) 형태의 피부 병변으로 나타나며, 이는 세균성 여드름이나 감염성 모낭염과 혼동되기 쉽다. 그러나 가성모낭염의 핵심은 염증이지 감염이 아니므로, 초기 치료는 모낭 폐색 해제와 항염증에 집중해야 한다. |  |
+| `pseudofolliculitis-infection-risk-secondary-bacterial-folliculitis` | 확실 | 공식 | 가성모낭염 자체는 감염이 아니지만, 손상된 모낭과 염증 환경은 세균 감염(folliculitis barbae)의 고위험군이 된다. 특히 세균 번식 위험이 높은 환경(땀, 습도, 폐색)에서 긁음으로 인한 2차 감염이 발생하면 합병증(흉터, 색소 변화)으로 진행될 수 있다. |  |
+| `shave-irritation-prevention-hair-cutting-length-moisturizing` | 확실 | 공식 | 가성모낭염의 예방 및 완화 전략: ① 면도날 빈도 감소(매일 → 2-3일마다) ② 뜨거운 물 사용 제한(모낭 팽창 유발) ③ 면도 전 수분 공급으로 모발 유연성 증가 ④ 샤프한 날보다 무딘 날 회피 ⑤ 면도 후 즉시 항염증·보습제(센텔라, 판테놀, 글리세린) 도포 ⑥ 긁지 않기. |  |
+
 ### 프로폴리스: 진정·항균 효과와 접촉 알레르기 위험(벌 제품 교차반응) <sub>2026-08-10 · propolis-skin-barrier</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4679,6 +4869,26 @@ _(팩트 없음)_
 | `rosemary-oil-hairloss-mechanism-unclear-pubmed` | 확인실패 | 공식 | 로즈마리 오일이 탈모 감소 메커니즘에 대한 PubMed 상 명확한 학술적 설명은 확인되지 않았다. 일반적인 가설은 '항산화·항염증 성분 함유'이나, 이것이 모낭에 어떻게 작용하는지는 입증되지 않았다. |  |
 | `rosemary-oil-single-trial-replication-needed` | 확인실패 | 공식 | 이 RCT는 단 1건의 연구이며, 발견을 확인하기 위한 독립적인 재현 연구(replication study)가 부족하다. |  |
 
+### 환절기 피부 건조 및 각질 메커니즘 <sub>2026-08-11 · seasonal-skin-dryness</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `humidity-drop-tewl-increase-seasonal` | 확실 | 공식 | 상대습도 저하 시 경표피수분손실(TEWL)이 유의미하게 증가하며, 환절기 습도 변화는 각질층의 수분 함량 감소와 피부 탄력성 저하를 초래한다. |  |
+| `seasonal-transition-adaptive-lag-hyperproliferation` | 확실 | 공식 | 피부의 적응 반응이 뒤처지는 환절기 초반 2-3주간, 기후가 이미 저습도로 이동했음에도 피부는 여전히 이전 계절의 보습 수준으로 작동하여 예상 외의 건조함과 각질이 급증하는 '적응 지연' 현상이 발생한다. |  |
+| `stratum-corneum-water-content-humidity-dependent` | 확실 | 공식 | 각질층(stratum corneum)의 수분 함량은 상대습도에 선형적으로 의존하며, 습도 50% → 30% 저하 시 각질층 수분 함량이 유의미하게 감소하고 거칠기(roughness)가 증가한다. |  |
+| `exfoliation-immediately-follow-with-hydration` | 확실 | 공식 | 각질 제거 직후 보습·수분 공급이 필수이며, 화학적(AHA/BHA) 또는 물리적 각질 제거 후 순하고 수분 풍부한 토너·세럼·에센스 등 가벼운 제품으로 진정·보습한 후 크림형 보습제를 덮어야 환절기 손상된 장벽을 회복할 수 있다. |  |
+| `humidity-threshold-30-percent-barrier-damage` | 확실 | 공식 | 상대습도가 30% 이하로 떨어지면 피부 장벽 기능이 유의미하게 손상되며, 특히 아토피성 피부염·민감성 피부는 40% 이하 저습도에서 증상 악화를 보인다. |  |
+
+### 민감성 피부의 정의, 기전 및 진정 전략 <sub>2026-08-11 · sensitive-skin-calming</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `sensitive-skin-definition-chronic-heightened-response` | 확실 | 공식 | 민감성 피부(sensitive skin)는 의학 진단이 아니라 일상 용어로, 화장품이나 외부 자극에 대해 지속적으로 높아진 반응을 보이는 만성 상태를 의미한다. 이는 일시적 반응성(reactive skin, 특정 자극 후 일시적 반응)과 구분된다. |  |
+| `sensitive-skin-barrier-dysfunction-increased-permeability` | 확실 | 공식 | 민감성 피부의 핵심은 장벽 기능 이상(barrier dysfunction)이며, 특징은: ① 각질층 투과성 증가(stratum corneum permeability) ② 경표피수분손실(TEWL) 증가 ③ 외부 자극물질의 표피 내 침투 용이. 이로 인해 정상 농도의 자극물도 반응을 일으킨다. |  |
+| `sensitive-skin-irritant-contact-dermatitis-not-allergy` | 확실 | 공식 | 민감성 피부에서 일어나는 대부분의 반응은 진정한 알레르기(IgE 매개)가 아니라 자극성 접촉피부염(irritant contact dermatitis)이다. 이는 사전 감작 없이 발생하는 염증 반응이며, 외부 자극물이 표피 투과성 증가로 인해 쉽게 침투할 수 있기 때문이다. |  |
+| `sensitive-skin-neurosensory-dysfunction-elevated-neuropeptides` | 확실 | 공식 | 민감성 피부는 단순 장벽 이상을 넘어 신경감각 이상(neurosensory dysfunction)도 포함한다. 케라틴세포와 신경 말단의 상호작용이 비정상화되어 통상적 수준의 자극물도 타는 듯함, 따끔거림, 가려움, 통증 같은 신경 증상을 유발한다. |  |
+| `sensitive-skin-avoidance-high-concentration-actives` | 확실 | 공식 | 민감성 피부의 급성 진정 및 회복 단계에서는 고농도 액티브(레티노이드, 산성 박피제, 고농도 비타민 C, 나이아신아마이드 >5% 등)를 피해야 하며, 대신 저농도 순한 성분(글리세린, 판테놀, 센텔라 추출물, 낮은 pH의 마일드 보습제)으로 장벽 회복을 우선한다. |  |
+
 ### 피부 장벽(skin barrier)의 구조, '무너졌다'는 표현의 실체, 회복 원리 <sub>2026-08-10 · skin-barrier-basics</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4709,6 +4919,24 @@ _(팩트 없음)_
 | `sunscreen-no-rct-spf-degradation-2-to-4-hours` | 논쟁 🔶 | 공식 | 자외선 차단제가 2~4시간 동안 SPF 저하를 겪는다는 주장을 뒷받침하는 단일 RCT는 존재하지 않는 것으로 알려져 있다. |  |
 | `sunscreen-early-reapplication-first-30-minutes-high-spf-compensation-strategies` | 확실 | 공식 | 제한된 도포량의 단점을 보상하는 전략으로는 (1) 최초 30분 내에 조기 재도포, (2) 매우 높은 SPF(70~100) 제품 사용이 있다. |  |
 | `sunscreen-reapplication-swimming-sweating-mechanical-removal` | 논쟁 🔶 | 공식 | 자외선 차단제 재도포가 필수적인 것은 화학적 분해보다는 물, 땀, 마찰로 인한 기계적 제거 때문이다. |  |
+
+### 10대 여드름의 호르몬 기전과 연령별 성분 안전성 <sub>2026-08-11 · teen-acne-protocol</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `adolescent-acne-pathophysiology-androgen-driven-4-factors` | 확실 | 공식 | 사춘기 여드름의 기전은 4가지 요소의 동시 작용이다: ① 안드로겐 증가(특히 DHT)로 인한 피지선 과다 분비 ② P. acnes 등 박테리아의 과번식 ③ 모낭-피지선 단위의 이상 각질화(abnormal follicular hyperkeratinization)로 모공 폐색 ④ 모낭 내 염증 매개물 방출. 이 중 안드로겐이 사춘기 여드름의 특수성이다. |  |
+| `adolescent-acne-higher-severity-than-prepubertal` | 확실 | 공식 | 사춘기 여드름은 성인 여드름보다 평균 더 심하며, 특히 T존(이마, 코, 턱)에 집중된다. 이는 사춘기의 호르몬 변동이 성인보다 급격하고, 대사 변화가 빠르기 때문이다. |  |
+| `topical-retinoid-age-restrictions-adapalene-12-years-fda` | 확실 | 공식 | 국소 레티노이드의 연령 제한: ① 아다팔렌(adapalene) 0.1%: FDA 승인 최저 연령 12세(정식 라벨) ② 트레티노인(tretinoin): FDA 라벨에 최소 연령 명시 없음, 임상 시험은 12세부터 포함. 다만 비급여 사용(off-label use)은 피부과 전문의 지도 하에서만. ③ 레티놀, 레티닐 팔미테이트 등 저강도 레티노이드: 나이 제한 없으나 10대 초반은 자극 주의. |  |
+| `benzoyl-peroxide-azelaic-acid-first-line-topical-teen-acne` | 확실 | 공식 | JAAD 2023 지침에서 권장하는 10대 여드름 1차 국소 치료: ① 벤조일 퍼옥사이드(benzoyl peroxide) 2.5-5%: P. acnes 박멸 및 항염증, 레티노이드보다 자극이 적고 내성 거의 없음 ② 아젤라산(azelaic acid) 15-20%: 항균 + 항염증 + 색소 개선, 민감성 피부도 가능. 이 둘은 레티노이드 없이도 효과적이며 안전성이 높다. |  |
+| `retinoid-introduction-timeline-tolerance-building` | 확실 | 공식 | 10대가 레티노이드를 처음 사용할 때는 저농도·저빈도로 시작하는 것이 중요하다: ① 아다팔렌 0.1% 또는 레티놀 0.25-0.5%로 시작 ② 주 2-3회부터 시작해 격일·매일로 단계적 증량 ③ 첫 2-4주는 A 반응(redness, peeling, dryness) 예상하고 수분 공급 강화 ④ 4주 후 효과 평가 후 증량. 급격한 증량은 피할 것. |  |
+
+### 겨울 난방과 실내 건조가 피부에 미치는 영향 <sub>2026-08-11 · winter-indoor-humidity</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `indoor-humidity-ideal-range-40-60-percent` | 확실 | 공식 | 최적 실내 습도는 40-60% 상대습도이며, 겨울의 경우 30-50% 범위를 목표로 하는 것이 현실적이다. 60% 이상은 곰팡이·진드기 번식 위험을 높인다. |  |
+| `humidity-below-50-percent-tewl-increase` | 확실 | 공식 | 상대습도가 50% 이하로 떨어지면 경표피수분손실(TEWL)이 유의미하게 증가하고 피부 수분 함량이 감소한다. |  |
+| `humidity-below-30-percent-barrier-integrity-loss` | 확실 | 공식 | 상대습도가 30% 이하로 장시간 유지되면 피부 장벽의 구조적 무결성이 손상되며, 특히 기존에 아토피성 피부염이나 민감성 피부가 있는 경우 증상 악화가 가속화된다. |  |
 
 ### 징크 PCA의 피지 조절 기전: 5α-리덕타제 억제·항균·임상 근거 <sub>2026-08-10 · zinc-pca-sebum</sub>
 
@@ -5144,6 +5372,27 @@ _(팩트 없음)_
 
 ## 성분연구소
 
+### 성인 호르몬성 여드름: 발생 부위, 병인, 10대와의 차이, 국소 치료의 한계 <sub>2026-08-11 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `adult-hormonal-acne-jawline-chin-androgen-receptor-density` | 확실 | 공식 | 성인 호르몬성 여드름은 턱과 입 주변에 집중되며, 이 부위가 얼굴 중 안드로겐 수용체 밀도가 가장 높아 호르몬 민감성이 크다. |  |
+| `adult-acne-prevalence-women-20-40-cyclical-pattern` | 확실 | 공식 | 성인 여드름(20~40세 여성)은 월경 주기와 연관된 주기성 패턴을 보이며, 턱·뺨에 낭종성 여드름이 나타난다. |  |
+| `testosterone-to-dht-5alpha-reductase-skin-level-conversion` | 확실 | 공식 | 혈중 테스토스테론은 피부 5α-환원효소(5α-reductase)에 의해 국소적으로 DHT(디하이드로테스토스테론)로 변환되며, 호르몬 민감성 피부의 5α-환원효소 활성이 특히 높다. |  |
+| `adult-acne-vs-teenage-acne-comedones-distribution` | 확실 | 공식 | 10대 여드름(polymorphic, 얼굴 전역 분포, 많은 면포 포함)과 달리 성인 호르몬 여드름은 단형성(monomorphic), 턱·입 주변 국한, 면포 적음이 특징이다. |  |
+| `clascoterone-1-percent-topical-androgen-receptor-inhibitor-2024-approval` | 확실 | 공식 | 2024년 AAD 가이드라인 업데이트에서 클라스코테론 크림 1%가 첫 국소 안드로겐 수용체 억제제로 12세 이상 여드름 치료에 승인되었다. |  |
+| `topical-treatment-alone-insufficient-hormonal-acne-systemic-consideration` | 확실 | 공식 | 성인 호르몬성 여드름은 호르몬 불균형의 피부 발현이므로, 국소 치료(벤조일 퍼옥사이드, 살리실산, 아젤라산)만으로는 완전 관해가 어려우며, 호르몬 치료(경구피임약) 병합을 고려해야 한다. |  |
+
+### AHA와 BHA 조합: 동시 사용 안전성, 자극 누적, 권장 빈도 <sub>2026-08-11 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `aha-bha-combination-cumulative-irritation-risk` | 논쟁 🔶 | 후기 | AHA와 BHA를 같은 루틴에서 동시 사용하면 피부의 회복 능력을 초과하는 누적 자극 위험이 있다. |  |
+| `glycolic-aha-higher-irritation-than-salicylic-bha-in-combination` | 논쟁 🔶 | 후기 | 글리콜산(AHA) + 살리실산(BHA) 조합은 글리콜산의 높은 침투력으로 인해 살리실산 + 락틱산 조합보다 자극이 더 높을 수 있다. |  |
+| `aha-bha-daily-use-not-recommended-dermatologist-protocol` | 확실 | 공식 | 대부분의 피부과는 AHA와 BHA를 같은 날 매일 사용하지 않도록 권장하며, 1~2회/주 이하의 사용을 표준으로 제시한다. |  |
+| `acid-alternation-better-than-simultaneous-use-for-safety` | 확실 | 공식 | AHA와 BHA를 동시 사용하는 것보다 교대로 사용(예: 월요일 AHA, 목요일 BHA)하는 것이 피부 안전성과 효과 면에서 더 권장된다. |  |
+| `acid-overuse-barrier-damage-irritation-dermatitis-risk` | 확실 | 공식 | AHA·BHA의 과사용(매일 또는 고농도 연일 사용)은 피부 장벽을 손상시켜 자극성 피부염, 과민증, 감염 위험을 증가시킨다. |  |
+
 ### AHA·PHA 각질제거: 글리콜산·락틱산 분자량·농도·pH 기준, 임상 효과, 자극도 차이 <sub>2026-08-10 · 뷰티_aha-pha-exfoliant</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -5165,6 +5414,15 @@ _(팩트 없음)_
 | `4-methylbenzylidene-camphor-avobenzone-stabilization-100-percent` | 확실 | 공식 | 4-메틸벤질리덴 캠퍼(4-methylbenzylidene camphor)는 아보벤존 안정화에서 100% 효율을 달성했으며, 삼중항 소광자(triplet quencher) 중 가장 효과적인 성분 중 하나로 알려져 있다. |  |
 | `antioxidants-ubiquinone-transresveratrol-avobenzone-stabilization` | 논쟁 🔶 | 공식 | 항산화제(ubiquinone, transresveratrol 등)는 옥토크릴렌이나 옥시벤존과 함께 사용되어 아보벤존 안정화를 추가로 향상시킬 수 있으며, 95-100% 안정화에 도달할 수 있다. |  |
 | `octocrylene-phototoxicity-concern-alternative-research` | 논쟁 🔶 | 공식 | 옥토크릴렌은 최근 잠재적 광독성(phototoxicity)을 보였다는 연구가 제시되었으며, 이로 인해 대체 안정화 방법에 대한 연구가 진행되고 있다. |  |
+
+### 기초대사와 관련 성분들: 정의·측정·실제 효과의 괴리 <sub>2026-08-11 · basal-metabolism-boosters</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `basal-metabolic-rate-definition-resting-energy-expenditure-indirect-calorimetry` | 확실 | 공식 | 기초대사율(BMR)은 휴식 중인 신체의 에너지 소비율이며, 정확한 측정은 물리적·심리적으로 방해받지 않는 상태에서 간접 열량 측정법(indirect calorimetry)으로 산소 섭취량과 이산화탄소 배출량을 측정하여 계산한다. |  |
+| `basal-metabolic-rate-accounts-50-80-percent-daily-energy-expenditure` | 확실 | 공식 | 기초대사율은 하루 총 에너지 소비량의 50~80%를 차지하며, 나머지는 신체활동·식이유도열생성으로 구성된다. |  |
+| `carnitine-capsaicin-cla-thermogenesis-effect-absolute-magnitude-34kcal-1-2kg-modest` | 확실 | 공식 | L-카르니틴, 캡사이신, CLA 등 '기초대사 증가' 성분들의 실제 효과는 절대값으로 보면 매우 작다. 캡사이신 34 kcal/day 증가는 월 1020 kcal에 불과하고, L-카르니틴의 체중감소는 메타분석 37개 연구 기준 -1.21 kg이며, CLA는 '작은(modest)' 효과 크기로 평가된다. |  |
+| `metabolic-boosters-benefit-only-with-caloric-deficit-food-exercise-priority` | 확실 | 공식 | 기초대사 증가 성분들의 체중 개선 효과는 칼로리 결핍(음식 섭취 감소 또는 운동 증가)이 있을 때만 의미가 있으며, 정상적인 식단에서는 체중 변화가 없을 가능성이 높다. |  |
 
 ### 벤조일퍼옥사이드: 여드름 제어 기전, 농도 기준, 한국 규제 지위, 박테리아 저항성 <sub>2026-08-10 · 뷰티_benzoyl-peroxide-acne</sub>
 
@@ -5248,6 +5506,16 @@ _(팩트 없음)_
 | `carnitine-exercise-performance-mixed-evidence` | 확실 | 공식 | L-카르니틴 보충은 고강도 운동 성능 개선에서 혼합된 근거를 보이며, 중등도 운동 성능에는 효과가 없는 것으로 보고된다. |  |
 | `carnitine-korea-regulatory-status-unclear` | 확인실패 | 공식 | 한국 식약처의 기능성 원료 인정 목록에서 L-카르니틴의 명시적 기능성 인정 여부가 확인되지 않았다. |  |
 
+### 셀룰라이트: 콜라겐·지방·호르몬 기전과 성분 개입의 한계 <sub>2026-08-11 · cellulite-reduction-science</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `cellulite-definition-subcutaneous-fat-edema-collagen-nodule-formation` | 확실 | 공식 | 셀룰라이트는 피하 지방세포 사이에 체액과 노폐물이 축적되어 부종이 발생하고, 피부 결합조직의 지질층이 불규칙하게 비후되며, 콜라겐 섬유가 주변 지방세포 그룹과 함께 결합하여 미세결절을 형성한 후 이들이 합쳐져 거대결절이 되는 과정이다. |  |
+| `cellulite-gender-difference-fibrous-architecture-female-vertical-male-crosshatch` | 확실 | 공식 | 남성의 진피 결합조직은 섬유가 십자형(cross-hatch)으로 촘촘히 짜여 피하 지방층을 효과적으로 억제하지만, 여성의 섬유는 수직형(vertical/parallel)으로 치밀하지 못해 지방층을 누르지 못한다. 동시에 여성은 남성보다 피하지방층이 두껍다. |  |
+| `cellulite-estrogen-fibrosis-collagen-remodeling-fat-compression` | 확실 | 공식 | 에스트로겐은 지방세포의 증가와 비대를 유발하여 주변 결합조직에 압력을 가하고, 이로 인해 콜라겐 섬유 격벽이 섬유화(fibrosis)되어 경화된다. 섬유화된 콜라겐은 지방세포를 불규칙하게 구속하여 피부 표면의 울퉁불퉁함을 초래한다. |  |
+| `cellulite-multifactorial-genetic-hormonal-lifestyle-connective-tissue` | 확실 | 공식 | 셀룰라이트는 유전적 요인(결합조직 구조), 호르몬 변화(에스트로겐), 생활 습관(식단, 운동), 나이 등 여러 요인이 복합적으로 작용하여 발생한다. |  |
+| `cellulite-topical-ingredient-efficacy-limited-collagen-remodeling-penetration-barrier` | 확인실패 | 공식 | 셀룰라이트의 근본 원인이 진피 내 콜라겐 섬유화와 지방 구조 재편성이므로, 국소 크림이나 젤의 유효 성분이 진피 깊이까지 침투하여 콜라겐 구조를 역전시키기는 생물학적으로 매우 제한적이다. |  |
+
 ### 크로뮴: 혈당 조절에서의 근거 수준과 국내 기능성 인정 현황 <sub>2026-08-10 · 예정</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -5285,6 +5553,34 @@ _(팩트 없음)_
 | `bentonite-clay-swelling-aggressive-oil-absorption-10-times` | 확실 | 공식 | 벤토나이트(몬모릴로나이트 함유) 클레이는 물에 접하면 부풀어 오르며, 자신의 무게의 최대 10배에 해당하는 오일과 수분을 흡착한다. |  |
 | `kaolin-non-swelling-stable-structure-sensitive-skin` | 확실 | 공식 | 카올린은 물에 닿아도 부풀지 않고 안정적인 결정 구조를 유지하므로, 벤토나이트보다 순하며 민감한 피부에 더 적합하다. |  |
 | `clay-mask-effect-temporary-surface-level` | 확실 | 공식 | 클레이 마스크의 피지 제어 효과는 주로 피부 표면의 일시적 제어이며, 피지선의 생리적 활동을 억제하지 않는다. |  |
+
+### 하루 단백질 필요량과 피부·모발: 구강 섭취 vs 국소 제품의 구분 <sub>2026-08-11 · daily-protein-requirement</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `daily-protein-rda-0-8-gram-per-kilogram-body-weight` | 확실 | 공식 | 건강한 성인의 단백질 권장섭취량(RDA)은 체중 1kg당 0.8g이다. 신체활동이 중간 정도면 1.0~1.3 g/kg, 강렬하면 1.6 g/kg으로 증가한다. |  |
+| `collagen-peptide-no-rda-10-40g-daily-recommended-skin-efficacy-5-10g` | 확실 | 공식 | 콜라겐 펩타이드(hydrolyzed collagen)에는 공식 RDA가 없으나, 임상 연구 기반으로 하루 10~40g의 섭취가 권장되며, 특히 피부 수분·탄력 개선에는 2.5~10g이 임상적으로 효과를 보인 용량이다. |  |
+| `collagen-synthesis-decline-mid-40s-25-percent-reduction` | 확실 | 공식 | 신체의 콜라겐 합성은 40대 중반부터 25% 이상 감소하며, 이는 피부 탄력 저하와 주름 심화의 주요 원인이다. |  |
+| `topical-protein-peptide-vs-oral-protein-different-pathways-skin-hair-benefit` | 확실 | 공식 | 구강 단백질/콜라겐 펩타이드는 신체의 콜라겐 합성 기질을 공급하는 반면, 국소 적용 단백질·펩타이드는 피부 표면과 모발에 직접 작용하여 구조 강화와 보습에 기여한다. 두 경로는 상보적이며 상충하지 않는다. |  |
+
+### 비듬 vs 지루성두피염: 임상 진단·증상·치료 차이 <sub>2026-08-11 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `dandruff-clinical-definition-no-inflammation-scaling-only-asymptomatic` | 확실 | 공식 | 비듬(dandruff)은 Malassezia 효모균 이상 증식으로 인한 각질 박리(scaling)만 나타나며, 염증, 가려움, 발적이 없거나 최소한 수준이다. |  |
+| `seborrheic-dermatitis-clinical-definition-inflammation-erythema-pruritus` | 확실 | 공식 | 지루성피부염(seborrheic dermatitis)은 Malassezia 유도 염증으로 발적(erythema), 가려움(pruritus), 발열감이 동반되며, 비듬보다 심한 증상을 보인다. |  |
+| `dandruff-seborrheic-spectrum-disease-continuum-malassezia-driven` | 확실 | 공식 | 비듬과 지루성피부염은 같은 Malassezia 유도 스펙트럼의 양 끝이며, 개인의 면역 반응·두피 pH·피지 분비가 어느 쪽으로 표현될지 결정한다. |  |
+| `dandruff-ketoconazole-efficacy-high-symptomatic-relief-swift` | 확실 | 공식 | 비듬에 대한 케토코나졸 2% 샴푸 치료는 4주 후 73% 임상 반응률을 보이며 빠른 증상 완화가 특징이다. |  |
+| `seborrheic-dermatitis-ketoconazole-sustained-treatment-necessary-relapse-rate-high` | 확실 | 공식 | 지루성피부염은 케토코나졸만으로 완치가 어렵고, 치료 중단 후 31%가 재발하며, 장기 유지 치료 또는 정기적 재치료(월 1~2회)가 필요하다. |  |
+| `dandruff-discontinuation-relapse-rate-lower-seborrheic-comparison` | 논쟁 🔶 | 후기 | 비듬은 치료 중단 후 재발률이 지루성피부염(31%)보다 낮으며(약 20% 정도), 일부는 자연 완화되거나 간헐적 유지 관리만으로 조절된다. |  |
+| `dandruff-vs-seborrheic-diagnostic-key-inflammation-pruritus-severity` | 확실 | 공식 | 임상 진단의 핵심은: 비듬은 '각질 + 최소 증상', 지루성피부염은 '각질 + 명확한 발적·가려움·따끔거림'이다. |  |
+
+### 제모 후 자극 줄이기: 면도·화학 제모제·전기 면도기 비교와 회복 전략 <sub>2026-08-11 · depilatory-without-irritation</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `chemical-depilatory-vs-shaving-mechanism-protein-dissolution-vs-cutting` | 확실 | 공식 | 화학적 제모제(depilatory agents)는 디스플파이드 결합을 파괴하여 모발 단백질을 용해시키는 방식이므로, 면도(모발을 절단)와는 근본적으로 다른 메커니즘이다. 화학 제모제는 표피 아래 모낭 내 모발도 부분적으로 약화시킬 수 있다. |  |
+| `electric-shaver-vs-blade-shaving-irritation-reduced-pfb-prevention` | 확실 | 공식 | 전기 면도기는 회전 또는 왕복 날로 모발을 절단하되, 칼날이 피부에 직접 닿지 않아 자극이 적고, 모발이 피부 아래 너무 짧게 절단되지 않으므로 가성모낭염(pseudofolliculitis barbae, PFB) 위험이 감소한다. |  |
 
 ### 식이섬유: 포만감 및 체중관리에서의 역할, 섭취 방식에 따른 주의 <sub>2026-08-10 · 예정</sub>
 
@@ -5352,6 +5648,16 @@ _(팩트 없음)_
 | `glucomannan-high-risk-populations-swallowing-difficulty` | 확실 | 공식 | 고령자, 연하곤란이 있는 사람, 과거 위장관 수술로 장이 좁아진 사람, 구조적 이상이 있는 사람 등이 글루코만난으로 인한 폐색 위험이 더 높다. |  |
 | `glucomannan-pre-hydrated-form-shirataki-safer` | 확실 | 공식 | 미리 충분히 수화된 글루코만난 형태(예: 곤약 국수·시라타키)는 일반적으로 안전하며, 정상적으로 준비하고 씹어서 섭취할 때 식도 폐색 위험이 낮다. |  |
 
+### 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 <sub>2026-08-11 · gray-hair-emergence-nutrition</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `hydrogen-peroxide-accumulation-melanocyte-catalase-deficiency-gray-hair-mechanism` | 확실 | 공식 | 나이가 들면서 모낭 멜라노사이트의 카탈라제(catalase) 생성이 감소하고, 수소과산화물(H₂O₂) 축적이 증가한다. H₂O₂는 멜라노사이트의 산화 스트레스를 유발하고 멜라닌 생성 효소인 티로시나제를 손상시켜 흰머리를 초래한다. |  |
+| `copper-zinc-iron-melanogenesis-cofactor-melanin-synthesis` | 확실 | 공식 | 구리, 아연, 철은 멜라노제네시스(melanin 합성)에 필수 보조인자로 작용하며, 멜라노사이트가 색소를 만드는 데 직접 관여한다. |  |
+| `vitamin-b12-vitamin-d-deficiency-melanocyte-dysfunction-gray-hair-risk` | 확실 | 공식 | 비타민B12와 비타민D 결핍도 멜라노사이트 기능을 손상시킬 수 있으며, 이는 흰머리 발생의 영양 위험 요인이다. |  |
+| `melanocyte-stem-cell-depletion-aging-reduced-pigment-production` | 확실 | 공식 | 나이가 들면서 멜라노사이트를 생성하는 줄기세포가 손상되고 사멸하며, 줄기세포 감소는 새로운 멜라노사이트 생성을 저해하므로 색소 생산이 감소하여 흰머리가 생긴다. |  |
+| `gray-hair-reversal-nutrition-only-with-deficiency-correction` | 확실 | 공식 | 흰머리의 영양학적 개선은 사전 결핍이 입증된 경우(혈액 검사)에 한정되며, 정상 수치에서의 영양 추가 보충은 흰머리 역전의 근거가 부족하다. |  |
+
 ### 녹차 카테킨-EGCG: 체중감량 효과의 근거와 고용량 간독성 위험 <sub>2026-08-10 · 예정</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -5378,6 +5684,28 @@ _(팩트 없음)_
 | `niacinamide-scalp-blood-flow-inflammation-reduction` | 확실 | 공식 | 나이아신아마이드(비타민 B3)는 두피의 혈류 흐름을 개선하고 염증을 완화하여 건강한 두피 환경을 조성한다. | KR |
 | `hairloss-shampoo-contact-time-limitation-efficacy` | 확실 | 공식 | 탈모 완화 샴푸는 사용 시 두피 접촉 시간이 1~3분으로 제한되어, 성분이 모낭까지 깊숙이 침투하기 어려운 구조적 한계가 있다. | 글로벌 |
 | `hairloss-shampoo-vs-topical-medication-efficacy-difference` | 확실 | 공식 | 탈모 샴푸(기능성 화장품)의 효과 입증 기준은 의약품(미녹시딜, 피나스테리드)보다 훨씬 낮으며, 'RCT로 확인된 임상적 모발 증가'가 아니라 '사용감 개선' 정도의 수준이다. | KR |
+
+### 가려운 구진성 발진 vs 곪은 여드름: 말라세지아 모낭염과 심상성 여드름 감별 <sub>2026-08-11 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `malassezia-folliculitis-pruritic-papules-monomorphic-acne-mimic` | 확실 | 공식 | 말라세지아 모낭염은 단형성(monomorphic) 가려운 구진과 소농포를 일으키며, 심상성 여드름과 유사해 진단 착각이 잦다. 실제로 여드름으로 오진된 환자의 75%가 말라세지아 모낭염이었다. |  |
+| `acne-vulgaris-polymorphic-comedones-not-pruritic` | 확실 | 공식 | 심상성 여드름(acne vulgaris)은 다형성(polymorphic) 병변—면포, 구진, 농포, 낭종 혼재—을 특징으로 하며, 일반적으로 가렵지 않다. |  |
+| `pruritus-and-absence-of-comedones-distinguish-malassezia-from-acne` | 확실 | 공식 | **가려움(pruritus) + 면포 부재**는 말라세지아 모낭염을 진단하는 핵심 단서이며, 이 두 특징이 모두 있으면 심상성 여드름보다 말라세지아를 우선 고려해야 한다. |  |
+| `koh-preparation-potassium-hydroxide-microscopy-confirmatory-diagnosis` | 확실 | 공식 | KOH(수산화칼륨) 현미경 검사와 배양이 말라세지아 모낭염을 확진하는 표준 진단법이며, 임상 의심에 근거한 경험적 항진균 치료로도 진단 확인이 가능하다. |  |
+| `acne-medication-worsens-malassezia-folliculitis-risk` | 확실 | 공식 | 말라세지아 모낭염을 여드름으로 오인해 항생제, 벤조일 퍼옥사이드, 레티노이드 등 여드름약을 사용하면 증상이 악화되거나 지속되는 악순환이 발생한다. |  |
+| `malassezia-treatment-antifungal-azole-response-diagnostic` | 확실 | 공식 | 말라세지아 모낭염은 케토코나졸, 이트라코나졸, 플루코나졸 같은 항진균제에 반응하며, 여드름약 실패 후 항진균 치료 시작하면 빠른 호전이 진단 근거가 될 수 있다. |  |
+
+### 남성 vs 여성 탈모: 호르몬 메커니즘과 성분 효과 차이 <sub>2026-08-11 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `androgenetic-alopecia-dht-sensitivity-genetic-receptor-expression` | 확실 | 공식 | 안드로겐성 탈모는 5α-리덕타제 효소와 안드로겐 수용체(AR) 유전자 발현에 따라 결정되며, 같은 호르몬 환경에서도 개인차가 크다. |  |
+| `male-pattern-baldness-dht-sensitivity-scalp-vertex-progressive-thinning` | 확실 | 공식 | 남성형 탈모는 DHT 감수성이 높은 두피 부위(정수리, 헤어라인)에서 모낭이 축소(miniaturization)되어 진행하며, 호르몬 환경 변화(사춘기, 스트레스)에 빠르게 반응한다. |  |
+| `female-pattern-hair-loss-diffuse-thinning-multiple-factors-estrogen-thyroid` | 확실 | 공식 | 여성형 탈모는 남성과 달리 전체 두피에 산만한 가늘어짐(diffuse thinning)으로 나타나며, 에스트로겐·갑상선·철·비타민 등 다중 인자가 관여한다. |  |
+| `menopause-estrogen-decline-androgenetic-alopecia-exacerbation-female` | 확실 | 공식 | 폐경 후 에스트로겐 저하로 안드로겐의 상대적 우위가 높아지면서 여성도 남성형 탈모 양상(정수리 가늘어짐)을 보이기 시작한다. |  |
+| `minoxidil-sex-difference-concentration-2percent-female-5percent-male` | 확실 | 공식 | FDA는 미녹시딜을 여성 2%(또는 5% foam), 남성 5%로 승인했으며, 이는 여성의 두피 흡수율 및 호르몬 감수성이 다르기 때문이다. |  |
+| `finasteride-male-only-indication-fda-approval-female-no-indication` | 확실 | 공식 | 피나스테리드는 FDA가 남성 안드로겐성 탈모에만 승인했으며, 여성에게는 공식 적응증이 없고 오프라벨 사용만 가능하다. |  |
 
 ### 만델산: 민감성 피부의 부드러운 각질 관리 <sub>2026-08-10 · 뷰티_mandelic-acid-gentle-exfoliant</sub>
 
@@ -5410,6 +5738,17 @@ _(팩트 없음)_
 | `ghk-cu-hair-growth-mechanism-proposed-limited-human-rct-evidence` | 확실 | 공식 | 구리펩타이드의 모발 성장 기전(콜라겐·혈관신생·DHT 감소 등)은 기초 연구에서 제안되었으나, 대규모 무작위 대조 시험(RCT) 수준의 임상 증거는 미녹시딜·피나스테리드처럼 충분하지 않다. |  |
 | `ghk-cu-topical-penetration-bioavailability-intact-peptide-scalp-not-established` | 확인실패 | 공식 | 국소 적용된 구리펩타이드가 피부 배리어를 통과하여 완전한 상태로 두피 모낭에 도달하는지는 명확하게 입증되지 않았다. |  |
 
+### 펌·매직 후 손상 모발: 화학 기전과 단계별 복구 전략 <sub>2026-08-11 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `perm-chemical-process-reduction-oxidation-disulfide-bond-rearrangement` | 확실 | 공식 | 펌은 3단계 화학 공정이다: 1) 알칼리 환경(pH 8~10)에서 환원제(티오글리콜산, DTT)가 이황화 결합을 절단, 2) 금속 또는 로드로 모발 형태 고정, 3) 산화제(과산화수소 등)로 이황화 결합 재형성. |  |
+| `magic-straight-chemical-process-reduction-breaking-bonds-neutralization-relaxation` | 확실 | 공식 | 매직(직모화)은 유사하게 환원제로 이황화 결합을 절단하되, 열(고온 프레싱)과 알칼리로 모발 구조를 펼치고, 산화 단계에서 낮은 강도의 산화(저농도 과산화수소)를 사용한다. |  |
+| `perm-magic-cumulative-damage-incomplete-disulfide-bond-reformation` | 확실 | 공식 | 펌과 매직을 반복하면 이황화 결합이 완전히 재형성되지 않거나 부정확하게 배열되어, 모발의 인장강도와 탄성이 누적적으로 저하된다. |  |
+| `post-perm-magic-protein-treatment-efficacy-transglutaminase-crosslinking` | 확실 | 공식 | 펌/매직 후 단백질 트리트먼트(특히 트랜스글루타미나제 함유)는 손상된 이황화 결합 구간에서 새로운 아마이드 결합을 형성하여 인장강도와 탄성을 회복시킨다. |  |
+| `post-perm-magic-deep-conditioning-weekly-schedule-barrier-restoration` | 확실 🔶 | 후기 | 펌/매직 후 첫 2주는 주 1~2회 심층 트리트먼트, 이후 4주까지 주 1회 유지로 케라틴 손실 보충과 피질층 지질 회복을 돕는 것이 권고된다. |  |
+| `post-perm-magic-avoid-heat-styling-drying-time-air-dry-recommendation` | 확실 | 공식 | 펌/매직 후 2주 내 드라이 열(고온 드라이기)과 추가 고열 스타일링(고데기, 아이롱)을 피하고, 찬바람 드라이 또는 자연 건조로 열 손상을 최소화해야 한다. |  |
+
 ### 무기자차 vs 유기자차: 성분·메커니즘·흡수·안전성·규제 지위 비교, 옥시벤존 혼란 정리, 산호초 이슈 <sub>2026-08-10 · 뷰티_physical-vs-chemical-sunscreen</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -5423,6 +5762,43 @@ _(팩트 없음)_
 | `mineral-sunscreen-no-blood-detection-skin-barrier-retention` | 확실 | 공식 | 무기자차(산화아연, 이산화티탄)는 입자 크기가 커서 피부 표면에 머물고 혈중에서 검출되지 않는다. |  |
 | `chemical-sunscreen-lighter-better-cosmetic-feel-no-whitcast` | 확실 | 공식 | 화학 자차는 무기자차보다 가볍고 백탁(white cast)이 적으며 화장 감이 더 좋다. |  |
 | `coral-reef-concern-oxybenzone-not-proven-causation` | 논쟁 🔶 | 공식 | '산호초 파괴'는 옥시벤존 규제의 정치적 명분으로 사용되었으나, 실제 인과관계는 입증되지 않았으며 오히려 산호초 스트레스의 주요 원인은 해수 온난화다. |  |
+
+### 미세먼지와 피부: 입자 크기·침투 기전·배리어 손상·질병 악화 <sub>2026-08-11 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `pm25-particle-penetration-stratum-corneum-in-vitro-evidence` | 확실 | 공식 | PM2.5 입자는 각질층(stratum corneum)으로 침투 가능하며, in vitro 재구성 표피에 100μg/mL PM2.5를 처리했을 때 입자 침투가 확인되었다. |  |
+| `pm25-filaggrin-suppression-skin-barrier-protein-reduction` | 확실 | 공식 | PM2.5는 각질형성세포에서 피라그린(FLG), 로리신, 케라틴-1 등 피부 장벽 단백질을 억제하며, 이는 TNF-α 매개 경로로 이루어진다. |  |
+| `pm25-tnf-alpha-aryl-hydrocarbon-receptor-pathway-inflammation` | 확실 | 공식 | PM2.5 유발 피라그린 억제는 TNF-α 증가와 아릴 탄화수소 수용체(AhR) 활성화를 통해 매개되며, 이는 전신 염증 신호로 증폭된다. |  |
+| `pm25-transepidermal-water-loss-tewl-increase-barrier-dysfunction` | 확실 | 공식 | PM2.5 노출 후 경표피수분손실(TEWL)이 현저히 증가하며, 이는 피부 장벽 손상을 직접 반영한다. |  |
+| `pm25-oxidative-stress-ros-production-lipid-peroxidation` | 확실 | 공식 | PM2.5는 활성산소(ROS) 생성을 촉진하여 지질 과산화, DNA 손상, 단백질 카보닐화를 유발하며, 이는 세포 기능 손상과 노화를 가속한다. |  |
+| `pm25-geographic-comparison-denver-seoul-filaggrin-degradation-products` | 확실 | 공식 | 저 PM2.5 지역(덴버)에서 고 PM2.5 지역(서울)으로 이주한 피험자의 피부 테이프 스트리핑 샘플에서 피라그린 분해 산물이 현저히 감소했으며, 이는 높은 PM 노출이 피부 장벽 단백질 감소와 연관됨을 시사한다. |  |
+| `pm25-skin-disease-association-atopic-dermatitis-psoriasis-acne-exacerbation` | 확실 | 공식 | PM2.5 노출은 아토피 피부염, 건선, 여드름 악화와 양의 상관관계를 보이며, 기존 피부 질환이 있는 경우 증상이 더욱 심화된다. |  |
+| `pm25-protection-antioxidant-skincare-cleansing-importance` | 논쟁 🔶 | 공식 | PM2.5 손상을 완화하기 위해서는 항산화 스킨케어 성분(비타민 C, 폴리페놀 등)과 저녁 세정 시 각질층의 입자 제거(이중 세정)가 중요하다. |  |
+
+### 레이저 시술 후 자외선 차단: PIH 위험과 차단 강도 차이 <sub>2026-08-11 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `laser-induced-pih-mechanism-melanocyte-disruption` | 확실 | 공식 | 레이저 시술로 인한 색소침착(PIH)은 고플루언스(8~10 J/cm² 이상)와 단펄스폭(<5ms) 시 기저층 멜라닌세포가 손상되어 장시간 염증 신호가 유지되기 때문이다. |  |
+| `laser-treatment-fluence-pih-risk-stratification` | 확실 | 공식 | 레이저 시술의 PIH 위험은 플루언스(에너지 밀도) 수준에 따라 명확히 층화된다: 8~10 J/cm² 이상의 고플루언스, 짧은 펄스폭, 저파장(532nm) 조합이 가장 높은 PIH 발생률을 보인다. |  |
+| `uva-i-wavelength-pih-amplification-inflammatory-phase` | 확실 | 공식 | 염증 단계에서 UVA-I(340~400nm) 자외선 노출은 염증 신호를 증폭시켜 PIH 발생 및 악화를 직접 유도한다. |  |
+| `skin-barrier-recovery-timeline-post-laser-16-hours` | 확실 | 공식 | 레이저 시술 후 피부 장벽은 16시간 내에 기본적 회복을 시작하지만, 세포 수준의 미세한 구조(초공 폐쇄)는 완전히 복구되지 않는다. |  |
+| `post-laser-spf-50-recommendation-3-6-months-duration` | 확실 | 공식 | 레이저 시술 후 2주 내 SPF 50 이상 광범위 선크림(PA+++) 사용이 권고되며, 최소 3~6개월 지속해야 PIH 위험을 충분히 감소시킬 수 있다. |  |
+| `post-laser-broad-spectrum-uva-pa-plus-critical` | 확실 | 공식 | 레이저 후 선크림은 단순 SPF 수치보다 broad-spectrum(UVA 차단) 표시와 PA+++ 이상이 더 중요하며, 이는 PIH 악화의 주 원인인 UVA-I 노출을 차단해야 하기 때문이다. |  |
+| `post-laser-uv-exposure-wound-healing-delayed-fibrosis` | 확실 | 공식 | 레이저 후 자외선 노출은 상처 치유를 지연시키고 더 깊고 국소적인 피부 손상(constricted wound)을 유발하며, 섬유화 정도를 심화시킨다. |  |
+
+### 임신 중 안전한 스킨케어: 국소 성분별 안전성, 금기, 대체 옵션 <sub>2026-08-11 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `topical-retinoids-all-types-acog-aad-avoid-pregnancy` | 확실 | 공식 | 국소 레티노이드(트레티노인, 아다팔렌, 타자로텐) 사용을 임신 중 피하도록 권장된다. 경구 레티노이드는 알려진 기형 유발 위험이 있으며, 국소 레티노이드는 소량 흡수 위험을 예방 원칙으로 금지한다. |  |
+| `topical-tretinoin-fda-category-c-australia-category-d` | 확실 | 공식 | 트레티노인은 FDA 분류 C(동물 연구에서 기형 위험 없음, 인간 임상시험 부재), 호주 TGA 분류 D(태자 손상 증거가 있거나 의심됨)로 규정이 국가마다 다르다. |  |
+| `salicylic-acid-topical-otc-2-percent-or-less-acog-safe-pregnancy` | 확실 | 공식 | OTC 살리실산(BHA) 2% 이하의 국소 사용은 임신 중 안전한 것으로 간주되며, 특히 씻어내는 제품(세정제, 부스터)에서 더욱 안전하다. |  |
+| `glycolic-acid-aha-7-percent-or-less-safe-pregnancy` | 논쟁 🔶 | 후기 | 글리콜산(AHA) 7% 이하 농도는 임신 중 안전한 것으로 간주되며, OTC 제품 대부분이 이 범위 내에 있다. |  |
+| `vitamin-c-niacinamide-hyaluronic-acid-peptides-pregnancy-safe` | 논쟁 🔶 | 후기 | 비타민C, 나이아신아마이드, 히알루론산, 펩타이드는 임신 중 사용 가능한 성분으로 간주되며, 이들을 포함한 OTC 제품 사용을 피할 명확한 이유가 없다. |  |
+| `azelaic-acid-benzoyl-peroxide-acog-safe-pregnancy-alternatives` | 확실 | 공식 | 아젤라산(azelaic acid)과 벤조일 퍼옥사이드(benzoyl peroxide)는 임신 중 여드름 치료의 안전한 대체제로 명시되어 있다. |  |
+| `oral-isotretinoin-accutane-absolute-contraindication-pregnancy` | 확실 | 공식 | 경구 이소트레티노인(isotretinoin, 아큐테인)은 심각한 기형 유발 위험(중추신경계, 심장, 면역 결손)이 있어 임신 중 절대 금기이며, FDA에서 가장 엄격한 임신 금지 약물(Risk Evaluation and Mitigation Strategy, REMS/iPLEDGE)로 지정되어 있다. |  |
 
 ### 단백질 트리트먼트와 손상모: 복구 기전과 한계(과잉 사용의 위험) <sub>2026-08-10 · 뷰티_protein-treatment-hair-damage</sub>
 
@@ -5464,6 +5840,16 @@ _(팩트 없음)_
 | `pyroctone-olamine-efficacy-vs-ketoconazole-tolerability` | 확실 | 공식 | 피루옥톤올아민과 케토코나졸(2%)을 비교한 연구에서 둘 다 4주 후 비듬을 유의하게 감소시켰으나, 피루옥톤올아민이 더 우수한 모발 품질 개선과 두피 자극 감소를 보였다. | 글로벌 |
 | `antidandruff-shampoo-malassezia-efficacy-vs-androgenetic-alopecia-efficacy` | 확실 | 공식 | 비듬 제거용 샴푸(항진균 성분)와 탈모 완화용 샴푸(영양 성분)는 기전이 다르므로, 비듬이 없는 사람의 탈모 치료에 항진균 샴푸 효과는 제한적이다. | 글로벌 |
 
+### 스킨케어 바르는 순서: 점도 순서가 흡수에 미치는 실제 영향 <sub>2026-08-11 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `skincare-layering-viscosity-order-evidence-based-principle` | 논쟁 🔶 | 후기 | 가벼운 것(세럼)부터 무거운 것(크림) 순서로 바르는 점도 순서 원칙은 피부 침투 물리학에 기반하며, 역순 사용은 흡수 효율을 감소시킨다. |  |
+| `oil-before-water-blocks-hydrophilic-penetration-hydrophobic-seal` | 확실 | 공식 | 유성 제품(크림, 오일)을 수성 제품(세럼, 토너)보다 먼저 바르면 소수성 배리어가 형성되어 친수성 유효 성분의 침투가 차단될 수 있다. |  |
+| `molecular-weight-500-dalton-stratum-corneum-passive-diffusion-cutoff` | 확실 | 공식 | 분자량 500달톤 이하의 분자는 수동 확산(passive diffusion)으로 각질층을 투과할 가능성이 높지만, 포뮬레이션 비히클, pH, 도포 순서가 실제 흡수 속도에 큰 영향을 미친다. |  |
+| `active-ingredient-diffusion-peak-first-minutes-30-60-seconds-optimal` | 논쟁 🔶 | 후기 | 임상 시험에서 대부분의 제품의 확산은 도포 후 처음 몇 분 안에 일어나며, 30~60초가 다음 제품 도포 최적 간격이다. |  |
+| `conflicting-ph-immediate-succession-reduces-both-efficacy` | 논쟁 🔶 | 후기 | pH 요구 조건이 다른 두 제품을 연속으로(간격 없이) 바르면, 첫 제품의 pH 환경이 두 번째 제품의 pH로 중화되어 두 제품 모두 효과가 감소할 수 있다. |  |
+
 ### SPF 30과 50의 실제 차이: 차단율 곡선, 증분 이득, 도포량 영향 <sub>2026-08-10 · 뷰티_spf-pa-increment-real-benefit</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -5484,6 +5870,29 @@ _(팩트 없음)_
 | `sulfur-systemic-absorption-safety-1-percent` | 확실 | 공식 | 국소 도포된 유황의 약 1%만 전신 흡수되므로 전신 부작용 위험은 낮다. |  |
 | `sulfur-korea-oci-status-cosmetic-ingredient` | 확인실패 | 공식 | 한국 식약처 기준으로 유황은 화장품 성분으로 허용되며, OCI(화장품 성분) 목록에 등재되어 있다. |  |
 
+### 여름 피지 관리: 온도와 피지 분비의 관계, 과세정의 역효과 <sub>2026-08-11 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `skin-temperature-sebum-excretion-rate-dose-response-1-degree-celsius-10-percent` | 확실 | 공식 | 피부 온도가 1℃ 상승할 때마다 피지 분비량이 약 10% 증가하는 선형 용량-반응 관계가 있으며, 이는 1970년대 연구 이래 반복 입증된 확실한 현상이다. |  |
+| `summer-32-celsius-skin-oiliness-inflammation-markers-increase` | 확실 | 공식 | 32℃ 환경 노출 시 피부 온도 상승으로 인해 유분감(oiliness), 끈기(stickiness), 염증 지표가 증가하고, 피부가 '상큼함' 또는 '갈증'을 느끼는 정도가 감소한다. |  |
+| `humidity-sebaceous-glands-stimulation-oil-output-worsening-acne` | 논쟁 🔶 | 후기 | 높은 습도는 피지선을 직접 자극하여 피지 분비를 증가시키고, 특히 고온+고습 조건에서 아크네 악화가 뚜렷하다. |  |
+| `over-washing-strips-barrier-rebound-sebum-production-cycle` | 확실 | 공식 | 과도한 세정은 피부 자연 유막을 제거해 경표피수분손실(TEWL)을 증가시키고, 피부가 더 많은 피지로 보상하는 '리바운드 피지 분비'를 야기한다. |  |
+| `tewl-transepidermal-water-loss-frequent-washing-strong-surfactants` | 확실 | 공식 | 강한 계면활성제(harsh surfactants)로 하루 2회 이상 세정하면 TEWL(경표피수분손실)이 증가하여 피부가 건조해지고, 이에 따른 보상 피지 분비가 일어난다. |  |
+| `aad-face-washing-101-twice-daily-with-gentle-cleanser` | 확실 | 공식 | AAD(미국 피부과학회) '얼굴 세정 101' 공식 안내에서 아침과 저녁 2회 온화한 클렌저 사용을 권장하며, 과도한 세정은 피부 장벽을 약화시키고 피지 과다 분비를 초래한다고 명시한다. |  |
+
+### 아이 선크림: 나이별 사용 기준과 성분 선택 <sub>2026-08-11 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `infant-sunscreen-6-months-fda-contraindication-absolute` | 확실 | 공식 | FDA는 생후 6개월 미만 영아에 선크림 사용을 권고하지 않으며, 반드시 필요한 경우는 의사와 상담 후 진행해야 한다. |  |
+| `infant-6-months-sunscreen-spf-15-broad-spectrum-fda-recommendation` | 확실 | 공식 | FDA는 생후 6개월 이상 영아에 SPF 15 이상의 광범위(broad-spectrum) 선크림 사용을 권고하며, 성인 기준과 동일하다. |  |
+| `mineral-sunscreen-zinc-oxide-titanium-dioxide-infant-safe-grase-25-percent` | 확실 | 공식 | FDA는 산화아연과 이산화티탄을 최대 25%까지 GRASE(Generally Recognized As Safe and Effective)로 지정했으며, 이는 영아와 민감한 피부 아이에게 가장 안전한 선택이다. |  |
+| `children-atopic-dermatitis-eczema-zinc-oxide-anti-inflammatory-benefit` | 확실 | 공식 | 습진·아토피 피부염이 있는 아이는 산화아연의 항염증 작용(TNF-α 억제)과 미성숙한 피부 장벽 비침습성 때문에 산화아연 함유 선크림이 특히 권고된다. |  |
+| `children-sunscreen-avoid-paba-fragrance-oxybenzone` | 확실 | 공식 | 아이 선크림에서 피해야 할 성분은 PABA(알레르기 위험), 향료(민감 반응), 옥시벤존(호르몬 우려)이다. |  |
+| `children-sunscreen-reapplication-2-hours-water-exposure-60-minutes` | 확실 | 공식 | 아이용 선크림은 2시간마다 재도포하며, 수영·물놀이 후는 60분 이내에 재도포해야 한다. |  |
+| `children-skin-barrier-maturation-timeline-5-years-comparable-adult` | 확실 | 공식 | 아이의 피부 장벽은 만 5세경 성인 수준에 도달하며, 그 전까지는 피부 두께와 각질층 발달이 미완성 상태다. |  |
+
 ### 자외선차단 지수의 과학: SPF·PA 측정 방식, 표준 도포량(2mg/cm²) vs 실제 도포량, 식약처 기능성화장품 기준 <sub>2026-08-10 · 뷰티_sunscreen-spf-pa-science</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -5493,6 +5902,18 @@ _(팩트 없음)_
 | `spf-real-world-application-dose-gap-0-5-1-0-mg-cm2` | 확실 | 공식 | 일반인의 평균 도포량은 0.5~1.0mg/cm²이므로, 표시된 SPF의 실제 효과는 1/4에서 1/2 수준이다. 예: SPF50 제품은 실제 SPF12~25만 제공한다. |  |
 | `sunscreen-waiting-time-15-minutes-before-uv-exposure` | 확실 | 공식 | 도포 후 최소 15분 이상의 대기 시간이 필요하며, 이는 제품이 피부에 안정적으로 정착하는 데 필요한 시간이다. |  |
 | `sunscreen-reapplication-frequency-2-hours-water-exposure` | 확실 | 공식 | 표준 선크림은 2시간마다 재도포가 권장되며, 수영이나 땀 노출 시에는 즉시 재도포가 필요하다. |  |
+
+### 선크림 제형 비교: 크림·젤·스틱·스프레이의 성능·흡수·도포감 차이 <sub>2026-08-11 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `sunscreen-formulation-base-spf-efficacy-invariant-dose-2mg-cm2` | 확실 | 공식 | 제형(크림·젤·스틱·스프레이)이 무엇이든 표준 도포량(2mg/cm²)을 유지하면 SPF 50은 모두 동일하게 UVB의 약 98%를 차단하며, 제형 기반이 자외선 차단 성능을 결정하지 않는다. |  |
+| `sunscreen-cream-occlusive-barrier-formulation-higher-tewl-retention` | 확실 | 공식 | 크림 기반 선크림은 높은 오일 함량으로 피부 표면에 더 두터운 배리어를 형성하여 경표피수분손실(TEWL)을 더 많이 억제하고, 유효 성분을 더 오래 유지한다. |  |
+| `sunscreen-gel-fast-absorption-cosmetic-elegance-transepidermal-retention-lower` | 확실 | 공식 | 젤 기반 선크림은 낮은 오일 함량으로 빠른 흡수와 매트한 마감감을 제공하지만, TEWL 억제 효과는 크림보다 낮고 유효 성분이 더 빠르게 피부 깊숙이 흡수되거나 휘발된다. |  |
+| `sunscreen-stick-formulation-application-consistency-challenge` | 논쟁 🔶 | 후기 | 스틱형 선크림은 휴대 편의성이 높지만, 도포량 조절이 어려워 많은 사용자가 권장량(2mg/cm²)보다 적게 바르는 경향이 있으며, 이로 인해 실제 SPF 성능이 표시보다 20~30% 낮아질 수 있다. |  |
+| `sunscreen-spray-formulation-uneven-distribution-efficacy-reduction` | 논쟁 🔶 | 후기 | 스프레이형 선크림은 고르지 않은 분사로 인해 일부 부위는 과다 도포되고 일부는 과소 도포되는 경향이 있으며, 이로 인해 평균 SPF가 표시값보다 25~35% 낮아질 수 있다. |  |
+| `sunscreen-organic-vs-mineral-durability-water-activity-difference` | 확실 | 공식 | 유기(화학) 자차는 무기(광물) 자차보다 물·발한에 대한 결합력이 더 강하여 동일 'water-resistant' 표시 조건에서 더 오래 지속되는 경향이 있다. |  |
+| `sunscreen-reapplication-frequency-formulation-dependent-3-4-hours-guideline` | 논쟁 🔶 | 후기 | 선크림의 재도포 권장 주기(2~3시간 vs 3~4시간)는 제형에 따라 다르며, 크림은 지속성이 높고 젤·스프레이는 빠른 재도포가 필요한 경향이 있다. |  |
 
 ### 내수성 선크림 표시: 40분 vs 80분 테스트 기준, 규제 정의, 현실성 <sub>2026-08-10 · 뷰티_sunscreen-water-resistant</sub>
 
@@ -5536,6 +5957,16 @@ _(팩트 없음)_
 | `iso-24444-24442-measurement-standard` | 확실 | 공식 | ISO 24444는 in vivo SPF(UVB) 측정 표준이며, ISO 24442는 in vivo UVAPF(UVA) 측정 표준이다. 유럽과 많은 국가에서 이 표준을 채택하고 있다. |  |
 | `uva-penetration-photoaging-collagen-elastin` | 확실 | 공식 | UVA는 표피층을 투과해 진피층까지 깊이 침투하며, 진피의 콜라겐과 엘라스틴을 직접 손상시켜 주름, 처짐, 탄력 손실 등 광노화를 유발한다. |  |
 
+### 비타민C와 레티놀 병용: pH 충돌, 효과 최적화, 아침·저녁 분리 필요성 <sub>2026-08-11 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `l-ascorbic-acid-vs-retinol-ph-compatibility-mismatch` | 논쟁 🔶 | 후기 | L-아스코르브산(pH 2.5~3.5)과 레티놀(pH 5.5~6.0)은 최적 작동 pH가 다르므로, 같은 제형에서 한 성분이 다른 성분의 효과를 저해할 가능성이 있다. |  |
+| `vitamin-c-derivative-no-ph-conflict-with-retinol` | 확실 | 공식 | 비타민C 유도체(소듐 아스코르브산포스페이트, 아스코르빌글루코사이드, 마그네슘 아스코르브산포스페이트)는 중성 pH에서 작동하므로 레티놀과 pH 충돌이 없다. |  |
+| `morning-retinol-vitamin-c-evening-dermatologist-protocol` | 확실 | 공식 | 아침에 비타민C, 저녁에 레티놀을 사용하는 분리 프로토콜이 피부과 업계에서 권장된다. |  |
+| `vitamin-c-morning-photoprotection-retinol-night-repair-rationale` | 확실 | 공식 | 비타민C는 아침에 환경 손상에 대한 항산화 방어를 제공하고, 레티놀은 야간에 피부 자극 과민성 없이 세포 재생을 촉진하는 것이 권장되는 이유다. |  |
+| `combined-vitamin-c-retinol-formulation-stability-challenge-not-efficacy-block` | 확인실패 | 공식 | 현대 연구에서 L-아스코르브산과 레티놀을 같은 포뮬레이션에 안정화시키는 것은 화학적 안정성 도전이지, 효과 감소의 직접적 증거는 명확하지 않다. |  |
+
 ### 위치하젤: 수렴 토너 성분의 실제 작용과 알코올 이슈 <sub>2026-08-10 · 뷰티_witch-hazel-toner</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -5545,6 +5976,16 @@ _(팩트 없음)_
 | `witch-hazel-alcohol-content-14-15-percent-irritant` | 확실 | 공식 | 상업용 위치하젤 토너는 주로 알코올로 추출·보존되며, 14~15% 알코올을 함유한다. |  |
 | `witch-hazel-no-acne-benefit-proven` | 확인실패 🔶 | 후기 | 피부과 평가에 따르면 위치하젤의 수렴 작용은 여드름 유발 미생물 제어에 효과적이지 않은 것으로 알려져 있다. |  |
 | `witch-hazel-alcohol-free-formulation-tannin-retention` | 논쟁 🔶 | 후기 | 무알코올 위치하젤 제품은 알코올의 자극을 제거하면서도 타닌의 항염증·수렴 효과를 유지한다. |  |
+
+### 미백 성분이 주름 관리에도 쓰이는 이유: 항산화·콜라겐·단백질 당화 메커니즘 <sub>2026-08-11 · wrinkle-fading-mechanism</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `niacinamide-collagen-stimulation-wrinkle-fine-line-mechanism` | 확실 | 공식 | 나이아신아마이드(비타민B3)는 콜라겐 합성을 촉진하여 피부 탄력성과 팽팽함을 증진시키며, 이는 주름과 세선 개선의 기본 메커니즘이다. |  |
+| `niacinamide-protein-glycation-collagen-elastin-crosslinking-prevention` | 확실 | 공식 | 나이아신아마이드는 단백질 당화(protein glycation)를 억제하여 교차결합된 콜라겐과 엘라스틴 분자의 축적을 감소시킨다. 교차결합된 콜라겐은 딱딱하고 뻣뻣한 특성을 가지므로, 당화 억제는 피부의 유연성(viscoelastic properties) 회복을 의미한다. |  |
+| `niacinamide-barrier-strengthening-ceramide-lipid-hydration-fine-line-reduction` | 확실 | 공식 | 나이아신아마이드는 세라마이드와 피부 지질 합성을 촉진하여 피부 장벽을 강화하고, 수분 보유력을 높인다. 잘 수분공급된 피부는 세선과 주름이 덜 두드러진다. |  |
+| `niacinamide-12-week-fine-line-improvement-21-percent-clinical-study` | 확실 | 공식 | 12주 임상 시험에서 5% 나이아신아마이드 에멀젼은 세선을 21% 개선했으며, 피부 톤 명도와 광택도 각각 14%, 15% 개선되었다. |  |
+| `whitening-ingredients-overlap-wrinkle-mechanism-antioxidant-collagen-barrier-common` | 확실 | 공식 | 미백 성분(트라넥삼산, 아젤라산, 알부틴 등)이 주름 개선에도 쓰이는 이유는 항산화·콜라겐 보호·피부 장벽 강화라는 공통 메커니즘 때문이다. 색소 과잉생성과 주름 심화는 모두 산화 스트레스와 콜라겐 손상이 근본이므로, 이들 성분은 양쪽에 작용할 수 있다. |  |
 
 ### 산화아연과 이산화티탄의 무기 자차 비교: 파장 커버리지, 백탁, 효과 차이 <sub>2026-08-10 · 뷰티_zinc-oxide-vs-titanium</sub>
 
@@ -5671,6 +6112,24 @@ _(팩트 없음)_
 | `gerd-proton-pump-inhibitor-bedtime-dosing` | 확실 | 공식 | 역류성 식도염의 약물 치료(양성자펌프억제제, PPI)는 자기 전에 복용하는 것이 야간 역류 방지에 더 효과적이다 |  |
 | `gerd-red-flag-symptoms-doctor-visit` | 확실 | 공식 | 밤마다 가슴 쓰림이 수면을 방해하거나, 2주 이상 지속되는 역류 증상, 삼킴곤란, 검은 변 등은 소화기내과 진료가 필요하다 |  |
 
+### 매트리스 위생과 진드기: 침구 청결의 과학 <sub>2026-08-11 · mattress-hygiene-dust-mites</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `dust-mites-what-they-are` | 확실 | 공식 | 먼지진드기(house dust mites)는 미시적 해충으로 죽은 피부 세포를 먹이로 하며 습한 환경에서 번식한다. 사람들이 알레르기 반응을 보이는 것은 진드기 자체가 아니라 진드기의 배설물, 소변, 시체에서 나오는 단백질이다. | 수면 / gear / 진드기 정의 / 2026 / 미국 |
+| `dust-mites-asthma-trigger` | 확실 | 공식 | 먼지진드기는 실내 천식 유발 요소 중 선두 주자이며, 민감한 천식 환자에게 심각한 발작을 야기할 수 있다. | 수면 / gear / 건강 영향 / 2026 / 미국 |
+| `dust-mite-home-prevalence` | 확실 | 공식 | 미국 가정의 약 80%(4/5)에서 최소한 한 침대의 먼지진드기 알레르겐이 검출된다. | 수면 / gear / 유병률 / 2026 / 미국 |
+| `daily-vacuuming-allergen-reduction` | 확실 | 공식 | 8주간 매일 매트리스를 청소기로 청소한 결과 먼지진드기 알레르겐이 85.1% 감소했다(Journal of Asthma, 2012, n=20가정). | 수면 / gear / 청소 효과 / 2012 / 미국 |
+| `daily-vacuuming-endotoxin-reduction` | 확실 | 공식 | 같은 8주 연구에서 세균 내독소(endotoxin)는 71.0% 감소했다. | 수면 / gear / 세균 오염 / 2012 / 미국 |
+| `daily-vacuuming-fungal-reduction` | 확실 | 공식 | 곰팡이 베타글루칸(β-glucan)은 8주 청소로 75.7% 감소했다. | 수면 / gear / 곰팡이 감소 / 2012 / 미국 |
+| `mattress-cleaning-frequency-recommendation` | 확실 | 공식 | 매트리스 표면은 최소한 1~2주마다 한 번 청소기로 청소하고, 천식이나 알레르기가 있으면 더 자주(2주마다 권장). 종합적 청소는 1년에 최소 2회, 매일 사용하는 침대면 3개월마다 이상적이다. | 수면 / gear / 청소 주기 / 2026 / 일반 |
+| `humidity-control-dust-mite-prevention` | 확실 | 공식 | 먼지진드기는 습도가 50% 이하일 때 번식이 어렵다. 진드기는 음식이나 물을 마시지 않고 공기 중 습도에서 수분을 흡수하기 때문에, 에어컨이나 제습기로 습도를 제어하는 것이 중요하다. | 수면 / gear / 환경 제어 / 2026 / 미국 |
+| `bedding-wash-temperature-frequency` | 확실 | 공식 | 침구류는 주 1회 최소 화씨 120도(섭씨 약 49도) 이상의 뜨거운 물에 세탁해야 진드기와 알레르겐을 효과적으로 제거할 수 있다. | 수면 / gear / 침구 세탁 / 2026 / 미국 |
+| `allergen-proof-encasement-recommendation` | 확실 | 공식 | 매트리스와 베개에 알레르겐 방지 커버(allergen-proof encasement)를 사용하는 것이 먼지진드기 노출을 줄이는 효과적인 방법이다. | 수면 / gear / 물리적 차단 / 2026 / 미국 |
+| `vacuum-vs-covers-cost-benefit` | 확실 | 공식 | 매일 청소기질(vacuuming)은 비싼 알레르겐 방지 매트리스 커버에 비해 실용적이고 저렴한 대안으로, 특히 알레르기나 천식이 있는 사람에게 유용하다. | 수면 / gear / 방법 선택 / 2012 / 미국 |
+| `dust-cloth-over-dry-dusting` | 확실 | 공식 | 먼지를 제거할 때 마른 천으로 닦으면 먼지를 공기 중으로 날릴 수 있으므로, 축축한 천으로 닦아서 먼지를 잡아두는 것이 낫다. | 수면 / gear / 청소 기법 / 2026 / 미국 |
+| `mattress-replacement-cleaning-limitations` | 논쟁 🔶 | 후기 | 매트리스 진드기 문제가 심하고 청소만으로 제어가 안 되면 교체를 고려해야 할 수도 있다. 다만 청소만으로도 상당한 감소(85% 이상)를 기대할 수 있다. | 수면 / gear / 교체 판단 / 2026 / 일반 |
+
 ### 마이크로슬립의 위험성 <sub>2026-08-04 · microsleep-danger</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -5726,6 +6185,23 @@ _(팩트 없음)_
 | `rbd-parkinson-independent` | 확실 | 공식 | RBD와 파킨슨병의 관계는 독립적인 신경생물학적 경로를 따르므로, RBD가 있다고 해서 반드시 파킨슨병이 되는 것은 아니다 |  |
 | `rbd-safety-measures` | 확실 | 공식 | RBD 환자는 침실 안전 조치(날카로운 물건 제거·침대 낙상 방지·동침자 분리)와 상해 예방이 중요하다 |  |
 | `rbd-when-to-consult` | 확실 | 공식 | 자면서 큰 소리로 외치거나 폭력적인 움직임이 반복되거나, 60세 이상 남성이면 신경과 진료 및 수면다원검사를 받아야 한다 |  |
+
+### 반려동물과 함께 자기: 수면 질과 건강 영향 <sub>2026-08-11 · pet-bed-sleep</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `pet-bed-youth-sleep-duration-efficiency` | 확실 | 공식 | 침대에서 반려동물과 자는 청소년(평균 9.5세)은 반려동물이 없는 청소년보다 더 짧은 수면 시간, 낮은 수면 효율을 보인다. ActiGraph 객관 측정 기반(175가족, 2주간). | 수면 / gear / 청소년 수면 측정 / 2025 / 미국 |
+| `dog-movement-sleep-disruption` | 확실 | 공식 | 반려동물이 있는 청소년 객관 측정 결과, 개의 움직임 1분 전의 개 활동이 청소년의 밤중 움직임을 예측했으며, 이는 반려동물의 직접적 수면 방해를 시사한다. | 수면 / gear / 물리적 방해 메커니즘 / 2025 / 미국 |
+| `adult-dog-bed-sleep-quality-insomnia` | 확실 | 공식 | 성인 대상 미국 전국 표본(1,591명) 조사에서 개와 침대를 공유하는 성인은 비공유자보다 더 나쁜 주관적 수면 질과 높은 불면증 심각도를 보였다. 자가보고 기반. | 수면 / gear / 성인 수면 질 / 2024 / 미국 |
+| `cat-bed-sleep-no-negative-effect` | 확실 | 공식 | 고양이와 침대를 공유하는 성인은 개와의 공유와 달리 주관적 수면 효율에는 부정적 영향을 보이지 않았다. | 수면 / gear / 반려동물 종별 영향 / 2024 / 미국 |
+| `pet-bed-stress-buffering-not-observed` | 확실 | 공식 | 반려동물과 침대 공유가 스트레스로 인한 수면 문제를 완화한다는 이론적 예상과 달리, 연구에서는 이러한 스트레스 완충(stress-buffering) 효과의 증거를 찾지 못했다. 높은 스트레스는 반려동물 공유 여부와 무관하게 수면을 악화시켰다. | 수면 / gear / 심리적 효과 / 2024 / 미국 |
+| `pet-enterobacteriaceae-fecal-bacteria` | 확실 | 공식 | 침대를 공유하는 반려동물(n=28마리 개, 22마리 고양이) 파일로트 조사 결과 개의 86%, 고양이의 32%에서 대장균 등 분변 유래 장내세균(Enterobacteriaceae)이 털이나 발바닥에서 검출되었다. | 수면 / gear / 세균 오염 / 2022 / 미국 |
+| `pet-aerobic-bacteria-hospital-standard` | 확실 | 공식 | 침대 공유 반려동물에서 수집한 샘플의 호기성 세균 수준은 병원 위생 기준의 4~7배였다. | 수면 / gear / 세균 농도 / 2022 / 미국 |
+| `pet-flea-infestation-bed` | 확실 | 공식 | 조사 대상 반려동물의 14%(7/50마리)에서 침대 영역에서 벼룩이 발견되었다. | 수면 / gear / 기생충 / 2022 / 미국 |
+| `zoonotic-pathogen-risk-vulnerable-populations` | 확실 | 공식 | 반려동물과 침대 공유는 특히 어린이, 임산부, 면역저하자(고령자, 항암치료 중, 이식 후 등)에게 인수공통감염병(zoonotic diseases) 전파 위험이 높다. | 수면 / gear / 위험군 / 2022 / 미국 |
+| `bedsheet-wash-frequency-pet-sharing` | 확실 | 공식 | 반려동물과 침대를 공유하는 경우 침구류를 3~4일마다 세탁하는 것이 권장된다. 반려동물이 없는 경우 주 1회 세탁이 기본이다. | 수면 / gear / 위생 관리 / 2026 / 미국 |
+| `pet-allergen-dander-bedding` | 확실 | 공식 | 반려동물 각질(dander)과 알레르겐이 침구류에 트랩되어, 천식이나 알레르기성 비염이 있는 사람의 수면을 악화시킬 수 있다. | 수면 / gear / 알레르기 / 2026 / 일반 |
+| `pet-paw-contamination-study` | 확실 | 공식 | 한 연구에서 개 발바닥의 86%에서 분변 유래 세균이 검출되었으며, 이는 실내 왕래 시 침대로 전파될 수 있다. | 수면 / gear / 세균 전파 경로 / 2022 / 미국 |
 
 ### 점심 후 졸음과 커피냅 <sub>2026-07-31 · post-lunch-dip-coffee-nap</sub>
 
@@ -5940,6 +6416,23 @@ _(팩트 없음)_
 | `tinnitus-retraining-therapy-trt` | 확실 | 공식 | 이명 재훈련 치료(Tinnitus Retraining Therapy, TRT)는 이명에 대한 신경계의 자동 반응을 줄이고 적응시키는 최신 치료법으로, 대부분의 환자가 호전을 보인다 |  |
 | `tinnitus-hearing-aid-masking-benefit` | 확실 | 공식 | 청력 손실이 동반된 이명 환자는 보청기 착용이 청력을 보정하면서 동시에 음향 차폐(masking) 효과를 제공하여 수면 개선에 도움이 된다 |  |
 | `tinnitus-red-flag-sleep-depression-consultation` | 확실 | 공식 | 이명으로 인한 수면 방해가 2주 이상 지속되거나 우울증 증상(무기력, 절망감)이 동반되면, 이비인후과와 정신건강의학과 협진이 필요하다 |  |
+
+### 여행지에서 숙면하기: 낯선 곳의 수면 과학 <sub>2026-08-11 · travel-sleep-insomnia</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `first-night-effect-definition` | 확실 | 공식 | 첫 밤 효과(First-Night Effect, FNE)는 낯선 환경에서 처음 보내는 밤에 경험하는 일시적 수면 장애로, 더 긴 수면 잠복기(입면까지의 시간), 증가된 각성 시간, 단축된 총 수면 시간, 낮은 수면 효율이 특징이다. | 수면 / work / 여행 수면 현상 / 2026 / 일반 |
+| `first-night-effect-prevalence` | 확실 | 공식 | 대부분의 사람이 첫 밤 효과를 경험하고, 인식하지 못하는 사람도 미묘하게 경험한다. 평균적으로 낯선 환경에서 20~30분 적게 잔다. | 수면 / work / 수면 시간 단축 / 2026 / 일반 |
+| `fne-hemisphere-asymmetry-monitoring` | 확실 | 공식 | 첫 밤에 한쪽 뇌 반구가 깊은 수면(NREM) 중에도 더 깨어 있는 상태를 유지하며(interhemispheric asymmetry), 외부 자극에 대한 감시 시스템을 작동시킨다. 이는 진화적 생존 기제로 해석된다. | 수면 / work / 뇌 메커니즘 / 2020 / 일반 |
+| `fne-rem-sleep-vigilance` | 확실 | 공식 | REM 수면 중 첫 밤의 감시 활동은 phasic period(안구 운동이 일어나는 때)에 주로 나타나며, 낯선 환경의 소리에 대한 뇌 반응이 이틀째보다 훨씬 크다. | 수면 / work / REM 수면 감시 / 2020 / 일반 |
+| `frontal-lobe-alertness-fne` | 확실 | 공식 | 첫 밤에 깊은 수면과 관련된 전두엽의 활동이 증가하여 사람들이 더 적게 자고 더 얕게 잘 뿐만 아니라 각성 상태가 높아진다. | 수면 / work / 수면 깊이 / 2026 / 일반 |
+| `fne-age-differences` | 확실 | 공식 | 첫 밤 효과는 어린이, 청소년, 노인에서 더 두드러지며, 나이가 들수록 악화된다. 20대가 가장 적게 영향을 받는다. | 수면 / ageless / 연령별 차이 / 2026 / 일반 |
+| `chronotype-hotel-adaptation` | 확실 | 공식 | 아침형 사람(morning types)이 저녁형 사람(evening types)보다 호텔에서 불면증 증상을 더 자주 보고했다. 저녁형이 더 유연한 수면 스케줄로 새로운 환경에 더 쉽게 적응한다. | 수면 / work / 개인차 / 2026 / 일반 |
+| `familiar-scent-sleep-quality` | 확실 | 공식 | 2024년 피츠버그 대학 연구에서 개인이 긍정적이거나 편안한 연결을 가진 향기를 맡으면 부정적 생각의 악순환을 깨고 우울감을 극복하는 데 도움이 된다. | 수면 / work / 감각 적응 / 2024 / 미국 |
+| `familiar-items-sleep-cue` | 확실 | 공식 | 특정 베개 종류나 침대의 특정 방향으로 누우는 습관 같은 '수면-발생 연결(sleep-onset associations)'은 호텔에서도 수면을 촉발하는 신호로 작동하여 적응을 돕는다. | 수면 / work / 습관 신호 / 2026 / 일반 |
+| `hotel-room-temperature-optimal` | 확실 | 공식 | 호텔 수면을 개선하는 최적 실내 온도는 화씨 60~67도(섭씨 약 15.6~19.4도)이다. | 수면 / work / 환경 제어 / 2026 / 일반 |
+| `environmental-control-familiarity-routine` | 확실 | 공식 | 호텔 수면은 환경 제어와 일상적 루틴 일관성에 집중하면 개선된다. 친숙함을 신호로 주는 행동들이 뇌에 안전과 이완을 신호한다. | 수면 / work / 적응 전략 / 2026 / 일반 |
+| `fne-multiple-nights-persistence` | 확실 | 공식 | 첫 밤 효과는 연속된 밤이 아니라 낯선 장소에서 경험하는 여러 밤에 비연속적으로 나타날 수 있다. 같은 호텔에서 2박을 하면 2박째가 개선되지만, 다른 장소로 이동하면 다시 나타난다. | 수면 / work / 적응 패턴 / 2026 / 유럽 |
 
 ## 수면과학
 
@@ -7237,7 +7730,12 @@ _(팩트 없음)_
 | 팩트 id | 인용한 조사 |
 |---|---|
 | `4k-video-shooting-sd-card-requirement` | 액션캠(고프로·오즈모류) 전원 불량·녹화 안 됨·배터리·방수 자가점검, 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
+| `adapalene-otc-retinoid` | 10대 여드름의 호르몬 기전과 연령별 성분 안전성 |
+| `adapinoid-vs-retinol-12-week-wrinkle-efficacy` | 미백 성분이 주름 관리에도 쓰이는 이유: 항산화·콜라겐·단백질 당화 메커니즘 |
+| `aha-concentration-minimum-8-percent-efficacy` | AHA와 BHA 조합: 동시 사용 안전성, 자극 누적, 권장 빈도 |
 | `aha-glycolic-acid-smallest-molecule-weight` | 만델산: 민감성 피부의 부드러운 각질 관리 |
+| `aha-ph-requirement-3-5-4-5-optimal` | AHA와 BHA 조합: 동시 사용 안전성, 자극 누적, 권장 빈도 |
+| `alpha-arbutin-vs-beta-arbutin-10-fold-potency-tyrosinase-inhibition` | 미백 성분이 주름 관리에도 쓰이는 이유: 항산화·콜라겐·단백질 당화 메커니즘 |
 | `antibiotic-probiotic-simultaneous-administration-interference` | 항생제 복용 중 유산균: 항생제 관련 설사 근거·복용 간격·실제 효과, 마그네슘과 다리 쥐: 임상적 효과 근거 수준과 특정 인구군별 차이, 프로바이오틱스 균주 특이성·CFU 함정·목적별 균주 선택, 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항 |
 | `anticoagulant-vitamin-k-interaction-thrombosis-risk` | 혈행 개선 영양제와 수술·시술 전 주의, 항혈소판·항응고 병용 위험, 코엔자임Q10(CoQ10)의 스타틴 근육통 완화 임상 근거 및 형태별 차이, 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항, 커큐민(강황): 생체이용률 개선 기술과 간 이상사례 보고의 신뢰도, 비타민K2의 뼈 건강 기전과 항응고제 금기 |
 | `app-performance-class-definition` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
@@ -7252,6 +7750,8 @@ _(팩트 없음)_
 | `astaxanthin-recommended-dosage-4-6mg-daily` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
 | `autoimmune-disease-supplement-contraindication` | 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항 |
 | `automatic-stop-timer` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
+| `azelaic-acid-15-percent-post-inflammatory-hyperpigmentation-pih` | 미백 성분이 주름 관리에도 쓰이는 이유: 항산화·콜라겐·단백질 당화 메커니즘 |
+| `azelaic-acid-acne-redness` | 면도 후 피부 자극(가성모낭염) 메커니즘 및 회복, 10대 여드름의 호르몬 기전과 연령별 성분 안전성 |
 | `b-complex-supplement-vegan-vegetarian-necessity` | 비타민B12 채식인 섭취: 흡수 기전, 결핍 지표, 강화식품 vs 미신 |
 | `battery-annual-reset-full-discharge` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |
 | `battery-charging-adapter-verification` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석, 휴대용 손선풍기(핸디형·넥밴드형) AS셀프체크: 충전안됨·안돌아감·약풍·소음·배터리팽창, 마사지건(안마건) 자가점검·배터리·안전, 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
@@ -7266,25 +7766,44 @@ _(팩트 없음)_
 | `beater-bowl-clearance-adjustment` | 제빵기(홈베이커리) 반죽 안 섞임·안 부풀음·겉만 탐·패들 박힘·세척 자가점검 |
 | `behavioral-insomnia-clinical-management` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `behavioral-model-infant-sleep-disturbance` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
+| `benzoyl-peroxide-acne` | 10대 여드름의 호르몬 기전과 연령별 성분 안전성 |
+| `benzoyl-peroxide-oxidative-mechanism-bacteria` | 성인 호르몬성 여드름: 발생 부위, 병인, 10대와의 차이, 국소 치료의 한계 |
+| `bha-concentration-1-2-percent-efficacy` | AHA와 BHA 조합: 동시 사용 안전성, 자극 누적, 권장 빈도 |
+| `bha-safety-adverse-effects-minimal` | AHA와 BHA 조합: 동시 사용 안전성, 자극 누적, 권장 빈도 |
 | `bidet-circuit-breaker-leakage-protection` | 비데 자가점검 2차 — 물·온수·누수·동파·노즘 기계 고장 |
 | `bidet-water-stoppage-check-steps` | 비데 자가점검 2차 — 물·온수·누수·동파·노즘 기계 고장 |
+| `biotin-deficiency-clinical-benefit-limited-to-deficiency-state` | 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 |
+| `biotin-deficiency-prevalence-hair-loss-women-38percent` | 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 |
 | `blade-extremely-sharp-cutting-risk` | 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
 | `calcium-absorption-vitamin-d-magnesium-synergy` | 칼슘 보충제 흡수: 형태별 생물이용률, 1회 최대 흡수량, 마그네슘 병용 효과, 성장 관련 기능성 원료 인정 현황, 연령별 상한섭취량, 성장 보충제 선택 기준, 음식으로 먹을 때 vs 영양제로 먹을 때: 생체이용률, 식품 매트릭스 효과, 흡수 차이, 한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량 |
 | `calcium-iron-competitive-absorption-spacing` | 칼슘 보충제 흡수: 형태별 생물이용률, 1회 최대 흡수량, 마그네슘 병용 효과, 프리바이오틱스·신바이오틱스: 정의·구성 기준·함량·부작용, 임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성 |
 | `camera-lens-cleaning-method` | 액션캠(고프로·오즈모류) 전원 불량·녹화 안 됨·배터리·방수 자가점검, 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `camera-lens-fog-condensation` | 액션캠(고프로·오즈모류) 전원 불량·녹화 안 됨·배터리·방수 자가점검, 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `camera-write-speed-importance` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
+| `capsaicin-resting-metabolic-rate-33-99kcal-increase` | 기초대사와 관련 성분들: 정의·측정·실제 효과의 괴리 |
+| `capsaicin-trpv1-channel-activation-mechanism` | 기초대사와 관련 성분들: 정의·측정·실제 효과의 괴리 |
+| `capsaicin-weight-loss-effect-small-magnitude-modest` | 기초대사와 관련 성분들: 정의·측정·실제 효과의 괴리 |
 | `card-reader-sdxc-compatibility-requirement` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `card-reader-usb3-speed-advantage` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
+| `carnitine-cpt1-mitochondrial-transport-mechanism` | 기초대사와 관련 성분들: 정의·측정·실제 효과의 괴리 |
+| `carnitine-oral-bioavailability-14-18-percent-low` | 기초대사와 관련 성분들: 정의·측정·실제 효과의 괴리 |
+| `carnitine-weight-loss-37-rct-meta-analysis-1-21kg` | 기초대사와 관련 성분들: 정의·측정·실제 효과의 괴리 |
 | `centella-asiatica-scar-treatment-280-patient-rct` | 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드, 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드 |
+| `centella-wound-repair` | 마스크 착용으로 인한 피부 자극(마스크네) 메커니즘 및 회복, 면도 후 피부 자극(가성모낭염) 메커니즘 및 회복, 민감성 피부의 정의, 기전 및 진정 전략 |
+| `ceramide-barrier-restoration-randomized-trial` | 환절기 피부 건조 및 각질 메커니즘 |
+| `ceramide-stratum-corneum-composition-50percent` | 환절기 피부 건조 및 각질 메커니즘 |
 | `chair-power-reboot` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `channel-interference-2g4ghz-vs-5ghz` | 가정용 CCTV·홈캠 연결 안 됨·영상 끊김·녹화 안 됨 자가점검, 스마트 플러그(스마트 콘센트) 와이파이 연결 안 됨·앱 인식·원격 제어 불가 자가점검, 와이파이 느려짐 진단: 속도측정·채널 간섭·대역 선택 |
 | `charging-adapter-damage-check` | 전기면도기 자가점검·날 관리·물세척·회전식vs왕복식·충전 불량, 헤어클리퍼(이발기) 자가점검·날 관리·오일링·청소·충전 불량, 구강세정기·워터픽 자가점검 — 물 안 나옴·약함·충전 불량·노즐 막힘·물새는 증상·잇몸 출혈·관리 |
 | `charging-disabled-high-temperature` | 배터리 충전 통념 팩트체크: 고속충전·100% 충전·0% 방전·밤새 충전·발열의 실제 영향 |
 | `charging-heat-accelerates-degradation-above-60celsius` | 포터블 파워스테이션 충전 안 됨·출력 안 됨·발열·배터리 팽창 자가점검 및 보관 기준 |
 | `charging-inductive-position` | 구강세정기·워터픽 자가점검 — 물 안 나옴·약함·충전 불량·노즐 막힘·물새는 증상·잇몸 출혈·관리 |
+| `chemical-sunscreen-lighter-better-cosmetic-feel-no-whitcast` | 선크림 제형 비교: 크림·젤·스틱·스프레이의 성능·흡수·도포감 차이 |
 | `chondroitin-cartilage-matrix-protease-inhibition` | 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과 |
 | `chondroitin-gait-combined-subgroup-efficacy-same-as-glucosamine` | 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과 |
+| `cla-3point2g-body-fat-loss-modest-dose-response` | 기초대사와 관련 성분들: 정의·측정·실제 효과의 괴리 |
+| `cla-body-composition-effect-size-clinical-significance-limitation` | 기초대사와 관련 성분들: 정의·측정·실제 효과의 괴리 |
+| `cla-mechanism-adipocyte-lipolysis-fat-oxidation` | 기초대사와 관련 성분들: 정의·측정·실제 효과의 괴리 |
 | `coating-damage-30-percent-threshold` | 전기그릴·전기팬 자가점검 — 안 뜨거움·연기·눌어붙음·코팅 손상 |
 | `coliform-bacteria-presence-disqualifies-drinking` | 반려동물 자동급수기(정수 급수기) 살 만한가 — 트렌드랩 |
 | `common-induction-cooktop-crack-hazard` | 하이라이트(전열식) 전기레인지 가열 불량·에러 표시·자가점검 |
@@ -7296,6 +7815,7 @@ _(팩트 없음)_
 | `compressed-dehumidifier-characteristics` | 제습기 자가점검: 물이 안 차임·제습 안 됨·냄새·고장 진단 |
 | `consumption-date-definition` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
 | `consumption-date-system-launch` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
+| `copper-cofactor-lysyl-oxidase-collagen-crosslinking-mechanism` | 하루 단백질 필요량과 피부·모발: 구강 섭취 vs 국소 제품의 구분 |
 | `coq10-anticoagulant-interaction-warfarin-caution` | 코엔자임Q10과 심부전, 임상 근거·스타틴 병용·심혈관 사건 예방 |
 | `coq10-ubiquinol-ubiquinone-form-difference` | 코엔자임Q10과 심부전, 임상 근거·스타틴 병용·심혈관 사건 예방 |
 | `counterfeit-battery-long-term-risk` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |
@@ -7337,12 +7857,15 @@ _(팩트 없음)_
 | `fat-soluble-vitamin-accumulation-toxicity-risk` | 미녹시딜: 국내 의약품 지위·농도·초기탈락·중단 후 재탈모, 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항, 비타민A와 야맹증·결핍 증상·과잉 독성·임신 기형 위험·상한섭취량, 한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량, 비타민E와 셀레늄: SELECT 시험 결과, 상한섭취량, 한국인 섭취 현황, 고용량 위험성, 비타민K2의 뼈 건강 기전과 항응고제 금기, 아연 보충제와 감기 기간 단축: 형태·타이밍·구리 균형 |
 | `fat-soluble-vitamin-requires-meal-absorption` | 아스타잔틴의 눈 피로·조절력 개선 임상 근거, 용량, 광고 표현, 칼슘 보충제 흡수: 형태별 생물이용률, 1회 최대 흡수량, 마그네슘 병용 효과, 오메가3의 안구건조증 개선 효과·DREAM 임상시험·인공눈물 우선순위, 영양제 제형(정제·캡슐·액상·젤리)의 흡수율 차이: 붕해·용출·당 함량, 커큐민(강황): 생체이용률 개선 기술과 간 이상사례 보고의 신뢰도, 한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량, 비타민K2의 뼈 건강 기전과 항응고제 금기 |
 | `fat-soluble-vitamin-stability` | 루테인(루테인+제아잔틴) 눈 건강 보충제의 임상 근거·효과·안전성·국내 규제, 영양제의 지용성·수용성 차이, 복용 타이밍, 성분 상호작용, 흡수율 결정 요인 |
+| `fda-broad-spectrum-designation-uva-coverage-370nm` | 레이저 시술 후 자외선 차단: PIH 위험과 차단 강도 차이 |
 | `file-system-format-exfat-overview` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
 | `file-system-format-fat32-overview` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
 | `filter-bacteria-growth-study` | 반려동물 자동급수기(정수 급수기) 살 만한가 — 트렌드랩 |
 | `filter-bacteria-threshold-exceeded` | 반려동물 자동급수기(정수 급수기) 살 만한가 — 트렌드랩 |
 | `filter-exchange-lamp-light-normal` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
 | `filter-replacement-cycle-6-12-months` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
+| `finasteride-5-alpha-reductase-type-ii-iii-inhibition` | 남성 vs 여성 탈모: 호르몬 메커니즘과 성분 효과 차이 |
+| `finasteride-pregnancy-exposure-teratogenic-risk-absolute-contraindication` | 남성 vs 여성 탈모: 호르몬 메커니즘과 성분 효과 차이 |
 | `folic-acid-high-dose-b12-deficiency-masking-risk` | 임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성 |
 | `folic-acid-neural-tube-defect-prevention-mechanism-dna-synthesis-cell-division` | 임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성 |
 | `gait-trial-overall-population-no-efficacy` | 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과 |
@@ -7350,11 +7873,14 @@ _(팩트 없음)_
 | `game-controller-pairing-reset-procedure` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
 | `game-controller-usb-port-inspection-charging-issue` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
 | `genuine-filter-lg-sensor-recognition` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검 |
+| `ghk-cu-collagen-production-fibroblast-in-vitro-mechanism` | 하루 단백질 필요량과 피부·모발: 구강 섭취 vs 국소 제품의 구분 |
 | `ginkgo-anticoagulant-bleeding-risk-surgery` | 혈행 개선 영양제와 수술·시술 전 주의, 항혈소판·항응고 병용 위험 |
 | `gla-gamma-linolenic-acid-mechanism-prostaglandin-precursor` | 생리 전 증후군(PMS) 영양소 치료: 칼슘·마그네슘·비타민B6의 임상 근거 |
 | `glucosamine-form-sulfate-vs-hydrochloride-absorption` | 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과 |
 | `glucosamine-mechanism-cartilage-matrix-synthesis` | 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과 |
+| `glycerin-humectant` | 겨울 난방과 실내 건조가 피부에 미치는 영향 |
 | `graduated-extinction-ferber-method` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
+| `hair-damage-disulfide-bond-disruption-keratin-network-loss-mechanical-strength` | 하루 단백질 필요량과 피부·모발: 구강 섭취 vs 국소 제품의 구분, 펌·매직 후 손상 모발: 화학 기전과 단계별 복구 전략 |
 | `hair-dryer-after-use-unplug-safety-practice` | 헤어 에어랩·컬링기·고데기 자가점검 — 필터 청소·과열·타는 냄새·코팅 손상 |
 | `hair-dryer-burning-smell-immediate-stop` | 헤어 에어랩·컬링기·고데기 자가점검 — 필터 청소·과열·타는 냄새·코팅 손상 |
 | `hair-dryer-filter-cleaning-monthly` | 헤어 에어랩·컬링기·고데기 자가점검 — 필터 청소·과열·타는 냄새·코팅 손상 |
@@ -7378,6 +7904,8 @@ _(팩트 없음)_
 | `humectant-humidity-dependent-efficacy-low-humidity-risk` | 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과, 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과 |
 | `humidifier-limescale-removal-citric-acid` | 가정용 제빙기 자가점검 — 얼음 안 만들어짐·얼음 작아짐·누수·냄새·소음 |
 | `humidifier-limescale-removal-vinegar` | 가정용 제빙기 자가점검 — 얼음 안 만들어짐·얼음 작아짐·누수·냄새·소음 |
+| `humidity-threshold-60percent-from-condensation-study` | 실내 곰팡이 발생 조건과 안전한 제거 및 재발 방지 |
+| `hyaluronic-acid-topical` | 겨울 난방과 실내 건조가 피부에 미치는 영향 |
 | `ice-crushing-damages-regular-blade` | 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
 | `ice-crushing-limitation-most-hand-blenders` | 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
 | `ideal-indoor-humidity-range` | 제습기 자가점검: 물이 안 차임·제습 안 됨·냄새·고장 진단, 가습기 자가점검 — 분무 안 됨·냄새·백색가루·물 종류 논쟁·살균제 주의 |
@@ -7392,8 +7920,8 @@ _(팩트 없음)_
 | `iron-absorption-alternate-day-vs-consecutive-day-2017` | 소아 면역 영양제: 비타민D·아연·철분 권장량·상한·안전성 |
 | `iron-absorption-enhancement-vitamin-c` | 음식으로 먹을 때 vs 영양제로 먹을 때: 생체이용률, 식품 매트릭스 효과, 흡수 차이 |
 | `joycon-drift-calibration-official-method` | 게임 컨트롤러(엑스박스·듀얼센스·닌텐도) PC 연결·버튼·진동·배터리 자가점검 |
-| `ketoconazole-2percent-vs-zinc-pyrithione-1percent-dandruff-efficacy` | 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도, 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 |
-| `ketoconazole-shampoo-meta-analysis-64-trials-8189-patients` | 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도, 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 |
+| `ketoconazole-2percent-vs-zinc-pyrithione-1percent-dandruff-efficacy` | 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도, 비듬 vs 지루성두피염: 임상 진단·증상·치료 차이, 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 |
+| `ketoconazole-shampoo-meta-analysis-64-trials-8189-patients` | 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도, 비듬 vs 지루성두피염: 임상 진단·증상·치료 차이, 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 |
 | `ketoconazole-shampoo-relapse-rate-posttreatment` | 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도, 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 |
 | `korea-daily-intake-lutein-10-20mg` | 한국 건강기능식품 제도의 원료 분류·기능성 표시 규정·광고 규제 |
 | `korea-food-safety-lutein-function-claim` | 한국 건강기능식품 제도의 원료 분류·기능성 표시 규정·광고 규제 |
@@ -7405,6 +7933,7 @@ _(팩트 없음)_
 | `kyungdong-exhaust-outlet-abnormality-signs` | 린나이 보일러 에러코드와 온수·난방 자가진단 |
 | `kyungdong-frozen-pipe-thawing` | 린나이 보일러 에러코드와 온수·난방 자가진단 |
 | `kyungdong-gas-smell-emergency-procedure` | 린나이 보일러 에러코드와 온수·난방 자가진단 |
+| `l-ascorbic-acid-ph3-most-stable-oxidation` | 비타민C와 레티놀 병용: pH 충돌, 효과 최적화, 아침·저녁 분리 필요성 |
 | `left-lateral-sleep-position-recommended` | 임신 후기 불면증: 역류, 빈뇨, 태동 |
 | `lg-battery-charge-percentage-led-indicators` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |
 | `lg-battery-replacement-cost-official` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |
@@ -7415,7 +7944,7 @@ _(팩트 없음)_
 | `lutein-zeaxanthin-basic-function-macular-pigment` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
 | `madecassoside-centella-asiatica-triterpenoid-mechanism` | 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드, 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드 |
 | `madecassoside-uvb-keratinocyte-protection` | 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드, 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드 |
-| `malassezia-yeast-dandruff-seborrheic-dermatitis-pathogenesis` | 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도, 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 |
+| `malassezia-yeast-dandruff-seborrheic-dermatitis-pathogenesis` | 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도, 비듬 vs 지루성두피염: 임상 진단·증상·치료 차이, 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 |
 | `massage-gun-battery-not-power-on-check` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `massage-gun-battery-reset-procedure` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `massage-gun-charging-not-working-diagnostic` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
@@ -7447,15 +7976,23 @@ _(팩트 없음)_
 | `microwave-spark-metal-container` | 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
 | `microwave-spark-metal-trim-food` | 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
 | `mineral-sunscreen-zinc-oxide-broad-spectrum-titanium-uva-limited` | 산화아연과 이산화티탄의 무기 자차 비교: 파장 커버리지, 백탁, 효과 차이 |
+| `mineral-sunscreen-zinc-oxide-titanium-dioxide-fda-grase` | 선크림 제형 비교: 크림·젤·스틱·스프레이의 성능·흡수·도포감 차이 |
+| `mineral-supplementation-benefit-only-in-deficiency` | 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 |
 | `minoxidil-5percent-efficacy-hair-count-increase` | 로즈마리 오일과 탈모: 어디까지 확인됐나 (미녹시딜 비교 RCT) |
 | `minoxidil-cessation-hair-loss-reversal-regrowth-loss` | 로즈마리 오일과 탈모: 어디까지 확인됐나 (미녹시딜 비교 RCT) |
+| `minoxidil-fda-approved-concentration-male-female` | 남성 vs 여성 탈모: 호르몬 메커니즘과 성분 효과 차이 |
+| `minoxidil-pregnancy-teratogenicity-risk-topical` | 남성 vs 여성 탈모: 호르몬 메커니즘과 성분 효과 차이 |
+| `moisturizer-occlusive-humectant` | 겨울 난방과 실내 건조가 피부에 미치는 영향 |
 | `moisturizer-three-classes-definition-function` | 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과, 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과 |
 | `monitor-flickering-hdmi-version-issue` | HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
 | `motor-overheat-protection` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `mrc-vitamin-study-neural-tube-defect-prevention-1991` | 임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성 |
 | `multitap-replacement-cycle` | 데스크톱 PC 전원이 안 켜짐 — 하드웨어 물리적 원인 자가점검 |
+| `niacinamide-2-percent-sebum-reduction-20-25-percent-4weeks` | 여름 피지 관리: 온도와 피지 분비의 관계, 과세정의 역효과 |
 | `niacinamide-5-percent-21-day-cumulative-irritation-none` | 나이아신아마이드(비타민 B3): 피지·모공 조절 근거 (미백·톤과 분리) |
 | `niacinamide-not-niacin-no-flushing-at-cosmetic-levels` | 나이아신아마이드(비타민 B3): 피지·모공 조절 근거 (미백·톤과 분리) |
+| `niacinamide-sebum-mechanism-5-alpha-reductase-inhibition` | 성인 호르몬성 여드름: 발생 부위, 병인, 10대와의 차이, 국소 치료의 한계 |
+| `niacinamide-sebum-pore` | 마스크 착용으로 인한 피부 자극(마스크네) 메커니즘 및 회복 |
 | `noise-increase-filter-dirty-motor` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
 | `nutrient-synergy-magnesium-calcium-vitamin-d-trinity` | 칼슘 보충제 흡수: 형태별 생물이용률, 1회 최대 흡수량, 마그네슘 병용 효과 |
 | `occlusive-definition-petrolatum-tewl-reduction` | 바셀린(페트롤라툼): 밀폐 보습의 기준점, TEWL 감소율과 모공 막힘 논란 |
@@ -7466,6 +8003,7 @@ _(팩트 없음)_
 | `optical-cable-arc-alternative` | HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
 | `oven-preheat-time-convection-importance` | 제빵기(홈베이커리) 반죽 안 섞임·안 부풀음·겉만 탐·패들 박힘·세척 자가점검 |
 | `oven-temperature-discrepancy-user-reported` | 제빵기(홈베이커리) 반죽 안 섞임·안 부풀음·겉만 탐·패들 박힘·세척 자가점검 |
+| `panthenol-madecassoside` | 마스크 착용으로 인한 피부 자극(마스크네) 메커니즘 및 회복 |
 | `partial-charge-80-percent-recommendation-basis` | 포터블 파워스테이션 충전 안 됨·출력 안 됨·발열·배터리 팽창 자가점검 및 보관 기준 |
 | `portable-fan-battery-fire-risk` | 휴대용 손선풍기(핸디형·넥밴드형) AS셀프체크: 충전안됨·안돌아감·약풍·소음·배터리팽창 |
 | `power-outlet-check` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
@@ -7473,10 +8011,17 @@ _(팩트 없음)_
 | `prefilter-water-washing-drying` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
 | `pregnant-lactating-women-supplement-caution` | 미녹시딜: 국내 의약품 지위·농도·초기탈락·중단 후 재탈모, 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항 |
 | `progesterone-drop-luteal-phase-insomnia` | 임신 초기 피로와 프로게스테론 |
+| `propolis-skin-barrier` | 민감성 피부의 정의, 기전 및 진정 전략 |
+| `protein-overuse-excessive-crosslinking-risk-brittleness` | 하루 단백질 필요량과 피부·모발: 구강 섭취 vs 국소 제품의 구분 |
+| `protein-treatment-efficacy-persist-5-washing-cycles` | 하루 단백질 필요량과 피부·모발: 구강 섭취 vs 국소 제품의 구분, 펌·매직 후 손상 모발: 화학 기전과 단계별 복구 전략 |
+| `protein-treatment-fracture-stress-significant-increase-tensile-strength-elasticity` | 하루 단백질 필요량과 피부·모발: 구강 섭취 vs 국소 제품의 구분 |
 | `ps5-dualsense-battery-low-disconnection` | 게임 컨트롤러(엑스박스·듀얼센스·닌텐도) PC 연결·버튼·진동·배터리 자가점검 |
 | `ps5-dualsense-deep-clean-alcohol` | 게임 컨트롤러(엑스박스·듀얼센스·닌텐도) PC 연결·버튼·진동·배터리 자가점검 |
 | `ps5-dualsense-drift-causes-cleaning` | 게임 컨트롤러(엑스박스·듀얼센스·닌텐도) PC 연결·버튼·진동·배터리 자가점검 |
 | `ps5-dualsense-reset-button-5sec` | 게임 컨트롤러(엑스박스·듀얼센스·닌텐도) PC 연결·버튼·진동·배터리 자가점검 |
+| `pseudofolliculitis-barbae-curly-hair-genetic-predisposition` | 제모 후 자극 줄이기: 면도·화학 제모제·전기 면도기 비교와 회복 전략 |
+| `pseudofolliculitis-barbae-ingrown-hair-foreign-body-reaction` | 제모 후 자극 줄이기: 면도·화학 제모제·전기 면도기 비교와 회복 전략 |
+| `pseudofolliculitis-infection-risk-secondary-bacterial-folliculitis` | 제모 후 자극 줄이기: 면도·화학 제모제·전기 면도기 비교와 회복 전략 |
 | `ptfe-continuous-use-temp` | 전기그릴·전기팬 자가점검 — 안 뜨거움·연기·눌어붙음·코팅 손상 |
 | `ptfe-decomposition-start-temp` | 전기그릴·전기팬 자가점검 — 안 뜨거움·연기·눌어붙음·코팅 손상 |
 | `ptfe-toxic-gas-temp` | 전기그릴·전기팬 자가점검 — 안 뜨거움·연기·눌어붙음·코팅 손상 |
@@ -7486,7 +8031,10 @@ _(팩트 없음)_
 | `rct-randomized-controlled-trial-definition-gold-standard` | 세라마이드(ceramide)의 피부 장벽 기능 및 임상 효과, 바르는 히알루론산의 피부 수화 효과, 분자량 역할, 저습도 논쟁, 나이아신아마이드(비타민B3) 미백·톤: 농도별 근거, 홍조 논쟁, 멜라노솜 이전 억제, 판테놀(panthenol)과 마데카소사이드(madecassoside)의 피부 진정 및 상처 치유 효과, 펩타이드 스킨케어: 신호펩타이드·캐리어펩타이드, 피부 침투 한계, 콜라겐 자극 근거, 레티놀 · 레티노이드 계열 주름개선: 강도별 비교, 자극 프로파일, 임신부 금기, 트라넥삼산·아젤라산 색소질환: 기미·염증후색소침착, 용량, 한국 규제상 위치, 바르는 비타민C 세럼: L-아스코르브산 안정성, pH 의존성, 유도체 동등성, 산화, 아스타잔틴의 눈 피로·조절력 개선 임상 근거, 용량, 광고 표현, 빌베리 안토시아닌의 야간시력·로돕신 기전, 임상 근거, WWII 조종사 설화 검증, 블루라이트 차단 영양제·청색광 유해성 논쟁·루테인 필터링 효과·마케팅 표현 검증, 보스웰리아 추출물의 관절염 효과와 NSAID 비교, 콘드로이틴 황산염의 관절 건강 효과와 국제 규제 위치, 오메가3의 안구건조증 개선 효과·DREAM 임상시험·인공눈물 우선순위, 글루코사민의 무릎 관절염 효과와 GAIT 임상 결과, 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과, 마카의 임상 근거 수준, 성욕 관련 효과, 국내 기능성 인정 범위, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성, MSM(메틸설포닐메탄)의 관절 통증 효과와 근거 수준 |
 | `read-write-speed-difference` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `relative-risk-reduction-vs-absolute-risk-reduction-trap` | CLA(켤레 리놀레산): 체지방 감소 효과의 임상적 의미와 인슐린 저항성 우려, 가르시니아: 체중감량 효과의 근거 수준과 간 손상 위험, 혈압 관리 영양제와 약물 치료의 역할 분담, 국내 기능성 원료, 글루코사민의 무릎 관절염 효과와 GAIT 임상 결과, 호모시스테인 수치와 비타민B, 임상 결과의 괴리·대리지표 함정 |
-| `retinaldehyde-vs-retinol-bioavailability-10fold` | 레티날데하이드: 레티놀과 트레티노인 사이의 강도, 자극 프로파일, 농도별 효능 |
+| `retaldehyde-vs-retinol-bioavailability-10fold` | 비타민C와 레티놀 병용: pH 충돌, 효과 최적화, 아침·저녁 분리 필요성 |
+| `retinaldehyde-vs-retinol-bioavailability-10fold` | 레티날데하이드: 레티놀과 트레티노인 사이의 강도, 자극 프로파일, 농도별 효능, 미백 성분이 주름 관리에도 쓰이는 이유: 항산화·콜라겐·단백질 당화 메커니즘 |
+| `retinoid-pregnancy-topical-tretinoin-category-c` | 임신 중 안전한 스킨케어: 국소 성분별 안전성, 금기, 대체 옵션 |
+| `retinyl-retinoate-vs-retinol-periorbital-wrinkles` | 미백 성분이 주름 관리에도 쓰이는 이유: 항산화·콜라겐·단백질 당화 메커니즘 |
 | `safe-mode-entry-method` | 스마트폰 터치 불량·고스트터치·액정 반응 없음 자가점검 |
 | `safety-concern-cry-it-out-stress` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `safety-margin-difference` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
@@ -7497,11 +8045,18 @@ _(팩트 없음)_
 | `sdcard-compatibility-requirement` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
 | `sdcard-speed-class-definition` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `seizure-disorder-epilepsy-supplement-drug-interaction` | 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항 |
+| `selenium-antioxidant-thyroid-hormone-metabolism` | 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 |
+| `selenium-deficiency-hair-loss-selenoprotein-impairment` | 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 |
 | `sensor-red-light-persistent-causes` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
+| `shave-irritation-acute-inflammatory-papules-pustules` | 제모 후 자극 줄이기: 면도·화학 제모제·전기 면도기 비교와 회복 전략 |
+| `shave-irritation-prevention-hair-cutting-length-moisturizing` | 제모 후 자극 줄이기: 면도·화학 제모제·전기 면도기 비교와 회복 전략 |
+| `skin-barrier-basics` | 환절기 피부 건조 및 각질 메커니즘, 민감성 피부의 정의, 기전 및 진정 전략 |
+| `small-molecular-weight-peptide-permeability-lipid-layer-penetration-hair-interior` | 하루 단백질 필요량과 피부·모발: 구강 섭취 vs 국소 제품의 구분 |
 | `small-sample-size-low-statistical-power` | 펩타이드 스킨케어: 신호펩타이드·캐리어펩타이드, 피부 침투 한계, 콜라겐 자극 근거, 두피 케어·비듬: 케토코나졸·징크피리치온·피루옥톤올아민의 효능 비교, 빌베리 안토시아닌의 야간시력·로돕신 기전, 임상 근거, WWII 조종사 설화 검증, 오메가3·DHA·포스파티딜세린의 인지 기능·집중력 효과, RCT 근거 수준 |
 | `smartband-sensor-cleanliness-general` | 스마트 체중계·체성분계 측정 오류·앱 연동 자가점검 |
 | `sound-cutout-two-point-four-ghz-interference` | 사운드바 소리 안 남·TV 연결 안 됨 자가점검 |
-| `spf-real-world-application-dose-gap-0-5-1-0-mg-cm2` | SPF 30과 50의 실제 차이: 차단율 곡선, 증분 이득, 도포량 영향 |
+| `spf-rating-uva-pa-rating-distinction` | 레이저 시술 후 자외선 차단: PIH 위험과 차단 강도 차이 |
+| `spf-real-world-application-dose-gap-0-5-1-0-mg-cm2` | SPF 30과 50의 실제 차이: 차단율 곡선, 증분 이득, 도포량 영향, 선크림 제형 비교: 크림·젤·스틱·스프레이의 성능·흡수·도포감 차이 |
 | `spoilage-detection-appearance` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
 | `spoilage-detection-odor` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
 | `spoilage-detection-texture` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
@@ -7510,7 +8065,10 @@ _(팩트 없음)_
 | `suction-weak-filter-dirty-reset` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
 | `sunscreen-dose-reduction-half-spf-reduction-greater-than-half` | SPF 30과 50의 실제 차이: 차단율 곡선, 증분 이득, 도포량 영향 |
 | `surrogate-endpoint-vs-clinical-outcome-discordance` | 바르는 히알루론산의 피부 수화 효과, 분자량 역할, 저습도 논쟁, 펩타이드 스킨케어: 신호펩타이드·캐리어펩타이드, 피부 침투 한계, 콜라겐 자극 근거, 바르는 비타민C 세럼: L-아스코르브산 안정성, pH 의존성, 유도체 동등성, 산화, 블루라이트 차단 영양제·청색광 유해성 논쟁·루테인 필터링 효과·마케팅 표현 검증, 글루타치온의 경구 생물이용률 논쟁, 피부 미백 효과, 국내 기능성 미인정, 호모시스테인 수치와 비타민B, 임상 결과의 괴리·대리지표 함정, 먹는 콜라겐·히알루론산의 소화·흡수·분포 경로, 피부 도달 메커니즘, 임상 근거, 마카의 임상 근거 수준, 성욕 관련 효과, 국내 기능성 인정 범위, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성, 종합비타민의 가치: 대규모 임상 결과·식사 대체 불가 |
+| `tea-tree-oil-acne` | 면도 후 피부 자극(가성모낭염) 메커니즘 및 회복 |
 | `thyroid-medication-mineral-chelation-spacing-required` | 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항 |
+| `topical-retinoid-photoirritant-uv-caution` | 임신 중 안전한 스킨케어: 국소 성분별 안전성, 금기, 대체 옵션 |
+| `tranexamic-acid-melasma-pih-multiple-routes-efficacy` | 미백 성분이 주름 관리에도 쓰이는 이유: 항산화·콜라겐·단백질 당화 메커니즘 |
 | `travel-charger-dual-voltage` | 전기면도기 자가점검·날 관리·물세척·회전식vs왕복식·충전 불량 |
 | `tv-arc-port-identification` | HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
 | `uhs-speed-class-definition` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
@@ -7527,6 +8085,8 @@ _(팩트 없음)_
 | `usb-rf-dongle-vs-bluetooth-technology` | 게임 컨트롤러(엑스박스·듀얼센스·닌텐도) PC 연결·버튼·진동·배터리 자가점검 |
 | `usb3-interference-2-4ghz-rf-dongle` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
 | `usb3-interference-solution-use-usb2-port` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
+| `uva-penetration-photoaging-collagen-elastin` | 레이저 시술 후 자외선 차단: PIH 위험과 차단 강도 차이 |
+| `uva-uvb-wavelength-ranges-penetration` | 레이저 시술 후 자외선 차단: PIH 위험과 차단 강도 차이 |
 | `vacuum-filter-clogging-suction-loss` | 청소기 구매가이드 — 유형별·흡입력·필터·집먼지진드기·바닥재별·소음·용량·가격대 선택 기준 |
 | `vacuum-head-brush-type-performance-impact` | 청소기 구매가이드 — 유형별·흡입력·필터·집먼지진드기·바닥재별·소음·용량·가격대 선택 기준 |
 | `vacuum-suction-battery-voltage-regulation` | 무선청소기 배터리 급감·충전 안 됨 자가점검 |
@@ -7539,10 +8099,20 @@ _(팩트 없음)_
 | `video-speed-class-definition` | 액션캠(고프로·오즈모류) 전원 불량·녹화 안 됨·배터리·방수 자가점검, 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `vitamin-a-excessive-intake-headache-skin-dryness` | 임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성, 비타민A와 야맹증·결핍 증상·과잉 독성·임신 기형 위험·상한섭취량 |
 | `vitamin-b12-deficiency-diagnosis-serum-level` | 비타민B12 채식인 섭취: 흡수 기전, 결핍 지표, 강화식품 vs 미신 |
+| `vitamin-c-derivative-stability-hierarchy-map-sap-ap` | 비타민C와 레티놀 병용: pH 충돌, 효과 최적화, 아침·저녁 분리 필요성 |
+| `vitamin-d-adequate-intake-recommendation-korea-2010` | 비타민D 부족이 보내는 신호: 근육·뼈·면역·신경학적 증상 |
+| `vitamin-d-deficiency-prevalence-korea-gender` | 비타민D 부족이 보내는 신호: 근육·뼈·면역·신경학적 증상 |
+| `vitamin-d-dietary-insufficiency-korean-diet` | 비타민D 부족이 보내는 신호: 근육·뼈·면역·신경학적 증상 |
+| `vitamin-d-serum-level-sufficiency-definition-korea` | 비타민D 부족이 보내는 신호: 근육·뼈·면역·신경학적 증상 |
+| `vitamin-d-sun-exposure-seasonal-synthesis-impossibility` | 비타민D 부족이 보내는 신호: 근육·뼈·면역·신경학적 증상 |
+| `vitamin-d-upper-limit-intake-tolerable-level` | 비타민D 부족이 보내는 신호: 근육·뼈·면역·신경학적 증상 |
 | `water-soluble-vitamin-absorption-no-meal-required` | 호모시스테인 수치와 비타민B, 임상 결과의 괴리·대리지표 함정, 프리바이오틱스·신바이오틱스: 정의·구성 기준·함량·부작용, 영양제 제형(정제·캡슐·액상·젤리)의 흡수율 차이: 붕해·용출·당 함량, 비타민B군 결핍 진단 방법 및 피로 증상 개선 근거 |
 | `water-soluble-vitamin-divided-doses-more-effective` | 비타민B군 결핍 진단 방법 및 피로 증상 개선 근거 |
 | `wire-curling-heat-accumulation` | 데스크톱 PC 전원이 안 켜짐 — 하드웨어 물리적 원인 자가점검 |
 | `wireless-receiver-not-recognized-check-physical-connection` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
 | `wireless-receiver-port-swap-troubleshooting` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
 | `zinc-cold-duration-reduction-lozenge-form-requirement` | 소아 면역 영양제: 비타민D·아연·철분 권장량·상한·안전성, 남성 생식 건강 영양제: 아연·엽산·CoQ10·항산화제의 정자 품질 개선 근거 |
+| `zinc-deficiency-telogen-effluvium-hair-shedding` | 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 |
+| `zinc-excess-copper-absorption-block-shedding-risk` | 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 |
+| `zinc-hair-synthesis-protein-synthesis-requirement` | 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 |
 | `zinc-long-term-high-dose-copper-deficiency-risk` | 남성 생식 건강 영양제: 아연·엽산·CoQ10·항산화제의 정자 품질 개선 근거 |

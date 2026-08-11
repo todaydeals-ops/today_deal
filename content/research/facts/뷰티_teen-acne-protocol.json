@@ -1,0 +1,100 @@
+{
+  "topic": "10대 여드름의 호르몬 기전과 연령별 성분 안전성",
+  "brand": "뷰티·성분연구소",
+  "article": "teen-acne-protocol",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "benzoyl-peroxide-acne",
+    "azelaic-acid-acne-redness",
+    "adapalene-otc-retinoid"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "adolescent-acne-pathophysiology-androgen-driven-4-factors",
+      "claim": "사춘기 여드름의 기전은 4가지 요소의 동시 작용이다: ① 안드로겐 증가(특히 DHT)로 인한 피지선 과다 분비 ② P. acnes 등 박테리아의 과번식 ③ 모낭-피지선 단위의 이상 각질화(abnormal follicular hyperkeratinization)로 모공 폐색 ④ 모낭 내 염증 매개물 방출. 이 중 안드로겐이 사춘기 여드름의 특수성이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JAAD Guidelines of Care for the Management of Acne Vulgaris (2023)",
+      "source_url": "https://www.jaad.org/article/S0190-9622(23)03389-3/fulltext",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "청소년(12-17세)",
+        "분류": "여드름 병인",
+        "시기": "사춘기",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "adolescent-acne-higher-severity-than-prepubertal",
+      "claim": "사춘기 여드름은 성인 여드름보다 평균 더 심하며, 특히 T존(이마, 코, 턱)에 집중된다. 이는 사춘기의 호르몬 변동이 성인보다 급격하고, 대사 변화가 빠르기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JAAD Acne Vulgaris Epidemiology and Pathophysiology",
+      "source_url": "https://www.jaad.org/article/S0190-9622(23)03389-3/fulltext",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "청소년(12-17세)",
+        "분류": "질환 중증도",
+        "시기": "사춘기",
+        "지역": "글로벌"
+      },
+      "caution": "★\"10대 여드름은 나이 때문이니 시간이 지나면 낫는다\"는 식의 방치는 문제가 된다. 심한 경우 흉터와 정신 건강 영향이 크므로 조기 치료가 권장된다.",
+      "cautionSource": "임상 권장사항"
+    },
+    {
+      "id": "topical-retinoid-age-restrictions-adapalene-12-years-fda",
+      "claim": "국소 레티노이드의 연령 제한: ① 아다팔렌(adapalene) 0.1%: FDA 승인 최저 연령 12세(정식 라벨) ② 트레티노인(tretinoin): FDA 라벨에 최소 연령 명시 없음, 임상 시험은 12세부터 포함. 다만 비급여 사용(off-label use)은 피부과 전문의 지도 하에서만. ③ 레티놀, 레티닐 팔미테이트 등 저강도 레티노이드: 나이 제한 없으나 10대 초반은 자극 주의.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA and JAAD Guidelines: Retinoid Age Restrictions and Safety",
+      "source_url": "https://www.jaad.org/article/S0190-9622(23)03389-3/fulltext",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "청소년(12-17세)",
+        "분류": "약물 연령 제한",
+        "시기": "10대 전체",
+        "지역": "글로벌(특히 미국·한국)"
+      },
+      "caution": "★★이 정보는 매우 민감하다. \"10대 사용 가능/불가\"를 단순화하면 안 되며, 반드시 \"피부과 상담 필수\" 문구를 붙여야 한다.",
+      "cautionSource": "FDA 약물 라벨 및 JAAD 공식 가이드라인"
+    },
+    {
+      "id": "benzoyl-peroxide-azelaic-acid-first-line-topical-teen-acne",
+      "claim": "JAAD 2023 지침에서 권장하는 10대 여드름 1차 국소 치료: ① 벤조일 퍼옥사이드(benzoyl peroxide) 2.5-5%: P. acnes 박멸 및 항염증, 레티노이드보다 자극이 적고 내성 거의 없음 ② 아젤라산(azelaic acid) 15-20%: 항균 + 항염증 + 색소 개선, 민감성 피부도 가능. 이 둘은 레티노이드 없이도 효과적이며 안전성이 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JAAD Guidelines of Care for the Management of Acne Vulgaris - First-Line Topical Therapy",
+      "source_url": "https://www.jaad.org/article/S0190-9622(23)03389-3/pdf",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "청소년 여드름(경-중등도)",
+        "분류": "1차 치료 선택",
+        "시기": "10대 전체",
+        "지역": "글로벌"
+      },
+      "caution": "★벤조일 퍼옥사이드는 \"옷에 표백 자국을 남길 수 있다\" 점을 안내하고, 저농도(2.5%)부터 시작하는 것이 좋다.",
+      "cautionSource": "JAAD 공식 가이드라인"
+    },
+    {
+      "id": "retinoid-introduction-timeline-tolerance-building",
+      "claim": "10대가 레티노이드를 처음 사용할 때는 저농도·저빈도로 시작하는 것이 중요하다: ① 아다팔렌 0.1% 또는 레티놀 0.25-0.5%로 시작 ② 주 2-3회부터 시작해 격일·매일로 단계적 증량 ③ 첫 2-4주는 A 반응(redness, peeling, dryness) 예상하고 수분 공급 강화 ④ 4주 후 효과 평가 후 증량. 급격한 증량은 피할 것.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "JAAD & Dermatology consensus: Retinoid Introduction Protocol for Adolescents",
+      "source_url": "https://www.jaad.org/article/S0190-9622(23)03389-3/fulltext",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "청소년 여드름 환자",
+        "분류": "약물 도입 프로토콜",
+        "시기": "치료 초기 4-8주",
+        "지역": "글로벌"
+      },
+      "caution": "★레티노이드 시작 초기에 \"상태가 악화된 것 같다\"는 느낌은 정상적 A 반응일 가능성이 높다. 4주 이상 지속되어야 피부과 상담을 권할 것.",
+      "cautionSource": "임상 경험"
+    }
+  ]
+}

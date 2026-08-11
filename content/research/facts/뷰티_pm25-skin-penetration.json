@@ -1,0 +1,147 @@
+{
+  "topic": "미세먼지와 피부: 입자 크기·침투 기전·배리어 손상·질병 악화",
+  "brand": "성분연구소",
+  "article": "예정",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "pm25-particle-penetration-stratum-corneum-in-vitro-evidence",
+      "claim": "PM2.5 입자는 각질층(stratum corneum)으로 침투 가능하며, in vitro 재구성 표피에 100μg/mL PM2.5를 처리했을 때 입자 침투가 확인되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "고해상도 다중 광학 이미징을 이용한 PM 침투 연구",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8156198/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "PM2.5 노출 피부",
+        "분류": "입자 침투",
+        "시기": "노출 직후~24시간",
+        "지역": "글로벨"
+      },
+      "caution": "★in vitro 모델이므로 실제 인체 피부와 완전히 동일하지는 않다. 다만 침투 가능성을 증명한다.",
+      "cautionSource": "실험실 모델 한계"
+    },
+    {
+      "id": "pm25-filaggrin-suppression-skin-barrier-protein-reduction",
+      "claim": "PM2.5는 각질형성세포에서 피라그린(FLG), 로리신, 케라틴-1 등 피부 장벽 단백질을 억제하며, 이는 TNF-α 매개 경로로 이루어진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PM2.5 영향 연구: 콜레스테롤 대사 전사체 분석",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6906712/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "PM2.5 노출 인구",
+        "분류": "장벽 단백질 손상",
+        "시기": "노출 24~72시간",
+        "지역": "글로벨"
+      },
+      "caution": "피라그린 억제는 피부 장벽 기능 저하의 핵심 지표다. 이는 습진·아토피 악화와 직결된다.",
+      "cautionSource": "장벽 생물학"
+    },
+    {
+      "id": "pm25-tnf-alpha-aryl-hydrocarbon-receptor-pathway-inflammation",
+      "claim": "PM2.5 유발 피라그린 억제는 TNF-α 증가와 아릴 탄화수소 수용체(AhR) 활성화를 통해 매개되며, 이는 전신 염증 신호로 증폭된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PM2.5 피부 배리어 기전 연구",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8021104/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "PM2.5 노출",
+        "분류": "분자 기전",
+        "시기": "노출 24시간 이내",
+        "지역": "글로벨"
+      },
+      "caution": "AhR은 환경 오염물질의 센서 역할을 하며, 피부뿐 아니라 전신 면역 반응을 촉발할 수 있다.",
+      "cautionSource": "피부 면역학"
+    },
+    {
+      "id": "pm25-transepidermal-water-loss-tewl-increase-barrier-dysfunction",
+      "claim": "PM2.5 노출 후 경표피수분손실(TEWL)이 현저히 증가하며, 이는 피부 장벽 손상을 직접 반영한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PM2.5 피부 장벽 기능 임상 연구",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8021104/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "PM2.5 노출 피부",
+        "분류": "장벽 손상 지표",
+        "시기": "노출 직후~72시간",
+        "지역": "글로벨"
+      },
+      "caution": "TEWL 증가는 피부 건조·민감성 악화·가려움을 초래한다.",
+      "cautionSource": "피부 측정 과학"
+    },
+    {
+      "id": "pm25-oxidative-stress-ros-production-lipid-peroxidation",
+      "claim": "PM2.5는 활성산소(ROS) 생성을 촉진하여 지질 과산화, DNA 손상, 단백질 카보닐화를 유발하며, 이는 세포 기능 손상과 노화를 가속한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PM2.5 산화 스트레스 메커니즘 연구",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/29582092/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "PM2.5 노출 피부",
+        "분류": "산화 손상",
+        "시기": "노출 6~24시간",
+        "지역": "글로벨"
+      },
+      "caution": "산화 스트레스는 단기 염증뿐 아니라 장기 광노화(photoaging 유사) 효과를 유발할 수 있다.",
+      "cautionSource": "산화 생물학"
+    },
+    {
+      "id": "pm25-geographic-comparison-denver-seoul-filaggrin-degradation-products",
+      "claim": "저 PM2.5 지역(덴버)에서 고 PM2.5 지역(서울)으로 이주한 피험자의 피부 테이프 스트리핑 샘플에서 피라그린 분해 산물이 현저히 감소했으며, 이는 높은 PM 노출이 피부 장벽 단백질 감소와 연관됨을 시사한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PM2.5 영향 연구: 실제 인체 지리적 비교",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6906712/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "도시 이주자",
+        "분류": "환경 영향 실측",
+        "시기": "이주 후 4주",
+        "지역": "미국·한국"
+      },
+      "caution": "★이는 실제 인체 데이터로, 미세먼지의 영향이 이론 수준이 아니라 현실임을 증명한다.",
+      "cautionSource": "인체 측정 연구"
+    },
+    {
+      "id": "pm25-skin-disease-association-atopic-dermatitis-psoriasis-acne-exacerbation",
+      "claim": "PM2.5 노출은 아토피 피부염, 건선, 여드름 악화와 양의 상관관계를 보이며, 기존 피부 질환이 있는 경우 증상이 더욱 심화된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공기 오염과 피부 질환 종설 연구",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/27018067/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "피부질환 보유자",
+        "분류": "질병 악화 연관",
+        "시기": "고PM 노출 시기",
+        "지역": "글로벌"
+      },
+      "caution": "★집필 시 중점: 미세먼지는 단순 피부 오염이 아니라 질병 악화 요인이다.",
+      "cautionSource": "역학 연구"
+    },
+    {
+      "id": "pm25-protection-antioxidant-skincare-cleansing-importance",
+      "claim": "PM2.5 손상을 완화하기 위해서는 항산화 스킨케어 성분(비타민 C, 폴리페놀 등)과 저녁 세정 시 각질층의 입자 제거(이중 세정)가 중요하다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PM 손상에 대한 천연 항산화제 연구",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/34311532/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "고 PM 노출 지역 거주자",
+        "분류": "예방 전략",
+        "시기": "일상 관리",
+        "지역": "글로벌"
+      },
+      "caution": "항산화 성분도 예방이 완벽하지 않으므로, 실내 활동 선택이 우선이다.",
+      "cautionSource": "예방 효과 실측 부족"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "topic": "기초대사와 관련 성분들: 정의·측정·실제 효과의 괴리",
+  "brand": "성분연구소",
+  "article": "basal-metabolism-boosters",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "carnitine-cpt1-mitochondrial-transport-mechanism",
+    "carnitine-oral-bioavailability-14-18-percent-low",
+    "carnitine-weight-loss-37-rct-meta-analysis-1-21kg",
+    "capsaicin-trpv1-channel-activation-mechanism",
+    "capsaicin-resting-metabolic-rate-33-99kcal-increase",
+    "capsaicin-weight-loss-effect-small-magnitude-modest",
+    "cla-mechanism-adipocyte-lipolysis-fat-oxidation",
+    "cla-3point2g-body-fat-loss-modest-dose-response",
+    "cla-body-composition-effect-size-clinical-significance-limitation"
+  ],
+  "declined_facts": [
+    {
+      "id": "metabolic-boosters-benefit-only-with-caloric-deficit-food-exercise-priority",
+      "reason": "출처 없음 — source_url이 null. '메타분석 기초 분석'이라 적혔으나 정확한 문헌 없음."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "basal-metabolic-rate-definition-resting-energy-expenditure-indirect-calorimetry",
+      "claim": "기초대사율(BMR)은 휴식 중인 신체의 에너지 소비율이며, 정확한 측정은 물리적·심리적으로 방해받지 않는 상태에서 간접 열량 측정법(indirect calorimetry)으로 산소 섭취량과 이산화탄소 배출량을 측정하여 계산한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect, Better Health Channel: Basal Metabolic Rate",
+      "source_url": "https://www.sciencedirect.com/topics/neuroscience/basal-metabolic-rate",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "기초대사 관심자",
+        "분류": "정의·측정",
+        "지역": "글로벌"
+      },
+      "caution": "일상에서 쓰이는 '기초대사 증가' 마케팅은 대부분 부정확하며, 실제 BMR 측정은 임상 환경에서만 정확하다.",
+      "cautionSource": "측정 조건"
+    },
+    {
+      "id": "basal-metabolic-rate-accounts-50-80-percent-daily-energy-expenditure",
+      "claim": "기초대사율은 하루 총 에너지 소비량의 50~80%를 차지하며, 나머지는 신체활동·식이유도열생성으로 구성된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Better Health Channel: Metabolism",
+      "source_url": "https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/metabolism",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "일반",
+        "분류": "에너지 배분",
+        "지역": "글로벌"
+      },
+      "caution": "성별·체조성·나이에 따라 비율이 크게 달라진다.",
+      "cautionSource": "개인 변이"
+    },
+    {
+      "id": "carnitine-capsaicin-cla-thermogenesis-effect-absolute-magnitude-34kcal-1-2kg-modest",
+      "claim": "L-카르니틴, 캡사이신, CLA 등 '기초대사 증가' 성분들의 실제 효과는 절대값으로 보면 매우 작다. 캡사이신 34 kcal/day 증가는 월 1020 kcal에 불과하고, L-카르니틴의 체중감소는 메타분석 37개 연구 기준 -1.21 kg이며, CLA는 '작은(modest)' 효과 크기로 평가된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Clinical Nutrition ESPEN, Cambridge Core, PubMed meta-analyses",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S240545772030053X",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "체중감량 추구자",
+        "분류": "임상적 의미",
+        "시기": "3~12개월",
+        "지역": "글로벌"
+      },
+      "caution": "★'기초대사 증가'는 통계적 유의성이 있으나 임상적으로 체형 변화를 초래하기엔 불충분하다. 마케팅은 생화학적 기전을 강조하지만, 실제 결과는 훨씬 미미하다.",
+      "cautionSource": "통계 vs 임상 의미"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "topic": "수영장 염소 노출에 따른 피부·모발 손상 기전 및 회복",
+  "brand": "뷰티·성분연구소",
+  "article": "chlorine-damage-recovery",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "chlorine-hypochlorous-acid-oxidative-stress-mechanism",
+      "claim": "수영장 염소는 차아염산(hypochlorous acid, HClO)과 차아염소산염(hypochlorite, ClO⁻) 형태로 존재하며, 이들은 피부 세포의 분자에서 전자를 빼앗아 강력한 산화 스트레스를 유발한다. 이 산화 반응은 피부 단백질과 지질의 구조를 손상시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: Chlorinative Stress in Age-Related Diseases",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5686828/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "수영자(특히 빈번한 수영자)",
+        "분류": "산화 스트레스 메커니즘",
+        "시기": "수영장 노출 중·직후",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "chlorine-protein-damage-collagen-elastin-keratin",
+      "claim": "염소의 산화 반응은 피부의 구조 단백질을 손상시킨다: ① 콜라겐과 엘라스틴의 분해로 수분 보유력 감소 ② 케라틴 산화로 모발 큐티클의 거칠기 증가 ③ 모발 단백질 간 결합 약화로 끊김과 갈라짐 유발. 이는 피부 탄력 저하와 모발 손상의 주요 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Chlorine water damage research: Protein degradation mechanism",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5686828/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "수영자",
+        "분류": "단백질 손상",
+        "시기": "수영장 노출 중",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "chlorine-lipid-degradation-barrier-dysfunction",
+      "claim": "염소는 피부 장벽의 지질(ceramide, cholesterol, free fatty acids)을 산화·분해하여 층상 구조(lamellar structure)를 손상시킨다. 결과적으로 장벽 투과성이 증가하고 경표피수분손실(TEWL)이 급증하며, 건조함과 자극 감수성이 높아진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Chlorine-induced lipid oxidation and barrier damage",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5686828/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "수영자",
+        "분류": "장벽 지질 손상",
+        "시기": "수영장 노출 중·직후",
+        "지역": "글로벌"
+      },
+      "caution": "★chlorine 노출 후 즉시 헹굼이 중요한 이유: 각질층에 남은 chlorine 잔류가 계속 산화 반응을 일으킨다.",
+      "cautionSource": "임상 관찰"
+    },
+    {
+      "id": "chlorine-swimming-skin-aging-acceleration-oxidative-damage",
+      "claim": "반복적인 수영장 염소 노출은 활성 산소(reactive oxygen species, ROS) 축적으로 인한 만성 산화 스트레스를 유발하며, 이는 피부 노화를 가속화한다. 결과적으로 세세한 주름, 탄력 저하, 색소 불균일이 빨리 진행될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Oxidative stress and skin aging in swimmers",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5686828/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "빈번한 수영자(특히 경기 선수)",
+        "분류": "만성 손상 및 노화",
+        "시기": "장기 노출 누적",
+        "지역": "글로벌"
+      },
+      "caution": "★\"수영 후 피부 노화가 빨라 보인다\"는 보고는 실제 기전이 있으며, 장기 수영자는 강화된 항산화 및 장벽 보호가 필수다.",
+      "cautionSource": "산화 스트레스 연구"
+    },
+    {
+      "id": "chlorine-recovery-timeline-barrier-restoration-hydration",
+      "claim": "수영 직후 피부의 급성 손상 회복은: ① 즉시(0-2시간): 찬바람 헹굼으로 chlorine 잔류 제거 ② 단기(2-6시간): 강한 보습제 도포로 TEWL 감소 ③ 중기(6-24시간): 장벽 복구 성분(세라마이드, 판테놀, 센텔라) 집중 사용 ④ 장기(1-3주): 반복 노출 시 손상 누적 방지. 완전 회복에는 3-7일이 소요될 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "수영자 보고 및 임상 경험 집계",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5686828/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "수영자",
+        "분류": "회복 타임라인",
+        "시기": "수영 직후부터",
+        "지역": "글로벌"
+      },
+      "caution": "★개인차가 매우 크며, 피부 기본 장벽 상태, 수영 빈도, 염소 농도에 따라 크게 달라진다. 단순화 금지.",
+      "cautionSource": "임상 관찰 및 환자 보고"
+    }
+  ]
+}

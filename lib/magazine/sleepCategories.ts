@@ -19,7 +19,7 @@ export const SLEEP_CATEGORIES: SleepCategory[] = [
   },
   {
     key: "work", label: "일잘하는 잠", en: "PERFORM", color: "#8a6a3a", angle: "직장인 피로와 생산성",
-    slugs: ["sleep-debt-cognitive-performance", "sleep-deprivation-judgment", "shift-work-circadian", "social-jetlag-monday", "post-lunch-dip-coffee-nap", "burnout-insomnia-cycle", "business-trip-jetlag", "remote-work-sleep-rhythm", "microsleep-danger", "drowsy-driving-prevention", "exercise-timing-sleep", "alcohol-sleep-quality", "sleep-weight-appetite", "chronotype-productivity", "sleep-inertia-grogginess", "racing-thoughts-bedtime", "nap-culture-siesta", "night-eating-syndrome", "athlete-sleep-recovery"],
+    slugs: ["sleep-debt-cognitive-performance", "sleep-deprivation-judgment", "shift-work-circadian", "social-jetlag-monday", "post-lunch-dip-coffee-nap", "burnout-insomnia-cycle", "business-trip-jetlag", "travel-sleep-insomnia", "remote-work-sleep-rhythm", "microsleep-danger", "drowsy-driving-prevention", "exercise-timing-sleep", "alcohol-sleep-quality", "sleep-weight-appetite", "chronotype-productivity", "sleep-inertia-grogginess", "racing-thoughts-bedtime", "nap-culture-siesta", "night-eating-syndrome", "athlete-sleep-recovery"],
   },
   {
     key: "harmony", label: "조화로운 잠", en: "BALANCE", color: "#9a5a7a", angle: "생체 리듬과 호르몬",
@@ -31,7 +31,7 @@ export const SLEEP_CATEGORIES: SleepCategory[] = [
   },
   {
     key: "gear", label: "잠자리장비학", en: "GEAR", color: "#556070", angle: "침구·가전 과학 분석",
-    slugs: ["daybed-family-bed-safety", "sleep-tracker-accuracy", "wake-up-light-effect", "bedroom-temp-humidity", "insomnia-sleep-hygiene"],
+    slugs: ["daybed-family-bed-safety", "sleep-tracker-accuracy", "wake-up-light-effect", "bedroom-temp-humidity", "insomnia-sleep-hygiene", "pet-bed-sleep", "mattress-hygiene-dust-mites"],
   },
 ];
 

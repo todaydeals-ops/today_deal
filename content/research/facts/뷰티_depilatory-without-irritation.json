@@ -1,0 +1,54 @@
+{
+  "topic": "제모 후 자극 줄이기: 면도·화학 제모제·전기 면도기 비교와 회복 전략",
+  "brand": "성분연구소",
+  "article": "depilatory-without-irritation",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "pseudofolliculitis-barbae-ingrown-hair-foreign-body-reaction",
+    "pseudofolliculitis-barbae-curly-hair-genetic-predisposition",
+    "shave-irritation-acute-inflammatory-papules-pustules",
+    "pseudofolliculitis-infection-risk-secondary-bacterial-folliculitis",
+    "shave-irritation-prevention-hair-cutting-length-moisturizing"
+  ],
+  "declined_facts": [
+    {
+      "id": "chemical-depilatory-vs-shaving-mechanism-protein-dissolution-vs-cutting",
+      "reason": "출처 없음 — source_url이 null. 하지만 PubMed에서 메커니즘 연구를 찾았으므로 재작성 가능."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "chemical-depilatory-thioglycolic-acid-disulfide-bond-reduction-mechanism",
+      "claim": "화학적 제모제(thioglycolic acid 함유)는 모발의 단백질 이황화 결합(disulfide bonds)을 환원하여 약화시키므로, 면도(모발을 절단)와는 근본적으로 다른 메커니즘이다. 화학 제모제는 높은 알칼리성(pH 약 12.0~12.5)에서 더 효과적으로 작용한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Depilatory chemical thioglycolate affects hair cuticle and cortex, degrades epidermal cornified envelopes and induces proliferation and differentiation responses in keratinocytes",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/30417461/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "제모 방법 선택자",
+        "분류": "메커니즘 비교",
+        "지역": "글로벌"
+      },
+      "caution": "화학 제모제는 더 짧은 모발 끝을 남기므로 재성장이 면도보다 느리지만, 두피 접근성으로 인한 자극 위험과 알칼리성에 의한 pH 손상이 있다.",
+      "cautionSource": "제형 안전성"
+    },
+    {
+      "id": "electric-shaver-vs-blade-shaving-irritation-reduced-pfb-prevention",
+      "claim": "전기 면도기는 회전 또는 왕복 날로 모발을 절단하되, 칼날이 피부에 직접 닿지 않아 자극이 적고, 모발이 피부 아래 너무 짧게 절단되지 않으므로 가성모낭염(pseudofolliculitis barbae, PFB) 위험이 감소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Merck Manual & DermNet NZ: Pseudofolliculitis Barbae Prevention",
+      "source_url": "https://dermnetnz.org/topics/pseudofolliculitis-barbae",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "곱슬머리 사용자, 고위험군",
+        "분류": "제모 방법 비교",
+        "지역": "글로벌"
+      },
+      "caution": "전기 면도기도 무딘 날이나 불충분한 보습 사전준비는 자극을 초래할 수 있다.",
+      "cautionSource": "유지보수 필요"
+    }
+  ]
+}

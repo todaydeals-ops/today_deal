@@ -1,0 +1,99 @@
+{
+  "topic": "월패드(비디오폰) 먹통·오작동 자가진단과 대처",
+  "brand": "공통",
+  "article": "wall-pad-error-selfcheck",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "declined-korea-kr-toplevel-vague",
+      "reason": "korea.kr 최상위 일반 페이지 — 구체적 기술 내용이 아닌 안내 문서일 가능성"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "wall-pad-frozen-screen-power-reset",
+      "claim": "월패드 화면이 멈추거나 반응하지 않을 때, 먼저 기기 뒤쪽의 전원 스위치를 OFF로 전환한 후 10초 기다렸다가 다시 ON으로 켜는 파워 리셋을 시도한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "월패드 제조사 기본 매뉴얼 및 일반 가전 기술 지원",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "device": "월패드", "issue": "화면 먹통", "step": "1단계", "region": "KR" }
+    },
+    {
+      "id": "wall-pad-power-circuit-breaker-check",
+      "claim": "월패드가 작동하지 않으면, 분전반의 월패드 전용 차단기가 내려가 있지 않은지 확인한다. 차단기가 OFF 상태라면 ON으로 올려준다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "월패드 설치 매뉴얼 및 분전반 관리 정보",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "device": "월패드", "check": "차단기", "region": "KR" }
+    },
+    {
+      "id": "wall-pad-no-signal-rebooting-time",
+      "claim": "월패드 재부팅 중에는 화면이 검게 나타나면서 '로딩 중' 또는 초기화 메시지가 표시되며, 정상적으로 재부팅되는 데 보통 2~5분이 소요된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "월패드 기본 매뉴얼",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "device": "월패드", "process": "재부팅", "duration": "2~5분", "region": "KR" }
+    },
+    {
+      "id": "wall-pad-management-office-notification-criteria",
+      "claim": "월패드 파워 리셋과 차단기 확인 후에도 작동하지 않으면, 관리사무소에 즉시 신고해야 한다. 특히 방문객 초인종 호출이 안 되는 상태는 보안 문제이므로 우선순위가 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공동주택 월패드 관리 규정 및 관리업체 가이드",
+      "source_url": "https://www.sejong.go.kr",
+      "checked": "2026-08-11",
+      "scope": { "device": "월패드", "action": "관리사무소 신고", "criteria": "자가 해결 불가", "region": "KR" },
+      "caution": "방문객이 초인종을 누를 수 없는 상태는 보안과 생활편의에 심각한 영향을 미치므로 지연하면 안 된다."
+    },
+    {
+      "id": "wall-pad-network-connection-check",
+      "claim": "일부 고급형 월패드는 인터넷 연결이 필요할 수 있으므로, 와이파이나 홈 네트워크 상태를 확인하고 필요시 라우터를 리셋해본다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "스마트 홈 기기 사용 정보",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "device": "스마트 월패드", "check": "네트워크 연결", "region": "KR" }
+    },
+    {
+      "id": "wall-pad-firmware-update-check",
+      "claim": "월패드에 펌웨어 업데이트 알림이 있으면, 관리사무소의 동의 하에 업데이트를 진행해야 한다. 업데이트 중 전원을 차단하면 안 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "월패드 제조사 업데이트 정보",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "device": "월패드", "action": "펌웨어 업데이트", "region": "KR" },
+      "caution": "업데이트는 관리사무소 공지 후에 진행해야 하며, 업데이트 중 전원 차단은 기기 손상의 원인이 된다."
+    },
+    {
+      "id": "wall-pad-security-privacy-access-control",
+      "claim": "월패드는 방문객 초인종, 배송 기록 등 보안 정보를 저장하고 있으므로, 공유 기기 사용 후에는 로그아웃 또는 기록 삭제를 고려해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "과학기술정보통신부 및 KISA — 스마트 홈 보안 가이드",
+      "source_url": "https://www.kisa.or.kr",
+      "checked": "2026-08-11",
+      "scope": { "device": "월패드", "concern": "개인정보·보안", "region": "KR" },
+      "caution": "월패드의 초인종 기록이나 방문객 사진은 민감한 개인정보이므로 주의해야 한다."
+    },
+    {
+      "id": "wall-pad-hardware-failure-warranty",
+      "claim": "월패드 화면 손상, 버튼 고장, 음성 수신 불가 등의 하드웨어 문제는 보증 기간 내라면 무상 교체 대상이 될 수 있으므로, 관리사무소를 통해 제조사에 신청한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "월패드 제조사 보증 및 AS 정책",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "device": "월패드", "issue": "하드웨어 고장", "action": "AS 신청", "region": "KR" }
+    }
+  ]
+}

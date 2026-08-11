@@ -1,0 +1,93 @@
+{
+  "topic": "정전 복구 후 안전한 가전 재시작 절차와 식품 안전",
+  "brand": "공통",
+  "article": "power-restoration-after-outage-selfcheck",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "power-restoration-wait-before-restart",
+      "claim": "정전이 해제되어 전원이 복구되면, 모든 가전을 즉시 켜지 말고 1~2분 기다린 후 단계적으로 재시작해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국전기안전공사 — 정전 복구 안내",
+      "source_url": "https://www.kesco.or.kr/main/main.do",
+      "checked": "2026-08-11",
+      "scope": { "action": "정전 복구", "step": "대기", "region": "KR" },
+      "caution": "동시에 모든 기기를 켜면 계약전력을 초과하여 차단기가 재차 트립될 수 있다."
+    },
+    {
+      "id": "power-restoration-restart-order",
+      "claim": "정전 복구 후 가전 재시작 순서는 냉장고 → 냉동실 → 세탁기 → 에어컨·히터 → 기타 가전 순이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국전기안전공사 및 에너지 관리 지침",
+      "source_url": "https://www.kesco.or.kr/main/main.do",
+      "checked": "2026-08-11",
+      "scope": { "action": "정전 복구", "step": "재시작 순서", "region": "KR" },
+      "caution": "냉장 식품 보관 기기부터 우선 재시작하여 식품 부패를 최소화해야 한다."
+    },
+    {
+      "id": "refrigerator-power-outage-food-safety",
+      "claim": "냉장고가 정전되었을 때, 냉장고 문을 닫은 상태에서 냉장고 내부의 온도는 4시간 이내에 10℃ 이상 올라가지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미국 FDA 및 식품안전 국제 기준",
+      "source_url": "https://www.kesca.or.kr/main/main.do",
+      "checked": "2026-08-11",
+      "scope": { "appliance": "냉장고", "condition": "정전 중 문닫은 상태", "duration": "4시간", "region": "KR/International" }
+    },
+    {
+      "id": "food-safety-after-power-outage-4-hour-rule",
+      "claim": "정전 중 냉장고 문을 닫은 상태로 유지했다면, 4시간 이내 전원이 복구된 경우 냉장 식품(육류, 생선, 계란, 우유 등)은 안전하게 보관할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 및 국제 식품안전 기준",
+      "source_url": "https://www.foodsafetykorea.go.kr/",
+      "checked": "2026-08-11",
+      "scope": { "condition": "정전 후 4시간 이내 복구", "food_type": "냉장 식품", "region": "KR" }
+    },
+    {
+      "id": "cooked-food-power-outage-2-hour-rule",
+      "claim": "실온(20~25℃)에서 보관된 조리 음식은 정전 중 2시간 이상 실온에 방치되었다면 버리는 것이 안전하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 — 정전 시 식품 안전 지침",
+      "source_url": "https://www.foodsafetykorea.go.kr/",
+      "checked": "2026-08-11",
+      "scope": { "condition": "실온 2시간 이상", "food_type": "조리 음식", "region": "KR" }
+    },
+    {
+      "id": "freezer-power-outage-extended-duration",
+      "claim": "냉동실에 보관된 음식은 냉동실 문을 닫은 상태에서 정전이 24~48시간 지속되면 안전성을 판단하기 어려우므로, 냉동실 온도를 측정하거나 전문가 조언을 구해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 — 정전 시 식품 안전 지침",
+      "source_url": "https://www.foodsafetykorea.go.kr/",
+      "checked": "2026-08-11",
+      "scope": { "condition": "정전 24~48시간", "appliance": "냉동실", "region": "KR" }
+    },
+    {
+      "id": "food-safety-visual-inspection",
+      "claim": "정전 복구 후 음식의 색상, 냄새, 상태를 시각적으로 확인하되, 의심스럽다면 버리는 것이 안전하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 — 식품 안전 지침",
+      "source_url": "https://www.foodsafetykorea.go.kr/",
+      "checked": "2026-08-11",
+      "scope": { "action": "식품 검사", "method": "시각·후각", "region": "KR" }
+    },
+    {
+      "id": "power-restoration-appliance-damage-inspection",
+      "claim": "전원이 복구된 후 각 가전제품의 콘센트와 전원 케이블에 이상이 없는지 확인하고, 이상한 냄새나 화상을 입은 흔적이 없는지 점검해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국전기안전공사 — 정전 복구 안내",
+      "source_url": "https://www.kesco.or.kr/main/main.do",
+      "checked": "2026-08-11",
+      "scope": { "action": "안전 점검", "step": "정전 복구 후", "region": "KR" }
+    }
+  ]
+}

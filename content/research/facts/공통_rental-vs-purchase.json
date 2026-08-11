@@ -1,0 +1,95 @@
+{
+  "topic": "가전 렌탈과 구매의 비용 구조 및 법적 기준",
+  "brand": "공통",
+  "article": "rental-vs-purchase",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "rental-mandatory-period-standard",
+      "claim": "가전 렌탈의 의무사용기간은 보통 3년, 5년 등으로 정해지며, 이 기간 안에 중도해지하면 위약금이 발생한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "주요 렌탈사 표준 계약 조건 (삼성전자 렌탈, LG 렌탈, 쿠팡 리프레시 등)",
+      "source_url": "https://www.samsung.com/ko/support/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "냉장고, 세탁기, 에어컨, 정수기 등 렌탈 상품",
+        "line": "렌탈 제품 전반",
+        "years": "2023-",
+        "region": "KR"
+      },
+      "caution": "의무사용기간과 총 렌탈 기간은 다르다. 의무 기간은 위약금이 발생하는 기준이고, 그 이후도 소유권이 렌탈사에 있을 수 있다"
+    },
+    {
+      "id": "rental-penalty-structure",
+      "claim": "렌탈 중도해지 시 위약금은 보통 잔여 기본요금의 30% 수준이나, 판매처·상품군에 따라 다르며, 설치비·철거비·손상비 등이 추가로 청구될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "주요 렌탈사 약관 및 중도해지 안내",
+      "source_url": "https://www.samsung.com/ko/support/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "렌탈 제품",
+        "line": "의무기간 미충족 중도해지",
+        "years": "2023-",
+        "region": "KR"
+      },
+      "caution": "위약금 계산 방식이 렌탈사마다 다르고, 기본 위약금 외에 설치비 환수·기기 손상비·사은품 환수 등이 합산될 수 있으니 계약 시 전체 해지 비용 예상액을 명확히 받아야 분쟁을 피한다"
+    },
+    {
+      "id": "rental-vs-purchase-total-cost",
+      "claim": "렌탈과 구매의 총비용 비교는 렌탈 월요금×기간 + 위약금(예상) vs 구매가 + 설치비 + 5-10년 전기료로 계산해야 하며, 제품 내구성·관리 서비스 선호도에 따라 선택이 달라진다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "소비자 가계부 분석 및 커뮤니티 비교 실측",
+      "source_url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000236196",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "냉장고, 세탁기, 정수기, 에어컨 등",
+        "line": "렌탈 vs 구매 비교 대상 제품",
+        "years": "2023-",
+        "region": "KR"
+      },
+      "caution": "렌탈은 초기 자본금이 적지만 총액이 크고, 구매는 초기 지출이 크지만 장기 소유 시 가격 효율이 나아질 수 있다. 제품 잔존가(중고 팔값)도 변수다"
+    },
+    {
+      "id": "rental-maintenance-inclusion",
+      "claim": "렌탈은 보통 정기점검·필터 교체·고장 수리를 포함하고 있으며, 이는 구매 후 서비스와 차별화되는 장점이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "렌탈사 표준 계약 조건",
+      "source_url": "https://www.samsung.com/ko/support/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "정수기, 에어컨, 공기청정기 등 관리형 제품",
+        "line": "렌탈 서비스 포함 항목",
+        "years": "2023-",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "rental-ownership-transfer-timing",
+      "claim": "렌탈 제품의 소유권 이전 시점은 총 렌탈 기간(보통 5-6년)을 채울 때이며, 의무사용기간 완료 후에도 소유권은 렌탈사에 있을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "렌탈사 계약서 및 상품 설명",
+      "source_url": "https://www.samsung.com/ko/support/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "렌탈 제품",
+        "line": "소유권 이전 조건",
+        "years": "2023-",
+        "region": "KR"
+      },
+      "caution": "중도해지 후 제품을 그대로 수거해 가므로, 구매로 전환하는 옵션이 있는지(그리고 가격이 얼마인지) 계약 전에 확인해야 한다"
+    }
+  ]
+}

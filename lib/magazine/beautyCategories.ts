@@ -15,27 +15,27 @@ export interface BeautyCategory {
 export const BEAUTY_CATEGORIES: BeautyCategory[] = [
   {
     key: "barrier", label: "보습·장벽", en: "BARRIER", color: "#4a7c8a", angle: "건조함과 피부 장벽",
-    slugs: ["ceramide-barrier","hyaluronic-acid-topical","skin-barrier-basics","panthenol-madecassoside","moisturizer-occlusive-humectant","centella-wound-repair","glycerin-humectant","squalane-moisturizer","ceramide-vs-cholesterol-ratio","urea-lactic-acid-hydration","petrolatum-barrier-repair","linoleic-acid-ceramide-ratio","propolis-skin-barrier"],
+    slugs: ["ceramide-barrier","hyaluronic-acid-topical","skin-barrier-basics","panthenol-madecassoside","moisturizer-occlusive-humectant","centella-wound-repair","glycerin-humectant","squalane-moisturizer","ceramide-vs-cholesterol-ratio","urea-lactic-acid-hydration","petrolatum-barrier-repair","linoleic-acid-ceramide-ratio","propolis-skin-barrier","seasonal-skin-dryness","winter-indoor-humidity","mask-irritation-recovery","sensitive-skin-calming","chlorine-damage-recovery","hand-eczema-care"],
   },
   {
     key: "renew", label: "미백·주름", en: "RENEW", color: "#8a7a3a", angle: "색소와 노화 개선",
-    slugs: ["retinol-wrinkle","niacinamide-tone","vitamin-c-serum","tranexamic-azelaic-pigment","peptide-skincare","caffeine-eye-puffiness","retinaldehyde-retinoid","arbutin-whitening","vitamin-e-tocopherol-skin","ferulic-acid-antioxidant","resveratrol-topical","retinyl-palmitate","astaxanthin-topical-collagen"],
+    slugs: ["retinol-wrinkle","niacinamide-tone","vitamin-c-serum","tranexamic-azelaic-pigment","peptide-skincare","caffeine-eye-puffiness","retinaldehyde-retinoid","arbutin-whitening","vitamin-e-tocopherol-skin","ferulic-acid-antioxidant","resveratrol-topical","retinyl-palmitate","astaxanthin-topical-collagen","vitamin-c-retinol-together","aha-bha-combination-safety","skincare-layering-order","pregnancy-safe-skincare","wrinkle-fading-mechanism"],
   },
   {
     key: "clear", label: "트러블·모공", en: "CLEAR", color: "#5a7a5a", angle: "여드름과 피지",
-    slugs: ["bha-salicylic-pore","benzoyl-peroxide-acne","aha-pha-exfoliant","zinc-pca-sebum","azelaic-acid-acne-redness","adapalene-otc-retinoid","sulfur-acne","tea-tree-oil-acne","mandelic-acid-gentle-exfoliant","witch-hazel-toner","clay-mask-sebum","niacinamide-sebum-pore"],
+    slugs: ["bha-salicylic-pore","benzoyl-peroxide-acne","aha-pha-exfoliant","zinc-pca-sebum","azelaic-acid-acne-redness","adapalene-otc-retinoid","sulfur-acne","tea-tree-oil-acne","mandelic-acid-gentle-exfoliant","witch-hazel-toner","clay-mask-sebum","niacinamide-sebum-pore","teen-acne-protocol","adult-hormonal-acne","itchy-vs-pustule-acne","post-shave-irritation","summer-sebum-management"],
   },
   {
     key: "shield", label: "자외선·환경", en: "SHIELD", color: "#7a6a9a", angle: "자외선 차단과 외부 자극",
-    slugs: ["sunscreen-spf-pa-science","physical-vs-chemical-sunscreen","sunscreen-reapplication-reality","uva-uvb-difference","zinc-oxide-vs-titanium","avobenzone-photostability","spf-pa-increment-real-benefit","sunscreen-water-resistant"],
+    slugs: ["sunscreen-spf-pa-science","physical-vs-chemical-sunscreen","sunscreen-reapplication-reality","uva-uvb-difference","zinc-oxide-vs-titanium","avobenzone-photostability","spf-pa-increment-real-benefit","sunscreen-water-resistant","post-laser-sun-protection","sunscreen-texture-comparison","sunscreen-for-kids","pm25-skin-penetration"],
   },
   {
     key: "hair", label: "두피·모발", en: "HAIR", color: "#6a5a4a", angle: "탈모와 두피 관리",
-    slugs: ["minoxidil-hairloss","hairloss-shampoo-ingredient","scalp-care-dandruff","ketoconazole-scalp","rosemary-oil-hairloss","finasteride-saw-palmetto","zinc-selenium-hair-growth","biotin-hair-evidence","caffeine-hair-follicle","peptide-hair-strengthening","protein-treatment-hair-damage"],
+    slugs: ["minoxidil-hairloss","hairloss-shampoo-ingredient","scalp-care-dandruff","ketoconazole-scalp","rosemary-oil-hairloss","finasteride-saw-palmetto","zinc-selenium-hair-growth","biotin-hair-evidence","caffeine-hair-follicle","peptide-hair-strengthening","protein-treatment-hair-damage","male-female-hairloss-difference","perm-magic-hair-care","dandruff-vs-seborrheic","gray-hair-emergence-nutrition"],
   },
   {
     key: "body", label: "다이어트·바디", en: "BODY", color: "#9a5a6a", angle: "체중감량과 바디케어",
-    slugs: ["garcinia-weight","cla-body-fat","carnitine-fat-burn","green-tea-egcg","chromium-blood-sugar","dietary-fiber-satiety","glucomannan-appetite","capsaicin-thermogenesis","resistant-starch-microbiota","caffeine-metabolism-thermogenesis"],
+    slugs: ["garcinia-weight","cla-body-fat","carnitine-fat-burn","green-tea-egcg","chromium-blood-sugar","dietary-fiber-satiety","glucomannan-appetite","capsaicin-thermogenesis","resistant-starch-microbiota","caffeine-metabolism-thermogenesis","depilatory-without-irritation","basal-metabolism-boosters","daily-protein-requirement","vitamin-d-deficiency-signs"],
   },
 ];
 

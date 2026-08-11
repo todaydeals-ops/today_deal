@@ -1,0 +1,135 @@
+{
+  "topic": "레이저 시술 후 자외선 차단: PIH 위험과 차단 강도 차이",
+  "brand": "성분연구소",
+  "article": "예정",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "uva-uvb-wavelength-ranges-penetration",
+    "spf-rating-uva-pa-rating-distinction",
+    "fda-broad-spectrum-designation-uva-coverage-370nm",
+    "uva-penetration-photoaging-collagen-elastin"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "laser-induced-pih-mechanism-melanocyte-disruption",
+      "claim": "레이저 시술로 인한 색소침착(PIH)은 염증 초기 단계에서 멜라닌세포 활성화가 일어나며, 고플루언스·단펄스폭 조합은 기저층 손상을 심화시켜 장시간 염증 신호를 유지시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: PIH 분자 메커니즘 임상 연구",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/36466945/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "레이저 시술 후 환자",
+        "분류": "시술 관련 색소침착",
+        "시기": "시술 후 수 주~수 개월",
+        "지역": "글로벌"
+      },
+      "caution": "멜라닌세포 활성화는 시술 후 첫 주 내에 일어나므로 초기 광보호가 매우 중요하다.",
+      "cautionSource": "PIH 병인론"
+    },
+    {
+      "id": "laser-treatment-fluence-pih-risk-stratification",
+      "claim": "레이저 시술의 PIH 발생 위험은 플루언스(에너지 밀도) 수준에 따라 계층화되며, 고플루언스·짧은 펄스폭·저파장 조합이 더 높은 PIH 위험을 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: CO2 레이저 후 PIH 위험 인자 분석",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/38205425/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "다양한 레이저 파라미터",
+        "분류": "시술 위험도",
+        "시기": "시술 전 평가",
+        "지역": "글로벌"
+      },
+      "caution": "같은 레이저라도 세팅에 따라 PIH 위험이 크게 달라진다. 시술 전 기계 설정 확인 필수.",
+      "cautionSource": "레이저 파라미터 임상 데이터"
+    },
+    {
+      "id": "uva-i-wavelength-pih-amplification-inflammatory-phase",
+      "claim": "염증 단계에서 UVA-I(340~400nm) 자외선 노출은 케라틴세포·멜라닌세포 간 신호전달을 증폭시켜 멜라닌 생성을 직접 촉진하고 PIH를 악화시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: PIH 분자 메커니즘 연구",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/36466945/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "레이저 후 환자",
+        "분류": "자외선 파장 효과",
+        "시기": "시술 후 2주~6개월",
+        "지역": "글로벌"
+      },
+      "caution": "★집필 시 중점: 일상적 햇빛 노출만으로도 위험하다. 단순 자외선 차단이 아니라 '적극적 회피'가 필요.",
+      "cautionSource": "광생물학과 멜라닌 신호"
+    },
+    {
+      "id": "skin-barrier-recovery-timeline-post-laser-16-hours",
+      "claim": "레이저 시술 후 피부 장벽은 16시간 내에 기본적 회복을 시작하지만, 세포 수준의 미세한 구조(초공 폐쇄)는 완전히 복구되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: 레이저 후 피부 장벽 회복 연구",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/30999045/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "레이저 시술 후",
+        "분류": "회복 타이밍",
+        "시기": "시술 직후~16시간",
+        "지역": "글로벌"
+      },
+      "caution": "16시간은 '기본 회복'이며, 완전 회복에는 3~7일이 필요할 수 있다.",
+      "cautionSource": "피부과학 임상 연구"
+    },
+    {
+      "id": "post-laser-spf-50-recommendation-3-6-months-duration",
+      "claim": "레이저 시술 후 2주 내 SPF 50 이상 광범위 선크림(PA+++) 사용이 권고되며, 최소 3~6개월 지속해야 PIH 위험을 충분히 감소시킬 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Medscape: 레이저 시술 후 광보호 가이드라인",
+      "source_url": "https://emedicine.medscape.com/article/1069191-treatment",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "레이저 시술 환자",
+        "분류": "자외선 차단 강도",
+        "시기": "시술 후 2주~6개월",
+        "지역": "글로벌"
+      },
+      "caution": "★3~6개월은 최소 기간이며, 완전한 색소침착 회복에는 더 오래 걸릴 수 있다.",
+      "cautionSource": "임상 가이드라인"
+    },
+    {
+      "id": "post-laser-broad-spectrum-uva-pa-plus-critical",
+      "claim": "레이저 후 선크림은 단순 SPF 수치보다 broad-spectrum(UVA 차단) 표시와 PA+++ 이상이 더 중요하며, 이는 PIH 악화의 주 원인인 UVA-I 노출을 차단해야 하기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: PIH 메커니즘과 UV 스펙트럼",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/36466945/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "레이저 시술 후 선크림 선택",
+        "분류": "광보호 선택 기준",
+        "시기": "시술 후 전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "SPF 50이지만 broad-spectrum이 아니면 PIH 보호가 불충분할 수 있다.",
+      "cautionSource": "UV 파장별 피해 메커니즘"
+    },
+    {
+      "id": "post-laser-uv-exposure-wound-healing-delayed-fibrosis",
+      "claim": "레이저 후 자외선 노출은 상처 치유를 지연시키고 더 깊고 국소적인 피부 손상(constricted wound)을 유발하며, 섬유화 정도를 심화시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: 상처 치유와 자외선 효과",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/9529218/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "레이저 시술 후",
+        "분류": "자외선의 회복 지연 효과",
+        "시기": "시술 후 회복 기간",
+        "지역": "글로벌"
+      },
+      "caution": "동물 모델 연구이나, 인간의 상처 치유 메커니즘이 유사하므로 적용 가능.",
+      "cautionSource": "피부 생물학 연구"
+    }
+  ]
+}

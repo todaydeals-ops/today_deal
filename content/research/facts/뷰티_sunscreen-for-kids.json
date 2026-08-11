@@ -1,0 +1,130 @@
+{
+  "topic": "아이 선크림: 나이별 사용 기준과 성분 선택",
+  "brand": "성분연구소",
+  "article": "예정",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "infant-sunscreen-6-months-fda-contraindication-absolute",
+      "claim": "FDA는 생후 6개월 미만 영아에 선크림 사용을 권고하지 않으며, 반드시 필요한 경우는 의사와 상담 후 진행해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA: Sunscreen - How to Help Protect Your Skin from the Sun",
+      "source_url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/sunscreen-how-help-protect-your-skin-sun",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "생후 6개월 미만 영아",
+        "분류": "안전 금기",
+        "시기": "영아기",
+        "지역": "미국 FDA"
+      },
+      "caution": "★안전 이슈다. 영아의 미성숙한 피부와 신체 표면적 대비 높은 흡수율이 이유다. 대신 햇빛 회피·보호 의류 우선.",
+      "cautionSource": "FDA 공식 권고"
+    },
+    {
+      "id": "infant-6-months-sunscreen-spf-15-broad-spectrum-fda-recommendation",
+      "claim": "FDA는 생후 6개월 이상 영아에 SPF 15 이상의 광범위(broad-spectrum) 선크림 사용을 권고하며, 성인 기준과 동일하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA: OTC Sunscreen Monograph for Use in Infants",
+      "source_url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/sunscreen-how-help-protect-your-skin-sun",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "생후 6개월~2세",
+        "분류": "사용 기준",
+        "시기": "영아 후기",
+        "지역": "미국 FDA"
+      },
+      "caution": "SPF 15도 충분하지만, 자외선 노출이 많은 환경에서는 SPF 30 이상이 권고된다.",
+      "cautionSource": "FDA 가이드라인"
+    },
+    {
+      "id": "mineral-sunscreen-zinc-oxide-titanium-dioxide-infant-safe-grase-25-percent",
+      "claim": "FDA는 산화아연과 이산화티탄을 최대 25%까지 GRASE(Generally Recognized As Safe and Effective)로 지정했으며, 이는 영아와 민감한 피부 아이에게 가장 안전한 선택이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA: OTC Sunscreen Monograph - GRASE Status",
+      "source_url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "모든 나이의 아이",
+        "분류": "안전 성분",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "아이용 선크림을 고를 때 '광물질(mineral)' 표시를 확인할 것. 화학 자차는 피하는 게 안전하다.",
+      "cautionSource": "FDA 규제 지위"
+    },
+    {
+      "id": "children-atopic-dermatitis-eczema-zinc-oxide-anti-inflammatory-benefit",
+      "claim": "습진·아토피 피부염이 있는 아이는 산화아연의 항염증 작용(TNF-α 억제)과 미성숙한 피부 장벽 비침습성 때문에 산화아연 함유 선크림이 특히 권고된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소아 피부과 가이드 및 산화아연 항염증 연구",
+      "source_url": "https://healthmatters.nyp.org/how-to-choose-the-best-sunscreen-for-kids-and-babies/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "습진·아토피 아이",
+        "분류": "성분 선택",
+        "시기": "만성 피부염 기간",
+        "지역": "글로벌"
+      },
+      "caution": "산화아연은 초기 백탁(white cast)이 있을 수 있지만, 이것은 안전성의 증거다.",
+      "cautionSource": "소아 피부과 학회 권고"
+    },
+    {
+      "id": "children-sunscreen-avoid-paba-fragrance-oxybenzone",
+      "claim": "아이 선크림에서 피해야 할 성분은 PABA(알레르기 위험), 향료(민감 반응), 옥시벤존(호르몬 우려)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소아 피부과 및 선크림 안전 가이드",
+      "source_url": "https://kidshealth.org/en/parents/sunscreen.html",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "영아·소아·민감 피부 아이",
+        "분류": "피해야 할 성분",
+        "시기": "전 나이",
+        "지역": "글로벌"
+      },
+      "caution": "특히 아토피·습진이 있는 아이는 향료 프리(fragrance-free) 제품을 선택할 것.",
+      "cautionSource": "소아 안전 가이드"
+    },
+    {
+      "id": "children-sunscreen-reapplication-2-hours-water-exposure-60-minutes",
+      "claim": "아이용 선크림은 2시간마다 재도포하며, 수영·물놀이 후는 60분 이내에 재도포해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소아 자외선 차단 가이드",
+      "source_url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/sunscreen-how-help-protect-your-skin-sun",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "모든 나이 아이",
+        "분류": "사용 방법",
+        "시기": "일상 사용",
+        "지역": "글로벌"
+      },
+      "caution": "아이는 어른보다 땀을 많이 흘리고 물에 자주 들어가므로 더 자주 재도포해야 한다.",
+      "cautionSource": "소아 행태 특성"
+    },
+    {
+      "id": "children-skin-barrier-maturation-timeline-5-years-comparable-adult",
+      "claim": "아이의 피부 장벽은 만 5세경 성인 수준에 도달하며, 그 전까지는 피부 두께와 각질층 발달이 미완성 상태다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소아 피부과학 기초 연구",
+      "source_url": "https://healthmatters.nyp.org/how-to-choose-the-best-sunscreen-for-kids-and-babies/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "생후~5세 아이",
+        "분류": "피부 성숙도",
+        "시기": "성장 기간",
+        "지역": "글로벤"
+      },
+      "caution": "5세 미만 아이는 성인용 제품보다 아이용 광물질 선크림을 우선 선택할 것.",
+      "cautionSource": "피부 발달 생물학"
+    }
+  ]
+}

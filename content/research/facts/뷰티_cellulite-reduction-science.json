@@ -1,0 +1,19 @@
+{
+  "topic": "셀룰라이트: 콜라겐·지방·호르몬 기전과 성분 개입의 한계",
+  "brand": "성분연구소",
+  "article": "집필 보류: 1차 근거 부족 + 톤 원칙 충돌",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "cellulite-definition-subcutaneous-fat-edema-collagen-nodule-formation",
+      "reason": "주제 폐기 — 셀룰라이트는 시술·크림 판매처가 검색을 통째로 먹어 1차 근거 확보 불가. 정직하게 쓰면 '국소 크림 효과 제한적' 결론으로 광고 유치 원칙 충돌."
+    },
+    {
+      "id": "cellulite-estrogen-fibrosis-collagen-remodeling-fat-compression",
+      "reason": "주제 폐기"
+    }
+  ],
+  "disputes": [],
+  "facts": []
+}

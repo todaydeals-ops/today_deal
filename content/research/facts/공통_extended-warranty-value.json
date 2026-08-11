@@ -1,0 +1,76 @@
+{
+  "topic": "연장보증의 법적 지위와 선택 기준",
+  "brand": "공통",
+  "article": "extended-warranty-value",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "extended-warranty-legal-nature",
+      "claim": "연장보증은 법정 보증(1-2년)과 별개의 계약으로, 소비자가 추가 비용을 내고 선택하는 보험성 상품이며, 법정 보증이 끝난 후의 손상을 부분적으로 커버하는 구조다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공정거래위원회 소비자분쟁해결기준 및 약관규제법",
+      "source_url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000236196",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "가전제품",
+        "line": "전 제품군",
+        "years": "2020-",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "extended-warranty-coverage-exclusions",
+      "claim": "연장보증은 보통 정상 사용 과정의 자연발생적 고장(노화·마모)은 제외하고, 부주의·외부 충격·소비자 과실에 따른 손상도 보증 대상이 아니다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "일반 표준보증 약관",
+      "source_url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000236196",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "가전제품",
+        "line": "냉장고, 세탁기, 에어컨 등",
+        "years": "2020-",
+        "region": "KR"
+      },
+      "caution": "각 렌탈사·제조사별로 약관이 다르므로, 구매 전 보증 범위를 반드시 확인해야 한다. '자연발생적 고장'의 범위는 해석에 따라 갈릴 수 있다"
+    },
+    {
+      "id": "extended-warranty-optional-product",
+      "claim": "연장보증은 법적 의무가 아닌 선택사항이며, 거절해도 제품 구매나 AS에는 영향이 없다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "약관규제법 제15조(부당한 약관 금지)",
+      "source_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsId=001651",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "가전제품",
+        "line": "전 제품",
+        "years": "2020-",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "extended-warranty-claim-requirements",
+      "claim": "연장보증 청구 시 구매 영수증, 보증서, 수리 견적 등 증거 서류를 제출해야 하고, 고장이 보증 범위에 해당하는지 보증사의 심사를 거친다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "표준 연장보증 약관 (제조사·보험사 공통 규정)",
+      "source_url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000236196",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "가전제품",
+        "line": "연장보증 전 상품",
+        "years": "2020-",
+        "region": "KR"
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "topic": "하루 단백질 필요량과 피부·모발: 구강 섭취 vs 국소 제품의 구분",
+  "brand": "성분연구소",
+  "article": "daily-protein-requirement",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "hair-damage-disulfide-bond-disruption-keratin-network-loss-mechanical-strength",
+    "small-molecular-weight-peptide-permeability-lipid-layer-penetration-hair-interior",
+    "protein-treatment-fracture-stress-significant-increase-tensile-strength-elasticity",
+    "protein-treatment-efficacy-persist-5-washing-cycles",
+    "protein-overuse-excessive-crosslinking-risk-brittleness",
+    "copper-cofactor-lysyl-oxidase-collagen-crosslinking-mechanism",
+    "ghk-cu-collagen-production-fibroblast-in-vitro-mechanism"
+  ],
+  "declined_facts": [
+    {
+      "id": "collagen-peptide-no-rda-10-40g-daily-recommended-skin-efficacy-5-10g",
+      "reason": "출처 배제 — rhonutrition.com(보충제 브랜드)에서 가져옴. 상업 출처."
+    },
+    {
+      "id": "collagen-synthesis-decline-mid-40s-25-percent-reduction",
+      "reason": "출처 배제 — moonjuice.com(보충제 판매사)에서 가져옴. 마케팅 콘텐츠로 분류. 수치는 PubMed 문헌에 있지만 해당 출처를 정제해 인용하지 않았으므로 declined."
+    },
+    {
+      "id": "topical-protein-peptide-vs-oral-protein-different-pathways-skin-hair-benefit",
+      "reason": "출처 없음 — source_url이 null. '기초 연구'로만 적혀 있으나 구체적 근거 부재."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "daily-protein-rda-0-8-gram-per-kilogram-body-weight",
+      "claim": "건강한 성인의 단백질 권장섭취량(RDA)은 체중 1kg당 0.8g이다. 신체활동이 중간 정도면 1.0~1.3 g/kg, 강렬하면 1.6 g/kg으로 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "UC Davis Nutrition Department: Protein Requirements",
+      "source_url": "https://nutrition.ucdavis.edu/outreach/nutr-health-info-sheets/pro-protein-requirements",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "성인",
+        "분류": "영양 권장량",
+        "지역": "글로벌"
+      },
+      "caution": "이는 최소 필요량이며, 개인의 목표(근육 증가, 피부 건강)에 따라 더 높은 섭취가 도움이 될 수 있다.",
+      "cautionSource": "RDA 정의"
+    },
+    {
+      "id": "collagen-synthesis-declines-with-age-fibroblasts-chronologically-aged-skin",
+      "claim": "신체의 콜라겐 합성은 나이가 증가하면서 감소하며, 특히 40대 이후 더 뚜렷한 감소가 관찰된다. 이는 피부 탄력 저하와 주름 심화의 주요 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Age-related changes in collagen synthesis and deposition by a human skin fibroblast strain over 25 passages",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/2049064/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "40대 이상",
+        "분류": "노화 생리",
+        "지역": "글로벌"
+      },
+      "caution": "★구체적 감소 비율은 개인차, 환경, 유전 등 여러 변수에 좌우된다.",
+      "cautionSource": "임상 변이"
+    }
+  ]
+}

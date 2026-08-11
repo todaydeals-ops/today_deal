@@ -1,0 +1,75 @@
+{
+  "topic": "겨울 난방과 실내 건조가 피부에 미치는 영향",
+  "brand": "뷰티·성분연구소",
+  "article": "winter-indoor-humidity",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "glycerin-humectant",
+    "hyaluronic-acid-topical",
+    "moisturizer-occlusive-humectant"
+  ],
+  "declined_facts": [
+    {
+      "id": "heating-humidity-drop-physical-phenomenon",
+      "reason": "출처 iaq.works가 판매처 쇼핑몰(HVAC 제품 판매). 물리학적 메커니즘은 학술 자료 필요하나 1차 출처 미확보."
+    },
+    {
+      "id": "humidifier-effectiveness-10-20-percent-increase",
+      "reason": "출처 iaq.works가 판매처. 가습기 효과에 대한 수치 (10-20% 포인트)는 공공기관 또는 학술 자료 필수인데 미확보."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "indoor-humidity-ideal-range-40-60-percent",
+      "claim": "최적 실내 습도는 40-60% 상대습도이며, 겨울의 경우 30-50% 범위를 목표로 하는 것이 현실적이다. 60% 이상은 곰팡이·진드기 번식 위험을 높인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "EPA: A Brief Guide to Mold, Moisture and Your Home",
+      "source_url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "일반 인구 및 피부",
+        "분류": "실내 습도 기준",
+        "시기": "연중",
+        "지역": "글로벌"
+      },
+      "caution": "✦집필에서는 \"겨울에는 30-50% 목표\"로 단순화 추천. 난방 사용으로 인해 40% 이상 유지가 어려운 가정이 많기 때문.",
+      "cautionSource": "EPA mold prevention standard"
+    },
+    {
+      "id": "humidity-below-50-percent-tewl-increase",
+      "claim": "상대습도가 50% 이하로 떨어지면 경표피수분손실(TEWL)이 유의미하게 증가하고 피부 수분 함량이 감소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Effects of Winter Indoor Environment on Skin Condition in Korea",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10264749/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "일반 피부",
+        "분류": "습도와 수분 손실",
+        "시기": "겨울",
+        "지역": "한반도·동아시아"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "humidity-below-30-percent-barrier-integrity-loss",
+      "claim": "상대습도가 30% 이하로 장시간 유지되면 피부 장벽의 구조적 무결성이 손상되며, 특히 기존에 아토피성 피부염이나 민감성 피부가 있는 경우 증상 악화가 가속화된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Effects of Winter Indoor Environment on Skin Condition in Korea",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10264749/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "민감성·아토피성 피부",
+        "분류": "습도 임계값과 장벽",
+        "시기": "겨울",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    }
+  ]
+}

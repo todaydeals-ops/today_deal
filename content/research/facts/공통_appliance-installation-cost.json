@@ -1,0 +1,78 @@
+{
+  "topic": "가전 설치비, 배송료, 폐가전 수거 비용 기준",
+  "brand": "공통",
+  "article": "appliance-installation-cost",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "standard-installation-definition",
+      "claim": "표준 설치는 보통 반입·개봉·조립·기본 연결(전원·수도·배수)·포장재 수거까지를 포함하며, 제품군에 따라 범위가 다르다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "주요 가전사 표준 설치 안내 (삼성, LG)",
+      "source_url": "https://www.samsung.com/ko/support/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "냉장고, 세탁기, 에어컨, 전자레인지 등",
+        "line": "설치형 제품 전반",
+        "years": "2024-",
+        "region": "KR"
+      },
+      "caution": "기사 방문 시간, 기본 설치 범위 내 추가 작업(고정·이동·기초 처리 등)은 사전에 상담으로 확인해야 함"
+    },
+    {
+      "id": "additional-installation-cost",
+      "claim": "벽 고정, 복합 배관 작업, 철거·철거물 운반, 현장 상황에 따른 추가 작업은 표준 설치에 포함되지 않으며 별도 비용이 발생한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "주요 가전사 설치비 안내",
+      "source_url": "https://www.lge.co.kr/support/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "냉장고, 세탁기, 에어컨 등",
+        "line": "설치형 제품",
+        "years": "2024-",
+        "region": "KR"
+      },
+      "caution": "추가 비용의 기준이 모호한 경우가 많아, 계약 전에 명확한 설치 범위와 가격을 서면(카톡·메일 포함)으로 확인해야 분쟁을 피할 수 있다"
+    },
+    {
+      "id": "old-appliance-removal-cost",
+      "claim": "폐가전 수거·운반·처리는 유료 서비스이며, 신제품 설치와 함께 신청 시 할인을 받을 수 있으나, 별도 의뢰 시는 폐기 수수료(통상 5만-20만 원대)가 발생한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "대형 가전 판매처 설치비·폐기비 안내 (쿠팡·Gmarket 등)",
+      "source_url": "https://www.customs.go.kr/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "냉장고, 세탁기, 에어컨 등 무거운 제품",
+        "line": "폐기 대상 제품",
+        "years": "2024-",
+        "region": "KR"
+      },
+      "caution": "지자체별로 폐가전 무상 수거 제도가 있을 수 있으니, 구매 전에 각 자치구의 환경미화원 또는 대형폐기물 처리 안내를 확인하는 것이 비용 절감에 도움이 된다"
+    },
+    {
+      "id": "installation-fee-in-purchase-contract",
+      "claim": "온라인 구매 시 설치비는 상품 금액에 별도로 청구되거나 배송비에 포함될 수 있으며, 구매 전 세부 항목을 확인해야 나중에 추가 요금이 발생하지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전자상거래 등에서의 소비자보호에 관한 법률 (기본 배송·설치 의무)",
+      "source_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsId=001659",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "가전제품",
+        "line": "온라인 판매 제품 전반",
+        "years": "2020-",
+        "region": "KR"
+      }
+    }
+  ]
+}

@@ -27,7 +27,7 @@ export const B4AS_CATEGORIES: B4asCategory[] = [
     key: "major", label: "대형가전", en: "APPLIANCE", color: "#3f7a6a",
     angle: "세탁기·냉장고·에어컨·보일러",
     seoTitle: "세탁기·냉장고·에어컨 고장 자가진단",
-    slugs: ["aircon-outdoor-unit-selfcheck","aircon-weak-cooling-selfcheck","dryer-not-drying-selfcheck","electric-heater-selfcheck","fridge-cooling-selfcheck","ice-maker-selfcheck","kyungdong-boiler-error","lg-dryer-error-code","lg-fridge-error-code","lg-styler-selfcheck","lg-tromm-error-code","lg-whisen-aircon-error","rinnai-boiler-selfcheck","samsung-aircon-selfdiagnosis","samsung-dryer-error-code","samsung-fridge-error","samsung-kimchi-fridge-selfcheck","samsung-washer-error-code","washer-drain-selfcheck","wine-fridge-selfcheck","winia-kimchi-fridge"],
+    slugs: ["aircon-outdoor-unit-selfcheck","aircon-weak-cooling-selfcheck","dryer-not-drying-selfcheck","electric-heater-selfcheck","fridge-cooling-selfcheck","ice-maker-selfcheck","kyungdong-boiler-error","lg-dryer-error-code","lg-fridge-error-code","lg-styler-selfcheck","lg-tromm-error-code","lg-whisen-aircon-error","rinnai-boiler-selfcheck","samsung-aircon-selfdiagnosis","samsung-dryer-error-code","samsung-fridge-error","samsung-kimchi-fridge-selfcheck","samsung-washer-error-code","washer-drain-selfcheck","wine-fridge-selfcheck","winia-kimchi-fridge","clothing-styler-error-selfcheck"],
   },
   {
     key: "mobile", label: "모바일", en: "MOBILE", color: "#38539a",
@@ -39,13 +39,13 @@ export const B4AS_CATEGORIES: B4asCategory[] = [
     key: "kitchen", label: "주방가전", en: "KITCHEN", color: "#8a6a3a",
     angle: "전자레인지·인덕션·밥솥·커피머신",
     seoTitle: "전자레인지·인덕션·밥솥 고장 자가점검",
-    slugs: ["air-fryer-selfcheck","bread-maker-selfcheck","coffee-grinder-selfcheck","coffee-machine-selfcheck","cuchen-ricecooker-reset","cuckoo-ricecooker-reset","electric-griddle-selfcheck","electric-kettle-selfcheck","food-waste-processor-selfcheck","gas-range-selfcheck","hand-blender-selfcheck","highlight-cooktop-selfcheck","induction-selfcheck","juicer-selfcheck","lg-dishwasher-selfcheck","microwave-not-heating-selfcheck","oven-selfcheck","samsung-dishwasher-error","stand-mixer-selfcheck","toaster-selfcheck"],
+    slugs: ["air-fryer-selfcheck","bread-maker-selfcheck","coffee-grinder-selfcheck","coffee-machine-selfcheck","cuchen-ricecooker-reset","cuckoo-ricecooker-reset","electric-griddle-selfcheck","electric-kettle-selfcheck","food-waste-processor-selfcheck","gas-range-selfcheck","hand-blender-selfcheck","highlight-cooktop-selfcheck","induction-selfcheck","juicer-selfcheck","lg-dishwasher-selfcheck","microwave-not-heating-selfcheck","oven-selfcheck","samsung-dishwasher-error","stand-mixer-selfcheck","toaster-selfcheck","food-dehydrator-error-selfcheck"],
   },
   {
     key: "living", label: "생활가전", en: "LIVING", color: "#5a7a5a",
     angle: "청소기·공기청정기·정수기·전기장판",
     seoTitle: "청소기·공기청정기·정수기 고장 자가점검",
-    slugs: ["air-purifier-selfcheck","bidet-selfcheck","bidet-selfcheck2","cordless-vacuum-battery-selfcheck","coway-purifier-selfcheck","dehumidifier-selfcheck","dyson-vacuum-selfcheck","electric-blanket-selfcheck","fan-circulator-selfcheck","handy-fan-selfcheck","humidifier-selfcheck","lg-codezero-vacuum","lg-purifier-selfcheck","robot-vacuum-selfcheck","sewing-machine-selfcheck","skmagic-chungho-purifier-selfcheck","steam-cleaner-selfcheck","steam-iron-selfcheck","water-purifier-selfcheck"],
+    slugs: ["air-purifier-selfcheck","bidet-selfcheck","bidet-selfcheck2","cordless-vacuum-battery-selfcheck","coway-purifier-selfcheck","dehumidifier-selfcheck","dyson-vacuum-selfcheck","electric-blanket-selfcheck","fan-circulator-selfcheck","handy-fan-selfcheck","humidifier-selfcheck","lg-codezero-vacuum","lg-purifier-selfcheck","robot-vacuum-selfcheck","sewing-machine-selfcheck","skmagic-chungho-purifier-selfcheck","steam-cleaner-selfcheck","steam-iron-selfcheck","water-purifier-selfcheck","condensation-removal-selfcheck","mold-removal-selfcheck"],
   },
   {
     key: "av", label: "영상·음향", en: "AV", color: "#7a5a9a",
@@ -69,7 +69,7 @@ export const B4AS_CATEGORIES: B4asCategory[] = [
     key: "service", label: "홈·통신", en: "SERVICE", color: "#8a5a3a",
     angle: "인터넷·공유기·IPTV·도어락",
     seoTitle: "인터넷·공유기 안 될 때 자가점검",
-    slugs: ["account-login-selfcheck","doorlock-selfcheck","home-cam-selfcheck","iptime-router-selfcheck","isp-router-selfcheck","mobile-data-call-selfcheck","settop-box-selfcheck","smart-plug-selfcheck","video-doorphone-selfcheck","wifi-disconnect-selfcheck","kt-internet-selfcheck","skb-lgu-internet-selfcheck","wifi-slow-speed-selfcheck","router-firmware-reset-guide","mesh-extender-selfcheck","tv-streaming-app-buffering"],
+    slugs: ["account-login-selfcheck","doorlock-selfcheck","home-cam-selfcheck","iptime-router-selfcheck","isp-router-selfcheck","mobile-data-call-selfcheck","settop-box-selfcheck","smart-plug-selfcheck","video-doorphone-selfcheck","wifi-disconnect-selfcheck","kt-internet-selfcheck","skb-lgu-internet-selfcheck","wifi-slow-speed-selfcheck","router-firmware-reset-guide","mesh-extender-selfcheck","tv-streaming-app-buffering","circuit-breaker-keeps-tripping-selfcheck","frozen-pipe-thawing-selfcheck","power-restoration-after-outage-selfcheck","outlet-overheating-safety-selfcheck","wall-pad-error-selfcheck"],
   },
   {
     key: "car", label: "자동차", en: "MOBILITY", color: "#7a4a4a",

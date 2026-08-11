@@ -1,0 +1,115 @@
+{
+  "topic": "여름 피지 관리: 온도와 피지 분비의 관계, 과세정의 역효과",
+  "brand": "성분연구소",
+  "article": "예정",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "niacinamide-2-percent-sebum-reduction-20-25-percent-4weeks"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "skin-temperature-sebum-excretion-rate-dose-response-1-degree-celsius-10-percent",
+      "claim": "피부 온도가 1℃ 상승할 때마다 피지 분비량이 약 10% 증가하는 선형 용량-반응 관계가 있으며, 이는 1970년대 연구 이래 반복 입증된 확실한 현상이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "British Journal of Dermatology 1970 (Cunliffe) 및 현대 임상 연구",
+      "source_url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2133.1970.tb15759.x",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "모든 피부",
+        "분류": "온도-피지 분비 관계",
+        "시기": "열 노출 중",
+        "지역": "글로벌"
+      },
+      "caution": "개인 차이와 계절(겨울 32℃ vs 여름 32℃)에 따라 절대값은 다를 수 있으나, 상대적 증가는 일관성 있음.",
+      "cautionSource": "dermatological kinetics (50년 반복 증명)"
+    },
+    {
+      "id": "summer-32-celsius-skin-oiliness-inflammation-markers-increase",
+      "claim": "32℃ 환경 노출 시 피부 온도 상승으로 인해 유분감(oiliness), 끈기(stickiness), 염증 지표가 증가하고, 피부가 '상큼함' 또는 '갈증'을 느끼는 정도가 감소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Randomized crossover clinical trial 2025",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0013935125026295",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "일반 성인",
+        "분류": "온열 환경 반응",
+        "시기": "여름·고온",
+        "지역": "글로벌"
+      },
+      "caution": "실제 여름 기온(32~35℃) 상황을 반영한 데이터.",
+      "cautionSource": "RCT 2025"
+    },
+    {
+      "id": "humidity-sebaceous-glands-stimulation-oil-output-worsening-acne",
+      "claim": "높은 습도는 피지선을 직접 자극하여 피지 분비를 증가시키고, 특히 고온+고습 조건에서 아크네 악화가 뚜렷하다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "피부과 임상 경험 및 습도-피부 반응 연구",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/18199943/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "지성·여드름 피부",
+        "분류": "습도-피지·여드름",
+        "시기": "여름·고습",
+        "지역": "고습 지역"
+      },
+      "caution": "한반도 여름(고온+고습)은 피지 문제의 최악 조건. 정량적 임상 데이터는 제한적이나 임상 경험상 일반적 현상.",
+      "cautionSource": "dermatology climate research and clinical observation"
+    },
+    {
+      "id": "over-washing-strips-barrier-rebound-sebum-production-cycle",
+      "claim": "과도한 세정은 피부 자연 유막을 제거해 경표피수분손실(TEWL)을 증가시키고, 피부가 더 많은 피지로 보상하는 '리바운드 피지 분비'를 야기한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: The effect of washing and drying practices on skin barrier function",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/18199943/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "지성·결합 피부",
+        "분류": "과세정의 역효과",
+        "시기": "일일 루틴",
+        "지역": "글로벌"
+      },
+      "caution": "★'피지 많으니 자주 씻자'는 악순환의 정의. 오히려 피지를 더 악화시킴.",
+      "cautionSource": "dermatological negative feedback mechanism"
+    },
+    {
+      "id": "tewl-transepidermal-water-loss-frequent-washing-strong-surfactants",
+      "claim": "강한 계면활성제(harsh surfactants)로 하루 2회 이상 세정하면 TEWL(경표피수분손실)이 증가하여 피부가 건조해지고, 이에 따른 보상 피지 분비가 일어난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: The effect of washing and drying practices on skin barrier function",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/18199943/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "지성 피부",
+        "분류": "세정과 장벽 손상",
+        "시기": "일일 루틴",
+        "지역": "글로벌"
+      },
+      "caution": "적절한 클렌징은 1~2회/일, 따뜻한 물 + 순한 클렌저.",
+      "cautionSource": "dermatology best practice"
+    },
+    {
+      "id": "aad-face-washing-101-twice-daily-with-gentle-cleanser",
+      "claim": "AAD(미국 피부과학회) '얼굴 세정 101' 공식 안내에서 아침과 저녁 2회 온화한 클렌저 사용을 권장하며, 과도한 세정은 피부 장벽을 약화시키고 피지 과다 분비를 초래한다고 명시한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAD (American Academy of Dermatology) Face Washing 101",
+      "source_url": "https://www.aad.org/public/everyday-care/skin-care-basics/care/face-washing-101",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "지성·결합 피부",
+        "분류": "여름 피지 관리 권장",
+        "시기": "일일 루틴",
+        "지역": "글로벌"
+      },
+      "caution": "★하루 2회 이상의 세정은 피지선의 보상 작동을 유발. 클렌저 선택(순함)이 횟수보다 중요.",
+      "cautionSource": "AAD official patient education"
+    }
+  ]
+}

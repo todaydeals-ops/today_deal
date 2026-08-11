@@ -1,0 +1,100 @@
+{
+  "topic": "마스크 착용으로 인한 피부 자극(마스크네) 메커니즘 및 회복",
+  "brand": "뷰티·성분연구소",
+  "article": "mask-irritation-recovery",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "centella-wound-repair",
+    "panthenol-madecassoside",
+    "niacinamide-sebum-pore"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "maskne-pathophysiology-friction-occlusion-humidity-microbiome",
+      "claim": "마스크네(maskne)는 4가지 요인의 복합 작용으로 발생한다: ① 마스크 재질의 마찰(textile skin friction) ② 폐색(occlusion)으로 인한 습도 상승 ③ 열과 수분으로 인한 피지선 과다 분비 ④ 폐색 환경에서의 미생물 불균형(Malassezia 과증식 등). 이들은 모두 동시에 작용하는 복합 피부 반응이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Maskne and Beyond: Effects on the Skin and Implications of Occlusion and Friction",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9971751/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "마스크 착용자(특히 의료진)",
+        "분류": "병인 메커니즘",
+        "시기": "마스크 장시간 착용 중·직후",
+        "지역": "글로벌"
+      },
+      "caution": "★마스크네는 단순 여드름이나 알레르기가 아니며, 폐색성 여드름(acne mechanica) + 접촉성피부염의 하이브리드다. 치료 방향을 결정할 때 원인을 구분하는 것이 중요.",
+      "cautionSource": "PMC 임상 연구"
+    },
+    {
+      "id": "maskne-healthcare-workers-prevalence-40-60-percent",
+      "claim": "코로나19 팬데믹 이후 의료진 대상 연구에서 마스크 착용자의 40-60%가 마스크 관련 새로운 피부 병변 또는 기존 병변의 악화를 보고했으며, 특히 얼굴 중앙부(코다리, 뺨, 귀 뒤)의 고마찰 부위가 가장 영향을 많이 받았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Maskne and Beyond - Clinical Epidemiology",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9971751/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "의료진(특히 N95·수술용 마스크 사용자)",
+        "분류": "유병률 통계",
+        "시기": "2020-2021년 팬데믹",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "maskne-keratinization-obstruction-keratinocyte-swelling",
+      "claim": "마스크 내 높은 습도와 열은 각질세포(keratinocyte)를 팽창시켜 모공 폐색을 초래하고, 이로 인해 모낭-피지선 단위의 급성 폐색이 발생하며 피지 배출이 차단된다. 또한 고습도는 각질 형성을 촉진해 모공 내 미사물의 축적을 가속화한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Maskne and Beyond - Pathophysiological Mechanisms",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9971751/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "마스크 착용자",
+        "분류": "생화학 메커니즘",
+        "시기": "마스크 착용 중",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "maskne-contact-dermatitis-chemical-allergens",
+      "claim": "마스크네의 일부는 접촉성피부염(Type IV 지연형 과민반응)이며, 원인은 마스크 재질의 화학 성분이다: 포름알데히드(텍스타일 마무리제), 고무 가속제(탄성 귀 고리), 분산 염료(색상 마스크), 접착제 성분 등. 이러한 접촉성피부염은 폐색 여드름과 구분해야 치료 방향이 달라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Maskne - Contact Dermatitis and Chemical Allergy Components",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12711247/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "마스크 착용자, 특히 민감성 피부",
+        "분류": "접촉성피부염",
+        "시기": "마스크 착용 중·직후",
+        "지역": "글로벌"
+      },
+      "caution": "★마스크 색상(분산 염료)이나 탄성 재질에 대한 알레르기가 의심되면 순면 마스크나 무색 마스크로 교체 테스트가 필요하다.",
+      "cautionSource": "임상 진단 기준"
+    },
+    {
+      "id": "maskne-recovery-timeline-barrier-restoration-weeks",
+      "claim": "마스크 착용 중단 후 마스크네 증상의 회복은 개인차가 크나, 가벼운 폐색성 여드름은 1-2주, 중등도 자극성피부염은 2-3주, 심한 접촉성피부염은 4주 이상이 소요될 수 있다. 장벽 재생과 미생물 정상화 속도에 따라 결정된다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "임상 경험 및 환자 보고 집계",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9971751/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "마스크네 환자",
+        "분류": "회복 타임라인",
+        "시기": "마스크 착용 중단 후",
+        "지역": "글로벌"
+      },
+      "caution": "★개인차가 매우 크며, 호르몬 사이클·스트레스·기존 피부 상태에 따라 크게 달라진다. \"2주면 나을 것\"이라는 단순화는 피할 것.",
+      "cautionSource": "PMC 환자 보고"
+    }
+  ]
+}

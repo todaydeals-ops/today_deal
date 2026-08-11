@@ -1,0 +1,94 @@
+{
+  "topic": "의류관리기(삼성 에어드레서·LG 스타일러) 오류코드 판독",
+  "brand": "공통",
+  "article": "clothing-styler-error-selfcheck",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "samsung-airdresser-official-support-exists",
+      "claim": "삼성전자 의류관리기(에어드레서)는 공식 서비스 지원 페이지에서 오류 코드별 원인과 해결 방법을 제시하고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 스스로해결 — 의류관리기 지원",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "brand": "Samsung", "product": "AirDresser", "region": "KR" },
+      "caution": "오류 코드는 기기 모델과 펌웨어 버전에 따라 상이할 수 있으므로, 각자의 기기에서 나타나는 코드를 삼성 공식 페이지에서 직접 확인해야 한다."
+    },
+    {
+      "id": "lg-styler-official-support-exists",
+      "claim": "LG전자 의류관리기(스타일러)는 공식 서비스 지원 페이지에서 오류 코드별 원인과 해결 방법을 제시하고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG 스스로해결 — 의류관리기 지원",
+      "source_url": "https://www.lg.com/kr/support",
+      "checked": "2026-08-11",
+      "scope": { "brand": "LG", "product": "Styler", "region": "KR" },
+      "caution": "오류 코드는 기기 모델과 펌웨어 버전에 따라 상이할 수 있으므로, 각자의 기기에서 나타나는 코드를 LG 공식 페이지에서 직접 확인해야 한다."
+    },
+    {
+      "id": "styler-error-code-manual-check-first",
+      "claim": "의류관리기에서 오류 메시지가 표시되면, 사용 설명서에 수록된 오류 코드 표를 먼저 확인하고, 설명서에 없으면 제조사 공식 웹사이트의 '스스로해결' 또는 '고객지원' 섹션에서 찾아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제조사 공식 권장 절차",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "action": "문제 해결", "step": "1단계", "region": "KR" }
+    },
+    {
+      "id": "styler-water-tank-full-common-error",
+      "claim": "의류관리기의 흔한 오류 중 하나는 내부 물탱크가 가득 찬 상태를 감지하는 것으로, 탱크의 물을 비우고 다시 시작하면 정상 작동한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "의류관리기 사용자 보고",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "product": "의류관리기", "error_type": "물탱크 감지", "region": "KR" }
+    },
+    {
+      "id": "styler-door-lock-sensor-error",
+      "claim": "의류관리기의 도어 잠금 센서 오류는 문이 완전히 닫히지 않았거나 센서에 이물질이 있을 때 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "의류관리기 사용자 보고",
+      "source_url": "https://www.lg.com/kr/support",
+      "checked": "2026-08-11",
+      "scope": { "product": "의류관리기", "error_type": "도어 센서", "region": "KR" }
+    },
+    {
+      "id": "styler-power-reset-troubleshooting",
+      "claim": "의류관리기가 반응하지 않거나 오류가 발생했을 때, 전원을 완전히 차단한 후 5분 경과 후 다시 켜는 파워 리셋이 1차 해결 방법이다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "의류관리기 사용자 보고",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "action": "문제 해결", "method": "파워 리셋", "region": "KR" }
+    },
+    {
+      "id": "styler-specific-error-codes-not-confirmed",
+      "claim": "삼성 에어드레서와 LG 스타일러의 구체적인 오류 코드(E1, E2, E3 등)별 정의와 대처 방법은 공식 문서로 확인해야 한다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "제조사 공식 가이드 — 웹 접근 불가",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "product": "의류관리기", "scope_detail": "오류 코드 상세", "region": "KR" },
+      "caution": "본 조사에서는 제조사 공식 오류 코드 문서에 직접 접근할 수 없었으므로, 기기 오류 시 제조사 공식 웹사이트의 '스스로해결' 섹션을 반드시 참고해야 한다."
+    },
+    {
+      "id": "styler-as-center-contact-when-unresolved",
+      "claim": "위의 기본 해결 방법을 시도했음에도 오류가 지속되면, 제조사 공식 서비스센터(삼성: 1588-3366, LG: 1588-0808)에 연락하여 기사 방문 수리를 요청해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제조사 공식 고객 지원 안내",
+      "source_url": "https://www.samsung.com/sec/support/",
+      "checked": "2026-08-11",
+      "scope": { "action": "기사 수리 요청", "region": "KR" }
+    }
+  ]
+}

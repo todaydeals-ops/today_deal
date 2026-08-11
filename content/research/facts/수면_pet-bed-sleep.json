@@ -1,0 +1,204 @@
+{
+  "topic": "반려동물과 함께 자기: 수면 질과 건강 영향",
+  "brand": "수면",
+  "article": "pet-bed-sleep",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "pet-bed-youth-sleep-duration-efficiency",
+      "claim": "침대에서 반려동물과 자는 청소년(평균 9.5세)은 반려동물이 없는 청소년보다 더 짧은 수면 시간, 낮은 수면 효율을 보인다. ActiGraph 객관 측정 기반(175가족, 2주간).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed - Co-Sleeping with a pet: exploring the impact on youth sleep (2025)",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40084993/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "청소년 수면 측정",
+        "years": "2025",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "dog-movement-sleep-disruption",
+      "claim": "반려동물이 있는 청소년 객관 측정 결과, 개의 움직임 1분 전의 개 활동이 청소년의 밤중 움직임을 예측했으며, 이는 반려동물의 직접적 수면 방해를 시사한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed - Co-Sleeping with a pet: exploring the impact on youth sleep (2025)",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40084993/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "물리적 방해 메커니즘",
+        "years": "2025",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "adult-dog-bed-sleep-quality-insomnia",
+      "claim": "성인 대상 미국 전국 표본(1,591명) 조사에서 개와 침대를 공유하는 성인은 비공유자보다 더 나쁜 주관적 수면 질과 높은 불면증 심각도를 보였다. 자가보고 기반.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI PMC - Co-sleeping with pets, stress, and sleep in a nationally-representative sample (2024)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10918166/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "성인 수면 질",
+        "years": "2024",
+        "region": "미국"
+      },
+      "caution": "자가보고에 의존하고 횡단면 설계이므로 인과 관계를 확정할 수 없다. 수면이 나쁜 사람이 반려동물과 자기로 선택했을 가능성도 있다."
+    },
+    {
+      "id": "cat-bed-sleep-no-negative-effect",
+      "claim": "고양이와 침대를 공유하는 성인은 개와의 공유와 달리 주관적 수면 효율에는 부정적 영향을 보이지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI PMC - Co-sleeping with pets, stress, and sleep in a nationally-representative sample (2024)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10918166/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "반려동물 종별 영향",
+        "years": "2024",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "pet-bed-stress-buffering-not-observed",
+      "claim": "반려동물과 침대 공유가 스트레스로 인한 수면 문제를 완화한다는 이론적 예상과 달리, 연구에서는 이러한 스트레스 완충(stress-buffering) 효과의 증거를 찾지 못했다. 높은 스트레스는 반려동물 공유 여부와 무관하게 수면을 악화시켰다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI PMC - Co-sleeping with pets, stress, and sleep in a nationally-representative sample (2024)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10918166/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "심리적 효과",
+        "years": "2024",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "pet-enterobacteriaceae-fecal-bacteria",
+      "claim": "침대를 공유하는 반려동물(n=28마리 개, 22마리 고양이) 파일로트 조사 결과 개의 86%, 고양이의 32%에서 대장균 등 분변 유래 장내세균(Enterobacteriaceae)이 털이나 발바닥에서 검출되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI PMC - Zoonotic Risks of Sleeping with Pets (2022)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9606909/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "세균 오염",
+        "years": "2022",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "pet-aerobic-bacteria-hospital-standard",
+      "claim": "침대 공유 반려동물에서 수집한 샘플의 호기성 세균 수준은 병원 위생 기준의 4~7배였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI PMC - Zoonotic Risks of Sleeping with Pets (2022)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9606909/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "세균 농도",
+        "years": "2022",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "pet-flea-infestation-bed",
+      "claim": "조사 대상 반려동물의 14%(7/50마리)에서 침대 영역에서 벼룩이 발견되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI PMC - Zoonotic Risks of Sleeping with Pets (2022)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9606909/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "기생충",
+        "years": "2022",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "zoonotic-pathogen-risk-vulnerable-populations",
+      "claim": "반려동물과 침대 공유는 특히 어린이, 임산부, 면역저하자(고령자, 항암치료 중, 이식 후 등)에게 인수공통감염병(zoonotic diseases) 전파 위험이 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI PMC - Zoonotic Risks of Sleeping with Pets (2022)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9606909/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "위험군",
+        "years": "2022",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "bedsheet-wash-frequency-pet-sharing",
+      "claim": "반려동물과 침대를 공유하는 경우 침구류를 3~4일마다 세탁하는 것이 권장된다. 반려동물이 없는 경우 주 1회 세탁이 기본이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation + CDC guidance on pet hygiene",
+      "source_url": "https://www.sleepfoundation.org/animals-and-sleep/sleeping-with-pets",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "위생 관리",
+        "years": "2026",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "pet-allergen-dander-bedding",
+      "claim": "반려동물 각질(dander)과 알레르겐이 침구류에 트랩되어, 천식이나 알레르기성 비염이 있는 사람의 수면을 악화시킬 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation - Sleeping with Pets: Benefits and Risks",
+      "source_url": "https://www.sleepfoundation.org/animals-and-sleep/sleeping-with-pets",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "알레르기",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "pet-paw-contamination-study",
+      "claim": "한 연구에서 개 발바닥의 86%에서 분변 유래 세균이 검출되었으며, 이는 실내 왕래 시 침대로 전파될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI PMC - Zoonotic Risks of Sleeping with Pets (2022)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9606909/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "gear",
+        "line": "세균 전파 경로",
+        "years": "2022",
+        "region": "미국"
+      }
+    }
+  ]
+}

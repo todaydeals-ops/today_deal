@@ -1,0 +1,113 @@
+{
+  "topic": "가려운 구진성 발진 vs 곪은 여드름: 말라세지아 모낭염과 심상성 여드름 감별",
+  "brand": "성분연구소",
+  "article": "예정",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "malassezia-folliculitis-pruritic-papules-monomorphic-acne-mimic",
+      "claim": "말라세지아 모낭염은 단형성(monomorphic) 가려운 구진과 소농포를 일으키며, 심상성 여드름과 유사해 진단 착각이 잦다. 실제로 여드름으로 오진된 환자의 75%가 말라세지아 모낭염이었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MDPI 2024 및 JCAD: Malassezia Folliculitis: An Underdiagnosed Mimicker",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12471122/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "여드름 환자",
+        "분류": "진단 오류·감별",
+        "시기": "임상진단",
+        "지역": "글로벌"
+      },
+      "caution": "★110명 중 75%=진단 오류의 심각성을 반영. 여드름약으로 악화되는 환자는 말라세지아 의심.",
+      "cautionSource": "MDPI 2024 연구(n=110)"
+    },
+    {
+      "id": "acne-vulgaris-polymorphic-comedones-not-pruritic",
+      "claim": "심상성 여드름(acne vulgaris)은 다형성(polymorphic) 병변—면포, 구진, 농포, 낭종 혼재—을 특징으로 하며, 일반적으로 가렵지 않다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "StatPearls 및 dermatology literature",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK553091/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "여드름 분류",
+        "분류": "임상 특성",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "면포(검고 하얀 닫힌 머리)가 없으면 여드름이 아닐 가능성 높음.",
+      "cautionSource": "dermatology textbook"
+    },
+    {
+      "id": "pruritus-and-absence-of-comedones-distinguish-malassezia-from-acne",
+      "claim": "**가려움(pruritus) + 면포 부재**는 말라세지아 모낭염을 진단하는 핵심 단서이며, 이 두 특징이 모두 있으면 심상성 여드름보다 말라세지아를 우선 고려해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dermatology Times: Malassezia Folliculitis vs Acne Vulgaris",
+      "source_url": "https://www.dermatologytimes.com/view/malassezia-folliculitis-vs-acne-vulgaris-key-diagnostic-and-treatment-differences",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "여드름 유사 병변",
+        "분류": "감별 진단 기준",
+        "시기": "임상진단",
+        "지역": "글로벌"
+      },
+      "caution": "독자가 기억해야 할 실용적 체크리스트: 가렵나? 검은 점이나 흰 머리 (면포)가 있나?",
+      "cautionSource": "dermatology clinical guide"
+    },
+    {
+      "id": "koh-preparation-potassium-hydroxide-microscopy-confirmatory-diagnosis",
+      "claim": "KOH(수산화칼륨) 현미경 검사와 배양이 말라세지아 모낭염을 확진하는 표준 진단법이며, 임상 의심에 근거한 경험적 항진균 치료로도 진단 확인이 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "StatPearls 및 dermatology diagnostic protocols",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK553091/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "진단 방법",
+        "분류": "검사실 진단",
+        "시기": "임상진단",
+        "지역": "글로벀"
+      },
+      "caution": "피부과 진료 없이는 독자가 KOH 검사를 스스로 할 수 없다. 공식 진단은 의료진 필수.",
+      "cautionSource": "dermatology diagnostic standard"
+    },
+    {
+      "id": "acne-medication-worsens-malassezia-folliculitis-risk",
+      "claim": "말라세지아 모낭염을 여드름으로 오인해 항생제, 벤조일 퍼옥사이드, 레티노이드 등 여드름약을 사용하면 증상이 악화되거나 지속되는 악순환이 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "MDPI 2024 및 dermatology literature",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12471122/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "오진으로 인한 악화",
+        "분류": "진단 오류의 위해",
+        "시기": "장기 치료",
+        "지역": "글로벨"
+      },
+      "caution": "★이건 우리 글의 **안전 경고** 대목. 임신 금기와 함께 가장 중요한 내용.",
+      "cautionSource": "dermatology adverse outcome"
+    },
+    {
+      "id": "malassezia-treatment-antifungal-azole-response-diagnostic",
+      "claim": "말라세지아 모낭염은 케토코나졸, 이트라코나졸, 플루코나졸 같은 항진균제에 반응하며, 여드름약 실패 후 항진균 치료 시작하면 빠른 호전이 진단 근거가 될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "StatPearls 및 dermatology diagnostic/therapeutic",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7996476/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "진단 및 치료",
+        "분류": "치료 반응",
+        "시기": "치료 중",
+        "지역": "글로벌"
+      },
+      "caution": "피부과 처방 필요. 자가 항진균제 오남용은 피해야 함.",
+      "cautionSource": "dermatology therapeutic protocol"
+    }
+  ]
+}

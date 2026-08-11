@@ -1,0 +1,204 @@
+{
+  "topic": "여행지에서 숙면하기: 낯선 곳의 수면 과학",
+  "brand": "수면",
+  "article": "travel-sleep-insomnia",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "first-night-effect-definition",
+      "claim": "첫 밤 효과(First-Night Effect, FNE)는 낯선 환경에서 처음 보내는 밤에 경험하는 일시적 수면 장애로, 더 긴 수면 잠복기(입면까지의 시간), 증가된 각성 시간, 단축된 총 수면 시간, 낮은 수면 효율이 특징이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Brown University Research + Sleep Science review",
+      "source_url": "https://www.brown.edu/news/2016-04-21/sleep",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "work",
+        "line": "여행 수면 현상",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "first-night-effect-prevalence",
+      "claim": "대부분의 사람이 첫 밤 효과를 경험하고, 인식하지 못하는 사람도 미묘하게 경험한다. 평균적으로 낯선 환경에서 20~30분 적게 잔다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation + National Geographic",
+      "source_url": "https://www.sleepfoundation.org/travel-and-sleep/sleeping-well-in-hotel",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "work",
+        "line": "수면 시간 단축",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "fne-hemisphere-asymmetry-monitoring",
+      "claim": "첫 밤에 한쪽 뇌 반구가 깊은 수면(NREM) 중에도 더 깨어 있는 상태를 유지하며(interhemispheric asymmetry), 외부 자극에 대한 감시 시스템을 작동시킨다. 이는 진화적 생존 기제로 해석된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI PMC - Surveillance During REM Sleep for the First-Night Effect",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6828645/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "work",
+        "line": "뇌 메커니즘",
+        "years": "2020",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "fne-rem-sleep-vigilance",
+      "claim": "REM 수면 중 첫 밤의 감시 활동은 phasic period(안구 운동이 일어나는 때)에 주로 나타나며, 낯선 환경의 소리에 대한 뇌 반응이 이틀째보다 훨씬 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI PMC - Surveillance During REM Sleep for the First-Night Effect",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6828645/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "work",
+        "line": "REM 수면 감시",
+        "years": "2020",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "frontal-lobe-alertness-fne",
+      "claim": "첫 밤에 깊은 수면과 관련된 전두엽의 활동이 증가하여 사람들이 더 적게 자고 더 얕게 잘 뿐만 아니라 각성 상태가 높아진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Science research",
+      "source_url": "https://esrs.eu/news/sleep-science-friday/the-first-night-effect-of-sleep-occurs-over-nonconsecutive-nights-in-unfamiliar-and-familiar-environments/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "work",
+        "line": "수면 깊이",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "fne-age-differences",
+      "claim": "첫 밤 효과는 어린이, 청소년, 노인에서 더 두드러지며, 나이가 들수록 악화된다. 20대가 가장 적게 영향을 받는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Science research meta-analysis",
+      "source_url": "https://www.nbcchicago.com/news/health/trouble-sleeping-new-place-first-night-effect/3973446/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "ageless",
+        "line": "연령별 차이",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "chronotype-hotel-adaptation",
+      "claim": "아침형 사람(morning types)이 저녁형 사람(evening types)보다 호텔에서 불면증 증상을 더 자주 보고했다. 저녁형이 더 유연한 수면 스케줄로 새로운 환경에 더 쉽게 적응한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation - Sleeping well in hotel",
+      "source_url": "https://www.sleepfoundation.org/travel-and-sleep/sleeping-well-in-hotel",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "work",
+        "line": "개인차",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "familiar-scent-sleep-quality",
+      "claim": "2024년 피츠버그 대학 연구에서 개인이 긍정적이거나 편안한 연결을 가진 향기를 맡으면 부정적 생각의 악순환을 깨고 우울감을 극복하는 데 도움이 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "University of Pittsburgh Study (2024)",
+      "source_url": "https://www.sleepfoundation.org/travel-and-sleep/sleeping-well-in-hotel",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "work",
+        "line": "감각 적응",
+        "years": "2024",
+        "region": "미국"
+      }
+    },
+    {
+      "id": "familiar-items-sleep-cue",
+      "claim": "특정 베개 종류나 침대의 특정 방향으로 누우는 습관 같은 '수면-발생 연결(sleep-onset associations)'은 호텔에서도 수면을 촉발하는 신호로 작동하여 적응을 돕는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation + National Geographic",
+      "source_url": "https://www.sleepfoundation.org/travel-and-sleep/sleeping-well-in-hotel",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "work",
+        "line": "습관 신호",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "hotel-room-temperature-optimal",
+      "claim": "호텔 수면을 개선하는 최적 실내 온도는 화씨 60~67도(섭씨 약 15.6~19.4도)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation - Sleeping well in hotel",
+      "source_url": "https://www.sleepfoundation.org/travel-and-sleep/sleeping-well-in-hotel",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "work",
+        "line": "환경 제어",
+        "years": "2026",
+        "region": "일반"
+      },
+      "caution": "개인차가 있으며, 과도하게 추운 환경은 불편함을 야기할 수 있다."
+    },
+    {
+      "id": "environmental-control-familiarity-routine",
+      "claim": "호텔 수면은 환경 제어와 일상적 루틴 일관성에 집중하면 개선된다. 친숙함을 신호로 주는 행동들이 뇌에 안전과 이완을 신호한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation + Sleep Science",
+      "source_url": "https://www.sleepfoundation.org/travel-and-sleep/sleeping-well-in-hotel",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "work",
+        "line": "적응 전략",
+        "years": "2026",
+        "region": "일반"
+      }
+    },
+    {
+      "id": "fne-multiple-nights-persistence",
+      "claim": "첫 밤 효과는 연속된 밤이 아니라 낯선 장소에서 경험하는 여러 밤에 비연속적으로 나타날 수 있다. 같은 호텔에서 2박을 하면 2박째가 개선되지만, 다른 장소로 이동하면 다시 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ESRS - Sleep Science Friday",
+      "source_url": "https://esrs.eu/news/sleep-science-friday/the-first-night-effect-of-sleep-occurs-over-nonconsecutive-nights-in-unfamiliar-and-familiar-environments/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "수면",
+        "category": "work",
+        "line": "적응 패턴",
+        "years": "2026",
+        "region": "유럽"
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "topic": "흰머리 발생과 영양: 수소과산화물·카탈라제의 역할과 결핍 기준",
+  "brand": "성분연구소",
+  "article": "gray-hair-emergence-nutrition",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "zinc-hair-synthesis-protein-synthesis-requirement",
+    "zinc-deficiency-telogen-effluvium-hair-shedding",
+    "zinc-excess-copper-absorption-block-shedding-risk",
+    "selenium-antioxidant-thyroid-hormone-metabolism",
+    "selenium-deficiency-hair-loss-selenoprotein-impairment",
+    "mineral-supplementation-benefit-only-in-deficiency",
+    "biotin-deficiency-prevalence-hair-loss-women-38percent",
+    "biotin-deficiency-clinical-benefit-limited-to-deficiency-state"
+  ],
+  "declined_facts": [
+    {
+      "id": "copper-zinc-iron-melanogenesis-cofactor-melanin-synthesis",
+      "reason": "출처 배제 — novoslabs.com(보충제 판매사)에서 가져옴. 상업 헬스 출처."
+    },
+    {
+      "id": "vitamin-b12-vitamin-d-deficiency-melanocyte-dysfunction-gray-hair-risk",
+      "reason": "출처 배제 — novoslabs.com(보충제 판매사)에서 가져옴. 상업 헬스 출처."
+    },
+    {
+      "id": "melanocyte-stem-cell-depletion-aging-reduced-pigment-production",
+      "reason": "출처 배제 — mitohealth.com(상업 헬스 서비스)에서 가져옴. 판매 목적 콘텐츠."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "hydrogen-peroxide-accumulation-melanocyte-catalase-deficiency-gray-hair-mechanism",
+      "claim": "나이가 들면서 모낭 멜라노사이트의 카탈라제(catalase) 생성이 감소하고, 수소과산화물(H₂O₂) 축적이 증가한다. H₂O₂는 멜라노사이트의 산화 스트레스를 유발하고 멜라닌 생성 효소인 티로시나제를 손상시켜 흰머리를 초래한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dove Medical Press: Gray Hair - From Preventive to Treatment",
+      "source_url": "https://www.dovepress.com/gray-hair-from-preventive-to-treatment-peer-reviewed-fulltext-article-CCID",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "중년 이상",
+        "분류": "흰머리 발생 기전",
+        "시기": "30대 이후",
+        "지역": "글로벌"
+      },
+      "caution": "★카탈라제는 나이 외에 영양 결핍(특히 철, 구리, 아연)에 의해서도 감소할 수 있다.",
+      "cautionSource": "영양 미네랄 의존성"
+    },
+    {
+      "id": "gray-hair-reversal-nutrition-only-with-deficiency-correction",
+      "claim": "흰머리의 영양학적 개선은 사전 결핍이 입증된 경우(혈액 검사)에 한정되며, 정상 수치에서의 영양 추가 보충은 흰머리 역전의 근거가 부족하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Harvard Health: Vitamins, Minerals and Hair Loss",
+      "source_url": "https://www.health.harvard.edu/diseases-and-conditions/vitamins-minerals-and-hair-loss-is-there-a-connection",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "일반인·흰머리 호소자",
+        "분류": "증거 수준",
+        "시기": "전 기간",
+        "지역": "글로벌"
+      },
+      "caution": "★마케팅은 '흰머리 검게'를 강조하지만, 임상 역할은 '결핍 교정'에만 한정된다. 생리적 노화로 인한 흰머리는 영양만으로 역전이 거의 불가능하다.",
+      "cautionSource": "임상 근거"
+    }
+  ]
+}

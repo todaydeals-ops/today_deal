@@ -1,0 +1,100 @@
+{
+  "topic": "면도 후 피부 자극(가성모낭염) 메커니즘 및 회복",
+  "brand": "뷰티·성분연구소",
+  "article": "post-shave-irritation",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "centella-wound-repair",
+    "tea-tree-oil-acne",
+    "azelaic-acid-acne-redness"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "pseudofolliculitis-barbae-ingrown-hair-foreign-body-reaction",
+      "claim": "가성모낭염(pseudofolliculitis barbae, PFB, 면도 후 자극)은 면도된 모발이 모낭을 완전히 벗어나지 못한 채 피부 내부로 다시 자라거나(extrafollicular penetration), 모낭을 벗어났던 모발이 피부로 다시 들어가면서 발생하는 외래체 염증 반응(foreign-body inflammatory response)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Merck Manual Professional Edition: Pseudofolliculitis Barbae",
+      "source_url": "https://www.merckmanuals.com/professional/dermatologic-disorders/hair-disorders/pseudofolliculitis-barbae",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "면도 사용자, 특히 곱슬머리(curly hair)",
+        "분류": "병인 메커니즘",
+        "시기": "면도 직후 1-3일",
+        "지역": "글로벌"
+      },
+      "caution": "★가성모낭염은 세균 감염이 아니기 때문에 초기에는 항생제가 필요하지 않다. 모낭 폐색이 근본 원인이다.",
+      "cautionSource": "merck manual"
+    },
+    {
+      "id": "pseudofolliculitis-barbae-curly-hair-genetic-predisposition",
+      "claim": "가성모낭염은 곱슬머리(tightly curled hair)를 가진 사람들에게 훨씬 더 흔하며, 특정 케라틴 유전자 변이(KRT75, K6hf)가 유전적 위험 요인이 된다. 결과적으로 아프리카계 남성에게서 유병률이 특히 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "DermNet NZ: Pseudofolliculitis Barbae - Epidemiology and Risk Factors",
+      "source_url": "https://dermnetnz.org/topics/pseudofolliculitis-barbae",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "곱슬머리 사용자, 특히 아프리카계",
+        "분류": "유전적 위험 인자",
+        "시기": "면도 기준점",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "shave-irritation-acute-inflammatory-papules-pustules",
+      "claim": "면도 후 자극은 작은 구진(papule)과 농포(pustule) 형태의 피부 병변으로 나타나며, 이는 세균성 여드름이나 감염성 모낭염과 혼동되기 쉽다. 그러나 가성모낭염의 핵심은 염증이지 감염이 아니므로, 초기 치료는 모낭 폐색 해제와 항염증에 집중해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Merck Manual & DermNet: Pseudofolliculitis Barbae - Clinical Presentation",
+      "source_url": "https://dermnetnz.org/topics/pseudofolliculitis-barbae",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "면도 사용자",
+        "분류": "임상 양상",
+        "시기": "면도 직후 1-3일",
+        "지역": "글로벌"
+      },
+      "caution": "★환자가 \"면도 후 여드름처럼 생기는데 약을 쓰면 나아지나\"라고 물을 때, 미생물 억제제보다 항염증 + 모낭 폐색 해제 전략이 우선임을 설명해야 한다.",
+      "cautionSource": "임상 기준"
+    },
+    {
+      "id": "pseudofolliculitis-infection-risk-secondary-bacterial-folliculitis",
+      "claim": "가성모낭염 자체는 감염이 아니지만, 손상된 모낭과 염증 환경은 세균 감염(folliculitis barbae)의 고위험군이 된다. 특히 세균 번식 위험이 높은 환경(땀, 습도, 폐색)에서 긁음으로 인한 2차 감염이 발생하면 합병증(흉터, 색소 변화)으로 진행될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Merck Manual: Pseudofolliculitis Barbae - Complications",
+      "source_url": "https://www.merckmanuals.com/professional/dermatologic-disorders/hair-disorders/pseudofolliculitis-barbae",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "가성모낭염 환자",
+        "분류": "감염 위험 및 합병증",
+        "시기": "가성모낭염 발생 후",
+        "지역": "글로벌"
+      },
+      "caution": "★흉터와 색소 침착 위험이 있으므로 환자에게 \"긁지 말고 항염증 제품을 먼저 쓰세요\"라는 교육이 중요하다.",
+      "cautionSource": "임상 경험"
+    },
+    {
+      "id": "shave-irritation-prevention-hair-cutting-length-moisturizing",
+      "claim": "가성모낭염의 예방 및 완화 전략: ① 면도날 빈도 감소(매일 → 2-3일마다) ② 뜨거운 물 사용 제한(모낭 팽창 유발) ③ 면도 전 수분 공급으로 모발 유연성 증가 ④ 샤프한 날보다 무딘 날 회피 ⑤ 면도 후 즉시 항염증·보습제(센텔라, 판테놀, 글리세린) 도포 ⑥ 긁지 않기.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dermatology guidelines: Pseudofolliculitis Barbae Prevention and Management",
+      "source_url": "https://dermnetnz.org/topics/pseudofolliculitis-barbae",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "면도 사용자, 특히 고위험군",
+        "분류": "예방 및 회복 전략",
+        "시기": "면도 전후",
+        "지역": "글로벌"
+      },
+      "caution": "★전기 면도기(electric shaver) 사용 또는 제모 에이전트(화학적 제모)가 때로 전통적 면도보다 도움이 될 수 있다.",
+      "cautionSource": "임상 권장사항"
+    }
+  ]
+}

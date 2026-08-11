@@ -1,0 +1,96 @@
+{
+  "topic": "차단기 반복 트립의 원인(누전과 과부하) 구분과 대처",
+  "brand": "공통",
+  "article": "circuit-breaker-keeps-tripping-selfcheck",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "declined-powerzone-keyzard-edisonenc",
+      "reason": "전기자재몰·전기공사업체·개인블로그 출처 — 자체 서비스와 제품 판매를 위해 정보가 편향될 수 있음"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "circuit-breaker-trip-two-main-causes",
+      "claim": "차단기 트립의 주요 원인은 누전(누전차단기 작동)과 과부하(계약 용량 초과)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국전기안전공사 — 차단기 관련 기술 기준 및 안전 정보",
+      "source_url": "https://www.kesco.or.kr",
+      "checked": "2026-08-11",
+      "scope": { "component": "차단기", "region": "KR" }
+    },
+    {
+      "id": "leakage-current-definition-electric-shock-risk",
+      "claim": "누전은 정상 회로 외의 경로로 전류가 흐르는 상태로, 감전 위험을 초래한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국전기안전공사 — 누전 정의 및 안전 정보",
+      "source_url": "https://www.kesco.or.kr",
+      "checked": "2026-08-11",
+      "scope": { "hazard": "누전·감전", "region": "KR" }
+    },
+    {
+      "id": "overload-definition-contract-capacity-exceeded",
+      "claim": "과부하는 동시에 사용하는 전열 기기의 전력량이 계약 용량을 초과할 때 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국전기안전공사 — 과부하 정의 및 안내",
+      "source_url": "https://www.kesco.or.kr",
+      "checked": "2026-08-11",
+      "scope": { "condition": "계약 용량 초과", "region": "KR" }
+    },
+    {
+      "id": "circuit-breaker-intermittent-trip-age-corrosion",
+      "claim": "차단기의 간헐적 트립은 차단기 자체의 노후, 부식, 내부 접점 손상이 원인일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국전기안전공사 — 정기점검 안내",
+      "source_url": "https://www.kesco.or.kr",
+      "checked": "2026-08-11",
+      "scope": { "cause": "차단기 노후·부식", "region": "KR" }
+    },
+    {
+      "id": "humidity-rainy-season-leakage-risk-increases",
+      "claim": "장마철과 우기에 습도가 높아지면 전기 설비의 절연 성능이 저하되어 누전 위험이 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국전기안전공사 — 계절별 전기 안전 안내",
+      "source_url": "https://www.kesco.or.kr",
+      "checked": "2026-08-11",
+      "scope": { "season": "장마·우기", "risk": "누전", "region": "KR" }
+    },
+    {
+      "id": "circuit-breaker-reset-first-diagnostic-step",
+      "claim": "차단기가 내려간 경우, 먼저 차단기를 리셋해보고 다시 내려가는지 관찰하는 것이 1차 진단 방법이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국전기안전공사 — 사용자 자가점검 범위 안내",
+      "source_url": "https://www.kesco.or.kr",
+      "checked": "2026-08-11",
+      "scope": { "action": "자가점검", "step": "1단계", "region": "KR" }
+    },
+    {
+      "id": "overload-test-reduce-simultaneous-high-power-devices",
+      "claim": "과부하 의심 시 고소비 기기(헤어드라이기, 전기 히터, 전자레인지 등)의 동시 사용을 줄여본 후 안정성을 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국전기안전공사 — 사용자 대처 방법",
+      "source_url": "https://www.kesco.or.kr",
+      "checked": "2026-08-11",
+      "scope": { "action": "과부하 진단", "method": "기기 사용 감소", "region": "KR" }
+    },
+    {
+      "id": "professional-electrician-inspection-required-beyond-self-check",
+      "claim": "자가점검 후에도 차단기가 계속 내려가면, 전기공사업 면허를 가진 전문가에게 진단을 의뢰해야 한다. 배선 작업은 전기공사업법에 따라 면허 소유자만 시공할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전기공사업법(국가법령정보센터) 및 한국전기안전공사 안내",
+      "source_url": "https://www.law.go.kr",
+      "checked": "2026-08-11",
+      "scope": { "action": "전문가 의뢰", "requirement": "면허 필수", "region": "KR" }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "topic": "냉장고·세탁기 용량 선택 기준 및 설치 공간 규격",
+  "brand": "공통",
+  "article": "appliance-size-capacity-guide",
+  "captured": "2026-08-11",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "fridge-capacity-per-person",
+      "claim": "냉장고 용량 선택 기준은 일반적으로 가구원 1인당 70~100L를 기본으로 하고, 가구원 수에 따라 가산한다. 예를 들어 4인 가구라면 300~400L가 표준이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "주요 가전사 제품 선택 가이드 (삼성, LG)",
+      "source_url": "https://www.samsung.com/ko/support/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "냉장고",
+        "line": "일반형 냉장고",
+        "years": "2023-",
+        "region": "KR"
+      },
+      "caution": "1인당 용량은 식습관·요리 빈도·신선 식재 보관 기간에 따라 조정이 필요하다. 외식이 많은 가구는 소용량, 식재를 자주 구매하는 대가족은 대용량이 적합하다"
+    },
+    {
+      "id": "washing-machine-capacity-per-person",
+      "claim": "세탁기 용량 기준은 1인당 1.0~1.2kg로 계산하며, 4인 가구라면 5~6kg, 5인 가구라면 6~7kg이 적정이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "주요 가전사 제품 선택 가이드 및 소비자청",
+      "source_url": "https://www.samsung.com/ko/support/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼·통식 전 세탁기",
+        "years": "2023-",
+        "region": "KR"
+      },
+      "caution": "베개·이불 등 대형 빨래물이 많은 가구나 일주일치를 모아 세탁하는 패턴이면 권장 용량보다 크게 선택하는 것이 실용적이다"
+    },
+    {
+      "id": "installation-space-clearance-fridge",
+      "claim": "냉장고는 좌우 측면에 각 5cm 이상, 상단에 5cm 이상의 공간이 필요하며, 문을 완전히 열었을 때 막히는 물건이 없어야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "냉장고 제조사 설치 설명서 (삼성, LG)",
+      "source_url": "https://www.lge.co.kr/support/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "냉장고",
+        "line": "전 냉장고 모델",
+        "years": "2022-",
+        "region": "KR"
+      },
+      "caution": "냉각팬 환기와 배열 성능에 영향이 가므로, 제품별 설명서의 설치 공간 규격을 반드시 확인하고 이를 무시하면 온도 관리 부실·소음 증가·고장 위험이 있다"
+    },
+    {
+      "id": "installation-space-clearance-washing",
+      "claim": "세탁기는 좌우 측면에 각 5cm 이상의 공간이 필요하고, 드럼식은 하단 배수 호스 공간(보통 5cm)을 고려해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "세탁기 제조사 설치 설명서",
+      "source_url": "https://www.samsung.com/ko/support/",
+      "checked": "2026-08-11",
+      "scope": {
+        "brand": "공통",
+        "category": "세탁기",
+        "line": "드럼·통식 전 제품",
+        "years": "2022-",
+        "region": "KR"
+      },
+      "caution": "세탁기를 벽에 매우 붙여 설치하면 소음 진동이 증가하고 배수 호스에 문제가 생길 수 있으므로, 규정 공간을 최소 확보하는 것이 중요하다"
+    }
+  ]
+}

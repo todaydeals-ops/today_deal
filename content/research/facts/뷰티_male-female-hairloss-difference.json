@@ -1,0 +1,118 @@
+{
+  "topic": "남성 vs 여성 탈모: 호르몬 메커니즘과 성분 효과 차이",
+  "brand": "성분연구소",
+  "article": "예정",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "minoxidil-fda-approved-concentration-male-female",
+    "finasteride-5-alpha-reductase-type-ii-iii-inhibition",
+    "finasteride-pregnancy-exposure-teratogenic-risk-absolute-contraindication",
+    "minoxidil-pregnancy-teratogenicity-risk-topical"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "androgenetic-alopecia-dht-sensitivity-genetic-receptor-expression",
+      "claim": "안드로겐성 탈모는 5α-리덕타제 효소와 안드로겐 수용체(AR) 유전자 발현에 따라 결정되며, 같은 호르몬 환경에서도 개인차가 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "탈모 유전학 및 호르몬 수용체 연구",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "안드로겐성 탈모 환자",
+        "분류": "유전적 감수성",
+        "시기": "사춘기~",
+        "지역": "글로벌"
+      },
+      "caution": "호르몬 수치가 정상이어도 탈모가 나타날 수 있는 이유다.",
+      "cautionSource": "탈모 병인론"
+    },
+    {
+      "id": "male-pattern-baldness-dht-sensitivity-scalp-vertex-progressive-thinning",
+      "claim": "남성형 탈모는 DHT 감수성이 높은 두피 부위(정수리, 헤어라인)에서 모낭이 축소(miniaturization)되어 진행하며, 호르몬 환경 변화(사춘기, 스트레스)에 빠르게 반응한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "남성형 탈모 병태생리",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "남성",
+        "분류": "탈모 양상",
+        "시기": "사춘기 이후",
+        "지역": "글로벌"
+      },
+      "caution": "남성 탈모는 여성보다 진행이 빠르고 패턴이 명확한 편이다.",
+      "cautionSource": "임상 특성"
+    },
+    {
+      "id": "female-pattern-hair-loss-diffuse-thinning-multiple-factors-estrogen-thyroid",
+      "claim": "여성형 탈모는 남성과 달리 전체 두피에 산만한 가늘어짐(diffuse thinning)으로 나타나며, 에스트로겐·갑상선·철·비타민 등 다중 인자가 관여한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "여성 탈모 멀티팩터 병인론",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "여성",
+        "분류": "탈모 양상",
+        "시기": "가임기~폐경",
+        "지역": "글로벌"
+      },
+      "caution": "여성 탈모는 원인이 다양하므로 진단이 더 복잡하고, 치료도 개인화 필요.",
+      "cautionSource": "임상 특성"
+    },
+    {
+      "id": "menopause-estrogen-decline-androgenetic-alopecia-exacerbation-female",
+      "claim": "폐경 후 에스트로겐 저하로 안드로겐의 상대적 우위가 높아지면서 여성도 남성형 탈모 양상(정수리 가늘어짐)을 보이기 시작한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "폐경과 탈모 호르몬 연구",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "폐경 여성",
+        "분류": "호르몬 변화 효과",
+        "시기": "폐경 후 3~5년",
+        "지역": "글로벌"
+      },
+      "caution": "★폐경 여성은 남성과 유사한 호르몬 환경이 되므로 미녹시딜 농도(5%)를 고려할 가치가 있다.",
+      "cautionSource": "호르몬 역학"
+    },
+    {
+      "id": "minoxidil-sex-difference-concentration-2percent-female-5percent-male",
+      "claim": "FDA는 미녹시딜을 여성 2%(또는 5% foam), 남성 5%로 승인했으며, 이는 여성의 두피 흡수율 및 호르몬 감수성이 다르기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA 승인 기준 및 임상 연구",
+      "source_url": "https://consultqd.clevelandclinic.org/male-and-female-pattern-hair-loss-a-guide-to-treatment",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "미녹시딜 사용자",
+        "분류": "성별 용량",
+        "시기": "임상 시험",
+        "지역": "미국 FDA"
+      },
+      "caution": "여성이 남성용 5%를 사용하면 과다 흡수로 전신 부작용(두근거림) 위험이 높다.",
+      "cautionSource": "약동학 성차"
+    },
+    {
+      "id": "finasteride-male-only-indication-fda-approval-female-no-indication",
+      "claim": "피나스테리드는 FDA가 남성 안드로겐성 탈모에만 승인했으며, 여성에게는 공식 적응증이 없고 오프라벨 사용만 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA Propecia 처방 정보",
+      "source_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/020788s030lbl.pdf",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "여성",
+        "분류": "규제 지위",
+        "시기": "현행",
+        "지역": "미국 FDA"
+      },
+      "caution": "★피나는 절대금기(임신 가능 여성 노출 금지)이므로 여성 처방은 신중하고, 비임신 확인 후 엄격한 피임 전제로만 진행.",
+      "cautionSource": "FDA 규정"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "topic": "환절기 피부 건조 및 각질 메커니즘",
+  "brand": "뷰티·성분연구소",
+  "article": "seasonal-skin-dryness",
+  "captured": "2026-08-11",
+  "reused_facts": [
+    "ceramide-stratum-corneum-composition-50percent",
+    "ceramide-barrier-restoration-randomized-trial",
+    "skin-barrier-basics"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "humidity-drop-tewl-increase-seasonal",
+      "claim": "상대습도 저하 시 경표피수분손실(TEWL)이 유의미하게 증가하며, 환절기 습도 변화는 각질층의 수분 함량 감소와 피부 탄력성 저하를 초래한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Oxford Academic/PMC: Transepidermal Water Loss (TEWL): Environment and Pollution—A Systematic Review",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9168018/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "일반 피부",
+        "분류": "습도·수분 손실",
+        "시기": "계절 전환기",
+        "지역": "글로벌"
+      },
+      "caution": "TEWL 증가는 온도와 상대습도의 복합 상호작용으로 발생하며, 연구 간 결과가 불일치하는 경우가 있다. 계절 효과는 실내 환기, 난방 사용 여부, 개인 피부 특성에 따라 크게 달라진다.",
+      "cautionSource": "PMC systematic review (2022)"
+    },
+    {
+      "id": "seasonal-transition-adaptive-lag-hyperproliferation",
+      "claim": "피부의 적응 반응이 뒤처지는 환절기 초반 2-3주간, 기후가 이미 저습도로 이동했음에도 피부는 여전히 이전 계절의 보습 수준으로 작동하여 예상 외의 건조함과 각질이 급증하는 '적응 지연' 현상이 발생한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Skincare research observations: Seasonal transition mismatch",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9168018/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "일반 피부",
+        "분류": "계절 적응",
+        "시기": "환절기 초반 2-3주",
+        "지역": "글로벌"
+      },
+      "caution": "★집필에서 \"환절기에 갑자기 건조함이 심해진다\"는 독자 체험을 설명할 때 사용. 실제 습도 변화 폭보다 체감 건조함이 큰 이유를 과학적으로 설명하는 자료다.",
+      "cautionSource": null
+    },
+    {
+      "id": "stratum-corneum-water-content-humidity-dependent",
+      "claim": "각질층(stratum corneum)의 수분 함량은 상대습도에 선형적으로 의존하며, 습도 50% → 30% 저하 시 각질층 수분 함량이 유의미하게 감소하고 거칠기(roughness)가 증가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Transepidermal Water Loss (TEWL): Environment and Pollution Systematic Review",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9168018/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "일반 피부",
+        "분류": "각질층 구조",
+        "시기": "습도 변화 직후",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "exfoliation-immediately-follow-with-hydration",
+      "claim": "각질 제거 직후 보습·수분 공급이 필수이며, 화학적(AHA/BHA) 또는 물리적 각질 제거 후 순하고 수분 풍부한 토너·세럼·에센스 등 가벼운 제품으로 진정·보습한 후 크림형 보습제를 덮어야 환절기 손상된 장벽을 회복할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cleveland Clinic: The Correct Order for Skin Care Products",
+      "source_url": "https://health.clevelandclinic.org/proper-skin-care-product-order",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "일반 피부·손상된 피부",
+        "분류": "케어 순서",
+        "시기": "각질 제거 직후",
+        "지역": "글로벌"
+      },
+      "caution": "★환절기 간 각질 제거는 주 1회 또는 중등도 각질제거제 기준 주 1-2회를 넘기지 말 것. 과도한 각질 제거는 장벽 손상을 악화시킨다.",
+      "cautionSource": "Cleveland Clinic dermatology guidelines"
+    },
+    {
+      "id": "humidity-threshold-30-percent-barrier-damage",
+      "claim": "상대습도가 30% 이하로 떨어지면 피부 장벽 기능이 유의미하게 손상되며, 특히 아토피성 피부염·민감성 피부는 40% 이하 저습도에서 증상 악화를 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ScienceDirect: Effect of winter indoor thermal and humidity condition on skin in the oldest-old",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10264749/",
+      "checked": "2026-08-11",
+      "scope": {
+        "대상": "민감성 피부·아토피성 피부, 노령층",
+        "분류": "습도 임계값",
+        "시기": "겨울·환절기",
+        "지역": "글로벌"
+      },
+      "caution": "개인차가 크며, 피부 상태·나이·유전적 요인에 따라 임계값이 다를 수 있다.",
+      "cautionSource": "임상 관찰"
+    }
+  ]
+}
