@@ -46,6 +46,15 @@ export function proxy(req: NextRequest) {
   // ── 관리자 보호 ──
   // matcher 를 정본화 때문에 넓혔으므로, 보호 대상은 여기서 정확히 골라낸다.
   // /api/cron·/api/auth·/api/deals/ingest 는 각자 시크릿이 있어 제외해야 한다.
+  // ★ 자기 시크릿으로 인증하는 머신-투-머신 엔드포인트는 먼저 빠져나간다.
+  // 2026-08-10 아래 PROTECTED 에 "/api/deals" 를 넣으면서 prefix 매칭이
+  // /api/deals/ingest 까지 잡아버렸다. 크롤러는 CRON_SECRET 을 Bearer 로 보내는데
+  // 프록시가 그 앞에서 401 을 돌려줘, 수집한 딜이 3일간 전부 버려졌다
+  // (crawl.log: "39건 전송 → ✗ ingest 실패: 401").
+  // 주석으로 "제외해야 한다"고 적어두는 것으로는 안 지켜진다. 코드로 뺀다.
+  const MACHINE = ["/api/deals/ingest", "/api/cron", "/api/auth", "/api/adbc/postback"];
+  if (MACHINE.some((p) => path === p || path.startsWith(p + "/"))) return NextResponse.next();
+
   const PROTECTED = [
     "/api/deals", "/api/deals/preview", "/api/curated", "/api/giveaways",
     "/api/members", "/api/members/stats", "/api/settings", "/api/board",
