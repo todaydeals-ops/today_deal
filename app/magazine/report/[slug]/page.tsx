@@ -140,7 +140,7 @@ export default async function MagazineReportPage({ params }: { params: Promise<{
                 <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 6 }}>
                   {a.summary.map((s, si) => (
                     <li key={si} style={{ fontSize: 14, color: "#333", lineHeight: 1.6, display: "flex", gap: 8 }}>
-                      <span style={{ color: "#ccc" }}>—</span>
+                      <span style={{ color: "#ccc" }}>·</span>
                       <span>{s}</span>
                     </li>
                   ))}

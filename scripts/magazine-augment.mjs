@@ -66,7 +66,38 @@ const patches = (JSON.parse(fs.readFileSync(file, "utf8")).patches) ?? [];
 // 존재하지 않는 브랜드("보어드뮤쉘레"), 없는 제품("LG 정수기형 그릴"),
 // 해로운 조언("그라인더 날에 올리브유")이 11개 표 중 7개에 출처 0으로 들어왔다.
 // 에러코드·모델 정보는 틀리면 독자가 헛수고한다. 기계로 막는다.
-const OFFICIAL = /samsungsvc|samsung\.com|lge?\.co\.kr|lg\.com|winix|coway|chungho|skmagic|cuckoo|cuchen|rinnai|kdnavien|kyungdong|philips|tefal|delonghi|dyson|iptime|efm|asus|tp-link|netgear|kt\.com|skbroadband|lguplus|kitchenaid|whirlpool|electrolux|bosch-home|miele|breville|balmuda|xiaomi|lotte|winia|caraz|hanssem|\.go\.kr|\.or\.kr/i;
+const OFFICIAL = /samsungsvc|samsung\.com|lge?\.co\.kr|lg\.com|winix|coway|chungho|skmagic|cuckoo|cuchen|rinnai|kdnavien|kyungdong|philips|tefal|delonghi|dyson|iptime|efm|asus|tp-link|netgear|kt\.com|skbroadband|lguplus|kitchenaid|whirlpool|electrolux|bosch-home|miele|breville|balmuda|xiaomi|lotte|winia|caraz|hanssem|carrier|nintendo|playstation|xbox|canon|epson|hp\.com|brother|apple\.com|\.go\.kr|\.or\.kr/i;
+
+// ── 행 단위 출처 대조 ──
+// "공식 출처 1개 이상"만 보면, LG 링크 하나로 코웨이·청호 행까지 통과한다.
+// 실제로 정수기 표에서 청호나이스 행이 출처 0으로 들어왔고, 코웨이 행의 출처는
+// 지원 문서가 아니라 **제품 판매 페이지**였다(2026-08-11).
+// 표의 첫 칸이 브랜드를 말하면, 그 브랜드의 공식 도메인이 출처에 있어야 한다.
+const BRAND_DOMAIN = [
+  [/삼성|갤럭시|비스포크/i, /samsungsvc|samsung\.com/i],
+  [/\bLG\b|엘지|그램|트롬|휘센|오브제|코드제로/i, /lge?\.co\.kr|lg\.com/i],
+  [/코웨이/i, /coway/i], [/청호/i, /chungho/i], [/SK\s?매직/i, /skmagic/i],
+  [/쿠쿠/i, /cuckoo/i], [/쿠첸/i, /cuchen/i], [/위닉스/i, /winix/i],
+  [/캐리어/i, /carrier/i], [/필립스/i, /philips/i], [/다이슨/i, /dyson/i],
+  [/린나이/i, /rinnai/i], [/경동|나비엔/i, /kdnavien|kyungdong/i],
+  [/애플|아이폰|iPhone|MacBook|맥북|에어팟|AirPods/i, /apple\.com/i],
+  [/닌텐도|조이콘/i, /nintendo/i], [/플레이스테이션|PS5|듀얼센스/i, /playstation/i],
+  [/엑스박스|Xbox/i, /xbox/i],
+  [/\bKT\b/i, /kt\.com/i], [/SK브로드밴드/i, /skbroadband|bworld/i],
+  [/유플러스|U\+/i, /lguplus/i], [/ipTIME|아이피타임/i, /iptime/i],
+  [/캐논|Canon/i, /canon/i], [/엡손|Epson/i, /epson/i], [/\bHP\b/i, /hp\.com/i],
+];
+/** 이 행이 이름 붙인 브랜드 중 출처가 없는 것을 돌려준다. */
+function unsourcedBrands(row, urls) {
+  const cell = String(row[0] || "");
+  const missing = [];
+  for (const [brand, dom] of BRAND_DOMAIN) {
+    if (!brand.test(cell)) continue;
+    if (!urls.some((u) => dom.test(u))) missing.push(cell.slice(0, 16));
+  }
+  return missing;
+}
+
 const bad = [];
 for (const p of patches) {
   const src = (p.sources || []).filter((s) => s && s.url);
@@ -76,6 +107,27 @@ for (const p of patches) {
   if (flat.includes("—")) bad.push(`${p.slug}: em-dash 혼입`);
   if (/[一-鿿぀-ヿ]/.test(flat)) bad.push(`${p.slug}: 한자·일본어 혼입`);
   if ((p.table?.rows || []).length < 3) bad.push(`${p.slug}: 표 ${(p.table?.rows || []).length}행(3행 미만)`);
+
+  // 판매·제품 상세 페이지는 지원 문서가 아니다. 필터 주기를 파는 페이지에서 가져오면
+  // 그 숫자는 영업 문구지 규격이 아니다.
+  for (const s of src) {
+    if (/\/product\/|\/prd|prdno=|\/shop\/|\/store\/|\/goods/i.test(s.url)) {
+      bad.push(`${p.slug}: 제품 판매 페이지를 출처로 씀 (${s.url.slice(0, 60)})`);
+    }
+    // 도메인 루트는 문서가 아니다. 브랜드 대조 게이트를 넣자마자 출처가
+    // support.nintendo.com/ 같은 루트로 바뀌는 일이 있었다(2026-08-11).
+    // 대조는 통과하지만 독자가 눌러도 그 내용이 없는 곳으로 간다.
+    let path = "/", qs = "";
+    try { const u = new URL(s.url); path = u.pathname; qs = u.search; } catch {}
+    const bareRoot = path.replace(/\/+$/, "") === "";
+    const genericLanding = /^\/(support|help|cs|service|customer|solutions?|guide)\/?$/i.test(path);
+    if ((bareRoot || genericLanding) && !qs) {
+      bad.push(`${p.slug}: 출처가 문서가 아니라 사이트 루트다 (${s.url.slice(0, 60)})`);
+    }
+  }
+  const urls = src.map((s) => s.url);
+  const miss = [...new Set((p.table?.rows || []).flatMap((r) => unsourcedBrands(r, urls)))];
+  if (miss.length) bad.push(`${p.slug}: 출처 없는 브랜드 행 — ${miss.join(", ")}`);
 }
 if (bad.length) {
   console.error("✖ 적재 거부. 아래를 고쳐라.\n");
