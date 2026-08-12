@@ -2,22 +2,47 @@
   "patches": [
     {
       "slug": "wifi-disconnect-selfcheck",
-      "h2": "통신사별 공유기 관리 페이지 접속 주소",
+      "h2": "통신사·제조사별 공유기 관리 페이지 접속 주소",
       "sub": "공유기 설정을 확인해야 할 때 접속 주소가 다릅니다",
       "intro": "<p>와이파이 채널을 바꾸거나 보안 설정을 확인할 때 공유기 관리 페이지에 접속해야 합니다. 통신사와 제조사에 따라 접속 주소와 기본 계정이 다르니, 아래 표를 참고해 로그인하세요. 비밀번호를 잊었으면 공유기 하단 스티커나 통신사 고객센터에 확인하는 편이 빠릅니다.</p>",
       "table": {
-        "headers": ["통신사·제조사", "접속 주소", "기본 계정"],
+        "headers": [
+          "통신사·제조사",
+          "접속 주소",
+          "기본 계정"
+        ],
         "rows": [
-          ["ipTIME", "192.168.0.1", "admin / admin"],
-          ["KT 기가와이파이", "172.30.1.254", "ktuser / (모델별·하단 스티커)"],
-          ["LG유플러스", "192.168.219.1", "admin / (하단 스티커 확인)"]
+          [
+            "ipTIME",
+            "192.168.0.1",
+            "admin / admin"
+          ],
+          [
+            "KT",
+            "172.30.1.254",
+            "ktuser / (모델별·하단 스티커)"
+          ],
+          [
+            "LG유플러스",
+            "192.168.219.1",
+            "admin / (하단 스티커 확인)"
+          ]
         ]
       },
-      "outro": "<p>접속이 안 되면 공유기 하단의 기본 게이트웨이 주소 스티커를 확인하거나, 컴퓨터 명령 프롬프트에서 <code>ipconfig</code>를 입력해 기본 게이트웨이를 확인한 뒤 그 주소로 접속하세요. 가장 처음 로그인할 때는 반드시 초기 비밀번호를 변경해 보안을 강화하기를 권장합니다.</p>",
+      "outro": "<p>접속이 안 되면 공유기 하단의 기본 게이트웨이 주소 스티커를 확인하거나, 컴퓨터 명령 프롬프트에서 <code>ipconfig</code>를 입력해 기본 게이트웨이를 확인한 뒤 그 주소로 접속하세요. 표의 기본 계정은 공장 출하 상태 값이라 누구나 알 수 있습니다. 처음 로그인한 뒤에는 반드시 비밀번호를 바꾸세요. 기본값을 그대로 두면 같은 와이파이에 접속한 사람이 공유기 설정을 열 수 있습니다.</p>",
       "sources": [
-        {"label": "[공식] iptime - 관리자 페이지 접속", "url": "https://iptime.com/iptime/?page_id=67"},
-        {"label": "[공식] KT - 공유기 관리자 페이지 접속", "url": "https://help.kt.com/servicetip/ServiceTipInfo.do?idx=80"},
-        {"label": "[공식] LG유플러스 - 공유기 설정", "url": "https://www.lguplus.com/support/self-troubleshoot/guide"}
+        {
+          "label": "[공식] iptime - 관리자 페이지 접속",
+          "url": "https://iptime.com/iptime/?page_id=67"
+        },
+        {
+          "label": "[공식] KT - 공유기 관리자 페이지 접속",
+          "url": "https://help.kt.com/servicetip/ServiceTipInfo.do?idx=80"
+        },
+        {
+          "label": "[공식] LG유플러스 - 공유기 설정",
+          "url": "https://www.lguplus.com/support/self-troubleshoot/guide"
+        }
       ]
     },
     {
@@ -26,18 +51,43 @@
       "sub": "PC에서 인식이 안 될 때 기종별 리셋 방법",
       "intro": "<p>게임 컨트롤러가 PC에서 인식이 안 되거나 페어링이 풀렸다면 기종별 리셋 절차가 다릅니다. 닌텐도·플레이스테이션·엑스박스 각각 공식 지원 페이지에서 확인한 초기화 위치와 방법을 아래에 정리했습니다. 먼저 유선 연결로 컨트롤러가 인식되는지 확인한 뒤, 무선 페어링이 필요하다면 해당 기종의 방법을 따르면 됩니다.</p>",
       "table": {
-        "headers": ["기종", "페어링 위치", "초기화 방법"],
+        "headers": [
+          "기종",
+          "페어링 위치",
+          "초기화 방법"
+        ],
         "rows": [
-          ["Nintendo Switch 조이콘", "조이콘 측면의 Sync 버튼", "Sync 버튼 5초 이상 누르면 페어링 초기화"],
-          ["PlayStation DualSense", "뒷면 Sony 로고 옆 구멍 안", "구멍 안 Reset 버튼을 핀으로 5초 이상 누르기"],
-          ["Xbox 컨트롤러", "컨트롤러 상단의 Pairing 버튼", "PC 블루투스 설정에서 제거 후 재페어링"]
+          [
+            "Nintendo Switch 2 조이콘",
+            "조이콘 측면의 Sync 버튼",
+            "Sync 버튼 5초 이상 누르면 페어링 초기화"
+          ],
+          [
+            "PlayStation DualSense",
+            "뒷면 Sony 로고 옆 구멍 안",
+            "구멍 안 Reset 버튼을 핀으로 5초 이상 누르기"
+          ],
+          [
+            "Xbox 컨트롤러",
+            "컨트롤러 상단의 Pairing 버튼",
+            "PC 블루투스 설정에서 제거 후 재페어링"
+          ]
         ]
       },
       "outro": "<p>리셋 후에는 처음 연결하듯 다시 페어링해야 합니다. 각 기종별로 콘솔이나 PC에 재페어링하는 방법은 기종별 공식 가이드를 참고하면 되고, 그래도 인식이 안 된다면 케이블이나 수신 동글 문제일 가능성이 있으니 유선 연결부터 다시 확인해보세요.</p>",
       "sources": [
-        {"label": "[공식] Nintendo Support - 조이콘 페어링", "url": "https://support.nintendo.com/kr/switch2/play/joy-con2/prepare/index.html"},
-        {"label": "[공식] PlayStation - DualSense 리셋", "url": "https://www.playstation.com/en-us/support/hardware/troubleshoot-dualsense/"},
-        {"label": "[공식] Xbox Support - 컨트롤러 페어링", "url": "https://support.xbox.com/ko-KR/help/hardware-network/controller/connect-a-wireless-controller"}
+        {
+          "label": "[공식] Nintendo Support - 조이콘 페어링",
+          "url": "https://support.nintendo.com/kr/switch2/play/joy-con2/prepare/index.html"
+        },
+        {
+          "label": "[공식] PlayStation - DualSense 리셋",
+          "url": "https://www.playstation.com/en-us/support/hardware/troubleshoot-dualsense/"
+        },
+        {
+          "label": "[공식] Xbox Support - 컨트롤러 페어링",
+          "url": "https://support.xbox.com/ko-KR/help/hardware-network/controller/connect-a-wireless-controller"
+        }
       ]
     }
   ]

@@ -84,12 +84,17 @@ const BRAND_DOMAIN = [
   [/닌텐도|조이콘/i, /nintendo/i], [/플레이스테이션|PS5|듀얼센스/i, /playstation/i],
   [/엑스박스|Xbox/i, /xbox/i],
   [/\bKT\b/i, /kt\.com/i], [/SK브로드밴드/i, /skbroadband|bworld/i],
-  [/유플러스|U\+/i, /lguplus/i], [/ipTIME|아이피타임/i, /iptime/i],
+  [/유플러스/i, /lguplus/i], [/브로드밴드/i, /skbroadband|bworld/i],
+  [/ipTIME|아이피타임/i, /iptime/i],
   [/캐논|Canon/i, /canon/i], [/엡손|Epson/i, /epson/i], [/\bHP\b/i, /hp\.com/i],
 ];
 /** 이 행이 이름 붙인 브랜드 중 출처가 없는 것을 돌려준다. */
 function unsourcedBrands(row, urls) {
-  const cell = String(row[0] || "");
+  // "LG유플러스" 안의 LG 가 LG전자 규칙을 깨웠다. 통신사 표기를 먼저 치환해
+  // 제조사 규칙과 겹치지 않게 한다(SK매직 ↔ SK브로드밴드도 같은 문제).
+  const cell = String(row[0] || "")
+    .replace(/LG\s*유플러스|LGU\s*\+|U\s*\+/gi, "유플러스")
+    .replace(/SK\s*브로드밴드/gi, "브로드밴드");
   const missing = [];
   for (const [brand, dom] of BRAND_DOMAIN) {
     if (!brand.test(cell)) continue;
