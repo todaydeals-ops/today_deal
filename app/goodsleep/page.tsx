@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
 import Link from "next/link";
-import { fetchMagazineList } from "@/lib/data/magazine";
+import { fetchMagazineList, fetchMagazineCountBy } from "@/lib/data/magazine";
 import { FeaturedImageSlot } from "@/components/magazine/Chrome";
 import SleepHeader from "@/components/magazine/SleepHeader";
 import SleepCategoryIndex from "@/components/magazine/SleepCategoryIndex";
@@ -27,11 +27,14 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
   const sp = await searchParams;
   const cat = sleepCategoryByKey(sp.cat);
   const page = Math.max(1, Number(sp.page) || 1);
-  // limit 은 발행 편수보다 넉넉히 — 60 이던 시절 68편 중 8편이 마지막 페이지 뒤로 잘려 나갔다.
-  const all = await fetchMagazineList({ field: "수면·침구", limit: 200 });
-  const filtered = cat ? all.filter((a) => cat.slugs.includes(a.slug)) : all;
-  const totalPages = Math.max(1, Math.ceil(filtered.length / PER));
-  const pageList = filtered.slice((page - 1) * PER, page * PER);
+  // ★페이징은 DB 에서 끝낸다. 전 편을 받아 메모리에서 자르면 12편 띄우자고
+  //   본문 전체(평균 15KB)를 68편치 끌어오게 된다 — 사람이 몰릴 때 그대로 터진다.
+  const where = { field: "수면·침구", slugs: cat?.slugs };
+  const [total, pageList] = await Promise.all([
+    fetchMagazineCountBy(where),
+    fetchMagazineList({ ...where, offset: (page - 1) * PER, limit: PER }),
+  ]);
+  const totalPages = Math.max(1, Math.ceil(total / PER));
   const featured = page === 1 ? pageList[0] : undefined;
   const rows = page === 1 ? pageList.slice(1) : pageList;
   const showIndex = !cat && page === 1;
@@ -71,7 +74,7 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
 
         {showIndex && <SleepCategoryIndex />}
 
-        {filtered.length === 0 ? (
+        {total === 0 ? (
           <section className="mz-wrap" style={{ paddingTop: 20, paddingBottom: 80, color: "#9a9286" }}>
             <div style={{ fontFamily: serif, fontSize: 20, fontWeight: 600, color: "#46433d" }}>이 분류의 칼럼을 준비하고 있어요.</div>
           </section>
@@ -101,7 +104,7 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
               <section className="mz-wrap" style={{ paddingTop: 14, paddingBottom: 10 }}>
                 <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", borderTop: "1px solid rgba(22,20,15,0.16)", paddingTop: 16, marginBottom: 6 }}>
                   <span style={{ fontWeight: 800, fontSize: 18 }}>{cat ? cat.label : "수면 칼럼"}</span>
-                  <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: "2px", color: "#9a9286" }}>{filtered.length}편</span>
+                  <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: "2px", color: "#9a9286" }}>{total}편</span>
                 </div>
                 {rows.map((a, i) => {
                   const rc = sleepCategoryOf(a.slug);

@@ -100,23 +100,49 @@ function map(r: Row): MagazineArticle {
  *   빠져 구글이 존재 자체를 몰랐다(2026-08-10 발견). 서브 미디어 글의 canonical은
  *   www/magazine/<slug> 이므로 www 사이트맵에 실어야 색인된다.
  */
-export async function fetchMagazineList(opts?: { corner?: string; field?: string; limit?: number; offset?: number; all?: boolean }): Promise<MagazineArticle[]> {
+export interface MagazineListOpts {
+  corner?: string;
+  field?: string;
+  /** 택소노미 분류로 좁힐 때 그 분류의 slug 목록. 빈 배열이면 결과도 비어야 맞다. */
+  slugs?: string[];
+  limit?: number;
+  offset?: number;
+  all?: boolean;
+}
+
+// 목록·카운트가 같은 조건을 봐야 총 페이지수와 실제 목록이 어긋나지 않는다.
+// 조건이 두 군데로 갈라져 있으면 한쪽만 고치는 사고가 난다 — 여기 한 곳에 모은다.
+function applyListFilters<T>(q: T, opts?: MagazineListOpts): T {
+  type Q = {
+    eq: (c: string, v: unknown) => Q; neq: (c: string, v: unknown) => Q;
+    not: (c: string, op: string, v: unknown) => Q; in: (c: string, v: readonly unknown[]) => Q;
+  };
+  let b = q as Q;
+  b = b.eq("is_published", true).neq("corner", "report"); // 리포트는 별도 데이터레이어(magazine-report.ts) 사용
+  if (opts?.corner) b = b.eq("corner", opts.corner);
+  if (opts?.slugs) b = b.in("slug", opts.slugs);
+  if (!opts?.all) {
+    if (opts?.field) b = b.eq("field", opts.field); // 섹션(잠자리·알약·성분) 전용 필터
+    else b = b.not("field", "in", `("${SUB_MEDIA_FIELDS.join('","')}")`); // 메인 매거진에선 서브 미디어 글 제외 — 격리
+    // AS연구소 격리 — corner를 명시해 부른 경우(=AS 홈)는 통과시키고, 그 외에는 뺀다.
+    if (!opts?.corner) b = b.not("corner", "in", `("${SUB_MEDIA_CORNERS.join('","')}")`);
+  }
+  return b as T;
+}
+
+export async function fetchMagazineList(opts?: MagazineListOpts): Promise<MagazineArticle[]> {
   const sb = getSupabaseAdmin();
   if (!sb) return [];
+  if (opts?.slugs && opts.slugs.length === 0) return [];
   try {
-    let q = sb
-      .from("magazine")
-      .select("*")
-      .eq("is_published", true)
-      .neq("corner", "report")   // 리포트는 별도 데이터레이어(magazine-report.ts) 사용
-      .order("created_at", { ascending: false });
-    if (opts?.corner) q = q.eq("corner", opts.corner);
-    if (!opts?.all) {
-      if (opts?.field) q = q.eq("field", opts.field); // 섹션(잠자리·알약·성분) 전용 필터
-      else q = q.not("field", "in", `("${SUB_MEDIA_FIELDS.join('","')}")`); // 메인 매거진에선 서브 미디어 글 제외 — 격리
-      // AS연구소 격리 — corner를 명시해 부른 경우(=AS 홈)는 통과시키고, 그 외에는 뺀다.
-      if (!opts?.corner) q = q.not("corner", "in", `("${SUB_MEDIA_CORNERS.join('","')}")`);
-    }
+    // ★select("*")는 body_html(평균 15KB·최대 27KB)까지 통째로 끌어온다.
+    // 그래서 화면에 12편 띄우려고 전 편을 받으면 안 된다 — 2026-08-18 실측에서
+    // AS 홈 1회가 131행 3.6MB(682ms), 잠자리 홈이 68행 1.5MB(807ms)였다.
+    // 사람이 몰리면 이게 그대로 메모리·대역폭으로 곱해진다. 페이징은 DB에서 끝낸다.
+    let q = applyListFilters(
+      sb.from("magazine").select("*"),
+      opts,
+    ).order("created_at", { ascending: false });
     const limit = opts?.limit ?? 60;
     if (opts?.offset != null) q = q.range(opts.offset, opts.offset + limit - 1);
     else q = q.limit(limit);
@@ -128,19 +154,25 @@ export async function fetchMagazineList(opts?: { corner?: string; field?: string
   }
 }
 
-// 페이지네이션용 총 발행 편수(코너 옵션)
-export async function fetchMagazineCount(corner?: string): Promise<number> {
+/** 목록과 같은 조건의 총 편수. 총 페이지수 계산용. */
+export async function fetchMagazineCountBy(opts?: MagazineListOpts): Promise<number> {
   const sb = getSupabaseAdmin();
   if (!sb) return 0;
+  if (opts?.slugs && opts.slugs.length === 0) return 0;
   try {
-    let q = sb.from("magazine").select("*", { count: "exact", head: true }).eq("is_published", true).neq("corner", "report").not("field", "in", `("${SUB_MEDIA_FIELDS.join('","')}")`);
-    if (corner) q = q.eq("corner", corner);
-    else q = q.not("corner", "in", `("${SUB_MEDIA_CORNERS.join('","')}")`); // AS연구소 격리
-    const { count } = await q;
+    const { count } = await applyListFilters(
+      sb.from("magazine").select("slug", { count: "exact", head: true }),
+      opts,
+    );
     return count ?? 0;
   } catch {
     return 0;
   }
+}
+
+// 페이지네이션용 총 발행 편수(코너 옵션) — 메인 매거진 기준
+export async function fetchMagazineCount(corner?: string): Promise<number> {
+  return fetchMagazineCountBy({ corner });
 }
 
 export async function fetchMagazineBySlug(slug: string): Promise<MagazineArticle | null> {

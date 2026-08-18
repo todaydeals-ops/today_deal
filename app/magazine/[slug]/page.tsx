@@ -22,6 +22,20 @@ import { beautyCategoryOf } from "@/lib/magazine/beautyCategories";
 import { FieldPill } from "@/components/magazine/Chrome";
 
 export const revalidate = 3600; // 1시간 캐시 — 매거진 아티클은 실시간 불필요
+
+// ★generateStaticParams 가 없으면 위 revalidate 가 죽는다(2026-08-18 실측).
+// 빌드가 이 라우트를 ƒ(요청마다 렌더)로 잡아, 아티클 481편이 전부
+// Cache-Control: no-store · X-Vercel-Cache: MISS 로 나가고 있었다. 같은 revalidate 를
+// 쓰는 /magazine/report/[slug] 는 generateStaticParams 가 있어 HIT 로 떨어진다
+// (실측 TTFB 0.24s vs 아티클 0.64~0.84s).
+//
+// 빈 배열을 돌려주는 이유: 빌드 때 481편을 미리 렌더하면 배포마다 그만큼 느려지는데,
+// 어차피 매일 새 글이 나와서 빌드 시점 목록은 금방 낡는다. dynamicParams 기본값(true)이라
+// 첫 요청에서 렌더되고 그 뒤로는 1시간 캐시된다 — 빌드 부담 없이 캐시만 살린다.
+export function generateStaticParams(): { slug: string }[] {
+  return [];
+}
+
 const SITE = "https://www.todaydeals.co.kr";
 const mono = "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif";
 const serif = "'Noto Serif KR', serif";

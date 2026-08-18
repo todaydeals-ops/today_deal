@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { fetchMagazineList } from "@/lib/data/magazine";
+import { fetchMagazineList, fetchMagazineCountBy } from "@/lib/data/magazine";
 import { FeaturedImageSlot } from "@/components/magazine/Chrome";
 import BeautyHeader from "@/components/magazine/BeautyHeader";
 import BeautyCategoryIndex from "@/components/magazine/BeautyCategoryIndex";
@@ -27,11 +27,13 @@ export default async function BeautyHome({ searchParams }: { searchParams: Promi
   const sp = await searchParams;
   const cat = beautyCategoryByKey(sp.cat);
   const page = Math.max(1, Number(sp.page) || 1);
-  // limit 은 발행 편수보다 넉넉히 — 60 이면 67편 중 7편이 잘린다.
-  const all = await fetchMagazineList({ field: "뷰티·성분", limit: 200 });
-  const filtered = cat ? all.filter((a) => cat.slugs.includes(a.slug)) : all;
-  const totalPages = Math.max(1, Math.ceil(filtered.length / PER));
-  const pageList = filtered.slice((page - 1) * PER, page * PER);
+  // 페이징은 DB 에서 끝낸다(전 편 본문을 끌어오지 않기 위해). goodsleep 과 동일 구조.
+  const where = { field: "뷰티·성분", slugs: cat?.slugs };
+  const [total, pageList] = await Promise.all([
+    fetchMagazineCountBy(where),
+    fetchMagazineList({ ...where, offset: (page - 1) * PER, limit: PER }),
+  ]);
+  const totalPages = Math.max(1, Math.ceil(total / PER));
   const featured = page === 1 ? pageList[0] : undefined;
   const rows = page === 1 ? pageList.slice(1) : pageList;
   const showIndex = !cat && page === 1;
@@ -64,7 +66,7 @@ export default async function BeautyHome({ searchParams }: { searchParams: Promi
 
         {showIndex && <BeautyCategoryIndex />}
 
-        {filtered.length === 0 ? (
+        {total === 0 ? (
           <section className="mz-wrap" style={{ paddingTop: 20, paddingBottom: 80, color: "#9a9286" }}>
             <div style={{ fontFamily: serif, fontSize: 20, fontWeight: 600, color: "#46433d" }}>이 분류의 성분 분석을 준비하고 있어요.</div>
           </section>
@@ -94,7 +96,7 @@ export default async function BeautyHome({ searchParams }: { searchParams: Promi
               <section className="mz-wrap" style={{ paddingTop: 14, paddingBottom: 10 }}>
                 <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", borderTop: "1px solid rgba(22,20,15,0.16)", paddingTop: 16, marginBottom: 6 }}>
                   <span style={{ fontWeight: 800, fontSize: 18 }}>{cat ? cat.label : "성분 분석"}</span>
-                  <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: "2px", color: "#9a9286" }}>{filtered.length}편</span>
+                  <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: "2px", color: "#9a9286" }}>{total}편</span>
                 </div>
                 {rows.map((a, i) => {
                   const rc = beautyCategoryOf(a.slug);
