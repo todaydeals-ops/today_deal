@@ -17,11 +17,22 @@ const serif = "'Noto Serif KR', serif";
 const PER = 12;
 const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
 
-export const metadata: Metadata = {
-  alternates: { canonical: `${SUB_ORIGIN.pill}/` },
-  title: "알약연구소 — 임상으로 검증하는 영양제",
-  description: "광고 문구가 아니라 실제 연구 결과로 성분을 따져봅니다. 눈 건강·관절과 뼈·피로와 간·면역과 장·혈관과 심장·여성과 남성.",
-};
+// 분류 페이지(?cat=)는 자기 자신을 canonical 로 — 정적 metadata 면 전부 홈을 가리켜 색인이 안 된다.
+export async function generateMetadata({ searchParams }: { searchParams: Promise<{ cat?: string }> }): Promise<Metadata> {
+  const cat = pillCategoryByKey((await searchParams).cat);
+  if (!cat) {
+    return {
+      alternates: { canonical: `${SUB_ORIGIN.pill}/` },
+      title: "알약연구소 — 임상으로 검증하는 영양제",
+      description: "광고 문구가 아니라 실제 연구 결과로 성분을 따져봅니다. 눈 건강·관절과 뼈·피로와 간·면역과 장·혈관과 심장·여성과 남성.",
+    };
+  }
+  return {
+    alternates: { canonical: `${SUB_ORIGIN.pill}/?cat=${cat.key}` },
+    title: `${cat.label} | 알약연구소`,
+    description: `${cat.angle}을(를) 중심으로, 임상 근거가 있는 것과 광고가 앞선 것을 갈라 정리했습니다.`,
+  };
+}
 
 export default async function PillHome({ searchParams }: { searchParams: Promise<{ cat?: string; page?: string }> }) {
   const sp = await searchParams;

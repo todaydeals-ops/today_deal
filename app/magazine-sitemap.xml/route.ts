@@ -13,8 +13,9 @@ export async function GET() {
   ]);
 
   const urls = [
-    // 매거진 홈
-    `<url><loc>${SITE}/magazine</loc><changefreq>daily</changefreq><priority>0.9</priority></url>`,
+    // ※ 매거진 홈(/magazine)은 넣지 않는다 — 307 로 "/" 로 접히는 URL이라
+    //   사이트맵에 리디렉션을 제출하는 셈이 된다(2026-08-18 GSC 경고).
+    //   "/" 자체는 www/sitemap.xml 이 이미 담당한다.
     // 개별 아티클
     ...articles.map((a) =>
       `<url><loc>${canonicalArticleUrl(a.slug)}</loc><lastmod>${a.createdAt.slice(0, 10)}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`

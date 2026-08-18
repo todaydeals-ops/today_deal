@@ -17,11 +17,22 @@ const serif = "'Noto Serif KR', serif";
 const PER = 12;
 const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
 
-export const metadata: Metadata = {
-  alternates: { canonical: `${SUB_ORIGIN.beauty}/` },
-  title: "성분연구소 — 임상으로 검증하는 뷰티 성분",
-  description: "화제성이나 후기가 아니라 임상 근거로 성분을 따집니다. 보습·장벽, 미백·주름, 트러블·모공, 자외선·환경, 두피·모발, 다이어트·바디.",
-};
+// 분류 페이지(?cat=)는 자기 자신을 canonical 로 — 정적 metadata 면 전부 홈을 가리켜 색인이 안 된다.
+export async function generateMetadata({ searchParams }: { searchParams: Promise<{ cat?: string }> }): Promise<Metadata> {
+  const cat = beautyCategoryByKey((await searchParams).cat);
+  if (!cat) {
+    return {
+      alternates: { canonical: `${SUB_ORIGIN.beauty}/` },
+      title: "성분연구소 — 임상으로 검증하는 뷰티 성분",
+      description: "화제성이나 후기가 아니라 임상 근거로 성분을 따집니다. 보습·장벽, 미백·주름, 트러블·모공, 자외선·환경, 두피·모발, 다이어트·바디.",
+    };
+  }
+  return {
+    alternates: { canonical: `${SUB_ORIGIN.beauty}/?cat=${cat.key}` },
+    title: `${cat.label} | 성분연구소`,
+    description: `${cat.angle}을(를) 중심으로, 임상 근거가 있는 것과 광고가 앞선 것을 갈라 정리했습니다.`,
+  };
+}
 
 export default async function BeautyHome({ searchParams }: { searchParams: Promise<{ cat?: string; page?: string }> }) {
   const sp = await searchParams;

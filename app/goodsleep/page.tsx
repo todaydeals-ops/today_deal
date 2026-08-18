@@ -17,11 +17,25 @@ const serif = "'Noto Serif KR', serif";
 const PER = 12;
 const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
 
-export const metadata: Metadata = {
-  alternates: { canonical: `${SUB_ORIGIN.sleep}/` },
-  title: "잠자리연구소 — 근거로 검증하는 수면 미디어",
-  description: "광고도 협찬도 없이, 해외 수면 연구를 근거로 검증합니다. 성장하는 잠·공부잘하는 잠·일잘하는 잠·조화로운 잠·늙지않는 잠·잠자리장비학.",
-};
+// ★분류 페이지(?cat=)는 자기 자신을 canonical 로 가리켜야 한다.
+// 정적 metadata 로 두면 6개 분류가 전부 홈을 canonical 로 신고해서, 사이트맵에
+// 제출해놓고 페이지 스스로 "나는 홈의 사본"이라고 말하는 꼴이 된다 — 색인이 안 된다
+// (2026-08-18 GSC "리디렉션이 포함된 페이지" 경고로 발견. b4as 만 generateMetadata 라 멀쩡했다).
+export async function generateMetadata({ searchParams }: { searchParams: Promise<{ cat?: string }> }): Promise<Metadata> {
+  const cat = sleepCategoryByKey((await searchParams).cat);
+  if (!cat) {
+    return {
+      alternates: { canonical: `${SUB_ORIGIN.sleep}/` },
+      title: "잠자리연구소 — 근거로 검증하는 수면 미디어",
+      description: "광고도 협찬도 없이, 해외 수면 연구를 근거로 검증합니다. 성장하는 잠·공부잘하는 잠·일잘하는 잠·조화로운 잠·늙지않는 잠·잠자리장비학.",
+    };
+  }
+  return {
+    alternates: { canonical: `${SUB_ORIGIN.sleep}/?cat=${cat.key}` },
+    title: `${cat.label} | 잠자리연구소`,
+    description: `${cat.angle}을(를) 중심으로, 해외 수면 연구 근거만 골라 정리했습니다.`,
+  };
+}
 
 export default async function GoodSleepHome({ searchParams }: { searchParams: Promise<{ cat?: string; page?: string }> }) {
   const sp = await searchParams;
