@@ -27,7 +27,8 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
   const sp = await searchParams;
   const cat = sleepCategoryByKey(sp.cat);
   const page = Math.max(1, Number(sp.page) || 1);
-  const all = await fetchMagazineList({ field: "수면·침구", limit: 60 });
+  // limit 은 발행 편수보다 넉넉히 — 60 이던 시절 68편 중 8편이 마지막 페이지 뒤로 잘려 나갔다.
+  const all = await fetchMagazineList({ field: "수면·침구", limit: 200 });
   const filtered = cat ? all.filter((a) => cat.slugs.includes(a.slug)) : all;
   const totalPages = Math.max(1, Math.ceil(filtered.length / PER));
   const pageList = filtered.slice((page - 1) * PER, page * PER);

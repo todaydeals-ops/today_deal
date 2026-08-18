@@ -27,7 +27,8 @@ export default async function BeautyHome({ searchParams }: { searchParams: Promi
   const sp = await searchParams;
   const cat = beautyCategoryByKey(sp.cat);
   const page = Math.max(1, Number(sp.page) || 1);
-  const all = await fetchMagazineList({ field: "뷰티·성분", limit: 60 });
+  // limit 은 발행 편수보다 넉넉히 — 60 이면 67편 중 7편이 잘린다.
+  const all = await fetchMagazineList({ field: "뷰티·성분", limit: 200 });
   const filtered = cat ? all.filter((a) => cat.slugs.includes(a.slug)) : all;
   const totalPages = Math.max(1, Math.ceil(filtered.length / PER));
   const pageList = filtered.slice((page - 1) * PER, page * PER);
