@@ -7,7 +7,8 @@ const SITE = "https://www.todaydeals.co.kr";
 
 export async function GET() {
   const [articles, reports] = await Promise.all([
-    fetchMagazineList({ limit: 1000, all: true }),
+    // light — 여기서 쓰는 건 slug 와 createdAt 뿐이다. 본문까지 받으면 486편에 7.3MB다.
+    fetchMagazineList({ limit: 1000, all: true, light: true }),
     fetchReportList(200),
   ]);
 

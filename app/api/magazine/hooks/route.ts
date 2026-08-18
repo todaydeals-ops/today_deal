@@ -6,7 +6,8 @@ import { hookFor } from "@/lib/magazine/hooks";
 export const revalidate = 300;
 
 export async function GET() {
-  const list = await fetchMagazineList({ limit: 30 });
+  // light — hookFor 는 slug·subtitle·title 만 본다(본문 불필요).
+  const list = await fetchMagazineList({ limit: 30, light: true });
   const items = list.map((a) => ({ slug: a.slug, corner: a.corner, hook: hookFor(a) }));
   return NextResponse.json({ items });
 }

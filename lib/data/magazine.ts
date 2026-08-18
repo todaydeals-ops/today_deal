@@ -108,7 +108,16 @@ export interface MagazineListOpts {
   limit?: number;
   offset?: number;
   all?: boolean;
+  /**
+   * 본문(body_html)을 빼고 가져온다. 목록·사이트맵처럼 제목·분류만 쓰는 곳 전용.
+   * ★본문은 평균 15KB라 60행만 받아도 0.9MB다. 반대로 RAIL(이미지·요약·FAQ·출처)이
+   *   본문 맨 앞 주석에 들어 있으므로, 썸네일을 그리는 화면에서는 켜면 안 된다.
+   */
+  light?: boolean;
 }
+
+// light 모드에서 가져올 컬럼 — body_html·closing 만 뺀다.
+const LIGHT_COLS = "id,slug,corner,field,title,subtitle,excerpt,read_min,created_at";
 
 // 목록·카운트가 같은 조건을 봐야 총 페이지수와 실제 목록이 어긋나지 않는다.
 // 조건이 두 군데로 갈라져 있으면 한쪽만 고치는 사고가 난다 — 여기 한 곳에 모은다.
@@ -139,8 +148,10 @@ export async function fetchMagazineList(opts?: MagazineListOpts): Promise<Magazi
     // 그래서 화면에 12편 띄우려고 전 편을 받으면 안 된다 — 2026-08-18 실측에서
     // AS 홈 1회가 131행 3.6MB(682ms), 잠자리 홈이 68행 1.5MB(807ms)였다.
     // 사람이 몰리면 이게 그대로 메모리·대역폭으로 곱해진다. 페이징은 DB에서 끝낸다.
+    // select 문자열이 변수라 supabase-js 의 컬럼 타입 추론이 안 걸린다(ParserError).
+    // 런타임에는 문제없고 map()이 빠진 컬럼을 ?? 로 받으므로 unknown 경유로 캐스팅한다.
     let q = applyListFilters(
-      sb.from("magazine").select("*"),
+      sb.from("magazine").select(opts?.light ? LIGHT_COLS : "*"),
       opts,
     ).order("created_at", { ascending: false });
     const limit = opts?.limit ?? 60;
@@ -148,7 +159,7 @@ export async function fetchMagazineList(opts?: MagazineListOpts): Promise<Magazi
     else q = q.limit(limit);
     const { data, error } = await q;
     if (error || !data) return [];
-    return (data as Row[]).map(map);
+    return (data as unknown as Row[]).map(map);
   } catch {
     return [];
   }
@@ -190,9 +201,10 @@ export async function fetchMagazineBySlug(slug: string): Promise<MagazineArticle
 // 관련 글: 같은 코너(+2)·같은 분야(+1) 가중치 후 최신순. 내부링크/색인용.
 export async function fetchRelatedMagazine(article: MagazineArticle, limit = 4): Promise<MagazineArticle[]> {
   // 서브 미디어(잠자리연구소·알약연구소) 글은 같은 섹션 안에서만 관련글을 뽑는다 — 오늘의딜 글과 섞이지 않게.
+  // light — 관련글 카드는 분류·제목·부제만 쓴다. 본문까지 받으면 60행에 0.9MB다.
   const all = article.field && SUB_MEDIA_FIELDS.includes(article.field)
-    ? await fetchMagazineList({ field: article.field, limit: 60 })
-    : await fetchMagazineList({ limit: 60 });
+    ? await fetchMagazineList({ field: article.field, limit: 60, light: true })
+    : await fetchMagazineList({ limit: 60, light: true });
   const scored = all
     .filter((x) => x.slug !== article.slug)
     .map((x) => {
