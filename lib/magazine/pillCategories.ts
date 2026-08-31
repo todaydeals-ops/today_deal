@@ -16,7 +16,7 @@ export const PILL_CATEGORIES: PillCategory[] = [
   },
   {
     key: "joint", label: "관절·뼈", en: "JOINT", color: "#8a6a3a", angle: "무릎·허리와 뼈",
-    slugs: ["msm-joint-supplement","vitamin-d-deficiency-korea","vitamin-k2-bone","boswellia-arthritis","glucosamine-knee","muscle-cramp-magnesium","turmeric-curcumin","chondroitin-joint","hyaluronic-acid-oral","collagen-joint-vs-skin","osteoporosis-supplement","hmb-sarcopenia","calcium-supplement-absorption","joint-supplement-compare"],
+    slugs: ["msm-joint-supplement","vitamin-d-deficiency-korea","vitamin-k2-bone","boswellia-arthritis","glucosamine-knee","muscle-cramp-magnesium","turmeric-curcumin","chondroitin-joint","hyaluronic-acid-oral","collagen-joint-vs-skin","osteoporosis-supplement","hmb-sarcopenia","calcium-supplement-absorption","joint-supplement-compare","omega3-arthritis","gout-uric-acid-diet","green-lipped-mussel"],
   },
   {
     key: "vital", label: "피로·간", en: "VITAL", color: "#3f6a8a", angle: "만성피로와 간",

@@ -15,7 +15,7 @@ export const SLEEP_CATEGORIES: SleepCategory[] = [
   },
   {
     key: "study", label: "공부잘하는 잠", en: "FOCUS", color: "#3f6a8a", angle: "수험생 집중·기억력",
-    slugs: ["sleep-academic-achievement", "teen-melatonin-phase-delay", "school-start-time-grades", "sleep-growth-hormone-height", "teen-bluelight-sleep", "teen-sleep-deprivation-mood", "allnighter-memory-consolidation", "cramming-vs-regular-sleep", "caffeine-halflife-sleep", "power-nap-cognition", "exam-anxiety-insomnia", "teen-morning-person-transition", "dream-memory-learning", "sleep-paralysis", "lucid-dreaming", "sleep-8hour-myth", "sleep-cycle-90min-myth"],
+    slugs: ["sleep-academic-achievement", "teen-melatonin-phase-delay", "school-start-time-grades", "sleep-growth-hormone-height", "teen-bluelight-sleep", "teen-sleep-deprivation-mood", "allnighter-memory-consolidation", "cramming-vs-regular-sleep", "caffeine-halflife-sleep", "power-nap-cognition", "exam-anxiety-insomnia", "teen-morning-person-transition", "dream-memory-learning", "sleep-paralysis", "lucid-dreaming", "sleep-8hour-myth", "sleep-cycle-90min-myth", "bedtime-procrastination", "elementary-school-bedtime", "exam-period-sleep-rhythm"],
   },
   {
     key: "work", label: "일잘하는 잠", en: "PERFORM", color: "#8a6a3a", angle: "직장인 피로와 생산성",

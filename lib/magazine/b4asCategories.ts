@@ -33,7 +33,7 @@ export const B4AS_CATEGORIES: B4asCategory[] = [
     key: "mobile", label: "모바일", en: "MOBILE", color: "#38539a",
     angle: "스마트폰·태블릿·워치·충전",
     seoTitle: "스마트폰·태블릿 고장 증상별 자가진단",
-    slugs: ["apple-watch-selfcheck","ereader-selfcheck","galaxy-battery-drain","galaxy-buds-selfcheck","galaxy-call-speaker-selfcheck","galaxy-charging-issue","galaxy-force-restart-safemode","galaxy-tab-selfcheck","galaxy-watch-selfcheck","ipad-charging-selfcheck","iphone-battery-health","iphone-faceid-camera-selfcheck","iphone-force-restart","iphone-overheating","phone-touch-selfcheck","portable-power-station-selfcheck","smartband-selfcheck","smartphone-battery-drain-selfcheck","smartphone-charging-selfcheck","smartphone-storage-slow-selfcheck","wireless-charger-selfcheck"],
+    slugs: ["apple-watch-selfcheck","ereader-selfcheck","galaxy-battery-drain","galaxy-buds-selfcheck","galaxy-call-speaker-selfcheck","galaxy-charging-issue","galaxy-force-restart-safemode","galaxy-tab-selfcheck","galaxy-watch-selfcheck","ipad-charging-selfcheck","iphone-battery-health","iphone-faceid-camera-selfcheck","iphone-force-restart","iphone-overheating","phone-touch-selfcheck","portable-power-station-selfcheck","smartband-selfcheck","smartphone-battery-drain-selfcheck","smartphone-charging-selfcheck","smartphone-storage-slow-selfcheck","wireless-charger-selfcheck","phone-notification-delay-selfcheck","phone-gps-accuracy-selfcheck"],
   },
   {
     key: "kitchen", label: "주방가전", en: "KITCHEN", color: "#8a6a3a",
@@ -51,7 +51,7 @@ export const B4AS_CATEGORIES: B4asCategory[] = [
     key: "av", label: "영상·음향", en: "AV", color: "#7a5a9a",
     angle: "TV·사운드바·카메라·게임기",
     seoTitle: "TV·사운드바·카메라 고장 자가진단",
-    slugs: ["action-cam-selfcheck","airpods-selfcheck","bluetooth-speaker-selfcheck","drone-selfcheck","earbuds-case-charging-selfcheck","game-controller-selfcheck","lg-tv-selfcheck","mirrorless-camera-selfcheck","nintendo-switch-selfcheck","projector-selfcheck","ps5-selfcheck","samsung-tv-error","soundbar-selfcheck","tv-no-signal-selfcheck","tv-streaming-app-selfcheck"],
+    slugs: ["action-cam-selfcheck","airpods-selfcheck","bluetooth-speaker-selfcheck","drone-selfcheck","earbuds-case-charging-selfcheck","game-controller-selfcheck","lg-tv-selfcheck","mirrorless-camera-selfcheck","nintendo-switch-selfcheck","projector-selfcheck","ps5-selfcheck","samsung-tv-error","soundbar-selfcheck","tv-no-signal-selfcheck","tv-streaming-app-selfcheck","hdmi-connection-selfcheck"],
   },
   {
     key: "pc", label: "PC·주변", en: "PC", color: "#4a6a8a",
