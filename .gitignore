@@ -36,3 +36,6 @@ magazine-og-preview.png
 # 임시 자료조사 산출물은 무시하되, 리서치 팩트 저장소(content/research)는 자산이므로 추적한다
 /research/
 .work/research/
+
+.work/epg/
+.work/clips/

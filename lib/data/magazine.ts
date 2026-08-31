@@ -24,7 +24,7 @@ export interface MagazineArticle {
 
 // 서브 미디어 field — 각자 전용 서브도메인에서만 노출하고 메인 매거진에선 제외(격리).
 // 잠자리연구소=수면·침구(goodsleep), 알약연구소=건강기능식품(pill).
-export const SUB_MEDIA_FIELDS = ["수면·침구", "건강기능식품", "뷰티·성분"];
+export const SUB_MEDIA_FIELDS = ["수면·침구", "건강기능식품", "뷰티·성분", "방송·협찬"];
 
 // AS연구소(b4as)는 field가 아니라 corner로 격리한다.
 // AS는 주제가 아니라 상황("고장났다")이라 field가 가전·디지털·IT·리빙·주방·자동차로

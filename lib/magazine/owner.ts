@@ -23,7 +23,7 @@ import { BEAUTY_CATEGORIES } from "@/lib/magazine/beautyCategories";
 import { B4AS_CATEGORIES } from "@/lib/magazine/b4asCategories";
 import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
 
-export type OwnerKey = "deal" | "sleep" | "pill" | "beauty" | "b4as";
+export type OwnerKey = "deal" | "sleep" | "pill" | "beauty" | "b4as" | "sponsor";
 
 export const OWNER_ORIGIN: Record<OwnerKey, string> = {
   deal: "https://www.todaydeals.co.kr",
@@ -31,6 +31,7 @@ export const OWNER_ORIGIN: Record<OwnerKey, string> = {
   pill: SUB_ORIGIN.pill,
   beauty: SUB_ORIGIN.beauty,
   b4as: SUB_ORIGIN.b4as,
+  sponsor: SUB_ORIGIN.sponsor,
 };
 
 /** 서브도메인 접두어 → 브랜드 키. www·기타는 deal. */
@@ -40,6 +41,7 @@ export function ownerFromHost(host: string): OwnerKey {
   if (h.startsWith("pill.")) return "pill";
   if (h.startsWith("beauty.")) return "beauty";
   if (h.startsWith("b4as.")) return "b4as";
+  if (h.startsWith("sponsor.")) return "sponsor";
   return "deal";
 }
 
@@ -67,4 +69,5 @@ export const PATH_TO_OWNER: Record<string, OwnerKey> = {
   "/pill": "pill",
   "/beauty": "beauty",
   "/b4as": "b4as",
+  "/sponsor": "sponsor",
 };

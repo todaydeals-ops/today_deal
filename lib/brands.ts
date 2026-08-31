@@ -9,7 +9,7 @@
 // ★새 미디어를 추가하면 여기 한 줄만 넣으면 푸터·팝업이 함께 따라온다.
 import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
 
-export type BrandKey = "deal" | "sleep" | "pill" | "beauty" | "b4as";
+export type BrandKey = "deal" | "sleep" | "pill" | "beauty" | "b4as" | "sponsor";
 
 export interface Brand {
   key: BrandKey;
@@ -54,6 +54,12 @@ export const BRANDS: Brand[] = [
     hook: "기사님 부르기 전에, 5분이면 끝나는 것들이 있습니다.",
     url: SUB_ORIGIN.b4as, color: "#38539a",
   },
+  {
+    key: "sponsor", name: "협찬연구소",
+    desc: "이 방송, 누가 돈을 냈을까",
+    hook: "낮 방송에 나온 그 원료, 같은 날 어디서 팔렸는지 시각으로 정리했습니다.",
+    url: SUB_ORIGIN.sponsor, color: "#3f5a7a",
+  },
 ];
 
 /** 현재 호스트로 지금 보고 있는 브랜드를 판별한다(팝업이 자기 브랜드를 권하지 않게). */
@@ -63,5 +69,6 @@ export function brandKeyFromHost(host: string): BrandKey {
   if (h.startsWith("pill")) return "pill";
   if (h.startsWith("beauty")) return "beauty";
   if (h.startsWith("b4as")) return "b4as";
+  if (h.startsWith("sponsor")) return "sponsor";
   return "deal";
 }

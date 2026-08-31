@@ -11,6 +11,7 @@ export const SUB_ORIGIN = {
   pill: "https://pill.todaydeals.co.kr",
   beauty: "https://beauty.todaydeals.co.kr",
   b4as: "https://b4as.todaydeals.co.kr",
+  sponsor: "https://sponsor.todaydeals.co.kr",
 } as const;
 
 export type SubKey = keyof typeof SUB_ORIGIN;
@@ -27,3 +28,4 @@ export const sleepHref = (cat?: string, page?: number) => subHref("sleep", cat, 
 export const pillHref = (cat?: string, page?: number) => subHref("pill", cat, page);
 export const beautyHref = (cat?: string, page?: number) => subHref("beauty", cat, page);
 export const b4asHref = (cat?: string, page?: number) => subHref("b4as", cat, page);
+export const sponsorHref = (cat?: string, page?: number) => subHref("sponsor", cat, page);
