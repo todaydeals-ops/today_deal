@@ -12,7 +12,7 @@ export interface PillCategory {
 export const PILL_CATEGORIES: PillCategory[] = [
   {
     key: "eye", label: "눈 건강", en: "EYE", color: "#4a7c59", angle: "눈 피로와 황반",
-    slugs: ["dry-eye-omega-supplement","lutein-eye-supplement","astaxanthin-eye-fatigue","bilberry-anthocyanin-eye","vitamin-a-night-blindness","blue-light-supplement-claim","macular-degeneration-prevention","eye-supplement-compare","eye-drops-vs-supplement"],
+    slugs: ["dry-eye-omega-supplement","lutein-eye-supplement","astaxanthin-eye-fatigue","bilberry-anthocyanin-eye","vitamin-a-night-blindness","blue-light-supplement-claim","macular-degeneration-prevention","eye-supplement-compare","eye-drops-vs-supplement","contact-lens-wearers-nutrient","eye-twitching-magnesium","presbyopia-accommodation-nutrition","glaucoma-intraocular-pressure","myopia-progression-nutrition","diabetic-retinopathy-supplement","cataracts-antioxidant-age","keratoconus-corneal-health"],
   },
   {
     key: "joint", label: "관절·뼈", en: "JOINT", color: "#8a6a3a", angle: "무릎·허리와 뼈",

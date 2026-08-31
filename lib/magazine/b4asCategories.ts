@@ -75,7 +75,7 @@ export const B4AS_CATEGORIES: B4asCategory[] = [
     key: "car", label: "자동차", en: "MOBILITY", color: "#7a4a4a",
     angle: "시동·배터리·경고등·전동킥보드",
     seoTitle: "자동차 시동·배터리 문제 자가점검",
-    slugs: ["car-aircon-selfcheck","car-battery-selfcheck","car-handy-vacuum-selfcheck","dashcam-selfcheck","escooter-ebike-selfcheck"],
+    slugs: ["car-aircon-selfcheck","car-battery-selfcheck","car-handy-vacuum-selfcheck","dashcam-selfcheck","escooter-ebike-selfcheck","car-tire-pressure","car-engine-start-failure","car-engine-oil-warning","car-brake-warning","car-headlight-check","car-wiper-noise"],
   },
 ];
 
