@@ -8,12 +8,18 @@
 //
 // ※ URL에 괄호가 들어가는 출처(Elsevier의 S1051-2276(26)00082-8 등)가 있어
 //   추출 정규식에서 괄호를 제외하면 오탐이 난다. 실제로 한 번 겪었다.
+//
+// ※ 세미콜론도 제외한다. 근거 파일 28건이 한 source_url 필드에 URL 두 개를
+//   "a; b" 로 붙여 넣고 있어서(스키마상 원래 하나여야 한다), 세미콜론을 URL 문자로
+//   취급하면 앞 URL이 "…08003;" 로 수집돼 원고의 정상 URL과 대조가 어긋난다.
+//   실제로 초록입홍합 편이 이 이유로 "지어낸 URL"로 잘못 잡혔다(2026-09-01).
+//   세미콜론을 끊으면 뒤쪽 URL도 따로 수집돼 둘 다 대조된다.
 import fs from "node:fs";
 import path from "node:path";
 
 const FACTS = path.join(process.cwd(), "content/research/facts");
-const URL_RE = /https?:\/\/[^"'\s\\]+/g;
-const norm = (u) => (u || "").replace(/[),.]+$/, "").replace(/\/$/, "");
+const URL_RE = /https?:\/\/[^"'\s\\;]+/g;
+const norm = (u) => (u || "").replace(/[);,.]+$/, "").replace(/\/$/, "");
 
 const pool = new Set();
 for (const f of fs.readdirSync(FACTS)) {
