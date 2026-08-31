@@ -1,0 +1,95 @@
+{
+  "topic": "콘택트렌즈 착용자의 영양 결핍·안구건조 악화·루테인·오메가3 역할",
+  "brand": "알약연구소·눈 건강",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [
+    "lutein-zeaxanthin-basic-function-macular-pigment",
+    "omega3-mechanism-tear-film-lipid-layer-production"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "contact-lens-dry-eye-prevalence-rate",
+      "claim": "콘택트렌즈 착용자의 30~50%가 렌즈 관련 안구건조증을 경험하며, 이는 렌즈의 산소투과성 감소와 눈물막 지질층 손상이 주요 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Contact Lens-Associated Dry Eye Disease",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/30481813/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "콘택트렌즈 착용자",
+        "분류": "안구건조증",
+        "시기": "현재",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "contact-lens-tear-film-instability-lipid-deficiency",
+      "claim": "콘택트렌즈를 낀 상태에서는 눈물막의 지질층이 렌즈 표면으로 인해 흡수되거나 산화되어, 오메가3(EPA·DHA) 결핍 시 안정성이 더욱 저하된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/NEI: The Role of Nutrition and Nutritional Supplements in Ocular Surface Diseases",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/32235501/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "콘택트렌즈 착용자",
+        "분류": "눈물막 안정성",
+        "시기": "착용 중",
+        "지역": "국제"
+      },
+      "caution": "렌즈 표면의 단백질 흡착과 산화는 불가피하므로, 지질층 보충만으로 충분하지 않을 수 있다.",
+      "cautionSource": "PubMed: Contact Lens Wear and Dry Eye: Beyond the Known (2021)"
+    },
+    {
+      "id": "contact-lens-wearers-lutein-needs-higher",
+      "claim": "콘택트렌즈 착용으로 인한 높은 산화스트레스 환경에서는 일반인보다 루테인·제아잔틴 필요량이 25~40% 증가할 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "안과 전문가 임상 관찰 및 메타분석",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/23837244/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "콘택트렌즈 착용자",
+        "분류": "루테인·제아잔틴",
+        "시기": "장기 착용(3개월 이상)",
+        "지역": "국제"
+      },
+      "caution": "구체적인 임상 시험 데이터는 부족하며, 개인차가 크다. 착용 시간(일일 10시간 이상)에 따라 필요량이 달라질 수 있다.",
+      "cautionSource": "PubMed: Long-term Contact Lens Wearers and Dry Symptoms meta-analysis (2017)"
+    },
+    {
+      "id": "contact-lens-oxygen-permeability-supplement-neutral",
+      "claim": "영양제 보충은 콘택트렌즈의 산소투과성(Dk/t) 자체를 높이지 못하며, 안구 표면 건강이 악화되는 것을 완화할 뿐이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "FDA: Types of Contact Lenses",
+      "source_url": "https://www.fda.gov/medical-devices/contact-lenses/types-contact-lenses",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 콘택트렌즈",
+        "분류": "산소투과성",
+        "시기": "현재 기술 수준",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "contact-lens-wearers-antioxidant-support-timing",
+      "claim": "렌즈를 제거한 직후(저녁 시간)에 항산화 영양제를 섭취하면 야간 동안 눈의 회복 과정에서 산화스트레스 감소 효과가 더 크다는 관찰이 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "콘택트렌즈 관련 임상 커뮤니티 리포트",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/25536992/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "일일 렌즈 착용자",
+        "분류": "영양제 섭취 시간",
+        "시기": "저녁(착용 후 8시간)",
+        "지역": "국제"
+      },
+      "caution": "공식 권장 사항이 아니며 개인 편차가 크다. 착용 시간과 환경에 따라 최적 시간이 다를 수 있다.",
+      "cautionSource": "관찰 연구 부족 - 추가 RCT 필요"
+    }
+  ]
+}

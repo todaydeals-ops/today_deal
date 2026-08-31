@@ -1,0 +1,109 @@
+{
+  "topic": "자동차 타이어 공기압 경고 및 점검",
+  "brand": "자동차 공통",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "tpms-warning-threshold",
+      "claim": "TPMS(타이어 공기압 감지 시스템)는 각 타이어의 공기압이 제조업체가 권장하는 콜드 타이어 공기압(명판 공기압)보다 25% 이상 낮을 때 운전자에게 경고를 준다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국토교통부 정책자료",
+      "source_url": "https://molit.go.kr/USR/policyTarget/m_24066/dtl.jsp?idx=492",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "TPMS 장착 자동차 전체",
+        "분류": "타이어 안전",
+        "시기": "현재",
+        "지역": "대한민국"
+      },
+      "caution": "실제 공기압 수치는 차종마다 다르므로 도어 필러나 연료 주입구에 부착된 명판을 반드시 확인해야 한다.",
+      "cautionSource": "국토교통부 / 제조사 매뉴얼"
+    },
+    {
+      "id": "cold-tire-pressure-standard",
+      "claim": "정상 타이어 공기압(콜드 타이어 공기압)은 차량의 도어 필러, 연료 주입구 덮개, 또는 오너스 매뉴얼에 기재된 명판 값을 기준으로 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대/기아 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/CT1/2026/ko_KR/topics/t00980.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 자동차",
+        "분류": "타이어 관리",
+        "시기": "현재",
+        "지역": "전세계"
+      }
+    },
+    {
+      "id": "tpms-false-alert-locations",
+      "claim": "경찰서, 정부 청사, 방송국, 군 시설, 스노우체인이나 애프터마켓 전자장치 근처에서는 TPMS 경고등이 오작동하여 깜빡이거나 켜질 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/CT1/2026/ko_KR/topics/t00980.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "TPMS 장착 기아 차량",
+        "분류": "전자 시스템",
+        "시기": "현재",
+        "지역": "전세계"
+      },
+      "caution": "이러한 위치에서 경고등이 켜졌다면 차를 움직인 후 다시 확인하면 경고등이 꺼질 수 있다.",
+      "cautionSource": "기아 오너스 매뉴얼"
+    },
+    {
+      "id": "tpms-pressure-check-method",
+      "claim": "타이어 공기압은 실온에 가까운 '콜드 타이어' 상태에서 측정해야 정확한 수치를 얻을 수 있으며, 주행 중 타이어가 가열되면 공기압이 상승한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 공식 오너스 매뉴얼 / 타이어 제조사 가이드",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/CT1/2026/ko_KR/topics/t00980.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 자동차",
+        "분류": "타이어 점검",
+        "시기": "현재",
+        "지역": "전세계"
+      },
+      "caution": "최소 3시간 주차 후 또는 아침에 점검하는 것이 가장 정확하다.",
+      "cautionSource": "타이어 산업 표준"
+    },
+    {
+      "id": "low-pressure-symptoms",
+      "claim": "공기압 부족 타이어가 1개 이상 있으면 TPMS는 경고등을 켜고 동시에 해당 타이어의 위치 표시등을 함께 표시한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/CT1/2026/ko_KR/topics/t00980.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "TPMS 장착 기아 차량",
+        "분류": "타이어 모니터링",
+        "시기": "현재",
+        "지역": "전세계"
+      }
+    },
+    {
+      "id": "tpms-sensor-malfunction",
+      "claim": "타이어 공기압 센서에 고장이 나면 어느 타이어가 저압인지 판단 불가능하므로 모든 타이어의 위치 표시등이 켜진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/CT1/2026/ko_KR/topics/t00980.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "TPMS 장착 기아 차량",
+        "분류": "센서 고장",
+        "시기": "현재",
+        "지역": "전세계"
+      },
+      "caution": "이 경우 정비소 방문하여 센서 진단 및 교체가 필요하다.",
+      "cautionSource": "제조사 서비스 가이드"
+    }
+  ]
+}

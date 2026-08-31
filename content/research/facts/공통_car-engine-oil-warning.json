@@ -1,0 +1,79 @@
+{
+  "topic": "엔진오일 경고등 의미 및 대처",
+  "brand": "자동차 공통",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "engine-oil-pressure-critical",
+      "reason": "radiokorea.com (매체 출처) — 공식 기관 정보가 아님",
+      "tier": "확실"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "engine-oil-warning-red-meaning",
+      "claim": "엔진 오일 경고등이 빨간색으로 점등되면 엔진 오일의 양이 부족하거나 압력이 떨어져 오일이 제대로 순환하지 않는다는 신호이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/MX5/2026/ko_KR/warning_indicator_lights.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 자동차",
+        "분류": "엔진 경고",
+        "시기": "현재",
+        "지역": "전세계"
+      }
+    },
+    {
+      "id": "engine-oil-warning-red-urgency",
+      "claim": "빨간색 엔진 오일 경고등이 켜진 상태에서 계속 주행하면 엔진이 손상될 수 있으므로, 도로 옆에 차를 즉시 안전하게 정차하고 엔진을 끈 후 정비소에 이동해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/MX5/2026/ko_KR/warning_indicator_lights.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 자동차",
+        "분류": "안전 경고",
+        "시기": "현재",
+        "지역": "전세계"
+      },
+      "caution": "이것은 '알라딘 램프'로 불리는 심각한 신호이므로 주행을 즉시 중단해야 한다.",
+      "cautionSource": "현대 오너스 매뉴얼"
+    },
+    {
+      "id": "engine-oil-check-procedure",
+      "claim": "엔진 오일 경고등이 켜진 후 정지했을 때, 먼저 엔진을 끈 다음 몇 분 후 오일 게이지로 엔진 오일의 양을 점검하고 부족 시 보충한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/MX5/2026/ko_KR/warning_indicator_lights.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 자동차",
+        "분류": "오일 점검",
+        "시기": "현재",
+        "지역": "전세계"
+      }
+    },
+    {
+      "id": "engine-oil-warning-persistence",
+      "claim": "엔진 오일을 보충한 후에도 엔진 오일 경고등이 계속 켜져 있으면 오일 압력 센서나 엔진 내부 문제일 가능성이 있으므로 서비스센터 방문이 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/MX5/2026/ko_KR/warning_indicator_lights.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 자동차",
+        "분류": "엔진 진단",
+        "시기": "현재",
+        "지역": "전세계"
+      }
+    }
+  ]
+}

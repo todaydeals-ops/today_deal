@@ -1,0 +1,90 @@
+{
+  "topic": "녹내장·안압과 루테인·지아잔틴·카로티노이드 보충의 신경보호 근거",
+  "brand": "알약연구소·눈 건강",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [
+    "lutein-zeaxanthin-basic-function-macular-pigment"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "glaucoma-oxidative-stress-pathogenesis",
+      "claim": "녹내장 신경병증(optic neuropathy)의 다요인 발병기전에 산화스트레스가 포함되어 있으며, 루테인과 지아잔틴의 항산화 효과가 신경 손상을 완화할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Neuroprotection with carotenoids in glaucoma",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/15083692/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "녹내장 환자",
+        "분류": "산화스트레스 기전",
+        "시기": "현재",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "lutein-zeaxanthin-meso-zeaxanthin-macular-pigment-glaucoma",
+      "claim": "루테인·지아잔틴·메소-지아잔틴 복합 보충제는 임상시험에서 녹내장 환자의 황반 색소 증가를 유도했으며, 18개월 후 메시피스 대비감도(mesopic contrast sensitivity) 개선을 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Macular Pigment Response to Lutein, Zeaxanthin, and Meso-zeaxanthin RCT in Open-Angle Glaucoma",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/36247822/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "개방각 녹내장 환자",
+        "분류": "시각 기능(대비감도)",
+        "시기": "18개월 추적",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "carotenoid-evidence-level-glaucoma-prevention",
+      "claim": "카로티노이드(루테인·지아잔틴)는 녹내장 예방에 강한 생물학적 근거가 있으나, 장기 대규모 인구 기반 임상시험이 부족하여 현재 근거 수준은 제한적이다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PubMed: Dietary Antioxidants, Macular Pigment, and Glaucomatous Neurodegeneration",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/31052471/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "녹내장 고위험군",
+        "분류": "예방 효과 근거 수준",
+        "시기": "2019년 리뷰 기준",
+        "지역": "국제"
+      },
+      "caution": "현재 녹내장 표준 치료는 안압 약물 또는 수술이며, 영양제는 보조 역할만 한다.",
+      "cautionSource": "PubMed: Diet, Exercise, and Lifestyle in Glaucoma (2024)"
+    },
+    {
+      "id": "macular-pigment-optical-density-measurement",
+      "claim": "황반 색소 광학 밀도(MPOD)는 루테인·지아잔틴 축적도를 나타내며, 카로티노이드 보충 후 3~6개월에 측정 가능한 증가를 보인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Beneficial Effects of Lutein-Zeaxanthin on MPOD in Healthy Individuals",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40135032/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 연령",
+        "분류": "황반 색소 축적(3~6개월)",
+        "시기": "보충 후",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "glaucoma-coq10-magnesium-limited-evidence",
+      "claim": "CoQ10, 마그네슘 등 다른 항산화제·미네랄도 녹내장 신경보호 기전이 제안되지만, RCT 근거는 루테인·지아잔틴에 비해 훨씬 제한적이다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PubMed: An ideal ocular nutritional supplement?",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/15228513/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "녹내장 고위험군",
+        "분류": "대체 영양제",
+        "시기": "현재",
+        "지역": "국제"
+      }
+    }
+  ]
+}

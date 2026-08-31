@@ -1,0 +1,80 @@
+{
+ "topic": "두피 마사지기 자가진단",
+ "brand": "공통",
+ "article": "예정",
+ "captured": "2026-09-01",
+ "reused_facts": [
+  "battery-swelling-stop-immediately"
+ ],
+ "declined_facts": [
+  {
+   "id": "scalp-massager-vibration-weakness",
+   "claim": "두피 마사지기의 진동이 약해지거나 불규칙해지면 배터리 부족이거나 구동 모터가 약화된 신호다. 충전을 해도 호전되지 않으면 모터 수명이 다한 것이다",
+   "was": "https://www.a-ha.io/questions/4c94f3a7c53035a4a7cf8207f7411abc",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "scalp-massager-battery-drain",
+   "claim": "두피 마사지기를 충전해도 1분 이내에 꺼진다면 배터리가 제대로 작동하지 않거나 배터리 접점에 문제가 있는 신호다. 새로운 배터리 구입이나 교체가 필요하다",
+   "was": "https://www.a-ha.io/questions/4c94f3a7c53035a4a7cf8207f7411abc",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "scalp-massager-overuse-damage",
+   "claim": "두피 마사지기를 너무 세게 또는 오래 사용하면 두피가 손상될 수 있다. 1회 사용 시간은 2~10분이 적당하며, 10분 이상 장시간 사용하면 건조증이나 염증의 원인이 된다",
+   "was": "https://doctornow.co.kr/content/qna/f0a8de752e044d419814c2e2455e60e8",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "scalp-damage-recovery-time",
+   "claim": "두피 마사지로 손상된 두피는 자극을 중단하면 자연회복되지만, 회복 기간은 손상 정도에 따라 개인차가 있으며 일반적으로 몇 주에서 몇 달이 걸릴 수 있다",
+   "was": "https://doctornow.co.kr/content/qna/affb604e352b4618b0f933c1b0b51ba5",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "scalp-massager-waterproof-check",
+   "claim": "샤워할 때 두피 마사지기를 사용할 계획이라면 반드시 방수 기능이 있는지 확인해야 한다. 방수 기능이 없으면 물 침입으로 감전이나 고장 위험이 있다",
+   "was": "https://realrv.co.kr/%EB%91%90%ED%94%BC-%EB%A7%88%EC%82%AC%EC%A7%80%EA%B8%B0-%EC%B6%94%EC%B2%9C/",
+   "reason": "출처 배제(건강기기 판매사)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "scalp-massager-charger-fault",
+   "claim": "충전기가 제대로 작동하지 않으면 즉시 교체해야 한다. 결함 있는 충전기는 감전이나 기기 손상을 유발할 수 있다",
+   "was": "https://kr.chinaxiongwei.com/news/industry-news/how-to-charge-a-facial-gun.html",
+   "reason": "출처 배제(건강기기 판매사)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "scalp-massager-head-maintenance",
+   "claim": "두피 마사지기 헤드에 이물질이 쌓이면 진동이 불규칙해질 수 있다. 사용 후 극세사 브러시나 부드러운 천으로 헤드를 가볍게 닦아 청소해야 한다",
+   "was": "https://www.asiae.co.kr/article/2012022414175886640",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  }
+ ],
+ "disputes": [],
+ "facts": [
+  {
+   "id": "scalp-damage-warning-signs",
+   "claim": "두피 마사지 후 머리카락 사이사이 피부를 들춰봤을 때 불긋불긋한 홍반이 있거나, 그 위로 각질이 일어나거나, 기름기 있는 노르스름한 비늘이 발생하며, 가려움증이 동반되면 두피 손상 신호다",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "두피염 정보",
+   "source_url": "https://www.snuh.org/health/nMedInfo/nView.do?medid=AA001255",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "두피 마사지기 사용자",
+    "분류": "부작용",
+    "시기": "전 연식",
+    "지역": "KR"
+   },
+   "caution": "이러한 증상이 나타나면 즉시 두피 마사지 사용을 중단하고 의료진에게 진찰받을 것.",
+   "cautionSource": "의료 진단 기준"
+  }
+ ]
+}

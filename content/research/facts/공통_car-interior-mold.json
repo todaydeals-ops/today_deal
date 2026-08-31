@@ -1,0 +1,16 @@
+{
+  "topic": "자동차 내부 곰팡이 원인 및 제거",
+  "brand": "자동차 공통",
+  "article": "폐기",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "interior-mold-topic-no-official-source",
+      "reason": "자동차 실내 곰팡이는 에어컨 시스템의 습도 관리 문제이나, 현대/기아 오너스 매뉴얼에는 에어컨 필터 교체·송풍 모드만 있고 곰팡이 발생 기전·예방·제거는 명시되지 않음. 공식 교통안전공단·질병관리청 등에도 자동차 곰팡이 관련 기술 지침이 없음. 가용 출처는 3M(세정제), kixxman(오일), mycle·driveind(정비 블로그)뿐. 공식 출처 4건 이상 미확보로 폐기",
+      "tier": "없음"
+    }
+  ],
+  "disputes": [],
+  "facts": []
+}

@@ -1,0 +1,130 @@
+{
+ "topic": "혈당측정기 자가진단",
+ "brand": "공통",
+ "article": "예정",
+ "captured": "2026-09-01",
+ "reused_facts": [],
+ "declined_facts": [],
+ "disputes": [],
+ "facts": [
+  {
+   "id": "glucose-meter-is-medical-device",
+   "claim": "혈당측정기는 의료기기이며, 국내 개인용 혈당측정 시스템은 식약처 허가를 받아야 하고, 부작용이 발생하면 한국의료기기안전정보원(080-080-4183)에 신고할 수 있다",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "식품의약품안전처 — 개인용 혈당 측정시스템",
+   "source_url": "https://www.mfds.go.kr/brd/m_580/view.do?seq=33",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "개인용 혈당측정기",
+    "분류": "의료기기",
+    "시기": "전 연식",
+    "지역": "KR"
+   },
+   "caution": "구매 전 제품이 식약처 허가 기기인지 반드시 확인하고, 정품이 아닌 경우 정확도를 신뢰할 수 없다.",
+   "cautionSource": "식약처의 의료기기 허가 기준"
+  },
+  {
+   "id": "glucose-meter-code-strip-matching",
+   "claim": "혈당측정기는 시험지의 코드 번호와 기기의 코드 번호가 일치해야 정확한 측정이 가능하다. 코드가 맞지 않으면 측정값이 크게 오차가 날 수 있다",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "대한당뇨병학회 — 당뇨병 진료지침",
+   "source_url": "https://www.diabetes.or.kr/general/info/treat/treat_03.php?con=2",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "혈당측정기",
+    "분류": "사용법",
+    "시기": "전 연식",
+    "지역": "KR"
+   },
+   "caution": "코드 자동 인식 방식은 오류가 적지만, 수동 코드 입력 방식은 입력 오류가 측정값을 완전히 바꿀 수 있다.",
+   "cautionSource": "대한당뇨병학회의 측정 오류 유형 분류"
+  },
+  {
+   "id": "glucose-meter-sensor-contamination",
+   "claim": "측정기의 센서 렌즈에 먼지가 쌓이면 혈액 감지 효율이 떨어져 오류가 잦아진다. 부드러운 천이나 면봉에 알코올을 살짝 묻혀 주기적으로 닦아야 한다",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "대한당뇨병학회 — 혈당측정기 사용 가이드",
+   "source_url": "https://www.diabetes.or.kr/general/info/treat/treat_03.php?con=2",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "혈당측정기",
+    "분류": "유지보수",
+    "시기": "전 연식",
+    "지역": "KR"
+   },
+   "caution": "렌즈를 닦을 때 너무 세게 문질러서 손상시키지 말 것. 매주 1~2회 정도 부드럽게 청소하면 충분하다.",
+   "cautionSource": "제조사 매뉴얼의 센서 관리 지침"
+  },
+  {
+   "id": "glucose-meter-battery-accuracy",
+   "claim": "배터리가 부족하면 센서 출력이 불안정해져 측정값의 정확도가 저하된다. 화면이 흐리거나 측정 결과가 일정하지 않으면 배터리 교체를 해야 한다",
+   "tier": "확실",
+   "evidence": "후기",
+   "source": "혈당측정기 정확도 및 유지보수 가이드",
+   "source_url": "https://synapse.koreamed.org/upload/synapsedata/pdfdata/0178jkd/jkd-16-38.pdf",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "혈당측정기",
+    "분류": "유지보수",
+    "시기": "전 연식",
+    "지역": "KR"
+   },
+   "caution": "배터리 부족이 의심되면 즉시 교체할 것. 저전압 상태에서 측정한 값은 신뢰할 수 없다.",
+   "cautionSource": "임상 연구 논문의 측정 오류 원인 분석"
+  },
+  {
+   "id": "glucose-meter-hand-hygiene",
+   "claim": "혈당 측정 시 손을 미지근한 물과 비누로 먼저 씻고, 알코올 소독을 할 때는 완전히 말린 후에 채혈해야 정확한 결과를 얻을 수 있다. 알코올이 남아 있으면 측정값에 영향을 준다",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "대한당뇨병학회 — 자가혈당측정 절차",
+   "source_url": "https://www.diabetes.or.kr/general/info/treat/treat_03.php?con=2",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "혈당측정기",
+    "분류": "사용법",
+    "시기": "전 연식",
+    "지역": "KR"
+   },
+   "caution": "손가락 끝이 아니라 손가락 옆면에서 채혈하면 통증이 적고, 부위를 매번 바꾸면 상처를 줄일 수 있다.",
+   "cautionSource": "대한당뇨병학회의 채혈 절차 안내"
+  },
+  {
+   "id": "glucose-meter-not-diagnostic",
+   "claim": "자가혈당측정기의 측정값은 혈당 추세를 확인하는 데 도움이 되지만, 의료 진단의 기준이 되지 않는다. 이상 수치가 반복되거나 증상이 있으면 반드시 의료진에게 확인받아야 한다",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "대한당뇨병학회 & 서울아산병원 당뇨병센터",
+   "source_url": "https://oph.amc.seoul.kr/asan/depts/dm/K/bbsDetail.do?menuId=5216&contentId=267983",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "자가혈당측정기 사용자",
+    "분류": "안전",
+    "시기": "전 연식",
+    "지역": "KR"
+   },
+   "caution": "저혈당(70 mg/dL 이하) 또는 고혈당(250 mg/dL 이상)이 의심되면 즉시 의료진 상담을 권할 것. 자가진단으로 약물 조정을 하지 말 것.",
+   "cautionSource": "의료 전문가 상담 권고 기준"
+  },
+  {
+   "id": "glucose-meter-normal-range",
+   "claim": "당뇨병이 없는 사람의 정상 혈당은 공복 시 100 mg/dL 미만, 임의 시간 140 mg/dL 미만이다. 당뇨병 환자의 조절 목표는 일반적으로 식전 80~130 mg/dL, 식후 2시간 180 mg/dL 미만이다",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "대한당뇨병학회 & 질병관리청 국가건강정보포털",
+   "source_url": "https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=5304",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "일반인 & 당뇨병 환자",
+    "분류": "의료정보",
+    "시기": "2026년",
+    "지역": "KR"
+   },
+   "caution": "개인별 목표는 나이, 건강 상태, 동반질환에 따라 다르므로 의료진과 상의하여 정하도록 권할 것.",
+   "cautionSource": "대한당뇨병학회 진료지침 및 질병관리청 건강정보"
+  }
+ ]
+}

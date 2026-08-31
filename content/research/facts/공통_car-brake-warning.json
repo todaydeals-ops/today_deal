@@ -1,0 +1,107 @@
+{
+  "topic": "브레이크 경고등 의미 및 긴급 대처",
+  "brand": "자동차 공통",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "brake-warning-light-meaning",
+      "claim": "브레이크 경고등은 계기판에 붉은색 원형 아이콘으로 표시되며, 브레이크 시스템에 이상이 있다는 신호이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/MX5/2026/ko_KR/warning_indicator_lights.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 자동차",
+        "분류": "브레이크 경고",
+        "시기": "현재",
+        "지역": "전세계"
+      }
+    },
+    {
+      "id": "brake-fluid-insufficient-cause",
+      "claim": "브레이크 경고등이 켜지는 가장 흔한 원인은 브레이크액이 부족하거나 파킹 브레이크(주차 브레이크)가 작동 중인 경우다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/MX5/2026/ko_KR/warning_indicator_lights.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 자동차",
+        "분류": "브레이크 진단",
+        "시기": "현재",
+        "지역": "전세계"
+      }
+    },
+    {
+      "id": "brake-fluid-loss-danger",
+      "claim": "브레이크 오일이 부족한 상태에서 계속 운전하면 브레이크 효과가 현저히 떨어져 급제동 상황에서 제동거리가 길어지거나 브레이크가 완전히 작동하지 않을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/MX5/2026/ko_KR/warning_indicator_lights.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 자동차",
+        "분류": "안전 위험",
+        "시기": "현재",
+        "지역": "전세계"
+      },
+      "caution": "이는 생명과 직결된 위험이므로 반드시 정차 후 정비소 방문이 필수다.",
+      "cautionSource": "현대 오너스 매뉴얼"
+    },
+    {
+      "id": "brake-warning-emergency-response",
+      "claim": "주행 중 브레이크 경고등이 켜진 경우, 브레이크 페달을 평상시보다 강하게 밟고, 엔진 브레이크를 걸어 속도를 감소시킨 후, 급제동하지 말고 서서히 정지해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/MX5/2026/ko_KR/warning_indicator_lights.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 자동차",
+        "분류": "긴급 대처",
+        "시기": "현재",
+        "지역": "전세계"
+      },
+      "caution": "파킹 브레이크를 천천히 작동시키면서 페달을 함께 밟아 속도를 줄인다.",
+      "cautionSource": "현대 오너스 매뉴얼"
+    },
+    {
+      "id": "brake-pad-wear-indicator",
+      "claim": "브레이크 패드의 마모는 브레이크 경고등이 점등되는 두 번째 주요 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/MX5/2026/ko_KR/warning_indicator_lights.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 자동차",
+        "분류": "패드 점검",
+        "시기": "현재",
+        "지역": "전세계"
+      },
+      "caution": "패드가 마모되면 정비소에서 패드를 교체해야 한다.",
+      "cautionSource": "제조사 정비 기준"
+    },
+    {
+      "id": "brake-warning-pre-drive-check",
+      "claim": "주행 전에 계기판의 브레이크 경고등이 꺼졌는지 반드시 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/MX5/2026/ko_KR/warning_indicator_lights.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 자동차",
+        "분류": "점검 습관",
+        "시기": "현재",
+        "지역": "전세계"
+      }
+    }
+  ]
+}

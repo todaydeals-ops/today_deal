@@ -1,0 +1,88 @@
+{
+  "topic": "근시 진행 방지와 루테인·지아잔틴·안토시아닌 영양제·메타분석 근거",
+  "brand": "알약연구소·눈 건강",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "myopia-progression-axial-elongation-mechanism",
+      "claim": "근시 진행은 눈의 축장(axial length) 신장으로 발생하며, 항산화 스트레스와 망막 신호 전달 이상이 축장 신장을 자극하는 기전에 포함된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Nutritional Supplementation for Myopia Prevention - Systematic Review",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41515122/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "소아·청소년",
+        "분류": "축장 신장 기전",
+        "시기": "진행 중",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "anthocyanin-myopia-prevention-nhanes-association",
+      "claim": "미국 국민건강영양조사(NHANES 2003~2006)에서 안토시아닌 섭취량이 높은 청소년의 근시 발생률이 유의하게 낮았으며, 특히 시아니딘, 페투니딘, 델피니딘이 관련이 있었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: The association between anthocyanin intake and myopia in adolescents",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/39618699/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "청소년(NHANES 표본)",
+        "분류": "안토시아닌 섭취",
+        "시기": "2003~2006",
+        "지역": "미국"
+      }
+    },
+    {
+      "id": "lutein-zeaxanthin-axial-elongation-reduction-meta-analysis",
+      "claim": "루테인·지아잔틴 보충 메타분석에서 청소년의 축장 신장이 대조군 대비 유의하게 감소했으며, 황반 색소 광학 밀도 증가와 시각 민감도 개선을 보였다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: The differential effects of lutein and zeaxanthin supplementation on myopia prevention",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41573009/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "청소년(메타분석)",
+        "분류": "축장 신장 감소량",
+        "시기": "다중 RCT 종합",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "myopia-nutrition-rct-modest-benefits-no-clinical-reduction",
+      "claim": "카로티노이드(루테인, 지아잔틴, 아스타잔틴)의 임상 효과는 MPOD 증가, 시각 피로 감소 등 제한적이며, 근시 진행 자체를 명확히 감소시키는 임상적 의미 있는 결과는 아직 없다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PubMed: Nutritional Supplementation for Myopia Prevention - Systematic Review (2024)",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41515122/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "근시 고위험 소아",
+        "분류": "임상적 유의성",
+        "시기": "2024년 리뷰",
+        "지역": "국제"
+      },
+      "caution": "더 크고 오래된 RCT가 필요하며, 현재는 선택적 보조 치료로만 고려해야 한다. 야외활동(> 2시간/일)과 굴절 이상 교정이 1차 근시 예방이다.",
+      "cautionSource": "PubMed systematic review author conclusion"
+    },
+    {
+      "id": "anthocyanin-asthenopia-mesopic-contrast-sensitivity",
+      "claim": "안토시아닌 추출물은 어두운 환경의 대비감도(mesopic contrast sensitivity)와 주관적 눈 피로(asthenopia)를 개선했으나, 근시 진행 억제 직접 증거는 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Plant bioactive compounds alleviate photoinduced retinal damage",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/37980835/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "컴퓨터 사용자·학생",
+        "분류": "시각 기능(대비감도, 눈 피로)",
+        "시기": "단기 임상시험",
+        "지역": "국제"
+      }
+    }
+  ]
+}

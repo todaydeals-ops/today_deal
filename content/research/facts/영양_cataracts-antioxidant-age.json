@@ -1,0 +1,88 @@
+{
+  "topic": "백내장·노화와 항산화제 보충(루테인·비타민CE)·RCT 근거·관찰 연구 차이",
+  "brand": "알약연구소·눈 건강",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "cataract-antioxidant-rct-no-evidence-prevention",
+      "claim": "Cochrane 체계적 리뷰(9개 RCT, 117,272명)에서 베타카로틴·비타민C·E 고용량 보충이 나이 관련 백내장 발생 또는 진행을 예방하지 못한다는 결론이 나왔다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Antioxidant vitamin supplementation for preventing age-related cataract",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/22696344/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "35세 이상 성인",
+        "분류": "백내장 발생·진행 예방",
+        "시기": "장기 RCT(평균 7년)",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "areds-trial-antioxidant-cataract-no-effect",
+      "claim": "AREDS 임상시험(비타민C, E, 베타카로틴 고용량)에서 7년 추적 결과, 대조군 대비 백내장 발생률이나 시력 손실에 차이가 없었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: AREDS report no. 9 - high-dose vitamins C, E, beta carotene",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/11594943/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "55~80세",
+        "분류": "백내장 및 시력",
+        "시기": "7년 추적",
+        "지역": "미국"
+      }
+    },
+    {
+      "id": "observational-study-lutein-zeaxanthin-cataract-inverse",
+      "claim": "관찰 연구에서는 비타민E, 알파카로틴, 루테인, 지아잔틴이 나이 관련 백내장과 음의 상관관계를 보였으며, 루테인이 후낭하 백내장 위험 감소와 특히 연관이 있었다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PubMed: Association of blood antioxidants and vitamins with age-related cataract",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/23842458/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "일반 인구",
+        "분류": "혈액 항산화제와 백내장",
+        "시기": "횡단·종단 조사",
+        "지역": "국제"
+      },
+      "caution": "RCT와 관찰 연구의 불일치 원인은 명확하지 않다. 관찰 연구에서는 건강한 식습관 등 혼동 변수 제어가 불완전할 수 있다.",
+      "cautionSource": "PubMed meta-analysis discussion"
+    },
+    {
+      "id": "lutein-supplement-visual-acuity-improvement-small",
+      "claim": "루테인 보충 임상시험(1건)에서 시각 예민도(visual acuity)와 눈부심 민감도(glare sensitivity)가 개선되었으나, 알파-토코페롤과 위약군에서는 시력 유지 또는 감소 경향을 보였다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PubMed: Plasma antioxidant vitamins and carotenoids and age-related cataract",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/11713067/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "백내장 또는 고위험층",
+        "분류": "시각 기능(시력, 눈부심)",
+        "시기": "단기 임상시험",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "cataract-prevention-dietary-approach-vs-supplement",
+      "claim": "관찰 연구 결과는 항산화제가 풍부한 음식(루테인·지아잔틴, n-3 지방산)이 백내장과 황반변성 예방에 유익할 수 있음을 시사하지만, 고용량 보충제 형태의 효과는 아직 미해결이다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PubMed: Multivitamin-multimineral supplements and eye disease",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/17209215/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "일반 성인·노인",
+        "분류": "식품 vs 보충제",
+        "시기": "현재",
+        "지역": "국제"
+      }
+    }
+  ]
+}

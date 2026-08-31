@@ -1,0 +1,101 @@
+{
+ "topic": "산소포화도측정기(맥박산소포화도계) 자가진단",
+ "brand": "공통",
+ "article": "예정",
+ "captured": "2026-09-01",
+ "reused_facts": [],
+ "declined_facts": [
+  {
+   "id": "pulse-oximetry-nail-polish-interference",
+   "claim": "펄스옥시미터는 광선을 투과시켜 측정하므로 짙은 색 메니큐어(검은색, 파란색, 초록색)는 광선 투과를 방해하여 측정을 불가능하게 만든다",
+   "was": "https://yuyuteijin.co.kr/blog/81afe0c5-5ea1-43eb-b796-e6526ff89b58/",
+   "reason": "출처 배제(건강기기 판매사)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "cold-hands-measurement-error",
+   "claim": "손이 차거나 말초순환이 약하면 손가락 끝의 혈류가 감소하여 맥박 신호를 제대로 감지하지 못하고 오류가 발생할 수 있다. 측정 전 손을 문질러 따뜻하게 한 후 측정해야 한다",
+   "was": "https://yuyuteijin.co.kr/blog/4108daf5-949a-49aa-a290-3118a17ef762/",
+   "reason": "출처 배제(건강기기 판매사)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "low-oxygen-saturation-symptoms",
+   "claim": "산소포화도 90% 이하가 지속되면 피로감, 집중력 저하, 호흡 불안정 같은 증상이 나타날 수 있다. 이 경우 즉시 의료진 상담이 필요하다",
+   "was": "https://news.hidoc.co.kr/news/articleView.html?idxno=17103",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  }
+ ],
+ "disputes": [],
+ "facts": [
+  {
+   "id": "oxygen-saturation-normal-range",
+   "claim": "건강한 사람의 산소포화도(SpO2) 정상값은 95~100%다. 94~90%는 경도 저산소증, 90% 이하는 심각한 저산소증으로 즉시 의료 도움이 필요하다",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "서울아산병원 — 맥박 산소 측정법",
+   "source_url": "https://www.amc.seoul.kr/asan/healthinfo/management/managementDetail.do?managementId=192",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "성인",
+    "분류": "의료정보",
+    "시기": "현재",
+    "지역": "KR"
+   },
+   "caution": "만성 폐질환이 있는 사람은 평소 수치가 88~92%일 수 있으니 자신의 기저 수치를 미리 파악해 둘 것. 이상이 의심되면 의료진에게 반드시 확인받아야 한다.",
+   "cautionSource": "의료 전문가 상담 가이드"
+  },
+  {
+   "id": "pulse-oximetry-movement-artifact",
+   "claim": "측정 중 손가락을 움직이면 오류가 발생하기 쉽다. 측정할 때는 손가락을 깊숙이 고정하고, 외부 밝은 빛을 차단하고 안정적인 호흡을 유지해야 한다",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "서울아산병원 & 유유테이진",
+   "source_url": "https://www.amc.seoul.kr/asan/healthinfo/management/managementDetail.do?managementId=192",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "산소포화도측정기 사용자",
+    "분류": "사용법",
+    "시기": "전 연식",
+    "지역": "KR"
+   },
+   "caution": "한 번의 측정으로 판단하지 말고, 2~3회 연속 측정 후 평균값을 참고하는 것이 정확하다.",
+   "cautionSource": "임상 측정법 가이드"
+  },
+  {
+   "id": "pulse-oximeter-sensor-maintenance",
+   "claim": "산소포화도측정기의 센서는 사용 후 부드러운 천으로 가볍게 닦아서 보관해야 한다. 장기간 사용하지 않을 때는 배터리를 분리하고 직사광선이 비치지 않는 곳에 보관한다",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "정부 공식 안내 & 제조사 가이드",
+   "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148900310",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "산소포화도측정기",
+    "분류": "유지보수",
+    "시기": "전 연식",
+    "지역": "KR"
+   },
+   "caution": "센서는 정밀 부품이므로 물에 담그거나 강하게 문질러서는 안 된다. 알코올 솜으로 가볍게 닦는 정도면 충분하다.",
+   "cautionSource": "제조사 매뉴얼 지침"
+  },
+  {
+   "id": "oximeter-reading-not-diagnostic",
+   "claim": "가정용 산소포화도측정기의 측정값은 경향을 파악하는 데 도움이 되지만 의료 진단의 기준이 되지 않는다. 이상 수치가 반복되면 반드시 의료진의 공식 검사를 받아야 한다",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "서울아산병원 & 의료 기관",
+   "source_url": "https://www.amc.seoul.kr/asan/healthinfo/management/managementDetail.do?managementId=192",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "산소포화도측정기 사용자",
+    "분류": "안전",
+    "시기": "현재",
+    "지역": "KR"
+   },
+   "caution": "측정기 오류인지 실제 저산소증인지 구분할 수 없으면, 의료 기관에서 동맥혈가스 검사를 받아 확인하도록 권할 것.",
+   "cautionSource": "임상 진단 기준"
+  }
+ ]
+}

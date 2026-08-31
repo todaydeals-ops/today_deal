@@ -1,0 +1,76 @@
+{
+ "topic": "온열패드 자가진단",
+ "brand": "공통",
+ "article": "예정",
+ "captured": "2026-09-01",
+ "reused_facts": [
+  "battery-swelling-stop-immediately"
+ ],
+ "declined_facts": [
+  {
+   "id": "low-temp-burn-definition",
+   "claim": "저온화상은 40~70도의 비교적 낮은 온도에서 피부가 반복적으로 접촉할 때 누적되는 열 손상을 말한다. 높은 온도의 급성 화상과 달리 천천히 진행되어 피부 괴사까지 발전할 수 있다",
+   "was": "https://news.hidoc.co.kr/news/articleView.html?idxno=57616",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "heating-pad-safety-features",
+   "claim": "온열패드의 기본 안전 기능은 과열 방지 센서와 자동 전원 차단이다. 이 기능이 없거나 고장 난 제품은 저온화상 위험이 크다",
+   "was": "https://www.medicaldaily.co.kr/post/21792",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "heating-pad-direct-skin-contact-danger",
+   "claim": "온열패드를 옷 위에 깔고 사용하거나 두꺼운 이불 덮개를 사용하면 저온화상 위험을 크게 줄일 수 있다. 직접 피부에 접촉하도록 설계된 제품이 아닌 이상 옷이나 보호층이 필수다",
+   "was": "https://www.k-health.com/news/articleView.html?idxno=57717",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "heating-pad-temperature-setting-consistency",
+   "claim": "정상 온열패드는 설정된 온도에서 일정하게 유지되며, 자동 온도 조절이 작동하지 않거나 온도가 계속 올라가는 경우는 온도 센서나 제어회로 고장 신호다",
+   "was": "https://www.medicaldaily.co.kr/post/21792",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  }
+ ],
+ "disputes": [],
+ "facts": [
+  {
+   "id": "heating-pad-water-damage-check",
+   "claim": "온열패드가 물에 젖었거나 습한 환경에 오래 노출된 경우 전선 손상, 누전, 과열 위험이 생긴다. 습기로 인한 손상은 시각적으로 보이지 않을 수 있으니 의심되면 사용을 중단해야 한다",
+   "tier": "확실",
+   "evidence": "후기",
+   "source": "전기 안전 가이드 및 제품 리뷰",
+   "source_url": "https://safety.kesco.or.kr/",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "온열패드",
+    "분류": "안전",
+    "시기": "전 연식",
+    "지역": "KR"
+   },
+   "caution": "물에 젖은 후 외관상 정상으로 보여도 내부 손상은 시간 경과 후 나타날 수 있다. 확실하지 않으면 가정용 멀티미터로 절연저항을 측정하거나 서비스센터에 맡길 것.",
+   "cautionSource": "전기안전공사 안내 원칙"
+  },
+  {
+   "id": "heating-pad-frayed-cord-danger",
+   "claim": "전선 피복이 벗겨지거나 손상된 온열패드는 감전이나 화재 위험이 있다. 전선을 테이프로 임시 보수하는 것은 위험하며 즉시 사용을 중단해야 한다",
+   "tier": "확실",
+   "evidence": "후기",
+   "source": "전기 안전 공사 가이드",
+   "source_url": "https://www.kesco.or.kr/",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "온열패드",
+    "분류": "안전",
+    "시기": "전 연식",
+    "지역": "KR"
+   },
+   "caution": "임시 보수로는 근본적인 전기 안전을 확보할 수 없다. 서비스센터 수리 또는 교체를 권할 것.",
+   "cautionSource": "전기안전공사의 임시 보수 위험성 강조"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+  "topic": "자동차 헤드라이트 점검 및 전구 교체",
+  "brand": "자동차 공통",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "headlight-brightness-inspection-standard",
+      "claim": "자동차 검사 기준에 따르면, 2등형 헤드라이트는 15,000칸델라 이상, 4등형 헤드라이트는 12,000칸델라 이상의 밝기가 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차관리법 시행규칙 제73조 별표 15",
+      "source_url": "https://law.go.kr/flDownload.do?flSeq=83196419&flNm=%5B%EB%B3%84%ED%91%9C+15%5D+%EC%9E%90%EB%8F%99%EC%B0%A8%EA%B2%80%EC%82%AC%EA%B8%B0%EC%A4%80",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 자동차",
+        "분류": "법정 검사 기준",
+        "시기": "현재",
+        "지역": "대한민국"
+      },
+      "caution": "차량 최고속도 25km/h 이하인 경우는 제외.",
+      "cautionSource": "자동차관리법 시행규칙"
+    },
+    {
+      "id": "headlight-optical-axis-alignment",
+      "claim": "헤드라이트의 광축이 10m 거리에서 좌측은 상단 10cm, 하단 30cm, 좌측 15cm, 우측 30cm 범위 내, 우측은 상단 10cm, 하단 30cm, 좌측 30cm, 우측 30cm 범위 내에 있어야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차관리법 시행규칙 제73조",
+      "source_url": "https://law.go.kr/flDownload.do?flSeq=148360683",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 자동차",
+        "분류": "등화장치 검사 기준",
+        "시기": "현재",
+        "지역": "대한민국"
+      }
+    },
+    {
+      "id": "headlight-bulb-replacement-procedure",
+      "claim": "현대 차량의 헤드라이트 전구를 교체할 때는 엔진을 끈 후 휠을 안쪽으로 돌려 펜더를 제거하고, 전구 덮개를 반시계 방향으로 돌려 빼 고정 스프링을 옆으로 밀어 절단하고, 커넥터를 분리한 후 새 전구로 교체한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.hyundai.com/docview/webhelp/Hyundai/0a0a3fce-8084-4812-b433-39b79b15ed46/maintenance_light_bulbs.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "현대 자동차",
+        "분류": "정기 정비",
+        "시기": "현재",
+        "지역": "전세계"
+      },
+      "caution": "반드시 손잡이 부분만 잡고 구면 부분을 손으로 만지지 않는다. 규격에 맞지 않는 전구 사용은 퓨즈 단선이나 화재 위험을 초래할 수 있다.",
+      "cautionSource": "현대 오너스 매뉴얼"
+    },
+    {
+      "id": "headlight-bulb-temperature-cooling-caution",
+      "claim": "헤드라이트 전구는 사용 중 매우 높은 온도에 도달하므로, 교체 시 설치된 전구의 온도가 충분히 식을 때까지 기다려야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/NX4/2025/ko_KR/maintenance_light_bulbs.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "현대 자동차",
+        "분류": "안전 주의",
+        "시기": "현재",
+        "지역": "전세계"
+      },
+      "caution": "화상 위험이 있으므로 충분히 식힐 때까지 기다린다.",
+      "cautionSource": "현대 오너스 매뉴얼"
+    },
+    {
+      "id": "headlight-replacement-service-recommendation",
+      "claim": "헤드라이트 전구 교체는 자동차 부품 손상이나 부상의 위험이 있으므로, 공식 서비스센터에서 정비를 받을 것을 권장한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.hyundai.com/docview/webhelp/Hyundai/0a0a3fce-8084-4812-b433-39b79b15ed46/maintenance_light_bulbs.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "현대 자동차",
+        "분류": "서비스 권장",
+        "시기": "현재",
+        "지역": "전세계"
+      }
+    }
+  ]
+}

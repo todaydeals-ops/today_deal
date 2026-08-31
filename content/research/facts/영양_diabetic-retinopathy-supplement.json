@@ -1,0 +1,90 @@
+{
+  "topic": "당뇨망막병증 예방·진행 완화와 안토시아닌·항산화제·산화스트레스 기전",
+  "brand": "알약연구소·눈 건강",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "diabetic-retinopathy-oxidative-stress-pathology",
+      "claim": "당뇨망막병증의 병리 기전에 산화스트레스가 중심적 역할을 하며, 고혈당이 활성산소를 과다 생성하여 망막 세포 손상을 초래한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Targeting oxidative stress in diabetic retinopathy",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40589740/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "당뇨병 환자",
+        "분류": "산화스트레스 기전",
+        "시기": "질병 진행 중",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "blueberry-anthocyanin-diabetic-retinopathy-mechanism",
+      "claim": "블루베리 안토시아닌 추출물은 고혈당 망막 세포의 활성산소 및 세포자살신호 증가를 회복시키고, 소포체 스트레스를 미RNA-182/OGG1 경로로 완화한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Blueberry anthocyanins extract attenuated diabetic retinopathy",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/35926946/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "당뇨병 모델(세포 기반)",
+        "분류": "분자 생물학 기전",
+        "시기": "시험관 연구",
+        "지역": "국제"
+      },
+      "caution": "세포 기반 연구이며 인체 임상시험은 더 필요하다.",
+      "cautionSource": "연구 설계 제한"
+    },
+    {
+      "id": "anthocyanin-diabetic-retinopathy-clinical-recommendation",
+      "claim": "미국 안과학회 가이드라인에서 당뇨병 1형·2형 환자의 망막병증 없음 또는 경증~중등도 비증식성 망막병증에 항산화제 보충을 IIB(선택적 보조) 수준으로 권고하고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Role of Oral Antioxidant Supplementation in Current Management of Diabetic Retinopathy",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/33924714/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "당뇨 망막병증 환자",
+        "분류": "임상 권고 수준",
+        "시기": "현재",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "mulberry-anthocyanin-retinal-oxidative-protection",
+      "claim": "뽕나무 추출물(안토시아닌 풍부)은 포도당 유도 망막 색소 상피세포 손상을 항산화 방어 증강으로 완화하는 것으로 보인다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PubMed: Mulberry Extract Mitigates Glucose-Induced Oxidative Injury",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12052892/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "망막 색소 상피(ARPE-19 세포)",
+        "분류": "산화스트레스 감소",
+        "시기": "세포 시험관",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "anthocyanin-research-future-direction-diabetic-retinopathy",
+      "claim": "안토시아닌의 당뇨망막병증 예방 가능성은 인정되지만, 인체 임상시험이 더 필요하며 현재 표준 치료(혈당 관리, 혈압 조절, 레이저·주사) 대체가 아닌 보조 역할로 고려되어야 한다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PubMed: Anthocyanins as a potential therapy for diabetic retinopathy",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/25139396/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "당뇨 망막병증 고위험군",
+        "분류": "임상 적용 시기",
+        "시기": "2015년 리뷰 이후",
+        "지역": "국제"
+      },
+      "caution": "혈당 관리 없이 영양제만으로 망막병증 진행을 멈출 수 없다.",
+      "cautionSource": "PubMed consensus position"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "topic": "노안(presbyopia)과 수정체 단백질·알파-크리스탈린·렌즈 경화·영양 역할",
+  "brand": "알약연구소·눈 건강",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "presbyopia-age-onset-universal",
+      "claim": "노안(presbyopia)은 모든 인간이 만 40~50세에 발생하는 생리적 현상이며, 수정체 경화로 인해 근거리 초점 조절 능력이 소실된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Presbyopia and the optical changes in the human crystalline lens",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/9536350/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "성인(40세 이상)",
+        "분류": "수정체 조절 능력",
+        "시기": "40~50세",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "alpha-crystallin-chaperone-protein-role",
+      "claim": "알파-크리스탈린(α-crystallin)은 수정체의 작은 열충격 단백질(heat shock protein)로, 나이가 들면서 농도가 감소하고 고분자량 응집체로 변환되어 렌즈 경화에 기여한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Presbyopia and heat - changes associated with aging of the human lens",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/17973972/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "노인(50세 이상)",
+        "분류": "수정체 단백질 화학",
+        "시기": "나이 증가에 따라",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "lens-stiffness-progressive-age-related",
+      "claim": "60세 이상의 수정체는 스트레칭에도 초점 변화 능력이 없으며, 핵의 경화가 현저하다. 이는 되돌릴 수 없는 단백질 응집 과정이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: In vivo measurement of age-related stiffening in the crystalline lens",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/21943436/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "노인(60세 이상)",
+        "분류": "수정체 경화도(Brillouin 광학 측정)",
+        "시기": "현재",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "presbyopia-nutrition-role-limited",
+      "claim": "노안은 수정체 단백질의 불가역적 응집 때문에 발생하므로, 루테인·항산화제·비타민 등 영양제로 기존 손상을 역전시킬 수 없다. 예방 역할만 기대할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Age-related changes in the kinetics of human lenses",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/27803872/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "노안 환자",
+        "분류": "영양제 치료 가능성",
+        "시기": "현재",
+        "지역": "국제"
+      },
+      "caution": "초기 단계(40~45세)에서의 영양 보충이 진행 속도를 늦출 수 있다는 가설이 있지만, 확증적 RCT는 부족하다.",
+      "cautionSource": "PubMed: Presbyopia - A New Potential Pharmacological Treatment (2014)"
+    },
+    {
+      "id": "glycation-protein-cross-linking-presbyopia",
+      "claim": "당화(glycation)로 인한 단백질 교차결합(protein cross-linking)이 노안을 악화시키며, 혈당 관리와 항산화 영양제가 진행 속도 완화에 이론적 근거가 있다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "PubMed: Glycation-mediated inter-protein cross-linking in presbyopia",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/32184356/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "당뇨 또는 대사증후군 있는 40~60세",
+        "분류": "고혈당과 렌즈 경화",
+        "시기": "만성 노출",
+        "지역": "국제"
+      }
+    }
+  ]
+}

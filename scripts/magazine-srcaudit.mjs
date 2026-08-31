@@ -92,6 +92,19 @@ const DENY = [
   // 시공·설비·자재 업체 — 자기 서비스를 팔려고 증상과 위험을 과장한다.
   // 2026-08-11 동파 해빙 팩트 8건 전부가 배관 시공업체(cpdrain) 하나에서 나왔다.
   // 해빙 온도·직화 금지 같은 안전 수치를 업체 글에서 가져오면 안 된다.
+  // ★자기 사이트를 출처로 쓰는 것은 순환 참조다. 전역 규약이 금지한다.
+  { re: /todaydeals.co.kr|goodsleep.todaydeals|pill.todaydeals|beauty.todaydeals|b4as.todaydeals/i, why: "자사 사이트(순환 참조)" },
+  // 의료기기·건강기기: 매체·비대면진료앱·Q&A 커뮤니티·기기 판매사.
+  // 헬스기기 배치에서 52건 중 34건이 여기서 나왔다(2026-09-01).
+  { re: /hidoc|doctornow|thebk.co.kr|medicaldaily|doctorsnews|k-health|ilyoweekly|asiae.co.kr|a-ha.io|yellowit|manuals.plus/i, why: "건강 매체·비대면진료앱·Q&A 커뮤니티" },
+  { re: /easyclaire|godson.co.kr|yuyuteijin|bakskincare|realrv|yewycharger|serenvia|chinaxiongwei/i, why: "건강기기 판매사" },
+
+  // 자동차: 문제의 해법을 파는 곳에서 그 문제의 기준을 가져오면 안 된다.
+  // 엔진오일 경고등 근거를 오일 브랜드(Kixx)에서, 실내 냄새 근거를 에어컨 세정제
+  // 판매사(3M)에서 가져온 배치가 있었다(2026-09-01). 제조사 오너스매뉴얼과
+  // 국토교통부·교통안전공단이 정본이다.
+  { re: /kixxman|3m.co.kr|smartcarview|egenauto|driveind|mycle.co.kr|evpost|radiokorea|carisyou|encar|bobaedream/i, why: "자동차 용품 판매사·자동차 매체" },
+
   { re: /cpdrain|edisonenc|powerzone\.co\.kr|lxzin|hyundailivart|kccworld|noroo|samhwa|설비|시공|철거/i, why: "시공·설비·자재 업체" },
 ];
 

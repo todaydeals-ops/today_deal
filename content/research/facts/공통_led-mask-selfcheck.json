@@ -1,0 +1,62 @@
+{
+ "topic": "LED 미용마스크 자가진단",
+ "brand": "공통",
+ "article": "예정",
+ "captured": "2026-09-01",
+ "reused_facts": [
+  "battery-swelling-stop-immediately"
+ ],
+ "declined_facts": [
+  {
+   "id": "led-mask-medical-vs-cosmetic-device",
+   "claim": "LED 마스크는 '주름 개선', '안면 리프팅', '기미·여드름 완화', '피부질환 치료' 등의 의료적 목적이면 식약처 허가를 받은 의료기기여야 하고, 미용 목적이면 미용기기로 분류된다. 2020년 식약처와 산업통상자원부가 구분 기준을 마련했다",
+   "was": "https://www.thebk.co.kr/news/articleView.html?idxno=190847",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "led-mask-eye-protection-mandatory",
+   "claim": "LED 마스크 사용 시 눈을 직시하면 안 되며, 마스크의 눈 보호 장치가 있어도 별도로 눈을 감거나 안대를 착용하는 것이 권장된다. 과거 안구 화상 부작용 사례가 있다",
+   "was": "https://www.doctorsnews.co.kr/news/articleView.html?idxno=131268",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "led-mask-blue-light-caution",
+   "claim": "청색광은 적색광보다 부작용 발생률이 높으며(5% 내외), 피부 건조증과 홍반을 유발할 수 있다. 민감한 피부라면 청색광 사용을 피하거나 시간을 줄여야 한다",
+   "was": "https://bakskincare.co.kr/led%EB%A7%88%EC%8A%A4%ED%81%AC-%ED%8C%8C%EC%9E%A5%EB%B3%84-%ED%9A%A8%EA%B3%BC-%EC%A0%81%EC%83%89%EA%B4%91%C2%B7%EC%B2%AD%EC%83%89%EA%B4%91%C2%B7%EA%B7%BC%EC%A0%81%EC%99%B8%EC%84%A0-%EA%B8%B0%EB%8A%A5/",
+   "reason": "출처 배제(건강기기 판매사)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "led-mask-heat-sensitivity-check",
+   "claim": "LED 마스크는 적외선 발산으로 인해 피부에 열감을 줄 수 있으며, 이로 인해 수분이 증발하여 건조증이 발생할 수 있다",
+   "was": "https://easyclaire.com/article/%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8-faq/3/42381/",
+   "reason": "출처 배제(건강기기 판매사)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "led-mask-sensitive-skin-start-low",
+   "claim": "민감한 피부는 LED 마스크 초기 사용 시 5~10분부터 시작하고, 피부 이상 반응(따끔거림, 발적, 가려움)이 나타나면 즉시 사용을 중단하고 의료진에게 상담해야 한다",
+   "was": "https://www.thebk.co.kr/news/articleView.html?idxno=190847",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "led-mask-daily-safety-limit",
+   "claim": "LED 마스크는 매일 사용하는 것보다 1주일에 2~3회, 1회 사용 시간은 10~20분 내외로 제한하는 것이 안전하다. 과다 사용은 광노화 현상을 유발할 수 있다",
+   "was": "https://easyclaire.com/article/%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8-faq/3/42375/",
+   "reason": "출처 배제(건강기기 판매사)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "led-mask-no-efficacy-guarantee",
+   "claim": "LED 마스크의 효능(주름 개선, 피부 톤 개선 등)은 개인차가 크며, 의료기기 허가를 받은 제품이라도 모든 사용자에게 효과를 보장하지 않는다",
+   "was": "https://ilyoweekly.co.kr/news/newsview.php?ncode=179569926061988",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  }
+ ],
+ "disputes": [],
+ "facts": []
+}

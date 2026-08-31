@@ -1,0 +1,16 @@
+{
+  "topic": "자동차 실내 냄새 원인 및 제거",
+  "brand": "자동차 공통",
+  "article": "폐기",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "interior-smell-topic-no-official-source",
+      "reason": "자동차 에어컨 실내 냄새 원인·제거 방법은 공식 제조사 매뉴얼에 체계적인 기술 정보가 없음. 에어컨 필터 교체·유지보수는 현대/기아 매뉴얼에 있으나, 에바포레이터 습기·곰팡이·고온 살균 기법은 부품 판매사(3M, kixxman) 또는 정비소 블로그에만 있음. 공식 출처 4건 이상 미확보로 폐기",
+      "tier": "없음"
+    }
+  ],
+  "disputes": [],
+  "facts": []
+}

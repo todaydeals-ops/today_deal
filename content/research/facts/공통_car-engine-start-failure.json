@@ -1,0 +1,107 @@
+{
+  "topic": "자동차 시동 안 걸림 원인 및 배터리 점프 대처",
+  "brand": "자동차 공통",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "battery-discharge-jump-start-safety",
+      "claim": "배터리가 방전되어 시동이 안 걸릴 때, 점프 스타트를 할 경우 다른 차량 배터리 (+) 단자 → 방전된 차량 배터리 (+) 단자 → 다른 차량 배터리 (-) 단자 → 방전된 차량의 금속 부분 순서로 연결해야 하며, 시작 후에는 역순으로 분리한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/TK1/2026/ko_KR/topics/t00895.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 기아 자동차",
+        "분류": "배터리 점프",
+        "시기": "현재",
+        "지역": "전세계"
+      },
+      "caution": "점프 케이블의 양 끝이 접촉하면 불꽃이 날 수 있으므로 주의. 엔진이 시작한 후 움직이는 부품 근처에서 케이블을 제거하지 않는다.",
+      "cautionSource": "기아 오너스 매뉴얼"
+    },
+    {
+      "id": "battery-frozen-or-low-fluid-explosion-risk",
+      "claim": "배터리가 얼어있거나 배터리액이 부족하면 점프 스타트 중 배터리가 터질 수 있는 위험이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.kia.com/docview/webhelp/Kia/0e395227-af39-47ae-b215-e95d15eff978/topics/t01127.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 기아 자동차",
+        "분류": "안전 주의",
+        "시기": "현재",
+        "지역": "전세계"
+      },
+      "caution": "동결된 배터리나 액이 부족한 배터리는 점프 스타트를 시도하지 말고 정비소에 문의한다.",
+      "cautionSource": "기아 오너스 매뉴얼"
+    },
+    {
+      "id": "hybrid-vehicle-12v-battery-damage-risk",
+      "claim": "하이브리드 차량을 점프 스타트 보조 전원으로 사용하면 그 차량의 12V 리튬 배터리가 손상될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/TK1/2026/ko_KR/topics/t00895.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "하이브리드 자동차 소유자",
+        "분류": "안전 제한",
+        "시기": "현재",
+        "지역": "전세계"
+      },
+      "caution": "점프 스타트는 일반 가솔린 차량만 보조 전원으로 사용한다.",
+      "cautionSource": "기아 오너스 매뉴얼"
+    },
+    {
+      "id": "hyundai-battery-discharge-jump-start",
+      "claim": "현대 차량의 배터리가 방전되었을 때, 점프 시작 모드로 진입하여 다른 12V 배터리를 사용해 엔진을 시동할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.hyundai.com/docview/webhelp/Hyundai/a49f26dd-0c15-4d36-be62-dc7012fa4cb0/id5fdde9f169f.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 현대 자동차",
+        "분류": "배터리 점프",
+        "시기": "현재",
+        "지역": "전세계"
+      }
+    },
+    {
+      "id": "dashboard-warning-indicator-battery-discharge",
+      "claim": "배터리가 방전되면 계기판의 경고등이 희미하게 깜빡이거나 아예 켜지지 않으므로, 이를 통해 배터리 방전을 판단할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제조사 기술 가이드",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/MX5/2026/ko_KR/warning_indicator_lights.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 자동차",
+        "분류": "진단",
+        "시기": "현재",
+        "지역": "전세계"
+      }
+    },
+    {
+      "id": "keep-engine-running-after-jump-start",
+      "claim": "점프 스타트 후 엔진이 시작되면 배터리를 재충전하기 위해 몇 분간 엔진을 계속 가동해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/TK1/2026/ko_KR/topics/t00895.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 자동차",
+        "분류": "배터리 재충전",
+        "시기": "현재",
+        "지역": "전세계"
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "topic": "자동차 와이퍼 소음 원인 및 유지보수",
+  "brand": "자동차 공통",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "wiper-blade-inspection-cleaning",
+      "claim": "와이퍼 블레이드가 윈드스크린을 제대로 닦지 못하면 깨끗한 물과 깨끗한 천으로 유리와 블레이드 고무 표면을 청소해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/TK1/2026/ko_KR/topics/t00948.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 기아 자동차",
+        "분류": "와이퍼 관리",
+        "시기": "현재",
+        "지역": "전세계"
+      }
+    },
+    {
+      "id": "wiper-blade-replacement-procedure",
+      "claim": "와이퍼 블레이드를 교체할 때, 새 블레이드의 가운데 부분을 와이퍼 암의 가운데 홈에 '딸깍' 소리가 날 때까지 확실히 끼워준 후, 블레이드를 살짝 당겨 고정되었는지 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/MQ4/2026/ko_KR/topics/chapter8_15_2.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 기아 자동차",
+        "분류": "와이퍼 교체",
+        "시기": "현재",
+        "지역": "전세계"
+      },
+      "caution": "교체 후 암을 내려서 가동을 확인한다.",
+      "cautionSource": "기아 오너스 매뉴얼"
+    },
+    {
+      "id": "wiper-blade-hardening-soap-water",
+      "claim": "와이퍼 블레이드를 청소할 때 비누물이나 합성세제를 사용하면 블레이드 고무가 딱딱해지거나 마찰 진동과 소음이 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/TK1/2026/ko_KR/topics/t00948.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 기아 자동차",
+        "분류": "와이퍼 관리",
+        "시기": "현재",
+        "지역": "전세계"
+      },
+      "caution": "유리 청소 시 깨끗한 물만 사용하거나 전문 유리 클리너를 쓴다.",
+      "cautionSource": "기아 오너스 매뉴얼"
+    },
+    {
+      "id": "wiper-blade-film-removal",
+      "claim": "윈드스크린에 유막, 왁스, 오일이 쌓이면 와이퍼 블레이드가 제 역할을 하지 못한다. 정기적으로 유막 제거제를 사용해 유리를 청소하면 와이퍼 수명이 길어지고 소음 재발을 방지할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 공식 오너스 매뉴얼",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/TK1/2026/ko_KR/topics/t00948.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 자동차",
+        "분류": "소음 예방",
+        "시기": "현재",
+        "지역": "전세계"
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "topic": "눈 떨림(근시토피아)과 마그네슘 결핍·신경근 흥분성·치료 근거",
+  "brand": "알약연구소·눈 건강",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "eye-twitching-myokymia-definition-prevalence",
+      "claim": "눈 떨림(eyelid myokymia)은 안검의 작은 근육에서 발생하는 비자발적 수축으로, 일반적으로 일측성이며 하안검에서 더 자주 발생한다. 원인은 스트레스, 피로, 카페인이 주요 원인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Eyelid Myokymia - A Benign Condition",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/32809430/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "일반 성인",
+        "분류": "안검 근육 수축",
+        "시기": "일시적(수시간~수주)",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "magnesium-neuromuscular-excitability-mechanism",
+      "claim": "마그네슘은 신경과 근육 사이의 신호 전달을 조절하는 칼슘 채널 차단제로 작용하며, 결핍 시 신경근 흥분성이 증가하여 근육 수축을 유발할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/ODS: Magnesium - Health Professional Fact Sheet",
+      "source_url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "모든 개인",
+        "분류": "마그네슘 생리",
+        "시기": "현재",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "magnesium-deficiency-eye-twitching-association-weak",
+      "claim": "2024년 최신 연구에서 안검 떨림 환자와 대조군의 혈중 마그네슘, 칼슘, 나트륨, 칼륨 수준에는 유의미한 차이가 없었으며, 떨림의 직접적인 원인이 아닐 가능성이 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Association Between Eyelid Twitching and Digital Screen Time",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/39282492/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "성인(안검 떨림 호소자)",
+        "분류": "혈중 전해질 수준",
+        "시기": "2024년",
+        "지역": "국제"
+      },
+      "caution": "개별 마그네슘 결핍이 아닌 만성 전해질 불균형이 복합적으로 작용할 가능성은 여전하다.",
+      "cautionSource": "PubMed meta-analysis: Neurotic, neuromuscular and autonomic nervous form of magnesium imbalance"
+    },
+    {
+      "id": "eye-twitching-stress-caffeine-primary-cause",
+      "claim": "안검 떨림의 주요 원인은 스트레스, 피로, 카페인 과다 섭취이며, 마그네슘 보충보다 생활 습관 개선(카페인 감소, 수면)이 먼저 권장된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed: Chronic Myokymia Limited to the Eyelid",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/15662242/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "안검 떨림 환자",
+        "분류": "원인 순서",
+        "시기": "현재",
+        "지역": "국제"
+      }
+    },
+    {
+      "id": "magnesium-rda-adult-daily-requirement",
+      "claim": "성인 남성(31세 이상)의 마그네슘 권장 섭취량은 400~420 mg/일, 여성은 310~320 mg/일이며, 결핍(혈중 < 1.7 mg/dL)은 대부분의 건강한 성인에게 드물다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NIH/ODS: Magnesium - Fact Sheet for Consumers",
+      "source_url": "https://ods.od.nih.gov/factsheets/Magnesium-Consumer/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "성인(31세 이상)",
+        "분류": "일일 권장 섭취량(RDA)",
+        "시기": "현재",
+        "지역": "미국·국제"
+      }
+    }
+  ]
+}

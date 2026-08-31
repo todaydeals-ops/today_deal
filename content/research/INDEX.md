@@ -3,7 +3,7 @@
 > 자동 생성 파일. 직접 수정하지 마세요. `node scripts/research-index.mjs`로 갱신합니다.
 > **기계적 대조 기준은 이 파일이 아니라 `facts/*.json` 원본입니다.**
 
-생성: 2026-08-11 · 조사 515건 · 팩트 4961개
+생성: 2026-08-31 · 조사 537건 · 팩트 5078개
 
 ## ⚠️ 무결성 경고
 
@@ -72,7 +72,7 @@
 - weak-sources.json → declined_facts
 - weak-sources.json → disputes
 
-### scope 구조 문제 (층위 혼동 위험) (2808)
+### scope 구조 문제 (층위 혼동 위험) (3042)
 
 - caffeine-phosphodiesterase-inhibitor-vasoconstrictive-mechanism: scope.brand 누락
 - caffeine-phosphodiesterase-inhibitor-vasoconstrictive-mechanism: scope.category 누락
@@ -104,18 +104,24 @@
 - ketoconazole-shampoo-1-percent-vs-2-percent-indication-concentration: scope.category 누락
 - ketoconazole-frequency-every-3-4-days-vs-3-times-per-week: scope.brand 누락
 - ketoconazole-frequency-every-3-4-days-vs-3-times-per-week: scope.category 누락
-- …외 2778건
+- …외 3012건
 
 ### tier/evidence 값 오류 (2)
 
 - kojic-acid-korea-regulatory-status-unconfirmed: evidence="웹검색"
 - azelaic-acid-regulatory-status-korea-uncertain: evidence="웹검색"
 
+## 🔴 미해결 분쟁 (총괄 판정 필요)
+
+| 신고자 | 대상 팩트 | 문제 | 근거 |
+|---|---|---|---|
+| 실내 결로 발생 원인과 환기·단열을 통한 예방 | `ventilation-reduces-indoor-humidity` | 출처 URL(blog.energy.or.kr)이 DNS NXDOMAIN 이다. 한국에너지공단이 블로그 서브도메인을 없앴다. 하루 10~30분 환기 권장 수치의 근거가 사라졌다. | dns.google/resolve Status 3 (NXDOMAIN) · www.energy.or.kr 는 정상(200) · 2026-08-11 확인 |
+
 ## 통계
 
-- 확신도: 확실 4591 · 논쟁 259 · 확인실패 111
-- 근거: 공식 4250 · 후기 704 · 실측 5
-- **순차 대안 톤 대상: 817개** (tier=논쟁 또는 evidence=후기 → "먼저 해보고 안 되면" 서술 필수)
+- 확신도: 확실 4697 · 논쟁 271 · 확인실패 110
+- 근거: 공식 4344 · 후기 727 · 실측 5
+- **순차 대안 톤 대상: 850개** (tier=논쟁 또는 evidence=후기 → "먼저 해보고 안 되면" 서술 필수)
 
 ## HP
 
@@ -2054,6 +2060,18 @@
 | `fabric-softener-overdose-same-effect` | 확실 | 공식 | 섬유유연제 과다 투입도 세제 과다와 동일한 메커니즘으로 문제를 일으킨다. | 공통 / 세탁기 / 드럼·통돌이 / 전체 / KR |
 | `periodic-drum-cleaning-recommendation` | 확실 | 공식 | 세제 및 섬유유연제 과다 사용으로 인한 잔류 물질 축적을 방지하기 위해 주기적으로 세탁조 통세척 코스를 실행해야 한다. | 공통 / 세탁기 / 드럼·통돌이 / 전체 / KR |
 
+### LED 미용마스크 자가진단 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `led-mask-medical-vs-cosmetic-device` | 확실 | 공식 | LED 마스크는 '주름 개선', '안면 리프팅', '기미·여드름 완화', '피부질환 치료' 등의 의료적 목적이면 식약처 허가를 받은 의료기기여야 하고, 미용 목적이면 미용기기로 분류된다. 2020년 식약처와 산업통상자원부가 구분 기준을 마련했다 |  |
+| `led-mask-eye-protection-mandatory` | 확실 | 공식 | LED 마스크 사용 시 눈을 직시하면 안 되며, 마스크의 눈 보호 장치가 있어도 별도로 눈을 감거나 안대를 착용하는 것이 권장된다. 과거 안구 화상 부작용 사례가 있다 |  |
+| `led-mask-blue-light-caution` | 확실 🔶 | 후기 | 청색광은 적색광보다 부작용 발생률이 높으며(5% 내외), 피부 건조증과 홍반을 유발할 수 있다. 민감한 피부라면 청색광 사용을 피하거나 시간을 줄여야 한다 |  |
+| `led-mask-heat-sensitivity-check` | 확실 🔶 | 후기 | LED 마스크는 적외선 발산으로 인해 피부에 열감을 줄 수 있으며, 이로 인해 수분이 증발하여 건조증이 발생할 수 있다 |  |
+| `led-mask-sensitive-skin-start-low` | 확실 | 공식 | 민감한 피부는 LED 마스크 초기 사용 시 5~10분부터 시작하고, 피부 이상 반응(따끔거림, 발적, 가려움)이 나타나면 즉시 사용을 중단하고 의료진에게 상담해야 한다 |  |
+| `led-mask-daily-safety-limit` | 확실 | 공식 | LED 마스크는 매일 사용하는 것보다 1주일에 2~3회, 1회 사용 시간은 10~20분 내외로 제한하는 것이 안전하다. 과다 사용은 광노화 현상을 유발할 수 있다 |  |
+| `led-mask-no-efficacy-guarantee` | 확실 🔶 | 후기 | LED 마스크의 효능(주름 개선, 피부 톤 개선 등)은 개인차가 크며, 의료기기 허가를 받은 제품이라도 모든 사용자에게 효과를 보장하지 않는다 |  |
+
 ### 안마의자 자가점검·자가진단 <sub>2026-07-21 · 예정</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -3680,6 +3698,92 @@
 | `wireless-frequency-band-interference-wifi-microwave` | 확실 🔶 | 후기 | 무선 키보드·마우스(2.4GHz)가 간헐적으로 끊기면 Wi-Fi, 블루투스 스피커, 전자레인지, 무선 CCTV 등 같은 2.4GHz 대역을 사용하는 다른 기기가 주변에 있을 수 있다. 이 경우 무선 채널을 변경하거나 간섭원에서 기기를 멀리 배치한다. | 공통 / 무선 입력기기 / 2.4GHz RF 동글·블루투스 / 현행 / 글로벌 |
 | `wireless-dongle-receiver-firmware-update-availability` | 확인실패 🔶 | 후기 | 제조사에서 무선 동글(리시버)의 펌웨어 업데이트를 제공하는 경우, 제품 공식 웹사이트의 지원 페이지에서 다운로드해 설치하면 연결 안정성이 개선될 수 있다. | 공통 / 무선 입력기기 / USB RF 동글 (2.4GHz) / 현행 / 글로벌 |
 
+### 공기압 마사지기(다리 압박 부츠) 자가진단 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `pneumatic-compression-medical-device` | 확실 | 공식 | 공기압 마사지기는 의료기기로 분류되며, 식약처 허가를 받은 제품인지 구입 전에 반드시 확인해야 한다 |  |
+| `pneumatic-compression-dvt-contraindication` | 확실 | 공식 | 심부정맥혈전증이나 심부전 등 심혈관 질환이 있는 경우, 공기압 마사지기 사용 전에 반드시 의사 상담이 필요하다. 금기된 상태에서 사용하면 혈전 이동이나 증상 악화 위험이 있다 |  |
+| `pneumatic-compression-varicose-vein-caution` | 확실 | 공식 | 중증 정맥류나 급성 정맥류가 있는 경우 공기압 마사지기 사용 전에 의료진 상담이 필요하다. 정맥류가 악화되거나 혈전 위험이 증가할 수 있다 |  |
+| `pneumatic-compression-skin-damage-contraindication` | 확실 | 공식 | 피부에 상처, 염증, 감염이 있는 부위에는 공기압 마사지기를 사용하면 안 된다. 공기 압박이 상처를 악화시킬 수 있다 |  |
+| `pneumatic-compression-pain-stop-signal` | 확실 | 공식 | 사용 중 다리가 심하게 아프다면 굳은 근육과 근막이 더 긴장되고 염증까지 생길 수 있으므로 즉시 사용을 중단해야 한다. 비골신경이 자극되어 신경 손상까지 올 수 있다 |  |
+| `pneumatic-compression-swelling-paradox` | 확실 🔶 | 후기 | 처음에는 시원했지만 나중에 다리 부종이 더 심해진 경우, 그 마사지기는 즉시 중단해야 한다. 개인의 혈액순환 상태에 맞지 않을 수 있다 |  |
+| `pneumatic-compression-skin-redness-observation` | 확실 | 공식 | 사용 후 피부가 빨간색으로 변한 경우, 발적이 48시간 이상 지속되거나 추가로 통증, 부종, 열감이 나타나면 피부과 진료를 받아야 한다 |  |
+| `pneumatic-compression-daily-time-limit` | 확실 🔶 | 후기 | 공기압 마사지기는 하루에 20분 이상 사용하면 과도하게 혈액순환을 자극하여 피로나 역효과를 유발할 수 있다 |  |
+
+### 두피 마사지기 자가진단 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `scalp-massager-vibration-weakness` | 확실 🔶 | 후기 | 두피 마사지기의 진동이 약해지거나 불규칙해지면 배터리 부족이거나 구동 모터가 약화된 신호다. 충전을 해도 호전되지 않으면 모터 수명이 다한 것이다 |  |
+| `scalp-massager-battery-drain` | 확실 🔶 | 후기 | 두피 마사지기를 충전해도 1분 이내에 꺼진다면 배터리가 제대로 작동하지 않거나 배터리 접점에 문제가 있는 신호다. 새로운 배터리 구입이나 교체가 필요하다 |  |
+| `scalp-massager-overuse-damage` | 확실 | 공식 | 두피 마사지기를 너무 세게 또는 오래 사용하면 두피가 손상될 수 있다. 1회 사용 시간은 2~10분이 적당하며, 10분 이상 장시간 사용하면 건조증이나 염증의 원인이 된다 |  |
+| `scalp-damage-warning-signs` | 확실 | 공식 | 두피 마사지 후 머리카락 사이사이 피부를 들춰봤을 때 불긋불긋한 홍반이 있거나, 그 위로 각질이 일어나거나, 기름기 있는 노르스름한 비늘이 발생하며, 가려움증이 동반되면 두피 손상 신호다 |  |
+| `scalp-damage-recovery-time` | 확실 | 공식 | 두피 마사지로 손상된 두피는 자극을 중단하면 자연회복되지만, 회복 기간은 손상 정도에 따라 개인차가 있으며 일반적으로 몇 주에서 몇 달이 걸릴 수 있다 |  |
+| `scalp-massager-waterproof-check` | 확실 🔶 | 후기 | 샤워할 때 두피 마사지기를 사용할 계획이라면 반드시 방수 기능이 있는지 확인해야 한다. 방수 기능이 없으면 물 침입으로 감전이나 고장 위험이 있다 |  |
+| `scalp-massager-charger-fault` | 확실 🔶 | 후기 | 충전기가 제대로 작동하지 않으면 즉시 교체해야 한다. 결함 있는 충전기는 감전이나 기기 손상을 유발할 수 있다 |  |
+| `scalp-massager-head-maintenance` | 확실 🔶 | 후기 | 두피 마사지기 헤드에 이물질이 쌓이면 진동이 불규칙해질 수 있다. 사용 후 극세사 브러시나 부드러운 천으로 헤드를 가볍게 닦아 청소해야 한다 |  |
+
+### 산소포화도측정기(맥박산소포화도계) 자가진단 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `oxygen-saturation-normal-range` | 확실 | 공식 | 건강한 사람의 산소포화도(SpO2) 정상값은 95~100%다. 94~90%는 경도 저산소증, 90% 이하는 심각한 저산소증으로 즉시 의료 도움이 필요하다 |  |
+| `pulse-oximetry-nail-polish-interference` | 확실 🔶 | 후기 | 펄스옥시미터는 광선을 투과시켜 측정하므로 짙은 색 메니큐어(검은색, 파란색, 초록색)는 광선 투과를 방해하여 측정을 불가능하게 만든다 |  |
+| `pulse-oximetry-movement-artifact` | 확실 | 공식 | 측정 중 손가락을 움직이면 오류가 발생하기 쉽다. 측정할 때는 손가락을 깊숙이 고정하고, 외부 밝은 빛을 차단하고 안정적인 호흡을 유지해야 한다 |  |
+| `cold-hands-measurement-error` | 확실 🔶 | 후기 | 손이 차거나 말초순환이 약하면 손가락 끝의 혈류가 감소하여 맥박 신호를 제대로 감지하지 못하고 오류가 발생할 수 있다. 측정 전 손을 문질러 따뜻하게 한 후 측정해야 한다 |  |
+| `low-oxygen-saturation-symptoms` | 확실 | 공식 | 산소포화도 90% 이하가 지속되면 피로감, 집중력 저하, 호흡 불안정 같은 증상이 나타날 수 있다. 이 경우 즉시 의료진 상담이 필요하다 |  |
+| `pulse-oximeter-sensor-maintenance` | 확실 | 공식 | 산소포화도측정기의 센서는 사용 후 부드러운 천으로 가볍게 닦아서 보관해야 한다. 장기간 사용하지 않을 때는 배터리를 분리하고 직사광선이 비치지 않는 곳에 보관한다 |  |
+| `oximeter-reading-not-diagnostic` | 확실 | 공식 | 가정용 산소포화도측정기의 측정값은 경향을 파악하는 데 도움이 되지만 의료 진단의 기준이 되지 않는다. 이상 수치가 반복되면 반드시 의료진의 공식 검사를 받아야 한다 |  |
+
+### 온열패드 자가진단 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `low-temp-burn-definition` | 확실 🔶 | 후기 | 저온화상은 40~70도의 비교적 낮은 온도에서 피부가 반복적으로 접촉할 때 누적되는 열 손상을 말한다. 높은 온도의 급성 화상과 달리 천천히 진행되어 피부 괴사까지 발전할 수 있다 |  |
+| `heating-pad-safety-features` | 확실 🔶 | 후기 | 온열패드의 기본 안전 기능은 과열 방지 센서와 자동 전원 차단이다. 이 기능이 없거나 고장 난 제품은 저온화상 위험이 크다 |  |
+| `heating-pad-direct-skin-contact-danger` | 확실 🔶 | 후기 | 온열패드를 옷 위에 깔고 사용하거나 두꺼운 이불 덮개를 사용하면 저온화상 위험을 크게 줄일 수 있다. 직접 피부에 접촉하도록 설계된 제품이 아닌 이상 옷이나 보호층이 필수다 |  |
+| `heating-pad-water-damage-check` | 확실 🔶 | 후기 | 온열패드가 물에 젖었거나 습한 환경에 오래 노출된 경우 전선 손상, 누전, 과열 위험이 생긴다. 습기로 인한 손상은 시각적으로 보이지 않을 수 있으니 의심되면 사용을 중단해야 한다 |  |
+| `heating-pad-frayed-cord-danger` | 확실 🔶 | 후기 | 전선 피복이 벗겨지거나 손상된 온열패드는 감전이나 화재 위험이 있다. 전선을 테이프로 임시 보수하는 것은 위험하며 즉시 사용을 중단해야 한다 |  |
+| `heating-pad-temperature-setting-consistency` | 확실 🔶 | 후기 | 정상 온열패드는 설정된 온도에서 일정하게 유지되며, 자동 온도 조절이 작동하지 않거나 온도가 계속 올라가는 경우는 온도 센서나 제어회로 고장 신호다 |  |
+
+### 저주파자극기(TENS/EMS) 자가진단 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `low-freq-medical-device-classification` | 확실 | 공식 | 저주파자극기는 의료기기로서 식약처의 허가를 받아야 하며, 2017년 가이드라인에 따라 기술문서 요건이 정해져 있다 |  |
+| `low-freq-pacemaker-contraindication` | 확실 | 공식 | 심박조율기나 제세동기 같은 임플란트 전자기기가 있는 사람은 저주파자극기를 절대 사용하면 안 된다. 전기 자극이 기기의 동작을 방해할 수 있다 |  |
+| `low-freq-pregnancy-contraindication` | 확실 | 공식 | 임신 중이거나 임신 가능성이 있는 경우 저주파자극기를 사용하면 안 된다. 복부와 골반 부위에 전기 자극이 태아에 영향을 줄 수 있다 |  |
+| `low-freq-wound-contraindication` | 확실 | 공식 | 상처, 습진, 감염, 심한 피부 자극이 있는 부위에는 저주파자극기를 사용하면 안 된다. 전기 자극이 상처를 악화시키거나 감염을 확산시킬 수 있다 |  |
+| `low-freq-sensory-neuropathy-caution` | 확실 | 공식 | 당뇨병 환자나 감각 이상이 있는 사람은 저주파자극기 사용 시 감각 신경의 손상을 제대로 인지하지 못하여 화상이나 피부 손상이 발생할 수 있다. 반드시 의료진과 상담하고 강도를 낮춰 사용해야 한다 |  |
+| `low-freq-electrode-contact-check` | 확실 🔶 | 후기 | 젤 패드가 피부에 고르게 밀착되지 않으면 접촉 부위가 따갑거나 화상을 입을 수 있다. 손상되거나 젤이 마른 패드는 즉시 교체해야 한다 |  |
+| `low-freq-warning-signs` | 확실 | 공식 | 사용 중 붓기, 열감, 멍, 저림, 통증 같은 이상 신호가 나타나면 저주파 자극보다 먼저 원인을 파악해야 한다. 이러한 증상은 심각한 질환의 신호일 수 있다 |  |
+
+### 전동칫솔 충전대(충전기) 자가진단 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `charger-water-contamination-danger` | 확실 | 공식 | 전동칫솔 충전기가 물에 젖으면 단락, 감전, 화재 위험이 생긴다. 젖은 것을 발견한 즉시 전원에서 분리해야 한다 |  |
+| `charging-port-water-detection` | 확실 | 공식 | 충전 단자에 물기가 있으면 기기가 물 침입을 감지하여 자동으로 충전을 차단한다. 단자가 마를 때까지 기다린 후 다시 충전을 시도해야 한다 |  |
+| `charging-port-corrosion` | 확실 | 공식 | 충전 접점이 산화되거나 오염되면 접촉 불량으로 충전이 불규칙해지거나 안 될 수 있다. 부드러운 극세사 천이나 알코올 솜으로 접점을 살짝 닦아 청소해야 한다 |  |
+| `charging-base-alignment-check` | 확실 | 공식 | 전동칫솔이 충전 베이스에 제대로 끼워지지 않으면 접촉 불량으로 충전이 안 될 수 있다. 칫솔 하단의 접점이 베이스의 접점과 정확히 맞는지 확인해야 한다 |  |
+| `toothbrush-battery-charge-time` | 확실 | 공식 | 전동칫솔이 충전 후 사용 시간이 점점 짧아지거나, 하루에 두 번 2분간 양치하는 기준으로 최소 2~3주 이상 지속되지 않으면 배터리 수명이 다한 신호다 |  |
+| `toothbrush-battery-lifespan` | 확실 🔶 | 후기 | 전동칫솔의 배터리는 대개 1~2년 주기로 교체하는 것이 권장된다. 리튬이온 배터리는 2~4년, 니켈수소 배터리는 1~2년 정도 사용할 수 있다 |  |
+| `outlet-verification-first-step` | 확실 | 공식 | 전동칫솔이 충전이 안 되면 먼저 콘센트가 정상 작동하는지 다른 전자기기(스마탠드 등)로 확인해야 한다. 콘센트 문제인 경우가 많다 |  |
+| `charger-adapter-damage-check` | 확실 | 공식 | 충전 어댑터의 외관이 손상되거나 단자가 구부러진 경우 즉시 교체해야 한다. 손상된 어댑터는 감전이나 기기 손상 위험이 있다 |  |
+
+### 혈당측정기 자가진단 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `glucose-meter-is-medical-device` | 확실 | 공식 | 혈당측정기는 의료기기이며, 국내 개인용 혈당측정 시스템은 식약처 허가를 받아야 하고, 부작용이 발생하면 한국의료기기안전정보원(080-080-4183)에 신고할 수 있다 |  |
+| `glucose-meter-code-strip-matching` | 확실 | 공식 | 혈당측정기는 시험지의 코드 번호와 기기의 코드 번호가 일치해야 정확한 측정이 가능하다. 코드가 맞지 않으면 측정값이 크게 오차가 날 수 있다 |  |
+| `glucose-meter-sensor-contamination` | 확실 | 공식 | 측정기의 센서 렌즈에 먼지가 쌓이면 혈액 감지 효율이 떨어져 오류가 잦아진다. 부드러운 천이나 면봉에 알코올을 살짝 묻혀 주기적으로 닦아야 한다 |  |
+| `glucose-meter-battery-accuracy` | 확실 🔶 | 후기 | 배터리가 부족하면 센서 출력이 불안정해져 측정값의 정확도가 저하된다. 화면이 흐리거나 측정 결과가 일정하지 않으면 배터리 교체를 해야 한다 |  |
+| `glucose-meter-hand-hygiene` | 확실 | 공식 | 혈당 측정 시 손을 미지근한 물과 비누로 먼저 씻고, 알코올 소독을 할 때는 완전히 말린 후에 채혈해야 정확한 결과를 얻을 수 있다. 알코올이 남아 있으면 측정값에 영향을 준다 |  |
+| `glucose-meter-not-diagnostic` | 확실 | 공식 | 자가혈당측정기의 측정값은 혈당 추세를 확인하는 데 도움이 되지만, 의료 진단의 기준이 되지 않는다. 이상 수치가 반복되거나 증상이 있으면 반드시 의료진에게 확인받아야 한다 |  |
+| `glucose-meter-normal-range` | 확실 | 공식 | 당뇨병이 없는 사람의 정상 혈당은 공복 시 100 mg/dL 미만, 임의 시간 140 mg/dL 미만이다. 당뇨병 환자의 조절 목표는 일반적으로 식전 80~130 mg/dL, 식후 2시간 180 mg/dL 미만이다 |  |
+
 ### ADHD 아동의 수면 문제, 양방향 관계, 약물 영향 <sub>2026-08-04 · adhd-sleep-children</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -4416,8 +4520,6 @@ _(팩트 없음)_
 | id | 확신도 | 근거 | claim | 적용 범위 |
 |---|---|---|---|---|
 | `vitamin-d-deficiency-muscle-weakness-pain-fatigue-bone-pain` | 확실 | 공식 | 비타민D 결핍의 주요 신증상은 근육 약화, 근육통, 뼈 통증, 극심한 피로이며, 휴식으로 개선되지 않는 만성 피로감이 특징이다. |  |
-| `vitamin-d-deficiency-mood-depression-anxiety-mental-health` | 확실 | 공식 | 비타민D 결핍은 기분 변화, 우울증, 불안감과 연관되며, 신경전달물질(세로토닌, 도파민)의 조절에 비타민D가 역할을 한다. |  |
-| `vitamin-d-deficiency-children-rickets-bone-deformity-growth-abnormality` | 확실 | 공식 | 소아에서 심각한 비타민D 결핍은 구루병(rickets)을 초래하며, 뼈가 휘거나 구부러지는 골격 변형, 성장 이상을 나타낸다. |  |
 | `vitamin-d-deficiency-bone-health-calcium-phosphorus-absorption-osteoporosis-risk` | 확실 | 공식 | 비타민D는 칼슘과 인의 소장 흡수를 조절하므로, 결핍 시 혈중 칼슘 저하로 이어지고, 장기적 결핍은 골다공증과 골절 위험을 증가시킨다. |  |
 | `vitamin-d-deficiency-immune-function-impairment-infection-risk-autoimmune` | 확실 | 공식 | 비타민D는 선천면역과 적응면역의 조절에 관여하므로, 결핍 시 감염 위험 증가와 동시에 자가면역질환 발생 위험도 증가한다. |  |
 | `vitamin-d-chronic-deficiency-cardiovascular-cancer-risk-association` | 논쟁 🔶 | 공식 | 만성 비타민D 결핍은 심혈관질환, 암 위험 증가와 연관되어 있으나, 인과관계는 아직 완전히 확립되지 않았다. |  |
@@ -5422,7 +5524,6 @@ _(팩트 없음)_
 | `basal-metabolic-rate-definition-resting-energy-expenditure-indirect-calorimetry` | 확실 | 공식 | 기초대사율(BMR)은 휴식 중인 신체의 에너지 소비율이며, 정확한 측정은 물리적·심리적으로 방해받지 않는 상태에서 간접 열량 측정법(indirect calorimetry)으로 산소 섭취량과 이산화탄소 배출량을 측정하여 계산한다. |  |
 | `basal-metabolic-rate-accounts-50-80-percent-daily-energy-expenditure` | 확실 | 공식 | 기초대사율은 하루 총 에너지 소비량의 50~80%를 차지하며, 나머지는 신체활동·식이유도열생성으로 구성된다. |  |
 | `carnitine-capsaicin-cla-thermogenesis-effect-absolute-magnitude-34kcal-1-2kg-modest` | 확실 | 공식 | L-카르니틴, 캡사이신, CLA 등 '기초대사 증가' 성분들의 실제 효과는 절대값으로 보면 매우 작다. 캡사이신 34 kcal/day 증가는 월 1020 kcal에 불과하고, L-카르니틴의 체중감소는 메타분석 37개 연구 기준 -1.21 kg이며, CLA는 '작은(modest)' 효과 크기로 평가된다. |  |
-| `metabolic-boosters-benefit-only-with-caloric-deficit-food-exercise-priority` | 확실 | 공식 | 기초대사 증가 성분들의 체중 개선 효과는 칼로리 결핍(음식 섭취 감소 또는 운동 증가)이 있을 때만 의미가 있으며, 정상적인 식단에서는 체중 변화가 없을 가능성이 높다. |  |
 
 ### 벤조일퍼옥사이드: 여드름 제어 기전, 농도 기준, 한국 규제 지위, 박테리아 저항성 <sub>2026-08-10 · 뷰티_benzoyl-peroxide-acne</sub>
 
@@ -5506,15 +5607,9 @@ _(팩트 없음)_
 | `carnitine-exercise-performance-mixed-evidence` | 확실 | 공식 | L-카르니틴 보충은 고강도 운동 성능 개선에서 혼합된 근거를 보이며, 중등도 운동 성능에는 효과가 없는 것으로 보고된다. |  |
 | `carnitine-korea-regulatory-status-unclear` | 확인실패 | 공식 | 한국 식약처의 기능성 원료 인정 목록에서 L-카르니틴의 명시적 기능성 인정 여부가 확인되지 않았다. |  |
 
-### 셀룰라이트: 콜라겐·지방·호르몬 기전과 성분 개입의 한계 <sub>2026-08-11 · cellulite-reduction-science</sub>
+### 셀룰라이트: 콜라겐·지방·호르몬 기전과 성분 개입의 한계 <sub>2026-08-11 · 집필 보류: 1차 근거 부족 + 톤 원칙 충돌</sub>
 
-| id | 확신도 | 근거 | claim | 적용 범위 |
-|---|---|---|---|---|
-| `cellulite-definition-subcutaneous-fat-edema-collagen-nodule-formation` | 확실 | 공식 | 셀룰라이트는 피하 지방세포 사이에 체액과 노폐물이 축적되어 부종이 발생하고, 피부 결합조직의 지질층이 불규칙하게 비후되며, 콜라겐 섬유가 주변 지방세포 그룹과 함께 결합하여 미세결절을 형성한 후 이들이 합쳐져 거대결절이 되는 과정이다. |  |
-| `cellulite-gender-difference-fibrous-architecture-female-vertical-male-crosshatch` | 확실 | 공식 | 남성의 진피 결합조직은 섬유가 십자형(cross-hatch)으로 촘촘히 짜여 피하 지방층을 효과적으로 억제하지만, 여성의 섬유는 수직형(vertical/parallel)으로 치밀하지 못해 지방층을 누르지 못한다. 동시에 여성은 남성보다 피하지방층이 두껍다. |  |
-| `cellulite-estrogen-fibrosis-collagen-remodeling-fat-compression` | 확실 | 공식 | 에스트로겐은 지방세포의 증가와 비대를 유발하여 주변 결합조직에 압력을 가하고, 이로 인해 콜라겐 섬유 격벽이 섬유화(fibrosis)되어 경화된다. 섬유화된 콜라겐은 지방세포를 불규칙하게 구속하여 피부 표면의 울퉁불퉁함을 초래한다. |  |
-| `cellulite-multifactorial-genetic-hormonal-lifestyle-connective-tissue` | 확실 | 공식 | 셀룰라이트는 유전적 요인(결합조직 구조), 호르몬 변화(에스트로겐), 생활 습관(식단, 운동), 나이 등 여러 요인이 복합적으로 작용하여 발생한다. |  |
-| `cellulite-topical-ingredient-efficacy-limited-collagen-remodeling-penetration-barrier` | 확인실패 | 공식 | 셀룰라이트의 근본 원인이 진피 내 콜라겐 섬유화와 지방 구조 재편성이므로, 국소 크림이나 젤의 유효 성분이 진피 깊이까지 침투하여 콜라겐 구조를 역전시키기는 생물학적으로 매우 제한적이다. |  |
+_(팩트 없음)_
 
 ### 크로뮴: 혈당 조절에서의 근거 수준과 국내 기능성 인정 현황 <sub>2026-08-10 · 예정</sub>
 
@@ -5559,9 +5654,7 @@ _(팩트 없음)_
 | id | 확신도 | 근거 | claim | 적용 범위 |
 |---|---|---|---|---|
 | `daily-protein-rda-0-8-gram-per-kilogram-body-weight` | 확실 | 공식 | 건강한 성인의 단백질 권장섭취량(RDA)은 체중 1kg당 0.8g이다. 신체활동이 중간 정도면 1.0~1.3 g/kg, 강렬하면 1.6 g/kg으로 증가한다. |  |
-| `collagen-peptide-no-rda-10-40g-daily-recommended-skin-efficacy-5-10g` | 확실 | 공식 | 콜라겐 펩타이드(hydrolyzed collagen)에는 공식 RDA가 없으나, 임상 연구 기반으로 하루 10~40g의 섭취가 권장되며, 특히 피부 수분·탄력 개선에는 2.5~10g이 임상적으로 효과를 보인 용량이다. |  |
-| `collagen-synthesis-decline-mid-40s-25-percent-reduction` | 확실 | 공식 | 신체의 콜라겐 합성은 40대 중반부터 25% 이상 감소하며, 이는 피부 탄력 저하와 주름 심화의 주요 원인이다. |  |
-| `topical-protein-peptide-vs-oral-protein-different-pathways-skin-hair-benefit` | 확실 | 공식 | 구강 단백질/콜라겐 펩타이드는 신체의 콜라겐 합성 기질을 공급하는 반면, 국소 적용 단백질·펩타이드는 피부 표면과 모발에 직접 작용하여 구조 강화와 보습에 기여한다. 두 경로는 상보적이며 상충하지 않는다. |  |
+| `collagen-synthesis-declines-with-age-fibroblasts-chronologically-aged-skin` | 확실 | 공식 | 신체의 콜라겐 합성은 나이가 증가하면서 감소하며, 특히 40대 이후 더 뚜렷한 감소가 관찰된다. 이는 피부 탄력 저하와 주름 심화의 주요 원인이다. |  |
 
 ### 비듬 vs 지루성두피염: 임상 진단·증상·치료 차이 <sub>2026-08-11 · 예정</sub>
 
@@ -5579,7 +5672,7 @@ _(팩트 없음)_
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
 |---|---|---|---|---|
-| `chemical-depilatory-vs-shaving-mechanism-protein-dissolution-vs-cutting` | 확실 | 공식 | 화학적 제모제(depilatory agents)는 디스플파이드 결합을 파괴하여 모발 단백질을 용해시키는 방식이므로, 면도(모발을 절단)와는 근본적으로 다른 메커니즘이다. 화학 제모제는 표피 아래 모낭 내 모발도 부분적으로 약화시킬 수 있다. |  |
+| `chemical-depilatory-thioglycolic-acid-disulfide-bond-reduction-mechanism` | 확실 | 공식 | 화학적 제모제(thioglycolic acid 함유)는 모발의 단백질 이황화 결합(disulfide bonds)을 환원하여 약화시키므로, 면도(모발을 절단)와는 근본적으로 다른 메커니즘이다. 화학 제모제는 높은 알칼리성(pH 약 12.0~12.5)에서 더 효과적으로 작용한다. |  |
 | `electric-shaver-vs-blade-shaving-irritation-reduced-pfb-prevention` | 확실 | 공식 | 전기 면도기는 회전 또는 왕복 날로 모발을 절단하되, 칼날이 피부에 직접 닿지 않아 자극이 적고, 모발이 피부 아래 너무 짧게 절단되지 않으므로 가성모낭염(pseudofolliculitis barbae, PFB) 위험이 감소한다. |  |
 
 ### 식이섬유: 포만감 및 체중관리에서의 역할, 섭취 방식에 따른 주의 <sub>2026-08-10 · 예정</sub>
@@ -5648,14 +5741,11 @@ _(팩트 없음)_
 | `glucomannan-high-risk-populations-swallowing-difficulty` | 확실 | 공식 | 고령자, 연하곤란이 있는 사람, 과거 위장관 수술로 장이 좁아진 사람, 구조적 이상이 있는 사람 등이 글루코만난으로 인한 폐색 위험이 더 높다. |  |
 | `glucomannan-pre-hydrated-form-shirataki-safer` | 확실 | 공식 | 미리 충분히 수화된 글루코만난 형태(예: 곤약 국수·시라타키)는 일반적으로 안전하며, 정상적으로 준비하고 씹어서 섭취할 때 식도 폐색 위험이 낮다. |  |
 
-### 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 <sub>2026-08-11 · gray-hair-emergence-nutrition</sub>
+### 흰머리 발생과 영양: 수소과산화물·카탈라제의 역할과 결핍 기준 <sub>2026-08-11 · gray-hair-emergence-nutrition</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
 |---|---|---|---|---|
 | `hydrogen-peroxide-accumulation-melanocyte-catalase-deficiency-gray-hair-mechanism` | 확실 | 공식 | 나이가 들면서 모낭 멜라노사이트의 카탈라제(catalase) 생성이 감소하고, 수소과산화물(H₂O₂) 축적이 증가한다. H₂O₂는 멜라노사이트의 산화 스트레스를 유발하고 멜라닌 생성 효소인 티로시나제를 손상시켜 흰머리를 초래한다. |  |
-| `copper-zinc-iron-melanogenesis-cofactor-melanin-synthesis` | 확실 | 공식 | 구리, 아연, 철은 멜라노제네시스(melanin 합성)에 필수 보조인자로 작용하며, 멜라노사이트가 색소를 만드는 데 직접 관여한다. |  |
-| `vitamin-b12-vitamin-d-deficiency-melanocyte-dysfunction-gray-hair-risk` | 확실 | 공식 | 비타민B12와 비타민D 결핍도 멜라노사이트 기능을 손상시킬 수 있으며, 이는 흰머리 발생의 영양 위험 요인이다. |  |
-| `melanocyte-stem-cell-depletion-aging-reduced-pigment-production` | 확실 | 공식 | 나이가 들면서 멜라노사이트를 생성하는 줄기세포가 손상되고 사멸하며, 줄기세포 감소는 새로운 멜라노사이트 생성을 저해하므로 색소 생산이 감소하여 흰머리가 생긴다. |  |
 | `gray-hair-reversal-nutrition-only-with-deficiency-correction` | 확실 | 공식 | 흰머리의 영양학적 개선은 사전 결핍이 입증된 경우(혈액 검사)에 한정되며, 정상 수치에서의 영양 추가 보충은 흰머리 역전의 근거가 부족하다. |  |
 
 ### 녹차 카테킨-EGCG: 체중감량 효과의 근거와 고용량 간독성 위험 <sub>2026-08-10 · 예정</sub>
@@ -5684,6 +5774,18 @@ _(팩트 없음)_
 | `niacinamide-scalp-blood-flow-inflammation-reduction` | 확실 | 공식 | 나이아신아마이드(비타민 B3)는 두피의 혈류 흐름을 개선하고 염증을 완화하여 건강한 두피 환경을 조성한다. | KR |
 | `hairloss-shampoo-contact-time-limitation-efficacy` | 확실 | 공식 | 탈모 완화 샴푸는 사용 시 두피 접촉 시간이 1~3분으로 제한되어, 성분이 모낭까지 깊숙이 침투하기 어려운 구조적 한계가 있다. | 글로벌 |
 | `hairloss-shampoo-vs-topical-medication-efficacy-difference` | 확실 | 공식 | 탈모 샴푸(기능성 화장품)의 효과 입증 기준은 의약품(미녹시딜, 피나스테리드)보다 훨씬 낮으며, 'RCT로 확인된 임상적 모발 증가'가 아니라 '사용감 개선' 정도의 수준이다. | KR |
+
+### 주부습진·손 건조: 자극원 기전과 세정제·보습제·장갑 관리 <sub>2026-08-11 · hand-eczema-care</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `irritant-contact-dermatitis-mechanism-surfactant-barrier-damage` | 확실 | 공식 | 자극성 접촉피부염은 계면활성제·물·잦은 세척이 피부 지질층의 지방을 제거(defatting)하고 각질층의 수분 결합 메커니즘을 손상시켜 경표피수분손실(TEWL)을 증가시킨다. 동시에 케라티노사이트에서 IL-1α, IL-1β, TNF-α, IL-8 등 염증 매개물질이 방출되어 호중구(neutrophil)와 비만세포(mast cell)가 침윤한다. |  |
+| `occupational-hand-dermatitis-wet-work-80-percent-irritant` | 확실 | 공식 | 직업성 손습진의 80%가 자극성 접촉피부염이며, 주부(housewives)·청소부·식품 취급자·의료 종사자 등 물에 자주 노출되는 직업군에서 높은 유병률을 보인다. |  |
+| `gentle-cleanser-low-pH-syndet-hand-eczema-improvement` | 확실 | 공식 | 비누 대신 순한 세정제(gentle cleanser)와 낮은 pH 세정제(pH 4.5~5.5, syndet 제품)를 사용하면 손습진이 유의미하게 개선되며, 전통 액체 비누보다 에멀전 세정제가 더 효과적이다. |  |
+| `moisturizer-application-timing-immediately-after-water-exposure` | 확실 | 공식 | 보습제는 세척 직후, 손이 약간 축축한 상태에서 즉시 도포해야 한다(critical timing). 물 노출·세척·습진 악화 직후 언제든지 보습해야 최적 효과를 낸다. |  |
+| `hand-eczema-glove-use-cotton-liner-occlusive-glove-hazard` | 확실 | 공식 | 손습진이 심한 경우 물에 노출될 때 면 장갑 안쪽 라이너를 깐 상태에서 occlusive(방수) 장갑을 착용한다. 장기간 occlusive 장갑 착용은 Staphylococcus aureus 밀도를 증가시키므로, 작업 후 즉시 벗고 환기시켜야 한다. |  |
+| `hand-eczema-secondary-infection-warning-signs-honey-crust` | 확실 | 공식 | 자극성 손습진이 2차 세균 감염으로 진행하면 **꿀색 딱지(honey-colored crust), 진물(oozing), 부종, 따뜻함, 홍반이 강해진다.** 이 징후가 나타나면 피부과 진료가 필요하며, 자가 관리만으로는 개선되지 않는다. |  |
+| `hand-eczema-when-to-see-dermatologist-topical-steroid-systemic-steroid` | 확실 | 공식 | 자극성 손습진이 자가 관리(세정제 변경, 보습, 장갑)로 2~3주 이상 개선되지 않거나, 심한 급성 악화(진물·부종·감염 징후)가 있으면 피부과 진료가 필수다. 의료진은 국소 스테로이드(topical corticosteroid) 또는 경구 프레드니손(systemic steroid, 2~4주)을 처방할 수 있다. |  |
 
 ### 가려운 구진성 발진 vs 곪은 여드름: 말라세지아 모낭염과 심상성 여드름 감별 <sub>2026-08-11 · 예정</sub>
 
@@ -5780,9 +5882,9 @@ _(팩트 없음)_
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
 |---|---|---|---|---|
-| `laser-induced-pih-mechanism-melanocyte-disruption` | 확실 | 공식 | 레이저 시술로 인한 색소침착(PIH)은 고플루언스(8~10 J/cm² 이상)와 단펄스폭(<5ms) 시 기저층 멜라닌세포가 손상되어 장시간 염증 신호가 유지되기 때문이다. |  |
-| `laser-treatment-fluence-pih-risk-stratification` | 확실 | 공식 | 레이저 시술의 PIH 위험은 플루언스(에너지 밀도) 수준에 따라 명확히 층화된다: 8~10 J/cm² 이상의 고플루언스, 짧은 펄스폭, 저파장(532nm) 조합이 가장 높은 PIH 발생률을 보인다. |  |
-| `uva-i-wavelength-pih-amplification-inflammatory-phase` | 확실 | 공식 | 염증 단계에서 UVA-I(340~400nm) 자외선 노출은 염증 신호를 증폭시켜 PIH 발생 및 악화를 직접 유도한다. |  |
+| `laser-induced-pih-mechanism-melanocyte-disruption` | 확실 | 공식 | 레이저 시술로 인한 색소침착(PIH)은 염증 초기 단계에서 멜라닌세포 활성화가 일어나며, 고플루언스·단펄스폭 조합은 기저층 손상을 심화시켜 장시간 염증 신호를 유지시킨다. |  |
+| `laser-treatment-fluence-pih-risk-stratification` | 확실 | 공식 | 레이저 시술의 PIH 발생 위험은 플루언스(에너지 밀도) 수준에 따라 계층화되며, 고플루언스·짧은 펄스폭·저파장 조합이 더 높은 PIH 위험을 보인다. |  |
+| `uva-i-wavelength-pih-amplification-inflammatory-phase` | 확실 | 공식 | 염증 단계에서 UVA-I(340~400nm) 자외선 노출은 케라틴세포·멜라닌세포 간 신호전달을 증폭시켜 멜라닌 생성을 직접 촉진하고 PIH를 악화시킨다. |  |
 | `skin-barrier-recovery-timeline-post-laser-16-hours` | 확실 | 공식 | 레이저 시술 후 피부 장벽은 16시간 내에 기본적 회복을 시작하지만, 세포 수준의 미세한 구조(초공 폐쇄)는 완전히 복구되지 않는다. |  |
 | `post-laser-spf-50-recommendation-3-6-months-duration` | 확실 | 공식 | 레이저 시술 후 2주 내 SPF 50 이상 광범위 선크림(PA+++) 사용이 권고되며, 최소 3~6개월 지속해야 PIH 위험을 충분히 감소시킬 수 있다. |  |
 | `post-laser-broad-spectrum-uva-pa-plus-critical` | 확실 | 공식 | 레이저 후 선크림은 단순 SPF 수치보다 broad-spectrum(UVA 차단) 표시와 PA+++ 이상이 더 중요하며, 이는 PIH 악화의 주 원인인 UVA-I 노출을 차단해야 하기 때문이다. |  |
@@ -5907,7 +6009,6 @@ _(팩트 없음)_
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
 |---|---|---|---|---|
-| `sunscreen-formulation-base-spf-efficacy-invariant-dose-2mg-cm2` | 확실 | 공식 | 제형(크림·젤·스틱·스프레이)이 무엇이든 표준 도포량(2mg/cm²)을 유지하면 SPF 50은 모두 동일하게 UVB의 약 98%를 차단하며, 제형 기반이 자외선 차단 성능을 결정하지 않는다. |  |
 | `sunscreen-cream-occlusive-barrier-formulation-higher-tewl-retention` | 확실 | 공식 | 크림 기반 선크림은 높은 오일 함량으로 피부 표면에 더 두터운 배리어를 형성하여 경표피수분손실(TEWL)을 더 많이 억제하고, 유효 성분을 더 오래 유지한다. |  |
 | `sunscreen-gel-fast-absorption-cosmetic-elegance-transepidermal-retention-lower` | 확실 | 공식 | 젤 기반 선크림은 낮은 오일 함량으로 빠른 흡수와 매트한 마감감을 제공하지만, TEWL 억제 효과는 크림보다 낮고 유효 성분이 더 빠르게 피부 깊숙이 흡수되거나 휘발된다. |  |
 | `sunscreen-stick-formulation-application-consistency-challenge` | 논쟁 🔶 | 후기 | 스틱형 선크림은 휴대 편의성이 높지만, 도포량 조절이 어려워 많은 사용자가 권장량(2mg/cm²)보다 적게 바르는 경향이 있으며, 이로 인해 실제 SPF 성능이 표시보다 20~30% 낮아질 수 있다. |  |
@@ -5982,10 +6083,9 @@ _(팩트 없음)_
 | id | 확신도 | 근거 | claim | 적용 범위 |
 |---|---|---|---|---|
 | `niacinamide-collagen-stimulation-wrinkle-fine-line-mechanism` | 확실 | 공식 | 나이아신아마이드(비타민B3)는 콜라겐 합성을 촉진하여 피부 탄력성과 팽팽함을 증진시키며, 이는 주름과 세선 개선의 기본 메커니즘이다. |  |
-| `niacinamide-protein-glycation-collagen-elastin-crosslinking-prevention` | 확실 | 공식 | 나이아신아마이드는 단백질 당화(protein glycation)를 억제하여 교차결합된 콜라겐과 엘라스틴 분자의 축적을 감소시킨다. 교차결합된 콜라겐은 딱딱하고 뻣뻣한 특성을 가지므로, 당화 억제는 피부의 유연성(viscoelastic properties) 회복을 의미한다. |  |
+| `niacinamide-antiglycation-antioxidant-mechanism-nad-precursor` | 확실 | 공식 | 나이아신아마이드는 NAD와 NADPH의 전구체로서 항산화 작용을 하며, 이를 통해 단백질 당화를 억제하여 교차결합된 콜라겐과 엘라스틴 분자의 축적을 감소시킨다. |  |
 | `niacinamide-barrier-strengthening-ceramide-lipid-hydration-fine-line-reduction` | 확실 | 공식 | 나이아신아마이드는 세라마이드와 피부 지질 합성을 촉진하여 피부 장벽을 강화하고, 수분 보유력을 높인다. 잘 수분공급된 피부는 세선과 주름이 덜 두드러진다. |  |
-| `niacinamide-12-week-fine-line-improvement-21-percent-clinical-study` | 확실 | 공식 | 12주 임상 시험에서 5% 나이아신아마이드 에멀젼은 세선을 21% 개선했으며, 피부 톤 명도와 광택도 각각 14%, 15% 개선되었다. |  |
-| `whitening-ingredients-overlap-wrinkle-mechanism-antioxidant-collagen-barrier-common` | 확실 | 공식 | 미백 성분(트라넥삼산, 아젤라산, 알부틴 등)이 주름 개선에도 쓰이는 이유는 항산화·콜라겐 보호·피부 장벽 강화라는 공통 메커니즘 때문이다. 색소 과잉생성과 주름 심화는 모두 산화 스트레스와 콜라겐 손상이 근본이므로, 이들 성분은 양쪽에 작용할 수 있다. |  |
+| `niacinamide-12-week-fine-line-improvement-double-blind-rct-bissett` | 확실 | 공식 | 50명 여성을 대상으로 한 12주 이중맹검 무작위 대조 시험에서 5% 나이아신아마이드 국소제를 도포한 쪽이 위약 대조쪽보다 세선, 주름, 기미, 피부 톤 개선에서 유의한 효과를 보였다. |  |
 
 ### 산화아연과 이산화티탄의 무기 자차 비교: 파장 커버리지, 백탁, 효과 차이 <sub>2026-08-10 · 뷰티_zinc-oxide-vs-titanium</sub>
 
@@ -7264,6 +7364,36 @@ _(팩트 없음)_
 | `blue-light-supplement-marketing-exaggeration-risk-profile` | 확실 | 공식 | 시중의 '블루라이트 차단 영양제' 광고는 '청색광 = 망막 손상 위험' → '우리 제품이 차단함' → '눈 건강 개선'이라는 인과 사슬을 암시하나, 각 단계마다 임상 근거 부족이나 과장의 위험이 있다. |  |
 | `korea-blue-light-supplement-regulation-unclear-status` | 확인실패 | 공식 | 한국 식약처는 블루라이트 차단 또는 청색광 보호를 '기능성'으로 공식 인정하지 않았으나, 루테인·제아잔틴 제품의 '황반부 색소 유지' 기능성으로 간접적 마케팅이 발생하고 있다. |  |
 
+### 백내장·노화와 항산화제 보충(루테인·비타민CE)·RCT 근거·관찰 연구 차이 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `cataract-antioxidant-rct-no-evidence-prevention` | 확실 | 공식 | Cochrane 체계적 리뷰(9개 RCT, 117,272명)에서 베타카로틴·비타민C·E 고용량 보충이 나이 관련 백내장 발생 또는 진행을 예방하지 못한다는 결론이 나왔다. |  |
+| `areds-trial-antioxidant-cataract-no-effect` | 확실 | 공식 | AREDS 임상시험(비타민C, E, 베타카로틴 고용량)에서 7년 추적 결과, 대조군 대비 백내장 발생률이나 시력 손실에 차이가 없었다. |  |
+| `observational-study-lutein-zeaxanthin-cataract-inverse` | 논쟁 🔶 | 공식 | 관찰 연구에서는 비타민E, 알파카로틴, 루테인, 지아잔틴이 나이 관련 백내장과 음의 상관관계를 보였으며, 루테인이 후낭하 백내장 위험 감소와 특히 연관이 있었다. |  |
+| `lutein-supplement-visual-acuity-improvement-small` | 논쟁 🔶 | 공식 | 루테인 보충 임상시험(1건)에서 시각 예민도(visual acuity)와 눈부심 민감도(glare sensitivity)가 개선되었으나, 알파-토코페롤과 위약군에서는 시력 유지 또는 감소 경향을 보였다. |  |
+| `cataract-prevention-dietary-approach-vs-supplement` | 논쟁 🔶 | 공식 | 관찰 연구 결과는 항산화제가 풍부한 음식(루테인·지아잔틴, n-3 지방산)이 백내장과 황반변성 예방에 유익할 수 있음을 시사하지만, 고용량 보충제 형태의 효과는 아직 미해결이다. |  |
+
+### 콘택트렌즈 착용자의 영양 결핍·안구건조 악화·루테인·오메가3 역할 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `contact-lens-dry-eye-prevalence-rate` | 확실 | 공식 | 콘택트렌즈 착용자의 30~50%가 렌즈 관련 안구건조증을 경험하며, 이는 렌즈의 산소투과성 감소와 눈물막 지질층 손상이 주요 원인이다. |  |
+| `contact-lens-tear-film-instability-lipid-deficiency` | 확실 | 공식 | 콘택트렌즈를 낀 상태에서는 눈물막의 지질층이 렌즈 표면으로 인해 흡수되거나 산화되어, 오메가3(EPA·DHA) 결핍 시 안정성이 더욱 저하된다. |  |
+| `contact-lens-wearers-lutein-needs-higher` | 논쟁 🔶 | 후기 | 콘택트렌즈 착용으로 인한 높은 산화스트레스 환경에서는 일반인보다 루테인·제아잔틴 필요량이 25~40% 증가할 수 있다. |  |
+| `contact-lens-oxygen-permeability-supplement-neutral` | 확실 | 공식 | 영양제 보충은 콘택트렌즈의 산소투과성(Dk/t) 자체를 높이지 못하며, 안구 표면 건강이 악화되는 것을 완화할 뿐이다. |  |
+| `contact-lens-wearers-antioxidant-support-timing` | 논쟁 🔶 | 후기 | 렌즈를 제거한 직후(저녁 시간)에 항산화 영양제를 섭취하면 야간 동안 눈의 회복 과정에서 산화스트레스 감소 효과가 더 크다는 관찰이 있다. |  |
+
+### 당뇨망막병증 예방·진행 완화와 안토시아닌·항산화제·산화스트레스 기전 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `diabetic-retinopathy-oxidative-stress-pathology` | 확실 | 공식 | 당뇨망막병증의 병리 기전에 산화스트레스가 중심적 역할을 하며, 고혈당이 활성산소를 과다 생성하여 망막 세포 손상을 초래한다. |  |
+| `blueberry-anthocyanin-diabetic-retinopathy-mechanism` | 확실 | 공식 | 블루베리 안토시아닌 추출물은 고혈당 망막 세포의 활성산소 및 세포자살신호 증가를 회복시키고, 소포체 스트레스를 미RNA-182/OGG1 경로로 완화한다. |  |
+| `anthocyanin-diabetic-retinopathy-clinical-recommendation` | 확실 | 공식 | 미국 안과학회 가이드라인에서 당뇨병 1형·2형 환자의 망막병증 없음 또는 경증~중등도 비증식성 망막병증에 항산화제 보충을 IIB(선택적 보조) 수준으로 권고하고 있다. |  |
+| `mulberry-anthocyanin-retinal-oxidative-protection` | 논쟁 🔶 | 공식 | 뽕나무 추출물(안토시아닌 풍부)은 포도당 유도 망막 색소 상피세포 손상을 항산화 방어 증강으로 완화하는 것으로 보인다. |  |
+| `anthocyanin-research-future-direction-diabetic-retinopathy` | 논쟁 🔶 | 공식 | 안토시아닌의 당뇨망막병증 예방 가능성은 인정되지만, 인체 임상시험이 더 필요하며 현재 표준 치료(혈당 관리, 혈압 조절, 레이저·주사) 대체가 아닌 보조 역할로 고려되어야 한다. |  |
+
 ### 오메가3의 안구건조증 개선 효과·DREAM 임상시험·인공눈물 우선순위 <sub>2026-08-04 · dry-eye-omega-supplement</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -7297,6 +7427,36 @@ _(팩트 없음)_
 | `bilberry-anthocyanin-screen-fatigue-12week-reduction` | 확실 | 공식 | 빌베리 추출물(안토시아닌 함유, ~240mg/일)은 12주 RCT에서 화면 관련 안정 피로를 감소시켰다. |  |
 | `combined-eye-supplement-lutein-astaxanthin-bilberry-dha-efficacy` | 확실 | 공식 | 루테인 10mg, 아스타잔틴 4mg, 빌베리 추출물, 검은콩 안토시아닌 2.3mg, DHA 50mg의 복합 포뮬라를 4주 복용한 결과 눈 조절력과 눈 피로·흐림 증상이 위약보다 개선되었다. |  |
 
+### 눈 떨림(근시토피아)과 마그네슘 결핍·신경근 흥분성·치료 근거 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `eye-twitching-myokymia-definition-prevalence` | 확실 | 공식 | 눈 떨림(eyelid myokymia)은 안검의 작은 근육에서 발생하는 비자발적 수축으로, 일반적으로 일측성이며 하안검에서 더 자주 발생한다. 원인은 스트레스, 피로, 카페인이 주요 원인이다. |  |
+| `magnesium-neuromuscular-excitability-mechanism` | 확실 | 공식 | 마그네슘은 신경과 근육 사이의 신호 전달을 조절하는 칼슘 채널 차단제로 작용하며, 결핍 시 신경근 흥분성이 증가하여 근육 수축을 유발할 수 있다. |  |
+| `magnesium-deficiency-eye-twitching-association-weak` | 확실 | 공식 | 2024년 최신 연구에서 안검 떨림 환자와 대조군의 혈중 마그네슘, 칼슘, 나트륨, 칼륨 수준에는 유의미한 차이가 없었으며, 떨림의 직접적인 원인이 아닐 가능성이 크다. |  |
+| `eye-twitching-stress-caffeine-primary-cause` | 확실 | 공식 | 안검 떨림의 주요 원인은 스트레스, 피로, 카페인 과다 섭취이며, 마그네슘 보충보다 생활 습관 개선(카페인 감소, 수면)이 먼저 권장된다. |  |
+| `magnesium-rda-adult-daily-requirement` | 확실 | 공식 | 성인 남성(31세 이상)의 마그네슘 권장 섭취량은 400~420 mg/일, 여성은 310~320 mg/일이며, 결핍(혈중 < 1.7 mg/dL)은 대부분의 건강한 성인에게 드물다. |  |
+
+### 녹내장·안압과 루테인·지아잔틴·카로티노이드 보충의 신경보호 근거 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `glaucoma-oxidative-stress-pathogenesis` | 확실 | 공식 | 녹내장 신경병증(optic neuropathy)의 다요인 발병기전에 산화스트레스가 포함되어 있으며, 루테인과 지아잔틴의 항산화 효과가 신경 손상을 완화할 수 있다. |  |
+| `lutein-zeaxanthin-meso-zeaxanthin-macular-pigment-glaucoma` | 확실 | 공식 | 루테인·지아잔틴·메소-지아잔틴 복합 보충제는 임상시험에서 녹내장 환자의 황반 색소 증가를 유도했으며, 18개월 후 메시피스 대비감도(mesopic contrast sensitivity) 개선을 보였다. |  |
+| `carotenoid-evidence-level-glaucoma-prevention` | 논쟁 🔶 | 공식 | 카로티노이드(루테인·지아잔틴)는 녹내장 예방에 강한 생물학적 근거가 있으나, 장기 대규모 인구 기반 임상시험이 부족하여 현재 근거 수준은 제한적이다. |  |
+| `macular-pigment-optical-density-measurement` | 확실 | 공식 | 황반 색소 광학 밀도(MPOD)는 루테인·지아잔틴 축적도를 나타내며, 카로티노이드 보충 후 3~6개월에 측정 가능한 증가를 보인다. |  |
+| `glaucoma-coq10-magnesium-limited-evidence` | 논쟁 🔶 | 공식 | CoQ10, 마그네슘 등 다른 항산화제·미네랄도 녹내장 신경보호 기전이 제안되지만, RCT 근거는 루테인·지아잔틴에 비해 훨씬 제한적이다. |  |
+
+### 원추각막·각막 건강과 산화스트레스·항산화제·콜라겐 교차결합(CXL) 치료 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `keratoconus-progressive-corneal-thinning-definition` | 확실 | 공식 | 원추각막은 각막이 점진적으로 얇아지고 원뿔 모양으로 변형되는 질환으로, 대부분 소아청소년기~30대에 발병하며 산화스트레스와 항산화 기능 이상이 병리에 포함된다. |  |
+| `corneal-collagen-cross-linking-uva-riboflavin-mechanism` | 확실 | 공식 | 각막 콜라겐 교차결합(CXL) 치료는 자외선A(UVA)와 리보플라빈(비타민B2)으로 콜라겐 섬유 사이의 공유결합을 형성하여 각막 강도를 증가시키는 기전이다. |  |
+| `cxl-efficacy-keratoconus-progression-halting` | 확실 | 공식 | 각막 교차결합(CXL)은 현재 원추각막 진행을 멈추거나 지연시킬 수 있는 유일한 입증된 치료법이며, 4년 추적에서 진행 중단을 보였다. |  |
+| `cxl-long-term-progression-recurrence-young-patients` | 확실 | 공식 | 10년 추적 연구에서 CXL 치료 후에도 원추각막이 계속 진행할 수 있으며, 특히 젊은 환자에서 진행 재발 가능성이 있다. |  |
+| `keratoconus-antioxidant-supplement-theoretical-rationale` | 논쟁 🔶 | 공식 | 원추각막의 산화스트레스 병리에 항산화제(루테인, 아스타잔틴, 비타민C·E)의 신경보호 역할이 이론적으로 제안되지만, 인체 임상 근거는 부족하다. |  |
+
 ### 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성 <sub>2026-08-04 · macular-degeneration-prevention</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -7312,6 +7472,26 @@ _(팩트 없음)_
 | `amd-risk-factors-age-smoking-genetics-family-history` | 확실 | 공식 | 황반변성의 주요 위험 인자는 연령(50세 이상), 흡연, 유전, 가족력, 고혈압, 비만이며, 이 중 흡연과 생활습관 개선이 가장 변경 가능한 인자다. |  |
 | `amd-symptoms-central-vision-loss-metamorphopsia-immediate-consultation` | 확실 | 공식 | 중심 시야 흐려짐, 직선이 구부러져 보이는 현상(metamorphopsia), 색상 변화 같은 황반변성 의심 증상이 나타나면 즉시 안과 전문의의 진단을 받아야 하며, 보충제 복용은 이후 의료진 지시에 따른다. |  |
 | `amd-screening-age-50-regular-eye-examination-importance` | 확실 | 공식 | 황반변성의 조기 발견을 위해 50세 이상 성인은 최소 연 1회 안과 검진(특히 망막 검사)을 받을 것이 권장된다. |  |
+
+### 근시 진행 방지와 루테인·지아잔틴·안토시아닌 영양제·메타분석 근거 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `myopia-progression-axial-elongation-mechanism` | 확실 | 공식 | 근시 진행은 눈의 축장(axial length) 신장으로 발생하며, 항산화 스트레스와 망막 신호 전달 이상이 축장 신장을 자극하는 기전에 포함된다. |  |
+| `anthocyanin-myopia-prevention-nhanes-association` | 확실 | 공식 | 미국 국민건강영양조사(NHANES 2003~2006)에서 안토시아닌 섭취량이 높은 청소년의 근시 발생률이 유의하게 낮았으며, 특히 시아니딘, 페투니딘, 델피니딘이 관련이 있었다. |  |
+| `lutein-zeaxanthin-axial-elongation-reduction-meta-analysis` | 확실 | 공식 | 루테인·지아잔틴 보충 메타분석에서 청소년의 축장 신장이 대조군 대비 유의하게 감소했으며, 황반 색소 광학 밀도 증가와 시각 민감도 개선을 보였다. |  |
+| `myopia-nutrition-rct-modest-benefits-no-clinical-reduction` | 논쟁 🔶 | 공식 | 카로티노이드(루테인, 지아잔틴, 아스타잔틴)의 임상 효과는 MPOD 증가, 시각 피로 감소 등 제한적이며, 근시 진행 자체를 명확히 감소시키는 임상적 의미 있는 결과는 아직 없다. |  |
+| `anthocyanin-asthenopia-mesopic-contrast-sensitivity` | 확실 | 공식 | 안토시아닌 추출물은 어두운 환경의 대비감도(mesopic contrast sensitivity)와 주관적 눈 피로(asthenopia)를 개선했으나, 근시 진행 억제 직접 증거는 없다. |  |
+
+### 노안(presbyopia)과 수정체 단백질·알파-크리스탈린·렌즈 경화·영양 역할 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `presbyopia-age-onset-universal` | 확실 | 공식 | 노안(presbyopia)은 모든 인간이 만 40~50세에 발생하는 생리적 현상이며, 수정체 경화로 인해 근거리 초점 조절 능력이 소실된다. |  |
+| `alpha-crystallin-chaperone-protein-role` | 확실 | 공식 | 알파-크리스탈린(α-crystallin)은 수정체의 작은 열충격 단백질(heat shock protein)로, 나이가 들면서 농도가 감소하고 고분자량 응집체로 변환되어 렌즈 경화에 기여한다. |  |
+| `lens-stiffness-progressive-age-related` | 확실 | 공식 | 60세 이상의 수정체는 스트레칭에도 초점 변화 능력이 없으며, 핵의 경화가 현저하다. 이는 되돌릴 수 없는 단백질 응집 과정이다. |  |
+| `presbyopia-nutrition-role-limited` | 확실 | 공식 | 노안은 수정체 단백질의 불가역적 응집 때문에 발생하므로, 루테인·항산화제·비타민 등 영양제로 기존 손상을 역전시킬 수 없다. 예방 역할만 기대할 수 있다. |  |
+| `glycation-protein-cross-linking-presbyopia` | 논쟁 🔶 | 공식 | 당화(glycation)로 인한 단백질 교차결합(protein cross-linking)이 노안을 악화시키며, 혈당 관리와 항산화 영양제가 진행 속도 완화에 이론적 근거가 있다. |  |
 
 ### 비타민A와 야맹증·결핍 증상·과잉 독성·임신 기형 위험·상한섭취량 <sub>2026-08-04 · vitamin-a-night-blindness</sub>
 
@@ -7516,6 +7696,60 @@ _(팩트 없음)_
 | `winix-filter-life-varies-by-air-quality` | 확실 | 공식 | 위닉스 공기청정기의 필터 수명은 실내 공기 오염도에 따라 달라지며, 먼지가 많은 환경에서는 필터 수명이 단축되고 깨끗한 환경에서는 길어진다. | 위닉스 / 공기청정기 / 전 라인 / 현행 판매 모델 / KR |
 | `winix-sensor-monthly-cleaning-frequency` | 확실 | 공식 | 위닉스 공기청정기의 먼지 센서는 월 1회 청소를 권장하며, 먼지가 많은 장소에서 사용할 경우 더 자주 청소해야 한다. | 위닉스 / 공기청정기 / 센서 장착 전 라인 / 현행 판매 모델 / KR |
 | `winix-customer-center-1544-5081` | 확실 | 공식 | 위닉스 공기청정기의 기술 상담, AS 신청, 필터 구매 등 모든 서비스는 고객만족센터 1544-5081로 통합 문의된다. | 위닉스 / 공기청정기 / 전 라인 / 현행 판매 모델 / KR |
+
+## 자동차 공통
+
+### 브레이크 경고등 의미 및 긴급 대처 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `brake-warning-light-meaning` | 확실 | 공식 | 브레이크 경고등은 계기판에 붉은색 원형 아이콘으로 표시되며, 브레이크 시스템에 이상이 있다는 신호이다. |  |
+| `brake-fluid-insufficient-cause` | 확실 | 공식 | 브레이크 경고등이 켜지는 가장 흔한 원인은 브레이크액이 부족하거나 파킹 브레이크(주차 브레이크)가 작동 중인 경우다. |  |
+| `brake-fluid-loss-danger` | 확실 | 공식 | 브레이크 오일이 부족한 상태에서 계속 운전하면 브레이크 효과가 현저히 떨어져 급제동 상황에서 제동거리가 길어지거나 브레이크가 완전히 작동하지 않을 수 있다. |  |
+| `brake-warning-emergency-response` | 확실 | 공식 | 주행 중 브레이크 경고등이 켜진 경우, 브레이크 페달을 평상시보다 강하게 밟고, 엔진 브레이크를 걸어 속도를 감소시킨 후, 급제동하지 말고 서서히 정지해야 한다. |  |
+| `brake-pad-wear-indicator` | 확실 | 공식 | 브레이크 패드의 마모는 브레이크 경고등이 점등되는 두 번째 주요 원인이다. |  |
+| `brake-warning-pre-drive-check` | 확실 | 공식 | 주행 전에 계기판의 브레이크 경고등이 꺼졌는지 반드시 확인해야 한다. |  |
+
+### 엔진오일 경고등 의미 및 대처 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `engine-oil-warning-red-meaning` | 확실 | 공식 | 엔진 오일 경고등이 빨간색으로 점등되면 엔진 오일의 양이 부족하거나 압력이 떨어져 오일이 제대로 순환하지 않는다는 신호이다. |  |
+| `engine-oil-warning-red-urgency` | 확실 | 공식 | 빨간색 엔진 오일 경고등이 켜진 상태에서 계속 주행하면 엔진이 손상될 수 있으므로, 도로 옆에 차를 즉시 안전하게 정차하고 엔진을 끈 후 정비소에 이동해야 한다. |  |
+| `engine-oil-check-procedure` | 확실 | 공식 | 엔진 오일 경고등이 켜진 후 정지했을 때, 먼저 엔진을 끈 다음 몇 분 후 오일 게이지로 엔진 오일의 양을 점검하고 부족 시 보충한다. |  |
+| `engine-oil-warning-persistence` | 확실 | 공식 | 엔진 오일을 보충한 후에도 엔진 오일 경고등이 계속 켜져 있으면 오일 압력 센서나 엔진 내부 문제일 가능성이 있으므로 서비스센터 방문이 필요하다. |  |
+
+### 자동차 시동 안 걸림 원인 및 배터리 점프 대처 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `battery-discharge-jump-start-safety` | 확실 | 공식 | 배터리가 방전되어 시동이 안 걸릴 때, 점프 스타트를 할 경우 다른 차량 배터리 (+) 단자 → 방전된 차량 배터리 (+) 단자 → 다른 차량 배터리 (-) 단자 → 방전된 차량의 금속 부분 순서로 연결해야 하며, 시작 후에는 역순으로 분리한다. |  |
+| `battery-frozen-or-low-fluid-explosion-risk` | 확실 | 공식 | 배터리가 얼어있거나 배터리액이 부족하면 점프 스타트 중 배터리가 터질 수 있는 위험이 있다. |  |
+| `hybrid-vehicle-12v-battery-damage-risk` | 확실 | 공식 | 하이브리드 차량을 점프 스타트 보조 전원으로 사용하면 그 차량의 12V 리튬 배터리가 손상될 수 있다. |  |
+| `hyundai-battery-discharge-jump-start` | 확실 | 공식 | 현대 차량의 배터리가 방전되었을 때, 점프 시작 모드로 진입하여 다른 12V 배터리를 사용해 엔진을 시동할 수 있다. |  |
+| `dashboard-warning-indicator-battery-discharge` | 확실 | 공식 | 배터리가 방전되면 계기판의 경고등이 희미하게 깜빡이거나 아예 켜지지 않으므로, 이를 통해 배터리 방전을 판단할 수 있다. |  |
+| `keep-engine-running-after-jump-start` | 확실 | 공식 | 점프 스타트 후 엔진이 시작되면 배터리를 재충전하기 위해 몇 분간 엔진을 계속 가동해야 한다. |  |
+
+### 자동차 헤드라이트 점검 및 전구 교체 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `headlight-brightness-inspection-standard` | 확실 | 공식 | 자동차 검사 기준에 따르면, 2등형 헤드라이트는 15,000칸델라 이상, 4등형 헤드라이트는 12,000칸델라 이상의 밝기가 필요하다. |  |
+| `headlight-optical-axis-alignment` | 확실 | 공식 | 헤드라이트의 광축이 10m 거리에서 좌측은 상단 10cm, 하단 30cm, 좌측 15cm, 우측 30cm 범위 내, 우측은 상단 10cm, 하단 30cm, 좌측 30cm, 우측 30cm 범위 내에 있어야 한다. |  |
+| `headlight-bulb-replacement-procedure` | 확실 | 공식 | 현대 차량의 헤드라이트 전구를 교체할 때는 엔진을 끈 후 휠을 안쪽으로 돌려 펜더를 제거하고, 전구 덮개를 반시계 방향으로 돌려 빼 고정 스프링을 옆으로 밀어 절단하고, 커넥터를 분리한 후 새 전구로 교체한다. |  |
+| `headlight-bulb-temperature-cooling-caution` | 확실 | 공식 | 헤드라이트 전구는 사용 중 매우 높은 온도에 도달하므로, 교체 시 설치된 전구의 온도가 충분히 식을 때까지 기다려야 한다. |  |
+| `headlight-replacement-service-recommendation` | 확실 | 공식 | 헤드라이트 전구 교체는 자동차 부품 손상이나 부상의 위험이 있으므로, 공식 서비스센터에서 정비를 받을 것을 권장한다. |  |
+
+### 자동차 타이어 공기압 경고 및 점검 <sub>2026-09-01 · 예정</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `tpms-warning-threshold` | 확실 | 공식 | TPMS(타이어 공기압 감지 시스템)는 각 타이어의 공기압이 제조업체가 권장하는 콜드 타이어 공기압(명판 공기압)보다 25% 이상 낮을 때 운전자에게 경고를 준다. |  |
+| `cold-tire-pressure-standard` | 확실 | 공식 | 정상 타이어 공기압(콜드 타이어 공기압)은 차량의 도어 필러, 연료 주입구 덮개, 또는 오너스 매뉴얼에 기재된 명판 값을 기준으로 한다. |  |
+| `tpms-false-alert-locations` | 확실 | 공식 | 경찰서, 정부 청사, 방송국, 군 시설, 스노우체인이나 애프터마켓 전자장치 근처에서는 TPMS 경고등이 오작동하여 깜빡이거나 켜질 수 있다. |  |
+| `tpms-pressure-check-method` | 확실 | 공식 | 타이어 공기압은 실온에 가까운 '콜드 타이어' 상태에서 측정해야 정확한 수치를 얻을 수 있으며, 주행 중 타이어가 가열되면 공기압이 상승한다. |  |
+| `low-pressure-symptoms` | 확실 | 공식 | 공기압 부족 타이어가 1개 이상 있으면 TPMS는 경고등을 켜고 동시에 해당 타이어의 위치 표시등을 함께 표시한다. |  |
+| `tpms-sensor-malfunction` | 확실 | 공식 | 타이어 공기압 센서에 고장이 나면 어느 타이어가 저압인지 판단 불가능하므로 모든 타이어의 위치 표시등이 켜진다. |  |
 
 ## 잠자리연구소
 
@@ -7762,7 +7996,7 @@ _(팩트 없음)_
 | `battery-safe-charge-level-storage` | 차량용·핸디형 무선청소기 흡입 약함·충전 불량·배터리 급감 자가점검, 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석, 휴대용 손선풍기(핸디형·넥밴드형) AS셀프체크: 충전안됨·안돌아감·약풍·소음·배터리팽창, 마사지건(안마건) 자가점검·배터리·안전, 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
 | `battery-storage-environment-10-25c` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석, 휴대용 손선풍기(핸디형·넥밴드형) AS셀프체크: 충전안됨·안돌아감·약풍·소음·배터리팽창 |
 | `battery-storage-separation-from-charger` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |
-| `battery-swelling-stop-immediately` | 에어팟 한쪽 안 들림·연결 안 됨 자가진단, 아이폰 발열 — 원인, 증상, 대처, 애플워치 연결 끊김·충전 안 됨·배터리 소모 자가점검, 무선이어폰 충전 케이스 불량·한쪽 충전 안 됨·배터리 문제 자가점검, 마사지건(안마건) 자가점검·배터리·안전, 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
+| `battery-swelling-stop-immediately` | 에어팟 한쪽 안 들림·연결 안 됨 자가진단, 아이폰 발열 — 원인, 증상, 대처, 애플워치 연결 끊김·충전 안 됨·배터리 소모 자가점검, 무선이어폰 충전 케이스 불량·한쪽 충전 안 됨·배터리 문제 자가점검, LED 미용마스크 자가진단, 마사지건(안마건) 자가점검·배터리·안전, 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열, 두피 마사지기 자가진단, 온열패드 자가진단, 저주파자극기(TENS/EMS) 자가진단, 전동칫솔 충전대(충전기) 자가진단 |
 | `beater-bowl-clearance-adjustment` | 제빵기(홈베이커리) 반죽 안 섞임·안 부풀음·겉만 탐·패들 박힘·세척 자가점검 |
 | `behavioral-insomnia-clinical-management` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `behavioral-model-infant-sleep-disturbance` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
@@ -7772,8 +8006,8 @@ _(팩트 없음)_
 | `bha-safety-adverse-effects-minimal` | AHA와 BHA 조합: 동시 사용 안전성, 자극 누적, 권장 빈도 |
 | `bidet-circuit-breaker-leakage-protection` | 비데 자가점검 2차 — 물·온수·누수·동파·노즘 기계 고장 |
 | `bidet-water-stoppage-check-steps` | 비데 자가점검 2차 — 물·온수·누수·동파·노즘 기계 고장 |
-| `biotin-deficiency-clinical-benefit-limited-to-deficiency-state` | 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 |
-| `biotin-deficiency-prevalence-hair-loss-women-38percent` | 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 |
+| `biotin-deficiency-clinical-benefit-limited-to-deficiency-state` | 흰머리 발생과 영양: 수소과산화물·카탈라제의 역할과 결핍 기준 |
+| `biotin-deficiency-prevalence-hair-loss-women-38percent` | 흰머리 발생과 영양: 수소과산화물·카탈라제의 역할과 결핍 기준 |
 | `blade-extremely-sharp-cutting-risk` | 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
 | `calcium-absorption-vitamin-d-magnesium-synergy` | 칼슘 보충제 흡수: 형태별 생물이용률, 1회 최대 흡수량, 마그네슘 병용 효과, 성장 관련 기능성 원료 인정 현황, 연령별 상한섭취량, 성장 보충제 선택 기준, 음식으로 먹을 때 vs 영양제로 먹을 때: 생체이용률, 식품 매트릭스 효과, 흡수 차이, 한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량 |
 | `calcium-iron-competitive-absorption-spacing` | 칼슘 보충제 흡수: 형태별 생물이용률, 1회 최대 흡수량, 마그네슘 병용 효과, 프리바이오틱스·신바이오틱스: 정의·구성 기준·함량·부작용, 임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성 |
@@ -7879,6 +8113,7 @@ _(팩트 없음)_
 | `glucosamine-form-sulfate-vs-hydrochloride-absorption` | 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과 |
 | `glucosamine-mechanism-cartilage-matrix-synthesis` | 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과 |
 | `glycerin-humectant` | 겨울 난방과 실내 건조가 피부에 미치는 영향 |
+| `glycerin-occlusive-pairing-essential-dry-climates` | 주부습진·손 건조: 자극원 기전과 세정제·보습제·장갑 관리 |
 | `graduated-extinction-ferber-method` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `hair-damage-disulfide-bond-disruption-keratin-network-loss-mechanical-strength` | 하루 단백질 필요량과 피부·모발: 구강 섭취 vs 국소 제품의 구분, 펌·매직 후 손상 모발: 화학 기전과 단계별 복구 전략 |
 | `hair-dryer-after-use-unplug-safety-practice` | 헤어 에어랩·컬링기·고데기 자가점검 — 필터 청소·과열·타는 냄새·코팅 손상 |
@@ -7900,10 +8135,11 @@ _(팩트 없음)_
 | `hp-paper-jam-removal-precaution` | 캐논·엡손 프린터 인쇄 불량·잉크 오류·폐잉크 패드 자가점검 |
 | `hp-printer-connection-usb-wireless-check` | 캐논·엡손 프린터 인쇄 불량·잉크 오류·폐잉크 패드 자가점검 |
 | `hp-printer-troubleshooting-sequence` | 캐논·엡손 프린터 인쇄 불량·잉크 오류·폐잉크 패드 자가점검 |
-| `humectant-definition-water-absorption-hygroscopic` | 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과, 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과 |
+| `humectant-definition-water-absorption-hygroscopic` | 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과, 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과, 주부습진·손 건조: 자극원 기전과 세정제·보습제·장갑 관리 |
 | `humectant-humidity-dependent-efficacy-low-humidity-risk` | 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과, 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과 |
 | `humidifier-limescale-removal-citric-acid` | 가정용 제빙기 자가점검 — 얼음 안 만들어짐·얼음 작아짐·누수·냄새·소음 |
 | `humidifier-limescale-removal-vinegar` | 가정용 제빙기 자가점검 — 얼음 안 만들어짐·얼음 작아짐·누수·냄새·소음 |
+| `humidity-drop-tewl-increase-seasonal` | 주부습진·손 건조: 자극원 기전과 세정제·보습제·장갑 관리 |
 | `humidity-threshold-60percent-from-condensation-study` | 실내 곰팡이 발생 조건과 안전한 제거 및 재발 방지 |
 | `hyaluronic-acid-topical` | 겨울 난방과 실내 건조가 피부에 미치는 영향 |
 | `ice-crushing-damages-regular-blade` | 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
@@ -7941,7 +8177,7 @@ _(팩트 없음)_
 | `lg-filter-replacement-cycle` | 정수기 필터 교체 미루면 정말 위험한가 — 팩트체크 |
 | `lg-thinq-smart-diagnosis-procedure` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검 |
 | `luteal-phase-body-temperature-melatonin-disruption` | 임신 초기 피로와 프로게스테론 |
-| `lutein-zeaxanthin-basic-function-macular-pigment` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
+| `lutein-zeaxanthin-basic-function-macular-pigment` | 콘택트렌즈 착용자의 영양 결핍·안구건조 악화·루테인·오메가3 역할, 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위, 녹내장·안압과 루테인·지아잔틴·카로티노이드 보충의 신경보호 근거 |
 | `madecassoside-centella-asiatica-triterpenoid-mechanism` | 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드, 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드 |
 | `madecassoside-uvb-keratinocyte-protection` | 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드, 센텔라(Centella asiatica)의 진정 및 상처 치유 기전: 마데카소사이드 vs 아시아티코사이드 |
 | `malassezia-yeast-dandruff-seborrheic-dermatitis-pathogenesis` | 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도, 비듬 vs 지루성두피염: 임상 진단·증상·치료 차이, 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 |
@@ -7977,13 +8213,14 @@ _(팩트 없음)_
 | `microwave-spark-metal-trim-food` | 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
 | `mineral-sunscreen-zinc-oxide-broad-spectrum-titanium-uva-limited` | 산화아연과 이산화티탄의 무기 자차 비교: 파장 커버리지, 백탁, 효과 차이 |
 | `mineral-sunscreen-zinc-oxide-titanium-dioxide-fda-grase` | 선크림 제형 비교: 크림·젤·스틱·스프레이의 성능·흡수·도포감 차이 |
-| `mineral-supplementation-benefit-only-in-deficiency` | 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 |
+| `mineral-supplementation-benefit-only-in-deficiency` | 흰머리 발생과 영양: 수소과산화물·카탈라제의 역할과 결핍 기준 |
 | `minoxidil-5percent-efficacy-hair-count-increase` | 로즈마리 오일과 탈모: 어디까지 확인됐나 (미녹시딜 비교 RCT) |
 | `minoxidil-cessation-hair-loss-reversal-regrowth-loss` | 로즈마리 오일과 탈모: 어디까지 확인됐나 (미녹시딜 비교 RCT) |
 | `minoxidil-fda-approved-concentration-male-female` | 남성 vs 여성 탈모: 호르몬 메커니즘과 성분 효과 차이 |
 | `minoxidil-pregnancy-teratogenicity-risk-topical` | 남성 vs 여성 탈모: 호르몬 메커니즘과 성분 효과 차이 |
+| `moisturizer-efficacy-dermatological-conditions-eczema-xerosis-psoriasis` | 주부습진·손 건조: 자극원 기전과 세정제·보습제·장갑 관리 |
 | `moisturizer-occlusive-humectant` | 겨울 난방과 실내 건조가 피부에 미치는 영향 |
-| `moisturizer-three-classes-definition-function` | 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과, 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과 |
+| `moisturizer-three-classes-definition-function` | 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과, 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과, 주부습진·손 건조: 자극원 기전과 세정제·보습제·장갑 관리 |
 | `monitor-flickering-hdmi-version-issue` | HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
 | `motor-overheat-protection` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `mrc-vitamin-study-neural-tube-defect-prevention-1991` | 임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성 |
@@ -7995,11 +8232,11 @@ _(팩트 없음)_
 | `niacinamide-sebum-pore` | 마스크 착용으로 인한 피부 자극(마스크네) 메커니즘 및 회복 |
 | `noise-increase-filter-dirty-motor` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
 | `nutrient-synergy-magnesium-calcium-vitamin-d-trinity` | 칼슘 보충제 흡수: 형태별 생물이용률, 1회 최대 흡수량, 마그네슘 병용 효과 |
-| `occlusive-definition-petrolatum-tewl-reduction` | 바셀린(페트롤라툼): 밀폐 보습의 기준점, TEWL 감소율과 모공 막힘 논란 |
+| `occlusive-definition-petrolatum-tewl-reduction` | 주부습진·손 건조: 자극원 기전과 세정제·보습제·장갑 관리, 바셀린(페트롤라툼): 밀폐 보습의 기준점, TEWL 감소율과 모공 막힘 논란 |
 | `occlusive-examples-plant-oils-silicones-waxes` | 다이메티콘(실리콘): 밀폐제 역할, 모공 막힘 논란, TEWL 감소, 안전성 |
 | `odor-causes-filter-end-of-life-humidity-dust` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
 | `omega3-mechanism-tear-film-lipid-layer` | 건성안 관리: 인공눈물 vs 영양제 순서, 의료 표준 치료, 오메가3 근거 |
-| `omega3-mechanism-tear-film-lipid-layer-production` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
+| `omega3-mechanism-tear-film-lipid-layer-production` | 콘택트렌즈 착용자의 영양 결핍·안구건조 악화·루테인·오메가3 역할, 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
 | `optical-cable-arc-alternative` | HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
 | `oven-preheat-time-convection-importance` | 제빵기(홈베이커리) 반죽 안 섞임·안 부풀음·겉만 탐·패들 박힘·세척 자가점검 |
 | `oven-temperature-discrepancy-user-reported` | 제빵기(홈베이커리) 반죽 안 섞임·안 부풀음·겉만 탐·패들 박힘·세척 자가점검 |
@@ -8045,8 +8282,8 @@ _(팩트 없음)_
 | `sdcard-compatibility-requirement` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
 | `sdcard-speed-class-definition` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `seizure-disorder-epilepsy-supplement-drug-interaction` | 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항 |
-| `selenium-antioxidant-thyroid-hormone-metabolism` | 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 |
-| `selenium-deficiency-hair-loss-selenoprotein-impairment` | 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 |
+| `selenium-antioxidant-thyroid-hormone-metabolism` | 흰머리 발생과 영양: 수소과산화물·카탈라제의 역할과 결핍 기준 |
+| `selenium-deficiency-hair-loss-selenoprotein-impairment` | 흰머리 발생과 영양: 수소과산화물·카탈라제의 역할과 결핍 기준 |
 | `sensor-red-light-persistent-causes` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
 | `shave-irritation-acute-inflammatory-papules-pustules` | 제모 후 자극 줄이기: 면도·화학 제모제·전기 면도기 비교와 회복 전략 |
 | `shave-irritation-prevention-hair-cutting-length-moisturizing` | 제모 후 자극 줄이기: 면도·화학 제모제·전기 면도기 비교와 회복 전략 |
@@ -8112,7 +8349,7 @@ _(팩트 없음)_
 | `wireless-receiver-not-recognized-check-physical-connection` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
 | `wireless-receiver-port-swap-troubleshooting` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
 | `zinc-cold-duration-reduction-lozenge-form-requirement` | 소아 면역 영양제: 비타민D·아연·철분 권장량·상한·안전성, 남성 생식 건강 영양제: 아연·엽산·CoQ10·항산화제의 정자 품질 개선 근거 |
-| `zinc-deficiency-telogen-effluvium-hair-shedding` | 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 |
-| `zinc-excess-copper-absorption-block-shedding-risk` | 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 |
-| `zinc-hair-synthesis-protein-synthesis-requirement` | 흰머리 발생과 영양: 수소과산화물·카탈라제·동·아연의 멜라노제네시스 역할 |
+| `zinc-deficiency-telogen-effluvium-hair-shedding` | 흰머리 발생과 영양: 수소과산화물·카탈라제의 역할과 결핍 기준 |
+| `zinc-excess-copper-absorption-block-shedding-risk` | 흰머리 발생과 영양: 수소과산화물·카탈라제의 역할과 결핍 기준 |
+| `zinc-hair-synthesis-protein-synthesis-requirement` | 흰머리 발생과 영양: 수소과산화물·카탈라제의 역할과 결핍 기준 |
 | `zinc-long-term-high-dose-copper-deficiency-risk` | 남성 생식 건강 영양제: 아연·엽산·CoQ10·항산화제의 정자 품질 개선 근거 |

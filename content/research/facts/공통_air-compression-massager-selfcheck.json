@@ -1,0 +1,88 @@
+{
+ "topic": "공기압 마사지기(다리 압박 부츠) 자가진단",
+ "brand": "공통",
+ "article": "예정",
+ "captured": "2026-09-01",
+ "reused_facts": [],
+ "declined_facts": [
+  {
+   "id": "pneumatic-compression-dvt-contraindication",
+   "claim": "심부정맥혈전증이나 심부전 등 심혈관 질환이 있는 경우, 공기압 마사지기 사용 전에 반드시 의사 상담이 필요하다. 금기된 상태에서 사용하면 혈전 이동이나 증상 악화 위험이 있다",
+   "was": "https://news.hidoc.co.kr/news/articleView.html?idxno=52504",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "pneumatic-compression-skin-damage-contraindication",
+   "claim": "피부에 상처, 염증, 감염이 있는 부위에는 공기압 마사지기를 사용하면 안 된다. 공기 압박이 상처를 악화시킬 수 있다",
+   "was": "https://doctornow.co.kr/content/qna/edddd8d6fb574b339fc1dc6c6972642d",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "pneumatic-compression-pain-stop-signal",
+   "claim": "사용 중 다리가 심하게 아프다면 굳은 근육과 근막이 더 긴장되고 염증까지 생길 수 있으므로 즉시 사용을 중단해야 한다. 비골신경이 자극되어 신경 손상까지 올 수 있다",
+   "was": "https://news.hidoc.co.kr/news/articleView.html?idxno=52504",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "pneumatic-compression-swelling-paradox",
+   "claim": "처음에는 시원했지만 나중에 다리 부종이 더 심해진 경우, 그 마사지기는 즉시 중단해야 한다. 개인의 혈액순환 상태에 맞지 않을 수 있다",
+   "was": "https://godson.co.kr/leg-swelling-calf-massager-side-effects/",
+   "reason": "출처 배제(건강기기 판매사)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "pneumatic-compression-skin-redness-observation",
+   "claim": "사용 후 피부가 빨간색으로 변한 경우, 발적이 48시간 이상 지속되거나 추가로 통증, 부종, 열감이 나타나면 피부과 진료를 받아야 한다",
+   "was": "https://doctornow.co.kr/content/qna/edddd8d6fb574b339fc1dc6c6972642d",
+   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  },
+  {
+   "id": "pneumatic-compression-daily-time-limit",
+   "claim": "공기압 마사지기는 하루에 20분 이상 사용하면 과도하게 혈액순환을 자극하여 피로나 역효과를 유발할 수 있다",
+   "was": "https://godson.co.kr/leg-swelling-calf-massager-side-effects/",
+   "reason": "출처 배제(건강기기 판매사)",
+   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
+  }
+ ],
+ "disputes": [],
+ "facts": [
+  {
+   "id": "pneumatic-compression-medical-device",
+   "claim": "공기압 마사지기는 의료기기로 분류되며, 식약처 허가를 받은 제품인지 구입 전에 반드시 확인해야 한다",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "식품의약품안전처 — 의료기기 허가 기준",
+   "source_url": "https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/%EC%9D%98%EB%A3%8C%EA%B8%B0%EA%B8%B0%20%ED%92%88%EB%AA%A9%20%EB%B0%8F%20%ED%92%88%EB%AA%A9%EB%B3%84%20%EB%93%B1%EA%B8%89%EC%97%90%20%EA%B4%80%ED%95%9C%20%EA%B7%9C%EC%A0%95",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "공기압 마사지기",
+    "분류": "의료기기",
+    "시기": "현재",
+    "지역": "KR"
+   },
+   "caution": "허가되지 않은 제품은 효능을 입증할 수 없으므로 피할 것.",
+   "cautionSource": "식약처 의료기기 분류 기준"
+  },
+  {
+   "id": "pneumatic-compression-varicose-vein-caution",
+   "claim": "중증 정맥류나 급성 정맥류가 있는 경우 공기압 마사지기 사용 전에 의료진 상담이 필요하다. 정맥류가 악화되거나 혈전 위험이 증가할 수 있다",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "의료기기 안전 가이드",
+   "source_url": "https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EC%84%9C%EC%9A%B8%EB%A6%B0%EA%B5%AC-%EC%9A%B4%EB%8F%99%EC%B4%89%EC%A7%84%EC%A2%85%ED%95%A9%EB%B3%91%EC%9B%90/",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "정맥류 환자",
+    "분류": "안전",
+    "시기": "현재",
+    "지역": "KR"
+   },
+   "caution": "가벼운 정맥류라도 의료진에게 먼저 상담한 후 사용할 것.",
+   "cautionSource": "임상 안전 기준"
+  }
+ ]
+}
