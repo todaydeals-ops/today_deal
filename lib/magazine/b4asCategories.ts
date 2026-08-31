@@ -33,13 +33,13 @@ export const B4AS_CATEGORIES: B4asCategory[] = [
     key: "mobile", label: "모바일", en: "MOBILE", color: "#38539a",
     angle: "스마트폰·태블릿·워치·충전",
     seoTitle: "스마트폰·태블릿 고장 증상별 자가진단",
-    slugs: ["apple-watch-selfcheck","ereader-selfcheck","galaxy-battery-drain","galaxy-buds-selfcheck","galaxy-call-speaker-selfcheck","galaxy-charging-issue","galaxy-force-restart-safemode","galaxy-tab-selfcheck","galaxy-watch-selfcheck","ipad-charging-selfcheck","iphone-battery-health","iphone-faceid-camera-selfcheck","iphone-force-restart","iphone-overheating","phone-touch-selfcheck","portable-power-station-selfcheck","smartband-selfcheck","smartphone-battery-drain-selfcheck","smartphone-charging-selfcheck","smartphone-storage-slow-selfcheck","wireless-charger-selfcheck","phone-notification-delay-selfcheck","phone-gps-accuracy-selfcheck"],
+    slugs: ["apple-watch-selfcheck","ereader-selfcheck","galaxy-battery-drain","galaxy-buds-selfcheck","galaxy-call-speaker-selfcheck","galaxy-charging-issue","galaxy-force-restart-safemode","galaxy-tab-selfcheck","galaxy-watch-selfcheck","ipad-charging-selfcheck","iphone-battery-health","iphone-faceid-camera-selfcheck","iphone-force-restart","iphone-overheating","phone-touch-selfcheck","portable-power-station-selfcheck","smartband-selfcheck","smartphone-battery-drain-selfcheck","smartphone-charging-selfcheck","smartphone-storage-slow-selfcheck","wireless-charger-selfcheck","phone-notification-delay-selfcheck","phone-gps-accuracy-selfcheck","phone-water-damage-selfcheck","sim-esim-not-detected-selfcheck"],
   },
   {
     key: "kitchen", label: "주방가전", en: "KITCHEN", color: "#8a6a3a",
     angle: "전자레인지·인덕션·밥솥·커피머신",
     seoTitle: "전자레인지·인덕션·밥솥 고장 자가점검",
-    slugs: ["air-fryer-selfcheck","bread-maker-selfcheck","coffee-grinder-selfcheck","coffee-machine-selfcheck","cuchen-ricecooker-reset","cuckoo-ricecooker-reset","electric-griddle-selfcheck","electric-kettle-selfcheck","food-waste-processor-selfcheck","gas-range-selfcheck","hand-blender-selfcheck","highlight-cooktop-selfcheck","induction-selfcheck","juicer-selfcheck","lg-dishwasher-selfcheck","microwave-not-heating-selfcheck","oven-selfcheck","samsung-dishwasher-error","stand-mixer-selfcheck","toaster-selfcheck","food-dehydrator-error-selfcheck"],
+    slugs: ["air-fryer-selfcheck","bread-maker-selfcheck","coffee-grinder-selfcheck","coffee-machine-selfcheck","cuchen-ricecooker-reset","cuckoo-ricecooker-reset","electric-griddle-selfcheck","electric-kettle-selfcheck","food-waste-processor-selfcheck","gas-range-selfcheck","hand-blender-selfcheck","highlight-cooktop-selfcheck","induction-selfcheck","juicer-selfcheck","lg-dishwasher-selfcheck","microwave-not-heating-selfcheck","oven-selfcheck","samsung-dishwasher-error","stand-mixer-selfcheck","toaster-selfcheck","food-dehydrator-error-selfcheck","rice-cooker-keep-warm-selfcheck","capsule-coffee-machine-selfcheck"],
   },
   {
     key: "living", label: "생활가전", en: "LIVING", color: "#5a7a5a",
@@ -51,7 +51,7 @@ export const B4AS_CATEGORIES: B4asCategory[] = [
     key: "av", label: "영상·음향", en: "AV", color: "#7a5a9a",
     angle: "TV·사운드바·카메라·게임기",
     seoTitle: "TV·사운드바·카메라 고장 자가진단",
-    slugs: ["action-cam-selfcheck","airpods-selfcheck","bluetooth-speaker-selfcheck","drone-selfcheck","earbuds-case-charging-selfcheck","game-controller-selfcheck","lg-tv-selfcheck","mirrorless-camera-selfcheck","nintendo-switch-selfcheck","projector-selfcheck","ps5-selfcheck","samsung-tv-error","soundbar-selfcheck","tv-no-signal-selfcheck","tv-streaming-app-selfcheck","hdmi-connection-selfcheck","headphone-one-side-selfcheck"],
+    slugs: ["action-cam-selfcheck","airpods-selfcheck","bluetooth-speaker-selfcheck","drone-selfcheck","earbuds-case-charging-selfcheck","game-controller-selfcheck","lg-tv-selfcheck","mirrorless-camera-selfcheck","nintendo-switch-selfcheck","projector-selfcheck","ps5-selfcheck","samsung-tv-error","soundbar-selfcheck","tv-no-signal-selfcheck","tv-streaming-app-selfcheck","hdmi-connection-selfcheck","headphone-one-side-selfcheck","turntable-selfcheck","av-receiver-selfcheck"],
   },
   {
     key: "pc", label: "PC·주변", en: "PC", color: "#4a6a8a",
@@ -63,7 +63,7 @@ export const B4AS_CATEGORIES: B4asCategory[] = [
     key: "wellness", label: "헬스기기", en: "WELLNESS", color: "#9a5a7a",
     angle: "고데기·면도기·안마의자·체중계",
     seoTitle: "고데기·면도기·안마의자 고장 자가점검",
-    slugs: ["blood-pressure-monitor-selfcheck","electric-shaver-selfcheck","electric-toothbrush-selfcheck","foot-spa-selfcheck","hair-clipper-selfcheck","hair-dryer-selfcheck","hair-styler-selfcheck","ipl-epilator-selfcheck","massage-chair-selfcheck","massage-gun-selfcheck","nebulizer-selfcheck","neck-massager-selfcheck","smart-scale-selfcheck","thermometer-selfcheck","walking-pad-selfcheck","water-flosser-selfcheck"],
+    slugs: ["blood-pressure-monitor-selfcheck","electric-shaver-selfcheck","electric-toothbrush-selfcheck","foot-spa-selfcheck","hair-clipper-selfcheck","hair-dryer-selfcheck","hair-styler-selfcheck","ipl-epilator-selfcheck","massage-chair-selfcheck","massage-gun-selfcheck","nebulizer-selfcheck","neck-massager-selfcheck","smart-scale-selfcheck","thermometer-selfcheck","walking-pad-selfcheck","water-flosser-selfcheck","tens-device-selfcheck","air-compression-massager-selfcheck","heating-pad-selfcheck"],
   },
   {
     key: "service", label: "홈·통신", en: "SERVICE", color: "#8a5a3a",

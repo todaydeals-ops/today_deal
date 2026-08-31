@@ -27,6 +27,16 @@ const ONLY = slugArgRaw.split(",").filter(Boolean);
 const DROP = new Set(["guide", "fact", "factcheck", "check", "compare", "trend", "longrun", "care", "vs", "buying", "types", "type", "dosage", "size", "capacity", "999", "refresh", "self", "selfcheck", "maintenance", "sweetener", "safety", "organic", "inbody", "worth", "it", "direct", "tank", "dose", "absorption", "ratio"]);
 // 다의어·약자로 자동 키워드가 엉뚱한 이미지를 부르는 글은 수동 교정(drum=악기, msg=약자, scale=저울 등)
 const KW_OVERRIDE = {
+  // ── 2026-09-01 3차 웨이브 ──
+  "phone-water-damage-selfcheck": "wet smartphone water",
+  "sim-esim-not-detected-selfcheck": "sim card tray phone",
+  "capsule-coffee-machine-selfcheck": "capsule coffee machine",
+  "rice-cooker-keep-warm-selfcheck": "rice cooker kitchen",
+  "turntable-selfcheck": "vinyl turntable record player",
+  "av-receiver-selfcheck": "home theater av receiver",
+  "tens-device-selfcheck": "physical therapy electrode pad",
+  "air-compression-massager-selfcheck": "leg massage recovery boots",
+  "heating-pad-selfcheck": "electric heating pad blanket",
   // ── 2026-09-01 2차 웨이브 ──
   "headphone-one-side-selfcheck": "headphones on desk",
   "repeat-student-sleep": "tired student studying night",
