@@ -1,0 +1,171 @@
+{
+  "topic": "휴대폰 물손상·침수 자가점검 — 대처 절차, 말리는 방법, 서비스센터 판단",
+  "brand": "공통",
+  "article": "phone-water-damage-selfcheck",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "water-damage-power-off-immediately",
+      "claim": "휴대폰이 물에 빠지면 즉시 전원을 꺼야 한다. 물에 젖은 회로에 전류가 흐르면서 합선되어 기기가 타버릴 수 있기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 물에 빠졌을 때 조치방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/23262",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "전원이 꺼져도 배터리의 전하가 남아있을 수 있으므로, 배터리를 분리할 수 있는 구형 폰이라면 배터리까지 빼는 것이 안전하다.",
+      "cautionSource": "삼성 공식 안내의 회로 손상 경고"
+    },
+    {
+      "id": "water-damage-component-separation",
+      "claim": "전원을 끈 후 케이스, USIM 칩, SD 카드를 분리해야 한다. 케이스 안쪽에는 물기가 오래 남고, 작은 부품 주변에도 습기가 고이기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 물손상 대처법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/23262",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "케이스·USIM 분리 가능 모든 기종",
+        "years": "전 연식",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "water-damage-drying-soft-cloth",
+      "claim": "분리한 부품들은 부드러운 수건이나 마른 천 위에 올려두고, 스마트폰 본체도 가볍게 닦아준다. 충전 단자나 스피커 구멍을 세게 문지르거나 뾰족한 물건으로 찌르면 안 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 물손상 대처법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/23262",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "부품 손상이나 내부 커넥터 파손이 추가 손상을 초래할 수 있다.",
+      "cautionSource": "삼성 공식 안내의 주의사항"
+    },
+    {
+      "id": "water-damage-saltwater-freshwater-rinse",
+      "claim": "염도가 높은 바닷물이나 소독약 냄새가 진하게 풍기는 수영장 물에 빠졌다면, 휴대폰을 깨끗한 흐르는 물이나 수돗물에 1분 이내로 가볍게 헹궈야 한다. 그대로 두면 염분과 약품이 회로 부식을 가속시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 물손상 대처법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/23262",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "깨끗한 물로 헹굼은 바닷물·수영장수의 오염 제거를 위한 것이다. 일반 수돗물 침수는 헹굴 필요 없다.",
+      "cautionSource": "삼성 공식 안내의 염수·약수 구분"
+    },
+    {
+      "id": "water-damage-no-heat-source",
+      "claim": "전자제품이 젖었을 때 헤어드라이어 같은 열원을 사용하면 내부 습기가 고르지 않게 건조되고, 갑작스런 온도 변화로 인해 결로(물이 맺힘)가 더 심해질 수 있다. 자연 건조만 시도해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — 액체 감지 알림",
+      "source_url": "https://support.apple.com/en-us/102643",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "⚠️ 열을 사용한 건조는 내부 부품을 손상시킬 수 있으므로 절대 금지다.",
+      "cautionSource": "Apple 공식 안내의 명시적 경고"
+    },
+    {
+      "id": "water-damage-connector-drying-before-charging",
+      "claim": "충전 단자(USB-C, Lightning, 5-pin 등)가 완전히 건조되지 않은 상태에서 충전기나 액세서리를 연결하면 내부 단자가 부식되거나 단락(short circuit)을 일으켜 제품이 손상될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — 액체 감지 알림",
+      "source_url": "https://support.apple.com/en-us/102643",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "⚠️ 단자 부식은 눈에 띄지 않을 수 있다. 충전 포트를 명시적으로 건조 완료 후에 충전을 시도할 것.",
+      "cautionSource": "Apple 공식 안내의 충전 금지 경고"
+    },
+    {
+      "id": "water-damage-service-center-timing-1-5m-30min",
+      "claim": "1.5m 이상 깊이에 30분 이상 잠겼다면 서비스센터 방문을 권장한다. 물에 젖은 휴대폰을 즉시 전원이 꺼진 상태에서 24~48시간 이내에 전문 세척 서비스를 받으면 복구 성공률이 상당히 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SK텔레콤 고객지원 — 스마트폰 침수에 관한 모든 것",
+      "source_url": "https://news.sktelecom.com/43009",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "이 기준은 지정된 임계값이다. 1.5m 미만이거나 30분 미만이라도 즉시 전원 차단 후 자연 건조와 서비스센터 방문을 권장한다.",
+      "cautionSource": "삼성 공식 기준"
+    },
+    {
+      "id": "water-damage-internal-moisture-risk",
+      "claim": "외부가 마른 것 같아도 내부에 습기가 남아있을 수 있으므로, 자가 건조 후 기기가 정상 작동하더라도 며칠 후 갑자기 고장이 날 위험이 있다. 이를 방지하려면 전문 서비스센터의 내부 검사를 받는 것이 좋다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 물손상 위험 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/23262",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "내부 습기로 인한 부식·발화는 몇 주 뒤에 나타날 수 있다. 물손상이 경미해 보여도 전문 진단을 받을 것.",
+      "cautionSource": "삼성 공식 안내의 장기 위험 경고"
+    },
+    {
+      "id": "water-damage-ip-rating-confusion",
+      "claim": "IP67·IP68 등 방수 등급이 있는 기기도 '방수'이지 '방침수(수중 사용)'가 아니다. 등급은 정상 사용 중 우연한 물 노출(비, 샤워, 실수로 물컵 쏟음)만 보호하며, 의도적 침수나 장시간 물 속 사용은 보장 범위 밖이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 및 업계 방수 등급 해석",
+      "source_url": "https://www.samsungsvc.co.kr/solution/23262",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "IP67/IP68 등급 기종",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "방수 기기도 침수하면 보증이 적용되지 않을 수 있다. 방수 등급은 '어느 정도 견딘다'는 것이지 '완벽하다'가 아니다.",
+      "cautionSource": "삼성 공식 방수 등급 안내"
+    }
+  ]
+}

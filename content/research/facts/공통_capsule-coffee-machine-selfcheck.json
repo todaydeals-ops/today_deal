@@ -1,0 +1,98 @@
+{
+  "topic": "캡슐·커피머신 자가점검 — 물 안 나옴, 추출 불량, 디스케알링, 우유거품 이상",
+  "brand": "공통",
+  "article": "capsule-coffee-machine-selfcheck",
+  "captured": "2026-09-01",
+  "reused_facts": [
+    "capsule-machine-water-not-flowing-causes",
+    "water-tank-reinsertion-sensor-recognition",
+    "weak-water-flow-descaling-scale-buildup",
+    "descaling-frequency-six-months-to-one-year",
+    "nespresso-descaling-water-only",
+    "dolce-gusto-descaling-water-recommended",
+    "delonghi-descaling-proprietary-solution-recommended",
+    "vinegar-vs-descaling-solution-debate",
+    "capsule-not-punctured-needle-damage",
+    "extract-temperature-low-descaling-heater",
+    "milk-frother-tube-clogging-cleaning",
+    "milk-type-foam-suitability",
+    "water-tank-filter-replacement-three-months",
+    "power-reset-unplugging-five-minutes"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "capsule-coffee-machine-safety-high-temperature",
+      "claim": "캡슐 커피머신의 내부 수온은 90°C 이상으로 매우 높으므로, 추출 중이나 직후에는 추출구·캡슐·드립 트레이 주변을 만지지 말아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "네스프레소·돌체구스토·드롱기 공통 안전 경고",
+      "source_url": "https://www.nespresso.com/kr/ko/coffee-machines/how-to-guides",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "캡슐 커피머신",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "⚠️ 어린 아이가 있는 가정에서는 기계 설치 높이를 아이 손이 닿지 않게 하고, 작동 중 접근을 제한할 것.",
+      "cautionSource": "제조사 안전 지침"
+    },
+    {
+      "id": "capsule-wrong-brand-incompatibility",
+      "claim": "호환성이 없는 다른 브랜드 캡슐을 사용하면 천공 실패, 물 새는 문제, 기계 손상이 발생할 수 있다. 각 브랜드(네스프레소, 돌체구스토, 드롱기)는 공식 캡슐만 사용해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "De'Longhi 고객지원 — 커피머신 가이드",
+      "source_url": "https://www.delonghi.com/ko-kr/e/how-to-video",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "캡슐 커피머신",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "싼 호환 캡슐은 보증이 무효되고, 기계 손상 시 수리비를 전액 부담해야 할 수 있다.",
+      "cautionSource": "제조사 호환성 정책"
+    },
+    {
+      "id": "capsule-coffee-machine-scale-deposit-visual-inspection",
+      "claim": "커피머신 추출구나 노즐 주변에 흰색 가루(석회질·스케일)가 눈에 띄게 보이면, 내부 히터와 수로에도 축적이 심하다는 신호이므로 즉시 디스케알링을 수행해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "네스프레소·돌체구스토 공식 유지보수 안내",
+      "source_url": "https://www.nespresso.com/kr/ko/coffee-machines/how-to-guides",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "캡슐 커피머신",
+        "line": "전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "육안 확인 외에도, 물의 경도가 높은 지역(수도권 외곽 등)에서는 눈에 보이지 않는 내부 스케일도 축적될 수 있으므로 정기 디스케알링이 필수다.",
+      "cautionSource": "기술 지원 페이지"
+    },
+    {
+      "id": "capsule-coffee-machine-descaling-error-indicator",
+      "claim": "대부분의 캡슐 커피머신에는 디스케알링 필요 시 화면에 알림이나 표시 등이 나타난다. 이 신호가 나타나면 즉시 디스케알링을 수행해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Dolce Gusto 고객지원 — 머신 관련 문의",
+      "source_url": "https://www.dolce-gusto.co.kr/faqs",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "캡슐 커피머신",
+        "line": "전자 표시 탑재 모델",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "디스케알링 신호를 무시하고 계속 사용하면 수도꼭지 고장·펌프 손상·기계 작동 중단이 발생할 수 있다.",
+      "cautionSource": "기술 지원 경고"
+    }
+  ]
+}

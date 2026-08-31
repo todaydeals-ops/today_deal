@@ -51,7 +51,7 @@ export const B4AS_CATEGORIES: B4asCategory[] = [
     key: "av", label: "영상·음향", en: "AV", color: "#7a5a9a",
     angle: "TV·사운드바·카메라·게임기",
     seoTitle: "TV·사운드바·카메라 고장 자가진단",
-    slugs: ["action-cam-selfcheck","airpods-selfcheck","bluetooth-speaker-selfcheck","drone-selfcheck","earbuds-case-charging-selfcheck","game-controller-selfcheck","lg-tv-selfcheck","mirrorless-camera-selfcheck","nintendo-switch-selfcheck","projector-selfcheck","ps5-selfcheck","samsung-tv-error","soundbar-selfcheck","tv-no-signal-selfcheck","tv-streaming-app-selfcheck","hdmi-connection-selfcheck"],
+    slugs: ["action-cam-selfcheck","airpods-selfcheck","bluetooth-speaker-selfcheck","drone-selfcheck","earbuds-case-charging-selfcheck","game-controller-selfcheck","lg-tv-selfcheck","mirrorless-camera-selfcheck","nintendo-switch-selfcheck","projector-selfcheck","ps5-selfcheck","samsung-tv-error","soundbar-selfcheck","tv-no-signal-selfcheck","tv-streaming-app-selfcheck","hdmi-connection-selfcheck","headphone-one-side-selfcheck"],
   },
   {
     key: "pc", label: "PC·주변", en: "PC", color: "#4a6a8a",

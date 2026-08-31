@@ -1,0 +1,96 @@
+{
+  "topic": "취침시간 지연 행동(Bedtime Procrastination): 정의, 메커니즘, 영향, 연간형과의 관계",
+  "brand": "공통",
+  "article": "bedtime-procrastination",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "bedtime-procrastination-definition-delay-intended-sleep",
+      "claim": "취침시간 지연 행동(Bedtime Procrastination)은 자신이 의도한 취침 시간을 넘어 저녁 활동(휴대폰, 게임, SNS, TV 시청 등)을 계속하는 행동을 뜻하며, 수면 필요성을 인식하면서도 의도적으로 미루는 자기 조절 실패 현상이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SLEEP journal: Bedtime procrastination as the missing link between chronotype and insomnia",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13087123/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "일반",
+        "분류": "수면 행동",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "취침시간 지연은 자기 조절 부족만 아니라, 저녁형 신체 리듬의 영향도 있으므로 단순 의지력 문제로 보면 안 된다.",
+      "cautionSource": "SLEEP journal"
+    },
+    {
+      "id": "bedtime-procrastination-prevalence-students-54percent",
+      "claim": "학생을 대상으로 한 연구에서 54%의 밤에 의도한 취침 시간을 넘겨 활동을 계속했으며, 99%의 학생이 2주 내에 최소 1회 이상 취침시간 지연 행동을 했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep journal: Bedtime procrastination behavior prevalence",
+      "source_url": "https://academic.oup.com/sleep/article/47/Supplement_1/A144/7654380",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "학생",
+        "분류": "역학",
+        "시기": "근래",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "bedtime-procrastination-next-day-fatigue-twofold-odds",
+      "claim": "취침시간 지연으로 의도한 시간보다 늦게 자는 것은 다음 날 낮시간 졸음(daytime sleepiness)의 발생 위험을 2배 높이며, 부정적 감정 상태도 유의미하게 증가시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SLEEP journal: Bedtime procrastination behavioral consequences",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13087123/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "학생",
+        "분류": "결과",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "취침시간 지연은 단순한 '늦게 잠'이 아니라, 다음날 학습·인지 능력까지 저하시킨다.",
+      "cautionSource": "임상 근거"
+    },
+    {
+      "id": "bedtime-procrastination-chronotype-evening-type-higher-risk",
+      "claim": "저녁형 신체 리듬(Evening chronotype)을 가진 사람이 아침형보다 취침시간 지연 행동 점수가 유의미하게 높으며, 이는 내인성 순환 생체시계가 저녁 시간에 각성 신호를 강하게 보내기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SLEEP journal & Frontiers in Psychology: Self-Regulation and Bedtime Procrastination",
+      "source_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2018.00077/full; https://www.sciencedirect.com/science/article/abs/pii/S0191886918300813",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "저녁형 성인",
+        "분류": "위험 요인",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★저녁형 사람들이 의식적으로 노력해도 취침시간이 늦어지는 것은 '게으름'이 아니라 '생체시계 특성'이다. 이를 인식하고 수면 환경을 조정하는 것이 효과적이다.",
+      "cautionSource": "생체시계 연구"
+    },
+    {
+      "id": "bedtime-procrastination-self-control-resource-depletion",
+      "claim": "취침시간 지연 행동은 단순 자기 조절 실패(Self-control failure)만 아니라, 하루 동안 자기 조절 자원이 소진되면서 저녁 시간대에 자기 조절 역량 자체가 감소하는 것과도 연관이 있다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Frontiers in Psychology: Why Don't You Go to Bed on Time?",
+      "source_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2018.00077/full",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "일반",
+        "분류": "심리 메커니즘",
+        "시기": "근래",
+        "지역": "글로벌"
+      },
+      "caution": "저녁에 늦게까지 깨어 있으려는 욕구는 단순히 '의지가 약해서'가 아니라, 신체적·심리적 자원 고갈의 결과일 수 있다.",
+      "cautionSource": "심리학 문헌"
+    }
+  ]
+}

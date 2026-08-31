@@ -1,0 +1,81 @@
+{
+  "topic": "HDMI 연결 안 됨·신호 끊김·소리만 안 남 자가진단",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "hdmi-signal-diagnostic-tool-samsung",
+      "claim": "삼성 TV는 리모컨 [홈] → [설정] → [일반설정] → [고객지원] → [기기관리] → [자가진단] → [HDMI 점검]에서 HDMI 신호 상태를 자동 진단할 수 있으며, 진단에는 약 2분 소요된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 공식 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/2344066",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "삼성",
+        "category": "TV",
+        "line": "2024년형 스마트 TV",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "진단 중에는 연결된 외부 기기(셋톱박스, 게임기 등)가 켜진 상태여야 정확한 진단이 가능하다",
+      "cautionSource": "삼성전자서비스 자가진단 절차"
+    },
+    {
+      "id": "hdmi-cable-replacement-test-priority",
+      "claim": "HDMI 신호가 없거나 간헐적으로 끊기면 가장 먼저 케이블 자체를 교체해 테스트해야 한다. 여분의 HDMI 케이블이 있다면 원본 케이블 대신 새로운 케이블로 연결해 신호 복구 여부를 확인하는 것이 가장 확실한 진단 방법이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 공식 고객지원 + MSI 공식 기술 자료",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150371132528",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "영상기기 전반",
+        "line": "HDMI 단자 지원 제품",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "인증되지 않은 저가 HDMI 케이블은 신호 손실을 일으킬 수 있으므로, 가능하면 정품 케이블로 교체할 것",
+      "cautionSource": "HDMI 케이블 기술 규격"
+    },
+    {
+      "id": "hdmi-input-source-selection-required",
+      "claim": "모니터나 TV가 여러 개의 HDMI 포트를 가지고 있으면, 실제로 연결된 포트와 리모컨으로 선택한 입력 소스가 일치해야 신호를 받는다. 예를 들어 HDMI 3번 포트에 연결했다면 입력 소스를 'HDMI 3'으로 명시적으로 선택해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 + LG전자 공식 가이드",
+      "source_url": "https://kr.msi.com/support/technical_details/VGA_HDMI_No_Display",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "TV·모니터·노트북",
+        "line": "다중 HDMI 포트 지원 제품",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "hdmi-external-device-power-state",
+      "claim": "HDMI 신호 진단을 수행할 때는 연결된 외부 기기(셋톱박스, 게임 콘솔, 블루레이 플레이어 등)가 켜져 있어야 신호를 감지하고 정상 진단이 가능하다. 외부 기기가 대기 모드나 꺼진 상태라면 신호가 없어 진단이 실패할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 자가진단 문서",
+      "source_url": "https://www.samsungsvc.co.kr/solution/2344066",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "TV",
+        "line": "HDMI 입력 기능 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "외부 기기를 켤 때는 적어도 1~2분 기다려 기기가 완전히 부팅되도록 한 후 HDMI 신호 진단을 시작할 것",
+      "cautionSource": "삼성전자서비스 자가진단 선행 조건"
+    }
+  ]
+}

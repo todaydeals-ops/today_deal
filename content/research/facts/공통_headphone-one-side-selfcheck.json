@@ -1,0 +1,89 @@
+{
+  "topic": "무선·유선 헤드폰 한쪽만 안 들릴 때 자가진단",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "headphone-channel-balance-test-app",
+      "claim": "스마트폰에서 기본 음악 앱이나 YouTube를 재생했을 때 한쪽만 안 들리는 경우, 문제가 헤드폰인지 스마트폰 잭인지 판별하기 위해 다른 헤드폰을 같은 기기에 연결해 테스트해보는 것이 가장 빠른 진단 방법이다",
+      "was": "https://info.marihoworld.com/entry/%F0%9F%8E%B6-%EB%AC%B4%EC%84%A0-%EC%9D%B4%EC%96%B4%ED%8F%B0-%ED%95%9C%EC%AA%BD%EB%A7%8C-%EB%93%A4%EB%A6%B4-%EB%95%8C-%EC%9D%B4%EB%A0%87%EA%B2%8C-%ED%95%B4%EA%B2%B0%ED%95%B4%EB%B3%B4%EC%84%B8%EC%9A%94-%F0%9F%94%A7",
+      "reason": "출처 배제(개인블로그)",
+      "action": "Sony·Apple 공식 지원 문서로 재확보"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "wireless-earbud-battery-low-symptom",
+      "claim": "무선 이어폰이 한쪽만 소리가 안 나면 그쪽 이어폰의 배터리 부족이 주요 원인이다. 충전 케이스에 넣고 완충한 후 다시 사용해보면 많은 경우 양쪽 소리가 돌아온다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Q&A + 블루투스 기술 자료",
+      "source_url": "https://learn.microsoft.com/ko-kr/answers/questions/4125186/question-4125186",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰",
+        "line": "TWS(진정한 무선 이어폰)",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "wireless-earbud-pairing-reset-critical",
+      "claim": "충전해도 한쪽이 계속 안 들리면 충전 케이스에서 이어폰을 꺼내고 전원을 완전히 차단한 후 10~20초 대기했다가 다시 켜서 페어링을 처음부터 새로 진행해야 한다. 오래된 블루투스 연결 기록이 꼬인 경우 이 절차만으로도 해결되는 경우가 많다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony 공식 이어폰 지원 (LinkBuds·WF-1000XM 시리즈)",
+      "source_url": "https://www.sony.co.kr/electronics/support/articles/00276313",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰",
+        "line": "TWS 전 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "페어링 재설정 전에 스마트폰의 블루투스 설정에서 해당 이어폰을 '기기 삭제' 또는 '등록 해제'한 후 진행할 것",
+      "cautionSource": "Sony 공식 페어링 절차"
+    },
+    {
+      "id": "wired-headphone-jack-contact-cleaning",
+      "claim": "유선 헤드폰이 한쪽만 안 들리면 먼저 3.5mm 잭 끝부분(금속 부분)을 부드러운 천으로 닦아 접촉 불량을 제거해야 한다. 기기 마이크 잭 내부에 먼지가 쌓여 접촉 불량이 발생한 경우가 많기 때문이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sennheiser 공식 무선 이어폰 지원",
+      "source_url": "https://support.sennheiser-hearing.com/hc/en-us/articles/35235758307229-Single-side-audio-or-connection-issues-with-True-Wireless-headphones",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "유선 헤드폰",
+        "line": "3.5mm 잭 제품",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "잭을 닦을 때 물이나 이물질을 사용하지 말고 마른 천만 사용할 것. 특히 기기 잭 내부를 청소할 때는 손상을 피하기 위해 극도로 조심해야 한다",
+      "cautionSource": "유선 헤드폰 관리 지침"
+    },
+    {
+      "id": "wireless-earbud-debris-buildup-cleaning",
+      "claim": "무선 이어폰의 스피커 부분에 귀지나 먼지가 쌓이면 한쪽 소리가 작아지거나 안 들릴 수 있다. 정기적인 청소로 이어버드 표면과 스피커 구멍을 마른 극세사 천으로 닦으면 대부분 문제가 해결된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sony 공식 이어폰 관리 가이드 (WF-1000XM 시리즈)",
+      "source_url": "https://www.sony.co.kr/electronics/support/articles/00267060",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "무선 이어폰",
+        "line": "TWS 전 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "청소할 때 물을 절대 사용하지 말 것. 마른 천이나 극세사 천만 사용하고, 스피커 구멍에 물이 들어가면 고장 위험이 있다",
+      "cautionSource": "Sony 공식 이어폰 청소 지침"
+    }
+  ]
+}

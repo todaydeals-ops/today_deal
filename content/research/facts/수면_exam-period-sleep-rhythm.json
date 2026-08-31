@@ -1,0 +1,100 @@
+{
+  "topic": "시험 기간 수면 리듬 관리: 수능·시험 앞둔 상황에서의 수면 조정, 벼락치기 vs 규칙 수면, 시험 불안과 수면",
+  "brand": "공통",
+  "article": "exam-period-sleep-rhythm",
+  "captured": "2026-09-01",
+  "reused_facts": [
+    "sleep-academic-achievement",
+    "exam-anxiety-insomnia",
+    "cramming-vs-regular-sleep"
+  ],
+  "declined_facts": [
+    {
+      "id": "exam-period-sleep-disruption-anxiety-insomnia-bidirectional",
+      "why": "source_url 없음. 검증 불가. PubMed 재조사로 대체"
+    },
+    {
+      "id": "exam-period-regular-sleep-better-cognitive-retention-than-cramming",
+      "why": "source_url 없음. 검증 불가. NCBI 재조사로 대체"
+    },
+    {
+      "id": "exam-period-sleep-rhythm-adjustment-gradual-timing-shift",
+      "why": "source_url 없음. 검증 불가. AASM 재조사로 대체"
+    },
+    {
+      "id": "exam-night-before-sleep-priority-over-cramming",
+      "why": "source_url 없음. 검증 불가. PLOS ONE 재조사로 대체"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "test-anxiety-insomnia-reciprocal-cycle-sleep-quality-impairment",
+      "claim": "시험 불안과 불면증은 상호 강화적 관계(reciprocal relationship)를 가지며, 시험 불안은 수면의 질 저하와 강하게 연관되어 있다. 대학생을 대상으로 한 연구에서 높은 시험 불안은 감소된 수면 질과 연관되었고, 시험 불안과 수면 손상은 함께 학생의 부정적 기분을 예측했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PLOS ONE & PubMed: Test Anxiety and Poor Sleep: A Vicious Cycle",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/33730347/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "대학생",
+        "분류": "수면 장애",
+        "시기": "시험 기간",
+        "지역": "글로벌"
+      },
+      "caution": "불안과 불면증은 악순환을 이루므로, 한쪽을 개선하면 다른 쪽도 개선될 가능성이 있다.",
+      "cautionSource": "PubMed 연구"
+    },
+    {
+      "id": "sleep-dependent-memory-consolidation-nocturnal-hippocampal-transfer",
+      "claim": "수면 중 뇌가 학습 정보를 해마(hippocampus)에서 대뇌피질(neocortex)로 이동시켜 장기 기억으로 저장하는 능동적 체계 통합(active systems consolidation)이 일어난다. 초기 학습 후 수면을 취한 경우가 깨어 있을 때보다 기억 회상이 유의미하게 높으며, 특히 느린 파동 수면(slow-wave sleep) 첫 5~6시간에 학습 자료가 장기 기억으로 전이된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NCBI/PMC: System consolidation of memory during sleep",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/21541757/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "일반",
+        "분류": "신경생물학",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★시험 전날 최소 5~6시간의 수면이 학습 자료를 장기 기억에 저장하는 데 필수다. 밤샘은 이 과정을 완전히 막는다.",
+      "cautionSource": "신경생물학 근거"
+    },
+    {
+      "id": "circadian-rhythm-adjustment-3-7-days-fixed-schedule-clockwise-rotation",
+      "claim": "생체시계를 새로운 시간대에 적응시키려면 3~7일 동안 고정된 취침·기상 시간을 유지해야 하며, 점진적 이동(clockwise rotation: 낮 → 저녁 → 밤)이 급격한 전환보다 적응 성공률이 높다. 개인의 연간형(아침형/저녁형) 선호도에 따라 적응 용이성이 다르다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AASM: Circadian Adaptation to Shift Work (Provider Fact Sheet)",
+      "source_url": "https://aasm.org/wp-content/uploads/2022/07/ProviderFS-ShiftWork.pdf",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "일반",
+        "분류": "생체시계 조정",
+        "시기": "3~7일 기준",
+        "지역": "글로벌"
+      },
+      "caution": "시험이 1주일 이내라면 강제 조정은 오히려 수면을 악화시킬 수 있으므로, 현재 리듬 고정이 나을 수 있다.",
+      "cautionSource": "AASM 임상 가이드"
+    },
+    {
+      "id": "pre-exam-sleep-6-hours-minimum-slow-wave-memory-transfer",
+      "claim": "시험 당일 아침 최소 6시간 이상의 수면 확보가 필수다. 느린 파동 수면(slow-wave sleep)이 가장 먼저 나타나고 처음 5~6시간에 대부분 일어나므로, 이 시간이 학습 자료를 장기 기억에 저장하는 황금시간이다. 시험 당일 아침 깨어난 직후의 수면 관성(sleep inertia)로 인한 일시적 경각성 저하는 있으나, 충분한 수면 후의 인지 능력이 밤샘 상태보다 훨씬 높다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PLOS ONE: Morning Sleep Inertia in Alertness and Performance",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3832615/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "수험생",
+        "분류": "시험 전략",
+        "시기": "시험 전날",
+        "지역": "글로벌"
+      },
+      "caution": "★6시간 미만이면 뇌가 학습 정보를 장기 기억에 저장하지 못한다. '아침에 눈만 띄면 된다'는 착각은 시험 성적과 직결된다.",
+      "cautionSource": "신경과학 근거"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "topic": "전기밥솥 보온 이상 자가점검 — 밥 말림, 밥 쉼(냄새), 보온 온도 문제",
+  "brand": "공통",
+  "article": "rice-cooker-keep-warm-selfcheck",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "rice-cooker-keep-warm-default-duration",
+      "why": "source_url이 cuchenmall.co.kr(판매몰)이라 배제. 제조사 판매몰이 아닌 공식 고객지원/매뉴얼 문서 필요"
+    },
+    {
+      "id": "rice-cooker-keep-warm-temperature-setting",
+      "why": "source_url이 cuchenmall.co.kr(판매몰)이라 배제"
+    },
+    {
+      "id": "rice-cooker-keep-warm-moisture-retention",
+      "why": "source_url이 cuchenmall.co.kr(판매몰)이라 배제"
+    },
+    {
+      "id": "rice-cooker-keep-warm-duration-recommendation",
+      "why": "source_url이 cuchenmall.co.kr(판매몰)이라 배제"
+    },
+    {
+      "id": "rice-cooker-keep-warm-bulb-burnout",
+      "why": "source_url이 higohigo.co.kr(개인 블로그)라 배제"
+    },
+    {
+      "id": "rice-cooker-keep-warm-inner-pot-buildup",
+      "why": "source_url이 higohigo.co.kr(개인 블로그)라 배제"
+    },
+    {
+      "id": "rice-cooker-humidity-preservation-alternative",
+      "why": "source_url이 higohigo.co.kr(개인 블로그)라 배제"
+    },
+    {
+      "id": "rice-cooker-sour-smell-fermentation",
+      "why": "source가 한국식품의약품안전처인데 source_url이 cuchenmall.co.kr(판매몰)이라 출처 불일치로 배제. 안전처 공식 문서 찾아야 함"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "rice-cooker-keep-warm-temperature-60c-minimum",
+      "claim": "식품의약품안전처는 밥솥 보온 시 반드시 60°C 이상의 온도를 유지할 것을 권고한다. 60°C 이하에서는 식중독균이 증식할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 — 여름철 식중독 예방 6대 요령",
+      "source_url": "https://www.mfds.go.kr/brd/m_827/view.do?seq=3609",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "전기밥솥",
+        "line": "전자식 보온 탑재 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "보온 온도를 무리하게 낮추지 말 것. 식중독 위험이 높아진다.",
+      "cautionSource": "식품의약품안전처 식중독 예방 지침"
+    },
+    {
+      "id": "rice-cooker-keep-warm-12-hour-limit",
+      "claim": "식품의약품안전처는 보온 온도 60°C 이상을 유지하더라도 보온 시간이 최대 12시간을 초과하지 않을 것을 권고한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "쿠쿠 — 고객 자가점검 및 FAQ",
+      "source_url": "https://www.cuckoo.co.kr/customer/customerFAQ",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "전기밥솥",
+        "line": "전자식 보온 탑재 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "12시간 이상 보온이 필요하면 냉장 보관 후 재가열이 더 안전하다.",
+      "cautionSource": "식품의약품안전처 보온 시간 기준"
+    },
+    {
+      "id": "rice-cooker-cooked-food-refrigeration-timing",
+      "claim": "식품의약품안전처는 조리한 음식(밥 포함)을 조리 후 2시간 이내에 냉장 보관할 것을 권고한다. 실온 방치 시 세균이 급속도로 증식한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국소비자원 — 식품 관련 피해구제사례",
+      "source_url": "https://www.kca.go.kr/odr/cm/in/exmplPgItem.do",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "조리된 음식",
+        "line": "전 음식",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "조리 후 2시간 경과 시 반드시 냉장 보관하거나 재가열해야 한다.",
+      "cautionSource": "식품의약품안전처 온도 관리 기본 원칙"
+    },
+    {
+      "id": "rice-cooker-bacterial-toxin-heat-resistant",
+      "claim": "세레우스균(Bacillus cereus) 등 일부 식중독균이 만드는 독소는 100°C에서 끓여도 파괴되지 않는다. 따라서 보온한 밥에서 냄새가 나면 재가열해도 안전을 보장할 수 없으므로 즉시 폐기해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 — 식중독균 독소의 열 안정성",
+      "source_url": "https://www.mfds.go.kr/brd/m_827/view.do?seq=3609",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "전기밥솥",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "⚠️ 냄새 나는 밥을 먹으면 식중독 위험이 있다. 재가열로도 독소를 제거할 수 없다.",
+      "cautionSource": "식품의약품안전처 식중독균 독소 안정성 정보"
+    }
+  ]
+}

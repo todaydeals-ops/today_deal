@@ -1,0 +1,83 @@
+{
+  "topic": "초록입홍합(뉴질랜드 초록홍합) 추출물: 관절염 임상 근거, 효과 일관성, 신뢰도",
+  "brand": "공통",
+  "article": "green-lipped-mussel",
+  "captured": "2026-09-01",
+  "reused_facts": [
+    "disease-prevention-vs-disease-progression-delay-distinction",
+    "small-sample-size-low-statistical-power",
+    "rct-randomized-controlled-trial-definition-gold-standard"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "green-lipped-mussel-perna-canaliculus-definition-composition",
+      "claim": "초록입홍합(Perna canaliculus)은 뉴질랜드 고유의 홍합으로, 오메가-3 지방산, 글루코사민, 콘드로이틴, 글리코사미노글리칸(GAG) 등을 함유하며, 동결 건조 분말 또는 지질 추출물 형태로 영양제로 판매된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Clinical Rheumatology, NCBI/PMC 체계적 고찰",
+      "source_url": "https://link.springer.com/article/10.1007/s10067-005-0001-8",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "일반",
+        "분류": "성분 정보",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "green-lipped-mussel-rct-evidence-inconsistent-5-of-5-unclear",
+      "claim": "초록입홍합의 임상근거는 일관되지 않다. 5개의 무작위대조시험(RCT) 중 일부는 효과를 보였으나, 전체적으로는 '동결 건조 분말의 관절염 치료 효과에 대한 일관되고 설득력 있는 근거가 부족하다'는 체계적 고찰의 결론이 있다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Systematic Review in Clinical Rheumatology (2005); Updated Systematic Review (2021)",
+      "source_url": "https://link.springer.com/article/10.1007/s10067-005-0001-8; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8298224/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "관절염 환자",
+        "분류": "임상 근거",
+        "시기": "2005~2021",
+        "지역": "글로벌"
+      },
+      "caution": "★'효과 없음'이 입증된 게 아니라, '확실하지 않음'이다. 개인차가 있을 수 있다는 의미이므로, 집필할 때 부정형으로 쓰면 안 된다.",
+      "cautionSource": "체계적 고찰의 결론"
+    },
+    {
+      "id": "green-lipped-mussel-lipid-extract-76-70-efficacy-signal",
+      "claim": "한 무작위대조시험에서 지질 추출물 형태의 초록입홍합은 류마티스 관절염 환자 76%, 골관절염 환자 70%에서 이점을 보고했다. 다른 파일럿 연구에서도 무릎 관절염 통증, 뻣뻣함, 이동성 개선이 관찰되었다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Randomized trial (Whitehouse et al.), Pilot study: Green-lipped mussel (Perna canaliculus) extract efficacy in knee osteoarthritis",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0965229998800034; https://pubmed.ncbi.nlm.nih.gov/22366869/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "관절염 환자",
+        "분류": "임상 근거",
+        "시기": "개별 시험",
+        "지역": "글로벌"
+      },
+      "caution": "이 연구들은 표본 크기가 작거나 설계가 완벽하지 않을 수 있다. '모든 환자가 효과를 본다'는 의미가 아니다. 대규모 RCT 재현이 필요하다.",
+      "cautionSource": "임상 방법론"
+    },
+    {
+      "id": "green-lipped-mussel-freeze-dried-vs-lipid-extract-efficacy-gap",
+      "claim": "동결 건조 분말(freeze-dried powder) 형태는 효과 입증이 부족한 반면, 지질 추출물(lipid extract) 형태는 일부 임상에서 신호를 보였다. 제형에 따라 생물이용률과 유효 성분 농도가 크게 다를 수 있다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Systematic Review: Green-lipped mussel in osteoarthritis treatment (2021)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8298224/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "관절염 환자",
+        "분류": "제형 차이",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "★시판되는 초록입홍합 제품들이 어떤 제형인지 명시하지 않는 경우가 많다. 소비자는 제품 상세 정보를 확인해야 한다.",
+      "cautionSource": "제형 투명성 문제"
+    }
+  ]
+}

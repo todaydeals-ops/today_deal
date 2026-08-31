@@ -27,6 +27,9 @@ const ONLY = slugArgRaw.split(",").filter(Boolean);
 const DROP = new Set(["guide", "fact", "factcheck", "check", "compare", "trend", "longrun", "care", "vs", "buying", "types", "type", "dosage", "size", "capacity", "999", "refresh", "self", "selfcheck", "maintenance", "sweetener", "safety", "organic", "inbody", "worth", "it", "direct", "tank", "dose", "absorption", "ratio"]);
 // 다의어·약자로 자동 키워드가 엉뚱한 이미지를 부르는 글은 수동 교정(drum=악기, msg=약자, scale=저울 등)
 const KW_OVERRIDE = {
+  // ── 2026-09-01 2차 웨이브 ──
+  "headphone-one-side-selfcheck": "headphones on desk",
+  "repeat-student-sleep": "tired student studying night",
   // ── 2026-09-01 신규 9편 ──
   // 자동 추출은 slug 앞 두 단어를 쓴다. "green lipped"·"gout uric" 처럼
   // 성분·질환명이 잘리면 엉뚱한 그림이 온다. 장면으로 바꿔 지정한다.

@@ -1,0 +1,155 @@
+{
+  "topic": "휴대폰 알림 안 오거나 늦을 때 자가점검 — 권한, 방해금지 모드, 절전 모드, 네트워크",
+  "brand": "공통",
+  "article": "phone-notification-delay-selfcheck",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "notification-app-permission-check",
+      "claim": "특정 앱의 알림이 안 올 때 먼저 확인할 사항은 해당 앱에 알림 권한이 켜져 있는지이다. 설정 > 알림 > 해당 앱 선택 후 '알림 허용'이 ON으로 되어 있어야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Android 고객센터 — Android에서 알림 제어",
+      "source_url": "https://support.google.com/android/answer/9079661?hl=ko",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "앱 알림을 '전체 ON'으로 설정했어도, 특정 알림 카테고리(예: 채팅, 주문 상태)만 OFF일 수 있으므로 세부 항목도 확인해야 한다.",
+      "cautionSource": "Google 공식 안내의 세분화된 알림 제어"
+    },
+    {
+      "id": "do-not-disturb-mode-exception-apps",
+      "claim": "방해금지 모드(안드로이드)나 집중 모드(아이폰)가 활성화되면 예외 앱을 제외한 모든 알림이 무음으로 처리된다. 안드로이드는 [설정 > 소리/진동 > 방해금지 > 예외 앱 확인], 아이폰은 [설정 > 집중 모드 > 해당 모드 > 허용 앱 확인]을 통해 중요 앱을 예외 목록에 추가해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 알림이 안 떠요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/36303",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "방해금지/집중 모드는 시간대별로 자동 설정될 수 있으므로, 야간이나 업무 중 자동 활성화 설정이 있는지 확인할 것.",
+      "cautionSource": "삼성 공식 안내"
+    },
+    {
+      "id": "battery-saver-mode-background-restriction",
+      "claim": "절전 모드(배터리 세이버)가 활성화되면 백그라운드에서의 앱 활동이 제한되므로 알림이 늦게 오거나 아예 오지 않을 수 있다. 설정 > 배터리 > 절전 모드를 해제하거나, 중요 앱을 예외 목록에 추가하면 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 알림이 안 떠요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/36303",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "절전 모드는 배터리 부족 시 자동으로 활성화될 수 있으므로, 배터리 잔량 확인도 함께 할 것.",
+      "cautionSource": "삼성 공식 안내"
+    },
+    {
+      "id": "app-notification-channel-category",
+      "claim": "안드로이드는 앱의 알림 권한이 '전체 ON'이어도, 앱 내부의 알림 카테고리/채널(예: 중요 알림, 서비스 알림, 채팅, 결제)이 꺼져 있으면 그 종류의 알림만 오지 않을 수 있다. 설정 > 앱 > 해당 앱 > 알림 > 카테고리/채널 섹션을 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 알림이 안 떠요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/36303",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 기종",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "이 항목은 안드로이드 8.0(오레오) 이상에서 지원되는 기능이다. 구형 안드로이드 기기는 채널 개념이 없을 수 있다.",
+      "cautionSource": "삼성 공식 안내의 버전별 기능 구분"
+    },
+    {
+      "id": "network-connectivity-internet-requirement",
+      "claim": "대부분의 푸시 알림은 인터넷 연결을 통해 전달되므로, Wi-Fi나 모바일 데이터가 불안정하면 알림이 지연되거나 누락될 수 있다. 네트워크 상태를 확인하고 안정적인 연결로 전환해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 알림이 안 떠요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/36303",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "Wi-Fi는 연결되어 있어도 인터넷이 끊어져 있을 수 있다. 웹 브라우저를 열어 페이지 로드 확인으로 실제 인터넷 연결을 검증할 것.",
+      "cautionSource": "네트워크 문제 진단 기본"
+    },
+    {
+      "id": "app-background-data-restriction",
+      "claim": "설정 > 앱 > 해당 앱 > 배터리 또는 데이터 설정에서 백그라운드 제한이 활성화되어 있으면 앱이 백그라운드에서 알림 신호를 받을 수 없다. '백그라운드 제한 없음' 또는 '항상 허용'으로 변경하면 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 알림이 안 떠요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/36303",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 기종",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "이 설정은 배터리 소비량 증가로 이어질 수 있으므로, 중요 앱만 예외로 설정할 것.",
+      "cautionSource": "삼성 공식 안내의 주의사항"
+    },
+    {
+      "id": "app-internal-notification-settings",
+      "claim": "스마트폰의 알림 설정이 아니라, 앱 자체의 톱니바퀴(설정) 메뉴 > [알림] 항목에서 알림이 꺼져 있는 경우가 있다. 스마트폰 설정을 확인한 후에도 알림이 안 오면 앱 내부 설정까지 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "사용자 커뮤니티 경험담",
+      "source_url": "https://smart-tip.kr/%ED%8A%B9%EC%A0%95-%EC%95%B1-%EC%95%8C%EB%A6%BC%EC%9D%B4-%EC%95%88-%EC%98%AC-%EB%95%8C-%EC%A0%9C%EA%B0%80-%ED%95%AD%EC%83%81-%EB%A8%BC%EC%A0%80-%EB%B3%B4%EB%8A%94-%EC%84%A4%EC%A0%95/",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "각 앱의 설정 위치가 다를 수 있으므로, 앱 메뉴를 꼼꼼히 살펴야 한다.",
+      "cautionSource": "사용자 보고"
+    },
+    {
+      "id": "notification-delay-vs-loss-distinction",
+      "claim": "알림이 '늦게' 오는 것(지연)과 '안 오는' 것(누락)은 원인이 다를 수 있다. 지연은 주로 네트워크 문제이고, 누락은 권한·설정·기기 문제일 가능성이 높다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "스마트폰 알림 문제 커뮤니티 분석",
+      "source_url": "https://baekgang.com/entry/%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0-%EC%95%8C%EB%A6%BC%EC%9D%B4-%EC%95%88-%EC%98%AC-%EB%95%8C-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "사용자 입장에서는 두 현상을 구분하기 어려울 수 있으므로, 자가점검 체크리스트를 위에서 아래로 순차적으로 따를 것.",
+      "cautionSource": "문제 진단 순서"
+    }
+  ]
+}

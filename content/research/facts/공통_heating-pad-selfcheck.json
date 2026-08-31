@@ -1,76 +1,116 @@
 {
- "topic": "온열패드 자가진단",
- "brand": "공통",
- "article": "예정",
- "captured": "2026-09-01",
- "reused_facts": [
-  "battery-swelling-stop-immediately"
- ],
- "declined_facts": [
-  {
-   "id": "low-temp-burn-definition",
-   "claim": "저온화상은 40~70도의 비교적 낮은 온도에서 피부가 반복적으로 접촉할 때 누적되는 열 손상을 말한다. 높은 온도의 급성 화상과 달리 천천히 진행되어 피부 괴사까지 발전할 수 있다",
-   "was": "https://news.hidoc.co.kr/news/articleView.html?idxno=57616",
-   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
-   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
-  },
-  {
-   "id": "heating-pad-safety-features",
-   "claim": "온열패드의 기본 안전 기능은 과열 방지 센서와 자동 전원 차단이다. 이 기능이 없거나 고장 난 제품은 저온화상 위험이 크다",
-   "was": "https://www.medicaldaily.co.kr/post/21792",
-   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
-   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
-  },
-  {
-   "id": "heating-pad-direct-skin-contact-danger",
-   "claim": "온열패드를 옷 위에 깔고 사용하거나 두꺼운 이불 덮개를 사용하면 저온화상 위험을 크게 줄일 수 있다. 직접 피부에 접촉하도록 설계된 제품이 아닌 이상 옷이나 보호층이 필수다",
-   "was": "https://www.k-health.com/news/articleView.html?idxno=57717",
-   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
-   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
-  },
-  {
-   "id": "heating-pad-temperature-setting-consistency",
-   "claim": "정상 온열패드는 설정된 온도에서 일정하게 유지되며, 자동 온도 조절이 작동하지 않거나 온도가 계속 올라가는 경우는 온도 센서나 제어회로 고장 신호다",
-   "was": "https://www.medicaldaily.co.kr/post/21792",
-   "reason": "출처 배제(건강 매체·비대면진료앱·Q&A 커뮤니티)",
-   "action": "식약처·대학병원·학회·제조사 공식 문서로 재확보 필요"
-  }
- ],
- "disputes": [],
- "facts": [
-  {
-   "id": "heating-pad-water-damage-check",
-   "claim": "온열패드가 물에 젖었거나 습한 환경에 오래 노출된 경우 전선 손상, 누전, 과열 위험이 생긴다. 습기로 인한 손상은 시각적으로 보이지 않을 수 있으니 의심되면 사용을 중단해야 한다",
-   "tier": "확실",
-   "evidence": "후기",
-   "source": "전기 안전 가이드 및 제품 리뷰",
-   "source_url": "https://safety.kesco.or.kr/",
-   "checked": "2026-09-01",
-   "scope": {
-    "대상": "온열패드",
-    "분류": "안전",
-    "시기": "전 연식",
-    "지역": "KR"
-   },
-   "caution": "물에 젖은 후 외관상 정상으로 보여도 내부 손상은 시간 경과 후 나타날 수 있다. 확실하지 않으면 가정용 멀티미터로 절연저항을 측정하거나 서비스센터에 맡길 것.",
-   "cautionSource": "전기안전공사 안내 원칙"
-  },
-  {
-   "id": "heating-pad-frayed-cord-danger",
-   "claim": "전선 피복이 벗겨지거나 손상된 온열패드는 감전이나 화재 위험이 있다. 전선을 테이프로 임시 보수하는 것은 위험하며 즉시 사용을 중단해야 한다",
-   "tier": "확실",
-   "evidence": "후기",
-   "source": "전기 안전 공사 가이드",
-   "source_url": "https://www.kesco.or.kr/",
-   "checked": "2026-09-01",
-   "scope": {
-    "대상": "온열패드",
-    "분류": "안전",
-    "시기": "전 연식",
-    "지역": "KR"
-   },
-   "caution": "임시 보수로는 근본적인 전기 안전을 확보할 수 없다. 서비스센터 수리 또는 교체를 권할 것.",
-   "cautionSource": "전기안전공사의 임시 보수 위험성 강조"
-  }
- ]
+  "topic": "온열패드 자가진단",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [
+    "battery-swelling-stop-immediately"
+  ],
+  "declined_facts": [
+    {
+      "id": "heating-pad-continuous-use-time-limit",
+      "claim": "대부분의 온열패드는 연속 사용 시간이 30분~2시간으로 설정되어 있으며, 이는 장시간 사용으로 인한 저온화상을 방지하기 위한 자동 전원 차단 기능이다. 이 기능이 없거나 타이머가 작동하지 않으면 저온화상 위험이 크게 증가한다",
+      "was": "https://www.medicaldaily.co.kr/post/22471",
+      "reason": "출처 배제(건강 매체)",
+      "action": "의료기관·정부기관 공식으로 재확보"
+    },
+    {
+      "id": "heating-pad-low-temperature-burn-exposure-time",
+      "claim": "저온화상은 온도와 노출 시간의 조합으로 발생한다. 40~45도에서는 약 3시간 이상 지속 노출, 50도 이상에서는 5분 이내 노출로도 화상이 발생할 수 있으므로, 온열패드의 설정 온도와 사용 시간을 함께 고려해야 한다",
+      "was": "https://skysky138.com/%EC%A0%80%EC%98%A8%ED%99%94%EC%83%81-%EC%98%A8%EB%8F%84-%EB%AA%87%EB%8F%84%EC%97%90-%ED%99%94%EC%83%81%EC%9D%84-%EC%9E%85%EB%82%98/",
+      "reason": "출처 배제(개인블로그)",
+      "action": "의료기관 공식 자료로 재확보"
+    },
+    {
+      "id": "heating-pad-frayed-cord-danger",
+      "claim": "전선 피복이 벗겨지거나 손상된 온열패드는 감전이나 화재 위험이 있다. 전선을 테이프로 임시 보수하는 것은 위험하며 즉시 사용을 중단해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "전기안전공사 안전 기준",
+      "source_url": "https://www.kesco.or.kr/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "온열패드",
+        "분류": "안전",
+        "시기": "전 연식",
+        "지역": "KR"
+      },
+      "caution": "임시 보수로는 근본적인 전기 안전을 확보할 수 없다. 서비스센터 수리 또는 교체를 권할 것.",
+      "cautionSource": "전기안전공사의 임시 보수 위험성 강조",
+      "declined_reason": "source_url 이 전기안전공사 사이트 루트(https://www.kesco.or.kr/)라 출처로 인정 불가. 주장 자체(전선 피복 손상 시 감전·화재 위험, 테이프 임시 보수 금지)는 타당하므로 출처만 다시 찾으면 살아난다.",
+      "retry_hint": "국가기술표준원 kats.go.kr 전기용품 안전기준, 제품안전정보센터 safetykorea.kr 의 전선·코드 관련 리콜 공표, 한국전기안전공사의 개별 게시물(루트 말고 실제 문서 URL), 소방청 화재통계 중 전기장판·온열기기 항목",
+      "declined_at": "2026-09-01"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "heating-pad-water-damage-check",
+      "claim": "온열패드 제품의 온도 기준치를 초과하거나 절연 손상이 있을 경우 누전, 과열, 화상 위험이 생긴다. 제품안전정보센터의 리콜 공표에 따르면 일부 온열매트는 내부 전열소자의 온도가 안전 기준치를 최대 35℃까지 초과해 화상 위험이 있는 것으로 적발되었다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "제품안전정보센터 — 온열매트 리콜 공표",
+      "source_url": "https://www.safetykorea.kr/recall/ajax/recallBoard?recallUid=10022123",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "온열패드·온열매트",
+        "분류": "안전",
+        "시기": "전 연식",
+        "지역": "KR"
+      },
+      "caution": "온열패드 구입 전 제품안전정보센터의 리콜 목록을 확인해 해당 제품이 결함으로 리콜되지 않았는지 확인할 것. 기준치를 초과하는 제품은 즉시 사용 중단하고 교환을 요청해야 한다",
+      "cautionSource": "제품안전정보센터 리콜 공표 기준"
+    },
+    {
+      "id": "low-temperature-burn-definition-temperature-exposure",
+      "claim": "저온화상은 40~70도의 상대적으로 낮은 온도에 반복해서 피부가 접촉할 때 누적되는 열 손상이다. 특히 40~50도 구간에서는 1시간 이상 지속 노출 시 발생할 수 있으며, 50도 이상에서는 5~10분 내 화상이 발생한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원 — 화상 질환백과 및 저온화상 정보",
+      "source_url": "https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=32321",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "온열패드 사용자",
+        "분류": "안전",
+        "시기": "전 연식",
+        "지역": "KR"
+      },
+      "caution": "저온화상은 급성 화상과 달리 느낌이 없어 누적되기 쉽다. 온열패드 사용 후 피부를 정기적으로 확인하고, 가려움·홍반·물집이 나타나면 즉시 사용 중단할 것",
+      "cautionSource": "서울아산병원 화상 질환 정보"
+    },
+    {
+      "id": "low-temperature-burn-symptoms-early-detection",
+      "claim": "저온화상의 초기 증상은 사용 부위의 가려움증으로 시작해 점진적으로 불긋불긋한 홍반, 각질 박리, 물집 형성으로 진행된다. 증상이 나타나는 순간 사용을 중단하고 피부과 진료를 받는 것이 피부 손상을 최소화하는 방법이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울아산병원 — 화상 치료 및 증상 정보",
+      "source_url": "https://www.amc.seoul.kr/asan/mobile/healthtv/video/videoDetail.do?videoId=2912&categoryCode=C02009001",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "온열패드 사용자",
+        "분류": "안전",
+        "시기": "전 연식",
+        "지역": "KR"
+      },
+      "caution": "저온화상은 사용자가 느끼지 못할 수 있으므로, 정기적으로 피부를 육안 검사하는 것이 필수다. 특히 야간 수면 중 사용은 위험도가 높다",
+      "cautionSource": "서울아산병원 저온화상 경고 정보"
+    },
+    {
+      "id": "heating-pad-burn-injury-consumer-surveillance-data",
+      "claim": "한국소비자원 소비자위해감시시스템(CISS)에 등록된 전기 마사지기(온열패드 포함) 관련 위해정보는 2022년부터 2025년 10월까지 총 2,161건이며, 겨울철(12월~2월) 사고가 전체의 48.5%를 차지한다. 이 중 2도 화상이 63.1%로 가장 많았으며, 피해 부위는 둔부·다리·발이 68.4%였다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국소비자원 — 소비자안전주의보(전기 마사지기 저온화상)",
+      "source_url": "https://www.kca.go.kr/home/sub.do?menukey=4006&mode=view&no=1003052349",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "온열패드·전기 마사지기 사용자",
+        "분류": "위해 통계",
+        "시기": "2022~2025년",
+        "지역": "KR"
+      },
+      "caution": "여성이 남성보다 2배 이상 화상 위해를 입고 있으며, 대다수(35%)가 야간 수면 중 깨달았다는 점에서 야간 장시간 사용의 위험성이 높다. 특히 혼자 사용할 때는 주기적인 피부 확인이 불가능하므로 시간 제한 기능이 있는 제품을 선택할 것",
+      "cautionSource": "한국소비자원 위해정보 통계"
+    }
+  ]
 }

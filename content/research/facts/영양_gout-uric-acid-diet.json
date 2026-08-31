@@ -1,0 +1,96 @@
+{
+  "topic": "통풍·요산 관리: 식이 요법, 퓨린 함량 음식, 영양제",
+  "brand": "공통",
+  "article": "gout-uric-acid-diet",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "gout-pathophysiology-purine-uric-acid-monosodium-urate-crystals",
+      "claim": "통풍은 신체가 음식에서 섭취한 퓨린을 분해할 때 생성되는 요산이 과도하게 축적되어 혈중 요산 수치가 높아지면, 요산이 결정화되어 관절에 모노소듐우레이트(MSU) 결정이 침착되는 급성 염증 반응 질환이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "National Kidney Foundation, Mayo Clinic",
+      "source_url": "https://www.kidney.org/news-stories/what-to-eat-and-avoid-if-you-have-gout",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "통풍 환자",
+        "분류": "질환 기전",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "통풍은 영양제만으로 치료되지 않으며, 의료진의 약물 치료가 필수이다. 영양 관리는 보조적 역할이다.",
+      "cautionSource": "의료 가이드"
+    },
+    {
+      "id": "gout-diet-high-purine-foods-to-avoid",
+      "claim": "고퓨린 음식(간, 신장, 내장, 굴·홍합·멸치·정어리 등 자극 많은 해산물, 고과당 음료)을 제한하면 요산 수치를 낮출 수 있다. 특히 간·신장 같은 내장 음식은 퓨린 함량이 매우 높고, 소주·맥주 등 알코올 음료는 요산 배출을 방해한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "National Kidney Foundation, Mayo Clinic, Arthritis Foundation",
+      "source_url": "https://www.kidney.org/news-stories/what-to-eat-and-avoid-if-you-have-gout; https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/gout-diet/art-20048524",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "통풍 환자",
+        "분류": "식이 제한",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "특히 소주·맥주는 요산 생성을 촉진하고 배출을 방해하므로, 통풍 환자는 발작 방지를 위해 제한이 필수다.",
+      "cautionSource": "의료 기관 가이드"
+    },
+    {
+      "id": "gout-diet-high-fructose-soft-drinks-risk",
+      "claim": "고과당 옥수수 시럽(HFCS)이 포함된 청량음료(콜라, 스프라이트, 에너지 음료)는 과도한 프룩토스가 요산 생성을 직접 증가시키므로, 통풍 환자에게는 특히 위험하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "National Kidney Foundation, Cleveland Clinic",
+      "source_url": "https://www.kidney.org/news-stories/what-to-eat-and-avoid-if-you-have-gout; https://my.clevelandclinic.org/health/treatments/22548-gout-low-purine-diet",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "통풍 환자",
+        "분류": "식이 제한",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "인공 감미료 음료(다이어트 음료)도 요산 수치 상승과 연관이 있을 수 있으므로 주의가 필요하다.",
+      "cautionSource": "의료 문헌"
+    },
+    {
+      "id": "gout-diet-low-purine-foods-recommended",
+      "claim": "저퓨린 음식으로 과일, 채소, 통곡물, 콩류(적당량), 견과류, 저지방 유제품을 권장한다. 특히 체리, 저지방 유제품, 커피는 요산 수치를 낮추는 효과가 임상에서 보고되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "National Kidney Foundation, Arthritis Foundation",
+      "source_url": "https://www.kidney.org/news-stories/what-to-eat-and-avoid-if-you-have-gout; https://www.arthritis.org/health-wellness/healthy-living/nutrition/healthy-eating/which-foods-are-safe-for-gout",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "통풍 환자",
+        "분류": "식이 권장",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "체리는 일부 연구에서만 효과가 입증되었으므로, 단독 치료법으로 기대하면 안 된다.",
+      "cautionSource": "의료 가이드"
+    },
+    {
+      "id": "gout-diet-dash-mediterranean-diet-efficacy",
+      "claim": "DASH 식단(고혈압 완화식)과 지중해식 다이어트는 통풍 위험을 낮추는 것으로 임상에서 보고되었으며, 단일 식품 제한보다 전체 식생활 패턴 변화가 더 효과적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "National Kidney Foundation",
+      "source_url": "https://www.kidney.org/news-stories/what-to-eat-and-avoid-if-you-have-gout",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "통풍 환자",
+        "분류": "식이 요법",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "DASH·지중해식은 단기가 아니라 장기적 생활습관 변화를 요구한다. 급성 발작 예방만으로는 제한적이다.",
+      "cautionSource": "의료 가이드"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "topic": "초등학생 적정 취침시간과 학습: 필요 수면량, 권장 취침 시각, 학업 성적의 관계",
+  "brand": "공통",
+  "article": "elementary-school-bedtime",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "elementary-age-children-6-12-years-sleep-duration-9-12-hours",
+      "claim": "미국 수면의학회(American Academy of Sleep Medicine)와 미국 소아과학회(American Academy of Pediatrics)는 초등학생(6~12세)의 권장 수면 시간을 9~12시간으로 설정했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "American Academy of Sleep Medicine (AASM) Sleep Duration Consensus, AAP Endorsement",
+      "source_url": "https://aasm.org/advocacy/position-statements/child-sleep-duration-health-advisory/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "초등학생(6~12세)",
+        "분류": "수면 가이드라인",
+        "시기": "2026 현행",
+        "지역": "미국/글로벌"
+      },
+      "caution": null,
+      "cautionSource": null
+    },
+    {
+      "id": "elementary-bedtime-7pm-9pm-target-morning-wakeup",
+      "claim": "초등학생이 9~12시간을 확보하려면, 학교 등교 시간에 맞춰 역산할 때 저녁 7시~9시 사이 취침이 일반적인 목표가 된다. 예: 아침 7시 기상 시 저녁 7~8시 취침, 아침 6시 30분 기상 시 저녁 6시 30분~7시 30분 취침.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAP HealthyChildren.org, CDC Healthy Schools",
+      "source_url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/healthy-sleep-habits-how-many-hours-does-your-child-need.aspx; https://archive.cdc.gov/www_cdc_gov/healthyschools/features/students-sleep.htm",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "초등학생",
+        "분류": "수면 가이드라인",
+        "시기": "2026 현행",
+        "지역": "미국"
+      },
+      "caution": "★이는 평균 기준이며, 개별 아이의 필요 수면량, 학교 등교 시간, 개인차를 고려해 조정해야 한다.",
+      "cautionSource": "가이드라인"
+    },
+    {
+      "id": "sleep-deprivation-children-attention-behavior-learning-impairment",
+      "claim": "초등학생이 권장 수면 시간(9~12시간)보다 적게 자면, 다음날 주의력, 행동 조절, 학습 능력, 기억력이 저하되고, 감정 조절도 어려워져 불안감·우울감이 증가할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAP HealthyChildren.org - Sleep Benefits",
+      "source_url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/healthy-sleep-habits-how-many-hours-does-your-child-need.aspx",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "초등학생",
+        "분류": "수면 부족의 영향",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
+      "caution": "수면 부족의 영향은 즉시 나타나지 않지만, 누적되면 학습 성적, 행동 문제, 정신 건강에 심각한 영향을 준다.",
+      "cautionSource": "의료 기관 권장"
+    },
+    {
+      "id": "sleep-deprivation-children-obesity-hypertension-depression-risk",
+      "claim": "매일 밤 권장 수면 시간보다 적게 자는 초등학생은 비만, 고혈압, 우울증 발생 위험이 높아지며, 이는 장기적 건강 문제로 이어질 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAP HealthyChildren.org - Long-term Health Risks of Sleep Deprivation",
+      "source_url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/healthy-sleep-habits-how-many-hours-does-your-child-need.aspx",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "초등학생",
+        "분류": "수면 부족의 영향",
+        "시기": "장기",
+        "지역": "글로벌"
+      },
+      "caution": "★수면은 '쉬는 시간'이 아니라, 성장·학습·면역력·신진대사를 담당하는 '활동 시간'이다. 특히 초등학생은 성장 호르몬이 수면 중에 분비되므로 충분한 수면이 필수다.",
+      "cautionSource": "의료 기관 권장"
+    },
+    {
+      "id": "consistent-sleep-schedule-importance-circadian-rhythm-development",
+      "claim": "초등학생은 몸의 생체시계가 형성되고 조절되는 시기이므로, 매일 같은 시간에 잠들고 일어나는 일관된 수면 습관이 건강한 순환 리듬을 만드는 데 매우 중요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AAP HealthyChildren.org, AASM Sleep Routine Recommendations",
+      "source_url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/healthy-sleep-habits-how-many-hours-does-your-child-need.aspx",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "초등학생",
+        "분류": "수면 습관",
+        "시기": "발달기",
+        "지역": "글로벌"
+      },
+      "caution": "주중에 일관된 시간을 유지하고, 주말에도 1시간 이내의 변동으로 유지하는 것이 권장된다. 주말과 주중의 큰 차이는 '사회적 시간차(social jetlag)'을 초래한다.",
+      "cautionSource": "수면 의학"
+    }
+  ]
+}

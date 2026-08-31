@@ -1,0 +1,122 @@
+{
+  "topic": "관절 영양제 복용 기간: 효과 판단까지 필요한 기간, 임상 기준, 개인차",
+  "brand": "공통",
+  "article": "joint-supplement-duration",
+  "captured": "2026-09-01",
+  "reused_facts": [
+    "glucosamine-chondroitin-gait-trial-window-summary",
+    "disease-prevention-vs-disease-progression-delay-distinction",
+    "small-sample-size-low-statistical-power"
+  ],
+  "declined_facts": [
+    {
+      "id": "joint-supplement-early-response-variation-by-individual",
+      "why": "source_url 없음. 검증 불가. GAIT 논문의 구체적 분석으로 대체"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "joint-supplement-clinical-trial-standard-duration-3-6-months",
+      "claim": "관절 건강 영양제(글루코사민, 콘드로이틴, MSM 등)에 대한 임상시험의 표준 기간은 3~6개월이며, 이는 영양소 흡수, 연골 기질 변화, 증상 개선이 충분히 나타나는 데 필요한 최소 기간으로 설정되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NEJM GAIT Trial, PubMed 임상 메타분석",
+      "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa052771",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "관절염 환자",
+        "분류": "임상 근거",
+        "시기": "3~6개월",
+        "지역": "글로벌"
+      },
+      "caution": "★3개월 미만 복용 후 '효과 없음'이라고 판단하는 것은 임상적 오류다. 최소 3~6개월은 지속해야 한다.",
+      "cautionSource": "임상 근거 기준"
+    },
+    {
+      "id": "joint-supplement-gait-24week-standard-benchmark",
+      "claim": "NIH 주도 GAIT 임상(무릎관절염 1,583명)은 24주(약 6개월) 투여 후 효과를 평가했으며, 이는 관절 영양제 효과 평가의 국제 표준이 되었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NEJM: Glucosamine, Chondroitin Sulfate, and the Two in Combination for Painful Knee Osteoarthritis",
+      "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa052771",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "무릎관절염 환자 1,583명",
+        "분류": "임상 근거",
+        "시기": "24주(6개월)",
+        "지역": "미국"
+      },
+      "caution": "24주 이상 복용하는 경우도 있으나, 기본은 6개월 이상이어야 한다.",
+      "cautionSource": "NEJM 논문"
+    },
+    {
+      "id": "joint-supplement-gait-moderate-severe-pain-subgroup-efficacy-signal",
+      "claim": "GAIT 임상의 사후 분석(post-hoc analysis) 부분군 분석에서, 중등도~심한 통증을 가진 환자 부분군에서만 글루코사민·콘드로이틴 병용이 위약보다 유의한 효과를 보였다. 이는 전체 집단 분석(원래 결과: 위약 대비 차이 없음)과 달리, 특정 증상 수준의 환자에게만 효과가 있을 수 있음을 시사한다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "NEJM GAIT Trial: Glucosamine, Chondroitin Sulfate - Subgroup Analysis",
+      "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa052771",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "중등도~심한 무릎 통증 환자",
+        "분류": "임상 근거",
+        "시기": "24주",
+        "지역": "미국"
+      },
+      "caution": "★부분군 분석은 '탐색적(exploratory)'이며 '확인적(confirmatory)' 결과가 아니다. 중등도-심한 통증 환자에게도 반드시 효과가 있다는 보장은 아니다.",
+      "cautionSource": "NEJM 논문, 임상 방법론"
+    },
+    {
+      "id": "joint-supplement-responder-vs-non-responder-plateau",
+      "claim": "3~6개월 투여 후에도 일부 사용자는 증상 개선이 없을 수 있으며, 이는 '질환의 성질' 또는 '영양제 형태 부적합'을 의미할 수 있다. 반응자의 경우 4~6개월 시점에 증상 개선이 명확하게 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "NEJM GAIT Trial 부분군 분석, 임상 가이드라인",
+      "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa052771",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "관절염 환자",
+        "분류": "임상 근거",
+        "시기": "6개월",
+        "지역": "글로벌"
+      },
+      "caution": "★6개월 후에도 효과가 없다면, 같은 제품을 계속 복용하기보다 전문가 상담으로 '다른 성분' 또는 '의료 개입'으로 전환하는 것이 낫다.",
+      "cautionSource": "임상 근거"
+    },
+    {
+      "id": "joint-supplement-pubmed-metaanalysis-chondroitin-benefit",
+      "claim": "PubMed의 다중 임상시험 메타분석에서 콘드로이틴은 글루코사민보다 통증 감소와 신체 기능 개선에서 더 일관된 효과를 보였으며, 특히 6개월 이상의 중기 연구(6개월 미만)에서 콘드로이틴 단독 또는 글루코사민 병용이 위약 대비 10% 통증 감소 효과를 나타냈다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PubMed 임상 메타분석 — 글루코사민·콘드로이틴 관절염 치료 효과",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6035477/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "관절염 환자",
+        "분류": "임상 근거",
+        "시기": "6개월 이상",
+        "지역": "글로벌"
+      },
+      "caution": "이 메타분석은 30개 무작위 비교 시험을 포함했으나, 개별 연구마다 품질과 규모 차이가 크므로, 자신에게 효과가 있을지는 실제 복용 후 6개월 경과를 보고 판단해야 한다.",
+      "cautionSource": "PubMed 메타분석 방법론"
+    },
+    {
+      "id": "joint-supplement-mfds-functional-ingredient-standards",
+      "claim": "식약처는 건강기능식품의 '관절·뼈 건강' 기능성을 인정할 때 임상시험 기준으로 최소 6주~8주(단기) 및 12주(12주 이상 권장)의 투여 기간을 요구한다. 식약처 인증을 받은 관절 영양제는 이러한 기준을 통과한 제품이므로, 최소 8주 이상은 복용해야 기능성 기준을 만족시킨 것으로 본다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 — 건강기능식품 기능성 평가 가이드(뼈·관절 건강 관련)",
+      "source_url": "https://www.mfds.go.kr/brd/m_1060/view.do?seq=14658&itm_seq_1=0&itm_seq_2=0&multi_itm_seq_0&page=13",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "건강기능식품 관절·뼈 건강 카테고리",
+        "분류": "규제 기준",
+        "시기": "8주 이상",
+        "지역": "KR"
+      },
+      "caution": "식약처 인증 제품이라도 개인차가 크므로, 공식 권장 기간(8주~12주)을 기준으로 먼저 복용해 본 후 자신의 증상 변화를 관찰하는 것이 중요하다.",
+      "cautionSource": "식약처 건강기능식품 기능성 인정 기준"
+    }
+  ]
+}

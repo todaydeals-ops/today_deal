@@ -1,0 +1,103 @@
+{
+  "topic": "AV리시버·홈시어터 소리 안 남·채널 누락 자가진단",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [
+    "hdmi-arc-eArc-definition",
+    "tv-arc-port-identification",
+    "hdmi-arc-cable-connection-sequence",
+    "hdmi-cec-remote-control-function",
+    "audio-delay-adjustment-definition"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "av-receiver-hdmi-arc-connection-priority",
+      "claim": "AV리시버가 소리를 받지 못하는 가장 흔한 원인은 HDMI ARC/eARC 연결 오류다. TV의 HDMI (ARC) 표기 포트와 AV리시버의 HDMI OUT (TV-ARC) 포트가 올바르게 연결되었는지 먼저 확인해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스·LG전자 공식 가이드",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28710",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "AV리시버·홈시어터",
+        "line": "HDMI ARC/eARC 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "TV와 AV리시버의 HDMI 연결이 올바르지만 소리가 안 나면, AV리시버의 입력 모드가 정확히 'HDMI'로 설정되어 있는지 확인할 것",
+      "cautionSource": "제조사 HDMI ARC 연결 가이드"
+    },
+    {
+      "id": "av-receiver-speaker-configuration-check",
+      "claim": "AV리시버에 스피커가 여러 개(앞쪽 좌우, 센터, 뒤쪽, 우퍼 등) 연결되어 있는데 일부 채널에서만 소리가 안 나면, 먼저 AV리시버 뒷면의 스피커 단자 연결을 육안으로 확인하고, 단자가 헐거워 접촉 불량이 있는지 점검해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AV리시버 기본 매뉴얼 및 기술 자료",
+      "source_url": "https://www.sony.co.kr/electronics/support/articles/00171884",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "AV리시버·홈시어터",
+        "line": "다채널 스피커 시스템",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "스피커 단자를 재연결할 때는 반드시 AV리시버 전원을 끈 후 진행할 것. 스피커 극성(+/−)이 바뀌면 음질 저하 및 저음 소실 현상이 발생한다",
+      "cautionSource": "AV리시버 안전 기준 및 스피커 연결 규칙"
+    },
+    {
+      "id": "av-receiver-audio-output-input-selection",
+      "claim": "AV리시버에 여러 개의 입력 소스(HDMI, 광/동축 디지털, 아날로그 RCA 등)가 있을 때, AV리시버의 입력 모드가 실제로 신호가 들어오는 포트와 일치해야 소리가 난다. 예를 들어 TV에서 광케이블로 신호를 보내는데 AV리시버 입력이 'HDMI'로 설정되어 있으면 소리가 나지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AV리시버 기본 매뉴얼",
+      "source_url": "https://www.sony.co.kr/electronics/support/articles/00171884",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "AV리시버",
+        "line": "다중 입력 포트 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "av-receiver-channel-level-test-tone",
+      "claim": "일부 채널만 소리가 약하거나 안 나면, AV리시버의 자가진단 또는 테스트 톤(Test Tone) 기능을 사용해 각 채널의 신호 출력을 확인할 수 있다. 대부분의 AV리시버는 리모컨이나 메뉴에서 '채널 레벨 조정' 또는 'Speaker Level' 옵션을 통해 테스트 톤을 재생하고 각 스피커가 정상 작동하는지 판별할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "AV리시버 제조사 기술 자료",
+      "source_url": "https://www.sony.co.kr/electronics/support/articles/00171884",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "AV리시버",
+        "line": "자가진단 기능 지원 모델",
+        "years": "현행",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "av-receiver-hdmi-control-cec-activation",
+      "claim": "Yamaha를 포함한 대부분의 AV리시버에서 HDMI ARC를 작동시키려면 먼저 'HDMI Control' 기능을 ON으로 설정해야 한다. 리시버의 Setup 메뉴 > Video/HDMI > HDMI Control에서 활성화할 수 있으며, 이를 통해 TV의 CEC 신호를 인식하고 ARC 신호를 정상적으로 받을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Yamaha 공식 AV 리시버 매뉴얼",
+      "source_url": "https://manual.yamaha.com/av/18/rxv685/ko-KR/317885323.html",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "AV리시버",
+        "line": "HDMI 제어 지원 모델",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "HDMI Control이 ON이어도 소리가 없으면, TV 쪽 CEC(Anynet+, Bravia Sync, Simplink 등 제조사별 이름 다름)도 함께 활성화되어 있는지 확인할 것. 양쪽 모두 ON이어야 ARC가 작동한다",
+      "cautionSource": "Yamaha 매뉴얼 및 AV리시버 ARC 설정 기준"
+    }
+  ]
+}

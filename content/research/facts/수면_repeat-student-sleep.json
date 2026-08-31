@@ -1,0 +1,98 @@
+{
+  "topic": "재수생·N수생의 수면 관리: 장기 준비 기간의 수면 전략, 번아웃 방지, 만성 불면증 예방",
+  "brand": "공통",
+  "article": "repeat-student-sleep",
+  "captured": "2026-09-01",
+  "reused_facts": [
+    "sleep-academic-achievement"
+  ],
+  "declined_facts": [
+    {
+      "id": "repeat-student-chronic-sleep-deprivation-burnout-cycle",
+      "why": "source_url 없음. 검증 불가. PMC 재조사로 대체"
+    },
+    {
+      "id": "repeat-student-sustainable-sleep-schedule-maintenance-key",
+      "why": "source_url 없음. 검증 불가. Nature 재조사로 대체"
+    },
+    {
+      "id": "repeat-student-weekly-rest-day-mental-recovery-necessity",
+      "why": "source_url 없음. 검증 불가. PLOS Mental Health 재조사로 대체"
+    },
+    {
+      "id": "repeat-student-pre-sleep-anxiety-management-cognitive-restructuring",
+      "why": "source_url 없음. 검증 불가. CBT-I 재조사로 대체"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sleep-deprivation-hippocampus-long-term-memory-formation-impairment",
+      "claim": "수면 부족은 학습과 기억에 필수적인 해마(hippocampus)에 신경학적 손상을 일으키며, 작업 기억(working memory)과 장기 기억 형성 모두에 악영향을 미친다. 특히 장기 기억이 정보를 획득하고 통합하는 과정 전체가 불가능해진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Nature Scientific Reports: Sleep deprivation impairs cognitive performance and cerebral blood flow",
+      "source_url": "https://www.nature.com/articles/s41598-021-00188-8",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "일반 성인",
+        "분류": "신경생물학",
+        "시기": "만성 수면부족",
+        "지역": "글로벌"
+      },
+      "caution": "재수 준비 중 4시간 수면으로 6개월을 지속하면, 뇌의 학습 중추 자체가 손상될 수 있다.",
+      "cautionSource": "신경영상학 근거"
+    },
+    {
+      "id": "academic-burnout-insomnia-psychological-distress-prevalence-50percent",
+      "claim": "대학생 50% 이상이 스트레스, 우울증, 번아웃 등 심리적 고통을 경험하며, 불면증과 번아웃은 상호 강화적 관계를 가진다. 번아웃으로 인한 불안이 수면을 방해하고, 수면 부족이 심리적 자원 고갈로 번아웃을 심화시킨다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PMC: Linking Burnout to Psychological Well-being; Psychological predictors of insomnia",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7354910/",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "대학생·재수 준비생",
+        "분류": "심리 건강",
+        "시기": "장기 준비(6~12개월)",
+        "지역": "글로벌"
+      },
+      "caution": "★번아웃은 피로만이 아니라 의욕 상실·자기 효능감 저하를 포함한다. 이 상태에서 '더 열심히'는 악순환만 만든다.",
+      "cautionSource": "임상 연구"
+    },
+    {
+      "id": "chronic-sleep-deprivation-dopamine-serotonin-dysregulation-motivation-depression",
+      "claim": "만성 수면 부족은 도파민(동기, 보상)과 세로토닌(기분, 정서 조절) 재충전을 방해하며, 이는 의욕 상실, 무기력감, 우울증을 초래한다. 수면 부족 상태에서는 도파민 수용체 감수성이 저하되어 만족감을 느끼기 어렵고, 세로토닌 저하는 직접적으로 우울 증상(절망감, 슬픔)을 유발한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PLOS Mental Health & NCBI/PMC: Sleep and psychiatric disorders; Effects of sleep deprivation on neurotransmitters",
+      "source_url": "https://journals.plos.org/mentalhealth/article/file?id=10.1371%2Fjournal.pmen.0000531&type=printable",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "만성 수면 부족자",
+        "분류": "신경화학",
+        "시기": "3개월 이상 장기",
+        "지역": "글로벌"
+      },
+      "caution": "3개월 이상의 만성 수면 부족은 신경생물학적으로 되돌리기 어려운 신경전달물질 불균형을 초래할 수 있다.",
+      "cautionSource": "신경과학 문헌"
+    },
+    {
+      "id": "cbt-i-cognitive-restructuring-anxiety-reduction-sleep-efficiency-improvement",
+      "claim": "인지 행동 치료(CBT-I)의 인지 재구성(cognitive restructuring) 요소는 취침 시 불안을 '나는 또 실패할 거야', '자지 못하면 내일 망한다'에서 '지금 할 수 있는 것을 했다', '수면도 학습의 일부'로 바꾸어 입면 불안을 감소시킨다. 대부분 4~8회 세션으로 완료되며 불면증과 동반 우울감·불안 감소에 효과적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Sleep Foundation & Cleveland Clinic: Cognitive Behavioral Therapy for Insomnia",
+      "source_url": "https://www.sleepfoundation.org/insomnia/treatment/cognitive-behavioral-therapy-insomnia",
+      "checked": "2026-09-01",
+      "scope": {
+        "대상": "불면증 환자",
+        "분류": "심리 치료",
+        "시기": "4~8세션",
+        "지역": "글로벌"
+      },
+      "caution": "깊은 우울증이나 불안 장애가 있다면 CBT-I만으로는 부족하며, 전문 상담가·정신과 의사 협력이 필수다.",
+      "cautionSource": "임상 가이드"
+    }
+  ]
+}

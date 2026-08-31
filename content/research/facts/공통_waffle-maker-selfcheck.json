@@ -1,0 +1,115 @@
+{
+  "topic": "와플메이커·샌드위치메이커 자가점검 — 안 데워짐, 눌어붙음, 플레이트 청소",
+  "brand": "공통",
+  "article": "waffle-maker-selfcheck",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "waffle-maker-preheat-indicator-wait",
+      "why": "source_url이 keyzard.org(개인 블로그)라 배제. 제조사 공식 매뉴얼 필요"
+    },
+    {
+      "id": "waffle-maker-nonstick-coating-deterioration",
+      "why": "source_url이 keyzard.org(개인 블로그)라 배제"
+    },
+    {
+      "id": "waffle-maker-batter-oil-application",
+      "why": "source_url이 keyzard.org(개인 블로그)라 배제"
+    },
+    {
+      "id": "waffle-maker-batter-thickness-adjustment",
+      "why": "source_url이 keyzard.org(개인 블로그)라 배제"
+    },
+    {
+      "id": "waffle-maker-heating-element-failure",
+      "why": "source_url이 houseapp.co.kr(수리 중개)라 배제. 수리를 파는 곳은 이해충돌 우려"
+    },
+    {
+      "id": "waffle-maker-cord-connection-check",
+      "why": "source_url이 houseapp.co.kr(수리 중개)라 배제"
+    },
+    {
+      "id": "waffle-maker-plate-removal-cleaning-guide",
+      "why": "source_url이 keyzard.org(개인 블로그)라 배제"
+    },
+    {
+      "id": "waffle-maker-power-supply-verification",
+      "claim": "와플메이커가 작동하지 않을 때는 먼저 전원 코드가 콘센트에 완전히 꽂혀 있는지, 그 콘센트에 전기가 흐르는지 확인해야 한다. 콘센트에 다른 전자기기를 연결해 정상 작동하는지 테스트하면 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국전기안전공사 — 가전제품 기본 전원 확인",
+      "source_url": "https://www.kesco.or.kr/",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "와플메이커",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "벽의 누전차단기(GFCI)가 작동했거나, 멀티탭의 차단 버튼이 눌려 있을 수도 있다.",
+      "cautionSource": "전기안전공사 기본 안내",
+      "declined_reason": "source_url 이 전기안전공사 사이트 루트라 출처로 인정 불가. 주장(전원·콘센트 확인) 자체는 위험 없는 기본 절차라 원고에서 무출처 일반 안내로 쓸 수는 있다.",
+      "retry_hint": "국가기술표준원 kats.go.kr 전기용품 안전기준, 제품안전정보센터 safetykorea.kr 개별 리콜 공표, 소방청 전기화재 통계",
+      "declined_at": "2026-09-01"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "nonstick-coating-fluorine-resin-safety-standard",
+      "claim": "식품의약품안전처는 불소수지 코팅(PTFE) 기구의 기준·규격을 설정해 식품용 기구의 용출 규격을 관리하고 있다. 현재 기준은 적절한 수준이며, 과불화옥탄산(PFOA)은 모든 식품용 기구 제조에서 금지되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "식품의약품안전처 — 식품용 기구·용기·포장의 기준·규격",
+      "source_url": "https://www.foodsafetykorea.go.kr/foodcode/05_03.jsp?idx=152",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "와플메이커·코팅 기구",
+        "line": "불소수지 코팅 탑재 전 모델",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "식약처가 정한 기준을 초과하지 않는 한 정상 사용은 안전하다.",
+      "cautionSource": "식품의약품안전처 공식 기준·규격"
+    },
+    {
+      "id": "nonstick-coating-damage-discontinuation-recommended",
+      "claim": "와플메이커 플레이트의 불소수지 코팅이 벗겨지거나 손상되었다면 사용을 중단하는 것이 권장된다. 손상된 코팅 입자가 음식에 포함되어 섭취될 수 있기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국소비자원 — 제품안전 정보",
+      "source_url": "https://www.kca.go.kr/odr/cm/in/exmplPgItem.do",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "와플메이커·코팅 기구",
+        "line": "불소수지 코팅 탑재 전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "⚠️ 코팅이 육안으로 벗겨진 제품은 사용하지 말 것.",
+      "cautionSource": "식품의약품안전처 식품용 기구 안전 지침"
+    },
+    {
+      "id": "waffle-maker-manual-reference-priority",
+      "claim": "와플메이커의 정확한 예열 시간, 플레이트 청소 방법, 코팅 관리법은 제조사 사용설명서마다 다르므로, 제품별 매뉴얼을 먼저 참고해야 한다. 쿠진아트, 테팔, 필립스 등 제조사 공식 웹사이트에서 모델별 사용설명서를 다운로드할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Cuisinart 공식 — 와플메이커 사용설명서",
+      "source_url": "https://www.cuisinart.com/manuals/waffle-makers/",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "와플메이커",
+        "line": "전자식 온도 표시 탑재 전 모델",
+        "years": "2010~",
+        "region": "글로벌"
+      },
+      "caution": "매뉴얼이 없거나 잃어버렸다면 제조사 웹사이트에서 모델명으로 검색해 PDF를 다운로드할 수 있다.",
+      "cautionSource": "제조사 사용설명서 제공 정책"
+    }
+  ]
+}

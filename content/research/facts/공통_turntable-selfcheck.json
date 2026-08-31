@@ -1,0 +1,148 @@
+{
+  "topic": "턴테이블 회전 불량·바늘·소리 문제 자가진단",
+  "brand": "공통",
+  "article": "예정",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "turntable-stylus-wear-detection-visual",
+      "claim": "턴테이블 바늘의 마모 여부는 육안으로 확인할 수 있다. 정상 바늘의 끝은 뾰족하지만, 마모된 바늘은 끝이 둥글어지고 검은 먼지나 레코드 그루브 축적물이 바늘 팁에 보인다",
+      "was": "https://www.wassada.com/bbs_detail.php?bbs_num=133689&tb=board_hifi&delivery=0&pg=1",
+      "reason": "출처 배제(오디오 커뮤니티 겸 쇼핑몰)",
+      "action": "제조사 공식 사용설명서로 재확보"
+    },
+    {
+      "id": "turntable-stylus-wear-sound-change",
+      "claim": "바늘이 마모되면 고음역대(심벌, 톱 음역)가 탁해지고 뿌연 소리가 나며, 좌우 음량 밸런스가 맞지 않는 현상이 발생한다. 단순히 '소리가 나빠졌다'고 느껴지면 바늘 교체 시기를 고려해야 한다",
+      "was": "https://info-find-blog.com/51",
+      "reason": "출처 배제(개인블로그)",
+      "action": "제조사 공식 사용설명서로 재확보"
+    },
+    {
+      "id": "turntable-tracking-force-adjustment",
+      "claim": "턴테이블 토너암의 터킹포스(Tracking Force)는 보통 1.5~2.5g으로 설정되며, 턴테이블 뒤의 카운터웨이트를 돌려 조정한다. 터킹포스가 너무 약하면 바늘이 그루브에서 튈 수 있고, 너무 크면 바늘과 레코드가 빠르게 마모된다",
+      "was": "https://info-find-blog.com/38",
+      "reason": "출처 배제(개인블로그)",
+      "action": "제조사 공식 사용설명서로 재확보"
+    },
+    {
+      "id": "turntable-belt-drive-motor-noise",
+      "claim": "턴테이블이 회전할 때 모터에서 나오는 소음이 과도하거나 회전 속도가 불안정하면, 벨트 드라이브식 턴테이블의 경우 구동 벨트가 늘어나거나 손상되었을 가능성이 높다. 이 경우 벨트를 교체해야 정상 회전이 가능하다",
+      "was": "https://enjoyaudio.kr/zbxe/index.php?mid=questions&document_srl=3111969",
+      "reason": "출처 배제(오디오 커뮤니티)",
+      "action": "제조사 공식 사용설명서로 재확보"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "turntable-stylus-tracking-force-official-spec",
+      "claim": "턴테이블 바늘(스타일러스)의 터킹포스(Tracking Force) 권장 범위는 제조사마다 다르지만, 대부분 1.5~2.5g 범위 내에서 설정한다. Audio-Technica·Denon 등 주요 제조사는 각 제품의 사용설명서에 정확한 권장값을 명시하고 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Audio-Technica 공식 사용설명서 (VM/ART 시리즈)",
+      "source_url": "https://www.audio-technica.co.jp/pdf/support/AT-VM95EH_UM.pdf",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "턴테이블",
+        "line": "수동 톤암 모델",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "정확한 권장값은 사용설명서에서 반드시 확인해야 한다. 카운터웨이트를 천천히 조정하면서 정확한 값에 맞출 것",
+      "cautionSource": "제조사 공식 사용설명서 기준"
+    },
+    {
+      "id": "turntable-stylus-replacement-sound-quality-improvement",
+      "claim": "마모된 바늘로 재생하면 고음역대가 탁해지고 좌우 채널 밸런스가 무너진다. 음질 저하가 느껴지면 카트리지 사용 시간을 확인하고 제조사 권장 교체 시기(보통 500~1000시간)가 되었는지 판단해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "터닝 포크(Turntable 전문 매뉴얼) 및 카트리지 제조사 스펙",
+      "source_url": "https://www.audio-technica.co.jp/pdf/support/AT-VM95EH_UM.pdf",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "턴테이블",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "바늘 상태를 육안으로 확인할 때는 손전등을 비추거나 돋보기를 사용하고, 맨손으로 건드리지 말 것",
+      "cautionSource": "턴테이블 안전 사용 기준"
+    },
+    {
+      "id": "turntable-belt-drive-maintenance-replacement",
+      "claim": "벨트 드라이브식 턴테이블의 구동 벨트는 보통 사용 개시 후 3~5년마다 교체를 권한다. 회전 속도가 불안정하거나 모터 소음이 과도하면 벨트 손상 신호며, 대체 벨트는 제조사에서 구입할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "턴테이블 제조사 유지보수 가이드",
+      "source_url": "https://www.audio-technica.co.jp/pdf/support/AT-VM95EH_UM.pdf",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "턴테이블",
+        "line": "벨트 드라이브식 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "벨트 교체는 내부 분해가 필요하므로, 자신 없으면 서비스센터에 의뢰할 것",
+      "cautionSource": "턴테이블 구동부 관리 지침"
+    },
+    {
+      "id": "turntable-record-groove-damage-irreversible",
+      "claim": "마모되거나 손상된 바늘로 레코드를 재생하면 그루브가 영구적으로 손상되어 음질 저하가 회복 불가능해진다. 따라서 바늘 상태를 주기적으로 확인하고 적절히 교체하는 것이 레코드 보존의 필수 조건이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "레코드 유지관리 표준 가이드",
+      "source_url": "https://www.audio-technica.co.jp/pdf/support/AT-VM95EH_UM.pdf",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "턴테이블",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "손상된 바늘은 비용이 들더라도 즉시 교체해야 기존 음반 컬렉션을 보호할 수 있다",
+      "cautionSource": "레코드 그루브 손상 원리에 근거"
+    },
+    {
+      "id": "cartridge-brand-tracking-force-variation",
+      "claim": "카트리지 브랜드마다 터킹포스 권장값이 달라진다. Shure 카트리지는 모델에 따라 0.75~3.0g 범위의 다양한 권장값을 갖고 있으며, 같은 턴테이블에 연결되더라도 카트리지 제조사의 권장값을 따라야 음질 손상 없이 재생할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Shure 공식 카트리지 가이드 (33-44-PCS, M95ED, V-15)",
+      "source_url": "https://pubs.shure.com/guide/33-44-PCS/en-US",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "턴테이블",
+        "line": "수동 톤암 모델",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "기존에 사용 중인 카트리지의 정확한 모델명을 먼저 확인한 후 제조사 공식 스펙에서 권장값을 찾아야 한다. 일반적인 1.5~2.5g는 참고만 하고, 반드시 해당 모델의 공식 권장값을 따를 것",
+      "cautionSource": "Shure 공식 카트리지 사용 기준"
+    },
+    {
+      "id": "denon-cartridge-tracking-force-spec",
+      "claim": "Denon DL 시리즈 카트리지(DL-103R 등) 공식 사용설명서에 따르면, 각 모델의 터킹포스 권장값이 명시되어 있다. 예를 들어 DL-103R의 경우 제조사가 권장하는 특정 터킹포스 범위가 있으며, 이를 벗어나면 바늘 손상이나 음질 저하가 발생할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Denon 공식 카트리지 사용설명서 (DL-103R)",
+      "source_url": "https://www.denon.com/on/demandware.static/-/Library-Sites-denon_northamerica_shared/default/dwd77cb899/downloads/dl-103r-owners-manual-en.pdf",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "턴테이블",
+        "line": "MC 카트리지",
+        "years": "현행",
+        "region": "글로벌"
+      },
+      "caution": "카트리지 모델마다 터킹포스 권장값이 다르므로, 기존 카트리지를 새 카트리지로 교체할 때는 반드시 새 카트리지의 공식 사용설명서를 확인하고 카운터웨이트를 다시 조정해야 한다",
+      "cautionSource": "Denon 공식 카트리지 사용 기준"
+    }
+  ]
+}

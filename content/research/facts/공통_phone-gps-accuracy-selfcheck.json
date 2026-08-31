@@ -1,0 +1,191 @@
+{
+  "topic": "휴대폰 GPS 위치 부정확·오차 자가점검 — 나침반 조정, Wi-Fi 위치, 배터리 설정",
+  "brand": "공통",
+  "article": "phone-gps-accuracy-selfcheck",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "gps-accuracy-outdoor-vs-indoor",
+      "claim": "GPS 신호는 하늘이 열린 야외에서 가장 정확하고, 건물 안이나 지하에서는 위성 신호가 약하거나 차단되어 부정확해진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 GPS 수신 안됨 및 위치 오류 해결",
+      "source_url": "https://www.samsungsvc.co.kr/solution/618896",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "GPS 탑재 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "GPS는 위성 신호에 의존하므로, 건물 내 사용은 구조적으로 제약이 있다.",
+      "cautionSource": "GPS 기술의 기본 원리"
+    },
+    {
+      "id": "gps-signal-obstruction-tall-buildings",
+      "claim": "고층 빌딩이 빽빽한 도시 지역에서는 위성에서 내려온 전파가 건물 유리에 이리저리 반사된 후 폰에 도달하므로, 신호가 왜곡되어 오차가 크다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 GPS 수신 안됨 및 위치 오류 해결",
+      "source_url": "https://www.samsungsvc.co.kr/solution/618896",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "GPS 탑재 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "이 현상은 멀티패스(multipath) 오류로 불리며, 도시 지역에서 GPS 부정확의 주요 원인이다.",
+      "cautionSource": "GPS 신호 처리의 물리적 원리"
+    },
+    {
+      "id": "gps-compass-calibration-eight-figure",
+      "claim": "GPS 위치는 정확하지만 지도 화면의 방향(화살표)이 엉뚱할 때는 디바이스의 나침반 센서를 재조정해야 한다. 폰을 쥔 손목을 꺾어가며 허공에 큼직하게 8자를 3~4회 연속으로 그려주면 나침반이 초기화되면서 정확한 방향을 잡을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 GPS 수신 안됨 및 위치 오류 해결",
+      "source_url": "https://www.samsungsvc.co.kr/solution/618896",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "나침반 센서 탑재 전 기종",
+        "years": "2010~",
+        "region": "글로벌"
+      },
+      "caution": "이 조정은 위치 정확도가 아니라 '방향'의 정확도를 높이는 것이다. 위치가 엉뚱해도 나침반 재조정으로 해결되지는 않는다.",
+      "cautionSource": "삼성 공식 나침반 보정 절차"
+    },
+    {
+      "id": "wifi-based-location-fallback",
+      "claim": "GPS 신호가 약할 때 스마트폰은 자동으로 Wi-Fi 네트워크 정보를 기반으로 위치를 추정한다. 이 경우 오차 범위가 수십~수백 미터 정도 될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google 지도 고객센터 — 위치 검색 및 정확도 개선",
+      "source_url": "https://support.google.com/maps/answer/2839911?hl=ko",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "Wi-Fi 기반 위치 추정은 GPS 신호 부족 시 자동으로 작동하지만, 정확도가 낮으므로 주의가 필요하다.",
+      "cautionSource": "Google 공식 안내"
+    },
+    {
+      "id": "cellular-based-location-fallback",
+      "claim": "Wi-Fi도 사용 불가할 때 스마트폰은 연결된 모바일 통신사 기지국 정보를 기반으로 위치를 추정하므로, 오차 범위가 수킬로미터에 이를 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google 지도 고객센터 — 위치 검색 및 정확도 개선",
+      "source_url": "https://support.google.com/maps/answer/2839911?hl=ko",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "기지국 기반 위치는 가장 부정확하지만, GPS 신호가 전혀 없는 실내에서는 유일한 방법이다.",
+      "cautionSource": "이동통신 위치 서비스 원리"
+    },
+    {
+      "id": "battery-saver-gps-accuracy-impact",
+      "claim": "배터리 절약 모드가 활성화되면 GPS 센서의 전력 소비를 줄이기 위해 신호 수신 빈도가 낮아지므로, GPS 정확도가 떨어질 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 경험담 및 기술 커뮤니티",
+      "source_url": "https://yunjaeisfree.com/entry/gps-location-accuracy-fix",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "배터리 절약 모드와 GPS 정확도의 직접적 인과관계는 제조사 명시가 부족하지만, 사용자 보고가 많다. GPS 정확도가 중요하면 절전 모드를 꺼볼 것.",
+      "cautionSource": "사용자 보고 및 기술 분석"
+    },
+    {
+      "id": "location-settings-permission-verification",
+      "claim": "위치 서비스(location services)가 꺼져 있거나, 앱별로 위치 접근 권한이 거부되어 있으면 GPS를 사용할 수 없다. 설정 > 위치 > 위치 서비스 ON 확인 후, 지도·네비게이션 앱의 위치 권한이 '항상 허용'으로 설정되어 있는지 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google 지도 고객센터 — 위치 검색 및 정확도 개선",
+      "source_url": "https://support.google.com/maps/answer/2839911?hl=ko",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "2015~",
+        "region": "글로벌"
+      },
+      "caution": "위치 권한은 '사용 중일 때만' 또는 '항상'으로 설정할 수 있는데, 백그라운드 위치 추적이 필요하면 '항상'으로 설정해야 한다.",
+      "cautionSource": "Google 공식 안내"
+    },
+    {
+      "id": "gps-accuracy-weather-conditions",
+      "claim": "날씨가 악조건(폭우, 태풍, 진눈깨비 등)일 때는 위성 신호가 대기를 통과하며 감쇠되므로 GPS 정확도가 저하된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 GPS 수신 안됨 및 위치 오류 해결",
+      "source_url": "https://www.samsungsvc.co.kr/solution/618896",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "GPS 탑재 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "이는 기기의 문제가 아니라 환경의 제약이다. 악천후에는 GPS 정확도가 자동으로 낮아진다는 것을 알아두면 혼동을 피할 수 있다.",
+      "cautionSource": "GPS 신호 전파 물리학"
+    },
+    {
+      "id": "gps-cold-start-warmup-time",
+      "claim": "GPS는 위성 정보(ephemeris data)를 캐시하므로, 오랜 시간 사용하지 않은 후 처음 켜면 초기 신호 수신에 몇 초~수십 초가 걸릴 수 있다. 이를 '콜드 스타트'라 부르며, 처음에는 위치 오차가 크지만 시간이 지나면서 개선된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "GPS 신호 처리 기술 표준",
+      "source_url": "https://www.samsungsvc.co.kr/solution/618896",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "GPS 탑재 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "장거리 이동 후 처음 네비게이션을 켜면 위치가 엉뚱할 수 있지만, 30초~1분 정도 기다리면 정상화된다.",
+      "cautionSource": "GPS 기술 표준 문서"
+    },
+    {
+      "id": "non-genuine-case-gps-interference",
+      "claim": "제조사 인증되지 않은 비정품 케이스나 액세서리(특히 금속 쉘드가 있는 케이스)를 사용하면 GPS 신호가 약해지거나 차단될 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "사용자 경험담 및 기술 커뮤니티",
+      "source_url": "https://yunjaeisfree.com/entry/gps-location-accuracy-fix",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "GPS 부정확이 지속되면 케이스를 벗겨 테스트해볼 가치가 있다. 케이스 제거 후 GPS가 정상이면 케이스가 원인이다.",
+      "cautionSource": "사용자 보고"
+    }
+  ]
+}

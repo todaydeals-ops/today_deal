@@ -1,0 +1,191 @@
+{
+  "topic": "유심·eSIM 인식 안 될 때 자가점검 — 슬롯 확인, 금속 단자 청소, 에어플레인 모드, 업데이트",
+  "brand": "공통",
+  "article": "sim-esim-not-detected-selfcheck",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sim-slot-physical-check-procedure",
+      "claim": "유심이 인식되지 않으면 먼저 전원을 끄고, 측면의 유심 슬롯에 클립이나 유심 핀으로 트레이를 꺼낸 후, 홈이 파인 모서리 방향을 정확히 맞춰서 넣고 부드럽게 밀어 넣어야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 유심 인식 안 될 때 조치방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39864",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "유심 슬롯 탑재 전 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "트레이를 무리하게 밀어 넣으면 내부 커넥터가 손상될 수 있다. 홈 방향을 정확히 확인 후 천천히 삽입할 것.",
+      "cautionSource": "삼성 공식 안내의 주의사항"
+    },
+    {
+      "id": "sim-metal-contact-cleaning",
+      "claim": "유심 슬롯이나 유심 카드의 금속 단자에 이물질이 묻어 있으면 신호 접촉이 차단되므로, 깨끗한 마른 천으로 금속 부분을 부드럽게 닦아주어야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 유심 인식 안 될 때 조치방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39864",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "유심 슬롯 탑재 전 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "금속 단자를 직접 손가락으로 건드리거나 금속 물건으로 찌르면 안 된다. 보푸라기 없는 마른 천만 사용할 것.",
+      "cautionSource": "삼성 공식 안내"
+    },
+    {
+      "id": "sim-slot-obstruction-check",
+      "claim": "유심 슬롯 안에 이물질(먼지, 종이 조각, 습기 등)이 끼어 있지 않은지 확인해야 한다. 슬롯 내부가 어두우면 손전등을 이용해 확인할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 유심 인식 안 될 때 조치방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39864",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "유심 슬롯 탑재 전 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "슬롯 내부를 청소할 때는 에어 다스터나 부드러운 솔을 사용하고, 습한 도구는 절대 금지다.",
+      "cautionSource": "삼성 공식 안내"
+    },
+    {
+      "id": "sim-protection-service-carrier-check",
+      "claim": "통신사의 유심 보호 서비스에 가입되어 있으면, 새로운 기기에 기존 유심을 삽입했을 때 개통이 되지 않을 수 있다. 이 경우 통신사 고객센터에 문의해 보호 서비스 가입 여부를 확인하고 해제를 요청해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — Invalid SIM 또는 No SIM",
+      "source_url": "https://support.apple.com/en-us/108914",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "보호 서비스 해제는 본인 확인(신분증) 후 통신사에서 처리한다. 온라인이 아니라 지점 방문이 필요할 수 있다.",
+      "cautionSource": "통신사 유심 보호 정책"
+    },
+    {
+      "id": "device-restart-sim-recognition",
+      "claim": "전원 재시작은 OS 수준의 캐시와 센서 상태를 초기화하므로, 유심 인식 오류 시 가장 기본적인 해결 방법이다. 전원 버튼으로 끄고 다시 켜거나, 볼륨 다운 버튼과 전원 버튼을 동시에 7초 이상 누르는 강제 재시작을 시도할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "KT 고객지원 — eSIM 가입 및 설정",
+      "source_url": "https://direct.kt.com/direct/directEsimUse.do",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 기종",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "터치스크린이 반응하지 않는 경우 강제 재시작을 사용한다.",
+      "cautionSource": "삼성 공식 재시작 절차"
+    },
+    {
+      "id": "airplane-mode-network-reset",
+      "claim": "설정에서 에어플레인 모드를 켜고 30초~1분 정도 기다린 후 다시 꺼서 네트워크 연결을 완전히 리셋할 수 있다. 이는 디바이스와 통신사 네트워크 간의 일시적 동기화 오류를 해결한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — No Service, Searching",
+      "source_url": "https://support.apple.com/en-us/120000",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "에어플레인 모드 중에는 모든 무선 신호가 차단되므로 통화나 데이터 사용이 불가능하다.",
+      "cautionSource": "에어플레인 모드 기본 기능"
+    },
+    {
+      "id": "esim-qr-code-scan-procedure",
+      "claim": "eSIM 추가 시 아이폰은 [설정 > 셀룰러 > eSIM 추가 > QR 코드 사용]을, 갤럭시는 [설정 > 연결 > SIM 관리자 > eSIM 추가 > 모바일 요금제 추가 > 통신사 QR코드 스캔]을 따른다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — eSIM 설정",
+      "source_url": "https://support.apple.com/en-us/118669",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "eSIM 탑재 기종",
+        "years": "2018~",
+        "region": "KR"
+      },
+      "caution": "QR 코드는 통신사에서 제공한 정식 코드만 사용해야 한다. 무단 QR 코드는 보안 위험이 있다.",
+      "cautionSource": "통신사 eSIM 가입 안내"
+    },
+    {
+      "id": "esim-activation-network-requirement",
+      "claim": "eSIM 활성화는 Wi-Fi 또는 기존 유심을 통한 모바일 데이터가 필요하므로, 인터넷 연결이 없으면 eSIM 설정을 완료할 수 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — eSIM 설정",
+      "source_url": "https://support.apple.com/en-us/118669",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "eSIM 탑재 기종",
+        "years": "2018~",
+        "region": "글로벌"
+      },
+      "caution": "eSIM 활성화 중 인터넷이 끊기면 프로세스가 중단될 수 있다. 안정적인 Wi-Fi 환경에서 진행할 것.",
+      "cautionSource": "eSIM 기술 규격"
+    },
+    {
+      "id": "ios-android-update-sim-bug-fix",
+      "claim": "iOS 또는 안드로이드 버그가 유심 인식 문제를 일으킬 수 있으므로, 최신 버전으로 업데이트하면 해결될 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Apple 지원 — Invalid SIM",
+      "source_url": "https://support.apple.com/en-us/108914",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "2015~",
+        "region": "KR"
+      },
+      "caution": "업데이트 중에 유심 인식이 일시적으로 끊길 수 있다. 업데이트는 안정적인 Wi-Fi 환경에서 진행할 것.",
+      "cautionSource": "업데이트 프로세스 특성"
+    },
+    {
+      "id": "sim-card-damage-replacement",
+      "claim": "위의 모든 해결 방법 시도 후에도 유심이 인식되지 않으면 유심 카드 자체가 손상되었을 가능성이 높다. 다른 유심으로 테스트한 후 문제가 해결되면 해당 유심을 교체해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 유심 인식 안 될 때 조치방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39864",
+      "checked": "2026-09-01",
+      "scope": {
+        "brand": "공통",
+        "category": "스마트폰",
+        "line": "전 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "유심 교체는 통신사 고객센터나 정식 대리점에서만 진행하고, 신분증을 지참해야 한다. 약 10분 소요.",
+      "cautionSource": "삼성 공식 안내의 교체 절차"
+    }
+  ]
+}

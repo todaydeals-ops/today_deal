@@ -88,6 +88,40 @@
    },
    "caution": "예를 들어 한쪽 종아리만 자주 붓는다면 혈전 증상일 수 있으므로 의료진 진찰이 필수다.",
    "cautionSource": "임상 안전 기준"
+  },
+  {
+   "id": "low-freq-daily-usage-time-limit",
+   "claim": "저주파자극기는 1회 사용 시 보통 15~30분을 초과하지 않으며, 일일 총 사용 시간은 1~2시간 이내를 권한다. 과도한 사용은 근육 피로, 피부 자극, 신경 손상을 초래할 수 있다",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "저주파자극기 사용 안내 및 의료기기 기준",
+   "source_url": "https://scent.kisti.re.kr/site/main/archive/article/%EC%A0%80%EC%A3%BC%ED%8C%8C-%EC%9E%90%EA%B7%B9%EA%B8%B0-%EA%B3%84%EC%86%8D-%EC%8D%A8%EB%8F%84-%EA%B4%9C%EC%B0%AE%EC%9D%84%EA%B9%8C",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "저주파자극기 사용자",
+    "분류": "사용 기준",
+    "시기": "전 연식",
+    "지역": "KR"
+   },
+   "caution": "처음 사용할 때는 가장 낮은 강도(1~2 레벨)로 시작하여 점진적으로 올리고, 처음부터 고강도 사용은 피할 것",
+   "cautionSource": "저주파자극기 안전 사용 지침"
+  },
+  {
+   "id": "low-freq-product-approval-verification",
+   "claim": "의료기기정보포털(UDI 시스템)에서 제품명과 제조사를 검색하면, 해당 저주파자극기가 식약처 승인을 받았는지, 어느 등급의 의료기기로 분류되었는지, 사용기간과 재료 정보를 확인할 수 있다. 구매 전 포털에서 제품 정보를 확인하면 비허가 제품 구입을 피할 수 있다",
+   "tier": "확실",
+   "evidence": "공식",
+   "source": "의료기기정보포털(UDI) — 식품의약품안전처 의료기기 정보 검색",
+   "source_url": "https://udiportal.mfds.go.kr/search/brd/P99_03?searchYn=Y&keyword=%EC%A0%80%EC%A3%BC%ED%8C%8C%EC%9E%90%EA%B7%B9%EA%B8%B0",
+   "checked": "2026-09-01",
+   "scope": {
+    "대상": "저주파자극기",
+    "분류": "의료기기 정보",
+    "시기": "현재",
+    "지역": "KR"
+   },
+   "caution": "UDI 포털에 등록되지 않은 제품은 미승인 제품일 가능성이 높으므로 구매를 피하는 것이 원칙이다.",
+   "cautionSource": "식약처 의료기기 품목 정보 관리 기준"
   }
  ]
 }

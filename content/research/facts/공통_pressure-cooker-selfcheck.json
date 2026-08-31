@@ -1,0 +1,47 @@
+{
+  "topic": "전기압력솥 자가점검 — 압력 안 걸림, 증기 새는 문제, 패킹 확인",
+  "brand": "공통",
+  "article": "pressure-cooker-selfcheck",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "pressure-cooker-steam-leaking-packing-deterioration",
+      "why": "source_url이 clien.net(커뮤니티)라 배제. 안전 주제이므로 공식 문서 필수. 찾을 곳: 제조사 공식 매뉴얼, 한국소비자원, 전기안전공사"
+    },
+    {
+      "id": "pressure-cooker-packing-inspection-procedure",
+      "why": "source_url이 home.adsensekor.com(애드센스 블로그)라 배제. 제조사 매뉴얼 필요"
+    },
+    {
+      "id": "pressure-cooker-packing-foreign-material",
+      "why": "source_url이 clien.net(커뮤니티)라 배제"
+    },
+    {
+      "id": "pressure-cooker-relief-valve-obstruction",
+      "why": "source_url이 homeappliancesdigital.blogspot.com(개인 블로그)라 배제. 또한 밸브 청소는 화상 위험 있는 안전 주제이므로 공식 안내 필수"
+    },
+    {
+      "id": "pressure-cooker-lid-locking-mechanism",
+      "why": "source_url이 milemoa.com(커뮤니티)라 배제. 제조사 매뉴얼 필요"
+    },
+    {
+      "id": "pressure-cooker-inner-pot-seating",
+      "why": "source_url이 etc.so-yoon.com(개인 블로그)라 배제. 제조사 매뉴얼 필요"
+    },
+    {
+      "id": "pressure-cooker-maintenance-post-use-disassembly",
+      "why": "source_url이 clien.net(커뮤니티)라 배제"
+    },
+    {
+      "id": "pressure-cooker-steam-release-valve-proper-function",
+      "why": "source_url이 milemoa.com(커뮤니티)라 배제"
+    },
+    {
+      "id": "pressure-cooker-when-to-contact-service-center",
+      "why": "source가 '제조사 AS 정책'인데 source_url이 homeappliancesdigital.blogspot.com(개인 블로그)라 출처 불일치로 배제. 쿠쿠/쿠첸 공식 고객센터 링크 필요"
+    }
+  ],
+  "disputes": [],
+  "facts": []
+}
