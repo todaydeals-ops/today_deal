@@ -1,4 +1,4 @@
-// 매거진(중립 쇼핑 가이드) 데이터 접근. magazine 테이블 없으면 빈 배열로 폴백.
+// 매거진 데이터 접근. magazine 테이블 없으면 빈 배열로 폴백.
 import { getSupabaseAdmin } from "@/lib/supabase/server";
 
 export interface MagazineArticle {

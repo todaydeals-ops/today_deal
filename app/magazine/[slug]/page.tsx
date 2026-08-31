@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!a) return { title: "오늘의딜 매거진" };
   // 서브 미디어 글은 자기 브랜드로 표기 — 잠자리연구소·알약연구소 글이 "오늘의딜 매거진"으로 나가지 않게.
   const brand = a.field === "수면·침구" ? "잠자리연구소" : a.field === "건강기능식품" ? "알약연구소" : a.field === "뷰티·성분" ? "성분연구소" : "오늘의딜 매거진";
-  const blurb = brand === "잠자리연구소" ? "근거로 검증하는 수면 미디어" : brand === "알약연구소" ? "임상으로 검증하는 영양 미디어" : brand === "성분연구소" ? "임상으로 검증하는 뷰티 성분 미디어" : "중립 쇼핑 가이드";
+  const blurb = brand === "잠자리연구소" ? "근거로 검증하는 수면 미디어" : brand === "알약연구소" ? "임상으로 검증하는 영양 미디어" : brand === "성분연구소" ? "임상으로 검증하는 뷰티 성분 미디어" : "사기 전에 보는 쇼핑 가이드";
   const desc = (a.excerpt || a.subtitle || `${a.title} — ${brand}의 ${blurb}.`).slice(0, 155);
   return {
     title: `${a.title} | ${brand}`,

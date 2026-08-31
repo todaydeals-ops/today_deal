@@ -89,7 +89,7 @@ export function CornerIndex() {
   );
 }
 
-/* 중립 선언 밴드 (잉크) */
+/* 브랜드 밴드 (잉크) */
 export function NeutralBand() {
   return (
     <section style={{ background: "#16140f", color: "#f3efe9" }}>

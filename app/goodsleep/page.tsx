@@ -27,7 +27,7 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
     return {
       alternates: { canonical: `${SUB_ORIGIN.sleep}/` },
       title: "잠자리연구소 — 근거로 검증하는 수면 미디어",
-      description: "광고도 협찬도 없이, 해외 수면 연구를 근거로 검증합니다. 성장하는 잠·공부잘하는 잠·일잘하는 잠·조화로운 잠·늙지않는 잠·잠자리장비학.",
+      description: "해외 수면 연구를 근거로 검증합니다. 성장하는 잠·공부잘하는 잠·일잘하는 잠·조화로운 잠·늙지않는 잠·잠자리장비학.",
     };
   }
   return {
@@ -80,7 +80,7 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
                 세상의 모든 잠, 오직 <span style={{ color: "#ff5a3c" }}>과학적 근거</span>로만 말합니다.
               </h1>
               <p style={{ fontSize: 15.5, lineHeight: 1.85, color: "#46433d", margin: "18px 0 0", maxWidth: 640 }}>
-                광고나 협찬글에 지친 당신을 위해. 해외 전문 수면 연구를 기반으로 아이부터 부모님까지, 인생 단계마다 꼭 필요한 중립적인 수면 솔루션을 정립합니다.
+                해외 전문 수면 연구를 기반으로 아이부터 부모님까지, 인생 단계마다 꼭 필요한 수면 솔루션을 정립합니다.
               </p>
             </>
           )}

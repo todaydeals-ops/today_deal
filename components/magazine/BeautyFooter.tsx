@@ -13,7 +13,7 @@ export default function BeautyFooter() {
         <div className="mz-wrap" style={{ paddingTop: 42, paddingBottom: 40 }}>
           <div style={{ fontWeight: 800, fontSize: 19, color: "#f3efe9", letterSpacing: "-0.5px" }}>성분연구소</div>
           <div style={{ fontFamily: serif, fontSize: 23, fontWeight: 700, color: "#f3efe9", letterSpacing: "-0.5px", marginTop: 14, lineHeight: 1.4 }}>
-            광고를 지우면, <span style={{ color: "#ff8a6f" }}>성분</span>만 남습니다.
+            성분을 알면, <span style={{ color: "#ff8a6f" }}>선택</span>이 쉬워집니다.
           </div>
           <div style={{ fontSize: 13.5, color: "#a8a298", marginTop: 12, lineHeight: 1.7, maxWidth: 560 }}>
             화제성이나 후기가 아니라, 그 성분이 임상에서 무엇을 증명했는지로 따집니다.

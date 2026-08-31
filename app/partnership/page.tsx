@@ -20,7 +20,7 @@ export default function PartnershipPage() {
           <strong>딜 입점·소개</strong> — 타임딜/추천딜로 노출하고 싶은 상품·프로모션
         </li>
         <li>
-          <strong>브랜드 광고·배너</strong> — 메인·카테고리 영역 노출
+          <strong>브랜드 광고·배너</strong> · 메인·카테고리 영역 노출
         </li>
         <li>
           <strong>나눔(경품) 공동기획</strong> — 브랜드 제공 경품으로 함께하는 이벤트

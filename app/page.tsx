@@ -165,7 +165,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ c
         {magList.length === 0 ? (
           <section className="mz-wrap" style={{ paddingTop: 60, paddingBottom: 80, textAlign: "center", color: "#9a9286" }}>
             <div style={{ fontFamily: serif, fontSize: 22, fontWeight: 600, color: "#46433d" }}>가이드를 준비하고 있어요.</div>
-            <div style={{ fontSize: 14, marginTop: 10 }}>광고·제휴 없이, 진짜 도움 되는 글로 곧 채워집니다.</div>
+            <div style={{ fontSize: 14, marginTop: 10 }}>사기 전에 확인할 것들로 곧 채워집니다.</div>
           </section>
         ) : (
           <>
@@ -232,7 +232,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ c
 }
 
 export const metadata = {
-  title: "오늘의딜 — 광고 없는 중립 쇼핑 가이드 매거진",
+  title: "오늘의딜 · 사기 전에 확인하는 쇼핑 가이드 매거진",
   description: "미디어는 늘 ‘사야 할 이유’를 말합니다. 오늘의딜은 고려해야 할 기준과 숫자를 정리해 드립니다. 팩트체크·비교·구매가이드와 실시간 특가를 한곳에.",
   alternates: { canonical: SITE },
 };

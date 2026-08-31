@@ -178,7 +178,7 @@ export default async function MagazineReportPage({ params }: { params: Promise<{
         {/* 하단 CTA */}
         <footer style={{ borderTop: "2px solid #1a1a1a", paddingTop: 28, marginTop: 16 }}>
           <p style={{ fontSize: 14, color: "#555", lineHeight: 1.7, marginBottom: 20 }}>
-            오늘의딜 매거진은 광고·제휴 없이 독립적으로 작성된 중립 쇼핑 가이드입니다.<br />
+            오늘의딜 매거진은 공개된 근거를 직접 확인해 정리한 쇼핑 가이드입니다.<br />
             구매 결정은 항상 본인의 상황과 필요에 맞게 내리세요.
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>

@@ -24,13 +24,13 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
     return {
       alternates: { canonical: `${SUB_ORIGIN.pill}/` },
       title: "알약연구소 — 임상으로 검증하는 영양제",
-      description: "광고 문구가 아니라 실제 연구 결과로 성분을 따져봅니다. 눈 건강·관절과 뼈·피로와 간·면역과 장·혈관과 심장·여성과 남성.",
+      description: "실제 연구 결과로 성분을 따져봅니다. 눈 건강·관절과 뼈·피로와 간·면역과 장·혈관과 심장·여성과 남성.",
     };
   }
   return {
     alternates: { canonical: `${SUB_ORIGIN.pill}/?cat=${cat.key}` },
     title: `${cat.label} | 알약연구소`,
-    description: `${cat.angle}을(를) 중심으로, 임상 근거가 있는 것과 광고가 앞선 것을 갈라 정리했습니다.`,
+    description: `${cat.angle}을(를) 중심으로, 임상 근거가 어디까지 확인됐는지 갈라 정리했습니다.`,
   };
 }
 
@@ -62,7 +62,7 @@ export default async function PillHome({ searchParams }: { searchParams: Promise
           {cat ? (
             <>
               <h1 style={{ fontFamily: serif, fontWeight: 700, fontSize: "clamp(28px,4.4vw,44px)", lineHeight: 1.32, letterSpacing: "-1px", color: "#16140f", margin: "18px 0 0" }}>{cat.label}</h1>
-              <p style={{ fontSize: 15.5, lineHeight: 1.85, color: "#46433d", margin: "16px 0 0", maxWidth: 640 }}>{cat.angle}을(를) 중심으로, 임상 근거가 있는 것과 광고가 앞선 것을 갈라 정리했습니다.</p>
+              <p style={{ fontSize: 15.5, lineHeight: 1.85, color: "#46433d", margin: "16px 0 0", maxWidth: 640 }}>{cat.angle}을(를) 중심으로, 임상 근거가 어디까지 확인됐는지 갈라 정리했습니다.</p>
             </>
           ) : (
             <>
@@ -70,7 +70,7 @@ export default async function PillHome({ searchParams }: { searchParams: Promise
                 그 영양제, <span style={{ color: "#ff5a3c" }}>임상</span>은 뭐라고 말할까.
               </h1>
               <p style={{ fontSize: 15.5, lineHeight: 1.85, color: "#46433d", margin: "18px 0 0", maxWidth: 640 }}>
-                광고 문구와 실제 연구 결과 사이의 거리를 좁힙니다. 성분 하나하나, 무엇이 증명됐고 무엇이 아직인지 정리합니다.
+                성분 하나하나, 무엇이 증명됐고 무엇이 아직인지 정리합니다.
               </p>
             </>
           )}

@@ -30,7 +30,7 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   return {
     alternates: { canonical: `${SUB_ORIGIN.beauty}/?cat=${cat.key}` },
     title: `${cat.label} | 성분연구소`,
-    description: `${cat.angle}을(를) 중심으로, 임상 근거가 있는 것과 광고가 앞선 것을 갈라 정리했습니다.`,
+    description: `${cat.angle}을(를) 중심으로, 임상 근거가 어디까지 확인됐는지 갈라 정리했습니다.`,
   };
 }
 
@@ -61,12 +61,12 @@ export default async function BeautyHome({ searchParams }: { searchParams: Promi
           {cat ? (
             <>
               <h1 style={{ fontFamily: serif, fontWeight: 700, fontSize: "clamp(28px,4.4vw,44px)", lineHeight: 1.32, letterSpacing: "-1px", color: "#16140f", margin: "18px 0 0" }}>{cat.label}</h1>
-              <p style={{ fontSize: 15.5, lineHeight: 1.85, color: "#46433d", margin: "16px 0 0", maxWidth: 640 }}>{cat.angle}을(를) 중심으로, 임상 근거가 있는 것과 광고가 앞선 것을 갈라 정리했습니다.</p>
+              <p style={{ fontSize: 15.5, lineHeight: 1.85, color: "#46433d", margin: "16px 0 0", maxWidth: 640 }}>{cat.angle}을(를) 중심으로, 임상 근거가 어디까지 확인됐는지 갈라 정리했습니다.</p>
             </>
           ) : (
             <>
               <h1 style={{ fontFamily: serif, fontWeight: 700, fontSize: "clamp(28px,4.4vw,44px)", lineHeight: 1.32, letterSpacing: "-1px", color: "#16140f", margin: "18px 0 0", maxWidth: 820, textWrap: "balance" }}>
-                광고를 지우면, <span style={{ color: "#ff5a3c" }}>성분</span>만 남습니다.
+                성분을 알면, <span style={{ color: "#ff5a3c" }}>선택</span>이 쉬워집니다.
               </h1>
               <p style={{ fontSize: 15.5, lineHeight: 1.85, color: "#46433d", margin: "18px 0 0", maxWidth: 640 }}>
                 화제성이나 후기가 아니라, 그 성분이 임상에서 무엇을 증명했고 무엇이 아직인지로 따집니다.

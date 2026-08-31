@@ -16,7 +16,7 @@ export default function PillFooter() {
             먹을 것과 굳이 안 먹어도 될 것을, <span style={{ color: "#ff8a6f" }}>임상</span>으로 가릅니다.
           </div>
           <div style={{ fontSize: 13.5, color: "#a8a298", marginTop: 12, lineHeight: 1.7, maxWidth: 560 }}>
-            광고 문구가 아니라 실제 연구 결과를 기준으로, 성분 하나하나 따져서 정리합니다.
+            실제 연구 결과를 기준으로, 성분 하나하나 따져서 정리합니다.
           </div>
         </div>
       </div>

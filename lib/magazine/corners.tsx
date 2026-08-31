@@ -20,7 +20,7 @@ export const CORNERS: Corner[] = [
     nameEn: "FACT CHECK",
     color: "#1f6b66",
     chipBg: "#e3efee",
-    desc: "광고 너머의 진실·숨은 단점",
+    desc: "근거로 확인하는 쇼핑 상식·놓치기 쉬운 점",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
         <circle cx="10" cy="10" r="6.5" stroke="currentColor" strokeWidth="2" />
@@ -88,11 +88,11 @@ export const MAGAZINE_SLOGAN = "광고가 끝나는 곳에서, 기준이 시작�
 export const CATCH = {
   // H1(슬로건): 통념 → 우리의 약속
   media: {
-    lead: "미디어는 늘 ‘사야 할 이유’를 말합니다.",
+    lead: "무엇을 살지 정하는 일은 늘 복잡합니다.",
     tail: "오늘의딜은 고려해야 할 기준과 숫자를 정리해 드립니다.",
     hi: "고려해야 할 기준과 숫자", // tail 안에서 오렌지 강조
   },
-  // 중립 선언 밴드
+  // 브랜드 밴드
   lonely: {
     lead: "정답 대신 기준을, 권유 대신 근거를 드립니다",
     sub: "무언가를 고르고 결정한다는 것은 생각보다 외롭습니다",
@@ -102,10 +102,10 @@ export const CATCH = {
 
 // 코너 인덱스용 한 줄 설명(짧게)
 export const CORNER_SHORT: Record<string, string> = {
-  factcheck: "광고 너머의 진실",
+  factcheck: "근거로 확인하는 쇼핑 상식",
   smartguide: "고르고·비교하고 오래 쓰기",
   trendlab: "살 가치 있나",
   repair: "AS 부르기 전 셀프체크",
 };
 export const MAGAZINE_INTRO =
-  "광고도 제휴도 받지 않는 중립 쇼핑 가이드.";
+  "사기 전에 확인할 기준과 숫자를 정리합니다.";
