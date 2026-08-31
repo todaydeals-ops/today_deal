@@ -36,7 +36,7 @@ const KW_OVERRIDE = {
   "av-receiver-selfcheck": "home theater av receiver",
   "tens-device-selfcheck": "physical therapy electrode pad",
   "air-compression-massager-selfcheck": "leg massage recovery boots",
-  "heating-pad-selfcheck": "electric heating pad blanket",
+  "heating-pad-selfcheck": "warm blanket sofa winter",
   // ── 2026-09-01 2차 웨이브 ──
   "headphone-one-side-selfcheck": "headphones on desk",
   "repeat-student-sleep": "tired student studying night",
