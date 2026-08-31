@@ -7,6 +7,9 @@ import fs from "node:fs";
 
 const MIN = 2300, MAX = 3200;      // 본문 글자수(공백 제외)
 const FAQ_MIN = 4;                  // FAQ 최소 개수
+const P_MIN = 12;                   // 본문 문단(p) 최소 개수. 규격은 14~18이지만 게이트는 12로 둔다
+                                    // — 글자수를 채워도 문단이 7~9개면 한 덩어리가 길어져 모바일에서 읽기 어렵다.
+                                    //   2026-09-01 한 배치가 p 7~9 로 왔는데 이 검사가 없어 그대로 통과했다.
 const CALLOUT_MIN = 140;            // '짚고 가요' 최소 길이(사이드바가 비어 보이지 않게)
 const VALID_CORNERS = ["smartguide", "factcheck", "trendlab", "repair"];
 
@@ -60,11 +63,12 @@ for (const f of files) {
   const arts = j.articles || j;
   if (!Array.isArray(arts)) continue; // 원고 파일이 아님(주제 계획서 등) — 조용히 건너뜀
   console.log(`\n${f.split(/[\\/]/).pop()} — ${arts.length}편`);
-  console.log("slug".padEnd(34), "본문  h2 FAQ sum callout em src 판정");
+  console.log("slug".padEnd(34), "본문  h2   p FAQ sum callout em src 판정");
   for (const a of arts) {
     total++;
     const body = cnt(bodyText(a));
     const h2 = (a.blocks || []).filter((b) => b.t === "h2").length;
+    const pCnt = (a.blocks || []).filter((b) => b.t === "p").length;
     const faq = (a.faq || []).length;
     const sum = (a.summary || []).length;
     const call = (a.callout || "").length;
@@ -88,6 +92,7 @@ for (const f of files) {
     if (negHits.length) bad.push(`부정묘사(${negHits.join("/")})`);
     if (body < MIN || body > MAX) bad.push(`본문 ${body}`);
     if (faq < FAQ_MIN) bad.push(`FAQ ${faq}`);
+    if (pCnt < P_MIN) bad.push(`문단 ${pCnt}(${P_MIN}+ 필요)`);
     if (sum !== 3) bad.push(`summary ${sum}`);
     if (em > 0) bad.push(`em-dash ${em}`);
     if (call < CALLOUT_MIN) bad.push(`callout ${call}`);
@@ -111,6 +116,7 @@ for (const f of files) {
       (a.slug || "(slug 없음)").padEnd(34),
       String(body).padStart(4),
       String(h2).padStart(3),
+      String(pCnt).padStart(4),
       String(faq).padStart(3),
       String(sum).padStart(3),
       String(call).padStart(6),
@@ -128,7 +134,7 @@ if (thin.length) {
   for (const t of thin) console.log("   " + t);
 }
 if (failures.length) {
-  console.log(`\n기준: 본문 ${MIN}~${MAX}자(공백 제외) · FAQ ${FAQ_MIN}+ · summary 3문장 · callout ${CALLOUT_MIN}자+ · em-dash 0 · sources 1+`);
+  console.log(`\n기준: 본문 ${MIN}~${MAX}자(공백 제외) · FAQ ${FAQ_MIN}+ · 문단 ${P_MIN}+ · summary 3문장 · callout ${CALLOUT_MIN}자+ · em-dash 0 · sources 1+`);
   console.log(`      부정묘사 0 · 제목 의심제기형 금지 — "효과 없다"가 아니라 "어떤 경우에 도움이 되는지"로 쓴다(.claude/agents/magazine-writer.md §5)`);
   process.exit(1);
 }
