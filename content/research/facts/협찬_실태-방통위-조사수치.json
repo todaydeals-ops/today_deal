@@ -1,0 +1,63 @@
+{
+  "topic": "연계편성 실태조사 수치",
+  "brand": "협찬연구소",
+  "article": "공용 근거 — 규모를 말할 때 인용한다",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "kcc-survey-423-cases",
+      "claim": "방송통신위원회가 2019년 11월부터 2020년 1월까지 실시한 실태조사에서 KBS를 제외한 6개 방송사에서 연계편성 423건이 확인됐다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "민주언론시민연합 — 방통위, 종편-홈쇼핑 연계 판매 조사결과와 대책",
+      "source_url": "https://www.ccdm.or.kr/comment/264397",
+      "checked": "2026-09-01",
+      "scope": { "대상": "지상파·종편 6개사", "분류": "실태조사", "시기": "2019-11~2020-01", "지역": "KR" }
+    },
+    {
+      "id": "kcc-survey-110-cases-4-channels",
+      "claim": "종합편성채널 4사의 26개 프로그램을 40일간 조사한 결과 연계편성 110건이 확인됐다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "민주언론시민연합 — 방통위 조사결과 논평",
+      "source_url": "https://www.ccdm.or.kr/comment/264397",
+      "checked": "2026-09-01",
+      "scope": { "대상": "종편 4사 26개 프로그램", "분류": "실태조사", "시기": "40일간", "지역": "KR" }
+    },
+    {
+      "id": "multi-linked-169-to-838",
+      "claim": "하나의 건강정보 프로그램이 여러 홈쇼핑 판매방송과 연결되는 다중 연계편성은 2020년 169건에서 2023년 838건으로 늘었다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미디어오늘 — '방송계 뒷광고' 홈쇼핑 연계편성, 유튜브 '뒷광고'보다 심각",
+      "source_url": "http://www.mediatoday.co.kr/news/articleView.html?idxno=208731",
+      "checked": "2026-09-01",
+      "scope": { "대상": "다중 연계편성", "분류": "실태조사", "시기": "2020~2023", "지역": "KR" }
+    },
+    {
+      "id": "2024-july-935-cases-by-channel",
+      "claim": "2024년 7월 기준 연계편성은 총 935회로 집계됐고 채널별로는 TV조선 206회, JTBC 118회, MBN 87회 등이었다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미디어오늘 — 유튜브 뒷광고는 '불법' 연계편성은 '합법'",
+      "source_url": "https://www.mediatoday.co.kr/news/articleView.html?idxno=333460",
+      "checked": "2026-09-01",
+      "scope": { "대상": "종편 등 채널별", "분류": "실태조사", "시기": "2024-07", "지역": "KR" }
+    },
+    {
+      "id": "homeshopping-order-age-distribution",
+      "claim": "홈쇼핑 주문 현황에서 50대 이상이 총 주문량의 53.3%를 차지하고 40대를 포함하면 85%에 이른다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "허프포스트코리아 — 고발 유튜버 '사망여우'가 방송사-홈쇼핑 연계편성 광고를 정조준했다",
+      "source_url": "https://www.huffingtonpost.kr/entry/yutyubeo-samangyeou_kr_6048359ac5b636ed3376c636",
+      "checked": "2026-09-01",
+      "scope": { "대상": "홈쇼핑 주문 연령", "분류": "시청자", "시기": "보도 시점", "지역": "KR" },
+      "caution": "유튜버가 방송에서 제시한 수치를 언론이 전한 것으로, 원자료의 출처와 집계 기준은 기사에 명시돼 있지 않다.",
+      "cautionSource": "허프포스트코리아 보도의 인용 형식"
+    }
+  ]
+}

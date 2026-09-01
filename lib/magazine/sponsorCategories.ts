@@ -19,12 +19,12 @@ export const SPONSOR_CATEGORIES: SponsorCategory[] = [
   {
     key: "linked", label: "연계편성", en: "LINKED", color: "#3f5a7a",
     angle: "정보 프로그램과 홈쇼핑 판매의 시각 대조",
-    slugs: [],
+    slugs: ["linked-programming-basics","linked-programming-numbers"],
   },
   {
     key: "health", label: "건강정보와 전문가", en: "EXPERT", color: "#4a7c59",
     angle: "전문가 출연이 신뢰 장치로 쓰이는 구조",
-    slugs: [],
+    slugs: ["health-food-broadcast-sanctions"],
   },
   {
     key: "place", label: "맛집과 업체 소개", en: "PLACE", color: "#8a6a3a",
@@ -39,7 +39,7 @@ export const SPONSOR_CATEGORIES: SponsorCategory[] = [
   {
     key: "rule", label: "제도와 규제", en: "RULE", color: "#8a4a4a",
     angle: "실태조사·심의 제재·협찬 고지 제도",
-    slugs: [],
+    slugs: ["sponsorship-disclosure-gap","youtube-vs-broadcast-adrule"],
   },
   {
     key: "basics", label: "편성표 읽는 법", en: "BASICS", color: "#5b6470",

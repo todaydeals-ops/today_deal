@@ -1,0 +1,71 @@
+{
+  "topic": "홈쇼핑 건강기능식품 심의 제재와 연계편성 보도 사례",
+  "brand": "협찬연구소",
+  "article": "공용 근거 — 사례를 들 때 인용한다",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sanction-brain-ps-four-homeshopping",
+      "claim": "경도인지장애·뇌질환 관련 표현으로 건강기능식품 효능을 설명한 판매방송에 대해 NS홈쇼핑·현대홈쇼핑·GS샵·홈앤쇼핑 4개사가 법정제재 '주의'를 받았다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ZDNet Korea — 방미심위, NS·현대·GS·홈앤쇼핑 법정제재",
+      "source_url": "https://zdnet.co.kr/view/?no=20260511152416",
+      "checked": "2026-09-01",
+      "scope": { "대상": "홈쇼핑 4사", "분류": "심의 제재", "시기": "2026", "지역": "KR" }
+    },
+    {
+      "id": "sanction-animal-study-joint-supplement",
+      "claim": "동물실험 결과를 인체 효능처럼 설명한 관절 건강기능식품 판매방송 2건에 법정제재 '주의'가 의결됐다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "인사이트 — 방미심위, 동물실험 결과 '인체 효능'처럼 부풀린 홈쇼핑 2곳 제재",
+      "source_url": "https://www.insight.co.kr/news/561832",
+      "checked": "2026-09-01",
+      "scope": { "대상": "홈쇼핑 2사", "분류": "심의 제재", "시기": "2026", "지역": "KR" }
+    },
+    {
+      "id": "sanction-sold-out-expression",
+      "claim": "'매진 임박' 표현을 반복 사용한 판매방송에 대해 현대홈쇼핑이 제재를 받았다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ZDNet Korea — 방미심위, '매진 임박' 표현 반복 사용한 현대홈쇼핑 제재",
+      "source_url": "https://zdnet.co.kr/view/?no=20260818182659",
+      "checked": "2026-09-01",
+      "scope": { "대상": "현대홈쇼핑", "분류": "심의 제재", "시기": "2026", "지역": "KR" }
+    },
+    {
+      "id": "case-seolrok-schedule-stopped",
+      "claim": "MBC 시사교양 프로그램에서 다이어트 제품이 다뤄진 시간대에 같은 제품이 롯데홈쇼핑에서 판매돼 논란이 됐고, 이후 잘못을 인정하고 편성을 중단했다는 보도가 나왔다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "톱스타뉴스 — '잘못 인정하고 편성 중단'…한 유튜버, 홈쇼핑 연계 의혹 추가 폭로",
+      "source_url": "https://www.topstarnews.net/news/articleView.html?idxno=16088496",
+      "checked": "2026-09-01",
+      "scope": { "대상": "MBC 교양 프로그램·롯데홈쇼핑", "분류": "사례", "시기": "2025-11", "지역": "KR" }
+    },
+    {
+      "id": "case-youtuber-raised-linked-programming",
+      "claim": "고발 유튜버가 지상파 아침 정보 프로그램에서 특정 원료가 소개되는 시간에 같은 원료 제품이 홈쇼핑에서 판매되는 사례들을 제기하며 공론화됐다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "허프포스트코리아 — 고발 유튜버가 방송사-홈쇼핑 연계편성 광고를 정조준했다",
+      "source_url": "https://www.huffingtonpost.kr/entry/yutyubeo-samangyeou_kr_6048359ac5b636ed3376c636",
+      "checked": "2026-09-01",
+      "scope": { "대상": "지상파 아침 정보 프로그램", "분류": "사례", "시기": "보도 시점", "지역": "KR" }
+    },
+    {
+      "id": "youtube-backad-punished-broadcast-not",
+      "claim": "유튜브 뒷광고는 처벌 대상인 반면 홈쇼핑 연계편성은 여전히 이어지고 있다는 지적이 언론에서 반복돼 왔다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "PD저널 — 유튜브 '뒷광고'도 처벌받는데…홈쇼핑 연계편성 여전",
+      "source_url": "https://www.pdjournal.com/news/articleView.html?idxno=71612",
+      "checked": "2026-09-01",
+      "scope": { "대상": "규제 비대칭", "분류": "사례", "시기": "보도 시점", "지역": "KR" }
+    }
+  ]
+}

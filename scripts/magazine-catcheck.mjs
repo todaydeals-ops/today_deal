@@ -19,6 +19,7 @@ const MEDIA = [
   // AS연구소만 field가 아니라 corner로 격리한다.
   // AS는 주제가 아니라 상황("고장났다")이라 field가 가전·디지털·리빙·자동차로 흩어져 있다.
   { name: "AS연구소", corner: "repair", file: "lib/magazine/b4asCategories.ts", topics: [] },
+  { name: "협찬연구소", field: "방송·협찬", file: "lib/magazine/sponsorCategories.ts", topics: [] },
 ];
 
 const WANT_TOPICS = process.argv.includes("--topics");

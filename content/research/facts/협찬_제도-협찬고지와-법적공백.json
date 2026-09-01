@@ -1,0 +1,63 @@
+{
+  "topic": "방송 협찬 고지 제도와 법적 공백",
+  "brand": "협찬연구소",
+  "article": "공용 근거 — 제도 분류 전편이 인용한다",
+  "captured": "2026-09-01",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "youtube-backad-illegal-broadcast-linked-legal",
+      "claim": "유튜브 뒷광고는 표시광고법 위반으로 공정거래위원회가 처벌하지만, 방송 연계편성은 현행 방송법에 협찬의 정의만 있고 규제 규정이 없어 제재 근거가 없다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미디어오늘 — 장영란만 잘못?… 유튜브 뒷광고는 '불법' 연계편성은 '합법'",
+      "source_url": "https://www.mediatoday.co.kr/news/articleView.html?idxno=333460",
+      "checked": "2026-09-01",
+      "scope": { "대상": "방송 협찬·연계편성", "분류": "제도", "시기": "현행법 기준", "지역": "KR" }
+    },
+    {
+      "id": "sponsorship-disclosure-not-legal-duty",
+      "claim": "협찬 고지는 방송사 재승인·재허가 조건에 포함될 뿐 법적 의무가 아니다. 협찬은 광고와 달리 방송사와 직거래가 가능해 미디어렙을 거치지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미디어오늘 — 유튜브 뒷광고는 '불법' 연계편성은 '합법'",
+      "source_url": "https://www.mediatoday.co.kr/news/articleView.html?idxno=333460",
+      "checked": "2026-09-01",
+      "scope": { "대상": "협찬 고지", "분류": "제도", "시기": "현행법 기준", "지역": "KR" },
+      "caution": "협찬 자체는 합법적인 방송 재원 조달 수단이다. 문제는 시청자가 그것을 알 수 없다는 점에 있다.",
+      "cautionSource": "미디어오늘 보도 중 협찬의 법적 성격 서술"
+    },
+    {
+      "id": "kcc-chair-2018-no-regulation",
+      "claim": "2018년 이효성 방송통신위원장은 연계편성에 대해 '협찬주가 한 일로 법에 규제 내용이 없다'는 취지로 밝혔고, 방통위는 2018년부터 2024년까지 매년 모니터링만 실시했다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "미디어오늘 — 유튜브 뒷광고는 '불법' 연계편성은 '합법'",
+      "source_url": "https://www.mediatoday.co.kr/news/articleView.html?idxno=333460",
+      "checked": "2026-09-01",
+      "scope": { "대상": "방송통신위원회", "분류": "제도", "시기": "2018~2024", "지역": "KR" }
+    },
+    {
+      "id": "viewer-trust-gap-education-vs-shopping",
+      "claim": "시청자는 같은 효능 주장이라도 홈쇼핑에서 들을 때보다 교양 프로그램에서 들을 때 과학적으로 검증된 객관적 정보로 받아들이는 경향이 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "디지털투데이 — 건강정보 프로그램에 나온 건강식품, 홈쇼핑과 연계 판매 주의 필요",
+      "source_url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=462195",
+      "checked": "2026-09-01",
+      "scope": { "대상": "시청자 인식", "분류": "제도", "시기": "조사 시점", "지역": "KR" }
+    },
+    {
+      "id": "sponsor-influences-schedule",
+      "claim": "연계편성의 원인으로 협찬주가 지목되며, 협찬주가 방송 편성표에까지 영향을 미치는 구조라는 지적이 있다",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "시사위크 — 건강프로-홈쇼핑 '연계편성' 원인은 협찬주, 방송편성표까지 '쥐락펴락'",
+      "source_url": "https://www.sisaweek.com/news/articleView.html?idxno=143678",
+      "checked": "2026-09-01",
+      "scope": { "대상": "협찬주와 편성", "분류": "제도", "시기": "보도 시점", "지역": "KR" }
+    }
+  ]
+}
