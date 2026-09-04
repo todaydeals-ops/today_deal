@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
 // fetchArchiveSlugs 제거 — /deal/[slug]는 noindex이므로 사이트맵 불포함
 import { fetchCuratedSlugs } from "@/lib/data/curated";
-import { fetchBoardSitemap, BOARD_CATEGORIES } from "@/lib/data/board";
 import { fetchMagazineList } from "@/lib/data/magazine";
 import { fetchReportList } from "@/lib/data/magazine-report";
 import { canonicalArticleUrl } from "@/lib/magazine/owner";
@@ -21,15 +20,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE}/deals/coupang`, lastModified: now, changeFrequency: "hourly", priority: 0.9 },
     { url: `${SITE}/deals/ali`, lastModified: now, changeFrequency: "hourly", priority: 0.8 },
     { url: `${SITE}/recommended`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
-    { url: `${SITE}/board`, lastModified: now, changeFrequency: "hourly", priority: 0.8 },
-    { url: `${SITE}/board?type=event`, lastModified: now, changeFrequency: "daily", priority: 0.7 },
-    // 게시판 카테고리 색인 페이지 ("○○ 핫딜" 키워드)
-    ...BOARD_CATEGORIES.map((c) => ({
-      url: `${SITE}/board?category=${encodeURIComponent(c)}`,
-      lastModified: now,
-      changeFrequency: "daily" as const,
-      priority: 0.6,
-    })),
+    // ★게시판은 사이트맵에서 제외한다(2026-09-04 · 사장님 결정 A안).
+    //
+    // 서치콘솔 실측: 제출 2,078건 중 "발견됨 · 현재 색인이 생성되지 않음" 1,178건.
+    // sitemap.xml 1,532건의 구성이 /board 1,007 + /magazine 514 였다.
+    // 게시판 발행글 4,914건의 본문은 중앙값 27자(공백 제외), 전량 1,000자 미만이고
+    // 본문이 0자인 것도 있다. 구글이 크롤할 가치를 못 느껴 대기열에 쌓아둔 상태였고,
+    // 그 사이 매거진 514편이 같은 크롤 예산을 두고 밀렸다.
+    //
+    // 사이트맵은 "이걸 크롤해달라"는 요청이다. 27자짜리 수천 건을 요청하면 예산이
+    // 그쪽으로 간다. 페이지는 그대로 두므로(삭제 아님) 내부 링크로는 여전히 도달하고,
+    // 게시물의 숨은 태그 SEO 자산도 유지된다. 크롤 요청만 거둔 것이다.
+    //
+    // 되돌리려면 이 블록과 아래 boardPages 를 복원하면 된다.
     { url: `${SITE}/giveaway`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE}/terms`, lastModified: now, changeFrequency: "monthly", priority: 0.3 },
     { url: `${SITE}/privacy`, lastModified: now, changeFrequency: "monthly", priority: 0.3 },
@@ -45,14 +48,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  // 제보딜 게시판 페이지 — 실제 발행일을 lastmod로
-  const board = await fetchBoardSitemap(2000);
-  const boardPages: MetadataRoute.Sitemap = board.map((b) => ({
-    url: `${SITE}/board/${b.slug}`,
-    lastModified: new Date(b.lastmod),
-    changeFrequency: "weekly",
-    priority: 0.6,
-  }));
 
   // 매거진 글. 실제 발행일을 lastmod 로
   const mag = await fetchMagazineList({ limit: 1000, all: true });
@@ -73,5 +68,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }));
 
-  return [...base, ...reportPages, ...magazinePages, ...curatedPages, ...boardPages];
+  return [...base, ...reportPages, ...magazinePages, ...curatedPages];
 }
