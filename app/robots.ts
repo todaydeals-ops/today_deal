@@ -9,7 +9,7 @@ import { headers } from "next/headers";
 // 그 호스트에만 있는 URL(홈·분류)은 /sub-sitemap.xml 이 담당한다.
 export default async function robots(): Promise<MetadataRoute.Robots> {
   const host = ((await headers()).get("host") || "").toLowerCase();
-  const isSub = /^(goodsleep|pill|beauty|b4as)\./.test(host);
+  const isSub = /^(goodsleep|pill|beauty|b4as|sponsor)\./.test(host);
   const origin = `https://${host || "www.todaydeals.co.kr"}`;
 
   return {

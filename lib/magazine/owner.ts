@@ -69,5 +69,9 @@ export const PATH_TO_OWNER: Record<string, OwnerKey> = {
   "/pill": "pill",
   "/beauty": "beauty",
   "/b4as": "b4as",
-  "/sponsor": "sponsor",
+  // ★"/sponsor" 는 일부러 빼 두었다(2026-09-04).
+  // sponsor.todaydeals.co.kr 이 아직 DNS·Vercel Domains 에 없어서, 여기에 넣어두면
+  // /sponsor 가 존재하지 않는 호스트로 301 되어 홈이 통째로 죽는다.
+  // 서브도메인을 붙인 뒤 이 줄을 되살리고, app/sponsor/page.tsx 의 noindex 도 함께 푼다.
+  //   "/sponsor": "sponsor",
 };

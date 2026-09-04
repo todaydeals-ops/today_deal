@@ -11,6 +11,7 @@ import { SLEEP_CATEGORIES } from "@/lib/magazine/sleepCategories";
 import { PILL_CATEGORIES } from "@/lib/magazine/pillCategories";
 import { BEAUTY_CATEGORIES } from "@/lib/magazine/beautyCategories";
 import { B4AS_CATEGORIES } from "@/lib/magazine/b4asCategories";
+import { SPONSOR_CATEGORIES } from "@/lib/magazine/sponsorCategories";
 import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
 import { type OwnerKey } from "@/lib/magazine/owner";
 
@@ -22,6 +23,7 @@ const MEDIA: Record<string, { origin: string; cats: Cat[]; owner: OwnerKey }> = 
   pill: { origin: SUB_ORIGIN.pill, cats: PILL_CATEGORIES, owner: "pill" },
   beauty: { origin: SUB_ORIGIN.beauty, cats: BEAUTY_CATEGORIES, owner: "beauty" },
   b4as: { origin: SUB_ORIGIN.b4as, cats: B4AS_CATEGORIES, owner: "b4as" },
+  sponsor: { origin: SUB_ORIGIN.sponsor, cats: SPONSOR_CATEGORIES, owner: "sponsor" },
 };
 
 export async function GET(): Promise<Response> {

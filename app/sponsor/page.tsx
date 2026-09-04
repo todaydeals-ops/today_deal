@@ -24,12 +24,17 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   if (!cat) {
     return {
       alternates: { canonical: `${SUB_ORIGIN.sponsor}/` },
+      // ★서브도메인이 붙기 전까지 www/sponsor 로 임시 노출한다. 색인은 막는다 —
+      //   지금 www 로 색인시켰다가 나중에 서브도메인으로 옮기면 재색인 동안 순위를 잃는다
+      //   (owner.ts 에 같은 교훈이 적혀 있다). 도메인 연결 후 이 robots 를 지운다.
+      robots: { index: false, follow: true },
       title: "협찬연구소 — 방송 협찬을 기록합니다",
       description: "낮 시간대 방송에 나온 원료가 같은 날 어디서 팔렸는지, 편성 시각을 나란히 기록합니다. 연계편성·건강정보와 전문가·맛집과 업체·생활용품과 렌털·제도와 규제.",
     };
   }
   return {
     alternates: { canonical: `${SUB_ORIGIN.sponsor}/?cat=${cat.key}` },
+    robots: { index: false, follow: true }, // 위와 같은 이유(도메인 연결 후 제거)
     title: `${cat.label} | 협찬연구소`,
     description: `${cat.angle}. 방송 편성과 판매 시각을 그대로 나란히 기록합니다.`,
   };
