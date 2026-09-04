@@ -49,8 +49,23 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const a = await fetchMagazineBySlug(slug);
   if (!a) return { title: "오늘의딜 매거진" };
   // 서브 미디어 글은 자기 브랜드로 표기 — 잠자리연구소·알약연구소 글이 "오늘의딜 매거진"으로 나가지 않게.
-  const brand = a.field === "수면·침구" ? "잠자리연구소" : a.field === "건강기능식품" ? "알약연구소" : a.field === "뷰티·성분" ? "성분연구소" : "오늘의딜 매거진";
-  const blurb = brand === "잠자리연구소" ? "근거로 검증하는 수면 미디어" : brand === "알약연구소" ? "임상으로 검증하는 영양 미디어" : brand === "성분연구소" ? "임상으로 검증하는 뷰티 성분 미디어" : "사기 전에 보는 쇼핑 가이드";
+  // ★AS연구소는 field 가 아니라 corner 로 격리한다. 이 줄에서 corner 를 안 보는 바람에
+  //   AS연구소 178편이 검색결과에 "오늘의딜 매거진"으로 나가고 있었다(2026-09-04 발견).
+  //   브랜드 귀속이 사라지면 서브 미디어를 따로 키운 의미가 없다.
+  const brand =
+    a.field === "수면·침구" ? "잠자리연구소"
+    : a.field === "건강기능식품" ? "알약연구소"
+    : a.field === "뷰티·성분" ? "성분연구소"
+    : a.field === "방송·협찬" ? "협찬연구소"
+    : a.corner === "repair" ? "AS연구소"
+    : "오늘의딜 매거진";
+  const blurb =
+    brand === "잠자리연구소" ? "근거로 검증하는 수면 미디어"
+    : brand === "알약연구소" ? "임상으로 검증하는 영양 미디어"
+    : brand === "성분연구소" ? "임상으로 검증하는 뷰티 성분 미디어"
+    : brand === "AS연구소" ? "부르기 전 5분 셀프체크"
+    : brand === "협찬연구소" ? "방송 협찬을 기록하는 미디어"
+    : "사기 전에 보는 쇼핑 가이드";
   const desc = (a.excerpt || a.subtitle || `${a.title} — ${brand}의 ${blurb}.`).slice(0, 155);
   return {
     title: `${a.title} | ${brand}`,
