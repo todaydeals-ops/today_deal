@@ -7,8 +7,15 @@ import { canonicalArticleUrl } from "@/lib/magazine/owner";
 
 const SITE = "https://www.todaydeals.co.kr";
 
-// 매 요청 시 최신 (딜·스냅샷이 계속 늘어남)
-export const dynamic = "force-dynamic";
+// ★2026-09-15 긴급 수정 — 이 라우트가 Supabase egress 한도 초과의 주범이었다.
+// force-dynamic + fetchMagazineList({ all:true }, select("*")) 조합이라, 크롤러가
+// /sitemap.xml 을 때릴 때마다 매거진 최대 1000행의 본문(RAIL 이미지 포함, 평균 15KB)을
+// 캐시 없이 매번 새로 읽었다. 오늘 구글·네이버에 사이트맵을 여러 개 재제출해 크롤
+// 빈도가 늘면서 한도를 넘겼고, Supabase 가 프로젝트를 402 로 통째로 막아 사이트 전체
+// (홈·매거진·딜·게시판) 가 실제 방문자에게도 빈 화면을 보여주고 있었다.
+// "딜이 자주 바뀌니 항상 최신"이라는 이유로 force-dynamic 이었지만, 사이트맵의
+// lastmod 정밀도가 그 정도로 급할 이유는 없다 — 1시간 캐시로 바꾼다.
+export const revalidate = 3600;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
@@ -49,14 +56,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
 
 
-  // 매거진 글. 실제 발행일을 lastmod 로
-  const mag = await fetchMagazineList({ limit: 1000, all: true });
+  // 매거진 글. 실제 발행일을 lastmod 로.
+  // ★light:true — 본문(RAIL 이미지 포함)을 받지 않는다. 그래서 image 사이트맵 확장을
+  // 여기서는 못 넣는다(이미지는 magazine-sitemap.xml 이 아니라 이 라우트에만 없던 것도
+  // 아니고 애초에 이 파일에만 있었다). egress 사고 이후 1시간 캐시가 붙었으니 완전히
+  // 손해는 아니지만, 이미지 확장이 필요해지면 별도의 가벼운 컬럼(예: cover_image_url)을
+  // 추가해 body_html 없이 뽑는 방법을 검토할 것 — 지금은 본문 전체를 다시 읽는 대가가 더 크다.
+  const mag = await fetchMagazineList({ limit: 1000, all: true, light: true });
   const magazinePages: MetadataRoute.Sitemap = mag.map((a) => ({
     url: canonicalArticleUrl(a.slug),
     lastModified: new Date(a.createdAt),
     changeFrequency: "monthly",
     priority: 0.7,
-    ...(a.image?.url ? { images: [a.image.url.split("?")[0]] } : {}), // 쿼리스트링(&) 제거 — Next가 image:loc을 XML 이스케이프 안 해 파싱오류 방지
   }));
 
   // 매거진 리포트 (5편 묶음 롱폼 SEO) — 우선순위 높게
