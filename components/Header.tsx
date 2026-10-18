@@ -61,6 +61,11 @@ export default function Header() {
               <span className={styles.dot}>.</span>
             </Link>
           ))}
+          {/* 2.0 생활백과 — 읽는 글이 아니라 찾아보는 정본(content/wiki) */}
+          <Link href="/wiki" onClick={close} className={pathname.startsWith("/wiki") ? styles.active : ""}>
+            생활백과
+            <span className={styles.dot}>.</span>
+          </Link>
 
           <div className={styles.dropdown} ref={dropRef}>
             <button

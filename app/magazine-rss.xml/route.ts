@@ -7,6 +7,7 @@
 // 포함, 정본이 www 라 색인 대상)이라 여기 별도로 뺀다.
 import { fetchMagazineList } from "@/lib/data/magazine";
 import { canonicalArticleUrl } from "@/lib/magazine/owner";
+import { allEntries, wikiUrl } from "@/lib/wiki/load";
 
 export const revalidate = 600;
 const SITE = "https://www.todaydeals.co.kr";
@@ -24,11 +25,19 @@ export async function GET(): Promise<Response> {
   const arts = await fetchMagazineList({ limit: 60, all: true, light: true });
   const now = new Date().toUTCString();
 
-  const items = arts
+  // 생활백과 항목도 함께 싣는다 — 새 항목을 네이버가 빨리 알게. 발행·수정 시각 기준으로 섞는다.
+  const feed = [
+    ...arts.map((a) => ({ link: canonicalArticleUrl(a.slug), title: a.title, desc: a.excerpt || a.subtitle || a.title, at: a.createdAt })),
+    ...allEntries().map((e) => ({ link: wikiUrl(e.slug), title: e.seoTitle, desc: e.description, at: `${e.updated}T09:00:00+09:00` })),
+  ]
+    .sort((a, b) => new Date(b.at).getTime() - new Date(a.at).getTime())
+    .slice(0, 80);
+
+  const items = feed
     .map((a) => {
-      const link = canonicalArticleUrl(a.slug);
-      const desc = a.excerpt || a.subtitle || a.title;
-      const pub = a.createdAt ? new Date(a.createdAt).toUTCString() : now;
+      const link = a.link;
+      const desc = a.desc;
+      const pub = a.at ? new Date(a.at).toUTCString() : now;
       return (
         `<item>` +
         `<title>${cdata(a.title)}</title>` +

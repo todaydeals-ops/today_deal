@@ -7,6 +7,7 @@ import type { MetadataRoute } from "next";
 //   sitemap.xml          딜·정적 페이지
 //   magazine-sitemap.xml 아티클 전체(연구소 글 포함, 정본 www)
 //   sub-sitemap.xml      연구소 5곳의 홈·분류 페이지
+//   wiki-sitemap.xml     생활백과 허브·항목
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [{ userAgent: "*", allow: "/", disallow: ["/admin", "/api"] }],
@@ -14,6 +15,7 @@ export default function robots(): MetadataRoute.Robots {
       "https://www.todaydeals.co.kr/sitemap.xml",
       "https://www.todaydeals.co.kr/magazine-sitemap.xml",
       "https://www.todaydeals.co.kr/sub-sitemap.xml",
+      "https://www.todaydeals.co.kr/wiki-sitemap.xml",
     ],
     host: "https://www.todaydeals.co.kr",
   };
