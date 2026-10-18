@@ -8,7 +8,9 @@ import { fetchUnifiedDeals } from "@/lib/data/deals";
 import type { Deal, Platform } from "@/lib/types";
 import styles from "./page.module.css";
 
-export const dynamic = "force-dynamic";
+// 2026-09-15 — 딜은 하루 1번 크론 갱신(vercel.json). force-dynamic(무캐시)이
+// Supabase egress 한도 초과로 사이트 전체를 막은 사고의 원인이었다.
+export const revalidate = 600;
 const SITE = "https://www.todaydeals.co.kr";
 
 interface PSeo {

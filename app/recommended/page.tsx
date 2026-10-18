@@ -6,8 +6,10 @@ import CuratedList from "@/components/CuratedList";
 import { fetchActiveCurated } from "@/lib/data/curated";
 import { getRecommendedHeader } from "@/lib/data/settings";
 
-// 헤더 설정이 즉시 반영되도록 매 요청 최신
-export const dynamic = "force-dynamic";
+// 2026-09-15 — 관리자 헤더 설정 반영 목적이었으나 force-dynamic(무캐시)이
+// Supabase egress 한도 초과로 사이트 전체를 막은 사고의 원인이었다. 1분 캐시로도
+// "즉시"에 가깝고, 방문마다 재조회하던 걸 없앤다.
+export const revalidate = 60;
 
 const SITE = "https://www.todaydeals.co.kr";
 export const metadata: Metadata = {

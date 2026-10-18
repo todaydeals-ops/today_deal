@@ -11,8 +11,13 @@ import { CornerIndex, NeutralBand, CornerDot, FieldPill, FeaturedImageSlot } fro
 import Pagination from "@/components/magazine/Pagination";
 import "./magazine/magazine.css";
 
-// 딜은 자주 바뀌고 신선도가 핵심 → 항상 최신 렌더(SSR).
-export const dynamic = "force-dynamic";
+// ★2026-09-15 긴급 수정 — "딜은 자주 바뀌니 항상 최신"이라는 전제가 실제와 달랐다.
+// 딜은 크론(vercel.json)으로 하루 1번만 갱신되는데(22:10 UTC), force-dynamic 은
+// 방문마다(크롤러 포함) DB를 캐시 없이 새로 읽었다. Supabase 무료 egress 5GB/월을
+// 넘겨 프로젝트가 402 로 통째로 막힌 사고의 핵심 원인 중 하나다.
+// 10분 캐시로도 "하루 1번 갱신" 대비 체감 신선도는 그대로고, 반복 방문·크롤러
+// 트래픽에서 DB 재조회를 극적으로 줄인다.
+export const revalidate = 600;
 
 const SITE = "https://www.todaydeals.co.kr";
 const mono = "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif";

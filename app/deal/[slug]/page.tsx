@@ -12,7 +12,9 @@ import styles from "./page.module.css";
 
 const SITE = "https://www.todaydeals.co.kr";
 
-export const dynamic = "force-dynamic";
+// 2026-09-15 — 딜은 하루 1번 크론 갱신(vercel.json). force-dynamic(무캐시)이
+// Supabase egress 한도 초과로 사이트 전체를 막은 사고의 원인이었다.
+export const revalidate = 600;
 
 function fmt(n: number) {
   return n.toLocaleString("ko-KR");

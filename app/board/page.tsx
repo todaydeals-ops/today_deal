@@ -8,7 +8,9 @@ import VoteButton from "@/components/VoteButton";
 import { fetchBoardDeals, BOARD_CATEGORIES, BOARD_TYPES, isBoardType, boardTypeLabel, nickFor } from "@/lib/data/board";
 import styles from "./board.module.css";
 
-export const dynamic = "force-dynamic";
+// 2026-09-15 — 게시판은 /api/board/submit 으로 실시간 제보가 들어와 딜보다 짧게 캐시한다.
+// force-dynamic(무캐시)이 Supabase egress 한도 초과로 사이트 전체를 막은 사고의 원인이었다.
+export const revalidate = 120;
 const SITE = "https://www.todaydeals.co.kr";
 
 const META: Record<string, { title: string; desc: string }> = {
