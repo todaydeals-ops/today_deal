@@ -1,5 +1,6 @@
 // 타임딜 데이터 접근. Supabase 설정 시 실DB, 아니면 mock 폴백.
 import type { Deal, Platform, DealBadge, PriceCompare } from "@/lib/types";
+import { cacheNonEmpty } from "@/lib/data/cache";
 import { PLATFORM_ORDER, BADGE_META } from "@/lib/types";
 import { getDealsByPlatform } from "@/data/mockDeals";
 import { getSupabaseServer } from "@/lib/supabase/server";
@@ -167,22 +168,26 @@ export async function fetchArchiveSlugs(limit = 5000): Promise<string[]> {
 
 // 통합 피드: MD가 정한 순서(display_order) 그대로. 할인율 정렬 안 함. Supabase 없으면 mock 폴백.
 export async function fetchUnifiedDeals(): Promise<Deal[]> {
-  const sb = getSupabaseServer();
-  if (sb) {
-    try {
-      const { data, error } = await sb
-        .from("deals")
-        .select("*")
-        .order("display_order", { ascending: true });
-      if (!error && data && data.length > 0) {
-        return mergeVerdicts(sb, (data as DealRow[]).filter(isLiveRow).map(mapDeal));
-      }
-    } catch {
-      // 폴백
-    }
-  }
-  return PLATFORM_ORDER.flatMap((p) => getDealsByPlatform(p));
+  const live = await cachedUnifiedDeals();
+  return live.length > 0 ? live : PLATFORM_ORDER.flatMap((p) => getDealsByPlatform(p));
 }
+
+// DB 부분만 데이터 캐시(10분). 딜은 하루 1번 크론으로 갈린다. 비거나 실패하면 캐시하지 않고
+// 위에서 mock 으로 폴백한다 — mock 이 캐시에 박혀 실데이터를 가리는 일이 없게(lib/data/cache.ts).
+const cachedUnifiedDeals = cacheNonEmpty(async (): Promise<Deal[]> => {
+  const sb = getSupabaseServer();
+  if (!sb) return [];
+  try {
+    const { data, error } = await sb
+      .from("deals")
+      .select("*")
+      .order("display_order", { ascending: true });
+    if (error || !data || data.length === 0) return [];
+    return mergeVerdicts(sb, (data as DealRow[]).filter(isLiveRow).map(mapDeal));
+  } catch {
+    return [];
+  }
+}, "deals-unified", 600, [] as Deal[]);
 
 function groupByPlatform(deals: Deal[]): Record<Platform, Deal[]> {
   return Object.fromEntries(

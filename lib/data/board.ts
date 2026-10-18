@@ -1,5 +1,6 @@
 // 제보딜 게시판(에이전트 큐레이션) 데이터 접근.
 import { getSupabaseAdmin } from "@/lib/supabase/server";
+import { cacheNonEmpty } from "@/lib/data/cache";
 
 // 2종 보드 (무료/이벤트+쿠폰/적립 통합, 해외직구는 카테고리 폐지)
 export const BOARD_TYPES = [
@@ -106,7 +107,11 @@ export async function bumpBoardView(slug: string): Promise<void> {
   }
 }
 
-export async function fetchBoardDeals(
+// 게시판 목록은 데이터 캐시(2분) — /board 가 ?type=·?category= 로 동적 렌더라서(lib/data/cache.ts).
+// 드립 공개가 시간당 5편 안팎이라 2분 지연은 체감되지 않는다.
+export const fetchBoardDeals = cacheNonEmpty(queryBoardDeals, "board-list", 120, [] as BoardDeal[]);
+
+async function queryBoardDeals(
   limit = 60,
   opts?: { type?: string; category?: string }
 ): Promise<BoardDeal[]> {

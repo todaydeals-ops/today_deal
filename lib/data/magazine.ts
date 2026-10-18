@@ -1,5 +1,6 @@
 // 매거진 데이터 접근. magazine 테이블 없으면 빈 배열로 폴백.
 import { getSupabaseAdmin } from "@/lib/supabase/server";
+import { cacheNonEmpty } from "@/lib/data/cache";
 
 export interface MagazineArticle {
   id: string;
@@ -139,7 +140,7 @@ function applyListFilters<T>(q: T, opts?: MagazineListOpts): T {
   return b as T;
 }
 
-export async function fetchMagazineList(opts?: MagazineListOpts): Promise<MagazineArticle[]> {
+async function queryMagazineList(opts?: MagazineListOpts): Promise<MagazineArticle[]> {
   const sb = getSupabaseAdmin();
   if (!sb) return [];
   if (opts?.slugs && opts.slugs.length === 0) return [];
@@ -165,8 +166,14 @@ export async function fetchMagazineList(opts?: MagazineListOpts): Promise<Magazi
   }
 }
 
+// 목록·편수는 데이터 캐시(10분)에서 읽는다 — 홈·연구소 홈이 searchParams 때문에 동적 렌더라
+// 페이지 revalidate 가 안 먹는다(lib/data/cache.ts). 발행은 하루 1번(07:14 크론)이라 10분이면 충분하다.
+export const fetchMagazineList = cacheNonEmpty(queryMagazineList, "magazine-list", 600, [] as MagazineArticle[]);
+
 /** 목록과 같은 조건의 총 편수. 총 페이지수 계산용. */
-export async function fetchMagazineCountBy(opts?: MagazineListOpts): Promise<number> {
+export const fetchMagazineCountBy = cacheNonEmpty(queryMagazineCountBy, "magazine-count", 600, 0);
+
+async function queryMagazineCountBy(opts?: MagazineListOpts): Promise<number> {
   const sb = getSupabaseAdmin();
   if (!sb) return 0;
   if (opts?.slugs && opts.slugs.length === 0) return 0;

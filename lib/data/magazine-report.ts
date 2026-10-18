@@ -1,4 +1,5 @@
 import { getSupabaseAdmin } from "@/lib/supabase/server";
+import { cacheNonEmpty } from "@/lib/data/cache";
 import type { MagazineArticle } from "./magazine";
 
 export interface MagazineReport {
@@ -35,7 +36,10 @@ function mapRow(r: ReportRow): { meta: { articles: string[]; topic: string }; in
   }
 }
 
-export async function fetchReportList(limit = 20): Promise<Omit<MagazineReport, "articles">[]> {
+// 리포트 목록은 데이터 캐시(1시간) — 홈에서 매 요청 읽던 것(lib/data/cache.ts).
+export const fetchReportList = cacheNonEmpty(queryReportList, "report-list", 3600, [] as Omit<MagazineReport, "articles">[]);
+
+async function queryReportList(limit = 20): Promise<Omit<MagazineReport, "articles">[]> {
   const sb = getSupabaseAdmin();
   if (!sb) return [];
   const { data } = await sb
