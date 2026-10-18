@@ -39,3 +39,8 @@ magazine-og-preview.png
 
 .work/epg/
 .work/clips/
+
+# 영상 속 그 제품 수집 원료 — 남의 자막 전문·설명란이라 저장소에 올리지 않는다(재수집 가능)
+data/transcripts/
+data/video-candidates.json
+data/video-seen.json

@@ -1,0 +1,207 @@
+{
+  "topic": "안나픽 쇼츠 「이사배 얼굴 반쪽 윤곽 스틱」 — 영상 속 스틱이 투슬래시포 컨투어인지 맥 컨투어 스틱인지 여부",
+  "brand": "투슬래시포 TWO SLASH FOUR (이사배 브랜드) / 맥 MAC (해시태그 지목)",
+  "article": "예정",
+  "captured": "2026-10-18",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "two-slash-four-operated-by-jusikhoesa",
+      "claim": "투슬래시포(TWO SLASH FOUR)의 공식 사이트 사업자 정보에 운영사는 주식회사 투슬래시포로 표기되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "투슬래시포 공식 웹사이트 사업자 정보 (twoslashfour.com)",
+      "source_url": "https://www.twoslashfour.com/",
+      "checked": "2026-10-18",
+      "scope": {
+        "대상": "투슬래시포 브랜드",
+        "분류": "회사·브랜드",
+        "시기": "2026-10-18 확인 시점",
+        "지역": "KR"
+      },
+      "caution": "사업자 정보 표기 기준이다. 사업자등록번호 등의 세부 정보는 이 팩트에 넣지 않는다."
+    },
+    {
+      "id": "two-slash-four-ceo-risabae-launched-2023",
+      "claim": "투슬래시포는 이사배가 대표로 있는 메이크업 브랜드이며 2023년 2월 런칭했다고 한국경제 매거진이 보도했다(기사 2025.06.02).",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "한국경제 매거진 「이사배 브랜드 '투슬래시포', 올리브영 온라인몰 공식 입점」 (언론 보도)",
+      "source_url": "https://magazine.hankyung.com/business/article/202505306599b",
+      "checked": "2026-10-18",
+      "scope": {
+        "대상": "투슬래시포 브랜드",
+        "분류": "대표·런칭 시점",
+        "시기": "2023-02 런칭, 기사 2025-06-02",
+        "지역": "KR"
+      },
+      "caution": "'대표'와 '2023년 2월 런칭'은 기사 표기다. 법인 등기상 대표는 확인하지 않았다. 올리브영 입점은 '2025년 무렵 공식 입점'으로만 쓰고 정확한 날짜는 쓰지 않는다.",
+      "cautionSource": "한국경제 매거진 기사(위 source_url) — 2023년 2월 런칭 및 2025.06.02 기사 기재 기준"
+    },
+    {
+      "id": "two-slash-four-official-lineup-no-contour-stick",
+      "claim": "투슬래시포 공식 사이트 제품 카테고리(LIP·FACE·EYE·TOOL·SET/MINI)에는 컨투어·쉐딩 스틱 제품이 표기되어 있지 않다. 얼굴 윤곽·하이라이트 계열은 페이스 큐브(대즐링·스트로빙·이레이징), 올 오버 페이스 블러쉬 등이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "투슬래시포 공식 웹사이트 제품 카테고리 (twoslashfour.com)",
+      "source_url": "https://www.twoslashfour.com/",
+      "checked": "2026-10-18",
+      "scope": {
+        "대상": "투슬래시포 윤곽·쉐딩 제품",
+        "분류": "제품 라인 (공식몰 기준)",
+        "시기": "2026-10-18 확인 시점",
+        "지역": "KR"
+      },
+      "caution": "'없다'가 아니라 '공식몰 카테고리에 표기되어 있지 않다'로 쓴다. 단종·품절·미등록 제품은 목록에서 빠질 수 있다. 스트로빙 페이스 큐브는 듀얼 큐브(하이라이터 파우더 구성)라 막대형 스틱과 다르다.",
+      "cautionSource": "투슬래시포 공식 웹사이트 실측(위 source_url, 2026-10-18)"
+    },
+    {
+      "id": "risabae-2024-tutorial-base-fenty-contour-skinstick",
+      "claim": "엘르 2024.03.25 기사(이사배 봄 메이크업 튜토리얼)는 베이스 단계 제품으로 '펜티 뷰티 매치 스틱스 컨투어 스킨스틱 #엠버'를 나열했다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "엘르 코리아 「'인간 벚꽃' 되고 싶다면?! 이사배의 봄 메이크업 튜토리얼」 (언론 기사)",
+      "source_url": "https://www.elle.co.kr/article/84985",
+      "checked": "2026-10-18",
+      "scope": {
+        "대상": "이사배 2024 봄 튜토리얼 베이스 제품",
+        "분류": "사용 제품 목록 (2024 튜토리얼 한정)",
+        "시기": "2024-03-25 기사",
+        "지역": "KR"
+      },
+      "caution": "2024년 3월 튜토리얼의 제품 목록일 뿐이다. 2026년 10월 쇼츠 속 스틱과 같다는 근거가 아니므로 쇼츠 제품 특정에 쓰지 않는다. 기사에는 용량·가격이 없다.",
+      "cautionSource": "엘르 기사(위 source_url) — 2024-03-25 기준 제품 목록"
+    },
+    {
+      "id": "risabae-youtube-channel-name",
+      "claim": "이사배의 유튜브 채널명은 'RISABAE'이며, 엘르 2024.03.25 기사는 이 채널 영상 캡처를 출처로 표기했다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "엘르 코리아 2024.03.25 기사 출처 표기 (RISABAE 유튜브 채널 영상 캡처)",
+      "source_url": "https://www.elle.co.kr/article/84985",
+      "checked": "2026-10-18",
+      "scope": {
+        "대상": "이사배 유튜브 채널",
+        "분류": "채널명",
+        "시기": "2024-03-25 기사 기준",
+        "지역": "KR"
+      },
+      "caution": "이 쇼츠(Y3DP06nvXow)가 RISABAE 채널 원본 영상에서 왔는지는 확인하지 못했다. 원본 영상 확인 전까지 '이사배 채널 영상으로 추정'으로만 쓴다.",
+      "cautionSource": "엘르 기사(https://www.elle.co.kr/article/84985) 2024-03-25 기재 기준 채널명 표기"
+    },
+    {
+      "id": "risabae-shorts-tags-name-two-brands-body-no-brand",
+      "claim": "Y3DP06nvXow 설명 해시태그에는 #투슬래시포컨투어와 #맥컨투어스틱이 함께 있으며, 설명 본문은 '쓱 그어주고 스펀지로 톡톡', '루스 파우더' 등 제품 종류만 말하고 브랜드명은 쓰지 않는다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "안나픽 YouTube 쇼츠 설명란·해시태그 (data/video-candidates.json 캡처)",
+      "source_url": "https://www.youtube.com/watch?v=Y3DP06nvXow",
+      "checked": "2026-10-18",
+      "scope": {
+        "대상": "안나픽 쇼츠 설명란",
+        "분류": "영상 기록 (제품 지목 방식)",
+        "시기": "2026-10-05 업로드",
+        "지역": "KR"
+      },
+      "caution": "두 해시태그 중 어느 쪽이 영상 속 스틱인지 설명란으로 확정되지 않는다. 글에서 둘 중 하나를 고르지 않고 두 후보와 확인 상태를 함께 쓴다."
+    },
+    {
+      "id": "risabae-shorts-quote-contour-stick-and-loose-powder",
+      "claim": "영상 자막에는 '맨날 하는 컨토스틱(컨투어 스틱으로 정정)인데'(0:01~0:02)와 '맨날 제가 쓰는 그루스 파우더(루스 파우더로 정정)고 일단 외곽을 눌러 줍니다'(0:11)라는 발언이 있다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "안나픽 쇼츠 자막 (data/transcripts/Y3DP06nvXow.json)",
+      "source_url": "https://www.youtube.com/watch?v=Y3DP06nvXow",
+      "checked": "2026-10-18",
+      "scope": {
+        "대상": "영상 자막 발언",
+        "분류": "영상 인용",
+        "시기": "0:01~0:11",
+        "지역": "KR"
+      },
+      "caution": "'컨토스틱'→'컨투어 스틱', '그루스 파우더'→'루스 파우더'는 자동자막 정정이다(후자는 설명란 표기 기준 추정). 원문 그대로 인용하지 않고 정정본을 쓰며 정정했다고 밝힌다. 발화자가 이사배 본인인지는 음성으로 확인하지 못했다."
+    },
+    {
+      "id": "risabae-shorts-no-paid-ad-disclosure",
+      "claim": "Y3DP06nvXow 설명란에는 '[광고]' 또는 업체 대가·제휴 문구가 없다(설명란 원문 캡처 기준). 해시태그에 #쿠팡추천템 #쇼핑꿀팁 등이 있다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "안나픽 YouTube 쇼츠 설명란 (data/video-candidates.json 캡처)",
+      "source_url": "https://www.youtube.com/watch?v=Y3DP06nvXow",
+      "checked": "2026-10-18",
+      "scope": {
+        "대상": "안나픽 쇼츠 설명란",
+        "분류": "유료광고 표기",
+        "시기": "2026-10-05 업로드 시점 캡처",
+        "지역": "KR"
+      },
+      "caution": "이 표기는 캡처 기준이다. 해시태그 #쿠팡추천템은 광고 표기가 아니므로 제휴 관계를 단정하는 근거로 쓰지 않는다."
+    },
+    {
+      "id": "mac-contour-stick-unconfirmed",
+      "claim": "해시태그에 있는 '맥 컨투어 스틱' 제품의 실재·용량·호수를 확인하지 못했다. 맥 한국 공식 사이트는 403으로 접근이 차단됐고, 검색에서도 해당 제품 페이지를 찾지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "맥 한국 공식 사이트 (maccosmetics.co.kr, 403 차단) 및 웹검색 1회",
+      "source_url": "https://www.maccosmetics.co.kr/",
+      "checked": "2026-10-18",
+      "scope": {
+        "대상": "맥 컨투어 스틱",
+        "분류": "제품 실재·용량·호수",
+        "시기": "2026-10-18",
+        "지역": "KR"
+      },
+      "caution": "맥 제품이 판매 중인지 단정하지 않는다. 해시태그 표기만으로 제품을 특정하지 않는다. 재확인 시 맥 공식 사이트를 브라우저로 직접 열어 컨투어 카테고리를 확인한다."
+    },
+    {
+      "id": "risabae-shorts-product-unconfirmed-between-two-brands",
+      "claim": "영상 속 윤곽 스틱이 투슬래시포 컨투어인지 맥 컨투어 스틱인지 특정하지 못했다. 투슬래시포 공식몰에는 스틱이 없고, 맥 제품은 확인하지 못했으며, 2024 튜토리얼의 펜티 스틱은 다른 영상의 제품이다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "투슬래시포 공식 웹사이트, 엘르 2024 기사, 안나픽 쇼츠 설명란",
+      "source_url": "https://www.twoslashfour.com/",
+      "checked": "2026-10-18",
+      "scope": {
+        "대상": "영상 속 윤곽 스틱",
+        "분류": "제품 특정",
+        "시기": "2026-10-05 업로드",
+        "지역": "KR"
+      },
+      "caution": "독자의 핵심 질문(이 스틱이 뭐냐)에 확인 실패로 답해야 한다. 두 후보를 나열하고 각각의 확인 상태를 밝히며, 원본 영상 확인 방법을 안내한다. 특정 제품을 단정하지 않는다."
+    },
+    {
+      "id": "risabae-shorts-original-source-unconfirmed",
+      "claim": "이 쇼츠가 잘라 온 원본 영상(RISABAE 채널 어느 영상·날짜)을 확인하지 못했다. 설명란에 원본 출처 표기가 없고, 유튜브 페이지 설명 본문이 잘려 채널명·원본 정보를 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "안나픽 YouTube 쇼츠 설명란 및 유튜브 페이지 (youtube.com/watch?v=Y3DP06nvXow)",
+      "source_url": "https://www.youtube.com/watch?v=Y3DP06nvXow",
+      "checked": "2026-10-18",
+      "scope": {
+        "대상": "이사배 원본 영상",
+        "분류": "원 출처",
+        "시기": "2026-10-05 업로드",
+        "지역": "KR"
+      },
+      "caution": "'이사배 본인 채널 영상'은 추정이다. 원본 확인 전까지 '이사배 채널 영상으로 보인다'로만 쓴다. 발화자를 이사배로 단정하지 않는다."
+    },
+    {
+      "id": "two-slash-four-stick-price-unconfirmed",
+      "claim": "영상 속 윤곽 스틱의 가격과 용량을 확인하지 못했다(투슬래시포 스틱 제품 공식 목록 없음, 맥 제품 미확인).",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "투슬래시포 공식 웹사이트 (twoslashfour.com) 및 맥 공식 사이트 접근 실패",
+      "source_url": "https://www.twoslashfour.com/",
+      "checked": "2026-10-18",
+      "scope": {
+        "대상": "영상 속 윤곽 스틱",
+        "분류": "가격·용량",
+        "시기": "2026-10-18",
+        "지역": "KR"
+      },
+      "caution": "쇼핑몰 가격은 출처로 쓰지 않는다. 가격 정보가 필요하면 제품이 특정된 뒤 공식 판매 페이지에서 다시 확인한다."
+    }
+  ]
+}

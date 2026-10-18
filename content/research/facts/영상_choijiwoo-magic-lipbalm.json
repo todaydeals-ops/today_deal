@@ -1,0 +1,119 @@
+{
+  "topic": "영상 속 그 제품 — '최지우가 극찬한 3천원대 매직 립밤' (안나픽 쇼츠 7ZUKEbdOod8)",
+  "brand": "미확인 (커뮤니티 후기에서 멘소래담 립아이스 매직컬러가 거론됨, 공식 확인 실패)",
+  "article": "예정",
+  "captured": "2026-10-18",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "choijiwoo-speaker-not-choijiwoo",
+      "claim": "영상 자막(자동 생성)에서 말하는 사람은 본인의 가방마다 이 립밤이 '하나씩 다 들어 있다'고 말한다. 최지우는 3인칭으로만 나온다('최지우가 알려준 템이라는데'). 최지우가 직접 말하거나 제품을 쓰는 장면은 자막에 없다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "안나픽 YouTube 쇼츠 7ZUKEbdOod8 자동 자막 (data/transcripts/7ZUKEbdOod8.json)",
+      "source_url": "https://www.youtube.com/watch?v=7ZUKEbdOod8",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "최지우 (영상 제목 인물)",
+        "category": "생활백과 · 영상 속 제품 (립밤)",
+        "line": "제품 미확인",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "제목의 '최지우가 극찬한'과 설명란의 '최지우 가방마다 무조건 들어있다'는 쇼츠 측 표현이다. 최지우의 발언으로 인용하지 말 것. 화자의 실명은 자막에 없어 확인하지 못했다.",
+      "cautionSource": "caution에 수치 없음. 자막 원문은 data/transcripts/7ZUKEbdOod8.json 0:00~0:09 줄."
+    },
+    {
+      "id": "choijiwoo-lipbalm-identity-unconfirmed",
+      "claim": "'최지우 립밤'으로 불리는 제품이 멘소래담 립아이스 매직컬러(스트로베리)라는 연결은 커뮤니티 후기 글 1건에서만 확인했고, 공식 자료에서는 확인하지 못했다. 멘소래담 공식 홈페이지에서 해당 제품 페이지를 찾지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "멘소래담 공식 홈페이지 열람(2026-10-18, 제품 목록 없음). 검색 결과의 연결 근거는 커뮤니티 후기 1건뿐이라 출처로 쓰지 않음.",
+      "source_url": "https://www.mentholatum.co.kr/",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "멘소래담 (후보)",
+        "category": "립밤",
+        "line": "립아이스 매직컬러 (후보, 미확인)",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "'멘소래담 매직컬러'를 이 영상의 제품으로 단정하지 말 것. 영상이 가리키는 제품명·용기 디자인·색상을 확인한 뒤에만 연결한다. 같은 브랜드 안에 이름이 비슷한 라인(립아이스 틴티드컬러 등)이 있어 혼동된다.",
+      "cautionSource": "caution에 수치 없음. 라인명은 검색 결과의 쇼핑몰·후기 목록에서 보였으나 출처로 쓰지 않음."
+    },
+    {
+      "id": "choijiwoo-no-broadcast-source",
+      "claim": "최지우가 이 립밤을 방송이나 유튜브에서 언급했다는 원 출처(영상·방송명·날짜)를 2026-10-18 조사 시점에 찾지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "웹 검색 6회(최지우·립밤·가방·방송·유튜브 키워드) 결과에서 원 출처 없음. 원 영상 페이지 열람.",
+      "source_url": "https://www.youtube.com/watch?v=7ZUKEbdOod8",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "최지우 (영상 제목 인물)",
+        "category": "생활백과 · 영상 속 제품 (립밤)",
+        "line": "제품 미확인",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "'최지우가 극찬했다'는 문장은 독자에게 사실처럼 전달되기 쉽다. 원 출처를 찾기 전까지는 '영상에서 그렇게 소개됐다' 수준으로만 쓸 것.",
+      "cautionSource": "caution에 수치 없음."
+    },
+    {
+      "id": "choijiwoo-price-unverified",
+      "claim": "제목의 '3천원대' 가격은 공식 판매처나 제조사 자료에서 확인하지 못했다. 쇼핑몰 상품 가격과 커뮤니티 후기 가격이 서로 달라 하나로 정하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "멘소래담 공식 홈페이지 열람(가격 정보 없음). 쇼핑몰 가격은 참고만 하고 출처로 쓰지 않음.",
+      "source_url": "https://www.mentholatum.co.kr/",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "멘소래담 (후보)",
+        "category": "립밤",
+        "line": "립아이스 매직컬러 (후보, 미확인)",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "'3천원대'라는 표현을 가격 사실로 쓰지 말 것. 판매처와 용량 표기에 따라 가격이 달라지므로, 집필 시점에 공식 판매가와 용량을 함께 확인한 뒤 쓴다.",
+      "cautionSource": "caution에 구체 수치가 없다. 가격 수치는 확인 전까지 쓰지 않는다."
+    },
+    {
+      "id": "choijiwoo-ad-disclosure-none",
+      "claim": "수집된 설명란 원문에는 '[광고]', '유료 광고 포함', '대가를 받고' 같은 유료광고 표기가 없다. 해시태그 '#쿠팡추천템', '#쿠팡템', '#연예인추천템'은 있으나 광고·제휴 고지 문구는 아니다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "data/video-candidates.json 수집 설명란 (7ZUKEbdOod8)",
+      "source_url": "https://www.youtube.com/watch?v=7ZUKEbdOod8",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "안나픽 (채널)",
+        "category": "쇼츠 설명란 광고 표기",
+        "line": "7ZUKEbdOod8 단건",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "수집 시점의 설명란 기준이다. 설명란은 나중에 수정될 수 있으므로 게시 직전에 다시 확인할 것.",
+      "cautionSource": "caution에 수치 없음. 설명란 원문은 수집본(data/video-candidates.json)."
+    },
+    {
+      "id": "choijiwoo-quote-tint-caption-corrected",
+      "claim": "영상 0:18 부근에서 화자는 '틴트 효과가 있고, 향이 너무 좋다'고 말한다(자동 자막은 '힌트 효과'로 적었으나 명백한 오탈자로 교정). 같은 자막의 '립밥'은 '립밤'으로 교정했다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "안나픽 YouTube 쇼츠 7ZUKEbdOod8 자동 자막 (data/transcripts/7ZUKEbdOod8.json, 0:18·0:05 줄)",
+      "source_url": "https://www.youtube.com/watch?v=7ZUKEbdOod8",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "미확인 (화자 실명 미확인)",
+        "category": "생활백과 · 영상 속 제품 (립밤)",
+        "line": "제품 미확인",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "자동 자막의 교정본이다. 원음 확인 전에는 '~라고 말한다' 형식으로만 인용하고, 교정 사실을 글에 표시할 것. 효과에 대한 발언은 개인 체감으로 다룬다.",
+      "cautionSource": "caution에 수치 없음. 교정 대상은 자막 0:05 '립밥', 0:18 '힌트'."
+    }
+  ]
+}

@@ -79,7 +79,13 @@ for (const file of files) {
   need(e.faq.length >= 3, `FAQ ${e.faq.length}개(3+)`);
   need(e.infobox.length >= 3, `infobox ${e.infobox.length}칸(3+)`);
   need(e.sections.length >= 3, `섹션 ${e.sections.length}개(3+)`);
-  need(e.sources.length >= 3, `출처 ${e.sources.length}곳(3+)`);
+  // 영상 속 그 제품은 원본 영상 자체가 1차 근거라 "영상 1 + 공식 1" 이면 성립한다.
+  // 3곳을 강제하자 집필 에이전트가 읽지도 않은 법령 URL·무관한 보도자료 목록으로 칸을 채웠다(10-18).
+  // 칸 채우기용 출처는 근거가 아니라 위장이다 — 개수를 맞추느니 적게 정직하게.
+  const minSrc = e.type === "video-pick" ? 2 : 3;
+  need(e.sources.length >= minSrc, `출처 ${e.sources.length}곳(${minSrc}+)`);
+  if (e.type === "video-pick") need(e.sources.some((s) => s.kind === "공식"), "영상 속 그 제품은 공식 출처(브랜드·제조사) 1곳 이상 필요");
+  need(!e.sources.some((s) => /확인하지 못|참고용|없다는 확인|없음을 확인|미확인 근거/.test(s.label)), "읽지 않았거나 내용과 무관한 출처(라벨에 '확인하지 못함·참고용')");
 
   const body = text(e);
   const chars = body.replace(/\s/g, "").length;
@@ -101,7 +107,9 @@ for (const file of files) {
     // 사이트 첫 화면은 근거가 아니다 — 개별 문서 링크여야 한다
     try {
       const pth = new URL(u).pathname;
-      need(yt || (pth && pth !== "/"), `사이트 첫 화면은 출처가 아님: ${s.url}`);
+      // 첫 화면은 근거가 아니다. 단 영상 속 그 제품의 "브랜드 공식 사이트"는 제품 정체(라인업) 확인 근거라 허용한다.
+      const brandHome = e.type === "video-pick" && s.kind === "공식";
+      need(yt || brandHome || (pth && pth !== "/"), `사이트 첫 화면은 출처가 아님: ${s.url}`);
       need(!/^\/journals\/[^/]+$/.test(pth), `학술지 첫 화면은 출처가 아님(논문 링크 필요): ${s.url}`);
     }
     catch { bad.push(`URL 형식 오류: ${s.url}`); }

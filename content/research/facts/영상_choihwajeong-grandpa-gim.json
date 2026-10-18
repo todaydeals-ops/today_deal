@@ -1,0 +1,137 @@
+{
+  "topic": "영상 속 그 제품 — '미식가 최화정도 못 산다는 밥도둑' 소문난할아버지김 (안나픽 쇼츠 FaAUB-0PaUU)",
+  "brand": "소문난할아버지김 (제조사·공식 판매처 미확인)",
+  "article": "예정",
+  "captured": "2026-10-18",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "gim-clip-speaker-says-four-per-person",
+      "claim": "영상 자막(자동 생성) 0:12~0:16에서 출연자는 '소문난 할아버지 김… 한 사람당 네 개만 살 수 있다는 김이라는데'라고 말한다. 이는 영상 속 발언이며 판매 조건으로 확인된 것은 아니다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "안나픽 YouTube 쇼츠 FaAUB-0PaUU 자동 자막 (data/transcripts/FaAUB-0PaUU.json)",
+      "source_url": "https://www.youtube.com/watch?v=FaAUB-0PaUU",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "소문난할아버지김",
+        "category": "생활백과 · 영상 속 제품 (김 반찬)",
+        "line": "소포장 김 (제품 라인 미확인)",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "구매 제한 수량은 영상의 말이라서 '~라고 소개됐다'로만 쓴다. 판매처 공지에서 확인하기 전에는 수량 제한을 판매 조건처럼 단정하지 말 것.",
+      "cautionSource": "caution의 수량은 자동 자막 0:15~0:16 줄 기준. 공식 판매처 공지는 미확인."
+    },
+    {
+      "id": "gim-purchase-limit-conflict-unconfirmed",
+      "claim": "1인당 구매 제한 수량을 공식 판매처에서 확인하지 못했다. 영상 자막은 '한 사람당 네 개'라고 말하고, 커뮤니티 글은 '1인당 최대 2박스(40봉)'라고 적어 서로 다르다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "웹 검색 6회 및 제품 판매처 공식 확인 실패. 커뮤니티 글은 출처로 쓰지 않고 충돌 사실만 기록.",
+      "source_url": "https://www.youtube.com/watch?v=FaAUB-0PaUU",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "소문난할아버지김",
+        "category": "생활백과 · 영상 속 제품 (김 반찬)",
+        "line": "소포장 김 (판매처별 조건 미확인)",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "구매 제한 숫자를 글에 쓰지 말고 '판매처마다 수량 기준이 다를 수 있으니 구매 전 공지를 확인하라'로 쓸 것. 매장과 온라인 스토어의 기준이 다를 수 있다는 점도 함께 밝힌다.",
+      "cautionSource": "caution에 수치 없음. 충돌하는 두 수치는 위 claim에 기록."
+    },
+    {
+      "id": "gim-speaker-not-identified",
+      "claim": "영상 자막에서 말하는 사람들의 이름은 나오지 않는다. 최화정이 이 김을 먹었다거나 추천했다는 발언은 자막에서 확인되지 않았다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "안나픽 YouTube 쇼츠 FaAUB-0PaUU 자동 자막 전문 확인(17줄, 화자 명시 없음)",
+      "source_url": "https://www.youtube.com/watch?v=FaAUB-0PaUU",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "최화정 (영상 제목 인물)",
+        "category": "생활백과 · 영상 속 제품 (김 반찬)",
+        "line": "제품 미확인",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "제목의 '최화정도 사고 싶어도 못 산다'는 쇼츠 측 표현이다. 최화정 발언으로 인용하지 말 것. 화자 실명을 확인하기 전에는 '출연자'로만 쓴다.",
+      "cautionSource": "caution에 수치 없음."
+    },
+    {
+      "id": "gim-han-hyo-joo-claim-unverified",
+      "claim": "'한효주 김'이라는 별칭이 예능 '핑계고'에서 한효주가 이 김을 언급한 것에서 붙었다는 주장은 커뮤니티 글 1건에만 있고, 방송 회차·날짜는 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "웹 검색 6회(핑계고·한효주·소문난 할아버지김) 결과에서 해당 회차 미발견. 커뮤니티 글은 출처로 쓰지 않음.",
+      "source_url": "https://www.youtube.com/watch?v=FaAUB-0PaUU",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "소문난할아버지김",
+        "category": "생활백과 · 영상 속 제품 (김 반찬)",
+        "line": "한효주 김 별칭 (언급 근거 미확인)",
+        "years": "몇 년 전 (미확인)",
+        "region": "KR"
+      },
+      "caution": "'한효주가 방송에서 추천했다'를 사실로 쓰지 말 것. 방송 회차를 찾기 전까지는 별칭 이야기를 뺀다.",
+      "cautionSource": "caution에 수치 없음."
+    },
+    {
+      "id": "gim-maker-and-official-store-unconfirmed",
+      "claim": "소문난할아버지김의 제조사명과 공식 판매처 주소를 공식 자료에서 확인하지 못했다. 커뮤니티 글에는 영등포·왕십리 매장과 스마트스토어가 적혀 있으나 공식 근거가 없다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "웹 검색 6회에서 제조사 공식 사이트 미발견. 커뮤니티 글과 쇼핑몰 목록은 출처로 쓰지 않음.",
+      "source_url": "https://www.youtube.com/watch?v=FaAUB-0PaUU",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "소문난할아버지김",
+        "category": "생활백과 · 영상 속 제품 (김 반찬)",
+        "line": "소포장 김 (판매처 미확인)",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "이름이 비슷한 다른 회사 상품이 쇼핑몰 목록에 섞여 있다. 제품 페이지의 제조사 표기와 포장 로고를 대조한 뒤 연결할 것. 가격·재입고 시간은 판매처 공지로만 확인한다.",
+      "cautionSource": "caution의 혼동 사례는 쇼핑몰 검색 결과 제목(참고용). 출처 URL로 쓰지 않음."
+    },
+    {
+      "id": "gim-choi-hwa-jung-show-no-match",
+      "claim": "CJ온스타일 최화정쇼 관련 공식 기사(2023-07-28, 홍진경 더김치 방송 보도)에는 소문난할아버지김이나 김 제품 판매 내용이 없다. 2026년 최화정쇼의 이 제품 방송 편성은 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "CJ 뉴스룸(cjnews.cj.net) 기사 열람 (2023-07-28)",
+      "source_url": "https://cjnews.cj.net/cj%EC%98%A8%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%B5%9C%ED%99%94%EC%A0%95x%ED%99%8D%EC%A7%84%EA%B2%BD-%EC%BD%9C%EB%9D%BC%EB%B3%B4-%EB%B0%A9%EC%86%A1-%EC%A7%84%ED%96%89/",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "CJ온스타일 최화정쇼",
+        "category": "홈쇼핑 방송 편성",
+        "line": "최화정쇼 (소문난할아버지김 방송 여부 미확인)",
+        "years": "2023~2026",
+        "region": "KR"
+      },
+      "caution": "최화정 방송에서 팔렸다는 문장은 쓰지 말 것. 최화정 유튜브 소개 주장도 커뮤니티 글 외에 확인하지 못했다.",
+      "cautionSource": "caution에 수치 없음. 확인에 쓴 기사는 CJ 뉴스룸 2023-07-28 게시물."
+    },
+    {
+      "id": "gim-ad-disclosure-none",
+      "claim": "수집된 설명란 원문에는 '[광고]', '유료 광고 포함', '대가를 받고' 같은 유료광고 표기가 없다. 해시태그 '#쿠팡추천템', '#연예인추천템'은 있으나 광고·제휴 고지 문구는 아니다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "data/video-candidates.json 수집 설명란 (FaAUB-0PaUU)",
+      "source_url": "https://www.youtube.com/watch?v=FaAUB-0PaUU",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "안나픽 (채널)",
+        "category": "쇼츠 설명란 광고 표기",
+        "line": "FaAUB-0PaUU 단건",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "수집 시점의 설명란 기준이다. 설명란은 나중에 수정될 수 있으므로 게시 직전에 다시 확인할 것.",
+      "cautionSource": "caution에 수치 없음. 설명란 원문은 수집본(data/video-candidates.json)."
+    }
+  ]
+}

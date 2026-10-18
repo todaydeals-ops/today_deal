@@ -77,7 +77,9 @@ async function transcript(id) {
   const xml = await (await fetch(t.baseUrl.replace("&fmt=srv3", ""), { headers: { "User-Agent": UA } })).text();
   const lines = [...xml.matchAll(/<text start="([\d.]+)"[^>]*>([\s\S]*?)<\/text>/g)].map((m) => ({ t: fmtT(+m[1]), text: decode(decode(m[2])).replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim() })).filter((l) => l.text);
   fs.mkdirSync(TDIR, { recursive: true });
-  const out = { id, title: j?.videoDetails?.title, channel: j?.videoDetails?.author, auto: t.kind === "asr", lines };
+  // 설명란 전문도 함께 남긴다 — 크리에이터가 직접 적은 [제품정보]·[광고] 표기가 가장 강한 1차 근거다.
+  // (RSS 는 채널 최신 15편만 줘서 조금만 지나도 설명란을 못 받는다)
+  const out = { id, title: j?.videoDetails?.title, channel: j?.videoDetails?.author, published: j?.microformat?.playerMicroformatRenderer?.publishDate ?? null, description: j?.videoDetails?.shortDescription ?? "", auto: t.kind === "asr", lines };
   fs.writeFileSync(path.join(TDIR, `${id}.json`), JSON.stringify(out, null, 1));
   console.log(`${id}: ${out.auto ? "자동" : "수동"} 자막 ${lines.length}줄 → data/transcripts/${id}.json`);
   return out;

@@ -1,0 +1,83 @@
+{
+  "topic": "영상 속 그 제품 — 이영자 추천 미끄럼방지 초경량 실내화·요가슈즈 (안나픽 쇼츠 nt6WIGFmILE)",
+  "brand": "이영자 (영상 제목 인물) · 제품 브랜드 미확인",
+  "article": "예정",
+  "captured": "2026-10-18",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "yeongja-slipper-video-claim-2026-10-16",
+      "claim": "안나픽 쇼츠 nt6WIGFmILE(2026-10-16 게시)은 제목을 '품절대란 난리 난 이영자 추천 미끄럼방지 초경량 실내화'로 달았고, 설명란에 '이영자가 스태프들을 위해 직접 챙겨준 초경량 요가슈즈'라고 적었다. 이는 쇼츠 측의 주장이며 독립적으로 확인되지 않았다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "안나픽 YouTube 쇼츠 nt6WIGFmILE (원 영상, 수집본 제목·설명란 기준)",
+      "source_url": "https://www.youtube.com/watch?v=nt6WIGFmILE",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "이영자 (영상 제목 인물)",
+        "category": "생활백과 · 영상 속 제품 (실내화·요가슈즈)",
+        "line": "제품 미확인",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "이영자 본인이 이 제품을 방송에서 소개했다는 근거는 찾지 못했다. 제목·설명란 문장을 인용할 때는 '쇼츠가 그렇게 주장한다'로 쓰고, '이영자가 소개한 제품'으로 단정하지 말 것. '스태프에게 직접 챙겨줬다'는 내용도 같은 이유로 주장으로만 쓴다.",
+      "cautionSource": "caution에 연도·수치가 없어 해당 없음. 출처는 위 YouTube 쇼츠 설명란 원문."
+    },
+    {
+      "id": "yeongja-slipper-speaker-not-named",
+      "claim": "영상 자막(자동 생성)에서 이영자는 말하는 사람이 아니라 3인칭으로 언급된다. 자막 0:00 부근에 '이자가(이영자가로 추정) 매일 신고 있다는 실내화가 화제'라는 문장이 있고, 자막에는 화자 실명이 나오지 않는다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "안나픽 YouTube 쇼츠 nt6WIGFmILE 자동 자막 (data/transcripts/nt6WIGFmILE.json)",
+      "source_url": "https://www.youtube.com/watch?v=nt6WIGFmILE",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "이영자 (영상 제목 인물)",
+        "category": "생활백과 · 영상 속 제품 (실내화·요가슈즈)",
+        "line": "제품 미확인",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "자동 자막 기준이다. 화면상 화자를 확인하지 못했으므로 '이영자의 발언'으로 인용하지 말 것. '이자'를 '이영자'로 읽는 것은 추정이다.",
+      "cautionSource": "caution에 수치 없음. 자막 원문은 data/transcripts/nt6WIGFmILE.json 0:00 줄."
+    },
+    {
+      "id": "yeongja-slipper-brand-unconfirmed",
+      "claim": "이영자가 소개했다는 실내화·요가슈즈의 브랜드, 정확한 제품명, 제조사는 2026-10-18 조사 시점에 확인하지 못했다. 방송 원출처, 공식 판매처, 언론 기사 어느 것에서도 특정 제품을 찾지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "웹 검색 6회(이영자·실내화·요가슈즈·방송명·쿠팡 키워드) 결과에서 제품 특정 근거 없음. 원 영상 페이지 열람(삭제 여부 확인).",
+      "source_url": "https://www.youtube.com/watch?v=nt6WIGFmILE",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "이영자 추천 실내화 (브랜드 미확인)",
+        "category": "생활백과 · 영상 속 제품 (실내화·요가슈즈)",
+        "line": "미끄럼방지 초경량 실내화 / 요가슈즈 (동일 제품인지 미확인)",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "제품명을 추측해 쓰지 말 것. '요가 실내화', '초경량 슬리퍼'로 검색하면 비슷한 상품이 여러 개 나와 독자가 엉뚱한 제품을 사게 된다. 집필 전 원 출처(방송 클립 또는 제품 공식 페이지)에서 브랜드와 모델명을 먼저 확인할 것.",
+      "cautionSource": "caution에 수치 없음. 검색 결과에서 유사 상품이 다수 확인되었다는 점은 조사 기록 참조."
+    },
+    {
+      "id": "yeongja-slipper-ad-disclosure-none",
+      "claim": "수집된 설명란 원문에는 '[광고]', '유료 광고 포함', '대가를 받고' 같은 유료광고 표기가 없다. 해시태그 '#쿠팡추천템', '#쿠팡템'은 있으나 광고·제휴 고지 문구는 아니다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "data/video-candidates.json 수집 설명란 (nt6WIGFmILE)",
+      "source_url": "https://www.youtube.com/watch?v=nt6WIGFmILE",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "안나픽 (채널)",
+        "category": "쇼츠 설명란 광고 표기",
+        "line": "nt6WIGFmILE 단건",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "수집 시점의 설명란 기준이다. 설명란은 나중에 수정될 수 있으므로 게시 직전에 다시 확인할 것. 광고 표기가 없다는 것이 협찬이 없다는 뜻은 아니다.",
+      "cautionSource": "caution에 수치 없음. 설명란 원문은 수집본(data/video-candidates.json)."
+    }
+  ]
+}
