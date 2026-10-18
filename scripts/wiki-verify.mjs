@@ -136,8 +136,9 @@ for (const file of files) {
     if (s?.status === "확정") need(s.start && s.end, "확정인데 start/end 없음");
     if (s?.status === "미발표") {
       need(s.lastYear?.start && s.lastYear?.end, "미발표면 lastYear(작년 실제 일정) 필수");
-      // 미발표인데 2026 날짜를 확정처럼 쓰면 안 된다
-      need(!/2026[.\-년\s]*1[0-2][.\-월\s]*\d{1,2}/.test(e.seoTitle + e.description + e.summary.join(" ")), "미발표인데 2026 날짜를 단정");
+      // 미발표인데 2026 행사 날짜를 확정처럼 쓰면 안 된다.
+      // 행사 달(11·12월)만 본다 — "2026년 10월 18일 확인" 같은 확인 시점까지 막으면 집필이 확인일을 지운다(10-18 오탐).
+      need(!/2026[.\-년\s]*1[12][.\-월\s]*\d{1,2}/.test(e.seoTitle + e.description + e.summary.join(" ")), "미발표인데 2026 날짜를 단정");
     }
   }
 

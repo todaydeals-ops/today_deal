@@ -250,7 +250,13 @@
     "organizer": "여러 쇼핑몰(G마켓·옥션, 11번가, 쿠팡, 올리브영 등)"
   },
   "related": {
-    "entries": [],
+    "entries": [
+      "bigsmileday",
+      "grand-11st-day",
+      "coupang-cublf",
+      "oliveyoung-sale",
+      "black-friday-direct-purchase"
+    ],
     "articles": []
   },
   "facts": [

@@ -1,0 +1,124 @@
+{
+  "topic": "G마켓·옥션 빅스마일데이 — 연도별 기간·쿠폰 부담 구조·2026 일정 (세일 달력 행사별 항목)",
+  "brand": "G마켓·옥션",
+  "article": "예정",
+  "captured": "2026-10-18",
+  "reused_facts": ["bigsmileday-2026-nov-not-announced", "bigsmileday-2025-nov-period"],
+  "declined_facts": [
+    {
+      "id": "bigsmileday-2026-h1-date-conflict",
+      "why": "2026 상반기 행사 기사라 11월 회차 항목과 무관하다. 시작일과 월도 기사 간 날짜가 맞지 않아 확정할 수 없어 쓰지 않았다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "bigsmileday-2023-period",
+      "claim": "2023 G마켓·옥션 빅스마일데이는 11월 6일 0시부터 19일까지 2주간 열린다고 두 회사가 11월 5일 발표했다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "뉴데일리 보도 (G마켓·옥션 빅스마일데이 2023 개최 발표, 본문 입력 2023-11-05)",
+      "source_url": "https://biz.newdaily.co.kr/site/data/html/2023/11/03/2023110300258.amp.html",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "G마켓·옥션",
+        "category": "쇼핑 세일 행사",
+        "line": "빅스마일데이",
+        "years": "2023",
+        "region": "KR"
+      },
+      "caution": "2023년 기준 기간이다. 2025년(11월 1~11일, 11일간)과 길이가 달라서 매년 같은 날짜라고 쓰지 말 것. 기사 URL 날짜(11/03)와 본문 입력일(11/05)이 달라서 본문 입력일 기준으로 인용한다.",
+      "cautionSource": "뉴데일리 2023 기사 본문(입력 2023-11-05 06:00). 2025 기간은 MTN 2025-10-30 보도(재사용 팩트 bigsmileday-2025-nov-period)."
+    },
+    {
+      "id": "bigsmileday-2023-max-discount-coupon",
+      "claim": "2023 빅스마일데이는 카테고리별 인기 상품을 최대 80% 할인가에 판매했고, 7만 원 이상 구매 시 최대 15만 원을 할인하는 고액 쿠폰을 행사 기간 중 4회 제공했다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "뉴데일리 보도 (G마켓·옥션 빅스마일데이 2023 개최 발표, 본문 입력 2023-11-05)",
+      "source_url": "https://biz.newdaily.co.kr/site/data/html/2023/11/03/2023110300258.amp.html",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "G마켓·옥션",
+        "category": "쇼핑 세일 행사",
+        "line": "빅스마일데이",
+        "years": "2023",
+        "region": "KR"
+      },
+      "caution": "80%는 카테고리별 최대 할인율이며 전 상품 평균이 아니다. 고액 쿠폰 4회의 발급 날짜는 본문에서 확인하지 못했으니 날짜를 지어 쓰지 말 것.",
+      "cautionSource": "뉴데일리 2023 기사 본문. 80%·4회·7만 원 조건은 기사 원문 인용."
+    },
+    {
+      "id": "bigsmileday-2024-period-unconfirmed",
+      "claim": "2024 빅스마일데이는 11월에 열린다는 것까지만 확인됐고, 정확한 시작일과 종료일은 확인하지 못했다",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "이투데이 보도 (G마켓·옥션 빅스마일데이 판매자 모집, 입력 2024-10-14 09:52)",
+      "source_url": "https://www.etoday.co.kr/news/view/2409093",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "G마켓·옥션",
+        "category": "쇼핑 세일 행사",
+        "line": "빅스마일데이",
+        "years": "2024",
+        "region": "KR"
+      },
+      "caution": "2024 기간을 글에 쓰지 말 것. 2024 기간·실적 보도를 검색으로 찾지 못했다. 2024 항목은 '11월 개최'까지만 표기한다. 연도 미표기 '11월 1~11일' 기사들은 다른 해 자료일 수 있어 2024 기간으로 쓰지 말 것.",
+      "cautionSource": "이투데이 2024-10-14 기사 본문에 날짜 없음 확인. 검색 결과 연도 불명 기사 다수는 근거로 쓰지 않음."
+    },
+    {
+      "id": "bigsmileday-2024-seller-coupon-cost",
+      "claim": "2024년 11월 빅스마일데이에서 G마켓은 기존에 판매자와 나눠 부담하던 빅스마일데이 전용 할인쿠폰 비용을 전액 부담한다고 2024-10-14 발표했다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "이투데이 보도 (G마켓·옥션 빅스마일데이 판매자 모집, G마켓·옥션 발표 인용)",
+      "source_url": "https://www.etoday.co.kr/news/view/2409093",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "G마켓·옥션",
+        "category": "쇼핑 세일 행사",
+        "line": "빅스마일데이",
+        "years": "2024",
+        "region": "KR"
+      },
+      "caution": "쿠폰 금액과 발급 조건은 기사에 없다. 판매자 쪽 쿠폰 부담이 전부 사라졌다는 뜻이 아니라 '전용 할인쿠폰 비용' 부담 주체가 바뀌었다는 뜻으로 쓸 것.",
+      "cautionSource": "이투데이 2024-10-14 기사 본문 인용. 2025년에도 같은 취지의 보도가 있음(bigsmileday-2025-coupon-funded-herald)."
+    },
+    {
+      "id": "bigsmileday-2025-period-corroborated",
+      "claim": "2025 빅스마일데이는 11월 1일부터 11일까지 총 11일간 진행할 예정이라고 2025-10-11 보도됐다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "헤럴드경제 보도 (G마켓·옥션 빅스마일데이 2025 판매자 모집, 기사입력 2025-10-11 13:00)",
+      "source_url": "https://www.heraldk.com/article/2025101113000025137",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "G마켓·옥션",
+        "category": "쇼핑 세일 행사",
+        "line": "빅스마일데이",
+        "years": "2025",
+        "region": "KR"
+      },
+      "caution": "기사 시점은 행사 전이라 '진행할 예정'이다. 2025년 기간으로만 쓰고 2026년 11월 기간으로 옮기지 말 것. 2025 실제 종료 확인은 재사용 팩트 bigsmileday-2025-nov-period(MTN 2025-10-30)와 함께 본다.",
+      "cautionSource": "헤럴드경제 2025-10-11 기사 본문(1일~11일, 11일간). 2026 일정 근거 아님."
+    },
+    {
+      "id": "bigsmileday-2025-coupon-funded-herald",
+      "claim": "2025 빅스마일데이에서 G마켓은 할인쿠폰 비용을 전액 부담한다고 2025-10-11 보도됐다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "헤럴드경제 보도 (G마켓·옥션 빅스마일데이 2025 판매자 모집, 기사입력 2025-10-11 13:00)",
+      "source_url": "https://www.heraldk.com/article/2025101113000025137",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "G마켓·옥션",
+        "category": "쇼핑 세일 행사",
+        "line": "빅스마일데이",
+        "years": "2025",
+        "region": "KR"
+      },
+      "caution": "전액 부담 대상이 되는 쿠폰 범위와 금액은 기사에 없다. 재사용 팩트 bigsmileday-2025-nov-period의 '플랫폼 부담' 내용과 같은 방향의 두 번째 출처다.",
+      "cautionSource": "헤럴드경제 2025-10-11 기사 본문 인용"
+    }
+  ]
+}
