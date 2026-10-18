@@ -1,0 +1,351 @@
+{
+  "topic": "2026년 10월 말~12월 국내 쇼핑 세일 행사 일정 (생활백과 · 세일 달력)",
+  "brand": "쇼핑 (국내 이커머스·유통 대형 행사)",
+  "article": "예정",
+  "captured": "2026-10-18",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "ksf-2026-not-announced",
+      "claim": "2026년 코리아세일페스타(코세페)의 개최 기간은 2026-10-18 조사 시점까지 산업통상부 공식 발표로 확인되지 않았다",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "산업통상부 홈페이지 메인(보도자료 목록 2026-10-16까지) 및 검색 결과",
+      "source_url": "https://www.motir.go.kr/",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "코리아세일페스타",
+        "category": "쇼핑 세일 행사",
+        "line": "코리아세일페스타",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "2026 날짜를 확정처럼 쓰지 말 것. 발표 후 재확인 필요.",
+      "cautionSource": "조사 시점 2026-10-18 검색 및 산업통상부 홈페이지 메인(보도자료 목록 2026-10-16까지) 및 검색 결과 확인 결과 (https://www.motir.go.kr/)"
+    },
+    {
+      "id": "ksf-2024-period",
+      "claim": "2024 코리아세일페스타는 11월 9일부터 30일까지 22일간 열렸고, 약 2,600여 개 유통·제조·서비스 기업이 참여했다고 산업통상자원부가 발표했다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "SayHiKorean 보도 (산업통상자원부 발표 인용, 2024년 기사)",
+      "source_url": "https://sayhikorean.com/%ec%87%bc%ed%95%91-%eb%8c%80%ec%b6%95%ec%a0%9c-%ec%bd%94%eb%a6%ac%ec%95%84%ec%84%b8%ec%9d%bc%ed%8e%98%ec%8a%a4%ed%83%80-%ea%b0%9c%eb%a7%89-largest-korea-sale-festa-in-history-to-run-from-nov-9/",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "코리아세일페스타",
+        "category": "쇼핑 세일 행사",
+        "line": "코리아세일페스타",
+        "years": "2024",
+        "region": "KR"
+      },
+      "caution": "2차 보도 기준이며 부처 원문은 열람하지 못했다. 2024년 사례로만 쓰고 2026 일정으로 쓰지 말 것. 11월 개최가 반복된다는 패턴만 근거로 삼는다.",
+      "cautionSource": "SayHiKorean 2024 기사 (2차 보도). 부처 원문 미확인."
+    },
+    {
+      "id": "ksf-2025-period-unconfirmed",
+      "claim": "2025 코리아세일페스타의 산업통상부 공식 기간은 확인하지 못했다. 삼성전자 발표문은 11월 1일~30일 한 달간 행사를 언급했으나 개별 기업 발표다",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "검색 결과 (삼성전자 2025-11-03 게시 기사 스니펫, 링크 원문 미열람)",
+      "source_url": "https://news.samsung.com/medialibrary/kr/photo/60892?page=17",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "코리아세일페스타",
+        "category": "쇼핑 세일 행사",
+        "line": "코리아세일페스타",
+        "years": "2025",
+        "region": "KR"
+      },
+      "caution": "2025 기간을 공식 일정처럼 쓰지 말 것. 산업통상부 2025 보도자료 확보 후 재확인.",
+      "cautionSource": "조사 시점 2026-10-18 검색 및 검색 결과 (삼성전자 2025-11-03 게시 기사 스니펫, 링크 원문 미열람) 확인 결과 (https://news.samsung.com/medialibrary/kr/photo/60892?page=17)"
+    },
+    {
+      "id": "bigsmileday-2026-nov-not-announced",
+      "claim": "2026년 11월 G마켓·옥션 빅스마일데이의 일정은 2026-10-18 조사 시점까지 확인되지 않았다",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "검색 결과 (2026-10-18 조사, 2026 하반기 계획 기사 없음)",
+      "source_url": "https://www.youthdaily.co.kr/news/article.html?no=218802",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "G마켓·옥션",
+        "category": "쇼핑 세일 행사",
+        "line": "빅스마일데이",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "2026년 11월 일정은 미발표. 2025년 일정으로 대체 표기할 때는 연도를 반드시 명시한다.",
+      "cautionSource": "조사 시점 2026-10-18 검색 및 검색 결과 (2026-10-18 조사, 2026 하반기 계획 기사 없음) 확인 결과 (https://www.youthdaily.co.kr/news/article.html?no=218802)"
+    },
+    {
+      "id": "bigsmileday-2025-nov-period",
+      "claim": "2025 G마켓·옥션 빅스마일데이는 11월 1일 자정부터 11일까지 11일간 진행됐고, 할인 쿠폰 재원을 플랫폼이 부담했다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "MTN 뉴스 보도 (2025-10-30, 이커머스 할인전 기사)",
+      "source_url": "https://news.mtn.co.kr/news-detail/2025103010250385554",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "G마켓·옥션",
+        "category": "쇼핑 세일 행사",
+        "line": "빅스마일데이",
+        "years": "2025",
+        "region": "KR"
+      },
+      "caution": "2025년 기준 기간이다. 2026년 11월 행사 기간으로 쓰지 말 것. 쿠폰 금액 등 세부 조건은 행사 당시 공지로 재확인.",
+      "cautionSource": "MTN 2025-10-30 기사 (행사 기간 11일 근거). 2026 일정 근거 아님."
+    },
+    {
+      "id": "bigsmileday-2026-h1-date-conflict",
+      "claim": "2026 상반기 빅스마일데이는 기사상 '19일까지' 진행으로만 확인되며, 시작일과 월은 기사 날짜(2026.05.08 등록 vs 목록 2026.06.11)가 맞지 않아 확정하지 못했다",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "유스데일리 보도 (2026 상반기 빅스마일데이 vs 그랜드십일절)",
+      "source_url": "https://www.youthdaily.co.kr/news/article.html?no=218802",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "G마켓",
+        "category": "쇼핑 세일 행사",
+        "line": "빅스마일데이",
+        "years": "2026 상반기",
+        "region": "KR"
+      },
+      "caution": "상반기 행사의 월·기간을 글에 쓰지 말 것. 날짜 확인 후 다시 기록."
+    },
+    {
+      "id": "11st-grand-11-2025-period",
+      "claim": "2025 그랜드십일절은 11월 1일부터 11일까지 11일간 11번가가 주최했다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "뉴데일리 보도 (11번가 그랜드십일절 2025 행사 소개)",
+      "source_url": "https://biz.newdaily.co.kr/site/data/html/2025/10/29/2025102900073.html",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "11번가",
+        "category": "쇼핑 세일 행사",
+        "line": "그랜드십일절",
+        "years": "2025",
+        "region": "KR"
+      },
+      "caution": "2025년 기준이다. 2026년 11월 일정으로 쓰지 말 것.",
+      "cautionSource": "조사 시점 2026-10-18 검색 및 뉴데일리 보도 (11번가 그랜드십일절 2025 행사 소개) 확인 결과 (https://biz.newdaily.co.kr/site/data/html/2025/10/29/2025102900073.html)"
+    },
+    {
+      "id": "11st-grand-11-2025-discount-structure",
+      "claim": "2025 그랜드십일절은 1~10일 타임딜을 하루 4회(오전 11시, 오후 3시·7시·11시) 운영하고, 11일은 자정부터 23시까지 매시간 운영했으며 대상은 1,800여 개 상품이었다. 원데이빅딜, 10분러시·60분러시, 3만 원 이상 3,000원 릴레이 쿠폰, 2만 원 이상 장바구니 쿠폰, 11페이 포인트 적립도 함께 운영됐다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "뉴데일리 보도 (11번가 그랜드십일절 2025 혜택 소개)",
+      "source_url": "https://biz.newdaily.co.kr/site/data/html/2025/10/29/2025102900073.html",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "11번가",
+        "category": "쇼핑 세일 행사",
+        "line": "그랜드십일절",
+        "years": "2025",
+        "region": "KR"
+      },
+      "caution": "타임딜 시간표와 쿠폰 금액은 2025 기사 기준이다. 2026년에 같은 구조로 운영된다고 쓰지 말 것. 카드 할인은 원문에 없으므로 언급하지 않는다.",
+      "cautionSource": "뉴데일리 2025-10-29 기사 (시간표·쿠폰 금액 근거). 2026 운영 근거 아님."
+    },
+    {
+      "id": "11st-grand-11-2026-not-announced",
+      "claim": "2026년 11월 11번가 그랜드십일절의 일정은 2026-10-18 조사 시점까지 확인되지 않았다",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "검색 결과 (2026-10-18 조사)",
+      "source_url": "https://www.youthdaily.co.kr/news/article.html?no=218802",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "11번가",
+        "category": "쇼핑 세일 행사",
+        "line": "그랜드십일절",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "2026년 11월 일정은 미발표. 2026 상반기 행사 '16일까지' 기사도 월이 확정되지 않았다.",
+      "cautionSource": "조사 시점 2026-10-18 검색 및 검색 결과 (2026-10-18 조사) 확인 결과 (https://www.youthdaily.co.kr/news/article.html?no=218802)"
+    },
+    {
+      "id": "ssgday-2026-2025-not-confirmed",
+      "claim": "쓱데이(SSG닷컴·이마트) 2026년 일정은 미발표이고, 2025년 행사 기간도 신세계그룹 뉴스룸 본문에서 확인하지 못했다",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "신세계그룹 뉴스룸 태그 페이지 및 검색 결과 (2026-10-18)",
+      "source_url": "https://www.shinsegaegroupnewsroom.com/tag/%ea%b0%80%ea%b2%a9%ea%b2%bd%ec%9f%81%eb%a0%a5/",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "쓱데이",
+        "category": "쇼핑 세일 행사",
+        "line": "쓱데이",
+        "years": "2025·2026",
+        "region": "KR"
+      },
+      "caution": "쓱데이 날짜를 글에 넣지 말 것. 뉴스룸 원문 직접 검색 후 재확인."
+    },
+    {
+      "id": "coupang-cublf-2025-period",
+      "claim": "2025 쿠팡 쿠블프(블랙프라이데이) 직구 행사는 11월 24일부터 12월 1일까지 8일간 진행됐고, 800여 브랜드와 2만 7,000여 상품이 참여했다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "스마트투데이 보도 (쿠블프 8일간 초특가 기사, 입력일 2025-11-24)",
+      "source_url": "https://www.smarttoday.co.kr/ko-kr/articles/96981",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "쿠팡",
+        "category": "쇼핑 세일 행사",
+        "line": "쿠블프",
+        "years": "2025",
+        "region": "KR"
+      },
+      "caution": "기사 본문에 연도 표기는 없고 입력일로 2025년으로 판단했다. 2026 일정으로 쓰지 말 것. 전체 할인율은 기사에 없다.",
+      "cautionSource": "스마트투데이 기사 입력일 2025-11-24. 파이낸셜뉴스 2025-11-24 기사(검색 스니펫)와 기간 일치."
+    },
+    {
+      "id": "coupang-cublf-2026-not-announced",
+      "claim": "2026년 쿠팡 쿠블프(블랙프라이데이) 일정은 2026-10-18 조사 시점까지 발표되지 않았다",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "검색 결과 (2026-10-18 조사)",
+      "source_url": "https://www.smarttoday.co.kr/ko-kr/articles/96981",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "쿠팡",
+        "category": "쇼핑 세일 행사",
+        "line": "쿠블프",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "2026 일정 미발표. 2025 기간을 대체 표기할 때는 연도를 명시한다.",
+      "cautionSource": "조사 시점 2026-10-18 검색 및 검색 결과 (2026-10-18 조사) 확인 결과 (https://www.smarttoday.co.kr/ko-kr/articles/96981)"
+    },
+    {
+      "id": "musinsa-winter-2025-period-unverified",
+      "claim": "무신사 2025 겨울 무진장 블랙프라이데이가 11월 16일부터 26일 자정까지 진행됐다는 내용은 검색 스니펫에서만 확인됐고 무신사 뉴스룸 원문 열람에는 실패했다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "무신사 뉴스룸 2025-1127 보도자료 (검색 스니펫, 리다이렉트 목록 0건으로 원문 접근 실패)",
+      "source_url": "https://newsroom.musinsa.com/newsroom-menu/2025-1127",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "무신사",
+        "category": "쇼핑 세일 행사",
+        "line": "무진장 블랙프라이데이(겨울)",
+        "years": "2025",
+        "region": "KR"
+      },
+      "caution": "기간과 판매액 수치는 원문 재확인 전까지 글에 쓰지 말 것. 이 항목의 수치(11/16~26, 3,685억 원 등)는 원문 확인 실패 상태다.",
+      "cautionSource": "무신사 뉴스룸 원문 재확인 필요 (현재 근거 불충분)"
+    },
+    {
+      "id": "musinsa-summer-2026-period-unverified",
+      "claim": "2026 여름 무진장 블랙프라이데이는 6월 14일부터 24일까지 진행됐다는 보도가 검색에서 확인되었으나 원문 열람에는 실패했다",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "무신사 2026 여름 무진장 보도 검색 스니펫 (무신사 뉴스룸 2026-0626 리다이렉트)",
+      "source_url": "https://newsroom.musinsa.com/newsroom-menu/2026-0626",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "무신사",
+        "category": "쇼핑 세일 행사",
+        "line": "무진장 블랙프라이데이(여름)",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "2026 여름 행사 기간과 판매액은 원문 재확인 전까지 쓰지 말 것.",
+      "cautionSource": "무신사 뉴스룸 원문 재확인 필요"
+    },
+    {
+      "id": "musinsa-winter-2026-not-announced",
+      "claim": "2026 가을·겨울 무진장 블랙프라이데이 일정은 2026-10-18 조사 시점까지 발표되지 않았다",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "검색 결과 (2026-10-18 조사)",
+      "source_url": "https://corp.musinsa.com/newsroom/press",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "무신사",
+        "category": "쇼핑 세일 행사",
+        "line": "무진장 블랙프라이데이(겨울)",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "2026 겨울 일정 미발표. 무신사 보도자료 페이지는 조회 시 목록 0건으로 나와 재확인 필요.",
+      "cautionSource": "조사 시점 2026-10-18 검색 및 검색 결과 (2026-10-18 조사) 확인 결과 (https://corp.musinsa.com/newsroom/press)"
+    },
+    {
+      "id": "oliveyoung-dec-2025-period",
+      "claim": "2025 올영세일 12월 회차는 11월 30일부터 12월 6일까지 진행됐고, CJ올리브영이 2025년 11월 28일 발표했다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "뉴스토마토 보도 (2025 올리브영 어워즈 발표 및 12월 올영세일 안내)",
+      "source_url": "https://newstomato.com/ReadNews.aspx?no=1283257",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "올리브영",
+        "category": "쇼핑 세일 행사",
+        "line": "올영세일(12월)",
+        "years": "2025",
+        "region": "KR"
+      },
+      "caution": "2025년 기준이다. 2026년 12월 회차로 쓰지 말 것. 올리브영 공식 공지 원문은 열람하지 못했다.",
+      "cautionSource": "뉴스토마토 2025-11-28 기사 (기간 근거)"
+    },
+    {
+      "id": "oliveyoung-2026-nov-dec-not-announced",
+      "claim": "2026년 올영세일 11~12월 회차 일정은 2026-10-18 조사 시점까지 확인되지 않았다",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "검색 결과 (2026-10-18 조사, 커뮤니티 추정 글만 확인)",
+      "source_url": "https://newstomato.com/ReadNews.aspx?no=1283257",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "올리브영",
+        "category": "쇼핑 세일 행사",
+        "line": "올영세일",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "블로그·커뮤니티의 '11월 30일~12월 6일 예상' 글은 추정이므로 쓰지 말 것.",
+      "cautionSource": "조사 시점 2026-10-18 검색 및 검색 결과 (2026-10-18 조사, 커뮤니티 추정 글만 확인) 확인 결과 (https://newstomato.com/ReadNews.aspx?no=1283257)"
+    },
+    {
+      "id": "us-black-friday-2026-dates",
+      "claim": "2026년 미국 추수감사절은 11월 26일(목), 블랙프라이데이는 11월 27일(금), 사이버먼데이는 11월 30일(월)이다",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "미국 추수감사절 규칙(11월 네 번째 목요일, 1941년 의회 결의) 및 Universal Time Date 2026 추수감사절 페이지",
+      "source_url": "https://www.universaltimedate.com/articles/thanksgiving-2026",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "미국",
+        "category": "쇼핑 세일 행사",
+        "line": "블랙프라이데이·사이버먼데이",
+        "years": "2026",
+        "region": "미국"
+      },
+      "caution": "미국 기준 날짜다. 한국 쿠팡·무신사 등 국내 행사 기간과 별개이므로 혼용하지 말 것.",
+      "cautionSource": "Universal Time Date 2026 추수감사절 페이지 및 2026년 11월 목요일 계산(5·12·19·26일)"
+    },
+    {
+      "id": "naver-nadda-2025-start-inferred",
+      "claim": "2025 네이버 넾다세일의 시작일 10월 29일은 기사에서 '전날' 기준으로 추론된 값이며, 공식 기간은 확인하지 못했다",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "MTN 뉴스 보도 (2025-10-30 이커머스 할인전 기사)",
+      "source_url": "https://news.mtn.co.kr/news-detail/2025103010250385554",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "네이버",
+        "category": "쇼핑 세일 행사",
+        "line": "넾다세일",
+        "years": "2025",
+        "region": "KR"
+      },
+      "caution": "넾다세일 날짜는 확정 표기하지 말 것. 2026년 일정은 미확인.",
+      "cautionSource": "조사 시점 2026-10-18 검색 및 MTN 뉴스 보도 (2025-10-30 이커머스 할인전 기사) 확인 결과 (https://news.mtn.co.kr/news-detail/2025103010250385554)"
+    }
+  ]
+}

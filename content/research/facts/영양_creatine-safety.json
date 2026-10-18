@@ -5,7 +5,22 @@
   "captured": "2026-08-10",
   "reused_facts": [],
   "declined_facts": [],
-  "disputes": [],
+  "disputes": [
+    {
+      "date": "2026-10-18",
+      "by": "생활백과 검수(총괄)",
+      "targets": [
+        "creatine-maintenance-dose-3-5g-after-loading",
+        "creatine-loading-protocol-standard-20-25g-5-7days",
+        "creatine-hydration-requirement-4-5liters-loading-phase",
+        "creatine-maintenance-hydration-3-4liters-daily",
+        "creatine-gastrointestinal-distress-dose-dependent",
+        "creatine-body-weight-increase-water-retention-expected"
+      ],
+      "issue": "tier '확실'인데 source_url 이 없거나(5건), 유지용량 팩트의 출처가 CoQ10 논문(PMC9495827)으로 잘못 달려 있다. 용량 2건은 ISSN 입장문으로 대체 팩트를 추가했다(creatine-issn-*). 물 섭취 리터 수치는 ISSN 원문에 없어 출처 재조사 전까지 인용 금지.",
+      "resolution": "pending"
+    }
+  ],
   "facts": [
     {
       "id": "creatine-serum-creatinine-increase-not-renal-impairment",
@@ -15,7 +30,12 @@
       "source": "Journal of Renal Nutrition & BMC Nephrology: The effect of creatine supplementation on kidney function (meta-analysis 2026)",
       "source_url": "https://www.jrnjournal.org/article/S1051-2276(26)00082-8/abstract",
       "checked": "2026-08-10",
-      "scope": {"대상": "건강한 성인", "분류": "신기능 마커", "시기": "단기~장기", "지역": "글로벌"},
+      "scope": {
+        "대상": "건강한 성인",
+        "분류": "신기능 마커",
+        "시기": "단기~장기",
+        "지역": "글로벌"
+      },
       "caution": "★중요: 혈청 크레아티닌 ≠ 신기능. 크레아틴 보충자의 높은 크레아티닌은 단순히 근육 크레아틴 수치 상승의 반영일 뿐, 신장 손상 신호가 아니다.",
       "cautionSource": "신장학 기본 원리"
     },
@@ -27,7 +47,12 @@
       "source": "임상 근거 수집",
       "source_url": null,
       "checked": "2026-08-10",
-      "scope": {"대상": "건강한 성인", "분류": "신장 기능", "시기": "단기(수주)", "지역": "글로벌"},
+      "scope": {
+        "대상": "건강한 성인",
+        "분류": "신장 기능",
+        "시기": "단기(수주)",
+        "지역": "글로벌"
+      },
       "caution": null,
       "cautionSource": null
     },
@@ -39,7 +64,12 @@
       "source": "NCBI/PMC: Does long-term creatine supplementation impair kidney function in resistance-trained individuals? + Frontiers Sports Medicine female football in-season study (2024)",
       "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3661339/",
       "checked": "2026-08-10",
-      "scope": {"대상": "건강한 운동선수", "분류": "장기 안전성", "시기": "5년 이상", "지역": "글로벌"},
+      "scope": {
+        "대상": "건강한 운동선수",
+        "분류": "장기 안전성",
+        "시기": "5년 이상",
+        "지역": "글로벌"
+      },
       "caution": "표본이 건강한 성인 운동선수이므로, 기저 신장질환이나 고령자에 대한 근거는 별도 필요.",
       "cautionSource": "임상 시험 모집단"
     },
@@ -51,7 +81,12 @@
       "source": "임상 실무 지침",
       "source_url": null,
       "checked": "2026-08-10",
-      "scope": {"대상": "기저 신장질환자", "분류": "금기·주의", "시기": "보충 전", "지역": "글로벌"},
+      "scope": {
+        "대상": "기저 신장질환자",
+        "분류": "금기·주의",
+        "시기": "보충 전",
+        "지역": "글로벌"
+      },
       "caution": "신장 기능 검사(GFR, 크레아티닌) 후 의료진 판단 필수. eGFR <30(중증)이면 개별 상담 필수.",
       "cautionSource": "신장학 기준"
     },
@@ -63,7 +98,12 @@
       "source": "NCBI/PMC: A short review of the most common safety concerns regarding creatine ingestion",
       "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12702719/",
       "checked": "2026-08-10",
-      "scope": {"대상": "크레아틴 안전성", "분류": "암 위험", "시기": "전 연식", "지역": "글로벌"},
+      "scope": {
+        "대상": "크레아틴 안전성",
+        "분류": "암 위험",
+        "시기": "전 연식",
+        "지역": "글로벌"
+      },
       "caution": "암 위험은 이론적 우려일 뿐, 현실적 임상 증거는 없다. 이를 근거로 금지할 이유는 없으나, 감시는 계속해야 한다.",
       "cautionSource": "임상 근거 부족"
     },
@@ -75,7 +115,12 @@
       "source": "NCBI/PMC: Safety of creatine supplementation",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/40198156/",
       "checked": "2026-08-10",
-      "scope": {"대상": "크레아틴 부작용", "분류": "탈수·경련", "시기": "보충 중", "지역": "글로벌"},
+      "scope": {
+        "대상": "크레아틴 부작용",
+        "분류": "탈수·경련",
+        "시기": "보충 중",
+        "지역": "글로벌"
+      },
       "caution": "근육경련이 발생한다면, 수분 섭취 부족이 원인일 가능성이 높다. 크레아틴 자체는 아니다.",
       "cautionSource": "약리학 증거"
     },
@@ -87,7 +132,12 @@
       "source": "임상 보고",
       "source_url": null,
       "checked": "2026-08-10",
-      "scope": {"대상": "크레아틴 보충자", "분류": "부작용", "시기": "로딩 단계", "지역": "글로벌"},
+      "scope": {
+        "대상": "크레아틴 보충자",
+        "분류": "부작용",
+        "시기": "로딩 단계",
+        "지역": "글로벌"
+      },
       "caution": "소화기 예민한 사람은 로딩을 피하고 저용량(3g/일)으로 천천히 시작하는 것이 좋다.",
       "cautionSource": "임상 실무"
     },
@@ -99,7 +149,12 @@
       "source": "NCBI/PMC + 임상 운동 영양학",
       "source_url": null,
       "checked": "2026-08-10",
-      "scope": {"대상": "운동선수", "분류": "용량 프로토콜", "시기": "초기 5~7일", "지역": "글로벌"},
+      "scope": {
+        "대상": "운동선수",
+        "분류": "용량 프로토콜",
+        "시기": "초기 5~7일",
+        "지역": "글로벌"
+      },
       "caution": "20g을 한 번에 복용하면 소화기 불편이 크므로, 반드시 4~5회로 나누어야 한다.",
       "cautionSource": "생물이용률 및 내약성"
     },
@@ -111,7 +166,12 @@
       "source": "NCBI/PMC: Coenzyme Q10 Supplementation in Statin Treated Patients",
       "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9495827/",
       "checked": "2026-08-10",
-      "scope": {"대상": "운동선수", "분류": "용량 프로토콜", "시기": "유지 단계", "지역": "글로벌"},
+      "scope": {
+        "대상": "운동선수",
+        "분류": "용량 프로토콜",
+        "시기": "유지 단계",
+        "지역": "글로벌"
+      },
       "caution": null,
       "cautionSource": null
     },
@@ -123,7 +183,12 @@
       "source": "영양학 및 운동 과학 문헌",
       "source_url": null,
       "checked": "2026-08-10",
-      "scope": {"대상": "크레아틴 로딩", "분류": "수분 요구량", "시기": "5~7일 로딩", "지역": "글로벌"},
+      "scope": {
+        "대상": "크레아틴 로딩",
+        "분류": "수분 요구량",
+        "시기": "5~7일 로딩",
+        "지역": "글로벌"
+      },
       "caution": "수분 부족 시 근육경련, 신기능 스트레스 증가 위험. 꾸준한 수분 섭취가 필수.",
       "cautionSource": "생리학"
     },
@@ -135,7 +200,12 @@
       "source": "영양학 기준",
       "source_url": null,
       "checked": "2026-08-10",
-      "scope": {"대상": "크레아틴 유지자", "분류": "수분 요구량", "시기": "유지 단계", "지역": "글로벌"},
+      "scope": {
+        "대상": "크레아틴 유지자",
+        "분류": "수분 요구량",
+        "시기": "유지 단계",
+        "지역": "글로벌"
+      },
       "caution": "크레아틴이 근육세포로 수분을 끌어당기므로, 전신 수분 균형을 유지하려면 추가 섭취가 필수.",
       "cautionSource": "약리학"
     },
@@ -147,7 +217,12 @@
       "source": "임상 관찰",
       "source_url": null,
       "checked": "2026-08-10",
-      "scope": {"대상": "크레아틴 보충자", "분류": "체중 변화", "시기": "로딩 후 수주", "지역": "글로벌"},
+      "scope": {
+        "대상": "크레아틴 보충자",
+        "분류": "체중 변화",
+        "시기": "로딩 후 수주",
+        "지역": "글로벌"
+      },
       "caution": "체중 증가가 지방이 아니므로 오해하지 말 것. 크레아틴을 중단하면 체중도 원래대로 돌아온다.",
       "cautionSource": "생리학"
     },
@@ -159,9 +234,44 @@
       "source": "NCBI/PMC: Safety of creatine supplementation (2024)",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/40198156/",
       "checked": "2026-08-10",
-      "scope": {"대상": "건강한 성인", "분류": "전반적 안전성", "시기": "임상 시험", "지역": "글로벌"},
+      "scope": {
+        "대상": "건강한 성인",
+        "분류": "전반적 안전성",
+        "시기": "임상 시험",
+        "지역": "글로벌"
+      },
       "caution": "부작용 위험이 실질적으로 증가하지 않으므로, 건강한 사람에게는 안전하다고 판정할 수 있다.",
       "cautionSource": "메타분석 증거"
+    },
+    {
+      "id": "creatine-issn-loading-5g-x4-5-7days",
+      "claim": "근육 크레아틴 저장량을 가장 빠르게 늘리는 방법은 크레아틴 모노하이드레이트 5g(체중 1kg당 약 0.3g)을 하루 4번, 5~7일 섭취하는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ISSN position stand: safety and efficacy of creatine supplementation (Kreider et al., 2017)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5469049/",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "공통",
+        "category": "크레아틴",
+        "population": "운동하는 성인",
+        "years": "2017 입장문"
+      }
+    },
+    {
+      "id": "creatine-issn-maintenance-3-5g",
+      "claim": "저장량이 포화된 뒤에는 하루 3~5g으로 유지할 수 있고, 체격이 큰 운동선수는 하루 5~10g이 필요할 수 있다는 연구도 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "ISSN position stand: safety and efficacy of creatine supplementation (Kreider et al., 2017)",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5469049/",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "공통",
+        "category": "크레아틴",
+        "population": "운동하는 성인",
+        "years": "2017 입장문"
+      }
     }
   ]
 }
