@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
+import { sleepHref } from "@/lib/magazine/subdomain";
 import Link from "next/link";
 import { fetchMagazineList, fetchMagazineCountBy } from "@/lib/data/magazine";
 import { FeaturedImageSlot } from "@/components/magazine/Chrome";
@@ -25,13 +25,13 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   const cat = sleepCategoryByKey((await searchParams).cat);
   if (!cat) {
     return {
-      alternates: { canonical: `${SUB_ORIGIN.sleep}/` },
+      alternates: { canonical: sleepHref() },
       title: "잠자리연구소 — 근거로 검증하는 수면 미디어",
       description: "해외 수면 연구를 근거로 검증합니다. 성장하는 잠·공부잘하는 잠·일잘하는 잠·조화로운 잠·늙지않는 잠·잠자리장비학.",
     };
   }
   return {
-    alternates: { canonical: `${SUB_ORIGIN.sleep}/?cat=${cat.key}` },
+    alternates: { canonical: sleepHref(cat.key) },
     title: `${cat.label} | 잠자리연구소`,
     description: `${cat.angle}을(를) 중심으로, 해외 수면 연구 근거만 골라 정리했습니다.`,
   };
@@ -53,13 +53,7 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
   const rows = page === 1 ? pageList.slice(1) : pageList;
   const showIndex = !cat && page === 1;
 
-  const pageHref = (p: number) => {
-    const q = new URLSearchParams();
-    if (cat) q.set("cat", cat.key);
-    if (p > 1) q.set("page", String(p));
-    const s = q.toString();
-    return s ? `${SUB_ORIGIN.sleep}/?${s}` : `${SUB_ORIGIN.sleep}/`;
-  };
+  const pageHref = (p: number) => sleepHref(cat?.key, p);
 
   return (
     <>

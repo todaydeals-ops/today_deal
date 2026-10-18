@@ -7,7 +7,7 @@
 //   (오늘의딜 desc 는 2026-08-18 Gemini·OpenRouter 재검증 후 교체)
 //
 // ★새 미디어를 추가하면 여기 한 줄만 넣으면 푸터·팝업이 함께 따라온다.
-import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
+import { LAB_HOME } from "@/lib/magazine/subdomain";
 
 export type BrandKey = "deal" | "sleep" | "pill" | "beauty" | "b4as" | "sponsor";
 
@@ -34,41 +34,41 @@ export const BRANDS: Brand[] = [
     key: "sleep", name: "잠자리연구소",
     desc: "잠 안 올 때 뭐부터 바꿀까",
     hook: "잠이 안 오면 매트리스부터 습관까지, 뭐부터 손대면 되는지 정리했습니다.",
-    url: SUB_ORIGIN.sleep, color: "#3f5a54",
+    url: LAB_HOME.sleep, color: "#3f5a54",
   },
   {
     key: "pill", name: "알약연구소",
     desc: "영양제 사기 전 5분 확인",
     hook: "그 영양제가 나한테 맞는지, 사기 전 5분이면 확인됩니다.",
-    url: SUB_ORIGIN.pill, color: "#8a6a3a",
+    url: LAB_HOME.pill, color: "#8a6a3a",
   },
   {
     key: "beauty", name: "성분연구소",
     desc: "이 성분, 내 피부에 맞을까",
     hook: "화장품 성분표에서 뭘 보면 되는지, 성분별로 정리했습니다.",
-    url: SUB_ORIGIN.beauty, color: "#8a5a6a",
+    url: LAB_HOME.beauty, color: "#8a5a6a",
   },
   {
     key: "b4as", name: "AS연구소",
     desc: "부르기 전 5분 셀프체크",
     hook: "기사님 부르기 전에, 5분이면 끝나는 것들이 있습니다.",
-    url: SUB_ORIGIN.b4as, color: "#38539a",
+    url: LAB_HOME.b4as, color: "#38539a",
   },
   {
     key: "sponsor", name: "협찬연구소",
     desc: "이 방송, 누가 돈을 냈을까",
     hook: "낮 방송에 나온 그 원료, 같은 날 어디서 팔렸는지 시각으로 정리했습니다.",
-    url: SUB_ORIGIN.sponsor, color: "#3f5a7a",
+    url: LAB_HOME.sponsor, color: "#3f5a7a",
   },
 ];
 
-/** 현재 호스트로 지금 보고 있는 브랜드를 판별한다(팝업이 자기 브랜드를 권하지 않게). */
-export function brandKeyFromHost(host: string): BrandKey {
-  const h = host.toLowerCase();
-  if (h.startsWith("goodsleep")) return "sleep";
-  if (h.startsWith("pill")) return "pill";
-  if (h.startsWith("beauty")) return "beauty";
-  if (h.startsWith("b4as")) return "b4as";
-  if (h.startsWith("sponsor")) return "sponsor";
+/** 지금 보고 있는 브랜드를 경로로 판별한다(팝업이 자기 브랜드를 권하지 않게).
+ *  2026-10-17 중앙 집중 이후 연구소 홈은 전부 www 아래 경로다(lib/magazine/subdomain.ts). */
+export function brandKeyFromPath(path: string): BrandKey {
+  if (path.startsWith("/goodsleep")) return "sleep";
+  if (path.startsWith("/pill")) return "pill";
+  if (path.startsWith("/beauty")) return "beauty";
+  if (path.startsWith("/b4as")) return "b4as";
+  if (path.startsWith("/sponsor")) return "sponsor";
   return "deal";
 }

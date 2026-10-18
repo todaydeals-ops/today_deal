@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
+import { LAB_HOME, labHref, type SubKey } from "@/lib/magazine/subdomain";
 import { b4asCategoryOf } from "@/lib/magazine/b4asCategories";
 import { canonicalArticleUrl } from "@/lib/magazine/owner";
 import Link from "next/link";
@@ -94,7 +94,8 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   const b4asCat = isB4as ? b4asCategoryOf(a.slug) : undefined; // AS연구소 고유 9분류(제품유형)
   const sponsorCat = isSponsor ? sponsorCategoryOf(a.slug) : undefined; // 협찬연구소 고유 6분류(협찬 경로)
   const subCat = sleepCat ?? pillCat ?? beautyCat ?? b4asCat ?? sponsorCat;
-  const subHome = isPill ? SUB_ORIGIN.pill : isBeauty ? SUB_ORIGIN.beauty : isB4as ? SUB_ORIGIN.b4as : isSponsor ? SUB_ORIGIN.sponsor : SUB_ORIGIN.sleep;
+  const subKey: SubKey = isPill ? "pill" : isBeauty ? "beauty" : isB4as ? "b4as" : isSponsor ? "sponsor" : "sleep";
+  const subHome = LAB_HOME[subKey];
   const subHomeAbs = subHome;
   const subName = isPill ? "알약연구소" : isBeauty ? "성분연구소" : isB4as ? "AS연구소" : isSponsor ? "협찬연구소" : "잠자리연구소";
   const accent = isSub ? (subCat?.color ?? (isB4as ? "#38539a" : "#3f5a54")) : c.color; // 강조색: 서브는 분류색, 그 외 코너색
@@ -189,7 +190,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
             )}
             <span style={{ opacity: 0.5 }}>›</span>
             {isSub ? (
-              <a href={`${subHome}/?cat=${subCat?.key ?? ""}`} style={{ color: subCat?.color ?? "#3f5a54", fontWeight: 600, textDecoration: "none" }}>{subCat?.label ?? sectionName}</a>
+              <a href={labHref(subKey, subCat?.key)} style={{ color: subCat?.color ?? "#3f5a54", fontWeight: 600, textDecoration: "none" }}>{subCat?.label ?? sectionName}</a>
             ) : (
               <Link href={`/?corner=${a.corner}`} className="ul-sweep" style={{ color: c.color, fontWeight: 600, textDecoration: "none" }}>{c.name}</Link>
             )}

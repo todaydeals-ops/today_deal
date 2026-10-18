@@ -4,34 +4,23 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { ADMIN_COOKIE, ADMIN_TOKEN } from "@/lib/adminAuth";
-import { OWNER_ORIGIN, PATH_TO_OWNER, ownerFromHost, ownerOfSlug } from "@/lib/magazine/owner";
+import { WWW_ORIGIN } from "@/lib/magazine/owner";
+import { LAB_HOME, LEGACY_SUBDOMAIN } from "@/lib/magazine/subdomain";
 
 /** 이 요청이 정본 호스트로 온 게 아니면 301 대상 URL을 돌려준다. */
 function canonicalRedirect(req: NextRequest): string | null {
-  const host = req.headers.get("host") || "";
+  const host = (req.headers.get("host") || "").toLowerCase();
   const path = req.nextUrl.pathname;
-  const here = ownerFromHost(host);
+  const search = req.nextUrl.search;
 
-  // /goodsleep·/pill·/beauty·/b4as 는 서브도메인 루트의 내부 rewrite 대상이다.
-  // 공개 URL로 노출되면 브랜드 홈이 호스트마다 중복된다 — 각 브랜드 루트로 접는다.
-  for (const [p, owner] of Object.entries(PATH_TO_OWNER)) {
-    if (path === p || path.startsWith(p + "/")) {
-      return OWNER_ORIGIN[owner] + "/" + req.nextUrl.search;
-    }
-  }
-
-  // 아티클 정본은 www 다(서브도메인이 아니다). 서브도메인으로 들어온 아티클은 www 로 접는다.
-  // ★방향을 반대로 하면 안 된다 — www 의 AS 글들이 이미 색인되고 클릭을 받고 있다(2026-08-10 실측).
-  //   순위가 붙은 페이지를 이력 0인 새 호스트로 옮기면 재색인 몇 주 동안 순위를 잃는다.
-  if (/^\/magazine\//.test(path)) {
-    if (here !== "deal") return OWNER_ORIGIN.deal + path + req.nextUrl.search;
-    return null;
-  }
-
-  // 아티클 말고 나머지 경로(딜·게시판·매거진 목록 등)는 www 만 담당한다.
-  // 서브도메인에서 열리면 브랜드와 무관한 페이지가 5벌로 복제된다.
-  if (here !== "deal" && path !== "/" && !path.startsWith("/sub-sitemap")) {
-    return OWNER_ORIGIN.deal + path + req.nextUrl.search;
+  // ★2026-10-17 중앙 집중 — 연구소 5곳을 www 아래 경로로 모았다(lib/magazine/subdomain.ts).
+  // 옛 서브도메인으로 들어온 요청은 전부 www 로 접는다.
+  //   루트("/?cat=…" 포함) → 그 연구소 홈 경로(www/goodsleep?cat=…)
+  //   그 밖(/magazine/<slug>, robots.txt, sub-sitemap.xml 등) → www 의 같은 경로
+  // 아티클은 원래부터 정본이 www 였으므로(owner.ts) 색인된 글의 주소는 바뀌지 않는다.
+  const lab = LEGACY_SUBDOMAIN[host.split(".")[0]];
+  if (lab && host.endsWith(".todaydeals.co.kr")) {
+    return (path === "/" ? LAB_HOME[lab] : WWW_ORIGIN + path) + search;
   }
   return null;
 }

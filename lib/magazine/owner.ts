@@ -6,44 +6,23 @@
 // canonical 이 한 곳을 가리켜도, 권위가 없는 신규 도메인에서는 크롤 예산을 5배로
 // 낭비하는 순간 색인이 멈춘다("발견됨 · 색인 생성 안 됨").
 //
-// 그래서 **아티클의 주인 호스트를 하나로 정하고 나머지는 301** 로 접는다.
-//
-// ★주인은 www 다. 서브도메인이 아니다.
+// ★주인은 www 다.
 // 2026-08-10 서치콘솔 실측에서 www/magazine/* AS 글들이 이미 색인되고 클릭을 받고
-// 있었다(정수기·오븐·인덕션·닌텐도, 증상형 롱테일). 한때 이 글들을 브랜드 서브도메인이
-// 주인이 되게 바꿨다가 되돌렸다 — 순위가 붙은 페이지를 이력 0인 새 호스트로 옮기면
-// 재색인 몇 주 동안 순위를 잃는다. 얻을 것보다 잃을 게 크다.
+// 있었다. 한때 이 글들을 브랜드 서브도메인이 주인이 되게 바꿨다가 되돌렸다 — 순위가 붙은
+// 페이지를 이력 0인 새 호스트로 옮기면 재색인 몇 주 동안 순위를 잃는다.
 //
-// 브랜드 경험은 호스트로 만들지 않는다. 아티클 페이지가 글의 field·corner 를 보고
-// 헤더·푸터·분류를 갈아끼우므로, www/magazine/<AS글>도 AS연구소 화면으로 렌더된다.
-// 서브도메인은 브랜드 입구(홈·분류)로 남고, 아티클 링크는 www 로 모은다.
+// ★2026-10-17 중앙 집중. 아티클뿐 아니라 연구소 홈·분류까지 www 아래 경로로 모았다
+// (lib/magazine/subdomain.ts). 옛 서브도메인은 proxy.ts 가 전부 www 로 301 한다.
+// 브랜드 경험은 호스트가 아니라 화면이 만든다 — 아티클 페이지가 field·corner 를 보고
+// 헤더·푸터·분류를 갈아끼우므로 www/magazine/<AS글>도 AS연구소 화면으로 렌더된다.
 import { SLEEP_CATEGORIES } from "@/lib/magazine/sleepCategories";
 import { PILL_CATEGORIES } from "@/lib/magazine/pillCategories";
 import { BEAUTY_CATEGORIES } from "@/lib/magazine/beautyCategories";
 import { B4AS_CATEGORIES } from "@/lib/magazine/b4asCategories";
-import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
 
 export type OwnerKey = "deal" | "sleep" | "pill" | "beauty" | "b4as" | "sponsor";
 
-export const OWNER_ORIGIN: Record<OwnerKey, string> = {
-  deal: "https://www.todaydeals.co.kr",
-  sleep: SUB_ORIGIN.sleep,
-  pill: SUB_ORIGIN.pill,
-  beauty: SUB_ORIGIN.beauty,
-  b4as: SUB_ORIGIN.b4as,
-  sponsor: SUB_ORIGIN.sponsor,
-};
-
-/** 서브도메인 접두어 → 브랜드 키. www·기타는 deal. */
-export function ownerFromHost(host: string): OwnerKey {
-  const h = (host || "").toLowerCase();
-  if (h.startsWith("goodsleep.")) return "sleep";
-  if (h.startsWith("pill.")) return "pill";
-  if (h.startsWith("beauty.")) return "beauty";
-  if (h.startsWith("b4as.")) return "b4as";
-  if (h.startsWith("sponsor.")) return "sponsor";
-  return "deal";
-}
+export const WWW_ORIGIN = "https://www.todaydeals.co.kr";
 
 // 택소노미의 slugs[] 를 그대로 소유권 대장으로 쓴다.
 // 어느 택소노미에도 없으면 오늘의딜 매거진 글이다.
@@ -60,18 +39,5 @@ export function ownerOfSlug(slug: string): OwnerKey {
 
 /** 아티클 정본 URL — 언제나 www. canonical·사이트맵·301 대상이 모두 이걸 쓴다. */
 export function canonicalArticleUrl(slug: string): string {
-  return `${OWNER_ORIGIN.deal}/magazine/${slug}`;
+  return `${WWW_ORIGIN}/magazine/${slug}`;
 }
-
-/** www 에서만 의미 있는 내부 경로 → 어느 브랜드 루트로 보낼지. */
-export const PATH_TO_OWNER: Record<string, OwnerKey> = {
-  "/goodsleep": "sleep",
-  "/pill": "pill",
-  "/beauty": "beauty",
-  "/b4as": "b4as",
-  // ★"/sponsor" 는 일부러 빼 두었다(2026-09-04).
-  // sponsor.todaydeals.co.kr 이 아직 DNS·Vercel Domains 에 없어서, 여기에 넣어두면
-  // /sponsor 가 존재하지 않는 호스트로 301 되어 홈이 통째로 죽는다.
-  // 서브도메인을 붙인 뒤 이 줄을 되살리고, app/sponsor/page.tsx 의 noindex 도 함께 푼다.
-  //   "/sponsor": "sponsor",
-};

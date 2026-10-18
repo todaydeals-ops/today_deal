@@ -6,39 +6,9 @@ const nextConfig = {
       { protocol: "https", hostname: "**" },
     ],
   },
-  // 서브도메인 라우팅: goodsleep→잠자리연구소, pill→알약연구소.
-  // ★ beforeFiles 필수 — afterFiles면 "/"가 이미 app/page.tsx(메인)로 처리돼 rewrite가 안 먹음.
-  async rewrites() {
-    return {
-      beforeFiles: [
-        {
-          source: "/",
-          has: [{ type: "host", value: "goodsleep.todaydeals.co.kr" }],
-          destination: "/goodsleep",
-        },
-        {
-          source: "/",
-          has: [{ type: "host", value: "pill.todaydeals.co.kr" }],
-          destination: "/pill",
-        },
-        {
-          source: "/",
-          has: [{ type: "host", value: "beauty.todaydeals.co.kr" }],
-          destination: "/beauty",
-        },
-        {
-          source: "/",
-          has: [{ type: "host", value: "b4as.todaydeals.co.kr" }],
-          destination: "/b4as",
-        },
-        {
-          source: "/",
-          has: [{ type: "host", value: "sponsor.todaydeals.co.kr" }],
-          destination: "/sponsor",
-        },
-      ],
-    };
-  },
+  // ★서브도메인 rewrite(goodsleep→/goodsleep 등)는 2026-10-17 중앙 집중 때 지웠다.
+  // 연구소 홈은 이제 www/goodsleep·/pill·/beauty·/b4as·/sponsor 가 정본이고,
+  // 옛 서브도메인 요청은 proxy.ts 가 rewrite 단계보다 먼저 www 로 301 한다.
 };
 
 export default nextConfig;

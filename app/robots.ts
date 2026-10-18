@@ -1,30 +1,20 @@
 import type { MetadataRoute } from "next";
-import { headers } from "next/headers";
 
-// robots.txt 는 호스트별로 달라야 한다.
+// robots.txt — www 하나만 운영한다(2026-10-17 중앙 집중).
 //
-// 예전에는 모든 서브도메인이 www 사이트맵만 가리켰고 host 도 www 로 못박혀 있었다.
-// 그래서 각 서브도메인의 홈·분류 페이지를 크롤러에 알릴 경로가 없었다.
-// 아티클은 canonical 이 www 라 www 사이트맵이 담당하고,
-// 그 호스트에만 있는 URL(홈·분류)은 /sub-sitemap.xml 이 담당한다.
-export default async function robots(): Promise<MetadataRoute.Robots> {
-  const host = ((await headers()).get("host") || "").toLowerCase();
-  const isSub = /^(goodsleep|pill|beauty|b4as|sponsor)\./.test(host);
-  const origin = `https://${host || "www.todaydeals.co.kr"}`;
-
+// 예전엔 서브도메인마다 자기 robots·사이트맵을 냈다. 이제 옛 서브도메인은 proxy.ts 가
+// 전부 www 로 301 하므로(robots.txt 요청 포함) 여기서는 www 기준 하나만 낸다.
+//   sitemap.xml          딜·정적 페이지
+//   magazine-sitemap.xml 아티클 전체(연구소 글 포함, 정본 www)
+//   sub-sitemap.xml      연구소 5곳의 홈·분류 페이지
+export default function robots(): MetadataRoute.Robots {
   return {
     rules: [{ userAgent: "*", allow: "/", disallow: ["/admin", "/api"] }],
-    sitemap: isSub
-      ? [
-          `${origin}/sub-sitemap.xml`,                              // 이 브랜드의 홈·분류
-          "https://www.todaydeals.co.kr/magazine-sitemap.xml",      // 아티클(canonical 이 www)
-        ]
-      : [
-          "https://www.todaydeals.co.kr/sitemap.xml",
-          "https://www.todaydeals.co.kr/magazine-sitemap.xml",
-        ],
-    // host 지시자는 자기 호스트를 가리켜야 한다. www 로 못박으면 서브도메인이
-    // 스스로를 www 의 미러라고 신고하는 셈이 된다.
-    host: origin,
+    sitemap: [
+      "https://www.todaydeals.co.kr/sitemap.xml",
+      "https://www.todaydeals.co.kr/magazine-sitemap.xml",
+      "https://www.todaydeals.co.kr/sub-sitemap.xml",
+    ],
+    host: "https://www.todaydeals.co.kr",
   };
 }

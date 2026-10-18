@@ -1,5 +1,5 @@
 // 성분연구소 전용 헤더 — 오늘의딜·잠자리·알약과 동일한 높이(62px)·정렬. 로고 Pretendard.
-// ★링크는 SUB_ORIGIN 절대 URL 하나로 통일(어디서 렌더돼도 beauty.todaydeals.co.kr로 간다).
+// ★링크는 labHref() 하나로 통일(www 아래 연구소 경로).
 import { BEAUTY_CATEGORIES } from "@/lib/magazine/beautyCategories";
 import { beautyHref } from "@/lib/magazine/subdomain";
 

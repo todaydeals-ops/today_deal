@@ -1,5 +1,5 @@
 // 알약연구소 6분류 인덱스 — 잠자리연구소 SleepCategoryIndex와 같은 카드 틀(번호·점·제목·영문·설명).
-// ★링크는 SUB_ORIGIN 절대 URL로 통일.
+// ★링크는 labHref()로 통일.
 import { PILL_CATEGORIES } from "@/lib/magazine/pillCategories";
 import { pillHref } from "@/lib/magazine/subdomain";
 

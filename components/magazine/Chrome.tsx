@@ -1,5 +1,5 @@
 // 매거진 공통 UI — 리디자인 확정안(페이퍼·세리프·얇은 룰, 오렌지=점)
-import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
+import { LAB_HOME } from "@/lib/magazine/subdomain";
 import { BRANDS } from "@/lib/brands";
 import Link from "next/link";
 import { CORNERS, cornerOf, CORNER_SHORT, CATCH } from "@/lib/magazine/corners";
@@ -41,7 +41,7 @@ export function MagazineMasthead() {
           {CORNERS.filter((c) => c.key !== "repair").map((c) => (
             <Link key={c.key} className="ul-sweep" href={`/magazine?corner=${c.key}`} style={{ textDecoration: "none", color: "#5b564d" }}>{c.name}</Link>
           ))}
-          <a className="ul-sweep" href={SUB_ORIGIN.b4as} target="_blank" rel="noopener" style={{ textDecoration: "none", color: "#5b564d" }}>AS연구소 &#8599;</a>
+          <a className="ul-sweep" href={LAB_HOME.b4as} target="_blank" rel="noopener" style={{ textDecoration: "none", color: "#5b564d" }}>AS연구소 &#8599;</a>
         </nav>
       </div>
     </header>

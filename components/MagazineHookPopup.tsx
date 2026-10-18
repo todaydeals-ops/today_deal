@@ -4,7 +4,7 @@
 // 세션당 1회, 6초 후 노출, /magazine·/admin에서는 숨김.
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { BRANDS, brandKeyFromHost, type Brand } from "@/lib/brands";
+import { BRANDS, brandKeyFromPath, type Brand } from "@/lib/brands";
 
 const SEEN_KEY = "xpromo_seen_v1";
 
@@ -23,10 +23,7 @@ export default function MagazineHookPopup() {
       /* ignore */
     }
 
-    // 서브도메인이 안 붙은 경로 접근(www/pill 등)도 함께 본다.
-    const path = window.location.pathname;
-    const pathKey = path.startsWith("/goodsleep") ? "sleep" : path.startsWith("/pill") ? "pill" : path.startsWith("/beauty") ? "beauty" : path.startsWith("/b4as") ? "b4as" : null;
-    const current = pathKey ?? brandKeyFromHost(window.location.hostname);
+    const current = brandKeyFromPath(window.location.pathname);
 
     const pool = BRANDS.filter((b) => b.key !== current);
     if (!pool.length) return;

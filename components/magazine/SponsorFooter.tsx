@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SUB_ORIGIN } from "@/lib/magazine/subdomain";
+import { LAB_HOME } from "@/lib/magazine/subdomain";
 import BrandFamily from "@/components/BrandFamily";
 
 // 협찬연구소 푸터 — 다른 버티컬과 같은 2톤 구조.
@@ -35,7 +35,7 @@ export default function SponsorFooter() {
             © 2026 협찬연구소 · 오늘의딜
           </div>
           <nav style={{ display: "flex", gap: 18, fontSize: 12, flexWrap: "wrap", height: "fit-content" }}>
-            <a href={SUB_ORIGIN.sponsor} style={{ color: "var(--text-body)", textDecoration: "none" }}>협찬연구소</a>
+            <a href={LAB_HOME.sponsor} style={{ color: "var(--text-body)", textDecoration: "none" }}>협찬연구소</a>
             <Link href="/terms" style={{ color: "var(--text-body)", textDecoration: "none" }}>이용약관</Link>
             <Link href="/privacy" style={{ color: "var(--text-body)", textDecoration: "none" }}>개인정보처리방침</Link>
           </nav>

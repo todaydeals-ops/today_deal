@@ -7,7 +7,7 @@ import BeautyCategoryIndex from "@/components/magazine/BeautyCategoryIndex";
 import Pagination from "@/components/magazine/Pagination";
 import BeautyFooter from "@/components/magazine/BeautyFooter";
 import { beautyCategoryByKey, beautyCategoryOf } from "@/lib/magazine/beautyCategories";
-import { beautyHref, SUB_ORIGIN } from "@/lib/magazine/subdomain";
+import { beautyHref } from "@/lib/magazine/subdomain";
 import "../magazine/magazine.css";
 
 // 성분연구소 — 오늘의딜 파생 뷰티·다이어트 성분 검증 미디어. field="뷰티·성분" + 고유 6분류.
@@ -22,13 +22,13 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   const cat = beautyCategoryByKey((await searchParams).cat);
   if (!cat) {
     return {
-      alternates: { canonical: `${SUB_ORIGIN.beauty}/` },
+      alternates: { canonical: beautyHref() },
       title: "성분연구소 — 임상으로 검증하는 뷰티 성분",
       description: "화제성이나 후기가 아니라 임상 근거로 성분을 따집니다. 보습·장벽, 미백·주름, 트러블·모공, 자외선·환경, 두피·모발, 다이어트·바디.",
     };
   }
   return {
-    alternates: { canonical: `${SUB_ORIGIN.beauty}/?cat=${cat.key}` },
+    alternates: { canonical: beautyHref(cat.key) },
     title: `${cat.label} | 성분연구소`,
     description: `${cat.angle}을(를) 중심으로, 임상 근거가 어디까지 확인됐는지 갈라 정리했습니다.`,
   };
