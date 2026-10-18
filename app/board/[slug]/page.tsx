@@ -9,7 +9,9 @@ import VoteButton from "@/components/VoteButton";
 import { fetchUnifiedDeals, tierOf } from "@/lib/data/deals";
 import styles from "./post.module.css";
 
-export const dynamic = "force-dynamic";
+// 2026-09-15 — 게시판은 /api/board/submit 으로 실시간 제보가 들어와 딜보다 짧게 캐시한다.
+// force-dynamic(무캐시)이 Supabase egress 한도 초과로 사이트 전체를 막은 사고의 원인이었다.
+export const revalidate = 120;
 const SITE = "https://www.todaydeals.co.kr";
 
 const fmt = (n?: number) => (typeof n === "number" ? n.toLocaleString("ko-KR") : "");
@@ -33,6 +35,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title,
     description: desc.slice(0, 155),
     alternates: { canonical: `${SITE}/board/${slug}` },
+    // ★2026-10-17 noindex(사장님 승인). 게시물 4,914건의 본문 중앙값이 27자(공백 제외)라
+    // 사이트 전체가 얇은 페이지로 평가받는 주범이었다(서치콘솔 "발견됨-색인 안 됨" 1,178,
+    // 네이버 색인 0건). 페이지는 지우지 않는다 — 내부 링크·숨은 태그는 그대로, 색인 요청만 거둔다.
+    // follow 는 살려 게시물 속 링크로 크롤러가 계속 이동하게 둔다. 목록(/board)은 색인 유지.
+    robots: { index: false, follow: true },
     openGraph: {
       title: price ? `${d.title} ${price} 특가` : d.title,
       description: desc.slice(0, 155),
