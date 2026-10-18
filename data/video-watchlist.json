@@ -1,0 +1,1398 @@
+{
+  "updated": "2026-10-18",
+  "channels": [
+    {
+      "name": "자유부인 한가인",
+      "handle": "@hangainisfree",
+      "channel_id": "UCvnVUhn95YfQazC_bc2lU6w",
+      "subs": "50.4만명",
+      "type": "연예인본인",
+      "fields": [
+        "살림·냉장고",
+        "주얼리·패션"
+      ]
+    },
+    {
+      "name": "이시영의 땀티 LeesiyoungTV",
+      "handle": "@leesiyoungtv",
+      "channel_id": "UC7pdzc8gyWIqE15RP0ileAg",
+      "subs": "16만명",
+      "type": "연예인본인",
+      "fields": [
+        "아웃도어·패딩",
+        "일상 리뷰"
+      ]
+    },
+    {
+      "name": "김나영의 nofilterTV(노필터티비)",
+      "handle": "@nofilterTV",
+      "channel_id": "UC0wNauoCVIfU_xtWwrczFiA",
+      "subs": "86.1만명",
+      "type": "연예인본인",
+      "fields": [
+        "패션·의류",
+        "명품 리뷰"
+      ]
+    },
+    {
+      "name": "윤혜진의 What see TV",
+      "handle": "@whatseetv",
+      "channel_id": "UCEzZcejf28Oetz9TC5TuqSA",
+      "subs": "26.7만명",
+      "type": "연예인본인",
+      "fields": [
+        "명품·살말",
+        "주방·뷰티기기"
+      ]
+    },
+    {
+      "name": "홍현희 제이쓴의 홍쓴TV",
+      "handle": "@hongssontv",
+      "channel_id": "UC2E-9AQ-kwOFlvvXLfY6V8Q",
+      "subs": "63.3만명",
+      "type": "연예인본인",
+      "fields": [
+        "가전(커피머신)"
+      ]
+    },
+    {
+      "name": "안나픽",
+      "handle": "@안나픽",
+      "channel_id": "UCKFmJFCmSRgTpPHp9OR2ylw",
+      "subs": "4.2만명",
+      "type": "연예인템모음",
+      "fields": [
+        "식품",
+        "뷰티",
+        "주방",
+        "생활용품"
+      ]
+    },
+    {
+      "name": "그녀템",
+      "handle": "@그녀템",
+      "channel_id": "UClePo2KUh4JswOQoNejIKiQ",
+      "subs": "2.68만명",
+      "type": "연예인템모음",
+      "fields": [
+        "뷰티(피부·메이크업)"
+      ]
+    },
+    {
+      "name": "샵뚱",
+      "handle": "@샵뚱",
+      "channel_id": "UCA12yqwan_vhRCpFRW3Bw_g",
+      "subs": "4.12만명",
+      "type": "뷰티리뷰",
+      "fields": [
+        "메이크업",
+        "식품(컬리)"
+      ]
+    },
+    {
+      "name": "RISABAE",
+      "handle": "@RISABAE",
+      "channel_id": "UC9kmlDcqksaOnCkC_qzGacA",
+      "subs": "269만명",
+      "type": "뷰티리뷰",
+      "fields": [
+        "메이크업"
+      ]
+    },
+    {
+      "name": "bbomni 뽐니",
+      "handle": "@bbomni",
+      "channel_id": "UCmPkZXhVfyLLWyHQM-l_KqA",
+      "subs": "23.2만명",
+      "type": "뷰티리뷰",
+      "fields": [
+        "메이크업·색조",
+        "유료광고 다수"
+      ]
+    },
+    {
+      "name": "똑디템",
+      "handle": "@dddtem.official",
+      "channel_id": "UCOnSoSFUyeakdOOzAP0nnyw",
+      "subs": "3.67만명",
+      "type": "살림리뷰",
+      "fields": [
+        "캠핑·여행",
+        "살림·주방"
+      ]
+    },
+    {
+      "name": "구매리즘",
+      "handle": "@구매리즘",
+      "channel_id": "UCBUoKpU1bOdRsdpsMwwCG0g",
+      "subs": "27.8만명",
+      "type": "살림리뷰",
+      "fields": [
+        "생활용품·브랜드"
+      ]
+    },
+    {
+      "name": "리뷰한다 송미니",
+      "handle": "@리뷰한다송미니",
+      "channel_id": "UCk-Y9lv2UGfTfkfNw0j3WPQ",
+      "subs": "7.48만명",
+      "type": "살림리뷰",
+      "fields": [
+        "가전·생활템"
+      ]
+    },
+    {
+      "name": "블루밍나나 Bloomingnana",
+      "handle": "@bnana513",
+      "channel_id": "UCwfipXEUgyhWaTNVYzp-gJA",
+      "subs": "8.46만명",
+      "type": "살림리뷰",
+      "fields": [
+        "다이소·정리수납",
+        "주방"
+      ]
+    },
+    {
+      "name": "헤이두 Hejdoo",
+      "handle": "@hejdoo",
+      "channel_id": "UCptluLxns9LnEl3bfTr0AnQ",
+      "subs": "22.4만명",
+      "type": "살림리뷰",
+      "fields": [
+        "주방·살림템"
+      ]
+    },
+    {
+      "name": "알짜주부 손율이",
+      "handle": "@lady.tiptop",
+      "channel_id": "UCNd-c0N-16eS4BOW8kjHS9A",
+      "subs": "2.86만명",
+      "type": "살림리뷰",
+      "fields": [
+        "주방도구",
+        "식재료"
+      ]
+    },
+    {
+      "name": "1404호haru",
+      "handle": "@1404haru",
+      "channel_id": "UCEYqwbdCzBQiSxZq9MtLyZA",
+      "subs": "2.67만명",
+      "type": "살림리뷰",
+      "fields": [
+        "살림템"
+      ]
+    },
+    {
+      "name": "헤이로라 홈 HeyLaura",
+      "handle": "@heylaura_home",
+      "channel_id": "UCn5Rlkv0Obh-OqlQl-G68fQ",
+      "subs": "1.62만명",
+      "type": "살림리뷰",
+      "fields": [
+        "인테리어·침구",
+        "코스트코"
+      ]
+    },
+    {
+      "name": "아지Aji살림_Housewife Story",
+      "handle": "@happyaji",
+      "channel_id": "UClGXzNNnfEFd1uAbY7KCljQ",
+      "subs": "30.4만명",
+      "type": "살림리뷰",
+      "fields": [
+        "청소용품",
+        "주방"
+      ]
+    },
+    {
+      "name": "따라해볼레이",
+      "handle": "@Follow_Rei",
+      "channel_id": "UC4ZF3-w9ENwXTczPPZG6fng",
+      "subs": "43.3만명",
+      "type": "뷰티리뷰",
+      "fields": [
+        "메이크업",
+        "편의점 상품"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "video_id": "SzA-E4Mqsec",
+      "channel_id": "UCvnVUhn95YfQazC_bc2lU6w",
+      "title": "명품부터 결혼 예물, 국내 디자이너 브랜드까지 한가인이 23년 동안 모은 주얼리 최초공개 (PPL 아님)",
+      "published": "2026-10-15",
+      "people": [
+        "한가인"
+      ],
+      "products": null,
+      "paid_ad": "없음",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "rKZ7Nw-31e8",
+      "channel_id": "UCvnVUhn95YfQazC_bc2lU6w",
+      "title": "새우깡은 냉장고에 넣어 먹어야 제일 맛있다는 한가인 특이 취향",
+      "published": "2026-10-04",
+      "people": [
+        "한가인"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "tLekrXFFXWY",
+      "channel_id": "UCvnVUhn95YfQazC_bc2lU6w",
+      "title": "생각보다 살벌한 농심 스낵VS라면 직원 기싸움",
+      "published": "2026-10-04",
+      "people": [
+        "한가인"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "0qtl0gsXrrc",
+      "channel_id": "UCvnVUhn95YfQazC_bc2lU6w",
+      "title": "농심 연구원한테 라면 맛있게 끓이는 비법 전수받으러 간 한가인 (평생 써먹음)",
+      "published": "2026-10-01",
+      "people": [
+        "한가인"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "-i01MHJNCZM",
+      "channel_id": "UC7pdzc8gyWIqE15RP0ileAg",
+      "title": "왜 이렇게 예뻐?? 마무트 2026 FW 신상 싹 입어봤습니다",
+      "published": "2026-09-28",
+      "people": [
+        "이시영의"
+      ],
+      "products": [
+        {
+          "name": "LUFTIG 3.0 경량 패딩",
+          "brand": "마무트"
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "7S35PUkSyNc",
+      "channel_id": "UC7pdzc8gyWIqE15RP0ileAg",
+      "title": "너무 예쁘다! 마무트 2026 신상 경량패딩 #이시영 #마무트",
+      "published": "2026-09-30",
+      "people": [
+        "이시영"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "LHyQVJ3L7jI",
+      "channel_id": "UC7pdzc8gyWIqE15RP0ileAg",
+      "title": "이거 진짜 맘에 드는데?! #마무트 #2026신상패딩",
+      "published": "2026-09-30",
+      "people": [
+        "이시영의"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "i7NdE8FM-Fk",
+      "channel_id": "UC7pdzc8gyWIqE15RP0ileAg",
+      "title": "이시영 경량 패딩 스타일링 노하우 #마무트 #2026FW",
+      "published": "2026-09-30",
+      "people": [
+        "이시영"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "Kg8SxbnSYD0",
+      "channel_id": "UC7pdzc8gyWIqE15RP0ileAg",
+      "title": "과유불급 코끼리🐘ㅎㅎ#마무트 #팝업스토어",
+      "published": "2026-09-30",
+      "people": [
+        "이시영의"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "LRZvrAZBohs",
+      "channel_id": "UC0wNauoCVIfU_xtWwrczFiA",
+      "title": "가을 겨울에도 우아하고 고급스럽게 옷 입기",
+      "published": "2026-10-14",
+      "people": [
+        "김나영"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "GiikIHPWr-A",
+      "channel_id": "UC0wNauoCVIfU_xtWwrczFiA",
+      "title": "이게 바로 어른여자룩의 정석? 입어만 볼게요 [토템]",
+      "published": "2026-10-07",
+      "people": [
+        "김나영의"
+      ],
+      "products": [
+        {
+          "name": "FW26 컬렉션",
+          "brand": "TOTEME"
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "rhqotvt2Q10",
+      "channel_id": "UC0wNauoCVIfU_xtWwrczFiA",
+      "title": "김나영이 요즘 매일같이 입고 쓰는 가을 패션템🤎",
+      "published": "2026-10-04",
+      "people": [
+        "김나영"
+      ],
+      "products": [
+        {
+          "name": "브이넥니트",
+          "brand": "벳우먼"
+        },
+        {
+          "name": "목걸이",
+          "brand": "리에스튜디오"
+        },
+        {
+          "name": "화이트진",
+          "brand": "더로우"
+        },
+        {
+          "name": "로퍼",
+          "brand": "구찌"
+        },
+        {
+          "name": "니트",
+          "brand": "렉토"
+        },
+        {
+          "name": "니트티셔츠",
+          "brand": "더로우"
+        },
+        {
+          "name": "니트",
+          "brand": "에레"
+        },
+        {
+          "name": "니트",
+          "brand": "벳우먼"
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "H99Yo97aA3I",
+      "channel_id": "UC0wNauoCVIfU_xtWwrczFiA",
+      "title": "기본템으로 세련되게 옷 입는 법! 옷장 속에 있어야 하는 아이템들",
+      "published": "2026-09-27",
+      "people": [
+        "김나영의"
+      ],
+      "products": [
+        {
+          "name": "기본 아이템 컬렉션",
+          "brand": "VOEF"
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "38w8pvGtlpI",
+      "channel_id": "UCEzZcejf28Oetz9TC5TuqSA",
+      "title": "요즘 유행템 다 들고와봐..!｜레페토·메종 타비 슈즈·워크자켓·명품백·뷰티기기 살말",
+      "published": "2026-10-01",
+      "people": [
+        "윤혜진의"
+      ],
+      "products": [
+        {
+          "name": "메종 타비 슈즈",
+          "brand": "메종 타비"
+        },
+        {
+          "name": "레페토 슈즈",
+          "brand": "레페토"
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "MaOIkdrjq34",
+      "channel_id": "UCEzZcejf28Oetz9TC5TuqSA",
+      "title": "신혼 필수템이라는 주물냄비... 살까요 말까요?",
+      "published": "2026-10-01",
+      "people": [
+        "윤혜진의"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "RNJesgzihfw",
+      "channel_id": "UCEzZcejf28Oetz9TC5TuqSA",
+      "title": "레페토 까미유… 살까요 말까요?",
+      "published": "2026-10-02",
+      "people": [
+        "윤혜진의"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "t_bIC9oyE2M",
+      "channel_id": "UCEzZcejf28Oetz9TC5TuqSA",
+      "title": "러그 깔고 사는 사람이라면 꼭 보세요",
+      "published": "2026-10-03",
+      "people": [
+        "윤혜진의"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "PAFl1AKsoBY",
+      "channel_id": "UC2E-9AQ-kwOFlvvXLfY6V8Q",
+      "title": "할머니 할아버지와 함께한 준범이네 추석🌕",
+      "published": "2026-10-16",
+      "people": [
+        "홍현희"
+      ],
+      "products": [
+        {
+          "name": "바리스티나",
+          "brand": "필립스"
+        },
+        {
+          "name": "빈스왑",
+          "brand": "필립스"
+        }
+      ],
+      "paid_ad": "있음",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "FaAUB-0PaUU",
+      "channel_id": "UCKFmJFCmSRgTpPHp9OR2ylw",
+      "title": "미식가 최화정도 사고 싶어도 못 산다는 전설의 밥도둑",
+      "published": "2026-10-17",
+      "people": [
+        "최화정",
+        "한효주"
+      ],
+      "products": [
+        {
+          "name": "숯불김",
+          "brand": "소문난할아버지김"
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "nt6WIGFmILE",
+      "channel_id": "UCKFmJFCmSRgTpPHp9OR2ylw",
+      "title": "품절대란 난리 난 이영자 추천 미끄럼방지 초경량 실내화 #shorts",
+      "published": "2026-10-16",
+      "people": [
+        "이영자"
+      ],
+      "products": [
+        {
+          "name": "초경량 요가슈즈(실내화)",
+          "brand": null
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "5apue0D4ALc",
+      "channel_id": "UCKFmJFCmSRgTpPHp9OR2ylw",
+      "title": "요리고수 정재형이 맨날 태워먹다 드디어 정착한 마법의 후라이팬  #shorts",
+      "published": "2026-10-15",
+      "people": [
+        "정재형"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "0DRKN0415Qo",
+      "channel_id": "UCKFmJFCmSRgTpPHp9OR2ylw",
+      "title": "슈퍼리치 박세리도 단종될까 두려워 쟁여 오는 면세점 필수템  #shorts",
+      "published": "2026-10-14",
+      "people": [
+        "박세리"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "5Kn2lp3fMbk",
+      "channel_id": "UCKFmJFCmSRgTpPHp9OR2ylw",
+      "title": "정형외과 발길 끊게 만든 조권의 내돈내산 목디스크 견인기 #shorts",
+      "published": "2026-10-13",
+      "people": [
+        "조권"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "NzKDXVAtofA",
+      "channel_id": "UCKFmJFCmSRgTpPHp9OR2ylw",
+      "title": "까다로운 브라이언이 극찬한 최은경 집 인테리어 선반 정체 #shorts",
+      "published": "2026-10-12",
+      "people": [
+        "최은경",
+        "브라이언"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "CU300rBQ4yk",
+      "channel_id": "UCKFmJFCmSRgTpPHp9OR2ylw",
+      "title": "패션 천재 엄정화의 센스 폭발하는 돋보기 정체",
+      "published": "2026-10-11",
+      "people": [
+        "엄정화"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "ySJLtV0K1PY",
+      "channel_id": "UCKFmJFCmSRgTpPHp9OR2ylw",
+      "title": "장윤정이 덴마크까지 가서 쓸어왔다는 수건, 연예인들 다 쓴다는 이유",
+      "published": "2026-10-10",
+      "people": [
+        "장윤정"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "__913Fbzt_M",
+      "channel_id": "UCKFmJFCmSRgTpPHp9OR2ylw",
+      "title": "새치가 이렇게 밝게 덮인다고? 최은경의 100년 전통 셀프 염색약 #최은경 #셀프염색 #새치염색 #염색약추천 #쇼핑꿀팁 #shorts #연예인추천템 #쇼핑쇼츠 #쿠팡추천템 #꿀템",
+      "published": "2026-10-09",
+      "people": [
+        "최은경"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "nLJgI17VWXQ",
+      "channel_id": "UCKFmJFCmSRgTpPHp9OR2ylw",
+      "title": "강민경이 차에서 곱창 먹고도 냄새 싹 지운 탈취제 정체 #강민경 #위프 #고체탈취제 #올영추천템 #연예인추천템 #탈취제 #shorts #연예인추천템 #쇼핑쇼츠 #쿠팡추천템 #꿀템",
+      "published": "2026-10-08",
+      "people": [
+        "강민경"
+      ],
+      "products": [
+        {
+          "name": "고체 탈취제",
+          "brand": "위프"
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "c7aFAiri_tA",
+      "channel_id": "UCKFmJFCmSRgTpPHp9OR2ylw",
+      "title": "올데프 애니가 새벽 3시 야식 먹고도 붓기 싹 뺀 마법의 반지 정체 #올데프애니 #반지괄사 #마사지바 #붓기제거 #shorts #연예인추천템 #쇼핑쇼츠 #쿠팡추천템 #꿀템",
+      "published": "2026-10-08",
+      "people": [
+        "올데프 애니"
+      ],
+      "products": [
+        {
+          "name": "반지괄사",
+          "brand": null
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "gYBJ12ez7Ws",
+      "channel_id": "UCKFmJFCmSRgTpPHp9OR2ylw",
+      "title": "&quot;기념일 다 포기할게!&quot; 주상욱 카드 10개월 할부로 긁은 차예련 가방",
+      "published": "2026-10-07",
+      "people": [
+        "차예련",
+        "주상욱"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "7ZUKEbdOod8",
+      "channel_id": "UCKFmJFCmSRgTpPHp9OR2ylw",
+      "title": "최지우가 극찬한 3천원대 가성비 매직 립밤 #최지우 #최지우립밤 #투명립밤 #틴트립밤 #매직립밤 #가성비템 #여배우립스틱 #shorts #연예인추천템 #쇼핑쇼츠 #쿠팡추천템",
+      "published": "2026-10-06",
+      "people": [
+        "최지우"
+      ],
+      "products": [
+        {
+          "name": "매직 립밤",
+          "brand": null
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "Y3DP06nvXow",
+      "channel_id": "UCKFmJFCmSRgTpPHp9OR2ylw",
+      "title": "이사배가 매일 쓴다는 얼굴 반쪽 만들어주는 윤곽 스틱의 정체 🤫 #이사배 #윤곽스틱 #얼굴소멸 #쉐딩 #컨투어링 #shorts #연예인추천템 #쇼핑쇼츠 #쿠팡추천템 #이사배추천",
+      "published": "2026-10-05",
+      "people": [
+        "이사배"
+      ],
+      "products": [
+        {
+          "name": "윤곽 스틱",
+          "brand": null
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "1gEKS-V_CYY",
+      "channel_id": "UCKFmJFCmSRgTpPHp9OR2ylw",
+      "title": "-20kg 강소라가 다이어트 중 입터질 때 죄책감 없이 먹는 미친 단짠 간식 정체 🤫 #다이어트간식 #강소라 #입터짐방지 #코스트코간식 #단짠단짠 #shorts  #연예인추천템",
+      "published": "2026-10-04",
+      "people": [
+        "강소라"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "nLylQh5ls7k",
+      "channel_id": "UClePo2KUh4JswOQoNejIKiQ",
+      "title": "워너비 동안피부 템",
+      "published": "2026-10-07",
+      "people": [
+        "카리나",
+        "오연서",
+        "임보라"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "YEih9kiw2e0",
+      "channel_id": "UClePo2KUh4JswOQoNejIKiQ",
+      "title": "가격대별 블러셔 픽",
+      "published": "2026-10-03",
+      "people": [
+        "설윤",
+        "원희"
+      ],
+      "products": [
+        {
+          "name": "치크팝",
+          "brand": "크리니크"
+        },
+        {
+          "name": "튀튀",
+          "brand": "디올"
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "xcwdQtZrIGw",
+      "channel_id": "UClePo2KUh4JswOQoNejIKiQ",
+      "title": "10년째 같은 치약",
+      "published": "2026-10-01",
+      "people": [
+        "장윤정"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "tUUSaEOtoKY",
+      "channel_id": "UClePo2KUh4JswOQoNejIKiQ",
+      "title": "꾸안꾸 인생립",
+      "published": "2026-10-05",
+      "people": [
+        "카리나"
+      ],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "I3QsHczAX98",
+      "channel_id": "UClePo2KUh4JswOQoNejIKiQ",
+      "title": "이거 내 살냄새야",
+      "published": "2026-10-16",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "Cdujhqadzcc",
+      "channel_id": "UCA12yqwan_vhRCpFRW3Bw_g",
+      "title": "내돈내산 컬리템 장바구니🛒샵뚱식으로 한 끗 업그레이드 | 샵뚱 ep.27",
+      "published": "2026-10-15",
+      "people": [],
+      "products": [
+        {
+          "name": "컬리 장바구니 상품",
+          "brand": "컬리"
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "ZxgKSWD93Ks",
+      "channel_id": "UCA12yqwan_vhRCpFRW3Bw_g",
+      "title": "털 관리(?) 꿀템 #shorts #쇼츠",
+      "published": "2026-09-27",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "vnsTKItFOAY",
+      "channel_id": "UCA12yqwan_vhRCpFRW3Bw_g",
+      "title": "마스크에 안 묻는 베이스부터 다크서클까지💄 퍼프들 메이크업 고민 다 가져와 | 샵뚱 ep.26",
+      "published": "2026-10-08",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "ggsVf09fP00",
+      "channel_id": "UCA12yqwan_vhRCpFRW3Bw_g",
+      "title": "지워지지 않는 메이크업 베이스 비법 #샵뚱 #쇼츠 #메이크업",
+      "published": "2026-10-08",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "F5JF4rRZLs0",
+      "channel_id": "UCA12yqwan_vhRCpFRW3Bw_g",
+      "title": "다크서클은 블러셔로 포인트 #샵뚱 #쇼츠 #메이크업",
+      "published": "2026-10-10",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "cn-RkA0ctI8",
+      "channel_id": "UC9kmlDcqksaOnCkC_qzGacA",
+      "title": "[ENG] 인스타 요청 많았던📸✨가을 어른 여자 메이크업🍂🤎 l 이사배(RISABAE Makeup)",
+      "published": "2026-09-30",
+      "people": [
+        "이사배"
+      ],
+      "products": [
+        {
+          "name": "BADCAT 렌즈 (샴 베이지)",
+          "brand": "유리아(URIA)"
+        },
+        {
+          "name": "올 오버 페이스 블러쉬 (멀드 로즈)",
+          "brand": "투슬래시포(TWO SLASH FOUR)"
+        },
+        {
+          "name": "Matte Eye Shadow (OMEGA)",
+          "brand": "맥(MAC)"
+        },
+        {
+          "name": "럭셔리 아이섀도우 팔레트",
+          "brand": "샬롯틸버리(CHARLOTTE TILLBURY)"
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "MEmwKwlE7k4",
+      "channel_id": "UCmPkZXhVfyLLWyHQM-l_KqA",
+      "title": "출산 전 마지막 겟레디👀 신상 왕창 + Q&amp;A까아쥐 (디피노르 로션 스포, 웨이크메이크 신상쿠션, 어뮤즈 세럼 블러셔, 에뛰드 듀얼립)",
+      "published": "2026-10-11",
+      "people": [],
+      "products": [
+        {
+          "name": "디피노르 로션",
+          "brand": "디피노르"
+        }
+      ],
+      "paid_ad": "있음",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "jTdGyK25NPM",
+      "channel_id": "UCmPkZXhVfyLLWyHQM-l_KqA",
+      "title": "드디어 뜯어보는,,👀 색조 잔뜩 all 내돈내산 택배깡📦",
+      "published": "2026-10-08",
+      "people": [],
+      "products": null,
+      "paid_ad": "있음",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "euhHISfXTAA",
+      "channel_id": "UCmPkZXhVfyLLWyHQM-l_KqA",
+      "title": "로드샵 샵민수템으로 방구석 샵 메이크업 해 봄 (대박적 꿀조합 베이스템, 요즘 핫한 팔레트, 무조건있는 샵필수템)",
+      "published": "2026-10-01",
+      "people": [],
+      "products": [
+        {
+          "name": "님프 듀이 젤리 프렙",
+          "brand": "님프"
+        }
+      ],
+      "paid_ad": "있음",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "DmOjsyVcjVQ",
+      "channel_id": "UCmPkZXhVfyLLWyHQM-l_KqA",
+      "title": "유명 아이돌 담당쌤들이 직접 만든 제작템들로 메이크업 해 봄 (원정요, 리리링, 캐시돌X맹, 루미르, PYT)",
+      "published": "2026-09-27",
+      "people": [],
+      "products": [
+        {
+          "name": "모이스트 업 레디 스킨 팩",
+          "brand": "원정요"
+        },
+        {
+          "name": "시카마누",
+          "brand": "파넬"
+        }
+      ],
+      "paid_ad": "있음",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "Wz6TTgk6p1A",
+      "channel_id": "UCOnSoSFUyeakdOOzAP0nnyw",
+      "title": "이 가격에 이런 텐트가 가능하다고?😮 #꿀템추천 #캠핑용품",
+      "published": "2026-10-17",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "xjSMTihtSrs",
+      "channel_id": "UCOnSoSFUyeakdOOzAP0nnyw",
+      "title": "여행 갈 때 이걸 꼭 챙기는 이유?😮 #신박템 #여행필수템",
+      "published": "2026-10-16",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "GAc_bgb_zes",
+      "channel_id": "UCOnSoSFUyeakdOOzAP0nnyw",
+      "title": "그릴 위에 한 장 깔았을 뿐인데..ㄷㄷ😮 #신박템 #캠핑요리",
+      "published": "2026-10-15",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "YhHFIWB867s",
+      "channel_id": "UCOnSoSFUyeakdOOzAP0nnyw",
+      "title": "이런 돼지코 플러그는 처음 봤어요😮 #살림템 #공간활용",
+      "published": "2026-10-14",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "eDlq3CePsbg",
+      "channel_id": "UCOnSoSFUyeakdOOzAP0nnyw",
+      "title": "돌고 돌아 결국 이걸로 정착한 이유😃 #살림템 #주방용품",
+      "published": "2026-10-13",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "aI0tg--hnVU",
+      "channel_id": "UCOnSoSFUyeakdOOzAP0nnyw",
+      "title": "가방 속에 이걸 꼭 챙기는 이유😃",
+      "published": "2026-10-12",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "9DfG96HmvKI",
+      "channel_id": "UCOnSoSFUyeakdOOzAP0nnyw",
+      "title": "이걸로 바꿨더니 스트레스가 사라졌어요😎 #수납꿀템 #정리정돈",
+      "published": "2026-10-12",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "fsX-TI8YvP4",
+      "channel_id": "UCOnSoSFUyeakdOOzAP0nnyw",
+      "title": "친구 집에서 이거 보고 반했어요😍 #거실인테리어 #공간활용",
+      "published": "2026-10-11",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "8CZnkLIKYJs",
+      "channel_id": "UCOnSoSFUyeakdOOzAP0nnyw",
+      "title": "아니 생수통을 꽂고 세차를 한다고?😮 #자동차관리 #신박템",
+      "published": "2026-10-10",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "2ckOoSEjreI",
+      "channel_id": "UCOnSoSFUyeakdOOzAP0nnyw",
+      "title": "미국에서 완판된 키링의 반전?😮 #여행준비 #크로스백",
+      "published": "2026-10-09",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "MiPblaeDHqg",
+      "channel_id": "UCOnSoSFUyeakdOOzAP0nnyw",
+      "title": "그냥 세웠는데 다들 공사한 줄 알아요😎 #집꾸미기 #공간활용",
+      "published": "2026-10-08",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "qwBiAUS5bQk",
+      "channel_id": "UCOnSoSFUyeakdOOzAP0nnyw",
+      "title": "냉동고기 맛의 비밀이 이거였어?😮 #요리팁 #살림템",
+      "published": "2026-10-07",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "p20Lrr7ioeU",
+      "channel_id": "UCOnSoSFUyeakdOOzAP0nnyw",
+      "title": "여행갈때 무조건 챙겨야 하는 이유😃 #꿀템추천 #해외여행준비",
+      "published": "2026-10-07",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "P7RxRLq-3Q4",
+      "channel_id": "UCOnSoSFUyeakdOOzAP0nnyw",
+      "title": "카페에서 이거 펼쳤을 뿐인데..😎 #꿀템추천 #노트북파우치",
+      "published": "2026-10-06",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "RDNLD-oIdgs",
+      "channel_id": "UCOnSoSFUyeakdOOzAP0nnyw",
+      "title": "에어컨 안 쓸 때 먼지 쌓이는거 막는 꿀팁😮 #살림템 #생활정보",
+      "published": "2026-10-06",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "ZUiVCREqqTM",
+      "channel_id": "UCBUoKpU1bOdRsdpsMwwCG0g",
+      "title": "유행은 바뀌어도 살아남는 물건들. 100년 브랜드의 지금 사도 좋은 제품 10가지🔎",
+      "published": "2026-10-16",
+      "people": [],
+      "products": null,
+      "paid_ad": "없음",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "LwAPbJ6D7MU",
+      "channel_id": "UCBUoKpU1bOdRsdpsMwwCG0g",
+      "title": "&quot;우리나라의 100년 브랜드?&quot;",
+      "published": "2026-10-16",
+      "people": [],
+      "products": null,
+      "paid_ad": "없음",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "hw8EhYOr7dA",
+      "channel_id": "UCk-Y9lv2UGfTfkfNw0j3WPQ",
+      "title": "성능 좋은 인생 허리, 꼬리뼈 방석 쿠션 추천 #내돈내산",
+      "published": "2026-10-10",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "mfJd8mb-mlA",
+      "channel_id": "UCk-Y9lv2UGfTfkfNw0j3WPQ",
+      "title": "환절기 비염 감기 없애주는 대용량 존예 가습기",
+      "published": "2026-10-06",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "RV2DTVWeQr8",
+      "channel_id": "UCk-Y9lv2UGfTfkfNw0j3WPQ",
+      "title": "큰 맘 먹고 사는 비싼 자취 생활템 장단점 솔직리뷰 #내돈내산",
+      "published": "2026-10-01",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "AzYR607kIF4",
+      "channel_id": "UCk-Y9lv2UGfTfkfNw0j3WPQ",
+      "title": "우리집 구원해 준 갓성비 로봇청소기 이모님 리뷰",
+      "published": "2026-09-29",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "F3nYIWVAjx8",
+      "channel_id": "UCwfipXEUgyhWaTNVYzp-gJA",
+      "title": "전동그라인더 세척하는 방법! #살림꿀템 #살림초보",
+      "published": "2026-10-17",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "ixzuoIL6MMo",
+      "channel_id": "UCwfipXEUgyhWaTNVYzp-gJA",
+      "title": "다이소 주방 정리꿀템 모음! 요거 보이면 쟁여두세요! 쓰임새가 좋거든요! 공간활용 센스있게 /미니멀라이프/단정한 정리정돈 꿀팁",
+      "published": "2026-10-16",
+      "people": [],
+      "products": [
+        {
+          "name": "매직쉐프 전동 그라인더",
+          "brand": "매직쉐프"
+        },
+        {
+          "name": "다이소 주방 정리템",
+          "brand": "다이소"
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "8Yek9Galn24",
+      "channel_id": "UCwfipXEUgyhWaTNVYzp-gJA",
+      "title": "무지 추천템! 사고 또사러 가야하는 찐만족 추천템 3가지 #살림꿀템 #살림초보  #무지추천템",
+      "published": "2026-10-15",
+      "people": [],
+      "products": [
+        {
+          "name": "무지 추천템",
+          "brand": "무지"
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "o0hF4OjbACA",
+      "channel_id": "UCwfipXEUgyhWaTNVYzp-gJA",
+      "title": "코스트코 삼합아세요? 꿀조합 이거예요! 다이어트나 변비 있으시다면 꼭 드셔보세요🙌🏻 #살림꿀템 #살림초보",
+      "published": "2026-10-14",
+      "people": [],
+      "products": [
+        {
+          "name": "코스트코 삼합 조합 식품",
+          "brand": "코스트코"
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "xL1JfQkT1bQ",
+      "channel_id": "UCwfipXEUgyhWaTNVYzp-gJA",
+      "title": "다이소엔 없는 신박한 정리템! 한판으로 모든 정리를 끝내버리는 수납정리의 또 다른 신세계! 손가락으로 톡톡! 공간활용 센스있게 /미니멀라이프/단정한 정리정돈 꿀팁",
+      "published": "2026-10-13",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "3UWWPEi8J48",
+      "channel_id": "UCwfipXEUgyhWaTNVYzp-gJA",
+      "title": "너무 편한데 가볍기까지한 주방 삶의질 상승템👍🏻 이제 주방에서 쉬운 살림해요! #살림꿀템 #살림초보 #자취요리",
+      "published": "2026-10-13",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "Be_Oyjbxt2w",
+      "channel_id": "UCwfipXEUgyhWaTNVYzp-gJA",
+      "title": "정리는 장비발! 정리천재 수납함! 어줍짢은 정리템말고 확실하고 신박한거 발견‼️ #살림꿀템 #살림초보  #organization #organizer #꿀템",
+      "published": "2026-10-12",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "NlWT9URzdDU",
+      "channel_id": "UCwfipXEUgyhWaTNVYzp-gJA",
+      "title": "이런건 처음봤어요! 정리똥손도 정리 고수 만들어주는 신박한 정리템🙌🏻 #살림꿀템 #살림초보",
+      "published": "2026-10-12",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "eM8OW2AQJyM",
+      "channel_id": "UCwfipXEUgyhWaTNVYzp-gJA",
+      "title": "다이소꿀템으로 무릎을 탁 치게 만드는 공간활용꿀팁/ 절대 후회없는 다이소 꿀템 야무지게 활용하기 / 수납정리 / 단정한 정리정돈 팁 / 미니멀라이프",
+      "published": "2026-10-08",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "ohqnSCygm8E",
+      "channel_id": "UCwfipXEUgyhWaTNVYzp-gJA",
+      "title": "이케아 반도 안되는 가격에 다이소에서 쉽게 만들어요💡 #살림꿀템 #다이소",
+      "published": "2026-10-07",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "NPQ7Ii3kzJk",
+      "channel_id": "UCptluLxns9LnEl3bfTr0AnQ",
+      "title": "비싼 와인잔 다 깨먹고 찾은 인생템🍷 #본품증정이벤트",
+      "published": "2026-10-16",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "v9MRyuB6okg",
+      "channel_id": "UCptluLxns9LnEl3bfTr0AnQ",
+      "title": "써보고 검증한 한끗 다른 살림템 3✨",
+      "published": "2026-10-08",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "SqroUwEuf_g",
+      "channel_id": "UCNd-c0N-16eS4BOW8kjHS9A",
+      "title": "매일 쓰게 되는 주방 살림템 8가지 | 내돈내산 추천템",
+      "published": "2026-10-17",
+      "people": [],
+      "products": [
+        {
+          "name": "양배추 채칼",
+          "brand": "시모무라"
+        },
+        {
+          "name": "주걱",
+          "brand": "휘슬러"
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "02mBtkjnum4",
+      "channel_id": "UCNd-c0N-16eS4BOW8kjHS9A",
+      "title": "우리집이 브런치 카페된 이유 원목도마 추천 #shorts",
+      "published": "2026-10-14",
+      "people": [],
+      "products": [
+        {
+          "name": "원목도마",
+          "brand": null
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "Xe5kTgJI800",
+      "channel_id": "UCNd-c0N-16eS4BOW8kjHS9A",
+      "title": "딱딱해서 못 먹던 오란다의 반전 | #간식추천 #shorts",
+      "published": "2026-10-04",
+      "people": [],
+      "products": [
+        {
+          "name": "오란다",
+          "brand": "오란다"
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "prJc0PAxAAw",
+      "channel_id": "UCEYqwbdCzBQiSxZq9MtLyZA",
+      "title": "살림이 즐거워지는 요즘 살림템ㅣ가을 살림과 특별한 하루🏡 살림브이로그 (with. 롯데 광클절)",
+      "published": "2026-10-14",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "pH1d9I8i2Ts",
+      "channel_id": "UCn5Rlkv0Obh-OqlQl-G68fQ",
+      "title": "남편이 우리 방이 너무 병원 같대요 #침실인테리어 #침구추천 #이불추천 #인테리어",
+      "published": "2026-10-09",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "2seop3jqj7I",
+      "channel_id": "UCn5Rlkv0Obh-OqlQl-G68fQ",
+      "title": "코스트코 4인 가족 냉장고 채우기 현실편 #코스트코 #냉장고채우기 #소분",
+      "published": "2026-10-03",
+      "people": [],
+      "products": [
+        {
+          "name": "코스트코 식품",
+          "brand": "코스트코"
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "VBhWaVDZVr8",
+      "channel_id": "UCn5Rlkv0Obh-OqlQl-G68fQ",
+      "title": "무인양품 서랍 이렇게 써보세요 #무인양품 #muji #살림꿀팁",
+      "published": "2026-09-29",
+      "people": [],
+      "products": [
+        {
+          "name": "서랍",
+          "brand": "무인양품"
+        }
+      ],
+      "paid_ad": "불명",
+      "needs_transcript": false
+    },
+    {
+      "video_id": "3CVec_PscpA",
+      "channel_id": "UClGXzNNnfEFd1uAbY7KCljQ",
+      "title": "🧺 청소가 쉬워지는 데는 이유가 있어요 🫧 | 청소에 진심인 주부의 청소 추천템 20가지",
+      "published": "2026-10-17",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    },
+    {
+      "video_id": "-jakDSJLarM",
+      "channel_id": "UC4ZF3-w9ENwXTczPPZG6fng",
+      "title": "오랜만에 도쿄에서 셀프 메이크업과 편의점 털이☆(˃ᴗ0 ) | 따라해볼레이 EP.99",
+      "published": "2026-10-08",
+      "people": [],
+      "products": null,
+      "paid_ad": "불명",
+      "needs_transcript": true
+    }
+  ]
+}
