@@ -1,0 +1,310 @@
+{
+  "topic": "RISABAE(이사배) 「[ENG] 인스타 요청 많았던 가을 어른 여자 메이크업」 — 설명란 [제품정보] 단계별 목록과 대표 제품 공식 확인",
+  "brand": "투슬래시포 TWO SLASH FOUR · 맥 MAC · 샬롯틸버리 · 키스미 KISSME · 기타 (설명란 기재)",
+  "article": "예정",
+  "captured": "2026-10-18",
+  "reused_facts": [
+    "two-slash-four-operated-by-jusikhoesa",
+    "two-slash-four-ceo-risabae-launched-2023",
+    "risabae-youtube-channel-name"
+  ],
+  "declined_facts": [
+    {
+      "id": "risabae-shorts-product-unconfirmed-between-two-brands",
+      "why": "쇼츠 Y3DP06nvXow의 윤곽 스틱 특정 건. 이 장편 영상은 블러쉬·섀도우·립 등 다른 품목이라 맥락이 맞지 않는다."
+    },
+    {
+      "id": "mac-contour-stick-unconfirmed",
+      "why": "쇼츠 해시태그의 '맥 컨투어 스틱'을 다룬 팩트. 이 영상의 맥 제품은 매트 아이섀도우 오메가라 제품이 다르다."
+    },
+    {
+      "id": "two-slash-four-stick-price-unconfirmed",
+      "why": "쇼츠 윤곽 스틱의 가격 미확인 건. 이 영상에는 스틱 제품이 없어 해당하지 않는다."
+    },
+    {
+      "id": "risabae-2024-tutorial-base-fenty-contour-skinstick",
+      "why": "2024년 3월 다른 튜토리얼의 펜티 스틱. 2026년 이 영상의 제품 목록과 시기·품목이 다르다."
+    },
+    {
+      "id": "two-slash-four-official-lineup-no-contour-stick",
+      "why": "투슬래시포 공식몰에 윤곽 스틱이 없다는 팩트. 이 영상 제품(블러쉬·립·큐브)과 직접 관계가 없어 재사용하지 않았다."
+    },
+    {
+      "id": "risabae-shorts-original-source-unconfirmed",
+      "why": "쇼츠의 원본 영상 확인 실패 건. 이 장편 영상은 원본이므로 해당 없음."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "risabae-fall-desc-products-face-contour-blush",
+      "claim": "영상 설명란 [제품정보] 중 렌즈·컨투어링·블러쉬·하이라이터 단계에는 유리아 배드캣 #샴 베이지, 투슬래시포 올 오버 페이스 블러쉬 #멀드 로즈(컨투어링·아이 단계에 중복 기재), 맥 매트 아이섀도우 #오메가, 투슬래시포 올 오버 페이스 블러쉬 #차드 로즈, 투슬래시포 스트로빙 페이스 큐브 #핑크 베이지가 적혀 있다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "RISABAE 유튜브 영상 설명란 [제품정보] — 크리에이터 직접 기재",
+      "source_url": "https://www.youtube.com/watch?v=cn-RkA0ctI8",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "RISABAE(이사배) 설명란 기재",
+        "category": "렌즈·블러쉬·섀도우·하이라이터",
+        "line": "2026 가을 어른 여자 메이크업 영상",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "설명란 호수 표기를 그대로 옮긴 것이다. 같은 이름의 호수가 여러 컬렉션에 있을 수 있어 제품 구매 시 컬렉션명까지 확인하도록 안내한다. 괄호 안의 브러시·맥 호수(270S 등)는 사용 도구 표기이므로 제품 정보로 쓰지 않는다.",
+      "cautionSource": "영상 설명란 원문 실측 (2026-10-18)"
+    },
+    {
+      "id": "risabae-fall-desc-products-eye-shadow-liner",
+      "claim": "영상 설명란 [제품정보] 중 아이 메이크업 단계에는 샬롯틸버리 럭셔리 아이섀도우 팔레트 #더 소피스티케이트, 메이크업포에버 아티스트 컬러 펜슬 #608 리미트리스 브라운, 케이트 핏 레어 젤 펜슬 아이라이너 #딥블랙, 프로에잇 스테이 온 젤 아이라이너 #01 딥블랙, 투슬래시포 올 오버 페이스 블러쉬 #멀드 로즈가 적혀 있다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "RISABAE 유튜브 영상 설명란 [제품정보] — 크리에이터 직접 기재",
+      "source_url": "https://www.youtube.com/watch?v=cn-RkA0ctI8",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "RISABAE(이사배) 설명란 기재",
+        "category": "아이섀도우·펜슬·아이라이너",
+        "line": "2026 가을 어른 여자 메이크업 영상",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "'샬롯틸버리 럭셔리 아이섀도우 팔레트'는 설명란에 호수만 있고 팔레트 구성 색 목록은 기재되지 않았다. 호수 #더 소피스티케이트를 특정 팔레트로 단정하기 전에 판매 페이지에서 확인한다.",
+      "cautionSource": "영상 설명란 원문 실측 (2026-10-18)"
+    },
+    {
+      "id": "risabae-fall-desc-products-lash-brow-lip",
+      "claim": "영상 설명란 [제품정보] 중 속눈썹·아이브로우·립 단계에는 피카소 아이미X상은언니 인조 속눈썹 13호 애티튜드, 듀오 큇셋 속눈썹 접착제 #다크·#투명, 피카소 쏙쏙 가닥속눈썹 언더 5mm, 키스미 히로인메이크 롱앤컬 마스카라 EX #딥블랙, 맥 매트 아이섀도우 #오메가(브로우 용도), 에뛰드 컨트롤 슬라이드 브로우 #05 더스티 토프, 투슬래시포 스컬프트 립 쉐이퍼 #아웃토프·#아웃테디, 투슬래시포 클라우드 립 칠러 #로지 듄·#아이시 도브가 적혀 있다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "RISABAE 유튜브 영상 설명란 [제품정보] — 크리에이터 직접 기재",
+      "source_url": "https://www.youtube.com/watch?v=cn-RkA0ctI8",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "RISABAE(이사배) 설명란 기재",
+        "category": "속눈썹·접착제·마스카라·브로우·립",
+        "line": "2026 가을 어른 여자 메이크업 영상",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "설명란의 '맥 매트 아이섀도우 #오메가'는 브로우 단계에 쓰였다고 적혀 있다(섀도우를 눈썹에 쓴 것). 독자에게는 '영상에서 브로우에 쓰였다'로만 소개한다.",
+      "cautionSource": "영상 설명란 원문 실측 (2026-10-18)"
+    },
+    {
+      "id": "risabae-fall-desc-no-paid-ad-disclosure",
+      "claim": "RISABAE 「가을 어른 여자 메이크업」 설명란에는 '[광고]'·협찬·제휴·업체 대가 표기가 없다. 설명란은 제품정보와 인스타그램·틱톡 계정 안내로 구성된다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "RISABAE 유튜브 영상 설명란 원문 — 크리에이터 직접 기재",
+      "source_url": "https://www.youtube.com/watch?v=cn-RkA0ctI8",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "RISABAE(이사배)",
+        "category": "유료광고·협찬 표기",
+        "line": "영상 단위",
+        "years": "2026-10-18 확인 시점",
+        "region": "KR"
+      },
+      "caution": "설명란 표기 기준이다. 표기가 없다고 해서 제품 협찬이 없다고 단정하지 않는다(영상 음성·화면 표기는 별도로 확인하지 못했다). 설명란 안내 문구만 사실로 적는다.",
+      "cautionSource": "영상 설명란 원문 실측 (2026-10-18)"
+    },
+    {
+      "id": "twoslash-blush-mulled-rose-official-page",
+      "claim": "투슬래시포 공식몰 '올 오버 페이스 블러쉬(NEW 스모크드로즈 컬렉션)' 상품 페이지에는 호수 '멀드 로즈(Mulled Rose)'가 판매 중으로 표기되어 있고, 용량 5g, 판매가 25,000원이 적혀 있다(2026-10-18 확인).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "투슬래시포 공식 사이트 상품 상세 (올 오버 페이스 블러쉬 NEW 스모크드로즈 컬렉션)",
+      "source_url": "https://www.twoslashfour.com/product/detail.html?product_no=126",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "투슬래시포 TWO SLASH FOUR",
+        "category": "블러쉬 (올 오버 페이스 블러쉬)",
+        "line": "NEW 스모크드로즈 컬렉션",
+        "years": "2026-10-18 확인 시점",
+        "region": "KR"
+      },
+      "caution": "영상 속 '멀드 로즈'와 같은 호수 명칭이며 같은 제품으로 쓸 수 있다. 다만 영상 제작 시기의 컬렉션 구성과 현재 판매 구성이 같다는 것은 확인하지 못했다. 판매가는 조사 시점 기준이다.",
+      "cautionSource": "twoslashfour.com 상품 상세 페이지 실측 (product_no=126, 2026-10-18)"
+    },
+    {
+      "id": "twoslash-blush-charred-rose-sold-out",
+      "claim": "투슬래시포 공식몰의 '올 오버 페이스 블러쉬(NEW 스모크드로즈 컬렉션)' 페이지에서 호수 '차드 로즈(Chard Rose)'는 품절로 표기되어 있다(2026-10-18 확인).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "투슬래시포 공식 사이트 상품 상세 (product_no=126)",
+      "source_url": "https://www.twoslashfour.com/product/detail.html?product_no=126",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "투슬래시포 TWO SLASH FOUR",
+        "category": "블러쉬",
+        "line": "NEW 스모크드로즈 컬렉션",
+        "years": "2026-10-18 확인 시점",
+        "region": "KR"
+      },
+      "caution": "품절은 조사 시점 기준이다. 독자에게는 '조사 시점에 품절이었다'로 쓰고 재입고 여부를 단정하지 않는다. 차드 로즈 명칭은 공식 표기 'Chard Rose'와 설명란 'CHARRED ROSE'가 다르다 — 설명란 원문 '차드 로즈'는 공식 한글 호수명과 같다.",
+      "cautionSource": "twoslashfour.com 상품 상세 페이지 실측 (product_no=126, 2026-10-18)"
+    },
+    {
+      "id": "twoslash-official-category-lip-face-tool",
+      "claim": "투슬래시포 공식 사이트 카테고리에는 LIP 계열의 스컬프트 립 쉐이퍼·클라우드 립 칠러, FACE 계열의 스트로빙 페이스 큐브·올 오버 페이스 블러쉬, TOOL 계열의 미니 앵글드 브러쉬가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "투슬래시포 공식 사이트 상단 카테고리 메뉴 (twoslashfour.com)",
+      "source_url": "https://www.twoslashfour.com/",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "투슬래시포 TWO SLASH FOUR",
+        "category": "립·페이스·툴 카테고리",
+        "line": "2026-10-18 확인 시점 카테고리 구성",
+        "years": "2026-10-18 확인 시점",
+        "region": "KR"
+      },
+      "caution": "카테고리 메뉴 기준이다. 설명란의 호수(#아웃토프 등)가 현재 판매 중인지는 상품별로 확인해야 한다. 스트로빙 페이스 큐브는 듀얼 큐브 형태라 막대형 제품이 아니다.",
+      "cautionSource": "twoslashfour.com 카테고리 메뉴 실측 (2026-10-18)"
+    },
+    {
+      "id": "risabae-fall-sub-fw-collection-mulled-chard",
+      "claim": "이사배는 영상 1:48~1:55 구간에서 '이번 투슬 FW 컬렉션인 멀드로즈와 차드 로즈'를 메인 컬러로 쓴다고 말했다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "RISABAE 유튜브 영상 자막(자동 생성) 1:48~1:55",
+      "source_url": "https://www.youtube.com/watch?v=cn-RkA0ctI8",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "투슬래시포",
+        "category": "블러쉬 (발화 기준)",
+        "line": "FW 컬렉션 (발화 기준)",
+        "years": "2026 영상 기준",
+        "region": "KR"
+      },
+      "caution": "'FW 컬렉션'은 출연자 발언이다. 공식 상품 페이지의 컬렉션명은 'NEW 스모크드로즈 컬렉션'이라 이름이 다르다. 두 명칭이 같은 컬렉션인지는 확인하지 못했다. 자동 자막 '투슬'은 투슬래시포로 본다.",
+      "cautionSource": "영상 자막 1:48~1:55 및 투슬래시포 공식 상품 페이지(product_no=126) 컬렉션명 대조 실측 (2026-10-18)"
+    },
+    {
+      "id": "risabae-fall-sub-blush-multi-use",
+      "claim": "이사배는 영상 2:07~2:17 구간에서 올 오버 페이스 블러시는 블러셔로도 섀도우로도 쓰고 립 위에도 바를 수 있다고 설명했다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "RISABAE 유튜브 영상 자막(자동 생성) 2:07~2:17",
+      "source_url": "https://www.youtube.com/watch?v=cn-RkA0ctI8",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "투슬래시포",
+        "category": "올 오버 페이스 블러쉬 (사용법 발화)",
+        "line": "2026 영상",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "출연자의 사용 경험 발언이다. 제품 공식 사용법은 상품 페이지 안내를 우선한다.",
+      "cautionSource": "영상 자막 2:07~2:17 실측 (2026-10-18)"
+    },
+    {
+      "id": "risabae-fall-sub-shadow-mulled-under-chard",
+      "claim": "이사배는 영상 6:02~6:04 구간에서 위쪽 섀도우는 멀드로즈를 주로 쓰고 언더는 차드로즈를 주로 쓴다고 말했다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "RISABAE 유튜브 영상 자막(자동 생성) 5:55~6:12",
+      "source_url": "https://www.youtube.com/watch?v=cn-RkA0ctI8",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "투슬래시포",
+        "category": "블러쉬 (섀도우 용도 발화)",
+        "line": "멀드로즈·차드로즈",
+        "years": "2026 영상 기준",
+        "region": "KR"
+      },
+      "caution": "출연자 발화다. 설명란 아이 단계에 멀드 로즈가 여러 번 기재된 것과 맞는다. 제품별 용량 등은 공식 상품 페이지 기준이다.",
+      "cautionSource": "영상 자막 5:55~6:12 및 설명란 실측 (2026-10-18)"
+    },
+    {
+      "id": "risabae-fall-subtitle-correction-notice",
+      "claim": "영상 자막의 '올러버 페이스 블러시'는 설명란의 '올 오버 페이스 블러쉬'를 가리키며 '투슬'은 투슬래시포를 가리킨다(자동 자막 오인식 정정).",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "영상 자막(자동 생성) 1:34~2:17 및 설명란 원문 대조",
+      "source_url": "https://www.youtube.com/watch?v=cn-RkA0ctI8",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "투슬래시포",
+        "category": "자막 정정 기록",
+        "line": "2026 영상",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "자동 자막 정정은 기록용이다. 인용 시 원 발화 대신 정정된 제품명을 쓰고, 정정 사실을 본문에 밝힐 필요는 없다.",
+      "cautionSource": "영상 자막과 설명란 원문 대조 실측 (2026-10-18)"
+    },
+    {
+      "id": "mac-matte-eyeshadow-omega-us-listing-not-found",
+      "claim": "맥 미국 공식 사이트 아이섀도우 컬렉션(18개 상품) 목록에서 '매트 아이섀도우 오메가(OMEGA)'를 찾지 못했다. 한국 공식 사이트도 접근하지 못했다(기존 조사에서 403 확인).",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "MAC Cosmetics 미국 공식 사이트 아이섀도우 컬렉션 페이지 (maccosmetics.com/collections/eye-shadow)",
+      "source_url": "https://www.maccosmetics.com/collections/eye-shadow",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "맥 MAC",
+        "category": "매트 아이섀도우",
+        "line": "OMEGA",
+        "years": "2026-10-18 확인 시점",
+        "region": "미국 사이트 (한국 사이트 접근 실패)"
+      },
+      "caution": "목록에 없다는 것이 단종을 뜻하지는 않는다. 한국 판매 여부와 호수 정보는 확인하지 못했다. 판매처·쇼핑몰 설명은 출처로 쓰지 않는다.",
+      "cautionSource": "maccosmetics.com 아이섀도우 컬렉션 페이지 실측 (2026-10-18)"
+    },
+    {
+      "id": "charlotte-tilbury-sophisticate-palette-unconfirmed",
+      "claim": "샬롯틸버리 럭셔리 아이섀도우 팔레트 '더 소피스티케이트(The Sophisticate)'의 공식 상품 페이지는 이번 조사에서 열지 못했다(영국·캐나다 사이트 403, 한국 사이트는 배송 불가 안내). 구성·용량·가격은 확인되지 않았다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "charlottetilbury.com 영국·캐나다 상품 페이지 및 한국 페이지 접근 시도",
+      "source_url": "https://www.charlottetilbury.com/kr/",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "샬롯틸버리",
+        "category": "아이섀도우 팔레트",
+        "line": "럭셔리 아이섀도우 팔레트 · The Sophisticate",
+        "years": "2026-10-18 확인 시점",
+        "region": "영국·캐나다·한국 접근 실패"
+      },
+      "caution": "검색 요약에 있던 팔레트 구성·용량 정보는 판매처 자료라 쓰지 않는다. 공식 페이지가 열리는 경로에서 재확인 전에는 색 구성을 단정하지 않는다.",
+      "cautionSource": "charlottetilbury.com 페이지 접근 시도 실측 (2026-10-18)"
+    },
+    {
+      "id": "kissme-heroine-long-curl-mascara-ex-deep-black-unconfirmed",
+      "claim": "키스미(KISSME) 히로인메이크 롱앤컬 마스카라 EX #딥블랙은 일본 제조사 공식 사이트의 히로인메이크 마스카라 10종 목록에서 찾지 못했다. 가장 가까운 제품은 '롱＆カールマスカラ アドバンストフィルム'이며 'EX' 표기와 딥블랙 호수는 확인되지 않았다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "株式会社伊勢半(ISEHAN) 공식 사이트 히로인메이크 마스카라 목록 (isehan.co.jp/heroine/product/mascara/)",
+      "source_url": "https://www.isehan.co.jp/heroine/product/mascara/",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "키스미 KISSME",
+        "category": "마스카라",
+        "line": "히로인메이크 롱앤컬 마스카라 EX · 딥블랙",
+        "years": "2026-10-18 확인 시점",
+        "region": "일본 공식 사이트 (한국 판매 상품명 미확인)"
+      },
+      "caution": "한국 판매 상품명이 일본과 다를 수 있다. 쇼핑몰·리뷰의 가격·용량 정보는 출처로 쓰지 않는다. 호수 #딥블랙은 한국 공식 정보가 확인되기 전까지 단정하지 않는다.",
+      "cautionSource": "isehan.co.jp 히로인메이크 마스카라 목록 실측 (2026-10-18)"
+    },
+    {
+      "id": "isehan-kissme-brand-owner",
+      "claim": "키스미(KISSME) 브랜드 페이지는 제조사 株式会社伊勢半(주식회사 이세한, isehan.co.jp)이 운영한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "株式会社伊勢半 공식 사이트 KISSME 브랜드 페이지 (isehan.co.jp)",
+      "source_url": "https://www.isehan.co.jp/",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "키스미 KISSME",
+        "category": "회사·브랜드",
+        "line": "KISSME 브랜드 전체",
+        "years": "2026-10-18 확인 시점",
+        "region": "일본"
+      },
+      "caution": "운영사 표기 기준이다. 한국 유통사는 이번 조사에서 확인하지 못했다.",
+      "cautionSource": "isehan.co.jp KISSME 브랜드 페이지 실측 (2026-10-18)"
+    }
+  ]
+}

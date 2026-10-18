@@ -1,0 +1,317 @@
+{
+  "topic": "김나영 nofilterTV 「김나영이 요즘 매일같이 입고 쓰는 가을 패션템」 — 설명란 아이템 목록과 대표 제품 공식 확인",
+  "brand": "김나영 (영상 속 제품 다수 · 패션·뷰티 브랜드 혼재)",
+  "article": "예정",
+  "captured": "2026-10-18",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "kimnayoung-desc-list-tops-knit",
+      "claim": "영상 설명란 챕터 목록 중 상의·니트 계열은 00:42 벳우먼 브이넥니트, 03:05 렉토 니트, 03:25 더로우 니트티셔츠, 03:49 에레 니트, 04:19 벳우먼 니트, 05:30 리포스 티셔츠다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "김나영의 nofilterTV 유튜브 영상 설명란(챕터 목록) — 크리에이터 직접 기재",
+      "source_url": "https://www.youtube.com/watch?v=rhqotvt2Q10",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "김나영 nofilterTV",
+        "category": "상의·니트 (설명란 챕터 기재)",
+        "line": "2026 가을 패션템 영상",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "설명란 기재 항목이다. 영상 속에서 실제로 입은 제품과 1:1로 같은지는 자막·화면으로 따로 확인해야 한다.",
+      "cautionSource": "영상 설명란 챕터 목록 실측 (2026-10-18)"
+    },
+    {
+      "id": "kimnayoung-desc-list-outer-bottom",
+      "claim": "영상 설명란 챕터 목록 중 하의·아우터·원피스 계열은 02:03 더로우 화이트진, 06:03 보프 트렌치코트, 07:35 POETS&PUNKS 워크재킷, 08:29 리던 워크재킷, 09:01 노쓰페이스 바람막이, 10:04 포니테일 워크재킷, 13:44 보프 원피스다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "김나영의 nofilterTV 유튜브 영상 설명란(챕터 목록) — 크리에이터 직접 기재",
+      "source_url": "https://www.youtube.com/watch?v=rhqotvt2Q10",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "김나영 nofilterTV",
+        "category": "아우터·원피스 (설명란 챕터 기재)",
+        "line": "2026 가을 패션템 영상",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "설명란 표기가 노쓰페이스·POETS&PUNKS 등으로 되어 있어 공식 표기와 다를 수 있다. 모델명(품번)은 설명란에 없다. 02:03 더로우 화이트진은 자막에서 바지로 말해진다(2:36).",
+      "cautionSource": "영상 설명란 원문 및 자막 2:36 실측 (2026-10-18)"
+    },
+    {
+      "id": "kimnayoung-desc-list-bags-accessories-shoes",
+      "claim": "영상 설명란 챕터 목록 중 가방·신발·액세서리 계열은 01:30 리에스튜디오 목걸이, 02:43 구찌 로퍼, 04:43 코모리 헤어밴드, 06:42 샤넬 가방, 09:29 엘엘빈 가방, 10:22 아모멘토 플러스 양말, 11:15 스카프, 12:01 출처미상 반다나, 12:49 더로우 미니스카프, 13:11 델보 가방, 14:38 FOLDERSYS 파우치, 17:21 러브오브더부쉬 귀걸이, 17:45 피아제 식스티워치다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "김나영의 nofilterTV 유튜브 영상 설명란(챕터 목록) — 크리에이터 직접 기재",
+      "source_url": "https://www.youtube.com/watch?v=rhqotvt2Q10",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "김나영 nofilterTV",
+        "category": "가방·신발·액세서리 (설명란 챕터 기재)",
+        "line": "2026 가을 패션템 영상",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "설명란 원문 표기를 그대로 옮긴 것이다. '출처미상 반다나'는 크리에이터가 브랜드를 밝히지 않은 항목이라 제품명으로 쓰지 않는다. '샤넬 가방', '델보 가방'은 모델명이 없다.",
+      "cautionSource": "영상 설명란 원문 실측 (2026-10-18)"
+    },
+    {
+      "id": "kimnayoung-desc-list-beauty",
+      "claim": "영상 설명란 챕터 목록 중 뷰티·생활 계열은 14:53 ISAMAYA - POUT, 15:23 rhode - ribbon, 15:41 프라다(제품명 없음), 16:10 헤라 센슈얼 누드 글로스 - 플러티, 16:40 켈러 바디브러쉬다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "김나영의 nofilterTV 유튜브 영상 설명란(챕터 목록) — 크리에이터 직접 기재",
+      "source_url": "https://www.youtube.com/watch?v=rhqotvt2Q10",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "김나영 nofilterTV",
+        "category": "뷰티·생활 (설명란 챕터 기재)",
+        "line": "2026 가을 패션템 영상",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "'프라다'는 설명란에 제품명 없이 브랜드명만 있다. 자막 15:41 발화(\"프라다 이거 카카오 톡으로 샀어요\")는 블러셔를 가리키는 것으로 보이나 설명란 제품명은 없다. 설명란 '플러티'는 자막에서 '프로티'로 잘못 받아쓰인 것으로 보고 설명란 표기를 따른다.",
+      "cautionSource": "영상 설명란 원문 및 자막 15:41·16:10 실측 (2026-10-18)"
+    },
+    {
+      "id": "kimnayoung-sub-gucci-loafer-age",
+      "claim": "김나영은 영상 2:40~2:47 구간에서 구찌 로퍼를 '한 7, 8년 된 거 같다'며 클래식 아이템으로 소개했다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "김나영의 nofilterTV 유튜브 영상 자막(자동 생성) 2:40~2:47",
+      "source_url": "https://www.youtube.com/watch?v=rhqotvt2Q10",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "구찌",
+        "category": "로퍼 (발화 기준)",
+        "line": "출연자 발화 · 연식 자가 진술",
+        "years": "발화 시점 2026",
+        "region": "KR"
+      },
+      "caution": "자동 자막 기준이다. '굿찌로퍼'는 자막의 오인식으로 보고 '구찌 로퍼'로 정정했다(설명란 표기 근거). 연식은 출연자 발언이며 제품 생산 연도로 확인된 것이 아니다.",
+      "cautionSource": "영상 자막 2:40~2:47 및 설명란 '구찌 로퍼' 표기 실측 (2026-10-18)"
+    },
+    {
+      "id": "kimnayoung-sub-betwoman-knit-brand",
+      "claim": "김나영은 영상 0:40~0:42 구간에서 첫 번째 니트를 '벳우먼이라는 브랜드의 제품'이라고 소개했다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "김나영의 nofilterTV 유튜브 영상 자막(자동 생성) 0:40~0:42",
+      "source_url": "https://www.youtube.com/watch?v=rhqotvt2Q10",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "벳우먼",
+        "category": "브이넥 니트 (발화 기준)",
+        "line": "출연자 발화",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "자막의 '베드먼'은 설명란 '벳우먼 브이넥니트'를 근거로 '벳우먼'으로 정정했다(자동 자막 오인식으로 판단한 추정 정정). 벳우먼의 공식 제품 페이지는 이번 조사에서 확인하지 못했다.",
+      "cautionSource": "영상 자막 0:40~0:42 및 설명란 '벳우먼 브이넥니트' 표기 실측 (2026-10-18)"
+    },
+    {
+      "id": "kimnayoung-sub-bof-french-coat",
+      "claim": "김나영은 영상 6:02~6:13 구간에서 트렌치 계열 코트를 '고프라는 브랜드의 프렌치 코트'라고 소개했다.",
+      "tier": "논쟁",
+      "evidence": "실측",
+      "source": "김나영의 nofilterTV 유튜브 영상 자막(자동 생성) 6:02~6:13",
+      "source_url": "https://www.youtube.com/watch?v=rhqotvt2Q10",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "보프(추정)",
+        "category": "트렌치코트 (발화 기준)",
+        "line": "출연자 발화",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "자막 '고프'는 설명란 '보프 트렌치코트'와 맞추면 '보프'일 가능성이 높으나 자동 자막이라 확정하지 않았다. 보프 브랜드의 공식 사이트를 찾지 못했다.",
+      "cautionSource": "영상 자막 6:02~6:13 및 설명란 '보프 트렌치코트' 표기 실측 (2026-10-18)"
+    },
+    {
+      "id": "kimnayoung-sub-rhode-hailey-bieber",
+      "claim": "김나영은 영상 15:23~15:31 구간에서 블러셔 또는 립 제품을 두고 '헤일리 비버 브랜드인데 아이 잘하더라고요'라고 말했고, 설명란에는 이 항목이 'rhode - ribbon'으로 적혀 있다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "김나영의 nofilterTV 유튜브 영상 자막(자동 생성) 15:23~15:31 및 설명란",
+      "source_url": "https://www.youtube.com/watch?v=rhqotvt2Q10",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "rhode",
+        "category": "뷰티 (발화 기준)",
+        "line": "ribbon (설명란 표기)",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "자막은 제품 종류를 말하지 않는다. 설명란 'ribbon'이 립 제품인지 블러셔인지 확인되지 않았다. '아이'는 자동 자막 오인식으로 보이며 제품 설명으로 쓰지 않는다.",
+      "cautionSource": "영상 자막 15:23~15:31 및 설명란 'rhode - ribbon' 표기 실측 (2026-10-18)"
+    },
+    {
+      "id": "rhode-official-brand-hailey-bieber",
+      "claim": "rhode 공식 사이트 헤더에는 'rhode skin by hailey rhode bieber'가 표기되어 있어 헤일리 비버가 연관된 브랜드임이 공식 사이트에 명시되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "rhode 공식 웹사이트 (rhodeskin.com) 헤더 표기",
+      "source_url": "https://www.rhodeskin.com/",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "rhode",
+        "category": "스킨케어·메이크업 브랜드",
+        "line": "브랜드 전체",
+        "years": "2026-10-18 확인 시점",
+        "region": "글로벌(미국 사이트)"
+      },
+      "caution": "사이트 헤더의 브랜드 소개 문구 기준이다. 헤일리 비버의 지분·경영 관계까지 확인한 것은 아니다. 'ribbon' 제품의 존재와 호수는 이 사이트에서 확인하지 못했다.",
+      "cautionSource": "rhodeskin.com 헤더 실측 (2026-10-18)"
+    },
+    {
+      "id": "the-row-white-denim-official-list",
+      "claim": "더로우 공식 사이트의 여성 데님 컬렉션에는 흰색 진으로 Riaco Jean(White) 920달러, Eglitta Jean(White) 920달러, Burty Jean(White) 1,050달러가 표기되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "The Row 공식 사이트 여성 데님 컬렉션 (therow.com)",
+      "source_url": "https://www.therow.com/collections/women-denim-jeans-shirts",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "The Row (더로우)",
+        "category": "여성 데님 (흰색 진)",
+        "line": "2026 시즌 컬렉션 목록 기준",
+        "years": "2026-10-18 확인 시점",
+        "region": "미국 달러 표기 (글로벌 사이트)"
+      },
+      "caution": "영상 속 '더로우 화이트진'이 이 중 어느 모델인지는 특정하지 못했다. 가격은 달러 표기 공식 목록가이며 한국 판매가가 아니다. 품절 표기가 함께 있어 재고는 시점마다 다르다.",
+      "cautionSource": "therow.com 여성 데님 컬렉션 목록 실측 (2026-10-18). 달러 금액은 목록 표기 그대로이다."
+    },
+    {
+      "id": "the-row-white-jean-model-unidentified",
+      "claim": "영상 속 더로우 화이트진의 정확한 모델명은 설명란·자막 어디에도 적혀 있지 않아 특정하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "김나영 영상 설명란·자막 대조 및 The Row 여성 데님 컬렉션 대조",
+      "source_url": "https://www.therow.com/collections/women-denim-jeans-shirts",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "The Row (더로우)",
+        "category": "여성 데님 (화이트진)",
+        "line": "영상 속 제품",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "'더로우 화이트진'이라고만 쓰고 모델명(Riaco·Eglitta·Burty 등)을 단정하지 않는다. Ashton·Eddie·Ruth 모델은 이 컬렉션 목록에 보이지 않았다.",
+      "cautionSource": "therow.com 여성 데님 컬렉션 실측 및 영상 설명란 대조 (2026-10-18)"
+    },
+    {
+      "id": "hera-sensual-nude-line-2022-launch",
+      "claim": "아모레퍼시픽 공식 보도자료에 따르면 헤라 '센슈얼 누드 라인'은 2022년 12월 28일 발표됐고 밤 7색·글로스 4색으로 구성되며, 2023년 1월 1일부터 백화점 헤라 매장·아모레몰·헤라 공식 스마트스토어 등에서 판매됐다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "아모레퍼시픽 공식 뉴스 「헤라 센슈얼 누드 라인」 보도자료 (2022-12-28)",
+      "source_url": "https://www.apgroup.com/int/ko/news/2022-12-28-1.html",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "헤라 HERA",
+        "category": "립 제품 (센슈얼 누드 밤·글로스)",
+        "line": "센슈얼 누드 라인",
+        "years": "2022-12 발표 · 2023-01 판매 개시",
+        "region": "KR (글로벌몰 해외 배송 언급)"
+      },
+      "caution": "2022년 발표된 라인 기준이다. 영상 속 글로스가 이 라인의 같은 제품인지, 2026년 현재 판매 중인지는 확인하지 못했다. 가격은 보도자료에 없다.",
+      "cautionSource": "아모레퍼시픽 2022-12-28 보도자료 원문 실측 (2026-10-18)"
+    },
+    {
+      "id": "hera-plutty-shade-unconfirmed",
+      "claim": "헤라 센슈얼 누드 글로스의 '플러티' 호수명은 공식 보도자료와 헤라 공식 사이트 홈에서 확인하지 못했다. 보도자료에 언급된 호수는 밤의 '112호 본프리'뿐이다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "아모레퍼시픽 2022-12-28 보도자료 및 헤라 한국 공식 홈페이지(hera.com/kr) 실측",
+      "source_url": "https://www.hera.com/kr/ko/",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "헤라 HERA",
+        "category": "립 글로스",
+        "line": "센슈얼 누드 글로스",
+        "years": "2026-10-18 확인 시점",
+        "region": "KR"
+      },
+      "caution": "설명란 '플러티'는 크리에이터 표기다. 공식 호수명으로 단정하지 않는다. 헤라 제품 상세 페이지는 이번 조사에서 열리지 않았다(홈 페이지 제목만 확인).",
+      "cautionSource": "아모레퍼시픽 보도자료 및 hera.com/kr 홈 실측 (2026-10-18)"
+    },
+    {
+      "id": "gucci-horsebit-loafer-unconfirmed",
+      "claim": "구찌 공식 사이트에서 영상 속 구찌 로퍼(홀스빗 로퍼 계열)의 모델명·정가를 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "gucci.com 한국 여성 로퍼 페이지 접근 시도(도구 차단) 및 검색(공식 페이지 미노출)",
+      "source_url": "https://www.gucci.com/kr/ko/ca/women/shoes-for-women/loafers-for-women",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "구찌",
+        "category": "로퍼",
+        "line": "홀스빗 계열(추정)",
+        "years": "2026-10-18 확인 시점",
+        "region": "KR"
+      },
+      "caution": "'구찌 로퍼'는 설명란 표기 그대로 쓰고 모델명을 단정하지 않는다. 자막의 '7, 8년 된 것'은 출연자 발언이며 구매 연도 기준이 아니다. 중고·리셀 시세는 출처로 쓰지 않는다.",
+      "cautionSource": "구찌 공식 사이트 접근 시도 실측 및 검색 결과 (2026-10-18)"
+    },
+    {
+      "id": "boff-brand-official-unconfirmed",
+      "claim": "설명란 '보프 트렌치코트'·'보프 원피스'의 보프(BOF) 브랜드 공식 사이트를 검색으로 찾지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "웹 검색 4회 시도 (보프·BOF 트렌치 공식 사이트 키워드) — 결과는 해외 쇼핑몰·일반 트렌치 목록",
+      "source_url": "https://www.youtube.com/watch?v=rhqotvt2Q10",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "보프(BOF)",
+        "category": "트렌치코트·원피스",
+        "line": "설명란 표기 기준",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "브랜드 실체·공식 몰을 확인하지 못했다. 정식 영문명이 확인되면 재조사한다. 판매처 목록은 출처로 쓰지 않는다.",
+      "cautionSource": "웹 검색 결과 실측 (2026-10-18)"
+    },
+    {
+      "id": "betwoman-brand-official-unconfirmed",
+      "claim": "설명란 '벳우먼 브이넥니트'·'벳우먼 니트'의 벳우먼 브랜드 공식 사이트 및 제품 페이지를 찾지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "웹 검색 1회 시도 (벳우먼 브이넥 니트 공식) — 결과는 쇼핑몰·매거진 기사",
+      "source_url": "https://www.youtube.com/watch?v=rhqotvt2Q10",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "벳우먼",
+        "category": "니트",
+        "line": "브이넥니트",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "제품 정가·소재를 확인하지 못했다. 쇼핑몰 가격은 출처로 쓰지 않는다.",
+      "cautionSource": "웹 검색 결과 실측 (2026-10-18)"
+    },
+    {
+      "id": "northface-windbreaker-model-unidentified",
+      "claim": "설명란 '노쓰페이스 바람막이'는 모델명이 없어 특정하지 못했고, 노스페이스 코리아 공식 사이트도 접속하지 못했다(도메인 조회 실패).",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "설명란 원문 대조 및 thenorthface.co.kr 접속 시도(도메인 조회 실패)",
+      "source_url": "https://www.youtube.com/watch?v=rhqotvt2Q10",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "THE NORTH FACE",
+        "category": "바람막이",
+        "line": "모델 미특정",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "'바람막이'라고만 쓴다. 특정 모델을 추측하지 않는다. 리셀 시세는 출처로 쓰지 않는다.",
+      "cautionSource": "설명란 원문 및 접속 시도 실측 (2026-10-18)"
+    }
+  ]
+}

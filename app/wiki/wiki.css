@@ -19,6 +19,9 @@
 .wk-table th, .wk-table td { border-bottom: 1px solid #e6e0d6; padding: 10px 12px; text-align: left; vertical-align: top; line-height: 1.6; }
 .wk-table th { background: #f4f0e9; font-weight: 700; color: #16140f; white-space: nowrap; }
 .wk-tablewrap { overflow-x: auto; }
+/* 표 칸은 어절 단위 줄바꿈만 — 시각(1:48)·호수(#608)·숫자가 중간에서 끊기지 않게. 첫 칸(시각·단계)은 한 줄 */
+.wk-table th, .wk-table td { overflow-wrap: normal; word-break: keep-all; }
+.wk-table td:first-child { white-space: nowrap; }
 .wk-note { margin-top: 18px; border-left: 3px solid #ff5a3c; background: #fff6f3; padding: 14px 18px; border-radius: 0 10px 10px 0; font-size: 15.5px; line-height: 1.75; color: #2c2a24; }
 
 .wk-summary { margin-top: 26px; border: 1px solid rgba(22,20,15,0.14); border-radius: 14px; padding: 18px 22px; background: #faf8f5; }

@@ -1,0 +1,209 @@
+{
+  "topic": "이시영 땀티 「왜 이렇게 예뻐?? 마무트 2026 FW 신상 싹 입어봤습니다」 — LUFTIG 경량 패딩과 2026 FW 팝업스토어 확인",
+  "brand": "마무트 MAMMUT",
+  "article": "예정",
+  "captured": "2026-10-18",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "mammut-video-desc-luftig-and-popup",
+      "claim": "이시영 땀티 영상 설명란에는 'LUFTIG 3.0 경량 패딩'이 이번 시즌 메인 아이템으로 적혀 있고, 'MAMMUT 2026 FW POP-UP STORE, 롯데월드몰 B1, 9/10~10/21'이 함께 적혀 있다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "이시영의 땀티 LeesiyoungTV 유튜브 영상 설명란 원문 — 크리에이터 직접 기재",
+      "source_url": "https://www.youtube.com/watch?v=-i01MHJNCZM",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "마무트 MAMMUT",
+        "category": "경량 패딩 (LUFTIG)",
+        "line": "2026 FW 신상",
+        "years": "2026",
+        "region": "KR (서울 롯데월드몰 B1 팝업)"
+      },
+      "caution": "'3.0'은 설명란 표기다. 제품 공식 명칭에 3.0이 붙는지는 확인하지 못했다(언론·공식 확인 실패, 별도 팩트 참조). 팝업 기간은 설명란 표기이며 연장·조기 종료 여부는 확인하지 못했다.",
+      "cautionSource": "영상 설명란 원문 실측 (2026-10-18)"
+    },
+    {
+      "id": "mammut-video-desc-no-paid-ad",
+      "claim": "이시영 땀티 영상 설명란에는 광고·협찬·유료광고 표기가 없다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "이시영의 땀티 LeesiyoungTV 유튜브 영상 설명란 원문",
+      "source_url": "https://www.youtube.com/watch?v=-i01MHJNCZM",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "마무트 MAMMUT",
+        "category": "유료광고·협찬 표기",
+        "line": "영상 단위",
+        "years": "2026-10-18 확인 시점",
+        "region": "KR"
+      },
+      "caution": "설명란 표기 기준이다. 영상 음성·화면 안의 협찬 고지는 별도로 확인하지 못했다. 표기가 없다는 사실만 적고 협찬 여부를 단정하지 않는다.",
+      "cautionSource": "영상 설명란 원문 실측 (2026-10-18)"
+    },
+    {
+      "id": "mammut-luftig-2026-down-construction-press",
+      "claim": "2026년 9월 보도에 따르면 마무트 루프틱(LUFTIG) 계열은 발수 가공한 90:10 구스다운 충전재 'DRY DOWN'과 10데니어 립스탑 원단을 쓰고, 다운 쏠림을 줄이는 스티치스루 구조와 자체 포켓에 접어 넣는 패커블 기능을 갖춘다고 소개됐다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "이데일리 기사(isplus 게재) 「마무트 2026 FW 경량 다운 라인업」, 2026-09-21",
+      "source_url": "https://isplus.com/article/view/isp202609210059",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "마무트 MAMMUT",
+        "category": "경량 구스다운 재킷 (LUFTIG)",
+        "line": "2026 FW 루프틱 라인",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "언론 기사 기준이다. 마무트 공식 제품 페이지로는 확인하지 못했다. 충전량(g)·필파워·무게는 기사에 없다.",
+      "cautionSource": "isplus 2026-09-21 기사 원문 실측 (2026-10-18)"
+    },
+    {
+      "id": "mammut-luftig-2025-series-continuity-press",
+      "claim": "2025년 10월 보도에 따르면 '루프틱 다운' 시리즈는 RDS 인증 구스다운 90:10 충전재와 10데니어 립스탑 나일론 원단을 쓰며, 전년 호응 이후 신규 컬러와 베스트(VEST) 형태로 라인이 확장됐다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "스마트투데이 기사 「마무트, 루프틱 다운 자켓 라인업과 함께 가을 컬렉션 선봬」, 2025-10-21 (사진 제공: 마무트)",
+      "source_url": "https://www.smarttoday.co.kr/ko-kr/articles/94051",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "마무트 MAMMUT",
+        "category": "경량 구스다운 재킷 (루프틱 다운)",
+        "line": "2025 FW 루프틱 다운 시리즈",
+        "years": "2025",
+        "region": "KR"
+      },
+      "caution": "2025년 기사에는 'LUFTIG 3.0'이라는 명칭이 없다('루프틱 다운'으로만 표기). 2026 제품과 같은 제품인지 기사만으로 단정하지 않는다. 사진 제공이 브랜드라 보도 내용이 브랜드 메시지와 가까울 수 있다.",
+      "cautionSource": "스마트투데이 2025-10-21 기사 원문 실측 (2026-10-18)"
+    },
+    {
+      "id": "mammut-2026-fw-lineup-luftig-aerolight-gradient",
+      "claim": "마무트 2026 FW 팝업스토어는 'ABSOLUTE LIGHT' 콘셉트로 롯데월드몰 B1에서 9월 10일부터 10월 21일까지 열리며, 루프틱·에어로라이트·그레이디언트 등 경량 다운 제품을 선보인다고 보도됐다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "이데일리 기사(isplus 게재) 「마무트 2026 FW 경량 다운 라인업」, 2026-09-21",
+      "source_url": "https://isplus.com/article/view/isp202609210059",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "마무트 MAMMUT",
+        "category": "팝업스토어·경량 다운 라인업",
+        "line": "2026 FW",
+        "years": "2026-09-10 ~ 2026-10-21",
+        "region": "KR (서울 롯데월드몰 B1)"
+      },
+      "caution": "팝업 기간은 설명란과 기사가 일치한다. 콘셉트명은 기사 표기 그대로 쓴다. 팝업 운영 종료 후에는 현장 판매가 없을 수 있다.",
+      "cautionSource": "isplus 2026-09-21 기사 원문 실측 및 영상 설명란 대조 (2026-10-18)"
+    },
+    {
+      "id": "mammut-subtitle-light-padding-theme",
+      "claim": "이시영은 영상 9:00~9:03 구간에서 이번 방문의 주제가 경량 패딩이라고 밝혔고, 마무트 디자인이 등산복치고 세련됐다고 평가했다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "이시영의 땀티 LeesiyoungTV 유튜브 영상 자막(자동 생성) 9:00~9:28",
+      "source_url": "https://www.youtube.com/watch?v=-i01MHJNCZM",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "마무트 MAMMUT",
+        "category": "경량 패딩 (발화 기준)",
+        "line": "2026 FW 신상",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "출연자 개인 평가다. 디자인·기능의 객관적 성능으로 쓰지 않는다. 자막 '마무뜻스러웠고'는 자동 자막 오인식으로 보고 인용하지 않는다.",
+      "cautionSource": "영상 자막 9:00~9:28 실측 (2026-10-18)"
+    },
+    {
+      "id": "mammut-luftig-3-0-name-unconfirmed",
+      "claim": "'LUFTIG 3.0'이라는 제품명은 이번 조사에서 확인한 언론 2건(2025·2026)과 설명란 외에 어디에서도 찾지 못했다. 언론은 '루프틱(LUFTIG)'으로만 표기했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "이데일리(isplus) 2026-09-21 기사 및 스마트투데이 2025-10-21 기사 대조, 마무트 공식 사이트 접근 실패",
+      "source_url": "https://isplus.com/article/view/isp202609210059",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "마무트 MAMMUT",
+        "category": "경량 패딩",
+        "line": "LUFTIG 3.0",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "설명란 표기 'LUFTIG 3.0'은 크리에이터 표기다. 본문에 쓸 때는 '루프틱(LUFTIG)'으로 쓰고 3.0 표기는 설명란 기준으로만 밝힌다.",
+      "cautionSource": "언론 2건 및 설명란 원문 대조 실측 (2026-10-18)"
+    },
+    {
+      "id": "mammut-official-kr-site-unreachable",
+      "claim": "마무트 공식 한국 사이트에서 LUFTIG 제품 페이지를 확인하지 못했다. 한국 도메인(mammut.co.kr·kr.mammut.com)은 조회되지 않았고, 글로벌 사이트의 한국 경로(mammut.com/kr/ko)는 404였다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "마무트 공식 사이트 접근 시도 (mammut.com/kr/ko 404, mammut.com/kr 국가 선택 페이지만 확인, 한국 도메인 조회 실패)",
+      "source_url": "https://www.mammut.com/kr/",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "마무트 MAMMUT",
+        "category": "경량 패딩 (LUFTIG)",
+        "line": "2026 FW",
+        "years": "2026-10-18 확인 시점",
+        "region": "KR"
+      },
+      "caution": "공식 페이지 확인 실패 상태다. 충전량·무게·가격은 공식 확인 전까지 쓰지 않는다. 언론 기사 내용은 '후기' 성격으로 밝힌다.",
+      "cautionSource": "마무트 사이트 접근 시도 실측 (2026-10-18)"
+    },
+    {
+      "id": "mammut-luftig-fill-weight-power-unconfirmed",
+      "claim": "LUFTIG 3.0의 충전량(g)·필파워·중량은 이번 조사에서 확인하지 못했다. 언론 기사 2건 모두 필파워와 충전량을 제시하지 않았다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "이데일리(isplus) 2026-09-21 기사 및 스마트투데이 2025-10-21 기사 원문 대조",
+      "source_url": "https://isplus.com/article/view/isp202609210059",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "마무트 MAMMUT",
+        "category": "경량 구스다운 재킷",
+        "line": "LUFTIG 3.0",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "사이즈별로 충전량이 다를 수 있다. 마무트 다른 다운 제품의 충전량 수치는 이 제품의 수치로 옮기지 않는다. 판매처 상세 스펙도 출처로 쓰지 않는다.",
+      "cautionSource": "언론 2건 원문 대조 실측 (2026-10-18)"
+    },
+    {
+      "id": "mammut-subtitle-store-discount-claim-unverified",
+      "claim": "이시영은 영상 7:10~7:31 구간에서 매장 할인을 언급하며 '30% 할인'과 '초반 10%까지 가능'이라고 말했으나, 이번 조사에서 이 할인 조건을 공식 채널로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "이시영의 땀티 LeesiyoungTV 유튜브 영상 자막(자동 생성) 7:10~7:31 발화",
+      "source_url": "https://www.youtube.com/watch?v=-i01MHJNCZM",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "마무트 MAMMUT",
+        "category": "팝업 매장 할인",
+        "line": "2026 FW 팝업",
+        "years": "2026 영상 촬영 시점",
+        "region": "KR (롯데월드몰 팝업)"
+      },
+      "caution": "할인율은 촬영 시점의 현장 발언이다. 기간·대상 상품·중복 적용 여부를 확인하지 못했으므로 독자에게 현재 할인가처럼 쓰지 않는다. 팝업 방문 전 현장 확인을 안내한다.",
+      "cautionSource": "영상 자막 7:10~7:31 발화 실측 (2026-10-18)"
+    },
+    {
+      "id": "mammut-official-price-unconfirmed",
+      "claim": "LUFTIG 제품의 공식 정가는 이번 조사에서 확인하지 못했다. 리셀 플랫폼의 발매가 표기는 출처로 쓰지 않는다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "마무트 공식 사이트 접근 실패 및 웹 검색 3회 결과(리셀·쇼핑몰 중심)",
+      "source_url": "https://www.mammut.com/kr/",
+      "checked": "2026-10-18",
+      "scope": {
+        "brand": "마무트 MAMMUT",
+        "category": "경량 패딩 (LUFTIG)",
+        "line": "2026 FW",
+        "years": "2026-10-18 확인 시점",
+        "region": "KR"
+      },
+      "caution": "가격은 쓰지 않는다. 할인 발언은 현장 기준이며 정가와 혼동하지 않는다.",
+      "cautionSource": "마무트 사이트 접근 시도 및 검색 결과 실측 (2026-10-18)"
+    }
+  ]
+}

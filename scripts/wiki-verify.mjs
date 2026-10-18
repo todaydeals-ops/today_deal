@@ -102,7 +102,9 @@ for (const file of files) {
     const yt = e.video && (u.includes(`v=${e.video.id}`) || u.includes(`youtu.be/${e.video.id}`));
     need(yt || known.has(u), `출처가 리서치 저장소에 없음: ${s.url}`);
     // 파는 곳은 출처가 아니다(magazine-srcaudit 와 같은 목록)
-    const deny = DENY.find((d) => d.re.test(u));
+    let deny = DENY.find((d) => d.re.test(u));
+    // 세일 달력은 주최사(쇼핑몰) 뉴스룸·보도자료가 일정의 1차 근거다 — 상품 페이지가 아니라 발표문이면 허용
+    if (deny && e.type === "sale" && deny.why === "쇼핑몰" && /news|press|newsroom|\/ir\b|media/i.test(u)) deny = undefined;
     need(!deny, `배제 대상 출처(${deny?.why}): ${s.url}`);
     // 사이트 첫 화면은 근거가 아니다 — 개별 문서 링크여야 한다
     try {
