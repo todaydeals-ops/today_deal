@@ -1,0 +1,47 @@
+{
+  "topic": "대성쎌틱 보일러 에러코드 공식 확인 시도와 고객센터 경계(공통 가스 안전 팩트는 재사용)",
+  "brand": "대성쎌틱",
+  "article": "예정",
+  "captured": "2026-10-20",
+  "reused_facts": [
+    "kgs-gas-smell-shutoff-ventilate",
+    "kgs-gas-smell-no-electric",
+    "kgs-gas-smell-report-contact",
+    "kgs-boiler-abnormal-stop-expert",
+    "kgs-boiler-room-ventilation-exhaust-check",
+    "kgs-carbon-monoxide-response-not-found"
+  ],
+  "declined_facts": [
+    { "id": "search-daesung-blog-1588-8577", "why": "1588-8577은 블로그 게시물에서만 확인됐고 대성 공식 페이지에는 없어 제외. 공식 번호로 쓰지 않는다" },
+    { "id": "search-daesung-blog-a6-ignition", "why": "개인 블로그의 A6 점화 불량 사례와 '전원 안 들어옴' 자가 해결 후기는 후기 자료이고 코드 표가 아니므로 제외" },
+    { "id": "search-daesung-multi-brand-codelist", "why": "린나이·귀뚜라미·경동나비엔·대성쎌틱·롯데를 묶은 블로그 정리(jab-guyver 계열)는 수리 판매 주체 자료라 source-deny 기준으로 제외" },
+    { "id": "search-daesung-11st-product", "why": "11번가 상품 페이지는 쇼핑몰이라 source-deny 대상" }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "daesung-errorcode-list-not-found",
+      "claim": "대성쎌틱 보일러의 에러코드(A6 등) 공식 목록과 조치 방법은 확인하지 못했다. 대성 그룹 공식 페이지(대성쎌틱에너시스 소개)에는 에러코드표·사용설명서 다운로드·고객센터 번호가 없었다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "대성 공식 홈페이지 — GREEN ENERGY > 대성쎌틱에너시스(코드표 부재 확인)",
+      "source_url": "https://www.daesung.co.kr/Business/GreenEnergy/DS-Celtic-Energy",
+      "checked": "2026-10-20",
+      "scope": { "brand": "대성쎌틱", "category": "가스보일러", "line": "전 라인(미확인)", "years": "미확인", "region": "KR" },
+      "caution": "확인실패 항목이다. 에러코드 뜻·조치를 글에 쓰지 않는다. 독자에게는 보일러 모델명을 확인해 대성 고객지원 또는 대성 공식 자료실에서 사용설명서를 찾도록 안내하고, 가스 냄새가 나면 공통 안전 팩트(reused_facts)에 따른다.",
+      "cautionSource": "대성 공식 DS-Celtic-Energy 페이지 원문 및 검색 3회 결과 대조(2026-10-20)"
+    },
+    {
+      "id": "daesung-customer-phone-not-found",
+      "claim": "대성쎌틱 고객센터 전화번호는 공식 페이지에서 확인하지 못했다. 1588-8577은 블로그 글에서만 확인되었다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "대성 공식 홈페이지 — GREEN ENERGY > 대성쎌틱에너시스(연락처 부재 확인)",
+      "source_url": "https://www.daesung.co.kr/Business/GreenEnergy/DS-Celtic-Energy",
+      "checked": "2026-10-20",
+      "scope": { "brand": "대성쎌틱", "category": "가스보일러", "line": "전 라인(미확인)", "years": "미확인", "region": "KR" },
+      "caution": "전화번호를 글에 쓰지 않는다. 공식 번호가 확보될 때까지 독자에게는 '대성 공식 홈페이지 고객지원 메뉴에서 번호를 확인하라'고 안내한다.",
+      "cautionSource": "대성 공식 DS-Celtic-Energy 페이지 원문 확인(2026-10-20). 1588-8577 블로그 출처 기록"
+    }
+  ]
+}

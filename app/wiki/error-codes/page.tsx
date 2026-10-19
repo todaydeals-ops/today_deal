@@ -69,7 +69,18 @@ export default async function ErrorCodesPage() {
   }
   // 생활백과 에러코드 항목(AS 글이 없는 조합)도 같은 표에 싣는다
   for (const e of entriesByType("error-code")) {
-    rows.push({ group: "대형가전", brand: e.title.split(" ")[0], product: e.title.replace(/^\S+\s/, "").replace(/에러코드/, "").trim(), codes: (e.aliases.join(" ").match(CODE_RE) ?? []).slice(0, 6), title: e.seoTitle, href: wikiUrl(e.slug) });
+    // 코드는 항목의 코드 표 첫 칸에서 — "1·5·13" 같은 한 자리 코드는 정규식으로 못 잡는다
+    const table = e.sections.flatMap((s) => s.blocks).find((b): b is { table: { head: string[]; rows: string[][] } } => "table" in b && /코드/.test(b.table.head[0] ?? ""));
+    const codes = (table?.table.rows ?? []).map((r) => r[0].replace(/\*\*/g, "").replace(/^오류\s*/, "").trim()).filter((c) => c && c.length <= 12);
+    const art = e.related?.articles?.[0];
+    rows.push({
+      group: (art && groupOf.get(art)) || "기타",
+      brand: e.title.split(" ")[0],
+      product: e.title.replace(/^\S+\s/, "").replace(/\s*에러코드\s*/, "").trim(),
+      codes: codes.slice(0, 6),
+      title: e.seoTitle,
+      href: wikiUrl(e.slug),
+    });
   }
   rows.sort((x, y) => x.brand.localeCompare(y.brand, "ko") || x.product.localeCompare(y.product, "ko"));
 
