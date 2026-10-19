@@ -2,6 +2,8 @@
 // 로컬 Windows 작업 스케줄러(run-magazine-release.cmd)가 PC 상태에 따라 멈추는 문제를 없애려고
 // Vercel Cron으로 옮긴 것. 게이트 로직은 scripts/magazine-release.mjs와 동일 기준.
 import { getSupabaseAdmin } from "@/lib/supabase/server";
+import { pingIndexNow } from "@/lib/indexnow";
+import { canonicalArticleUrl } from "@/lib/magazine/owner";
 import { SUB_MEDIA_FIELDS, SUB_MEDIA_CORNERS } from "@/lib/data/magazine";
 
 export const dynamic = "force-dynamic";
@@ -128,6 +130,10 @@ export async function GET(request: Request): Promise<Response> {
   }
   const sleepReleased = subReleased; // 응답 하위호환
 
+  // 오늘 공개한 글을 네이버·빙에 IndexNow 로 알린다(lib/indexnow.ts). 실패해도 발행 결과는 그대로.
+  const newUrls = [...released, ...subReleased].map((t) => canonicalArticleUrl(t.replace(/^\[[^\]]*\]\s*/, "")));
+  const indexnow = newUrls.length ? await pingIndexNow(newUrls) : {};
+
   const remaining = drafts.length - released.length;
   return Response.json({
     ok: true,
@@ -140,5 +146,6 @@ export async function GET(request: Request): Promise<Response> {
     blocked: blocked.length,
     blockedDetail: blocked.slice(0, 5),
     remainingDrafts: remaining,
+    indexnow,
   });
 }
