@@ -3,6 +3,7 @@ import { LAB_HOME, labHref, type SubKey } from "@/lib/magazine/subdomain";
 import { b4asCategoryOf } from "@/lib/magazine/b4asCategories";
 import { canonicalArticleUrl } from "@/lib/magazine/owner";
 import Link from "next/link";
+import { WikiBacklinks } from "@/components/WikiLinks";
 import { notFound } from "next/navigation";
 import { fetchMagazineBySlug, fetchRelatedMagazine } from "@/lib/data/magazine";
 import { cornerOf } from "@/lib/magazine/corners";
@@ -225,6 +226,9 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
             </ul>
           </section>
         )}
+
+        {/* ── 생활백과 역링크 — 이 글을 근거로 쓴 항목으로(components/WikiLinks.tsx) ── */}
+        <WikiBacklinks slug={a.slug} />
 
         {/* ── 본문 그리드: 메인 + 레일 ── */}
         <div className="art-grid" style={{ display: "grid", gridTemplateColumns: "1fr 320px", gap: 64, padding: "40px 0 0", alignItems: "start" }}>

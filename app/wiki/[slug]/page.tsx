@@ -71,6 +71,10 @@ function ld(e: WikiEntry) {
       author: { "@type": "Organization", name: "오늘의딜 생활백과 편집팀" },
       publisher: { "@type": "Organization", name: "오늘의딜", url: "https://www.todaydeals.co.kr" },
       citation: e.sources.map((s) => s.url),
+      // GEO — 표제어와 다른 이름(애사비·강민경 탈취제 등)을 한 대상으로 묶고, 3줄 요약을 즉답 후보로 준다
+      about: { "@type": "Thing", name: e.title, alternateName: e.aliases },
+      abstract: e.summary.join(" "),
+      ...(e.people?.length ? { mentions: e.people.map((name) => ({ "@type": "Person", name })) } : {}),
     },
     {
       "@type": "BreadcrumbList",
@@ -96,6 +100,20 @@ function ld(e: WikiEntry) {
       thumbnailUrl: `https://i.ytimg.com/vi/${e.video.id}/hqdefault.jpg`,
       embedUrl: `https://www.youtube-nocookie.com/embed/${e.video.id}`,
       contentUrl: `https://www.youtube.com/watch?v=${e.video.id}`,
+    });
+  }
+  // 날짜가 확정된 세일만 SaleEvent 로 낸다. 미발표 행사에 날짜를 넣으면 검색엔진에 거짓 일정을 주는 것이다.
+  if (e.sale?.status === "확정" && e.sale.start && e.sale.end) {
+    graph.push({
+      "@type": "SaleEvent",
+      name: e.title,
+      description: e.description,
+      startDate: e.sale.start,
+      endDate: e.sale.end,
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
+      location: { "@type": "VirtualLocation", url: wikiUrl(e.slug) },
+      organizer: { "@type": "Organization", name: e.sale.organizer },
     });
   }
   return { "@context": "https://schema.org", "@graph": graph };

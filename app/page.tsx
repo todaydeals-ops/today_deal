@@ -6,6 +6,7 @@ import { verdictRank } from "@/components/PriceVerdict";
 import { BADGE_META, type Deal } from "@/lib/types";
 import { fetchMagazineList, fetchMagazineCount } from "@/lib/data/magazine";
 import { fetchReportList } from "@/lib/data/magazine-report";
+import { WikiStrip } from "@/components/WikiLinks";
 import { isCorner, cornerOf, CATCH } from "@/lib/magazine/corners";
 import { CornerIndex, NeutralBand, CornerDot, FieldPill, FeaturedImageSlot } from "@/components/magazine/Chrome";
 import Pagination from "@/components/magazine/Pagination";
@@ -128,6 +129,9 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ c
             </section>
 
             <CornerIndex />
+
+            {/* 2.0 생활백과 — 가장 자주 크롤되는 홈에서 항목으로 직접 잇는다(components/WikiLinks.tsx) */}
+            <WikiStrip />
 
             {reports.length > 0 && (
               <section className="mz-wrap" style={{ paddingTop: 52, paddingBottom: 40 }}>

@@ -41,7 +41,7 @@ export function MagazineMasthead() {
           {CORNERS.filter((c) => c.key !== "repair").map((c) => (
             <Link key={c.key} className="ul-sweep" href={`/magazine?corner=${c.key}`} style={{ textDecoration: "none", color: "#5b564d" }}>{c.name}</Link>
           ))}
-          <a className="ul-sweep" href={LAB_HOME.b4as} target="_blank" rel="noopener" style={{ textDecoration: "none", color: "#5b564d" }}>AS연구소 &#8599;</a>
+          <a className="ul-sweep" href={LAB_HOME.b4as} style={{ textDecoration: "none", color: "#5b564d" }}>AS연구소</a>
         </nav>
       </div>
     </header>
@@ -50,7 +50,7 @@ export function MagazineMasthead() {
 
 // 패밀리 미디어(오늘의딜 자신 제외) — 코너 인덱스 뒤에 아웃링크 칸으로 붙는다.
 const FAMILY = BRANDS.filter((b) => b.key !== "deal");
-const FAMILY_EN: Record<string, string> = { sleep: "SLEEP LAB", pill: "PILL LAB", beauty: "INGREDIENT LAB", b4as: "SELF CHECK" };
+const FAMILY_EN: Record<string, string> = { sleep: "SLEEP LAB", pill: "PILL LAB", beauty: "INGREDIENT LAB", b4as: "SELF CHECK", sponsor: "SPONSOR LAB" };
 
 /* 코너 인덱스 — 메인 코너 3 + 패밀리 아웃링크 4 = 7칸 */
 export function CornerIndex() {
@@ -69,16 +69,15 @@ export function CornerIndex() {
             <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>{CORNER_SHORT[c.key] ?? c.desc}</div>
           </Link>
         ))}
-        {/* 패밀리 미디어 — 별도 사이트로 나가는 아웃링크다. 새창으로 열고 시각적으로 구분한다. */}
+        {/* 연구소 5곳 — 2026-10-17 중앙 집중으로 같은 사이트(www/<경로>)다. 새 창·외부 화살표를 걷었다. 칸 색(is-external)은 구분용으로 유지. */}
         {FAMILY.map((b) => (
-          <a key={b.key} className="corner-cell is-external" href={b.url} target="_blank" rel="noopener">
+          <a key={b.key} className="corner-cell is-external" href={b.url}>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-              <span className="cc-out">다른 사이트</span>
+              <span className="cc-out">연구소</span>
               <span style={{ width: 9, height: 9, borderRadius: 9999, background: b.color }} />
             </div>
             <div className="cc-t" style={{ fontWeight: 800, fontSize: 16, marginTop: 14, display: "flex", alignItems: "center", gap: 5 }}>
               {b.name}
-              <span aria-hidden style={{ fontSize: 12, color: b.color }}>&#8599;</span>
             </div>
             <div className="cc-en" style={{ fontFamily: mono, fontSize: 9.5, letterSpacing: "1px", color: b.color, marginTop: 2 }}>{FAMILY_EN[b.key] ?? ""}</div>
             <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>{b.desc}</div>
