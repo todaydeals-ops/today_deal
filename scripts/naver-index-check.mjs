@@ -48,13 +48,17 @@ const ownDocs = (site.items || []).filter((x) => OURS.test(x.link));
 console.log(`[사이트] 네이버 웹문서 total=${site.total} · 그중 우리 문서 ${ownDocs.length}건(상위 30 기준)`);
 
 // 2) 제목 앞머리 순위 — 쉼표·물음표·대시·콜론·가운뎃점 앞이 그 글의 검색어
+// ★10-20 부터 검색결과 제목(<title>)이 화면 제목과 다르다(content/magazine-seo-titles.json). 검색엔진이 보는 건
+// <title> 이라 앞머리 검색은 그 제목으로 한다. 색인 여부(통째 검색)도 <title> 기준이 맞다.
+const SEO = JSON.parse(fs.readFileSync(`${import.meta.dirname}/../content/magazine-seo-titles.json`, "utf8")).titles;
+const titleOf = (x) => SEO[x.slug] || x.title;
 const head = (t) => t.split(/,|\s—\s|\s:\s|\s·\s|\?|!/)[0].replace(/[“”"']/g, "").trim();
 let top3 = 0, top10 = 0, top30 = 0;
 const hits = [];
 for (const x of rows) {
-  const d = await webkr(head(x.title));
+  const d = await webkr(head(titleOf(x)));
   const i = (d.items || []).findIndex((it) => OURS.test(it.link));
-  if (i >= 0) { top30++; if (i < 10) top10++; if (i < 3) top3++; hits.push(`${i + 1}위 ${head(x.title)}`); }
+  if (i >= 0) { top30++; if (i < 10) top10++; if (i < 3) top3++; hits.push(`${i + 1}위 ${head(titleOf(x))}`); }
 }
 console.log(`[앞머리] n=${rows.length} · 3위 안 ${top3} · 10위 안 ${top10} · 30위 안 ${top30} (${((top30 / rows.length) * 100).toFixed(1)}%)`);
 hits.slice(0, 30).forEach((h) => console.log("   " + h));
@@ -63,7 +67,7 @@ hits.slice(0, 30).forEach((h) => console.log("   " + h));
 const pick = [...rows].sort(() => Math.random() - 0.5).slice(0, SAMPLE);
 let found = 0;
 for (const x of pick) {
-  const d = await webkr(`"${x.title}"`);
+  const d = await webkr(`"${titleOf(x)}"`);
   if ((d.items || []).some((it) => OURS.test(it.link))) found++;
 }
 console.log(`[통째] 표본 ${pick.length} 중 노출 ${found}`);
