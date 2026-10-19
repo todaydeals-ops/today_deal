@@ -48,6 +48,7 @@ export default function WikiHome() {
               {ORDER.filter((t) => entriesByType(t).length).map((t) => (
                 <a key={t} href={`#${t}`}>{WIKI_TYPE_LABEL[t]}</a>
               ))}
+              <Link href="/wiki/error-codes">가전 에러코드 사전</Link>
               {people.length > 0 && <a href="#people">인물 색인</a>}
               <a href="#ganada">가나다</a>
             </div>

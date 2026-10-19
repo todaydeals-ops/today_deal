@@ -8,6 +8,7 @@
 import { fetchMagazineList } from "@/lib/data/magazine";
 import { canonicalArticleUrl } from "@/lib/magazine/owner";
 import { allEntries, wikiUrl } from "@/lib/wiki/load";
+import { seoTitleOf } from "@/lib/magazine/seoTitle";
 
 export const revalidate = 600;
 const SITE = "https://www.todaydeals.co.kr";
@@ -27,7 +28,7 @@ export async function GET(): Promise<Response> {
 
   // 생활백과 항목도 함께 싣는다 — 새 항목을 네이버가 빨리 알게. 발행·수정 시각 기준으로 섞는다.
   const feed = [
-    ...arts.map((a) => ({ link: canonicalArticleUrl(a.slug), title: a.title, desc: a.excerpt || a.subtitle || a.title, at: a.createdAt })),
+    ...arts.map((a) => ({ link: canonicalArticleUrl(a.slug), title: seoTitleOf(a.slug, a.title), desc: a.excerpt || a.subtitle || a.title, at: a.createdAt })),
     ...allEntries().map((e) => ({ link: wikiUrl(e.slug), title: e.seoTitle, desc: e.description, at: `${e.updated}T09:00:00+09:00` })),
   ]
     .sort((a, b) => new Date(b.at).getTime() - new Date(a.at).getTime())

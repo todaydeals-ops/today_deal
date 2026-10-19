@@ -4,6 +4,7 @@ import { b4asCategoryOf } from "@/lib/magazine/b4asCategories";
 import { canonicalArticleUrl } from "@/lib/magazine/owner";
 import Link from "next/link";
 import { WikiBacklinks } from "@/components/WikiLinks";
+import { seoTitleOf } from "@/lib/magazine/seoTitle";
 import { notFound } from "next/navigation";
 import { fetchMagazineBySlug, fetchRelatedMagazine } from "@/lib/data/magazine";
 import { cornerOf } from "@/lib/magazine/corners";
@@ -69,12 +70,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     : "사기 전에 보는 쇼핑 가이드";
   const desc = (a.excerpt || a.subtitle || `${a.title} — ${brand}의 ${blurb}.`).slice(0, 155);
   return {
-    title: `${a.title} | ${brand}`,
+    // 검색결과 제목은 검색어형(lib/magazine/seoTitle.ts), 화면 H1 은 DB title 그대로
+    title: `${seoTitleOf(slug, a.title)} | ${brand}`,
     description: desc,
     ...(a.tags?.length ? { keywords: a.tags } : {}),
     // canonical 은 주인 브랜드 호스트로 — 같은 글이 5개 호스트에서 열리던 중복을 정본 하나로 모은다.
     alternates: { canonical: canonicalArticleUrl(slug) },
-    openGraph: { title: a.title, description: desc, url: `${SITE}/magazine/${slug}`, type: "article", siteName: brand, images: [...(a.image?.url ? [{ url: a.image.url, alt: a.title }] : []), { url: `${SITE}/magazine/opengraph-image`, width: 1200, height: 630, alt: brand }] },
+    openGraph: { title: seoTitleOf(slug, a.title), description: desc, url: `${SITE}/magazine/${slug}`, type: "article", siteName: brand, images: [...(a.image?.url ? [{ url: a.image.url, alt: a.title }] : []), { url: `${SITE}/magazine/opengraph-image`, width: 1200, height: 630, alt: brand }] },
   };
 }
 
