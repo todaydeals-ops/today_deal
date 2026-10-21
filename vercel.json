@@ -2,14 +2,6 @@
   "regions": ["icn1"],
   "crons": [
     {
-      "path": "/api/cron/goldbox",
-      "schedule": "10 22 * * *"
-    },
-    {
-      "path": "/api/cron/board-ingest",
-      "schedule": "30 22 * * *"
-    },
-    {
       "path": "/api/cron/magazine-release",
       "schedule": "0 22 * * *"
     },

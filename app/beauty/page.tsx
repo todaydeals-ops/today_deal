@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { fetchMagazineList, fetchMagazineCountBy } from "@/lib/data/magazine";
 import { FeaturedImageSlot } from "@/components/magazine/Chrome";
-import BeautyHeader from "@/components/magazine/BeautyHeader";
+import Header from "@/components/Header";
 import BeautyCategoryIndex from "@/components/magazine/BeautyCategoryIndex";
 import Pagination from "@/components/magazine/Pagination";
-import BeautyFooter from "@/components/magazine/BeautyFooter";
+import MediaFooter from "@/components/MediaFooter";
 import { beautyCategoryByKey, beautyCategoryOf } from "@/lib/magazine/beautyCategories";
 import { beautyHref } from "@/lib/magazine/subdomain";
 import "../magazine/magazine.css";
@@ -23,13 +23,13 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   if (!cat) {
     return {
       alternates: { canonical: beautyHref() },
-      title: "성분연구소 — 임상으로 검증하는 뷰티 성분",
+      title: "뷰티 성분 가이드 — 이 성분, 내 피부에 맞을까 | 오늘의딜",
       description: "화제성이나 후기가 아니라 임상 근거로 성분을 따집니다. 보습·장벽, 미백·주름, 트러블·모공, 자외선·환경, 두피·모발, 다이어트·바디.",
     };
   }
   return {
     alternates: { canonical: beautyHref(cat.key) },
-    title: `${cat.label} | 성분연구소`,
+    title: `${cat.label} | 뷰티 성분 · 오늘의딜`,
     description: `${cat.angle}을(를) 중심으로, 임상 근거가 어디까지 확인됐는지 갈라 정리했습니다.`,
   };
 }
@@ -53,11 +53,11 @@ export default async function BeautyHome({ searchParams }: { searchParams: Promi
 
   return (
     <>
-      <BeautyHeader />
+      <Header />
 
       <div className="mz-page">
         <section className="mz-wrap mz-slogan" style={{ paddingTop: 46, paddingBottom: 34 }}>
-          <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: "3px", textTransform: "uppercase", color: "#9a9286" }}>{cat ? "성분연구소" : "Evidence-based Beauty Media"}</div>
+          <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: "3px", textTransform: "uppercase", color: "#9a9286" }}>{`오늘의딜 · 뷰티 성분`}</div>
           {cat ? (
             <>
               <h1 style={{ fontFamily: serif, fontWeight: 700, fontSize: "clamp(28px,4.4vw,44px)", lineHeight: 1.32, letterSpacing: "-1px", color: "#16140f", margin: "18px 0 0" }}>{cat.label}</h1>
@@ -95,10 +95,10 @@ export default async function BeautyHome({ searchParams }: { searchParams: Promi
                     {featured.excerpt && <p style={{ fontSize: 15.5, lineHeight: 1.85, color: "#46433d", margin: "18px 0 0", maxWidth: 520 }}>{featured.excerpt}</p>}
                     <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 24, flexWrap: "wrap" }}>
                       <span style={{ display: "inline-flex", alignItems: "center", gap: 8, fontWeight: 700, fontSize: 14, color: "#16140f", borderBottom: "2px solid #ff5a3c", paddingBottom: 3 }}>분석 읽기 <span style={{ fontFamily: mono }}>&rarr;</span></span>
-                      <span style={{ fontFamily: mono, fontSize: 12, color: "#9a9286" }}>성분연구소 · {fmtDate(featured.createdAt)}{featured.readMin ? ` · 읽기 ${featured.readMin}분` : ""}</span>
+                      <span style={{ fontFamily: mono, fontSize: 12, color: "#9a9286" }}>오늘의딜 · {fmtDate(featured.createdAt)}{featured.readMin ? ` · 읽기 ${featured.readMin}분` : ""}</span>
                     </div>
                   </div>
-                  <FeaturedImageSlot cornerKey={featured.corner} image={featured.image} title={featured.title} label={beautyCategoryOf(featured.slug)?.label ?? "성분"} brand="성분연구소" />
+                  <FeaturedImageSlot cornerKey={featured.corner} image={featured.image} title={featured.title} label={beautyCategoryOf(featured.slug)?.label ?? "성분"} brand="오늘의딜" />
                 </Link>
               </section>
             )}
@@ -131,7 +131,7 @@ export default async function BeautyHome({ searchParams }: { searchParams: Promi
         )}
       </div>
 
-      <BeautyFooter />
+      <MediaFooter />
     </>
   );
 }

@@ -1,7 +1,8 @@
 // OG 공유 카드(코드로 그림). 로고 가운데·크게 + 하단 태그라인. 플랫폼 나열 없음.
+// 2026-10-21 개편: 태그라인을 딜("매일매일 새로운 타임딜")에서 정보 채널 문구로 바꿨다.
 import { ImageResponse } from "next/og";
 
-export const alt = "오늘의딜 — 매일매일 새로운 타임딜을 한눈에";
+export const alt = "오늘의딜 — 사기 전에, 고치기 전에 찾아보는 생활 정보";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -54,7 +55,7 @@ export default async function Image() {
 
         {/* 하단 태그라인 */}
         <div style={{ position: "absolute", bottom: 70, fontSize: 46, color: "#8a8178" }}>
-          매일매일 새로운 타임딜을 한눈에
+          사기 전에, 고치기 전에 찾아보는 생활 정보
         </div>
       </div>
     ),

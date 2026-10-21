@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
 // fetchArchiveSlugs 제거 — /deal/[slug]는 noindex이므로 사이트맵 불포함
-import { fetchCuratedSlugs } from "@/lib/data/curated";
 import { fetchMagazineList } from "@/lib/data/magazine";
 import { fetchReportList } from "@/lib/data/magazine-report";
 import { canonicalArticleUrl } from "@/lib/magazine/owner";
@@ -21,12 +20,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
   const base: MetadataRoute.Sitemap = [
     { url: `${SITE}/`, lastModified: now, changeFrequency: "hourly", priority: 1 },
-    { url: `${SITE}/deals`, lastModified: now, changeFrequency: "hourly", priority: 0.9 },
-    { url: `${SITE}/deals/gmarket`, lastModified: now, changeFrequency: "hourly", priority: 0.9 },
-    { url: `${SITE}/deals/11st`, lastModified: now, changeFrequency: "hourly", priority: 0.9 },
-    { url: `${SITE}/deals/coupang`, lastModified: now, changeFrequency: "hourly", priority: 0.9 },
-    { url: `${SITE}/deals/ali`, lastModified: now, changeFrequency: "hourly", priority: 0.8 },
-    { url: `${SITE}/recommended`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
+    // ★2026-10-21 개편: 타임딜(/deals)·추천딜(/recommended)·핫딜글(/board)·나눔(/giveaway)은 폐지했다.
+    //   목록 주소는 홈으로 301, 상세 주소는 410(proxy.ts). 사이트맵에서도 뺐다.
     // ★게시판은 사이트맵에서 제외한다(2026-09-04 · 사장님 결정 A안).
     //
     // 서치콘솔 실측: 제출 2,078건 중 "발견됨 · 현재 색인이 생성되지 않음" 1,178건.
@@ -40,20 +35,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // 게시물의 숨은 태그 SEO 자산도 유지된다. 크롤 요청만 거둔 것이다.
     //
     // 되돌리려면 이 블록과 아래 boardPages 를 복원하면 된다.
-    { url: `${SITE}/giveaway`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE}/terms`, lastModified: now, changeFrequency: "monthly", priority: 0.3 },
     { url: `${SITE}/privacy`, lastModified: now, changeFrequency: "monthly", priority: 0.3 },
     { url: `${SITE}/partnership`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
   ];
 
-  // 추천딜 콘텐츠 페이지 (쇼츠 연결·영구) — 우선순위 높게
-  const curated = await fetchCuratedSlugs(2000);
-  const curatedPages: MetadataRoute.Sitemap = curated.map((s) => ({
-    url: `${SITE}/recommended/${s}`,
-    lastModified: now,
-    changeFrequency: "weekly",
-    priority: 0.7,
-  }));
 
 
   // 매거진 글. 실제 발행일을 lastmod 로.
@@ -79,5 +65,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }));
 
-  return [...base, ...reportPages, ...magazinePages, ...curatedPages];
+  return [...base, ...reportPages, ...magazinePages];
 }

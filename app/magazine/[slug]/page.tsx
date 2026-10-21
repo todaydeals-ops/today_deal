@@ -9,21 +9,11 @@ import { notFound } from "next/navigation";
 import { fetchMagazineBySlug, fetchRelatedMagazine } from "@/lib/data/magazine";
 import { cornerOf } from "@/lib/magazine/corners";
 import Header from "@/components/Header";
-import SleepHeader from "@/components/magazine/SleepHeader";
 import { sleepCategoryOf } from "@/lib/magazine/sleepCategories";
 import MediaFooter from "@/components/MediaFooter";
-import SleepFooter from "@/components/magazine/SleepFooter";
-import PillHeader from "@/components/magazine/PillHeader";
-import PillFooter from "@/components/magazine/PillFooter";
 import { pillCategoryOf } from "@/lib/magazine/pillCategories";
-import BeautyHeader from "@/components/magazine/BeautyHeader";
-import BeautyFooter from "@/components/magazine/BeautyFooter";
-import B4asHeader from "@/components/magazine/B4asHeader";
-import B4asFooter from "@/components/magazine/B4asFooter";
 import { beautyCategoryOf } from "@/lib/magazine/beautyCategories";
 import { sponsorCategoryOf } from "@/lib/magazine/sponsorCategories";
-import SponsorHeader from "@/components/magazine/SponsorHeader";
-import SponsorFooter from "@/components/magazine/SponsorFooter";
 import { FieldPill } from "@/components/magazine/Chrome";
 
 export const revalidate = 3600; // 1시간 캐시 — 매거진 아티클은 실시간 불필요
@@ -49,26 +39,18 @@ const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const a = await fetchMagazineBySlug(slug);
-  if (!a) return { title: "오늘의딜 매거진" };
-  // 서브 미디어 글은 자기 브랜드로 표기 — 잠자리연구소·알약연구소 글이 "오늘의딜 매거진"으로 나가지 않게.
-  // ★AS연구소는 field 가 아니라 corner 로 격리한다. 이 줄에서 corner 를 안 보는 바람에
-  //   AS연구소 178편이 검색결과에 "오늘의딜 매거진"으로 나가고 있었다(2026-09-04 발견).
-  //   브랜드 귀속이 사라지면 서브 미디어를 따로 키운 의미가 없다.
-  const brand =
-    a.field === "수면·침구" ? "잠자리연구소"
-    : a.field === "건강기능식품" ? "알약연구소"
-    : a.field === "뷰티·성분" ? "성분연구소"
-    : a.field === "방송·협찬" ? "협찬연구소"
-    : a.corner === "repair" ? "AS연구소"
-    : "오늘의딜 매거진";
-  const blurb =
-    brand === "잠자리연구소" ? "근거로 검증하는 수면 미디어"
-    : brand === "알약연구소" ? "임상으로 검증하는 영양 미디어"
-    : brand === "성분연구소" ? "임상으로 검증하는 뷰티 성분 미디어"
-    : brand === "AS연구소" ? "부르기 전 5분 셀프체크"
-    : brand === "협찬연구소" ? "방송 협찬을 기록하는 미디어"
-    : "사기 전에 보는 쇼핑 가이드";
-  const desc = (a.excerpt || a.subtitle || `${a.title} — ${brand}의 ${blurb}.`).slice(0, 155);
+  if (!a) return { title: "오늘의딜" };
+  // ★2026-10-21 개편: 연구소 5곳을 오늘의딜 분야로 흡수 — 검색결과·공유 표기는 전부 "오늘의딜" 하나다.
+  //   (예전엔 글마다 잠자리연구소·알약연구소·AS연구소 브랜드를 붙였다.) 분야 이름은 설명 대체문에만 쓴다.
+  const brand = "오늘의딜";
+  const section =
+    a.field === "수면·침구" ? "수면"
+    : a.field === "건강기능식품" ? "영양제"
+    : a.field === "뷰티·성분" ? "뷰티 성분"
+    : a.field === "방송·협찬" ? "방송 협찬"
+    : a.corner === "repair" ? "AS 셀프체크"
+    : "사기 전에 보는 가이드";
+  const desc = (a.excerpt || a.subtitle || `${a.title} — 오늘의딜 ${section}.`).slice(0, 155);
   return {
     // 검색결과 제목은 검색어형(lib/magazine/seoTitle.ts), 화면 H1 은 DB title 그대로
     title: `${seoTitleOf(slug, a.title)} | ${brand}`,
@@ -100,11 +82,12 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   const subKey: SubKey = isPill ? "pill" : isBeauty ? "beauty" : isB4as ? "b4as" : isSponsor ? "sponsor" : "sleep";
   const subHome = LAB_HOME[subKey];
   const subHomeAbs = subHome;
-  const subName = isPill ? "알약연구소" : isBeauty ? "성분연구소" : isB4as ? "AS연구소" : isSponsor ? "협찬연구소" : "잠자리연구소";
+  // 분야 이름(10-21 개편 — 옛 연구소 이름 대신). 화면 빵부스러기·구조화 데이터의 2단계로 쓴다.
+  const subName = isPill ? "영양제" : isBeauty ? "뷰티 성분" : isB4as ? "AS 셀프체크" : isSponsor ? "방송 협찬" : "수면";
   const accent = isSub ? (subCat?.color ?? (isB4as ? "#38539a" : "#3f5a54")) : c.color; // 강조색: 서브는 분류색, 그 외 코너색
-  // 구조화 데이터·표기용 브랜드 — 서브 미디어 글에 오늘의딜 코너명(팩트체크 등)이 새지 않게.
-  const brandName = isSub ? subName : "오늘의딜 매거진";
-  const brandUrl = isSub ? subHomeAbs : SITE;
+  // 구조화 데이터 발행처는 전부 오늘의딜(10-21 개편). 분야는 빵부스러기 2단계로 들어간다.
+  const brandName = "오늘의딜";
+  const brandUrl = SITE;
   const sectionName = isSub ? (subCat?.label ?? (isPill ? "영양" : isB4as ? "셀프체크" : "수면")) : c.name;
   const related = await fetchRelatedMagazine(a, 4);
 
@@ -161,11 +144,20 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   const breadcrumbLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: brandName, item: brandUrl },
-      { "@type": "ListItem", position: 2, name: sectionName, item: isSub ? `${brandUrl}/?cat=${subCat?.key ?? ""}` : `${SITE}/?corner=${a.corner}` },
-      { "@type": "ListItem", position: 3, name: a.title, item: `${SITE}/magazine/${slug}` },
-    ],
+    // 오늘의딜 › (분야 › 분류 | 코너) › 글 — 분야 글은 4단, 일반 매거진 글은 3단
+    itemListElement: (isSub
+      ? [
+          { name: brandName, item: brandUrl },
+          { name: subName, item: subHomeAbs },
+          ...(subCat ? [{ name: subCat.label, item: labHref(subKey, subCat.key) }] : []),
+          { name: a.title, item: `${SITE}/magazine/${slug}` },
+        ]
+      : [
+          { name: brandName, item: brandUrl },
+          { name: sectionName, item: `${SITE}/?corner=${a.corner}` },
+          { name: a.title, item: `${SITE}/magazine/${slug}` },
+        ]
+    ).map((x, i) => ({ "@type": "ListItem", position: i + 1, ...x })),
   };
 
   // FAQPage — AI 이해 목적(리치결과 아님). 화면의 FAQ 섹션과 값이 동일해야 함.
@@ -177,7 +169,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
 
   return (
     <>
-      {isSleep ? <SleepHeader /> : isPill ? <PillHeader /> : isBeauty ? <BeautyHeader /> : isB4as ? <B4asHeader /> : isSponsor ? <SponsorHeader /> : <Header />}
+      <Header />{/* 10-21 개편: 분야 글도 오늘의딜 헤더 하나 */}
       <div className="mz-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
@@ -361,7 +353,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
       </div>
 
       </div>
-      {isSleep ? <SleepFooter /> : isPill ? <PillFooter /> : isBeauty ? <BeautyFooter /> : isB4as ? <B4asFooter /> : isSponsor ? <SponsorFooter /> : <MediaFooter />}
+      <MediaFooter />
     </>
   );
 }

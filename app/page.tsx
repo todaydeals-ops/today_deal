@@ -1,9 +1,6 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import MediaFooter from "@/components/MediaFooter";
-import { fetchUnifiedDeals } from "@/lib/data/deals";
-import { verdictRank } from "@/components/PriceVerdict";
-import { BADGE_META, type Deal } from "@/lib/types";
 import { fetchMagazineList, fetchMagazineCount } from "@/lib/data/magazine";
 import { fetchReportList } from "@/lib/data/magazine-report";
 import { WikiStrip } from "@/components/WikiLinks";
@@ -12,12 +9,9 @@ import { CornerIndex, NeutralBand, CornerDot, FieldPill, FeaturedImageSlot } fro
 import Pagination from "@/components/magazine/Pagination";
 import "./magazine/magazine.css";
 
-// ★2026-09-15 긴급 수정 — "딜은 자주 바뀌니 항상 최신"이라는 전제가 실제와 달랐다.
-// 딜은 크론(vercel.json)으로 하루 1번만 갱신되는데(22:10 UTC), force-dynamic 은
-// 방문마다(크롤러 포함) DB를 캐시 없이 새로 읽었다. Supabase 무료 egress 5GB/월을
-// 넘겨 프로젝트가 402 로 통째로 막힌 사고의 핵심 원인 중 하나다.
-// 10분 캐시로도 "하루 1번 갱신" 대비 체감 신선도는 그대로고, 반복 방문·크롤러
-// 트래픽에서 DB 재조회를 극적으로 줄인다.
+// ★2026-10-21 개편(사장님 지시): 오늘의딜은 정보성 콘텐츠(매거진·생활백과) 채널이다.
+// 타임딜·추천딜·핫딜글은 폐지했고(라우트는 proxy.ts 가 410/301), 홈은 더 이상 딜을 읽지 않는다.
+// 연구소 5곳도 오늘의딜 안의 분야로 흡수했다 — 홈 목록에 모든 글이 섞여 나온다(lib/data/magazine.ts).
 export const revalidate = 600;
 
 const SITE = "https://www.todaydeals.co.kr";
@@ -26,57 +20,15 @@ const serif = "'Noto Serif KR', serif";
 const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
 const PER = 10;
 
-function buildItemListLd(deals: Deal[]) {
-  // Google 판매자 목록(merchant listing)은 image가 필수 항목이다.
-  // 이미지 없는 상품을 넣고 image만 생략하면 "'image' 입력란 누락" 경고가 나므로 아예 제외한다.
-  const withImage = deals.filter((d) => d.imageUrl);
-  return {
-    "@type": "ItemList",
-    name: "오늘의 타임딜",
-    description: "지마켓·쿠팡·11번가의 실시간 타임딜·골드박스를 한곳에 모았습니다. 매일 갱신.",
-    numberOfItems: withImage.length,
-    itemListElement: withImage.slice(0, 40).map((d, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      item: {
-        "@type": "Product",
-        name: d.productName,
-        ...(d.imageUrl ? { image: d.imageUrl } : {}),
-        ...(d.badge && BADGE_META[d.badge] ? { brand: { "@type": "Brand", name: BADGE_META[d.badge].label } } : {}),
-        offers: {
-          "@type": "Offer",
-          price: d.salePrice,
-          priceCurrency: "KRW",
-          availability: d.isSoldout ? "https://schema.org/OutOfStock" : "https://schema.org/InStock",
-          url: d.affiliateUrl ?? d.productUrl,
-          ...(d.dealEndAt ? { priceValidUntil: d.dealEndAt.slice(0, 10) } : {}),
-        },
-      },
-    })),
-  };
-}
-
-function pickScore(name: string, price: number, discount: number): number {
-  let s = 0;
-  if (/쌀|한우|삼겹|돼지고기|소고기|닭가슴|닭갈비|족발|곱창|생선|고등어|새우|오징어|장어|회\b|과일|사과|수박|복숭아|딸기|포도|멜론|체리|망고|토마토|옥수수|고구마|감자|채소|야채|나물|김치|반찬|만두|떡볶이|핫도그|피자|치킨|라면|국수|파스타|과자|쿠키|초콜릿|아이스크림|커피|음료|주스|생수|우유|두유|요거트|치즈|버터|햄|소시지|어묵|견과|간식|즉석밥|컵밥|시리얼|소스|양념|참기름|올리브유|꿀|잼|차류/.test(name)) s += 50;
-  if (/세제|샴푸|치약|칫솔|물티슈|화장지|휴지|키친타올|생리대|기저귀|섬유유연|주방세제|비누|바디워시|클렌징|선크림|마스크팩|로션|크림|틴트|쿠션|영양제|비타민|유산균|콜라겐|오메가|마그네슘|루테인|건강기능/.test(name)) s += 36;
-  if (/삼성|엘지|LG|애플|다이슨|필립스|나이키|아디다스|뉴발란스|퓨마|언더아머|크록스|CJ|농심|오뚜기|풀무원|동원|청정원|삼양|롯데|해태|빙그레|코카콜라|펩시|스타벅스|네스카페|맥심|켈로그|하림|비비고|종근당|GNC|일동|광동|유한|애경|아모레|메디힐|닥터지/.test(name)) s += 24;
-  if (/식탁|소파|쇼파|침대|매트리스|책상|옷장|장롱|서랍장|수납장|선반|행거|커튼|러그|조명|가구|냉장고|세탁기|건조기|에어컨|에어컨디셔너|티비|\bTV\b|모니터|의자|안마의자|러닝머신|골프|타이어/.test(name)) s -= 45;
-  if (price <= 20000) s += 20; else if (price <= 50000) s += 8; else if (price > 150000) s -= 20;
-  s += Math.min(discount || 0, 80) * 0.2;
-  return s;
-}
-
 export default async function Home({ searchParams }: { searchParams: Promise<{ corner?: string; page?: string }> }) {
   const sp = await searchParams;
   const corner = isCorner(sp.corner) ? sp.corner : undefined;
   const page = Math.max(1, Number(sp.page) || 1);
 
-  const [magList, total, reports, all] = await Promise.all([
+  const [magList, total, reports] = await Promise.all([
     fetchMagazineList({ corner, offset: (page - 1) * PER, limit: PER }),
     fetchMagazineCount(corner),
     corner ? Promise.resolve([]) : fetchReportList(6),
-    fetchUnifiedDeals(),
   ]);
   const totalPages = Math.max(1, Math.ceil(total / PER));
   const featured = page === 1 ? magList[0] : undefined;
@@ -84,22 +36,21 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ c
   const [hiPre, hiPost] = CATCH.media.tail.split(CATCH.media.hi);
   const c = corner ? cornerOf(corner) : null;
 
-  // 오늘의 딜 15개 (제휴완료 4플랫폼 → AI 픽 + 진단 정렬)
-  const pool = all.filter((d) => d.platform === "coupang" || d.platform === "gmarket" || d.platform === "11st" || d.platform === "ohou");
-  const picks: typeof pool = [];
-  for (const p of ["coupang", "gmarket", "11st", "ohou"] as const) {
-    const top = pool
-      .filter((d) => d.platform === p && !d.isSoldout && d.imageUrl)
-      .sort((a, b) => pickScore(b.productName, b.salePrice, b.discountRate) - pickScore(a.productName, a.salePrice, a.discountRate))[0];
-    if (top) { top.pick = true; picks.push(top); }
-  }
-  const pickIds = new Set(picks.map((d) => d.id));
-  const restDeals = pool.filter((d) => !pickIds.has(d.id)).sort((a, b) => verdictRank(a.priceCompare, a.salePrice) - verdictRank(b.priceCompare, b.salePrice));
-  const feed = [...picks, ...restDeals].slice(0, 15);
-
+  // 정보 채널 홈 — 최신 글 목록을 모음 페이지로 알린다(예전엔 타임딜 상품 ItemList 였다)
   const ld = {
     "@context": "https://schema.org",
-    "@graph": [buildItemListLd(feed)],
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        name: "오늘의딜 — 사기 전에, 고치기 전에 보는 정보",
+        url: SITE,
+        inLanguage: "ko-KR",
+        mainEntity: {
+          "@type": "ItemList",
+          itemListElement: magList.map((a, i) => ({ "@type": "ListItem", position: i + 1, url: `${SITE}/magazine/${a.slug}`, name: a.title })),
+        },
+      },
+    ],
   };
 
   const pageHref = (p: number) => {
@@ -241,7 +192,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ c
 }
 
 export const metadata = {
-  title: "오늘의딜 · 사기 전에 확인하는 쇼핑 가이드 매거진",
-  description: "미디어는 늘 ‘사야 할 이유’를 말합니다. 오늘의딜은 고려해야 할 기준과 숫자를 정리해 드립니다. 팩트체크·비교·구매가이드와 실시간 특가를 한곳에.",
+  title: "오늘의딜 · 사기 전에, 고치기 전에 찾아보는 생활 정보",
+  description: "고르는 법·비교·팩트체크부터 수면·영양제·뷰티 성분 근거, 고장 셀프체크, 세일 일정까지. 오늘의딜은 고려해야 할 기준과 숫자를 출처와 함께 정리해 드립니다.",
   alternates: { canonical: SITE },
 };

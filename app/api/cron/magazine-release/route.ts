@@ -106,11 +106,11 @@ export async function GET(request: Request): Promise<Response> {
   // 리저브는 created_at 오름차순(분류 인터리브 순서로 미리 세팅)이라 오래된 것부터 나간다.
   // field 또는 corner 하나로 대상을 고른다. AS연구소만 corner 기준이다.
   const SUB_SCHEDULE: { field?: string; corner?: string; label: string; days: number[] }[] = [
-    { field: "수면·침구", label: "잠자리연구소", days: [2, 5] },   // 화·금
-    { field: "건강기능식품", label: "알약연구소", days: [1, 4] },   // 월·목
-    { field: "뷰티·성분", label: "성분연구소", days: [3, 6] },      // 수·토
-    { corner: "repair", label: "AS연구소", days: [2, 0] },         // 화·일
-    { field: "방송·협찬", label: "협찬연구소", days: [0, 3] },        // 일·수 (잠자리에서 넘겨받은 화요일)
+    { field: "수면·침구", label: "수면", days: [2, 5] },   // 화·금
+    { field: "건강기능식품", label: "영양제", days: [1, 4] },   // 월·목
+    { field: "뷰티·성분", label: "뷰티 성분", days: [3, 6] },      // 수·토
+    { corner: "repair", label: "AS 셀프체크", days: [2, 0] },         // 화·일
+    { field: "방송·협찬", label: "방송 협찬", days: [0, 3] },        // 일·수 (잠자리에서 넘겨받은 화요일)
   ];
   const subReleased: string[] = [];
   for (const s of SUB_SCHEDULE) {

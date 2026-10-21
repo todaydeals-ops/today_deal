@@ -4,9 +4,11 @@ name: 핫딜 자동수집(드립)
 # 그래서 GitHub Actions가 board-ingest 엔드포인트를 주기 호출(수집→리라이트→드립 공개→활동 시뮬).
 # GitHub 스케줄러는 best-effort라 수십 분 지연 가능하지만, 드립 간격이 넉넉해 충분함.
 # (+ Actions 탭 'Run workflow' 버튼으로 수동 실행 — repackage 입력 시 기존 쿠팡 딜 일괄 재포장)
+# ★2026-10-21 개편으로 타임딜·핫딜글을 폐지해 자동 실행(schedule)을 껐다. 수동 실행 버튼만 남긴다.
+#   되살리려면 아래 schedule 블록의 주석을 푼다.
 on:
-  schedule:
-    - cron: "*/15 * * * *"
+  # schedule:
+  #   - cron: "*/15 * * * *"
   workflow_dispatch:
     inputs:
       repackage:

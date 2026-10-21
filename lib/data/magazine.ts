@@ -23,7 +23,8 @@ export interface MagazineArticle {
   createdAt: string;
 }
 
-// 서브 미디어 field — 각자 전용 서브도메인에서만 노출하고 메인 매거진에선 제외(격리).
+// 분야 field — 예전엔 연구소별 서브도메인에서만 노출하고 메인에선 뺐다(격리). 10-21 개편으로 격리는 없앴고,
+// 이 목록은 분야 페이지·발행 크론의 요일 배분에만 쓴다.
 // 잠자리연구소=수면·침구(goodsleep), 알약연구소=건강기능식품(pill).
 export const SUB_MEDIA_FIELDS = ["수면·침구", "건강기능식품", "뷰티·성분", "방송·협찬"];
 
@@ -131,12 +132,9 @@ function applyListFilters<T>(q: T, opts?: MagazineListOpts): T {
   b = b.eq("is_published", true).neq("corner", "report"); // 리포트는 별도 데이터레이어(magazine-report.ts) 사용
   if (opts?.corner) b = b.eq("corner", opts.corner);
   if (opts?.slugs) b = b.in("slug", opts.slugs);
-  if (!opts?.all) {
-    if (opts?.field) b = b.eq("field", opts.field); // 섹션(잠자리·알약·성분) 전용 필터
-    else b = b.not("field", "in", `("${SUB_MEDIA_FIELDS.join('","')}")`); // 메인 매거진에선 서브 미디어 글 제외 — 격리
-    // AS연구소 격리 — corner를 명시해 부른 경우(=AS 홈)는 통과시키고, 그 외에는 뺀다.
-    if (!opts?.corner) b = b.not("corner", "in", `("${SUB_MEDIA_CORNERS.join('","')}")`);
-  }
+  // ★2026-10-21 개편: 연구소 5곳을 오늘의딜 분야로 흡수 — 메인 목록에서 빼던 격리를 없앴다.
+  //   분야 페이지(수면·영양제·뷰티 성분·방송 협찬)는 field 로, AS 셀프체크는 corner=repair 로 자기 글만 고른다.
+  if (!opts?.all && opts?.field) b = b.eq("field", opts.field);
   return b as T;
 }
 

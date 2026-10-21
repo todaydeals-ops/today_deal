@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { fetchMagazineList, fetchMagazineCountBy } from "@/lib/data/magazine";
 import { FeaturedImageSlot } from "@/components/magazine/Chrome";
-import B4asHeader from "@/components/magazine/B4asHeader";
+import Header from "@/components/Header";
 import B4asCategoryIndex from "@/components/magazine/B4asCategoryIndex";
 import Pagination from "@/components/magazine/Pagination";
-import B4asFooter from "@/components/magazine/B4asFooter";
+import MediaFooter from "@/components/MediaFooter";
 import { b4asCategoryByKey, b4asCategoryOf } from "@/lib/magazine/b4asCategories";
 import { b4asHref } from "@/lib/magazine/subdomain";
 import "../magazine/magazine.css";
@@ -25,13 +25,13 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   if (!cat) {
     return {
       alternates: { canonical: b4asHref() },
-      title: "AS연구소 — AS 부르기 전 5분 셀프체크",
+      title: "AS 셀프체크 — 기사님 부르기 전 5분 점검 | 오늘의딜",
       description: "고장 같아 보이는 증상의 상당수는 설정·연결·청소로 끝납니다. 기기별 증상별로 무엇을 먼저 확인하고 어디까지 직접 해도 되는지 정리합니다.",
     };
   }
   return {
     alternates: { canonical: b4asHref(cat.key) },
-    title: `${cat.seoTitle} | AS연구소`,
+    title: `${cat.seoTitle} | AS 셀프체크 · 오늘의딜`,
     description: `${cat.angle} 증상별로 무엇을 먼저 확인하고, 어디까지 직접 해도 되는지, 언제 기사님을 불러야 하는지 순서대로 정리했습니다.`,
   };
 }
@@ -55,11 +55,11 @@ export default async function B4asHome({ searchParams }: { searchParams: Promise
 
   return (
     <>
-      <B4asHeader />
+      <Header />
 
       <div className="mz-page">
         <section className="mz-wrap mz-slogan" style={{ paddingTop: 46, paddingBottom: 34 }}>
-          <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: "3px", textTransform: "uppercase", color: "#9a9286" }}>{cat ? "AS연구소" : "Self Check Before Service"}</div>
+          <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: "3px", textTransform: "uppercase", color: "#9a9286" }}>{`오늘의딜 · AS 셀프체크`}</div>
           {cat ? (
             <>
               {/* h1은 라벨이 아니라 seoTitle — "대형가전"으로 검색하는 사람은 없다 */}
@@ -98,10 +98,10 @@ export default async function B4asHome({ searchParams }: { searchParams: Promise
                     {featured.excerpt && <p style={{ fontSize: 15.5, lineHeight: 1.85, color: "#46433d", margin: "18px 0 0", maxWidth: 520 }}>{featured.excerpt}</p>}
                     <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 24, flexWrap: "wrap" }}>
                       <span style={{ display: "inline-flex", alignItems: "center", gap: 8, fontWeight: 700, fontSize: 14, color: "#16140f", borderBottom: "2px solid #ff5a3c", paddingBottom: 3 }}>셀프체크 보기 <span style={{ fontFamily: mono }}>&rarr;</span></span>
-                      <span style={{ fontFamily: mono, fontSize: 12, color: "#9a9286" }}>AS연구소 · {fmtDate(featured.createdAt)}{featured.readMin ? ` · 읽기 ${featured.readMin}분` : ""}</span>
+                      <span style={{ fontFamily: mono, fontSize: 12, color: "#9a9286" }}>오늘의딜 · {fmtDate(featured.createdAt)}{featured.readMin ? ` · 읽기 ${featured.readMin}분` : ""}</span>
                     </div>
                   </div>
-                  <FeaturedImageSlot cornerKey={featured.corner} image={featured.image} title={featured.title} label={b4asCategoryOf(featured.slug)?.label ?? "셀프체크"} brand="AS연구소" />
+                  <FeaturedImageSlot cornerKey={featured.corner} image={featured.image} title={featured.title} label={b4asCategoryOf(featured.slug)?.label ?? "셀프체크"} brand="오늘의딜" />
                 </Link>
               </section>
             )}
@@ -134,7 +134,7 @@ export default async function B4asHome({ searchParams }: { searchParams: Promise
         )}
       </div>
 
-      <B4asFooter />
+      <MediaFooter />
     </>
   );
 }

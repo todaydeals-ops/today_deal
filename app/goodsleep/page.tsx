@@ -3,10 +3,10 @@ import { sleepHref } from "@/lib/magazine/subdomain";
 import Link from "next/link";
 import { fetchMagazineList, fetchMagazineCountBy } from "@/lib/data/magazine";
 import { FeaturedImageSlot } from "@/components/magazine/Chrome";
-import SleepHeader from "@/components/magazine/SleepHeader";
+import Header from "@/components/Header";
 import SleepCategoryIndex from "@/components/magazine/SleepCategoryIndex";
 import Pagination from "@/components/magazine/Pagination";
-import SleepFooter from "@/components/magazine/SleepFooter";
+import MediaFooter from "@/components/MediaFooter";
 import { sleepCategoryByKey, sleepCategoryOf } from "@/lib/magazine/sleepCategories";
 import "../magazine/magazine.css";
 
@@ -26,13 +26,13 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   if (!cat) {
     return {
       alternates: { canonical: sleepHref() },
-      title: "잠자리연구소 — 근거로 검증하는 수면 미디어",
+      title: "수면 가이드 — 잠 안 올 때 뭐부터 바꿀까 | 오늘의딜",
       description: "해외 수면 연구를 근거로 검증합니다. 성장하는 잠·공부잘하는 잠·일잘하는 잠·조화로운 잠·늙지않는 잠·잠자리장비학.",
     };
   }
   return {
     alternates: { canonical: sleepHref(cat.key) },
-    title: `${cat.label} | 잠자리연구소`,
+    title: `${cat.label} | 수면 · 오늘의딜`,
     description: `${cat.angle}을(를) 중심으로, 해외 수면 연구 근거만 골라 정리했습니다.`,
   };
 }
@@ -57,12 +57,12 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
 
   return (
     <>
-      <SleepHeader />
+      <Header />
 
       <div className="mz-page">
         {/* 슬로건 / 카테고리 헤더 */}
         <section className="mz-wrap mz-slogan" style={{ paddingTop: 46, paddingBottom: 34 }}>
-          <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: "3px", textTransform: "uppercase", color: "#9a9286" }}>{cat ? "잠자리연구소" : "Neutral Sleep Media"}</div>
+          <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: "3px", textTransform: "uppercase", color: "#9a9286" }}>{`오늘의딜 · 수면`}</div>
           {cat ? (
             <>
               <h1 style={{ fontFamily: serif, fontWeight: 700, fontSize: "clamp(28px,4.4vw,44px)", lineHeight: 1.32, letterSpacing: "-1px", color: "#16140f", margin: "18px 0 0" }}>{cat.label}</h1>
@@ -100,10 +100,10 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
                     {featured.excerpt && <p style={{ fontSize: 15.5, lineHeight: 1.85, color: "#46433d", margin: "18px 0 0", maxWidth: 520 }}>{featured.excerpt}</p>}
                     <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 24, flexWrap: "wrap" }}>
                       <span style={{ display: "inline-flex", alignItems: "center", gap: 8, fontWeight: 700, fontSize: 14, color: "#16140f", borderBottom: "2px solid #ff5a3c", paddingBottom: 3 }}>칼럼 읽기 <span style={{ fontFamily: mono }}>&rarr;</span></span>
-                      <span style={{ fontFamily: mono, fontSize: 12, color: "#9a9286" }}>잠자리연구소 · {fmtDate(featured.createdAt)}{featured.readMin ? ` · 읽기 ${featured.readMin}분` : ""}</span>
+                      <span style={{ fontFamily: mono, fontSize: 12, color: "#9a9286" }}>오늘의딜 · {fmtDate(featured.createdAt)}{featured.readMin ? ` · 읽기 ${featured.readMin}분` : ""}</span>
                     </div>
                   </div>
-                  <FeaturedImageSlot cornerKey={featured.corner} image={featured.image} title={featured.title} label={sleepCategoryOf(featured.slug)?.label ?? "수면"} brand="잠자리연구소" />
+                  <FeaturedImageSlot cornerKey={featured.corner} image={featured.image} title={featured.title} label={sleepCategoryOf(featured.slug)?.label ?? "수면"} brand="오늘의딜" />
                 </Link>
               </section>
             )}
@@ -136,7 +136,7 @@ export default async function GoodSleepHome({ searchParams }: { searchParams: Pr
         )}
       </div>
 
-      <SleepFooter />
+      <MediaFooter />
     </>
   );
 }

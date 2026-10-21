@@ -41,7 +41,7 @@ export function MagazineMasthead() {
           {CORNERS.filter((c) => c.key !== "repair").map((c) => (
             <Link key={c.key} className="ul-sweep" href={`/magazine?corner=${c.key}`} style={{ textDecoration: "none", color: "#5b564d" }}>{c.name}</Link>
           ))}
-          <a className="ul-sweep" href={LAB_HOME.b4as} style={{ textDecoration: "none", color: "#5b564d" }}>AS연구소</a>
+          <a className="ul-sweep" href={LAB_HOME.b4as} style={{ textDecoration: "none", color: "#5b564d" }}>AS 셀프체크</a>
         </nav>
       </div>
     </header>
@@ -50,7 +50,7 @@ export function MagazineMasthead() {
 
 // 패밀리 미디어(오늘의딜 자신 제외) — 코너 인덱스 뒤에 아웃링크 칸으로 붙는다.
 const FAMILY = BRANDS.filter((b) => b.key !== "deal");
-const FAMILY_EN: Record<string, string> = { sleep: "SLEEP LAB", pill: "PILL LAB", beauty: "INGREDIENT LAB", b4as: "SELF CHECK", sponsor: "SPONSOR LAB" };
+const FAMILY_EN: Record<string, string> = { sleep: "SLEEP", pill: "SUPPLEMENTS", beauty: "INGREDIENTS", b4as: "SELF CHECK", sponsor: "SPONSORSHIP" };
 
 /* 코너 인덱스 — 메인 코너 3 + 패밀리 아웃링크 4 = 7칸 */
 export function CornerIndex() {
@@ -73,7 +73,7 @@ export function CornerIndex() {
         {FAMILY.map((b) => (
           <a key={b.key} className="corner-cell is-external" href={b.url}>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-              <span className="cc-out">연구소</span>
+              <span className="cc-out">분야</span>
               <span style={{ width: 9, height: 9, borderRadius: 9999, background: b.color }} />
             </div>
             <div className="cc-t" style={{ fontWeight: 800, fontSize: 16, marginTop: 14, display: "flex", alignItems: "center", gap: 5 }}>

@@ -25,12 +25,27 @@ function canonicalRedirect(req: NextRequest): string | null {
   return null;
 }
 
+// ★2026-10-21 개편(사장님 지시): 타임딜·추천딜·핫딜글·나눔은 폐지 — 오늘의딜은 정보성 콘텐츠 채널이다.
+//   목록 주소는 홈으로 301(즐겨찾기로 온 사람이 길을 잃지 않게), 개별 딜·게시물은 410(검색엔진이 가장 빨리
+//   색인에서 지운다). DB 데이터(deals·deal_archive·board_deals·curated_deals)는 지우지 않았다 — 되돌릴 수 있다.
+const DEAL_HUBS = new Set(["/deals", "/recommended", "/board", "/giveaway"]);
+const DEAL_DETAIL = /^\/(?:deals|deal|recommended|board|giveaway)\/.+/;
+
+function goneResponse(): NextResponse {
+  const html = `<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="robots" content="noindex"><meta name="viewport" content="width=device-width,initial-scale=1"><title>종료된 페이지 | 오늘의딜</title></head><body style="font-family:Pretendard,-apple-system,sans-serif;max-width:560px;margin:80px auto;padding:0 20px;color:#16140f;line-height:1.7"><h1 style="font-size:24px">이 페이지는 종료됐어요</h1><p>오늘의딜은 딜 소개를 마치고, 사기 전에·고치기 전에 찾아보는 정보 채널로 바뀌었습니다.</p><p><a href="/" style="color:#ff5a3c">오늘의딜 매거진</a> · <a href="/wiki" style="color:#ff5a3c">생활백과</a> · <a href="/wiki/error-codes" style="color:#ff5a3c">가전 에러코드 사전</a></p></body></html>`;
+  return new NextResponse(html, { status: 410, headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex" } });
+}
+
 export function proxy(req: NextRequest) {
   const path = req.nextUrl.pathname;
 
   // ── 호스트 정본화 먼저 ──
   const to = canonicalRedirect(req);
   if (to) return NextResponse.redirect(to, 301);
+
+  // ── 폐지된 딜 영역 ──
+  if (DEAL_HUBS.has(path)) return NextResponse.redirect(`${WWW_ORIGIN}/`, 301);
+  if (DEAL_DETAIL.test(path)) return goneResponse();
 
   // ── 관리자 보호 ──
   // matcher 를 정본화 때문에 넓혔으므로, 보호 대상은 여기서 정확히 골라낸다.

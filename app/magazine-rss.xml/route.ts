@@ -54,7 +54,7 @@ export async function GET(): Promise<Response> {
   const xml =
     `<?xml version="1.0" encoding="UTF-8"?>\n` +
     `<rss version="2.0"><channel>` +
-    `<title>오늘의딜 매거진 — 잠자리·알약·성분·AS·협찬연구소</title>` +
+    `<title>오늘의딜 — 매거진·생활백과</title>` +
     `<link>${SITE}/magazine</link>` +
     `<description>가전·리빙·디지털 가이드부터 수면·영양·성분 검증, AS 셀프체크, 방송 협찬 기록까지 — 신규 발행 원고를 모읍니다.</description>` +
     `<language>ko-KR</language>` +

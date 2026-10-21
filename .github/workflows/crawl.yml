@@ -3,9 +3,11 @@ name: 타임딜 자동수집
 # 2시간마다 실행 — 타임딜이 3시간짜리 회전 슬롯이라 자주 갱신해야 신선함 유지.
 # (PC가 꺼져 있을 때 백업. GitHub 스케줄러는 best-effort라 수십 분 지연 가능)
 # (+ Actions 탭에서 수동 실행 버튼)
+# ★2026-10-21 개편으로 타임딜·핫딜글을 폐지해 자동 실행(schedule)을 껐다. 수동 실행 버튼만 남긴다.
+#   되살리려면 아래 schedule 블록의 주석을 푼다.
 on:
-  schedule:
-    - cron: "5 */2 * * *"
+  # schedule:
+  #   - cron: "5 */2 * * *"
   workflow_dispatch: {}
 
 jobs:

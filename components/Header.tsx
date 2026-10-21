@@ -4,29 +4,25 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Logo from "./Logo";
-import AuthMenu from "./AuthMenu";
+import { BRANDS } from "@/lib/brands";
 import styles from "./Header.module.css";
 
-// 매거진 코너 = 메인 메뉴 (사이트 정체성: 쇼핑 가이드 미디어)
+// 매거진 코너 = 메인 메뉴. ★2026-10-21 개편: 오늘의딜은 정보성 콘텐츠 채널 — 딜 메뉴는 폐지했다.
 const CORNERS = [
   { label: "팩트체크", corner: "factcheck" },
   { label: "스마트가이드", corner: "smartguide" },
   { label: "트렌드랩", corner: "trendlab" },
 ];
-// 딜 = 서브(드롭다운)
-const DEALS = [
-  { label: "타임딜", href: "/deals" },
-  { label: "AI추천딜", href: "/recommended" },
-  { label: "핫딜글", href: "/board" },
-];
+// 분야 = 드롭다운(옛 연구소 5곳을 흡수한 분야). 예전 이 자리는 "오늘의 딜"(타임딜·AI추천딜·핫딜글) — 10-21 폐지.
+const SECTIONS = BRANDS.filter((b) => b.key !== "deal").map((b) => ({ label: b.name, href: new URL(b.url).pathname }));
 
 export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false); // 모바일 메뉴
-  const [dealOpen, setDealOpen] = useState(false); // 딜 드롭다운
+  const [dealOpen, setDealOpen] = useState(false); // 분야 드롭다운
   const dropRef = useRef<HTMLDivElement>(null);
   const close = () => { setOpen(false); setDealOpen(false); };
-  const dealActive = ["/deals", "/recommended", "/board"].some((p) => pathname.startsWith(p));
+  const dealActive = SECTIONS.some((x) => pathname.startsWith(x.href));
 
   // 드롭다운 바깥 클릭 시 닫기(데스크탑)
   useEffect(() => {
@@ -74,18 +70,17 @@ export default function Header() {
               aria-haspopup="menu"
               onClick={() => setDealOpen((v) => !v)}
             >
-              오늘의 딜 <i className="ti ti-chevron-down" style={{ fontSize: 15 }} />
+              분야 <i className="ti ti-chevron-down" style={{ fontSize: 15 }} />
             </button>
             <div className={`${styles.dropMenu} ${dealOpen ? styles.dropOpen : ""}`} role="menu">
-              {DEALS.map((d) => (
+              {SECTIONS.map((d) => (
                 <Link key={d.href} href={d.href} onClick={close} role="menuitem">
                   {d.label}
                 </Link>
               ))}
             </div>
           </div>
-
-          <AuthMenu />
+          {/* 로그인(AuthMenu)은 10-21 개편으로 뺐다 — 핫딜 글쓰기·딜 포인트·나눔 응모가 모두 폐지돼 쓸 곳이 없다 */}
         </nav>
       </div>
     </header>

@@ -1,40 +1,32 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import MagazineHookPopup from "@/components/MagazineHookPopup";
 import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.todaydeals.co.kr"),
-  title: "오늘의딜 — 지마켓·11번가·쿠팡 실시간 타임딜·오늘의 특가·최저가 모음",
+  // ★2026-10-21 개편: 오늘의딜은 딜 모음이 아니라 정보성 콘텐츠 채널이다(타임딜·추천딜·핫딜글 폐지).
+  title: "오늘의딜 — 사기 전에, 고치기 전에 찾아보는 생활 정보",
   description:
-    "지마켓 슈퍼딜(오픈런 타임딜), 11번가 쇼킹딜·타임딜, 쿠팡 골드박스를 한곳에 모았습니다. 매일·실시간 갱신되는 오늘의 특가·핫딜·최저가를 할인율과 마감시간으로 한눈에 비교하세요. 무료배송·반값 할인 정보까지.",
+    "가전·리빙·디지털 고르는 법부터 수면·영양제·뷰티 성분 근거, 고장 났을 때 기사님 부르기 전 셀프체크, 세일 일정과 영상 속 그 제품까지. 출처를 붙여 정리한 생활 정보 매거진과 생활백과입니다.",
   keywords: [
     "오늘의딜",
-    "타임딜",
-    "오늘의 특가",
-    "핫딜",
-    "최저가",
-    "특가 모음",
-    "할인 정보",
-    "오늘 뭐 사지",
-    "지마켓 슈퍼딜",
-    "지마켓 오픈런 타임딜",
-    "11번가 쇼킹딜",
-    "11번가 타임딜",
-    "11번가 오늘의딜",
-    "쿠팡 골드박스",
-    "쿠팡 특가",
-    "무료배송 특가",
-    "반값 할인",
-    "오늘의 쇼핑 특가",
+    "생활백과",
+    "가전 고르는 법",
+    "에러코드",
+    "AS 셀프체크",
+    "영양제 성분",
+    "수면 습관",
+    "화장품 성분",
+    "세일 일정",
+    "영상 속 제품",
   ],
   alternates: {
-    types: { "application/rss+xml": "https://www.todaydeals.co.kr/rss.xml" },
+    types: { "application/rss+xml": "https://www.todaydeals.co.kr/magazine-rss.xml" },
   },
   openGraph: {
-    title: "오늘의딜 — 실시간 타임딜·오늘의 특가·최저가 모음",
-    description: "지마켓·11번가·쿠팡의 실시간 타임딜과 골드박스를 한곳에. 매일 갱신되는 오늘의 특가를 할인율·마감시간으로 비교하세요.",
+    title: "오늘의딜 — 사기 전에, 고치기 전에 찾아보는 생활 정보",
+    description: "고르는 법·성분 근거·고장 셀프체크·세일 일정·영상 속 그 제품까지, 출처를 붙여 정리한 생활 정보 채널.",
     url: "https://www.todaydeals.co.kr",
     siteName: "오늘의딜",
     locale: "ko_KR",
@@ -42,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "오늘의딜 — 실시간 타임딜·오늘의 특가 모음",
-    description: "지마켓·11번가·쿠팡 실시간 타임딜과 골드박스를 한곳에. 매일 갱신.",
+    title: "오늘의딜 — 사기 전에, 고치기 전에 찾아보는 생활 정보",
+    description: "고르는 법·성분 근거·고장 셀프체크·세일 일정, 출처를 붙여 정리한 생활 정보 채널.",
   },
   verification: {
     google: ["8nNNGFPJ1NN0YqLNP9w26zFe9l9LpTCUh8Hsd5uMA1o", "qUzhTm_1fKMVc5xBmE1gTeWexMgJqq_joWBlCY-v0_c"],
@@ -88,7 +80,7 @@ export default function RootLayout({
                   url: "https://www.todaydeals.co.kr",
                   inLanguage: "ko-KR",
                   description:
-                    "지마켓·11번가·쿠팡의 실시간 타임딜과 골드박스를 모은 오늘의 특가·최저가 큐레이션 사이트.",
+                    "사기 전에, 고치기 전에 찾아보는 생활 정보 채널. 매거진(가전·리빙·디지털·수면·영양제·뷰티 성분·AS 셀프체크·방송 협찬)과 생활백과를 출처와 함께 냅니다.",
                 },
                 {
                   "@type": "Organization",
@@ -102,7 +94,7 @@ export default function RootLayout({
           }}
         />
         {children}
-        <MagazineHookPopup />
+        {/* 브랜드 교차유도 팝업(MagazineHookPopup)은 10-21 개편으로 뺐다 — 연구소가 오늘의딜 분야로 흡수돼 서로 홍보할 별도 브랜드가 없다 */}
         <Analytics />
         <GoogleAnalytics gaId="G-0D58JNRETR" />
       </body>

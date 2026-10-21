@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { fetchMagazineList, fetchMagazineCountBy } from "@/lib/data/magazine";
 import { FeaturedImageSlot } from "@/components/magazine/Chrome";
-import SponsorHeader from "@/components/magazine/SponsorHeader";
+import Header from "@/components/Header";
 import SponsorCategoryIndex from "@/components/magazine/SponsorCategoryIndex";
 import Pagination from "@/components/magazine/Pagination";
-import SponsorFooter from "@/components/magazine/SponsorFooter";
+import MediaFooter from "@/components/MediaFooter";
 import { sponsorCategoryByKey, sponsorCategoryOf } from "@/lib/magazine/sponsorCategories";
 import { sponsorHref } from "@/lib/magazine/subdomain";
 import "../magazine/magazine.css";
@@ -25,13 +25,13 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
     return {
       alternates: { canonical: sponsorHref() },
       // 2026-10-17 중앙 집중으로 www/sponsor 가 정본이 되어 임시 noindex 를 풀었다.
-      title: "협찬연구소 — 방송 협찬을 기록합니다",
+      title: "방송 협찬 기록 — 낮 방송 협찬과 판매 편성 | 오늘의딜",
       description: "낮 시간대 방송에 나온 원료가 같은 날 어디서 팔렸는지, 편성 시각을 나란히 기록합니다. 연계편성·건강정보와 전문가·맛집과 업체·생활용품과 렌털·제도와 규제.",
     };
   }
   return {
     alternates: { canonical: sponsorHref(cat.key) },
-    title: `${cat.label} | 협찬연구소`,
+    title: `${cat.label} | 방송 협찬 · 오늘의딜`,
     description: `${cat.angle}. 방송 편성과 판매 시각을 그대로 나란히 기록합니다.`,
   };
 }
@@ -55,11 +55,11 @@ export default async function SponsorHome({ searchParams }: { searchParams: Prom
 
   return (
     <>
-      <SponsorHeader />
+      <Header />
 
       <div className="mz-page">
         <section className="mz-wrap mz-slogan" style={{ paddingTop: 46, paddingBottom: 34 }}>
-          <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: "3px", textTransform: "uppercase", color: "#9a9286" }}>{cat ? "협찬연구소" : "Broadcast Sponsorship Record"}</div>
+          <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: "3px", textTransform: "uppercase", color: "#9a9286" }}>{`오늘의딜 · 방송 협찬`}</div>
           {cat ? (
             <>
               <h1 style={{ fontFamily: serif, fontWeight: 700, fontSize: "clamp(28px,4.4vw,44px)", lineHeight: 1.32, letterSpacing: "-1px", color: "#16140f", margin: "18px 0 0" }}>{cat.label}</h1>
@@ -97,10 +97,10 @@ export default async function SponsorHome({ searchParams }: { searchParams: Prom
                     {featured.excerpt && <p style={{ fontSize: 15.5, lineHeight: 1.85, color: "#46433d", margin: "18px 0 0", maxWidth: 520 }}>{featured.excerpt}</p>}
                     <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 24, flexWrap: "wrap" }}>
                       <span style={{ display: "inline-flex", alignItems: "center", gap: 8, fontWeight: 700, fontSize: 14, color: "#16140f", borderBottom: "2px solid #ff5a3c", paddingBottom: 3 }}>기록 보기 <span style={{ fontFamily: mono }}>&rarr;</span></span>
-                      <span style={{ fontFamily: mono, fontSize: 12, color: "#9a9286" }}>협찬연구소 · {fmtDate(featured.createdAt)}{featured.readMin ? ` · 읽기 ${featured.readMin}분` : ""}</span>
+                      <span style={{ fontFamily: mono, fontSize: 12, color: "#9a9286" }}>오늘의딜 · {fmtDate(featured.createdAt)}{featured.readMin ? ` · 읽기 ${featured.readMin}분` : ""}</span>
                     </div>
                   </div>
-                  <FeaturedImageSlot cornerKey={featured.corner} image={featured.image} title={featured.title} label={sponsorCategoryOf(featured.slug)?.label ?? "기록"} brand="협찬연구소" />
+                  <FeaturedImageSlot cornerKey={featured.corner} image={featured.image} title={featured.title} label={sponsorCategoryOf(featured.slug)?.label ?? "기록"} brand="오늘의딜" />
                 </Link>
               </section>
             )}
@@ -133,7 +133,7 @@ export default async function SponsorHome({ searchParams }: { searchParams: Prom
         )}
       </div>
 
-      <SponsorFooter />
+      <MediaFooter />
     </>
   );
 }

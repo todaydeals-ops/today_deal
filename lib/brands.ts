@@ -20,6 +20,8 @@ export interface Brand {
   color: string;
 }
 
+// ★2026-10-21 개편: 연구소 5곳은 별도 브랜드가 아니라 오늘의딜 안의 "분야"다(사장님 지시 "모든 콘텐츠 내재화").
+//   key·url·color 는 그대로 두고 name 만 분야 이름으로 바꿨다 — 푸터 분야 블록·코너 목록·헤더 메뉴가 이 이름을 쓴다.
 export const BRANDS: Brand[] = [
   {
     key: "deal", name: "오늘의딜",
@@ -31,31 +33,31 @@ export const BRANDS: Brand[] = [
     url: "https://www.todaydeals.co.kr", color: "#ff5a3c",
   },
   {
-    key: "sleep", name: "잠자리연구소",
+    key: "sleep", name: "수면",
     desc: "잠 안 올 때 뭐부터 바꿀까",
     hook: "잠이 안 오면 매트리스부터 습관까지, 뭐부터 손대면 되는지 정리했습니다.",
     url: LAB_HOME.sleep, color: "#3f5a54",
   },
   {
-    key: "pill", name: "알약연구소",
+    key: "pill", name: "영양제",
     desc: "영양제 사기 전 5분 확인",
     hook: "그 영양제가 나한테 맞는지, 사기 전 5분이면 확인됩니다.",
     url: LAB_HOME.pill, color: "#8a6a3a",
   },
   {
-    key: "beauty", name: "성분연구소",
+    key: "beauty", name: "뷰티 성분",
     desc: "이 성분, 내 피부에 맞을까",
     hook: "화장품 성분표에서 뭘 보면 되는지, 성분별로 정리했습니다.",
     url: LAB_HOME.beauty, color: "#8a5a6a",
   },
   {
-    key: "b4as", name: "AS연구소",
+    key: "b4as", name: "AS 셀프체크",
     desc: "부르기 전 5분 셀프체크",
     hook: "기사님 부르기 전에, 5분이면 끝나는 것들이 있습니다.",
     url: LAB_HOME.b4as, color: "#38539a",
   },
   {
-    key: "sponsor", name: "협찬연구소",
+    key: "sponsor", name: "방송 협찬",
     desc: "이 방송, 누가 돈을 냈을까",
     hook: "낮 방송에 나온 그 원료, 같은 날 어디서 팔렸는지 시각으로 정리했습니다.",
     url: LAB_HOME.sponsor, color: "#3f5a7a",
