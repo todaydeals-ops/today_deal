@@ -95,6 +95,11 @@
   white-space: nowrap;
 }
 .dropMenu a:hover { background: var(--bg-sunken); color: var(--text-strong); }
+/* 소메뉴가 많은 메뉴(AS 9분류)는 두 줄로 — 세로로 길게 늘어지지 않게 */
+.dropMany.dropOpen { display: grid; grid-template-columns: 1fr 1fr; min-width: 240px; }
+/* 묶음 홈 "전체 보기" — 소메뉴와 구분 */
+.dropMenu a.dropAll { font-weight: 600; color: var(--text-strong); border-bottom: 1px solid var(--border-soft); border-radius: 6px 6px 0 0; margin-bottom: 4px; }
+.dropMany a.dropAll { grid-column: 1 / -1; }
 
 .userBtn {
   width: 32px;
@@ -147,6 +152,9 @@
     padding: 6px 0;
     display: none;
     box-shadow: 0 6px 16px rgba(44, 42, 38, 0.06);
+    /* 소메뉴가 20개 넘게 펼쳐진다 — 헤더가 sticky 라 화면보다 길면 아래가 잘리므로 메뉴 안에서 스크롤 */
+    max-height: calc(100vh - 62px);
+    overflow-y: auto;
   }
 
   .navOpen {
@@ -206,4 +214,6 @@
     padding: 12px 20px 12px 36px;
     border-radius: 0;
   }
+  .dropMany { display: grid; grid-template-columns: 1fr 1fr; }
+  .dropMenu a.dropAll { border-bottom: none; margin-bottom: 0; font-weight: 500; }
 }

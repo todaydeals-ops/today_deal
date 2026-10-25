@@ -44,32 +44,31 @@ export default function Header() {
         </button>
 
         <nav ref={navRef} className={`${styles.nav} ${open ? styles.navOpen : ""}`}>
-          {NAV.map((g) =>
-            g.href ? (
-              <Link key={g.key} href={g.href} onClick={close} className={isActive(g.match) ? styles.active : ""}>
-                {g.label}
-                <span className={styles.dot}>.</span>
-              </Link>
-            ) : (
-              <div key={g.key} className={styles.dropdown}>
-                <button
-                  className={`${styles.dropBtn} ${isActive(g.match) ? styles.active : ""}`}
-                  aria-expanded={drop === g.key}
-                  aria-haspopup="menu"
-                  onClick={() => setDrop((v) => (v === g.key ? null : g.key))}
-                >
-                  {g.label} <i className="ti ti-chevron-down" style={{ fontSize: 15 }} />
-                </button>
-                <div className={`${styles.dropMenu} ${drop === g.key ? styles.dropOpen : ""}`} role="menu">
-                  {g.items!.map((d) => (
-                    <Link key={d.href} href={d.href} onClick={close} role="menuitem">
-                      {d.label}
-                    </Link>
-                  ))}
-                </div>
+          {/* 4개 모두 드롭다운. 묶음 홈이 있는 메뉴(생활백과·AS)는 맨 위에 "전체 보기" */}
+          {NAV.map((g) => (
+            <div key={g.key} className={styles.dropdown}>
+              <button
+                className={`${styles.dropBtn} ${isActive(g.match) ? styles.active : ""}`}
+                aria-expanded={drop === g.key}
+                aria-haspopup="menu"
+                onClick={() => setDrop((v) => (v === g.key ? null : g.key))}
+              >
+                {g.label} <i className="ti ti-chevron-down" style={{ fontSize: 15 }} />
+              </button>
+              <div className={`${styles.dropMenu} ${g.items.length > 5 ? styles.dropMany : ""} ${drop === g.key ? styles.dropOpen : ""}`} role="menu">
+                {g.href && (
+                  <Link href={g.href} onClick={close} role="menuitem" className={styles.dropAll}>
+                    {g.label} 전체 보기
+                  </Link>
+                )}
+                {g.items.map((d) => (
+                  <Link key={d.href} href={d.href} onClick={close} role="menuitem">
+                    {d.label}
+                  </Link>
+                ))}
               </div>
-            ),
-          )}
+            </div>
+          ))}
         </nav>
       </div>
     </header>

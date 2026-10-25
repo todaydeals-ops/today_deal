@@ -62,27 +62,33 @@ export function CornerIndex() {
     <section id="guides" className="mz-wrap mz-cornerwrap" style={{ paddingTop: 34, scrollMarginTop: 80 }}>
       <div className="mz-menu-index">
         {NAV.map((g, i) => {
-          const body = (
-            <>
+          const title = <div className="cc-t" style={{ fontWeight: 800, fontSize: 16, marginTop: 14 }}>{g.label}{g.href && <span className="mg-arrow"> &rarr;</span>}</div>;
+          return (
+            <div key={g.key} className="menu-group">
               {head(i, g.color)}
-              <div className="cc-t" style={{ fontWeight: 800, fontSize: 16, marginTop: 14 }}>{g.label}</div>
+              {/* 묶음 홈이 있으면(생활백과·AS) 제목이 그 홈으로 가는 링크 */}
+              {g.href ? <Link href={g.href} className="mg-title">{title}</Link> : title}
               <div className="cc-en" style={{ fontFamily: mono, fontSize: 9.5, letterSpacing: "1px", color: g.color, marginTop: 2 }}>{g.en}</div>
               <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>{g.desc}</div>
-            </>
-          );
-          return g.href ? (
-            <Link key={g.key} className="corner-cell" href={g.href}>{body}</Link>
-          ) : (
-            <div key={g.key} className="menu-group">
-              {body}
-              <div className="menu-items">
-                {g.items!.map((it) => (
-                  <Link key={it.href} className="menu-item" href={it.href}>
-                    <span className="mi-t"><span style={{ width: 7, height: 7, borderRadius: 9999, background: it.color, flex: "none" }} />{it.label}</span>
-                    <span className="mi-d">{it.desc}</span>
-                  </Link>
-                ))}
-              </div>
+              {/* 설명이 있는 소메뉴는 이름+한 줄, 없는 것(AS 9분류)은 칩으로 촘촘하게 */}
+              {g.items.every((it) => it.desc) ? (
+                <div className="menu-items">
+                  {g.items.map((it) => (
+                    <Link key={it.href} className="menu-item" href={it.href}>
+                      <span className="mi-t"><span style={{ width: 7, height: 7, borderRadius: 9999, background: it.color, flex: "none" }} />{it.label}</span>
+                      <span className="mi-d">{it.desc}</span>
+                    </Link>
+                  ))}
+                </div>
+              ) : (
+                <div className="menu-items menu-chips">
+                  {g.items.map((it) => (
+                    <Link key={it.href} className="menu-chip" href={it.href}>
+                      <span style={{ width: 6, height: 6, borderRadius: 9999, background: it.color, flex: "none" }} />{it.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
           );
         })}
