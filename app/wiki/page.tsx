@@ -15,7 +15,7 @@ export const dynamic = "force-static";
 
 export const metadata: Metadata = {
   title: "오늘의딜 생활백과 — 사기 전에, 고치기 전에 찾아보는 정본",
-  description: "영상 속 그 제품의 정체, 세일 기간, 성분, 에러코드까지. 근거 자료를 붙여 항목별로 정리한 생활백과입니다.",
+  description: "영상 속 그 제품의 정체, 세일 기간, 가전 에러코드까지. 근거 자료를 붙여 항목별로 정리한 생활백과입니다.",
   alternates: { canonical: WIKI_BASE },
 };
 

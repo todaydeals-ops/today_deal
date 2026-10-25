@@ -22,7 +22,7 @@ node scripts/wiki-verify.mjs <slug>
 ```json
 {
   "slug": "gounbal-foot-cream",            // 영문 소문자·숫자·하이픈, 파일명과 같게
-  "type": "video-pick",                    // video-pick | sale | ingredient | product | gift | error-code
+  "type": "video-pick",                    // video-pick | sale | product | gift | error-code  (★ingredient 는 2026-10-26 폐지 — 성분은 영양제·뷰티 성분 분야 글이 맡는다. 게이트가 막는다)
   "title": "고운발 크림",                    // 표제어(사전 항목 이름)
   "aliases": ["백지영 발크림", "웰빙헬스 고운발"], // 사람들이 실제로 치는 다른 이름·검색어 3~8개
   "seoTitle": "백지영 발크림 고운발 크림, 영상 속 노란 통은 어느 회사 것일까",

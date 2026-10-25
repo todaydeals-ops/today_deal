@@ -47,6 +47,15 @@ const RETIRED_ARTICLES = new Set([
   "youtube-vs-broadcast-adrule",
 ].map((s) => `/magazine/${s}`));
 
+// ★2026-10-26 생활백과 성분 항목 폐지(사장님 "뷰티 성분·영양제 부분하고 중첩이니 빼도 될거 같은데").
+//   4항목 모두 분야에 같은 주제 글이 있어 그 글로 301(항목 원본은 git 이력에 있다).
+const WIKI_MERGED: Record<string, string> = {
+  "/wiki/apple-cider-vinegar": "/magazine/apple-cider-vinegar",
+  "/wiki/creatine": "/magazine/creatine-safety",
+  "/wiki/lutein": "/magazine/lutein-eye-supplement",
+  "/wiki/mineral-vs-chemical-sunscreen": "/magazine/physical-vs-chemical-sunscreen",
+};
+
 const GONE_DEAL = "오늘의딜은 딜 소개를 마치고, 사기 전에·고치기 전에 찾아보는 정보 채널로 바뀌었습니다.";
 const GONE_SECTION = "방송 협찬 분야는 운영을 마쳤습니다. 사기 전에·고치기 전에 찾아보는 다른 정보로 안내해 드릴게요.";
 
@@ -69,6 +78,7 @@ export function proxy(req: NextRequest) {
   // ── 폐지된 분야(방송 협찬) ──
   if (RETIRED_HUBS.has(path)) return NextResponse.redirect(`${WWW_ORIGIN}/`, 301);
   if (RETIRED_ARTICLES.has(path)) return goneResponse(GONE_SECTION);
+  if (WIKI_MERGED[path]) return NextResponse.redirect(`${WWW_ORIGIN}${WIKI_MERGED[path]}`, 301);
 
   // ── 관리자 보호 ──
   // matcher 를 정본화 때문에 넓혔으므로, 보호 대상은 여기서 정확히 골라낸다.

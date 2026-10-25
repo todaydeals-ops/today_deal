@@ -51,12 +51,14 @@ const asCat = (k: string): NavItem => {
 export const NAV: NavGroup[] = [
   {
     key: "wiki", label: "생활백과", en: "WIKI", href: "/wiki", match: ["/wiki"], color: "#ff5a3c",
-    desc: "세일 일정·영상 속 그 제품·성분, 찾아보는 정본",
+    desc: "세일 일정·영상 속 그 제품·가전 에러코드, 찾아보는 정본",
     // 생활백과 홈(app/wiki/page.tsx)의 종류별 섹션 id 로 바로 간다.
+    // ★성분은 10-26 뺐다(사장님 "뷰티 성분·영양제 부분하고 중첩") — 항목 4개는 분야 글로 301(proxy.ts WIKI_MERGED).
+    //   빈 셋째 칸에 에러코드 사전을 다시 넣었다. AS 메뉴의 바로가기와 겹쳐 두 메뉴에 다 있다(사전은 찾아보는 정본이자 AS 색인).
     items: [
       { label: "세일 달력", href: "/wiki#sale", color: "#c4553a", desc: "행사별 날짜·혜택, 확인 날짜까지" },
       { label: "영상 속 그 제품", href: "/wiki#video-pick", color: "#7a5f8a", desc: "영상에 나온 그 제품, 어느 회사 것인지" },
-      { label: "성분", href: "/wiki#ingredient", color: "#4a7c59", desc: "성분 하나를 한 화면 정본으로" },
+      { label: "가전 에러코드 사전", href: "/wiki/error-codes", color: "#38539a", desc: "브랜드·제품별 에러 표시 뜻" },
     ],
   },
   {

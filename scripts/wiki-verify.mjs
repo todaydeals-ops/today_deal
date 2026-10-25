@@ -66,6 +66,9 @@ for (const file of files) {
   need(e.slug && name === `${e.slug}.json`, "slug 와 파일명 불일치");
   need(/^[a-z0-9-]+$/.test(e.slug || ""), "slug 는 영문 소문자·숫자·하이픈만");
   need(TYPES.includes(e.type), `type 값 오류(${e.type})`);
+  // ★2026-10-26 성분 항목 폐지(사장님 "생활백과의 성분은 뷰티 성분·영양제 부분하고 중첩이니 빼도 될거 같은데").
+  //   4항목 모두 같은 주제 글이 분야에 이미 있었다(같은 검색어를 두 페이지가 나눠 가짐). 성분은 영양제·뷰티 성분 분야 글로 쓴다.
+  need(e.type !== "ingredient", "성분 항목은 2026-10-26 폐지 — 영양제·뷰티 성분 분야 글로 쓸 것");
   for (const k of ["title", "seoTitle", "description", "created", "updated"]) need(typeof e[k] === "string" && e[k].trim(), `${k} 없음`);
   for (const k of ["aliases", "summary", "infobox", "sections", "faq", "sources"]) need(Array.isArray(e[k]), `${k} 배열 아님`);
   if (bad.length) { console.log(`✗ ${name}  ${bad.join(" · ")}`); fail++; continue; }
