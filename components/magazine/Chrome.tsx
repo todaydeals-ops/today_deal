@@ -1,8 +1,8 @@
 // 매거진 공통 UI — 리디자인 확정안(페이퍼·세리프·얇은 룰, 오렌지=점)
 import { LAB_HOME } from "@/lib/magazine/subdomain";
-import { BRANDS } from "@/lib/brands";
+import { NAV } from "@/lib/nav";
 import Link from "next/link";
-import { CORNERS, cornerOf, CORNER_SHORT, CATCH } from "@/lib/magazine/corners";
+import { CORNERS, cornerOf, CATCH } from "@/lib/magazine/corners";
 
 const mono = "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif";
 const serif = "'Noto Serif KR', serif";
@@ -48,41 +48,44 @@ export function MagazineMasthead() {
   );
 }
 
-// 패밀리 미디어(오늘의딜 자신 제외) — 코너 인덱스 뒤에 아웃링크 칸으로 붙는다.
-const FAMILY = BRANDS.filter((b) => b.key !== "deal");
-const FAMILY_EN: Record<string, string> = { sleep: "SLEEP", pill: "SUPPLEMENTS", beauty: "INGREDIENTS", b4as: "SELF CHECK", sponsor: "SPONSORSHIP" };
-
-/* 코너 인덱스 — 메인 코너 3 + 패밀리 아웃링크 4 = 7칸 */
+/* 메뉴 칸 — 대메뉴 4개(lib/nav.ts, 헤더와 같은 데이터). 2026-10-26 재편.
+   단독 메뉴(생활백과·AS 셀프체크)는 칸 전체가 링크, 묶음 메뉴(건강·뷰티·매거진)는 칸 안에 소메뉴 링크를 둔다.
+   (그 전엔 코너 3칸 + 분야 4칸 = 7칸이었다) */
 export function CornerIndex() {
+  const head = (i: number, color: string) => (
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+      <span className="cc-n" style={{ fontFamily: mono, fontSize: 11, fontWeight: 600, color: "#9a9286" }}>{String(i + 1).padStart(2, "0")}</span>
+      <span style={{ width: 9, height: 9, borderRadius: 9999, background: color }} />
+    </div>
+  );
   return (
     <section id="guides" className="mz-wrap mz-cornerwrap" style={{ paddingTop: 34, scrollMarginTop: 80 }}>
-      <div className="mz-corner-index">
-        {/* repair(AS셀프체크)는 AS연구소로 분리됐다 — 여기 두면 빈 목록으로 간다. */}
-        {CORNERS.filter((c) => c.key !== "repair").map((c, i) => (
-          <Link key={c.key} className="corner-cell" href={`/?corner=${c.key}`}>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-              <span className="cc-n" style={{ fontFamily: mono, fontSize: 11, fontWeight: 600, color: "#9a9286" }}>{String(i + 1).padStart(2, "0")}</span>
-              <span style={{ width: 9, height: 9, borderRadius: 9999, background: c.color }} />
+      <div className="mz-menu-index">
+        {NAV.map((g, i) => {
+          const body = (
+            <>
+              {head(i, g.color)}
+              <div className="cc-t" style={{ fontWeight: 800, fontSize: 16, marginTop: 14 }}>{g.label}</div>
+              <div className="cc-en" style={{ fontFamily: mono, fontSize: 9.5, letterSpacing: "1px", color: g.color, marginTop: 2 }}>{g.en}</div>
+              <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>{g.desc}</div>
+            </>
+          );
+          return g.href ? (
+            <Link key={g.key} className="corner-cell" href={g.href}>{body}</Link>
+          ) : (
+            <div key={g.key} className="menu-group">
+              {body}
+              <div className="menu-items">
+                {g.items!.map((it) => (
+                  <Link key={it.href} className="menu-item" href={it.href}>
+                    <span className="mi-t"><span style={{ width: 7, height: 7, borderRadius: 9999, background: it.color, flex: "none" }} />{it.label}</span>
+                    <span className="mi-d">{it.desc}</span>
+                  </Link>
+                ))}
+              </div>
             </div>
-            <div className="cc-t" style={{ fontWeight: 800, fontSize: 16, marginTop: 14 }}>{c.name}</div>
-            <div className="cc-en" style={{ fontFamily: mono, fontSize: 9.5, letterSpacing: "1px", color: c.color, marginTop: 2 }}>{c.nameEn}</div>
-            <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>{CORNER_SHORT[c.key] ?? c.desc}</div>
-          </Link>
-        ))}
-        {/* 연구소 5곳 — 2026-10-17 중앙 집중으로 같은 사이트(www/<경로>)다. 새 창·외부 화살표를 걷었다. 칸 색(is-external)은 구분용으로 유지. */}
-        {FAMILY.map((b) => (
-          <a key={b.key} className="corner-cell is-external" href={b.url}>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-              <span className="cc-out">분야</span>
-              <span style={{ width: 9, height: 9, borderRadius: 9999, background: b.color }} />
-            </div>
-            <div className="cc-t" style={{ fontWeight: 800, fontSize: 16, marginTop: 14, display: "flex", alignItems: "center", gap: 5 }}>
-              {b.name}
-            </div>
-            <div className="cc-en" style={{ fontFamily: mono, fontSize: 9.5, letterSpacing: "1px", color: b.color, marginTop: 2 }}>{FAMILY_EN[b.key] ?? ""}</div>
-            <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>{b.desc}</div>
-          </a>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

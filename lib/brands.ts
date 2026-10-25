@@ -9,7 +9,7 @@
 // ★새 미디어를 추가하면 여기 한 줄만 넣으면 푸터·팝업이 함께 따라온다.
 import { LAB_HOME } from "@/lib/magazine/subdomain";
 
-export type BrandKey = "deal" | "sleep" | "pill" | "beauty" | "b4as" | "sponsor";
+export type BrandKey = "deal" | "sleep" | "pill" | "beauty" | "b4as";
 
 export interface Brand {
   key: BrandKey;
@@ -56,12 +56,7 @@ export const BRANDS: Brand[] = [
     hook: "기사님 부르기 전에, 5분이면 끝나는 것들이 있습니다.",
     url: LAB_HOME.b4as, color: "#38539a",
   },
-  {
-    key: "sponsor", name: "방송 협찬",
-    desc: "이 방송, 누가 돈을 냈을까",
-    hook: "낮 방송에 나온 그 원료, 같은 날 어디서 팔렸는지 시각으로 정리했습니다.",
-    url: LAB_HOME.sponsor, color: "#3f5a7a",
-  },
+  // 방송 협찬(sponsor)은 2026-10-26 폐지(사장님 지시). 분야 홈·분류·소속 글 5편을 내렸다.
 ];
 
 /** 지금 보고 있는 브랜드를 경로로 판별한다(팝업이 자기 브랜드를 권하지 않게).
@@ -71,6 +66,5 @@ export function brandKeyFromPath(path: string): BrandKey {
   if (path.startsWith("/pill")) return "pill";
   if (path.startsWith("/beauty")) return "beauty";
   if (path.startsWith("/b4as")) return "b4as";
-  if (path.startsWith("/sponsor")) return "sponsor";
   return "deal";
 }

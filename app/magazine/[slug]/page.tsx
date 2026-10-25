@@ -13,7 +13,6 @@ import { sleepCategoryOf } from "@/lib/magazine/sleepCategories";
 import MediaFooter from "@/components/MediaFooter";
 import { pillCategoryOf } from "@/lib/magazine/pillCategories";
 import { beautyCategoryOf } from "@/lib/magazine/beautyCategories";
-import { sponsorCategoryOf } from "@/lib/magazine/sponsorCategories";
 import { FieldPill } from "@/components/magazine/Chrome";
 
 export const revalidate = 3600; // 1시간 캐시 — 매거진 아티클은 실시간 불필요
@@ -47,7 +46,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     a.field === "수면·침구" ? "수면"
     : a.field === "건강기능식품" ? "영양제"
     : a.field === "뷰티·성분" ? "뷰티 성분"
-    : a.field === "방송·협찬" ? "방송 협찬"
     : a.corner === "repair" ? "AS 셀프체크"
     : "사기 전에 보는 가이드";
   const desc = (a.excerpt || a.subtitle || `${a.title} — 오늘의딜 ${section}.`).slice(0, 155);
@@ -71,19 +69,17 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   const isPill = a.field === "건강기능식품"; // 알약연구소 소속 글
   const isBeauty = a.field === "뷰티·성분";
   const isB4as = a.corner === "repair"; // ★AS연구소만 field가 아니라 corner로 판별한다
-  const isSponsor = a.field === "방송·협찬";
-  const isSub = isSleep || isPill || isBeauty || isB4as || isSponsor; // 서브 미디어 공통 처리(헤더·푸터·배지·관련글)
+  const isSub = isSleep || isPill || isBeauty || isB4as; // 서브 미디어 공통 처리(헤더·푸터·배지·관련글). 방송 협찬은 10-26 폐지
   const sleepCat = isSleep ? sleepCategoryOf(a.slug) : undefined; // 잠자리연구소 고유 6분류
   const pillCat = isPill ? pillCategoryOf(a.slug) : undefined; // 알약연구소 고유 6분류
   const beautyCat = isBeauty ? beautyCategoryOf(a.slug) : undefined; // 성분연구소 고유 6분류
   const b4asCat = isB4as ? b4asCategoryOf(a.slug) : undefined; // AS연구소 고유 9분류(제품유형)
-  const sponsorCat = isSponsor ? sponsorCategoryOf(a.slug) : undefined; // 협찬연구소 고유 6분류(협찬 경로)
-  const subCat = sleepCat ?? pillCat ?? beautyCat ?? b4asCat ?? sponsorCat;
-  const subKey: SubKey = isPill ? "pill" : isBeauty ? "beauty" : isB4as ? "b4as" : isSponsor ? "sponsor" : "sleep";
+  const subCat = sleepCat ?? pillCat ?? beautyCat ?? b4asCat;
+  const subKey: SubKey = isPill ? "pill" : isBeauty ? "beauty" : isB4as ? "b4as" : "sleep";
   const subHome = LAB_HOME[subKey];
   const subHomeAbs = subHome;
   // 분야 이름(10-21 개편 — 옛 연구소 이름 대신). 화면 빵부스러기·구조화 데이터의 2단계로 쓴다.
-  const subName = isPill ? "영양제" : isBeauty ? "뷰티 성분" : isB4as ? "AS 셀프체크" : isSponsor ? "방송 협찬" : "수면";
+  const subName = isPill ? "영양제" : isBeauty ? "뷰티 성분" : isB4as ? "AS 셀프체크" : "수면";
   const accent = isSub ? (subCat?.color ?? (isB4as ? "#38539a" : "#3f5a54")) : c.color; // 강조색: 서브는 분류색, 그 외 코너색
   // 구조화 데이터 발행처는 전부 오늘의딜(10-21 개편). 분야는 빵부스러기 2단계로 들어간다.
   const brandName = "오늘의딜";

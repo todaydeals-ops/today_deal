@@ -4,35 +4,28 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Logo from "./Logo";
-import { BRANDS } from "@/lib/brands";
+import { NAV } from "@/lib/nav";
 import styles from "./Header.module.css";
 
-// 매거진 코너 = 메인 메뉴. ★2026-10-21 개편: 오늘의딜은 정보성 콘텐츠 채널 — 딜 메뉴는 폐지했다.
-const CORNERS = [
-  { label: "팩트체크", corner: "factcheck" },
-  { label: "스마트가이드", corner: "smartguide" },
-  { label: "트렌드랩", corner: "trendlab" },
-];
-// 분야 = 드롭다운(옛 연구소 5곳을 흡수한 분야). 예전 이 자리는 "오늘의 딜"(타임딜·AI추천딜·핫딜글) — 10-21 폐지.
-const SECTIONS = BRANDS.filter((b) => b.key !== "deal").map((b) => ({ label: b.name, href: new URL(b.url).pathname }));
-
+// 대메뉴 4개(lib/nav.ts) — 생활백과 · AS 셀프체크 · 건강·뷰티▾ · 매거진▾. 2026-10-26 재편.
+// (10-21 개편으로 딜 메뉴·로그인(AuthMenu)은 폐지했다 — 핫딜 글쓰기·딜 포인트·나눔 응모가 모두 없어졌다.)
 export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false); // 모바일 메뉴
-  const [dealOpen, setDealOpen] = useState(false); // 분야 드롭다운
-  const dropRef = useRef<HTMLDivElement>(null);
-  const close = () => { setOpen(false); setDealOpen(false); };
-  const dealActive = SECTIONS.some((x) => pathname.startsWith(x.href));
+  const [drop, setDrop] = useState<string | null>(null); // 펼친 드롭다운(데스크탑)
+  const navRef = useRef<HTMLElement>(null);
+  const close = () => { setOpen(false); setDrop(null); };
+  const isActive = (match: string[]) => match.some((m) => pathname.startsWith(m));
 
   // 드롭다운 바깥 클릭 시 닫기(데스크탑)
   useEffect(() => {
-    if (!dealOpen) return;
+    if (!drop) return;
     const onDoc = (e: MouseEvent) => {
-      if (dropRef.current && !dropRef.current.contains(e.target as Node)) setDealOpen(false);
+      if (navRef.current && !navRef.current.contains(e.target as Node)) setDrop(null);
     };
     document.addEventListener("mousedown", onDoc);
     return () => document.removeEventListener("mousedown", onDoc);
-  }, [dealOpen]);
+  }, [drop]);
 
   return (
     <header className={styles.header}>
@@ -50,37 +43,33 @@ export default function Header() {
           <i className={open ? "ti ti-x" : "ti ti-menu-2"} />
         </button>
 
-        <nav className={`${styles.nav} ${open ? styles.navOpen : ""}`}>
-          {CORNERS.map((c) => (
-            <Link key={c.corner} href={`/?corner=${c.corner}`} onClick={close}>
-              {c.label}
-              <span className={styles.dot}>.</span>
-            </Link>
-          ))}
-          {/* 2.0 생활백과 — 읽는 글이 아니라 찾아보는 정본(content/wiki) */}
-          <Link href="/wiki" onClick={close} className={pathname.startsWith("/wiki") ? styles.active : ""}>
-            생활백과
-            <span className={styles.dot}>.</span>
-          </Link>
-
-          <div className={styles.dropdown} ref={dropRef}>
-            <button
-              className={`${styles.dropBtn} ${dealActive ? styles.active : ""}`}
-              aria-expanded={dealOpen}
-              aria-haspopup="menu"
-              onClick={() => setDealOpen((v) => !v)}
-            >
-              분야 <i className="ti ti-chevron-down" style={{ fontSize: 15 }} />
-            </button>
-            <div className={`${styles.dropMenu} ${dealOpen ? styles.dropOpen : ""}`} role="menu">
-              {SECTIONS.map((d) => (
-                <Link key={d.href} href={d.href} onClick={close} role="menuitem">
-                  {d.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-          {/* 로그인(AuthMenu)은 10-21 개편으로 뺐다 — 핫딜 글쓰기·딜 포인트·나눔 응모가 모두 폐지돼 쓸 곳이 없다 */}
+        <nav ref={navRef} className={`${styles.nav} ${open ? styles.navOpen : ""}`}>
+          {NAV.map((g) =>
+            g.href ? (
+              <Link key={g.key} href={g.href} onClick={close} className={isActive(g.match) ? styles.active : ""}>
+                {g.label}
+                <span className={styles.dot}>.</span>
+              </Link>
+            ) : (
+              <div key={g.key} className={styles.dropdown}>
+                <button
+                  className={`${styles.dropBtn} ${isActive(g.match) ? styles.active : ""}`}
+                  aria-expanded={drop === g.key}
+                  aria-haspopup="menu"
+                  onClick={() => setDrop((v) => (v === g.key ? null : g.key))}
+                >
+                  {g.label} <i className="ti ti-chevron-down" style={{ fontSize: 15 }} />
+                </button>
+                <div className={`${styles.dropMenu} ${drop === g.key ? styles.dropOpen : ""}`} role="menu">
+                  {g.items!.map((d) => (
+                    <Link key={d.href} href={d.href} onClick={close} role="menuitem">
+                      {d.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ),
+          )}
         </nav>
       </div>
     </header>

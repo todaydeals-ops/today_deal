@@ -80,7 +80,7 @@ export default function RootLayout({
                   url: "https://www.todaydeals.co.kr",
                   inLanguage: "ko-KR",
                   description:
-                    "사기 전에, 고치기 전에 찾아보는 생활 정보 채널. 매거진(가전·리빙·디지털·수면·영양제·뷰티 성분·AS 셀프체크·방송 협찬)과 생활백과를 출처와 함께 냅니다.",
+                    "사기 전에, 고치기 전에 찾아보는 생활 정보 채널. 매거진(가전·리빙·디지털·수면·영양제·뷰티 성분·AS 셀프체크)과 생활백과를 출처와 함께 냅니다.",
                 },
                 {
                   "@type": "Organization",

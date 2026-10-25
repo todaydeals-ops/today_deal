@@ -1,4 +1,4 @@
-// 연구소 홈·분류 사이트맵 — 잠자리·알약·성분·AS·협찬연구소의 입구 페이지를 www 주소로 낸다.
+// 분야 홈·분류 사이트맵 — 수면·영양제·뷰티 성분·AS 셀프체크의 입구 페이지를 www 주소로 낸다.
 //
 // 아티클은 magazine-sitemap.xml 이 담당한다. 여기는 아티클이 아닌 연구소 홈과 ?cat= 분류만.
 // ★2026-10-17 중앙 집중 전에는 서브도메인마다 자기 호스트 URL만 냈다(교차 제출 방지).
@@ -8,7 +8,6 @@ import { SLEEP_CATEGORIES } from "@/lib/magazine/sleepCategories";
 import { PILL_CATEGORIES } from "@/lib/magazine/pillCategories";
 import { BEAUTY_CATEGORIES } from "@/lib/magazine/beautyCategories";
 import { B4AS_CATEGORIES } from "@/lib/magazine/b4asCategories";
-import { SPONSOR_CATEGORIES } from "@/lib/magazine/sponsorCategories";
 import { labHref, type SubKey } from "@/lib/magazine/subdomain";
 
 export const revalidate = 3600;
@@ -18,7 +17,7 @@ const LABS: [SubKey, readonly { key: string }[]][] = [
   ["pill", PILL_CATEGORIES],
   ["beauty", BEAUTY_CATEGORIES],
   ["b4as", B4AS_CATEGORIES],
-  ["sponsor", SPONSOR_CATEGORIES],
+  // 방송 협찬(sponsor)은 2026-10-26 폐지
 ];
 
 const esc = (s: string) => s.replace(/&/g, "&amp;");

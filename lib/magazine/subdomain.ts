@@ -15,7 +15,7 @@ export const LAB_HOME = {
   pill: `${WWW}/pill`,
   beauty: `${WWW}/beauty`,
   b4as: `${WWW}/b4as`,
-  sponsor: `${WWW}/sponsor`,
+  // sponsor(방송 협찬)는 10-26 폐지 — /sponsor 와 옛 서브도메인은 proxy.ts 가 홈으로 301 한다.
 } as const;
 
 export type SubKey = keyof typeof LAB_HOME;
@@ -26,7 +26,6 @@ export const LEGACY_SUBDOMAIN: Record<string, SubKey> = {
   pill: "pill",
   beauty: "beauty",
   b4as: "b4as",
-  sponsor: "sponsor",
 };
 
 export function labHref(key: SubKey, cat?: string, page?: number): string {
@@ -41,4 +40,3 @@ export const sleepHref = (cat?: string, page?: number) => labHref("sleep", cat, 
 export const pillHref = (cat?: string, page?: number) => labHref("pill", cat, page);
 export const beautyHref = (cat?: string, page?: number) => labHref("beauty", cat, page);
 export const b4asHref = (cat?: string, page?: number) => labHref("b4as", cat, page);
-export const sponsorHref = (cat?: string, page?: number) => labHref("sponsor", cat, page);

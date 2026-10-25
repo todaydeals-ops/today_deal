@@ -20,7 +20,7 @@ import { PILL_CATEGORIES } from "@/lib/magazine/pillCategories";
 import { BEAUTY_CATEGORIES } from "@/lib/magazine/beautyCategories";
 import { B4AS_CATEGORIES } from "@/lib/magazine/b4asCategories";
 
-export type OwnerKey = "deal" | "sleep" | "pill" | "beauty" | "b4as" | "sponsor";
+export type OwnerKey = "deal" | "sleep" | "pill" | "beauty" | "b4as";
 
 export const WWW_ORIGIN = "https://www.todaydeals.co.kr";
 

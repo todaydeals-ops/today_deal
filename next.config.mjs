@@ -15,7 +15,7 @@ const nextConfig = {
     "/magazine/[slug]": ["./content/wiki/**/*"],
   },
   // ★서브도메인 rewrite(goodsleep→/goodsleep 등)는 2026-10-17 중앙 집중 때 지웠다.
-  // 연구소 홈은 이제 www/goodsleep·/pill·/beauty·/b4as·/sponsor 가 정본이고,
+  // 연구소 홈은 이제 www/goodsleep·/pill·/beauty·/b4as 가 정본이고(/sponsor 는 10-26 폐지),
   // 옛 서브도메인 요청은 proxy.ts 가 rewrite 단계보다 먼저 www 로 301 한다.
 };
 

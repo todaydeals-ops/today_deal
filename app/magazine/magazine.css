@@ -61,6 +61,24 @@
 /* 아웃링크 그룹의 첫 칸 앞에 세로 경계 — 메인 코너와 시작점을 가른다 */
 .corner-cell.is-external:first-of-type { border-left: 2px solid #ddd5c8; }
 
+/* 메뉴 칸 — 대메뉴 4개(lib/nav.ts). 2026-10-26 재편. 단독 메뉴는 .corner-cell(칸 전체 링크),
+   묶음 메뉴는 .menu-group(칸 안 소메뉴 링크 — 칸 자체는 반전하지 않고 소메뉴 줄만 반전) */
+.mz-menu-index {
+  border-top: 1px solid rgba(22, 20, 15, 0.16);
+  border-bottom: 1px solid rgba(22, 20, 15, 0.08);
+  display: grid; grid-template-columns: repeat(4, 1fr);
+}
+.mz-menu-index .corner-cell, .menu-group { padding: 20px 16px; }
+.mz-menu-index .cc-d { word-break: keep-all; }
+.menu-group { border-right: 1px solid #ddd5c8; }
+.menu-group:last-child { border-right: none; }
+.menu-items { display: flex; flex-direction: column; gap: 2px; margin-top: 12px; border-top: 1px dashed #ddd5c8; padding-top: 8px; }
+.menu-item { display: block; text-decoration: none; color: #16140f; padding: 7px 8px; margin: 0 -8px; border-radius: 6px; transition: background 0.15s ease; }
+.menu-item .mi-t { display: flex; align-items: center; gap: 7px; font-weight: 700; font-size: 14px; }
+.menu-item .mi-d { display: block; font-size: 11.5px; color: #76726b; line-height: 1.5; margin-top: 2px; padding-left: 14px; word-break: keep-all; }
+.menu-item:hover { background: #16140f; color: #fff; }
+.menu-item:hover .mi-d { color: #cdc6ba; }
+
 /* 잠자리연구소 6분류 인덱스 — CornerIndex 카드 틀 재사용, 한 줄(6열) */
 .sleep-cat-index {
   border-top: 1px solid rgba(22, 20, 15, 0.16);
@@ -141,6 +159,10 @@
   .corner-cell:nth-child(2n) { border-right: none; }
   /* 2열에서는 아웃링크 왼쪽 띠가 어정쩡하게 걸린다 — 위쪽 띠로 바꾼다 */
   .corner-cell.is-external:first-of-type { border-left: none; border-top: 2px solid #ddd5c8; }
+  /* 메뉴 칸 4개 → 2열(2행). 단독 2칸이 윗줄, 묶음 2칸이 아랫줄 */
+  .mz-menu-index { grid-template-columns: repeat(2, 1fr); }
+  .menu-group { border-bottom: 1px solid #ddd5c8; }
+  .menu-group:nth-child(2n) { border-right: none; }
   /* 피처드 세로 스택 */
   .mz-feat { grid-template-columns: 1fr; gap: 24px; }
   .mz-h1-2 { font-size: clamp(30px, 7vw, 40px); }

@@ -18,9 +18,14 @@ function canonicalRedirect(req: NextRequest): string | null {
   //   루트("/?cat=…" 포함) → 그 연구소 홈 경로(www/goodsleep?cat=…)
   //   그 밖(/magazine/<slug>, robots.txt, sub-sitemap.xml 등) → www 의 같은 경로
   // 아티클은 원래부터 정본이 www 였으므로(owner.ts) 색인된 글의 주소는 바뀌지 않는다.
-  const lab = LEGACY_SUBDOMAIN[host.split(".")[0]];
+  const sub = host.split(".")[0];
+  const lab = LEGACY_SUBDOMAIN[sub];
   if (lab && host.endsWith(".todaydeals.co.kr")) {
     return (path === "/" ? LAB_HOME[lab] : WWW_ORIGIN + path) + search;
+  }
+  // 방송 협찬 분야는 10-26 폐지 — 옛 sponsor 서브도메인 루트는 홈으로(분야 홈이 없어졌다).
+  if (sub === "sponsor" && host.endsWith(".todaydeals.co.kr")) {
+    return path === "/" ? `${WWW_ORIGIN}/` : WWW_ORIGIN + path + search;
   }
   return null;
 }
@@ -31,8 +36,22 @@ function canonicalRedirect(req: NextRequest): string | null {
 const DEAL_HUBS = new Set(["/deals", "/recommended", "/board", "/giveaway"]);
 const DEAL_DETAIL = /^\/(?:deals|deal|recommended|board|giveaway)\/.+/;
 
-function goneResponse(): NextResponse {
-  const html = `<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="robots" content="noindex"><meta name="viewport" content="width=device-width,initial-scale=1"><title>종료된 페이지 | 오늘의딜</title></head><body style="font-family:Pretendard,-apple-system,sans-serif;max-width:560px;margin:80px auto;padding:0 20px;color:#16140f;line-height:1.7"><h1 style="font-size:24px">이 페이지는 종료됐어요</h1><p>오늘의딜은 딜 소개를 마치고, 사기 전에·고치기 전에 찾아보는 정보 채널로 바뀌었습니다.</p><p><a href="/" style="color:#ff5a3c">오늘의딜 매거진</a> · <a href="/wiki" style="color:#ff5a3c">생활백과</a> · <a href="/wiki/error-codes" style="color:#ff5a3c">가전 에러코드 사전</a></p></body></html>`;
+// ★2026-10-26 방송 협찬 분야 폐지(사장님 지시 "방송협찬 카테고리는 삭제"). 분야 홈은 홈으로 301,
+//   소속 글 5편은 410. DB 행은 is_published=false 로 내렸을 뿐 지우지 않았다(백업 .work/sponsor-retired-2026-10-26.json).
+const RETIRED_HUBS = new Set(["/sponsor"]);
+const RETIRED_ARTICLES = new Set([
+  "linked-programming-basics",
+  "linked-programming-numbers",
+  "health-food-broadcast-sanctions",
+  "sponsorship-disclosure-gap",
+  "youtube-vs-broadcast-adrule",
+].map((s) => `/magazine/${s}`));
+
+const GONE_DEAL = "오늘의딜은 딜 소개를 마치고, 사기 전에·고치기 전에 찾아보는 정보 채널로 바뀌었습니다.";
+const GONE_SECTION = "방송 협찬 분야는 운영을 마쳤습니다. 사기 전에·고치기 전에 찾아보는 다른 정보로 안내해 드릴게요.";
+
+function goneResponse(msg = GONE_DEAL): NextResponse {
+  const html = `<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="robots" content="noindex"><meta name="viewport" content="width=device-width,initial-scale=1"><title>종료된 페이지 | 오늘의딜</title></head><body style="font-family:Pretendard,-apple-system,sans-serif;max-width:560px;margin:80px auto;padding:0 20px;color:#16140f;line-height:1.7"><h1 style="font-size:24px">이 페이지는 종료됐어요</h1><p>${msg}</p><p><a href="/" style="color:#ff5a3c">오늘의딜 매거진</a> · <a href="/wiki" style="color:#ff5a3c">생활백과</a> · <a href="/wiki/error-codes" style="color:#ff5a3c">가전 에러코드 사전</a></p></body></html>`;
   return new NextResponse(html, { status: 410, headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex" } });
 }
 
@@ -46,6 +65,10 @@ export function proxy(req: NextRequest) {
   // ── 폐지된 딜 영역 ──
   if (DEAL_HUBS.has(path)) return NextResponse.redirect(`${WWW_ORIGIN}/`, 301);
   if (DEAL_DETAIL.test(path)) return goneResponse();
+
+  // ── 폐지된 분야(방송 협찬) ──
+  if (RETIRED_HUBS.has(path)) return NextResponse.redirect(`${WWW_ORIGIN}/`, 301);
+  if (RETIRED_ARTICLES.has(path)) return goneResponse(GONE_SECTION);
 
   // ── 관리자 보호 ──
   // matcher 를 정본화 때문에 넓혔으므로, 보호 대상은 여기서 정확히 골라낸다.

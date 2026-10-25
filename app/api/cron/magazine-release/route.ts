@@ -110,7 +110,7 @@ export async function GET(request: Request): Promise<Response> {
     { field: "건강기능식품", label: "영양제", days: [1, 4] },   // 월·목
     { field: "뷰티·성분", label: "뷰티 성분", days: [3, 6] },      // 수·토
     { corner: "repair", label: "AS 셀프체크", days: [2, 0] },         // 화·일
-    { field: "방송·협찬", label: "방송 협찬", days: [0, 3] },        // 일·수 (잠자리에서 넘겨받은 화요일)
+    // 방송 협찬(일·수)은 2026-10-26 폐지. 내린 글 5편이 메인 풀로 새지 않게 field 는 SUB_MEDIA_FIELDS 에 남겨 둔다.
   ];
   const subReleased: string[] = [];
   for (const s of SUB_SCHEDULE) {

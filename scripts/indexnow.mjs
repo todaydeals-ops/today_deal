@@ -34,7 +34,7 @@ if (args.includes("--wiki")) {
     if (f.endsWith(".json") && !f.startsWith("_")) urls.add(`${SITE}/wiki/${f.replace(/\.json$/, "")}`);
   }
 }
-if (args.includes("--labs")) for (const p of ["goodsleep", "pill", "beauty", "b4as", "sponsor"]) urls.add(`${SITE}/${p}`);
+if (args.includes("--labs")) for (const p of ["goodsleep", "pill", "beauty", "b4as"]) urls.add(`${SITE}/${p}`);
 const ri = args.indexOf("--recent");
 if (ri >= 0) {
   const n = Number(args[ri + 1]) || 30;
