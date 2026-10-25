@@ -54,13 +54,16 @@ const WIKI_MERGED: Record<string, string> = {
   "/wiki/creatine": "/magazine/creatine-safety",
   "/wiki/lutein": "/magazine/lutein-eye-supplement",
   "/wiki/mineral-vs-chemical-sunscreen": "/magazine/physical-vs-chemical-sunscreen",
+  // ★같은 날 에러코드도 폐지(사장님 "에러코드도 삭제") — AS 셀프체크와 중첩. 사전은 AS 홈, 로보락 항목은 청소기가 속한 생활가전 분류로.
+  "/wiki/error-codes": "/b4as",
+  "/wiki/roborock-error-codes": "/b4as?cat=living",
 };
 
 const GONE_DEAL = "오늘의딜은 딜 소개를 마치고, 사기 전에·고치기 전에 찾아보는 정보 채널로 바뀌었습니다.";
 const GONE_SECTION = "방송 협찬 분야는 운영을 마쳤습니다. 사기 전에·고치기 전에 찾아보는 다른 정보로 안내해 드릴게요.";
 
 function goneResponse(msg = GONE_DEAL): NextResponse {
-  const html = `<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="robots" content="noindex"><meta name="viewport" content="width=device-width,initial-scale=1"><title>종료된 페이지 | 오늘의딜</title></head><body style="font-family:Pretendard,-apple-system,sans-serif;max-width:560px;margin:80px auto;padding:0 20px;color:#16140f;line-height:1.7"><h1 style="font-size:24px">이 페이지는 종료됐어요</h1><p>${msg}</p><p><a href="/" style="color:#ff5a3c">오늘의딜 매거진</a> · <a href="/wiki" style="color:#ff5a3c">생활백과</a> · <a href="/wiki/error-codes" style="color:#ff5a3c">가전 에러코드 사전</a></p></body></html>`;
+  const html = `<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="robots" content="noindex"><meta name="viewport" content="width=device-width,initial-scale=1"><title>종료된 페이지 | 오늘의딜</title></head><body style="font-family:Pretendard,-apple-system,sans-serif;max-width:560px;margin:80px auto;padding:0 20px;color:#16140f;line-height:1.7"><h1 style="font-size:24px">이 페이지는 종료됐어요</h1><p>${msg}</p><p><a href="/" style="color:#ff5a3c">오늘의딜 매거진</a> · <a href="/wiki" style="color:#ff5a3c">생활백과</a> · <a href="/b4as" style="color:#ff5a3c">AS 셀프체크</a></p></body></html>`;
   return new NextResponse(html, { status: 410, headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex" } });
 }
 

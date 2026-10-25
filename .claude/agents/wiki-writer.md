@@ -22,7 +22,7 @@ node scripts/wiki-verify.mjs <slug>
 ```json
 {
   "slug": "gounbal-foot-cream",            // 영문 소문자·숫자·하이픈, 파일명과 같게
-  "type": "video-pick",                    // video-pick | sale | product | gift | error-code  (★ingredient 는 2026-10-26 폐지 — 성분은 영양제·뷰티 성분 분야 글이 맡는다. 게이트가 막는다)
+  "type": "video-pick",                    // video-pick | sale | product | gift  (★ingredient·error-code 는 2026-10-26 폐지 — 영양제·뷰티 성분·AS 셀프체크 분야와 중첩. 게이트가 막는다)
   "title": "고운발 크림",                    // 표제어(사전 항목 이름)
   "aliases": ["백지영 발크림", "웰빙헬스 고운발"], // 사람들이 실제로 치는 다른 이름·검색어 3~8개
   "seoTitle": "백지영 발크림 고운발 크림, 영상 속 노란 통은 어느 회사 것일까",
@@ -84,7 +84,9 @@ node scripts/wiki-verify.mjs <slug>
 - 참여 범위·할인 방식은 공지로 확인된 것만.
 - 독자가 할 일로 끝낸다: 언제 장바구니를 채우면 되는지, 무엇을 미리 확인할지.
 
-## 6-2) 에러코드 (error-code) 규칙 — 2026-10-20 추가
+## 6-2) 에러코드 (error-code) 규칙 — 2026-10-20 추가 · ★2026-10-26 폐지
+
+> ★이 타입은 더 쓰지 않는다(사장님 "에러코드도 삭제" — AS 셀프체크와 중첩). 게이트가 막는다. 아래는 기록용.
 
 검색 유입이 실제로 들어오는 유형이다(GA4·서치콘솔 실측: 유입 상위가 거의 전부 AS 셀프체크 글). 독자는 **화면에 뜬 코드를 그대로 검색창에 친다.**
 

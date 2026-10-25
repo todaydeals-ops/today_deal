@@ -15,7 +15,7 @@ export const dynamic = "force-static";
 
 export const metadata: Metadata = {
   title: "오늘의딜 생활백과 — 사기 전에, 고치기 전에 찾아보는 정본",
-  description: "영상 속 그 제품의 정체, 세일 기간, 가전 에러코드까지. 근거 자료를 붙여 항목별로 정리한 생활백과입니다.",
+  description: "영상 속 그 제품의 정체와 세일 기간·혜택. 근거 자료를 붙여 항목별로 정리한 생활백과입니다.",
   alternates: { canonical: WIKI_BASE },
 };
 
@@ -48,7 +48,6 @@ export default function WikiHome() {
               {ORDER.filter((t) => entriesByType(t).length).map((t) => (
                 <a key={t} href={`#${t}`}>{WIKI_TYPE_LABEL[t]}</a>
               ))}
-              <Link href="/wiki/error-codes">가전 에러코드 사전</Link>
               {people.length > 0 && <a href="#people">인물 색인</a>}
               <a href="#ganada">가나다</a>
             </div>

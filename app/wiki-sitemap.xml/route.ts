@@ -8,7 +8,6 @@ export function GET(): Response {
   const newest = entries[0]?.updated ?? new Date().toISOString().slice(0, 10);
   const urls = [
     `<url><loc>${WIKI_BASE}</loc><lastmod>${newest}</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>`,
-    `<url><loc>${WIKI_BASE}/error-codes</loc><changefreq>daily</changefreq><priority>0.9</priority></url>`,
     ...entries.map((e) => `<url><loc>${wikiUrl(e.slug)}</loc><lastmod>${e.updated}</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>`),
   ];
   return new Response(
