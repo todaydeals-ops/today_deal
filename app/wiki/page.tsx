@@ -15,12 +15,13 @@ export const dynamic = "force-static";
 
 export const metadata: Metadata = {
   title: "오늘의딜 생활백과 — 사기 전에, 고치기 전에 찾아보는 정본",
-  description: "영상 속 그 제품의 정체와 세일 기간·혜택. 근거 자료를 붙여 항목별로 정리한 생활백과입니다.",
+  description: "세일 기간과 혜택, 세금 신고·환급·지원금 신청 일정, 영상 속 그 제품의 정체. 근거 자료를 붙여 항목별로 정리한 생활백과입니다.",
   alternates: { canonical: WIKI_BASE },
 };
 
-const ORDER: WikiType[] = ["video-pick", "sale", "ingredient", "product", "gift", "error-code"];
+const ORDER: WikiType[] = ["sale", "apply", "video-pick", "ingredient", "product", "gift", "error-code"];
 const BLURB: Record<WikiType, string> = {
+  apply: "세금 신고·환급·지원금, 언제 어디서 신청하는지",
   "video-pick": "연예인·유튜버 영상에 나온 그 제품, 정확히 어느 회사 것인지",
   sale: "세일이 언제 하는지, 작년엔 언제였는지",
   ingredient: "영양제·화장품 성분, 무엇을 보고 고르면 되는지",

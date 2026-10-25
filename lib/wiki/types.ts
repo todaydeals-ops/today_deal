@@ -13,7 +13,9 @@ export type WikiType =
   | "ingredient" // 성분 — 영양제·화장품 성분
   | "product" // 제품 — 고르는 법·가격대·흔한 고장·관리
   | "gift" // 선물 — 관계·나이·예산
-  | "error-code"; // 에러코드 — 브랜드×제품 에러 표시 의미표
+  | "error-code" // 에러코드 — 브랜드×제품 에러 표시 의미표
+  | "apply"; // 신청·환급 달력 — 세금 신고·환급·지원금, 언제 어디서 신청하는지(2026-10-26 신설)
+// ★ingredient·error-code 는 2026-10-26 폐지(분야와 중첩) — 타입은 옛 항목 호환용으로만 남긴다. 게이트가 새 항목을 막는다.
 
 export const WIKI_TYPE_LABEL: Record<WikiType, string> = {
   "video-pick": "영상 속 그 제품",
@@ -22,6 +24,7 @@ export const WIKI_TYPE_LABEL: Record<WikiType, string> = {
   product: "제품",
   gift: "선물",
   "error-code": "에러코드",
+  apply: "신청·환급 달력",
 };
 
 export type Block =
@@ -72,6 +75,20 @@ export interface WikiEntry {
     end?: string;
     lastYear?: { start: string; end: string; source: string };
     organizer: string;
+  };
+  /** 신청·환급 달력 전용 — 날짜를 틀리면 독자가 돈을 잃는 영역이라 근거·확인 상태를 필드로 둔다 */
+  apply?: {
+    agency: string; // 담당 기관 — "국세청"
+    where: string; // 신청·조회하는 곳 — "홈택스·손택스, 가까운 세무서"
+    cycle: string; // 해마다 돌아오는 시기 — "매년 5월 1일~31일" / "연중 상시"
+    basis?: string; // 기한의 법적 근거 — "소득세법 제70조"
+    next: {
+      status: "확정" | "미발표" | "상시"; // 다가오는 회차가 공고됐는지. 상시 = 기한 없이 언제든
+      start?: string; // 확정일 때만 YYYY-MM-DD
+      end?: string;
+      label?: string; // "2027년 정기 신청" 같은 회차 이름
+    };
+    lastYear?: { start: string; end: string; source: string }; // 미발표면 직전 회차 실제 일정
   };
   related?: { entries?: string[]; articles?: string[] };
   /** 근거로 쓴 팩트 id(content/research/facts) — 출처가 바뀌면 이 항목도 고친다 */

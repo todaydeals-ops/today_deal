@@ -13,10 +13,10 @@ const ROOT = path.resolve(import.meta.dirname, "..");
 const DIR = path.join(ROOT, "content", "wiki");
 const RES = path.join(ROOT, "content", "research");
 
-const TYPES = ["video-pick", "sale", "ingredient", "product", "gift", "error-code"];
+const TYPES = ["video-pick", "sale", "ingredient", "product", "gift", "error-code", "apply"];
 const KINDS = ["공식", "후기", "영상", "언론"];
 // 본문 최소 분량(공백 제외). 찾아보는 항목이라 매거진(2,300자)보다 짧아도 되지만 얇으면 안 된다.
-const MIN_CHARS = { "video-pick": 1300, sale: 900, ingredient: 1800, product: 1800, gift: 1500, "error-code": 900 };
+const MIN_CHARS = { "video-pick": 1300, sale: 900, ingredient: 1800, product: 1800, gift: 1500, "error-code": 900, apply: 1300 };
 
 // 부정묘사 — scripts/magazine-verify.mjs 와 같은 기준(다루는 제품은 앞으로 팔고 광고를 유치할 대상이다)
 const NO = "(?:습니다|어요|다(?![고는을면]))";
@@ -98,6 +98,11 @@ for (const file of files) {
   need(em === 0, `em-dash ${em}개`);
   const neg = [...new Set(body.match(BODY_NEG) || [])];
   need(!neg.length, `부정묘사(${neg.join("/")})`);
+  // 조사 과정 노출 금지(10-26) — "이번 자료에서 확인하지 못했어요"는 독자에게 할 일이 아니라 우리 사정이다.
+  //   명세 §7 에 있던 규칙인데 19편 중 9편이 어겼다 → 기계로 막는다. 다음 일정이 공고 전이면 "아직 발표 전이에요, 나오면 고칩니다"로 쓴다.
+  const PROC = /이번 자료|조사한 (?:기사|자료)|확인하지 못(?:했|함|해)|확인되지 않았|싣지 않았|적지 않았|자료로 확인된 (?:게|것이) 없|원문은 확인하지|안내 문구는 없|밝힌 안내|확인된 자료가 없/g;
+  const proc = [...new Set(body.match(PROC) || [])];
+  need(!proc.length, `조사 과정 노출(${proc.join("/")}) — 독자가 할 일로 바꿀 것`);
 
   // 출처: 종류 값 + 리서치 저장소 실재 여부
   for (const s of e.sources) {
@@ -109,6 +114,8 @@ for (const file of files) {
     let deny = DENY.find((d) => d.re.test(u));
     // 세일 달력은 주최사(쇼핑몰) 뉴스룸·보도자료가 일정의 1차 근거다 — 상품 페이지가 아니라 발표문이면 허용
     if (deny && e.type === "sale" && deny.why === "쇼핑몰" && /news|press|newsroom|\/ir\b|media/i.test(u)) deny = undefined;
+    // asiae.co.kr 은 헬스기기 배치에서 건강 효능 주장 출처로 막은 것이다(09-01). 세일 일정(유통사 발표 보도)은 건강 주장이 아니라 허용(10-26).
+    if (deny && e.type === "sale" && /asiae\.co\.kr/i.test(u)) deny = undefined;
     need(!deny, `배제 대상 출처(${deny?.why}): ${s.url}`);
     // 사이트 첫 화면은 근거가 아니다 — 개별 문서 링크여야 한다
     try {
@@ -143,7 +150,25 @@ for (const file of files) {
       // 미발표인데 2026 행사 날짜를 확정처럼 쓰면 안 된다.
       // 행사 달(11·12월)만 본다 — "2026년 10월 18일 확인" 같은 확인 시점까지 막으면 집필이 확인일을 지운다(10-18 오탐).
       need(!/2026[.\-년\s]*1[12][.\-월\s]*\d{1,2}/.test(e.seoTitle + e.description + e.summary.join(" ")), "미발표인데 2026 날짜를 단정");
+      // 10-26 세일 달력을 1년치로 넓히며 추가 — 2027 행사(설 선물세트·프라임데이 등)도 공고 전이면 날짜를 단정하지 않는다.
+      need(!/2027[.\-년\s]*\d{1,2}[.\-월\s]*\d{1,2}/.test(e.seoTitle + e.description + e.summary.join(" ")), "미발표인데 2027 날짜를 단정");
     }
+  }
+
+  // ★신청·환급 달력(2026-10-26 신설) — 날짜·대상을 틀리면 독자가 가산세·환급 누락으로 돈을 잃는다.
+  //   그래서 ① 기관 공식 출처 ② 금전 손실 경고 상자 ③ 공고 전 회차의 날짜 단정 금지를 기계로 막는다.
+  if (e.type === "apply") {
+    const a = e.apply;
+    need(a && a.agency && a.where && a.cycle, "apply.agency·where·cycle 필수");
+    need(a?.next && ["확정", "미발표", "상시"].includes(a.next.status), "apply.next.status 값 오류(확정|미발표|상시)");
+    if (a?.next?.status === "확정") need(/^\d{4}-\d{2}-\d{2}$/.test(a.next.start || "") && /^\d{4}-\d{2}-\d{2}$/.test(a.next.end || ""), "확정인데 next.start/end(YYYY-MM-DD) 없음");
+    if (a?.next?.status === "미발표") {
+      need((a.lastYear?.start && a.lastYear?.end) || a.basis, "공고 전이면 lastYear(직전 회차 실제 일정) 또는 basis(법정 기한 근거) 필수");
+      // 공고 전인 회차(2027)의 날짜를 제목·설명·요약에서 단정하지 않는다. 법정 기한은 "매년 5월 1일~31일"처럼 연도 없이 쓴다.
+      need(!/2027[.\-년\s]*\d{1,2}[.\-월\s]*\d{1,2}/.test(e.seoTitle + e.description + e.summary.join(" ")), "공고 전인데 2027 날짜를 단정");
+    }
+    need(e.sources.some((s) => s.kind === "공식" && /\.(go|or)\.kr$|\.gov\.kr$|mnuri\.kr$/.test((() => { try { return new URL(s.url).hostname; } catch { return ""; } })())), "기관 공식 출처(.go.kr·.or.kr) 1곳 이상 필요");
+    need(e.sections.some((s) => s.blocks.some((b) => b.note)), "금전 손실 경고(note 블록) 1개 이상 필요 — 기한·대상·가산세 등");
   }
 
   if (bad.length) { console.log(`✗ ${name}  ${bad.join(" · ")}`); fail++; }

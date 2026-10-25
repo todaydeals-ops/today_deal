@@ -1,0 +1,304 @@
+{
+  "topic": "김나영 nofilterTV 「우아한 어른여자들이 입는 옷! 출근룩 부터 주말룩 까지 활용도 높은 아이템」(2026-10-21) — 영상 속 브랜드 시에(SIE)·에세이즈와 SSF샵 26 F/W 라이브 혜택 조사",
+  "brand": "시에(SIE) · 에세이즈(Essais)",
+  "article": "예정",
+  "captured": "2026-10-26",
+  "reused_facts": [],
+  "declined_facts": [
+    { "id": "the-row-white-denim-official-list", "why": "다른 영상(rhqotvt2Q10)의 더로우 화이트진 — 이번 영상 시에·에세이즈 아이템과 브랜드·제품이 달라 무관" },
+    { "id": "hera-sensual-nude-line-2022-launch", "why": "다른 영상의 헤라 립 제품 — 이번 영상 아이템이 아님" },
+    { "id": "kimnayoung-sub-gucci-loafer-age", "why": "다른 영상 자막의 구찌 로퍼 발언 — 이번 영상 아이템이 아님" },
+    { "id": "kimnayoung-sub-betwoman-knit-brand", "why": "다른 영상 자막의 벳우먼 니트 — 이번 영상 아이템이 아님" }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sie-womens-wear-category",
+      "claim": "시에(SIE)는 여성 패션 브랜드(컨템포러리 여성복)로 소개되어 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "매일신문(kbmaeil) 2026-09-10 「대구신세계, 여성 구두 브랜드 ‘에세이즈’ 반짝매장 운영」 및 중고 플랫폼 fruitsfamily.com 브랜드 소개문(시에 항목)",
+      "source_url": "https://www.kbmaeil.com/article/20260910500223",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "시에(SIE)",
+        "category": "여성 패션(컨템포러리 여성복)",
+        "line": "브랜드 전체",
+        "years": "2026-10-26 확인 시점",
+        "region": "KR"
+      },
+      "caution": "두 출처 모두 브랜드 본사 공식 발행물이 아니다(언론 보도 + 리테일러 소개문). 브랜드 공식 소개 페이지는 확보하지 못했다. '컨템포러리 여성복'이라는 분류는 리테일러 소개문 표현이므로 따옴표 없이 단정하지 말고 '~로 소개된다'로 쓴다.",
+      "cautionSource": "매일신문 기사 원문(2026-09-10) 및 fruitsfamily.com/brand/SIE 소개문 실측 (2026-10-26)"
+    },
+    {
+      "id": "sie-founded-2020-seoul-unconfirmed",
+      "claim": "시에(SIE)가 2020년 서울에서 시작된 브랜드라는 설명이 중고 플랫폼 소개문에 있으나, 브랜드 공식 자료로 설립 연도를 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "중고 플랫폼 fruitsfamily.com 브랜드 소개문(리테일러 작성) — 공식 확인 실패",
+      "source_url": "https://fruitsfamily.com/brand/SIE",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "시에(SIE)",
+        "category": "여성복",
+        "line": "브랜드 전체",
+        "years": "2020 (소개문 기재, 미검증)",
+        "region": "KR"
+      },
+      "caution": "글에 '2020년 시작'이라고 쓰지 않는다. 공식 소개 페이지 또는 사업자 정보로 확인되기 전까지 '시에는 여성복 브랜드다' 수준까지만 쓴다.",
+      "cautionSource": "fruitsfamily.com 소개문 실측(2026-10-26). 공식 근거로는 확인하지 못했으므로 연도 수치는 출처가 아니라 미검증 주장이다."
+    },
+    {
+      "id": "sie-operating-company-unconfirmed",
+      "claim": "시에(SIE) 브랜드를 운영하는 법인명·사업자 정보를 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "웹 검색 4회 및 기사·리테일러 페이지 대조 — 법인명 미발견. 중고 플랫폼 하단 운영사(후루츠패밀리컴퍼니)는 플랫폼 운영사이지 시에 사업자가 아님",
+      "source_url": "https://fruitsfamily.com/brand/SIE",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "시에(SIE)",
+        "category": "운영 법인",
+        "line": "브랜드 전체",
+        "years": "2026-10-26 확인 시점",
+        "region": "KR"
+      },
+      "caution": "'시에는 ○○(주)가 운영한다'처럼 법인명을 쓰지 않는다. SSF샵 기획전 페이지의 '삼성물산(주) 패션부문' 표기는 판매몰 운영 주체이며 시에 운영사가 아니다(별도 팩트 참조).",
+      "cautionSource": "SSF샵 기획전 페이지 하단 표기와의 구분을 실측으로 확인 (2026-10-26)"
+    },
+    {
+      "id": "sie-official-site-unconfirmed",
+      "claim": "시에(SIE)의 공식 홈페이지·공식 브랜드 소개 페이지 URL을 확인하지 못했다. 설명란의 공식 인스타그램 핸들(@sie___official)은 크리에이터 기재이며 직접 열어 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "웹 검색 결과에 공식 사이트 없음. 설명란 기재 인스타그램 핸들은 접근 미확인(인스타그램 페이지 WebFetch 불가)",
+      "source_url": "https://www.ssfshop.com/special/123661/view",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "시에(SIE)",
+        "category": "공식 채널",
+        "line": "브랜드 전체",
+        "years": "2026-10-26 확인 시점",
+        "region": "KR"
+      },
+      "caution": "공식 사이트를 추측해 URL을 쓰지 않는다. 글에서 브랜드 공식 채널을 안내하려면 사장님이 직접 확인한 URL을 쓴다. 판매 링크는 SSF샵 기획전으로 대체한다.",
+      "cautionSource": "검색 결과 및 WebFetch 실측 (2026-10-26)"
+    },
+    {
+      "id": "essais-shoe-brand-sie-operated",
+      "claim": "에세이즈는 여성 패션 브랜드 'SIE'를 운영하는 회사가 새로 선보인 여성 구두 브랜드로 보도되었다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "매일신문(kbmaeil) 2026-09-10 등록 / 2026-09-11 6면 「대구신세계, 여성 구두 브랜드 ‘에세이즈’ 반짝매장 운영」",
+      "source_url": "https://www.kbmaeil.com/article/20260910500223",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "에세이즈(Essais)",
+        "category": "여성 구두(신발)",
+        "line": "브랜드 전체",
+        "years": "2026-09 보도 시점",
+        "region": "KR"
+      },
+      "caution": "언론 보도 기준이다. 브랜드 본사의 공식 소개가 아니므로 공식 발표처럼 쓰지 않는다. 기사에 운영 회사명은 없다. 두 브랜드를 '모회사·자회사'로 단정하지 말고 '시에를 운영하는 회사가 선보인 신발 브랜드'로 쓴다. 영상 발화(4:09 '에세이즈라는 시에에서 하는 브랜드')와 SSF 기획전의 '시에·에세이즈' 병기도 같은 방향이지만 공식 근거는 아니다.",
+      "cautionSource": "매일신문 기사 원문 실측 (2026-10-26)"
+    },
+    {
+      "id": "essais-romanization-essaiz-unconfirmed",
+      "claim": "매일신문 기사는 브랜드를 '에세이즈(Essais)'로 표기했고, 'essaiz' 철자는 기사에서 확인되지 않았다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "매일신문(kbmaeil) 2026-09-10 기사 본문 표기",
+      "source_url": "https://www.kbmaeil.com/article/20260910500223",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "에세이즈",
+        "category": "영문 표기",
+        "line": "브랜드명 표기",
+        "years": "2026-09 보도 시점",
+        "region": "KR"
+      },
+      "caution": "영상 자막·설명란은 '에세이즈'로만 표기한다. 영문 철자를 'essaiz'로 단정하지 않는다. 영문 표기가 필요하면 공식 자료로 확인한 뒤 쓴다.",
+      "cautionSource": "매일신문 기사 본문 표기 실측 (2026-10-26)"
+    },
+    {
+      "id": "ssf-sie-essais-26fw-live-event",
+      "claim": "SSF샵은 시에·에세이즈 26 F/W 라이브 혜택 기획전 '[SIE] 그녀가 선택한, 입어만 볼게요 26 F/W 라이브 최대 혜택'을 진행했고, 라이브 혜택 기간은 2026-10-21(수) 20:00 ~ 10-26(월) 23:59, 본방송은 10-21 20:00 ~ 21:30이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SSF샵(ssfshop.com) 기획전 페이지 「[SIE] 그녀가 선택한, 입어만 볼게요 26 F/W 라이브 최대 혜택｜SSF SHOP」(판매몰 자체 프로모션 페이지)",
+      "source_url": "https://www.ssfshop.com/special/123661/view",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "시에·에세이즈 (SSF샵 기획전)",
+        "category": "온라인 라이브 프로모션",
+        "line": "26 F/W 라이브",
+        "years": "2026-10-21 ~ 2026-10-26",
+        "region": "KR"
+      },
+      "caution": "조사 당일(2026-10-26)이 라이브 혜택 마감일이다(23:59 종료). 글은 과거형 또는 '마감 임박' 상태로 쓰고, 발행 시점에 기간이 지났는지 재확인한다. 이 페이지는 판매몰 기획전이며 브랜드 본사 발행물이 아니다. 페이지 본문에 '선출시' 표현은 없다(별도 팩트 참조).",
+      "cautionSource": "SSF샵 기획전 페이지 실측 (2026-10-26). WebFetch 요약 결과이므로 발행 전 원문 캡처로 재확인."
+    },
+    {
+      "id": "ssf-sie-essais-payback-coupon-terms",
+      "claim": "SSF샵 시에·에세이즈 라이브 혜택은 시에·에세이즈 10% 즉시할인, 시청자 전용 5% 쿠폰(최대 10만 원), 50만 원 이상 구매 시 10% 페이백(최대 5만 원, 본방 한정), 첫 구매 고객 1만 원 페이백 추첨, 두 브랜드 교차 구매 시 1만 원 페이백, 썊핑데이 페이백(30만·50만·100만 원 이상 구매 시 5%·7%·10%, 최대 1.5만·3만·10만 원, 응모 필수)을 포함한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SSF샵(ssfshop.com) 시에·에세이즈 26 F/W 라이브 기획전 페이지 혜택 안내",
+      "source_url": "https://www.ssfshop.com/special/123661/view",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "시에·에세이즈 (SSF샵)",
+        "category": "구매 혜택(쿠폰·페이백)",
+        "line": "26 F/W 라이브",
+        "years": "2026-10-21 ~ 2026-10-26 (페이백 지급 2026-11-20 · 12-17)",
+        "region": "KR"
+      },
+      "caution": "혜택은 조건부다(본방 시청·구매 조건·응모 필수 등). 글에서 '누구나 받는다'로 쓰지 않는다. 페이백 지급일(11/20, 12/17)은 발행 시점 기준 확인이 필요하다. 조사 당일 기준 쿠폰 마감이 임박했다.",
+      "cautionSource": "SSF샵 기획전 페이지 혜택 조건 실측 (2026-10-26). 금액·기간 수치 모두 기획전 원문 기준이며 재확인 필요."
+    },
+    {
+      "id": "ssf-sie-operator-samsung-c-t-fashion",
+      "claim": "SSF샵 기획전 페이지의 운영 주체 표기는 삼성물산(주) 패션부문(호스팅·사업자 표기 동일)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "SSF샵(ssfshop.com) 기획전 페이지 하단 사업자 표기",
+      "source_url": "https://www.ssfshop.com/special/123661/view",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "SSF샵 (판매몰)",
+        "category": "운영 주체",
+        "line": "판매몰 운영",
+        "years": "2026-10-26 확인 시점",
+        "region": "KR"
+      },
+      "caution": "이것은 판매몰 SSF샵의 운영 주체다. 시에(SIE) 또는 에세이즈의 운영사가 삼성물산이라는 뜻이 아니다. 두 브랜드 운영사를 이 표기로 대체하지 않는다.",
+      "cautionSource": "SSF샵 기획전 페이지 사업자 표기 실측 (2026-10-26)"
+    },
+    {
+      "id": "ssf-press-release-seonchulsi-unconfirmed",
+      "claim": "'SIE X SSF 선출시'라는 표현은 SSF샵 기획전 페이지 본문에 없고, 영상 설명란에만 적혀 있다. 공식 보도자료로 선출시를 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "SSF샵 기획전 페이지 실측 및 웹 검색 2회(보도자료 탐색) — 선출시 공식 발표 미발견",
+      "source_url": "https://www.ssfshop.com/special/123661/view",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "시에·SSF샵",
+        "category": "선출시 발표",
+        "line": "26 F/W",
+        "years": "2026-10-21 ~ 2026-10-26",
+        "region": "KR"
+      },
+      "caution": "글에서 '공식 출시 전 SSF에서 먼저 공개'라고 단정하지 않는다. 설명란 표현으로만 인용하고 '크리에이터가 설명란에서 선출시라고 소개했다'로 쓴다.",
+      "cautionSource": "SSF샵 기획전 페이지 본문 실측 및 영상 설명란 대조 (2026-10-26)"
+    },
+    {
+      "id": "video-paid-promotion-label",
+      "claim": "유튜브 영상 시청 페이지에 '유료 프로모션 포함' 표시가 있다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "유튜브 시청 페이지 표시 (조사 요청자 직접 확인, 2026-10-26)",
+      "source_url": "https://www.youtube.com/watch?v=kLYfV2QJWDs",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "김나영 nofilterTV (영상 단위)",
+        "category": "광고 표시",
+        "line": "영상 kLYfV2QJWDs",
+        "years": "2026-10-26 확인 시점",
+        "region": "KR"
+      },
+      "caution": "이 표시는 영상 단위이며, 대가를 준 브랜드가 시에인지 SSF인지 다른 곳인지는 이 표시로 특정되지 않는다. 어느 브랜드와 어떤 계약인지 단정하지 않는다. 글에는 '유료 프로모션 표시가 붙은 영상'으로만 쓴다.",
+      "cautionSource": "유튜브 표시 실측 (2026-10-26) — 표시 대상 브랜드는 확인하지 못함"
+    },
+    {
+      "id": "video-utterance-sie-prepared-subscriber-benefit",
+      "claim": "영상에서 출연자는 '시에에서 준비해 준' 구독자 혜택이 있다고 말했다(자막 13:42~13:47 및 14:13~14:16 구간).",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "김나영 nofilterTV 영상 자막(자동 생성) 13:42~14:16 발화",
+      "source_url": "https://www.youtube.com/watch?v=kLYfV2QJWDs",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "시에(SIE)",
+        "category": "구독자 혜택 (발화 기준)",
+        "line": "출연자 발화",
+        "years": "2026-10-21 영상 기준",
+        "region": "KR"
+      },
+      "caution": "발화 기준이다. 협찬·광고 계약의 근거로 쓰지 않는다. 자막은 자동 생성이라 '시에'가 '씨에'·'C'로 받아쓰인 구간이 많다(예: '씨에에서 준비해 준'). 글에는 '출연자가 시에 측 혜택이라고 소개했다' 정도로만 쓴다.",
+      "cautionSource": "자막 13:42~14:16 실측 (2026-10-26)"
+    },
+    {
+      "id": "video-subscriber-event-essais-set",
+      "claim": "영상 설명란에 따르면 구독자 이벤트로 시에·에세이즈 베스트 세트 3종(마레 루즈 울 100 브이넥 니트 크림 + Marais Wool 100 Muffler Cream + 에세이즈 룸슈즈)을 10명에게 추첨 증정하며, 참여기간은 10/21(수)~10/26(월), 당첨자는 10/29(목) 노필터 커뮤니티와 시에 공식 인스타그램 스토리에 발표할 예정이다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "김나영 nofilterTV 영상 설명란(크리에이터 직접 기재) — 이벤트 진행 자체는 독립 확인하지 못함",
+      "source_url": "https://www.youtube.com/watch?v=kLYfV2QJWDs",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "시에·에세이즈 (구독자 이벤트)",
+        "category": "경품 이벤트",
+        "line": "노필터 구독자 이벤트",
+        "years": "2026-10-21 ~ 2026-10-29 발표 예정",
+        "region": "KR"
+      },
+      "caution": "설명란 기재 내용이다. 이벤트 자체는 크리에이터 주관이며 참여 기간이 조사 당일 마감이다. 당첨자 발표(10/29) 이후 결과는 확인하지 못했다. 경품 제품명은 설명란 표기를 그대로 옮기고 정식 제품명으로 단정하지 않는다.",
+      "cautionSource": "영상 설명란 원문 실측 (2026-10-26)"
+    },
+    {
+      "id": "item-sensulate-outer-unconfirmed",
+      "claim": "영상 속 '센슐레이트' 소재 아우터(자막 7:34)가 시에(SIE)의 어떤 제품인지 특정하지 못했다. 센슐레이트 소재가 시에 공식 자료에 나온다는 근거도 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "웹 검색 결과 — 시에 센슐레이트 코트 관련 공식 정보 없음(중고 매물 목록만 확인)",
+      "source_url": "https://www.ssfshop.com/special/123661/view",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "시에(SIE)",
+        "category": "아우터 (센슐레이트 소재)",
+        "line": "제품 미특정",
+        "years": "2026 F/W (추정, 미확인)",
+        "region": "KR"
+      },
+      "caution": "'시에 센슐레이트 코트'라고 제품명을 단정하지 않는다. 자막의 '센슐레이트'도 자동 자막이라 철자가 다를 수 있다. 소재 특성(보온 효과·패딩 대비 설명)은 출연자 발화이므로 제품 성능으로 쓰지 않는다.",
+      "cautionSource": "자막 7:34~7:48 발화 및 검색 결과 실측 (2026-10-26)"
+    },
+    {
+      "id": "item-coat-two-length-utterance",
+      "claim": "영상에서 출연자는 시에 코트가 두 가지 기장으로 나온다고 말했고(자막 6:12~6:28), 짧은 버전은 키 160cm 초반, 긴 버전은 160cm 후반 기준이라고 말했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "김나영 nofilterTV 영상 자막(자동 생성) 6:12~6:28 발화. 공식 제품 페이지로 기장 종류를 확인하지 못함",
+      "source_url": "https://www.youtube.com/watch?v=kLYfV2QJWDs",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "시에(SIE)",
+        "category": "코트 (기장 2종)",
+        "line": "제품 미특정",
+        "years": "2026 F/W",
+        "region": "KR"
+      },
+      "caution": "공식 확인 전까지 '두 가지 기장'을 사실로 쓰지 않는다. '영상에서는 짧은·긴 두 기장으로 소개됐다'로만 쓴다. 키 기준(160cm 초반/후반)은 출연자 발화이며 공식 사이즈 가이드가 아니다.",
+      "cautionSource": "자막 6:12~6:28 발화 실측 (2026-10-26). 공식 사이즈 가이드는 확인하지 못함."
+    },
+    {
+      "id": "item-essais-shoe-sh-unconfirmed",
+      "claim": "자막 11:03 '씨에에서 함께하는 브랜드 SH라는 신발'의 'SH'가 어떤 브랜드인지 확인하지 못했다. 공식 자료·기획전 어디에도 SH 브랜드는 나오지 않는다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "자막 11:03~11:07 발화 및 SSF 기획전 페이지·기사 대조 — 'SH' 미발견",
+      "source_url": "https://www.ssfshop.com/special/123661/view",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "미상 (SH)",
+        "category": "신발",
+        "line": "미확인",
+        "years": "2026-10-26 확인 시점",
+        "region": "KR"
+      },
+      "caution": "'SH'를 브랜드명으로 쓰지 않는다. 자동 자막 오인식(예: 'SIE'·'시에' 등)일 가능성도 있으므로 추정 정정도 하지 않는다. 신발은 '에세이즈'로 확인된 항목과 구분해 쓴다.",
+      "cautionSource": "자막 11:03~11:07 실측 (2026-10-26)"
+    }
+  ]
+}

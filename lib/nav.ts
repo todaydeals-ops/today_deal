@@ -51,12 +51,13 @@ const asCat = (k: string): NavItem => {
 export const NAV: NavGroup[] = [
   {
     key: "wiki", label: "생활백과", en: "WIKI", href: "/wiki", match: ["/wiki"], color: "#ff5a3c",
-    desc: "세일 일정·영상 속 그 제품, 찾아보는 정본",
+    desc: "세일 일정·신청과 환급·영상 속 그 제품, 찾아보는 정본",
     // 생활백과 홈(app/wiki/page.tsx)의 종류별 섹션 id 로 바로 간다.
     // ★10-26 성분·에러코드를 뺐다(사장님 — 뷰티 성분·영양제·AS 셀프체크와 중첩). 옛 주소는 proxy.ts WIKI_MERGED 가 분야로 301.
-    //   셋째 소메뉴는 새로 기획 중(사장님 "다른 메뉴를 기획보자") — 정해지면 여기 한 줄.
+    //   빈 칸은 신청·환급 달력(사장님 확정 — 지식iN 질문 수 실측 1위, 다른 메뉴와 겹침 0)
     items: [
       { label: "세일 달력", href: "/wiki#sale", color: "#c4553a", desc: "행사별 날짜·혜택, 확인 날짜까지" },
+      { label: "신청·환급 달력", href: "/wiki#apply", color: "#2f6b8a", desc: "세금 신고·환급·지원금, 언제 어디서" },
       { label: "영상 속 그 제품", href: "/wiki#video-pick", color: "#7a5f8a", desc: "영상에 나온 그 제품, 어느 회사 것인지" },
     ],
   },

@@ -1,0 +1,121 @@
+{
+  "topic": "아마존 프라임데이(Prime Day) — 2025·2026 실제 기간, 프라임 회원 혜택 조건, 한국 직구 시 배송·관세 주의 (생활백과 · 세일 달력 연중 행사)",
+  "brand": "Amazon (미국 아마존 · 해외직구 관점, 관세청 기준)",
+  "article": "예정",
+  "captured": "2026-10-26",
+  "reused_facts": [
+    "kr-customs-duty-free-150usd",
+    "kr-customs-process-by-transport",
+    "kr-customs-manifest-vs-declaration-2022",
+    "kr-customs-sum-taxation-rule-2022",
+    "kr-customs-pcc-required-2020",
+    "kr-customs-shipping-days-unconfirmed"
+  ],
+  "declined_facts": [
+    {
+      "id": "us-thanksgiving-2026-opm",
+      "why": "추수감사절 공휴일 날짜는 블랙프라이데이 기준 팩트다. 프라임데이 기간과 무관하므로 쓰지 않았다."
+    },
+    {
+      "id": "us-black-friday-2026-dates",
+      "why": "미국 블랙프라이데이·사이버먼데이 날짜는 프라임데이와 다른 행사다. 두 행사를 같은 달력 칸에 섞으면 안 되므로 재사용하지 않았다."
+    },
+    {
+      "id": "coupang-cublf-2025-period",
+      "why": "국내 쿠팡 쿠블프 직구 행사 기간은 아마존 프라임데이와 운영 주체·기간이 다르다. 맥락이 달라 쓰지 않았다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "amazon-prime-day-2026-period",
+      "claim": "아마존 프라임데이 2026은 2026년 6월 23일부터 26일까지 4일간 열렸다고 아마존 뉴스룸이 발표했다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Amazon 공식 뉴스룸 (aboutamazon.com) 'Prime Day June 2026' 기사",
+      "source_url": "https://aboutamazon.com/news/retail/amazon-prime-day-june-2026",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "Amazon",
+        "category": "쇼핑 세일 행사(해외)",
+        "line": "Prime Day",
+        "years": "2026",
+        "region": "미국 포함 참여국(22개국 본문 기준, 후행 4개국 별도)"
+      },
+      "caution": "2026년은 6월에 열렸다. 2025년 기간을 '매년 7월'이라고 바꿔 쓰지 말 것. 시작 시각 '미국 태평양시 자정 직후 12:01 a.m. PDT'는 공식 페이지 본문에 없고 2차 보도(9to5mac 2026-06-02)에만 있으므로 시각을 쓸 때는 원문 재확인이 필요하다. 2026 행사는 이 조사 시점(2026-10-26) 기준 이미 종료됐다.",
+      "cautionSource": "aboutamazon 2026 기사 본문('June 23 through June 26', 4일). 시각은 9to5mac 2026-06-02 기사(12:01 a.m. PDT, June 23) 2차 인용. 6월 개최는 같은 공식 페이지 기준."
+    },
+    {
+      "id": "amazon-prime-day-2026-countries-korea-excluded",
+      "claim": "아마존 프라임데이 2026 참여국 목록에 한국은 포함되지 않았다. 공식 안내 본문의 22개국(미국·영국·캐나다·독일·프랑스·멕시코 등)에 더해 호주·브라질·인도·일본은 올여름 이후 별도로 진행된다고 안내됐다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Amazon 공식 뉴스룸 (aboutamazon.com) 'Prime Day June 2026' 기사 참여국 안내",
+      "source_url": "https://aboutamazon.com/news/retail/amazon-prime-day-june-2026",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "Amazon",
+        "category": "쇼핑 세일 행사(해외)",
+        "line": "Prime Day 참여국",
+        "years": "2026",
+        "region": "KR(한국 제외 확인)"
+      },
+      "caution": "이 목록은 Prime Day 행사 참여 국가 안내일 뿐이다. 한국 아마존 사이트의 행사 적용 여부는 이 조사에서 확인하지 않았다. 국내 소비자가 미국 아마존에서 주문하면 해외직구 통관 규칙(재사용한 관세청 팩트)이 적용된다.",
+      "cautionSource": "aboutamazon 2026 기사 본문 참여국 목록(22개국) 및 후행 안내 4개국(호주·브라질·인도·일본). 페이지 요약의 '26개국'과 합산 일치."
+    },
+    {
+      "id": "amazon-prime-day-2026-member-exclusive",
+      "claim": "아마존 프라임데이 2026의 딜은 Prime 회원 전용(member-exclusive)으로 안내됐고, 회원 혜택에 빠른 무료배송(fast, free delivery with Prime)이 포함된다고 공식 뉴스룸에 적혔다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Amazon 공식 뉴스룸 (aboutamazon.com) 'Prime Day June 2026' 기사",
+      "source_url": "https://aboutamazon.com/news/retail/amazon-prime-day-june-2026",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "Amazon",
+        "category": "프라임 회원 혜택",
+        "line": "Prime Day 회원 딜",
+        "years": "2026",
+        "region": "미국 등 참여국"
+      },
+      "caution": "가입 요건, 회비, 국가별 회원 자격은 이 페이지에 없다. 회원 자격을 '가입하면 된다'로 단정하지 말고 아래 확인실패 팩트를 따를 것.",
+      "cautionSource": "aboutamazon 2026 기사 본문('member-exclusive deals', 'fast, free delivery with Prime')."
+    },
+    {
+      "id": "amazon-prime-day-2025-period-unconfirmed",
+      "claim": "아마존 프라임데이 2025의 공식 행사 기간은 이번 조사에서 확인하지 못했다",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "Amazon 공식 뉴스룸 2026 기사(2025는 '역대 최대 규모'로만 언급, 날짜 없음) · aboutamazon.com·press.aboutamazon.com 2025 추정 주소는 모두 404 (chainstoreage 2차 기사는 403으로 열람 실패)",
+      "source_url": "https://aboutamazon.com/news/retail/amazon-prime-day-june-2026",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "Amazon",
+        "category": "쇼핑 세일 행사(해외)",
+        "line": "Prime Day",
+        "years": "2025",
+        "region": "미국 포함 참여국"
+      },
+      "caution": "2025년 기간을 '7월 8일~11일' 같은 날짜로 글에 쓰지 말 것. 이 조사에서는 아마존 2025 공식 발표 원문을 열지 못했다. 2025 원문을 확보할 때까지 '2025년에도 열렸다'까지만 쓸 것. 2026년 6월 기간과 혼동하지 말 것.",
+      "cautionSource": "aboutamazon 2026 기사에 2025 날짜 미기재 확인(본문 조회). 9to5mac 2026-06-02 기사에도 2025 기간 없음 확인."
+    },
+    {
+      "id": "amazon-prime-membership-fee-unconfirmed",
+      "claim": "아마존 프라임 회원 가입 요금과 한국 거주자의 가입 가능 여부는 이번 조사에서 공식 근거로 확인하지 못했다",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "Amazon 공식 뉴스룸 2026 기사(회원 혜택만 있고 요금·가입 조건 없음)",
+      "source_url": "https://aboutamazon.com/news/retail/amazon-prime-day-june-2026",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "Amazon",
+        "category": "프라임 회원",
+        "line": "회원 요금·가입 조건",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "회비 금액이나 한국 거주자 가입 가능 여부를 글에 쓰지 말 것. 독자에게는 '회원 요금과 가입 조건은 아마존 멤버십 안내 페이지에서 직접 확인하라'고 안내하는 것이 안전하다.",
+      "cautionSource": "조사 시점 2026-10-26, aboutamazon 2026 기사 본문 확인 결과(요금·가입 요건 미기재)."
+    }
+  ]
+}

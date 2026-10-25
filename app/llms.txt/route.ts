@@ -10,7 +10,7 @@ import { LAB_HOME } from "@/lib/magazine/subdomain";
 export const dynamic = "force-static";
 
 const SITE = "https://www.todaydeals.co.kr";
-const ORDER: WikiType[] = ["video-pick", "sale", "ingredient", "product", "gift", "error-code"];
+const ORDER: WikiType[] = ["sale", "apply", "video-pick", "ingredient", "product", "gift", "error-code"];
 
 export function GET(): Response {
   const entries = allEntries();
@@ -19,7 +19,7 @@ export function GET(): Response {
   const lines = [
     "# 오늘의딜 (todaydeals.co.kr)",
     "",
-    "> 사기 전에, 고치기 전에 찾아보는 한국어 생활 정보 채널입니다. 매거진은 가전·리빙·디지털·수면·영양제·뷰티 성분·AS 셀프체크 분야의 근거 중심 글을 내고, 「생활백과」는 세일 일정·영상 속 제품을 항목별 정본으로 정리합니다. 모든 글·항목은 출처 링크를 붙이고, 가격·일정에는 확인 날짜를 적습니다. 상품 판매·딜 중개는 하지 않습니다.",
+    "> 사기 전에, 고치기 전에 찾아보는 한국어 생활 정보 채널입니다. 매거진은 가전·리빙·디지털·수면·영양제·뷰티 성분·AS 셀프체크 분야의 근거 중심 글을 내고, 「생활백과」는 세일 일정·세금 신고와 환급·지원금 신청 일정·영상 속 제품을 항목별 정본으로 정리합니다. 모든 글·항목은 출처 링크를 붙이고, 가격·일정에는 확인 날짜를 적습니다. 상품 판매·딜 중개는 하지 않습니다.",
     "",
     "## 편집 원칙",
     "- 근거 자료(공식·언론·후기·영상)를 항목마다 구분 표기합니다. 확인되지 않은 내용은 확인되지 않았다고 씁니다.",

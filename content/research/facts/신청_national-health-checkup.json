@@ -1,0 +1,173 @@
+{
+  "topic": "국가건강검진(일반건강검진·2030 무료건강검진) 대상 조회 — 신청·환급 달력 항목",
+  "brand": "국민건강보험공단",
+  "article": "예정",
+  "captured": "2026-10-26",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "checkup-general-period",
+      "claim": "일반건강검진의 검진기간은 매년 1월 1일부터 12월 31일까지이며, 2026년 검진기간도 2026년 1월 1일~12월 31일이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민건강보험공단 건강모아 — 일반건강검진 안내 (wbhaca04500m01)",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/wbhaca04500m01.do",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "국민건강보험공단",
+        "category": "국가건강검진",
+        "line": "일반건강검진",
+        "years": "매년 (2026 포함)",
+        "region": "KR"
+      },
+      "caution": "검진기간 종료일은 12월 31일이며, 전년도 미수검자는 공단에 신청하면 해당 연도 대상으로 추가 등록할 수 있다(checkup-prev-year-add). 종료 임박을 알릴 때는 이 기간 기준으로 쓸 것.",
+      "cautionSource": "검진기간 1.1~12.31 문구는 같은 URL 원문."
+    },
+    {
+      "id": "checkup-general-target",
+      "claim": "일반건강검진 대상은 지역세대주, 직장가입자, 20세 이상 세대원과 피부양자, 20~64세 의료급여수급권자다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민건강보험공단 건강모아 — 일반건강검진 안내 (wbhaca04500m01)",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/wbhaca04500m01.do",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "국민건강보험공단",
+        "category": "국가건강검진",
+        "line": "일반건강검진 (성인)",
+        "years": "조회 시점",
+        "region": "KR"
+      },
+      "caution": "2030 무료건강검진(20~39세 대상 별도 제도)과 일반건강검진 대상을 한 문장에 섞지 말 것. 2030 무료검진은 checkup-2030-birthyear-parity 참조.",
+      "cautionSource": "연령 기준 20세·20~64세는 같은 URL 원문."
+    },
+    {
+      "id": "checkup-general-cycle",
+      "claim": "일반건강검진 주기는 '매 2년마다 1회'이며, 비사무직은 매년 실시한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민건강보험공단 건강모아 — 일반건강검진 안내 (wbhaca04500m01)",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/wbhaca04500m01.do",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "국민건강보험공단",
+        "category": "국가건강검진",
+        "line": "일반건강검진 주기(직업 구분별)",
+        "years": "조회 시점",
+        "region": "KR"
+      },
+      "caution": "주기는 사무직/비사무직 구분으로 갈린다. 원문에는 '매 2년마다 1회'로만 적혀 있고, 사무직 명칭은 원문 문구 그대로 쓸 것. 짝수·홀수 출생연도 기준은 주기 규칙이 아니다(checkup-2030-birthyear-parity는 2030 무료검진 전용).",
+      "cautionSource": "주기 문구는 같은 URL 원문(※ 매 2년마다 1회, 비사무직은 매년 실시)."
+    },
+    {
+      "id": "checkup-lookup-path",
+      "claim": "검진 대상 여부는 건강모아 > 나의 건강 > 검진대상 조회에서 본인 인증 후 '검진대상 확인서 출력'으로 확인할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민건강보험공단 건강모아 — 일반건강검진 안내 (wbhaca04500m01)",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/wbhaca04500m01.do",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "국민건강보험공단",
+        "category": "국가건강검진",
+        "line": "검진대상 조회",
+        "years": "조회 시점",
+        "region": "KR"
+      },
+      "caution": "앱 명칭은 공단 민원 페이지에서 '건강보험25시'로 표기된다(health-refund-app-name-conflict 참조). 같은 메뉴 경로를 앱에서도 찾을 수 있는지는 이번 조사에서 확인하지 못했다.",
+      "cautionSource": "메뉴 경로는 같은 URL 원문."
+    },
+    {
+      "id": "checkup-prev-year-add",
+      "claim": "전년도 미수검자는 공단에 신청하면 해당 연도 검진대상으로 추가 등록할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민건강보험공단 건강모아 — 일반건강검진 안내 (wbhaca04500m01)",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/wbhaca04500m01.do",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "국민건강보험공단",
+        "category": "국가건강검진",
+        "line": "전년도 미수검자 추가 등록",
+        "years": "조회 시점",
+        "region": "KR"
+      },
+      "caution": "'공단에 신청'의 구체 방법(온라인·지사 등)은 원문에 없어 이번 조사에서 확정하지 못했다. 방법을 지어내지 말고 '공단 고객센터나 가까운 지사에 문의'로 다음 수단을 줄 것.",
+      "cautionSource": "원문 문구(같은 URL)."
+    },
+    {
+      "id": "checkup-2030-birthyear-parity",
+      "claim": "2030 무료건강검진(20~39세 대상)은 출생 연도 끝자리가 짝수면 짝수 해에, 홀수면 홀수 해에 받는다고 공단 웹진(2024년 2월호)이 안내했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민건강보험공단 건강보험 웹진 2024년 2월호 — '건강보험 혜택 2030세대 주목! 국가건강검진'",
+      "source_url": "https://www.nhis.or.kr/static/alim/paper/oldpaper/202402/sub/section1_5.html",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "국민건강보험공단",
+        "category": "국가건강검진",
+        "line": "2030 무료건강검진",
+        "years": "2024년 2월호 기준 설명 (2026 적용 여부 미확인)",
+        "region": "KR"
+      },
+      "caution": "이 짝수·홀수 규칙은 2024년 2월 웹진 기준 설명이다. 2026년에 적용되는지 이번 조사에서 확인하지 못했다. 2026년 대상 여부를 단정하지 말고 '건강모아 검진대상 조회에서 확인'으로 안내할 것. 일반건강검진 주기 규칙과 섞지 말 것.",
+      "cautionSource": "2026년 적용 여부는 확인실패(checkup-2030-2026-applicability-unverified). 연도 근거는 웹진 발행일 2024년 2월."
+    },
+    {
+      "id": "checkup-2030-2026-applicability-unverified",
+      "claim": "확인실패: 2026년에 2030 무료건강검진의 짝수 해·홀수 해 신청 배정이 실제로 적용되는지(어느 출생 연도가 2026년에 해당하는지)는 이번 조사에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "공단 웹진(2024.2)과 일반건강검진 실시기준(2026.1.7 개정, joHistoryContent SEQ=80) 열람 — 2026년 배정 문구 없음",
+      "source_url": "https://www.nhis.or.kr/lm/lmxsrv/law/joHistoryContent.do?SEQ=80&SEQ_CONTENTS=3270155&DATE_START=20260107&DATE_END=20260107",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "국민건강보험공단",
+        "category": "국가건강검진",
+        "line": "2030 무료건강검진 배정",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "2026년 출생 기준 배정을 글에 쓰지 말 것. 독자가 '내가 대상인지'를 알려면 건강모아 검진대상 조회를 안내할 것.",
+      "cautionSource": "확인실패 항목. 수치 없음."
+    },
+    {
+      "id": "checkup-no-penalty-basis-unverified",
+      "claim": "확인실패: 일반건강검진을 받지 않았을 때 생기는 불이익(벌칙·추가 부담 등)은 공식 문서에서 근거를 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "건강모아 일반건강검진 안내 열람, 공단 건강검진 실시기준(2026.1.7 개정) 열람 — 미수검 불이익 문구 없음",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/wbhaca04500m01.do",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "국민건강보험공단",
+        "category": "국가건강검진",
+        "line": "미수검 시 불이익",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "미수검 불이익을 글에 쓰지 말 것. 대신 '대상이면 기간 내 받을 수 있고, 전년도 미수검은 추가 등록이 가능하다'(checkup-prev-year-add)는 사실로 안내한다.",
+      "cautionSource": "확인실패 항목. 수치 없음."
+    },
+    {
+      "id": "checkup-year-end-crowding-cause-unverified",
+      "claim": "확인실패: 연말에 검진 신청이 몰리는 이유(원인)는 공식 자료에서 확인하지 못했다. 검진기간 종료일이 12월 31일이라는 사실(checkup-general-period)만 확인됐다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "건강모아 일반건강검진 안내 열람 — 연말 집중 원인 문구 없음",
+      "source_url": "https://www.nhis.or.kr/nhis/healthin/wbhaca04500m01.do",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "국민건강보험공단",
+        "category": "국가건강검진",
+        "line": "연말 집중 현상",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "'연말에 몰린다'는 현상을 원인과 함께 단정하지 말 것. 사실은 '검진기간이 12월 31일에 끝난다'로만 쓴다.",
+      "cautionSource": "확인실패 항목."
+    }
+  ]
+}

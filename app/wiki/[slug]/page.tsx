@@ -238,6 +238,20 @@ export default async function WikiEntryPage({ params }: { params: Promise<{ slug
                           </td>
                         </tr>
                       )}
+                      {e.apply && (
+                        <tr>
+                          <th>{e.apply.next.label ?? "다음 회차"}</th>
+                          <td>
+                            {e.apply.next.status === "확정" ? (
+                              <span className="wk-pill" style={{ color: "#2f7d4f" }}>확정 {fmt(e.apply.next.start!)}~{fmt(e.apply.next.end!)}</span>
+                            ) : e.apply.next.status === "상시" ? (
+                              <span className="wk-pill" style={{ color: "#38539a" }}>연중 상시</span>
+                            ) : (
+                              <span className="wk-pill" style={{ color: "#b0661a" }}>공고 전</span>
+                            )}
+                          </td>
+                        </tr>
+                      )}
                       {e.infobox.map((r, i) => <tr key={i}><th>{r.label}</th><td><H s={r.value} /></td></tr>)}
                     </tbody>
                   </table>

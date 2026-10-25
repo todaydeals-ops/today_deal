@@ -1,0 +1,152 @@
+{
+  "topic": "통신비 미환급금 조회 (스마트초이스 통신 미환급액 조회, 유료방송 미환급액, 환급 신청)",
+  "brand": "한국통신사업자연합회(KTOA)·한국정보통신진흥협회(KAIT)",
+  "article": "예정",
+  "captured": "2026-10-26",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "telecom-smartchoice-operator",
+      "claim": "스마트초이스(통신요금정보포털) 사이트는 한국통신사업자연합회(KTOA)가 운영하는 것으로 페이지 하단에 표시되어 있다(저작권 표기 KTOA, 문의 smartchoice@ktoa.or.kr).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스마트초이스(통신요금정보포털) 메인 페이지 하단 표기",
+      "source_url": "https://www.smartchoice.or.kr",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "한국통신사업자연합회(KTOA)",
+        "category": "통신비",
+        "line": "스마트초이스 통신 미환급액 조회",
+        "years": "2026-10-26 기준",
+        "region": "KR"
+      },
+      "caution": "과제 문구에 있던 '한국정보통신진흥협회'는 이 페이지에서 '유료방송 미환급액'을 맡은 기관이다. 통신 미환급 조회의 운영 기관을 KAIT로 쓰면 틀린다. 두 기관을 한 서비스로 뭉치지 말 것.",
+      "cautionSource": "같은 메인 페이지 기관 표기 (실측): https://www.smartchoice.or.kr"
+    },
+    {
+      "id": "telecom-menu-path",
+      "claim": "스마트초이스 상단 메뉴 '환급/혜택 > 통신 미환급액 조회' 아래에 '서비스 안내', '통신 미환급액 조회', '환급신청 결과 조회' 하위 메뉴가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스마트초이스 메인 페이지 메뉴 구조 (실측)",
+      "source_url": "https://www.smartchoice.or.kr",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "한국통신사업자연합회(KTOA)",
+        "category": "통신비",
+        "line": "스마트초이스 통신 미환급액 조회 메뉴",
+        "years": "2026-10-26 기준",
+        "region": "KR"
+      },
+      "caution": "메뉴 명칭은 2026-10-26 페이지 기준이다. 개편될 수 있으므로 글 작성 직전 메뉴명을 한 번 더 확인할 것.",
+      "cautionSource": "메뉴 구조 실측: https://www.smartchoice.or.kr"
+    },
+    {
+      "id": "telecom-refund-requires-login",
+      "claim": "스마트초이스에서 환급신청은 로그인 후에만 이용할 수 있다는 안내가 페이지에 명시되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스마트초이스 메인 페이지 '환급신청 로그인' 안내 팝업 (실측)",
+      "source_url": "https://www.smartchoice.or.kr",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "한국통신사업자연합회(KTOA)",
+        "category": "통신비",
+        "line": "통신 미환급액 환급신청",
+        "years": "2026-10-26 기준",
+        "region": "KR"
+      },
+      "caution": "로그인 수단(아이디·본인인증 등)은 이번에 확인하지 못했다. '로그인 후 신청'까지만 쓰고 인증 방식은 쓰지 말 것.",
+      "cautionSource": "로그인 안내 팝업 실측: https://www.smartchoice.or.kr"
+    },
+    {
+      "id": "telecom-paid-broadcast-kait",
+      "claim": "유료방송 미환급액은 한국정보통신진흥협회(KAIT)가 직접 제공하는 별도 메뉴('유료방송 미환급액 조회')에서 조회하며, 환급 또는 기부 신청은 kait-tvrefund.kr에서 할 수 있다고 스마트초이스 페이지에 안내되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스마트초이스 메인 페이지 안내 (실측) + kait-tvrefund.kr 페이지 제목 '유료방송미환급액 조회 시스템' 확인",
+      "source_url": "https://www.smartchoice.or.kr",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "한국정보통신진흥협회(KAIT)",
+        "category": "통신비",
+        "line": "유료방송 미환급액 조회·환급·기부",
+        "years": "2026-10-26 기준",
+        "region": "KR"
+      },
+      "caution": "kait-tvrefund.kr 본문은 이번 세션에서 열리지 않아 제목만 확인했다. 유료방송 조회 절차는 그 페이지에서 직접 확인 전까지 쓰지 말 것. 통신 미환급(KTOA 측)과 유료방송 미환급(KAIT 측)은 별개 조회다.",
+      "cautionSource": "제목 실측: https://www.kait-tvrefund.kr"
+    },
+    {
+      "id": "telecom-refund-examples",
+      "claim": "스마트초이스 페이지의 '환급대상 서비스 예시'에는 할인조건에 따른 과납, 이중납부, 보증금 미수령 사례가 나열되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스마트초이스 메인 페이지 '환급대상 서비스 예시' 섹션 (실측)",
+      "source_url": "https://www.smartchoice.or.kr",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "한국통신사업자연합회(KTOA)",
+        "category": "통신비",
+        "line": "미환급금이 생기는 경우(예시)",
+        "years": "2026-10-26 기준",
+        "region": "KR"
+      },
+      "caution": "이 목록이 미환급금 발생 원인을 전부 망라하지 않는다. 또한 원문에는 이 예시가 '통신 미환급액 조회'와 직접 연결된다는 설명이 없었다. 글에서는 '이런 사례가 환급 대상으로 예시된다'로 쓰고, 내 경우에 해당하는지는 조회 결과로 확인하라고 할 것.",
+      "cautionSource": "예시 섹션 실측: https://www.smartchoice.or.kr"
+    },
+    {
+      "id": "telecom-apply-steps-unverified",
+      "claim": "통신 미환급액 환급신청의 구체 단계(화면 순서), 환급 방식(계좌 입금 등), 처리 기간은 이번 세션에서 공식 원문으로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "스마트초이스 메인 페이지 (하위 메뉴 본문 미확인)",
+      "source_url": "https://www.smartchoice.or.kr",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "한국통신사업자연합회(KTOA)",
+        "category": "통신비",
+        "line": "통신 미환급액 환급신청 절차",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "'서비스 안내' 하위 메뉴 본문을 열지 못했다. 단계를 창작하지 말 것. 글에서는 '로그인 후 통신 미환급액 조회 메뉴에서 진행'까지만 쓰고, 나머지는 서비스 안내 페이지 확인을 권할 것."
+    },
+    {
+      "id": "telecom-deadline-unverified",
+      "claim": "통신 미환급금 환급 신청의 기한(소멸시효 등)은 공식 근거로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "스마트초이스 메인 페이지 (기한 안내 미확인)",
+      "source_url": "https://www.smartchoice.or.kr",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "한국통신사업자연합회(KTOA)",
+        "category": "통신비",
+        "line": "통신 미환급금 소멸시효",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "'놓치면 소멸' 같은 문구를 쓰지 말 것. 근거 없음."
+    },
+    {
+      "id": "telecom-auth-docs-unverified",
+      "claim": "통신 미환급액 조회·환급 시 필요한 본인인증 수단과 준비물은 공식 원문으로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "스마트초이스 메인 페이지 (세부 안내 미확인)",
+      "source_url": "https://www.smartchoice.or.kr",
+      "checked": "2026-10-26",
+      "scope": {
+        "brand": "한국통신사업자연합회(KTOA)",
+        "category": "통신비",
+        "line": "통신 미환급액 조회 준비물",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "인증 수단을 특정하지 말 것. 로그인 화면에서 요구하는 인증을 따르라고만 쓸 것."
+    }
+  ]
+}
