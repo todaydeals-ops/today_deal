@@ -55,17 +55,30 @@ export default function Header() {
               >
                 {g.label} <i className="ti ti-chevron-down" style={{ fontSize: 15 }} />
               </button>
-              <div className={`${styles.dropMenu} ${g.items.length > 5 ? styles.dropMany : ""} ${drop === g.key ? styles.dropOpen : ""}`} role="menu">
-                {g.href && (
-                  <Link href={g.href} onClick={close} role="menuitem" className={styles.dropAll}>
-                    {g.label} 전체 보기
-                  </Link>
+              <div className={`${styles.dropMenu} ${drop === g.key ? styles.dropOpen : ""}`} role="menu">
+                {(g.href || g.extras) && (
+                  <div className={styles.dropTop}>
+                    {g.href && <Link href={g.href} onClick={close} role="menuitem">{g.label} 전체 보기</Link>}
+                    {g.extras?.map((e) => <Link key={e.href} href={e.href!} onClick={close} role="menuitem">{e.label}</Link>)}
+                  </div>
                 )}
-                {g.items.map((d) => (
-                  <Link key={d.href} href={d.href} onClick={close} role="menuitem">
-                    {d.label}
-                  </Link>
-                ))}
+                {g.items.some((d) => d.children) ? (
+                  // 3단계(AS): 묶음 머리 + 분류 3개씩, 세 줄로 나란히
+                  <div className={styles.cols}>
+                    {g.items.map((col) => (
+                      <div key={col.label} className={styles.col}>
+                        <span className={styles.colHead}>{col.label}</span>
+                        {col.children!.map((d) => (
+                          <Link key={d.href} href={d.href!} onClick={close} role="menuitem">{d.label}</Link>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  g.items.map((d) => (
+                    <Link key={d.href} href={d.href!} onClick={close} role="menuitem">{d.label}</Link>
+                  ))
+                )}
               </div>
             </div>
           ))}

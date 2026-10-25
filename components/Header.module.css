@@ -95,11 +95,13 @@
   white-space: nowrap;
 }
 .dropMenu a:hover { background: var(--bg-sunken); color: var(--text-strong); }
-/* 소메뉴가 많은 메뉴(AS 9분류)는 두 줄로 — 세로로 길게 늘어지지 않게 */
-.dropMany.dropOpen { display: grid; grid-template-columns: 1fr 1fr; min-width: 240px; }
-/* 묶음 홈 "전체 보기" — 소메뉴와 구분 */
-.dropMenu a.dropAll { font-weight: 600; color: var(--text-strong); border-bottom: 1px solid var(--border-soft); border-radius: 6px 6px 0 0; margin-bottom: 4px; }
-.dropMany a.dropAll { grid-column: 1 / -1; }
+/* 묶음 홈 "전체 보기"·바로가기(에러코드 사전) — 소메뉴와 구분 */
+.dropTop { display: flex; flex-direction: column; border-bottom: 1px solid var(--border-soft); margin-bottom: 4px; padding-bottom: 4px; }
+.dropTop a { font-weight: 600; color: var(--text-strong); }
+/* 3단계 소메뉴(AS 3묶음×3분류) — 묶음 머리 아래 분류 3개, 세 줄 나란히 */
+.cols { display: grid; grid-template-columns: repeat(3, auto); gap: 0 4px; }
+.col { display: flex; flex-direction: column; }
+.colHead { font-size: 11.5px; font-weight: 700; color: var(--text-muted); padding: 8px 14px 4px; white-space: nowrap; }
 
 .userBtn {
   width: 32px;
@@ -214,6 +216,9 @@
     padding: 12px 20px 12px 36px;
     border-radius: 0;
   }
-  .dropMany { display: grid; grid-template-columns: 1fr 1fr; }
-  .dropMenu a.dropAll { border-bottom: none; margin-bottom: 0; font-weight: 500; }
+  .dropTop { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .dropTop a { font-weight: 500; }
+  .cols { padding-left: 36px; gap: 0 8px; grid-template-columns: repeat(3, 1fr); }
+  .cols .col a { padding: 10px 4px; }
+  .colHead { padding: 10px 4px 2px; }
 }

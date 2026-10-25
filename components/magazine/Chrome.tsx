@@ -70,21 +70,31 @@ export function CornerIndex() {
               {g.href ? <Link href={g.href} className="mg-title">{title}</Link> : title}
               <div className="cc-en" style={{ fontFamily: mono, fontSize: 9.5, letterSpacing: "1px", color: g.color, marginTop: 2 }}>{g.en}</div>
               <div className="cc-d" style={{ fontSize: 11.5, color: "#76726b", lineHeight: 1.5, marginTop: 9 }}>{g.desc}</div>
-              {/* 설명이 있는 소메뉴는 이름+한 줄, 없는 것(AS 9분류)은 칩으로 촘촘하게 */}
-              {g.items.every((it) => it.desc) ? (
+              {g.extras?.map((e) => (
+                <Link key={e.href} className="mg-extra" href={e.href!}>{e.label} &rarr;</Link>
+              ))}
+              {/* 소메뉴 3개. AS 는 3단계라 묶음 이름 + 분류 칩 3개씩, 나머지는 이름 + 한 줄 설명 */}
+              {g.items.some((it) => it.children) ? (
                 <div className="menu-items">
                   {g.items.map((it) => (
-                    <Link key={it.href} className="menu-item" href={it.href}>
-                      <span className="mi-t"><span style={{ width: 7, height: 7, borderRadius: 9999, background: it.color, flex: "none" }} />{it.label}</span>
-                      <span className="mi-d">{it.desc}</span>
-                    </Link>
+                    <div key={it.label} className="menu-sub">
+                      <span className="ms-h">{it.label}</span>
+                      <div className="menu-chips">
+                        {it.children!.map((c) => (
+                          <Link key={c.href} className="menu-chip" href={c.href!} title={c.desc}>
+                            <span style={{ width: 6, height: 6, borderRadius: 9999, background: c.color, flex: "none" }} />{c.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
                   ))}
                 </div>
               ) : (
-                <div className="menu-items menu-chips">
+                <div className="menu-items">
                   {g.items.map((it) => (
-                    <Link key={it.href} className="menu-chip" href={it.href}>
-                      <span style={{ width: 6, height: 6, borderRadius: 9999, background: it.color, flex: "none" }} />{it.label}
+                    <Link key={it.href} className="menu-item" href={it.href!}>
+                      <span className="mi-t"><span style={{ width: 7, height: 7, borderRadius: 9999, background: it.color, flex: "none" }} />{it.label}</span>
+                      <span className="mi-d">{it.desc}</span>
                     </Link>
                   ))}
                 </div>
