@@ -66,7 +66,7 @@ for (const slug of slugs) {
   // 숫자
   const body = [e.seoTitle, e.description, ...e.summary, ...e.infobox.map((r) => r.value),
     ...e.sections.flatMap((s) => s.blocks.flatMap((b) => b.p ?? b.note ?? b.list ?? b.steps ?? (b.table ? b.table.rows.flat() : []))),
-    ...e.faq.flatMap((f) => [f.q, f.a])].join(" \n ");
+    ...e.faq.flatMap((f) => [f.q, f.a])].join(" ¶ ");
   const ev = norm((e.facts ?? []).map((id) => { const x = facts.get(id); return x ? `${x.claim} ${x.caution ?? ""} ${x.cautionSource ?? ""}` : ""; }).join(" "));
   const extra = norm(JSON.stringify(e.apply ?? e.sale ?? {}));
   const miss = new Set();

@@ -1,0 +1,47 @@
+{
+  "topic": "다자녀 가구 혜택 — 전국 공통 규정(주택 특별공급·자녀세액공제)과 지자체별 기준 구분",
+  "brand": "국토교통부·국세청·법제처 등 전국 공통 규정",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": ["child-tax-credit-amount-25-55-40-from-2025", "child-tax-credit-birth-adoption-30-50-70"],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "multi-child-special-supply-2-children",
+      "claim": "다자녀가구 특별공급은 입주자모집공고일 현재 미성년자인 자녀를 2명 이상 둔 무주택세대구성원이 대상이며, 건설량의 10%(승인권자가 인정하면 15%) 범위에서 한 차례에 한해 1세대 1주택 기준으로 공급한다(주택공급에 관한 규칙 제40조 제1항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "주택공급에 관한 규칙 제40조(다자녀가구 특별공급) 제1항 원문, 국가법령정보센터(시행 2026.6.15, 국토교통부령 제1592호)",
+      "source_url": "https://www.law.go.kr/법령/주택공급에관한규칙",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국토교통부", "category": "주택 청약 특별공급", "line": "다자녀가구 특별공급", "years": "2026.6.15 시행본", "region": "KR" },
+      "caution": "'다자녀'를 3자녀 이상으로 쓰면 이 규칙과 맞지 않는다. 기준은 미성년 자녀 2명 이상이다. 실제 모집공고는 사업지마다 추가 조건과 물량을 정하므로 해당 공고문 확인을 안내할 것.",
+      "cautionSource": "주택공급에 관한 규칙 제40조 제1항 원문(국가법령정보센터)"
+    },
+    {
+      "id": "multi-child-national-definition-unconfirmed",
+      "claim": "보건복지부 등이 전국 공통으로 정한 '다자녀 가구' 단일 정의는 이번 조사에서 확인하지 못했다. 법제처 보도자료(2024.8.7)는 다자녀 가구 기준이 3자녀 이상에서 2자녀 이상으로 완화되고 있다고만 설명한다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "법제처 보도자료 '다자녀를 둔 부모라면 꼭 알아야 하는 법령을 소개합니다'(2024.8.7, moleg.go.kr)",
+      "source_url": "https://moleg.go.kr/board.es?act=view&bid=0048&cg_code=&keyField=&keyWord=&list_no=135462&mid=a10501000000&nPage=1&tag=",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부·법제처", "category": "다자녀 가구 정의", "line": "전국 공통 다자녀 기준", "years": "2024 보도자료 기준, 2026 현행 미확인", "region": "KR" },
+      "caution": "지자체 다자녀 카드(예: 다둥이행복카드)의 대상 자녀 수와 연령은 지자체 조례와 사업지침마다 다르다. '전국 다자녀 기준은 2자녀 이상' 같은 단정을 쓰지 말 것. 대상 판단은 거주지 지자체 공고를 확인하도록 안내할 것.",
+      "cautionSource": "법제처 보도자료 2024.8.7 본문(moleg.go.kr) — 2024 기준 설명이며 현행 법령 자체가 아님"
+    },
+    {
+      "id": "multi-child-moleg-2024-stale-tax-description",
+      "claim": "법제처 보도자료(2024.8.7)의 자녀세액공제 설명(8세 이상, 자녀 1명 연 15만 원 등)은 현행 소득세법 제59조의2 제1항 본문(13세 이상, 1명 연 25만 원)과 다르므로 그대로 인용하면 안 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "법제처 보도자료 2024.8.7(moleg.go.kr) 대비 소득세법 제59조의2 제1항 원문(국가법령정보센터)",
+      "source_url": "https://moleg.go.kr/board.es?act=view&bid=0048&cg_code=&keyField=&keyWord=&list_no=135462&mid=a10501000000&nPage=1&tag=",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청·법제처", "category": "연말정산 세액공제", "line": "자녀세액공제 연령·금액(2024 보도자료 vs 현행 본문)", "years": "2024 보도자료 / 현행 본문", "region": "KR" },
+      "caution": "본문 13세는 법률 제21548호 부칙의 과세기간별 단계 적용(2026년 9세 등)과 함께 읽어야 한다. 단계 적용 여부는 기존 팩트 child-tax-credit-status-age-changed-2026과 child-tax-credit-age-2026-2029-schedule(신청_child-tax-credit.json)을 따른다. 이번 조사에서 부칙 원문은 열지 못했다.",
+      "cautionSource": "소득세법 제59조의2 제1항 본문(13세 이상) · 기존 팩트 신청_child-tax-credit.json 참조 · 부칙 원문 미열람"
+    }
+  ]
+}

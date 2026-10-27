@@ -1,0 +1,263 @@
+{
+  "topic": "공인노무사 시험 — 실시 주체·위탁 근거, 2026년 제35회 1·2·3차 일정, 2027년 제36회 일정 확인",
+  "brand": "고용노동부 (공인노무사 자격시험)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "labor-attorney-exam-operator-law",
+      "claim": "공인노무사 자격시험은 고용노동부장관이 실시하며, 제1차·제2차·제3차시험으로 구분해 실시한다(공인노무사법 제3조의2 제1항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 공인노무사법 제3조의2(공인노무사 자격시험) 조문",
+      "source_url": "https://www.law.go.kr/법령/공인노무사법",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "고용노동부",
+        "category": "공인노무사 시험",
+        "line": "시험 실시 주체",
+        "years": "시행 2022.12.11 표시본",
+        "region": "KR"
+      },
+      "caution": "실시 주체를 한국산업인력공단(큐넷)으로 쓰지 말 것. 공단은 관리 업무를 위탁받은 기관이다(다음 항목).",
+      "cautionSource": "같은 법 제26조 제2항(관리 업무 위탁)"
+    },
+    {
+      "id": "labor-attorney-exam-kr-delegation-law",
+      "claim": "고용노동부장관은 공인노무사 자격시험의 관리 업무를 한국산업인력공단에 위탁할 수 있다(공인노무사법 제26조 제2항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 공인노무사법 제26조(업무 위탁) 조문",
+      "source_url": "https://www.law.go.kr/법령/공인노무사법",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국산업인력공단",
+        "category": "공인노무사 시험",
+        "line": "관리 업무 위탁",
+        "years": "시행 2022.12.11 표시본",
+        "region": "KR"
+      },
+      "caution": "'할 수 있다'는 임의 규정이다. 실제 접수·일정 공지 채널은 Q-Net 공인노무사 시험일정 페이지로 확인된다.",
+      "cautionSource": "같은 조문 제2항 '위탁할 수 있다'"
+    },
+    {
+      "id": "labor-attorney-exam-2026-35-first-schedule",
+      "claim": "2026년 제35회 공인노무사 1차시험은 원서접수 2026년 3월 30일~4월 3일, 시험 2026년 5월 23일, 1차 합격자 발표 2026년 6월 24일이었다(발표기간 6월 24일~8월 22일로 표기).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국산업인력공단 Q-Net 공인노무사 시험일정 안내표(2026년 35회 1차)",
+      "source_url": "https://q-net.or.kr/crf005.do?id=crf00503&gSite=L&gId=05&gbnn=gbnSubtab1",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국산업인력공단",
+        "category": "공인노무사 시험",
+        "line": "제35회(2026) 1차",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "지난 회차다. 서류제출기간은 3월 25일~4월 3일로 접수기간과 겹쳐 표기되어 있다. 발표 날짜는 '합격자발표' 칸 기준이며 '발표기간' 칸과 혼동하지 말 것.",
+      "cautionSource": "같은 Q-Net 시험일정 안내표(접수기간·서류제출기간·합격자발표 칸)"
+    },
+    {
+      "id": "labor-attorney-exam-2026-35-second-third-schedule",
+      "claim": "2026년 제35회 2차시험은 원서접수 2026년 7월 13일~7월 20일, 시험 2026년 8월 29일~30일, 합격자 발표 2026년 11월 18일이었다. 3차시험은 같은 접수 기간으로 표기되었고 시험 2026년 11월 27일, 합격자 발표 2026년 12월 9일이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국산업인력공단 Q-Net 공인노무사 시험일정 안내표(2026년 35회 2차·3차)",
+      "source_url": "https://q-net.or.kr/crf005.do?id=crf00503&gSite=L&gId=05&gbnn=gbnSubtab1",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국산업인력공단",
+        "category": "공인노무사 시험",
+        "line": "제35회(2026) 2차·3차",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "2026년 10월 27일 기준 3차시험(11월 27일)은 아직 시행 전이지만 원서접수는 7월 20일에 마감됐다. 글에서 '지금 접수 가능'으로 쓰면 안 된다. 2차 합격자 발표 11월 18일과 3차 합격자 발표 12월 9일은 안내표 기준이다.",
+      "cautionSource": "같은 Q-Net 시험일정 안내표(2차·3차 행)"
+    },
+    {
+      "id": "labor-attorney-exam-2027-36-not-found",
+      "claim": "2026년 10월 27일 기준 Q-Net 공인노무사 시험일정 안내표에는 제36회(2027년) 1차시험 일정이 나타나지 않았다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "한국산업인력공단 Q-Net 공인노무사 시험일정 안내표(확인 범위 내 미발견)",
+      "source_url": "https://q-net.or.kr/crf005.do?id=crf00503&gSite=L&gId=05&gbnn=gbnSubtab1",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국산업인력공단",
+        "category": "공인노무사 시험",
+        "line": "제36회(2027) 1차",
+        "years": "2027",
+        "region": "KR"
+      },
+      "caution": "'미공고 확정'이 아니다. 확인 범위에서 발견하지 못했다는 뜻이다. 2027년 1차 접수 기간은 글에 쓰지 말고, 큐넷 공인노무사 시험일정 공고가 뜨면 그때 재조사한다.",
+      "cautionSource": "확인 범위 한정 실측(Q-Net 시험일정 안내표는 35회까지만 표기)"
+    },
+    {
+      "id": "labor-attorney-exam-35-notice-issuer",
+      "claim": "2026년도 제35회 공인노무사 자격시험 시행계획 공고(수정)는 공고 제2026-103호로, 2026년 6월 23일 한국산업인력공단 이사장 명의로 공고됐다(공인노무사법 시행령 제10조·제26조에 따른 공고).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국산업인력공단 Q-Net 시행공고 목록 — '2026년도 제35회 공인노무사 국가자격시험 시행계획 공고(수정)'",
+      "source_url": "https://q-net.or.kr/crf002.do?id=crf00201&gSite=L&gId=05",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국산업인력공단",
+        "category": "공인노무사 시험",
+        "line": "제35회(2026) 시행계획 공고",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "이 공고는 '수정' 공고다. 2차·3차 접수 마감과 응시수수료가 처음 공고 대비 바뀌었다. 처음 공고 내용으로 일정을 쓰지 말 것.",
+      "cautionSource": "같은 공고 PDF 1쪽(접수 마감 7.17→7.20 변경)·2쪽(수수료 인상)"
+    },
+    {
+      "id": "labor-attorney-exam-35-second-deadline-changed",
+      "claim": "제35회 2차·3차 원서접수 및 면제서류 제출 마감은 당초 2026년 7월 17일에서 7월 20일(월)로 조정됐다(제헌절 공휴일 지정으로 민법 제161조 적용). 접수 시작일 7월 13일(월) 09:00은 그대로다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국산업인력공단 Q-Net 시행공고 — 2026년도 제35회 시행계획 공고(수정) PDF 1쪽",
+      "source_url": "https://q-net.or.kr/crf002.do?id=crf00201s01&gSite=L&gId=05&filePath=impl_noti/05_2026_01&fileName=2026%EB%85%84%EB%8F%84%20%EC%A0%9C35%ED%9A%8C%20%EA%B3%B5%EC%9D%B8%EB%85%B8%EB%AC%B4%EC%82%AC%20%EC%9E%90%EA%B2%A9%EC%8B%9C%ED%97%98%20%EC%8B%9C%ED%96%89%EA%B3%84%ED%9A%8D%20%EA%B3%B5%EA%B3%A0%EB%AC%B8(%EC%88%98%EC%A0%95).pdf&href=0",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국산업인력공단",
+        "category": "공인노무사 시험",
+        "line": "제35회(2026) 2차·3차",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "7월 17일 마감을 적은 블로그 표기는 이 공고 이전 기준이다. 접수는 이미 마감됐으므로 과거 사실로만 쓴다.",
+      "cautionSource": "같은 PDF 1쪽 변경 전·후 표"
+    },
+    {
+      "id": "labor-attorney-exam-35-application-fee",
+      "claim": "제35회 공인노무사 응시수수료는 제1차 시험 40,000원, 제2·3차 시험 55,000원(3차 재응시자 포함)이다. 제35회 공고에서 이전 금액(1차 30,000원, 2·3차 45,000원)보다 각 10,000원 인상됐다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국산업인력공단 Q-Net 시행공고 PDF(공고 제2026-103호) 2쪽 '응시수수료 인상'·14쪽 '응시수수료'; Q-Net 자격상세정보 '응시수수료' 탭(공인노무사법 시행령 제11조)",
+      "source_url": "https://q-net.or.kr/crf002.do?id=crf00201s01&gSite=L&gId=05&filePath=impl_noti/05_2026_01&fileName=2026%EB%85%84%EB%8F%84%20%EC%A0%9C35%ED%9A%8C%20%EA%B3%B5%EC%9D%B8%EB%85%B8%EB%AC%B4%EC%82%AC%20%EC%9E%90%EA%B2%A9%EC%8B%9C%ED%97%98%20%EC%8B%9C%ED%96%89%EA%B3%84%ED%9A%8D%20%EA%B3%B5%EA%B3%A0%EB%AC%B8(%EC%88%98%EC%A0%95).pdf&href=0",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국산업인력공단",
+        "category": "공인노무사 시험",
+        "line": "제35회(2026) 응시수수료",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "이전 금액 1차 30,000원·2·3차 45,000원은 35회 이전 회차 기준이다. 35회 글에는 쓰지 말 것. 결제는 전자결제(신용카드·계좌이체·가상계좌·간편결제 등)이며 접수 마감일 13~18시에는 가상계좌 결제가 안 된다.",
+      "cautionSource": "같은 PDF 2쪽(기존 금액 표기)·14쪽(결제 방법과 마감일 가상계좌 제한)"
+    },
+    {
+      "id": "labor-attorney-exam-35-eligibility-general",
+      "claim": "공인노무사 제35회 응시자격은 공인노무사법 제4조 각 호의 결격사유에 해당하지 않는 자다. 결격사유 심사기준일은 제3차시험 합격자 발표일(2026년 12월 9일)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국산업인력공단 Q-Net 시행공고 PDF(공고 제2026-103호) 5쪽 '4. 응시자격 및 결격사유'",
+      "source_url": "https://q-net.or.kr/crf002.do?id=crf00201s01&gSite=L&gId=05&filePath=impl_noti/05_2026_01&fileName=2026%EB%85%84%EB%8F%84%20%EC%A0%9C35%ED%9A%8C%20%EA%B3%B5%EC%9D%B8%EB%85%B8%EB%AC%B4%EC%82%AC%20%EC%9E%90%EA%B2%A9%EC%8B%9C%ED%97%98%20%EC%8B%9C%ED%96%89%EA%B3%84%ED%9A%8D%20%EA%B3%B5%EA%B3%A0%EB%AC%B8(%EC%88%98%EC%A0%95).pdf&href=0",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국산업인력공단",
+        "category": "공인노무사 시험",
+        "line": "제35회(2026) 응시자격",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "결격사유 예: 미성년자, 피성년후견인·피한정후견인, 복권되지 않은 파산자, 징계 파면 후 3년 미경과자, 금고 이상 실형 집행 종료·면제 후 3년 미경과자, 집행유예 기간 종료 후 1년 미경과자, 선고유예 기간 중인 자, 영구등록취소자. 이 목록은 PDF 원문 기준이다.",
+      "cautionSource": "같은 PDF 5쪽 결격사유 목록"
+    },
+    {
+      "id": "labor-attorney-exam-35-eligibility-by-stage",
+      "claim": "제2차시험 응시자격은 당해년도 1차시험 합격자 또는 전년도 1차시험 합격자다. 제3차시험 응시자격은 당해년도 2차시험 합격자 또는 전년도 2차시험 합격자다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국산업인력공단 Q-Net 공인노무사 자격상세정보 '시험정보 > 응시자격'",
+      "source_url": "https://q-net.or.kr/crf005.do?id=crf00503&gSite=L&gId=05&gbnn=gbnSubtab1",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국산업인력공단",
+        "category": "공인노무사 시험",
+        "line": "응시자격(차수별)",
+        "years": "해당 연도 기준(상세정보 현행 문구)",
+        "region": "KR"
+      },
+      "caution": "1차 응시자격은 위 조건 없이 결격사유가 없으면 된다. 차수별 조건은 '전년도 합격자' 포함이라 연도 표기를 그대로 옮기지 말고 '해당 연도 또는 전년도 합격자'로 쓸 것.",
+      "cautionSource": "같은 Q-Net 응시자격 문구(당해년도·전년도)"
+    },
+    {
+      "id": "labor-attorney-exam-35-subjects-first",
+      "claim": "제1차시험은 6과목이다. 필수 5과목은 노동법(1), 노동법(2), 민법, 사회보험법, 영어이며 영어는 공인 영어능력검정시험 성적으로 대체한다. 선택 1과목은 경제학원론 또는 경영학개론 중 택1이다. 과목당 100점이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국산업인력공단 Q-Net 시행공고 PDF(공고 제2026-103호) 3쪽 '3. 시험과목 및 시험시간'; Q-Net 자격상세정보 '시험과목 및 방법'",
+      "source_url": "https://q-net.or.kr/crf002.do?id=crf00201s01&gSite=L&gId=05&filePath=impl_noti/05_2026_01&fileName=2026%EB%85%84%EB%8F%84%20%EC%A0%9C35%ED%9A%8C%20%EA%B3%B5%EC%9D%B8%EB%85%B8%EB%AC%B4%EC%82%AC%20%EC%9E%90%EA%B2%A9%EC%8B%9C%ED%97%98%20%EC%8B%9C%ED%96%89%EA%B3%84%ED%9A%8D%20%EA%B3%B5%EA%B3%A0%EB%AC%B8(%EC%88%98%EC%A0%95).pdf&href=0",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국산업인력공단",
+        "category": "공인노무사 시험",
+        "line": "제35회(2026) 1차 과목",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "1차 시험은 교시당 시간이 다르다(1교시 80분, 2교시 120분). 시험 시간은 제35회 공고 4쪽 과목별 시간표를 따르고 이 브리프에 적지 않는다. 노동법(1)·(2)에는 노동법 총론이 포함된다.",
+      "cautionSource": "같은 PDF 3~4쪽 과목별 시험시간표"
+    },
+    {
+      "id": "labor-attorney-exam-35-subjects-second-third",
+      "claim": "제2차시험은 노동법, 인사노무관리론, 행정쟁송법 3과목(논문형)에 경영조직론·노동경제학·민사소송법 중 1과목을 더해 4과목이다. 제3차시험은 면접이다(평정사항: 정신자세, 전문지식과 응용능력, 예의·품행·성실성, 의사발표의 정확성과 논리성).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국산업인력공단 Q-Net 자격상세정보 '시험과목 및 방법' 탭(제2·3차 시험)",
+      "source_url": "https://q-net.or.kr/crf005.do?id=crf00503&gSite=L&gId=05&gbnn=gbnSubtab1",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국산업인력공단",
+        "category": "공인노무사 시험",
+        "line": "제35회(2026) 2·3차 과목",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "제2차 문항 수·시간은 Q-Net 상세 표 기준이다(교시당 75분 등). 숫자를 옮길 땐 Q-Net 상세 표를 다시 열어 확인할 것.",
+      "cautionSource": "Q-Net 자격상세정보 제2차 시험 시간·문항 표"
+    },
+    {
+      "id": "labor-attorney-exam-35-venues",
+      "claim": "제35회 제1차시험 시행지역은 서울·부산·대구·인천·광주·대전이며 원서접수 시 수험자가 직접 선택한다. 제3차시험은 서울에서만 시행한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국산업인력공단 Q-Net 시행공고 PDF(공고 제2026-103호) 3쪽 '2. 시험일정 및 시행지역'",
+      "source_url": "https://q-net.or.kr/crf002.do?id=crf00201s01&gSite=L&gId=05&filePath=impl_noti/05_2026_01&fileName=2026%EB%85%84%EB%8F%84%20%EC%A0%9C35%ED%9A%8C%20%EA%B3%B5%EC%9D%B8%EB%85%B8%EB%AC%B4%EC%82%AC%20%EC%9E%90%EA%B2%A9%EC%8B%9C%ED%97%98%20%EC%8B%9C%ED%96%89%EA%B3%84%ED%9A%8D%20%EA%B3%B5%EA%B3%A0%EB%AC%B8(%EC%88%98%EC%A0%95).pdf&href=0",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국산업인력공단",
+        "category": "공인노무사 시험",
+        "line": "제35회(2026) 시행지역",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "1차 시행지역은 6곳이다. 그 밖의 지역을 1차 시행지로 쓰면 안 된다. 3차 시행지역(서울)과 1차 지역 선택을 섞지 말 것.",
+      "cautionSource": "같은 PDF 3쪽 시행지역 표"
+    },
+    {
+      "id": "labor-attorney-exam-36-notice-not-found",
+      "claim": "2026년 10월 27일 기준 한국산업인력공단 Q-Net 시행공고 목록에서 제36회(2027년) 공인노무사 자격시험 시행계획 공고는 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "한국산업인력공단 Q-Net 시행공고 목록(확인 범위 내 미발견)",
+      "source_url": "https://q-net.or.kr/crf002.do?id=crf00201&gSite=L&gId=05",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국산업인력공단",
+        "category": "공인노무사 시험",
+        "line": "제36회(2027) 시행계획",
+        "years": "2027",
+        "region": "KR"
+      },
+      "caution": "'2027 미공고 확정'이 아니다. 확인 범위에서 발견하지 못했다는 뜻이다. 2027년 일정은 글에 쓰지 말고 '다음 회차 일정은 Q-Net 시행공고에서 확인'으로만 안내할 것.",
+      "cautionSource": "확인 범위 한정 실측(Q-Net 시행공고 목록 최신 항목 기준)"
+    }
+  ]
+}

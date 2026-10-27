@@ -1,0 +1,85 @@
+{
+  "topic": "자동차 취득세 (차량 취득세 세율·신고기한·차량 등록면허세) — 신청·환급 달력, 세금·공제",
+  "brand": "지방세(행정안전부·지방자치단체)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": ["law-deadline-weekend-next-day-local"],
+  "declined_facts": [
+    { "id": "law-deadline-weekend-next-day-national", "why": "국세기본법 제5조는 국세 기한 규정이다. 자동차 취득세는 지방세라서 지방세기본법 제24조(reused)를 쓴다." }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "veh-rate-private-passenger-7pct",
+      "claim": "대통령령이 정하는 비영업용 승용자동차의 취득세 표준세율은 1천분의 70(7%)이고, 경자동차는 1천분의 40(4%)이다(지방세법 제12조 제1항 제2호 가목).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 지방세법 제12조(부동산 외 취득의 세율) 제1항 제2호 가목 (시행 2026.1.1) · 수원시 취득세 안내도 승용자동차 7%로 기재",
+      "source_url": "https://www.law.go.kr/법령/지방세법/제12조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "행정안전부·지방자치단체(지방세법)", "category": "자동차 취득세율", "line": "비영업용 승용자동차", "years": "2026.1.1 시행본", "region": "KR" },
+      "caution": "'비영업용'의 구체 정의는 시행령에 있고 이번 조사에서 열지 않았다. 수원시 안내는 '승용자동차 7%'로만 적어 영업용 구분이 빠져 있으니, 영업용 승용차에 7%를 쓰지 말 것. 경자동차 4%도 시행령의 경자동차 정의를 따른다.",
+      "cautionSource": "지방세법 제12조 제1항 제2호 가목 원문(같은 URL) · 수원시 안내 https://www.suwon.go.kr/sw-www/deptHome/dep_traffic/traffic05/traffic05-04/traffic05-04-01.jsp (영업용 구분 없이 7%)"
+    },
+    {
+      "id": "veh-rate-other-vehicles-5pct-4pct",
+      "claim": "그 밖의 자동차(승합·화물 등)의 취득세 표준세율은 비영업용 1천분의 50(5%, 경자동차 1천분의 40), 영업용 1천분의 40(4%)이고, 이륜자동차 중 대통령령이 정하는 것은 1천분의 20(2%)이다(지방세법 제12조 제1항 제2호 나목·다목).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 지방세법 제12조 제1항 제2호 나목·다목 (시행 2026.1.1) · 수원시 취득세 안내는 승합·화물 5%, 영업용 4%로 기재",
+      "source_url": "https://www.law.go.kr/법령/지방세법/제12조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "행정안전부·지방자치단체(지방세법)", "category": "자동차 취득세율", "line": "승합·화물 등 그 밖의 자동차 · 영업용 · 이륜", "years": "2026.1.1 시행본", "region": "KR" },
+      "caution": "승합·화물 5%와 영업용 4%는 비영업용·영업용 구분에 따른 세율이다. 영업용 승용차도 이 '영업용 4%' 항에 해당하는 구조로 보이나(제2호 가목은 비영업용 승용만 규정), 영업용 승용의 정의를 시행령에서 확인하지 못했다. 같은 숫자를 구분 없이 쓰지 말 것.",
+      "cautionSource": "지방세법 제12조 제1항 제2호 다목 원문(같은 URL) · 수원시 안내 https://www.suwon.go.kr/sw-www/deptHome/dep_traffic/traffic05/traffic05-04/traffic05-04-01.jsp (구분 없이 5%·4%로 표기)"
+    },
+    {
+      "id": "veh-deadline-60days-before-registration",
+      "claim": "자동차(차량) 취득세는 취득일부터 60일 이내에 신고·납부하고, 등록 전에 신고·납부하는 것이 원칙이다. 상속으로 인한 경우는 상속개시일이 속하는 달의 말일부터 6개월이다(부산광역시 차량등록사업소 안내, 수원시 취득세 안내 2곳 일치, 근거 조문 지방세법 제20조 제1항·제4항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "부산광역시 차량등록사업소 취득세안내 · 수원시 취득세 안내(차량 등록·관리 > 세무안내) · 지방세법 제20조 제1항·제4항",
+      "source_url": "https://www.busan.go.kr/car/crtaxacquisition",
+      "checked": "2026-10-27",
+      "scope": { "brand": "지방자치단체(부산·수원) · 행정안전부 지방세법", "category": "자동차 취득세 신고·납부", "line": "차량·건설기계 취득", "years": "부산 게시본(연도 표기 없음) · 수원 게시본(연도 표기 없음) · 법 2026.1.1 시행본", "region": "부산·수원 안내 기준, 법령은 KR" },
+      "caution": "'등록 전 납부'는 지자체 안내 문구다. 법 조문으로는 제20조 제4항이 근거이며, 등기·등록 신청서를 접수하는 날까지 신고·납부해야 한다는 내용이다. 60일을 등록 기한으로 쓰지 말 것.",
+      "cautionSource": "지방세법 제20조 제4항 원문 https://www.law.go.kr/법령/지방세법/제20조 · 부산 안내 https://www.busan.go.kr/car/crtaxacquisition"
+    },
+    {
+      "id": "veh-taxdate-sale-gift-suwon",
+      "claim": "차량 취득세의 취득일은 유상승계 취득이면 잔금지급일, 무상승계 취득(증여·기부·상속 등)이면 계약일로 안내되어 있다. 상속은 상속개시일이다(수원시 취득세 안내).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "수원시 취득세 안내(차량 등록·관리 > 세무안내 > 취득세 안내)",
+      "source_url": "https://www.suwon.go.kr/sw-www/deptHome/dep_traffic/traffic05/traffic05-04/traffic05-04-01.jsp",
+      "checked": "2026-10-27",
+      "scope": { "brand": "경기도 수원시(지자체 안내)", "category": "자동차 취득세 취득시기", "line": "차량·건설기계 취득", "years": "게시본(연도 표기 없음)", "region": "경기 수원시 안내 1곳" },
+      "caution": "수원시 안내 1곳만 열었다. 다른 지자체가 같은 기준인지는 확인하지 못했다. 법령 취득시기 조문은 이번에 열지 않았다. 중고차 매매는 지자체마다 잔금 기준 문구가 다를 수 있다.",
+      "cautionSource": "수원시 취득세 안내 https://www.suwon.go.kr/sw-www/deptHome/dep_traffic/traffic05/traffic05-04/traffic05-04-01.jsp"
+    },
+    {
+      "id": "veh-exemption-500k-busan-unverified",
+      "claim": "부산광역시 차량등록사업소 안내는 취득가액(과세표준액) 50만원 이하 차량에는 취득세를 부과하지 않고 등록면허세만 부과한다고 적었으나, 근거 법령 조문은 이번 조사에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "부산광역시 차량등록사업소 취득세안내(원문은 지자체 안내, 근거 조문 미확인)",
+      "source_url": "https://www.busan.go.kr/car/crtaxacquisition",
+      "checked": "2026-10-27",
+      "scope": { "brand": "부산광역시(지자체 안내)", "category": "자동차 취득세 면세", "line": "취득가액 50만원 이하 차량", "years": "게시본(연도 표기 없음)", "region": "부산 안내 1곳" },
+      "caution": "이 면세 기준을 글에 단정하지 말 것. 부산 1곳 안내라 다른 지자체에도 같은 기준인지 미확인이다. 근거 조문을 열기 전에는 '부산시는 이렇게 안내한다' 수준으로만 쓸 것.",
+      "cautionSource": "부산광역시 차량등록사업소 안내 https://www.busan.go.kr/car/crtaxacquisition (50만원 기재, 근거 조문 미확인)"
+    },
+    {
+      "id": "veh-reg-tax-rate-vehicle-registration",
+      "claim": "차량 소유권 등록의 등록면허세는 비영업용 승용자동차 1천분의 50(5%, 경자동차 1천분의 20), 그 밖의 차량 비영업용 1천분의 30(3%, 경자동차 1천분의 20), 영업용 1천분의 20(2%)이다(지방세법 제28조 제3호 가목).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 지방세법 제28조(세율) 제3호 가목 (시행 2026.1.1) · 부산 안내는 리스이용자 등록면허세 승용 5%·승합화물 3%·영업용 2%로 별도 기재",
+      "source_url": "https://www.law.go.kr/법령/지방세법/제28조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "행정안전부·지방자치단체(지방세법)", "category": "자동차 등록면허세(차량 소유권 등록)", "line": "차량 소유권 등록 — 일반", "years": "2026.1.1 시행본", "region": "KR" },
+      "caution": "이 세율은 등록면허세이고 자동차 취득세(제12조)와 별개의 세금이다. 과세표준은 등록 당시 가액(제27조)이다. 리스 차량 등 예외 세율은 부산 안내에 따로 있으나 법령 대조는 하지 않았다. 리스 예외를 일반 세율에 섞지 말 것.",
+      "cautionSource": "지방세법 제28조 제3호 가목 원문(같은 URL) · 부산 안내 리스 예외 https://www.busan.go.kr/car/crtaxacquisition"
+    }
+  ]
+}

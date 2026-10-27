@@ -1,0 +1,89 @@
+{
+  "topic": "부업 소득 신고 — 사업·기타소득 5월 신고 대상, 근로소득자 면제 범위, 기타소득 300만원 기준, 강연료 60% 필요경비",
+  "brand": "국세청",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [
+    "law-income-tax-final-return-may",
+    "income-tax-filing-period-statutory",
+    "income-tax-deadline-2026-june1"
+  ],
+  "declined_facts": [
+    { "id": "income-tax-sincere-filing-threshold-2026", "why": "성실신고확인 대상은 업종별 수입금액 기준(5억 원 이상 등)의 사업자에 해당하는 제도라 부업 소득 글의 대상이 아니다." }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "sidejob-saejeop-filing-trigger",
+      "claim": "사업소득(3.3% 원천징수 소득 포함)이 있으면 다음 해 5월 종합소득세 신고 대상이며, 근로소득·연금소득과 기타소득(기타소득금액 300만원 초과분)을 합산해 신고한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 「모두채움 신고 안내(환급)」 신고대상 소득 설명",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=41095&cntntsId=239072",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "종합소득세 신고 대상", "line": "부업 사업소득·기타소득", "years": "현행 안내 페이지(게시일 미표기, 열람 2026-10-27)", "region": "KR" },
+      "caution": "기타소득의 합산 기준은 별도 항목(기타소득금액 기준)을 따른다. 받은 금액 전체로 판단하지 말 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "sidejob-employee-only-exempt",
+      "claim": "근로소득만 있는 사람은 과세표준 확정신고를 하지 않아도 된다(소득세법 제73조 제1항 제1호). 근로소득과 사업소득을 함께 가진 사람은 이 면제 목록에 들어 있지 않다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소득세법 제73조 제1항(과세표준확정신고의 예외)",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제73조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "종합소득세 신고 의무 예외", "line": "근로소득자의 부업 소득", "years": "2026.1.1 시행 소득세법 기준", "region": "KR" },
+      "caution": "대통령령으로 정한 사업소득만 있는 경우 등 예외의 세부 범위는 시행령 원문을 확인하지 못했다. 예외를 단정하지 말고 '해당 소득 유형으로 판단한다'까지만 쓸 것. 근로소득자가 2곳 이상에서 근로소득을 받으면 이 면제가 적용되지 않는다(제73조 제2항).",
+      "cautionSource": "소득세법 제73조 제2항 '2명 이상으로부터 받는 근로소득' 문구(국가법령정보센터 https://www.law.go.kr/법령/소득세법/제73조)"
+    },
+    {
+      "id": "sidejob-other-income-300-separate",
+      "claim": "원천징수된 기타소득 중 기타소득금액(총수입에서 필요경비를 뺀 금액)이 300만원 이하인 것은 분리과세기타소득이 되어 종합소득 합산 없이 끝낼 수 있고, 합산 신고를 선택할 수도 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소득세법 제14조 제3항 제8호 가목, 국세청 「기타소득」 안내(cntntsId=7893)",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제14조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "기타소득 과세 방식", "line": "기타소득 분리과세 300만원 기준", "years": "2026.1.1 시행 소득세법 기준", "region": "KR" },
+      "caution": "기준은 받은 금액이 아니라 기타소득금액(필요경비를 뺀 금액)이다. 강연료는 필요경비 60%를 뺀 뒤 300만원을 본다.",
+      "cautionSource": "국세청 기타소득 안내 필요경비 60%(https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=6457&cntntsId=7893) · 소득세법 제14조 제3항 제8호 가목 300만원(https://www.law.go.kr/법령/소득세법/제14조)"
+    },
+    {
+      "id": "sidejob-lecture-fee-60pct",
+      "claim": "고용관계 없이 다수에게 강연하고 받는 강연료 등 일시적인 인적용역 대가는 기타소득이며 필요경비가 60%다(소득세법 제21조 제1항 제19호 가목).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소득세법 제21조 제1항 제19호 가목(국가법령정보센터), 국세청 「기타소득」 안내(cntntsId=7893)",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=6457&cntntsId=7893",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "기타소득 필요경비", "line": "강연료 등 일시적 인적용역", "years": "2026.1.1 시행 소득세법 기준(제21조 제1항 제19호)", "region": "KR" },
+      "caution": "같은 활동을 계속·반복하면 사업소득으로 본다는 국세청 해석 사례(소득-256, 2008.7.28.)가 있다. 강연이 반복되면 기타소득이 아닐 수 있으니 판단을 확정하지 말 것.",
+      "cautionSource": "국세청 사업소득 원천징수 대상 안내(계속적·반복적 용역 사례 소득-256, 2008.7.28.) https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=6620&cntntsId=7900"
+    },
+    {
+      "id": "sidejob-lecture-withholding-8-8",
+      "claim": "강연료 등 기타소득을 지급받을 때 원천징수는 지급액의 8.8%(지방소득세 포함)를 적용하며, 건별 기타소득금액이 5만원 이하이면 과세하지 않는다(국세청 안내 사례).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 「기타소득」 안내(cntntsId=7893), 소득세법 제129조 제1항 제6호 라목(그 밖의 기타소득 20%)",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=6457&cntntsId=7893",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "기타소득 원천징수", "line": "강연료 등 원천징수 8.8%", "years": "현행 안내 페이지(게시일 미표기, 열람 2026-10-27) · 법 2026.1.1 시행", "region": "KR" },
+      "caution": "원천징수는 돈을 지급하는 쪽이 한다. 받는 사람은 이 금액을 5월 신고에서 정산한다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "sidejob-exempt-scope-unverified",
+      "claim": "근로 외 소득의 금액(예: 500만원) 이하이면 5월 신고가 면제된다는 기준은 이번에 연 소득세법 제73조 원문에서 찾지 못했다. 면제 범위의 시행령 세부 기준도 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "소득세법 제73조 제1항(과세표준확정신고의 예외) 원문 열람",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제73조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "종합소득세 신고 의무 예외", "line": "근로 외 소득 금액 기준", "years": "2026.1.1 시행 소득세법 기준(시행령 원문 미열람)", "region": "KR" },
+      "caution": "금액 기준 면제를 공식 사실처럼 쓰지 말 것. 글에서는 제73조 제1항의 면제 유형(근로소득만 있는 자 등)과 기타소득 300만원 기준까지만 설명한다.",
+      "cautionSource": "기타소득 300만원 기준의 근거: 소득세법 제14조 제3항 제8호 가목(https://www.law.go.kr/법령/소득세법/제14조)"
+    }
+  ]
+}

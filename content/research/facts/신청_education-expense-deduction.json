@@ -1,0 +1,121 @@
+{
+  "topic": "교육비 세액공제 — 학교·대학 교육비 한도, 본인·부양가족 범위, 근로소득 요건",
+  "brand": "국세청",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [
+    { "id": "medical-expense-threshold-3pct", "why": "의료비 세액공제의 총급여 3% 초과분 문턱 규정이라 교육비 세액공제에는 적용되지 않는다(교육비는 법 제59조의4 제3항 본문의 15%·인당 한도 구조)." }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "edu-rate-15-and-caps",
+      "claim": "교육비 세액공제율은 지출한 교육비의 15%이며, 한도는 학생 1명당 취학 전 아동·초·중·고등학생 연 300만원, 대학생 연 900만원이다. 본인 교육비와 장애인 특수교육비는 한도가 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 맞춤형 안내 「교육비 세액공제」 + 소득세법 제59조의4 제3항",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=40633&cntntsId=239024",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "연말정산 특별세액공제", "line": "교육비 세액공제", "years": "2026.1.1 시행 소득세법 기준(2025.12.23 일부개정 조문)", "region": "KR" },
+      "caution": "한도 문구가 '1명당'이므로 자녀가 여럿이면 학생별로 따로 계산한다고 읽는다. 합산 한도로 묶어 쓰지 말 것.",
+      "cautionSource": "소득세법 제59조의4 제3항 제1호 본문 '1명당 연 …만원' 문구(국가법령정보센터 https://www.law.go.kr/법령/소득세법/제59조의4)"
+    },
+    {
+      "id": "edu-dependent-no-age-income-limit",
+      "claim": "교육비 세액공제의 대상자 중 기본공제대상자(배우자·직계비속·형제자매 등)에는 나이와 소득의 제한이 없다(법 제59조의4 제3항 본문 괄호).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소득세법 제59조의4 제3항 본문, 국세청 「교육비 세액공제」 안내(부양가족 '나이제한 없음')",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제59조의4",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "연말정산 특별세액공제", "line": "교육비 세액공제 — 부양가족 나이·소득 제한", "years": "2026.1.1 시행 소득세법 기준", "region": "KR" },
+      "caution": "나이·소득 제한이 없다는 것은 교육비 공제 계산에 한해서다. 배우자·직계비속 등 부양 관계 요건은 그대로 필요하다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "edu-grad-school-scope",
+      "claim": "본인의 대학원 교육비는 공제 대상이며 한도가 없지만, 배우자·직계비속·형제자매 등 부양가족의 대학원 교육비는 공제 대상이 아니다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소득세법 제59조의4 제3항 제1호 단서·제2호 나목, 국세청 「교육비 세액공제」 안내",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제59조의4",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "연말정산 특별세액공제", "line": "교육비 세액공제 — 대학원", "years": "2026.1.1 시행 소득세법 기준", "region": "KR" },
+      "caution": "",
+      "cautionSource": ""
+    },
+    {
+      "id": "edu-parent-excluded-disability-unlimited",
+      "claim": "직계존속(부모 등)의 일반 교육비는 공제 대상이 아니다. 반면 기본공제대상자인 장애인의 특수교육비는 직계존속을 포함해 한도 없이 공제된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 맞춤형 안내 「교육비 세액공제」(부양가족 범위·장애인 특수교육비 행)",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=40633&cntntsId=239024",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "연말정산 특별세액공제", "line": "교육비 세액공제 — 부양가족 범위", "years": "현행 안내 페이지(게시일 미표기, 열람 2026-10-27)", "region": "KR" },
+      "caution": "",
+      "cautionSource": ""
+    },
+    {
+      "id": "edu-employment-income-only",
+      "claim": "교육비 세액공제는 근로소득이 있는 거주자에게 적용된다. 사업소득만 있는 사람은 이 공제 대상이 아니다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소득세법 제59조의4 제3항 본문, 국세청 「의료비·보험료 세액공제」 안내(cntntsId=7874)",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제59조의4",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "연말정산 특별세액공제", "line": "교육비 세액공제 — 대상자 요건", "years": "2026.1.1 시행 소득세법 기준", "region": "KR" },
+      "caution": "프리랜서·사업자가 낸 교육비에 이 공제를 적용해 쓰지 말 것. 근로소득이 함께 있는 경우에만 쓴다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "edu-self-loan-repayment",
+      "claim": "본인이 받은 학자금 대출의 원리금 상환액도 교육비 세액공제 대상이며(대통령령이 정한 대출), 상환 연체로 추가 지급한 금액은 제외된다. 배우자·직계비속 등 부양가족이 받은 학자금 대출로 지급한 교육비는 제외된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소득세법 제59조의4 제3항 제1호 단서·제2호 라목",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제59조의4",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "연말정산 특별세액공제", "line": "교육비 세액공제 — 학자금 대출 상환", "years": "2026.1.1 시행 소득세법 기준", "region": "KR" },
+      "caution": "어떤 대출이 대통령령 요건에 맞는지는 시행령 기준이다. 이번 조사에서 시행령 원문은 열지 않았으니 '대출 종류 요건은 확인 필요'로 남길 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "edu-academy-structure",
+      "claim": "법은 취학 전 아동의 학원·체육시설 교육비와, 과세기간 종료일 현재 9세 미만 또는 2학년 이하 초등학생의 예능 학원·체육시설 교육비만 대통령령 요건과 금액 범위에서 공제 대상으로 열거하며, 일반 초등학생 학원비는 열거되지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소득세법 제59조의4 제3항 제1호 라목·마목",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제59조의4",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "연말정산 특별세액공제", "line": "교육비 세액공제 — 학원·체육시설", "years": "2026.1.1 시행 소득세법 기준", "region": "KR" },
+      "caution": "나이·학년 기준은 과세기간 종료일 현재다. 학년이 바뀌는 해에는 연말 기준 학년으로 확인할 것.",
+      "cautionSource": "소득세법 제59조의4 제3항 제1호 마목 '과세기간 종료일 현재' 문구(국가법령정보센터)"
+    },
+    {
+      "id": "edu-academy-amount-unverified",
+      "claim": "취학 전 학원·체육시설과 9세 미만 초등생 예능 학원의 대통령령 금액 기준(시행령 원문)은 이번 조사에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "소득세법 제59조의4 제3항 제1호 라목·마목 원문(금액은 대통령령 위임)",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제59조의4",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "연말정산 특별세액공제", "line": "교육비 세액공제 — 학원비 금액", "years": "현행(시행령 원문 미열람)", "region": "KR" },
+      "caution": "검색 요약에 보인 국세법령정보 회신 사례(바둑학원)는 열어 보지 못했으므로 금액·요건 근거로 쓰지 말 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "edu-proof-document",
+      "claim": "교육비 공제 증빙은 교육비 납입증명서이며, 연말정산 간소화 서비스에서 조회할 수 있고 연말정산 시 회사에 제출한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 맞춤형 안내 「교육비 세액공제」 구비 서류",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=40633&cntntsId=239024",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "연말정산 증빙", "line": "교육비 세액공제 — 구비 서류", "years": "현행 안내 페이지(게시일 미표기, 열람 2026-10-27)", "region": "KR" },
+      "caution": "",
+      "cautionSource": ""
+    }
+  ]
+}

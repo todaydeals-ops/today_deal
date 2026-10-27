@@ -1,0 +1,83 @@
+{
+  "topic": "체납세금 조회·납부 (국세 체납 — 홈택스 납부 경로, 인터넷지로, 납부지연가산세 구조) — 신청·환급 달력, 세금·공제",
+  "brand": "국세청",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "tdl-hometax-payment-path",
+      "claim": "국세는 홈택스에 공동·금융인증서로 로그인한 뒤 [납부·고지·환급] → [세금납부] → [납부할세액 조회/납부] 메뉴에서 고지 금액을 조회하고 납부한다(국세청 종합소득세 신고·납부방법 안내).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 국세신고안내 > 개인신고안내 > 종합소득세 > 신고·납부방법 (cntntsId 238910)",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=40296&cntntsId=238910",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청(홈택스)", "category": "국세 납부", "line": "전자납부 — 홈택스 세금납부 메뉴", "years": "페이지 게시본(연도 표기 없음)", "region": "KR" },
+      "caution": "로그인 인증 수단과 결제 가능 시간은 페이지마다 다르게 적혀 있다(238910은 계좌이체 07:00~23:30, 카드·간편결제 등 기재). 시간 수치는 이 팩트로 쓰지 말고 메뉴 경로까지만 쓸 것.",
+      "cautionSource": "국세청 신고·납부방법 페이지 https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=40296&cntntsId=238910 (결제수단별 이용시간)"
+    },
+    {
+      "id": "tdl-hometax-giro-365days",
+      "claim": "국세는 홈택스 또는 인터넷지로를 통해 365일(공휴일 포함) 전자납부할 수 있다(국세청 국세전자납부 안내).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 국세신고안내 > 법인신고안내 > 세금납부 안내 > 국세전자납부 안내 (cntntsId 7774)",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2438&cntntsId=7774",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청(홈택스·인터넷지로)", "category": "국세 전자납부", "line": "홈택스·인터넷지로 연중 납부", "years": "페이지 게시본(연도 표기 없음)", "region": "KR" },
+      "caution": "인터넷지로 주소가 두 공식 페이지에서 다르다. 7774는 giro.kr, 238910은 giro.or.kr로 적었다. 글에 주소를 쓰기 전에 다시 확인할 것. 은행 창구·ARS 등 금융기관 경로는 기관별 이용시간이 달라 이 팩트에 포함하지 않았다.",
+      "cautionSource": "국세전자납부 안내 https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2438&cntntsId=7774 (giro.kr) · 신고·납부방법 https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=40296&cntntsId=238910 (giro.or.kr)"
+    },
+    {
+      "id": "tdl-penalty-interest-by-period",
+      "claim": "납부지연가산세는 법정납부기한의 다음 날부터 납부고지일 전날까지 기간에 대통령령 이자율을 곱한 금액(국세기본법 제47조의4 제1항 제1호)과, 지정납부기한의 다음 날부터 납부일 전날까지 경과한 개월 수에 대통령령 이자율을 곱한 금액(같은 항 제1호의2)으로 각각 규정돼 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 국세기본법 제47조의4(납부지연가산세) 제1항 제1호·제1호의2 (시행 2026.10.2, 법률 제21987호)",
+      "source_url": "https://www.law.go.kr/법령/국세기본법/제47조의4",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청(국세기본법)", "category": "국세 체납 가산세", "line": "납부지연가산세(기간·이자율 구조)", "years": "2026.10.2 시행본", "region": "KR" },
+      "caution": "조문에는 일할 이율이나 월 이율 숫자가 없다(대통령령 위임). 세종 취득세 안내의 '1일 0.022%(10만분의 22)'는 지방세 가산율이므로 국세에 옮기지 말 것. 1호와 1의2호가 같은 기간을 어떻게 나눠 적용하는지 해석은 이번에 확정하지 못했다.",
+      "cautionSource": "국세기본법 제47조의4 제1항 본문(이율 대통령령 위임, 같은 URL) · 지방세 가산율 출처 세종특별자치시 취득세 안내 https://www.sejong.go.kr/life/sub04_1304.do"
+    },
+    {
+      "id": "tdl-penalty-3pct-deadline",
+      "claim": "법정납부기한까지 내야 할 세액 중 지정납부기한까지 내지 않은 세액(과소납부분 포함)에는 그 세액의 100분의 3에 해당하는 가산세를 더한다(국세기본법 제47조의4 제1항 제3호).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 국세기본법 제47조의4 제1항 제3호 (시행 2026.10.2)",
+      "source_url": "https://www.law.go.kr/법령/국세기본법/제47조의4",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청(국세기본법)", "category": "국세 체납 가산세", "line": "지정납부기한 미납 3% 가산", "years": "2026.10.2 시행본", "region": "KR" },
+      "caution": "이 3%는 기간을 곱하지 않고 세액의 일정 비율로만 규정돼 있다. 기간에 따라 늘어나는 금액은 제1호의2 쪽이다. 두 개를 같은 것으로 설명하지 말 것.",
+      "cautionSource": "국세기본법 제47조의4 제1항 제3호 원문(같은 URL)"
+    },
+    {
+      "id": "tdl-47-4-effective-2026-10-02",
+      "claim": "국세기본법 제47조의4는 법률 제21987호(2026.9.29. 일부개정)로 2026년 10월 2일부터 시행되는 본이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 국세기본법 제47조의4 시행일 표기",
+      "source_url": "https://www.law.go.kr/법령/국세기본법/제47조의4",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청(국세기본법)", "category": "현행 여부", "line": "납부지연가산세 조문", "years": "시행 2026.10.2", "region": "KR" },
+      "caution": "2026.9.29 개정 내용의 구체 변경점은 이번에 대조하지 않았다. 개정 전 수치를 옛 자료에서 가져오지 말 것.",
+      "cautionSource": "국세기본법 제47조의4 개정 이력(같은 URL)"
+    },
+    {
+      "id": "tdl-lookup-menu-unverified",
+      "claim": "본인이 자신의 체납 국세 내역을 홈택스에서 조회하는 전용 메뉴 경로는 국세청 공식 페이지에서 확인하지 못했다. 검색 요약에는 '체납내역 조회' 표현이 있었으나 공식 본문으로 확인되지 않았다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "국세청 신고·납부방법 페이지 열람(해당 메뉴 기재 없음) · 손택스 체납내역 화면 열람 시도(메인 페이지로 리다이렉트되어 내용 미확인)",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=40296&cntntsId=238910",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청(홈택스)", "category": "국세 체납 조회", "line": "본인 체납 내역 조회 메뉴", "years": "2026-10-27 열람 기준", "region": "KR" },
+      "caution": "체납 내역 조회 메뉴 경로를 글에 쓰지 말 것. '홈택스 로그인 후 세금납부 메뉴에서 납부할 세액을 조회한다'까지만 쓰고, 체납 내역 전용 메뉴 여부는 홈택스 화면에서 직접 확인하도록 안내한다. 수임납세자 체납내역 화면은 세무대리인용으로 보이나 확인하지 못했다.",
+      "cautionSource": "국세청 신고·납부방법 페이지 https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=40296&cntntsId=238910 (메뉴 경로 기재 범위)"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "topic": "기부금 세액공제 — 공제율 15%·30%, 일반기부금 한도, 사업소득만 있는 자 제외, 고향사랑기부금과 구분",
+  "brand": "국세청",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [
+    { "id": "hometown-credit-10man-full", "why": "고향사랑기부금 세액공제(10만원 한도 내 전액 등) 체계는 일반기부금 15%·30% 체계와 다른 제도라 이 파일에 쓰지 않는다." },
+    { "id": "hometown-credit-10to20-44pct", "why": "고향사랑기부금 구간율이라 일반기부금 공제에 적용하면 틀린다. 국세청 표와 계산식이 달라 disputes로 신고했다." },
+    { "id": "hometown-credit-over20-165pct", "why": "고향사랑기부금 20만원 초과 구간율이라 일반기부금 공제와 무관하다." },
+    { "id": "hometown-limit-2000man", "why": "고향사랑기부금 연 2,000만원 한도는 일반기부금 한도(소득금액 30% 등)와 다른 제도 한도라 쓰지 않는다." }
+  ],
+  "disputes": [
+    {
+      "targetId": "hometown-credit-10to20-44pct",
+      "problem": "국세청 연말정산 맞춤형 안내(cntntsId=7874, 게시 연도 미표기)는 고향사랑기부금 공제율을 '10만원 초과 시 11만원 + 10만원 초과분×15%(특별재난지역 30%)'로 적는다. 행정안전부 페이지의 '10만원 초과~20만원 이하 44%' 구간과 계산 방식이 다르다. 귀속연도 차이로 보이나 어느 쪽이 현행인지 판정이 필요하다.",
+      "evidence": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7874 (고향사랑기부금 공제율 표, 2026-10-27 열람)"
+    }
+  ],
+  "facts": [
+    {
+      "id": "donation-rate-15-30",
+      "claim": "기부금 세액공제율은 기부금 합계 중 1천만원 이하 부분 15%, 1천만원 초과 부분 30%다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소득세법 제59조의4 제4항, 국세청 「기부금 세액공제」 안내(cntntsId=239040)",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제59조의4",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "기부금 세액공제", "line": "일반·특례·우리사주조합 기부금", "years": "2026.1.1 시행 소득세법 기준(제4항 개정 표기 2022.12.31)", "region": "KR" },
+      "caution": "국세청 기부금 안내 페이지에 '2021~2022년 귀속 기부금은 1천만원 이하 20%, 초과분 35%로 한시 상향'이라는 문구가 있다. 이 수치는 2021~2022년 귀속분에만 쓰고 2026년 귀속 글에는 쓰지 말 것.",
+      "cautionSource": "국세청 「기부금 세액공제」 안내(2021~2022년 귀속 한시 상향 문구) https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239040&mi=40978"
+    },
+    {
+      "id": "donation-general-limit",
+      "claim": "일반기부금 한도는 종교단체 외 기부금이 소득금액의 30%이고, 종교단체 기부금은 소득금액의 10%에 소득금액의 20%와 종교단체 외 기부금 중 적은 금액을 더한 금액이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소득세법 제59조의4 제4항 제2호 가목·나목(국가법령정보센터)",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제59조의4",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "기부금 세액공제 — 한도", "line": "일반기부금", "years": "2026.1.1 시행 소득세법 기준", "region": "KR" },
+      "caution": "국세청 연말정산 표(cntntsId=7874)는 같은 한도를 근로소득금액 기준(종교 외 30%, 종교단체 10%)으로 적는다. 근로자 글은 국세청 표 용어를, 종합소득 글은 법 용어 '소득금액'을 써서 구분할 것.",
+      "cautionSource": "소득세법 제59조의4 제4항 제2호 원문(https://www.law.go.kr/법령/소득세법/제59조의4) · 국세청 연말정산 맞춤형 안내(https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7874)"
+    },
+    {
+      "id": "donation-saejeop-only-excluded",
+      "claim": "사업소득만 있는 거주자는 기부금 세액공제 대상에서 제외된다. 다만 연말정산 대상 사업소득자는 포함된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소득세법 제59조의4 제4항 본문, 국세청 「기부금 세액공제」 안내(cntntsId=239040)",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239040&mi=40978",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "기부금 세액공제 — 대상자", "line": "기부금 세액공제 대상 요건", "years": "현행 안내 페이지(게시일 미표기, 열람 2026-10-27) · 법 2026.1.1 시행", "region": "KR" },
+      "caution": "'연말정산 대상 사업소득자'의 범위는 대통령령과 사업소득 연말정산 안내에 따른다. 프리랜서 3.3% 사업소득자가 그 범위에 드는지는 소득 유형별로 따로 확인할 것.",
+      "cautionSource": "국세청 사업소득 연말정산 안내 https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=6468&cntntsId=7904"
+    },
+    {
+      "id": "donation-proof-and-lookup",
+      "claim": "기부금 공제 증빙은 기부금영수증과 기부금명세서이며 연말정산 시 회사에 제출한다. 간소화 서비스에서 조회되지 않으면 기부금 단체에서 영수증을 발급받을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 「기부금 세액공제」 안내 구비 서류",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239040&mi=40978",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "기부금 세액공제 — 증빙", "line": "기부금 영수증·명세서", "years": "현행 안내 페이지(게시일 미표기, 열람 2026-10-27)", "region": "KR" },
+      "caution": "회사가 급여에서 일괄 공제한 기부금은 근로자가 영수증을 첨부하지 않는다는 국세청 안내가 있다. 회사가 일괄 공제하는지는 회사 연말정산 안내로 확인한다.",
+      "cautionSource": "국세청 연말정산 맞춤형 안내 https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7874"
+    },
+    {
+      "id": "donation-no-carryover-types",
+      "claim": "정치자금기부금·고향사랑기부금·우리사주조합기부금은 이월공제가 적용되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 연말정산 맞춤형 안내(cntntsId=7874) 및 「기부금 세액공제」 안내(cntntsId=239040)",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7874",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "기부금 세액공제 — 이월", "line": "정치자금·고향사랑·우리사주조합 기부금", "years": "현행 안내 페이지(게시일 미표기, 열람 2026-10-27)", "region": "KR" },
+      "caution": "이월공제 허용 기부금의 이월 기간 등 세부 기준은 이번 조사에서 원문으로 확인하지 못했다. 기간을 수치로 쓰지 말 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "donation-hometown-separate-table",
+      "claim": "고향사랑기부금은 국세청 연말정산 안내에서 정치자금기부금·우리사주조합기부금과 함께 일반기부금 공제율(15%·30%)과 다른 별도 공제율 표로 안내된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 연말정산 맞춤형 안내(cntntsId=7874) 기부금 세액공제 공제율 표",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7874",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청·행정안전부", "category": "기부금 세액공제 — 고향사랑 구분", "line": "고향사랑기부금", "years": "현행 안내 페이지(게시일 미표기, 열람 2026-10-27)", "region": "KR" },
+      "caution": "고향사랑 세액공제율·한도는 행정안전부 기준을 따로 확인한다. 일반기부금 15%·30% 수치를 고향사랑 글에 옮기지 말 것.",
+      "cautionSource": "국세청 연말정산 맞춤형 안내 기부금 공제율 표(https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7874) · 소득세법 제59조의4 제4항(https://www.law.go.kr/법령/소득세법/제59조의4)"
+    }
+  ]
+}

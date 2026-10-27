@@ -1,0 +1,123 @@
+{
+  "topic": "대한민국 동행축제 — 2026 회차 구조(상반기 4월·하반기 10월), 2026 상반기 기간·성과, 하반기 누리집 기간, 주최 기관",
+  "brand": "중소벤처기업부(동행축제)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [
+    { "id": "ksf-2025-companies-november-campaigns", "why": "코리아세일페스타(2025년 11월, 현대차·기아 할인)는 동행축제·코리아 그랜드 페스티벌과 다른 행사다. 이 주제에 섞으면 행사명과 기간이 틀어진다." },
+    { "id": "ksf-2025-samsung-november-campaign-unverified", "why": "코리아세일페스타 2025년 삼성 할인 기간. 동행축제 주제와 무관한 행사라 쓰지 않는다." },
+    { "id": "ksf-2025-participants-unconfirmed", "why": "코리아세일페스타 2025 참여 기업 수. 동행축제 참여 규모와 다른 행사이므로 쓰지 않는다." }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "dongsa-festival-status",
+      "claim": "중소벤처기업부는 2026년부터 동행축제를 상반기 ‘4월 동행축제’와 하반기 범부처 통합 소비촉진 행사인 ‘코리아 그랜드 페스티벌’을 중심으로 연 2회 정례화해 운영한다는 방침을 밝혔다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "중소벤처기업부 보도자료 2026.6.1 ‘4월 동행축제, 5,441억원 매출 성과 달성’",
+      "source_url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156764576",
+      "checked": "2026-10-27",
+      "scope": { "brand": "중소벤처기업부", "category": "소비촉진 행사(동행축제)", "line": "연 2회 정례화(상반기 4월 · 하반기 범부처 행사)", "years": "2026", "region": "KR" },
+      "caution": "하반기 행사는 동행축제 누리집에서 ‘2026 동행축제’라는 이름으로 표기되고, 범부처 보도자료에서는 ‘코리아 그랜드 페스티벌’로 불린다. 두 명칭이 함께 쓰이므로 글에서는 공고문의 명칭을 따르고 두 이름을 같은 행사로 묶어 설명할 때 근거를 밝힐 것.",
+      "cautionSource": "중기부 보도자료 2026.6.1 원문 (https://www.korea.kr/briefing/pressReleaseView.do?newsId=156764576) 및 동행축제 누리집 (https://k-shoppingfesta.org)"
+    },
+    {
+      "id": "dongsa-2026-spring-period",
+      "claim": "2026년 상반기 ‘4월 동행축제’는 2026년 4월 11일(토)부터 5월 10일(일)까지 30일간 진행됐다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "중소벤처기업부 보도자료 2026.4.6 ‘2026년 동행축제 개막(4.11~5.10)’, 종료 성과 보도자료 2026.6.1 확인",
+      "source_url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156753081",
+      "checked": "2026-10-27",
+      "scope": { "brand": "중소벤처기업부", "category": "소비촉진 행사", "line": "4월 동행축제", "years": "2026 상반기", "region": "KR(전국)" },
+      "caution": "2025년에는 ‘5월 동행축제’가 별도로 열렸다. 2026년 상반기 회차는 4월 11일~5월 10일이므로 ‘5월 동행축제’와 혼동하지 말 것.",
+      "cautionSource": "2025.5.1 중기부 보도자료 ‘세종에서 3일간 살거리, 즐길거리 가득한 5월 동행축제 한마당 열린다’ (https://www.korea.kr/briefing/pressReleaseView.do?newsId=156687353)"
+    },
+    {
+      "id": "dongsa-2026-spring-mechanism",
+      "claim": "2026년 4월 동행축제는 200개 판매채널과 중소기업·소상공인 3만 3천 개가 참여해 할인 행사를 운영했고, 지역축제 50곳과 연계했다. 네이버 ‘동행300 기획전’은 20% 할인쿠폰이 추가로 붙어 최대 70% 할인으로 안내됐다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "중소벤처기업부 보도자료 2026.4.6 ‘2026년 동행축제 개막(4.11~5.10)’",
+      "source_url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156753081",
+      "checked": "2026-10-27",
+      "scope": { "brand": "중소벤처기업부", "category": "참여·할인 방식", "line": "4월 동행축제", "years": "2026 상반기", "region": "KR(전국)" },
+      "caution": "‘최대 70%’는 네이버 동행300 기획전에 한정된 안내다. 행사 전체의 할인율로 일반화하지 말 것. 할인율과 기획전은 회차마다 다르다.",
+      "cautionSource": "같은 보도자료 원문 (https://www.korea.kr/briefing/pressReleaseView.do?newsId=156753081)"
+    },
+    {
+      "id": "dongsa-2026-spring-results",
+      "claim": "중소벤처기업부는 2026년 4월 동행축제가 직접 매출 5,441억 원, 참여 중소기업·소상공인 3만 6천 개, 200개 온·오프라인 유통채널을 통해 이뤄졌다고 종료 후 발표했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "중소벤처기업부 보도자료 2026.6.1 ‘4월 동행축제, 5,441억원 매출 성과 달성’",
+      "source_url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156764576",
+      "checked": "2026-10-27",
+      "scope": { "brand": "중소벤처기업부", "category": "행사 성과", "line": "4월 동행축제 직접 매출", "years": "2026 상반기", "region": "KR(전국)" },
+      "caution": "5,441억 원은 중기부가 발표한 자체 집계다. 독립 검증 자료는 확인하지 못했다. 참여 규모는 개최 발표(4월 6일) 3만 3천 개와 종료 발표(6월 1일) 3만 6천 개가 다르므로 어느 시점 수치인지 밝혀 쓸 것.",
+      "cautionSource": "중기부 보도자료 2026.6.1 (https://www.korea.kr/briefing/pressReleaseView.do?newsId=156764576) 및 2026.4.6 (https://www.korea.kr/briefing/pressReleaseView.do?newsId=156753081)"
+    },
+    {
+      "id": "dongsa-2026-fall-period-site",
+      "claim": "동행축제 공식 누리집(k-shoppingfesta.org)은 ‘2026 동행축제’의 축제기간을 2026년 10월 29일(목)부터 11월 15일(일)까지로 표기하고 있다. 누리집은 현재 가오픈 상태이며 정식 오픈일은 10월 29일이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "동행축제 공식 누리집 메인 (2026 동행축제 안내)",
+      "source_url": "https://k-shoppingfesta.org",
+      "checked": "2026-10-27",
+      "scope": { "brand": "중소벤처기업부(동행축제 누리집)", "category": "소비촉진 행사", "line": "2026 하반기 동행축제", "years": "2026 하반기", "region": "KR" },
+      "caution": "누리집이 가오픈 상태이고, 이 기간을 다룬 중기부 보도자료는 이번 조사에서 열지 못했다. 글에는 ‘누리집 게시 기준’으로 적고, 보도자료나 정식 공고가 나오면 그 기간으로 맞출 것. 범부처 ‘코리아 그랜드 페스티벌’ 명칭과 함께 쓰인다는 점도 밝힐 것.",
+      "cautionSource": "동행축제 누리집 메인의 가오픈 안내 문구 (https://k-shoppingfesta.org)"
+    },
+    {
+      "id": "dongsa-organizer-mss",
+      "claim": "동행축제는 중소벤처기업부가 2020년부터 개최해 온 대한민국 대표 소비촉진 캠페인이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "중소벤처기업부 보도자료 2026.4.6 ‘2026년 동행축제 개막(4.11~5.10)’",
+      "source_url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156753081",
+      "checked": "2026-10-27",
+      "scope": { "brand": "중소벤처기업부", "category": "소비촉진 캠페인", "line": "동행축제 주최 기관", "years": "2020~", "region": "KR" },
+      "caution": "소상공인시장진흥공단을 주최·주관처로 쓰지 말 것. 이번 조사에서 확인한 공식 보도자료와 누리집은 중기부를 개최 주체로 밝혔고, 소진공의 역할은 찾지 못했다.",
+      "cautionSource": "중기부 보도자료 2026.4.6 원문 (https://www.korea.kr/briefing/pressReleaseView.do?newsId=156753081)"
+    },
+    {
+      "id": "dongsa-info-channels",
+      "claim": "동행축제의 판매상품·할인정보·지역축제·이벤트는 누리집 k-shoppingfesta.org와 카카오톡 ‘동행축제’ 채널에서 확인할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "중소벤처기업부 보도자료 2026.4.6 ‘2026년 동행축제 개막(4.11~5.10)’ (안내 항목)",
+      "source_url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156753081",
+      "checked": "2026-10-27",
+      "scope": { "brand": "중소벤처기업부", "category": "정보 확인 경로", "line": "동행축제 누리집·카카오톡 채널", "years": "2026", "region": "KR" },
+      "caution": "채널 주소 외의 사칭 공지는 이번 조사에서 확인하지 않았다. 누리집 주소를 직접 입력하도록 안내할 것.",
+      "cautionSource": "동행축제 누리집 (https://k-shoppingfesta.org)"
+    },
+    {
+      "id": "dongsa-2027-schedule-unannounced",
+      "claim": "2027년 동행축제 상·하반기 일정과 기간은 이번 조사 시점(2026-10-27)에 공식 공고로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "동행축제 공식 누리집 2026 안내 및 중기부 2026.6.1 보도자료(연 2회 정례화 방침) 확인 결과, 2027 회차 일정 언급 없음",
+      "source_url": "https://k-shoppingfesta.org",
+      "checked": "2026-10-27",
+      "scope": { "brand": "중소벤처기업부", "category": "소비촉진 행사", "line": "2027 회차 일정", "years": "2027", "region": "KR" },
+      "caution": "2027년 일정은 ‘미공고’로 쓸 것. 2026년 회차 기간(4월 11일~5월 10일, 10월 29일~11월 15일)을 2027년으로 옮겨 쓰지 말 것.",
+      "cautionSource": "2026년 회차 기간 근거 (https://www.korea.kr/briefing/pressReleaseView.do?newsId=156753081, https://k-shoppingfesta.org)"
+    },
+    {
+      "id": "dongsa-2025-hq-disambiguation",
+      "claim": "2025년 하반기 범부처 ‘코리아 그랜드 페스티벌’은 2025년 10월 29일부터 11월 9일까지 12일간 열렸다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국무조정실 보도자료 2025.10.28 ‘[보도자료] 김민석 국무총리, 코리아 그랜드 페스티벌 개막식 참석’",
+      "source_url": "https://m.korea.kr/briefing/pressReleaseView.do?gubun=pressRelease&newsId=156723764&pageIndex=1&repCode=",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국무조정실 · 중소벤처기업부", "category": "범부처 소비 축제", "line": "코리아 그랜드 페스티벌", "years": "2025", "region": "KR" },
+      "caution": "2025년 기간(10.29~11.9)은 2026년 하반기 기간(10.29~11.15)과 다르다. 2025년 수치와 기간을 2026년 글에 옮기지 말 것.",
+      "cautionSource": "2026 동행축제 누리집 게시 기간 (https://k-shoppingfesta.org)"
+    }
+  ]
+}
