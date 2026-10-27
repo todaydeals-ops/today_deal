@@ -1,0 +1,85 @@
+{
+  "topic": "건강보험 자격확인서(공단 메뉴명 자격득실확인서) 발급 — 메뉴 존재·로그인 요건·공단 대표번호",
+  "brand": "국민건강보험공단",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [
+    { "id": "health-refund-hotline-1577-1000", "why": "scope가 보험료 환급금 문의로 한정돼 있다. 자격확인서 발급 맥락에 그대로 옮기면 scope가 어긋난다. 대표번호 자체는 공단 메인 화면에서 직접 확인해 insurance-certificate-hotline-1577-1000으로 새로 적었다." }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "insurance-certificate-menu-name",
+      "claim": "국민건강보험공단 홈페이지 메인 메뉴 목록에 자격득실확인서 항목이 있다. 공단 메뉴 명칭은 건강보험 자격확인서가 아니라 자격득실확인서다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민건강보험공단 홈페이지 메인 화면(렌더링 본문 메뉴 목록)",
+      "source_url": "https://www.nhis.or.kr/nhis/index.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민건강보험공단", "category": "건강보험 증명서 발급", "line": "자격득실확인서", "years": "2026-10-27 메인 화면 기준", "region": "KR" },
+      "caution": "건강보험 자격확인서라는 이름의 별도 문서가 공단에 따로 있는지는 이번 조사에서 확인하지 못했다. 글에서는 공단 메뉴명 자격득실확인서를 기준으로 쓰고, 검색어로 쓰이는 자격확인서는 병기만 할 것.",
+      "cautionSource": "공단 메인 메뉴 목록 실측(2026-10-27 렌더링). 별도 문서 존재 여부는 미확인"
+    },
+    {
+      "id": "insurance-certificate-login-required",
+      "claim": "자격득실확인서 발급 페이지(nhis.or.kr/nhis/minwon/jpAea00401.do)는 비로그인 상태에서 열리지 않고 개인 회원 로그인 화면으로 넘어가며, 화면에 로그인을 해주세요라고 나온다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "국민건강보험공단 발급 페이지 접근 실측(로그인 화면 리다이렉트)",
+      "source_url": "https://www.nhis.or.kr/nhis/minwon/jpAea00401.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민건강보험공단", "category": "건강보험 증명서 발급", "line": "자격득실확인서 온라인 발급 접근", "years": "2026-10-27 실측", "region": "KR" },
+      "caution": "로그인 후 발급 화면 구성은 이번에 확인하지 못했다. 발급 절차는 insurance-certificate-online-steps-unverified를 참고하고 공식 화면을 다시 확인할 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "insurance-certificate-online-steps-unverified",
+      "claim": "확인실패: 자격득실확인서의 온라인 발급 절차(로그인 후 발급 선택, 출력·팩스 방식 선택, PDF 열람 암호 설정 등)는 블로그 후기 요약에서만 확인했고, 공단 공식 페이지에서는 로그인 벽 때문에 절차를 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "블로그 후기 검색 요약(공식 본문 확인 실패)",
+      "source_url": "https://www.nhis.or.kr/nhis/minwon/jpAea00401.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민건강보험공단", "category": "건강보험 증명서 발급", "line": "온라인 발급 절차", "years": "미확인", "region": "KR" },
+      "caution": "블로그의 메뉴 경로(민원여기요 > 개인민원 등)와 암호 설정 방식은 글에 옮기지 말 것. 공식 화면에서 확인한 뒤에만 쓸 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "insurance-certificate-fee-unverified",
+      "claim": "확인실패: 자격득실확인서 온라인 발급 수수료가 무료라는 설명은 블로그 후기에서만 확인했고, 공식 페이지에서는 수수료 안내를 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "블로그 후기 검색 요약(공식 확인 실패)",
+      "source_url": "https://www.nhis.or.kr/nhis/minwon/jpAea00401.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민건강보험공단", "category": "건강보험 증명서 발급", "line": "발급 수수료", "years": "미확인", "region": "KR" },
+      "caution": "무료라고 단정하지 말 것. 수수료 여부는 공단 발급 화면에서 확인하라고 쓸 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "insurance-certificate-hotline-1577-1000",
+      "claim": "국민건강보험공단 대표전화는 1577-1000이며 유료이고 평일 09시~18시에 운영된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민건강보험공단 홈페이지 하단 대표전화 안내",
+      "source_url": "https://www.nhis.or.kr/nhis/index.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민건강보험공단", "category": "공단 고객센터", "line": "대표 전화", "years": "2026-10-27 메인 화면 기준", "region": "KR" },
+      "caution": "",
+      "cautionSource": ""
+    },
+    {
+      "id": "insurance-certificate-issuance-channels-unverified",
+      "claim": "확인실패: 자격득실확인서를 정부24나 주민센터, 고객센터 팩스·이메일 요청으로도 받을 수 있다는 안내는 검색 요약에서만 확인했고 공식 페이지 본문으로는 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "블로그·검색 요약(공식 확인 실패)",
+      "source_url": "https://www.nhis.or.kr/nhis/minwon/jpAea00401.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민건강보험공단·정부24", "category": "건강보험 증명서 발급", "line": "발급 경로(정부24·방문·팩스)", "years": "미확인", "region": "KR" },
+      "caution": "정부24 경로는 정부24 공식 페이지를 열어 확인한 뒤에만 쓸 것.",
+      "cautionSource": ""
+    }
+  ]
+}

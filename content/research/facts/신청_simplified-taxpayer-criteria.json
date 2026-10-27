@@ -1,0 +1,122 @@
+{
+  "topic": "간이과세자 기준·적용 제외·신고 기한",
+  "brand": "국세청",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [
+    "law-vat-simplified-period-1year",
+    "law-deadline-weekend-next-day-national"
+  ],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "checked": "2026-10-27",
+      "id": "simplified-threshold-104m-krw",
+      "claim": "간이과세 적용 기준은 직전 연도 공급대가의 합계액이 1억400만 원 미만인 개인사업자다. 법 제61조 제1항은 8천만 원부터 그 130% 범위에서 대통령령으로 정하는 금액으로 위임하고, 시행령 제109조 제1항이 1억4백만 원으로 정한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 부가가치세법 제61조 제1항 및 부가가치세법 시행령 제109조 제1항",
+      "source_url": "https://www.law.go.kr/법령/부가가치세법시행령/제109조",
+      "scope": {
+        "brand": "국세청",
+        "category": "부가가치세 간이과세",
+        "line": "간이과세자 적용 기준(공급대가)",
+        "years": "현행 시행령 기준(시행 2026.2.27 표기본, 2024.2.29 개정 반영). 2026년 현재 값 변동 없음",
+        "region": "KR"
+      },
+      "caution": "'연 매출 1억 400만 원'으로 바꿔 쓰지 말 것. 법 용어는 '직전 연도 공급대가의 합계액'이다. 2024년 보도 중에는 '연 매출'로 옮긴 사례가 있다.",
+      "cautionSource": "https://www.law.go.kr/법령/부가가치세법시행령/제109조, https://www.law.go.kr/법령/부가가치세법/제61조"
+    },
+    {
+      "checked": "2026-10-27",
+      "id": "simplified-threshold-start-2024-07",
+      "claim": "1억400만 원 기준은 2024년 7월 1일부터 적용된다고 언론이 국세청 발표를 인용해 보도했다. 국세청 공식 문서 원문은 이번 조사에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "언론 보도(2024.6.23, '국세청에 따르면' 인용)",
+      "source_url": "https://v.daum.net/v/20240623171501093",
+      "scope": {
+        "brand": "국세청(보도 인용)",
+        "category": "부가가치세 간이과세",
+        "line": "기준금액 상향 적용 시점",
+        "years": "2024.7.1 보도 기준",
+        "region": "KR"
+      },
+      "caution": "'2024년 7월 1일부터 적용됐다'를 공식 시행일처럼 단정하지 말 것. '2024년 7월부터 적용된다고 보도됐다'로만 쓴다.",
+      "cautionSource": "https://v.daum.net/v/20240623171501093 (2024.6.23 기사, 적용 시점 2024.7.1 인용)"
+    },
+    {
+      "checked": "2026-10-27",
+      "id": "simplified-vat-filing-deadline",
+      "claim": "간이과세자는 과세기간(1월 1일~12월 31일)이 끝난 뒤 25일 이내에 과세표준과 납부세액을 확정신고·납부한다. 계산상 일반적인 확정신고 기한은 다음 해 1월 25일이다(부가가치세법 제67조 제1항, 제5조 제1항 제1호).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 부가가치세법 제67조 제1항(간이과세자의 신고와 납부)",
+      "source_url": "https://www.law.go.kr/법령/부가가치세법/제67조",
+      "scope": {
+        "brand": "국세청",
+        "category": "부가가치세 확정신고",
+        "line": "간이과세자 연간 과세기간",
+        "years": "현행(시행 2026.1.2 표기본 기준)",
+        "region": "KR"
+      },
+      "caution": "7월 25일 반기 신고 기한은 간이과세자 과세기간 조문과 맞지 않으므로 쓰지 말 것. 7월 예정부과 납부는 별도 확인 대상이다(simplified-prepayment-unverified).",
+      "cautionSource": "https://www.law.go.kr/법령/부가가치세법/제5조 (과세기간 1.1~12.31)"
+    },
+    {
+      "checked": "2026-10-27",
+      "id": "simplified-prepayment-unverified",
+      "claim": "간이과세자의 7월 예정부과(중간 납부) 대상 기준과 금액 계산은 이번 조사에서 조문으로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "부가가치세법 제67조 대조(예정부과 본문은 미확보)",
+      "source_url": "https://www.law.go.kr/법령/부가가치세법/제67조",
+      "scope": {
+        "brand": "국세청",
+        "category": "부가가치세 납부",
+        "line": "간이과세자 예정부과",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "예정부과를 '신고'라고 쓰지 말 것. 고지 여부는 홈택스 또는 고지서로 확인하도록 안내한다.",
+      "cautionSource": "https://www.law.go.kr/법령/부가가치세법/제67조"
+    },
+    {
+      "checked": "2026-10-27",
+      "id": "simplified-rental-4800-exclusion",
+      "claim": "부동산임대업 또는 과세유흥장소를 경영하는 사업자는 해당 업종의 직전 연도 공급대가 합계액이 4천800만 원 이상이면 간이과세자로 보지 않는다(부가가치세법 제61조 제1항 제3호).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 부가가치세법 제61조 제1항 제3호",
+      "source_url": "https://www.law.go.kr/법령/부가가치세법/제61조",
+      "scope": {
+        "brand": "국세청",
+        "category": "부가가치세 간이과세",
+        "line": "부동산임대업·과세유흥장소 예외",
+        "years": "현행(시행 2026.1.2 표기본 기준)",
+        "region": "KR"
+      },
+      "caution": "기준은 업종별 합계다. 임대업과 다른 업종의 매출을 합산해 4,800만 원을 판단하지 말 것.",
+      "cautionSource": "https://www.law.go.kr/법령/부가가치세법/제61조"
+    },
+    {
+      "checked": "2026-10-27",
+      "id": "simplified-excluded-business-types",
+      "claim": "광업, 제조업(최종소비자 직접 공급 등 일부 제외), 도매업(소매 겸영 포함), 상품중개업, 부동산매매업, 과세유흥장소 경영 등은 기준금액과 관계없이 간이과세 적용이 배제된다(부가가치세법 시행령 제109조 제2항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 부가가치세법 시행령 제109조 제2항",
+      "source_url": "https://www.law.go.kr/법령/부가가치세법시행령/제109조",
+      "scope": {
+        "brand": "국세청",
+        "category": "부가가치세 간이과세",
+        "line": "업종별 간이과세 배제",
+        "years": "현행(시행령 표기본 2026.2.27 기준)",
+        "region": "KR"
+      },
+      "caution": "업종 목록 전체를 옮기지 말고 대표 업종만 쓴다. 제조업은 최종소비자에게 직접 공급하는 사업 등 예외가 있어 '제조업은 무조건 배제'라고 쓰지 말 것.",
+      "cautionSource": "https://www.law.go.kr/법령/부가가치세법시행령/제109조"
+    }
+  ]
+}

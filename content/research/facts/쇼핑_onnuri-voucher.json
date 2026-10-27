@@ -1,0 +1,47 @@
+{
+  "topic": "온누리상품권 할인·환급 행사 — 주관 기관 공식 안내 확인 및 현재 진행 여부",
+  "brand": "소상공인시장진흥공단",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "onnuri-semas-digital-voucher-link",
+      "claim": "소상공인시장진흥공단 홈페이지는 '온누리디지털상품권'을 소진공 지원사업 서비스 바로가기 항목 중 하나로 두고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소상공인시장진흥공단 메인 페이지 — 신고·상담/소진공 지원사업 서비스 바로가기 영역",
+      "source_url": "https://www.semas.or.kr/web/main/index.kmdc",
+      "checked": "2026-10-27",
+      "scope": { "brand": "소상공인시장진흥공단", "category": "온누리상품권 운영 주체 안내", "line": "온누리디지털상품권", "years": "2026-10-27 메인 기준", "region": "KR" },
+      "caution": "운영 주체 연결만 확인한 것이다. 할인율·행사 기간은 이 팩트에 없다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "onnuri-current-event-unconfirmed",
+      "claim": "2026-10-27 기준 진행 중인 온누리상품권 할인·환급 행사의 여부와 기간은 소상공인시장진흥공단 메인 페이지에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "소상공인시장진흥공단 메인 페이지 열람 — 온누리 행사 공지 미도달. 온누리상품권 공식 사이트(onnurigift.or.kr)는 이번 환경에서 주소 조회 실패",
+      "source_url": "https://www.semas.or.kr/web/main/index.kmdc",
+      "checked": "2026-10-27",
+      "scope": { "brand": "소상공인시장진흥공단", "category": "온누리상품권 할인·환급", "line": "2026년 하반기 행사", "years": "2026", "region": "KR" },
+      "caution": "진행 중 행사를 확인하지 못했으므로 특정 행사를 현재 진행 중으로 쓰지 말 것. 독자에게는 '행사 여부는 온누리상품권 공식 안내에서 확인'으로 안내한다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "onnuri-digital-10pct-blog-unverified",
+      "claim": "블로그 자료는 디지털 온누리상품권 충전 할인(10%)이 2026년 1월부터 재개됐고 명절 기간에는 15%로 높아진다고 전하나, 공식 확인은 이번 조사에서 하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "블로그 검색 결과 요약(원문 미열람, 공식 아님)",
+      "source_url": "",
+      "checked": "2026-10-27",
+      "scope": { "brand": "소상공인시장진흥공단", "category": "디지털 온누리상품권 충전 할인", "line": "디지털형(카드·모바일)", "years": "2026 (블로그 주장)", "region": "KR" },
+      "caution": "할인율 10%·15%와 2026년 1월 재개 날짜는 블로그뿐이라 글에 쓰면 안 된다. 쓸 때는 '할인율·기간은 시기마다 바뀌니 공식 공고에서 확인'으로 우회한다.",
+      "cautionSource": "블로그 검색 요약(미열람, 공식 아님) — 공식 근거 없음"
+    }
+  ]
+}

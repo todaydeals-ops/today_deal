@@ -1,0 +1,137 @@
+{
+  "topic": "경찰공무원(순경·경위) 공개경쟁채용 — 2026 시행 회차, 지난 회차, 2027 공고 여부",
+  "brand": "경찰청(사이버 경찰청 채용)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "checked": "2026-10-27",
+      "id": "police-2026-first-round-schedule",
+      "claim": "2026년 제1차 순경 공개경쟁채용(일반 3,112명, 101단(남) 90명, 소계 3,202명)은 2026년 2월 6일 공고, 3월 14일 필기시험, 6월 19일 합격 발표로 안내됐다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사이버 경찰청 채용안내(공고일시·필기시험·합격발표 표)",
+      "source_url": "https://public.jinhakapply.com/PoliceV2/public/public_1.aspx",
+      "scope": {
+        "brand": "경찰청(사이버 경찰청 채용안내)",
+        "category": "경찰공무원 공채",
+        "line": "순경 공개경쟁채용 제1차",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "채용안내 하단에 '선발인원 및 일정 등은 경찰청 사정에 따라 변경될 수 있다'고 적혀 있다. 글에는 '안내된 일정'으로 쓰고 지난 회차임을 명시한다.",
+      "cautionSource": "https://public.jinhakapply.com/PoliceV2/public/public_1.aspx (하단 변경 가능 문구)"
+    },
+    {
+      "checked": "2026-10-27",
+      "id": "police-2026-second-round-schedule",
+      "claim": "2026년 제2차 순경 공개경쟁채용(일반 2,770명, 101단(남) 90명, 소계 2,842명)은 2026년 7월 10일 공고, 8월 22일 필기시험, 12월 11일 합격 발표로 안내됐다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사이버 경찰청 채용안내(공고일시·필기시험·합격발표 표)",
+      "source_url": "https://public.jinhakapply.com/PoliceV2/public/public_1.aspx",
+      "scope": {
+        "brand": "경찰청(사이버 경찰청 채용안내)",
+        "category": "경찰공무원 공채",
+        "line": "순경 공개경쟁채용 제2차(일반, 101단)",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "2026-10-27 기준 필기는 끝난 단계다. 최종 발표(12.11) 전까지 면접 등 중간 일정은 개별 공고 첨부로 대조한다. 선발인원·일정은 변경될 수 있다는 안내가 함께 있다.",
+      "cautionSource": "https://public.jinhakapply.com/PoliceV2/public/public_1.aspx (하단 변경 가능 문구)"
+    },
+    {
+      "checked": "2026-10-27",
+      "id": "police-2026-second-round-notice",
+      "claim": "중앙경찰학교는 2026년 7월 10일 '중앙경찰학교 공고 제2026-11호'로 '2026년 제2차 경찰공무원(순경) 공개경쟁채용시험' 공고를 냈다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "중앙경찰학교 공고 제2026-11호(채용공고 게시물)",
+      "source_url": "https://public.jinhakapply.com/PoliceV2/Notice/View.aspx?CurrentPage=1&QANdx=141027&CategoryID=11",
+      "scope": {
+        "brand": "중앙경찰학교(공고 발행)",
+        "category": "경찰공무원 공채",
+        "line": "순경 공개경쟁채용 2026 제2차",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "공고 본문의 일정표는 첨부파일이라 텍스트로 열리지 않았다. 일정은 채용안내 표를 따르되 접수 전 첨부 공고문과 대조한다.",
+      "cautionSource": "https://public.jinhakapply.com/PoliceV2/Notice/View.aspx?CurrentPage=1&QANdx=141027&CategoryID=11 (첨부파일 일정)"
+    },
+    {
+      "checked": "2026-10-27",
+      "id": "police-2026-second-round-interview-main-only",
+      "claim": "2026년 제2차 순경 공채의 신체·체력·적성검사(2026.9.7~10.24)와 면접(2026.11.9~12.8) 기간은 경찰 채용 사이트 메인 화면에만 노출돼 있고, 개별 공고 본문에서는 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "사이버 경찰청 채용 안내 메인 화면(노출 일정)",
+      "source_url": "http://gosi.police.go.kr/",
+      "scope": {
+        "brand": "경찰청(사이버 경찰청)",
+        "category": "경찰공무원 공채",
+        "line": "순경 제2차 체력·면접 단계",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "메인 노출 일정으로만 쓰고, 개별 공고 첨부를 열어 대조하기 전까지 날짜를 단정하지 않는다.",
+      "cautionSource": "http://gosi.police.go.kr/ (메인 노출 일정)"
+    },
+    {
+      "checked": "2026-10-27",
+      "id": "police-2027-gyeongwi-notice",
+      "claim": "경찰대학은 '2027년도 제76기 경위공개경쟁채용시험 일정 공고'를 게시했다. 이 공고는 어학성적 사전등록, 원서접수, 응시표 출력, 시험 일정, 합격자 발표 등 전 과정을 국가공무원 채용시스템(gongmuwon.gosi.kr)에서 운영한다고 밝혔다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "경찰대학 공고 '2027년도 제76기 경위공개경쟁채용시험 일정 공고'",
+      "source_url": "https://public.jinhakapply.com/PoliceV2/Notice/View.aspx?CurrentPage=1&QANdx=140908&CategoryID=11",
+      "scope": {
+        "brand": "경찰대학",
+        "category": "경찰공무원 공채",
+        "line": "경위 공개경쟁채용(제76기)",
+        "years": "2027",
+        "region": "KR"
+      },
+      "caution": "이 공고는 경위 시험이다. 순경 2027 공고가 있다고 쓰지 말 것. 일정표는 첨부파일이라 열지 못했고 게시일도 확인하지 못했다.",
+      "cautionSource": "https://public.jinhakapply.com/PoliceV2/Notice/View.aspx?CurrentPage=1&QANdx=140908&CategoryID=11 (경위 2027 공고)"
+    },
+    {
+      "checked": "2026-10-27",
+      "id": "police-2027-patrol-not-confirmed",
+      "claim": "2027년 순경 공채 공고는 2026-10-27 기준 채용공고 목록 첫 페이지에서 확인되지 않았다. 같은 목록에서 확인된 2027년 공고는 경위 시험뿐이다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "사이버 경찰청 채용공고 목록 1페이지 대조",
+      "source_url": "https://public.jinhakapply.com/PoliceV2/Notice/List.aspx?CategoryID=11&CurrentPage=1",
+      "scope": {
+        "brand": "경찰청",
+        "category": "경찰공무원 공채",
+        "line": "순경 공개경쟁채용",
+        "years": "2027",
+        "region": "KR"
+      },
+      "caution": "미공고로 단정하지 말고 '목록에서 확인 못 함'으로 쓴다. 2026년에는 1차 2월, 2차 7월에 공고가 있었다.",
+      "cautionSource": "https://public.jinhakapply.com/PoliceV2/public/public_1.aspx (2026 1차 2월, 2차 7월 공고일)"
+    },
+    {
+      "checked": "2026-10-27",
+      "id": "police-application-site-link",
+      "claim": "경찰 공채 원서접수 메뉴는 사이버 경찰청 채용 안내 페이지에서 원서접수 시스템(public.jinhakapply.com/PoliceV2)으로 연결된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "사이버 경찰청 채용안내 페이지 상단 메뉴(원서접수)",
+      "source_url": "https://public.jinhakapply.com/PoliceV2/public/public_1.aspx",
+      "scope": {
+        "brand": "경찰청(사이버 경찰청)",
+        "category": "원서접수",
+        "line": "인터넷 원서접수 진입",
+        "years": "2026-10-27 확인",
+        "region": "KR"
+      },
+      "caution": "글에는 도메인을 적지 말고 '경찰 채용 안내 페이지의 원서접수 메뉴'로 안내한다. 사칭 사이트와의 구분 기준은 이번 조사에서 확인하지 못했다.",
+      "cautionSource": "https://public.jinhakapply.com/PoliceV2/public/public_1.aspx"
+    }
+  ]
+}

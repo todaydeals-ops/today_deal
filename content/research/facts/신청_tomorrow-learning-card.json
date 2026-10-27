@@ -1,0 +1,71 @@
+{
+  "topic": "국민내일배움카드(직업능력개발계좌) 발급 근거·신청 경로·지원 한도",
+  "brand": "생활백과 · 신청·환급 달력",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "learning-card-legal-basis-account",
+      "claim": "고용노동부장관은 직업능력개발훈련 비용을 지원하는 계좌(직업능력개발계좌)를 발급하고, 그 훈련 이력을 종합적으로 관리한다(국민 평생 직업능력 개발법 제18조 제1항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 국민 평생 직업능력 개발법 제18조(직업능력개발계좌의 발급 및 운영) 원문 (법률 제19174호 표시본, 시행 2023.7.4)",
+      "source_url": "https://www.law.go.kr/법령/국민평생직업능력개발법",
+      "checked": "2026-10-27",
+      "scope": { "brand": "고용노동부", "category": "직업능력개발 훈련비 지원", "line": "직업능력개발계좌(내일배움카드 근거 조문)", "years": "표시본 시행 2023.7.4", "region": "KR" },
+      "caution": "법 조문은 직업능력개발계좌라고만 쓴다. 내일배움카드라는 이름, 지원 한도, 자부담 조건은 이 조문에 없다. 표시본 시행일 이후 개정 여부는 이번에 확인하지 못했다.",
+      "cautionSource": "국민 평생 직업능력 개발법 표시본 시행일 2023.7.4 (법률 제19174호) 원문"
+    },
+    {
+      "id": "learning-card-work24-entry",
+      "claim": "고용24(work24.go.kr) 메인 화면에는 직업 능력 개발 메뉴와 국민내일배움카드 훈련과정 링크가 노출되어 있다(2026-10-27 열람 기준).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "고용24 메인 페이지 (고용노동부 운영)",
+      "source_url": "https://www.work24.go.kr/cm/main.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "고용노동부", "category": "직업능력개발 훈련", "line": "고용24 진입 메뉴", "years": "2026-10-27 열람 기준", "region": "KR" },
+      "caution": "메뉴명과 위치는 개편될 수 있다. 글에 메뉴 경로를 쓸 때는 작성일에 다시 열어서 확인할 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "learning-card-name-mapping-unverified",
+      "claim": "국민내일배움카드가 직업능력개발계좌의 운영 명칭이라는 점은 이번 조사에서 고용24 등 공식 안내 페이지로 확인하지 못했다. 법 조문과 메뉴명이 연결된다고 추정할 수는 있으나 확정 문장으로 쓰지 말 것.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "고용24 메인 페이지 열람(카드 안내 본문 미확인) · 복지로 카드 안내 게시물은 본문 렌더링 실패",
+      "source_url": "https://www.work24.go.kr/cm/main.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "고용노동부", "category": "직업능력개발 훈련", "line": "내일배움카드 ↔ 직업능력개발계좌 명칭 연결", "years": "미확인", "region": "KR" },
+      "caution": "두 명칭을 같은 것으로 설명하려면 고용24 카드 안내 본문을 열어 확인한 뒤에 쓸 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "learning-card-limit-unverified",
+      "claim": "블로그들은 내일배움카드 훈련비 지원 한도를 발급일부터 5년간 기본 300만 원, 특정 대상 최대 500만 원으로 적는다. 고용24 또는 고용노동부 공식 근거는 이번 조사에서 확보하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "검색 요약에 나온 블로그 다수(원문 미열람). 공식 근거 확보 실패",
+      "source_url": "https://www.work24.go.kr/cm/main.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "고용노동부", "category": "직업능력개발 훈련비", "line": "카드 지원 한도(5년)", "years": "미확인 (블로그 기준 2026년 표기)", "region": "KR" },
+      "caution": "한도 금액은 글에 쓰지 말 것. 독자에게는 고용24 카드 안내에서 본인의 한도를 확인하라고 안내한다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "learning-card-self-pay-unverified",
+      "claim": "자기부담 비율은 블로그마다 0%에서 최대 55%까지, 일반 직종 15~55%, 디지털 과정 최대 10% 등으로 다르게 적혀 있다. 2026년 특화훈련 자부담 신설 여부도 공식 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "검색 요약에 나온 블로그 다수(원문 미열람). 공식 근거 확보 실패",
+      "source_url": "https://www.work24.go.kr/cm/main.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "고용노동부", "category": "직업능력개발 훈련비", "line": "자부담 비율", "years": "미확인 (블로그 2026년 표기)", "region": "KR" },
+      "caution": "자부담률을 숫자로 쓰지 말 것. 훈련 과정마다 다르니 고용24에서 과정별로 확인하도록 안내할 것.",
+      "cautionSource": ""
+    }
+  ]
+}

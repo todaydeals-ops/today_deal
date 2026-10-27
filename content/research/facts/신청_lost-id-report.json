@@ -1,0 +1,116 @@
+{
+  "topic": "신분증(주민등록증) 분실 신고 — 신고 주체, 신고 채널·수수료·처리 시간, 모바일 신분증 경로, 재발급 처리기간·준비물",
+  "brand": "행정안전부 · 시장·군수·구청장 · 읍면동",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [
+    "id-card-reissue-legal-reasons",
+    "id-card-reissue-fee-no-ic-5000",
+    "id-card-reissue-fee-ic-10000",
+    "id-card-reissue-application-channel",
+    "id-card-reissue-photo-identity"
+  ],
+  "declined_facts": [
+    { "id": "id-card-reissue-address-not-listed", "why": "주소만 바뀐 경우가 재발급 대상이 아니라는 내용이다. 분실 신고 주제와 맥락이 다르므로 이 글에는 쓰지 않는다." },
+    { "id": "id-card-reissue-withdraw-window", "why": "재발급 신청 철회 규정(근무시간 기준)이다. 분실신고 철회는 별도 절차(정부24 분실신고(철회) 서비스, 시행령 제42조)라서 섞으면 안 된다. 분실신고 철회는 새 팩트 lost-id-report-channel-fee로 적었다." },
+    { "id": "id-card-reissue-processing-days-blog", "why": "기존 확인실패 항목(블로그 2주 대 2~3주)이다. 같은 질문에 대해 정부24 재발급 안내 페이지가 '총 14일'로 표기하는 것을 이번에 확인해 lost-id-reissue-processing-14days로 대체한다." },
+    { "id": "id-card-reissue-lost-report-blog", "why": "블로그의 '24시간 분실신고'와 '신고 즉시 카드 사용 차단' 주장은 이번에 열어본 정부24 분실신고 안내 페이지에서 확인되지 않았다. 확인실패 상태를 유지하고, 같은 취지를 lost-id-report-suspension-unverified로 다시 남긴다." }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "lost-id-report-who-can-file",
+      "claim": "주민등록증 분실신고는 본인, 17세 이상의 동일 세대원, 배우자 또는 직계혈족이 시장·군수·구청장에게 별지 제34호 서식으로 할 수 있다(주민등록법 시행령 제42조 제1항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 주민등록법 시행령 제42조(주민등록증등의 분실신고 등)",
+      "source_url": "https://www.law.go.kr/법령/주민등록법시행령/제42조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "행정안전부 · 시장·군수·구청장", "category": "주민등록증 분실신고", "line": "신고 주체", "years": "조문 개정 2024.12.3 표시", "region": "KR" },
+      "caution": "17세 이상 동일 세대원, 배우자, 직계혈족만 대신 신고할 수 있다. 친구나 직장 동료가 대신 신고하는 것은 이 조문상 해당하지 않는다.",
+      "cautionSource": "주민등록법 시행령 제42조 제1항 원문(같은 페이지)"
+    },
+    {
+      "id": "lost-id-report-channel-fee",
+      "claim": "주민등록증 분실신고(철회)는 정부24 인터넷 또는 주민센터 방문으로 할 수 있고, 구비서류와 수수료가 없다(정부24 주민등록증분실신고(철회) 안내).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "정부24 주민등록증분실신고(철회) 민원 안내(행정안전부 민원 서비스)",
+      "source_url": "https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000019",
+      "checked": "2026-10-27",
+      "scope": { "brand": "행정안전부", "category": "주민등록증 분실신고", "line": "분실신고 채널·수수료", "years": "정부24 최근 내용 변경일 2026-06-24", "region": "KR" },
+      "caution": "분실신고 자체는 무료다. 재발급을 받으려면 별도의 재발급 신청과 수수료가 든다(IC칩 없으면 5,000원, 있으면 10,000원). 수수료 금액은 정부24 재발급 안내 페이지에 적힌 기준이다.",
+      "cautionSource": "정부24 주민등록증 재발급 신청 안내 페이지의 수수료 항목(https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000018)"
+    },
+    {
+      "id": "lost-id-report-processing-and-proxy",
+      "claim": "주민등록증 분실신고의 처리기간은 즉시(근무시간 내 3시간)로 표기되어 있고, 온라인 신고는 대리인이 할 수 없다(정부24 안내).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "정부24 주민등록증분실신고(철회) 민원 안내(행정안전부 민원 서비스)",
+      "source_url": "https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000019",
+      "checked": "2026-10-27",
+      "scope": { "brand": "행정안전부", "category": "주민등록증 분실신고", "line": "처리기간·신청 자격", "years": "정부24 최근 내용 변경일 2026-06-24", "region": "KR" },
+      "caution": "처리기간 즉시는 근무시간 내 3시간 기준으로 표기되어 있다. 야간이나 주말 신고가 같은 방식으로 처리되는지는 이 페이지에 없으므로 '24시간 신고'라고 쓰지 않는다.",
+      "cautionSource": "같은 정부24 안내 페이지의 처리기간 항목(근무시간 내 3시간)"
+    },
+    {
+      "id": "lost-id-report-mobile-id-route",
+      "claim": "모바일 주민등록증의 분실신고는 모바일 신분증 홈페이지(mobileid.go.kr) 또는 주민센터 방문으로 할 수 있다(정부24 안내 페이지의 주석).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "정부24 주민등록증분실신고(철회) 민원 안내(행정안전부 민원 서비스) 제공 내용",
+      "source_url": "https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000019",
+      "checked": "2026-10-27",
+      "scope": { "brand": "행정안전부", "category": "모바일 주민등록증 분실신고", "line": "모바일 신분증 신고 경로", "years": "정부24 최근 내용 변경일 2026-06-24", "region": "KR" },
+      "caution": "실물 주민등록증과 모바일 주민등록증은 신고 경로가 다르다. 한쪽만 신고한 경우 다른 쪽이 함께 처리되는지는 이 페이지에서 확인하지 못했다."
+    },
+    {
+      "id": "lost-id-reissue-processing-14days",
+      "claim": "정부24 '주민등록증 재발급 신청' 민원 안내는 처리기간을 총 14일로 표기한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "정부24 주민등록증 재발급 신청 민원 안내(행정안전부 민원 서비스)",
+      "source_url": "https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000018",
+      "checked": "2026-10-27",
+      "scope": { "brand": "행정안전부", "category": "주민등록증 재발급", "line": "재발급 처리기간", "years": "정부24 열람일 2026-10-27 기준", "region": "KR" },
+      "caution": "공식 표기는 총 14일이다. 블로그의 2~3주나 20일 등 다른 수치는 공식 표기가 아니므로 쓰지 않는다.",
+      "cautionSource": "정부24 주민등록증 재발급 신청 안내 페이지의 처리기간 항목(총 14일)"
+    },
+    {
+      "id": "lost-id-reissue-photo-and-old-card",
+      "claim": "재발급 신청에는 6개월 이내 촬영한 3.5×4.5cm 모자 등을 쓰지 않은 상반신 사진 1장이 필요하다. 종전 주민등록증은 분실·파기 등의 경우에는 제출하지 않아도 된다(정부24 제출 서류 항목).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "정부24 주민등록증 재발급 신청 민원 안내(행정안전부 민원 서비스)",
+      "source_url": "https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000018",
+      "checked": "2026-10-27",
+      "scope": { "brand": "행정안전부", "category": "주민등록증 재발급", "line": "재발급 준비물", "years": "정부24 열람일 2026-10-27 기준", "region": "KR" },
+      "caution": "분실이 아니라 훼손으로 재발급하는 경우에는 종전 주민등록증을 제출해야 한다는 점을 함께 쓴다.",
+      "cautionSource": "같은 정부24 재발급 안내 페이지의 제출 서류 항목(분실·파기 제외)"
+    },
+    {
+      "id": "lost-id-report-suspension-unverified",
+      "claim": "분실신고가 처리되면 주민등록증과 모바일 주민등록증의 효력이 정지된다는 설명이 2차 자료에 있으나, 열람한 정부24 분실신고 안내와 시행령 제42조 원문에는 효력 정지 문구가 없다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "검색 요약(2차 자료). 공식 원문에서 해당 문구 미확인",
+      "source_url": "",
+      "checked": "2026-10-27",
+      "scope": { "brand": "행정안전부", "category": "주민등록증 분실신고", "line": "분실신고 후 효력", "years": "미확인", "region": "KR" },
+      "caution": "분실신고 후 카드가 사용 정지되는지 단정하지 않는다. 독자에게는 분실 사실을 알게 되면 빨리 신고하는 것이 안전하다고 안내한다."
+    },
+    {
+      "id": "lost-id-status-check-unverified",
+      "claim": "분실 처리 여부는 정부24의 진위확인 서비스나 ARS 1382로 확인할 수 있다는 설명이 검색 요약에만 있고, 공식 페이지로는 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "검색 요약(2차 자료). 공식 확인 실패",
+      "source_url": "",
+      "checked": "2026-10-27",
+      "scope": { "brand": "행정안전부", "category": "주민등록증 분실신고", "line": "분실 처리 확인 방법", "years": "미확인", "region": "KR" },
+      "caution": "ARS 번호를 글에 쓰기 전에 공식 안내에서 다시 확인해야 한다. 이번 조사에서는 확인하지 못했다.",
+      "cautionSource": "검색 요약의 번호(1382)는 공식 원문 미확인 상태"
+    }
+  ]
+}

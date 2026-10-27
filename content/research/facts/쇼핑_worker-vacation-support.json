@@ -1,0 +1,47 @@
+{
+  "topic": "근로자 휴가지원사업 세일·혜택 달력 — 2026 운영 여부, 2026 참여 근로자 혜택, 회차별 신청 기간 확인 실패",
+  "brand": "문화체육관광부 · 한국관광공사 (휴가샵 운영)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "worker-vacation-support-status-2026",
+      "claim": "근로자 휴가지원사업은 2026년에도 운영되고 있다. 한국관광공사는 2026년 8월 31일 공고로 사업 리브랜딩 및 통합 홍보 마케팅 용역을 발주했으며, 계약 기간은 계약 체결일부터 2027년 1월 15일까지다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국관광공사 발주 입찰 공고 「근로자 휴가지원사업 리브랜딩 및 통합 홍보 마케팅」 (공고 2026-08-31, 문화체육관광부 사이트 검색 결과에 노출)",
+      "source_url": "https://www.mcst.go.kr/site/search/search.jsp?page_type=tell&page_no=1&sort_value=VIEW_CNT&sort_value_tf=F&re_keyword=%EA%B7%BC%EB%A1%9C%EC%9E%90%20%ED%9C%B4%EA%B0%80%EC%A7%80%EC%9B%90&my_search_keyword=&searchTerm=%EA%B7%BC%EB%A1%9C%EC%9E%90%20%ED%9C%B4%EA%B0%80%EC%A7%80%EC%9B%90&all_chk=on",
+      "checked": "2026-10-27",
+      "scope": { "brand": "한국관광공사(수요기관)·문화체육관광부", "category": "근로자 휴가 지원", "line": "근로자 휴가지원사업 (운영 용역)", "years": "2026.8.31 공고 ~ 2027.1.15 계약기간", "region": "KR" },
+      "caution": "이 공고는 운영사 용역 입찰이지 근로자 참여자 모집 공고가 아니다. 이 공고만으로 2026년 참여 회차 기간을 쓰지 말 것.",
+      "cautionSource": "같은 입찰 공고의 사업기간 항목(계약체결일로부터 2027.1.15.까지) — 같은 검색 결과 페이지"
+    },
+    {
+      "id": "worker-vacation-support-2026-spring-shop-benefit",
+      "claim": "2026년 봄 캠페인 기간에 근로자 휴가지원사업 참여 근로자는 휴가샵 온라인몰에서 전국의 숙박·입장권·교통편 등 여행상품을 최대 50%(3만 원 한도) 할인된 가격으로 구매할 수 있었다. 전북 지역 숙박상품을 예약한 참여 근로자에게는 지역 내 사용 가능한 지역화폐 상품권 최대 3만 원이 추가 지원됐다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "문화체육관광부 보도자료 「2026 여행가는 봄」 근로자 혜택 단락 (게시 2026-03-16)",
+      "source_url": "https://www.mcst.go.kr/site/s_notice/press/pressView.jsp?pSeq=22293",
+      "checked": "2026-10-27",
+      "scope": { "brand": "한국관광공사 휴가샵(vacation.benepia.co.kr)·문화체육관광부", "category": "근로자 여행상품 할인", "line": "근로자 휴가지원사업 참여 근로자 혜택 (2026 봄 캠페인)", "years": "2026.4~2026.5 캠페인 기간", "region": "KR (전북 지역화폐 추가)" },
+      "caution": "이는 2026 봄 캠페인 기간의 참여자 혜택 요약이다. 참여 근로자가 적립하는 금액과 정부·기업 분담 구조(회차별)는 이 팩트에 포함되지 않는다.",
+      "cautionSource": "같은 보도자료 근로자 혜택 단락 https://www.mcst.go.kr/site/s_notice/press/pressView.jsp?pSeq=22293"
+    },
+    {
+      "id": "worker-vacation-support-round-dates-2026-unverified",
+      "claim": "2026년 근로자 휴가지원사업의 참여자 모집 회차와 신청 기간은 이번 조사에서 확인하지 못했다. 2025년 참여 기업 모집 보도자료(2025.1.17)는 열었으나 본문이 첨부파일(hwpx·pdf)에만 있어 회차 기간을 읽지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "문화체육관광부 보도자료 「근로자 휴가비 지원받고 국내 여행 떠나세요」 (게시 2025-01-17, 2025년 참여 기업 모집 첨부)",
+      "source_url": "https://www.mcst.go.kr/site/s_notice/press/pressView.jsp?pSeq=21607",
+      "checked": "2026-10-27",
+      "scope": { "brand": "문화체육관광부·한국관광공사", "category": "근로자 휴가 지원 참여 모집", "line": "근로자 휴가지원사업 (2026 회차)", "years": "2026 (미확인)", "region": "KR" },
+      "caution": "회차별 신청 기간과 선착순 인원을 추정해 쓰지 말 것. '2026년 회차 일정은 공식 공지를 확인해야 한다'까지만 쓰고, 공식 확인 경로(휴가샵 누리집)를 함께 안내할 것.",
+      "cautionSource": "같은 보도자료 첨부 목록(hwpx·pdf 본문) https://www.mcst.go.kr/site/s_notice/press/pressView.jsp?pSeq=21607"
+    }
+  ]
+}

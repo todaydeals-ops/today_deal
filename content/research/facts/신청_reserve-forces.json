@@ -1,0 +1,190 @@
+{
+  "topic": "예비군 훈련 — 연간 훈련 한도, 소집통지, 일반 훈련 연기(예비군 홈페이지), 동원훈련 연기(병무청), 직장 보장",
+  "brand": "국방부 · 예비군 홈페이지(yebigun1.mil.kr) · 병무청",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "reserve-training-annual-cap",
+      "claim": "국방부장관은 대통령령으로 정하는 바에 따라 연간 20일의 한도에서 예비군대원을 훈련할 수 있다(예비군법 제6조 제1항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 예비군법 제6조(훈련)",
+      "source_url": "https://www.law.go.kr/법령/예비군법",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "국방부",
+        "category": "예비군 훈련",
+        "line": "교육훈련 연간 한도",
+        "years": "시행 2026.8.28 표시본(법률 제21388호)",
+        "region": "KR"
+      },
+      "caution": "연간 20일은 법정 상한이다. 개인이 실제로 받는 횟수와 날짜는 편성에 따라 다르므로 예비군 홈페이지에서 확인하라고 안내한다.",
+      "cautionSource": "예비군법 제6조 제1항 원문(같은 페이지)"
+    },
+    {
+      "id": "reserve-training-notice-delivery",
+      "claim": "예비군대원을 훈련할 때는 대통령령에 따라 사전에 소집통지서를 본인에게 전달해야 한다. 본인이 없으면 세대주나 성년 가족, 고용주, 본인이 선정한 수령인에게 전달할 수 있다(예비군법 제6조의2 제1항·제2항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 예비군법 제6조의2(소집통지서의 전달 등)",
+      "source_url": "https://www.law.go.kr/법령/예비군법",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "국방부",
+        "category": "예비군 훈련",
+        "line": "소집통지서 전달",
+        "years": "시행 2026.8.28 표시본(법률 제21388호)",
+        "region": "KR"
+      },
+      "caution": "동원 대비 불시 훈련이나 점검은 소집통지서를 전달하지 않고 대통령령 방법으로 통지할 수 있다는 예외가 있다(같은 조 제1항 단서).",
+      "cautionSource": "예비군법 제6조의2 제1항 단서 원문(같은 페이지)"
+    },
+    {
+      "id": "reserve-general-training-deferral-rule",
+      "claim": "일반 예비군 훈련 연기는 소집 통지를 받은 사람이 소집 1일 전까지 관할 예비군부대에 신청한다. 갑자기 사유가 생겨 원서를 낼 시간이 없으면 전화 등으로 소집일 훈련 종료 전까지 먼저 신고한 뒤, 토요일·공휴일을 뺀 3일 이내에 연기 원서를 낸다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "예비군 홈페이지 훈련 연기란 페이지의 일반 훈련 절차",
+      "source_url": "https://www.yebigun1.mil.kr/dmobis/rfh/rgt/typetradelay/delaytraining.jsp",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "국방부 · 예비군 홈페이지",
+        "category": "예비군 훈련",
+        "line": "일반 훈련 연기",
+        "years": "페이지 열람일 2026-10-27 기준",
+        "region": "KR"
+      },
+      "caution": "소집 1일 전 기한과 3일 이내 규칙은 일반 훈련 기준이다. 병무청 동원훈련 연기는 소집일 5일 전까지로 기한이 다르므로 섞지 않는다.",
+      "cautionSource": "병무청 동원훈련 연기 페이지(https://www.mma.go.kr/contents.do?mc=usr0000195)의 신청시기 항목(소집일자 5일 전까지)"
+    },
+    {
+      "id": "reserve-deferral-legal-basis-stated",
+      "claim": "예비군 홈페이지의 훈련 연기 페이지는 법적 근거로 예비군법 제5조, 예비군법 시행령 제14조, 예비군법 시행규칙 제18조를 표기한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "예비군 홈페이지 훈련 연기란 페이지의 법적근거 항목",
+      "source_url": "https://www.yebigun1.mil.kr/dmobis/rfh/rgt/typetradelay/delaytraining.jsp",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "국방부 · 예비군 홈페이지",
+        "category": "예비군 훈련",
+        "line": "훈련 연기 근거",
+        "years": "페이지 열람일 2026-10-27 기준",
+        "region": "KR"
+      },
+      "caution": "훈련 편성 근거를 쓸 때는 예비군법 제10조가 아니라 제6조를 쓴다. 제10조는 직장 보장 조문이다.",
+      "cautionSource": "예비군법 제6조(훈련)와 제10조(직장 보장) 원문(국가법령정보센터 예비군법 페이지)"
+    },
+    {
+      "id": "reserve-mobilization-deferral-5days",
+      "claim": "병무청 동원훈련 연기는 소집일자 5일 전까지 신청한다. 병무청 민원신청 메뉴에서 신청할 수 있고, 동원훈련 Ⅱ형·기본훈련·작계훈련은 예비군 홈페이지에서 신청한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "병무청 동원훈련 연기 안내 페이지",
+      "source_url": "https://www.mma.go.kr/contents.do?mc=usr0000195",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "병무청",
+        "category": "예비군 훈련",
+        "line": "병력동원 훈련소집(동원훈련) 연기",
+        "years": "페이지 열람일 2026-10-27 기준",
+        "region": "KR"
+      },
+      "caution": "동원훈련 연기는 병무청 기준이다. 일반 예비군 훈련 연기(소집 1일 전)와 기한과 절차가 다르므로 혼용하지 않는다.",
+      "cautionSource": "예비군 홈페이지 훈련 연기 페이지의 일반 훈련 신청 기한(소집 1일 전)"
+    },
+    {
+      "id": "reserve-deferral-illness-proof",
+      "claim": "질병을 이유로 연기하려면 의료기관이 발행한 진단서 또는 진료확인서(통원치료 확인서)로 증명한다. 진료확인서는 2회 연속으로 제출할 수 없다(예비군 홈페이지 일반 훈련 연기 기준).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "예비군 홈페이지 훈련 연기란 페이지의 연기대상 및 구비서류 표",
+      "source_url": "https://www.yebigun1.mil.kr/dmobis/rfh/rgt/typetradelay/delaytraining.jsp",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "국방부 · 예비군 홈페이지",
+        "category": "예비군 훈련",
+        "line": "일반 훈련 질병 연기",
+        "years": "페이지 열람일 2026-10-27 기준",
+        "region": "KR"
+      },
+      "caution": "진단서는 치료기간이 명시되어야 한다는 기준이 같은 표에 있다. 진료확인서를 2회 연속 낼 수 없으므로 다음번에는 진단서로 바꿔야 한다.",
+      "cautionSource": "같은 페이지 구비서류 항목(치료기간 명시, 진료확인서 2회 연속 불가)"
+    },
+    {
+      "id": "reserve-mobilization-deferral-count-caps",
+      "claim": "병무청 동원훈련 연기 사유 중 자격·면허 시험과 국외 출국 예정은 예비군 편성 기간 중 통틀어 두 차례로 한정되고, 대학입학수학능력 및 대학 편·입학 시험 연기는 편성 기간 중 1회로 한정된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "병무청 동원훈련 연기 사유별 처리기준 표",
+      "source_url": "https://www.mma.go.kr/contents.do?mc=usr0000195",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "병무청",
+        "category": "예비군 훈련",
+        "line": "동원훈련 연기 사유별 횟수 제한",
+        "years": "페이지 열람일 2026-10-27 기준",
+        "region": "KR"
+      },
+      "caution": "이 횟수 제한은 병무청 동원훈련 기준이다. 일반 예비군 훈련 연기 페이지에서는 같은 횟수 표기를 확인하지 못했으므로 일반 훈련에 그대로 적용하지 않는다.",
+      "cautionSource": "병무청 동원훈련 연기 사유별 처리기준 표의 횟수 표기(두 차례·1회)"
+    },
+    {
+      "id": "reserve-mobilization-deferral-civil-exam",
+      "claim": "공무원 또는 공사단체의 채용·승진시험은 원서를 접수했거나 시험대상자로 확정된 사람이, 시험 응시일(합격자 면접일 포함)까지의 기간이 소집기간과 겹칠 때 연기 처리된다. 전년도에 이어 반복 응시한 경우는 훈련종료일 이후 두 번째 일요일까지 시험이 예정된 경우에 한정된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "병무청 동원훈련 연기 사유별 처리기준 표(공무원 채용·승진시험 항목)",
+      "source_url": "https://www.mma.go.kr/contents.do?mc=usr0000195",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "병무청",
+        "category": "예비군 훈련",
+        "line": "동원훈련 연기 — 공무원 채용·승진시험",
+        "years": "페이지 열람일 2026-10-27 기준",
+        "region": "KR"
+      },
+      "caution": "이 연기 기준은 병무청 동원훈련 연기 항목이다. 지방공무원 시험 응시 예정자에게 안내할 때도 동원훈련 기준이라고 밝히고, 반복 응시 조건은 훈련종료일 기준이라는 점을 함께 적는다.",
+      "cautionSource": "병무청 동원훈련 연기 사유별 처리기준 표(공무원 채용·승진시험 반복 응시 조건)"
+    },
+    {
+      "id": "reserve-employer-no-disadvantage",
+      "claim": "예비군대원이 동원되거나 훈련을 받을 때 사용자는 그 기간을 휴무로 처리해야 하며, 훈련을 이유로 불리하게 처우해서는 안 된다(예비군법 제10조).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 예비군법 제10조(직장 보장)",
+      "source_url": "https://www.law.go.kr/법령/예비군법",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "국방부",
+        "category": "예비군 훈련",
+        "line": "직장 보장",
+        "years": "시행 2026.8.28 표시본(법률 제21388호)",
+        "region": "KR"
+      },
+      "caution": "이 조문은 직장 보장 조문이다. 훈련 편성이나 연기 절차의 근거로 쓰지 않는다(편성은 제6조, 연기는 예비군 홈페이지 기준).",
+      "cautionSource": "예비군법 제6조(훈련)·제10조(직장 보장) 원문(국가법령정보센터 예비군법 페이지)"
+    },
+    {
+      "id": "reserve-home-menu-check-schedule",
+      "claim": "예비군 홈페이지 메뉴에는 나의 훈련정보, 훈련 신청, 훈련 연기가 있다. 일반 훈련 연기는 홈페이지에서 신청하거나 소속 예비군 동대에 문의하며, 소속 부대는 나의훈련정보 > 소속부대알림에서 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "예비군 홈페이지 훈련 연기란 페이지(상단 메뉴 및 일반 훈련 안내)",
+      "source_url": "https://www.yebigun1.mil.kr/dmobis/rfh/rgt/typetradelay/delaytraining.jsp",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "국방부 · 예비군 홈페이지",
+        "category": "예비군 훈련",
+        "line": "편성·연기 확인 채널",
+        "years": "페이지 열람일 2026-10-27 기준",
+        "region": "KR"
+      },
+      "caution": "개인 편성 내역을 조회하는 데 본인 인증이나 로그인이 필요한지는 이번 조사에서 확인하지 못했다. 독자에게는 홈페이지 메뉴 경로를 안내하는 데서 멈춘다."
+    }
+  ]
+}

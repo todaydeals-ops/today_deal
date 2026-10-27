@@ -1,0 +1,140 @@
+{
+  "topic": "간호사 국가시험 — 시행기관, 공고 현황, 2026·2027 일정 확인",
+  "brand": "한국보건의료인국가시험원",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "sw-exam-operator-not-verified",
+      "why": "사회복지사 1급 시행기관이 미확인으로 남은 건이라 간호사 시험 기관 근거로 쓰지 않음. 이번에는 한국보건의료인국가시험원법 제6조로 직접 확인"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "checked": "2026-10-27",
+      "id": "nurse-license-exam-status",
+      "claim": "의료법 제7조와 제80조는 2024년 9월 20일자로 '삭제' 표시된 상태다(법제처 시행본 2026.10.2 기준). 옛 자료가 간호사 국가시험 근거로 든 '의료법 제80조'는 현행 조문이 아니다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 의료법 제80조·제7조 조문 표시(시행 2026.10.2, 법률 제21490호)",
+      "source_url": "https://www.law.go.kr/법령/의료법/제80조",
+      "scope": {
+        "brand": "보건복지부(의료법 소관)",
+        "category": "보건의료인 면허·시험 근거",
+        "line": "의료법 제7조·제80조",
+        "years": "2024.9.20 삭제 표시(시행본 2026.10.2 기준)",
+        "region": "KR"
+      },
+      "caution": "현행 간호사 면허·국가시험의 법적 근거 조문은 이번 조사에서 특정하지 못했다. 조문 번호를 붙이지 말고 '한국보건의료인국가시험원이 시행한다'까지만 쓴다.",
+      "cautionSource": "https://www.law.go.kr/법령/의료법/제80조, https://www.law.go.kr/법령/의료법/제7조"
+    },
+    {
+      "checked": "2026-10-27",
+      "id": "nurse-exam-operator-kuksiwon-law",
+      "claim": "보건의료인 국가시험의 시행 및 관리는 한국보건의료인국가시험원의 사업이다(한국보건의료인국가시험원법 제6조 제1항 제1호).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 한국보건의료인국가시험원법 제6조(사업)",
+      "source_url": "https://www.law.go.kr/법령/한국보건의료인국가시험원법",
+      "scope": {
+        "brand": "한국보건의료인국가시험원",
+        "category": "보건의료인 국가시험",
+        "line": "국시원 사업(시험 시행·관리)",
+        "years": "법제처 표기 시행 2018.11.1(제6조 개정 2018.3.13 표기)",
+        "region": "KR"
+      },
+      "caution": "시행기관을 큐넷(한국산업인력공단)이나 보건복지부로 바꿔 쓰지 말 것. 큐넷 표기는 사회복지사 시험 블로그 정리에서 나온 것이다.",
+      "cautionSource": "https://www.law.go.kr/법령/한국보건의료인국가시험원법"
+    },
+    {
+      "checked": "2026-10-27",
+      "id": "nurse-exam-kuksiwon-phone",
+      "claim": "한국보건의료인국가시험원 대표번호는 1544-4244다(국시원 누리집 하단 표기).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국보건의료인국가시험원 누리집 하단",
+      "source_url": "https://www.kuksiwon.or.kr/index.do",
+      "scope": {
+        "brand": "한국보건의료인국가시험원",
+        "category": "문의",
+        "line": "대표번호",
+        "years": "2026-10-27 확인",
+        "region": "KR"
+      }
+    },
+    {
+      "checked": "2026-10-27",
+      "id": "nurse-exam-2027-h1-fee-notice",
+      "claim": "국시원은 2026년 9월 14일 '2027년도 상반기 보건의료인국가시험 응시수수료 공지'를 게시했다(공지사항 제목·게시일).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국보건의료인국가시험원 공지사항 '2027년도 상반기 보건의료인국가시험 응시수수료 공지'",
+      "source_url": "https://www.kuksiwon.or.kr/notice/brd/m_51/view.do?seq=3994",
+      "scope": {
+        "brand": "한국보건의료인국가시험원",
+        "category": "국가시험 공지",
+        "line": "보건의료인 국가시험 전체(간호사 포함 여부 미확인)",
+        "years": "2027 상반기",
+        "region": "KR"
+      },
+      "caution": "응시수수료 공지다. 간호사 시험 일정·접수 기간의 근거로 쓰지 말 것. 첨부파일 본문은 열지 못했다.",
+      "cautionSource": "https://www.kuksiwon.or.kr/notice/brd/m_51/view.do?seq=3994 (게시일 2026-09-14 표기)"
+    },
+    {
+      "checked": "2026-10-27",
+      "id": "nurse-kuksiwon-main-schedule-unassigned",
+      "claim": "국시원 메인 화면의 원서접수(2026.12.22~12.29)·응시표 출력(2027.02.06 이후)·시험시행(2027.02.13) 일정은 직종이 표시되지 않은 채 노출돼 있어, 간호사 일정으로는 확인되지 않는다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "한국보건의료인국가시험원 메인 화면(직종 선택 상태)",
+      "source_url": "https://www.kuksiwon.or.kr/main/indexNew.do?seq=2",
+      "scope": {
+        "brand": "한국보건의료인국가시험원",
+        "category": "국가시험 일정",
+        "line": "직종 미특정 메인 노출 일정",
+        "years": "2027 시험 예정(메인 노출 기준)",
+        "region": "KR"
+      },
+      "caution": "간호사 탭을 직접 열어 해당 일정이 간호사인지 확인한 뒤에만 쓴다. 이번 조사에서 탭 전환 결과는 열지 못했다.",
+      "cautionSource": "https://www.kuksiwon.or.kr/main/indexNew.do?seq=2 (메인 노출 일정, 직종 미표시)"
+    },
+    {
+      "checked": "2026-10-27",
+      "id": "nurse-2027-exam-not-confirmed",
+      "claim": "2027년 간호사 국가시험의 시행 공고(일정·접수 기간)는 2026-10-27 기준 국시원 공지사항 첫 페이지에서 확인되지 않았다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "한국보건의료인국가시험원 공지사항 목록 1페이지 대조",
+      "source_url": "https://www.kuksiwon.or.kr/notice/brd/m_51/list.do?seq=51",
+      "scope": {
+        "brand": "한국보건의료인국가시험원",
+        "category": "국가시험 공지",
+        "line": "간호사 국가시험",
+        "years": "2027",
+        "region": "KR"
+      },
+      "caution": "미공고로 단정하지 말 것. '2026-10-27 기준 공지 목록에서 확인 못 함'으로만 쓴다.",
+      "cautionSource": "https://www.kuksiwon.or.kr/notice/brd/m_51/list.do?seq=51 (2026-10-27 대조)"
+    },
+    {
+      "checked": "2026-10-27",
+      "id": "nurse-2026-exam-round-unverified",
+      "claim": "2026년 간호사 국가시험의 회차 번호와 시행일은 국시원 공식 공지에서 확인하지 못했다. 보도 요약에는 2026년 1월 시행이라는 내용이 있었으나 원문 대조는 하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "한국보건의료인국가시험원 공지사항 목록 1페이지 대조(2026년 간호사 시행 공지 미노출)",
+      "source_url": "https://www.kuksiwon.or.kr/notice/brd/m_51/list.do?seq=51",
+      "scope": {
+        "brand": "한국보건의료인국가시험원",
+        "category": "국가시험 일정",
+        "line": "간호사 국가시험(2026 시행 회차)",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "시행일을 본문에 적을 때는 국시원 공지로 먼저 대조한다. 보도 날짜는 근거로 쓰지 않는다.",
+      "cautionSource": "https://www.kuksiwon.or.kr/notice/brd/m_51/list.do?seq=51 (2026-10-27 대조)"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "topic": "소액생계비대출(현 명칭 불법사금융예방대출) 현행 지원대상·한도·상환 — 개편 여부 확인",
+  "brand": "서민금융진흥원",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "small-living-loan-status-renamed-2025",
+      "claim": "(舊)소액생계비대출은 2025년 3월 31일부터 '불법사금융예방대출'로 명칭이 바뀌었고, 같은 날 최초 대출한도 상향과 연간 공급규모 확대가 함께 시행됐다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "금융위원회 보도자료 「소액자금 때문에 불법사금융을 이용하지 마세요, 불법사금융예방대출이 있습니다!」(시행일 '25.3.31)",
+      "source_url": "https://www.fsc.go.kr/edu/news/84346",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "생계비 대출(고금리대안자금 소액대출)",
+        "line": "불법사금융예방대출(舊 소액생계비대출)",
+        "years": "2025.3.31 시행 기준 개편",
+        "region": "KR"
+      },
+      "caution": "검색 독자는 옛 이름 '소액생계비대출'로 들어온다. 글에서는 '불법사금융예방대출(구 소액생계비대출)'로 병기하고, 옛 명칭만으로 현행 상품을 설명하지 말 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "small-living-loan-first-limit-100man-2025",
+      "claim": "불법사금융예방대출의 최초 대출한도는 2025년 3월 31일 시행 기준 기본 50만원에서 100만원으로 상향됐다. 기존 금융권 비연체자 기준이며, 연체자는 의료·주거·교육비 등 자금용도를 확인하면 100만원까지 받을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "금융위원회 보도자료 「불법사금융예방대출」(금융위원회 게시, 시행일 '25.3.31)",
+      "source_url": "https://www.fsc.go.kr/edu/news/84346",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "생계비 대출",
+        "line": "불법사금융예방대출 최초 대출한도",
+        "years": "2025.3.31 시행 기준",
+        "region": "KR"
+      },
+      "caution": "2026년 현재 한도가 그대로인지는 이번 조사에서 확인하지 못했다. 글에는 '2025년 3월 개편 기준 최초 100만원'처럼 시기를 붙일 것. 현행 한도로 단정하지 말 것.",
+      "cautionSource": "금융위원회 보도자료 본문 원문(https://www.fsc.go.kr/edu/news/84346) — 최초 대출 기본 50만원→100만원 상향 문구"
+    },
+    {
+      "id": "small-living-loan-add-50man-after-6months-2025",
+      "claim": "최초 대출을 50만원 받은 뒤 6개월간 성실상환하면 추가대출 50만원을 받을 수 있다(2025.3.31 시행 기준). 의료·주거·교육비 등 특정 목적 증빙 시에는 최초 대출부터 최대한도 100만원 안에서 지원된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "금융위원회 보도자료 「불법사금융예방대출」 각주",
+      "source_url": "https://www.fsc.go.kr/edu/news/84346",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "생계비 대출",
+        "line": "불법사금융예방대출 추가대출",
+        "years": "2025.3.31 시행 기준",
+        "region": "KR"
+      },
+      "caution": "추가대출 조건(성실상환의 세부 기준)은 보도자료 각주 요약만 확인했다. 글에는 '6개월 성실상환 시 추가 가능' 수준으로 쓸 것.",
+      "cautionSource": "금융위원회 보도자료 본문 각주(https://www.fsc.go.kr/edu/news/84346) — 최초 대출 50만원 후 6개월 성실상환 시 추가대출 50만원 문구"
+    },
+    {
+      "id": "small-living-loan-eligibility-kinfa",
+      "claim": "지원대상은 신용평점 하위 20%이면서 연소득 3,500만원 이하인 사람이다. 기초생활수급자·차상위계층·근로장려금 수급자는 신용평점과 무관하게 연소득 3,500만원 이하이면 지원 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서민금융진흥원 금융상품 페이지 「불법사금융예방대출」 지원대상 항목",
+      "source_url": "https://www.kinfa.or.kr/financialProduct/smallLivingLoan.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "생계비 대출",
+        "line": "불법사금융예방대출 지원대상",
+        "years": "열람일 2026-10-27 기준 현행 상품 페이지",
+        "region": "KR"
+      },
+      "caution": "같은 페이지에 금융교육 이수(서금원 금융교육포털 과정) 또는 복지멤버십 가입이 필수라고 적혀 있다. 대출 신청 전에 이 절차가 필요하다는 점을 글에 빠뜨리지 말 것. 연령 기준은 이 페이지에서 확인되지 않았다.",
+      "cautionSource": "서민금융진흥원 상품 페이지 지원대상·지원내용 항목 원문(https://www.kinfa.or.kr/financialProduct/smallLivingLoan.do)"
+    },
+    {
+      "id": "small-living-loan-repay-2yr-equal-installment",
+      "claim": "불법사금융예방대출은 2년 원리금균등분할상환 방식이며, 중도상환 수수료가 면제되고 완제자 인센티브가 제공된다(상품 페이지 기재).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서민금융진흥원 금융상품 페이지 「불법사금융예방대출」 상단 요약",
+      "source_url": "https://www.kinfa.or.kr/financialProduct/smallLivingLoan.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "생계비 대출",
+        "line": "불법사금융예방대출 상환방식",
+        "years": "열람일 2026-10-27 기준",
+        "region": "KR"
+      },
+      "caution": "완제 인센티브의 구체 금액은 접혀 있는 '지원내용' 항목에 있어 열람하지 못했다. 금액을 쓰려면 그 항목을 다시 열어 확인할 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "small-living-loan-rate-unverified",
+      "claim": "불법사금융예방대출의 금리(일반·사회적배려대상자)와 재대출 금리는 이번 조사에서 공식 원문으로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "서민금융진흥원 금융상품 페이지(금리가 적힌 '지원내용' 항목이 접힌 상태로 렌더링되어 열람 실패)",
+      "source_url": "https://www.kinfa.or.kr/financialProduct/smallLivingLoan.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "생계비 대출",
+        "line": "불법사금융예방대출 금리",
+        "years": "미확인",
+        "region": "KR"
+      },
+      "caution": "블로그·계산기 사이트가 일반 연 12.5%, 사회적배려대상자 연 9.9%, 구 상품 연 15.9%(최저 9.4%)처럼 서로 다른 금리를 적었다(후기). 공식 확인 전에는 금리 숫자를 글에 쓰지 말고 '금리는 상담 시 안내된다'로 연결하라. 여기서 '무엇을 해보면 되는지'는 서민금융콜센터 1397 상담이다.",
+      "cautionSource": "후기 블로그·계산기 검색 요약 다수(출처 불일치, 공식 원문 미열람)"
+    },
+    {
+      "id": "small-living-loan-2026-change-unverified",
+      "claim": "2026년 1월 2일부터 구 상품 신규 취급이 중단되고 기존 이용자 추가대출만 남는다는 주장은 이번 조사에서 공식 원문으로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "블로그·계산기 사이트 기재(공식 페이지의 접힌 '(舊)불법사금융예방대출' 항목 미열람)",
+      "source_url": "https://www.kinfa.or.kr/financialProduct/smallLivingLoan.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "생계비 대출",
+        "line": "구 상품(舊) 신규 취급 종료",
+        "years": "미확인",
+        "region": "KR"
+      },
+      "caution": "2026년 1월 2일이나 2025년 12월 26일 같은 날짜를 글에 쓰지 말 것. 공식 '(舊)' 항목을 열어 확인하기 전까지는 '구 상품은 기존 이용자 추가대출 중심으로 바뀌었을 수 있다'까지만 말하고, 사용자가 이미 옛 상품 대출을 받았다면 1397 상담으로 확인하라고 연결할 것.",
+      "cautionSource": "블로그·계산기 검색 요약 기재 날짜(후기, 공식 미확인)"
+    },
+    {
+      "id": "small-living-loan-age-unverified",
+      "claim": "만 19세 이상이라는 연령 요건은 이번 조사에서 공식 상품 페이지 원문으로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "블로그 기재(공식 상품 페이지 본문에서 연령 항목 미확인)",
+      "source_url": "https://www.kinfa.or.kr/financialProduct/smallLivingLoan.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "생계비 대출",
+        "line": "불법사금융예방대출 연령 요건",
+        "years": "미확인",
+        "region": "KR"
+      },
+      "caution": "글에 '만 19세 이상'을 단정하지 말 것. 연령을 확인하려면 서민금융진흥원 원문 또는 서민금융콜센터(1397)로 안내하라.",
+      "cautionSource": "블로그 기재분(후기). 공식 원문 미확인"
+    }
+  ]
+}

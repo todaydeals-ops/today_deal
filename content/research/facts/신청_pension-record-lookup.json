@@ -1,0 +1,90 @@
+{
+  "topic": "국민연금 가입내역 조회·예상연금액 조회 — 공단 전자민원 메뉴 구성, 인증 요건, 조회 대상",
+  "brand": "국민연금공단(전자민원 메뉴 페이지 직접 확인)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [
+    "basic-pension-apply-channels"
+  ],
+  "declined_facts": [
+    {
+      "id": "national-pension-claim-with-basic-pension",
+      "why": "노령연금 수급 중 기초연금 병행 여부 설명이다. 가입내역 조회 주제와 무관하므로 가져오지 않는다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "record-lookup-menu-two-items",
+      "claim": "국민연금공단 전자민원 개인 조회 메뉴에는 '가입내역조회'(가입자 또는 가입자였던 자가 보험료 및 예상연금액 등 가입내역을 확인, 인증 필요)와 '예상연금액 조회'(본인이 만 60세 이후 받을 예상연금액을 확인, 인증 필요)가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민연금공단 전자민원 > 개인 > 조회 > 가입내역·예상연금 메뉴 안내 문구",
+      "source_url": "https://www.nps.or.kr/elctcvlcpt/comm/getOHAC0000M3.do?menuId=MN24001715",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "국민연금공단",
+        "category": "가입내역·예상연금 조회",
+        "line": "전자민원 개인 조회 메뉴",
+        "years": "2026-10-27 확인 시점",
+        "region": "KR"
+      },
+      "caution": "두 메뉴 모두 '인증 필요'로 표기돼 있다. 인증 수단(공동인증서·간편인증 등)은 이 페이지에서 확인되지 않았으니 구체 수단을 글에 쓰지 말 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "record-lookup-simulation-needs-auth",
+      "claim": "국민연금공단 전자민원 '예상연금 모의계산' 메뉴는 소득과 가입기간을 임의로 입력해 예상연금액을 확인하는 기능이며, 공단 메뉴 안내상 인증이 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민연금공단 전자민원 > 개인 > 조회 > 가입내역·예상연금 메뉴 안내 문구('예상연금 모의계산')",
+      "source_url": "https://www.nps.or.kr/elctcvlcpt/comm/getOHAC0000M3.do?menuId=MN24001715",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "국민연금공단",
+        "category": "예상연금 모의계산",
+        "line": "전자민원 모의계산 메뉴",
+        "years": "2026-10-27 확인 시점",
+        "region": "KR"
+      },
+      "caution": "정부24 쪽 안내에는 '인증 없이 간편하게 알아볼 수 있다'는 설명이 있다는 후기가 있으나 공식 화면에서 확인하지 못했다. 글에서는 '공단 전자민원에서는 인증이 필요하다'까지만 쓸 것.",
+      "cautionSource": "국민연금공단 전자민원 가입내역·예상연금 메뉴 안내 문구(https://www.nps.or.kr/elctcvlcpt/comm/getOHAC0000M3.do?menuId=MN24001715)"
+    },
+    {
+      "id": "record-lookup-gov24-path-unverified",
+      "claim": "정부24에서도 국민연금 가입내역과 예상연금액을 같은 방식으로 조회할 수 있다는 설명은 이번 조사에서 공식 페이지로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "시도한 출처: 정부24 '국민연금 예상 연금 조회'(gov.kr/portal/service/serviceInfo/PTR000050236) — 자동접속 차단 응답으로 본문 열람 실패",
+      "source_url": "https://www.gov.kr/portal/service/serviceInfo/PTR000050236",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "정부24·국민연금공단",
+        "category": "예상연금 조회 경로",
+        "line": "정부24 경로",
+        "years": "2026-10-27 확인 시점",
+        "region": "KR"
+      },
+      "caution": "정부24 경로가 있다고 쓰지 말 것. 확인 가능한 경로는 공단 전자민원 메뉴다.",
+      "cautionSource": "시도한 정부24 주소(https://www.gov.kr/portal/service/serviceInfo/PTR000050236) 열람 실패 기록"
+    },
+    {
+      "id": "record-lookup-expected-assumption-unverified",
+      "claim": "예상연금액은 현재 소득을 기준으로 만 60세 또는 수급 가능 시점까지 계속 납부한다고 가정해 계산된다는 설명은 공식 메뉴 안내에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "시도한 출처: 국민연금공단 전자민원 가입내역·예상연금 메뉴(계산 가정 문구 없음). 가정 설명은 검색 결과 요약에서만 확인",
+      "source_url": "https://www.nps.or.kr/elctcvlcpt/comm/getOHAC0000M3.do?menuId=MN24001715",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "국민연금공단",
+        "category": "예상연금 계산 방식",
+        "line": "계산 가정",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "'현재 소득이 계속된다'는 가정을 공식 설명처럼 쓰지 말 것. 독자에게는 '조회 결과는 계산 가정에 따른 예상치'라고만 안내한다.",
+      "cautionSource": ""
+    }
+  ]
+}
