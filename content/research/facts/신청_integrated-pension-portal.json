@@ -1,0 +1,97 @@
+{
+  "topic": "통합연금포털(금융감독원) — 운영 기관·접속 주소 변경·통합조회 신청 절차와 소요 기간",
+  "brand": "금융감독원",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [
+    { "id": "record-lookup-menu-two-items", "why": "국민연금공단 전자민원(가입내역조회·예상연금액 조회) 단일 기관 경로에 대한 팩트다. 통합연금포털(금감원 운영 여러 기관 통합조회)과 운영 주체·범위가 다르므로 이 주제의 근거로 쓰지 않았다. 참고만 한다." }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "integrated-pension-portal-status",
+      "claim": "통합연금포털은 금융감독원 홈페이지(www.fss.or.kr) 금융소비자보호 메뉴 아래 '통합연금포털' 페이지로 2026년 10월 27일 조회 시점에 운영되고 있으며, 메뉴는 '내 연금조회·재무설계', '연금 자료실', '연금상품 비교공시', '연금세제 안내'와 연금계좌 온라인 서비스로 구성돼 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "금융감독원 통합연금포털 메인 페이지",
+      "source_url": "https://www.fss.or.kr/fss/lifeplan/lifeplanIndex/index.do?menuNo=201101",
+      "checked": "2026-10-27",
+      "scope": { "brand": "금융감독원", "category": "연금 조회 서비스", "line": "통합연금포털 — 내 연금조회", "years": "조회 시점 2026-10-27 게시본", "region": "KR" },
+      "caution": "메인 페이지의 공지 중 날짜가 미래로 보이는 항목이 있으니 날짜 기준으로 최신성을 판단하지 말고 메뉴 존재 여부만 인용할 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "integrated-pension-portal-operator-fss",
+      "claim": "통합연금포털은 금융감독원이 운영하는 연금정보 조회 서비스다. 금융감독원 페이지는 '국민연금, 퇴직연금 등 모든 정보를 한곳에' 모을 수 있다고 소개한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "금융감독원 통합연금포털 메인 페이지 및 회원가입(통합조회 서비스 신청) 페이지",
+      "source_url": "https://www.fss.or.kr/fss/lifeplan/lifeplanIndex/index.do?menuNo=201101",
+      "checked": "2026-10-27",
+      "scope": { "brand": "금융감독원", "category": "연금 조회 서비스 운영 기관", "line": "통합연금포털 운영 주체", "years": "2026-10-27 게시본", "region": "KR" },
+      "caution": "운영 기관은 금융감독원이다. 국민연금공단·근로복지공단 등 조회 대상 기관을 통합연금포털의 운영 주체처럼 쓰지 말 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "integrated-pension-portal-domain-change-100lifeplan",
+      "claim": "옛 주소 100lifeplan.fss.or.kr는 금융감독원 메인 홈페이지 통합 개편에 따라 현재 주소로 한시적으로만 접속되며, 안내 페이지의 '통합연금포탈 바로가기' 버튼으로 금융감독원 메인 홈페이지 내 해당 메뉴로 이동한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "금융감독원 통합연금포털 구 도메인 접속 도메인 변경 안내 페이지(site_01.html)",
+      "source_url": "https://100lifeplan.fss.or.kr/static/site/site_01.html",
+      "checked": "2026-10-27",
+      "scope": { "brand": "금융감독원", "category": "연금 조회 접속 주소", "line": "구 도메인 → 금감원 메인 내 메뉴", "years": "2026-10-27 확인 시점 안내본", "region": "KR" },
+      "caution": "2015년 기사 등 옛 자료의 http://100lifeplan.fss.or.kr 주소를 글에 그대로 쓰지 말 것. 접속 주소는 금감원 메인 내 메뉴 주소(www.fss.or.kr/fss/lifeplan/lifeplanIndex/index.do?menuNo=201101)로 안내한다.",
+      "cautionSource": "구 도메인 안내 페이지 자체(같은 URL). 2015년 기사 주소는 검색 결과 제목 확인만 했으며 열지 않음"
+    },
+    {
+      "id": "integrated-pension-portal-first-query-3bizdays",
+      "claim": "통합연금포털 연금정보 통합조회 서비스를 처음 신청하면 조회까지 영업일 기준 3일이 걸리고, 이후에는 매월말 기준으로 연금정보가 업데이트돼 즉시 조회할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "금융감독원 통합연금포털 회원가입 1단계(연금정보 통합조회 서비스 신청서) 페이지",
+      "source_url": "https://fss.or.kr/fss/lifeplan/memberJoin/join1.do?menuNo=201033",
+      "checked": "2026-10-27",
+      "scope": { "brand": "금융감독원", "category": "연금 조회 신청 절차", "line": "연금정보 통합조회 — 최초 신청 후 소요 기간", "years": "2026-10-27 게시본", "region": "KR" },
+      "caution": "신청 직후 바로 조회되지 않는다. 당장 확인이 필요하면 영업일 3일 소요를 먼저 안내하고, 그 사이 확인할 방법(국민연금공단 등 기관별 조회)을 함께 안내할 것.",
+      "cautionSource": "금융감독원 회원가입 1단계 페이지 '조회까지 3일(영업일 기준)' 문구(같은 URL)"
+    },
+    {
+      "id": "integrated-pension-portal-pii-legal-basis",
+      "claim": "금융감독원은 연금정보 통합조회 서비스를 위해 「금융위원회의 설치 등에 관한 법률 시행령」 제22조의2에 근거해 신청자의 주민등록번호 또는 외국인등록번호를 처리한다고 신청 페이지에 적혀 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "금융감독원 통합연금포털 회원가입 1단계 페이지 (법적 근거 문구)",
+      "source_url": "https://fss.or.kr/fss/lifeplan/memberJoin/join1.do?menuNo=201033",
+      "checked": "2026-10-27",
+      "scope": { "brand": "금융감독원", "category": "연금 조회 신청 — 개인정보 처리", "line": "주민등록번호 처리 근거", "years": "2026-10-27 게시본", "region": "KR" },
+      "caution": "이 팩트는 신청 페이지의 문구를 옮긴 것이다. 해당 시행령 조문 원문은 이번 조사에서 열지 않았다. 조문을 인용하려면 국가법령정보센터에서 따로 확인할 것.",
+      "cautionSource": "금융감독원 회원가입 1단계 페이지 문구(같은 URL)"
+    },
+    {
+      "id": "integrated-pension-portal-menu-my-pension",
+      "claim": "통합연금포털 메인의 '내 연금조회·재무설계' 메뉴는 통합 연금 현황 확인과 맞춤형 노후 재무설계를 제공한다고 소개돼 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "금융감독원 통합연금포털 메인 페이지",
+      "source_url": "https://www.fss.or.kr/fss/lifeplan/lifeplanIndex/index.do?menuNo=201101",
+      "checked": "2026-10-27",
+      "scope": { "brand": "금융감독원", "category": "연금 조회 메뉴", "line": "내 연금조회·재무설계", "years": "2026-10-27 게시본", "region": "KR" },
+      "caution": "",
+      "cautionSource": ""
+    },
+    {
+      "id": "integrated-pension-portal-target-institutions-unverified",
+      "claim": "통합연금포털 통합조회의 조회 대상 기관(국민연금공단, 사립학교교직원연금공단, 근로복지공단, 공무원연금공단, 과학기술인공제회, 주택금융공사 등)의 목록은 이번 조사에서 금감원 공식 페이지 본문으로 확인하지 못했다. 검색 요약에만 나와 있다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "검색 결과 요약(공식 본문 미열람)",
+      "source_url": "https://www.fss.or.kr/fss/lifeplan/lifeplanIndex/index.do?menuNo=201101",
+      "checked": "2026-10-27",
+      "scope": { "brand": "금융감독원", "category": "연금 조회 대상", "line": "통합조회 대상 기관 목록", "years": "2026-10-27 기준 미확인", "region": "KR" },
+      "caution": "대상 기관 목록을 글에 쓰려면 금감원 '내연금조회'·'연금계약정보' 메뉴 안내를 열어 확인할 것. 확인 전까지 특정 기관 포함 여부를 단정하지 말 것.",
+      "cautionSource": ""
+    }
+  ]
+}

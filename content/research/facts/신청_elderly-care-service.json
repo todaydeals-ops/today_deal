@@ -1,0 +1,85 @@
+{
+  "topic": "노인맞춤돌봄서비스 (2026 지역사회 통합돌봄 체계 아래 신청 경로·대상)",
+  "brand": "보건복지부",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [
+    { "id": "long-term-care-grade-application-eligibility", "why": "노인장기요양보험 인정 신청 자격은 노인맞춤돌봄 대상 기준과 다른 제도라서 혼용하면 안 됨" }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "elderly-care-service-status-integrated-care",
+      "claim": "2026년 현행 체계에서 노인맞춤돌봄서비스는 지역사회 통합돌봄 체계 안의 '연계 서비스 예시'로 편입돼 있으며, 통합돌봄 신청 → 사전조사·판정 → 개인별 지원계획을 거친 뒤 시군구 사업부서 또는 국민건강보험공단 지사로 의뢰되는 구조다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "보건복지부 지역사회 통합돌봄 이용안내(서비스 제공·의뢰절차 항목)",
+      "source_url": "https://www.mohw.go.kr/menu.es?mid=a60200000000",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "노인 돌봄", "line": "지역사회 통합돌봄 체계 — 노인맞춤돌봄 연계", "years": "2026 현행 체계", "region": "KR" },
+      "caution": "예전 자료의 '지자체 수행기관에 직접 신청' 안내는 현행 체계에서는 통합돌봄 신청창구를 거치는 것으로 바뀌었을 수 있다. 직접 신청 경로로 쓰지 말 것.",
+      "cautionSource": "보건복지부 지역사회 통합돌봄 이용안내(신청방법·서비스 제공 항목)"
+    },
+    {
+      "id": "elderly-care-service-apply-window",
+      "claim": "지역사회 통합돌봄 신청 창구는 신청자 주소지 읍면동 행정복지센터와 국민건강보험공단 지사이며, 방문·우편·팩스로 신청할 수 있다. 신청자는 대상자 본인, 8촌 이내 친족, 후견인, 시군구(직권), 동의를 받은 기관 담당자다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "보건복지부 지역사회 통합돌봄 이용안내(신청방법 항목)",
+      "source_url": "https://www.mohw.go.kr/menu.es?mid=a60200000000",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "노인 돌봄", "line": "지역사회 통합돌봄 신청", "years": "2026 현행 체계", "region": "KR" },
+      "caution": "기각된 장기요양급여 대상자 또는 퇴원 직후 긴급 지원이 필요한 경우는 시군구가 직권으로 신청할 수 있다는 예외가 있다.",
+      "cautionSource": "보건복지부 지역사회 통합돌봄 이용안내(신청자 항목 주석)"
+    },
+    {
+      "id": "elderly-care-service-law-23-3-deleted",
+      "claim": "노인복지법 제23조의3은 2023년 10월 31일 개정으로 삭제됐고, 2026년 10월 2일 시행 법령에서도 '삭제'로 표기돼 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 노인복지법 제23조의3",
+      "source_url": "https://www.law.go.kr/법령/노인복지법/제23조의3",
+      "checked": "2026-10-27",
+      "scope": { "brand": "법제처", "category": "법령", "line": "노인복지법 제23조의3", "years": "2026.10.02 시행 표기", "region": "KR" },
+      "caution": "이 조문을 노인맞춤돌봄서비스의 현행 법적 근거로 인용하면 안 된다(삭제 조문). 현행 근거 조문은 이번 조사에서 확인하지 못했다.",
+      "cautionSource": "국가법령정보센터 노인복지법 제23조의3 (삭제 2023.10.31 표기)"
+    },
+    {
+      "id": "elderly-care-service-target-2026-unverified",
+      "claim": "2026년 노인맞춤돌봄서비스의 대상 연령·소득 기준과 서비스 내용은 공식 원문에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "보건복지부 지역사회 통합돌봄 이용안내 (대상 기준 항목 확인 시도, 해당 내용 없음)",
+      "source_url": "https://www.mohw.go.kr/menu.es?mid=a60200000000",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "노인 돌봄", "line": "노인맞춤돌봄서비스 대상 기준", "years": "2026", "region": "KR" },
+      "caution": "블로그 요약은 '65세 이상 기초생활수급자·차상위·기초연금 수급 독거 어르신'이라고 쓰지만 공식 확인이 안 됐으므로 글에 자격 기준으로 단정하지 말 것. 확인 경로는 복지로 또는 시군구 담당 부서다.",
+      "cautionSource": "블로그 2차 요약만 확인됨(공식 아님)"
+    },
+    {
+      "id": "elderly-care-service-discharge-44h-unverified",
+      "claim": "2026년 3월 신설됐다는 '퇴원환자 돌봄군'과 월 최대 44시간 단기 집중 지원은 공식 원문에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "보건복지부 지역사회 통합돌봄 이용안내 (사전조사·퇴원환자 항목 확인 시도, 해당 수치 없음)",
+      "source_url": "https://www.mohw.go.kr/menu.es?mid=a60200000000",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "노인 돌봄", "line": "퇴원환자 단기집중", "years": "2026", "region": "KR" },
+      "caution": "월 44시간과 돌봄군 명칭은 블로그 요약에서만 나왔다. 글에 수치로 쓰지 말 것.",
+      "cautionSource": "블로그 2차 요약만 확인됨(공식 아님)"
+    },
+    {
+      "id": "elderly-care-service-legal-name-unverified",
+      "claim": "지역사회 통합돌봄의 근거 법률명('의료·요양 등 지역 돌봄의 통합지원에 관한 법률')과 시행일을 공식 법령 원문에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "국가법령정보센터 법령 검색(시도 결과 본문 미표시)",
+      "source_url": "https://www.law.go.kr/lsSc.do?menuId=1&query=%EB%85%B8%EC%9D%B8%EB%A7%9E%EC%B6%A4%EB%8F%8C%EB%B4%84",
+      "checked": "2026-10-27",
+      "scope": { "brand": "법제처", "category": "법령", "line": "지역사회 통합돌봄 근거법", "years": "2026", "region": "KR" },
+      "caution": "2026년 3월 27일 전면 시행이라는 날짜는 블로그 보도에서만 나왔다. 글에 날짜로 쓰지 말 것.",
+      "cautionSource": "블로그 2차 보도만 확인됨(공식 아님)"
+    }
+  ]
+}

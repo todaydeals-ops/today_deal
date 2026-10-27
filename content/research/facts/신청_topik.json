@@ -1,0 +1,131 @@
+{
+  "topic": "TOPIK 한국어능력시험 (2026 회차 일정·접수·성적, 2027 일정 공고 여부)",
+  "brand": "국립국제교육원 (주관), 외교부 재외공관(해외 접수)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "topik-2026-108-domestic-schedule",
+      "claim": "제108회 TOPIK 국내 시험일은 2026년 10월 18일이고, 국내 접수 기간은 2026년 8월 4일부터 8월 12일까지이며, 성적 발표일은 2026년 12월 10일(15:00)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "TOPIK 한국어능력시험 누리집 일정 목록(메인 화면 일정 표시, 개별 공고 주소 미확보)",
+      "source_url": "https://www.topik.go.kr",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국립국제교육원", "category": "시험 일정", "line": "TOPIK 제108회 (PBT 지필)", "years": "2026", "region": "KR (국내 시험장)" },
+      "caution": "접수 기간(8월 4일~12일)은 이미 지났다. 이 회차를 신청 기회로 안내하지 말 것.",
+      "cautionSource": "TOPIK 누리집 일정 목록 2026.10.27 렌더 기준"
+    },
+    {
+      "id": "topik-2026-109-domestic-schedule",
+      "claim": "제109회 TOPIK 국내 시험일은 2026년 11월 15일이고, 국내 접수 기간은 2026년 9월 1일부터 9월 7일까지이며, 성적 발표일은 2026년 12월 22일(15:00)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "TOPIK 한국어능력시험 누리집 일정 목록(메인 화면 일정 표시, 개별 공고 주소 미확보)",
+      "source_url": "https://www.topik.go.kr",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국립국제교육원", "category": "시험 일정", "line": "TOPIK 제109회 (PBT 지필)", "years": "2026", "region": "KR (국내 시험장)" },
+      "caution": "국내 접수 기간(9월 1일~7일)은 2026년 10월 27일 기준 이미 끝났다. 독자에게 접수를 권하면 안 되고, 다음 회차 일정 확인을 안내할 것.",
+      "cautionSource": "TOPIK 누리집 일정 목록 2026.10.27 렌더 기준"
+    },
+    {
+      "id": "topik-2026-108-overseas-phnom-penh",
+      "claim": "주캄보디아 대사관 공지 기준 제108회 프놈펜 시험은 2026년 7월 20일부터 27일까지 직접 방문 접수하며, 시험일은 2026년 10월 18일, 성적 발표는 2026년 12월 10일이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "주캄보디아 대한민국 대사관 공지 '제108회 한국어능력시험(TOPIK) 안내 (프놈펜)' (외교부 누리집, 작성일 2026-07-06)",
+      "source_url": "https://www.mofa.go.kr/kh-ko/brd/m_3101/view.do?seq=1347786",
+      "checked": "2026-10-27",
+      "scope": { "brand": "주캄보디아 대한민국 대사관", "category": "시험 일정·접수", "line": "TOPIK 제108회 프놈펜 시험장", "years": "2026", "region": "캄보디아 프놈펜" },
+      "caution": "해외 접수는 공관마다 기간·방식이 다르다. 이 날짜와 방식은 프놈펜에만 적용되며 다른 나라에 옮겨 쓰지 말 것.",
+      "cautionSource": "주캄보디아 대사관 공지 본문 (프놈펜 한정 안내)"
+    },
+    {
+      "id": "topik-2026-107-overseas-phnom-penh",
+      "claim": "주캄보디아 대사관 공지 기준 제107회 프놈펜 시험은 2026년 4월 20일부터 27일까지 접수했고, 시험일은 2026년 7월 5일, 성적 발표는 2026년 8월 13일이었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "주캄보디아 대한민국 대사관 공지 '제107회 한국어능력시험(TOPIK) 안내 (프놈펜)' (외교부 누리집, 작성일 2026-05-07)",
+      "source_url": "https://www.mofa.go.kr/kh-ko/brd/m_3101/view.do?seq=1347761",
+      "checked": "2026-10-27",
+      "scope": { "brand": "주캄보디아 대한민국 대사관", "category": "시험 일정·접수", "line": "TOPIK 제107회 프놈펜 시험장", "years": "2026", "region": "캄보디아 프놈펜" },
+      "caution": "이미 지난 회차라 접수 안내로 쓰지 말 것. 해외 접수 방식 예시로만 쓴다.",
+      "cautionSource": "주캄보디아 대사관 공지 본문"
+    },
+    {
+      "id": "topik-overseas-direct-visit-only",
+      "claim": "주캄보디아 대사관 TOPIK 공지는 원서 접수를 직접 방문 접수로만 받으며, 단체 접수와 대리 접수를 허용하지 않는다고 적고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "주캄보디아 대한민국 대사관 공지 '제108회 한국어능력시험(TOPIK) 안내 (프놈펜)'",
+      "source_url": "https://www.mofa.go.kr/kh-ko/brd/m_3101/view.do?seq=1347786",
+      "checked": "2026-10-27",
+      "scope": { "brand": "주캄보디아 대한민국 대사관", "category": "접수 방식", "line": "해외 공관 접수", "years": "2026", "region": "캄보디아 프놈펜" },
+      "caution": "국내 접수 방식(온라인 접수 등)과 섞어 쓰지 말 것. 해외 접수는 공관별 공지를 따른다.",
+      "cautionSource": "주캄보디아 대사관 공지 본문 (프놈펜 한정 안내)"
+    },
+    {
+      "id": "topik-result-certificate-free-print",
+      "claim": "성적증명서는 유효기간 동안 TOPIK 누리집(www.topik.go.kr)에서 무료로 출력할 수 있다고 주캄보디아 대사관 공지에 적혀 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "주캄보디아 대한민국 대사관 공지 '제108회 한국어능력시험(TOPIK) 안내 (프놈펜)'",
+      "source_url": "https://www.mofa.go.kr/kh-ko/brd/m_3101/view.do?seq=1347786",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국립국제교육원", "category": "성적", "line": "성적증명서 출력", "years": "2026 공지 기준", "region": "KR" },
+      "caution": "유효기간은 공지에서 수치로 적히지 않았다. 유효기간을 쓸 때는 누리집에서 다시 확인할 것.",
+      "cautionSource": "주캄보디아 대사관 공지 본문 (유효기간 수치 미표기)"
+    },
+    {
+      "id": "topik-2026-plan-announced",
+      "claim": "2026년 한국어능력시험 시행계획 공고가 TOPIK 누리집 메인에 게시돼 있으며, 2026년 일정은 말하기 평가 제10회부터 제12회, IBT 제11회부터 제13회 등 여러 종류로 나뉜다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "TOPIK 한국어능력시험 누리집 메인 화면(시행계획 공고 배너 및 일정 목록)",
+      "source_url": "https://www.topik.go.kr",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국립국제교육원", "category": "시험 종류", "line": "PBT·IBT·말하기 평가", "years": "2026", "region": "KR" },
+      "caution": "시험 종류마다 접수 기간이 다르므로 회차를 한 표로 합치지 말 것. 일반 응시자는 '제OO회 PBT'를 기준으로 안내하는 것이 안전하다.",
+      "cautionSource": "TOPIK 누리집 메인 일정 목록 2026.10.27 렌더 기준"
+    },
+    {
+      "id": "topik-2027-schedule-not-posted",
+      "claim": "2026년 10월 27일 기준 TOPIK 누리집 메인의 일정 목록에는 2027년 회차가 보이지 않는다(2027 일정 미공고로 판단).",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "TOPIK 한국어능력시험 누리집 메인 화면 렌더 결과(2026.10.27 확인)",
+      "source_url": "https://www.topik.go.kr",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국립국제교육원", "category": "시험 일정", "line": "2027년 회차", "years": "2027 미공고 (2026.10.27 기준)", "region": "KR" },
+      "caution": "미공고는 시점에 따라 바뀐다. 2027년 일정을 단정해 쓰지 말고 '공고 전'이라고 쓸 것.",
+      "cautionSource": "2026.10.27 확인 시점 기준"
+    },
+    {
+      "id": "topik-scam-macro-and-proxy-warning",
+      "claim": "TOPIK 누리집은 매크로 프로그램을 이용한 접수를 금지하고, 허위 접수로 확인되면 접수 취소나 계정 정지를 할 수 있다고 공지하며, 대리응시·접수 대행·합격 보장을 미끼로 금전을 요구하는 광고가 늘고 있다고 경고한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "TOPIK 한국어능력시험 누리집 메인 화면 공지(매크로 프로그램 이용 접수 금지)",
+      "source_url": "https://www.topik.go.kr",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국립국제교육원", "category": "사칭·사기 주의", "line": "접수 대행·대리응시", "years": "2026.10.27 확인", "region": "KR" },
+      "caution": "접수 대행 업체를 쓰지 말라고 쓸 것. 공식 접수는 누리집에서 본인이 한다고 안내한다.",
+      "cautionSource": "TOPIK 누리집 메인 공지 문구"
+    },
+    {
+      "id": "topik-fee-domestic-unverified",
+      "claim": "국내 시험의 응시료는 이번 조사에서 공식 원문으로 확인하지 못했다. 확인된 응시료는 주캄보디아 대사관의 프놈펜 시험장 금액뿐이다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "TOPIK 누리집 메인 및 주캄보디아 대사관 공지(국내 응시료 항목 없음)",
+      "source_url": "https://www.topik.go.kr",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국립국제교육원", "category": "응시료", "line": "국내 시험", "years": "2026", "region": "KR" },
+      "caution": "프놈펜 금액을 국내 응시료로 쓰면 안 된다. 국내 응시료는 접수 화면에서 확인하라고 안내할 것.",
+      "cautionSource": "프놈펜 금액은 해외 공관 한정"
+    }
+  ]
+}

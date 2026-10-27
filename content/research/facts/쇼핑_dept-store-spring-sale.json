@@ -1,0 +1,26 @@
+{
+  "topic": "백화점 봄 정기세일 (롯데·신세계·현대 · 생활백과 세일 달력 웨이브 6)",
+  "brand": "백화점 3사 (롯데백화점·신세계백화점·현대백화점, 회사별 발표)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [
+    { "id": "dept-store-summer-sale-2026-official-release-not-opened", "why": "여름 회차(6월 말~7월) 기록이다. 봄 정기세일 기간에 대입하면 틀린다. 봄 회차의 근거가 아니다." },
+    { "id": "dept-store-winter-sale-2026-not-announced", "why": "겨울 회차 기록이다. 봄 회차와 무관하다." }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "dept-store-spring-sale-2026-no-official-dated-source",
+      "claim": "2026년 봄 정기세일의 롯데·신세계·현대 3사별 기간·할인율은 이번 조사에서 공식 개별 문서로 확인하지 못했다. 열람한 3사 뉴스 목록은 모두 2026년 10월 이후 게시분만 보였고 봄 회차 보도자료는 없었다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "현대백화점그룹 NEWSROOM 목록 (2026-10-27 열람, 최신 게시분 2026.10.27)",
+      "source_url": "https://www.ehyundai.com/newPortal/group/GN/GNN000001.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "롯데백화점·신세계백화점·현대백화점", "category": "백화점 정기세일", "line": "봄 정기세일", "years": "2026", "region": "KR" },
+      "caution": "검색에 보이는 봄 세일 언론 기사 중 연도 표기가 없는 기사는 2026년 회차로 쓰지 말 것. 봄 기간·할인율 숫자는 회사별 공식 보도자료를 새로 열어 확인하기 전까지 글에 쓰지 말 것.",
+      "cautionSource": "이번 조사 검색 결과 및 뉴스룸 열람 결과(2026-10-27). 언론 기사는 원문 미열람이며 공식 근거로 쓰지 않음"
+    }
+  ]
+}

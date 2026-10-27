@@ -1,0 +1,134 @@
+{
+  "topic": "통신요금 감면 (기초생활수급자·차상위·기초연금 수급자 등, 이동통신 요금)",
+  "brand": "과학기술정보통신부·보건복지부·지자체",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": ["basic-pension-eligibility-age-and-income"],
+  "declined_facts": [
+    { "id": "telecom-refund-examples", "why": "스마트초이스의 통신 미환급액 환급(과납·이중납부 환급)은 요금 감면과 다른 제도라서 혼용하면 안 됨" },
+    { "id": "electricity-welfare-discount-target", "why": "전기요금 복지할인 대상·한도는 이동통신 요금 감면과 다른 제도라서 여기 팩트를 쓰면 안 됨" }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "telecom-basic-pension-launch-2018",
+      "claim": "기초연금 수급자 이동통신 요금 감면은 2018년 8월 13일부터 시행된다고 과학기술정보통신부와 보건복지부가 발표했다(기사 본문 '13일부터', 기사일 2018.08.02).",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "정책브리핑(korea.kr) 정책기자 기고 '기초연금 수급자, 통신비 월 최대 1만1000원 감면' (과기정통부 발표 인용)",
+      "source_url": "https://www.korea.kr/news/reporterView.do?newsId=148852570",
+      "checked": "2026-10-27",
+      "scope": { "brand": "과학기술정보통신부", "category": "통신요금 감면", "line": "기초연금 수급자 이동통신 요금 감면", "years": "2018 시행 발표", "region": "KR" },
+      "caution": "정책기자(시민기자) 기고라서 정부 공식 발표문이 아니다. 시행 날짜는 기고 본문 인용이고 원 보도자료는 확인하지 못했다.",
+      "cautionSource": "정책브리핑 기고 본문 인용(원 보도자료 미확인)"
+    },
+    {
+      "id": "telecom-basic-pension-target-2018-bokjiro",
+      "claim": "복지로는 2018년 7월 13일 등록한 공지에서 기초연금을 받는 65세 이상 중 소득하위 70% 이내인 사람을 이동통신 요금감면 서비스 대상으로 안내했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 공지사항 '복지로 기초연금수급자 이동통신요금 감면'",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/cms/pc/customer/notice/1209854_1141.html",
+      "checked": "2026-10-27",
+      "scope": { "brand": "복지로", "category": "통신요금 감면", "line": "기초연금 수급자 이동통신 감면", "years": "2018 공지", "region": "KR" },
+      "caution": "2018년 공지 기준이다. 2026년 대상 기준(소득하위 70% 포함)은 확인하지 못했으므로 현행 조건으로 쓰지 말 것.",
+      "cautionSource": "복지로 공지 등록일 2018-07-13"
+    },
+    {
+      "id": "telecom-basic-pension-target-2026-unverified",
+      "claim": "2026년 현행 기초연금 수급자 이동통신 감면의 소득 기준(소득하위 70% 등)은 공식 문서에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "복지로 공지(2018) 및 여수시 복지포털 기초생활보장감면시책 (연도 미표기)",
+      "source_url": "https://www.yeonsu.go.kr/welfare/user/downscale/reduction.asp",
+      "checked": "2026-10-27",
+      "scope": { "brand": "복지로·과기정통부", "category": "통신요금 감면", "line": "기초연금 수급자 감면 소득 기준", "years": "2026", "region": "KR" },
+      "caution": "기초연금 수급 자격 자체는 기초연금법으로 확인된 사실을 쓰되, 이통사 감면의 소득 기준은 복지로 2026 안내로 다시 확인할 것.",
+      "cautionSource": "복지로 2018 공지 및 지자체 페이지 대조, 2026 중앙 안내 미확인"
+    },
+    {
+      "id": "telecom-basic-pension-cap-conflict",
+      "claim": "기초연금 수급자 이동통신 감면의 월 상한은 출처마다 다르다. 2018년 발표 기사와 2026년 4월 보도(국민연금공단 인용)는 월 최대 1만 1000원으로 쓰고, 여수시 복지포털 표는 기본료 및 통화료 50%, 월 최대 22,000원으로 쓴다(여수시 표는 연도 미표기).",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "정책브리핑 2018 기고 · YTN 2026.04.20 보도(국민연금공단 인용) · 여수시 복지포털 기초생활보장감면시책",
+      "source_url": "https://www.ytn.co.kr/_ln/0103_202604201500372684",
+      "checked": "2026-10-27",
+      "scope": { "brand": "과학기술정보통신부·국민연금공단", "category": "통신요금 감면", "line": "기초연금 수급자 이동통신 감면 상한", "years": "2018·2026(보도)·미표기(여수시)", "region": "KR" },
+      "caution": "상한을 확정 수치로 단정하지 말고 '1만 1천 원 안팎으로 안내되는 경우가 많다'로 쓴다. 22,000원은 요금 기준선(청구요금 2만 2천 원)과 혼동된 표기일 수 있어 상한으로 쓰지 말 것. 2026 금액은 신청 전 복지로 또는 통신사에서 확인하라고 안내한다.",
+      "cautionSource": "정책브리핑 2018 기고 본문(2만 2천 원 이상 요금제 1만 1천 원 감면, 미만 50%) 및 YTN 2026.04.20 보도"
+    },
+    {
+      "id": "telecom-basic-pension-rate-rule-2018",
+      "claim": "2018년 발표 기준 기초연금 수급자의 이동통신 감면은 청구 요금이 2만 2천 원 이상인 요금제면 1만 1천 원을 감면하고, 그보다 저렴하면 금액과 관계없이 50%를 감면하는 방식이었다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "정책브리핑 정책기자 기고(2018.08.02), 2026 보도(YTN 2026.04.20)는 50% 방식과 2만 2천 원 기준선을 함께 기술",
+      "source_url": "https://www.korea.kr/news/reporterView.do?newsId=148852570",
+      "checked": "2026-10-27",
+      "scope": { "brand": "과학기술정보통신부", "category": "통신요금 감면", "line": "기초연금 수급자 이동통신 감면 계산 방식", "years": "2018 발표, 2026 보도 대조", "region": "KR" },
+      "caution": "요금제 금액 기준선 2만 2천 원(부가세 별도 표기 여부 포함)이 기사마다 달라 보이므로, 독자에게는 '내 요금제 청구액을 기준으로 계산된다'고만 쓰고 기준선 금액은 통신사 안내로 확인하게 할 것.",
+      "cautionSource": "정책브리핑 2018 기고 본문, YTN 2026.04.20 보도"
+    },
+    {
+      "id": "telecom-basic-pension-channels-local",
+      "claim": "통신요금 감면 신청 채널은 주민센터 방문 일괄 신청(신분증·요금 고지서 지참), 복지로 인터넷 신청, 각 요금감면기관(통신사) 직접 신청이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "여수시 복지포털 기초생활보장감면시책 — 감면신청 안내",
+      "source_url": "https://www.yeonsu.go.kr/welfare/user/downscale/reduction.asp",
+      "checked": "2026-10-27",
+      "scope": { "brand": "여수시(지자체)", "category": "통신요금 감면", "line": "감면 신청 채널", "years": "연도 미표기 현행 안내", "region": "전남 여수시 페이지 기준, 채널 자체는 전국 공통으로 보임" },
+      "caution": "지자체 안내 페이지라 연도 표기가 없다. 채널 이름은 쓰되 세부 절차·서류는 2026 기준 확인 전까지 단정하지 말 것.",
+      "cautionSource": "여수시 페이지 (연도 미표기)"
+    },
+    {
+      "id": "telecom-line-rule-own-phone-one",
+      "claim": "이동통신 요금 감면은 본인 명의 휴대폰에 대해서만 신청할 수 있고 1인당 1회선만 감면된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "여수시 복지포털 기초생활보장감면시책 — 하단 유의사항",
+      "source_url": "https://www.yeonsu.go.kr/welfare/user/downscale/reduction.asp",
+      "checked": "2026-10-27",
+      "scope": { "brand": "여수시(지자체)", "category": "통신요금 감면", "line": "이동통신 감면 대상 회선", "years": "연도 미표기 현행 안내", "region": "KR" },
+      "caution": "가족 명의 회선이나 법인 회선은 대상이 아니라고 독자에게 먼저 알린다.",
+      "cautionSource": "여수시 페이지 유의사항 (연도 미표기)"
+    },
+    {
+      "id": "telecom-mvno-applicability-unverified",
+      "claim": "알뜰폰(MVNO) 이용자가 이동통신 요금 감면을 받을 수 있는지는 확정하지 못했다. 여수시 페이지는 알뜰폰 사업자가 감면 대상자에게 전용요금제로 감면을 적용한다고 쓰지만, 정부24 검색 요약은 알뜰통신서비스 제외라고 써서 충돌한다(정부24 본문은 열지 못함).",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "여수시 복지포털 기초생활보장감면시책 · 정부24 기초연금 이동통신 감면 안내(본문 차단으로 미열람)",
+      "source_url": "https://www.yeonsu.go.kr/welfare/user/downscale/reduction.asp",
+      "checked": "2026-10-27",
+      "scope": { "brand": "과학기술정보통신부", "category": "통신요금 감면", "line": "알뜰폰 이용자 적용 여부", "years": "2026", "region": "KR" },
+      "caution": "알뜰폰 이용자에게 '감면 가능'이라고 단정하지 말고, 자기 요금제가 알뜰폰인 경우 통신사 고객센터에 먼저 확인하라고 쓸 것.",
+      "cautionSource": "여수시 페이지와 정부24 검색 요약의 충돌"
+    },
+    {
+      "id": "telecom-lowincome-amount-2026-unverified",
+      "claim": "기초생활수급자·차상위·장애인 등 저소득층의 2026년 이동통신 감면액은 공식 중앙 문서에서 확인하지 못했다. 여수시 표는 생계·의료 수급자 기본료 감면 26,000원 한도 및 통화료 50%(월 최대 41,000원) 등으로 쓰지만 연도 표기가 없다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "여수시 복지포털 기초생활보장감면시책 (지자체 페이지, 연도 미표기)",
+      "source_url": "https://www.yeonsu.go.kr/welfare/user/downscale/reduction.asp",
+      "checked": "2026-10-27",
+      "scope": { "brand": "여수시(지자체)", "category": "통신요금 감면", "line": "저소득층 이동통신 감면액", "years": "미표기", "region": "전남 여수시 페이지 기준" },
+      "caution": "여수시 표 금액을 전국 금액으로 쓰지 말 것. 2026 중앙 금액은 복지로 또는 과기정통부 공식 자료에서 다시 확인하기 전까지 글에 금액을 적지 말 것.",
+      "cautionSource": "여수시 페이지 (연도 미표기, 지자체 자료)"
+    },
+    {
+      "id": "telecom-lowincome-2017-start-unverified",
+      "claim": "저소득층 통신요금 감면이 2017년 11월부터 시행됐다는 기술은 정책기자 기고 1건에서만 확인했다. 공식 원문은 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "정책브리핑 정책기자 기고 (2018.08.02)",
+      "source_url": "https://www.korea.kr/news/reporterView.do?newsId=148852570",
+      "checked": "2026-10-27",
+      "scope": { "brand": "과학기술정보통신부", "category": "통신요금 감면", "line": "저소득층 이동통신 감면 시행 시기", "years": "2017 (기고 인용)", "region": "KR" },
+      "caution": "같은 기고에서도 '지난해 11월'과 '지난해 12월 정책 추진'이 함께 나와 날짜가 일관되지 않는다. 시기를 월 단위로 쓰지 말 것.",
+      "cautionSource": "정책브리핑 기고 본문 내부 표현 불일치"
+    }
+  ]
+}

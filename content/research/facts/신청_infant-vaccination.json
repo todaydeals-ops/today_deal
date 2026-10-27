@@ -1,0 +1,98 @@
+{
+  "topic": "영유아 국가예방접종 — 국가예방접종사업 지원 대상·백신 종류, 지원 연령 제한, 비지원 백신 비용, 지연 접종 안내, 2026 국가예방접종 지침 게시 상태",
+  "brand": "질병관리청",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": ["flu-2026-27-season-period", "flu-2026-27-free-targets", "flu-child-dose-schedule", "flu-facility-anywhere"],
+  "declined_facts": [
+    { "id": "flu-2026-27-start-dates-by-group", "why": "연령대별 시작일에 65세 이상 어르신 날짜가 들어 있고, 같은 날짜를 공식 문서 두 곳이 다르게 적고 있다(disputes 신고 대상, 신청_senior-vaccination 주제에서 판정 대기). 영유아 글에서는 시작일을 쓰지 않는다." },
+    { "id": "flu-covid-same-day-coadmin", "why": "65세 이상 어르신의 코로나19 동시접종 안내다. 영유아 접종 글과 대상이 달라 인용하지 않는다." }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "infant-national-program-19vaccines-under12",
+      "claim": "국가예방접종사업은 국가가 지원하는 백신 19종의 접종비용(백신비와 예방접종 시행비)을 전액 지원하며, 대상은 12세 이하 어린이(2013.1.1. 이후 출생자, 2026년도 기준)다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 예방접종도우미 — 국가예방접종사업 사업소개(최종검토 2026-07-14)",
+      "source_url": "https://nip.kdca.go.kr/irhp/infm/goVcntInfo.do?menuLv=1&menuCd=131",
+      "checked": "2026-10-27",
+      "scope": { "brand": "질병관리청", "category": "영유아·어린이 국가예방접종", "line": "국가예방접종사업 지원 대상·백신", "years": "2026년도 기준(최종검토 2026-07-14)", "region": "KR" },
+      "caution": "인플루엔자도 지원 백신 19종에 들어 있지만 대상 연령과 기간은 별도다(어린이 인플루엔자는 2026-27절기 생후 6개월~14세). 12세 기준과 14세 기준을 한 문장에 섞지 말 것. HPV도 연령과 대상 조건이 따로 있다.",
+      "cautionSource": "국가예방접종사업 페이지의 '인플루엔자(IIV) — 당해 어린이 인플루엔자 사업 대상 및 사업기간은 별도 확인' 문구와 HPV 지원 연령 행, 그리고 flu-2026-27-free-targets(보도자료)."
+    },
+    {
+      "id": "infant-program-excluded-vaccines-self-pay",
+      "claim": "국가예방접종 사업에 포함되지 않은 백신은 접종비용을 전액 본인이 부담하며, 페이지가 예로 든 백신은 BCG 경피용, 일본뇌염 약독화 생백신(이모젭), HPV 9가다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 예방접종도우미 — 국가예방접종사업 사업소개(최종검토 2026-07-14)",
+      "source_url": "https://nip.kdca.go.kr/irhp/infm/goVcntInfo.do?menuLv=1&menuCd=131",
+      "checked": "2026-10-27",
+      "scope": { "brand": "질병관리청", "category": "국가예방접종 비지원 백신", "line": "본인부담 백신 예시", "years": "2026-07-14 최종검토 기준", "region": "KR" },
+      "caution": "페이지가 든 예시 3종만 쓰고, 전체 목록이라고 단정하지 말 것.",
+      "cautionSource": "국가예방접종사업 페이지의 '사업에 포함되지 않은 백신*' 각주 문구."
+    },
+    {
+      "id": "infant-age-limit-bcg-pcv-rv",
+      "claim": "지원 연령 제한이 있는 백신은 다음과 같다. BCG(피내용)는 생후 59개월까지 지원하며 3개월 이상 영유아는 TST 결과가 음성인 경우에 지원한다. 폐렴구균(PCV)은 생후 59개월까지 지원하며 고위험군 소아는 생후 59개월 이상에서도 지원한다. 로타바이러스(RV)는 생후 8개월 0일까지 지원하며 1차 접종은 생후 14주 6일까지 지원한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 예방접종도우미 — 국가예방접종사업 사업소개의 '지원 연령이 다른 백신' 표(최종검토 2026-07-14)",
+      "source_url": "https://nip.kdca.go.kr/irhp/infm/goVcntInfo.do?menuLv=1&menuCd=131",
+      "checked": "2026-10-27",
+      "scope": { "brand": "질병관리청", "category": "영유아 국가예방접종", "line": "백신별 지원 연령 상한(BCG·PCV·RV)", "years": "2026-07-14 최종검토 기준", "region": "KR" },
+      "caution": "이 표는 무료 지원 연령 상한이며 권장 접종 시기가 아니다. 표에 없는 백신(예: Hib)의 연령 상한은 이 조사에서 확인하지 못했으니 쓰지 말 것.",
+      "cautionSource": "국가예방접종사업 페이지의 '지원 연령이 다른 백신' 표 원문(BCG·PCV·RV 행)."
+    },
+    {
+      "id": "infant-delayed-schedule-consult-doctor",
+      "claim": "DTaP·IPV·Hib·PCV·IJEV 등은 접종 시기가 늦어지면 접종 일정(횟수)이 달라지므로, 세부 접종 일정은 예진의사와 상담하라고 질병관리청 예방접종도우미가 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 예방접종도우미 — 국가예방접종사업 사업소개 하단 안내(최종검토 2026-07-14)",
+      "source_url": "https://nip.kdca.go.kr/irhp/infm/goVcntInfo.do?menuLv=1&menuCd=131",
+      "checked": "2026-10-27",
+      "scope": { "brand": "질병관리청", "category": "영유아 국가예방접종", "line": "접종 지연 시 일정", "years": "2026-07-14 최종검토 기준", "region": "KR" },
+      "caution": "지연 접종의 구체 횟수와 간격은 2026 지침 본문에 있으나 이번 조사에서 읽지 못했다(infant-schedule-doses-unverified). 횟수를 쓰지 말고 '의사와 상담'으로 안내한다.",
+      "cautionSource": "해당 없음(수치 없음). 횟수 미확인은 infant-schedule-doses-unverified 참조."
+    },
+    {
+      "id": "infant-guide-2026-revised-2026-10-02",
+      "claim": "질병관리청은 '(10.2.수정) 2026년 국가예방접종 지침' 게시물을 2026.1.9. 작성, 2026.10.2. 최종수정 형태로 올렸고, 의료기관용과 보건소용 지침 PDF를 첨부했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 — (10.2.수정) 2026년 국가예방접종 지침 게시물(예방접종관리과)",
+      "source_url": "https://www.kdca.go.kr/bbs/kdca/55/309683/artclView.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "질병관리청", "category": "국가예방접종 지침", "line": "2026 지침 게시·수정 상태", "years": "작성 2026.1.9., 최종수정 2026.10.2.", "region": "KR" },
+      "caution": "지침 PDF의 본문 내용은 이번 조사에서 한글 텍스트로 읽지 못했다. 지침 내용을 인용하기 전에 PDF 원문을 직접 확인할 것.",
+      "cautionSource": "해당 없음(수치는 게시물 제목·작성일 문구 그대로)."
+    },
+    {
+      "id": "infant-schedule-page-last-reviewed-2024",
+      "claim": "질병관리청 예방접종도우미의 '표준 예방접종 일정표' 페이지는 어린이 표준 일정표를 PDF(이미지)로 내려받도록 제공하며, 이 페이지의 최종검토일은 2024년 1월 15일이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 예방접종도우미 — 표준 예방접종 일정표 페이지(최종검토 2024-01-15)",
+      "source_url": "https://nip.kdca.go.kr/irhp/infm/goVcntInfo.do?menuLv=1&menuCd=115",
+      "checked": "2026-10-27",
+      "scope": { "brand": "질병관리청", "category": "표준 예방접종 일정표", "line": "어린이 표준 일정표 PDF 제공 여부", "years": "페이지 최종검토 2024-01-15", "region": "KR" },
+      "caution": "페이지 최종검토(2024)는 2026 지침 수정(2026.10.2.)보다 이전이다. 일정표 PDF의 내용을 2026 일정으로 단정하지 말고, 지침 원문과 대조한 뒤 쓸 것.",
+      "cautionSource": "표준 예방접종 일정표 페이지의 '최종검토일 2024-01-15' 표시와 지침 게시물의 2026.10.2. 최종수정 문구."
+    },
+    {
+      "id": "infant-schedule-doses-unverified",
+      "claim": "확인실패: 백신별 표준 접종 월령과 접종 횟수(표준 예방접종 일정표 본문)는 이번 조사에서 원문 텍스트로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "질병관리청 2026 국가예방접종 지침 PDF(의료기관용·보건소용) 열람 시도 — 한글 글꼴이 텍스트로 추출되지 않아 일정표를 읽지 못함. 예방접종도우미 표준 일정표는 이미지 PDF",
+      "source_url": "https://www.kdca.go.kr/bbs/kdca/55/309683/artclView.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "질병관리청", "category": "영유아 표준 예방접종 일정", "line": "백신별 접종 월령·횟수", "years": "2026", "region": "KR" },
+      "caution": "월령과 횟수를 기억이나 블로그 표로 채우지 말 것. 독자에게는 예방접종도우미의 '표준 예방접종 일정표' 확인과 의료기관 상담을 안내한다.",
+      "cautionSource": "해당 없음(확인실패 항목, 수치 없음)."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "topic": "백화점 가을 정기세일 (롯데·신세계·현대 · 생활백과 세일 달력 웨이브 6)",
+  "brand": "백화점 3사 (롯데백화점·신세계백화점·현대백화점, 회사별 발표)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [
+    { "id": "dept-store-summer-sale-2026-official-release-not-opened", "why": "여름 회차(6월 말~7월) 기록이다. 가을 회차에 대입하면 틀린다." },
+    { "id": "dept-store-winter-sale-2026-not-announced", "why": "겨울 회차 기록이다. 가을 회차와 무관하다." }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "dept-store-fall-sale-2026-shinsegae-event-list-no-sale-entry",
+      "claim": "신세계백화점 뉴스&이벤트 목록(2026-10-27 열람)에는 가을 정기세일(SHINSEGAE SALE) 항목이 보이지 않았다. 열린 목록의 전점 행사는 계절과식탁(2026.10.20~10.29), WEDDING VOW CLUB(2026.10.01~10.31), 첫 로그인 웰컴 혜택(2026.10.01~10.31), 신세계 리워드 캘린더(2026.10.01~10.30) 4건이다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "신세계백화점 뉴스&이벤트 목록 (deptmapp.shinsegae.com/shopping/event/list.do, 2026-10-27 열람)",
+      "source_url": "https://deptmapp.shinsegae.com/shopping/event/list.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "신세계백화점", "category": "백화점 정기세일", "line": "가을 정기세일", "years": "2026", "region": "KR" },
+      "caution": "검색 스니펫에 '전점 only SHINSEGAE SALE 2026.10.01~10.18'이 보였으나 해당 원문 주소를 열어 확인하지 못했다. 이 기간을 공식 일정으로 글에 쓰지 말 것. 목록이 일부만 렌더링됐을 수 있으므로 '목록에서 확인되지 않음'으로만 쓸 것.",
+      "cautionSource": "검색 스니펫(원문 미열람, 신세계 공식 주소 미확인). 목록 열람 결과(2026-10-27)"
+    },
+    {
+      "id": "dept-store-fall-sale-2026-hyundai-newsroom-no-sale-title",
+      "claim": "현대백화점그룹 NEWSROOM 1페이지(2026.09.23~2026.10.27 게시분, 2026-10-27 열람)의 기사 제목에는 정기세일 또는 세일이라는 단어가 없었다. 가을 정기세일 보도자료는 이 목록에서 확인되지 않았다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "현대백화점그룹 NEWSROOM 목록 (2026-10-27 열람)",
+      "source_url": "https://www.ehyundai.com/newPortal/group/GN/GNN000001.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "현대백화점", "category": "백화점 정기세일", "line": "가을 정기세일", "years": "2026", "region": "KR" },
+      "caution": "목록 1페이지만 확인했다. 과거 게시분과 상세 본문은 열지 않았으므로 '목록 1페이지에서 확인되지 않음'으로만 쓸 것. 가을 기간을 추정해 쓰지 말 것.",
+      "cautionSource": "현대백화점그룹 뉴스룸 열람 결과(2026-10-27). 목록 1페이지 범위"
+    }
+  ]
+}

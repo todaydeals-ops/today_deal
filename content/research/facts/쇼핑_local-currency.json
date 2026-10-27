@@ -1,0 +1,137 @@
+{
+  "topic": "지역사랑상품권 할인 구매 — 2026 행정안전부 기본계획 현황, 할인율·구매한도(지자체별) 확인 범위",
+  "brand": "행정안전부(지역사랑상품권)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "local-currency-5yr-plan-2026",
+      "claim": "행정안전부는 2026년 8월 30일 「지역사랑상품권법」에 근거한 지역사랑상품권 5개년 법정 기본계획(2026~2030)을 처음으로 수립·발표했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "행정안전부 보도자료 2026.08.30 ‘지역사랑상품권 5개년 법정 기본계획 최초 수립’ (KDI 경제정책자료 게재본)",
+      "source_url": "https://eiec.kdi.re.kr/policy/materialView.do?num=286041",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "행정안전부",
+        "category": "지역사랑상품권 정책",
+        "line": "5개년 법정 기본계획",
+        "years": "2026~2030",
+        "region": "KR(전국 기본계획)"
+      },
+      "caution": "이 계획은 전국 차원의 정책 틀이다. 지자체별 할인율·구매 한도·발행 조건을 이 계획의 수치로 대신 쓰지 말 것.",
+      "cautionSource": "행정안전부 보도자료 2026.08.30 (https://eiec.kdi.re.kr/policy/materialView.do?num=286041)"
+    },
+    {
+      "id": "local-currency-2030-issuance-target",
+      "claim": "행정안전부 5개년 기본계획은 2030년까지 지역사랑상품권 발행 규모를 31.2조 원으로 확대하는 것을 목표로 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "행정안전부 보도자료 2026.08.30 ‘지역사랑상품권 5개년 법정 기본계획 최초 수립’",
+      "source_url": "https://eiec.kdi.re.kr/policy/materialView.do?num=286041",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "행정안전부",
+        "category": "지역사랑상품권 발행 규모",
+        "line": "5개년 기본계획 목표치",
+        "years": "2030년까지",
+        "region": "KR(전국)"
+      },
+      "caution": "31.2조 원은 목표치이며 2026년 실제 발행 규모가 아니다. 현재 발행 실적으로 쓰지 말 것.",
+      "cautionSource": "행정안전부 보도자료 2026.08.30 (https://eiec.kdi.re.kr/policy/materialView.do?num=286041)"
+    },
+    {
+      "id": "local-currency-discount-rate-unverified-2026",
+      "claim": "지역사랑상품권의 할인율과 1인당 구매 한도는 지자체 조례·발행 공고마다 정해지며, 2026년 전국 공통 기준은 이번 조사에서 행정안전부 원문으로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "행정안전부 보도자료 2026.08.30 (할인율·구매 한도 항목 없음 확인)",
+      "source_url": "https://eiec.kdi.re.kr/policy/materialView.do?num=286041",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "행정안전부·지자체",
+        "category": "할인율·구매 한도",
+        "line": "2026 지역사랑상품권",
+        "years": "2026",
+        "region": "KR(전국 공통 여부 미확인)"
+      },
+      "caution": "블로그·언론의 국비율·할인율 수치는 전국 공통으로 쓰지 말 것. 특정 지자체 사례만 그 지자체 이름과 함께 쓴다. 2026 행정안전부 운영지침 원문은 이번 조사에서 열지 못했다.",
+      "cautionSource": "이번 조사에서 확인: 행정안전부 2026.08.30 보도자료에는 할인율·구매 한도 수치가 없다 (https://eiec.kdi.re.kr/policy/materialView.do?num=286041)"
+    },
+    {
+      "id": "local-currency-law-discount-clause",
+      "claim": "「지역사랑상품권 이용 활성화에 관한 법률」 제15조 제2항은 지방자치단체의 장이 조례로 정하는 비율의 범위에서 지역사랑상품권을 할인하여 판매할 수 있다고 정한다. 할인율의 구체 수치는 법률에 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 「지역사랑상품권 이용 활성화에 관한 법률」 (시행 2026.2.27., 법률 제21030호, 2025.8.26. 일부개정) 제15조 제2항",
+      "source_url": "https://www.law.go.kr/법령/지역사랑상품권이용활성화에관한법률",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "행정안전부(법률 소관)·지방자치단체",
+        "category": "지역사랑상품권 할인 판매",
+        "line": "법정 근거(할인 판매 권한)",
+        "years": "2026(시행 2026.2.27.)",
+        "region": "KR(지자체 조례 기준)"
+      },
+      "caution": "법은 할인 비율의 수치를 정하지 않고 지자체 조례에 위임한다. 전국 공통 할인율로 쓰지 말고, 지자체 조례·발행 공고 수치를 그 지자체 이름과 함께 쓴다.",
+      "cautionSource": "법률 제15조 제2항 원문 (https://www.law.go.kr/법령/지역사랑상품권이용활성화에관한법률)"
+    },
+    {
+      "id": "local-currency-gwangjin-2026-seollal-discount",
+      "claim": "서울 광진구는 2026년 설맞이 광진사랑상품권을 2026년 2월 5일(목) 오전 10시 발행했으며, 발행규모 100억 원, 할인율 5%, 구매한도 1인당 50만 원(보유한도 150만 원), 유효기간 구매일로부터 5년으로 공고했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "광진구청 지역경제과 「2026년 설맞이 광진사랑상품권 & 2월 광진땡겨요(배달전용) 상품권 발행 안내」 (등록일 2026-02-11)",
+      "source_url": "https://www.gwangjin.go.kr/portal/bbs/B0000001/view.do?nttId=6564587&menuNo=200190",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서울 광진구",
+        "category": "지역사랑상품권 할인 구매",
+        "line": "광진사랑상품권(일반형)",
+        "years": "2026년 2월 설 발행분",
+        "region": "서울 광진구"
+      },
+      "caution": "2026년 2월 설 발행 회차의 공고 수치다. 다음 회차나 다른 지자체에 그대로 적용하지 말 것. 구입방법은 서울페이+ 앱 설치 후 구매로 공고됨.",
+      "cautionSource": "광진구청 공고 (https://www.gwangjin.go.kr/portal/bbs/B0000001/view.do?nttId=6564587&menuNo=200190)"
+    },
+    {
+      "id": "local-currency-gwangjin-2026-feb-delivery-only-discount",
+      "claim": "서울 광진구는 2026년 2월 3일(화) 오전 10시 발행한 광진땡겨요(배달전용) 상품권에 대해 발행규모 6억 원, 할인율 15%, 구매한도 월 20만 원(보유한도 100만 원), 유효기간 구매일로부터 1년으로 공고했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "광진구청 지역경제과 「2026년 설맞이 광진사랑상품권 & 2월 광진땡겨요(배달전용) 상품권 발행 안내」 (등록일 2026-02-11)",
+      "source_url": "https://www.gwangjin.go.kr/portal/bbs/B0000001/view.do?nttId=6564587&menuNo=200190",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서울 광진구",
+        "category": "지역사랑상품권 할인 구매",
+        "line": "광진땡겨요(배달전용) 상품권",
+        "years": "2026년 2월 발행분",
+        "region": "서울 광진구"
+      },
+      "caution": "배달전용 상품권이라 일반 광진사랑상품권(할인율 5%, 한도 50만 원)과 다른 상품이다. 두 상품의 할인율·한도를 섞어 쓰지 말 것.",
+      "cautionSource": "광진구청 공고 (https://www.gwangjin.go.kr/portal/bbs/B0000001/view.do?nttId=6564587&menuNo=200190)"
+    },
+    {
+      "id": "local-currency-seoul-2026-seollal-district-discount",
+      "claim": "서울시는 2026년 설맞이 자치구 서울사랑상품권을 2026년 2월 4일(수)~6일(금) 발행한다고 2026년 1월 30일 발표했으며, 발행규모 2,823억 원, 할인율 5%(자치구별 2~5% 추가 페이백 가능), 구매한도 월 50만 원(보유한도 150만 원), 유효기간 구매일로부터 5년으로 안내했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울특별시 보도자료 「2026년 설맞이 자치구 서울사랑상품권 할인 판매 안내」 (2026-01-30, 발행권자 서울 25개 자치구청장)",
+      "source_url": "https://news.seoul.go.kr/economy/archives/570768",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서울특별시·서울 25개 자치구",
+        "category": "지역사랑상품권 할인 구매",
+        "line": "서울사랑상품권(자치구 발행)",
+        "years": "2026년 2월 설 발행분",
+        "region": "서울 25개 자치구"
+      },
+      "caution": "5%는 기본 할인율이고 추가 페이백(2~5%)은 자치구별로 다르다. 페이백은 1~2월 결제분부터 적용되며 7개 자치구가 시행 예정으로 안내됐다. 구매한도 50만 원은 서울 전체 안내이고 자치구별 조건은 다를 수 있다.",
+      "cautionSource": "서울시 보도자료 (https://news.seoul.go.kr/economy/archives/570768) — 페이백 적용 기간·7개 자치구·2~5% 수치"
+    }
+  ]
+}

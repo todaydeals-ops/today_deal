@@ -132,7 +132,9 @@ for (const file of files) {
       const pth = new URL(u).pathname;
       // 첫 화면은 근거가 아니다. 단 영상 속 그 제품의 "브랜드 공식 사이트"는 제품 정체(라인업) 확인 근거라 허용한다.
       const brandHome = e.type === "video-pick" && s.kind === "공식";
-      need(yt || brandHome || (pth && pth !== "/"), `사이트 첫 화면은 출처가 아님: ${s.url}`);
+      // 경로가 "/" 여도 문서를 지정하는 식별 쿼리(menuno=172 등)가 붙은 주소는 개별 안내 문서다. 식별 쿼리 없는 메인 주소는 계속 막는다.
+      const docQuery = /[?&][a-z_]*(menu|id|idx|seq|no|ntt|cntnts|bbs|key)[a-z_]*=[^&]+/i.test(new URL(u).search);
+      need(yt || brandHome || docQuery || (pth && pth !== "/"), `사이트 첫 화면은 출처가 아님: ${s.url}`);
       need(!/^\/journals\/[^/]+$/.test(pth), `학술지 첫 화면은 출처가 아님(논문 링크 필요): ${s.url}`);
     }
     catch { bad.push(`URL 형식 오류: ${s.url}`); }

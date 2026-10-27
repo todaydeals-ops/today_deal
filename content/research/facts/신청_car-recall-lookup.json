@@ -1,0 +1,173 @@
+{
+  "topic": "자동차 리콜 조회(자동차리콜센터 리콜대상확인·조치여부) — 운영 기관·조회 방법·조회 제약·법적 근거(자동차관리법 제31조)",
+  "brand": "한국교통안전공단·국토교통부",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "car-recall-lookup-status",
+      "claim": "자동차리콜센터(www.car.go.kr)의 '리콜대상확인' 서비스는 2026년 10월 27일 조회 시점에 운영 중이며, 근거 법인 자동차관리법 제31조(제작 결함의 시정 등)는 '[시행 2026. 10. 2.]' 표시본이 현행이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차리콜센터 리콜대상확인 페이지 및 국가법령정보센터 자동차관리법 제31조 원문",
+      "source_url": "https://www.car.go.kr/ri/recall/list.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국교통안전공단·국토교통부",
+        "category": "자동차 리콜 조회",
+        "line": "리콜대상확인·리콜조치여부",
+        "years": "2026-10-27 조회 시점 / 법 2026.10.2 시행 표시",
+        "region": "KR"
+      },
+      "caution": "시행일 표시는 법 제31조 본문 기준이다. 서비스 화면의 세부 메뉴 이름은 바뀔 수 있으니 글에는 '자동차리콜센터 리콜대상확인 메뉴'로 쓸 것.",
+      "cautionSource": "자동차리콜센터 리콜대상확인 페이지 조회 시점 2026-10-27 (https://www.car.go.kr/ri/recall/list.do) · 법 제31조 시행 표시 2026.10.2"
+    },
+    {
+      "id": "car-recall-lookup-operator",
+      "claim": "자동차리콜센터 페이지 하단 주소 표기는 '한국교통안전공단 자동차안전연구원(경기도 화성시 송산면)'이며, 대표 전화는 080-357-2500이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차리콜센터 리콜대상확인 페이지 하단 표기",
+      "source_url": "https://www.car.go.kr/ri/recall/list.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국교통안전공단",
+        "category": "자동차 리콜 조회 운영 기관",
+        "line": "자동차리콜센터 운영 표기",
+        "years": "2026-10-27 조회 시점",
+        "region": "KR"
+      },
+      "caution": "운영 주체를 국토교통부로만 쓰지 말 것. 제도(리콜 명령·보고)는 국토교통부, 리콜 조회 화면 운영 표기는 한국교통안전공단 자동차안전연구원이다.",
+      "cautionSource": "자동차리콜센터 페이지 하단 표기(같은 URL)"
+    },
+    {
+      "id": "car-recall-lookup-input-plate-or-vin",
+      "claim": "리콜대상확인 서비스는 자동차 등록번호 또는 차대번호를 입력해 소유 자동차의 리콜 대상 여부와 조치 여부를 확인하는 방식이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차리콜센터 리콜대상확인 페이지",
+      "source_url": "https://www.car.go.kr/ri/recall/list.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국교통안전공단",
+        "category": "자동차 리콜 조회 방법",
+        "line": "리콜대상확인 — 입력값",
+        "years": "2026-10-27 조회 시점",
+        "region": "KR"
+      },
+      "caution": "차대번호를 입력한다는 점을 먼저 알려 줄 것. 등록번호만 알고 차대번호를 모르는 독자에게는 차대번호 확인 방법을 따로 안내해야 한다(이번 조사 범위 밖).",
+      "cautionSource": ""
+    },
+    {
+      "id": "car-recall-lookup-hours-weekday",
+      "claim": "리콜대상확인 서비스는 업무시간(평일 09:00~18:00) 외에는 자동차 정보 조회가 불가해 서비스가 제한될 수 있다고 페이지가 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차리콜센터 리콜대상확인 페이지 안내 문구",
+      "source_url": "https://www.car.go.kr/ri/recall/list.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국교통안전공단",
+        "category": "자동차 리콜 조회 제약",
+        "line": "조회 가능 시간",
+        "years": "2026-10-27 조회 시점",
+        "region": "KR"
+      },
+      "caution": "주말·평일 야간에는 조회가 안 될 수 있다. 급하면 평일 업무시간에 다시 조회하도록 안내할 것.",
+      "cautionSource": "자동차리콜센터 리콜대상확인 페이지의 '업무시간(평일, 09:00~18:00)' 문구(같은 URL)"
+    },
+    {
+      "id": "car-recall-lookup-action-status-lag-quarter",
+      "claim": "리콜조치여부는 자동차관리법에 따라 제작사가 분기별로 국토교통부에 보고한 리콜 진행 내역을 바탕으로 제공되므로, 이전 분기까지의 조치 여부만 확인할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차리콜센터 리콜대상확인 페이지 안내 문구",
+      "source_url": "https://www.car.go.kr/ri/recall/list.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국교통안전공단·국토교통부",
+        "category": "리콜 조치 여부 반영 시점",
+        "line": "리콜조치여부 — 분기 보고 기준",
+        "years": "2026-10-27 조회 시점",
+        "region": "KR"
+      },
+      "caution": "방금 완료된 수리가 조회에 안 나올 수 있다. 조회 결과가 '미조치'라도 수리 기록이 있으면 대리점에 확인하도록 안내할 것. 분기 주기(3개월) 표현은 페이지의 '분기별'에서만 가져왔다.",
+      "cautionSource": "자동차리콜센터 리콜대상확인 페이지 '분기별로 제작사가 국토교통부에 보고' 문구(같은 URL)"
+    },
+    {
+      "id": "car-recall-lookup-excludes-me",
+      "claim": "자동차리콜센터는 환경부가 관리하는 리콜에 대해서는 리콜조치여부 서비스를 제공하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "자동차리콜센터 리콜대상확인 페이지 안내 문구",
+      "source_url": "https://www.car.go.kr/ri/recall/list.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국교통안전공단",
+        "category": "자동차 리콜 조회 범위",
+        "line": "환경부 리콜 제외",
+        "years": "2026-10-27 조회 시점",
+        "region": "KR"
+      },
+      "caution": "환경부 소관 리콜은 이 사이트의 조치여부 서비스 대상이 아니다. 글에서는 국토교통부 자동차 결함 리콜 범위로 한정해 안내하고, 환경부 리콜은 별도 확인처를 안내할 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "car-recall-lookup-law-31-disclosure",
+      "claim": "자동차제작자등은 제작한 자동차가 자동차안전기준에 적합하지 않거나 안전에 지장을 주는 결함이 있으면 그 사실을 안 날부터 자동차 소유자가 알 수 있도록 우편발송·휴대전화 문자메시지 등 국토교통부령으로 정하는 방식으로 지체 없이 공개하고 시정조치를 해야 한다(자동차관리법 제31조 제1항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 자동차관리법 제31조 제1항 원문",
+      "source_url": "https://www.law.go.kr/법령/자동차관리법/제31조",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "국토교통부",
+        "category": "자동차 제작결함 시정(리콜)",
+        "line": "결함 사실 공개·시정조치 의무",
+        "years": "2026.10.2 시행 표시본",
+        "region": "KR"
+      },
+      "caution": "이 조문은 리콜 '의무'를 정한다. 리콜 대상이면 자동 수리되는 것이 아니라 제작사가 시정조치 계획을 공개한다는 뜻이다. 수리 일정·비용은 조문에 없으니 제작사 안내를 따르도록 쓸 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "car-recall-lookup-molit-press-2024",
+      "claim": "국토교통부 보도자료(2024년 10월 10일, 현대·기아 등 자발적 시정조치 발표)는 소유자가 자동차리콜센터(www.car.go.kr)에서 리콜 대상 여부를 확인할 수 있다고 안내했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국토교통부 보도자료 '현대 기아 등 자발적 시정조치' (자동차정책과)",
+      "source_url": "https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?id=95090251",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "국토교통부",
+        "category": "자동차 리콜 안내 채널",
+        "line": "자발적 시정조치 보도자료의 조회 안내",
+        "years": "2024.10.10 보도자료",
+        "region": "KR"
+      },
+      "caution": "보도자료의 리콜 대수·차종 수치는 그 발표 시점 기준이다. 글에 쓸 때는 날짜를 함께 적고 현재 대수로 바꿔 쓰지 말 것.",
+      "cautionSource": "국토교통부 보도자료 본문(같은 URL)"
+    },
+    {
+      "id": "car-recall-lookup-app-or-signup-unverified",
+      "claim": "자동차리콜센터 리콜 조회에 회원가입이 필요 없다는 설명과, 민간 차량관리 앱에서 리콜 정보를 확인할 수 있다는 설명은 검색 요약에만 나오고, 이번 조사에서 공식 페이지 본문으로는 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "검색 결과 요약(공식 본문 미열람). 정책뉴스 newsId=148888319 제목만 확인",
+      "source_url": "https://www.car.go.kr/ri/recall/list.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국교통안전공단·국토교통부",
+        "category": "리콜 조회 접근성",
+        "line": "회원가입·앱 제공",
+        "years": "2026-10-27 기준 미확인",
+        "region": "KR"
+      },
+      "caution": "'회원가입 없이 된다', '앱에서 된다'는 문장은 공식 확인 전까지 쓰지 말 것. 조회 경로는 car.go.kr 리콜대상확인 메뉴만 안내한다.",
+      "cautionSource": ""
+    }
+  ]
+}

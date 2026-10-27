@@ -1,0 +1,107 @@
+{
+  "topic": "장제비 지원 (제도별 존재 여부·대상·금액)",
+  "brand": "보건복지부·국민건강보험공단·국민연금공단",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "funeral-benefit-not-single-system",
+      "claim": "'장제비'라는 단일 제도는 확인되지 않는다. 기초생활보장 장제급여(국민기초생활보장법 제14조)는 현행 조문으로 확인됐고, 건강보험법 제50조에는 장제비가 부가급여로 적혀 있으나 실제 지급 여부는 확인하지 못했으며, 국민연금 장제 관련 조항은 확인하지 못했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 국민기초생활보장법 제14조 · 국민건강보험법 제50조",
+      "source_url": "https://www.law.go.kr/법령/국민기초생활보장법/제14조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "법제처", "category": "장제 지원", "line": "제도별 구분", "years": "조문 표기 시행일 기준(국민기초생활보장법 2025.10.01, 국민건강보험법 2026.10.08)", "region": "KR" },
+      "caution": "글에서 '장제비 신청'을 한 제도로 묶어 쓰면 독자가 다른 제도의 신청처에 간다. 제도(기초생활보장 장제급여 / 건강보험 부가급여 / 국민연금)를 나눠서 쓸 것.",
+      "cautionSource": "국가법령정보센터 국민기초생활보장법 제14조 · 국민건강보험법 제50조 본문 대조"
+    },
+    {
+      "id": "funeral-benefit-livelihood-eligibility",
+      "claim": "장제급여는 생계급여·의료급여·주거급여 중 하나 이상을 받는 수급자가 사망했을 때 장제 조치(검안·운반·화장 또는 매장 등)에 드는 비용을 지급하는 제도이며, 교육급여만 받은 수급자는 대상에서 빠진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 국민기초생활보장법 제14조 제1항 · 수원시 맞춤형 기초생활보장제도 안내",
+      "source_url": "https://www.law.go.kr/법령/국민기초생활보장법/제14조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "장제 지원", "line": "기초생활보장 장제급여", "years": "조문 표기 2025.10.01 시행", "region": "KR" },
+      "caution": "수급자 본인이 아니라 장제를 실제로 실시한 사람에게 지급된다. 신청 주체는 장례를 치른 사람이다.",
+      "cautionSource": "국가법령정보센터 국민기초생활보장법 제14조 제2항"
+    },
+    {
+      "id": "funeral-benefit-livelihood-payee-rule",
+      "claim": "장제급여는 보건복지부령에 따라 실제로 장제를 실시하는 사람에게 장제 비용을 지급하며, 비용 지급이 적당하지 않다고 인정되면 물품으로 지급할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 국민기초생활보장법 제14조 제2항",
+      "source_url": "https://www.law.go.kr/법령/국민기초생활보장법/제14조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "장제 지원", "line": "기초생활보장 장제급여", "years": "조문 표기 2025.10.01 시행", "region": "KR" },
+      "caution": "지급 방법·신청 서식은 보건복지부령 소관이라 이번 조사에서 확인하지 못했다.",
+      "cautionSource": "국가법령정보센터 국민기초생활보장법 제14조 제2항 (시행규칙 미확인)"
+    },
+    {
+      "id": "funeral-benefit-livelihood-amount-unverified",
+      "claim": "2026년 기준 장제급여 1구당 금액은 공식 중앙 자료에서 확인하지 못했다. 수원시 안내 페이지는 1구당 80만 원(800,000원)으로 표기하지만 연도 표기가 없다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "수원시 맞춤형 기초생활보장제도 안내 (지자체 페이지, 연도 미표기)",
+      "source_url": "https://www.suwon.go.kr/sw-www/deptHome/dep_welfare/welfare06/welfare06-01.jsp",
+      "checked": "2026-10-27",
+      "scope": { "brand": "수원시", "category": "장제 지원", "line": "기초생활보장 장제급여 금액", "years": "미표기", "region": "경기 수원시" },
+      "caution": "지자체 금액을 전국 금액으로 쓰지 말 것. 2026 중앙 금액을 복지로에서 확인하기 전까지는 글에 금액을 적지 말 것.",
+      "cautionSource": "수원시 페이지는 연도 미표기 지자체 안내라서 중앙 기준 아님"
+    },
+    {
+      "id": "funeral-benefit-bokjiro-online-2018",
+      "claim": "복지로는 2018년 12월 27일 등록한 공지에서 장제급여 온라인신청 오픈을 알렸다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 공지사항 '장제급여 온라인신청 오픈'",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/cms/pc/customer/notice/1209868_1141.html",
+      "checked": "2026-10-27",
+      "scope": { "brand": "복지로", "category": "장제 지원", "line": "장제급여 온라인 신청", "years": "2018 공지", "region": "KR" },
+      "caution": "2018년 공지다. 현재 온라인 신청이 그대로 가능한지는 확인하지 못했다. 현행 신청 경로를 쓸 때는 복지로에서 다시 열어 볼 것.",
+      "cautionSource": "복지로 공지 등록일 2018-12-27 (본문은 렌더링되지 않음, 제목·날짜만 확인)"
+    },
+    {
+      "id": "funeral-benefit-national-pension-unverified",
+      "claim": "국민연금의 장제부조(장제비) 현행 여부는 확인하지 못했다. 국민연금법 제72조는 유족연금 수급권자 조문이며 장제 지급 규정은 보이지 않았다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "국가법령정보센터 국민연금법 제72조",
+      "source_url": "https://www.law.go.kr/법령/국민연금법/제72조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민연금공단", "category": "장제 지원", "line": "국민연금 장제 관련 조항", "years": "시행 2026.10.20 표기", "region": "KR" },
+      "caution": "국민연금의 장제 지원을 현행 제도로 쓰지 말 것. 장제 관련 조항이 다른 조문에 있는지는 이번 조사에서 확인하지 못했다.",
+      "cautionSource": "국민연금법 제72조 본문 확인, 나머지 조문 미확인"
+    },
+    {
+      "id": "funeral-benefit-health-insurance-clause",
+      "claim": "국민건강보험법 제50조는 공단이 요양급여 외에 대통령령으로 정하는 바에 따라 임신·출산 진료비, 장제비, 상병수당 등을 부가급여로 실시할 수 있다고 규정한다(시행 2026.10.08 표기).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 국민건강보험법 제50조",
+      "source_url": "https://www.law.go.kr/법령/국민건강보험법/제50조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민건강보험공단", "category": "장제 지원", "line": "부가급여(장제비)", "years": "시행 2026.10.08 표기", "region": "KR" },
+      "caution": "'실시할 수 있다'는 임의 규정이다. 실제 지급 여부는 대통령령을 봐야 하며, 이번 조사에서 대통령령은 열지 못했다.",
+      "cautionSource": "국민건강보험법 제50조 본문, 시행령 미확인"
+    },
+    {
+      "id": "funeral-benefit-health-insurance-status-unverified",
+      "claim": "건강보험 장제비가 2026년 현재 실제로 지급되는지(또는 폐지됐는지)는 확인하지 못했다. 조사 힌트의 '건강보험 장제비 폐지'는 법 조문과 어긋나 사실로 확정할 수 없다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "국가법령정보센터 국민건강보험법 제50조 (시행령 미확인)",
+      "source_url": "https://www.law.go.kr/법령/국민건강보험법/제50조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민건강보험공단", "category": "장제 지원", "line": "건강보험 장제비 지급 여부", "years": "2026", "region": "KR" },
+      "caution": "폐지됐다고 단정하지 말고, 현재 지급 여부를 건강보험공단에서 확인하라고 쓸 것. 지급 여부를 모르면 건강보험 장제비를 신청처로 안내하지 말 것.",
+      "cautionSource": "국민건강보험법 제50조 본문과 힌트 대조"
+    }
+  ]
+}
