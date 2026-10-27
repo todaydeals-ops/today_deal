@@ -464,6 +464,34 @@ async function openverse(q, page, n = 2) {
   return spread(j.results || [], n, (x) => ({ url: x.thumbnail || x.url, credit: x.creator || "Unknown", source: `Openverse · ${x.license}`, link: x.foreign_landing_url }));
 }
 
+const AI_CREDIT = "오늘의딜 AI 제작"; // scripts/magazine-ai-images.mjs 가 붙이는 대표 이미지의 credit
+
+// Openverse 썸네일은 api.openverse.org 에서 직접 불러오면 느리고 간헐적으로 깨진다(2026-10-27 엑박의 원인).
+// 그래서 수집하는 즉시 우리 저장소(site-images/stock/<id>.<ext>)로 옮기고 그 주소를 RAIL 에 적는다(작가·출처·링크 표기는 그대로).
+// 못 옮기면(원본 삭제 424·서버 오류 500) null — 그 이미지는 쓰지 않는다. 바이트는 가공하지 않는다.
+async function mirrorOpenverse(im) {
+  if (!/openverse[.]org/.test(im.url || "")) return im;
+  const id = (im.url.match(/[/]images[/]([0-9a-f-]{36})[/]/) || [])[1];
+  if (!id) return null;
+  const EXT = { "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp", "image/gif": "gif" };
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      const r = await fetch(im.url, { headers: UA, redirect: "follow", signal: AbortSignal.timeout(90000) });
+      const ct = (r.headers.get("content-type") || "").split(";")[0].trim();
+      if (!r.ok || !EXT[ct]) throw new Error(`status ${r.status} ${ct}`);
+      const buf = Buffer.from(await r.arrayBuffer());
+      if (buf.length < 2000) throw new Error("too small");
+      const key = `stock/${id}.${EXT[ct]}`;
+      const up = await fetch(`${S}/storage/v1/object/site-images/${key}`, { method: "POST", headers: { apikey: K, Authorization: `Bearer ${K}`, "Content-Type": ct, "x-upsert": "true", "cache-control": "max-age=31536000" }, body: buf });
+      if (!up.ok) throw new Error(`upload ${up.status}`);
+      return { ...im, url: `${S}/storage/v1/object/public/site-images/${key}` };
+    } catch (e) {
+      if (attempt === 2) { console.log(`      Openverse 사본 실패(${String(e.message).slice(0, 60)}) → 이 이미지는 쓰지 않는다`); return null; }
+      await new Promise((r) => setTimeout(r, 3000));
+    }
+  }
+  return null;
+}
 function railGet(bodyHtml) {
   const m = (bodyHtml || "").match(/^\s*<!--RAIL:([\s\S]*?)-->\s*/);
   if (!m) return { rail: {}, rest: bodyHtml || "" };
@@ -510,7 +538,10 @@ for (const row of rows) {
   if (LIMIT && n >= LIMIT) break;
   if (ONLY.length && !ONLY.includes(row.slug)) continue;
   const { rail } = railGet(row.body_html);
-  if ((rail.images?.length >= 2 || (!FORCE && rail.images?.length)) && !FORCE) { skip++; continue; }
+  // 코덱스로 만든 대표 이미지(scripts/magazine-ai-images.mjs)는 세지 않는다 — AI 가 먼저 붙은 글도 본문용 스톡을 채워야 한다
+  const aiHero = (rail.images || []).find((x) => x?.credit === AI_CREDIT);
+  const stockOnly = (rail.images || []).filter((x) => x?.credit !== AI_CREDIT);
+  if ((stockOnly.length >= 2 || (!FORCE && stockOnly.length)) && !FORCE) { skip++; continue; }
   n++;
   const kw = keyword(row.slug);
   // 자기 기존 이미지는 used에서 빼둔다. 그래야 다른 글이 쓴 것만 회피 대상이 되고,
@@ -528,12 +559,14 @@ for (const row of rows) {
       if (!imgs.some((x) => x.url === im.url)) imgs.push(im);
     }
   }
+  imgs = (await Promise.all(imgs.map(mirrorOpenverse))).filter(Boolean); // Openverse 는 수집 즉시 우리 저장소로 옮긴다(못 옮기면 쓰지 않는다)
   if (!imgs.length) { console.log(`  ✖ [${row.slug}] "${kw}" 이미지 없음(브랜드 내 중복 제외 후)`); fail++; continue; }
   { const set = usedByField.get(row.field) || usedByField.set(row.field, new Set()).get(row.field);
     for (const im of imgs) set.add(im.url); } // 다음 글이 같은 걸 안 뽑도록 즉시 등록
   console.log(`  ✓ [${row.slug}] "${kw}" → ${imgs.length}장 (${imgs.map((x) => x.source.split(" ")[0]).join(",")})`);
   if (!DRY) {
-    const body_html = railSet(row.body_html, imgs);
+    // AI 대표 이미지가 이미 있으면 맨 앞에 두고, 스톡 첫 장은 그 자리를 내준다(manifest 방식의 [AI, 스톡1] 과 같은 구성)
+    const body_html = railSet(row.body_html, aiHero ? [aiHero, ...(imgs.length >= 2 ? imgs.slice(1) : imgs)] : imgs);
     const up = await rest(`magazine?slug=eq.${encodeURIComponent(row.slug)}`, { method: "PATCH", headers: { Prefer: "return=minimal" }, body: JSON.stringify({ body_html }) });
     if (up.ok) done++; else { console.log(`      PATCH 실패 ${up.status}`); fail++; }
   } else done++;
