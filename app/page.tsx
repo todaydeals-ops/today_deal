@@ -13,6 +13,7 @@ import { NAV } from "@/lib/nav";
 import { upcomingDeadlines } from "@/lib/home-schedule";
 import { HOME_CHIPS, PILLARS, AS_ITEMS, AS_IMG_ALT, CORNER_TABS, REPORT_COVER_SLUGS } from "@/lib/home-content";
 import styles from "./home.module.css";
+import { thumbUrl } from "@/lib/magazine/thumb";
 
 // ★2026-10-21 개편(사장님 지시): 오늘의딜은 정보성 콘텐츠(매거진·생활백과) 채널이다.
 // 타임딜·추천딜·핫딜글은 폐지했고(라우트는 proxy.ts 가 410/301), 홈은 더 이상 딜을 읽지 않는다.
@@ -184,7 +185,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ c
             <Link href={`/magazine/${featured.slug}`} className={styles.featImg} tabIndex={-1} aria-hidden="true">
               {featured.image?.url && (
                 // eslint-disable-next-line @next/next/no-img-element
-                <img src={featured.image.url} alt="" loading="lazy" decoding="async" />
+                <img src={thumbUrl(featured.image.url, 760)} alt="" loading="lazy" decoding="async" />
               )}
             </Link>
             <div className={styles.featBox}>
@@ -233,7 +234,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ c
                   <span className={styles.guideThumb}>
                     {a.image?.url && (
                       // eslint-disable-next-line @next/next/no-img-element
-                      <img src={a.image.url} alt="" width={96} height={72} loading="lazy" decoding="async" />
+                      <img src={thumbUrl(a.image.url, 240)} alt="" width={96} height={72} loading="lazy" decoding="async" />
                     )}
                   </span>
                 </Link>

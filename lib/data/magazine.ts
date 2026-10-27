@@ -1,6 +1,7 @@
 // 매거진 데이터 접근. magazine 테이블 없으면 빈 배열로 폴백.
 import { getSupabaseAdmin } from "@/lib/supabase/server";
 import { cacheNonEmpty } from "@/lib/data/cache";
+import imgManifest from "@/content/magazine-images.json"; // ★대표 이미지(코덱스 제작) — slug→URL. 있으면 images[0] 을 교체한다
 
 export interface MagazineArticle {
   id: string;
@@ -74,6 +75,9 @@ function map(r: Row): MagazineArticle {
     }
     bodyHtml = bodyHtml.slice(m[0].length);
   }
+  // 코덱스로 만든 대표 이미지는 manifest 에 고정돼 있다. 본문 삽입 이미지(images[1~])는 RAIL 의 스톡을 그대로 둔다.
+  const aiHero = (imgManifest as Record<string, string>)[r.slug];
+  if (aiHero) images = [{ url: aiHero, credit: "오늘의딜 AI 제작" }, ...(images ?? []).slice(1)];
   return {
     id: r.id,
     slug: r.slug,

@@ -21,6 +21,7 @@ import ArticleFeedback from "@/components/article/ArticleFeedback";
 import MobileArticleBar from "@/components/article/MobileArticleBar";
 import WikiBacklinksBox from "@/components/article/WikiBacklinksBox";
 import styles from "./article.module.css";
+import { thumbUrl } from "@/lib/magazine/thumb";
 
 export const revalidate = 3600; // 1시간 캐시 — 매거진 아티클은 실시간 불필요
 
@@ -113,7 +114,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   const relatedFull = await Promise.all(relatedShown.map((r) => fetchMagazineBySlug(r.slug)));
   const thumbOf = (i: number) => {
     const im = relatedFull[i]?.image;
-    return im && !/^openverse/i.test(im.source ?? "") ? im.url : undefined;
+    return im && !/^openverse/i.test(im.source ?? "") ? thumbUrl(im.url, 520) : undefined;
   };
 
   const ld = {
@@ -169,6 +170,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   const hasSources = !!a.sources && a.sources.length > 0;
   const heroImg = a.image;
   const creditOf = (im: { credit?: string; source?: string }) => [im.credit, im.source].filter(Boolean).join(" · ");
+  const creditLabel = (im: { credit?: string; source?: string }) => (/AI 제작/.test(im.credit ?? "") ? `설명용 이미지 · ${creditOf(im)}` : `사진 ${creditOf(im)}`);
 
   // 목차: 먼저 결론(00) · 본문 소제목(01…) · 나머지 블록(·)
   const toc: TocItem[] = [
@@ -351,16 +353,16 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
             <div className={`rn-img ${styles.hero}`}>
               {heroImg?.url && (
                 // eslint-disable-next-line @next/next/no-img-element
-                <img src={heroImg.url} alt={a.title} loading="lazy" decoding="async" />
+                <img src={heroImg.url} alt={a.title} loading="eager" fetchPriority="high" decoding="async" />
               )}
             </div>
             {/* 스톡 사진 라이선스 표기(작가·출처·원본 링크) — 반드시 노출 */}
             {heroImg?.url && (creditOf(heroImg) || heroImg.link) && (
               <div className={styles.heroCredit}>
                 {heroImg.link ? (
-                  <a href={heroImg.link} target="_blank" rel="noopener noreferrer">사진 {creditOf(heroImg)}</a>
+                  <a href={heroImg.link} target="_blank" rel="noopener noreferrer">{creditLabel(heroImg)}</a>
                 ) : (
-                  <>사진 {creditOf(heroImg)}</>
+                  <>{creditLabel(heroImg)}</>
                 )}
               </div>
             )}

@@ -8,6 +8,7 @@ import { B4AS_CATEGORIES, b4asCategoryByKey, b4asCategoryOf } from "@/lib/magazi
 import { B4AS_SYMPTOMS, b4asFacetsOf, b4asMatchesQuery, b4asProductChips, b4asQueryTerms, type B4asSymptom } from "@/lib/magazine/b4asFacets";
 import { b4asHref } from "@/lib/magazine/subdomain";
 import s from "./as-list.module.css";
+import { thumbUrl } from "@/lib/magazine/thumb";
 
 // AS 셀프체크 목록 - 2026-10-27 리뉴얼(시안: 오늘의딜 AS 목록, 모바일 M4).
 // AS는 주제가 아니라 상황이라 field가 아니라 corner="repair"로 격리한다(분류는 lib/magazine/b4asCategories.ts).
@@ -78,15 +79,7 @@ function listHref(n: Nav): string {
 // 본문 이미지(Pexels 940x650)를 카드(260x160, 모바일 88x88)에 맞는 크기로 줄여 쓴다(83KB → 34KB).
 // Pexels 주소가 아니거나 w/h 파라미터가 없으면 원본 그대로.
 function thumbSrc(url: string): string {
-  try {
-    const u = new URL(url);
-    if (u.hostname !== "images.pexels.com" || !u.searchParams.has("w") || !u.searchParams.has("h")) return url;
-    u.searchParams.set("w", "520");
-    u.searchParams.set("h", "340");
-    return u.toString();
-  } catch {
-    return url;
-  }
+  return thumbUrl(url, 520);
 }
 
 const md = (iso: string) => iso.slice(5, 10).replace("-", ".");

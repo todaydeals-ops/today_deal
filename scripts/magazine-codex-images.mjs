@@ -121,7 +121,9 @@ if (mode === "batch") {
   for (const f of fs.readdirSync(RAW).filter((x) => x.endsWith(".png"))) {
     const slug = f.replace(/\.png$/, "");
     if (fs.existsSync(outOf(slug))) continue;
-    await sharp(path.join(RAW, f)).resize(1200, 750, { fit: "cover", position: "centre" }).jpeg({ quality: 78, mozjpeg: true }).toFile(outOf(slug));
+    await sharp(path.join(RAW, f)).resize(1200, 750, { fit: "cover", position: "centre" }).jpeg({ quality: 72, mozjpeg: true }).toFile(outOf(slug));
+    // 카드·썸네일용 — 큰 원본을 작은 칸에 그대로 쓰면 로딩이 느리다(화면 폭의 2배 정도면 충분)
+    await sharp(path.join(RAW, f)).resize(520, 325, { fit: "cover", position: "centre" }).jpeg({ quality: 70, mozjpeg: true }).toFile(outOf(slug).replace(/.jpg$/, "-s.jpg"));
     n++;
   }
   console.log(`변환 ${n}장 → ${OUT}`);
@@ -138,10 +140,15 @@ if (mode === "batch") {
     console.log(`버킷 ${BUCKET} 생성(public)`);
   }
   const manifest = readJson(MANIFEST, {});
-  const files = fs.readdirSync(OUT).filter((x) => x.endsWith(".jpg"));
+  const files = fs.readdirSync(OUT).filter((x) => x.endsWith(".jpg") && !x.endsWith("-s.jpg"));
   let up = 0, skip = 0, fail = 0;
   await pool(files.map((f) => async () => {
     const slug = f.replace(/\.jpg$/, "");
+    const small = path.join(OUT, `${slug}-s.jpg`);
+    if (fs.existsSync(small)) { // 작은 썸네일은 파생물 — 이미 고정된 슬러그라도 없으면 올린다
+      const { error: e2 } = await sb.storage.from(BUCKET).upload(`magazine/${slug}-s.jpg`, fs.readFileSync(small), { contentType: "image/jpeg", cacheControl: "31536000", upsert: true });
+      if (e2) { fail++; console.error("✗(s)", slug, e2.message); return; }
+    }
     if (manifest[slug]) { skip++; return; } // 발행 이미지 고정
     const key = `magazine/${slug}.jpg`;
     const { error } = await sb.storage.from(BUCKET).upload(key, fs.readFileSync(path.join(OUT, f)), { contentType: "image/jpeg", cacheControl: "31536000", upsert: false });
