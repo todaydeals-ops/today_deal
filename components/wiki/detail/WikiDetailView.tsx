@@ -4,7 +4,7 @@
 import Link from "next/link";
 import { WIKI_GROUPS, WIKI_TYPE_LABEL, type Block, type WikiEntry } from "@/lib/wiki/types";
 import { scheduleOf, whenText } from "@/lib/wiki/status";
-import { imagesOf, IMAGE_CAPTION } from "@/lib/wiki/images";
+import { imagesOf } from "@/lib/wiki/images";
 import s from "@/app/wiki/[slug]/wiki-detail.module.css";
 import H from "./H";
 import InfoCard from "./InfoCard";
@@ -145,7 +145,6 @@ export default function WikiDetailView({
             <figure className={s.fig}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img className={s.figImg} src={im.hero} alt={im.alt} width={960} height={540} loading="eager" fetchPriority="high" decoding="async" />
-              <figcaption>{IMAGE_CAPTION}</figcaption>
             </figure>
           )}
 
@@ -229,7 +228,6 @@ export default function WikiDetailView({
                     <figure className={`${s.fig} ${s.figBody}`}>
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img className={s.figImg} src={im.body} alt={`${im.alt}(본문)`} width={960} height={540} loading="lazy" decoding="async" />
-                      <figcaption>{IMAGE_CAPTION}</figcaption>
                     </figure>
                   )}
                 </div>

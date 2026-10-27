@@ -17,6 +17,3 @@ const M = manifest as Record<string, WikiImages>;
 export function imagesOf(slug: string): WikiImages | undefined {
   return M[slug];
 }
-
-/** AI 로 만든 설명용 이미지임을 밝히는 캡션(독자가 실제 사진으로 오해하지 않게) */
-export const IMAGE_CAPTION = "설명용 이미지 · 오늘의딜이 AI로 제작";
