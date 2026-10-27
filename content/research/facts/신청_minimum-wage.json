@@ -1,0 +1,98 @@
+{
+  "topic": "최저임금 — 2026년 적용 시급과 2027년 적용 시급의 결정·고시 여부",
+  "brand": "고용노동부",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "minimum-wage-2026-rate",
+      "claim": "2026년 적용 최저임금은 시간급 10,320원으로 고시됐다. 2025년 적용 금액보다 290원(2.9%) 인상된 금액이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "고용노동부 보도자료 「2026년 적용 최저임금 시간급 10,320원」 (2025.8.5 보도)",
+      "source_url": "https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=18144",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "고용노동부",
+        "category": "최저임금",
+        "line": "시간급 최저임금",
+        "years": "2026년 적용",
+        "region": "KR"
+      },
+      "caution": "2026년 금액(10,320원)은 2026년 적용분이다. 2027년 금액(10,700원)과 연도를 명시해 구분할 것.",
+      "cautionSource": "고용노동부 보도자료 2025.8.5 (위 source_url). 2026년 적용 최저임금 고시 페이지(https://www.moel.go.kr/info/lawinfo/instruction/view.do?bbs_seq=20250800121)는 열람했으나 본문에 금액이 없어(첨부 PDF만 있음) 근거로 쓰지 않음"
+    },
+    {
+      "id": "minimum-wage-2027-rate",
+      "claim": "2027년 적용 최저임금은 시간급 10,700원으로 결정·고시됐다. 2026년 적용 금액보다 380원(3.7%) 인상된 금액이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "고용노동부 보도자료 「2027년도 적용 최저임금 시간급 10,700원」 (2026.8.5 보도) 및 고용노동부 고시 「2027년 적용 최저임금 고시」(고용노동부 고시 제2026-60호)",
+      "source_url": "https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=19744",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "고용노동부",
+        "category": "최저임금",
+        "line": "시간급 최저임금",
+        "years": "2027년 적용",
+        "region": "KR"
+      },
+      "caution": "2027년 금액은 2027년 적용분이다. 2026-10-27 현재 적용 중인 금액은 2026년 적용 10,320원이므로 2027년 금액을 현재 최저임금으로 쓰지 말 것.",
+      "cautionSource": "2026년 적용 10,320원 — 고용노동부 보도자료 2025.8.5 (fact minimum-wage-2026-rate의 source_url)"
+    },
+    {
+      "id": "minimum-wage-2027-monthly",
+      "claim": "2027년 적용 최저임금의 월 환산액은 2,236,300원이다(주 40시간, 월 209시간 기준).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "고용노동부 보도자료 「2027년도 적용 최저임금 시간급 10,700원」 (2026.8.5)",
+      "source_url": "https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=19744",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "고용노동부",
+        "category": "최저임금",
+        "line": "월 환산액",
+        "years": "2027년 적용",
+        "region": "KR"
+      },
+      "caution": "월 환산액 2,236,300원은 주 40시간·월 209시간 기준이다. 다른 근로시간 조건에는 그대로 적용하지 말 것.",
+      "cautionSource": "고용노동부 보도자료 2026.8.5 (위 source_url)"
+    },
+    {
+      "id": "minimum-wage-2027-notice-basis",
+      "claim": "2027년 적용 최저임금액은 최저임금법 제10조 제1항에 따라 고용노동부가 고시했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "고용노동부 고시 「2027년 적용 최저임금 고시」(고용노동부 고시 제2026-60호)",
+      "source_url": "https://www.moel.go.kr/info/lawinfo/instruction/view.do?bbs_seq=20260800150",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "고용노동부",
+        "category": "최저임금",
+        "line": "고시 주체·근거",
+        "years": "2027년 적용",
+        "region": "KR"
+      }
+    },
+    {
+      "id": "minimum-wage-2027-objection-process",
+      "claim": "고용노동부는 2027년 적용안을 7월 16일 고시한 뒤 7월 27일까지 이의제기 기간을 운영했고, 민주노총과 소상공인연합회가 이의를 제기했으나 고용노동부는 이를 수용하지 않았다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "고용노동부 보도자료 「2027년도 적용 최저임금 시간급 10,700원」 (2026.8.5)",
+      "source_url": "https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=19744",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "고용노동부",
+        "category": "최저임금",
+        "line": "2027년 결정 절차",
+        "years": "2027년 적용",
+        "region": "KR"
+      },
+      "caution": "이의제기 주체와 경과는 보도자료 문장 그대로만 쓴다. 심의 세부 쟁점을 추정해 덧붙이지 말 것."
+    }
+  ]
+}

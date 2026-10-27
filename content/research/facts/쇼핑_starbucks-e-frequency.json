@@ -1,0 +1,59 @@
+{
+  "topic": "스타벅스 e-프리퀀시 (2026 겨울 회차 · 생활백과 세일·혜택 달력 웨이브 5)",
+  "brand": "스타벅스 코리아",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "starbucks-e-frequency-2026-winter-period",
+      "claim": "스타벅스 코리아는 '2026 WINTER e-FREQUENCY' 이벤트를 2026년 10월 22일부터 12월 31일까지 진행한다고 공식 이벤트 페이지에 게시했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스타벅스 코리아 WHAT'S NEW · 2026 WINTER e-FREQUENCY 이벤트 안내 (campaign_view.do?pro_seq=3499)",
+      "source_url": "https://www.starbucks.co.kr/whats_new/campaign_view.do?pro_seq=3499",
+      "checked": "2026-10-27",
+      "scope": { "brand": "스타벅스 코리아", "category": "e-프리퀀시 (적립 증정 이벤트)", "line": "2026 WINTER e-FREQUENCY", "years": "2026 겨울 (2026.10.22~2026.12.31)", "region": "KR" },
+      "caution": "이 기간은 2026년 겨울 회차 한정이다. 2025년 이전 겨울·여름 회차 기간을 섞지 말 것. 참여 조건(음료 잔 수·e-스티커 수)은 이 페이지의 열람 텍스트에서 확인되지 않아 이 팩트에 넣지 않았다.",
+      "cautionSource": "스타벅스 공식 이벤트 페이지(pro_seq=3499)의 기간 표기 2026-10-22~2026-12-31"
+    },
+    {
+      "id": "starbucks-e-frequency-2026-winter-gifts",
+      "claim": "2026 WINTER e-FREQUENCY 증정품은 포터블 스피커, 가방·북커버, 플래너·미니노트 키링의 3종으로 공식 증정품 안내 페이지에 게시되어 있다. 이 안내의 기간도 2026년 10월 22일부터 12월 31일까지다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스타벅스 코리아 WHAT'S NEW · 2026 WINTER e-FREQUENCY 증정품 안내 (campaign_view.do?pro_seq=3500)",
+      "source_url": "https://www.starbucks.co.kr/whats_new/campaign_view.do?pro_seq=3500",
+      "checked": "2026-10-27",
+      "scope": { "brand": "스타벅스 코리아", "category": "e-프리퀀시 증정품", "line": "2026 WINTER e-FREQUENCY 증정품", "years": "2026 겨울 (2026.10.22~2026.12.31)", "region": "KR" },
+      "caution": "증정품 수량·교환 기한은 이 페이지의 텍스트에 없었고 이미지 안내로 보인다. 수량과 교환 기한을 쓰려면 페이지 이미지나 매장 공지를 따로 확인할 것. 플래너 세부 내용(연도·협업처)은 언론 보도에만 있어 쓰지 말 것.",
+      "cautionSource": "스타벅스 공식 증정품 안내 페이지(pro_seq=3500)의 기간 표기 2026-10-22~2026-12-31 및 제품명 3종"
+    },
+    {
+      "id": "starbucks-e-frequency-2026-summer-status-unverified",
+      "claim": "2026 여름 e-프리퀀시의 시행 여부는 스타벅스 공식 이벤트 목록에서 확인하지 못했다. 언론은 여름 e-프리퀀시를 취소했다고 보도했으나 공식 공지 원문은 열람하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "스타벅스 코리아 WHAT'S NEW 이벤트 목록 (2026년 10월 27일 열람, 진행 이벤트 목록만 확인)",
+      "source_url": "https://www.starbucks.co.kr/whats_new/campaign_list.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "스타벅스 코리아", "category": "e-프리퀀시", "line": "2026 SUMMER e-FREQUENCY", "years": "2026 여름", "region": "KR" },
+      "caution": "여름 취소를 공식 사실처럼 쓰지 말 것. '언론 보도 기준 여름 행사가 취소됐다는 보도가 있다'로만 쓰고, 공식 공지 확인 전에는 여름 기간·증정품을 쓰지 않는다. 작년 여름 회차(2024 등)를 올해 여름으로 쓰지 말 것.",
+      "cautionSource": "이번 조사 열람 결과. 취소 보도는 언론 기사(검증 전)로 팩트에 넣지 않음"
+    },
+    {
+      "id": "starbucks-e-frequency-2026-winter-reservation-waitlist",
+      "claim": "스타벅스 공식 이벤트 목록에 '2026 WINTER e-FREQUENCY 예약 취소 대기 안내'가 2026년 10월 22일부터 12월 31일까지 기간으로 게시되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "스타벅스 코리아 WHAT'S NEW · 2026 WINTER e-FREQUENCY 예약 취소 대기 안내 (campaign_view.do?pro_seq=3539)",
+      "source_url": "https://www.starbucks.co.kr/whats_new/campaign_view.do?pro_seq=3539",
+      "checked": "2026-10-27",
+      "scope": { "brand": "스타벅스 코리아", "category": "e-프리퀀시 예약", "line": "2026 WINTER e-FREQUENCY 예약 취소 대기", "years": "2026 겨울 (2026.10.22~2026.12.31)", "region": "KR" },
+      "caution": "이 게시물은 제목과 기간만 확인했고 본문은 열람하지 못했다. 대기 신청 방법이나 순번 규칙을 이 팩트로 설명하지 말 것.",
+      "cautionSource": "스타벅스 공식 게시물(pro_seq=3539) 제목과 기간 표기 2026-10-22~2026-12-31"
+    }
+  ]
+}

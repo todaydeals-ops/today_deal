@@ -1,0 +1,155 @@
+{
+  "topic": "예방접종 증명서 발급 — 정부24·예방접종도우미(비회원)·보건소 발급 경로, 자녀 발급 선행 조건, 수수료",
+  "brand": "질병관리청 · 정부24(행정안전부) · 보건소",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "vaccination-certificate-status",
+      "claim": "질병관리청 예방접종도우미는 2026년 10월 27일 확인 시점에 정부24 발급 안내와 비회원 신청 화면을 함께 운영하고 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 예방접종도우미 '정부24 온라인 증명서 발급 이용 안내' 및 '예방접종 증명서 비회원 신청' 화면",
+      "source_url": "https://nip.kdca.go.kr/irgd/civilPetition/html/popup_goverment.html",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "질병관리청",
+        "category": "예방접종 증명서",
+        "line": "온라인 발급 경로(정부24·예방접종도우미)",
+        "years": "2026-10-27 확인 시점",
+        "region": "KR"
+      },
+      "caution": "화면 구성과 메뉴명은 바뀔 수 있다. 발행 직전 두 페이지를 다시 연다.",
+      "cautionSource": "2026-10-27 질병관리청 두 페이지 렌더링 결과(scripts/render-fetch.mjs, .tmp/rf-w5f/vaccination-certificate/b3)"
+    },
+    {
+      "id": "vaccination-certificate-gov24-search",
+      "claim": "예방접종 증명서는 정부24 통합검색창에 '예방접종증명'을 검색해 신청할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 예방접종도우미 '정부24 온라인 증명서 발급 이용 안내'",
+      "source_url": "https://nip.kdca.go.kr/irgd/civilPetition/html/popup_goverment.html",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "정부24",
+        "category": "예방접종 증명서",
+        "line": "정부24 온라인 발급",
+        "years": "2026-10-27 확인 시점",
+        "region": "KR"
+      },
+      "caution": "검색 후 '신청'을 누르고 작성 방법에 따라 관계와 교부대상자를 고른 뒤 '문서출력'을 누르는 순서다(질병관리청 안내 기준).",
+      "cautionSource": "질병관리청 온라인 증명서 발급 이용 안내 작성 방법 1)·2)·3) 단계"
+    },
+    {
+      "id": "vaccination-certificate-child-setup-first",
+      "claim": "자녀의 예방접종 증명서를 정부24에서 발급하려면 먼저 '예방접종관리 > 자녀 예방접종 관리 > 아이정보등록'에서 아이 정보를 등록해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 예방접종도우미 '정부24 온라인 증명서 발급 이용 안내'",
+      "source_url": "https://nip.kdca.go.kr/irgd/civilPetition/html/popup_goverment.html",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "정부24",
+        "category": "예방접종 증명서",
+        "line": "자녀 예방접종 증명서",
+        "years": "2026-10-27 확인 시점",
+        "region": "KR"
+      },
+      "caution": "자녀 발급 시 신청인 관계를 '자녀'로 선택하고 교부대상자에 자녀 성명과 주민등록번호를 입력한다는 안내도 함께 있다. 주민등록번호 입력이 필요한 단계이므로 독자에게 미리 알린다.",
+      "cautionSource": "질병관리청 온라인 증명서 발급 이용 안내의 자녀 발급 안내 문구"
+    },
+    {
+      "id": "vaccination-certificate-fallback-gov24",
+      "claim": "예방접종도우미 누리집에서 예방접종 증명서 발급이 안 되면 정부24(www.gov.kr)에서 발급할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 예방접종도우미 '정부24 온라인 증명서 발급 이용 안내'",
+      "source_url": "https://nip.kdca.go.kr/irgd/civilPetition/html/popup_goverment.html",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "질병관리청",
+        "category": "예방접종 증명서",
+        "line": "발급 경로 대체",
+        "years": "2026-10-27 확인 시점",
+        "region": "KR"
+      },
+      "caution": "예방접종도우미에서 막히면 정부24로 넘어가라는 순차 안내로 쓴다. 두 곳 모두 안 될 때의 최종 대안은 보건소 방문이다(보건소 절차는 별도 항목 확인실패).",
+      "cautionSource": "질병관리청 안내 문구(예방접종도우미 누리집에서 발급이 안 될 경우 정부24에서 발급 가능)"
+    },
+    {
+      "id": "vaccination-certificate-nonmember-form",
+      "claim": "예방접종도우미 '예방접종 증명서 비회원 신청' 화면은 이름과 주민등록번호(외국인은 외국인등록번호로 입력)를 입력하고, 개인정보 수집·이용과 고유식별정보 수집·이용에 동의해야 진행할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 예방접종도우미 '예방접종 증명서 비회원 신청' 화면",
+      "source_url": "https://nip.kdca.go.kr/irhp/civil/goNonMemView.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "질병관리청",
+        "category": "예방접종 증명서",
+        "line": "비회원 신청 (예방접종도우미)",
+        "years": "2026-10-27 확인 시점",
+        "region": "KR"
+      },
+      "caution": "동의를 거부하면 신청·발급·조회가 제한된다고 화면에 적혀 있다. 회원 가입 후 발급하는 절차는 이번에 확인하지 못했으므로 비회원 화면 기준으로만 쓴다.",
+      "cautionSource": "질병관리청 비회원 신청 화면의 수집 안내 문구"
+    },
+    {
+      "id": "vaccination-certificate-legal-basis-cited",
+      "claim": "질병관리청 예방접종도우미 비회원 신청 화면은 예방접종 증명서의 신청·발급·조회 목적으로 주민등록번호를 수집·이용하는 근거로 개인정보 보호법 제15조, 감염병의 예방 및 관리에 관한 법률 제33조의4, 같은 법 시행령 제32조의3을 명시한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 예방접종도우미 '예방접종 증명서 비회원 신청' 화면의 주민등록번호 수집 안내",
+      "source_url": "https://nip.kdca.go.kr/irhp/civil/goNonMemView.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "질병관리청",
+        "category": "예방접종 증명서",
+        "line": "주민등록번호 처리 근거",
+        "years": "2026-10-27 확인 시점",
+        "region": "KR"
+      },
+      "caution": "이 조문들이 증명서 발급 의무를 직접 규정한다고 단정하지 않는다. 감염병예방법 제24조(필수예방접종)를 열어 확인했으나 증명서 발급 규정은 그 조문에 없었다.",
+      "cautionSource": "감염병의 예방 및 관리에 관한 법률 제24조 본문(2026-10-27 렌더링, 증명서 문구 없음)"
+    },
+    {
+      "id": "vaccination-certificate-fee-unverified",
+      "claim": "확인실패: 정부24 및 예방접종도우미를 통한 예방접종 증명서 발급 수수료는 이번 조사에서 공식 안내 원문으로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "질병관리청 예방접종도우미 안내 두 페이지(수수료 문구 없음 확인)",
+      "source_url": "https://nip.kdca.go.kr/irgd/civilPetition/html/popup_goverment.html",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "질병관리청·정부24",
+        "category": "예방접종 증명서",
+        "line": "발급 수수료",
+        "years": "2026-10-27 확인 시점",
+        "region": "KR"
+      },
+      "caution": "후기 블로그와 검색 요약의 '온라인 무료'·'보건소 영문 증명서 유료' 등 금액 문구는 공식 대조 전이라 쓰지 않는다. 독자에게는 '발급 수수료는 발급 화면이나 관할 보건소에서 확인하라'고 안내한다.",
+      "cautionSource": "검색 요약의 후기 자료(공식 대조 없음으로 처리)"
+    },
+    {
+      "id": "vaccination-certificate-health-center-unverified",
+      "claim": "확인실패: 보건소 방문 발급의 준비물과 절차는 이번 조사에서 공식 안내 페이지로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "보건소 공식 안내 페이지(열람 전)",
+      "source_url": "https://nip.kdca.go.kr/irhp/civil/goNonMemView.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "보건소",
+        "category": "예방접종 증명서",
+        "line": "보건소 방문 발급",
+        "years": "2026-10-27 확인 시점",
+        "region": "KR (지역별 보건소 상이)"
+      },
+      "caution": "검색 요약에 보건소 준비물 안내가 있었으나 지자체 페이지를 열지 않아 쓰지 않는다. 글에서는 '온라인이 막히면 관할 보건소에 문의한다'까지만 쓴다.",
+      "cautionSource": "해당 없음(확인실패 항목)"
+    }
+  ]
+}

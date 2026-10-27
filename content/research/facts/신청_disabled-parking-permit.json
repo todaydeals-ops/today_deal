@@ -1,0 +1,145 @@
+{
+  "topic": "장애인 주차표지(정식 명칭 장애인사용자동차등표지) — 발급 근거·대상·신청처·구비서류·사용 혜택",
+  "brand": "보건복지부(장애인복지법) · 시장·군수·구청장(발급) · 동 주민센터(접수)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [
+    { "id": "disability-reg-online-unconfirmed", "why": "장애인 등록의 온라인 신청 미확인 사실은 장애인 등록 절차에 관한 것이다. 주차표지 신청처 판단에는 쓰지 않는다. 주차표지 신청처는 동 주민센터 방문으로 지자체 안내 2곳이 확인한 내용만 쓴다." }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "disabled-parking-legal-basis",
+      "claim": "시장·군수·구청장은 장애인이 이용하는 자동차임을 알아볼 수 있는 장애인사용자동차등표지를 발급해야 한다(장애인복지법 제39조 제2항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 장애인복지법 제39조(장애인이 사용하는 자동차 등에 대한 지원 등)",
+      "source_url": "https://www.law.go.kr/법령/장애인복지법/제39조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부·시장·군수·구청장", "category": "장애인 주차표지", "line": "장애인사용자동차등표지 발급 근거", "years": "시행 2026.10.2. 표시본(법률 제22024호, 2026.9.29. 일부개정)", "region": "KR" },
+      "caution": "정식 명칭은 장애인사용자동차등표지다. 글에서는 장애인 주차표지로 풀어 쓰되 첫 문단에 정식 명칭을 한 번 병기한다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "disabled-parking-misuse-ban",
+      "claim": "장애인사용자동차등표지를 대여하거나 보건복지부령이 정한 자 외에게 양도하는 등 부당하게 사용하면 안 되며, 이와 비슷한 표지나 명칭을 사용해서도 안 된다(장애인복지법 제39조 제3항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 장애인복지법 제39조 제3항",
+      "source_url": "https://www.law.go.kr/법령/장애인복지법/제39조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "장애인 주차표지", "line": "대여·양도·유사 표지 금지", "years": "시행 2026.10.2. 표시본", "region": "KR" },
+      "caution": "벌칙 조문과 금액은 이번 조사에서 열지 않았다. 금지 행위만 쓰고 과태료·벌금 금액은 쓰지 않는다. 대신 표지를 빌려주지 않고 본인 차에만 붙인다고 안내한다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "disabled-parking-eligibility-owner",
+      "claim": "발급 대상은 장애인 본인 또는 보호자 명의로 등록해 장애인이 주로 사용하는 자동차 1대다. 보호자는 장애인과 주민등록표상 같은 세대의 배우자·직계존속·직계비속·형제자매 등이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울 동대문구청 장애인 자동차 표지 발급 안내 및 서울 구로구청 장애인 자동차표지 안내",
+      "source_url": "https://www.ddm.go.kr/www/contents.do?key=711",
+      "checked": "2026-10-27",
+      "scope": { "brand": "서울 동대문구·구로구(지자체 안내)", "category": "장애인 주차표지 발급 대상", "line": "내국인 본인·보호자 명의 1대", "years": "2026-10-27 기준 열람(페이지 수정일 미확인)", "region": "서울 동대문구·구로구 안내 일치" },
+      "caution": "세부 대상 조건의 법령 근거는 장애인복지법 제39조 제4항이 보건복지부령에 위임하고 있다. 시행규칙 원문은 이번 조사에서 열지 못했으므로 지자체 안내 기준으로만 쓴다.",
+      "cautionSource": "장애인복지법 제39조 제4항 (발급 대상과 절차는 보건복지부령으로 정함) https://www.law.go.kr/법령/장애인복지법/제39조"
+    },
+    {
+      "id": "disabled-parking-eligibility-foreign-resident",
+      "claim": "국내거소신고를 한 재외동포나 외국인등록을 한 외국인 명의로 등록한 자동차 1대도 발급 대상이며, 이때는 보행상 장애가 있다는 소관 전문의 진단서가 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울 구로구청 장애인 자동차표지 안내 및 동대문구청 장애인 자동차 표지 발급 안내",
+      "source_url": "https://www.guro.go.kr/www/contents.do?key=2273",
+      "checked": "2026-10-27",
+      "scope": { "brand": "서울 구로구·동대문구(지자체 안내)", "category": "장애인 주차표지 발급 대상", "line": "재외동포·외국인 명의 차량", "years": "2026-10-27 기준 열람", "region": "서울 구로구·동대문구 안내 일치" },
+      "caution": "보행상 장애 진단이 있어야 한다는 조건은 두 지자체가 같이 쓴 요건이다. 진단서 발급 요건은 지자체에 확인하라고 안내한다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "disabled-parking-apply-office-dongju",
+      "claim": "장애인 주차표지 신청은 주민등록지 동 주민센터 방문 신청이 기본 경로다(동대문구·구로구 안내).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울 동대문구청 장애인 자동차 표지 발급 안내 및 서울 구로구청 장애인 자동차표지 안내",
+      "source_url": "https://www.ddm.go.kr/www/contents.do?key=711",
+      "checked": "2026-10-27",
+      "scope": { "brand": "시장·군수·구청장(접수 동 주민센터)", "category": "장애인 주차표지 신청처", "line": "방문 신청 접수처", "years": "2026-10-27 기준 열람", "region": "서울 동대문구·구로구 안내 일치" },
+      "caution": "복지로 온라인 신청은 이 팩트로 확인되지 않는다(disabled-parking-online-unconfirmed 참조). 독자에게는 주민센터 방문을 기본으로 안내한다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "disabled-parking-documents-domestic",
+      "claim": "내국인 신청의 기본 구비서류는 신청서, 표지를 주로 운전하는 사람의 운전면허증 사본, 자동차등록증 사본, 장애인 복지카드(보호자 신청이면 주민등록등본)다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울 동대문구청 장애인 자동차 표지 발급 안내(구로구 안내는 자동차등록증·운전면허증 사본 기재)",
+      "source_url": "https://www.ddm.go.kr/www/contents.do?key=711",
+      "checked": "2026-10-27",
+      "scope": { "brand": "서울 동대문구·구로구(지자체 안내)", "category": "장애인 주차표지 구비서류", "line": "내국인 신청", "years": "2026-10-27 기준 열람", "region": "서울 동대문구·구로구 안내" },
+      "caution": "장애인 복지카드가 필요하다는 것은 장애인 등록이 먼저 끝나 있어야 한다는 뜻이다. 등록 절차는 장애인 등록 주제에서 다룬다. 서류 목록은 지자체마다 다를 수 있다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "disabled-parking-badge-types-four",
+      "claim": "장애인 자동차표지는 보행상 장애 유무와 명의에 따라 기본 4종으로 나뉘며, 본인 운전과 보호자 운전 구분이 포함된다. 재외동포·외국인·대여차량 등 추가 7종이 별도로 있다(구로구 안내).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울 구로구청 장애인 자동차표지 안내",
+      "source_url": "https://www.guro.go.kr/www/contents.do?key=2273",
+      "checked": "2026-10-27",
+      "scope": { "brand": "서울 구로구", "category": "장애인 주차표지 종류", "line": "표지 종류(기본 4종·추가 7종)", "years": "2026-10-27 기준 열람", "region": "서울 구로구 안내" },
+      "caution": "보행상 장애 유무에 따라 주차가능 표지와 주차불가 표지가 나뉘므로, 전용구역 이용 혜택은 주차가능 표지에만 해당한다고 함께 안내한다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "disabled-parking-benefits",
+      "claim": "표지를 부착하면 장애인 전용 주차구역 이용(주차가능 표지에 한함), 승용차 요일제 적용 제외, 공영주차장 요금 할인 혜택이 있다(구로구 안내). 고속도로 통행료 할인은 별도 할인카드를 발급받은 장애인이 승차한 경우에만 적용된다(동대문구 안내).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울 구로구청 장애인 자동차표지 안내 및 동대문구청 장애인 자동차 표지 발급 안내",
+      "source_url": "https://www.guro.go.kr/www/contents.do?key=2273",
+      "checked": "2026-10-27",
+      "scope": { "brand": "서울 구로구·동대문구(지자체 안내)", "category": "장애인 주차표지 혜택", "line": "주차·요금·통행료 혜택", "years": "2026-10-27 기준 열람", "region": "서울 구로구·동대문구 안내" },
+      "caution": "혜택 범위와 할인율은 시설·지자체마다 다르다. 통행료 할인은 할인카드 발급이 전제다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "disabled-parking-reissue-damaged",
+      "claim": "표지가 훼손되면 수거된 표지 또는 재발급 사유를 증명하는 서류를 동장에게 제출해 재발급받는다(동대문구 안내).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서울 동대문구청 장애인 자동차 표지 발급 안내",
+      "source_url": "https://www.ddm.go.kr/www/contents.do?key=711",
+      "checked": "2026-10-27",
+      "scope": { "brand": "서울 동대문구", "category": "장애인 주차표지 재발급", "line": "훼손 재발급", "years": "2026-10-27 기준 열람", "region": "서울 동대문구 안내" },
+      "caution": "차량을 바꾼 경우의 재발급 절차는 이번에 확인하지 않았다(강남구 안내 자료는 검색 요약에만 있음). 차량 변경은 지자체에 문의하라고 안내한다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "disabled-parking-validity-unverified",
+      "claim": "장애인 주차표지의 유효기간은 이번 조사에서 확인하지 못했다. 장애인복지법 제39조와 두 지자체 안내에는 유효기간 기재가 없었다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "장애인복지법 제39조, 서울 동대문구·구로구 안내 본문(유효기간 기재 없음 확인). 장애인복지법 시행규칙 원문 미열람",
+      "source_url": "https://www.law.go.kr/법령/장애인복지법/제39조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부·지자체", "category": "장애인 주차표지", "line": "표지 유효기간", "years": "2026-10-27 기준 미확인", "region": "KR·지자체별" },
+      "caution": "유효기간을 글에 쓰지 않는다. 발급 시 지자체에 기간을 확인하라고 안내한다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "disabled-parking-online-unconfirmed",
+      "claim": "복지로 온라인으로 장애인 주차표지를 신청할 수 있는지는 이번 조사에서 확인하지 못했다. 복지로 원문은 열지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "동대문구청·구로구청 안내(온라인 신청 경로 미기재 확인). 복지로 원문 미열람",
+      "source_url": "https://www.ddm.go.kr/www/contents.do?key=711",
+      "checked": "2026-10-27",
+      "scope": { "brand": "복지로·지자체", "category": "장애인 주차표지 신청", "line": "온라인 신청 경로", "years": "2026-10-27 기준 미확인", "region": "KR" },
+      "caution": "온라인 신청이 된다고 쓰지 않는다. 주민센터 방문을 기본 경로로 쓰고, 온라인 여부는 복지로 공지로 확인하라고 안내한다.",
+      "cautionSource": ""
+    }
+  ]
+}

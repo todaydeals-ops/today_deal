@@ -1,0 +1,111 @@
+{
+  "topic": "생활백과 신청 — 부가가치세 예정고지(4월·10월 고지서, 직전 과세기간 납부세액 50%)",
+  "brand": "국세청",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": ["vat-preliminary-deadline", "law-deadline-weekend-next-day-national"],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "vat-preliminary-notice-law-48-3",
+      "claim": "부가가치세법 제48조 제3항은 납세지 관할 세무서장이 개인사업자와 대통령령으로 정하는 법인사업자에 대해 각 예정신고기간마다 직전 과세기간 납부세액의 50%(1천 원 미만 단수는 버림)를 결정해 해당 예정신고기간이 끝난 후 25일까지 징수한다고 규정한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 · 부가가치세법 제48조(예정신고와 납부) 제3항",
+      "source_url": "https://www.law.go.kr/법령/부가가치세법/제48조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "부가가치세", "line": "예정고지(개인 일반과세자 · 대통령령 법인)", "years": "시행 2026.1.2. 표기(법률 제21065호, 2025.10.1. 타법개정)", "region": "KR" },
+      "caution": "예정고지액은 이번 과세기간 매출이 아니라 직전 과세기간 납부세액의 절반이다. 「매출의 몇 %」로 설명하지 말 것.",
+      "cautionSource": "부가가치세법 제48조 제3항 원문 https://www.law.go.kr/법령/부가가치세법/제48조"
+    },
+    {
+      "id": "vat-preliminary-notice-schedule-apr-oct",
+      "claim": "국세청은 개인 일반사업자와 소규모 법인사업자가 직전 과세기간(6개월) 납부세액의 50%를 4월과 10월 예정고지서로 납부하며 예정신고 의무는 없다고 안내한다. 법인사업자는 예정신고·납부를 하며 기한은 4.1.~4.25., 10.1.~10.25.이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 · 신고납부기한(부가가치세 기본정보)",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2273&cntntsId=7694",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "부가가치세", "line": "예정고지 시기(4월·10월)", "years": "현행 안내 페이지(연도 표기 없음, 2026.10.27 확인)", "region": "KR" }
+    },
+    {
+      "id": "vat-preliminary-notice-target-small-corp",
+      "claim": "국세청은 예정고지 대상을 개인 일반사업자와 직전 과세기간 공급가액 합계액이 1억 5천만 원 미만인 소규모 법인사업자로 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 · 신고납부기한 / 부가가치세 개요(부가가치세 기본정보)",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2273&cntntsId=7694",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "부가가치세", "line": "예정고지 대상 범위", "years": "현행 안내 페이지(2026.10.27 확인)", "region": "KR" },
+      "caution": "1억 5천만 원 기준은 국세청 안내 문구 기준이다. 시행령 원문은 열어 확인하지 못했으므로 기준금액을 법 조문처럼 인용하지 말 것.",
+      "cautionSource": "국세청 신고납부기한 페이지 https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2273&cntntsId=7694"
+    },
+    {
+      "id": "vat-preliminary-notice-exclusion-50man",
+      "claim": "징수하여야 할 예정고지 금액이 50만 원 미만이면 예정고지 대상에서 제외되며, 과세기간 개시일 현재 간이과세자에서 일반과세자로 바뀐 사업자도 예정고지에서 제외된다(부가가치세법 제48조 제3항 제1호·제2호; 국세청 안내).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 · 부가가치세법 제48조 제3항 / 국세청 신고납부기한 페이지",
+      "source_url": "https://www.law.go.kr/법령/부가가치세법/제48조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "부가가치세", "line": "예정고지 제외 요건", "years": "시행 2026.1.2. 표기", "region": "KR" },
+      "caution": "50만 원은 「고지 금액」 기준이다. 직전 납부세액 자체가 50만 원인 사업자와 고지 금액 50만 원을 혼동하지 말 것.",
+      "cautionSource": "부가가치세법 제48조 제3항 제1호 https://www.law.go.kr/법령/부가가치세법/제48조"
+    },
+    {
+      "id": "vat-preliminary-notice-cancel-by-prelim-return",
+      "claim": "예정고지 대상자라도 휴업 또는 사업 부진으로 사업실적이 악화된 경우나 조기환급을 받으려는 경우에는 예정신고를 할 수 있으며, 그러면 예정고지는 취소된다(부가가치세법 제48조 제4항; 국세청 안내).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 · 부가가치세법 제48조 제4항 / 국세청 신고납부기한 페이지",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2273&cntntsId=7694",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "부가가치세", "line": "예정고지 대신 예정신고", "years": "현행 안내 페이지 기준", "region": "KR" }
+    },
+    {
+      "id": "vat-preliminary-notice-offset-confirm",
+      "claim": "예정고지로 낸 세액은 다음 확정신고 때 기납부세액으로 차감된다(국세청 안내).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 · 신고납부기한 페이지(예정고지 설명)",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2273&cntntsId=7694",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "부가가치세", "line": "예정고지 세액 정산", "years": "현행 안내 페이지 기준", "region": "KR" }
+    },
+    {
+      "id": "vat-preliminary-notice-simplified-1year",
+      "claim": "간이과세자는 1년(1.1.~12.31.)을 과세기간으로 신고·납부하며 다음 해 1월 25일까지 신고·납부하고, 7월 1일 기준 간이에서 일반으로 전환된 사업자와 예정부과기간(1.1.~6.30.)에 세금계산서를 발급한 간이과세자는 1.1.~6.30.을 과세기간으로 하여 7.25.까지 신고·납부한다고 국세청이 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 · 부가가치세 개요(부가가치세 기본정보)",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7693&mi=2272",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "부가가치세", "line": "간이과세자 과세기간 · 예정부과 예외", "years": "현행 안내 페이지 기준", "region": "KR" },
+      "caution": "간이과세자의 예정부과(예정부과기간 세금계산서 발급 간이과세자) 세부 계산 규정은 이번에 열어 보지 못했다. 간이과세자에게 예정고지 금액을 계산해 주지 말 것.",
+      "cautionSource": "국세청 부가가치세 개요 페이지 https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7693&mi=2272"
+    },
+    {
+      "id": "vat-preliminary-notice-2026-oct-deadline-weekend",
+      "claim": "2026년 10월 예정고지 기한은 국세청 안내상 10.25.(일)이며, 세법상 기한이 토·일이면 다음 날을 기한으로 한다는 국세기본법 제5조 규정이 적용되어 실질 기한은 2026.10.26.(월)로 볼 수 있다(적용 여부는 고지서 기재 기한으로 확인).",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "국세청 신고납부기한 페이지(10.1.~10.25.) · 국가법령정보센터 국세기본법 제5조",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2273&cntntsId=7694",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "부가가치세", "line": "2026 제2기 예정고지 기한", "years": "2026년 10월분", "region": "KR" },
+      "caution": "2026년 10월분 예정고지 기한(10.25.)은 2026.10.27. 기준 이미 지났다. 집필은 2027년 4월분 일정 기준으로 쓰고, 이 날짜는 「지난 회차 기준」으로만 언급할 것.",
+      "cautionSource": "국세청 신고납부기한 페이지 10.1.~10.25. 표기 https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2273&cntntsId=7694"
+    },
+    {
+      "id": "vat-preliminary-notice-2027-schedule-unannounced",
+      "claim": "2027년 4월 예정고지 납부 안내와 기한은 2026.10.27. 기준 열어 본 국세청 페이지에 공고되어 있지 않다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 · 신고납부기한 / 부가가치세 개요",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2273&cntntsId=7694",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "부가가치세", "line": "예정고지 2027년 4월분", "years": "2027년(미공고, 2026-10-27 기준)", "region": "KR" }
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "topic": "아포스티유 발급 (신청·환급 달력 · 생활백과 웨이브 5)",
+  "brand": "재외동포청·법무부 (대한민국 아포스티유 e-Apostille)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "apostille-issuer-by-document-type",
+      "claim": "아포스티유 발급 기관은 문서 종류에 따라 나뉜다. 재외동포청은 국가·지방자치단체(국가·지자체 업무를 위탁받은 기관 포함)가 공무상 작성한 문서를, 법무부는 법무부 및 그 소속기관(공소청)이 작성한 문서, 재판서 또는 재판을 적은 조서의 등본·초본, 공증문서를 발급한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "재외동포청 대한민국 아포스티유(e-Apostille) · 제도소개 · 대상문서 탭",
+      "source_url": "https://www.apostille.go.kr/gd/intro/appIntro.do?checkTabNo=2",
+      "checked": "2026-10-27",
+      "scope": { "brand": "재외동포청·법무부", "category": "아포스티유 발급 기관", "line": "문서 종류별 발급 기관 분류", "years": "2026-10-27 열람 시점 기준", "region": "KR" },
+      "caution": "발급 기관을 '외교부 본부'로 쓰지 말 것. 외교부는 아포스티유 발급 기관이 아니라 '아포스티유 신청 기관' 목록에 문서 작성 기관으로 올라 있을 뿐이다. 법무부 쪽 기관명은 원문 표기 '법무부 및 그 소속기관(공소청)'을 그대로 쓴다. 2009년 법무부령의 '검찰청' 문구를 옮기지 말 것.",
+      "cautionSource": "재외동포청 e-Apostille 제도소개 대상문서 탭(checkTabNo=2) 발급 기관별 분류 표 및 메인 '아포스티유 신청 기관' 목록(2026-10-27 열람). 2009년 문구는 법무부 '아포스티유 관련 법령' 페이지(https://moj.go.kr/bbs/moj/104/235365/artclView.do)"
+    },
+    {
+      "id": "apostille-legal-basis-decree",
+      "claim": "아포스티유 대상 문서의 근거는 「공문서에 대한 아포스티유 및 본부영사확인 발급에 관한 규정」 제2조 제3항이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "재외동포청 대한민국 아포스티유 · 제도소개 · 대상문서 탭",
+      "source_url": "https://www.apostille.go.kr/gd/intro/appIntro.do?checkTabNo=2",
+      "checked": "2026-10-27",
+      "scope": { "brand": "재외동포청·법무부", "category": "아포스티유 대상 문서", "line": "근거 규정", "years": "2026-10-27 열람 시점 기준", "region": "KR" }
+    },
+    {
+      "id": "apostille-fee-per-application",
+      "claim": "아포스티유 증명 신청 수수료는 1건당 1,000원이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "재외동포청 대한민국 아포스티유 · 제도소개 · 발급절차 및 구비서류 탭",
+      "source_url": "https://www.apostille.go.kr/gd/intro/appIntro.do?checkTabNo=3",
+      "checked": "2026-10-27",
+      "scope": { "brand": "재외동포청·법무부", "category": "수수료", "line": "아포스티유 증명 신청", "years": "2026-10-27 열람 시점 기준", "region": "KR" }
+    },
+    {
+      "id": "apostille-notary-exemption-list",
+      "claim": "공증 없이 원본을 바로 신청할 수 있는 문서는 2024년 4월 1일부터 상공회의소 원산지증명서 원본, 2024년 6월 1일부터 국립대학교 학적서류 원본, 2024년 7월 22일부터 대한화장품협회 서류 원본, 2025년 12월 1일부터 공공의료기관 서류 원본이다. 그 밖의 문서는 공증을 받은 뒤 신청해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "재외동포청 대한민국 아포스티유 · 제도소개 · 발급절차 및 구비서류 탭 (공지)",
+      "source_url": "https://www.apostille.go.kr/gd/intro/appIntro.do?checkTabNo=3",
+      "checked": "2026-10-27",
+      "scope": { "brand": "재외동포청·법무부", "category": "공증 면제 대상 문서", "line": "원본 직접 신청 가능 문서 목록", "years": "2024.4.1~2025.12.1 공지 시점별", "region": "KR" },
+      "caution": "면제 목록은 공지 시점별로 추가된 것이다. 목록에 없는 문서를 '공증 없이 된다'고 쓰면 틀린다. 목록은 바뀔 수 있으니 신청 전 재확인을 안내한다.",
+      "cautionSource": "재외동포청 e-Apostille 발급절차 탭의 공지 목록(2024.4.1·2024.6.1·2024.7.22·2025.12.1 날짜 명시, checkTabNo=3)"
+    },
+    {
+      "id": "apostille-copy-type-submission-only",
+      "claim": "대법원 인터넷등기소·정부24 등에서 열람용과 발급용으로 나뉘는 서류는 열람용이 법적 효력이 없으므로 '제출용'으로 발급받아야 한다고 공식 안내되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "재외동포청 대한민국 아포스티유 · 제도소개 · 발급절차 및 구비서류 탭 (신청 대상 서류 안내)",
+      "source_url": "https://www.apostille.go.kr/gd/intro/appIntro.do?checkTabNo=3",
+      "checked": "2026-10-27",
+      "scope": { "brand": "재외동포청·법무부", "category": "아포스티유 구비서류", "line": "열람용·발급용 구분 서류", "years": "2026-10-27 열람 시점 기준", "region": "KR" }
+    },
+    {
+      "id": "apostille-channels-and-delivery",
+      "claim": "아포스티유 신청은 온라인·방문·우편으로 할 수 있다. 온라인으로 신청하면 교부를 즉시 받고, 창구 교부 또는 우편 송부는 우편 신청에 한해 이뤄진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "재외동포청 대한민국 아포스티유 · 제도소개 · 발급절차 및 구비서류 탭",
+      "source_url": "https://www.apostille.go.kr/gd/intro/appIntro.do?checkTabNo=3",
+      "checked": "2026-10-27",
+      "scope": { "brand": "재외동포청·법무부", "category": "신청·교부 방식", "line": "온라인·방문·우편", "years": "2026-10-27 열람 시점 기준", "region": "KR" }
+    },
+    {
+      "id": "apostille-no-designated-notary",
+      "claim": "재외동포청과 법무부는 아포스티유 발급을 위해 특정 공증사무소를 지정하고 있지 않다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "재외동포청 대한민국 아포스티유 · 제도소개 · 발급절차 및 구비서류 탭",
+      "source_url": "https://www.apostille.go.kr/gd/intro/appIntro.do?checkTabNo=3",
+      "checked": "2026-10-27",
+      "scope": { "brand": "재외동포청·법무부", "category": "공증", "line": "공증사무소 지정 여부", "years": "2026-10-27 열람 시점 기준", "region": "KR" }
+    },
+    {
+      "id": "apostille-system-downtime-2026-11",
+      "claim": "아포스티유 시스템 오프라인 점검으로 2026년 11월 1일(일) 09:00부터 11월 2일(월) 09:00까지 서비스가 중단된다고 공지되어 있다. 이 기간 중 가능한 업무는 아포스티유 소개와 고객센터(1:1 문의 제외)뿐이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "재외동포청 대한민국 아포스티유 메인 공지 (시스템 오프라인 점검 안내)",
+      "source_url": "https://www.apostille.go.kr/index.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "재외동포청·법무부", "category": "시스템 점검", "line": "아포스티유 온라인 서비스", "years": "2026-11-01~11-02", "region": "KR" },
+      "caution": "점검 시간은 '작업상황에 따라 변경될 수 있음'이라고 공지되어 있다. 메인 화면 공지라 개별 공지 주소는 확인하지 못했으니, 글에 쓸 때는 날짜를 '공지 기준 예정'으로 표기한다.",
+      "cautionSource": "재외동포청 아포스티유 메인 공지 본문(점검 일시 2026.11.01(일) 09:00~11.02(월) 09:00 KST)"
+    },
+    {
+      "id": "apostille-2009-rule-status-unverified",
+      "claim": "법무부 페이지에 게시된 '아포스티유 관련 법령'은 2009년 2월 2일 제정·시행된 「외국공문서에 대한 인증의 요구를 폐지하는 협약의 이행을 위한 법무부장관 소관 업무에 관한 규칙」(법무부령 제659호) 원문이며, 현행 개정 여부는 이번 조사에서 확인하지 못했다. 국가법령정보센터 원문 주소 열람도 실패했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "법무부 · 아포스티유 관련 법령 (작성일 2010.08.13)",
+      "source_url": "https://moj.go.kr/bbs/moj/104/235365/artclView.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "법무부", "category": "아포스티유 법령", "line": "법무부장관 소관 업무 규칙", "years": "시행 2009.2.2 원문", "region": "KR" },
+      "caution": "이 옛 규칙의 수수료·발급 대상 조문을 현행 규정처럼 인용하지 말 것. 현행 근거는 재외동포청 페이지가 인용하는 「공문서에 대한 아포스티유 및 본부영사확인 발급에 관한 규정」으로 쓴다.",
+      "cautionSource": "법무부 아포스티유 관련 법령 페이지 본문(시행 2009. 2. 2, 법무부령 제659호, 작성일 2010.08.13)"
+    }
+  ]
+}

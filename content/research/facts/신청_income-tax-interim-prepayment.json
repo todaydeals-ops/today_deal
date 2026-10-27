@@ -1,0 +1,138 @@
+{
+  "topic": "생활백과 신청 — 종합소득세 중간예납(11월 고지 · 추계액 신고 · 분납)",
+  "brand": "국세청",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "income-tax-interim-current-2026",
+      "claim": "국세청 중간예납 안내 페이지는 2026년 기준으로 중간예납세액의 납부기한을 2026.11.30.(월)로 적고, 납부고지서는 11월 초에 발부된다고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 · 중간예납 안내(중간예납세액의 계산 및 납부방법)",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2237&cntntsId=7674",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "국세 납부", "line": "종합소득세 중간예납세액", "years": "2026년(페이지 기준)", "region": "KR" }
+    },
+    {
+      "id": "income-tax-interim-law-article65",
+      "claim": "소득세법 제65조 제1항은 1월 1일부터 6월 30일까지를 중간예납기간으로 하여 중간예납기준액의 2분의 1에 해당하는 금액을 중간예납세액으로 정하고, 11월 30일까지 징수하며, 11월 1일부터 11월 15일까지 납부고지서를 발급하도록 규정한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 · 소득세법 제65조(중간예납)",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제65조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "국세 납부", "line": "종합소득세 중간예납", "years": "시행 2026.1.1. 표기(법률 제21221호, 2025.12.23. 일부개정)", "region": "KR" }
+    },
+    {
+      "id": "income-tax-interim-who-is-subject",
+      "claim": "중간예납 대상은 종합소득이 있는 거주자이며, 대통령령으로 정하는 소득만 있는 자와 해당 과세기간 개시일 현재 사업자가 아니었다가 그 과세기간 중 신규로 사업을 시작한 자는 중간예납 고지 대상에서 제외된다(소득세법 제65조 제1항 괄호).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 · 소득세법 제65조(중간예납)",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제65조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "국세 납부", "line": "종합소득세 중간예납 대상", "years": "시행 2026.1.1. 표기", "region": "KR" }
+    },
+    {
+      "id": "income-tax-interim-amount-formula",
+      "claim": "국세청은 중간예납세액을 「중간예납기준액 × 2분의 1 − (중간예납기간 중 토지 등 매매차익 예정신고납부세액)」으로 안내하고, 중간예납기준액은 「전년도 중간예납세액 + 확정신고 자진납부세액 + 추가납부세액(가산세 포함) + 기한후·수정신고 추가자진납부세액(가산세 포함) − 환급세액」으로 정의한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 · 중간예납 안내(중간예납세액의 계산 및 납부방법)",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2237&cntntsId=7674",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "국세 납부", "line": "종합소득세 중간예납세액 산식", "years": "2026년 안내 페이지 기준", "region": "KR" },
+      "caution": "중간예납기준액은 고지서에 찍힌 금액이 아니라 위 네 항목을 더하고 환급세액을 뺀 값이다. 「직전 해 세금의 절반」으로 단순화해 쓰지 말 것.",
+      "cautionSource": "국세청 중간예납 안내 페이지 중간예납기준액 산식 https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2237&cntntsId=7674"
+    },
+    {
+      "id": "income-tax-interim-split-over-10man",
+      "claim": "중간예납세액이 1천만 원을 초과하면 분납할 수 있다. 납부할 세액이 2천만 원 이하이면 1천만 원을 초과하는 금액을, 2천만 원을 초과하면 세액의 50% 이하 금액을 분납하며, 2026년 중간예납분의 분납 고지는 2027년 1월 초 발송되고 분납세액 납부기한은 2027.2.1.(월)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 · 중간예납 안내(분납)",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2237&cntntsId=7674",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "국세 납부", "line": "종합소득세 중간예납세액 분납", "years": "2026년 중간예납분 기준", "region": "KR" },
+      "caution": "분납은 중간예납세액이 1천만 원을 넘을 때만 적용된다. 1천만 원 이하는 분납 대상이 아니므로 2026.11.30.까지 전액 내야 한다. 2천만 원 기준으로 계산법이 두 갈래이니 섞지 말 것.",
+      "cautionSource": "국세청 중간예납 안내 페이지 분납 대상·사례 https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2237&cntntsId=7674"
+    },
+    {
+      "id": "income-tax-interim-hometax-payment-path",
+      "claim": "국세청은 중간예납 고지분을 홈택스·손택스에서 「납부·고지·환급 → 세금납부 → 납부할 세액 조회/납부」 메뉴로 들어가 과세구분이 「고지분」인 건을 선택해 전자 납부할 수 있다고 안내하며, 이용시간은 07:00~23:30이라고 적는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 · 중간예납 안내(중간예납세액의 고지·납부)",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2237&cntntsId=7674",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "국세 납부", "line": "종합소득세 중간예납 전자납부", "years": "2026년 안내 페이지 기준", "region": "KR" }
+    },
+    {
+      "id": "income-tax-interim-estimate-filing-30pct",
+      "claim": "2026년 상반기(1.1.~6.30.) 종합소득금액으로 계산한 중간예납추계액이 중간예납기준액의 30%에 미달하면, 11월 1일부터 11월 30일까지 추계액을 신고하고 그 금액만 납부할 수 있다(소득세법 제65조 제3항; 국세청 2026 안내).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 · 중간예납추계액 신고 안내 / 소득세법 제65조 제3항",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2238&cntntsId=7675",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "국세 신고", "line": "종합소득세 중간예납추계액 신고", "years": "2026년 상반기 실적 기준", "region": "KR" }
+    },
+    {
+      "id": "income-tax-interim-estimate-mandatory-doksik",
+      "claim": "중간예납기준액이 없는 거주자 중 복식부기의무자가 2026년 상반기 사업실적이 있으면 11월 1일부터 11월 30일까지 중간예납추계액을 신고·납부해야 한다(소득세법 제65조 제5항; 국세청 2026 안내).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 · 중간예납추계액 신고 안내 / 소득세법 제65조 제5항",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2238&cntntsId=7675",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "국세 신고", "line": "복식부기의무자 중간예납추계액 신고(의무)", "years": "2026년 상반기 실적 기준", "region": "KR" }
+    },
+    {
+      "id": "income-tax-interim-estimate-under-50man",
+      "claim": "중간예납추계액이 50만 원 미만이면 납부 대상은 아니지만, 고지된 중간예납세액을 취소하려면 추계액 신고서를 반드시 제출해야 한다(국세청 2026 안내).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 · 중간예납추계액 신고 안내",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2238&cntntsId=7675",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "국세 신고", "line": "중간예납추계액 50만원 미만 처리", "years": "2026년 안내 페이지 기준", "region": "KR" },
+      "caution": "50만 원 기준은 추계액에 적용되는 것이지 고지서 금액 기준이 아니다. 추계액 신고서를 내지 않으면 고지 취소가 되지 않는다.",
+      "cautionSource": "국세청 중간예납추계액 신고 안내 페이지 https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2238&cntntsId=7675"
+    },
+    {
+      "id": "income-tax-interim-estimate-cancels-notice",
+      "claim": "중간예납추계액을 신고한 경우 해당 중간예납세액의 결정(고지)은 없었던 것으로 본다(소득세법 제65조 제4항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 · 소득세법 제65조(중간예납) 제4항",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제65조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "국세 신고", "line": "중간예납추계액 신고 효과", "years": "시행 2026.1.1. 표기", "region": "KR" }
+    },
+    {
+      "id": "income-tax-interim-extension-unverified",
+      "claim": "사업 부진이나 재해를 겪은 사업자가 중간예납 납부기한을 연장받을 수 있고 최대 9개월까지 연장된다는 설명은 블로그 요약에서만 보였고, 열어 본 공식 원문에서는 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "블로그·세무 정보 검색 요약(공식 원문 미열람)",
+      "source_url": "",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "국세 납부", "line": "중간예납 납부기한 연장", "years": "미확인", "region": "KR" },
+      "caution": "확인실패 항목이다. 본문에서 연장 가능 여부를 단정하지 말고, 사업 부진·재해 사유가 있으면 관할 세무서에 확인하라고 안내한다."
+    },
+    {
+      "id": "income-tax-interim-2027-schedule-unannounced",
+      "claim": "2027년도 중간예납 일정(납부기한·추계액 신고기한)은 2026.10.27. 기준으로 열어 본 국세청 중간예납 안내 페이지 두 곳에 공고되어 있지 않다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세청 · 중간예납 안내 / 중간예납추계액 신고 안내(2026년 기준 페이지)",
+      "source_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2237&cntntsId=7674",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국세청", "category": "국세 납부", "line": "종합소득세 중간예납", "years": "2027년(미공고, 2026-10-27 기준)", "region": "KR" }
+    }
+  ]
+}

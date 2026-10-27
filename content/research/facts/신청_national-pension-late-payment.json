@@ -1,0 +1,163 @@
+{
+  "topic": "국민연금 추후납부(추납보험료) — 법 조문 요건, 신청 자격, 119개월 상한, 분할납부·이자, 필수 서류",
+  "brand": "국민연금공단",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "national-pension-late-payment-status",
+      "claim": "국민연금법 제92조(연금보험료의 추후 납부)의 현행 시행본은 2026년 10월 20일 시행(법률 제22096호, 2026.10.20 일부개정 표시)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 「국민연금법」 제92조(연금보험료의 추후 납부)",
+      "source_url": "https://www.law.go.kr/법령/국민연금법/제92조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민연금공단", "category": "국민연금 추후납부", "line": "추납보험료 법 조문", "years": "시행 2026.10.20", "region": "KR" },
+      "caution": "2026.10.20 개정이 추후납부 조문을 바꿨는지는 신구대비로 확인하지 않았다. 글에 '2026년 개정으로 바뀌었다'고 쓰지 말 것.",
+      "cautionSource": "국민연금법 제92조 시행 표시(위 source_url)"
+    },
+    {
+      "id": "national-pension-late-payment-scope-article",
+      "claim": "가입자는 10년 미만의 범위에서, 최초 납부 이후 보험료를 내지 않은 기간(법 제9조 제1·4·5호 해당), 18세 미만 근로자가 보험료를 내지 않은 기간(법 제8조 제2항 단서), 법 제91조 제1항에 따라 보험료를 내지 않은 기간의 전부 또는 일부에 상응하는 보험료의 추후 납부를 신청할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 「국민연금법」 제92조 제1항 제1호·제1호의2·제2호",
+      "source_url": "https://www.law.go.kr/법령/국민연금법/제92조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민연금공단", "category": "국민연금 추후납부", "line": "추납 대상 기간", "years": "시행 2026.10.20", "region": "KR" },
+      "caution": "'10년 미만'은 추납 신청 범위의 상한이다. 법령 문언상 기간 제한이므로 이 범위를 넘는 신청이 가능하다고 쓰지 말 것.",
+      "cautionSource": "국민연금법 제92조 제1항 본문 '10년 미만'(위 source_url)"
+    },
+    {
+      "id": "national-pension-late-payment-military-period",
+      "claim": "병역의무를 마친 뒤 가입자 자격을 취득한 경우 해당 병역의무 수행 기간도 추납 대상이 될 수 있으나, 공무원·사학연금·별정우체국 재직기간에 포함된 기간, 군인연금 복무기간에 포함된 기간, 1988년 1월 1일 전에 병역의무를 수행한 기간은 제외된다(법 제92조 제1항 제3호).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 「국민연금법」 제92조 제1항 제3호",
+      "source_url": "https://www.law.go.kr/법령/국민연금법/제92조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민연금공단", "category": "국민연금 추후납부", "line": "병역의무 기간 추납", "years": "시행 2026.10.20", "region": "KR" },
+      "caution": "'1988년 1월 1일' 기준은 법 조문 날짜다. 다른 날짜 기준으로 바꿔 쓰지 말 것.",
+      "cautionSource": "국민연금법 제92조 제1항 제3호 다목(위 source_url)"
+    },
+    {
+      "id": "national-pension-late-payment-eligibility-nps",
+      "claim": "국민연금공단 추납보험료 납부 신청의 신청 자격은 납부예외 및 적용제외 이력이 있고, 현재 보험료를 납부 중인 사람이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민연금공단 전자민원 「추납보험료 납부 신청」 상세 안내",
+      "source_url": "https://www.nps.or.kr/elctcvlcpt/comm/getOHAC0000M5.do?menuId=MN24001072",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민연금공단", "category": "국민연금 추후납부", "line": "추납 신청 자격(공단 기준)", "years": "2026-10-27 열람", "region": "KR" },
+      "caution": "'현재 보험료를 납부 중인 자'는 공단 안내 기준이다. 법 조문 요건처럼 쓰지 말고 '공단 안내 기준'으로 쓴다.",
+      "cautionSource": "공단 안내 신청자격 문구(위 source_url)"
+    },
+    {
+      "id": "national-pension-late-payment-max-119months",
+      "claim": "추납 신청은 최대 119개월(9년 11개월)까지 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민연금공단 전자민원 「추납보험료 납부 신청」 상세 안내",
+      "source_url": "https://www.nps.or.kr/elctcvlcpt/comm/getOHAC0000M5.do?menuId=MN24001072",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민연금공단", "category": "국민연금 추후납부", "line": "신청 가능 최대 기간", "years": "2026-10-27 열람", "region": "KR" },
+      "caution": "119개월은 법의 '10년 미만' 범위에 맞춘 공단 상한이다. 법 문언에 119개월이라는 숫자가 있는 것처럼 쓰지 말 것.",
+      "cautionSource": "공단 안내 '최대 119개월까지 신청가능합니다'(위 source_url)"
+    },
+    {
+      "id": "national-pension-late-payment-installment-60",
+      "claim": "추납보험료는 추납가능기간을 월 단위로 나누어 최대 60회 범위 안에서 분할납부할 수 있으며, 분할을 원하면 신청서에 분할 횟수를 반드시 적어야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민연금공단 전자민원 「추납보험료 납부 신청」 상세 안내 (기본정보 — 분할납부)",
+      "source_url": "https://www.nps.or.kr/elctcvlcpt/comm/getOHAC0000M5.do?menuId=MN24001072",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민연금공단", "category": "국민연금 추후납부", "line": "추납보험료 분할납부", "years": "2026-10-27 열람", "region": "KR" },
+      "caution": "60회 분할 상한은 공단 안내 기준이다. 법 제92조 제4항은 분할 납부 방법을 대통령령에 위임하고 이자를 더하도록 정한다.",
+      "cautionSource": "공단 안내 '60회 범위내에서 분할 가능'(위 source_url), 법 제92조 제4항(https://www.law.go.kr/법령/국민연금법/제92조)"
+    },
+    {
+      "id": "national-pension-late-payment-interest",
+      "claim": "분할납부 이자는 추납보험료를 신청한 날이 속하는 달부터 분할 납부를 하는 날이 속하는 달의 전월까지의 기간에 해당 기간 중 적용된 1년 만기 정기예금 이자율로 계산하며, 이자 계산 기간이 1년을 넘으면 연 단위로 이자를 계산해 원금에 더한 뒤 그 이후 이자를 계산한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민연금공단 전자민원 「추납보험료 납부 신청」 상세 안내 (분할납부이자)",
+      "source_url": "https://www.nps.or.kr/elctcvlcpt/comm/getOHAC0000M5.do?menuId=MN24001072",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민연금공단", "category": "국민연금 추후납부", "line": "분할납부 이자 계산", "years": "2026-10-27 열람", "region": "KR" },
+      "caution": "이자율 수치는 이 페이지에 없고 기간별로 적용된 정기예금 이자율을 따른다. 특정 연도 이율을 고정해 쓰지 말 것.",
+      "cautionSource": "공단 안내 분할납부이자 산식(위 source_url)"
+    },
+    {
+      "id": "national-pension-late-payment-premium-basis",
+      "claim": "추납보험료는 납부 기한이 속하는 달의 연금보험료에 추후 납부하려는 기간의 개월 수를 곱한 금액이며, 그 계산에 쓰는 기준소득월액은 추후 납부를 신청한 날이 속하는 달을 기준으로 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 「국민연금법」 제92조 제3항",
+      "source_url": "https://www.law.go.kr/법령/국민연금법/제92조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민연금공단", "category": "국민연금 추후납부", "line": "추납보험료 산정", "years": "시행 2026.10.20 (제3항 2025.11.25 개정 표시)", "region": "KR" },
+      "caution": "보험료율 수치는 이번 조사에서 확인하지 않았으므로 글에 적지 않는다. 임의가입자 상한은 대통령령에 위임돼 있다.",
+      "cautionSource": "해당 없음(수치 미기재)"
+    },
+    {
+      "id": "national-pension-late-payment-service-period-basis",
+      "claim": "추납보험료를 낸 경우 그에 상응하는 기간은 추납보험료를 납부한 날을 기준으로 가입기간에 산입하며, 추후 납부로 산입되는 가입기간의 기본연금액은 추납보험료를 납부한 날이 속하는 달을 기준으로 산정한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 「국민연금법」 제92조 제5항",
+      "source_url": "https://www.law.go.kr/법령/국민연금법/제92조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민연금공단", "category": "국민연금 추후납부", "line": "추납 가입기간 산입", "years": "시행 2026.10.20", "region": "KR" }
+    },
+    {
+      "id": "national-pension-late-payment-docs-marriage",
+      "claim": "혼인관계증명서(상세, 주민등록번호 모두 표시, 제출용)는 추납 신청의 필수 서류이며, 증빙서류를 첨부하지 않으면 신청이 불가하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민연금공단 전자민원 「추납보험료 납부 신청」 상세 안내 (유의사항)",
+      "source_url": "https://www.nps.or.kr/elctcvlcpt/comm/getOHAC0000M5.do?menuId=MN24001072",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민연금공단", "category": "국민연금 추후납부", "line": "추납 신청 필수서류", "years": "2026-10-27 열람", "region": "KR" },
+      "caution": "공단 안내는 혼인관계증명서를 필수로 적는다. 검색 요약의 '혼인 관련 기간만 첨부'라는 서식 설명은 원문 미확인이므로 쓰지 말 것.",
+      "cautionSource": "공단 안내 유의사항 (위 source_url)"
+    },
+    {
+      "id": "national-pension-late-payment-extra-docs",
+      "claim": "2008년 이전 이혼·사별 이력이 있으면 제적등본을 추가로 제출하고, 군복무 기간을 추납하면 병적증명서 또는 병역사항이 포함된 주민등록초본을 추가로 제출한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민연금공단 전자민원 「추납보험료 납부 신청」 상세 안내 (유의사항)",
+      "source_url": "https://www.nps.or.kr/elctcvlcpt/comm/getOHAC0000M5.do?menuId=MN24001072",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민연금공단", "category": "국민연금 추후납부", "line": "추가 제출 서류", "years": "2026-10-27 열람", "region": "KR" },
+      "caution": "2008년은 공단 안내의 기준 연도다. 다른 연도 기준으로 바꾸지 말 것.",
+      "cautionSource": "공단 안내 유의사항 (위 source_url)"
+    },
+    {
+      "id": "national-pension-late-payment-channel-and-review",
+      "claim": "추납 신청은 방문·우편·팩스·정부(민원)24·공단 홈페이지·모바일앱·디지털 ARS로 할 수 있으며, 접수 후 관할지사 담당자가 유선으로 재확인해야 확정되고, 자격 변동으로 신청 대상이 아니면 취소된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국민연금공단 전자민원 「추납보험료 납부 신청」 상세 안내 (신청방법·처리절차·유의사항)",
+      "source_url": "https://www.nps.or.kr/elctcvlcpt/comm/getOHAC0000M5.do?menuId=MN24001072",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민연금공단", "category": "국민연금 추후납부", "line": "신청 방법·확정 절차", "years": "2026-10-27 열람", "region": "KR" }
+    },
+    {
+      "id": "national-pension-late-payment-refund-excluded",
+      "claim": "이미 납부한 연금보험료를 반환일시금으로 지급받은 경우 그에 상응하는 기간은 납부한 것으로 보지 않는다. 다만 지급받은 반환일시금을 반납금으로 납부한 경우에는 예외다(법 제92조 제2항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 「국민연금법」 제92조 제2항",
+      "source_url": "https://www.law.go.kr/법령/국민연금법/제92조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국민연금공단", "category": "국민연금 추후납부", "line": "반환일시금 수령 기간", "years": "시행 2026.10.20", "region": "KR" },
+      "caution": "반환일시금을 받은 적 있는 사람이 '추납 가능'이라고 바로 판단하지 말 것. 반납금 납부 여부를 먼저 확인하도록 안내한다.",
+      "cautionSource": "국민연금법 제92조 제2항 (위 source_url)"
+    }
+  ]
+}

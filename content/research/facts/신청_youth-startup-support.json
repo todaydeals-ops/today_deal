@@ -1,0 +1,80 @@
+{
+  "topic": "예비창업패키지 (2026년도 예비창업자 모집) — 공고 주체·신청기간·대상·신청 창구",
+  "brand": "중소벤처기업부",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "youth-startup-support-status",
+      "claim": "★2026년도 예비창업패키지 예비창업자 모집(수정 공고 2026-143호)의 신청기간은 2026년 3월 6일~3월 24일이었고, 2026-10-27 기준 마감 상태다. 2026년 하반기 재공고는 이번 조사에서 공식 원문으로 확인하지 못했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기업마당(bizinfo) 「2026년 예비창업패키지 예비창업자 모집 수정 공고」 (소관 중소벤처기업부, 수행 창업진흥원)",
+      "source_url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000119019",
+      "checked": "2026-10-27",
+      "scope": { "brand": "중소벤처기업부", "category": "창업지원", "line": "예비창업패키지 (예비창업자 모집)", "years": "2026년도 1차(수정 공고)", "region": "KR" },
+      "caution": "2026년 1차 모집 기간을 지금 신청 가능한 것처럼 쓰지 말 것. 다음 회차 공고는 K-Startup·기업마당에서 직접 확인하도록 안내한다.",
+      "cautionSource": "기업마당 공고 신청기간 2026.03.06~2026.03.24 (위 source_url)"
+    },
+    {
+      "id": "youth-startup-support-applicant",
+      "claim": "2026년도 예비창업패키지 예비창업자 모집 대상은 신청자 명의의 사업자등록증을 보유하지 않고 법인의 법률상 대표권도 없는 예비창업자이며, 기준일은 2026년 1월 22일이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기업마당(bizinfo) 「2026년 예비창업패키지 예비창업자 모집 수정 공고」",
+      "source_url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000119019",
+      "checked": "2026-10-27",
+      "scope": { "brand": "중소벤처기업부", "category": "창업지원", "line": "예비창업패키지 예비창업자", "years": "2026년도(기준일 2026.1.22)", "region": "KR" },
+      "caution": "세부 지원대상(나이·업력·업종 등)은 공고 본문 파일(hwpx)에 있으며 이번 조사에서 열지 못했다. 이 한 줄만으로 대상 요건 전체인 것처럼 쓰지 말 것.",
+      "cautionSource": "기업마당 공고 본문의 '※ 자세한 지원대상 공고문 참조' 문구 (위 source_url)"
+    },
+    {
+      "id": "youth-startup-support-organizer",
+      "claim": "2026년도 예비창업패키지는 소관부처가 중소벤처기업부이고 사업수행기관이 창업진흥원이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기업마당(bizinfo) 공고 — 소관부처·사업수행기관 항목",
+      "source_url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000119019",
+      "checked": "2026-10-27",
+      "scope": { "brand": "중소벤처기업부", "category": "창업지원", "line": "예비창업패키지", "years": "2026년도", "region": "KR" },
+      "caution": "K-Startup은 접수 창구이고 주관 기관이 아니다. 글에 '공고 주체 K-Startup'으로 쓰지 말 것.",
+      "cautionSource": "기업마당 공고 본문 (위 source_url)"
+    },
+    {
+      "id": "youth-startup-support-apply-channel",
+      "claim": "2026년도 예비창업패키지 신청은 K-Startup 누리집에서 온라인으로 접수했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기업마당(bizinfo) 공고 — 접수 방법 (온라인 접수 K-Startup 누리집)",
+      "source_url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000119019",
+      "checked": "2026-10-27",
+      "scope": { "brand": "중소벤처기업부", "category": "창업지원", "line": "예비창업패키지 온라인 신청", "years": "2026년도 1차", "region": "KR" }
+    },
+    {
+      "id": "youth-startup-support-notice-registered",
+      "claim": "2026년 예비창업패키지 예비창업자 모집 수정 공고(공고번호 2026-143호)는 2026년 2월 27일에 등록됐다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "중소벤처기업부 사업공고 「2026년 예비창업패키지 예비창업자 모집 수정 공고」 상세",
+      "source_url": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1065953",
+      "checked": "2026-10-27",
+      "scope": { "brand": "중소벤처기업부", "category": "창업지원", "line": "예비창업패키지 예비창업자", "years": "2026년도", "region": "KR" },
+      "caution": "중기부 상세 화면은 신청기간 칸이 비어 보이므로 신청기간은 기업마당 공고 기준으로 쓴다.",
+      "cautionSource": "중기부 상세 화면 신청기간 항목 표시 확인(2026-10-27 열람) — 기간 수치는 기업마당 공고(위 bizinfo URL)에서 확인"
+    },
+    {
+      "id": "youth-startup-support-next-round-unverified",
+      "claim": "2026년 하반기 재공고 여부와 2027년도 예비창업패키지 공고 여부는 이번 조사에서 공식 원문으로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "기업마당 공고 목록·중소벤처기업부 사업공고 목록 (2026-10-27 열람, 확인 실패)",
+      "source_url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000119019",
+      "checked": "2026-10-27",
+      "scope": { "brand": "중소벤처기업부", "category": "창업지원", "line": "예비창업패키지 다음 회차", "years": "2026 하반기~2027", "region": "KR" },
+      "caution": "다음 회차 일정과 신청 기간을 쓰지 말고 '공고 확인 필요'로만 둔다."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "topic": "산후조리 지원 (중앙 산모·신생아 건강관리 지원사업 바우처 + 지자체 산후조리 지원)",
+  "brand": "보건복지부(중앙)·지방자치단체",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "medical-expense-postpartum-200-per-birth",
+      "why": "연말정산 의료비 세액공제(산후조리원 비용 출산 1회당 200만 원 한도)다. 세금 공제 층위라 정부 지원금이나 바우처와 같은 칸에 놓으면 독자가 공제금을 지원금으로 오해한다. 이 글에서는 쓰지 않고, 필요하면 세액공제 전용 글에서 다룬다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "postpartum-central-program-name-2026",
+      "claim": "중앙 정부의 산후 지원 사업명은 ‘산모·신생아 건강관리 지원사업’이며, 보건복지부 출산정책과가 담당한다. 출산 가정에 건강관리사를 파견해 산후관리를 지원하는 1회성 전자바우처 방식이다(복지로 2026 기준연도, 문의 129).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 「복지서비스 상세(중앙)」 산모·신생아 건강관리 지원사업(WLF00001188)",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001188",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "산후관리 서비스 바우처", "line": "산모·신생아 건강관리 지원사업", "years": "2026", "region": "KR" },
+      "caution": "현금으로 주는 ‘산후조리비’가 아니다. 글에서 ‘산후조리비 지원금’이라고 쓰면 틀린다. 지자체의 현금성 지원은 별도 항목으로 다룬다.",
+      "cautionSource": "복지로 복지서비스 상세(중앙) 제공유형 ‘전자바우처(바우처)’, 서비스 내용(2026-10-27 열람)"
+    },
+    {
+      "id": "postpartum-central-eligibility-150pct",
+      "claim": "국내 주민등록(재외국민 포함) 또는 외국인등록을 둔 출산 가정이 대상이다. 선정기준은 두 가지로, 산모 또는 배우자가 생계·의료·주거·교육급여 수급자나 차상위계층에 해당하는 출산 가정, 또는 산모와 배우자의 건강보험료 본인부담금 합산액이 전국 가구 기준 중위소득 150% 이하인 출산 가정이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 「복지서비스 상세(중앙)」 산모·신생아 건강관리 지원사업 지원대상·선정기준(WLF00001188)",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001188",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "산후관리 서비스 바우처", "line": "산모·신생아 건강관리 지원사업 대상", "years": "2026", "region": "KR" },
+      "caution": "지자체가 소득기준을 넘어도 예외로 인정하는 유형(희귀난치성질환, 장애인 산모·장애 신생아, 새터민, 결혼이민, 미혼모, 분만취약지 산모, 쌍생아, 둘째·셋째 이상 출산 가정 등)을 따로 둘 수 있다. 해당 여부는 관할 보건소에서 확인하도록 안내할 것.",
+      "cautionSource": "복지로 복지서비스 상세(중앙) 선정기준 문구(중위소득 150% 기준, 2026-10-27 열람)"
+    },
+    {
+      "id": "postpartum-central-foreign-couple-visa",
+      "claim": "부부가 모두 외국인인 경우에는 각각의 국내 체류자격이 F-2(거주), F-5(영주), F-6(결혼이민) 중 하나일 때만 대상이 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 「복지서비스 상세(중앙)」 지원대상 항목(외국인 체류자격 단서)",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001188",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "산후관리 서비스 바우처", "line": "외국인 가정 대상 단서", "years": "2026", "region": "KR" },
+      "caution": "한쪽만 외국인이거나 체류자격이 다른 경우 대상 여부는 보건소에서 확인하도록 안내할 것.",
+      "cautionSource": "복지로 복지서비스 상세(중앙) 지원대상 단서 문구(2026-10-27 열람)"
+    },
+    {
+      "id": "postpartum-central-notice-2026",
+      "claim": "보건복지부 출산정책과는 ‘2026년 산모신생아 건강관리 지원사업 안내’를 2026년 1월 2일 작성해 공개했고, 상세 금액과 신청 절차는 첨부 파일(PDF·HWPX)에 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "보건복지부 보도·지침 게시판 「2026년 산모신생아 건강관리 지원사업 안내」(게시글 1488490)",
+      "source_url": "https://mohw.go.kr/board.es?act=view&bid=0026&list_no=1488490&mid=a10409020000&nPage=1&tag=",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부 출산정책과", "category": "2026 안내 공지", "line": "산모신생아 건강관리 지원사업 안내", "years": "2026 (작성일 2026-01-02)", "region": "KR" },
+      "caution": "첨부 파일은 이번 조사에서 열지 못했다. 금액·기간을 이 공지 본문에서 찾을 수 없으니, 글을 쓰기 전에 첨부를 직접 확인할 것.",
+      "cautionSource": "보건복지부 게시글 1488490 본문(첨부 파일 목록만 확인)"
+    },
+    {
+      "id": "postpartum-central-amount-period-method-unverified",
+      "claim": "2026년 산모·신생아 건강관리 지원사업의 정부지원 금액(출산 순위·소득·서비스 유형별), 신청 기간, 신청 방법(보건소 방문·복지로 온라인)은 첨부 안내 PDF를 열지 못해 공식 원문으로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "보건복지부 2026 안내 첨부(PDF·HWPX) 열람 시도 실패, 복지로 상세 페이지 확인",
+      "source_url": "https://mohw.go.kr/board.es?act=view&bid=0026&list_no=1488490&mid=a10409020000&nPage=1&tag=",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "정부지원 금액·기간", "line": "산모신생아 건강관리 지원사업 금액·신청기간", "years": "2026 (미확인)", "region": "KR" },
+      "caution": "검색 요약에 나온 금액과 신청 기간 수치는 원문 미확인이라 팩트에 넣지 않았다. 글에는 ‘금액은 2026년 안내 첨부 기준으로 보건소에서 확인’이라고만 쓸 것.",
+      "cautionSource": "보건복지부 게시글 1488490 첨부 안내(원문 미열람). 검색 요약 수치는 근거로 쓰지 않음."
+    },
+    {
+      "id": "postpartum-local-support-varies",
+      "claim": "지방자치단체는 소득기준을 넘더라도 필요하다고 인정하는 유형에 별도 기준을 정해 지원할 수 있으며, 지자체별 지원 여부는 관할 보건소에 문의하도록 복지로가 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 「복지서비스 상세(중앙)」 선정기준 하단 지자체 안내 문구(WLF00001188)",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001188",
+      "checked": "2026-10-27",
+      "scope": { "brand": "지방자치단체", "category": "지자체 추가 지원", "line": "지자체별 지원 여부", "years": "2026-10-27 열람 기준", "region": "KR" },
+      "caution": "지자체의 산후조리비 현금 지원 금액을 전국 공통처럼 쓰지 말 것. 지역명과 금액은 해당 지자체 공고로 확인한다.",
+      "cautionSource": "복지로 복지서비스 상세(중앙) 지자체 안내 문구(2026-10-27 열람)"
+    },
+    {
+      "id": "postpartum-law-helper-may-support",
+      "claim": "모자보건법 제15조의18에 따라 국가 또는 지방자치단체는 출산 후 가정에서 산후조리를 하려는 임산부가 신청하면 산후조리도우미 이용을 지원할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 「모자보건법」 제15조의18(산후조리도우미의 지원), 시행 2026.9.10",
+      "source_url": "https://www.law.go.kr/법령/모자보건법/제15조의18",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국가·지방자치단체", "category": "산후조리 도우미", "line": "산후조리도우미 지원", "years": "시행 2026.9.10 (법률 제21777호)", "region": "KR" },
+      "caution": "법의 ‘지원할 수 있다’는 임의 규정이다. 도우미 지원 금액과 기준은 시행령과 지자체 사업에서 정하므로, 법 조문만 보고 금액을 쓰지 말 것.",
+      "cautionSource": "모자보건법 제15조의18 본문(law.go.kr, 시행 2026.9.10)"
+    },
+    {
+      "id": "postpartum-law-public-postpartum-center",
+      "claim": "시·도지사 또는 시장·군수·구청장은 관할 구역의 산후조리원 수요·공급 실태 등을 고려해 공공산후조리원을 설치·운영할 수 있다(모자보건법 제15조의17 제1항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 「모자보건법」 제15조의17(지방자치단체의 산후조리원 설치), 시행 2026.9.10",
+      "source_url": "https://www.law.go.kr/법령/모자보건법/제15조의17",
+      "checked": "2026-10-27",
+      "scope": { "brand": "지방자치단체", "category": "공공산후조리원", "line": "공공산후조리원 설치·운영", "years": "시행 2026.9.10", "region": "KR" },
+      "caution": "공공산후조리원이 있다고 모든 지역에서 이용할 수 있다는 뜻은 아니다. 지역별 설치 여부와 이용 조건은 지자체에 확인할 것.",
+      "cautionSource": "모자보건법 제15조의17 본문(law.go.kr, 시행 2026.9.10)"
+    },
+    {
+      "id": "postpartum-no-national-cash-unverified",
+      "claim": "전국 공통으로 정해진 산후조리비 현금 지원 금액은 이번 조사에서 확인하지 못했다. 중앙 공식 자료에서 확인된 것은 건강관리사 파견 바우처 형태뿐이다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "복지로 「복지서비스 상세(중앙)」 확인 시도(현금성 산후조리비 항목 없음)",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001188",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부·지방자치단체", "category": "산후조리비 현금 지원", "line": "전국 공통 현금 지원 금액", "years": "2026-10-27 확인 시도", "region": "KR" },
+      "caution": "전국 평균 금액을 추정해 쓰지 말 것. ‘지자체마다 다르다’는 식으로 안내하고, 지역별 공고를 확인하게 한다.",
+      "cautionSource": "해당 없음(미확인 상태 기록)"
+    }
+  ]
+}
