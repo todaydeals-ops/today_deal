@@ -195,7 +195,7 @@ export function buildFigureHtml(im: BodyImage, alt: string): string {
   const cap = credit
     ? `<figcaption>${im.link ? `<a href="${escAttr(im.link)}" target="_blank" rel="noopener noreferrer">` : ""}사진 ${escAttr(credit)}${im.link ? "</a>" : ""}</figcaption>`
     : "";
-  return `<figure class="td-fig"><div class="td-figimg"><img src="${escAttr(im.url)}" alt="${escAttr(alt)}" loading="lazy" decoding="async" /></div>${cap}</figure>`;
+  return `<figure class="td-fig"><div class="td-figimg"><img src="${escAttr(im.url)}" alt="${escAttr(alt)}" loading="lazy" decoding="async" onerror="var f=this.closest('figure');if(f)f.remove()" /></div>${cap}</figure>`;
 }
 
 // 본문 단락에 그대로 통과시킬 태그(스타일만 벗긴다)

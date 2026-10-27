@@ -1,6 +1,7 @@
 // 매거진 데이터 접근. magazine 테이블 없으면 빈 배열로 폴백.
 import { getSupabaseAdmin } from "@/lib/supabase/server";
 import { cacheNonEmpty } from "@/lib/data/cache";
+import openverseMirror from "@/content/openverse-mirror.json"; // Openverse 썸네일 → 우리 저장소 사본(직접 불러오면 느리고 간헐적으로 깨진다)
 import imgManifest from "@/content/magazine-images.json"; // ★대표 이미지(코덱스 제작) — slug→URL. 있으면 images[0] 을 교체한다
 
 export interface MagazineArticle {
@@ -75,6 +76,10 @@ function map(r: Row): MagazineArticle {
     }
     bodyHtml = bodyHtml.slice(m[0].length);
   }
+  // Openverse 이미지는 사본 주소로 바꾼다(라이선스 표기 credit/source/link 는 그대로).
+  if (images) images = images.map((im) => { const mirrored = (openverseMirror as Record<string, string>)[im.url]; return mirrored ? { ...im, url: mirrored } : im; });
+  // 사본이 없는 Openverse 이미지는 원본을 못 가져오는 것(원본 삭제·서버 오류)이라 계속 깨진다 → 싣지 않는다.
+  if (images) images = images.filter((im) => !/openverse[.]org/.test(im.url));
   // 코덱스로 만든 대표 이미지는 manifest 에 고정돼 있다. 본문 삽입 이미지(images[1~])는 RAIL 의 스톡을 그대로 둔다.
   const aiHero = (imgManifest as Record<string, string>)[r.slug];
   if (aiHero) images = [{ url: aiHero, credit: "오늘의딜 AI 제작" }, ...(images ?? []).slice(1)];
