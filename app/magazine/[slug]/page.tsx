@@ -194,8 +194,8 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
     ) : null;
   const srcHasTag = hasSources && a.sources!.some((s) => /^\[(공식|후기)\]/.test(s.label));
   const creditOf = (im: { credit?: string; source?: string }) => [im.credit, im.source].filter(Boolean).join(" · ");
-  // 우리가 만든 AI 대표 이미지(credit "오늘의딜 AI 제작")는 캡션을 달지 않는다. 라이선스 표기가 필요한 스톡 사진만 작가·출처를 보여 준다.
-  const isOwnAiImage = (im: { credit?: string }) => /AI 제작/.test(im.credit ?? "");
+  // 캡션은 표기가 의무인 CC 라이선스(Openverse)에만 단다. 우리가 만든 AI 이미지와 Pexels 는 표기 의무가 없어 캡션을 달지 않는다(사장님 지시 2026-10-28).
+  const noCreditNeeded = (im: { credit?: string; source?: string }) => !/openverse/i.test(im.source ?? "");
   const creditLabel = (im: { credit?: string; source?: string }) => `사진 ${creditOf(im)}`;
 
   // 목차: 먼저 결론(00) · 본문 소제목(01…) · 나머지 블록(·)
@@ -399,7 +399,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
               )}
             </div>
             {/* 스톡 사진 라이선스 표기(작가·출처·원본 링크) — 반드시 노출. 시안처럼 이미지 아래 캡션 */}
-            {heroImg?.url && !isOwnAiImage(heroImg) && (creditOf(heroImg) || heroImg.link) && (
+            {heroImg?.url && !noCreditNeeded(heroImg) && (creditOf(heroImg) || heroImg.link) && (
               <figcaption className={styles.heroCredit}>
                 {heroImg.link ? (
                   <a href={heroImg.link} target="_blank" rel="noopener noreferrer">{creditLabel(heroImg)}</a>

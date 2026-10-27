@@ -320,9 +320,10 @@ export function isCheckableHeading(label: string | null): boolean {
   return !/\bAS\b|신호|오해|부를 코드|불러야|부르세요|가야 (?:하|할)|넘겨야|접수|상담해야|고려해야|영역|화재|순서를 따지지|주의|예외|⚠/.test(label);
 }
 
-/** 대표 이미지 외 본문 삽입 이미지 <figure>. 스톡 사진 라이선스 표기(credit·source·link)를 반드시 싣는다. */
+/** 대표 이미지 외 본문 삽입 이미지 <figure>.
+ *  표기(credit·source·link)는 표기가 의무인 CC 라이선스(Openverse)에만 싣는다. Pexels 는 표기 의무가 없어 캡션을 달지 않는다(사장님 지시 2026-10-28). */
 export function buildFigureHtml(im: BodyImage, alt: string): string {
-  const credit = [im.credit, im.source].filter(Boolean).join(" · ");
+  const credit = /openverse/i.test(im.source ?? "") ? [im.credit, im.source].filter(Boolean).join(" · ") : "";
   const cap = credit
     ? `<figcaption>${im.link ? `<a href="${escAttr(im.link)}" target="_blank" rel="noopener noreferrer">` : ""}사진 ${escAttr(credit)}${im.link ? "</a>" : ""}</figcaption>`
     : "";
