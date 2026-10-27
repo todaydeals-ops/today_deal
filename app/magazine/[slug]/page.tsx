@@ -17,6 +17,7 @@ import { parseArticleBody, splitSentences, type TocItem } from "@/lib/magazine/a
 import ChecklistProvider from "@/components/article/ChecklistProvider";
 import ChecklistGroup from "@/components/article/ChecklistGroup";
 import ChecklistProgress from "@/components/article/ChecklistProgress";
+import DecisionTree from "@/components/article/DecisionTree";
 import ArticleFeedback from "@/components/article/ArticleFeedback";
 import MobileArticleBar from "@/components/article/MobileArticleBar";
 import WikiBacklinksBox from "@/components/article/WikiBacklinksBox";
@@ -169,6 +170,29 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   const hasFaq = !!a.faq && a.faq.length > 0;
   const hasSources = !!a.sources && a.sources.length > 0;
   const heroImg = a.image;
+  // 매거진 상세 시안(코너 배지 헤드 + 코너 소개 카드)은 AS 셀프체크를 뺀 모든 글의 기본 템플릿이다.
+  // AS 셀프체크(corner==="repair")는 같은 템플릿의 변형(빵부스러기 헤드 + 셀프체크 진행 카드).
+  const isMagazine = !isB4as;
+  // 분야 글(잠자리·영양제·뷰티 성분)은 코너 배지 옆 분류 칸이 분야 홈·분류 페이지로 가는 링크다(예전 빵부스러기의 안쪽 링크를 잃지 않으려고).
+  const categoryEl = isSub ? (
+    <Link href={rel(labHref(subKey, subCat?.key))}>
+      {subName}
+      {subCat ? ` · ${subCat.label}` : ""}
+    </Link>
+  ) : a.field ? (
+    <span>{a.field}</span>
+  ) : null;
+  const closingParas = a.closing ? splitSentences(a.closing) : [];
+  // 검색 태그 (브랜드·모델명·에러코드 — 롱테일 유입). 시안에서는 FAQ 바로 아래에 붙는다.
+  const tagsEl =
+    a.tags && a.tags.length > 0 ? (
+      <div className={styles.tags}>
+        {a.tags.map((t) => (
+          <span key={t} className={styles.tag}>#{t}</span>
+        ))}
+      </div>
+    ) : null;
+  const srcHasTag = hasSources && a.sources!.some((s) => /^\[(공식|후기)\]/.test(s.label));
   const creditOf = (im: { credit?: string; source?: string }) => [im.credit, im.source].filter(Boolean).join(" · ");
   const creditLabel = (im: { credit?: string; source?: string }) => (/AI 제작/.test(im.credit ?? "") ? `설명용 이미지 · ${creditOf(im)}` : `사진 ${creditOf(im)}`);
 
@@ -193,7 +217,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   const bodyArea = (
     <>
       <div className={styles.body}>
-        <article className={styles.article}>
+        <article className={`${styles.article} ${isMagazine ? styles.artMag : ""}`}>
           {/* 먼저 결론 — 핵심 요약(GEO: AI 가 본문 첫머리에서 즉답 발췌) */}
           {hasSummary && (
             <section id="summary" aria-label="먼저 결론" className={`${styles.conclusion} ${styles.anchor}`}>
@@ -212,6 +236,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
           {/* 본문 — 구조를 알아본 덩어리(표·단계 목록)는 시안 모양으로, 셀프체크 단계는 체크리스트로 */}
           {parsed.segments.map((seg, i) => {
             if (seg.kind === "html") return <div key={i} className={styles.prose} dangerouslySetInnerHTML={{ __html: seg.html }} />;
+            if (seg.kind === "tree") return <DecisionTree key={i} tree={seg.tree} />;
             const first = !ckFirstSeen;
             ckFirstSeen = true;
             return <ChecklistGroup key={i} start={seg.start} items={seg.items} anchorId={seg.anchorId} first={first} />;
@@ -220,19 +245,23 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
           {/* 짚고 가요 — 문장 2개씩 문단 분리로 가독성 확보 */}
           {a.callout && (
             <section id="callout" aria-label="짚고 가요" className={`${styles.callout} ${styles.anchor}`}>
-              <div className={styles.boxLabel}>짚고 가요</div>
-              {splitSentences(a.callout).map((p, i) => (
-                <p key={i} dangerouslySetInnerHTML={{ __html: p }} />
-              ))}
+              <span className={styles.calloutIco} aria-hidden="true">!</span>
+              <div className={styles.calloutBody}>
+                <span className={styles.calloutTitle}>짚고 가요</span>
+                {splitSentences(a.callout).map((p, i) => (
+                  <p key={i} dangerouslySetInnerHTML={{ __html: p }} />
+                ))}
+              </div>
             </section>
           )}
 
           {/* 정직한 마무리 — 통짜 문단이 답답해 보이지 않게 문장 2개씩 */}
           {a.closing && (
             <section id="closing" aria-label="정직한 마무리" className={`${styles.closing} ${styles.anchor}`}>
-              <div className={styles.boxLabel}>정직한 마무리</div>
-              {splitSentences(a.closing).map((p, i) => (
-                <p key={i} dangerouslySetInnerHTML={{ __html: p }} />
+              <span className={styles.closingLabel}>정직한 마무리</span>
+              {/* 첫 문단이 20px/600 리드, 나머지는 본문 크기 */}
+              {closingParas.map((p, i) => (
+                <p key={i} className={i === 0 ? styles.closingLead : undefined} dangerouslySetInnerHTML={{ __html: p }} />
               ))}
             </section>
           )}
@@ -241,25 +270,20 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
           {hasFaq && (
             <section id="faq" aria-label="자주 묻는 질문" className={`${styles.faq} ${styles.anchor}`}>
               <h2 className={styles.secTitle}>자주 묻는 질문</h2>
+              {/* 시안처럼 하나만 열린다(같은 name 의 details 는 브라우저가 하나만 열어 둔다). 첫 질문은 펼쳐 둔다 */}
               <div className={styles.faqList}>
                 {a.faq!.map((f, i) => (
-                  <details key={i} className={styles.faqItem}>
+                  <details key={i} name="faq" open={i === 0} className={styles.faqItem}>
                     <summary>{f.q}</summary>
                     <p className={styles.faqA}>{f.a}</p>
                   </details>
                 ))}
               </div>
+              {tagsEl}
             </section>
           )}
-
-          {/* 검색 태그 (브랜드·모델명·에러코드 — 롱테일 유입) */}
-          {a.tags && a.tags.length > 0 && (
-            <div className={styles.tags}>
-              {a.tags.map((t) => (
-                <span key={t} className={styles.tag}>#{t}</span>
-              ))}
-            </div>
-          )}
+          {/* FAQ 가 없는 글만 태그를 따로 둔다 */}
+          {!hasFaq && tagsEl}
 
           {/* 생활백과 역링크 — 이 글을 근거로 쓴 항목으로 */}
           <WikiBacklinksBox slug={a.slug} />
@@ -269,12 +293,12 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
             <section id="sources" aria-label="출처와 확인" className={`${styles.src} ${styles.anchor}`}>
               <div className={styles.srcHead}>
                 <h2 className={styles.secTitle}>출처와 확인</h2>
-                <span className={styles.srcDate}>확인 {fmtDate(a.createdAt)}</span>
+                <span className={styles.srcDate}>{isB4as ? "마지막 확인" : "확인"} {fmtDate(a.createdAt)}</span>
               </div>
               {isB4as && (
                 <p className={styles.srcLead}>모델·연식에 따라 버튼 위치와 조작 방법이 다릅니다. 내 제품의 정확한 절차와 사진은 아래 공식 안내에서 확인하세요.</p>
               )}
-              <ol className={styles.srcList}>
+              <ol className={`${styles.srcList} ${srcHasTag ? styles.srcWithTag : ""}`}>
                 {a.sources!.map((s, i) => {
                   // 라벨 앞의 [공식]/[후기] 표기는 작은 태그로 — 공식 자료와 사용자 자료를 구분해 보여 준다
                   const m = s.label.match(/^\[(공식|후기)\]\s*/);
@@ -283,8 +307,8 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
                     <li key={i}>
                       <a href={s.url} target="_blank" rel="noopener noreferrer">
                         <span className={styles.srcNo}>[{i + 1}]</span>
+                        {srcHasTag && (m ? <span className={`${styles.srcTag} ${m[1] === "후기" ? styles.srcTagAlt : ""}`}>{m[1]}</span> : <span />)}
                         <span>
-                          {m && <span className={`${styles.srcTag} ${m[1] === "후기" ? styles.srcTagAlt : ""}`}>{m[1]}</span>}
                           {m ? s.label.slice(m[0].length) : s.label}
                           {host && <span className={styles.srcHost}> · {host}</span>}
                         </span>
@@ -303,7 +327,7 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
         </article>
 
         {/* 사이드바: 목차 카드 + (체크리스트가 있는 글만) 진행 카드. 모바일에서는 숨기고 하단 CTA 가 대신한다 */}
-        <aside className={styles.aside} aria-label="목차와 진행">
+        <aside className={styles.aside} aria-label={isMagazine ? "목차와 코너 소개" : "목차와 진행"}>
           <nav className={styles.tocCard} aria-label="이 글의 순서">
             <span className={styles.tocTitle}>이 글의 순서</span>
             {toc.map((t) => (
@@ -314,6 +338,14 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
             ))}
           </nav>
           {hasCheck && <ChecklistProgress anchorId={parsed.firstCheckId!} />}
+          {/* 코너 소개 카드 — 문구는 코너 정의(lib/magazine/corners.tsx)의 한 줄 약속 그대로 */}
+          {isMagazine && (
+            <div className={styles.cornerCard}>
+              <span className={styles.cornerLabel}>{c.name} 코너</span>
+              <span className={styles.cornerDesc}>{c.desc}</span>
+              <Link href={`/?corner=${a.corner}`} className={styles.cornerLink}>{c.name} 전체 →</Link>
+            </div>
+          )}
         </aside>
       </div>
 
@@ -331,15 +363,23 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
 
       <main className={`rn-wrap ${styles.root}`}>
         {/* ── ① 아티클 헤드: 좌 틴트 박스 + 우 대표 이미지 ── */}
-        <section className={styles.head} aria-label="아티클 머리">
+        <section className={`${styles.head} ${isMagazine ? styles.headMag : ""}`} aria-label="아티클 머리">
           <div className={styles.headText}>
-            <nav className={styles.crumbs} aria-label="현재 위치">
-              <Link href="/">홈</Link>
-              <span aria-hidden="true">›</span>
-              {crumb1}
-              {crumb2 && <span aria-hidden="true">›</span>}
-              {crumb2}
-            </nav>
+            {isMagazine ? (
+              // 매거진 상세 시안: 코너 배지(--ink 바탕 흰 글씨) + 분류
+              <div className={styles.badgeRow}>
+                <Link href={`/?corner=${a.corner}`} className={styles.cornerBadge}>{c.name}</Link>
+                {categoryEl && <span className={styles.category}>{categoryEl}</span>}
+              </div>
+            ) : (
+              <nav className={styles.crumbs} aria-label="현재 위치">
+                <Link href="/">홈</Link>
+                <span aria-hidden="true">›</span>
+                {crumb1}
+                {crumb2 && <span aria-hidden="true">›</span>}
+                {crumb2}
+              </nav>
+            )}
             <h1 className={styles.title}>{a.title}</h1>
             {lead && <p className={styles.lead}>{lead}</p>}
             <div className={styles.meta}>
@@ -349,24 +389,24 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
               {hasSources && <span className={styles.badge}>출처 {a.sources!.length}건 · {fmtMD(a.createdAt)} 확인</span>}
             </div>
           </div>
-          <div className={styles.heroCell}>
+          <figure className={styles.heroCell}>
             <div className={`rn-img ${styles.hero}`}>
               {heroImg?.url && (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img src={heroImg.url} alt={a.title} loading="eager" fetchPriority="high" decoding="async" />
               )}
             </div>
-            {/* 스톡 사진 라이선스 표기(작가·출처·원본 링크) — 반드시 노출 */}
+            {/* 스톡 사진 라이선스 표기(작가·출처·원본 링크) — 반드시 노출. 시안처럼 이미지 아래 캡션 */}
             {heroImg?.url && (creditOf(heroImg) || heroImg.link) && (
-              <div className={styles.heroCredit}>
+              <figcaption className={styles.heroCredit}>
                 {heroImg.link ? (
                   <a href={heroImg.link} target="_blank" rel="noopener noreferrer">{creditLabel(heroImg)}</a>
                 ) : (
                   <>{creditLabel(heroImg)}</>
                 )}
-              </div>
+              </figcaption>
             )}
-          </div>
+          </figure>
         </section>
 
         {/* ── ② 본문 + 사이드바 ── */}

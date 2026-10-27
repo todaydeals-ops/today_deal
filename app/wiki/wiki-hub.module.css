@@ -1,116 +1,187 @@
-/* 생활백과 허브 - 2026-10-27 리뉴얼. 홈(home.module.css)의 검색 히어로·생활백과 카드와 AS 목록(as-list.module.css)의 탭·헤드를 그대로 따른다.
-   토큰은 app/renewal.css 의 --rn-* 를 쓴다.
+/* 생활백과 허브 - 2026-10-27 리뉴얼 (시안: 오늘의딜 생활백과.dc.html, README 5절). 시안의 인라인 수치를 문자 그대로 옮겼다.
+   토큰은 app/renewal.css 의 --rn-* 를 쓴다. 시안에만 있는 oklch 값은 아래 --wh-* 로 두고 hex 폴백(oklch 를 환산한 값)을 건다.
    ★모든 규칙을 .root 아래에 둔다. 전역 ".rn-page a { color: inherit }"(명시도 0,1,1)와 ".rn-page a:hover { color: 초록 }"(0,2,1)을
-   이기려면 클래스 2~3개짜리 선택자가 필요하다(as-list.module.css 와 같은 이유).
-   모바일 브레이크포인트는 760px(renewal.css 와 같다). 허브 카드에는 이미지를 넣지 않는다(225개라 용량이 커진다). */
+   이기려면 클래스 2~3개짜리 선택자가 필요하다(as-list.module.css 와 같은 이유). 링크(카드·행) 안의 글자는 각자 색을 직접 갖는다.
+   ★전역 ".rn-page :focus-visible { border-radius: 6px }" 가 요소 모양을 바꾸므로 포커스 가능한 요소마다 자기 radius 를 다시 건다.
+   모바일 브레이크포인트는 760px(renewal.css 와 같다). 시안에 모바일이 없어 홈·AS 목록의 모바일 처리를 따른다
+   (16px 여백 · 칩 줄바꿈 · 터치 44px · 가로 스크롤 없음). */
 
 .root {
-  --wh-pill-fg: #363c39;   /* oklch(0.35 0.01 160) 칩 글자 */
-  --wh-sub: #5f6561;       /* oklch(0.5 0.01 160) 보조 글자 */
-  --wh-empty: #5f6561;
+  --wh-row: #e9ecea;          /* oklch(0.94 0.004 160) 다가오는 행 구분선 */
+  --wh-thumb: #e5eee8;        /* oklch(0.94 0.012 155) 썸네일 바탕 */
+  --wh-pill-fg: #363c39;      /* oklch(0.35 0.01 160) 칩 글자 */
+  --wh-lead: #434946;         /* oklch(0.4 0.01 160) 리드·상시 배지 글자 */
+  --wh-sub: #5f6561;          /* oklch(0.5 0.01 160) 보조 글자 */
+  --wh-live-bg: #daf7e3;      /* oklch(0.95 0.04 155) */
+  --wh-live-fg: #005a25;      /* oklch(0.4 0.13 155) */
+  --wh-tba-bg: #fef0d8;       /* oklch(0.96 0.035 80) */
+  --wh-tba-fg: #774914;       /* oklch(0.45 0.09 65) */
+  --wh-closed-fg: #676a68;    /* oklch(0.52 0.005 160) — 시안은 0.58(대비 3.9:1)이라 4.9:1 이 되게 한 단계 진하게 */
+  --wh-dot-tba: #cd9130;      /* oklch(0.7 0.13 75) */
+  --wh-dot-always: #99a09c;   /* oklch(0.7 0.01 160) */
+  --wh-dot-closed: #c1c5c3;   /* oklch(0.82 0.005 160) */
+  --wh-on-bg: #e5f7eb;        /* oklch(0.96 0.025 155) 선택된 상태 필터 */
+  --wh-on-fg: #005423;        /* oklch(0.38 0.12 155) */
+  --wh-on-bd: #94cda7;        /* oklch(0.8 0.08 155) */
 }
 @supports (color: oklch(0 0 0)) {
   .root {
+    --wh-row: oklch(0.94 0.004 160);
+    --wh-thumb: oklch(0.94 0.012 155);
     --wh-pill-fg: oklch(0.35 0.01 160);
+    --wh-lead: oklch(0.4 0.01 160);
     --wh-sub: oklch(0.5 0.01 160);
-    --wh-empty: oklch(0.5 0.01 160);
+    --wh-live-bg: oklch(0.95 0.04 155);
+    --wh-live-fg: oklch(0.4 0.13 155);
+    --wh-tba-bg: oklch(0.96 0.035 80);
+    --wh-tba-fg: oklch(0.45 0.09 65);
+    --wh-closed-fg: oklch(0.52 0.005 160);
+    --wh-dot-tba: oklch(0.7 0.13 75);
+    --wh-dot-always: oklch(0.7 0.01 160);
+    --wh-dot-closed: oklch(0.82 0.005 160);
+    --wh-on-bg: oklch(0.96 0.025 155);
+    --wh-on-fg: oklch(0.38 0.12 155);
+    --wh-on-bd: oklch(0.8 0.08 155);
   }
 }
 
-/* ── 히어로: 아이브로 + H1 + 설명 + 검색창 ──
-   검색 드롭다운이 아래 sticky 칩 줄(z 15)에 가려지지 않게 히어로를 한 단계 위에 둔다(헤더 20 보다는 아래). */
-.root .hero { position: relative; z-index: 16; display: flex; flex-direction: column; gap: 16px; padding: 40px 0 28px; }
-.root .h1 { margin: 0; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.18; letter-spacing: -0.04em; font-weight: 800; text-wrap: pretty; }
-.root .lead { margin: 0; font-size: 17px; line-height: 1.7; color: var(--rn-body-muted); max-width: 620px; text-wrap: pretty; }
+/* 화면낭독기 전용 안내(결과 건수) */
+.root .srOnly { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
-/* 검색창: 홈과 같은 모양(60px · 2px ink · radius 14) */
-.root .searchWrap { position: relative; max-width: 600px; margin-top: 4px; }
-.root .searchBox { display: flex; align-items: center; gap: 12px; height: 60px; padding: 0 8px 0 20px; border: 2px solid var(--rn-ink); border-radius: 14px; background: #fff; }
-.root .searchBox:focus-within { border-color: var(--rn-green); }
-.root .searchIco { width: 16px; height: 16px; border: 2.5px solid var(--rn-ink); border-radius: 50%; flex: none; }
-.root .searchBox input { flex: 1; min-width: 0; height: 100%; border: 0; padding: 0; font-size: 17px; font-family: inherit; background: transparent; color: var(--rn-ink); -webkit-appearance: none; appearance: none; }
-.root .searchBox input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
-.root .searchBtn { height: 44px; padding: 0 20px; border: 0; border-radius: 10px; background: var(--rn-green); color: #fff; font-family: inherit; font-size: 15px; font-weight: 700; cursor: pointer; flex: none; }
-.root .searchBtn:hover { background: var(--rn-green-hover); }
+/* ── 헤드: 2열 stretch. 좌 tint 박스(소개 + 검색) · 우 다가오는 마감·시작 ── */
+.root .head { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 16px; padding: 28px 0 32px; align-items: stretch; }
+.root .intro { display: flex; flex-direction: column; justify-content: center; gap: 18px; padding: 36px 40px; border-radius: 20px; background: var(--rn-tint); min-width: 0; }
+.root .label { font-family: var(--rn-mono); font-size: 12px; letter-spacing: 0.12em; color: var(--rn-green-text); font-weight: 600; }
+.root .h1 { margin: 0; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.15; letter-spacing: -0.04em; font-weight: 800; text-wrap: pretty; }
+.root .lead { margin: 0; font-size: 17px; line-height: 1.7; color: var(--wh-lead); text-wrap: pretty; }
+.root .lead strong { color: var(--rn-ink); font-weight: 700; }
 
-.root .drop { position: absolute; left: 0; right: 0; top: 68px; z-index: 10; background: #fff; border: 1px solid var(--rn-line-2); border-radius: 14px; box-shadow: var(--rn-shadow-drop); padding: 8px; display: flex; flex-direction: column; max-height: min(480px, 62vh); overflow-y: auto; }
-.root .dropRow { display: flex; gap: 12px; align-items: baseline; min-height: 44px; padding: 12px; border-radius: 8px; color: var(--rn-ink); }
-.root .dropRow:hover { background: var(--rn-tint-green); color: var(--rn-ink); }
-.root .dropRow:focus-visible { border-radius: 8px; }
-.root .dropType { flex: none; font-family: var(--rn-mono); font-size: 11px; color: var(--rn-green-text); font-weight: 600; min-width: 96px; }
-.root .dropTitle { font-size: 15px; line-height: 1.45; min-width: 0; overflow-wrap: anywhere; }
-.root .dropEmpty { padding: 14px 12px; font-size: 14px; line-height: 1.6; color: var(--wh-empty); }
-.root .dropAll { display: flex; align-items: center; min-height: 44px; padding: 12px; margin-top: 4px; border-top: 1px solid var(--rn-line); font-size: 13px; font-weight: 600; color: var(--rn-green-text); }
+/* 검색창: 56px · 2px ink · radius 14 (시안은 버튼 없이 입력 즉시 필터) */
+.root .search { display: flex; align-items: center; gap: 10px; height: 56px; padding: 0 16px; border: 2px solid var(--rn-ink); border-radius: 14px; background: #fff; }
+.root .search:focus-within { border-color: var(--rn-green); }
+.root .searchIco { width: 15px; height: 15px; border: 2.5px solid var(--rn-ink); border-radius: 50%; flex: none; }
+.root .search input { flex: 1; min-width: 0; height: 100%; border: 0; padding: 0; font-size: 16px; font-family: inherit; background: transparent; color: var(--rn-ink); -webkit-appearance: none; appearance: none; }
+.root .search input::-webkit-search-cancel-button { cursor: pointer; }
 
-/* ── 종류 칩 줄: 데스크톱은 헤더 아래 sticky, 칩은 앵커 이동 ── */
-.root .bar { position: sticky; top: var(--rn-header-h); z-index: 15; background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(8px); border-top: 1px solid var(--rn-line); border-bottom: 1px solid var(--rn-line); }
-.root .barIn { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; padding: 10px 0; }
-.root .typeChip { position: relative; flex: none; white-space: nowrap; height: 36px; padding: 0 14px; display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--rn-line-3); border-radius: 999px; background: #fff; color: var(--wh-pill-fg); font-size: 14px; font-weight: 600; }
-.root .typeChip::before { content: ""; position: absolute; inset: -4px 0; } /* 터치 영역 44px */
-.root .typeChip:hover { border-color: var(--rn-green); color: var(--rn-green-text); }
-.root .typeChip em { font-style: normal; font-family: var(--rn-mono); font-size: 12px; font-weight: 600; color: var(--rn-green-text); }
-.root .typeChip:focus-visible { border-radius: 999px; }
+/* 다가오는 마감·시작 카드 */
+.root .upcoming { display: flex; flex-direction: column; padding: 24px 26px; border: 1px solid var(--rn-line-2); border-radius: 20px; min-width: 0; }
+.root .upHead { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-bottom: 10px; }
+.root .upTitle { margin: 0; font-size: 16px; font-weight: 700; }
+.root .upAsOf { font-family: var(--rn-mono); font-size: 12px; color: var(--wh-sub); white-space: nowrap; }
+.root .upRow { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 12px; align-items: center; min-height: 52px; padding: 8px 0; border-top: 1px solid var(--wh-row); color: var(--rn-ink); }
+.root .upRow:focus-visible { border-radius: 8px; }
+.root .upD { font-family: var(--rn-mono); font-size: 16px; font-weight: 600; color: var(--rn-green-text); white-space: nowrap; }
+.root .upMain { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.root .upName { font-size: 15px; font-weight: 600; line-height: 1.35; color: var(--rn-ink); overflow-wrap: anywhere; }
+.root .upRow:hover .upName { color: var(--rn-green-text); }
+.root .upCat { font-size: 12px; color: var(--wh-sub); }
+.root .upDate { font-family: var(--rn-mono); font-size: 13px; color: var(--rn-muted); white-space: nowrap; }
+.root .upEmpty { margin: 0; padding: 14px 0 4px; border-top: 1px solid var(--wh-row); font-size: 14px; line-height: 1.6; color: var(--rn-body-muted); }
 
-/* ── 종류별 섹션 ── (.rn-sec 의 머리·간격을 그대로 쓴다) */
-.root .sec { scroll-margin-top: calc(var(--rn-header-h) + 60px); }
-.root .firstSec { border-top: 0; }
-.root .blurb { margin: 0; font-size: 15px; line-height: 1.6; color: var(--rn-body-muted); text-wrap: pretty; }
-.root .count { flex: none; font-family: var(--rn-mono); font-size: 12px; font-weight: 600; color: var(--wh-sub); padding-bottom: 4px; }
-.root .secBody { display: flex; flex-direction: column; gap: 32px; }
+/* ── 대분류 카드 3개: 72px 썸네일 + 이름·개수 + 설명. 선택 = 2px 초록 보더 + tint-green-2 ── */
+.root .tops { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 12px; padding-bottom: 20px; scroll-margin-top: calc(var(--rn-header-h) + 12px); }
+.root .top { box-sizing: border-box; width: 100%; display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 14px; align-items: center; padding: 8px 18px 8px 8px; border-radius: 16px; border: 1px solid var(--rn-line-2); background: #fff; font-family: inherit; text-align: left; cursor: pointer; color: var(--rn-ink); scroll-margin-top: calc(var(--rn-header-h) + 12px); }
+.root .top:hover { border-color: var(--rn-green); }
+.root .top:focus-visible { border-radius: 16px; }
+.root .topOn { border: 2px solid var(--rn-green); background: var(--rn-tint-green-2); padding: 7px 17px 7px 7px; } /* 보더가 1px 두꺼워진 만큼 안쪽 여백을 줄여 카드 크기를 고정 */
+.root .topImg { display: block; width: 72px; height: 72px; border-radius: 12px; overflow: hidden; background: var(--wh-thumb); }
+.root .topImg img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.root .topText { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.root .topRow { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.root .topName { font-size: 18px; font-weight: 800; letter-spacing: -0.02em; }
+.root .topCount { font-family: var(--rn-mono); font-size: 14px; font-weight: 600; color: var(--rn-green-text); }
+.root .topDesc { font-size: 13px; line-height: 1.5; color: var(--rn-muted); text-wrap: pretty; }
 
-/* 묶음 바로가기 칩 */
-.root .jump { display: flex; flex-wrap: wrap; gap: 8px; }
-.root .jumpChip { position: relative; flex: none; white-space: nowrap; height: 34px; padding: 0 14px; display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--rn-line-3); border-radius: 999px; background: #fff; color: var(--wh-pill-fg); font-size: 14px; }
-.root .jumpChip::before { content: ""; position: absolute; inset: -5px 0; }
-.root .jumpChip:hover { border-color: var(--rn-green); color: var(--rn-green-text); }
-.root .jumpChip em { font-style: normal; font-family: var(--rn-mono); font-size: 12px; font-weight: 600; color: var(--rn-green-text); }
-.root .jumpChip:focus-visible { border-radius: 999px; }
+/* ── 필터 바: 상하 1px 보더. ① 소분류 pill 칩 + 개수 ② 상태 필터 ── */
+.root .filters { display: flex; flex-direction: column; gap: 12px; padding: 16px 0; border-top: 1px solid var(--rn-line); border-bottom: 1px solid var(--rn-line); scroll-margin-top: calc(var(--rn-header-h) + 8px); }
+.root .subs { display: flex; gap: 6px; flex-wrap: wrap; }
+.root .sub { position: relative; flex: none; white-space: nowrap; height: 36px; padding: 0 14px; display: flex; align-items: center; gap: 6px; border-radius: 999px; border: 1px solid var(--rn-line-3); background: #fff; color: var(--wh-pill-fg); font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+.root .sub::before { content: ""; position: absolute; inset: -4px 0; } /* 터치 영역 44px */
+.root .sub:hover { border-color: var(--rn-green); }
+.root .sub:focus-visible { border-radius: 999px; }
+.root .subOn, .root .subOn:hover { background: var(--rn-ink); border-color: var(--rn-ink); color: #fff; }
+.root .subN { font-family: var(--rn-mono); font-size: 12px; font-weight: 400; opacity: 0.7; }
 
-/* 묶음(group) 소제목 */
-.root .grp { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: calc(var(--rn-header-h) + 72px); }
-.root .grpHead { margin: 0; display: flex; align-items: baseline; gap: 10px; font-size: 20px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.4; }
-.root .grpHead span { font-family: var(--rn-mono); font-size: 12px; font-weight: 600; letter-spacing: 0; color: var(--wh-sub); }
+.root .stRow { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.root .stLabel { font-size: 13px; font-weight: 700; color: var(--rn-muted); padding-right: 4px; }
+.root .stBtn { position: relative; flex: none; white-space: nowrap; height: 32px; padding: 0 12px; display: flex; align-items: center; gap: 6px; border-radius: 8px; border: 1px solid var(--rn-line-2); background: #fff; color: var(--wh-pill-fg); font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer; }
+.root .stBtn::before { content: ""; position: absolute; inset: -6px 0; } /* 터치 영역 44px */
+.root .stBtn:hover { border-color: var(--rn-green); }
+.root .stBtn:focus-visible { border-radius: 8px; }
+.root .stOn, .root .stOn:hover { background: var(--wh-on-bg); border-color: var(--wh-on-bd); color: var(--wh-on-fg); }
+.root .dot { width: 7px; height: 7px; border-radius: 50%; flex: none; background: var(--rn-ink); }
+.root .dLive { background: var(--rn-green); }
+.root .dSoon { background: var(--rn-ink); }
+.root .dTba { background: var(--wh-dot-tba); }
+.root .dAlways { background: var(--wh-dot-always); }
+.root .dClosed { background: var(--wh-dot-closed); }
+.root .dAll { background: var(--rn-ink); }
 
-/* 항목 카드: 홈의 생활백과 카드(wikiCard)와 같은 외관 — 1px 보더 · radius 14 · 제목 + 2줄 요약 */
-.root .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+/* ── 그룹 리스트: 소분류별 H2 + 개수 + "N개 모두 보기 →", 카드 그리드 ── */
+.root .groups { display: flex; flex-direction: column; gap: 36px; padding: 28px 0 56px; }
+.root .group { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: calc(var(--rn-header-h) + 12px); }
+.root .gHead { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+.root .gTitle { margin: 0; font-size: 22px; font-weight: 800; letter-spacing: -0.03em; }
+.root .gCount { font-family: var(--rn-mono); font-size: 15px; font-weight: 600; color: var(--rn-green-text); }
+.root .gMore { flex: none; padding: 12px 4px; margin: -12px -4px; border: 0; background: transparent; font-family: inherit; font-size: 14px; font-weight: 600; color: var(--rn-muted); cursor: pointer; } /* 글자는 그대로, 터치 영역만 44px */
+.root .gMore:hover { color: var(--rn-green-text); }
+
+.root .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 12px; }
 .root .card { display: flex; flex-direction: column; gap: 8px; min-width: 0; padding: 18px 20px; border: 1px solid var(--rn-line-2); border-radius: 14px; background: #fff; color: var(--rn-ink); }
 .root .card:hover { border-color: var(--rn-green); }
 .root .card:focus-visible { border-radius: 14px; }
-.root .cardTitle { font-size: 17px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.4; color: var(--rn-ink); overflow-wrap: anywhere; }
+.root .cardTop { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.root .badge { display: flex; align-items: center; gap: 6px; height: 24px; padding: 0 8px; border-radius: 6px; border: 1px solid transparent; font-size: 12px; font-weight: 700; white-space: nowrap; }
+.root .stLive { background: var(--wh-live-bg); color: var(--wh-live-fg); border-color: var(--wh-live-bg); }
+.root .stSoon { background: #fff; color: var(--rn-ink); border-color: var(--rn-ink); }
+.root .stTba { background: var(--wh-tba-bg); color: var(--wh-tba-fg); border-color: var(--wh-tba-bg); }
+.root .stAlways { background: var(--rn-gray-bg); color: var(--wh-lead); border-color: var(--rn-gray-bg); }
+.root .stClosed { background: var(--rn-gray-bg); color: var(--wh-closed-fg); border-color: var(--rn-gray-bg); }
+.root .when { font-family: var(--rn-mono); font-size: 12px; color: var(--rn-muted); white-space: nowrap; }
+.root .cardTitle { font-size: 17px; font-weight: 700; line-height: 1.4; letter-spacing: -0.02em; color: var(--rn-ink); overflow-wrap: anywhere; text-wrap: pretty; }
 .root .card:hover .cardTitle { color: var(--rn-green-text); }
-.root .cardSub { font-size: 14px; line-height: 1.55; color: var(--rn-muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
+.root .cardSum { font-size: 14px; line-height: 1.6; color: var(--rn-body-muted); text-wrap: pretty; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
-@media (max-width: 980px) {
-  .root .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
+/* 빈 상태 */
+.root .empty { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 56px 24px; border-radius: 18px; background: var(--rn-tint); text-align: center; }
+.root .empty strong { font-size: 17px; font-weight: 700; }
+.root .empty p { margin: 0; font-size: 14px; color: var(--rn-muted); }
+.root .emptyBtns { display: flex; gap: 8px; padding-top: 6px; flex-wrap: wrap; justify-content: center; }
+.root .btn { height: 40px; padding: 0 16px; display: inline-flex; align-items: center; border-radius: 10px; font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer; position: relative; }
+.root .btn::before { content: ""; position: absolute; inset: -2px 0; } /* 터치 영역 44px */
+.root .btn:focus-visible { border-radius: 10px; }
+.root .btnLine { border: 1px solid var(--rn-ink); background: #fff; color: var(--rn-ink); }
+.root .btnLine:hover { border-color: var(--rn-green); color: var(--rn-green-text); }
+.root .btnGreen { border: 1px solid var(--rn-green); background: var(--rn-green); color: #fff; }
+.root .btnGreen:hover { background: var(--rn-green-hover); border-color: var(--rn-green-hover); color: #fff; }
 
-/* ───────── 모바일 ───────── */
+/* ───────── 모바일 (시안에 없음: 홈·AS 목록 방식) ───────── */
 @media (max-width: 760px) {
-  .root .hero { gap: 12px; padding: 16px 0 20px; }
+  .root .head { gap: 12px; padding: 16px 0 20px; }
+  .root .intro { gap: 14px; padding: 24px 20px; border-radius: 18px; }
   .root .h1 { font-size: 30px; line-height: 1.22; }
   .root .lead { font-size: 15px; line-height: 1.65; }
-  .root .searchWrap { max-width: none; margin-top: 0; }
-  .root .searchBox { height: 52px; border-radius: 12px; padding: 0 6px 0 16px; gap: 10px; }
-  .root .searchIco { width: 14px; height: 14px; }
-  .root .searchBox input { font-size: 15px; }
-  .root .searchBtn { height: 40px; padding: 0 14px; border-radius: 9px; font-size: 14px; }
-  .root .drop { top: 60px; max-height: 56vh; }
-  .root .dropType { min-width: 88px; }
+  .root .search { height: 52px; border-radius: 12px; padding: 0 14px; }
+  .root .search input { font-size: 15px; }
 
-  /* 칩 줄은 줄바꿈(가로 스크롤 없음), 고정하지 않는다 */
-  .root .bar { position: static; backdrop-filter: none; background: #fff; }
-  .root .barIn { padding: 12px 0; }
-  .root .typeChip { height: 40px; }
-  .root .typeChip::before { inset: -2px 0; }
+  .root .upcoming { padding: 18px 16px; border-radius: 18px; }
+  .root .upRow { grid-template-columns: 52px minmax(0, 1fr) auto; gap: 10px; }
+  .root .upD { font-size: 15px; }
+  .root .upName { font-size: 14px; }
 
-  .root .sec { scroll-margin-top: calc(var(--rn-header-h) + 12px); }
-  .root .grp { scroll-margin-top: calc(var(--rn-header-h) + 12px); }
-  .root .count { padding-bottom: 0; }
-  .root .secBody { gap: 24px; }
-  .root .grpHead { font-size: 18px; }
-  .root .jumpChip { height: 36px; }
-  .root .jumpChip::before { inset: -4px 0; }
+  .root .tops { gap: 8px; padding-bottom: 16px; }
+  .root .top { grid-template-columns: 56px minmax(0, 1fr); gap: 12px; padding: 8px 14px 8px 8px; }
+  .root .topOn { padding: 7px 13px 7px 7px; }
+  .root .topImg { width: 56px; height: 56px; border-radius: 10px; }
+  .root .topName { font-size: 17px; }
+  .root .topDesc { font-size: 12px; }
 
-  .root .cards { grid-template-columns: 1fr; gap: 10px; }
+  .root .filters { padding: 14px 0; }
+  .root .stRow { gap: 6px; }
+
+  .root .groups { gap: 28px; padding: 20px 0 40px; }
+  .root .gTitle { font-size: 20px; }
+  .root .cards { gap: 10px; }
   .root .card { padding: 16px 18px; }
+  .root .empty { padding: 40px 20px; }
 }

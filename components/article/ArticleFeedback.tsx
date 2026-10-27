@@ -35,7 +35,7 @@ export default function ArticleFeedback({ slug }: { slug: string }) {
     vote === "yes"
       ? "다행이에요. 알려주셔서 고마워요."
       : vote === "no"
-        ? "아직 풀리지 않으셨군요. 아래 함께 보면 좋은 가이드에서 이어서 확인해 보세요."
+        ? "아래 관련 가이드를 이어서 보세요."
         : "이 가이드로 해결됐나요?";
 
   return (

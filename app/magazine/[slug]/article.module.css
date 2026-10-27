@@ -15,6 +15,16 @@
   --ar-prog-track: #363c39;
   --ar-prog-mono: #88d1a2;
   --ar-tip: #0a5f2c;
+  /* 매거진 상세 시안(2026-10-27) 전용 */
+  --ar-tag-text: #00602a; /* 출처 [공식] 태그 글자 oklch(0.42 0.13 155) */
+  --ar-x-ico: #a9b0ac; /* 통념 ✕ 동그라미 oklch(0.75 0.01 160) */
+  --ar-callout-bg: #fff0e4; /* 짚고 가요 oklch(0.97 0.03 50) */
+  --ar-callout-title: #803200; /* oklch(0.42 0.12 45) */
+  --ar-callout-text: #402e26; /* oklch(0.32 0.03 45) */
+  --ar-dt-row: #222825; /* 판단 도우미 지나온 답 행 oklch(0.27 0.01 160) */
+  --ar-dt-row-text: #b8c0bb; /* oklch(0.8 0.01 160) */
+  --ar-dt-line: #515753; /* oklch(0.45 0.01 160) */
+  --ar-dt-reset-line: #434946; /* oklch(0.4 0.01 160) */
 }
 @supports (color: oklch(0 0 0)) {
   .root {
@@ -28,6 +38,15 @@
     --ar-prog-track: oklch(0.35 0.01 160);
     --ar-prog-mono: oklch(0.8 0.1 155);
     --ar-tip: oklch(0.42 0.12 155);
+    --ar-tag-text: oklch(0.42 0.13 155);
+    --ar-x-ico: oklch(0.75 0.01 160);
+    --ar-callout-bg: oklch(0.97 0.03 50);
+    --ar-callout-title: oklch(0.42 0.12 45);
+    --ar-callout-text: oklch(0.32 0.03 45);
+    --ar-dt-row: oklch(0.27 0.01 160);
+    --ar-dt-row-text: oklch(0.8 0.01 160);
+    --ar-dt-line: oklch(0.45 0.01 160);
+    --ar-dt-reset-line: oklch(0.4 0.01 160);
   }
 }
 
@@ -91,27 +110,38 @@
   color: var(--ar-badge);
   font-weight: 600;
 }
-.heroCell { position: relative; display: flex; flex-direction: column; min-height: 340px; min-width: 0; }
+/* 대표 이미지 + 캡션(figure, 시안 매거진 상세). 스톡 사진 라이선스 표기(작가·출처·원본 링크)는 이미지 아래 캡션에 싣는다 */
+.heroCell { margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
 .hero {
   flex: 1;
   min-height: 340px;
   border-radius: 20px;
 }
-/* 스톡 사진 라이선스 표기 — 이미지 위 오른쪽 아래 */
-.heroCredit {
-  position: absolute;
-  right: 12px;
-  bottom: 12px;
-  max-width: calc(100% - 24px);
-  padding: 4px 9px;
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.9);
-  font-size: 11px;
-  line-height: 1.4;
-  color: var(--rn-body-muted);
-}
+.heroCredit { font-size: 12px; line-height: 1.5; color: var(--ar-sub); }
 .heroCredit a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
 .heroCredit a:hover { color: var(--rn-green-text); }
+
+/* ── 매거진 상세 헤드(시안 .dc.html): 코너 배지 + 분류 / 제목 28~40px / 부제 17px ── */
+.badgeRow { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+/* 전역 .rn-page a / a:hover 가 글자색을 덮어쓰므로 .root 로 한 단계 올려 쓴다 */
+.root .cornerBadge, .root .cornerBadge:hover {
+  height: 26px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  background: var(--rn-ink);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+.category { font-size: 13px; color: var(--rn-muted); }
+.category a:hover { color: var(--rn-green-text); }
+@media (min-width: 761px) {
+  .headMag .headText { gap: 16px; }
+  .headMag .title { font-size: clamp(28px, 3.4vw, 40px); line-height: 1.25; }
+  .headMag .lead { line-height: 1.65; }
+}
 
 /* ── ② 본문 + 사이드바 ── */
 .body {
@@ -187,13 +217,14 @@
 }
 
 /* 본문 사이 이미지 + 라이선스 표기 */
-.prose :global(.td-fig) { margin: 28px 0 0; }
+/* 본문 사진: 320px · radius 16 · 아래 출처 캡션 12px (시안 매거진 상세) */
+.prose :global(.td-fig) { margin: 20px 0 0; }
 .prose :global(.td-figimg) {
   position: relative;
   overflow: hidden;
   border-radius: 16px;
   background: var(--rn-tint-green);
-  height: clamp(190px, 34vw, 380px);
+  height: 320px;
 }
 .prose :global(.td-figimg) img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .prose :global(.td-fig) figcaption { margin-top: 8px; font-size: 12px; line-height: 1.5; color: var(--ar-sub); }
@@ -209,6 +240,42 @@
 .prose tbody th, .prose td { padding: 14px 16px; vertical-align: top; text-align: left; }
 .prose tbody th { font-weight: 600; color: var(--rn-ink); }
 .prose td { color: var(--rn-body-muted); }
+
+/* 통념 vs 사실(시안 매거진 상세): 행마다 2분할 카드. 좌 gray-bg ✕ 통념 / 우 흰 바탕 ✓ 사실. 칸이 260px 아래로 좁아지면 세로로 쌓인다 */
+.prose :global(.td-myths) { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.prose :global(.td-myth) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  margin: 0;
+  border: 1px solid var(--rn-line-2);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.prose :global(.td-myth-l), .prose :global(.td-myth-r) { display: grid; grid-template-columns: 24px 1fr; gap: 10px; padding: 16px 18px; min-width: 0; }
+.prose :global(.td-myth-l) { background: var(--rn-gray-bg); }
+.prose :global(.td-myth-r) { background: #fff; }
+.prose :global(.td-myth-ico) {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prose :global(.td-myth-l) :global(.td-myth-ico) { background: var(--ar-x-ico); }
+.prose :global(.td-myth-r) :global(.td-myth-ico) { background: var(--rn-green); }
+.prose :global(.td-myth-body) { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.prose :global(.td-myth-lab) { font-size: 11px; font-weight: 700; line-height: 1.4; }
+.prose :global(.td-myth-l) :global(.td-myth-lab) { color: var(--ar-sub); }
+.prose :global(.td-myth-r) :global(.td-myth-lab) { color: var(--rn-green-text); }
+.prose :global(.td-myth-txt) { font-size: 15px; line-height: 1.55; }
+.prose :global(.td-myth-l) :global(.td-myth-txt) { line-height: 1.5; font-weight: 600; color: var(--rn-body-muted); }
+.prose :global(.td-myth-l) :global(.td-myth-txt) b, .prose :global(.td-myth-l) :global(.td-myth-txt) strong { color: inherit; }
+.prose :global(.td-myth-r) :global(.td-myth-txt) { color: var(--rn-ink); }
 
 /* 번호 목록(체크리스트가 아닌 단계·신호 목록) */
 .prose :global(.td-steps) { list-style: none; margin: 16px 0 0; padding: 0; border-top: 1px solid var(--rn-line); }
@@ -279,20 +346,28 @@
 .ckText b { font-weight: 700; color: var(--rn-ink); }
 
 /* ── 짚고 가요 · 정직한 마무리 ── */
-.callout { margin-top: 44px; padding: 22px 26px; border-radius: 16px; background: var(--rn-tint-green); }
-.closing { margin-top: 44px; padding: 28px 32px; border-radius: 20px; background: var(--rn-tint); border: 1px solid var(--rn-line-tint); }
+/* 짚고 가요: 주황 틴트 · ! 아이콘(시안) */
+.callout { margin-top: 44px; display: grid; grid-template-columns: 28px 1fr; gap: 12px; padding: 20px 22px; border-radius: 16px; background: var(--ar-callout-bg); }
+.calloutIco { width: 26px; height: 26px; border-radius: 50%; background: var(--rn-warn); color: #fff; font-weight: 800; font-size: 14px; line-height: 1; display: flex; align-items: center; justify-content: center; }
+.calloutBody { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.calloutTitle { font-size: 15px; font-weight: 700; color: var(--ar-callout-title); }
+.callout p { margin: 0; font-size: 16px; line-height: 1.7; color: var(--ar-callout-text); text-wrap: pretty; }
+/* 정직한 마무리: 상단 2px ink 선 · 리드 문단 20px/600(시안) */
+.closing { margin-top: 44px; display: flex; flex-direction: column; gap: 12px; padding: 28px 0 0; border-top: 2px solid var(--rn-ink); }
+.closingLabel { font-size: 13px; font-weight: 700; color: var(--rn-green-text); }
+.closing p { margin: 0; font-size: 17px; line-height: 1.85; color: var(--rn-body); text-wrap: pretty; }
+.closing .closingLead { font-size: 20px; line-height: 1.65; font-weight: 600; letter-spacing: -0.02em; color: var(--rn-ink); }
+/* 생활백과 역링크 상자의 라벨 */
 .boxLabel { font-family: var(--rn-mono); font-size: 12px; font-weight: 600; letter-spacing: 0.1em; color: var(--rn-green-text); }
-.callout p, .closing p { margin: 12px 0 0; font-size: 16px; line-height: 1.8; color: var(--rn-body); text-wrap: pretty; }
-.closing p { font-size: 17px; line-height: 1.85; }
-.callout p:first-of-type, .closing p:first-of-type { margin-top: 10px; }
 
 /* ── 섹션 머리(FAQ·출처) ── */
 .secTitle { margin: 0; font-size: 20px; font-weight: 800; letter-spacing: -0.03em; }
 
 /* ── FAQ: 접히는 목록(마크업은 항상 DOM 에 있다) ── */
-.faq { margin-top: 44px; display: flex; flex-direction: column; gap: 14px; }
-.faqList { display: flex; flex-direction: column; gap: 10px; }
-.faqItem { border: 1px solid var(--rn-line-2); border-radius: 14px; background: #fff; }
+.faq { margin-top: 44px; display: flex; flex-direction: column; gap: 12px; }
+.faq .secTitle { font-size: 22px; }
+.faqList { display: flex; flex-direction: column; border-top: 1px solid var(--rn-line); }
+.faqItem { border-bottom: 1px solid var(--rn-line); }
 .faqItem summary {
   list-style: none;
   cursor: pointer;
@@ -301,21 +376,21 @@
   justify-content: space-between;
   gap: 16px;
   min-height: 56px;
-  padding: 14px 20px;
+  padding: 12px 0;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
-  letter-spacing: -0.01em;
+  color: var(--rn-ink);
 }
 .faqItem summary::-webkit-details-marker { display: none; }
-.faqItem summary::after { content: "+"; flex: none; font-family: var(--rn-mono); font-size: 20px; font-weight: 500; color: var(--rn-green-text); }
+.faqItem summary::after { content: "+"; flex: none; font-size: 20px; font-weight: 400; line-height: 1; color: var(--rn-green-text); }
 .faqItem[open] summary::after { content: "\2212"; }
-.faqItem[open] { border-color: var(--rn-green-soft); }
-.faqA { margin: 0; padding: 0 20px 18px; font-size: 15px; line-height: 1.75; color: var(--rn-body-muted); }
+.faqA { margin: 0; padding: 0 0 16px; font-size: 15px; line-height: 1.75; color: var(--ar-step-text); }
 
-/* ── 검색 태그 ── */
-.tags { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 8px; }
-.tag { display: inline-flex; align-items: center; height: 30px; padding: 0 12px; border-radius: 999px; background: var(--rn-gray-bg); font-size: 13px; color: var(--rn-body-muted); }
+/* ── 검색 태그(시안: FAQ 아래 30px · gray-bg · radius 8) ── */
+.tags { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 6px; }
+.faq .tags { margin-top: 0; padding-top: 8px; }
+.tag { display: inline-flex; align-items: center; height: 30px; padding: 0 10px; border-radius: 8px; background: var(--rn-gray-bg); font-size: 13px; color: var(--rn-body-muted); }
 
 /* ── 생활백과 역링크 ── */
 .wiki { margin-top: 44px; padding: 18px 22px; border: 1px solid var(--rn-line-2); border-radius: 16px; background: #fff; }
@@ -328,21 +403,25 @@
 .src { margin-top: 44px; padding-top: 28px; border-top: 1px solid var(--rn-line); display: flex; flex-direction: column; gap: 14px; }
 .srcHead { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
 .srcDate { font-family: var(--rn-mono); font-size: 12px; color: var(--ar-sub); }
+/* 매거진 상세 시안은 출처 머리 여백이 아티클(AS) 변형보다 조금 좁다 */
+.artMag .src { padding-top: 24px; gap: 12px; }
 .srcLead { margin: 0; font-size: 14px; line-height: 1.7; color: var(--rn-muted); }
 .srcList { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
 .srcList a {
   display: grid;
   grid-template-columns: 32px 1fr;
   gap: 10px;
-  align-items: start;
+  align-items: center;
   min-height: 44px;
   padding: 10px 0;
   border-top: 1px solid var(--ar-line-soft);
   font-size: 14px;
   line-height: 1.5;
 }
+/* 공식·후기 표기가 있는 글: [번호] [공식] 제목 · 출처 3칸(시안) */
+.srcList.srcWithTag a { grid-template-columns: 32px 44px 1fr; gap: 8px; }
 .srcNo { font-family: var(--rn-mono); font-weight: 600; color: var(--rn-green-text); }
-.srcTag { display: inline-block; margin-right: 6px; padding: 1px 6px; border-radius: 5px; background: var(--rn-tint-green); color: var(--rn-green-text); font-family: var(--rn-mono); font-size: 11px; font-weight: 600; vertical-align: 1px; }
+.srcTag { justify-self: start; padding: 2px 6px; border-radius: 5px; background: var(--rn-tint-green); color: var(--ar-tag-text); font-size: 11px; font-weight: 700; line-height: 1.4; }
 .srcTagAlt { background: var(--rn-gray-bg); color: var(--rn-body-muted); }
 .srcHost { color: var(--ar-sub); }
 .srcNote { font-size: 13px; line-height: 1.6; color: var(--ar-sub); }
@@ -371,13 +450,49 @@
 .progFill { height: 6px; border-radius: 3px; background: var(--rn-green-bar); transition: width 0.2s ease; }
 .progCard .progLink, .progCard .progLink:hover { font-size: 14px; font-weight: 600; color: #fff; }
 
+/* 사이드바 코너 소개 카드(매거진 상세 시안) */
+.cornerCard { padding: 20px 22px; border-radius: 16px; background: var(--rn-tint); display: flex; flex-direction: column; gap: 8px; flex: none; }
+.cornerLabel { font-size: 13px; font-weight: 700; color: var(--ar-badge); }
+.cornerDesc { font-size: 14px; line-height: 1.6; color: var(--ar-step-text); }
+.root .cornerLink { font-size: 14px; font-weight: 700; color: var(--rn-green-text); }
+
+/* ── 판단 도우미(DECISION TREE 박스, 시안 매거진 상세) — components/article/DecisionTree.tsx ── */
+.dt { margin-top: 28px; display: flex; flex-direction: column; gap: 14px; padding: 24px; border-radius: 18px; background: var(--rn-ink); color: #fff; }
+.dt [hidden] { display: none !important; }
+.dtHead { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.dtLabel { font-family: var(--rn-mono); font-size: 12px; font-weight: 600; letter-spacing: 0.1em; color: var(--ar-prog-mono); }
+.dtReset { flex: none; white-space: nowrap; height: 32px; padding: 0 12px; border-radius: 8px; border: 1px solid var(--ar-dt-reset-line); background: transparent; color: #fff; font-size: 13px; font-weight: 600; cursor: pointer; }
+.dtReset:hover { border-color: var(--ar-dt-row-text); }
+.dtTitle { margin: 0; font-size: 14px; font-weight: 600; line-height: 1.5; color: var(--ar-dt-row-text); }
+.dtPath { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.dtPath li { display: flex; justify-content: space-between; gap: 12px; margin: 0; padding: 10px 14px; border-radius: 10px; background: var(--ar-dt-row); font-size: 14px; line-height: 1.5; color: var(--ar-dt-row-text); }
+.dtPath b { flex: none; font-weight: 700; color: var(--ar-prog-mono); }
+.dtAsk { display: flex; flex-direction: column; gap: 14px; }
+.dtQ { font-size: 20px; font-weight: 700; line-height: 1.45; letter-spacing: -0.02em; }
+.dtBtns { display: flex; gap: 8px; }
+.dtYes, .dtNo { flex: 1; height: 52px; border-radius: 12px; font-size: 16px; font-weight: 700; color: #fff; cursor: pointer; }
+.dtYes { border: 0; background: var(--rn-green); }
+.dtYes:hover { background: var(--rn-green-hover); }
+.dtNo { border: 1px solid var(--ar-dt-line); background: transparent; }
+.dtNo:hover { background: var(--ar-dt-row); }
+/* 결과 카드: 원문에 안전·위험 구분이 없어 색을 나누지 않고 흰 카드 하나로 */
+.dtResult { display: flex; flex-direction: column; gap: 8px; padding: 18px 20px; border-radius: 14px; background: #fff; color: var(--rn-ink); }
+.dtResTag { font-size: 13px; font-weight: 700; color: var(--rn-muted); }
+.dtResText { font-size: 17px; font-weight: 700; line-height: 1.5; }
+.dtResSub { font-size: 14px; font-weight: 500; line-height: 1.6; color: var(--rn-body-muted); }
+/* 어두운 박스 안이라 포커스 링을 흰색으로, 전역 6px radius 도 되돌린다 */
+.root .dt :focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.root .dtYes:focus-visible, .root .dtNo:focus-visible { border-radius: 12px; }
+.root .dtAsk:focus-visible, .root .dtResult:focus-visible { border-radius: 14px; outline-offset: 4px; }
+.root .dtReset:focus-visible { border-radius: 8px; }
+
 /* 긴 영문·코드 문자열이 keep-all 때문에 칸을 밀어내 가로 스크롤이 생기지 않게 */
-.title, .lead, .prose, .ckText, .conclusionList, .srcList a, .relTitle, .faqItem summary, .faqA, .callout p, .closing p, .wikiList a { overflow-wrap: anywhere; }
+.title, .lead, .prose, .ckText, .conclusionList, .srcList a, .relTitle, .faqItem summary, .faqA, .callout p, .closing p, .wikiList a, .dtQ, .dtTitle, .dtPath li, .dtResText, .dtResSub, .cornerDesc { overflow-wrap: anywhere; }
 
 /* 전역 :focus-visible 이 radius 를 6px 로 덮어쓰는 것을 막는다 */
 .root .ckItem:focus-visible { border-radius: 16px; }
 .root .fbBtn:focus-visible { border-radius: 10px; }
-.root .faqItem summary:focus-visible { border-radius: 14px; }
+.root .faqItem summary:focus-visible { border-radius: 8px; }
 
 /* ── ③ 함께 보면 좋은 가이드 ── */
 .related { padding: 40px 0 56px; border-top: 1px solid var(--rn-line); display: flex; flex-direction: column; gap: 20px; }
@@ -435,7 +550,8 @@
   .prose :global(.td-sec) { margin-top: 32px; gap: 10px; }
   .prose h2 { font-size: 20px; letter-spacing: -0.03em; }
   .prose :global(.td-steps) li { font-size: 15px; }
-  .prose :global(.td-fig) { margin-top: 22px; }
+  .prose :global(.td-fig) { margin-top: 18px; }
+  .prose :global(.td-figimg) { height: clamp(190px, 52vw, 240px); }
   .prose :global(.td-fig) figcaption a { display: inline-flex; align-items: center; min-height: 44px; }
   .heroCredit a { display: inline-flex; align-items: center; min-height: 44px; }
 
@@ -463,14 +579,27 @@
   .ckStep { font-size: 11px; }
   .ckText { font-size: 15px; line-height: 1.6; }
 
-  .callout { margin-top: 32px; padding: 18px; border-radius: 14px; }
-  .closing { margin-top: 32px; padding: 22px 20px; border-radius: 16px; }
+  .callout { margin-top: 32px; padding: 16px 18px; border-radius: 14px; grid-template-columns: 26px 1fr; gap: 10px; }
   .callout p { font-size: 15px; }
+  .closing { margin-top: 32px; padding-top: 22px; }
   .closing p { font-size: 16px; }
+  .closing .closingLead { font-size: 18px; }
   .faq { margin-top: 32px; }
-  .faqItem summary { font-size: 15px; padding: 12px 16px; }
-  .faqA { padding: 0 16px 16px; font-size: 14px; }
+  .faqItem summary { font-size: 15px; }
+  .faqA { font-size: 14px; }
   .tags { margin-top: 28px; }
+
+  /* 통념 vs 사실: 세로로 쌓이고(칸 폭이 260px 아래), 안쪽 여백만 줄인다 */
+  .prose :global(.td-myth-l), .prose :global(.td-myth-r) { padding: 14px 16px; }
+  .prose :global(.td-myth-txt) { font-size: 15px; }
+
+  /* 판단 도우미: 버튼 52px(≥44), 처음부터 44px */
+  .dt { margin-top: 22px; padding: 18px; border-radius: 16px; gap: 12px; }
+  .dtQ { font-size: 18px; }
+  .dtReset { height: 44px; padding: 0 14px; }
+  .dtPath li { font-size: 13px; }
+  .dtResult { padding: 16px 18px; }
+  .dtResText { font-size: 16px; }
   .wiki { margin-top: 32px; padding: 14px 16px; }
   .src { margin-top: 32px; padding-top: 22px; }
   .fb { margin-top: 32px; padding: 18px; }
