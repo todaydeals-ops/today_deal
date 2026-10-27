@@ -1,0 +1,119 @@
+{
+  "topic": "교육급여 — 2026년 기준 중위소득·선정기준(50%)·가구별 금액",
+  "brand": "보건복지부 · 복지로",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "education-benefit-median-income-2026",
+      "claim": "2026년 기준 중위소득은 1인 가구 256만 4,238원, 4인 가구 649만 4,738원이다(2025년 대비 1인 7.20%, 4인 6.51% 인상).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 게재 보건복지부 보도자료 '2026년도 기준 중위소득 역대 최대 인상'",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1308418_1118.html",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "보건복지부",
+        "category": "기준 중위소득",
+        "line": "2026년 기준 중위소득(1·4인)",
+        "years": "2026년",
+        "region": "KR"
+      },
+      "caution": "이 금액은 2026년 적용분이다. 2027년 기준 중위소득을 심의했다는 언론 기사(4인 692만 9,885원)는 2027년 적용분이라 2026년 글에 섞지 말 것.",
+      "cautionSource": "복지로 보도자료 원문(2026년 기준 중위소득) https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1308418_1118.html"
+    },
+    {
+      "id": "education-benefit-selection-50pct",
+      "claim": "2026년 교육급여 선정기준은 기준 중위소득의 50%이다(생계 32%·의료 40%·주거 48%와 구분).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 게재 보건복지부 보도자료 '2026년도 기준 중위소득 역대 최대 인상'",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1308418_1118.html",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "보건복지부",
+        "category": "교육급여",
+        "line": "교육급여 선정기준(기준 중위소득 50%)",
+        "years": "2026년",
+        "region": "KR"
+      },
+      "caution": "교육급여 선정기준 50%는 이 보도자료에 있다. 생계·의료·주거 기준 비율(32·40·48%)은 이번 페이지에서 직접 확인하지 못했으니 다른 글 인용 시 원문 확인.",
+      "cautionSource": "복지로 보도자료 원문 https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1308418_1118.html (교육급여 50% 문구) — 다른 급여 비율은 미확인"
+    },
+    {
+      "id": "education-benefit-1person-threshold-2026-calc",
+      "claim": "2026년 교육급여 선정기준 1인 가구는 월 1,282,119원이다(기준 중위소득 256만 4,238원 × 50% 계산값).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "계산값 — 복지로 보도자료의 기준 중위소득(1인 256만 4,238원)과 교육급여 50% 비율로 산출. 급여별 선정기준 공식표는 이번에 열지 못함",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1308418_1118.html",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "보건복지부",
+        "category": "교육급여",
+        "line": "선정기준 금액(1인, 월)",
+        "years": "2026년",
+        "region": "KR"
+      },
+      "caution": "이 금액은 우리가 계산한 값이다. 글에 쓸 때는 '기준 중위소득 50% 기준 산출액'으로 밝히고, 공식 급여별 선정기준표로 교차 확인 후 확정할 것. 블로그에 나온 같은 값(1,282,119원)은 교차 근거가 아니다.",
+      "cautionSource": "계산식: 2,564,238원 × 50% = 1,282,119원. 입력값 출처 https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1308418_1118.html"
+    },
+    {
+      "id": "education-benefit-4person-threshold-2026-calc",
+      "claim": "2026년 교육급여 선정기준 4인 가구는 월 3,247,369원이다(기준 중위소득 649만 4,738원 × 50% 계산값).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "계산값 — 복지로 보도자료의 기준 중위소득(4인 649만 4,738원)과 교육급여 50% 비율로 산출",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1308418_1118.html",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "보건복지부",
+        "category": "교육급여",
+        "line": "선정기준 금액(4인, 월)",
+        "years": "2026년",
+        "region": "KR"
+      },
+      "caution": "계산값이다. 글에 쓸 때는 '기준 중위소득 50% 산출액'으로 밝히고, 공식 급여별 선정기준표로 교차 확인 후 확정할 것.",
+      "cautionSource": "계산식: 6,494,738원 × 50% = 3,247,369원. 입력값 출처 https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1308418_1118.html"
+    },
+    {
+      "id": "education-benefit-activity-fee-2026-unverified",
+      "claim": "2026년 교육활동지원비(초 50만 2,000원·중 69만 9,000원·고 86만 원)는 블로그 기재 수치이며 공식 원문에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "미확인 — 블로그 2차 출처(jab-guyver.co.kr/3113)는 검색 결과로만 보았고 열지 않음. 공식 교육활동지원비 페이지 미열람",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1308418_1118.html",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "교육부·지자체",
+        "category": "교육급여",
+        "line": "교육활동지원비(학교급별)",
+        "years": "2026년",
+        "region": "KR"
+      },
+      "caution": "금액을 공식처럼 쓰지 말 것. 확인 전에는 '학기별 교육활동지원비가 있다' 수준까지만. 금액 확인이 필요하면 교육부·교육청 공고를 열 것.",
+      "cautionSource": "블로그 2차 출처 — 공식 근거 아님"
+    },
+    {
+      "id": "education-benefit-apply-channel-unverified",
+      "claim": "교육급여 신청 경로(복지로·주민센터 접수, 신청 시기, 필요서류)는 이번 조사에서 공식 페이지로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "미확인 — 복지로 교육급여 신청 안내 페이지 미열람(ID 추정 URL 열기 생략)",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1308418_1118.html",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "보건복지부·복지로",
+        "category": "교육급여",
+        "line": "신청 경로·시기·서류",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "신청 경로는 글에 쓰기 전에 복지로 교육급여 안내 페이지를 새로 열어 확인할 것. 이 팩트는 근거가 아니다.",
+      "cautionSource": "확인실패 항목 — 근거 없음"
+    }
+  ]
+}

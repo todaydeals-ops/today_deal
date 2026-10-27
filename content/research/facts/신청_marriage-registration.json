@@ -1,0 +1,73 @@
+{
+  "topic": "혼인신고 — 효력 발생 요건·신고 방법·본인 불출석 시 요건",
+  "brand": "법무부(가족관계등록법) · 법제처(민법)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [
+    { "id": "death-report-deadline-one-month-from-knowledge", "why": "사망신고 기한 조문이라 혼인신고와 무관" }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "marriage-registration-effect-by-report",
+      "claim": "혼인은 가족관계의 등록 등에 관한 법률에 정한 바에 따라 신고함으로써 효력이 생긴다(민법 제812조 제1항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 민법 제812조(혼인의 성립) 원문",
+      "source_url": "https://www.law.go.kr/법령/민법/제812조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "법제처", "category": "혼인", "line": "혼인신고 효력", "years": "현행(조문 개정 2007.5.17 표기)", "region": "KR" },
+      "caution": "예식·동거만으로는 법률상 혼인이 성립하지 않는다는 뜻이다. 이 문장은 조문 취지에서 나온 해석이므로 '신고해야 효력이 생긴다'까지만 단정할 것.",
+      "cautionSource": "같은 조문 제1항 원문"
+    },
+    {
+      "id": "marriage-registration-written-two-witnesses",
+      "claim": "혼인신고를 서면으로 하는 경우, 당사자 쌍방과 성년자인 증인 2인이 연서한 서면으로 해야 한다(민법 제812조 제2항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 민법 제812조(혼인의 성립) 제2항 원문",
+      "source_url": "https://www.law.go.kr/법령/민법/제812조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "법제처", "category": "혼인", "line": "혼인신고 서면 요건(증인)", "years": "현행", "region": "KR" },
+      "caution": "증인 2인이 필요하다는 것은 민법 조문 그대로다. 증인이 빠졌을 때 수리가 거부되는지 여부는 이 조문에 없으므로 단정하지 말 것.",
+      "cautionSource": "같은 조문 제2항 원문(성년자 증인 2인)"
+    },
+    {
+      "id": "marriage-registration-method-written-or-oral",
+      "claim": "가족관계등록 신고는 서면이나 말로 할 수 있다(가족관계등록법 제23조 제1항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 가족관계의 등록 등에 관한 법률 제23조(신고방법) 원문",
+      "source_url": "https://www.law.go.kr/법령/가족관계의등록등에관한법률/제23조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "법무부", "category": "가족관계등록 신고", "line": "신고 방법 일반", "years": "2026.10.2 시행본", "region": "KR" },
+      "caution": "'말로 할 수 있다'는 일반 규정이다. 혼인신고에 구두 신고를 적용할 수 있는지는 민법 제812조 제2항(서면 요건)과 함께 읽어야 하므로 글에서 구두 신고를 권하지 말 것.",
+      "cautionSource": "민법 제812조 제2항 원문 https://www.law.go.kr/법령/민법/제812조"
+    },
+    {
+      "id": "marriage-registration-absent-party-id-or-seal",
+      "claim": "신고 본인이 시·읍·면에 출석하지 않는 경우, 본인의 신분증명서(주민등록증·모바일 주민등록증·운전면허증·여권 등)를 제시하거나 신고서에 본인의 인감증명서를 첨부해야 하며, 둘 다 없으면 신고서를 수리할 수 없다(가족관계등록법 제23조 제2항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 가족관계의 등록 등에 관한 법률 제23조 제2항 원문",
+      "source_url": "https://www.law.go.kr/법령/가족관계의등록등에관한법률/제23조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "법무부", "category": "가족관계등록 신고", "line": "본인 불출석 신고", "years": "2026.10.2 시행본(개정 2023.12.26 표기)", "region": "KR" },
+      "caution": "'신분증 또는 인감증명서'는 조문상 선택 요건이다. 신고인의 한쪽만 방문하는 경우의 상세(불출석자 서류)는 이번에 확인하지 않았으니 단정하지 말 것.",
+      "cautionSource": "같은 조문 제2항 원문"
+    },
+    {
+      "id": "marriage-registration-art33-unverified",
+      "claim": "가족관계등록법 제33조(혼인신고 관련 조문)의 본문과 온라인(전자문서) 혼인신고 가능 여부는 이번 조사에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "국가법령정보센터 가족관계의 등록 등에 관한 법률 제33조 — 열었으나 본문 미렌더링(2회 시도)",
+      "source_url": "https://www.law.go.kr/법령/가족관계의등록등에관한법률/제33조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "법무부·대법원", "category": "혼인신고", "line": "혼인신고 조문 번호·온라인 신고", "years": "2026", "region": "KR" },
+      "caution": "제33조를 혼인신고 조문이라고 글에 쓰지 말 것. 온라인 혼인신고는 확인 전까지 안내하지 말 것.",
+      "cautionSource": "확인실패 항목 — 근거 없음"
+    }
+  ]
+}

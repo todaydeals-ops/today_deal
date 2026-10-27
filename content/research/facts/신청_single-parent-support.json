@@ -1,0 +1,83 @@
+{
+  "topic": "한부모가족 지원 — 2026년 아동양육비·추가지원·소득기준",
+  "brand": "여성가족부(출처 카드뉴스 표기: 성평등가족부) · 복지로",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "single-parent-child-support-2026-amount",
+      "claim": "2026년 한부모가족 아동양육비는 18세 미만 자녀 1인당 월 23만 원이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 게재 정부 카드뉴스 '한부모가족 지원 확대' (등록 2025.12.29, 출처 표기 '성평등가족부 카드뉴스')",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1309148_1118.html",
+      "checked": "2026-10-27",
+      "scope": { "brand": "성평등가족부(카드뉴스 출처 표기) · 복지로 게재", "category": "한부모가족 지원", "line": "아동양육비", "years": "2026년", "region": "KR" },
+      "caution": "이 금액은 2026년 기준이다. 2025년 이전 금액을 섞지 말 것. 이전 금액은 이번 공식 페이지에 적혀 있지 않다(블로그 기재는 인용하지 않음).",
+      "cautionSource": "복지로 카드뉴스 원문 https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1309148_1118.html — 페이지에 '이전보다 인상'만 기재"
+    },
+    {
+      "id": "single-parent-additional-10man-groups",
+      "claim": "미혼모·부 또는 조손가족의 5세 이하 자녀와 청년 한부모(25~34세)의 자녀는 자녀 1인당 월 10만 원을 추가로 지원받는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 게재 정부 카드뉴스 '한부모가족 지원 확대' (등록 2025.12.29)",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1309148_1118.html",
+      "checked": "2026-10-27",
+      "scope": { "brand": "성평등가족부(카드뉴스 출처 표기) · 복지로 게재", "category": "한부모가족 지원", "line": "추가 지원(미혼모·부·조손·청년 한부모)", "years": "2026년", "region": "KR" },
+      "caution": "기본 아동양육비와의 중복 적용과 지자체별 운영 기준은 이 카드뉴스에 없다. 중복 여부를 단정하지 말고 '지자체 확인'으로 안내할 것.",
+      "cautionSource": "복지로 카드뉴스에 중복 적용 문구가 없음을 확인함(2026-10-27)"
+    },
+    {
+      "id": "single-parent-income-criterion-65pct",
+      "claim": "한부모가족 지원의 소득 기준은 기준 중위소득 65% 이하이며, 18세 미만 자녀를 양육하는 한부모 가구가 대상이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 게재 정부 카드뉴스 '한부모가족 지원 확대' (등록 2025.12.29)",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1309148_1118.html",
+      "checked": "2026-10-27",
+      "scope": { "brand": "성평등가족부(카드뉴스 출처 표기) · 복지로 게재", "category": "한부모가족 지원", "line": "소득 기준(기준 중위소득 65%)", "years": "2026년", "region": "KR" },
+      "caution": "일부 블로그는 63% 이하로 적고 있으나 이 공식 카드뉴스는 65%다. 63%는 쓰지 말 것. 경계선 가구는 지자체 확인을 안내할 것.",
+      "cautionSource": "복지로 카드뉴스 원문(기준 중위소득 65% 이하) https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1309148_1118.html"
+    },
+    {
+      "id": "single-parent-income-threshold-2026-by-household",
+      "claim": "2026년 한부모가족 소득인정액 기준은 2인 가구 월 273만 원, 3인 가구 월 348만 원, 4인 가구 월 422만 원 이하다(반올림 표기).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 게재 정부 카드뉴스 '한부모가족 지원 확대' (등록 2025.12.29)",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1309148_1118.html",
+      "checked": "2026-10-27",
+      "scope": { "brand": "성평등가족부(카드뉴스 출처 표기) · 복지로 게재", "category": "한부모가족 지원", "line": "소득인정액 기준표(2·3·4인)", "years": "2026년", "region": "KR" },
+      "caution": "카드뉴스는 만원 단위 반올림값이다. 정확한 원 단위는 블로그에 있는 값(예: 2인 2,729,540원)을 공식처럼 쓰지 말 것. 1인 가구 금액은 이 페이지에 없음.",
+      "cautionSource": "복지로 카드뉴스 원문 273만·348만·422만 원 표기 https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1309148_1118.html"
+    },
+    {
+      "id": "single-parent-work-income-30pct-deduction",
+      "claim": "한부모가족 소득 판정 시 근로·사업소득은 30%를 공제한 뒤 적용한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 게재 정부 카드뉴스 '한부모가족 지원 확대' (등록 2025.12.29)",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1309148_1118.html",
+      "checked": "2026-10-27",
+      "scope": { "brand": "성평등가족부(카드뉴스 출처 표기) · 복지로 게재", "category": "한부모가족 지원", "line": "근로·사업소득 공제", "years": "2026년", "region": "KR" },
+      "caution": "공제율 30%는 이 카드뉴스 기준이다. 다른 제도(생계·의료 등)의 공제율과 섞지 말 것.",
+      "cautionSource": "복지로 카드뉴스 원문(근로·사업 소득 30% 공제) https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1309148_1118.html"
+    },
+    {
+      "id": "single-parent-apply-channel-unverified",
+      "claim": "한부모가족 지원 신청 경로(신청 기관·온라인 접수 방법·신청 시기)는 이번 조사에서 공식 페이지로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "미확인 — 성평등가족부(출처 표기)·지자체 신청 안내 페이지 미열람",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/cms/pc/news/promotion/1309148_1118.html",
+      "checked": "2026-10-27",
+      "scope": { "brand": "성평등가족부(출처 표기)·지자체", "category": "한부모가족 지원", "line": "신청 경로", "years": "2026", "region": "KR(지자체별)" },
+      "caution": "신청 기관과 방법을 글에 쓰려면 복지로 신청 안내 또는 시·구청 공고를 새로 열어 확인해야 한다. 이 팩트는 근거가 아니다.",
+      "cautionSource": "확인실패 항목 — 근거 없음"
+    }
+  ]
+}

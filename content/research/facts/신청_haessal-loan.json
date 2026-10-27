@@ -1,0 +1,191 @@
+{
+  "topic": "햇살론(서민금융진흥원 정책서민금융) — 현행 상품 구분, 햇살론일반 대상·한도·금리·보증료, 종료 상품, 미확인 상품",
+  "brand": "서민금융진흥원",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "haessal-loan-status",
+      "claim": "근로자햇살론과 햇살론15는 2025년 12월 31일 보증이 종료되어 현재 신청할 수 없다(서민금융진흥원 상품 페이지 표시).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서민금융진흥원 햇살론15 상품 페이지 상단 표기 [2025년 12월 31일 보증 종료] + 근로자햇살론 상품 페이지 동일 표기",
+      "source_url": "https://www.kinfa.or.kr/financialProduct/hessalLoan.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "생활안정자금·고금리대안자금",
+        "line": "근로자햇살론, 햇살론15",
+        "years": "2025.12.31 보증 종료 표기(2026-10-27 열람)",
+        "region": "KR"
+      },
+      "caution": "블로그 글 다수가 종료 상품을 현행처럼 소개한다. 종료 상품 이름을 '신청 가능'으로 쓰지 말 것. 근로자햇살론 상세 페이지는 https://www.kinfa.or.kr/financialProduct/employeeHessalLoan.do 에도 같은 종료 표기가 있다.",
+      "cautionSource": "서민금융진흥원 햇살론15 페이지 https://www.kinfa.or.kr/financialProduct/hessalLoan.do 및 근로자햇살론 페이지 https://www.kinfa.or.kr/financialProduct/employeeHessalLoan.do"
+    },
+    {
+      "id": "haessal-loan-general-target",
+      "claim": "햇살론일반 지원대상은 연소득 3,500만원 이하(신용점수 무관)이거나, 연소득 4,500만원 이하이면서 신용점수 하위 20%에 해당하는 사람이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서민금융진흥원 햇살론일반 상품 페이지 '지원대상'",
+      "source_url": "https://www.kinfa.or.kr/financialProduct/hessalLoanGeneral.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "생활안정자금",
+        "line": "햇살론일반",
+        "years": "상품 페이지 열람 시점(2026-10-27) 기준 표기, 연도 명시 없음",
+        "region": "KR"
+      },
+      "caution": "소득 기준은 서류·직업·소득에 따라 심사에서 달라질 수 있고, 서민금융진흥원 가조회 승인 후에도 금융회사 심사에서 거절될 수 있다.",
+      "cautionSource": "같은 페이지 '꼭 읽어보세요' 항목 https://www.kinfa.or.kr/financialProduct/hessalLoanGeneral.do"
+    },
+    {
+      "id": "haessal-loan-general-limit",
+      "claim": "햇살론일반 보증한도는 최대 1,500만원이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서민금융진흥원 햇살론일반 상품 페이지 '보증한도'",
+      "source_url": "https://www.kinfa.or.kr/financialProduct/hessalLoanGeneral.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "생활안정자금",
+        "line": "햇살론일반",
+        "years": "상품 페이지 열람 시점(2026-10-27) 기준",
+        "region": "KR"
+      },
+      "caution": "'최대'이며 실제 가능 금액은 개인별 신용도·소득에 따라 달라진다. 1,500만원을 받을 수 있다고 단정하지 말 것.",
+      "cautionSource": "같은 페이지 '유의사항' https://www.kinfa.or.kr/financialProduct/hessalLoanGeneral.do"
+    },
+    {
+      "id": "haessal-loan-general-rate-fee",
+      "claim": "햇살론일반 대출금리는 연 10% 이내(금융회사별 상이)이며, 별도 보증료는 2.5% 이내다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서민금융진흥원 햇살론일반 상품 페이지 '금리'·'보증료'",
+      "source_url": "https://www.kinfa.or.kr/financialProduct/hessalLoanGeneral.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "생활안정자금",
+        "line": "햇살론일반 금리·보증료",
+        "years": "상품 페이지 열람 시점(2026-10-27) 기준",
+        "region": "KR"
+      },
+      "caution": "'연 10% 이내'는 상한 표기다. 같은 페이지 '업권별 평균금리' 상세는 이번 조사에서 열지 못했다. 평균금리 숫자를 글에 쓰지 말 것.",
+      "cautionSource": "상품 페이지 금리 표기 https://www.kinfa.or.kr/financialProduct/hessalLoanGeneral.do"
+    },
+    {
+      "id": "haessal-loan-general-term-repay",
+      "claim": "햇살론일반 대출기간은 5년 이내(1년 단위 신청 가능)이며, 상환방법은 원리금균등분할상환이고 중도상환수수료는 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서민금융진흥원 햇살론일반 상품 페이지 '대출기간'·'상환 방법'",
+      "source_url": "https://www.kinfa.or.kr/financialProduct/hessalLoanGeneral.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "생활안정자금",
+        "line": "햇살론일반 기간·상환",
+        "years": "상품 페이지 열람 시점(2026-10-27) 기준",
+        "region": "KR"
+      },
+      "caution": "",
+      "cautionSource": ""
+    },
+    {
+      "id": "haessal-loan-general-fee-discount",
+      "claim": "햇살론일반 보증료 인하 대상은 사회적배려대상자(0.5%p), 금융교육 또는 신용부채컨설팅 이수자·국민취업지원제도 성공자·복지멤버십 가입자(0.1%p, 중복 불가), 상생신용생명보험 가입자 최초 1~12회차(0.3%p)다. ①과 ②·③은 중복 가능하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서민금융진흥원 햇살론일반 상품 페이지 '보증료 인하 안내'",
+      "source_url": "https://www.kinfa.or.kr/financialProduct/hessalLoanGeneral.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "생활안정자금",
+        "line": "햇살론일반 보증료 인하",
+        "years": "상품 페이지 열람 시점(2026-10-27) 기준",
+        "region": "KR"
+      },
+      "caution": "보증료 인하는 대출 약정 이후에는 적용되지 않는다. 신청 전에 필요 서류 제출과 교육·컨설팅 이수를 먼저 끝내라고 안내할 것.",
+      "cautionSource": "같은 페이지 '꼭 읽어보세요' 항목 https://www.kinfa.or.kr/financialProduct/hessalLoanGeneral.do"
+    },
+    {
+      "id": "haessal-loan-general-two-step-approval",
+      "claim": "햇살론일반은 서민금융진흥원 가조회에서 승인되어도 신청한 금융회사가 자체 심사로 거절할 수 있고, 보증 단계에서 서민금융 신용평가시스템으로 거절될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "서민금융진흥원 햇살론일반 상품 페이지 '꼭 읽어보세요'",
+      "source_url": "https://www.kinfa.or.kr/financialProduct/hessalLoanGeneral.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "생활안정자금",
+        "line": "햇살론일반 심사 절차",
+        "years": "상품 페이지 열람 시점(2026-10-27) 기준",
+        "region": "KR"
+      },
+      "caution": "",
+      "cautionSource": ""
+    },
+    {
+      "id": "haessal-loan-youth-unverified",
+      "claim": "햇살론유스의 현행 지원대상·한도·금리는 이번 조사에서 공식 원문으로 확인하지 못했다(서민금융진흥원 상품 페이지 주소 확보 실패).",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "서민금융진흥원 홈페이지 '생활안정자금' 목록에 햇살론유스 항목 표시만 확인, 상세 페이지 미확보",
+      "source_url": "https://www.kinfa.or.kr/financialProduct/hessalLoanGeneral.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "생활안정자금",
+        "line": "햇살론유스",
+        "years": "2026-10-27 열람 시점",
+        "region": "KR"
+      },
+      "caution": "블로그에 '만 34세 이하' 등 연령 기준이 나오지만 공식 확인 전이다. 글에 연령·한도·금리 숫자를 쓰지 말고 서민금융콜센터 1397 확인을 안내할 것.",
+      "cautionSource": "검색 요약(2차 자료)만 있고 공식 원문 미열람"
+    },
+    {
+      "id": "haessal-loan-special-unverified",
+      "claim": "햇살론 특례의 한도(최대 1,000만원)와 금리(연 9.9~12.5% 이내)는 이번 조사에서 공식 원문으로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "서민금융진흥원 상단 메뉴에 '햇살론 특례' 항목 표시만 확인, 상세 페이지 주소 확보 실패",
+      "source_url": "https://www.kinfa.or.kr/financialProduct/hessalLoanGeneral.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "생활안정자금",
+        "line": "햇살론 특례",
+        "years": "2026-10-27 열람 시점",
+        "region": "KR"
+      },
+      "caution": "한도·금리 숫자는 2차 자료에서만 나온 값이다. 글에 쓰지 말고 '현행 조건은 서민금융진흥원 상품 페이지 또는 1397에서 확인'으로 연결할 것.",
+      "cautionSource": "검색 요약(2차 자료)만 있고 공식 원문 미열람"
+    },
+    {
+      "id": "haessal-loan-2026-restructure-unverified",
+      "claim": "2026년부터 햇살론이 '일반보증·특례보증·유스' 3종으로 통합 개편됐다는 설명은 이번 조사에서 공식 확인하지 못했다(블로그마다 설명이 달랐다).",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "블로그·정보 글 다수(2차). 공식 공지 미확보",
+      "source_url": "https://www.kinfa.or.kr/financialProduct/hessalLoanGeneral.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "서민금융진흥원",
+        "category": "햇살론 전체",
+        "line": "상품 구조 개편",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "통합 개편을 사실로 쓰지 말 것. 공식 홈페이지 생활안정자금 목록에는 햇살론일반·햇살론유스·햇살론카드 등이 각각 표시된다.",
+      "cautionSource": "서민금융진흥원 홈페이지 생활안정자금 목록(2026-10-27 열람), 블로그 설명 상충"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "topic": "문화가 있는 날 — 운영 요일, 참여 시설 할인 방식, 기획사업·문화의 달",
+  "brand": "문화체육관광부 (지역문화통합정보시스템)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "cultureday-weekly-wednesday",
+      "claim": "문화가 있는 날은 매주 수요일에 운영된다고 문화체육관광부 지역문화통합정보시스템 '문화가 있는 날' 페이지가 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "문화체육관광부 지역문화통합정보시스템 — 문화가 있는 날 페이지(CULTURE DAY)",
+      "source_url": "https://www.culture.go.kr/wday/",
+      "checked": "2026-10-27",
+      "scope": { "brand": "문화체육관광부", "category": "문화 할인 행사", "line": "문화가 있는 날", "years": "페이지 기준 현행(연도 미표기)", "region": "KR" },
+      "caution": "페이지에는 '매주 수요일 일상을 문화로 가득 채워보세요'라는 문구만 있고 확대 시행일은 없다. 2026년 4월 1일 확대라는 날짜는 블로그 보도뿐이라 공식 날짜로 쓰지 말 것(확인실패 팩트 참조).",
+      "cautionSource": "2026-04-01 확대 날짜는 블로그 검색 요약에서만 확인(미열람) — cultureday-2026-april-expansion-unverified 참조"
+    },
+    {
+      "id": "cultureday-last-wednesday-benefits",
+      "claim": "문화가 있는 날 일부 혜택은 매달 마지막 수요일에 적용된다. 에버랜드 입장료는 마지막 수요일 최대 30% 할인(매달 할인가 상이), KBO는 마지막 수요일 프로야구 구단 홈경기 관람료 할인(구단마다 상이)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "문화체육관광부 지역문화통합정보시스템 — 문화가 있는 날 문화혜택 영역",
+      "source_url": "https://www.culture.go.kr/wday/",
+      "checked": "2026-10-27",
+      "scope": { "brand": "문화체육관광부", "category": "참여 시설 할인", "line": "에버랜드·KBO 마지막 수요일 혜택", "years": "페이지 기준 현행", "region": "KR" },
+      "caution": "할인율은 달마다, 구단마다 다르다. '최대 30%'를 고정 할인율로 쓰면 틀린다. 매달 할인 내용은 해당 시설 안내를 확인하도록 안내할 것.",
+      "cautionSource": "같은 페이지 문화혜택 영역(매달 할인가 상이·구단마다 상이 표기)"
+    },
+    {
+      "id": "cultureday-ebook-cashback-kyobo",
+      "claim": "문화가 있는 날 전자책 캐시백(교보문고): 매주 수요일 추천도서를 대여하거나 구매하면 100% 캐시백을 지급한다고 페이지가 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "문화체육관광부 지역문화통합정보시스템 — 문화가 있는 날 문화혜택 영역(교보문고 항목)",
+      "source_url": "https://www.culture.go.kr/wday/",
+      "checked": "2026-10-27",
+      "scope": { "brand": "교보문고", "category": "전자책 캐시백", "line": "문화가 있는 날 매주 수요일 추천도서", "years": "페이지 기준 현행", "region": "KR" },
+      "caution": "캐시백 한도·대상 도서 조건은 페이지에 없다. 조건은 교보문고 안내를 확인하도록 할 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "cultureday-october-culture-month",
+      "claim": "10월은 '문화의 달'로 매년 지정돼 있다고 같은 시스템 페이지가 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "문화체육관광부 지역문화통합정보시스템 — 문화가 있는 날 페이지 '문화의 달' 영역",
+      "source_url": "https://www.culture.go.kr/wday/",
+      "checked": "2026-10-27",
+      "scope": { "brand": "문화체육관광부", "category": "문화 행사 기간", "line": "문화의 달", "years": "매년", "region": "KR" },
+      "caution": "",
+      "cautionSource": ""
+    },
+    {
+      "id": "cultureday-planned-events-region-2026-10",
+      "claim": "문화가 있는 날 기획사업(청춘마이크 등) 공연은 지역별로 편성되며, 페이지에는 2026년 10월 29일부터 31일까지의 공연 일정이 노출돼 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "문화체육관광부 지역문화통합정보시스템 — 문화가 있는 날 공연 목록",
+      "source_url": "https://www.culture.go.kr/wday/",
+      "checked": "2026-10-27",
+      "scope": { "brand": "문화체육관광부", "category": "기획사업 공연", "line": "청춘마이크·청춘마이크 시너지 등", "years": "2026-10-29~10-31 노출분", "region": "지역별" },
+      "caution": "노출된 날짜는 개별 공연 일정이며 프로그램 전체 운영 기간이 아니다. 전체 기간으로 쓰지 말 것.",
+      "cautionSource": "같은 페이지 공연 목록(개별 공연 날짜)"
+    },
+    {
+      "id": "cultureday-notice-2026-06-22-income-deduction",
+      "claim": "문화체육관광부 지역문화통합정보시스템 공지사항에 2026년 6월 22일자 '문화가 있는 날에 문화비 소득공제 즐기는 방법!' 게시물이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "문화체육관광부 지역문화통합정보시스템 — 공지사항 목록(게시물 제목·날짜)",
+      "source_url": "https://www.culture.go.kr/wday/",
+      "checked": "2026-10-27",
+      "scope": { "brand": "문화체육관광부", "category": "공지사항", "line": "문화비 소득공제 안내 게시물", "years": "2026-06-22 게시", "region": "KR" },
+      "caution": "게시물 본문은 열지 않았다. 소득공제 한도·공제율은 이 팩트로 쓰지 말고 조세 관계 법령 원문과 국세청 안내로 따로 확인할 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "cultureday-chunmic-period-blog-unverified",
+      "claim": "블로그 자료는 청춘마이크 2026년 운영 기간을 2026년 4월 1일부터 11월 29일까지로 전하나, 공식 확인은 하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "블로그 검색 결과 요약(원문 미열람)",
+      "source_url": "",
+      "checked": "2026-10-27",
+      "scope": { "brand": "문화체육관광부", "category": "기획사업 청춘마이크", "line": "청춘마이크 2026 운영 기간", "years": "2026 (블로그 주장)", "region": "KR" },
+      "caution": "운영 기간 날짜는 블로그 주장이라 글에 확정 기간으로 쓰지 말 것. 쓸 때는 '지역별 공연 일정은 공식 페이지에서 확인'으로 안내한다.",
+      "cautionSource": "블로그 검색 요약(미열람, 공식 아님) — 공식 확인 실패"
+    },
+    {
+      "id": "cultureday-2026-april-expansion-unverified",
+      "claim": "2026년 4월 1일부터 문화가 있는 날이 매월 1회에서 매주 수요일로 확대됐다는 내용이 블로그·카드사 콘텐츠에 있으나, 문화체육관광부 공식 발표 원문은 이번 조사에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "블로그·카드사 콘텐츠 검색 결과 요약(원문 미열람)",
+      "source_url": "",
+      "checked": "2026-10-27",
+      "scope": { "brand": "문화체육관광부", "category": "문화가 있는 날 운영 방식 변경", "line": "매주 수요일 확대", "years": "2026-04 (블로그 주장)", "region": "KR" },
+      "caution": "'2026년 4월 1일 확대' 날짜는 공식 확인 실패다. 매주 수요일 운영 자체는 공식 페이지 팩트(cultureday-weekly-wednesday)로 쓰고, 확대 시점은 날짜를 쓰지 말 것.",
+      "cautionSource": "블로그·카드사 콘텐츠 요약(미열람, 공식 아님)"
+    }
+  ]
+}

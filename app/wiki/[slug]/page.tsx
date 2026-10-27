@@ -269,7 +269,7 @@ export default async function WikiEntryPage({ params }: { params: Promise<{ slug
                             {e.apply.next.status === "확정" ? (
                               <span className="wk-pill" style={{ color: "#2f7d4f" }}>확정 {fmt(e.apply.next.start!)}~{fmt(e.apply.next.end!)}</span>
                             ) : e.apply.next.status === "상시" ? (
-                              <span className="wk-pill" style={{ color: "#38539a" }}>연중 상시</span>
+                              <span className="wk-pill" style={{ color: "#38539a" }}>회차 없이 수시 신청</span>
                             ) : (
                               <span className="wk-pill" style={{ color: "#b0661a" }}>공고 전</span>
                             )}

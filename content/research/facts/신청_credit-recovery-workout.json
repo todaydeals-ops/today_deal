@@ -1,0 +1,83 @@
+{
+  "topic": "개인워크아웃(신용회복위원회 개인채무조정) — 신청 대상, 감면·분할·유예 조건, 추심 중단, 개인회생과의 구분",
+  "brand": "신용회복위원회",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "credit-recovery-workout-criteria",
+      "claim": "개인워크아웃 신청 대상은 연체기간 90일 이상이고, 채권금융회사 총 채무액이 15억원(무담보 5억원, 담보 10억원) 이하이며, 최근 6개월 이내 새로 생긴 채무 원금이 총 채무원금의 30% 미만인 사람이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신용회복위원회 채무조정 > 개인워크아웃(일반) 페이지 '신청 대상'",
+      "source_url": "https://www.ccrs.or.kr/cms/com/index.do?MENU_ID=1930",
+      "checked": "2026-10-27",
+      "scope": { "brand": "신용회복위원회", "category": "채무조정", "line": "개인워크아웃 일반", "years": "페이지 열람 시점(2026-10-27) 기준 표기", "region": "KR" },
+      "caution": "15억원(무담보 5억·담보 10억)은 신용회복위원회 워크아웃 신청 한도다. 개인회생 채무 상한(담보부 15억·무담보 10억, 채무자회생법 제579조)과 다르다. 두 제도 한도를 섞어 쓰지 말 것.",
+      "cautionSource": "신용회복위원회 개인워크아웃 페이지 https://www.ccrs.or.kr/cms/com/index.do?MENU_ID=1930 및 채무자회생법 제579조 https://www.law.go.kr/법령/채무자회생및파산에관한법률/제579조"
+    },
+    {
+      "id": "credit-recovery-workout-reduction",
+      "claim": "개인워크아웃에서 미상각채권은 원금을 최대 30%까지 감면받을 수 있고, 상각채권은 20~70% 감면 범위가 있으며, 연체이자와 이자는 전액 감면된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신용회복위원회 개인워크아웃 페이지 '지원 내용'·'원금감면' 표기",
+      "source_url": "https://www.ccrs.or.kr/cms/com/index.do?MENU_ID=1930",
+      "checked": "2026-10-27",
+      "scope": { "brand": "신용회복위원회", "category": "채무조정", "line": "개인워크아웃 일반 감면", "years": "페이지 열람 시점(2026-10-27) 기준", "region": "KR" },
+      "caution": "감면율은 '상환능력에 따라' 정해진다. 최대치를 받을 수 있다고 단정하지 말고, 상담 시 본인 상환능력 기준으로 산정된다고 안내할 것.",
+      "cautionSource": "같은 페이지 '지원 내용' 문구 https://www.ccrs.or.kr/cms/com/index.do?MENU_ID=1930"
+    },
+    {
+      "id": "credit-recovery-workout-repayment-term",
+      "claim": "개인워크아웃 분할상환은 무담보채무 최장 8년 원금균등분할, 주택담보채무 최장 35년 원리금균등분할이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신용회복위원회 개인워크아웃 페이지 '상환기간'·'분할상환' 표기",
+      "source_url": "https://www.ccrs.or.kr/cms/com/index.do?MENU_ID=1930",
+      "checked": "2026-10-27",
+      "scope": { "brand": "신용회복위원회", "category": "채무조정", "line": "개인워크아웃 일반 상환기간", "years": "페이지 열람 시점(2026-10-27) 기준", "region": "KR" },
+      "caution": "2차 자료 일부는 무담보 '최장 10년'이라고 쓴다. 공식 페이지 표기는 8년이므로 10년을 쓰지 말 것.",
+      "cautionSource": "신용회복위원회 페이지 https://www.ccrs.or.kr/cms/com/index.do?MENU_ID=1930 (8년 표기)"
+    },
+    {
+      "id": "credit-recovery-workout-grace-period",
+      "claim": "원금균등분할상환 중에는 6개월 단위로 최장 3년 이내 상환을 유예받을 수 있고, 유예이자율은 연 2%다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신용회복위원회 개인워크아웃 페이지 '지원 내용 > 상환유예'",
+      "source_url": "https://www.ccrs.or.kr/cms/com/index.do?MENU_ID=1930",
+      "checked": "2026-10-27",
+      "scope": { "brand": "신용회복위원회", "category": "채무조정", "line": "개인워크아웃 상환유예", "years": "페이지 열람 시점(2026-10-27) 기준", "region": "KR" },
+      "caution": "유예는 원금균등분할상환 중에만 해당한다고 페이지에 적혀 있다. 원리금균등 상환 채무에 적용된다고 쓰지 말 것.",
+      "cautionSource": "같은 페이지 '상환유예' 항목 https://www.ccrs.or.kr/cms/com/index.do?MENU_ID=1930"
+    },
+    {
+      "id": "credit-recovery-workout-collection-stop",
+      "claim": "개인워크아웃은 신청 다음 날부터 본인 및 보증인에 대한 추심이 중단되고, 채무조정 확정 후 연체정보 및 채무불이행자 정보가 해제된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "신용회복위원회 개인워크아웃 페이지 '추심중단'·'연체정보 해제'",
+      "source_url": "https://www.ccrs.or.kr/cms/com/index.do?MENU_ID=1930",
+      "checked": "2026-10-27",
+      "scope": { "brand": "신용회복위원회", "category": "채무조정", "line": "개인워크아웃 추심중단·정보해제", "years": "페이지 열람 시점(2026-10-27) 기준", "region": "KR" },
+      "caution": "같은 페이지에 '1년간 성실상환 시 공공정보(1101) 해제'도 적혀 있다. 해제 시점 문구를 '확정 즉시'로 줄여 쓰지 말 것.",
+      "cautionSource": "같은 페이지 '연체정보 해제' 항목 https://www.ccrs.or.kr/cms/com/index.do?MENU_ID=1930"
+    },
+    {
+      "id": "credit-recovery-workout-prerequisite-unverified",
+      "claim": "연체 31~89일은 사전채무조정(프리워크아웃), 30일 이하는 신속채무조정 특례 대상이라는 구분은 이번 조사에서 공식 페이지로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "검색 요약(2차). 사전채무조정 페이지 열람 시 본문이 확인되지 않았다.",
+      "source_url": "https://www.ccrs.or.kr/cms/com/index.do?MENU_ID=1930",
+      "checked": "2026-10-27",
+      "scope": { "brand": "신용회복위원회", "category": "채무조정", "line": "사전채무조정·신속채무조정 구분", "years": "2026-10-27 열람 시점", "region": "KR" },
+      "caution": "연체 일수 구간(31~89일, 30일 이하)을 글에 쓰지 말 것. 확인 전 숫자다. '90일 미만이면 사전채무조정 등 다른 제도도 있으니 상담에서 확인'으로 안내한다.",
+      "cautionSource": "검색 요약만 있고 공식 원문 미열람 (사전채무조정 페이지 https://m.ccrs.or.kr/renewal/debt/free/workout.do 는 열람했으나 본문 미확인)"
+    }
+  ]
+}

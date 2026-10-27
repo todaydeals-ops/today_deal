@@ -1,0 +1,101 @@
+{
+  "topic": "생계급여(기초생활보장 맞춤형 급여) — 2026년 기준 중위소득과 생계급여 선정기준, 수급 요건, 급여액 산식, 미확인 청년 공제",
+  "brand": "보건복지부·복지로",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "livelihood-benefit-2026-median-income",
+      "claim": "2026년도 기준 중위소득은 4인 가구 649만 4,738원(전년 대비 6.51% 인상)이며, 1인 가구는 256만 4,238원(7.20% 인상)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "보건복지부 보도자료 '2026년도 기준 중위소득 6.51% 역대 최대로 인상'(제77차 중앙생활보장위원회 7월 31일 심의·의결)",
+      "source_url": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&act=view&list_no=1487098",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "보건복지부",
+        "category": "기초생활보장",
+        "line": "기준 중위소득",
+        "years": "2026년도",
+        "region": "KR"
+      },
+      "caution": "기준 중위소득은 매년 고시로 바뀐다. 글에는 반드시 '2026년도'를 붙이고, 2025년 수치(4인 609만 7,773원)와 섞지 말 것.",
+      "cautionSource": "보건복지부 보도자료 https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&act=view&list_no=1487098"
+    },
+    {
+      "id": "livelihood-benefit-2026-criteria",
+      "claim": "2026년도 생계급여 선정기준(기준 중위소득 32%)은 1인 가구 82만 556원, 2인 가구 134만 3,773원, 4인 가구 207만 8,316원이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "보건복지부 보도자료 '2026년도 기준 중위소득 6.51% 역대 최대로 인상'의 급여별 선정기준 표(생계급여 중위 32%)",
+      "source_url": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&act=view&list_no=1487098",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "보건복지부",
+        "category": "기초생활보장",
+        "line": "생계급여 선정기준",
+        "years": "2026년도",
+        "region": "KR"
+      },
+      "caution": "선정기준은 '최저보장수준'이며 실제 지급액이 아니다. 지급액은 선정기준에서 소득인정액을 뺀 금액이다(복지로 산식). 선정기준 금액을 '받는 금액'으로 쓰지 말 것.",
+      "cautionSource": "보건복지부 보도자료 https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&act=view&list_no=1487098 및 복지로 생계급여 상세 https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001132"
+    },
+    {
+      "id": "livelihood-benefit-eligibility",
+      "claim": "생계급여 지원대상은 가구의 소득인정액이 생계급여 선정기준 이하이고 부양의무자 기준을 동시에 충족하며 생계급여 수급자로 결정된 사람이다. 다른 법령으로 생계급여를 받는 경우에는 소득인정액이 기준 이하여도 지급하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 '생계급여(맞춤형 급여)' 복지서비스 상세(중앙) 지원대상·선정기준",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001132",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "보건복지부·복지로",
+        "category": "기초생활보장",
+        "line": "생계급여 지원대상",
+        "years": "기준연도 2026",
+        "region": "KR"
+      },
+      "caution": "부양의무자 기준의 세부 기준(연령·소득·재산 등)은 이번 조사에서 열람하지 못했다. 부양의무자 기준 숫자를 쓰지 말고 '복지로 모의계산'을 안내할 것.",
+      "cautionSource": "복지로 생계급여 상세 https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001132 (부양의무자 세부 미열람)"
+    },
+    {
+      "id": "livelihood-benefit-amount-formula",
+      "claim": "생계급여액은 생계급여 선정기준에서 가구의 소득인정액을 뺀 금액이고, 소득인정액은 소득평가액과 재산의 소득환산액을 합한 금액이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 생계급여 상세(중앙) '선정기준' 산식 표기",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001132",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "보건복지부·복지로",
+        "category": "기초생활보장",
+        "line": "생계급여액 산식",
+        "years": "기준연도 2026",
+        "region": "KR"
+      },
+      "caution": "소득평가액은 '실제소득 − 가구특성별 지출비용 − 근로소득공제'이고, 재산의 소득환산액은 '(재산가액 − 기본재산액 − 부채) × 소득환산율'이다. 환산율 숫자는 이번 조사에서 확인하지 못했으니 쓰지 말 것.",
+      "cautionSource": "복지로 생계급여 상세 산식 https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001132 (환산율 미확인)"
+    },
+    {
+      "id": "livelihood-benefit-youth-deduction-unverified",
+      "claim": "2026년 생계급여 제도개선의 청년 근로소득 공제 확대(대상 연령 상한·추가공제액)는 이번 조사에서 공식 원문 숫자로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "보건복지부 보도자료는 '청년층 근로소득 공제 대상 확대'까지만 기재. 연령 상한·금액은 2차 자료(블로그·언론)에만 있었다.",
+      "source_url": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&act=view&list_no=1487098",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "보건복지부",
+        "category": "기초생활보장",
+        "line": "청년 근로소득 공제",
+        "years": "2026년도 제도개선",
+        "region": "KR"
+      },
+      "caution": "블로그의 '29세 이하→34세 이하', '월 40만원→60만원' 같은 숫자는 공식 확인 전이다. 글에 쓰지 말고 '청년 공제가 넓어졌다'까지만 쓰고 복지로 확인을 안내할 것.",
+      "cautionSource": "블로그·언론 2차 자료만 확인. 공식 원문 미확보"
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "topic": "운전면허 시험 접수 — 응시 자격·종별·수수료·접수 경로·준비물 (도로교통공단 안내 + 도로교통법 원문 기준)",
+  "brand": "한국도로교통공단 · 경찰청(시·도경찰청장)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "dl-renewal-period-10yr-birthday",
+      "why": "갱신기간(도로교통법 제87조) 조문은 갱신 주제다. 시험 접수 글에 넣으면 신규 응시와 정기 갱신이 섞인다. 시험 글에서는 쓰지 않는다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "driver-license-test-status",
+      "claim": "도로교통법은 2026년 10월 13일 일부개정(법률 제22067호)되어 2027년 4월 14일 시행으로 표시된다. 응시 관련 조문(제80조·제81조·제82조)의 개정 표기에는 2026년 개정이 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 도로교통법 제80조 원문 화면(시행 2027.4.14 표시)",
+      "source_url": "https://www.law.go.kr/법령/도로교통법/제80조",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "경찰청",
+        "category": "운전면허 시험",
+        "line": "신규 면허 응시 전반",
+        "years": "2026-10-27 열람 시점",
+        "region": "KR"
+      },
+      "caution": "law.go.kr은 시행 전 개정본을 표시한다. 2027년 4월 이전에 적용되는 본문이 같은지 확정하지 못했다. 응시 조문은 개정 표기로만 같다고 판단했다.",
+      "cautionSource": "law.go.kr 도로교통법 제80조 화면 상단 시행·개정 표기(2026.10.13 개정, 2027.4.14 시행)"
+    },
+    {
+      "id": "dl-test-license-types",
+      "claim": "운전면허는 시·도경찰청장이 부여하며 제1종(대형·보통·소형·특수 및 그 견인차면허), 제2종(보통·소형·원동기장치자전거), 제1종·제2종 보통연습면허로 구분된다(도로교통법 제80조 제1항·제2항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 도로교통법 제80조(운전면허) 원문",
+      "source_url": "https://www.law.go.kr/법령/도로교통법/제80조",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "경찰청(시·도경찰청장)",
+        "category": "운전면허 종류",
+        "line": "제1종·제2종·연습면허",
+        "years": "법 조문 현행(화면 시행 2027.4.14 표시)",
+        "region": "KR"
+      },
+      "caution": "면허 종류 목록은 법 조문 기준이다. 시험 접수 메뉴의 종별명은 공단 페이지와 다를 수 있으니 접수 화면 표기를 따른다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "dl-test-age-minimum-by-type",
+      "claim": "시험 응시 연령은 1종 보통·2종 보통·2종 소형(125cc 초과 이륜)이 18세 이상, 2종 원동기장치자전거(125cc 이하)가 16세 이상이며, 1종 대형·특수는 19세 이상이고 1·2종 보통 면허 취득 후 1년이 지나야 한다(도로교통공단 학과시험 안내).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국도로교통공단 안전운전 통합민원 > 면허시험 안내 > 학과/기능/도로주행 (학과시험 페이지)",
+      "source_url": "https://www.safedriving.or.kr/dtGuide/selectDtGuide08.do?menuCd=MN-PO-1114",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국도로교통공단",
+        "category": "운전면허 시험 응시 자격",
+        "line": "종별별 응시 연령",
+        "years": "2026-10-27 열람 시점",
+        "region": "KR"
+      },
+      "caution": "18세 미만은 법정 결격이다(도로교통법 제82조 제1항 제1호). 연령 하한은 법과 같은 방향이지만 자격 판정은 공단 안내와 면허시험장 확인으로 한다.",
+      "cautionSource": "도로교통법 제82조 제1항 제1호 원문 https://www.law.go.kr/법령/도로교통법/제82조"
+    },
+    {
+      "id": "dl-test-legal-disqualify-under18",
+      "claim": "18세 미만(원동기장치자전거는 16세 미만)인 사람은 운전면허를 받을 수 없다(도로교통법 제82조 제1항 제1호).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 도로교통법 제82조(운전면허의 결격사유) 원문",
+      "source_url": "https://www.law.go.kr/법령/도로교통법/제82조",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "경찰청",
+        "category": "운전면허 결격사유",
+        "line": "전 종별",
+        "years": "법 조문 현행(조문 개정 표기 2019.12.24)",
+        "region": "KR"
+      },
+      "caution": "같은 조는 제1종 대형·특수 취득 19세 기준(제6호)과 운전경험 1년 기준도 함께 둔다. 이 팩트 하나로 자격 전체를 단정하지 말 것.",
+      "cautionSource": "도로교통법 제82조 제1항 제6호 원문 https://www.law.go.kr/법령/도로교통법/제82조"
+    },
+    {
+      "id": "dl-test-one-eye-restriction-by-law",
+      "claim": "한쪽 눈만 보지 못하는 사람은 제1종 대형면허·특수면허를 받을 수 없는 범위가 제한된다(도로교통법 제82조 제1항 제3호 괄호).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 도로교통법 제82조 제1항 제3호 원문",
+      "source_url": "https://www.law.go.kr/법령/도로교통법/제82조",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "경찰청",
+        "category": "운전면허 결격·신체장애",
+        "line": "한쪽 눈 실명(제1종 대형·특수)",
+        "years": "법 조문 현행",
+        "region": "KR"
+      },
+      "caution": "조문은 제1종 대형·특수 해당을 결격 범위로 적는다. 1종 보통 응시 절차는 아래 진단서 팩트를 따라 쓴다. 두 문장을 합쳐 한쪽 눈이면 어떤 면허도 불가라고 쓰지 말 것.",
+      "cautionSource": "도로교통법 제82조 제1항 제3호 원문 https://www.law.go.kr/법령/도로교통법/제82조"
+    },
+    {
+      "id": "dl-test-one-eye-doctor-certificate",
+      "claim": "한쪽 눈이 보이지 않는 사람이 제1종 보통면허 시험에 응시하려면 안과의사 진단서가 필요하다. 세부 기준은 고객지원센터 1577-1120에 문의한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국도로교통공단 면허시험 준비물 가이드(신체검사·단안시력자 안내)",
+      "source_url": "https://www.safedriving.or.kr/dtGuide/selectDtGuide17.do?menuCd=MN-PO-1117",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국도로교통공단",
+        "category": "운전면허 시험 신체검사",
+        "line": "제1종 보통 응시(단안시력자)",
+        "years": "2026-10-27 열람 시점",
+        "region": "KR"
+      },
+      "caution": "진단서 세부 양식과 시야검사 기준은 공단 고객지원센터 문의가 정본이다. 기준 수치를 글에 임의로 쓰지 말 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "dl-test-practice-license-validity",
+      "claim": "연습운전면허는 받은 날부터 1년 동안 효력을 가지며, 제1종 보통 또는 제2종 보통 면허를 받으면 그 전이라도 효력을 잃는다(도로교통법 제81조).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 도로교통법 제81조(연습운전면허의 효력) 원문",
+      "source_url": "https://www.law.go.kr/법령/도로교통법/제81조",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "경찰청",
+        "category": "연습운전면허",
+        "line": "제1종·제2종 보통연습면허",
+        "years": "법 조문 현행",
+        "region": "KR"
+      },
+      "caution": "연습면허 유효기간 안에 도로주행에 합격해야 한다는 공단 안내가 검색 요약에 있었으나 공단 페이지 본문으로 열지 못했다. 그 문장은 확인 전까지 쓰지 않는다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "dl-test-written-pass-score-and-time",
+      "claim": "학과시험은 공개 문제은행에서 40문항을 출제하고 시험시간은 40분이며, 합격점은 1종 대형·특수·보통 70점 이상, 2종 보통·소형·원동기장치자전거 60점 이상이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국도로교통공단 면허시험 안내 > 학과시험 페이지",
+      "source_url": "https://www.safedriving.or.kr/dtGuide/selectDtGuide08.do?menuCd=MN-PO-1114",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국도로교통공단",
+        "category": "운전면허 학과시험",
+        "line": "종별별 합격 기준",
+        "years": "2026-10-27 열람 시점",
+        "region": "KR"
+      },
+      "caution": "합격점과 문항 수는 공단 페이지 기준이다. 시험장 운영 사정에 따라 일정이 바뀔 수 있다는 공단 문구를 같이 적는다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "dl-test-written-deadlines",
+      "claim": "학과시험은 최초 응시일부터 1년 안에 합격해야 하고, 학과 합격일부터 1년 안에 기능시험에 합격해야 한다. 1년이 지나면 기존 응시원서는 폐기되고 학과시험부터 신규 접수한다(이때 교통안전교육 재수강은 불필요).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국도로교통공단 면허시험 안내 > 학과시험 페이지 주의사항",
+      "source_url": "https://www.safedriving.or.kr/dtGuide/selectDtGuide08.do?menuCd=MN-PO-1114",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국도로교통공단",
+        "category": "운전면허 시험 기한",
+        "line": "학과·기능시험 유효기간",
+        "years": "2026-10-27 열람 시점",
+        "region": "KR"
+      },
+      "caution": "기한 계산은 응시원서 접수일 기준으로 보인다. 날짜 계산이 필요한 글은 본인 응시원서의 날짜를 확인하라고 안내한다.",
+      "cautionSource": "한국도로교통공단 학과시험 페이지 주의사항 1년 규정 https://www.safedriving.or.kr/dtGuide/selectDtGuide08.do?menuCd=MN-PO-1114"
+    },
+    {
+      "id": "dl-test-written-channel-hours",
+      "claim": "학과시험은 인터넷으로 예약할 수 없고, 전국 운전면허시험장 방문 접수로 평일 09:00~17:00에 응시 접수한다(12:00~13:00 점심시간 시험 중단).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국도로교통공단 면허시험 안내 > 학과시험 페이지 및 준비물 가이드(학과시험 인터넷 예약 불가·대리 불가)",
+      "source_url": "https://www.safedriving.or.kr/dtGuide/selectDtGuide08.do?menuCd=MN-PO-1114",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국도로교통공단",
+        "category": "운전면허 학과시험 접수",
+        "line": "학과시험(재응시 포함)",
+        "years": "2026-10-27 열람 시점",
+        "region": "KR"
+      },
+      "caution": "청각장애인·비문해자 학과시험은 오전 10시30분, 오후 16시30분까지 접수를 마쳐야 한다는 공단 문구가 있다. 이 시간은 일반 접수 시간과 다르니 따로 표기한다.",
+      "cautionSource": "한국도로교통공단 학과시험 페이지 https://www.safedriving.or.kr/dtGuide/selectDtGuide08.do?menuCd=MN-PO-1114"
+    },
+    {
+      "id": "dl-test-functional-driving-channel",
+      "claim": "기능시험과 도로주행시험은 인터넷으로 접수할 수 있고, 대리 접수도 가능하다(대리는 위임장·대리인과 위임자 신분증·응시원서 필요).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국도로교통공단 면허시험 준비물 가이드",
+      "source_url": "https://www.safedriving.or.kr/dtGuide/selectDtGuide17.do?menuCd=MN-PO-1117",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국도로교통공단",
+        "category": "운전면허 시험 접수",
+        "line": "기능시험·도로주행시험",
+        "years": "2026-10-27 열람 시점",
+        "region": "KR"
+      },
+      "caution": "같은 페이지에서 학과시험은 인터넷 예약 불가·대리 불가로 적혀 있다. 기능·도로주행과 섞어 쓰지 말 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "dl-test-written-fee",
+      "claim": "학과시험 수수료는 10,000원이며, 2종 원동기장치자전거(125cc 이하)는 8,000원이다(재응시 포함).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국도로교통공단 면허시험 안내 > 학과시험 페이지 수수료 항목",
+      "source_url": "https://www.safedriving.or.kr/dtGuide/selectDtGuide08.do?menuCd=MN-PO-1114",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국도로교통공단",
+        "category": "운전면허 시험 수수료",
+        "line": "학과시험",
+        "years": "2026-10-27 열람 시점(연도 표기 없음)",
+        "region": "KR"
+      },
+      "caution": "과거 시험장 안내 일부에 이전 금액이 남아 있다는 검색 요약이 있다. 결제 전 공단 페이지 금액을 다시 본다는 문장을 넣는다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "dl-test-functional-fee",
+      "claim": "기능시험 수수료는 대형·특수 25,000원, 1·2종 보통 25,000원, 2종 소형 14,000원, 원동기장치자전거 10,000원이며 재응시도 같은 금액이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국도로교통공단 면허시험 준비물 가이드 > 기능시험 수수료",
+      "source_url": "https://www.safedriving.or.kr/dtGuide/selectDtGuide17.do?menuCd=MN-PO-1117",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국도로교통공단",
+        "category": "운전면허 시험 수수료",
+        "line": "기능시험(종별별)",
+        "years": "2026-10-27 열람 시점(연도 표기 없음)",
+        "region": "KR"
+      },
+      "caution": "기능시험 금액은 종별 묶음으로 바뀔 수 있다. 종별 표기는 공단 페이지 문구를 그대로 옮긴다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "dl-test-driving-fee",
+      "claim": "도로주행시험 수수료는 30,000원이며 재응시도 같은 금액이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국도로교통공단 면허시험 준비물 가이드 > 도로주행시험 수수료",
+      "source_url": "https://www.safedriving.or.kr/dtGuide/selectDtGuide17.do?menuCd=MN-PO-1117",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국도로교통공단",
+        "category": "운전면허 시험 수수료",
+        "line": "도로주행시험",
+        "years": "2026-10-27 열람 시점(연도 표기 없음)",
+        "region": "KR"
+      },
+      "caution": "구형 시험장 페이지에 이전 금액이 남아 있다는 검색 요약이 있으나 열어 확인하지 못했다. 공단 페이지 금액만 쓴다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "dl-test-physical-exam-fee",
+      "claim": "신체검사료는 시험장 신체검사장 기준으로 1종 대형·특수 8,000원, 그 밖의 면허 7,000원이며 병원 신체검사는 병원마다 요금이 다르다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국도로교통공단 면허시험 준비물 가이드 > 신체검사 수수료",
+      "source_url": "https://www.safedriving.or.kr/dtGuide/selectDtGuide17.do?menuCd=MN-PO-1117",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국도로교통공단",
+        "category": "운전면허 시험 신체검사",
+        "line": "신규 응시 신체검사",
+        "years": "2026-10-27 열람 시점(연도 표기 없음)",
+        "region": "KR"
+      },
+      "caution": "강릉·태백·문경·광양·충주·춘천 면허시험장에는 신체검사장이 없어 가까운 병원에서 받아야 한다. 병원에서 받으면 병원 요금이 든다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "dl-test-open-data-fee-history",
+      "claim": "한국도로교통공단은 공공데이터포털에 「운전면허정보 응시접수수수료」 데이터셋(CSV, 발행 2025년 5월 13일, 수정 2025년 11월 6일)을 공개해 시험 종별·응시구분별 수수료 변동 이력을 제공한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "공공데이터포털 한국도로교통공단_운전면허정보_응시접수수수료 메타데이터",
+      "source_url": "https://www.data.go.kr/biz/dcat/metadata/15143329.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국도로교통공단",
+        "category": "운전면허 시험 수수료 데이터",
+        "line": "응시접수수수료",
+        "years": "2025-05-13 발행·2025-11-06 수정",
+        "region": "KR"
+      },
+      "caution": "데이터셋의 금액 행은 열람하지 않았다. 금액은 공단 안내 페이지 값을 쓰고 데이터셋은 변동 이력이 있다는 사실만 인용한다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "dl-test-application-documents",
+      "claim": "학과시험 준비물은 신분증, 응시원서(신체검사 완료 또는 건강검진결과서 조회·제출), 3.5×4.5cm 상반신 컬러사진 3매(신청일로부터 6개월 이내, 모자를 벗고 배경 없이 촬영)다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국도로교통공단 면허시험 안내 > 학과시험 페이지 준비물 항목",
+      "source_url": "https://www.safedriving.or.kr/dtGuide/selectDtGuide08.do?menuCd=MN-PO-1114",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국도로교통공단",
+        "category": "운전면허 시험 준비물",
+        "line": "학과시험",
+        "years": "2026-10-27 열람 시점",
+        "region": "KR"
+      },
+      "caution": "사진 규격과 허용 신분증 범위는 공단의 별도 페이지(허용되는 사진 규격·신분증 인정 범위)에서 다시 확인하도록 안내한다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "dl-test-menu-path-public",
+      "claim": "공단 통합민원 홈페이지의 메뉴 경로는 운전면허 시험 > 면허시험 안내 > 학과/기능/도로주행이며, 하위에 학과시험·기능시험·연습면허·도로주행시험 페이지가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국도로교통공단 안전운전 통합민원 면허시험 안내 메뉴(학과시험 페이지 좌측 메뉴)",
+      "source_url": "https://www.safedriving.or.kr/dtGuide/selectDtGuide08.do?menuCd=MN-PO-1114",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국도로교통공단",
+        "category": "운전면허 시험 접수 경로",
+        "line": "학과/기능/도로주행 메뉴",
+        "years": "2026-10-27 열람 시점",
+        "region": "KR"
+      },
+      "caution": "메뉴명은 개편될 수 있다. 본문에 메뉴 경로를 쓸 때는 글 발행 직전 화면에서 다시 확인한다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "driver-license-test-fee-old-venue-unverified",
+      "claim": "일부 구형 시험장 안내 페이지에는 도로주행 25,000원, 학과 7,500원 등 이전 금액이 남아 있다는 검색 요약이 있으나, 해당 페이지를 열어 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "검색 요약(지역 면허시험장 구형 페이지, 미열람)",
+      "source_url": "",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "면허시험장(지역)",
+        "category": "운전면허 시험 수수료",
+        "line": "구형 안내 문구",
+        "years": "미상",
+        "region": "KR"
+      },
+      "caution": "이 금액은 글에 쓰지 않는다. 독자에게는 공단 면허시험 안내 페이지의 현재 금액을 확인하라고 안내한다.",
+      "cautionSource": ""
+    }
+  ]
+}

@@ -101,7 +101,7 @@ export interface WikiEntry {
   apply?: {
     agency: string; // 담당 기관 — "국세청"
     where: string; // 신청·조회하는 곳 — "홈택스·손택스, 가까운 세무서"
-    cycle: string; // 해마다 돌아오는 시기 — "매년 5월 1일~31일" / "연중 상시"
+    cycle: string; // 해마다 돌아오는 시기 — "매년 5월 1일~31일" / "연중 상시". ※next.status "상시"는 화면에 "회차 없이 수시 신청"으로 나온다(기한이 없다는 뜻이 아님 — 사유 발생일 기준 기한은 본문·note 에)
     basis?: string; // 기한의 법적 근거 — "소득세법 제70조"
     next: {
       status: "확정" | "미발표" | "상시"; // 다가오는 회차가 공고됐는지. 상시 = 기한 없이 언제든
