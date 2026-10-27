@@ -1,0 +1,18 @@
+/* 푸터 — 2026-10-27 리뉴얼. 홈: 큰 문구 + 보조 문구 + 크레딧·약관. 그 외: 크레딧·약관 한 줄. */
+.footer { background: var(--rn-tint); border-top: 1px solid var(--rn-line-tint); font-family: Pretendard, -apple-system, BlinkMacSystemFont, sans-serif; word-break: keep-all; color: var(--rn-ink); }
+.inner { max-width: 1200px; margin: 0 auto; padding: 44px 24px 28px; display: flex; flex-direction: column; gap: 28px; }
+.compact .inner { padding: 32px 24px 28px; gap: 0; }
+.statement { display: flex; flex-direction: column; gap: 14px; }
+.statement p { margin: 0; }
+.big { font-size: clamp(26px, 3.4vw, 40px); font-weight: 800; letter-spacing: -0.04em; line-height: 1.3; text-wrap: pretty; }
+.sub { font-size: 15px; color: var(--rn-muted); }
+.credits { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding-top: 24px; border-top: 1px solid var(--rn-line-tint); font-size: 13px; color: var(--rn-muted); }
+.compact .credits { padding-top: 0; border-top: 0; }
+.links { display: flex; gap: 20px; flex-wrap: wrap; }
+.links a { color: var(--rn-muted); text-decoration: none; }
+.links a:hover { color: var(--rn-green-text); }
+.admin { opacity: 0.45; }
+@media (max-width: 760px) {
+  .inner { padding: 36px 16px 24px; }
+  .compact .inner { padding: 28px 16px 24px; }
+}

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./renewal.css";
+import MobileTabBar from "@/components/MobileTabBar";
 import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
@@ -61,6 +63,10 @@ export default function RootLayout({
           crossOrigin="anonymous"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
         />
+        {/* 리뉴얼(2026-10-27): 라벨·숫자·메타용 IBM Plex Mono */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.2.0/dist/tabler-icons.min.css"
@@ -94,6 +100,8 @@ export default function RootLayout({
           }}
         />
         {children}
+        {/* 모바일 하단 탭바(≤760px) — 아티클·관리자에선 스스로 숨는다 */}
+        <MobileTabBar />
         {/* 브랜드 교차유도 팝업(MagazineHookPopup)은 10-21 개편으로 뺐다 — 연구소가 오늘의딜 분야로 흡수돼 서로 홍보할 별도 브랜드가 없다 */}
         <Analytics />
         <GoogleAnalytics gaId="G-0D58JNRETR" />

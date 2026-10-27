@@ -1,0 +1,175 @@
+/* AS 셀프체크 목록 - 2026-10-27 리뉴얼 (시안: 오늘의딜 AS 목록.dc.html, 모바일 M4)
+   토큰은 app/renewal.css 의 --rn-* 를 쓴다. 시안에만 있는 oklch 값은 아래 --as-* 로 두고 hex 폴백을 건다.
+   ★모든 규칙을 .root 아래에 둔다. 전역 ".rn-page a:hover { color: 초록 }" (명시도 0,2,1)을 이기려면
+   클래스 3개짜리 선택자가 필요하다(초록 버튼·활성 탭 위에서 글자가 초록으로 바뀌어 사라지는 사고 방지).
+   모바일 브레이크포인트는 760px(renewal.css 와 같다). 시안 H1·카드·칩 수치는 문자 그대로 옮겼다. */
+
+.root {
+  --as-pill-fg: #363c39;      /* oklch(0.35 0.01 160) 비활성 pill·탭 글자 */
+  --as-sym-fg: #2a2f2c;       /* oklch(0.3 0.01 160) 증상 행 글자 */
+  --as-sym-on: #005928;       /* oklch(0.4 0.12 155) 활성 증상 글자 */
+  --as-tag-fg: #005f2e;       /* oklch(0.42 0.12 155) 제품 태그 글자 */
+  --as-tag-gray: #434946;     /* oklch(0.4 0.01 160) 증상 태그 글자 */
+  --as-meta: #5f6561;         /* oklch(0.5 0.01 160) 카드 메타 */
+  --as-cnt: #6d736f;          /* oklch(0.55 0.01 160) 증상 건수 */
+}
+@supports (color: oklch(0 0 0)) {
+  .root {
+    --as-pill-fg: oklch(0.35 0.01 160);
+    --as-sym-fg: oklch(0.3 0.01 160);
+    --as-sym-on: oklch(0.4 0.12 155);
+    --as-tag-fg: oklch(0.42 0.12 155);
+    --as-tag-gray: oklch(0.4 0.01 160);
+    --as-meta: oklch(0.5 0.01 160);
+    --as-cnt: oklch(0.55 0.01 160);
+  }
+}
+
+/* ── 헤드 ── */
+.root .head { display: flex; flex-direction: column; gap: 18px; padding: 28px 0 20px; }
+.root .crumb { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 13px; color: var(--rn-muted); }
+.root .crumb [aria-current="page"] { color: var(--rn-muted); }
+.root .titleRow { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
+.root .titleBox { display: flex; flex-direction: column; gap: 8px; flex: 1 1 360px; min-width: 0; }
+.root .h1Row { display: flex; align-items: center; gap: 8px; }
+.root .back { display: none; }
+.root .h1 { margin: 0; font-size: clamp(28px, 3.4vw, 38px); font-weight: 800; letter-spacing: -0.04em; line-height: 1.25; text-wrap: pretty; }
+.root .h1 em { font-style: normal; color: var(--rn-green-text); }
+.root .desc { margin: 0; font-size: 16px; line-height: 1.6; color: var(--rn-body-muted); max-width: 640px; }
+
+/* 카테고리 내 검색창: 52px, 2px ink, radius 12 */
+.root .search { display: flex; align-items: center; height: 52px; width: min(100%, 420px); padding: 0 16px 0 1px; border: 2px solid var(--rn-ink); border-radius: 12px; background: #fff; }
+.root .searchBtn { flex: none; width: 44px; height: 44px; margin-right: -6px; border: 0; padding: 0; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.root .mag { display: block; width: 14px; height: 14px; border: 2.5px solid var(--rn-ink); border-radius: 50%; }
+.root .search input { flex: 1; min-width: 0; height: 100%; border: 0; padding: 0; font-size: 16px; font-family: inherit; background: transparent; color: var(--rn-ink); }
+.root .search input::-webkit-search-cancel-button { cursor: pointer; }
+
+/* 카테고리 탭: 40px, radius 10, 활성 ink. 가로 스크롤은 데스크톱 시안대로 허용되는 유일한 예외 */
+.root .tabs { display: flex; gap: 6px; overflow-x: auto; padding: 4px 0 2px; scrollbar-width: thin; }
+.root .tab { flex: none; white-space: nowrap; height: 40px; padding: 0 16px; display: inline-flex; align-items: center; border-radius: 10px; border: 1px solid var(--rn-line-3); background: #fff; color: var(--as-pill-fg); font-size: 14px; font-weight: 600; }
+.root .tab:hover { border-color: var(--rn-green); color: var(--rn-green-text); }
+.root .tab[aria-current="page"], .root .tab[aria-current="page"]:hover { background: var(--rn-ink); border-color: var(--rn-ink); color: #fff; }
+
+/* ── 본문: 좌 필터 240px + 우 결과 ── */
+.root .body { display: grid; grid-template-columns: 240px minmax(0, 1fr); column-gap: 40px; align-items: start; padding: 12px 0 56px; border-top: 1px solid var(--rn-line); }
+.root .aside { position: sticky; top: 88px; display: flex; flex-direction: column; gap: 24px; padding-top: 12px; }
+.root .group { display: flex; flex-direction: column; gap: 10px; }
+.root .groupSym { gap: 4px; }
+.root .groupLabel { font-size: 13px; font-weight: 700; color: var(--rn-muted); }
+.root .groupSym .groupLabel { padding-bottom: 6px; }
+.root .pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.root .pill { flex: none; white-space: nowrap; height: 34px; padding: 0 14px; display: inline-flex; align-items: center; border-radius: 999px; border: 1px solid var(--rn-line-3); background: #fff; color: var(--as-pill-fg); font-size: 13px; font-weight: 600; }
+.root .pill:hover { border-color: var(--rn-green); color: var(--rn-green-text); }
+.root .pill[aria-current="true"], .root .pill[aria-current="true"]:hover { background: var(--rn-ink); border-color: var(--rn-ink); color: #fff; }
+
+.root .symList { display: flex; flex-direction: column; gap: 4px; }
+.root .sym { display: flex; justify-content: space-between; align-items: center; height: 40px; padding: 0 12px; border-radius: 10px; background: transparent; color: var(--as-sym-fg); font-size: 14px; font-weight: 600; }
+.root .sym:hover { background: var(--rn-tint); color: var(--as-sym-fg); }
+.root .sym[aria-current="true"], .root .sym[aria-current="true"]:hover { background: var(--rn-tint-green); color: var(--as-sym-on); }
+.root .sym.off { color: var(--rn-subtle); cursor: default; }
+.root .sym.off:hover { background: transparent; color: var(--rn-subtle); }
+.root .cnt { font-family: var(--rn-mono); font-size: 12px; font-weight: 400; color: var(--as-cnt); }
+
+/* "셀프체크로 안 될 땐" 박스 */
+.root .help { padding: 18px; border-radius: 14px; background: var(--rn-tint); display: flex; flex-direction: column; gap: 8px; }
+.root .help strong { font-size: 14px; font-weight: 700; }
+.root .help span { font-size: 13px; line-height: 1.6; color: var(--rn-body-muted); }
+.root .helpM { display: none; }
+
+/* ── 결과 ── */
+.root .results { min-width: 0; display: flex; flex-direction: column; gap: 16px; padding-top: 12px; }
+.root .bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.root .barL { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 15px; font-weight: 600; }
+.root .barL b { font-weight: 600; color: var(--rn-green-text); }
+.root .qChip { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 10px 0 12px; border-radius: 999px; background: var(--rn-tint-green); color: var(--as-sym-on); font-size: 13px; font-weight: 600; max-width: 220px; position: relative; }
+.root .qChip:hover { color: var(--as-sym-on); background: var(--rn-tint-green); }
+.root .qChip span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.root .qChip i { font-style: normal; font-size: 15px; line-height: 1; }
+.root .seg { display: flex; gap: 4px; padding: 3px; background: var(--rn-gray-bg); border-radius: 10px; }
+.root .segBtn { flex: none; white-space: nowrap; height: 32px; padding: 0 12px; display: inline-flex; align-items: center; border-radius: 8px; background: transparent; color: var(--as-meta); font-size: 13px; font-weight: 600; position: relative; }
+.root .segBtn:hover { color: var(--rn-ink); }
+.root .segBtn[aria-current="true"], .root .segBtn[aria-current="true"]:hover { background: #fff; color: var(--rn-ink); box-shadow: var(--rn-shadow-seg); }
+
+.root .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 16px; }
+.root .card { display: flex; flex-direction: column; gap: 12px; padding: 8px 8px 18px; border: 1px solid var(--rn-line-2); border-radius: 18px; background: #fff; }
+.root .card:hover { border-color: var(--rn-green); }
+.root .thumb { display: block; height: 160px; border-radius: 12px; }
+.root .info { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.root .tags { display: flex; gap: 6px; flex-wrap: wrap; padding: 0 10px; }
+.root .tagP { padding: 4px 8px; border-radius: 6px; background: var(--rn-tint-green); color: var(--as-tag-fg); font-size: 12px; font-weight: 700; }
+.root .tagS { padding: 4px 8px; border-radius: 6px; background: var(--rn-gray-bg); color: var(--as-tag-gray); font-size: 12px; font-weight: 600; }
+.root .title { padding: 0 10px; font-size: 17px; font-weight: 700; line-height: 1.4; letter-spacing: -0.02em; text-wrap: pretty; }
+.root .meta { padding: 0 10px; font-family: var(--rn-mono); font-size: 12px; color: var(--as-meta); }
+
+/* 빈 상태 */
+.root .empty { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 56px 24px; border-radius: 18px; background: var(--rn-tint); text-align: center; }
+.root .empty strong { font-size: 17px; font-weight: 700; }
+.root .empty p { margin: 0; font-size: 14px; color: var(--rn-muted); }
+.root .emptyBtns { display: flex; gap: 8px; padding-top: 6px; flex-wrap: wrap; justify-content: center; }
+.root .btn { height: 40px; padding: 0 16px; display: inline-flex; align-items: center; border-radius: 10px; font-size: 14px; font-weight: 700; }
+.root .btnLine { border: 1px solid var(--rn-ink); background: #fff; color: var(--rn-ink); }
+.root .btnLine:hover { border-color: var(--rn-green); color: var(--rn-green-text); }
+.root .btnGreen { background: var(--rn-green); color: #fff; }
+.root .btnGreen:hover { background: var(--rn-green-hover); color: #fff; }
+
+.root .pagerWrap { padding-top: 16px; }
+.root .pagerWrap :global(.rn-pager) { padding-bottom: 8px; }
+
+/* ── 모바일 (M4) ── */
+@media (max-width: 760px) {
+  .root .head { gap: 12px; padding: 8px 0 0; }
+  .root .crumb { display: none; }
+  .root .titleRow { display: flex; flex-direction: column; align-items: stretch; gap: 12px; }
+  .root .titleBox { flex: none; gap: 4px; }
+  .root .back { display: flex; align-items: center; justify-content: center; flex: none; width: 44px; height: 44px; margin-left: -8px; font-size: 22px; color: var(--rn-ink); }
+  .root .h1 { font-size: 20px; letter-spacing: -0.03em; }
+  .root .desc { font-size: 13px; line-height: 1.6; }
+  .root .search { width: 100%; height: 48px; }
+
+  /* 분류 탭: 분류를 아직 안 골랐을 때만 칩 줄바꿈으로 보여 준다(고른 뒤엔 메뉴와 뒤로가기가 대신한다) */
+  .root .tabs { flex-wrap: wrap; overflow: visible; padding: 0; }
+  .root .tab { height: 36px; padding: 0 14px; position: relative; }
+  .root .tab::before { content: ""; position: absolute; inset: -4px 0; }
+  .root .tabsHide { display: none; }
+
+  .root .body { display: block; padding: 0 0 40px; border-top: 0; }
+  .root .aside { position: static; gap: 0; padding: 0; }
+  .root .group { gap: 0; }
+  .root .groupLabel { display: none; }
+  .root .pills { padding: 12px 0 8px; }
+  .root .pill { height: 36px; font-size: 14px; position: relative; }
+  .root .pill::before { content: ""; position: absolute; inset: -4px 0; }
+  .root .symList { flex-direction: row; flex-wrap: wrap; gap: 6px; padding: 0 0 12px; border-bottom: 1px solid var(--rn-line); }
+  .root .groupSym { padding-top: 12px; }
+  .root .groupProd + .groupSym { padding-top: 0; }
+  .root .sym { height: 32px; padding: 0 12px; border-radius: 8px; background: var(--rn-gray-bg); color: var(--as-pill-fg); font-size: 13px; position: relative; }
+  .root .sym::before { content: ""; position: absolute; inset: -6px -2px; }
+  .root .sym:hover { background: var(--rn-gray-bg); color: var(--as-pill-fg); }
+  .root .sym[aria-current="true"], .root .sym[aria-current="true"]:hover { background: var(--rn-tint-green); color: var(--as-sym-on); }
+  .root .sym.off { display: none; }
+  .root .cnt { display: none; }
+  .root .helpD { display: none; }
+  .root .helpM { display: flex; margin-top: 8px; }
+
+  .root .results { gap: 0; padding-top: 0; }
+  .root .bar { padding: 12px 0 4px; gap: 8px; }
+  .root .barL { font-size: 13px; gap: 8px; }
+  .root .qChip { height: 32px; font-size: 12px; max-width: 160px; }
+  .root .qChip::before { content: ""; position: absolute; inset: -6px -2px; }
+  .root .segBtn::before { content: ""; position: absolute; inset: -6px -2px; }
+
+  .root .grid { display: block; }
+  .root .card { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 12px; padding: 14px 0; border: 0; border-bottom: 1px solid var(--rn-line); border-radius: 0; }
+  .root .card:hover { border-color: var(--rn-line); }
+  .root .thumb { width: 88px; height: 88px; }
+  .root .info { gap: 6px; }
+  .root .tags { gap: 4px; padding: 0; }
+  .root .tagP, .root .tagS { padding: 3px 7px; border-radius: 5px; font-size: 11px; }
+  .root .title { padding: 0; font-size: 15px; }
+  .root .meta { padding: 0; font-size: 11px; }
+
+  .root .empty { padding: 40px 20px; margin-top: 12px; }
+  .root .btn { height: 44px; }
+  .root .pagerWrap { padding-top: 8px; }
+  .root .pagerWrap :global(.rn-pager) a, .root .pagerWrap :global(.rn-pager) span { min-width: 44px; height: 44px; }
+}

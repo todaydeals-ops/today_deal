@@ -1,0 +1,35 @@
+/* 모바일 하단 탭바 — 시안 M1·M4: 높이 78px(안전영역 포함), 5열, 활성 = 초록 */
+.spacer, .bar { display: none; }
+
+@media (max-width: 760px) {
+  .spacer { display: block; height: 78px; }
+  .bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: calc(78px + env(safe-area-inset-bottom, 0px));
+    padding: 6px 8px calc(22px + env(safe-area-inset-bottom, 0px));
+    background: rgba(255, 255, 255, 0.97);
+    border-top: 1px solid var(--rn-line);
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    color: oklch(0.55 0.01 160);
+    text-decoration: none;
+    min-width: 0;
+    white-space: nowrap;
+  }
+  .tab i { font-size: 22px; line-height: 1; }
+  .active { color: var(--rn-green-text); }
+}

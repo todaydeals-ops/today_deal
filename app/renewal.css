@@ -1,0 +1,112 @@
+/* 오늘의딜 홈페이지 리뉴얼(2026-10-27) — 디자인 토큰 + 공통 조각
+   원본: 디자인 핸드오프 README(.tmp/renewal) · 색은 oklch 가 원본이고 hex 는 근사값(미지원 브라우저용 폴백).
+   기존 토큰(--bg-*, --text-*)은 건드리지 않는다 — 리뉴얼 화면은 .rn-page 래퍼 안에서만 이 토큰을 쓴다. */
+:root {
+  /* 색 (hex 폴백) */
+  --rn-ink: #161c19;
+  --rn-body: #2d3430;
+  --rn-body-muted: #535a56;
+  --rn-muted: #5b625e;
+  --rn-subtle: #747b77;
+  --rn-green: #1f8a4f;
+  --rn-green-hover: #12733d;
+  --rn-green-text: #187a43;
+  --rn-tint: #f5f9f6;
+  --rn-tint-green: #e7f4eb;
+  --rn-tint-green-2: #f1f9f3;
+  --rn-gray-bg: #f2f4f3;
+  --rn-line: #e6e9e7;
+  --rn-line-2: #e0e3e1;
+  --rn-line-3: #dadedb;
+  --rn-warn: #d4662f;
+  --rn-line-tint: #e3ece6;
+  --rn-green-soft: #9fd3b3; /* 완료 단계 보더 (oklch(0.82 0.06 155)) */
+  --rn-green-bar: #4fbf80; /* 진행 바 (oklch(0.7 0.15 155)) */
+
+  /* 그림자 */
+  --rn-shadow-drop: 0 12px 32px rgba(20, 40, 30, 0.12);
+  --rn-shadow-card: 0 12px 32px rgba(15, 35, 25, 0.16);
+  --rn-shadow-seg: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  /* 헤더 높이 (읽기 진행 바·sticky 사이드바 기준) */
+  --rn-header-h: 64px;
+
+  /* 폰트 */
+  --rn-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+@supports (color: oklch(0 0 0)) {
+  :root {
+    --rn-ink: oklch(0.2 0.01 160);
+    --rn-body: oklch(0.3 0.01 160);
+    --rn-body-muted: oklch(0.42 0.01 160);
+    --rn-muted: oklch(0.45 0.01 160);
+    --rn-subtle: oklch(0.55 0.01 160);
+    --rn-green: oklch(0.55 0.15 155);
+    --rn-green-hover: oklch(0.48 0.14 155);
+    --rn-green-text: oklch(0.5 0.14 155);
+    --rn-tint: oklch(0.975 0.006 155);
+    --rn-tint-green: oklch(0.96 0.025 155);
+    --rn-tint-green-2: oklch(0.975 0.015 155);
+    --rn-gray-bg: oklch(0.965 0.004 160);
+    --rn-line: oklch(0.92 0.004 160);
+    --rn-line-2: oklch(0.9 0.005 160);
+    --rn-line-3: oklch(0.88 0.006 160);
+    --rn-warn: oklch(0.62 0.17 45);
+    --rn-line-tint: oklch(0.92 0.008 155);
+    --rn-green-soft: oklch(0.82 0.06 155);
+    --rn-green-bar: oklch(0.7 0.15 155);
+  }
+}
+
+html { scroll-behavior: smooth; }
+
+/* ── 리뉴얼 화면 공통 ── */
+.rn-page {
+  min-height: 100vh;
+  background: #fff;
+  color: var(--rn-ink);
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
+}
+.rn-page a { color: inherit; text-decoration: none; }
+.rn-page a:hover { color: var(--rn-green-text); }
+.rn-page input::placeholder { color: oklch(0.62 0.008 160); }
+.rn-page input:focus { outline: none; }
+.rn-page button { font-family: inherit; }
+.rn-page :focus-visible { outline: 2px solid var(--rn-green); outline-offset: 2px; border-radius: 6px; }
+
+.rn-wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.rn-mono { font-family: var(--rn-mono); }
+.rn-eyebrow { font-family: var(--rn-mono); font-size: 12px; letter-spacing: 0.12em; color: var(--rn-green-text); font-weight: 600; }
+
+/* 섹션 머리 (공통) — 라벨 + H2 + 우측 슬롯 */
+.rn-sec { padding: 40px 0 48px; border-top: 1px solid var(--rn-line); display: flex; flex-direction: column; gap: 20px; }
+.rn-sec-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
+.rn-sec-title { display: flex; flex-direction: column; gap: 6px; }
+.rn-sec-title h2 { margin: 0; font-size: 30px; font-weight: 800; letter-spacing: -0.04em; }
+
+/* 칩·pill·태그 */
+.rn-chip { flex: none; white-space: nowrap; height: 34px; padding: 0 14px; display: inline-flex; align-items: center; border: 1px solid var(--rn-line-3); border-radius: 999px; background: #fff; font-size: 14px; color: var(--rn-body); cursor: pointer; }
+.rn-chip:hover { border-color: var(--rn-green); color: var(--rn-green-text); }
+.rn-pill { flex: none; white-space: nowrap; height: 36px; padding: 0 16px; display: inline-flex; align-items: center; border-radius: 999px; border: 1px solid var(--rn-line-3); background: #fff; color: oklch(0.35 0.01 160); font-size: 14px; font-weight: 600; cursor: pointer; }
+.rn-pill[aria-current="true"], .rn-pill.on { background: var(--rn-ink); border-color: var(--rn-ink); color: #fff; }
+.rn-pill.on:hover, .rn-pill[aria-current="true"]:hover { color: #fff; }
+
+/* 페이지네이션 (38×38, radius 10, 현재 = ink 채움) */
+.rn-pager { display: flex; justify-content: center; align-items: center; gap: 6px; flex-wrap: wrap; padding: 8px 0 56px; }
+.rn-pager a, .rn-pager span { min-width: 38px; height: 38px; padding: 0 10px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--rn-line-3); border-radius: 10px; font-family: var(--rn-mono); font-size: 13px; font-weight: 600; color: var(--rn-ink); background: #fff; }
+.rn-pager a:hover { border-color: var(--rn-green); color: var(--rn-green-text); }
+.rn-pager .cur { background: var(--rn-ink); border-color: var(--rn-ink); color: #fff; }
+.rn-pager .off { color: oklch(0.8 0.004 160); border-color: var(--rn-line); pointer-events: none; }
+
+/* 이미지 박스 — 슬롯 크기에 맞춰 만든 이미지를 cover 로 채운다 */
+.rn-img { position: relative; overflow: hidden; background: var(--rn-tint-green); }
+.rn-img > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+
+@media (max-width: 760px) {
+  :root { --rn-header-h: 56px; }
+  .rn-wrap { padding: 0 16px; }
+  .rn-sec { padding: 32px 0 40px; }
+  .rn-sec-title h2 { font-size: 24px; }
+}

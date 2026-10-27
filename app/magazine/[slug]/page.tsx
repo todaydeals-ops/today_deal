@@ -3,7 +3,6 @@ import { LAB_HOME, labHref, type SubKey } from "@/lib/magazine/subdomain";
 import { b4asCategoryOf } from "@/lib/magazine/b4asCategories";
 import { canonicalArticleUrl } from "@/lib/magazine/owner";
 import Link from "next/link";
-import { WikiBacklinks } from "@/components/WikiLinks";
 import { seoTitleOf } from "@/lib/magazine/seoTitle";
 import { notFound } from "next/navigation";
 import { fetchMagazineBySlug, fetchRelatedMagazine } from "@/lib/data/magazine";
@@ -11,9 +10,17 @@ import { cornerOf } from "@/lib/magazine/corners";
 import Header from "@/components/Header";
 import { sleepCategoryOf } from "@/lib/magazine/sleepCategories";
 import MediaFooter from "@/components/MediaFooter";
+import ReadingProgress from "@/components/ReadingProgress";
 import { pillCategoryOf } from "@/lib/magazine/pillCategories";
 import { beautyCategoryOf } from "@/lib/magazine/beautyCategories";
-import { FieldPill } from "@/components/magazine/Chrome";
+import { parseArticleBody, splitSentences, type TocItem } from "@/lib/magazine/articleBody";
+import ChecklistProvider from "@/components/article/ChecklistProvider";
+import ChecklistGroup from "@/components/article/ChecklistGroup";
+import ChecklistProgress from "@/components/article/ChecklistProgress";
+import ArticleFeedback from "@/components/article/ArticleFeedback";
+import MobileArticleBar from "@/components/article/MobileArticleBar";
+import WikiBacklinksBox from "@/components/article/WikiBacklinksBox";
+import styles from "./article.module.css";
 
 export const revalidate = 3600; // 1시간 캐시 — 매거진 아티클은 실시간 불필요
 
@@ -31,9 +38,18 @@ export function generateStaticParams(): { slug: string }[] {
 }
 
 const SITE = "https://www.todaydeals.co.kr";
-const mono = "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif";
-const serif = "'Noto Serif KR', serif";
 const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
+// 확인 배지용 MM.DD — 별도 "마지막 확인일" 필드가 없어 createdAt(작성 시점에 출처를 확인해 쓴다)을 확인일로 쓴다.
+const fmtMD = (iso: string) => iso.slice(5, 10).replace(/-/g, ".");
+// 같은 사이트 안 절대 주소(labHref 가 만든 것)는 상대 경로로 — <Link> 가 클라이언트 이동을 한다
+const rel = (u: string) => (u.startsWith(SITE) ? u.slice(SITE.length) || "/" : u);
+const hostOf = (u: string) => {
+  try {
+    return new URL(u).hostname.replace(/^www\./, "");
+  } catch {
+    return "";
+  }
+};
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -80,42 +96,25 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
   const subHomeAbs = subHome;
   // 분야 이름(10-21 개편 — 옛 연구소 이름 대신). 화면 빵부스러기·구조화 데이터의 2단계로 쓴다.
   const subName = isPill ? "영양제" : isBeauty ? "뷰티 성분" : isB4as ? "AS 셀프체크" : "수면";
-  const accent = isSub ? (subCat?.color ?? (isB4as ? "#38539a" : "#3f5a54")) : c.color; // 강조색: 서브는 분류색, 그 외 코너색
   // 구조화 데이터 발행처는 전부 오늘의딜(10-21 개편). 분야는 빵부스러기 2단계로 들어간다.
   const brandName = "오늘의딜";
   const brandUrl = SITE;
   const sectionName = isSub ? (subCat?.label ?? (isPill ? "영양" : isB4as ? "셀프체크" : "수면")) : c.name;
   const related = await fetchRelatedMagazine(a, 4);
 
-  // 대표 이미지를 본문 소제목 사이에 배치 — 짧은 글 1장, 긴 글(본문 2,800자+) 2장
-  const bodyWithImages = (() => {
-    const imgs = a.images || [];
-    if (!imgs.length) return a.bodyHtml;
-    const plainLen = a.bodyHtml.replace(/<[^>]+>/g, "").length;
-    const want = plainLen >= 2500 ? 2 : 1; // 본문 2,500자+ = 긴 글 → 2장(초반·중간), 그 외 1장(중간)
-    const use = imgs.slice(0, Math.min(want, imgs.length));
-    const esc = (s: string) => (s || "").replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    const fig = (im: { url: string; credit?: string; source?: string }) =>
-      `<figure style="margin:42px 0 10px;border-radius:14px;overflow:hidden;position:relative;background:#ece5d9;border:1px solid #e4dccc;height:clamp(190px,34vw,380px);">` +
-      `<img src="${esc(im.url)}" alt="${esc(a.title)}" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;" />` +
-      `</figure>`;
-    const h2s = [...a.bodyHtml.matchAll(/<h2/g)].map((mm) => mm.index ?? 0);
-    let spots: number[];
-    if (h2s.length >= 2) {
-      spots = use.length === 2
-        ? [h2s[Math.max(1, Math.floor(h2s.length / 5))], h2s[Math.min(h2s.length - 1, Math.floor(h2s.length * 0.7))]] // 초반 + 후반부
-        : [h2s[Math.floor(h2s.length / 2)]];
-    } else {
-      const p = a.bodyHtml.indexOf("</p>");
-      spots = [p >= 0 ? p + 4 : 0];
-    }
-    // 위치 중복 제거 후, 뒤에서부터 삽입(앞 인덱스 밀림 방지)
-    const uniq = [...new Set(spots)];
-    const inserts = uniq.map((pos, i) => ({ pos, html: fig(use[Math.min(i, use.length - 1)]) })).sort((x, y) => y.pos - x.pos);
-    let out = a.bodyHtml;
-    for (const ins of inserts) out = out.slice(0, ins.pos) + ins.html + out.slice(ins.pos);
-    return out;
-  })();
+  // 대표 이미지(images[0])는 헤드 오른쪽에 크게 쓰므로, 본문 사이에는 나머지 이미지를 끼운다(같은 사진이 두 번 나오지 않게).
+  // 위치·장수 규칙은 기존과 같다(소제목 사이 · 본문 2,500자+ 면 2장).
+  const parsed = parseArticleBody(a.bodyHtml, { checklist: isB4as, figures: (a.images ?? []).slice(1), figureAlt: a.title });
+  const hasCheck = isB4as && parsed.checkTotal > 0 && !!parsed.firstCheckId;
+
+  // 함께 보면 좋은 가이드 — 목록 조회는 가볍게(본문 제외) 받으므로 썸네일은 보여 줄 3편만 따로 읽는다.
+  // 라이선스 표기가 필요한 이미지(Openverse CC)는 카드(전체가 링크)에 표기를 실을 수 없어 쓰지 않는다 → 빈 박스.
+  const relatedShown = related.slice(0, 3);
+  const relatedFull = await Promise.all(relatedShown.map((r) => fetchMagazineBySlug(r.slug)));
+  const thumbOf = (i: number) => {
+    const im = relatedFull[i]?.image;
+    return im && !/^openverse/i.test(im.source ?? "") ? im.url : undefined;
+  };
 
   const ld = {
     "@context": "https://schema.org",
@@ -163,193 +162,246 @@ export default async function MagazineArticlePage({ params }: { params: Promise<
     mainEntity: a.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
   } : null;
 
-  return (
+  // ── 화면 데이터 ──
+  const lead = a.subtitle || a.excerpt;
+  const hasSummary = !!a.summary && a.summary.length > 0;
+  const hasFaq = !!a.faq && a.faq.length > 0;
+  const hasSources = !!a.sources && a.sources.length > 0;
+  const heroImg = a.image;
+  const creditOf = (im: { credit?: string; source?: string }) => [im.credit, im.source].filter(Boolean).join(" · ");
+
+  // 목차: 먼저 결론(00) · 본문 소제목(01…) · 나머지 블록(·)
+  const toc: TocItem[] = [
+    ...(hasSummary ? [{ id: "summary", no: "00", label: "먼저 결론" }] : []),
+    ...parsed.toc,
+    ...(a.callout ? [{ id: "callout", no: "·", label: "짚고 가요" }] : []),
+    ...(a.closing ? [{ id: "closing", no: "·", label: "정직한 마무리" }] : []),
+    ...(hasFaq ? [{ id: "faq", no: "·", label: "자주 묻는 질문" }] : []),
+    ...(hasSources ? [{ id: "sources", no: "·", label: "출처와 확인" }] : []),
+  ];
+
+  const crumb1 = isSub
+    ? <Link href={rel(subHome)}>{subName}</Link>
+    : <Link href={`/?corner=${a.corner}`}>{c.name}</Link>;
+  const crumb2 = isSub
+    ? <Link href={rel(labHref(subKey, subCat?.key))}>{subCat?.label ?? sectionName}</Link>
+    : a.field ? <span>{a.field}</span> : null;
+
+  let ckFirstSeen = false;
+  const bodyArea = (
     <>
-      <Header />{/* 10-21 개편: 분야 글도 오늘의딜 헤더 하나 */}
-      <div className="mz-page">
+      <div className={styles.body}>
+        <article className={styles.article}>
+          {/* 먼저 결론 — 핵심 요약(GEO: AI 가 본문 첫머리에서 즉답 발췌) */}
+          {hasSummary && (
+            <section id="summary" aria-label="먼저 결론" className={`${styles.conclusion} ${styles.anchor}`}>
+              <span className={styles.conclusionLabel}>먼저 결론</span>
+              <ol className={styles.conclusionList}>
+                {a.summary!.map((s, i) => (
+                  <li key={i}>
+                    <span className={styles.conclusionNo}>{i + 1}</span>
+                    <span dangerouslySetInnerHTML={{ __html: s }} />
+                  </li>
+                ))}
+              </ol>
+            </section>
+          )}
+
+          {/* 본문 — 구조를 알아본 덩어리(표·단계 목록)는 시안 모양으로, 셀프체크 단계는 체크리스트로 */}
+          {parsed.segments.map((seg, i) => {
+            if (seg.kind === "html") return <div key={i} className={styles.prose} dangerouslySetInnerHTML={{ __html: seg.html }} />;
+            const first = !ckFirstSeen;
+            ckFirstSeen = true;
+            return <ChecklistGroup key={i} start={seg.start} items={seg.items} anchorId={seg.anchorId} first={first} />;
+          })}
+
+          {/* 짚고 가요 — 문장 2개씩 문단 분리로 가독성 확보 */}
+          {a.callout && (
+            <section id="callout" aria-label="짚고 가요" className={`${styles.callout} ${styles.anchor}`}>
+              <div className={styles.boxLabel}>짚고 가요</div>
+              {splitSentences(a.callout).map((p, i) => (
+                <p key={i} dangerouslySetInnerHTML={{ __html: p }} />
+              ))}
+            </section>
+          )}
+
+          {/* 정직한 마무리 — 통짜 문단이 답답해 보이지 않게 문장 2개씩 */}
+          {a.closing && (
+            <section id="closing" aria-label="정직한 마무리" className={`${styles.closing} ${styles.anchor}`}>
+              <div className={styles.boxLabel}>정직한 마무리</div>
+              {splitSentences(a.closing).map((p, i) => (
+                <p key={i} dangerouslySetInnerHTML={{ __html: p }} />
+              ))}
+            </section>
+          )}
+
+          {/* 자주 묻는 질문 — 접히는 목록. 접혀 있어도 마크업은 DOM 에 있다(GEO: FAQPage LD 와 값 동일) */}
+          {hasFaq && (
+            <section id="faq" aria-label="자주 묻는 질문" className={`${styles.faq} ${styles.anchor}`}>
+              <h2 className={styles.secTitle}>자주 묻는 질문</h2>
+              <div className={styles.faqList}>
+                {a.faq!.map((f, i) => (
+                  <details key={i} className={styles.faqItem}>
+                    <summary>{f.q}</summary>
+                    <p className={styles.faqA}>{f.a}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* 검색 태그 (브랜드·모델명·에러코드 — 롱테일 유입) */}
+          {a.tags && a.tags.length > 0 && (
+            <div className={styles.tags}>
+              {a.tags.map((t) => (
+                <span key={t} className={styles.tag}>#{t}</span>
+              ))}
+            </div>
+          )}
+
+          {/* 생활백과 역링크 — 이 글을 근거로 쓴 항목으로 */}
+          <WikiBacklinksBox slug={a.slug} />
+
+          {/* 출처와 확인 */}
+          {hasSources && (
+            <section id="sources" aria-label="출처와 확인" className={`${styles.src} ${styles.anchor}`}>
+              <div className={styles.srcHead}>
+                <h2 className={styles.secTitle}>출처와 확인</h2>
+                <span className={styles.srcDate}>확인 {fmtDate(a.createdAt)}</span>
+              </div>
+              {isB4as && (
+                <p className={styles.srcLead}>모델·연식에 따라 버튼 위치와 조작 방법이 다릅니다. 내 제품의 정확한 절차와 사진은 아래 공식 안내에서 확인하세요.</p>
+              )}
+              <ol className={styles.srcList}>
+                {a.sources!.map((s, i) => {
+                  // 라벨 앞의 [공식]/[후기] 표기는 작은 태그로 — 공식 자료와 사용자 자료를 구분해 보여 준다
+                  const m = s.label.match(/^\[(공식|후기)\]\s*/);
+                  const host = hostOf(s.url);
+                  return (
+                    <li key={i}>
+                      <a href={s.url} target="_blank" rel="noopener noreferrer">
+                        <span className={styles.srcNo}>[{i + 1}]</span>
+                        <span>
+                          {m && <span className={`${styles.srcTag} ${m[1] === "후기" ? styles.srcTagAlt : ""}`}>{m[1]}</span>}
+                          {m ? s.label.slice(m[0].length) : s.label}
+                          {host && <span className={styles.srcHost}> · {host}</span>}
+                        </span>
+                      </a>
+                    </li>
+                  );
+                })}
+              </ol>
+              <p className={styles.srcNote}>
+                오늘의딜은 제품 판매나 제휴 수수료와 무관하게 작성합니다. 잘못된 내용은 <a href="mailto:hello@todaydeals.co.kr">hello@todaydeals.co.kr</a>로 알려주세요.
+              </p>
+            </section>
+          )}
+
+          <ArticleFeedback slug={a.slug} />
+        </article>
+
+        {/* 사이드바: 목차 카드 + (체크리스트가 있는 글만) 진행 카드. 모바일에서는 숨기고 하단 CTA 가 대신한다 */}
+        <aside className={styles.aside} aria-label="목차와 진행">
+          <nav className={styles.tocCard} aria-label="이 글의 순서">
+            <span className={styles.tocTitle}>이 글의 순서</span>
+            {toc.map((t) => (
+              <a key={t.id} href={`#${t.id}`} className={styles.tocLink}>
+                <span className={styles.tocNo}>{t.no}</span>
+                <span>{t.label}</span>
+              </a>
+            ))}
+          </nav>
+          {hasCheck && <ChecklistProgress anchorId={parsed.firstCheckId!} />}
+        </aside>
+      </div>
+
+      {toc.length > 0 && <MobileArticleBar toc={toc} firstCheckId={hasCheck ? parsed.firstCheckId : null} />}
+    </>
+  );
+
+  return (
+    <div className="rn-page">
+      <Header />
+      <ReadingProgress />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {faqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />}
-      <div className="mz-wrap" style={{ paddingBottom: 80 }}>
-        {/* ── 타이틀 블록 (풀폭) ── */}
-        <div style={{ padding: "50px 0 0" }}>
-          <div style={{ fontFamily: mono, fontSize: 11.5, letterSpacing: ".5px", color: "#9a9286", display: "flex", alignItems: "center", gap: 8 }}>
-            {isSub ? (
-              <a href={subHome} style={{ color: "#9a9286", textDecoration: "none" }}>{subName}</a>
-            ) : (
-              <Link href="/" className="ul-sweep" style={{ color: "#9a9286", textDecoration: "none" }}>매거진</Link>
-            )}
-            <span style={{ opacity: 0.5 }}>›</span>
-            {isSub ? (
-              <a href={labHref(subKey, subCat?.key)} style={{ color: subCat?.color ?? "#3f5a54", fontWeight: 600, textDecoration: "none" }}>{subCat?.label ?? sectionName}</a>
-            ) : (
-              <Link href={`/?corner=${a.corner}`} className="ul-sweep" style={{ color: c.color, fontWeight: 600, textDecoration: "none" }}>{c.name}</Link>
-            )}
-          </div>
-          {!isSub && (
-            <div style={{ display: "flex", alignItems: "center", gap: 9, marginTop: 18, flexWrap: "wrap" }}>
-              <span style={{ display: "flex", alignItems: "center", gap: 7 }}>
-                <span style={{ width: 8, height: 8, borderRadius: 9999, background: c.color }} />
-                <span style={{ fontFamily: mono, fontSize: 11, fontWeight: 700, letterSpacing: ".5px", color: c.color }}>{c.name}</span>
-              </span>
-              <FieldPill field={a.field} />
+
+      <main className={`rn-wrap ${styles.root}`}>
+        {/* ── ① 아티클 헤드: 좌 틴트 박스 + 우 대표 이미지 ── */}
+        <section className={styles.head} aria-label="아티클 머리">
+          <div className={styles.headText}>
+            <nav className={styles.crumbs} aria-label="현재 위치">
+              <Link href="/">홈</Link>
+              <span aria-hidden="true">›</span>
+              {crumb1}
+              {crumb2 && <span aria-hidden="true">›</span>}
+              {crumb2}
+            </nav>
+            <h1 className={styles.title}>{a.title}</h1>
+            {lead && <p className={styles.lead}>{lead}</p>}
+            <div className={styles.meta}>
+              <span>편집국</span>
+              <span>{fmtDate(a.createdAt)}</span>
+              {a.readMin ? <span>읽기 {a.readMin}분</span> : null}
+              {hasSources && <span className={styles.badge}>출처 {a.sources!.length}건 · {fmtMD(a.createdAt)} 확인</span>}
             </div>
-          )}
-          <h1 style={{ fontFamily: serif, fontWeight: 700, fontSize: 46, letterSpacing: "-1.6px", lineHeight: 1.26, margin: "18px 0 0", color: "#16140f", textWrap: "balance", maxWidth: 900 }}>{a.title}</h1>
-          {a.subtitle && <div style={{ fontFamily: serif, fontWeight: 500, fontSize: 20, lineHeight: 1.6, color: "#7a756a", margin: "14px 0 0" }}>{a.subtitle}</div>}
-          <div style={{ fontFamily: mono, fontSize: 12, color: "#9a9286", marginTop: 20, paddingBottom: 30, borderBottom: "1px solid rgba(22,20,15,0.16)" }}>
-            편집국 · {fmtDate(a.createdAt)}{a.readMin ? ` · 읽기 ${a.readMin}분` : ""}
           </div>
-        </div>
-
-        {/* ── 핵심 요약 (GEO: AI가 본문 첫머리에서 즉답 발췌) ── */}
-        {a.summary && a.summary.length > 0 && (
-          <section aria-label="핵심 요약" style={{ margin: "28px 0 0", border: "1px solid rgba(22,20,15,0.14)", borderRadius: 14, padding: "20px 24px", background: "#faf8f5" }}>
-            <div style={{ fontFamily: mono, fontSize: 11, letterSpacing: "1.5px", color: accent, fontWeight: 700, marginBottom: 14 }}>핵심 요약</div>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
-              {a.summary.map((s, i) => (
-                <li key={i} style={{ display: "flex", gap: 12, fontSize: 16, lineHeight: 1.65, color: "#2c2a24" }}>
-                  <span style={{ fontFamily: mono, fontWeight: 700, fontSize: 13, color: accent, flex: "none", marginTop: 2 }}>{String(i + 1).padStart(2, "0")}</span>
-                  <span dangerouslySetInnerHTML={{ __html: s }} />
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-
-        {/* ── 생활백과 역링크 — 이 글을 근거로 쓴 항목으로(components/WikiLinks.tsx) ── */}
-        <WikiBacklinks slug={a.slug} />
-
-        {/* ── 본문 그리드: 메인 + 레일 ── */}
-        <div className="art-grid" style={{ display: "grid", gridTemplateColumns: "1fr 320px", gap: 64, padding: "40px 0 0", alignItems: "start" }}>
-          <main className="mz-body" style={{ minWidth: 0 }} dangerouslySetInnerHTML={{ __html: bodyWithImages }} />
-
-          <aside className="art-rail" style={{ position: "sticky", top: 86, display: "flex", flexDirection: "column", gap: 18, alignSelf: "start" }}>
-            {/* 정직성 배지 */}
-            <div style={{ border: "1px solid rgba(22,20,15,0.12)", background: "#faf8f5", borderRadius: 14, padding: 16 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                <span style={{ width: 30, height: 30, borderRadius: 9999, border: "2px solid #ff5a3c", display: "flex", alignItems: "center", justifyContent: "center", flex: "none" }}>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#ff5a3c" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                </span>
-                <span style={{ fontFamily: mono, fontSize: 10, fontWeight: 600, letterSpacing: ".5px", color: "#ff5a3c" }}>TRUSTED PARTNER</span>
+          <div className={styles.heroCell}>
+            <div className={`rn-img ${styles.hero}`}>
+              {heroImg?.url && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={heroImg.url} alt={a.title} loading="lazy" decoding="async" />
+              )}
+            </div>
+            {/* 스톡 사진 라이선스 표기(작가·출처·원본 링크) — 반드시 노출 */}
+            {heroImg?.url && (creditOf(heroImg) || heroImg.link) && (
+              <div className={styles.heroCredit}>
+                {heroImg.link ? (
+                  <a href={heroImg.link} target="_blank" rel="noopener noreferrer">사진 {creditOf(heroImg)}</a>
+                ) : (
+                  <>사진 {creditOf(heroImg)}</>
+                )}
               </div>
-              <div style={{ fontSize: 13, fontWeight: 700, lineHeight: 1.5, marginTop: 12 }}>치우침 없는 객관적인 정보를 제공합니다</div>
-              <div style={{ fontSize: 12, color: "#76726b", lineHeight: 1.55, marginTop: 4 }}>소비자의 바른 선택을 위해, 투명한 정보와 객관적인 기준만 제시합니다.</div>
-            </div>
-
-            {/* 짚고 가요 — 문장 2개씩 문단 분리로 가독성 확보 */}
-            {a.callout && (() => {
-              const cs = a.callout.split(/(?<=[.!?])\s+/).filter(Boolean);
-              const cps: string[] = [];
-              for (let i = 0; i < cs.length; i += 2) cps.push(cs.slice(i, i + 2).join(" "));
-              return (
-                <div style={{ border: "1px solid #f0c3b5", background: "#fff5f1", borderRadius: 14, padding: "18px 18px 16px" }}>
-                  <div style={{ fontFamily: mono, fontSize: 10.5, fontWeight: 700, letterSpacing: "1px", color: "#ff5a3c" }}>짚고 가요</div>
-                  {cps.map((p, i) => (
-                    <p key={i} style={{ fontSize: 13, lineHeight: 1.82, color: "#8a3a22", margin: i === 0 ? "11px 0 0" : "10px 0 0" }} dangerouslySetInnerHTML={{ __html: p }} />
-                  ))}
-                </div>
-              );
-            })()}
-          </aside>
-        </div>
-
-        {/* ── 정직한 마무리 (풀폭) ── */}
-        {a.closing && (() => {
-          // 통짜 문단이 답답해 보이지 않게 문장 2개씩 묶어 문단 분리 + 행간 확대
-          const sentences = a.closing.split(/(?<=[.!?])\s+/).filter(Boolean);
-          const paras: string[] = [];
-          for (let i = 0; i < sentences.length; i += 2) paras.push(sentences.slice(i, i + 2).join(" "));
-          return (
-            <div style={{ background: "#16140f", borderRadius: 16, padding: "34px 36px", margin: "48px 0 0" }}>
-              <div style={{ fontFamily: mono, fontSize: 11, letterSpacing: "1px", color: "#ff8a6f", fontWeight: 600 }}>정직한 마무리</div>
-              {paras.map((p, i) => (
-                <p key={i} style={{ fontFamily: serif, fontWeight: 500, fontSize: 19.5, lineHeight: 1.9, letterSpacing: "-0.3px", color: "#f3efe9", margin: i === 0 ? "16px 0 0" : "15px 0 0", maxWidth: 720 }} dangerouslySetInnerHTML={{ __html: p }} />
-              ))}
-            </div>
-          );
-        })()}
-
-        {/* ── 자주 묻는 질문 (GEO: FAQPage LD와 값 동일) ── */}
-        {a.faq && a.faq.length > 0 && (
-          <section aria-label="자주 묻는 질문" style={{ margin: "56px 0 0" }}>
-            <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", borderTop: "1px solid rgba(22,20,15,0.16)", paddingTop: 16, marginBottom: 18 }}>
-              <span style={{ fontWeight: 800, fontSize: 18 }}>자주 묻는 질문</span>
-              <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: "2px", color: "#9a9286" }}>FAQ</span>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-              {a.faq.map((f, i) => (
-                <div key={i} style={{ border: "1px solid rgba(22,20,15,0.12)", borderRadius: 12, padding: "18px 20px", background: "#faf8f5" }}>
-                  <div style={{ fontWeight: 700, fontSize: 16, lineHeight: 1.5, color: "#16140f", marginBottom: 8 }}>Q. {f.q}</div>
-                  <div style={{ fontSize: 15, lineHeight: 1.75, color: "#46433d" }}>{f.a}</div>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* ── 검색 태그 (브랜드·모델명·에러코드 — 롱테일 유입) ── */}
-        {a.tags && a.tags.length > 0 && (
-          <div style={{ margin: "44px 0 0", display: "flex", flexWrap: "wrap", gap: 7 }}>
-            {a.tags.map((t) => (
-              <span key={t} style={{ fontSize: 12.5, fontWeight: 500, color: "#6f6a60", background: "#f3efe7", border: "1px solid #e6dfd2", borderRadius: 999, padding: "5px 11px", lineHeight: 1.3 }}>#{t}</span>
-            ))}
+            )}
           </div>
+        </section>
+
+        {/* ── ② 본문 + 사이드바 ── */}
+        {hasCheck ? (
+          <ChecklistProvider slug={a.slug} total={parsed.checkTotal}>{bodyArea}</ChecklistProvider>
+        ) : (
+          bodyArea
         )}
 
-        {/* ── 근거·제조사 공식 안내 (모델별 실제 절차·사진은 공식에서 — 저작권 안전) ── */}
-        {a.sources && a.sources.length > 0 && (
-          <section aria-label="제조사 공식 안내" style={{ margin: "56px 0 0" }}>
-            <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", borderTop: "1px solid rgba(22,20,15,0.16)", paddingTop: 16, marginBottom: 12 }}>
-              <span style={{ fontWeight: 800, fontSize: 18 }}>제조사 공식 안내</span>
-              <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: "2px", color: "#9a9286" }}>SOURCES</span>
-            </div>
-            <p style={{ fontSize: 14, lineHeight: 1.7, color: "#76726b", margin: "0 0 14px" }}>
-              모델·연식에 따라 버튼 위치와 조작 방법이 다릅니다. 내 제품의 정확한 절차와 사진은 아래 공식 안내에서 확인하세요.
-            </p>
-            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-              {a.sources.map((s, i) => (
-                <a key={i} href={s.url} target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: 12, padding: "13px 16px", border: "1px solid rgba(22,20,15,0.12)", borderRadius: 10, textDecoration: "none", background: "#faf8f5" }}>
-                  <span style={{ fontFamily: mono, fontSize: 10.5, fontWeight: 700, letterSpacing: "0.5px", color: "#fff", background: "#38539a", padding: "3px 7px", borderRadius: 4, flex: "none" }}>공식</span>
-                  <span style={{ flex: 1, fontSize: 14.5, fontWeight: 600, color: "#16140f", lineHeight: 1.45 }}>{s.label}</span>
-                  <span style={{ fontFamily: mono, fontSize: 13, color: "#9a9286", flex: "none" }}>↗</span>
-                </a>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* ── 관련 가이드 (내부링크) ── */}
-        {related.length > 0 && (
-          <nav aria-label="관련 가이드" style={{ margin: "56px 0 0" }}>
-            <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", borderTop: "1px solid rgba(22,20,15,0.16)", paddingTop: 16, marginBottom: 14 }}>
-              <span style={{ fontWeight: 800, fontSize: 18 }}>이어서 볼 가이드</span>
-              <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: "2px", color: "#9a9286" }}>RELATED</span>
-            </div>
-            <div className="mz-rel-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 14 }}>
-              {related.map((r) => {
-                const rsc = isSleep ? sleepCategoryOf(r.slug) : isPill ? pillCategoryOf(r.slug) : isBeauty ? beautyCategoryOf(r.slug) : undefined;
+        {/* ── ③ 함께 보면 좋은 가이드 ── */}
+        {relatedShown.length > 0 && (
+          <nav className={styles.related} aria-label="함께 보면 좋은 가이드">
+            <h2>함께 보면 좋은 가이드</h2>
+            <div className={styles.relGrid}>
+              {relatedShown.map((r, i) => {
                 const rc = cornerOf(r.corner);
-                const rColor = rsc?.color ?? rc.color;
+                const thumb = thumbOf(i);
                 return (
-                  <Link key={r.id} href={`/magazine/${r.slug}`} className="mz-rel-card" style={{ display: "block", border: "1px solid rgba(22,20,15,0.14)", borderRadius: 14, padding: "18px 20px", textDecoration: "none", background: "#fff" }}>
-                    <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                      <span style={{ width: 8, height: 8, borderRadius: 9999, background: rColor, flex: "none" }} />
-                      <span style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: ".5px", color: rColor }}>{rsc?.label ?? rc.name}</span>
-                      {!isSub && r.field && <span style={{ fontSize: 11, color: "#8a857c" }}>· {r.field}</span>}
+                  <Link key={r.id} href={`/magazine/${r.slug}`} className={styles.relCard}>
+                    <span className={`rn-img ${styles.relImg}`} aria-hidden="true">
+                      {thumb && (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img src={thumb} alt="" loading="lazy" decoding="async" />
+                      )}
                     </span>
-                    <span style={{ display: "block", fontFamily: serif, fontWeight: 600, fontSize: 18, letterSpacing: "-0.5px", lineHeight: 1.4, color: "#16140f", margin: "10px 0 0" }}>{r.title}</span>
-                    {r.subtitle && <span style={{ display: "block", fontSize: 13, lineHeight: 1.6, color: "#7a756a", margin: "7px 0 0" }}>{r.subtitle}</span>}
+                    <span className={styles.relCorner}>{rc.name}{r.field ? ` · ${r.field}` : ""}</span>
+                    <span className={styles.relTitle}>{r.title}</span>
                   </Link>
                 );
               })}
             </div>
           </nav>
         )}
-      </div>
+      </main>
 
-      </div>
       <MediaFooter />
-    </>
+      {toc.length > 0 && <div className={styles.ctaSpacer} aria-hidden="true" />}
+    </div>
   );
 }

@@ -1,224 +1,108 @@
+/* 헤더 — 2026-10-27 리뉴얼. 데스크톱: sticky 64px · blur · 하단 보더. 모바일(≤760px): 56px + 전체화면 메뉴.
+   토큰은 app/renewal.css 의 --rn-* 를 쓴다(헤더는 모든 페이지가 공유하므로 토큰이 전역에 있다). */
 .header {
-  background: var(--bg-surface);
-  border-bottom: 1px solid var(--border-soft);
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.96);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--rn-line);
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
+  word-break: keep-all;
 }
 
 .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 64px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 62px;
+  gap: 40px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
+.logo { display: flex; align-items: center; text-decoration: none; flex: none; }
+.logo svg { height: 28px; width: auto; display: block; }
 
-.logo svg {
-  height: 28px;
-  width: auto;
-  display: block;
-}
+/* 내비 */
+.nav { display: flex; gap: 28px; flex: 1; align-items: center; }
+.dropdown { position: relative; display: flex; align-items: center; height: 64px; }
+.navLink { font-size: 15px; font-weight: 600; color: var(--rn-ink); text-decoration: none; white-space: nowrap; transition: color 0.15s; }
+.navLink:hover { color: var(--rn-green-text); }
+.active { color: var(--rn-green-text) !important; }
 
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
+.partner { font-size: 13px; color: var(--rn-muted); text-decoration: none; white-space: nowrap; flex: none; }
+.partner:hover { color: var(--rn-green-text); }
 
-.nav a {
-  font-size: 14px;
-  color: var(--text-body);
-  text-decoration: none;
-  transition: color 0.15s;
-}
-
-.nav a:hover {
-  color: var(--text-strong);
-}
-
-.active {
-  color: var(--text-strong) !important;
-  font-weight: 600;
-}
-
-/* 로고와 동일한 테라코타 점 (브랜드 운율) */
-.dot {
-  color: var(--accent-deal);
-  font-weight: 800;
-}
-
-/* 딜 드롭다운 */
-.dropdown {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.dropBtn {
-  font-family: inherit;
-  font-size: 14px;
-  color: var(--text-body);
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  padding: 0;
-  transition: color 0.15s;
-}
-.dropBtn:hover { color: var(--text-strong); }
+/* 소메뉴 패널 — 마우스를 올리거나(hover) 키보드로 들어가면(focus-within) 열린다 */
 .dropMenu {
   position: absolute;
   top: 100%;
-  right: 0;
-  margin-top: 12px;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-soft);
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(44, 42, 38, 0.1);
-  padding: 6px;
-  min-width: 150px;
+  left: -14px;
+  margin-top: -6px;
+  background: #fff;
+  border: 1px solid var(--rn-line-2);
+  border-radius: 14px;
+  box-shadow: var(--rn-shadow-drop);
+  padding: 8px;
+  min-width: 190px;
   display: none;
   flex-direction: column;
 }
-.dropOpen { display: flex; }
+.dropdown:hover .dropMenu,
+.dropdown:focus-within .dropMenu,
+.dropOpenWrap .dropMenu { display: flex; }
 .dropMenu a {
-  padding: 10px 14px;
-  border-radius: 6px;
+  padding: 10px 12px;
+  border-radius: 8px;
   font-size: 14px;
+  font-weight: 500;
   white-space: nowrap;
+  color: var(--rn-ink);
+  text-decoration: none;
 }
-.dropMenu a:hover { background: var(--bg-sunken); color: var(--text-strong); }
-/* 묶음 홈 "전체 보기"·바로가기(에러코드 사전) — 소메뉴와 구분 */
-.dropTop { display: flex; flex-direction: column; border-bottom: 1px solid var(--border-soft); margin-bottom: 4px; padding-bottom: 4px; }
-.dropTop a { font-weight: 600; color: var(--text-strong); }
-/* 3단계 소메뉴(AS 3묶음×3분류) — 묶음 머리 아래 분류 3개, 세 줄 나란히 */
-.cols { display: grid; grid-template-columns: repeat(3, auto); gap: 0 4px; }
+.dropMenu a:hover { background: var(--rn-tint-green); color: var(--rn-green-text); }
+/* 묶음 홈 "전체 보기" — 소메뉴와 구분 */
+.dropTop { display: flex; flex-direction: column; border-bottom: 1px solid var(--rn-line); margin-bottom: 4px; padding-bottom: 4px; }
+.dropTop a { font-weight: 700; }
+/* 3단계 소메뉴(AS 3묶음×3분류) */
+.cols { display: grid; grid-template-columns: repeat(3, auto); gap: 0 6px; }
 .col { display: flex; flex-direction: column; }
-.colHead { font-size: 11.5px; font-weight: 700; color: var(--text-muted); padding: 8px 14px 4px; white-space: nowrap; }
+.colHead { font-family: var(--rn-mono); font-size: 11px; font-weight: 600; color: var(--rn-green-text); padding: 8px 12px 4px; white-space: nowrap; }
 
-.userBtn {
-  width: 32px;
-  height: 32px;
-  background: var(--bg-muted);
-  border: none;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-muted);
-  cursor: pointer;
-  font-size: 17px;
-}
+/* 모바일 전용 버튼 — 데스크톱에선 숨김 */
+.mobileActions { display: none; gap: 4px; }
+.iconBtn { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: none; border: 0; cursor: pointer; padding: 0; }
+.icoSearch, .icoSearchSm { display: block; border: 2.5px solid var(--rn-ink); border-radius: 50%; flex: none; }
+.icoSearch { width: 16px; height: 16px; }
+.icoSearchSm { width: 14px; height: 14px; border-color: var(--rn-muted); }
+.icoBars { display: flex; flex-direction: column; gap: 4px; }
+.icoBars i { display: block; width: 18px; height: 2px; background: var(--rn-ink); }
 
-/* 로그인 버튼 라벨은 모바일 드롭다운에서만 노출 */
-.userBtnLabel {
-  display: none;
-}
-
-/* 햄버거 — 데스크탑에선 숨김 */
-.hamburger {
-  display: none;
-  background: none;
-  border: none;
-  color: var(--text-strong);
-  font-size: 24px;
-  cursor: pointer;
-  padding: 4px;
-  line-height: 1;
-}
+/* M2 전체 메뉴 */
+.sheet { position: fixed; inset: 0; z-index: 50; background: #fff; display: flex; flex-direction: column; overflow-y: auto; }
+.sheetBar { flex: none; height: 56px; padding: 0 16px; display: flex; align-items: center; justify-content: space-between; }
+.sheetBar .logo svg { height: 24px; }
+.closeBtn { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 300; line-height: 1; background: none; border: 0; color: var(--rn-ink); cursor: pointer; }
+.sheetSearch { flex: none; margin: 8px 16px 16px; display: flex; align-items: center; gap: 10px; height: 48px; padding: 0 14px; border-radius: 12px; background: var(--rn-gray-bg); }
+.sheetSearch input { flex: 1; min-width: 0; border: 0; background: transparent; font-size: 15px; font-family: inherit; color: var(--rn-ink); outline: none; -webkit-appearance: none; appearance: none; }
+.sheetSearch input::placeholder { color: oklch(0.55 0.008 160); }
+.sheetBody { padding: 0 16px 32px; display: flex; flex-direction: column; }
+.sheetGroup { display: flex; flex-direction: column; gap: 10px; padding: 18px 0; border-top: 1px solid var(--rn-line); }
+.sheetHead { display: flex; justify-content: space-between; align-items: baseline; }
+.sheetHead a { font-size: 20px; font-weight: 800; letter-spacing: -0.03em; color: var(--rn-ink); text-decoration: none; }
+.sheetHead span { font-family: var(--rn-mono); font-size: 11px; font-weight: 600; color: var(--rn-green-text); }
+.sheetChips { display: flex; flex-wrap: wrap; gap: 6px; }
+.sheetChips a { height: 40px; padding: 0 14px; display: flex; align-items: center; border-radius: 10px; background: var(--rn-tint); font-size: 14px; font-weight: 600; color: var(--rn-ink); text-decoration: none; }
+.sheetFoot { display: flex; gap: 16px; padding-top: 18px; border-top: 1px solid var(--rn-line); font-size: 13px; }
+.sheetFoot a { color: var(--rn-muted); text-decoration: none; }
 
 @media (max-width: 760px) {
-  .hamburger {
-    display: flex;
-    align-items: center;
-  }
-
-  /* 메뉴는 헤더 아래 드롭다운으로 */
-  .nav {
-    position: absolute;
-    top: 62px;
-    left: 0;
-    right: 0;
-    background: var(--bg-surface);
-    border-bottom: 1px solid var(--border-soft);
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-    padding: 6px 0;
-    display: none;
-    box-shadow: 0 6px 16px rgba(44, 42, 38, 0.06);
-    /* 소메뉴가 20개 넘게 펼쳐진다 — 헤더가 sticky 라 화면보다 길면 아래가 잘리므로 메뉴 안에서 스크롤 */
-    max-height: calc(100vh - 62px);
-    overflow-y: auto;
-  }
-
-  .navOpen {
-    display: flex;
-  }
-
-  .nav a {
-    padding: 14px 20px;
-    font-size: 15px;
-  }
-
-  .nav a:hover {
-    background: var(--bg-sunken);
-  }
-
-  /* 모바일에선 로그인 버튼을 라벨 있는 풀폭 항목으로 */
-  .userBtn {
-    width: auto;
-    height: auto;
-    border-radius: 0;
-    background: none;
-    justify-content: flex-start;
-    gap: 8px;
-    padding: 14px 20px;
-    font-size: 15px;
-    color: var(--text-body);
-    border-top: 1px solid var(--border-soft);
-    margin-top: 4px;
-  }
-
-  .userBtnLabel {
-    display: inline;
-  }
-
-  /* 모바일: 딜 드롭다운을 펼친 목록으로 */
-  .dropdown {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .dropBtn {
-    padding: 14px 20px;
-    font-size: 15px;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .dropMenu {
-    position: static;
-    display: flex;
-    box-shadow: none;
-    border: none;
-    border-radius: 0;
-    margin: 0;
-    padding: 0;
-    min-width: 0;
-  }
-  .dropMenu a {
-    padding: 12px 20px 12px 36px;
-    border-radius: 0;
-  }
-  .dropTop { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-  .dropTop a { font-weight: 500; }
-  .cols { padding-left: 36px; gap: 0 8px; grid-template-columns: repeat(3, 1fr); }
-  .cols .col a { padding: 10px 4px; }
-  .colHead { padding: 10px 4px 2px; }
+  .inner { height: 56px; padding: 0 16px; gap: 0; justify-content: space-between; }
+  .logo svg { height: 24px; }
+  .nav, .partner { display: none; }
+  .mobileActions { display: flex; }
 }
+
+.sheetSearch input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
