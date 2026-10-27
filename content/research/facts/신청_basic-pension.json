@@ -1,0 +1,107 @@
+{
+  "topic": "기초연금 — 2026년 선정기준액·최대 지급액, 수급 자격, 신청 방법, 감액 규칙",
+  "brand": "보건복지부·국민연금공단·복지로",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "basic-pension-selection-standard-2026",
+      "claim": "2026년 기초연금 선정기준액은 단독가구 월 247만 원, 부부가구 월 395만 2천 원이다(2025년 단독가구 228만 원에서 19만 원 인상).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "보건복지부 보도자료 「2026년 노인 단독가구, 소득인정액 월 247만 원 이하면 기초연금 받는다」(작성 2026-01)",
+      "source_url": "https://mohw.go.kr/board.es?act=view&bid=0027&list_no=1488478&mid=a10503000000",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "기초연금", "line": "선정기준액(소득인정액 기준)", "years": "2026", "region": "KR" },
+      "caution": "선정기준액은 매년 보건복지부 장관이 고시하는 금액이다. 2025년 단독가구 228만 원 같은 전년도 수치를 2026 글에 섞지 말 것.",
+      "cautionSource": "보건복지부 보도자료 원문(같은 URL, 2025년 228만 원 대비 표 포함) · 기초연금법 제3조 제1항 https://www.law.go.kr/법령/기초연금법/제3조"
+    },
+    {
+      "id": "basic-pension-max-amount-2026",
+      "claim": "2026년 기초연금 최대 지급액(기준연금액)은 단독가구 월 349,700원, 부부 2인 가구 월 559,520원이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "보건복지부 기초연금 안내 카드뉴스 「부모님 기초연금, 2026년엔 이렇게 챙겨드리세요!」(정책브리핑 게재, 보건복지부 2026.01.12)",
+      "source_url": "https://www.korea.kr/multi/visualNewsView.do?newsId=148957828",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "기초연금", "line": "기준연금액(최대 지급액)", "years": "2026", "region": "KR" },
+      "caution": "최대액이며 실제 수령액은 감액(부부 동시 수급 감액, 소득인정액이 선정기준액을 넘는 경우 감액)에 따라 달라진다. 최대액으로만 쓰고 '누구나 받는 금액'처럼 쓰지 말 것.",
+      "cautionSource": "기초연금법 제8조 제1항·제2항 원문 https://www.law.go.kr/법령/기초연금법/제8조"
+    },
+    {
+      "id": "basic-pension-eligibility-age-and-income",
+      "claim": "기초연금은 65세 이상인 사람으로서 소득인정액이 선정기준액 이하인 사람에게 지급한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기초연금법 제3조(기초연금 수급권자의 범위 등) 제1항 조문 원문",
+      "source_url": "https://www.law.go.kr/법령/기초연금법/제3조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "기초연금", "line": "수급 자격(연령·소득인정액)", "years": "법 현행(2025.10.1 시행본)", "region": "KR" },
+      "caution": "소득인정액은 근로·연금·사업소득 등과 일반재산·금융재산·부채 등을 소득으로 환산해 합산한 금액이다(보도자료). 재산이 적다고 자동으로 받는다고 쓰지 말고 소득인정액 계산 결과를 보라고 안내할 것.",
+      "cautionSource": "보건복지부 보도자료 용어 정의(같은 URL 각주)"
+    },
+    {
+      "id": "basic-pension-first-cohort-2026-applicants",
+      "claim": "2026년 기초연금 신청은 2026년에 65세가 되는 1961년생부터 가능하다. 새로 65세가 되는 사람은 생일이 속한 달의 한 달 전부터 신청할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "보건복지부 보도자료 「2026년 노인 단독가구, 소득인정액 월 247만 원 이하면 기초연금 받는다」 신청 안내 항목",
+      "source_url": "https://mohw.go.kr/board.es?act=view&bid=0027&list_no=1488478&mid=a10503000000",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "기초연금", "line": "신청 대상 연령 시작 시점", "years": "2026", "region": "KR" },
+      "caution": "같은 시리즈 카드뉴스는 '1961년생 생일 지난 분부터'로 적었다. 생일 전후 기준이 헷갈리니 '65세가 되는 달 기준으로 신청 가능 시점을 복지로·공단에서 확인'으로 안내할 것.",
+      "cautionSource": "보건복지부 카드뉴스 원문 https://www.korea.kr/multi/visualNewsView.do?newsId=148957828"
+    },
+    {
+      "id": "basic-pension-apply-channels",
+      "claim": "기초연금은 주소지와 관계없이 읍·면·동 행정복지센터, 국민연금공단 지사, 복지로(bokjiro.go.kr)에서 신청할 수 있다. 거동이 불편하면 공단 지사에 찾아가는 서비스를 요청할 수 있다. 문의는 국민연금공단 고객센터 1355다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "보건복지부 보도자료 「기초연금 신청방법」 항목",
+      "source_url": "https://mohw.go.kr/board.es?act=view&bid=0027&list_no=1488478&mid=a10503000000",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부·국민연금공단", "category": "기초연금", "line": "신청 채널", "years": "2026", "region": "KR" },
+      "caution": "복지로 상세 페이지는 금액은 노출하지 않으므로(열람 기준) 신청 경로 확인용으로만 쓸 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "basic-pension-spouse-reduction-20pct",
+      "claim": "본인과 배우자가 모두 기초연금 수급권자이면 각각의 기초연금액에서 기초연금액의 100분의 20을 감액한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기초연금법 제8조(기초연금액의 감액) 제1항 조문 원문",
+      "source_url": "https://www.law.go.kr/법령/기초연금법/제8조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "기초연금", "line": "부부 동시 수급 감액", "years": "법 현행(2025.10.1 시행본)", "region": "KR" },
+      "caution": "같은 조 제2항은 소득인정액과 기초연금액의 합이 선정기준액을 넘으면 초과분 범위에서 일부 감액할 수 있다고 정한다. 세부 기준은 대통령령에 있어 이번 조사에서 확인하지 않았다.",
+      "cautionSource": "기초연금법 제8조 제2항·제4항 원문 https://www.law.go.kr/법령/기초연금법/제8조"
+    },
+    {
+      "id": "basic-pension-public-pension-exclusion",
+      "claim": "공무원연금·군인연금·별정우체국 연금 등 법이 정한 직역연금의 수급권자와 대통령령이 정하는 그 배우자는 기초연금을 지급받지 못한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기초연금법 제3조 제3항 조문 원문",
+      "source_url": "https://www.law.go.kr/법령/기초연금법/제3조",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "기초연금", "line": "직역연금 수급자 제외", "years": "법 현행(2025.10.1 시행본)", "region": "KR" },
+      "caution": "제외 대상 연금이 조문에 열거돼 있다(퇴직연금·장해연금·유족연금 등, 일시금 포함). 본인 연금 이름이 목록에 있는지 원문과 대조해 안내하고 목록을 요약해 단정하지 말 것.",
+      "cautionSource": "기초연금법 제3조 제3항 1~4호 원문 같은 URL"
+    },
+    {
+      "id": "basic-pension-linked-reduction-threshold-unverified",
+      "claim": "국민연금 노령연금 수급액이 기초연금 감액으로 이어지는 연계감액의 시작 기준선 금액은 이번 조사에서 공식 원문으로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "시도한 출처: 법제처 생활법령 노령연금 페이지(기초연금 동시 수급 Q&A, 감액 상한 50%까지만 기재, 기준선 금액은 미기재)",
+      "source_url": "https://www.easylaw.go.kr/CSP/CnpClsMainBtr.laf?popMenu=ov&csmSeq=2056&ccfNo=2&cciNo=1&cnpClsNo=1",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부·국민연금공단", "category": "기초연금", "line": "국민연금 연계감액 기준선", "years": "2026", "region": "KR" },
+      "caution": "블로그에는 기준선 금액이 적혀 있으나 공식 원문으로 대조하지 못했다. 금액을 쓰지 말고 '노령연금이 많으면 기초연금이 깎일 수 있다. 본인 수령액을 복지로 모의계산으로 확인하라'까지만 쓸 것.",
+      "cautionSource": ""
+    }
+  ]
+}

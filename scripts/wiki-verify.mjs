@@ -15,6 +15,9 @@ const RES = path.join(ROOT, "content", "research");
 
 const TYPES = ["video-pick", "sale", "ingredient", "product", "gift", "error-code", "apply"];
 const KINDS = ["공식", "후기", "영상", "언론"];
+// 기관 공식 도메인(.go.kr·.or.kr·.re.kr·.gov.kr + 개별 공식 사이트). 신청·환급 항목의 공식 출처 판정에 쓴다.
+const OFFICIAL_HOST = /.(go|or|re).kr$|.gov.kr$|mnuri.kr$|(?:^|.)(?:gosi|adiga|ilovegohyang|k-startup).kr$|(?:^|.)applyhome.co.kr$/;
+const hostOf = (u) => { try { return new URL(u).hostname; } catch { return ""; } };
 // 허브 묶음 라벨 — lib/wiki/types.ts 의 WIKI_GROUPS 에서 읽는다(두 곳에 적지 않는다)
 const GROUP_LABELS = [...fs.readFileSync(path.join(ROOT, "lib", "wiki", "types.ts"), "utf8").matchAll(/\{ label: "([^"]+)", id: "[a-z]+" \}/g)].map((m) => m[1]);
 // 본문 최소 분량(공백 제외). 찾아보는 항목이라 매거진(2,300자)보다 짧아도 되지만 얇으면 안 된다.
@@ -88,7 +91,12 @@ for (const file of files) {
   // 영상 속 그 제품은 원본 영상 자체가 1차 근거라 "영상 1 + 공식 1" 이면 성립한다.
   // 3곳을 강제하자 집필 에이전트가 읽지도 않은 법령 URL·무관한 보도자료 목록으로 칸을 채웠다(10-18).
   // 칸 채우기용 출처는 근거가 아니라 위장이다 — 개수를 맞추느니 적게 정직하게.
-  const minSrc = e.type === "video-pick" ? 2 : 3;
+  // ★신청·환급(apply)은 기관 공식(OFFICIAL_HOST) 개별 문서가 2곳 이상이면 출처 2곳으로 충분하다(2026-10-27 개정).
+  //   3곳 기준 때문에 공식 근거가 탄탄한 항목이 "칸 채우기 위장" 대신 미발행으로 멈추는 일이 반복됐다(1차 집필 41개 중 7개).
+  //   공식이 2곳 미만이면 기존대로 3곳 — 얇은 근거를 거르는 목적은 그대로다.
+  const officialN = e.sources.filter((s) => s.kind === "공식" && OFFICIAL_HOST.test(hostOf(s.url))).length;
+  // 정부·지자체 행사(sale)도 같은 기준(주최측이 기관이면 공식 개별 문서 2곳). 민간 쇼핑 행사는 .co.kr 이라 해당 없이 3곳 유지.
+  const minSrc = e.type === "video-pick" ? 2 : (e.type === "apply" || e.type === "sale") && officialN >= 2 ? 2 : 3;
   need(e.sources.length >= minSrc, `출처 ${e.sources.length}곳(${minSrc}+)`);
   if (e.type === "video-pick") need(e.sources.some((s) => s.kind === "공식"), "영상 속 그 제품은 공식 출처(브랜드·제조사) 1곳 이상 필요");
   need(!e.sources.some((s) => /확인하지 못|참고용|없다는 확인|없음을 확인|미확인 근거/.test(s.label)), "읽지 않았거나 내용과 무관한 출처(라벨에 '확인하지 못함·참고용')");
@@ -144,7 +152,7 @@ for (const file of files) {
   }
   if (e.type === "sale") {
     const s = e.sale;
-    need(s && ["확정", "미발표"].includes(s.status), "sale.status 값 오류");
+    need(s && ["확정", "미발표", "상시"].includes(s.status), "sale.status 값 오류(확정|미발표|상시)"); // 상시 = 기간 없이 요일·조건으로 계속 운영(문화가 있는 날 등), start·lastYear 불필요
     need(s && s.organizer, "sale.organizer 없음");
     if (s?.status === "확정") need(s.start && s.end, "확정인데 start/end 없음");
     if (s?.status === "미발표") {
@@ -172,7 +180,7 @@ for (const file of files) {
       // 공고 전인 회차(2027)의 날짜를 제목·설명·요약에서 단정하지 않는다. 법정 기한은 "매년 5월 1일~31일"처럼 연도 없이 쓴다.
       need(!/2027[.\-년\s]*\d{1,2}[.\-월\s]*\d{1,2}/.test(e.seoTitle + e.description + e.summary.join(" ")), "공고 전인데 2027 날짜를 단정");
     }
-    need(e.sources.some((s) => s.kind === "공식" && /\.(go|or|re)\.kr$|\.gov\.kr$|mnuri\.kr$|(?:^|\.)(?:gosi|adiga|ilovegohyang|k-startup)\.kr$/.test((() => { try { return new URL(s.url).hostname; } catch { return ""; } })())), "기관 공식 출처(.go.kr·.or.kr) 1곳 이상 필요");
+    need(officialN >= 1, "기관 공식 출처(.go.kr·.or.kr 등) 1곳 이상 필요");
     need(e.sections.some((s) => s.blocks.some((b) => b.note)), "금전 손실 경고(note 블록) 1개 이상 필요 — 기한·대상·가산세 등");
   }
 

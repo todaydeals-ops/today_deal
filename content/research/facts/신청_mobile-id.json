@@ -1,0 +1,95 @@
+{
+  "topic": "모바일 신분증(모바일 주민등록증) 발급 방법·준비물·민간개방 현황",
+  "brand": "행정안전부",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "mobile-id-issue-ic-card-route",
+      "claim": "모바일 주민등록증은 IC 주민등록증을 먼저 발급받은 뒤, 모바일 신분증 앱에서 IC 주민등록증을 휴대폰 뒷면에 태그해 본인인증하면 발급된다. IC 주민등록증 신청은 온라인 또는 주민센터 방문으로 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "행정안전부 모바일 신분증 — 모바일 주민등록증 발급방법 안내 페이지",
+      "source_url": "https://www.mobileid.go.kr/mip/hps/issuReqstGuidance/issuReqstGuidanceMrc.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "행정안전부", "category": "모바일 신분증", "line": "모바일 주민등록증", "years": "페이지 기준 현행(게시일 미표기)", "region": "KR" },
+      "caution": "같은 페이지에 주민센터 방문 QR 촬영 발급 경로와 스마트폰 교체 시 절차도 있으나 이 팩트에는 담지 않았다. 교체 절차를 쓰려면 같은 페이지를 따로 확인할 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "mobile-id-ic-card-fee-and-photo",
+      "claim": "IC 주민등록증 발급 준비물은 6개월 이내 촬영한 사진 1장(3.5×4.5cm), 신분증(교체발급이면 기존 주민등록증), 수수료 1만 원이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "행정안전부 모바일 신분증 — 모바일 주민등록증 발급방법 안내 페이지(발급 준비물 항목)",
+      "source_url": "https://www.mobileid.go.kr/mip/hps/issuReqstGuidance/issuReqstGuidanceMrc.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "행정안전부", "category": "모바일 신분증", "line": "IC 주민등록증 발급 준비물", "years": "페이지 기준 현행", "region": "KR" },
+      "caution": "수수료 1만 원은 페이지 표기 기준이다. 발급 시점에 주민센터에서 금액을 한 번 더 확인하라고 안내하면 된다.",
+      "cautionSource": "행정안전부 모바일 신분증 발급 준비물 항목(같은 페이지, 수수료 1만 원 표기)"
+    },
+    {
+      "id": "mobile-id-private-app-status",
+      "claim": "페이지 안내 기준 현재 모바일 신분증을 이용할 수 있는 민간 앱은 삼성월렛(구 삼성페이) 하나이며, 국민은행·네이버·농협은행·비바리퍼블리카(토스)·카카오 등 민간 앱은 앞으로 제공할 예정이라고 되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "행정안전부 모바일 신분증 메인 페이지 — 민간개방 안내 문단",
+      "source_url": "https://www.mobileid.go.kr/mip/hps/main.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "행정안전부", "category": "모바일 신분증", "line": "민간 앱 발급(민간개방)", "years": "페이지 기준 현재(게시일 미표기)", "region": "KR" },
+      "caution": "페이지에 게시일이 없어 오늘(2026-10-27)까지 같은 상태인지는 이 팩트만으로 보장되지 않는다. 민간 앱 목록이 늘었다는 블로그 보도는 이 팩트로 쓰지 말 것(확인실패 팩트 참조).",
+      "cautionSource": "블로그 보도(2026년 10월 11개 앱 주장)는 공식 원문 미확인 — mobile-id-private-apps-blog-claim-unverified 참조"
+    },
+    {
+      "id": "mobile-id-private-open-press-2025-08-21",
+      "claim": "행정안전부는 홍보자료 '모바일 신분증 민간개방'을 2025년 8월 21일자로 게시했다(게시판 목록 기준 게시일).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "행정안전부 모바일 신분증 홍보자료 — 모바일 신분증 민간개방 상세 게시물",
+      "source_url": "https://www.mobileid.go.kr/mip/hps/bbsManage/selectBbs.do?pageIndex=1&recordCountPerPage=12&workMode=&bbscttSn=10551&checkedForDelete=&bbsTypecd=",
+      "checked": "2026-10-27",
+      "scope": { "brand": "행정안전부", "category": "모바일 신분증", "line": "민간개방 홍보자료", "years": "2025", "region": "KR" },
+      "caution": "상세 본문이 렌더링에서 비어 있어 시행일·참여 앱 목록은 확인하지 못했다. 이 게시일을 민간 앱 시행일로 쓰지 말 것.",
+      "cautionSource": "같은 게시물 목록 게시일 2025-08-21(본문 미확인)"
+    },
+    {
+      "id": "mobile-id-overseas-pilot-only",
+      "claim": "모바일 재외국민 신원확인증은 시범서비스로 지정된 관할 재외공관에서만 발급 신청할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "행정안전부 모바일 신분증 메인 페이지 — 재외국민 신원확인증 안내 문단",
+      "source_url": "https://www.mobileid.go.kr/mip/hps/main.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "행정안전부", "category": "모바일 신분증", "line": "모바일 재외국민 신원확인증", "years": "페이지 기준 현행", "region": "해외 재외공관" },
+      "caution": "발급 가능 공관은 페이지에 '주로스앤젤레스(총), 주베트남(대) 등' 예시만 있고 전체 목록은 더보기에 있다. 공관 목록을 단정해서 쓰지 말 것. 모바일 운전면허증과 중복 발급이 안 되어 앱 삭제·재설치가 필요하다는 안내도 있다.",
+      "cautionSource": "같은 페이지 재외국민 안내 문단(발급 가능 공관 예시·중복발급 불가 안내)"
+    },
+    {
+      "id": "mobile-id-private-apps-blog-claim-unverified",
+      "claim": "블로그들은 2026년 10월부터 신한SOL뱅크·우리WON뱅킹·하나원큐·i-ONE Bank 앱이 추가돼 총 11개 앱에서 모바일 신분증을 발급할 수 있다고 전하나, 공식 발표는 이번 조사에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "블로그 검색 결과 요약(원문 미열람)",
+      "source_url": "",
+      "checked": "2026-10-27",
+      "scope": { "brand": "민간 앱 발급처", "category": "모바일 신분증", "line": "은행 앱 발급 추가", "years": "2026-10(블로그 주장)", "region": "KR" },
+      "caution": "11개 앱·2026년 10월 시행 날짜는 블로그 주장뿐이라 글에 쓰면 안 된다. 쓸 때는 '공식 앱 목록을 행정안전부 페이지에서 확인하라'로 안내한다.",
+      "cautionSource": "블로그 검색 요약(미열람, 공식 아님) — 공식 확인 실패"
+    },
+    {
+      "id": "mobile-id-age17-free-ic-unverified",
+      "claim": "17세 이상 최초 발급자가 IC 주민등록증을 무료로 받을 수 있다는 내용이 2024년 입법예고 기사로 보도됐으나, 현행 시행 여부는 이번 조사에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "언론 기사 검색 요약(원문 미열람, 입법예고 단계 보도)",
+      "source_url": "",
+      "checked": "2026-10-27",
+      "scope": { "brand": "행정안전부", "category": "주민등록증", "line": "IC 주민등록증 최초 발급 수수료", "years": "2024 입법예고 보도", "region": "KR" },
+      "caution": "입법예고 단계 내용이라 현행과 다를 수 있다. 무료 여부를 쓸 때는 행정안전부 공식 안내 또는 주민센터 확인을 안내할 것. 수수료 1만 원 팩트와 충돌하므로 같이 쓰지 말 것.",
+      "cautionSource": "2024 입법예고 기사 요약(미열람) — 현행 공식 근거 없음"
+    }
+  ]
+}

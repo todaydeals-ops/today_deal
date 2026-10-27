@@ -91,7 +91,7 @@ export interface WikiEntry {
   people?: string[];
   /** 세일 달력 전용 */
   sale?: {
-    status: "확정" | "미발표";
+    status: "확정" | "미발표" | "상시"; // 상시 = 기간 없이 정해진 요일·조건으로 계속 운영(문화가 있는 날 등). start·lastYear 불필요
     start?: string; // 확정일 때만
     end?: string;
     lastYear?: { start: string; end: string; source: string };

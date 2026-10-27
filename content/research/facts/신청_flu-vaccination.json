@@ -1,0 +1,107 @@
+{
+  "topic": "인플루엔자(독감) 국가예방접종 2026-27절기 — 무료 대상·연령별 시작일·접종 장소·동시접종",
+  "brand": "질병관리청",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "flu-2026-27-season-period",
+      "claim": "2026-27절기 인플루엔자 국가예방접종은 2026년 9월 21일(월)부터 2027년 4월 30일(금)까지 실시된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 보도자료 — 올겨울 인플루엔자 국가예방접종, 14세까지 확대해 9월 21일부터 순차 시행(2026.8.25., 최종수정 2026.10.13.)",
+      "source_url": "https://www.kdca.go.kr/kdca/2848/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa2RjYSUyRjQyJTJGMzEyMzA4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "checked": "2026-10-27",
+      "scope": { "brand": "질병관리청", "category": "인플루엔자 국가예방접종", "line": "2026-27절기", "years": "2026.9.21.~2027.4.30.", "region": "KR" },
+      "caution": "보도자료 최종수정일은 2026.10.13이다. 유행·백신 공급 상황에 따라 고위험군 중심으로 일정이 조정될 수 있다고 질병관리청이 밝혔으므로, 접종 직전 예방접종도우미(nip.kdca.go.kr) 확인을 안내할 것.",
+      "cautionSource": "위 질병관리청 보도자료 본문의 '2027년 4월 30일(금)까지' 및 '일정 조정 검토' 문구(최종수정 2026.10.13)."
+    },
+    {
+      "id": "flu-2026-27-free-targets",
+      "claim": "2026-27절기 인플루엔자 국가예방접종 무료 대상은 생후 6개월~14세 어린이(2012.1.1.~2026.8.31. 출생자), 임신부, 65세 이상 어르신(1961.12.31. 이전 출생자)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 보도자료 — 2026-27절기 인플루엔자 국가예방접종 접종대상표(2026.8.25., 최종수정 2026.10.13.)",
+      "source_url": "https://www.kdca.go.kr/kdca/2848/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa2RjYSUyRjQyJTJGMzEyMzA4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "checked": "2026-10-27",
+      "scope": { "brand": "질병관리청", "category": "인플루엔자 국가예방접종", "line": "무료 접종 대상(어린이·임신부·어르신)", "years": "2026-27절기", "region": "KR" },
+      "caution": "어린이 상한이 14세로 확대되었다. 13세까지로 적힌 예방접종도우미 인플루엔자 일반 안내 문구가 있으니 인용하지 말 것(flu-nip-general-age-13-conflict 참조).",
+      "cautionSource": "위 보도자료 접종대상표의 '생후 6개월 ∼ 14세 어린이(2012.1.1.~2026.8.31.)' 문구."
+    },
+    {
+      "id": "flu-child-dose-schedule",
+      "claim": "2회 접종 대상은 과거 접종력이 없거나 기존에 1회만 접종받은 생후 6개월 이상 9세 미만 어린이이며, 1회 접종 대상은 2회 접종 대상 외의 6개월 이상 14세 어린이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 보도자료 — 2026-27절기 인플루엔자 접종 대상 구분",
+      "source_url": "https://www.kdca.go.kr/kdca/2848/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa2RjYSUyRjQyJTJGMzEyMzA4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "checked": "2026-10-27",
+      "scope": { "brand": "질병관리청", "category": "인플루엔자 국가예방접종", "line": "어린이 1회·2회 접종 구분", "years": "2026-27절기", "region": "KR" },
+      "caution": "2회 접종 사이의 간격(1개월)은 예방접종도우미 일반 안내 페이지에 적혀 있으나, 이 보도자료 본문에서는 확인하지 못했다. 간격은 '의료기관 안내에 따른다'로 쓸 것.",
+      "cautionSource": "예방접종도우미 인플루엔자 일반 안내 페이지(nip.kdca.go.kr)의 '1개월 간격으로 2회 접종' 문구는 있으나 시즌 공지 확인은 안 함."
+    },
+    {
+      "id": "flu-2026-27-start-dates-by-group",
+      "claim": "접종 시작일은 2회 접종 대상 어린이와 임신부가 2026년 9월 21일(월), 1회 접종 대상 어린이가 9월 28일(월), 75세 이상 어르신이 10월 12일(월), 70~74세가 10월 15일(목), 65~69세가 10월 19일(월)이며, 모두 2027년 4월 30일까지다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 보도자료 — 2026-27절기 인플루엔자 접종 기간(연령대별 시작일)",
+      "source_url": "https://www.kdca.go.kr/kdca/2848/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa2RjYSUyRjQyJTJGMzEyMzA4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "checked": "2026-10-27",
+      "scope": { "brand": "질병관리청", "category": "인플루엔자 국가예방접종", "line": "연령대별 접종 시작일", "years": "2026-27절기", "region": "KR" },
+      "caution": "2026년 10월 27일 기준으로 65~69세 시작일(10월 19일)은 이미 지났다. 집필 시 '다가오는 일정'으로 쓰지 말 것. 검색에 나온 예방접종도우미 등 다른 게시물의 날짜(75세 10월 6일 등)는 이번에 열어 확인하지 못했으니 쓰지 말 것.",
+      "cautionSource": "위 보도자료 '접종 기간' 표(2026년 10월 12일·15일·19일 시작)와 최종수정 2026.10.13."
+    },
+    {
+      "id": "flu-nip-general-age-13-conflict",
+      "claim": "예방접종도우미 인플루엔자 일반 안내 페이지는 접종 대상을 '65세 이상 노인, 생후 6개월∼13세 영유아 및 어린이, 임신부'로 적고 있어 2026-27절기 보도자료(어린이 14세까지)와 다르다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "예방접종도우미(질병관리청) — 인플루엔자 일반 안내 페이지",
+      "source_url": "https://nip.kdca.go.kr/irhp/infm/goVcntInfo.do?menuLv=1&menuCd=1112",
+      "checked": "2026-10-27",
+      "scope": { "brand": "질병관리청", "category": "인플루엔자 일반 안내", "line": "접종 대상 연령(어린이 상한)", "years": "페이지 기재 시점 미표기(2026 지침 수정 목록 포함)", "region": "KR" },
+      "caution": "두 공식 문서 중 어느 쪽이 최신인지 단정하지 말고, 2026-27절기 보도자료(최종수정 2026.10.13) 기준으로 14세를 쓴다. 13세 표기는 일반 안내 페이지의 옛 문구일 가능성이 있다고만 밝힐 것.",
+      "cautionSource": "13세·14세 두 기준의 원문 위치: 일반 안내 페이지(nip) 및 2026-27절기 보도자료(kdca.go.kr 2848/subview)."
+    },
+    {
+      "id": "flu-2026-27-vaccine-type",
+      "claim": "2026-27절기 국가예방접종에 쓰이는 인플루엔자 백신은 WHO 권장 주가 모두 포함된 3가 백신이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 보도자료 — 2026-27절기 인플루엔자 국가예방접종(백신 종류)",
+      "source_url": "https://www.kdca.go.kr/kdca/2848/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa2RjYSUyRjQyJTJGMzEyMzA4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "checked": "2026-10-27",
+      "scope": { "brand": "질병관리청", "category": "인플루엔자 국가예방접종", "line": "백신 종류", "years": "2026-27절기", "region": "KR" },
+      "caution": "백신 물량(약 1,233만 도즈)은 보도자료에 있으나 시점에 따라 바뀌므로 글에 쓰지 말 것.",
+      "cautionSource": "보도자료 물량 수치 원문(위 URL)에만 있음. 글에는 쓰지 않는다는 뜻."
+    },
+    {
+      "id": "flu-facility-anywhere",
+      "claim": "인플루엔자 국가예방접종은 주소지와 관계없이 가까운 위탁의료기관 또는 보건소에서 받을 수 있으며, 위탁의료기관은 전국 약 2.3만 개소이고 관할 보건소나 예방접종도우미에서 찾을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 보도자료 — 접종 장소 및 위탁의료기관 안내",
+      "source_url": "https://www.kdca.go.kr/kdca/2848/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa2RjYSUyRjQyJTJGMzEyMzA4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "checked": "2026-10-27",
+      "scope": { "brand": "질병관리청", "category": "인플루엔자 국가예방접종", "line": "접종 장소", "years": "2026-27절기", "region": "KR" },
+      "caution": "위탁의료기관 수(약 2.3만 개소)는 시점에 따라 달라지므로 숫자 대신 '전국 위탁의료기관'으로 쓰는 것을 권장한다.",
+      "cautionSource": "위 보도자료의 '전국 위탁의료기관은 약 2.3만 개소' 문구."
+    },
+    {
+      "id": "flu-covid-same-day-coadmin",
+      "claim": "65세 이상 어르신은 10월 12일부터 코로나19 예방접종과 같은 일정으로 접종할 수 있으며, 두 백신의 동시 접종이 권고된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "질병관리청 보도자료 — 2026-27절기 인플루엔자 국가예방접종(코로나19 동시 접종 안내)",
+      "source_url": "https://www.kdca.go.kr/kdca/2848/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa2RjYSUyRjQyJTJGMzEyMzA4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "checked": "2026-10-27",
+      "scope": { "brand": "질병관리청", "category": "인플루엔자 국가예방접종", "line": "65세 이상 코로나19 동시 접종", "years": "2026-27절기", "region": "KR" },
+      "caution": "동시 접종은 '권고'이며 접종 부위·간격은 의료진 판단이다. 보도자료 문구를 그대로 옮기고 개인 판단으로 바꾸지 말 것.",
+      "cautionSource": "위 보도자료의 '10월 12일부터 동일한 일정으로 코로나19 예방접종 … 동시 접종 권고' 문구."
+    }
+  ]
+}

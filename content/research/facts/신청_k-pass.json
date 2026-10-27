@@ -1,0 +1,119 @@
+{
+  "topic": "K-패스(모두의카드) 대중교통비 환급 — 2026 기본형 환급률·한시 상향 종료·신청 방식 (2026-10-27 기준)",
+  "brand": "국토교통부·지자체(K-패스 참여 지역)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "k-pass-official-site",
+      "claim": "K-패스(모두의카드)의 공식 누리집은 korea-pass.kr이며, 회원가입 후 카드를 등록해야 환급을 받을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "K-패스 공식 누리집 korea-pass.kr (모두의카드 안내) 및 인천광역시 공지 「모두의 카드(i-패스,K-패스) 혜택 한시적('26.4.~9.) 상향 안내」 (대상 카드 항목)",
+      "source_url": "https://korea-pass.kr",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국토교통부", "category": "대중교통비 환급", "line": "K-패스(모두의카드)", "years": "2026", "region": "KR" },
+      "caution": "다른 블로그·카페 신청 대행은 신청 경로로 안내하지 않는다. 회원가입과 카드 등록은 공식 누리집 또는 앱에서 한다고 안내한다.",
+      "cautionSource": "인천광역시 공지 (신청 경로 안내) https://www.incheon.go.kr/IC010101/view?nttNo=2045762 및 세종시 공지 https://www.sejong.go.kr/bbs/R0071/view.do?nttId=B000000152672Xx2fJ4v&mno=sub02_01 (K-패스 홈페이지·앱 안내 문구)"
+    },
+    {
+      "id": "k-pass-maintenance-2026-10-27",
+      "claim": "K-패스 모두의카드 공식 누리집에는 2026년 10월 27일 00:00~12:00(12시간) 서비스 점검 공지가 떠 있었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "K-패스 공식 누리집 korea-pass.kr 점검 공지 (메인 화면 안내)",
+      "source_url": "https://korea-pass.kr",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국토교통부", "category": "서비스 점검", "line": "K-패스(모두의카드)", "years": "2026-10-27 당일", "region": "KR" },
+      "caution": "당일 공지다. 다음 날 글에는 쓰지 않는다. 점검 종료 후 정상 이용 여부는 이번 조사에서 확인하지 않았다.",
+      "cautionSource": "같은 누리집 점검 공지 원문 (작업 일시 항목) https://korea-pass.kr"
+    },
+    {
+      "id": "k-pass-rate-base-2026",
+      "claim": "2026년 K-패스 기본형(정률형) 환급률은 기타 시간 기준으로 일반 국민 20%, 청년·2자녀·어르신 30%, 3자녀 이상 50%, 저소득층 53.3%이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "인천광역시 공지 「모두의 카드(i-패스,K-패스) 혜택 한시적('26.4.~9.) 상향 안내」 (기본형 환급률 표 '당초 환급률' 열)",
+      "source_url": "https://www.incheon.go.kr/IC010101/view?nttNo=2045762",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국토교통부(지자체 공지 재게재)", "category": "대중교통비 환급", "line": "K-패스 기본형(정률형)", "years": "2026", "region": "KR (인천·경기 공지 2곳에서 동일 비율 확인)" },
+      "caution": "이 환급률은 정률형(기본형) 기준이다. 정액형 '모두의 카드' 기준금액 방식과 중 이용자에게 유리한 쪽으로 자동 계산된다. 두 방식을 섞어 '무조건 몇 %'라고 쓰지 않는다.",
+      "cautionSource": "경기도 2026 The 경기패스 안내 (환급 비율 기준 표) https://www.gg.go.kr/bbs/boardView.do?bIdx=119939976&bsIdx=838&bcIdx=0&menuId=1534"
+    },
+    {
+      "id": "k-pass-temp-uplift-2026-apr-sep",
+      "claim": "K-패스 기본형 환급률은 2026년 4월 1일~9월 30일 한시 상향됐다. 출퇴근 시차 시간대(5:30~6:30, 9:00~10:00, 16:00~17:00, 19:00~20:00)에 기본형 환급률이 30%p 올라 일반 50%, 청년·2자녀·어르신 60%, 3자녀 이상 80%, 저소득층 83.3%였고, 모두의 카드 기준금액은 50% 인하됐다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "인천광역시 공지 「모두의 카드(i-패스,K-패스) 혜택 한시적('26.4.~9.) 상향 안내」 (적용 기간 및 한시 적용 환급률 표)",
+      "source_url": "https://www.incheon.go.kr/IC010101/view?nttNo=2045762",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국토교통부(지자체 공지 재게재)", "category": "대중교통비 환급", "line": "K-패스 한시 상향 (고유가 대응)", "years": "2026.04.01~2026.09.30", "region": "KR (인천·세종 공지 확인)" },
+      "caution": "2026년 9월 30일로 적용 기간이 끝났다. 2026-10-27 기준 현행 혜택으로 쓰지 않는다. 다음 한시 조치가 있는지는 이번 조사에서 확인하지 못했다.",
+      "cautionSource": "같은 인천 공지 (적용 기간 2026.4.1~9.30 항목) https://www.incheon.go.kr/IC010101/view?nttNo=2045762 및 세종시 공지 https://www.sejong.go.kr/shrUrl/2r4CCXlw46.do"
+    },
+    {
+      "id": "k-pass-eligibility-age",
+      "claim": "K-패스는 만 19세 이상 성인을 대상으로 하며, 별도 가입비는 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "세종특별자치시 공지 「2026년 4월부터 9월까지 K-패스 혜택이 더 커집니다.」 (K-패스란 항목, 등록일 2026-04-22)",
+      "source_url": "https://www.sejong.go.kr/shrUrl/2r4CCXlw46.do",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국토교통부(지자체 공지 재게재)", "category": "대중교통비 환급", "line": "K-패스", "years": "2026", "region": "KR" },
+      "caution": "만 19세 미만 청소년은 K-패스 본 제도 대상이 아니다. 청소년 지원은 지자체별 별도 제도이므로 함께 묶어 쓰지 않는다.",
+      "cautionSource": "경기도 2026 The 경기패스 안내 (19세 미만 청소년 항목은 지자체별 별도 지원) https://www.gg.go.kr/bbs/boardView.do?bIdx=119939976&bsIdx=838&bcIdx=0&menuId=1534"
+    },
+    {
+      "id": "k-pass-auto-calc-2026",
+      "claim": "2026년 1월 1일부터 K-패스 환급은 한 달 대중교통 이용 총액과 이용 종류에 따라 일정 비율 환급과 기준금액 초과분 환급 중 이용자에게 많은 쪽으로 자동 계산·지급된다(경기도 2026 The 경기패스 안내).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "경기도 「더 똑똑하게 알아서, 최적의 혜택으로! 2026 The 경기패스」 (환급 기준표 항목, 등록일 2025-12-26)",
+      "source_url": "https://www.gg.go.kr/bbs/boardView.do?bIdx=119939976&bsIdx=838&bcIdx=0&menuId=1534",
+      "checked": "2026-10-27",
+      "scope": { "brand": "경기도(K-패스 기반 지역 혜택)", "category": "대중교통비 환급", "line": "The 경기패스 (K-패스 기반)", "years": "2026.01.01~", "region": "경기" },
+      "caution": "이 문장은 경기도가 자기 지역 상품 설명으로 쓴 문구다. 전국 K-패스 일반에 그대로 적용된다고 쓰지 않는다. 전국 적용 여부는 공식 누리집에서 확인하도록 한다.",
+      "cautionSource": "같은 경기도 안내 (2026년 1월 1일부터 환급 방식 문구) https://www.gg.go.kr/bbs/boardView.do?bIdx=119939976&bsIdx=838&bcIdx=0&menuId=1534"
+    },
+    {
+      "id": "k-pass-payout-method",
+      "claim": "K-패스 환급금은 카드 종류에 따라 지급된다. 신용카드는 청구할인, 체크카드는 통장 환급, 선불교통카드는 마일리지 적립으로 받는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "경기도 「2026 The 경기패스」 (사용 수단별 혜택 적용 항목)",
+      "source_url": "https://www.gg.go.kr/bbs/boardView.do?bIdx=119939976&bsIdx=838&bcIdx=0&menuId=1534",
+      "checked": "2026-10-27",
+      "scope": { "brand": "경기도(K-패스 기반 지역 혜택)", "category": "대중교통비 환급", "line": "K-패스 환급 지급 방식", "years": "2026", "region": "경기 안내 (전국 공통 여부 공식 확인 필요)" },
+      "caution": "지급 방식은 카드 종류별 구분이다. 'K-패스 환급은 무조건 통장으로 들어온다'처럼 단정하지 않는다.",
+      "cautionSource": "같은 경기도 안내 (사용 수단별 혜택 항목) https://www.gg.go.kr/bbs/boardView.do?bIdx=119939976&bsIdx=838&bcIdx=0&menuId=1534"
+    },
+    {
+      "id": "k-pass-threshold-varies-by-area",
+      "claim": "모두의 카드 정액형 기준금액은 지역별로 다르다. 인천 8개구 일반 국민 일반형 기준금액은 2026년 4월 한시 상향 이전 6.2만원이었고, 강화·옹진은 5만원이었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "인천광역시 공지 「모두의 카드(i-패스,K-패스) 혜택 한시적('26.4.~9.) 상향 안내」 (정액형 기준금액 표 '기존' 열)",
+      "source_url": "https://www.incheon.go.kr/IC010101/view?nttNo=2045762",
+      "checked": "2026-10-27",
+      "scope": { "brand": "인천광역시", "category": "대중교통비 환급", "line": "모두의 카드 정액형 기준금액", "years": "2026.04.01 이전 기준", "region": "인천 8개구 / 강화·옹진" },
+      "caution": "인천 한 곳의 금액이다. 다른 지역에 적용하지 않는다. 2026년 9월 30일 이후 기준금액이 한시 이전 수준으로 돌아갔는지는 이번 조사에서 확인하지 못했다.",
+      "cautionSource": "같은 인천 공지 (정액형 기준금액 표) https://www.incheon.go.kr/IC010101/view?nttNo=2045762"
+    },
+    {
+      "id": "k-pass-youth-age-range",
+      "claim": "K-패스 환급률의 '청년' 연령 범위(국가 기본 기준)는 이번 조사에서 공식 원문으로 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "경기도 「2026 The 경기패스」 (환급 비율 표의 '청년' 항목, 연령 범위 미기재)",
+      "source_url": "https://www.gg.go.kr/bbs/boardView.do?bIdx=119939976&bsIdx=838&bcIdx=0&menuId=1534",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국토교통부", "category": "대중교통비 환급", "line": "K-패스 청년 환급률 대상 연령", "years": "2026", "region": "KR" },
+      "caution": "연령 범위를 19~34세나 19~39세로 단정하지 않는다. 지자체 안내 중에는 청년 연령을 더 넓게 잡는 곳이 있다는 검색 결과가 있으나 원문 확인 전이라 글에 쓰지 않는다.",
+      "cautionSource": "경기도 2026 The 경기패스 안내 (청년 항목에 연령 미기재 확인) https://www.gg.go.kr/bbs/boardView.do?bIdx=119939976&bsIdx=838&bcIdx=0&menuId=1534 (19~34세·19~39세 수치는 이 원문에서 확인되지 않음)"
+    }
+  ]
+}

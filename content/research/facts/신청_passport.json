@@ -1,0 +1,200 @@
+{
+  "topic": "여권 발급·갱신 — 종류별 발급 수수료(국내·재외공관 구분), 유효기간, 2026.3.1 수수료 인상, 재발급, 사전알림 사칭 공지",
+  "brand": "외교부 (여권안내)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "law-deadline-weekend-next-day-national",
+      "why": "국세 신고·납부 기한 특례라 여권 발급과 무관하다. 여권 발급 기간·영업일 계산에 옮겨 쓰지 말 것."
+    },
+    {
+      "id": "law-deadline-weekend-next-day-local",
+      "why": "지방세 기한 특례라 여권과 무관하다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "passport-fee-10yr-adult-58p-domestic",
+      "claim": "18세 이상 10년 복수여권 국내 발급 수수료 합계는 58면 52,000원(발급수수료 40,000원 + 국제교류기여금 12,000원), 26면 49,000원(발급수수료 37,000원 + 국제교류기여금 12,000원)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "외교부 여권안내 홈페이지 '수수료 안내' 표(여권 발급 등에 관한 수수료, 국제교류기여금 포함)",
+      "source_url": "https://www.passport.go.kr/home/kor/contents.do?menuPos=41",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "외교부",
+        "category": "여권 발급 수수료",
+        "line": "10년 복수여권 (18세 이상)",
+        "years": "2026-10-27 조회 시점 게시 표(표 자체에 기준일 미표기, 2026.3.1 인상 공지 이후 게재)",
+        "region": "국내(재외공관은 미화 기준 별도 표)"
+      },
+      "caution": "재외공관 신청 금액은 미화 기준으로 따로 표기된다. 국내 원화 금액을 해외 신청 안내에 섞지 말 것.",
+      "cautionSource": "외교부 여권안내 수수료 안내 페이지 주석 '재외공관은 미화 기준입니다' https://www.passport.go.kr/home/kor/contents.do?menuPos=41"
+    },
+    {
+      "id": "passport-fee-5yr-minor-8plus-domestic",
+      "claim": "8세 이상 18세 미만 5년 복수여권 국내 발급 수수료 합계는 58면 44,000원(발급수수료 35,000원 + 국제교류기여금 9,000원), 26면 41,000원(발급수수료 32,000원 + 국제교류기여금 9,000원)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "외교부 여권안내 홈페이지 '수수료 안내' 표",
+      "source_url": "https://www.passport.go.kr/home/kor/contents.do?menuPos=41",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "외교부",
+        "category": "여권 발급 수수료",
+        "line": "5년 복수여권 (8세 이상 18세 미만)",
+        "years": "2026-10-27 조회 시점 게시 표(기준일 미표기)",
+        "region": "국내"
+      },
+      "caution": "8세 미만 여권은 같은 표에서 별도 행으로 나온다. 5년 복수 금액과 섞지 말 것.",
+      "cautionSource": "외교부 여권안내 수수료 안내 페이지 https://www.passport.go.kr/home/kor/contents.do?menuPos=41"
+    },
+    {
+      "id": "passport-fee-single-1yr-domestic",
+      "claim": "단수여권(1년 이내) 국내 발급 수수료는 17,000원이며 국제교류기여금은 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "외교부 여권안내 홈페이지 '수수료 안내' 표",
+      "source_url": "https://www.passport.go.kr/home/kor/contents.do?menuPos=41",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "외교부",
+        "category": "여권 발급 수수료",
+        "line": "단수여권 1년 이내",
+        "years": "2026-10-27 조회 시점 게시 표",
+        "region": "국내"
+      },
+      "caution": "",
+      "cautionSource": ""
+    },
+    {
+      "id": "passport-fee-increase-2026-03-01",
+      "claim": "여권발급수수료는 2026년 3월 1일(일)부터 인상되었다. 외교부 국내 공지는 '2천원 인상'으로, 재외공관 공지는 '미화 2달러 인상'으로 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "외교부 여권안내 공지 '여권발급수수료 2천원 인상 안내(2026.3.1.(일) 시행)' 및 주싱가포르 대한민국 대사관 공지 '여권발급수수료 인상 안내(2026.3.1.(일) 시행)'(작성 2026-02-23, 수정 2026-03-11)",
+      "source_url": "https://sgp.mofa.go.kr/sg-ko/brd/m_11935/view.do?seq=1347020",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "외교부",
+        "category": "여권 발급 수수료",
+        "line": "발급수수료 전체",
+        "years": "2026.3.1 시행",
+        "region": "국내(원화 2천원) · 재외공관(미화 2달러)"
+      },
+      "caution": "인상 전 금액을 싣는 옛 안내 페이지가 있으니, 금액은 외교부 수수료 안내 표 기준으로만 쓸 것. 인상 전후 금액을 한 글에서 섞지 말 것.",
+      "cautionSource": "외교부 수수료 안내 표 https://www.passport.go.kr/home/kor/contents.do?menuPos=41"
+    },
+    {
+      "id": "passport-validity-10yr-18plus",
+      "claim": "18세 이상이 복수여권을 신청하면 유효기간 10년 여권이 발급되며 기간 선택은 불가하다(여권법 시행령 제6조, 외교부 안내 문구). 8세 이상 18세 미만은 5년 복수여권이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "외교부 여권안내 홈페이지 '수수료 안내' 페이지 안내 문구(여권법 시행령 제6조 인용)",
+      "source_url": "https://www.passport.go.kr/home/kor/contents.do?menuPos=41",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "외교부",
+        "category": "여권 유효기간",
+        "line": "복수여권 (18세 이상 10년 · 8세 이상 18세 미만 5년)",
+        "years": "현행",
+        "region": "국내"
+      },
+      "caution": "8세 미만 여권은 표의 '5년 미만' 행으로 따로 표기된다. 이 행을 '5년 복수여권'과 같은 것으로 쓰지 말 것.",
+      "cautionSource": "외교부 여권안내 수수료 안내 표 https://www.passport.go.kr/home/kor/contents.do?menuPos=41"
+    },
+    {
+      "id": "passport-reissue-remaining-validity-58p",
+      "claim": "기존 여권의 잔여 유효기간만 부여해 발급하는 재발급 여권(58면) 국내 수수료는 27,000원이다(외교부 수수료 표 주석 3).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "외교부 여권안내 홈페이지 '수수료 안내' 표 주석 3(남은 유효기간 부여 여권)",
+      "source_url": "https://www.passport.go.kr/home/kor/contents.do?menuPos=41",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "외교부",
+        "category": "여권 재발급",
+        "line": "남은 유효기간 부여 여권(58면)",
+        "years": "2026-10-27 조회 시점 게시 표",
+        "region": "국내"
+      },
+      "caution": "재발급 사유(수록정보 변경·분실·훼손·여권면 부족 등)가 있을 때 해당된다. 26면 금액은 이번 조사 화면에서 확인되지 않았다.",
+      "cautionSource": "외교부 여권안내 수수료 안내 표 https://www.passport.go.kr/home/kor/contents.do?menuPos=41"
+    },
+    {
+      "id": "passport-expiry-alert-service",
+      "claim": "2024년 11월 20일부터 여권 유효기간 만료일 사전 알림 메시지를 '국민비서'로 받을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "외교부 여권안내 홈페이지 메인 안내 문구",
+      "source_url": "https://www.passport.go.kr/home/kor/main.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "외교부·행정안전부(국민비서)",
+        "category": "여권 유효기간 알림",
+        "line": "만료 사전 알림",
+        "years": "2024.11.20~",
+        "region": "KR"
+      },
+      "caution": "알림을 받았다고 반드시 재발급해야 하는 것은 아니다. 메인 안내에 있는 설명 범위 안에서만 쓸 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "passport-phishing-notice-expiry-alert",
+      "claim": "외교부 여권안내 메인 공지 목록에 '여권 유효기간 만료 사전알림서비스 피싱 관련 안내사항'이 게시되어 있다(제목 확인).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "외교부 여권안내 홈페이지 메인 공지 목록",
+      "source_url": "https://www.passport.go.kr/home/kor/main.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "외교부",
+        "category": "사칭·피싱 주의",
+        "line": "여권 만료 사전알림 사칭",
+        "years": "2026-10-27 조회 시점",
+        "region": "KR"
+      },
+      "caution": "공지 본문은 열지 못했다. '사칭 주의 공지가 있다'까지만 쓰고, 구체 수법을 임의로 설명하지 말 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "passport-office-hours-seoul",
+      "claim": "외교부 여권과 민원실은 9시부터 18시까지 운영하며, 토요일·일요일·법정공휴일은 휴무다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "외교부 여권안내 홈페이지 '수수료 안내' 및 여권민원실 안내 페이지",
+      "source_url": "https://www.passport.go.kr/home/kor/contents.do?menuPos=41",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "외교부 여권과",
+        "category": "여권 민원실",
+        "line": "서울 여권민원실",
+        "years": "2026-10-27 조회 시점",
+        "region": "서울"
+      },
+      "caution": "재외공관과 지방 여권 민원 창구의 운영 시간은 다를 수 있다. 재외공관은 해당 공관 공지를 확인하도록 쓸 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "passport-processing-period-unverified",
+      "claim": "여권 발급 소요기간(근무일 수)은 외교부 공식 페이지에서 확인하지 못했다. 민간 자료에는 약 4~5근무일과 약 8근무일 두 가지가 섞여 있다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "민간 검색 요약(공식 발급기간 미확인)",
+      "source_url": "https://www.passport.go.kr/home/kor/main.do",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "외교부",
+        "category": "여권 발급 기간",
+        "line": "일반 발급 소요 기간",
+        "years": "미확인",
+        "region": "국내"
+      },
+      "caution": "발급 기간을 날짜로 단정하지 말 것. '여행 일정보다 넉넉히 미리 신청' 정도로 쓰고, 기간 수치는 외교부 안내를 열어 확인한 뒤에만 넣는다.",
+      "cautionSource": ""
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "topic": "주민등록등본·초본 발급 — 수수료(1통 400원 · 온라인 무료 · 무인 1/2), 신청 자격(본인·세대원), 방문·온라인·무인 채널 제한",
+  "brand": "행정안전부 (정부24·주민센터)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "law-deadline-weekend-next-day-national",
+      "why": "국세 기한 특례로 주민등록 발급 업무와 무관하다. 발급 기한이나 영업일 계산에 옮기지 말 것."
+    },
+    {
+      "id": "law-deadline-weekend-next-day-local",
+      "why": "지방세 기한 특례로 등·초본 발급과 무관하다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "resident-cert-fee-400-per-copy",
+      "claim": "주민등록표 등본 또는 초본은 방문 발급 기준 1통에 400원이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "정부24 '주민등록표 등본(초본) 발급' 민원안내 페이지(수수료 항목)",
+      "source_url": "https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000015",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "행정안전부(정부24·시군구·읍면동)",
+        "category": "주민등록 등·초본",
+        "line": "주민등록표 등본·초본 교부",
+        "years": "2026-10-27 조회 시점 정부24 안내",
+        "region": "KR"
+      },
+      "caution": "수수료 감면 대상(주민등록법 시행규칙 제18조 제1항 제1~13호, 지자체 조례로 정하는 경우 포함)이 있다. 감면 해당 여부는 신청처에서 확인하도록 안내한다.",
+      "cautionSource": "정부24 '주민등록표 등본(초본) 발급' 민원안내 수수료 감면 항목 https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000015"
+    },
+    {
+      "id": "resident-cert-fee-third-party-500",
+      "claim": "법 제29조 제2항 제2호(관계 법령에 따른 소송·비송사건·경매 목적 수행상 필요한 경우) 또는 제6호(채권·채무 등 정당한 이해관계가 있는 경우, 초본 한정)에 따라 다른 사람의 등·초본을 교부받으면 1통에 500원이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "정부24 '주민등록표 등본(초본) 발급' 민원안내 페이지 및 주민등록법 제29조",
+      "source_url": "https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000015",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "행정안전부",
+        "category": "주민등록 등·초본",
+        "line": "타인 등·초본 교부 (소송·경매·이해관계)",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "이 요금은 자격 요건이 있는 특수 신청 건이다. 일반인이 타인 등본을 떼는 경우로 쓰지 말 것. 자격 요건은 주민등록법 제29조 제2항의 각 호를 따른다.",
+      "cautionSource": "주민등록법 제29조 제2항 원문 https://www.law.go.kr/법령/주민등록법/제29조"
+    },
+    {
+      "id": "resident-cert-online-free-kiosk-half",
+      "claim": "인터넷(정부24) 전자문서로 발급받으면 수수료는 무료이고, 무인민원발급기로 발급받으면 그 수수료의 2분의 1을 낸다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "정부24 '주민등록표 등본(초본) 발급' 민원안내 페이지 수수료 안내",
+      "source_url": "https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000015",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "행정안전부(정부24)",
+        "category": "주민등록 등·초본",
+        "line": "온라인·무인민원 수수료",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "무인민원발급기 수수료는 방문 수수료 400원의 2분의 1이다(200원). 무인민원 발급기 설치 장소와 운영 시간은 장소마다 다르다.",
+      "cautionSource": "정부24 주민등록표 등본(초본) 발급 민원안내 수수료 안내 https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000015"
+    },
+    {
+      "id": "resident-cert-online-self-or-household-only",
+      "claim": "정부24 온라인 발급 신청 자격은 본인 또는 세대원이며, 온라인으로는 대리인 신청이 불가하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "정부24 '주민등록표 등본(초본) 발급' 민원안내 페이지 신청자격 항목",
+      "source_url": "https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000015",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "행정안전부(정부24)",
+        "category": "주민등록 등·초본",
+        "line": "온라인 발급 신청 자격",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "방문 신청에서는 위임장으로 대리 신청이 가능하다(같은 민원안내 페이지). 온라인과 방문의 대리 가능 여부를 섞지 말 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "resident-cert-electronic-kiosk-self-household",
+      "claim": "무인민원발급기 또는 전자문서로 등·초본을 교부받는 경우는 신청자 본인이나 세대원의 등·초본에 한정된다(주민등록법 제29조 제3항).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 주민등록법 제29조(열람 또는 등·초본의 교부) 원문",
+      "source_url": "https://www.law.go.kr/법령/주민등록법/제29조",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "행정안전부",
+        "category": "주민등록 등·초본",
+        "line": "무인·전자 교부 대상 제한",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "타인 등본을 무인기나 온라인으로 뗄 수 없다는 뜻이다. 방문 신청으로 가야 하는 경우를 함께 안내할 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "resident-cert-application-channels",
+      "claim": "등·초본은 시·군·구청, 읍·면사무소, 동 주민센터, 출장소에 방문해 구술 또는 서면으로 신청하거나, 인터넷 전자문서(정부24), 무인민원발급기로 신청할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "정부24 '주민등록표 등본(초본) 발급' 민원안내 페이지 신청 방법",
+      "source_url": "https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000015",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "행정안전부(정부24)",
+        "category": "주민등록 등·초본",
+        "line": "신청 채널",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "",
+      "cautionSource": ""
+    },
+    {
+      "id": "resident-cert-self-household-rule",
+      "claim": "주민등록표 열람 또는 등·초본 교부 신청은 본인이나 세대원이 할 수 있고, 위임을 받은 경우에도 할 수 있다(주민등록법 제29조 제2항 본문).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 주민등록법 제29조 원문",
+      "source_url": "https://www.law.go.kr/법령/주민등록법/제29조",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "행정안전부",
+        "category": "주민등록 등·초본",
+        "line": "신청 자격",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "예외 사유(국가·지자체 공무, 소송·경매 등, 다른 법령 근거, 직계혈족·배우자 관계의 초본 등)가 있다. 요건을 축약해 '누구나 뗄 수 있다'로 쓰지 말 것.",
+      "cautionSource": "주민등록법 제29조 제2항 각 호 원문 https://www.law.go.kr/법령/주민등록법/제29조"
+    },
+    {
+      "id": "resident-kiosk-24h-unverified",
+      "claim": "무인민원발급기를 24시간 이용할 수 있는지는 이번 조사에서 공식 페이지로 확인하지 못했다(민간 검색 요약에만 있고, 행정안전부 무인민원발급 안내 페이지는 열리지 않았다).",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "민간 검색 요약 및 정부24 무인민원발급 안내 페이지 시도(리다이렉트로 본문 확인 못 함)",
+      "source_url": "https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000015",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "행정안전부(무인민원발급기)",
+        "category": "주민등록 등·초본",
+        "line": "무인민원발급기 운영 시간",
+        "years": "미확인",
+        "region": "KR"
+      },
+      "caution": "운영 시간을 단정하지 말 것. 독자에게는 설치 장소별 운영 시간을 정부24 무인민원발급기 설치장소 조회 또는 해당 주민센터에서 확인하도록 안내한다.",
+      "cautionSource": "정부24 주민등록표 등본(초본) 발급 안내 https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=13100000015"
+    }
+  ]
+}

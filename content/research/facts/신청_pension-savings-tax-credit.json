@@ -1,0 +1,101 @@
+{
+  "topic": "연금저축·IRP 세액공제 (공제율 구간·600만원/900만원 한도·이전·누락 구제)",
+  "brand": "국세청",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": ["ye-2026-simplified-open-jan15", "law-year-end-settlement-feb-pay"],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "pension-credit-rate-15-12",
+      "claim": "연금계좌 세액공제율은 종합소득금액 4,500만원 이하(근로소득만 있으면 총급여 5,500만원 이하)인 거주자는 납입액의 15%, 그 외 거주자는 12%다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소득세법 제59조의3 제1항(국가법령정보센터, 연금계좌세액공제)",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제59조의3",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "국세청",
+        "category": "연말정산 세액공제",
+        "line": "연금계좌세액공제(연금저축·퇴직연금·IRP)",
+        "years": "현행 조문(시행 2026.1.1, 제1항 최종 개정 2022.12.31 표기)",
+        "region": "KR"
+      },
+      "caution": "구간 기준은 종합소득금액이다. 근로소득만 있으면 총급여 기준으로 판정한다는 괄호가 조문에 있으니 그대로 쓸 것.",
+      "cautionSource": "소득세법 제59조의3 제1항 괄호 문구 원문"
+    },
+    {
+      "id": "pension-limit-600-and-900",
+      "claim": "연금계좌 공제 대상 납입액은 연금저축 연 600만원까지이고, 연금저축 600만원 이내분과 퇴직연금 납입액을 합한 금액은 연 900만원까지다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소득세법 제59조의3 제1항 단서(국가법령정보센터)",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제59조의3",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "국세청",
+        "category": "연말정산 세액공제",
+        "line": "연금계좌 납입 한도",
+        "years": "현행 조문(시행 2026.1.1)",
+        "region": "KR"
+      },
+      "caution": "600만원·900만원은 조문 값이다. 50세 이상 한도 확대 안내는 별도 팩트(pension-age-50-extra-limit-unconfirmed)에서 확인 실패로 처리했다.",
+      "cautionSource": "소득세법 제59조의3 제1항 단서 원문"
+    },
+    {
+      "id": "pension-age-50-extra-limit-unconfirmed",
+      "claim": "현행 소득세법 제59조의3 본문에는 50세 이상 별도 납입 한도 규정이 보이지 않는다. 일부 블로그는 50세 이상 한도 확대를 언급했으나 근거 조문을 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "소득세법 제59조의3 조문 원문(국가법령정보센터) 열람 결과 연령별 한도 문구 없음",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제59조의3",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "국세청",
+        "category": "연말정산 세액공제",
+        "line": "연금계좌 50세 이상 한도",
+        "years": "미확인(2025 귀속·2026 귀속 모두 미확인)",
+        "region": "KR"
+      },
+      "caution": "50세 이상 한도는 글에 숫자로 쓰지 말 것. 독자에게는 나이 기준 추가 한도가 있는지 국세청 연말정산 안내에서 확인하라고만 안내한다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "pension-transfer-and-deferred-excluded",
+      "claim": "연금계좌에서 다른 연금계좌로 이전하며 납입된 금액과 과세가 이연된 퇴직소득 등(원천징수되지 않은 퇴직소득)은 세액공제 대상 납입액에서 제외된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소득세법 제59조의3 제1항 각 호(국가법령정보센터)",
+      "source_url": "https://www.law.go.kr/법령/소득세법/제59조의3",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "국세청",
+        "category": "연말정산 세액공제",
+        "line": "연금계좌 납입액 제외분",
+        "years": "현행 조문(시행 2026.1.1)",
+        "region": "KR"
+      },
+      "caution": "",
+      "cautionSource": ""
+    },
+    {
+      "id": "pension-credit-item-name-nts",
+      "claim": "국세청 연말정산 서식의 세액공제 항목에는 연금계좌세액공제가 의료비·교육비·월세 세액공제 등과 함께 들어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국세상담센터 연말정산 안내 페이지(세액공제 항목 목록)",
+      "source_url": "https://call.nts.go.kr/call/taxInfo/selectTaxInfo.do?mi=1317",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "국세청",
+        "category": "연말정산 서식",
+        "line": "연금계좌세액공제 항목명",
+        "years": "미표기(조사일 2026-10-27 열람)",
+        "region": "KR"
+      },
+      "caution": "",
+      "cautionSource": ""
+    }
+  ]
+}

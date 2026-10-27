@@ -1,0 +1,95 @@
+{
+  "topic": "육아휴직급여 — 일반·6+6 특례·한부모 상한액, 대상·기간, 신청 기한",
+  "brand": "고용노동부 · 육아·가족 정부 제도",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "parental-leave-benefit-general-cap-2026",
+      "claim": "육아휴직급여 일반 기준은 1~3개월 통상임금 100%(월 상한 250만 원), 4~6개월 통상임금 100%(월 상한 200만 원), 7개월 이후 통상임금 80%(월 상한 160만 원)이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "고용노동부 · 고용24 고용정책 상세_제도안내 (육아휴직급여)",
+      "source_url": "https://m.work24.go.kr/cm/c/f/1100/selecSystInfo.do?systClId=SC00000251&systId=SI00000402",
+      "checked": "2026-10-27",
+      "scope": { "brand": "고용노동부(고용24)", "category": "고용보험 육아휴직급여", "line": "육아휴직급여 일반 기준", "years": "현행(고용24 페이지 2026.10.27 확인)", "region": "KR" },
+      "caution": "2021년 고용노동부 FAQ의 '첫 3개월 통상임금 80%·월 상한 150만 원'은 예전 기준이다. 같은 글에 옛 상한을 섞으면 틀린다.",
+      "cautionSource": "고용노동부 FAQ https://www.moel.go.kr/faq/faqView.do?seqRepeat=26 본문(상한 월 150만원·통상임금 80%) · 정책브리핑 https://www.korea.kr/news/policyNewsView.do?newsId=148933084 의 '현행 150만 원에서 1~3개월 최대 250만 원, 4~6개월 200만 원, 7개월~ 160만 원'"
+    },
+    {
+      "id": "parental-leave-benefit-cap-raise-announcement",
+      "claim": "정부는 2024년 8월 27일 고용노동부 2025년도 예산안 발표에서 육아휴직급여 상한을 월 150만 원에서 1~3개월 최대 250만 원, 4~6개월 200만 원, 7개월 이후 160만 원으로 인상하겠다고 밝혔다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "정책브리핑 · 육아휴직급여 내년에 최대 250만 원 지원 (2024.08.27)",
+      "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148933084",
+      "checked": "2026-10-27",
+      "scope": { "brand": "고용노동부", "category": "고용보험 육아휴직급여", "line": "육아휴직급여 상한 인상 발표", "years": "2025년도 예산안 발표(2024.08.27)", "region": "KR" },
+      "caution": "이 기사는 '발표'다. 2025년 실제 시행 여부는 고용24 현행 문구(일반 기준 팩트)로 간접 확인했다. 시행 시점을 단정할 때는 고용24 기준을 쓸 것.",
+      "cautionSource": "정책브리핑 원문 '육아휴직 급여는 현행 150만 원에서 1~3개월 최대 250만 원, 4~6개월 200만 원, 7개월~ 160만 원으로 인상한다'"
+    },
+    {
+      "id": "parental-leave-benefit-66-special-2026",
+      "claim": "부모 함께 육아휴직제(6+6)는 자녀가 생후 18개월 이내에 부모가 모두(동시 또는 순차적으로) 육아휴직을 쓸 때 첫 6개월 급여를 통상임금 100%로 올려 준다. 월 상한은 1개월 250만 원, 2개월 250만 원, 3개월 300만 원, 4개월 350만 원, 5개월 400만 원, 6개월 450만 원이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "고용노동부 · 고용24 고용정책 상세_제도안내 (육아휴직급여 특례)",
+      "source_url": "https://m.work24.go.kr/cm/c/f/1100/selecSystInfo.do?systClId=SC00000251&systId=SI00000402",
+      "checked": "2026-10-27",
+      "scope": { "brand": "고용노동부(고용24)", "category": "고용보험 육아휴직급여", "line": "부모 함께 육아휴직제(6+6) 특례", "years": "현행", "region": "KR" },
+      "caution": "7개월 이후 급여는 일반 기준(통상임금 80%, 월 160만 원 상한)으로 돌아간다. 6+6 상한을 7개월 이후에도 적용하면 틀린다.",
+      "cautionSource": "고용24 제도안내 원문 '7개월 이후 급여는 일반육아휴직급여(통상임금 80%, 월 160만원 상한)로 적용'"
+    },
+    {
+      "id": "parental-leave-benefit-single-parent-2026",
+      "claim": "한부모 근로자가 육아휴직을 쓰면 첫 3개월은 통상임금 100%를 월 상한 300만 원까지 지급하고, 4개월 이후는 일반 기준을 따른다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "고용노동부 · 고용24 고용정책 상세_제도안내 (육아휴직급여 한부모 특례)",
+      "source_url": "https://m.work24.go.kr/cm/c/f/1100/selecSystInfo.do?systClId=SC00000251&systId=SI00000402",
+      "checked": "2026-10-27",
+      "scope": { "brand": "고용노동부(고용24)", "category": "고용보험 육아휴직급여", "line": "한부모 육아휴직급여 특례", "years": "현행", "region": "KR" },
+      "caution": "'한부모'의 범위는 한부모가족지원법 기준이다. 대상 판단을 단정하지 말고 고용24 자격 요건을 확인하라고 안내할 것.",
+      "cautionSource": "고용24 제도안내 원문 '「한부모가족지원법」상 한부모에 해당하는 근로자'"
+    },
+    {
+      "id": "parental-leave-benefit-target-period",
+      "claim": "육아휴직급여는 8세 이하 또는 초등학교 2학년 이하 자녀를 양육하기 위해 최대 1년 6개월(개월 단위 산정) 육아휴직을 사용한 기간에 지급된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "고용노동부 · 고용24 고용정책 상세_제도안내 (육아휴직급여)",
+      "source_url": "https://m.work24.go.kr/cm/c/f/1100/selecSystInfo.do?systClId=SC00000251&systId=SI00000402",
+      "checked": "2026-10-27",
+      "scope": { "brand": "고용노동부(고용24)", "category": "고용보험 육아휴직급여", "line": "육아휴직급여 대상·기간", "years": "현행", "region": "KR" },
+      "caution": "1년은 365일이 아니라 12개월 단위로 계산한다. 일수로 환산해 안내하지 말 것.",
+      "cautionSource": "고용24 제도안내 원문 '1년의 기간은 일수(365일)이 아닌 개월(12개월) 단위로 산정합니다'"
+    },
+    {
+      "id": "parental-leave-benefit-eligibility-and-apply-window",
+      "claim": "육아휴직급여는 육아휴직을 30일 이상 사용하고 휴직 개시일 이전 피보험단위기간이 180일 이상이어야 하며, 배우자가 같은 자녀에 대해 30일 이상 육아휴직을 받지 않았거나 육아기 근로시간 단축을 30일 이상 하지 않은 경우에 받을 수 있다. 신청은 육아휴직 개시일 이후 1개월부터 종료일 이후 12개월 이내에 관할 고용센터에 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "고용노동부 · 자주하는 질문(출산전후휴가급여, 육아휴직급여는 어떻게 받나요?)",
+      "source_url": "https://www.moel.go.kr/faq/faqView.do?seqRepeat=26",
+      "checked": "2026-10-27",
+      "scope": { "brand": "고용노동부", "category": "고용보험 육아휴직급여", "line": "육아휴직급여 자격·신청기한", "years": "FAQ 개정일 미표기", "region": "KR" },
+      "caution": "이 FAQ는 개정일이 표기돼 있지 않고 금액은 옛 기준이다. 자격 요건과 신청 기한만 쓰고, 금액은 고용24 현행 팩트로 쓸 것. 신청 기한 12개월은 고용24 제도안내 본문에서 재확인하지 못했다.",
+      "cautionSource": "고용노동부 FAQ 원문 '육아휴직개시일 이후 1월부터 종료일 이후 12월 이내' · '피보험단위기간이 통산하여 180일이상' · 금액 문구는 옛 기준(상한 월 150만원)"
+    },
+    {
+      "id": "parental-leave-benefit-lower-limit-2026-unverified",
+      "claim": "육아휴직급여 월 하한액의 2026년 현행 금액은 이번 조사에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "고용노동부 자주하는 질문(2021년 기준 문구, 월 하한 70만 원)",
+      "source_url": "https://www.moel.go.kr/faq/faqView.do?seqRepeat=26",
+      "checked": "2026-10-27",
+      "scope": { "brand": "고용노동부", "category": "고용보험 육아휴직급여", "line": "육아휴직급여 하한액", "years": "2026년 현행 미확인", "region": "KR" },
+      "caution": "FAQ에 적힌 월 하한 70만 원은 옛 기준일 가능성이 있어 쓰지 말 것. 하한이 필요하면 고용24 계산기나 고용센터에서 확인하라고 안내한다.",
+      "cautionSource": "고용노동부 FAQ 원문의 '상한액 월 150만원, 하한액 월 70만원'(옛 기준)"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "topic": "국가장학금 신청 — 2026학년도 2학기 1차·2차 일정, 서류·가구원 동의 기간, 재학생 구제 규칙",
+  "brand": "한국장학재단 · 육아·가족(교육) 정부 제도",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "national-scholarship-2026-2nd-round-window",
+      "claim": "2026학년도 2학기 국가장학금 2차 신청 기간은 2026년 8월 12일 9시부터 9월 9일 18시까지이며, 기간 내 주말·공휴일 포함 24시간 신청할 수 있으나 신청 마감일은 제외된다. 2026년 10월 27일 기준으로 이미 종료됐다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국장학재단 · 국가장학금 I유형(학생직접지원형) 신청일정",
+      "source_url": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01_01",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국장학재단",
+        "category": "소득연계형 국가장학금",
+        "line": "국가장학금 I유형 · 2026학년도 2학기 2차",
+        "years": "2026학년도 2학기(2026.8.12~9.9)",
+        "region": "KR"
+      },
+      "caution": "2차 기간은 2026년 9월 9일 18시에 끝났다. 다음 회차 글을 쓸 때는 '2026학년도 2학기 2차는 이미 마감'을 명시하고, 다음 공고를 확인하라고 안내할 것.",
+      "cautionSource": "한국장학재단 원문 '신청일정 : 2026. 8. 12.(수) 9시 ~ 9. 9.(수) 18시'"
+    },
+    {
+      "id": "national-scholarship-2026-2nd-round-documents-window",
+      "claim": "2026학년도 2학기 국가장학금 2차 서류 제출 및 가구원 동의 기간은 2026년 8월 12일 9시부터 9월 16일 18시까지다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국장학재단 · 국가장학금 I유형(학생직접지원형) 신청일정",
+      "source_url": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01_01",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국장학재단",
+        "category": "소득연계형 국가장학금",
+        "line": "국가장학금 I유형 · 서류 제출·가구원 동의",
+        "years": "2026학년도 2학기 2차",
+        "region": "KR"
+      },
+      "caution": "국가장학사업은 2026년 8월 18일 18시 이후에 서류 완료와 가구원 정보제공 동의를 하면 최신화 신청 기간이 부족하거나 최신화 신청이 불가할 수 있다. 신청 기간 안에 끝내라고 안내할 것.",
+      "cautionSource": "한국장학재단 원문 '단, 국가장학사업의 경우 2026. 8. 18.(화) 18시 이후 서류완료 및 가구원 정보제공 동의가 이루어질 경우 최신화 신청 기간이 부족하거나, 최신화 신청 자체가 불가할 수 있음'"
+    },
+    {
+      "id": "national-scholarship-2026-1st-round-window",
+      "claim": "2026학년도 2학기 국가장학금 1차 신청 기간은 2026년 5월 22일 9시부터 6월 22일 18시까지다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "정책브리핑 정책기자단 기사 '2학기 국가장학금·근로장학금 신청 기간이 돌아왔다!' (2026.06.08) · 한국장학재단 공지 '2026년 2학기 국가장학금 1차 신청 일정 및 신청매뉴얼 안내'(2026.05.19 등록, 공지 목록에서 제목 확인)",
+      "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148965747",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국장학재단",
+        "category": "소득연계형 국가장학금",
+        "line": "국가장학금 I유형 · 2026학년도 2학기 1차",
+        "years": "2026학년도 2학기(2026.5.22~6.22)",
+        "region": "KR"
+      },
+      "caution": "1차 기간 날짜는 정책브리핑 기사 인용이다. 한국장학재단 1차 공지 본문은 열지 못했으니, 글에는 '한국장학재단 공지 기준'을 덧붙일 것.",
+      "cautionSource": "정책브리핑 기사 본문 '5월 22일(금) 9시부터 6월 22일(월) 18시까지' · 한국장학재단 공지 목록 https://www.kosaf.go.kr/ko/scholarnf.do?pg=scholarship05_12_07p"
+    },
+    {
+      "id": "national-scholarship-student-round-rule",
+      "claim": "재학생은 원칙적으로 1차 신청 기간에만 국가장학금을 신청할 수 있고, 2차 신청자는 재학 중 2회에 한해 구제신청이 자동 적용되며 구제신청 적용 여부는 선택할 수 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국장학재단 · 국가장학금 I유형(학생직접지원형) 신청일정 안내 문구",
+      "source_url": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01_01",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국장학재단",
+        "category": "소득연계형 국가장학금",
+        "line": "재학생 1차·2차 신청 규칙",
+        "years": "2026학년도 기준 문구",
+        "region": "KR"
+      },
+      "caution": "구제신청은 재학 중 2회까지다. 대학별 학사일정으로 1차 신청이 불가했던 학생은 대학 입증 후 구제 기회가 있다는 별도 조항이 있으니 한 줄로 축약하지 말 것.",
+      "cautionSource": "한국장학재단 원문 '재학 중 2회에 한하여 구제신청 자동 적용' · '대학별 학사일정 등으로 1차 신청이 불가한 경우 ... 구제 기회 부여 가능'"
+    },
+    {
+      "id": "national-scholarship-2026-2nd-target-scope",
+      "claim": "국가장학금 I유형 2026학년도 2학기 2차 신청 대상은 신입생·편입생·재입학생·복학생·재학생 등 모든 학적이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국장학재단 · 국가장학금 I유형(학생직접지원형) 신청일정",
+      "source_url": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01_01",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국장학재단",
+        "category": "소득연계형 국가장학금",
+        "line": "국가장학금 I유형 대상",
+        "years": "2026학년도 2학기",
+        "region": "KR"
+      },
+      "caution": "Ⅱ유형은 참여 대학 재학생만 대상이다(한국장학재단 검색 요약 확인, 원문 미열람). Ⅰ유형 대상과 섞지 말 것.",
+      "cautionSource": ""
+    },
+    {
+      "id": "national-scholarship-2026-2nd-amount-unverified",
+      "claim": "2026학년도 2학기 국가장학금 I유형의 구간별 지원 상한(기초·차상위 등록금 전액, 1~3구간 300만 원, 4~6구간 220만 원, 7~8구간 180만 원)은 공식 원문에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "정책브리핑 정책기자단 기사 '2학기 국가장학금·근로장학금 신청 기간이 돌아왔다!' (2026.06.08)",
+      "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148965747",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국장학재단",
+        "category": "소득연계형 국가장학금",
+        "line": "국가장학금 I유형 금액 구간",
+        "years": "2026학년도 2학기",
+        "region": "KR"
+      },
+      "caution": "기사에는 1~3구간 300만 원·4~6구간 220만 원·7~8구간 180만 원이 적혀 있으나 한국장학재단 원문 대조 전이다. 금액을 글에 쓰지 말고 '소득 구간에 따라 다르다'까지만 쓸 것.",
+      "cautionSource": "정책기자단 기사 원문 금액 문구 — 공식 원문 미확인"
+    },
+    {
+      "id": "national-scholarship-next-round-not-found-2026-10-27",
+      "claim": "2027학년도 1학기 국가장학금 신청 일정은 2026년 10월 27일 확인 시점에 한국장학재단 공지 목록(2026.10.08~10.20 공지 범위)에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "한국장학재단 · 공지사항 목록 / 장학금 일정·공지 목록",
+      "source_url": "https://www.kosaf.go.kr/ko/notice.do?page=2",
+      "checked": "2026-10-27",
+      "scope": {
+        "brand": "한국장학재단",
+        "category": "소득연계형 국가장학금",
+        "line": "다음 회차(2027학년도 1학기) 공고 여부",
+        "years": "2027학년도 1학기 · 미확인",
+        "region": "KR"
+      },
+      "caution": "이번 조사는 공지 목록 2페이지와 장학금 일정 목록 상단까지만 확인했다. 미공고라고 단정하지 말고 '2026년 10월 27일 확인 시점 미확인'으로 쓸 것.",
+      "cautionSource": "한국장학재단 공지사항 목록 2페이지(https://www.kosaf.go.kr/ko/notice.do?page=2, 최신 등록 2026.10.20 확인) · 장학금 일정·공지 목록(https://www.kosaf.go.kr/ko/scholarnf.do?pg=scholarship05_12_07p)"
+    }
+  ]
+}

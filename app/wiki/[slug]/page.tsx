@@ -254,6 +254,8 @@ export default async function WikiEntryPage({ params }: { params: Promise<{ slug
                           <td>
                             {e.sale.status === "확정" ? (
                               <span className="wk-pill" style={{ color: "#2f7d4f" }}>확정 {fmt(e.sale.start!)}~{fmt(e.sale.end!)}</span>
+                            ) : e.sale.status === "상시" ? (
+                              <span className="wk-pill" style={{ color: "#38539a" }}>상시 운영</span>
                             ) : (
                               <span className="wk-pill" style={{ color: "#b0661a" }}>미발표</span>
                             )}

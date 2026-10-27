@@ -1,0 +1,95 @@
+{
+  "topic": "아동수당 — 2026년 4월 개편(연령 9세 미만·지역별 금액)·신청·지급",
+  "brand": "보건복지부 · 육아·가족 정부 제도",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "child-allowance-status",
+      "claim": "★개편됨: 아동수당은 2026년 4월부터 지급 연령이 만 8세 미만에서 만 9세 미만으로 올라가고 거주지별 금액이 나뉘었다. 2025년 이전 기준(만 8세 미만)은 종료된 기준이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "보건복지부 · 2026년 4월부터 아동수당 더 넓게, 더 많이! (정책브리핑 카드뉴스 2026.04.27)",
+      "source_url": "https://www.korea.kr/multi/visualNewsView.do?newsId=148963446",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "아동 현금급여", "line": "아동수당 2026년 개편", "years": "2026.4 이후", "region": "KR" },
+      "caution": "2025년 이전 자료는 만 8세 미만 기준이다. 연도 없이 '8세 미만'이라고 쓰면 틀린다. 2030년까지 매년 1세씩 올라 13세 미만까지 확대될 계획이다.",
+      "cautionSource": "보건복지부 카드뉴스 원문 '(2025) 8세 미만 → (2026) 9세 미만' · '2030년까지 매년 1세씩, 13세 미만까지 연령 상향'"
+    },
+    {
+      "id": "child-allowance-age-2026",
+      "claim": "2026년 4월부터 아동수당 지급 대상은 만 9세 미만 모든 아동이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "보건복지부 · 아동수당 지급 페이지 / 카드뉴스 2026.04.27",
+      "source_url": "https://www.mohw.go.kr/menu.es?mid=a10711030100",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "아동 현금급여", "line": "아동수당 지원대상", "years": "2026년", "region": "KR" },
+      "caution": "판단 기준은 학년이 아니라 출생일이다. 같은 초등학생이라도 출생일에 따라 대상 여부가 다르다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "child-allowance-amount-2026",
+      "claim": "2026년 4월부터 아동수당은 아동 1인당 월 수도권 10만 원, 비수도권 10만 5천 원, 인구감소지역 우대 11만 원, 인구감소지역 특별 12만 원이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "보건복지부 · 2026년 4월부터 아동수당 더 넓게, 더 많이! (정책브리핑 카드뉴스 2026.04.27)",
+      "source_url": "https://www.korea.kr/multi/visualNewsView.do?newsId=148963446",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "아동 현금급여", "line": "아동수당 거주지별 금액", "years": "2026.4 이후", "region": "KR(거주지별)" },
+      "caution": "인구감소지역이 지역사랑상품권으로 지급하면 월 1만 원이 추가돼 최대 13만 원이다. 지자체 조례 시행 여부가 지역마다 달라 거주지 확인이 필요하다.",
+      "cautionSource": "보건복지부 카드뉴스 원문 '인구감소지역에서 조례 제·개정 등을 통해 지역사랑상품권으로 지급하는 경우 1만 원 추가 지급' · 보건복지부 아동수당 페이지 '(지역화폐+1만원)'"
+    },
+    {
+      "id": "child-allowance-retro-2026-batch",
+      "claim": "2026년 아동수당 개편에 따라 기존 기준에서 지급이 끊겼던 2017년 1월생~2018년 3월생 아동은 2026년 1월 미지급분부터 소급해 4월에 일괄 지급됐다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "보건복지부 · 2026년 4월부터 아동수당 더 넓게, 더 많이! (정책브리핑 카드뉴스 2026.04.27)",
+      "source_url": "https://www.korea.kr/multi/visualNewsView.do?newsId=148963446",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "아동 현금급여", "line": "2026 개편 소급 지급", "years": "2026.1~4 미지급분", "region": "KR" },
+      "caution": "이 소급은 2026년 개편에 따른 일회성 조치다. 다른 출생 연도 아동에게도 같은 소급이 있다고 쓰지 말 것.",
+      "cautionSource": "보건복지부 카드뉴스 원문 '2017년 1월생 ~ 2018년 3월생은 2026년 1월 미지급분부터 소급하여 4월 일괄 지급'"
+    },
+    {
+      "id": "child-allowance-how-to-apply",
+      "claim": "아동수당은 읍면동 주민센터 방문 또는 복지로(PC·모바일)에서 신청한다. 이전에 받은 적이 있다가 지급이 중단된 아동은 지급 정보가 확인되면 별도 신청 없이 직권으로 지급되고, 받은 적이 없는 아동만 신규 신청한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "보건복지부 · 아동수당 지급 페이지 / 정책브리핑 카드뉴스 2026.04.27",
+      "source_url": "https://www.korea.kr/multi/visualNewsView.do?newsId=148963446",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "아동 현금급여", "line": "아동수당 신청 경로", "years": "2026.4 이후", "region": "KR" },
+      "caution": "정부24 아동수당 서비스 상세 페이지는 자동 접근이 차단돼 직접 확인하지 못했다. 정부24 신청 여부는 쓰지 않는다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "child-allowance-payment-method",
+      "claim": "아동수당은 현금 입금이 원칙이며, 시·군·구 조례로 정하면 지역상품권으로도 지급할 수 있다. 제도는 2018년 9월에 시행됐다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "보건복지부 · 아동수당 지급 페이지",
+      "source_url": "https://www.mohw.go.kr/menu.es?mid=a10711030100",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부", "category": "아동 현금급여", "line": "아동수당 지급방식", "years": "시행 2018.9", "region": "KR" },
+      "caution": "",
+      "cautionSource": ""
+    },
+    {
+      "id": "child-allowance-retro-60day-unverified",
+      "claim": "아동수당은 출생일을 포함한 60일 이내에 신청하면 출생월부터 소급 지급되고, 60일이 지난 뒤 신청하면 신청월부터 지급된다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "정책브리핑 정책기자단 기고 '월 최대 13만 원…초등학생까지 확대된 아동수당' (2026.05.12)",
+      "source_url": "https://www.korea.kr/news/customizedNewsView.do?newsId=148963801",
+      "checked": "2026-10-27",
+      "scope": { "brand": "보건복지부(복지로)", "category": "아동 현금급여", "line": "아동수당 최초 신청 시점", "years": "2026년 기고 기준", "region": "KR" },
+      "caution": "기고(정책기자단)에만 있고 보건복지부·복지로 원문에서는 확인하지 못했다. 부모급여의 같은 규칙(2024 보도)과 혼동하지 말고, 글에 단정하지 말고 '출생 후 빨리 신청 권장' 수준으로만 쓸 것.",
+      "cautionSource": "정책기자단 기고 원문 '출생 후 60일 이내 신청하면 출생월부터 소급 지급' — 공식 원문 미확인"
+    }
+  ]
+}

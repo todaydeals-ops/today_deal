@@ -1,0 +1,119 @@
+{
+  "topic": "청년월세 지원 (2026년 신청 기간·대상·지원액, 현행 여부 확인)",
+  "brand": "국토교통부·복지로(한국사회보장정보원)",
+  "article": "예정",
+  "captured": "2026-10-27",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "youth-monthly-rent-support-status",
+      "claim": "2026년 청년월세 지원 신규 신청은 2026년 3월 30일 09시부터 5월 29일 16시까지 접수됐고 이미 마감됐다. 2026년 선정자 공지는 9월 14일(월)이었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 중앙부처 복지서비스 상세 「청년월세 지원사업」 (기준연도 2026, 신규 신청기간 및 선정자 공지 항목)",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004661",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국토교통부·복지로", "category": "주거비 지원", "line": "청년월세 지원사업", "years": "2026 신규 수혜자 접수", "region": "KR" },
+      "caution": "2026-10-27 기준 신규 신청 기간이 아니다. '지금 신청하세요'로 쓰지 않는다. 다음 신규 접수 일정은 공식 공고에서 확인하지 못했고, 블로그의 '상시 신청' 주장도 공식 문서에서 확인하지 못했다. 다음 신청은 공고 확인 후 신청하도록 안내한다.",
+      "cautionSource": "복지로 공지 「2026년 청년월세 지원 신청 안내」(등록일 2026-03-20) https://m.bokjiro.go.kr/ssis-tem/cms/mob/customer/notice/1309500_1155.html"
+    },
+    {
+      "id": "youth-monthly-rent-support-amount",
+      "claim": "청년월세 지원금은 월 최대 20만원, 최장 24개월(회), 생애 1회이며 실제 낸 월세 범위 안에서 지원하고 임차보증금과 관리비는 제외한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 공지 「2026년 청년월세 지원 신청 안내」 (지급규모 항목)",
+      "source_url": "https://m.bokjiro.go.kr/ssis-tem/cms/mob/customer/notice/1309500_1155.html",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국토교통부·복지로", "category": "주거비 지원", "line": "청년월세 지원사업 (중앙 사업)", "years": "2026 신규 수혜자", "region": "KR" },
+      "caution": "이 금액은 중앙 사업 기준이다. 지자체가 따로 운영하는 청년월세 사업은 금액과 기간이 다를 수 있으니 거주지 공고를 함께 확인하도록 안내한다.",
+      "cautionSource": "같은 복지로 공지 (중앙 사업 지급규모 항목) 및 복지로 상세 페이지 https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004661"
+    },
+    {
+      "id": "youth-monthly-rent-support-target",
+      "claim": "청년월세 지원 대상은 19~34세 독립거주 무주택 청년으로, 2026년 신청 가능 출생연도는 1991년~2007년생이다. 청년가구 소득은 기준 중위소득 60% 이하, 원가구 소득은 중위소득 100% 이하이며, 총재산은 청년가구 1.22억원 이하, 원가구 4.7억원 이하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 중앙부처 복지서비스 상세 「청년월세 지원사업」 (지원대상·선정기준 항목)",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004661",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국토교통부·복지로", "category": "주거비 지원", "line": "청년월세 지원사업 (중앙 사업)", "years": "2026", "region": "KR" },
+      "caution": "소득·재산 평가액은 항목별 산정 방식이 있다(부채는 주택구입·임차보증금 용도만 인정 등). 숫자만 보고 자격을 단정하지 말고, 복지로 모의계산이나 주민센터 상담을 안내한다.",
+      "cautionSource": "같은 복지로 상세 페이지 (선정기준 항목의 평가액 산정 기준)"
+    },
+    {
+      "id": "youth-monthly-rent-support-exclusions",
+      "claim": "청년월세 지원에서 제외되는 경우에는 주택 소유자(분양권·입주권 포함), 2촌 이내 혈족 소유 주택 임차, 공공임대주택 거주, 다수가 한 방을 나눠 쓰는 전대차, 다른 청년월세 지원 수혜 중인 사람 등이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 중앙부처 복지서비스 상세 「청년월세 지원사업」 (지원대상 제외 항목)",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004661",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국토교통부·복지로", "category": "주거비 지원", "line": "청년월세 지원사업 (중앙 사업)", "years": "2026", "region": "KR" },
+      "caution": "원문 목록에 '등'이 붙어 있어 여기 적힌 항목이 전부가 아니다. 완전한 목록처럼 쓰지 않는다. 전대차에는 임대인과 별도 계약 시 예외가 있다.",
+      "cautionSource": "같은 복지로 상세 페이지 (지원대상 제외 항목 원문)"
+    },
+    {
+      "id": "youth-monthly-rent-support-quota-and-selection",
+      "claim": "2026년 청년월세 지원 신규 수혜자는 전국 6만명 선정 예정이며, 지원자가 많으면 소득·재산이 낮은 사람부터 선정한다고 공고됐다(지역별 선정 인원은 다르다).",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 공지 「2026년 청년월세 지원 신청 안내」 (지원대상 항목)",
+      "source_url": "https://m.bokjiro.go.kr/ssis-tem/cms/mob/customer/notice/1309500_1155.html",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국토교통부·복지로", "category": "주거비 지원", "line": "청년월세 지원사업 (중앙 사업)", "years": "2026 신규", "region": "KR" },
+      "caution": "2026년 선정이 끝난 뒤의 인원 집계는 이번 조사에서 확인하지 못했다. 선정 인원 수를 '마감됐다'의 근거로 쓰지 않는다.",
+      "cautionSource": "같은 복지로 공지 (지원대상 항목 '6만명') https://m.bokjiro.go.kr/ssis-tem/cms/mob/customer/notice/1309500_1155.html"
+    },
+    {
+      "id": "youth-monthly-rent-support-payment-period",
+      "claim": "2026년 신규 수혜자는 2028년 12월까지만 지원받는다. 2026년 선정 후 지급이 중지돼 24개월을 다 받지 못했다면 2029년 이후 정기 신청기간에 재신청(소득·재산 재심사)해 잔여 회차를 받을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 공지 「2026년 청년월세 지원 신청 안내」 (지급기간 항목)",
+      "source_url": "https://m.bokjiro.go.kr/ssis-tem/cms/mob/customer/notice/1309500_1155.html",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국토교통부·복지로", "category": "주거비 지원", "line": "청년월세 지원사업 (중앙 사업)", "years": "2026 신규 → 2028.12까지 지급", "region": "KR" },
+      "caution": "'2029년 이후 정기 신청기간'이라는 표현만 있고 날짜는 공고되지 않았다. 특정 연·월을 쓰지 않는다.",
+      "cautionSource": "같은 복지로 공지 (지급기간 항목) 원문"
+    },
+    {
+      "id": "youth-monthly-rent-support-prior-program",
+      "claim": "청년월세 한시 특별지원 1차 사업(2022년 8월~2024년 12월) 수혜자는 최대 24회에서 받은 회차를 뺀 나머지만 지원받는다. 2차 사업 수혜자는 2차 사업이 끝난 뒤에 신청할 수 있다고 공고됐다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 공지 「2026년 청년월세 지원 신청 안내」 (지원대상 항목, 1차·2차 설명)",
+      "source_url": "https://m.bokjiro.go.kr/ssis-tem/cms/mob/customer/notice/1309500_1155.html",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국토교통부·복지로", "category": "주거비 지원", "line": "청년월세 한시 특별지원(1차·2차) 이력", "years": "2022.8~2027.12 (사업 기간 표기)", "region": "KR" },
+      "caution": "본인의 과거 수혜 이력에 따라 신청 가능 여부가 달라진다. 이력이 있는 독자에게는 회차 차감과 2차 사업 종료 후 신청 원칙을 함께 안내한다.",
+      "cautionSource": "같은 복지로 공지 (지원대상 항목 원문) https://m.bokjiro.go.kr/ssis-tem/cms/mob/customer/notice/1309500_1155.html"
+    },
+    {
+      "id": "youth-monthly-rent-support-contact",
+      "claim": "청년월세 지원 문의는 국토교통부 전담 콜센터 1599-0001이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "복지로 공지 「2026년 청년월세 지원 신청 안내」 (민원상담 항목) 및 복지로 상세 페이지 문의처",
+      "source_url": "https://m.bokjiro.go.kr/ssis-tem/cms/mob/customer/notice/1309500_1155.html",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국토교통부", "category": "주거비 지원", "line": "청년월세 지원사업", "years": "2026", "region": "KR" },
+      "caution": "운영 시간은 이번 조사에서 확인하지 못했다. 시간을 쓰지 않는다.",
+      "cautionSource": "해당 없음 (번호만 기재, 수치 기준 아님)"
+    },
+    {
+      "id": "youth-monthly-rent-support-next-round",
+      "claim": "2027년 이후 청년월세 지원의 신규 신청 일정은 2026년 10월 27일 기준 공식 공고에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "복지로 공지 「2026년 청년월세 지원 신청 안내」 및 상세 페이지 (정기 신청기간 언급만 있고 날짜 없음)",
+      "source_url": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004661",
+      "checked": "2026-10-27",
+      "scope": { "brand": "국토교통부·복지로", "category": "주거비 지원", "line": "청년월세 지원사업 다음 회차", "years": "2027~", "region": "KR" },
+      "caution": "다음 신청 시기를 추정해 쓰지 않는다. 복지로 공지 확인과 거주지 지자체 공고 확인을 안내한다.",
+      "cautionSource": "해당 없음 (일정 미확인 사실 자체)"
+    }
+  ]
+}
