@@ -1,0 +1,1167 @@
+{
+ "rent-tax-credit": {
+  "kw": "월세 세액공제",
+  "kin": 84360,
+  "blog": 160318
+ },
+ "medical-expense-deduction": {
+  "kw": "의료비 세액공제",
+  "kin": 49237,
+  "blog": 184386
+ },
+ "education-expense-deduction": {
+  "kw": "교육비 세액공제",
+  "kin": 24622,
+  "blog": 198573
+ },
+ "pension-savings-tax-credit": {
+  "kw": "연금저축 세액공제",
+  "kin": 54296,
+  "blog": 278987
+ },
+ "credit-card-income-deduction": {
+  "kw": "신용카드 소득공제",
+  "kin": 260964,
+  "blog": 344104
+ },
+ "cash-receipt-deduction": {
+  "kw": "현금영수증 소득공제",
+  "kin": 153331,
+  "blog": 233882
+ },
+ "housing-subscription-deduction": {
+  "kw": "청약저축 소득공제",
+  "kin": 48679,
+  "blog": 104911
+ },
+ "child-tax-credit": {
+  "kw": "자녀 세액공제",
+  "kin": 47199,
+  "blog": 230203
+ },
+ "donation-tax-credit": {
+  "kw": "기부금 영수증 세액공제",
+  "kin": 12740,
+  "blog": 81552
+ },
+ "insurance-premium-tax-credit": {
+  "kw": "보장성보험 세액공제",
+  "kin": 13785,
+  "blog": 25105
+ },
+ "housing-loan-interest-deduction": {
+  "kw": "주택담보대출 이자 소득공제",
+  "kin": 38604,
+  "blog": 70736
+ },
+ "youth-sme-tax-reduction": {
+  "kw": "중소기업 청년 소득세 감면",
+  "kin": 35491,
+  "blog": 54312
+ },
+ "capital-gains-tax-prelim-filing": {
+  "kw": "양도소득세 예정신고",
+  "kin": 35811,
+  "blog": 114473
+ },
+ "acquisition-tax-filing": {
+  "kw": "취득세 신고기한",
+  "kin": 20001,
+  "blog": 80869
+ },
+ "inheritance-tax-filing": {
+  "kw": "상속세 신고기한",
+  "kin": 33805,
+  "blog": 109885
+ },
+ "gift-tax-filing": {
+  "kw": "증여세 신고기한",
+  "kin": 37173,
+  "blog": 117341
+ },
+ "local-income-tax-filing": {
+  "kw": "지방소득세 신고",
+  "kin": 125444,
+  "blog": 340642
+ },
+ "income-tax-interim-prepayment": {
+  "kw": "종합소득세 중간예납",
+  "kin": 4389,
+  "blog": 24718
+ },
+ "vat-preliminary-notice": {
+  "kw": "부가세 예정고지",
+  "kin": 7722,
+  "blog": 33310
+ },
+ "business-status-report": {
+  "kw": "사업장현황신고",
+  "kin": 26009,
+  "blog": 338856
+ },
+ "withholding-tax-monthly": {
+  "kw": "원천징수 이행상황신고",
+  "kin": 23198,
+  "blog": 40478
+ },
+ "e-tax-invoice": {
+  "kw": "전자세금계산서 발급기한",
+  "kin": 3773,
+  "blog": 51314
+ },
+ "freelancer-withholding-refund": {
+  "kw": "프리랜서 3.3 환급",
+  "kin": 18307,
+  "blog": 39647
+ },
+ "side-job-income-report": {
+  "kw": "부업 소득 신고",
+  "kin": 22259,
+  "blog": 61852
+ },
+ "tax-payment-extension": {
+  "kw": "국세 납부기한 연장",
+  "kin": 2601,
+  "blog": 63609
+ },
+ "property-registration-tax": {
+  "kw": "등록면허세 납부",
+  "kin": 12463,
+  "blog": 101314
+ },
+ "vehicle-acquisition-tax": {
+  "kw": "자동차 취득세 신고",
+  "kin": 19634,
+  "blog": 39664
+ },
+ "amended-return-claim": {
+  "kw": "경정청구 기한",
+  "kin": 11991,
+  "blog": 65326
+ },
+ "late-filing-after-deadline": {
+  "kw": "기한후신고 가산세",
+  "kin": 25282,
+  "blog": 190325
+ },
+ "national-pension-premium-deduction": {
+  "kw": "국민연금 소득공제",
+  "kin": 143138,
+  "blog": 270232
+ },
+ "business-registration": {
+  "kw": "사업자등록 신청 방법",
+  "kin": 371843,
+  "blog": 2548473
+ },
+ "business-closure": {
+  "kw": "폐업 신고 방법",
+  "kin": 65374,
+  "blog": 280413
+ },
+ "simplified-taxpayer-criteria": {
+  "kw": "간이과세자 기준",
+  "kin": 44536,
+  "blog": 140995
+ },
+ "single-home-capital-gains-exemption": {
+  "kw": "1세대1주택 양도세 비과세 요건",
+  "kin": 45647,
+  "blog": 123597
+ },
+ "rental-income-report": {
+  "kw": "주택임대소득 신고",
+  "kin": 91236,
+  "blog": 322137
+ },
+ "overseas-stock-capital-gains": {
+  "kw": "해외주식 양도세 신고",
+  "kin": 10957,
+  "blog": 37928
+ },
+ "financial-income-comprehensive-tax": {
+  "kw": "금융소득종합과세 기준",
+  "kin": 42035,
+  "blog": 351835
+ },
+ "private-pension-tax": {
+  "kw": "연금소득세 분리과세",
+  "kin": 7341,
+  "blog": 100655
+ },
+ "gift-tax-exemption-limit": {
+  "kw": "증여세 공제 한도",
+  "kin": 37499,
+  "blog": 135514
+ },
+ "inheritance-tax-installment": {
+  "kw": "상속세 연부연납",
+  "kin": 3240,
+  "blog": 18751
+ },
+ "payment-statement-submission": {
+  "kw": "지급명세서 제출기한",
+  "kin": 12836,
+  "blog": 85198
+ },
+ "tax-delinquency-lookup": {
+  "kw": "체납 국세 조회",
+  "kin": 14050,
+  "blog": 63299
+ },
+ "disabled-vehicle-tax-exemption": {
+  "kw": "장애인 자동차세 면제 신청",
+  "kin": 1639,
+  "blog": 4017
+ },
+ "national-tax-refund-lookup": {
+  "kw": "국세환급금 조회",
+  "kin": 31727,
+  "blog": 116749
+ },
+ "local-tax-refund-lookup": {
+  "kw": "지방세 환급금 조회",
+  "kin": 5969,
+  "blog": 33137
+ },
+ "integrated-pension-portal": {
+  "kw": "통합연금포털",
+  "kin": 2136,
+  "blog": 36009
+ },
+ "account-info": {
+  "kw": "어카운트인포",
+  "kin": 3092,
+  "blog": 23177
+ },
+ "credit-report-free": {
+  "kw": "신용정보 무료조회",
+  "kin": 166594,
+  "blog": 177911
+ },
+ "unpaid-wage-advance-payment": {
+  "kw": "체당금 신청",
+  "kin": 24610,
+  "blog": 44240
+ },
+ "first-meeting-voucher": {
+  "kw": "첫만남이용권",
+  "kin": 26133,
+  "blog": 297872
+ },
+ "parent-benefit": {
+  "kw": "부모급여 지급액",
+  "kin": 46363,
+  "blog": 211441
+ },
+ "child-allowance": {
+  "kw": "아동수당 신청",
+  "kin": 14997,
+  "blog": 168565
+ },
+ "parental-leave-benefit": {
+  "kw": "육아휴직급여 신청",
+  "kin": 53377,
+  "blog": 131437
+ },
+ "maternity-leave-benefit": {
+  "kw": "출산휴가 급여",
+  "kin": 51325,
+  "blog": 110905
+ },
+ "aidol-childcare-service": {
+  "kw": "아이돌봄서비스 신청",
+  "kin": 6321,
+  "blog": 192766
+ },
+ "daycare-admission": {
+  "kw": "어린이집 입소대기 신청",
+  "kin": 1681,
+  "blog": 21374
+ },
+ "kindergarten-admission": {
+  "kw": "처음학교로 신청",
+  "kin": 347120,
+  "blog": 1736602
+ },
+ "infant-health-checkup": {
+  "kw": "영유아 건강검진 시기",
+  "kin": 2465,
+  "blog": 101792
+ },
+ "infant-vaccination": {
+  "kw": "영유아 예방접종 일정",
+  "kin": 1566,
+  "blog": 39522
+ },
+ "pregnancy-medical-voucher": {
+  "kw": "국민행복카드 임신 바우처",
+  "kin": 5096,
+  "blog": 86784
+ },
+ "postpartum-care-support": {
+  "kw": "산후조리비 지원",
+  "kin": 8178,
+  "blog": 105254
+ },
+ "single-parent-support": {
+  "kw": "한부모가족 지원 신청",
+  "kin": 98263,
+  "blog": 717508
+ },
+ "child-support-enforcement": {
+  "kw": "양육비이행관리원 신청",
+  "kin": 13098,
+  "blog": 26083
+ },
+ "family-care-leave": {
+  "kw": "가족돌봄휴가 신청",
+  "kin": 3277,
+  "blog": 46901
+ },
+ "infertility-treatment-support": {
+  "kw": "난임시술비 지원 신청",
+  "kin": 629,
+  "blog": 38148
+ },
+ "elementary-enrollment": {
+  "kw": "초등학교 입학 준비 취학통지서",
+  "kin": 205,
+  "blog": 9539
+ },
+ "neulbom-school": {
+  "kw": "늘봄학교 신청",
+  "kin": 203,
+  "blog": 20048
+ },
+ "education-benefit": {
+  "kw": "교육급여 신청",
+  "kin": 182217,
+  "blog": 615974
+ },
+ "national-scholarship": {
+  "kw": "국가장학금 신청기간",
+  "kin": 181067,
+  "blog": 105103
+ },
+ "student-loan-repayment": {
+  "kw": "취업후 상환 학자금대출",
+  "kin": 76946,
+  "blog": 35466
+ },
+ "reduced-hours-parenting-benefit": {
+  "kw": "육아기 근로시간 단축 급여",
+  "kin": 5407,
+  "blog": 34671
+ },
+ "multi-child-benefits": {
+  "kw": "다자녀 혜택 기준",
+  "kin": 15445,
+  "blog": 211659
+ },
+ "birth-registration": {
+  "kw": "출생신고 기한",
+  "kin": 5038,
+  "blog": 67334
+ },
+ "marriage-registration": {
+  "kw": "혼인신고 방법",
+  "kin": 238268,
+  "blog": 435826
+ },
+ "paternity-leave": {
+  "kw": "배우자 출산휴가 10일",
+  "kin": 5975,
+  "blog": 41329
+ },
+ "school-transfer": {
+  "kw": "전학 신청",
+  "kin": 60228,
+  "blog": 94645
+ },
+ "together-care-center": {
+  "kw": "다함께돌봄센터 이용",
+  "kin": 4294,
+  "blog": 208660
+ },
+ "developmental-rehab-service": {
+  "kw": "발달재활서비스 신청",
+  "kin": 949,
+  "blog": 33447
+ },
+ "childcare-fee-voucher": {
+  "kw": "보육료 지원",
+  "kin": 39088,
+  "blog": 200278
+ },
+ "pregnant-vaccination": {
+  "kw": "임산부 독감 무료접종",
+  "kin": 742,
+  "blog": 37112
+ },
+ "newborn-screening-support": {
+  "kw": "선천성대사이상검사 지원",
+  "kin": 227,
+  "blog": 7216
+ },
+ "youth-leap-account": {
+  "kw": "청년도약계좌 가입조건",
+  "kin": 22241,
+  "blog": 109090
+ },
+ "youth-tomorrow-savings": {
+  "kw": "청년내일저축계좌 신청",
+  "kin": 38491,
+  "blog": 48380
+ },
+ "youth-monthly-rent-support": {
+  "kw": "청년월세지원 신청",
+  "kin": 76723,
+  "blog": 188044
+ },
+ "youth-jeonse-loan": {
+  "kw": "청년 전세자금대출",
+  "kin": 206073,
+  "blog": 216589
+ },
+ "national-employment-support": {
+  "kw": "국민취업지원제도 신청",
+  "kin": 91777,
+  "blog": 263969
+ },
+ "k-pass": {
+  "kw": "K패스 신청",
+  "kin": 11267,
+  "blog": 139100
+ },
+ "youth-mental-health": {
+  "kw": "청년 마음건강 바우처",
+  "kin": 609,
+  "blog": 17140
+ },
+ "youth-housing-subscription": {
+  "kw": "주택드림 청약통장",
+  "kin": 22619,
+  "blog": 51058
+ },
+ "youth-startup-support": {
+  "kw": "예비창업패키지 신청",
+  "kin": 3294,
+  "blog": 43138
+ },
+ "youth-work-experience": {
+  "kw": "청년 일경험",
+  "kin": 125234,
+  "blog": 1920981
+ },
+ "move-in-report": {
+  "kw": "전입신고 기한",
+  "kin": 32124,
+  "blog": 114804
+ },
+ "fixed-date-lease": {
+  "kw": "확정일자 받는 법",
+  "kin": 237578,
+  "blog": 589807
+ },
+ "lease-registration-order": {
+  "kw": "임차권등기명령 신청",
+  "kin": 93932,
+  "blog": 167115
+ },
+ "rent-contract-report": {
+  "kw": "전월세 신고",
+  "kin": 71753,
+  "blog": 165170
+ },
+ "housing-subscription": {
+  "kw": "청약 신청 방법",
+  "kin": 189137,
+  "blog": 669938
+ },
+ "newlywed-special-supply": {
+  "kw": "신혼부부 특별공급 조건",
+  "kin": 17450,
+  "blog": 163067
+ },
+ "didimdol-loan": {
+  "kw": "디딤돌대출 조건",
+  "kin": 274765,
+  "blog": 133497
+ },
+ "beotimmok-loan": {
+  "kw": "버팀목전세자금대출",
+  "kin": 224919,
+  "blog": 130599
+ },
+ "housing-benefit": {
+  "kw": "주거급여 신청",
+  "kin": 119532,
+  "blog": 338121
+ },
+ "lease-renewal-right": {
+  "kw": "계약갱신청구권 기간",
+  "kin": 42643,
+  "blog": 192882
+ },
+ "housing-pension": {
+  "kw": "주택연금 가입조건",
+  "kin": 22985,
+  "blog": 124318
+ },
+ "public-rental-housing": {
+  "kw": "공공임대 신청",
+  "kin": 59216,
+  "blog": 465316
+ },
+ "jeonse-guarantee": {
+  "kw": "전세보증보험 가입",
+  "kin": 203011,
+  "blog": 292904
+ },
+ "first-home-acquisition-tax-reduction": {
+  "kw": "생애최초 취득세 감면",
+  "kin": 12731,
+  "blog": 54281
+ },
+ "real-estate-transaction-report": {
+  "kw": "부동산 실거래 신고 기한",
+  "kin": 2165,
+  "blog": 41850
+ },
+ "real-estate-register": {
+  "kw": "등기부등본 발급",
+  "kin": 135746,
+  "blog": 427626
+ },
+ "unemployment-benefit": {
+  "kw": "실업급여 신청",
+  "kin": 618768,
+  "blog": 322839
+ },
+ "early-reemployment-allowance": {
+  "kw": "조기재취업수당",
+  "kin": 31225,
+  "blog": 23274
+ },
+ "tomorrow-learning-card": {
+  "kw": "내일배움카드 발급",
+  "kin": 130970,
+  "blog": 224600
+ },
+ "four-insurance-enrollment": {
+  "kw": "4대보험 취득신고 기한",
+  "kin": 5924,
+  "blog": 30943
+ },
+ "severance-pay-deadline": {
+  "kw": "퇴직금 지급기한",
+  "kin": 35768,
+  "blog": 115449
+ },
+ "minimum-wage": {
+  "kw": "최저임금 2026",
+  "kin": 5793,
+  "blog": 93318
+ },
+ "irp-account": {
+  "kw": "IRP 계좌 개설",
+  "kin": 17077,
+  "blog": 76440
+ },
+ "wage-arrears-complaint": {
+  "kw": "임금체불 신고",
+  "kin": 162012,
+  "blog": 119140
+ },
+ "industrial-accident-benefit": {
+  "kw": "산재 신청 방법",
+  "kin": 110769,
+  "blog": 321302
+ },
+ "artist-employment-insurance": {
+  "kw": "예술인 고용보험",
+  "kin": 9740,
+  "blog": 65800
+ },
+ "self-employed-employment-insurance": {
+  "kw": "자영업자 고용보험 가입",
+  "kin": 25319,
+  "blog": 84329
+ },
+ "annual-leave-pay": {
+  "kw": "연차수당 계산",
+  "kin": 113718,
+  "blog": 92668
+ },
+ "unemployment-recognition": {
+  "kw": "실업인정 방법",
+  "kin": 110201,
+  "blog": 223288
+ },
+ "national-pension-claim": {
+  "kw": "국민연금 수령 신청",
+  "kin": 81588,
+  "blog": 211506
+ },
+ "national-pension-refund": {
+  "kw": "국민연금 반환일시금",
+  "kin": 13005,
+  "blog": 33593
+ },
+ "national-pension-late-payment": {
+  "kw": "국민연금 추납",
+  "kin": 6856,
+  "blog": 35891
+ },
+ "national-pension-early": {
+  "kw": "조기노령연금",
+  "kin": 5933,
+  "blog": 46280
+ },
+ "pension-split": {
+  "kw": "분할연금 신청",
+  "kin": 60853,
+  "blog": 133438
+ },
+ "survivor-pension": {
+  "kw": "유족연금 신청",
+  "kin": 23975,
+  "blog": 78387
+ },
+ "pension-record-lookup": {
+  "kw": "국민연금 예상수령액",
+  "kin": 30241,
+  "blog": 147027
+ },
+ "basic-pension": {
+  "kw": "기초연금 신청",
+  "kin": 87685,
+  "blog": 283322
+ },
+ "long-term-care-grade": {
+  "kw": "장기요양등급 신청",
+  "kin": 26206,
+  "blog": 449469
+ },
+ "senior-jobs": {
+  "kw": "노인일자리 신청",
+  "kin": 8152,
+  "blog": 147878
+ },
+ "dementia-screening": {
+  "kw": "치매 조기검진",
+  "kin": 4813,
+  "blog": 98539
+ },
+ "senior-vaccination": {
+  "kw": "65세 폐렴구균 예방접종",
+  "kin": 2413,
+  "blog": 25813
+ },
+ "death-report": {
+  "kw": "사망신고 기한",
+  "kin": 19729,
+  "blog": 134723
+ },
+ "safe-inheritance-onestop": {
+  "kw": "상속인 금융거래 조회",
+  "kin": 11888,
+  "blog": 58181
+ },
+ "disability-registration": {
+  "kw": "장애인 등록 신청",
+  "kin": 139538,
+  "blog": 618610
+ },
+ "disability-pension": {
+  "kw": "장애인연금 신청",
+  "kin": 49213,
+  "blog": 170828
+ },
+ "disability-activity-support": {
+  "kw": "장애인 활동지원 신청",
+  "kin": 25412,
+  "blog": 306384
+ },
+ "livelihood-benefit": {
+  "kw": "기초생활수급자 신청",
+  "kin": 330900,
+  "blog": 707377
+ },
+ "emergency-welfare": {
+  "kw": "긴급복지지원 신청",
+  "kin": 90508,
+  "blog": 197760
+ },
+ "medical-benefit": {
+  "kw": "의료급여 수급자",
+  "kin": 113661,
+  "blog": 346633
+ },
+ "copay-cap-refund": {
+  "kw": "본인부담상한제",
+  "kin": 15477,
+  "blog": 76206
+ },
+ "catastrophic-medical-aid": {
+  "kw": "재난적의료비 지원 신청",
+  "kin": 8088,
+  "blog": 48713
+ },
+ "rare-disease-copay": {
+  "kw": "산정특례 신청",
+  "kin": 28563,
+  "blog": 132857
+ },
+ "senior-dental-support": {
+  "kw": "임플란트 건강보험",
+  "kin": 62212,
+  "blog": 371204
+ },
+ "elderly-care-service": {
+  "kw": "노인맞춤돌봄서비스 신청",
+  "kin": 2033,
+  "blog": 137655
+ },
+ "funeral-benefit": {
+  "kw": "장제비 신청",
+  "kin": 2423,
+  "blog": 12867
+ },
+ "veterans-registration": {
+  "kw": "국가유공자 등록",
+  "kin": 67939,
+  "blog": 290977
+ },
+ "electricity-welfare-discount": {
+  "kw": "전기요금 복지할인 신청",
+  "kin": 5026,
+  "blog": 48779
+ },
+ "telecom-fee-reduction": {
+  "kw": "통신요금 감면 저소득",
+  "kin": 1822,
+  "blog": 10822
+ },
+ "welfare-service-lookup": {
+  "kw": "복지서비스 모의계산",
+  "kin": 5884,
+  "blog": 34456
+ },
+ "credit-recovery-workout": {
+  "kw": "신용회복위원회 개인워크아웃",
+  "kin": 167865,
+  "blog": 78313
+ },
+ "personal-rehabilitation": {
+  "kw": "개인회생 신청 방법",
+  "kin": 601372,
+  "blog": 2053862
+ },
+ "haessal-loan": {
+  "kw": "햇살론 신청",
+  "kin": 1453025,
+  "blog": 193730
+ },
+ "small-living-loan": {
+  "kw": "소액생계비대출 신청",
+  "kin": 33060,
+  "blog": 62372
+ },
+ "cancer-screening": {
+  "kw": "국가암검진 대상",
+  "kin": 19891,
+  "blog": 146188
+ },
+ "flu-vaccination": {
+  "kw": "독감 무료접종 대상",
+  "kin": 6893,
+  "blog": 103992
+ },
+ "scaling-insurance": {
+  "kw": "스케일링 보험 적용",
+  "kin": 13657,
+  "blog": 146960
+ },
+ "health-insurance-dependents": {
+  "kw": "피부양자 자격 요건",
+  "kin": 63153,
+  "blog": 45932
+ },
+ "premium-installment": {
+  "kw": "건강보험료 분할납부 신청",
+  "kin": 45098,
+  "blog": 47406
+ },
+ "premium-reduction": {
+  "kw": "건강보험료 경감 대상",
+  "kin": 6346,
+  "blog": 63342
+ },
+ "insurance-certificate": {
+  "kw": "건강보험 자격확인서 발급",
+  "kin": 115423,
+  "blog": 215554
+ },
+ "mind-investment-support": {
+  "kw": "마음투자 지원사업",
+  "kin": 22262,
+  "blog": 447554
+ },
+ "smoking-cessation-clinic": {
+  "kw": "금연치료 지원 프로그램",
+  "kin": 733,
+  "blog": 31668
+ },
+ "organ-donation-registration": {
+  "kw": "장기기증 등록",
+  "kin": 5575,
+  "blog": 34116
+ },
+ "vaccination-certificate": {
+  "kw": "예방접종 증명서 발급",
+  "kin": 10239,
+  "blog": 70850
+ },
+ "car-inspection": {
+  "kw": "자동차 정기검사 기간",
+  "kin": 18092,
+  "blog": 137002
+ },
+ "car-comprehensive-inspection": {
+  "kw": "자동차 종합검사 대상",
+  "kin": 21466,
+  "blog": 137603
+ },
+ "car-transfer-registration": {
+  "kw": "자동차 이전등록 기한",
+  "kin": 7063,
+  "blog": 71043
+ },
+ "car-deregistration": {
+  "kw": "폐차 말소 신청",
+  "kin": 29736,
+  "blog": 168686
+ },
+ "driver-license-renewal": {
+  "kw": "운전면허 갱신 기간",
+  "kin": 35664,
+  "blog": 109822
+ },
+ "driver-license-test": {
+  "kw": "운전면허 시험 신청",
+  "kin": 125404,
+  "blog": 213622
+ },
+ "compulsory-insurance-fine": {
+  "kw": "자동차보험 미가입 과태료",
+  "kin": 22562,
+  "blog": 44229
+ },
+ "fine-lookup-payment": {
+  "kw": "교통 범칙금 조회",
+  "kin": 8528,
+  "blog": 28658
+ },
+ "ev-subsidy": {
+  "kw": "전기차 보조금 신청",
+  "kin": 10498,
+  "blog": 183534
+ },
+ "old-diesel-scrap": {
+  "kw": "노후경유차 조기폐차 보조금",
+  "kin": 9180,
+  "blog": 65752
+ },
+ "car-recall-lookup": {
+  "kw": "자동차 리콜 조회",
+  "kin": 1341,
+  "blog": 15482
+ },
+ "motorcycle-registration": {
+  "kw": "이륜차 사용신고",
+  "kin": 10811,
+  "blog": 25975
+ },
+ "parking-fine-prepay": {
+  "kw": "주정차 과태료 감경",
+  "kin": 670,
+  "blog": 4927
+ },
+ "driving-record-certificate": {
+  "kw": "운전경력증명서 발급",
+  "kin": 13437,
+  "blog": 66471
+ },
+ "license-objection": {
+  "kw": "면허정지 행정심판",
+  "kin": 120291,
+  "blog": 251172
+ },
+ "disabled-parking-permit": {
+  "kw": "장애인 주차표지",
+  "kin": 6065,
+  "blog": 73632
+ },
+ "passport": {
+  "kw": "여권 발급 방법",
+  "kin": 155966,
+  "blog": 597540
+ },
+ "id-card-reissue": {
+  "kw": "주민등록증 재발급",
+  "kin": 111294,
+  "blog": 127533
+ },
+ "resident-register-certificate": {
+  "kw": "등본 발급",
+  "kin": 509047,
+  "blog": 870534
+ },
+ "seal-certificate": {
+  "kw": "본인서명사실확인서",
+  "kin": 49594,
+  "blog": 207247
+ },
+ "name-change": {
+  "kw": "개명 신청 방법",
+  "kin": 56228,
+  "blog": 70889
+ },
+ "reserve-forces": {
+  "kw": "예비군 훈련 일정",
+  "kin": 62955,
+  "blog": 25344
+ },
+ "civil-defense-training": {
+  "kw": "민방위 교육 대상",
+  "kin": 10293,
+  "blog": 22082
+ },
+ "mobile-id": {
+  "kw": "모바일 신분증 발급",
+  "kin": 45757,
+  "blog": 295117
+ },
+ "address-change-bulk": {
+  "kw": "주소변경 서비스",
+  "kin": 117701,
+  "blog": 1446428
+ },
+ "apostille": {
+  "kw": "아포스티유 발급",
+  "kin": 10256,
+  "blog": 127617
+ },
+ "family-relation-certificate": {
+  "kw": "가족관계증명서 발급",
+  "kin": 312532,
+  "blog": 577245
+ },
+ "lost-id-report": {
+  "kw": "신분증 분실 신고",
+  "kin": 48904,
+  "blog": 94239
+ },
+ "csat-application": {
+  "kw": "수능 원서접수",
+  "kin": 206373,
+  "blog": 286169
+ },
+ "korean-history-test": {
+  "kw": "한국사능력검정시험 접수",
+  "kin": 23238,
+  "blog": 98628
+ },
+ "real-estate-agent-exam": {
+  "kw": "공인중개사 시험 접수",
+  "kin": 23459,
+  "blog": 78166
+ },
+ "engineer-information-processing": {
+  "kw": "정보처리기사 접수",
+  "kin": 100960,
+  "blog": 236111
+ },
+ "topik": {
+  "kw": "토픽 접수",
+  "kin": 1207,
+  "blog": 26949
+ },
+ "ged-exam": {
+  "kw": "검정고시 접수",
+  "kin": 132816,
+  "blog": 125859
+ },
+ "national-technical-qualification": {
+  "kw": "기사 시험 일정",
+  "kin": 173726,
+  "blog": 734810
+ },
+ "social-worker-exam": {
+  "kw": "사회복지사 1급 시험일정",
+  "kin": 132421,
+  "blog": 178317
+ },
+ "nurse-license-exam": {
+  "kw": "간호사 국가고시",
+  "kin": 53543,
+  "blog": 102527
+ },
+ "civil-service-9-exam": {
+  "kw": "국가공무원 9급 시험 일정",
+  "kin": 27241,
+  "blog": 106166
+ },
+ "police-exam": {
+  "kw": "경찰공무원 시험 일정",
+  "kin": 35597,
+  "blog": 101561
+ },
+ "firefighter-exam": {
+  "kw": "소방공무원 시험 일정",
+  "kin": 17546,
+  "blog": 72686
+ },
+ "teacher-appointment-exam": {
+  "kw": "교원임용 일정",
+  "kin": 3650,
+  "blog": 32365
+ },
+ "susi-application": {
+  "kw": "수시 원서접수",
+  "kin": 199903,
+  "blog": 305396
+ },
+ "jeongsi-application": {
+  "kw": "정시 원서접수",
+  "kin": 137829,
+  "blog": 211772
+ },
+ "cpa-exam": {
+  "kw": "공인회계사 시험 일정",
+  "kin": 28549,
+  "blog": 65639
+ },
+ "labor-attorney-exam": {
+  "kw": "공인노무사 시험 일정",
+  "kin": 10982,
+  "blog": 19093
+ },
+ "local-civil-service-exam": {
+  "kw": "지방공무원 시험 일정",
+  "kin": 51589,
+  "blog": 153905
+ },
+ "military-physical-exam": {
+  "kw": "병역판정검사 일정",
+  "kin": 18604,
+  "blog": 14107
+ },
+ "dongsa-festival": {
+  "kw": "동행축제",
+  "kin": 11816,
+  "blog": 254966
+ },
+ "dongsa-sale": {
+  "kw": "동행세일",
+  "kin": 2032,
+  "blog": 59756
+ },
+ "sukbak-daejeon": {
+  "kw": "숙박대전",
+  "kin": 30873,
+  "blog": 380405
+ },
+ "onnuri-voucher": {
+  "kw": "온누리상품권 할인",
+  "kin": 3955,
+  "blog": 298733
+ },
+ "local-currency": {
+  "kw": "지역사랑상품권 할인율",
+  "kin": 1946,
+  "blog": 53271
+ },
+ "market-day": {
+  "kw": "전통시장 가는 날",
+  "kin": 46217,
+  "blog": 1240231
+ },
+ "culture-day": {
+  "kw": "문화가 있는 날 할인",
+  "kin": 40549,
+  "blog": 939659
+ },
+ "mart-closing-day": {
+  "kw": "대형마트 휴무일",
+  "kin": 2173,
+  "blog": 139513
+ },
+ "travel-month": {
+  "kw": "여행가는달 혜택",
+  "kin": 34104,
+  "blog": 739833
+ },
+ "worker-vacation-support": {
+  "kw": "근로자 휴가지원",
+  "kin": 56963,
+  "blog": 212048
+ },
+ "energy-cashback": {
+  "kw": "에너지캐시백",
+  "kin": 2803,
+  "blog": 54892
+ },
+ "climate-card": {
+  "kw": "기후동행카드",
+  "kin": 17148,
+  "blog": 98863
+ },
+ "dept-store-spring-sale": {
+  "kw": "백화점 봄세일",
+  "kin": 1722,
+  "blog": 118745
+ },
+ "dept-store-summer-sale": {
+  "kw": "백화점 여름세일",
+  "kin": 2880,
+  "blog": 116976
+ },
+ "dept-store-fall-sale": {
+  "kw": "백화점 가을세일",
+  "kin": 1351,
+  "blog": 87684
+ },
+ "dept-store-winter-sale": {
+  "kw": "백화점 겨울세일",
+  "kin": 3190,
+  "blog": 130637
+ },
+ "chuseok-gift-preorder": {
+  "kw": "추석 선물세트 사전예약",
+  "kin": 323,
+  "blog": 34966
+ },
+ "ssg-ssgday": {
+  "kw": "쓱데이 기간",
+  "kin": 149,
+  "blog": 19531
+ },
+ "lotteon-big-sale": {
+  "kw": "롯데온 빅세일",
+  "kin": 48,
+  "blog": 9856
+ },
+ "zigzag-black-friday": {
+  "kw": "지그재그 블랙프라이데이",
+  "kin": 60,
+  "blog": 4008
+ },
+ "starbucks-e-frequency": {
+  "kw": "스타벅스 프리퀀시",
+  "kin": 2908,
+  "blog": 193732
+ }
+}

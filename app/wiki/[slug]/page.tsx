@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import MediaFooter from "@/components/MediaFooter";
 import { allEntries, entryBySlug, wikiUrl, WIKI_BASE } from "@/lib/wiki/load";
 import { WIKI_TYPE_LABEL, type Block, type WikiEntry } from "@/lib/wiki/types";
+import { imagesOf, IMAGE_CAPTION } from "@/lib/wiki/images";
 import { fetchMagazineList } from "@/lib/data/magazine";
 import { canonicalArticleUrl } from "@/lib/magazine/owner";
 import "../../magazine/magazine.css";
@@ -20,12 +21,17 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const e = entryBySlug((await params).slug);
   if (!e) return {};
+  const im = imagesOf(e.slug);
   return {
     title: `${e.seoTitle} | 오늘의딜 생활백과`,
     description: e.description,
     alternates: { canonical: wikiUrl(e.slug) },
     keywords: [e.title, ...e.aliases],
-    openGraph: { title: e.seoTitle, description: e.description, url: wikiUrl(e.slug), type: "article", siteName: "오늘의딜 생활백과" },
+    openGraph: {
+      title: e.seoTitle, description: e.description, url: wikiUrl(e.slug), type: "article", siteName: "오늘의딜 생활백과",
+      ...(im ? { images: [{ url: `https://www.todaydeals.co.kr${im.og}`, width: 1200, height: 630, alt: im.alt }] } : {}),
+    },
+    ...(im ? { twitter: { card: "summary_large_image" as const, title: e.seoTitle, description: e.description, images: [`https://www.todaydeals.co.kr${im.og}`] } } : {}),
   };
 }
 
@@ -68,6 +74,7 @@ function ld(e: WikiEntry) {
       dateModified: e.updated,
       keywords: [e.title, ...e.aliases].join(", "),
       mainEntityOfPage: wikiUrl(e.slug),
+      ...(imagesOf(e.slug) ? { image: [`https://www.todaydeals.co.kr${imagesOf(e.slug)!.og}`] } : {}),
       author: { "@type": "Organization", name: "오늘의딜 생활백과 편집팀" },
       publisher: { "@type": "Organization", name: "오늘의딜", url: "https://www.todaydeals.co.kr" },
       citation: e.sources.map((s) => s.url),
@@ -125,6 +132,7 @@ export default async function WikiEntryPage({ params }: { params: Promise<{ slug
   const e = entryBySlug((await params).slug);
   if (!e) notFound();
 
+  const im = imagesOf(e.slug);
   const relEntries = (e.related?.entries ?? []).map(entryBySlug).filter((x): x is WikiEntry => !!x);
   const relArticles = e.related?.articles?.length
     ? await fetchMagazineList({ slugs: e.related.articles, all: true, light: true, limit: 12 })
@@ -147,6 +155,13 @@ export default async function WikiEntryPage({ params }: { params: Promise<{ slug
           <div className="wk-meta">
             오늘의딜 생활백과 편집팀 · 최종 확인 {fmt(e.updated)} · 출처 {e.sources.length}곳
           </div>
+
+          {im && (
+            <figure className="wk-fig wk-fig-hero">
+              <img src={im.hero} alt={im.alt} width={1200} height={675} fetchPriority="high" decoding="async" />
+              <figcaption>{IMAGE_CAPTION}</figcaption>
+            </figure>
+          )}
 
           <section className="wk-summary" aria-label="핵심 요약">
             <div className="wk-summary-h">핵심 요약</div>
@@ -187,6 +202,13 @@ export default async function WikiEntryPage({ params }: { params: Promise<{ slug
                 <section key={i}>
                   <h2>{s.h}</h2>
                   {s.blocks.map((b, j) => <BlockView key={j} b={b} />)}
+                  {/* 본문 이미지는 둘째 섹션 끝에(섹션이 3개 이상일 때) */}
+                  {im?.body && i === 1 && e.sections.length >= 3 && (
+                    <figure className="wk-fig">
+                      <img src={im.body} alt={`${im.alt}(본문)`} width={960} height={540} loading="lazy" decoding="async" />
+                      <figcaption>{IMAGE_CAPTION}</figcaption>
+                    </figure>
+                  )}
                 </section>
               ))}
 

@@ -6,7 +6,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import MediaFooter from "@/components/MediaFooter";
 import { allEntries, entriesByType, ganadaIndex, peopleIndex, WIKI_BASE } from "@/lib/wiki/load";
-import { WIKI_TYPE_LABEL, type WikiType } from "@/lib/wiki/types";
+import { WIKI_GROUPS, WIKI_TYPE_LABEL, type WikiType } from "@/lib/wiki/types";
 import WikiSearch from "./WikiSearch";
 import "../magazine/magazine.css";
 import "./wiki.css";
@@ -57,17 +57,30 @@ export default function WikiHome() {
           {ORDER.map((t) => {
             const list = entriesByType(t);
             if (!list.length) return null;
+            // 묶음(group)이 있는 항목은 묶음별 소제목으로 나눈다. 묶음 없는 항목(영상 속 그 제품 등)은 한 덩어리.
+            const grouped = WIKI_GROUPS.map((g) => ({ g, items: list.filter((e) => e.group === g.label) })).filter((x) => x.items.length);
+            const ungrouped = list.filter((e) => !e.group || !WIKI_GROUPS.some((g) => g.label === e.group));
+            const card = (e: (typeof list)[number]) => (
+              <Link key={e.slug} href={`/wiki/${e.slug}`} className="wk-card">
+                <b>{e.title}</b>
+                <span>{e.description.slice(0, 64)}{e.description.length > 64 ? "…" : ""}</span>
+              </Link>
+            );
             return (
               <section key={t} id={t} className="wk-sec" style={{ scrollMarginTop: 80 }}>
                 <div className="wk-sec-h"><h2>{WIKI_TYPE_LABEL[t]}</h2><span>{BLURB[t]} · {list.length}개</span></div>
-                <div className="wk-cards">
-                  {list.map((e) => (
-                    <Link key={e.slug} href={`/wiki/${e.slug}`} className="wk-card">
-                      <b>{e.title}</b>
-                      <span>{e.description.slice(0, 64)}{e.description.length > 64 ? "…" : ""}</span>
-                    </Link>
-                  ))}
-                </div>
+                {grouped.length > 1 && (
+                  <div className="wk-jump" aria-label={`${WIKI_TYPE_LABEL[t]} 묶음`}>
+                    {grouped.map(({ g, items }) => <a key={g.id} href={`#${t}-${g.id}`}>{g.label}<em>{items.length}</em></a>)}
+                  </div>
+                )}
+                {grouped.map(({ g, items }) => (
+                  <div key={g.id} id={`${t}-${g.id}`} className="wk-grp" style={{ scrollMarginTop: 80 }}>
+                    <h3 className="wk-grp-h">{g.label}<span>{items.length}개</span></h3>
+                    <div className="wk-cards">{items.map(card)}</div>
+                  </div>
+                ))}
+                {ungrouped.length > 0 && <div className="wk-cards">{ungrouped.map(card)}</div>}
               </section>
             );
           })}

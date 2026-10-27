@@ -1,0 +1,252 @@
+# 생활백과 확장 후보 주제 — 2026-10-27 (사장님 "200개 정도 추가 작성")
+# 형식: 웨이브|종류|묶음|slug|표제어|검색 키워드(수요 실측용)|근거 힌트
+#   종류: a = 신청·환급 달력(apply), s = 세일·혜택 달력(sale)
+#   웨이브: 1 = 1차(통과율 시험), 2~5 = 지식iN 수요 순 배정, x = 수요 1천 미만 보류(2026-10-27 실측, demand.json)
+# ★근거 힌트는 "어디를 먼저 볼지"일 뿐이다. 실제 근거는 리서처가 열어서 확인한 페이지만 쓴다.
+# ★제도가 폐지·개편·이름 변경됐을 수 있다(예: 청년 계좌류). 2026-10-27 기준 현행인지 먼저 확인한다.
+# ─────────────── 세금·공제 ───────────────
+1|a|세금·공제|rent-tax-credit|월세 세액공제|월세 세액공제|국세청 연말정산 안내, 조세특례제한법 제95조의2
+1|a|세금·공제|medical-expense-deduction|의료비 세액공제|의료비 세액공제|소득세법 제59조의4, 국세청
+4|a|세금·공제|education-expense-deduction|교육비 세액공제|교육비 세액공제|소득세법 제59조의4, 국세청
+1|a|세금·공제|pension-savings-tax-credit|연금저축·IRP 세액공제|연금저축 세액공제|소득세법 제59조의3, 국세청
+1|a|세금·공제|credit-card-income-deduction|신용카드 소득공제|신용카드 소득공제|조세특례제한법 제126조의2, 국세청
+2|a|세금·공제|cash-receipt-deduction|현금영수증 소득공제|현금영수증 소득공제|국세청
+3|a|세금·공제|housing-subscription-deduction|주택청약종합저축 소득공제|청약저축 소득공제|조세특례제한법 제87조
+3|a|세금·공제|child-tax-credit|자녀 세액공제|자녀 세액공제|소득세법 제59조의2
+4|a|세금·공제|donation-tax-credit|기부금 세액공제|기부금 영수증 세액공제|소득세법 제59조의4
+4|a|세금·공제|insurance-premium-tax-credit|보장성보험료 세액공제|보장성보험 세액공제|소득세법 제59조의4
+3|a|세금·공제|housing-loan-interest-deduction|주택담보대출 이자 소득공제|주택담보대출 이자 소득공제|소득세법 제52조
+3|a|세금·공제|youth-sme-tax-reduction|중소기업 취업자 소득세 감면|중소기업 청년 소득세 감면|조세특례제한법 제30조
+3|a|세금·공제|capital-gains-tax-prelim-filing|양도소득세 예정신고|양도소득세 예정신고|소득세법 제105조
+4|a|세금·공제|acquisition-tax-filing|취득세 신고·납부|취득세 신고기한|지방세법 제20조
+3|a|세금·공제|inheritance-tax-filing|상속세 신고·납부|상속세 신고기한|상속세및증여세법 제67조
+3|a|세금·공제|gift-tax-filing|증여세 신고·납부|증여세 신고기한|상속세및증여세법 제68조
+2|a|세금·공제|local-income-tax-filing|지방소득세 신고|지방소득세 신고|지방세법, 위택스
+5|a|세금·공제|income-tax-interim-prepayment|종합소득세 중간예납|종합소득세 중간예납|소득세법 제65조
+5|a|세금·공제|vat-preliminary-notice|부가가치세 예정고지|부가세 예정고지|부가가치세법 제48조
+4|a|세금·공제|business-status-report|사업장현황신고|사업장현황신고|소득세법 제78조
+4|a|세금·공제|withholding-tax-monthly|원천징수 이행상황 신고|원천징수 이행상황신고|소득세법 제128조
+5|a|세금·공제|e-tax-invoice|전자세금계산서 발급·전송|전자세금계산서 발급기한|부가가치세법 제32조
+4|a|세금·공제|freelancer-withholding-refund|프리랜서 3.3% 환급|프리랜서 3.3 환급|국세청
+4|a|세금·공제|side-job-income-report|부업 소득 신고|부업 소득 신고|국세청
+6|a|세금·공제|tax-payment-extension|납부기한 연장·징수유예|국세 납부기한 연장|국세징수법
+4|a|세금·공제|property-registration-tax|등록면허세|등록면허세 납부|지방세법
+4|a|세금·공제|vehicle-acquisition-tax|자동차 취득세|자동차 취득세 신고|지방세법
+4|a|세금·공제|amended-return-claim|경정청구|경정청구 기한|국세기본법 제45조의2
+4|a|세금·공제|late-filing-after-deadline|기한 후 신고|기한후신고 가산세|국세기본법 제45조의3
+2|a|세금·공제|national-pension-premium-deduction|국민연금보험료 소득공제|국민연금 소득공제|소득세법 제51조의3
+2|a|세금·공제|business-registration|개인사업자 등록 신청|사업자등록 신청 방법|국세청 홈택스
+3|a|세금·공제|business-closure|폐업 신고|폐업 신고 방법|국세청
+3|a|세금·공제|simplified-taxpayer-criteria|간이과세자 기준·전환|간이과세자 기준|부가가치세법 제61조
+3|a|세금·공제|single-home-capital-gains-exemption|1세대 1주택 양도세 비과세|1세대1주택 양도세 비과세 요건|소득세법 시행령 제154조
+2|a|세금·공제|rental-income-report|주택임대소득 신고|주택임대소득 신고|소득세법
+4|a|세금·공제|overseas-stock-capital-gains|해외주식 양도소득세 신고|해외주식 양도세 신고|소득세법 제118조의2
+3|a|세금·공제|financial-income-comprehensive-tax|금융소득 종합과세|금융소득종합과세 기준|소득세법 제14조
+5|a|세금·공제|private-pension-tax|사적연금 연금소득세|연금소득세 분리과세|소득세법
+3|a|세금·공제|gift-tax-exemption-limit|증여재산공제 한도|증여세 공제 한도|상속세및증여세법 제53조
+5|a|세금·공제|inheritance-tax-installment|상속세 연부연납|상속세 연부연납|상속세및증여세법 제71조
+4|a|세금·공제|payment-statement-submission|지급명세서 제출|지급명세서 제출기한|소득세법 제164조
+4|a|세금·공제|tax-delinquency-lookup|체납세금 조회·납부|체납 국세 조회|국세청
+6|a|세금·공제|disabled-vehicle-tax-exemption|장애인 자동차세 면제|장애인 자동차세 면제 신청|지방세특례제한법
+# ─────────────── 숨은 돈·환급 ───────────────
+1|a|숨은 돈·환급|national-tax-refund-lookup|국세환급금 조회·신청|국세환급금 조회|국세청 홈택스
+5|a|숨은 돈·환급|local-tax-refund-lookup|지방세 환급금 조회·신청|지방세 환급금 조회|위택스
+6|a|숨은 돈·환급|integrated-pension-portal|통합연금포털 내 연금 조회|통합연금포털|금융감독원
+5|a|숨은 돈·환급|account-info|어카운트인포 내 계좌 한번에 조회|어카운트인포|금융결제원
+2|a|숨은 돈·환급|credit-report-free|내 신용정보 무료 조회|신용정보 무료조회|금융위원회·신용정보원
+4|a|숨은 돈·환급|unpaid-wage-advance-payment|체당금(대지급금) 신청|체당금 신청|근로복지공단
+# ─────────────── 육아·가족 ───────────────
+1|a|육아·가족|first-meeting-voucher|첫만남이용권|첫만남이용권|복지로
+1|a|육아·가족|parent-benefit|부모급여|부모급여 지급액|복지로
+1|a|육아·가족|child-allowance|아동수당|아동수당 신청|복지로
+1|a|육아·가족|parental-leave-benefit|육아휴직 급여|육아휴직급여 신청|고용24, 고용보험
+3|a|육아·가족|maternity-leave-benefit|출산전후휴가 급여|출산휴가 급여|고용24
+5|a|육아·가족|aidol-childcare-service|아이돌봄서비스|아이돌봄서비스 신청|여성가족부, 아이돌봄서비스
+6|a|육아·가족|daycare-admission|어린이집 입소 신청|어린이집 입소대기 신청|아이사랑
+2|a|육아·가족|kindergarten-admission|유치원 입학 신청|처음학교로 신청|처음학교로
+6|a|육아·가족|infant-health-checkup|영유아 건강검진|영유아 건강검진 시기|국민건강보험공단
+6|a|육아·가족|infant-vaccination|영유아 국가예방접종|영유아 예방접종 일정|질병관리청
+5|a|육아·가족|pregnancy-medical-voucher|임신·출산 진료비 지원|국민행복카드 임신 바우처|국민건강보험공단
+5|a|육아·가족|postpartum-care-support|산후조리경비 지원|산후조리비 지원|복지로, 지자체
+2|a|육아·가족|single-parent-support|한부모가족 지원|한부모가족 지원 신청|여성가족부, 복지로
+4|a|육아·가족|child-support-enforcement|양육비 이행 지원|양육비이행관리원 신청|양육비이행관리원
+5|a|육아·가족|family-care-leave|가족돌봄휴가·휴직|가족돌봄휴가 신청|고용노동부
+x|a|육아·가족|infertility-treatment-support|난임 시술비 지원|난임시술비 지원 신청|보건복지부
+x|a|육아·가족|elementary-enrollment|초등학교 취학 통지·입학|초등학교 입학 준비 취학통지서|교육부
+x|a|육아·가족|neulbom-school|늘봄학교|늘봄학교 신청|교육부
+2|a|육아·가족|education-benefit|교육급여|교육급여 신청|복지로
+1|a|육아·가족|national-scholarship|국가장학금 신청|국가장학금 신청기간|한국장학재단
+3|a|육아·가족|student-loan-repayment|학자금대출 상환|취업후 상환 학자금대출|한국장학재단
+5|a|육아·가족|reduced-hours-parenting-benefit|육아기 근로시간 단축 급여|육아기 근로시간 단축 급여|고용24
+4|a|육아·가족|multi-child-benefits|다자녀 가구 혜택|다자녀 혜택 기준|지자체, 보건복지부
+5|a|육아·가족|birth-registration|출생신고|출생신고 기한|가족관계등록법, 대법원
+2|a|육아·가족|marriage-registration|혼인신고|혼인신고 방법|가족관계등록법, 대법원
+5|a|육아·가족|paternity-leave|배우자 출산휴가|배우자 출산휴가 10일|고용노동부
+3|a|육아·가족|school-transfer|전학 절차|전학 신청|교육부
+5|a|육아·가족|together-care-center|다함께돌봄센터|다함께돌봄센터 이용|보건복지부
+x|a|육아·가족|developmental-rehab-service|발달재활서비스|발달재활서비스 신청|복지로
+3|a|육아·가족|childcare-fee-voucher|보육료·유아학비 지원|보육료 지원|복지로, 아이사랑
+x|a|육아·가족|pregnant-vaccination|임산부 예방접종|임산부 독감 무료접종|질병관리청
+x|a|육아·가족|newborn-screening-support|신생아 선천성대사이상검사 지원|선천성대사이상검사 지원|보건복지부
+# ─────────────── 청년 ───────────────
+1|a|청년|youth-leap-account|청년도약계좌|청년도약계좌 가입조건|금융위원회 (개편·종료 여부 먼저 확인)
+3|a|청년|youth-tomorrow-savings|청년내일저축계좌|청년내일저축계좌 신청|복지로
+1|a|청년|youth-monthly-rent-support|청년 월세 지원|청년월세지원 신청|국토교통부, 복지로
+2|a|청년|youth-jeonse-loan|청년 전월세 보증금 대출|청년 전세자금대출|주택도시기금
+1|a|청년|national-employment-support|국민취업지원제도|국민취업지원제도 신청|고용24
+1|a|청년|k-pass|K-패스|K패스 신청|국토교통부
+x|a|청년|youth-mental-health|청년 마음건강 지원|청년 마음건강 바우처|보건복지부
+4|a|청년|youth-housing-subscription|청년 주택드림 청약통장|주택드림 청약통장|주택도시기금
+5|a|청년|youth-startup-support|예비창업패키지|예비창업패키지 신청|K-Startup
+2|a|청년|youth-work-experience|청년 일경험 지원|청년 일경험|고용24
+# ─────────────── 주거·부동산 ───────────────
+1|a|주거·부동산|move-in-report|전입신고|전입신고 기한|정부24, 주민등록법
+1|a|주거·부동산|fixed-date-lease|확정일자|확정일자 받는 법|인터넷등기소, 주택임대차보호법
+2|a|주거·부동산|lease-registration-order|임차권등기명령|임차권등기명령 신청|대법원
+3|a|주거·부동산|rent-contract-report|전월세 신고제|전월세 신고|국토교통부
+1|a|주거·부동산|housing-subscription|주택 청약|청약 신청 방법|국토교통부, 한국부동산원
+4|a|주거·부동산|newlywed-special-supply|신혼부부 특별공급|신혼부부 특별공급 조건|국토교통부
+2|a|주거·부동산|didimdol-loan|디딤돌대출|디딤돌대출 조건|주택도시기금
+2|a|주거·부동산|beotimmok-loan|버팀목 전세자금대출|버팀목전세자금대출|주택도시기금
+2|a|주거·부동산|housing-benefit|주거급여|주거급여 신청|복지로, 마이홈
+1|a|주거·부동산|lease-renewal-right|계약갱신청구권|계약갱신청구권 기간|주택임대차보호법
+4|a|주거·부동산|housing-pension|주택연금|주택연금 가입조건|한국주택금융공사
+3|a|주거·부동산|public-rental-housing|공공임대주택 신청|공공임대 신청|마이홈, LH
+2|a|주거·부동산|jeonse-guarantee|전세보증금반환보증|전세보증보험 가입|주택도시보증공사
+4|a|주거·부동산|first-home-acquisition-tax-reduction|생애최초 주택 취득세 감면|생애최초 취득세 감면|지방세특례제한법
+6|a|주거·부동산|real-estate-transaction-report|부동산 거래 신고|부동산 실거래 신고 기한|국토교통부
+2|a|주거·부동산|real-estate-register|등기부등본 발급|등기부등본 발급|인터넷등기소
+# ─────────────── 일자리·실업 ───────────────
+1|a|일자리·실업|unemployment-benefit|실업급여(구직급여)|실업급여 신청|고용24, 고용보험법
+3|a|일자리·실업|early-reemployment-allowance|조기재취업수당|조기재취업수당|고용24
+1|a|일자리·실업|tomorrow-learning-card|국민내일배움카드|내일배움카드 발급|고용24, HRD-Net
+5|a|일자리·실업|four-insurance-enrollment|4대보험 취득신고|4대보험 취득신고 기한|4대사회보험 정보연계센터
+3|a|일자리·실업|severance-pay-deadline|퇴직금 지급 기한|퇴직금 지급기한|근로자퇴직급여 보장법
+5|a|일자리·실업|minimum-wage|최저임금|최저임금 2026|최저임금위원회
+4|a|일자리·실업|irp-account|퇴직연금 IRP 개설|IRP 계좌 개설|고용노동부
+2|a|일자리·실업|wage-arrears-complaint|임금체불 진정|임금체불 신고|고용노동부
+2|a|일자리·실업|industrial-accident-benefit|산재 요양급여 신청|산재 신청 방법|근로복지공단
+5|a|일자리·실업|artist-employment-insurance|예술인·특수고용 고용보험|예술인 고용보험|근로복지공단
+4|a|일자리·실업|self-employed-employment-insurance|자영업자 고용보험|자영업자 고용보험 가입|근로복지공단
+2|a|일자리·실업|annual-leave-pay|연차휴가·연차수당|연차수당 계산|고용노동부
+2|a|일자리·실업|unemployment-recognition|실업인정(구직활동)|실업인정 방법|고용24
+# ─────────────── 복지·연금 ───────────────
+1|a|복지·연금|national-pension-claim|노령연금 수급 신청|국민연금 수령 신청|국민연금공단
+1|a|복지·연금|national-pension-refund|국민연금 반환일시금|국민연금 반환일시금|국민연금공단
+5|a|복지·연금|national-pension-late-payment|국민연금 추후납부|국민연금 추납|국민연금공단
+5|a|복지·연금|national-pension-early|조기노령연금|조기노령연금|국민연금공단
+3|a|복지·연금|pension-split|분할연금|분할연금 신청|국민연금공단
+4|a|복지·연금|survivor-pension|유족연금|유족연금 신청|국민연금공단
+3|a|복지·연금|pension-record-lookup|국민연금 가입내역·예상연금액 조회|국민연금 예상수령액|국민연금공단
+1|a|복지·연금|basic-pension|기초연금|기초연금 신청|복지로, 국민연금공단
+1|a|복지·연금|long-term-care-grade|장기요양 인정 신청|장기요양등급 신청|국민건강보험공단
+5|a|복지·연금|senior-jobs|노인일자리|노인일자리 신청|한국노인인력개발원
+5|a|복지·연금|dementia-screening|치매 검진|치매 조기검진|중앙치매센터
+6|a|복지·연금|senior-vaccination|어르신 예방접종|65세 폐렴구균 예방접종|질병관리청
+1|a|복지·연금|death-report|사망신고|사망신고 기한|가족관계등록법, 정부24
+1|a|복지·연금|safe-inheritance-onestop|안심상속 원스톱 서비스|상속인 금융거래 조회|정부24
+2|a|복지·연금|disability-registration|장애인 등록|장애인 등록 신청|복지로
+3|a|복지·연금|disability-pension|장애인연금|장애인연금 신청|복지로
+4|a|복지·연금|disability-activity-support|장애인 활동지원|장애인 활동지원 신청|복지로
+2|a|복지·연금|livelihood-benefit|생계급여|기초생활수급자 신청|복지로
+1|a|복지·연금|emergency-welfare|긴급복지지원|긴급복지지원 신청|보건복지부
+2|a|복지·연금|medical-benefit|의료급여|의료급여 수급자|복지로
+1|a|복지·연금|copay-cap-refund|본인부담상한제 환급|본인부담상한제|국민건강보험공단
+5|a|복지·연금|catastrophic-medical-aid|재난적의료비 지원|재난적의료비 지원 신청|국민건강보험공단
+4|a|복지·연금|rare-disease-copay|산정특례|산정특례 신청|국민건강보험공단
+3|a|복지·연금|senior-dental-support|노인 틀니·임플란트 지원|임플란트 건강보험|국민건강보험공단
+6|a|복지·연금|elderly-care-service|노인맞춤돌봄서비스|노인맞춤돌봄서비스 신청|보건복지부
+6|a|복지·연금|funeral-benefit|장제비 지원|장제비 신청|국민연금공단, 복지로
+3|a|복지·연금|veterans-registration|국가유공자 등록 신청|국가유공자 등록|국가보훈부
+5|a|복지·연금|electricity-welfare-discount|전기요금 복지할인|전기요금 복지할인 신청|복지로
+6|a|복지·연금|telecom-fee-reduction|통신요금 감면|통신요금 감면 저소득|과학기술정보통신부
+5|a|복지·연금|welfare-service-lookup|복지로 맞춤 복지서비스 조회|복지서비스 모의계산|복지로
+2|a|복지·연금|credit-recovery-workout|개인워크아웃(채무조정)|신용회복위원회 개인워크아웃|신용회복위원회
+2|a|복지·연금|personal-rehabilitation|개인회생 신청|개인회생 신청 방법|대법원
+2|a|복지·연금|haessal-loan|햇살론|햇살론 신청|서민금융진흥원
+3|a|복지·연금|small-living-loan|소액생계비대출|소액생계비대출 신청|서민금융진흥원
+# ─────────────── 의료·건강 ───────────────
+1|a|의료·건강|cancer-screening|국가암검진|국가암검진 대상|국민건강보험공단
+1|a|의료·건강|flu-vaccination|독감 예방접종|독감 무료접종 대상|질병관리청
+4|a|의료·건강|scaling-insurance|스케일링 건강보험|스케일링 보험 적용|국민건강보험공단
+3|a|의료·건강|health-insurance-dependents|건강보험 피부양자 자격|피부양자 자격 요건|국민건강보험공단
+3|a|의료·건강|premium-installment|건강보험료 분할납부|건강보험료 분할납부 신청|국민건강보험공단
+5|a|의료·건강|premium-reduction|건강보험료 경감|건강보험료 경감 대상|국민건강보험공단
+2|a|의료·건강|insurance-certificate|건강보험 자격확인서 발급|건강보험 자격확인서 발급|국민건강보험공단
+4|a|의료·건강|mind-investment-support|국민 마음투자 지원|마음투자 지원사업|보건복지부
+x|a|의료·건강|smoking-cessation-clinic|금연 클리닉·금연치료 지원|금연치료 지원 프로그램|국민건강보험공단
+5|a|의료·건강|organ-donation-registration|장기기증 희망 등록|장기기증 등록|한국장기조직기증원
+5|a|의료·건강|vaccination-certificate|예방접종 증명서 발급|예방접종 증명서 발급|질병관리청
+# ─────────────── 자동차·교통 ───────────────
+1|a|자동차·교통|car-inspection|자동차 정기검사|자동차 정기검사 기간|한국교통안전공단
+4|a|자동차·교통|car-comprehensive-inspection|자동차 종합검사|자동차 종합검사 대상|한국교통안전공단
+5|a|자동차·교통|car-transfer-registration|자동차 이전등록|자동차 이전등록 기한|자동차관리법
+4|a|자동차·교통|car-deregistration|자동차 말소등록(폐차)|폐차 말소 신청|자동차관리법
+1|a|자동차·교통|driver-license-renewal|운전면허 갱신|운전면허 갱신 기간|도로교통공단
+2|a|자동차·교통|driver-license-test|운전면허 시험 접수|운전면허 시험 신청|도로교통공단
+4|a|자동차·교통|compulsory-insurance-fine|자동차 의무보험 미가입 과태료|자동차보험 미가입 과태료|자동차손해배상 보장법
+1|a|자동차·교통|fine-lookup-payment|과태료·범칙금 조회·납부|교통 범칙금 조회|경찰청 이파인
+5|a|자동차·교통|ev-subsidy|전기차 보조금|전기차 보조금 신청|기후에너지환경부
+5|a|자동차·교통|old-diesel-scrap|노후경유차 조기폐차 지원|노후경유차 조기폐차 보조금|기후에너지환경부
+6|a|자동차·교통|car-recall-lookup|자동차 리콜 조회|자동차 리콜 조회|자동차리콜센터
+5|a|자동차·교통|motorcycle-registration|이륜차 사용신고|이륜차 사용신고|국토교통부
+x|a|자동차·교통|parking-fine-prepay|주정차 과태료 사전납부 감경|주정차 과태료 감경|행정안전부
+4|a|자동차·교통|driving-record-certificate|운전경력증명서 발급|운전경력증명서 발급|도로교통공단
+2|a|자동차·교통|license-objection|운전면허 정지·취소 이의신청|면허정지 행정심판|중앙행정심판위원회
+5|a|자동차·교통|disabled-parking-permit|장애인 주차표지 발급|장애인 주차표지|복지로, 지자체
+# ─────────────── 신분·행정 ───────────────
+1|a|신분·행정|passport|여권 발급·갱신|여권 발급 방법|외교부
+2|a|신분·행정|id-card-reissue|주민등록증 재발급|주민등록증 재발급|정부24
+1|a|신분·행정|resident-register-certificate|주민등록등본·초본 발급|등본 발급|정부24
+3|a|신분·행정|seal-certificate|인감증명서·본인서명사실확인서|본인서명사실확인서|정부24
+3|a|신분·행정|name-change|개명 신청|개명 신청 방법|대법원
+3|a|신분·행정|reserve-forces|예비군 훈련|예비군 훈련 일정|병무청
+5|a|신분·행정|civil-defense-training|민방위 교육|민방위 교육 대상|행정안전부
+1|a|신분·행정|mobile-id|모바일 신분증|모바일 신분증 발급|행정안전부
+2|a|신분·행정|address-change-bulk|이사 시 주소 일괄변경|주소변경 서비스|정부24
+5|a|신분·행정|apostille|아포스티유 발급|아포스티유 발급|외교부
+2|a|신분·행정|family-relation-certificate|가족관계증명서 발급|가족관계증명서 발급|대법원
+3|a|신분·행정|lost-id-report|신분증 분실 신고|신분증 분실 신고|정부24
+# ─────────────── 시험·자격 ───────────────
+1|a|시험·자격|csat-application|수능 원서 접수|수능 원서접수|한국교육과정평가원
+4|a|시험·자격|korean-history-test|한국사능력검정시험|한국사능력검정시험 접수|국사편찬위원회
+1|a|시험·자격|real-estate-agent-exam|공인중개사 시험|공인중개사 시험 접수|한국산업인력공단 Q-Net
+2|a|시험·자격|engineer-information-processing|정보처리기사 시험 일정|정보처리기사 접수|Q-Net
+6|a|시험·자격|topik|TOPIK 한국어능력시험|토픽 접수|국립국제교육원
+2|a|시험·자격|ged-exam|검정고시|검정고시 접수|시도교육청
+2|a|시험·자격|national-technical-qualification|국가기술자격 시험 접수|기사 시험 일정|Q-Net
+2|a|시험·자격|social-worker-exam|사회복지사 1급 시험|사회복지사 1급 시험일정|한국보건의료인국가시험원
+3|a|시험·자격|nurse-license-exam|간호사 국가시험|간호사 국가고시|한국보건의료인국가시험원
+1|a|시험·자격|civil-service-9-exam|국가공무원 9급 공채|국가공무원 9급 시험 일정|사이버국가고시센터
+3|a|시험·자격|police-exam|경찰공무원 채용 시험|경찰공무원 시험 일정|경찰청
+4|a|시험·자격|firefighter-exam|소방공무원 채용 시험|소방공무원 시험 일정|소방청
+5|a|시험·자격|teacher-appointment-exam|교원 임용시험|교원임용 일정|교육부, 시도교육청
+2|a|시험·자격|susi-application|대학 수시 원서 접수|수시 원서접수|한국대학교육협의회
+2|a|시험·자격|jeongsi-application|대학 정시 원서 접수|정시 원서접수|한국대학교육협의회
+4|a|시험·자격|cpa-exam|공인회계사 시험|공인회계사 시험 일정|금융감독원
+4|a|시험·자격|labor-attorney-exam|공인노무사 시험|공인노무사 시험 일정|Q-Net
+3|a|시험·자격|local-civil-service-exam|지방공무원 시험|지방공무원 시험 일정|행정안전부, 시도
+4|a|시험·자격|military-physical-exam|병역판정검사|병역판정검사 일정|병무청
+# ─────────────── 정부·지자체 혜택(세일·혜택 달력) ───────────────
+4|s|정부·지자체 혜택|dongsa-festival|대한민국 동행축제|동행축제|중소벤처기업부
+6|s|정부·지자체 혜택|dongsa-sale|대한민국 동행세일|동행세일|중소벤처기업부
+3|s|정부·지자체 혜택|sukbak-daejeon|대한민국 숙박대전|숙박대전|문화체육관광부, 한국관광공사
+1|s|정부·지자체 혜택|onnuri-voucher|온누리상품권 할인·환급 행사|온누리상품권 할인|소상공인시장진흥공단
+6|s|정부·지자체 혜택|local-currency|지역사랑상품권 할인 구매|지역사랑상품권 할인율|행정안전부
+3|s|정부·지자체 혜택|market-day|전통시장 가는 날|전통시장 가는 날|중소벤처기업부
+1|s|정부·지자체 혜택|culture-day|문화가 있는 날|문화가 있는 날 할인|문화체육관광부
+6|s|정부·지자체 혜택|mart-closing-day|대형마트 의무휴업일|대형마트 휴무일|지자체 조례, 산업통상부
+3|s|정부·지자체 혜택|travel-month|여행가는 달|여행가는달 혜택|문화체육관광부
+3|s|정부·지자체 혜택|worker-vacation-support|근로자 휴가지원사업|근로자 휴가지원|문화체육관광부, 한국관광공사
+6|s|정부·지자체 혜택|energy-cashback|에너지캐시백|에너지캐시백|한국에너지공단
+4|s|정부·지자체 혜택|climate-card|기후동행카드|기후동행카드|서울시
+# ─────────────── 백화점·마트 / 온라인몰 ───────────────
+6|s|백화점·마트|dept-store-spring-sale|백화점 봄 정기세일|백화점 봄세일|롯데·신세계·현대 보도자료
+5|s|백화점·마트|dept-store-summer-sale|백화점 여름 정기세일|백화점 여름세일|롯데·신세계·현대 보도자료
+6|s|백화점·마트|dept-store-fall-sale|백화점 가을 정기세일|백화점 가을세일|롯데·신세계·현대 보도자료
+5|s|백화점·마트|dept-store-winter-sale|백화점 겨울 정기세일|백화점 겨울세일|롯데·신세계·현대 보도자료
+x|s|백화점·마트|chuseok-gift-preorder|추석 선물세트 사전예약|추석 선물세트 사전예약|백화점·마트 보도자료
+x|s|백화점·마트|ssg-ssgday|쓱데이|쓱데이 기간|신세계그룹 뉴스룸
+x|s|온라인몰·직구|lotteon-big-sale|롯데온 빅세일|롯데온 빅세일|롯데쇼핑 뉴스룸
+x|s|온라인몰·직구|zigzag-black-friday|지그재그 블랙프라이데이|지그재그 블랙프라이데이|카카오스타일 보도자료
+5|s|온라인몰·직구|starbucks-e-frequency|스타벅스 e-프리퀀시|스타벅스 프리퀀시|스타벅스 보도자료

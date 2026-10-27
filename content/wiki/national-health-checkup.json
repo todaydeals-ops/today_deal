@@ -1,6 +1,7 @@
 {
   "slug": "national-health-checkup",
   "type": "apply",
+  "group": "의료·건강",
   "title": "국가건강검진 대상 조회",
   "aliases": [
     "국가건강검진 대상 조회",

@@ -15,6 +15,8 @@ const RES = path.join(ROOT, "content", "research");
 
 const TYPES = ["video-pick", "sale", "ingredient", "product", "gift", "error-code", "apply"];
 const KINDS = ["공식", "후기", "영상", "언론"];
+// 허브 묶음 라벨 — lib/wiki/types.ts 의 WIKI_GROUPS 에서 읽는다(두 곳에 적지 않는다)
+const GROUP_LABELS = [...fs.readFileSync(path.join(ROOT, "lib", "wiki", "types.ts"), "utf8").matchAll(/\{ label: "([^"]+)", id: "[a-z]+" \}/g)].map((m) => m[1]);
 // 본문 최소 분량(공백 제외). 찾아보는 항목이라 매거진(2,300자)보다 짧아도 되지만 얇으면 안 된다.
 const MIN_CHARS = { "video-pick": 1300, sale: 900, ingredient: 1800, product: 1800, gift: 1500, "error-code": 900, apply: 1300 };
 
@@ -155,6 +157,9 @@ for (const file of files) {
     }
   }
 
+  // 묶음(group) — 신청·환급·세일 항목은 허브에서 묶음별로 보여 주므로 필수. 값은 lib/wiki/types.ts 의 WIKI_GROUPS label 이어야 한다.
+  if (e.type === "apply" || e.type === "sale") need(GROUP_LABELS.includes(e.group), `group 값 오류(${e.group ?? "없음"}) — WIKI_GROUPS 중 하나`);
+
   // ★신청·환급 달력(2026-10-26 신설) — 날짜·대상을 틀리면 독자가 가산세·환급 누락으로 돈을 잃는다.
   //   그래서 ① 기관 공식 출처 ② 금전 손실 경고 상자 ③ 공고 전 회차의 날짜 단정 금지를 기계로 막는다.
   if (e.type === "apply") {
@@ -167,7 +172,7 @@ for (const file of files) {
       // 공고 전인 회차(2027)의 날짜를 제목·설명·요약에서 단정하지 않는다. 법정 기한은 "매년 5월 1일~31일"처럼 연도 없이 쓴다.
       need(!/2027[.\-년\s]*\d{1,2}[.\-월\s]*\d{1,2}/.test(e.seoTitle + e.description + e.summary.join(" ")), "공고 전인데 2027 날짜를 단정");
     }
-    need(e.sources.some((s) => s.kind === "공식" && /\.(go|or)\.kr$|\.gov\.kr$|mnuri\.kr$/.test((() => { try { return new URL(s.url).hostname; } catch { return ""; } })())), "기관 공식 출처(.go.kr·.or.kr) 1곳 이상 필요");
+    need(e.sources.some((s) => s.kind === "공식" && /\.(go|or|re)\.kr$|\.gov\.kr$|mnuri\.kr$|(?:^|\.)(?:gosi|adiga|ilovegohyang|k-startup)\.kr$/.test((() => { try { return new URL(s.url).hostname; } catch { return ""; } })())), "기관 공식 출처(.go.kr·.or.kr) 1곳 이상 필요");
     need(e.sections.some((s) => s.blocks.some((b) => b.note)), "금전 손실 경고(note 블록) 1개 이상 필요 — 기한·대상·가산세 등");
   }
 

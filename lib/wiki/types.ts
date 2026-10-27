@@ -17,6 +17,25 @@ export type WikiType =
   | "apply"; // 신청·환급 달력 — 세금 신고·환급·지원금, 언제 어디서 신청하는지(2026-10-26 신설)
 // ★ingredient·error-code 는 2026-10-26 폐지(분야와 중첩) — 타입은 옛 항목 호환용으로만 남긴다. 게이트가 새 항목을 막는다.
 
+// 묶음(group) — 허브에서 종류 섹션 안을 묶음별로 나눠 보여 준다(항목이 수백 개로 늘어도 찾기 쉽게). 신청·환급·세일 항목에 필수.
+// 값은 항목 JSON 의 `group` 에 이 label 그대로 쓴다. 순서가 허브 표시 순서다. 새 묶음은 여기 한 줄 + 게이트(wiki-verify)가 알아본다.
+export const WIKI_GROUPS: { label: string; id: string }[] = [
+  { label: "세금·공제", id: "tax" },
+  { label: "숨은 돈·환급", id: "hidden" },
+  { label: "육아·가족", id: "family" },
+  { label: "청년", id: "youth" },
+  { label: "주거·부동산", id: "housing" },
+  { label: "일자리·실업", id: "jobs" },
+  { label: "복지·연금", id: "welfare" },
+  { label: "의료·건강", id: "health" },
+  { label: "자동차·교통", id: "car" },
+  { label: "신분·행정", id: "idcard" },
+  { label: "시험·자격", id: "exam" },
+  { label: "정부·지자체 혜택", id: "gov" },
+  { label: "백화점·마트", id: "mart" },
+  { label: "온라인몰·직구", id: "online" },
+];
+
 export const WIKI_TYPE_LABEL: Record<WikiType, string> = {
   "video-pick": "영상 속 그 제품",
   sale: "세일 달력",
@@ -43,6 +62,8 @@ export interface WikiSource {
 export interface WikiEntry {
   slug: string;
   type: WikiType;
+  /** 허브 묶음(WIKI_GROUPS 의 label). 신청·환급·세일 항목은 필수, 영상 속 그 제품은 없다. */
+  group?: string;
   /** 표제어 — 사전의 "항목 이름". 색인·검색·빵부스러기에 쓴다. 예: "고운발 크림" */
   title: string;
   /** 다른 이름·검색어. 검색창이 이걸로도 찾는다. 예: ["백지영 발크림", "웰빙헬스 고운발"] */

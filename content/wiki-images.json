@@ -1,0 +1,152 @@
+{
+  "aliexpress-1111": {
+    "hero": "/wiki-img/aliexpress-1111-hero.jpg",
+    "og": "/wiki-img/aliexpress-1111-og.jpg",
+    "alt": "알리익스프레스 11.11(광군제) 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/aliexpress-1111-body.jpg"
+  },
+  "amazon-prime-day": {
+    "hero": "/wiki-img/amazon-prime-day-hero.jpg",
+    "og": "/wiki-img/amazon-prime-day-og.jpg",
+    "alt": "아마존 프라임데이 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/amazon-prime-day-body.jpg"
+  },
+  "bigsmileday": {
+    "hero": "/wiki-img/bigsmileday-hero.jpg",
+    "og": "/wiki-img/bigsmileday-og.jpg",
+    "alt": "빅스마일데이 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/bigsmileday-body.jpg"
+  },
+  "black-friday-direct-purchase": {
+    "hero": "/wiki-img/black-friday-direct-purchase-hero.jpg",
+    "og": "/wiki-img/black-friday-direct-purchase-og.jpg",
+    "alt": "블랙프라이데이 직구 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/black-friday-direct-purchase-body.jpg"
+  },
+  "car-tax-annual-payment": {
+    "hero": "/wiki-img/car-tax-annual-payment-hero.jpg",
+    "og": "/wiki-img/car-tax-annual-payment-og.jpg",
+    "alt": "자동차세 연납·정기분 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/car-tax-annual-payment-body.jpg"
+  },
+  "comprehensive-real-estate-tax": {
+    "hero": "/wiki-img/comprehensive-real-estate-tax-hero.jpg",
+    "og": "/wiki-img/comprehensive-real-estate-tax-og.jpg",
+    "alt": "종합부동산세 납부 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/comprehensive-real-estate-tax-body.jpg"
+  },
+  "coupang-cublf": {
+    "hero": "/wiki-img/coupang-cublf-hero.jpg",
+    "og": "/wiki-img/coupang-cublf-og.jpg",
+    "alt": "쿠블프(쿠팡 블랙프라이데이) 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/coupang-cublf-body.jpg"
+  },
+  "culture-nuri-card": {
+    "hero": "/wiki-img/culture-nuri-card-hero.jpg",
+    "og": "/wiki-img/culture-nuri-card-og.jpg",
+    "alt": "문화누리카드 신청 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/culture-nuri-card-body.jpg"
+  },
+  "dormant-deposit": {
+    "hero": "/wiki-img/dormant-deposit-hero.jpg",
+    "og": "/wiki-img/dormant-deposit-og.jpg",
+    "alt": "휴면예금 찾기(휴면예금 찾아줌) 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/dormant-deposit-body.jpg"
+  },
+  "earned-income-tax-credit": {
+    "hero": "/wiki-img/earned-income-tax-credit-hero.jpg",
+    "og": "/wiki-img/earned-income-tax-credit-og.jpg",
+    "alt": "근로·자녀장려금 신청 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/earned-income-tax-credit-body.jpg"
+  },
+  "energy-voucher": {
+    "hero": "/wiki-img/energy-voucher-hero.jpg",
+    "og": "/wiki-img/energy-voucher-og.jpg",
+    "alt": "에너지바우처 신청 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/energy-voucher-body.jpg"
+  },
+  "global-income-tax-filing": {
+    "hero": "/wiki-img/global-income-tax-filing-hero.jpg",
+    "og": "/wiki-img/global-income-tax-filing-og.jpg",
+    "alt": "종합소득세 신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/global-income-tax-filing-body.jpg"
+  },
+  "grand-11st-day": {
+    "hero": "/wiki-img/grand-11st-day-hero.jpg",
+    "og": "/wiki-img/grand-11st-day-og.jpg",
+    "alt": "그랜드 십일절 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/grand-11st-day-body.jpg"
+  },
+  "health-insurance-refund": {
+    "hero": "/wiki-img/health-insurance-refund-hero.jpg",
+    "og": "/wiki-img/health-insurance-refund-og.jpg",
+    "alt": "건강보험 환급금 조회·신청 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/health-insurance-refund-body.jpg"
+  },
+  "hidden-insurance-money": {
+    "hero": "/wiki-img/hidden-insurance-money-hero.jpg",
+    "og": "/wiki-img/hidden-insurance-money-og.jpg",
+    "alt": "숨은 보험금 찾기(내보험찾아줌) 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/hidden-insurance-money-body.jpg"
+  },
+  "hometown-love-donation": {
+    "hero": "/wiki-img/hometown-love-donation-hero.jpg",
+    "og": "/wiki-img/hometown-love-donation-og.jpg",
+    "alt": "고향사랑기부제 세액공제 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/hometown-love-donation-body.jpg"
+  },
+  "lunar-new-year-gift-preorder": {
+    "hero": "/wiki-img/lunar-new-year-gift-preorder-hero.jpg",
+    "og": "/wiki-img/lunar-new-year-gift-preorder-og.jpg",
+    "alt": "설 선물세트 사전예약 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/lunar-new-year-gift-preorder-body.jpg"
+  },
+  "musinsa-black-friday": {
+    "hero": "/wiki-img/musinsa-black-friday-hero.jpg",
+    "og": "/wiki-img/musinsa-black-friday-og.jpg",
+    "alt": "무신사 블랙프라이데이(무진장 블랙프라이데이) 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/musinsa-black-friday-body.jpg"
+  },
+  "national-health-checkup": {
+    "hero": "/wiki-img/national-health-checkup-hero.jpg",
+    "og": "/wiki-img/national-health-checkup-og.jpg",
+    "alt": "국가건강검진 대상 조회 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/national-health-checkup-body.jpg"
+  },
+  "november-sale-calendar-2026": {
+    "hero": "/wiki-img/november-sale-calendar-2026-hero.jpg",
+    "og": "/wiki-img/november-sale-calendar-2026-og.jpg",
+    "alt": "11월 세일 달력 2026 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/november-sale-calendar-2026-body.jpg"
+  },
+  "oliveyoung-sale": {
+    "hero": "/wiki-img/oliveyoung-sale-hero.jpg",
+    "og": "/wiki-img/oliveyoung-sale-og.jpg",
+    "alt": "올영세일 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/oliveyoung-sale-body.jpg"
+  },
+  "property-tax-payment": {
+    "hero": "/wiki-img/property-tax-payment-hero.jpg",
+    "og": "/wiki-img/property-tax-payment-og.jpg",
+    "alt": "재산세 납부 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/property-tax-payment-body.jpg"
+  },
+  "resident-tax-payment": {
+    "hero": "/wiki-img/resident-tax-payment-hero.jpg",
+    "og": "/wiki-img/resident-tax-payment-og.jpg",
+    "alt": "주민세 납부 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/resident-tax-payment-body.jpg"
+  },
+  "vat-filing-individual": {
+    "hero": "/wiki-img/vat-filing-individual-hero.jpg",
+    "og": "/wiki-img/vat-filing-individual-og.jpg",
+    "alt": "부가가치세 신고(개인사업자) 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/vat-filing-individual-body.jpg"
+  },
+  "year-end-tax-settlement": {
+    "hero": "/wiki-img/year-end-tax-settlement-hero.jpg",
+    "og": "/wiki-img/year-end-tax-settlement-og.jpg",
+    "alt": "연말정산 일정 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/year-end-tax-settlement-body.jpg"
+  }
+}
