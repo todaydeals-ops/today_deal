@@ -152,976 +152,1171 @@
   "account-info": {
     "hero": "/wiki-img/account-info-hero.jpg",
     "og": "/wiki-img/account-info-og.jpg",
-    "alt": "어카운트인포 내 계좌 한번에 조회 관련 소재를 담은 정물 이미지"
+    "alt": "어카운트인포 내 계좌 한번에 조회 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/account-info-body.jpg"
   },
   "acquisition-tax-filing": {
     "hero": "/wiki-img/acquisition-tax-filing-hero.jpg",
     "og": "/wiki-img/acquisition-tax-filing-og.jpg",
-    "alt": "취득세 신고·납부 관련 소재를 담은 정물 이미지"
+    "alt": "취득세 신고·납부 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/acquisition-tax-filing-body.jpg"
   },
   "address-change-bulk": {
     "hero": "/wiki-img/address-change-bulk-hero.jpg",
     "og": "/wiki-img/address-change-bulk-og.jpg",
-    "alt": "이사 시 주소 일괄변경 관련 소재를 담은 정물 이미지"
+    "alt": "이사 시 주소 일괄변경 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/address-change-bulk-body.jpg"
   },
   "aidol-childcare-service": {
     "hero": "/wiki-img/aidol-childcare-service-hero.jpg",
     "og": "/wiki-img/aidol-childcare-service-og.jpg",
-    "alt": "아이돌봄서비스 관련 소재를 담은 정물 이미지"
+    "alt": "아이돌봄서비스 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/aidol-childcare-service-body.jpg"
   },
   "amended-return-claim": {
     "hero": "/wiki-img/amended-return-claim-hero.jpg",
     "og": "/wiki-img/amended-return-claim-og.jpg",
-    "alt": "경정청구 관련 소재를 담은 정물 이미지"
+    "alt": "경정청구 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/amended-return-claim-body.jpg"
   },
   "annual-leave-pay": {
     "hero": "/wiki-img/annual-leave-pay-hero.jpg",
     "og": "/wiki-img/annual-leave-pay-og.jpg",
-    "alt": "연차휴가·연차수당 관련 소재를 담은 정물 이미지"
+    "alt": "연차휴가·연차수당 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/annual-leave-pay-body.jpg"
   },
   "apostille": {
     "hero": "/wiki-img/apostille-hero.jpg",
     "og": "/wiki-img/apostille-og.jpg",
-    "alt": "아포스티유 발급 관련 소재를 담은 정물 이미지"
+    "alt": "아포스티유 발급 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/apostille-body.jpg"
   },
   "artist-employment-insurance": {
     "hero": "/wiki-img/artist-employment-insurance-hero.jpg",
     "og": "/wiki-img/artist-employment-insurance-og.jpg",
-    "alt": "예술인 고용보험 관련 소재를 담은 정물 이미지"
+    "alt": "예술인 고용보험 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/artist-employment-insurance-body.jpg"
   },
   "basic-pension": {
     "hero": "/wiki-img/basic-pension-hero.jpg",
     "og": "/wiki-img/basic-pension-og.jpg",
-    "alt": "기초연금 관련 소재를 담은 정물 이미지"
+    "alt": "기초연금 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/basic-pension-body.jpg"
   },
   "beotimmok-loan": {
     "hero": "/wiki-img/beotimmok-loan-hero.jpg",
     "og": "/wiki-img/beotimmok-loan-og.jpg",
-    "alt": "버팀목 전세자금대출 관련 소재를 담은 정물 이미지"
+    "alt": "버팀목 전세자금대출 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/beotimmok-loan-body.jpg"
   },
   "birth-registration": {
     "hero": "/wiki-img/birth-registration-hero.jpg",
     "og": "/wiki-img/birth-registration-og.jpg",
-    "alt": "출생신고 관련 소재를 담은 정물 이미지"
+    "alt": "출생신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/birth-registration-body.jpg"
   },
   "business-closure": {
     "hero": "/wiki-img/business-closure-hero.jpg",
     "og": "/wiki-img/business-closure-og.jpg",
-    "alt": "폐업 신고 관련 소재를 담은 정물 이미지"
+    "alt": "폐업 신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/business-closure-body.jpg"
   },
   "business-registration": {
     "hero": "/wiki-img/business-registration-hero.jpg",
     "og": "/wiki-img/business-registration-og.jpg",
-    "alt": "개인사업자 등록 신청 관련 소재를 담은 정물 이미지"
+    "alt": "개인사업자 등록 신청 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/business-registration-body.jpg"
   },
   "business-status-report": {
     "hero": "/wiki-img/business-status-report-hero.jpg",
     "og": "/wiki-img/business-status-report-og.jpg",
-    "alt": "사업장현황신고 관련 소재를 담은 정물 이미지"
+    "alt": "사업장현황신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/business-status-report-body.jpg"
   },
   "cancer-screening": {
     "hero": "/wiki-img/cancer-screening-hero.jpg",
     "og": "/wiki-img/cancer-screening-og.jpg",
-    "alt": "국가암검진 관련 소재를 담은 정물 이미지"
+    "alt": "국가암검진 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/cancer-screening-body.jpg"
   },
   "capital-gains-tax-prelim-filing": {
     "hero": "/wiki-img/capital-gains-tax-prelim-filing-hero.jpg",
     "og": "/wiki-img/capital-gains-tax-prelim-filing-og.jpg",
-    "alt": "양도소득세 예정신고 관련 소재를 담은 정물 이미지"
+    "alt": "양도소득세 예정신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/capital-gains-tax-prelim-filing-body.jpg"
   },
   "car-comprehensive-inspection": {
     "hero": "/wiki-img/car-comprehensive-inspection-hero.jpg",
     "og": "/wiki-img/car-comprehensive-inspection-og.jpg",
-    "alt": "자동차 종합검사 관련 소재를 담은 정물 이미지"
+    "alt": "자동차 종합검사 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/car-comprehensive-inspection-body.jpg"
   },
   "car-deregistration": {
     "hero": "/wiki-img/car-deregistration-hero.jpg",
     "og": "/wiki-img/car-deregistration-og.jpg",
-    "alt": "자동차 말소등록(폐차) 관련 소재를 담은 정물 이미지"
+    "alt": "자동차 말소등록(폐차) 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/car-deregistration-body.jpg"
   },
   "car-inspection": {
     "hero": "/wiki-img/car-inspection-hero.jpg",
     "og": "/wiki-img/car-inspection-og.jpg",
-    "alt": "자동차 정기검사 관련 소재를 담은 정물 이미지"
+    "alt": "자동차 정기검사 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/car-inspection-body.jpg"
   },
   "car-recall-lookup": {
     "hero": "/wiki-img/car-recall-lookup-hero.jpg",
     "og": "/wiki-img/car-recall-lookup-og.jpg",
-    "alt": "자동차 리콜 조회 관련 소재를 담은 정물 이미지"
+    "alt": "자동차 리콜 조회 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/car-recall-lookup-body.jpg"
   },
   "car-transfer-registration": {
     "hero": "/wiki-img/car-transfer-registration-hero.jpg",
     "og": "/wiki-img/car-transfer-registration-og.jpg",
-    "alt": "자동차 이전등록 관련 소재를 담은 정물 이미지"
+    "alt": "자동차 이전등록 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/car-transfer-registration-body.jpg"
   },
   "cash-receipt-deduction": {
     "hero": "/wiki-img/cash-receipt-deduction-hero.jpg",
     "og": "/wiki-img/cash-receipt-deduction-og.jpg",
-    "alt": "현금영수증 소득공제 관련 소재를 담은 정물 이미지"
+    "alt": "현금영수증 소득공제 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/cash-receipt-deduction-body.jpg"
   },
   "catastrophic-medical-aid": {
     "hero": "/wiki-img/catastrophic-medical-aid-hero.jpg",
     "og": "/wiki-img/catastrophic-medical-aid-og.jpg",
-    "alt": "재난적의료비 지원 관련 소재를 담은 정물 이미지"
+    "alt": "재난적의료비 지원 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/catastrophic-medical-aid-body.jpg"
   },
   "child-allowance": {
     "hero": "/wiki-img/child-allowance-hero.jpg",
     "og": "/wiki-img/child-allowance-og.jpg",
-    "alt": "아동수당 관련 소재를 담은 정물 이미지"
+    "alt": "아동수당 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/child-allowance-body.jpg"
   },
   "child-support-enforcement": {
     "hero": "/wiki-img/child-support-enforcement-hero.jpg",
     "og": "/wiki-img/child-support-enforcement-og.jpg",
-    "alt": "양육비 선지급(양육비 이행 지원) 관련 소재를 담은 정물 이미지"
+    "alt": "양육비 선지급(양육비 이행 지원) 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/child-support-enforcement-body.jpg"
   },
   "child-tax-credit": {
     "hero": "/wiki-img/child-tax-credit-hero.jpg",
     "og": "/wiki-img/child-tax-credit-og.jpg",
-    "alt": "자녀 세액공제 관련 소재를 담은 정물 이미지"
+    "alt": "자녀 세액공제 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/child-tax-credit-body.jpg"
   },
   "childcare-fee-voucher": {
     "hero": "/wiki-img/childcare-fee-voucher-hero.jpg",
     "og": "/wiki-img/childcare-fee-voucher-og.jpg",
-    "alt": "어린이집 보육료 지원 관련 소재를 담은 정물 이미지"
+    "alt": "어린이집 보육료 지원 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/childcare-fee-voucher-body.jpg"
   },
   "civil-defense-training": {
     "hero": "/wiki-img/civil-defense-training-hero.jpg",
     "og": "/wiki-img/civil-defense-training-og.jpg",
-    "alt": "민방위 교육 관련 소재를 담은 정물 이미지"
+    "alt": "민방위 교육 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/civil-defense-training-body.jpg"
   },
   "civil-service-9-exam": {
     "hero": "/wiki-img/civil-service-9-exam-hero.jpg",
     "og": "/wiki-img/civil-service-9-exam-og.jpg",
-    "alt": "국가공무원 9급 공채 관련 소재를 담은 정물 이미지"
+    "alt": "국가공무원 9급 공채 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/civil-service-9-exam-body.jpg"
   },
   "climate-card": {
     "hero": "/wiki-img/climate-card-hero.jpg",
     "og": "/wiki-img/climate-card-og.jpg",
-    "alt": "기후동행카드 관련 소재를 담은 정물 이미지"
+    "alt": "기후동행카드 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/climate-card-body.jpg"
   },
   "compulsory-insurance-fine": {
     "hero": "/wiki-img/compulsory-insurance-fine-hero.jpg",
     "og": "/wiki-img/compulsory-insurance-fine-og.jpg",
-    "alt": "자동차 의무보험 미가입 과태료 관련 소재를 담은 정물 이미지"
+    "alt": "자동차 의무보험 미가입 과태료 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/compulsory-insurance-fine-body.jpg"
   },
   "copay-cap-refund": {
     "hero": "/wiki-img/copay-cap-refund-hero.jpg",
     "og": "/wiki-img/copay-cap-refund-og.jpg",
-    "alt": "본인부담상한제 환급 관련 소재를 담은 정물 이미지"
+    "alt": "본인부담상한제 환급 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/copay-cap-refund-body.jpg"
   },
   "cpa-exam": {
     "hero": "/wiki-img/cpa-exam-hero.jpg",
     "og": "/wiki-img/cpa-exam-og.jpg",
-    "alt": "공인회계사 시험 관련 소재를 담은 정물 이미지"
+    "alt": "공인회계사 시험 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/cpa-exam-body.jpg"
   },
   "credit-card-income-deduction": {
     "hero": "/wiki-img/credit-card-income-deduction-hero.jpg",
     "og": "/wiki-img/credit-card-income-deduction-og.jpg",
-    "alt": "신용카드 소득공제 관련 소재를 담은 정물 이미지"
+    "alt": "신용카드 소득공제 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/credit-card-income-deduction-body.jpg"
   },
   "credit-recovery-workout": {
     "hero": "/wiki-img/credit-recovery-workout-hero.jpg",
     "og": "/wiki-img/credit-recovery-workout-og.jpg",
-    "alt": "개인워크아웃(채무조정) 관련 소재를 담은 정물 이미지"
+    "alt": "개인워크아웃(채무조정) 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/credit-recovery-workout-body.jpg"
   },
   "credit-report-free": {
     "hero": "/wiki-img/credit-report-free-hero.jpg",
     "og": "/wiki-img/credit-report-free-og.jpg",
-    "alt": "내 신용정보 무료 조회 관련 소재를 담은 정물 이미지"
+    "alt": "내 신용정보 무료 조회 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/credit-report-free-body.jpg"
   },
   "csat-application": {
     "hero": "/wiki-img/csat-application-hero.jpg",
     "og": "/wiki-img/csat-application-og.jpg",
-    "alt": "수능 원서 접수 관련 소재를 담은 정물 이미지"
+    "alt": "수능 원서 접수 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/csat-application-body.jpg"
   },
   "culture-day": {
     "hero": "/wiki-img/culture-day-hero.jpg",
     "og": "/wiki-img/culture-day-og.jpg",
-    "alt": "문화가 있는 날 관련 소재를 담은 정물 이미지"
+    "alt": "문화가 있는 날 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/culture-day-body.jpg"
   },
   "daycare-admission": {
     "hero": "/wiki-img/daycare-admission-hero.jpg",
     "og": "/wiki-img/daycare-admission-og.jpg",
-    "alt": "어린이집 입소 신청 관련 소재를 담은 정물 이미지"
+    "alt": "어린이집 입소 신청 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/daycare-admission-body.jpg"
   },
   "death-report": {
     "hero": "/wiki-img/death-report-hero.jpg",
     "og": "/wiki-img/death-report-og.jpg",
-    "alt": "사망신고 관련 소재를 담은 정물 이미지"
+    "alt": "사망신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/death-report-body.jpg"
   },
   "dementia-screening": {
     "hero": "/wiki-img/dementia-screening-hero.jpg",
     "og": "/wiki-img/dementia-screening-og.jpg",
-    "alt": "치매 검진 관련 소재를 담은 정물 이미지"
+    "alt": "치매 검진 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/dementia-screening-body.jpg"
   },
   "didimdol-loan": {
     "hero": "/wiki-img/didimdol-loan-hero.jpg",
     "og": "/wiki-img/didimdol-loan-og.jpg",
-    "alt": "디딤돌대출 관련 소재를 담은 정물 이미지"
+    "alt": "디딤돌대출 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/didimdol-loan-body.jpg"
   },
   "disability-activity-support": {
     "hero": "/wiki-img/disability-activity-support-hero.jpg",
     "og": "/wiki-img/disability-activity-support-og.jpg",
-    "alt": "장애인 활동지원 관련 소재를 담은 정물 이미지"
+    "alt": "장애인 활동지원 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/disability-activity-support-body.jpg"
   },
   "disability-pension": {
     "hero": "/wiki-img/disability-pension-hero.jpg",
     "og": "/wiki-img/disability-pension-og.jpg",
-    "alt": "장애인연금 관련 소재를 담은 정물 이미지"
+    "alt": "장애인연금 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/disability-pension-body.jpg"
   },
   "disability-registration": {
     "hero": "/wiki-img/disability-registration-hero.jpg",
     "og": "/wiki-img/disability-registration-og.jpg",
-    "alt": "장애인 등록 관련 소재를 담은 정물 이미지"
+    "alt": "장애인 등록 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/disability-registration-body.jpg"
   },
   "disabled-parking-permit": {
     "hero": "/wiki-img/disabled-parking-permit-hero.jpg",
     "og": "/wiki-img/disabled-parking-permit-og.jpg",
-    "alt": "장애인 주차표지 발급 관련 소재를 담은 정물 이미지"
+    "alt": "장애인 주차표지 발급 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/disabled-parking-permit-body.jpg"
   },
   "disabled-vehicle-tax-exemption": {
     "hero": "/wiki-img/disabled-vehicle-tax-exemption-hero.jpg",
     "og": "/wiki-img/disabled-vehicle-tax-exemption-og.jpg",
-    "alt": "장애인 자동차 취득세·자동차세 면제 관련 소재를 담은 정물 이미지"
+    "alt": "장애인 자동차 취득세·자동차세 면제 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/disabled-vehicle-tax-exemption-body.jpg"
   },
   "donation-tax-credit": {
     "hero": "/wiki-img/donation-tax-credit-hero.jpg",
     "og": "/wiki-img/donation-tax-credit-og.jpg",
-    "alt": "기부금 세액공제 관련 소재를 담은 정물 이미지"
+    "alt": "기부금 세액공제 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/donation-tax-credit-body.jpg"
   },
   "dongsa-festival": {
     "hero": "/wiki-img/dongsa-festival-hero.jpg",
     "og": "/wiki-img/dongsa-festival-og.jpg",
-    "alt": "대한민국 동행축제 관련 소재를 담은 정물 이미지"
+    "alt": "대한민국 동행축제 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/dongsa-festival-body.jpg"
   },
   "driver-license-renewal": {
     "hero": "/wiki-img/driver-license-renewal-hero.jpg",
     "og": "/wiki-img/driver-license-renewal-og.jpg",
-    "alt": "운전면허 갱신 관련 소재를 담은 정물 이미지"
+    "alt": "운전면허 갱신 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/driver-license-renewal-body.jpg"
   },
   "driver-license-test": {
     "hero": "/wiki-img/driver-license-test-hero.jpg",
     "og": "/wiki-img/driver-license-test-og.jpg",
-    "alt": "운전면허 시험 접수 관련 소재를 담은 정물 이미지"
+    "alt": "운전면허 시험 접수 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/driver-license-test-body.jpg"
   },
   "driving-record-certificate": {
     "hero": "/wiki-img/driving-record-certificate-hero.jpg",
     "og": "/wiki-img/driving-record-certificate-og.jpg",
-    "alt": "운전경력증명서 발급 관련 소재를 담은 정물 이미지"
+    "alt": "운전경력증명서 발급 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/driving-record-certificate-body.jpg"
   },
   "e-tax-invoice": {
     "hero": "/wiki-img/e-tax-invoice-hero.jpg",
     "og": "/wiki-img/e-tax-invoice-og.jpg",
-    "alt": "전자세금계산서 발급·전송 관련 소재를 담은 정물 이미지"
+    "alt": "전자세금계산서 발급·전송 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/e-tax-invoice-body.jpg"
   },
   "early-reemployment-allowance": {
     "hero": "/wiki-img/early-reemployment-allowance-hero.jpg",
     "og": "/wiki-img/early-reemployment-allowance-og.jpg",
-    "alt": "조기재취업수당 관련 소재를 담은 정물 이미지"
+    "alt": "조기재취업수당 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/early-reemployment-allowance-body.jpg"
   },
   "education-benefit": {
     "hero": "/wiki-img/education-benefit-hero.jpg",
     "og": "/wiki-img/education-benefit-og.jpg",
-    "alt": "교육급여 관련 소재를 담은 정물 이미지"
+    "alt": "교육급여 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/education-benefit-body.jpg"
   },
   "education-expense-deduction": {
     "hero": "/wiki-img/education-expense-deduction-hero.jpg",
     "og": "/wiki-img/education-expense-deduction-og.jpg",
-    "alt": "교육비 세액공제 관련 소재를 담은 정물 이미지"
+    "alt": "교육비 세액공제 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/education-expense-deduction-body.jpg"
   },
   "electricity-welfare-discount": {
     "hero": "/wiki-img/electricity-welfare-discount-hero.jpg",
     "og": "/wiki-img/electricity-welfare-discount-og.jpg",
-    "alt": "전기요금 복지할인 관련 소재를 담은 정물 이미지"
+    "alt": "전기요금 복지할인 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/electricity-welfare-discount-body.jpg"
   },
   "emergency-welfare": {
     "hero": "/wiki-img/emergency-welfare-hero.jpg",
     "og": "/wiki-img/emergency-welfare-og.jpg",
-    "alt": "긴급복지지원 관련 소재를 담은 정물 이미지"
+    "alt": "긴급복지지원 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/emergency-welfare-body.jpg"
   },
   "energy-cashback": {
     "hero": "/wiki-img/energy-cashback-hero.jpg",
     "og": "/wiki-img/energy-cashback-og.jpg",
-    "alt": "에너지캐시백 관련 소재를 담은 정물 이미지"
+    "alt": "에너지캐시백 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/energy-cashback-body.jpg"
   },
   "ev-subsidy": {
     "hero": "/wiki-img/ev-subsidy-hero.jpg",
     "og": "/wiki-img/ev-subsidy-og.jpg",
-    "alt": "전기차 보조금 관련 소재를 담은 정물 이미지"
+    "alt": "전기차 보조금 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/ev-subsidy-body.jpg"
   },
   "family-care-leave": {
     "hero": "/wiki-img/family-care-leave-hero.jpg",
     "og": "/wiki-img/family-care-leave-og.jpg",
-    "alt": "가족돌봄휴가·휴직 관련 소재를 담은 정물 이미지"
+    "alt": "가족돌봄휴가·휴직 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/family-care-leave-body.jpg"
   },
   "family-relation-certificate": {
     "hero": "/wiki-img/family-relation-certificate-hero.jpg",
     "og": "/wiki-img/family-relation-certificate-og.jpg",
-    "alt": "가족관계증명서 발급 관련 소재를 담은 정물 이미지"
+    "alt": "가족관계증명서 발급 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/family-relation-certificate-body.jpg"
   },
   "financial-income-comprehensive-tax": {
     "hero": "/wiki-img/financial-income-comprehensive-tax-hero.jpg",
     "og": "/wiki-img/financial-income-comprehensive-tax-og.jpg",
-    "alt": "금융소득 종합과세 관련 소재를 담은 정물 이미지"
+    "alt": "금융소득 종합과세 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/financial-income-comprehensive-tax-body.jpg"
   },
   "fine-lookup-payment": {
     "hero": "/wiki-img/fine-lookup-payment-hero.jpg",
     "og": "/wiki-img/fine-lookup-payment-og.jpg",
-    "alt": "과태료·범칙금 조회·납부 관련 소재를 담은 정물 이미지"
+    "alt": "과태료·범칙금 조회·납부 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/fine-lookup-payment-body.jpg"
   },
   "firefighter-exam": {
     "hero": "/wiki-img/firefighter-exam-hero.jpg",
     "og": "/wiki-img/firefighter-exam-og.jpg",
-    "alt": "소방공무원 채용 시험 관련 소재를 담은 정물 이미지"
+    "alt": "소방공무원 채용 시험 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/firefighter-exam-body.jpg"
   },
   "first-home-acquisition-tax-reduction": {
     "hero": "/wiki-img/first-home-acquisition-tax-reduction-hero.jpg",
     "og": "/wiki-img/first-home-acquisition-tax-reduction-og.jpg",
-    "alt": "생애최초 주택 취득세 감면 관련 소재를 담은 정물 이미지"
+    "alt": "생애최초 주택 취득세 감면 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/first-home-acquisition-tax-reduction-body.jpg"
   },
   "first-meeting-voucher": {
     "hero": "/wiki-img/first-meeting-voucher-hero.jpg",
     "og": "/wiki-img/first-meeting-voucher-og.jpg",
-    "alt": "첫만남이용권 관련 소재를 담은 정물 이미지"
+    "alt": "첫만남이용권 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/first-meeting-voucher-body.jpg"
   },
   "fixed-date-lease": {
     "hero": "/wiki-img/fixed-date-lease-hero.jpg",
     "og": "/wiki-img/fixed-date-lease-og.jpg",
-    "alt": "확정일자 관련 소재를 담은 정물 이미지"
+    "alt": "확정일자 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/fixed-date-lease-body.jpg"
   },
   "flu-vaccination": {
     "hero": "/wiki-img/flu-vaccination-hero.jpg",
     "og": "/wiki-img/flu-vaccination-og.jpg",
-    "alt": "독감 예방접종 관련 소재를 담은 정물 이미지"
+    "alt": "독감 예방접종 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/flu-vaccination-body.jpg"
   },
   "four-insurance-enrollment": {
     "hero": "/wiki-img/four-insurance-enrollment-hero.jpg",
     "og": "/wiki-img/four-insurance-enrollment-og.jpg",
-    "alt": "4대보험 취득신고 관련 소재를 담은 정물 이미지"
+    "alt": "4대보험 취득신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/four-insurance-enrollment-body.jpg"
   },
   "freelancer-withholding-refund": {
     "hero": "/wiki-img/freelancer-withholding-refund-hero.jpg",
     "og": "/wiki-img/freelancer-withholding-refund-og.jpg",
-    "alt": "프리랜서 3.3% 환급(종합소득세 정산) 관련 소재를 담은 정물 이미지"
+    "alt": "프리랜서 3.3% 환급(종합소득세 정산) 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/freelancer-withholding-refund-body.jpg"
   },
   "gift-tax-exemption-limit": {
     "hero": "/wiki-img/gift-tax-exemption-limit-hero.jpg",
     "og": "/wiki-img/gift-tax-exemption-limit-og.jpg",
-    "alt": "증여재산공제 한도 관련 소재를 담은 정물 이미지"
+    "alt": "증여재산공제 한도 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/gift-tax-exemption-limit-body.jpg"
   },
   "gift-tax-filing": {
     "hero": "/wiki-img/gift-tax-filing-hero.jpg",
     "og": "/wiki-img/gift-tax-filing-og.jpg",
-    "alt": "증여세 신고·납부 관련 소재를 담은 정물 이미지"
+    "alt": "증여세 신고·납부 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/gift-tax-filing-body.jpg"
   },
   "haessal-loan": {
     "hero": "/wiki-img/haessal-loan-hero.jpg",
     "og": "/wiki-img/haessal-loan-og.jpg",
-    "alt": "햇살론 관련 소재를 담은 정물 이미지"
+    "alt": "햇살론 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/haessal-loan-body.jpg"
   },
   "health-insurance-dependents": {
     "hero": "/wiki-img/health-insurance-dependents-hero.jpg",
     "og": "/wiki-img/health-insurance-dependents-og.jpg",
-    "alt": "건강보험 피부양자 자격 관련 소재를 담은 정물 이미지"
+    "alt": "건강보험 피부양자 자격 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/health-insurance-dependents-body.jpg"
   },
   "housing-benefit": {
     "hero": "/wiki-img/housing-benefit-hero.jpg",
     "og": "/wiki-img/housing-benefit-og.jpg",
-    "alt": "주거급여 관련 소재를 담은 정물 이미지"
+    "alt": "주거급여 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/housing-benefit-body.jpg"
   },
   "housing-loan-interest-deduction": {
     "hero": "/wiki-img/housing-loan-interest-deduction-hero.jpg",
     "og": "/wiki-img/housing-loan-interest-deduction-og.jpg",
-    "alt": "주택담보대출 이자 소득공제 관련 소재를 담은 정물 이미지"
+    "alt": "주택담보대출 이자 소득공제 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/housing-loan-interest-deduction-body.jpg"
   },
   "housing-pension": {
     "hero": "/wiki-img/housing-pension-hero.jpg",
     "og": "/wiki-img/housing-pension-og.jpg",
-    "alt": "주택연금 관련 소재를 담은 정물 이미지"
+    "alt": "주택연금 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/housing-pension-body.jpg"
   },
   "housing-subscription-deduction": {
     "hero": "/wiki-img/housing-subscription-deduction-hero.jpg",
     "og": "/wiki-img/housing-subscription-deduction-og.jpg",
-    "alt": "주택청약종합저축 소득공제 관련 소재를 담은 정물 이미지"
+    "alt": "주택청약종합저축 소득공제 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/housing-subscription-deduction-body.jpg"
   },
   "housing-subscription": {
     "hero": "/wiki-img/housing-subscription-hero.jpg",
     "og": "/wiki-img/housing-subscription-og.jpg",
-    "alt": "주택 청약 관련 소재를 담은 정물 이미지"
+    "alt": "주택 청약 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/housing-subscription-body.jpg"
   },
   "id-card-reissue": {
     "hero": "/wiki-img/id-card-reissue-hero.jpg",
     "og": "/wiki-img/id-card-reissue-og.jpg",
-    "alt": "주민등록증 재발급 관련 소재를 담은 정물 이미지"
+    "alt": "주민등록증 재발급 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/id-card-reissue-body.jpg"
   },
   "income-tax-interim-prepayment": {
     "hero": "/wiki-img/income-tax-interim-prepayment-hero.jpg",
     "og": "/wiki-img/income-tax-interim-prepayment-og.jpg",
-    "alt": "종합소득세 중간예납 관련 소재를 담은 정물 이미지"
+    "alt": "종합소득세 중간예납 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/income-tax-interim-prepayment-body.jpg"
   },
   "industrial-accident-benefit": {
     "hero": "/wiki-img/industrial-accident-benefit-hero.jpg",
     "og": "/wiki-img/industrial-accident-benefit-og.jpg",
-    "alt": "산재 요양급여 신청 관련 소재를 담은 정물 이미지"
+    "alt": "산재 요양급여 신청 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/industrial-accident-benefit-body.jpg"
   },
   "infant-health-checkup": {
     "hero": "/wiki-img/infant-health-checkup-hero.jpg",
     "og": "/wiki-img/infant-health-checkup-og.jpg",
-    "alt": "영유아 건강검진 관련 소재를 담은 정물 이미지"
+    "alt": "영유아 건강검진 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/infant-health-checkup-body.jpg"
   },
   "inheritance-tax-filing": {
     "hero": "/wiki-img/inheritance-tax-filing-hero.jpg",
     "og": "/wiki-img/inheritance-tax-filing-og.jpg",
-    "alt": "상속세 신고·납부 관련 소재를 담은 정물 이미지"
+    "alt": "상속세 신고·납부 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/inheritance-tax-filing-body.jpg"
   },
   "inheritance-tax-installment": {
     "hero": "/wiki-img/inheritance-tax-installment-hero.jpg",
     "og": "/wiki-img/inheritance-tax-installment-og.jpg",
-    "alt": "상속세 연부연납 관련 소재를 담은 정물 이미지"
+    "alt": "상속세 연부연납 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/inheritance-tax-installment-body.jpg"
   },
   "insurance-premium-tax-credit": {
     "hero": "/wiki-img/insurance-premium-tax-credit-hero.jpg",
     "og": "/wiki-img/insurance-premium-tax-credit-og.jpg",
-    "alt": "보장성보험료 세액공제 관련 소재를 담은 정물 이미지"
+    "alt": "보장성보험료 세액공제 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/insurance-premium-tax-credit-body.jpg"
   },
   "integrated-pension-portal": {
     "hero": "/wiki-img/integrated-pension-portal-hero.jpg",
     "og": "/wiki-img/integrated-pension-portal-og.jpg",
-    "alt": "통합연금포털 내 연금 조회 관련 소재를 담은 정물 이미지"
+    "alt": "통합연금포털 내 연금 조회 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/integrated-pension-portal-body.jpg"
   },
   "irp-account": {
     "hero": "/wiki-img/irp-account-hero.jpg",
     "og": "/wiki-img/irp-account-og.jpg",
-    "alt": "퇴직연금 IRP 개설 관련 소재를 담은 정물 이미지"
+    "alt": "퇴직연금 IRP 개설 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/irp-account-body.jpg"
   },
   "jeonse-guarantee": {
     "hero": "/wiki-img/jeonse-guarantee-hero.jpg",
     "og": "/wiki-img/jeonse-guarantee-og.jpg",
-    "alt": "전세보증금반환보증 관련 소재를 담은 정물 이미지"
+    "alt": "전세보증금반환보증 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/jeonse-guarantee-body.jpg"
   },
   "k-pass": {
     "hero": "/wiki-img/k-pass-hero.jpg",
     "og": "/wiki-img/k-pass-og.jpg",
-    "alt": "K-패스 관련 소재를 담은 정물 이미지"
+    "alt": "K-패스 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/k-pass-body.jpg"
   },
   "kindergarten-admission": {
     "hero": "/wiki-img/kindergarten-admission-hero.jpg",
     "og": "/wiki-img/kindergarten-admission-og.jpg",
-    "alt": "유치원 입학 신청(유보통합포털) 관련 소재를 담은 정물 이미지"
+    "alt": "유치원 입학 신청(유보통합포털) 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/kindergarten-admission-body.jpg"
   },
   "korean-history-test": {
     "hero": "/wiki-img/korean-history-test-hero.jpg",
     "og": "/wiki-img/korean-history-test-og.jpg",
-    "alt": "한국사능력검정시험 관련 소재를 담은 정물 이미지"
+    "alt": "한국사능력검정시험 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/korean-history-test-body.jpg"
   },
   "labor-attorney-exam": {
     "hero": "/wiki-img/labor-attorney-exam-hero.jpg",
     "og": "/wiki-img/labor-attorney-exam-og.jpg",
-    "alt": "공인노무사 시험 관련 소재를 담은 정물 이미지"
+    "alt": "공인노무사 시험 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/labor-attorney-exam-body.jpg"
   },
   "late-filing-after-deadline": {
     "hero": "/wiki-img/late-filing-after-deadline-hero.jpg",
     "og": "/wiki-img/late-filing-after-deadline-og.jpg",
-    "alt": "기한 후 신고 관련 소재를 담은 정물 이미지"
+    "alt": "기한 후 신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/late-filing-after-deadline-body.jpg"
   },
   "lease-registration-order": {
     "hero": "/wiki-img/lease-registration-order-hero.jpg",
     "og": "/wiki-img/lease-registration-order-og.jpg",
-    "alt": "임차권등기명령 관련 소재를 담은 정물 이미지"
+    "alt": "임차권등기명령 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/lease-registration-order-body.jpg"
   },
   "lease-renewal-right": {
     "hero": "/wiki-img/lease-renewal-right-hero.jpg",
     "og": "/wiki-img/lease-renewal-right-og.jpg",
-    "alt": "계약갱신청구권 관련 소재를 담은 정물 이미지"
+    "alt": "계약갱신청구권 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/lease-renewal-right-body.jpg"
   },
   "license-objection": {
     "hero": "/wiki-img/license-objection-hero.jpg",
     "og": "/wiki-img/license-objection-og.jpg",
-    "alt": "운전면허 정지·취소 이의신청 관련 소재를 담은 정물 이미지"
+    "alt": "운전면허 정지·취소 이의신청 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/license-objection-body.jpg"
   },
   "livelihood-benefit": {
     "hero": "/wiki-img/livelihood-benefit-hero.jpg",
     "og": "/wiki-img/livelihood-benefit-og.jpg",
-    "alt": "생계급여 관련 소재를 담은 정물 이미지"
+    "alt": "생계급여 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/livelihood-benefit-body.jpg"
   },
   "local-civil-service-exam": {
     "hero": "/wiki-img/local-civil-service-exam-hero.jpg",
     "og": "/wiki-img/local-civil-service-exam-og.jpg",
-    "alt": "지방공무원 시험 관련 소재를 담은 정물 이미지"
+    "alt": "지방공무원 시험 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/local-civil-service-exam-body.jpg"
   },
   "local-currency": {
     "hero": "/wiki-img/local-currency-hero.jpg",
     "og": "/wiki-img/local-currency-og.jpg",
-    "alt": "지역사랑상품권 할인 구매 관련 소재를 담은 정물 이미지"
+    "alt": "지역사랑상품권 할인 구매 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/local-currency-body.jpg"
   },
   "local-income-tax-filing": {
     "hero": "/wiki-img/local-income-tax-filing-hero.jpg",
     "og": "/wiki-img/local-income-tax-filing-og.jpg",
-    "alt": "지방소득세 신고 관련 소재를 담은 정물 이미지"
+    "alt": "지방소득세 신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/local-income-tax-filing-body.jpg"
   },
   "local-tax-refund-lookup": {
     "hero": "/wiki-img/local-tax-refund-lookup-hero.jpg",
     "og": "/wiki-img/local-tax-refund-lookup-og.jpg",
-    "alt": "지방세 환급금 조회·신청 관련 소재를 담은 정물 이미지"
+    "alt": "지방세 환급금 조회·신청 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/local-tax-refund-lookup-body.jpg"
   },
   "long-term-care-grade": {
     "hero": "/wiki-img/long-term-care-grade-hero.jpg",
     "og": "/wiki-img/long-term-care-grade-og.jpg",
-    "alt": "장기요양 인정 신청 관련 소재를 담은 정물 이미지"
+    "alt": "장기요양 인정 신청 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/long-term-care-grade-body.jpg"
   },
   "lost-id-report": {
     "hero": "/wiki-img/lost-id-report-hero.jpg",
     "og": "/wiki-img/lost-id-report-og.jpg",
-    "alt": "신분증 분실 신고 관련 소재를 담은 정물 이미지"
+    "alt": "신분증 분실 신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/lost-id-report-body.jpg"
   },
   "marriage-registration": {
     "hero": "/wiki-img/marriage-registration-hero.jpg",
     "og": "/wiki-img/marriage-registration-og.jpg",
-    "alt": "혼인신고 관련 소재를 담은 정물 이미지"
+    "alt": "혼인신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/marriage-registration-body.jpg"
   },
   "mart-closing-day": {
     "hero": "/wiki-img/mart-closing-day-hero.jpg",
     "og": "/wiki-img/mart-closing-day-og.jpg",
-    "alt": "대형마트 의무휴업일 관련 소재를 담은 정물 이미지"
+    "alt": "대형마트 의무휴업일 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/mart-closing-day-body.jpg"
   },
   "maternity-leave-benefit": {
     "hero": "/wiki-img/maternity-leave-benefit-hero.jpg",
     "og": "/wiki-img/maternity-leave-benefit-og.jpg",
-    "alt": "출산전후휴가 급여 관련 소재를 담은 정물 이미지"
+    "alt": "출산전후휴가 급여 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/maternity-leave-benefit-body.jpg"
   },
   "medical-benefit": {
     "hero": "/wiki-img/medical-benefit-hero.jpg",
     "og": "/wiki-img/medical-benefit-og.jpg",
-    "alt": "의료급여 관련 소재를 담은 정물 이미지"
+    "alt": "의료급여 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/medical-benefit-body.jpg"
   },
   "medical-expense-deduction": {
     "hero": "/wiki-img/medical-expense-deduction-hero.jpg",
     "og": "/wiki-img/medical-expense-deduction-og.jpg",
-    "alt": "의료비 세액공제 관련 소재를 담은 정물 이미지"
+    "alt": "의료비 세액공제 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/medical-expense-deduction-body.jpg"
   },
   "military-physical-exam": {
     "hero": "/wiki-img/military-physical-exam-hero.jpg",
     "og": "/wiki-img/military-physical-exam-og.jpg",
-    "alt": "병역판정검사 관련 소재를 담은 정물 이미지"
+    "alt": "병역판정검사 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/military-physical-exam-body.jpg"
   },
   "mind-investment-support": {
     "hero": "/wiki-img/mind-investment-support-hero.jpg",
     "og": "/wiki-img/mind-investment-support-og.jpg",
-    "alt": "정신건강 심리상담 바우처사업 관련 소재를 담은 정물 이미지"
+    "alt": "정신건강 심리상담 바우처사업 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/mind-investment-support-body.jpg"
   },
   "minimum-wage": {
     "hero": "/wiki-img/minimum-wage-hero.jpg",
     "og": "/wiki-img/minimum-wage-og.jpg",
-    "alt": "최저임금 관련 소재를 담은 정물 이미지"
+    "alt": "최저임금 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/minimum-wage-body.jpg"
   },
   "mobile-id": {
     "hero": "/wiki-img/mobile-id-hero.jpg",
     "og": "/wiki-img/mobile-id-og.jpg",
-    "alt": "모바일 신분증 관련 소재를 담은 정물 이미지"
+    "alt": "모바일 신분증 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/mobile-id-body.jpg"
   },
   "motorcycle-registration": {
     "hero": "/wiki-img/motorcycle-registration-hero.jpg",
     "og": "/wiki-img/motorcycle-registration-og.jpg",
-    "alt": "이륜차 사용신고 관련 소재를 담은 정물 이미지"
+    "alt": "이륜차 사용신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/motorcycle-registration-body.jpg"
   },
   "move-in-report": {
     "hero": "/wiki-img/move-in-report-hero.jpg",
     "og": "/wiki-img/move-in-report-og.jpg",
-    "alt": "전입신고 관련 소재를 담은 정물 이미지"
+    "alt": "전입신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/move-in-report-body.jpg"
   },
   "multi-child-benefits": {
     "hero": "/wiki-img/multi-child-benefits-hero.jpg",
     "og": "/wiki-img/multi-child-benefits-og.jpg",
-    "alt": "다자녀 가구 혜택 관련 소재를 담은 정물 이미지"
+    "alt": "다자녀 가구 혜택 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/multi-child-benefits-body.jpg"
   },
   "name-change": {
     "hero": "/wiki-img/name-change-hero.jpg",
     "og": "/wiki-img/name-change-og.jpg",
-    "alt": "개명 신청 관련 소재를 담은 정물 이미지"
+    "alt": "개명 신청 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/name-change-body.jpg"
   },
   "national-employment-support": {
     "hero": "/wiki-img/national-employment-support-hero.jpg",
     "og": "/wiki-img/national-employment-support-og.jpg",
-    "alt": "국민취업지원제도 관련 소재를 담은 정물 이미지"
+    "alt": "국민취업지원제도 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/national-employment-support-body.jpg"
   },
   "national-pension-claim": {
     "hero": "/wiki-img/national-pension-claim-hero.jpg",
     "og": "/wiki-img/national-pension-claim-og.jpg",
-    "alt": "노령연금 수급 신청 관련 소재를 담은 정물 이미지"
+    "alt": "노령연금 수급 신청 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/national-pension-claim-body.jpg"
   },
   "national-pension-early": {
     "hero": "/wiki-img/national-pension-early-hero.jpg",
     "og": "/wiki-img/national-pension-early-og.jpg",
-    "alt": "조기노령연금 관련 소재를 담은 정물 이미지"
+    "alt": "조기노령연금 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/national-pension-early-body.jpg"
   },
   "national-pension-late-payment": {
     "hero": "/wiki-img/national-pension-late-payment-hero.jpg",
     "og": "/wiki-img/national-pension-late-payment-og.jpg",
-    "alt": "국민연금 추후납부 관련 소재를 담은 정물 이미지"
+    "alt": "국민연금 추후납부 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/national-pension-late-payment-body.jpg"
   },
   "national-pension-premium-deduction": {
     "hero": "/wiki-img/national-pension-premium-deduction-hero.jpg",
     "og": "/wiki-img/national-pension-premium-deduction-og.jpg",
-    "alt": "국민연금보험료 소득공제 관련 소재를 담은 정물 이미지"
+    "alt": "국민연금보험료 소득공제 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/national-pension-premium-deduction-body.jpg"
   },
   "national-pension-refund": {
     "hero": "/wiki-img/national-pension-refund-hero.jpg",
     "og": "/wiki-img/national-pension-refund-og.jpg",
-    "alt": "국민연금 반환일시금 관련 소재를 담은 정물 이미지"
+    "alt": "국민연금 반환일시금 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/national-pension-refund-body.jpg"
   },
   "national-scholarship": {
     "hero": "/wiki-img/national-scholarship-hero.jpg",
     "og": "/wiki-img/national-scholarship-og.jpg",
-    "alt": "국가장학금 신청 관련 소재를 담은 정물 이미지"
+    "alt": "국가장학금 신청 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/national-scholarship-body.jpg"
   },
   "national-tax-refund-lookup": {
     "hero": "/wiki-img/national-tax-refund-lookup-hero.jpg",
     "og": "/wiki-img/national-tax-refund-lookup-og.jpg",
-    "alt": "국세환급금 조회·신청 관련 소재를 담은 정물 이미지"
+    "alt": "국세환급금 조회·신청 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/national-tax-refund-lookup-body.jpg"
   },
   "newlywed-special-supply": {
     "hero": "/wiki-img/newlywed-special-supply-hero.jpg",
     "og": "/wiki-img/newlywed-special-supply-og.jpg",
-    "alt": "신혼부부 특별공급 관련 소재를 담은 정물 이미지"
+    "alt": "신혼부부 특별공급 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/newlywed-special-supply-body.jpg"
   },
   "nurse-license-exam": {
     "hero": "/wiki-img/nurse-license-exam-hero.jpg",
     "og": "/wiki-img/nurse-license-exam-og.jpg",
-    "alt": "간호사 국가시험 관련 소재를 담은 정물 이미지"
+    "alt": "간호사 국가시험 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/nurse-license-exam-body.jpg"
   },
   "old-diesel-scrap": {
     "hero": "/wiki-img/old-diesel-scrap-hero.jpg",
     "og": "/wiki-img/old-diesel-scrap-og.jpg",
-    "alt": "노후경유차 조기폐차 지원 관련 소재를 담은 정물 이미지"
+    "alt": "노후경유차 조기폐차 지원 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/old-diesel-scrap-body.jpg"
   },
   "organ-donation-registration": {
     "hero": "/wiki-img/organ-donation-registration-hero.jpg",
     "og": "/wiki-img/organ-donation-registration-og.jpg",
-    "alt": "장기기증 희망 등록 관련 소재를 담은 정물 이미지"
+    "alt": "장기기증 희망 등록 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/organ-donation-registration-body.jpg"
   },
   "overseas-stock-capital-gains": {
     "hero": "/wiki-img/overseas-stock-capital-gains-hero.jpg",
     "og": "/wiki-img/overseas-stock-capital-gains-og.jpg",
-    "alt": "해외주식 양도소득세 신고 관련 소재를 담은 정물 이미지"
+    "alt": "해외주식 양도소득세 신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/overseas-stock-capital-gains-body.jpg"
   },
   "parent-benefit": {
     "hero": "/wiki-img/parent-benefit-hero.jpg",
     "og": "/wiki-img/parent-benefit-og.jpg",
-    "alt": "부모급여 관련 소재를 담은 정물 이미지"
+    "alt": "부모급여 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/parent-benefit-body.jpg"
   },
   "parental-leave-benefit": {
     "hero": "/wiki-img/parental-leave-benefit-hero.jpg",
     "og": "/wiki-img/parental-leave-benefit-og.jpg",
-    "alt": "육아휴직 급여 관련 소재를 담은 정물 이미지"
+    "alt": "육아휴직 급여 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/parental-leave-benefit-body.jpg"
   },
   "passport": {
     "hero": "/wiki-img/passport-hero.jpg",
     "og": "/wiki-img/passport-og.jpg",
-    "alt": "여권 발급·갱신 관련 소재를 담은 정물 이미지"
+    "alt": "여권 발급·갱신 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/passport-body.jpg"
   },
   "paternity-leave": {
     "hero": "/wiki-img/paternity-leave-hero.jpg",
     "og": "/wiki-img/paternity-leave-og.jpg",
-    "alt": "배우자 출산전후휴가 관련 소재를 담은 정물 이미지"
+    "alt": "배우자 출산전후휴가 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/paternity-leave-body.jpg"
   },
   "payment-statement-submission": {
     "hero": "/wiki-img/payment-statement-submission-hero.jpg",
     "og": "/wiki-img/payment-statement-submission-og.jpg",
-    "alt": "지급명세서 제출 관련 소재를 담은 정물 이미지"
+    "alt": "지급명세서 제출 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/payment-statement-submission-body.jpg"
   },
   "pension-savings-tax-credit": {
     "hero": "/wiki-img/pension-savings-tax-credit-hero.jpg",
     "og": "/wiki-img/pension-savings-tax-credit-og.jpg",
-    "alt": "연금저축·IRP 세액공제 관련 소재를 담은 정물 이미지"
+    "alt": "연금저축·IRP 세액공제 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/pension-savings-tax-credit-body.jpg"
   },
   "pension-split": {
     "hero": "/wiki-img/pension-split-hero.jpg",
     "og": "/wiki-img/pension-split-og.jpg",
-    "alt": "분할연금 관련 소재를 담은 정물 이미지"
+    "alt": "분할연금 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/pension-split-body.jpg"
   },
   "personal-rehabilitation": {
     "hero": "/wiki-img/personal-rehabilitation-hero.jpg",
     "og": "/wiki-img/personal-rehabilitation-og.jpg",
-    "alt": "개인회생 신청 관련 소재를 담은 정물 이미지"
+    "alt": "개인회생 신청 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/personal-rehabilitation-body.jpg"
   },
   "postpartum-care-support": {
     "hero": "/wiki-img/postpartum-care-support-hero.jpg",
     "og": "/wiki-img/postpartum-care-support-og.jpg",
-    "alt": "산모·신생아 건강관리 지원사업 관련 소재를 담은 정물 이미지"
+    "alt": "산모·신생아 건강관리 지원사업 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/postpartum-care-support-body.jpg"
   },
   "pregnancy-medical-voucher": {
     "hero": "/wiki-img/pregnancy-medical-voucher-hero.jpg",
     "og": "/wiki-img/pregnancy-medical-voucher-og.jpg",
-    "alt": "임신·출산 진료비 지원 관련 소재를 담은 정물 이미지"
+    "alt": "임신·출산 진료비 지원 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/pregnancy-medical-voucher-body.jpg"
   },
   "premium-installment": {
     "hero": "/wiki-img/premium-installment-hero.jpg",
     "og": "/wiki-img/premium-installment-og.jpg",
-    "alt": "건강보험료 분할납부 관련 소재를 담은 정물 이미지"
+    "alt": "건강보험료 분할납부 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/premium-installment-body.jpg"
   },
   "premium-reduction": {
     "hero": "/wiki-img/premium-reduction-hero.jpg",
     "og": "/wiki-img/premium-reduction-og.jpg",
-    "alt": "건강보험료 경감 관련 소재를 담은 정물 이미지"
+    "alt": "건강보험료 경감 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/premium-reduction-body.jpg"
   },
   "private-pension-tax": {
     "hero": "/wiki-img/private-pension-tax-hero.jpg",
     "og": "/wiki-img/private-pension-tax-og.jpg",
-    "alt": "사적연금 연금소득세 관련 소재를 담은 정물 이미지"
+    "alt": "사적연금 연금소득세 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/private-pension-tax-body.jpg"
   },
   "property-registration-tax": {
     "hero": "/wiki-img/property-registration-tax-hero.jpg",
     "og": "/wiki-img/property-registration-tax-og.jpg",
-    "alt": "등록면허세 관련 소재를 담은 정물 이미지"
+    "alt": "등록면허세 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/property-registration-tax-body.jpg"
   },
   "rare-disease-copay": {
     "hero": "/wiki-img/rare-disease-copay-hero.jpg",
     "og": "/wiki-img/rare-disease-copay-og.jpg",
-    "alt": "산정특례 관련 소재를 담은 정물 이미지"
+    "alt": "산정특례 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/rare-disease-copay-body.jpg"
   },
   "real-estate-agent-exam": {
     "hero": "/wiki-img/real-estate-agent-exam-hero.jpg",
     "og": "/wiki-img/real-estate-agent-exam-og.jpg",
-    "alt": "공인중개사 시험 관련 소재를 담은 정물 이미지"
+    "alt": "공인중개사 시험 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/real-estate-agent-exam-body.jpg"
   },
   "real-estate-register": {
     "hero": "/wiki-img/real-estate-register-hero.jpg",
     "og": "/wiki-img/real-estate-register-og.jpg",
-    "alt": "등기부등본 발급 관련 소재를 담은 정물 이미지"
+    "alt": "등기부등본 발급 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/real-estate-register-body.jpg"
   },
   "real-estate-transaction-report": {
     "hero": "/wiki-img/real-estate-transaction-report-hero.jpg",
     "og": "/wiki-img/real-estate-transaction-report-og.jpg",
-    "alt": "부동산 거래 신고 관련 소재를 담은 정물 이미지"
+    "alt": "부동산 거래 신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/real-estate-transaction-report-body.jpg"
   },
   "reduced-hours-parenting-benefit": {
     "hero": "/wiki-img/reduced-hours-parenting-benefit-hero.jpg",
     "og": "/wiki-img/reduced-hours-parenting-benefit-og.jpg",
-    "alt": "육아기 근로시간 단축 급여 관련 소재를 담은 정물 이미지"
+    "alt": "육아기 근로시간 단축 급여 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/reduced-hours-parenting-benefit-body.jpg"
   },
   "rent-contract-report": {
     "hero": "/wiki-img/rent-contract-report-hero.jpg",
     "og": "/wiki-img/rent-contract-report-og.jpg",
-    "alt": "전월세 신고제 관련 소재를 담은 정물 이미지"
+    "alt": "전월세 신고제 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/rent-contract-report-body.jpg"
   },
   "rent-tax-credit": {
     "hero": "/wiki-img/rent-tax-credit-hero.jpg",
     "og": "/wiki-img/rent-tax-credit-og.jpg",
-    "alt": "월세 세액공제 관련 소재를 담은 정물 이미지"
+    "alt": "월세 세액공제 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/rent-tax-credit-body.jpg"
   },
   "rental-income-report": {
     "hero": "/wiki-img/rental-income-report-hero.jpg",
     "og": "/wiki-img/rental-income-report-og.jpg",
-    "alt": "주택임대소득 신고 관련 소재를 담은 정물 이미지"
+    "alt": "주택임대소득 신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/rental-income-report-body.jpg"
   },
   "reserve-forces": {
     "hero": "/wiki-img/reserve-forces-hero.jpg",
     "og": "/wiki-img/reserve-forces-og.jpg",
-    "alt": "예비군 훈련 관련 소재를 담은 정물 이미지"
+    "alt": "예비군 훈련 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/reserve-forces-body.jpg"
   },
   "resident-register-certificate": {
     "hero": "/wiki-img/resident-register-certificate-hero.jpg",
     "og": "/wiki-img/resident-register-certificate-og.jpg",
-    "alt": "주민등록등본·초본 발급 관련 소재를 담은 정물 이미지"
+    "alt": "주민등록등본·초본 발급 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/resident-register-certificate-body.jpg"
   },
   "scaling-insurance": {
     "hero": "/wiki-img/scaling-insurance-hero.jpg",
     "og": "/wiki-img/scaling-insurance-og.jpg",
-    "alt": "스케일링 건강보험 관련 소재를 담은 정물 이미지"
+    "alt": "스케일링 건강보험 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/scaling-insurance-body.jpg"
   },
   "school-transfer": {
     "hero": "/wiki-img/school-transfer-hero.jpg",
     "og": "/wiki-img/school-transfer-og.jpg",
-    "alt": "전학 절차 관련 소재를 담은 정물 이미지"
+    "alt": "전학 절차 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/school-transfer-body.jpg"
   },
   "seal-certificate": {
     "hero": "/wiki-img/seal-certificate-hero.jpg",
     "og": "/wiki-img/seal-certificate-og.jpg",
-    "alt": "인감증명서·본인서명사실확인서 관련 소재를 담은 정물 이미지"
+    "alt": "인감증명서·본인서명사실확인서 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/seal-certificate-body.jpg"
   },
   "self-employed-employment-insurance": {
     "hero": "/wiki-img/self-employed-employment-insurance-hero.jpg",
     "og": "/wiki-img/self-employed-employment-insurance-og.jpg",
-    "alt": "자영업자 고용보험 관련 소재를 담은 정물 이미지"
+    "alt": "자영업자 고용보험 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/self-employed-employment-insurance-body.jpg"
   },
   "senior-dental-support": {
     "hero": "/wiki-img/senior-dental-support-hero.jpg",
     "og": "/wiki-img/senior-dental-support-og.jpg",
-    "alt": "노인 틀니·임플란트 지원 관련 소재를 담은 정물 이미지"
+    "alt": "노인 틀니·임플란트 지원 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/senior-dental-support-body.jpg"
   },
   "senior-jobs": {
     "hero": "/wiki-img/senior-jobs-hero.jpg",
     "og": "/wiki-img/senior-jobs-og.jpg",
-    "alt": "노인일자리 관련 소재를 담은 정물 이미지"
+    "alt": "노인일자리 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/senior-jobs-body.jpg"
   },
   "senior-vaccination": {
     "hero": "/wiki-img/senior-vaccination-hero.jpg",
     "og": "/wiki-img/senior-vaccination-og.jpg",
-    "alt": "어르신 예방접종 관련 소재를 담은 정물 이미지"
+    "alt": "어르신 예방접종 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/senior-vaccination-body.jpg"
   },
   "severance-pay-deadline": {
     "hero": "/wiki-img/severance-pay-deadline-hero.jpg",
     "og": "/wiki-img/severance-pay-deadline-og.jpg",
-    "alt": "퇴직금 지급 기한 관련 소재를 담은 정물 이미지"
+    "alt": "퇴직금 지급 기한 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/severance-pay-deadline-body.jpg"
   },
   "side-job-income-report": {
     "hero": "/wiki-img/side-job-income-report-hero.jpg",
     "og": "/wiki-img/side-job-income-report-og.jpg",
-    "alt": "부업 소득 신고 관련 소재를 담은 정물 이미지"
+    "alt": "부업 소득 신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/side-job-income-report-body.jpg"
   },
   "simplified-taxpayer-criteria": {
     "hero": "/wiki-img/simplified-taxpayer-criteria-hero.jpg",
     "og": "/wiki-img/simplified-taxpayer-criteria-og.jpg",
-    "alt": "간이과세자 기준·전환 관련 소재를 담은 정물 이미지"
+    "alt": "간이과세자 기준·전환 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/simplified-taxpayer-criteria-body.jpg"
   },
   "single-home-capital-gains-exemption": {
     "hero": "/wiki-img/single-home-capital-gains-exemption-hero.jpg",
     "og": "/wiki-img/single-home-capital-gains-exemption-og.jpg",
-    "alt": "1세대 1주택 양도세 비과세 관련 소재를 담은 정물 이미지"
+    "alt": "1세대 1주택 양도세 비과세 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/single-home-capital-gains-exemption-body.jpg"
   },
   "single-parent-support": {
     "hero": "/wiki-img/single-parent-support-hero.jpg",
     "og": "/wiki-img/single-parent-support-og.jpg",
-    "alt": "한부모가족 지원 관련 소재를 담은 정물 이미지"
+    "alt": "한부모가족 지원 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/single-parent-support-body.jpg"
   },
   "small-living-loan": {
     "hero": "/wiki-img/small-living-loan-hero.jpg",
     "og": "/wiki-img/small-living-loan-og.jpg",
-    "alt": "소액생계비대출(불법사금융예방대출) 관련 소재를 담은 정물 이미지"
+    "alt": "소액생계비대출(불법사금융예방대출) 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/small-living-loan-body.jpg"
   },
   "starbucks-e-frequency": {
     "hero": "/wiki-img/starbucks-e-frequency-hero.jpg",
     "og": "/wiki-img/starbucks-e-frequency-og.jpg",
-    "alt": "스타벅스 e-프리퀀시 관련 소재를 담은 정물 이미지"
+    "alt": "스타벅스 e-프리퀀시 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/starbucks-e-frequency-body.jpg"
   },
   "student-loan-repayment": {
     "hero": "/wiki-img/student-loan-repayment-hero.jpg",
     "og": "/wiki-img/student-loan-repayment-og.jpg",
-    "alt": "학자금대출 상환 관련 소재를 담은 정물 이미지"
+    "alt": "학자금대출 상환 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/student-loan-repayment-body.jpg"
   },
   "sukbak-daejeon": {
     "hero": "/wiki-img/sukbak-daejeon-hero.jpg",
     "og": "/wiki-img/sukbak-daejeon-og.jpg",
-    "alt": "대한민국 숙박세일 페스타(숙박대전) 관련 소재를 담은 정물 이미지"
+    "alt": "대한민국 숙박세일 페스타(숙박대전) 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/sukbak-daejeon-body.jpg"
   },
   "survivor-pension": {
     "hero": "/wiki-img/survivor-pension-hero.jpg",
     "og": "/wiki-img/survivor-pension-og.jpg",
-    "alt": "유족연금 관련 소재를 담은 정물 이미지"
+    "alt": "유족연금 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/survivor-pension-body.jpg"
   },
   "susi-application": {
     "hero": "/wiki-img/susi-application-hero.jpg",
     "og": "/wiki-img/susi-application-og.jpg",
-    "alt": "대학 수시 원서 접수 관련 소재를 담은 정물 이미지"
+    "alt": "대학 수시 원서 접수 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/susi-application-body.jpg"
   },
   "tax-delinquency-lookup": {
     "hero": "/wiki-img/tax-delinquency-lookup-hero.jpg",
     "og": "/wiki-img/tax-delinquency-lookup-og.jpg",
-    "alt": "체납세금 조회·납부 관련 소재를 담은 정물 이미지"
+    "alt": "체납세금 조회·납부 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/tax-delinquency-lookup-body.jpg"
   },
   "tax-payment-extension": {
     "hero": "/wiki-img/tax-payment-extension-hero.jpg",
     "og": "/wiki-img/tax-payment-extension-og.jpg",
-    "alt": "국세 납부기한 연장 관련 소재를 담은 정물 이미지"
+    "alt": "국세 납부기한 연장 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/tax-payment-extension-body.jpg"
   },
   "teacher-appointment-exam": {
     "hero": "/wiki-img/teacher-appointment-exam-hero.jpg",
     "og": "/wiki-img/teacher-appointment-exam-og.jpg",
-    "alt": "교원 임용시험 관련 소재를 담은 정물 이미지"
+    "alt": "교원 임용시험 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/teacher-appointment-exam-body.jpg"
   },
   "together-care-center": {
     "hero": "/wiki-img/together-care-center-hero.jpg",
     "og": "/wiki-img/together-care-center-og.jpg",
-    "alt": "다함께돌봄센터 관련 소재를 담은 정물 이미지"
+    "alt": "다함께돌봄센터 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/together-care-center-body.jpg"
   },
   "travel-month": {
     "hero": "/wiki-img/travel-month-hero.jpg",
     "og": "/wiki-img/travel-month-og.jpg",
-    "alt": "여행가는 달 관련 소재를 담은 정물 이미지"
+    "alt": "여행가는 달 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/travel-month-body.jpg"
   },
   "unemployment-benefit": {
     "hero": "/wiki-img/unemployment-benefit-hero.jpg",
     "og": "/wiki-img/unemployment-benefit-og.jpg",
-    "alt": "실업급여(구직급여) 관련 소재를 담은 정물 이미지"
+    "alt": "실업급여(구직급여) 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/unemployment-benefit-body.jpg"
   },
   "unpaid-wage-advance-payment": {
     "hero": "/wiki-img/unpaid-wage-advance-payment-hero.jpg",
     "og": "/wiki-img/unpaid-wage-advance-payment-og.jpg",
-    "alt": "체당금(대지급금) 관련 소재를 담은 정물 이미지"
+    "alt": "체당금(대지급금) 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/unpaid-wage-advance-payment-body.jpg"
   },
   "vaccination-certificate": {
     "hero": "/wiki-img/vaccination-certificate-hero.jpg",
     "og": "/wiki-img/vaccination-certificate-og.jpg",
-    "alt": "예방접종 증명서 발급 관련 소재를 담은 정물 이미지"
+    "alt": "예방접종 증명서 발급 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/vaccination-certificate-body.jpg"
   },
   "vat-preliminary-notice": {
     "hero": "/wiki-img/vat-preliminary-notice-hero.jpg",
     "og": "/wiki-img/vat-preliminary-notice-og.jpg",
-    "alt": "부가가치세 예정고지 관련 소재를 담은 정물 이미지"
+    "alt": "부가가치세 예정고지 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/vat-preliminary-notice-body.jpg"
   },
   "vehicle-acquisition-tax": {
     "hero": "/wiki-img/vehicle-acquisition-tax-hero.jpg",
     "og": "/wiki-img/vehicle-acquisition-tax-og.jpg",
-    "alt": "자동차 취득세 관련 소재를 담은 정물 이미지"
+    "alt": "자동차 취득세 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/vehicle-acquisition-tax-body.jpg"
   },
   "veterans-registration": {
     "hero": "/wiki-img/veterans-registration-hero.jpg",
     "og": "/wiki-img/veterans-registration-og.jpg",
-    "alt": "국가유공자 등록 신청 관련 소재를 담은 정물 이미지"
+    "alt": "국가유공자 등록 신청 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/veterans-registration-body.jpg"
   },
   "wage-arrears-complaint": {
     "hero": "/wiki-img/wage-arrears-complaint-hero.jpg",
     "og": "/wiki-img/wage-arrears-complaint-og.jpg",
-    "alt": "임금체불 진정 관련 소재를 담은 정물 이미지"
+    "alt": "임금체불 진정 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/wage-arrears-complaint-body.jpg"
   },
   "welfare-service-lookup": {
     "hero": "/wiki-img/welfare-service-lookup-hero.jpg",
     "og": "/wiki-img/welfare-service-lookup-og.jpg",
-    "alt": "맞춤형급여안내(복지멤버십) 관련 소재를 담은 정물 이미지"
+    "alt": "맞춤형급여안내(복지멤버십) 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/welfare-service-lookup-body.jpg"
   },
   "withholding-tax-monthly": {
     "hero": "/wiki-img/withholding-tax-monthly-hero.jpg",
     "og": "/wiki-img/withholding-tax-monthly-og.jpg",
-    "alt": "원천징수 이행상황 신고 관련 소재를 담은 정물 이미지"
+    "alt": "원천징수 이행상황 신고 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/withholding-tax-monthly-body.jpg"
   },
   "youth-housing-subscription": {
     "hero": "/wiki-img/youth-housing-subscription-hero.jpg",
     "og": "/wiki-img/youth-housing-subscription-og.jpg",
-    "alt": "청년 주택드림 청약통장 관련 소재를 담은 정물 이미지"
+    "alt": "청년 주택드림 청약통장 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/youth-housing-subscription-body.jpg"
   },
   "youth-jeonse-loan": {
     "hero": "/wiki-img/youth-jeonse-loan-hero.jpg",
     "og": "/wiki-img/youth-jeonse-loan-og.jpg",
-    "alt": "청년 전월세 보증금 대출 관련 소재를 담은 정물 이미지"
+    "alt": "청년 전월세 보증금 대출 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/youth-jeonse-loan-body.jpg"
   },
   "youth-leap-account": {
     "hero": "/wiki-img/youth-leap-account-hero.jpg",
     "og": "/wiki-img/youth-leap-account-og.jpg",
-    "alt": "청년도약계좌·청년미래적금 관련 소재를 담은 정물 이미지"
+    "alt": "청년도약계좌·청년미래적금 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/youth-leap-account-body.jpg"
   },
   "youth-monthly-rent-support": {
     "hero": "/wiki-img/youth-monthly-rent-support-hero.jpg",
     "og": "/wiki-img/youth-monthly-rent-support-og.jpg",
-    "alt": "청년 월세 지원 관련 소재를 담은 정물 이미지"
+    "alt": "청년 월세 지원 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/youth-monthly-rent-support-body.jpg"
   },
   "youth-sme-tax-reduction": {
     "hero": "/wiki-img/youth-sme-tax-reduction-hero.jpg",
     "og": "/wiki-img/youth-sme-tax-reduction-og.jpg",
-    "alt": "중소기업 취업자 소득세 감면 관련 소재를 담은 정물 이미지"
+    "alt": "중소기업 취업자 소득세 감면 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/youth-sme-tax-reduction-body.jpg"
   },
   "youth-startup-support": {
     "hero": "/wiki-img/youth-startup-support-hero.jpg",
     "og": "/wiki-img/youth-startup-support-og.jpg",
-    "alt": "예비창업패키지 관련 소재를 담은 정물 이미지"
+    "alt": "예비창업패키지 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/youth-startup-support-body.jpg"
   },
   "youth-tomorrow-savings": {
     "hero": "/wiki-img/youth-tomorrow-savings-hero.jpg",
     "og": "/wiki-img/youth-tomorrow-savings-og.jpg",
-    "alt": "청년내일저축계좌 관련 소재를 담은 정물 이미지"
+    "alt": "청년내일저축계좌 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/youth-tomorrow-savings-body.jpg"
   },
   "youth-work-experience": {
     "hero": "/wiki-img/youth-work-experience-hero.jpg",
     "og": "/wiki-img/youth-work-experience-og.jpg",
-    "alt": "청년 일경험 지원 관련 소재를 담은 정물 이미지"
+    "alt": "청년 일경험 지원 관련 소재를 담은 정물 이미지",
+    "body": "/wiki-img/youth-work-experience-body.jpg"
   }
 }
