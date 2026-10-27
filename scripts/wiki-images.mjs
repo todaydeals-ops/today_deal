@@ -82,6 +82,11 @@ const SLUG_MOTIF = {
   "november-sale-calendar-2026": "벽에 걸린 빈 칸 달력과 쇼핑백, 늦가을 창가",
 };
 
+// 신규 항목의 고유 소재(2026-10-27 웨이브 3~6) — content/wiki-image-motifs.json (slug → 소재 한 줄)
+try {
+  const extra = JSON.parse(fs.readFileSync(path.join(ROOT, "content", "wiki-image-motifs.json"), "utf8"));
+  for (const [k, v] of Object.entries(extra)) if (!SLUG_MOTIF[k]) SLUG_MOTIF[k] = v;
+} catch { /* 파일이 없으면 기존 소재만 쓴다 */ }
 function entries() {
   return fs.readdirSync(WIKI).filter((f) => f.endsWith(".json")).map((f) => JSON.parse(fs.readFileSync(path.join(WIKI, f), "utf8")))
     .filter((e) => e.type === "apply" || e.type === "sale");
@@ -158,7 +163,10 @@ if (mode === "sample") {
   const man = path.join(ROOT, "public", "wiki-img", "manifest.json");
   const manifest = fs.existsSync(man) ? JSON.parse(fs.readFileSync(man, "utf8")) : {};
   const jobs = [];
-  for (const e of entries()) for (const role of ["hero", "body"]) {
+  const ROLES = (process.env.ROLES || "hero,body").split(",");
+  const MAX = Number(process.env.MAX || 0);
+  for (const e of entries()) for (const role of ROLES) {
+    if (MAX && jobs.length >= MAX) break;
     const key = `${e.slug}-${role}`;
     if (manifest[key]) continue; // 고정 — 이미 만든 건 다시 만들지 않는다
     const rel = `.tmp/codex-wiki/batch/${key}.jpg`;
@@ -186,10 +194,18 @@ if (mode === "sample") {
   const manPath = path.join(ROOT, "content", "wiki-images.json");
   const man = JSON.parse(fs.readFileSync(manPath, "utf8"));
   fs.mkdirSync(outDir, { recursive: true });
-  let added = 0, skipped = 0, noHero = [];
+  let added = 0, skipped = 0, bodyAdded = 0, noHero = [];
   for (const e of entries()) {
-    if (man[e.slug]) { skipped++; continue; }
     const src = (r) => path.join(ROOT, ".tmp", "codex-wiki", "batch", `${e.slug}-${r}.jpg`);
+    if (man[e.slug]) {
+      // 히어로만 먼저 적용된 항목에 본문 이미지가 나중에 만들어졌다면 body 만 추가한다(히어로·og 는 고정, 건드리지 않는다)
+      if (!man[e.slug].body && fs.existsSync(src("body"))) {
+        fs.mkdirSync(outDir, { recursive: true });
+        await sharp(src("body")).resize(960, 540, { fit: "cover" }).jpeg({ quality: 80, mozjpeg: true }).toFile(path.join(outDir, `${e.slug}-body.jpg`));
+        man[e.slug].body = `/wiki-img/${e.slug}-body.jpg`; bodyAdded++;
+      } else skipped++;
+      continue;
+    }
     if (!fs.existsSync(src("hero"))) { noHero.push(e.slug); continue; }
     await sharp(src("hero")).resize(1200, 675, { fit: "cover" }).jpeg({ quality: 82, mozjpeg: true }).toFile(path.join(outDir, `${e.slug}-hero.jpg`));
     await sharp(src("hero")).resize(1200, 630, { fit: "cover" }).jpeg({ quality: 82, mozjpeg: true }).toFile(path.join(outDir, `${e.slug}-og.jpg`));
@@ -201,7 +217,7 @@ if (mode === "sample") {
     man[e.slug] = rec; added++;
   }
   fs.writeFileSync(manPath, JSON.stringify(man, null, 2) + "\n");
-  console.log(`적용 ${added}개 · 이미 고정 ${skipped}개 · 히어로 없음 ${noHero.length}개${noHero.length ? " (" + noHero.join(", ") + ")" : ""}`);
+  console.log(`적용 ${added}개 · 본문 추가 ${bodyAdded}개 · 이미 고정 ${skipped}개 · 히어로 없음 ${noHero.length}개${noHero.length ? " (" + noHero.join(", ") + ")" : ""}`);
 } else if (mode === "harvest") {
   // 이미 돌아간 배치의 로그에서 생성 이미지를 회수한다(파일이 없는 키만).
   let n = 0, miss = 0;
