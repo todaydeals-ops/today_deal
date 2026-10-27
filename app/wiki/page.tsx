@@ -1,15 +1,15 @@
-// 생활백과 허브 — 검색 · 분야별 목록 · 인물 색인 · 가나다 색인. 전부 빌드 때 정적으로 굽는다.
+// 생활백과 허브 — 검색 · 종류별 목록(묶음 소제목·바로가기 칩). 전부 빌드 때 정적으로 굽는다.
+// 2026-10-27 리뉴얼: 인물 색인·가나다 색인은 뺐다(사장님 결정). 검색은 표제어·다른 이름·인물 이름까지 그대로 찾는다.
 // ★searchParams 를 읽지 않는다. 읽으면 동적 렌더가 되고 런타임에 content/wiki 를 읽어야 한다.
-//   분야 필터는 #앵커, 검색은 브라우저에서 한다.
+//   종류 이동은 #앵커(id = 종류 키, 묶음은 `${종류}-${묶음 id}`), 검색은 브라우저에서 한다.
 import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import MediaFooter from "@/components/MediaFooter";
-import { allEntries, entriesByType, ganadaIndex, peopleIndex, WIKI_BASE } from "@/lib/wiki/load";
-import { WIKI_GROUPS, WIKI_TYPE_LABEL, type WikiType } from "@/lib/wiki/types";
+import { allEntries, entriesByType, WIKI_BASE } from "@/lib/wiki/load";
+import { WIKI_GROUPS, WIKI_TYPE_LABEL, type WikiEntry, type WikiType } from "@/lib/wiki/types";
 import WikiSearch from "./WikiSearch";
-import "../magazine/magazine.css";
-import "./wiki.css";
+import s from "./wiki-hub.module.css";
 
 export const dynamic = "force-static";
 
@@ -29,86 +29,86 @@ const BLURB: Record<WikiType, string> = {
   gift: "누구에게 얼마짜리를, 무엇을",
   "error-code": "화면에 뜬 코드가 무슨 뜻인지",
 };
+// 섹션 머리 위 작은 영문 라벨(Mono) — 홈의 "01 · WIKI" 식
+const EYEBROW: Record<WikiType, string> = {
+  sale: "SALE CALENDAR",
+  apply: "APPLY & REFUND",
+  "video-pick": "VIDEO PICK",
+  ingredient: "INGREDIENT",
+  product: "PRODUCT",
+  gift: "GIFT",
+  "error-code": "ERROR CODE",
+};
+
+function Card({ e }: { e: WikiEntry }) {
+  return (
+    <Link href={`/wiki/${e.slug}`} className={s.card}>
+      <span className={s.cardTitle}>{e.title}</span>
+      <span className={s.cardSub}>{e.description}</span>
+    </Link>
+  );
+}
 
 export default function WikiHome() {
   const all = allEntries();
-  const people = peopleIndex();
-  const ganada = ganadaIndex();
   const items = all.map((e) => ({ slug: e.slug, title: e.title, seoTitle: e.seoTitle, aliases: e.aliases, people: e.people ?? [], type: WIKI_TYPE_LABEL[e.type] }));
 
-  return (
-    <>
-      <Header />
-      <div className="mz-page">
-        <div className="mz-wrap" style={{ paddingBottom: 90 }}>
-          <section className="wk-hero">
-            <h1>생활백과</h1>
-            <p>사기 전에, 고치기 전에 찾아보는 정본. 항목마다 근거 자료를 붙이고, 바뀌면 고칩니다. 지금 {all.length}개 항목.</p>
-            <WikiSearch items={items} />
-            <div className="wk-ganada" aria-label="분야">
-              {ORDER.filter((t) => entriesByType(t).length).map((t) => (
-                <a key={t} href={`#${t}`}>{WIKI_TYPE_LABEL[t]}</a>
-              ))}
-              {people.length > 0 && <a href="#people">인물 색인</a>}
-              <a href="#ganada">가나다</a>
-            </div>
-          </section>
+  const sections = ORDER.map((t) => ({ t, list: entriesByType(t) })).filter((x) => x.list.length > 0);
 
-          {ORDER.map((t) => {
-            const list = entriesByType(t);
-            if (!list.length) return null;
-            // 묶음(group)이 있는 항목은 묶음별 소제목으로 나눈다. 묶음 없는 항목(영상 속 그 제품 등)은 한 덩어리.
-            const grouped = WIKI_GROUPS.map((g) => ({ g, items: list.filter((e) => e.group === g.label) })).filter((x) => x.items.length);
-            const ungrouped = list.filter((e) => !e.group || !WIKI_GROUPS.some((g) => g.label === e.group));
-            const card = (e: (typeof list)[number]) => (
-              <Link key={e.slug} href={`/wiki/${e.slug}`} className="wk-card">
-                <b>{e.title}</b>
-                <span>{e.description.slice(0, 64)}{e.description.length > 64 ? "…" : ""}</span>
-              </Link>
-            );
-            return (
-              <section key={t} id={t} className="wk-sec" style={{ scrollMarginTop: 80 }}>
-                <div className="wk-sec-h"><h2>{WIKI_TYPE_LABEL[t]}</h2><span>{BLURB[t]} · {list.length}개</span></div>
+  return (
+    <div className="rn-page">
+      <Header />
+      <main className={`rn-wrap ${s.root}`}>
+        <section className={s.hero}>
+          <span className="rn-eyebrow">LIFE WIKI</span>
+          <h1 className={s.h1}>생활백과</h1>
+          <p className={s.lead}>사기 전에, 고치기 전에 찾아보는 정본. 항목마다 근거 자료를 붙이고, 바뀌면 고칩니다. 지금 {all.length}개 항목.</p>
+          <WikiSearch items={items} />
+        </section>
+
+        <nav className={s.bar} aria-label="분야">
+          <div className={s.barIn}>
+            {sections.map(({ t, list }) => (
+              <a key={t} href={`#${t}`} className={s.typeChip}>{WIKI_TYPE_LABEL[t]}<em>{list.length}</em></a>
+            ))}
+          </div>
+        </nav>
+
+        {sections.map(({ t, list }, i) => {
+          // 묶음(group)이 있는 항목은 묶음별 소제목으로 나눈다. 묶음 없는 항목(영상 속 그 제품 등)은 한 덩어리.
+          const grouped = WIKI_GROUPS.map((g) => ({ g, items: list.filter((e) => e.group === g.label) })).filter((x) => x.items.length);
+          const ungrouped = list.filter((e) => !e.group || !WIKI_GROUPS.some((g) => g.label === e.group));
+          return (
+            <section key={t} id={t} className={`rn-sec ${s.sec} ${i === 0 ? s.firstSec : ""}`} aria-labelledby={`${t}-title`}>
+              <div className="rn-sec-head">
+                <div className="rn-sec-title">
+                  <span className="rn-eyebrow">{EYEBROW[t]}</span>
+                  <h2 id={`${t}-title`}>{WIKI_TYPE_LABEL[t]}</h2>
+                  <p className={s.blurb}>{BLURB[t]}</p>
+                </div>
+                <span className={s.count}>{list.length}개</span>
+              </div>
+              <div className={s.secBody}>
                 {grouped.length > 1 && (
-                  <div className="wk-jump" aria-label={`${WIKI_TYPE_LABEL[t]} 묶음`}>
-                    {grouped.map(({ g, items }) => <a key={g.id} href={`#${t}-${g.id}`}>{g.label}<em>{items.length}</em></a>)}
+                  <div className={s.jump} role="group" aria-label={`${WIKI_TYPE_LABEL[t]} 묶음`}>
+                    {grouped.map(({ g, items: gi }) => (
+                      <a key={g.id} href={`#${t}-${g.id}`} className={s.jumpChip}>{g.label}<em>{gi.length}</em></a>
+                    ))}
                   </div>
                 )}
-                {grouped.map(({ g, items }) => (
-                  <div key={g.id} id={`${t}-${g.id}`} className="wk-grp" style={{ scrollMarginTop: 80 }}>
-                    <h3 className="wk-grp-h">{g.label}<span>{items.length}개</span></h3>
-                    <div className="wk-cards">{items.map(card)}</div>
+                {grouped.map(({ g, items: gi }) => (
+                  <div key={g.id} id={`${t}-${g.id}`} className={s.grp}>
+                    <h3 className={s.grpHead}>{g.label}<span>{gi.length}개</span></h3>
+                    <div className={s.cards}>{gi.map((e) => <Card key={e.slug} e={e} />)}</div>
                   </div>
                 ))}
-                {ungrouped.length > 0 && <div className="wk-cards">{ungrouped.map(card)}</div>}
-              </section>
-            );
-          })}
-
-          {people.length > 0 && (
-            <section id="people" className="wk-sec" style={{ scrollMarginTop: 80 }}>
-              <div className="wk-sec-h"><h2>인물 색인</h2><span>영상에 나온 사람 이름으로 찾기</span></div>
-              {people.map((p) => (
-                <div key={p.name} className="wk-ganada-row">
-                  <b style={{ fontSize: 17 }}>{p.name}</b>
-                  <div>{p.entries.map((e) => <Link key={e.slug} href={`/wiki/${e.slug}`}>{e.title}</Link>)}</div>
-                </div>
-              ))}
-            </section>
-          )}
-
-          <section id="ganada" className="wk-sec" style={{ scrollMarginTop: 80 }}>
-            <div className="wk-sec-h"><h2>가나다 색인</h2><span>전체 {all.length}개</span></div>
-            {ganada.map((g) => (
-              <div key={g.key} className="wk-ganada-row">
-                <b>{g.key}</b>
-                <div>{g.entries.map((e) => <Link key={e.slug} href={`/wiki/${e.slug}`}>{e.title}</Link>)}</div>
+                {ungrouped.length > 0 && <div className={s.cards}>{ungrouped.map((e) => <Card key={e.slug} e={e} />)}</div>}
               </div>
-            ))}
-          </section>
-        </div>
-      </div>
+            </section>
+          );
+        })}
+      </main>
       <MediaFooter />
-    </>
+    </div>
   );
 }

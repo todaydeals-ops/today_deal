@@ -1,21 +1,26 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { fetchMagazineList, fetchMagazineCountBy } from "@/lib/data/magazine";
-import { FeaturedImageSlot } from "@/components/magazine/Chrome";
-import Header from "@/components/Header";
-import BeautyCategoryIndex from "@/components/magazine/BeautyCategoryIndex";
-import Pagination from "@/components/magazine/Pagination";
-import MediaFooter from "@/components/MediaFooter";
-import { beautyCategoryByKey, beautyCategoryOf } from "@/lib/magazine/beautyCategories";
+import HubPage, { type HubConfig } from "@/components/hub/HubPage";
+import { BEAUTY_CATEGORIES, beautyCategoryByKey } from "@/lib/magazine/beautyCategories";
 import { beautyHref } from "@/lib/magazine/subdomain";
-import "../magazine/magazine.css";
 
 // 성분연구소 — 오늘의딜 파생 뷰티·다이어트 성분 검증 미디어. field="뷰티·성분" + 고유 6분류.
+// 2026-10-27 리뉴얼: 화면은 건강·뷰티 허브 공용 컴포넌트(components/hub)가 그린다. 이 파일은 SEO·조회 조건·카피만 가진다.
 export const revalidate = 3600;
-const mono = "'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif";
-const serif = "'Noto Serif KR', serif";
-const PER = 12;
-const fmtDate = (iso: string) => iso.slice(0, 10).replace(/-/g, ".");
+
+const CONFIG: HubConfig = {
+  lab: "beauty",
+  field: "뷰티·성분",
+  categories: BEAUTY_CATEGORIES,
+  eyebrow: "INGREDIENT LAB",
+  crumb: "뷰티 성분",
+  headline: ["성분을 알면, ", "선택", "이 쉬워집니다."],
+  lead: "화제성이나 후기가 아니라, 그 성분이 임상에서 무엇을 증명했고 무엇이 아직인지로 따집니다.",
+  catLeadTail: "임상 근거가 어디까지 확인됐는지 갈라 정리했습니다.",
+  listTitle: "성분 분석",
+  readLabel: "분석 읽기",
+  emptyText: "이 분류의 성분 분석을 준비하고 있어요.",
+  shortLabel: "성분",
+};
 
 // 분류 페이지(?cat=)는 자기 자신을 canonical 로 — 정적 metadata 면 전부 홈을 가리켜 색인이 안 된다.
 export async function generateMetadata({ searchParams }: { searchParams: Promise<{ cat?: string }> }): Promise<Metadata> {
@@ -36,102 +41,5 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
 
 export default async function BeautyHome({ searchParams }: { searchParams: Promise<{ cat?: string; page?: string }> }) {
   const sp = await searchParams;
-  const cat = beautyCategoryByKey(sp.cat);
-  const page = Math.max(1, Number(sp.page) || 1);
-  // 페이징은 DB 에서 끝낸다(전 편 본문을 끌어오지 않기 위해). goodsleep 과 동일 구조.
-  const where = { field: "뷰티·성분", slugs: cat?.slugs };
-  const [total, pageList] = await Promise.all([
-    fetchMagazineCountBy(where),
-    fetchMagazineList({ ...where, offset: (page - 1) * PER, limit: PER }),
-  ]);
-  const totalPages = Math.max(1, Math.ceil(total / PER));
-  const featured = page === 1 ? pageList[0] : undefined;
-  const rows = page === 1 ? pageList.slice(1) : pageList;
-  const showIndex = !cat && page === 1;
-
-  const pageHref = (p: number) => beautyHref(cat?.key, p);
-
-  return (
-    <>
-      <Header />
-
-      <div className="mz-page">
-        <section className="mz-wrap mz-slogan" style={{ paddingTop: 46, paddingBottom: 34 }}>
-          <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: "3px", textTransform: "uppercase", color: "#9a9286" }}>{`오늘의딜 · 뷰티 성분`}</div>
-          {cat ? (
-            <>
-              <h1 style={{ fontFamily: serif, fontWeight: 700, fontSize: "clamp(28px,4.4vw,44px)", lineHeight: 1.32, letterSpacing: "-1px", color: "#16140f", margin: "18px 0 0" }}>{cat.label}</h1>
-              <p style={{ fontSize: 15.5, lineHeight: 1.85, color: "#46433d", margin: "16px 0 0", maxWidth: 640 }}>{cat.angle}을(를) 중심으로, 임상 근거가 어디까지 확인됐는지 갈라 정리했습니다.</p>
-            </>
-          ) : (
-            <>
-              <h1 style={{ fontFamily: serif, fontWeight: 700, fontSize: "clamp(28px,4.4vw,44px)", lineHeight: 1.32, letterSpacing: "-1px", color: "#16140f", margin: "18px 0 0", maxWidth: 820, textWrap: "balance" }}>
-                성분을 알면, <span style={{ color: "#ff5a3c" }}>선택</span>이 쉬워집니다.
-              </h1>
-              <p style={{ fontSize: 15.5, lineHeight: 1.85, color: "#46433d", margin: "18px 0 0", maxWidth: 640 }}>
-                화제성이나 후기가 아니라, 그 성분이 임상에서 무엇을 증명했고 무엇이 아직인지로 따집니다.
-              </p>
-            </>
-          )}
-        </section>
-
-        {showIndex && <BeautyCategoryIndex />}
-
-        {total === 0 ? (
-          <section className="mz-wrap" style={{ paddingTop: 20, paddingBottom: 80, color: "#9a9286" }}>
-            <div style={{ fontFamily: serif, fontSize: 20, fontWeight: 600, color: "#46433d" }}>이 분류의 성분 분석을 준비하고 있어요.</div>
-          </section>
-        ) : (
-          <>
-            {featured && (
-              <section className="mz-wrap" style={{ paddingTop: 34, paddingBottom: 30 }}>
-                <Link href={`/magazine/${featured.slug}`} className="mz-feat">
-                  <div>
-                    <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
-                      <span style={{ fontSize: 11.5, fontWeight: 600, color: beautyCategoryOf(featured.slug)?.color ?? "#46433d", background: "#efeae1", borderRadius: 9999, padding: "4px 12px" }}>{beautyCategoryOf(featured.slug)?.label ?? "뷰티·성분"}</span>
-                      <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: "1px", color: "#9a9286" }}>FEATURED</span>
-                    </div>
-                    <h2 className="feat-title" style={{ fontFamily: serif, fontWeight: 700, fontSize: 40, letterSpacing: "-1.4px", lineHeight: 1.22, margin: "18px 0 0", color: "#16140f", textWrap: "balance" }}>{featured.title}</h2>
-                    {featured.excerpt && <p style={{ fontSize: 15.5, lineHeight: 1.85, color: "#46433d", margin: "18px 0 0", maxWidth: 520 }}>{featured.excerpt}</p>}
-                    <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 24, flexWrap: "wrap" }}>
-                      <span style={{ display: "inline-flex", alignItems: "center", gap: 8, fontWeight: 700, fontSize: 14, color: "#16140f", borderBottom: "2px solid #ff5a3c", paddingBottom: 3 }}>분석 읽기 <span style={{ fontFamily: mono }}>&rarr;</span></span>
-                      <span style={{ fontFamily: mono, fontSize: 12, color: "#9a9286" }}>오늘의딜 · {fmtDate(featured.createdAt)}{featured.readMin ? ` · 읽기 ${featured.readMin}분` : ""}</span>
-                    </div>
-                  </div>
-                  <FeaturedImageSlot cornerKey={featured.corner} image={featured.image} title={featured.title} label={beautyCategoryOf(featured.slug)?.label ?? "성분"} brand="오늘의딜" />
-                </Link>
-              </section>
-            )}
-
-            {rows.length > 0 && (
-              <section className="mz-wrap" style={{ paddingTop: 14, paddingBottom: 10 }}>
-                <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", borderTop: "1px solid rgba(22,20,15,0.16)", paddingTop: 16, marginBottom: 6 }}>
-                  <span style={{ fontWeight: 800, fontSize: 18 }}>{cat ? cat.label : "성분 분석"}</span>
-                  <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: "2px", color: "#9a9286" }}>{total}편</span>
-                </div>
-                {rows.map((a, i) => {
-                  const rc = beautyCategoryOf(a.slug);
-                  return (
-                    <Link key={a.id} href={`/magazine/${a.slug}`} className="mz-row row-link">
-                      <span className="mz-row-num" style={{ fontFamily: mono, fontSize: 13, fontWeight: 600, color: "#c0b8a9" }}>{String((page - 1) * PER + (page === 1 ? i + 2 : i + 1)).padStart(2, "0")}</span>
-                      <span style={{ display: "flex", alignItems: "center", gap: 9 }}>
-                        <span style={{ width: 8, height: 8, borderRadius: 9999, background: rc?.color ?? "#3f5a54", flex: "none" }} />
-                        <span style={{ fontSize: 11.5, fontWeight: 700, color: rc?.color ?? "#3f5a54" }}>{rc?.label ?? "성분"}</span>
-                      </span>
-                      <span className="mz-row-title" style={{ fontFamily: serif, fontWeight: 600, fontSize: 21, letterSpacing: "-0.6px", lineHeight: 1.35, color: "#16140f" }}>{a.title}</span>
-                      <span className="mz-row-go row-go" style={{ fontFamily: mono, fontSize: 16, color: "#16140f" }}>&rarr;</span>
-                    </Link>
-                  );
-                })}
-              </section>
-            )}
-
-            <Pagination page={page} totalPages={totalPages} href={pageHref} />
-          </>
-        )}
-      </div>
-
-      <MediaFooter />
-    </>
-  );
+  return <HubPage config={CONFIG} cat={beautyCategoryByKey(sp.cat)} page={Math.max(1, Number(sp.page) || 1)} />;
 }

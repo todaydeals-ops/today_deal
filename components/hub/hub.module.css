@@ -1,0 +1,118 @@
+/* 건강·뷰티 허브(잠자리 · 알약 · 성분) 공용 — 2026-10-27 리뉴얼.
+   값은 홈(app/home.module.css)과 AS 목록(app/b4as/as-list.module.css)의 시안 수치를 그대로 옮겼다. 토큰은 app/renewal.css 의 --rn-*.
+   ★모든 규칙을 .root 아래에 둔다. 전역 ".rn-page a:hover { color: 초록 }" (명시도 0,2,1)을 이기려면 클래스 3개짜리 선택자가 필요하다
+     (잉크 버튼·활성 칩 위에서 글자가 초록으로 바뀌어 사라지는 사고 방지).
+   모바일 브레이크포인트는 760px(renewal.css 와 같다). */
+
+.root { --hub-green-on: #005928; }
+@supports (color: oklch(0 0 0)) {
+  .root { --hub-green-on: oklch(0.4 0.12 155); }
+}
+
+/* ── 히어로 ── */
+.root .hero { display: flex; flex-direction: column; gap: 18px; padding: 28px 0 24px; }
+.root .crumb { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 13px; color: var(--rn-muted); }
+.root .crumb [aria-current="page"] { color: var(--rn-muted); }
+.root .heroText { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.root .h1Row { display: flex; align-items: center; gap: 8px; }
+.root .back { display: none; }
+.root .h1 { margin: 0; max-width: 860px; font-size: clamp(30px, 4vw, 44px); line-height: 1.22; letter-spacing: -0.04em; font-weight: 800; text-wrap: pretty; }
+.root .h1 em { font-style: normal; color: var(--rn-green-text); }
+.root .lead { margin: 0; max-width: 640px; font-size: 17px; line-height: 1.7; color: var(--rn-body-muted); }
+
+/* ── 분류 카드 (허브 첫 화면): 번호 · 색 점 / 이름 / Mono 영문 / 한 줄 설명 ── */
+.root .cats { display: grid; grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr)); gap: 12px; padding: 4px 0 40px; }
+.root .cat { display: flex; flex-direction: column; gap: 4px; min-width: 0; padding: 16px 16px 18px; border: 1px solid transparent; border-radius: 16px; background: var(--rn-tint); }
+.root .cat:hover { border-color: var(--rn-green); background: #fff; }
+.root .catTop { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.root .catNo { font-family: var(--rn-mono); font-size: 12px; font-weight: 600; color: var(--rn-green-text); }
+.root .catDot { flex: none; width: 9px; height: 9px; border-radius: 999px; }
+.root .catName { font-size: 17px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.3; }
+.root .catEn { font-family: var(--rn-mono); font-size: 11px; letter-spacing: 0.1em; color: var(--rn-muted); }
+.root .catDesc { margin-top: 6px; font-size: 13px; line-height: 1.5; color: var(--rn-muted); }
+
+/* 분류·2페이지 이후: 다른 분류로 건너가는 칩(pill 36px 을 40px 로, 눌리는 영역은 44px) */
+.root .chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 4px 0 28px; }
+.root .chip { position: relative; height: 40px; }
+.root .chip::before { content: ""; position: absolute; inset: -2px 0; }
+
+/* ── 대표 글 (홈 피처드와 같다) ── */
+.root .featured { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 16px; align-items: stretch; padding: 0 0 48px; }
+.root .featImg { position: relative; display: block; min-height: 360px; border-radius: 20px; overflow: hidden; background: var(--rn-tint-green); }
+.root .featImg > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.root .featBox { display: flex; flex-direction: column; justify-content: center; gap: 20px; min-width: 0; padding: 40px; border-radius: 20px; background: var(--rn-tint); }
+.root .featBadges { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.root .featBadge { padding: 5px 10px; border-radius: 6px; background: var(--rn-green); color: #fff; font-size: 12px; font-weight: 700; }
+.root .featCat { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; color: var(--rn-muted); }
+.root .dot { flex: none; width: 8px; height: 8px; border-radius: 999px; }
+.root .featTitle { margin: 0; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.25; letter-spacing: -0.04em; font-weight: 800; text-wrap: pretty; }
+.root .featLead { margin: 0; font-size: 16px; line-height: 1.75; color: var(--rn-body-muted); text-wrap: pretty; }
+.root .featRow { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+.root .featCta { height: 48px; padding: 0 22px; display: flex; align-items: center; border-radius: 12px; background: var(--rn-ink); color: #fff; font-size: 15px; font-weight: 700; }
+.root .featCta:hover { background: var(--rn-green); color: #fff; }
+.root .featMeta { font-family: var(--rn-mono); font-size: 12px; color: var(--rn-muted); }
+
+/* ── 최신 글 목록 (홈 「최신 가이드」 행: 번호 | 분류 + 제목 | 96x72 썸네일) ── */
+.root .listSec { padding-bottom: 24px; }
+.root .count { font-family: var(--rn-mono); font-size: 13px; color: var(--rn-muted); }
+.root .guides { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); column-gap: 40px; }
+.root .guide { display: grid; grid-template-columns: 30px 1fr 96px; gap: 14px; align-items: start; padding: 14px 0; border-top: 1px solid var(--rn-line); }
+.root .guideNo { font-family: var(--rn-mono); font-size: 14px; font-weight: 600; color: var(--rn-subtle); }
+.root .guideText { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.root .guideCat { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 600; color: var(--rn-green-text); }
+.root .guideTitle { font-size: 16px; font-weight: 600; line-height: 1.5; text-wrap: pretty; }
+.root .guideThumb { display: block; position: relative; width: 96px; height: 72px; border-radius: 10px; overflow: hidden; background: var(--rn-tint-green); }
+.root .guideThumb > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.root .note { margin: 0; padding: 24px 0; font-size: 15px; color: var(--rn-body-muted); }
+.root .note a { font-weight: 700; color: var(--rn-green-text); }
+
+.root .pagerWrap { padding-top: 8px; }
+.root .pagerWrap :global(.rn-pager) { padding-bottom: 8px; }
+
+/* 빈 상태 */
+.root .empty { display: flex; flex-direction: column; align-items: center; gap: 10px; margin: 8px 0 56px; padding: 56px 24px; border-radius: 18px; background: var(--rn-tint); text-align: center; }
+.root .empty strong { font-size: 17px; font-weight: 700; }
+.root .empty a { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; font-weight: 700; color: var(--hub-green-on); }
+
+/* ── 태블릿 이하: 분류 카드를 줄바꿈(6분류 3열 · 7분류 4열) ── */
+@media (max-width: 1180px) {
+  .root .cats { grid-template-columns: repeat(var(--cols-md, 3), minmax(0, 1fr)); }
+}
+
+/* ── 모바일 (≤760px): 좌우 여백 16px 은 .rn-wrap 이 준다 ── */
+@media (max-width: 760px) {
+  .root .hero { gap: 6px; padding: 18px 0 12px; }
+  .root .crumb { display: none; }
+  .root .heroText { gap: 6px; }
+  .root .h1Row { margin-left: -8px; }
+  .root .back { display: flex; align-items: center; justify-content: center; flex: none; width: 44px; height: 44px; font-size: 22px; color: var(--rn-ink); }
+  .root .h1 { font-size: 24px; line-height: 1.3; letter-spacing: -0.03em; }
+  .root .heroText > .lead { font-size: 14px; line-height: 1.65; }
+
+  /* 분류 카드: 2열(홀수 개면 마지막 칸이 두 열을 다 쓴다) */
+  .root .cats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 8px 0 28px; }
+  .root .cat:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .root .cat { padding: 14px 14px 16px; border-radius: 14px; min-height: 44px; }
+  .root .catTop { margin-bottom: 8px; }
+  .root .catName { font-size: 16px; letter-spacing: -0.02em; }
+  .root .catEn { font-size: 10px; }
+  .root .catDesc { margin-top: 4px; font-size: 12px; }
+
+  .root .chips { gap: 6px; padding: 8px 0 20px; }
+  .root .chip { height: 36px; font-size: 14px; }
+  .root .chip::before { inset: -4px 0; }
+
+  .root .featured { padding-bottom: 32px; }
+  .root .featImg { min-height: 220px; }
+  .root .featBox { padding: 24px 20px; gap: 16px; }
+
+  .root .guides { column-gap: 0; }
+  .root .guide { grid-template-columns: 1fr 76px; gap: 12px; }
+  .root .guideNo { display: none; }
+  .root .guideTitle { font-size: 15px; line-height: 1.45; }
+  .root .guideThumb { width: 76px; height: 76px; }
+  .root .guideText { gap: 5px; }
+
+  .root .pagerWrap :global(.rn-pager) a, .root .pagerWrap :global(.rn-pager) span { min-width: 44px; height: 44px; }
+}

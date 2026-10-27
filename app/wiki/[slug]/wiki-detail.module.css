@@ -1,0 +1,223 @@
+/* 생활백과 항목 상세 - 2026-10-27 리뉴얼. 아티클 상세(app/magazine/[slug]/article.module.css)의 숫자·구조를 그대로 따른다:
+   틴트 헤드 박스 · 녹색 "먼저 결론" 박스 · 본문 17px/1.85 · 번호 섹션 머리 · 접히는 FAQ · [공식]/[후기] 출처 태그 · sticky 사이드바.
+   토큰은 app/renewal.css 의 --rn-* 를 쓰고, 시안에만 있는 oklch 값은 --wd-* 로 두며 hex 폴백을 건다.
+   ★모든 규칙을 .root 아래에 둔다. 전역 ".rn-page a { color: inherit }"(0,1,1)·".rn-page a:hover { color: 초록 }"(0,2,1)를 이기려면
+   클래스 2~3개짜리 선택자가 필요하다(as-list.module.css 와 같은 이유). 모바일 브레이크포인트는 760px(renewal.css 와 같다). */
+
+.root {
+  --wd-line-soft: #e9ecea;   /* oklch(0.94 0.004 160) */
+  --wd-sub: #5f6561;         /* oklch(0.5 0.01 160) */
+  --wd-badge: #137038;       /* oklch(0.45 0.14 155) */
+  --wd-tag-fg: #005f2e;      /* oklch(0.42 0.12 155) */
+  --wd-warn-bg: #fdf1e8;     /* 주의 상자 바탕 */
+  --wd-warn-line: #f3d4bd;
+  --wd-warn-fg: #99440f;
+}
+@supports (color: oklch(0 0 0)) {
+  .root {
+    --wd-line-soft: oklch(0.94 0.004 160);
+    --wd-sub: oklch(0.5 0.01 160);
+    --wd-badge: oklch(0.45 0.14 155);
+    --wd-tag-fg: oklch(0.42 0.12 155);
+    --wd-warn-bg: oklch(0.97 0.02 55);
+    --wd-warn-line: oklch(0.88 0.06 55);
+    --wd-warn-fg: oklch(0.46 0.12 45);
+  }
+}
+
+/* ── ① 헤드: 틴트 박스 ── */
+.root .head { padding: 28px 0 32px; }
+.root .headBox { display: flex; flex-direction: column; gap: 16px; padding: 32px 40px 28px; border-radius: 20px; background: var(--rn-tint); min-width: 0; }
+.root .crumbs { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 13px; color: var(--rn-muted); }
+.root .crumbs a { color: inherit; }
+.root .crumbs a:hover { color: var(--rn-green-text); }
+.root .crumbs [aria-current="page"] { color: var(--rn-muted); }
+.root .labels { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.root .typeTag { padding: 4px 8px; border-radius: 6px; background: var(--rn-tint-green); color: var(--wd-tag-fg); font-family: var(--rn-mono); font-size: 12px; font-weight: 600; }
+.root .groupTag { position: relative; padding: 4px 8px; border-radius: 6px; background: #fff; border: 1px solid var(--rn-line-2); color: var(--rn-body-muted); font-size: 12px; font-weight: 600; }
+.root .groupTag::before { content: ""; position: absolute; inset: -8px -2px; }
+.root .groupTag:hover { border-color: var(--rn-green); color: var(--rn-green-text); }
+.root .groupTag:focus-visible { border-radius: 6px; }
+.root .title { margin: 0; max-width: 960px; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.25; letter-spacing: -0.04em; font-weight: 800; text-wrap: pretty; overflow-wrap: anywhere; }
+.root .meta { display: flex; gap: 10px 18px; flex-wrap: wrap; align-items: center; padding-top: 14px; border-top: 1px solid var(--rn-line-tint); font-family: var(--rn-mono); font-size: 12px; color: var(--rn-muted); }
+.root .badge { padding: 4px 8px; border-radius: 6px; background: #fff; color: var(--wd-badge); font-weight: 600; }
+
+/* ── ② 본문 + 사이드바 ── */
+.root .body { display: grid; grid-template-columns: minmax(0, 760px) 280px; column-gap: 56px; align-items: start; padding-bottom: 56px; }
+.root .article { min-width: 0; display: flex; flex-direction: column; gap: 44px; }
+.root .aside {
+  position: sticky;
+  top: calc(var(--rn-header-h) + 24px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: calc(100vh - var(--rn-header-h) - 48px);
+  overflow-y: auto;
+  padding: 3px;
+  margin: -3px;
+  scrollbar-width: thin;
+}
+
+/* 설명용 이미지(AI 제작 캡션 포함) — width/height 속성으로 비율을 미리 잡는다 */
+.root .fig { margin: 0; }
+.root .figImg { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 20px; background: var(--rn-tint-green); }
+.root .figBody .figImg { border-radius: 16px; }
+.root .fig figcaption { margin-top: 8px; font-size: 12px; line-height: 1.5; color: var(--wd-sub); }
+.root .figBody { margin: 28px 0 0; }
+
+/* 핵심 요약 = 아티클의 "먼저 결론" 박스 */
+.root .conclusion { display: flex; flex-direction: column; gap: 14px; padding: 24px 28px; border-radius: 16px; background: var(--rn-green); color: #fff; }
+.root .conclusionLabel { font-family: var(--rn-mono); font-size: 12px; font-weight: 600; letter-spacing: 0.1em; }
+.root .conclusionList { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.6; }
+.root .conclusionList li { display: grid; grid-template-columns: 22px 1fr; gap: 8px; }
+.root .conclusionNo { font-family: var(--rn-mono); font-weight: 600; }
+.root .conclusionList strong { font-weight: 800; color: #fff; }
+
+/* 원본 영상 */
+.root .video { display: flex; flex-direction: column; gap: 12px; }
+.root .videoFrame { position: relative; aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; background: #000; }
+.root .videoFrame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.root .videoCap { margin: 0; font-size: 13px; line-height: 1.6; color: var(--rn-muted); }
+.root .videoCap b { font-weight: 700; color: var(--rn-ink); }
+.root .quotes { margin-top: 4px; display: flex; flex-direction: column; gap: 4px; }
+.root .quote { display: grid; grid-template-columns: 60px minmax(0, 1fr); gap: 12px; align-items: baseline; font-size: 16px; line-height: 1.7; color: var(--rn-body); }
+.root .quote a { position: relative; justify-self: start; padding: 2px 8px; border-radius: 6px; background: var(--rn-tint-green); color: var(--wd-tag-fg); font-family: var(--rn-mono); font-size: 12px; font-weight: 600; }
+.root .quote a::before { content: ""; position: absolute; inset: -12px -4px; } /* 터치 영역 */
+.root .quote a:hover { color: var(--rn-green-text); }
+.root .quote a:focus-visible { border-radius: 6px; }
+
+/* 번호 섹션 머리: 번호(Mono 12px 초록) → H2 26px/800 */
+.root .sec { display: flex; flex-direction: column; gap: 16px; }
+.root .secHead { display: flex; flex-direction: column; gap: 8px; }
+.root .secNo { font-family: var(--rn-mono); font-size: 12px; font-weight: 600; color: var(--rn-green-text); }
+.root .h2 { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.3; text-wrap: pretty; }
+
+/* ── 본문(.prose) — 아티클과 같은 크기·줄간격 ── */
+.root .prose { font-size: 17px; line-height: 1.85; color: var(--rn-body); overflow-wrap: anywhere; }
+.root .prose > :first-child { margin-top: 0; }
+.root .prose p { margin: 16px 0 0; font-size: 17px; line-height: 1.85; color: var(--rn-body); text-wrap: pretty; }
+.root .prose strong { font-weight: 700; color: var(--rn-ink); }
+.root .prose ul { margin: 16px 0 0; padding-left: 22px; }
+.root .prose li { margin-top: 6px; line-height: 1.75; }
+.root .prose li:first-child { margin-top: 0; }
+
+/* 단계 목록(번호 Mono 초록) — 아티클의 td-steps */
+.root .steps { list-style: none; margin: 16px 0 0; padding: 0; border-top: 1px solid var(--rn-line); }
+.root .steps li { display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 10px; margin: 0; padding: 13px 2px; border-bottom: 1px solid var(--wd-line-soft); font-size: 16px; line-height: 1.7; color: var(--rn-body); }
+.root .stepNo { font-family: var(--rn-mono); font-size: 12px; font-weight: 600; color: var(--rn-green-text); padding-top: 5px; }
+
+/* 주의 상자(안전·금전 손실 등 흐리면 안 되는 경고) — 새 톤의 따뜻한 주황 */
+.root .note { margin-top: 16px; padding: 16px 20px 16px 24px; border: 1px solid var(--wd-warn-line); border-radius: 14px; background: var(--wd-warn-bg); box-shadow: inset 4px 0 0 var(--rn-warn); font-size: 15.5px; line-height: 1.75; color: var(--rn-body); text-wrap: pretty; }
+
+/* 표: 1px 보더 · radius 14 · 헤더 행 --rn-tint. 좁은 화면은 아래에서 스택 카드로 바꾼다 */
+.root .tblWrap { margin-top: 16px; border: 1px solid var(--rn-line-2); border-radius: 14px; overflow-x: auto; }
+.root .tbl { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.55; overflow-wrap: normal; word-break: keep-all; }
+.root .tbl thead th { padding: 12px 16px; background: var(--rn-tint); border-bottom: 1px solid var(--rn-line-2); font-size: 13px; font-weight: 700; color: var(--rn-body-muted); text-align: left; vertical-align: bottom; }
+.root .tbl tbody tr + tr { border-top: 1px solid var(--rn-line); }
+.root .tbl td { padding: 13px 16px; vertical-align: top; text-align: left; color: var(--rn-body-muted); }
+.root .tbl td:first-child { font-weight: 600; color: var(--rn-ink); }
+
+/* ── 자주 묻는 질문: 접히는 목록(마크업은 항상 DOM 에 있다) ── */
+.root .faq { display: flex; flex-direction: column; gap: 14px; }
+.root .secTitle { margin: 0; font-size: 20px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.4; }
+.root .faqList { display: flex; flex-direction: column; gap: 10px; }
+.root .faqItem { border: 1px solid var(--rn-line-2); border-radius: 14px; background: #fff; }
+.root .faqItem summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 56px; padding: 14px 20px; font-size: 16px; font-weight: 700; line-height: 1.5; letter-spacing: -0.01em; overflow-wrap: anywhere; }
+.root .faqItem summary::-webkit-details-marker { display: none; }
+.root .faqItem summary::after { content: "+"; flex: none; font-family: var(--rn-mono); font-size: 20px; font-weight: 500; color: var(--rn-green-text); }
+.root .faqItem[open] summary::after { content: "\2212"; }
+.root .faqItem[open] { border-color: var(--rn-green-soft); }
+.root .faqItem summary:focus-visible { border-radius: 14px; }
+.root .faqA { margin: 0; padding: 0 20px 18px; font-size: 15px; line-height: 1.75; color: var(--rn-body-muted); overflow-wrap: anywhere; }
+.root .faqA strong { font-weight: 700; color: var(--rn-ink); }
+
+/* ── 근거 자료: [공식]/[후기] 작은 태그 ── */
+.root .src { padding-top: 28px; border-top: 1px solid var(--rn-line); display: flex; flex-direction: column; gap: 14px; }
+.root .srcList { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.root .srcList a { display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 10px; align-items: start; min-height: 44px; padding: 10px 0; border-top: 1px solid var(--wd-line-soft); font-size: 14px; line-height: 1.5; color: var(--rn-ink); overflow-wrap: anywhere; }
+.root .srcList a:hover { color: var(--rn-green-text); }
+.root .srcNo { font-family: var(--rn-mono); font-weight: 600; color: var(--rn-green-text); }
+.root .srcTag { display: inline-block; margin-right: 6px; padding: 1px 6px; border-radius: 5px; background: var(--rn-tint-green); color: var(--rn-green-text); font-family: var(--rn-mono); font-size: 11px; font-weight: 600; vertical-align: 1px; }
+.root .srcTagAlt { background: var(--rn-gray-bg); color: var(--rn-body-muted); }
+.root .srcHost { color: var(--wd-sub); }
+.root .srcNote { margin: 0; font-size: 13px; line-height: 1.6; color: var(--wd-sub); }
+
+/* ── 사이드바: 정보 박스 · 관련 항목 ── */
+.root .box { flex: none; border: 1px solid var(--rn-line-2); border-radius: 16px; background: #fff; overflow: hidden; }
+.root .boxHead { padding: 16px 20px 14px; background: var(--rn-tint); border-bottom: 1px solid var(--rn-line-2); font-size: 15px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.4; overflow-wrap: anywhere; }
+.root .boxLabel { padding: 16px 20px 12px; font-size: 13px; font-weight: 700; color: var(--rn-muted); }
+.root .info { margin: 0; padding: 0; }
+.root .infoRow { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 12px; padding: 12px 20px; border-top: 1px solid var(--wd-line-soft); }
+.root .infoRow:first-child { border-top: 0; }
+.root .infoRow dt { font-size: 13px; font-weight: 600; line-height: 1.6; color: var(--rn-muted); }
+.root .infoRow dd { margin: 0; font-size: 14px; line-height: 1.6; color: var(--rn-ink); overflow-wrap: anywhere; }
+.root .infoRow dd strong { font-weight: 700; }
+.root .st { display: inline-block; padding: 3px 9px; border-radius: 999px; font-size: 12px; font-weight: 700; line-height: 1.5; }
+.root .stOk { background: var(--rn-tint-green); color: var(--wd-tag-fg); }
+.root .stAlways { background: var(--rn-gray-bg); color: var(--rn-body); }
+.root .stWait { background: var(--wd-warn-bg); color: var(--wd-warn-fg); }
+
+.root .relList { display: flex; flex-direction: column; border-top: 1px solid var(--wd-line-soft); }
+.root .relList a { display: flex; flex-direction: column; gap: 2px; min-height: 44px; padding: 12px 20px; border-top: 1px solid var(--wd-line-soft); font-size: 14px; font-weight: 600; line-height: 1.5; color: var(--rn-ink); overflow-wrap: anywhere; }
+.root .relList a:first-child { border-top: 0; }
+.root .relList a:hover { background: var(--rn-tint); color: var(--rn-green-text); }
+.root .relList a:focus-visible { border-radius: 0; outline-offset: -2px; }
+.root .relType { font-family: var(--rn-mono); font-size: 11px; font-weight: 600; color: var(--wd-sub); }
+
+/* ───────── 중간 폭: 사이드바를 본문 아래로 ───────── */
+@media (max-width: 1000px) {
+  .root .body { grid-template-columns: minmax(0, 860px); row-gap: 40px; }
+  .root .aside { position: static; max-height: none; overflow: visible; padding: 0; margin: 0; }
+}
+
+/* ───────── 모바일 (≤760px, 좌우 여백 16px 은 .rn-wrap 이 준다) ───────── */
+@media (max-width: 760px) {
+  .root .head { padding: 16px 0 24px; }
+  .root .headBox { padding: 0; background: transparent; border-radius: 0; gap: 12px; }
+  .root .crumbs { font-size: 12px; }
+  .root .title { font-size: 26px; line-height: 1.28; }
+  .root .meta { font-size: 11px; gap: 6px 10px; padding-top: 0; border-top: 0; }
+  .root .badge { background: var(--rn-tint-green); }
+
+  .root .body { row-gap: 32px; padding-bottom: 32px; }
+  .root .article { gap: 32px; }
+  .root .figImg { border-radius: 16px; }
+  .root .figBody { margin-top: 22px; }
+
+  .root .conclusion { padding: 18px; border-radius: 14px; gap: 10px; }
+  .root .conclusionLabel { font-size: 11px; }
+  .root .conclusionList { font-size: 15px; gap: 8px; }
+  .root .conclusionList li { grid-template-columns: 18px 1fr; gap: 6px; }
+
+  .root .videoFrame { border-radius: 14px; }
+  .root .quote { grid-template-columns: 52px minmax(0, 1fr); gap: 10px; font-size: 15px; }
+
+  .root .sec { gap: 12px; }
+  .root .h2 { font-size: 20px; }
+  .root .prose p { font-size: 16px; line-height: 1.8; }
+  .root .steps li { font-size: 15px; }
+  .root .note { font-size: 15px; padding: 14px 16px 14px 20px; }
+
+  /* 표 → 스택 카드: 첫 칸 = 제목, 나머지 = "라벨 값" 줄(2열 표는 라벨을 숨긴다) */
+  .root .tblWrap { border: 0; border-radius: 0; overflow: visible; }
+  .root .tbl, .root .tbl tbody, .root .tbl tr, .root .tbl td { display: block; overflow-wrap: anywhere; }
+  .root .tbl thead { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .root .tbl tbody tr, .root .tbl tbody tr + tr { margin-top: 8px; padding: 12px 14px; border: 0; border-radius: 12px; background: var(--rn-tint); }
+  .root .tbl tbody tr:first-child { margin-top: 0; }
+  .root .tbl td { padding: 3px 0 0; font-size: 13.5px; line-height: 1.55; }
+  .root .tbl td:first-child { padding-top: 0; font-size: 14px; }
+  .root .tbl td[data-label]::before { content: attr(data-label); display: inline-block; margin-right: 8px; font-size: 12px; font-weight: 600; color: var(--rn-ink); }
+  .root .tbl td:first-child::before { content: none; }
+  .root .tbl2 td[data-label]::before { content: none; }
+  .root .tdEmpty { display: none; }
+
+  .root .secTitle { font-size: 18px; }
+  .root .faqItem summary { font-size: 15px; padding: 12px 16px; }
+  .root .faqA { padding: 0 16px 16px; font-size: 14px; }
+  .root .src { padding-top: 22px; }
+
+  .root .boxHead { padding: 14px 16px 12px; }
+  .root .boxLabel { padding: 14px 16px 10px; }
+  .root .infoRow { grid-template-columns: 84px minmax(0, 1fr); padding: 11px 16px; }
+  .root .relList a { padding: 12px 16px; }
+}
