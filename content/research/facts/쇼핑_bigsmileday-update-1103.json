@@ -1,0 +1,89 @@
+{
+  "topic": "G마켓·옥션 빅스마일데이 2026년 11월 회차 — 공식 발표 여부 재확인 (2026-11-03 기준 업데이트)",
+  "brand": "G마켓·옥션",
+  "article": "예정",
+  "captured": "2026-11-03",
+  "reused_facts": ["bigsmileday-2026-nov-not-announced", "bigsmileday-2025-nov-period"],
+  "declined_facts": [
+    {
+      "id": "bigsmileday-2026-h1-date-conflict",
+      "why": "2026 상반기 행사 기사라 11월 회차와 무관하다. 이번 업데이트에서도 제외했다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "bigsmileday-2026-nov-blog-dates-unofficial",
+      "claim": "2026년 11월 빅스마일데이가 11월 2일(월)~13일(금) 12일간 열린다는 내용이 생활정보 블로그 글(2026-10-29 작성)에만 나오며, 블로그는 발표 주체를 밝히지 않은 '공식 안내문'을 근거로 든다",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "생활정보 블로그 (2026 빅스마일데이 쿠폰 혜택 총정리, 작성 2026-10-29 10:30 표기)",
+      "source_url": "https://www.lifeinformations.com/2026/10/2026_01819250434.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "G마켓·옥션",
+        "category": "쇼핑 세일 행사",
+        "line": "빅스마일데이",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "이 일정을 확정 기간으로 쓰지 말 것. G마켓·옥션 공식 보도자료·뉴스룸·이벤트 페이지에서 확인되지 않았다. 같은 날짜를 공식 발표처럼 인용하면 안 된다. 공식 공지가 확인되면 그때 '공식' 근거로 교체한다.",
+      "cautionSource": "블로그 본문(2026-10-29) 및 2026-11-03 확인 시점에 공식 페이지 본문을 열지 못함(gmarket 이벤트 페이지 HTTP 403). 2일·13일 날짜는 이 블로그 글 외 공식 근거 없음."
+    },
+    {
+      "id": "bigsmileday-2026-official-not-confirmed",
+      "claim": "2026-11-03 시점에 G마켓·옥션 공식 보도자료·뉴스룸·이벤트 페이지에서 2026년 11월 빅스마일데이 기간을 확인하지 못했다",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "G마켓 빅스마일데이 이벤트 페이지(본문 접근 실패, HTTP 403) · 이베이코리아 공식 블로그·뉴스룸 검색(2026 11월 보도자료 미검출)",
+      "source_url": "https://www.gmarket.co.kr/e/bigs/tab1?jaehuid=200010615",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "G마켓·옥션",
+        "category": "쇼핑 세일 행사",
+        "line": "빅스마일데이",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "이 항목은 '공식 발표 없음'이 아니라 '오늘 확인 못 함'이다. source_url 페이지는 본문을 읽지 못했으므로 이 페이지의 내용을 인용한 것이 아니다. 글에는 '오늘 기준 공식 확인 못 함'으로만 쓴다.",
+      "cautionSource": "2026-11-03 웹 검색 3회(공식 도메인 한정 포함)와 gmarket 이벤트 페이지 접근 시도 결과."
+    },
+    {
+      "id": "bigsmileday-2026-seller-deadline-blog-only",
+      "claim": "2026년 하반기 빅스마일데이 판매자(셀러) 참가 신청 마감은 10월 26일이라고 생활정보 블로그와 검색 노출 기사들이 전했다. 공식 문서로는 확인하지 못했다",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "생활정보 블로그 (2026 빅스마일데이 쿠폰 혜택 총정리, 작성 2026-10-29)",
+      "source_url": "https://www.lifeinformations.com/2026/10/2026_01819250434.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "G마켓·옥션",
+        "category": "판매자 참가",
+        "line": "빅스마일데이",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "10월 26일은 판매자 신청 마감이며 소비자 쿠폰 발급이나 구매 시작일이 아니다. 이미 지난 날짜이므로 독자용 글에는 '신청 마감은 지났다' 정도로만 쓴다. 신청 방법·자격은 확인하지 못했다.",
+      "cautionSource": "블로그 본문(2026-10-29) 인용. 판매자 신청 마감일은 공식 셀러 공지로 확인되지 않았다."
+    },
+    {
+      "id": "bigsmileday-2026-nov-official-check-pending",
+      "claim": "2026년 11월 빅스마일데이 공식 기간은 2026-11-03 기준 G마켓·옥션 공식 채널에서 확인되지 않았고, 다음 확인 대상은 G마켓·옥션 뉴스룸과 이벤트 페이지 본문이다",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "G마켓 빅스마일데이 이벤트 페이지 (본문 접근 실패)",
+      "source_url": "https://www.gmarket.co.kr/e/bigs/tab1?jaehuid=200010615",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "G마켓·옥션",
+        "category": "쇼핑 세일 행사",
+        "line": "빅스마일데이",
+        "years": "2026",
+        "region": "KR",
+        "note": "행사 회차 일정 확인 절차"
+      },
+      "caution": "확인 절차 기록이다. 이 항목을 근거로 '발표 안 됨'을 단정하지 말 것. 공식 본문을 읽은 뒤 바꾼다.",
+      "cautionSource": "2026-11-03 실측 시도 결과(HTTP 403)."
+    }
+  ]
+}

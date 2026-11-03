@@ -1,0 +1,29 @@
+{
+  "topic": "쿠팡 쿠블프(쿠팡 블랙프라이데이) 2026 행사 일정 발표 여부 재확인 (2026-11-03 갱신)",
+  "brand": "쿠팡",
+  "article": "coupang-cublf",
+  "captured": "2026-11-03",
+  "reused_facts": ["coupang-cublf-2025-period", "coupang-cublf-2025-daily-deal-coupon", "coupang-cublf-2026-not-announced"],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "coupang-cublf-2026-status-recheck-1103",
+      "claim": "2026-11-03 재확인 시점에 2026년 쿠블프 행사 기간을 확인할 수 있는 공식 발표를 찾지 못했다. 공식 뉴스룸(about.coupang.com, aboutcoupang.kr)은 열리지 않았고, 검색으로도 2026년 쿠블프 일정 기사는 나오지 않았다. 확인실패로 남긴다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "스마트투데이 2025 쿠블프 기사 본문(2026년 일정 언급 없음 확인). 공식 뉴스룸 접속 실패는 brief 참조",
+      "source_url": "https://www.smarttoday.co.kr/ko-kr/articles/96981",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "쿠팡",
+        "category": "온라인몰·직구",
+        "line": "쿠블프",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "아직 발표 안 됨(오늘 기준 확인 못 함)으로 쓴다. 2025년 기간(11월 24일~12월 1일)을 2026년 일정으로 쓰지 말 것. 2025 기간은 2025 기사 기준이다.",
+      "cautionSource": "스마트투데이 2025-11-24 기사 본문(2025년 11월 24일~12월 1일). 2026 일정 부재는 위 claim 의 확인실패 기록."
+    }
+  ]
+}

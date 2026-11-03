@@ -82,7 +82,9 @@ function ld(e: WikiEntry) {
   // 날짜(일 단위)가 확정된 세일만 SaleEvent 로 낸다. 미발표 행사에 날짜를 넣으면 검색엔진에 거짓 일정을 주는 것이다.
   // "2026-10" 처럼 월 단위로만 아는 행사(여행가는 달 등)는 일정이 정해진 것이 아니라서 구조화 데이터로 내지 않는다(화면 표시는 그대로).
   const FULL_DATE = /^[0-9]{4}-[0-9]{2}-[0-9]{2}$/;
-  if (e.sale?.status === "확정" && e.sale.start && e.sale.end && FULL_DATE.test(e.sale.start) && FULL_DATE.test(e.sale.end)) {
+  // 여러 쇼핑몰을 한 달 단위로 묶은 달력(주최가 "여러 …")은 단일 이벤트가 아니다 — 한 달짜리 SaleEvent 로 내면 거짓 마크업이라 낸 개별 행사 항목에 맡긴다.
+  const MULTI_ORGANIZER = /^여러/.test(e.sale?.organizer ?? "");
+  if (e.sale?.status === "확정" && !MULTI_ORGANIZER && e.sale.start && e.sale.end && FULL_DATE.test(e.sale.start) && FULL_DATE.test(e.sale.end)) {
     graph.push({
       "@type": "SaleEvent",
       name: e.title,

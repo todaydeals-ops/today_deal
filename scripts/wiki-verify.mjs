@@ -126,6 +126,8 @@ for (const file of files) {
     if (deny && e.type === "sale" && deny.why === "쇼핑몰" && /news|press|newsroom|\/ir\b|media/i.test(u)) deny = undefined;
     // asiae.co.kr 은 헬스기기 배치에서 건강 효능 주장 출처로 막은 것이다(09-01). 세일 일정(유통사 발표 보도)은 건강 주장이 아니라 허용(10-26).
     if (deny && e.type === "sale" && /asiae\.co\.kr/i.test(u)) deny = undefined;
+    // 11번가 프로모션 페이지(promo.11st.co.kr)는 십일절 기간·쿠폰을 주최사가 직접 적은 1차 근거다(11-03). 상품 판매 페이지가 아니라 행사 안내라 허용.
+    if (deny && e.type === "sale" && deny.why === "쇼핑몰" && /^https?:\/\/promo\.11st\.co\.kr\//i.test(u)) deny = undefined;
     need(!deny, `배제 대상 출처(${deny?.why}): ${s.url}`);
     // 사이트 첫 화면은 근거가 아니다 — 개별 문서 링크여야 한다
     try {
