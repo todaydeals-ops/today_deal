@@ -1,0 +1,314 @@
+{
+  "topic": "삼성페이(현 Samsung Wallet)·애플페이 결제가 안 될 때 점검 순서 (NFC 설정·카드 등록·잠금 설정·단말기 위치, 중복 결제 확인)",
+  "brand": "공통",
+  "article": "mobile-payment-nfc-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "iphone-reset-all-settings-data-kept",
+    "iphone-restart-steps-face-id"
+  ],
+  "declined_facts": [
+    {
+      "id": "iphone-restart-before-reset",
+      "why": "모든 설정 재설정 권고는 Wi-Fi·블루투스 전반 장애용이다. 결제 거절 점검에서는 재시작까지만 쓰고 전체 재설정은 넣지 않는다. 재설정하면 Apple Pay 카드까지 지워지므로 결제 문제 글에서는 과한 조치다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "samsung-nfc-toggle-first",
+      "claim": "갤럭시에서 NFC 결제가 안 되면 첫 조치는 NFC 버튼을 껐다가 다시 켜는 것이다. 삼성전자서비스 FAQ는 설정창 안의 NFC 버튼을 껐다 켜 보라고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — NFC 기능 불량 안내 FAQ",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1565668",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 NFC 탑재 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "메뉴 이름과 경로는 모델과 One UI 버전에 따라 다르다고 페이지가 밝힌다. 글에는 '설정 > 연결 > NFC 및 비접촉 결제' 경로로 쓰고, 안 보이면 설정 검색을 쓰라고 덧붙인다.",
+      "cautionSource": "삼성전자서비스 FAQ 원문의 '모델·소프트웨어 버전에 따라 메뉴 명칭이 다를 수 있음' 안내"
+    },
+    {
+      "id": "samsung-default-wallet-setting",
+      "claim": "결제 앱이 선택되지 않으면 NFC 및 비접촉 결제 메뉴에서 기본 월렛 앱을 Samsung Wallet으로 지정해야 한다. 설정 경로는 설정 > 연결 > NFC 및 비접촉 결제다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — NFC 기능 불량 안내 FAQ",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1565668",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 NFC 탑재 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "기본 월렛을 다른 앱으로 바꾸면 기존 앱으로의 매장 결제가 멈춘다. 바꾸기 전에 지금 쓰는 앱이 무엇인지 확인하게 한다.",
+      "cautionSource": "삼성 Galaxy NFC 문제 해결 영문 페이지의 '기본 결제 앱이 매장 결제에 사용된다' 안내"
+    },
+    {
+      "id": "samsung-transit-nfc-service-check",
+      "claim": "교통카드 인식 오류는 비결제 NFC 서비스에서 Samsung Wallet의 교통카드가 체크되어 있는지 확인하는 것으로 시작한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — NFC 기능 불량 안내 FAQ",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1565668",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 NFC 탑재 기종 (교통카드 기능)",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "결제 실패가 아니라 교통카드 태그 실패에 해당하는 항목이다. 결제 점검 순서에 섞으면 독자가 헷갈리므로 별도 단락으로 분리한다."
+    },
+    {
+      "id": "samsung-case-magnetic-cover-removal",
+      "claim": "자석이 들어간 카드 지갑형 커버나 비정품 케이스는 NFC 안테나를 방해할 수 있으므로 결제 전에 벗긴다고 삼성이 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — NFC 기능 불량 안내 FAQ",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1565668",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 기종 (커버·케이스 사용자)",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "모든 케이스를 벗기라는 뜻이 아니다. 자석·카드 수납형·비정품 커버가 대상이다. 정품 케이스는 방해하지 않는다는 안내가 있으니 무조건 벗기기를 권하지 않는다.",
+      "cautionSource": "삼성전자서비스 FAQ 원문의 '자석 또는 비정품 커버 제거' 문구 기준"
+    },
+    {
+      "id": "samsung-sim-reseat-restart",
+      "claim": "일부 NFC 서비스는 SIM에 데이터를 저장하므로, 여러 번 해도 결제가 안 되면 USIM을 빼서 다시 끼우고 기기를 재시작하라고 삼성전자서비스가 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — NFC 기능 불량 안내 FAQ",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1565668",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 (SIM 트레이 사용 기종)",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "SIM 트레이를 빼기 전에 전원을 끄는 것을 권한다. 트레이가 잘 안 열리면 무리하지 말고 서비스센터로 안내한다. 이 항목은 마지막 단계에 둔다."
+    },
+    {
+      "id": "samsung-led-cover-nfc-blocked",
+      "claim": "LED 커버가 켜져 있는 동안에는 갤럭시의 NFC 기능이 작동하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung — Troubleshoot NFC issues on Galaxy devices (영문, 중남미 페이지)",
+      "source_url": "https://www.samsung.com/latin_en/support/mobile-devices/troubleshoot-nfc-issues-on-galaxy-devices/",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "LED 커버 지원 갤럭시",
+        "years": "전 연식",
+        "region": "글로벌(영문 페이지)"
+      },
+      "caution": "LED 커버가 없는 기기에는 해당하지 않는다. 커버를 끄는 방법은 기종마다 달라 설명서 확인을 붙인다."
+    },
+    {
+      "id": "samsung-antenna-guide-in-settings",
+      "claim": "갤럭시 NFC 안테나 위치는 설정의 NFC 및 비접촉 결제 화면에 나오는 안내 이미지로 확인하도록 삼성이 안내한다. 공식 문서 본문에는 위치가 글로 적혀 있지 않다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung — Troubleshoot NFC issues on Galaxy devices (영문, 중남미 페이지)",
+      "source_url": "https://www.samsung.com/latin_en/support/mobile-devices/troubleshoot-nfc-issues-on-galaxy-devices/",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 NFC 탑재 기종",
+        "years": "전 연식",
+        "region": "글로벌(영문 페이지)"
+      },
+      "caution": "기종별 안테나 위치를 글 본문에 단정하지 않는다. 독자에게는 설정 화면의 이미지를 보고 그 위치에 대라고 안내한다."
+    },
+    {
+      "id": "samsung-antenna-position-unverified",
+      "claim": "갤럭시 기종별 NFC 안테나의 정확한 위치(글로 된 설명)는 공식 문서 본문에서 확보하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "Samsung — Troubleshoot NFC issues on Galaxy devices (위치 텍스트 없음 확인)",
+      "source_url": "https://www.samsung.com/latin_en/support/mobile-devices/troubleshoot-nfc-issues-on-galaxy-devices/",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 기종",
+        "years": "전 연식",
+        "region": "글로벌(영문 페이지)"
+      },
+      "caution": "'뒷면 중앙' 같은 위치 추정 문장을 쓰지 않는다. 필요하면 기종별 설정 화면 이미지를 근거로 쓴다."
+    },
+    {
+      "id": "samsung-us-reader-compatibility",
+      "claim": "Samsung Pay는 NFC 또는 MST를 지원하지 않는 카드 단말기에서는 작동하지 않는다. 단말기 자체가 지원하지 않으면 휴대폰 문제가 아니다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung 미국 지원 — How to fix transaction errors in Samsung Wallet (TSG10007339)",
+      "source_url": "https://www.samsung.com/us/support/troubleshoot/TSG10007339/",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰·워치",
+        "line": "Samsung Pay(Samsung Wallet) 결제",
+        "years": "전 연식",
+        "region": "US"
+      },
+      "caution": "미국 페이지 기준이다. 국내 카드 단말기가 어떤 방식을 지원하는지는 이 자료로 확인하지 않았으니 글에서 국내 단말기 지원을 단정하지 않는다."
+    },
+    {
+      "id": "samsung-reader-position-contactless-symbol",
+      "claim": "Samsung Pay 결제는 휴대폰을 비접촉 표시가 있는 단말기 위에 대는 방식이며, 카드를 긁거나 꽂는 자리와 같은 곳에 대면 된다고 삼성 미국 지원이 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung 미국 지원 — How to fix transaction errors in Samsung Wallet (TSG10007339)",
+      "source_url": "https://www.samsung.com/us/support/troubleshoot/TSG10007339/",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰·워치",
+        "line": "Samsung Pay(Samsung Wallet) 결제",
+        "years": "전 연식",
+        "region": "US"
+      },
+      "caution": "단말기 위치는 매장마다 다르다. 글에는 '비접촉 표시 근처에 휴대폰을 대라'처럼 범위를 넓게 쓰고, 대기 시간 같은 수치는 근거가 없어 넣지 않는다."
+    },
+    {
+      "id": "samsung-network-check-then-restart",
+      "claim": "'No network connection' 또는 'Network problem occurred' 메시지가 뜨면 Wi-Fi 또는 모바일 데이터 연결을 확인하고, 그래도 안 되면 기기를 재시작하라고 삼성 미국 지원이 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung 미국 지원 — How to fix transaction errors in Samsung Wallet (TSG10007339)",
+      "source_url": "https://www.samsung.com/us/support/troubleshoot/TSG10007339/",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰·워치",
+        "line": "Samsung Pay(Samsung Wallet) 결제",
+        "years": "전 연식",
+        "region": "US"
+      },
+      "caution": "'결제는 모바일 데이터가 필수'라고 단정하는 문장은 이 페이지에 없다. 연결 상태 확인까지만 쓴다."
+    },
+    {
+      "id": "samsung-customer-center-1588-3366",
+      "claim": "NFC 문제가 계속되면 삼성 고객센터 1588-3366으로 전문가 도움을 받으라고 삼성전자서비스 FAQ(2026-10-16 게시)가 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — NFC 기능 불량 안내 FAQ",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1565668",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 NFC 탑재 기종",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "전화번호는 페이지 게시 시점 기준이다. 발행 전에 한 번 더 확인하고, 글에는 '삼성 고객센터'와 함께 번호를 적는다.",
+      "cautionSource": "삼성전자서비스 FAQ의 게시일 2026-10-16 및 고객센터 번호 1588-3366 원문"
+    },
+    {
+      "id": "apple-pay-passcode-icloud-cards-removed",
+      "claim": "Apple Pay는 Face ID·Touch ID 또는 기기 암호가 있어야 쓸 수 있다. 기기 암호를 제거하거나 iCloud에서 로그아웃하면 그 기기의 모든 신용·체크·선불·교통카드와 학생증이 지워진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — Apple Pay 설정 및 사용 (HT204506)",
+      "source_url": "https://support.apple.com/ko-kr/HT204506",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰·워치",
+        "line": "iPhone·Apple Watch (Apple Pay 사용 기기)",
+        "years": "전 연식(최신 iOS·watchOS 필요)",
+        "region": "KR"
+      },
+      "caution": "잠금 설정을 바꾸거나 iCloud를 로그아웃하면 카드가 함께 지워진다는 점을 먼저 알린다. 지워진 카드는 카드사 앱으로 다시 추가해야 하므로 되돌리기 전에 이 점을 확인하게 한다.",
+      "cautionSource": "Apple 지원 HT204506 원문 'iCloud에서 로그아웃하거나 비밀번호를 제거하면 해당 기기에서 모든 신용 카드... 가 제거됩니다'"
+    },
+    {
+      "id": "apple-pay-korea-domestic-card-app-only",
+      "claim": "대한민국에서는 국내 발급 체크카드·신용카드를 카드 발급사의 모바일 앱을 통해서만 Apple 지갑에 추가할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — Apple Pay 설정 및 사용 (HT204506)",
+      "source_url": "https://support.apple.com/ko-kr/HT204506",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰·워치",
+        "line": "Apple Pay 국내 발급 카드",
+        "years": "전 연식(최신 iOS 기준)",
+        "region": "KR"
+      },
+      "caution": "카드사마다 앱 메뉴와 본인확인 절차가 다르다. 이 자료로는 카드사별 메뉴를 확인하지 않았으므로 글에는 '카드사 앱에서 Apple 지갑 추가 메뉴 찾기'까지만 쓴다."
+    },
+    {
+      "id": "apple-pay-card-add-problem-issuer",
+      "claim": "카드를 추가하는 데 문제가 있으면 카드 발급처에 문의하라고 Apple이 안내한다. 발급사에 따라 추가 정보 제공이나 앱 다운로드 같은 추가 확인을 요구할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — Apple Pay 설정 및 사용 (HT204506)",
+      "source_url": "https://support.apple.com/ko-kr/HT204506",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰·워치",
+        "line": "Apple Pay 카드 등록",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "추가가 안 되는 원인이 카드사 측인지 기기 측인지는 Apple 문서만으로 가리지 않는다. 독자에게는 카드사 앱에서 같은 카드가 등록돼 있는지 먼저 보라고 안내한다."
+    },
+    {
+      "id": "apple-pay-transaction-list-in-wallet",
+      "claim": "아이폰에서는 지갑 앱을 열고 카드를 누르면 최근 거래 목록을 볼 수 있다. Mac·iPad 등은 Wallet 및 Apple Pay 설정의 거래 탭에서 확인한다고 Apple이 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — See your Apple Pay transaction history (104954)",
+      "source_url": "https://support.apple.com/en-qa/104954",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰·워치·태블릿",
+        "line": "Apple Pay 전 기기",
+        "years": "전 연식",
+        "region": "글로벌(영문 페이지)"
+      },
+      "caution": "화면 이름과 메뉴 위치는 iOS 버전에 따라 다를 수 있다. 거래 목록의 금액이 최종 청구액과 다를 수 있다는 Apple 문구를 함께 쓴다."
+    },
+    {
+      "id": "apple-pay-duplicate-check-with-issuer",
+      "claim": "Apple은 Apple Pay 거래 화면의 금액이 최종 청구 금액과 다르게 보일 수 있다고 안내하며, 거래에 대해 질문이 있으면 은행이나 카드사에 문의하라고 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — See your Apple Pay transaction history (104954)",
+      "source_url": "https://support.apple.com/en-qa/104954",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰·워치·태블릿",
+        "line": "Apple Pay 전 기기 (중복 결제 확인)",
+        "years": "전 연식",
+        "region": "글로벌(영문 페이지)"
+      },
+      "caution": "같은 금액이 두 번 보여도 바로 중복 결제로 단정하지 않는다. 카드사 승인 내역과 명세서를 먼저 대조하고, 중복이 맞으면 카드사에 이의 신청한다. 재결제는 하지 않는다고 안내한다.",
+      "cautionSource": "Apple 지원 104954 원문 '최종 청구 금액과 다르게 보일 수 있음'과 '카드사에 문의' 안내"
+    }
+  ]
+}

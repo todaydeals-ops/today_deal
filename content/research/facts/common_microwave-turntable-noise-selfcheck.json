@@ -1,0 +1,177 @@
+{
+  "topic": "전자레인지에서 큰 소음이 나거나 접시(턴테이블)가 안 돌 때 자가 점검",
+  "brand": "공통",
+  "article": "microwave-turntable-noise-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "microwave-turntable-rotation-check"
+  ],
+  "declined_facts": [
+    {
+      "id": "microwave-turntable-not-rotating-bearing-damage",
+      "why": "기존 팩트의 출처로 적힌 삼성 공식 페이지(samsungsvc.co.kr/solution/24832)를 직접 열어 확인했으나 베어링·운모판 손상 문구는 없었다. 회전축 커플러 쪽 점검은 삼성 NZ 공식 페이지와 LG 공식 페이지에서 확인되므로 그쪽 팩트로 대체했다. 기존 팩트는 근거 재확인 전까지 쓰지 않는다."
+    },
+    {
+      "id": "microwave-never-disassemble-warning",
+      "why": "기존 팩트가 근거로 든 삼성 공식 페이지(samsungsvc.co.kr/solution/24832)에 분해 금지 문구가 없었다. 이번 조사에서는 이 팩트를 재사용하지 않고 disputes로 신고만 했다."
+    }
+  ],
+  "disputes": [
+    {
+      "targetId": "microwave-turntable-not-rotating-bearing-damage",
+      "problem": "기존 팩트는 회전이 전혀 안 되면 회전 축 베어링(커플러)이나 운모판이 손상되었을 가능성이 높다고 적고, 출처로 삼성 solution/24832를 들었다. 해당 페이지를 열어 확인하니 베어링·운모판·커플러 문구가 없고 회전판 이물질과 회전축 장착 확인만 있다.",
+      "evidence": "https://www.samsungsvc.co.kr/solution/24832 (회전판 이물질, 회전 받침과 회전축 장착 확인, 출장서비스 예약 안내만 확인됨)"
+    },
+    {
+      "targetId": "microwave-never-disassemble-warning",
+      "problem": "기존 팩트는 분해·수리 금지를 삼성·LG 공식 자가점검 안내로 적고 출처로 solution/24832를 들었다. 해당 페이지를 열어 확인하니 분해 금지 문구가 없다. 출처를 실제로 확인된 문서로 바꾸거나 해당 문구가 있는 공식 문서를 다시 찾아야 한다.",
+      "evidence": "https://www.samsungsvc.co.kr/solution/24832 (분해 관련 문구 없음 확인). 같은 날 solution/41149도 열었으나 분해 문구는 없고 '전원 차단'과 '출장서비스 예약'만 있음"
+    }
+  ],
+  "facts": [
+    {
+      "id": "turntable-noise-debris-roller-shaft",
+      "claim": "전자레인지에서 소음이 나거나 회전이 걸리면 회전축이나 회전 바퀴(롤러) 주변에 낀 이물질을 먼저 확인하고 제거한다. 이물질에 걸려 소음이 날 수 있기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 평소와 달리 큰 소음이 나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150332195464",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "전자레인지", "line": "전 라인", "years": "페이지 기준(연식 미특정)", "region": "KR" },
+      "caution": "이물질 제거는 전원을 끈 상태에서 한다. 턴테이블 판을 빼고 롤러를 꺼내는 범위까지만 안내하고, 내부 전기 부품에는 손대지 않도록 한다.",
+      "cautionSource": "LG 공식 안내의 회전축·회전 바퀴 이물질 제거 항목 (전기 부품 접근 금지 문구는 이 페이지에 없음, 안전 원칙은 전 공통 기준선 적용)"
+    },
+    {
+      "id": "turntable-noise-roller-ring-cleaning-nz",
+      "claim": "삼성 공식 안내는 턴테이블 받침 바퀴(베이스 휠)와 롤러 링이 더러우면 청소하라고 한다. 턴테이블과 롤러 휠을 분리해 따뜻한 물과 중성세제로 씻고, 전자레인지 바닥과 롤러 트랙을 닦은 뒤 모든 부품을 완전히 말려서 다시 조립한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자 뉴질랜드 고객지원 — Microwave Oven's 'Turntable' is not spinning",
+      "source_url": "https://www.samsung.com/nz/support/home-appliances/microwave-oven-turntable-is-not-spinning/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "전자레인지", "line": "턴테이블 모델", "years": "전 연식", "region": "글로벌(NZ 페이지, 국내 동일 문구 미확인)" },
+      "caution": "세척 후 부품을 완전히 말린 다음 조립해야 한다. 물기가 남은 상태로 전원을 연결하지 않는다. 국내 삼성 페이지에서 같은 문장은 확인하지 못했다.",
+      "cautionSource": "삼성 NZ 공식 페이지의 'dry all parts thoroughly before reassembling' 문장"
+    },
+    {
+      "id": "turntable-noise-coupler-misaligned",
+      "claim": "턴테이블 중앙의 커플러(연결 부품)가 모터에 제대로 맞물리지 않으면 턴테이블이 돌지 않고, 보통 큰 소음이 함께 난다. 소음과 회전 멈춤이 같이 나면 커플러 체결을 먼저 본다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자 뉴질랜드 고객지원 — Microwave Oven's 'Turntable' is not spinning",
+      "source_url": "https://www.samsung.com/nz/support/home-appliances/microwave-oven-turntable-is-not-spinning/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "전자레인지", "line": "턴테이블 모델", "years": "전 연식", "region": "글로벌(NZ 페이지, 국내 동일 문구 미확인)" },
+      "caution": "커플러가 빠졌는지 확인하는 것까지만 한다. 커플러나 모터를 떼어 교체하는 작업은 독자에게 권하지 않는다. 고압 부품 근처이고 보증·안전 문제가 생길 수 있다.",
+      "cautionSource": "삼성 NZ 공식 페이지의 커플러 위치 확인 문장. 분해 교체 금지 근거는 전 공통 안전 기준선(고압 부품)"
+    },
+    {
+      "id": "turntable-noise-tray-stand-position",
+      "claim": "회전 접시(유리판)와 회전 받침이 제자리에 올바르게 놓이지 않으면 회전 중 걸리거나 접시가 불안정해져 소음이 난다. 접시와 받침을 빼서 다시 정위치에 끼운 뒤 소음이 줄어드는지 본다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 평소와 달리 큰 소음이 나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150332195464",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "전자레인지", "line": "전 라인", "years": "페이지 기준(연식 미특정)", "region": "KR" },
+      "caution": "접시와 받침을 다시 끼울 때 유리판 방향과 받침 위치를 그림·사용설명서와 맞춰 확인한다.",
+      "cautionSource": "LG 공식 안내의 회전 접시·회전 받침 정위치 확인 항목"
+    },
+    {
+      "id": "turntable-noise-tray-stand-samsung-kr",
+      "claim": "삼성 국내 공식 안내는 유리 회전판이 이물질과 찌꺼기에 걸리지 않고 잘 도는지, 회전 받침과 회전판이 회전축에 제대로 설치됐는지 확인하라고 한다. 해결되지 않으면 출장서비스 예약을 권한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 음식이 익지 않고 가열이 약해요 (레인지)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/24832",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "전자레인지·레인지", "line": "전 라인(회전판 모델)", "years": "페이지 기준(연식 미특정)", "region": "KR" },
+      "caution": "이 페이지는 가열 약함 증상의 안내다. 소음 자체를 다룬 문구로 과장하지 않는다. 소음과 함께 회전이 안 되면 같은 점검 순서를 적용한다.",
+      "cautionSource": "삼성 국내 공식 페이지 제목과 본문 범위"
+    },
+    {
+      "id": "turntable-noise-food-buildup-cleaning",
+      "claim": "내부에 음식물 찌꺼기가 쌓이면 소음이 날 수 있다. 물을 담은 컵이나 그릇을 2~3분 데운 뒤 따뜻하고 젖은 행주로 내부를 닦으면 찌꺼기가 불어서 쉽게 닦인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 미국 고객지원 — Troubleshooting noises (microwave)",
+      "source_url": "https://www.lg.com/us/support/help-library/lg-microwave-troubleshooting-noises--20152329269153",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "전자레인지", "line": "전 라인", "years": "페이지 기준(연식 미특정)", "region": "US(국내 동일 문구 미확인)" },
+      "caution": "물컵은 전자레인지용 용기에 담는다. 금·은 장식이나 금속 무늬가 있는 그릇은 쓰지 않는다.",
+      "cautionSource": "LG 공식 안내의 금·은·금속 무늬 식기 사용 금지 문장(같은 페이지)"
+    },
+    {
+      "id": "turntable-noise-level-install-surface",
+      "claim": "전자레인지를 눌렀을 때 한쪽이 흔들리면 설치 바닥이 평평하지 않은 것이다. 이 상태에서 작동하면 진동으로 소음이 날 수 있으므로 평평한 곳으로 옮기고 수평을 맞춘다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 평소와 달리 큰 소음이 나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150332195464",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "전자레인지", "line": "전 라인", "years": "페이지 기준(연식 미특정)", "region": "KR" },
+      "caution": "싱크대 위나 철제 쌀통 위에 올려 둔 경우 소음이 날 수 있다고 공식 안내가 적는다. 그런 자리라면 먼저 옮긴다.",
+      "cautionSource": "LG 공식 안내의 설치 장소 항목"
+    },
+    {
+      "id": "turntable-noise-normal-humming-db",
+      "claim": "전자레인지는 고주파를 만드는 동안 45~50dB 정도의 발진음(웅웅거리는 소리)을 내며, 이것은 정상이다. 이 정도의 소리 때문에 고장으로 판단하지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 평소와 달리 큰 소음이 나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150332195464",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "전자레인지", "line": "전 라인", "years": "페이지 기준(연식 미특정)", "region": "KR" },
+      "caution": "이 정상음은 '평소와 다른 큰 소리'와 구분해서 안내한다. 덜컹거림, 긁는 소리, 굉음은 정상음 범위가 아니다.",
+      "cautionSource": "LG 공식 안내의 45~50dB 발진음 정상 문구"
+    },
+    {
+      "id": "turntable-noise-service-when-persists",
+      "claim": "LG 미국 공식 안내는 위의 점검 뒤에도 소음이 계속되면 정확한 진단을 위해 서비스 점검이 필요하다고 한다. 국내 LG 공식 안내도 갑자기 매우 큰 굉음이 나면 서비스 점검을 받으라고 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 미국 고객지원 — Troubleshooting noises (microwave) / LG전자 고객지원 — 평소와 달리 큰 소음이 나요(국내 굉음 문구)",
+      "source_url": "https://www.lg.com/us/support/help-library/lg-microwave-troubleshooting-noises--20152329269153",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "전자레인지", "line": "전 라인", "years": "페이지 기준(연식 미특정)", "region": "US 및 KR(국내 굉음 문구는 LG KR 페이지)" },
+      "caution": "AS 접수는 LG 공식 채널(채팅 지원 또는 고객센터)로 안내한다. 전화번호는 공식 페이지에 적힌 번호만 쓰고, 방문비용 금액은 단정하지 않는다.",
+      "cautionSource": "LG 미국 공식 페이지의 서비스 필요 문구와 채팅 수리 접수 안내"
+    },
+    {
+      "id": "turntable-noise-samsung-visit-service",
+      "claim": "삼성 국내 공식 안내는 자가 점검으로 해결되지 않으면 전문 엔지니어의 방문 점검이 필요하다고 보고 출장서비스 예약을 권한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 음식이 익지 않고 가열이 약해요 (레인지)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/24832",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "전자레인지·레인지", "line": "전 라인", "years": "페이지 기준(연식 미특정)", "region": "KR" },
+      "caution": "방문 점검 비용은 제품 상태와 보증 여부에 따라 달라지므로 본문에서 금액을 단정하지 않는다.",
+      "cautionSource": "삼성 국내 공식 페이지의 출장서비스 예약 안내 문구"
+    },
+    {
+      "id": "turntable-noise-samsung-contact-number",
+      "claim": "삼성전자서비스 공식 안내 문서에는 고객센터 번호 1588-3366이 적혀 있다. 전원을 끈 뒤 이 번호로 문의하거나 서비스센터 방문 점검을 받는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 작동 중 내부에서 스파크(불꽃)가 발생합니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41149",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "전자레인지", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "이 번호는 스파크 안내 문서에 적힌 번호다. 소음 증상에도 같은 번호를 쓸 수 있는지는 해당 문서의 범위를 벗어나므로, 소음 증상 안내에는 고객센터 또는 출장서비스 예약으로 연결한다.",
+      "cautionSource": "삼성 공식 스파크 안내 문서의 고객센터 번호 문구(소음 증상 적용 범위는 미확인)"
+    },
+    {
+      "id": "turntable-noise-no-official-disassembly-steps",
+      "claim": "삼성 국내 공식 안내(가열 약함·스파크 페이지)와 LG 공식 안내(소음·회전 멈춤 페이지)를 확인한 결과, 턴테이블 모터·커플러·롤러를 분해해 교체하는 절차는 공식 페이지에서 찾지 못했다. 독자에게 분해 교체 절차를 안내하지 않는다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "삼성전자서비스 가열 약함 페이지 및 LG 소음 페이지 대조 확인(조사 메모)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/24832",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "전자레인지", "line": "턴테이블 모델", "years": "전 연식", "region": "KR·US·NZ 공식 페이지 범위" },
+      "caution": "확인실패는 '분해가 위험하다'는 뜻이 아니라 '공식 분해 절차를 찾지 못했다'는 뜻이다. 그래서 글에서는 분해 대신 점검 범위(이물질 제거, 정위치 확인)까지만 쓰고, 나머지는 서비스 접수로 넘긴다.",
+      "cautionSource": "조사 대상 공식 페이지 3건 확인 결과"
+    }
+  ]
+}

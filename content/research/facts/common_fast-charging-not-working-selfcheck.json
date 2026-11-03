@@ -1,0 +1,233 @@
+{
+  "topic": "고속충전이 안 되고 충전이 느릴 때 케이블·어댑터·포트부터 점검 (갤럭시·아이폰·아이패드 공식 안내 기준)",
+  "brand": "공통",
+  "article": "fast-charging-not-working-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "battery-swelling-stop-immediately",
+    "moisture-detection-charging-block",
+    "charging-disabled-high-temperature",
+    "battery-protection-mode-80percent",
+    "fast-charging-toggle-location-one-ui",
+    "charger-wattage-compatibility-rule",
+    "genuine-charger-importance",
+    "pdo-vs-pps-charging-standard"
+  ],
+  "declined_facts": [
+    {
+      "id": "charging-port-debris-cleaning",
+      "why": "재사용 안 함. 근거 원문 samsungsvc 37809는 '부드러운 솔로로 이물질 제거'만 명시하고, 손전등 확인·공기 분사 방법은 원문에서 확인되지 않았다. 대신 새 팩트 samsung-port-soft-brush-cleaning으로 원문 문구만 옮겼고, 기존 팩트는 disputes로 신고했다."
+    },
+    {
+      "id": "ipad-slow-charging-with-low-wattage-adapter",
+      "why": "재사용 안 함. 근거로 달린 Apple 125066 원문을 열어 보니 7.5W 임계값 문구가 없고, 해당 페이지는 iPad Pro(M5) 기준 60W 이상 USB-C 어댑터를 안내한다. 새 팩트 apple-ipad-fast-charge-60w-usbc로 대체하고 disputes로 신고했다."
+    },
+    {
+      "id": "ipad-slow-charger-notification",
+      "why": "재사용 안 함. 근거 원문 125066에 'Slow Charger' 알림 안내가 없다. disputes로 신고했다."
+    },
+    {
+      "id": "ipad-charging-cable-connector-inspection",
+      "why": "재사용 안 함. 이번 주제는 iPhone·갤럭시 중심이고, 같은 취지의 점검 순서를 Apple 108805 원문(iPhone)에서 직접 확인해 apple-iphone-charge-checklist-order로 옮겼다."
+    },
+    {
+      "id": "charger-cable-rating-charging-speed-difference",
+      "why": "재사용 안 함. 출처가 Samsung Members 커뮤니티 글(사용자 작성)이고 이번 조사에서 원문을 열지 못했다. 같은 취지(케이블 정격)는 공식 TSG10013503의 5A 권장 문구(samsung-cable-5a-for-25w)로 대체했다."
+    },
+    {
+      "id": "non-certified-adapter-overvoltage-battery-damage-risk",
+      "why": "재사용 안 함. 출처가 보조배터리 판매 블로그(large-battery.com)라 기관 공식 자료가 아니다. 비정품 충전기 위험은 공식 기반 genuine-charger-importance로 충분하다."
+    },
+    {
+      "id": "usb-pd-certification-fast-charging-protocol",
+      "why": "재사용 안 함. 출처가 고객센터 솔루션 블로그(channel.io)라 공식 문서가 아니다. PD 규격 설명은 pdo-vs-pps-charging-standard(삼성 공식)로 대신한다."
+    },
+    {
+      "id": "low-cost-battery-fire-risk",
+      "why": "재사용 안 함. 보조배터리 시험 기사(언론 보도)로 이번 주제(케이블·어댑터·포트 점검)와 층위가 다르다. 과열 위험 안내는 battery-swelling-stop-immediately로 대신한다."
+    }
+  ],
+  "disputes": [
+    {
+      "targetId": "ipad-slow-charging-with-low-wattage-adapter",
+      "problem": "Apple 125066 원문에서 7.5W 임계값 문구를 확인하지 못했다. 원문은 iPad Pro(M5) 기준으로 60W 이상 USB-C 어댑터를 안내한다.",
+      "evidence": "https://support.apple.com/en-us/125066 직접 열람(2026-11-03): 'a USB-C compliant, 60W or higher power adapter'"
+    },
+    {
+      "targetId": "ipad-slow-charger-notification",
+      "problem": "Apple 125066 원문에 'Slow Charger' 설정 알림 안내가 없다.",
+      "evidence": "https://support.apple.com/en-us/125066 직접 열람(2026-11-03): 알림 관련 문구 없음"
+    },
+    {
+      "targetId": "charging-port-debris-cleaning",
+      "problem": "손전등 확인·공기 분사 방법은 원문에 없다. 원문은 '부드러운 솔로 충전 단자에 낀 이물질을 제거'만 명시한다.",
+      "evidence": "https://www.samsungsvc.co.kr/solution/37809 직접 열람(2026-11-03)"
+    }
+  ],
+  "facts": [
+    {
+      "id": "apple-iphone-charge-checklist-order",
+      "claim": "아이폰이 충전되지 않거나 느리면 Apple은 다음 순서로 점검하라고 안내한다. (1) 충전 케이블·USB 어댑터의 파손·휘어진 핀 확인(손상된 액세서리는 사용 중지), (2) 벽 콘센트에 케이블·어댑터·콘센트가 단단히 연결됐는지 확인하거나 다른 콘센트 사용, (3) 기기 하단 충전 단자의 이물질 제거 후 케이블을 끝까지 꽂기, (4) 30분 충전 후 재확인, (5) 여전히 전원이 안 켜지면 강제 재시작 후 30분 추가 충전",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your iPhone or iPod touch won't charge",
+      "source_url": "https://support.apple.com/en-us/108805",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iPhone·iPod touch 전 모델", "years": "전 연식", "region": "글로벌" },
+      "caution": "단자 청소 방법은 Apple 원문에 구체적으로 적혀 있지 않다. 금속 도구로 긁지 말고 전원을 끈 뒤 가볍게 불어내거나 마른 부드러운 솔을 쓰는 것이 무난하다는 상식 수준으로 안내할 것. 끝까지 안 되면 서비스 점검을 권할 것.",
+      "cautionSource": "원문은 '포트 이물질 제거'만 명시. 구체적 청소 도구는 원문 외 상식 수준"
+    },
+    {
+      "id": "apple-accessory-not-supported-alert-steps",
+      "claim": "아이폰에 '액세서리가 지원되지 않거나 인증되지 않음' 알림이 뜨면 Apple은 (1) 어댑터 없이 충전기에 직접 연결하고, (2) 충전 단자 이물질을 제거하고, (3) 재시작한 뒤, (4) 다른 USB 케이블이나 충전기로 바꿔보고, (5) 최신 iOS로 업데이트하라고 안내한다. 원인으로는 단자 오염·손상, 결함 있거나 손상된 충전 액세서리, 기기 충전용으로 설계되지 않은 USB 충전기를 든다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your iPhone or iPod touch won't charge",
+      "source_url": "https://support.apple.com/en-us/108805",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iPhone·iPod touch 전 모델", "years": "전 연식", "region": "글로벌" }
+    },
+    {
+      "id": "apple-optimized-charging-80-hold-is-normal",
+      "claim": "아이폰이 80%에서 충전을 멈춘 것처럼 보이면 '최적화된 배터리 충전'이 작동 중일 수 있다. iOS 13 이후 기기는 완충 상태로 오래 머무는 시간을 줄이려고 사용자의 충전 패턴을 학습해 80%에서 대기할 수 있으며, 장시간 충전기에 연결돼 있을 것으로 예측될 때만 작동한다. iPhone 15 이후 모델은 충전 한도(Charge Limit) 설정으로도 80% 제한이 걸릴 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — If your iPhone or iPod touch won't charge (배터리 최적화 충전 안내)",
+      "source_url": "https://support.apple.com/en-us/108805",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iOS 13 이후 iPhone", "years": "2019년 이후(iOS 13~)", "region": "글로벌" },
+      "caution": "80%에서 멈추는 것은 고장이 아니라 의도된 동작이다. 100%가 꼭 필요하면 최적화 충전 또는 충전 한도 설정을 끄는 방법을 안내할 것. 기기가 열을 받으면 소프트웨어가 80% 이상 충전을 제한할 수 있으므로 시원한 곳으로 옮기도록 함께 안내할 것.",
+      "cautionSource": "Apple 원문의 발열 시 80% 이상 제한 안내"
+    },
+    {
+      "id": "apple-iphone15-usbc-fast-charge-18w",
+      "claim": "USB-C 단자가 있는 아이폰 15 이후 모델을 고속 충전하려면 최소 18W 이상의 USB-C 전원 어댑터가 필요하다. 케이블은 기기와 함께 든 것과 같은 USB-C 케이블을 쓰라고 Apple이 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Fast charge your iPhone",
+      "source_url": "https://support.apple.com/en-us/102574",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iPhone 15 이후 USB-C 모델", "years": "2023년 이후", "region": "글로벌" },
+      "caution": "어댑터 출력 표기(예: 18W·20W·30W)는 어댑터 본체 인쇄 문구로 확인하게 할 것. 기기 전원 공급 용량과 어댑터 출력이 다르면 실제 속도는 낮아진다.",
+      "cautionSource": "Apple 원문의 최소 18W 기준 문구"
+    },
+    {
+      "id": "apple-earlier-lightning-fast-charge-cable",
+      "claim": "라이트닝 단자를 쓰는 이전 아이폰은 USB-C to Lightning 케이블과 18W 이상 Apple 어댑터로 고속 충전할 수 있다. Apple은 USB-PD를 지원하는 호환 USB-C 어댑터도 동급으로 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Fast charge your iPhone",
+      "source_url": "https://support.apple.com/en-us/102574",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "라이트닝 단자 iPhone(15 이전)", "years": "2012~2022 라이트닝 모델", "region": "글로벌" },
+      "caution": "USB-A 어댑터를 쓰면 고속 충전이 기대만큼 나오지 않는다는 점을 함께 안내할 것. 제3자 어댑터는 Apple이 선택·성능을 보증하지 않는다는 문구가 원문에 있다.",
+      "cautionSource": "Apple 원문의 제3자 제품 비보증 문구"
+    },
+    {
+      "id": "apple-20w-vs-18w-minimum-unclear",
+      "claim": "Apple 공식 페이지는 아이폰 15 이후 유선 고속 충전의 최소 기준을 18W로 명시하지만, 같은 페이지의 다른 기종 안내에는 20W 이상 어댑터 문구가 함께 나오고 그 차이를 설명하지 않는다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "Apple Support — Fast charge your iPhone",
+      "source_url": "https://support.apple.com/en-us/102574",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iPhone 15 이후 USB-C 모델", "years": "2023년 이후", "region": "글로벌" },
+      "caution": "독자에게는 '최소 18W 이상'을 기준으로 안내하고, 20W 이상을 권장하는 이유는 확인되지 않았다고 밝힐 것. 20W 어댑터를 쓰는 것은 손해가 없으니 '가능하면 20W 이상'이라고만 권하는 것은 괜찮다.",
+      "cautionSource": "원문 내 18W와 20W 문구 불일치 확인"
+    },
+    {
+      "id": "apple-ipad-fast-charge-60w-usbc",
+      "claim": "Apple은 iPad Pro(M5) 고속 충전에 60W 이상 USB-C 전원 어댑터를 안내하며, 어댑터 본체에 인쇄된 와트 수를 확인하라고 한다. 케이블은 상자에 든 USB-C 케이블(또는 60W USB-C 충전 케이블)을 쓰라고 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple Support — Fast charge your iPad",
+      "source_url": "https://support.apple.com/en-us/125066",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "태블릿", "line": "iPad Pro(M5) 기준 원문", "years": "최신 모델", "region": "글로벌" },
+      "caution": "원문이 iPad Pro(M5)만 다루므로 다른 아이패드 모델에 같은 60W 기준을 적용하지 말 것. 저출력 어댑터는 안전하지만 느리다는 취지로만 말할 것.",
+      "cautionSource": "원문 대상 모델 범위(iPad Pro M5)"
+    },
+    {
+      "id": "samsung-cable-5a-for-25w",
+      "claim": "갤럭시 25W 충전을 최적으로 하려면 5A 정격의 USB-C 케이블을 쓰라고 삼성이 안내한다. 3A 케이블도 동작은 하지만 속도가 제한될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung US Support — Samsung Galaxy device is not fast charging",
+      "source_url": "https://www.samsung.com/us/support/troubleshoot/TSG10013503/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "25W 고속충전 갤럭시", "years": "2020년대 이후", "region": "US(미국 지원 페이지)" },
+      "caution": "국내 판매 케이블에는 5A 표기가 없는 경우가 많다. 케이블 포장·제품 사양의 전류(A)와 전력(W) 표기를 확인하라고 안내하고, 미국 페이지 기준이라는 점을 밝힐 것.",
+      "cautionSource": "미국 지원 페이지 원문 기준, 국내 표기 관행은 원문 밖 상식"
+    },
+    {
+      "id": "samsung-fast-charging-not-on-pc-usb",
+      "claim": "갤럭시를 컴퓨터나 일반 USB 기기에 연결하면 고속 충전이 작동하지 않을 수 있다. 고속 충전은 삼성 정품 충전기 같은 전용 어댑터 연결을 전제로 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung US Support — Samsung Galaxy device is not fast charging",
+      "source_url": "https://www.samsung.com/us/support/troubleshoot/TSG10013503/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 전 시리즈", "years": "전 연식", "region": "US(미국 지원 페이지)" },
+      "caution": "PC에 꽂아 느린 것을 고속 충전 불량으로 오해하지 않도록 먼저 벽 어댑터로 바꿔 확인하라고 안내할 것."
+    },
+    {
+      "id": "samsung-incompatible-accessory-slow-or-fail",
+      "claim": "삼성은 호환되지 않거나 손상된 충전 액세서리를 쓰면 충전 속도 저하, 충전 끊김, 충전 실패가 생길 수 있다고 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung US Support — Samsung Galaxy device is not fast charging",
+      "source_url": "https://www.samsung.com/us/support/troubleshoot/TSG10013503/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 전 시리즈", "years": "전 연식", "region": "US(미국 지원 페이지)" },
+      "caution": "'비정품은 무조건 위험'처럼 단정하지 말고, 원문대로 '호환되지 않거나 손상된 액세서리'를 쓰면 문제가 생길 수 있다는 범위로 말할 것. 과열·손상 위험 대목은 genuine-charger-importance와 함께 쓸 것."
+    },
+    {
+      "id": "samsung-members-cable-diagnostic-path",
+      "claim": "갤럭시 케이블 충전 상태는 삼성 멤버스 앱에서 진단할 수 있다. 메뉴 경로는 Support(지원)에서 Get Started를 누른 뒤 Cable charging을 선택해 진단 결과를 확인하는 방식이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung US Support — Samsung Galaxy device is not fast charging",
+      "source_url": "https://www.samsung.com/us/support/troubleshoot/TSG10013503/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "삼성 멤버스 앱 지원 갤럭시", "years": "앱 지원 기종", "region": "US(미국 지원 페이지)" },
+      "caution": "한국 화면에서는 '도움받기 > 휴대전화 진단 > 유선 충전'으로 표기될 수 있다(삼성전자서비스 37809 원문 표기). 메뉴 이름은 앱 버전·모델별로 다를 수 있다고 함께 말할 것.",
+      "cautionSource": "삼성전자서비스 37809 원문의 메뉴 표기와 미국 페이지 메뉴명이 다름"
+    },
+    {
+      "id": "samsung-port-soft-brush-cleaning",
+      "claim": "갤럭시 충전 단자에 이물질이 끼어 있으면 부드러운 솔로 이물질을 제거한 뒤 다시 사용하라고 삼성이 안내한다. 단자가 젖어 있으면 완전히 말린 뒤 사용하고, 물기 감지 알림이 뜨면 충전기를 분리한다. 단자가 변형되었거나 부식된 경우 충전이 느려질 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시, 휴대전화 배터리 충전이 안 돼요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37809",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 전 시리즈", "years": "전 연식", "region": "KR" },
+      "caution": "원문은 손전등 확인이나 공기 분사를 권하지 않는다. 금속 핀이나 뾰족한 도구로 단자를 긁지 말도록 안내할 것(원문 밖 상식 수준). 변형·부식이 보이면 청소로 해결되지 않으니 서비스 점검으로 넘길 것.",
+      "cautionSource": "원문의 부드러운 솔 기준. 금속 도구 금지는 원문 밖 상식 수준"
+    },
+    {
+      "id": "samsung-service-visit-with-phone-adapter-cable",
+      "claim": "갤럭시 충전 단자를 청소해도 충전이 안 되면 삼성은 가까운 서비스센터에서 엔지니어 점검을 받으라고 안내하며, 이때 휴대전화·충전 어댑터·충전 케이블을 함께 가져가도록 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시, 휴대전화 배터리 충전이 안 돼요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37809",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 전 시리즈", "years": "전 연식", "region": "KR" },
+      "caution": "충전기·케이블 보증기간(1년), 고객 과실 시 유상 구매 여부는 원문 요약에서만 확인했다. 글에 수치를 쓸 때는 공식 원문을 한 번 더 열어 재확인할 것.",
+      "cautionSource": "삼성전자서비스 37809 본문의 보증 안내(요약 확인, 재검증 필요)"
+    },
+    {
+      "id": "kc-mark-check-location-and-report",
+      "claim": "충전기의 KC 인증 마크와 안전인증·안전확인신고 번호, 모델명은 제품 겉면 또는 포장에 표시된다. 인증 상태와 인증일자는 제품안전정보센터(safetykorea.go.kr)에서 조회하며, 불법 의심 제품은 국민신문고 또는 1670-4920으로 신고할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가기술표준원(KATS) — KC인증 전기제품 선택과 사용으로 안전하고 따뜻한 겨울나기",
+      "source_url": "https://www.kats.go.kr/content.do?cmsid=240&mode=view&page=11&cid=23546",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "전기용품(충전기 포함)", "line": "KC 인증 대상 전기용품", "years": "전 연식", "region": "KR" },
+      "caution": "원문은 난방 기기 중심 안내(2023-01-17 등록)라 충전기 전반에 그대로 쓰는 것은 상식 수준이다. KC 마크가 있어도 제품안전정보센터에서 인증 상태가 적합인지 확인하라고 덧붙일 것.",
+      "cautionSource": "원문은 난방 전기제품 중심이며 충전기 적용은 확장 해석"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "topic": "냉장고 문이 꽉 안 닫히거나 틈이 생길 때 자가점검 (원인·단계별 점검·패킹 교체/AS 기준)",
+  "brand": "공통",
+  "article": "fridge-door-wont-close-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "samsung-door-close-check-order",
+      "claim": "삼성 공식 자가점검은 냉장고 문이 잘 닫히지 않을 때 ①식품·보관 용기가 문에 걸리지 않게 정리하고 서랍·선반이 끝까지 들어가 있는지 확인 ②프렌치 도어의 왼쪽 냉장실 문 쿨키퍼가 뒤집혀 있지 않은지 확인 ③도어 고무 패킹의 이물질을 부드러운 천으로 닦고 접힘·들뜸을 확인 ④수평 상태 확인 ⑤해결되지 않으면 출장서비스 예약 순서로 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 냉장고 도어가 잘 닫히지 않는 경우 자가점검 안내(솔루션 35651)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/35651",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "전 라인(쿨키퍼 항목은 프렌치 도어)", "years": "전 연식(페이지 명시 없음)", "region": "KR" },
+      "caution": "쿨키퍼 위치와 수평 조절 방법은 모델마다 다르다. 단계 순서를 그대로 쓰되 세부 위치는 사용설명서로 확인하도록 안내할 것.",
+      "cautionSource": "삼성전자서비스 솔루션 35651 원문: '형태와 위치는 모델에 따라 다를 수 있습니다', '조절 방법은 모델마다 다르므로 사용설명서를 참고합니다'"
+    },
+    {
+      "id": "samsung-door-level-front-slightly-higher",
+      "claim": "삼성 공식 안내에 따르면 냉장고는 앞쪽이 뒤쪽보다 살짝 높게 설치되어야 문이 제대로 닫히며, 앞쪽이 지나치게 높으면 안 되고 기울어 앞으로 쏠리면 문이 잘 안 닫힌다. 오른쪽 하단 조절다리에 일자형 드라이버를 끼워 돌려 높이를 맞추고, 왼쪽이 낮으면 왼쪽 하단 조절다리도 같은 방식으로 맞춘다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 도어 접착력이 강하고 잘 열리지 않아요(솔루션 25102, 수평 조절 방법)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/25102",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "지펠·양문형 냉장고", "years": "전 연식(페이지 명시 없음)", "region": "KR" },
+      "caution": "조절 다리를 돌리는 방향은 높이를 올릴 때 오른쪽에서 왼쪽, 낮출 때 반대 방향이라고 안내된다. 조절 후 문이 정상적으로 열리고 닫히는지 바로 확인하게 할 것. 조절 다리 위치는 모델별로 다르니 사용설명서를 먼저 보게 할 것.",
+      "cautionSource": "삼성전자서비스 솔루션 25102 원문 '높이를 올릴 때는 오른쪽에서 왼쪽 방향으로, 낮출 때는 반대 방향으로' 및 '모델마다 다를 수 있으니 사용설명서' 문구"
+    },
+    {
+      "id": "samsung-gasket-magnet-weakens-with-use",
+      "claim": "삼성 공식 안내에 따르면 도어 밀착력은 가스켓에 들어 있는 자석의 힘에서 나오며 사용 기간이 길어질수록 약해질 수 있다. 문을 닫은 직후 다시 열면 내부 온도·압력 차이로 더 안 열릴 수 있으며, 문이 저절로 열리지 않고 정상적으로 닫힌다면 밀착이 강하게 느껴져도 정상일 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 도어 접착력이 강하고 잘 열리지 않아요(솔루션 25102)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/25102",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "지펠·양문형 냉장고(독립냉각 방식 언급)", "years": "전 연식(페이지 명시 없음)", "region": "KR" },
+      "caution": "'밀착이 강하면 정상'이라는 안내는 문이 저절로 열리지 않을 때에만 적용된다. 문이 덜 닫혀 틈이 보이면 정상 범위로 보지 말고 아래 점검으로 넘어갈 것.",
+      "cautionSource": "삼성전자서비스 솔루션 25102 원문 '문이 저절로 열리지 않고 정상적으로 닫힌다면 ... 정상일 수 있습니다'"
+    },
+    {
+      "id": "samsung-service-criteria-seal-damage",
+      "claim": "삼성 공식 안내에 따르면 자가점검으로 해결되지 않으면 출장서비스(전문 엔지니어 방문 점검)를 예약하며, 문이 완전히 닫히지 않거나 고무패킹이 찢어지고 변형되어 냉기가 새는 경우에도 엔지니어 점검이 필요하다. 삼성 대표전화는 1588-3366이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 도어 접착력이 강하고 잘 열리지 않아요(솔루션 25102) 및 도어 고무 패킹 점검 안내(솔루션 35651)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/25102",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "지펠·양문형 냉장고", "years": "전 연식(페이지 명시 없음)", "region": "KR" },
+      "caution": "보증 기간 안이라도 사용법 설명이나 설치처럼 고장이 아닌 경우에는 별도 요금이 부과된다. 접수 전에 고장인지 설치·사용 문제인지 구분해 안내할 것.",
+      "cautionSource": "삼성전자서비스 솔루션 25102 원문 '무상 보증기간 이내라도 ... 별도의 요금이 부과됩니다'"
+    },
+    {
+      "id": "lg-door-cause-packing-residue-or-detached",
+      "claim": "LG 공식 안내는 냉장고 문이 꽉 닫히지 않는 원인을 두 가지로 든다. 고무패킹(개스킷)에 묻은 끈적한 이물질로 밀착력이 떨어지는 경우, 그리고 고무패킹이 이탈하거나 처진 경우다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 — 냉장고 문이 안 닫힐 때 고무패킹 빠짐 및 밀착 불량 해결 방법(2026.04.23 게시)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150668044180",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "공용 안내(적용 모델 명시 없음)", "years": "2026.04 게시 기준", "region": "KR" },
+      "caution": "페이지는 공용으로 제작되어 구입한 제품과 내용이 다를 수 있다고 안내한다. 모델별 차이는 사용설명서로 확인하도록 덧붙일 것.",
+      "cautionSource": "LG전자 스스로해결 원문의 '적용 모델 명시 없음, 공용 제작' 안내"
+    },
+    {
+      "id": "lg-gasket-clean-steps-and-wait",
+      "claim": "LG 공식 자가점검 순서에 따르면 패킹 4면을 스팀타월(전자레인지로 데운 적신 수건)로 2~3회 닦은 뒤 마른 수건이나 헤어드라이기 따뜻한 바람으로 물기를 말리고, 문을 닫은 상태로 최소 2시간 열지 않아 밀착되게 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 — 냉장고 문이 안 닫힐 때 고무패킹 빠짐 및 밀착 불량 해결 방법(솔루션 20150668044180)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150668044180",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "공용 안내", "years": "2026.04 게시 기준", "region": "KR" },
+      "caution": "헤어드라이기는 한 뼘(약 15~20cm) 이상 떨어뜨려 쓴다. 가까이 대면 고무가 녹거나 변형될 수 있다. 전자레인지로 데운 수건은 뜨거우니 화상에 주의하게 할 것.",
+      "cautionSource": "LG전자 스스로해결 원문 '한 뼘(약 15~20cm) 이상 거리' 및 '2~3회 반복', '최소 2시간' 문구"
+    },
+    {
+      "id": "lg-gasket-reseat-into-groove",
+      "claim": "LG 공식 안내에 따르면 패킹이 일부 빠지거나 처졌다면 손으로 눌러 도어 안쪽 홈에 맞춰 끼우고, 손으로 한 바퀴 훑어 고르게 들어갔는지 확인한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 미국 고객지원 — If your refrigerator door does not close or the door gasket is loose(help-library)",
+      "source_url": "https://www.lg.com/us/support/help-library/if-your-refrigerator-door-does-not-close-or-the-door-gasket-is-loose--20155444552642",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "공용 안내", "years": "전 연식(페이지 명시 없음)", "region": "US" },
+      "caution": "미국 페이지 기준이다. 국내 LG 스스로해결 페이지에도 같은 '홈에 눌러 끼우기'가 있으나, 국내 페이지에는 선반·비닐 항목이 없다.",
+      "cautionSource": "LG 미국 페이지 원문 'align it with the groove in the door and press it firmly into place'"
+    },
+    {
+      "id": "lg-door-cause-items-shelf-bag-reinstall",
+      "claim": "LG 미국 고객지원 페이지는 문이 안 닫히는 원인으로 ①선반 끝 밖으로 나온 음식이나 용기 ②청소 후 선반·병꽂이·서랍을 잘못 되돌린 경우 ③문에 끼인 비닐봉지나 포장재 ④끈적한 이물질 ⑤패킹이 처지거나 홈에서 빠진 경우 ⑥이사 후 도어를 잘못 재장착한 경우를 든다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 미국 고객지원 — LG refrigerator troubleshooting, a refrigerator door not closing properly(help-library)",
+      "source_url": "https://www.lg.com/us/support/help-library/lg-refrigerator-troubleshooting-a-refrigerator-door-not-closing-properly--20153121354085",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "미국 판매 모델 중심 안내", "years": "전 연식(페이지 명시 없음)", "region": "US" },
+      "caution": "국내 LG 스스로해결 페이지(20150668044180)에는 선반·병꽂이·비닐봉지 항목이 없고 패킹 이물질·이탈만 있다. 이 원인 목록을 국내 모델에 단정하지 말고 '이런 경우도 있다'로 쓸 것.",
+      "cautionSource": "LG 미국 페이지 원문 목록과 국내 LG 스스로해결 페이지 원문 비교(2026-11-03 확인)"
+    },
+    {
+      "id": "lg-door-level-front-slightly-higher",
+      "claim": "LG 미국 고객지원 페이지는 냉장고 앞쪽을 뒤쪽보다 살짝 높이면 문이 잘 닫히고 틈이 생기지 않는다고 안내하며, 앞쪽 조절 다리로 맞추라고 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 미국 고객지원 — LG refrigerator troubleshooting, a refrigerator door not closing properly(help-library)",
+      "source_url": "https://www.lg.com/us/support/help-library/lg-refrigerator-troubleshooting-a-refrigerator-door-not-closing-properly--20153121354085",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "미국 판매 모델 중심 안내", "years": "전 연식(페이지 명시 없음)", "region": "US" },
+      "caution": "좌우 수평은 바닥이 단단하고 평평한 곳에서 맞춘다. 조절 다리 위치는 모델별로 다르니 사용설명서를 먼저 보게 할 것.",
+      "cautionSource": "LG 미국 페이지 원문 'Raise the front of your refrigerator slightly higher than the back' 및 'Use the front leveling legs'"
+    },
+    {
+      "id": "lg-packing-replacement-service-route",
+      "claim": "LG 국내 공식 안내에 따르면 패킹이 찢어지거나 심하게 손상되면 LG전자 고객센터 1544-7777로 부품 교체 서비스를 신청한다. 패킹 단품 구매 경로는 공식 페이지 안에서 서로 달리 적혀 있다(본문은 서비스센터에서 부품만 따로 판매하지 않는다는 취지, FAQ는 고객센터 문의 후 모델을 확인하면 서비스센터에서 구매 가능)",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 — 냉장고 문이 안 닫힐 때 고무패킹 빠짐 및 밀착 불량 해결 방법(솔루션 20150668044180)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150668044180",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "공용 안내(모델별 부품 가능 여부 다를 수 있음)", "years": "2026.04 게시 기준", "region": "KR" },
+      "caution": "패킹 교체는 제품 모델 확인이 먼저다. 온라인 소모품 구매는 불가하다는 안내가 있으니, 독자에게는 고객센터 1544-7777로 모델명을 알리고 부품 교체 접수를 받게 하는 순서로 안내할 것.",
+      "cautionSource": "LG전자 스스로해결 원문 '고객센터 1544-7777' 및 본문·FAQ의 부품 구매 안내 문구"
+    },
+    {
+      "id": "lg-packing-cost-and-lead-time-unverified",
+      "claim": "LG 및 삼성 공식 자가점검 페이지에서는 패킹 교체 비용과 소요 기간을 확인하지 못했다. 교체 비용은 공식 근거 없이 금액을 쓰지 말 것",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 — 냉장고 문이 안 닫힐 때 고무패킹 빠짐 및 밀착 불량 해결 방법(솔루션 20150668044180)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150668044180",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "냉장고", "line": "도어 가스켓 교체", "years": "전 연식", "region": "KR" },
+      "caution": "비용·기간을 추정 금액으로 쓰면 세탁된 수치가 된다. 글에서는 '고객센터에서 견적·접수 안내를 받는다'로만 쓸 것.",
+      "cautionSource": "LG 및 삼성 공식 페이지 모두 교체 비용·기간 수치 미기재(2026-11-03 원문 확인)"
+    }
+  ]
+}

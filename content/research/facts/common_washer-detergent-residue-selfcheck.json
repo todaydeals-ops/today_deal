@@ -1,0 +1,206 @@
+{
+  "topic": "세탁 후 옷에 세제 찌꺼기가 남을 때 원인과 해결 (세제 과다·세탁물 과다·헹굼·세제함 막힘·통세척, 삼성/LG 공식 안내 기준)",
+  "brand": "공통",
+  "article": "washer-detergent-residue-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": ["drum-specific-detergent-vs-general", "appropriate-detergent-dosage"],
+  "declined_facts": [
+    {
+      "id": "excess-detergent-no-enhanced-cleaning",
+      "why": "2026-11-03 삼성 39075 원문 재열람 결과 '권장량 이상 투입해도 세척력이 향상되지 않는다'는 문구를 확인하지 못했다. caution의 4~20배 과다 사용 수치는 출처가 식품레시피(후기)라 이 글에서 쓰지 않는다. 대신 39075 원문이 확인한 '권장량을 따르고 거품이 많으면 양을 줄인다'만 reused로 쓴다"
+    },
+    {
+      "id": "excess-detergent-rinse-failure",
+      "why": "LG 20150667061506 원문을 이번 조사에서 열지 않았다. 같은 취지(과다 투입 시 헹굼 잔류)는 LG 20150332099802 원문과 삼성 39207 원문으로 새로 확보했다"
+    },
+    {
+      "id": "periodic-drum-cleaning-recommendation",
+      "why": "LG 20150667061506 원문을 이번 조사에서 열지 않았다. 세탁조 주기 권장은 삼성 41708 원문(월 1회)으로 새로 확보해 대체한다"
+    }
+  ],
+  "disputes": [
+    {
+      "targetId": "excess-detergent-no-enhanced-cleaning",
+      "problem": "source 39075 원문에서 '권장량 이상 넣어도 세척력이 향상되지 않는다'는 문구가 확인되지 않음. caution의 '4~5배, 최대 20배' 수치가 출처 식품레시피(후기)인데 cautionSource가 '식품레시피'라 공식 근거처럼 읽힐 수 있음",
+      "evidence": "https://www.samsungsvc.co.kr/solution/39075 를 2026-11-03 열람. 원문은 권장량 준수, 거품 시 양 감량, 일반 세제 1/2~1/3 사용을 말하며 세척력 문구는 없음"
+    }
+  ],
+  "facts": [
+    {
+      "id": "samsung-tub-organic-buildup-rinse-foam",
+      "claim": "삼성 안내에 따르면 세탁조에 유기물이 쌓이면 다음 세탁 때 물이 끈적여 거품이 많아지고 헹굼이 잘 안 될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 세탁기] 헹굼이 안 돼요 (세제 투입장치 세제 흐름)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39207",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "드럼·통돌이(세제 투입장치 안내 기준)", "years": "전체", "region": "KR" },
+      "caution": "드럼이 회전할 때 거품이 나는 것 자체는 자연스러운 현상이라 거품만 보고 고장으로 판단하지 않는다",
+      "cautionSource": "삼성전자서비스 39207 원문"
+    },
+    {
+      "id": "samsung-rinse-failure-three-causes",
+      "claim": "삼성 안내 기준 헹굼 불량의 원인은 세제·유연제 과다 투입, 배수 불량, 세탁조 유기물 축적이며, 세제·유연제를 감지하는 센서 부위에 굳은 세제나 유연제가 쌓이면 투입 알림이 뜰 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 세탁기] 헹굼이 안 돼요 (세제 투입장치 세제 흐름)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39207",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "드럼·통돌이(세제 투입장치 안내 기준)", "years": "전체", "region": "KR" }
+    },
+    {
+      "id": "samsung-detergent-drawer-nozzle-clog",
+      "claim": "삼성 안내에 따르면 자동 세제함 뒤쪽 노즐(캡밸브)이 굳은 세제로 눌려 있으면 세제가 제대로 투입되지 않을 수 있고, 부품이 빠지면 같은 증상이 날 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 세탁기 세제 투입장치 노즐(캡밸브) 점검 안내 (solution 39075, 원문 제목 대신 본문 기준 명칭)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39075",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "자동 세제 투입장치(세자투·자동세제함) 모델", "years": "전체", "region": "KR" }
+    },
+    {
+      "id": "samsung-nozzle-clean-replace-procedure",
+      "claim": "삼성 안내 기준 자동 세제함 노즐은 세제함을 분리한 뒤 노즐을 반시계 방향으로 돌려 빼고 미지근한 물에 담가 씻어 다시 끼운다. 세척 후에도 같으면 교체하고, 부품이 빠졌다면 바로 교체한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 세탁기 세제 투입장치 노즐(캡밸브) 점검 안내 (solution 39075, 본문 기준 명칭)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39075",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "자동 세제 투입장치 모델", "years": "전체", "region": "KR" },
+      "caution": "캡밸브 점검 방법은 2025년 이후 내장형, 2025년 이전 내장형, 외장형 모델 유형별로 다르므로 본인 모델 사용설명서를 먼저 확인한다",
+      "cautionSource": "삼성전자서비스 39075 원문 (모델 유형 구분)"
+    },
+    {
+      "id": "samsung-tub-clean-no-laundry-with-cleaner",
+      "claim": "삼성 통세척 코스에서는 세탁물을 넣지 않고, 권장 세척제를 세탁조 바닥에 넣은 뒤 뚜껑을 닫고 실행한다. 원문은 코스를 '무세제통세척'으로 표기하지만 세척제 투입을 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 세탁기] 통세척, 통청소 방법을 알려주세요 (solution 41708)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41708",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "통세척 코스가 있는 드럼·통돌이", "years": "2000년 이후 모델", "region": "KR" },
+      "caution": "통세척 코스가 없는 1999년 이전 모델은 찌든때 또는 청바지 코스에서 불림을 선택하고 물높이는 고수위로 설정한다",
+      "cautionSource": "삼성전자서비스 41708 원문"
+    },
+    {
+      "id": "samsung-tub-clean-bleach-dose",
+      "claim": "삼성 안내 기준 통세척 권장 세척제는 액체 염소계 표백제 150~300ml(1~2컵)이며, 용량별로 10~13kg 모델 300ml(분말 90g), 8.5kg 모델 250ml(75g), 6.0kg 모델 180ml(55g)를 참고한다. 시중 세탁조 전용 세척제도 제품 뒷면 사용법에 따라 쓸 수 있다고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 세탁기] 통세척, 통청소 방법을 알려주세요 (solution 41708)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41708",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "통세척 코스가 있는 드럼·통돌이", "years": "2000년 이후 모델", "region": "KR" },
+      "caution": "염소계 표백제는 과도하게 넣으면 고장의 원인이 되므로 반드시 희석해서 쓴다",
+      "cautionSource": "삼성전자서비스 41708 원문"
+    },
+    {
+      "id": "samsung-bleach-acid-mix-hazard",
+      "claim": "삼성 안내에 따르면 염소계 표백제는 식초, 구연산, 산소계 표백제 등과 섞어 쓰면 안 되며, 섞으면 유해 가스가 발생할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 세탁기] 통세척, 통청소 방법을 알려주세요 (solution 41708)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41708",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "통세척 코스 사용 시", "years": "전체", "region": "KR" },
+      "caution": "통세척이 끝나면 문을 열어 세탁조를 충분히 건조한다",
+      "cautionSource": "삼성전자서비스 41708 원문"
+    },
+    {
+      "id": "samsung-tub-clean-monthly-first-time-rinse",
+      "claim": "삼성은 세탁조를 월 1회 주기적으로 통세척하도록 권장한다. 처음 통세척하거나 제품을 오래 사용한 경우 불린 찌꺼기가 옷에 묻을 수 있으므로 통세척 후 헹굼을 추가한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 세탁기] 통세척, 통청소 방법을 알려주세요 (solution 41708)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41708",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "드럼·통돌이", "years": "전체", "region": "KR" },
+      "caution": "사용 빈도에 따라 1~2개월 1회로 보는 민간 자료가 있으나 공식 권장은 월 1회다",
+      "cautionSource": "삼성전자서비스 41708 원문 (민간 자료 차이 확인용)"
+    },
+    {
+      "id": "samsung-as-reservation-route",
+      "claim": "삼성 안내 기준 자가 점검으로 해결되지 않으면 삼성 출장서비스를 예약한다. 사용법 설명이나 설치처럼 제품 고장이 아닌 경우 무상 보증기간 내라도 별도 요금이 부과된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 세탁기] 헹굼이 안 돼요 (세제 투입장치 세제 흐름) (solution 39207)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/39207",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "드럼·통돌이", "years": "전체", "region": "KR" },
+      "caution": "예약 경로는 samsungsvc.co.kr/reserve/reserveEngineer 로 안내되어 있다",
+      "cautionSource": "삼성전자서비스 39207 원문"
+    },
+    {
+      "id": "samsung-disassembly-clean-consult",
+      "claim": "삼성 안내에 따르면 분해 세척이 필요한 경우 삼성케어플러스 대표번호 1588-4190로 상담과 신청을 할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 세탁기] 통세척, 통청소 방법을 알려주세요 (solution 41708)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41708",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "드럼·통돌이", "years": "전체", "region": "KR" },
+      "caution": "전화번호는 원문 기재값이므로 방문 전 삼성 고객지원 페이지에서 한 번 더 확인한다",
+      "cautionSource": "삼성전자서비스 41708 원문"
+    },
+    {
+      "id": "lg-drum-drawer-weekly-clean-overfill",
+      "claim": "LG 안내에 따르면 드럼 세제통은 약 1주일에 한 번 빼서 미지근한 물을 묻힌 칫솔로 닦고 다시 끼우는 것을 권장한다. 세제를 과하게 넣으면 물에 다 녹지 않아 물 공급이 막히고 세제통 앞으로 물이 넘칠 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 드럼세탁기 세제] 세제가 투입되지 않아요. 세제통에 세제가 남아요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150332099802",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "세탁기", "line": "드럼(상부 세제통·전면 당김 세제통)", "years": "전체", "region": "KR" },
+      "caution": "통돌이 자동세제함은 LG 안내상 약 한 달에 한 번 청소 기준이므로 주기를 모델 유형에 맞춘다",
+      "cautionSource": "LG전자 고객지원 20152965390159 원문"
+    },
+    {
+      "id": "lg-drum-drawer-7to9ml-residual-water-normal",
+      "claim": "LG 안내에 따르면 세탁이 끝나고 세제통을 열면 보통 7~9ml 정도의 물이 남아 있으며, 이는 고장이 아니다. 설치 환경이나 사용 습관에 따라 더 고일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 드럼세탁기 세제통] 세제통에 물이 남아 있어요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1001328",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "세탁기", "line": "드럼", "years": "전체", "region": "KR" },
+      "caution": "수압이 높으면 세제통 위쪽에 맺힌 물방울이 세탁 후 떨어질 수 있다. 수도꼭지를 반쯤 잠가 수압을 낮춰볼 수 있다",
+      "cautionSource": "LG전자 고객지원 1001328 원문"
+    },
+    {
+      "id": "lg-trom-drawer-removal-and-check",
+      "claim": "LG 트롬 드럼 모델은 PUSH 버튼을 누른 채 세제통을 빼 미지근한 물을 묻힌 칫솔로 닦고 다시 끼운 뒤, 섬유유연제를 넣고 헹굼 1회를 돌려 남지 않는지 확인한다. 트롬플러스 모델은 세제통 테두리를 위로 당겨 빼고 섬유유연제통 뚜껑을 분리해 칫솔로 청소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 드럼세탁기 세제통] 세제통에 물이 남아 있어요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1001328",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "세탁기", "line": "트롬·트롬플러스 드럼", "years": "원문 명시 모델 기준", "region": "KR" },
+      "caution": "이 콘텐츠는 여러 제품에 공용으로 쓰여 구매한 제품과 그림·설명이 다를 수 있으므로 사용설명서로 확인한다",
+      "cautionSource": "LG전자 고객지원 1001328 원문 안내 문구"
+    },
+    {
+      "id": "lg-signature-f12wh-drawer-disassembly",
+      "claim": "LG 시그니처 드럼 F12WH 모델은 세제통을 빼고 뚜껑을 왼쪽으로 돌려 분리하며, 뒷면 체크밸브도 왼쪽으로 돌려 분리해 세제통과 체크밸브를 씻은 뒤 역순으로 조립한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 드럼세탁기 사용법] 새로운 세제를 교환하고 세제통을 청소하고 싶어요 (시그니처)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150172189987",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "세탁기", "line": "드럼 시그니처", "years": "전체", "region": "KR", "models": "F12WH" },
+      "caution": "페이지에는 정해진 청소 주기와 사용 금지 세정제 안내가 없다. 새 세제로 바꿨을 때나 세제를 오래 넣어 둔 경우 청소한다",
+      "cautionSource": "LG전자 고객지원 20150172189987 원문"
+    },
+    {
+      "id": "lg-topload-drawer-monthly-clean",
+      "claim": "LG 통돌이 세탁기 세제함은 약 한 달에 한 번 빼서 부드러운 솔이나 칫솔로 닦고 다시 끼운다. 세제가 남거나 굳으면 투입구가 막혀 세제가 나오지 않을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 통돌이 세탁기 청소] 청소 및 관리는 어떻게 하나요?",
+      "source_url": "https://www.lge.co.kr/support/solutions-20152965390159",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "세탁기", "line": "통돌이 자동 세제함", "years": "전체", "region": "KR" },
+      "caution": "세제함 청소 시 비누 사용 금지 문구는 이 원문에서 확인되지 않았으므로 쓰지 않는다",
+      "cautionSource": "LG전자 고객지원 20152965390159 원문 (부재 확인)"
+    }
+  ]
+}

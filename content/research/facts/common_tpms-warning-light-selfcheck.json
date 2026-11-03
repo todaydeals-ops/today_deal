@@ -1,0 +1,138 @@
+{
+  "topic": "타이어 공기압 경고등(TPMS)이 안 꺼질 때 확인할 것 — 점등·점멸 구분, 공기압 보충 후에도 켜질 때, 센서 문제 판별, 공식 안내 기준",
+  "brand": "공통",
+  "article": "tpms-warning-light-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "cold-tire-pressure-standard",
+    "tpms-false-alert-locations",
+    "tpms-pressure-check-method",
+    "tpms-sensor-malfunction",
+    "tire-pressure-drop-10f",
+    "tire-cold-check-3h",
+    "flat-tire-no-sudden-brake",
+    "tmk-sensor-sealant-cleaning"
+  ],
+  "declined_facts": [
+    {
+      "id": "tpms-warning-threshold",
+      "reason": "공통_car-tire-pressure.json 의 25% 기준은 국내 법령 원문과 맞지 않는다. 국가법령정보센터 자동차안전기준에 관한 규칙 별표 6은 1개 타이어 기준 운행공기압 20% 감소 또는 최소 150kPa 중 큰 값, 4개 타이어 기준 20% 감소로 적고 있다. 25%는 미국 FMVSS 138 기준으로 보인다. 이 글에서는 재사용하지 않고 disputes로 신고한다."
+    }
+  ],
+  "disputes": [
+    {
+      "targetId": "tpms-warning-threshold",
+      "targetFile": "content/research/facts/공통_car-tire-pressure.json",
+      "problem": "국내 TPMS 경고 기준을 '콜드 공기압보다 25% 이상 낮을 때'라고 적었고 출처를 국토교통부 정책자료로 달았다. 해당 molit URL은 열리지 않고(리다이렉트 루프) 원문 확인이 안 된다. 국내 법령 원문은 20% 감소 기준이다.",
+      "evidence": "law.go.kr 자동차안전기준에 관한 규칙 별표 6(성능기준): 1개 타이어 운행공기압 20% 감소 또는 150kPa 중 큰 값에 도달 후 10분 누적주행 이내 점등, 4개 타이어 20% 감소 후 60분 이내 점등. 페이지 본문에 25% 문구 없음. 25%는 미국 FMVSS 138 설명(검색 요약)에 나온다."
+    }
+  ],
+  "facts": [
+    {
+      "id": "tpms-flash-then-solid-system-fault",
+      "claim": "계기판의 TPMS 경고등이 약 1분 깜빡인 뒤 계속 켜져 있으면 타이어 공기압 경보 시스템에 이상이 있는 것이므로 바로 점검을 받아야 한다. 이 경우는 공기압 부족과 구분되는 시스템 고장 신호다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 타이어 공기압 경고장치(TPMS) 항목 (CT1 2026 한국어판)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/CT1/2026/ko_KR/topics/t00980.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "TPMS 장착 차량 (CT1 2026 매뉴얼 기준)", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "차종마다 깜빡임 시간과 표시 방식이 다를 수 있다. 자기 차량 매뉴얼의 경고등 항목을 함께 확인하게 할 것. 깜빡임이 몇 초인지는 차종 확인 후 쓸 것.",
+      "cautionSource": "기아 CT1 2026 오너스 매뉴얼의 '약 1분 깜빡임' 문구 (차종별 차이는 매뉴얼 자체의 한정)"
+    },
+    {
+      "id": "tpms-low-pressure-then-system-fault-clears-position",
+      "claim": "저압 경고등이 이미 켜진 상태에서 시스템 고장이 나면, 경고등이 깜빡인 뒤 켜지고 어느 타이어가 낮은지 보여 주는 위치 표시등은 사라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 타이어 공기압 경고장치(TPMS) 항목 (CT1 2026 한국어판)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/CT1/2026/ko_KR/topics/t00980.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "TPMS 장착 차량 (CT1 2026 매뉴얼 기준)", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "위치 표시가 사라졌다고 해서 어느 바퀴가 낮은지 알 수 없게 된 것이다. 네 바퀴를 직접 눈으로 보고 게이지로 재는 방법을 먼저 안내할 것."
+    },
+    {
+      "id": "tpms-legal-warning-threshold-20pct",
+      "claim": "국내 법령상 TPMS 경고는 1개 타이어의 운행공기압이 20% 감소한 값 또는 최소 150kPa 중 큰 값에 도달했을 때 켜져야 한다. 4개 타이어 기준은 20% 감소다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 — 자동차안전기준에 관한 규칙 별표 6 (타이어공기압경고장치 성능기준, 2013년 1월 1일 시행 부칙)",
+      "source_url": "https://www.law.go.kr/LSW/nwRvsLsInfoR.do?lsNm=&searchType=&sortIdx=0&lsKndCd=&cptOfi=&p_epubno=&lsiSeq=111084&chrIdx=0&p_spubdt=&p_epubdt=&p_spubno=&pageIndex=1",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "자동차", "line": "승용차, 차량총중량 3.5톤 이하 승합·화물·특수자동차 (복륜·피견인 제외)", "years": "2013년 1월 1일 시행 규칙 기준", "region": "KR" },
+      "caution": "이 페이지에는 '현행' 표시가 없고 2011년 공포 규칙 본문이다. 현행 개정 여부는 법령 최신 본문으로 한 번 더 확인하고 쓸 것. 이 기준은 '법이 정한 점등 조건'이지 '차량 권장 공기압'이 아니다.",
+      "cautionSource": "국가법령정보센터 자동차안전기준에 관한 규칙 별표 6 원문 (2011년 3월 16일 공포, 2013년 1월 1일 시행)"
+    },
+    {
+      "id": "tpms-legal-warning-timing",
+      "claim": "법정 경고 조건을 만족하면 1개 타이어 기준은 10분 누적주행 이내, 4개 타이어 기준은 60분 누적주행 이내에 경고등이 켜져야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "국가법령정보센터 — 자동차안전기준에 관한 규칙 별표 6 (타이어공기압경고장치 성능기준)",
+      "source_url": "https://www.law.go.kr/LSW/nwRvsLsInfoR.do?lsNm=&searchType=&sortIdx=0&lsKndCd=&cptOfi=&p_epubno=&lsiSeq=111084&chrIdx=0&p_spubdt=&p_epubdt=&p_spubno=&pageIndex=1",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "자동차", "line": "승용차, 차량총중량 3.5톤 이하 승합·화물·특수자동차", "years": "2013년 1월 1일 시행 규칙 기준", "region": "KR" },
+      "caution": "주행 시간 기준이므로 '시동 직후 바로 켜져야 한다'로 풀어 쓰지 말 것. 법정 시간 안에 안 켜지는 것도 센서나 제어기 점검 대상이다.",
+      "cautionSource": "국가법령정보센터 별표 6 원문의 10분·60분 누적주행 조건"
+    },
+    {
+      "id": "tpms-gn7-dealer-check-when-lit",
+      "claim": "현대 2026 그랜저(GN7) 매뉴얼은 TPMS 경고등이 켜지면 직영 하이테크센터나 블루핸즈에서 점검과 정비를 받으라고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 2026 그랜저(GN7) 오너스 매뉴얼 — 타이어 공기압 관련 안내",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/GN7/2026/ko_KR/id3a46fa79f2d.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "그랜저 GN7", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "그랜저 GN7 기준이다. 다른 현대 차종에 같은 문구가 있다고 단정하지 말 것. 센터 방문 전에는 공기압을 권장값으로 맞춰 보게 하고 맞춘 뒤에도 켜지면 방문하라고 안내한다.",
+      "cautionSource": "그랜저 GN7 오너스 매뉴얼 원문 안내 (차종 한정)"
+    },
+    {
+      "id": "tpms-gn7-no-drive-below-29psi",
+      "claim": "현대 2026 그랜저(GN7) 매뉴얼은 타이어 공기압이 29psi(200kPa) 이하이면 차량을 주행하지 말라고 안내한다. 주행을 멈추고 견인해 점검받으라는 안내도 함께 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 2026 그랜저(GN7) 오너스 매뉴얼 — 타이어 공기압 보충·점검 안내",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/GN7/2026/ko_KR/id3a46fa79f2d.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "그랜저 GN7", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "29psi(200kPa)는 GN7 매뉴얼 수치다. 다른 차종에 그대로 적용하지 말고 자기 차량 명판 권장값과 매뉴얼 수치를 확인하게 할 것. 이 수치는 '이보다 낮으면 주행 금지' 기준이므로 권장값보다 크게 낮으면 바로 감속해 안전한 곳에 세우게 할 것.",
+      "cautionSource": "그랜저 GN7 매뉴얼의 29psi(200kPa) 주행 금지 문구 (차종 한정). 같은 매뉴얼 안에서 목표 공기압은 타이어 라벨 기준"
+    },
+    {
+      "id": "tpms-kia-service-referral",
+      "claim": "기아 매뉴얼은 TPMS 이상이 있으면 즉시 자사 직영 서비스센터나 서비스협력사에 점검을 의뢰하라고 안내한다. 실런트로 펑크를 수리한 경우에도 센서 손상을 막으려고 같은 곳에서 점검과 정비를 받아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 타이어 공기압 경고장치(TPMS) 항목 (CT1 2026 한국어판)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/CT1/2026/ko_KR/topics/t00980.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "TPMS 장착 차량 (CT1 2026 매뉴얼 기준)", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "보증 적용이나 무상 점검 여부는 이 팩트에 없다. 접수 경로는 매뉴얼의 '직영 서비스센터·서비스협력사' 안내까지만 쓸 것."
+    },
+    {
+      "id": "tpms-kia-reset-procedure-unverified",
+      "claim": "공기압을 권장값으로 맞춘 뒤 TPMS 초기화(SET 버튼 3초 이상 누르기 등)로 경고등을 끄는 절차가 있다는 2차 자료가 있으나, 기아 매뉴얼 초기화 페이지 원문은 확인하지 못했다(해당 페이지 404).",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 타이어 공기압 경고장치 초기화 항목 (원문 열기 실패)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/CT1/2026/ko_KR/topics/t00980.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "TPMS 장착 차량 (차종·연식 미특정)", "years": "미특정", "region": "KR" },
+      "caution": "초기화 버튼 위치와 절차를 단정적으로 쓰지 말 것. '차량 매뉴얼의 TPMS 초기화 항목을 확인하라'까지만 안내하고, 공기압을 맞추지 않은 채 초기화하면 잘못된 경보가 날 수 있다는 점만 밝힐 것.",
+      "cautionSource": "초기화 페이지 404로 원문 미확인. 확인실패 상태 그대로 둔다."
+    },
+    {
+      "id": "tpms-four-low-vs-one-low-interpretation",
+      "claim": "네 바퀴가 모두 낮게 나오면 기온 하락이나 자연 누설을 먼저 의심하고, 한 바퀴만 유난히 낮으면 펑크나 못 박힘을 의심하라는 점검 순서가 블로그 정리글에 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "tilnote — 겨울철 타이어 공기압 경고등 안 꺼질 때 점검 4가지 (개인 정리 블로그)",
+      "source_url": "https://tilnote.io/en/pages/6ae762c4a565f4932c73bafd",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "자동차", "line": "승용차 타이어 일반", "years": "2026 게시글 기준", "region": "KR" },
+      "caution": "개인 정리글이며 공식 진단 기준이 아니다. '이렇게 판단할 수 있는 경우가 많다'는 식으로 시도 순서로만 쓸 것. 한 바퀴만 낮을 때 못 박힘은 바로 뽑지 말고 정비소를 안내할 것.",
+      "cautionSource": "블로그 정리글이므로 공식 근거로 쓰지 않는다. 펑크 대처 원칙은 공식 팩트(flat-tire-no-sudden-brake 등)로 따로 받친다."
+    }
+  ]
+}

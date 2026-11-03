@@ -1,0 +1,198 @@
+{
+  "topic": "갤럭시 저장공간이 부족할 때 정리하는 순서 (기기 케어 확인 → 백업 먼저 → 휴지통·대용량·미사용 앱 → 캐시 → 클라우드 이동, 안 되면 공식 접수)",
+  "brand": "삼성",
+  "article": "galaxy-storage-full-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "galaxy-update-backup-before-storage-cleanup",
+    "galaxy-update-storage-amount-not-published",
+    "galaxy-update-battery-20-percent-official"
+  ],
+  "declined_facts": [
+    {
+      "id": "galaxy-update-storage-cleanup-path",
+      "why": "기존 팩트는 '설정 > Device Care > Storage > Clean now'로 적었으나, 삼성 공식 PH 지원 페이지와 AE 기기 케어 페이지는 Clean now를 메모리 항목의 기능으로 설명하며 실행 중 앱을 닫아 메모리를 확보한다고만 한다. 파일 삭제 효과는 공식 원문에서 확인되지 않았다. 재사용하지 않고 disputes에 신고했다."
+    },
+    {
+      "id": "third-party-clean-now-deletes-cache",
+      "why": "검색 결과의 제3자 가이드·커뮤니티가 Clean now가 캐시를 지운다고 적었으나, 확인한 삼성 공식 페이지에는 그 내용이 없다. 공식 원문에서 확인되지 않은 주장이므로 채택하지 않았다. 캐시 삭제는 앱별 Clear cache 경로(F5)로 따로 안내한다."
+    }
+  ],
+  "disputes": [
+    {
+      "targetId": "galaxy-update-storage-cleanup-path",
+      "problem": "Clean now의 위치와 기능이 공식 원문과 다르다. 삼성 PH·AE 공식 페이지는 Clean now를 설정 > 디바이스 케어 > 메모리에 두고 '사용 중이 아닌 앱을 정리해 메모리를 확보'하는 기능으로 설명한다. Storage 메뉴에 Clean now가 있다는 근거는 찾지 못했다. 이 팩트의 '저장공간 확보 경로'로 쓰면 독자가 잘못된 메뉴를 찾게 된다.",
+      "evidence": "https://www.samsung.com/ph/support/mobile-devices/how-to-remove-unnecessary-files-and-close-background-apps-on-your-samsung-galaxy-phone/ (메모리 > Clean now = 앱 종료, 파일 삭제 언급 없음) / https://www.samsung.com/ae/support/mobile-devices/what-is-the-device-care-feature-in-galaxy-smartphones (Memory: 'stop background apps using the Clean now option')"
+    }
+  ],
+  "facts": [
+    {
+      "id": "galaxy-storage-check-path-device-care",
+      "claim": "갤럭시 저장공간 상태는 설정 > 배터리 및 기기 케어 > 저장공간에서 확인한다. 구형 One UI 계열은 같은 메뉴가 '디바이스 케어'로 표시된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung UK 지원 — How to clear or free up internal storage on your phone",
+      "source_url": "https://www.samsung.com/uk/support/mobile-devices/how-to-clear-up-storage-space-on-your-smartphone",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 휴대폰(One UI)", "years": "구형은 '디바이스 케어', 신형은 '배터리 및 기기 케어'", "region": "글로벌(UK 페이지 기준)" },
+      "caution": "메뉴 이름은 기종과 One UI 버전에 따라 다르다. 화면 이름이 다르면 설정 검색창에서 '저장공간'을 찾도록 안내할 것.",
+      "cautionSource": "삼성 PH 지원 페이지 원문 'menus and navigation path may vary depending on the device model and software version'"
+    },
+    {
+      "id": "galaxy-storage-storage-menu-tools",
+      "claim": "갤럭시 저장공간 메뉴에는 휴지통(Recycle bin), 미사용 앱(Unused apps), 중복 파일(Duplicate files), 대용량 파일(Large files) 항목이 있으며, 각 항목에서 선택 후 Empty·Uninstall·Delete로 정리한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung UK 지원 — How to clear or free up internal storage on your phone",
+      "source_url": "https://www.samsung.com/uk/support/mobile-devices/how-to-clear-up-storage-space-on-your-smartphone",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 휴대폰(One UI)", "years": "구형 '디바이스 케어' 포함 전 연식 확인", "region": "글로벌(UK 페이지 기준)" },
+      "caution": "휴지통 Empty는 되돌릴 수 없으므로 실행 전 백업 여부를 먼저 확인하도록 안내할 것.",
+      "cautionSource": "삼성 617801 원문의 백업 우선 안내 및 UK 페이지의 Empty 삭제 설명"
+    },
+    {
+      "id": "galaxy-storage-optimize-now-korea",
+      "claim": "국내 공식 안내에 따르면 설정 > 디바이스 케어 > 지금 최적화로 저장공간을 확보하고 불필요한 파일과 백그라운드 실행 앱을 정리할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 디바이스 케어 안내(solution/41004)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41004",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 휴대폰(국내 One UI)", "years": "전 연식 확인 불가, 현행 One UI 기준", "region": "KR" },
+      "caution": "공식 원문은 '불필요한 파일'의 범위를 특정하지 않는다. 사진·영상·문서가 지워진다고 단정하지 말고, 최적화를 눌러도 큰 파일은 직접 확인해야 한다고 안내할 것.",
+      "cautionSource": "삼성전자서비스 41004 원문에 삭제 대상 세부 목록이 없음을 직접 확인"
+    },
+    {
+      "id": "galaxy-storage-memory-clean-now-not-storage",
+      "claim": "갤럭시의 메모리 > 지금 정리(Clean now)는 실행 중인 백그라운드 앱을 닫아 메모리를 확보하는 기능이며, 공식 설명에 파일을 삭제해 저장공간을 늘린다는 내용은 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung PH 지원 — How to remove unnecessary files and close background apps on your Samsung Galaxy phone",
+      "source_url": "https://www.samsung.com/ph/support/mobile-devices/how-to-remove-unnecessary-files-and-close-background-apps-on-your-samsung-galaxy-phone/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 휴대폰", "years": "전 연식 확인 불가, 현행 One UI 기준", "region": "글로벌(PH 페이지 기준)" },
+      "caution": "'지금 정리'를 저장공간 해결책으로 안내하지 말 것. 저장공간 부족이 원인이면 휴지통·대용량 파일·미사용 앱·캐시 순으로 안내한다.",
+      "cautionSource": "PH 공식 페이지의 Memory 항목 설명(앱 종료, 메모리 확보)"
+    },
+    {
+      "id": "galaxy-storage-cache-clear-path",
+      "claim": "앱 캐시는 설정 > 앱 > 해당 앱 > 저장공간 > 캐시 삭제(Clear cache)로 지운다. 앱 데이터 삭제(Clear data)는 캐시와 다른 메뉴다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung PH 지원 — How to free up space on your Galaxy device when it is full",
+      "source_url": "https://www.samsung.com/ph/support/mobile-devices/how-to-free-up-space-on-your-galaxy-device-when-it-is-full/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 휴대폰", "years": "전 연식 확인 불가, 현행 One UI 기준", "region": "글로벌(PH 페이지 기준)" },
+      "caution": "Clear data를 누르면 파일·설정·계정까지 지워질 수 있다. 캐시 삭제와 데이터 삭제를 분리해서 안내할 것.",
+      "cautionSource": "삼성전자서비스 617801 원문 '앱 데이터 삭제 시 파일, 설정, 계정, 데이터베이스 등이 포함되어 삭제'"
+    },
+    {
+      "id": "galaxy-storage-app-data-delete-includes-files",
+      "claim": "앱 데이터를 삭제하면 파일·설정·계정·데이터베이스가 함께 지워지므로 데이터 삭제는 백업 후에 하라고 삼성 공식 안내가 경고한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 소프트웨어 업데이트 관련 안내(solution/617801)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/617801",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 휴대폰(One UI)", "years": "전 연식", "region": "KR" },
+      "caution": "데이터 삭제는 되돌릴 수 없다. 사용자가 앱 데이터를 지우려 하면 백업 여부를 먼저 묻고 진행하도록 안내할 것.",
+      "cautionSource": "삼성전자서비스 617801 원문 '앱 데이터 삭제 시 ... 삭제되니 주의'"
+    },
+    {
+      "id": "galaxy-storage-uninstall-unused-apps",
+      "claim": "저장공간을 확보하려면 사용하지 않는 앱을 먼저 삭제하라고 삼성 공식 안내가 권한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 소프트웨어 업데이트 관련 안내(solution/617801)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/617801",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 휴대폰", "years": "전 연식", "region": "KR" },
+      "caution": "앱을 지우기 전에 백업 여부를 먼저 확인하도록 안내할 것. 앱 삭제 시 데이터 처리 방식은 앱마다 다를 수 있다.",
+      "cautionSource": "삼성전자서비스 617801 원문의 백업 우선 안내 및 앱 데이터 삭제 경고"
+    },
+    {
+      "id": "galaxy-storage-large-media-cause",
+      "claim": "사진·동영상 등 대용량 데이터가 쌓이면 저장공간이 부족해질 수 있다고 삼성 공식 안내가 적는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 소프트웨어 업데이트 관련 안내(solution/617801)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/617801",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 휴대폰", "years": "전 연식", "region": "KR" },
+      "caution": "사진·영상은 백업 확인 후에만 기기에서 지운다. 백업 없이 삭제하라고 안내하지 말 것.",
+      "cautionSource": "삼성전자서비스 617801의 백업 우선 안내와 같은 원문"
+    },
+    {
+      "id": "galaxy-storage-google-photos-backup-first",
+      "claim": "Google 포토의 '기기 저장공간 확보' 기능은 백업이 완료된 사진·영상만 기기에서 지운다. 사용 전에 사진이 제대로 백업됐는지 먼저 확인해야 한다고 Google 공식 도움말이 명시한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google 포토 고객센터 — 기기 저장공간 확보(answer/6128843)",
+      "source_url": "https://support.google.com/photos/answer/6128843",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통(Google)", "category": "스마트폰", "line": "Android 기기의 Google 포토 앱", "years": "전 연식", "region": "글로벌" },
+      "caution": "백업 완료 여부를 눈으로 확인한 뒤 실행할 것. 30일 이내 사진은 기기에 남을 수 있으나 여전히 백업된 상태다.",
+      "cautionSource": "Google 포토 6128843 원문 'Before you use this feature, you must ensure that you've already backed up your photos properly'"
+    },
+    {
+      "id": "galaxy-storage-google-photos-cloud-copy-remains",
+      "claim": "Google 포토에서 기기 저장공간을 비워도 사진과 동영상은 Google 포토 라이브러리에 그대로 남아 보거나 공유할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google 포토 고객센터 — 기기 저장공간 확보(answer/6128843)",
+      "source_url": "https://support.google.com/photos/answer/6128843",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통(Google)", "category": "스마트폰", "line": "Android 기기의 Google 포토 앱", "years": "전 연식", "region": "글로벌" },
+      "caution": "기기에서 지운 뒤에도 원본이 클라우드에 있는지 앱에서 확인한 다음에 다른 정리를 이어가도록 안내할 것.",
+      "cautionSource": "Google 포토 6128843 원문 'See your photos and videos, including the ones you just removed, in the Google Photos app'"
+    },
+    {
+      "id": "galaxy-storage-cloud-warning-is-separate",
+      "claim": "Google 포토 등 클라우드 계정의 저장공간 경고는 기기 저장공간과 별개다. Google 계정 저장공간을 관리하면 그 계정 용량이 줄어들 뿐 기기 용량은 바로 늘지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google 포토 고객센터 — 저장공간 관리(answer/9284827)",
+      "source_url": "https://support.google.com/photos/answer/9284827",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통(Google)", "category": "클라우드 저장공간", "line": "Google 계정 저장공간", "years": "전 연식", "region": "글로벌" },
+      "caution": "'클라우드 용량 부족'과 '기기 용량 부족'을 구분해 안내할 것. 기기가 비어 있는데 클라우드 경고가 뜨면 그건 계정 용량 문제다.",
+      "cautionSource": "Google 포토 9284827 원문 'When you manage storage, you manage the storage associated with your Google Account'"
+    },
+    {
+      "id": "galaxy-storage-update-fail-safe-mode",
+      "claim": "저장공간이 충분한데도 소프트웨어 업데이트가 안 되면 안전 모드에서 업데이트를 시도해볼 수 있다고 삼성 공식 안내가 적는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 소프트웨어 업데이트 관련 안내(solution/617801)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/617801",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 휴대폰", "years": "전 연식", "region": "KR" },
+      "caution": "안전 모드 진입 방법은 기종마다 다르다. 진입 방법은 기기 모델 안내를 따르도록 하고, 이 팩트는 '저장공간이 충분할 때 시도해볼 다음 단계'로만 쓸 것.",
+      "cautionSource": "삼성전자서비스 617801 원문 '기기의 저장공간이 충분히 확보되어 있지만 소프트웨어 업데이트가 불가하다면 안전 모드에서 업데이트를 진행해볼 수 있습니다'"
+    },
+    {
+      "id": "galaxy-storage-menu-path-varies",
+      "claim": "갤럭시 저장공간 정리 메뉴 경로는 기기 모델과 소프트웨어 버전에 따라 다를 수 있다고 삼성 공식 지원 페이지가 명시한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung PH 지원 — How to free up space on your Galaxy device when it is full",
+      "source_url": "https://www.samsung.com/ph/support/mobile-devices/how-to-free-up-space-on-your-galaxy-device-when-it-is-full/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 휴대폰 전 라인", "years": "전 연식", "region": "글로벌(PH 페이지 기준)" },
+      "caution": "메뉴 이름이 안 맞으면 설정 검색창에서 '저장공간'으로 찾도록 안내하고, 특정 화면 이름을 고정해 단정하지 말 것.",
+      "cautionSource": "Samsung PH 공식 원문 'menus and navigation path may vary depending on the device model and software version'"
+    },
+    {
+      "id": "galaxy-storage-service-center-escalation",
+      "claim": "삼성 공식 지원 페이지는 자가 조치로 해결되지 않으면 모바일센터 예약과 AI CS Bot 상담을 안내한다. 방문 점검 경로는 이 공식 안내가 가리키는 곳이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 소프트웨어 업데이트 실패 안내(solution/40394)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40394",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 휴대폰", "years": "전 연식", "region": "KR" },
+      "caution": "보증 기간·무상 여부는 이 페이지에서 확인되지 않는다. 비용 안내는 하지 말고 예약 화면에서 확인하도록 할 것.",
+      "cautionSource": "삼성전자서비스 40394 원문에 보증·비용 안내가 없음을 직접 확인"
+    }
+  ]
+}

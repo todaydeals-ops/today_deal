@@ -1,0 +1,202 @@
+{
+  "topic": "앱이 자꾸 강제 종료될 때 원인 좁히는 순서 (iPhone·Galaxy, 앱 재실행→재시작→업데이트→캐시→저장공간→재설치→초기화 순, 데이터 삭제 전 백업)",
+  "brand": "공통",
+  "article": "app-crash-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    {
+      "id": "factory-reset-data-loss",
+      "from": "공통_as-safety-baseline.json",
+      "note": "공장 초기화는 데이터를 전부 지운다. 최후 수단으로만 제시하고, 백업을 먼저 지시한다."
+    },
+    {
+      "id": "iphone-storage-check-path",
+      "from": "apple_iphone-storage-full-selfcheck.json",
+      "note": "iPhone 저장공간 확인 경로(설정 > 일반 > iPhone 저장공간)를 그대로 쓴다. 앱 크기 숫자를 용량 전체로 해석하지 말라는 caution도 함께 적용한다."
+    },
+    {
+      "id": "iphone-offload-vs-delete",
+      "from": "apple_iphone-storage-full-selfcheck.json",
+      "note": "앱 오프로드는 앱만 지우고 문서·데이터는 남긴다. 앱 삭제는 데이터를 함께 지운다는 구분을 재설치 단계에서 그대로 쓴다."
+    },
+    {
+      "id": "galaxy-update-storage-cleanup-path",
+      "from": "samsung_galaxy-update-failure-selfcheck.json",
+      "note": "갤럭시 저장공간 경로(설정 > Device Care > Storage)를 재사용. 원래는 업데이트 실패 맥락이므로 본문에서는 '저장공간 점검' 단계로만 쓴다."
+    },
+    {
+      "id": "galaxy-update-safe-mode-retry",
+      "from": "samsung_galaxy-update-failure-selfcheck.json",
+      "note": "안전 모드의 '제3자 앱 충돌 걸러내기' 용도는 앱 강제 종료 점검에도 그대로 맞는다. 원래는 업데이트 실패 맥락이므로 본문에서는 마지막 점검 단계로만 쓴다."
+    },
+    {
+      "id": "galaxy-update-service-center-contact",
+      "from": "samsung_galaxy-update-failure-selfcheck.json",
+      "note": "삼성 서비스 대표전화 1588-3366은 재사용. 원래 맥락은 업데이트 실패라서, 본문에서는 '점검해도 계속되면 문의'로만 쓰고 접수 기준처럼 단정하지 않는다."
+    }
+  ],
+  "declined_facts": [
+    {
+      "id": "iphone-recovery-mode-data",
+      "from": "apple_device-recovery.json",
+      "reason": "복구 모드는 기기가 부팅되지 않을 때의 절차다. 앱 하나가 튕기는 증상과는 단계가 맞지 않고, 복원 시 데이터가 지워지므로 이 글에서는 인용하지 않는다."
+    },
+    {
+      "id": "galaxy-update-battery-20-percent-official",
+      "from": "samsung_galaxy-update-failure-selfcheck.json",
+      "reason": "배터리 20% 이상 조건은 시스템 업데이트 설치 전용 안내다. 앱 강제 종료 점검에는 해당하지 않는다."
+    },
+    {
+      "id": "galaxy-update-emergency-recovery-pc",
+      "from": "samsung_galaxy-update-failure-selfcheck.json",
+      "reason": "Smart Switch 응급 복구는 PC로 기기를 복원하는 절차라 데이터 손실 위험이 크다. 앱 증상에 비해 과하므로 인용하지 않는다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "apple-app-force-close-first",
+      "claim": "iPhone·iPad에서 앱이 멈추거나 예기치 않게 닫히면 Apple 공식 안내는 첫 단계로 앱을 강제로 종료한 뒤 다시 여는 것을 제시한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — iPhone 또는 iPad에서 앱이 응답하지 않거나, 예기치 않게 닫히거나, 열리지 않는 경우",
+      "source_url": "https://support.apple.com/ht201398",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰·태블릿", "line": "iPhone·iPad 전 기종", "years": "전 연식", "region": "글로벌" },
+      "caution": "강제 종료 방법(화면 위로 쓸어올리기 등)은 기기 모델마다 제스처가 다르다. 제스처 이름보다 '앱을 완전히 끈 뒤 다시 연다'는 결과로 안내한다.",
+      "cautionSource": "Apple 원문은 'Force the app to close'라고만 쓰고 구체 제스처는 모델별 안내에 맡긴다"
+    },
+    {
+      "id": "apple-app-restart-device-second",
+      "claim": "앱을 강제 종료해도 증상이 계속되면 Apple 공식 안내는 두 번째 단계로 기기를 재시작한 뒤 앱을 다시 열어 확인하라고 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — iPhone 또는 iPad에서 앱이 응답하지 않거나, 예기치 않게 닫히거나, 열리지 않는 경우",
+      "source_url": "https://support.apple.com/ht201398",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰·태블릿", "line": "iPhone·iPad 전 기종", "years": "전 연식", "region": "글로벌" },
+      "caution": "재시작은 데이터를 지우지 않는다. 재시작 전에 저장 중인 작업(작성 중인 메모 등)만 먼저 저장하라고 덧붙인다.",
+      "cautionSource": "재시작 단계는 Apple 원문 2번 단계이며, 저장 작업 안내는 일반 사용 수칙이다"
+    },
+    {
+      "id": "apple-app-update-then-ios-update",
+      "claim": "Apple 공식 안내는 재시작 후에도 증상이 계속되면 App Store에서 앱 업데이트를 확인하고, 업데이트할 앱이 없으면 iPhone의 운영체제(iOS)를 업데이트하라고 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — iPhone 또는 iPad에서 앱이 응답하지 않거나, 예기치 않게 닫히거나, 열리지 않는 경우",
+      "source_url": "https://support.apple.com/ht201398",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰·태블릿", "line": "iPhone·iPad 전 기종", "years": "iOS 업데이트를 지원하는 기기", "region": "글로벌" },
+      "caution": "앱 업데이트 확인 경로는 App Store에서 프로필 아이콘을 누른 뒤 App 업데이트를 여는 방식이다. iOS 업데이트 전에는 백업을 먼저 한다.",
+      "cautionSource": "업데이트 전 백업 권장은 Apple 공식 업데이트 안내(컴퓨터 업데이트 전 백업)에서 이어 적용한 수칙이다"
+    },
+    {
+      "id": "apple-app-delete-reinstall-data-risk",
+      "claim": "Apple 공식 안내는 여전히 증상이 계속되면 앱을 삭제한 뒤 다시 내려받아 확인하라고 한다. 이때 앱에 저장돼 있던 데이터를 잃을 수 있다고 경고한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — iPhone 또는 iPad에서 앱이 응답하지 않거나, 예기치 않게 닫히거나, 열리지 않는 경우",
+      "source_url": "https://support.apple.com/ht201398",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰·태블릿", "line": "iPhone·iPad 전 기종", "years": "전 연식", "region": "글로벌" },
+      "caution": "재설치 전 앱 안의 데이터(사진·기록·로그인 상태 등)를 먼저 확인하고 백업한다. 앱 내 백업 기능이 있으면 그것을, 없으면 iCloud 또는 컴퓨터 백업을 쓴다. 앱을 '오프로드'하면 데이터는 남으므로 삭제 대신 오프로드를 먼저 고려할 수 있다.",
+      "cautionSource": "데이터 손실 경고는 Apple 원문 4번 단계의 'you might lose data' 문구다. 오프로드 구분은 재사용 팩트 iphone-offload-vs-delete를 따른다"
+    },
+    {
+      "id": "apple-app-developer-contact-refund",
+      "claim": "Apple 공식 안내는 재설치로도 해결되지 않으면 앱스토어에서 내려받은 앱이라면 앱 개발사에 문의하라고 한다. 최근 구매한 앱이라면 환불을 요청할 수 있다고 덧붙인다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — iPhone 또는 iPad에서 앱이 응답하지 않거나, 예기치 않게 닫히거나, 열리지 않는 경우",
+      "source_url": "https://support.apple.com/ht201398",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰·태블릿", "line": "iPhone·iPad 전 기종", "years": "전 연식", "region": "글로벌" },
+      "caution": "환불 가능 기간은 Apple 원문에 수치로 적혀 있지 않다. 기간을 단정하지 말고 '최근 구매라면 환불을 요청할 수 있다'까지만 쓴다.",
+      "cautionSource": "Apple 원문에 환불 기간 숫자가 없으므로 수치를 쓰지 않는다"
+    },
+    {
+      "id": "samsung-app-network-check-first",
+      "claim": "갤럭시에서 앱이 자꾸 멈추면 삼성 공식 지원 페이지는 가장 먼저 네트워크를 점검하라고 한다. 모바일 데이터나 Wi-Fi를 2~3분 끈 뒤 다시 연결하고 앱을 재시도하며, 안 되면 다른 네트워크에서 시험한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자 — 갤럭시 기기에서 앱이 충돌하거나 멈추는 문제 해결 방법 (삼성 AE 공식 지원)",
+      "source_url": "https://www.samsung.com/ae/support/mobile-devices/solutions-for-apps-crashing-and-freezing-on-your-galaxy-device/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 (One UI·Android)", "years": "전 연식", "region": "글로벌 (삼성 AE 공식 페이지 기준)" },
+      "caution": "네트워크 단계는 앱이 인터넷을 쓰는 경우에 의미가 크다. 오프라인으로만 쓰는 앱이라면 이 단계를 건너뛰고 다음 단계로 간다.",
+      "cautionSource": "삼성 AE 원문 1번 단계 'Turn off your mobile data or Wi-Fi router for 2-3 minutes'에서 2~3분 기준을 가져왔다"
+    },
+    {
+      "id": "samsung-app-clear-cache-first",
+      "claim": "갤럭시에서 네트워크 점검 뒤에도 증상이 계속되면 삼성 공식 지원 페이지는 앱의 캐시를 먼저 지우라고 한다. 경로는 설정 > 앱 > 모든 앱 보기 > 해당 앱 > 저장공간 > 캐시 지우기다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자 — 갤럭시 기기에서 앱이 충돌하거나 멈추는 문제 해결 방법 (삼성 AE 공식 지원)",
+      "source_url": "https://www.samsung.com/ae/support/mobile-devices/solutions-for-apps-crashing-and-freezing-on-your-galaxy-device/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 (One UI·Android)", "years": "전 연식", "region": "글로벌 (삼성 AE 공식 페이지 기준)" },
+      "caution": "메뉴 이름은 기기 모델과 안드로이드 버전에 따라 다를 수 있다. 원문 경로와 조금 다르면 설정 검색창에 앱 이름을 넣어 저장공간 화면을 찾는다.",
+      "cautionSource": "삼성 AE 원문의 메뉴 경로(Apps > See all apps > Storage > Clear Cache)를 그대로 옮겼다"
+    },
+    {
+      "id": "samsung-app-clear-data-last-step",
+      "claim": "갤럭시에서 캐시를 지워도 증상이 계속되면 삼성 공식 지원 페이지는 그다음에 '데이터 지우기'를 누르라고 한다. 이 단계는 앱에 저장된 데이터를 모두 지운다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자 — 갤럭시 기기에서 앱이 충돌하거나 멈추는 문제 해결 방법 (삼성 AE 공식 지원)",
+      "source_url": "https://www.samsung.com/ae/support/mobile-devices/solutions-for-apps-crashing-and-freezing-on-your-galaxy-device/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 (One UI·Android)", "years": "전 연식", "region": "글로벌 (삼성 AE 공식 페이지 기준)" },
+      "caution": "데이터 지우기 후에는 로그인·설정·앱 안 기록이 사라진다. 실행 전에 백업을 먼저 하고, 캐시 지우기를 건너뛰고 바로 데이터를 지우지 않는다.",
+      "cautionSource": "삼성 AE 원문 'If the issue persists, tap Clear Data to remove all stored data for the app'의 순서 지시를 따랐다"
+    },
+    {
+      "id": "samsung-app-update-apps-and-software",
+      "claim": "갤럭시에서 캐시 지우기로도 해결되지 않으면 삼성 공식 지원 페이지는 시스템 소프트웨어 업데이트를 확인하고, Google Play 스토어에서 설치된 앱을 모두 업데이트하라고 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자 — 갤럭시 기기에서 앱이 충돌하거나 멈추는 문제 해결 방법 (삼성 AE 공식 지원)",
+      "source_url": "https://www.samsung.com/ae/support/mobile-devices/solutions-for-apps-crashing-and-freezing-on-your-galaxy-device/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 (One UI·Android)", "years": "전 연식", "region": "글로벌 (삼성 AE 공식 페이지 기준)" },
+      "caution": "앱 업데이트와 시스템 업데이트는 별개다. 시스템 업데이트 설치 전에는 배터리와 저장공간을 확인하고 백업을 먼저 한다.",
+      "cautionSource": "삼성 AE 원문의 Software Update·Google Play 업데이트 순서를 따랐다. 배터리·백업 권장은 기존 공통 팩트 galaxy-update-battery-20-percent-official 및 factory-reset-data-loss와 같은 취지다"
+    },
+    {
+      "id": "samsung-app-reinstall-play-store",
+      "claim": "갤럭시에서 업데이트 후에도 증상이 계속되면 삼성 공식 지원 페이지는 해당 앱을 삭제한 뒤 Google Play 스토어에서 다시 설치하라고 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자 — 갤럭시 기기에서 앱이 충돌하거나 멈추는 문제 해결 방법 (삼성 AE 공식 지원)",
+      "source_url": "https://www.samsung.com/ae/support/mobile-devices/solutions-for-apps-crashing-and-freezing-on-your-galaxy-device/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 (One UI·Android)", "years": "전 연식", "region": "글로벌 (삼성 AE 공식 페이지 기준)" },
+      "caution": "삭제하면 앱 안의 데이터가 지워질 수 있다. 재설치 전 데이터 백업을 먼저 하고, 삼성 계정 등 로그인 정보를 미리 확인한다.",
+      "cautionSource": "데이터 삭제 가능성은 삼성 AE 원문의 Clear Data 경고와 같은 맥락을 적용했다. 원문에 별도 수치는 없다"
+    },
+    {
+      "id": "samsung-app-battery-optimization-off",
+      "claim": "갤럭시에서 특정 앱만 자꾸 멈추면 삼성 공식 지원 페이지는 그 앱의 설정에서 배터리 최적화를 끄라고 안내한다. 최적화가 켜진 상태에서 충돌이 나는 경우에 해당한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자 — 갤럭시 기기에서 앱이 충돌하거나 멈추는 문제 해결 방법 (삼성 AE 공식 지원)",
+      "source_url": "https://www.samsung.com/ae/support/mobile-devices/solutions-for-apps-crashing-and-freezing-on-your-galaxy-device/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 (One UI·Android)", "years": "전 연식", "region": "글로벌 (삼성 AE 공식 페이지 기준)" },
+      "caution": "배터리 최적화를 끄면 그 앱의 배터리 소모가 늘 수 있다. 증상이 해결되면 원래대로 되돌리는 것을 함께 안내한다.",
+      "cautionSource": "배터리 소모 증가는 최적화 해제의 일반적 결과이며, 삼성 원문에는 별도 수치가 없다"
+    },
+    {
+      "id": "app-crash-low-storage-link-unverified",
+      "claim": "저장공간 부족이 앱 강제 종료를 직접 일으킨다는 주장은 이번 조사에서 제조사 원문 문장으로 확인하지 못했다. 저장공간 확인은 점검 항목으로만 두고, 원인으로 단정하지 않는다",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "삼성전자 — 갤럭시 앱 충돌·멈춤 해결 방법 (삼성 AE 공식 지원). 원문에 저장공간이 충돌 원인이라는 문장은 없고 저장공간 확보 단계만 있음",
+      "source_url": "https://www.samsung.com/ae/support/mobile-devices/solutions-for-apps-crashing-and-freezing-on-your-galaxy-device/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "스마트폰", "line": "iPhone·갤럭시 전 기종", "years": "전 연식", "region": "글로벌" },
+      "caution": "저장공간을 줄이는 것 자체는 해봐도 손해가 적다. 다만 이 단계로 증상이 사라졌다고 원인을 확정하지 않는다.",
+      "cautionSource": "확인실패 항목은 수치가 없다. 저장공간 확보 경로는 재사용 팩트 galaxy-update-storage-cleanup-path와 iphone-storage-check-path를 따른다"
+    }
+  ]
+}

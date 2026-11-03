@@ -1,0 +1,186 @@
+{
+  "topic": "윈도우에서 블루투스 기기가 연결되지 않을 때 (Windows 11 기준, Windows 10 경로 병기): 문제 해결사 → 기기 제거 후 재추가 → 연결 끊김 시 절전·서비스 → 드라이버 → 제조사·AS 순서",
+  "brand": "Microsoft",
+  "article": "windows-bluetooth-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [],
+  "declined_facts": [
+    { "id": "mic-device-manager-reinstall-last", "why": "오디오 장치(사운드, 비디오 및 게임 컨트롤러) 제거 절차라 Bluetooth 어댑터 절차와 장치 분류가 다르다. 재사용하지 않고 Bluetooth 원문을 새로 확인했다." },
+    { "id": "win-update-troubleshooter-path", "why": "설정 > 시스템 > 문제 해결 > 기타 문제 해결사 경로는 같지만, 그 팩트의 대상은 Windows Update다. 이번 글은 Bluetooth 항목을 Bluetooth 원문에서 직접 확인해 bt-troubleshooter-run-first로 새로 작성했다." },
+    { "id": "factory-reset-data-loss", "why": "이번 범위에 초기화 단계가 없다. 재사용하지 않는다." }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "bt-troubleshooter-run-first",
+      "claim": "Bluetooth 연결이 안 될 때 Microsoft는 먼저 자동 Bluetooth 문제 해결사를 실행하라고 안내한다. Windows 11에서는 Get Help 앱(aka.ms/GetHelp-BluetoothTroubleshooter)에서 실행하거나, 설정 > 시스템 > 문제 해결 > 기타 문제 해결사에서 Bluetooth 옆의 '실행'을 누른다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support (영문) - Fix Bluetooth problems in Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/fix-bluetooth-problems-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "PC 블루투스", "line": "Windows 11 (Windows 10 포함 문서)", "years": "Windows 10·11", "region": "글로벌(영문 공식 문서 기준)" },
+      "caution": "Windows 10은 경로가 다르다. 설정 > 업데이트 및 보안 > 문제 해결 > 기타 문제 해결에서 Bluetooth를 골라 실행한다. 자동 해결사로 안 잡히는 증상이라도 다음 단계로 넘어가면 된다."
+    },
+    {
+      "id": "bt-toggle-wait-10s",
+      "claim": "Bluetooth가 켜져 있는데도 기기가 안 붙으면 Bluetooth를 끄고 약 10초 기다렸다가 다시 켜는 방법을 Microsoft가 안내한다. 경로는 설정 > Bluetooth 및 장치",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support (영문) - Troubleshoot Bluetooth not connecting in Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/troubleshoot-bluetooth-not-connecting-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "PC 블루투스", "line": "Windows 11 (Windows 10도 동일 단계)", "years": "Windows 10·11", "region": "글로벌" },
+      "caution": "Windows 10 경로는 설정 > 장치 > Bluetooth 및 기타 장치다. 같은 문서에서 Windows 10 경로만 다르고 단계는 같다고 밝힌다."
+    },
+    {
+      "id": "bt-airplane-and-physical-switch",
+      "claim": "Bluetooth를 껐다 켜기 전에 비행기 모드가 꺼져 있는지 확인하고, 노트북에 물리 Bluetooth 스위치가 있으면 그것도 켜져 있어야 한다고 Microsoft가 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support (영문) - Fix Bluetooth problems in Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/fix-bluetooth-problems-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "PC 블루투스", "line": "노트북(물리 스위치가 있는 기종)", "years": "Windows 10·11", "region": "글로벌" }
+    },
+    {
+      "id": "bt-remove-readd-win11",
+      "claim": "Windows 11에서 기기가 목록에 있는데 연결이 안 되면 설정 > Bluetooth 및 장치 > 장치에서 기기 옆 더보기(...) 메뉴를 열어 '장치 제거'를 누른 뒤, 다시 기기를 추가해 페어링한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support (영문) - Fix Bluetooth problems in Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/fix-bluetooth-problems-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "PC 블루투스", "line": "기기 페어링 전 범용", "years": "Windows 11", "region": "글로벌" },
+      "caution": "Windows 10 경로는 설정 > 장치 > Bluetooth 및 기타 장치에서 기기를 선택하고 '장치 제거' 후 Bluetooth로 다시 추가하는 방식이다."
+    },
+    {
+      "id": "bt-device-readiness-pairing-mode",
+      "claim": "기기 쪽 준비도 함께 확인해야 한다. 기기를 페어링 모드로 두고 PC 가까이 놓고, 배터리를 완전히 충전한 뒤 전원을 껐다 켜고 다시 페어링한다. 충전식 헤드폰·스피커는 페어링하는 동안 충전 케이블을 연결해 둔다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support (영문) - Troubleshoot Bluetooth not connecting in Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/troubleshoot-bluetooth-not-connecting-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "PC 블루투스", "line": "Bluetooth 주변기기 전반(헤드폰·스피커·마우스 등)", "years": "Windows 10·11", "region": "글로벌" }
+    },
+    {
+      "id": "bt-usb3-interference",
+      "claim": "차폐되지 않은 USB 3.0 기기가 Bluetooth 연결을 방해할 수 있다고 Microsoft가 밝혔다. 그러니 Bluetooth 기기는 그런 USB 3.0 기기에서 떨어뜨려 둔다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support (영문) - Fix Bluetooth problems in Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/fix-bluetooth-problems-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "PC 블루투스", "line": "USB 3.0 포트를 쓰는 PC 전반", "years": "Windows 10·11", "region": "글로벌" },
+      "caution": "Microsoft는 '가끔 방해할 수 있다(can sometimes)'고 표현했다. 이 원인이 확정된 것처럼 단정하지 말고, 외장 USB 3.0 허브·저장장치를 뺐을 때 좋아지는지 해보라고 안내한다."
+    },
+    {
+      "id": "bt-disconnect-causes",
+      "claim": "Bluetooth가 자꾸 끊기는 원인으로 Microsoft는 절전 설정, 오래된 드라이버, 일시적인 시스템 오류를 든다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support (영문) - Bluetooth keeps disconnecting in Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/bluetooth-keeps-disconnecting-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "PC 블루투스", "line": "연결 후 끊김 증상", "years": "Windows 10·11", "region": "글로벌" }
+    },
+    {
+      "id": "bt-energy-saver-off",
+      "claim": "Bluetooth 연결이 끊길 때 배터리 아이콘을 눌러 절전 모드가 켜져 있는지 보고, 켜져 있으면 끈다. Windows 11에서는 '에너지 절약 모드', Windows 10에서는 '배터리 절약 모드'라고 부른다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support (영문) - Bluetooth keeps disconnecting in Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/bluetooth-keeps-disconnecting-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "PC 블루투스", "line": "노트북·태블릿 절전 설정 켜진 기기", "years": "Windows 10(배터리 절약) · Windows 11(에너지 절약)", "region": "글로벌" }
+    },
+    {
+      "id": "bt-power-management-uncheck",
+      "claim": "장치 관리자에서 Bluetooth 항목을 펼쳐 기기를 우클릭하고 '전원 관리' 탭을 열어 '전원을 절약하기 위해 컴퓨터가 이 장치를 끌 수 있음'의 체크를 해제하라고 Microsoft가 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support (영문) - Bluetooth keeps disconnecting in Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/bluetooth-keeps-disconnecting-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "PC 블루투스", "line": "Bluetooth 장치 항목 중 전원 관리 탭이 있는 항목", "years": "Windows 10·11", "region": "글로벌" },
+      "caution": "공식 문서는 '무선 어댑터'가 아니라 'your Bluetooth device'라고만 쓴다. 전원 관리 탭이 보이는 항목을 골라 해제하고, 탭이 없으면 그 항목은 건너뛴다."
+    },
+    {
+      "id": "bt-service-restart-bluetooth-support",
+      "claim": "Windows 키 + R을 눌러 services.msc를 열고 'Bluetooth Support Service'를 찾아 우클릭 후 '다시 시작'을 누르면 Bluetooth 서비스가 다시 올라온다고 Microsoft가 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support (영문) - Bluetooth keeps disconnecting in Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/bluetooth-keeps-disconnecting-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "PC 블루투스", "line": "Bluetooth 서비스 기반 연결 문제", "years": "Windows 10·11", "region": "글로벌" },
+      "caution": "이 서비스 이름은 공식 문서가 명시한 것 하나뿐이다. 서비스를 다시 시작해도 해결되지 않으면 다음 단계(드라이버)로 넘긴다."
+    },
+    {
+      "id": "bt-other-services-unverified",
+      "claim": "Bluetooth Audio Gateway Service나 Bluetooth User Support Service까지 함께 재시작하라는 방법은 Microsoft 공식 문서에서 확인하지 못했다. 2차 가이드에만 있는 내용이라 글에 단정적으로 쓰지 않는다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "Microsoft Support (영문) - Bluetooth keeps disconnecting in Windows (확인 범위: 해당 서비스명 부재 확인)",
+      "source_url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/bluetooth-keeps-disconnecting-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "PC 블루투스", "line": "Bluetooth 관련 보조 서비스", "years": "Windows 10·11", "region": "글로벌" },
+      "caution": "2차 가이드는 이 서비스들을 '목록에 보이면 함께' 재시작하라고 쓴다. 글에서는 공식 확인된 Bluetooth Support Service만 제시한다."
+    },
+    {
+      "id": "bt-driver-update-device-manager",
+      "claim": "드라이버를 바꾸려면 장치 관리자에서 Bluetooth 항목을 펼쳐 어댑터(무선 장치)를 우클릭하고 '드라이버 업데이트' > '드라이버 자동 검색'을 누른다고 Microsoft가 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support (영문) - Fix Bluetooth problems in Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/fix-bluetooth-problems-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "PC 블루투스 어댑터", "line": "내장 Bluetooth 어댑터(라디오)", "years": "Windows 10·11", "region": "글로벌" },
+      "caution": "Windows 10에서도 같은 절차이며 메뉴 이름만 '드라이버 소프트웨어 자동 검색'으로 다르다. 어댑터 항목이 여러 개면 이름에 Bluetooth가 들어간 것부터 고른다."
+    },
+    {
+      "id": "bt-driver-manual-install-manufacturer",
+      "claim": "자동 검색으로 드라이버를 못 찾으면 PC 제조사 홈페이지에서 드라이버를 받는다. 받은 파일이 .exe면 실행하고, .inf·.sys 파일 묶음이면 '드라이버 찾아보기'에서 그 폴더를 지정해 설치한다고 Microsoft가 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support (영문) - Fix Bluetooth problems in Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/fix-bluetooth-problems-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "PC 블루투스 어댑터", "line": "제조사별 내장 어댑터", "years": "Windows 10·11", "region": "글로벌" },
+      "caution": "드라이버는 PC 제조사 또는 어댑터 제조사마다 다르다. 제조사 페이지에서 기종명과 Windows 버전(10/11)을 맞춰 받는다."
+    },
+    {
+      "id": "bt-adapter-uninstall-shutdown-not-restart",
+      "claim": "Bluetooth 아이콘이 작업 표시줄에 없고 장치 관리자에는 보일 때, 장치 관리자 > Bluetooth에서 어댑터를 우클릭해 '디바이스 제거'를 누른 뒤 재시작이 아니라 '시스템 종료'로 끈다. 몇 초 기다렸다가 다시 켜면 Windows가 드라이버를 재설치하고, 안 되면 장치 관리자 동작 메뉴에서 '하드웨어 변경 사항 검색'을 한다고 Microsoft가 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support (영문) - Fix Bluetooth problems in Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/fix-bluetooth-problems-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "PC 블루투스 어댑터", "line": "내장 Bluetooth 어댑터 제거·재설치", "years": "Windows 11", "region": "글로벌" },
+      "caution": "공식 문서가 '재시작(Restart)이 아니라 종료(Shut down)'를 명시한다. 2차 가이드의 Shift 누른 채 종료 절차는 이 공식 문서에 없으므로 쓰지 않는다. 제거 전에 제조사 드라이버 파일을 미리 받아 두면 다음 단계(bt-driver-manual-install-manufacturer)로 바로 이어갈 수 있다."
+    },
+    {
+      "id": "bt-windows10-end-of-support",
+      "claim": "Windows 10은 2025년 10월 14일에 지원이 종료되었고, Microsoft는 Windows 11로 옮길 것을 권장한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support (영문) - Fix Bluetooth problems in Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/fix-bluetooth-problems-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "PC 운영체제", "line": "Windows 10 전 기종", "years": "Windows 10 (2025-10-14 지원 종료)", "region": "글로벌" }
+    },
+    {
+      "id": "bt-as-warranty-unverified",
+      "claim": "Microsoft 공식 Bluetooth 문서에는 보증 기간, AS 접수 경로, AS 접수 기준이 없다. 공식 문서는 최신 Bluetooth 드라이버가 필요하면 PC 또는 어댑터 제조사에 문의해야 할 수 있다는 정도만 안내한다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "Microsoft Support (영문) - Fix Bluetooth problems in Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/fix-bluetooth-problems-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "PC 블루투스", "line": "AS 접수 기준 전반", "years": "Windows 10·11", "region": "글로벌" },
+      "caution": "AS 접수 기준은 PC 제조사(삼성·LG 등)마다 다르다. 글에서는 '여기까지 해봤는데 안 되면 PC 제조사 고객지원에 문의'로 마무리하고, 보증 기간을 단정하지 않는다."
+    }
+  ]
+}

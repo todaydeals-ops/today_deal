@@ -1,0 +1,160 @@
+{
+  "topic": "멀티탭 과부하와 화재를 막는 안전한 사용법 (정격 확인·문어발 금지·고소비전력 가전 전용 콘센트·교체 기준·청소·에어컨 멀티탭 금지)",
+  "brand": "공통",
+  "article": "power-strip-overload-safety-guide",
+  "captured": "2026-11-03",
+  "reused_facts": [],
+  "declined_facts": [
+    { "id": "heater-safety-winter-guide:rated-capacity-15a-3300w", "why": "기존 heater-safety-winter-guide 파일 팩트. 원문이 뉴스 기사(news.sbs.co.kr)이고 기관 문서 여부가 미확인이라 disputes 신고된 상태. 이번 글에서 재사용하지 않는다." },
+    { "id": "heater-safety-winter-guide:multitap-safe-connection-limit", "why": "기존 파일에서 kesco.or.kr 메인 페이지를 근거로 적었으나 동시연결 수치가 해당 페이지에 있는지 확인하지 못했다. 이번 조사에서 KESCO 원문 열람도 실패했다. 재사용 보류." },
+    { "id": "ratio-60-percent-kesco-quote", "why": "60% 권장 사용률은 한국전기안전공사 부산울산본부 발언으로 보도된 것이나, 발언이 실린 기사 원문을 열지 못했다. 위키트리 기사에는 권장 사용률 수치가 없었다. 80% 권장도 출처마다 달라 수치 자체를 쓰지 않는다." },
+    { "id": "heater-power-check-order", "why": "이번 조사 범위가 아님. 기존 파일의 비공식 출처 문제는 그 파일의 disputes로 남긴다." }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "multitap-no-daisy-chain-motir",
+      "claim": "산업통상부 누리집에 게시된 멀티탭·콘센트·플러그 소비자 안전주의보는 '멀티탭에 또 다른 멀티탭을 연결해 사용하지 말 것'을 당부한다. 이는 문어발식 연결(멀티탭을 멀티탭에 잇는 것) 금지 기준이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "산업통상부 누리집 게시 — 멀티탭·콘센트·플러그 소비자 안전주의보 (2025-09-04)",
+      "source_url": "https://www.motir.go.kr/kor/article/ATCL8764a1224/155118958/view",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "멀티탭·연장 콘센트", "line": "멀티탭 연결 방식(문어발식)", "years": "2025-09-04 발령 기준", "region": "KR" },
+      "caution": "문어발은 '멀티탭을 멀티탭에 잇는 것'이 핵심이다. 멀티탭 한 개에 가전을 여러 개 꽂는 것 자체의 허용 여부는 이 문장만으로 판단하지 말고 정격 합산 팩트와 함께 쓸 것.",
+      "cautionSource": "같은 안전주의보 본문에 '문어발'이라는 단어는 없고 '다른 멀티탭을 연결' 문장만 있음을 직접 확인"
+    },
+    {
+      "id": "multitap-rated-capacity-not-exceed-motir",
+      "claim": "같은 산업통상부 게시 안전주의보는 '멀티탭의 정격용량을 초과해 사용하지 말 것'을 당부한다. 정격은 채워 쓰는 목표치가 아니라 넘지 말아야 할 상한으로 읽는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "산업통상부 누리집 게시 — 멀티탭·콘센트·플러그 소비자 안전주의보 (2025-09-04)",
+      "source_url": "https://www.motir.go.kr/kor/article/ATCL8764a1224/155118958/view",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "멀티탭", "line": "정격용량 표기 제품", "years": "2025-09-04 발령 기준", "region": "KR" },
+      "caution": "정격 대비 몇 %까지 쓰는 것이 안전한지는 이 문장이 정하지 않는다. 비율 기준은 별도 팩트 없이 쓰지 말 것.",
+      "cautionSource": "안전주의보 본문에 사용률(%) 문장이 없음을 확인"
+    },
+    {
+      "id": "high-power-appliance-dedicated-outlet-motir",
+      "claim": "산업통상부 게시 안전주의보는 '에어컨, 온열기 같이 높은 소비전력 제품은 벽면의 전용·단독 콘센트를 사용할 것'을 당부한다. 겨울철 온열기(히터)는 멀티탭을 피해 벽 콘센트에 단독으로 꽂는 대상이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "산업통상부 누리집 게시 — 멀티탭·콘센트·플러그 소비자 안전주의보 (2025-09-04)",
+      "source_url": "https://www.motir.go.kr/kor/article/ATCL8764a1224/155118958/view",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "에어컨·온열기(히터)", "line": "고소비전력 가전", "years": "2025-09-04 발령 기준", "region": "KR" },
+      "caution": "이 문장은 '고소비전력 제품'의 예로 에어컨과 온열기만 든다. 전기장판·전기매트 등 다른 난방 가전까지 같은 문장으로 확장해 단정하지 말 것.",
+      "cautionSource": "안전주의보 본문에서 예시가 에어컨·온열기 두 가지뿐임을 확인"
+    },
+    {
+      "id": "lg-check-rated-capacity-before-use",
+      "claim": "LG전자 고객지원 캠페인 안내는 '콘센트나 멀티탭 정격용량을 확인 후 연결해서 사용해야 한다'고 안내한다. 특히 전기에너지를 열에너지로 바꾸는 가전(열을 내는 가전)은 정격을 먼저 확인하라고 덧붙인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 스스로 해결 — [안전 사고 Zero 캠페인] 1탄 콘센트와 멀티탭 안전하게 사용하기 (2026.07.27)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20154524138110",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "가전 일반·멀티탭", "line": "콘센트·멀티탭 정격 확인", "years": "2026.07.27 게시 기준", "region": "KR" },
+      "caution": "페이지 하단에 '공용으로 제작되어 구입한 제품과 다른 이미지나 내용이 포함될 수 있다'는 문구가 있다. LG 제품 전용 설명으로 쓰지 말고 일반 안전 수칙으로 인용할 것.",
+      "cautionSource": "LG 페이지 하단의 공용 콘텐츠 안내 문구를 직접 확인"
+    },
+    {
+      "id": "lg-high-capacity-dedicated-outlet-or-high-rating-strip",
+      "claim": "LG전자 캠페인 안내는 건조기·세탁기 등 고용량 제품은 제품 정격용량에 맞는 전용 콘센트 또는 고용량 멀티탭을 써야 안전하다고 안내한다. 모터가 있거나 열을 내는 가전도 같은 기준이 적용된다고 설명한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 스스로 해결 — [안전 사고 Zero 캠페인] 1탄 콘센트와 멀티탭 안전하게 사용하기 (2026.07.27)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20154524138110",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "건조기·세탁기 등 고용량 가전", "line": "전용 콘센트 또는 고용량 멀티탭", "years": "2026.07.27 게시 기준", "region": "KR" },
+      "caution": "'고용량 멀티탭'이 어떤 정격을 뜻하는지 페이지에 수치가 없다. 제품 라벨의 정격과 멀티탭 표기를 대조하라고 안내하고 임의의 와트 기준을 쓰지 말 것.",
+      "cautionSource": "LG 페이지 본문에 정격 수치가 없음을 직접 확인"
+    },
+    {
+      "id": "lg-multitap-replacement-signs",
+      "claim": "LG전자 캠페인 안내는 멀티탭 교체가 필요한 상태로 검게 그을린 자국, 전선의 찍힘 또는 찢어짐, 단자가 헐거워진 경우, 오래 사용해 노후된 경우를 든다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 스스로 해결 — [안전 사고 Zero 캠페인] 1탄 콘센트와 멀티탭 안전하게 사용하기 (2026.07.27)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20154524138110",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "멀티탭", "line": "교체 판단 기준", "years": "노후 기준은 연수 수치 없음", "region": "KR" },
+      "caution": "'노후'에 몇 년이라는 기준은 원문에 없다. 연수를 임의로 붙이지 말고 외관 손상과 단자 상태로 판단하도록 쓸 것.",
+      "cautionSource": "LG 페이지 본문에 연수 기준이 없음을 직접 확인"
+    },
+    {
+      "id": "lg-multitap-dust-cleaning-power-off",
+      "claim": "LG전자 캠페인 안내는 멀티탭에 쌓인 먼지가 스파크와 함께 화재 위험이 되므로 주기적으로 청소하라고 안내한다. 청소할 때는 반드시 전기를 차단하고 내부로 물이 들어가지 않게 주의하라고 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 스스로 해결 — [안전 사고 Zero 캠페인] 1탄 콘센트와 멀티탭 안전하게 사용하기 (2026.07.27)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20154524138110",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "멀티탭·콘센트", "line": "먼지 청소", "years": "2026.07.27 게시 기준", "region": "KR" },
+      "caution": "청소 전에 전원을 차단하지 않으면 감전 위험이 있다. 독자에게 청소 전 플러그 분리와 마른 천 사용을 함께 안내할 것.",
+      "cautionSource": "LG 페이지의 '청소 시 전기 차단은 필수' 문장을 직접 확인"
+    },
+    {
+      "id": "samsung-aircon-no-multitap",
+      "claim": "삼성전자서비스 솔루션 안내는 에어컨은 소비전력이 높아 멀티탭 사용을 권장하지 않는다고 밝힌다. 부득이하게 쓸 경우에는 제품 모델별 전선 규격과 허용전류 등 안전 조건을 충족해야 하고, 콘센트가 멀리 있으면 자격을 갖춘 전기업체를 통해 전용 콘센트를 설치한 뒤 쓰라고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 솔루션 — 스탠드, 멀티탭 사용이 가능한지 궁금해요 (2026-10-22)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37300",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "에어컨", "line": "스탠드·벽걸이 등 에어컨 전원 연결", "years": "2026-10-22 게시 기준", "region": "KR" },
+      "caution": "고용량 멀티탭이라도 모든 에어컨에 쓸 수 있는 것이 아니다. 전선 규격과 허용전류를 모델별로 확인하라고 쓰고, 멀티탭 종류를 단정하지 말 것.",
+      "cautionSource": "삼성 솔루션 페이지 FAQ 문장에서 직접 확인"
+    },
+    {
+      "id": "power-sum-method-label-and-volts",
+      "claim": "같은 시간에 켜질 가전들의 소비전력(W)을 모두 더해 멀티탭의 정격 와트나 전류와 비교한다. 가전의 소비전력은 뒷면이나 바닥의 정격 라벨에서 찾고, 멀티탭이 전류(A)로만 표기되어 있으면 전압 220V를 곱해 와트로 바꾼다(전력 = 전압 × 전류).",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "위키트리 보도 — 멀티탭에 '문어발'로 꽂지 마세요, 히터 켜기 전 와트부터 합산해보세요",
+      "source_url": "https://www.wikitree.co.kr/articles/1164936",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "멀티탭·가전 일반", "line": "와트 합산 계산법", "years": "전 연식", "region": "KR" },
+      "caution": "계산식 자체(전력 = 전압 × 전류)는 일반 물리 원리다. 기사의 예시 가전 수치(900W·700W·500W 등)는 예시일 뿐이므로 사용자의 실제 가전 라벨로 바꿔 계산하라고 쓸 것.",
+      "cautionSource": "위키트리 기사 본문이 예시 수치를 '가정'이라고 명시함을 직접 확인"
+    },
+    {
+      "id": "outlet-circuit-ceiling-10a-220v-2200w",
+      "claim": "10A·220V 콘센트 회로의 계산상 상한은 약 2,200W(220V × 10A)다. 실제 한계는 벽 콘센트, 분전반 차단기, 멀티탭, 가전 자체 정격 중 가장 낮은 값으로 정해진다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "위키트리 보도 — 멀티탭에 '문어발'로 꽂지 마세요, 히터 켜기 전 와트부터 합산해보세요",
+      "source_url": "https://www.wikitree.co.kr/articles/1164936",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가정용 콘센트 회로", "line": "10A 회로 기준 계산값", "years": "전 연식", "region": "KR" },
+      "caution": "약 2,200W는 안전 여유를 두기 전 이론 상한이다. 실제로는 이 값의 일정 비율 이하로 쓰라는 기준을 따로 두지 말고, 합산값이 라벨 정격을 넘지 않는지 확인하도록 쓸 것.",
+      "cautionSource": "위키트리 기사가 '안전 여유를 두기 전 수치'라고 설명한 문장을 직접 확인"
+    },
+    {
+      "id": "heat-or-burn-mark-stop-use-kesco-via-media",
+      "claim": "언론 보도는 한국전기안전공사 안내를 인용해 이상 발열이 있거나 탄 흔적이 보이면 멀티탭 사용을 중지하라고 전한다. 공사 원문은 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "위키트리 보도 — 멀티탭에 '문어발'로 꽂지 마세요, 히터 켜기 전 와트부터 합산해보세요 (한국전기안전공사 안내 인용, 원문 미확인)",
+      "source_url": "https://www.wikitree.co.kr/articles/1164936",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "멀티탭", "line": "이상 발열·탄 흔적 시 사용 중지", "years": "전 연식", "region": "KR" },
+      "caution": "사용 중지 신호 자체는 독자에게 안전하게 권할 수 있으나, 공사 공식 안내라고 단정하지 말 것. 대신 LG 캠페인의 그을린 자국·단자 헐거움 기준(공식)을 함께 쓴다.",
+      "cautionSource": "위키트리 기사에 공사 인용 문장이 있으나 원문 링크는 없음을 직접 확인"
+    },
+    {
+      "id": "multitap-heavy-appliance-not-suitable-media",
+      "claim": "언론 기사는 열을 내는 기기, 모터가 달린 기기, 1,000W 이상 기기는 멀티탭을 피하고 벽면 콘센트에 직접 꽂아야 한다고 정리한다. 이 기준은 기자 정리이며 기관 원문이 아니다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "경향신문 라이프 기사 — 멀티탭에 꽂아 사용하면 불안…8가지 가전은? (기자 정리, 기관 원문 아님)",
+      "source_url": "https://lady.khan.co.kr/living/article/202510141749011",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가정용 가전 일반", "line": "열·모터·1,000W 이상 기기 분류", "years": "2025-10-14 게시 기준", "region": "KR" },
+      "caution": "1,000W 기준은 기사 해설이라 법적·공식 기준으로 쓰지 말 것. 독자에게는 제품 라벨의 소비전력을 확인하고, 1,000W 근처이거나 넘으면 벽 콘센트 단독 사용을 권하는 식으로 쓸 것.",
+      "cautionSource": "기사가 '기자 해설'이며 리얼심플 인용은 번역 한 문장뿐이라고 확인한 내용"
+    }
+  ]
+}

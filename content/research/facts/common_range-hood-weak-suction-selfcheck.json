@@ -1,0 +1,143 @@
+{
+  "topic": "레인지후드 흡입력 약화 시 청소와 점검 (원인·청소·전원 차단·AS 기준)",
+  "brand": "공통",
+  "article": "range-hood-weak-suction-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "samsung-hood-mode-button-check",
+      "claim": "삼성 레인지후드는 조작부 모드 버튼을 누를 때마다 운전 모드가 바뀌며, 순서는 스마트 → 강력(3) → 일반(2) → 저소음(1)이다. 모드를 바꿨을 때 풍량 변화가 있으면 제품 자체에는 이상이 없다고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 후드, 작동을 시키면 풍량이 약합니다(자가점검 안내)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/784841",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "레인지후드", "line": "모드 버튼 조작형 후드", "years": "페이지 게시 2022-04-14 기준, 연식 명시 없음", "region": "KR" },
+      "caution": "모드 버튼 구성은 모델마다 다를 수 있다. 버튼이 없는 모델이면 제품 설명서의 풍량 조절 방법을 먼저 확인한다.",
+      "cautionSource": "삼성전자서비스 페이지가 모델별 조건을 명시하지 않음. 모델별 차이는 제품 설명서 확인이 원칙"
+    },
+    {
+      "id": "samsung-hood-filter-clog-weak",
+      "claim": "삼성 공식 안내에 따르면 필터 청소가 안 되어 기름때가 쌓이면 후드의 흡입력(풍량)이 약해질 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 후드, 작동을 시키면 풍량이 약합니다(자가점검 안내)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/784841",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "레인지후드", "line": "필터 분리형 후드 전 라인", "years": "페이지 게시 2022-04-14 기준, 연식 명시 없음", "region": "KR" },
+      "caution": "",
+      "cautionSource": ""
+    },
+    {
+      "id": "samsung-hood-still-weak-after-clean-service",
+      "claim": "삼성 공식 안내에 따르면 필터를 청소해도 풍량이 같으면 제품 점검이 필요하다. 이때는 전문 엔지니어의 점검을 받는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 후드, 작동을 시키면 풍량이 약합니다(자가점검 안내)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/784841",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "레인지후드", "line": "전 라인", "years": "페이지 게시 2022-04-14 기준, 연식 명시 없음", "region": "KR" },
+      "caution": "보증기간 안이라도 사용법 문의나 설치처럼 고장이 아닌 경우에는 요금이 부과될 수 있다고 안내되어 있다. 방문 전에 증상이 고장인지 먼저 확인한다.",
+      "cautionSource": "삼성전자서비스 페이지의 요금 부과 안내 문단"
+    },
+    {
+      "id": "lg-ea-unplug-before-clean",
+      "claim": "LG 공식 가이드는 후드 청소 전에 전원을 먼저 분리하라고 안내한다(Disconnect the power first, Always unplug before cleaning). 후드가 꺼지고 식은 상태에서 청소한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 동아프리카 사이트 — How to Clean Your Built-in Kitchen Hood: A Complete Guide",
+      "source_url": "https://lg.com/eastafrica/b2c/blog-list/how-to-clean-your-built-in-kitchen-hood-a-complete-guide",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "빌트인 주방 후드", "line": "전 라인", "years": "전 연식", "region": "동아프리카(LG 지역 사이트)" },
+      "caution": "이 문서는 동아프리카 지역 사이트의 가이드다. 한국 제품은 국내 제품 설명서의 전원 차단 절차를 우선한다. 전기 부품에 물을 뿌리지 않는다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "lg-ea-grease-filter-soak-method",
+      "claim": "LG 공식 가이드의 그리스 필터 세척법은 필터를 분리해 뜨거운 물에 주방세제와 베이킹소다를 풀고 약 15분 담근 뒤 문질러 헹구고, 완전히 말린 다음 장착하는 것이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 동아프리카 사이트 — How to Clean Your Built-in Kitchen Hood: A Complete Guide",
+      "source_url": "https://lg.com/eastafrica/b2c/blog-list/how-to-clean-your-built-in-kitchen-hood-a-complete-guide",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "빌트인 주방 후드", "line": "그리스(기름) 필터 장착 후드", "years": "전 연식", "region": "동아프리카(LG 지역 사이트)" },
+      "caution": "같은 방식으로 세척하는 가이드도 15~20분을 제시하므로 15분은 기준점이다. 세제와 세척 방법은 제품 설명서의 세척 지시를 우선한다. 식기세척기 사용 가능 여부는 이 문서로 확인되지 않았다.",
+      "cautionSource": "ROBAM Living 가이드(robamliving.com)의 15~20분 범위 권장"
+    },
+    {
+      "id": "lg-ea-filter-clean-monthly",
+      "claim": "LG 공식 가이드는 요리를 자주 한다면 필터를 월 1회 세척하라고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 동아프리카 사이트 — How to Clean Your Built-in Kitchen Hood: A Complete Guide",
+      "source_url": "https://lg.com/eastafrica/b2c/blog-list/how-to-clean-your-built-in-kitchen-hood-a-complete-guide",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "빌트인 주방 후드", "line": "그리스 필터 장착 후드", "years": "전 연식", "region": "동아프리카(LG 지역 사이트)" },
+      "caution": "요리 빈도가 낮으면 주기를 길게 잡아도 되고, 기름을 많이 쓰는 요리를 하면 더 자주 세척한다. 정확한 주기는 요리 빈도에 맞춘다.",
+      "cautionSource": "LG 동아프리카 페이지의 regular cooking(정기적 요리) 전제 문구"
+    },
+    {
+      "id": "lg-ea-weak-smoke-pull-means-clean",
+      "claim": "LG 공식 가이드는 후드가 연기를 제대로 빨아들이지 않으면 필터 청소가 필요한 신호라고 안내한다. 이상한 소음이 나는 것도 같은 신호일 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 동아프리카 사이트 — How to Clean Your Built-in Kitchen Hood: A Complete Guide",
+      "source_url": "https://lg.com/eastafrica/b2c/blog-list/how-to-clean-your-built-in-kitchen-hood-a-complete-guide",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "빌트인 주방 후드", "line": "전 라인", "years": "전 연식", "region": "동아프리카(LG 지역 사이트)" },
+      "caution": "청소 후에도 증상이 계속되면 LG 고객 서비스에 문의하라고 안내되어 있다. 이 문서 자체는 설치 문제나 덕트 문제는 다루지 않는다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "robam-charcoal-filter-not-washable",
+      "claim": "순환(재순환) 방식으로 쓰는 후드의 활성탄 필터는 세척할 수 없는 소모품이다. 물로 씻으면 필터가 망가지므로 주기적으로 교체해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "ROBAM Living 블로그 — Range Hood Not Pulling Smoke? A Full Troubleshooting Guide (2026-07-17)",
+      "source_url": "https://robamliving.com/blogs/news/range-hood-not-pulling-smoke-troubleshooting",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "레인지후드", "line": "재순환(활성탄 필터) 방식 후드", "years": "전 연식", "region": "글로벌" },
+      "caution": "배기(덕트 연결) 방식 후드에는 활성탄 필터가 없다. 활성탄 필터가 있는 제품인지 먼저 확인한다. 교체 주기 수치는 이 자료에 없으므로 제품 설명서 기준을 따른다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "robam-rigid-duct-vs-flex",
+      "claim": "후드 배기에는 금속 강성 덕트(아연도금강판·스테인리스)가 권장되며, 주름진 플렉시블 덕트는 공기 흐름을 줄이고 기름이 쌓이기 쉬워 흡입력을 떨어뜨린다고 안내된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "ROBAM Living 블로그 — Range Hood Not Pulling Smoke? A Full Troubleshooting Guide (2026-07-17)",
+      "source_url": "https://robamliving.com/blogs/news/range-hood-not-pulling-smoke-troubleshooting",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "레인지후드", "line": "배기 덕트 연결 방식 후드", "years": "전 연식", "region": "글로벌" },
+      "caution": "덕트 굵기와 길이 기준은 이 자료에 수치가 없다. 제품 설명서의 권장 덕트 규격을 확인하고, 덕트가 과도하게 길거나 꺾임이 많은 경우 설치 점검을 받는다.",
+      "cautionSource": ""
+    },
+    {
+      "id": "gba-makeup-air-equal-volume",
+      "claim": "배기 팬이 실내 공기를 밖으로 뽑는 만큼 같은 양의 공기가 들어와야 하며, 바깥 공기가 들어올 틈이 적은 주택에서는 그 보충 공기가 부족해질 수 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "GreenBuildingAdvisor — How to Provide Makeup Air for Range Hoods (Martin Holladay, 2015-06-08)",
+      "source_url": "https://greenbuildingadvisor.com/article/how-to-provide-makeup-air-for-range-hoods",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "레인지후드", "line": "강력 배기형 후드", "years": "전 연식", "region": "미국 기준 주택 설명(국내 아파트 적용은 별도 확인)" },
+      "caution": "보충 공기 유입구의 위치는 조리 열기가 후드로 올라가는 흐름을 끊지 않게 잡는다는 독자 댓글 답변이 근거다. 기사 본문의 권고가 아니므로 단정하지 않는다.",
+      "cautionSource": "같은 기사 독자 댓글 및 필자 답글(본문에는 위치 권고 없음)"
+    },
+    {
+      "id": "kr-hood-selfcheck-not-found",
+      "claim": "확인실패: LG전자 한국 고객지원 사이트에서 레인지후드 전용 흡입력 자가점검 문서를 찾지 못했다. 한국 LG 흡입력 안내로 확인된 것은 싸이킹 청소기 전용 문서뿐이다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "LG전자 한국 고객지원 — [LG 싸이킹] 흡입력이 약해요 (청소기 전용, 레인지후드 아님)",
+      "source_url": "https://www.lge.co.kr/support/solutions-1421037690610",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "레인지후드", "line": "국내 고객지원 기준", "years": "2026-11-03 확인 시점", "region": "KR" },
+      "caution": "검색 결과 기준의 부재 확인이며 LG 레인지후드 설명서 전체를 검토한 결과가 아니다. 국내 LG 후드 설명서를 직접 확인하기 전까지 한국 LG 제품에는 동아프리카 가이드를 그대로 적용하지 않는다.",
+      "cautionSource": ""
+    }
+  ]
+}

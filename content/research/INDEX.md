@@ -3,11 +3,11 @@
 > 자동 생성 파일. 직접 수정하지 마세요. `node scripts/research-index.mjs`로 갱신합니다.
 > **기계적 대조 기준은 이 파일이 아니라 `facts/*.json` 원본입니다.**
 
-생성: 2026-10-27 · 조사 835건 · 팩트 7263개
+생성: 2026-11-03 · 조사 920건 · 팩트 8364개
 
 ## ⚠️ 무결성 경고
 
-### 중복 id (19)
+### 중복 id (20)
 
 - madecassoside-vs-asiaticoside-both-triterpenoid-glycosides (centella-wound-repair.json ↔ 뷰티_centella-wound-repair.json)
 - madecassoside-superior-wound-healing-speed-vs-asiaticoside (centella-wound-repair.json ↔ 뷰티_centella-wound-repair.json)
@@ -28,9 +28,13 @@
 - mineral-sunscreen-zinc-oxide-broad-spectrum-titanium-uva-limited (뷰티_physical-vs-chemical-sunscreen.json ↔ 뷰티_zinc-oxide-vs-titanium.json)
 - zinc-pca-sebum-reduction-placebo-controlled-4-week-trial (zinc-pca-sebum.json ↔ 뷰티_zinc-pca-sebum.json)
 - sleep-inertia-definition (수면_power-nap-cognition.json ↔ 수면_sleep-inertia-grogginess.json)
+- daesung-errorcode-list-not-found (daesung_daesung-celtic-boiler-error.json ↔ 에러코드_daesung-celtic-boiler.json)
 
-### cautionSource 누락 (caution에 수치·연식·코드가 있는데 근거 없음) (17)
+### cautionSource 누락 (caution에 수치·연식·코드가 있는데 근거 없음) (20)
 
+- coolant-check-topup-weakens (common_winter-car-prep-checklist.json)
+- winter-tread-1_6mm-unverified (common_winter-car-prep-checklist.json)
+- bt-usb3-interference (microsoft_windows-bluetooth-selfcheck.json)
 - fridge-efficiency-purchase-guidance (공통_fridge-energy-efficiency.json)
 - refurbished-inspection-checklist (공통_refurbished-open-box-guide.json)
 - secondhand-appliance-availability-of-as (공통_second-hand-appliance-guide.json)
@@ -116,6 +120,41 @@
 
 | 신고자 | 대상 팩트 | 문제 | 근거 |
 |---|---|---|---|
+| 아이폰 iOS 업데이트가 멈추거나 실패할 때 (무선 업데이트 → 컴퓨터 업데이트 → 복구 모드 순) | `iphone-recovery-mode-data` | source_url(support.apple.com/en-us/118106)의 원문에는 '복원은 iOS를 재설치하고 데이터를 전부 지운다'와 '업데이트를 먼저 시도하라'만 있고, 복구 모드에서 '업데이트'를 선택했을 때 데이터가 유지된다는 문장은 없다. 기존 팩트의 '업데이트 선택 시 데이터 유지' 부분은 출처와 대조되지 않는다. | 2026-11-03 WebFetch로 en-us/118106 원문 확인. 'Restore reinstalls iOS and erases all your data.' 문장만 확인됐고 Update의 데이터 처리 문장은 없음. 재확인 필요. |
+| 난방은 되는데 온수가 안 나올 때 보일러 점검 순서 (온수 설정·수전·재기동·겨울철 동파 의심·계량기·AS 기준) | `rinnai-hotwater-no-output-checklist` | claim에 '수도꼭지 출수량을 줄여 온수 여부를 재확인'하는 단계가 있으나, 2026-11-03 재확인한 원문(home.adsensekor.com/328)에는 출수량을 줄이라는 안내가 없고 오히려 '온수 꼭지를 완전히 열어라'라고 되어 있다. 해당 단계는 원문 근거가 없다 | https://home.adsensekor.com/328 (2026-11-03 열람, 원문 단계: 온수 꼭지 완전 개방 → 급수 밸브 → 전원 5분 리셋 → 온도조절기 → 동결 확인 → 필터·배관) |
+| 난방은 되는데 온수가 안 나올 때 보일러 점검 순서 (온수 설정·수전·재기동·겨울철 동파 의심·계량기·AS 기준) | `rinnai-customer-center` | source_url(https://www.rinnai.co.kr/service/as_accept.asp)이 2026-11-03 열람 시 HTTP 404. 또한 블로그마다 대표번호가 1544-3139 또는 1544-3651로 엇갈린다. 번호를 단정하는 근거가 현재 확인되지 않는다 | WebFetch 2026-11-03: 404 Not Found. 검색 결과 블로그 2곳이 서로 다른 대표번호 제시(실속생활백서 기사 등 교차 확인 필요) |
+| 보일러에서 물 끓는 소리·쿵쿵 소리가 날 때 소음 종류별 원인과 자가 판별 | `pressure-drop-gas-smell-stop-first` | 출처를 린나이 설명서 PDF로 적었으나, 이번 조사에서 같은 PDF를 열었을 때 본문 텍스트를 읽지 못했다. 검색 요약 단계의 문장이 원문 확인 없이 기록됐을 가능성이 있다. | rhpa2.rinnai.co.kr 설명서 PDF WebFetch 결과: 본문 텍스트가 추출되지 않아 소음·가스 냄새 문장을 확인할 수 없었음(2026-11-03 조회). |
+| 엔진 경고등(엔진 점검 경고등) 점등 시 주행 가능 여부 판단과 자가 점검 | `jumpstart-cable-order` | 공통_as-safety-baseline.json 의 source_url(기아 오너스매뉴얼 점프 스타트 페이지)이 2026-11-03 점검 시 HTTP 404 를 반환함. 링크 사망 가능성. | WebFetch 결과: The server returned HTTP 404 Not Found (ownersmanual.kia.com/docview/webhelp/Kia/16f1ac02-6c37-4173-910f-9c968f6a0540/topics/t01128.html). 일시 장애일 수 있으니 재확인 필요. |
+| 일산화탄소 경보기 울림 시 대처와 겨울철 점검 (설치 위치·수명·시험·중독 증상·119 대처) | `gas-range-incomplete-combustion-carbon-monoxide-hazard` | source 명칭 '안전 안내 및 공식 자료'는 기관명이 아니고 source_url이 다음 뉴스 집계(v.daum.net) 도메인이다. 공식 귀속이 성립하지 않아 evidence '공식'과 불일치한다. | 이번 조사에서 소방청 일산화탄소 중독사고 페이지(https://www.nfa.go.kr/nfa/safetyinfo/lifesafety/stats)가 같은 증상 목록을 공식으로 확인해 주므로, 출처를 소방청 페이지로 교체하는 것을 권장한다. |
+| 일산화탄소 경보기 울림 시 대처와 겨울철 점검 (설치 위치·수명·시험·중독 증상·119 대처) | `kyungdong-co-detector-mandatory` | source 명칭은 '가스보일러 안전 규제'로 기관명이 아니고 source_url은 khan.co.kr 기사다. 2020.08.05 적용 시점의 1차 근거(법령 개정 고시 원문)가 여기에 없다. | 이투뉴스 2020.07.21 보도(https://www.e2news.com/news/articleView.html?idxno=224445)는 2020년 8월부터 제조·수입자 경보기 설치 의무를 보도한다. 날짜 근거를 이 보도 또는 법제처 원문으로 교체할 것을 권장한다. |
+| 고속충전이 안 되고 충전이 느릴 때 케이블·어댑터·포트부터 점검 (갤럭시·아이폰·아이패드 공식 안내 기준) | `ipad-slow-charging-with-low-wattage-adapter` | Apple 125066 원문에서 7.5W 임계값 문구를 확인하지 못했다. 원문은 iPad Pro(M5) 기준으로 60W 이상 USB-C 어댑터를 안내한다. | https://support.apple.com/en-us/125066 직접 열람(2026-11-03): 'a USB-C compliant, 60W or higher power adapter' |
+| 고속충전이 안 되고 충전이 느릴 때 케이블·어댑터·포트부터 점검 (갤럭시·아이폰·아이패드 공식 안내 기준) | `ipad-slow-charger-notification` | Apple 125066 원문에 'Slow Charger' 설정 알림 안내가 없다. | https://support.apple.com/en-us/125066 직접 열람(2026-11-03): 알림 관련 문구 없음 |
+| 고속충전이 안 되고 충전이 느릴 때 케이블·어댑터·포트부터 점검 (갤럭시·아이폰·아이패드 공식 안내 기준) | `charging-port-debris-cleaning` | 손전등 확인·공기 분사 방법은 원문에 없다. 원문은 '부드러운 솔로 충전 단자에 낀 이물질을 제거'만 명시한다. | https://www.samsungsvc.co.kr/solution/37809 직접 열람(2026-11-03) |
+| 히터를 처음 켰을 때 나는 냄새 — 정상 먼지 타는 냄새와 위험한 타는 냄새 구분, 즉시 중단 신호, 청소 방법 | `burning-smell-dust-combustion` | 후기(커뮤니티 경험담) 근거인데 tier를 확실로 표기했고, '1~2시간 사용으로 사라진다'는 수치가 caution에 붙어 있으나 cautionSource가 공식 원문이 아니다. | 이번 조사에서 milemoa 원문을 열어 확인하지 못했다. 후기는 tier 논쟁 이하로 낮추거나 수치를 제거해야 한다. |
+| 난방기구 안전하게 쓰는 법 — 화재·저온화상 예방 (전기장판·전기매트류 공식 주의보, 소방청 전기화재 수칙, 가스난로·전기히터 공식 수칙 확보 실패 기록) | `rated-capacity-15a-3300w` | source 명칭은 '소방청·전기안전공사 화재 예방 안내'인데 source_url은 뉴스 기사(news.sbs.co.kr)다. 기관 문서 도메인과 불일치해 출처 세탁 소지가 있다. | 이번 조사에서 해당 URL 원문을 열어 기관 문서 여부를 확인하지 못했다(도메인 기준 신고). |
+| 난방기구 안전하게 쓰는 법 — 화재·저온화상 예방 (전기장판·전기매트류 공식 주의보, 소방청 전기화재 수칙, 가스난로·전기히터 공식 수칙 확보 실패 기록) | `heater-power-check-order` | evidence를 '공식'으로 표기했으나 source_url은 nosearch.com(비공식 정보 사이트)이다. 제조사·기관 문서가 아니다. | 이번 조사에서 해당 URL 원문 대조는 하지 않았다(도메인 기준 신고). 같은 도메인을 근거로 한 heater 계열 팩트 전체 재확인이 필요하다. |
+| 전자레인지에서 불꽃(스파크)이 튈 때, 바로 멈추고 확인할 것 | `microwave-spark-metal-trim-food` | 기존 팩트는 과자·라면의 선도유지제 안 철 입자가 스파크를 낸다고 적었으나, 인용된 삼성 공식 페이지는 캔 음식·냉동식품 등 음식물에 섞인 금속 입자를 말할 뿐 과자·라면 선도유지제는 언급하지 않는다. | https://www.samsung.com/ae/support/home-appliances/what-to-do-if-my-samsung-microwave-is-sparking-during-operation (음식물 찌꺼기 중 금속 입자, 캔 음식·냉동식품 예시) |
+| 전자레인지에서 큰 소음이 나거나 접시(턴테이블)가 안 돌 때 자가 점검 | `microwave-turntable-not-rotating-bearing-damage` | 기존 팩트는 회전이 전혀 안 되면 회전 축 베어링(커플러)이나 운모판이 손상되었을 가능성이 높다고 적고, 출처로 삼성 solution/24832를 들었다. 해당 페이지를 열어 확인하니 베어링·운모판·커플러 문구가 없고 회전판 이물질과 회전축 장착 확인만 있다. | https://www.samsungsvc.co.kr/solution/24832 (회전판 이물질, 회전 받침과 회전축 장착 확인, 출장서비스 예약 안내만 확인됨) |
+| 전자레인지에서 큰 소음이 나거나 접시(턴테이블)가 안 돌 때 자가 점검 | `microwave-never-disassemble-warning` | 기존 팩트는 분해·수리 금지를 삼성·LG 공식 자가점검 안내로 적고 출처로 solution/24832를 들었다. 해당 페이지를 열어 확인하니 분해 금지 문구가 없다. 출처를 실제로 확인된 문서로 바꾸거나 해당 문구가 있는 공식 문서를 다시 찾아야 한다. | https://www.samsungsvc.co.kr/solution/24832 (분해 관련 문구 없음 확인). 같은 날 solution/41149도 열었으나 분해 문구는 없고 '전원 차단'과 '출장서비스 예약'만 있음 |
+| 스마트폰 화면이 켜지지 않을 때 고장 전에 확인할 것 (배터리 방전·강제 재시작·충전기/케이블·침수·데이터 보호) | `water-damage-saltwater-freshwater-rinse` | 헹굼 시간이 1분 이내로 적혀 있으나 삼성 공식 원문은 IP 방수 기기에 대해 깨끗한 흐르는 물로 1~3분 헹굼을 안내한다. 또 비방수 기기는 헹구지 않고 전원 차단·유심/SD 분리·마른 천 건조·서비스센터 방문을 안내한다. 기기 등급 구분 없이 바닷물·수영장 물을 일괄 헹굼 대상으로 쓰면 비방수 기기에 물을 한 번 더 끼얹는 결과가 된다. | https://www.samsungsvc.co.kr/solution/23262 (2026-11-03 직접 열람 확인) |
+| 스마트폰 화면이 켜지지 않을 때 고장 전에 확인할 것 (배터리 방전·강제 재시작·충전기/케이블·침수·데이터 보호) | `water-damage-service-center-timing-1-5m-30min` | caution 의 cautionSource 가 '삼성 공식 기준'이라고 적혀 있으나 source 는 SKT 고객지원 뉴스(news.sktelecom.com)다. 삼성 공식 물손상 안내(solution/23262)에는 1.5m·30분 기준이 없었다. 출처 귀속을 바로잡거나 원문을 찾을 때까지 사용 보류를 권한다. | https://www.samsungsvc.co.kr/solution/23262 본문 대조(2026-11-03), https://news.sktelecom.com/43009 원 출처 귀속 확인 필요 |
+| 스마트폰 사진이 자꾸 흐리게 찍힐 때 자가 점검 (렌즈 오염·보호필름/케이스·근접 초점·결로·하드웨어 판별·AS) | `camera-lens-cleaning-method` | 기존 팩트(출처 support.apple.com/en-us/102514 인용)는 '물이나 알코올 사용 금지'라고 했다. 이번에 열어본 Apple 공식 문서 support.apple.com/en-us/101967 는 'soft, slightly damp, lint-free cloth'(약간 젖은 천)을 권하고, 압축공기·표백제·과산화수소 제품만 금지한다. 두 문서가 어긋나므로 102514 원문을 재확인해 판정 필요. | https://support.apple.com/en-us/101967 (2026-11-03 확인, Lens Cleaning 항목) |
+| 타이어 공기압 경고등(TPMS)이 안 꺼질 때 확인할 것 — 점등·점멸 구분, 공기압 보충 후에도 켜질 때, 센서 문제 판별, 공식 안내 기준 | `tpms-warning-threshold` | 국내 TPMS 경고 기준을 '콜드 공기압보다 25% 이상 낮을 때'라고 적었고 출처를 국토교통부 정책자료로 달았다. 해당 molit URL은 열리지 않고(리다이렉트 루프) 원문 확인이 안 된다. 국내 법령 원문은 20% 감소 기준이다. | law.go.kr 자동차안전기준에 관한 규칙 별표 6(성능기준): 1개 타이어 운행공기압 20% 감소 또는 150kPa 중 큰 값에 도달 후 10분 누적주행 이내 점등, 4개 타이어 20% 감소 후 60분 이내 점등. 페이지 본문에 25% 문구 없음. 25%는 미국 FMVSS 138 설명(검색 요약)에 나온다. |
+| 세탁 후 옷에 세제 찌꺼기가 남을 때 원인과 해결 (세제 과다·세탁물 과다·헹굼·세제함 막힘·통세척, 삼성/LG 공식 안내 기준) | `excess-detergent-no-enhanced-cleaning` | source 39075 원문에서 '권장량 이상 넣어도 세척력이 향상되지 않는다'는 문구가 확인되지 않음. caution의 '4~5배, 최대 20배' 수치가 출처 식품레시피(후기)인데 cautionSource가 '식품레시피'라 공식 근거처럼 읽힐 수 있음 | https://www.samsungsvc.co.kr/solution/39075 를 2026-11-03 열람. 원문은 권장량 준수, 거품 시 양 감량, 일반 세제 1/2~1/3 사용을 말하며 세척력 문구는 없음 |
+| 코웨이 정수기 물 안 나옴·에러 표시 자가점검 (출수 불량·냉온수·누수 안전·방문 관리 연결) | `coway-hot-water-heating-time` | source_url(theking.ggudol.com/235) 원문에 '5분 후 미지근, 30분 후 완전히 뜨거운 물'이라는 문장이 없다. 원문은 '저수조형 정수기는 온수 기능을 켠 후 약 30분 정도 기다린 후 온수가 나오는지 확인한다'만 말한다. 5분 미지근 수치와 '직수형 등 전 모델 정상'이라는 scope는 출처와 대조되지 않는다. | 2026-11-03 WebFetch로 theking.ggudol.com/235 원문 확인. 30분 기준은 저수조형 한정 문장으로 확인됨. 5분 수치는 원문에서 찾지 못함. |
+| 코웨이 정수기 물 안 나옴·에러 표시 자가점검 (출수 불량·냉온수·누수 안전·방문 관리 연결) | `coway-leak-detection-error-e01` | source_url(product-repair.com/...E01 글)이 2026-11-03 조회에서 404. 'E01은 누수 감지 에러이며 원인은 대부분 밸브 노후'라는 claim을 원문으로 재확인할 수 없다. 출처 없는 에러 의미가 전파되지 않도록 재확인 필요. | 2026-11-03 WebFetch 결과 HTTP 404. 같은 도메인의 다른 글(온수 문제 글)도 'E01'을 언급하지 않음. |
+| 코웨이 정수기 물 안 나옴·에러 표시 자가점검 (출수 불량·냉온수·누수 안전·방문 관리 연결) | `coway-customer-center-1588-5200` | source 'coway.com 고객센터 안내'의 원문(coway.com/cowayservice/water_care)에는 대표전화 1588-5200(유료), 긴급상담 365일 24시간, 자가교체 불가 시 유상 필터교체 신청 문구만 있다. '계약·AS·부품 신청·기술 상담 모두 통합 접수'와 '렌탈샵 별도 문의는 대리점 안내 후 진행'은 원문에서 확인되지 않는다. | 2026-11-03 WebFetch로 water_care 원문 확인. 확인된 범위만 신규 팩트로 재작성. |
+| 귀뚜라미 가정용 보일러 에러코드 의미와 사용자 점검 범위 (AD 2자리 계열 · E+3자리 신형 계열) | `kiturami-errorcode-list-not-found` | 이전 확인실패(코드표 없음)는 kiturami.co.kr 보도자료·점검 안내만 본 결과다. 귀뚜라미보일러 공식 사이트(krb.co.kr)의 자가진단매뉴얼에 모델별 에러코드 표가 있음을 확인했다. 확인실패는 해제한다. | https://krb.co.kr/self/192 ; https://krb.co.kr/self/26588 ; https://krb.co.kr/self/26605 ; https://krb.co.kr/self/26612 (2026-11-03 열람, 요약 도구 경유) |
+| 화상회의에서 마이크 소리가 안 들릴 때 점검 (Windows 11 마이크 권한·입력 장치·음소거 → 화상회의 앱 설정 순서) | `usb-mic-echo-disable-enhancements-windows` | 출처로 적힌 Microsoft 'Fix microphone problems' 문서에 Enhancements 탭 안내가 확인되지 않음(2026-11-03 원문 요약 조회 기준). | https://support.microsoft.com/en-us/windows/fix-microphone-problems-5f230348-106d-bfa4-1db5-336f35576011 — 권한·입력 장치·테스트·장치 관리자 절차만 있고 Enhancements 언급 없음. 요약 조회 기반이므로 총괄이 재확인 권장. |
+| 화상회의에서 마이크 소리가 안 들릴 때 점검 (Windows 11 마이크 권한·입력 장치·음소거 → 화상회의 앱 설정 순서) | `usb-mic-gain-adjustment-slider-position` | Levels 탭·Microphone Boost 안내가 같은 MS 문서의 Windows 10 섹션에만 있고, Windows 11 섹션에는 보이지 않음. scope를 Windows 10으로 한정해야 함. | https://support.microsoft.com/en-us/windows/fix-microphone-problems-5f230348-106d-bfa4-1db5-336f35576011 (2026-11-03 원문 요약 조회 기준). Windows 11 입력 음량은 설정 > 시스템 > 소리 > 입력의 'Input volume' 슬라이더로 안내됨. |
+| 윈도우 블루스크린이 뜰 때, 오류 코드로 원인 좁히기 | `disk-space-15-percent-boot-requirement` | 원문은 여유 공간 10~15%를 '있으면 좋다(a good idea)'로 안내하며 정상 작동의 필수 조건이라고 하지 않는다. 기존 팩트의 '있어야 Windows가 정상 작동한다'는 표현은 과장이다 | Microsoft Support 'Troubleshooting Windows unexpected restarts and stop code errors' 페이지의 Insufficient free space 행 원문 직접 확인(2026-11-03) |
+| 윈도우 업데이트 실패·무한 대기 해결 순서 (Microsoft 공식 문제 해결 기준) | `공통_windows-boot-selfcheck.json:disk-space-15-percent-boot-requirement` | '시스템 드라이브 10~15% 이상이 있어야 Windows가 정상 작동한다'는 필수 요건처럼 서술했다. 공식 원문은 '10~15% 여유 공간을 두는 것이 좋다'이고, 드라이브 일반 기준이다. | https://support.microsoft.com/en-US/Windows/Experience/Performance-Optimization/troubleshooting-windows-unexpected-restarts-and-stop-code-errors (2026-11-03 열람: 'it's a good idea to have 10% to 15% of free space available', 'the hard drive') |
+| 윈도우 업데이트 실패·무한 대기 해결 순서 (Microsoft 공식 문제 해결 기준) | `공통_windows-boot-selfcheck.json:boot-device-not-found-bios-check` | 출처 라벨 'Microsoft Learn - Windows Boot Configuration'과 인용 URL(support.microsoft.com 복구 옵션 문서)이 맞지 않는다. 해당 URL에서 BIOS 부팅 순서 내용을 확인하지 못했다. | https://support.microsoft.com/en-US/Windows/Experience/Backup-Recovery/recovery-options-in-windows (2026-11-03 열람: WinRE 복구 옵션과 업데이트 제거 내용만 있고 BIOS 부팅 순서 설명은 없음) |
+| 갤럭시 저장공간이 부족할 때 정리하는 순서 (기기 케어 확인 → 백업 먼저 → 휴지통·대용량·미사용 앱 → 캐시 → 클라우드 이동, 안 되면 공식 접수) | `galaxy-update-storage-cleanup-path` | Clean now의 위치와 기능이 공식 원문과 다르다. 삼성 PH·AE 공식 페이지는 Clean now를 설정 > 디바이스 케어 > 메모리에 두고 '사용 중이 아닌 앱을 정리해 메모리를 확보'하는 기능으로 설명한다. Storage 메뉴에 Clean now가 있다는 근거는 찾지 못했다. 이 팩트의 '저장공간 확보 경로'로 쓰면 독자가 잘못된 메뉴를 찾게 된다. | https://www.samsung.com/ph/support/mobile-devices/how-to-remove-unnecessary-files-and-close-background-apps-on-your-samsung-galaxy-phone/ (메모리 > Clean now = 앱 종료, 파일 삭제 언급 없음) / https://www.samsung.com/ae/support/mobile-devices/what-is-the-device-care-feature-in-galaxy-smartphones (Memory: 'stop background apps using the Clean now option') |
+| 삼성 공기청정기 필터 교체 표시·풍량 약함 자가점검 | `samsung-filter-sensor-bluesky-status-bar` | 블루스카이 필터 센서가 실제 필터 오염 상태로 게이지를 표시한다는 주장은 삼성 공식 교체 안내(samsungsvc solution/37595)와 충돌한다. 해당 안내는 최근 제품의 교체 램프가 실내·필터 오염도와 무관하게 사용시간 기준으로 켜진다고 적고 있다. 인용 출처인 Samsung Newsroom 기사는 이번 조사에서 두 차례 접속 시간 초과로 열지 못했다. 센서 주장을 다음 글에 쓰기 전에 기사 원문 확인이 필요하다. | https://www.samsungsvc.co.kr/solution/37595 (2026-11-03 열람: 교체 램프는 실내나 필터의 오염도와 무관하며 사용시간에 따라 켜지는 알람 기능이라고 명시) |
+| 삼성 TV 리모컨 반응 없음 — 배터리부터 페어링까지 자가점검 (스마트 리모컨 기준) | `tv-remote-battery-check` | source_url(https://www.samsungsvc.co.kr/solution/40598)을 재확인했을 때 리모컨 배터리·극성·USB-C·솔라 충전 절차가 없었다. 출처 귀속이 맞지 않는다. | 2026-11-03 WebFetch 결과 40598은 'TV 전원이 켜지지 않을 때' 점검과 콘센트·전원코드 확인만 담고 있었음. 배터리 내용은 solution/118823 및 solution/1484964 에 있음. |
+| 삼성 TV 리모컨 반응 없음 — 배터리부터 페어링까지 자가점검 (스마트 리모컨 기준) | `tv-cold-boot-restart` | '전원 코드 분리 후 30초 이상 대기'라는 수치가 삼성전자서비스 콜드 부팅 안내(solution/1014650)의 60초 기준과 다르다. 또한 cautionSource로 든 40598 재확인 시 콜드 부팅 내용이 없었다. | 2026-11-03 WebFetch solution/1014650: '2017년 이전 구입 TV는 리모컨으로 콜드 부팅이 되지 않음. 전원 버튼으로 끈 뒤 뒷면 전원 케이블 분리, 약 60초 대기' / '더 프레임은 전원 코드 분리 후 60초'. 일반 모델은 리모컨 전원 버튼 5초 이상 누르기. |
+| 삼성 TV 리모컨 반응 없음 — 배터리부터 페어링까지 자가점검 (스마트 리모컨 기준) | `tv-power-led-indicator-check` | source_url(solution/40598)에서 LED 표시등 위치·IR 카메라 판별 내용을 확인하지 못했다. 출처 재귀속이 필요하다. | 2026-11-03 WebFetch solution/40598 결과에 LED·카메라 판별 내용 없음. 같은 내용은 solution/118823에서 확인됨. |
 | 실내 결로 발생 원인과 환기·단열을 통한 예방 | `ventilation-reduces-indoor-humidity` | 출처 URL(blog.energy.or.kr)이 DNS NXDOMAIN 이다. 한국에너지공단이 블로그 서브도메인을 없앴다. 하루 10~30분 환기 권장 수치의 근거가 사라졌다. | dns.google/resolve Status 3 (NXDOMAIN) · www.energy.or.kr 는 정상(200) · 2026-08-11 확인 |
 | CJ올리브영 올영세일 — 11월·12월 회차 연도별 기간·연말 혜택·사전 쿠폰 (세일 달력 행사별 항목) | `oliveyoung-dec-2025-period` | 기간 시작 월을 '11월 30일'로 확정 표기했으나 CJ 공식 보도자료 원문은 '오는 30일부터 12월 6일까지'로만 쓰고 시작 월을 명시하지 않는다. 11월은 발표일(11월 28일) 기준 추론이다. 더 정밀하게 쓰지 말고 '30일부터 12월 6일까지(발표 2025-11-28)'로 인용해야 한다. | CJ올리브영 뉴스룸 보도자료 2025-11-28 (https://cjnews.cj.net/%eb%aa%a8%eb%91%90%ea%b0%80-%ec%82%ac%eb%9e%91%ed%95%9c-%ec%a0%9c%ed%92%88%ec%9d%84-%eb%aa%a8%eb%91%90%ea%b0%80-%ec%82%ac%eb%9e%91%ed%95%a0-%ed%98%9c%ed%83%9d%ec%9c%bc%eb%a1%9c-cj/) 본문: '오는 30일부터 12월 6일까지 진행하는 올영세일' |
 | 경정청구(이미 낸 세금을 잘못 낸 경우 환급·감액 청구) — 신청·환급 달력 웨이브4 | `amended-return-claim-5year-from-deadline` | 제1항 본문의 대상이 "법정신고기한까지 과세표준신고서를 제출한 자"로만 적혀 있으나, 같은 본문은 "제45조의3제1항에 따른 기한후과세표준신고서를 제출한 자"도 포함한다. 팩트 문장이 대상을 축약하면서 기한후신고자가 빠졌다. 기간(법정신고기한 후 5년)은 맞다. | https://www.law.go.kr/법령/국세기본법/제45조의2 제1항 본문 원문(시행 2026.10.2.), 2026-10-27 재열람 확인 |
@@ -128,9 +167,9 @@
 
 ## 통계
 
-- 확신도: 확실 6428 · 논쟁 344 · 확인실패 491
-- 근거: 공식 6117 · 후기 917 · 실측 227
-- **순차 대안 톤 대상: 1096개** (tier=논쟁 또는 evidence=후기 → "먼저 해보고 안 되면" 서술 필수)
+- 확신도: 확실 7329 · 논쟁 449 · 확인실패 586
+- 근거: 공식 7051 · 후기 1072 · 실측 239
+- **순차 대안 톤 대상: 1271개** (tier=논쟁 또는 evidence=후기 → "먼저 해보고 안 되면" 서술 필수)
 
 ## 11번가
 
@@ -385,6 +424,28 @@
 | `lg-smart-assistant-usage-mode-settings` | 확실 | 공식 | LG Smart Assistant 앱에서는 사용 목적에 맞는 프리셋 모드(공부, 업무, 영화, 야외 등)를 제공하며, 각 모드는 화면 밝기, 냉각 모드, 전원 설정 등을 자동으로 최적화한다 | LG / 노트북 / 그램 전체 / 2022.04~현행 / KR |
 | `lg-gram-customer-center-phone` | 확실 | 공식 | LG 그램 노트북의 모든 자가점검 절차로도 해결되지 않는 문제는 LG 고객센터 1544-7777로 연락하여 상담, 출장 서비스, 센터 방문 중 선택하여 전문 점검을 받을 수 있다 | LG / 노트북 / 그램 전체 / 현행 판매 모델 / KR |
 
+### LG 김치냉장고 에러 표시·냉각 불량·성에 자가점검 (김치톡톡 명칭은 공식 자료에서 확인 실패) <sub>2026-11-03 · lg-kimchi-fridge-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `lg-kimchi-model-name-kimchitoktok-unverified` | 확인실패 | 공식 | LG 김치냉장고 에러코드 유형 공식 페이지와 냉기 약해요 페이지에는 '김치톡톡' 모델명이 나오지 않으며, 모델별 코드·조작 차이는 본인 제품 사용설명서나 고객센터 확인을 안내한다 | LG / 김치냉장고 / 김치톡톡 명칭(공식 자료 미확인) / 조회 시점 현행 안내 / KR |
+| `lg-kimchi-error-code-categories` | 확실 | 공식 | LG 김치냉장고 에러코드는 팬 모터 이상(CF·LF·rF·UF·FF), 제상 불량(dH·H1·H2), 서비스 접수가 필요한 코드(CO·nC·Od·F1·F2·US·LS·FS·d1·d2·E1·E2)로 나뉘며, 팬·제상 코드는 자가 해결 절차가 안내되고 나머지는 자가 해결 방법 없이 서비스 접수가 안내된다 | LG / 김치냉장고 / 뚜껑식·스탠드형 공통 안내 / 조회 시점 현행 안내 / KR |
+| `lg-kimchi-ff-lf-position-conflict` | 논쟁 🔶 | 공식 | LG 김치냉장고 FF·UF·LF·rF 코드의 칸 위치 표기는 페이지마다 다르다. 에러코드 유형 표는 FF를 중칸 팬, LF를 좌측 팬으로 적고, 스탠드형 FF·UF 페이지는 FF를 상칸(냉동실), UF를 중하칸으로, LF·rF 페이지는 상칸 좌우로 적는다 | LG / 김치냉장고 / 스탠드형(FF·UF·LF·rF 페이지 기준) / 조회 시점 현행 안내 / KR |
+| `lg-kimchi-fan-error-frost-24h-thaw` | 확실 | 공식 | LG 김치냉장고 Er(E) FF·UF 팬 모터 에러는 팬 주변에 얼음(성에)이 생겨 모터가 돌지 못하는 경우가 많으며, 전원 코드를 분리하고 모든 문을 열어 최소 24시간 이상 자연 해동하는 것이 공식 자가 해결 방법이다 | LG / 김치냉장고 / 스탠드형 FF·UF 에러 / 조회 시점 현행 안내 / KR |
+| `lg-kimchi-fan-error-lf-rf-door-check` | 확실 | 공식 | LG 김치냉장고 Er(E) LF·rF 팬 모터 에러는 좌측·우측 칸 팬 주변 성에로 모터가 돌지 못하는 것이 원인이며, 해당 칸 문이나 인접 문이 덜 닫혀 외부 공기가 들어오는 경우가 가장 많다 | LG / 김치냉장고 / 스탠드형 LF·rF 에러 / 조회 시점 현행 안내 / KR |
+| `lg-kimchi-cf-error-self-reset-limit` | 확실 | 공식 | LG 김치냉장고 Er(E) CF(기계실 팬 모터 이상)는 전원을 껐다 켜면 일시적으로 사라지지만 약 3시간 뒤 다시 나타날 수 있고, 배선 단선이나 메인보드 문제로도 생길 수 있으며, 반복되면 서비스 접수가 필요하다 | LG / 김치냉장고 / 기계실 팬(CF) / 조회 시점 현행 안내 / KR |
+| `lg-kimchi-ch-cl-cooling-error-steps` | 확실 | 공식 | LG 냉장고 Er(E) CH·CL은 냉각 성능 부족이나 내부 온도 이상을 감지했을 때 뜨며, 원인으로 냉매 부족·누출, 압축기·밸브 등 내부 사이클 부품 문제, 장시간 열어둔 문이 제시된다. 자가 해결은 문을 완전히 닫고 식을 때까지 기다린 뒤 플러그를 5분 뽑았다 다시 꽂는 것이다 | LG / 냉장고 / 김치냉장고 적용 여부 본문 미명시(일반 냉장고 페이지) / 조회 시점 현행 안내 / KR |
+| `lg-kimchi-ch-cl-after-repair-24h` | 확실 | 공식 | LG 냉장고 CH·CL은 수리 후 냉동실 온도가 -10℃ 이하로 내려가지 않았을 때 나타날 수 있어, 약 24시간 작동시켜 냉기를 순환시키라고 안내된다. 24시간 후에도 계속되면 고객센터 문의가 필요하다 | LG / 냉장고 / 수리 후 재가동 / 조회 시점 현행 안내 / KR |
+| `lg-kimchi-cooling-weak-storage-function` | 확실 | 공식 | LG 김치냉장고 냉기가 약할 때는 익은 김치를 익힘 기능이 아닌 맛지킴김치나 오래보관 같은 보관 기능으로 설정해야 하며, 보관 기능이 익힘 기능보다 온도가 낮게 설정된다 | LG / 김치냉장고 / 온도 기능(맛지킴김치·오래보관·익힘) / 조회 시점 현행 안내 / KR |
+| `lg-kimchi-cooling-weak-compartment-power-off` | 확실 | 공식 | LG 김치냉장고에서 일부 칸이 '전원 꺼짐'으로 표시되면 해당 칸의 기능을 켜야 냉기가 나오며, 칸 버튼은 맛지킴김치 → 야채/과일 → 쌀/잡곡 → 육류/생선 → 오래보관 → 하칸 꺼짐 순으로 바뀐다(일부 모델 한정) | LG / 김치냉장고 / 하칸 등 칸 단위 기능(일부 모델) / 조회 시점 현행 안내 / KR |
+| `lg-kimchi-frost-1cm-removal-steps` | 확실 | 공식 | LG 뚜껑식 김치냉장고에서 안쪽 성에가 1cm 이상으로 두꺼워지면 냉기 전달이 나빠져 김치가 빨리 시어질 수 있으며, 제거는 잠금 해제 → 해당 칸 전원 3초 이상 끔 → 성에가 녹을 때까지 대기 → 칸 안 물기 닦기 → 전원 3초 이상 켜기 순서로 한다 | LG / 김치냉장고 / 뚜껑식 / 조회 시점 현행 안내 / KR |
+| `lg-kimchi-frost-no-time-stated-procedure` | 확인실패 | 공식 | LG 뚜껑식 김치냉장고 성에 제거 안내에는 구체적인 해동 시간이 적혀 있지 않으며, 성에가 녹을 때까지 기다리라고만 안내되어 있다 | LG / 김치냉장고 / 뚜껑식 성에 제거 / 조회 시점 현행 안내 / KR |
+| `lg-kimchi-frost-prevention-habits` | 확실 | 공식 | LG 김치냉장고 성에를 줄이려면 뜨거운 음식은 충분히 식혀 넣고, 수분이 많은 식품은 밀폐용기나 비닐 백에 담으며, 문이 완전히 닫히는지 확인하고, 과도한 식품은 덜어내야 한다. 장시간 정전 후 재가동하면 공기 온도 차로 성에가 생길 수 있다 | LG / 김치냉장고 / 뚜껑식 / 조회 시점 현행 안내 / KR |
+| `lg-kimchi-install-cold-delay` | 확실 | 공식 | LG 김치냉장고는 전원을 꽂은 뒤 약 3~4시간이 지나야 냉기가 나오기 시작하며, 여름에는 내부를 차갑게 채우는 데 2~3일이 걸릴 수 있다 | LG / 김치냉장고 / 설치 직후 / 조회 시점 현행 안내 / KR |
+| `lg-kimchi-power-outage-recovery-24-48h` | 확실 | 공식 | LG 스탠드 김치냉장고는 성에 해동 후 전원을 다시 연결하면 내부 온도가 정상으로 돌아오기까지 약 24~48시간이 걸린다 | LG / 김치냉장고 / 스탠드형 해동 후 재가동 / 조회 시점 현행 안내 / KR |
+| `lg-kimchi-dh-h1-h2-defrost-error` | 확실 | 공식 | LG 김치냉장고 Er(E) dH(제상 불량)는 성에 제거 후 일정 시간이 지나도 제상센서 온도가 정상 범위에 들지 않을 때 뜨며, 좌칸은 H1, 우칸은 H2로 표시된다. 자가 해결은 성에 제거 절차를 따르고, 지속되면 서비스 접수다 | LG / 김치냉장고 / 제상(dH·H1·H2) / 조회 시점 현행 안내 / KR |
+| `lg-kimchi-service-contact` | 확실 | 공식 | LG전자 고객센터(구매·서비스·구독) 번호는 1544-7777이며 평일 09:00~18:00, 주말·공휴일은 휴무다. 제품·서비스 긴급 문의는 24시간 운영된다고 안내되어 있고, 출장 서비스는 LG 고객지원의 출장 서비스 예약 페이지에서 접수한다 | LG / 김치냉장고 / 전 모델 공통 고객센터 / 조회 시점 현행 안내 / KR |
+
 ### LG TV 화면 안 나옴·신호없음·전원 문제 자가점검 <sub>2026-07-21 · lg-tv-error</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -446,6 +507,86 @@
 | `lg-styler-steam-operation-moisture-residue` | 확실 🔶 | 후기 | LG 스타일러 스팀이 제대로 나오지 않을 때는 급수통에 물이 충분히 있는지 확인하고, 필터 및 물통이 깨끗한 상태인지 점검해야 한다. 필터가 막혀있거나 물통 입/출수 노즐이 막혀있으면 스팀 분사가 제대로 이루어지지 않을 수 있다 | LG / 의류관리기 / 스타일러 / 전 연식 / KR |
 | `lg-styler-humidity-sensor-dust-removal` | 확실 | 공식 | LG 스타일러 습도 센서는 의류의 습기 상태를 감지하여 스팀 양을 자동 조절한다. 센서에 먼지가 붙으면 정확한 감지가 불가능하여 건조·냄새 제거·구김 제거 성능이 모두 떨어질 수 있다 | LG / 의류관리기 / 스타일러 / 전 연식 / KR |
 | `lg-styler-dehumidification-door-position` | 확실 | 공식 | LG 스타일러 제습 코스 사용 시에는 도어를 45도 가량 열어놓은 채 작동시켜야 한다. 도어를 완전히 닫으면 내부의 수증기가 배출되지 않아 제습 효과가 떨어진다 | LG / 의류관리기 / 스타일러 / 전 연식 / KR |
+
+## Microsoft
+
+### 화상회의에서 마이크 소리가 안 들릴 때 점검 (Windows 11 마이크 권한·입력 장치·음소거 → 화상회의 앱 설정 순서) <sub>2026-11-03 · laptop-mic-meeting-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `mic-privacy-permission-first` | 확실 | 공식 | 화상회의 앱에서 상대가 내 목소리를 못 들으면 먼저 Windows 설정 > 개인 정보 보호 및 보안 > 마이크에서 '마이크 액세스'와 '앱이 마이크에 액세스하도록 허용'이 켜져 있는지 확인한다. 데스크톱 앱(Zoom·Teams 등 설치형)은 '데스크톱 앱이 마이크에 액세스하도록 허용'을 따로 켜야 한다. | Microsoft / 노트북·PC(Windows) / Windows 11 기준 (설정 메뉴 경로) / Windows 11 기준 / 글로벌 |
+| `mic-input-device-select-sound-input` | 확실 | 공식 | 마이크가 기본 입력 장치로 잡혀 있지 않으면 설정 > 시스템 > 소리의 '입력'에서 쓰는 마이크(헤드셋 포함)를 고른다. 노트북 내장 마이크가 아니라 연결한 헤드셋이 목록에 있으면 그것을 선택한다. | Microsoft / 노트북·PC(Windows) / 내장 마이크·USB·Bluetooth 헤드셋 / Windows 11 기준 / 글로벌 |
+| `mic-mute-check-headset-switch` | 확실 | 공식 | 화상회의 도구 모음에서 마이크 아이콘에 빗금이 있으면 음소거 상태이므로 '마이크 음소거 해제'를 누른다. 헤드셋 붐이나 외장 마이크에 물리 음소거 버튼이 있으면 그것도 꺼져 있는지 확인한다. | Microsoft / 화상회의(Teams)·헤드셋 / 전 플랫폼 공통 점검 항목 / 전 연식 / 글로벌 |
+| `mic-input-test-start-recorded-sample` | 확실 | 공식 | 설정 > 시스템 > 소리 > 입력에서 마이크를 고른 뒤 '입력 설정'의 '시작 테스트(Start test)'를 누르고 말해 본다. 테스트를 멈춘 뒤 '녹음된 샘플'의 재생으로 내 목소리가 들리는지 확인한다. | Microsoft / 노트북·PC(Windows) / Windows 11 기준 / Windows 11 기준 / 글로벌 |
+| `mic-input-volume-slider` | 확실 | 공식 | 마이크 테스트 때 입력 막대가 거의 움직이지 않으면 설정 > 시스템 > 소리 > 입력에서 '입력 볼륨(Input volume)' 슬라이더를 올린 뒤 다시 테스트한다. | Microsoft / 노트북·PC(Windows) / Windows 11 기준 (Input volume 슬라이더) / Windows 11 기준 / 글로벌 |
+| `mic-device-manager-reinstall-last` | 확실 | 공식 | Windows가 마이크를 아예 인식하지 못하면 장치 관리자에서 '사운드, 비디오 및 게임 컨트롤러'를 펼쳐 오디오 장치를 '디바이스 제거'하고, 제거 시 '이 장치의 드라이버 소프트웨어 삭제'를 체크한 뒤 재시작해 Windows가 다시 설치하게 한다. 그래도 안 되면 '하드웨어 변경 사항 검색'을 실행한다. | Microsoft / 노트북·PC(Windows) / 내장·USB·Bluetooth 마이크(인식 자체가 안 될 때) / Windows 11 기준 / 글로벌 |
+| `zoom-desktop-audio-settings-mic-select` | 확실 | 공식 | Zoom 데스크톱 앱에서는 프로필 사진 > 설정 > 오디오 탭에서 '마이크' 드롭다운으로 쓸 마이크를 고르고, 옆의 테스트 버튼으로 확인한다. 입력 볼륨 슬라이더도 같은 화면에 있다. | Zoom / 화상회의 앱(데스크톱) / Zoom 데스크톱 앱 Windows / 문서 시점 기준 / 글로벌 |
+| `zoom-windows-privacy-desktop-apps` | 확실 | 공식 | Zoom 데스크톱 앱에서 마이크가 안 되면 Windows 개인정보 설정의 앱 마이크 권한에서 '앱이 마이크에 액세스하도록 허용'과 '데스크톱 앱이 마이크에 액세스하도록 허용'을 모두 켠다. Zoom 공식 문서는 이 경로를 '개인정보 > 앱 권한 > 마이크'로 안내한다. | Zoom / 화상회의 앱(데스크톱) / Windows 데스크톱 앱 / 문서 시점 기준 / 글로벌 |
+| `teams-device-settings-mic-dropdown` | 확실 | 공식 | Teams에서는 설정 > 장치의 '오디오 설정'에 있는 '마이크' 드롭다운에서 쓸 마이크를 고른다. 회의 중에는 마이크 버튼 옆 화살표를 눌러 '추가 오디오 설정(More audio settings)'에서 같은 장치를 고른다. | Microsoft / 화상회의(Teams 데스크톱) / Teams 데스크톱 앱 / 문서 시점 기준 / 글로벌 |
+| `teams-windows-permission-toggle-restart` | 확실 | 공식 | Teams에서 마이크가 안 되면 설정 > 개인 정보 보호 및 보안 > 앱 권한 > 마이크에서 마이크 액세스, 앱 액세스, Microsoft Teams, 데스크톱 앱 액세스 토글을 켠다. 이미 켜져 있어도 끄고 다시 켠 뒤 모든 앱을 닫고 재시작한다. | Microsoft / 화상회의(Teams 데스크톱) / Windows 데스크톱 Teams / Windows 11 경로 기준 / 글로벌 |
+| `teams-recording-tab-enable` | 확실 | 공식 | Teams에서 마이크 목록에 장치가 보이지만 소리가 안 들어오면 설정 > 시스템 > 소리 > 고급 > 추가 소리 설정의 '녹음(Recording)' 탭에서 마이크를 우클릭해 '사용(Enable)'을 누른다. | Microsoft / 화상회의(Teams 데스크톱) / Windows 데스크톱 / 문서 시점 기준 / 글로벌 |
+| `teams-test-call-english-only` | 확실 | 공식 | Teams 설정 > 장치 화면의 '테스트 통화 만들기(Make a test call)'로 테스트 통화 봇의 안내에 따라 짧게 말한 뒤 요약을 확인할 수 있다. 이 테스트 통화는 영어로만 안내되며 Teams 웹에서는 쓸 수 없다. | Microsoft / 화상회의(Teams 데스크톱) / Teams 데스크톱 앱 / 문서 시점 기준 / 글로벌 |
+| `web-browser-site-mic-permission` | 확실 | 공식 | Teams 웹(브라우저)에서 마이크가 안 되면 브라우저 사이트 권한에서 마이크를 확인한다. Chrome은 설정 > 개인정보 보호 및 보안 > 사이트 설정 > 권한 > 마이크, Edge는 설정 및 기타 > 설정 > 쿠키 및 사이트 권한 > 마이크에서 사이트가 마이크를 쓰도록 허용한다. | Microsoft / 화상회의(Teams 웹) / Chrome·Edge (Safari·Firefox는 같은 원리의 별도 메뉴) / 문서 시점 기준 / 글로벌 |
+
+### 컴퓨터 소리가 안 날 때, 출력 장치부터 순서대로 확인 (Windows 소리 출력 점검 순서) <sub>2026-11-03 · pc-no-sound-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `pc-sound-first-check-output-device` | 확실 | 공식 | Windows 11에서 소리가 안 나면 먼저 설정 > 시스템 > 소리의 출력(Output) 항목에서 실제로 쓰는 장치(스피커 또는 헤드폰)를 선택하고, 음소거가 꺼져 있는지와 볼륨 슬라이더가 올라가 있는지 확인한다. | Microsoft / PC(Windows) / Windows 11 기준 (Windows 10은 메뉴 경로가 다름) / Windows 11 기준 / 글로벌 |
+| `pc-sound-default-device-monitor-trap` | 확실 | 공식 | 외부 모니터에 스피커가 없는데 그 모니터가 기본 출력 장치로 잡혀 있으면 소리가 나지 않는다. 기본 장치는 설정 > 시스템 > 소리의 출력에서 원하는 장치를 고르면 지정되며, 이전 방식은 소리 설정의 재생 탭에서 장치를 기본으로 설정하는 것이다. | Microsoft / PC(Windows) / HDMI·DP 등으로 연결한 모니터·TV 출력 / Windows 11 기준 / 글로벌 |
+| `pc-sound-enhancements-off` | 확실 | 공식 | Windows 11에서는 설정 > 시스템 > 소리 > 출력 장치 선택 > 고급 설정에서 오디오 향상(Audio enhancements)을 끈다. Windows 10에서는 소리 설정 > 재생 탭 > 장치 속성 > 향상 탭에서 모든 향상 기능 사용 안 함을 고른다. | Microsoft / PC(Windows) / Windows 11 (Windows 10 경로 별도) / Windows 11 기준 / 글로벌 |
+| `pc-sound-device-usage-enable` | 확실 | 공식 | 출력 장치가 목록에 있는데도 소리가 안 나면 설정 > 시스템 > 소리 > 고급 > 추가 소리 설정에서 재생(Playback) 탭의 장치 속성을 열고, 장치 사용(Device usage)이 '이 장치 사용(사용)'으로 되어 있는지 확인한다. | Microsoft / PC(Windows) / Windows 11 기준 / Windows 11 기준 / 글로벌 |
+| `pc-sound-app-volume-mixer` | 확실 | 공식 | 시스템 소리는 나는데 특정 앱만 소리가 안 나면, 설정 > 시스템 > 소리 > 볼륨 믹서에서 그 앱이 음소거되어 있지 않은지, 슬라이더가 올라가 있는지, 그리고 앱의 출력 장치가 기본 장치와 같은지 확인한다. | Microsoft / PC(Windows) / Windows 11 기준 (Windows 10은 작업표시줄 볼륨 아이콘에서 연다) / Windows 11 기준 / 글로벌 |
+| `pc-sound-restart-audio-services` | 확실 | 공식 | 소리 서비스를 다시 시작하려면 Windows 검색에 services.msc를 입력해 서비스 창을 열고, Windows Audio와 Windows Audio Endpoint Builder를 각각 우클릭해 다시 시작한다. 메인 점검 문서는 여기에 Remote Procedure Call(RPC)도 함께 다시 시작하라고 안내한다. | Microsoft / PC(Windows) / Windows 11 기준 / Windows 11 기준 / 글로벌 |
+| `pc-sound-device-manager-hidden-devices` | 확실 | 공식 | 소리 장치가 아예 안 보이면 장치 관리자에서 사운드, 비디오 및 게임 컨트롤러를 펼쳐 오디오 장치가 있는지 본다. 없으면 보기 > 숨겨진 장치 표시를 켜고, 작업 > 하드웨어 변경 사항 검색을 실행한다. 장치가 보이는데 꺼져 있으면 사용 설정을 선택한다. | Microsoft / PC(Windows) / 내장 오디오·USB 오디오·외장 DAC 등 장치 인식 문제 / Windows 11 기준 / 글로벌 |
+| `pc-sound-driver-update-rollback` | 확실 | 공식 | 드라이버 문제가 의심되면 장치 관리자에서 오디오 장치를 우클릭해 드라이버 업데이트 > 드라이버 자동 검색을 누른다. 업데이트 뒤에 소리가 사라졌다면 장치 속성 > 드라이버 탭의 '드라이버 롤백'을 쓴다. 롤백 버튼은 이전 드라이버가 있을 때만 활성화된다. | Microsoft / PC(Windows) / Windows 11 기준 / Windows 11 기준 / 글로벌 |
+| `pc-sound-windows-update-first` | 확실 | 공식 | 소리 문제가 특정 Windows 업데이트 이후에 시작됐다면, 설정 > Windows 업데이트에서 업데이트 확인을 눌러 대기 중인 업데이트를 설치하고 다시 시작한다. 업데이트가 누락된 구성요소를 채워 주고 알려진 소리 문제를 고칠 수 있다. | Microsoft / PC(Windows) / Windows 11 기준 / Windows 11 기준 / 글로벌 |
+| `pc-sound-restart-temporary-fix` | 확실 | 공식 | 재부팅은 일시적인 문제로 오디오 장치가 인식되지 않을 때 해결되는 경우가 있다. 시작 > 전원 > 다시 시작을 눌러 재부팅한 뒤 오디오 장치가 다시 나타나는지 확인한다. | Microsoft / PC(Windows) / 전 장치 공통 / Windows 11 기준 / 글로벌 |
+| `pc-sound-manufacturer-driver-site` | 확실 | 공식 | Windows가 드라이버를 찾지 못하거나 드라이버가 맞지 않으면, PC 또는 사운드 카드 제조사 지원 사이트에서 Windows 버전에 맞는 최신 오디오 드라이버를 내려받아 설치하고 다시 시작한다. | Microsoft / PC(Windows) / 제조사별 PC·사운드 카드 / Windows 11 기준 / 글로벌 |
+| `pc-sound-cable-jack-check-manufacturer` | 확실 | 공식 | 케이블·단자 확인 단계에서 어느 단자에 무엇을 꽂아야 할지 모르겠으면 Microsoft는 하드웨어 제조사에 확인하라고 안내한다. 연결 점검 단계에서 USB 포트를 바꿔 보고 헤드폰을 빼서 스피커를 따로 시험하는 것도 안내된다. | Microsoft / PC(Windows) / 3.5mm 단자·USB 오디오 장치 / Windows 11 기준 / 글로벌 |
+| `pc-sound-as-threshold-not-in-microsoft-docs` | 확인실패 | 공식 | Microsoft의 소리 문제 지원 문서에는 언제 제조사 AS를 맡겨야 하는지, 보증 기간이나 접수 경로가 적혀 있지 않다. 문서는 드라이버 문제는 제조사 사이트, 하드웨어 연결 판단이 어려우면 하드웨어 제조사를 안내할 뿐이다. | Microsoft / PC(Windows) / 소리 출력 문제 전반 / Windows 11 기준 / 글로벌 |
+| `pc-sound-win10-support-ended` | 확실 | 공식 | Windows 10의 무상 기술 지원과 무상 보안·드라이버 업데이트는 2025년 10월 14일에 끝났다. Microsoft는 PC가 계속 작동하더라도 Windows 11로 옮기기를 권한다. | Microsoft / PC(Windows) / Windows 10 / 2025-10-14 지원 종료 / 글로벌 |
+
+### 윈도우에서 블루투스 기기가 연결되지 않을 때 (Windows 11 기준, Windows 10 경로 병기): 문제 해결사 → 기기 제거 후 재추가 → 연결 끊김 시 절전·서비스 → 드라이버 → 제조사·AS 순서 <sub>2026-11-03 · windows-bluetooth-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `bt-troubleshooter-run-first` | 확실 | 공식 | Bluetooth 연결이 안 될 때 Microsoft는 먼저 자동 Bluetooth 문제 해결사를 실행하라고 안내한다. Windows 11에서는 Get Help 앱(aka.ms/GetHelp-BluetoothTroubleshooter)에서 실행하거나, 설정 > 시스템 > 문제 해결 > 기타 문제 해결사에서 Bluetooth 옆의 '실행'을 누른다 | Microsoft / PC 블루투스 / Windows 11 (Windows 10 포함 문서) / Windows 10·11 / 글로벌(영문 공식 문서 기준) |
+| `bt-toggle-wait-10s` | 확실 | 공식 | Bluetooth가 켜져 있는데도 기기가 안 붙으면 Bluetooth를 끄고 약 10초 기다렸다가 다시 켜는 방법을 Microsoft가 안내한다. 경로는 설정 > Bluetooth 및 장치 | Microsoft / PC 블루투스 / Windows 11 (Windows 10도 동일 단계) / Windows 10·11 / 글로벌 |
+| `bt-airplane-and-physical-switch` | 확실 | 공식 | Bluetooth를 껐다 켜기 전에 비행기 모드가 꺼져 있는지 확인하고, 노트북에 물리 Bluetooth 스위치가 있으면 그것도 켜져 있어야 한다고 Microsoft가 안내한다 | Microsoft / PC 블루투스 / 노트북(물리 스위치가 있는 기종) / Windows 10·11 / 글로벌 |
+| `bt-remove-readd-win11` | 확실 | 공식 | Windows 11에서 기기가 목록에 있는데 연결이 안 되면 설정 > Bluetooth 및 장치 > 장치에서 기기 옆 더보기(...) 메뉴를 열어 '장치 제거'를 누른 뒤, 다시 기기를 추가해 페어링한다 | Microsoft / PC 블루투스 / 기기 페어링 전 범용 / Windows 11 / 글로벌 |
+| `bt-device-readiness-pairing-mode` | 확실 | 공식 | 기기 쪽 준비도 함께 확인해야 한다. 기기를 페어링 모드로 두고 PC 가까이 놓고, 배터리를 완전히 충전한 뒤 전원을 껐다 켜고 다시 페어링한다. 충전식 헤드폰·스피커는 페어링하는 동안 충전 케이블을 연결해 둔다 | Microsoft / PC 블루투스 / Bluetooth 주변기기 전반(헤드폰·스피커·마우스 등) / Windows 10·11 / 글로벌 |
+| `bt-usb3-interference` | 확실 | 공식 | 차폐되지 않은 USB 3.0 기기가 Bluetooth 연결을 방해할 수 있다고 Microsoft가 밝혔다. 그러니 Bluetooth 기기는 그런 USB 3.0 기기에서 떨어뜨려 둔다 | Microsoft / PC 블루투스 / USB 3.0 포트를 쓰는 PC 전반 / Windows 10·11 / 글로벌 |
+| `bt-disconnect-causes` | 확실 | 공식 | Bluetooth가 자꾸 끊기는 원인으로 Microsoft는 절전 설정, 오래된 드라이버, 일시적인 시스템 오류를 든다 | Microsoft / PC 블루투스 / 연결 후 끊김 증상 / Windows 10·11 / 글로벌 |
+| `bt-energy-saver-off` | 확실 | 공식 | Bluetooth 연결이 끊길 때 배터리 아이콘을 눌러 절전 모드가 켜져 있는지 보고, 켜져 있으면 끈다. Windows 11에서는 '에너지 절약 모드', Windows 10에서는 '배터리 절약 모드'라고 부른다 | Microsoft / PC 블루투스 / 노트북·태블릿 절전 설정 켜진 기기 / Windows 10(배터리 절약) · Windows 11(에너지 절약) / 글로벌 |
+| `bt-power-management-uncheck` | 확실 | 공식 | 장치 관리자에서 Bluetooth 항목을 펼쳐 기기를 우클릭하고 '전원 관리' 탭을 열어 '전원을 절약하기 위해 컴퓨터가 이 장치를 끌 수 있음'의 체크를 해제하라고 Microsoft가 안내한다 | Microsoft / PC 블루투스 / Bluetooth 장치 항목 중 전원 관리 탭이 있는 항목 / Windows 10·11 / 글로벌 |
+| `bt-service-restart-bluetooth-support` | 확실 | 공식 | Windows 키 + R을 눌러 services.msc를 열고 'Bluetooth Support Service'를 찾아 우클릭 후 '다시 시작'을 누르면 Bluetooth 서비스가 다시 올라온다고 Microsoft가 안내한다 | Microsoft / PC 블루투스 / Bluetooth 서비스 기반 연결 문제 / Windows 10·11 / 글로벌 |
+| `bt-other-services-unverified` | 확인실패 | 공식 | Bluetooth Audio Gateway Service나 Bluetooth User Support Service까지 함께 재시작하라는 방법은 Microsoft 공식 문서에서 확인하지 못했다. 2차 가이드에만 있는 내용이라 글에 단정적으로 쓰지 않는다 | Microsoft / PC 블루투스 / Bluetooth 관련 보조 서비스 / Windows 10·11 / 글로벌 |
+| `bt-driver-update-device-manager` | 확실 | 공식 | 드라이버를 바꾸려면 장치 관리자에서 Bluetooth 항목을 펼쳐 어댑터(무선 장치)를 우클릭하고 '드라이버 업데이트' > '드라이버 자동 검색'을 누른다고 Microsoft가 안내한다 | Microsoft / PC 블루투스 어댑터 / 내장 Bluetooth 어댑터(라디오) / Windows 10·11 / 글로벌 |
+| `bt-driver-manual-install-manufacturer` | 확실 | 공식 | 자동 검색으로 드라이버를 못 찾으면 PC 제조사 홈페이지에서 드라이버를 받는다. 받은 파일이 .exe면 실행하고, .inf·.sys 파일 묶음이면 '드라이버 찾아보기'에서 그 폴더를 지정해 설치한다고 Microsoft가 안내한다 | Microsoft / PC 블루투스 어댑터 / 제조사별 내장 어댑터 / Windows 10·11 / 글로벌 |
+| `bt-adapter-uninstall-shutdown-not-restart` | 확실 | 공식 | Bluetooth 아이콘이 작업 표시줄에 없고 장치 관리자에는 보일 때, 장치 관리자 > Bluetooth에서 어댑터를 우클릭해 '디바이스 제거'를 누른 뒤 재시작이 아니라 '시스템 종료'로 끈다. 몇 초 기다렸다가 다시 켜면 Windows가 드라이버를 재설치하고, 안 되면 장치 관리자 동작 메뉴에서 '하드웨어 변경 사항 검색'을 한다고 Microsoft가 안내한다 | Microsoft / PC 블루투스 어댑터 / 내장 Bluetooth 어댑터 제거·재설치 / Windows 11 / 글로벌 |
+| `bt-windows10-end-of-support` | 확실 | 공식 | Windows 10은 2025년 10월 14일에 지원이 종료되었고, Microsoft는 Windows 11로 옮길 것을 권장한다 | Microsoft / PC 운영체제 / Windows 10 전 기종 / Windows 10 (2025-10-14 지원 종료) / 글로벌 |
+| `bt-as-warranty-unverified` | 확인실패 | 공식 | Microsoft 공식 Bluetooth 문서에는 보증 기간, AS 접수 경로, AS 접수 기준이 없다. 공식 문서는 최신 Bluetooth 드라이버가 필요하면 PC 또는 어댑터 제조사에 문의해야 할 수 있다는 정도만 안내한다 | Microsoft / PC 블루투스 / AS 접수 기준 전반 / Windows 10·11 / 글로벌 |
+
+### 윈도우 PIN이나 비밀번호를 잊어 로그인이 안 될 때 (Windows Hello PIN 재설정 · Microsoft 계정 · 로컬 계정 · BitLocker 복구 키 · 데이터 보호) <sub>2026-11-03 · windows-login-pin-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `pin-forgot-link-on-signin-screen` | 확실 | 공식 | Windows 로그인 화면에서 PIN을 잊었다면 PIN 입력란 아래의 'I forgot my PIN(PIN을 잊어버렸어요)' 옵션을 선택해 본인 확인 후 새 PIN을 만들 수 있다. 기기에 계정이 여러 개면 재설정할 계정을 먼저 고른다. | Microsoft / Windows PC / Windows Hello PIN 로그인 / Windows 10·11 (페이지 기준) / 글로벌 |
+| `pin-forgot-fallback-password-then-settings` | 확실 | 공식 | 로그인 화면에 'I forgot my PIN'이 보이지 않으면 Sign-in options(로그인 옵션)에서 'Enter your password(비밀번호 입력)'를 골라 비밀번호로 먼저 로그인한 뒤, 설정 앱에서 PIN을 다시 만든다. | Microsoft / Windows PC / Windows Hello PIN 로그인 / Windows 10·11 (페이지 기준) / 글로벌 |
+| `pin-reset-settings-path-signed-in` | 확실 | 공식 | 이미 로그인된 상태에서 PIN을 잊었다면 설정 > 계정 > 로그인 옵션 > PIN(Windows Hello)으로 들어가 'I forgot my PIN'을 선택하고 계정 확인 후 새 PIN을 만든다. 기존 PIN을 알고 있다면 'Change PIN'으로 바꾼다. | Microsoft / Windows PC / Windows Hello PIN / Windows 10·11 (페이지 기준) / 글로벌 |
+| `pin-reset-local-account-no-forgot-link` | 확실 | 공식 | 로컬 계정(Microsoft 계정이 아닌 PC 전용 계정)을 쓰는 경우 로그인 화면에 'I forgot my PIN' 옵션이 나타나지 않는다. 이때는 비밀번호로 로그인한 뒤 설정 앱에서 PIN을 재설정해야 한다. | Microsoft / Windows PC / 로컬 계정 / Windows 10·11 (페이지 기준) / 글로벌 |
+| `local-account-password-reset-security-questions` | 확실 | 공식 | 로컬 계정의 비밀번호를 잊었을 때 Windows 로그인 화면에서 비밀번호 입력란 오른쪽 화살표를 누르고 '확인'을 고른 뒤 '암호 재설정'을 누르면, 계정을 만들 때 설정해 둔 보안 질문에 답해 비밀번호를 바꿀 수 있다. | Microsoft / Windows PC / 로컬 계정 / Windows 10·11 (페이지 기준) / KR |
+| `local-account-reset-disk-prepare` | 확실 | 공식 | 로컬 계정은 USB 드라이브로 '암호 재설정 디스크'를 미리 만들어 둘 수 있다. 제어판에서 '암호 재설정 만들기'를 검색해 '암호 재설정 디스크 만들기'를 선택하면 된다. 나중에 비밀번호를 바꿔도 디스크를 새로 만들 필요는 없다. | Microsoft / Windows PC / 로컬 계정 / Windows 10·11 (페이지 기준) / KR |
+| `ms-account-password-online-reset` | 확실 | 공식 | Microsoft 계정의 비밀번호를 잊었다면 Windows 로그인 화면의 '암호를 잊어버렸음' 옵션을 쓰거나, 로그인 옵션에서 '웹 로그인'을 골라 '암호 잊음'으로 진행한다. 브라우저에서는 account.live.com/ResetPassword.aspx 에서도 재설정할 수 있다. | Microsoft / Windows PC / Microsoft 계정 / Windows 10·11 (페이지 기준) / KR |
+| `ms-account-recovery-code-rules` | 확실 | 공식 | Microsoft 계정 복구 코드는 보안 대시보드의 'Manage how I sign in' 페이지 복구 코드 항목에서 'Generate a new code'로 만든다. 이미 만든 코드는 다시 조회하거나 내려받을 수 없고, 새 코드를 만들면 이전 코드는 모두 무효가 된다. | Microsoft / Windows PC / Microsoft 계정 / 전 연식(페이지 기준) / 글로벌 |
+| `bitlocker-recovery-key-find-steps` | 확실 | 공식 | BitLocker 복구 키 화면이 뜨면 화면의 복구 키 ID 앞 8자리를 메모하고, 다른 기기에서 aka.ms/myrecoverykey(개인 Microsoft 계정) 또는 직장·학교 계정은 aka.ms/aadrecoverykey에 로그인해 같은 ID의 키를 찾는다. 인쇄본이나 조직 IT 부서에도 있을 수 있다. | Microsoft / Windows PC / BitLocker·기기 암호화 사용 기기 / Windows 10·11 (페이지 기준) / 글로벌 |
+| `bitlocker-key-microsoft-cannot-recover` | 확실 | 공식 | Microsoft 지원팀은 잃어버린 BitLocker 복구 키를 찾아 주거나 제공하거나 다시 만들어 줄 수 없다고 명시돼 있다. | Microsoft / Windows PC / BitLocker 사용 기기 / 전 연식(페이지 기준) / 글로벌 |
+| `device-reset-deletes-all-files` | 확실 | 공식 | 기기를 초기화(리셋)하면 모든 파일이 지워진다. BitLocker 키를 찾지 못하고 암호 변경 원인을 되돌릴 수도 없다면 초기화 말고는 방법이 없을 수 있으므로, 초기화는 마지막 수단이다. | Microsoft / Windows PC / 전 기기 / 전 연식(페이지 기준) / 글로벌 |
+| `work-school-device-it-policy` | 확실 | 공식 | 기기가 회사나 학교에서 관리되면 BitLocker 복구 키와 PIN 정책은 조직 IT 부서가 쥐고 있다. 개인이 임의로 복구 키를 찾거나 계정을 바꾸기 전에 IT 부서에 먼저 문의한다. | Microsoft / Windows PC / 회사·학교 관리 기기 / 전 연식(페이지 기준) / 글로벌 |
+| `pin-creation-error-signout-retry` | 확실 | 공식 | PIN을 만드는 도중 오류가 나면 로그아웃했다가 다시 로그인한 뒤 PIN을 다시 만들어 본다. 그래도 안 되면 시스템 업데이트를 확인하라고 안내된다. | Microsoft / Windows PC / Windows Hello PIN 생성 / Windows 10·11 (페이지 기준) / 글로벌 |
+| `face-fingerprint-fallback-password` | 확실 | 공식 | 얼굴 인식이나 지문 인식이 안 되면 PIN이나 비밀번호로 로그인한 뒤 얼굴 인식 개선(Improve recognition)이나 지문 재등록을 한다. 얼굴 데이터를 지우고 다시 스캔하는 것보다 개선 기능이 더 낫다고 안내된다. | Microsoft / Windows PC / Windows Hello 얼굴·지문 / Windows 10·11 (페이지 기준) / 글로벌 |
+| `pin-reset-data-impact-unconfirmed` | 확인실패 | 공식 | Windows PIN 재설정이 사용자 파일이나 데이터를 지우는지는 해당 공식 PIN 재설정 문서에 명시되어 있지 않다. 확인하지 못한 항목이므로 단정하지 않는다. | Microsoft / Windows PC / Windows Hello PIN / Windows 10·11 (페이지 기준) / 글로벌 |
 
 ## iptime
 
@@ -851,6 +992,1177 @@
 | `ev-2026-seoul-amounts-period` | 확실 | 공식 | 2026년 에너지바우처 지원액(연간 총액)은 1인 세대 295,200원, 2인 407,500원, 3인 532,700원, 4인 이상 701,300원(연탄·타 연료 희망 시 40,700~102,000원)이고, 여름·겨울 구분 없이 2026년 7월 1일~2027년 5월 31일 사용하며, 2026년 12월 31일까지 주민등록상 동 주민센터 방문(본인·대리인) 또는 온라인(복지로)으로 신청한다(서울시 안내) | 기후에너지환경부·서울시 / 에너지 바우처 / 에너지바우처 / 2026(사용 2027.5.31까지) / KR(서울시 안내) |
 
 ## 공통
+
+### 에어컨 난방이 안 되거나 약할 때 점검 순서 (제상·예열·외기·필터·설정·AS 기준) <sub>2026-11-03 · aircon-heating-mode-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `aircon-heating-defrost-normal-lg` | 확실 | 공식 | LG 에어컨 난방 중 실외기 열교환기에 성에가 끼면 난방 능력이 떨어지므로 제품이 제상 운전에 들어간다. 제상 중에는 실내기 팬이 멈추고 디스플레이에 제상 또는 예열 표시가 뜨며, LG는 이를 고장이 아닌 정상 동작으로 안내한다. | LG / 에어컨 / LG 에어컨 난방 기능 전반 / 전 연식 / KR |
+| `aircon-heating-defrost-duration-samsung` | 확실 | 공식 | 삼성 에어컨 난방 중 제상(성에 제거)이 되면 실내기에서 따뜻한 바람이 잠시 멈추며, 제상은 보통 5~15분 정도 걸린다. 제상 중 물방울이나 수증기가 실외기에서 나오는 것도 정상이다. | 삼성 / 에어컨 / 시스템에어컨·냉난방기(스탠드) / 전 연식 / KR |
+| `aircon-heating-warmup-up-to-20min-samsung` | 확실 | 공식 | 삼성 시스템에어컨·냉난방기는 난방 시작 후 따뜻한 바람이 나오기까지 예열 시간이 최대 약 20분 걸릴 수 있다. 예열 중에는 바람이 약하거나 나오지 않는 것이 정상이다. | 삼성 / 에어컨 / 시스템에어컨·냉난방기(스탠드) / 전 연식 / KR |
+| `aircon-heating-warmup-and-defrost-15min-lg` | 확실 | 공식 | LG 에어컨의 예열·제상 운전은 보통 15분 이내에 끝나지만, 실외 온도·습도와 실외기 결빙 상태에 따라 1시간 이상 이어지는 경우도 있다고 LG 공식 페이지가 안내한다. | LG / 에어컨 / LG 에어컨 난방 기능 전반 / 전 연식 / KR |
+| `aircon-heating-service-threshold-1h-unverified` | 확인실패 | 공식 | 예열·제상이 1시간 이상 계속되면 서비스 점검을 받아야 한다는 기준은 LG 공식 페이지 원문에서 확인하지 못했다. 원문은 1시간 이상 지속 사례가 있다고만 안내하며, 점검 기준 시간은 명시하지 않는다. | LG / 에어컨 / LG 에어컨 난방 기능 전반 / 전 연식 / KR |
+| `aircon-heating-humid-snow-frequent-defrost-lg` | 확실 | 공식 | 습하거나 눈이 오는 날에는 실외기에 성에가 더 잘 끼어 제상이 자주 돌아가고, 따뜻한 바람이 나오는 구간이 짧아져 난방이 약하게 느껴질 수 있다. | LG / 에어컨 / LG 에어컨 난방 기능 전반 / 전 연식 / KR |
+| `aircon-heating-outdoor-unit-snow-obstacle-clear` | 확실 | 공식 | 난방이 약할 때 실외기 주변 장애물을 치우고, 실외기 주변에 쌓인 눈을 치우면 난방 성능 회복에 도움이 된다고 LG가 안내한다. | LG / 에어컨 / LG 에어컨 난방 기능 전반 / 전 연식 / KR |
+| `aircon-heating-filter-dust-weakens-samsung` | 확실 | 공식 | 먼지 필터가 막히면 삼성 에어컨 난방이 약해질 수 있다. 필터를 빼서 세척하는 것이 첫 번째 점검 항목이다. | 삼성 / 에어컨 / 시스템에어컨·냉난방기(스탠드) / 전 연식 / KR |
+| `aircon-heating-multisplit-mode-conflict-e161` | 확실 | 공식 | 멀티형 시스템에어컨에서 다른 실내기가 냉방 중이면 난방이 되지 않을 수 있다. 연결된 모든 실내기를 같은 모드(전부 냉방 또는 전부 난방)로 맞춰야 하며, 혼용운전 오류가 나면 E161 표시가 뜬다. | 삼성 / 에어컨 / 멀티형 시스템에어컨 / 전 연식 / KR |
+| `aircon-heating-lg-service-phone-hours` | 확실 | 공식 | LG전자 고객센터 번호는 1544-7777이며 평일 09:00~18:00에 운영되고 주말·공휴일은 쉰다. 출장 서비스 예약도 같은 경로에서 가능하다고 안내된다. | LG / 고객센터 / LG 전 제품 공통 고객센터 / 전 연식 / KR |
+| `aircon-heating-samsung-paid-service-not-defect` | 확실 | 공식 | 삼성 제품은 보증기간 이내라도 사용법 설명이나 설치 등 제품 고장이 아닌 경우 서비스를 요청하면 유상으로 청구된다. 삼성 고객센터 번호는 1588-3366(발신자 부담)이다. | 삼성 / 에어컨 / 시스템에어컨·냉난방기 / 전 연식 / KR |
+| `aircon-heating-samsung-warranty-period` | 확실 | 공식 | 삼성 에어컨의 품질보증기간은 에어컨(냉난방 겸용)이 1년, 에어컨(냉방 전용)이 2년이다. 난방이 되는 모델은 냉난방 겸용 표에 해당하는지 제품 보증서로 확인해야 한다. | 삼성 / 에어컨 / 냉난방 겸용 / 냉방 전용 / 전 연식 / KR |
+| `aircon-heating-parts-retention-8y-samsung` | 확실 | 공식 | 삼성 에어컨·시스템에어컨·냉온풍기의 부품보유기간은 8년으로 표기되어 있다. 품질보증서에 표시된 기간이 소비자분쟁해결기준보다 짧거나 미기재면 소비자분쟁해결기준의 기간이 적용된다. | 삼성 / 에어컨 / 에어컨·시스템에어컨·냉온풍기 / 전 연식 / KR |
+| `aircon-heating-repeat-failure-after-paid-repair-12m` | 확실 | 공식 | 삼성 제품을 유상으로 수리한 뒤 12개월 안에 같은 부품이 정상 사용 중 다시 고장 나면 무상으로 수리한다. 이전 수리에서 수리비 할인을 받았다면 무상수리 기간은 2개월로 적용된다. | 삼성 / 에어컨 / 전 제품 공통 유상수리 후 재발 / 전 연식 / KR |
+| `aircon-heating-energy-20c-news-gas-centric` | 논쟁 🔶 | 후기 | 언론 보도는 한국에너지공단과 산업통상자원부를 인용해 겨울철 효율적인 난방의 실내 적정온도를 20도로 보고, 난방 설정온도를 1도 낮추면 에너지 소비가 약 7% 줄어든다고 전했다. | 공통 / 난방 일반 / 가스보일러·도시가스 중심 보도 / 2023 보도 기준 / KR |
+| `aircon-heating-electricity-cost-unverified` | 확인실패 🔶 | 후기 | 에어컨 난방의 전기요금 절감 수치(설정온도 1도당 절감률 등)는 이번 조사에서 공식 자료로 확인하지 못했다. 찾은 보도는 가스보일러 중심이라 전기요금 근거로 쓸 수 없다. | 공통 / 에어컨 / 에어컨 난방 전기요금 / 전 연식 / KR |
+
+### 앱이 자꾸 강제 종료될 때 원인 좁히는 순서 (iPhone·Galaxy, 앱 재실행→재시작→업데이트→캐시→저장공간→재설치→초기화 순, 데이터 삭제 전 백업) <sub>2026-11-03 · app-crash-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `apple-app-force-close-first` | 확실 | 공식 | iPhone·iPad에서 앱이 멈추거나 예기치 않게 닫히면 Apple 공식 안내는 첫 단계로 앱을 강제로 종료한 뒤 다시 여는 것을 제시한다 | 애플 / 스마트폰·태블릿 / iPhone·iPad 전 기종 / 전 연식 / 글로벌 |
+| `apple-app-restart-device-second` | 확실 | 공식 | 앱을 강제 종료해도 증상이 계속되면 Apple 공식 안내는 두 번째 단계로 기기를 재시작한 뒤 앱을 다시 열어 확인하라고 한다 | 애플 / 스마트폰·태블릿 / iPhone·iPad 전 기종 / 전 연식 / 글로벌 |
+| `apple-app-update-then-ios-update` | 확실 | 공식 | Apple 공식 안내는 재시작 후에도 증상이 계속되면 App Store에서 앱 업데이트를 확인하고, 업데이트할 앱이 없으면 iPhone의 운영체제(iOS)를 업데이트하라고 한다 | 애플 / 스마트폰·태블릿 / iPhone·iPad 전 기종 / iOS 업데이트를 지원하는 기기 / 글로벌 |
+| `apple-app-delete-reinstall-data-risk` | 확실 | 공식 | Apple 공식 안내는 여전히 증상이 계속되면 앱을 삭제한 뒤 다시 내려받아 확인하라고 한다. 이때 앱에 저장돼 있던 데이터를 잃을 수 있다고 경고한다 | 애플 / 스마트폰·태블릿 / iPhone·iPad 전 기종 / 전 연식 / 글로벌 |
+| `apple-app-developer-contact-refund` | 확실 | 공식 | Apple 공식 안내는 재설치로도 해결되지 않으면 앱스토어에서 내려받은 앱이라면 앱 개발사에 문의하라고 한다. 최근 구매한 앱이라면 환불을 요청할 수 있다고 덧붙인다 | 애플 / 스마트폰·태블릿 / iPhone·iPad 전 기종 / 전 연식 / 글로벌 |
+| `samsung-app-network-check-first` | 확실 | 공식 | 갤럭시에서 앱이 자꾸 멈추면 삼성 공식 지원 페이지는 가장 먼저 네트워크를 점검하라고 한다. 모바일 데이터나 Wi-Fi를 2~3분 끈 뒤 다시 연결하고 앱을 재시도하며, 안 되면 다른 네트워크에서 시험한다 | 삼성 / 스마트폰 / 갤럭시 (One UI·Android) / 전 연식 / 글로벌 (삼성 AE 공식 페이지 기준) |
+| `samsung-app-clear-cache-first` | 확실 | 공식 | 갤럭시에서 네트워크 점검 뒤에도 증상이 계속되면 삼성 공식 지원 페이지는 앱의 캐시를 먼저 지우라고 한다. 경로는 설정 > 앱 > 모든 앱 보기 > 해당 앱 > 저장공간 > 캐시 지우기다 | 삼성 / 스마트폰 / 갤럭시 (One UI·Android) / 전 연식 / 글로벌 (삼성 AE 공식 페이지 기준) |
+| `samsung-app-clear-data-last-step` | 확실 | 공식 | 갤럭시에서 캐시를 지워도 증상이 계속되면 삼성 공식 지원 페이지는 그다음에 '데이터 지우기'를 누르라고 한다. 이 단계는 앱에 저장된 데이터를 모두 지운다 | 삼성 / 스마트폰 / 갤럭시 (One UI·Android) / 전 연식 / 글로벌 (삼성 AE 공식 페이지 기준) |
+| `samsung-app-update-apps-and-software` | 확실 | 공식 | 갤럭시에서 캐시 지우기로도 해결되지 않으면 삼성 공식 지원 페이지는 시스템 소프트웨어 업데이트를 확인하고, Google Play 스토어에서 설치된 앱을 모두 업데이트하라고 한다 | 삼성 / 스마트폰 / 갤럭시 (One UI·Android) / 전 연식 / 글로벌 (삼성 AE 공식 페이지 기준) |
+| `samsung-app-reinstall-play-store` | 확실 | 공식 | 갤럭시에서 업데이트 후에도 증상이 계속되면 삼성 공식 지원 페이지는 해당 앱을 삭제한 뒤 Google Play 스토어에서 다시 설치하라고 한다 | 삼성 / 스마트폰 / 갤럭시 (One UI·Android) / 전 연식 / 글로벌 (삼성 AE 공식 페이지 기준) |
+| `samsung-app-battery-optimization-off` | 확실 | 공식 | 갤럭시에서 특정 앱만 자꾸 멈추면 삼성 공식 지원 페이지는 그 앱의 설정에서 배터리 최적화를 끄라고 안내한다. 최적화가 켜진 상태에서 충돌이 나는 경우에 해당한다 | 삼성 / 스마트폰 / 갤럭시 (One UI·Android) / 전 연식 / 글로벌 (삼성 AE 공식 페이지 기준) |
+| `app-crash-low-storage-link-unverified` | 확인실패 🔶 | 후기 | 저장공간 부족이 앱 강제 종료를 직접 일으킨다는 주장은 이번 조사에서 제조사 원문 문장으로 확인하지 못했다. 저장공간 확인은 점검 항목으로만 두고, 원인으로 단정하지 않는다 | 공통 / 스마트폰 / iPhone·갤럭시 전 기종 / 전 연식 / 글로벌 |
+
+### 난방은 되는데 온수가 안 나올 때 보일러 점검 순서 (온수 설정·수전·재기동·겨울철 동파 의심·계량기·AS 기준) <sub>2026-11-03 · boiler-no-hot-water-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `boiler-freeze-guard-power-switch-only` | 확실 | 공식 | 가스보일러의 동파 방지장치는 순환수 온도가 떨어지면 작동하므로, 보일러 본체 전원스위치만 끄고 전기 콘센트와 중간밸브는 정상 상태로 유지하는 것이 바람직하다. | 공통 / 가스보일러 / 동파 방지장치 탑재 기종 / 전 연식 / KR |
+| `boiler-freeze-guard-needs-circulation` | 확실 🔶 | 후기 | 전원 플러그를 뽑아 두면 난방수가 순환하지 않아 동파 위험이 커지므로, 겨울철에는 플러그를 꽂아 둔 상태를 유지해야 한다. | 공통 / 가스보일러 / 전 기종 / 전 연식 / KR |
+| `boiler-winter-away-mode-10c` | 확실 🔶 | 후기 | 장기간 집을 비울 때는 보일러 전원을 끄지 않고 외출 모드(또는 취침 모드)로 두며, 실내 온도를 10℃ 이상으로 맞춰 동파를 막는다. | 공통 / 가스보일러 / 외출·취침 모드 있는 기종 / 전 연식 / KR |
+| `boiler-winter-heating-valve-slight-open` | 확실 🔶 | 후기 | 난방 밸브를 살짝 열어 두면 난방수가 순환해 배관이 어는 것을 줄이는 데 도움이 된다. | 공통 / 가스보일러 / 난방 밸브 있는 기종 / 전 연식 / KR |
+| `boiler-tap-drip-warm-side` | 확실 🔶 | 후기 | 외출로 집을 오래 비울 때 수도는 온수 쪽을 한 방울씩 흐르도록 열어 두면 배관 동파 예방에 도움이 된다. | 공통 / 가스보일러 / 전 기종 (수도 배관 공통) / 전 연식 / KR |
+| `boiler-frozen-pipe-thaw-gentle` | 확실 🔶 | 후기 | 얼어붙은 수도·배관은 미지근한 물이나 헤어드라이어로 천천히 녹이고, 뜨거운 물이나 드라이어를 배관에 가까이 대면 배관이 갈라질 수 있다. | 공통 / 가스보일러·수도 배관 / 노출·동결 배관 / 전 연식 / KR |
+| `boiler-thaw-temperature-disputed` | 논쟁 🔶 | 후기 | 얼어붙은 배관의 해동 온도는 자료마다 다르다. 이투뉴스 기사는 약 60℃ 물이나 드라이어를 제시하고, 기존 조사(경동나비엔 후기 자료)는 50℃ 미만 상온수를 제시한다. | 공통 / 가스보일러·수도 배관 / 동결 배관 해동 / 전 연식 / KR |
+| `boiler-meter-check-and-report` | 확실 🔶 | 후기 | 수도 계량기 밸브를 좌우로 돌려 움직임이 없으면 배관이 얼었을 가능성이 있고, 계량기 유리가 깨졌으면 동파로 파손된 것이므로 시·군 상수도사업소에 신고한다. | 공통 / 수도 계량기·배관 / 전 기종 / 전 연식 / KR |
+| `boiler-hotwater-mode-and-temp` | 확실 🔶 | 후기 | 실내 온도조절기의 온수 전원과 온수 온도 설정이 적절한지 먼저 확인한다. 설정이 낮거나 온수 기능이 꺼져 있으면 온수가 나오지 않는 것처럼 보인다. | 공통 / 가스보일러 / 온도조절기 설정이 있는 기종 / 전 연식 / KR |
+| `boiler-hotwater-tap-and-supply-valve` | 확실 🔶 | 후기 | 온수 꼭지를 끝까지 완전히 열고, 급수 밸브가 잠기거나 막히지 않았는지 확인한다. | 공통 / 가스보일러 / 전 기종 / 전 연식 / KR |
+| `boiler-power-reset-5min` | 확실 🔶 | 후기 | 보일러 전원을 끄고 약 5분 뒤 다시 켜 리셋하는 것이 온수 미출수 시 기본 재기동 방법이다. | 공통 / 가스보일러 / 전 기종 / 전 연식 / KR |
+| `boiler-warranty-standard` | 확실 | 공식 | 한국소비자원 소비자분쟁해결기준(공정거래위원회 고시, 2025.12.18 개정)상 보일러의 품질보증기간은 2년이고, 부품보유기간은 제조일로부터 8년이다. | 공통 / 보일러 / 보일러 품목 전반 / 2025.12.18 개정 기준 / KR |
+
+### 보일러에서 물 끓는 소리·쿵쿵 소리가 날 때 소음 종류별 원인과 자가 판별 <sub>2026-11-03 · boiler-noise-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `boiler-noise-kgs-hq-phone` | 확실 | 공식 | 한국가스안전공사 본사 대표번호는 1544-4500이다. 이 번호가 가스 누출 신고 전용이라는 문장은 공식 페이지에서 확인하지 못했다. | 공통 / 가스보일러·가스기기 / 전 기종 / 전 연식 / KR |
+| `boiler-noise-gas-smell-exhaust-stop-check` | 논쟁 🔶 | 후기 | 가스보일러 배기통이 찌그러져 있거나 이상한 소리 또는 냄새가 나면 사용을 중단하고 즉시 점검을 받아야 한다. 사용 전에는 보일러와 배기통의 상태를 먼저 확인해야 한다. | 공통 / 가스보일러 / 전 기종(배기통 방식) / 전 연식 / KR |
+| `boiler-noise-pump-bearing-low-hum` | 논쟁 🔶 | 후기 | 보일러에서 '우우우' 같은 저음이 계속 울리면 순환펌프 베어링 마모나 윤활 부족을 먼저 의심한다. 펌프 부품이 원인이면 전문가 점검이나 교체가 필요하다. | 공통 / 가스보일러 / 순환펌프 방식 전 기종(제조사 미특정) / 전 연식 / KR |
+| `boiler-noise-fan-high-whine` | 논쟁 🔶 | 후기 | 보일러에서 '휭' 같은 고음이 나면 배기팬의 회전 불균형이나 팬 주변 이물질 끼임을 먼저 의심한다. 팬 주변 이물을 확인하고 해결되지 않으면 전문가 점검을 받는다. | 공통 / 가스보일러 / 배기팬 방식 전 기종(제조사 미특정) / 전 연식 / KR |
+| `boiler-noise-air-in-pipe-rumble` | 논쟁 🔶 | 후기 | 보일러 난방 배관에서 '두두둑', '덜컹' 같은 진동음이 나면 배관 안 공기 때문일 가능성이 높다. 공기 빼기나 배관 지지대 점검으로 해결되는 경우가 많다. | 공통 / 가스보일러 / 난방 배관 방식 / 전 연식 / KR |
+| `boiler-noise-uneven-install-vibration` | 논쟁 🔶 | 후기 | 보일러 설치면이 수평이 맞지 않거나 진동 흡수재가 없으면 운전 중 진동 소음이 커질 수 있다. 수평과 지지대 상태를 먼저 확인한다. | 공통 / 가스보일러 / 벽걸이형·설치 상태 의존 / 전 연식 / KR |
+| `boiler-noise-repeat-or-worse-means-service` | 논쟁 🔶 | 후기 | 가벼운 소리라도 반복되거나 점점 심해지면 즉시 조치하거나 전문가 점검을 받는 것이 권장된다. | 공통 / 가스보일러 / 전 기종 / 전 연식 / KR |
+| `boiler-noise-rinnai-3way-valve-case` | 논쟁 🔶 | 후기 | 린나이 보일러에서 '따따따' 불규칙 소음이 전원을 뽑으면 멈추고 다시 꽂으면 나는 경우, AS 기사 진단은 삼방변(3-way valve) 고장이었고 교체로 해결됐다는 사례가 있다. | 린나이 / 가스보일러 / 삼방변 사용 기종(사례 기종 미특정) / 2016 사례 / KR |
+| `boiler-noise-thumping-banging-unverified` | 확인실패 🔶 | 후기 | 보일러에서 '쿵쿵' 또는 '탕탕' 소리의 공식 원인은 이번 조사에서 확인하지 못했다. 블로그에서는 수격현상이나 분배기 밸브 조작 과다가 원인으로 언급되지만 제조사 원문이 없다. | 공통 / 가스보일러 / 전 기종 / 전 연식 / KR |
+| `boiler-noise-scale-combustion-unverified` | 확인실패 🔶 | 후기 | 열교환기 스케일이나 연소 불량이 물 끓는 소리를 낸다는 설명은 블로그 주장뿐이며, 이번 조사에서 제조사 공식 문서로 확인하지 못했다. | 공통 / 가스보일러 / 열교환기 방식 전 기종 / 전 연식 / KR |
+| `boiler-noise-navien-faq-exists-content-unread` | 확인실패 | 공식 | 경동나비엔 고객지원 페이지에는 '보일러 가동 시 소음이 나요.' 질문 항목이 있으나, 이번 조사에서 답변 본문은 확인하지 못했다. | 경동나비엔 / 가스보일러 / 나비엔 제품관리 꿀TIP 질문 / 전 연식 / KR |
+
+### 보일러 난방수 압력이 자꾸 떨어질 때 물 보충 전 확인할 것 <sub>2026-11-03 · boiler-pressure-drop-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `rinnai-pressure-gauge-zero-means-refill` | 확실 | 공식 | 린나이 대기차단형 보일러에서 전면 압력계 바늘이 0을 가리키면 난방수가 부족한 상태이므로 물 보충이 필요하다. | 린나이 / 가스보일러 / 대기차단형(RC600·RC610·RC620 계열 설명서 기준) / 2021~현행 설명서 기준 / KR |
+| `rinnai-water-refill-only-sealed-type` | 확실 | 공식 | 린나이 보일러의 수동 물보충은 대기차단형 보일러에만 해당하며, 일반형 보일러는 물이 자동으로 보충된다. | 린나이 / 가스보일러 / 대기차단형 vs 일반형 구분 / 2021~현행 설명서 기준 / KR |
+| `rinnai-water-refill-switch-procedure` | 확실 | 공식 | 린나이 대기차단형 보일러 물보충은 실내온도조절기의 난방·온수 버튼으로 기능을 먼저 끈 뒤, 보일러 하단의 물보충 스위치를 켜고 보충이 끝나면 다시 끄는 순서로 한다. | 린나이 / 가스보일러 / 대기차단형 / 2021~현행 설명서 기준 / KR |
+| `rinnai-refill-stop-threshold-varies-by-model` | 논쟁 🔶 | 공식 | 린나이 대기차단형 보일러의 물보충 중단 기준은 모델마다 다르다. 압력계 바늘이 약 0.5~1.5 kgf/cm² 범위에 들면 스위치를 끄라고 안내하는 기종이 있고, 약 2.5 kgf/cm(250kPa)에서 DIP 스위치를 복귀해 보충을 마치라고 안내하는 기종도 있다. | 린나이 / 가스보일러 / 대기차단형 기종별 상이 / 2019~현행 설명서 기준 / KR |
+| `rinnai-recommended-pressure-range` | 확실 | 공식 | 린나이 대기차단형 보일러의 권장 사용 압력은 50~150kPa(약 0.5~1.5 kgf/cm²)이다. | 린나이 / 가스보일러 / 대기차단형(RC600~RC620 계열) / 2019~현행 설명서 기준 / KR |
+| `rinnai-overfill-300kpa-drain-discharge` | 확실 | 공식 | 린나이 보일러에 물을 과하게 보충해 압력이 약 300kPa(3.0 kgf/cm²) 이상이 되면 과압도피변 배수구로 물이 나올 수 있다. | 린나이 / 가스보일러 / 대기차단형 / 2019~현행 설명서 기준 / KR |
+| `kyungdong-normal-pressure-not-officially-confirmed` | 확인실패 🔶 | 후기 | 경동나비엔 가스보일러의 정상 난방수 압력을 공식 자료에서 확인하지 못했다. 블로그 후기들은 1.0~1.5 bar를 제시하지만 모델별로 다르다는 단서가 붙어 있다. | 경동나비엔 / 가스보일러 / 콘덴싱 (모델 미상) / 미확인 / KR |
+| `pressure-drop-causes-leak-expansion-tank-air` | 논쟁 🔶 | 후기 | 보일러 난방수 압력이 떨어지는 주요 원인은 배관 누수(가장 흔함)와 팽창수조(팽창탱크)의 공기 충전량 저하로 꼽힌다. | 공통 / 가스보일러·콤비보일러 / 밀폐식 난방 시스템 / 전 연식 / UK 기준 |
+| `pressure-drop-repeat-within-days-means-leak` | 논쟁 🔶 | 후기 | 보충 후 압력이 24~48시간 안에 다시 떨어지면 누수나 팽창수조 이상을 의심하고, 반복 보충보다 전문가 점검을 먼저 받아야 한다. | 공통 / 가스보일러·콤비보일러 / 밀폐식 난방 시스템 / 전 연식 / UK 기준 |
+| `pressure-drop-visible-leak-signs` | 논쟁 🔶 | 후기 | 누수는 배관이 벽 안에 숨어 있을 때도 생기며, 작은 물방울 누수도 시간이 지나면 압력을 서서히 떨어뜨린다. 집 안에서 눈에 띄는 흔적이 없어도 압력이 계속 떨어지면 누수를 의심해야 한다. | 공통 / 가스보일러·콤비보일러 / 전 라인 / 전 연식 / UK 기준 |
+| `pressure-drop-radiator-bleeding-temporary-drop` | 논쟁 🔶 | 후기 | 라디에이터 공기 빼기나 난방수를 빼고 재충전하는 과정에서 압력이 일시적으로 낮아질 수 있으며, 이 경우는 누수가 아니라 일시적 현상이다. | 공통 / 가스보일러·콤비보일러 / 전 라인 / 전 연식 / UK 기준 |
+| `pressure-drop-gas-smell-stop-first` | 확인실패 🔶 | 후기 | 보일러에서 가스 냄새가 나면 물 보충이나 점검 전에 보일러 사용을 멈추고 가스 중간밸브를 잠근 뒤 창문을 열어 환기하고, 전기 스위치와 불꽃 조작을 피해야 한다. | 공통 / 가스보일러 / 전 라인 / 전 연식 / KR |
+
+### 에어백 경고등이 켜졌을 때 해야 할 일 (SRS 경고등 의미, 직접 분해 금지, 점검 필요성, 제조사 점검 기준, 안전 최우선) <sub>2026-11-03 · car-airbag-warning-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `airbag-light-normal-3to6s-hyundai` | 확실 | 공식 | 시동을 ON으로 하면 에어백 경고등이 약 3~6초 켜졌다가 꺼지는 것이 정상이다. | 현대 / 승용차 / 그랜저(GN7) / 2026 / KR |
+| `airbag-light-normal-3to6s-kia` | 확실 | 공식 | 기아 2026 오너스매뉴얼 기준으로도 시동 ON 시 에어백 경고등은 약 3~6초 켜졌다가 꺼지는 것이 정상이다. | 기아 / 승용차 / 매뉴얼 코드 TK1(차종명 미확인) / 2026 / KR |
+| `airbag-light-not-lit-at-start-inspect` | 확실 | 공식 | 시동을 ON으로 해도 에어백 경고등이 아예 켜지지 않으면 에어백 장치 이상 가능성이 있으므로 운행을 멈추고 점검을 받아야 한다. | 기아 / 승용차 / 매뉴얼 코드 TK1 / 2026 / KR |
+| `airbag-light-stays-on-or-lit-while-driving-inspect-hyundai` | 확실 | 공식 | 시동 ON 후 에어백 경고등이 3~6초 이후에도 계속 켜져 있거나 주행 중에 켜지면 이상으로 보고, 현대 직영 하이테크센터 또는 블루핸즈에서 즉시 점검을 받아야 한다. | 현대 / 승용차 / 그랜저(GN7) / 2026 / KR |
+| `airbag-light-stays-on-or-lit-while-driving-inspect-kia` | 확실 | 공식 | 기아 매뉴얼 기준으로 경고등이 6초 이상 켜져 있거나 주행 중 켜지면 에어백 구성품 중 하나가 정상 작동하지 않을 수 있으므로, 가까운 직영 서비스센터 또는 서비스협력사에서 점검을 받아야 한다. | 기아 / 승용차 / 매뉴얼 코드 KA4(2024 영문) / 2024 / 글로벌(영문 매뉴얼) |
+| `airbag-no-user-serviceable-parts` | 확실 | 공식 | 에어백 장치에는 사용자가 정비할 수 있는 부품이 없으며, 에어백 장치의 분리·장착·수리와 스티어링 휠 또는 에어백 장착 부위의 작업은 직영 서비스센터나 서비스협력사에서만 해야 한다. | 기아 / 승용차 / 매뉴얼 코드 TK1 / 2026 / KR |
+| `dashcam-wiring-may-affect-airbag` | 확실 | 공식 | 블랙박스 등 용품을 설치할 때 배선이 에어백 성능에 영향을 줄 수 있으므로, 에어백 관련 배선을 임의로 작업하면 안 된다. | 기아 / 승용차 / 매뉴얼 코드 TK1 / 2026 / KR |
+| `crash-sensor-single-fault-can-light-airbag-warning` | 논쟁 🔶 | 후기 | 충돌 센서 하나가 고장 나거나 잘못된 데이터를 보내기만 해도 실제 사고 없이 에어백 경고등이 켜질 수 있다. | 공통 / 승용차 / 충돌 센서 탑재 차량 전반 / 전 연식 / 글로벌 |
+| `airbag-light-cause-list-blog` | 논쟁 🔶 | 후기 | 에어백 경고등이 켜지는 흔한 원인으로 충돌 센서 고장, 배선·커넥터 손상이나 부식, 스티어링 칼럼 내부 클럭 스프링 고장, 에어백 모듈 침수 부식, 안전벨트 프리텐셔너 이상, 사고 후 시스템 미초기화, 조수석 에어백 수동 OFF 상태가 보고된다. | 공통 / 승용차 / 에어백 탑재 차량 전반 / 전 연식 / 글로벌 |
+| `reset-without-fixing-cause-masks-safety-issue` | 논쟁 🔶 | 후기 | 경고등을 임의로 리셋해 끄기만 하면 근본 고장을 가릴 수 있으므로, 원인을 점검으로 확인하기 전에 리셋만 반복하면 안 된다. | 공통 / 승용차 / 에어백 탑재 차량 전반 / 전 연식 / 글로벌 |
+| `recall-check-car-go-kr-registration-vin` | 확실 | 공식 | 자동차리콜센터 리콜대상확인 메뉴에서 자동차등록번호와 차대번호를 입력하면 해당 차량의 리콜 대상 여부와 조치 여부를 확인할 수 있으며, 조회는 평일 09:00~18:00 업무시간에 제한된다. | 공통 / 승용차 / 자동차관리법 적용 차량 / 전 연식 / KR |
+| `self-reset-procedure-not-found-in-manual` | 확인실패 | 실측 | 기아 2026 매뉴얼의 에어백 정비 및 점검 안내 페이지에서 사용자가 에어백 경고등을 직접 끄는 절차는 확인하지 못했다. 같은 페이지는 사용자 정비 가능 부품이 없다고만 안내한다. | 기아 / 승용차 / 매뉴얼 코드 TK1 / 2026 / KR |
+
+### 차량 블루투스 연결이 안 되거나 끊길 때 점검 순서 (차량 헤드유닛 쪽 삭제·재등록, 기기 등록 수 한도, 휴대폰 쪽 연결 이력 초기화) <sub>2026-11-03 · car-bluetooth-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `car-bt-delete-erases-call-history` | 확실 | 공식 | 현대 NEXO 매뉴얼 기준, 헤드유닛에서 블루투스 기기를 삭제하면 그 기기에 저장되어 있던 최근 통화 목록과 전화번호부 목록 전체가 함께 삭제된다. | 현대 / 자동차 / NEXO 매뉴얼 (헤드유닛 PREM_GEN5) / 매뉴얼 기준 연식 미표기 / KR |
+| `car-bt-max-devices-hyundai-nexo-5` | 확실 | 공식 | 현대 NEXO 매뉴얼 기준 블루투스 기기는 최대 5개까지 등록할 수 있다. | 현대 / 자동차 / NEXO 매뉴얼 (헤드유닛 PREM_GEN5) / 매뉴얼 기준 연식 미표기 / KR |
+| `car-bt-max-devices-kia-k9-6` | 확실 | 공식 | 기아 K9 매뉴얼 기준 블루투스 기기는 최대 6개까지 등록할 수 있다. | 기아 / 자동차 / K9 매뉴얼 (헤드유닛 PREM_GEN6) / 매뉴얼 기준 연식 미표기 / KR |
+| `car-bt-one-handsfree-or-two-audio-kia` | 확실 | 공식 | 기아 K9 매뉴얼 기준 동시에 연결할 수 있는 것은 블루투스 핸즈프리 1개 또는 블루투스 오디오 2개이다. | 기아 / 자동차 / K9 매뉴얼 (헤드유닛 PREM_GEN6) / 매뉴얼 기준 연식 미표기 / KR |
+| `car-bt-one-connection-hyundai-nexo` | 확실 | 공식 | 현대 NEXO 매뉴얼 기준 블루투스 기기는 한 번에 한 개만 연결할 수 있다. | 현대 / 자동차 / NEXO 매뉴얼 (헤드유닛 PREM_GEN5) / 매뉴얼 기준 연식 미표기 / KR |
+| `car-bt-initial-name-hyundai-nexo` | 확실 | 공식 | 현대 NEXO 헤드유닛의 초기 차량 이름은 NEXO이고 초기 인증번호는 0000이다. | 현대 / 자동차 / NEXO 매뉴얼 (헤드유닛 PREM_GEN5) / 매뉴얼 기준 연식 미표기 / KR |
+| `car-bt-initial-name-kia-k9` | 확실 | 공식 | 기아 K9 헤드유닛의 초기 차량 이름은 K9이며, 매뉴얼에는 구체적인 인증번호 값이 없고 기기에 따라 입력이 필요하거나 필요하지 않다고만 나온다. | 기아 / 자동차 / K9 매뉴얼 (헤드유닛 PREM_GEN6) / 매뉴얼 기준 연식 미표기 / KR |
+| `car-bt-pairing-steps-kia-k9` | 확실 | 공식 | 기아 K9 매뉴얼 기준 등록 순서는 등록 대기 화면에서 차량 이름을 검색해 선택하고, 휴대폰에 뜬 인증 번호를 확인해 승인한 뒤, 휴대폰의 접근 권한 요청에 응답하는 것이다. 연결이 끝나면 화면에 최근 통화 목록이나 연결된 기기 이름이 표시된다. | 기아 / 자동차 / K9 매뉴얼 (헤드유닛 PREM_GEN6) / 매뉴얼 기준 연식 미표기 / KR |
+| `car-bt-pairing-blocked-while-connected` | 확실 | 공식 | 기아 K9 매뉴얼 기준 블루투스 기기가 연결된 동안에는 다른 기기를 새로 등록할 수 없다. | 기아 / 자동차 / K9 매뉴얼 (헤드유닛 PREM_GEN6) / 매뉴얼 기준 연식 미표기 / KR |
+| `car-bt-phone-lock-blocks-headunit` | 확실 | 공식 | 기아 K9 매뉴얼 기준 블루투스를 지원하는 휴대폰이라도 휴대폰의 연결 모드가 잠금 상태이면 헤드유닛과 연결되지 않는다. | 기아 / 자동차 / K9 매뉴얼 (헤드유닛 PREM_GEN6) / 매뉴얼 기준 연식 미표기 / KR |
+| `car-bt-no-device-handling-while-driving` | 확실 | 공식 | 기아 매뉴얼은 운전 중 블루투스 기기를 지나치게 조작하는 것을 삼가라고 안내한다. | 기아 / 자동차 / K9 매뉴얼 (헤드유닛 PREM_GEN6) / 매뉴얼 기준 연식 미표기 / KR |
+| `samsung-phone-clear-list-then-reconnect` | 확실 | 공식 | 삼성전자서비스 안내에 따르면 블루투스 차량 핸즈프리가 안 붙으면 휴대폰의 블루투스 목록에서 차량 핸즈프리 등 연결 기기 목록을 삭제하거나 네트워크 초기화를 해서 연결 이력을 지운 뒤, 새로 연결해 본다. | 삼성 / 스마트폰 / 갤럭시 (블루투스 차량 핸즈프리 연결) / 전 연식 / KR |
+| `samsung-network-reset-last-step` | 확실 | 공식 | 삼성전자서비스 안내에 따르면 연결 이력을 지운 뒤에도 블루투스 연결이 안 되면 휴대폰의 네트워크 설정을 초기화한 뒤 다시 연결해 본다. | 삼성 / 스마트폰 / 갤럭시 (블루투스 차량 핸즈프리 연결) / 전 연식 / KR |
+| `samsung-svc-contact-car-maker` | 확실 | 공식 | 삼성전자서비스는 차량 블루투스 핸즈프리의 사용 방법은 차량 제조사에 문의하라고 안내한다. | 삼성 / 스마트폰 / 갤럭시 (블루투스 차량 핸즈프리 연결) / 전 연식 / KR |
+| `community-nav-update-routine-reset-unsure` | 논쟁 🔶 | 후기 | 삼성 커뮤니티의 한 사용자는 차량 네비게이션을 업그레이드한 뒤 갤럭시 루틴을 삭제해 연결 문제가 해결됐다고 보고했다. 같은 글에서 본인도 내비 문제인지 루틴 설정이 꼬인 것인지 확실하지 않다고 적었다. | 공통 / 자동차 / 차량 내비게이션 업그레이드 후 증상 (차종 미표기) / 미표기 / KR |
+
+### 엔진 경고등(엔진 점검 경고등) 점등 시 주행 가능 여부 판단과 자가 점검 <sub>2026-11-03 · car-check-engine-light-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `engine-warning-startup-check` | 확실 | 공식 | 시동을 ON 하면 엔진 경고등이 켜졌다가 약 3초 후 꺼지는 것이 정상 자기진단 동작이다. | 현대 / 자동차 / 가솔린·디젤 승용(매뉴얼 기준 모델) / 2026 매뉴얼 기준 / KR |
+| `engine-warning-stays-on-after-start` | 확실 | 공식 | 시동 후 약 3초가 지나도 엔진 경고등이 꺼지지 않으면 엔진 제어 장치나 연료 공급 장치에 이상이 있는 것이므로, 가능한 한 빨리 점검을 받아야 한다. | 현대 / 자동차 / 가솔린·디젤 승용(매뉴얼 기준 모델) / 2026 매뉴얼 기준 / KR |
+| `engine-warning-steady-or-blink-no-continued-driving` | 확실 | 공식 | 엔진 경고등이 켜진 상태나 깜빡이는 상태로 계속 주행하면 배기 제어 계통이 손상될 수 있고 배기가스 규제와 관련된 제재를 받을 수 있으므로, 계속 달리지 말고 점검을 받아야 한다. | 현대 / 자동차 / 가솔린·디젤 승용(매뉴얼 기준 모델) / 2026 매뉴얼 기준 / KR |
+| `engine-warning-no-start-tow` | 확실 | 공식 | 일부 엔진 제어 장치에 이상이 생기면 시동이 걸리지 않을 수 있으며, 이 경우 현대 매뉴얼은 차량을 견인하라고 안내한다. | 현대 / 자동차 / 가솔린·디젤 승용(매뉴얼 기준 모델) / 2026 매뉴얼 기준 / KR |
+| `engine-warning-fuel-cap-loose` | 확실 | 공식 | 주유 후 연료 캡이 완전히 잠기지 않으면 엔진 경고등이 켜질 수 있으며, 이는 차량 또는 부품 고장이 아니다. 연료 캡을 '딸깍' 소리가 날 때까지 다시 잠그면 된다. | 현대 / 자동차 / 가솔린 승용(연료 캡 방식 차량) / 2026 매뉴얼 기준 / KR |
+| `engine-warning-fuel-cap-reset-then-inspect` | 확실 | 공식 | 연료 캡을 다시 잠가도 엔진 경고등이 계속 켜져 있으면 현대 매뉴얼 기준으로 블루핸즈나 하이테크센터에서 점검을 받아야 한다. | 현대 / 자동차 / 가솔린 승용 / 2026 매뉴얼 기준 / KR |
+| `engine-warning-low-oil-cause` | 확실 | 공식 | 엔진 오일이 부족한 상태로 반복하여 지속 주행하면 엔진 출력이 제한되고 엔진 경고등이 켜진다. | 현대 / 자동차 / 가솔린·디젤 승용 / 2026 매뉴얼 기준 / KR |
+| `engine-warning-vs-oil-pressure-light` | 확실 | 공식 | 엔진 경고등과 엔진 오일 압력 경고등은 별개의 표시등이다. 오일 압력 경고등은 오일 압력 저하를, 엔진 경고등은 엔진 제어·연료·배기 계통 등 일반 엔진 이상을 알린다. | 현대 / 자동차 / 가솔린·디젤 승용 / 2026 매뉴얼 기준 / KR |
+| `engine-warning-color-tier-unverified` | 확인실패 | 공식 | 엔진 경고등의 노란색과 빨간색 사이에 긴급도 차이가 있다는 점은 현대 공식 매뉴얼의 엔진 경고등 항목에서 확인하지 못했다. | 현대 / 자동차 / 가솔린·디젤 승용 / 2026 매뉴얼 기준 / KR |
+| `engine-warning-red-stop-blog-note` | 논쟁 🔶 | 후기 | 일부 정비 안내 블로그(좋은정보모아, 후기 성격)는 빨간 엔진 경고등을 심각한 문제로 보고 즉시 안전한 곳에 정차해 시동을 끄라고 안내한다. 노란색은 즉각 조치는 필요 없지만 점검이 필요하다는 입장이다. | 공통 / 자동차 / 엔진 경고등 전반(색상 기준) / 2026-11 확인 시점 / KR |
+| `engine-warning-no-cost-verified` | 확인실패 | 공식 | 엔진 경고등 점검 시 진단 비용은 공식 자료에서 확인하지 못했다. 정비소마다 다르므로 공식 수치로 제시하지 않는다. | 공통 / 자동차 / 전 라인 / 전 연식 / KR |
+
+### 자동차 계기판 경고등 종류별 의미와 대처 (색상 기준, 주요 경고등 의미, 즉시 정차 기준, 제조사 점검처) <sub>2026-11-03 · car-dashboard-warning-lights-guide</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `color-coding-hyundai-no-urgency-table` | 확실 | 공식 | 현대 2026 오너스매뉴얼의 '경고등 및 표시등' 페이지는 빨강·노랑·초록을 긴급도 단계로 묶는 표를 두지 않고, 램프마다 색과 조치를 따로 설명한다. | 현대 / 승용차 / 가솔린·디젤 승용(MX5 2026 매뉴얼 기준) / 2026 매뉴얼 기준 / KR |
+| `color-red-stop-rule-unverified` | 확인실패 | 공식 | '빨간 경고등은 즉시 정차, 노란 경고등은 나중에 점검'이라는 색상 기준은 현대 2026 매뉴얼 원문에서 확인하지 못했다. 원문에서 정차를 명시한 것은 엔진 오일 압력 경고등 등 개별 램프에 한정된다. | 현대 / 승용차 / 가솔린·디젤 승용(MX5 2026 매뉴얼 기준) / 2026 매뉴얼 기준 / KR |
+| `kia-color-yellow-orange-means-fault` | 확실 | 공식 | 기아 2026 오너스매뉴얼에서 노란색(주황색) 표시등은 대체로 기능 미설정·이상·고장을 뜻한다. 예: 조향 안전 노란색 계속 점등, 자동 정차 노란색 고장, 지능형 속도 제한 노란색 점등. | 기아 / 승용차 / 주행 보조 표시등(전방·조향·차로 안전 등), 매뉴얼 코드 TK1 / 2026 매뉴얼 기준 / KR |
+| `kia-color-green-means-active` | 확실 | 공식 | 기아 2026 오너스매뉴얼에서 초록색 표시등은 기능이 작동 중이거나 작동 가능한 상태를 뜻한다. 예: 자동 정차가 작동 중일 때 초록, 차로 안전 기능이 작동 가능할 때 초록. | 기아 / 승용차 / 주행 보조 표시등, 매뉴얼 코드 TK1 / 2026 매뉴얼 기준 / KR |
+| `kia-oil-pressure-stop-safely` | 확실 | 공식 | 기아 2026 오너스매뉴얼은 주행 중 엔진 오일 압력 경고등이 켜지면 도로 옆으로 차를 안전하게 정차하고 엔진 오일양을 점검해, 부족하면 보충하라고 안내한다. | 기아 / 승용차 / 엔진 오일 압력 경고등, 매뉴얼 코드 TK1 / 2026 매뉴얼 기준 / KR |
+| `kia-brake-warning-release-parking-then-fluid` | 확실 | 공식 | 기아 2026 오너스매뉴얼은 시동 후 주차 브레이크를 해제했는데도 브레이크 경고등이 꺼지지 않으면 브레이크액량을 점검하고, 부족하면 보충하라고 안내한다. | 기아 / 승용차 / 브레이크 경고등, 매뉴얼 코드 TK1 / 2026 매뉴얼 기준 / KR |
+| `kia-charging-warning-check-belt-charging` | 확실 | 공식 | 기아 2026 오너스매뉴얼은 충전(배터리) 경고등이 켜졌을 때 배터리 충전 상태를 확인하고, 팬 벨트나 충전 계통을 점검하라고 안내한다. | 기아 / 승용차 / 충전 경고등, 매뉴얼 코드 TK1 / 2026 매뉴얼 기준 / KR |
+| `hyundai-charging-warning-no-continued-drive` | 확실 | 공식 | 현대 2026 오너스매뉴얼은 충전 경고등이 켜진 상태로 계속 주행하면 엔진이 과열되거나 배터리가 방전될 수 있다고 안내한다. | 현대 / 승용차 / 충전 경고등, MX5 2026 매뉴얼 기준 / 2026 매뉴얼 기준 / KR |
+| `kia-abs-warning-3s-then-service` | 확실 | 공식 | 기아 2026 오너스매뉴얼은 ABS 경고등이 약 3초 후에도 계속 켜져 있으면 ABS 장치 이상으로 보고, 자사 직영 서비스센터 또는 서비스협력사에 점검·정비를 의뢰하라고 안내한다. | 기아 / 승용차 / ABS 경고등, 매뉴얼 코드 TK1 / 2026 매뉴얼 기준 / KR |
+| `kia-airbag-6s-then-service` | 확실 | 공식 | 기아 2026 오너스매뉴얼은 에어백 경고등이 약 6초 후에도 꺼지지 않고 계속 켜져 있거나 주행 중 켜지면 에어백 장치 이상으로 보고, 자사 직영 서비스센터 또는 서비스협력사에 정비를 의뢰하라고 안내한다. | 기아 / 승용차 / 에어백 경고등, 매뉴얼 코드 TK1 / 2026 매뉴얼 기준 / KR |
+| `kia-engine-warning-service-asap` | 확실 | 공식 | 기아 2026 오너스매뉴얼은 엔진 경고등이 주행 중 켜지면 가능한 한 빨리 자사 직영 서비스센터 또는 서비스협력사에 정비를 의뢰하라고 안내한다. | 기아 / 승용차 / 엔진 경고등, 매뉴얼 코드 TK1 / 2026 매뉴얼 기준 / KR |
+| `kia-inspection-location-direct-or-partner` | 확실 | 공식 | 기아 2026 오너스매뉴얼은 경고등 이상 시 점검처로 자사 직영 서비스센터 또는 서비스협력사를 명시한다. | 기아 / 승용차 / 전 라인(TK1 2026 매뉴얼 기준) / 2026 매뉴얼 기준 / KR |
+| `hyundai-inspection-location-hightech-bluehands` | 확실 | 공식 | 현대 2026 오너스매뉴얼은 경고등 점검처로 당사 직영 하이테크센터 또는 블루핸즈를 명시한다. | 현대 / 승용차 / MX5 2026 매뉴얼 기준 / 2026 매뉴얼 기준 / KR |
+| `hyundai-tpms-low-pressure-warning` | 확실 | 공식 | 현대 2026 오너스매뉴얼은 타이어 공기압이 현저히 낮으면 주행이 불안정해지고 제동거리가 늘어나 매우 위험하다고 안내한다. 시동 시 저압 타이어 경고등이 켜지지 않거나 깜빡인 뒤 켜지면 감지 시스템 점검이 필요하다고 안내한다. | 현대 / 승용차 / TPMS 탑재 승용(MX5 2026 매뉴얼 기준) / 2026 매뉴얼 기준 / KR |
+
+### 겨울 아침 차 문이 얼어서 안 열릴 때 대처 (고무 씰 동결·손잡이 결빙·열쇠 구멍 동결, 해빙 방법과 금지 사항, 예방) <sub>2026-11-03 · car-door-frozen-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `door-frozen-no-yank-seal-handle` | 확실 🔶 | 후기 | 차 문이 고무 씰 주변의 얼어붙은 물기 때문에 안 열릴 때는 문을 힘껏 잡아당기면 안 된다. 씰이 손상될 수 있고 손잡이가 부러질 수 있다. 먼저 문을 단단하지만 부드러운 힘으로 밀었다가 당기기를 여러 번 반복한다. | 공통 / 자동차 / 도어 씰 동결 일반 / 전 연식 / 글로벌 |
+| `boiling-water-glass-thermal-shock` | 확실 🔶 | 후기 | 끓는 물은 차 문 해빙에 쓰지 않는다. 차갑게 식은 유리 표면에 급격한 온도 충격이 가해져 유리가 회복 불가능하게 손상될 수 있다고 AAA 기사가 경고한다. | 공통 / 자동차 / 도어 유리·차체 전반 / 전 연식 / 글로벌 |
+| `warm-water-lukewarm-only` | 논쟁 🔶 | 후기 | 얼어붙은 문을 녹일 때 물을 쓰는 방법이 AAA 안내에 있다. 물을 데워 문과 자물쇠 주변에 붓는 방식이며, 끓는 물은 피하라고 함께 적혀 있다. 물 온도는 끓지 않는 정도로 낮춘다. | 공통 / 자동차 / 도어 문 틈·자물쇠 해빙 / 전 연식 / 글로벌 |
+| `hyundai-keyhole-deicer-prevention` | 확실 | 공식 | 현대 오너스 매뉴얼은 자물쇠 결빙 예방을 위해 승인된 해빙액(디아이싱 플루이드) 또는 글리세린을 열쇠 구멍에 뿌리라고 안내한다. 열쇠 구멍이 얼음으로 덮였으면 승인된 해빙액을 얼음 위에 뿌려 제거한다. | 현대 / 자동차 / 열쇠 구멍 결빙 예방·제거 (차종 미특정) / 페이지 기준, 모델·연식 미기재 / KR |
+| `hyundai-internal-lock-heated-key-care` | 확실 | 공식 | 현대 매뉴얼은 자물쇠 내부 부품이 얼었을 때 열쇠를 데워 녹이라고 하지만, 그 과정에서 다치지 않도록 조심해서 쓰라고 함께 적는다. | 현대 / 자동차 / 기계식 열쇠 자물쇠 내부 동결 / 페이지 기준, 모델·연식 미기재 / KR |
+| `kia-handle-ice-fist-tap` | 확실 | 공식 | 기아 매뉴얼은 얼어붙은 도어 손잡이를 주먹 아랫부분으로 두드려 얼음을 깨라고 안내한다. 원형으로 손잡이 둘레를 두드리고, 필요하면 세기를 높이며, 손잡이가 튀어나와 문이 열릴 때까지 반복한다. 이후 문을 여러 번 열고 닫아 잔여 얼음을 푼다. | 기아 / 자동차 / 도어 손잡이(플러시형 포함 여부 페이지 미특정) / 2026 매뉴얼 페이지 기준 / 글로벌(en_RG 페이지) |
+| `kia-handle-no-tools-paint-care` | 확실 | 공식 | 기아 매뉴얼은 손잡이 얼음을 깰 때 도구나 과한 힘을 쓰지 말고, 도장을 손상시킬 수 있는 반지·시계 같은 물건을 먼저 빼라고 한다. | 기아 / 자동차 / 도어 손잡이 얼음 제거 일반 / 2026 매뉴얼 페이지 기준 / 글로벌(en_RG 페이지) |
+| `kia-keep-mechanical-key-on-hand` | 확실 | 공식 | 기아 매뉴얼은 차량 또는 스마트키 배터리가 부족할 때를 대비해 기계식 키를 항상 지니고 다니라고 안내한다. | 기아 / 자동차 / 스마트키 차량 / 2026 매뉴얼 페이지 기준 / 글로벌(en_RG 페이지) |
+| `heated-key-electronic-no-flame` | 확실 🔶 | 후기 | 전자 칩이 든 스마트키나 전자 부품이 있는 키는 라이터·불꽃으로 가열하면 안 된다. 열이 전자 회로를 손상시킬 수 있다. | 공통 / 자동차 / 전자 칩 내장 키 / 전 연식 / 글로벌 |
+| `seal-dry-then-silicone-after-open` | 확인실패 🔶 | 후기 | 문을 연 뒤 고무 씰의 물기를 닦아 말리고 실리콘 스프레이를 바르면 재동결을 줄일 수 있다는 AAA 지부 안내가 있다. | 공통 / 자동차 / 도어 고무 씰 예방 / 전 연식 / 글로벌 |
+| `no-official-hot-water-or-as-criteria-found` | 확인실패 | 공식 | 현대·기아 공식 오너스 매뉴얼 두 페이지(겨울철 주의사항, 손잡이 얼음 제거)에는 뜨거운 물 사용 금지 또는 도어 씰 손상 경고가 없었다. 또한 얼어붙은 문에 대한 서비스센터 접수 기준은 확인하지 못했다. | 공통 / 자동차 / 현대·기아 매뉴얼 두 페이지 범위 / 2026 매뉴얼 페이지 기준 / 글로벌(기아 en_RG) / KR(현대) |
+
+### 타이어 펑크 시 안전한 대처 순서 (주행 중 제어 · 정차 후 안전 확보 · 응급 수리키트 · 스페어 · 긴급견인) <sub>2026-11-03 · car-flat-tire-emergency-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `flat-tire-no-sudden-brake` | 확실 | 공식 | 타이어가 펑크 나면 급브레이크를 밟지 않고 핸들을 단단히 잡아 진행 방향을 유지하면서 서서히 속도를 줄여 안전한 곳으로 이동한다. 펑크 난 상태에서 급제동하면 타이어가 휠에서 이탈하고 차체 제어가 어려워진다. | 공통 / 자동차 / 승용차·승합차·화물차 전반 / 전 연식 / KR |
+| `flat-tire-hazard-lights-unverified` | 확인실패 | 공식 | 펑크 직후 비상경고등을 켜고 가속페달에서 발을 떼어 안전한 곳으로 이동한다는 응급 조치는 현대자동차 응급조치 안내 문서에 있는 것으로 검색 요약에 나왔으나, 해당 PDF 원문은 자동 추출이 실패해 문구를 직접 확인하지 못했다. | 현대 / 자동차 / 차종 미특정 / 2020 문서 / KR |
+| `towing-2504-safety-zone-free` | 확실 | 공식 | 고속도로 본선이나 갓길에서 2차 사고가 우려되는 소형차량은 한국도로공사 콜센터 1588-2504로 긴급견인을 신청할 수 있으며, 가장 가까운 휴게소·영업소·졸음쉼터 등 안전지대까지의 견인비는 한국도로공사가 부담한다. | 공통 / 자동차 / 한국도로공사 관리 고속도로의 소형차량(승용차·16인 이하 승합·1.4톤 이하 화물) / 2012 공지 기준 / KR |
+| `towing-beyond-safety-zone-unverified` | 확인실패 | 공식 | 긴급견인으로 안전지대에 도착한 뒤 최종 목적지까지 이동하는 비용을 누가 부담하는지는 한국도로공사 공지 원문에서 확인하지 못했다. | 공통 / 자동차 / 한국도로공사 긴급견인 후 목적지 구간 / 2012 공지 기준 / KR |
+| `tmk-tread-only-size-limit` | 확실 | 공식 | 타이어 리페어킷(TMK)은 못 등 날카로운 물체에 찔려 생긴 트레드부 펑크에만 쓰며, 측면 손상이나 심각한 손상에는 쓰지 않는다. 6mm 이상 손상에는 효과가 없다. | 기아 / 자동차 / 타이어 리페어킷(TMK) 장착 차량 (모델 미특정) / 매뉴얼 기준 (연식 미특정) / KR |
+| `tmk-hyundai-4mm-limit` | 확실 | 공식 | 현대 2026 그랜저(GN7) 매뉴얼은 4mm 이상의 타이어 손상은 응급 처치 키트(TMK)로 수리하지 말고 직영 하이테크센터나 블루핸즈에서 점검과 정비를 받으라고 안내한다. | 현대 / 자동차 / 그랜저 GN7 / 2026 매뉴얼 / KR |
+| `tmk-compressor-engine-running` | 확실 | 공식 | TMK 컴프레서는 시동이 걸린 상태에서 사용해야 한다. 시동 없이 쓰면 차량 배터리가 방전될 수 있다. | 현대 / 자동차 / 그랜저 GN7 (기아 TMK 매뉴얼도 같은 취지) / 2026 매뉴얼 / KR |
+| `tmk-compressor-10min-limit` | 확실 | 공식 | TMK 컴프레서는 약 5~7분 작동해 공기압을 26psi(180kPa) 이상으로 채운다. 연속 작동은 10분 이내로 제한하며, 10분 넘게 돌리면 과열되거나 손상될 수 있다. | 기아 / 자동차 / 타이어 리페어킷(TMK) 장착 차량 (모델 미특정) / 매뉴얼 기준 (연식 미특정) / KR |
+| `tmk-sealant-drive-then-80kmh-limit` | 확실 | 공식 | 실런트 주입 직후 약 20km/h 이상으로 7~10km 또는 약 10분 주행해 실런트를 타이어 안에 고르게 퍼뜨린다. 이후 80km/h 이하로 주행하고, 200km 이내에 직영 하이테크센터나 블루핸즈에서 타이어를 교체한다. | 현대 / 자동차 / 그랜저 GN7 (기아 TMK 매뉴얼도 80km/h 이하를 같은 취지로 명시) / 2026 매뉴얼 / KR |
+| `tmk-sensor-sealant-cleaning` | 확실 | 공식 | 실런트가 타이어 공기압 감지 센서와 휠에 묻으면 반드시 제거해야 한다. 그대로 두면 소음·진동이나 센서 손상이 생길 수 있으며, 제거와 점검은 서비스센터나 서비스협력사에서 받는다. | 기아 / 자동차 / TPMS 장착 차량 (모델 미특정) / 매뉴얼 기준 (연식 미특정) / KR |
+| `spare-tire-jack-point` | 확실 | 공식 | 스페어 교체 시 잭은 교체해야 할 타이어에서 가장 가까운 잭 포인트 아래에 설치한다. | 기아 / 자동차 / 오너스 매뉴얼 타이어 교체 절차 (모델 미특정) / 2024 매뉴얼 / KR |
+| `spare-lug-nut-torque-recheck` | 확실 | 공식 | 휠 너트는 대각선 순서로 2~3회에 걸쳐 규정 토크까지 조인다. 타이어를 교체한 뒤 약 50km 주행 후 다시 조이고, 약 1,000km 주행 후 한 번 더 점검한다. | 기아 / 자동차 / 오너스 매뉴얼 타이어 교체 절차 (모델 미특정) / 2024 매뉴얼 / KR |
+| `spare-speed-limit-unverified` | 확인실패 | 공식 | 임시 스페어(템퍼러리 타이어)의 속도 제한과 주행 거리 제한은 기아 타이어 교체 절차 원문에서 확인하지 못했다. 블로그 다수는 80km/h 이하를 권하지만 공식 근거로는 쓰지 않는다. | 기아 / 자동차 / 임시 스페어 장착 차량 (모델 미특정) / 2024 매뉴얼 / KR |
+| `highway-triangle-distance-revision-unconfirmed` | 확인실패 🔶 | 후기 | 2016년 보도는 현행 도로교통법상 고속도로에서 차가 멈추면 안전삼각대를 주간 100m, 야간 200m 전방에 두도록 되어 있다고 전했다. 같은 보도에서 정부는 거리 기준을 대폭 축소하거나 폐지하고 발광장치로 대체할 수 있도록 시행규칙을 개정할 계획이라고 밝혔다. 개정 후 현행 기준은 확인하지 못했다. | 공통 / 자동차 / 고속도로 정차 차량 / 2016 보도 기준 / KR |
+
+### 자동차 히터가 따뜻해지지 않을 때 점검 순서 (냉각수 수위·서모스탯·히터 코어·에어 혼입) <sub>2026-11-03 · car-heater-not-warm-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `heater-warm-cause-coolant-low` | 논쟁 🔶 | 후기 | 히터가 따뜻하지 않은 주요 원인 중 하나는 냉각수 부족이다. 냉각수는 엔진 열을 히터 코어로 옮기는 매체이므로 양이 부족하면 히터 코어로 온수가 충분히 흐르지 않는다. | 공통 / 자동차 / 내연기관 승용(히터 코어 온수 방식) / 전 연식 / KR |
+| `heater-warm-cause-thermostat-stuck-open` | 논쟁 🔶 | 후기 | 서모스탯(온도조절기)이 열린 상태로 고착되면 냉각수가 계속 순환해 엔진이 충분히 데워지지 않고, 그 결과 히터 효율이 떨어져 바람이 미지근하거나 따뜻해지지 않을 수 있다. | 공통 / 자동차 / 내연기관 승용 / 전 연식 / KR |
+| `heater-warm-cause-core-clog-flush` | 논쟁 🔶 | 후기 | 히터 코어 내부가 막히면 열전달이 떨어져 히터가 따뜻해지지 않을 수 있다. 막힘은 세척(플러싱)으로 해결되는 경우가 있고, 코어에서 누수가 생기면 교체가 필요하다고 정비 블로그는 설명한다. | 공통 / 자동차 / 내연기관 승용 / 전 연식 / KR |
+| `heater-check-coolant-engine-off` | 확실 | 공식 | 냉각수 양은 엔진 온도에 따라 달라지므로, 점검하거나 보충하기 전에 엔진을 끄고 식은 상태에서 확인해야 한다. | 현대 / 자동차 / DN8 2025 매뉴얼 기준 승용 / 2025 매뉴얼 기준 / 글로벌(영문판) |
+| `coolant-low-add-distilled-to-max` | 확실 | 공식 | 냉각수가 부족하면 리저버의 MAX 표시까지 증류수(탈이온수)를 보충하고, 과하게 채우지 않는다. | 현대 / 자동차 / DN8 2025 매뉴얼 기준 승용 / 2025 매뉴얼 기준 / 글로벌(영문판) |
+| `coolant-mix-45-factory-35-60-range` | 확실 | 공식 | 현대 공식 안내에 따르면 차량 출고 시 부동액 혼합비율은 45%이며, 부동액 농도가 35% 미만이거나 60%를 넘으면 엔진 내부 부식이나 과열 가능성이 있다. | 현대 / 자동차 / QT 2026 매뉴얼 기준 승용 / 2026 매뉴얼 기준 / KR |
+| `coolant-after-refill-check-mix-leak-days` | 확실 | 공식 | 냉각수를 보충한 뒤에는 부동액 혼합 비율을 점검하고, 누수가 없는지 다시 확인하며, 며칠 뒤 보조 탱크 수위를 한 번 더 점검해 필요하면 보충한다. | 현대 / 자동차 / QT 2026 매뉴얼 기준 승용 / 2026 매뉴얼 기준 / KR |
+| `coolant-loss-persists-bluehands` | 확실 | 공식 | 보충 후에도 냉각수 감소가 현저하면 현대 직영 하이테크센터 또는 블루핸즈에서 점검을 받아야 한다. | 현대 / 자동차 / QT 2026 매뉴얼 기준 승용 / 2026 매뉴얼 기준 / KR |
+| `coolant-low-check-leak-hoses-pump` | 확실 | 공식 | 냉각수가 부족하면 보충 전에 호스 연결부, 라디에이터, 워터 펌프 등에서 누수가 있는지 확인하고, 누수가 없을 때 냉각수를 보충한다. | 현대 / 자동차 / QZ 2026 매뉴얼 기준 승용 / 2026 매뉴얼 기준 / KR |
+| `gauge-h-possible-overheat` | 확실 | 공식 | 냉각수 수온계 바늘은 C(Cold)와 H(Hot) 사이의 정상 범위에 있어야 하며, 바늘이 H를 가리키면 엔진 과열 가능성이 있다. | 현대 / 자동차 / US4 2026 매뉴얼 기준 승용 / 2026 매뉴얼 기준 / KR |
+| `overheat-hot-cap-never-open` | 확실 | 공식 | 엔진과 라디에이터가 뜨거울 때는 냉각수 탱크 캡이나 라디에이터 캡을 열면 안 된다. 뜨거운 냉각수와 증기가 분출해 눈과 피부에 화상을 입을 수 있다. | 현대 / 자동차 / QZ 2026 매뉴얼 기준 승용 / 2026 매뉴얼 기준 / KR |
+| `overheat-add-coolant-slowly-when-cool` | 확실 | 공식 | 과열 후 냉각수를 보충할 때는 엔진을 끄고 식힌 뒤 냉각수를 천천히 조금씩 넣어야 한다. 차가운 냉각수를 한꺼번에 넣으면 엔진에 균열이 생길 수 있다. | 현대 / 자동차 / QZ 2026 매뉴얼 기준 승용 / 2026 매뉴얼 기준 / KR |
+| `overheat-leak-stop-engine-call-dealer` | 확실 | 공식 | 냉각수나 뜨거운 증기가 새어 나오면 엔진을 정지시키고 현대 직영 하이테크센터 또는 블루핸즈에 연락해야 한다. | 현대 / 자동차 / QZ 2026 매뉴얼 기준 승용 / 2026 매뉴얼 기준 / KR |
+| `heater-knob-red-hot-blue-cold` | 확실 | 공식 | 온도 조절 노브를 오른쪽(빨간색)으로 돌리면 더운 바람이, 왼쪽(파란색)으로 돌리면 찬 바람이 나온다. | 현대 / 자동차 / 투싼(NX4) 2025 매뉴얼 기준 / 2025 매뉴얼 기준 / KR |
+| `heater-floor-mode-winter-recommended` | 확실 | 공식 | 겨울철 난방은 발끝 방향으로 바람이 나오는 위치가 일반적인 난방 위치이며, 앞유리 김서림 방지를 위해 앞유리 쪽으로도 약간의 바람이 나오도록 설정한다. | 현대 / 자동차 / 투싼(NX4) 2025 매뉴얼 기준 / 2025 매뉴얼 기준 / KR |
+
+### 스마트키 인식 불량 시 배터리 교체와 비상 시동 (자동차 공통) <sub>2026-11-03 · car-key-fob-battery-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `hyundai-2025-ce1-keyfob-battery-cr2450` | 확실 | 공식 | 현대 2025년형 사용 설명서(CE1 코드)에 따르면 스마트 키에는 동전형 리튬 배터리 CR2450 1개를 사용한다. | 현대 / 자동차 / CE1 코드 2025 사용 설명서 (차종명 미기재) / 2025년형 / KR |
+| `hyundai-keyfob-cover-open-steps` | 확실 | 공식 | 현대 스마트 키 배터리 교체는 키 옆면의 홈에 부드러운 천을 대고 일자 드라이버로 커버를 분리하며, 사용한 배터리를 빼고 극성(+/-)을 확인해 새 배터리를 넣은 뒤 커버를 닫고 가장자리를 눌러 완전히 결합한다. | 현대 / 자동차 / CE1 코드 2025 사용 설명서 (차종명 미기재) / 2025년형 / KR |
+| `kia-keyfob-battery-cr2032` | 확실 | 공식 | 기아 스마트 키 배터리는 CR2032 3볼트 리튬 코인 배터리이다. 교체 순서는 기계식 키를 먼저 분리하고, 키 커버를 열고(pry open), 배터리를 교체한 뒤 분해의 역순으로 조립한다. | 기아 / 자동차 / 스마트키 영문 매뉴얼 (차종명 미기재, NQ5 2024 및 SG2 2026 두 판 확인) / 2024~2026 / 글로벌(영문판) |
+| `kia-keyfob-battery-polarity-warning` | 확실 | 공식 | 기아 스마트 키 배터리를 극성이 잘못 연결되면 배터리가 방전되어 키를 사용할 수 없게 되며, 잘못 끼우면 키 오작동이나 배터리 조기 방전이 생길 수 있다. | 기아 / 자동차 / 스마트키 영문 매뉴얼 (차종명 미기재) / 2026 / 글로벌(영문판) |
+| `keyfob-battery-swallow-warning` | 확실 | 공식 | 리튬 코인 배터리를 삼키면 2시간 안에 심각하거나 치명적인 손상이 생길 수 있으며, 삼켰거나 몸에 넣었을 의심이 들면 즉시 진료를 받아야 한다. 배터리는 어린이 손에 닿지 않게 보관한다. | 공통 / 자동차 스마트키 / 리튬 코인 배터리 전반 / 전 연식 / 글로벌(영문판) |
+| `hyundai-dead-battery-start-button-fallback` | 확실 | 공식 | 스마트키 배터리가 방전되었거나 전자기기에 의한 전파 방해가 있으면, 시동 버튼을 눌러도 스마트키를 인식하지 못한다. 이때는 스마트키를 시동 버튼에 직접 대고 눌러 시동을 건다. | 현대 / 자동차 / 스마트 키 시동 (QT 2026 사용 설명서, 차종명 미기재) / 2026 / KR |
+| `kia-smartkey-try-other-spot-then-button` | 확실 | 공식 | 기아 설명서는 차 내 일부 영역에서 스마트키가 인식되지 않으면 스마트키를 다른 곳으로 옮겨 시동을 걸어보거나, 스마트키로 시동 버튼을 직접 누르라고 안내한다. | 기아 / 자동차 / 스마트키 시동 (TAMEV 2026 설명서, 차종명 미기재) / 2026 / KR |
+| `kia-keyfob-interference-sources` | 확실 | 공식 | 기아 설명서는 무전기, 휴대폰, 휴대용 유·무선 충전기, 전열장치, 전자담배 등 이동 전자 시스템 및 동전·금속제품 같은 전파 차단 물질과 스마트키를 함께 지니면 인식이 방해될 수 있다고 안내한다. | 기아 / 자동차 / 스마트키 (TAMEV 2026 설명서) / 2026 / KR |
+| `kia-window-tint-metal-range-reduction` | 확실 | 공식 | 차량 유리창에 금속성 선팅지를 붙이면 스마트키 신호 수신이 방해돼 스마트키의 작동 거리가 짧아질 수 있다. | 기아 / 자동차 / 스마트키 (TAMEV 2026 설명서) / 2026 / KR |
+| `hyundai-start-button-fail-go-bluehands` | 확실 | 공식 | 스마트키로 시동 버튼을 직접 눌러도 시동 버튼이 정상 작동하지 않으면 현대 직영 하이테크센터 또는 블루핸즈에 점검을 의뢰하라고 설명서가 안내한다. | 현대 / 자동차 / 스마트 키 시동 (QT 2026) / 2026 / KR |
+| `kia-unsure-go-dealer` | 확실 | 공식 | 기아 설명서는 배터리 교체 방법이 확실하지 않으면 공식 판매점(authorized Kia dealer)에 문의하라고 안내한다. | 기아 / 자동차 / 스마트키 배터리 교체 / 2026 / 글로벌(영문판) |
+| `keyfob-mechanical-key-no-engine-start` | 확인실패 | 공식 | 비상용 기계식 키는 차 문을 여는 용도이며, 스마트키가 인식되지 않을 때 시동 버튼을 대체하는 수단이라는 설명은 확인하지 못했다. | 기아 / 자동차 / 스마트키 기계식 키 / 2026 / KR |
+
+### 후방카메라 화면이 안 나오거나 흐릴 때 점검 (기어 R 연동·렌즈 오염·결로·배선·커넥터·AVN 판별·정비소 기준·안전) <sub>2026-11-03 · car-rear-camera-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `kia-rear-cam-r-gear-power-on` | 확실 | 공식 | 기아 매뉴얼에 따르면 시동이 걸린 상태에서 변속 레버를 R에 놓으면 후방 카메라 전원이 자동으로 켜져 작동한다. 변속 레버를 R에서 다른 위치로 옮기면 작동이 멈춘다. | 기아 / 자동차 / GEN5 AVN 방식 선택사양 후방 카메라 차량 / 매뉴얼 기준(연식 미상) / KR |
+| `kia-rear-cam-screen-distance-gap-look-directly` | 확실 | 공식 | 후방 카메라 화면만 보고 후진 여부를 판단하지 말아야 한다. 광각렌즈를 쓰기 때문에 화면에 보이는 거리와 실제 거리에 차이가 있으며, 실내외 미러와 눈으로 뒤쪽을 직접 확인해야 한다. 사람, 특히 어린이가 뒤에 있다고 생각되면 즉시 정지한다. | 기아 / 자동차 / 후방 카메라 장착 차량 전 라인(매뉴얼 기준) / 매뉴얼 기준(연식 미상) / KR |
+| `hyundai-rear-cam-lens-neutral-detergent-only` | 확실 | 공식 | 현대 매뉴얼은 광각-후방 카메라 렌즈를 청소할 때 순한 비누나 중성 세제만 쓰고 물로 깨끗이 씻으라고 안내한다. 산성 세제와 알칼리성 세제는 쓰지 말라고 명시한다. | 현대 / 자동차 / 광각-후방 카메라 장착 차량(DN8HEV 매뉴얼 페이지 기준, 차종 표기는 페이지에 없음) / 2026 매뉴얼 / KR |
+| `hyundai-rear-cam-obstruction-warning-light` | 확실 | 공식 | 현대 주차 충돌방지 보조가 작동하는 중 후방 카메라나 초음파센서가 눈·비·이물질로 가려지면 해당 방향에 통합 경고등(X)이 뜬다. 확인 위치는 클러스터의 유틸리티 정보 뷰 > 서비스 메시지다. | 현대 / 자동차 / 후방 주차 충돌방지 보조 장착 차량 / 2026 매뉴얼 / KR |
+| `tesla-cam-cleaning-spray-microfiber-dry` | 확실 | 공식 | 카메라 렌즈 청소는 물을 뿌린 뒤 극세사 천으로 조심스럽게 닦고 완전히 말리는 순서다. 화학제품이나 마모를 일으키는 클리너는 쓰지 않는다. 습하거나 눈·비가 오는 날에는 최소 주 1회, 건조한 날에는 월 1회 이상 닦으라고 권한다. | 테슬라 / 자동차 / 사이버트럭 카메라(외부 카메라 전반 청소 절차) / 문서 기준(연식 미상) / KR |
+| `tesla-cam-condensation-block-and-defog-steps` | 확실 | 공식 | 기온이 낮거나 습한 날 외부에 주차하면 카메라 내부에 결로가 생길 수 있다. 이때 터치스크린에 카메라 차단 경고가 뜨고 일부 기능이 일시 제한될 수 있다. 제거하려면 실내를 따뜻하게 프리컨디셔닝하고, 윈드실드 성에 제거 기능을 켜고, 전면 송풍구를 도어 필러 쪽으로 향하게 한다. | 테슬라 / 자동차 / 사이버트럭 카메라 인클로저 결로 / 문서 기준(연식 미상) / KR |
+| `cardcarcare-reverse-light-check-first` | 논쟁 🔶 | 후기 | 후진 기어를 넣었을 때 후면 후진등이 켜지는지 먼저 본다. 후진등이 안 켜지면 카메라가 아니라 후진 스위치(인히비터 스위치)나 관련 퓨즈를 의심한다. 후진등이 켜지는데 화면만 안 나오면 카메라 쪽 신호 경로를 본다. | 공통 / 자동차 / 후진등 회로가 있는 일반 차량(차종별 회로 차이 있음) / 글 기준(작성 2025-02, 갱신 2026-08 표기이나 날짜 불일치) / KR |
+| `cardcarcare-trunk-harness-flex-test` | 논쟁 🔶 | 후기 | 트렁크 쪽 주름관 배선은 트렁크를 여닫을 때 반복적으로 꺾여 단선될 수 있다. 후진등은 켜지는데 화면이 안 나올 때 트렁크 주름관을 살짝 흔들어 보고, 흔들 때 화면이 깜빡이면 배선 단선을 의심한다. | 공통 / 자동차 / 트렁크 리드에 배선 주름관이 있는 차량 / 글 기준 / KR |
+| `cardcarcare-connector-contact-oxidation-check` | 논쟁 🔶 | 후기 | 화면이 늦게 나오거나 떨리면 커넥터 접점 산화를 의심하고, 트렁크 내부의 카메라 관련 커넥터를 분리했다가 다시 체결해 점검한다. | 공통 / 자동차 / 트렁크 내부 카메라 커넥터가 있는 차량 / 글 기준 / KR |
+| `cardcarcare-lens-inner-moisture-dry-and-sealing` | 논쟁 🔶 | 후기 | 렌즈 안쪽에 습기가 맺혔으면 미지근한 바람으로 말린다. 건조와 실링 후에도 백화가 계속되면 카메라 모듈 교체를 고려한다. 방수 실링이 노후되면 화면이 하얗게 뜨거나 흐려질 수 있다. | 공통 / 자동차 / 후방 카메라 모듈 방수 실링이 있는 차량 / 글 기준 / KR |
+| `threads-dn8-avn-no-signal-message-judgement` | 논쟁 🔶 | 후기 | R 기어를 넣었을 때 AVN 화면이 바뀌면서 녹색 바탕에 '수신되는 신호가 없습니다. 잠시후 다시 시도해 주십시오.' 문구가 나오면 AVN은 정상으로 보는 것이 이 점검 기록의 판단 기준이다. 이 경우 카메라 쪽 커넥터의 전원과 신호를 측정해 카메라와 AVN 중 어느 쪽인지 가른다. | 현대 / 자동차 / 쏘나타 DN8, 서라운드 뷰 모니터 미적용 차량 / DN8 기준(연식 미상) / KR |
+
+### 겨울 차 앞유리 김서림 빨리 없애는 순서 (에어컨·외기·디프로스터·김서림 방지 기능·안전 운전) <sub>2026-11-03 · car-windshield-fog-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `hyundai-defog-stage-escalation` | 확실 | 공식 | 현대 오토 디포그는 습기가 감지되면 단계적으로 작동한다. 1단계는 에어컨을 켜고 외기 유입으로 바꾸는 것(외부 온도가 낮을 때)이고, 1단계로 습도가 조절되지 않으면 2단계 앞유리 송풍, 3단계 송풍량 증가로 넘어간다. | 현대 / 자동차 / GN7 매뉴얼 기준 오토 디포그 기능이 있는 차량 / 2026 매뉴얼 / KR |
+| `hyundai-defog-setting-button-3s` | 확실 | 공식 | 현대 오토 디포그 설정은 시동을 켠 상태에서 앞유리 서리 제거 버튼을 3초간 누르고, 표시등이 6회 깜빡인 뒤 꺼지면 완료된다. 해제는 같은 버튼을 3초간 눌러 표시등이 3회 깜빡인 뒤 켜지면 된다. | 현대 / 자동차 / 히터·에어컨 스위치 방식 차량(GN7 매뉴얼 기준) / 2026 매뉴얼 / KR |
+| `hyundai-defog-stops-on-mode-buttons` | 확실 | 공식 | 현대 오토 디포그가 작동하는 중에 내기/외기 버튼, 에어컨 버튼, 바람 방향 버튼 중 하나를 누르면 기능이 중지된다. 매뉴얼은 안전한 시야 확보를 위해 작동 중에는 이 버튼들을 조작하지 않는 것이 좋다고 안내한다. | 현대 / 자동차 / 오토 디포그 기능이 있는 차량 / 2026 매뉴얼 / KR |
+| `hyundai-defog-sensor-cover-do-not-remove` | 확실 | 공식 | 현대 매뉴얼은 앞유리 상단의 센서 커버를 강제로 떼지 말라고 안내한다. 관련 부품이 손상될 수 있다. | 현대 / 자동차 / 오토 디포그 습기 센서가 있는 차량 / 2026 매뉴얼 / KR |
+| `hyundai-defog-button-auto-ac-outside-air` | 확실 | 공식 | 현대 차량에서 김서림 방지 기능이 설정돼 있으면 앞유리 서리 제거 버튼을 누를 때 에어컨과 외기 유입이 자동으로 켜진다. 불필요하면 에어컨 버튼이나 내기/외기 버튼으로 각각 끌 수 있다. | 현대 / 자동차 / 김서림 방지 기능 설정 차량(US4 매뉴얼 기준) / 2026 매뉴얼 / KR |
+| `hyundai-defog-outer-film-upper-vent-wiper` | 확실 | 공식 | 습도가 높은 날 서리 제거 모드와 에어컨을 켠 채 오래 달리면 외부와의 온도 차로 앞유리 바깥 면에 습기가 생길 수 있다. 이때는 바람 방향을 상단 위치로 바꾸고 와이퍼로 바깥 습기를 닦아내라고 현대 매뉴얼이 안내한다. | 현대 / 자동차 / 서리 제거 모드 사용 차량 공통 / 2026 매뉴얼 / KR |
+| `hyundai-defog-outside-air-intake-clear` | 확실 | 공식 | 현대 매뉴얼은 외기 흡입구에 쌓인 눈, 얼음, 낙엽 등 젖은 이물질을 치우면 유리창 습기 발생을 줄일 수 있다고 안내한다. | 현대 / 자동차 / 외기 흡입구가 있는 차량 공통 / 2026 매뉴얼 / KR |
+| `hyundai-washer-fluid-winter-only` | 확실 | 공식 | 현대 매뉴얼은 기온이 낮을 때 겨울용 와셔액을 쓰라고 안내한다. 여름용 와셔액을 쓰면 유리창 표면에 얼음이 얼 수 있다고 경고한다. | 현대 / 자동차 / 와셔액 전 차종 공통 / 2026 매뉴얼 / KR |
+| `kia-defog-outside-air-default-ev` | 확실 | 공식 | 기아 PUEV 2024 매뉴얼은 평상시 외기 유입 상태로 운행하라고 권장한다. 실내 순환은 외부 공기가 오염됐을 때나 최대 냉난방이 필요할 때만 쓰고, 실내 순환을 오래 쓰면 유리창에 습기가 맺히기 쉽고 졸음·두통을 부를 수 있다고 안내한다. | 기아 / 자동차 / PUEV 2024 전기차 매뉴얼 기준(내연기관 차량 매뉴얼은 별도 확인) / 2024 매뉴얼 / KR |
+| `kia-defog-button-restore-previous` | 확실 | 공식 | 기아 PUEV 2024 매뉴얼에 따르면 앞유리 서리 제거 버튼을 누르면 표시등이 켜지고 풍량 조절 노브로 풍량을 정한다. 버튼을 한 번 더 누르면 표시등이 꺼지고 각 버튼은 서리 제거를 선택하기 전 설정으로 돌아간다. | 기아 / 자동차 / PUEV 2024 전기차 매뉴얼 기준 / 2024 매뉴얼 / KR |
+| `kia-defog-setting-auto-ac-outside-ev` | 확실 | 공식 | 기아 PUEV 2024 매뉴얼에 따르면 김서림 방지 기능이 설정된 차량에서 앞유리 서리 제거를 선택하면 외기 유입이 자동으로 작동하고, 바깥 온도에 따라 에어컨도 자동으로 작동한다. | 기아 / 자동차 / PUEV 2024 전기차 매뉴얼 기준(김서림 방지 설정 차량) / 2024 매뉴얼 / KR |
+| `community-defroster-mode-winter` | 논쟁 🔶 | 후기 | 겨울철에는 따뜻한 바람을 앞유리 쪽으로 보내는 디프로스터(Defroster) 모드가 김서림 제거에 도움이 된다고 자동차 칼럼이 소개한다. 유리창 아래 송풍구로 바람을 직접 보내 습기를 날리는 모드라는 설명이다. | 공통 / 자동차 / 디프로스터 모드가 있는 차량 / 전 연식 / KR |
+| `community-heater-plus-ac-humid-days` | 논쟁 🔶 | 후기 | 습기가 많은 장마철처럼 김서림이 심할 때는 히터와 에어컨을 함께 잠깐 켜는 방법이 제습에 효과적이라고 자동차 기사가 소개한다. 기사는 몇 분 안에 김서림이 사라진다고 본다. | 공통 / 자동차 / 에어컨 있는 차량 공통 / 전 연식 / KR |
+| `community-crack-window-temporary` | 논쟁 🔶 | 후기 | 앞유리 김서림이 바로 안 사라질 때 창문을 살짝 열어 내외부 공기를 바꾸는 것은 일시적으로 도움이 되지만 근본 해결책은 아니라고 자동차 기사가 설명한다. | 공통 / 자동차 / 일반 승용차 / 전 연식 / KR |
+| `law-visibility-safe-driving-unverified` | 확인실패 | 공식 | 운전자가 앞유리 김서림으로 시야가 확보되지 않은 상태에서 주행하는 것이 도로교통법 제49조 안전운전 의무 위반에 해당하는지는 이번 조사에서 법령 원문으로 확인하지 못했다. 국가법령정보센터 페이지 접속은 됐으나 조문 본문이 열리지 않았다. | 공통 / 자동차 / 운전자 안전운전 의무 / 현행 법령 기준(원문 미확인) / KR |
+| `hyundai-defog-service-threshold-unverified` | 확인실패 | 공식 | 현대 오토 디포그 기능이 작동하지 않거나 김서림이 계속될 때 서비스센터 점검을 받아야 하는 기준 기간이나 횟수는 이번에 확인한 현대 매뉴얼 페이지에 명시되어 있지 않았다. | 현대 / 자동차 / GN7 매뉴얼 기준 오토 디포그 / 2026 매뉴얼 / KR |
+
+### 일산화탄소 경보기 울림 시 대처와 겨울철 점검 (설치 위치·수명·시험·중독 증상·119 대처) <sub>2026-11-03 · carbon-monoxide-alarm-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `nfa-co-poisoning-causes` | 확실 | 공식 | 일산화탄소 중독의 주요 원인은 실내에서는 보일러·난로 연통 틈새의 가스 누출, 가스레인지 가스 누출, 장작을 쓰는 온돌방이고, 야외(텐트·차량)에서는 숯, 부탄가스 난방기구, 온수매트다. 순간온수기 가스 누출도 원인으로 꼽힌다. | 공통 / 가스보일러·난방기구·가스레인지 / 실내 연소기기 및 야외 난방용품 / 전 연식 / KR |
+| `nfa-co-symptom-escalation` | 확실 | 공식 | 일산화탄소 중독 초기 증상은 두통, 어지러움, 메스꺼움이다. 심해지면 구토, 호흡곤란, 손발 저림, 전신 쇠약이 오고, 더 진행되면 혼란, 계속된 졸림, 실신이 생기며 사망에 이를 수 있다. | 공통 / 일산화탄소 중독 / 증상 단계 / 전 연식 / KR |
+| `nfa-co-symptom-response-ventilate-and-119` | 확실 | 공식 | 일산화탄소 중독 증상이 있으면 즉시 환기를 시켜 신선한 공기를 마시게 하고, 119에 신고한다. | 공통 / 일산화탄소 중독 증상 발생 시 / 대처 절차 / 전 연식 / KR |
+| `korea-policy-co-alarm-leave-and-call` | 확실 | 공식 | 일산화탄소 중독 증상이 나타나면 창문이나 문을 열어 환기하거나 밖으로 나간 뒤, 119에 바로 신고한다. 중독 대처 이미지는 소방청 자료를 출처로 표기했다. | 공통 / 일산화탄소 경보기 사용 가정 / 경보 또는 증상 발생 시 대처 / 전 연식 / KR |
+| `korea-policy-co-alarm-install-ceiling-claim` | 논쟁 🔶 | 공식 | 정책브리핑 기사는 일산화탄소가 기체이므로 경보기를 천장 쪽에 설치해야 한다고 안내한다. | 공통 / 일산화탄소 경보기 / 설치 높이 / 전 연식 / KR |
+| `e2news-2020-co-alarm-ceiling-0-3m-and-flue-4m` | 논쟁 🔶 | 후기 | 2020년 개정 설치기준 보도에 따르면 단독형 경보기는 천장으로부터 경보기 하단까지 0.3m 이하가 되도록 설치하며, 천장 높이가 가스보일러 연통 접속부에서 4m를 넘으면 연통 주위에 설치할 수 있다. 분리형의 탐지부도 천장 기준이 같고, 수신부 조작 스위치는 바닥에서 0.8~1.5m 높이에 둔다. | 공통 / 가스보일러용 CO경보기 / 단독형·분리형 / 2020 개정 보도 기준 / KR |
+| `e2news-2020-co-alarm-no-install-places` | 논쟁 🔶 | 후기 | 2020년 개정 설치기준 보도에 따르면 경보기는 외부 기류가 통하는 출입구 부근, 공기 유입구에서 1.5m 이내(전용보일러실 환기구는 제외), 가구·보·설비에 가려 가스 흐름이 원활하지 않은 곳, 수증기나 기름 섞인 연기가 직접 닿을 곳에는 설치할 수 없다. 가스보일러와 연통 접속부 중심에서 수평거리 4m 이내에 1개 이상 설치한다. | 공통 / 가스보일러용 CO경보기 / 설치 금지 장소·개수 / 2020 개정 보도 기준 / KR |
+| `e2news-2020-co-alarm-mandatory-boiler-and-lodging` | 논쟁 🔶 | 후기 | 2020년 8월부터 가스보일러 등 가스용품을 제조·수입해 판매하는 자는 일산화탄소 경보기를 함께 설치(제공)해야 하고, 숙박업자는 가스보일러나 온수기를 쓸 때 경보기를 의무 설치해야 한다. | 공통 / 가스보일러·숙박업소 / 제조·수입자 및 숙박업자 의무 / 2020.08~ / KR |
+| `kca-2019-co-alarm-test-14-products` | 확실 | 실측 | 한국소비자원이 2019년 판매가 10만 원 이하 일산화탄소 경보기 14개(건전지형 13개, 교류형 1개)를 시험했을 때 5개(35.7%)가 성능 기준에 미달했다. 경보농도 기준에서 4개(250ppm·550ppm 단계 미작동 또는 오작동, 1개는 CO 없이 경보)가, 경보음량에서 3개(52~67dB, 기준 70dB 이상)가 미달했고 2개는 둘 다 미흡했다. | 공통 / 일산화탄소 경보기 / 판매가 10만 원 이하 14개 제품 / 2019 시험 시점 / KR |
+| `kca-2019-co-alarm-install-location-warning` | 확실 | 공식 | 한국소비자원은 일산화탄소 경보기를 바닥, 창문, 환풍기 부근 등 부적절한 장소에 설치하면 경보가 울리지 않거나 지연될 우려가 있다고 경고했다. 당시 설치 위치를 안내하는 제품은 14개 중 3개(21.4%)뿐이었다. | 공통 / 일산화탄소 경보기 / 설치 위치 / 2019 보도자료 시점 / KR |
+| `gasnews-co-alarm-10yr-sensor-life-claim` | 논쟁 🔶 | 후기 | 일산화탄소 경보기 센서 수명 10년 이상 요구는 지자체 시장조사 결과에서 나온 주장이며, 제조사는 검증되지 않은 기준이라고 반박했다. 업계는 일본이 5년 주기로 교체한다고 주장하지만 검증 자료로 제시되지는 않았다. 기사에는 법령이나 공공기관이 정한 센서 수명 기준이 나오지 않는다. | 공통 / 일산화탄소 경보기 / 센서 수명·교체 주기 / 기사 시점(연도 미확인) / KR |
+| `nfa-co-page-no-alarm-install-life-test-info` | 확인실패 | 공식 | 소방청 일산화탄소 중독사고 페이지에는 경보기의 설치 위치, 교체 수명, 시험 버튼 방법에 대한 정보가 없다. 예방 항목에 '일산화탄소감지기 설치 등'이라는 문구만 있다. | 공통 / 일산화탄소 경보기 / 설치·수명·시험 방법 / 2026-11-03 확인 시점 / KR |
+
+### 식기세척기 후 그릇에 하얀 얼룩이 남을 때 점검 순서 (원인: 수돗물 미네랄·세제 잔여·린스 부족·필터/노즐) <sub>2026-11-03 · dishwasher-white-residue-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `dw-residue-hard-water-minerals` | 확실 | 공식 | 세제를 넣지 않았는데도 그릇에 하얀 얼룩이 생기면, 물이 증발하면서 수돗물의 무기물질(칼슘·마그네슘 등 미네랄)이 그릇 표면에 남은 것이다 | 삼성 / 식기세척기 / 전 라인 / 전 연식 / KR |
+| `dw-residue-detergent-loading-check` | 확실 | 공식 | 건조 후 그릇에 세제 가루가 남아 있으면, 로딩된 그릇이 중단 노즐의 회전을 막고 있거나 하단 바스켓의 식기를 뒤집어 놓아 세제가 식기 안으로 떨어졌을 수 있으므로 이 두 가지를 먼저 확인한다 | 삼성 / 식기세척기 / 전 라인 / 전 연식 / KR |
+| `dw-residue-reduce-detergent` | 확실 | 공식 | 세제 가루 잔여가 반복되면 세제량을 줄이거나 세제 종류를 바꾸는 것이 공식 권장 조치다 | 삼성 / 식기세척기 / 전 라인 / 전 연식 / KR |
+| `dw-residue-citric-acid-empty-cycle` | 확실 | 공식 | 세척이 끝난 뒤 그릇과 세제를 빼고 구연산을 세제함에 약 1~2g 넣거나, 라임주스를 담은 작은 그릇을 중단 선반에 올린 채 내부세척·강력 코스(또는 헹굼 건조 코스)를 돌리면 미네랄 얼룩 완화에 쓴다고 삼성이 안내한다 | 삼성 / 식기세척기 / 전 라인 / 전 연식 / KR |
+| `dw-residue-rinse-aid-refill` | 확실 | 공식 | 얼룩이 남으면 식기세척기 전용 린스(헹굼보조제)를 쓰거나 사용 중인 린스 양을 늘리는 것이 공식 권장 조치다. 린스가 건조 성능과 물방울 흘러내림을 돕는다 | 삼성 / 식기세척기 / 전 라인 / 전 연식 / ZA |
+| `dw-residue-hardness-setting-salt` | 확실 | 공식 | 지역 수질 경도에 맞춰 식기세척기의 연수기(경수 경도) 설정을 맞추고, 소금 표시등이 켜지면 식기세척기 전용 소금을 채우는 것이 공식 점검 항목이다 | 삼성 / 식기세척기 / 전 라인 / 전 연식 / ZA |
+| `dw-residue-filter-cleaning-performance` | 확실 | 공식 | 세척 성능이 떨어지면 필터를 더 자주 청소해야 하며, 정기 청소 주기는 사용 설명서의 필터 청소 표를 따르라고 LG가 안내한다. 필터는 따뜻한 흐르는 물로 헹군다 | LG / 식기세척기 / 전 라인 / 전 연식 / US |
+| `dw-residue-spray-arm-nozzle-clear` | 확실 | 공식 | 스프레이 노즐 구멍이 음식물로 막혔으면 핀이나 뾰족한 도구로 막힌 부분을 제거해야 한다. LG는 스프레이암(노즐) 점검을 정기 관리 항목으로 안내한다 | LG / 식기세척기 / 전 라인 / 전 연식 / US |
+| `dw-residue-stainless-tub-film-vinegar` | 확실 | 공식 | 경수를 쓰면 스테인리스 세척조에 뿌연 막이 생길 수 있으며, LG 공식 안내는 이를 위해 식초 세척 사이클(흰 식초 약 14~17 oz를 하단 랙의 계량컵에 넣고 세제 없이 일반 코스를 돌림)을 제시한다 | LG / 식기세척기 / 스테인리스 세척조 모델 / 전 연식 / US |
+| `dw-residue-machine-clean-citric` | 확실 | 공식 | LG는 세척기 자체 청소 코스(Machine Clean)를 돌릴 때 세제함에 구연산 또는 시판 식기세척기 세정제를 채우도록 안내한다 | LG / 식기세척기 / Machine Clean 코스 탑재 모델 / 전 연식 / US |
+| `dw-residue-chlorine-gas-mixing-safety` | 확실 | 공식 | 산성 세정제와 염소계 표백제(락스)를 함께 쓰면 염소가스가 발생하며 인체에 치명적일 수 있다 | 공통 / 가정용 세정제 / 산성 세정제 + 염소계 표백제 / 전 연식 / KR |
+
+### 전기온수기에서 물이 안 데워지거나 미지근할 때 (저장식 가열 불량 점검·누전차단기·안전 경고·AS 기준) <sub>2026-11-03 · electric-water-heater-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `hw-power-off-after-use` | 확실 | 공식 | 전기온수기는 사용 후 전원을 끄는 것이 권장된다. | 공통 / 전기온수기 / 저장식 전 기종 / 전 연식 / HK |
+| `hw-abnormal-stop-use-call-supplier` | 확실 | 공식 | 사용 중 이상이 생기면(원문 예시: 누전차단기 동작) 즉시 사용을 중단하고 공급업체에 점검과 수리를 요청해야 한다. | 공통 / 전기온수기 / 저장식 전 기종 / 전 연식 / HK |
+| `hw-regular-technician-inspection` | 확실 | 공식 | 전기온수기는 숙련된 기술자가 정기적으로 점검하고 관리하도록 권장되며, 정비는 제조사 지침과 사용설명서를 따라야 한다. | 공통 / 전기온수기 / 저장식 전 기종 / 전 연식 / HK |
+| `hw-install-registered-contractor-hk` | 확실 | 공식 | 전기온수기의 설치나 개조는 등록된 전기공사업자와 면허를 받은 배관공이 맡아야 한다는 것이 홍콩 기준이다. | 공통 / 전기온수기 / 설치·개조 / 전 연식 / HK |
+| `hw-shower-valve-pressure-danger` | 확실 | 공식 | 샤워 헤드에 개폐 밸브가 달린 제품을 쓰면 저장 탱크 내부에 과도한 압력이 쌓여 폭발을 일으킬 수 있다. | 공통 / 전기온수기 / 저장식(샤워 연결형) / 전 연식 / HK |
+| `hw-breaker-monthly-test-replace` | 확실 🔶 | 후기 | 누전차단기는 월 1회 시험 버튼을 눌러 작동 여부를 확인하는 것이 좋고, 시험 버튼을 눌렀는데 전기가 차단되지 않으면 누전차단기를 교체해야 한다. | 공통 / 생활 전기제품 (누전차단기·분전함) / 분전함 누전차단기 / 전 연식 / KR |
+| `hw-wet-hands-shock-prevention` | 확실 🔶 | 후기 | 젖은 손으로 전기제품을 만지지 않는 것이 감전 사고를 예방하는 수칙이다. | 공통 / 생활 전기제품 / 물을 다루는 전기제품 전반 / 전 연식 / KR |
+| `hw-cuckoo-ws-overheat-cutoff` | 확실 🔶 | 후기 | 귀뚜라미 저장식 전기온수기 WS 시리즈(2026년 출시)는 설정 온도에 도달하면 전원을 차단하고, 온수를 사용하면 전원이 다시 연결되며, 온수 온도가 동작 온도 이상으로 오르면 전원을 끊는 과열방지기와 과압 안전밸브를 내장했다고 보도됐다. | 귀뚜라미 / 전기온수기 / WS 시리즈(저장식) / 2026~ / KR |
+| `hw-set-temperature-value-unverified` | 확인실패 🔶 | 후기 | 국내 전기온수기 제조사별 권장 설정 온도와 온도 조절 단계의 실제 값은 이번 조사에서 공식 출처로 확인하지 못했다. | 공통 / 전기온수기 / 저장식 전 기종 / 전 연식 / KR |
+| `hw-warranty-as-route-unverified` | 확인실패 🔶 | 후기 | 국내 저장식 전기온수기의 보증기간과 AS 접수 경로는 이번 조사에서 공식 출처로 확인하지 못했다. 보증서와 제조사 공식 고객센터 확인으로 안내한다. | 공통 / 전기온수기 / 저장식 전 기종 / 전 연식 / KR |
+
+### 전기차 충전이 시작되지 않을 때 점검 순서 (커넥터 체결·인증·충전기 상태·안전) <sub>2026-11-03 · ev-charging-fail-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `ev-public-charger-payment-method` | 확실 | 공식 | 기후부 전기차 공공급속충전기는 회원이 회원카드(멤버십카드)를 리더기에 접촉하고, 비회원은 신용(IC)카드를 IC단말기에 넣어 결제한다. 회원카드에 결제정보를 등록해 두면 충전 시 실시간으로 결제된다 | 공통 / 전기차 / 공공 급속 충전기 / 페이지 확인 시점 기준 / KR |
+| `ev-public-charger-helpdesk-contact` | 확실 | 공식 | 공공급속충전시설의 고장신고·일반문의·민원은 충전시설 헬프 데스크(콜센터 1661-9408, 365일 24시간)에서 처리한다. 인증 실패 전용 안내는 따로 없고, 가장 가까운 창구가 이 헬프 데스크다 | 공통 / 전기차 / 공공 급속 충전기 / 페이지 확인 시점 기준 / KR |
+| `ev-public-charger-connector-click` | 확실 | 공식 | 공공급속 충전 커넥터는 차량 접속구와 일직선이 되도록 맞춘 뒤 끝까지 밀어 '딸깍' 소리가 나게 연결한다. 연결할 때는 커넥터 손잡이 상단의 해제 버튼을 누르지 않는다 | 공통 / 전기차 / 공공 급속 충전기 커넥터 / 페이지 확인 시점 기준 / KR |
+| `ev-plug-foreign-matter-check` | 확실 | 공식 | 충전을 시작하기 전에 커넥터와 플러그에 물·먼지 등 이물질이 없는지 확인한 뒤 충전기와 차량 인렛에 연결한다. 이물질이 끼어 있으면 화재나 감전의 원인이 된다 | 기아 / 전기차 / PUEV 2024 매뉴얼 적용 차종 / 2024 매뉴얼 / KR |
+| `ev-cable-damage-replace` | 확실 | 공식 | 피복이 손상된 충전 케이블은 감전 위험이 있으므로 사용하지 말고 새 제품으로 교체한다 | 기아 / 전기차 / PUEV 2024 매뉴얼 적용 차종 충전 케이블 / 2024 매뉴얼 / KR |
+| `ev-connector-corrosion-service` | 확실 | 공식 | 커넥터나 플러그에 손상·부식·녹 흔적이 있거나 연결이 헐겁게 느껴지면 그 케이블을 쓰지 말고 현대 서비스센터(직영 하이테크센터·블루핸즈)에 점검을 요청한다. 케이블을 개조하거나 분해하지 않는다 | 현대 / 전기차 / CE1 2025 매뉴얼 적용 차종 / 2025 매뉴얼 / KR |
+| `ev-wet-hand-no-plug` | 확실 | 공식 | 젖은 손으로 커넥터나 플러그를 연결하거나 분리하지 않는다. 물이나 눈 위에 서서 케이블을 연결하지 않으며, 빗물이 결합부에 닿을 수 있는 장소에서는 충전하지 않는다. 방수 기능이 있는 충전기를 쓴다 | 현대 / 전기차 / CE1 2025 매뉴얼 적용 차종 / 2025 매뉴얼 / KR |
+| `ev-stop-on-abnormal-or-storm` | 확실 | 공식 | 번개가 칠 우려가 있으면 충전하지 않는다. 충전 중 냄새나 연기 등 평소와 다른 이상이 보이면 즉시 충전을 중지한다 | 현대 / 전기차 / CE1 2025 매뉴얼 적용 차종 / 2025 매뉴얼 / KR |
+| `ev-connector-no-pull` | 확실 | 공식 | 케이블을 연결하거나 분리할 때는 커넥터와 플러그의 손잡이 부분을 잡는다. 케이블을 당기면 내부 전원선이 끊어지거나 파손될 수 있다 | 기아 / 전기차 / PUEV 2024 매뉴얼 적용 차종 충전 케이블 / 2024 매뉴얼 / KR |
+| `ev-card-single-vs-all-chargers` | 논쟁 🔶 | 후기 | 회원카드 인증이 특정 충전기 한 대에서만 실패하고 옆 충전기에서는 되면 그 충전기의 리더기나 통신을 의심한다. 여러 충전기에서 모두 실패하면 카드 상태(정지·분실·회원정보 오류)를 먼저 확인한다 | 공통 / 전기차 / 공공 충전기 회원카드 인증 / 2026-07 게시글 기준 / KR |
+| `ev-card-tap-once-hold` | 논쟁 🔶 | 후기 | 회원카드는 리더 중앙에 1~2초 고정하듯 한 번만 댄다. 같은 동작을 반복하면 인증 절차가 다시 시작될 수 있다. 충전기 화면이 처음 상태인지 먼저 확인하고, 이전 세션이 남아 있으면 취소한다 | 공통 / 전기차 / 공공 충전기 회원카드 인증 / 2026-07 게시글 기준 / KR |
+| `ev-auth-ok-payment-fail` | 논쟁 🔶 | 후기 | 인증은 되었는데 결제 단계에서 실패하면 등록된 결제카드의 유효기간과 한도를 확인한다 | 공통 / 전기차 / 공공 충전기 회원 결제 / 2026-07 게시글 기준 / KR |
+| `ev-charger-unresponsive-call` | 논쟁 🔶 | 후기 | 충전기 화면이 응답하지 않으면 임의로 조작하지 말고, 충전기 번호와 표시된 오류 문구를 메모한 뒤 충전기에 적힌 고객센터 번호로 문의한다. 다른 결제 수단(QR·앱·신용카드)이 화면에 있으면 그것으로 대체할 수 있다 | 공통 / 전기차 / 공공 충전기 화면 응답 없음 / 2026-07 게시글 기준 / KR |
+
+### 전기차 겨울 주행거리 감소 원인과 예열·히터 사용 요령 <sub>2026-11-03 · ev-winter-range-guide</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `kia-manual-winter-heater-range-drop` | 확실 | 공식 | 기아 사용설명서는 겨울철 난방 사용이나 고속 주행 시 구동용 고전압 배터리의 전력 소모가 커져 주행 가능 거리가 급격히 감소할 수 있다고 안내한다. 추운 날씨에 히터를 쓰면 배터리 소모량이 크게 늘어 주행 가능 거리가 짧아진다고 쓰여 있다. | 기아 / 전기차 / 사용설명서 요약본 SG2KV 페이지 (차종 특정 안 됨) / 2026 매뉴얼 / KR |
+| `kia-manual-cold-battery-performance-drop` | 확실 | 공식 | 기아 사용설명서는 동절기처럼 외기 온도가 떨어지면 배터리 성능 저하로 실제 주행 거리가 감소할 수 있다고 안내한다. | 기아 / 전기차 / 사용설명서 요약본 SG2KV 페이지 / 2026 매뉴얼 / KR |
+| `kia-manual-reserved-climate-battery-warm` | 확실 | 공식 | 기아 사용설명서는 겨울철 예약 공조를 통해 고전압 배터리 온도를 미리 높이면 주행 시 에너지 효율을 높일 수 있다고 안내한다. | 기아 / 전기차 / 예약 공조 기능이 있는 차종 / 2026 매뉴얼 / KR |
+| `kia-manual-battery-conditioning-mode` | 확실 | 공식 | 기아 사용설명서에 따르면 겨울철 배터리 컨디셔닝 모드를 켜면 배터리 히터가 고전압 배터리 온도를 적정 온도까지 높여 주행 성능과 급속충전 성능을 상온 수준으로 확보할 수 있다. | 기아 / 전기차 / 배터리 히터·컨디셔닝 모드가 있는 차종 / 2026 매뉴얼 / KR |
+| `kia-manual-recirculation-saves-energy` | 확실 | 공식 | 기아 사용설명서는 히터나 에어컨을 쓸 때 실내 순환 모드를 선택하면 외기 유입 모드보다 에너지 소모가 줄어든다고 안내한다. 외기는 들어올 때마다 다시 데우거나 식혀야 하기 때문이다. | 기아 / 전기차 / 공조 장치 전 차종 공통 안내 / 2026 매뉴얼 / KR |
+| `kia-manual-zero-km-stop-warning` | 확실 | 공식 | 기아 사용설명서는 주행 가능 거리가 '0 km'로 표시된 뒤에는 차량이 곧 멈출 수 있으니 즉시 안전한 곳으로 이동해 정차하라고 안내한다. | 기아 / 전기차 / 주행 가능 거리 표시가 있는 전 차종 / 2026 매뉴얼 / KR |
+| `hmg-heat-pump-since-2014-soul-ev` | 확실 | 공식 | 현대자동차그룹은 2014년 쏘울 EV부터 히트펌프 시스템을 적용했다고 밝혔다. 히트펌프는 외부 공기의 열과 모터·통합전력제어장치·온보드차저 같은 전장 부품의 폐열을 실내 난방에 활용해 전기 히터의 전력 소모를 줄인다. | 현대·기아 / 전기차 / 히트펌프 적용 차종 (쏘울 EV 이후) / 2014~ / KR |
+| `hmg-ev6-cold-range-figures-2022` | 확실 | 공식 | 현대자동차그룹 저널에 따르면 19인치 휠을 단 EV6 롱레인지 2WD의 1회 충전 주행거리는 상온(25℃) 483km, 저온(-7℃) 446km다. 저온 측정 때는 히터를 최대로 가동했다고 밝혔다. | 기아 / 전기차 / EV6 롱레인지 2WD 19인치 / 2022년 기사 시점 / KR |
+| `domestic-cold-test-condition-7c-heater-max` | 확인실패 | 공식 | 현대자동차그룹 저널은 국내 기준 저온 주행거리 측정 조건을 상온 25℃와 저온 -7℃로 밝히고, 저온 측정 때는 히터를 최대로 가동한다고 설명한다. 환경부 원문 고시에서 이 조건을 직접 확인하지는 못했다. | 공통 / 전기차 / 국내 저온 주행거리 인증 측정 / 2022 기사 기준 / KR |
+| `low-temp-ratio-standard-draft-2026-2029` | 논쟁 🔶 | 후기 | 2024년 10월 언론 보도에 따르면 환경부는 상온 주행거리 300km 미만 차량의 저온 주행거리 비율 기준을 2024~2025년 80% 이상, 2026~2029년 85% 이상으로 단계 상향하는 고시안을 준비했다. 고시안 단계였고 확정 고시 번호는 확인하지 못했다. | 공통 / 전기차 / 보조금 대상 평가 기준 (상온 300km 미만) / 2024~2029 / KR |
+
+### 고속충전이 안 되고 충전이 느릴 때 케이블·어댑터·포트부터 점검 (갤럭시·아이폰·아이패드 공식 안내 기준) <sub>2026-11-03 · fast-charging-not-working-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `apple-iphone-charge-checklist-order` | 확실 | 공식 | 아이폰이 충전되지 않거나 느리면 Apple은 다음 순서로 점검하라고 안내한다. (1) 충전 케이블·USB 어댑터의 파손·휘어진 핀 확인(손상된 액세서리는 사용 중지), (2) 벽 콘센트에 케이블·어댑터·콘센트가 단단히 연결됐는지 확인하거나 다른 콘센트 사용, (3) 기기 하단 충전 단자의 이물질 제거 후 케이블을 끝까지 꽂기, (4) 30분 충전 후 재확인, (5) 여전히 전원이 안 켜지면 강제 재시작 후 30분 추가 충전 | 애플 / 스마트폰 / iPhone·iPod touch 전 모델 / 전 연식 / 글로벌 |
+| `apple-accessory-not-supported-alert-steps` | 확실 | 공식 | 아이폰에 '액세서리가 지원되지 않거나 인증되지 않음' 알림이 뜨면 Apple은 (1) 어댑터 없이 충전기에 직접 연결하고, (2) 충전 단자 이물질을 제거하고, (3) 재시작한 뒤, (4) 다른 USB 케이블이나 충전기로 바꿔보고, (5) 최신 iOS로 업데이트하라고 안내한다. 원인으로는 단자 오염·손상, 결함 있거나 손상된 충전 액세서리, 기기 충전용으로 설계되지 않은 USB 충전기를 든다 | 애플 / 스마트폰 / iPhone·iPod touch 전 모델 / 전 연식 / 글로벌 |
+| `apple-optimized-charging-80-hold-is-normal` | 확실 | 공식 | 아이폰이 80%에서 충전을 멈춘 것처럼 보이면 '최적화된 배터리 충전'이 작동 중일 수 있다. iOS 13 이후 기기는 완충 상태로 오래 머무는 시간을 줄이려고 사용자의 충전 패턴을 학습해 80%에서 대기할 수 있으며, 장시간 충전기에 연결돼 있을 것으로 예측될 때만 작동한다. iPhone 15 이후 모델은 충전 한도(Charge Limit) 설정으로도 80% 제한이 걸릴 수 있다 | 애플 / 스마트폰 / iOS 13 이후 iPhone / 2019년 이후(iOS 13~) / 글로벌 |
+| `apple-iphone15-usbc-fast-charge-18w` | 확실 | 공식 | USB-C 단자가 있는 아이폰 15 이후 모델을 고속 충전하려면 최소 18W 이상의 USB-C 전원 어댑터가 필요하다. 케이블은 기기와 함께 든 것과 같은 USB-C 케이블을 쓰라고 Apple이 안내한다 | 애플 / 스마트폰 / iPhone 15 이후 USB-C 모델 / 2023년 이후 / 글로벌 |
+| `apple-earlier-lightning-fast-charge-cable` | 확실 | 공식 | 라이트닝 단자를 쓰는 이전 아이폰은 USB-C to Lightning 케이블과 18W 이상 Apple 어댑터로 고속 충전할 수 있다. Apple은 USB-PD를 지원하는 호환 USB-C 어댑터도 동급으로 안내한다 | 애플 / 스마트폰 / 라이트닝 단자 iPhone(15 이전) / 2012~2022 라이트닝 모델 / 글로벌 |
+| `apple-20w-vs-18w-minimum-unclear` | 확인실패 | 공식 | Apple 공식 페이지는 아이폰 15 이후 유선 고속 충전의 최소 기준을 18W로 명시하지만, 같은 페이지의 다른 기종 안내에는 20W 이상 어댑터 문구가 함께 나오고 그 차이를 설명하지 않는다 | 애플 / 스마트폰 / iPhone 15 이후 USB-C 모델 / 2023년 이후 / 글로벌 |
+| `apple-ipad-fast-charge-60w-usbc` | 확실 | 공식 | Apple은 iPad Pro(M5) 고속 충전에 60W 이상 USB-C 전원 어댑터를 안내하며, 어댑터 본체에 인쇄된 와트 수를 확인하라고 한다. 케이블은 상자에 든 USB-C 케이블(또는 60W USB-C 충전 케이블)을 쓰라고 안내한다 | 애플 / 태블릿 / iPad Pro(M5) 기준 원문 / 최신 모델 / 글로벌 |
+| `samsung-cable-5a-for-25w` | 확실 | 공식 | 갤럭시 25W 충전을 최적으로 하려면 5A 정격의 USB-C 케이블을 쓰라고 삼성이 안내한다. 3A 케이블도 동작은 하지만 속도가 제한될 수 있다 | 삼성 / 스마트폰 / 25W 고속충전 갤럭시 / 2020년대 이후 / US(미국 지원 페이지) |
+| `samsung-fast-charging-not-on-pc-usb` | 확실 | 공식 | 갤럭시를 컴퓨터나 일반 USB 기기에 연결하면 고속 충전이 작동하지 않을 수 있다. 고속 충전은 삼성 정품 충전기 같은 전용 어댑터 연결을 전제로 한다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / US(미국 지원 페이지) |
+| `samsung-incompatible-accessory-slow-or-fail` | 확실 | 공식 | 삼성은 호환되지 않거나 손상된 충전 액세서리를 쓰면 충전 속도 저하, 충전 끊김, 충전 실패가 생길 수 있다고 안내한다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / US(미국 지원 페이지) |
+| `samsung-members-cable-diagnostic-path` | 확실 | 공식 | 갤럭시 케이블 충전 상태는 삼성 멤버스 앱에서 진단할 수 있다. 메뉴 경로는 Support(지원)에서 Get Started를 누른 뒤 Cable charging을 선택해 진단 결과를 확인하는 방식이다 | 삼성 / 스마트폰 / 삼성 멤버스 앱 지원 갤럭시 / 앱 지원 기종 / US(미국 지원 페이지) |
+| `samsung-port-soft-brush-cleaning` | 확실 | 공식 | 갤럭시 충전 단자에 이물질이 끼어 있으면 부드러운 솔로 이물질을 제거한 뒤 다시 사용하라고 삼성이 안내한다. 단자가 젖어 있으면 완전히 말린 뒤 사용하고, 물기 감지 알림이 뜨면 충전기를 분리한다. 단자가 변형되었거나 부식된 경우 충전이 느려질 수 있다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `samsung-service-visit-with-phone-adapter-cable` | 확실 | 공식 | 갤럭시 충전 단자를 청소해도 충전이 안 되면 삼성은 가까운 서비스센터에서 엔지니어 점검을 받으라고 안내하며, 이때 휴대전화·충전 어댑터·충전 케이블을 함께 가져가도록 한다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `kc-mark-check-location-and-report` | 확실 | 공식 | 충전기의 KC 인증 마크와 안전인증·안전확인신고 번호, 모델명은 제품 겉면 또는 포장에 표시된다. 인증 상태와 인증일자는 제품안전정보센터(safetykorea.go.kr)에서 조회하며, 불법 의심 제품은 국민신문고 또는 1670-4920으로 신고할 수 있다 | 공통 / 전기용품(충전기 포함) / KC 인증 대상 전기용품 / 전 연식 / KR |
+
+### 바닥 난방이 일부만 따뜻하거나 안 따뜻할 때 사용자가 해볼 수 있는 점검 (분배기 밸브·공기 빼기·압력·업체 호출 기준) <sub>2026-11-03 · floor-heating-not-warm-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `kiturami-manifold-valves-all-closed-check` | 확실 | 공식 | 귀뚜라미 거꾸로 ECO 콘덴싱 L20 자가진단매뉴얼은 난방 에러 E212에 대해 '난방분배기 밸브가 모두 잠겨있는지 확인하라'고 안내한다. 이 안내는 난방만 해당한다. | 귀뚜라미 / 가스보일러 / 거꾸로 ECO 콘덴싱 L20 / 매뉴얼 기준 (연식 미표기) / KR |
+| `kgs-repair-by-qualified-only` | 확실 | 공식 | 한국가스안전공사는 가스보일러를 설치·이전·수리할 때 시공자격을 갖춘 전문가에게 맡길 것을 권고한다. 보일러 사용 중 과열·소음·진동·이상한 냄새가 나면 즉시 보일러를 끄고 가스밸브를 잠근 뒤 전문가에게 점검을 의뢰해야 한다. | 공통 / 가스보일러 / 전 기종 / 전 연식 / KR |
+| `kgs-as-request-to-installer-or-maker` | 확실 | 공식 | 한국가스안전공사는 보일러에 이상이 있을 때 보일러에 부착된 시공표지판 또는 명판에 표시된 시공자나 제조회사에 A/S를 요청하고, 수리 후에 사용하도록 안내한다. | 공통 / 가스보일러 / 전 기종 / 전 연식 / KR |
+| `kyungdong-manifold-bleed-procedure-not-confirmed` | 확인실패 | 공식 | 경동나비엔의 분배기 공기 빼기 절차와 밸브 위치는 공식 고객지원 문서에서 확인하지 못했다. 공식 페이지 검색에서는 블로그·유튜브 후기만 나왔다. | 경동나비엔 / 가스보일러·기름보일러 / 분배기 공기 빼기 / 전 연식 / KR |
+| `manifold-location-common-spots` | 확실 🔶 | 후기 | 개별난방 분배기는 보통 신발장 옆, 베란다 보일러 아래, 싱크대 하부장 등 점검구 안에 있다. | 공통 / 가스·기름보일러 개별난방 / 분배기 점검구 / 전 연식 / KR |
+| `bleed-order-near-boiler-first` | 확실 🔶 | 후기 | 공기 빼기는 보일러와 가장 가까운 방의 에어벤트부터 시작해 먼 방 쪽으로 차례로 진행하는 방식이 여러 후기 자료에서 권장된다. | 공통 / 가스·기름보일러 개별난방 / 분배기 공기 빼기 / 전 연식 / KR |
+| `bleed-one-loop-at-a-time-others-closed` | 논쟁 🔶 | 후기 | 공기 빼기는 한 번에 한 배관씩 진행하고, 나머지 방 밸브는 잠가 두어야 물길이 한 곳으로 몰려 공기가 밀려 나온다는 설명이 후기 자료에서 반복된다. | 공통 / 가스·기름보일러 개별난방 / 분배기 공기 빼기 / 전 연식 / KR |
+| `bleed-hot-water-burn-cool-first` | 확실 🔶 | 후기 | 난방수가 뜨거울 때 공기 빼기 밸브나 분배기 밸브를 열면 뜨거운 물이 튀어 화상 위험이 있으므로, 난방을 끄고 배관이 식은 뒤에 작업해야 한다. | 공통 / 가스·기름보일러 개별난방 / 분배기 공기 빼기 / 전 연식 / KR |
+| `bleed-open-all-valves-after` | 확실 🔶 | 후기 | 공기 빼기가 끝나면 잠가 두었던 분배기 밸브를 모두 다시 열어야 한다. 잠근 채로 두면 그 방은 계속 따뜻해지지 않는다. | 공통 / 가스·기름보일러 개별난방 / 분배기 밸브 / 전 연식 / KR |
+| `bleed-pressure-check-refill-gently` | 확실 🔶 | 후기 | 공기를 뺀 뒤에는 보일러 압력이 내려가므로 압력계가 설명서의 적정 범위인지 확인하고, 부족하면 보충 밸브로 조금씩 채우되 과하게 넣지 않는다. | 공통 / 가스·기름보일러 개별난방 / 난방수 압력 / 전 연식 / KR |
+| `bleed-recheck-after-10to20min-and-repeat` | 확실 🔶 | 후기 | 공기 빼기 후 난방을 10~20분 돌려 방마다 바닥 온도를 비교한다. 여전히 차가운 방이 있으면 그 배관의 공기를 다시 뺀다. 작업 중 갑자기 큰 소리가 나도 공기가 다시 들어간 신호일 수 있어 다시 뺀다. | 공통 / 가스·기름보일러 개별난방 / 분배기 공기 빼기 / 전 연식 / KR |
+| `still-cold-after-bleed-service-call` | 확실 🔶 | 후기 | 공기 빼기와 압력 확인을 해도 계속 차가우면 배관 막힘이나 순환펌프 문제일 수 있으므로 서비스센터 점검을 받는다. 지역난방 세대는 관리사무소에 먼저 문의한다. | 공통 / 가스·기름보일러 개별난방·지역난방 / 분배기 이후 배관·펌프 / 전 연식 / KR |
+
+### 냉동실에 성에와 얼음이 계속 낄 때 원인과 점검 <sub>2026-11-03 · freezer-frost-buildup-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `freezer-frost-cause-hot-food-moisture` | 확실 | 공식 | 냉동실에 성에가 생기는 원인 중 하나는 식히지 않은 뜨거운 음식을 넣어 수증기가 생기는 것과, 국물 등 수분이 많은 음식을 뚜껑 없이 보관하는 것이다 | LG / 냉장고 / 일반냉장고 냉동실 (대표 모델 기준) / 전 연식 / KR |
+| `freezer-frost-cause-door-gap-foreign-matter` | 확실 | 공식 | 냉동실 문이 완전히 닫히지 않거나 고무 패킹에 이물질이 끼면 외부 공기가 들어와 성에가 생긴다 | LG / 냉장고 / 일반냉장고 냉동실 (대표 모델 기준) / 전 연식 / KR |
+| `freezer-frost-cause-door-opening-warm-humid-air` | 확실 | 공식 | 문을 여닫을 때 들어오는 따뜻하고 습한 공기와 문 틈새로 들어온 따뜻한 공기가 습기를 늘려 냉동실 내부에 얼음 형성을 촉진한다 | 삼성 / 냉장고 / 직냉식(direct cool) 냉장고 / 현행 모델 기준 / IN |
+| `freezer-frost-cause-direct-cool-manual-defrost` | 확실 | 공식 | 직냉식 삼성 냉장고는 증발기가 냉동실 상단에 있어 내부 습기가 거기서 얼어붙으며, 정기적으로 수동 제상을 하지 않으면 얼음이 두꺼워진다 | 삼성 / 냉장고 / 직냉식(direct cool) 냉장고 / 현행 모델 기준 / IN |
+| `freezer-frost-cause-dial-overset-samsung-direct-cool` | 확실 | 공식 | 직냉식 삼성 냉장고는 온도 조절 다이얼을 주변 환경에 필요한 것보다 높게 맞추면 과냉각되어 성에가 빨리 생긴다 | 삼성 / 냉장고 / 직냉식(direct cool) 냉장고 / 현행 모델 기준 / IN |
+| `freezer-frost-small-directcool-thickness-1cm` | 확실 | 공식 | 원도어 소형 직냉식 냉장고에서 성에가 1cm 이상 두껍게 쌓이면 냉각 능력이 떨어질 수 있다 | LG / 냉장고 / 원도어 소형 직냉식 냉장고 / 전 연식 / KR |
+| `freezer-frost-small-directcool-manual-thaw` | 확실 | 공식 | 원도어 소형 직냉식 냉장고에서 두꺼운 성에는 음식물을 다른 냉장고로 옮긴 뒤 온도조절 스위치를 제상(꺼짐) 위치로 맞춰 수동으로 녹인다 | LG / 냉장고 / 원도어 소형 직냉식 냉장고 / 전 연식 / KR |
+| `freezer-frost-remove-no-sharp-tools` | 확실 | 공식 | 냉동실 성에를 칼이나 송곳 같은 뾰족한 금속 도구로 긁어내면 냉각기나 벽면이 파손될 수 있으므로 사용하지 않는다. 충분히 녹은 뒤 따뜻한 물에 적신 행주로 부드럽게 닦는다 | LG / 냉장고 / 일반냉장고 냉동실 (대표 모델 기준) / 전 연식 / KR |
+| `freezer-frost-lg-directcool-thaw-button-restart` | 확실 | 공식 | LG 업소용 직냉식 냉장고는 냉동온도 버튼을 3초 눌러 '꺼짐'으로 맞춰 성에가 녹을 때까지 기다리고, 재가동은 같은 버튼을 3초 눌러 원하는 온도로 맞춘다 | LG / 냉장고 / 업소용 직냉식 냉장고 (가정용 페이지 아님) / 전 연식 / KR |
+| `freezer-frost-drain-plug-meltwater` | 확실 | 공식 | 성에를 녹인 뒤 바닥에 물이 많이 고이면 제품 아랫면의 배수구 마개를 뽑아 물을 빼고, 다 빠지면 마개를 다시 막는다 | LG / 냉장고 / 업소용 직냉식 냉장고 (가정용 페이지 아님) / 전 연식 / KR |
+| `freezer-frost-power-outage-normal-1-2weeks` | 확실 | 공식 | 정전 후 다시 켠 뒤 생긴 성에는 고장이 아니며, 냉기가 안정되면 1~2주 안에 자연스럽게 사라진다 | LG / 냉장고 / 일반냉장고 냉동실 (대표 모델 기준) / 전 연식 / KR |
+| `freezer-frost-samsung-defrost-button-stuck-service` | 확실 | 공식 | 삼성 직냉식 냉장고에서 얼음이 다 녹았는데도 제상 버튼이 원위치로 돌아오지 않으면 서비스센터 점검이 필요하다 | 삼성 / 냉장고 / 직냉식(direct cool) 냉장고 / 현행 모델 기준 / IN |
+| `freezer-frost-samsung-no-internal-repair` | 확실 | 공식 | 삼성 직냉식 냉장고의 내부 부품은 사용자가 분해하거나 수리하지 않는다 | 삼성 / 냉장고 / 직냉식(direct cool) 냉장고 / 현행 모델 기준 / IN |
+
+### 냉장고 문이 꽉 안 닫히거나 틈이 생길 때 자가점검 (원인·단계별 점검·패킹 교체/AS 기준) <sub>2026-11-03 · fridge-door-wont-close-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `samsung-door-close-check-order` | 확실 | 공식 | 삼성 공식 자가점검은 냉장고 문이 잘 닫히지 않을 때 ①식품·보관 용기가 문에 걸리지 않게 정리하고 서랍·선반이 끝까지 들어가 있는지 확인 ②프렌치 도어의 왼쪽 냉장실 문 쿨키퍼가 뒤집혀 있지 않은지 확인 ③도어 고무 패킹의 이물질을 부드러운 천으로 닦고 접힘·들뜸을 확인 ④수평 상태 확인 ⑤해결되지 않으면 출장서비스 예약 순서로 안내한다 | 삼성 / 냉장고 / 전 라인(쿨키퍼 항목은 프렌치 도어) / 전 연식(페이지 명시 없음) / KR |
+| `samsung-door-level-front-slightly-higher` | 확실 | 공식 | 삼성 공식 안내에 따르면 냉장고는 앞쪽이 뒤쪽보다 살짝 높게 설치되어야 문이 제대로 닫히며, 앞쪽이 지나치게 높으면 안 되고 기울어 앞으로 쏠리면 문이 잘 안 닫힌다. 오른쪽 하단 조절다리에 일자형 드라이버를 끼워 돌려 높이를 맞추고, 왼쪽이 낮으면 왼쪽 하단 조절다리도 같은 방식으로 맞춘다 | 삼성 / 냉장고 / 지펠·양문형 냉장고 / 전 연식(페이지 명시 없음) / KR |
+| `samsung-gasket-magnet-weakens-with-use` | 확실 | 공식 | 삼성 공식 안내에 따르면 도어 밀착력은 가스켓에 들어 있는 자석의 힘에서 나오며 사용 기간이 길어질수록 약해질 수 있다. 문을 닫은 직후 다시 열면 내부 온도·압력 차이로 더 안 열릴 수 있으며, 문이 저절로 열리지 않고 정상적으로 닫힌다면 밀착이 강하게 느껴져도 정상일 수 있다 | 삼성 / 냉장고 / 지펠·양문형 냉장고(독립냉각 방식 언급) / 전 연식(페이지 명시 없음) / KR |
+| `samsung-service-criteria-seal-damage` | 확실 | 공식 | 삼성 공식 안내에 따르면 자가점검으로 해결되지 않으면 출장서비스(전문 엔지니어 방문 점검)를 예약하며, 문이 완전히 닫히지 않거나 고무패킹이 찢어지고 변형되어 냉기가 새는 경우에도 엔지니어 점검이 필요하다. 삼성 대표전화는 1588-3366이다 | 삼성 / 냉장고 / 지펠·양문형 냉장고 / 전 연식(페이지 명시 없음) / KR |
+| `lg-door-cause-packing-residue-or-detached` | 확실 | 공식 | LG 공식 안내는 냉장고 문이 꽉 닫히지 않는 원인을 두 가지로 든다. 고무패킹(개스킷)에 묻은 끈적한 이물질로 밀착력이 떨어지는 경우, 그리고 고무패킹이 이탈하거나 처진 경우다 | LG / 냉장고 / 공용 안내(적용 모델 명시 없음) / 2026.04 게시 기준 / KR |
+| `lg-gasket-clean-steps-and-wait` | 확실 | 공식 | LG 공식 자가점검 순서에 따르면 패킹 4면을 스팀타월(전자레인지로 데운 적신 수건)로 2~3회 닦은 뒤 마른 수건이나 헤어드라이기 따뜻한 바람으로 물기를 말리고, 문을 닫은 상태로 최소 2시간 열지 않아 밀착되게 한다 | LG / 냉장고 / 공용 안내 / 2026.04 게시 기준 / KR |
+| `lg-gasket-reseat-into-groove` | 확실 | 공식 | LG 공식 안내에 따르면 패킹이 일부 빠지거나 처졌다면 손으로 눌러 도어 안쪽 홈에 맞춰 끼우고, 손으로 한 바퀴 훑어 고르게 들어갔는지 확인한다 | LG / 냉장고 / 공용 안내 / 전 연식(페이지 명시 없음) / US |
+| `lg-door-cause-items-shelf-bag-reinstall` | 확실 | 공식 | LG 미국 고객지원 페이지는 문이 안 닫히는 원인으로 ①선반 끝 밖으로 나온 음식이나 용기 ②청소 후 선반·병꽂이·서랍을 잘못 되돌린 경우 ③문에 끼인 비닐봉지나 포장재 ④끈적한 이물질 ⑤패킹이 처지거나 홈에서 빠진 경우 ⑥이사 후 도어를 잘못 재장착한 경우를 든다 | LG / 냉장고 / 미국 판매 모델 중심 안내 / 전 연식(페이지 명시 없음) / US |
+| `lg-door-level-front-slightly-higher` | 확실 | 공식 | LG 미국 고객지원 페이지는 냉장고 앞쪽을 뒤쪽보다 살짝 높이면 문이 잘 닫히고 틈이 생기지 않는다고 안내하며, 앞쪽 조절 다리로 맞추라고 한다 | LG / 냉장고 / 미국 판매 모델 중심 안내 / 전 연식(페이지 명시 없음) / US |
+| `lg-packing-replacement-service-route` | 논쟁 🔶 | 공식 | LG 국내 공식 안내에 따르면 패킹이 찢어지거나 심하게 손상되면 LG전자 고객센터 1544-7777로 부품 교체 서비스를 신청한다. 패킹 단품 구매 경로는 공식 페이지 안에서 서로 달리 적혀 있다(본문은 서비스센터에서 부품만 따로 판매하지 않는다는 취지, FAQ는 고객센터 문의 후 모델을 확인하면 서비스센터에서 구매 가능) | LG / 냉장고 / 공용 안내(모델별 부품 가능 여부 다를 수 있음) / 2026.04 게시 기준 / KR |
+| `lg-packing-cost-and-lead-time-unverified` | 확인실패 | 공식 | LG 및 삼성 공식 자가점검 페이지에서는 패킹 교체 비용과 소요 기간을 확인하지 못했다. 교체 비용은 공식 근거 없이 금액을 쓰지 말 것 | 공통 / 냉장고 / 도어 가스켓 교체 / 전 연식 / KR |
+
+### 냉장고 소음(웅웅·딸깍·물소리) 정상 여부 자가 판별 <sub>2026-11-03 · fridge-noise-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `fridge-noise-compressor-startstop-sound` | 확실 | 공식 | 냉장고 컴프레서가 기동하거나 정지할 때 드르륵·덜컥·웅 같은 진동음이 30~60초 정도 이어질 수 있으며, 이는 정상 작동음이다. 수평이 맞지 않으면 이 소리가 더 크게 날 수 있다 | LG / 냉장고 / 정수기형 냉장고 안내 페이지 기준 / 전 연식 / KR |
+| `fridge-noise-3way-valve-click` | 확실 | 공식 | 냉장고에서 턱턱턱 또는 드드드 같은 짧은 딸깍 소리는 냉매 흐름을 바꾸는 3-way 밸브가 여닫히는 소리로 정상이다. 하루 1회 약 7초, 1시간에 4회 약 3초 정도 날 수 있다 | LG / 냉장고 / 정수기형 냉장고 안내 페이지 기준 / 전 연식 / KR |
+| `fridge-noise-refrigerant-flow-water-sound` | 확실 | 공식 | 냉장고 안에서 졸졸·꼬륵 같은 물소리가 나는 것은 냉매가 기체와 액체 사이를 오가며 순환하거나 성에가 녹는 소리일 수 있으며, 냉기가 정상이면 작동음으로 본다 | 삼성 / 냉장고 / 냉장고 전 라인(안내 페이지 기준) / 전 연식 / KR |
+| `fridge-noise-defrost-drip-tick` | 확실 | 공식 | 제상(성에 제거) 중 녹은 물이 떨어지며 나는 뚝뚝 소리와 히터에서 물이 증발하며 나는 취익 소리는 정상이며, 하루 1~2회 날 수 있다 | LG / 냉장고 / 정수기형 냉장고 안내 페이지 기준 / 전 연식 / KR |
+| `fridge-noise-thermal-expansion-crack` | 확실 | 공식 | 냉장고에서 뚝·딱 하는 짧은 소리는 온도 변화에 따라 선반 등 플라스틱 부품이 수축·팽창하며 나는 정상 소리다 | LG / 냉장고 / 정수기형 냉장고 안내 페이지 기준 / 전 연식 / KR |
+| `fridge-noise-compressor-buzz-normal` | 확실 | 공식 | 냉장고에서 웅·웽·징징 하는 낮은 소리는 컴프레서와 팬이 냉각 중에 나는 소리이며, 문을 자주 열거나 뜨거운 음식을 넣으면 일시적으로 커질 수 있다. 설정 온도에 도달하면 모터 속도와 소음이 줄어든다 | LG / 냉장고 / 정수기형 냉장고 안내 페이지 기준 / 전 연식 / KR |
+| `fridge-noise-leveling-vibration` | 확실 | 공식 | 냉장고가 드드드 또는 다다다 하고 떨리는 소리는 수평 불량이나 벽과의 간격 부족이 원인일 가능성이 크다. 측면·후면을 벽에서 띄우고 높이 조절 레그로 수평을 맞추면 해결되는 경우가 많다 | LG / 냉장고 / 정수기형 냉장고 안내 페이지 기준 / 전 연식 / KR |
+| `fridge-noise-fan-frost-tapping` | 확실 | 공식 | 냉장고 팬에서 드드득·다다다·덜덜덜 하는 이상음은 팬에 물건이 닿거나 팬 주변에 성에(결빙)가 쌓였을 때 생길 수 있다. 전원을 분리하고 도어를 열어 최소 24시간 두면 성에가 녹아 해소될 수 있다 | LG / 냉장고 / 정수기형 냉장고 안내 페이지 기준 / 전 연식 / KR |
+| `fridge-noise-samsung-whoosh-compressor-speed` | 확실 | 공식 | 삼성 냉장고의 웅 소리는 압축기와 팬이 상태에 따라 빨랐다 느려지기를 반복하며 소리가 커졌다 작아질 수 있는 정상 현상이다. 운전이 시작되거나 끝날 때 나는 소리와 조용한 밤에 더 크게 들리는 것도 정상이다 | 삼성 / 냉장고 / 양문형 냉장고(참조 모델 RH82M9152SL) / 2025-12-31 등록 페이지 기준 현행 모델 / KR |
+| `fridge-noise-samsung-smartthings-diagnosis` | 확실 | 공식 | 삼성 4도어 일부 모델(RF60A/B/C, RF85A/B/C, RF84C 등)은 스마트싱스 앱에서 냉장고 소음을 녹음해 진단을 의뢰할 수 있으며, 결과는 최대 3일 걸릴 수 있다 | 삼성 / 냉장고 / 4도어 일부 모델(RF60A/B/C, RF85A/B/C, RF84C) / 현행 모델 기준 / KR |
+| `fridge-noise-lg-as-criteria` | 확실 | 공식 | LG 냉장고 소음이 사용에 불편할 정도로 계속되거나 제품 이상으로 보이는 증상이 있으면 간단한 조치로 해결되지 않으므로 LG전자 고객센터(1544-7777) 또는 출장 서비스 예약으로 진단을 받는다 | LG / 냉장고 / 정수기형 냉장고 안내 페이지 기준 / 전 연식 / KR |
+| `fridge-noise-samsung-as-criteria` | 확실 | 공식 | 삼성 냉장고 소음이 평소보다 크거나 문을 열 때 멈추는 소리가 크면 전문 엔지니어 점검을 받는다. 무상 보증기간 안이라도 사용법 설명·설치처럼 고장이 아닌 경우에는 별도 요금이 붙는다 | 삼성 / 냉장고 / 양문형 냉장고(참조 모델 RH82M9152SL) / 2025-12-31 등록 페이지 기준 / KR |
+| `fridge-noise-samsung-decibel-app-unverified` | 확인실패 | 공식 | 소음측정 앱으로 냉장고 1m 앞에서 10초씩 2회 측정해 차이가 10dB 이하이면 이상이 아닐 수 있다는 방법은 삼성 공식 안내 페이지 두 곳에서 확인하지 못했다 | 삼성 / 냉장고 / 냉장고 전 라인 / 전 연식 / KR |
+| `fridge-noise-samsung-india-humming-normal` | 확실 | 공식 | 삼성 냉장고의 지속적인 웅 소리는 대체로 정상 작동음이며 그 자체로 고장을 뜻하지 않는다. 얼음 제빙기가 웅 하는 소리도 물 연결이 없으면 정상으로 본다 | 삼성 / 냉장고 / 전 라인(인도 안내 페이지) / 전 연식 / IN |
+
+### 히터를 처음 켰을 때 나는 냄새 — 정상 먼지 타는 냄새와 위험한 타는 냄새 구분, 즉시 중단 신호, 청소 방법 <sub>2026-11-03 · heater-first-use-smell-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `lge-ac-first-heating-smell` | 확실 | 공식 | LG전자 공식 안내에 따르면 에어컨을 냉방에서 난방으로 처음 바꿔 쓸 때, 냉방 중 열판에 쌓인 먼지가 열을 받아 냄새가 날 수 있다. 전기 히터가 장착된 모델은 순간적으로 연기와 함께 타는 냄새가 날 수 있다고 안내한다. | LG / 에어컨 / 난방 모드 열판·전기 히터 장착 모델 / 원문에 연식 구분 없음 / KR |
+| `lge-ac-smell-persist-service` | 확실 | 공식 | LG전자 공식 안내는 난방 초기 냄새가 지속되거나 점점 심해지면 전문 서비스매니저의 점검이 필요하다고 한다. 같은 안내는 사용 중 자주 환기할 것을 권한다. | LG / 에어컨 / 난방 모드 열판 장착 모델 / 원문에 연식 구분 없음 / KR |
+| `lge-ac-no-immediate-cutoff-criterion` | 확인실패 | 실측 | LG전자 난방 초기 냄새 안내 원문에는 즉시 전원을 꺼야 하는 조건(연기가 지속되는 기준, 플라스틱·전선 타는 냄새 구분 등)이 명시되어 있지 않다. | LG / 에어컨 / 난방 모드 열판 장착 모델 / 원문 기준 / KR |
+| `samsung-bidet-new-product-first-run-smell` | 확실 | 공식 | 삼성전자서비스 공식 안내에 따르면 새 비데를 처음 설치해 가동하면 내부 히터와 팬이 작동하며 나는 냄새는 열로 인한 일시적 현상이고, 시간이 지나면서 점차 사라진다. | 삼성 / 비데 / 내부 히터·팬 탑재 모델 / 신규 설치 직후 / KR |
+| `samsung-bidet-plastic-smell-unplug` | 확실 | 공식 | 삼성전자서비스 공식 안내는 사용 중 플라스틱 냄새가 심하게 나면 사용을 중지하고 전원 플러그를 콘센트에서 분리하라고 하며, 타는 냄새나 단내가 심하면 전문 엔지니어의 점검을 받으라고 한다. | 삼성 / 비데 / 내부 히터 탑재 모델 / 설치 후 오래 쓴 제품 / KR |
+| `samsung-dryer-smell-service-criteria` | 확실 | 공식 | 삼성전자서비스 공식 안내는 타는 냄새와 함께 차단기가 떨어지거나 전원이 꺼지거나 퍽 하는 소리가 나면 엔지니어 방문 점검이 필요하다고 한다. 냄새가 계속 심하면 역시 점검을 권한다. | 삼성 / 의류건조기 / 건조기 전 라인 / 구입 초기 및 장기 사용 모두 / KR |
+| `samsung-dryer-new-product-smell-volatile` | 확실 | 공식 | 삼성전자서비스 공식 안내에 따르면 구입 초기 건조기에서 나는 타는 듯한 냄새는 새 제품의 구성 성분에서 나는 일반적인 냄새이며, 사용하면서 자연적으로 휘발되어 사라진다. | 삼성 / 의류건조기 / 건조기 전 라인 / 구입 초기 / KR |
+| `heater-first-use-dust-cleaning-procedure` | 확인실패 | 실측 | 난방기 첫 사용 냄새의 원인인 발열부 먼지를 제거하는 구체적 청소 절차(부위, 도구, 방법)는 이번에 열람한 공식 원문(LG전자, 삼성전자서비스, 인천공단소방서)에서 확인하지 못했다. | 공통 / 전기난방기 / 전기히터·온풍기 / 전 연식 / KR |
+
+### 난방기구 안전하게 쓰는 법 — 화재·저온화상 예방 (전기장판·전기매트류 공식 주의보, 소방청 전기화재 수칙, 가스난로·전기히터 공식 수칙 확보 실패 기록) <sub>2026-11-03 · heater-safety-winter-guide</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `kca-2020-blanket-burn-stats` | 확실 | 공식 | 한국소비자원 소비자안전주의보(2020-12-14)에 따르면 2017~2019년 전기장판 관련 화상 사례는 902건이었고, 위해 정도가 확인된 620건 중 2도 화상이 391건(63.1%)으로 가장 많았다. | 공통 / 전기난방기 중 전기장판·전기요 / 전기장판 사용 중 화상 / 2017~2019 위해정보 기준 / KR |
+| `kca-2020-blanket-burn-recommendations` | 확실 | 공식 | 한국소비자원은 저온화상 예방을 위해 얇은 이불을 덧깔거나 긴소매 잠옷과 양말로 피부가 직접 닿지 않게 하고, 지나치게 높은 온도 설정 대신 시간 예약 기능을 쓰며, 같은 자세로 장시간 사용하지 말라고 권고했다. 당뇨 등 기저질환이 있거나 음주·약물 복용으로 피부 감각이 떨어졌을 때는 사용을 피하라고 했다. | 공통 / 전기난방기 중 전기장판·전기요 / 전기장판 수면·장시간 사용 / 2020-12-14 발표 기준 / KR |
+| `kca-2018-kc-mark-check` | 확실 | 공식 | 한국소비자원 주의보(2018-12-17)는 전기매트류 구매 시 안전인증(KC마크와 안전인증번호)을 받은 제품인지 확인하라고 권고했다. 온수매트는 KC 안전인증 대신 안전확인신고번호를 확인한다. | 공통 / 전기난방기 중 전기매트류 / 전기장판·전기요·온수매트 / 2018-12-17 발표 기준 / KR |
+| `kca-2018-storage-coil-not-folded` | 확실 | 공식 | 한국소비자원 주의보(2018-12-17)는 열선이 꺾이면 합선될 수 있으므로 전기매트류를 접지 말고 둥글게 말아 보관하라고 했다. 오래 보관한 제품은 사용 전에 전선 피복이 벗겨졌는지, 온도조절기가 정상 작동하는지 점검하라고 했다. | 공통 / 전기난방기 중 전기매트류 / 전기장판·전기요 보관 / 2018-12-17 발표 기준 / KR |
+| `kca-2018-latex-bedding-heat-trap` | 확실 | 공식 | 한국소비자원 주의보(2018-12-17)는 라텍스 재질 침구는 열이 쌓여 화재 위험이 크므로 전기매트와 함께 쓰지 말라고 했다. | 공통 / 전기난방기 중 전기매트류 / 전기장판과 라텍스 침구 병용 / 2018-12-17 발표 기준 / KR |
+| `kca-2018-cold-burn-skin-contact` | 확실 | 공식 | 한국소비자원 주의보(2018-12-17)는 전기매트류가 장시간 열을 내므로 저온화상 위험이 있어 피부를 직접 대고 사용하지 말라고 했다(맨살 접촉 회피). | 공통 / 전기난방기 중 전기매트류 / 전기장판·전기요 피부 접촉 / 2018-12-17 발표 기준 / KR |
+| `kca-2018-vulnerable-users-avoid` | 확실 | 공식 | 한국소비자원 주의보(2018-12-17)는 노약자와 영유아는 과열에 스스로 대처하기 어려우므로 전기매트류 사용을 피하라고 했다. | 공통 / 전기난방기 중 전기매트류 / 노약자·영유아 사용 / 2018-12-17 발표 기준 / KR |
+| `kca-2018-unplug-after-use` | 확실 | 공식 | 한국소비자원 주의보(2018-12-17)는 전기매트류 사용 후 콘센트를 뽑거나 스위치를 끄라고 했다. | 공통 / 전기난방기 중 전기매트류 / 사용 후 전원 차단 / 2018-12-17 발표 기준 / KR |
+| `nfa-2021-octopus-and-cord-check` | 확실 | 공식 | 소방청 보도자료(2021-05-12)는 콘센트 하나에 여러 전기제품을 연결하는 문어발식 사용을 삼가고, 낡거나 손상된 전선은 주기적으로 확인해 단락이 생기지 않도록 바로 교체하라고 안내했다. | 공통 / 멀티탭·콘센트·전선 / 일반 전기제품 전체 / 2021-05-12 발표 기준 / KR |
+| `nfa-2021-rated-capacity-breaker` | 확실 | 공식 | 소방청 보도자료(2021-05-12)는 정격용량을 넘는 전기를 쓰면 과열로 화재가 날 수 있으므로 전기제품 규격에 맞는 퓨즈와 차단기를 써야 한다고 안내했다. | 공통 / 멀티탭·분전반·차단기 / 전기 사용 전반 / 2021-05-12 발표 기준 / KR |
+| `nfa-2021-heating-unplug-when-away` | 확실 | 공식 | 소방청 보도자료(2021-05-12)는 냉·난방용품을 오랫동안 계속 쓰지 말고, 외출할 때는 플러그를 뽑으라고 안내했다. | 공통 / 냉·난방용품 / 전기 난방기기 포함 일반 / 2021-05-12 발표 기준 / KR |
+| `kgs-gas-heater-no-official-rule` | 확인실패 | 실측 | 한국가스안전공사 '계절별 안전관리' 원문에는 가스난로·석유난로·온풍기의 안전사용 수칙이 없다. 확인된 내용은 가스용기 옥외 보관과 가스보일러 배기통 점검뿐이다. 가스난로 수칙은 이 페이지로 근거를 대지 말 것. | 공통 / 가스난로·석유난로 / 가스난로·석유난로·온풍기 / 전 연식 / KR |
+| `kca-2020-no-cold-burn-temp-criterion` | 확인실패 | 실측 | 저온화상이 생기는 온도·시간 기준은 한국소비자원 2020년 전기장판 주의보 원문에 명시되어 있지 않다. 검색 요약에서 서로 다른 온도 기준이 보였으나 원문으로 확인하지 못했다. | 공통 / 난방용품 저온화상 / 전 난방용품 / 2020 기준 / KR |
+| `kca-2020-no-electric-heater-rules` | 확인실패 | 실측 | 한국소비자원 2020년 전기장판 저온화상 주의보 원문에는 전기히터·온풍기에 관한 내용이 없다. 이번 조사에서 전기히터 전용 공식 사용수칙은 확보하지 못했다. | 공통 / 전기난방기 / 전기히터·온풍기(석영관·PTC·카본·오일 포함) / 전 연식 / KR |
+
+### 하이패스 단말기 인식 불가 시 점검 순서 (카드·전원·장착·열차단 필름·AS 경로) <sub>2026-11-03 · hipass-terminal-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `hipass-card-parallel-mount` | 확실 | 공식 | 하이패스 카드는 카드 삽입구와 가능한 한 평행하게 끝까지 넣어야 한다. 비스듬하게 꽂으면 카드 소켓 불량이나 카드 인식 오류가 생겨 하이패스 차로에서 작동하지 않을 수 있다. | 현대 / 차량 장착 하이패스 단말기 / GN7 2026 사용설명서 기준 / 2026 / KR |
+| `hipass-card-face-up` | 확실 | 공식 | 하이패스 카드는 앞면이 위로 향하도록 삽입해야 한다. | 기아 / 차량 장착 하이패스 단말기 / PUEV 2024 사용설명서 기준 / 2024 / KR |
+| `hipass-card-foreign-object-ban` | 확실 | 공식 | 하이패스 카드 삽입구에는 하이패스 카드 외의 비표준 카드, 이물질, 금속성 물질(SD 메모리, 손상된 카드 등)을 넣으면 안 된다. 카드를 뺄 때는 추출(EJECT) 버튼을 눌러야 하며, 무리하게 당기면 삽입부가 손상될 수 있다. | 기아 / 차량 장착 하이패스 단말기 / PUEV 2024 사용설명서 기준 / 2024 / KR |
+| `hipass-card-nonstandard-ejection` | 확실 | 공식 | 한국도로공사 하이패스 카드 표준 규격에 맞지 않는 카드는 추출 시 튀어나올 수 있다. 이 경우는 단말기 고장이 아니라 카드 문제이므로 카드를 교체해 사용한다. | 기아 / 차량 장착 하이패스 단말기 / PUEV 2024 사용설명서 기준 / 2024 / KR |
+| `hipass-led-red-meaning` | 확실 | 공식 | 하이패스 단말기 LED가 빨간색으로 켜져 있으면 미등록 단말기, 카드 미삽입 또는 오삽입, 사용할 수 없는 카드, 카드 잔액 부족 등 비정상 상태다. 빨간불 상태에서는 영업소를 통과하기 전에 원인을 확인해야 한다. 초록색 5회 깜빡임은 정상 결제, 빨간색 5회 깜빡임은 영업소 통과 중 결제 오작동을 뜻한다. | 기아 / 차량 장착 하이패스 단말기 / PUEV 2024 사용설명서 기준, LED 표시 체계 / 2024 / KR |
+| `hipass-balance-button` | 확실 | 공식 | 하이패스 단말기의 잔액 확인 버튼을 짧게 누르면 카드 잔액을 음성으로 안내하고, 길게 누르면 최근 거래 요금을 음성으로 안내한다. | 기아 / 차량 장착 하이패스 단말기 / PUEV 2024 사용설명서 기준 / 2024 / KR |
+| `hipass-power-switch-on-pass` | 확실 | 공식 | 하이패스 차로를 통과할 때는 단말기 전원 스위치를 켠 상태여야 한다. 전원이 꺼진 상태로 통과하면 통행료가 결제되지 않는다. | 현대 / 차량 장착 하이패스 단말기 / GN7 2026 사용설명서 기준 / 2026 / KR |
+| `hipass-film-antenna-warning` | 확실 | 공식 | 비정품 안테나류, 비정품 통신기기, 필름형 안테나, 행복단말기, 요일제 단말기 등을 장착하면 하이패스 통신에 장애가 생겨 하이패스 차로 통과 시 과금이 되지 않을 수 있다. 차량 내에 별도의 하이패스 단말기를 추가로 설치해도 요금이 결제되지 않을 수 있다. | 현대 / 차량 장착 하이패스 단말기 / GN7 2026 사용설명서 기준, 필름형 안테나 등 비정품 장착물 / 2026 / KR |
+| `hipass-window-coating-comm-risk` | 확실 | 공식 | 앞 유리창에 금속성 특수 코팅 또는 선팅지를 붙이면 하이패스 통신 장애가 생길 수 있다. | 현대 / 차량 장착 하이패스 단말기 / 앞 유리 금속성 코팅·선팅지 / 2026 / KR |
+| `hipass-warranty-disassembly-excluded` | 확실 | 공식 | 하이패스 시스템 부품을 임의로 분리하거나 다시 장착하면서 생긴 하이패스 시스템 고장은 보증수리를 받을 수 없다. 원문은 선팅, 블랙박스 장착을 예시로 든다. | 기아 / 차량 장착 하이패스 단말기 / PUEV 2024 사용설명서 기준 / 2024 / KR |
+| `hipass-as-service-route` | 확실 | 공식 | 자동요금 징수 시스템(ETCS, 하이패스)이 고장 나서 정상 작동하지 않으면 차량 제조사의 직영 서비스센터 또는 서비스협력사에서 점검을 받으라고 매뉴얼이 안내한다. | 기아 / 차량 장착 하이패스 단말기 / 차량 순정 ETCS 기준 / 2024 / KR |
+
+### 휴대폰 핫스팟이 연결되지 않을 때 점검 순서 (갤럭시·아이폰 공통 원인과 공식 점검 단계, AS 기준) <sub>2026-11-03 · hotspot-not-connecting-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `hotspot-no-internet-check-cellular-and-tether-data` | 확실 | 공식 | 핫스팟에는 기기가 연결되는데 인터넷이 안 되면, 휴대폰 자체의 모바일 데이터 연결 상태를 먼저 확인하고 테더링(핫스팟) 데이터 잔여량을 본다. 테더링 데이터가 소진되면 다른 기기가 연결돼 있어도 인터넷에 접속하지 못할 수 있다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `apple-hotspot-carrier-support-and-fees` | 확실 | 공식 | 아이폰 개인용 핫스팟은 핫스팟을 지원하는 이동통신사 회선이 필요하다. 추가 요금이 붙을 수 있고, 동시에 연결할 수 있는 기기 수는 통신사와 아이폰 기종에 따라 달라진다 | 애플 / 스마트폰·태블릿 / 아이폰·아이패드 셀룰러 모델 / 전 연식 / 글로벌 |
+| `apple-hotspot-allow-others-and-password` | 확실 | 공식 | 아이폰은 개인용 핫스팟에서 '다른 사용자 허용(Allow Others to Join)'을 켜야 다른 기기가 핫스팟에 참여할 수 있다. Wi-Fi 암호는 8자 이상으로 설정해야 하며, ASCII 문자만 허용된다 | 애플 / 스마트폰·태블릿 / 아이폰·아이패드 개인용 핫스팟 / 전 연식 / 글로벌 |
+| `apple-hotspot-maximize-compatibility-try` | 확실 | 공식 | 아이폰 핫스팟 연결이 안 되면 Apple은 개인용 핫스팟 설정에서 '최대 호환성(Maximize Compatibility)'을 켜 보라고 안내한다. 오래된 기기와의 연결을 개선하려는 옵션이다 | 애플 / 스마트폰·태블릿 / 아이폰·아이패드 개인용 핫스팟 / 전 연식 (옵션 노출 기기는 문서 기준으로 확인) / 글로벌 |
+| `apple-hotspot-wifi-bluetooth-nearby` | 확실 | 공식 | Wi-Fi로 아이폰 핫스팟에 연결할 때는 두 기기를 서로 가까이 두고, 양쪽 모두 Wi-Fi와 블루투스를 켜 둬야 한다. 블루투스 방식으로 연결할 때는 핫스팟 기기에서 블루투스를 켜고 연결하는 컴퓨터에서 페어링한다 | 애플 / 스마트폰·태블릿 / 아이폰 개인용 핫스팟 (연결 방식별) / 전 연식 / 글로벌 |
+| `samsung-hotspot-restart-first` | 확실 | 공식 | 삼성 공식 핫스팟 점검 순서의 첫 단계는 기기 재시작이다. 전원 메뉴에서 다시 시작을 누른 뒤 한 번 더 다시 시작을 누른다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / 글로벌(미국 지원 페이지) |
+| `samsung-hotspot-check-availability-and-band` | 확실 | 공식 | 갤럭시 핫스팟이 감지되지 않으면 삼성 공식 문서는 보안 상태를 WPA2로 맞추고, 숨겨진 네트워크를 끄고, 5GHz 또는 2.4GHz 대역을 바꿔 보라고 안내한다. 같은 페이지는 모바일 데이터 아이콘이 켜져 있는지와 VPN을 끄는 것도 확인하라고 한다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 (핫스팟 대역 설정 지원 기종) / 전 연식 / 글로벌(미국 지원 페이지) |
+| `samsung-hotspot-hidden-device-off` | 확실 | 공식 | 갤럭시 핫스팟을 켰는데 다른 휴대폰의 Wi-Fi 목록에 안 보이면, 삼성 공식 안내는 모바일 핫스팟 설정에서 '내 디바이스 숨기기'를 해제하라고 한다. 같은 안내는 설정 > 고급 > 숨겨진 네트워크를 끄고 저장하는 방법도 준다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `samsung-hotspot-airplane-mode-toggle-blog` | 확인실패 🔶 | 후기 | 후기 블로그들은 갤럭시에서 비행기 모드를 1분 정도 켰다가 끄고 핫스팟을 다시 시도하는 방법을 소개한다. 삼성 공식 점검 문서에는 이 단계가 없다 | 삼성 / 스마트폰 / 갤럭시 (기종별 확인 안 됨) / 2023년 기준 글 / 글로벌 |
+| `samsung-hotspot-data-saver-power-saving-blog` | 확인실패 🔶 | 후기 | 후기 블로그들은 갤럭시에서 데이터 세이버와 절전 모드가 핫스팟 연결을 방해할 수 있으니 끄고 다시 시도하라고 안내한다. 경로는 설정 > 연결 > 데이터 사용량 > 데이터 세이버, 그리고 설정 > 배터리 및 기기 관리 > 배터리의 절전 모드다 | 삼성 / 스마트폰 / 갤럭시 (One UI 메뉴 기준, 기종별 차이 있음) / 2023년 기준 글 / 글로벌 |
+| `samsung-hotspot-update-at-50-percent` | 확실 | 공식 | 삼성 공식 문서는 소프트웨어 업데이트를 설치하기 전에 배터리를 최소 50% 이상 충전하라고 안내한다. 이 단계는 점검 순서에서 재시작과 설정 확인 다음에 온다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / 글로벌(미국 지원 페이지) |
+| `samsung-hotspot-safe-mode-isolate-app` | 확실 | 공식 | 삼성 공식 문서는 안전 모드에서 핫스팟이 정상 작동하면 원인이 내려받은 앱일 가능성이 크다고 보고, 최근 내려받은 앱을 하나씩 지워 보라고 안내한다. 안전 모드에서는 내려받은 앱이 모두 꺼진다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / 글로벌(미국 지원 페이지) |
+| `samsung-hotspot-sim-swap-test` | 확실 | 공식 | 삼성 공식 문서는 핫스팟 문제가 계속되는지 확인하려면 현재 유심을 다른 정상 유심으로 바꿔 보라고 안내한다. 유심이 원인이면 같은 증상이 사라진다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 (셀룰러 모델) / 전 연식 / 글로벌(미국 지원 페이지) |
+| `samsung-hotspot-service-center-criteria` | 확실 | 공식 | 앞의 점검 단계를 모두 해봐도 핫스팟이 안 되면 삼성 공식 안내는 전문상담사에게 문의하라고 한다. 삼성전자서비스 고객지원 페이지는 전화 상담 예약을 안내한다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `samsung-hotspot-network-reset-blog-only` | 확인실패 🔶 | 후기 | 후기 블로그는 갤럭시에서 설정의 네트워크 설정 초기화를 핫스팟 최후 수단으로 소개한다. 삼성 공식 점검 문서에는 이 단계가 없다 | 삼성 / 스마트폰 / 갤럭시 (기종별 확인 안 됨) / 2023년 기준 글 / 글로벌 |
+
+### 초음파 가습기 하얀 가루(백분) 원인과 자가 해결법 — LG 공식 고객지원 중심, 안전 혼합 금지 포함 <sub>2026-11-03 · humidifier-white-dust-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `lg-white-powder-mineral-residue-normal` | 확실 | 공식 | 가습기 필터나 주변에 생기는 흰 가루는 수돗물 속 칼슘·마그네슘 등 미네랄이 물만 증발하고 남아 굳은 것이며, LG는 가습 사용 중 생길 수 있는 정상 현상이라고 안내한다. | LG / 가습기(가습공기청정기) / 시그니처·아쿠아 워터 필터 계열 / 2026 게시 기준 / KR |
+| `lg-ro-water-less-white-residue` | 확실 | 공식 | 정수기 역삼투압(RO) 물을 쓰면 수돗물을 쓸 때보다 흰 가루가 덜 달라붙는다. | LG / 가습기(가습공기청정기) / 전 라인 / 2026 게시 기준 / KR |
+| `lg-filter-citric-soak-10l-30g` | 확실 | 공식 | LG 가습기 필터의 흰 가루(석회질)는 미지근한 물 10L에 구연산 30g(약 2~3큰술)을 풀어 1:10 희석액을 만들고, 필터를 30분 이상 담근 뒤 부드러운 스펀지로 살살 닦아 흐르는 물에 헹구면 된다. | LG / 가습기 필터 / LG 가습기 필터 계열(페이지 명시 범위) / 페이지 게재 시점 기준 / KR |
+| `lg-citric-soak-by-model-2026` | 확실 | 공식 | LG 2026 게시 가습공기청정기 기준으로 시그니처 워터링 필터는 물 5L에 구연산 15g을 풀어 30분~2시간 담갔다가 솔로 문질러 세척하고, 아쿠아 모델은 물 5L에 구연산 15g을 미지근한 물에 풀어 1~2시간 담근 뒤 솔로 세척한다. 두 경우 모두 흐르는 물로 충분히 헹군다. | LG / 가습공기청정기 / 시그니처(오브제 공기청정기 워터링 시스템) / 아쿠아 / 2026 게시 기준 / KR |
+| `lg-vinegar-substitute-1-10` | 확실 | 공식 | LG 안내에 따르면 구연산이 없을 때는 식초를 물과 1:10 비율로 섞어 필터 세척에 쓸 수 있으며, 식초 냄새가 남지 않도록 충분히 헹궈야 한다. | LG / 가습기 필터 / LG 가습기 필터 계열(페이지 명시 범위) / 페이지 게재 시점 기준 / KR |
+| `lg-hot-water-rough-sponge-warning` | 확실 | 공식 | 가습기 필터를 세척할 때 뜨거운 물을 쓰면 필터가 변형될 수 있으므로 미지근한 물을 쓰고, 거친 수세미 대신 부드러운 스펀지로 닦아야 한다. | LG / 가습기 필터 / LG 가습기 필터 계열(페이지 명시 범위) / 페이지 게재 시점 기준 / KR |
+| `lg-filter-friction-noise-replace` | 확실 | 공식 | LG 가습기 필터가 약간 변형되었어도 작동 시 소음이 없으면 계속 써도 되지만, 파손되어 마찰음(드르륵)이 나면 사용을 멈추고 새 부품으로 교체해야 한다. | LG / 가습기 필터 / LG 가습기 필터 계열(페이지 명시 범위) / 페이지 게재 시점 기준 / KR |
+| `lg-air-purifier-humidifier-2-5m` | 확실 | 공식 | 초음파식 가습기를 공기청정기 근처에서 쓰면 공기청정기 먼지 센서가 가습기 물 분자를 먼지로 인식할 수 있어, LG는 2.5m 이상 떨어뜨려 쓰도록 권장하며 병용 자체는 권장하지 않는다. | LG / 공기청정기(퓨리케어) + 초음파식 가습기 / 퓨리케어 공기청정기 / 초음파식 가습기 / 페이지 게재 시점 기준 / KR |
+| `lg-natural-evaporation-no-sensor-effect` | 확실 | 공식 | 자연기화식 가습기는 물 분자가 작아 공기청정기 먼지 센서에 영향을 주지 않는다고 LG가 안내한다. | LG / 자연기화식 가습기 / 자연기화식 / 페이지 게재 시점 기준 / KR |
+| `lg-service-visit-after-cleaning` | 확실 | 공식 | 구연산 등으로 청소한 뒤에도 흰 가루나 증상이 해결되지 않으면 LG 고객지원에서 1:1 문의 또는 전화상담을 예약하거나, 출장 서비스 예약으로 서비스매니저 점검을 받을 수 있다. | LG / 가습공기청정기 / 전 라인 / 2026 게시 기준 / KR |
+| `ktv-2011-water-daily-clean-2to3days` | 확실 🔶 | 후기 | 2011년 한국정책방송원(KTV) 보도에 따르면 초음파 가습기는 물을 하루만 쓰고 남은 물은 버리는 것이 좋으며, 2~3일 세척하지 않으면 세균 수가 급격히 늘어나므로 구석구석 물때를 제거해야 한다. | 공통 / 초음파 가습기 / 초음파식 / 2011년 보도 기준 / KR |
+| `chem-vinegar-bleach-never-mix` | 확실 🔶 | 후기 | 락스(차아염소산나트륨 계열)와 식초는 섞으면 유해 가스(염소가스)가 생기므로 같은 세척에서 섞어 쓰면 안 되며, 두 가지를 쓸 때는 같은 날 연달아 쓰지 말고 하나씩 따로 쓰고 충분히 헹궈야 한다. | 공통 / 가습기 세척 / 전 유형(락스·식초 사용 세척) / 전 연식 / KR |
+| `chem-manufacturer-allowed-cleaner-varies` | 확실 🔶 | 후기 | 가습기마다 허용하는 세척제와 희석 방법이 다르므로 제품 설명서를 우선 따라야 하며, 설명서가 없으면 제조사 홈페이지에서 모델명으로 찾는다. 락스를 허용하지 않는 모델에는 쓰지 않는다. | 공통 / 가습기 세척 / 전 유형 / 전 연식 / KR |
+| `seoul-2011-sterilizer-provisional-conclusion` | 확실 🔶 | 후기 | 2011년 8월 31일 질병관리본부 중간조사는 원인불명 폐손상의 유력한 위험요인으로 가습기 살균제를 지목했으며, 이는 잠정 결론이었고 당국은 사용 자제와 출시 중단을 권고했다. | 공통 / 가습기 살균제(세정제) / 병실용·가정용 가습기 살균제 / 2011년 사건 기준 / KR |
+
+### 김장 후 김치냉장고 설정과 보관 요령 (제조사 공식 안내 기준, 브랜드별 수치 분리) <sub>2026-11-03 · kimjang-kimchi-fridge-guide</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `kimjang-lg-ripen-too-fast-three-steps` | 확실 | 공식 | LG 김치냉장고에서 김치가 너무 빨리 익거나 쉬면 ① 현재 온도 설정을 한 단계 낮추고 ② 익힘 기능을 끄고 맛지킴김치나 오래보관 같은 보관 기능으로 바꾸고 ③ 김치를 국물에 완전히 잠기도록 누른 뒤 위생 비닐을 덮어 공기 접촉을 줄이는 순서로 조치한다 | LG / 김치냉장고 / 온도·익힘·보관 기능이 있는 전 모델(기능명은 모델별 상이) / 조회 시점 현행 안내 / KR |
+| `kimjang-lg-salt-level-mode-match` | 확실 | 공식 | LG 김치냉장고 맛지킴김치 단계는 김치 염도에 맞춘다. 싱거운 물김치·무김치는 약, 일반 배추김치는 중, 짠 묵은지는 강을 권장한다 | LG / 김치냉장고 / 맛지킴김치 기능 보유 모델 / 조회 시점 현행 안내 / KR |
+| `kimjang-lg-ohrae-lower-compartment-long-storage` | 논쟁 🔶 | 공식 | LG 김치냉장고에서 김장김치를 여름까지 오래 보관하려면 자주 여닫지 않는 하칸을 골라 오래보관 모드로 설정하라고 안내되어 있으며, 페이지에 명시된 보관 기간은 6개월 이상이 유일하다 | LG / 김치냉장고 / 오래보관 모드 보유 모델(하칸) / 조회 시점 현행 안내 / KR |
+| `kimjang-lg-storage-temperature-table-by-type` | 논쟁 🔶 | 공식 | LG 디오스 김치톡톡(스토리 페이지 표기) 기준 보관 온도는 뚜껑식에서 약 -0.5도 · 중 -1.0도 · 강 -1.5도, 스탠드형에서 약 -1.0도 · 중 -1.5도 · 강 -2.0도로 안내되며, 원칙은 얼지 않는 가장 낮은 온도다 | LG / 김치냉장고 / 뚜껑식·스탠드형 구분(디오스 김치톡톡 표기) / 조회 시점 현행 안내 / KR |
+| `kimjang-lg-dedicated-container-temperature-stability` | 확실 | 공식 | LG 김치냉장고에서 김치냉장고 전용 김치통을 쓰면 온도 변화를 줄일 수 있다고 안내되어 있다 | LG / 김치냉장고 / 전 모델 공통 용기 안내 / 조회 시점 현행 안내 / KR |
+| `kimjang-container-placement-standard-not-found` | 확인실패 | 공식 | LG 김치냉장고 공식 보관 안내 2종(온도·보관 기능 페이지, 김치별 보관법 페이지)에서 김치통을 칸의 어느 위치에 어떻게 놓을지에 대한 수치나 기준은 확인하지 못했다. 확인된 배치 안내는 하칸 오래보관 권장뿐이다 | LG / 김치냉장고 / 김치통 배치 / 조회 시점 현행 안내 / KR |
+| `kimjang-samsung-storage-duration-not-stated` | 확인실패 | 공식 | 삼성전자서비스 김치 종류별 보관 온도 안내에는 김치의 보관 가능 기간(몇 주·몇 개월)을 명시한 수치가 없으며, 저염 김치는 1~2주 안에 얼음 여부를 확인하라는 점검 주기만 있다 | 삼성 / 김치냉장고 / 비스포크 김치플러스·전 모델 / 전 연식 / KR |
+| `kimjang-samsung-salt-2to3-general-mode-only` | 확실 | 공식 | 삼성 김치냉장고 안내에 따르면 염도가 평균(2~3%) 수준인 김치는 일반 김치 모드에서만 저장하라고 되어 있다 | 삼성 / 김치냉장고 / 비스포크 김치플러스·일반 김치 모드 보유 모델 / 전 연식 / KR |
+| `kimjang-samsung-hakan-menu-kimchi-ripening` | 확실 | 공식 | 삼성 비스포크 김치냉장고 심플 디스플레이에서 우측 메뉴 선택 버튼을 누르면 하칸 메뉴가 나오고, 메뉴 순서는 김치숙성 · 냉장 · 냉동 · 맞춤보관 · 하칸 전원꺼짐이다 | 삼성 / 김치냉장고 / 비스포크 심플 디스플레이 하칸 / 조회 시점 현행 안내 / KR |
+| `kimjang-samsung-4door-maejang-kimchi-mode-sequence` | 확실 | 공식 | 삼성 비스포크 4도어 냉장고(김치냉장고 아님)의 맞춤보관실은 버튼을 길게 누르면 모드가 순서대로 바뀌며, 예시 모델 기준 순서는 냉동 → 살얼음 → 냉장 → 김치-표준 → 김치강냉 → 김치-약냉이다 | 삼성 / 냉장고 / 비스포크 4도어 냉장고 맞춤보관실(김치냉장고 단독 제품 아님) / 조회 시점 현행 안내 / KR |
+
+### LED 조명이 깜빡이거나 어두워질 때 점검 (원인·사용자 점검·전기 작업 안전) <sub>2026-11-03 · led-light-flicker-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `breaker-test-button-replace-if-no-trip` | 확실 | 공식 | 누전차단기는 시험 버튼을 눌렀을 때 전기가 차단되어야 정상이며, 시험 버튼을 눌러도 전기가 차단되지 않으면 누전차단기를 교체해야 한다 | 공통 / 가정 분전반 누전차단기 / 전 라인 / 전 연식 / KR |
+| `dimmer-minimum-load-holding-current` | 확인실패 🔶 | 후기 | 조광기(TRIAC 방식)와 전자식 변압기는 최소 부하 전류나 최소 유지 전류가 필요하며, LED 부하가 이보다 작으면 깜빡임이 생긴다는 설명이 특허 자료에 있다 | 공통 / 조광기·전자식 변압기 + LED / TRIAC 조광기 계열 / 특허 명세 기준 / 글로벌 |
+| `kesco-led-flicker-official-guidance-not-found` | 확인실패 | 실측 | 한국전기안전공사(kesco.or.kr)에서 LED 조명 깜빡임의 원인별 점검 절차를 안내한 공식 문서는 이번 조사에서 확인하지 못했다 | 공통 / 조명·가정 전기설비 / LED 조명 깜빡임 / 전 연식 / KR |
+
+### 수도 수압이 약할 때 원인 찾는 순서 (에어레이터·세대 밸브·계량기·공용 배관·공급 측) <sub>2026-11-03 · low-water-pressure-faucet-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `kwater-report-dispatch-on-complaint` | 확실 | 공식 | K-water 지방상수도 서비스 안내에 따르면 수도미터기 파손, 물이 잘 나오지 않는 등의 불편사항을 신고하면 도서지역을 제외하고 즉시 현장에 출동해 원인을 파악하고 필요한 조치를 한다 | 공통 / 수도 / K-water 관할 지방상수도 / 전 연식 / KR |
+| `incheon-multi-household-supply-leak` | 확실 | 공식 | 2022년 10월 인천 부평구 다세대주택에서 같은 건물 여러 가구가 함께 수압 저하를 겪었고, 북부수도사업소가 주변 상수도 시설을 점검해 누수를 찾아 2022년 10월 20일 수리한 뒤 수압이 정상으로 회복됐다 | 공통 / 수도 / 다세대 공동 인입 / 2022 / 인천 부평 |
+| `incheon-demand-growth-temporary-shortage` | 확실 | 공식 | 2021년 12월 인천 미추홀구 빌라 민원에서 인천시 상수도사업본부는 인근 신축 아파트·오피스텔 등 공동주택의 사용량 증가로 일시적이고 반복적인 수량 부족이 생긴 것으로 보고, 인근 노후 수도관 교체 공사를 2022년도에 진행한다고 답변했다 | 공통 / 수도 / 공급 측 수량 부족 / 2021~2022 / 인천 미추홀 |
+| `incheon-supply-system-change-2023` | 확실 | 공식 | 인천 상수도사업본부는 2023년 9월 6일 수돗물 공급체계 변경에 따라 일시적 수압 저하와 녹물이 발생할 수 있다고 공지했다 | 공통 / 수도 / 공급체계 변경 구역 / 2023-09 / 인천 |
+| `kwater-no-dedicated-low-pressure-route` | 확인실패 | 공식 | K-water 고객 안내 페이지에는 수압 저하 전용 접수처, 신고 방법, 단계별 자가 점검 절차가 명시돼 있지 않다 | 공통 / 수도 / K-water 관할 지방상수도 / 전 연식 / KR |
+| `faucet-compare-first-scope-check` | 확실 🔶 | 후기 | 주방·욕실·샤워기를 같은 세기로 번갈아 틀어 보면 한 곳만 약한지 집 전체가 약한지 구분할 수 있고, 한 곳만 약하면 그 수전의 에어레이터부터, 여러 곳이 같이 약하면 공급 쪽이나 세대 밸브를 의심한다 | 공통 / 수도 / 수전 전 종류 / 전 연식 / KR |
+| `aerator-clean-vinegar-soak` | 확실 🔶 | 후기 | 수전 끝 에어레이터를 풀어 식초에 20~30분 담갔다가 부드러운 솔이나 구멍 쓸기로 청소하면 미네랄 찌꺼기로 막힌 수압 저하를 풀 수 있다. 분해 전 사진을 찍고 부품 순서를 기록한다 | 공통 / 수전 / 에어레이터(망) 달린 수전 / 전 연식 / KR |
+| `pressure-regulator-no-self-adjust` | 확실 🔶 | 후기 | 밸브가 모두 열려 있는데도 압력이 들쭉날쭉하면 감압밸브를 의심할 수 있고, 감압밸브는 직접 조정하지 말고 설비업체에 점검을 맡긴다 | 공통 / 수도 / 세대 감압밸브 / 전 연식 / KR |
+| `condo-shared-pipe-ownership` | 논쟁 🔶 | 후기 | 세대 안에 있는 수도배관이라도 두 세대 이상이 함께 쓰는 배관이나 세대를 잇는 입상관은 공용부분으로 보는 것이 일반적이며, 전유·공용의 구분은 단지 관리규약을 우선한다 | 공통 / 공동주택 배관 / 아파트 급수 배관 / 2022 인용 기준 / KR |
+
+### 전자레인지에서 불꽃(스파크)이 튈 때, 바로 멈추고 확인할 것 <sub>2026-11-03 · microwave-spark-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `spark-stop-use-and-unplug` | 확실 | 공식 | 전자레인지에서 불꽃이 보이면 즉시 사용을 중단하고 전원을 차단해야 한다. 제품 자체에서 불꽃이 튀는 경우 엔지니어 방문 점검이 필요하다. | 삼성 / 전자레인지 / 전 라인 / 전 연식 / KR |
+| `spark-metal-utensils-twist-ties` | 확실 | 공식 | 알루미늄 호일뿐 아니라 금속 집게, 금속 수저, 실 타이(철사 묶음 끈) 같은 금속 물건이 조리실 안에 남아 있으면 스파크가 생길 수 있다. 가열 전에 모두 꺼내야 한다. | 삼성 / 전자레인지 / 전 라인 / 전 연식 / 글로벌(UAE 페이지, 국내 동일 문구 미확인) |
+| `spark-gold-silver-trim-dish` | 확실 | 공식 | 금선이나 은선 무늬, 금박·은박 장식이 있는 그릇은 전자레인지에서 불꽃이 튈 수 있으니 사용하지 말아야 한다. | LG / 전자레인지 / 전 라인 / 전 연식 / KR |
+| `spark-mica-sheet-residue-fire-risk` | 확실 | 공식 | LG 광파오븐 상단 케이스에 붙은 운모판(Mica Sheet)에 음식물 찌꺼기가 묻으면 스파크가 발생하거나 화재의 원인이 될 수 있다. 청소는 금속 수세미 대신 마른 행주를 쓴다. | LG / 광파오븐 / 상단 운모판 모델 / 해당 페이지 기준 / KR |
+| `spark-waveguide-cover-magnetron-damage` | 확실 | 공식 | 도파관 커버(waveguide cover)나 마그네트론 같은 내부 부품이 손상되거나 마모되면 전기 아킹이 생길 수 있다. 이 경우 사용자가 직접 고치지 말고 서비스 점검을 받아야 한다. | 삼성 / 전자레인지 / 전 라인 / 전 연식 / 글로벌(UAE 페이지) |
+| `spark-cavity-damage-stop-use` | 확실 | 공식 | 조리실 내부가 손상되었다면 아킹과 스파크가 생길 수 있으므로 사용을 중단하고 수리 서비스를 받아야 한다. | LG / 전자레인지 / 전 라인 / 전 연식 / US(국내 동일 문구 미확인) |
+| `spark-empty-cavity-water-cup-test` | 확실 | 공식 | 빈 상태로 전자레인지를 돌리면 스파크가 생길 수 있다. 물을 담은 8온스(약 240ml) 컵을 넣고 30초 타이머 조리를 해서 스파크가 없으면 계속 사용해도 된다는 것이 LG의 점검 방법이다. | LG / 전자레인지 / 전 라인 / 전 연식 / US(국내 동일 문구 미확인) |
+| `spark-rack-seating-check` | 확실 | 공식 | 선반(랙)이 플라스틱 받침 4곳에 제대로 얹히지 않으면 선반이 조리실 벽에 닿아 스파크가 생길 수 있다. 선반이 4곳 받침에 모두 맞게 놓였는지 확인한다. | LG / 전자레인지 / 선반(랙) 장착 모델 / 전 연식 / US(국내 동일 문구 미확인) |
+| `spark-turntable-absent-uneven-heat` | 확실 | 공식 | 유리 턴테이블 없이 전자레인지를 사용하면 에너지가 고르게 분포하지 않아 스파크가 생길 수 있다. 턴테이블은 제자리에 있어야 한다. | 삼성 / 전자레인지 / 턴테이블 모델 / 전 연식 / 글로벌(UAE 페이지) |
+| `spark-persists-unplug-and-service` | 확실 | 공식 | 스파크가 계속되면 전원을 뽑고 삼성 고객센터(1588-3366)에 문의하거나 서비스센터 방문 점검을 받아야 한다. 자가 수리를 시도하지 말아야 한다. | 삼성 / 전자레인지 / 전 라인 / 전 연식 / KR |
+
+### 전자레인지에서 큰 소음이 나거나 접시(턴테이블)가 안 돌 때 자가 점검 <sub>2026-11-03 · microwave-turntable-noise-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `turntable-noise-debris-roller-shaft` | 확실 | 공식 | 전자레인지에서 소음이 나거나 회전이 걸리면 회전축이나 회전 바퀴(롤러) 주변에 낀 이물질을 먼저 확인하고 제거한다. 이물질에 걸려 소음이 날 수 있기 때문이다. | LG / 전자레인지 / 전 라인 / 페이지 기준(연식 미특정) / KR |
+| `turntable-noise-roller-ring-cleaning-nz` | 확실 | 공식 | 삼성 공식 안내는 턴테이블 받침 바퀴(베이스 휠)와 롤러 링이 더러우면 청소하라고 한다. 턴테이블과 롤러 휠을 분리해 따뜻한 물과 중성세제로 씻고, 전자레인지 바닥과 롤러 트랙을 닦은 뒤 모든 부품을 완전히 말려서 다시 조립한다. | 삼성 / 전자레인지 / 턴테이블 모델 / 전 연식 / 글로벌(NZ 페이지, 국내 동일 문구 미확인) |
+| `turntable-noise-coupler-misaligned` | 확실 | 공식 | 턴테이블 중앙의 커플러(연결 부품)가 모터에 제대로 맞물리지 않으면 턴테이블이 돌지 않고, 보통 큰 소음이 함께 난다. 소음과 회전 멈춤이 같이 나면 커플러 체결을 먼저 본다. | 삼성 / 전자레인지 / 턴테이블 모델 / 전 연식 / 글로벌(NZ 페이지, 국내 동일 문구 미확인) |
+| `turntable-noise-tray-stand-position` | 확실 | 공식 | 회전 접시(유리판)와 회전 받침이 제자리에 올바르게 놓이지 않으면 회전 중 걸리거나 접시가 불안정해져 소음이 난다. 접시와 받침을 빼서 다시 정위치에 끼운 뒤 소음이 줄어드는지 본다. | LG / 전자레인지 / 전 라인 / 페이지 기준(연식 미특정) / KR |
+| `turntable-noise-tray-stand-samsung-kr` | 확실 | 공식 | 삼성 국내 공식 안내는 유리 회전판이 이물질과 찌꺼기에 걸리지 않고 잘 도는지, 회전 받침과 회전판이 회전축에 제대로 설치됐는지 확인하라고 한다. 해결되지 않으면 출장서비스 예약을 권한다. | 삼성 / 전자레인지·레인지 / 전 라인(회전판 모델) / 페이지 기준(연식 미특정) / KR |
+| `turntable-noise-food-buildup-cleaning` | 확실 | 공식 | 내부에 음식물 찌꺼기가 쌓이면 소음이 날 수 있다. 물을 담은 컵이나 그릇을 2~3분 데운 뒤 따뜻하고 젖은 행주로 내부를 닦으면 찌꺼기가 불어서 쉽게 닦인다. | LG / 전자레인지 / 전 라인 / 페이지 기준(연식 미특정) / US(국내 동일 문구 미확인) |
+| `turntable-noise-level-install-surface` | 확실 | 공식 | 전자레인지를 눌렀을 때 한쪽이 흔들리면 설치 바닥이 평평하지 않은 것이다. 이 상태에서 작동하면 진동으로 소음이 날 수 있으므로 평평한 곳으로 옮기고 수평을 맞춘다. | LG / 전자레인지 / 전 라인 / 페이지 기준(연식 미특정) / KR |
+| `turntable-noise-normal-humming-db` | 확실 | 공식 | 전자레인지는 고주파를 만드는 동안 45~50dB 정도의 발진음(웅웅거리는 소리)을 내며, 이것은 정상이다. 이 정도의 소리 때문에 고장으로 판단하지 않는다. | LG / 전자레인지 / 전 라인 / 페이지 기준(연식 미특정) / KR |
+| `turntable-noise-service-when-persists` | 확실 | 공식 | LG 미국 공식 안내는 위의 점검 뒤에도 소음이 계속되면 정확한 진단을 위해 서비스 점검이 필요하다고 한다. 국내 LG 공식 안내도 갑자기 매우 큰 굉음이 나면 서비스 점검을 받으라고 한다. | LG / 전자레인지 / 전 라인 / 페이지 기준(연식 미특정) / US 및 KR(국내 굉음 문구는 LG KR 페이지) |
+| `turntable-noise-samsung-visit-service` | 확실 | 공식 | 삼성 국내 공식 안내는 자가 점검으로 해결되지 않으면 전문 엔지니어의 방문 점검이 필요하다고 보고 출장서비스 예약을 권한다. | 삼성 / 전자레인지·레인지 / 전 라인 / 페이지 기준(연식 미특정) / KR |
+| `turntable-noise-samsung-contact-number` | 확실 | 공식 | 삼성전자서비스 공식 안내 문서에는 고객센터 번호 1588-3366이 적혀 있다. 전원을 끈 뒤 이 번호로 문의하거나 서비스센터 방문 점검을 받는다. | 삼성 / 전자레인지 / 전 라인 / 전 연식 / KR |
+| `turntable-noise-no-official-disassembly-steps` | 확인실패 | 실측 | 삼성 국내 공식 안내(가열 약함·스파크 페이지)와 LG 공식 안내(소음·회전 멈춤 페이지)를 확인한 결과, 턴테이블 모터·커플러·롤러를 분해해 교체하는 절차는 공식 페이지에서 찾지 못했다. 독자에게 분해 교체 절차를 안내하지 않는다. | 공통 / 전자레인지 / 턴테이블 모델 / 전 연식 / KR·US·NZ 공식 페이지 범위 |
+
+### 삼성페이(현 Samsung Wallet)·애플페이 결제가 안 될 때 점검 순서 (NFC 설정·카드 등록·잠금 설정·단말기 위치, 중복 결제 확인) <sub>2026-11-03 · mobile-payment-nfc-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `samsung-nfc-toggle-first` | 확실 | 공식 | 갤럭시에서 NFC 결제가 안 되면 첫 조치는 NFC 버튼을 껐다가 다시 켜는 것이다. 삼성전자서비스 FAQ는 설정창 안의 NFC 버튼을 껐다 켜 보라고 안내한다. | 삼성 / 스마트폰 / 갤럭시 NFC 탑재 기종 / 전 연식 / KR |
+| `samsung-default-wallet-setting` | 확실 | 공식 | 결제 앱이 선택되지 않으면 NFC 및 비접촉 결제 메뉴에서 기본 월렛 앱을 Samsung Wallet으로 지정해야 한다. 설정 경로는 설정 > 연결 > NFC 및 비접촉 결제다. | 삼성 / 스마트폰 / 갤럭시 NFC 탑재 기종 / 전 연식 / KR |
+| `samsung-transit-nfc-service-check` | 확실 | 공식 | 교통카드 인식 오류는 비결제 NFC 서비스에서 Samsung Wallet의 교통카드가 체크되어 있는지 확인하는 것으로 시작한다. | 삼성 / 스마트폰 / 갤럭시 NFC 탑재 기종 (교통카드 기능) / 전 연식 / KR |
+| `samsung-case-magnetic-cover-removal` | 확실 | 공식 | 자석이 들어간 카드 지갑형 커버나 비정품 케이스는 NFC 안테나를 방해할 수 있으므로 결제 전에 벗긴다고 삼성이 안내한다. | 삼성 / 스마트폰 / 갤럭시 전 기종 (커버·케이스 사용자) / 전 연식 / KR |
+| `samsung-sim-reseat-restart` | 확실 | 공식 | 일부 NFC 서비스는 SIM에 데이터를 저장하므로, 여러 번 해도 결제가 안 되면 USIM을 빼서 다시 끼우고 기기를 재시작하라고 삼성전자서비스가 안내한다. | 삼성 / 스마트폰 / 갤럭시 (SIM 트레이 사용 기종) / 전 연식 / KR |
+| `samsung-led-cover-nfc-blocked` | 확실 | 공식 | LED 커버가 켜져 있는 동안에는 갤럭시의 NFC 기능이 작동하지 않는다. | 삼성 / 스마트폰 / LED 커버 지원 갤럭시 / 전 연식 / 글로벌(영문 페이지) |
+| `samsung-antenna-guide-in-settings` | 확실 | 공식 | 갤럭시 NFC 안테나 위치는 설정의 NFC 및 비접촉 결제 화면에 나오는 안내 이미지로 확인하도록 삼성이 안내한다. 공식 문서 본문에는 위치가 글로 적혀 있지 않다. | 삼성 / 스마트폰 / 갤럭시 NFC 탑재 기종 / 전 연식 / 글로벌(영문 페이지) |
+| `samsung-antenna-position-unverified` | 확인실패 | 공식 | 갤럭시 기종별 NFC 안테나의 정확한 위치(글로 된 설명)는 공식 문서 본문에서 확보하지 못했다. | 삼성 / 스마트폰 / 갤럭시 전 기종 / 전 연식 / 글로벌(영문 페이지) |
+| `samsung-us-reader-compatibility` | 확실 | 공식 | Samsung Pay는 NFC 또는 MST를 지원하지 않는 카드 단말기에서는 작동하지 않는다. 단말기 자체가 지원하지 않으면 휴대폰 문제가 아니다. | 삼성 / 스마트폰·워치 / Samsung Pay(Samsung Wallet) 결제 / 전 연식 / US |
+| `samsung-reader-position-contactless-symbol` | 확실 | 공식 | Samsung Pay 결제는 휴대폰을 비접촉 표시가 있는 단말기 위에 대는 방식이며, 카드를 긁거나 꽂는 자리와 같은 곳에 대면 된다고 삼성 미국 지원이 안내한다. | 삼성 / 스마트폰·워치 / Samsung Pay(Samsung Wallet) 결제 / 전 연식 / US |
+| `samsung-network-check-then-restart` | 확실 | 공식 | 'No network connection' 또는 'Network problem occurred' 메시지가 뜨면 Wi-Fi 또는 모바일 데이터 연결을 확인하고, 그래도 안 되면 기기를 재시작하라고 삼성 미국 지원이 안내한다. | 삼성 / 스마트폰·워치 / Samsung Pay(Samsung Wallet) 결제 / 전 연식 / US |
+| `samsung-customer-center-1588-3366` | 확실 | 공식 | NFC 문제가 계속되면 삼성 고객센터 1588-3366으로 전문가 도움을 받으라고 삼성전자서비스 FAQ(2026-10-16 게시)가 안내한다. | 삼성 / 스마트폰 / 갤럭시 NFC 탑재 기종 / 전 연식 / KR |
+| `apple-pay-passcode-icloud-cards-removed` | 확실 | 공식 | Apple Pay는 Face ID·Touch ID 또는 기기 암호가 있어야 쓸 수 있다. 기기 암호를 제거하거나 iCloud에서 로그아웃하면 그 기기의 모든 신용·체크·선불·교통카드와 학생증이 지워진다. | 애플 / 스마트폰·워치 / iPhone·Apple Watch (Apple Pay 사용 기기) / 전 연식(최신 iOS·watchOS 필요) / KR |
+| `apple-pay-korea-domestic-card-app-only` | 확실 | 공식 | 대한민국에서는 국내 발급 체크카드·신용카드를 카드 발급사의 모바일 앱을 통해서만 Apple 지갑에 추가할 수 있다. | 애플 / 스마트폰·워치 / Apple Pay 국내 발급 카드 / 전 연식(최신 iOS 기준) / KR |
+| `apple-pay-card-add-problem-issuer` | 확실 | 공식 | 카드를 추가하는 데 문제가 있으면 카드 발급처에 문의하라고 Apple이 안내한다. 발급사에 따라 추가 정보 제공이나 앱 다운로드 같은 추가 확인을 요구할 수 있다. | 애플 / 스마트폰·워치 / Apple Pay 카드 등록 / 전 연식 / KR |
+| `apple-pay-transaction-list-in-wallet` | 확실 | 공식 | 아이폰에서는 지갑 앱을 열고 카드를 누르면 최근 거래 목록을 볼 수 있다. Mac·iPad 등은 Wallet 및 Apple Pay 설정의 거래 탭에서 확인한다고 Apple이 안내한다. | 애플 / 스마트폰·워치·태블릿 / Apple Pay 전 기기 / 전 연식 / 글로벌(영문 페이지) |
+| `apple-pay-duplicate-check-with-issuer` | 확실 | 공식 | Apple은 Apple Pay 거래 화면의 금액이 최종 청구 금액과 다르게 보일 수 있다고 안내하며, 거래에 대해 질문이 있으면 은행이나 카드사에 문의하라고 한다. | 애플 / 스마트폰·워치·태블릿 / Apple Pay 전 기기 (중복 결제 확인) / 전 연식 / 글로벌(영문 페이지) |
+
+### 모니터가 깜빡이거나 줄이 보일 때 점검 순서 (케이블·주사율·그래픽 드라이버·전원·패널 불량 판별·AS 기준) <sub>2026-11-03 · monitor-flicker-lines-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `win-graphics-driver-reset-shortcut` | 확실 | 공식 | Windows 10·11에서 Windows 로고 키 + Ctrl + Shift + B를 누르면 그래픽 드라이버가 다시 설정되어 깜빡임이 해결되는 경우가 있다. 효과가 없으면 PC를 재부팅한다 | 공통 / PC·노트북 그래픽 / Windows 10·11 PC / Windows 10·11 / KR |
+| `win-task-manager-flicker-test` | 확실 | 공식 | Ctrl + Shift + Esc로 작업 관리자를 띄웠을 때 작업 관리자까지 함께 깜빡이면 디스플레이 드라이버 문제일 가능성이 크다. 작업 관리자는 멀쩡하고 나머지 화면만 깜빡이면 호환되지 않는 앱을 먼저 의심한다 | 공통 / PC·노트북 그래픽 / Windows 10·11 PC / Windows 10·11 / KR |
+| `win-display-driver-rollback-then-reinstall` | 확실 | 공식 | Windows 업데이트 이후 깜빡임이 시작됐다면 장치 관리자에서 디스플레이 어댑터 속성의 드라이버 탭에서 드라이버 롤백을 먼저 실행하고 재부팅한다. 롤백할 이전 드라이버가 없으면 버튼이 비활성화되며 롤백은 관리자 권한이 필요하다. 롤백이 없으면 드라이버 탭의 장치 제거에서 드라이버 제거 옵션을 체크하고 재부팅해 Windows가 다시 설치하게 한다 | 공통 / PC 그래픽 드라이버 / 디스플레이 어댑터(내장·외장 그래픽) / Windows 10·11 / KR |
+| `win-app-conflict-check-by-removal` | 확실 | 공식 | 특정 앱을 쓸 때만 화면이 깜빡이면 해당 앱이 원인일 수 있다. Microsoft Store 앱은 스토어에서 업데이트하고, 그 밖의 앱은 제조사 사이트에서 업데이트를 확인한다. 그래도 안 되면 앱을 한 개씩 제거하고 그때마다 재시작해 깜빡임이 멈추는 시점을 찾는다 (Windows 11은 설정 > 앱 > 설치된 앱) | 공통 / PC 소프트웨어 / Windows 11 앱 설정 경로 / Windows 11 / KR |
+| `samsung-us-cable-reseat-or-replace` | 확실 | 공식 | 삼성 모니터 화면 깜빡임·왜곡의 흔한 원인은 헐거운 케이블 또는 손상된 케이블이다. 영상 케이블을 양쪽 끝 모두 뽑았다가 단단히 다시 꽂고, 손상되었거나 깜빡임이 계속되면 알려진 정상 케이블로 교체한다 | 삼성 / 모니터 / 전 라인 / 전 연식 / US |
+| `samsung-us-refresh-rate-max-both-devices` | 확실 | 공식 | 주사율은 모니터와 PC가 둘 다 지원하는 가장 높은 값으로 맞추고, 해상도는 모니터 고유(네이티브) 해상도를 쓰며 배율은 OS 설정에서 조정한다 | 삼성 / 모니터 / 전 라인 / 전 연식 / US |
+| `win11-refresh-rate-path-and-drr-requirement` | 확실 | 공식 | Windows 11에서 주사율은 설정 > 시스템 > 디스플레이 > 고급 디스플레이의 새로 고침 빈도 선택에서 바꾼다. 목록의 별표(*) 값은 현재 해상도가 지원하지 않는 주사율이며 고르면 해상도가 바뀐다. 동적 새로 고침 빈도(DRR) 토글은 디스플레이가 VRR과 최소 120Hz를 지원할 때만 쓸 수 있으며, Windows 10은 DRR을 지원하지 않는다 | 공통 / 모니터·PC 디스플레이 설정 / Windows 11 (DRR은 VRR 지원 디스플레이) / Windows 11 기준, Windows 10은 DRR 없음 / KR |
+| `samsung-us-rtx40-driver-minimum-version` | 확실 | 공식 | 삼성 공식 문서는 RTX 40 계열 그래픽카드를 쓸 때 드라이버를 535.98 이상으로 업데이트하라고 안내한다. 드라이버와 모니터 펌웨어는 Samsung 다운로드 페이지에서도 확인하라고 한다 | 삼성 / 모니터 + NVIDIA RTX 40 계열 그래픽카드 / RTX 40 계열 / 문서 작성 시점 기준 / US |
+| `samsung-us-gsync-freesync-disable-step` | 확실 | 공식 | G-Sync 또는 FreeSync(가변 주사율)를 켠 상태에서 깜빡이면 NVIDIA 제어판의 G-SYNC 설정에서 해당 기능을 끄고 다시 확인한다 | 삼성 / 게이밍 모니터 / G-Sync·FreeSync 지원 모델 + NVIDIA 그래픽카드 / 전 연식 / US |
+| `samsung-us-outlet-and-power-check` | 확실 | 공식 | 모니터 깜빡임 점검 중 전원 문제를 의심하면 다른 콘센트에 꽂아 보고, 히터 같은 고전력 기기는 모니터와 다른 회로에 분리한다. 콘센트 자체가 문제라면 전기 기술자에게 의뢰하라고 삼성 문서가 안내한다 | 삼성 / 모니터 / 전 라인 / 전 연식 / US |
+| `samsung-monitor-menu-verdict-cable-or-panel` | 확실 | 공식 | 모니터 자체 메뉴(OSD)가 깨끗하게 보이면 모니터는 정상이고 원인은 케이블 또는 연결된 PC다. 메뉴 화면까지 왜곡되거나 같은 줄이 보이면 모니터 쪽 문제를 의심하고 삼성 지원센터에 서비스를 요청한다 | 삼성 / 모니터 / 전 라인 / 전 연식 / US |
+| `samsungkr-paid-service-when-not-a-fault` | 확실 | 공식 | 삼성전자서비스 안내에 따르면 무상 보증기간 이내라도 사용법 설명이나 설치처럼 제품 고장이 아닌 경우 서비스를 요청하면 별도 요금이 부과된다 | 삼성 / 모니터 / LCD/LED 모니터 전체 / 현행 판매 모델 / KR |
+| `samsungkr-no-power-no-menu-visit-service` | 확실 | 공식 | 전원 버튼을 눌러도 반응이 없고 화면도 나오지 않으며 JOG 버튼을 눌러도 모니터 메뉴가 뜨지 않으면 모니터 내부 회로나 디스플레이 문제일 수 있어 삼성전자서비스가 출장서비스 예약을 안내한다 | 삼성 / 모니터 / LCD/LED 모니터 전체 / 현행 판매 모델 / KR |
+| `samsung-us-model-specific-y-cable-replace` | 확실 | 공식 | 삼성 미국 지원 문서에 따르면 LS27R750UENXZA·LS32R750UENXZA 두 모델은 함께 제공된 Y 케이블(부품번호 BN39-02467A)만 교체하면 해결될 수 있다고 안내되어 있다 | 삼성 / 모니터 / LS27R750UENXZA, LS32R750UENXZA / 문서 작성 시점 기준 / US |
+| `panel-defect-warranty-criteria-unverified` | 확인실패 | 실측 | 모니터 화면 줄·얼룩을 교환하거나 환불받는 기준(품질보증기간, 화소 불량 개수 기준 등)은 이번 조사에서 공식 원문으로 확인하지 못했다. 소비자분쟁해결기준 원문 PDF를 열었지만 본문을 읽지 못했다 | 공통 / 컴퓨터·모니터 등 주변기기 / 디스플레이 패널 불량 / 확인 불가 / KR |
+
+### 스마트폰 화면이 켜지지 않을 때 고장 전에 확인할 것 (배터리 방전·강제 재시작·충전기/케이블·침수·데이터 보호) <sub>2026-11-03 · phone-black-screen-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `samsung-no-power-force-restart-7sec` | 확실 | 공식 | 갤럭시 전원이 갑자기 켜지지 않을 때 삼성 공식 첫 조치는 케이스를 벗긴 뒤 전원(측면) 버튼과 음량 낮추기 버튼을 7초 이상 동시에 길게 눌러 강제 재시작하는 것이다. | 삼성 / 스마트폰 / 갤럭시 측면 전원 버튼 기종 / 전 연식 / KR |
+| `samsung-drained-no-icon-zero-percent` | 확실 | 공식 | 갤럭시 충전 표시가 0%로 보이면 배터리가 완전히 방전된 상태다. 완전 방전 시에는 충전 표시(번개 아이콘)가 화면에 나타나지 않을 수 있으므로, 화면에 아무 표시가 없어도 충전기를 연결한 채 계속 충전을 유지하라는 것이 삼성 공식 안내다. | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `samsung-drained-wait-time-unconfirmed` | 확인실패 | 공식 | 삼성 공식 문서(solution/40217, solution/37809)에서 완전 방전된 기기를 충전한 뒤 화면이 켜지기까지 필요한 대기 시간은 수치로 확인하지 못했다. | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `android-drained-30min-charge-then-restart` | 확실 | 공식 | Android 공통 안내에 따르면 배터리가 완전히 방전된 기기는 30분 이상 충전한 뒤 재부팅한다. 빨간 불빛이 고정으로 켜지면 완전 방전이고, 빨간 불빛이 깜박이면 전력이 모자라 켤 수 없는 상태다. | 공통 / 스마트폰 / 안드로이드 기기 일반(삼성 전용 문구 아님) / 전 연식 / KR |
+| `samsung-swap-charger-then-service-center` | 확실 | 공식 | 삼성 공식 순서는 정품 충전기와 케이블로 충전이 되는지 보고, 여분의 충전기나 케이블로 바꿔 시도한 뒤에도 켜지지 않으면 가까운 서비스센터에서 엔지니어 점검을 받는 것이다. 방문할 때는 박스에 들어 있던 케이블을 가져간다. | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `samsung-service-center-1588-3366` | 확실 | 공식 | 삼성전자서비스 대표 전화는 1588-3366이며 통화 요금은 발신자가 부담한다. 서비스센터 찾기와 모바일센터 예약은 samsungsvc.co.kr에서 할 수 있다. | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `samsung-service-center-no-data-transfer` | 확실 | 공식 | 삼성 공식 안내에 따르면 서비스센터는 데이터 이동 서비스를 하지 않으므로, 데이터는 사용자가 직접 백업해야 한다. | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `samsung-smart-switch-pc-backup-screen-broken-unconfirmed` | 확인실패 | 공식 | 화면이 꺼져 있거나 고장 난 갤럭시를 PC 스마트 스위치로 백업할 수 있는지, 그때 잠금 해제나 USB 디버깅이 필요한지는 삼성 공식 문서에서 확인하지 못했다. | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `samsung-smart-switch-pc-exclusions` | 확실 | 공식 | PC 스마트 스위치 백업은 카카오톡 대화 기록을 포함하지 않아 카카오톡 앱에서 따로 백업해야 하며, 보안 폴더 백업은 PC 스마트 스위치 4.3.22054_3 이상에서만 지원되고 보안 폴더 앱은 데이터 없이 APK만 백업된다. | 삼성 / 스마트폰 / 갤럭시 전 시리즈(보안 폴더 사용 기기) / 전 연식 / KR |
+| `samsung-water-no-heat-or-compressed-air` | 확실 | 공식 | 삼성 물손상 안내는 침수된 갤럭시를 드라이기 같은 열원으로 말리는 것, 압축공기로 불어내는 것, 초음파 세척, 외부 열을 이용한 건조를 모두 금지한다. | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `samsung-water-nonip-power-off-dry-service` | 확실 | 공식 | 방수 등급 표기가 없는 갤럭시가 물에 닿으면 즉시 전원을 끄고, 유심과 SD 카드를 빼고(탈착식 배터리 기종은 배터리도 분리), 마른 천으로 닦은 뒤 서비스센터에 간다. 바로 방문이 어려우면 통풍이 잘되고 어두운 곳에서 찬 바람으로 자연 건조한다. | 삼성 / 스마트폰 / 방수 등급 표기 없는 갤럭시 / 전 연식 / KR |
+| `samsung-water-ip-rinse-1to3min` | 확실 | 공식 | 삼성은 IP 방수 등급이 표기된 갤럭시가 바닷물이나 수영장 물 같은 깨끗하지 않은 액체에 노출되면 깨끗한 흐르는 물로 1~3분 헹군 뒤 잔여물을 씻고 부드러운 마른 천으로 닦아 완전히 말리라고 안내한다. | 삼성 / 스마트폰 / IP 방수 등급 표기 갤럭시 / IP 등급 표기 기종 전 연식 / KR |
+| `apple-contact-page-phone-and-online-repair` | 확실 | 공식 | Apple 국가별 지원 전화번호는 Apple 지원 연락처 페이지(support.apple.com/ko-kr/contact)에서 확인하며, iPhone 디스플레이 수리와 배터리 교체는 같은 경로의 온라인 예약·신청 메뉴로 접수할 수 있다. | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / KR |
+
+### 멀티탭 과부하와 화재를 막는 안전한 사용법 (정격 확인·문어발 금지·고소비전력 가전 전용 콘센트·교체 기준·청소·에어컨 멀티탭 금지) <sub>2026-11-03 · power-strip-overload-safety-guide</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `multitap-no-daisy-chain-motir` | 확실 | 공식 | 산업통상부 누리집에 게시된 멀티탭·콘센트·플러그 소비자 안전주의보는 '멀티탭에 또 다른 멀티탭을 연결해 사용하지 말 것'을 당부한다. 이는 문어발식 연결(멀티탭을 멀티탭에 잇는 것) 금지 기준이다. | 공통 / 멀티탭·연장 콘센트 / 멀티탭 연결 방식(문어발식) / 2025-09-04 발령 기준 / KR |
+| `multitap-rated-capacity-not-exceed-motir` | 확실 | 공식 | 같은 산업통상부 게시 안전주의보는 '멀티탭의 정격용량을 초과해 사용하지 말 것'을 당부한다. 정격은 채워 쓰는 목표치가 아니라 넘지 말아야 할 상한으로 읽는다. | 공통 / 멀티탭 / 정격용량 표기 제품 / 2025-09-04 발령 기준 / KR |
+| `high-power-appliance-dedicated-outlet-motir` | 확실 | 공식 | 산업통상부 게시 안전주의보는 '에어컨, 온열기 같이 높은 소비전력 제품은 벽면의 전용·단독 콘센트를 사용할 것'을 당부한다. 겨울철 온열기(히터)는 멀티탭을 피해 벽 콘센트에 단독으로 꽂는 대상이다. | 공통 / 에어컨·온열기(히터) / 고소비전력 가전 / 2025-09-04 발령 기준 / KR |
+| `lg-check-rated-capacity-before-use` | 확실 | 공식 | LG전자 고객지원 캠페인 안내는 '콘센트나 멀티탭 정격용량을 확인 후 연결해서 사용해야 한다'고 안내한다. 특히 전기에너지를 열에너지로 바꾸는 가전(열을 내는 가전)은 정격을 먼저 확인하라고 덧붙인다. | LG / 가전 일반·멀티탭 / 콘센트·멀티탭 정격 확인 / 2026.07.27 게시 기준 / KR |
+| `lg-high-capacity-dedicated-outlet-or-high-rating-strip` | 확실 | 공식 | LG전자 캠페인 안내는 건조기·세탁기 등 고용량 제품은 제품 정격용량에 맞는 전용 콘센트 또는 고용량 멀티탭을 써야 안전하다고 안내한다. 모터가 있거나 열을 내는 가전도 같은 기준이 적용된다고 설명한다. | LG / 건조기·세탁기 등 고용량 가전 / 전용 콘센트 또는 고용량 멀티탭 / 2026.07.27 게시 기준 / KR |
+| `lg-multitap-replacement-signs` | 확실 | 공식 | LG전자 캠페인 안내는 멀티탭 교체가 필요한 상태로 검게 그을린 자국, 전선의 찍힘 또는 찢어짐, 단자가 헐거워진 경우, 오래 사용해 노후된 경우를 든다. | LG / 멀티탭 / 교체 판단 기준 / 노후 기준은 연수 수치 없음 / KR |
+| `lg-multitap-dust-cleaning-power-off` | 확실 | 공식 | LG전자 캠페인 안내는 멀티탭에 쌓인 먼지가 스파크와 함께 화재 위험이 되므로 주기적으로 청소하라고 안내한다. 청소할 때는 반드시 전기를 차단하고 내부로 물이 들어가지 않게 주의하라고 한다. | LG / 멀티탭·콘센트 / 먼지 청소 / 2026.07.27 게시 기준 / KR |
+| `samsung-aircon-no-multitap` | 확실 | 공식 | 삼성전자서비스 솔루션 안내는 에어컨은 소비전력이 높아 멀티탭 사용을 권장하지 않는다고 밝힌다. 부득이하게 쓸 경우에는 제품 모델별 전선 규격과 허용전류 등 안전 조건을 충족해야 하고, 콘센트가 멀리 있으면 자격을 갖춘 전기업체를 통해 전용 콘센트를 설치한 뒤 쓰라고 안내한다. | 삼성 / 에어컨 / 스탠드·벽걸이 등 에어컨 전원 연결 / 2026-10-22 게시 기준 / KR |
+| `power-sum-method-label-and-volts` | 확실 🔶 | 후기 | 같은 시간에 켜질 가전들의 소비전력(W)을 모두 더해 멀티탭의 정격 와트나 전류와 비교한다. 가전의 소비전력은 뒷면이나 바닥의 정격 라벨에서 찾고, 멀티탭이 전류(A)로만 표기되어 있으면 전압 220V를 곱해 와트로 바꾼다(전력 = 전압 × 전류). | 공통 / 멀티탭·가전 일반 / 와트 합산 계산법 / 전 연식 / KR |
+| `outlet-circuit-ceiling-10a-220v-2200w` | 확실 🔶 | 후기 | 10A·220V 콘센트 회로의 계산상 상한은 약 2,200W(220V × 10A)다. 실제 한계는 벽 콘센트, 분전반 차단기, 멀티탭, 가전 자체 정격 중 가장 낮은 값으로 정해진다. | 공통 / 가정용 콘센트 회로 / 10A 회로 기준 계산값 / 전 연식 / KR |
+| `heat-or-burn-mark-stop-use-kesco-via-media` | 확인실패 🔶 | 후기 | 언론 보도는 한국전기안전공사 안내를 인용해 이상 발열이 있거나 탄 흔적이 보이면 멀티탭 사용을 중지하라고 전한다. 공사 원문은 확인하지 못했다. | 공통 / 멀티탭 / 이상 발열·탄 흔적 시 사용 중지 / 전 연식 / KR |
+| `multitap-heavy-appliance-not-suitable-media` | 논쟁 🔶 | 후기 | 언론 기사는 열을 내는 기기, 모터가 달린 기기, 1,000W 이상 기기는 멀티탭을 피하고 벽면 콘센트에 직접 꽂아야 한다고 정리한다. 이 기준은 기자 정리이며 기관 원문이 아니다. | 공통 / 가정용 가전 일반 / 열·모터·1,000W 이상 기기 분류 / 2025-10-14 게시 기준 / KR |
+
+### 프린터 와이파이 연결 실패 자가점검 (2.4GHz·공유기 대역·SSID·IP·공통 점검 순서) <sub>2026-11-03 · printer-wifi-connect-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `printer-2-4ghz-band-common-cause` | 확실 | 공식 | 무선 프린터는 2.4GHz 대역만 지원하는 경우가 많아, 공유기가 5GHz 이름만 방송하면 프린터가 네트워크를 찾지 못한다. HP 공식 안내도 이 상황을 듀얼밴드 공유기에서 생기는 흔한 원인으로 든다. | 공통 / 프린터 / 무선 프린터 (2.4GHz 전용 모델이 많음) / 현행 모델 / KR |
+| `epson-separate-ssid-for-2-4ghz` | 확실 | 공식 | 공유기가 2.4GHz와 5GHz를 같은 이름(SSID)으로 묶어 방송하고 있다면, 두 대역에 서로 다른 이름을 주고 프린터는 2.4GHz 쪽 이름에 연결하는 것이 엡손 공식 매뉴얼의 해결 방법이다. | 엡손 / 프린터/복합기 / 무선 LAN 지원 전 라인 / 현행 모델 / 글로벌 |
+| `epson-dual-band-mode-for-5ghz-router` | 확실 | 공식 | 엡손 공식 매뉴얼은 5GHz 무선 공유기를 쓸 때 공유기를 듀얼 밴드(2.4GHz와 5GHz 동시 방송) 모드로 설정하라고 안내한다. | 엡손 / 프린터/복합기 / 무선 LAN 지원 전 라인 / 현행 모델 / 글로벌 |
+| `printer-ssid-broadcast-must-be-on` | 확실 | 공식 | 공유기의 네트워크 이름 알림(SSID 브로드캐스트)이 꺼져 있으면 프린터의 무선 네트워크 목록에 이름이 뜨지 않는다. HP 공식 안내도 이 설정이 비활성화돼 있을 수 있다고 점검하도록 한다. | 공통 / 프린터 / 무선 프린터 전 라인 / 현행 모델 / KR |
+| `epson-hidden-ssid-manual-entry` | 확실 | 공식 | 공유기가 네트워크 이름을 숨긴 상태라면 프린터 목록에 나타나지 않으므로, 엡손 공식 매뉴얼은 프린터에서 이름(SSID)을 직접 입력해 연결하라고 안내한다. | 엡손 / 프린터/복합기 / 무선 LAN 지원 전 라인 / 현행 모델 / 글로벌 |
+| `hp-band-to-band-communication-limit` | 확실 | 공식 | 일부 듀얼밴드 공유기는 5GHz에 연결된 기기와 2.4GHz에 연결된 기기끼리 서로 통신하지 못하게 되어 있다. 그러면 프린터와 컴퓨터를 둘 다 2.4GHz에 연결하거나, 공유기 제조사에 문의하라고 HP는 안내한다. | 공통 / 프린터 / 듀얼밴드 공유기 환경 / 현행 모델 / KR |
+| `epson-hidden-distance-interference-check` | 확실 | 공식 | 엡손 공식 매뉴얼은 프린터를 무선 공유기 가까이에 두고, 전자레인지·2.4GHz 무선전화·큰 금속 물체(캐비닛 등)에서 떨어뜨리라고 안내한다. 이 조건이 안 맞으면 연결이 끊기거나 불안정해진다. | 엡손 / 프린터/복합기 / 무선 LAN 지원 전 라인 / 현행 모델 / 글로벌 |
+| `epson-mac-filter-add-printer-address` | 확실 | 공식 | 공유기에 MAC 주소 필터링이 켜져 있으면 프린터의 MAC 주소를 허용 목록에 추가해야 연결된다. 프린터의 MAC 주소는 네트워크 상태 용지(네트워크 상태 시트)에서 확인한다고 엡손 공식 매뉴얼이 안내한다. | 엡손 / 프린터/복합기 / 무선 LAN 지원 전 라인 / 현행 모델 / 글로벌 |
+| `printer-ip-changed-after-router-reboot` | 확실 | 공식 | 공유기를 재부팅하거나 교체하면 프린터 IP가 바뀔 수 있어, 컴퓨터가 예전 주소로 찾다가 인쇄나 스캔이 되지 않는다. HP는 이 경우 컴퓨터에 저장된 프린터 주소를 새 IP로 갱신하라고 안내한다. | HP / 프린터 / IP 자동할당(DHCP) 무선 프린터 / 현행 모델 / KR |
+| `hp-ip-update-solution-center-steps` | 확실 | 공식 | Windows에서는 HP 길잡이(HP Solution Center)의 유틸리티 메뉴에서 프린터 IP 주소 갱신 기능을 열고, 새 IP를 입력해 테스트한 뒤 저장하고 컴퓨터를 재시작하면 연결이 복구된다. | HP / 프린터 / HP Solution Center 설치된 Windows PC / 현행 모델 / KR |
+| `printer-ip-lookup-panel-or-report` | 확실 | 공식 | 프린터의 IP 주소는 프린터 제어판 표시 화면이나 네트워크 구성 보고서(출력물)에서 확인할 수 있다. 컴퓨터에 주소를 넣기 전에 이 값을 먼저 확인한다. | HP / 프린터 / 제어판 또는 보고서 출력 가능한 무선 프린터 / 현행 모델 / KR |
+| `epson-static-ip-epsonnet-config` | 확실 | 공식 | 엡손 프린터의 IP 주소를 고정(정적 IP)하려면 EpsonNet Config 유틸리티로 설정할 수 있다. 공유기가 IP를 바꾸는 문제를 줄이는 방법이라고 엡손 공식 매뉴얼이 안내한다. | 엡손 / 프린터/복합기 / EpsonNet Config 지원 모델 / 현행 모델 / 글로벌 |
+| `epson-password-security-type-exact` | 확실 | 공식 | 엡손 공식 매뉴얼은 보안 방식(WEP 또는 WPA)을 공유기 설정과 맞추고, 비밀번호(WPA 암호 또는 WEP 키)를 정확히 입력하라고 안내한다. 연결 실패의 흔한 원인이 비밀번호 오입력이다. | 엡손 / 프린터/복합기 / 무선 LAN 지원 전 라인 / 현행 모델 / 글로벌 |
+
+### 레인지후드 흡입력 약화 시 청소와 점검 (원인·청소·전원 차단·AS 기준) <sub>2026-11-03 · range-hood-weak-suction-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `samsung-hood-mode-button-check` | 확실 | 공식 | 삼성 레인지후드는 조작부 모드 버튼을 누를 때마다 운전 모드가 바뀌며, 순서는 스마트 → 강력(3) → 일반(2) → 저소음(1)이다. 모드를 바꿨을 때 풍량 변화가 있으면 제품 자체에는 이상이 없다고 안내한다. | 삼성 / 레인지후드 / 모드 버튼 조작형 후드 / 페이지 게시 2022-04-14 기준, 연식 명시 없음 / KR |
+| `samsung-hood-filter-clog-weak` | 확실 | 공식 | 삼성 공식 안내에 따르면 필터 청소가 안 되어 기름때가 쌓이면 후드의 흡입력(풍량)이 약해질 수 있다. | 삼성 / 레인지후드 / 필터 분리형 후드 전 라인 / 페이지 게시 2022-04-14 기준, 연식 명시 없음 / KR |
+| `samsung-hood-still-weak-after-clean-service` | 확실 | 공식 | 삼성 공식 안내에 따르면 필터를 청소해도 풍량이 같으면 제품 점검이 필요하다. 이때는 전문 엔지니어의 점검을 받는다. | 삼성 / 레인지후드 / 전 라인 / 페이지 게시 2022-04-14 기준, 연식 명시 없음 / KR |
+| `lg-ea-unplug-before-clean` | 확실 | 공식 | LG 공식 가이드는 후드 청소 전에 전원을 먼저 분리하라고 안내한다(Disconnect the power first, Always unplug before cleaning). 후드가 꺼지고 식은 상태에서 청소한다. | LG / 빌트인 주방 후드 / 전 라인 / 전 연식 / 동아프리카(LG 지역 사이트) |
+| `lg-ea-grease-filter-soak-method` | 확실 | 공식 | LG 공식 가이드의 그리스 필터 세척법은 필터를 분리해 뜨거운 물에 주방세제와 베이킹소다를 풀고 약 15분 담근 뒤 문질러 헹구고, 완전히 말린 다음 장착하는 것이다. | LG / 빌트인 주방 후드 / 그리스(기름) 필터 장착 후드 / 전 연식 / 동아프리카(LG 지역 사이트) |
+| `lg-ea-filter-clean-monthly` | 확실 | 공식 | LG 공식 가이드는 요리를 자주 한다면 필터를 월 1회 세척하라고 안내한다. | LG / 빌트인 주방 후드 / 그리스 필터 장착 후드 / 전 연식 / 동아프리카(LG 지역 사이트) |
+| `lg-ea-weak-smoke-pull-means-clean` | 확실 | 공식 | LG 공식 가이드는 후드가 연기를 제대로 빨아들이지 않으면 필터 청소가 필요한 신호라고 안내한다. 이상한 소음이 나는 것도 같은 신호일 수 있다. | LG / 빌트인 주방 후드 / 전 라인 / 전 연식 / 동아프리카(LG 지역 사이트) |
+| `robam-charcoal-filter-not-washable` | 확실 🔶 | 후기 | 순환(재순환) 방식으로 쓰는 후드의 활성탄 필터는 세척할 수 없는 소모품이다. 물로 씻으면 필터가 망가지므로 주기적으로 교체해야 한다. | 공통 / 레인지후드 / 재순환(활성탄 필터) 방식 후드 / 전 연식 / 글로벌 |
+| `robam-rigid-duct-vs-flex` | 확실 🔶 | 후기 | 후드 배기에는 금속 강성 덕트(아연도금강판·스테인리스)가 권장되며, 주름진 플렉시블 덕트는 공기 흐름을 줄이고 기름이 쌓이기 쉬워 흡입력을 떨어뜨린다고 안내된다. | 공통 / 레인지후드 / 배기 덕트 연결 방식 후드 / 전 연식 / 글로벌 |
+| `gba-makeup-air-equal-volume` | 확실 🔶 | 후기 | 배기 팬이 실내 공기를 밖으로 뽑는 만큼 같은 양의 공기가 들어와야 하며, 바깥 공기가 들어올 틈이 적은 주택에서는 그 보충 공기가 부족해질 수 있다. | 공통 / 레인지후드 / 강력 배기형 후드 / 전 연식 / 미국 기준 주택 설명(국내 아파트 적용은 별도 확인) |
+| `kr-hood-selfcheck-not-found` | 확인실패 | 실측 | 확인실패: LG전자 한국 고객지원 사이트에서 레인지후드 전용 흡입력 자가점검 문서를 찾지 못했다. 한국 LG 흡입력 안내로 확인된 것은 싸이킹 청소기 전용 문서뿐이다. | LG / 레인지후드 / 국내 고객지원 기준 / 2026-11-03 확인 시점 / KR |
+
+### 냉장고 아래로 물이 샐 때 정상 결로인지 고장인지 자가 구분 <sub>2026-11-03 · refrigerator-water-leak-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `samsung-leak-condensation-normal-wipe` | 확실 | 공식 | 냉장고 바닥이나 선반에 물기가 맺히는 것은 도어를 여닫을 때 들어온 공기 속 수분이 차가운 면에 맺혀 생기는 현상이며, 여름과 장마철에 많이 나타난다. 심하지 않으면 그대로 사용해도 되고, 심하면 마른 수건으로 닦은 뒤 사용하면 된다 | 삼성 / 냉장고 / 냉장고 전 라인(안내 페이지 기준) / 2017-05-12 등록 페이지 기준 / KR |
+| `samsung-leak-defrost-drain-clog` | 확실 | 공식 | 냉장고 안 증발기에서 제상수(성에가 녹은 물)가 제대로 빠지지 않거나 드레인 구멍에 이물질이나 얼음이 끼면 누수가 생길 수 있고, 이 경우 냉장과 냉동 기능에도 문제가 생길 수 있다 | 삼성 / 냉장고 / 냉장고 전 라인(안내 페이지 기준) / 2017-05-12 등록 페이지 기준 / KR |
+| `samsung-leak-drain-24h-door-open` | 확실 | 공식 | 드레인 구멍 막힘이 의심되고 음식을 따로 보관할 수 있다면 전원을 끄고 도어를 약 24시간 열어 둔 뒤 전원을 다시 켜는 방법이 삼성 안내에 있다 | 삼성 / 냉장고 / 냉장고 전 라인(안내 페이지 기준) / 2017-05-12 등록 페이지 기준 / KR |
+| `lg-leak-three-causes` | 확실 | 공식 | LG 냉장고 바닥 물은 세 가지 원인으로 나뉜다. 내부 요인은 용기 밀폐 불량이나 뜨거운 음식·잦은 문 개폐로 생기는 결로와 성에이고, 외부 요인은 정수기 호스 연결 불량이나 싱크대 배수구·보일러에서 샌 물이 흘러드는 경우이며, 기기 요인은 냉동실이나 냉장실 아래칸에 얼음이나 이물질이 끼어 내부 배수구가 막혀 물받이로 빠지지 못하고 앞으로 넘치는 경우다 | LG / 냉장고 / 상냉장하냉동·정수기형 냉장고 기준(페이지 대표 모델) / 2026-06-17 게시 페이지 기준 / KR |
+| `lg-leak-defrost-procedure-24h` | 확실 | 공식 | LG 안내에 따르면 배수구가 막혔을 때는 음식을 옮기고, 바닥에 마른 수건을 깔고, 전원 코드를 뽑은 뒤 냉장실과 냉동실 문을 활짝 열어 최소 24시간 둔다. 여름에는 약 하루, 겨울에는 최대 3일 정도 걸릴 수 있다. 성에가 다 녹으면 물기를 닦고 전원을 다시 연결하며, 정상 온도 복귀까지 24~48시간이 걸릴 수 있다 | LG / 냉장고 / 상냉장하냉동·정수기형 냉장고 기준 / 2026-06-17 게시 페이지 기준 / KR |
+| `lg-leak-no-hairdryer-hot-water` | 확실 | 공식 | LG 미국 안내에 따르면 성에를 드라이어나 뜨거운 물로 녹이면 내부 플라스틱 부품이 손상되거나 변형될 수 있어 하면 안 된다 | LG / 냉장고 / 탑프리저 냉장고(미국 안내 페이지) / 전 연식 / US |
+| `lg-leak-after-defrost-still-leaking` | 확실 | 공식 | LG 안내에 따르면 해빙을 마친 뒤에도 바닥에서 물이 계속 나오면 배수구 외 기기 내부 부품 이상일 가능성이 높으므로 LG전자 고객센터(1544-7777)를 통해 서비스 접수를 진행한다 | LG / 냉장고 / 상냉장하냉동·정수기형 냉장고 기준 / 2026-06-17 게시 페이지 기준 / KR |
+| `lg-leak-no-cold-food-spoiled-service` | 확실 | 공식 | LG 안내에 따르면 냉기가 전혀 없거나 내부 식품이 녹은 경우에는 자가 조치로 해결하기 어렵고, 출장 서비스 예약을 권장한다 | LG / 냉장고 / 상냉장하냉동·정수기형 냉장고 기준 / 2026-06-17 게시 페이지 기준 / KR |
+| `lg-leak-prevention-condenser-dust` | 확실 | 공식 | LG 안내에 따르면 재발을 막으려면 냉동실 음식을 밀폐 용기에 담아 이물질이 배수구에 들어가지 않게 하고, 같은 장소에 오래 두었다면 냉장고 뒤쪽 하단 응축기(콘덴서) 주변 먼지를 청소한다 | LG / 냉장고 / 탑프리저 냉장고(미국 안내 페이지) / 전 연식 / US |
+| `samsung-leak-drain-tray-full-clean` | 확실 | 공식 | 삼성 해외 안내에 따르면 드레인 트레이(증발 접시)에 물이 가득 찼다면 자동 증발이 제대로 되지 않은 상태이므로 냉장고 전원을 끄고 트레이를 청소한다. 주변 온도가 25도보다 훨씬 낮거나 습도가 75%를 넘으면 자동 증발에 영향을 줄 수 있다 | 삼성 / 냉장고 / 드레인 트레이 방식 냉장고(영국 안내 페이지) / 전 연식 / UK |
+| `samsung-leak-drain-tray-empty-replace` | 확실 | 공식 | 삼성 해외 안내에 따르면 드레인 트레이가 비어 있다면 트레이가 손상되었을 수 있어 교체가 필요하며, 삼성 서비스센터에 문의한다 | 삼성 / 냉장고 / 드레인 트레이 방식 냉장고(영국 안내 페이지) / 전 연식 / UK |
+| `samsung-leak-drain-clog-engineer` | 확실 | 공식 | 삼성 해외 안내에 따르면 드레인 배수구가 이물질이나 결빙으로 막혀 해빙수가 빠지지 못하고 누수가 생겼다면 엔지니어 점검이 필요하며, 이 수리는 자가 수리가 불가능하다고 안내한다 | 삼성 / 냉장고 / 드레인 트레이 방식 냉장고(영국 안내 페이지) / 전 연식 / UK |
+| `samsung-leak-door-gasket-paper-test` | 확실 | 공식 | 삼성 해외 안내에 따르면 문이 제대로 닫히지 않으면 내부가 더워져 물이 맺힐 수 있으며, 종이 한 장을 문 사이에 끼우고 당겼을 때 저항 없이 빠지면 도어 씰 밀착이 불량한 것이고 수리나 교체가 필요하다 | 삼성 / 냉장고 / 도어 씰 방식 냉장고(영국 안내 페이지) / 전 연식 / UK |
+| `samsung-leak-level-tilt-back` | 확실 | 공식 | 삼성 해외 안내에 따르면 응축수가 드립 팬으로 제대로 흐르려면 제품이 완전히 수평이거나 앞쪽으로 기울어서는 안 되며, 앞다리를 조절해 약간 뒤쪽으로 기울게 맞추고 문이 스스로 닫히는지 확인한다 | 삼성 / 냉장고 / 앞다리 조절식 냉장고(영국 안내 페이지) / 전 연식 / UK |
+| `samsung-leak-check-neighbor-appliance-source` | 확실 | 공식 | 냉장고 바깥 바닥에 고인 물은 주변 제품에서 흘러온 물일 수 있으므로 세탁기, 식기세척기, 정수기 등 물이 샐 만한 주변 제품을 먼저 확인하라고 삼성 안내에 있다 | 삼성 / 냉장고 / 냉장고 전 라인(안내 페이지 기준) / 2017-05-12 등록 페이지 기준 / KR |
+| `samsung-leak-electrical-wet-hands` | 확실 | 공식 | 물이 콘센트나 전원 코드 주변까지 번졌다면 젖은 손으로 전기 부품을 만지지 말고, 먼저 안전을 확보한 뒤 점검을 받아야 한다 | 삼성 / 김치냉장고(스탠드형) 안내 페이지 기준 / 스탠드형 김치냉장고 뒤쪽 누수 안내 / 2026-10-12 등록 페이지 기준 / KR |
+| `samsung-leak-unplug-breaker-before-work` | 확실 | 공식 | 삼성 인도 안내에 따르면 누수를 점검하기 전에 전원 플러그를 뽑고 회로 차단기를 끈다. 물은 전기를 통하므로 감전 위험에 주의해야 한다 | 삼성 / 냉장고 / 전 라인(인도 안내 페이지) / 전 연식 / IN |
+| `samsung-leak-ice-maker-line-unverified` | 확인실패 | 공식 | 제빙기나 정수기 급수 연결부에서 나는 누수를 자가로 점검하는 구체적 절차는 삼성 해외 누수 안내 페이지에서 확인하지 못했다. 원문에는 급수 라인과 제빙기 연결부 점검 방법이 없다 | 삼성 / 냉장고 / 제빙기·급수 라인 탑재 모델 / 전 연식 / IN |
+| `samsung-leak-as-visit-reservation` | 확실 | 공식 | 삼성 국내 안내에 따르면 누수가 계속되거나 내부 부품 이상이 의심되면 전문 엔지니어 점검을 받아야 하며, 출장 서비스는 삼성전자서비스 홈페이지에서 예약하고 대표전화는 1588-3366이다 | 삼성 / 냉장고 / 스탠드형 김치냉장고 안내 페이지 기준(대표 연락처 적용) / 2026-10-12 등록 페이지 기준 / KR |
+
+### 싱크대가 막혔을 때 순서대로 풀어보기 (원인, 뜨거운 물·뚫어뻥·트랩 청소 순서, 락스·산성 세제 혼합 금지, 업체 호출 기준) <sub>2026-11-03 · sink-clog-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `bleach-acid-cleaner-chlorine-gas` | 확실 | 공식 | 락스(차아염소산나트륨 계열 표백제)를 식초·산성 세제와 섞으면 독성이 있는 염소가스가 발생하므로 함께 쓰지 않는다. 행정안전부 안전한TV 영상이 같은 내용을 경고한다 | 공통 / 주방·욕실 세정제 / 락스(염소계 표백제)와 산성 세제·식초 / 전 연식 / KR |
+| `bleach-not-with-hot-water-or-enclosed` | 확실 | 공식 | 락스는 산성 세제·식초·뜨거운 물과 함께 쓰면 안 되고, 밀폐된 공간에서 쓰지 않으며 환기하면서 쓴다. 원액은 물에 희석해 쓴다 | 공통 / 주방·욕실 세정제 / 락스(염소계 표백제) / 전 연식 / KR |
+| `grease-hardens-in-cold-pipe` | 확실 🔶 | 후기 | 싱크대 막힘의 주원인은 음식물 찌꺼기보다 기름이다. 고기 기름·국물 기름·튀김유가 차가운 PVC 배관 안에서 식으며 벽면에 얇게 붙고, 그 위에 찌꺼기가 쌓여 단단한 슬러지 덩어리가 된다 | 공통 / 싱크대 배수 배관 / PVC 배수 배관 (주방 싱크대) / 전 연식 / KR |
+| `hot-water-not-dissolve-hardened-grease` | 논쟁 🔶 | 후기 | 이미 굳은 기름 슬러지는 뜨거운 물로 녹지 않는다. 식기 전의 옅은 기름기는 뜨거운 물로 일부 씻겨 내려갈 수 있다 | 공통 / 싱크대 배수 배관 / 굳은 기름 슬러지 vs 옅은 기름기 / 전 연식 / KR |
+| `boiling-water-avoid-pvc` | 논쟁 🔶 | 후기 | 끓는 물을 싱크대 배수구에 직접 부으면 PVC 배관이 변형되거나 하부 연결부 고무 패킹이 손상되어 누수가 생길 수 있으니 피한다 | 공통 / 싱크대 배수 배관 / PVC 배수 배관 / 전 연식 / KR |
+| `sodium-percarbonate-hot-water-range` | 논쟁 🔶 | 후기 | 과탄산소다로 배수구를 청소할 때는 60~80도의 물이 적절하며, 끓는 물을 직접 붓는 것은 피한다 | 공통 / 싱크대 배수 배관 / 과탄산소다 + 온수 세척 / 전 연식 / KR |
+| `plunger-half-fill-flush` | 논쟁 🔶 | 후기 | 뚫어뻥 또는 수압 방식으로는 싱크대 물구멍을 막고 물을 절반 정도 채운 뒤 한꺼번에 빼면, 굳지 않은 찌꺼기와 기름때가 수압으로 씻겨 내려갈 수 있다 | 공통 / 싱크대 배수 배관 / 막힘 초기·찌꺼기 막힘 / 전 연식 / KR |
+| `clog-location-by-symptom` | 논쟁 🔶 | 후기 | 막힌 위치는 증상으로 구분할 수 있다. 주름관이 막히면 싱크볼 위로 물이 차오르고, 하수 배관이 막히면 하부 걸레받이 아래 바닥으로 물이 샌다 | 공통 / 싱크대 배수 배관 / 주름관·하수 배관 구분 / 전 연식 / KR |
+| `trap-disassembly-steps` | 논쟁 🔶 | 후기 | 배수 트랩 청소는 가능하면 싱크대 급수 밸브를 잠그고, 트랩 아래에 양동이를 받친 뒤 트랩을 풀어 안의 기름 덩어리와 찌꺼기를 병솔이나 칫솔로 닦고 온수로 헹군다. 재조립 후에는 물이 새는지 확인한다 | 공통 / 싱크대 배수 배관 / 주방 싱크대 트랩 (플라스틱 연결 기준) / 전 연식 / KR |
+| `no-wire-or-bottle-force` | 논쟁 🔶 | 후기 | 페트병이나 철사를 배수구 깊이 밀어 넣어 억지로 뚫는 방식은 연결부에 압력을 줄 수 있어 피한다 | 공통 / 싱크대 배수 배관 / 배수구·트랩 입구 막힘 / 전 연식 / KR |
+| `shared-pipe-multi-sink-backup` | 논쟁 🔶 | 후기 | 물을 쓰지 않아도 배수구가 넘친다면 공용배관 막힘을 의심한다. 공용배관이 막히면 아래층 세대부터 넘칠 수 있고, 전용배관 막힘은 내가 물을 쓸 때만 넘친다. 공용배관 막힘은 같은 배관을 쓰는 세대와 원인을 공유해 비용 분담을 정한 뒤 처리한다 | 공통 / 아파트·공동주택 배수 / 공용배관 vs 전용배관 구분 / 전 연식 / KR |
+| `pro-call-criteria-sink` | 논쟁 🔶 | 후기 | 다음 중 하나라도 해당하면 자가 조치를 멈추고 전문업체를 부른다. 물이 거의 내려가지 않을 때, 세제나 뚫어뻥을 써도 같은 증상이 반복될 때, 물이 조금씩 빠지다 다시 고일 때, 환기를 해도 냄새가 계속 올라올 때, 하부 연결부나 주변에 물 흔적이 있을 때 | 공통 / 싱크대 배수 배관 / 전 라인 공통 기준 / 전 연식 / KR |
+| `sink-prevention-grease-wipe` | 논쟁 🔶 | 후기 | 기름과 국물은 설거지 전에 키친타월로 닦아 종량제 봉투나 폐식용유 수거함에 버리는 것이 막힘 예방에 가장 효과적이라고 소개된다 | 공통 / 싱크대 배수 예방 / 주방 기름·음식물 / 전 연식 / KR |
+
+### AI 스피커가 말을 못 알아듣거나 연결이 끊길 때 자가점검 (Google Nest·Home, 카카오미니, 네이버 클로바) <sub>2026-11-03 · smart-speaker-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `google-wifi-password-check-points` | 확실 | 공식 | Google Nest·Home 스피커의 Wi-Fi 연결이 실패하면 먼저 비밀번호를 확인한다. Wi-Fi 비밀번호는 대소문자를 구분하므로 대문자와 소문자가 맞는지 보고, 목록에서 정확한 네트워크 이름을 골랐는지 확인한다. iPhone·iPad에서는 '비밀번호 표시' 체크박스로 입력 내용을 눈으로 확인한다. | 구글 / 스마트 스피커 / Google Nest·Home 스피커 및 디스플레이 전 라인 / 전 연식 / 글로벌 |
+| `google-restart-order-router-then-speaker` | 확실 | 공식 | Google 공식 점검 순서는 공유기 전원을 분리하고 1분 기다린 뒤 다시 연결하고, 스피커나 디스플레이도 전원 코드를 뽑고 1분 기다렸다가 다시 꽂는 것이다. 휴대기기에서는 Google Home 앱을 최근 앱 목록에서 위로 밀어 강제 종료하고 Wi-Fi를 껐다 켠다. | 구글 / 스마트 스피커 / Google Nest·Home 스피커 및 디스플레이 전 라인 / 전 연식 / 글로벌 |
+| `google-hotspot-test-unofficial` | 확실 | 공식 | Google 공식 문서는 임시 모바일 핫스팟에 스피커를 연결해 보고 문제가 기기 쪽인지 네트워크 쪽인지 가르는 방법을 안내한다. 다만 핫스팟 사용은 Google이 완전히 지원하지는 않는다고 명시한다. 핫스팟에는 붙는데 집 Wi-Fi에 안 붙으면 인터넷 서비스 제공업체(통신사)에 문의한다. | 구글 / 스마트 스피커 / Google Nest·Home 스피커 및 디스플레이 전 라인 / 전 연식 / 글로벌 |
+| `google-network-change-delete-then-readd` | 확실 | 공식 | Google 스피커를 새 Wi-Fi로 바꿀 때 공식 절차는 Google Home 앱에서 기기 타일을 길게 누른 뒤 설정 → 기기 정보 → Wi-Fi → 네트워크 삭제 순으로 기존 네트워크를 지우고, 홈 화면의 추가 → Google Nest 또는 파트너 기기로 다시 설정하는 것이다. | 구글 / 스마트 스피커 / 스피커 및 디스플레이 (Google Home 앱 기준) / 전 연식 / 글로벌 |
+| `google-reset-try-restart-before-factory` | 확실 | 공식 | Google 공식 안내는 스피커 초기화 전에 재부팅과 일반적인 문제 해결을 먼저 시도하라고 권한다. 초기화 중 문제가 생기면 'Google 스피커 초기화 시 발생하는 문제' 도움말을 따른다. | 구글 / 스마트 스피커 / Google Nest·Home 스피커 및 디스플레이 전 라인 / 전 연식 / 글로벌 |
+| `google-factory-reset-data-loss-no-voice` | 확실 | 공식 | Google 스피커 초기화는 기기를 기본 설정으로 되돌리며 기기 데이터가 삭제되고 되돌릴 수 없다. 음성 명령이나 Google Home 앱으로는 초기화할 수 없고 기기의 버튼으로만 해야 한다. 초기화하면 기기와 집 구성원의 연결이 해제되며 동영상 기록 등 연결 데이터가 지워진다. | 구글 / 스마트 스피커 / Google Nest·Home 스피커 및 디스플레이 전 라인 / 전 연식 / 글로벌 |
+| `google-speaker-reset-button-hold-steps` | 확실 | 공식 | Google 스피커 초기화 버튼 조작은 기기마다 다르다. Google Home 스피커(2026), Nest Audio, Nest Mini 2세대는 뒷면 또는 측면 마이크를 먼저 꺼서 표시등을 주황색으로 만든 뒤 상단 중앙을 길게 누른다. Home Mini 1세대는 하단 전원 코드 아래 초기화 버튼을 길게 누른다. 다섯 초 뒤 초기화가 시작되므로 재설정 중이라는 소리가 들릴 때까지 약 10초 더 누르고 있는다. | 구글 / 스마트 스피커 / Google Home 스피커(2026)·Nest Audio·Nest Mini 2세대·Home Mini 1세대 / 모델별 상이 / 글로벌 |
+| `google-home-max-home-reset-hold-times` | 확실 | 공식 | Google Home Max는 뒷면 전원 코드 근처 초기화 버튼을 12초 길게 누르면 재설정이 시작된다. Google Home은 뒷면 마이크 음소거 버튼을 15초 길게 누른다. | 구글 / 스마트 스피커 / Google Home Max · Google Home(초기 모델) / 단종 모델 포함 / 글로벌 |
+| `google-nest-hub-reset-volume-buttons-10s` | 확실 | 공식 | Google Nest Hub(2세대)·Nest Hub 디스플레이는 뒷면 볼륨 버튼 두 개를 동시에 10초 길게 누르면 재설정이 시작되고 기기에서 재설정 중이라고 안내한다. Nest Hub Max는 중요한 동영상 클립을 먼저 저장하고 Google Home 앱에서 기기를 삭제한 뒤 같은 방식으로 10초 누른다. | 구글 / 스마트 디스플레이 / Nest Hub(2세대)·Nest Hub·Nest Hub Max / 모델별 상이 / 글로벌 |
+| `kakao-mini-factory-reset-2017-blog` | 확인실패 🔶 | 후기 | 카카오미니 공장 초기화는 상단 마이크 ON/OFF 버튼과 기능 버튼(점 표시)을 동시에 5초 이상 길게 누르는 방식으로 2017년 기사에 실려 있다. 공식 카카오 도움말에서 확인하지 못했고 현재 펌웨어에서도 같은지 검증되지 않았다. | 카카오 / 스마트 스피커 / 카카오미니 / 2017 기사 기준 / KR |
+| `clova-lamp-bluetooth-rediscover-steps` | 확실 | 공식 | 네이버 클로바 CLOVA Lamp에서 외부 블루투스 스피커가 목록에 안 보이면 클로바 앱 블루투스 설정 화면 하단의 '기기 다시 찾기'를 누른다. 연결할 스피커는 페어링 대기 상태로 맞춘 뒤 다시 시도하고, CLOVA Lamp를 블루투스 스피커 가까이 둬서 벽이나 무선 간섭을 줄인다. | 네이버 / 스마트 스피커·조명 / CLOVA Lamp (블루투스 출력 기능) / 전 연식 / KR |
+
+### 스마트폰 사진이 자꾸 흐리게 찍힐 때 자가 점검 (렌즈 오염·보호필름/케이스·근접 초점·결로·하드웨어 판별·AS) <sub>2026-11-03 · smartphone-camera-blur-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `camera-blur-clean-lens-first-apple` | 확실 | 공식 | 아이폰 카메라 사진이 흐리면 가장 먼저 전후면 카메라 렌즈를 부드럽고 약간 젖은, 보풀 없는 천(렌즈 클로스 등)으로 닦아야 한다. 청소 전에는 기기 전원을 끄고 케이블을 분리한다. 압축공기, 표백제·과산화수소 제품은 쓰지 않는다 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
+| `camera-blur-clean-lens-samsung` | 확실 | 공식 | 갤럭시 카메라가 흐리거나 빛이 번질 때 첫 번째 조치는 카메라 렌즈에 묻은 지문·먼지·이물질을 깨끗이 닦는 것이다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `camera-blur-protector-cover-focus-samsung` | 확실 | 공식 | 갤럭시 카메라 렌즈에 비정품 보호 필름(유리)이나 렌즈 커버를 붙여 쓰면 초점이 안 맞거나 빛이 왜곡될 수 있다. 이 경우 해당 액세서리를 떼고 다시 촬영해 확인한다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `camera-blur-accessory-remove-test-apple` | 확실 | 공식 | 아이폰 사진이 흐리면 카메라나 플래시를 가리는 케이스·필름·액세서리를 모두 떼고 테스트해야 한다. 카메라 가까이 붙은 자석 액세서리도 카메라 간섭을 일으킬 수 있어 함께 뗀다 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
+| `camera-blur-focus-enhancer-close-samsung` | 확실 | 공식 | 갤럭시에서 가까운 피사체 주변만 흐릿하게 찍히면 카메라 앱 미리보기의 꽃 모양 아이콘으로 Focus enhancer를 켠다. 이 기능은 초광각 카메라를 함께 써서 피사체 주변의 흐림을 줄인다 | 삼성 / 스마트폰 / Focus enhancer 지원 갤럭시 기종 / 지원 기종 한정(연식 확인 필요) / 글로벌 |
+| `camera-blur-ultra-min-distance-samsung` | 확실 | 공식 | 갤럭시 S25 Ultra와 S26 Ultra에서 고배율 줌으로 가까이 찍으면 흐려질 수 있다. 고배율은 망원 카메라로 전환되는데, 이 카메라는 먼 피사체용이라 최소 촬영 거리가 있다. S25 Ultra 5배 망원은 약 30cm, S26 Ultra 5배 망원은 약 80cm부터 선명하다 | 삼성 / 스마트폰 / 갤럭시 Ultra 시리즈 (S25 Ultra · S26 Ultra) / 2025~ / 글로벌 |
+| `camera-blur-200mp-normal-samsung` | 확실 | 공식 | 갤럭시 Ultra의 200MP 고해상도 촬영에서 사진 일부가 흐리게 보이는 것은 광학 특성상 정상 현상일 수 있으며, 이 경우 고칠 수 있는 설정은 없다 | 삼성 / 스마트폰 / 갤럭시 Ultra 200MP 모드 / 2025~ / 글로벌 |
+| `camera-blur-condensation-samsung` | 확실 | 공식 | 갤럭시 카메라 렌즈가 뿌옇게 보이는 것은 기기 내외부 온도 차로 렌즈 안에 결로가 생긴 것일 수 있다. 자연 건조시키면 대부분 사라지며 기기 기능에는 문제가 없다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `camera-blur-glare-dirty-lens-samsung` | 확실 | 공식 | 갤럭시에서 빛 번짐(광원 주변의 줄무늬·글레어)은 강한 광원, 렌즈 오염, 고배율 줌이 원인이 될 수 있다. 렌즈를 닦고 촬영 각도를 바꾸거나 강한 빛을 피하면 줄어든다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `camera-blur-indoor-flicker-samsung` | 확실 | 공식 | 갤럭시 실내 조명 아래에서 가로 검은 줄이나 깜빡임이 보이면 조명 주파수 때문인 플리커일 수 있다. Pro 모드에서 셔터 속도를 1/120초 이하로 낮추면 줄어든다 | 삼성 / 스마트폰 / Pro 모드 지원 갤럭시 기종 / 지원 기종 한정 / 글로벌 |
+| `camera-blur-samsung-kr-service-consult` | 확실 | 공식 | 갤럭시 카메라 화질 문제가 위 점검으로 해결되지 않으면 삼성전자서비스 전문상담사에게 상담하는 것이 공식 안내다. 상담 예약 링크는 해당 안내 페이지에 있다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `camera-blur-samsung-hardware-judgement-unverified` | 확인실패 | 공식 | 갤럭시 카메라 하드웨어 불량(예: 특정 렌즈만 계속 흐림)을 자가로 판별하는 공식 기준은 이번 조사에서 확인하지 못했다. 삼성 공식 안내는 점검 후에도 해결되지 않으면 전문상담을 권하는 데서 멈춘다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `camera-blur-apple-physical-damage-service` | 확실 | 공식 | 아이폰 카메라가 낙하 등 물리 손상을 입었거나 청소·점검 후에도 흐리면 카메라 수리가 필요할 수 있다. 수리 경로는 Apple 공식 수리 페이지(support.apple.com/repair)에서 확인한다 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
+| `camera-blur-apple-part-replace-not-guaranteed` | 확실 | 공식 | 아이폰 카메라 부품을 교체해도 문제가 해결되지 않을 수 있다는 것이 Apple 공식 점검 안내에 명시돼 있다. 후면 카메라 흐림은 기기 종류에 따라 카메라 단품 교체 또는 외장(enclosure) 교체 순서로 진행된다 | 애플 / 스마트폰 / iPhone 전 기종 (외장 교체 대상은 일부 모델) / 전 연식 / 글로벌 |
+
+### 주택용 화재감지기(단독경보형)와 소화기 점검 방법 <sub>2026-11-03 · smoke-detector-fire-extinguisher-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `nfa-detector-battery-life-10y` | 확실 | 공식 | 소방청 주택용 소방시설 안내는 단독경보형 감지기의 배터리 수명을 약 10년으로 적고 있다 | 공통 / 주택용 단독경보형 감지기 / 배터리 내장형(안내 기준) / 전 연식 / KR |
+| `nfa-detector-monthly-check-button` | 확실 | 공식 | 소방청 안내는 단독경보형 감지기를 주기적으로 점검하라고 하며, 오작동 시에는 리셋 버튼을 누르라고 안내한다 | 공통 / 주택용 단독경보형 감지기 / 전 라인 / 전 연식 / KR |
+| `nfa-detector-install-each-room` | 확실 | 공식 | 소방청 안내는 단독경보형 감지기를 구획된 실마다 설치하라고 한다 | 공통 / 주택용 단독경보형 감지기 / 전 라인 / 전 연식 / KR |
+| `nfa-extinguisher-life-10y-public` | 확실 | 공식 | 소방청 주택용 소방시설 안내는 소화기 사용기한을 10년으로 적고 있다 | 공통 / 주택용 소화기 / 분말형 등(안내 기준) / 전 연식 / KR |
+| `law-powder-extinguisher-life-10y` | 확실 | 공식 | 분말형 소화약제를 쓰는 소화기의 내용연수는 10년으로 정해져 있고, 2017년 1월 28일 시행 시행령 제15조의4에 근거한다 | 공통 / 소화기 / 분말형 소화약제 소화기 / 2017.1.28 시행~ / KR |
+| `law-powder-extinguisher-transition-1y` | 확실 | 공식 | 시행 당시 이미 내용연수가 지난 분말형 소화기는 시행 후 1년이 되는 날까지 교체하거나 성능확인을 받아야 했다 | 공통 / 소화기 / 분말형 소화약제 소화기 / 2018.1.28 기한 경과 (경과조치, 현재 적용 없음) / KR |
+| `nfa-extinguisher-gauge-green-check` | 확실 | 공식 | 소방청 안내는 소화기 점검 시 압력게이지 바늘이 녹색 범위에 있는지 확인하라고 한다 | 공통 / 소화기 / 지시압력계 달린 분말 소화기 / 전 연식 / KR |
+| `news-extinguisher-gauge-out-call-vendor` | 확실 🔶 | 후기 | 압력계 바늘이 녹색 범위를 벗어나면 소화기를 직접 조정하지 말고 제조사나 소방 장비 업체에 재충전이나 교체를 문의하라는 것이 생활정보 기사의 안내다 | 공통 / 소화기 / 지시압력계 달린 분말 소화기 / 전 연식 / KR |
+| `news-extinguisher-inspection-items` | 확실 🔶 | 후기 | 소화기 육안 점검 항목은 안전핀과 봉인, 호스·노즐 막힘, 용기의 깊은 녹·찌그러짐·누설·부풀음 여부다 | 공통 / 소화기 / 분말 소화기 전반 / 전 연식 / KR |
+| `news-extinguisher-no-test-discharge` | 확실 🔶 | 후기 | 소화기 작동 여부를 보려고 안전핀을 뽑아 조금이라도 뿌려 보면 안 되며, 일부만 방출해도 재충전이나 교체가 필요해질 수 있다 | 공통 / 소화기 / 분말 소화기 전반 / 전 연식 / KR |
+| `news-extinguisher-used-recharge` | 확실 🔶 | 후기 | 한 번 작동시킨 소화기는 남은 양과 상관없이 재충전이나 교체를 거쳐야 한다는 안내가 있다 | 공통 / 소화기 / 분말 소화기 전반 / 전 연식 / KR |
+| `news-extinguisher-placement-near-stove` | 확실 🔶 | 후기 | 소화기는 가스레인지나 히터 같은 열원 가까이를 피하고, 손이 빨리 닿되 탈출로를 등지지 않는 곳에 두라는 안내가 있다 | 공통 / 소화기 / 분말 소화기 전반 / 전 연식 / KR |
+| `nfa-extinguisher-per-household-floor` | 확실 | 공식 | 소방청 안내는 소화기를 세대별, 층별로 1개 이상 설치하라고 한다 | 공통 / 주택용 소화기 / 전 라인 / 전 연식 / KR |
+| `news-detector-no-battery-removal` | 확실 🔶 | 후기 | 경보음이 난다고 감지기 배터리를 빼면 경보 기능도 사라진다. 경고음이 나면 같은 자리에서 새 배터리로 바꾸라는 안내가 있다 | 공통 / 주택용 단독경보형 감지기 / 배터리 교체형 / 전 연식 / KR |
+| `news-detector-monthly-test-nfpa` | 확실 🔶 | 후기 | 미국화재예방협회(NFPA)는 감지기 테스트 버튼을 월 1회 누르는 것을 가정의 루틴으로 삼으라고 권고한다. 위키트리 기사가 이를 인용했다 | 공통 / 주택용 단독경보형 감지기 / 전 라인 / 전 연식 / US(권고 출처) / 국내 적용은 소방청 안내 기준 |
+| `news-detector-life-varies-by-model` | 확인실패 🔶 | 후기 | 연기감지기 사용 연한은 대략 10년 안팎이라는 기사 설명이 있으나, 실제 본체 교체 기준은 모델마다 다르므로 제품 표기와 설명서를 따라야 한다 | 공통 / 주택용 단독경보형 감지기 / 본체 교체 기준 / 전 연식 / KR |
+
+### 변기 물이 잘 안 내려가거나 계속 흐를 때 점검 (물탱크 원인·뚫어펌프·혼합 금지·업체 호출 기준) <sub>2026-11-03 · toilet-flush-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `toilet-running-diagnosis-marking-test` | 확실 | 공식 | 물이 계속 흐르는 물탱크식 변기는 급수밸브를 잠그고 탱크 수위에 표시를 한 뒤 10~15분 기다린다. 표시보다 수위가 내려가 있으면 원인은 플래퍼(고무 마개)일 가능성이 높아 플래퍼부터 교체한다. | 공통 / 변기 / 물탱크식 변기(Fluidmaster 부품 기준) / 전 연식 / US(제조사 미국 사이트, 국내 변기 구조와 부품 규격은 다를 수 있음) |
+| `toilet-fill-valve-overflow-check` | 확실 | 공식 | 탱크에 물을 채웠을 때 수위가 오버플로우관 안으로 넘쳐 들어가면 급수밸브(필밸브) 쪽 문제다. 먼저 밸브 내부 이물질을 빼내고, 그래도 안 되면 필밸브를 교체한다. | 공통 / 변기 / 물탱크식 변기 필밸브(Fluidmaster 기준) / 전 연식 / US |
+| `toilet-flush-valve-after-flapper` | 확실 | 공식 | 플래퍼를 교체한 뒤에도 탱크 물이 계속 빠지면 다음 원인은 플러시 밸브(배수구 쪽 밸브 본체)이며 이 부품을 교체한다. | 공통 / 변기 / 물탱크식 변기 플러시 밸브(Fluidmaster 기준) / 전 연식 / US |
+| `toilet-tank-bottom-leak-bolts` | 확실 | 공식 | 탱크 바닥에서 물이 새는 경우 탱크 고정 볼트와 와셔를 교체하고, 물이 뚜껑이나 레버 쪽에서 새면 그 부위를 먼저 확인한다. | 공통 / 변기 / 물탱크식 변기(분리형 탱크) / 전 연식 / US |
+| `adjustable-flapper-not-pre-1994-toilets` | 확실 | 공식 | 조절식(어저스터블) 플래퍼는 1994년 이전에 만들어진 변기에 쓰면 안 된다. | 공통 / 변기 / 조절식 플래퍼 / 1994 이전 제작 변기 제외 / US |
+| `adjustable-flapper-gpf-range` | 확실 | 공식 | 조절식 플래퍼는 물 사용량 1.28gpf(약 4.8L)와 1.6gpf(약 6L) 변기용으로 설계되어 있다. | 공통 / 변기 / 조절식 플래퍼 / 1.28·1.6gpf 변기 / US(gpf 단위) |
+| `adjustable-flapper-float-direction` | 확실 | 공식 | 조절식 플래퍼에서 체인의 플로트를 위로 올리면 플래퍼가 빨리 닫히고, 아래로 내리면 플래퍼가 더 오래 열려 있어 물이 더 많이 나간다. | 공통 / 변기 / 플로트 조절 방식 조절식 플래퍼 / 1994 이후 변기 / US |
+| `toilet-in-tank-bleach-cleaner-warning` | 확실 | 공식 | 탱크 안에 넣는 드롭인 변기 세정제 중 표백제(염소) 성분이 든 제품은 탱크 부품을 손상시키고 누수를 일으킬 수 있으며, 이를 쓰면 Fluidmaster 제품 보증이 무효가 된다. | 공통 / 변기 / 탱크 내 드롭인 세정제 / 전 연식 / US |
+| `household-bleach-mix-never-chlorine-gas` | 확실 | 공식 | 표백제(락스)를 변기 세정제나 암모니아 계열 제품과 섞으면 유독가스가 생길 수 있어 어떤 세정제도 섞지 말아야 하며, 섞인 뒤 몸에 이상이 생기면 현장을 떠나 긴급전화(영국 999)를 걸어야 한다. | 공통 / 가정용 세정제 / 표백제·변기 세정제·암모니아 스프레이 / 2025-08 기준 / UK(영국 소방 당국 경고, 국내 공식 문구 아님) |
+| `toilet-plunger-seal-drain-hole` | 확인실패 🔶 | 후기 | 뚫어뻥(플런저)은 고무 부분이 변기 배수구를 완전히 덮도록 밀착시킨 뒤 위아래로 압력을 준다. 막힘이 풀렸는지는 물을 살짝 내려 물이 빠지는지 확인한다. | 공통 / 변기 / 일반 가정용 양변기 뚫어뻥 / 전 연식 / KR(개인 글) |
+| `toilet-hot-water-no-boiling` | 확인실패 🔶 | 후기 | 끓는 물을 변기에 붓는 방법은 도기를 손상시킬 수 있어 피해야 하며, 따뜻한 물(약 60~70도) 정도가 적당하다고 개인 블로그들이 공통으로 적고 있다. | 공통 / 변기 / 도기(세라믹) 변기 / 전 연식 / KR(개인 글) |
+
+### 타이어 공기압 경고등(TPMS)이 안 꺼질 때 확인할 것 — 점등·점멸 구분, 공기압 보충 후에도 켜질 때, 센서 문제 판별, 공식 안내 기준 <sub>2026-11-03 · tpms-warning-light-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `tpms-flash-then-solid-system-fault` | 확실 | 공식 | 계기판의 TPMS 경고등이 약 1분 깜빡인 뒤 계속 켜져 있으면 타이어 공기압 경보 시스템에 이상이 있는 것이므로 바로 점검을 받아야 한다. 이 경우는 공기압 부족과 구분되는 시스템 고장 신호다. | 기아 / 자동차 / TPMS 장착 차량 (CT1 2026 매뉴얼 기준) / 2026 매뉴얼 / KR |
+| `tpms-low-pressure-then-system-fault-clears-position` | 확실 | 공식 | 저압 경고등이 이미 켜진 상태에서 시스템 고장이 나면, 경고등이 깜빡인 뒤 켜지고 어느 타이어가 낮은지 보여 주는 위치 표시등은 사라진다. | 기아 / 자동차 / TPMS 장착 차량 (CT1 2026 매뉴얼 기준) / 2026 매뉴얼 / KR |
+| `tpms-legal-warning-threshold-20pct` | 확실 | 공식 | 국내 법령상 TPMS 경고는 1개 타이어의 운행공기압이 20% 감소한 값 또는 최소 150kPa 중 큰 값에 도달했을 때 켜져야 한다. 4개 타이어 기준은 20% 감소다. | 공통 / 자동차 / 승용차, 차량총중량 3.5톤 이하 승합·화물·특수자동차 (복륜·피견인 제외) / 2013년 1월 1일 시행 규칙 기준 / KR |
+| `tpms-legal-warning-timing` | 확실 | 공식 | 법정 경고 조건을 만족하면 1개 타이어 기준은 10분 누적주행 이내, 4개 타이어 기준은 60분 누적주행 이내에 경고등이 켜져야 한다. | 공통 / 자동차 / 승용차, 차량총중량 3.5톤 이하 승합·화물·특수자동차 / 2013년 1월 1일 시행 규칙 기준 / KR |
+| `tpms-gn7-dealer-check-when-lit` | 확실 | 공식 | 현대 2026 그랜저(GN7) 매뉴얼은 TPMS 경고등이 켜지면 직영 하이테크센터나 블루핸즈에서 점검과 정비를 받으라고 안내한다. | 현대 / 자동차 / 그랜저 GN7 / 2026 매뉴얼 / KR |
+| `tpms-gn7-no-drive-below-29psi` | 확실 | 공식 | 현대 2026 그랜저(GN7) 매뉴얼은 타이어 공기압이 29psi(200kPa) 이하이면 차량을 주행하지 말라고 안내한다. 주행을 멈추고 견인해 점검받으라는 안내도 함께 있다. | 현대 / 자동차 / 그랜저 GN7 / 2026 매뉴얼 / KR |
+| `tpms-kia-service-referral` | 확실 | 공식 | 기아 매뉴얼은 TPMS 이상이 있으면 즉시 자사 직영 서비스센터나 서비스협력사에 점검을 의뢰하라고 안내한다. 실런트로 펑크를 수리한 경우에도 센서 손상을 막으려고 같은 곳에서 점검과 정비를 받아야 한다. | 기아 / 자동차 / TPMS 장착 차량 (CT1 2026 매뉴얼 기준) / 2026 매뉴얼 / KR |
+| `tpms-kia-reset-procedure-unverified` | 확인실패 | 공식 | 공기압을 권장값으로 맞춘 뒤 TPMS 초기화(SET 버튼 3초 이상 누르기 등)로 경고등을 끄는 절차가 있다는 2차 자료가 있으나, 기아 매뉴얼 초기화 페이지 원문은 확인하지 못했다(해당 페이지 404). | 기아 / 자동차 / TPMS 장착 차량 (차종·연식 미특정) / 미특정 / KR |
+| `tpms-four-low-vs-one-low-interpretation` | 논쟁 🔶 | 후기 | 네 바퀴가 모두 낮게 나오면 기온 하락이나 자연 누설을 먼저 의심하고, 한 바퀴만 유난히 낮으면 펑크나 못 박힘을 의심하라는 점검 순서가 블로그 정리글에 있다. | 공통 / 자동차 / 승용차 타이어 일반 / 2026 게시글 기준 / KR |
+
+### TV 화면에 줄이 생기거나 깜빡일 때 점검 순서 (삼성·LG 공식 안내 기준) <sub>2026-11-03 · tv-screen-lines-flicker-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `tv-flicker-tv-menu-split-test` | 확실 | 공식 | LG TV 화면이 깜박이거나 끊길 때 리모컨으로 볼륨 바 같은 TV 메뉴를 띄워 본다. 메뉴는 정상인데 방송이나 외부 입력 화면만 깜박이면 외부 기기 또는 케이블 문제이고, 메뉴까지 깜박이면 TV 내부 문제로 보고 LG 고객지원 점검을 요청한다 | LG / TV / webOS 전 TV / 현행 판매 모델 / KR |
+| `lg-tv-signal-strength-threshold` | 확실 | 공식 | LG webOS TV의 신호 정보에서 신호 세기가 50% 미만이거나 신호 세기·신호 품질이 30% 이상 변동하면 방송 신호가 약한 것으로 보고, 관리사무소나 통신사에 점검을 요청한다 | LG / TV / 안테나·유선방송 수신 webOS TV / webOS 전 버전 / KR |
+| `lg-screen-line-check-order` | 확실 | 공식 | LG TV에 화면 줄이 보이면 ①다른 화면에서도 줄이 보이는지 확인 ②설정에서 화면 비율을 16:9로 맞춤 ③안테나 단자와 신호 상태 확인 ④HDMI는 여분 케이블로 바꿔 확인 ⑤영상 테스트 화면에서도 같은 줄이 보이는지 확인하는 순서다. 영상 테스트에서도 줄이 보이면 TV 상담과 점검이 필요하다 | LG / TV / webOS 전 TV / 2021~2025년형 메뉴 기준 / KR |
+| `lg-screen-line-selfdiag-path-by-year` | 확실 | 공식 | LG TV의 영상 자가진단 경로는 연식마다 다르다. 2024년 이후 webOS 24·25는 설정→전체설정→고객지원→화면 자가진단, 2021~2023년 OLED는 설정→전체 설정→일반→올레드 케어→디바이스 셀프 케어→영상 자가 진단, 2020년형(webOS 5.0)은 설정→전체설정→고객지원→추가 설정→영상 테스트, 2019년 이전은 설정→전체 설정→영상→영상 테스트다 | LG / TV / webOS 전 TV / 2019년 이전~2025년형(연식별 경로 상이) / KR |
+| `samsung-broadcast-provider-escalation` | 확실 | 공식 | 삼성 TV에서 가로줄이 방송을 볼 때만 보이고 TV 화질 테스트 화면에는 줄이 없으면, TV와 셋톱박스의 HDMI 케이블을 다시 연결해 보고, 재연결 후에도 같으면 가입한 방송 통신사에 문의한다. 안테나를 쓰면 메인 안테나 연결 상태도 함께 확인한다 | 삼성 / TV / 전 스마트TV(2023·2024년 메뉴 기준) / 2013~현행(연식별 메뉴 상이) / KR |
+| `samsung-motion-brightness-settings` | 확실 | 공식 | 삼성 TV 화면 밝기가 자동으로 밝아졌다 어두워지기를 반복하면 모션라이팅(모션 밝기 조정)과 에코절전(밝기 낮추기)이 원인 후보다. 2022년형은 홈→설정→전체 설정→일반 및 개인정보→전원 및 절전에서 '모션 밝기 조정'을 끄고, 에코절전은 같은 메뉴의 '밝기 낮추기'를 끈다 | 삼성 / TV / 스마트TV 모션라이팅·에코절전 기능 탑재 모델 / 2017~2022(연식별 경로 상이) / KR |
+| `samsung-firmware-update-after-brightness-off` | 확실 | 공식 | 삼성 TV 밝기 자동 조절 설정을 바꾼 뒤 공식 안내는 최신 펌웨어로 올리라는 것이다. 경로는 메뉴→고객지원→소프트웨어 업데이트→지금 업데이트이며, USB 또는 네트워크 중 고를 수 있다. 네트워크 업데이트는 현재보다 높은 버전이 있을 때만 된다 | 삼성 / TV / 스마트TV 전 기종 / 현행 / KR |
+| `samsung-panel-warranty-2year` | 확실 | 공식 | 삼성전자서비스 보증기간 산정기준에서 LCD/LED 패널(TV·모니터·DID·일체형 PC)은 핵심부품으로 2년 보증이다. 노트북 LCD/LED 패널은 이 기준에서 제외된다 | 삼성 / TV / LCD/LED 패널(TV·모니터) / 현행 / KR |
+| `samsung-repair-recurrence-12month` | 확실 | 공식 | 삼성 제품을 유상으로 수리한 경우, 수리한 날부터 12개월 이내에 종전과 동일한 부품 고장이 재발하면 무상으로 수리한다. 이전 유상수리에서 수리비 할인을 받았다면 소비자분쟁해결기준상 무상수리 기간은 2개월이다 | 삼성 / 전 제품(TV 포함) / 유상수리 이력이 있는 제품 / 현행 / KR |
+| `kftc-panel-5000h-timer-clause` | 논쟁 🔶 | 후기 | 소비자분쟁해결기준의 LCD 패널 항목에는 소비자가 확인할 수 있는 타이머가 달린 제품이 5,000시간을 넘기면 기간이 만료된 것으로 본다는 단서가 있다고 소비자상담센터 게시 발췌문에 나온다. 삼성 보증기간 페이지에는 이 조항이 없다 | 공통 / TV·모니터 / LCD 패널(타이머 부착 제품) / 발췌문 기준 현행 고시 항목 / KR |
+| `kftc-tv-parts-retention-unverified` | 확인실패 🔶 | 후기 | TV 부품보유기간은 출처마다 엇갈려 확정하지 못했다. 소비자상담센터 발췌문은 제조일로부터 9년, 2차 해설 기사는 8년으로 적어 불일치한다 | 공통 / TV / 전 TV / 제조일 기준 / KR |
+| `samsung-contact-phone-1588` | 확실 | 공식 | 삼성전자 대표 상담 번호는 1588-3366이며 통화요금은 발신자 부담이다 | 삼성 / 전 제품 / TV 포함 전 제품 / 현행 / KR |
+| `lg-contact-phone-1544` | 확실 | 공식 | LG전자 고객센터 번호는 1544-7777이며 전화 상담은 평일 09:00~18:00에 운영된다. 긴급한 제품·서비스 문제는 24시간 처리된다 | LG / TV / webOS 전 TV / 현행 / KR |
+| `tv-disassembly-manufacturer-text-unverified` | 확인실패 | 공식 | TV 내부 분해 금지 문구는 삼성 안전 주의사항 원문에서 확인되지 않았고, 후보로 찾은 LG 사용설명서 PDF 사본도 텍스트를 읽지 못해 원문 문구를 확인하지 못했다. 분해 금지는 문구를 인용하지 말고 감전 위험에 근거한 안전 원칙으로 쓴다 | 공통 / TV / 전 TV / 전 연식 / KR |
+| `samsung-tv-no-liquid-impact-safety` | 확실 | 공식 | 삼성 TV 안전 안내는 제품에 충격을 주거나 물·세척제를 직접 뿌리지 말라고 하며, 화면 표시부가 파손되거나 감전·화재의 원인이 될 수 있다고 경고한다 | 삼성 / TV / 전 TV / 전 연식 / KR |
+
+### 디젤 차량 요소수 경고등 단계별 주행 가능 여부와 보충 요령 <sub>2026-11-03 · urea-warning-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `hyundai-urea-warning-four-stages` | 확실 | 공식 | 현대 디젤 차량의 요소수 경고는 4단계로 표시된다. 1차는 요소수 시스템 경고등과 함께 '요소수 레벨 낮음 요소수 주행가능거리 : 000km', 2차는 보충 없이 계속 주행 시 '요소수를 보충하십시오 요소수 주행가능거리 : 000km', 3차는 '000km 주행 후 재시동 불가! 요소수를 보충하십시오', 4차는 '요소수가 떨어져 재시동이 불가합니다'이며 이 단계에서는 시동이 걸리지 않는다. | 현대 / 자동차 / 디젤 승용·SUV (LX2 2024판 매뉴얼 기준) / 2024 매뉴얼 기준 / KR |
+| `kia-urea-warning-four-stages` | 확실 | 공식 | 기아 디젤 차량의 요소수 경고는 4단계로 표시된다. 1단계는 '요소수가 부족합니다', 2단계는 '요소수를 보충하십시오', 3단계는 '000 km 후 재시동 불가! 요소수를 보충하십시오', 4단계는 '요소수가 고갈되어 재시동이 불가합니다'이며 이 단계에서는 시동이 걸리지 않는다. | 기아 / 자동차 / 디젤 승용·SUV (HM 2024판 매뉴얼 기준) / 2024 매뉴얼 기준 / KR |
+| `hyundai-urea-first-warning-2400km` | 확실 | 공식 | 현대 LX2 2024판 매뉴얼 기준으로 1차 요소수 부족 경고는 잔여 요소수로 주행할 수 있는 거리가 약 2,400km 이하일 때 나타난다. | 현대 / 자동차 / 디젤 승용·SUV (LX2 2024판 매뉴얼 기준) / 2024 매뉴얼 기준 / KR |
+| `kia-urea-first-warning-1200km` | 확실 | 공식 | 기아 HM 2024판 매뉴얼 기준으로 1단계 요소수 부족 경고는 잔여 요소수로 주행할 수 있는 거리가 1,200km 이하일 때 나타난다. | 기아 / 자동차 / 디젤 승용·SUV (HM 2024판 매뉴얼 기준) / 2024 매뉴얼 기준 / KR |
+| `urea-refill-interval-3000km` | 논쟁 🔶 | 공식 | 기아 매뉴얼은 요소수를 약 3,000km 주행마다 보충하라고 안내하지만, 실제 소모량은 주행 습관과 환경에 따라 달라지므로 경고등이 켜지는 시점을 기준으로 보충하라고 권장한다. | 기아 / 자동차 / 디젤 승용·SUV (HM 2024판 매뉴얼 기준) / 2024 매뉴얼 기준 / KR |
+| `urea-refill-restart-wait-on` | 확실 | 공식 | 요소수를 보충한 뒤에는 시동 버튼을 ON 상태로 두고 경고 문구가 사라질 때까지 기다린 다음 재시동해야 한다. | 기아 / 자동차 / 디젤 승용·SUV (HM 2024판 매뉴얼 기준) / 2024 매뉴얼 기준 / KR |
+| `hyundai-urea-restart-blocked-service-contact` | 확실 | 공식 | 현대 매뉴얼 기준으로 충분히 보충한 뒤에도 재시동 제한이 풀리지 않으면 직영 하이테크센터 또는 블루핸즈에 문의해야 한다. | 현대 / 자동차 / 디젤 승용·SUV (LX2 2024판 매뉴얼 기준) / 2024 매뉴얼 기준 / KR |
+| `kia-urea-restart-blocked-emergency-service` | 확실 | 공식 | 기아 매뉴얼 기준으로 충분히 보충하고 ON 상태로 기다린 뒤에도 시동이 걸리지 않으면 긴급출동지원센터에 연락해 응급조치를 받아야 한다. | 기아 / 자동차 / 디젤 승용·SUV (HM 2024판 매뉴얼 기준) / 2024 매뉴얼 기준 / KR |
+| `urea-no-fuel-tank-no-additive` | 확실 | 공식 | 요소수는 연료 첨가제가 아니므로 연료 주입구나 연료 탱크에 넣으면 안 되고, 디젤유·가솔린·알코올 등 권장되지 않은 액체와 물·첨가제도 섞으면 안 된다. 희석된 요소수는 동결점을 높인다. | 기아 / 자동차 / 디젤 승용·SUV (HM 2024판 매뉴얼 기준) / 2024 매뉴얼 기준 / KR |
+| `urea-spec-iso22241-din70070` | 확실 | 공식 | 차량용 요소수는 ISO 22241 또는 DIN 70070 규격을 만족하는 요소수(우레아 용액)만 써야 한다. | 공통 / 자동차 / 디젤 승용·SUV 요소수 시스템 (현대 LX2 2024판, 기아 HM 2024판 기준) / 2024 매뉴얼 기준 / KR |
+| `urea-storage-temperature-freeze` | 확실 | 공식 | 요소수는 장시간 50℃ 이상으로 가열되면 분해되어 암모니아 증기가 생길 수 있고, -11℃ 이하에 장시간 노출되면 얼어 수위를 정확히 측정할 수 없게 된다. | 현대 / 자동차 / 디젤 승용·SUV (LX2 2024판 매뉴얼 기준) / 2024 매뉴얼 기준 / KR |
+| `urea-overfill-winter-expansion` | 확실 | 공식 | 요소수 탱크가 이미 가득 찬 상태에서 병에 남은 요소수를 추가로 주입하면 안 된다. 겨울철 동결로 팽창해 탱크와 시스템이 손상될 수 있다. | 기아 / 자동차 / 디젤 승용·SUV (HM 2024판 매뉴얼 기준) / 2024 매뉴얼 기준 / KR |
+| `urea-shutdown-2min-pump` | 확실 | 공식 | 시동을 끈 뒤에도 요소수 시스템은 약 2분간 내부 요소수를 비우는 동작을 계속하므로, 이 동작이 끝난 뒤에 점검해야 한다. | 기아 / 자동차 / 디젤 승용·SUV (HM 2024판 매뉴얼 기준) / 2024 매뉴얼 기준 / KR |
+| `urea-system-fault-warning-service` | 확실 | 공식 | 전장품 이상이나 비정상 요소수 감지로 고장 경고가 뜨면 자사 직영 서비스센터나 서비스협력사에서 점검받아야 하며, 수리 없이 계속 운행하면 차량에 악영향을 줄 수 있다. | 기아 / 자동차 / 디젤 승용·SUV (HM 2024판 매뉴얼 기준) / 2024 매뉴얼 기준 / KR |
+
+### 욕실·주방 환풍기 소음·약한 흡입·역류 자가점검 <sub>2026-11-03 · ventilation-fan-noise-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `samsung-hood-filter-monthly-hand-wash` | 확실 | 공식 | 삼성 후드 공식 FAQ는 그리스(기름) 필터를 한 달에 한 번 중성 세제를 사용해 손으로 세척하라고 안내한다. | 삼성 / 주방 후드 / 전 라인(FAQ 기준) / 전 연식 / KR |
+| `samsung-hood-filter-neglect-noise-suction` | 확실 | 공식 | 삼성 후드 공식 FAQ는 필터를 제때 청소·교체하지 않으면 효율 저하, 소음 증가, 에너지 소모 증가, 기름때 축적, 화재 위험이 높아질 수 있다고 안내한다. | 삼성 / 주방 후드 / 전 라인(FAQ 기준) / 전 연식 / KR |
+| `samsung-hood-no-direct-water-on-installed-filter` | 확실 | 공식 | 삼성 후드 공식 FAQ는 필터가 후드에 장착된 상태에서 물을 직접 뿌려 청소하지 말라고 안내하며, 감전과 화재 위험을 이유로 든다. | 삼성 / 주방 후드 / FAQ 명시 모델(NK90B8770** 계열 문구) / FAQ 기준 연식 / KR |
+| `samsung-hood-dishwasher-low-temp-short-cycle` | 확실 | 공식 | 삼성 후드 공식 FAQ는 필터를 식기세척기로 씻을 경우 낮은 온도에서 짧게 세척하라고 안내한다. | 삼성 / 주방 후드 / FAQ 명시 모델 계열 / FAQ 기준 연식 / KR |
+| `samsung-hood-filter-discoloration-harmless` | 확실 | 공식 | 삼성 후드 공식 FAQ는 세척 중 필터가 변색될 수 있으나 성능에는 영향이 없다고 안내한다. | 삼성 / 주방 후드 / FAQ 기준 / 전 연식 / KR |
+| `samsung-hood-service-manual-first` | 확인실패 | 공식 | 삼성 후드 공식 FAQ는 모델별 세척 한계와 문제 해결은 사용설명서를 따르라고 하며, FAQ 자체에는 소음·흡입 문제의 단계별 해결 절차가 없다. | 삼성 / 주방 후드 / 전 라인 / 전 연식 / KR |
+| `seoul-mech-ventilation-prefilter-clean-1to2-months` | 확실 | 공식 | 서울시 환기설비 관리 점검 기준은 기계환기설비의 공기정화장치(프리필터)를 운전에 지장이 없는지 점검하고 청소하는 주기를 1~2개월로 제시한다. | 공통 / 기계환기설비(공동주택·건물 환기장치) / 프리필터 / 2026-04-08 수정본 기준 / KR(서울시 안내) |
+| `seoul-mech-ventilation-duct-inspection-3to5-years` | 확실 | 공식 | 서울시 환기설비 관리 점검 기준은 유로 또는 덕트의 누기 점검과 내부 청소 여부 판단 주기를 3~5년으로 제시한다. | 공통 / 기계환기설비 덕트 / 유로·덕트 내부 / 2026-04-08 수정본 기준 / KR(서울시 안내) |
+| `seoul-mech-ventilation-blower-parts-2yr` | 확실 | 공식 | 서울시 환기설비 관리 점검 기준은 송풍기 등 주요 부품의 풍량·내구성 저하를 점검해 교체 여부를 판단하는 주기를 2년으로 제시한다. | 공통 / 기계환기설비 / 송풍기·열교환소자 등 / 2026-04-08 수정본 기준 / KR(서울시 안내) |
+| `seoul-damper-not-covered-official` | 확인실패 | 공식 | 서울시 환기설비 관리 점검 페이지에는 역류방지댐퍼에 대한 점검 항목이나 주기가 없어, 댐퍼 점검 주기는 공식 기준으로 확인되지 않았다. | 공통 / 역류방지댐퍼 / 가정용 욕실·주방 배기 / 전 연식 / KR |
+| `wikitree-bath-fan-cover-only-no-disassembly` | 논쟁 🔶 | 후기 | 언론 기사(위키트리, 2026-10-12)는 욕실 환풍기는 사용자가 떼어낼 수 있는 커버만 분리해 씻고, 내부 본체는 분해하지 말라고 권한다. | 공통 / 욕실 환풍기 / 천장형 일반 가정용 / 전 연식 / KR |
+| `wikitree-bath-fan-power-off-breaker` | 논쟁 🔶 | 후기 | 언론 기사(위키트리, 2026-10-12)는 욕실 환풍기 청소 전 스위치를 끄고, 가능하면 분전반에서 욕실 차단기까지 내려 두라고 권한다. | 공통 / 욕실 환풍기 / 천장형 일반 가정용 / 전 연식 / KR |
+| `wikitree-bath-fan-no-cleaner-inside-ceiling` | 논쟁 🔶 | 후기 | 언론 기사(위키트리, 2026-10-12)는 천장 개구부 안쪽에 세정제를 뿌리지 말라고 권한다. 액체가 배선이나 모터에 닿을 수 있기 때문이다. | 공통 / 욕실 환풍기 / 천장형 일반 가정용 / 전 연식 / KR |
+| `wikitree-bath-fan-clean-interval-half-year` | 논쟁 🔶 | 후기 | 언론 기사(위키트리, 2026-10-12)는 욕실 환풍기 청소 주기의 최소선을 반년에 한 번으로 제시하고, 매일 샤워하는 집은 더 자주 하라고 권한다. | 공통 / 욕실 환풍기 / 천장형 일반 가정용 / 전 연식 / KR |
+| `wikitree-bath-fan-stop-and-call-pro-on-motor-noise` | 논쟁 🔶 | 후기 | 언론 기사(위키트리, 2026-10-12)는 모터가 갈리는 소리가 나거나 회전이 눈에 띄게 느려지거나 전기 손상이 보이면 청소를 멈추고 전문가 점검을 받으라고 권한다. 아파트는 관리사무소나 시설 업체에 연락한다. | 공통 / 욕실 환풍기 / 천장형 일반 가정용 / 전 연식 / KR |
+
+### 세탁 후 옷에 세제 찌꺼기가 남을 때 원인과 해결 (세제 과다·세탁물 과다·헹굼·세제함 막힘·통세척, 삼성/LG 공식 안내 기준) <sub>2026-11-03 · washer-detergent-residue-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `samsung-tub-organic-buildup-rinse-foam` | 확실 | 공식 | 삼성 안내에 따르면 세탁조에 유기물이 쌓이면 다음 세탁 때 물이 끈적여 거품이 많아지고 헹굼이 잘 안 될 수 있다. | 삼성 / 세탁기 / 드럼·통돌이(세제 투입장치 안내 기준) / 전체 / KR |
+| `samsung-rinse-failure-three-causes` | 확실 | 공식 | 삼성 안내 기준 헹굼 불량의 원인은 세제·유연제 과다 투입, 배수 불량, 세탁조 유기물 축적이며, 세제·유연제를 감지하는 센서 부위에 굳은 세제나 유연제가 쌓이면 투입 알림이 뜰 수 있다. | 삼성 / 세탁기 / 드럼·통돌이(세제 투입장치 안내 기준) / 전체 / KR |
+| `samsung-detergent-drawer-nozzle-clog` | 확실 | 공식 | 삼성 안내에 따르면 자동 세제함 뒤쪽 노즐(캡밸브)이 굳은 세제로 눌려 있으면 세제가 제대로 투입되지 않을 수 있고, 부품이 빠지면 같은 증상이 날 수 있다. | 삼성 / 세탁기 / 자동 세제 투입장치(세자투·자동세제함) 모델 / 전체 / KR |
+| `samsung-nozzle-clean-replace-procedure` | 확실 | 공식 | 삼성 안내 기준 자동 세제함 노즐은 세제함을 분리한 뒤 노즐을 반시계 방향으로 돌려 빼고 미지근한 물에 담가 씻어 다시 끼운다. 세척 후에도 같으면 교체하고, 부품이 빠졌다면 바로 교체한다. | 삼성 / 세탁기 / 자동 세제 투입장치 모델 / 전체 / KR |
+| `samsung-tub-clean-no-laundry-with-cleaner` | 확실 | 공식 | 삼성 통세척 코스에서는 세탁물을 넣지 않고, 권장 세척제를 세탁조 바닥에 넣은 뒤 뚜껑을 닫고 실행한다. 원문은 코스를 '무세제통세척'으로 표기하지만 세척제 투입을 안내한다. | 삼성 / 세탁기 / 통세척 코스가 있는 드럼·통돌이 / 2000년 이후 모델 / KR |
+| `samsung-tub-clean-bleach-dose` | 확실 | 공식 | 삼성 안내 기준 통세척 권장 세척제는 액체 염소계 표백제 150~300ml(1~2컵)이며, 용량별로 10~13kg 모델 300ml(분말 90g), 8.5kg 모델 250ml(75g), 6.0kg 모델 180ml(55g)를 참고한다. 시중 세탁조 전용 세척제도 제품 뒷면 사용법에 따라 쓸 수 있다고 안내한다. | 삼성 / 세탁기 / 통세척 코스가 있는 드럼·통돌이 / 2000년 이후 모델 / KR |
+| `samsung-bleach-acid-mix-hazard` | 확실 | 공식 | 삼성 안내에 따르면 염소계 표백제는 식초, 구연산, 산소계 표백제 등과 섞어 쓰면 안 되며, 섞으면 유해 가스가 발생할 수 있다. | 삼성 / 세탁기 / 통세척 코스 사용 시 / 전체 / KR |
+| `samsung-tub-clean-monthly-first-time-rinse` | 확실 | 공식 | 삼성은 세탁조를 월 1회 주기적으로 통세척하도록 권장한다. 처음 통세척하거나 제품을 오래 사용한 경우 불린 찌꺼기가 옷에 묻을 수 있으므로 통세척 후 헹굼을 추가한다. | 삼성 / 세탁기 / 드럼·통돌이 / 전체 / KR |
+| `samsung-as-reservation-route` | 확실 | 공식 | 삼성 안내 기준 자가 점검으로 해결되지 않으면 삼성 출장서비스를 예약한다. 사용법 설명이나 설치처럼 제품 고장이 아닌 경우 무상 보증기간 내라도 별도 요금이 부과된다. | 삼성 / 세탁기 / 드럼·통돌이 / 전체 / KR |
+| `samsung-disassembly-clean-consult` | 확실 | 공식 | 삼성 안내에 따르면 분해 세척이 필요한 경우 삼성케어플러스 대표번호 1588-4190로 상담과 신청을 할 수 있다. | 삼성 / 세탁기 / 드럼·통돌이 / 전체 / KR |
+| `lg-drum-drawer-weekly-clean-overfill` | 확실 | 공식 | LG 안내에 따르면 드럼 세제통은 약 1주일에 한 번 빼서 미지근한 물을 묻힌 칫솔로 닦고 다시 끼우는 것을 권장한다. 세제를 과하게 넣으면 물에 다 녹지 않아 물 공급이 막히고 세제통 앞으로 물이 넘칠 수 있다. | LG / 세탁기 / 드럼(상부 세제통·전면 당김 세제통) / 전체 / KR |
+| `lg-drum-drawer-7to9ml-residual-water-normal` | 확실 | 공식 | LG 안내에 따르면 세탁이 끝나고 세제통을 열면 보통 7~9ml 정도의 물이 남아 있으며, 이는 고장이 아니다. 설치 환경이나 사용 습관에 따라 더 고일 수 있다. | LG / 세탁기 / 드럼 / 전체 / KR |
+| `lg-trom-drawer-removal-and-check` | 확실 | 공식 | LG 트롬 드럼 모델은 PUSH 버튼을 누른 채 세제통을 빼 미지근한 물을 묻힌 칫솔로 닦고 다시 끼운 뒤, 섬유유연제를 넣고 헹굼 1회를 돌려 남지 않는지 확인한다. 트롬플러스 모델은 세제통 테두리를 위로 당겨 빼고 섬유유연제통 뚜껑을 분리해 칫솔로 청소한다. | LG / 세탁기 / 트롬·트롬플러스 드럼 / 원문 명시 모델 기준 / KR |
+| `lg-signature-f12wh-drawer-disassembly` | 확실 | 공식 | LG 시그니처 드럼 F12WH 모델은 세제통을 빼고 뚜껑을 왼쪽으로 돌려 분리하며, 뒷면 체크밸브도 왼쪽으로 돌려 분리해 세제통과 체크밸브를 씻은 뒤 역순으로 조립한다. | LG / 세탁기 / 드럼 시그니처 / 전체 / KR |
+| `lg-topload-drawer-monthly-clean` | 확실 | 공식 | LG 통돌이 세탁기 세제함은 약 한 달에 한 번 빼서 부드러운 솔이나 칫솔로 닦고 다시 끼운다. 세제가 남거나 굳으면 투입구가 막혀 세제가 나오지 않을 수 있다. | LG / 세탁기 / 통돌이 자동 세제함 / 전체 / KR |
+
+### 세탁기 문이 안 열릴 때, 억지로 열기 전에 확인할 것 (도어락 원리·원인·비상 배수·AS 기준) <sub>2026-11-03 · washer-door-wont-open-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `washer-residual-water-door-locked` | 확실 | 공식 | 드럼 안에 잔수가 남아 있으면 세탁기 문 잠금장치가 안전을 위해 문을 잠가 열리지 않는다. 잔수를 빼야 문이 풀린다 | LG / 세탁기 / 드럼세탁기 / 페이지 게시 기준(연식 미특정) / KR |
+| `samsung-residual-water-hose-drain` | 확실 | 공식 | 삼성 드럼세탁기는 전면 배수필터 커버 안의 잔수 제거 호스 마개를 열어 물을 뺄 수 있고, 잔수가 빠지면 문 잠금이 풀린다 | 삼성 / 세탁기 / 드럼(LED·간편 LCD 제어판 모델 포함) / 페이지 게시 기준(모델별 상이) / KR |
+| `lg-door-hot-wait-before-open` | 확실 | 공식 | LG 드럼세탁기는 세탁통 온도가 높으면 화상 예방을 위해 문을 잠근다. 문이 뜨거우면 2~3분 기다렸다가 연다 | LG / 세탁기 / 드럼세탁기(온수·스팀 세탁 사이클) / 페이지 게시 기준 / KR |
+| `samsung-hot-unlock-temperature` | 확실 | 공식 | 삼성 드럼세탁기는 세탁통 온도가 높으면 문이 잠기고, 건조 후에는 약 65℃ 이하, 세탁 후에는 약 55℃ 이하로 내려가야 문이 열린다. HOT 표시가 꺼질 때까지 기다리는 것이 기준이다 | 삼성 / 세탁기 / 드럼(고온 세탁·건조 사이클 후) / 페이지 게시 기준(모델별 상이) / KR |
+| `samsung-child-lock-or-remote-hold` | 확실 | 공식 | 삼성 세탁기는 어린이 보호 기능이 켜져 있거나, 스마트싱스 '원격제어 유지'가 켜져 있으면 세탁이 끝나도 문이 열리지 않을 수 있다. 어린이 보호 기능을 끄거나 스마트 컨트롤 버튼을 끄고 전원을 껐다 켠다 | 삼성 / 세탁기 / 드럼(어린이 보호·스마트싱스 연결 모델) / 페이지 게시 기준 / KR |
+| `lg-power-cut-keeps-lock` | 확실 | 공식 | LG 드럼세탁기는 세탁 중 정전되거나 전원 코드가 뽑히면 문 잠금이 유지된다. 전원을 다시 연결하고 켠 뒤 잠금이 풀릴 때까지 기다린다 | LG / 세탁기 / 드럼 시그니처 라인 / 페이지 게시 기준 / KR |
+| `samsung-pause-release-mid-cycle` | 확실 | 공식 | 삼성 전자동 세탁기는 세탁 도중 [동작/일시정지] 버튼으로 잠금을 잠시 풀어 세탁물을 추가할 수 있다. 다만 헹굼 중 급수 중에는 문이 열리지 않는다 | 삼성 / 세탁기 / 전자동 드럼(모델 미특정) / 페이지 게시 기준 / KR |
+| `drain-filter-clog-keeps-door-locked` | 확실 | 공식 | 배수필터나 배수호스가 막히면 물이 빠지지 않아 문이 잠긴 채 남는다. 삼성은 배수필터를 주 1회 이상 청소하도록 안내한다 | 삼성 / 세탁기 / 드럼 / 페이지 게시 기준 / KR |
+| `lg-drain-filter-clog-keeps-door-locked` | 확실 | 공식 | LG 드럼세탁기는 배수필터의 이물질이 배수를 막으면 잔수가 남아 문이 잠긴 상태가 유지될 수 있다 | LG / 세탁기 / 프런트로드(표준 모델) / 페이지 게시 기준 / US |
+| `force-open-damages-handle` | 확실 | 공식 | 문을 억지로 당기면 도어 손잡이·잠금 부품이 깨질 수 있다. 삼성 공식 안내와 LG 공식 안내 모두 강제 개방을 경고한다 | 삼성 / 세탁기 / 도어 잠금 기능이 있는 모델 전반 / 2020-12-10 게시 기준 / KR |
+| `lg-handle-technique-after-unplug` | 확실 | 공식 | LG 드럼세탁기에서 손잡이를 잘못 당겨 걸렸다면, 전원 플러그를 뽑고 1~2분 기다린 뒤 손잡이를 세탁기 안쪽으로 살짝 밀었다가 앞으로 당겨 연다 | LG / 세탁기 / 드럼세탁기 / 페이지 게시 기준 / KR |
+| `us-release-wait-after-cycle` | 확실 | 공식 | 세탁이 끝난 뒤에도 잠금 해제까지 시간이 걸린다. 미국 삼성 지원 페이지는 모델에 따라 일시정지 후 약 1분, 상부형에서 정전 중단 후 최대 약 5분을 안내한다 | 삼성 / 세탁기 / 프런트·톱 로드(모델별 상이) / 페이지 게시 기준 / US |
+| `samsung-as-fee-if-not-fault` | 확실 | 공식 | 삼성 세탁기는 사용 방법이나 설치 문제처럼 제품 결함이 아닌 경우 보증 기간 안이라도 출장비가 청구된다. 해결이 안 되면 출장서비스 예약이나 1588-3366으로 접수한다 | 삼성 / 세탁기 / 드럼·통돌이 전 라인 / 보증 기간 기준 / KR |
+| `lg-as-fee-out-of-warranty` | 확실 | 공식 | LG 드럼세탁기는 보증 기간이 지난 제품이면 점검 비용이 청구될 수 있다. 세탁이 끝난 뒤에도 문이 열리지 않으면 내부 잠금장치 고장일 수 있으니 억지로 열지 말고 상담 예약이나 출장 서비스를 이용한다 | LG / 세탁기 / 드럼세탁기 / 보증 기간 기준 / KR |
+| `samsung-door-connector-check-after-normal-cycle` | 확실 | 공식 | 삼성 세탁기는 정상 종료 후에도 문이 열리지 않으면 도어 연결 부품 점검이 필요할 수 있다. 이때는 출장서비스를 예약한다 | 삼성 / 세탁기 / 도어 잠금 기능이 있는 모델 / 2020-12-10 게시 기준 / KR |
+| `samsung-emergency-release-cable-unverified` | 확인실패 | 공식 | 삼성 세탁기 하단의 비상 해제 케이블·레버로 문을 여는 방법은 삼성 공식 국내 페이지에서 확인하지 못했다. 잔수 호스 배수가 공식 경로이며, 비상 해제 장치의 유무와 위치는 모델별 설명서로 확인해야 한다 | 삼성 / 세탁기 / 드럼 / 페이지 게시 기준 / KR |
+
+### 세탁기 급수가 안 될 때 수도꼭지부터 순서대로 확인 (급수 불량 원인·점검 순서·동파 해동·AS 기준) <sub>2026-11-03 · washer-no-water-supply-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `washer-supply-faucet-check-first` | 확실 | 공식 | 세탁기에 물이 안 들어올 때는 먼저 욕실이나 싱크대에서 물이 나오는지(단수 여부)를 보고, 세탁기 급수부와 연결된 수도꼭지가 잠겨 있지 않은지 확인해야 한다. 다용도 멀티 수도꼭지를 쓰는 경우에는 세탁기 쪽 밸브가 열려 있는지 특히 확인한다 | 삼성 / 세탁기 / 드럼·통돌이 공통 / 전 연식 / KR |
+| `washer-supply-hose-kink-after-move` | 확실 | 공식 | 급수호스가 꺾이거나 눌리면 물 흐름이 막혀 급수가 안 될 수 있다. 이사나 이동 후 설치했을 때, 그리고 세탁·탈수 중 진동으로 세탁기가 움직였을 때 특히 자주 생긴다. 꺾인 호스는 펴서 물이 잘 흐르게 한다 | 삼성 / 세탁기 / 드럼·통돌이 공통 / 전 연식 / KR |
+| `washer-supply-hot-cold-swap` | 확실 | 공식 | 냉수 호스는 냉수 밸브에, 온수 호스는 온수 밸브에 연결해야 한다. 좌우가 바뀌어 연결되면 마지막 헹굼 때 온수가 들어가 에러가 나거나 옷감이 손상될 수 있다. 수도꼭지 색이 같은 건물도 있으므로 실제로 어느 쪽이 냉수인지 확인한다 | 삼성 / 세탁기 / 드럼·통돌이 공통 / 전 연식 / KR |
+| `washer-supply-strainer-cleaning-steps` | 확실 | 공식 | 급수밸브 안의 거름망이 이물질·침전물·물때로 막히면 급수가 줄거나 안 될 수 있다. 청소 순서는 전원 코드를 뽑고, 수도를 잠근 뒤, 세탁기 뒷면의 급수호스 연결부를 풀고, 거름망을 펜치나 롱노즈 등으로 빼서 흐르는 물에 칫솔로 닦은 다음 다시 끼우고 호스를 단단히 조이는 것이다. 냉수와 온수 양쪽 모두 청소한다 | 삼성 / 세탁기 / 드럼·통돌이 공통 / 전 연식 / KR |
+| `washer-supply-detection-delay-normal` | 확실 | 공식 | 급수 동작을 시작하면 무게를 감지하는 데 수초에서 최대 2분이 걸릴 수 있고, 이 동안 세탁조가 회전하는 것은 정상이다. 바로 에러로 판단하지 말고 잠시 기다린다 | 삼성 / 세탁기 / 드럼·통돌이 공통 / 전 연식 / KR |
+| `samsung-4c-4e-meaning` | 확실 | 공식 | 삼성 세탁기 표시창의 4C 또는 4E는 정해진 시간 안에 필요한 만큼 물이 채워지지 않았다는 급수 에러다. 2015년 이후 신모델은 E(Error) 표기가 C(Check)로 바뀌어 같은 원인이 4C로 나타나며, 기존 모델의 4E가 신모델에서는 4C로 보인다 | 삼성 / 세탁기 / 드럼·통돌이 / 2015년 이후 신모델은 4C, 이전 모델은 4E / KR |
+| `lg-ie-meaning` | 확실 | 공식 | LG 세탁기 표시창의 IE는 급수가 안 된다는 에러다. 원인은 수도꼭지 잠김이나 단수, 급수호스 연결 불량 또는 냉수·온수 방향 뒤바뀜, 호스 꺾임이나 눌림, 급수호스 필터 이물질, 추위로 인한 얼음, 배수호스 고정 홀더 분해 등이다 | LG / 세탁기 / 드럼·통돌이 / 전 연식(페이지 기준) / KR |
+| `lg-ie-drain-holder-siphon` | 확실 | 공식 | LG 세탁기의 후면 배수호스 고정 홀더가 분해되어 있으면 배수호스 높이가 낮아져 물이 계속 빠져나가고, 그 결과 급수가 진행돼도 물이 채워지지 않아 IE가 발생할 수 있다. 배수호스 끝이 물에 잠기면 사이펀 현상이 생길 수 있으므로 물에 잠기지 않도록 설치한다 | LG / 세탁기 / 후면 배수호스 고정 홀더가 있는 드럼·통돌이 / 전 연식(페이지 기준) / KR |
+| `freeze-hose-thaw-temperature` | 논쟁 🔶 | 공식 | 겨울에 급수가 안 되면 LG 공식 안내는 수도꼭지와 호스를 따뜻한 물로 녹이고, 호스는 50도 이하의 물을 쓰라고 적는다. 삼성 공식 안내는 수도 밸브를 50~60도 온수에 적신 수건으로 감싸 녹이고, 분리한 호스는 따뜻한 물에 담가 녹이라고 적는다 | 공통 / 세탁기 / 드럼·통돌이 / 전 연식 / KR |
+| `samsung-tub-thaw-procedure` | 확실 | 공식 | 삼성 세탁기가 얼어 배수부에 문제가 생기면 5C 또는 5E가 뜬다. 이때는 배수 호스를 분리해 50~60도 온수에 담가 녹이고, 세탁조 안이 얼었다면 50~60도 온수를 넣고 약 1시간 자연해동한다. 잔수 제거 호스가 얼었으면 온수나 헤어드라이어의 따뜻한 바람으로 녹인다 | 삼성 / 세탁기 / 드럼·통돌이 / 전 연식 / KR |
+| `washer-freeze-check-drain-cap` | 논쟁 🔶 | 후기 | 세탁기가 얼었는지 간단히 확인하려면 서비스 커버를 열고 잔수 제거 호스의 마개를 열어 물이 나오는지 본다. 물이 나오지 않으면 배수부가 언 것이다. 전원을 켜고 헹굼을 눌렀는데도 물이 나오지 않으면 급수부가 언 것으로 본다 | LG / 세탁기 / 드럼·통돌이(서비스 커버 구조) / 2013년 보도 기준 / KR |
+| `service-fee-blocked-supply-lg` | 확실 | 공식 | LG 세탁기의 IE 에러가 단수나 수도꼭지 잠김이 원인이면 제품 불량이 아니므로, 무상 품질 보증기간과 관계없이 유상 서비스로 진행된다 | LG / 세탁기 / 드럼·통돌이 / 전 연식 / KR |
+| `service-fee-samsung-warranty` | 확실 | 공식 | 삼성 세탁기는 무상 보증기간 안이라도 제품 고장이 아닌 사용법 설명이나 설치 요청은 별도 요금이 부과된다. 조치 후에도 같은 에러가 나는 경우에 출장서비스를 예약하는 것이 공식 안내 순서다 | 삼성 / 세탁기 / 드럼·통돌이 / 전 연식 / KR |
+| `contact-samsung-service` | 확실 | 공식 | 삼성 세탁기 급수 조치 후에도 같은 에러가 나면 삼성전자서비스 홈페이지의 출장서비스 예약을 이용할 수 있으며, 상담은 대표전화 1588-3366(발신자 부담)이나 AI CS Bot 상담으로 가능하다 | 삼성 / 세탁기 / 드럼·통돌이 / 전 연식 / KR |
+| `contact-lg-service` | 확실 | 공식 | LG 세탁기 상담은 고객센터 1544-7777(평일 09:00~18:00, 주말·공휴일 휴무)으로 가능하며, 1:1 문의·전화·원격지원·영상통화와 출장 서비스 예약 경로가 있다 | LG / 세탁기 / 드럼·통돌이 / 전 연식 / KR |
+
+### 세탁기 탈수 시 쿵쿵 진동·소음 점검 순서 (드럼·통돌이, 사용자 조치, AS 신호) <sub>2026-11-03 · washer-vibration-noise-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `samsung-spin-unbalance-cause` | 확실 | 공식 | 삼성 세탁기 안내에 따르면 수평이 맞지 않거나 세탁물이 한쪽으로 뭉치면 탈수 중 언밸런스(불균형)가 생겨 진동과 소음이 난다. 이때 탈수 시간이 길어지고, 재급수·헹굼이 다시 진행되거나 탈수 중 멈추기도 한다 | 삼성 / 세탁기 / 드럼·통돌이 공통 안내 / 전 연식 / KR |
+| `samsung-tongdol-heavy-and-waterproof-exclude` | 확실 | 공식 | 삼성 전자동(통돌이) 세탁기 안내는 두꺼운 옷·이불·발 매트는 탈수에 넣지 말고, 스키복·기저귀·커버·커튼 같은 방수 소재는 정상 동작을 방해해 탈수 시간을 늘리거나 탈수를 약하게 만든다고 한다 | 삼성 / 세탁기 / 전자동(통돌이) / 전 연식 / KR |
+| `samsung-spin-redistribute-steps` | 확실 | 공식 | 소음이 나면 동작/일시정지 버튼으로 탈수를 멈추고, 빨래를 고르게 펴서 다시 돌린다. 이불은 김밥처럼 둘둘 말아 넣고, 빨래가 적으면 비슷한 세탁물을 한두 개 더 넣는다 | 삼성 / 세탁기 / 드럼·통돌이 공통 안내 / 전 연식 / KR |
+| `samsung-level-check-method` | 확실 | 공식 | 삼성 안내의 수평 확인법은 세탁기 모서리 4면을 대각선 방향으로 눌러 좌우로 움직이면 수평이 맞지 않은 것으로 본다. 수평계가 없는 모델은 세탁조 외곽선과 투입구 내측선 사이의 좌우 거리가 같도록 수평 조절 다리를 돌린다 | 삼성 / 세탁기 / 수평계 없는 모델(아가사랑 세탁기·일부 전자동 등) / 전 연식 / KR |
+| `samsung-level-nut-and-pad` | 확실 | 공식 | 삼성 전자동 안내에 따르면 수평 조절 다리를 맞춘 뒤 조절 너트를 다시 단단히 조여야 하며, 다리 조절로 해결되지 않으면 서비스센터에서 높이 조정 받침판(고무)을 구해 다리 밑에 넣는다 | 삼성 / 세탁기 / 전자동(통돌이) / 전 연식 / KR |
+| `samsung-empty-drum-bearing-damper` | 확실 | 공식 | 삼성 안내에 따르면 빈 통으로 탈수해도 평소와 다르게 진동·소음이 심하면 베어링·댐퍼 등 제품 점검이 필요할 수 있다. 다만 베어링·댐퍼의 증상 기준과 점검 절차는 공개 안내에 나와 있지 않다 | 삼성 / 세탁기 / 세탁기 전 라인(페이지 명칭 기준) / 전 연식 / KR |
+| `samsung-transport-bolt-unverified` | 확인실패 | 공식 | 삼성 세탁기 공식 자가점검 페이지(솔루션 41662, 40225, 28555)에서는 운송볼트 제거 안내를 확인하지 못했다. 삼성 세탁기의 운송볼트 유무와 제거 절차는 이번 조사에서 확정하지 못했다 | 삼성 / 세탁기 / 드럼 / 전 연식 / KR |
+| `samsung-service-visit-fee` | 확실 | 공식 | 삼성 안내에 따르면 자가 조치로 해결되지 않으면 전문 엔지니어 방문 점검이 필요하므로 출장서비스를 예약한다. 사용법 설명이나 설치 등 제품 고장이 아닌 경우에는 무상 보증기간 내라도 별도 요금이 부과된다 | 삼성 / 세탁기 / 세탁기 전 라인 / 전 연식 / KR |
+| `lg-washer-thump-check-order` | 확실 | 공식 | LG 일반세탁기 안내는 탈수 초반의 '텅텅·쿵' 소리를 빨래가 한쪽으로 치우친 신호로 본다. 동작/일시정지로 멈춘 뒤 빨래를 펴서 다시 탈수하고, 이불은 이불코스로 한 장씩 세탁하며, 니트류는 2벌 이상, 패딩은 물에 완전히 잠기게 세탁하라고 한다. 세탁볼은 제조사 권장 개수만 쓰고, 세탁망은 양의 2/3 정도만 채우라고 안내한다 | LG / 세탁기 / 일반세탁기(LG 페이지 명칭 기준) / 전 연식 / KR |
+| `lg-washer-noise-symptom-map` | 확실 | 공식 | LG 일반세탁기 안내는 탈수 소리를 원인별로 나눈다. '덜덜덜'은 급수·배수 호스, 전원선, 주변 선반이나 수납장이 본체에 닿거나 수평 불량에서, '타다닥·달그락'은 지퍼·단추·동전이 통 구멍을 지나며 부딪히는 소리이고, 통 구멍에 이물질이 걸린 경우도 같다 | LG / 세탁기 / 일반세탁기(LG 페이지 명칭 기준) / 전 연식 / KR |
+| `lg-washer-empty-drum-test` | 확실 | 공식 | LG 일반세탁기 안내에 따르면 빈 통으로 탈수했을 때 소음이 없으면 제품은 정상이다. 빈 통에서도 소음이 나면 세탁물·설치 환경보다 제품 쪽 점검이 필요하다는 뜻이다 | LG / 세탁기 / 일반세탁기(LG 페이지 명칭 기준) / 전 연식 / KR |
+| `lg-washer-service-threshold` | 확실 | 공식 | LG 일반세탁기 안내에 따르면 소음이 지나치게 크거나, 모터 기어 소음이 커서 회전하지 않고 에러가 나면 제품 점검이 필요하다. 점검은 LG전자 고객센터(1544-7777, 평일 09:00~18:00)로 받으라고 안내한다 | LG / 세탁기 / 일반세탁기(LG 페이지 명칭 기준) / 전 연식 / KR |
+| `lg-drum-foreign-object-and-filter` | 확실 | 공식 | LG 드럼세탁기 안내는 탈수 소음의 원인으로 세탁통 안의 이물질과 배수 필터를 든다. 세탁통 안의 동전·머리핀·장신구를 꺼내고, 배수 전 '우웅' 소리가 평소보다 심하면 배수 필터를 청소하라고 한다 | LG / 세탁기 / 드럼 / 전 연식 / KR |
+| `lg-drum-unsuitable-laundry-and-mesh` | 확실 | 공식 | LG 드럼세탁기 안내는 발 닦이용 발판, 카펫, 전기담요, 고무 매트, 방수 소재 천, 인형을 탈수 전에 꺼내라고 한다. 세탁망은 2/3 정도만 채우고, 단독 세탁을 피해 2~3개만 다른 의류와 섞어 돌리라고 안내한다 | LG / 세탁기 / 드럼 / 전 연식 / KR |
+| `lg-drum-transport-bolt-removal` | 확실 | 공식 | LG 드럼세탁기 안내에 따르면 설치할 때 뒷면의 운송용 고정볼트를 스패너로 모두 빼고 제공된 캡으로 구멍을 막아야 한다. 빼지 않으면 세탁통이 고정된 채 돌아 과도한 진동과 소음이 난다. 제거 여부는 도어를 열고 드럼을 손으로 앞뒤로 흔들어 움직이는지로 확인하며, 뺀 볼트는 이사 때 다시 쓰도록 보관한다. 빼지 못하면 설치 기사에게 요청하라고 한다 | LG / 세탁기 / 드럼(설치 직후·이사 후 재설치 제품) / 전 연식(설치 시점 기준) / KR |
+
+### 겨울 오기 전 차량 점검 — 배터리·부동액·타이어·워셔액·와이퍼 <sub>2026-11-03 · winter-car-prep-checklist</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `coolant-mix-temperature-table` | 확실 | 공식 | 현대 공식 오너스 매뉴얼은 대기온도별 부동액 비율을 -10℃에서 30%, -15℃에서 35%, -20℃에서 40%, -25℃에서 45%, -30℃에서 50%로 제시한다. 같은 페이지는 동절기 이상한파 대비로 45% 혼합을 권장한다. | 현대 / 자동차 / QV 매뉴얼 페이지 기준(차종별 확인 필요) / 2026 매뉴얼 / KR |
+| `coolant-freeze-point-rule` | 확실 | 공식 | 현대 공식 오너스 매뉴얼은 부동액의 목표 동결온도를 지역 최저 기온에서 5℃를 뺀 값으로 본다. 예를 들어 지역 최저 대기온이 -20℃라면 동결온도는 -25℃로 잡는다. | 현대 / 자동차 / QV 매뉴얼 페이지 기준 / 2026 매뉴얼 / KR |
+| `coolant-concentration-by-engine-type` | 확실 | 공식 | 현대 공식 오너스 매뉴얼은 엔진 종류별 부동액 농도 범위를 디젤 45~50%, CNG 엔진 50~60%로 명시한다. | 현대 / 자동차 / 디젤·CNG 엔진 (가솔린은 위 온도별 표 적용) / 2026 매뉴얼 / KR |
+| `coolant-concentration-50-60-conflict` | 논쟁 🔶 | 공식 | 현대 공식 오너스 매뉴얼 본문에는 '보충 및 교환 시 부동액 농도가 50~60%가 되도록 유지하라'는 문장이 있는데, 같은 페이지의 대기온도별 표(-10℃ 30%, -30℃ 50%)와 범위가 맞지 않는다. | 현대 / 자동차 / QV 매뉴얼 페이지 기준(차종 확인 필요) / 2026 매뉴얼 / KR |
+| `coolant-interval-not-in-manual` | 확인실패 | 공식 | 확인한 현대 공식 매뉴얼 페이지에는 부동액 교환 주기(기간·주행거리)가 기재되어 있지 않다. 블로그 등에 나오는 '2년·4만km' 기준은 공식 근거를 확인하지 못했다. | 현대 / 자동차 / QV 매뉴얼 페이지 기준 / 2026 매뉴얼 / KR |
+| `coolant-check-topup-weakens` | 논쟁 🔶 | 후기 | 신차에는 대개 사계절용 부동액이 들어 있지만, 장기간 사용하거나 오염되거나 물을 보충하면 동결 방지 성능이 떨어질 수 있으므로 점검·보충·교체가 필요하다. | 공통 / 자동차 / 일반 승용차 / 전 연식(2013년 게시글 기준) / KR |
+| `battery-capacity-drops-cold` | 확실 | 공식 | 미국 에너지부(DOE) 안내에 따르면 추운 날씨에는 배터리 성능이 떨어져 발전기(알터네이터)가 배터리를 충전하기 어려워진다. | 공통 / 자동차 / 내연기관 차량(하이브리드·전기차는 회생제동에도 영향) / 전 연식 / 글로벌(미국 DOE 안내) |
+| `battery-internal-resistance-cold` | 확실 🔶 | 후기 | 기온이 낮아지면 배터리 내부저항이 커져 용량이 줄어든다. | 공통 / 자동차 / 납축전지 일반 / 전 연식 / KR |
+| `battery-restart-rest-procedure` | 논쟁 🔶 | 후기 | 추운 날 시동이 안 걸리면 약 10초 크랭킹 후 3~5분 쉬었다가 다시 시도하라는 절차가 연구소 게시글에 있다. | 공통 / 자동차 / 내연기관 차량 일반 / 전 연식 / KR |
+| `battery-weekly-start-long-park` | 논쟁 🔶 | 후기 | 오래 주차해 두는 차량은 주 1회 정도 시동을 걸어 배터리 충전 상태를 유지하라는 권고가 연구소 게시글에 있다. | 공통 / 자동차 / 장기 주차 차량 / 전 연식 / KR |
+| `tire-pressure-drop-10f` | 확실 🔶 | 후기 | 타이어 공기압은 기온이 10°F(약 5.6℃) 떨어질 때마다 약 1psi씩 낮아진다. | 공통 / 자동차 / 승용차 타이어 일반 / 전 연식 / 미국 단위 기준(국내는 kPa 환산) |
+| `tire-cold-check-3h` | 확실 🔶 | 후기 | 타이어 공기압은 차를 최소 3시간 이상 몰지 않은 콜드(차가운) 상태에서 재야 정확하다. | 공통 / 자동차 / 승용차 타이어 일반 / 전 연식 / 미국 기준 |
+| `tire-pressure-cold-weather-doe` | 확실 | 공식 | 미국 에너지부(DOE) 안내는 추운 날씨에 타이어 공기압이 떨어져 구름 저항이 커진다고 설명하며, 공기압을 정기적으로 확인하라고 권한다. | 공통 / 자동차 / 승용차 타이어 일반 / 전 연식 / 글로벌(미국 DOE 안내) |
+| `winter-tread-1_6mm-unverified` | 확인실패 🔶 | 후기 | 마모 한계 1.6mm 미만 타이어는 겨울철에 쓰지 말라는 권고가 언론·정비 자료에 보이지만, 확인한 공식 문서와 연구소 게시글에서는 그 수치를 찾지 못했다. | 공통 / 자동차 / 타이어 마모 점검 / 전 연식 / KR |
+| `washer-fluid-winter-rating-check` | 논쟁 🔶 | 후기 | 시중 워셔액 대부분은 겨울용으로 표기되어 있지만, 일부 제품은 동결 방지 성능이 떨어지거나 없으므로 제품 표기를 확인해야 한다. | 공통 / 자동차 / 워셔액 일반 / 전 연식 / KR |
+| `washer-coolant-follow-manual-spec` | 논쟁 🔶 | 후기 | 2026년 2월 국토교통부·경찰청 겨울철 안전운전 안내문은 워셔액과 부동액을 차량 설명서의 규격과 농도에 따르고, 임의로 혼합 비율을 정하지 말라고 안내한다고 언론이 전했다. | 공통 / 자동차 / 워셔액·부동액 일반 / 2026년 2월 안내 기준 / KR |
+| `pre-departure-checklist-2026` | 논쟁 🔶 | 후기 | 2026년 2월 국토교통부·경찰청 겨울철 안전운전 안내문은 출발 전 점검 항목으로 타이어 공기압·마모, 배터리와 케이블, 냉각수·부동액과 워셔액, 앞뒤 유리의 눈·얼음 제거 및 와이퍼 동결 여부, 전조등·제동등·브레이크, 블랙박스 작동을 든다고 언론이 전했다. | 공통 / 자동차 / 출발 전 점검 체크리스트 / 2026년 2월 안내 기준 / KR |
+| `cold-idle-limit-30s` | 확실 | 공식 | 미국 에너지부(DOE) 안내는 공회전을 줄이라고 권하며, 대부분의 제조사가 시동 후 약 30초 뒤에는 부드럽게 출발하도록 권장한다고 적는다. | 공통 / 자동차 / 내연기관 차량 일반 / 전 연식 / 글로벌(미국 DOE 안내) |
+
+### 겨울 난방비 절감 — 보일러 설정부터 점검까지 (공식 근거 중심) <sub>2026-11-03 · winter-heating-cost-guide</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `heating-indoor-target-18-20` | 확실 | 공식 | 겨울철 실내 적정 난방온도는 18~20℃이며, 과도한 난방은 에너지 낭비이자 건강에도 나쁜 영향을 줄 수 있다는 것이 난방설비 운전관리 가이드라인의 권고다. | 공통 / 가정 난방 / 개별 난방·지역 난방 공통 / 미명시 / KR |
+| `heating-1c-lower-7-percent` | 확실 | 공식 | 난방 설정온도를 1℃ 낮추면 에너지 소비량이 약 7% 줄어든다는 것이 한국에너지공단 안내다. | 공통 / 가정 난방 / 개별 난방 설정온도 / 미명시 / KR |
+| `heating-away-mode-insulated-home` | 확실 | 공식 | 단열 성능이 좋은 집은 외출할 때 보일러를 끄지 말고 '외출 모드'로 두는 것이 효율적이다. 보일러를 완전히 끄면 다시 데울 때 더 많은 에너지가 든다는 것이 공단 설명이다. | 공통 / 가정 난방 / 외출모드 탑재 개별 보일러 (가스·기름) / 미명시 / KR |
+| `heating-district-away-lower-2-3c` | 확실 | 공식 | 지역난방을 쓰는 가구는 외출할 때 현재 온도보다 2~3℃ 낮게 설정하거나 외출 모드를 쓰라는 것이 가이드라인의 권고다. | 공통 / 가정 난방 / 지역난방 / 미명시 / KR |
+| `away-mode-exact-temp-unverified` | 확인실패 | 공식 | 외출 모드에서 보일러를 몇 ℃에 맞춰야 하는지 수치는 공단 자료에서 확인하지 못했다. 외출모드 설정값은 기종마다 다르다. | 공통 / 가정 난방 / 외출모드 설정값 / 미명시 / KR |
+| `hot-water-temp-55c-for-heating` | 확실 | 공식 | 온수 온도로 난방을 조절하는 방식이라면 온수 설정을 55℃ 이상으로 해서 가동해야 겨울철 실내 적정온도를 유지할 수 있다는 것이 공단 안내다. | 공통 / 가정 난방 / 온수(난방수) 온도 조절 방식 보일러 / 미명시 / KR |
+| `boiler-annual-service-inspection` | 확실 | 공식 | 보일러는 연 1회 이상 제조사 서비스센터에 점검을 의뢰하라는 것이 가이드라인의 권고다. | 공통 / 가정 난방 / 가스·기름 개별 보일러 / 미명시 / KR |
+| `boiler-outer-clean-unplug-first` | 확실 | 공식 | 보일러 외부 청소는 전원 플러그를 뽑고 1시간 뒤에 마른 걸레로 하라는 것이 가이드라인의 안내다. | 공통 / 가정 난방 / 가스·기름 개별 보일러 외부 / 미명시 / KR |
+| `exposed-pipe-insulation` | 확실 | 공식 | 보일러와 연결된 노출 배관은 반드시 보온재로 감싸라는 것이 가이드라인의 권고다. | 공통 / 가정 난방 / 보일러 연결 노출 배관 / 미명시 / KR |
+| `pipe-scale-removal-5pct-efficiency` | 논쟁 🔶 | 공식 | 노후 배관의 스케일(물때)을 전문업체에 의뢰해 제거하면 난방 효율이 5% 이상 개선될 수 있다는 것이 공단 안내다. | 공통 / 가정 난방 / 노후 배관 (스케일 발생 가구) / 미명시 / KR |
+| `window-airbubble-curtain` | 확실 | 공식 | 창문에 에어캡(뽁뽁이)을 붙이고 두꺼운 커튼을 치면 창문으로 빠지는 열을 줄일 수 있다는 것이 공단 안내다. | 공통 / 가정 단열 / 창문 (외벽·지붕 제외) / 미명시 / KR |
+| `ventilation-short-frequent` | 확실 | 공식 | 환기는 한 번에 5~10분 정도로 짧게, 자주 하라는 것이 공단 안내다. | 공통 / 가정 환기 / 겨울철 실내 환기 / 미명시 / KR |
+| `unused-room-close-door-valve` | 확실 | 공식 | 사용하지 않는 방은 외출 모드로 두거나 난방 밸브를 잠그고 문을 닫아 열손실을 막으라는 것이 공단 안내다. | 공통 / 가정 난방 / 사용하지 않는 방 (분배기 밸브 방식) / 미명시 / KR |
+| `rinnai-freeze-protection-needs-power` | 확실 | 공식 | 린나이 대기차단형 보일러에서 동결 방지 운전 기능은 전원 플러그가 콘센트에 꽂혀 있어야 작동하므로, 장기 외출에도 플러그를 뽑지 않는다. | 린나이 / 가스보일러 / 대기차단형 (RC620 계열 설명서 기준) / 2021~현행 설명서 기준 / KR |
+| `rinnai-long-away-valves-open` | 논쟁 🔶 | 공식 | 린나이 설명서는 겨울철 2~3일 이상 집을 비워 난방을 하지 않을 때도 각방 밸브와 가스 중간 밸브를 잠그지 말고 열어 두라고 안내한다. | 린나이 / 가스보일러 / 대기차단형 여러 기종 / 2019~현행 설명서 기준 / KR |
+
+### 겨울 타이어와 스노우체인 — 언제 무엇을 쓰면 되나 (기준·국내 제도·장착 요령) <sub>2026-11-03 · winter-tire-snow-chain-guide</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `winter-tire-7c-hyundai-manual` | 확실 | 공식 | 현대 공식 온라인 오너스 매뉴얼의 '겨울철 운전' 페이지는 기온이 7℃ 이하이거나 눈길·빙판길을 주행할 때 스노 타이어 또는 규격에 맞는 타이어 체인을 장착하고, 급출발·급가속·급제동을 피하라고 안내한다. | 현대 / 자동차 / NE1 매뉴얼 페이지 기준(차종명은 페이지에 명시되지 않음) / 2026 매뉴얼 / KR |
+| `winter-tire-7c-industry-standard` | 논쟁 🔶 | 후기 | 국내 타이어 업계에서는 기온 7℃를 겨울용 타이어 장착 기준으로 쓰며, 한국타이어앤테크놀로지와 대한타이어산업협회가 이 기준을 삼고 있다고 언론이 보도했다. | 공통 / 자동차 / 승용차 타이어 일반 / 2026년 11월 보도 기준 / KR |
+| `kotsa-november-7c-guidance` | 논쟁 🔶 | 후기 | 언론 보도에 따르면 한국교통안전공단은 11월 들어 아침 기온이 7℃ 아래로 떨어지는 시기를 겨울철 타이어 교체와 점검 권고 기간으로 보고 있다. | 공통 / 자동차 / 승용차 타이어 일반 / 2026년 11월 기준 / KR |
+| `kr-no-winter-tire-mandate` | 논쟁 🔶 | 후기 | 국내 도로교통법에는 겨울용 타이어 장착을 의무화하는 조항이 없다고 언론이 보도했다. | 공통 / 자동차 / 겨울용 타이어 장착 의무 / 2026년 11월 기준 / KR |
+| `winter-vs-allseason-braking-2024-test` | 논쟁 🔶 | 실측 | 2024년 한국타이어 비교 시험에서 시속 40km 눈길 급제동 시 겨울용 타이어는 18.49m에, 사계절 타이어는 37.84m에 멈춘 것으로 보도됐다. | 한국타이어 / 자동차 타이어 / 겨울용 vs 사계절용 (제품 종류 미명시) / 2024년 시험 / KR |
+| `three-peak-mark-3pmsf-meaning` | 확실 🔶 | 후기 | 눈 결정과 산 모양이 그려진 3PMSF 표식은 다져진 눈길에서 실차 견인력 시험을 통과한 타이어에만 붙일 수 있다고 보도됐다. 이 표식이 있어야 눈길 성능을 인정받은 것이다. | 공통 / 자동차 타이어 / 3PMSF 표식 타이어 / 전 연식 / 글로벌(유럽 규정 기준) |
+| `chain-priority-over-snow-tire-radial` | 확실 | 공식 | 현대 매뉴얼은 체인보다 스노 타이어 장착을 우선하라고 하며, 래디얼 타이어는 옆면이 얇아 금속 체인에 손상되기 쉽다고 안내한다. | 현대 / 자동차 / 래디얼 타이어 차량 일반(NE1 페이지 기준) / 2026 매뉴얼 / KR |
+| `chain-model-size-spec` | 확실 | 공식 | 현대 NE1 매뉴얼 페이지는 순정 체인 규격을 19인치는 두께 12mm 이하 와이어 체인, 20인치는 오토삭 직물형 체인으로 명시하며, 규격에 맞지 않는 체인이나 두께 12mm 초과 와이어 체인, 순정이 아닌 체인 사용을 제한한다. | 현대 / 자동차 / NE1 페이지의 19·20인치 후륜구동 사양 (차종명 미명시) / 2026 매뉴얼 / KR |
+| `chain-drive-wheel-only` | 확실 | 공식 | 현대 NE1 매뉴얼 페이지는 후륜구동 차량에서는 타이어 체인을 반드시 뒷바퀴에 장착하라고 안내한다. | 현대 / 자동차 / 후륜구동 차량(NE1 페이지 기준) / 2026 매뉴얼 / KR |
+| `chain-speed-limit-manual-30kmh` | 확실 | 공식 | 현대 NE1 매뉴얼 페이지는 체인 장착 상태에서 제작사가 권장하는 규정 속도 또는 30km/h 이하로만 주행하라고 안내한다. | 현대 / 자동차 / NE1 페이지 기준 타이어 체인 장착 차량 / 2026 매뉴얼 / KR |
+| `chain-post-install-recheck` | 확실 | 공식 | 현대 NE1 매뉴얼 페이지는 체인을 장착한 뒤 저속으로 약 0.5~1km 주행하며 다시 확인하라고 안내한다. 차체나 주변 부품에 닿는 소리가 나면 즉시 정차해 다시 장착하고, 느슨하면 타이어 안쪽으로 당겨지도록 조정한다. | 현대 / 자동차 / NE1 페이지 기준 타이어 체인 장착 차량 / 2026 매뉴얼 / KR |
+| `chain-remove-on-dry-road` | 확실 | 공식 | 현대 NE1 매뉴얼 페이지는 눈이 없는 도로를 주행하기 전에 체인을 분리해 손상을 막으라고 안내한다. | 현대 / 자동차 / NE1 페이지 기준 타이어 체인 장착 차량 / 2026 매뉴얼 / KR |
+| `chain-speed-expert-30kmh-2017` | 논쟁 🔶 | 후기 | 2017년 오토뷰 기사는 전문가 권장으로 금속 체인은 30km/h 미만, 비금속 체인은 50km/h 미만을 유지하라고 전하고, 제조사 권장 속도는 금속 체인 20~50km/h, 비금속 체인 40~70km/h가 많다고 소개한다. | 공통 / 자동차 / 타이어 체인 일반(금속·비금속) / 2017년 12월 기사 기준 / KR |
+| `kr-snow-speed-reduction-law` | 확인실패 🔶 | 후기 | 법률 블로그는 눈길에서 감속 운행해야 하며, 적설 20mm 미만은 최고속도에서 20%, 20mm 이상은 50%를 줄인 속도로 달리라는 기준을 소개한다. 다만 같은 내용의 근거 조문이 자료마다 달라서(법 본문 제19조 제2항 대 시행규칙 제19조 제2항) 확정하지 못했다. | 공통 / 자동차 / 눈 오는 날 일반 도로 주행 / 2026년 시행본 기준 미확인 / KR |
+
+### 크롬 브라우저가 느려지고 팝업 광고가 뜰 때 (Google Chrome 공식 도움말 기준 셀프체크) <sub>2026-11-03 · browser-slow-popup-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `chrome-popup-blocked-by-default` | 확실 | 공식 | Chrome은 기본적으로 팝업이 자동으로 뜨지 않도록 차단하며, 팝업이 차단되면 주소 표시줄에 '팝업 차단됨' 표시가 나타난다. | Google Chrome / 브라우저 / 데스크톱 Chrome / 현행 버전 / KR |
+| `chrome-popup-setting-path` | 확실 | 공식 | Chrome 팝업 기본 동작은 더보기 > 설정 > 개인 정보 및 보안 > 사이트 설정 > 팝업 및 리디렉션에서 바꿀 수 있다. 특정 사이트만 차단하려면 해당 사이트를 차단 목록에 추가하고, 하위 도메인까지 막으려면 [*.]도메인 형식의 패턴을 쓸 수 있다. | Google Chrome / 브라우저 / 데스크톱 Chrome / 현행 버전 / KR |
+| `chrome-ads-setting-path-annoying-ads` | 확실 | 공식 | Chrome에서 방해가 되는 광고 설정은 더보기 > 설정 > 개인 정보 보호 및 보안 > 사이트 설정 > 추가 콘텐츠 설정 > 방해가 되는 광고 순서로 들어가 기본 동작을 고르는 곳이다. | Google Chrome / 브라우저 / 데스크톱 Chrome / 현행 버전 / KR |
+| `chrome-popup-persistent-check-notification-and-malware` | 확실 | 공식 | 팝업 광고가 계속 뜨거나 낯선 페이지로 리디렉션되면, 사이트 알림을 허용했거나 멀웨어 또는 원치 않는 확장 프로그램이 원인일 수 있다. 이 경우 알림 차단과 기기 멀웨어 점검을 함께 한다. | Google Chrome / 브라우저 / 데스크톱 Chrome / 현행 버전 / KR |
+| `chrome-notification-permission-path` | 확실 | 공식 | Chrome 알림 권한은 더보기 > 설정 > 개인 정보 및 보안 > 사이트 설정 > 알림에서 관리한다. '알림 전송이 허용됨' 목록의 사이트는 삭제하거나 차단으로 옮길 수 있다. | Google Chrome / 브라우저 / 데스크톱 Chrome / 현행 버전 / KR |
+| `chrome-extension-manage-path` | 확실 | 공식 | Chrome 확장 프로그램 관리 화면은 더보기 > 확장 프로그램 > 확장 프로그램 관리에서 열린다. 여기서 사용 중지하거나 삭제할 수 있다. | Google Chrome / 브라우저 / 데스크톱 Chrome 확장 프로그램 / 현행 버전 / KR |
+| `chrome-extension-remove-via-toolbar-icon` | 확실 | 공식 | 주소 표시줄 오른쪽의 확장 프로그램 아이콘을 마우스 오른쪽 버튼으로 누르고 'Chrome에서 삭제'를 고르면 확장 프로그램을 지울 수 있다. 아이콘이 없으면 확장 프로그램 관리 화면에서 삭제를 선택한다. | Google Chrome / 브라우저 / 데스크톱 Chrome 확장 프로그램 / 현행 버전 / KR |
+| `chrome-reset-settings-path` | 확실 | 공식 | Chrome 설정 재설정은 더보기 > 설정 > 설정 초기화 > 설정을 기본값으로 복원 > 설정 초기화 순서로 실행한다. 재설정 후 일부 확장 프로그램은 다시 사용 설정해야 하며, 신뢰할 수 있는 것만 다시 켜라고 안내한다. | Google Chrome / 브라우저 / 데스크톱 Chrome / 현행 버전 / KR |
+| `chrome-reset-search-engine-auto-restore` | 확실 | 공식 | Chrome은 실행할 때마다 설정 변경 여부를 확인해 검색 설정 등 중요한 설정을 기본값으로 되돌릴 수 있다. 검색 설정이 자동으로 재설정되면 다음 검색 때 알림이 표시된다. | Google Chrome / 브라우저 / 데스크톱 Chrome / 현행 버전 / KR |
+| `chrome-cache-clear-desktop-path` | 확실 | 공식 | Chrome 데스크톱에서 캐시를 지우려면 더보기 > 인터넷 사용 기록 삭제를 연 뒤 기간을 고르고 '쿠키 및 기타 사이트 데이터'와 '캐시된 이미지 및 파일'을 선택한 다음 데이터 삭제를 누른다. 주소 표시줄에 '인터넷 사용 기록 삭제'를 입력해 바로 여는 방법도 있다. | Google Chrome / 브라우저 / 데스크톱 Chrome / 현행 버전 / KR |
+| `chrome-cache-clear-password-not-deleted` | 확실 | 공식 | Chrome 인터넷 사용 기록 삭제 절차로는 저장된 비밀번호가 지워지지 않는다. 저장된 비밀번호는 Google 비밀번호 관리자에서 따로 삭제해야 한다. 자동완성의 주소와 카드 정보는 삭제되지만 Google 계정에 저장된 카드와 주소는 남는다. | Google Chrome / 브라우저 / 데스크톱 Chrome / 현행 버전 / KR |
+| `chrome-cache-clear-logout-effect` | 확실 | 공식 | Chrome에 로그인한 상태에서 방문 기록과 사이트 데이터를 삭제하면 같은 Google 계정을 쓰는 다른 기기에도 영향이 간다. Google 계정에서 로그아웃하려면 Chrome에서 로그아웃해야 한다. | Google Chrome / 브라우저 / 데스크톱 Chrome / 현행 버전 / KR |
+| `chrome-speed-tips-tabs-extensions-task-manager` | 확실 | 공식 | Chrome이 느릴 때 공식 도움말은 사용하지 않는 탭을 닫고, 사용하지 않는 확장 프로그램을 사용 중지하거나 삭제하며, 더보기 > 도구 더보기 > 작업 관리자에서 무거운 작업을 종료하라고 안내한다. 탭을 많이 열어둘수록 Chrome의 작업 부담이 커진다. | Google Chrome / 브라우저 / 데스크톱 Chrome / 현행 버전 / KR |
+| `chrome-safe-browsing-keep-on` | 확실 | 공식 | Chrome 세이프 브라우징은 멀웨어·원치 않는 소프트웨어·소셜 엔지니어링(속임수) 사이트에 경고를 띄운다. 공식 문서는 세이프 브라우징을 끄지 말 것을 권장한다. 경고가 뜬 사이트는 방문하지 않는 것이 좋다. | Google Chrome / 브라우저 / 데스크톱 Chrome / 현행 버전 / KR |
+| `google-account-password-change-path` | 확실 | 공식 | Google 계정 비밀번호는 myaccount.google.com에 로그인한 뒤 보안 및 로그인 메뉴에서 비밀번호를 선택해 바꿀 수 있다. 비밀번호를 바꾸면 본인 인증에 쓰는 기기 등 예외를 빼고 대부분의 기기에서 로그아웃된다. | Google 계정 / 계정 보안 / 전 기기 / 현행 / KR |
+| `google-security-checkup-recommended` | 확실 | 공식 | Google 계정 보안 점검(myaccount.google.com/security-checkup)에서 계정의 보안 문제를 확인하고 해결하라고 안내된다. | Google 계정 / 계정 보안 / 전 기기 / 현행 / KR |
+| `windows-uninstall-suspicious-program-path` | 확실 | 공식 | Windows에서 의심스러운 프로그램을 제거하려면 설정 > 앱 > 설치된 앱에서 해당 앱을 고른 뒤 제거한다. Mac은 Finder의 응용 프로그램에서 해당 앱을 휴지통으로 옮기고 휴지통을 비운다. | Google Chrome / 브라우저 / Windows·Mac / 현행 OS / KR |
+
+### 노트북 배터리가 빨리 닳을 때 설정부터 점검 (Windows 11 중심, 부풀음·발열은 서비스 기준) <sub>2026-11-03 · laptop-battery-drain-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `battery-usage-per-app-path` | 확실 | 공식 | 설정 > 시스템 > 전원 및 배터리 > 배터리 사용량의 '앱별 배터리 사용량'에서 배터리를 많이 쓰는 앱을 확인할 수 있다. 이 목록은 백그라운드에서 쓴 전력도 보여준다. | 공통 / 노트북 / 전 라인 / Windows 11 / 글로벌 |
+| `background-activity-options-three-levels` | 확실 | 공식 | 배터리 사용량에서 앱을 선택하고 '더 많은 옵션 > 백그라운드 활동 관리'로 들어가면 Always·Power optimized(권장)·Never 중 하나를 고를 수 있다. Power optimized(권장)는 Windows가 전력 절약에 맞게 판단하며, Never는 쓰지 않을 때 앱이 백그라운드에서 실행되지 않게 한다. | 공통 / 노트북 / 백그라운드 설정을 지원하는 앱 / Windows 11 / 글로벌 |
+| `battery-saver-threshold-by-version` | 확실 | 공식 | Windows 11 24H2 이상에서는 설정 > 시스템 > 전원 및 배터리에서 '배터리 잔량이 다음 값일 때 에너지 절약 켜기'로 자동 전환 잔량을 정할 수 있다. 24H1 이하에서는 같은 위치의 '배터리 절약'을 선택해 잔량을 고른다. | 공통 / 노트북 / 전 라인 / Windows 11 24H2 이상(24H1 이하는 메뉴명 다름) / 글로벌 |
+| `power-mode-efficient-option` | 확실 | 공식 | 설정 > 시스템 > 전원 및 배터리에서 '전원 모드'를 더 효율적인 모드로 고를 수 있다(Windows 11 24H2 이상 경로). 이 항목은 PC 하드웨어와 제조사에 따라 없을 수 있다. Windows 10에서는 작업 표시줄의 배터리 아이콘을 눌러 슬라이더를 '최적 배터리 수명' 쪽으로 옮긴다. | 공통 / 노트북 / 전원 모드 항목이 있는 기종 / Windows 11 24H2 이상 / Windows 10 경로 별도 / 글로벌 |
+| `energy-recommendations-menu` | 확실 | 공식 | 설정 > 시스템 > 전원 및 배터리 > 에너지 권장 사항에서 전원 모드, 화면 밝기, 절전 전환 시간, 화면 보호기 끄기, 화면이 꺼졌을 때 USB 장치 중지 등 권장 항목을 적용할 수 있다. 표시되는 항목은 기기와 전원 상태(배터리 사용 중인지, 전원에 연결됐는지)에 따라 달라진다. | 공통 / 노트북 / 전 라인 / Windows 11 / 글로벌 |
+| `screen-sleep-timer-battery-path` | 확실 | 공식 | 설정 > 시스템 > 전원 및 배터리 > 화면 및 절전에서 '배터리 전원 사용 시 화면 끄기' 시간과 '배터리 전원 사용 시 절전 모드 전환' 시간을 짧게 고르면 배터리 소모를 줄일 수 있다. Windows 10은 설정 > 시스템 > 전원 및 절전의 '배터리 사용 시 끄기'에서 같은 설정을 한다. | 공통 / 노트북 / 전 라인 / Windows 11 24H2 이상 / Windows 10 경로 별도 / 글로벌 |
+| `video-playback-optimize-battery` | 확실 | 공식 | 설정 > 앱 > 동영상 재생의 '배터리 옵션'에서 '배터리 수명 최적화'를 고르면 배터리 전원으로 재생할 때 전력 소모를 줄인다. 같은 화면의 '배터리에서 재생할 때 해상도를 낮게 재생' 항목을 함께 체크하면 더 줄일 수 있다. | 공통 / 노트북 / 전 라인 / Windows 11 / 글로벌 |
+| `restart-may-fix-battery-life-issues` | 확실 | 공식 | 시작 > 전원 > 다시 시작을 하면 배터리 수명을 줄이는 문제가 해결되기도 한다. Microsoft는 '때때로(sometimes)' 해결된다고 안내한다. | 공통 / 노트북 / 전 라인 / Windows 10·11 / 글로벌 |
+| `battery-report-powercfg-command` | 확실 | 공식 | 관리자 권한의 명령 프롬프트에서 powercfg /batteryreport를 실행하면 배터리 보고서(HTML 파일)가 만들어진다. 보고서에는 설치된 배터리, 최근 사용량, 배터리 사용량 섹션이 있다. | 공통 / 노트북 / 배터리 보고서를 지원하는 기기 / Windows 10·11 / 글로벌 |
+| `battery-report-save-location-unverified` | 확인실패 | 공식 | powercfg /batteryreport로 만든 보고서 파일의 기본 저장 위치는 이번 조사에서 공식 문서로 확인하지 못했다. 파일 위치는 명령 실행 후 명령 프롬프트에 표시되는 경로를 따른다는 후기는 있으나 공식 근거는 없다. | 공통 / 노트북 / 배터리 보고서 명령 / Windows 10·11 / 글로벌 |
+| `battery-health-charge-range-smart-charging` | 확실 | 공식 | Microsoft의 Windows 배터리 관리 페이지는 배터리 상태 유지를 위해 충전 잔량을 20%에서 80% 사이로 유지하고, 기기가 지원하면 스마트 충전을 켜라고 안내한다. | 공통 / 노트북 / 스마트 충전을 지원하는 기기 / Windows 10·11 / 글로벌 |
+| `surface-battery-capacity-check-method` | 확실 | 공식 | Surface Repair Tool을 열어 '배터리 정보(Battery information)'에서 Full charge capacity를 Design capacity로 나누면 남은 용량 비율을 구할 수 있다. 이 도구를 지원하지 않는 기기는 Surface Diagnostic Toolkit의 Battery information에서 Designed capacity, Current capacity, Wear level을 확인한다. | Microsoft Surface / 노트북 / Surface 전 라인(Repair Tool 지원 기종 우선) / 전 연식 / 글로벌 |
+| `surface-battery-70-percent-replacement-guide` | 확실 | 공식 | Microsoft Surface 배터리 용량 확인 페이지는 설계 용량 대비 70% 미만으로 떨어진 배터리(마모도 30% 초과)라면 교체를 고려할 만하다고 안내한다. | Microsoft Surface / 노트북 / Surface 전 라인 / 전 연식 / 글로벌 |
+| `surface-swollen-battery-stop-use` | 확실 | 공식 | Surface 배터리가 기기 외장(케이스)을 밀어낼 정도로 부풀면 Microsoft는 즉시 사용을 중단하라고 권한다. 배터리를 누르거나 찌르면 안전 위험이 있으므로 조심해서 다룬다. | Microsoft Surface / 노트북 / Surface 전 라인 / 전 연식 / 글로벌 |
+| `battery-drain-after-win11-upgrade-community-reports` | 논쟁 🔶 | 후기 | Windows 11 업그레이드 후 노트북 배터리가 크게 줄었다는 사용자 보고가 Microsoft 커뮤니티에 여럿 있다. 그러나 공식 해결책은 올라오지 않았고 원인도 확정되지 않았다. 커뮤니티 답변은 Feedback Hub로 로그와 함께 신고하고 제조사에 문의하라고 권했다. | 공통 / 노트북 / Windows 10에서 11로 업그레이드한 기기(Lenovo·Huawei·Dell 등 사례) / Windows 11 출시 이후 / 글로벌 |
+
+### 노트북 와이파이 아이콘이 사라지거나 무선 네트워크 목록이 안 뜰 때 (Windows 10·11 자가점검) <sub>2026-11-03 · laptop-wifi-missing-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `wifi-missing-physical-switch-check` | 확실 | 공식 | 노트북에 물리 무선 스위치가 있으면 꺼져 있을 때 와이파이 목록이 나타나지 않는다. 물리 스위치를 켠 뒤 설정 > 네트워크 및 인터넷에서 Wi-Fi가 켜져 있는지 확인한다. | Windows(전 제조사) / 노트북 / 물리 무선 스위치가 있는 기종 / 현행 / 글로벌 |
+| `wifi-missing-airplane-mode-off` | 확실 | 공식 | 비행기 모드가 켜져 있으면 무선 기능이 전부 꺼져 와이파이 목록이 나타나지 않는다. 설정 > 네트워크 및 인터넷 > 비행기 모드가 꺼져 있는지 먼저 확인한다. | Windows(전 제조사) / 노트북 / 전 라인 / Windows 10·11 / 글로벌 |
+| `wifi-missing-band-mismatch-router-check` | 확실 | 공식 | 어댑터가 공유기의 주파수 대역(2.4GHz 또는 5GHz)을 지원하지 않으면 해당 공유기 이름이 목록에 나타나지 않을 수 있다. 공유기가 쓰는 대역은 공유기 설명서나 관리 앱에서 확인한다. | Windows(전 제조사) / 노트북 / 구형 무선 어댑터(802.11n 이하 등) / 현행 / 글로벌 |
+| `wifi-missing-device-manager-band-filter` | 확실 | 공식 | 장치 관리자 > 네트워크 어댑터 > 무선 어댑터 우클릭 > 속성 > 고급 탭에 있는 Wireless Mode 또는 Band 설정이 네트워크 대역을 막고 있을 수 있다. 공식 문서는 드물다고 밝히지만 발생한 적은 있다고 한다. | Windows(전 제조사) / 노트북 / 무선 어댑터 속성에 Wireless Mode·Band 항목이 있는 기종 / 현행 / 글로벌 |
+| `wifi-missing-enable-device-option` | 확실 | 공식 | 와이파이 설정 메뉴 자체가 없으면 장치 관리자 > 네트워크 어댑터를 펼쳐 무선 어댑터를 우클릭하고 디바이스 사용을 선택한다. 어댑터가 비활성화돼 있으면 목록과 메뉴가 사라진다. | Windows(전 제조사) / 노트북 / 전 라인 / Windows 10·11 / 글로벌 |
+| `wifi-missing-adapter-not-in-device-manager` | 확실 | 공식 | 장치 관리자의 네트워크 어댑터 목록에 무선 어댑터 자체가 없으면 Windows가 하드웨어를 감지하지 못한 상태다. 이때는 PC 제조사 웹사이트에서 해당 모델의 무선 드라이버를 내려받아 수동으로 설치한다. | Windows(전 제조사) / 노트북 / 전 라인 / Windows 10·11 / 글로벌 |
+| `wifi-missing-wlan-autoconfig-restart` | 확실 | 공식 | Wi-Fi 메뉴가 없을 때 Win+R에 services.msc를 입력하고 WLAN AutoConfig 서비스를 찾아 다시 시작하면 무선 검색 기능이 복구될 수 있다. | Windows(전 제조사) / 노트북 / 전 라인 / Windows 10·11 / 글로벌 |
+| `wifi-missing-driver-version-check-windows-update` | 확실 | 공식 | Windows 업데이트 이후 와이파이가 사라졌다면 Windows Update를 실행한 뒤 장치 관리자 > 네트워크 어댑터 > 어댑터 속성 > 드라이버 탭에서 드라이버 버전과 날짜를 확인한다. 제조사 사이트의 최신 드라이버와 비교한다. | Windows(전 제조사) / 노트북 / 전 라인 / Windows 10·11 / 글로벌 |
+| `wifi-missing-driver-uninstall-reinstall-after-update` | 확실 | 공식 | 업데이트 이후 문제가 시작됐다면 장치 관리자에서 무선 어댑터를 우클릭해 제거하고 드라이버 삭제 체크 박스를 선택한 뒤 다시 시작한다. 재부팅 후 Windows가 드라이버를 자동으로 설치해야 하며, 자동 설치가 안 되면 백업 드라이버를 설치한다. | Windows(전 제조사) / 노트북 / 전 라인 / Windows 10·11 / 글로벌 |
+| `wifi-missing-power-saving-uncheck` | 확실 | 공식 | 전원 절약 때문에 어댑터가 꺼져 목록에서 사라질 수 있다. 장치 관리자 > 네트워크 어댑터 > 무선 어댑터 속성 > 전원 관리 탭에서 전원을 아끼기 위해 컴퓨터가 이 장치를 끌 수 있도록 허용하는 항목을 해제한다. | Windows(전 제조사) / 노트북 / 전 라인 / Windows 10·11 / 글로벌 |
+| `wifi-missing-network-reset-last-resort-win11` | 확실 | 공식 | Windows 11에서는 설정 > 네트워크 및 인터넷 > 고급 네트워크 설정 > 네트워크 재설정 > 지금 재설정으로 네트워크 설정을 초기화할 수 있다. 공식 문서는 다른 방법을 모두 해본 뒤 마지막으로 쓰라고 안내한다. | Windows(전 제조사) / 노트북 / 전 라인 / Windows 11 / 글로벌 |
+| `wifi-missing-network-reset-path-win10` | 확실 | 공식 | Windows 10에서 네트워크 재설정은 설정 > 네트워크 및 인터넷 > 상태 > 네트워크 재설정 경로에 있다. Windows 11과 경로가 다르므로 기기 버전을 먼저 확인한다. | Windows(전 제조사) / 노트북 / 전 라인 / Windows 10 / 글로벌 |
+| `wifi-missing-error-code-43-10-driver-or-hardware` | 논쟁 🔶 | 후기 | 장치 관리자에 오류 코드 43 또는 10이 뜨는 무선 어댑터는 드라이버를 재설치해도 반복되는 경우가 있다. Microsoft 커뮤니티 질의응답의 한 답변은 이를 사실상 하드웨어 고장으로 봤다. | Windows(전 제조사) / 노트북 / Qualcomm Atheros QCA9377 탑재 Acer Aspire A315-41 사례 / 2022년 질문 기준 / 글로벌 |
+| `wifi-missing-repair-when-driver-reinstall-fails` | 논쟁 🔶 | 후기 | 드라이버를 재설치해도 어댑터가 장치 관리자에 나타나지 않거나 오류가 계속되면, 커뮤니티 답변은 하드웨어 고장으로 보고 제조사 수리를 권했다. 이 단계부터는 자가 해결 범위를 벗어난다. | Windows(전 제조사) / 노트북 / 전 라인 / 현행 / 글로벌 |
+| `wifi-missing-internal-card-reseat-not-for-self` | 논쟁 🔶 | 후기 | 커뮤니티 답변은 노트북을 분해해 내장 무선카드를 분리·닦고 다시 꽂는 방법을 제안했다. 분해를 전제로 하는 방법이므로 자가점검 단계에서는 권하지 않는다. | Windows(전 제조사) / 노트북 / 무선카드를 탈착할 수 있는 구형 기종 / 2022년 질문 기준 / 글로벌 |
+
+### USB 장치가 인식되지 않을 때 포트와 드라이버 점검 <sub>2026-11-03 · usb-port-not-recognized-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `usb-c-error-code-check-first` | 확실 | 공식 | USB 장치 인식 실패는 장치 관리자에서 노란 느낌표가 붙은 장치를 찾아 속성을 열고, '장치 상태'에 표시된 오류 코드를 확인하는 것이 첫 단계다. 코드 28(드라이버가 설치되지 않음)을 뺀 나머지는 '장치 관리자 오류 코드' 문서의 해당 조치를 따른다. | 공통 / PC·노트북 / USB 장치 전반(USB-C 포함) / Windows 11 (Windows 10 포함) / 글로벌 |
+| `usb-c-direct-connect-avoid-hub` | 확실 | 공식 | USB 장치가 인식되지 않으면 허브나 도킹스테이션을 빼고 장치를 PC 본체의 USB 포트에 직접 꽂는다. 허브를 써야 한다면 허브에 별도 전원이 들어와야 한다. | 공통 / PC·노트북 / USB 장치 전반(USB-C 포함) / Windows 11 (Windows 10 포함) / 글로벌 |
+| `usb-c-try-different-port` | 확실 | 공식 | 장치 기능이 일부만 동작하거나 인식되지 않을 때는 같은 PC의 다른 USB 포트에 꽂아 본다. USB-C 포트는 장치가 요구하는 기능(예: Thunderbolt, DisplayPort, MHL)을 지원하는 포트에 꽂아야 한다. | 공통 / PC·노트북 / USB-C 포트 탑재 PC / Windows 11 (Windows 10 포함) / 글로벌 |
+| `usb-c-power-external-and-unplug-unused` | 확실 | 공식 | 전력이 부족해 장치가 인식되지 않을 수 있다. 장치에 외부 전원을 연결할 수 있으면 연결하고, 노트북은 배터리 대신 전원 어댑터에 꽂은 상태에서 점검하며, 쓰지 않는 USB 장치는 뽑는다. | 공통 / PC·노트북 / 전원 공급형 USB 장치 / Windows 11 (Windows 10 포함) / 글로벌 |
+| `usb-c-use-bundled-charger-cable` | 확실 | 공식 | USB-C 연결에서는 PC나 장치와 함께 온 충전기와 케이블을 쓰는 것이 기본이다. 충전기 출력이 PC가 요구하는 전력보다 낮으면 충전이 느리거나 안 되고, 제조사 전용 독점 커넥터 충전기는 PC에서 동작하지 않을 수 있다. | 공통 / PC·노트북 USB-C 충전 / USB-C 충전 포트 탑재 PC / Windows 11 (Windows 10 포함) / 글로벌 |
+| `usb-c-clean-port-compressed-air` | 확실 | 공식 | USB-C 포트에 먼지나 이물질이 있으면 커넥터가 제대로 안 들어가 인식이나 충전이 실패할 수 있다. Microsoft는 압축 공기로 포트를 청소하라고 안내한다. | 공통 / PC·노트북 / USB-C 포트 / 전 연식 / 글로벌 |
+| `usb-c-alt-mode-needs-all-parts` | 확실 | 공식 | USB-C의 대체 모드(Alternate Mode) 기능(디스플레이 출력·Thunderbolt·USB4 등)은 PC 하드웨어와 소프트웨어, 연결하는 장치, 경우에 따라 특정 케이블이 모두 지원해야 동작한다. | 공통 / PC·노트북 USB-C / USB-C 대체 모드 기능 / Windows 11 (Windows 10 포함) / 글로벌 |
+| `error-10-update-driver` | 확실 | 공식 | 장치 관리자 오류 코드 10(이 장치를 시작할 수 없습니다)은 장치 속성의 드라이버 탭에서 '드라이버 업데이트'를 실행해 따라간다. | 공통 / PC·노트북 / USB 장치 전반 / Windows 11 (Windows 10 포함) / 글로벌 |
+| `error-19-rescan-or-restore` | 확실 | 공식 | 오류 코드 19(레지스트리 구성이 불완전하거나 손상됨)는 장치를 제거한 뒤 동작의 '하드웨어 변경 사항 검색'을 실행하는 것이 Microsoft의 조치다. 그래도 안 되면 이전 정상 구성 또는 시스템 복원 지점을 쓰라고 안내한다. | 공통 / PC·노트북 / USB 장치 전반 / Windows 11 (Windows 10 포함) / 글로벌 |
+| `error-24-39-41-remove-or-rescan` | 확실 | 공식 | 오류 코드 24(장치가 없거나 드라이버가 제대로 설치되지 않음)는 장치를 제거하면 해결된다고 Microsoft가 안내한다. 코드 39(드라이버 손상 또는 누락)와 41(드라이버는 로드됐으나 장치를 찾을 수 없음)은 장치를 제거한 뒤 '하드웨어 변경 사항 검색'으로 드라이버를 다시 설치한다. | 공통 / PC·노트북 / USB 장치 전반 / Windows 11 (Windows 10 포함) / 글로벌 |
+| `error-43-contact-manufacturer` | 확실 | 공식 | 오류 코드 43(드라이버가 장치 문제를 보고해 Windows가 장치를 중지함)은 하드웨어 설명서를 확인하거나 제조사에 문의한 뒤, 장치를 제거하고 '하드웨어 변경 사항 검색'을 실행하라고 Microsoft가 안내한다. | 공통 / PC·노트북 / USB 장치 전반 / Windows 11 (Windows 10 포함) / 글로벌 |
+| `error-45-46-no-action` | 확실 | 공식 | 오류 코드 45(현재 장치가 컴퓨터에 연결되어 있지 않음)와 46(운영체제가 종료 중이라 장치에 접근할 수 없음)은 Microsoft가 별도 조치가 필요 없다고 안내한다. 장치를 다시 꽂거나 다음 부팅 후 정상 동작을 기다린다. | 공통 / PC·노트북 / USB 장치 전반 / Windows 11 (Windows 10 포함) / 글로벌 |
+| `error-47-replug-or-restart` | 확실 | 공식 | 오류 코드 47(안전 제거 준비는 됐지만 컴퓨터에서 제거되지 않음)은 장치를 뽑았다가 다시 꽂는다. 그래도 안 되면 PC를 재시작한다. | 공통 / PC·노트북 / USB 저장장치 등 안전 제거 대상 장치 / Windows 11 (Windows 10 포함) / 글로벌 |
+| `error-48-52-driver-from-maker` | 확실 | 공식 | 오류 코드 48(Windows가 알려진 문제 때문에 해당 드라이버 실행을 차단함)과 52(드라이버의 디지털 서명을 확인할 수 없음)는 Microsoft가 제조사에서 최신 드라이버를 받거나 제조사에 문의하라고 안내한다. | 공통 / PC·노트북 / USB 장치 전반 / Windows 11 (Windows 10 포함) / 글로벌 |
+| `windows10-support-ended-2025-10-14` | 확실 | 공식 | Windows 10 지원은 2025년 10월 14일에 종료됐으며, Microsoft는 Windows 11로 옮길 것을 권장한다. | 공통 / PC·노트북 / Windows 10 사용 PC / 2025-10-14 종료 이후 / 글로벌 |
+| `usb-another-pc-test-unverified` | 확인실패 | 공식 | 같은 USB 장치를 다른 PC에 꽂아 인식되면 PC 쪽(포트·드라이버·전원) 문제일 가능성이 높고, 다른 PC에서도 안 되면 장치나 케이블 쪽 문제일 가능성이 높다는 판별법은 실무에서 흔히 쓰이지만, 이번에 연 Microsoft 공식 원문에서는 명시를 확인하지 못했다. | 공통 / PC·노트북 / USB 장치 전반 / Windows 11 (Windows 10 포함) / 글로벌 |
+
+### 윈도우 블루스크린이 뜰 때, 오류 코드로 원인 좁히기 <sub>2026-11-03 · windows-bsod-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `bugcheck-hex-name-lookup` | 확실 | 공식 | 블루스크린 정지 코드의 16진수 값과 이름은 Microsoft 'Bug Check Code Reference' 표에서 대조할 수 있다. 원문 표에서 확인한 예: 0x0000000A IRQL_NOT_LESS_OR_EQUAL, 0x0000003B SYSTEM_SERVICE_EXCEPTION, 0x00000050 PAGE_FAULT_IN_NONPAGED_AREA, 0x0000007B INACCESSIBLE_BOOT_DEVICE, 0x0000009F DRIVER_POWER_STATE_FAILURE, 0x00000116 VIDEO_TDR_FAILURE, 0x00000124 WHEA_UNCORRECTABLE_ERROR, 0x00000154 UNEXPECTED_STORE_EXCEPTION, 0x000000EF CRITICAL_PROCESS_DIED | 공통 / PC 운영체제 / Windows 커널 정지 코드 / Windows 10/11 / 글로벌 |
+| `memory-codes-named-examples` | 확실 | 공식 | Microsoft 지원 문서는 정지 코드 예시로 PAGE_FAULT_IN_NONPAGED_AREA와 MEMORY_MANAGEMENT를 들며, 정지 코드는 블루스크린 화면 하단에 표시된다고 안내한다 | 공통 / PC 운영체제 / Windows 블루스크린 메모리 계열 코드 / Windows 10/11 / 글로벌 |
+| `device-manager-exclamation-first` | 확실 | 공식 | 블루스크린 후에는 장치 관리자를 열어 느낌표(!) 표시가 있는 장치를 찾고, 그 장치를 우클릭해 드라이버 업데이트를 먼저 시도한다. 효과가 없으면 장치를 사용 안 함 또는 제거한다 | 공통 / PC 운영체제 / Windows 장치 드라이버 / Windows 10/11 / 글로벌 |
+| `update-drivers-windows-update-optional` | 확실 | 공식 | Windows 업데이트 고급 옵션에서 '다른 Microsoft 제품의 업데이트 받기'를 켜고, 선택적 업데이트에서 드라이버를 모두 선택해 설치한다. 이후 업데이트를 확인하고 설치한 뒤 다시 시작한다(Windows 11 기준, Windows 10도 거의 동일) | 공통 / PC 운영체제 / Windows 드라이버 업데이트 / Windows 10/11 / 글로벌 |
+| `memory-test-mdsched-steps` | 확실 | 공식 | 메모리 진단은 실행 창에 mdsched를 입력해 '지금 다시 시작하여 문제 검사'를 선택하면 재부팅 후 자동으로 진행된다. 더 정밀하게 보려면 F1에서 Test Mix를 Extended로 바꾼 뒤 F10으로 적용한다. 결과는 로그인 후 알림이나 이벤트 뷰어의 MemoryDiagnostics-Results 로그에서 확인하며, Event ID 2001은 메모리 오류가 발견되지 않았다는 뜻이다 | 공통 / PC 운영체제 / Windows 메모리 진단 도구 / Windows 10/11 / 글로벌 |
+| `irql-0a-cause-summary` | 확실 | 공식 | 정지 코드 0x0000000A(IRQL_NOT_LESS_OR_EQUAL)은 Microsoft가 주로 결함 있거나 오래된 드라이버, 메모리 문제, 하드웨어 문제가 원인이라고 설명하는 코드다 | 공통 / PC 운영체제 / 0x0A 정지 코드 / Windows 10/11 / 글로벌 |
+| `unexpected-store-not-disk-failure` | 확실 | 공식 | 정지 코드 0x00000154(UNEXPECTED_STORE_EXCEPTION)은 Microsoft 원문에 따르면 커널 메모리 저장(store) 구성요소가 예상치 못한 예외를 잡았다는 뜻이며, 이름의 STORE 때문에 디스크 고장으로 단정하지 않는다. Microsoft는 이벤트 뷰어 시스템 로그 확인, Windows 메모리 진단, 장치 관리자 느낌표 확인과 드라이버 업데이트, SFC 실행을 안내한다 | 공통 / PC 운영체제 / 0x154 정지 코드 / Windows 10/11 / 글로벌 |
+| `system-service-exception-cause` | 확실 | 공식 | 정지 코드 0x0000003B(SYSTEM_SERVICE_EXCEPTION)은 시스템 서비스 루틴 실행 중 예외가 난 것으로, 원인으로 NULL 포인터 접근, 메모리의 조기 해제, 자료구조 손상이 꼽힌다. Microsoft의 일반 대응은 최근 추가된 드라이버나 시스템 서비스를 제거하거나 업데이트하는 것이다 | 공통 / PC 운영체제 / 0x3B 정지 코드 / Windows 10/11 / 글로벌 |
+| `driver-name-on-bugcheck-screen` | 확실 | 공식 | 블루스크린 화면에 모듈 이름(예: .sys 파일명)이 함께 표시되면 그것이 가장 직접적인 단서다. Microsoft 원문은 정지 코드와 함께 실행 중이던 모듈 이름이 표시될 수 있다고 안내하며, 예시로 AcmeVideo.sys와 rdbyss.sys를 든다 | 공통 / PC 운영체제 / 블루스크린 모듈 이름 표시 / Windows 10/11 / 글로벌 |
+| `disk-scan-and-sfc-steps` | 확실 | 공식 | 파일 시스템 오류는 드라이브 속성의 도구 탭에서 검사(지금 검사)로 확인하고, 손상된 시스템 파일은 관리자 명령 프롬프트에서 SFC /scannow로 복구한다고 Microsoft가 안내한다 | 공통 / PC 운영체제 / 디스크 파일 시스템·시스템 파일 점검 / Windows 10/11 / 글로벌 |
+| `hardware-diagnostics-and-bios-check` | 확실 | 공식 | 블루스크린의 원인이 하드웨어로 의심되면 Microsoft는 제조사가 제공하는 하드웨어 진단 도구를 실행하고, 제조사에서 BIOS 또는 UEFI 펌웨어 업데이트가 나왔는지 확인하라고 안내한다 | 공통 / PC 하드웨어 / 데스크톱·노트북 진단 / Windows 10/11 / 글로벌 |
+| `event-viewer-system-log-same-time` | 확실 | 공식 | Microsoft는 블루스크린이 난 시각과 같은 시간대의 시스템 로그 치명적 오류를 이벤트 뷰어에서 확인해, 장치나 드라이버를 특정하라고 안내한다 | 공통 / PC 운영체제 / 이벤트 뷰어 시스템 로그 / Windows 10/11 / 글로벌 |
+| `warranty-as-criteria-not-in-official-docs` | 확인실패 | 공식 | Microsoft 블루스크린 공식 문서에서 보증 기간이나 AS 접수 기준은 확인하지 못했다. 공식 문서는 하드웨어 의심 시 '제조사 진단 도구 실행'과 '제조사 확인'까지만 안내한다 | 공통 / PC 운영체제 / 블루스크린 AS 접수 / Windows 10/11 / 글로벌 |
+| `backup-advice-not-found-in-bsod-docs` | 확인실패 | 공식 | 블루스크린 공식 트러블슈팅 문서(Microsoft Support 문제 해결 페이지, Learn 정지 코드 페이지)에서 데이터 백업을 권하는 문장은 확인하지 못했다. 데이터 보호 안내는 PC 초기화 옵션의 '모든 항목 제거'가 모든 데이터를 삭제한다는 경고에 의존한다 | 공통 / PC 운영체제 / 블루스크린 데이터 보호 / Windows 10/11 / 글로벌 |
+
+### 윈도우 컴퓨터가 갑자기 느려졌을 때 점검 순서 (데이터 백업 먼저 → 작업 관리자·시작 프로그램 → 저장공간 → 업데이트 → 악성코드 검사 → AS 기준) <sub>2026-11-03 · windows-slow-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `slow-pc-task-manager-open-startup-disable` | 확실 | 공식 | Ctrl + Shift + Esc를 누르면 작업 관리자가 열린다. '시작 프로그램(Startup apps)' 탭에서 필요 없는 앱을 우클릭해 '사용 안 함(Disable)'을 선택하면 부팅 때 자동 실행되지 않는다 | 공통 / PC 운영체제 / Windows 11 · Windows 10 / Windows 10/11 / 글로벌 |
+| `slow-pc-review-performance-and-startup-tabs` | 확실 | 공식 | Microsoft는 작업 관리자의 '성능(Performance)'과 '시작 프로그램(Startup apps)' 탭을 검토해 높은 자원을 쓰는 구성요소를 찾으라고 안내한다. 또 '프로세스(Processes)' 탭에서 쓰지 않는 앱을 닫으라고 권한다 | 공통 / PC 운영체제 / Windows 11 · Windows 10 / Windows 10/11 / 글로벌 |
+| `slow-pc-storage-sense-run-path` | 확실 | 공식 | 저장공간 자동 정리는 '시작 > 설정 > 시스템 > 저장공간'에서 저장공간 센스(Storage Sense)를 켠다. Windows 11에서는 '저장공간 센스 지금 실행(Run Storage sense now)'을 누르고, '여유 공간 확보' 아래 '지금 정리(Clean now)'를 누르면 된다 | 공통 / PC 운영체제 / Windows 11 · Windows 10 / Windows 10/11 / 글로벌 |
+| `slow-pc-storage-sense-recycle-downloads-default` | 확실 | 공식 | 저장공간 센스에서 휴지통 항목은 기본적으로 일정 기간이 지나면 삭제된다. 다운로드 폴더의 파일은 설정을 켜지 않는 한 건드리지 않는다. 두 항목 모두 '일정 기간' 옵션을 직접 정할 수 있다 | 공통 / PC 운영체제 / Windows 11 · Windows 10 / Windows 10/11 / 글로벌 |
+| `slow-pc-low-space-no-percent-threshold` | 확인실패 | 공식 | Microsoft는 '저장공간 부족'을 몇 % 이하라고 숫자로 정해두지 않는다. 설정 > 시스템 > 저장공간에서 용량 막대가 빨간색으로 바뀌면 저장공간이 부족한 상태라고 안내한다 | 공통 / PC 운영체제 / Windows 11 · Windows 10 / Windows 10/11 / 글로벌 |
+| `slow-pc-temp-files-and-disk-cleanup-path` | 확실 | 공식 | 임시 파일은 '설정 > 시스템 > 저장공간 > 임시 파일'에서 직접 지울 수 있다. 디스크 정리(Disk Cleanup)도 드라이브를 골라 실행할 수 있다 | 공통 / PC 운영체제 / Windows 11 · Windows 10 / Windows 10/11 / 글로벌 |
+| `slow-pc-uninstall-unused-apps-path` | 확실 | 공식 | 쓰지 않는 앱을 지우면 저장공간이 늘고 백그라운드 활동도 줄어든다. Windows 11에서는 '설정 > 앱 > 설치된 앱'에서 지운다(Windows 10은 '앱 및 기능') | 공통 / PC 운영체제 / Windows 11 · Windows 10 / Windows 10/11 / 글로벌 |
+| `slow-pc-windows-update-optional-drivers` | 확실 | 공식 | Microsoft는 Windows 업데이트에 성능 개선이 포함되는 경우가 많다고 안내한다. 업데이트 확인 후 선택 사항인 드라이버 업데이트도 설치하라고 권한다 | 공통 / PC 운영체제 / Windows 11 · Windows 10 / Windows 10/11 / 글로벌 |
+| `slow-pc-defender-quick-scan-path` | 확실 | 공식 | 악성코드는 CPU와 디스크 자원을 많이 써서 PC를 느리게 만들 수 있다. Windows 보안 > '바이러스 및 위협 방지'에서 '새 빠른 검사 시작(Start a new quick scan)'을 누르면 빠른 검사를 할 수 있다 | 공통 / PC 운영체제 / Windows 11 · Windows 10 (Microsoft Defender) / Windows 10/11 / 글로벌 |
+| `slow-pc-defender-offline-scan-restart-warning` | 확실 | 공식 | Microsoft Defender 오프라인 검사는 악성코드가 의심될 때 쓰며, 실행하면 기기가 재시작된다. 검사 전에 열린 파일을 저장하라고 Microsoft가 안내한다. 결과는 Windows 보안의 '보호 기록'에서 확인한다 | 공통 / PC 운영체제 / Windows 11 · Windows 10 (Microsoft Defender) / Windows 10/11 / 글로벌 |
+| `slow-pc-backup-windows-backup-onedrive` | 확실 | 공식 | Windows 백업은 바탕 화면·문서·사진·비디오·음악 폴더를 켜면 OneDrive로 동기화한다. 무료 Microsoft 계정에는 OneDrive 클라우드 저장공간 5GB가 포함된다. 회사·학교 계정은 이 기능에 쓸 수 없다 | 공통 / PC 운영체제 / Windows Backup · OneDrive / Windows 10/11 / 글로벌 |
+| `slow-pc-hardware-age-upgrade-criterion` | 확실 | 공식 | Microsoft는 하드웨어가 오래된 PC는 이 점검 단계로 큰 개선을 보지 못할 수 있으며, 그런 경우 장기적으로는 기기 업그레이드가 최선일 수 있다고 안내한다 | 공통 / PC 하드웨어 / 노후 PC 전 라인 / 연식 기준 명시 없음 / 글로벌 |
+| `slow-pc-restart-if-no-improvement` | 확실 | 공식 | 열어둔 앱과 브라우저 탭이 많으면 느려질 수 있다. 개선이 없으면 PC를 다시 시작하라고 Microsoft가 안내한다 | 공통 / PC 운영체제 / Windows 11 · Windows 10 / Windows 10/11 / 글로벌 |
+| `slow-pc-windows10-support-ended` | 확실 | 공식 | Windows 10 지원은 2025년 10월 14일에 끝났다. 지원이 끝난 PC는 보안 업데이트를 받을 수 없으므로 느려짐 점검 이전에 OS 지원 상태부터 확인한다 | 공통 / PC 운영체제 / Windows 10 / Windows 10 (2025-10-14 지원 종료) / 글로벌 |
+
+### 윈도우 업데이트 실패·무한 대기 해결 순서 (Microsoft 공식 문제 해결 기준) <sub>2026-11-03 · windows-update-failure-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `win-update-disk-space-upgrade-16-20gb` | 확실 | 공식 | Windows 버전 업그레이드를 하려면 32비트는 16GB, 64비트는 20GB 이상의 여유 공간이 필요하다. 이 수치는 '업그레이드' 기준으로 적혀 있고, 월간 누적 업데이트에 대한 별도 수치는 공식 문서에 없다 | 공통 / PC 운영체제 / Windows 업데이트·버전 업그레이드 / Windows 10/11 / 글로벌 |
+| `win-update-troubleshooter-path` | 확실 | 공식 | Windows 업데이트 문제 해결사는 Windows 11에서 설정 > 시스템 > 문제 해결 > 기타 문제 해결사에서 Windows Update 옆의 '실행'을 누른다. Windows 10은 설정 > 업데이트 및 보안 > 문제 해결 > 추가 문제 해결사에서 Windows Update를 고른다 | 공통 / PC 운영체제 / Windows 업데이트 문제 해결사 / Windows 10/11 / 글로벌 |
+| `win-update-cache-reset-gui` | 확실 | 공식 | 업데이트 캐시를 GUI로 초기화하려면 서비스(services.msc)에서 Windows Update 서비스를 멈추고, SoftwareDistribution 폴더 안의 내용을 지운 뒤, 서비스를 다시 시작한다 | 공통 / PC 운영체제 / Windows 업데이트 캐시 / Windows 10/11 / 글로벌 |
+| `win-update-cache-reset-commands` | 확실 | 공식 | 관리자 명령 프롬프트에서 순서대로 net stop bits, net stop wuauserv, ren %systemroot%\softwaredistribution softwaredistribution.bak, ren %systemroot%\system32\catroot2 catroot2.bak, net start bits, net start wuauserv를 순서대로 입력하라고 Microsoft가 안내한다. 이 명령은 캐시 폴더를 삭제하지 않고 이름만 .bak으로 바꾼다 | 공통 / PC 운영체제 / Windows 업데이트 캐시 명령어 초기화 / Windows 10/11 / 글로벌 |
+| `win-update-backup-before-steps` | 확실 | 공식 | Windows 업데이트 문제 해결 방법을 시도하기 전에 개인 파일을 먼저 백업해야 한다고 Microsoft가 명시한다. 원드라이브(OneDrive)로 백업하는 방법도 공식 안내에 있다 | 공통 / PC 운영체제 / Windows 업데이트 전 백업 / Windows 10/11 / 글로벌 |
+| `win-update-error-table-win11` | 확실 | 공식 | Windows 11 업데이트 오류 코드 해석표(Microsoft 공식): 0x8007000d는 업데이트 파일 손상 또는 캐시 손상, 0x800705b4는 설치 시간이 너무 오래 걸렸거나 중단됨, 0x80240034는 불완전한 업데이트 또는 연결 문제로 멈춤, 0x800f0922는 디스크 공간 부족 또는 .NET Framework 등 구성요소 문제, 0x80070057·0x80080005는 파일 손상·권한·구성 문제, 0xC1900101은 호환되지 않는 드라이버, 0x80248014는 업데이트 데이터베이스 또는 서비스가 실행되지 않음, 0x80070005는 접근 거부·권한 부족, 0x80070002는 설치 실패 | 공통 / PC 운영체제 / Windows 11 업데이트 오류 코드 / Windows 11 / 글로벌 |
+| `win-update-error-table-win10` | 확실 | 공식 | Windows 10 업데이트 오류 코드 해석표(Microsoft 공식): 0x800705b4는 설치 시간 초과 또는 중단, 0x80240034는 불완전한 업데이트 또는 연결 문제로 멈춤, 0x800f0922·0x8007000E는 디스크 공간 부족, 0x800F081F·0x80073712·0x80246007은 시스템 파일 손상·누락 또는 다운로드 불완전, 0x80246007은 필요한 업데이트 파일 누락, 0x80070002·0x80070003·0x80070057은 설치 실패, 0x80070422는 Windows Update 서비스가 꺼져 있거나 멈춤, 0x80070020은 다른 프로그램이 업데이트를 막음 | 공통 / PC 운영체제 / Windows 10 업데이트 오류 코드 / Windows 10 / 글로벌 |
+| `win-update-drive-free-space-10-15-percent` | 확실 | 공식 | 드라이브의 여유 공간은 전체 용량의 10~15% 정도를 남겨두는 것이 좋다고 Microsoft가 권장한다. 이 수치는 필수 조건이 아니라 권장 기준이다 | 공통 / PC 운영체제 / Windows 드라이브 여유 공간 / Windows 10/11 / 글로벌 |
+| `win-update-uninstall-via-winre` | 확실 | 공식 | 업데이트 후 문제가 생기면 복구 환경(WinRE)에서 문제 해결 > 고급 옵션 > 업데이트 제거로 최근 Windows 업데이트를 지울 수 있다. 일부 업데이트는 제거할 수 없다 | 공통 / PC 운영체제 / Windows 최근 업데이트 제거 / Windows 10/11 / 글로벌 |
 
 ### 액션캠(고프로·오즈모류) 전원 불량·녹화 안 됨·배터리·방수 자가점검 <sub>2026-07-21 · 예정</sub>
 
@@ -6414,6 +7726,25 @@ _(팩트 없음)_
 
 ## 귀뚜라미
 
+### 귀뚜라미 가정용 보일러 에러코드 의미와 사용자 점검 범위 (AD 2자리 계열 · E+3자리 신형 계열) <sub>2026-11-03 · kiturami-boiler-error</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `kiturami-code-system-two-series` | 확실 | 공식 | 귀뚜라미 공식 자가진단매뉴얼의 에러코드 체계는 두 가지다. 거꾸로 IN AD 가스보일러는 01·93·97처럼 2자리 숫자를 쓰고, 거꾸로 IN L10·거꾸로 ECO L20·거꾸로 NEW P10은 E001·E297처럼 E와 3자리 숫자를 쓴다. | 귀뚜라미 / 가스보일러 / 거꾸로 IN AD(2자리) / 거꾸로 IN L10·ECO L20·NEW P10(E+3자리) / 미확인 / KR |
+| `kiturami-code-ignition-01-02-03-E001` | 확실 | 공식 | AD 계열 01·02·03과 신형 E001·E002·E003은 불꽃 감지 이상으로 점화가 되지 않거나 점화 직후 안전 차단되는 상태를 뜻한다. 공식 조치는 실내온도조절기의 전원·재가동 버튼으로 다시 켜고 가스밸브가 잠겨 있는지 확인하는 것이며, 반복되면 1588-9000으로 접수한다. | 귀뚜라미 / 가스보일러 / AD(01·02·03) / L10·L20·P10(E001·E002·E003) / 미확인 / KR |
+| `kiturami-code-water-shortage-93-95-E294-E491` | 확실 | 공식 | AD 계열 93·94·95는 보일러 안의 물이 부족하다는 뜻이다. 신형에서는 E294가 난방수 부족 정지, E491·E495가 같은 의미다. 공식 조치는 직수 배관 밸브가 열려 있는지 확인하고 재가동하는 것이며, 해제되지 않으면 AS를 부른다. | 귀뚜라미 / 가스보일러 / AD(93·94·95) / L10·L20·P10(E294·E491·E495) / 미확인 / KR |
+| `kiturami-code-overheat-96-E396` | 확실 | 공식 | AD 96과 신형 E396·E398·E399는 과열안전장치가 작동해 보일러가 멈춘 상태다. 공식 조치는 순환펌프가 난방수 온도를 낮출 때까지 기다리는 것이며, 해제되지 않으면 AS를 부른다. | 귀뚜라미 / 가스보일러 / AD(96) / L10·P10(E396·E398·E399) / 미확인 / KR |
+| `kiturami-code-gas-leak-97-E297` | 확실 | 공식 | AD 97과 신형 E297은 공기량 부족이나 역풍으로 배기가스가 실내로 들어오거나 가스 누설 경보가 울린 상태다. 공식 조치는 가스공급밸브를 잠그고 창문을 열어 환기하며, 전기 스위치나 전자레인지 등 전기기기를 쓰지 않고 외부 전화로 가스회사나 AS센터에 연락하는 것이다. | 귀뚜라미 / 가스보일러 / AD(97) / L10·L20·P10(E297) / 미확인 / KR |
+| `kiturami-code-fan-06-07-E106-E107` | 확실 | 공식 | AD 06과 신형 E106은 송풍기 회전수가 감지되지 않는 상태다. AD 07과 신형 E107·E110은 송풍기 회전수가 비정상인 상태다. 공식 조치는 보일러 가동을 멈추고 AS를 부르는 것이다. | 귀뚜라미 / 가스보일러 / AD(06·07) / L10·L20·P10(E106·E107·E110) / 미확인 / KR |
+| `kiturami-code-sensor-10-11-E204` | 확실 | 공식 | AD 10은 보일러 내 센서부 이상이고 AD 11은 과열 센서 단선이다. 신형 E204·E205·E214 등은 센서부 이상이다. 공식 조치는 보일러 가동을 멈추고 대리점 또는 AS센터에 연락하는 것이다. | 귀뚜라미 / 가스보일러 / AD(10·11) / L10·L20·P10(E204·E205·E214) / 미확인 / KR |
+| `kiturami-code-thermostat-wire-08` | 확실 | 공식 | AD 08은 실내온도조절기 연결 배선이 10m 이상으로 길거나 고압선·전화선과 닿은 상태다. 공식 조치는 피복 손상에 주의하고, 220V 전선이나 매설 배관과 함께 배선하지 않으며, 필요하면 특수 배선으로 재시공하는 것이다. | 귀뚜라미 / 가스보일러 / AD(08) 전용. 신형 표에는 해당 번호 없음 / 미확인 / KR |
+| `kiturami-code-earthquake-21-E621` | 확실 | 공식 | AD 21은 지진감지센서가 작동한 상태이고, 신형 E621은 지진감지기가 작동한 상태다. 두 경우 모두 지진 발생 시 표시되는 안전 기능이며, 지진 행동 요령에 따라 안전을 먼저 확보한 뒤 제품이 기울지 않았는지 확인한다. | 귀뚜라미 / 가스보일러 / AD(21) / L10·L20·P10(E621) / 미확인 / KR |
+| `kiturami-code-communication-E508` | 확실 | 공식 | 신형 E508은 통신 이상이다. 공식 조치는 보일러 가동을 멈추고 AS센터에 연락하는 것이다. AD 계열 표에는 같은 번호가 보이지 않는다. | 귀뚜라미 / 가스보일러 / L10·L20·P10(E508). AD 표에는 없음 / 미확인 / KR |
+| `kiturami-code-valves-setting-service-only` | 확실 | 공식 | 신형 E646(거꾸로 IN L10·NEW P10)은 비례제어 가스밸브 비정상, E632(NEW P10)는 믹싱밸브 비정상, E740(L10·L20·P10)은 컨트롤 딥스위치 설정 오류다. 공식 조치는 대리점이나 AS센터 연락이며, E740만 딥스위치 위치 확인이 함께 적혀 있다. | 귀뚜라미 / 가스보일러 / E646: L10·P10 / E632: P10 / E740: L10·L20·P10 / 미확인 / KR |
+| `kiturami-code-heating-leak-E492` | 확실 | 공식 | 신형 거꾸로 ECO L20의 E492는 난방배관 누수다. 공식 조치는 배관과 분배기에서 물이 새는지 확인하고 전원 코드를 뺐다가 다시 연결한 뒤, 계속되면 AS를 부르는 것이다. | 귀뚜라미 / 가스보일러 / ECO L20 전용(E492). 다른 신형 표에는 없음 / 미확인 / KR |
+| `kiturami-code-condensate-E622-E212-논쟁` | 논쟁 🔶 | 공식 | 신형 E622와 E212는 모델 표에 따라 뜻이 다르게 적혀 있다. E622는 ECO L20에서는 송풍기 회전수 이상, NEW P10에서는 응축수트랩 막힘 또는 배출 불량이다. E212는 NEW P10에서는 난방분배기 밸브가 모두 잠긴 상태, ECO L20에서는 난방라인 막힘 또는 순환 불량이다. 두 표 모두 응축수 배출구 또는 난방분배기 밸브를 확인하라고 한다. | 귀뚜라미 / 가스보일러 / ECO L20 / NEW P10 (신형 2개 표) / 미확인 / KR |
+| `kiturami-manual-download-by-model` | 확실 | 공식 | 귀뚜라미 공식 다운로드 페이지에서 제품 카테고리와 모델명으로 검색하면 해당 모델의 사용설명서와 e-카탈로그를 내려받을 수 있다. 에러코드 표를 찾을 때는 이 사용설명서로 자기 모델을 확인하는 것이 가장 정확하다. | 귀뚜라미 / 가스보일러 / 전 라인(모델별 PDF 존재 여부는 모델마다 다를 수 있음) / 미명시 / KR |
+
 ### 귀뚜라미 보일러 에러코드 공식 확인 시도, 자가진단 경로, 동결·가스 안전 경계(공통 안전 팩트 포함) <sub>2026-10-20 · 예정</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -6730,6 +8061,17 @@ _(팩트 없음)_
 
 ## 대성쎌틱
 
+### 대성쎌틱 보일러 에러코드 — 공식 코드표 부재 확인, 앱·고객지원 경로, 안전 기준선(KGS 재사용) <sub>2026-11-03 · daesung-celtic-boiler-error</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `daesung-errorcode-list-not-found` | 확인실패 | 공식 | 대성쎌틱 보일러의 공식 에러코드표(A6 등 코드별 의미와 조치)는 대성 공식 홈페이지 대성쎌틱에너시스 소개 페이지에서 확인되지 않았다. 2026-11-03 재확인에서도 같은 결과다. 이 시점까지 코드 뜻을 공식 근거로 쓸 수 있는 자료가 없다. | 대성쎌틱 / 가스보일러 / 전 라인(미확인) / 미확인 / KR |
+| `daesung-official-site-no-manual-menu` | 확실 | 공식 | 대성 공식 홈페이지의 대성쎌틱에너시스 소개 페이지 상단·하단 메뉴에는 고객지원, 자료실, 사용설명서, 에러코드 메뉴가 없다. 상단은 사업분야·인재채용·투자정보·회사소개, 하단은 개인정보처리방침·고객센터(윤리경영신고)·1:1 문의·오시는길로 구성돼 있다. | 대성쎌틱 / 가스보일러 / 전 라인 / 전 연식 / KR |
+| `daesung-iot-app-manual-error-alert` | 확실 | 공식 | 대성쎌틱에너시스㈜가 개발자로 등록한 '대성IoT보일러' 앱 소개에는 사용설명서 항목과 상태변경·에러알림 기능이 있다고 적혀 있다. 에러 알림은 앱으로 받을 수 있다는 뜻이다. | 대성쎌틱 / 가스보일러 / 앱 연동 모델(미확인) / 미확인 / KR |
+| `daesung-iot-app-auto-as-request` | 확실 | 공식 | 대성IoT보일러 앱 소개에는 '자동 A/S접수' 기능이 있다고 적혀 있다. 보일러 AS를 앱에서 먼저 접수할 수 있다는 뜻이다. | 대성쎌틱 / 가스보일러 / 앱 연동 모델(미확인) / 미확인 / KR |
+| `daesung-customer-phone-not-official` | 확인실패 | 공식 | 대성 공식 홈페이지의 대성쎌틱에너시스 소개 페이지에는 고객센터 전화번호가 없다. 하단 '고객센터' 메뉴는 윤리경영 신고 페이지로 연결되며, 공식 문의 경로로 확인되는 것은 홈페이지 '1:1 문의' 메뉴다. 블로그와 쇼핑몰에서 서로 다른 번호가 나오나 어느 것도 공식 확인되지 않았다. | 대성쎌틱 / 가스보일러 / 전 라인 / 전 연식 / KR |
+| `daesung-a6-meaning-unconfirmed` | 확인실패 | 공식 | 대성쎌틱 보일러 A6 코드의 뜻은 공식 자료에서 확인되지 않았다. 수리 업체 블로그 후기 한 곳이 점화 불량으로 설명하나 이는 제조사 근거가 아니다. | 대성쎌틱 / 가스보일러 / 모델 미확인 / 미확인 / KR |
+
 ### 대성쎌틱 보일러 에러코드 공식 확인 시도와 고객센터 경계(공통 가스 안전 팩트는 재사용) <sub>2026-10-20 · 예정</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -6738,6 +8080,18 @@ _(팩트 없음)_
 | `daesung-customer-phone-not-found` | 확인실패 | 공식 | 대성쎌틱 고객센터 전화번호는 공식 페이지에서 확인하지 못했다. 1588-8577은 블로그 글에서만 확인되었다. | 대성쎌틱 / 가스보일러 / 전 라인(미확인) / 미확인 / KR |
 
 ## 로보락
+
+### 로보락 로봇청소기 에러 안내음·멈춤 증상 자가점검 (센서·휠·브러시·먼지통·물탱크·충전, 앱 재연결, AS 기준) <sub>2026-11-03 · roborock-error-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `roborock-kr-warranty-1yr` | 확실 | 공식 | 로보락 한국 공식 보증은 구매일로부터 1년간 재료 및 제작상의 결함을 보증하며, 페이지에 로봇청소기 전용 보증 기간은 따로 없어 전 제품 공통 기준이 적용된다. | 로보락 / 로봇청소기 / 전 제품 공통 보증 문구 / 구매일 기준 1년 / KR |
+| `roborock-kr-warranty-exclusions` | 확실 | 공식 | 로보락 한국 보증 제외 항목은 배터리 등 소모품, 필터·브러시 등 액세서리, 충돌 등 외부 충격으로 인한 손상, 액체 침수 손상, 정상 마모와 외관 손상, 무단 수리·개조, 로보락 외 제품과 함께 사용한 경우, 정기 교체 부품이다. | 로보락 / 로봇청소기 / 전 제품 공통 / 전 연식 / KR |
+| `roborock-kr-warranty-proof` | 확실 | 공식 | 로보락 한국 AS 접수 시 구매 날짜가 표시된 영수증 등 구매 증빙을 제출해야 하며, 증빙이 없으면 공장 출하일을 기준으로 보증 기간을 판단한다. | 로보락 / 로봇청소기 / 전 제품 공통 / 전 연식 / KR |
+| `roborock-kr-as-kakao-channel` | 확실 | 공식 | 로보락 한국 공식 페이지 푸터에는 AS 카카오톡 문의 채널이 있으나, 운영 시간은 페이지에 표기되어 있지 않다. | 로보락 / 로봇청소기 / 전 제품 공통 / 전 연식 / KR |
+| `roborock-kr-as-email-garbled` | 논쟁 🔶 | 공식 | 로보락 한국 공식 페이지의 AS 이메일 표기는 두 가지가 공존한다. 본문 안내는 support@roborock.com이고, AS 이메일 항목에는 support@roborock.co.kr이 깨진 형태로 적혀 있어 정확한 주소가 확정되지 않는다. | 로보락 / 로봇청소기 / 전 제품 공통 / 전 연식 / KR |
+| `roborock-wifi-2ghz-claim-review` | 논쟁 🔶 | 후기 | 로보락 로봇청소기가 2.4GHz 대역 Wi-Fi를 요구한다는 설명이 제3자 가이드와 사용자 리뷰 사이트에 여러 건 있으나, 로보락 공식 지원 문서에서는 이 문구를 확인하지 못했다. | 로보락 / 로봇청소기 / 모델 미특정(일반 로보락 가이드) / 미명시 / 글로벌 |
+| `roborock-wifi-reset-gesture-claim` | 논쟁 🔶 | 후기 | 제3자 가이드는 로보락 Wi-Fi 재설정을 전원 버튼과 스팟 청소 버튼을 함께 길게 눌러 'Resetting WiFi' 음성 안내가 나올 때까지 누르는 방식으로 소개하지만, 모델별 버튼 조합은 공식 확인하지 못했다. | 로보락 / 로봇청소기 / 모델 미특정 / 미명시 / 글로벌 |
 
 ### 로보락 로봇청소기 에러코드(오류 번호)와 사용자 조치, A/S 경계 <sub>2026-10-20 · 예정</sub>
 
@@ -7954,6 +9308,62 @@ _(팩트 없음)_
 | `wireless-charging-coil-positioning` | 확실 | 공식 | 갤럭시 기기마다 무선 충전 코일의 위치가 다르므로, 무선 충전기에 올렸을 때 기기에 충전 알림이 표시되도록 정렬을 미세 조정해야 정상 충전된다 | 삼성 / 스마트폰 / 갤럭시 무선충전 지원 기종(S 시리즈, Z 시리즈 등) / 2015년 이후 / 글로벌 |
 | `safe-mode-entry-method` | 확실 | 공식 | 갤럭시는 부팅 시 삼성/갤럭시 로고가 나타나는 동안 음량(−) 버튼을 누르고 있으면 안전모드로 진입하며, 빠른 설정 패널에서 전원 아이콘 > 다시 시작을 선택하는 방법도 있다. 안전모드에서는 타사 앱이 모두 비활성화되어 앱 오류로 인한 기기 비정상 동작을 진단할 수 있다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / 글로벌 |
 
+### 갤럭시 Z 폴드·플립 화면 줄무늬·주름·접힘 오류 자가점검 <sub>2026-11-03 · galaxy-fold-flip-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `gfs-crease-normal-design` | 확실 | 공식 | 갤럭시 Z 폴드·플립 화면 중앙의 접힘 주름(크리스)은 플렉시블 디스플레이의 정상 특성이며 결함이 아니라고 삼성이 안내한다. 화면이 얇은 초박형 유리(UTG)와 여러 박막 층으로 구성되어 반복 접힘을 견디도록 설계됐기 때문이다. | 삼성 / 폴더블 스마트폰 / 갤럭시 Z Fold5·Flip5 안내 페이지 기준 / 2023년 출시 모델 안내. 이후 모델은 페이지 확인 필요 / 아일랜드 지원 페이지(글로벌 공통 문구로 판단) |
+| `gfs-crease-no-effect-on-quality` | 확실 | 공식 | 삼성 공식 안내에 따르면 화면 중앙 주름은 화면의 품질·수명·성능에 영향을 주지 않으며, 콘텐츠 시청과 기기 사용을 방해하지 않는다. | 삼성 / 폴더블 스마트폰 / 갤럭시 Z Flip / 2020년 10월 30일 최종 갱신 페이지 기준. 최신 모델 적용 여부는 확인 못 함 / 아프리카 지원 페이지(글로벌 공통 문구로 판단) |
+| `gfs-crease-visible-viewing-angle` | 확실 | 공식 | 삼성 공식 지원 페이지는 화면 중앙의 접힌 부분에 주름이 보일 수 있고, 보는 각도에 따라 약간 휘어 보일 수 있다고 안내한다. | 삼성 / 폴더블 스마트폰 / 갤럭시 Z 폴드·플립 (모델 특정 없는 공통 주의사항) / 페이지 게시일 2025-01-01 표기 / KR |
+| `gfs-impact-white-line-along-fold` | 확실 | 공식 | 외부 충격이 가해지면 접힘 중앙을 따라 흰 선이 생길 수 있으며, 삼성은 이를 내부 초박형 유리 손상과 연결해 안내한다. 충격 흔적이 있는 줄은 사용자 자가 수리 대상이 아니라 서비스센터 점검 대상이다. | 삼성 / 폴더블 스마트폰 / 갤럭시 Z 폴드·플립 공통 / 페이지 게시일 2025-01-01 표기 / KR |
+| `gfs-utg-impact-crack-warning` | 확실 | 공식 | 갤럭시 Z 폴더블 화면 내부의 초박형 유리(UTG)는 외부 충격이 전달되면 깨지거나 파손될 수 있으므로, 기기를 떨어뜨리는 등의 외부 충격을 피해야 한다고 삼성이 경고한다. | 삼성 / 폴더블 스마트폰 / 갤럭시 Z 폴드·플립 공통 / 페이지 게시일 2025-01-01 표기 / KR |
+| `gfs-foreign-object-between-screens` | 확실 | 공식 | 접을 때 화면 사이에 카드·열쇠·모래·금속가루 등 이물질이 끼면 화면이 손상될 수 있으며, 접힘 부분을 세게 누르거나 손가락을 화면 사이에 넣어 여는 것도 금지된다. 메인 화면의 공장 보호필름을 벗기거나 비정품 필름을 붙이는 것도 화면을 손상시킬 수 있다. | 삼성 / 폴더블 스마트폰 / 갤럭시 Z 폴드·플립 공통 / 페이지 게시일 2025-01-01 표기 / KR |
+| `gfs-hinge-tick-normal` | 확실 | 공식 | 갤럭시 Z 폴드4·플립4 힌지는 여러 부품으로 구성되어 접을 때 '틱' 소리가 약간 날 수 있으며, 삼성은 이를 부품 공차로 인한 정상 현상으로 안내하고 엄격한 내부 테스트를 통과한 제품이라고 밝힌다. | 삼성 / 폴더블 스마트폰 / 갤럭시 Z 폴드4·플립4 (페이지 기준 모델) / 2022년 출시 모델. 게시일 2022-08-30 표기 / KR |
+| `gfs-hinge-squeak-lock-sound-off` | 확실 | 공식 | 갤럭시 Z 폴드·플립을 열고 닫을 때 나는 찍찍 소리는 화면 잠금·해제 시 소리 피드백일 수 있다. 설정에서 '시스템 소리/진동 제어'의 화면 잠금/해제 소리를 끈 뒤 다시 개폐해 보면 구분할 수 있다. | 삼성 / 폴더블 스마트폰 / 갤럭시 Z 폴드4·플립4 (페이지 기준 모델) / 2022년 출시 모델 안내. 원 메뉴 위치는 One UI 버전에 따라 다를 수 있음 / KR |
+| `gfs-fold-angle-warranty-spec` | 확실 | 공식 | 갤럭시 Z 폴드4·플립4는 완전히 펼쳤을 때 메인 화면 기준 178.5도에서 181.5도 범위를 보증 각도로 안내한다. 힌지에 타사 보호 커버나 필름을 붙이면 이 각도가 달라질 수 있다. | 삼성 / 폴더블 스마트폰 / 갤럭시 Z 폴드4·플립4 (페이지 기준 모델) / 2022년 출시 모델. 다른 세대 각도 기준은 확인 못 함 / KR |
+| `gfs-hinge-corner-vinyl-remove` | 확실 | 공식 | 갤럭시 Z 폴드4·플립4 힌지 모서리에 붙어 있는 보호비닐은 제거하라고 삼성이 안내하며, 메인 화면의 보호필름은 그대로 두라고 한다. | 삼성 / 폴더블 스마트폰 / 갤럭시 Z 폴드4·플립4 (페이지 기준 모델) / 2022년 출시 모델 안내 / KR |
+| `gfs-moderator-troubleshoot-then-service` | 논쟁 🔶 | 후기 | 갤럭시 Z 플립6 화면에 세로 붉은 줄이 나타난 사례에서 삼성 커뮤니티 모더레이터는 줄·점 문제의 트러블슈팅 안내를 먼저 따라 보고, 해결되지 않으면 공인 서비스센터에서 점검받으라고 답했다. | 삼성 / 폴더블 스마트폰 / 갤럭시 Z 플립6 / 2024년 출시 모델 사례 / US 커뮤니티(국내 AS 기준과 다를 수 있음) |
+| `gfs-line-selfcheck-official-not-found` | 확인실패 | 공식 | 삼성 공식 문서에서 갤럭시 Z 폴드·플립의 화면 줄무늬를 기기에서 판별하는 전용 자가진단 절차는 확인하지 못했다. 삼성 미국 지원의 줄·점 문제 트러블슈팅 링크는 일반 지원 랜딩 페이지로 열려 실제 절차가 없었다. | 삼성 / 폴더블 스마트폰 / 갤럭시 Z 폴드·플립 전 라인 / 전 연식 / US 페이지 확인. 국내 공식 자가진단 절차 미확인 |
+| `gfs-service-center-kr-contact` | 확실 | 공식 | 삼성전자서비스 폴더블 주의사항 페이지는 AS 문의 대표전화를 1588-3366(발신자 부담)으로, 모바일센터 예약과 AI 상담봇 이용을 안내한다. | 삼성 / 폴더블 스마트폰 / 갤럭시 Z 폴드·플립 공통 / 페이지 게시일 2025-01-01 표기 / KR |
+
+### 갤럭시 발열 원인과 줄이는 순서 (재시작·앱·설정 점검, 위험 신호와 서비스센터) <sub>2026-11-03 · galaxy-overheat-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `galaxy-overheat-cause-heavy-use` | 확실 | 공식 | 갤럭시는 고사양 게임, 고화질 영상이나 스트리밍, GPS 추적, 장시간 동영상 촬영, 화면 밝기를 최대로 둔 채 장시간 사용할 때 발열이 생긴다. 멀티윈도우와 백그라운드 앱이 많이 돌 때도 열이 난다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `galaxy-overheat-cause-charging-accessory` | 확실 | 공식 | 충전 중 발열은 손상되었거나 규격에 맞지 않는 충전기·케이블을 쓸 때, 무선충전 시 카드·금속·자석 같은 이물질이 기기와 충전기 사이에 끼었을 때 생길 수 있다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 (무선충전 기종은 무선충전 항목 해당) / 전 연식 / KR |
+| `galaxy-overheat-cause-heat-trapping-environment` | 확실 | 공식 | 열이 빠져나갈 곳이 없는 환경에서 발열이 심해진다. 이불·침대·소파 위, 전기장판·핫팩 근처, 가방 속, 직사광선(자동차 안·해변·테라스), 사우나·찜질방·밀폐된 실내가 해당한다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `galaxy-overheat-cause-hotspot-weak-signal` | 확실 | 공식 | 핫스팟·테더링을 제공하는 중이거나 통신 신호가 약한 지역, 해외 로밍 중에는 기기가 평소보다 쉽게 뜨거워진다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / 글로벌(싱가포르 지원 페이지 기준) |
+| `galaxy-overheat-step-restart-first` | 확실 | 공식 | 발열, 빠른 배터리 소모, 느려짐 중 하나라도 있으면 가장 먼저 기기를 다시 시작한다. 재시작은 실행 중인 앱 간 충돌을 정리해 발열 증상을 줄이는 데 도움이 된다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `galaxy-overheat-step-software-update` | 확실 | 공식 | 발열을 줄이려면 대기 중인 소프트웨어 업데이트를 먼저 설치하고, 사용 중인 앱도 최신 버전인지 확인한다. 소프트웨어 업데이트는 설정 > 소프트웨어 업데이트에서 다운로드 후 설치한다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / 글로벌(싱가포르 지원 페이지 기준) |
+| `galaxy-overheat-step-device-care-optimize` | 확실 | 공식 | 설정 > 디바이스 케어 > 지금 최적화를 실행해 배터리를 많이 쓰는 앱과 백그라운드 작업을 정리한다. 실행 중인 앱을 끈 뒤 잠시 사용을 멈추는 것도 함께 한다 | 삼성 / 스마트폰 / One UI 디바이스 케어가 있는 갤럭시 / One UI 메뉴 기준 / KR |
+| `galaxy-overheat-step-power-light-mode` | 확실 | 공식 | 발열이 계속되면 설정 > 디바이스 케어 > 배터리에서 절전 모드를 켜고, 백그라운드 앱 사용 제한에서 '사용하지 않는 앱을 절전 상태로 전환'을 켠다. 설정 > 디바이스 케어 > 사용 유형별 성능에서 라이트를 선택하면 성능 부하가 줄어든다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / One UI 메뉴 기준 / KR |
+| `galaxy-overheat-step-radios-brightness-refresh` | 확실 | 공식 | 쓰지 않는 Wi-Fi·GPS·블루투스는 끄고, 화면 밝기를 낮추고, 주사율 설정이 있는 기종은 주사율을 Standard로 바꾸면 전력 소모와 발열이 줄 수 있다. 높은 주사율은 화면이 부드럽지만 전력을 더 쓴다 | 삼성 / 스마트폰 / 주사율 설정이 있는 갤럭시(고주사율 기종) / 전 연식 / 글로벌(싱가포르 지원 페이지 기준) |
+| `galaxy-overheat-step-charging-cool-cable` | 확실 | 공식 | 충전 중 발열이 나면 충전기를 분리하고 실행 중인 앱을 모두 끈 뒤, 기기 온도가 내려갈 때까지 기다렸다가 다시 충전한다. 충전 포트 하단 커넥터 부분이 특히 뜨거우면 USB 케이블이 손상되었을 수 있으니 정품 케이블로 바꿔 시험한다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / KR |
+| `galaxy-overheat-step-samsung-members-diagnosis` | 확실 | 공식 | 위 방법으로 나아지지 않으면 삼성 멤버스 앱의 휴대전화 진단에서 배터리 상태를 점검한다. 멤버스 앱 연결이 안 되면 삼성 인터넷 앱에서 접속해 시도한다. 갤럭시 Good Guardians 앱의 Battery Tracker로 배터리를 많이 쓴 앱을 확인할 수 있고, Thermal Guardian에서 온도 기준값을 정해 기기 성능을 제한해 발열을 줄일 수 있다 | 삼성 / 스마트폰 / Good Guardians 지원 갤럭시 (Thermal Guardian은 One UI 1.5 이상) / One UI 1.5 이상 · 신형 모델은 바로 적용되지 않을 수 있음 / KR |
+| `galaxy-overheat-danger-stop-use` | 확실 | 공식 | 기기가 뜨거워 불편하면 사용을 멈추고, 온도가 내려갈 때까지 다시 쓰지 않는다. 과열이 지속되면 피부 자극·기기 손상·배터리 누액이 생길 수 있다. 손상되었거나 오작동하는 충전기나 배터리는 사용하지 않는다 | 삼성 / 스마트폰 / 갤럭시 전 시리즈 / 전 연식 / 글로벌(싱가포르 지원 페이지 기준) |
+| `galaxy-overheat-danger-swelling-charging-unverified` | 확인실패 🔶 | 후기 | 배터리가 부풀었을 때 충전해도 되는지는 삼성 공식 문서에서 확인하지 못했다. 삼성 커뮤니티 글에서는 서비스센터 기사의 '충전 가능' 안내와 고객센터의 '충전하지 말 것' 안내가 엇갈린다고 보고됐다 | 삼성 / 스마트폰 / 갤럭시 (모델 미상) / 미확인 / KR |
+| `galaxy-overheat-aftercare-warranty-contact` | 확실 | 공식 | 갤럭시 배터리 보증 기간은 1년이다. 보증 기간 안에 배터리 불량이 확인되면 무상 교체를 받을 수 있고, 배터리 자체 불량이 아니거나 고객 과실이 있으면 보증 기간 안이라도 유상 수리가 될 수 있다. 대표전화는 1588-3366이며 모바일센터 예약(주말 예약 서비스 포함)을 이용할 수 있다 | 삼성 / 스마트폰·워치·태블릿 / 갤럭시 전 시리즈 (배터리) / 구입 후 1년 이내(보증 기간) / KR |
+
+### 갤럭시 저장공간이 부족할 때 정리하는 순서 (기기 케어 확인 → 백업 먼저 → 휴지통·대용량·미사용 앱 → 캐시 → 클라우드 이동, 안 되면 공식 접수) <sub>2026-11-03 · galaxy-storage-full-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `galaxy-storage-check-path-device-care` | 확실 | 공식 | 갤럭시 저장공간 상태는 설정 > 배터리 및 기기 케어 > 저장공간에서 확인한다. 구형 One UI 계열은 같은 메뉴가 '디바이스 케어'로 표시된다. | 삼성 / 스마트폰 / 갤럭시 휴대폰(One UI) / 구형은 '디바이스 케어', 신형은 '배터리 및 기기 케어' / 글로벌(UK 페이지 기준) |
+| `galaxy-storage-storage-menu-tools` | 확실 | 공식 | 갤럭시 저장공간 메뉴에는 휴지통(Recycle bin), 미사용 앱(Unused apps), 중복 파일(Duplicate files), 대용량 파일(Large files) 항목이 있으며, 각 항목에서 선택 후 Empty·Uninstall·Delete로 정리한다. | 삼성 / 스마트폰 / 갤럭시 휴대폰(One UI) / 구형 '디바이스 케어' 포함 전 연식 확인 / 글로벌(UK 페이지 기준) |
+| `galaxy-storage-optimize-now-korea` | 확실 | 공식 | 국내 공식 안내에 따르면 설정 > 디바이스 케어 > 지금 최적화로 저장공간을 확보하고 불필요한 파일과 백그라운드 실행 앱을 정리할 수 있다. | 삼성 / 스마트폰 / 갤럭시 휴대폰(국내 One UI) / 전 연식 확인 불가, 현행 One UI 기준 / KR |
+| `galaxy-storage-memory-clean-now-not-storage` | 확실 | 공식 | 갤럭시의 메모리 > 지금 정리(Clean now)는 실행 중인 백그라운드 앱을 닫아 메모리를 확보하는 기능이며, 공식 설명에 파일을 삭제해 저장공간을 늘린다는 내용은 없다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 / 전 연식 확인 불가, 현행 One UI 기준 / 글로벌(PH 페이지 기준) |
+| `galaxy-storage-cache-clear-path` | 확실 | 공식 | 앱 캐시는 설정 > 앱 > 해당 앱 > 저장공간 > 캐시 삭제(Clear cache)로 지운다. 앱 데이터 삭제(Clear data)는 캐시와 다른 메뉴다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 / 전 연식 확인 불가, 현행 One UI 기준 / 글로벌(PH 페이지 기준) |
+| `galaxy-storage-app-data-delete-includes-files` | 확실 | 공식 | 앱 데이터를 삭제하면 파일·설정·계정·데이터베이스가 함께 지워지므로 데이터 삭제는 백업 후에 하라고 삼성 공식 안내가 경고한다. | 삼성 / 스마트폰 / 갤럭시 휴대폰(One UI) / 전 연식 / KR |
+| `galaxy-storage-uninstall-unused-apps` | 확실 | 공식 | 저장공간을 확보하려면 사용하지 않는 앱을 먼저 삭제하라고 삼성 공식 안내가 권한다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 / 전 연식 / KR |
+| `galaxy-storage-large-media-cause` | 확실 | 공식 | 사진·동영상 등 대용량 데이터가 쌓이면 저장공간이 부족해질 수 있다고 삼성 공식 안내가 적는다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 / 전 연식 / KR |
+| `galaxy-storage-google-photos-backup-first` | 확실 | 공식 | Google 포토의 '기기 저장공간 확보' 기능은 백업이 완료된 사진·영상만 기기에서 지운다. 사용 전에 사진이 제대로 백업됐는지 먼저 확인해야 한다고 Google 공식 도움말이 명시한다. | 공통(Google) / 스마트폰 / Android 기기의 Google 포토 앱 / 전 연식 / 글로벌 |
+| `galaxy-storage-google-photos-cloud-copy-remains` | 확실 | 공식 | Google 포토에서 기기 저장공간을 비워도 사진과 동영상은 Google 포토 라이브러리에 그대로 남아 보거나 공유할 수 있다. | 공통(Google) / 스마트폰 / Android 기기의 Google 포토 앱 / 전 연식 / 글로벌 |
+| `galaxy-storage-cloud-warning-is-separate` | 확실 | 공식 | Google 포토 등 클라우드 계정의 저장공간 경고는 기기 저장공간과 별개다. Google 계정 저장공간을 관리하면 그 계정 용량이 줄어들 뿐 기기 용량은 바로 늘지 않는다. | 공통(Google) / 클라우드 저장공간 / Google 계정 저장공간 / 전 연식 / 글로벌 |
+| `galaxy-storage-update-fail-safe-mode` | 확실 | 공식 | 저장공간이 충분한데도 소프트웨어 업데이트가 안 되면 안전 모드에서 업데이트를 시도해볼 수 있다고 삼성 공식 안내가 적는다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 / 전 연식 / KR |
+| `galaxy-storage-menu-path-varies` | 확실 | 공식 | 갤럭시 저장공간 정리 메뉴 경로는 기기 모델과 소프트웨어 버전에 따라 다를 수 있다고 삼성 공식 지원 페이지가 명시한다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 전 라인 / 전 연식 / 글로벌(PH 페이지 기준) |
+| `galaxy-storage-service-center-escalation` | 확실 | 공식 | 삼성 공식 지원 페이지는 자가 조치로 해결되지 않으면 모바일센터 예약과 AI CS Bot 상담을 안내한다. 방문 점검 경로는 이 공식 안내가 가리키는 곳이다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 / 전 연식 / KR |
+
 ### 갤럭시탭 충전 안 됨·화면 멈춤·배터리 소모·S펜 인식 자가점검 <sub>2026-07-21 · 예정</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -7975,6 +9385,25 @@ _(팩트 없음)_
 | `s-pen-screen-protector-issue` | 확실 | 공식 | 갤럭시탭의 강화유리 보호필름(스크린 프로텍터)은 S펜 인식 감도를 저하시킬 수 있다. 필름으로 인해 화면 표면이 고르지 않거나 두꺼워지면 S펜이 정상 거리에서 감지되지 않을 수 있다. | 삼성 / 태블릿 / 갤럭시탭 S펜 탑재 모델 / 전 연식 / 글로벌 |
 | `samsung-members-selfcheck-touch` | 확실 | 공식 | 갤럭시탭 화면 터치 문제의 진단은 Samsung Members 앱 > 기기 진단 > 화면(터치) 항목에서 자동 테스트를 실행할 수 있다. 앱이 터치 인식 불량을 감지하면 결과를 보여주고 해결 방법을 제안한다. | 삼성 / 태블릿 / 갤럭시탭 전 시리즈(멤버스 앱 설치 필수) / 전 연식 / 글로벌 |
 | `tab-software-update-importance` | 확실 | 공식 | 갤럭시탭의 충전 문제, 터치 불량, S펜 인식 오류, 배터리 문제는 소프트웨어 업데이트로 개선될 수 있다. 설정 > 정보 > 소프트웨어 업데이트에서 최신 버전 설치 여부를 확인하고 업데이트가 있으면 설치해야 한다. | 삼성 / 태블릿 / 갤럭시탭 전 시리즈 / 전 연식 / 글로벌 |
+
+### 갤럭시 소프트웨어 업데이트가 실패하거나 멈출 때 (저장공간·배터리·네트워크 원인, 백업 우선, 단계별 조치, 서비스센터 기준) <sub>2026-11-03 · galaxy-update-failure-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `galaxy-update-cause-storage-official` | 확실 | 공식 | 갤럭시 소프트웨어를 최신 버전으로 업데이트할 수 없을 때 원인은 기기 저장공간 부족일 수 있다. 공식 안내가 업데이트 실패의 첫 번째 원인으로 든다. | 삼성 / 스마트폰 / 갤럭시 휴대폰(One UI) / 전 연식 / KR |
+| `galaxy-update-battery-20-percent-official` | 확실 | 공식 | 갤럭시 업데이트를 시작하기 전에 배터리가 20% 이상 충전되어 있는지 확인하라고 삼성 공식 안내가 명시한다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 / 전 연식 / KR |
+| `galaxy-update-storage-amount-not-published` | 확실 | 공식 | 갤럭시 업데이트에 필요한 저장공간 양은 기기 화면에 표시되며, 삼성 공식 지원 문서에는 최소 필요 용량(GB)이 숫자로 적혀 있지 않다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 / 전 연식 / 글로벌(PH 페이지 기준) |
+| `galaxy-update-backup-before-storage-cleanup` | 확실 | 공식 | 업데이트를 위해 저장공간을 비울 때 용량이 큰 데이터는 PC나 클라우드에 먼저 백업한 뒤 공간을 확보하라고 삼성 공식 안내가 권한다. | 삼성 / 스마트폰 / 갤럭시 휴대폰(One UI) / 전 연식 / KR |
+| `galaxy-update-storage-cleanup-path` | 확실 | 공식 | 갤럭시에서 저장공간을 확보하는 경로는 설정 > Device Care(기기 관리) > Storage > Clean now이며, 안 쓰는 앱은 설정 > Apps에서 선택해 삭제한다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 / 전 연식 / 글로벌(AE 페이지 기준) |
+| `galaxy-update-network-wifi-recommended` | 확실 | 공식 | 갤럭시 업데이트 다운로드 전에 안정적인 Wi-Fi 연결을 강하게 권장하며, 연결이 약하면 설치를 멈추고 나중에 다시 시도하라고 삼성 공식 안내가 적는다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 / 전 연식 / 글로벌(PH 페이지 기준) |
+| `galaxy-update-safe-mode-retry` | 확실 | 공식 | 저장공간이 충분한데도 업데이트가 실패하면 안전 모드로 재시작해 비행기 모드를 끈 뒤 설정 > 소프트웨어 업데이트에서 다시 시도할 수 있다. 제3자 앱 충돌을 걸러내는 용도다. 확인 후 전원 메뉴에서 다시 시작해 안전 모드를 해제한다. | 삼성 / 스마트폰 / 갤럭시 휴대폰(One UI) / 전 연식 / KR |
+| `galaxy-update-smartswitch-pc-steps` | 확실 | 공식 | PC에서 업데이트하려면 Smart Switch를 실행하고 제공된 USB 케이블로 갤럭시를 연결한 뒤, 휴대폰 USB 연결 설정을 파일 전송으로 맞추고 업데이트를 진행한다. 업데이트 중에는 USB 케이블을 분리하거나 기기를 사용하지 말아야 한다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 / 전 연식 / KR |
+| `galaxy-update-smartswitch-troubleshoot-usb-port` | 확실 | 공식 | Smart Switch PC 업데이트가 계속 실패하면 PC 업데이트와 재부팅 후 Smart Switch를 삭제했다가 재설치하고, 다른 USB 포트·다른 케이블·다른 PC 순으로 바꿔 시도할 수 있다고 삼성 공식 지원 페이지가 안내한다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 / 전 연식 / 미국(US) 페이지 기준 |
+| `galaxy-update-emergency-recovery-pc` | 확실 | 공식 | Smart Switch 업데이트가 중간에 멈추고 응급 복구 화면이 뜨면, 기기를 PC에서 분리한 뒤 Smart Switch를 껐다 켜고 더보기 > '소프트웨어 응급복구 및 초기화'에서 응급 복구를 진행한다. 같은 PC에서 안 되면 복구 코드를 적어 두었다가 다른 PC에서 '복구 코드로 응급 복구하기'를 선택한다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 / 전 연식 / KR |
+| `galaxy-update-service-center-contact` | 확실 | 공식 | 업데이트 실패가 계속되면 삼성 서비스 대표전화 1588-3366(통화요금 발신자 부담)으로 문의하거나, 센터찾기·모바일센터 예약 메뉴에서 서비스센터를 찾을 수 있다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 / 전 연식 / KR |
+| `galaxy-update-boot-failure-reflash-us` | 확실 | 공식 | 미국 삼성 지원 기준으로 업데이트 실패 후 기기가 정상 부팅되지 않으면 서비스센터에서 기기를 리플래시해야 한다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 / 전 연식 / 미국(US) |
+| `galaxy-update-staged-rollout-recheck` | 확실 | 공식 | 갤럭시 업데이트는 단계적으로 배포되므로 업데이트 알림이 바로 안 떠도 몇 시간 간격으로 다시 확인하라고 삼성 공식 지원 페이지가 안내한다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 / 전 연식 / 미국(US) 페이지 기준 |
+| `galaxy-update-device-eligibility-check` | 확실 | 공식 | 최신 안드로이드 버전 지원 기기인지 확인하려면 Samsung Members 앱에서 호환 기기 목록을 확인할 수 있다. 목록에 없는 기기는 최신 버전이 배포되지 않는다. | 삼성 / 스마트폰 / 갤럭시 휴대폰 / 구형 기기는 지원 종료 여부 확인 필요 / 글로벌(PH 페이지 기준) |
 
 ### 갤럭시워치 연결 끊김·충전 안 됨·배터리 소모·센서 정확도 자가점검 <sub>2026-07-21 · galaxy-watch-selfcheck</sub>
 
@@ -8071,6 +9500,41 @@ _(팩트 없음)_
 | `lg-r9-docking-failed-signal-sensor-dirty` | 확실 | 공식 | LG R9이 충전대를 찾지 못할 때 충전대 신호 감지 센서와 먼지센서가 이물이나 먼지에 가려 있을 수 있으므로, 이물질이나 먼지를 제거해야 한다 | LG / 로봇청소기 / R9 / 현행 판매 모델 / KR |
 | `lg-r9-sensor-types-and-cleaning` | 확실 | 공식 | LG R9의 주요 센서 종류는 장애물 감지 센서, 뷰어 센서, 낭떠러지 감지 센서, 충전단자, 먼지 센서이며, 이들을 면봉이나 부드러운 천을 사용하여 주기적으로 청소해야 한다 | LG / 로봇청소기 / R9 / 현행 판매 모델 / KR |
 
+### 삼성 공기청정기 필터 교체 표시·풍량 약함 자가점검 <sub>2026-11-03 · samsung-air-purifier-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `samsung-filter-reset-cube-two-buttons` | 논쟁 🔶 | 공식 | 삼성 공기청정기 큐브 시리즈의 필터 리셋 방법은 '라이팅(필터 리셋)' 버튼 3초 이상과 '모드' 버튼 10초 이상 두 가지가 공식 표에 함께 나오는데, 원문은 어느 버튼이 필터 리셋인지 명시하지 않는다. | 삼성 / 공기청정기 / 큐브 시리즈 / 현행 판매 모델 / KR |
+| `samsung-filter-reset-legacy-and-small-models` | 확실 | 공식 | 2009년 이전 삼성 공기청정기는 '교환' 버튼을 3초 이상, 소형 공기청정기는 필터 아이콘 버튼을 3초 이상 누르면 필터 교체 표시가 리셋된다. | 삼성 / 공기청정기 / 2009년 이전 모델 및 소형 모델 / 2009년 이전 / 소형 현행 / KR |
+| `samsung-filter-lamp-time-based` | 확실 | 공식 | 삼성 최근 공기청정기의 필터 교체 램프는 가동시간 기준으로 약 1년 뒤 켜지며, 실내 공기나 필터의 오염도와 무관한 알람이다. | 삼성 / 공기청정기 / 최근 출시 모델(블루스카이 등) / 최근 출시 / KR |
+| `samsung-filter-cycle-three-types` | 확실 | 공식 | 삼성 공기청정기의 필터 교체 주기는 모델에 따라 5년 주기, 2년 주기, 교체 램프 점등 방식의 세 가지로 나뉜다. | 삼성 / 공기청정기 / 전 라인 / 전 연식 / KR |
+| `samsung-filter-reset-only-after-replacement` | 확실 | 공식 | 삼성 공기청정기는 필터를 교체한 뒤에 리셋해야 하며, 교체하지 않고 리셋하거나 오래된 필터를 계속 쓰면 표시등이 오작동할 수 있다. | 삼성 / 공기청정기 / 대부분의 삼성 공기청정기 / 전 연식 / 글로벌(UAE 페이지) |
+| `samsung-filter-2in1-deodorizing-replacement` | 확실 | 공식 | 삼성 공기청정기 교체 램프가 켜지면 교체 대상은 탈취와 먼지 집진을 겸한 2-in-1 필터다. | 삼성 / 공기청정기 / 2-in-1 필터 모델 / 전 연식 / 글로벌(UAE 페이지) |
+| `samsung-filter-paid-service-scope` | 확실 | 공식 | 무상 보증기간 안이라도 사용법 설명이나 설치 등 제품 고장이 아닌 경우에는 서비스 요청 시 별도 요금이 부과된다. | 삼성 / 공기청정기 / 전 라인 / 보증기간 내외 공통 / KR |
+| `samsung-gas-indicator-not-filter-reset` | 논쟁 🔶 | 후기 | 삼성 공기청정기의 'GAS' 표시는 필터 교체 표시와 별개의 냄새 감지 메시지이므로 필터 리셋으로 지워지지 않는다. 블로그 정리에 따르면 전원을 끄고 콘센트를 뽑아 1분 이상 두면 센서가 초기화된다. | 삼성 / 공기청정기 / GAS 표시가 뜨는 모델 / 미확인 / KR |
+| `samsung-reset-not-cleared-smartthings-report` | 논쟁 🔶 | 후기 | 필터 교체 후 본체에서 리셋했는데도 SmartThings 앱에 필터 교체 알림이 계속 뜨고 앱의 필터 리셋이 활성화되지 않는다는 사용자 보고가 있다(2025년 4월 게시, 1건). | 삼성 / 공기청정기 / SmartThings 연동 모델(오래된 모델 사례) / 2025-04 게시 기준 / KR |
+| `samsung-weak-airflow-no-official-checklist` | 확인실패 | 공식 | 삼성 공기청정기 풍량 약함에 대한 공식 자가점검 절차는 이번 조사에서 찾지 못했다. 확인된 공식 자료는 필터 리셋·교체 안내와 무상 범위까지이며, 풍량 전용 점검 항목은 없다. | 삼성 / 공기청정기 / 전 라인 / 전 연식 / KR |
+
+### 삼성 비스포크 제트 흡입력 약함·충전 불량 자가점검 <sub>2026-11-03 · samsung-bespoke-jet-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `jet-suction-weak-disassembly-order` | 확실 | 공식 | 비스포크 제트 흡입력이 약하면 브러시 분리 버튼으로 브러시를 떼고, 회전솔을 PUSH 버튼으로 분리한 뒤, 연장관·먼지통·모터 필터·그릴 순서로 분리해 안쪽 이물을 확인하고 제거한다 | 삼성 / 무선청소기 / 비스포크 제트 (AI 포함) / 현행 판매 모델 / KR |
+| `jet-selfcheck-ai-mode-trigger-2023` | 확실 | 공식 | 2023년 9월 소프트웨어 업데이트 이후, 비스포크 제트 AI는 기본 흡입력이 AI 모드일 때 청정스테이션에 거치하면 자가진단이 실행된다. 기본 흡입력이 AI가 아니어도 청소 중 AI 모드를 5분 이상 쓰면 거치 시 자가진단이 실행된다 | 삼성 / 무선청소기 / 비스포크 제트 AI / 2023년 9월 소프트웨어 업데이트 이후 / KR |
+| `jet-selfcheck-disable-via-smartthings` | 확실 | 공식 | 스마트싱스 앱에서 기기 > 스틱 청소기 > 기본 흡입력으로 들어가 일반·강력·초강력·제트 중 하나를 고르면, 청정스테이션 거치 시 자가진단이 자동으로 실행되지 않는다 | 삼성 / 무선청소기 / 비스포크 제트 AI (스마트싱스 연결 모델) / 2023년 9월 소프트웨어 업데이트 이후 / KR |
+| `jet-selfcheck-manual-start` | 확실 | 공식 | 청정스테이션에 거치한 상태에서 손잡이의 + 버튼과 - 버튼을 동시에 3초 이상 누르면 자가진단이 수동으로 시작된다 | 삼성 / 무선청소기 / 비스포크 제트 AI / 2023년 9월 소프트웨어 업데이트 이후 / KR |
+| `jet-selfcheck-not-running-checklist` | 확실 | 공식 | 자가진단이 돌지 않을 때 확인할 것은 네 가지다. 브러시에 LED 마루 브러시 플러스가 장착돼 있는지, 청정스테이션 전원코드가 연결돼 있는지, 기본 흡입력이 AI인지(또는 AI 모드 5분 사용 여부), 블루투스 연결 상태다. 블루투스 상태는 청정스테이션 START/STOP 버튼을 3초 이상 길게 누르면 파란색 깜박임은 연결됨, 빨간색 깜박임은 연결 필요를 뜻한다 | 삼성 / 무선청소기 / 비스포크 제트 AI (LED 마루 브러시 플러스 장착 모델) / 2023년 9월 소프트웨어 업데이트 이후 / KR |
+| `jet-charging-led-meaning` | 확실 | 공식 | 비스포크 제트를 청정스테이션에 올려 충전하면 배터리 LED가 켜지고 LCD에 충전량(%)이 표시된다. 충전이 끝나면 배터리 LED가 초록색이 되고 LCD는 꺼진다 | 삼성 / 무선청소기 / 비스포크 제트 (청정스테이션 220V 60Hz) / 현행 판매 모델 / KR |
+| `jet-battery-led-color-bands` | 확실 | 공식 | 비스포크 제트 배터리 LED 색은 잔량 구간을 나타낸다. 빨강은 0~8%, 주황은 9~29%, 노랑은 30~99%, 초록은 100%다 | 삼성 / 무선청소기 / 비스포크 제트 / 현행 판매 모델 / KR |
+| `jet-charging-check-order` | 확실 | 공식 | 충전이 안 될 때 점검 순서는 다음과 같다. 청정스테이션 전원선과 어댑터 연결, 본체의 거치 상태를 먼저 확인하고, 거치대 안착부와 충전 단자의 먼지·이물을 면봉이나 부드러운 천으로 닦는다. 장기간 쓴 뒤라면 배터리 교체를 검토하고, 그래도 안 되면 엔지니어 점검을 받는다 | 삼성 / 무선청소기 / 비스포크 제트 (청정스테이션 방식) / 현행 판매 모델 / KR |
+| `jet-charging-cause-triage` | 확실 | 공식 | 비스포크 제트 충전 불량의 원인은 세 가지로 나뉜다. 충전 거치대와 본체가 맞닿지 않는 접촉 불량, 청소기와 배터리가 결합되지 않은 장착 불량, 배터리 또는 어댑터 이상이다. 세 가지를 모두 바르게 맞춰도 충전되지 않으면 엔지니어 점검 대상이다 | 삼성 / 무선청소기 / 비스포크 제트 / 현행 판매 모델 / KR |
+| `jet-charging-power-spec` | 확실 | 공식 | 비스포크 제트 청정스테이션은 220V 60Hz 전원을 쓴다. 전원이 안 켜지면 전원코드와 어댑터 연결, 거치대 장착 상태를 먼저 본다 | 삼성 / 무선청소기 / 비스포크 제트 (청정스테이션) / 현행 판매 모델 / KR |
+| `jet-paid-service-non-fault` | 확실 | 공식 | 무상 보증기간 안에 있어도 사용법 설명이나 설치처럼 고장이 아닌 경우에는 서비스 요청 시 별도 요금이 부과될 수 있다 | 삼성 / 무선청소기 / 전 모델 / 보증기간 내 / KR |
+| `jet-service-reception-channels` | 확실 | 공식 | 비스포크 제트 서비스 접수 경로는 삼성전자서비스 출장서비스 예약, 예약 조회와 센터 찾기, AI CS Bot 상담, 대표전화 1588-3366(통화 요금 발신자 부담)이다 | 삼성 / 무선청소기 / 비스포크 제트 / 현행 판매 모델 / KR |
+| `jet-battery-warranty-unverified` | 확인실패 | 공식 | 삼성전자서비스 배터리 교체 안내 페이지에서 확인한 보증기간(1년, 일부 2년)은 비스포크 스팀과 비스포크 AI 스팀 계열 기준이며, 비스포크 제트(무선 스틱)의 배터리 보증기간은 이 페이지에서 확인하지 못했다 | 삼성 / 무선청소기 / 비스포크 제트 / 전 연식 / KR |
+| `jet-battery-replacement-cost-unverified` | 확인실패 | 공식 | 비스포크 제트 배터리 교체 비용은 공식 안내에서 확인하지 못했다. 교체 절차 안내는 로봇청소기 기준으로만 나와 있다 | 삼성 / 무선청소기 / 비스포크 제트 / 전 연식 / KR |
+| `jet-filter-cycle-unverified` | 확인실패 | 공식 | 비스포크 제트 필터의 세척 주기와 건조 시간은 확인한 공식 안내 영상 페이지에 수치로 나오지 않았다 | 삼성 / 무선청소기 / 비스포크 제트 / 현행 판매 모델 / KR |
+
 ### 삼성 건조기 에러코드·모델명·자가점검 <sub>2026-07-20 · samsung-dryer-error-code</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -8087,6 +9551,25 @@ _(팩트 없음)_
 | `dryer-water-tank-management` | 확실 | 공식 | 삼성 건조기 물통(응축수 저장소)은 매 건조 사용 후 매회 비워야 하며, 디스플레이에 '물 비움' 알림이 표시되면 즉시 비워야 한다 | 삼성 / 건조기 / 전 라인 / 전 연식 / KR |
 | `dryer-drainage-hose-check` | 확실 | 공식 | 삼성 건조기 직배수 설치 시 배수펌프 작동을 확보하려면 배수호스의 꺾임, 끝부분이 물에 잠금, 하수구에 너무 깊이 박혀 있는지를 점검해야 한다 | 삼성 / 건조기 / 직배수 모델 / 전 연식 / KR |
 | `dryer-drying-time-extended-check` | 확실 | 공식 | 삼성 건조기 건조 시간이 평소보다 길어진 경우 점검 항목은 주변 온도(추우면 증가), 세탁기 탈수 강도, 먼지필터 막힘, 열교환기 막힘 순서로 확인해야 한다. 해결 방법은 세탁 후 탈수를 최강으로 재설정하거나 한 번 더 진행하고, 먼지필터를 깨끗이 청소하고 충분히 말려 삽입한 후, 열교환기를 청소하는 순서다 | 삼성 / 건조기 / 전 라인 / 전 연식 / KR |
+
+### 삼성 TV 리모컨 반응 없음 — 배터리부터 페어링까지 자가점검 (스마트 리모컨 기준) <sub>2026-11-03 · samsung-tv-remote-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `samsung-remote-no-response-triage-order` | 확실 | 공식 | 삼성 TV 리모컨이 반응하지 않을 때 공식 점검 순서는 ①건전지를 극성에 맞게 새것으로 교체 → ②스마트폰 카메라로 리모컨 적외선 신호 확인 → ③리모컨 페어링 재시도 → ④TV 콜드 부팅 → ⑤그래도 같으면 전문 엔지니어 진단이다 | 삼성 / TV / 스마트 리모컨(블루투스 연결형) / 현행 판매 모델 / KR |
+| `samsung-remote-ir-camera-test` | 확실 | 공식 | 스마트폰 카메라를 리모컨 앞부분 신호 송출부에 대고 전원 버튼을 누를 때 카메라 화면에 적외선 빛이 보이면 리모컨은 신호를 내보내고 있는 것이다. 새 건전지로 바꿔도 빛이 나오지 않으면 리모컨 불량으로 본다 | 삼성 / TV / 스마트 리모컨(IR 송신 방식) / 현행 판매 모델 / KR |
+| `samsung-remote-led-status-meaning` | 확실 | 공식 | 삼성 스마트 리모컨 LED 상태의 의미는 다음과 같다. LED가 꺼져 있으면 블루투스 정상 연결, LED가 두 번 깜박이면 블루투스 연결 끊김(볼륨·채널은 IR로 동작하나 음성 등 스마트 기능은 다시 연결해야 함), 버튼을 누를 때 LED가 5초 이상 켜져 있으면 배터리 부족, LED가 계속 켜져 있으면 USB 충전 중이다 | 삼성 / TV / 스마트 리모컨(블루투스 연결형) / 현행 판매 모델 / KR |
+| `samsung-remote-battery-level-menu` | 확실 | 공식 | 스마트 리모컨 배터리 잔량은 TV 설정 → 전체 설정 → 일반 및 개인정보 → 리모컨 배터리 잔량 메뉴에서 확인할 수 있다 | 삼성 / TV / 스마트 리모컨(잔량 표시 지원 기종) / 현행 판매 모델 / KR |
+| `samsung-remote-recharge-usbc-solar` | 확실 | 공식 | USB-C 충전형 스마트 리모컨은 리모컨 하단 USB-C 포트에 케이블을 꽂아 충전하며, 케이블은 기본 제공되지 않는다. 태양광 셀이 있는 리모컨은 뒷면이 위를 향하도록 실내등이나 햇빛 아래 두어 충전한다. 충전 중에는 LED가 켜지고 충전이 끝나면 꺼진다 | 삼성 / TV / USB-C 또는 태양광 충전형 스마트 리모컨 / 현행 판매 모델 / KR |
+| `samsung-remote-pairing-hold-time-conflict` | 논쟁 🔶 | 공식 | 2016~2025년형 TV에서 리모컨 페어링(복귀 + 재생/일시정지)을 누르는 시간은 연결 안내 페이지에 5초 이상으로 적혀 있고, LED 동작 설명 페이지에는 3초 이상으로 적혀 있어 두 기준이 공존한다 | 삼성 / TV / 스마트 리모컨 / 2016~2025 / KR |
+| `samsung-cold-boot-remote-5s-general` | 확실 | 공식 | 일반 리모컨 사용 모델은 TV가 켜진 상태에서 리모컨 전원 버튼을 5초 이상 누르면 콜드 부팅이 되며, 제품 로그가 표시된 뒤 화면이 다시 켜진다 | 삼성 / TV / 일반 리모컨 사용 모델 / 2017~ (페이지의 2017년 이전 분기 기준 역산) / KR |
+| `samsung-cold-boot-cord-60s-legacy-frame` | 확실 | 공식 | 2017년 이전 구입 TV는 대부분 리모컨으로 콜드 부팅이 되지 않는다. 이 경우 TV 전원 버튼으로 끈 뒤 뒷면 전원 케이블을 분리하고 약 60초 기다렸다가 다시 꽂고 전원 버튼을 누른다. 더 프레임(The Frame)은 리모컨 콜드 부팅이 되지 않으므로 전원 코드를 분리하고 60초 뒤 다시 연결한다 | 삼성 / TV / 2017년 이전 구입 TV 및 더 프레임(The Frame) / ~2017 / KR |
+| `samsung-smartthings-remote-control-scope` | 확실 | 공식 | SmartThings 앱으로 삼성 TV를 리모컨처럼 제어할 수 있다. 같은 계정으로 로그인한 스마트폰의 SmartThings 앱에서 등록된 기기를 확인할 수 있고, TV 시청 중에도 앱을 따로 실행하지 않고 '최근 사용'에서 기기를 바로 제어할 수 있다 | 삼성 / TV / SmartThings 연동 스마트TV / 현행 판매 모델 / KR |
+| `samsung-smartthings-remote-limits` | 확실 | 공식 | SmartThings 앱 리모컨 제어는 TV나 기기의 위치에 따라 작동하지 않을 수 있으며, 그 경우 기기 위치를 바꿔 보라고 안내된다. 외부 기기나 모델에 따라 일부 기능은 지원되지 않을 수 있다 | 삼성 / TV / SmartThings 연동 스마트TV / 현행 판매 모델 / KR |
+| `samsung-tv-quality-warranty-1yr` | 확실 | 공식 | 소비자분쟁해결기준상 TV의 품질보증기간은 1년이고 부품보유기간은 9년이다(2016년 10월 26일 이후 구입 제품 기준). 부품보유기간은 사업자가 품질보증서에 표시한 기간을 따르되, 표시가 없거나 9년보다 짧으면 9년을 적용한다 | 삼성 / TV / 전 TV / 2016-10-26 이후 구입 / KR |
+| `samsung-tv-warranty-free-repair-rule` | 확실 | 공식 | 품질보증기간 이내에 정상적인 사용 상태에서 생긴 성능·기능상의 하자는 무상수리 대상이다. 수리가 불가능하거나 교환된 제품이 1개월 이내에 중요한 수리를 요하는 경우에는 교환이나 환급이 적용될 수 있다 | 삼성 / TV / 전 TV / 2016-10-26 이후 구입 / KR |
+| `samsung-remote-standalone-warranty-unknown` | 확인실패 | 공식 | 리모컨 단품(리모컨 자체 고장)의 무상수리 기준과 보증 기간은 공식 소비자분쟁해결기준 페이지와 QLED 리모컨 안내 페이지에서 확인하지 못했다 | 삼성 / TV / 스마트 리모컨 단품 / 현행 판매 모델 / KR |
+| `samsung-remote-manual-reset-unknown` | 확인실패 | 공식 | 리모컨 단독 초기화(리셋) 절차는 공식 페이지에서 확인하지 못했다. 페어링 안내 페이지에도 별도 초기화 절차는 없었다 | 삼성 / TV / 스마트 리모컨 / 2016~2025 / KR |
 
 ### 삼성 TV 화면 안 나옴·신호없음·전원 문제 자가점검 <sub>2026-07-20 · samsung-tv-error</sub>
 
@@ -10688,6 +12171,24 @@ _(팩트 없음)_
 | `airpods-cleaning-what-not-to-do` | 확실 | 공식 | 에어팟 청소 시 금속 도구(핀, 면봉 와이어 등), 물, 알코올(이소프로필 알코올 포함), 초음파 청소기 사용은 절대 금지다. 이들은 마이크와 스피커 메시를 손상시키거나 내부 전자 부품에 침투할 수 있다. | 애플 / 무선 이어폰 / AirPods 전 모델 / 전 연식 / 글로벌 |
 | `airpods-muffled-or-low-sound-causes` | 확실 | 공식 | 에어팟 소리가 먹먹하거나 작을 때 원인은 대부분 메시 이물질, 액티브 노이즈 캔슬레이션(ANC) 설정, 밸런스 설정 오류다. 메시 청소와 설정 확인으로 해결되지 않으면 ANC를 일시 끄고(또는 투명 모드로 전환) 다시 테스트해볼 수 있다. | 애플 / 무선 이어폰 / ANC 지원 모델 (Pro, Max) / 2019~ / 글로벌 |
 
+### 애플펜슬 연결 안 됨·충전 안 됨·필기 끊김 자가점검 (세대별 페어링·충전·서비스 기준) <sub>2026-11-03 · apple-pencil-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `pencil-pair-steps-apple-official` | 확실 | 공식 | 애플펜슬이 아이패드에 페어링되지 않으면 Apple은 다음 순서를 안내한다. ① 펜슬을 연결한 채 아이패드를 재시작한다 ② 설정 > Bluetooth가 켜져 있는지 확인한다 ③ 'My Devices'에서 펜슬 옆 정보 아이콘을 누르고 '이 기기 삭제(Forget this Device)'를 선택한다 ④ 펜슬을 다시 연결해 Pair 버튼이 나타나면 누른다. | 애플 / 태블릿 펜슬 / Apple Pencil 전 세대 공통 절차 / 전 연식 / 글로벌 |
+| `pencil-pair-button-wait-one-minute` | 확실 | 공식 | 펜슬을 연결했는데 Pair 버튼이 나오지 않으면 Apple은 펜슬을 약 1분 동안 충전한 뒤 다시 연결하고 Pair 버튼이 뜰 때까지 기다리라고 안내한다. Pair 버튼은 보통 몇 초 안에 나타난다. | 애플 / 태블릿 펜슬 / Apple Pencil 전 세대 공통 / 전 연식 / 글로벌 |
+| `pencil-case-removal-2nd-pro-only` | 확실 | 공식 | Apple Pencil Pro와 Apple Pencil(2세대)이 페어링되지 않으면 Apple은 아이패드의 케이스나 커버를 벗기고 다시 페어링하라고 안내한다. 이 단계는 1세대 펜슬에는 적용되지 않는다. | 애플 / 태블릿 펜슬 / Apple Pencil Pro · Apple Pencil(2세대) 자석 연결 모델 / 해당 모델 출시 이후 / 글로벌 |
+| `pencil-service-when-pair-button-never-appears` | 확실 | 공식 | 재충전과 재연결을 해도 Pair 버튼이 끝내 나오지 않으면 Apple은 서비스를 받으라고 안내한다. Apple 공식 지원 페이지에 '서비스 받기(Get service)' 경로가 있다. | 애플 / 태블릿 펜슬 / Apple Pencil 전 세대 공통 / 전 연식 / 글로벌 |
+| `pencil-gen1-connector-by-ipad` | 확실 | 공식 | 1세대 애플펜슬은 아이패드 모델에 따라 연결 단자가 다르다. 6~9세대 아이패드에서는 캡을 빼고 Lightning 포트에 꽂는다. 10세대 아이패드와 아이패드(A16)에서는 USB-C to Apple Pencil 어댑터가 필요하며, 어댑터에 USB-C 케이블을 연결해 아이패드에 꽂는다. | 애플 / 태블릿 펜슬 / Apple Pencil(1세대) / 아이패드 6~9세대(Lightning) / 10세대·A16(USB-C) / 글로벌 |
+| `pencil-gen2-pro-magnetic-connector` | 논쟁 🔶 | 공식 | Apple Pencil(2세대)은 블루투스를 켠 뒤 아이패드 오른쪽 측면의 자석 커넥터에 붙이면 페어링과 충전이 된다. Apple Pencil Pro는 호환 아이패드의 긴 쪽 측면 자석 커넥터에 붙인다. | 애플 / 태블릿 펜슬 / Apple Pencil(2세대) · Apple Pencil Pro / 해당 모델 지원 아이패드 / 글로벌 |
+| `pencil-usb-c-pairing-persistence` | 논쟁 🔶 | 공식 | Apple Pencil(USB-C)은 USB-C 케이블로 아이패드에 연결해 충전하면서 페어링된다. 페어링은 아이패드를 재시작하거나, Bluetooth를 끄거나, 다른 아이패드와 페어링할 때까지 유지된다고 Apple이 안내한다. | 애플 / 태블릿 펜슬 / Apple Pencil(USB-C) / 해당 모델 지원 아이패드 / 글로벌(SG 페이지 기준) |
+| `pencil-battery-check-widget-settings` | 논쟁 🔶 | 공식 | 애플펜슬 잔량은 아이패드 홈 화면에서 오른쪽으로 밀어 여는 배터리 위젯에서 확인할 수 있고, 설정 > Apple Pencil에서도 같은 정보를 볼 수 있다. | 애플 / 태블릿 펜슬 / Apple Pencil 전 세대(위젯 지원 iPadOS) / iPadOS 기준 / 글로벌 |
+| `pencil-battery-service-80-percent` | 논쟁 🔶 | 공식 | AppleCare 가입 기기는 배터리 용량이 원래의 80% 아래로 떨어지면 Apple이 배터리를 추가 요금 없이 교체한다. 같은 AppleCare 서비스 문서에 애플펜슬도 포함된다고 안내된다. | 애플 / 태블릿 펜슬·아이패드 / AppleCare 가입 아이패드 배터리 확실, 펜슬은 검색 요약 기준 / AppleCare 적용 기간 / 글로벌(국가별 조건 상이) |
+| `pencil-charging-obstruction-third-party` | 논쟁 🔶 | 후기 | 펜슬이 충전되지 않을 때 후기 가이드들은 두꺼운 케이스가 자석 충전을 막을 수 있고, 충전 핀과 포트에 먼지가 쌓이면 연결이 안 된다고 안내한다. 먼지는 부드러운 솔이나 압축 공기로 제거하고, 필요하면 이소프로필알코올을 약간 묻힌 보풀 없는 천으로 닦으라고 한다. | 애플 / 태블릿 펜슬 / Apple Pencil 자석 연결 모델 중심 / 전 연식 / 글로벌 |
+| `pencil-restart-bluetooth-toggle-third-party` | 논쟁 🔶 | 후기 | 펜슬이 연결되지 않을 때 후기 가이드들은 아이패드를 완전히 껐다가 켜거나, 블루투스를 껐다 켠 뒤 다시 페어링해 보라고 권한다. 이 방법은 공식 문서의 재시작·재페어링 절차와 같은 방향이다. | 애플 / 태블릿 펜슬 / Apple Pencil 전 세대 / 전 연식 / 글로벌 |
+| `pencil-handwriting-lag-no-official-steps` | 확인실패 | 공식 | 애플 공식 지원 문서(펜슬 페어링·충전 문서 및 블루투스 액세서리 문서)에서는 펜슬 필기 중 끊김이나 지연에 대한 전용 점검 절차를 찾지 못했다. 필기 끊김은 공식 절차가 아니라 페어링 상태, 충전 상태, 케이스, 아이패드 재시작 순으로 확인하는 것이 공식 문서의 공통 흐름이다. | 애플 / 태블릿 펜슬 / Apple Pencil 전 세대 (필기 끊김 증상) / 전 연식 / 글로벌 |
+| `pencil-dead-battery-after-disconnect-unverified` | 논쟁 🔶 | 후기 | Apple 커뮤니티 전문가 답변은 펜슬이 연결돼 잔량까지 보이는데 동작하지 않을 때, 펜슬 끝의 교체형 팁이 단단히 끼워졌는지와 금속 트랜스듀서 손상을 먼저 보라고 한다. 설정 > 일반 > 정보에 펜슬이 표시되는지 확인하고, 분리한 상태에서 배터리 위젯의 잔량 변화를 지켜보라고 한다. 장기간 방전 상태로 두면 고장 가능성이 있으며, 배터리 고장이면 보증 기간 안에서 Apple Store 교체를 받으라고 안내한다. | 애플 / 태블릿 펜슬 / Apple Pencil(1세대) 사례 기준, 다른 세대 동일 여부 미확인 / 2021년 사례(iOS 14 시기) / 글로벌 |
+
 ### 애플 기기 강제 재시작·복구 모드·배터리 성능 (기종 분기 축) <sub>2026-07-20 · iphone-force-restart / iphone-battery-health</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -10695,6 +12196,26 @@ _(팩트 없음)_
 | `iphone-force-restart-generation-split` | 확실 | 공식 | 아이폰 강제 재시작은 기종별로 다르다 — 홈버튼 구형은 홈+측면 동시, iPhone 7 계열은 음량↓+측면 동시, iPhone 8·SE 2세대 및 이후는 음량↑ → 음량↓ → 측면 길게의 3단계 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
 | `iphone-recovery-mode-data` | 확실 | 공식 | 복구 모드 진입만으로는 데이터가 지워지지 않는다. '복원'을 선택하면 전체 삭제되고, '업데이트'를 선택하면 데이터를 유지한 채 iOS만 재설치된다 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
 | `iphone-battery-menu-split` | 확실 | 공식 | 배터리 성능 상태 메뉴는 기종·iOS별로 위치가 다르다 — iPhone 15 이후(iOS 17.4+)는 설정>배터리>배터리 성능 상태(사이클 수·제조일 표시), 14 이하는 설정>배터리>배터리 성능 상태 및 충전. 설계 기준은 14 이하 500사이클, 15 이후 1,000사이클에서 80% 유지 | 애플 / 스마트폰 / iPhone 11~최신 / 2019~ / 글로벌 |
+
+### 아이폰 iOS 업데이트가 멈추거나 실패할 때 (무선 업데이트 → 컴퓨터 업데이트 → 복구 모드 순) <sub>2026-11-03 · ios-update-stuck-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `ios-update-compatibility-check` | 확실 | 공식 | 아이폰 업데이트가 안 될 때 첫 확인은 기기 모델이 해당 iOS 버전을 지원하는지다. Apple 호환 기기 목록에서 모델을 확인하고, 지원되는데도 안 되면 저장공간·네트워크 등 다음 점검으로 넘어간다 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식(버전별 지원 기기는 Apple 호환 목록 기준) / 글로벌 |
+| `ios-update-storage-offload` | 확실 | 공식 | 저장공간이 부족하면 업데이트 다운로드가 실패한다. 설정 > 일반 > iPhone 저장공간에서 '사용하지 않는 App 내려놓기'를 켜거나, 앱을 직접 삭제해 공간을 확보한다 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
+| `ios-update-wireless-power-keep-connected` | 확실 | 공식 | 무선(OTA) 업데이트 중에는 기기를 전원에 연결한 상태를 유지한다. 배터리가 방전됐다면 충전기에 연결하고 기기를 켜서 업데이트나 복원이 끝나도록 둔다 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
+| `ios-update-network-retry-order` | 확실 | 공식 | 업데이트 서버 연결 오류(Wi-Fi 필요 알림 포함)는 같은 네트워크에서 다시 시도하고, 그래도 안 되면 다른 네트워크나 컴퓨터(Mac·iTunes)로 업데이트한다. 여러 네트워크에서 반복되면 업데이트를 삭제하고 다시 받는다 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
+| `ios-update-delete-and-redownload` | 확실 | 공식 | 업데이트가 계속 실패하면 받아둔 업데이트 파일을 지운 뒤 다시 받는다. 설정 > 일반 > iPhone 저장공간에서 해당 업데이트를 눌러 '업데이트 삭제'를 선택하고, 설정 > 일반 > 소프트웨어 업데이트에서 다시 받는다 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
+| `ios-update-backup-before-computer` | 확실 | 공식 | 컴퓨터로 업데이트하기 전에는 기기를 백업한다. Apple은 iCloud 또는 컴퓨터로 백업하라고 안내한다 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
+| `ios-update-finder-mac-steps` | 확실 | 공식 | Mac(macOS Catalina 이상)에서는 Finder로 업데이트한다. Finder 창을 열고 기기를 연결한 뒤 사이드바에서 기기를 선택하고 '일반'에서 '업데이트 확인'을 누르고, '다운로드 및 업데이트'를 누른 뒤 암호를 입력한다 | 애플 / 컴퓨터 업데이트 / Mac macOS Catalina 이상 / 2019~(Catalina 이상) / 글로벌 |
+| `ios-update-itunes-windows-steps` | 확실 | 공식 | Windows PC에서는 iTunes로 업데이트한다. iTunes를 열고 기기를 연결한 뒤 툴바의 기기 버튼을 누르고 '요약' 탭에서 '업데이트 확인'을 누르고, '다운로드 및 업데이트'를 누른 뒤 안내에 따르고 필요하면 암호를 입력한다 | 애플 / 컴퓨터 업데이트 / Windows PC + iTunes / 전 연식 / 글로벌 |
+| `ios-update-hotspot-conflict` | 확실 | 공식 | 컴퓨터가 업데이트할 아이폰의 개인용 핫스팟에 연결돼 있으면 업데이트가 실패하기 쉽다. 컴퓨터를 다른 와이파이나 유선(이더넷) 네트워크에 연결한 뒤 업데이트한다 | 애플 / 컴퓨터 업데이트 / Mac·Windows 공통 주의 / 전 연식 / 글로벌 |
+| `ios-update-usb-cable-port-security` | 확실 | 공식 | 컴퓨터 업데이트 중 USB 오류(17·1638·3002 등 서버 연결 오류, 2·4·6·1611 등 보안 프로그램 관련, 4005·4013·4014 등 USB 오류)가 나면 순서대로 확인한다. 기기 구매 시 들어 있던 USB 케이블(또는 Apple 인증 케이블)을 쓰고, 키보드가 아닌 컴퓨터 본체 포트에 꽂고, 다른 컴퓨터를 시도하고, 보안 프로그램이 연결을 막는지 확인한다 | 애플 / 컴퓨터 업데이트 / iPhone 전 기종, Mac·Windows / 전 연식 / 글로벌 |
+| `ios-recovery-mode-trigger-conditions` | 확실 | 공식 | 복구 모드는 업데이트를 컴퓨터로 해도 기기가 안 살아날 때 마지막 수단이다. 적용 조건은 Apple 로고가 여러 분 동안 진행 바 없이 떠 있거나, 컴퓨터가 기기를 인식하지 않거나, '컴퓨터에 연결' 화면이 뜨는 경우다. 원문은 먼저 컴퓨터로 업데이트를 시도하라고 명시한다 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
+| `ios-restore-erases-all-data` | 확실 | 공식 | 복구 모드에서 '복원'을 선택하면 iOS가 다시 설치되고 기기의 모든 데이터가 지워진다. 그래서 백업을 확보한 뒤에 복원하고, 업데이트를 먼저 시도한다 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
+| `ios-recovery-download-15min-warning` | 확실 | 공식 | 복구 모드에서 다운로드가 15분을 넘기면 기기가 '컴퓨터에 연결' 화면에서 빠져나갈 수 있다. 이때는 다운로드가 끝나기를 기다린 뒤 복구 절차를 다시 반복한다 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
+| `ios-windows-apple-devices-app-unverified` | 확인실패 | 공식 | Windows PC의 iPhone 업데이트·복구 앱이 iTunes인지 Apple Devices 앱인지는 Apple 문서 간에 표기가 엇갈린다. 업데이트 절차 문서(108964)는 iTunes를 쓰고, 복구 문서 쪽 검색 요약은 Apple Devices 앱을 언급했으나 이번 조사에서 원문 확인은 못 했다 | 애플 / 컴퓨터 업데이트 / Windows PC / 전 연식 / 글로벌 |
+| `ios-recovery-failed-apple-support-unverified` | 확인실패 | 공식 | 복구 모드까지 해도 실패하면 Apple 지원 문의나 Apple Store 방문으로 넘어간다는 안내는 이번 조사에서 원문 문장으로 확인하지 못했다. 접수 절차·보증 기준은 확인실패 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / KR·글로벌 |
 
 ### 아이패드 충전 안 됨·느림 자가점검 <sub>2026-07-21 · 예정</sub>
 
@@ -10749,6 +12270,39 @@ _(팩트 없음)_
 | `iphone-overheating-mitigation-immediate` | 확실 | 공식 | 발열 시 즉시 조치는 다음과 같다: (1) 케이스 제거, (2) 모든 앱 종료 및 기기 사용 중단, (3) 환기 좋은 쿨한 환경으로 이동, (4) 필요시 전원 완전 차단. 기기를 쿨한 건조한 표면 위에 놔두고 자연 냉각을 기다린다. | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
 | `iphone-overheating-what-not-to-do` | 확실 | 공식 | 발열 기기를 빠르게 식히려고 냉동실, 냉장고, 냉각팩, 얼음, 물 사용은 절대 금지다. 급격한 온도 변화는 내부 응결을 초래하고 수손·부식 위험을 증가시킨다. | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
 | `iphone-persistent-overheating-service` | 확실 | 공식 | 위의 모든 대처를 실행해도 계속 발열이 발생하거나, 정상 사용 중에도 자주 온도 경고가 표시되면 Apple Authorized Service Provider(AASP) 또는 Apple Authorized Distributor(AAD)를 방문해 기기 검사를 받아야 한다. | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
+
+### 아이폰 저장공간 가득 참 — 용량 줄이는 순서 (확인·앱·사진·메시지·iCloud, 백업 먼저 원칙) <sub>2026-11-03 · iphone-storage-full-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `iphone-storage-check-path` | 확실 | 공식 | 저장공간 확인 경로는 설정 > 일반 > [기기명] 저장공간이다. 여기서 추천 항목과 앱별 사용량을 볼 수 있고, 앱을 누르면 세부 정보가 나온다 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
+| `iphone-storage-categories` | 확실 | 공식 | 저장공간 화면의 기기 내 카테고리는 앱, 사진, 미디어, 메일, Apple Books, 메시지, iCloud Drive, 기타, 시스템으로 나뉜다 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
+| `iphone-offload-vs-delete` | 확실 | 공식 | 앱 오프로드는 앱만 제거하고 문서와 데이터는 유지한다. 앱 삭제는 앱과 관련 데이터를 함께 지우며, 일부 문서는 따로 지워야 할 수 있다 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
+| `iphone-storage-recommendations` | 확실 | 공식 | 저장공간 화면의 추천 항목은 Show All에서 전체를 보고, 항목을 누르면 무엇을 지울 수 있는지 검토한 뒤 Enable로 켤 수 있다. 예시로 '사용하지 않는 앱 오프로드'가 나온다 | 애플 / 스마트폰 / iPhone 전 기종 / 전 연식 / 글로벌 |
+| `iphone-photos-optimize-storage` | 확실 | 공식 | iCloud 사진을 쓰면 '저장 공간 최적화'가 기본으로 켜져 있어, 원본은 iCloud에 두고 기기에는 용량을 줄인 사본만 남는다. 설정 > [이름] > iCloud > 사진에서 확인한다 | 애플 / 스마트폰 / iCloud 사진 사용 기기 / 전 연식 / 글로벌 |
+| `iphone-photo-delete-syncs-all-devices` | 확실 | 공식 | iCloud 사진을 쓰는 상태에서 한 기기에서 사진·비디오를 지우면 같은 Apple 계정의 iCloud 사진을 쓰는 모든 기기에서 지워진다. 삭제한 항목은 최근 삭제 앨범에서 30일간만 복구할 수 있다 | 애플 / 스마트폰 / iCloud 사진 사용 기기 / 전 연식 / 글로벌 |
+| `iphone-icloud-full-behavior` | 확실 | 공식 | iCloud 저장공간이 가득 찼거나 거의 찼을 때 Apple은 알림을 보내며, 저장공간을 관리하거나 더 구매할 때까지 일부 iCloud 기능이 최신 상태로 유지되지 않을 수 있다 | 애플 / 스마트폰 / iCloud 사용 기기 / 전 연식 / 글로벌 |
+| `iphone-recently-deleted-quota-unknown` | 확인실패 | 공식 | iCloud 저장공간이 가득 찼을 때 최근 삭제 항목이 여전히 용량을 차지하는지는 Apple 공식 문서에서 확인하지 못했다 | 애플 / 스마트폰 / iCloud 사진 사용 기기 / 전 연식 / 글로벌 |
+| `iphone-messages-keep-setting` | 논쟁 🔶 | 후기 | 메시지 보관 기간은 설정 > 메시지 > 메시지 기록(Keep Messages)에서 30일·1년·영구 중 고를 수 있다. 짧은 기간을 고르면 확인 창이 뜨고 그 기간보다 오래된 메시지가 지워진다 | 애플 / 스마트폰 / iOS 메시지 앱 / 최신 iOS 중심 (메뉴명 변동 가능) / 글로벌 |
+| `iphone-messages-delete-spans-icloud` | 논쟁 🔶 | 후기 | 메시지를 iCloud 메시지로 쓰는 경우 보관 기간을 줄이면 연결된 모든 기기에서 오래된 메시지가 함께 지워질 수 있다 | 애플 / 스마트폰 / iCloud 메시지 사용 기기 / 최신 iOS 중심 / 글로벌 |
+
+### 아이폰 와이파이·블루투스 연결 안 될 때 점검 순서 (기기 쪽 vs 공유기 쪽 분리 진단, 데이터 손실 여부) <sub>2026-11-03 · iphone-wifi-bluetooth-selfcheck</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `iphone-wifi-basic-checks` | 확실 | 공식 | 아이폰 와이파이 연결 점검의 첫 단계는 설정 > Wi-Fi에서 Wi-Fi가 켜져 있는지, 연결하려는 네트워크 이름 옆에 파란 체크표시가 있는지 확인하는 것이다. 여전히 연결되지 않으면 비행기 모드가 꺼져 있는지, 연결 보조(Connectivity Assist)가 꺼져 있는지 확인한다. Wi-Fi 설정이 흐리게 보이면 기기를 재시작한다. | 애플 / 스마트폰·태블릿 / iPhone·iPad 전 기종 / 전 연식 / 글로벌 |
+| `iphone-vpn-security-uninstall-test` | 확실 | 공식 | VPN이나 보안 앱이 설치되어 있으면 Wi-Fi 연결 문제의 원인이 될 수 있다. Apple은 이 앱을 삭제하고 기기를 재시작한 뒤 Wi-Fi를 다시 테스트하라고 안내한다. 앱이 꼭 필요하면 VPN 관리자 또는 보안 제공사에 문의하라고 한다. | 애플 / 스마트폰·태블릿 / iPhone·iPad 전 기종 / 전 연식 / 글로벌 |
+| `iphone-router-isolation-test` | 확실 | 공식 | 기기 쪽 문제인지 공유기 쪽 문제인지는 다른 기기도 같은 Wi-Fi에 연결되는지로 나눠 본다. 다른 기기도 연결되면 공유기와 네트워크는 정상일 가능성이 크고, 다른 기기도 안 되면 공유기나 회선 쪽을 먼저 본다. | 애플 / 스마트폰·태블릿 / iPhone·iPad 전 기종 / 전 연식 / 글로벌 |
+| `iphone-router-restart-and-band` | 확실 | 공식 | 공유기 쪽 점검은 공유기 펌웨어를 최신으로 올리고, 기기가 공유기 가까이 있는지 확인한 뒤, 공유기가 두 가지 주파수를 지원하면 5GHz를 시도하는 것이다. 그다음 공유기와 케이블 모뎀의 전원을 뽑았다가 다시 꽂아 네트워크 연결을 새로 잡는다. | 애플 / 공유기 / 가정용 Wi-Fi 공유기 (5GHz 지원 모델에 한함) / 전 연식 / 글로벌 |
+| `iphone-reset-network-settings-last-resort` | 확실 | 공식 | 네트워크 설정 재설정은 다른 방법이 모두 실패했을 때 쓰는 마지막 단계다. 경로는 설정 > 일반 > iPhone 전송 또는 재설정 > 재설정 > 네트워크 설정 재설정이다. | 애플 / 스마트폰·태블릿 / iPhone·iPad 전 기종 / 전 연식 / 글로벌 |
+| `iphone-reset-network-erases-list` | 확실 | 공식 | 네트워크 설정 재설정으로 지워지는 항목은 Wi-Fi 네트워크와 비밀번호, 셀룰러 설정, VPN 설정, APN 설정이다. Apple 공식 문서는 이 목록을 명시하며, 사진·메시지·앱 등 개인 데이터 삭제 여부는 이 페이지에서 언급하지 않는다. | 애플 / 스마트폰·태블릿 / iPhone·iPad 전 기종 / 전 연식 / 글로벌 |
+| `iphone-reset-all-settings-data-kept` | 확실 | 공식 | 설정 전체 재설정(모든 설정 재설정)은 설정값만 기본값으로 되돌리며 사진·메시지·앱·문서는 삭제하지 않는다. 대신 Wi-Fi 비밀번호와 네트워크, Bluetooth 페어링, VPN 설정, Apple Pay 카드, Apple Watch 페어링, Face ID·Touch ID 설정이 초기화된다. | 애플 / 스마트폰·태블릿 / iPhone·iPad 전 기종 / 전 연식 / 글로벌 |
+| `iphone-restart-before-reset` | 확실 | 공식 | Wi-Fi·Bluetooth 등 시스템 기능에 문제가 있으면 먼저 기기를 재시작하고, 재시작으로 해결되지 않을 때 모든 설정 재설정을 하라고 Apple이 안내한다. | 애플 / 스마트폰·태블릿 / iPhone·iPad 전 기종 / 전 연식 / 글로벌 |
+| `iphone-restart-steps-face-id` | 확실 | 공식 | Face ID 기종(iPhone X 이후)의 재시작은 음량 버튼 중 하나와 측면 버튼을 길게 눌러 전원 끄기 슬라이더를 띄우고, 슬라이더를 밀어 끈 뒤 약 30초 기다리고, 측면 버튼을 길게 눌러 Apple 로고가 보일 때까지 기다리는 것이다. | 애플 / 스마트폰 / iPhone X 이후 (Face ID 기종) / 2017~ / 글로벌 |
+| `iphone-bluetooth-accessory-basics` | 확실 | 공식 | 블루투스 액세서리가 연결되지 않을 때 Apple의 기본 점검은 기기를 서로 가까이 두기, 처음 연결하는 기기라면 디스커버리 모드 켜기, 액세서리를 껐다 켜기, 충전 또는 전원 연결 확인, 배터리가 약하면 교체하기다. 액세서리를 제어하는 앱이라면 설정 > 개인정보 보호 및 보안 > 블루투스에서 그 앱의 블루투스 권한을 확인한다. | 애플 / 스마트폰·태블릿 / iPhone·iPad 전 기종 (블루투스 액세서리 일반) / 전 연식 / 글로벌 |
+| `iphone-bluetooth-unpair-repair` | 확실 | 공식 | 이미 연결됐던 블루투스 액세서리가 안 되면 Apple은 먼저 액세서리 연결을 해제(unpair)한 뒤 디스커버리 모드로 다시 놓고 다시 페어링하라고 안내한다. 액세서리가 다른 기기에는 연결되는데 아이폰에만 안 된다면, 다른 기기에서 먼저 해제한 뒤 아이폰과 다시 페어링한다. | 애플 / 스마트폰·태블릿 / iPhone·iPad 전 기종 (블루투스 액세서리 일반) / 전 연식 / 글로벌 |
+| `iphone-bluetooth-contact-apple-or-maker` | 확실 | 공식 | 블루투스 자체를 켤 수 없거나 설정이 회색으로 비활성화돼 있거나, 어떤 블루투스 액세서리도 연결되지 않으면 Apple 지원에 문의하라고 안내한다. 액세서리가 아이폰과 호환되는지는 제조사에 확인한다. | 애플 / 스마트폰·태블릿 / iPhone·iPad 전 기종 (블루투스 액세서리 일반) / 전 연식 / 글로벌 |
+| `iphone-wifi-no-internet-contact-isp-or-apple` | 확실 | 공식 | Wi-Fi에는 연결되는데 인터넷이 안 되면, 다른 기기도 같은 방식으로 안 되는지 보고 인터넷 제공사(ISP)에 문의한다. 아이폰이 어떤 Wi-Fi에도 연결되지 않으면 Apple에 문의한다. | 애플 / 스마트폰·태블릿 / iPhone·iPad 전 기종 / 전 연식 / 글로벌 |
 
 ### 애플 맥북 안 켜짐·충전·발열·배터리 자가점검 <sub>2026-07-21 · 예정</sub>
 
@@ -11442,6 +12996,19 @@ _(팩트 없음)_
 | `bidet-circuit-breaker-leakage-protection` | 확실 | 공식 | 비데는 물과 전기가 함께 있는 제품으로 누전 위험이 있으며, 누전차단기(ELB)는 이상 전류를 감지해 0.03초 이내에 전기를 자동 차단해 감전사고를 방지한다. | 공통 / 비데·온수기·욕실 전열기구 / 누전 위험 기기 전 모델 / 전 연식 / KR |
 | `bidet-customer-center-contact` | 확실 | 공식 | 코웨이 비데 모든 서비스(계약·AS·부품 신청·기술 상담)는 고객센터 1588-5200(AS·계약 관련) 또는 1522-5542(신규 렌탈 신청)로 문의된다. | 코웨이 / 비데 / 렌탈·자가구매 전 모델 / 현행 판매 모델 / KR |
 
+### 코웨이 정수기 물 안 나옴·에러 표시 자가점검 (출수 불량·냉온수·누수 안전·방문 관리 연결) <sub>2026-11-03 · coway-water-purifier-error</sub>
+
+| id | 확신도 | 근거 | claim | 적용 범위 |
+|---|---|---|---|---|
+| `coway-service-center-1588-5200` | 확실 | 공식 | 코웨이 정수기 고객 문의·A/S 상담의 대표전화는 1588-5200이며 유료 통화다. | 코웨이 / 정수기 / 정수기 전 모델(렌탈·자가구매 공통 안내 페이지) / 현행 판매 모델 / KR |
+| `coway-consultation-hours` | 확실 | 공식 | 코웨이 고객센터 일반 상담은 평일 오전 9시부터 오후 6시까지이며 12시부터 13시까지는 점심시간이다. 긴급상담은 365일 24시간 운영된다. | 코웨이 / 정수기 / 정수기 전 모델 / 현행 판매 모델 / KR |
+| `coway-filter-paid-replacement-hotline` | 확실 | 공식 | 필터를 자가로 교체할 수 없는 경우 유상 필터교체 서비스를 1588-5200으로 신청할 수 있다. | 코웨이 / 정수기 / 자가교체 불가 필터를 쓰는 정수기 / 현행 판매 모델 / KR |
+| `coway-hot-water-warmup-30min-storage` | 확실 🔶 | 후기 | 저수조형 코웨이 정수기는 온수 기능을 켠 뒤 약 30분을 기다려도 온수가 나오지 않을 때 고장을 의심하고 점검에 들어간다. | 코웨이 / 정수기 / 저수조형 정수기(온수 탱크 방식) / 현행 판매 모델 / KR |
+| `coway-power-reset-2to5min-conflict` | 논쟁 🔶 | 후기 | 코웨이 정수기 냉온수 이상 시 전원 플러그를 뽑고 약 2~5분(원문 본문은 5분) 대기한 뒤 다시 꽂는 전원 리셋을 자가 복구 1단계로 안내하는 후기 자료가 있다. | 코웨이 / 정수기 / 냉온수 시스템 전 모델(출처 본문 기준) / 현행 판매 모델 / KR |
+| `coway-error-code-table-not-found` | 확인실패 | 공식 | 코웨이 공식 홈페이지와 공식 고객센터 페이지에서 정수기 에러 코드(E01 등)의 의미표를 확인하지 못했다. | 코웨이 / 정수기 / 전 모델 / 전 연식 / KR |
+| `coway-e01-meaning-unverified` | 확인실패 | 공식 | 코웨이 정수기 E01이 누수 감지 에러라는 사실은 공식 자료에서 확인되지 않았다. 과거 자료(product-repair.com)의 해당 글은 2026-11-03 조회에서 404였다. | 코웨이 / 정수기 / E01 표시 모델(모델별 상이 가능) / 전 연식 / KR |
+| `coway-leak-electrical-no-official-guide` | 확인실패 | 공식 | 정수기에서 물 샘·젖은 전기 부품이 확인되면 공식 자료에서 자가 분해나 임의 재가동 절차는 확인되지 않았으며, 전원 차단과 고객센터 방문 점검이 공통 권장 흐름이다. | 코웨이 / 정수기 / 전 모델 / 전 연식 / KR |
+
 ### 코웨이 정수기 자가점검 — 물 안 나옴·냉온수 이상·필터 교체·렌탈 관리 경계 <sub>2026-07-20 · coway-purifier-selfcheck</sub>
 
 | id | 확신도 | 근거 | claim | 적용 범위 |
@@ -12022,16 +13589,19 @@ _(팩트 없음)_
 | `11st-grand-11-2025-period` | 11번가 그랜드십일절 — 연도별 기간·타임딜 시간대·쿠폰 구조·2026 일정 (세일 달력 행사별 항목) |
 | `11st-grand-11-2026-not-announced` | 11번가 그랜드십일절 — 연도별 기간·타임딜 시간대·쿠폰 구조·2026 일정 (세일 달력 행사별 항목) |
 | `4k-video-shooting-sd-card-requirement` | 액션캠(고프로·오즈모류) 전원 불량·녹화 안 됨·배터리·방수 자가점검, 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
+| `[object Object]` | 아이폰 저장공간 가득 참 — 용량 줄이는 순서 (확인·앱·사진·메시지·iCloud, 백업 먼저 원칙), 앱이 자꾸 강제 종료될 때 원인 좁히는 순서 (iPhone·Galaxy, 앱 재실행→재시작→업데이트→캐시→저장공간→재설치→초기화 순, 데이터 삭제 전 백업), 앱이 자꾸 강제 종료될 때 원인 좁히는 순서 (iPhone·Galaxy, 앱 재실행→재시작→업데이트→캐시→저장공간→재설치→초기화 순, 데이터 삭제 전 백업), 앱이 자꾸 강제 종료될 때 원인 좁히는 순서 (iPhone·Galaxy, 앱 재실행→재시작→업데이트→캐시→저장공간→재설치→초기화 순, 데이터 삭제 전 백업), 앱이 자꾸 강제 종료될 때 원인 좁히는 순서 (iPhone·Galaxy, 앱 재실행→재시작→업데이트→캐시→저장공간→재설치→초기화 순, 데이터 삭제 전 백업), 앱이 자꾸 강제 종료될 때 원인 좁히는 순서 (iPhone·Galaxy, 앱 재실행→재시작→업데이트→캐시→저장공간→재설치→초기화 순, 데이터 삭제 전 백업), 앱이 자꾸 강제 종료될 때 원인 좁히는 순서 (iPhone·Galaxy, 앱 재실행→재시작→업데이트→캐시→저장공간→재설치→초기화 순, 데이터 삭제 전 백업), 차량 블루투스 연결이 안 되거나 끊길 때 점검 순서 (차량 헤드유닛 쪽 삭제·재등록, 기기 등록 수 한도, 휴대폰 쪽 연결 이력 초기화), 차량 블루투스 연결이 안 되거나 끊길 때 점검 순서 (차량 헤드유닛 쪽 삭제·재등록, 기기 등록 수 한도, 휴대폰 쪽 연결 이력 초기화), 스마트폰 화면이 켜지지 않을 때 고장 전에 확인할 것 (배터리 방전·강제 재시작·충전기/케이블·침수·데이터 보호), 스마트폰 화면이 켜지지 않을 때 고장 전에 확인할 것 (배터리 방전·강제 재시작·충전기/케이블·침수·데이터 보호), 스마트폰 화면이 켜지지 않을 때 고장 전에 확인할 것 (배터리 방전·강제 재시작·충전기/케이블·침수·데이터 보호), 스마트폰 화면이 켜지지 않을 때 고장 전에 확인할 것 (배터리 방전·강제 재시작·충전기/케이블·침수·데이터 보호), 스마트폰 화면이 켜지지 않을 때 고장 전에 확인할 것 (배터리 방전·강제 재시작·충전기/케이블·침수·데이터 보호), 스마트폰 화면이 켜지지 않을 때 고장 전에 확인할 것 (배터리 방전·강제 재시작·충전기/케이블·침수·데이터 보호), 스마트폰 화면이 켜지지 않을 때 고장 전에 확인할 것 (배터리 방전·강제 재시작·충전기/케이블·침수·데이터 보호), 스마트폰 화면이 켜지지 않을 때 고장 전에 확인할 것 (배터리 방전·강제 재시작·충전기/케이블·침수·데이터 보호), 스마트폰 화면이 켜지지 않을 때 고장 전에 확인할 것 (배터리 방전·강제 재시작·충전기/케이블·침수·데이터 보호), 스마트폰 화면이 켜지지 않을 때 고장 전에 확인할 것 (배터리 방전·강제 재시작·충전기/케이블·침수·데이터 보호), AI 스피커가 말을 못 알아듣거나 연결이 끊길 때 자가점검 (Google Nest·Home, 카카오미니, 네이버 클로바), AI 스피커가 말을 못 알아듣거나 연결이 끊길 때 자가점검 (Google Nest·Home, 카카오미니, 네이버 클로바), AI 스피커가 말을 못 알아듣거나 연결이 끊길 때 자가점검 (Google Nest·Home, 카카오미니, 네이버 클로바), AI 스피커가 말을 못 알아듣거나 연결이 끊길 때 자가점검 (Google Nest·Home, 카카오미니, 네이버 클로바), AI 스피커가 말을 못 알아듣거나 연결이 끊길 때 자가점검 (Google Nest·Home, 카카오미니, 네이버 클로바), 화상회의에서 마이크 소리가 안 들릴 때 점검 (Windows 11 마이크 권한·입력 장치·음소거 → 화상회의 앱 설정 순서), USB 장치가 인식되지 않을 때 포트와 드라이버 점검, 갤럭시 Z 폴드·플립 화면 줄무늬·주름·접힘 오류 자가점검, 갤럭시 Z 폴드·플립 화면 줄무늬·주름·접힘 오류 자가점검 |
 | `adapalene-otc-retinoid` | 10대 여드름의 호르몬 기전과 연령별 성분 안전성 |
 | `adapinoid-vs-retinol-12-week-wrinkle-efficacy` | 미백 성분이 주름 관리에도 쓰이는 이유: 항산화·콜라겐·단백질 당화 메커니즘 |
 | `aha-concentration-minimum-8-percent-efficacy` | AHA와 BHA 조합: 동시 사용 안전성, 자극 누적, 권장 빈도 |
 | `aha-glycolic-acid-smallest-molecule-weight` | 만델산: 민감성 피부의 부드러운 각질 관리 |
 | `aha-ph-requirement-3-5-4-5-optimal` | AHA와 BHA 조합: 동시 사용 안전성, 자극 누적, 권장 빈도 |
 | `alpha-arbutin-vs-beta-arbutin-10-fold-potency-tyrosinase-inhibition` | 미백 성분이 주름 관리에도 쓰이는 이유: 항산화·콜라겐·단백질 당화 메커니즘 |
+| `aluminum-foil-microwave-spark-fire-hazard` | 전자레인지에서 불꽃(스파크)이 튈 때, 바로 멈추고 확인할 것 |
 | `antibiotic-probiotic-simultaneous-administration-interference` | 항생제 복용 중 유산균: 항생제 관련 설사 근거·복용 간격·실제 효과, 마그네슘과 다리 쥐: 임상적 효과 근거 수준과 특정 인구군별 차이, 프로바이오틱스 균주 특이성·CFU 함정·목적별 균주 선택, 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항 |
 | `anticoagulant-vitamin-k-interaction-thrombosis-risk` | 혈행 개선 영양제와 수술·시술 전 주의, 항혈소판·항응고 병용 위험, 코엔자임Q10(CoQ10)의 스타틴 근육통 완화 임상 근거 및 형태별 차이, 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항, 커큐민(강황): 생체이용률 개선 기술과 간 이상사례 보고의 신뢰도, 비타민K2의 뼈 건강 기전과 항응고제 금기 |
 | `app-performance-class-definition` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `apple-watch-heart-rate-wearing-position` | 스마트밴드(샤오미 미밴드·핏빗 등) 충전·측정·앱 연동 자가점검 |
+| `appropriate-detergent-dosage` | 세탁 후 옷에 세제 찌꺼기가 남을 때 원인과 해결 (세제 과다·세탁물 과다·헹굼·세제함 막힘·통세척, 삼성/LG 공식 안내 기준) |
 | `areds2-lutein-zeaxanthin-dose-protocol` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
 | `areds2-primary-outcome-no-benefit-beyond-areds` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성 |
 | `areds2-subgroup-low-dietary-lutein` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성 |
@@ -12042,6 +13612,7 @@ _(팩트 없음)_
 | `astaxanthin-recommended-dosage-4-6mg-daily` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
 | `audio-delay-adjustment-definition` | AV리시버·홈시어터 소리 안 남·채널 누락 자가진단 |
 | `autoimmune-disease-supplement-contraindication` | 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항 |
+| `automatic-repair-loop-recovery-environment` | 윈도우 블루스크린이 뜰 때, 오류 코드로 원인 좁히기 |
 | `automatic-stop-timer` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `azelaic-acid-15-percent-post-inflammatory-hyperpigmentation-pih` | 미백 성분이 주름 관리에도 쓰이는 이유: 항산화·콜라겐·단백질 당화 메커니즘 |
 | `azelaic-acid-acne-redness` | 면도 후 피부 자극(가성모낭염) 메커니즘 및 회복, 10대 여드름의 호르몬 기전과 연령별 성분 안전성 |
@@ -12053,12 +13624,14 @@ _(팩트 없음)_
 | `battery-charging-adapter-verification` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석, 휴대용 손선풍기(핸디형·넥밴드형) AS셀프체크: 충전안됨·안돌아감·약풍·소음·배터리팽창, 마사지건(안마건) 자가점검·배터리·안전, 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `battery-charging-terminal-contact-cleaning` | 차량용·핸디형 무선청소기 흡입 약함·충전 불량·배터리 급감 자가점검, 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석, 휴대용 손선풍기(핸디형·넥밴드형) AS셀프체크: 충전안됨·안돌아감·약풍·소음·배터리팽창, 마사지건(안마건) 자가점검·배터리·안전, 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `battery-cycle-definition-cumulative` | 포터블 파워스테이션 충전 안 됨·출력 안 됨·발열·배터리 팽창 자가점검 및 보관 기준 |
+| `battery-frozen-or-low-fluid-explosion-risk` | 겨울 오기 전 차량 점검 — 배터리·부동액·타이어·워셔액·와이퍼 |
 | `battery-long-term-storage-50-percent` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석, 마사지건(안마건) 자가점검·배터리·안전 |
 | `battery-overheating-danger-external-shock` | 차량용·핸디형 무선청소기 흡입 약함·충전 불량·배터리 급감 자가점검, 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석, 휴대용 손선풍기(핸디형·넥밴드형) AS셀프체크: 충전안됨·안돌아감·약풍·소음·배터리팽창, 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
+| `battery-protection-mode-80percent` | 고속충전이 안 되고 충전이 느릴 때 케이블·어댑터·포트부터 점검 (갤럭시·아이폰·아이패드 공식 안내 기준) |
 | `battery-safe-charge-level-storage` | 차량용·핸디형 무선청소기 흡입 약함·충전 불량·배터리 급감 자가점검, 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석, 휴대용 손선풍기(핸디형·넥밴드형) AS셀프체크: 충전안됨·안돌아감·약풍·소음·배터리팽창, 마사지건(안마건) 자가점검·배터리·안전, 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
 | `battery-storage-environment-10-25c` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석, 휴대용 손선풍기(핸디형·넥밴드형) AS셀프체크: 충전안됨·안돌아감·약풍·소음·배터리팽창 |
 | `battery-storage-separation-from-charger` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |
-| `battery-swelling-stop-immediately` | 에어팟 한쪽 안 들림·연결 안 됨 자가진단, 아이폰 발열 — 원인, 증상, 대처, 애플워치 연결 끊김·충전 안 됨·배터리 소모 자가점검, 무선이어폰 충전 케이스 불량·한쪽 충전 안 됨·배터리 문제 자가점검, 진동 클렌징 기기(페이셜 클렌저) 자가진단, 온열패드 자가진단, LED 미용마스크 자가진단, 마사지건(안마건) 자가점검·배터리·안전, 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열, 두피 마사지기 자가진단 — 주제 변경, 저주파자극기(TENS/EMS) 자가진단, 전동칫솔 충전대(충전기) 자가진단 |
+| `battery-swelling-stop-immediately` | 에어팟 한쪽 안 들림·연결 안 됨 자가진단, 애플펜슬 연결 안 됨·충전 안 됨·필기 끊김 자가점검 (세대별 페어링·충전·서비스 기준), 아이폰 발열 — 원인, 증상, 대처, 애플워치 연결 끊김·충전 안 됨·배터리 소모 자가점검, 고속충전이 안 되고 충전이 느릴 때 케이블·어댑터·포트부터 점검 (갤럭시·아이폰·아이패드 공식 안내 기준), 휴대폰 핫스팟이 연결되지 않을 때 점검 순서 (갤럭시·아이폰 공통 원인과 공식 점검 단계, AS 기준), 노트북 배터리가 빨리 닳을 때 설정부터 점검 (Windows 11 중심, 부풀음·발열은 서비스 기준), 노트북 와이파이 아이콘이 사라지거나 무선 네트워크 목록이 안 뜰 때 (Windows 10·11 자가점검), 로보락 로봇청소기 에러 안내음·멈춤 증상 자가점검 (센서·휠·브러시·먼지통·물탱크·충전, 앱 재연결, AS 기준), 갤럭시 발열 원인과 줄이는 순서 (재시작·앱·설정 점검, 위험 신호와 서비스센터), 삼성 비스포크 제트 흡입력 약함·충전 불량 자가점검, 삼성 TV 리모컨 반응 없음 — 배터리부터 페어링까지 자가점검 (스마트 리모컨 기준), 무선이어폰 충전 케이스 불량·한쪽 충전 안 됨·배터리 문제 자가점검, 진동 클렌징 기기(페이셜 클렌저) 자가진단, 온열패드 자가진단, LED 미용마스크 자가진단, 마사지건(안마건) 자가점검·배터리·안전, 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열, 두피 마사지기 자가진단 — 주제 변경, 저주파자극기(TENS/EMS) 자가진단, 전동칫솔 충전대(충전기) 자가진단 |
 | `beater-bowl-clearance-adjustment` | 제빵기(홈베이커리) 반죽 안 섞임·안 부풀음·겉만 탐·패들 박힘·세척 자가점검 |
 | `behavioral-insomnia-clinical-management` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `behavioral-model-infant-sleep-disturbance` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
@@ -12073,11 +13646,17 @@ _(팩트 없음)_
 | `biotin-deficiency-clinical-benefit-limited-to-deficiency-state` | 흰머리 발생과 영양: 수소과산화물·카탈라제의 역할과 결핍 기준 |
 | `biotin-deficiency-prevalence-hair-loss-women-38percent` | 흰머리 발생과 영양: 수소과산화물·카탈라제의 역할과 결핍 기준 |
 | `blade-extremely-sharp-cutting-risk` | 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
+| `blue-screen-automatic-restart-disable` | 윈도우 블루스크린이 뜰 때, 오류 코드로 원인 좁히기 |
+| `blue-screen-stop-code-reading-method` | 윈도우 블루스크린이 뜰 때, 오류 코드로 원인 좁히기 |
+| `boiler-warranty-standard` | 바닥 난방이 일부만 따뜻하거나 안 따뜻할 때 사용자가 해볼 수 있는 점검 (분배기 밸브·공기 빼기·압력·업체 호출 기준) |
+| `brake-warning-emergency-response` | 자동차 계기판 경고등 종류별 의미와 대처 (색상 기준, 주요 경고등 의미, 즉시 정차 기준, 제조사 점검처) |
 | `calcium-absorption-vitamin-d-magnesium-synergy` | 칼슘 보충제 흡수: 형태별 생물이용률, 1회 최대 흡수량, 마그네슘 병용 효과, 성장 관련 기능성 원료 인정 현황, 연령별 상한섭취량, 성장 보충제 선택 기준, 음식으로 먹을 때 vs 영양제로 먹을 때: 생체이용률, 식품 매트릭스 효과, 흡수 차이, 한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량 |
 | `calcium-iron-competitive-absorption-spacing` | 칼슘 보충제 흡수: 형태별 생물이용률, 1회 최대 흡수량, 마그네슘 병용 효과, 프리바이오틱스·신바이오틱스: 정의·구성 기준·함량·부작용, 임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성 |
 | `camera-lens-cleaning-method` | 액션캠(고프로·오즈모류) 전원 불량·녹화 안 됨·배터리·방수 자가점검, 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `camera-lens-fog-condensation` | 액션캠(고프로·오즈모류) 전원 불량·녹화 안 됨·배터리·방수 자가점검, 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `camera-write-speed-importance` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
+| `canon-wifi-connection-basic-check` | 프린터 와이파이 연결 실패 자가점검 (2.4GHz·공유기 대역·SSID·IP·공통 점검 순서) |
+| `canon-wifi-wps-connection` | 프린터 와이파이 연결 실패 자가점검 (2.4GHz·공유기 대역·SSID·IP·공통 점검 순서) |
 | `capsaicin-resting-metabolic-rate-33-99kcal-increase` | 기초대사와 관련 성분들: 정의·측정·실제 효과의 괴리 |
 | `capsaicin-trpv1-channel-activation-mechanism` | 기초대사와 관련 성분들: 정의·측정·실제 효과의 괴리 |
 | `capsaicin-weight-loss-effect-small-magnitude-modest` | 기초대사와 관련 성분들: 정의·측정·실제 효과의 괴리 |
@@ -12101,8 +13680,9 @@ _(팩트 없음)_
 | `ceramide-stratum-corneum-composition-50percent` | 환절기 피부 건조 및 각질 메커니즘 |
 | `chair-power-reboot` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `channel-interference-2g4ghz-vs-5ghz` | 가정용 CCTV·홈캠 연결 안 됨·영상 끊김·녹화 안 됨 자가점검, 스마트 플러그(스마트 콘센트) 와이파이 연결 안 됨·앱 인식·원격 제어 불가 자가점검, 와이파이 느려짐 진단: 속도측정·채널 간섭·대역 선택 |
+| `charger-wattage-compatibility-rule` | 고속충전이 안 되고 충전이 느릴 때 케이블·어댑터·포트부터 점검 (갤럭시·아이폰·아이패드 공식 안내 기준) |
 | `charging-adapter-damage-check` | 전기면도기 자가점검·날 관리·물세척·회전식vs왕복식·충전 불량, 헤어클리퍼(이발기) 자가점검·날 관리·오일링·청소·충전 불량, 구강세정기·워터픽 자가점검 — 물 안 나옴·약함·충전 불량·노즐 막힘·물새는 증상·잇몸 출혈·관리 |
-| `charging-disabled-high-temperature` | 배터리 충전 통념 팩트체크: 고속충전·100% 충전·0% 방전·밤새 충전·발열의 실제 영향 |
+| `charging-disabled-high-temperature` | 고속충전이 안 되고 충전이 느릴 때 케이블·어댑터·포트부터 점검 (갤럭시·아이폰·아이패드 공식 안내 기준), 배터리 충전 통념 팩트체크: 고속충전·100% 충전·0% 방전·밤새 충전·발열의 실제 영향 |
 | `charging-heat-accelerates-degradation-above-60celsius` | 포터블 파워스테이션 충전 안 됨·출력 안 됨·발열·배터리 팽창 자가점검 및 보관 기준 |
 | `charging-inductive-position` | 구강세정기·워터픽 자가점검 — 물 안 나옴·약함·충전 불량·노즐 막힘·물새는 증상·잇몸 출혈·관리 |
 | `chemical-sunscreen-lighter-better-cosmetic-feel-no-whitcast` | 선크림 제형 비교: 크림·젤·스틱·스프레이의 성능·흡수·도포감 차이 |
@@ -12114,6 +13694,7 @@ _(팩트 없음)_
 | `cla-body-composition-effect-size-clinical-significance-limitation` | 기초대사와 관련 성분들: 정의·측정·실제 효과의 괴리 |
 | `cla-mechanism-adipocyte-lipolysis-fat-oxidation` | 기초대사와 관련 성분들: 정의·측정·실제 효과의 괴리 |
 | `coating-damage-30-percent-threshold` | 전기그릴·전기팬 자가점검 — 안 뜨거움·연기·눌어붙음·코팅 손상 |
+| `cold-tire-pressure-standard` | 타이어 펑크 시 안전한 대처 순서 (주행 중 제어 · 정차 후 안전 확보 · 응급 수리키트 · 스페어 · 긴급견인), 타이어 공기압 경고등(TPMS)이 안 꺼질 때 확인할 것 — 점등·점멸 구분, 공기압 보충 후에도 켜질 때, 센서 문제 판별, 공식 안내 기준, 겨울 오기 전 차량 점검 — 배터리·부동액·타이어·워셔액·와이퍼, 겨울 타이어와 스노우체인 — 언제 무엇을 쓰면 되나 (기준·국내 제도·장착 요령) |
 | `coliform-bacteria-presence-disqualifies-drinking` | 반려동물 자동급수기(정수 급수기) 살 만한가 — 트렌드랩 |
 | `common-induction-cooktop-crack-hazard` | 하이라이트(전열식) 전기레인지 가열 불량·에러 표시·자가점검 |
 | `common-induction-cookware-magnet-test` | 휴대용 인덕션(1구) — 캠핑·자취 실용성과 한계 |
@@ -12124,6 +13705,7 @@ _(팩트 없음)_
 | `compressed-dehumidifier-characteristics` | 제습기 자가점검: 물이 안 차임·제습 안 됨·냄새·고장 진단 |
 | `consumption-date-definition` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
 | `consumption-date-system-launch` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
+| `coolant-check-topup-weakens` | 자동차 히터가 따뜻해지지 않을 때 점검 순서 (냉각수 수위·서모스탯·히터 코어·에어 혼입) |
 | `copay-cap-excluded-items` | 노인 틀니·치과 임플란트 건강보험 지원 — 대상 연령, 본인부담률, 틀니 재제작 주기, 등록 절차(요양기관 대행), 차상위 비율 불일치 |
 | `copper-cofactor-lysyl-oxidase-collagen-crosslinking-mechanism` | 하루 단백질 필요량과 피부·모발: 구강 섭취 vs 국소 제품의 구분 |
 | `coq10-anticoagulant-interaction-warfarin-caution` | 코엔자임Q10과 심부전, 임상 근거·스타틴 병용·심혈관 사건 예방 |
@@ -12150,10 +13732,13 @@ _(팩트 없음)_
 | `desiccant-dehumidifier-characteristics` | 제습기 자가점검: 물이 안 차임·제습 안 됨·냄새·고장 진단 |
 | `disability-reg-art32-basis` | 장애인연금 — 수급 자격(18세 이상 중증장애인·선정기준액), 기초급여 금액 연동, 기초연금과의 관계, 신청·조사 절차, 건강보험료 경감 — 대상 구분별 경감률(섬·벽지, 농어촌, 65세 이상·장애인 등 세대, 휴직자, 재난지역, 군인)과 신청 방식 |
 | `disease-prevention-vs-disease-progression-delay-distinction` | 탈모 샴푸 성분: 식약처 탈모 완화 기능성 고시 성분과 실제 임상 의미, 콘드로이틴 황산염의 관절 건강 효과와 국제 규제 위치, 만성피로의 감별진단(빈혈·갑상선·수면무호흡·영양 결핍), 보충제 선택 기준, 글루코사민의 무릎 관절염 효과와 GAIT 임상 결과, 초록입홍합(뉴질랜드 초록홍합) 추출물: 관절염 임상 근거, 효과 일관성, 신뢰도, 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과, 관절 영양제 복용 기간: 효과 판단까지 필요한 기간, 임상 기준, 개인차, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성 |
+| `dishwasher-drain-filter-cleaning-frequency` | 식기세척기 후 그릇에 하얀 얼룩이 남을 때 점검 순서 (원인: 수돗물 미네랄·세제 잔여·린스 부족·필터/노즐) |
+| `dishwasher-drain-filter-separation` | 식기세척기 후 그릇에 하얀 얼룩이 남을 때 점검 순서 (원인: 수돗물 미네랄·세제 잔여·린스 부족·필터/노즐) |
 | `dishwasher-residual-water-normal` | LG 디오스 식기세척기 에러코드·세척 불량·배수 안 됨 자가점검, 식기세척기 vs 손설거지 물·전기·경제성 팩트체크, 미니 식기세척기 용량·설치·세척력·적합성 트렌드 |
 | `dishwasher-rinse-aid-compartment` | 식기세척기 vs 손설거지 물·전기·경제성 팩트체크 |
-| `dishwasher-rinse-aid-water-tension` | LG 디오스 식기세척기 에러코드·세척 불량·배수 안 됨 자가점검, 식기세척기 vs 손설거지 물·전기·경제성 팩트체크, 미니 식기세척기 용량·설치·세척력·적합성 트렌드 |
-| `dishwasher-vinegar-rinse-warning` | LG 디오스 식기세척기 에러코드·세척 불량·배수 안 됨 자가점검, 식기세척기 vs 손설거지 물·전기·경제성 팩트체크 |
+| `dishwasher-rinse-aid-water-tension` | 식기세척기 후 그릇에 하얀 얼룩이 남을 때 점검 순서 (원인: 수돗물 미네랄·세제 잔여·린스 부족·필터/노즐), LG 디오스 식기세척기 에러코드·세척 불량·배수 안 됨 자가점검, 식기세척기 vs 손설거지 물·전기·경제성 팩트체크, 미니 식기세척기 용량·설치·세척력·적합성 트렌드 |
+| `dishwasher-vinegar-rinse-warning` | 식기세척기 후 그릇에 하얀 얼룩이 남을 때 점검 순서 (원인: 수돗물 미네랄·세제 잔여·린스 부족·필터/노즐), LG 디오스 식기세척기 에러코드·세척 불량·배수 안 됨 자가점검, 식기세척기 vs 손설거지 물·전기·경제성 팩트체크 |
+| `dishwasher-water-spots-cause` | 식기세척기 후 그릇에 하얀 얼룩이 남을 때 점검 순서 (원인: 수돗물 미네랄·세제 잔여·린스 부족·필터/노즐) |
 | `distribution-date-definition` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
 | `dolce-gusto-descaling-water-recommended` | 캡슐·커피머신 자가점검 — 물 안 나옴, 추출 불량, 디스케알링, 우유거품 이상 |
 | `dongsa-2026-spring-period` | 대한민국 동행세일 — 명칭 중복 판정(동행축제와 동일 캠페인 여부) |
@@ -12166,6 +13751,7 @@ _(팩트 없음)_
 | `dream-trial-primary-outcome-no-significant-benefit` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
 | `dream-trial-sample-size-535-participants-double-masked-rct` | 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
 | `drone-4k-video-capacity-requirement` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
+| `drum-specific-detergent-vs-general` | 세탁 후 옷에 세제 찌꺼기가 남을 때 원인과 해결 (세제 과다·세탁물 과다·헹굼·세제함 막힘·통세척, 삼성/LG 공식 안내 기준) |
 | `dust-sensor-monthly-cleaning` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
 | `dyson-battery-cost-varies-by-model` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |
 | `dyson-battery-low-3vibrations` | 무선청소기 배터리 급감·충전 안 됨 자가점검 |
@@ -12175,13 +13761,21 @@ _(팩트 없음)_
 | `dyson-filter-not-sealed-motor-damage` | LG 코드제로 무선청소기 흡입력 저하·작동 불량 자가점검 |
 | `dyson-soft-reset-battery-separation` | 무선청소기 배터리 급감·충전 안 됨 자가점검 |
 | `energy-efficiency-rating-1st-vs-5th` | 냉장고 전기료 팩트체크: 문 자주 열기, 채우기, 온도설정의 실제 영향 |
+| `engine-oil-check-procedure` | 엔진 경고등(엔진 점검 경고등) 점등 시 주행 가능 여부 판단과 자가 점검 |
+| `engine-oil-warning-red-meaning` | 엔진 경고등(엔진 점검 경고등) 점등 시 주행 가능 여부 판단과 자가 점검 |
+| `engine-oil-warning-red-urgency` | 자동차 계기판 경고등 종류별 의미와 대처 (색상 기준, 주요 경고등 의미, 즉시 정차 기준, 제조사 점검처) |
+| `engine-warning-no-start-tow` | 자동차 계기판 경고등 종류별 의미와 대처 (색상 기준, 주요 경고등 의미, 즉시 정차 기준, 제조사 점검처) |
 | `evening-primrose-oil-menopausal-hot-flash-mixed-evidence-2024` | 생리 전 증후군(PMS) 영양소 치료: 칼슘·마그네슘·비타민B6의 임상 근거 |
 | `exam-anxiety-insomnia` | 시험 기간 수면 리듬 관리: 수능·시험 앞둔 상황에서의 수면 조정, 벼락치기 vs 규칙 수면, 시험 불안과 수면 |
 | `expiration-not-equals-spoilage` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
+| `external-device-disconnect-before-boot` | 윈도우 블루스크린이 뜰 때, 오류 코드로 원인 좁히기 |
 | `extract-temperature-low-descaling-heater` | 캡슐·커피머신 자가점검 — 물 안 나옴, 추출 불량, 디스케알링, 우유거품 이상 |
-| `factory-reset-data-loss` | IPTV 셋톱박스 화면 안 나옴·먹통·리모컨 안 될 때 자가점검 |
+| `factory-reset-before-checklist-reboot-first` | 프린터 와이파이 연결 실패 자가점검 (2.4GHz·공유기 대역·SSID·IP·공통 점검 순서) |
+| `factory-reset-data-loss` | 휴대폰 핫스팟이 연결되지 않을 때 점검 순서 (갤럭시·아이폰 공통 원인과 공식 점검 단계, AS 기준), 갤럭시 소프트웨어 업데이트가 실패하거나 멈출 때 (저장공간·배터리·네트워크 원인, 백업 우선, 단계별 조치, 서비스센터 기준), IPTV 셋톱박스 화면 안 나옴·먹통·리모컨 안 될 때 자가점검 |
+| `factory-reset-isp-router-requires-consultation` | 프린터 와이파이 연결 실패 자가점검 (2.4GHz·공유기 대역·SSID·IP·공통 점검 순서) |
 | `fading-method-gradual-independence` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `fast-charging-mechanism-lithium-plating-degradation` | 포터블 파워스테이션 충전 안 됨·출력 안 됨·발열·배터리 팽창 자가점검 및 보관 기준 |
+| `fast-charging-toggle-location-one-ui` | 고속충전이 안 되고 충전이 느릴 때 케이블·어댑터·포트부터 점검 (갤럭시·아이폰·아이패드 공식 안내 기준) |
 | `fat-soluble-vitamin-accumulation-toxicity-risk` | 미녹시딜: 국내 의약품 지위·농도·초기탈락·중단 후 재탈모, 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항, 비타민A와 야맹증·결핍 증상·과잉 독성·임신 기형 위험·상한섭취량, 한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량, 비타민E와 셀레늄: SELECT 시험 결과, 상한섭취량, 한국인 섭취 현황, 고용량 위험성, 비타민K2의 뼈 건강 기전과 항응고제 금기, 아연 보충제와 감기 기간 단축: 형태·타이밍·구리 균형 |
 | `fat-soluble-vitamin-requires-meal-absorption` | 아스타잔틴의 눈 피로·조절력 개선 임상 근거, 용량, 광고 표현, 칼슘 보충제 흡수: 형태별 생물이용률, 1회 최대 흡수량, 마그네슘 병용 효과, 오메가3의 안구건조증 개선 효과·DREAM 임상시험·인공눈물 우선순위, 영양제 제형(정제·캡슐·액상·젤리)의 흡수율 차이: 붕해·용출·당 함량, 커큐민(강황): 생체이용률 개선 기술과 간 이상사례 보고의 신뢰도, 한국인 비타민D 결핍 현황과 충분 기준·일광·상한섭취량, 비타민K2의 뼈 건강 기전과 항응고제 금기 |
 | `fat-soluble-vitamin-stability` | 루테인(루테인+제아잔틴) 눈 건강 보충제의 임상 근거·효과·안전성·국내 규제, 영양제의 지용성·수용성 차이, 복용 타이밍, 성분 상호작용, 흡수율 결정 요인 |
@@ -12194,6 +13788,7 @@ _(팩트 없음)_
 | `filter-replacement-cycle-6-12-months` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
 | `finasteride-5-alpha-reductase-type-ii-iii-inhibition` | 남성 vs 여성 탈모: 호르몬 메커니즘과 성분 효과 차이 |
 | `finasteride-pregnancy-exposure-teratogenic-risk-absolute-contraindication` | 남성 vs 여성 탈모: 호르몬 메커니즘과 성분 효과 차이 |
+| `flat-tire-no-sudden-brake` | 타이어 공기압 경고등(TPMS)이 안 꺼질 때 확인할 것 — 점등·점멸 구분, 공기압 보충 후에도 켜질 때, 센서 문제 판별, 공식 안내 기준 |
 | `flu-2026-27-free-targets` | 영유아 국가예방접종 — 국가예방접종사업 지원 대상·백신 종류, 지원 연령 제한, 비지원 백신 비용, 지연 접종 안내, 2026 국가예방접종 지침 게시 상태, 어르신 예방접종 — 65세 이상 폐렴구균(PPSV23) 국가예방접종 대상·접종기관·재접종 여부, 2026-27절기 어르신 인플루엔자 무료 접종 대상·횟수·시작일 충돌 |
 | `flu-2026-27-season-period` | 영유아 국가예방접종 — 국가예방접종사업 지원 대상·백신 종류, 지원 연령 제한, 비지원 백신 비용, 지연 접종 안내, 2026 국가예방접종 지침 게시 상태, 어르신 예방접종 — 65세 이상 폐렴구균(PPSV23) 국가예방접종 대상·접종기관·재접종 여부, 2026-27절기 어르신 인플루엔자 무료 접종 대상·횟수·시작일 충돌 |
 | `flu-2026-27-vaccine-type` | 어르신 예방접종 — 65세 이상 폐렴구균(PPSV23) 국가예방접종 대상·접종기관·재접종 여부, 2026-27절기 어르신 인플루엔자 무료 접종 대상·횟수·시작일 충돌 |
@@ -12202,10 +13797,20 @@ _(팩트 없음)_
 | `flu-facility-anywhere` | 영유아 국가예방접종 — 국가예방접종사업 지원 대상·백신 종류, 지원 연령 제한, 비지원 백신 비용, 지연 접종 안내, 2026 국가예방접종 지침 게시 상태, 어르신 예방접종 — 65세 이상 폐렴구균(PPSV23) 국가예방접종 대상·접종기관·재접종 여부, 2026-27절기 어르신 인플루엔자 무료 접종 대상·횟수·시작일 충돌 |
 | `folic-acid-high-dose-b12-deficiency-masking-risk` | 임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성 |
 | `folic-acid-neural-tube-defect-prevention-mechanism-dna-synthesis-cell-division` | 임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성 |
+| `fridge-noise-defrost-drip-tick` | 냉동실에 성에와 얼음이 계속 낄 때 원인과 점검 |
+| `fridge-noise-fan-frost-tapping` | 냉동실에 성에와 얼음이 계속 낄 때 원인과 점검 |
+| `fridge-noise-lg-as-criteria` | 냉동실에 성에와 얼음이 계속 낄 때 원인과 점검 |
+| `frozen-pipe-direct-flame-prohibited-fire-hazard` | 귀뚜라미 가정용 보일러 에러코드 의미와 사용자 점검 범위 (AD 2자리 계열 · E+3자리 신형 계열) |
 | `gait-trial-overall-population-no-efficacy` | 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과 |
+| `galaxy-overheat-cause-hotspot-weak-signal` | 휴대폰 핫스팟이 연결되지 않을 때 점검 순서 (갤럭시·아이폰 공통 원인과 공식 점검 단계, AS 기준) |
+| `galaxy-update-backup-before-storage-cleanup` | 갤럭시 저장공간이 부족할 때 정리하는 순서 (기기 케어 확인 → 백업 먼저 → 휴지통·대용량·미사용 앱 → 캐시 → 클라우드 이동, 안 되면 공식 접수) |
+| `galaxy-update-battery-20-percent-official` | 갤럭시 저장공간이 부족할 때 정리하는 순서 (기기 케어 확인 → 백업 먼저 → 휴지통·대용량·미사용 앱 → 캐시 → 클라우드 이동, 안 되면 공식 접수) |
+| `galaxy-update-storage-amount-not-published` | 갤럭시 저장공간이 부족할 때 정리하는 순서 (기기 케어 확인 → 백업 먼저 → 휴지통·대용량·미사용 앱 → 캐시 → 클라우드 이동, 안 되면 공식 접수) |
 | `game-controller-connection-loss-check-battery-bluetooth-range` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
 | `game-controller-pairing-reset-procedure` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
 | `game-controller-usb-port-inspection-charging-issue` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
+| `gas-range-gas-odor-emergency-procedure` | 일산화탄소 경보기 울림 시 대처와 겨울철 점검 (설치 위치·수명·시험·중독 증상·119 대처) |
+| `genuine-charger-importance` | 고속충전이 안 되고 충전이 느릴 때 케이블·어댑터·포트부터 점검 (갤럭시·아이폰·아이패드 공식 안내 기준) |
 | `genuine-filter-lg-sensor-recognition` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검 |
 | `ghk-cu-collagen-production-fibroblast-in-vitro-mechanism` | 하루 단백질 필요량과 피부·모발: 구강 섭취 vs 국소 제품의 구분 |
 | `ginkgo-anticoagulant-bleeding-risk-surgery` | 혈행 개선 영양제와 수술·시술 전 주의, 항혈소판·항응고 병용 위험 |
@@ -12222,7 +13827,9 @@ _(팩트 없음)_
 | `hair-dryer-filter-cleaning-monthly` | 헤어 에어랩·컬링기·고데기 자가점검 — 필터 청소·과열·타는 냄새·코팅 손상 |
 | `hdmi-arc-cable-connection-sequence` | AV리시버·홈시어터 소리 안 남·채널 누락 자가진단, HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
 | `hdmi-arc-eArc-definition` | AV리시버·홈시어터 소리 안 남·채널 누락 자가진단, HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
+| `hdmi-cable-replacement-test-priority` | 모니터가 깜빡이거나 줄이 보일 때 점검 순서 (케이블·주사율·그래픽 드라이버·전원·패널 불량 판별·AS 기준) |
 | `hdmi-cec-remote-control-function` | AV리시버·홈시어터 소리 안 남·채널 누락 자가진단, HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
+| `hdmi-input-source-selection-required` | 모니터가 깜빡이거나 줄이 보일 때 점검 순서 (케이블·주사율·그래픽 드라이버·전원·패널 불량 판별·AS 기준) |
 | `health-refund-occurrence-cases` | 건강보험 피부양자 자격 — 대상 범위·인정기준·취득/상실일·신고 서류 (신청·환급 달력) |
 | `health-refund-statute-3yr` | 건강보험 피부양자 자격 — 대상 범위·인정기준·취득/상실일·신고 서류 (신청·환급 달력) |
 | `health-supplement-adverse-event-definition` | 영양제 이상사례 신고 체계: 식약처 신고 절차, 신고 대상, 보호 규칙 |
@@ -12232,12 +13839,15 @@ _(팩트 없음)_
 | `high-dose-supplement-paradox-bioavailability` | 글루타치온의 경구 생물이용률 논쟁, 피부 미백 효과, 국내 기능성 미인정, 먹는 콜라겐·히알루론산의 소화·흡수·분포 경로, 피부 도달 메커니즘, 임상 근거 |
 | `high-power-appliances-direct-outlet` | 데스크톱 PC 전원이 안 켜짐 — 하드웨어 물리적 원인 자가점검 |
 | `high-temperature-ambient-above-35-celsius-permanent-damage` | 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계, 포터블 파워스테이션 충전 안 됨·출력 안 됨·발열·배터리 팽창 자가점검 및 보관 기준 |
-| `hp-cold-reset-power-cycle` | 캐논·엡손 프린터 인쇄 불량·잉크 오류·폐잉크 패드 자가점검 |
+| `hp-cold-reset-power-cycle` | 프린터 와이파이 연결 실패 자가점검 (2.4GHz·공유기 대역·SSID·IP·공통 점검 순서), 캐논·엡손 프린터 인쇄 불량·잉크 오류·폐잉크 패드 자가점검 |
+| `hp-customer-center-korea` | 프린터 와이파이 연결 실패 자가점검 (2.4GHz·공유기 대역·SSID·IP·공통 점검 순서) |
 | `hp-driver-reinstall-hp-website` | 캐논·엡손 프린터 인쇄 불량·잉크 오류·폐잉크 패드 자가점검 |
 | `hp-driver-removal-windows-uninstall` | 캐논·엡손 프린터 인쇄 불량·잉크 오류·폐잉크 패드 자가점검 |
 | `hp-paper-jam-removal-precaution` | 캐논·엡손 프린터 인쇄 불량·잉크 오류·폐잉크 패드 자가점검 |
-| `hp-printer-connection-usb-wireless-check` | 캐논·엡손 프린터 인쇄 불량·잉크 오류·폐잉크 패드 자가점검 |
+| `hp-printer-connection-usb-wireless-check` | 프린터 와이파이 연결 실패 자가점검 (2.4GHz·공유기 대역·SSID·IP·공통 점검 순서), 캐논·엡손 프린터 인쇄 불량·잉크 오류·폐잉크 패드 자가점검 |
 | `hp-printer-troubleshooting-sequence` | 캐논·엡손 프린터 인쇄 불량·잉크 오류·폐잉크 패드 자가점검 |
+| `hp-wifi-reconnection-basic-step` | 프린터 와이파이 연결 실패 자가점검 (2.4GHz·공유기 대역·SSID·IP·공통 점검 순서) |
+| `hp-wps-wireless-setup-method` | 프린터 와이파이 연결 실패 자가점검 (2.4GHz·공유기 대역·SSID·IP·공통 점검 순서) |
 | `hs-deduction-40pct-300man` | 청년 주택드림 청약통장 (신청 달력 웨이브4) |
 | `hs-deposit-period-2028` | 청년 주택드림 청약통장 (신청 달력 웨이브4) |
 | `hs-eligibility-salary-7000man-householder` | 청년 주택드림 청약통장 (신청 달력 웨이브4) |
@@ -12250,8 +13860,10 @@ _(팩트 없음)_
 | `humidity-drop-tewl-increase-seasonal` | 주부습진·손 건조: 자극원 기전과 세정제·보습제·장갑 관리 |
 | `humidity-threshold-60percent-from-condensation-study` | 실내 곰팡이 발생 조건과 안전한 제거 및 재발 방지 |
 | `hyaluronic-acid-topical` | 겨울 난방과 실내 건조가 피부에 미치는 영향 |
+| `hybrid-vehicle-12v-battery-damage-risk` | 겨울 오기 전 차량 점검 — 배터리·부동액·타이어·워셔액·와이퍼 |
 | `ice-crushing-damages-regular-blade` | 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
 | `ice-crushing-limitation-most-hand-blenders` | 휴대용 미니 블렌더(충전식 텀블러 블렌더) 구매 트렌드 — 용도·성능·배터리 한계 |
+| `ice-not-produced-water-supply-issue` | 냉장고 아래로 물이 샐 때 정상 결로인지 고장인지 자가 구분 |
 | `id-card-reissue-application-channel` | 신분증(주민등록증) 분실 신고 — 신고 주체, 신고 채널·수수료·처리 시간, 모바일 신분증 경로, 재발급 처리기간·준비물 |
 | `id-card-reissue-fee-ic-10000` | 신분증(주민등록증) 분실 신고 — 신고 주체, 신고 채널·수수료·처리 시간, 모바일 신분증 경로, 재발급 처리기간·준비물 |
 | `id-card-reissue-fee-no-ic-5000` | 신분증(주민등록증) 분실 신고 — 신고 주체, 신고 채널·수수료·처리 시간, 모바일 신분증 경로, 재발급 처리기간·준비물 |
@@ -12263,27 +13875,43 @@ _(팩트 없음)_
 | `income-tax-hometax-filing-path` | 프리랜서 3.3% 원천징수 환급 — 3.3% 구성, 5월 종합소득세 신고 필요성, 환급 원리, 특별공제 제한, 지방소득세 신고 (종합소득 개인지방소득세 확정신고·분할납부, 지방세법 제95조 기준·위택스 메뉴) |
 | `income-tax-moducheum-notice-meaning` | 프리랜서 3.3% 원천징수 환급 — 3.3% 구성, 5월 종합소득세 신고 필요성, 환급 원리, 특별공제 제한 |
 | `industry-sponsored-research-bias-conflict-of-interest` | 세라마이드(ceramide)의 피부 장벽 기능 및 임상 효과, 가르시니아: 체중감량 효과의 근거 수준과 간 손상 위험, 바르는 히알루론산의 피부 수화 효과, 분자량 역할, 저습도 논쟁, 판테놀(panthenol)과 마데카소사이드(madecassoside)의 피부 진정 및 상처 치유 효과, 레티놀 · 레티노이드 계열 주름개선: 강도별 비교, 자극 프로파일, 임신부 금기, 마카의 임상 근거 수준, 성욕 관련 효과, 국내 기능성 인정 범위, 종합비타민의 가치: 대규모 임상 결과·식사 대체 불가, 오메가3·DHA·포스파티딜세린의 인지 기능·집중력 효과, RCT 근거 수준, 커큐민(강황): 생체이용률 개선 기술과 간 이상사례 보고의 신뢰도 |
+| `installation-space-clearance-washing` | 세탁기 탈수 시 쿵쿵 진동·소음 점검 순서 (드럼·통돌이, 사용자 조치, AS 신호) |
 | `insurance-certificate-hotline-1577-1000` | 건강보험료 분할납부 — 정산보험료(연말정산 추가분)·체납보험료 분할 기준 (신청·환급 달력), 노인 틀니·치과 임플란트 건강보험 지원 — 대상 연령, 본인부담률, 틀니 재제작 주기, 등록 절차(요양기관 대행), 차상위 비율 불일치 |
 | `insurance-certificate-menu-name` | 건강보험 피부양자 자격 — 대상 범위·인정기준·취득/상실일·신고 서류 (신청·환급 달력) |
 | `ipad-charging-temperature-range` | 배터리 충전 통념 팩트체크: 고속충전·100% 충전·0% 방전·밤새 충전·발열의 실제 영향 |
-| `iphone-force-restart-generation-split` | 아이폰 Face ID 인식 안 됨·카메라 흐림 자가점검 |
+| `iphone-bluetooth-accessory-basics` | 애플펜슬 연결 안 됨·충전 안 됨·필기 끊김 자가점검 (세대별 페어링·충전·서비스 기준) |
+| `iphone-bluetooth-unpair-repair` | 애플펜슬 연결 안 됨·충전 안 됨·필기 끊김 자가점검 (세대별 페어링·충전·서비스 기준) |
+| `iphone-force-restart-generation-split` | 아이폰 Face ID 인식 안 됨·카메라 흐림 자가점검, 아이폰 와이파이·블루투스 연결 안 될 때 점검 순서 (기기 쪽 vs 공유기 쪽 분리 진단, 데이터 손실 여부) |
 | `iphone-normal-operating-temperature` | 아이패드 충전 안 됨·느림 자가점검, 애플 맥북 안 켜짐·충전·발열·배터리 자가점검, 배터리 충전 통념 팩트체크: 고속충전·100% 충전·0% 방전·밤새 충전·발열의 실제 영향 |
 | `iphone-overheating-mitigation-immediate` | 아이패드 충전 안 됨·느림 자가점검, 애플 맥북 안 켜짐·충전·발열·배터리 자가점검 |
 | `iphone-overheating-what-not-to-do` | 아이패드 충전 안 됨·느림 자가점검, 애플 맥북 안 켜짐·충전·발열·배터리 자가점검, 배터리 충전 통념 팩트체크: 고속충전·100% 충전·0% 방전·밤새 충전·발열의 실제 영향 |
+| `iphone-reset-all-settings-data-kept` | 삼성페이(현 Samsung Wallet)·애플페이 결제가 안 될 때 점검 순서 (NFC 설정·카드 등록·잠금 설정·단말기 위치, 중복 결제 확인) |
+| `iphone-reset-network-erases-list` | 휴대폰 핫스팟이 연결되지 않을 때 점검 순서 (갤럭시·아이폰 공통 원인과 공식 점검 단계, AS 기준) |
+| `iphone-reset-network-settings-last-resort` | 휴대폰 핫스팟이 연결되지 않을 때 점검 순서 (갤럭시·아이폰 공통 원인과 공식 점검 단계, AS 기준) |
+| `iphone-restart-steps-face-id` | 삼성페이(현 Samsung Wallet)·애플페이 결제가 안 될 때 점검 순서 (NFC 설정·카드 등록·잠금 설정·단말기 위치, 중복 결제 확인) |
 | `iphone-thermal-throttling-performance` | 아이패드 충전 안 됨·느림 자가점검, 아이폰 Face ID 인식 안 됨·카메라 흐림 자가점검, 애플 맥북 안 켜짐·충전·발열·배터리 자가점검, 배터리 충전 통념 팩트체크: 고속충전·100% 충전·0% 방전·밤새 충전·발열의 실제 영향 |
+| `iphone-wifi-no-internet-contact-isp-or-apple` | 휴대폰 핫스팟이 연결되지 않을 때 점검 순서 (갤럭시·아이폰 공통 원인과 공식 점검 단계, AS 기준) |
 | `iptime-2g4-vs-5g-characteristics` | 가정용 CCTV·홈캠 연결 안 됨·영상 끊김·녹화 안 됨 자가점검, 메시·증폭기 설치 최적화 및 성능 저하 원인 진단, 무선 키보드·마우스 연결 끊김·인식 안 됨·입력 지연 자가점검 |
 | `iron-absorption-alternate-day-vs-consecutive-day-2017` | 소아 면역 영양제: 비타민D·아연·철분 권장량·상한·안전성 |
 | `iron-absorption-enhancement-vitamin-c` | 음식으로 먹을 때 vs 영양제로 먹을 때: 생체이용률, 식품 매트릭스 효과, 흡수 차이 |
 | `joycon-drift-calibration-official-method` | 게임 컨트롤러(엑스박스·듀얼센스·닌텐도) PC 연결·버튼·진동·배터리 자가점검 |
+| `jumpstart-cable-order` | 겨울 오기 전 차량 점검 — 배터리·부동액·타이어·워셔액·와이퍼 |
+| `kca-2020-no-electric-heater-rules` | 히터를 처음 켰을 때 나는 냄새 — 정상 먼지 타는 냄새와 위험한 타는 냄새 구분, 즉시 중단 신호, 청소 방법 |
 | `ketoconazole-2percent-vs-zinc-pyrithione-1percent-dandruff-efficacy` | 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도, 비듬 vs 지루성두피염: 임상 진단·증상·치료 차이, 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 |
 | `ketoconazole-shampoo-meta-analysis-64-trials-8189-patients` | 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도, 비듬 vs 지루성두피염: 임상 진단·증상·치료 차이, 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 |
 | `ketoconazole-shampoo-relapse-rate-posttreatment` | 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도, 케토코나졸 샴푸: 비듬·지루성 두피의 사용법, 국내 분류, 농도·빈도 |
-| `kgs-boiler-abnormal-stop-expert` | 대성쎌틱 보일러 에러코드 공식 확인 시도와 고객센터 경계(공통 가스 안전 팩트는 재사용) |
-| `kgs-boiler-room-ventilation-exhaust-check` | 대성쎌틱 보일러 에러코드 공식 확인 시도와 고객센터 경계(공통 가스 안전 팩트는 재사용) |
-| `kgs-carbon-monoxide-response-not-found` | 대성쎌틱 보일러 에러코드 공식 확인 시도와 고객센터 경계(공통 가스 안전 팩트는 재사용) |
-| `kgs-gas-smell-no-electric` | 대성쎌틱 보일러 에러코드 공식 확인 시도와 고객센터 경계(공통 가스 안전 팩트는 재사용) |
-| `kgs-gas-smell-report-contact` | 대성쎌틱 보일러 에러코드 공식 확인 시도와 고객센터 경계(공통 가스 안전 팩트는 재사용) |
-| `kgs-gas-smell-shutoff-ventilate` | 대성쎌틱 보일러 에러코드 공식 확인 시도와 고객센터 경계(공통 가스 안전 팩트는 재사용) |
+| `kgs-boiler-abnormal-stop-expert` | 대성쎌틱 보일러 에러코드 — 공식 코드표 부재 확인, 앱·고객지원 경로, 안전 기준선(KGS 재사용), 귀뚜라미 가정용 보일러 에러코드 의미와 사용자 점검 범위 (AD 2자리 계열 · E+3자리 신형 계열), 대성쎌틱 보일러 에러코드 공식 확인 시도와 고객센터 경계(공통 가스 안전 팩트는 재사용) |
+| `kgs-boiler-room-ventilation-exhaust-check` | 대성쎌틱 보일러 에러코드 — 공식 코드표 부재 확인, 앱·고객지원 경로, 안전 기준선(KGS 재사용), 귀뚜라미 가정용 보일러 에러코드 의미와 사용자 점검 범위 (AD 2자리 계열 · E+3자리 신형 계열), 대성쎌틱 보일러 에러코드 공식 확인 시도와 고객센터 경계(공통 가스 안전 팩트는 재사용) |
+| `kgs-carbon-monoxide-response-not-found` | 일산화탄소 경보기 울림 시 대처와 겨울철 점검 (설치 위치·수명·시험·중독 증상·119 대처), 대성쎌틱 보일러 에러코드 — 공식 코드표 부재 확인, 앱·고객지원 경로, 안전 기준선(KGS 재사용), 귀뚜라미 가정용 보일러 에러코드 의미와 사용자 점검 범위 (AD 2자리 계열 · E+3자리 신형 계열), 대성쎌틱 보일러 에러코드 공식 확인 시도와 고객센터 경계(공통 가스 안전 팩트는 재사용) |
+| `kgs-gas-smell-no-electric` | 대성쎌틱 보일러 에러코드 — 공식 코드표 부재 확인, 앱·고객지원 경로, 안전 기준선(KGS 재사용), 귀뚜라미 가정용 보일러 에러코드 의미와 사용자 점검 범위 (AD 2자리 계열 · E+3자리 신형 계열), 대성쎌틱 보일러 에러코드 공식 확인 시도와 고객센터 경계(공통 가스 안전 팩트는 재사용) |
+| `kgs-gas-smell-report-contact` | 대성쎌틱 보일러 에러코드 — 공식 코드표 부재 확인, 앱·고객지원 경로, 안전 기준선(KGS 재사용), 귀뚜라미 가정용 보일러 에러코드 의미와 사용자 점검 범위 (AD 2자리 계열 · E+3자리 신형 계열), 대성쎌틱 보일러 에러코드 공식 확인 시도와 고객센터 경계(공통 가스 안전 팩트는 재사용) |
+| `kgs-gas-smell-shutoff-ventilate` | 대성쎌틱 보일러 에러코드 — 공식 코드표 부재 확인, 앱·고객지원 경로, 안전 기준선(KGS 재사용), 귀뚜라미 가정용 보일러 에러코드 의미와 사용자 점검 범위 (AD 2자리 계열 · E+3자리 신형 계열), 대성쎌틱 보일러 에러코드 공식 확인 시도와 고객센터 경계(공통 가스 안전 팩트는 재사용) |
+| `kiturami-code-heating-leak-E492` | 바닥 난방이 일부만 따뜻하거나 안 따뜻할 때 사용자가 해볼 수 있는 점검 (분배기 밸브·공기 빼기·압력·업체 호출 기준) |
+| `kiturami-customer-center-1588-9000` | 귀뚜라미 가정용 보일러 에러코드 의미와 사용자 점검 범위 (AD 2자리 계열 · E+3자리 신형 계열) |
+| `kiturami-frozen-no-hotwater-thawing` | 귀뚜라미 가정용 보일러 에러코드 의미와 사용자 점검 범위 (AD 2자리 계열 · E+3자리 신형 계열) |
+| `kiturami-heating-frozen-service-boundary` | 귀뚜라미 가정용 보일러 에러코드 의미와 사용자 점검 범위 (AD 2자리 계열 · E+3자리 신형 계열) |
+| `kiturami-kakao-self-diagnosis-manual` | 귀뚜라미 가정용 보일러 에러코드 의미와 사용자 점검 범위 (AD 2자리 계열 · E+3자리 신형 계열) |
+| `kiturami-manual-download-by-model` | 바닥 난방이 일부만 따뜻하거나 안 따뜻할 때 사용자가 해볼 수 있는 점검 (분배기 밸브·공기 빼기·압력·업체 호출 기준) |
 | `korea-daily-intake-lutein-10-20mg` | 한국 건강기능식품 제도의 원료 분류·기능성 표시 규정·광고 규제 |
 | `korea-food-safety-lutein-function-claim` | 한국 건강기능식품 제도의 원료 분류·기능성 표시 규정·광고 규제 |
 | `korea-health-food-certified-form-standard-raw-material` | 혈압 관리 영양제와 약물 치료의 역할 분담, 국내 기능성 원료, 엽산(엽산염)의 신경관결손 예방 효과, 기전, 용량, 안전성, 철분제의 흡수, 복용 방법, 위장 부작용, 약물 상호작용, 홍삼 진세노사이드의 종류별 효과 및 식약처 기능성 인정 범위, 국내 맞춤형 영양제 소분 판매 규제, 추천 알고리즘의 한계, 구독 서비스 현황 |
@@ -12300,9 +13928,10 @@ _(팩트 없음)_
 | `ksf-2024-period` | 코리아세일페스타(코세페) — 정부·민간 공동 행사, 2025 실제 기간·참여 규모, 2026 발표 여부 (세일 달력 행사별 항목) |
 | `ksf-2025-period-unconfirmed` | 코리아세일페스타(코세페) — 정부·민간 공동 행사, 2025 실제 기간·참여 규모, 2026 발표 여부 (세일 달력 행사별 항목) |
 | `ksf-2026-not-announced` | 코리아세일페스타(코세페) — 정부·민간 공동 행사, 2025 실제 기간·참여 규모, 2026 발표 여부 (세일 달력 행사별 항목) |
-| `kyungdong-exhaust-outlet-abnormality-signs` | 린나이 보일러 에러코드와 온수·난방 자가진단 |
+| `kyungdong-exhaust-outlet-abnormality-signs` | 난방은 되는데 온수가 안 나올 때 보일러 점검 순서 (온수 설정·수전·재기동·겨울철 동파 의심·계량기·AS 기준), 린나이 보일러 에러코드와 온수·난방 자가진단 |
 | `kyungdong-frozen-pipe-thawing` | 린나이 보일러 에러코드와 온수·난방 자가진단 |
-| `kyungdong-gas-smell-emergency-procedure` | 린나이 보일러 에러코드와 온수·난방 자가진단 |
+| `kyungdong-gas-smell-emergency-procedure` | 난방은 되는데 온수가 안 나올 때 보일러 점검 순서 (온수 설정·수전·재기동·겨울철 동파 의심·계량기·AS 기준), 린나이 보일러 에러코드와 온수·난방 자가진단 |
+| `kyungdong-hotwater-no-output-checklist` | 난방은 되는데 온수가 안 나올 때 보일러 점검 순서 (온수 설정·수전·재기동·겨울철 동파 의심·계량기·AS 기준) |
 | `l-ascorbic-acid-ph3-most-stable-oxidation` | 비타민C와 레티놀 병용: pH 충돌, 효과 최적화, 아침·저녁 분리 필요성 |
 | `law-deadline-weekend-next-day-local` | 취득세 신고·납부 (신청·환급 달력, 세금·공제) — 신고기한·취득일·가산세·주택 표준세율, 지방소득세 신고 (종합소득 개인지방소득세 확정신고·분할납부, 지방세법 제95조 기준·위택스 메뉴), 등록면허세 (부동산 등기 등록면허세·세율·신고납부 시기·과세표준) — 신청·환급 달력, 세금·공제, 자동차 취득세 (차량 취득세 세율·신고기한·차량 등록면허세) — 신청·환급 달력, 세금·공제 |
 | `law-deadline-weekend-next-day-national` | 폐업 신고 — 신고 의무·기한·제출 방법·폐업 후 확정신고, 사업장현황신고(면세 개인사업자 직전년도 수입금액·사업장 현황 신고) — 신청·환급 달력 웨이브4, 양도소득세 예정신고 (부동산·주식 등 양도 후 기한 내 신고·납부), 증여세 신고·납부 (증여받은 날 기준 3개월 신고기한·반환 기간·신고세액공제), 상속세 신고·납부 (상속개시일 기준 신고기한·제출서류·제출처), 해외주식 양도소득세 신고(국외 상장주식 양도 확정신고) — 신청·환급 달력 웨이브4, 간이과세자 기준·적용 제외·신고 기한, 생활백과 신청 — 부가가치세 예정고지(4월·10월 고지서, 직전 과세기간 납부세액 50%), 원천징수 이행상황 신고·납부(매월·반기별) — 신청·환급 달력 웨이브4 |
@@ -12315,9 +13944,24 @@ _(팩트 없음)_
 | `left-lateral-sleep-position-recommended` | 임신 후기 불면증: 역류, 빈뇨, 태동 |
 | `lg-battery-charge-percentage-led-indicators` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |
 | `lg-battery-replacement-cost-official` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |
+| `lg-dishwasher-detergent-quantity` | 식기세척기 후 그릇에 하얀 얼룩이 남을 때 점검 순서 (원인: 수돗물 미네랄·세제 잔여·린스 부족·필터/노즐) |
 | `lg-filter-orange-indicator-meaning` | 정수기 필터 교체 미루면 정말 위험한가 — 팩트체크 |
 | `lg-filter-replacement-cycle` | 정수기 필터 교체 미루면 정말 위험한가 — 팩트체크 |
+| `lg-fridge-cooling-weak-door-packing-cleaning` | 냉동실에 성에와 얼음이 계속 낄 때 원인과 점검 |
+| `lg-fridge-cooling-weak-door-seal` | 냉동실에 성에와 얼음이 계속 낄 때 원인과 점검 |
+| `lg-fridge-cooling-weak-internal-frost` | 냉동실에 성에와 얼음이 계속 낄 때 원인과 점검, 냉장고 소음(웅웅·딸깍·물소리) 정상 여부 자가 판별 |
+| `lg-fridge-cooling-weak-load-capacity` | 냉동실에 성에와 얼음이 계속 낄 때 원인과 점검 |
+| `lg-fridge-cooling-weak-temperature-setting` | 냉동실에 성에와 얼음이 계속 낄 때 원인과 점검 |
+| `lg-fridge-error-dh-defrost-failure` | 냉동실에 성에와 얼음이 계속 낄 때 원인과 점검 |
+| `lg-fridge-error-ff-rf-fan-ice` | 냉동실에 성에와 얼음이 계속 낄 때 원인과 점검, 냉장고 소음(웅웅·딸깍·물소리) 정상 여부 자가 판별 |
+| `lg-fridge-operating-temperature-range` | 냉동실에 성에와 얼음이 계속 낄 때 원인과 점검 |
+| `lg-hdmi-cable-reconnection` | TV 화면에 줄이 생기거나 깜빡일 때 점검 순서 (삼성·LG 공식 안내 기준) |
+| `lg-kimchi-cooling-weak-compartment-power-off` | 김장 후 김치냉장고 설정과 보관 요령 (제조사 공식 안내 기준, 브랜드별 수치 분리) |
+| `lg-kimchi-cooling-weak-storage-function` | 김장 후 김치냉장고 설정과 보관 요령 (제조사 공식 안내 기준, 브랜드별 수치 분리) |
+| `lg-rinse-essential-drying` | 식기세척기 후 그릇에 하얀 얼룩이 남을 때 점검 순서 (원인: 수돗물 미네랄·세제 잔여·린스 부족·필터/노즐) |
 | `lg-thinq-smart-diagnosis-procedure` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검 |
+| `lg-tv-hdmi-cable-damage-inspection` | TV 화면에 줄이 생기거나 깜빡일 때 점검 순서 (삼성·LG 공식 안내 기준) |
+| `lg-tv-hdmi-test-diagnostic` | TV 화면에 줄이 생기거나 깜빡일 때 점검 순서 (삼성·LG 공식 안내 기준) |
 | `local-income-tax-wetax-main-menu` | 지방세 환급금 조회·신청 (위택스 환급금 빠른조회, 지방세환급금 충당·환급 원칙) |
 | `long-term-care-grade-application-eligibility` | 의료급여 — 수급권자 범위(의료급여법 제3조), 2026년 의료급여 선정기준(기준 중위소득 40%), 급여 내용·신청 절차 미확인 |
 | `luteal-phase-body-temperature-melatonin-disruption` | 임신 초기 피로와 프로게스테론 |
@@ -12349,12 +13993,13 @@ _(팩트 없음)_
 | `microsd-speed-performance-variance` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `microwave-installation-space-ventilation` | 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
 | `microwave-interior-cleaning-method` | 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
-| `microwave-never-disassemble-warning` | 전자레인지 전자파·영양·발암·임산부·모유 팩트체크, 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
-| `microwave-spark-fire-hazard` | 전자레인지 전자파·영양·발암·임산부·모유 팩트체크, 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
-| `microwave-spark-foil-packaging` | 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
-| `microwave-spark-interior-debris` | 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
-| `microwave-spark-metal-container` | 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
+| `microwave-never-disassemble-warning` | 전자레인지에서 불꽃(스파크)이 튈 때, 바로 멈추고 확인할 것, 전자레인지 전자파·영양·발암·임산부·모유 팩트체크, 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
+| `microwave-spark-fire-hazard` | 전자레인지에서 불꽃(스파크)이 튈 때, 바로 멈추고 확인할 것, 전자레인지 전자파·영양·발암·임산부·모유 팩트체크, 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
+| `microwave-spark-foil-packaging` | 전자레인지에서 불꽃(스파크)이 튈 때, 바로 멈추고 확인할 것, 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
+| `microwave-spark-interior-debris` | 전자레인지에서 불꽃(스파크)이 튈 때, 바로 멈추고 확인할 것, 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
+| `microwave-spark-metal-container` | 전자레인지에서 불꽃(스파크)이 튈 때, 바로 멈추고 확인할 것, 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
 | `microwave-spark-metal-trim-food` | 광파오븐·전기오븐 안 데워짐·안 구워짐·에러·온도편차·팬소음·청소 자가점검 |
+| `microwave-turntable-rotation-check` | 전자레인지에서 큰 소음이 나거나 접시(턴테이블)가 안 돌 때 자가 점검 |
 | `milk-frother-tube-clogging-cleaning` | 캡슐·커피머신 자가점검 — 물 안 나옴, 추출 불량, 디스케알링, 우유거품 이상 |
 | `milk-type-foam-suitability` | 캡슐·커피머신 자가점검 — 물 안 나옴, 추출 불량, 디스케알링, 우유거품 이상 |
 | `mineral-sunscreen-zinc-oxide-broad-spectrum-titanium-uva-limited` | 산화아연과 이산화티탄의 무기 자차 비교: 파장 커버리지, 백탁, 효과 차이 |
@@ -12366,10 +14011,15 @@ _(팩트 없음)_
 | `minoxidil-pregnancy-teratogenicity-risk-topical` | 남성 vs 여성 탈모: 호르몬 메커니즘과 성분 효과 차이 |
 | `mobile-id-ic-card-fee-and-photo` | 주민등록증 재발급 — 재발급 사유, 신청 경로, 수수료(IC칩 유무별), 사진·본인확인, 철회 기간 |
 | `mobile-id-issue-ic-card-route` | 주민등록증 재발급 — 재발급 사유, 신청 경로, 수수료(IC칩 유무별), 사진·본인확인, 철회 기간 |
+| `moisture-detection-charging-block` | 고속충전이 안 되고 충전이 느릴 때 케이블·어댑터·포트부터 점검 (갤럭시·아이폰·아이패드 공식 안내 기준) |
 | `moisturizer-efficacy-dermatological-conditions-eczema-xerosis-psoriasis` | 주부습진·손 건조: 자극원 기전과 세정제·보습제·장갑 관리 |
 | `moisturizer-occlusive-humectant` | 겨울 난방과 실내 건조가 피부에 미치는 영향 |
 | `moisturizer-three-classes-definition-function` | 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과, 글리세린(glycerin)의 습윤제 기능: 농도·습도 의존성·최적 효과, 주부습진·손 건조: 자극원 기전과 세정제·보습제·장갑 관리 |
 | `monitor-flickering-hdmi-version-issue` | HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
+| `monitor-input-source-selection` | 모니터가 깜빡이거나 줄이 보일 때 점검 순서 (케이블·주사율·그래픽 드라이버·전원·패널 불량 판별·AS 기준) |
+| `monitor-no-signal-cable-check-first` | 모니터가 깜빡이거나 줄이 보일 때 점검 순서 (케이블·주사율·그래픽 드라이버·전원·패널 불량 판별·AS 기준) |
+| `monitor-power-cord-reset` | 모니터가 깜빡이거나 줄이 보일 때 점검 순서 (케이블·주사율·그래픽 드라이버·전원·패널 불량 판별·AS 기준) |
+| `monitor-self-test-menu` | 모니터가 깜빡이거나 줄이 보일 때 점검 순서 (케이블·주사율·그래픽 드라이버·전원·패널 불량 판별·AS 기준) |
 | `motor-overheat-protection` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `move-in-report-14day-deadline` | 이사 시 주소 일괄변경 — 전입신고 기한, 법정 간주 범위, 타 기관 자동 변경 여부 |
 | `mrc-vitamin-study-neural-tube-defect-prevention-1991` | 임신 중 영양제: 필수 영양소 권장량, 금기 성분, 안전성 |
@@ -12382,6 +14032,8 @@ _(팩트 없음)_
 | `national-pension-claim-early-reduction-ratio` | 조기노령연금 — 출생연도별 조기 수급 연령, 신청 조건, 수급 시작 나이별 감액률, 청구 방법 |
 | `national-pension-claim-limitation-5years` | 유족연금 수급권자·유족 범위·금액·소멸 사유와 청구 안내 |
 | `nespresso-descaling-water-only` | 캡슐·커피머신 자가점검 — 물 안 나옴, 추출 불량, 디스케알링, 우유거품 이상 |
+| `nfa-2021-heating-unplug-when-away` | 히터를 처음 켰을 때 나는 냄새 — 정상 먼지 타는 냄새와 위험한 타는 냄새 구분, 즉시 중단 신호, 청소 방법 |
+| `nfa-2021-octopus-and-cord-check` | 히터를 처음 켰을 때 나는 냄새 — 정상 먼지 타는 냄새와 위험한 타는 냄새 구분, 즉시 중단 신호, 청소 방법 |
 | `niacinamide-2-percent-sebum-reduction-20-25-percent-4weeks` | 여름 피지 관리: 온도와 피지 분비의 관계, 과세정의 역효과 |
 | `niacinamide-5-percent-21-day-cumulative-irritation-none` | 나이아신아마이드(비타민 B3): 피지·모공 조절 근거 (미백·톤과 분리) |
 | `niacinamide-not-niacin-no-flushing-at-cosmetic-levels` | 나이아신아마이드(비타민 B3): 피지·모공 조절 근거 (미백·톤과 분리) |
@@ -12399,11 +14051,20 @@ _(팩트 없음)_
 | `omega3-mechanism-tear-film-lipid-layer` | 건성안 관리: 인공눈물 vs 영양제 순서, 의료 표준 치료, 오메가3 근거 |
 | `omega3-mechanism-tear-film-lipid-layer-production` | 콘택트렌즈 착용자의 영양 결핍·안구건조 악화·루테인·오메가3 역할, 눈 영양제 성분 비교: 루테인, 아스타잔틴, 빌베리, 오메가3 - 증상별 효과 범위 |
 | `optical-cable-arc-alternative` | HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
+| `outdoor-unit-not-running-compressor-protection` | 에어컨 난방이 안 되거나 약할 때 점검 순서 (제상·예열·외기·필터·설정·AS 기준) |
+| `outdoor-unit-not-running-mode-check` | 에어컨 난방이 안 되거나 약할 때 점검 순서 (제상·예열·외기·필터·설정·AS 기준) |
+| `outdoor-unit-not-running-power-check` | 에어컨 난방이 안 되거나 약할 때 점검 순서 (제상·예열·외기·필터·설정·AS 기준) |
+| `outdoor-unit-ventilation-requirement` | 에어컨 난방이 안 되거나 약할 때 점검 순서 (제상·예열·외기·필터·설정·AS 기준) |
+| `outdoor-unit-water-dripping-heating-defrost` | 에어컨 난방이 안 되거나 약할 때 점검 순서 (제상·예열·외기·필터·설정·AS 기준) |
 | `oven-preheat-time-convection-importance` | 제빵기(홈베이커리) 반죽 안 섞임·안 부풀음·겉만 탐·패들 박힘·세척 자가점검 |
 | `oven-temperature-discrepancy-user-reported` | 제빵기(홈베이커리) 반죽 안 섞임·안 부풀음·겉만 탐·패들 박힘·세척 자가점검 |
 | `panthenol-madecassoside` | 마스크 착용으로 인한 피부 자극(마스크네) 메커니즘 및 회복 |
 | `parent-benefit-childcare-offset-2026` | 보육료·유아학비 지원 — 무상보육 근거, 연령 기준, 지자체(서울) 2026 보육료 지원단가, 양육수당과의 구분 |
 | `partial-charge-80-percent-recommendation-basis` | 포터블 파워스테이션 충전 안 됨·출력 안 됨·발열·배터리 팽창 자가점검 및 보관 기준 |
+| `parts-replacement-warranty` | 세탁기 탈수 시 쿵쿵 진동·소음 점검 순서 (드럼·통돌이, 사용자 조치, AS 신호) |
+| `pc-reset-data-retention-option` | 윈도우 블루스크린이 뜰 때, 오류 코드로 원인 좁히기 |
+| `pc-reset-personal-files-keep-safe` | 윈도우 블루스크린이 뜰 때, 오류 코드로 원인 좁히기 |
+| `pdo-vs-pps-charging-standard` | 고속충전이 안 되고 충전이 느릴 때 케이블·어댑터·포트부터 점검 (갤럭시·아이폰·아이패드 공식 안내 기준) |
 | `pension-credit-rate-15-12` | 퇴직연금 IRP 개설 (신청 달력 웨이브4) |
 | `pension-limit-600-and-900` | 퇴직연금 IRP 개설 (신청 달력 웨이브4) |
 | `pension-transfer-and-deferred-excluded` | 퇴직연금 IRP 개설 (신청 달력 웨이브4) |
@@ -12411,6 +14072,7 @@ _(팩트 없음)_
 | `power-outlet-check` | 넥마사지기(목안마기·어깨안마기) 자가점검·작동 불량·발열 |
 | `power-outlet-verification` | 전기면도기 자가점검·날 관리·물세척·회전식vs왕복식·충전 불량, 헤어클리퍼(이발기) 자가점검·날 관리·오일링·청소·충전 불량, 구강세정기·워터픽 자가점검 — 물 안 나옴·약함·충전 불량·노즐 막힘·물새는 증상·잇몸 출혈·관리 |
 | `power-reset-unplugging-five-minutes` | 캡슐·커피머신 자가점검 — 물 안 나옴, 추출 불량, 디스케알링, 우유거품 이상 |
+| `pre-departure-checklist-2026` | 겨울 차 앞유리 김서림 빨리 없애는 순서 (에어컨·외기·디프로스터·김서림 방지 기능·안전 운전) |
 | `prefilter-water-washing-drying` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
 | `pregnant-lactating-women-supplement-caution` | 미녹시딜: 국내 의약품 지위·농도·초기탈락·중단 후 재탈모, 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항 |
 | `progesterone-drop-luteal-phase-insomnia` | 임신 초기 피로와 프로게스테론 |
@@ -12433,17 +14095,42 @@ _(팩트 없음)_
 | `rated-capacity-15a-3300w` | 데스크톱 PC 전원이 안 켜짐 — 하드웨어 물리적 원인 자가점검 |
 | `rct-randomized-controlled-trial-definition-gold-standard` | 세라마이드(ceramide)의 피부 장벽 기능 및 임상 효과, 바르는 히알루론산의 피부 수화 효과, 분자량 역할, 저습도 논쟁, 나이아신아마이드(비타민B3) 미백·톤: 농도별 근거, 홍조 논쟁, 멜라노솜 이전 억제, 판테놀(panthenol)과 마데카소사이드(madecassoside)의 피부 진정 및 상처 치유 효과, 펩타이드 스킨케어: 신호펩타이드·캐리어펩타이드, 피부 침투 한계, 콜라겐 자극 근거, 레티놀 · 레티노이드 계열 주름개선: 강도별 비교, 자극 프로파일, 임신부 금기, 트라넥삼산·아젤라산 색소질환: 기미·염증후색소침착, 용량, 한국 규제상 위치, 바르는 비타민C 세럼: L-아스코르브산 안정성, pH 의존성, 유도체 동등성, 산화, 아스타잔틴의 눈 피로·조절력 개선 임상 근거, 용량, 광고 표현, 빌베리 안토시아닌의 야간시력·로돕신 기전, 임상 근거, WWII 조종사 설화 검증, 블루라이트 차단 영양제·청색광 유해성 논쟁·루테인 필터링 효과·마케팅 표현 검증, 보스웰리아 추출물의 관절염 효과와 NSAID 비교, 콘드로이틴 황산염의 관절 건강 효과와 국제 규제 위치, 오메가3의 안구건조증 개선 효과·DREAM 임상시험·인공눈물 우선순위, 글루코사민의 무릎 관절염 효과와 GAIT 임상 결과, 초록입홍합(뉴질랜드 초록홍합) 추출물: 관절염 임상 근거, 효과 일관성, 신뢰도, 관절 건강 영양제 비교: 글루코사민, 콘드로이틴, MSM, 보스웰리아, 콜라겐 - 임상 근거와 효과, 마카의 임상 근거 수준, 성욕 관련 효과, 국내 기능성 인정 범위, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성, MSM(메틸설포닐메탄)의 관절 통증 효과와 근거 수준 |
 | `read-write-speed-difference` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
+| `recent-hardware-addition-removal-test` | 윈도우 블루스크린이 뜰 때, 오류 코드로 원인 좁히기 |
+| `refrigerant-charge-professional-only` | 에어컨 난방이 안 되거나 약할 때 점검 순서 (제상·예열·외기·필터·설정·AS 기준) |
 | `relative-risk-reduction-vs-absolute-risk-reduction-trap` | CLA(켤레 리놀레산): 체지방 감소 효과의 임상적 의미와 인슐린 저항성 우려, 가르시니아: 체중감량 효과의 근거 수준과 간 손상 위험, 혈압 관리 영양제와 약물 치료의 역할 분담, 국내 기능성 원료, 글루코사민의 무릎 관절염 효과와 GAIT 임상 결과, 호모시스테인 수치와 비타민B, 임상 결과의 괴리·대리지표 함정 |
 | `retaldehyde-vs-retinol-bioavailability-10fold` | 비타민C와 레티놀 병용: pH 충돌, 효과 최적화, 아침·저녁 분리 필요성 |
 | `retinaldehyde-vs-retinol-bioavailability-10fold` | 레티날데하이드: 레티놀과 트레티노인 사이의 강도, 자극 프로파일, 농도별 효능, 미백 성분이 주름 관리에도 쓰이는 이유: 항산화·콜라겐·단백질 당화 메커니즘 |
 | `retinoid-pregnancy-topical-tretinoin-category-c` | 임신 중 안전한 스킨케어: 국소 성분별 안전성, 금기, 대체 옵션 |
 | `retinyl-retinoate-vs-retinol-periorbital-wrinkles` | 미백 성분이 주름 관리에도 쓰이는 이유: 항산화·콜라겐·단백질 당화 메커니즘 |
 | `risabae-youtube-channel-name` | RISABAE(이사배) 「[ENG] 인스타 요청 많았던 가을 어른 여자 메이크업」 — 설명란 [제품정보] 단계별 목록과 대표 제품 공식 확인 |
-| `safe-mode-entry-method` | 스마트폰 터치 불량·고스트터치·액정 반응 없음 자가점검 |
+| `roborock-errorcode-1-laser` | 로보락 로봇청소기 에러 안내음·멈춤 증상 자가점검 (센서·휠·브러시·먼지통·물탱크·충전, 앱 재연결, AS 기준) |
+| `roborock-errorcode-10-filter-clean` | 로보락 로봇청소기 에러 안내음·멈춤 증상 자가점검 (센서·휠·브러시·먼지통·물탱크·충전, 앱 재연결, AS 기준) |
+| `roborock-errorcode-13-dock-contact` | 로보락 로봇청소기 에러 안내음·멈춤 증상 자가점검 (센서·휠·브러시·먼지통·물탱크·충전, 앱 재연결, AS 기준) |
+| `roborock-errorcode-18-fan-debris` | 로보락 로봇청소기 에러 안내음·멈춤 증상 자가점검 (센서·휠·브러시·먼지통·물탱크·충전, 앱 재연결, AS 기준) |
+| `roborock-errorcode-4-cliff` | 로보락 로봇청소기 에러 안내음·멈춤 증상 자가점검 (센서·휠·브러시·먼지통·물탱크·충전, 앱 재연결, AS 기준) |
+| `roborock-errorcode-5-main-brush` | 로보락 로봇청소기 에러 안내음·멈춤 증상 자가점검 (센서·휠·브러시·먼지통·물탱크·충전, 앱 재연결, AS 기준) |
+| `roborock-errorcode-7-wheel` | 로보락 로봇청소기 에러 안내음·멈춤 증상 자가점검 (센서·휠·브러시·먼지통·물탱크·충전, 앱 재연결, AS 기준) |
+| `roborock-errorcode-8-stuck` | 로보락 로봇청소기 에러 안내음·멈춤 증상 자가점검 (센서·휠·브러시·먼지통·물탱크·충전, 앱 재연결, AS 기준) |
+| `roborock-errorcode-9-filter-magnet` | 로보락 로봇청소기 에러 안내음·멈춤 증상 자가점검 (센서·휠·브러시·먼지통·물탱크·충전, 앱 재연결, AS 기준) |
+| `roborock-fan-speed-lowered` | 로보락 로봇청소기 에러 안내음·멈춤 증상 자가점검 (센서·휠·브러시·먼지통·물탱크·충전, 앱 재연결, AS 기준) |
+| `roborock-internal-error-reset` | 로보락 로봇청소기 에러 안내음·멈춤 증상 자가점검 (센서·휠·브러시·먼지통·물탱크·충전, 앱 재연결, AS 기준) |
+| `roborock-kr-as-phone-1566` | 로보락 로봇청소기 에러 안내음·멈춤 증상 자가점검 (센서·휠·브러시·먼지통·물탱크·충전, 앱 재연결, AS 기준) |
+| `roborock-service-escalation-boundary` | 로보락 로봇청소기 에러 안내음·멈춤 증상 자가점검 (센서·휠·브러시·먼지통·물탱크·충전, 앱 재연결, AS 기준) |
+| `safe-mode-boot-recovery-environment` | 윈도우 블루스크린이 뜰 때, 오류 코드로 원인 좁히기 |
+| `safe-mode-driver-rollback-diagnosis` | 윈도우 블루스크린이 뜰 때, 오류 코드로 원인 좁히기 |
+| `safe-mode-entry-method` | 휴대폰 핫스팟이 연결되지 않을 때 점검 순서 (갤럭시·아이폰 공통 원인과 공식 점검 단계, AS 기준), 갤럭시 발열 원인과 줄이는 순서 (재시작·앱·설정 점검, 위험 신호와 서비스센터), 스마트폰 터치 불량·고스트터치·액정 반응 없음 자가점검 |
 | `safety-concern-cry-it-out-stress` | 취침 거부·실랑이: 원인, 루틴, 경계 설정, 수면 교육 |
 | `safety-margin-difference` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
 | `samsung-battery-replacement-cost-and-cycle` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |
 | `samsung-battery-replacement-two-year-warranty` | 무선 스틱 청소기, 유선·로봇 대비 지금 살 만한가 — 트렌드 분석 |
+| `samsung-filter-reset-bluesky-button` | 삼성 공기청정기 필터 교체 표시·풍량 약함 자가점검 |
+| `samsung-filter-reset-cube-mode-button` | 삼성 공기청정기 필터 교체 표시·풍량 약함 자가점검 |
+| `samsung-kimchi-fridge-cooling-weak-storage-volume` | 김장 후 김치냉장고 설정과 보관 요령 (제조사 공식 안내 기준, 브랜드별 수치 분리) |
+| `samsung-kimchi-fridge-ice-crystal-prevention` | 김장 후 김치냉장고 설정과 보관 요령 (제조사 공식 안내 기준, 브랜드별 수치 분리) |
+| `samsung-kimchi-fridge-storage-temperature-low-salt` | 김장 후 김치냉장고 설정과 보관 요령 (제조사 공식 안내 기준, 브랜드별 수치 분리) |
+| `samsung-kimchi-fridge-storage-temperature-standard` | 김장 후 김치냉장고 설정과 보관 요령 (제조사 공식 안내 기준, 브랜드별 수치 분리) |
+| `samsung-kimchi-fridge-temperature-control-method` | 김장 후 김치냉장고 설정과 보관 요령 (제조사 공식 안내 기준, 브랜드별 수치 분리) |
+| `samsung-members-call-speaker-diagnostics` | 스마트폰 사진이 자꾸 흐리게 찍힐 때 자가 점검 (렌즈 오염·보호필름/케이스·근접 초점·결로·하드웨어 판별·AS) |
 | `sd-card-capacity-recommendation-content` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `sd-card-format-choice-exfat-recommended` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
 | `sdcard-compatibility-requirement` | SD카드·USB메모리 속도 등급 표기 읽는 법 및 선택 가이드 |
@@ -12465,6 +14152,7 @@ _(팩트 없음)_
 | `spoilage-detection-appearance` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
 | `spoilage-detection-odor` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
 | `spoilage-detection-texture` | 찌그러진 통조림·유통기한 지난 통조림의 안전성 — 찌그러짐 종류·보툴리누스 위험·부식·개봉 후 보관·산성 식품 |
+| `startup-repair-automatic-fix` | 윈도우 블루스크린이 뜰 때, 오류 코드로 원인 좁히기 |
 | `statin-induced-muscle-symptoms-sams-mechanism` | 코엔자임Q10과 심부전, 임상 근거·스타틴 병용·심혈관 사건 예방 |
 | `statistical-significance-vs-clinical-significance-distinction` | L-카르니틴: 지방산 산화와 체중감량의 근거 수준 및 경구 흡수의 한계, CLA(켤레 리놀레산): 체지방 감소 효과의 임상적 의미와 인슐린 저항성 우려, 가르시니아: 체중감량 효과의 근거 수준과 간 손상 위험, 녹차 카테킨-EGCG: 체중감량 효과의 근거와 고용량 간독성 위험, 탈모 샴푸 성분: 식약처 탈모 완화 기능성 고시 성분과 실제 임상 의미, 혈압 관리 영양제와 약물 치료의 역할 분담, 국내 기능성 원료, 오메가3의 안구건조증 개선 효과·DREAM 임상시험·인공눈물 우선순위, 호모시스테인 수치와 비타민B, 임상 결과의 괴리·대리지표 함정, MSM(메틸설포닐메탄)의 관절 통증 효과와 근거 수준, 종합비타민의 가치: 대규모 임상 결과·식사 대체 불가 |
 | `suction-weak-filter-dirty-reset` | LG 공기청정기 필터 교체·냄새·풍량 저하·센서 자가점검, 삼성 공기청정기 필터 교체·냄새·풍량 저하 자가점검, 위닉스 공기청정기 필터 교체·냄새·풍량 저하 자가점검 |
@@ -12472,10 +14160,24 @@ _(팩트 없음)_
 | `surrogate-endpoint-vs-clinical-outcome-discordance` | 바르는 히알루론산의 피부 수화 효과, 분자량 역할, 저습도 논쟁, 펩타이드 스킨케어: 신호펩타이드·캐리어펩타이드, 피부 침투 한계, 콜라겐 자극 근거, 바르는 비타민C 세럼: L-아스코르브산 안정성, pH 의존성, 유도체 동등성, 산화, 블루라이트 차단 영양제·청색광 유해성 논쟁·루테인 필터링 효과·마케팅 표현 검증, 글루타치온의 경구 생물이용률 논쟁, 피부 미백 효과, 국내 기능성 미인정, 호모시스테인 수치와 비타민B, 임상 결과의 괴리·대리지표 함정, 먹는 콜라겐·히알루론산의 소화·흡수·분포 경로, 피부 도달 메커니즘, 임상 근거, 마카의 임상 근거 수준, 성욕 관련 효과, 국내 기능성 인정 범위, 황반변성: 예방 vs 진행 지연·AREDS/AREDS2 결과·위험군·안과 검진 필요성, 종합비타민의 가치: 대규모 임상 결과·식사 대체 불가 |
 | `tea-tree-oil-acne` | 면도 후 피부 자극(가성모낭염) 메커니즘 및 회복 |
 | `thyroid-medication-mineral-chelation-spacing-required` | 노년층 영양제 안전 가이드: 약물 상호작용, 신기능 저하, 다약제 복용 주의사항 |
+| `tire-cold-check-3h` | 타이어 공기압 경고등(TPMS)이 안 꺼질 때 확인할 것 — 점등·점멸 구분, 공기압 보충 후에도 켜질 때, 센서 문제 판별, 공식 안내 기준, 겨울 타이어와 스노우체인 — 언제 무엇을 쓰면 되나 (기준·국내 제도·장착 요령) |
+| `tire-pressure-cold-weather-doe` | 겨울 타이어와 스노우체인 — 언제 무엇을 쓰면 되나 (기준·국내 제도·장착 요령) |
+| `tire-pressure-drop-10f` | 타이어 공기압 경고등(TPMS)이 안 꺼질 때 확인할 것 — 점등·점멸 구분, 공기압 보충 후에도 켜질 때, 센서 문제 판별, 공식 안내 기준, 겨울 타이어와 스노우체인 — 언제 무엇을 쓰면 되나 (기준·국내 제도·장착 요령) |
+| `tmk-sensor-sealant-cleaning` | 타이어 공기압 경고등(TPMS)이 안 꺼질 때 확인할 것 — 점등·점멸 구분, 공기압 보충 후에도 켜질 때, 센서 문제 판별, 공식 안내 기준 |
 | `topical-retinoid-photoirritant-uv-caution` | 임신 중 안전한 스킨케어: 국소 성분별 안전성, 금기, 대체 옵션 |
+| `tpms-false-alert-locations` | 타이어 공기압 경고등(TPMS)이 안 꺼질 때 확인할 것 — 점등·점멸 구분, 공기압 보충 후에도 켜질 때, 센서 문제 판별, 공식 안내 기준, 겨울 타이어와 스노우체인 — 언제 무엇을 쓰면 되나 (기준·국내 제도·장착 요령) |
+| `tpms-pressure-check-method` | 타이어 공기압 경고등(TPMS)이 안 꺼질 때 확인할 것 — 점등·점멸 구분, 공기압 보충 후에도 켜질 때, 센서 문제 판별, 공식 안내 기준 |
+| `tpms-sensor-malfunction` | 타이어 공기압 경고등(TPMS)이 안 꺼질 때 확인할 것 — 점등·점멸 구분, 공기압 보충 후에도 켜질 때, 센서 문제 판별, 공식 안내 기준 |
 | `tranexamic-acid-melasma-pih-multiple-routes-efficacy` | 미백 성분이 주름 관리에도 쓰이는 이유: 항산화·콜라겐·단백질 당화 메커니즘 |
 | `travel-charger-dual-voltage` | 전기면도기 자가점검·날 관리·물세척·회전식vs왕복식·충전 불량 |
 | `tv-arc-port-identification` | AV리시버·홈시어터 소리 안 남·채널 누락 자가진단, HDMI 케이블 비싼 게 화질이 좋은가? 버전별 선택 가이드 |
+| `tv-cold-boot-restart` | TV 화면에 줄이 생기거나 깜빡일 때 점검 순서 (삼성·LG 공식 안내 기준) |
+| `tv-hdmi-connection-check-process` | TV 화면에 줄이 생기거나 깜빡일 때 점검 순서 (삼성·LG 공식 안내 기준) |
+| `tv-hdmi-problem-check-2024` | TV 화면에 줄이 생기거나 깜빡일 때 점검 순서 (삼성·LG 공식 안내 기준) |
+| `tv-horizontal-lines-diagnosis` | TV 화면에 줄이 생기거나 깜빡일 때 점검 순서 (삼성·LG 공식 안내 기준) |
+| `tv-remote-pairing-model-year` | 삼성 TV 리모컨 반응 없음 — 배터리부터 페어링까지 자가점검 (스마트 리모컨 기준) |
+| `tv-self-diagnosis-functions` | TV 화면에 줄이 생기거나 깜빡일 때 점검 순서 (삼성·LG 공식 안내 기준) |
+| `tv-settop-box-power-check` | TV 화면에 줄이 생기거나 깜빡일 때 점검 순서 (삼성·LG 공식 안내 기준) |
 | `two-slash-four-ceo-risabae-launched-2023` | RISABAE(이사배) 「[ENG] 인스타 요청 많았던 가을 어른 여자 메이크업」 — 설명란 [제품정보] 단계별 목록과 대표 제품 공식 확인 |
 | `two-slash-four-operated-by-jusikhoesa` | RISABAE(이사배) 「[ENG] 인스타 요청 많았던 가을 어른 여자 메이크업」 — 설명란 [제품정보] 단계별 목록과 대표 제품 공식 확인 |
 | `uhs-speed-class-definition` | 미러리스·DSLR 카메라 작동 불량 및 초점·배터리·센서 자가점검 |
@@ -12520,11 +14222,22 @@ _(팩트 없음)_
 | `vitamin-d-sun-exposure-seasonal-synthesis-impossibility` | 비타민D 부족이 보내는 신호: 근육·뼈·면역·신경학적 증상 |
 | `vitamin-d-upper-limit-intake-tolerable-level` | 비타민D 부족이 보내는 신호: 근육·뼈·면역·신경학적 증상 |
 | `wage-arrears-statute-3yr-claim` | 연차휴가·연차수당 — 발생 일수·가산·소멸·사용 촉진(근로기준법 제60조·제61조) |
+| `warranty-calculation-from-purchase` | 세탁기 탈수 시 쿵쿵 진동·소음 점검 순서 (드럼·통돌이, 사용자 조치, AS 신호) |
+| `washer-fluid-winter-rating-check` | 겨울 차 앞유리 김서림 빨리 없애는 순서 (에어컨·외기·디프로스터·김서림 방지 기능·안전 운전) |
 | `water-soluble-vitamin-absorption-no-meal-required` | 호모시스테인 수치와 비타민B, 임상 결과의 괴리·대리지표 함정, 프리바이오틱스·신바이오틱스: 정의·구성 기준·함량·부작용, 영양제 제형(정제·캡슐·액상·젤리)의 흡수율 차이: 붕해·용출·당 함량, 비타민B군 결핍 진단 방법 및 피로 증상 개선 근거 |
 | `water-soluble-vitamin-divided-doses-more-effective` | 비타민B군 결핍 진단 방법 및 피로 증상 개선 근거 |
 | `water-tank-filter-replacement-three-months` | 캡슐·커피머신 자가점검 — 물 안 나옴, 추출 불량, 디스케알링, 우유거품 이상 |
 | `water-tank-reinsertion-sensor-recognition` | 캡슐·커피머신 자가점검 — 물 안 나옴, 추출 불량, 디스케알링, 우유거품 이상 |
 | `weak-water-flow-descaling-scale-buildup` | 캡슐·커피머신 자가점검 — 물 안 나옴, 추출 불량, 디스케알링, 우유거품 이상 |
+| `wifi-2-4ghz-interference-microwave-bluetooth` | 프린터 와이파이 연결 실패 자가점검 (2.4GHz·공유기 대역·SSID·IP·공통 점검 순서) |
+| `win-update-backup-before-steps` | 윈도우 컴퓨터가 갑자기 느려졌을 때 점검 순서 (데이터 백업 먼저 → 작업 관리자·시작 프로그램 → 저장공간 → 업데이트 → 악성코드 검사 → AS 기준) |
+| `win-update-drive-free-space-10-15-percent` | 윈도우 컴퓨터가 갑자기 느려졌을 때 점검 순서 (데이터 백업 먼저 → 작업 관리자·시작 프로그램 → 저장공간 → 업데이트 → 악성코드 검사 → AS 기준) |
+| `win-update-troubleshooter-path` | 윈도우 컴퓨터가 갑자기 느려졌을 때 점검 순서 (데이터 백업 먼저 → 작업 관리자·시작 프로그램 → 저장공간 → 업데이트 → 악성코드 검사 → AS 기준) |
+| `windows-update-boot-failure-rollback` | 윈도우 블루스크린이 뜰 때, 오류 코드로 원인 좁히기 |
+| `winia-dimchae-kimchi-preservation-standard-temperature` | 김장 후 김치냉장고 설정과 보관 요령 (제조사 공식 안내 기준, 브랜드별 수치 분리) |
+| `winia-dimchae-storage-setting-quality-issue` | 김장 후 김치냉장고 설정과 보관 요령 (제조사 공식 안내 기준, 브랜드별 수치 분리) |
+| `wiper-blade-hardening-soap-water` | 겨울 오기 전 차량 점검 — 배터리·부동액·타이어·워셔액·와이퍼 |
+| `wiper-blade-inspection-cleaning` | 겨울 오기 전 차량 점검 — 배터리·부동액·타이어·워셔액·와이퍼 |
 | `wire-curling-heat-accumulation` | 데스크톱 PC 전원이 안 켜짐 — 하드웨어 물리적 원인 자가점검 |
 | `wireless-receiver-not-recognized-check-physical-connection` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
 | `wireless-receiver-port-swap-troubleshooting` | 그래픽 태블릿(와콤·펜타블렛) 펜 인식 안 됨·필압·커서 어긋남 자가점검 |
@@ -12535,3 +14248,6 @@ _(팩트 없음)_
 | `zinc-excess-copper-absorption-block-shedding-risk` | 흰머리 발생과 영양: 수소과산화물·카탈라제의 역할과 결핍 기준 |
 | `zinc-hair-synthesis-protein-synthesis-requirement` | 흰머리 발생과 영양: 수소과산화물·카탈라제의 역할과 결핍 기준 |
 | `zinc-long-term-high-dose-copper-deficiency-risk` | 남성 생식 건강 영양제: 아연·엽산·CoQ10·항산화제의 정자 품질 개선 근거 |
+| `공통_as-safety-baseline.json:factory-reset-data-loss` | 윈도우 업데이트 실패·무한 대기 해결 순서 (Microsoft 공식 문제 해결 기준) |
+| `공통_windows-boot-selfcheck.json:recent-hardware-addition-removal-test` | 윈도우 업데이트 실패·무한 대기 해결 순서 (Microsoft 공식 문제 해결 기준) |
+| `공통_windows-boot-selfcheck.json:windows-update-boot-failure-rollback` | 윈도우 업데이트 실패·무한 대기 해결 순서 (Microsoft 공식 문제 해결 기준) |

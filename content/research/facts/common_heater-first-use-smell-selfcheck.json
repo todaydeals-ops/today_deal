@@ -1,0 +1,190 @@
+{
+  "topic": "히터를 처음 켰을 때 나는 냄새 — 정상 먼지 타는 냄새와 위험한 타는 냄새 구분, 즉시 중단 신호, 청소 방법",
+  "brand": "공통",
+  "article": "heater-first-use-smell-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "nfa-2021-heating-unplug-when-away",
+    "nfa-2021-octopus-and-cord-check",
+    "kca-2020-no-electric-heater-rules"
+  ],
+  "declined_facts": [
+    {
+      "id": "heater-power-check-order",
+      "why": "source_url이 nosearch.com(비공식 정보 사이트)이라 공식 근거로 쓸 수 없다. 이번 조사에서 원문 대조도 못 했다."
+    },
+    {
+      "id": "overheat-cutoff-mechanism",
+      "why": "nosearch.com 출처. 이번 조사에서 원문 대조 못 함. 과열차단 원리는 제조사 원문 확보 후 재확인."
+    },
+    {
+      "id": "overheating-dust-accumulation",
+      "why": "nosearch.com 출처. 이번 조사에서 원문 대조 못 함."
+    },
+    {
+      "id": "burning-smell-dust-combustion",
+      "why": "milemoa 커뮤니티 후기를 tier 확실로 올려 적었다. 이번 조사에서 해당 글을 열어 확인하지 못했고, 1~2시간 자연 소멸 수치도 원문 근거가 없다. 후기 항목으로 다시 쓰려면 원문 재확인 필요."
+    },
+    {
+      "id": "filter-cleaning-heat-recovery",
+      "why": "nosearch.com 출처. 필터 청소 절차를 공식 원문으로 확인하지 못했다."
+    },
+    {
+      "id": "fan-noise-causes",
+      "why": "온풍기 팬 소음 항목. 이번 주제(첫 사용 냄새)와 무관하고 출처가 후기 종합이라 이번 재사용 대상에서 제외."
+    }
+  ],
+  "disputes": [
+    {
+      "targetId": "burning-smell-dust-combustion",
+      "problem": "후기(커뮤니티 경험담) 근거인데 tier를 확실로 표기했고, '1~2시간 사용으로 사라진다'는 수치가 caution에 붙어 있으나 cautionSource가 공식 원문이 아니다.",
+      "evidence": "이번 조사에서 milemoa 원문을 열어 확인하지 못했다. 후기는 tier 논쟁 이하로 낮추거나 수치를 제거해야 한다."
+    }
+  ],
+  "facts": [
+    {
+      "id": "lge-ac-first-heating-smell",
+      "claim": "LG전자 공식 안내에 따르면 에어컨을 냉방에서 난방으로 처음 바꿔 쓸 때, 냉방 중 열판에 쌓인 먼지가 열을 받아 냄새가 날 수 있다. 전기 히터가 장착된 모델은 순간적으로 연기와 함께 타는 냄새가 날 수 있다고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 — [LG 에어컨 냄새] 난방 초기에 타는 냄새가 나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1289526719794",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "LG",
+        "category": "에어컨",
+        "line": "난방 모드 열판·전기 히터 장착 모델",
+        "years": "원문에 연식 구분 없음",
+        "region": "KR"
+      },
+      "caution": "이 안내는 에어컨 난방 기능 이야기다. 독립 난방기(전기히터·온풍기)에 그대로 옮겨 단정하지 말고 '같은 원리로 생길 수 있다' 수준으로 쓸 것.",
+      "cautionSource": "LG 원문의 대상 제품이 에어컨으로 한정됨"
+    },
+    {
+      "id": "lge-ac-smell-persist-service",
+      "claim": "LG전자 공식 안내는 난방 초기 냄새가 지속되거나 점점 심해지면 전문 서비스매니저의 점검이 필요하다고 한다. 같은 안내는 사용 중 자주 환기할 것을 권한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 스스로해결 — [LG 에어컨 냄새] 난방 초기에 타는 냄새가 나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1289526719794",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "LG",
+        "category": "에어컨",
+        "line": "난방 모드 열판 장착 모델",
+        "years": "원문에 연식 구분 없음",
+        "region": "KR"
+      },
+      "caution": "원문에 '몇 분' 또는 '몇 시간' 같은 기간 기준이 없다. 기간 숫자를 덧붙이지 말 것.",
+      "cautionSource": "원문 열람 결과 기간 기준 없음"
+    },
+    {
+      "id": "lge-ac-no-immediate-cutoff-criterion",
+      "claim": "LG전자 난방 초기 냄새 안내 원문에는 즉시 전원을 꺼야 하는 조건(연기가 지속되는 기준, 플라스틱·전선 타는 냄새 구분 등)이 명시되어 있지 않다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "LG전자 스스로해결 — [LG 에어컨 냄새] 난방 초기에 타는 냄새가 나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1289526719794",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "LG",
+        "category": "에어컨",
+        "line": "난방 모드 열판 장착 모델",
+        "years": "원문 기준",
+        "region": "KR"
+      },
+      "caution": "이 빈칸을 LG 원문이 말한 것처럼 쓰지 말 것. 차단 행동은 '플라스틱·전선 타는 냄새는 즉시 차단'이라는 다른 공식 안내(삼성 비데 원문)에서 따오고 출처를 밝힌다.",
+      "cautionSource": "원문 열람 결과 차단 기준 부재 확인"
+    },
+    {
+      "id": "samsung-bidet-new-product-first-run-smell",
+      "claim": "삼성전자서비스 공식 안내에 따르면 새 비데를 처음 설치해 가동하면 내부 히터와 팬이 작동하며 나는 냄새는 열로 인한 일시적 현상이고, 시간이 지나면서 점차 사라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 스스로해결 — 비데기 작동 시키면 타는 냄새가 납니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/243324",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "비데",
+        "line": "내부 히터·팬 탑재 모델",
+        "years": "신규 설치 직후",
+        "region": "KR"
+      },
+      "caution": "비데 원문이다. 난방기 냄새의 판정 기준으로 옮기지 말고, '처음 가동 시 열로 인한 냄새가 날 수 있다'는 일반 현상으로만 참고할 것.",
+      "cautionSource": "원문 대상 제품이 비데로 명시됨"
+    },
+    {
+      "id": "samsung-bidet-plastic-smell-unplug",
+      "claim": "삼성전자서비스 공식 안내는 사용 중 플라스틱 냄새가 심하게 나면 사용을 중지하고 전원 플러그를 콘센트에서 분리하라고 하며, 타는 냄새나 단내가 심하면 전문 엔지니어의 점검을 받으라고 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 스스로해결 — 비데기 작동 시키면 타는 냄새가 납니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/243324",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "비데",
+        "line": "내부 히터 탑재 모델",
+        "years": "설치 후 오래 쓴 제품",
+        "region": "KR"
+      },
+      "caution": "원문은 비데 기준이다. 히터에 같은 조치를 적용할 때는 '플라스틱 타는 냄새는 전원 분리' 원칙으로만 쓰고, 삼성 비데 원문을 히터 근거로 인용하지 말 것.",
+      "cautionSource": "원문 대상 제품이 비데로 명시됨"
+    },
+    {
+      "id": "samsung-dryer-smell-service-criteria",
+      "claim": "삼성전자서비스 공식 안내는 타는 냄새와 함께 차단기가 떨어지거나 전원이 꺼지거나 퍽 하는 소리가 나면 엔지니어 방문 점검이 필요하다고 한다. 냄새가 계속 심하면 역시 점검을 권한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 스스로해결 — 초기 구입 후 건조기 동작 시 타는듯한 냄새가 나요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/958990",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "의류건조기",
+        "line": "건조기 전 라인",
+        "years": "구입 초기 및 장기 사용 모두",
+        "region": "KR"
+      },
+      "caution": "건조기 원문이다. 히터의 점검 기준으로 직접 옮기지 말고 '차단기 차단·퍽 소리 동반 시 점검' 같은 신호 유형만 참고할 것.",
+      "cautionSource": "원문 대상 제품이 의류건조기로 명시됨"
+    },
+    {
+      "id": "samsung-dryer-new-product-smell-volatile",
+      "claim": "삼성전자서비스 공식 안내에 따르면 구입 초기 건조기에서 나는 타는 듯한 냄새는 새 제품의 구성 성분에서 나는 일반적인 냄새이며, 사용하면서 자연적으로 휘발되어 사라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 스스로해결 — 초기 구입 후 건조기 동작 시 타는듯한 냄새가 나요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/958990",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "의류건조기",
+        "line": "건조기 전 라인",
+        "years": "구입 초기",
+        "region": "KR"
+      },
+      "caution": "건조기 원문이다. '새 제품 냄새는 휘발된다'는 정상 범주 개념으로만 쓰고 히터에 직접 옮기지 말 것. 환기는 원문에서도 권장한다.",
+      "cautionSource": "원문 대상 제품이 의류건조기로 명시됨"
+    },
+    {
+      "id": "heater-first-use-dust-cleaning-procedure",
+      "claim": "난방기 첫 사용 냄새의 원인인 발열부 먼지를 제거하는 구체적 청소 절차(부위, 도구, 방법)는 이번에 열람한 공식 원문(LG전자, 삼성전자서비스, 인천공단소방서)에서 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "실측",
+      "source": "LG전자 스스로해결 — [LG 에어컨 냄새] 난방 초기에 타는 냄새가 나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-1289526719794",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "공통",
+        "category": "전기난방기",
+        "line": "전기히터·온풍기",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "청소 절차를 창작하지 말 것. 글에는 '전원을 끄고 식힌 뒤 먼지를 털어내고 환기한다'는 일반 안전 원칙 수준으로만 쓰고, 원문 절차로 표기하지 말 것.",
+      "cautionSource": "원문 열람 결과 청소 절차 부재 확인"
+    }
+  ]
+}
