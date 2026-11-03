@@ -1,0 +1,176 @@
+{
+  "topic": "화상회의에서 마이크 소리가 안 들릴 때 점검 (Windows 11 마이크 권한·입력 장치·음소거 → 화상회의 앱 설정 순서)",
+  "brand": "Microsoft",
+  "article": "laptop-mic-meeting-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    { "id": "usb-mic-test-input-verification", "why": "Microsoft 공식 'Fix microphone problems' 문서의 입력 테스트 절차(Input > Start test)와 일치함을 이번에 원문으로 확인. 출처 URL 동일." }
+  ],
+  "declined_facts": [
+    { "id": "webcam-microphone-app-selection-settings", "why": "출처가 onlinemictest.com(제3자 사이트)이라 공식 귀속 불가. 같은 내용을 Zoom 공식 고객지원·Teams 공식 문서에서 직접 확인해 새 팩트로 대체함." },
+    { "id": "usb-mic-echo-disable-enhancements-windows", "why": "인용 출처로 적힌 Microsoft 'Fix microphone problems' 문서를 열어 보니 Enhancements(음향 효과) 관련 안내가 보이지 않았다. 재사용하지 않고 disputes로 신고함." },
+    { "id": "factory-reset-data-loss", "why": "공통 기준선의 공장 초기화는 마이크 점검 단계에 해당하지 않음. 재사용 안 함." }
+  ],
+  "disputes": [
+    { "targetId": "usb-mic-echo-disable-enhancements-windows", "problem": "출처로 적힌 Microsoft 'Fix microphone problems' 문서에 Enhancements 탭 안내가 확인되지 않음(2026-11-03 원문 요약 조회 기준).", "evidence": "https://support.microsoft.com/en-us/windows/fix-microphone-problems-5f230348-106d-bfa4-1db5-336f35576011 — 권한·입력 장치·테스트·장치 관리자 절차만 있고 Enhancements 언급 없음. 요약 조회 기반이므로 총괄이 재확인 권장." },
+    { "targetId": "usb-mic-gain-adjustment-slider-position", "problem": "Levels 탭·Microphone Boost 안내가 같은 MS 문서의 Windows 10 섹션에만 있고, Windows 11 섹션에는 보이지 않음. scope를 Windows 10으로 한정해야 함.", "evidence": "https://support.microsoft.com/en-us/windows/fix-microphone-problems-5f230348-106d-bfa4-1db5-336f35576011 (2026-11-03 원문 요약 조회 기준). Windows 11 입력 음량은 설정 > 시스템 > 소리 > 입력의 'Input volume' 슬라이더로 안내됨." }
+  ],
+  "facts": [
+    {
+      "id": "mic-privacy-permission-first",
+      "claim": "화상회의 앱에서 상대가 내 목소리를 못 들으면 먼저 Windows 설정 > 개인 정보 보호 및 보안 > 마이크에서 '마이크 액세스'와 '앱이 마이크에 액세스하도록 허용'이 켜져 있는지 확인한다. 데스크톱 앱(Zoom·Teams 등 설치형)은 '데스크톱 앱이 마이크에 액세스하도록 허용'을 따로 켜야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — Fix microphone problems (Windows 11)",
+      "source_url": "https://support.microsoft.com/en-us/windows/fix-microphone-problems-5f230348-106d-bfa4-1db5-336f35576011",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "노트북·PC(Windows)", "line": "Windows 11 기준 (설정 메뉴 경로)", "years": "Windows 11 기준", "region": "글로벌" },
+      "caution": "데스크톱 앱 토글을 끄면 설치형 화상회의 앱은 마이크를 못 쓴다. 권한 토글은 되돌릴 수 있는 설정이므로 끄고 켜는 것 자체는 안전하다.",
+      "cautionSource": "Microsoft 문서가 '데스크톱 앱은 목록에 안 나오므로 별도 토글로 허용한다'고 안내"
+    },
+    {
+      "id": "mic-input-device-select-sound-input",
+      "claim": "마이크가 기본 입력 장치로 잡혀 있지 않으면 설정 > 시스템 > 소리의 '입력'에서 쓰는 마이크(헤드셋 포함)를 고른다. 노트북 내장 마이크가 아니라 연결한 헤드셋이 목록에 있으면 그것을 선택한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — Fix microphone problems (Windows 11)",
+      "source_url": "https://support.microsoft.com/en-us/windows/fix-microphone-problems-5f230348-106d-bfa4-1db5-336f35576011",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "노트북·PC(Windows)", "line": "내장 마이크·USB·Bluetooth 헤드셋", "years": "Windows 11 기준", "region": "글로벌" },
+      "caution": "여러 입력 장치가 있으면 엉뚱한 장치(내장 마이크 등)를 골라 소리가 안 들리는 경우가 흔하다. 화상회의 앱 안의 마이크 선택과 Windows의 입력 장치가 같은지도 함께 맞춘다.",
+      "cautionSource": "Microsoft 문서의 '기본 녹음 장치로 설정' 단계와 Teams 문서의 장치 선택 안내 비교"
+    },
+    {
+      "id": "mic-mute-check-headset-switch",
+      "claim": "화상회의 도구 모음에서 마이크 아이콘에 빗금이 있으면 음소거 상태이므로 '마이크 음소거 해제'를 누른다. 헤드셋 붐이나 외장 마이크에 물리 음소거 버튼이 있으면 그것도 꺼져 있는지 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — My microphone isn't working in Microsoft Teams",
+      "source_url": "https://support.microsoft.com/en-us/office/my-microphone-isn-t-working-in-microsoft-teams-666d1123-9dd0-4a31-ad2e-a758b204f33a",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "화상회의(Teams)·헤드셋", "line": "전 플랫폼 공통 점검 항목", "years": "전 연식", "region": "글로벌" },
+      "caution": "음소거는 화상회의 앱 안에서 한 번 더 확인해야 한다. 앱 밖 Windows 음량이 0이어도 상대 귀에는 안 들리므로 두 곳을 모두 본다.",
+      "cautionSource": "Teams 문서의 'Unmute mic' 및 물리 음소거 스위치 안내"
+    },
+    {
+      "id": "mic-input-test-start-recorded-sample",
+      "claim": "설정 > 시스템 > 소리 > 입력에서 마이크를 고른 뒤 '입력 설정'의 '시작 테스트(Start test)'를 누르고 말해 본다. 테스트를 멈춘 뒤 '녹음된 샘플'의 재생으로 내 목소리가 들리는지 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — Fix microphone problems (Windows 11)",
+      "source_url": "https://support.microsoft.com/en-us/windows/fix-microphone-problems-5f230348-106d-bfa4-1db5-336f35576011",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "노트북·PC(Windows)", "line": "Windows 11 기준", "years": "Windows 11 기준", "region": "글로벌" },
+      "caution": "Windows 테스트가 되면 마이크 자체와 Windows 쪽은 정상이다. 그래도 화상회의 안에서 안 들리면 앱 설정 문제로 좁혀진다. 이 판정 순서가 이 글의 핵심 분기다.",
+      "cautionSource": "Microsoft 문서의 Start test → Stop test → Play 절차"
+    },
+    {
+      "id": "mic-input-volume-slider",
+      "claim": "마이크 테스트 때 입력 막대가 거의 움직이지 않으면 설정 > 시스템 > 소리 > 입력에서 '입력 볼륨(Input volume)' 슬라이더를 올린 뒤 다시 테스트한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — Fix microphone problems (Windows 11)",
+      "source_url": "https://support.microsoft.com/en-us/windows/fix-microphone-problems-5f230348-106d-bfa4-1db5-336f35576011",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "노트북·PC(Windows)", "line": "Windows 11 기준 (Input volume 슬라이더)", "years": "Windows 11 기준", "region": "글로벌" },
+      "caution": "Windows 10의 Levels 탭·마이크 부스트 조정은 Windows 11 화면과 경로가 다르다. Windows 11에서는 입력 볼륨 슬라이더부터 본다. 부스트를 높이면 잡음도 커질 수 있다.",
+      "cautionSource": "Microsoft 문서에서 Levels·Microphone Boost는 Windows 10 섹션에만 있음을 확인"
+    },
+    {
+      "id": "mic-device-manager-reinstall-last",
+      "claim": "Windows가 마이크를 아예 인식하지 못하면 장치 관리자에서 '사운드, 비디오 및 게임 컨트롤러'를 펼쳐 오디오 장치를 '디바이스 제거'하고, 제거 시 '이 장치의 드라이버 소프트웨어 삭제'를 체크한 뒤 재시작해 Windows가 다시 설치하게 한다. 그래도 안 되면 '하드웨어 변경 사항 검색'을 실행한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — Fix microphone problems (Windows 11)",
+      "source_url": "https://support.microsoft.com/en-us/windows/fix-microphone-problems-5f230348-106d-bfa4-1db5-336f35576011",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "노트북·PC(Windows)", "line": "내장·USB·Bluetooth 마이크(인식 자체가 안 될 때)", "years": "Windows 11 기준", "region": "글로벌" },
+      "caution": "드라이버 삭제는 되돌리기가 번거롭다. 권한·입력 장치·테스트를 모두 해 본 뒤 가장 마지막에만 한다.",
+      "cautionSource": "Microsoft 문서가 장치 제거를 권한·테스트 단계 뒤에 두는 순서로 안내"
+    },
+    {
+      "id": "zoom-desktop-audio-settings-mic-select",
+      "claim": "Zoom 데스크톱 앱에서는 프로필 사진 > 설정 > 오디오 탭에서 '마이크' 드롭다운으로 쓸 마이크를 고르고, 옆의 테스트 버튼으로 확인한다. 입력 볼륨 슬라이더도 같은 화면에 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Zoom 고객지원 — Troubleshooting speaker or microphone issues in the desktop app",
+      "source_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060836",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Zoom", "category": "화상회의 앱(데스크톱)", "line": "Zoom 데스크톱 앱 Windows", "years": "문서 시점 기준", "region": "글로벌" },
+      "caution": "Zoom 앱은 메뉴 이름이 버전마다 바뀌었다. 같은 위치를 못 찾으면 Zoom 설정 검색창에 '오디오'를 입력한다.",
+      "cautionSource": "Zoom 문서 본문의 단계 순서 및 설정 메뉴 경로 안내"
+    },
+    {
+      "id": "zoom-windows-privacy-desktop-apps",
+      "claim": "Zoom 데스크톱 앱에서 마이크가 안 되면 Windows 개인정보 설정의 앱 마이크 권한에서 '앱이 마이크에 액세스하도록 허용'과 '데스크톱 앱이 마이크에 액세스하도록 허용'을 모두 켠다. Zoom 공식 문서는 이 경로를 '개인정보 > 앱 권한 > 마이크'로 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Zoom 고객지원 — Troubleshooting speaker or microphone issues in the desktop app",
+      "source_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060836",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Zoom", "category": "화상회의 앱(데스크톱)", "line": "Windows 데스크톱 앱", "years": "문서 시점 기준", "region": "글로벌" },
+      "caution": "Zoom 문서의 '개인정보 > 앱 권한' 경로는 Windows 11에서 '개인 정보 보호 및 보안 > 마이크'로 나타난다. 이름이 다를 뿐 같은 화면이다.",
+      "cautionSource": "Zoom 문서 경로와 Microsoft 문서 경로(Privacy & security > Microphone)의 대응 확인"
+    },
+    {
+      "id": "teams-device-settings-mic-dropdown",
+      "claim": "Teams에서는 설정 > 장치의 '오디오 설정'에 있는 '마이크' 드롭다운에서 쓸 마이크를 고른다. 회의 중에는 마이크 버튼 옆 화살표를 눌러 '추가 오디오 설정(More audio settings)'에서 같은 장치를 고른다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — My microphone isn't working in Microsoft Teams",
+      "source_url": "https://support.microsoft.com/en-us/office/my-microphone-isn-t-working-in-microsoft-teams-666d1123-9dd0-4a31-ad2e-a758b204f33a",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "화상회의(Teams 데스크톱)", "line": "Teams 데스크톱 앱", "years": "문서 시점 기준", "region": "글로벌" },
+      "caution": "회의 중에 장치를 바꾸면 마이크가 끊겼다 다시 잡혀야 할 수 있다. 가능하면 회의 시작 전에 고른다.",
+      "cautionSource": "Teams 문서의 'Reconnect during a meeting' 안내"
+    },
+    {
+      "id": "teams-windows-permission-toggle-restart",
+      "claim": "Teams에서 마이크가 안 되면 설정 > 개인 정보 보호 및 보안 > 앱 권한 > 마이크에서 마이크 액세스, 앱 액세스, Microsoft Teams, 데스크톱 앱 액세스 토글을 켠다. 이미 켜져 있어도 끄고 다시 켠 뒤 모든 앱을 닫고 재시작한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — My microphone isn't working in Microsoft Teams",
+      "source_url": "https://support.microsoft.com/en-us/office/my-microphone-isn-t-working-in-microsoft-teams-666d1123-9dd0-4a31-ad2e-a758b204f33a",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "화상회의(Teams 데스크톱)", "line": "Windows 데스크톱 Teams", "years": "Windows 11 경로 기준", "region": "글로벌" },
+      "caution": "토글을 끄고 켜는 것은 안전하다. 회사 PC라면 IT 관리자 정책으로 잠겨 있을 수 있어, 토글이 회색으로 바뀌지 않으면 관리자 확인이 필요하다.",
+      "cautionSource": "Teams 문서의 'toggle off and on' 및 'close all apps and restart' 안내"
+    },
+    {
+      "id": "teams-recording-tab-enable",
+      "claim": "Teams에서 마이크 목록에 장치가 보이지만 소리가 안 들어오면 설정 > 시스템 > 소리 > 고급 > 추가 소리 설정의 '녹음(Recording)' 탭에서 마이크를 우클릭해 '사용(Enable)'을 누른다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — My microphone isn't working in Microsoft Teams",
+      "source_url": "https://support.microsoft.com/en-us/office/my-microphone-isn-t-working-in-microsoft-teams-666d1123-9dd0-4a31-ad2e-a758b204f33a",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "화상회의(Teams 데스크톱)", "line": "Windows 데스크톱", "years": "문서 시점 기준", "region": "글로벌" },
+      "caution": "장치가 '사용 안 함'으로 꺼져 있으면 목록에는 보여도 녹음이 안 된다. 실수로 끈 경우가 많다.",
+      "cautionSource": "Teams 문서의 Recording 탭 Enable 절차"
+    },
+    {
+      "id": "teams-test-call-english-only",
+      "claim": "Teams 설정 > 장치 화면의 '테스트 통화 만들기(Make a test call)'로 테스트 통화 봇의 안내에 따라 짧게 말한 뒤 요약을 확인할 수 있다. 이 테스트 통화는 영어로만 안내되며 Teams 웹에서는 쓸 수 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — My microphone isn't working in Microsoft Teams",
+      "source_url": "https://support.microsoft.com/en-us/office/my-microphone-isn-t-working-in-microsoft-teams-666d1123-9dd0-4a31-ad2e-a758b204f33a",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "화상회의(Teams 데스크톱)", "line": "Teams 데스크톱 앱", "years": "문서 시점 기준", "region": "글로벌" },
+      "caution": "테스트 통화 봇이 영어로 말하므로 한국어 사용자는 '사용자 말하기 → 요약 확인' 흐름만 따라 하면 된다. 웹 버전에서는 Windows 테스트 샘플(mic-input-test-start-recorded-sample)로 대신한다.",
+      "cautionSource": "Teams 문서의 'English-only' 및 'not available on Teams for web' 명시"
+    },
+    {
+      "id": "web-browser-site-mic-permission",
+      "claim": "Teams 웹(브라우저)에서 마이크가 안 되면 브라우저 사이트 권한에서 마이크를 확인한다. Chrome은 설정 > 개인정보 보호 및 보안 > 사이트 설정 > 권한 > 마이크, Edge는 설정 및 기타 > 설정 > 쿠키 및 사이트 권한 > 마이크에서 사이트가 마이크를 쓰도록 허용한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — My microphone isn't working in Microsoft Teams",
+      "source_url": "https://support.microsoft.com/en-us/office/my-microphone-isn-t-working-in-microsoft-teams-666d1123-9dd0-4a31-ad2e-a758b204f33a",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Microsoft", "category": "화상회의(Teams 웹)", "line": "Chrome·Edge (Safari·Firefox는 같은 원리의 별도 메뉴)", "years": "문서 시점 기준", "region": "글로벌" },
+      "caution": "브라우저 메뉴 이름은 버전에 따라 다르다. 주소창 왼쪽 자물쇠 아이콘을 눌러 사이트 권한에서 마이크를 허용하는 방법이 가장 빠르다.",
+      "cautionSource": "Teams 문서의 브라우저별 메뉴 경로 안내"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "topic": "바닥 난방이 일부만 따뜻하거나 안 따뜻할 때 사용자가 해볼 수 있는 점검 (분배기 밸브·공기 빼기·압력·업체 호출 기준)",
+  "brand": "공통",
+  "article": "floor-heating-not-warm-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "kiturami-code-heating-leak-E492",
+    "kiturami-manual-download-by-model",
+    "boiler-warranty-standard"
+  ],
+  "declined_facts": [
+    {
+      "targetId": "rinnai-recommended-pressure-range",
+      "reason": "린나이 대기차단형 전용 권장 압력(50~150kPa)이다. 이 글은 브랜드를 특정하지 않는 공통 점검글이므로 수치를 공통 기준으로 옮기면 다른 제조사 기기에 잘못 적용된다. 린나이 기기를 언급하는 대목에서만 쓸 수 있다."
+    },
+    {
+      "targetId": "kyungdong-normal-pressure-not-officially-confirmed",
+      "reason": "정상 압력 수치를 공식 문서에서 확인하지 못한 확인실패 팩트다. 이번 글에서 수치를 인용하면 근거 없는 숫자가 다음 글로 넘어간다. 재사용하지 않는다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "kiturami-manifold-valves-all-closed-check",
+      "claim": "귀뚜라미 거꾸로 ECO 콘덴싱 L20 자가진단매뉴얼은 난방 에러 E212에 대해 '난방분배기 밸브가 모두 잠겨있는지 확인하라'고 안내한다. 이 안내는 난방만 해당한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "귀뚜라미보일러 자가진단매뉴얼 — 거꾸로 ECO 콘덴싱 L20",
+      "source_url": "https://krb.co.kr/self/26612",
+      "checked": "2026-11-03",
+      "scope": { "brand": "귀뚜라미", "category": "가스보일러", "line": "거꾸로 ECO 콘덴싱 L20", "years": "매뉴얼 기준 (연식 미표기)", "region": "KR" },
+      "caution": "같은 귀뚜라미 매뉴얼에서도 E212의 뜻은 기종 표마다 다르다(NEW P10에서는 응축수트랩 막힘 계열). 에러코드가 떴을 때는 본인 기종 표를 먼저 확인할 것. 이 팩트는 '분배기 밸브를 먼저 확인한다'는 점검 순서의 근거로만 쓴다.",
+      "cautionSource": "같은 매뉴얼 NEW P10 표와 기존 팩트 kiturami-code-condensate-E622-E212-논쟁 (krb.co.kr/self/26605)"
+    },
+    {
+      "id": "kgs-repair-by-qualified-only",
+      "claim": "한국가스안전공사는 가스보일러를 설치·이전·수리할 때 시공자격을 갖춘 전문가에게 맡길 것을 권고한다. 보일러 사용 중 과열·소음·진동·이상한 냄새가 나면 즉시 보일러를 끄고 가스밸브를 잠근 뒤 전문가에게 점검을 의뢰해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국가스안전공사 — 가스와생활 국민행동요령",
+      "source_url": "https://www.kgs.or.kr/kgs/abae/view.do",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가스보일러", "line": "전 기종", "years": "전 연식", "region": "KR" },
+      "caution": "이 팩트는 가스보일러 기준이다. 기름보일러·전기 온돌·지역난방 세대는 같은 문장을 그대로 쓰지 말 것. 분배기 안을 임의로 분해하는 행위는 금지 대상으로 쓴다.",
+      "cautionSource": "공사 페이지 원문 발췌(자동 추출본). 게시 전문은 본문 집필 전 한 번 더 열어 대조할 것"
+    },
+    {
+      "id": "kgs-as-request-to-installer-or-maker",
+      "claim": "한국가스안전공사는 보일러에 이상이 있을 때 보일러에 부착된 시공표지판 또는 명판에 표시된 시공자나 제조회사에 A/S를 요청하고, 수리 후에 사용하도록 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국가스안전공사 — 가스와생활 국민행동요령",
+      "source_url": "https://www.kgs.or.kr/kgs/abae/view.do",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가스보일러", "line": "전 기종", "years": "전 연식", "region": "KR" },
+      "caution": "업체를 부를 때 누구에게 부를지(시공자 또는 제조사)를 명판에서 먼저 확인하라는 근거로 쓴다. 특정 A/S 전화번호는 이 팩트로 확정하지 않는다.",
+      "cautionSource": "공사 페이지 원문 발췌(자동 추출본). 명판 위치 설명은 제조사 매뉴얼 기준으로 확인할 것"
+    },
+    {
+      "id": "kyungdong-manifold-bleed-procedure-not-confirmed",
+      "claim": "경동나비엔의 분배기 공기 빼기 절차와 밸브 위치는 공식 고객지원 문서에서 확인하지 못했다. 공식 페이지 검색에서는 블로그·유튜브 후기만 나왔다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "블로그 후기 — 경동나비엔 기름보일러 자가진단 설명 (공식 아님, 확인실패 기록용)",
+      "source_url": "https://blog.gongquiz.com/2021/03/28/%EA%B2%BD%EB%8F%99%EB%82%98%EB%B9%84%EC%97%94-%EA%B8%B0%EB%A6%84%EB%B3%B4%EC%9D%BC%EB%9F%AC-%EC%9E%90%EA%B0%80%EC%A7%84%EB%8B%A8-%EB%82%9C%EB%B0%A9-%EB%B0%B0%EA%B4%80-%EA%B3%B5%EA%B8%B0%EB%B9%BC/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "경동나비엔", "category": "가스보일러·기름보일러", "line": "분배기 공기 빼기", "years": "전 연식", "region": "KR" },
+      "caution": "확인실패 팩트다. 경동나비엔 기기라고 해서 블로그 절차를 공식처럼 쓰지 말 것. 제품 설명서 또는 고객센터에서 모델명으로 확인하라고 안내한다. 참고로 경동 기름보일러 자가진단 영상 설명은 '방바닥이 따뜻해지지 않으면 배관 공기 빼기를 해볼 수 있다'는 취지이나 영상 원문 절차는 확인하지 못했다.",
+      "cautionSource": "검색 결과 요약과 블로그 2건만 확인. 공식 원문 미확인"
+    },
+    {
+      "id": "manifold-location-common-spots",
+      "claim": "개별난방 분배기는 보통 신발장 옆, 베란다 보일러 아래, 싱크대 하부장 등 점검구 안에 있다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "픽데일리 데일리팁 — 한쪽 방만 차가울 때 먼저 확인할 것",
+      "source_url": "https://www.pickdailynews.com/news/articleView.html?idxno=6017",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가스·기름보일러 개별난방", "line": "분배기 점검구", "years": "전 연식", "region": "KR" },
+      "caution": "아파트 구조와 지역난방 세대는 위치가 다르다. 분배기를 찾지 못하면 관리사무소나 설치업체에 위치를 먼저 묻는다.",
+      "cautionSource": "뉴스 기사 일반 안내(후기 성격). 실제 위치는 집마다 다름"
+    },
+    {
+      "id": "bleed-order-near-boiler-first",
+      "claim": "공기 빼기는 보일러와 가장 가까운 방의 에어벤트부터 시작해 먼 방 쪽으로 차례로 진행하는 방식이 여러 후기 자료에서 권장된다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "픽데일리 데일리팁 — 보일러 켰는데 한쪽 방만 차갑다면",
+      "source_url": "https://www.pickdailynews.com/news/articleView.html?idxno=5408",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가스·기름보일러 개별난방", "line": "분배기 공기 빼기", "years": "전 연식", "region": "KR" },
+      "caution": "제조사 공식 순서가 아니다. 본인 기기 설명서에 순서가 있으면 그것을 따른다.",
+      "cautionSource": "뉴스 기사 절차 요약(후기). 공식 확인 실패"
+    },
+    {
+      "id": "bleed-one-loop-at-a-time-others-closed",
+      "claim": "공기 빼기는 한 번에 한 배관씩 진행하고, 나머지 방 밸브는 잠가 두어야 물길이 한 곳으로 몰려 공기가 밀려 나온다는 설명이 후기 자료에서 반복된다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "픽데일리 데일리팁 — 한쪽 방만 차갑다면 온도부터 올리지 마세요",
+      "source_url": "https://www.pickdailynews.com/news/articleView.html?idxno=6017",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가스·기름보일러 개별난방", "line": "분배기 공기 빼기", "years": "전 연식", "region": "KR" },
+      "caution": "여러 방 밸브를 동시에 여는 방법을 금지하는 공식 근거는 찾지 못했다. 한 방씩 확인하는 방법을 권하되, 분배기 구조에 따라 다르다는 단서를 붙인다.",
+      "cautionSource": "후기 기사 설명. 공식 확인 실패"
+    },
+    {
+      "id": "bleed-hot-water-burn-cool-first",
+      "claim": "난방수가 뜨거울 때 공기 빼기 밸브나 분배기 밸브를 열면 뜨거운 물이 튀어 화상 위험이 있으므로, 난방을 끄고 배관이 식은 뒤에 작업해야 한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "픽데일리 데일리팁 — 보일러 켰는데 한쪽 방만 차갑다면",
+      "source_url": "https://www.pickdailynews.com/news/articleView.html?idxno=5408",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가스·기름보일러 개별난방", "line": "분배기 공기 빼기", "years": "전 연식", "region": "KR" },
+      "caution": "안전 경고다. 작업 전 보일러 전원을 끄고 배관이 식을 때까지 기다리라고 쓴다. 뜨거운 상태에서 밸브를 여는 것은 금지 대상으로 쓴다.",
+      "cautionSource": "뉴스 기사 안전 안내. 화상 위험은 일반적인 열 안전 상식과 같은 방향"
+    },
+    {
+      "id": "bleed-open-all-valves-after",
+      "claim": "공기 빼기가 끝나면 잠가 두었던 분배기 밸브를 모두 다시 열어야 한다. 잠근 채로 두면 그 방은 계속 따뜻해지지 않는다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "픽데일리 데일리팁 — 보일러 켰는데 한쪽 방만 차갑다면",
+      "source_url": "https://www.pickdailynews.com/news/articleView.html?idxno=5408",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가스·기름보일러 개별난방", "line": "분배기 밸브", "years": "전 연식", "region": "KR" },
+      "caution": "작업 중 밸브 방향을 사진으로 남겨 두면 원상복구가 쉽다는 후기 조언을 함께 쓸 수 있다.",
+      "cautionSource": "뉴스 기사 절차 요약(후기)"
+    },
+    {
+      "id": "bleed-pressure-check-refill-gently",
+      "claim": "공기를 뺀 뒤에는 보일러 압력이 내려가므로 압력계가 설명서의 적정 범위인지 확인하고, 부족하면 보충 밸브로 조금씩 채우되 과하게 넣지 않는다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "픽데일리 데일리팁 — 보일러 켰는데 한쪽 방만 차갑다면",
+      "source_url": "https://www.pickdailynews.com/news/articleView.html?idxno=5408",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가스·기름보일러 개별난방", "line": "난방수 압력", "years": "전 연식", "region": "KR" },
+      "caution": "적정 압력 수치는 기기마다 다르므로 이 팩트에 숫자를 넣지 않는다. 수치는 본인 기기 설명서나 압력계 표기를 기준으로 한다.",
+      "cautionSource": "기사에 구체 수치 없음. 수치를 쓰려면 제조사 자료를 새로 확인해야 한다"
+    },
+    {
+      "id": "bleed-recheck-after-10to20min-and-repeat",
+      "claim": "공기 빼기 후 난방을 10~20분 돌려 방마다 바닥 온도를 비교한다. 여전히 차가운 방이 있으면 그 배관의 공기를 다시 뺀다. 작업 중 갑자기 큰 소리가 나도 공기가 다시 들어간 신호일 수 있어 다시 뺀다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "위키트리 — 아저씨 부르지 않고 보일러 에어 빼내는 방법",
+      "source_url": "https://www.wikitree.co.kr/articles/1100173",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가스·기름보일러 개별난방", "line": "분배기 공기 빼기", "years": "전 연식", "region": "KR" },
+      "caution": "10~20분은 후기 자료의 관행이다. 반복해도 한 방만 계속 차가우면 다음 단계(서비스 호출)로 넘어간다.",
+      "cautionSource": "뉴스 기사 절차 요약(후기). 공식 확인 실패"
+    },
+    {
+      "id": "still-cold-after-bleed-service-call",
+      "claim": "공기 빼기와 압력 확인을 해도 계속 차가우면 배관 막힘이나 순환펌프 문제일 수 있으므로 서비스센터 점검을 받는다. 지역난방 세대는 관리사무소에 먼저 문의한다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "픽데일리 데일리팁 — 한쪽 방만 차갑다면 온도부터 올리지 마세요",
+      "source_url": "https://www.pickdailynews.com/news/articleView.html?idxno=6017",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가스·기름보일러 개별난방·지역난방", "line": "분배기 이후 배관·펌프", "years": "전 연식", "region": "KR" },
+      "caution": "배관 막힘과 펌프 문제는 자가로 확인이 어렵다. 밸브를 임의로 분해하거나 배관을 뜯지 않는다. 호출 시 어느 방이 차가운지와 공기 빼기를 해본 결과를 같이 전하면 점검이 빨라진다.",
+      "cautionSource": "뉴스 기사 권고(후기). 호출 업체 기준은 제조사 A/S 경로와 함께 확인"
+    }
+  ]
+}

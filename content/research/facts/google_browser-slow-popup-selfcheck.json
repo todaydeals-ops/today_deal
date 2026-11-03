@@ -1,0 +1,317 @@
+{
+  "topic": "크롬 브라우저가 느려지고 팝업 광고가 뜰 때 (Google Chrome 공식 도움말 기준 셀프체크)",
+  "brand": "공통",
+  "article": "browser-slow-popup-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "chrome-popup-blocked-by-default",
+      "claim": "Chrome은 기본적으로 팝업이 자동으로 뜨지 않도록 차단하며, 팝업이 차단되면 주소 표시줄에 '팝업 차단됨' 표시가 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Chrome 고객센터 — Chrome에서 팝업을 차단 또는 허용하기",
+      "source_url": "https://support.google.com/chrome/answer/95472?hl=ko",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "Google Chrome",
+        "category": "브라우저",
+        "line": "데스크톱 Chrome",
+        "years": "현행 버전",
+        "region": "KR"
+      },
+      "caution": "팝업 차단됨 표시가 보이는데 링크를 누르면 정상 기능일 수 있다. 차단된 팝업이 모두 광고는 아니다.",
+      "cautionSource": "Google Chrome 고객센터 팝업 차단 문서의 차단 표시 안내와 허용 절차"
+    },
+    {
+      "id": "chrome-popup-setting-path",
+      "claim": "Chrome 팝업 기본 동작은 더보기 > 설정 > 개인 정보 및 보안 > 사이트 설정 > 팝업 및 리디렉션에서 바꿀 수 있다. 특정 사이트만 차단하려면 해당 사이트를 차단 목록에 추가하고, 하위 도메인까지 막으려면 [*.]도메인 형식의 패턴을 쓸 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Chrome 고객센터 — Chrome에서 팝업을 차단 또는 허용하기",
+      "source_url": "https://support.google.com/chrome/answer/95472?hl=ko",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "Google Chrome",
+        "category": "브라우저",
+        "line": "데스크톱 Chrome",
+        "years": "현행 버전",
+        "region": "KR"
+      },
+      "caution": "회사나 학교에서 관리되는 기기는 사용자가 이 설정을 바꿀 수 없고 관리자가 설정한다.",
+      "cautionSource": "Google Chrome 고객센터 팝업 문서의 관리 기기 안내 문장"
+    },
+    {
+      "id": "chrome-ads-setting-path-annoying-ads",
+      "claim": "Chrome에서 방해가 되는 광고 설정은 더보기 > 설정 > 개인 정보 보호 및 보안 > 사이트 설정 > 추가 콘텐츠 설정 > 방해가 되는 광고 순서로 들어가 기본 동작을 고르는 곳이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Chrome 고객센터 — 원치 않는 광고, 팝업, 멀웨어 삭제하기",
+      "source_url": "https://support.google.com/chrome/answer/2765944?hl=ko",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "Google Chrome",
+        "category": "브라우저",
+        "line": "데스크톱 Chrome",
+        "years": "현행 버전",
+        "region": "KR"
+      },
+      "caution": "이 설정은 광고 차단 기능의 기본 동작을 바꾸는 곳이다. 사이트별 허용을 누르기 전에 신뢰하는 사이트인지 먼저 확인한다.",
+      "cautionSource": "Google Chrome 고객센터 원치 않는 광고 문서의 방해가 되는 광고 설정 경로 안내"
+    },
+    {
+      "id": "chrome-popup-persistent-check-notification-and-malware",
+      "claim": "팝업 광고가 계속 뜨거나 낯선 페이지로 리디렉션되면, 사이트 알림을 허용했거나 멀웨어 또는 원치 않는 확장 프로그램이 원인일 수 있다. 이 경우 알림 차단과 기기 멀웨어 점검을 함께 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Chrome 고객센터 — Chrome에서 팝업을 차단 또는 허용하기",
+      "source_url": "https://support.google.com/chrome/answer/95472?hl=ko",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "Google Chrome",
+        "category": "브라우저",
+        "line": "데스크톱 Chrome",
+        "years": "현행 버전",
+        "region": "KR"
+      },
+      "caution": "팝업이 한두 사이트에서만 뜨면 해당 사이트의 알림 권한부터 끄고, 여러 사이트에서 같이 뜨면 확장 프로그램과 멀웨어 점검을 우선한다.",
+      "cautionSource": "Google Chrome 고객센터 팝업 문서의 알림 구독 및 멀웨어 원인 안내"
+    },
+    {
+      "id": "chrome-notification-permission-path",
+      "claim": "Chrome 알림 권한은 더보기 > 설정 > 개인 정보 및 보안 > 사이트 설정 > 알림에서 관리한다. '알림 전송이 허용됨' 목록의 사이트는 삭제하거나 차단으로 옮길 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Chrome 고객센터 — 알림을 통해 새 소식 받기",
+      "source_url": "https://support.google.com/chrome/answer/3220216?hl=ko",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "Google Chrome",
+        "category": "브라우저",
+        "line": "데스크톱 Chrome",
+        "years": "현행 버전",
+        "region": "KR"
+      },
+      "caution": "사이트 알림을 끄면 정상 사이트의 중요 알림도 함께 못 받는다. 목록을 보고 모르는 사이트부터 차단한다.",
+      "cautionSource": "Google Chrome 고객센터 알림 문서의 허용·차단 목록 안내"
+    },
+    {
+      "id": "chrome-extension-manage-path",
+      "claim": "Chrome 확장 프로그램 관리 화면은 더보기 > 확장 프로그램 > 확장 프로그램 관리에서 열린다. 여기서 사용 중지하거나 삭제할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Chrome 웹 스토어 고객센터 — 확장 프로그램 설치 및 관리",
+      "source_url": "https://support.google.com/chrome_webstore/answer/2664769?hl=ko",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "Google Chrome",
+        "category": "브라우저",
+        "line": "데스크톱 Chrome 확장 프로그램",
+        "years": "현행 버전",
+        "region": "KR"
+      },
+      "caution": "확장 프로그램을 끄기 전에 어떤 프로그램인지 이름을 확인한다. 기업·학교 기기는 관리자가 일부 확장 프로그램을 막아 두었을 수 있다.",
+      "cautionSource": "Google Chrome 웹 스토어 고객센터 확장 프로그램 문서의 조직 차단 안내"
+    },
+    {
+      "id": "chrome-extension-remove-via-toolbar-icon",
+      "claim": "주소 표시줄 오른쪽의 확장 프로그램 아이콘을 마우스 오른쪽 버튼으로 누르고 'Chrome에서 삭제'를 고르면 확장 프로그램을 지울 수 있다. 아이콘이 없으면 확장 프로그램 관리 화면에서 삭제를 선택한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Chrome 웹 스토어 고객센터 — 확장 프로그램 설치 및 관리",
+      "source_url": "https://support.google.com/chrome_webstore/answer/2664769?hl=ko",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "Google Chrome",
+        "category": "브라우저",
+        "line": "데스크톱 Chrome 확장 프로그램",
+        "years": "현행 버전",
+        "region": "KR"
+      },
+      "caution": "삭제 전 설치 목적을 확인한다. 특정 프로그램(예: VPN 등)을 쓰는 중이라면 해당 프로그램 자체가 확장 프로그램을 같이 설치했을 수 있다.",
+      "cautionSource": "Google Chrome 웹 스토어 고객센터 — Windows·Mac 앱이 확장 프로그램을 함께 설치할 수 있다는 안내"
+    },
+    {
+      "id": "chrome-reset-settings-path",
+      "claim": "Chrome 설정 재설정은 더보기 > 설정 > 설정 초기화 > 설정을 기본값으로 복원 > 설정 초기화 순서로 실행한다. 재설정 후 일부 확장 프로그램은 다시 사용 설정해야 하며, 신뢰할 수 있는 것만 다시 켜라고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Chrome 고객센터 — 원치 않는 광고, 팝업, 멀웨어 삭제하기",
+      "source_url": "https://support.google.com/chrome/answer/2765944?hl=ko",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "Google Chrome",
+        "category": "브라우저",
+        "line": "데스크톱 Chrome",
+        "years": "현행 버전",
+        "region": "KR"
+      },
+      "caution": "재설정 전에 로그인 상태와 북마크가 동기화되어 있는지 확인한다. 재설정이 무엇을 지우는지 전체 목록은 이 셀프체크에서 확인하지 못했다.",
+      "cautionSource": "Google Chrome 고객센터 재설정 문서의 확장 프로그램 재사용 설정 안내. 개별 항목 목록은 원문 미확인"
+    },
+    {
+      "id": "chrome-reset-search-engine-auto-restore",
+      "claim": "Chrome은 실행할 때마다 설정 변경 여부를 확인해 검색 설정 등 중요한 설정을 기본값으로 되돌릴 수 있다. 검색 설정이 자동으로 재설정되면 다음 검색 때 알림이 표시된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Chrome 고객센터 — 브라우저 설정을 재설정하는 방법",
+      "source_url": "https://support.google.com/chrome/answer/2765944?hl=ko",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "Google Chrome",
+        "category": "브라우저",
+        "line": "데스크톱 Chrome",
+        "years": "현행 버전",
+        "region": "KR"
+      },
+      "caution": "검색 설정이 계속 되돌아가면 재설정 후에도 확장 프로그램이나 멀웨어가 남아 있을 가능성이 있다. 확장 프로그램 관리와 정리 점검을 이어서 한다.",
+      "cautionSource": "Google Chrome 고객센터 재설정 안내의 자동 복원 문장과 멀웨어 원인 안내"
+    },
+    {
+      "id": "chrome-cache-clear-desktop-path",
+      "claim": "Chrome 데스크톱에서 캐시를 지우려면 더보기 > 인터넷 사용 기록 삭제를 연 뒤 기간을 고르고 '쿠키 및 기타 사이트 데이터'와 '캐시된 이미지 및 파일'을 선택한 다음 데이터 삭제를 누른다. 주소 표시줄에 '인터넷 사용 기록 삭제'를 입력해 바로 여는 방법도 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Chrome 고객센터 — Chrome 방문 기록, 캐시, 쿠키 삭제하기 (컴퓨터)",
+      "source_url": "https://support.google.com/chrome/answer/95582?hl=ko&co=GENIE.Platform%3DDesktop",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "Google Chrome",
+        "category": "브라우저",
+        "line": "데스크톱 Chrome",
+        "years": "현행 버전",
+        "region": "KR"
+      },
+      "caution": "쿠키와 사이트 데이터를 지우면 웹사이트 로그인이 풀린다. 자주 쓰는 사이트의 로그인 정보를 미리 확인한다.",
+      "cautionSource": "Google Chrome 고객센터 방문 기록 삭제 문서의 쿠키 삭제 영향 안내"
+    },
+    {
+      "id": "chrome-cache-clear-password-not-deleted",
+      "claim": "Chrome 인터넷 사용 기록 삭제 절차로는 저장된 비밀번호가 지워지지 않는다. 저장된 비밀번호는 Google 비밀번호 관리자에서 따로 삭제해야 한다. 자동완성의 주소와 카드 정보는 삭제되지만 Google 계정에 저장된 카드와 주소는 남는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Chrome 고객센터 — Chrome 방문 기록, 캐시, 쿠키 삭제하기 (컴퓨터)",
+      "source_url": "https://support.google.com/chrome/answer/95582?hl=ko&co=GENIE.Platform%3DDesktop",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "Google Chrome",
+        "category": "브라우저",
+        "line": "데스크톱 Chrome",
+        "years": "현행 버전",
+        "region": "KR"
+      },
+      "caution": "캐시 삭제 전에 비밀번호 관리자 항목을 백업하거나 로그인 수단을 확인한다. 비밀번호를 지우면 로그인 복구가 어려울 수 있다.",
+      "cautionSource": "Google Chrome 고객센터 방문 기록 삭제 문서의 비밀번호 및 자동완성 항목 안내"
+    },
+    {
+      "id": "chrome-cache-clear-logout-effect",
+      "claim": "Chrome에 로그인한 상태에서 방문 기록과 사이트 데이터를 삭제하면 같은 Google 계정을 쓰는 다른 기기에도 영향이 간다. Google 계정에서 로그아웃하려면 Chrome에서 로그아웃해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Chrome 고객센터 — Chrome 방문 기록, 캐시, 쿠키 삭제하기 (컴퓨터)",
+      "source_url": "https://support.google.com/chrome/answer/95582?hl=ko&co=GENIE.Platform%3DDesktop",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "Google Chrome",
+        "category": "브라우저",
+        "line": "데스크톱 Chrome",
+        "years": "현행 버전",
+        "region": "KR"
+      },
+      "caution": "공용 PC에서 쓰고 있다면 삭제 후 Chrome에서 로그아웃까지 해야 다음 사람에게 기록이 안 남는다.",
+      "cautionSource": "Google Chrome 고객센터 방문 기록 삭제 문서의 로그아웃 및 다기기 영향 안내"
+    },
+    {
+      "id": "chrome-speed-tips-tabs-extensions-task-manager",
+      "claim": "Chrome이 느릴 때 공식 도움말은 사용하지 않는 탭을 닫고, 사용하지 않는 확장 프로그램을 사용 중지하거나 삭제하며, 더보기 > 도구 더보기 > 작업 관리자에서 무거운 작업을 종료하라고 안내한다. 탭을 많이 열어둘수록 Chrome의 작업 부담이 커진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Chrome 고객센터 — Chrome 속도 높이기",
+      "source_url": "https://support.google.com/chrome/answer/1385029?hl=ko&co=GENIE.Platform%3DDesktop",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "Google Chrome",
+        "category": "브라우저",
+        "line": "데스크톱 Chrome",
+        "years": "현행 버전",
+        "region": "KR"
+      },
+      "caution": "작업 관리자에서 프로세스를 종료하면 저장하지 않은 작업이 지워진다. 종료 전에 해당 탭의 작업을 먼저 저장한다.",
+      "cautionSource": "Google Chrome 고객센터 Chrome 속도 높이기 문서의 저장하지 않은 작업 삭제 안내"
+    },
+    {
+      "id": "chrome-safe-browsing-keep-on",
+      "claim": "Chrome 세이프 브라우징은 멀웨어·원치 않는 소프트웨어·소셜 엔지니어링(속임수) 사이트에 경고를 띄운다. 공식 문서는 세이프 브라우징을 끄지 말 것을 권장한다. 경고가 뜬 사이트는 방문하지 않는 것이 좋다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Chrome 고객센터 — 안전하지 않은 사이트 경고 관리하기",
+      "source_url": "https://support.google.com/chrome/answer/99020?hl=ko&co=GENIE.Platform%3DDesktop",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "Google Chrome",
+        "category": "브라우저",
+        "line": "데스크톱 Chrome",
+        "years": "현행 버전",
+        "region": "KR"
+      },
+      "caution": "경고 화면의 '세부정보'에서 안전하지 않은 사이트로 계속 가는 선택지가 있지만, 공식 문서는 이를 권장하지 않는다. 경고 사이트에서는 비밀번호나 결제 정보를 입력하지 않는다.",
+      "cautionSource": "Google Chrome 고객센터 안전하지 않은 사이트 경고 문서의 비권장 안내"
+    },
+    {
+      "id": "google-account-password-change-path",
+      "claim": "Google 계정 비밀번호는 myaccount.google.com에 로그인한 뒤 보안 및 로그인 메뉴에서 비밀번호를 선택해 바꿀 수 있다. 비밀번호를 바꾸면 본인 인증에 쓰는 기기 등 예외를 빼고 대부분의 기기에서 로그아웃된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google 계정 고객센터 — 비밀번호 변경 및 재설정",
+      "source_url": "https://support.google.com/accounts/answer/41078?hl=ko",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "Google 계정",
+        "category": "계정 보안",
+        "line": "전 기기",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "비밀번호를 바꾼 뒤에도 이전 비밀번호를 여러 사이트에 쓴 적이 있다면 그 사이트 비밀번호도 함께 바꾼다. 새 비밀번호는 이 계정에서 쓴 적 없는 것으로 정한다.",
+      "cautionSource": "Google 계정 고객센터 비밀번호 재설정 문서의 새 비밀번호 권장 안내"
+    },
+    {
+      "id": "google-security-checkup-recommended",
+      "claim": "Google 계정 보안 점검(myaccount.google.com/security-checkup)에서 계정의 보안 문제를 확인하고 해결하라고 안내된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google 계정 고객센터 — 멀웨어 또는 안전하지 않은 소프트웨어 삭제하기",
+      "source_url": "https://support.google.com/accounts/answer/9924802?hl=ko&co=GENIE.Platform%3DDesktop",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "Google 계정",
+        "category": "계정 보안",
+        "line": "전 기기",
+        "years": "현행",
+        "region": "KR"
+      },
+      "caution": "보안 점검에서 모르는 기기나 앱이 보이면 바로 제거하고 비밀번호를 바꾼다. 점검만 하고 넘어가면 접근 권한이 남는다.",
+      "cautionSource": "Google 계정 고객센터 멀웨어 문서의 계정 보안 점검 안내"
+    },
+    {
+      "id": "windows-uninstall-suspicious-program-path",
+      "claim": "Windows에서 의심스러운 프로그램을 제거하려면 설정 > 앱 > 설치된 앱에서 해당 앱을 고른 뒤 제거한다. Mac은 Finder의 응용 프로그램에서 해당 앱을 휴지통으로 옮기고 휴지통을 비운다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Google Chrome 고객센터 — 원치 않는 광고, 팝업, 멀웨어 삭제하기",
+      "source_url": "https://support.google.com/chrome/answer/2765944?hl=ko",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "Google Chrome",
+        "category": "브라우저",
+        "line": "Windows·Mac",
+        "years": "현행 OS",
+        "region": "KR"
+      },
+      "caution": "설치 기록에 이름을 모르는 프로그램이 있으면 검색 없이 바로 지우지 말고 이름을 먼저 확인한다. 회사 PC는 관리자에게 먼저 알린다.",
+      "cautionSource": "Google Chrome 고객센터 원치 않는 프로그램 삭제 안내의 제거 절차 문장"
+    }
+  ]
+}

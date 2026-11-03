@@ -1,0 +1,119 @@
+{
+  "topic": "수도 수압이 약할 때 원인 찾는 순서 (에어레이터·세대 밸브·계량기·공용 배관·공급 측)",
+  "brand": "공통",
+  "article": "low-water-pressure-faucet-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "kwater-report-dispatch-on-complaint",
+      "claim": "K-water 지방상수도 서비스 안내에 따르면 수도미터기 파손, 물이 잘 나오지 않는 등의 불편사항을 신고하면 도서지역을 제외하고 즉시 현장에 출동해 원인을 파악하고 필요한 조치를 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "K-water 지방상수도 서비스 안내 (누수 정보제공 및 조치)",
+      "source_url": "https://www.kwater.or.kr/cust/sub01/norm05Tab.do?s_mid=1154",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "수도", "line": "K-water 관할 지방상수도", "years": "전 연식", "region": "KR" },
+      "caution": "이 문구는 K-water 관할 지역 기준이다. 지자체 직영 상수도는 관할 사업소가 따로 있으므로 해당 지역 사업소에 신고한다.",
+      "cautionSource": "K-water 안내 페이지가 수도미터기 파손·불편사항 신고의 대상 기관을 K-water로 한정한 표기"
+    },
+    {
+      "id": "incheon-multi-household-supply-leak",
+      "claim": "2022년 10월 인천 부평구 다세대주택에서 같은 건물 여러 가구가 함께 수압 저하를 겪었고, 북부수도사업소가 주변 상수도 시설을 점검해 누수를 찾아 2022년 10월 20일 수리한 뒤 수압이 정상으로 회복됐다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "인천광역시 상수도사업본부 북부수도사업소 민원 답변 (2022-10-23)",
+      "source_url": "https://www.incheon.go.kr/water/WA010005/2097329",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "수도", "line": "다세대 공동 인입", "years": "2022", "region": "인천 부평" },
+      "caution": "개별 민원 한 건의 사례다. 여러 가구 동시 저하가 항상 누수로 이어진다는 뜻으로 일반화하지 않는다.",
+      "cautionSource": "인천시 민원 답변 원문이 단일 사례의 원인과 조치만 기록함"
+    },
+    {
+      "id": "incheon-demand-growth-temporary-shortage",
+      "claim": "2021년 12월 인천 미추홀구 빌라 민원에서 인천시 상수도사업본부는 인근 신축 아파트·오피스텔 등 공동주택의 사용량 증가로 일시적이고 반복적인 수량 부족이 생긴 것으로 보고, 인근 노후 수도관 교체 공사를 2022년도에 진행한다고 답변했다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "인천광역시 상수도사업본부 민원 답변 (2021-12-03)",
+      "source_url": "https://www.incheon.go.kr/water/WA010005/2078734",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "수도", "line": "공급 측 수량 부족", "years": "2021~2022", "region": "인천 미추홀" },
+      "caution": "신축 단지 입주 시기에 맞춰 일시적으로 생길 수 있는 원인이다. 즉시 해결책은 없다고 답변에 명시됐으므로, 독자에게는 기간 경과를 보고 관할 사업소에 문의하도록 안내한다.",
+      "cautionSource": "해당 민원 답변이 즉시 해결 방안을 제시하지 못했다고 밝힌 문구"
+    },
+    {
+      "id": "incheon-supply-system-change-2023",
+      "claim": "인천 상수도사업본부는 2023년 9월 6일 수돗물 공급체계 변경에 따라 일시적 수압 저하와 녹물이 발생할 수 있다고 공지했다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "인천광역시 상수도사업본부 공지 (수돗물 공급체계 변경에 따른 일시적 수압저하·녹물발생 안내)",
+      "source_url": "https://www.incheon.go.kr/water/WA020101/2145250",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "수도", "line": "공급체계 변경 구역", "years": "2023-09", "region": "인천" },
+      "caution": "공지 본문은 이미지로만 제공돼 세부 대상 지역과 기간은 확인하지 못했다. 독자에게는 해당 기간 공급체계 변경 공지가 있었는지 관할 사업소에 확인하도록 안내한다.",
+      "cautionSource": "공지 페이지 본문이 이미지 형태라 텍스트로 확인 불가했음을 기록"
+    },
+    {
+      "id": "kwater-no-dedicated-low-pressure-route",
+      "claim": "K-water 고객 안내 페이지에는 수압 저하 전용 접수처, 신고 방법, 단계별 자가 점검 절차가 명시돼 있지 않다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "K-water 지방상수도 서비스 안내 (누수 정보제공 및 조치)",
+      "source_url": "https://www.kwater.or.kr/cust/sub01/norm05Tab.do?s_mid=1154",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "수도", "line": "K-water 관할 지방상수도", "years": "전 연식", "region": "KR" },
+      "caution": "페이지에 대표전화와 고객센터 번호가 있으나 수압 민원 전용이라고 표기되지 않았다. 번호를 수압 전용 접수처로 안내하지 않는다.",
+      "cautionSource": "페이지에 전화번호만 있고 항목별 접수처 표기가 없음을 확인"
+    },
+    {
+      "id": "faucet-compare-first-scope-check",
+      "claim": "주방·욕실·샤워기를 같은 세기로 번갈아 틀어 보면 한 곳만 약한지 집 전체가 약한지 구분할 수 있고, 한 곳만 약하면 그 수전의 에어레이터부터, 여러 곳이 같이 약하면 공급 쪽이나 세대 밸브를 의심한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "위키트리 생활꿀팁 기사 (미국 주택 서비스 업체 전문가 기고 재게재)",
+      "source_url": "https://www.wikitree.co.kr/articles/1170596",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "수도", "line": "수전 전 종류", "years": "전 연식", "region": "KR" },
+      "caution": "기사 원저자는 미국 주택 기준 전문가다. 원인 범위를 나누는 순서만 참고하고, 수치 기준은 쓰지 않는다.",
+      "cautionSource": "기사 본문이 미국 주택 전제임을 명시"
+    },
+    {
+      "id": "aerator-clean-vinegar-soak",
+      "claim": "수전 끝 에어레이터를 풀어 식초에 20~30분 담갔다가 부드러운 솔이나 구멍 쓸기로 청소하면 미네랄 찌꺼기로 막힌 수압 저하를 풀 수 있다. 분해 전 사진을 찍고 부품 순서를 기록한다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "위키트리 생활꿀팁 기사 (미국 주택 서비스 업체 전문가 기고 재게재)",
+      "source_url": "https://www.wikitree.co.kr/articles/1170596",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "수전", "line": "에어레이터(망) 달린 수전", "years": "전 연식", "region": "KR" },
+      "caution": "식초는 염소계 세정제와 섞지 않는다. 혼합 시 유해가스가 생길 수 있다. 분해가 안 되면 무리하게 힘을 주지 말고 설비업체에 맡긴다.",
+      "cautionSource": "기사 본문의 염소계 세정제 혼합 금지 문구. 가스 위험 설명은 일반 안전 상식으로 주의문에 추가"
+    },
+    {
+      "id": "pressure-regulator-no-self-adjust",
+      "claim": "밸브가 모두 열려 있는데도 압력이 들쭉날쭉하면 감압밸브를 의심할 수 있고, 감압밸브는 직접 조정하지 말고 설비업체에 점검을 맡긴다",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "위키트리 생활꿀팁 기사 (미국 주택 서비스 업체 전문가 기고 재게재)",
+      "source_url": "https://www.wikitree.co.kr/articles/1170596",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "수도", "line": "세대 감압밸브", "years": "전 연식", "region": "KR" },
+      "caution": "감압밸브를 임의로 돌리면 세대 전체 배관 압력이 올라 누수와 기기 파손이 날 수 있다. 조정은 자격 있는 설비업체에 맡긴다.",
+      "cautionSource": "기사가 감압밸브 직접 조정 금지와 설비업체 위임을 권고한 문구"
+    },
+    {
+      "id": "condo-shared-pipe-ownership",
+      "claim": "세대 안에 있는 수도배관이라도 두 세대 이상이 함께 쓰는 배관이나 세대를 잇는 입상관은 공용부분으로 보는 것이 일반적이며, 전유·공용의 구분은 단지 관리규약을 우선한다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "한국아파트신문 기사 인용 카페 게시물 (2차 인용)",
+      "source_url": "https://m.cafe.daum.net/mirae-mpia/Qf4j/592",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "공동주택 배관", "line": "아파트 급수 배관", "years": "2022 인용 기준", "region": "KR" },
+      "caution": "2차 인용 게시물이라 조문 번호를 확인하지 못했다. 독자에게는 비용 책임을 단정하지 말고 관리사무소에 관리규약 기준으로 확인하도록 안내한다.",
+      "cautionSource": "원문 법령 조문을 확인하지 못했고, 시행령 조문 번호 검증이 불가했음을 기록"
+    }
+  ]
+}

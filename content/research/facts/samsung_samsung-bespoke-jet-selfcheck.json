@@ -1,0 +1,192 @@
+{
+  "topic": "삼성 비스포크 제트 흡입력 약함·충전 불량 자가점검",
+  "brand": "삼성",
+  "article": "samsung-bespoke-jet-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "battery-swelling-stop-immediately"
+  ],
+  "declined_facts": [
+    { "id": "dyson-battery-replacement-warning-signs", "why": "다이슨 무선청소기 배터리 교체 신호(LED 12회 점멸 등). 삼성 비스포크 제트와 브랜드·LED 체계가 다르므로 적용 불가" },
+    { "id": "dyson-airway-blockage-7vibrations", "why": "다이슨 LCD 에어웨이 경고(진동 7회). 삼성 제트의 경고 체계와 다르므로 적용 불가" },
+    { "id": "dyson-filter-cleaning-frequency", "why": "다이슨 필터 권장 세척 주기(월 1회). 삼성 제트 필터 주기는 확인하지 못했으므로 다이슨 수치를 옮기지 않음" },
+    { "id": "lg-codezero-suction-weak-battery-low", "why": "LG 코드제로 배터리 저하 안내. 브랜드가 다르므로 삼성 제트에 쓰지 않음" }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "jet-suction-weak-disassembly-order",
+      "claim": "비스포크 제트 흡입력이 약하면 브러시 분리 버튼으로 브러시를 떼고, 회전솔을 PUSH 버튼으로 분리한 뒤, 연장관·먼지통·모터 필터·그릴 순서로 분리해 안쪽 이물을 확인하고 제거한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 흡입력이 약할 때 조치 방법 안내 영상",
+      "source_url": "https://www.samsungsvc.co.kr/video/2359090",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "무선청소기", "line": "비스포크 제트 (AI 포함)", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "분리 순서와 버튼 위치는 영상 안내 기준이다. 본인 모델의 사용설명서와 다르면 사용설명서를 따른다. 모터 필터를 젖은 상태로 다시 끼우지 않는다.",
+      "cautionSource": "삼성전자서비스 영상 안내의 분리 순서와 공식 페이지의 필터 건조 언급 범위 안에서만 적용"
+    },
+    {
+      "id": "jet-selfcheck-ai-mode-trigger-2023",
+      "claim": "2023년 9월 소프트웨어 업데이트 이후, 비스포크 제트 AI는 기본 흡입력이 AI 모드일 때 청정스테이션에 거치하면 자가진단이 실행된다. 기본 흡입력이 AI가 아니어도 청소 중 AI 모드를 5분 이상 쓰면 거치 시 자가진단이 실행된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 비스포크 제트 AI 자가진단 동작 해제 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1843753",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "무선청소기", "line": "비스포크 제트 AI", "years": "2023년 9월 소프트웨어 업데이트 이후", "region": "KR" },
+      "caution": "2023년 9월 이전 펌웨어에서는 거치 때마다 자가진단이 돌았다는 점이 공식 페이지에 적혀 있다. 펌웨어가 다르면 동작이 다르므로 스마트싱스 앱의 기기 정보로 확인한다.",
+      "cautionSource": "삼성전자서비스 자가진단 안내 페이지의 2023년 9월 업데이트 기준 설명"
+    },
+    {
+      "id": "jet-selfcheck-disable-via-smartthings",
+      "claim": "스마트싱스 앱에서 기기 > 스틱 청소기 > 기본 흡입력으로 들어가 일반·강력·초강력·제트 중 하나를 고르면, 청정스테이션 거치 시 자가진단이 자동으로 실행되지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 비스포크 제트 AI 자가진단 동작 해제 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1843753",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "무선청소기", "line": "비스포크 제트 AI (스마트싱스 연결 모델)", "years": "2023년 9월 소프트웨어 업데이트 이후", "region": "KR" },
+      "caution": "기본 흡입력을 AI가 아닌 모드로 바꿔도, 청소 중 AI 모드를 5분 이상 쓰면 거치 시 자가진단이 다시 돌 수 있다. 자가진단을 끄는 설정이 아니라 자동 실행 조건을 바꾸는 설정이다.",
+      "cautionSource": "삼성전자서비스 자가진단 안내 페이지의 5분 조건 설명"
+    },
+    {
+      "id": "jet-selfcheck-manual-start",
+      "claim": "청정스테이션에 거치한 상태에서 손잡이의 + 버튼과 - 버튼을 동시에 3초 이상 누르면 자가진단이 수동으로 시작된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 비스포크 제트 AI 자가진단 동작 해제 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1843753",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "무선청소기", "line": "비스포크 제트 AI", "years": "2023년 9월 소프트웨어 업데이트 이후", "region": "KR" }
+    },
+    {
+      "id": "jet-selfcheck-not-running-checklist",
+      "claim": "자가진단이 돌지 않을 때 확인할 것은 네 가지다. 브러시에 LED 마루 브러시 플러스가 장착돼 있는지, 청정스테이션 전원코드가 연결돼 있는지, 기본 흡입력이 AI인지(또는 AI 모드 5분 사용 여부), 블루투스 연결 상태다. 블루투스 상태는 청정스테이션 START/STOP 버튼을 3초 이상 길게 누르면 파란색 깜박임은 연결됨, 빨간색 깜박임은 연결 필요를 뜻한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 비스포크 제트 AI 자가진단 동작 해제 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1843753",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "무선청소기", "line": "비스포크 제트 AI (LED 마루 브러시 플러스 장착 모델)", "years": "2023년 9월 소프트웨어 업데이트 이후", "region": "KR" },
+      "caution": "블루투스 재연결 과정에서 청정스테이션 설정을 임의로 초기화하지 않는다. 재연결이 안 되면 스마트싱스 앱 안내를 따른다.",
+      "cautionSource": "삼성전자서비스 페이지의 블루투스 점검 항목 (초기화 금지 문구는 일반 원칙)"
+    },
+    {
+      "id": "jet-charging-led-meaning",
+      "claim": "비스포크 제트를 청정스테이션에 올려 충전하면 배터리 LED가 켜지고 LCD에 충전량(%)이 표시된다. 충전이 끝나면 배터리 LED가 초록색이 되고 LCD는 꺼진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 무선 청소기 배터리 충전이 안 돼요 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40849",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "무선청소기", "line": "비스포크 제트 (청정스테이션 220V 60Hz)", "years": "현행 판매 모델", "region": "KR" }
+    },
+    {
+      "id": "jet-battery-led-color-bands",
+      "claim": "비스포크 제트 배터리 LED 색은 잔량 구간을 나타낸다. 빨강은 0~8%, 주황은 9~29%, 노랑은 30~99%, 초록은 100%다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 무선 청소기 배터리 충전이 안 돼요 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40849",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "무선청소기", "line": "비스포크 제트", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "구간 수치는 안내 페이지 기재 기준이다. 실제 기기에서는 LCD 표시 %를 우선해 확인한다.",
+      "cautionSource": "삼성전자서비스 안내 페이지의 LED 색별 구간 표기"
+    },
+    {
+      "id": "jet-charging-check-order",
+      "claim": "충전이 안 될 때 점검 순서는 다음과 같다. 청정스테이션 전원선과 어댑터 연결, 본체의 거치 상태를 먼저 확인하고, 거치대 안착부와 충전 단자의 먼지·이물을 면봉이나 부드러운 천으로 닦는다. 장기간 쓴 뒤라면 배터리 교체를 검토하고, 그래도 안 되면 엔지니어 점검을 받는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 무선 청소기 배터리 충전이 안 돼요 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40849",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "무선청소기", "line": "비스포크 제트 (청정스테이션 방식)", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "청정스테이션이나 어댑터를 분해하거나 임의로 개조하지 않는다. 전원 관련 점검은 콘센트를 뽑은 상태에서 한다.",
+      "cautionSource": "공통 안전 기준선 — 전기기기 임의 개조 금지 원칙 (공통_as-safety-baseline 참조)"
+    },
+    {
+      "id": "jet-charging-cause-triage",
+      "claim": "비스포크 제트 충전 불량의 원인은 세 가지로 나뉜다. 충전 거치대와 본체가 맞닿지 않는 접촉 불량, 청소기와 배터리가 결합되지 않은 장착 불량, 배터리 또는 어댑터 이상이다. 세 가지를 모두 바르게 맞춰도 충전되지 않으면 엔지니어 점검 대상이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 무선 청소기 배터리 충전이 안 돼요 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40849",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "무선청소기", "line": "비스포크 제트", "years": "현행 판매 모델", "region": "KR" }
+    },
+    {
+      "id": "jet-charging-power-spec",
+      "claim": "비스포크 제트 청정스테이션은 220V 60Hz 전원을 쓴다. 전원이 안 켜지면 전원코드와 어댑터 연결, 거치대 장착 상태를 먼저 본다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 무선 청소기 배터리 충전이 안 돼요 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40849",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "무선청소기", "line": "비스포크 제트 (청정스테이션)", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "220V 전원은 국내 기준이다. 해외에서 쓰는 경우 제품 전원 표기를 따로 확인한다.",
+      "cautionSource": "삼성전자서비스 안내 페이지의 청정스테이션 전원 사양 (KR 기준)"
+    },
+    {
+      "id": "jet-paid-service-non-fault",
+      "claim": "무상 보증기간 안에 있어도 사용법 설명이나 설치처럼 고장이 아닌 경우에는 서비스 요청 시 별도 요금이 부과될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 무선 청소기 배터리 충전이 안 돼요 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40849",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "무선청소기", "line": "전 모델", "years": "보증기간 내", "region": "KR" },
+      "caution": "흡입력 증상은 공식 영상 안내가 분리 점검으로 이물을 먼저 확인하는 순서를 제시하므로, 글에서도 이 순서를 먼저 안내한다.",
+      "cautionSource": "삼성전자서비스 영상 안내의 점검 순서 (흡입력 점검 페이지)"
+    },
+    {
+      "id": "jet-service-reception-channels",
+      "claim": "비스포크 제트 서비스 접수 경로는 삼성전자서비스 출장서비스 예약, 예약 조회와 센터 찾기, AI CS Bot 상담, 대표전화 1588-3366(통화 요금 발신자 부담)이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 무선 청소기 배터리 충전이 안 돼요 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/40849",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "무선청소기", "line": "비스포크 제트", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "전화번호와 접수 메뉴 명칭은 바뀔 수 있으니 글을 쓸 때 삼성전자서비스 공식 사이트에서 한 번 더 확인한다.",
+      "cautionSource": "접수 경로 항목은 공식 페이지 기준. 번호 변경 가능성은 일반 주의"
+    },
+    {
+      "id": "jet-battery-warranty-unverified",
+      "claim": "삼성전자서비스 배터리 교체 안내 페이지에서 확인한 보증기간(1년, 일부 2년)은 비스포크 스팀과 비스포크 AI 스팀 계열 기준이며, 비스포크 제트(무선 스틱)의 배터리 보증기간은 이 페이지에서 확인하지 못했다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 로봇청소기 배터리 교체 및 폐기 방법 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/3413522",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "무선청소기", "line": "비스포크 제트", "years": "전 연식", "region": "KR" },
+      "caution": "제트 배터리 보증기간을 글에 쓰지 않는다. 보증은 구매 모델의 사용설명서나 고객센터에서 확인하도록 안내한다.",
+      "cautionSource": "확인 실패 항목이므로 수치를 쓰지 않는다"
+    },
+    {
+      "id": "jet-battery-replacement-cost-unverified",
+      "claim": "비스포크 제트 배터리 교체 비용은 공식 안내에서 확인하지 못했다. 교체 절차 안내는 로봇청소기 기준으로만 나와 있다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 로봇청소기 배터리 교체 및 폐기 방법 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/3413522",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "무선청소기", "line": "비스포크 제트", "years": "전 연식", "region": "KR" },
+      "caution": "금액을 쓰지 않는다. 교체 비용은 고객센터 견적으로 확인하도록 안내한다.",
+      "cautionSource": "확인 실패 항목이므로 수치를 쓰지 않는다"
+    },
+    {
+      "id": "jet-filter-cycle-unverified",
+      "claim": "비스포크 제트 필터의 세척 주기와 건조 시간은 확인한 공식 안내 영상 페이지에 수치로 나오지 않았다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 흡입력이 약할 때 조치 방법 안내 영상",
+      "source_url": "https://www.samsungsvc.co.kr/video/2359090",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "무선청소기", "line": "비스포크 제트", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "필터 세척 주기나 건조 시간을 숫자로 쓰지 않는다. 다이슨 등 다른 브랜드 수치를 옮기지 않는다.",
+      "cautionSource": "확인 실패 항목이므로 수치를 쓰지 않는다"
+    }
+  ]
+}

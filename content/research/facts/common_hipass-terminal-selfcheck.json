@@ -1,0 +1,209 @@
+{
+  "topic": "하이패스 단말기 인식 불가 시 점검 순서 (카드·전원·장착·열차단 필름·AS 경로)",
+  "brand": "공통",
+  "article": "hipass-terminal-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [],
+  "declined_facts": [],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "hipass-card-parallel-mount",
+      "claim": "하이패스 카드는 카드 삽입구와 가능한 한 평행하게 끝까지 넣어야 한다. 비스듬하게 꽂으면 카드 소켓 불량이나 카드 인식 오류가 생겨 하이패스 차로에서 작동하지 않을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 오너스 매뉴얼 (GN7 2026, 자동요금 징수 시스템 ETCS 항목)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/GN7/2026/ko_KR/id66484df9730.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "현대",
+        "category": "차량 장착 하이패스 단말기",
+        "line": "GN7 2026 사용설명서 기준",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "차종·단말기 모델마다 삽입구 모양이 다르다. 매뉴얼의 방향 안내를 우선한다.",
+      "cautionSource": "현대 오너스 매뉴얼의 차종별 ETCS 항목 안내"
+    },
+    {
+      "id": "hipass-card-face-up",
+      "claim": "하이패스 카드는 앞면이 위로 향하도록 삽입해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 (PUEV 2024, 자동요금 징수 시스템 ETCS 항목)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/PUEV/2024/ko_KR/topics/t00312.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "기아",
+        "category": "차량 장착 하이패스 단말기",
+        "line": "PUEV 2024 사용설명서 기준",
+        "years": "2024",
+        "region": "KR"
+      },
+      "caution": "차종에 따라 카드 방향 표시가 다를 수 있으므로 본인 차량 매뉴얼을 함께 확인한다.",
+      "cautionSource": "기아 오너스 매뉴얼의 차종별 ETCS 항목 안내"
+    },
+    {
+      "id": "hipass-card-foreign-object-ban",
+      "claim": "하이패스 카드 삽입구에는 하이패스 카드 외의 비표준 카드, 이물질, 금속성 물질(SD 메모리, 손상된 카드 등)을 넣으면 안 된다. 카드를 뺄 때는 추출(EJECT) 버튼을 눌러야 하며, 무리하게 당기면 삽입부가 손상될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 (PUEV 2024, 자동요금 징수 시스템 ETCS 항목)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/PUEV/2024/ko_KR/topics/t00312.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "기아",
+        "category": "차량 장착 하이패스 단말기",
+        "line": "PUEV 2024 사용설명서 기준",
+        "years": "2024",
+        "region": "KR"
+      },
+      "caution": "삽입구에 이물질이나 금속을 넣어 소켓이 파손되면 단말기 수리 대상이 된다. 억지로 빼거나 뜯지 말고 추출 버튼을 쓰도록 안내한다.",
+      "cautionSource": "기아 오너스 매뉴얼의 카드 삽입구 금지 사항"
+    },
+    {
+      "id": "hipass-card-nonstandard-ejection",
+      "claim": "한국도로공사 하이패스 카드 표준 규격에 맞지 않는 카드는 추출 시 튀어나올 수 있다. 이 경우는 단말기 고장이 아니라 카드 문제이므로 카드를 교체해 사용한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 (PUEV 2024, 자동요금 징수 시스템 ETCS 항목)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/PUEV/2024/ko_KR/topics/t00312.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "기아",
+        "category": "차량 장착 하이패스 단말기",
+        "line": "PUEV 2024 사용설명서 기준",
+        "years": "2024",
+        "region": "KR"
+      },
+      "caution": "카드 교체 판단은 매뉴얼의 문구에 따른다. 카드사 발급 카드인지, 표준 하이패스 카드인지 확인하는 것이 먼저다.",
+      "cautionSource": "기아 오너스 매뉴얼의 카드 교체 안내"
+    },
+    {
+      "id": "hipass-led-red-meaning",
+      "claim": "하이패스 단말기 LED가 빨간색으로 켜져 있으면 미등록 단말기, 카드 미삽입 또는 오삽입, 사용할 수 없는 카드, 카드 잔액 부족 등 비정상 상태다. 빨간불 상태에서는 영업소를 통과하기 전에 원인을 확인해야 한다. 초록색 5회 깜빡임은 정상 결제, 빨간색 5회 깜빡임은 영업소 통과 중 결제 오작동을 뜻한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 (PUEV 2024, 자동요금 징수 시스템 ETCS 항목)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/PUEV/2024/ko_KR/topics/t00312.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "기아",
+        "category": "차량 장착 하이패스 단말기",
+        "line": "PUEV 2024 사용설명서 기준, LED 표시 체계",
+        "years": "2024",
+        "region": "KR"
+      },
+      "caution": "LED 색과 깜빡임 횟수는 단말기 모델마다 다를 수 있다. 독자에게는 본인 단말기 설명서의 표를 함께 보라고 안내한다.",
+      "cautionSource": "기아 오너스 매뉴얼의 LED 표시 설명"
+    },
+    {
+      "id": "hipass-balance-button",
+      "claim": "하이패스 단말기의 잔액 확인 버튼을 짧게 누르면 카드 잔액을 음성으로 안내하고, 길게 누르면 최근 거래 요금을 음성으로 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 (PUEV 2024, 자동요금 징수 시스템 ETCS 항목)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/PUEV/2024/ko_KR/topics/t00312.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "기아",
+        "category": "차량 장착 하이패스 단말기",
+        "line": "PUEV 2024 사용설명서 기준",
+        "years": "2024",
+        "region": "KR"
+      },
+      "caution": "버튼 동작은 단말기 모델마다 다르다. 전원이 켜진 상태에서만 동작한다.",
+      "cautionSource": "기아 오너스 매뉴얼의 잔액 확인 버튼 설명"
+    },
+    {
+      "id": "hipass-power-switch-on-pass",
+      "claim": "하이패스 차로를 통과할 때는 단말기 전원 스위치를 켠 상태여야 한다. 전원이 꺼진 상태로 통과하면 통행료가 결제되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 오너스 매뉴얼 (GN7 2026, 자동요금 징수 시스템 ETCS 항목)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/GN7/2026/ko_KR/id66484df9730.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "현대",
+        "category": "차량 장착 하이패스 단말기",
+        "line": "GN7 2026 사용설명서 기준",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "전원이 꺼진 채 통과해 미납이 생기면 별도 납부가 필요하다. 출발 전 전원 표시등과 음성 안내를 먼저 확인하라고 안내한다.",
+      "cautionSource": "현대 오너스 매뉴얼의 전원 꺼짐 통과 시 결제 불가 안내"
+    },
+    {
+      "id": "hipass-film-antenna-warning",
+      "claim": "비정품 안테나류, 비정품 통신기기, 필름형 안테나, 행복단말기, 요일제 단말기 등을 장착하면 하이패스 통신에 장애가 생겨 하이패스 차로 통과 시 과금이 되지 않을 수 있다. 차량 내에 별도의 하이패스 단말기를 추가로 설치해도 요금이 결제되지 않을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 오너스 매뉴얼 (GN7 2026, 자동요금 징수 시스템 ETCS 항목)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/GN7/2026/ko_KR/id66484df9730.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "현대",
+        "category": "차량 장착 하이패스 단말기",
+        "line": "GN7 2026 사용설명서 기준, 필름형 안테나 등 비정품 장착물",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "이 경고는 필름형 안테나 등 통신 장치에 대한 것이다. 일반 열차단 필름 전체에 대한 공식 기준은 이 조사에서 확인하지 못했다.",
+      "cautionSource": "현대 오너스 매뉴얼의 비정품 장착물 경고 문구 범위"
+    },
+    {
+      "id": "hipass-window-coating-comm-risk",
+      "claim": "앞 유리창에 금속성 특수 코팅 또는 선팅지를 붙이면 하이패스 통신 장애가 생길 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 오너스 매뉴얼 (GN7 2026, 자동요금 징수 시스템 ETCS 항목)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/GN7/2026/ko_KR/id66484df9730.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "현대",
+        "category": "차량 장착 하이패스 단말기",
+        "line": "앞 유리 금속성 코팅·선팅지",
+        "years": "2026",
+        "region": "KR"
+      },
+      "caution": "열차단 필름 종류별 공식 기준은 확인하지 못했다. 원문은 금속성 코팅과 선팅지만 언급하므로 열차단 필름을 일괄로 같은 범주에 넣지 않는다. 글에서는 필름을 걷어내거나 단말기 위치를 옮겨 보는 순서로 안내한다.",
+      "cautionSource": "현대 오너스 매뉴얼 원문 범위. 열차단 필름 공식 기준 부재는 조사 기록(확인실패)"
+    },
+    {
+      "id": "hipass-warranty-disassembly-excluded",
+      "claim": "하이패스 시스템 부품을 임의로 분리하거나 다시 장착하면서 생긴 하이패스 시스템 고장은 보증수리를 받을 수 없다. 원문은 선팅, 블랙박스 장착을 예시로 든다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 (PUEV 2024, 자동요금 징수 시스템 ETCS 항목)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/PUEV/2024/ko_KR/topics/t00312.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "기아",
+        "category": "차량 장착 하이패스 단말기",
+        "line": "PUEV 2024 사용설명서 기준",
+        "years": "2024",
+        "region": "KR"
+      },
+      "caution": "임의 분해 전에 보증 여부를 먼저 확인하라고 안내한다. 보증 기간과 조건은 차종·제조사마다 다르다.",
+      "cautionSource": "기아 오너스 매뉴얼의 보증수리 제외 문구"
+    },
+    {
+      "id": "hipass-as-service-route",
+      "claim": "자동요금 징수 시스템(ETCS, 하이패스)이 고장 나서 정상 작동하지 않으면 차량 제조사의 직영 서비스센터 또는 서비스협력사에서 점검을 받으라고 매뉴얼이 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 (PUEV 2024, 자동요금 징수 시스템 ETCS 항목)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/PUEV/2024/ko_KR/topics/t00312.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "기아",
+        "category": "차량 장착 하이패스 단말기",
+        "line": "차량 순정 ETCS 기준",
+        "years": "2024",
+        "region": "KR"
+      },
+      "caution": "이 경로는 차량 순정 하이패스 기준이다. 별도 구매한 단말기는 제조사 A/S 창구가 따로 있을 수 있으므로 구매처·영수증을 함께 확인하라고 안내한다.",
+      "cautionSource": "기아 오너스 매뉴얼의 점검 경로 안내 범위"
+    }
+  ]
+}

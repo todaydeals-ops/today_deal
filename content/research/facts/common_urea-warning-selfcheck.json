@@ -1,0 +1,184 @@
+{
+  "topic": "디젤 차량 요소수 경고등 단계별 주행 가능 여부와 보충 요령",
+  "brand": "공통",
+  "article": "urea-warning-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "news-2021-urea-purchase-limit",
+      "reason": "2021년 요소수 대란 당시 한시 긴급수급조정조치(승용 10L 구매 한도, 주유소 판매 한정, 재판매 금지)에 관한 뉴스 자료. 현재 시행 여부를 확인하지 못했고 소비자 보충 요령과 무관하므로 쓰지 않음. tier 확인실패 성격의 과거 자료."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "hyundai-urea-warning-four-stages",
+      "claim": "현대 디젤 차량의 요소수 경고는 4단계로 표시된다. 1차는 요소수 시스템 경고등과 함께 '요소수 레벨 낮음 요소수 주행가능거리 : 000km', 2차는 보충 없이 계속 주행 시 '요소수를 보충하십시오 요소수 주행가능거리 : 000km', 3차는 '000km 주행 후 재시동 불가! 요소수를 보충하십시오', 4차는 '요소수가 떨어져 재시동이 불가합니다'이며 이 단계에서는 시동이 걸리지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 오너스 매뉴얼 — 요소수 시스템 (디젤 엔진, LX2 2024판)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/LX2/2024/ko_KR/id511f93966a5.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "디젤 승용·SUV (LX2 2024판 매뉴얼 기준)", "years": "2024 매뉴얼 기준", "region": "KR" },
+      "caution": "경고 문구의 거리 값은 차량·상태에 따라 다르고, 매뉴얼에도 실제 거리와 다를 수 있다고 적혀 있다. 다른 현대 차종·연식은 매뉴얼 판본을 확인하라고 덧붙일 것.",
+      "cautionSource": "현대 LX2 2024 매뉴얼 원문(표시 거리는 실제와 다를 수 있음)"
+    },
+    {
+      "id": "kia-urea-warning-four-stages",
+      "claim": "기아 디젤 차량의 요소수 경고는 4단계로 표시된다. 1단계는 '요소수가 부족합니다', 2단계는 '요소수를 보충하십시오', 3단계는 '000 km 후 재시동 불가! 요소수를 보충하십시오', 4단계는 '요소수가 고갈되어 재시동이 불가합니다'이며 이 단계에서는 시동이 걸리지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 요소수 시스템 (SCR, HM 2024판)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/HM/2024/ko_KR/topics/t00870.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "디젤 승용·SUV (HM 2024판 매뉴얼 기준)", "years": "2024 매뉴얼 기준", "region": "KR" },
+      "caution": "현대와 문구가 다르다('요소수 레벨 낮음' 대 '요소수가 부족합니다'). 독자가 본인 계기판 문구와 매뉴얼을 대조하도록 안내할 것.",
+      "cautionSource": "기아 HM 2024 매뉴얼 원문 문구 비교"
+    },
+    {
+      "id": "hyundai-urea-first-warning-2400km",
+      "claim": "현대 LX2 2024판 매뉴얼 기준으로 1차 요소수 부족 경고는 잔여 요소수로 주행할 수 있는 거리가 약 2,400km 이하일 때 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 오너스 매뉴얼 — 요소수 시스템 (디젤 엔진, LX2 2024판)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/LX2/2024/ko_KR/id511f93966a5.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "디젤 승용·SUV (LX2 2024판 매뉴얼 기준)", "years": "2024 매뉴얼 기준", "region": "KR" },
+      "caution": "기아 매뉴얼은 같은 1차 경고 기준을 약 1,200km로 적고 있어 브랜드·차종별로 기준이 다르다. 2,400km를 모든 차량에 일반화하지 말 것.",
+      "cautionSource": "기아 HM 2024 SCR 페이지의 1,200km 기준과 대조한 결과"
+    },
+    {
+      "id": "kia-urea-first-warning-1200km",
+      "claim": "기아 HM 2024판 매뉴얼 기준으로 1단계 요소수 부족 경고는 잔여 요소수로 주행할 수 있는 거리가 1,200km 이하일 때 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 요소수 시스템 (SCR, HM 2024판)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/HM/2024/ko_KR/topics/t00870.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "디젤 승용·SUV (HM 2024판 매뉴얼 기준)", "years": "2024 매뉴얼 기준", "region": "KR" },
+      "caution": "현대 LX2 2024판은 같은 경고가 약 2,400km 이하에서 뜬다고 적고 있다. 차종마다 기준이 달라 본인 차량 매뉴얼 확인이 우선이라고 쓸 것.",
+      "cautionSource": "현대 LX2 2024 매뉴얼의 2,400km 기준과 대조한 결과"
+    },
+    {
+      "id": "urea-refill-interval-3000km",
+      "claim": "기아 매뉴얼은 요소수를 약 3,000km 주행마다 보충하라고 안내하지만, 실제 소모량은 주행 습관과 환경에 따라 달라지므로 경고등이 켜지는 시점을 기준으로 보충하라고 권장한다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 요소수 시스템 (SCR, HM 2024판)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/HM/2024/ko_KR/topics/t00870.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "디젤 승용·SUV (HM 2024판 매뉴얼 기준)", "years": "2024 매뉴얼 기준", "region": "KR" },
+      "caution": "3,000km는 기준 안내일 뿐이며 고속·급가속 위주 주행이면 더 빨리 줄 수 있다. 3,000km 전에 경고가 뜨면 경고를 따르라고 쓸 것.",
+      "cautionSource": "기아 HM 2024 매뉴얼의 소모량 설명"
+    },
+    {
+      "id": "urea-refill-restart-wait-on",
+      "claim": "요소수를 보충한 뒤에는 시동 버튼을 ON 상태로 두고 경고 문구가 사라질 때까지 기다린 다음 재시동해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 요소수 시스템 (SCR, HM 2024판)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/HM/2024/ko_KR/topics/t00870.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "디젤 승용·SUV (HM 2024판 매뉴얼 기준)", "years": "2024 매뉴얼 기준", "region": "KR" },
+      "caution": "현대 LX2 2024 매뉴얼에도 같은 절차가 있다. 차량 매뉴얼의 시동 절차를 따르라고 덧붙일 것.",
+      "cautionSource": "기아 HM 2024 매뉴얼 원문. 현대 LX2 2024 매뉴얼에도 동일 취지"
+    },
+    {
+      "id": "hyundai-urea-restart-blocked-service-contact",
+      "claim": "현대 매뉴얼 기준으로 충분히 보충한 뒤에도 재시동 제한이 풀리지 않으면 직영 하이테크센터 또는 블루핸즈에 문의해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 오너스 매뉴얼 — 요소수 시스템 (디젤 엔진, LX2 2024판)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/LX2/2024/ko_KR/id511f93966a5.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "디젤 승용·SUV (LX2 2024판 매뉴얼 기준)", "years": "2024 매뉴얼 기준", "region": "KR" },
+      "caution": "매뉴얼의 연락처 안내를 따를 것. 긴급 상황이면 긴급출동 서비스를 함께 안내할 것.",
+      "cautionSource": "현대 LX2 2024 매뉴얼 원문"
+    },
+    {
+      "id": "kia-urea-restart-blocked-emergency-service",
+      "claim": "기아 매뉴얼 기준으로 충분히 보충하고 ON 상태로 기다린 뒤에도 시동이 걸리지 않으면 긴급출동지원센터에 연락해 응급조치를 받아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 요소수 시스템 (SCR, HM 2024판)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/HM/2024/ko_KR/topics/t00870.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "디젤 승용·SUV (HM 2024판 매뉴얼 기준)", "years": "2024 매뉴얼 기준", "region": "KR" },
+      "caution": "긴급출동 연락처는 차량 책자 뒷부분 안내를 따른다.",
+      "cautionSource": "기아 HM 2024 매뉴얼 원문"
+    },
+    {
+      "id": "urea-no-fuel-tank-no-additive",
+      "claim": "요소수는 연료 첨가제가 아니므로 연료 주입구나 연료 탱크에 넣으면 안 되고, 디젤유·가솔린·알코올 등 권장되지 않은 액체와 물·첨가제도 섞으면 안 된다. 희석된 요소수는 동결점을 높인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 요소수 시스템 (SCR, HM 2024판)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/HM/2024/ko_KR/topics/t00870.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "디젤 승용·SUV (HM 2024판 매뉴얼 기준)", "years": "2024 매뉴얼 기준", "region": "KR" },
+      "caution": "연료 주입구에 잘못 넣으면 차량에 치명적 고장이 생길 수 있다. 실수로 넣었다면 매뉴얼의 '자사 직영 서비스센터 또는 서비스 협력사 문의' 안내대로 연락하라고 쓸 것. 이 항목은 안전 관련이므로 상담가 톤이어도 경고를 흐리지 말 것.",
+      "cautionSource": "현대 LX2 2024 매뉴얼의 '연료 주입구 주입 금지 · 치명적 고장' 경고와 같은 취지"
+    },
+    {
+      "id": "urea-spec-iso22241-din70070",
+      "claim": "차량용 요소수는 ISO 22241 또는 DIN 70070 규격을 만족하는 요소수(우레아 용액)만 써야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 오너스 매뉴얼 — 요소수 시스템 (디젤 엔진, LX2 2024판) 및 기아 오너스 매뉴얼 (SCR, HM 2024판)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/LX2/2024/ko_KR/id511f93966a5.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "자동차", "line": "디젤 승용·SUV 요소수 시스템 (현대 LX2 2024판, 기아 HM 2024판 기준)", "years": "2024 매뉴얼 기준", "region": "KR" },
+      "caution": "구매 시 제품 라벨이나 포장에서 규격 표기를 확인하라고 쓸 것. 규격 번호와 시험 기준을 독자 판단 근거로 제시할 때는 국가표준 기관 자료로 따로 확인해야 한다.",
+      "cautionSource": "현대 LX2 2024 매뉴얼 원문(요소수 규격 항목)"
+    },
+    {
+      "id": "urea-storage-temperature-freeze",
+      "claim": "요소수는 장시간 50℃ 이상으로 가열되면 분해되어 암모니아 증기가 생길 수 있고, -11℃ 이하에 장시간 노출되면 얼어 수위를 정확히 측정할 수 없게 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 오너스 매뉴얼 — 요소수 시스템 (디젤 엔진, LX2 2024판)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/LX2/2024/ko_KR/id511f93966a5.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "디젤 승용·SUV (LX2 2024판 매뉴얼 기준)", "years": "2024 매뉴얼 기준", "region": "KR" },
+      "caution": "직사광선을 피하고 주입 시 환기가 잘되는 곳에서 하라고 덧붙일 것. 고온에서 캡을 열면 암모니아 증기를 흡입하지 말 것.",
+      "cautionSource": "현대 LX2 2024 매뉴얼 원문(50℃, -11℃)"
+    },
+    {
+      "id": "urea-overfill-winter-expansion",
+      "claim": "요소수 탱크가 이미 가득 찬 상태에서 병에 남은 요소수를 추가로 주입하면 안 된다. 겨울철 동결로 팽창해 탱크와 시스템이 손상될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 요소수 시스템 (SCR, HM 2024판)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/HM/2024/ko_KR/topics/t00870.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "디젤 승용·SUV (HM 2024판 매뉴얼 기준)", "years": "2024 매뉴얼 기준", "region": "KR" },
+      "caution": "주입은 점검 창 MAX 선 또는 주입건이 멈추는 지점까지만 하라고 쓸 것(현대 LX2 2024 매뉴얼의 정격 용량선 안내와 같은 취지).",
+      "cautionSource": "기아 HM 2024 매뉴얼 원문"
+    },
+    {
+      "id": "urea-shutdown-2min-pump",
+      "claim": "시동을 끈 뒤에도 요소수 시스템은 약 2분간 내부 요소수를 비우는 동작을 계속하므로, 이 동작이 끝난 뒤에 점검해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 요소수 시스템 (SCR, HM 2024판)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/HM/2024/ko_KR/topics/t00870.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "디젤 승용·SUV (HM 2024판 매뉴얼 기준)", "years": "2024 매뉴얼 기준", "region": "KR" },
+      "caution": "시동을 끈 뒤 약 2분이 지나고 점검하라고 쓸 것.",
+      "cautionSource": "기아 HM 2024 매뉴얼 원문"
+    },
+    {
+      "id": "urea-system-fault-warning-service",
+      "claim": "전장품 이상이나 비정상 요소수 감지로 고장 경고가 뜨면 자사 직영 서비스센터나 서비스협력사에서 점검받아야 하며, 수리 없이 계속 운행하면 차량에 악영향을 줄 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 요소수 시스템 (SCR, HM 2024판)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/HM/2024/ko_KR/topics/t00870.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "디젤 승용·SUV (HM 2024판 매뉴얼 기준)", "years": "2024 매뉴얼 기준", "region": "KR" },
+      "caution": "보충만으로 해결되지 않는 고장 경고는 보충 후에도 계속 뜨면 점검이 필요하다는 점을 쓸 것.",
+      "cautionSource": "기아 HM 2024 매뉴얼 원문"
+    }
+  ]
+}

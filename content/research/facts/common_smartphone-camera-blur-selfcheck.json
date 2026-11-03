@@ -1,0 +1,275 @@
+{
+  "topic": "스마트폰 사진이 자꾸 흐리게 찍힐 때 자가 점검 (렌즈 오염·보호필름/케이스·근접 초점·결로·하드웨어 판별·AS)",
+  "brand": "공통",
+  "article": "smartphone-camera-blur-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "samsung-members-call-speaker-diagnostics"
+  ],
+  "declined_facts": [
+    {
+      "id": "camera-lens-cleaning-method",
+      "why": "기존 팩트는 물·알코올 사용 금지라고 적었으나, 이번에 확인한 Apple 공식 원문(support.apple.com/en-us/101967)은 '약간 젖은(slightly damp) 보풀 없는 천'을 권한다. 기존 팩트 출처 원문을 재확인하기 전까지 재사용하지 않는다. disputes에 신고함."
+    },
+    {
+      "id": "camera-lens-fog-condensation",
+      "why": "애플 전용 팩트다. 이번 주제는 갤럭시 공식 원문에서도 같은 결로 안내를 확인해 samsung 쪽 새 팩트(samsung-condensation-foggy)로 따로 정리했다. 중복 적재를 피함."
+    },
+    {
+      "id": "faceid-disabled-message-hardware",
+      "why": "Face ID 메시지 판별 팩트이며, 후면 카메라 흐림과 직접 관련이 없다."
+    }
+  ],
+  "disputes": [
+    {
+      "targetId": "camera-lens-cleaning-method",
+      "problem": "기존 팩트(출처 support.apple.com/en-us/102514 인용)는 '물이나 알코올 사용 금지'라고 했다. 이번에 열어본 Apple 공식 문서 support.apple.com/en-us/101967 는 'soft, slightly damp, lint-free cloth'(약간 젖은 천)을 권하고, 압축공기·표백제·과산화수소 제품만 금지한다. 두 문서가 어긋나므로 102514 원문을 재확인해 판정 필요.",
+      "evidence": "https://support.apple.com/en-us/101967 (2026-11-03 확인, Lens Cleaning 항목)"
+    }
+  ],
+  "facts": [
+    {
+      "id": "camera-blur-clean-lens-first-apple",
+      "claim": "아이폰 카메라 사진이 흐리면 가장 먼저 전후면 카메라 렌즈를 부드럽고 약간 젖은, 보풀 없는 천(렌즈 클로스 등)으로 닦아야 한다. 청소 전에는 기기 전원을 끄고 케이블을 분리한다. 압축공기, 표백제·과산화수소 제품은 쓰지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — If the camera or flash on your iPhone, iPad, or iPod touch isn't working (Blurry or Out-of-Focus Photos · Lens Cleaning)",
+      "source_url": "https://support.apple.com/en-us/101967",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "천에 물기를 많이 묻히지 말 것. 기기 개구부(스피커·포트 등)로 습기가 들어가지 않게 한다. 렌즈 코팅 손상을 막기 위해 거친 천이나 연마제는 쓰지 않는다.",
+      "cautionSource": "Apple 공식 문서의 'Keep moisture out of openings' 및 '무수 천 권장' 안내"
+    },
+    {
+      "id": "camera-blur-clean-lens-samsung",
+      "claim": "갤럭시 카메라가 흐리거나 빛이 번질 때 첫 번째 조치는 카메라 렌즈에 묻은 지문·먼지·이물질을 깨끗이 닦는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 사진·동영상 화질 문제 및 원인(흐림·빛 번짐 항목)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/4787710",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "보호 필름이나 케이스가 렌즈 가장자리를 가리고 있으면 닦은 뒤에도 흐림이 남는다. 다음 팩트의 점검을 함께 할 것."
+    },
+    {
+      "id": "camera-blur-protector-cover-focus-samsung",
+      "claim": "갤럭시 카메라 렌즈에 비정품 보호 필름(유리)이나 렌즈 커버를 붙여 쓰면 초점이 안 맞거나 빛이 왜곡될 수 있다. 이 경우 해당 액세서리를 떼고 다시 촬영해 확인한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 사진·동영상 화질 문제 및 원인(흐림·초점 불량 항목)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/4787710",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "정품 삼성 액세서리 또는 삼성 인증 제품을 쓸 것. 필름을 떼고 나서 사진이 선명해지면 원인이 필름이다.",
+      "cautionSource": "삼성 공식 안내 원문 '비정품 카메라 보호 필름(유리)이나 렌즈 커버를 부착해 사용하는 경우…'"
+    },
+    {
+      "id": "camera-blur-accessory-remove-test-apple",
+      "claim": "아이폰 사진이 흐리면 카메라나 플래시를 가리는 케이스·필름·액세서리를 모두 떼고 테스트해야 한다. 카메라 가까이 붙은 자석 액세서리도 카메라 간섭을 일으킬 수 있어 함께 뗀다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — If the camera or flash on your iPhone, iPad, or iPod touch isn't working (Case, Film, or Accessory Obstruction)",
+      "source_url": "https://support.apple.com/en-us/101967",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "케이스나 필름을 떼고 테스트한 뒤 다시 씌울 때는 카메라 구멍 위를 가리지 않도록 맞춘다."
+    },
+    {
+      "id": "camera-blur-focus-enhancer-close-samsung",
+      "claim": "갤럭시에서 가까운 피사체 주변만 흐릿하게 찍히면 카메라 앱 미리보기의 꽃 모양 아이콘으로 Focus enhancer를 켠다. 이 기능은 초광각 카메라를 함께 써서 피사체 주변의 흐림을 줄인다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 고객지원 — How to fix blurry or poor photo and video quality on your Samsung Galaxy device",
+      "source_url": "https://www.samsung.com/sg/support/mobile-devices/fix-samsung-galaxy-blurry-poor-photo-and-video-quality/",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "Focus enhancer 지원 갤럭시 기종",
+        "years": "지원 기종 한정(연식 확인 필요)",
+        "region": "글로벌"
+      },
+      "caution": "꽃 아이콘이 없는 기종이나 구형 기종에서는 이 기능이 없을 수 있다. 메뉴 위치는 One UI 버전에 따라 다르다.",
+      "cautionSource": "삼성 고객지원 원문의 기능 설명(꽃 아이콘, 초광각 사용)"
+    },
+    {
+      "id": "camera-blur-ultra-min-distance-samsung",
+      "claim": "갤럭시 S25 Ultra와 S26 Ultra에서 고배율 줌으로 가까이 찍으면 흐려질 수 있다. 고배율은 망원 카메라로 전환되는데, 이 카메라는 먼 피사체용이라 최소 촬영 거리가 있다. S25 Ultra 5배 망원은 약 30cm, S26 Ultra 5배 망원은 약 80cm부터 선명하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 고객지원 — How to fix blurry or poor photo and video quality on your Samsung Galaxy device (Blur at close range with high zoom)",
+      "source_url": "https://www.samsung.com/sg/support/mobile-devices/fix-samsung-galaxy-blurry-poor-photo-and-video-quality/",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 Ultra 시리즈 (S25 Ultra · S26 Ultra)",
+        "years": "2025~",
+        "region": "글로벌"
+      },
+      "caution": "거리 수치는 해당 모델의 5배 망원 기준이다. 다른 Ultra 세대나 일반 모델에는 그대로 적용하지 말 것.",
+      "cautionSource": "삼성 고객지원 원문의 모델별 최소 촬영 거리(S25 Ultra 30cm, S26 Ultra 80cm)"
+    },
+    {
+      "id": "camera-blur-200mp-normal-samsung",
+      "claim": "갤럭시 Ultra의 200MP 고해상도 촬영에서 사진 일부가 흐리게 보이는 것은 광학 특성상 정상 현상일 수 있으며, 이 경우 고칠 수 있는 설정은 없다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 고객지원 — How to fix blurry or poor photo and video quality on your Samsung Galaxy device (Blur in 200 MP mode)",
+      "source_url": "https://www.samsung.com/sg/support/mobile-devices/fix-samsung-galaxy-blurry-poor-photo-and-video-quality/",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 Ultra 200MP 모드",
+        "years": "2025~",
+        "region": "글로벌"
+      },
+      "caution": "전체가 흐리면 정상이 아니다. 일부만 흐린 것인지 먼저 확인하고, 일반 모드로 같은 장면을 찍어 비교할 것."
+    },
+    {
+      "id": "camera-blur-condensation-samsung",
+      "claim": "갤럭시 카메라 렌즈가 뿌옇게 보이는 것은 기기 내외부 온도 차로 렌즈 안에 결로가 생긴 것일 수 있다. 자연 건조시키면 대부분 사라지며 기기 기능에는 문제가 없다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 사진·동영상 화질 문제 및 원인(뿌옇게 보임 항목)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/4787710",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "드라이어 등으로 열을 가해 말리는 방법은 쓰지 말고 자연 건조시킨다. 삼성 원문에는 이 주의 문장이 없어 일반 관리 원칙으로만 적는다."
+    },
+    {
+      "id": "camera-blur-glare-dirty-lens-samsung",
+      "claim": "갤럭시에서 빛 번짐(광원 주변의 줄무늬·글레어)은 강한 광원, 렌즈 오염, 고배율 줌이 원인이 될 수 있다. 렌즈를 닦고 촬영 각도를 바꾸거나 강한 빛을 피하면 줄어든다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 사진·동영상 화질 문제 및 원인(빛 번짐 항목)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/4787710",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "빛 번짐을 갤러리 편집 기능으로 지우는 방법도 공식 안내에 있으나, 원본 사진은 그대로 두고 복사본으로 작업할 것."
+    },
+    {
+      "id": "camera-blur-indoor-flicker-samsung",
+      "claim": "갤럭시 실내 조명 아래에서 가로 검은 줄이나 깜빡임이 보이면 조명 주파수 때문인 플리커일 수 있다. Pro 모드에서 셔터 속도를 1/120초 이하로 낮추면 줄어든다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 고객지원 — How to fix blurry or poor photo and video quality on your Samsung Galaxy device (Flicker or black lines)",
+      "source_url": "https://www.samsung.com/sg/support/mobile-devices/fix-samsung-galaxy-blurry-poor-photo-and-video-quality/",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "Pro 모드 지원 갤럭시 기종",
+        "years": "지원 기종 한정",
+        "region": "글로벌"
+      },
+      "caution": "플리커는 흐림과 다른 증상이다. 이 팩트는 '흐림'이 아니라 '줄·깜빡임' 증상일 때만 쓸 것."
+    },
+    {
+      "id": "camera-blur-samsung-kr-service-consult",
+      "claim": "갤럭시 카메라 화질 문제가 위 점검으로 해결되지 않으면 삼성전자서비스 전문상담사에게 상담하는 것이 공식 안내다. 상담 예약 링크는 해당 안내 페이지에 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 갤럭시 사진·동영상 화질 문제 및 원인(상담 안내)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/4787710",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "상담 예약 링크·운영 시간은 시기에 따라 바뀔 수 있으므로 상담 전 페이지에서 다시 확인할 것."
+    },
+    {
+      "id": "camera-blur-samsung-hardware-judgement-unverified",
+      "claim": "갤럭시 카메라 하드웨어 불량(예: 특정 렌즈만 계속 흐림)을 자가로 판별하는 공식 기준은 이번 조사에서 확인하지 못했다. 삼성 공식 안내는 점검 후에도 해결되지 않으면 전문상담을 권하는 데서 멈춘다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "삼성 고객지원 및 삼성전자서비스 안내 (조사 범위: 흐림 항목 전체, 하드웨어 판별 기준 항목 미발견)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/4787710",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "삼성",
+        "category": "스마트폰",
+        "line": "갤럭시 전 시리즈",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "'하드웨어 불량'이라고 단정하는 문장을 쓰지 말 것. 대신 '점검 후에도 특정 렌즈만 계속 흐리면 전문상담을 받는다'로 쓴다. 독자가 다음 단계를 알 수 있게 상담 경로를 함께 준다."
+    },
+    {
+      "id": "camera-blur-apple-physical-damage-service",
+      "claim": "아이폰 카메라가 낙하 등 물리 손상을 입었거나 청소·점검 후에도 흐리면 카메라 수리가 필요할 수 있다. 수리 경로는 Apple 공식 수리 페이지(support.apple.com/repair)에서 확인한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — If the camera or flash on your iPhone, iPad, or iPod touch isn't working (When to Contact Apple or Get Service)",
+      "source_url": "https://support.apple.com/en-us/101967",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "수리 전 기기 외관·화면 파손 여부를 먼저 확인할 것. 낙하 흔적이 있으면 수리 접수 때 그대로 알린다. 수리 비용은 공식 문서에 적혀 있지 않으므로 금액을 미리 단정하지 말 것."
+    },
+    {
+      "id": "camera-blur-apple-part-replace-not-guaranteed",
+      "claim": "아이폰 카메라 부품을 교체해도 문제가 해결되지 않을 수 있다는 것이 Apple 공식 점검 안내에 명시돼 있다. 후면 카메라 흐림은 기기 종류에 따라 카메라 단품 교체 또는 외장(enclosure) 교체 순서로 진행된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — If the camera or flash on your iPhone, iPad, or iPod touch isn't working (Replace parts 항목)",
+      "source_url": "https://support.apple.com/en-us/101967",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "애플",
+        "category": "스마트폰",
+        "line": "iPhone 전 기종 (외장 교체 대상은 일부 모델)",
+        "years": "전 연식",
+        "region": "글로벌"
+      },
+      "caution": "직접 분해해 카메라 부품을 바꾸는 것은 권하지 않는다. 방수·정품 인증 문제가 생길 수 있어 공식 수리 경로를 쓴다.",
+      "cautionSource": "Apple 공식 문서의 'Replacing a part may not resolve' 문장 및 Apple 수리 경로 안내"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "topic": "아이폰 저장공간 가득 참 — 용량 줄이는 순서 (확인·앱·사진·메시지·iCloud, 백업 먼저 원칙)",
+  "brand": "애플",
+  "article": "iphone-storage-full-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    {
+      "id": "factory-reset-data-loss",
+      "from": "공통_as-safety-baseline.json",
+      "note": "공장 초기화는 데이터를 전부 지우므로 용량 확보 수단으로 쓰지 말 것. 약한 초기화부터 제시하는 원칙을 그대로 따른다."
+    }
+  ],
+  "declined_facts": [
+    {
+      "id": "iphone-recovery-mode-data",
+      "from": "apple_device-recovery.json",
+      "reason": "저장공간 부족과 직접 관계없는 복구 모드 절차. 이 글에서 복구 모드를 권하지 않으므로 인용하지 않는다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "iphone-storage-check-path",
+      "claim": "저장공간 확인 경로는 설정 > 일반 > [기기명] 저장공간이다. 여기서 추천 항목과 앱별 사용량을 볼 수 있고, 앱을 누르면 세부 정보가 나온다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — iPhone 및 iPad의 저장 공간을 확인하는 방법",
+      "source_url": "https://support.apple.com/en-us/108429",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iPhone 전 기종", "years": "전 연식", "region": "글로벌" },
+      "caution": "Apple 문서는 캐시 데이터와 임시 데이터가 사용량에 포함되지 않을 수 있다고 명시한다. 앱별 숫자를 그대로 용량 전부로 해석하지 말 것.",
+      "cautionSource": "Apple 지원 원문의 'Cached data and temporary data might not count as usage' 문구"
+    },
+    {
+      "id": "iphone-storage-categories",
+      "claim": "저장공간 화면의 기기 내 카테고리는 앱, 사진, 미디어, 메일, Apple Books, 메시지, iCloud Drive, 기타, 시스템으로 나뉜다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — iPhone 및 iPad의 저장 공간을 확인하는 방법",
+      "source_url": "https://support.apple.com/en-us/108429",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iPhone 전 기종", "years": "전 연식", "region": "글로벌" },
+      "caution": "시스템 용량은 기종마다 다르다고 Apple이 명시한다. 시스템 항목이 큰 기기를 두고 특정 앱 탓으로 단정하지 말 것.",
+      "cautionSource": "Apple 원문의 'System: Space used by the operating system, which varies by model'"
+    },
+    {
+      "id": "iphone-offload-vs-delete",
+      "claim": "앱 오프로드는 앱만 제거하고 문서와 데이터는 유지한다. 앱 삭제는 앱과 관련 데이터를 함께 지우며, 일부 문서는 따로 지워야 할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — iPhone 및 iPad의 저장 공간을 확인하는 방법",
+      "source_url": "https://support.apple.com/en-us/108429",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iPhone 전 기종", "years": "전 연식", "region": "글로벌" },
+      "caution": "용량을 가장 많이 확보하려고 앱을 삭제부터 하면 앱 안의 데이터가 같이 지워질 수 있다. 오프로드를 먼저 쓰고, 삭제는 데이터 백업 후에만 권한다.",
+      "cautionSource": "Apple 원문의 오프로드·삭제 정의 차이"
+    },
+    {
+      "id": "iphone-storage-recommendations",
+      "claim": "저장공간 화면의 추천 항목은 Show All에서 전체를 보고, 항목을 누르면 무엇을 지울 수 있는지 검토한 뒤 Enable로 켤 수 있다. 예시로 '사용하지 않는 앱 오프로드'가 나온다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — iPhone 및 iPad의 저장 공간을 확인하는 방법",
+      "source_url": "https://support.apple.com/en-us/108429",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iPhone 전 기종", "years": "전 연식", "region": "글로벌" },
+      "caution": "추천 항목 중 삭제를 수반하는 것은 설명을 읽고 실행해야 한다. 추천을 일괄 수락하는 방식으로 안내하지 말 것.",
+      "cautionSource": "Apple 원문의 'Read each description, then tap Enable' 안내"
+    },
+    {
+      "id": "iphone-photos-optimize-storage",
+      "claim": "iCloud 사진을 쓰면 '저장 공간 최적화'가 기본으로 켜져 있어, 원본은 iCloud에 두고 기기에는 용량을 줄인 사본만 남는다. 설정 > [이름] > iCloud > 사진에서 확인한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — 사진 및 비디오 저장 공간 관리하기",
+      "source_url": "https://support.apple.com/en-us/105061",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iCloud 사진 사용 기기", "years": "전 연식", "region": "글로벌" },
+      "caution": "메뉴 이름과 위치는 iOS 버전별로 다르다. 원문은 iOS 27 이상에서 'iPhone Storage'를 누르라고 안내하므로 화면이 다르면 해당 iOS 문서를 따르게 할 것. 전체 원본을 보려면 iCloud 용량이 충분해야 한다.",
+      "cautionSource": "Apple 원문의 iOS 27 이상 메뉴 안내와 'enough space in iCloud' 문구"
+    },
+    {
+      "id": "iphone-photo-delete-syncs-all-devices",
+      "claim": "iCloud 사진을 쓰는 상태에서 한 기기에서 사진·비디오를 지우면 같은 Apple 계정의 iCloud 사진을 쓰는 모든 기기에서 지워진다. 삭제한 항목은 최근 삭제 앨범에서 30일간만 복구할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — iCloud 사진 설정 및 사용하기",
+      "source_url": "https://support.apple.com/en-us/108782",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iCloud 사진 사용 기기", "years": "전 연식", "region": "글로벌" },
+      "caution": "사진을 용량 확보용으로 지우기 전에 백업을 먼저 한다. 다른 기기에 남은 사본이 있다고 믿고 지우면 복구 기간 30일이 지나 되돌릴 수 없게 된다.",
+      "cautionSource": "Apple 원문의 'deleted everywhere' 및 '30 days' 문구"
+    },
+    {
+      "id": "iphone-icloud-full-behavior",
+      "claim": "iCloud 저장공간이 가득 찼거나 거의 찼을 때 Apple은 알림을 보내며, 저장공간을 관리하거나 더 구매할 때까지 일부 iCloud 기능이 최신 상태로 유지되지 않을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — iPhone 기기 저장 공간과 iCloud 저장 공간의 차이",
+      "source_url": "https://support.apple.com/en-us/102670",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iCloud 사용 기기", "years": "전 연식", "region": "글로벌" },
+      "caution": "기기 저장공간 부족과 iCloud 저장공간 부족은 다른 문제다. 설정에서 어느 쪽이 찼는지 먼저 구분하게 할 것.",
+      "cautionSource": "Apple 원문이 기기 저장공간과 iCloud 저장공간을 별개로 정의"
+    },
+    {
+      "id": "iphone-recently-deleted-quota-unknown",
+      "claim": "iCloud 저장공간이 가득 찼을 때 최근 삭제 항목이 여전히 용량을 차지하는지는 Apple 공식 문서에서 확인하지 못했다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "Apple 지원 — iCloud 사진 설정 및 사용하기 (부재 확인)",
+      "source_url": "https://support.apple.com/en-us/108782",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iCloud 사진 사용 기기", "years": "전 연식", "region": "글로벌" },
+      "caution": "이 항목을 근거로 '지우면 바로 용량이 돈다'고 단정하지 말 것. 확인 전까지는 최근 삭제 비우기를 용량 확보 효과로 보장하지 않는다.",
+      "cautionSource": "Apple 문서 두 편(108782·102670)에서 해당 내용이 없음을 확인"
+    },
+    {
+      "id": "iphone-messages-keep-setting",
+      "claim": "메시지 보관 기간은 설정 > 메시지 > 메시지 기록(Keep Messages)에서 30일·1년·영구 중 고를 수 있다. 짧은 기간을 고르면 확인 창이 뜨고 그 기간보다 오래된 메시지가 지워진다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Apple 커뮤니티 사용자 답변 (zinacef, Apple 직원 아님)",
+      "source_url": "https://discussions.apple.com/thread/256095664",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iOS 메시지 앱", "years": "최신 iOS 중심 (메뉴명 변동 가능)", "region": "글로벌" },
+      "caution": "메시지 보관 설정은 Apple 공식 지원 문서에서 확인하지 못했다. 설정 위치는 iOS 버전에 따라 다를 수 있으니 실제 화면에서 확인하도록 안내할 것. 지우기 전에 중요한 대화는 백업한다.",
+      "cautionSource": "커뮤니티 답변 및 검색 요약 3건이 공통으로 같은 경로를 말하나 Apple 공식 문서 확인은 실패"
+    },
+    {
+      "id": "iphone-messages-delete-spans-icloud",
+      "claim": "메시지를 iCloud 메시지로 쓰는 경우 보관 기간을 줄이면 연결된 모든 기기에서 오래된 메시지가 함께 지워질 수 있다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Apple 커뮤니티 사용자 답변 (zinacef, Apple 직원 아님)",
+      "source_url": "https://discussions.apple.com/thread/256095664",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "스마트폰", "line": "iCloud 메시지 사용 기기", "years": "최신 iOS 중심", "region": "글로벌" },
+      "caution": "기기 하나에서 보관 기간을 줄이기 전에 다른 기기의 메시지 설정도 같이 확인하도록 안내한다. 공식 확인 전이므로 '반드시 전 기기 삭제'로 단정하지 말 것.",
+      "cautionSource": "커뮤니티 답변의 경고 문구. 공식 문서 확인은 실패"
+    }
+  ]
+}

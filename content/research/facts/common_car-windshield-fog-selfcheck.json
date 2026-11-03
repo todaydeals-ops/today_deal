@@ -1,0 +1,193 @@
+{
+  "topic": "겨울 차 앞유리 김서림 빨리 없애는 순서 (에어컨·외기·디프로스터·김서림 방지 기능·안전 운전)",
+  "brand": "공통",
+  "article": "car-windshield-fog-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "pre-departure-checklist-2026",
+    "washer-fluid-winter-rating-check"
+  ],
+  "declined_facts": [
+    { "id": "aircon-heating-samsung-warranty-period", "why": "가정용 시스템에어컨의 품질보증기간 기준이라 자동차 에어컨에는 적용되지 않는다" },
+    { "id": "aircon-heating-defrost-normal-lg", "why": "LG 가정용 에어컨 실외기 제상 안내라 차량 앞유리 김서림과 무관하다" }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "hyundai-defog-stage-escalation",
+      "claim": "현대 오토 디포그는 습기가 감지되면 단계적으로 작동한다. 1단계는 에어컨을 켜고 외기 유입으로 바꾸는 것(외부 온도가 낮을 때)이고, 1단계로 습도가 조절되지 않으면 2단계 앞유리 송풍, 3단계 송풍량 증가로 넘어간다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 온라인 오너스 매뉴얼 — 오토 디포그(자동 김서림 제거 기능)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/GN7/2026/ko_KR/id25006c63ca8.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "GN7 매뉴얼 기준 오토 디포그 기능이 있는 차량", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "기능 유무와 세부 작동은 차종마다 다르다. 자동 김서림 제거 기능이 없는 차량에는 이 단계 구조를 그대로 적용하지 않는다."
+    },
+    {
+      "id": "hyundai-defog-setting-button-3s",
+      "claim": "현대 오토 디포그 설정은 시동을 켠 상태에서 앞유리 서리 제거 버튼을 3초간 누르고, 표시등이 6회 깜빡인 뒤 꺼지면 완료된다. 해제는 같은 버튼을 3초간 눌러 표시등이 3회 깜빡인 뒤 켜지면 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 온라인 오너스 매뉴얼 — 오토 디포그(자동 김서림 제거 기능)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/GN7/2026/ko_KR/id25006c63ca8.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "히터·에어컨 스위치 방식 차량(GN7 매뉴얼 기준)", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "버튼 위치와 깜빡임 횟수는 차종마다 다를 수 있다. 인포테인먼트 방식(설정 > 차량 > 공조 > 창문 습기 방지)도 있으니 본인 차량 매뉴얼로 확인하라고 안내한다.",
+      "cautionSource": "같은 매뉴얼 페이지의 인포테인먼트 설정 경로 안내 및 차종별 조작 차이"
+    },
+    {
+      "id": "hyundai-defog-stops-on-mode-buttons",
+      "claim": "현대 오토 디포그가 작동하는 중에 내기/외기 버튼, 에어컨 버튼, 바람 방향 버튼 중 하나를 누르면 기능이 중지된다. 매뉴얼은 안전한 시야 확보를 위해 작동 중에는 이 버튼들을 조작하지 않는 것이 좋다고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 온라인 오너스 매뉴얼 — 오토 디포그(자동 김서림 제거 기능)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/GN7/2026/ko_KR/id25006c63ca8.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "오토 디포그 기능이 있는 차량", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "글 작성자 권고(매뉴얼 문구 아님): 운전 중 김서림이 심하면 공조 버튼을 여러 번 바꾸며 시선을 빼앗기지 말고, 안전한 곳에 세운 뒤 조작하는 것을 우선한다."
+    },
+    {
+      "id": "hyundai-defog-sensor-cover-do-not-remove",
+      "claim": "현대 매뉴얼은 앞유리 상단의 센서 커버를 강제로 떼지 말라고 안내한다. 관련 부품이 손상될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 온라인 오너스 매뉴얼 — 오토 디포그(자동 김서림 제거 기능)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/GN7/2026/ko_KR/id25006c63ca8.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "오토 디포그 습기 센서가 있는 차량", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "센서 커버를 떼어내 김서림을 해결하려는 방법은 쓰지 않는다. 기능이 반응하지 않으면 정비소 점검을 권한다."
+    },
+    {
+      "id": "hyundai-defog-button-auto-ac-outside-air",
+      "claim": "현대 차량에서 김서림 방지 기능이 설정돼 있으면 앞유리 서리 제거 버튼을 누를 때 에어컨과 외기 유입이 자동으로 켜진다. 불필요하면 에어컨 버튼이나 내기/외기 버튼으로 각각 끌 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 온라인 오너스 매뉴얼 — 유리창 습기 제거법",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/US4/2026/ko_KR/idc0853a3fd8c.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "김서림 방지 기능 설정 차량(US4 매뉴얼 기준)", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "김서림 방지 기능이 설정되지 않은 차량에서는 버튼 한 번으로 에어컨·외기가 켜지지 않는다. 버튼을 누른 뒤 에어컨 표시등과 외기 표시등을 직접 확인하라고 안내한다."
+    },
+    {
+      "id": "hyundai-defog-outer-film-upper-vent-wiper",
+      "claim": "습도가 높은 날 서리 제거 모드와 에어컨을 켠 채 오래 달리면 외부와의 온도 차로 앞유리 바깥 면에 습기가 생길 수 있다. 이때는 바람 방향을 상단 위치로 바꾸고 와이퍼로 바깥 습기를 닦아내라고 현대 매뉴얼이 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 온라인 오너스 매뉴얼 — 유리창 습기 제거법",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/US4/2026/ko_KR/idc0853a3fd8c.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "서리 제거 모드 사용 차량 공통", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "안쪽 김서림과 바깥 면 습기는 원인이 다르다. 안쪽이 맑아졌는데도 바깥에 막이 남으면 이 방법을 쓴다."
+    },
+    {
+      "id": "hyundai-defog-outside-air-intake-clear",
+      "claim": "현대 매뉴얼은 외기 흡입구에 쌓인 눈, 얼음, 낙엽 등 젖은 이물질을 치우면 유리창 습기 발생을 줄일 수 있다고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 온라인 오너스 매뉴얼 — 유리창 습기 제거법",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/US4/2026/ko_KR/idc0853a3fd8c.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "외기 흡입구가 있는 차량 공통", "years": "2026 매뉴얼", "region": "KR" }
+    },
+    {
+      "id": "hyundai-washer-fluid-winter-only",
+      "claim": "현대 매뉴얼은 기온이 낮을 때 겨울용 와셔액을 쓰라고 안내한다. 여름용 와셔액을 쓰면 유리창 표면에 얼음이 얼 수 있다고 경고한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 온라인 오너스 매뉴얼 — 유리창 습기 제거법",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/US4/2026/ko_KR/idc0853a3fd8c.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "와셔액 전 차종 공통", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "겨울용 표기 확인은 reused_facts의 washer-fluid-winter-rating-check를 함께 따른다."
+    },
+    {
+      "id": "kia-defog-outside-air-default-ev",
+      "claim": "기아 PUEV 2024 매뉴얼은 평상시 외기 유입 상태로 운행하라고 권장한다. 실내 순환은 외부 공기가 오염됐을 때나 최대 냉난방이 필요할 때만 쓰고, 실내 순환을 오래 쓰면 유리창에 습기가 맺히기 쉽고 졸음·두통을 부를 수 있다고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 온라인 오너스 매뉴얼 — 공조 장치 외기/내기 선택 (PUEV 2024)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/PUEV/2024/ko_KR/topics/t00357.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "PUEV 2024 전기차 매뉴얼 기준(내연기관 차량 매뉴얼은 별도 확인)", "years": "2024 매뉴얼", "region": "KR" },
+      "caution": "이 매뉴얼은 전기차(PUEV) 기준이다. 내연기관 기아 차량에는 같은 문장을 그대로 옮기지 않고 본인 차종 매뉴얼을 확인하라고 쓴다."
+    },
+    {
+      "id": "kia-defog-button-restore-previous",
+      "claim": "기아 PUEV 2024 매뉴얼에 따르면 앞유리 서리 제거 버튼을 누르면 표시등이 켜지고 풍량 조절 노브로 풍량을 정한다. 버튼을 한 번 더 누르면 표시등이 꺼지고 각 버튼은 서리 제거를 선택하기 전 설정으로 돌아간다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 온라인 오너스 매뉴얼 — 앞유리 서리 제거 (PUEV 2024)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/PUEV/2024/ko_KR/topics/t00357.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "PUEV 2024 전기차 매뉴얼 기준", "years": "2024 매뉴얼", "region": "KR" },
+      "caution": "풍량 노브 위치는 차종마다 다르다. 같은 버튼을 한 번 더 누르면 원래 설정으로 복귀한다는 점만 공통으로 안내한다."
+    },
+    {
+      "id": "kia-defog-setting-auto-ac-outside-ev",
+      "claim": "기아 PUEV 2024 매뉴얼에 따르면 김서림 방지 기능이 설정된 차량에서 앞유리 서리 제거를 선택하면 외기 유입이 자동으로 작동하고, 바깥 온도에 따라 에어컨도 자동으로 작동한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 온라인 오너스 매뉴얼 — 앞유리 서리 제거 (PUEV 2024)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/PUEV/2024/ko_KR/topics/t00357.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "PUEV 2024 전기차 매뉴얼 기준(김서림 방지 설정 차량)", "years": "2024 매뉴얼", "region": "KR" },
+      "caution": "기능 설정 여부를 먼저 확인한다. 설정이 없는 차량이면 에어컨과 외기 버튼을 직접 누른다."
+    },
+    {
+      "id": "community-defroster-mode-winter",
+      "claim": "겨울철에는 따뜻한 바람을 앞유리 쪽으로 보내는 디프로스터(Defroster) 모드가 김서림 제거에 도움이 된다고 자동차 칼럼이 소개한다. 유리창 아래 송풍구로 바람을 직접 보내 습기를 날리는 모드라는 설명이다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "위키트리 — 자동차 앞유리 김서림 현상, 제거하려면 이 '버튼'만 기억하세요",
+      "source_url": "https://www.wikitree.co.kr/articles/1071418",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "자동차", "line": "디프로스터 모드가 있는 차량", "years": "전 연식", "region": "KR" },
+      "caution": "기사 1건의 소개이며 제조사 원문 확인이 없다. 디프로스터 버튼 위치는 차종 매뉴얼로 확인하라고 쓴다. 모드가 없는 차량은 앞유리 송풍 방향을 직접 맞춘다."
+    },
+    {
+      "id": "community-heater-plus-ac-humid-days",
+      "claim": "습기가 많은 장마철처럼 김서림이 심할 때는 히터와 에어컨을 함께 잠깐 켜는 방법이 제습에 효과적이라고 자동차 기사가 소개한다. 기사는 몇 분 안에 김서림이 사라진다고 본다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "위키트리 — 자동차 앞유리 김서림 현상, 제거하려면 이 '버튼'만 기억하세요",
+      "source_url": "https://www.wikitree.co.kr/articles/1071418",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "자동차", "line": "에어컨 있는 차량 공통", "years": "전 연식", "region": "KR" },
+      "caution": "기사 1건의 주장이다. 공식 매뉴얼은 에어컨을 제습 기능으로 쓰는 쪽을 안내하므로, 에어컨을 켜고 외기로 바꾸는 방법을 먼저 권한다. 히터 단독 사용을 권하지 않는다."
+    },
+    {
+      "id": "community-crack-window-temporary",
+      "claim": "앞유리 김서림이 바로 안 사라질 때 창문을 살짝 열어 내외부 공기를 바꾸는 것은 일시적으로 도움이 되지만 근본 해결책은 아니라고 자동차 기사가 설명한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "위키트리 — 자동차 앞유리 김서림 현상, 제거하려면 이 '버튼'만 기억하세요",
+      "source_url": "https://www.wikitree.co.kr/articles/1071418",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "자동차", "line": "일반 승용차", "years": "전 연식", "region": "KR" },
+      "caution": "창문을 연 상태로 주행하는 방법은 쓰지 않는다. 정차 중 잠깐 환기하는 정도로만 쓴다."
+    },
+    {
+      "id": "law-visibility-safe-driving-unverified",
+      "claim": "운전자가 앞유리 김서림으로 시야가 확보되지 않은 상태에서 주행하는 것이 도로교통법 제49조 안전운전 의무 위반에 해당하는지는 이번 조사에서 법령 원문으로 확인하지 못했다. 국가법령정보센터 페이지 접속은 됐으나 조문 본문이 열리지 않았다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "국가법령정보센터 — 도로교통법 제49조 (원문 열람 실패)",
+      "source_url": "https://www.law.go.kr/법령/도로교통법/제49조",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "자동차", "line": "운전자 안전운전 의무", "years": "현행 법령 기준(원문 미확인)", "region": "KR" },
+      "caution": "글에 법 조항 번호나 처벌 내용을 단정하지 않는다. '시야가 가려진 상태로는 출발하지 않는다'는 안전 원칙만 쓰고, 법적 판단은 확인 불가로 남긴다."
+    },
+    {
+      "id": "hyundai-defog-service-threshold-unverified",
+      "claim": "현대 오토 디포그 기능이 작동하지 않거나 김서림이 계속될 때 서비스센터 점검을 받아야 하는 기준 기간이나 횟수는 이번에 확인한 현대 매뉴얼 페이지에 명시되어 있지 않았다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "현대자동차 온라인 오너스 매뉴얼 — 오토 디포그(자동 김서림 제거 기능)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/GN7/2026/ko_KR/id25006c63ca8.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "GN7 매뉴얼 기준 오토 디포그", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "'며칠 지나도 안 되면 정비소' 같은 기간을 수치로 쓰지 않는다. 대신 바람이 전혀 나오지 않거나 한쪽 유리만 계속 흐리면 정비소 점검을 권한다."
+    }
+  ]
+}

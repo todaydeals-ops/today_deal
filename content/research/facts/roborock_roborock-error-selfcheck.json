@@ -1,0 +1,161 @@
+{
+  "topic": "로보락 로봇청소기 에러 안내음·멈춤 증상 자가점검 (센서·휠·브러시·먼지통·물탱크·충전, 앱 재연결, AS 기준)",
+  "brand": "로보락",
+  "article": "roborock-error-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "roborock-errorcode-1-laser",
+    "roborock-errorcode-4-cliff",
+    "roborock-errorcode-5-main-brush",
+    "roborock-errorcode-7-wheel",
+    "roborock-errorcode-8-stuck",
+    "roborock-errorcode-9-filter-magnet",
+    "roborock-errorcode-10-filter-clean",
+    "roborock-errorcode-13-dock-contact",
+    "roborock-errorcode-18-fan-debris",
+    "roborock-internal-error-reset",
+    "roborock-fan-speed-lowered",
+    "roborock-service-escalation-boundary",
+    "roborock-kr-as-phone-1566",
+    "battery-swelling-stop-immediately"
+  ],
+  "declined_facts": [
+    {
+      "id": "roborock-saros-z70-cs-phone",
+      "why": "1577-8911은 Saros Z70 판매·CS 주체(팅크웨어모바일) 번호이므로 일반 로보락 AS 번호로 쓰지 않는다."
+    },
+    {
+      "id": "factory-reset-data-loss",
+      "why": "스마트폰 데이터 초기화 안내라 로봇 Reset 버튼(설정 초기값 복귀)에는 적용하지 않는다. 로봇 Reset 설명은 roborock-internal-error-reset을 쓴다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "roborock-kr-warranty-1yr",
+      "claim": "로보락 한국 공식 보증은 구매일로부터 1년간 재료 및 제작상의 결함을 보증하며, 페이지에 로봇청소기 전용 보증 기간은 따로 없어 전 제품 공통 기준이 적용된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "로보락 코리아 공식 — 서비스 및 보증 페이지",
+      "source_url": "https://kr.roborock.com/pages/roborock-service-warranty",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "로보락",
+        "category": "로봇청소기",
+        "line": "전 제품 공통 보증 문구",
+        "years": "구매일 기준 1년",
+        "region": "KR"
+      },
+      "caution": "보증 기간 계산 기준은 구매일이다. 1년을 넘긴 제품은 무상 수리 대상이 아니므로 유상 수리 안내로 넘어간다.",
+      "cautionSource": "kr.roborock.com 서비스 및 보증 페이지 원문 '구매일로부터 1년간' 문구(2026-11-03 확인)"
+    },
+    {
+      "id": "roborock-kr-warranty-exclusions",
+      "claim": "로보락 한국 보증 제외 항목은 배터리 등 소모품, 필터·브러시 등 액세서리, 충돌 등 외부 충격으로 인한 손상, 액체 침수 손상, 정상 마모와 외관 손상, 무단 수리·개조, 로보락 외 제품과 함께 사용한 경우, 정기 교체 부품이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "로보락 코리아 공식 — 서비스 및 보증 페이지(보증 제외 항목)",
+      "source_url": "https://kr.roborock.com/pages/roborock-service-warranty",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "로보락",
+        "category": "로봇청소기",
+        "line": "전 제품 공통",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "필터·브러시·배터리는 보증이 아니라 소모품 교체 영역이다. 제외 항목에 걸리면 무상 AS를 약속하지 말고 자가 교체 또는 유상 상담으로 안내한다. 애매하면 전화(1566-5534)로 판정을 받는다.",
+      "cautionSource": "kr.roborock.com 보증 제외 항목 목록 원문(2026-11-03 확인)"
+    },
+    {
+      "id": "roborock-kr-warranty-proof",
+      "claim": "로보락 한국 AS 접수 시 구매 날짜가 표시된 영수증 등 구매 증빙을 제출해야 하며, 증빙이 없으면 공장 출하일을 기준으로 보증 기간을 판단한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "로보락 코리아 공식 — 서비스 및 보증 페이지(접수 방법)",
+      "source_url": "https://kr.roborock.com/pages/roborock-service-warranty",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "로보락",
+        "category": "로봇청소기",
+        "line": "전 제품 공통",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "구매처별로 어떤 캡처가 증빙으로 인정되는지는 페이지에 명시돼 있지 않다. 영수증이나 주문내역을 준비하도록 안내하고, 인정 범위는 AS 접수 시 확인하도록 쓴다.",
+      "cautionSource": "같은 페이지 접수 방법 문구(2026-11-03 확인)"
+    },
+    {
+      "id": "roborock-kr-as-kakao-channel",
+      "claim": "로보락 한국 공식 페이지 푸터에는 AS 카카오톡 문의 채널이 있으나, 운영 시간은 페이지에 표기되어 있지 않다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "로보락 코리아 공식 — 서비스 및 보증 페이지(푸터·AS 안내)",
+      "source_url": "https://kr.roborock.com/pages/roborock-service-warranty",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "로보락",
+        "category": "로봇청소기",
+        "line": "전 제품 공통",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "카카오톡 채널의 정확한 주소와 운영 시간은 이번 조사에서 확인하지 못했다. 채널 링크를 글에 직접 쓰지 말고 '공식 페이지 하단의 카카오톡 문의'로만 안내하고, 운영 시간은 전화 상담으로 확인하라고 쓴다.",
+      "cautionSource": "같은 페이지 AS 운영 시간 미표기 및 카카오톡 채널 문구 확인(2026-11-03)"
+    },
+    {
+      "id": "roborock-kr-as-email-garbled",
+      "claim": "로보락 한국 공식 페이지의 AS 이메일 표기는 두 가지가 공존한다. 본문 안내는 support@roborock.com이고, AS 이메일 항목에는 support@roborock.co.kr이 깨진 형태로 적혀 있어 정확한 주소가 확정되지 않는다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "로보락 코리아 공식 — 서비스 및 보증 페이지",
+      "source_url": "https://kr.roborock.com/pages/roborock-service-warranty",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "로보락",
+        "category": "로봇청소기",
+        "line": "전 제품 공통",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "이메일 주소를 단정해서 쓰지 않는다. 독자에게는 AS 전화(1566-5534)를 먼저 안내하고, 이메일은 공식 페이지에서 확인하라고 쓴다.",
+      "cautionSource": "페이지 내 두 주소 표기 불일치 대조(2026-11-03)"
+    },
+    {
+      "id": "roborock-wifi-2ghz-claim-review",
+      "claim": "로보락 로봇청소기가 2.4GHz 대역 Wi-Fi를 요구한다는 설명이 제3자 가이드와 사용자 리뷰 사이트에 여러 건 있으나, 로보락 공식 지원 문서에서는 이 문구를 확인하지 못했다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Hjalp.ai 로보락 앱 연결 문제 해결 가이드(제3자, AI 일부 작성 명시)",
+      "source_url": "https://www.hjalp.ai/article/resolving-connectivity-issues-with-roborock-app/",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "로보락",
+        "category": "로봇청소기",
+        "line": "모델 미특정(일반 로보락 가이드)",
+        "years": "미명시",
+        "region": "글로벌"
+      },
+      "caution": "제3자 가이드는 로보락 공식 문서가 아니라고 명시돼 있다. 글에서는 '2.4GHz 공유기에서 연결이 잘 된다는 보고가 많다'로 쓰고, 5GHz 전용 공유기 환경에서만 확인된 것으로 단정하지 않는다. 2.4GHz와 5GHz가 같은 이름이면 휴대폰을 2.4GHz에 붙여 다시 시도하도록 안내한다.",
+      "cautionSource": "Hjalp.ai 페이지 본문의 '제3자 가이드이며 공식 문서가 아님' 명시 문구(2026-11-03 확인)"
+    },
+    {
+      "id": "roborock-wifi-reset-gesture-claim",
+      "claim": "제3자 가이드는 로보락 Wi-Fi 재설정을 전원 버튼과 스팟 청소 버튼을 함께 길게 눌러 'Resetting WiFi' 음성 안내가 나올 때까지 누르는 방식으로 소개하지만, 모델별 버튼 조합은 공식 확인하지 못했다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Hjalp.ai 로보락 앱 연결 문제 해결 가이드(제3자)",
+      "source_url": "https://www.hjalp.ai/article/resolving-connectivity-issues-with-roborock-app/",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "로보락",
+        "category": "로봇청소기",
+        "line": "모델 미특정",
+        "years": "미명시",
+        "region": "글로벌"
+      },
+      "caution": "버튼 조합과 누르는 시간은 모델마다 다를 수 있다. 특정 조합을 단정하지 말고 '매뉴얼 또는 앱 안내에서 Wi-Fi 재설정 버튼을 먼저 확인하고, 안 맞으면 제3자 방식을 시도'로 쓴다. 제품 시리즈 명시 없이 쓰지 않는다.",
+      "cautionSource": "제3자 가이드에 모델 명시가 없다는 원문 확인(2026-11-03)"
+    }
+  ]
+}

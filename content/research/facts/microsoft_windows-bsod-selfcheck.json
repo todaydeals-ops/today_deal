@@ -1,0 +1,189 @@
+{
+  "topic": "윈도우 블루스크린이 뜰 때, 오류 코드로 원인 좁히기",
+  "brand": "공통",
+  "article": "windows-bsod-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "blue-screen-stop-code-reading-method",
+    "blue-screen-automatic-restart-disable",
+    "safe-mode-boot-recovery-environment",
+    "safe-mode-driver-rollback-diagnosis",
+    "recent-hardware-addition-removal-test",
+    "external-device-disconnect-before-boot",
+    "startup-repair-automatic-fix",
+    "automatic-repair-loop-recovery-environment",
+    "windows-update-boot-failure-rollback",
+    "pc-reset-data-retention-option",
+    "pc-reset-personal-files-keep-safe"
+  ],
+  "declined_facts": [
+    { "id": "factory-reset-data-loss", "why": "삼성 스마트폰 공장 초기화 문서 기반이라 PC 블루스크린 조사와 scope가 맞지 않는다. PC 초기화는 공통_windows-boot의 pc-reset-data-retention-option을 쓴다" }
+  ],
+  "disputes": [
+    {
+      "targetId": "disk-space-15-percent-boot-requirement",
+      "problem": "원문은 여유 공간 10~15%를 '있으면 좋다(a good idea)'로 안내하며 정상 작동의 필수 조건이라고 하지 않는다. 기존 팩트의 '있어야 Windows가 정상 작동한다'는 표현은 과장이다",
+      "evidence": "Microsoft Support 'Troubleshooting Windows unexpected restarts and stop code errors' 페이지의 Insufficient free space 행 원문 직접 확인(2026-11-03)"
+    }
+  ],
+  "facts": [
+    {
+      "id": "bugcheck-hex-name-lookup",
+      "claim": "블루스크린 정지 코드의 16진수 값과 이름은 Microsoft 'Bug Check Code Reference' 표에서 대조할 수 있다. 원문 표에서 확인한 예: 0x0000000A IRQL_NOT_LESS_OR_EQUAL, 0x0000003B SYSTEM_SERVICE_EXCEPTION, 0x00000050 PAGE_FAULT_IN_NONPAGED_AREA, 0x0000007B INACCESSIBLE_BOOT_DEVICE, 0x0000009F DRIVER_POWER_STATE_FAILURE, 0x00000116 VIDEO_TDR_FAILURE, 0x00000124 WHEA_UNCORRECTABLE_ERROR, 0x00000154 UNEXPECTED_STORE_EXCEPTION, 0x000000EF CRITICAL_PROCESS_DIED",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Learn - Bug Check Code Reference (Windows drivers)",
+      "source_url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/bug-check-code-reference2",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows 커널 정지 코드", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "이 표는 개발자 대상 문서다. 이름만 보고 원인을 단정하지 말고 '의심 방향'으로만 쓴다. 일반 사용자는 화면에 적힌 코드와 드라이버 파일명을 먼저 기록한다"
+    },
+    {
+      "id": "memory-codes-named-examples",
+      "claim": "Microsoft 지원 문서는 정지 코드 예시로 PAGE_FAULT_IN_NONPAGED_AREA와 MEMORY_MANAGEMENT를 들며, 정지 코드는 블루스크린 화면 하단에 표시된다고 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshooting Windows unexpected restarts and stop code errors",
+      "source_url": "https://support.microsoft.com/en-us/windows/troubleshooting-windows-unexpected-restarts-and-stop-code-errors-60b01860-58f2-be66-7516-5c45a66ae3c6",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows 블루스크린 메모리 계열 코드", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "이름에 MEMORY가 들어간 코드도 메모리 불량을 확정하지 않는다. 메모리 진단은 드라이버 점검 다음 단계의 후보 점검으로만 쓴다",
+      "cautionSource": "Microsoft Support 원문이 메모리 계열 코드를 '단서'로 안내하며 진단 도구를 함께 권하는 구조"
+    },
+    {
+      "id": "device-manager-exclamation-first",
+      "claim": "블루스크린 후에는 장치 관리자를 열어 느낌표(!) 표시가 있는 장치를 찾고, 그 장치를 우클릭해 드라이버 업데이트를 먼저 시도한다. 효과가 없으면 장치를 사용 안 함 또는 제거한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshooting Windows unexpected restarts and stop code errors",
+      "source_url": "https://support.microsoft.com/en-us/windows/troubleshooting-windows-unexpected-restarts-and-stop-code-errors-60b01860-58f2-be66-7516-5c45a66ae3c6",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows 장치 드라이버", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "장치를 제거하면 해당 장치(그래픽·네트워크 등)가 일시적으로 안 나올 수 있다. 제거 전에 외부 연결 장치 상태와 복구 수단을 먼저 확보한다"
+    },
+    {
+      "id": "update-drivers-windows-update-optional",
+      "claim": "Windows 업데이트 고급 옵션에서 '다른 Microsoft 제품의 업데이트 받기'를 켜고, 선택적 업데이트에서 드라이버를 모두 선택해 설치한다. 이후 업데이트를 확인하고 설치한 뒤 다시 시작한다(Windows 11 기준, Windows 10도 거의 동일)",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - How to fix Error 0xA: IRQL_NOT_LESS_OR_EQUAL",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/how-to-fix-error-0xa-irql-not-less-or-equal",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows 드라이버 업데이트", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "Windows 업데이트에 드라이버가 없거나 업데이트해도 해결되지 않으면 제조사 홈페이지에서 드라이버를 받는 것을 Microsoft가 안내한다",
+      "cautionSource": "Microsoft 0xA 해결 문서의 '제조사 사이트 확인' 안내"
+    },
+    {
+      "id": "memory-test-mdsched-steps",
+      "claim": "메모리 진단은 실행 창에 mdsched를 입력해 '지금 다시 시작하여 문제 검사'를 선택하면 재부팅 후 자동으로 진행된다. 더 정밀하게 보려면 F1에서 Test Mix를 Extended로 바꾼 뒤 F10으로 적용한다. 결과는 로그인 후 알림이나 이벤트 뷰어의 MemoryDiagnostics-Results 로그에서 확인하며, Event ID 2001은 메모리 오류가 발견되지 않았다는 뜻이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - How to fix Error 0xA: IRQL_NOT_LESS_OR_EQUAL",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/how-to-fix-error-0xa-irql-not-less-or-equal",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows 메모리 진단 도구", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "진단 전에 작업 중인 파일을 저장하고 앱을 모두 닫는다. 진단 중에는 PC를 끄지 않는다",
+      "cautionSource": "Microsoft 0xA 해결 문서의 '작업 저장 후 앱 닫기' 안내"
+    },
+    {
+      "id": "irql-0a-cause-summary",
+      "claim": "정지 코드 0x0000000A(IRQL_NOT_LESS_OR_EQUAL)은 Microsoft가 주로 결함 있거나 오래된 드라이버, 메모리 문제, 하드웨어 문제가 원인이라고 설명하는 코드다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - How to fix Error 0xA: IRQL_NOT_LESS_OR_EQUAL",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/how-to-fix-error-0xa-irql-not-less-or-equal",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "0x0A 정지 코드", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "세 원인 중 어느 쪽인지는 코드만으로 확정되지 않는다. 드라이버 → 메모리 → 하드웨어 순서로 하나씩 좁혀 간다"
+    },
+    {
+      "id": "unexpected-store-not-disk-failure",
+      "claim": "정지 코드 0x00000154(UNEXPECTED_STORE_EXCEPTION)은 Microsoft 원문에 따르면 커널 메모리 저장(store) 구성요소가 예상치 못한 예외를 잡았다는 뜻이며, 이름의 STORE 때문에 디스크 고장으로 단정하지 않는다. Microsoft는 이벤트 뷰어 시스템 로그 확인, Windows 메모리 진단, 장치 관리자 느낌표 확인과 드라이버 업데이트, SFC 실행을 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Learn - Bug Check 0x154 UNEXPECTED_STORE_EXCEPTION",
+      "source_url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/bug-check-0x154--unexpected-store-exception",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "0x154 정지 코드", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "이 문서는 2022년 12월 기준 개발자 대상 페이지라 최신 Windows 11 화면과 메뉴 명칭이 다를 수 있다. 디스크 점검은 별도 항목으로 함께 확인한다",
+      "cautionSource": "Microsoft Learn 0x154 페이지의 ms.date 2022-12-12 표기"
+    },
+    {
+      "id": "system-service-exception-cause",
+      "claim": "정지 코드 0x0000003B(SYSTEM_SERVICE_EXCEPTION)은 시스템 서비스 루틴 실행 중 예외가 난 것으로, 원인으로 NULL 포인터 접근, 메모리의 조기 해제, 자료구조 손상이 꼽힌다. Microsoft의 일반 대응은 최근 추가된 드라이버나 시스템 서비스를 제거하거나 업데이트하는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Learn - Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION",
+      "source_url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/bug-check-0x3b--system-service-exception",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "0x3B 정지 코드", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "일반 사용자는 원인 코드를 직접 수정할 수 없다. 블루스크린 직전에 드라이버를 업데이트했거나 새 프로그램을 깔았다면 그 드라이버 롤백이나 제거를 먼저 시도한다"
+    },
+    {
+      "id": "driver-name-on-bugcheck-screen",
+      "claim": "블루스크린 화면에 모듈 이름(예: .sys 파일명)이 함께 표시되면 그것이 가장 직접적인 단서다. Microsoft 원문은 정지 코드와 함께 실행 중이던 모듈 이름이 표시될 수 있다고 안내하며, 예시로 AcmeVideo.sys와 rdbyss.sys를 든다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Learn - Bug Checks (Stop Code Errors)",
+      "source_url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/bug-checks--blue-screens-",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "블루스크린 모듈 이름 표시", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "파일명이 보이면 그 파일을 만든 장치·프로그램(그래픽카드, 백신, USB 장치 등)의 업데이트를 먼저 찾는다. 시스템 드라이버 파일을 직접 지우지 않는다"
+    },
+    {
+      "id": "disk-scan-and-sfc-steps",
+      "claim": "파일 시스템 오류는 드라이브 속성의 도구 탭에서 검사(지금 검사)로 확인하고, 손상된 시스템 파일은 관리자 명령 프롬프트에서 SFC /scannow로 복구한다고 Microsoft가 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Learn - Bug Checks (Stop Code Errors)",
+      "source_url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/bug-checks--blue-screens-",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "디스크 파일 시스템·시스템 파일 점검", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "SFC는 Windows 시스템 파일만 복구한다. 저장장치 물리 고장은 이 방법으로 해결되지 않으므로 아래 하드웨어 진단 단계로 넘어간다"
+    },
+    {
+      "id": "hardware-diagnostics-and-bios-check",
+      "claim": "블루스크린의 원인이 하드웨어로 의심되면 Microsoft는 제조사가 제공하는 하드웨어 진단 도구를 실행하고, 제조사에서 BIOS 또는 UEFI 펌웨어 업데이트가 나왔는지 확인하라고 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Learn - Bug Checks (Stop Code Errors)",
+      "source_url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/bug-checks--blue-screens-",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 하드웨어", "line": "데스크톱·노트북 진단", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "BIOS·펌웨어 업데이트는 제조사 안내 절차를 그대로 따른다. 진행 중 전원을 끊으면 안 되므로 노트북은 전원 어댑터를 연결한다"
+    },
+    {
+      "id": "event-viewer-system-log-same-time",
+      "claim": "Microsoft는 블루스크린이 난 시각과 같은 시간대의 시스템 로그 치명적 오류를 이벤트 뷰어에서 확인해, 장치나 드라이버를 특정하라고 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Learn - Bug Checks (Stop Code Errors)",
+      "source_url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/bug-checks--blue-screens-",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "이벤트 뷰어 시스템 로그", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "로그에는 오류가 여러 개 쌓여 있을 수 있다. 블루스크린 시각과 맞는 항목만 본다"
+    },
+    {
+      "id": "warranty-as-criteria-not-in-official-docs",
+      "claim": "Microsoft 블루스크린 공식 문서에서 보증 기간이나 AS 접수 기준은 확인하지 못했다. 공식 문서는 하드웨어 의심 시 '제조사 진단 도구 실행'과 '제조사 확인'까지만 안내한다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshooting Windows unexpected restarts and stop code errors",
+      "source_url": "https://support.microsoft.com/en-us/windows/troubleshooting-windows-unexpected-restarts-and-stop-code-errors-60b01860-58f2-be66-7516-5c45a66ae3c6",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "블루스크린 AS 접수", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "AS 접수 기준은 제조사 공식 지원 페이지에서 모델별로 확인한다. 이 팩트만으로 보증 기간을 말하지 않는다"
+    },
+    {
+      "id": "backup-advice-not-found-in-bsod-docs",
+      "claim": "블루스크린 공식 트러블슈팅 문서(Microsoft Support 문제 해결 페이지, Learn 정지 코드 페이지)에서 데이터 백업을 권하는 문장은 확인하지 못했다. 데이터 보호 안내는 PC 초기화 옵션의 '모든 항목 제거'가 모든 데이터를 삭제한다는 경고에 의존한다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshooting Windows unexpected restarts and stop code errors",
+      "source_url": "https://support.microsoft.com/en-us/windows/troubleshooting-windows-unexpected-restarts-and-stop-code-errors-60b01860-58f2-be66-7516-5c45a66ae3c6",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "블루스크린 데이터 보호", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "백업 방법은 독자가 외장 드라이브나 클라우드로 직접 옮기는 절차를 쓰고, 공식 근거 없이 백업 주기를 단정하지 않는다"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "topic": "냉장고 소음(웅웅·딸깍·물소리) 정상 여부 자가 판별",
+  "brand": "공통",
+  "article": "fridge-noise-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "lg-fridge-error-ff-rf-fan-ice",
+    "lg-fridge-cooling-weak-internal-frost"
+  ],
+  "declined_facts": [
+    {
+      "id": "lg-fridge-power-outage-recovery-time",
+      "why": "정전 후 냉기 복구 24~48시간은 정전 맥락 팩트라 소음 판별 글의 상황(소음 자체의 정상 여부)과 다르다. 재사용하지 않는다."
+    },
+    {
+      "id": "lg-fridge-error-dh-defrost-failure",
+      "why": "dH는 에러코드 표시 상황이다. 정상 제상음과 구분하는 경계 참고로만 쓸 수 있고 이번 조사에서는 소음 팩트로 재사용하지 않는다."
+    },
+    {
+      "id": "https://www.lge.co.kr/support/solutions-20150505154302",
+      "why": "LG 한국 페이지 제목과 내용이 김치냉장고(딤채형 소음, 2026-06-10 등록) 기준이다. 일반 냉장고 소음 근거로 쓰면 제품 범위가 틀리므로 제외한다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "fridge-noise-compressor-startstop-sound",
+      "claim": "냉장고 컴프레서가 기동하거나 정지할 때 드르륵·덜컥·웅 같은 진동음이 30~60초 정도 이어질 수 있으며, 이는 정상 작동음이다. 수평이 맞지 않으면 이 소리가 더 크게 날 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장고 소음 안내 (정수기형 냉장고 안내 페이지)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153605102607",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "정수기형 냉장고 안내 페이지 기준", "years": "전 연식", "region": "KR" },
+      "caution": "기동·정지음이 30~60초를 넘거나 계속 반복되면 정상 범위를 벗어난 것으로 보고 수평 확인 뒤 서비스 점검으로 넘긴다.",
+      "cautionSource": "LG 한국 고객지원 안내의 기동·정지음 지속 시간(30~60초) 표기"
+    },
+    {
+      "id": "fridge-noise-3way-valve-click",
+      "claim": "냉장고에서 턱턱턱 또는 드드드 같은 짧은 딸깍 소리는 냉매 흐름을 바꾸는 3-way 밸브가 여닫히는 소리로 정상이다. 하루 1회 약 7초, 1시간에 4회 약 3초 정도 날 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장고 소음 안내 (정수기형 냉장고 안내 페이지)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153605102607",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "정수기형 냉장고 안내 페이지 기준", "years": "전 연식", "region": "KR" },
+      "caution": "같은 딸깍 소리가 하루 7초 이상 자주 반복되거나 냉기가 약하면 밸브 쪽 이상을 의심하고 서비스 점검으로 넘긴다.",
+      "cautionSource": "LG 한국 고객지원 안내의 밸브 작동 횟수·시간(하루 1회 7초, 1시간 4회 3초) 표기"
+    },
+    {
+      "id": "fridge-noise-refrigerant-flow-water-sound",
+      "claim": "냉장고 안에서 졸졸·꼬륵 같은 물소리가 나는 것은 냉매가 기체와 액체 사이를 오가며 순환하거나 성에가 녹는 소리일 수 있으며, 냉기가 정상이면 작동음으로 본다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 냉장고에서 꼬르륵 물 흐르는 소리가 나요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/33844",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "냉장고 전 라인(안내 페이지 기준)", "years": "전 연식", "region": "KR" },
+      "caution": "냉기가 정상이 아니거나 소리가 심하면 전문 엔지니어 점검을 받아야 한다. 물소리만 듣고 정상이라고 단정하지 않는다.",
+      "cautionSource": "삼성전자서비스 안내 문구(정상 온도가 아니거나 소음이 심하면 전문 엔지니어 점검)"
+    },
+    {
+      "id": "fridge-noise-defrost-drip-tick",
+      "claim": "제상(성에 제거) 중 녹은 물이 떨어지며 나는 뚝뚝 소리와 히터에서 물이 증발하며 나는 취익 소리는 정상이며, 하루 1~2회 날 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장고 소음 안내 (정수기형 냉장고 안내 페이지)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153605102607",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "정수기형 냉장고 안내 페이지 기준", "years": "전 연식", "region": "KR" },
+      "caution": "뚝뚝 소리가 하루 2회를 넘거나 냉기가 함께 약하면 제상이 제대로 안 되는 것이므로 에러코드(dH 등) 여부를 확인하고 서비스 점검으로 넘긴다.",
+      "cautionSource": "LG 한국 고객지원 안내의 제상수 낙하음 빈도(하루 1~2회) 표기"
+    },
+    {
+      "id": "fridge-noise-thermal-expansion-crack",
+      "claim": "냉장고에서 뚝·딱 하는 짧은 소리는 온도 변화에 따라 선반 등 플라스틱 부품이 수축·팽창하며 나는 정상 소리다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장고 소음 안내 (정수기형 냉장고 안내 페이지)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153605102607",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "정수기형 냉장고 안내 페이지 기준", "years": "전 연식", "region": "KR" },
+      "caution": "소리가 아니라 소리와 함께 냉기 저하나 부품 파손 흔적이 있으면 점검 대상이다.",
+      "cautionSource": "LG 미국 고객지원 안내의 동일 소음 분류(플라스틱 부품 열팽창)와 교차 확인"
+    },
+    {
+      "id": "fridge-noise-compressor-buzz-normal",
+      "claim": "냉장고에서 웅·웽·징징 하는 낮은 소리는 컴프레서와 팬이 냉각 중에 나는 소리이며, 문을 자주 열거나 뜨거운 음식을 넣으면 일시적으로 커질 수 있다. 설정 온도에 도달하면 모터 속도와 소음이 줄어든다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장고 소음 안내 (정수기형 냉장고 안내 페이지)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153605102607",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "정수기형 냉장고 안내 페이지 기준", "years": "전 연식", "region": "KR" },
+      "caution": "문 개폐·음식 투입이 없는데 웅 소리가 계속 커지기만 하면 정상으로 보지 말고 팬 쪽 성에나 컴프레서 이상을 의심한다.",
+      "cautionSource": "삼성전자서비스 28596 안내(평소보다 소음이 크면 컴프레서·팬 이상 가능) 교차 확인"
+    },
+    {
+      "id": "fridge-noise-leveling-vibration",
+      "claim": "냉장고가 드드드 또는 다다다 하고 떨리는 소리는 수평 불량이나 벽과의 간격 부족이 원인일 가능성이 크다. 측면·후면을 벽에서 띄우고 높이 조절 레그로 수평을 맞추면 해결되는 경우가 많다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장고 소음 안내 (정수기형 냉장고 안내 페이지)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153605102607",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "정수기형 냉장고 안내 페이지 기준", "years": "전 연식", "region": "KR" },
+      "caution": "바닥이 심하게 기울어 있으면 높이 조절만으로 안 되므로 자리를 옮기는 것이 원칙이다.",
+      "cautionSource": "LG 한국 고객지원 안내의 바닥 불량 시 자리 이동 권고"
+    },
+    {
+      "id": "fridge-noise-fan-frost-tapping",
+      "claim": "냉장고 팬에서 드드득·다다다·덜덜덜 하는 이상음은 팬에 물건이 닿거나 팬 주변에 성에(결빙)가 쌓였을 때 생길 수 있다. 전원을 분리하고 도어를 열어 최소 24시간 두면 성에가 녹아 해소될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장고 소음 안내 (정수기형 냉장고 안내 페이지)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153605102607",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "정수기형 냉장고 안내 페이지 기준", "years": "전 연식", "region": "KR" },
+      "caution": "해빙 대기는 최소 24시간이다. 겨울에는 LG 미국 안내 기준 최대 3일까지 걸릴 수 있으므로 기다리는 동안 내부 식품을 옮기고, 잘 안 녹으면 서비스 접수를 한다. 전원 분리 전 식품 보관 위치를 먼저 정한다.",
+      "cautionSource": "LG 미국 고객지원 문서(lg.com/us, 소음 문제 해결) — 여름 24시간·겨울 최대 3일 기준"
+    },
+    {
+      "id": "fridge-noise-samsung-whoosh-compressor-speed",
+      "claim": "삼성 냉장고의 웅 소리는 압축기와 팬이 상태에 따라 빨랐다 느려지기를 반복하며 소리가 커졌다 작아질 수 있는 정상 현상이다. 운전이 시작되거나 끝날 때 나는 소리와 조용한 밤에 더 크게 들리는 것도 정상이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 냉장고 웅 소음 안내 (스스로해결, 2025-12-31 등록)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28596",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "양문형 냉장고(참조 모델 RH82M9152SL)", "years": "2025-12-31 등록 페이지 기준 현행 모델", "region": "KR" },
+      "caution": "평소보다 소음이 크게 나거나 문을 열 때 멈추는 소리가 크면 정상 범위를 벗어난 것이므로 엔지니어 점검이 필요하다. 다른 삼성 모델에도 같은지는 이 페이지만으로 확정하지 않는다.",
+      "cautionSource": "삼성전자서비스 28596 페이지의 정상 범위 이탈 기준(평소보다 크거나 도어 개방 시 멈춤음이 큰 경우)"
+    },
+    {
+      "id": "fridge-noise-samsung-smartthings-diagnosis",
+      "claim": "삼성 4도어 일부 모델(RF60A/B/C, RF85A/B/C, RF84C 등)은 스마트싱스 앱에서 냉장고 소음을 녹음해 진단을 의뢰할 수 있으며, 결과는 최대 3일 걸릴 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 냉장고에서 꼬르륵 물 흐르는 소리가 나요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/33844",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "4도어 일부 모델(RF60A/B/C, RF85A/B/C, RF84C)", "years": "현행 모델 기준", "region": "KR" },
+      "caution": "해당 모델이 아니면 스마트싱스 진단을 쓸 수 없다. 모델명을 먼저 확인한다.",
+      "cautionSource": "삼성전자서비스 33844 페이지의 지원 모델 목록"
+    },
+    {
+      "id": "fridge-noise-lg-as-criteria",
+      "claim": "LG 냉장고 소음이 사용에 불편할 정도로 계속되거나 제품 이상으로 보이는 증상이 있으면 간단한 조치로 해결되지 않으므로 LG전자 고객센터(1544-7777) 또는 출장 서비스 예약으로 진단을 받는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 냉장고 소음 안내 (정수기형 냉장고 안내 페이지)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153605102607",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "정수기형 냉장고 안내 페이지 기준", "years": "전 연식", "region": "KR" },
+      "caution": "보증기간 적용 여부와 출장비 부과 조건은 이 안내 문서에 없으므로 확정하지 않는다. 고객센터 확인을 안내한다.",
+      "cautionSource": "LG 한국 고객지원 안내에 보증·요금 기준이 명시되지 않음을 확인"
+    },
+    {
+      "id": "fridge-noise-samsung-as-criteria",
+      "claim": "삼성 냉장고 소음이 평소보다 크거나 문을 열 때 멈추는 소리가 크면 전문 엔지니어 점검을 받는다. 무상 보증기간 안이라도 사용법 설명·설치처럼 고장이 아닌 경우에는 별도 요금이 붙는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 냉장고 웅 소음 안내 (스스로해결, 2025-12-31 등록)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28596",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "양문형 냉장고(참조 모델 RH82M9152SL)", "years": "2025-12-31 등록 페이지 기준", "region": "KR" },
+      "caution": "예약은 출장 서비스 예약 또는 AI CS Bot 상담으로 안내된다. 요금 금액은 이 페이지에 없으므로 쓰지 않는다.",
+      "cautionSource": "삼성전자서비스 28596 페이지의 별도 요금 조건 문구"
+    },
+    {
+      "id": "fridge-noise-samsung-decibel-app-unverified",
+      "claim": "소음측정 앱으로 냉장고 1m 앞에서 10초씩 2회 측정해 차이가 10dB 이하이면 이상이 아닐 수 있다는 방법은 삼성 공식 안내 페이지 두 곳에서 확인하지 못했다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 냉장고에서 꼬르륵 물 흐르는 소리가 나요 (확인 대상 페이지, 해당 문구 없음)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/33844",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "냉장고 전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "이 방법은 검색 결과 요약에서만 보였다. 글에 쓰면 출처가 없으므로 쓰지 않는다. 필요하면 소음측정 앱 사용을 '자기 판단 보조' 정도로만 말하고 수치 기준은 붙이지 않는다.",
+      "cautionSource": "10dB 기준은 1차 출처를 찾지 못한 상태이며 확인실패로 분류"
+    },
+    {
+      "id": "fridge-noise-samsung-india-humming-normal",
+      "claim": "삼성 냉장고의 지속적인 웅 소리는 대체로 정상 작동음이며 그 자체로 고장을 뜻하지 않는다. 얼음 제빙기가 웅 하는 소리도 물 연결이 없으면 정상으로 본다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung India — How to address humming noise in your Samsung refrigerator",
+      "source_url": "https://www.samsung.com/in/support/home-appliances/how-to-address-humming-noise-in-your-samsung-refrigerator/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "전 라인(인도 안내 페이지)", "years": "전 연식", "region": "IN" },
+      "caution": "인도 지원 페이지다. 국내 AS 기준·전화번호는 쓰지 않고 방향(정상 작동음이 많다)만 참고한다.",
+      "cautionSource": "해당 페이지 region이 IN임을 확인"
+    }
+  ]
+}

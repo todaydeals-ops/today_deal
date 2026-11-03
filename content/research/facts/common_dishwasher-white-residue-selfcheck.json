@@ -1,0 +1,160 @@
+{
+  "topic": "식기세척기 후 그릇에 하얀 얼룩이 남을 때 점검 순서 (원인: 수돗물 미네랄·세제 잔여·린스 부족·필터/노즐)",
+  "brand": "공통",
+  "article": "dishwasher-white-residue-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "dishwasher-water-spots-cause",
+    "dishwasher-rinse-aid-water-tension",
+    "dishwasher-vinegar-rinse-warning",
+    "dishwasher-drain-filter-cleaning-frequency",
+    "dishwasher-drain-filter-separation",
+    "lg-rinse-essential-drying",
+    "lg-dishwasher-detergent-quantity"
+  ],
+  "declined_facts": [
+    {
+      "id": "lg-odor-removal-citric-acid",
+      "reason": "구연산 40g을 투입구에 넣는 방법은 냄새 제거용 LG 안내다. 이 글의 구연산 용량(약 1~2g, 삼성 안내)과 목적이 다르므로 얼룩 해결 수치로 세탁하지 않는다."
+    },
+    {
+      "id": "dishwasher-errorcode-* (삼성 3C·4C·5C·E03·HC 등)",
+      "reason": "에러코드 진단 팩트이며 이번 주제(얼룩)와 무관하다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "dw-residue-hard-water-minerals",
+      "claim": "세제를 넣지 않았는데도 그릇에 하얀 얼룩이 생기면, 물이 증발하면서 수돗물의 무기물질(칼슘·마그네슘 등 미네랄)이 그릇 표면에 남은 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 식기(그릇)에 하얀 얼룩이 생깁니다 (삼성 식기세척기 지원 안내)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1085821",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "얼룩이 까끌까끌하면 물때(미네랄)로 보고, 미끈하면 세제 찌꺼기로 본다는 구분은 공식 원문에 없다. 후기 자료에만 있으므로 단정하지 말고 세제 점검과 함께 판단하도록 쓴다.",
+      "cautionSource": "삼성 공식 원문에 촉감 구분 기준이 없음을 확인함(공식 근거 없음). 후기 자료 출처는 본 팩트에 사용하지 않음"
+    },
+    {
+      "id": "dw-residue-detergent-loading-check",
+      "claim": "건조 후 그릇에 세제 가루가 남아 있으면, 로딩된 그릇이 중단 노즐의 회전을 막고 있거나 하단 바스켓의 식기를 뒤집어 놓아 세제가 식기 안으로 떨어졌을 수 있으므로 이 두 가지를 먼저 확인한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 식기(그릇)에 하얀 얼룩이 생깁니다 (삼성 식기세척기 지원 안내)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1085821",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "",
+      "cautionSource": ""
+    },
+    {
+      "id": "dw-residue-reduce-detergent",
+      "claim": "세제 가루 잔여가 반복되면 세제량을 줄이거나 세제 종류를 바꾸는 것이 공식 권장 조치다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 식기(그릇)에 하얀 얼룩이 생깁니다 (삼성 식기세척기 지원 안내)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1085821",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "",
+      "cautionSource": ""
+    },
+    {
+      "id": "dw-residue-citric-acid-empty-cycle",
+      "claim": "세척이 끝난 뒤 그릇과 세제를 빼고 구연산을 세제함에 약 1~2g 넣거나, 라임주스를 담은 작은 그릇을 중단 선반에 올린 채 내부세척·강력 코스(또는 헹굼 건조 코스)를 돌리면 미네랄 얼룩 완화에 쓴다고 삼성이 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 식기(그릇)에 하얀 얼룩이 생깁니다 (삼성 식기세척기 지원 안내)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1085821",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "구연산 양(약 1~2g)은 삼성 안내 수치이며, 다른 브랜드 권장량과 다를 수 있다. 세제와 구연산을 동시에 넣지 않도록 쓴다.",
+      "cautionSource": "삼성전자서비스 식기 얼룩 안내(solution/1085821)의 구연산 1~2g 및 빈 세척 안내. 같은 내용을 solution/1127819 에서도 확인함(내부세척·강력 코스, 세제·그릇 제외)"
+    },
+    {
+      "id": "dw-residue-rinse-aid-refill",
+      "claim": "얼룩이 남으면 식기세척기 전용 린스(헹굼보조제)를 쓰거나 사용 중인 린스 양을 늘리는 것이 공식 권장 조치다. 린스가 건조 성능과 물방울 흘러내림을 돕는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung 지원 — White residue appears on dishes after washing in Samsung dishwasher (남아프리카 지역 페이지)",
+      "source_url": "https://www.samsung.com/za/support/home-appliances/white-residue-appears-on-dishes-after-washing-in-samsung-dishwasher/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "ZA" },
+      "caution": "해외(남아공) 페이지다. 국내 모델의 린스 투입 위치·용량은 설명서를 따른다.",
+      "cautionSource": "삼성 지원 해외 페이지(ZA) 원문. 국내 모델 설명서 확인 필요"
+    },
+    {
+      "id": "dw-residue-hardness-setting-salt",
+      "claim": "지역 수질 경도에 맞춰 식기세척기의 연수기(경수 경도) 설정을 맞추고, 소금 표시등이 켜지면 식기세척기 전용 소금을 채우는 것이 공식 점검 항목이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung 지원 — White residue appears on dishes after washing in Samsung dishwasher (남아프리카 지역 페이지)",
+      "source_url": "https://www.samsung.com/za/support/home-appliances/white-residue-appears-on-dishes-after-washing-in-samsung-dishwasher/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "ZA" },
+      "caution": "경도 설정 버튼 조작은 모델마다 다르므로 설명서를 따른다. 수질 경도는 지역 상수도 사업자에게 문의하도록 원문이 안내한다. 식용 소금은 쓰지 않는다는 점은 원문에 명시되지 않았으므로 전용 소금만 쓴다는 원문 안내를 따른다.",
+      "cautionSource": "삼성 해외 원문의 '식기세척기 전용 소금' 및 '지역 상수도 사업자 문의' 안내"
+    },
+    {
+      "id": "dw-residue-filter-cleaning-performance",
+      "claim": "세척 성능이 떨어지면 필터를 더 자주 청소해야 하며, 정기 청소 주기는 사용 설명서의 필터 청소 표를 따르라고 LG가 안내한다. 필터는 따뜻한 흐르는 물로 헹군다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG Electronics US — Dishwasher Maintenance (Help Library)",
+      "source_url": "https://lg.com/us/support/help-library/lg-dishwasher-maintenance--1433962981524",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "US" },
+      "caution": "미국 페이지다. 한국 모델의 필터 분리 순서는 LG 한국 안내(배수 필터 분리 팩트)를 함께 본다.",
+      "cautionSource": "LG US 원문. 국내 필터 구조는 재사용 팩트 lg-drain-filter-separation 참조"
+    },
+    {
+      "id": "dw-residue-spray-arm-nozzle-clear",
+      "claim": "스프레이 노즐 구멍이 음식물로 막혔으면 핀이나 뾰족한 도구로 막힌 부분을 제거해야 한다. LG는 스프레이암(노즐) 점검을 정기 관리 항목으로 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG Electronics US — Dishwasher Maintenance (Help Library)",
+      "source_url": "https://lg.com/us/support/help-library/lg-dishwasher-maintenance--1433962981524",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "전 라인", "years": "전 연식", "region": "US" },
+      "caution": "스프레이암 분해 방법(너트 방향·클립 확인)은 모델마다 다르므로 설명서를 따른다. 원문에 분해 방법은 없다.",
+      "cautionSource": "LG US 원문에 분해 절차 없음을 확인함"
+    },
+    {
+      "id": "dw-residue-stainless-tub-film-vinegar",
+      "claim": "경수를 쓰면 스테인리스 세척조에 뿌연 막이 생길 수 있으며, LG 공식 안내는 이를 위해 식초 세척 사이클(흰 식초 약 14~17 oz를 하단 랙의 계량컵에 넣고 세제 없이 일반 코스를 돌림)을 제시한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG Electronics US — Dishwasher Maintenance (Help Library)",
+      "source_url": "https://lg.com/us/support/help-library/lg-dishwasher-maintenance--1433962981524",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "스테인리스 세척조 모델", "years": "전 연식", "region": "US" },
+      "caution": "이 방법은 세척조 내부 막 제거용이다. 식초를 세제함이나 린스함에 넣는 방법으로 확장하지 않는다. 삼성 공식 원문은 식초를 린스 대신 쓰면 헹굼 분배기가 손상될 수 있다고 경고한다.",
+      "cautionSource": "삼성 공식 식초-린스 경고(재사용 팩트 dishwasher-vinegar-rinse-warning, samsungsvc.co.kr/solution/1327932)"
+    },
+    {
+      "id": "dw-residue-machine-clean-citric",
+      "claim": "LG는 세척기 자체 청소 코스(Machine Clean)를 돌릴 때 세제함에 구연산 또는 시판 식기세척기 세정제를 채우도록 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG Electronics US — Dishwasher Maintenance (Help Library)",
+      "source_url": "https://lg.com/us/support/help-library/lg-dishwasher-maintenance--1433962981524",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "식기세척기", "line": "Machine Clean 코스 탑재 모델", "years": "전 연식", "region": "US" },
+      "caution": "Machine Clean 코스가 없는 모델은 이 방법을 쓰지 않는다. 구연산 양은 원문에 명시되지 않았다.",
+      "cautionSource": "LG US 원문에 구연산 용량 없음을 확인함"
+    },
+    {
+      "id": "dw-residue-chlorine-gas-mixing-safety",
+      "claim": "산성 세정제와 염소계 표백제(락스)를 함께 쓰면 염소가스가 발생하며 인체에 치명적일 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국소비자원 — 욕실세정제, 락스와 함께 쓰면 위험 (카드뉴스·웹진)",
+      "source_url": "https://www.kca.go.kr/webzine/board/view?menuId=MENU00307&linkId=36&div=kca_1904",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가정용 세정제", "line": "산성 세정제 + 염소계 표백제", "years": "전 연식", "region": "KR" },
+      "caution": "식초도 산성이라 같은 원리로 위험하다는 판단은 이 글의 직접 내용이 아니라 우리의 추론이다. 식초를 쓴 뒤 락스나 염소계 제품을 쓰지 않고, 한 가지 세제만 쓴 뒤 충분히 헹구고 환기하도록 쓴다.",
+      "cautionSource": "한국소비자원 원문(욕실세정제 경고). 식초 언급은 원문에 없음을 확인함"
+    }
+  ]
+}

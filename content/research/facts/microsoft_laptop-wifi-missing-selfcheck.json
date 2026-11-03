@@ -1,0 +1,206 @@
+{
+  "topic": "노트북 와이파이 아이콘이 사라지거나 무선 네트워크 목록이 안 뜰 때 (Windows 10·11 자가점검)",
+  "brand": "공통",
+  "article": "laptop-wifi-missing-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": ["battery-swelling-stop-immediately"],
+  "declined_facts": [
+    {
+      "id": "factory-reset-data-loss",
+      "why": "삼성 스마트폰 공장 초기화 문서. 노트북 Windows의 네트워크 재설정과 기기 범위가 다르다. 네트워크 재설정 주의점은 Microsoft 공식 문서에서 직접 가져왔다."
+    },
+    {
+      "id": "wifi-connected-no-internet-led-check",
+      "why": "와이파이에 연결은 되는데 인터넷이 안 되는 증상용 공유기 LED 점검. 이번 주제는 목록 자체가 안 뜨는 증상이라 다르다."
+    },
+    {
+      "id": "wifi-connected-no-internet-dns-check",
+      "why": "연결은 되고 인터넷만 끊긴 증상의 ipconfig DNS 점검. 목록이 안 뜨는 증상과 원인 층위가 다르다."
+    },
+    {
+      "id": "wifi-2-4ghz-recommended-channels-1-6-11",
+      "why": "채널 간섭으로 속도가 느린 증상용. 목록이 안 뜨는 증상과 무관하다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "wifi-missing-physical-switch-check",
+      "claim": "노트북에 물리 무선 스위치가 있으면 꺼져 있을 때 와이파이 목록이 나타나지 않는다. 물리 스위치를 켠 뒤 설정 > 네트워크 및 인터넷에서 Wi-Fi가 켜져 있는지 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — Wi-Fi 연결 문제 해결(Windows)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Windows(전 제조사)", "category": "노트북", "line": "물리 무선 스위치가 있는 기종", "years": "현행", "region": "글로벌" },
+      "caution": "물리 스위치 위치와 모양은 제조사마다 다르다. 제조사 매뉴얼로 확인할 것.",
+      "cautionSource": "Microsoft 공식 문서가 물리 스위치를 확인 항목으로 제시하고 위치는 기기별로 다르다고 안내"
+    },
+    {
+      "id": "wifi-missing-airplane-mode-off",
+      "claim": "비행기 모드가 켜져 있으면 무선 기능이 전부 꺼져 와이파이 목록이 나타나지 않는다. 설정 > 네트워크 및 인터넷 > 비행기 모드가 꺼져 있는지 먼저 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — Wi-Fi 연결 문제 해결(Windows)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Windows(전 제조사)", "category": "노트북", "line": "전 라인", "years": "Windows 10·11", "region": "글로벌" }
+    },
+    {
+      "id": "wifi-missing-band-mismatch-router-check",
+      "claim": "어댑터가 공유기의 주파수 대역(2.4GHz 또는 5GHz)을 지원하지 않으면 해당 공유기 이름이 목록에 나타나지 않을 수 있다. 공유기가 쓰는 대역은 공유기 설명서나 관리 앱에서 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — Wi-Fi 연결 문제 해결(Windows)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Windows(전 제조사)", "category": "노트북", "line": "구형 무선 어댑터(802.11n 이하 등)", "years": "현행", "region": "글로벌" },
+      "caution": "어떤 대역을 지원하는지는 어댑터 모델 사양에 따라 다르다. 구형 노트북에서 주로 문제가 되며, 모델명으로 사양을 먼저 확인할 것.",
+      "cautionSource": "Microsoft 공식 문서의 대역 불일치 항목. 구형 어댑터라는 범위는 본문에 명시되지 않아 일반적 사양 차이로 한정 서술"
+    },
+    {
+      "id": "wifi-missing-device-manager-band-filter",
+      "claim": "장치 관리자 > 네트워크 어댑터 > 무선 어댑터 우클릭 > 속성 > 고급 탭에 있는 Wireless Mode 또는 Band 설정이 네트워크 대역을 막고 있을 수 있다. 공식 문서는 드물다고 밝히지만 발생한 적은 있다고 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — Wi-Fi 연결 문제 해결(Windows)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Windows(전 제조사)", "category": "노트북", "line": "무선 어댑터 속성에 Wireless Mode·Band 항목이 있는 기종", "years": "현행", "region": "글로벌" },
+      "caution": "고급 탭 설정을 바꾸기 전에 현재 값을 메모해 둘 것. 항목이 없는 기종도 많다.",
+      "cautionSource": "Microsoft 공식 문서가 해당 항목을 확인 방법으로 제시하고 드물다고 명시"
+    },
+    {
+      "id": "wifi-missing-enable-device-option",
+      "claim": "와이파이 설정 메뉴 자체가 없으면 장치 관리자 > 네트워크 어댑터를 펼쳐 무선 어댑터를 우클릭하고 디바이스 사용을 선택한다. 어댑터가 비활성화돼 있으면 목록과 메뉴가 사라진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — Wi-Fi 연결 문제 해결(Windows)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Windows(전 제조사)", "category": "노트북", "line": "전 라인", "years": "Windows 10·11", "region": "글로벌" },
+      "caution": "네트워크 어댑터 목록에 이름을 모르는 장치가 있어도 삭제하지 말 것. 무선 어댑터 이름은 제조사 사양서에서 확인한다.",
+      "cautionSource": "Microsoft 공식 문서가 어댑터 활성화 절차를 안내하고 무관한 장치 조작은 언급하지 않음. 삭제 금지는 일반 주의 사항"
+    },
+    {
+      "id": "wifi-missing-adapter-not-in-device-manager",
+      "claim": "장치 관리자의 네트워크 어댑터 목록에 무선 어댑터 자체가 없으면 Windows가 하드웨어를 감지하지 못한 상태다. 이때는 PC 제조사 웹사이트에서 해당 모델의 무선 드라이버를 내려받아 수동으로 설치한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — Wi-Fi 연결 문제 해결(Windows)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Windows(전 제조사)", "category": "노트북", "line": "전 라인", "years": "Windows 10·11", "region": "글로벌" },
+      "caution": "드라이버는 PC 제조사 모델명 기준으로 받는다. 다른 모델용 드라이버는 설치하지 않는다.",
+      "cautionSource": "Microsoft 공식 문서가 제조사 웹사이트에서 드라이버를 받으라고 명시"
+    },
+    {
+      "id": "wifi-missing-wlan-autoconfig-restart",
+      "claim": "Wi-Fi 메뉴가 없을 때 Win+R에 services.msc를 입력하고 WLAN AutoConfig 서비스를 찾아 다시 시작하면 무선 검색 기능이 복구될 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — Wi-Fi 연결 문제 해결(Windows)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Windows(전 제조사)", "category": "노트북", "line": "전 라인", "years": "Windows 10·11", "region": "글로벌" },
+      "caution": "서비스 시작 유형이 자동으로 설정돼 있는지도 함께 본다. 다시 시작이 회색으로 막히면 시작을 누른다. 이 세부 사항은 후기 자료 기준이며 공식 문서에는 없다.",
+      "cautionSource": "Microsoft 공식 문서는 재시작 절차만 명시. 시작 유형·회색 버튼 안내는 후기 자료(https://helpdeskgeek.com/wi-fi-option-not-showing-up-in-windows-11-11-fixes-to-try/ 를 열어 확인)이며 공식 확인 실패"
+    },
+    {
+      "id": "wifi-missing-driver-version-check-windows-update",
+      "claim": "Windows 업데이트 이후 와이파이가 사라졌다면 Windows Update를 실행한 뒤 장치 관리자 > 네트워크 어댑터 > 어댑터 속성 > 드라이버 탭에서 드라이버 버전과 날짜를 확인한다. 제조사 사이트의 최신 드라이버와 비교한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — Wi-Fi 연결 문제 해결(Windows)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Windows(전 제조사)", "category": "노트북", "line": "전 라인", "years": "Windows 10·11", "region": "글로벌" },
+      "caution": "드라이버 날짜가 업데이트 이전 것보다 최신인지, 제조사 사이트 버전과 같은지 확인할 것. 업데이트로 드라이버가 바뀌었다는 자가 보고는 있으나 이 조사에서 공식 근거는 확인하지 못했다.",
+      "cautionSource": "Microsoft 공식 문서의 드라이버 버전·날짜 비교 절차. 업데이트에 따른 드라이버 교체 현상은 공식 확인 실패"
+    },
+    {
+      "id": "wifi-missing-driver-uninstall-reinstall-after-update",
+      "claim": "업데이트 이후 문제가 시작됐다면 장치 관리자에서 무선 어댑터를 우클릭해 제거하고 드라이버 삭제 체크 박스를 선택한 뒤 다시 시작한다. 재부팅 후 Windows가 드라이버를 자동으로 설치해야 하며, 자동 설치가 안 되면 백업 드라이버를 설치한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — Wi-Fi 연결 문제 해결(Windows)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Windows(전 제조사)", "category": "노트북", "line": "전 라인", "years": "Windows 10·11", "region": "글로벌" },
+      "caution": "제거하기 전에 PC 제조사 사이트에서 백업 드라이버를 먼저 받아 둔다. 인터넷이 끊기면 다른 PC에서 받아 USB로 옮긴다.",
+      "cautionSource": "Microsoft 공식 문서가 제거 전 백업 드라이버 확보를 명시하고, 인터넷이 없을 때 다른 PC에서 받으라고 안내"
+    },
+    {
+      "id": "wifi-missing-power-saving-uncheck",
+      "claim": "전원 절약 때문에 어댑터가 꺼져 목록에서 사라질 수 있다. 장치 관리자 > 네트워크 어댑터 > 무선 어댑터 속성 > 전원 관리 탭에서 전원을 아끼기 위해 컴퓨터가 이 장치를 끌 수 있도록 허용하는 항목을 해제한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — Wi-Fi 연결 문제 해결(Windows)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Windows(전 제조사)", "category": "노트북", "line": "전 라인", "years": "Windows 10·11", "region": "글로벌" },
+      "caution": "이 설정은 연결 끊김 증상에도 쓰인다. 목록이 아예 안 뜨는 증상이라면 이 항목을 먼저 확인해 본다.",
+      "cautionSource": "Microsoft 공식 문서의 전원 관리 탭 안내"
+    },
+    {
+      "id": "wifi-missing-network-reset-last-resort-win11",
+      "claim": "Windows 11에서는 설정 > 네트워크 및 인터넷 > 고급 네트워크 설정 > 네트워크 재설정 > 지금 재설정으로 네트워크 설정을 초기화할 수 있다. 공식 문서는 다른 방법을 모두 해본 뒤 마지막으로 쓰라고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — Wi-Fi 연결 문제 해결(Windows)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Windows(전 제조사)", "category": "노트북", "line": "전 라인", "years": "Windows 11", "region": "글로벌" },
+      "caution": "네트워크 재설정은 모든 네트워크 어댑터와 설정을 지운다. 저장된 와이파이 비밀번호를 미리 확인하고, VPN 클라이언트와 Hyper-V 가상 스위치는 재설치가 필요할 수 있다. 재설정 후 재부팅된다.",
+      "cautionSource": "Microsoft 공식 문서의 Notes 항목(어댑터 삭제, VPN·Hyper-V 재설치 가능성)"
+    },
+    {
+      "id": "wifi-missing-network-reset-path-win10",
+      "claim": "Windows 10에서 네트워크 재설정은 설정 > 네트워크 및 인터넷 > 상태 > 네트워크 재설정 경로에 있다. Windows 11과 경로가 다르므로 기기 버전을 먼저 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft 지원 — Wi-Fi 연결 문제 해결(Windows)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Windows(전 제조사)", "category": "노트북", "line": "전 라인", "years": "Windows 10", "region": "글로벌" },
+      "caution": "Windows 버전은 설정 > 시스템 > 정보에서 확인할 수 있다.",
+      "cautionSource": "Microsoft 공식 문서가 Windows 10 경로를 별도로 명시"
+    },
+    {
+      "id": "wifi-missing-error-code-43-10-driver-or-hardware",
+      "claim": "장치 관리자에 오류 코드 43 또는 10이 뜨는 무선 어댑터는 드라이버를 재설치해도 반복되는 경우가 있다. Microsoft 커뮤니티 질의응답의 한 답변은 이를 사실상 하드웨어 고장으로 봤다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Microsoft Q&A 커뮤니티 답변(사용자 질문, 2022-02-20)",
+      "source_url": "https://learn.microsoft.com/en-us/answers/questions/3832214/wireless-network-adapter-error-code-43-and-code-10",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Windows(전 제조사)", "category": "노트북", "line": "Qualcomm Atheros QCA9377 탑재 Acer Aspire A315-41 사례", "years": "2022년 질문 기준", "region": "글로벌" },
+      "caution": "한 사용자 사례이며 답변도 한 명의 의견이다. 이를 근거로 AS 기준을 단정하지 말 것. 코드 43·10의 정확한 의미는 이 페이지에 없어서 확인하지 못했다.",
+      "cautionSource": "Q&A 페이지에서 답변자가 하드웨어 고장 가능성을 말했으나 공식 답변이 아님. 코드 의미는 페이지에 없음"
+    },
+    {
+      "id": "wifi-missing-repair-when-driver-reinstall-fails",
+      "claim": "드라이버를 재설치해도 어댑터가 장치 관리자에 나타나지 않거나 오류가 계속되면, 커뮤니티 답변은 하드웨어 고장으로 보고 제조사 수리를 권했다. 이 단계부터는 자가 해결 범위를 벗어난다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Microsoft Q&A 커뮤니티 답변(사용자 질문, 2022-02-20)",
+      "source_url": "https://learn.microsoft.com/en-us/answers/questions/3832214/wireless-network-adapter-error-code-43-and-code-10",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Windows(전 제조사)", "category": "노트북", "line": "전 라인", "years": "현행", "region": "글로벌" },
+      "caution": "AS 접수 경로나 보증 기간은 이 자료에 근거가 없다. 제조사 고객센터에서 보증 여부를 확인하도록 안내할 것.",
+      "cautionSource": "커뮤니티 답변의 권고(공장 수리) 한 건. 보증 조건은 공식 근거 없음"
+    },
+    {
+      "id": "wifi-missing-internal-card-reseat-not-for-self",
+      "claim": "커뮤니티 답변은 노트북을 분해해 내장 무선카드를 분리·닦고 다시 꽂는 방법을 제안했다. 분해를 전제로 하는 방법이므로 자가점검 단계에서는 권하지 않는다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Microsoft Q&A 커뮤니티 답변(사용자 질문, 2022-02-20)",
+      "source_url": "https://learn.microsoft.com/en-us/answers/questions/3832214/wireless-network-adapter-error-code-43-and-code-10",
+      "checked": "2026-11-03",
+      "scope": { "brand": "Windows(전 제조사)", "category": "노트북", "line": "무선카드를 탈착할 수 있는 구형 기종", "years": "2022년 질문 기준", "region": "글로벌" },
+      "caution": "노트북 분해는 배터리 손상 위험이 있다. 분해 전 배터리 부풀음 여부를 확인하고, 부풀었으면 즉시 중단한다. 분해 대신 제조사 수리를 안내한다.",
+      "cautionSource": "as-safety-baseline 공통 팩트 battery-swelling-stop-immediately (Apple 정품 배터리 문서)"
+    }
+  ]
+}

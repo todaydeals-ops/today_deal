@@ -1,0 +1,152 @@
+{
+  "topic": "변기 물이 잘 안 내려가거나 계속 흐를 때 점검 (물탱크 원인·뚫어펌프·혼합 금지·업체 호출 기준)",
+  "brand": "공통",
+  "article": "toilet-flush-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "공통_dehumidifier-selfcheck::float-sensor-stuck",
+      "reason": "제습기 물통 안의 플로트 센서 이야기로, 변기 물탱크의 플로트·필밸브와는 기기와 구조가 다르다. 증상(물통 비움 표시)도 다르다."
+    },
+    {
+      "id": "공통_bidet-selfcheck2::lever-drain-stuck",
+      "reason": "비데 변좌 옆 레버 드레인(배수 버튼) 이야기로, 변기 물탱크 내부의 플래퍼·플로트 원인과 무관하다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "toilet-running-diagnosis-marking-test",
+      "claim": "물이 계속 흐르는 물탱크식 변기는 급수밸브를 잠그고 탱크 수위에 표시를 한 뒤 10~15분 기다린다. 표시보다 수위가 내려가 있으면 원인은 플래퍼(고무 마개)일 가능성이 높아 플래퍼부터 교체한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Fluidmaster 고객지원 — Constantly Running Toilet 진단 안내",
+      "source_url": "https://fluidmaster.com/toilet-problems/toilet-running-constantly/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "변기", "line": "물탱크식 변기(Fluidmaster 부품 기준)", "years": "전 연식", "region": "US(제조사 미국 사이트, 국내 변기 구조와 부품 규격은 다를 수 있음)" },
+      "caution": "플래퍼 교체 전 급수밸브를 반드시 잠그고 작업한다. 탱크 수위 표시선 기준이므로 물을 쓰지 않은 상태에서 측정한다.",
+      "cautionSource": "제조사 진단 절차의 단계 순서 및 급수 차단 안내"
+    },
+    {
+      "id": "toilet-fill-valve-overflow-check",
+      "claim": "탱크에 물을 채웠을 때 수위가 오버플로우관 안으로 넘쳐 들어가면 급수밸브(필밸브) 쪽 문제다. 먼저 밸브 내부 이물질을 빼내고, 그래도 안 되면 필밸브를 교체한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Fluidmaster 고객지원 — Constantly Running Toilet 진단 안내",
+      "source_url": "https://fluidmaster.com/toilet-problems/toilet-running-constantly/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "변기", "line": "물탱크식 변기 필밸브(Fluidmaster 기준)", "years": "전 연식", "region": "US" },
+      "caution": "수위 조절나사로 물 높이를 낮추기 전에, 오버플로우관으로 물이 넘치는 상태가 계속되면 물 낭비와 누수가 생기므로 바로 점검한다.",
+      "cautionSource": "제조사 진단 절차 Step 1(수위가 오버플로우관으로 넘치는지 확인)"
+    },
+    {
+      "id": "toilet-flush-valve-after-flapper",
+      "claim": "플래퍼를 교체한 뒤에도 탱크 물이 계속 빠지면 다음 원인은 플러시 밸브(배수구 쪽 밸브 본체)이며 이 부품을 교체한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Fluidmaster 고객지원 — Constantly Running Toilet 진단 안내",
+      "source_url": "https://fluidmaster.com/toilet-problems/toilet-running-constantly/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "변기", "line": "물탱크식 변기 플러시 밸브(Fluidmaster 기준)", "years": "전 연식", "region": "US" },
+      "caution": "플러시 밸브 교체는 탱크를 분리하는 작업이 들어가므로, 어렵다면 설치 기사에게 맡기는 것이 맞다.",
+      "cautionSource": "제조사 Step 3 및 Step 4(탱크 볼트·와셔 교체) 안내의 작업 범위"
+    },
+    {
+      "id": "toilet-tank-bottom-leak-bolts",
+      "claim": "탱크 바닥에서 물이 새는 경우 탱크 고정 볼트와 와셔를 교체하고, 물이 뚜껑이나 레버 쪽에서 새면 그 부위를 먼저 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Fluidmaster 고객지원 — Constantly Running Toilet 진단 안내",
+      "source_url": "https://fluidmaster.com/toilet-problems/toilet-running-constantly/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "변기", "line": "물탱크식 변기(분리형 탱크)", "years": "전 연식", "region": "US" },
+      "caution": "바닥으로 물이 흥건히 흐르는 상태에서는 전원·수도 차단 후 작업하고, 바닥재 손상 여부를 같이 확인한다.",
+      "cautionSource": "제조사 Step 4 누수 점검 안내"
+    },
+    {
+      "id": "adjustable-flapper-not-pre-1994-toilets",
+      "claim": "조절식(어저스터블) 플래퍼는 1994년 이전에 만들어진 변기에 쓰면 안 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Fluidmaster 고객지원 — Adjustable Toilet Flappers 안내",
+      "source_url": "https://fluidmaster.com/toilet-problems/adjustable-toilet-flappers-work/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "변기", "line": "조절식 플래퍼", "years": "1994 이전 제작 변기 제외", "region": "US" },
+      "caution": "연식을 모르면 조절식 플래퍼 구매 전 변기 모델·제작 연도를 확인한다. 1994년 기준은 제조사 문서의 수치다.",
+      "cautionSource": "제조사 문서의 연식 제한 문장(1994년 이전 변기 사용 금지)"
+    },
+    {
+      "id": "adjustable-flapper-gpf-range",
+      "claim": "조절식 플래퍼는 물 사용량 1.28gpf(약 4.8L)와 1.6gpf(약 6L) 변기용으로 설계되어 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Fluidmaster 고객지원 — Adjustable Toilet Flappers 안내",
+      "source_url": "https://fluidmaster.com/toilet-problems/adjustable-toilet-flappers-work/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "변기", "line": "조절식 플래퍼", "years": "1.28·1.6gpf 변기", "region": "US(gpf 단위)" },
+      "caution": "gpf(갤런) 단위는 미국 기준이라 국내 변기 표기와 직접 대응하지 않을 수 있다. 용량 확인이 어려우면 사이즈부터 맞춘다.",
+      "cautionSource": "gpf 단위 자체의 정의(1 gal = 약 3.785L)"
+    },
+    {
+      "id": "adjustable-flapper-float-direction",
+      "claim": "조절식 플래퍼에서 체인의 플로트를 위로 올리면 플래퍼가 빨리 닫히고, 아래로 내리면 플래퍼가 더 오래 열려 있어 물이 더 많이 나간다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Fluidmaster 고객지원 — Adjustable Toilet Flappers 안내",
+      "source_url": "https://fluidmaster.com/toilet-problems/adjustable-toilet-flappers-work/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "변기", "line": "플로트 조절 방식 조절식 플래퍼", "years": "1994 이후 변기", "region": "US" },
+      "caution": "플로트 위치를 바꾼 뒤에는 물을 한 번 내려 배수 상태를 확인하고, 물이 덜 내려가면 원위치로 돌린다.",
+      "cautionSource": "제조사 문서의 플로트 위치 설명"
+    },
+    {
+      "id": "toilet-in-tank-bleach-cleaner-warning",
+      "claim": "탱크 안에 넣는 드롭인 변기 세정제 중 표백제(염소) 성분이 든 제품은 탱크 부품을 손상시키고 누수를 일으킬 수 있으며, 이를 쓰면 Fluidmaster 제품 보증이 무효가 된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Fluidmaster 고객지원 — Adjustable Toilet Flappers 안내",
+      "source_url": "https://fluidmaster.com/toilet-problems/adjustable-toilet-flappers-work/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "변기", "line": "탱크 내 드롭인 세정제", "years": "전 연식", "region": "US" },
+      "caution": "탱크 세정제는 표백제·염소 성분이 없는 제품으로 바꾸도록 안내한다. 제조사 권장 대체 제품명은 문서 내 예시이며 특정 제품 광고가 아니다.",
+      "cautionSource": "제조사 경고 문구(표백제·염소 성분 드롭인 세정제 사용 금지)"
+    },
+    {
+      "id": "household-bleach-mix-never-chlorine-gas",
+      "claim": "표백제(락스)를 변기 세정제나 암모니아 계열 제품과 섞으면 유독가스가 생길 수 있어 어떤 세정제도 섞지 말아야 하며, 섞인 뒤 몸에 이상이 생기면 현장을 떠나 긴급전화(영국 999)를 걸어야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Bedfordshire Fire and Rescue Service — 가정용 세정제 혼합 위험 경고(2025-08-04)",
+      "source_url": "https://www.bedsfire.gov.uk/news/warning-mixing-household-cleaners-poses-serious-health-risk-fire-service-urges-public-take",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가정용 세정제", "line": "표백제·변기 세정제·암모니아 스프레이", "years": "2025-08 기준", "region": "UK(영국 소방 당국 경고, 국내 공식 문구 아님)" },
+      "caution": "국내 세제 혼합 금지 문구는 한국소비자원·환경부 공식 원문으로 재확인이 필요했다(검색으로 원문 미확인). 국내 글에 옮길 때는 영국 소방 당국 문서임을 밝힌다. 식초와의 혼합은 이 문서에 명시되지 않았다.",
+      "cautionSource": "해당 기사의 혼합 금지 문구(표백제+변기 세정제, 암모니아 계열) 원문"
+    },
+    {
+      "id": "toilet-plunger-seal-drain-hole",
+      "claim": "뚫어뻥(플런저)은 고무 부분이 변기 배수구를 완전히 덮도록 밀착시킨 뒤 위아래로 압력을 준다. 막힘이 풀렸는지는 물을 살짝 내려 물이 빠지는지 확인한다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "tilnote.io 블로그 글(개인 게시글, 공식 출처 아님)",
+      "source_url": "https://tilnote.io/pages/6a43ed6288a337ba183169f0",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "변기", "line": "일반 가정용 양변기 뚫어뻥", "years": "전 연식", "region": "KR(개인 글)" },
+      "caution": "개인 블로그 방법이라 공식 근거가 없다. 사용법은 상식선 수준이지만 배관 손상 위험이 있는 강한 압력(펌프 과다 사용)은 피한다. 막힘이 2~3회 시도 후에도 안 풀리면 전문가를 부른다.",
+      "cautionSource": "블로그 출처만 있어 수치·기준 없음. 세부 압력 기준은 주장하지 않는다"
+    },
+    {
+      "id": "toilet-hot-water-no-boiling",
+      "claim": "끓는 물을 변기에 붓는 방법은 도기를 손상시킬 수 있어 피해야 하며, 따뜻한 물(약 60~70도) 정도가 적당하다고 개인 블로그들이 공통으로 적고 있다.",
+      "tier": "확인실패",
+      "evidence": "후기",
+      "source": "tilnote.io 블로그 글(개인 게시글, 공식 출처 아님)",
+      "source_url": "https://tilnote.io/pages/6a91b3be236ed8213173d602",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "변기", "line": "도기(세라믹) 변기", "years": "전 연식", "region": "KR(개인 글)" },
+      "caution": "온도 수치(60~70도)는 개인 글에서만 확인되어 공식 기준이 아니다. 끓는 물 금지라는 방향만 쓰고, 정확한 온도는 주장하지 않는다.",
+      "cautionSource": "온도 수치의 출처가 개인 블로그뿐이라 신뢰도 낮음을 명시"
+    }
+  ]
+}

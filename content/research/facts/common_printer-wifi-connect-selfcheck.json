@@ -1,0 +1,261 @@
+{
+  "topic": "프린터 와이파이 연결 실패 자가점검 (2.4GHz·공유기 대역·SSID·IP·공통 점검 순서)",
+  "brand": "공통",
+  "article": "printer-wifi-connect-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "hp-printer-connection-usb-wireless-check",
+    "hp-wifi-reconnection-basic-step",
+    "hp-wps-wireless-setup-method",
+    "hp-cold-reset-power-cycle",
+    "hp-customer-center-korea",
+    "canon-wifi-connection-basic-check",
+    "canon-wifi-wps-connection",
+    "wifi-2-4ghz-interference-microwave-bluetooth",
+    "factory-reset-before-checklist-reboot-first",
+    "factory-reset-isp-router-requires-consultation"
+  ],
+  "declined_facts": [
+    {
+      "id": "hp-offline-status-windows-control-panel",
+      "why": "오프라인 표시 해제는 Wi-Fi 연결이 이미 된 뒤의 단계라 이번 글의 범위(연결 자체가 실패하는 경우)와 다르다. 별도 글에서 다룬다."
+    },
+    {
+      "id": "hp-driver-reinstall-hp-website",
+      "why": "드라이버 재설치는 네트워크 연결이 잡힌 뒤의 단계다. 연결 실패 단계에서 먼저 하면 원인을 흐린다."
+    },
+    {
+      "id": "hp-printhead-cleaning-control-panel",
+      "why": "프린트 헤드 청소는 인쇄 품질 문제용이라 연결 실패와 무관하다."
+    },
+    {
+      "id": "hp-ink-cartridge-contact-cleaning",
+      "why": "카트리지 접촉부 청소는 잉크 인식 오류용이라 연결 실패와 무관하다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "printer-2-4ghz-band-common-cause",
+      "claim": "무선 프린터는 2.4GHz 대역만 지원하는 경우가 많아, 공유기가 5GHz 이름만 방송하면 프린터가 네트워크를 찾지 못한다. HP 공식 안내도 이 상황을 듀얼밴드 공유기에서 생기는 흔한 원인으로 든다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HP코리아 지원 문서 — 연결하려는 무선 네트워크 이름(SSID)이 검색되지 않습니다",
+      "source_url": "https://cs-apj-static.ext.hp.com/css-apj-km/KR/doc/d831aafda63897f3fa87f716a07bebf5/googleContent.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "공통",
+        "category": "프린터",
+        "line": "무선 프린터 (2.4GHz 전용 모델이 많음)",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "5GHz를 지원하는 모델도 있으므로, 연결 전에 제품 사양표의 무선 주파수 항목을 먼저 확인한다.",
+      "cautionSource": "HP 지원 문서의 '경우가 많기 때문에' 표현 (모델별 차이를 전제로 한 안내)"
+    },
+    {
+      "id": "epson-separate-ssid-for-2-4ghz",
+      "claim": "공유기가 2.4GHz와 5GHz를 같은 이름(SSID)으로 묶어 방송하고 있다면, 두 대역에 서로 다른 이름을 주고 프린터는 2.4GHz 쪽 이름에 연결하는 것이 엡손 공식 매뉴얼의 해결 방법이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Epson 공식 매뉴얼 — 프린터가 무선 라우터를 찾거나 연결할 수 없는 경우",
+      "source_url": "https://files.support.epson.com/docid/cpd4/cpd41354/source/printers/source/troubleshooting/reference/problem_network_wireless_router.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "엡손",
+        "category": "프린터/복합기",
+        "line": "무선 LAN 지원 전 라인",
+        "years": "현행 모델",
+        "region": "글로벌"
+      },
+      "caution": "공유기 이름을 바꾸면 노트북·스마트폰도 새 이름으로 다시 연결해야 한다. 프린터만 바꾸면 기기끼리 안 보일 수 있다."
+    },
+    {
+      "id": "epson-dual-band-mode-for-5ghz-router",
+      "claim": "엡손 공식 매뉴얼은 5GHz 무선 공유기를 쓸 때 공유기를 듀얼 밴드(2.4GHz와 5GHz 동시 방송) 모드로 설정하라고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Epson 공식 매뉴얼 — 프린터가 무선 라우터를 찾거나 연결할 수 없는 경우",
+      "source_url": "https://files.support.epson.com/docid/cpd4/cpd41354/source/printers/source/troubleshooting/reference/problem_network_wireless_router.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "엡손",
+        "category": "프린터/복합기",
+        "line": "무선 LAN 지원 전 라인",
+        "years": "현행 모델",
+        "region": "글로벌"
+      },
+      "caution": "공유기 관리 화면에서 듀얼 밴드 설정 이름이 제조사마다 다르므로, 메뉴를 찾기 어려우면 공유기 사용설명서의 무선 설정 항목을 본다."
+    },
+    {
+      "id": "printer-ssid-broadcast-must-be-on",
+      "claim": "공유기의 네트워크 이름 알림(SSID 브로드캐스트)이 꺼져 있으면 프린터의 무선 네트워크 목록에 이름이 뜨지 않는다. HP 공식 안내도 이 설정이 비활성화돼 있을 수 있다고 점검하도록 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HP코리아 지원 문서 — 연결하려는 무선 네트워크 이름(SSID)이 검색되지 않습니다",
+      "source_url": "https://cs-apj-static.ext.hp.com/css-apj-km/KR/doc/d831aafda63897f3fa87f716a07bebf5/googleContent.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "공통",
+        "category": "프린터",
+        "line": "무선 프린터 전 라인",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "이름 알림은 보안 설정이기도 하므로 임시로 켰다가 연결 후 원래대로 돌려두는 것이 좋다."
+    },
+    {
+      "id": "epson-hidden-ssid-manual-entry",
+      "claim": "공유기가 네트워크 이름을 숨긴 상태라면 프린터 목록에 나타나지 않으므로, 엡손 공식 매뉴얼은 프린터에서 이름(SSID)을 직접 입력해 연결하라고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Epson 공식 매뉴얼 — 프린터가 무선 라우터를 찾거나 연결할 수 없는 경우",
+      "source_url": "https://files.support.epson.com/docid/cpd4/cpd41354/source/printers/source/troubleshooting/reference/problem_network_wireless_router.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "엡손",
+        "category": "프린터/복합기",
+        "line": "무선 LAN 지원 전 라인",
+        "years": "현행 모델",
+        "region": "글로벌"
+      },
+      "caution": "이름을 직접 입력할 때는 대소문자와 띄어쓰기를 공유기 설정과 똑같이 맞춰야 한다."
+    },
+    {
+      "id": "hp-band-to-band-communication-limit",
+      "claim": "일부 듀얼밴드 공유기는 5GHz에 연결된 기기와 2.4GHz에 연결된 기기끼리 서로 통신하지 못하게 되어 있다. 그러면 프린터와 컴퓨터를 둘 다 2.4GHz에 연결하거나, 공유기 제조사에 문의하라고 HP는 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HP코리아 지원 문서 — 연결하려는 무선 네트워크 이름(SSID)이 검색되지 않습니다",
+      "source_url": "https://cs-apj-static.ext.hp.com/css-apj-km/KR/doc/d831aafda63897f3fa87f716a07bebf5/googleContent.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "공통",
+        "category": "프린터",
+        "line": "듀얼밴드 공유기 환경",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "통신 제한 여부는 공유기 기능에 따라 다르다. 인쇄 테스트로 실제 통신이 되는지 확인한다."
+    },
+    {
+      "id": "epson-hidden-distance-interference-check",
+      "claim": "엡손 공식 매뉴얼은 프린터를 무선 공유기 가까이에 두고, 전자레인지·2.4GHz 무선전화·큰 금속 물체(캐비닛 등)에서 떨어뜨리라고 안내한다. 이 조건이 안 맞으면 연결이 끊기거나 불안정해진다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Epson 공식 매뉴얼 — 프린터가 무선 라우터를 찾거나 연결할 수 없는 경우",
+      "source_url": "https://files.support.epson.com/docid/cpd4/cpd41354/source/printers/source/troubleshooting/reference/problem_network_wireless_router.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "엡손",
+        "category": "프린터/복합기",
+        "line": "무선 LAN 지원 전 라인",
+        "years": "현행 모델",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "epson-mac-filter-add-printer-address",
+      "claim": "공유기에 MAC 주소 필터링이 켜져 있으면 프린터의 MAC 주소를 허용 목록에 추가해야 연결된다. 프린터의 MAC 주소는 네트워크 상태 용지(네트워크 상태 시트)에서 확인한다고 엡손 공식 매뉴얼이 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Epson 공식 매뉴얼 — 프린터가 무선 라우터를 찾거나 연결할 수 없는 경우",
+      "source_url": "https://files.support.epson.com/docid/cpd4/cpd41354/source/printers/source/troubleshooting/reference/problem_network_wireless_router.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "엡손",
+        "category": "프린터/복합기",
+        "line": "무선 LAN 지원 전 라인",
+        "years": "현행 모델",
+        "region": "글로벌"
+      },
+      "caution": "MAC 필터링은 기기 추가 시 자주 막히는 원인이다. 필터를 끄는 것보다 프린터 주소만 허용 목록에 넣는 편이 안전하다."
+    },
+    {
+      "id": "printer-ip-changed-after-router-reboot",
+      "claim": "공유기를 재부팅하거나 교체하면 프린터 IP가 바뀔 수 있어, 컴퓨터가 예전 주소로 찾다가 인쇄나 스캔이 되지 않는다. HP는 이 경우 컴퓨터에 저장된 프린터 주소를 새 IP로 갱신하라고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HP코리아 지원 문서 — HP 프린터 IP 주소가 변경되었을 때 새 IP 주소 갱신 방법",
+      "source_url": "https://cs-apj-static.ext.hp.com/css-apj-km/KR/doc/b012ca9d3d54880acca556e5145cf0f5/googleContent.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "HP",
+        "category": "프린터",
+        "line": "IP 자동할당(DHCP) 무선 프린터",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "교체한 공유기가 다른 IP 대역을 쓰면 프린터가 다른 대역으로 옮겨질 수 있다. 공유기 관리 화면의 IP 대역을 먼저 확인한다."
+    },
+    {
+      "id": "hp-ip-update-solution-center-steps",
+      "claim": "Windows에서는 HP 길잡이(HP Solution Center)의 유틸리티 메뉴에서 프린터 IP 주소 갱신 기능을 열고, 새 IP를 입력해 테스트한 뒤 저장하고 컴퓨터를 재시작하면 연결이 복구된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HP코리아 지원 문서 — HP 프린터 IP 주소가 변경되었을 때 새 IP 주소 갱신 방법",
+      "source_url": "https://cs-apj-static.ext.hp.com/css-apj-km/KR/doc/b012ca9d3d54880acca556e5145cf0f5/googleContent.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "HP",
+        "category": "프린터",
+        "line": "HP Solution Center 설치된 Windows PC",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "테스트가 실패하면 입력한 IP 오타, 프린터와 컴퓨터가 같은 공유기·같은 IP 대역인지 순서대로 확인한다."
+    },
+    {
+      "id": "printer-ip-lookup-panel-or-report",
+      "claim": "프린터의 IP 주소는 프린터 제어판 표시 화면이나 네트워크 구성 보고서(출력물)에서 확인할 수 있다. 컴퓨터에 주소를 넣기 전에 이 값을 먼저 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "HP코리아 지원 문서 — HP 프린터 IP 주소가 변경되었을 때 새 IP 주소 갱신 방법",
+      "source_url": "https://cs-apj-static.ext.hp.com/css-apj-km/KR/doc/b012ca9d3d54880acca556e5145cf0f5/googleContent.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "HP",
+        "category": "프린터",
+        "line": "제어판 또는 보고서 출력 가능한 무선 프린터",
+        "years": "현행 모델",
+        "region": "KR"
+      },
+      "caution": "보고서 출력 메뉴 이름은 모델마다 다르다. 제어판에 IP가 바로 뜨지 않으면 프린터 사용설명서의 네트워크 보고서 항목을 찾는다."
+    },
+    {
+      "id": "epson-static-ip-epsonnet-config",
+      "claim": "엡손 프린터의 IP 주소를 고정(정적 IP)하려면 EpsonNet Config 유틸리티로 설정할 수 있다. 공유기가 IP를 바꾸는 문제를 줄이는 방법이라고 엡손 공식 매뉴얼이 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Epson 공식 매뉴얼 — 프린터가 무선 라우터를 찾거나 연결할 수 없는 경우",
+      "source_url": "https://files.support.epson.com/docid/cpd4/cpd41354/source/printers/source/troubleshooting/reference/problem_network_wireless_router.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "엡손",
+        "category": "프린터/복합기",
+        "line": "EpsonNet Config 지원 모델",
+        "years": "현행 모델",
+        "region": "글로벌"
+      },
+      "caution": "고정 IP는 공유기의 IP 대역과 맞아야 한다. 대역이 어긋나면 프린터가 네트워크에서 사라지므로, 대역을 확인하고 입력한다."
+    },
+    {
+      "id": "epson-password-security-type-exact",
+      "claim": "엡손 공식 매뉴얼은 보안 방식(WEP 또는 WPA)을 공유기 설정과 맞추고, 비밀번호(WPA 암호 또는 WEP 키)를 정확히 입력하라고 안내한다. 연결 실패의 흔한 원인이 비밀번호 오입력이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Epson 공식 매뉴얼 — 프린터가 무선 라우터를 찾거나 연결할 수 없는 경우",
+      "source_url": "https://files.support.epson.com/docid/cpd4/cpd41354/source/printers/source/troubleshooting/reference/problem_network_wireless_router.html",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "엡손",
+        "category": "프린터/복합기",
+        "line": "무선 LAN 지원 전 라인",
+        "years": "현행 모델",
+        "region": "글로벌"
+      },
+      "caution": "공유기 비밀번호를 최근에 바꿨다면 PC와 프린터에 예전 비밀번호가 저장돼 있을 수 있다. 저장된 무선 연결을 지우고 새 비밀번호로 다시 입력한다.",
+      "cautionSource": "Epson 공식 매뉴얼의 Wi-Fi Direct 안내 (비밀번호 변경 후 기존 DIRECT 설정 삭제 후 재입력)"
+    }
+  ]
+}

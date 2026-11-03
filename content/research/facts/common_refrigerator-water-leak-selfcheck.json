@@ -1,0 +1,250 @@
+{
+  "topic": "냉장고 아래로 물이 샐 때 정상 결로인지 고장인지 자가 구분",
+  "brand": "공통",
+  "article": "refrigerator-water-leak-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "ice-not-produced-water-supply-issue"
+  ],
+  "declined_facts": [
+    {
+      "id": "fridge-noise-defrost-drip-tick",
+      "why": "제상 중 뚝뚝 소리의 정상 여부 팩트는 소음 주제 글용이다. 누수 글에서는 물 흔적의 원인 판별에 쓰지 않는다."
+    },
+    {
+      "id": "fridge-noise-thermal-expansion-crack",
+      "why": "뚝 소리 열팽창 팩트는 소음 판별 전용이라 누수 글의 상황과 맞지 않는다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "samsung-leak-condensation-normal-wipe",
+      "claim": "냉장고 바닥이나 선반에 물기가 맺히는 것은 도어를 여닫을 때 들어온 공기 속 수분이 차가운 면에 맺혀 생기는 현상이며, 여름과 장마철에 많이 나타난다. 심하지 않으면 그대로 사용해도 되고, 심하면 마른 수건으로 닦은 뒤 사용하면 된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 고객지원 — 마루에 물이 고이고 누수가 발생합니다 (삼성 냉장고)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/38793",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "냉장고 전 라인(안내 페이지 기준)", "years": "2017-05-12 등록 페이지 기준", "region": "KR" },
+      "caution": "물이 계속 고이거나 양이 늘면 결로로 단정하지 않는다. 다음 팩트의 배수구 막힘과 주변 가전 누수를 먼저 확인한다.",
+      "cautionSource": "삼성전자서비스 38793 페이지가 결로 처리 후에도 누수가 계속되면 배수구 점검과 서비스 문의를 안내하는 구조"
+    },
+    {
+      "id": "samsung-leak-defrost-drain-clog",
+      "claim": "냉장고 안 증발기에서 제상수(성에가 녹은 물)가 제대로 빠지지 않거나 드레인 구멍에 이물질이나 얼음이 끼면 누수가 생길 수 있고, 이 경우 냉장과 냉동 기능에도 문제가 생길 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 고객지원 — 마루에 물이 고이고 누수가 발생합니다 (삼성 냉장고)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/38793",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "냉장고 전 라인(안내 페이지 기준)", "years": "2017-05-12 등록 페이지 기준", "region": "KR" },
+      "caution": "이 페이지는 2017년 작성본이다. 페이지 안내 번호는 최신 확인이 필요하다. 냉장·냉동 기능 저하가 함께 있으면 자가 청소 전에 서비스 점검을 우선한다.",
+      "cautionSource": "삼성전자서비스 38793 페이지의 등록일 2017-05-12"
+    },
+    {
+      "id": "samsung-leak-drain-24h-door-open",
+      "claim": "드레인 구멍 막힘이 의심되고 음식을 따로 보관할 수 있다면 전원을 끄고 도어를 약 24시간 열어 둔 뒤 전원을 다시 켜는 방법이 삼성 안내에 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 고객지원 — 마루에 물이 고이고 누수가 발생합니다 (삼성 냉장고)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/38793",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "냉장고 전 라인(안내 페이지 기준)", "years": "2017-05-12 등록 페이지 기준", "region": "KR" },
+      "caution": "음식 보관 위치를 먼저 정한다. 해빙 중 물이 많이 흐르므로 수건과 물받이를 미리 깐다. 얼음을 뜨거운 물이나 드라이어로 녹이지 않는다.",
+      "cautionSource": "LG전자 미국 고객지원(lg.com/us) 해빙 안내의 드라이어·뜨거운 물 금지 문구와 교차 확인"
+    },
+    {
+      "id": "lg-leak-three-causes",
+      "claim": "LG 냉장고 바닥 물은 세 가지 원인으로 나뉜다. 내부 요인은 용기 밀폐 불량이나 뜨거운 음식·잦은 문 개폐로 생기는 결로와 성에이고, 외부 요인은 정수기 호스 연결 불량이나 싱크대 배수구·보일러에서 샌 물이 흘러드는 경우이며, 기기 요인은 냉동실이나 냉장실 아래칸에 얼음이나 이물질이 끼어 내부 배수구가 막혀 물받이로 빠지지 못하고 앞으로 넘치는 경우다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — LG 냉장고 바닥으로 물이 흘러나올 때 어떻게 해야 하나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151288380744",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "상냉장하냉동·정수기형 냉장고 기준(페이지 대표 모델)", "years": "2026-06-17 게시 페이지 기준", "region": "KR" },
+      "caution": "세 원인이 겹칠 수 있다. 바닥 물이 냉장고 바깥 쪽에서 왔는지 먼저 확인하고 원인을 좁힌다.",
+      "cautionSource": "LG전자 고객지원 페이지의 원인 3분류 표기"
+    },
+    {
+      "id": "lg-leak-defrost-procedure-24h",
+      "claim": "LG 안내에 따르면 배수구가 막혔을 때는 음식을 옮기고, 바닥에 마른 수건을 깔고, 전원 코드를 뽑은 뒤 냉장실과 냉동실 문을 활짝 열어 최소 24시간 둔다. 여름에는 약 하루, 겨울에는 최대 3일 정도 걸릴 수 있다. 성에가 다 녹으면 물기를 닦고 전원을 다시 연결하며, 정상 온도 복귀까지 24~48시간이 걸릴 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — LG 냉장고 바닥으로 물이 흘러나올 때 어떻게 해야 하나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151288380744",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "상냉장하냉동·정수기형 냉장고 기준", "years": "2026-06-17 게시 페이지 기준", "region": "KR" },
+      "caution": "해빙 중 물이 많이 흐르므로 수건을 미리 깐다. 겨울에는 3일까지 기다릴 수 있음을 미리 알린다. 음식 보관 위치는 전원 차단 전에 정한다.",
+      "cautionSource": "LG전자 고객지원 페이지의 해빙 시간(여름 하루, 겨울 최대 3일)과 해빙 중 물 흐름 안내"
+    },
+    {
+      "id": "lg-leak-no-hairdryer-hot-water",
+      "claim": "LG 미국 안내에 따르면 성에를 드라이어나 뜨거운 물로 녹이면 내부 플라스틱 부품이 손상되거나 변형될 수 있어 하면 안 된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 미국 고객지원 help library — how to troubleshoot water leaking from the ceiling or pooling on the floor in your LG top freezer refrigerator",
+      "source_url": "https://www.lg.com/us/support/help-library/how-to-troubleshoot-water-leaking-from-the-ceiling-or-pooling-on-the-floor-in-your-lg-top-freezer-refrigerator--20155272207393",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "탑프리저 냉장고(미국 안내 페이지)", "years": "전 연식", "region": "US" },
+      "caution": "미국 페이지 기준이다. 국내 전화번호나 보증 조건은 쓰지 않는다. 날카로운 도구 사용 금지는 이 페이지 원문에서 확인하지 못했으므로 쓰지 않는다.",
+      "cautionSource": "LG전자 미국 고객지원 페이지 본문(드라이어·뜨거운 물 금지) 직접 확인"
+    },
+    {
+      "id": "lg-leak-after-defrost-still-leaking",
+      "claim": "LG 안내에 따르면 해빙을 마친 뒤에도 바닥에서 물이 계속 나오면 배수구 외 기기 내부 부품 이상일 가능성이 높으므로 LG전자 고객센터(1544-7777)를 통해 서비스 접수를 진행한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — LG 냉장고 바닥으로 물이 흘러나올 때 어떻게 해야 하나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151288380744",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "상냉장하냉동·정수기형 냉장고 기준", "years": "2026-06-17 게시 페이지 기준", "region": "KR" },
+      "caution": "보증 기간이 지나면 방문 서비스 요금이 청구될 수 있다는 안내가 같은 페이지에 있다. 보증 적용 여부는 이 팩트로 단정하지 않는다.",
+      "cautionSource": "LG전자 고객지원 페이지의 보증 기간 경과 시 요금 청구 문구"
+    },
+    {
+      "id": "lg-leak-no-cold-food-spoiled-service",
+      "claim": "LG 안내에 따르면 냉기가 전혀 없거나 내부 식품이 녹은 경우에는 자가 조치로 해결하기 어렵고, 출장 서비스 예약을 권장한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — LG 냉장고 바닥으로 물이 흘러나올 때 어떻게 해야 하나요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151288380744",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "상냉장하냉동·정수기형 냉장고 기준", "years": "2026-06-17 게시 페이지 기준", "region": "KR" },
+      "caution": "이 증상은 자가 해결 단계를 건너뛰고 바로 서비스 예약으로 안내한다. 식품 안전 문제가 있을 때는 보관 음식을 먼저 옮긴다.",
+      "cautionSource": "LG전자 고객지원 페이지의 식품 녹음·냉기 없음 시 출장 예약 권장 문구"
+    },
+    {
+      "id": "lg-leak-prevention-condenser-dust",
+      "claim": "LG 안내에 따르면 재발을 막으려면 냉동실 음식을 밀폐 용기에 담아 이물질이 배수구에 들어가지 않게 하고, 같은 장소에 오래 두었다면 냉장고 뒤쪽 하단 응축기(콘덴서) 주변 먼지를 청소한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 미국 고객지원 help library — how to troubleshoot water leaking from the ceiling or pooling on the floor in your LG top freezer refrigerator",
+      "source_url": "https://www.lg.com/us/support/help-library/how-to-troubleshoot-water-leaking-from-the-ceiling-or-pooling-on-the-floor-in-your-lg-top-freezer-refrigerator--20155272207393",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "탑프리저 냉장고(미국 안내 페이지)", "years": "전 연식", "region": "US" },
+      "caution": "응축기 청소는 전원을 끈 뒤에 한다. 미국 안내 기준이므로 국내 AS 기준으로 바꿔 쓰지 않는다.",
+      "cautionSource": "LG전자 미국 고객지원 페이지의 재발 방지 항목 직접 확인"
+    },
+    {
+      "id": "samsung-leak-drain-tray-full-clean",
+      "claim": "삼성 해외 안내에 따르면 드레인 트레이(증발 접시)에 물이 가득 찼다면 자동 증발이 제대로 되지 않은 상태이므로 냉장고 전원을 끄고 트레이를 청소한다. 주변 온도가 25도보다 훨씬 낮거나 습도가 75%를 넘으면 자동 증발에 영향을 줄 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자 고객지원(영국) — What should I do when water leaks from the drain tray of the refrigerator",
+      "source_url": "https://www.samsung.com/uk/support/home-appliances/what-should-i-do-when-water-leaks-from-the-drain-tray-of-the-refrigerator/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "드레인 트레이 방식 냉장고(영국 안내 페이지)", "years": "전 연식", "region": "UK" },
+      "caution": "영국 페이지다. 국내 제품의 증발 접시 위치와 청소법은 이 페이지만으로 확정하지 않는다. 청소 절차 상세는 원문에 없어 쓰지 않는다.",
+      "cautionSource": "삼성 영국 지원 페이지 본문에 청소 절차 상세가 없음을 확인"
+    },
+    {
+      "id": "samsung-leak-drain-tray-empty-replace",
+      "claim": "삼성 해외 안내에 따르면 드레인 트레이가 비어 있다면 트레이가 손상되었을 수 있어 교체가 필요하며, 삼성 서비스센터에 문의한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자 고객지원(영국) — What should I do when water leaks from the drain tray of the refrigerator",
+      "source_url": "https://www.samsung.com/uk/support/home-appliances/what-should-i-do-when-water-leaks-from-the-drain-tray-of-the-refrigerator/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "드레인 트레이 방식 냉장고(영국 안내 페이지)", "years": "전 연식", "region": "UK" },
+      "caution": "트레이 교체는 자가 작업으로 안내하지 않는다. 서비스 문의로 넘긴다.",
+      "cautionSource": "삼성 영국 지원 페이지의 트레이 교체·서비스 문의 문구"
+    },
+    {
+      "id": "samsung-leak-drain-clog-engineer",
+      "claim": "삼성 해외 안내에 따르면 드레인 배수구가 이물질이나 결빙으로 막혀 해빙수가 빠지지 못하고 누수가 생겼다면 엔지니어 점검이 필요하며, 이 수리는 자가 수리가 불가능하다고 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자 고객지원(영국) — What should I do when water leaks from the drain tray of the refrigerator",
+      "source_url": "https://www.samsung.com/uk/support/home-appliances/what-should-i-do-when-water-leaks-from-the-drain-tray-of-the-refrigerator/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "드레인 트레이 방식 냉장고(영국 안내 페이지)", "years": "전 연식", "region": "UK" },
+      "caution": "전원을 끄고 눈에 보이는 이물질을 제거하는 것까지만 자가로 권한다. 배관 안쪽 수리는 엔지니어에게 넘긴다.",
+      "cautionSource": "삼성 영국 지원 페이지의 자가 수리 불가 문구"
+    },
+    {
+      "id": "samsung-leak-door-gasket-paper-test",
+      "claim": "삼성 해외 안내에 따르면 문이 제대로 닫히지 않으면 내부가 더워져 물이 맺힐 수 있으며, 종이 한 장을 문 사이에 끼우고 당겼을 때 저항 없이 빠지면 도어 씰 밀착이 불량한 것이고 수리나 교체가 필요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자 고객지원(영국) — What should I do if I suspect my Samsung fridge freezer is leaking water",
+      "source_url": "https://www.samsung.com/uk/support/home-appliances/what-should-i-do-if-i-suspect-my-samsung-fridge-freezer-is-leaking-water/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "도어 씰 방식 냉장고(영국 안내 페이지)", "years": "전 연식", "region": "UK" },
+      "caution": "종이 테스트는 문 가장자리 전 구간에서 한다. 씰 교체는 자가 작업으로 권하지 않고 서비스 문의로 넘긴다.",
+      "cautionSource": "삼성 영국 지원 페이지의 도어 씰 종이 테스트 절차"
+    },
+    {
+      "id": "samsung-leak-level-tilt-back",
+      "claim": "삼성 해외 안내에 따르면 응축수가 드립 팬으로 제대로 흐르려면 제품이 완전히 수평이거나 앞쪽으로 기울어서는 안 되며, 앞다리를 조절해 약간 뒤쪽으로 기울게 맞추고 문이 스스로 닫히는지 확인한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자 고객지원(영국) — What should I do if I suspect my Samsung fridge freezer is leaking water",
+      "source_url": "https://www.samsung.com/uk/support/home-appliances/what-should-i-do-if-i-suspect-my-samsung-fridge-freezer-is-leaking-water/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "앞다리 조절식 냉장고(영국 안내 페이지)", "years": "전 연식", "region": "UK" },
+      "caution": "기울기는 조금만 준다. 바닥이 심하게 기울어 있으면 높이 조절만으로 안 되므로 자리를 옮기는 것이 낫다.",
+      "cautionSource": "삼성 영국 지원 페이지의 뒤쪽 기울임 권고 문구"
+    },
+    {
+      "id": "samsung-leak-check-neighbor-appliance-source",
+      "claim": "냉장고 바깥 바닥에 고인 물은 주변 제품에서 흘러온 물일 수 있으므로 세탁기, 식기세척기, 정수기 등 물이 샐 만한 주변 제품을 먼저 확인하라고 삼성 안내에 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 고객지원 — 마루에 물이 고이고 누수가 발생합니다 (삼성 냉장고)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/38793",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "냉장고 전 라인(안내 페이지 기준)", "years": "2017-05-12 등록 페이지 기준", "region": "KR" },
+      "caution": "주변 제품 누수로 판명되면 냉장고 AS가 아니라 해당 제품 점검으로 넘긴다.",
+      "cautionSource": "삼성전자서비스 38793 페이지의 주변 제품 누수 안내"
+    },
+    {
+      "id": "samsung-leak-electrical-wet-hands",
+      "claim": "물이 콘센트나 전원 코드 주변까지 번졌다면 젖은 손으로 전기 부품을 만지지 말고, 먼저 안전을 확보한 뒤 점검을 받아야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 고객지원 — 냉장고 바닥 누수 관련 안내 (스탠드형 김치냉장고 페이지)",
+      "source_url": "https://www.samsungsvc.co.kr/solution/35220",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "김치냉장고(스탠드형) 안내 페이지 기준", "line": "스탠드형 김치냉장고 뒤쪽 누수 안내", "years": "2026-10-12 등록 페이지 기준", "region": "KR" },
+      "caution": "이 문구는 김치냉장고 페이지에서 나온 것이다. 일반 냉장고 글에는 감전 주의로만 쓰고, 전원 차단 순서는 아래 인도 안내와 함께 쓴다.",
+      "cautionSource": "삼성전자서비스 35220 페이지의 등록일과 대상 제품 명시"
+    },
+    {
+      "id": "samsung-leak-unplug-breaker-before-work",
+      "claim": "삼성 인도 안내에 따르면 누수를 점검하기 전에 전원 플러그를 뽑고 회로 차단기를 끈다. 물은 전기를 통하므로 감전 위험에 주의해야 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung India 고객지원 — How to address water leakage in refrigerator",
+      "source_url": "https://www.samsung.com/in/support/home-appliances/water-leakage-in-refrigerator/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "전 라인(인도 안내 페이지)", "years": "전 연식", "region": "IN" },
+      "caution": "인도 지원 페이지다. 전압과 콘센트 방식이 다르므로 국내 차단 방법은 일반적인 전원 차단 원칙으로만 쓴다.",
+      "cautionSource": "Samsung India 페이지의 지역(region IN) 확인"
+    },
+    {
+      "id": "samsung-leak-ice-maker-line-unverified",
+      "claim": "제빙기나 정수기 급수 연결부에서 나는 누수를 자가로 점검하는 구체적 절차는 삼성 해외 누수 안내 페이지에서 확인하지 못했다. 원문에는 급수 라인과 제빙기 연결부 점검 방법이 없다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "Samsung India 고객지원 — How to address water leakage in refrigerator (확인 페이지, 해당 절차 없음)",
+      "source_url": "https://www.samsung.com/in/support/home-appliances/water-leakage-in-refrigerator/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "제빙기·급수 라인 탑재 모델", "years": "전 연식", "region": "IN" },
+      "caution": "이 팩트는 확인실패다. 제빙 급수 누수 절차를 글에 쓰지 않는다. 급수 호스 연결 확인은 reused_facts의 국내 제빙기 팩트 범위까지만 쓴다.",
+      "cautionSource": "Samsung India 페이지에서 급수 라인 점검 내용이 없음을 확인"
+    },
+    {
+      "id": "samsung-leak-as-visit-reservation",
+      "claim": "삼성 국내 안내에 따르면 누수가 계속되거나 내부 부품 이상이 의심되면 전문 엔지니어 점검을 받아야 하며, 출장 서비스는 삼성전자서비스 홈페이지에서 예약하고 대표전화는 1588-3366이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 고객지원 — 스탠드형 김치냉장고 뒤쪽 누수 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/35220",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "스탠드형 김치냉장고 안내 페이지 기준(대표 연락처 적용)", "years": "2026-10-12 등록 페이지 기준", "region": "KR" },
+      "caution": "전화번호는 안내 페이지 기준이다. 번호와 예약 메뉴 위치는 발행 직전에 공식 홈페이지에서 한 번 더 확인한다. 요금 금액은 쓰지 않는다.",
+      "cautionSource": "삼성전자서비스 35220 페이지의 출장 예약 메뉴와 대표전화 표기"
+    }
+  ]
+}

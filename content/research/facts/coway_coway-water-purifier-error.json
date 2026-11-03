@@ -1,0 +1,216 @@
+{
+  "topic": "코웨이 정수기 물 안 나옴·에러 표시 자가점검 (출수 불량·냉온수·누수 안전·방문 관리 연결)",
+  "brand": "코웨이",
+  "article": "coway-water-purifier-error",
+  "captured": "2026-11-03",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "coway-water-supply-valve-check",
+      "why": "source_url(coway-m.com FAQ)이 2026-11-03 조회에서 403으로 막혀 원문 재확인 불가. 원수밸브 점검 자체는 상식적 1단계이나 공식 근거를 이번에 확보하지 못해 재사용하지 않음. 다음 조사에서 원문 확인 필요"
+    },
+    {
+      "id": "coway-filter-flushing-required",
+      "why": "같은 coway-m.com FAQ 출처이며 2026-11-03 조회 403. 플러싱 3분 수치는 재확인 불가로 재사용 보류"
+    },
+    {
+      "id": "coway-cold-hot-water-led-check",
+      "why": "source_url(product-repair.com)이 2026-11-03 조회에서 404. 출처 소실"
+    },
+    {
+      "id": "coway-power-reset-five-minutes",
+      "why": "source_url(product-repair.com)이 404. 같은 내용은 theking.ggudol.com 원문으로 재확인해 신규 팩트 coway-power-reset-2to5min-conflict로 대체"
+    },
+    {
+      "id": "coway-hot-water-heating-time",
+      "why": "source_url(theking.ggudol.com/235) 원문에는 '5분 미지근'이 없고 '저수조형은 약 30분 후 확인'만 있음. 출처와 불일치하므로 재사용 금지(disputes 신고 참조). 대체: coway-hot-water-warmup-30min-storage"
+    },
+    {
+      "id": "coway-leak-detection-error-e01",
+      "why": "source_url(product-repair.com)이 404. E01 의미를 공식 원문으로 확인하지 못함. 신규 팩트 coway-e01-meaning-unverified(확인실패)로 대체"
+    },
+    {
+      "id": "coway-customer-center-1588-5200",
+      "why": "기존 claim '계약·AS·부품 신청·기술 상담을 모두 통합 접수'는 2026-11-03 원문(coway.com/cowayservice/water_care)에서 확인되지 않음. 전화번호·유료 여부만 확인되어 신규 팩트 coway-service-center-1588-5200로 재작성"
+    },
+    {
+      "id": "coway-filter-replacement-cycle",
+      "why": "2~6개월 주기 수치는 2026-11-03 조회 원문(water_care)에서 확인되지 않음. 이번 범위(물 안 나옴·에러)와도 직접 관계가 약해 제외"
+    },
+    {
+      "id": "coway-rental-heart-service",
+      "why": "정기 방문관리 상세(탱크 살균·필터 무상 교체 등)는 이번 조회에서 원문 확인 불가. 방문 관리 연결은 신규 팩트 coway-service-center-1588-5200로 대체"
+    },
+    {
+      "id": "coway-total-care-service",
+      "why": "source_url(coway-m.com FAQ)이 403으로 재확인 불가. 1회 무상이라는 수치는 근거 미확보"
+    },
+    {
+      "id": "samsung-plug-dry-hand-safety",
+      "why": "삼성전자 자료 기반 안전 문구는 제조사·제품군이 달라 코웨이 정수기에 적용 근거 없음. 2026-11-03 samsung.com 정수기 FAQ에는 누수·감전 항목 자체가 없었고, 해당 전원 문구는 전자레인지 항목이었음"
+    }
+  ],
+  "disputes": [
+    {
+      "targetId": "coway-hot-water-heating-time",
+      "problem": "source_url(theking.ggudol.com/235) 원문에 '5분 후 미지근, 30분 후 완전히 뜨거운 물'이라는 문장이 없다. 원문은 '저수조형 정수기는 온수 기능을 켠 후 약 30분 정도 기다린 후 온수가 나오는지 확인한다'만 말한다. 5분 미지근 수치와 '직수형 등 전 모델 정상'이라는 scope는 출처와 대조되지 않는다.",
+      "evidence": "2026-11-03 WebFetch로 theking.ggudol.com/235 원문 확인. 30분 기준은 저수조형 한정 문장으로 확인됨. 5분 수치는 원문에서 찾지 못함."
+    },
+    {
+      "targetId": "coway-leak-detection-error-e01",
+      "problem": "source_url(product-repair.com/...E01 글)이 2026-11-03 조회에서 404. 'E01은 누수 감지 에러이며 원인은 대부분 밸브 노후'라는 claim을 원문으로 재확인할 수 없다. 출처 없는 에러 의미가 전파되지 않도록 재확인 필요.",
+      "evidence": "2026-11-03 WebFetch 결과 HTTP 404. 같은 도메인의 다른 글(온수 문제 글)도 'E01'을 언급하지 않음."
+    },
+    {
+      "targetId": "coway-customer-center-1588-5200",
+      "problem": "source 'coway.com 고객센터 안내'의 원문(coway.com/cowayservice/water_care)에는 대표전화 1588-5200(유료), 긴급상담 365일 24시간, 자가교체 불가 시 유상 필터교체 신청 문구만 있다. '계약·AS·부품 신청·기술 상담 모두 통합 접수'와 '렌탈샵 별도 문의는 대리점 안내 후 진행'은 원문에서 확인되지 않는다.",
+      "evidence": "2026-11-03 WebFetch로 water_care 원문 확인. 확인된 범위만 신규 팩트로 재작성."
+    }
+  ],
+  "facts": [
+    {
+      "id": "coway-service-center-1588-5200",
+      "claim": "코웨이 정수기 고객 문의·A/S 상담의 대표전화는 1588-5200이며 유료 통화다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코웨이 공식 홈페이지 — 고객센터·정수기 서비스 안내(water_care)",
+      "source_url": "https://www.coway.com/cowayservice/water_care",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "정수기 전 모델(렌탈·자가구매 공통 안내 페이지)",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "통화료가 부과되므로 증상 확인 후 전화하도록 안내한다. 누수·전기 이상 같은 긴급 증상이면 번호를 바로 누르게 한다.",
+      "cautionSource": "원문에 '고객센터(콜센터) 이용 시 통신요금이 부과됩니다'라고 명시됨"
+    },
+    {
+      "id": "coway-consultation-hours",
+      "claim": "코웨이 고객센터 일반 상담은 평일 오전 9시부터 오후 6시까지이며 12시부터 13시까지는 점심시간이다. 긴급상담은 365일 24시간 운영된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코웨이 공식 홈페이지 — 고객센터·정수기 서비스 안내(water_care)",
+      "source_url": "https://www.coway.com/cowayservice/water_care",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "정수기 전 모델",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "야간·주말에 물 샘 같은 긴급 증상이면 긴급상담 라인을 쓰도록 안내한다. 일반 문의는 근무시간 기준으로 잡는다.",
+      "cautionSource": "원문에 '긴급상담 365일 24시간'과 '평일 09:00~18:00, 점심 12~13시' 문구가 있음"
+    },
+    {
+      "id": "coway-filter-paid-replacement-hotline",
+      "claim": "필터를 자가로 교체할 수 없는 경우 유상 필터교체 서비스를 1588-5200으로 신청할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "코웨이 공식 홈페이지 — 정수기 서비스 안내(water_care)",
+      "source_url": "https://www.coway.com/cowayservice/water_care",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "자가교체 불가 필터를 쓰는 정수기",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "필터 교체 후 물이 안 나오거나 공기가 섞여 나오는 경우는 교체 직후 배출이 충분했는지부터 확인한다. 배출 시간 수치는 이 팩트로 보증하지 않는다.",
+      "cautionSource": "원문 문구는 '자가교체 불가시 유상 필터교체 서비스 신청 1588-5200'만 있음"
+    },
+    {
+      "id": "coway-hot-water-warmup-30min-storage",
+      "claim": "저수조형 코웨이 정수기는 온수 기능을 켠 뒤 약 30분을 기다려도 온수가 나오지 않을 때 고장을 의심하고 점검에 들어간다.",
+      "tier": "확실",
+      "evidence": "후기",
+      "source": "코웨이 정수기 온수 문제 해결 방법 — 개인 정비 블로그 종합(theking.ggudol.com)",
+      "source_url": "https://theking.ggudol.com/235",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "저수조형 정수기(온수 탱크 방식)",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "직수형(필터 직결) 모델에 같은 시간이 적용되는지는 이 출처로 확인되지 않는다. 직수형은 일반 예열 대기로 단정하지 말고 전원·LED를 먼저 확인하게 한다. 온수 버튼을 막 켠 직후는 기다리게 하되, 30분 이상 무반응이면 다음 단계로 넘긴다.",
+      "cautionSource": "원문의 '저수조형 정수기의 경우 온수 기능을 켠 후 약 30분 정도 기다린 후 온수가 나오는지 확인합니다'"
+    },
+    {
+      "id": "coway-power-reset-2to5min-conflict",
+      "claim": "코웨이 정수기 냉온수 이상 시 전원 플러그를 뽑고 약 2~5분(원문 본문은 5분) 대기한 뒤 다시 꽂는 전원 리셋을 자가 복구 1단계로 안내하는 후기 자료가 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "코웨이 정수기 온수 문제 해결 방법 — 개인 정비 블로그 종합(theking.ggudol.com)",
+      "source_url": "https://theking.ggudol.com/235",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "냉온수 시스템 전 모델(출처 본문 기준)",
+        "years": "현행 판매 모델",
+        "region": "KR"
+      },
+      "caution": "같은 출처 안에서 2~5분과 5분이 섞여 있다. 글에는 '5분 이상 대기'로 쓰고, 리셋은 한 번만 권하고 반복하지 않는다. 누수가 보이면 리셋보다 전원 차단과 고객센터 연락이 먼저다.",
+      "cautionSource": "원문 점검표 '약 2~5분 후 재연결'과 본문 '약 5분 기다려 초기화'가 동시에 있음"
+    },
+    {
+      "id": "coway-error-code-table-not-found",
+      "claim": "코웨이 공식 홈페이지와 공식 고객센터 페이지에서 정수기 에러 코드(E01 등)의 의미표를 확인하지 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "코웨이 공식 홈페이지 — 정수기 서비스 안내(water_care) 및 메인 페이지 조회 결과",
+      "source_url": "https://www.coway.com/cowayservice/water_care",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "에러 코드 의미를 글에서 단정하지 않는다. 독자에게는 디스플레이 코드와 사용설명서 항목을 대조하게 하고, 고객센터(1588-5200)에 모델명과 코드를 알리도록 안내한다.",
+      "cautionSource": "없음(확인실패 자체가 근거)"
+    },
+    {
+      "id": "coway-e01-meaning-unverified",
+      "claim": "코웨이 정수기 E01이 누수 감지 에러라는 사실은 공식 자료에서 확인되지 않았다. 과거 자료(product-repair.com)의 해당 글은 2026-11-03 조회에서 404였다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "코웨이 공식 홈페이지 — 정수기 서비스 안내(water_care) 조회 결과",
+      "source_url": "https://www.coway.com/cowayservice/water_care",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "E01 표시 모델(모델별 상이 가능)",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "E01을 누수로 단정하지 않는다. 물 고임이 보이면 코드와 무관하게 전원을 끄고 물기를 닦은 뒤 고객센터로 안내한다.",
+      "cautionSource": "없음(확인실패 자체가 근거)"
+    },
+    {
+      "id": "coway-leak-electrical-no-official-guide",
+      "claim": "정수기에서 물 샘·젖은 전기 부품이 확인되면 공식 자료에서 자가 분해나 임의 재가동 절차는 확인되지 않았으며, 전원 차단과 고객센터 방문 점검이 공통 권장 흐름이다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "코웨이 공식 홈페이지 — 정수기 서비스 안내(water_care) 조회 결과",
+      "source_url": "https://www.coway.com/cowayservice/water_care",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "코웨이",
+        "category": "정수기",
+        "line": "전 모델",
+        "years": "전 연식",
+        "region": "KR"
+      },
+      "caution": "누수·감전 위험이 있는 증상은 분해하지 말고 콘센트를 먼저 뽑게 한다. 물기가 있는 손으로 플러그를 만지지 않도록 안내한다. 이 항목은 안전 상식에 기반한 권장이며 제조사 원문 인용이 아니다.",
+      "cautionSource": "제조사 원문에서 근거를 찾지 못함. 안전 상식으로 쓰되 출처는 '확인실패'로 명시"
+    }
+  ]
+}

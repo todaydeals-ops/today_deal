@@ -1,0 +1,149 @@
+{
+  "topic": "전자레인지에서 불꽃(스파크)이 튈 때, 바로 멈추고 확인할 것",
+  "brand": "공통",
+  "article": "microwave-spark-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "microwave-spark-fire-hazard",
+    "microwave-spark-metal-container",
+    "microwave-spark-foil-packaging",
+    "microwave-spark-interior-debris",
+    "microwave-never-disassemble-warning",
+    "aluminum-foil-microwave-spark-fire-hazard"
+  ],
+  "declined_facts": [
+    {
+      "id": "ceramic-gold-decoration-spark-risk",
+      "why": "출처가 도자기 판매사 블로그(royalwarechina)라 권위 근거로 쓰지 않는다. 같은 내용을 LG 공식 고객지원(lge.co.kr) 페이지로 직접 확인해 새 팩트 spark-gold-silver-trim-dish 로 대체했다."
+    }
+  ],
+  "disputes": [
+    {
+      "targetId": "microwave-spark-metal-trim-food",
+      "problem": "기존 팩트는 과자·라면의 선도유지제 안 철 입자가 스파크를 낸다고 적었으나, 인용된 삼성 공식 페이지는 캔 음식·냉동식품 등 음식물에 섞인 금속 입자를 말할 뿐 과자·라면 선도유지제는 언급하지 않는다.",
+      "evidence": "https://www.samsung.com/ae/support/home-appliances/what-to-do-if-my-samsung-microwave-is-sparking-during-operation (음식물 찌꺼기 중 금속 입자, 캔 음식·냉동식품 예시)"
+    }
+  ],
+  "facts": [
+    {
+      "id": "spark-stop-use-and-unplug",
+      "claim": "전자레인지에서 불꽃이 보이면 즉시 사용을 중단하고 전원을 차단해야 한다. 제품 자체에서 불꽃이 튀는 경우 엔지니어 방문 점검이 필요하다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 전자레인지 불꽃 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41149",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "전자레인지", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "스파크를 한두 번 있는 일로 넘기지 않도록 안내한다. 전원 차단 후 내부 점검은 하되 분해·자가 수리는 권하지 않는다.",
+      "cautionSource": "삼성 공식 안내의 즉시 전원 차단 및 엔지니어 방문 점검 문구"
+    },
+    {
+      "id": "spark-metal-utensils-twist-ties",
+      "claim": "알루미늄 호일뿐 아니라 금속 집게, 금속 수저, 실 타이(철사 묶음 끈) 같은 금속 물건이 조리실 안에 남아 있으면 스파크가 생길 수 있다. 가열 전에 모두 꺼내야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 UAE 지원 — 전자레인지 스파크 안내 (영문)",
+      "source_url": "https://www.samsung.com/ae/support/home-appliances/what-to-do-if-my-samsung-microwave-is-sparking-during-operation",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "전자레인지", "line": "전 라인", "years": "전 연식", "region": "글로벌(UAE 페이지, 국내 동일 문구 미확인)" },
+      "caution": "국내 삼성 페이지에서 같은 문장을 직접 확인하지 못했다. 조리실 금속 물건 제거 안내로만 쓴다.",
+      "cautionSource": "삼성 UAE 공식 페이지의 금속 물건 목록 문장(aluminum foil, metal utensils, twist ties)"
+    },
+    {
+      "id": "spark-gold-silver-trim-dish",
+      "claim": "금선이나 은선 무늬, 금박·은박 장식이 있는 그릇은 전자레인지에서 불꽃이 튈 수 있으니 사용하지 말아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 전자레인지 데우기 중 스파크·불꽃",
+      "source_url": "https://www.lge.co.kr/support/solutions-1410826670193",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "전자레인지", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "금장식 그릇은 색이 변하거나 깨질 수도 있다. 명절 식기·상속 식기처럼 장식이 눈에 잘 안 띄는 그릇도 확인하도록 안내한다.",
+      "cautionSource": "LG 공식 안내의 금선·은선 무늬 그릇 사용 금지 문장"
+    },
+    {
+      "id": "spark-mica-sheet-residue-fire-risk",
+      "claim": "LG 광파오븐 상단 케이스에 붙은 운모판(Mica Sheet)에 음식물 찌꺼기가 묻으면 스파크가 발생하거나 화재의 원인이 될 수 있다. 청소는 금속 수세미 대신 마른 행주를 쓴다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 광파오븐 상단 운모판 안내",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150332095354",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "광파오븐", "line": "상단 운모판 모델", "years": "해당 페이지 기준", "region": "KR" },
+      "caution": "이 문서는 광파오븐 상단 부품 이야기다. 전자레인지 도파관 덮개와 같은 부품인지는 공식 문서로 확인하지 못했다. 전자레인지에 그대로 적용하지 말고 '비슷한 덮개도 찌꺼기를 닦으라'는 수준으로 쓴다.",
+      "cautionSource": "LG 공식 페이지의 광파오븐 한정 안내. 전자레인지 동일 부품 여부는 미확인"
+    },
+    {
+      "id": "spark-waveguide-cover-magnetron-damage",
+      "claim": "도파관 커버(waveguide cover)나 마그네트론 같은 내부 부품이 손상되거나 마모되면 전기 아킹이 생길 수 있다. 이 경우 사용자가 직접 고치지 말고 서비스 점검을 받아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 UAE 지원 — 전자레인지 스파크 안내 (영문)",
+      "source_url": "https://www.samsung.com/ae/support/home-appliances/what-to-do-if-my-samsung-microwave-is-sparking-during-operation",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "전자레인지", "line": "전 라인", "years": "전 연식", "region": "글로벌(UAE 페이지)" },
+      "caution": "도파관 커버 교체 부품 번호나 절차는 공식 문서에서 확인하지 못했다. 덮개 교체를 독자가 직접 하도록 안내하지 않는다. 덮개를 열어 보이는 그을음·구멍 여부만 확인하고 서비스 점검으로 연결한다.",
+      "cautionSource": "삼성 UAE 공식 페이지가 내부 부품 손상을 DIY 수리 대상으로 제시하지 않음"
+    },
+    {
+      "id": "spark-cavity-damage-stop-use",
+      "claim": "조리실 내부가 손상되었다면 아킹과 스파크가 생길 수 있으므로 사용을 중단하고 수리 서비스를 받아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG USA 고객지원 — Arcing or sparking microwave oven (영문)",
+      "source_url": "https://www.lg.com/us/support/help-library/arcing-sparking-microwave-oven-CT00000303-1430169363778",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "전자레인지", "line": "전 라인", "years": "전 연식", "region": "US(국내 동일 문구 미확인)" },
+      "caution": "조리실 벽에 금·구멍·들뜸이 보이면 사용을 멈추고 점검을 받으라고 안내한다. 국내 LG 페이지에서 같은 문장은 확인하지 못했다.",
+      "cautionSource": "LG USA 공식 페이지의 '사용 중단 후 수리 서비스' 문장"
+    },
+    {
+      "id": "spark-empty-cavity-water-cup-test",
+      "claim": "빈 상태로 전자레인지를 돌리면 스파크가 생길 수 있다. 물을 담은 8온스(약 240ml) 컵을 넣고 30초 타이머 조리를 해서 스파크가 없으면 계속 사용해도 된다는 것이 LG의 점검 방법이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG USA 고객지원 — Arcing or sparking microwave oven (영문)",
+      "source_url": "https://www.lg.com/us/support/help-library/arcing-sparking-microwave-oven-CT00000303-1430169363778",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "전자레인지", "line": "전 라인", "years": "전 연식", "region": "US(국내 동일 문구 미확인)" },
+      "caution": "빈 상태로 돌리는 것은 절대 금지다. 테스트도 반드시 물컵을 넣고 한다. 물컵 테스트에서 스파크가 나면 바로 중단한다.",
+      "cautionSource": "LG USA 공식 페이지의 빈 조리실 작동 경고와 물컵 시험 절차(8oz, 30초)"
+    },
+    {
+      "id": "spark-rack-seating-check",
+      "claim": "선반(랙)이 플라스틱 받침 4곳에 제대로 얹히지 않으면 선반이 조리실 벽에 닿아 스파크가 생길 수 있다. 선반이 4곳 받침에 모두 맞게 놓였는지 확인한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG USA 고객지원 — Arcing or sparking microwave oven (영문)",
+      "source_url": "https://www.lg.com/us/support/help-library/arcing-sparking-microwave-oven-CT00000303-1430169363778",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "전자레인지", "line": "선반(랙) 장착 모델", "years": "전 연식", "region": "US(국내 동일 문구 미확인)" },
+      "caution": "선반이 없는 턴테이블 모델에는 적용하지 않는다.",
+      "cautionSource": "LG USA 공식 페이지의 선반 장착 안내"
+    },
+    {
+      "id": "spark-turntable-absent-uneven-heat",
+      "claim": "유리 턴테이블 없이 전자레인지를 사용하면 에너지가 고르게 분포하지 않아 스파크가 생길 수 있다. 턴테이블은 제자리에 있어야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성 UAE 지원 — 전자레인지 스파크 안내 (영문)",
+      "source_url": "https://www.samsung.com/ae/support/home-appliances/what-to-do-if-my-samsung-microwave-is-sparking-during-operation",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "전자레인지", "line": "턴테이블 모델", "years": "전 연식", "region": "글로벌(UAE 페이지)" },
+      "caution": "턴테이블이 빠진 채 쓰면 제품이 손상될 수 있다는 안내도 함께 준다. 회전이 안 되는 경우는 베어링 점검으로 넘긴다.",
+      "cautionSource": "삼성 UAE 공식 페이지의 턴테이블 미장착 사용 경고"
+    },
+    {
+      "id": "spark-persists-unplug-and-service",
+      "claim": "스파크가 계속되면 전원을 뽑고 삼성 고객센터(1588-3366)에 문의하거나 서비스센터 방문 점검을 받아야 한다. 자가 수리를 시도하지 말아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 전자레인지 불꽃 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41149",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "전자레인지", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "고객센터 번호는 안내 문서에 적힌 번호를 그대로 쓴다. 방문 점검 비용은 제품 상태와 보증 여부에 따라 달라지므로 본문에서 금액을 단정하지 않는다.",
+      "cautionSource": "삼성 공식 페이지의 고객센터 번호와 방문 점검 안내"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "topic": "전기차 겨울 주행거리 감소 원인과 예열·히터 사용 요령",
+  "brand": "공통",
+  "article": "ev-winter-range-guide",
+  "captured": "2026-11-03",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "aaa-heater-41-percent",
+      "why": "미국자동차협회(AAA) 실험 수치(히터 사용 시 최대 41% 감소)를 언론 기사 경유로만 확인했다. AAA 원문을 열어보지 못해 재사용하지 않는다. 한국 독자용 글에 미국 실험 수치를 끌어오려면 AAA 원문을 먼저 확인해야 한다."
+    },
+    {
+      "id": "ev9-cold-range-368km-2023",
+      "why": "2023년 언론 보도의 기아 EV9 상온 508km·저온 368km 수치는 공식 원문을 확인하지 못했다. 차종 연식이 오래돼 현재 기준과 다를 수 있어 재사용하지 않는다."
+    },
+    {
+      "id": "hmg-heat-pump-20-percent-kia",
+      "why": "'히트펌프 적용 차량이 그렇지 않은 차종보다 주행거리 약 20% 개선'이라는 수치는 기아 관계자 발언을 언론이 옮긴 것이고 원문 출처가 없다. 재사용하지 않는다."
+    },
+    {
+      "id": "hyundai-winter-highway-33-percent",
+      "why": "현대해상 교통기후환경연구소 연구(고속 주행 시 전비 24% 하락, 주행거리 33.4% 감소) 수치는 2021년 언론 보도 경유다. 연구 원문을 열지 못해 재사용하지 않는다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "kia-manual-winter-heater-range-drop",
+      "claim": "기아 사용설명서는 겨울철 난방 사용이나 고속 주행 시 구동용 고전압 배터리의 전력 소모가 커져 주행 가능 거리가 급격히 감소할 수 있다고 안내한다. 추운 날씨에 히터를 쓰면 배터리 소모량이 크게 늘어 주행 가능 거리가 짧아진다고 쓰여 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 사용설명서(요약본) — 주행 가능 거리 (SG2KV 2026 페이지)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/SG2KV/2026/ko_KR/topics/chapter1_10_4.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "전기차", "line": "사용설명서 요약본 SG2KV 페이지 (차종 특정 안 됨)", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "매뉴얼 페이지의 일반 안내다. 감소 폭은 차종·배터리 용량·외기 온도에 따라 다르므로 수치로 단정하지 말 것.",
+      "cautionSource": "같은 매뉴얼 페이지가 차종별 차이를 전제로 쓰여 있음"
+    },
+    {
+      "id": "kia-manual-cold-battery-performance-drop",
+      "claim": "기아 사용설명서는 동절기처럼 외기 온도가 떨어지면 배터리 성능 저하로 실제 주행 거리가 감소할 수 있다고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 사용설명서(요약본) — 주행 가능 거리 (SG2KV 2026 페이지)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/SG2KV/2026/ko_KR/topics/chapter1_10_4.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "전기차", "line": "사용설명서 요약본 SG2KV 페이지", "years": "2026 매뉴얼", "region": "KR" }
+    },
+    {
+      "id": "kia-manual-reserved-climate-battery-warm",
+      "claim": "기아 사용설명서는 겨울철 예약 공조를 통해 고전압 배터리 온도를 미리 높이면 주행 시 에너지 효율을 높일 수 있다고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 사용설명서(요약본) — 주행 가능 거리 (SG2KV 2026 페이지)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/SG2KV/2026/ko_KR/topics/chapter1_10_4.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "전기차", "line": "예약 공조 기능이 있는 차종", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "예약 공조 메뉴 위치와 명칭은 차종마다 다르다. 본인 차량 매뉴얼에서 예약 공조 설정 방법을 먼저 확인하라고 안내한다.",
+      "cautionSource": "차종별 기능 차이를 전제로 한 매뉴얼 안내"
+    },
+    {
+      "id": "kia-manual-battery-conditioning-mode",
+      "claim": "기아 사용설명서에 따르면 겨울철 배터리 컨디셔닝 모드를 켜면 배터리 히터가 고전압 배터리 온도를 적정 온도까지 높여 주행 성능과 급속충전 성능을 상온 수준으로 확보할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 사용설명서(요약본) — 주행 가능 거리 (SG2KV 2026 페이지)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/SG2KV/2026/ko_KR/topics/chapter1_10_4.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "전기차", "line": "배터리 히터·컨디셔닝 모드가 있는 차종", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "배터리 컨디셔닝은 배터리 전력을 쓰므로 주행거리가 줄 수 있다. 급속충전 직전처럼 필요할 때 쓰라고 안내한다.",
+      "cautionSource": "현대차그룹 HMG 저널 본문이 같은 취지(배터리 전력 사용으로 주행거리 감소 가능, 급속충전 직전 사용 권장)를 밝힘"
+    },
+    {
+      "id": "kia-manual-recirculation-saves-energy",
+      "claim": "기아 사용설명서는 히터나 에어컨을 쓸 때 실내 순환 모드를 선택하면 외기 유입 모드보다 에너지 소모가 줄어든다고 안내한다. 외기는 들어올 때마다 다시 데우거나 식혀야 하기 때문이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 사용설명서(요약본) — 주행 가능 거리 (SG2KV 2026 페이지)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/SG2KV/2026/ko_KR/topics/chapter1_10_4.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "전기차", "line": "공조 장치 전 차종 공통 안내", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "이 페이지 원문은 에너지 소모만 언급한다. 창문 김서림 등 공기질 문제는 이 근거에 없으므로 글에서 따로 다루지 말 것(다룬다면 '일반적인 참고'로 구분)."
+    },
+    {
+      "id": "kia-manual-zero-km-stop-warning",
+      "claim": "기아 사용설명서는 주행 가능 거리가 '0 km'로 표시된 뒤에는 차량이 곧 멈출 수 있으니 즉시 안전한 곳으로 이동해 정차하라고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 사용설명서(요약본) — 주행 가능 거리 (SG2KV 2026 페이지)",
+      "source_url": "https://ownersmanual.kia.com/full_webhelp/SG2KV/2026/ko_KR/topics/chapter1_10_4.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "전기차", "line": "주행 가능 거리 표시가 있는 전 차종", "years": "2026 매뉴얼", "region": "KR" }
+    },
+    {
+      "id": "hmg-heat-pump-since-2014-soul-ev",
+      "claim": "현대자동차그룹은 2014년 쏘울 EV부터 히트펌프 시스템을 적용했다고 밝혔다. 히트펌프는 외부 공기의 열과 모터·통합전력제어장치·온보드차저 같은 전장 부품의 폐열을 실내 난방에 활용해 전기 히터의 전력 소모를 줄인다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차그룹 HMG 저널 「EV6와 알아본 겨울철 전기차 관리 TIP」 (2022.01.19)",
+      "source_url": "https://www.hyundaimotorgroup.com/ko/story/CONT0000000000009662",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대·기아", "category": "전기차", "line": "히트펌프 적용 차종 (쏘울 EV 이후)", "years": "2014~", "region": "KR" },
+      "caution": "히트펌프 미적용 차종에는 이 효과가 없다. 본인 차량의 히트펌프 사양 여부를 옵션표나 매뉴얼에서 먼저 확인하라고 안내할 것.",
+      "cautionSource": "제조사 저널이 적용 차종 범위를 쏘울 EV 이후로 한정해 밝힘"
+    },
+    {
+      "id": "hmg-ev6-cold-range-figures-2022",
+      "claim": "현대자동차그룹 저널에 따르면 19인치 휠을 단 EV6 롱레인지 2WD의 1회 충전 주행거리는 상온(25℃) 483km, 저온(-7℃) 446km다. 저온 측정 때는 히터를 최대로 가동했다고 밝혔다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차그룹 HMG 저널 「EV6와 알아본 겨울철 전기차 관리 TIP」 (2022.01.19)",
+      "source_url": "https://www.hyundaimotorgroup.com/ko/story/CONT0000000000009662",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "전기차", "line": "EV6 롱레인지 2WD 19인치", "years": "2022년 기사 시점", "region": "KR" },
+      "caution": "제조사가 직접 밝힌 특정 모델·휠 조건의 수치다. 다른 차종이나 다른 휠·트림에 옮기지 말고, 저온 주행거리 비율만 참고용으로 쓸 것.",
+      "cautionSource": "같은 저널 본문의 모델·휠 명시 및 측정 조건(상온 25℃, 저온 -7℃, 히터 최대)"
+    },
+    {
+      "id": "domestic-cold-test-condition-7c-heater-max",
+      "claim": "현대자동차그룹 저널은 국내 기준 저온 주행거리 측정 조건을 상온 25℃와 저온 -7℃로 밝히고, 저온 측정 때는 히터를 최대로 가동한다고 설명한다. 환경부 원문 고시에서 이 조건을 직접 확인하지는 못했다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "현대자동차그룹 HMG 저널 「EV6와 알아본 겨울철 전기차 관리 TIP」 (2022.01.19)",
+      "source_url": "https://www.hyundaimotorgroup.com/ko/story/CONT0000000000009662",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "전기차", "line": "국내 저온 주행거리 인증 측정", "years": "2022 기사 기준", "region": "KR" },
+      "caution": "환경부 원문을 확인하지 못했으므로 글에서는 '제조사 설명에 따르면'으로 출처를 밝힐 것. 측정 조건이 최근에도 같은지는 확인되지 않았다.",
+      "cautionSource": "환경부 공식 원문 미확인 상태를 조사 기록에 명시"
+    },
+    {
+      "id": "low-temp-ratio-standard-draft-2026-2029",
+      "claim": "2024년 10월 언론 보도에 따르면 환경부는 상온 주행거리 300km 미만 차량의 저온 주행거리 비율 기준을 2024~2025년 80% 이상, 2026~2029년 85% 이상으로 단계 상향하는 고시안을 준비했다. 고시안 단계였고 확정 고시 번호는 확인하지 못했다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "이데일리 보도 (환경부 전기자동차 보급대상 평가 규정 개정 고시안 인용)",
+      "source_url": "https://v.daum.net/v/20241007163219538",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "전기차", "line": "보조금 대상 평가 기준 (상온 300km 미만)", "years": "2024~2029", "region": "KR" },
+      "caution": "2024년 고시안 기준이며 확정 여부와 현재 시행 수치는 확인하지 못했다. 글에 수치를 쓸 때는 '고시안 기준'임을 밝히고, 독자에게 보조금 자격 판단으로 단정하지 말 것.",
+      "cautionSource": "보도 본문이 '고시안'이며 시행 전 단계라고 명시"
+    }
+  ]
+}

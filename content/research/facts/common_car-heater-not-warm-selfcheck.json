@@ -1,0 +1,209 @@
+{
+  "topic": "자동차 히터가 따뜻해지지 않을 때 점검 순서 (냉각수 수위·서모스탯·히터 코어·에어 혼입)",
+  "brand": "공통",
+  "article": "car-heater-not-warm-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "coolant-check-topup-weakens"
+  ],
+  "declined_facts": [
+    {
+      "id": "blog-heater-repair-cost-no-year",
+      "reason": "정비 비용(서모스탯 10만~20만 원, 히터 코어 50만~100만 원 이상 등)은 getcha 정비 블로그(후기)에만 있고 기준 연도가 없다. 공식 출처가 없고 연식·물가에 따라 달라지므로 수치로 쓰지 않는다. 필요하면 '정비소마다 차이가 크다'로만 쓴다.",
+      "tier": "확인실패"
+    },
+    {
+      "id": "airlock-bleed-forum-procedure",
+      "reason": "히터 코어 에어 빼기 절차(라디에이터 캡을 연 채 엔진 가동, 2000rpm 가동 등)는 공식 취급설명서에서 찾지 못했다. 포럼·영문 정비 게시물에서만 확인됐고, 뜨거운 상태에서 캡을 여는 절차는 공식 경고(뜨거울 때 캡 분리 금지)와 충돌하므로 쓰지 않는다. 에어 빼기는 정비소 작업으로 안내한다.",
+      "tier": "확인실패"
+    },
+    {
+      "id": "fridayparts-airbleed-article",
+      "reason": "FridayParts 에어 빼기 글은 열어 보니 본문이 없고 제목·날짜·메뉴만 있었다. 본문 내용을 확인하지 못해 인용하지 않는다.",
+      "tier": "확인실패"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "heater-warm-cause-coolant-low",
+      "claim": "히터가 따뜻하지 않은 주요 원인 중 하나는 냉각수 부족이다. 냉각수는 엔진 열을 히터 코어로 옮기는 매체이므로 양이 부족하면 히터 코어로 온수가 충분히 흐르지 않는다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "getcha 정비 블로그 — 자동차 히터 고장 증상과 해결법 (후기, 마지막 수정 2025.12.28)",
+      "source_url": "https://web.getcha.kr/blog/car-heater-troubleshooting-winter-guide",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "자동차", "line": "내연기관 승용(히터 코어 온수 방식)", "years": "전 연식", "region": "KR" },
+      "caution": "블로그 설명이다. 실제 수위 부족인지는 엔진을 식힌 뒤 리저버 눈금으로 먼저 확인한다. 전기차는 히터 방식이 달라 적용하지 않는다.",
+      "cautionSource": "블로그 본문의 냉각수 부족 원인 설명. 수치는 없음"
+    },
+    {
+      "id": "heater-warm-cause-thermostat-stuck-open",
+      "claim": "서모스탯(온도조절기)이 열린 상태로 고착되면 냉각수가 계속 순환해 엔진이 충분히 데워지지 않고, 그 결과 히터 효율이 떨어져 바람이 미지근하거나 따뜻해지지 않을 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "getcha 정비 블로그 — 자동차 히터 고장 증상과 해결법 (후기)",
+      "source_url": "https://web.getcha.kr/blog/car-heater-troubleshooting-winter-guide",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "자동차", "line": "내연기관 승용", "years": "전 연식", "region": "KR" },
+      "caution": "현대 공식 취급설명서에서 서모스탯 고장 증상을 확인하지 못했다. 수온 게이지가 정상 범위에 오르는지 먼저 본 뒤, 오르지 않을 때 정비소에 서모스탯 점검을 요청하는 순서로 쓴다.",
+      "cautionSource": "공식 매뉴얼에 서모스탯 항목이 없어 후기 등급으로 둠"
+    },
+    {
+      "id": "heater-warm-cause-core-clog-flush",
+      "claim": "히터 코어 내부가 막히면 열전달이 떨어져 히터가 따뜻해지지 않을 수 있다. 막힘은 세척(플러싱)으로 해결되는 경우가 있고, 코어에서 누수가 생기면 교체가 필요하다고 정비 블로그는 설명한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "getcha 정비 블로그 — 자동차 히터 고장 증상과 해결법 (후기)",
+      "source_url": "https://web.getcha.kr/blog/car-heater-troubleshooting-winter-guide",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "자동차", "line": "내연기관 승용", "years": "전 연식", "region": "KR" },
+      "caution": "히터 코어는 외관으로 막힘을 확인하기 어렵다. 일반 사용자는 수위·수온·서모스탯 순서를 먼저 거치고, 코어 점검은 정비소 판단으로 넘긴다.",
+      "cautionSource": "블로그 본문 설명. 코어 막힘 진단 방법은 공식 자료에서 확인하지 못함"
+    },
+    {
+      "id": "heater-check-coolant-engine-off",
+      "claim": "냉각수 양은 엔진 온도에 따라 달라지므로, 점검하거나 보충하기 전에 엔진을 끄고 식은 상태에서 확인해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼 — Checking the coolant level (영문판)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/DN8/2025/en_US/idc603c77e9e0.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "DN8 2025 매뉴얼 기준 승용", "years": "2025 매뉴얼 기준", "region": "글로벌(영문판)" },
+      "caution": "다른 차종·연식 매뉴얼의 점검 절차를 함께 확인하라고 덧붙인다. 현대 매뉴얼 기준임을 명시하고 타 브랜드에 일반화하지 않는다.",
+      "cautionSource": "현대 매뉴얼이 차종 기준임을 명시"
+    },
+    {
+      "id": "coolant-low-add-distilled-to-max",
+      "claim": "냉각수가 부족하면 리저버의 MAX 표시까지 증류수(탈이온수)를 보충하고, 과하게 채우지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼 — Checking the coolant level (영문판)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/DN8/2025/en_US/idc603c77e9e0.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "DN8 2025 매뉴얼 기준 승용", "years": "2025 매뉴얼 기준", "region": "글로벌(영문판)" },
+      "caution": "보충액은 증류수 기준이다. 부동액 농도 조정이 필요한 경우는 아래 혼합 비율 항목을 따른다.",
+      "cautionSource": "현대 매뉴얼 보충 절차 문장"
+    },
+    {
+      "id": "coolant-mix-45-factory-35-60-range",
+      "claim": "현대 공식 안내에 따르면 차량 출고 시 부동액 혼합비율은 45%이며, 부동액 농도가 35% 미만이거나 60%를 넘으면 엔진 내부 부식이나 과열 가능성이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼 — 냉각수 (한국어판)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/QT/2026/ko_KR/idf2dd2765f1d.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "QT 2026 매뉴얼 기준 승용", "years": "2026 매뉴얼 기준", "region": "KR" },
+      "caution": "보충·교환 때 임의로 농도를 정하지 말고 차량 매뉴얼 규격을 따른다. 엔진 종류별 농도 범위는 차종마다 다르다.",
+      "cautionSource": "현대 매뉴얼 농도 안내 문장"
+    },
+    {
+      "id": "coolant-after-refill-check-mix-leak-days",
+      "claim": "냉각수를 보충한 뒤에는 부동액 혼합 비율을 점검하고, 누수가 없는지 다시 확인하며, 며칠 뒤 보조 탱크 수위를 한 번 더 점검해 필요하면 보충한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼 — 냉각수 (한국어판)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/QT/2026/ko_KR/idf2dd2765f1d.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "QT 2026 매뉴얼 기준 승용", "years": "2026 매뉴얼 기준", "region": "KR" },
+      "caution": "'며칠 뒤'의 구체적인 일수는 매뉴얼에 없다. 보충 후 며칠 안에 수위를 다시 보라는 뜻으로만 쓴다.",
+      "cautionSource": "매뉴얼에 일수 기준이 없음을 확인"
+    },
+    {
+      "id": "coolant-loss-persists-bluehands",
+      "claim": "보충 후에도 냉각수 감소가 현저하면 현대 직영 하이테크센터 또는 블루핸즈에서 점검을 받아야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼 — 냉각수 (한국어판)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/QT/2026/ko_KR/idf2dd2765f1d.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "QT 2026 매뉴얼 기준 승용", "years": "2026 매뉴얼 기준", "region": "KR" },
+      "caution": "매뉴얼은 '자주 보충이 필요하면'이 아니라 '보충 후에도 감소가 현저할 때'를 기준으로 쓴다. 이 기준을 그대로 옮긴다.",
+      "cautionSource": "매뉴얼 원문 문장 기준"
+    },
+    {
+      "id": "coolant-low-check-leak-hoses-pump",
+      "claim": "냉각수가 부족하면 보충 전에 호스 연결부, 라디에이터, 워터 펌프 등에서 누수가 있는지 확인하고, 누수가 없을 때 냉각수를 보충한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼 — 엔진 과열 (오버히트) 발생 시 조치하기 (한국어판)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/QZ/2026/ko_KR/ide607a4d1de3.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "QZ 2026 매뉴얼 기준 승용", "years": "2026 매뉴얼 기준", "region": "KR" },
+      "caution": "누수가 보이면 보충만 반복하지 말고 정비소 점검을 받는다. 원문에 누수 지점 진단 방법은 없다.",
+      "cautionSource": "매뉴얼 원문 조치 순서"
+    },
+    {
+      "id": "gauge-h-possible-overheat",
+      "claim": "냉각수 수온계 바늘은 C(Cold)와 H(Hot) 사이의 정상 범위에 있어야 하며, 바늘이 H를 가리키면 엔진 과열 가능성이 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼 — 냉각수 수온계 (한국어판)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/US4/2026/ko_KR/topic_hhy_dlq_zcc.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "US4 2026 매뉴얼 기준 승용", "years": "2026 매뉴얼 기준", "region": "KR" },
+      "caution": "수온계가 정상 범위에 있는데 히터만 약하면 히터 쪽(수위·서모스탯·코어) 원인을 본다. 수온계가 H에 있으면 히터보다 과열이 먼저다.",
+      "cautionSource": "매뉴얼 수온계 설명"
+    },
+    {
+      "id": "overheat-hot-cap-never-open",
+      "claim": "엔진과 라디에이터가 뜨거울 때는 냉각수 탱크 캡이나 라디에이터 캡을 열면 안 된다. 뜨거운 냉각수와 증기가 분출해 눈과 피부에 화상을 입을 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼 — 엔진 과열 (오버히트) 발생 시 조치하기 (한국어판)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/QZ/2026/ko_KR/ide607a4d1de3.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "QZ 2026 매뉴얼 기준 승용", "years": "2026 매뉴얼 기준", "region": "KR" },
+      "caution": "식은 뒤에도 캡은 두꺼운 헝겊이나 부직포로 감싸고 천천히 연다. 보호 장갑·보안경을 쓴다. 뜨거운 상태에서 여는 자가 조치는 쓰지 않는다.",
+      "cautionSource": "매뉴얼 원문의 캡 개방 절차와 경고"
+    },
+    {
+      "id": "overheat-add-coolant-slowly-when-cool",
+      "claim": "과열 후 냉각수를 보충할 때는 엔진을 끄고 식힌 뒤 냉각수를 천천히 조금씩 넣어야 한다. 차가운 냉각수를 한꺼번에 넣으면 엔진에 균열이 생길 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼 — 엔진 과열 (오버히트) 발생 시 조치하기 (한국어판)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/QZ/2026/ko_KR/ide607a4d1de3.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "QZ 2026 매뉴얼 기준 승용", "years": "2026 매뉴얼 기준", "region": "KR" },
+      "caution": "보충량·리저버 기준선은 매뉴얼에 수치로 없다. 기준선 눈금을 넘기지 말고 천천히 나눠 넣는다고만 쓴다.",
+      "cautionSource": "매뉴얼 원문 '천천히 조금씩 보충' 문장"
+    },
+    {
+      "id": "overheat-leak-stop-engine-call-dealer",
+      "claim": "냉각수나 뜨거운 증기가 새어 나오면 엔진을 정지시키고 현대 직영 하이테크센터 또는 블루핸즈에 연락해야 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼 — 엔진 과열 (오버히트) 발생 시 조치하기 (한국어판)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/QZ/2026/ko_KR/ide607a4d1de3.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "QZ 2026 매뉴얼 기준 승용", "years": "2026 매뉴얼 기준", "region": "KR" },
+      "caution": "누수 상태에서 계속 운행하지 않는다. 안전한 곳에 정차한 뒤 견인 또는 서비스 연락을 안내한다.",
+      "cautionSource": "매뉴얼 원문 정지·연락 지시"
+    },
+    {
+      "id": "heater-knob-red-hot-blue-cold",
+      "claim": "온도 조절 노브를 오른쪽(빨간색)으로 돌리면 더운 바람이, 왼쪽(파란색)으로 돌리면 찬 바람이 나온다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼 — 히터 및 에어컨 조절 방법 (한국어판, 투싼 2025)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/NX4/2025/ko_KR/id22CKHC00FBF.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "투싼(NX4) 2025 매뉴얼 기준", "years": "2025 매뉴얼 기준", "region": "KR" },
+      "caution": "노브 방향은 차종마다 다를 수 있다. 다른 차종은 해당 차량 매뉴얼 조절 방법을 확인하라고 덧붙인다.",
+      "cautionSource": "매뉴얼이 투싼 2025 기준임을 명시"
+    },
+    {
+      "id": "heater-floor-mode-winter-recommended",
+      "claim": "겨울철 난방은 발끝 방향으로 바람이 나오는 위치가 일반적인 난방 위치이며, 앞유리 김서림 방지를 위해 앞유리 쪽으로도 약간의 바람이 나오도록 설정한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대 공식 오너스 매뉴얼 — 히터 및 에어컨 조절 방법 (한국어판, 투싼 2025)",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/NX4/2025/ko_KR/id22CKHC00FBF.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "투싼(NX4) 2025 매뉴얼 기준", "years": "2025 매뉴얼 기준", "region": "KR" },
+      "caution": "바람 방향 아이콘 위치는 차종마다 다르다. 설정 확인은 바람 방향과 온도 노브, 내기·외기 설정을 함께 본다.",
+      "cautionSource": "매뉴얼이 투싼 2025 기준임을 명시"
+    }
+  ]
+}

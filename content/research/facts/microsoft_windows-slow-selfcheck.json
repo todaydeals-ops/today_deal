@@ -1,0 +1,188 @@
+{
+  "topic": "윈도우 컴퓨터가 갑자기 느려졌을 때 점검 순서 (데이터 백업 먼저 → 작업 관리자·시작 프로그램 → 저장공간 → 업데이트 → 악성코드 검사 → AS 기준)",
+  "brand": "공통",
+  "article": "windows-slow-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "win-update-troubleshooter-path",
+    "win-update-backup-before-steps",
+    "win-update-drive-free-space-10-15-percent"
+  ],
+  "declined_facts": [
+    {
+      "id": "win-update-disk-space-upgrade-16-20gb",
+      "why": "16GB·20GB 수치는 Windows 버전 업그레이드 기준이다. 느려짐 점검의 저장공간 기준으로 쓰면 scope가 맞지 않는다. 저장공간 기준은 이번 조사의 Storage Sense 원문(%수치 없음, 저장공간 막대 빨간색)으로 대체한다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "slow-pc-task-manager-open-startup-disable",
+      "claim": "Ctrl + Shift + Esc를 누르면 작업 관리자가 열린다. '시작 프로그램(Startup apps)' 탭에서 필요 없는 앱을 우클릭해 '사용 안 함(Disable)'을 선택하면 부팅 때 자동 실행되지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Tips to improve PC performance in Windows (Solution 5 Startup apps)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows 11 · Windows 10", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "'사용 안 함'은 자동 실행만 막고 프로그램을 지우지 않는다. 무엇인지 모르는 항목(보안·드라이버 관련 이름)은 끄기 전에 검색해 보고, 확신이 없으면 끄지 않는다.",
+      "cautionSource": "Microsoft 원문은 '자동 실행 앱이 부팅 시간과 백그라운드 사용을 늘린다'고만 안내한다. 보안·드라이버 항목 주의는 조사자의 운영 판단이며 Microsoft 문서 인용이 아니다"
+    },
+    {
+      "id": "slow-pc-review-performance-and-startup-tabs",
+      "claim": "Microsoft는 작업 관리자의 '성능(Performance)'과 '시작 프로그램(Startup apps)' 탭을 검토해 높은 자원을 쓰는 구성요소를 찾으라고 안내한다. 또 '프로세스(Processes)' 탭에서 쓰지 않는 앱을 닫으라고 권한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Tips to improve PC performance in Windows (Solution 10)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows 11 · Windows 10", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "Microsoft 원문은 탭 이름과 목적만 제시하고, 어떤 수치 이상이 '높음'인지는 정하지 않는다. CPU·메모리 사용률이 높은 항목을 찾으라는 뜻으로만 쓴다.",
+      "cautionSource": "Microsoft 원문 문장('identify the components using high resources')에 기준 수치가 없음을 확인"
+    },
+    {
+      "id": "slow-pc-storage-sense-run-path",
+      "claim": "저장공간 자동 정리는 '시작 > 설정 > 시스템 > 저장공간'에서 저장공간 센스(Storage Sense)를 켠다. Windows 11에서는 '저장공간 센스 지금 실행(Run Storage sense now)'을 누르고, '여유 공간 확보' 아래 '지금 정리(Clean now)'를 누르면 된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Manage drive space with Storage Sense",
+      "source_url": "https://support.microsoft.com/en-us/windows/manage-drive-space-with-storage-sense-654f6ada-7bfc-45e5-966b-e24aded96ad5",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows 11 · Windows 10", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "저장공간 센스는 로그인한 상태이고 온라인일 때만 설정한 주기에 따라 돌아간다. 실행 직후 바로 정리된다고 단정하지 않는다.",
+      "cautionSource": "Storage Sense 원문: 'when you're online and signed in' 조건 명시"
+    },
+    {
+      "id": "slow-pc-storage-sense-recycle-downloads-default",
+      "claim": "저장공간 센스에서 휴지통 항목은 기본적으로 일정 기간이 지나면 삭제된다. 다운로드 폴더의 파일은 설정을 켜지 않는 한 건드리지 않는다. 두 항목 모두 '일정 기간' 옵션을 직접 정할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Manage drive space with Storage Sense",
+      "source_url": "https://support.microsoft.com/en-us/windows/manage-drive-space-with-storage-sense-654f6ada-7bfc-45e5-966b-e24aded96ad5",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows 11 · Windows 10", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "휴지통·다운로드 폴더 정리는 되돌릴 수 없다. 사진·문서가 다운로드 폴더에 있다면 정리 전에 백업을 먼저 한다.",
+      "cautionSource": "Storage Sense 원문의 휴지통 기본 삭제 문구와 다운로드 폴더 옵션 설명, 그리고 데이터 백업 우선 원칙(win-update-backup-before-steps)"
+    },
+    {
+      "id": "slow-pc-low-space-no-percent-threshold",
+      "claim": "Microsoft는 '저장공간 부족'을 몇 % 이하라고 숫자로 정해두지 않는다. 설정 > 시스템 > 저장공간에서 용량 막대가 빨간색으로 바뀌면 저장공간이 부족한 상태라고 안내한다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "Microsoft Support - Manage drive space with Storage Sense",
+      "source_url": "https://support.microsoft.com/en-us/windows/manage-drive-space-with-storage-sense-654f6ada-7bfc-45e5-966b-e24aded96ad5",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows 11 · Windows 10", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "'여유 공간 20% 이상 유지' 같은 수치 기준은 Microsoft 공식 원문에서 확인하지 못했다. 독자에게는 '저장공간 막대가 빨갛게 바뀌었는지'로 판단하게 한다.",
+      "cautionSource": "Storage Sense 원문은 'depends on disk size and minimum operational thresholds'라고만 적음. 20% 수치는 제3자 가이드 언급이라 공식 기준으로 쓰지 않음"
+    },
+    {
+      "id": "slow-pc-temp-files-and-disk-cleanup-path",
+      "claim": "임시 파일은 '설정 > 시스템 > 저장공간 > 임시 파일'에서 직접 지울 수 있다. 디스크 정리(Disk Cleanup)도 드라이브를 골라 실행할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Tips to improve PC performance in Windows (Solution 3)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows 11 · Windows 10", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "임시 파일 삭제는 보통 안전하지만, 다운로드 폴더나 문서 폴더를 같이 지우지 않도록 주의한다. 정리 전에 개인 파일 백업을 먼저 한다.",
+      "cautionSource": "Microsoft 원문은 임시 파일 삭제 경로만 안내. 문서 폴더 주의는 win-update-backup-before-steps의 백업 우선 원칙을 따름"
+    },
+    {
+      "id": "slow-pc-uninstall-unused-apps-path",
+      "claim": "쓰지 않는 앱을 지우면 저장공간이 늘고 백그라운드 활동도 줄어든다. Windows 11에서는 '설정 > 앱 > 설치된 앱'에서 지운다(Windows 10은 '앱 및 기능')",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Tips to improve PC performance in Windows (Solution 4)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows 11 · Windows 10", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "앱을 지우면 그 앱의 데이터가 같이 지워질 수 있다. 게임 세이브·작업 파일이 있는 앱은 백업 후 지운다. 백신·보안 프로그램은 지우기 전에 제조사 안내를 확인한다.",
+      "cautionSource": "데이터 백업 우선 원칙(win-update-backup-before-steps). 보안 프로그램 주의는 운영 판단"
+    },
+    {
+      "id": "slow-pc-windows-update-optional-drivers",
+      "claim": "Microsoft는 Windows 업데이트에 성능 개선이 포함되는 경우가 많다고 안내한다. 업데이트 확인 후 선택 사항인 드라이버 업데이트도 설치하라고 권한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Tips to improve PC performance in Windows (Solution 1)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows 11 · Windows 10", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "업데이트 후 오히려 느려졌거나 문제가 생겼다면 업데이트 기록을 보고 문제 해결사를 쓴다. 업데이트를 자의로 건너뛰지 말고 보안 업데이트는 유지한다.",
+      "cautionSource": "Microsoft 원문은 업데이트가 성능 개선을 포함한다고만 안내. 문제 해결사 경로는 win-update-troubleshooter-path 재사용"
+    },
+    {
+      "id": "slow-pc-defender-quick-scan-path",
+      "claim": "악성코드는 CPU와 디스크 자원을 많이 써서 PC를 느리게 만들 수 있다. Windows 보안 > '바이러스 및 위협 방지'에서 '새 빠른 검사 시작(Start a new quick scan)'을 누르면 빠른 검사를 할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Virus and threat protection in the Windows Security app",
+      "source_url": "https://support.microsoft.com/en-us/windows/security/threat-malware-protection/virus-and-threat-protection-in-the-windows-security-app",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows 11 · Windows 10 (Microsoft Defender)", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "빠른 검사는 전체 파일을 다 보지 않는다. 느려짐의 원인이 악성코드로 의심되면 빠른 검사 후 '오프라인 검사'까지 이어서 한다. 다른 백신을 쓰는 PC에서는 경로가 다를 수 있다.",
+      "cautionSource": "Microsoft 원문의 빠른 검사 설명('don't want to spend the time running a full scan on all your files and folders')와 Defender 오프라인 검사 항목"
+    },
+    {
+      "id": "slow-pc-defender-offline-scan-restart-warning",
+      "claim": "Microsoft Defender 오프라인 검사는 악성코드가 의심될 때 쓰며, 실행하면 기기가 재시작된다. 검사 전에 열린 파일을 저장하라고 Microsoft가 안내한다. 결과는 Windows 보안의 '보호 기록'에서 확인한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Virus and threat protection in the Windows Security app (Start an offline scan)",
+      "source_url": "https://support.microsoft.com/en-us/windows/security/threat-malware-protection/virus-and-threat-protection-in-the-windows-security-app",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows 11 · Windows 10 (Microsoft Defender)", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "재시작 전에 열린 문서를 모두 저장하고 닫는다. 검사 중 재시작되므로 진행 중인 작업이 있으면 끝내고 실행한다.",
+      "cautionSource": "Microsoft 원문 'This will restart your device, so be sure to save files you may have open.'"
+    },
+    {
+      "id": "slow-pc-backup-windows-backup-onedrive",
+      "claim": "Windows 백업은 바탕 화면·문서·사진·비디오·음악 폴더를 켜면 OneDrive로 동기화한다. 무료 Microsoft 계정에는 OneDrive 클라우드 저장공간 5GB가 포함된다. 회사·학교 계정은 이 기능에 쓸 수 없다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Back up and restore with Windows Backup",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/backup-recovery/back-up-and-restore-with-windows-backup",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows Backup · OneDrive", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "5GB는 무료 계정 기본 용량이다. 사진·영상이 많으면 용량이 부족해 일부만 백업될 수 있으니, 백업 후 OneDrive 용량 표시를 확인한다. 백업이 끝났다는 확인 없이 원본을 지우지 않는다.",
+      "cautionSource": "Windows Backup 원문: 무료 계정 5GB 및 '개인 설정은 OneDrive 용량이 부족하면 백업되지 않는다' 문구"
+    },
+    {
+      "id": "slow-pc-hardware-age-upgrade-criterion",
+      "claim": "Microsoft는 하드웨어가 오래된 PC는 이 점검 단계로 큰 개선을 보지 못할 수 있으며, 그런 경우 장기적으로는 기기 업그레이드가 최선일 수 있다고 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Tips to improve PC performance in Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 하드웨어", "line": "노후 PC 전 라인", "years": "연식 기준 명시 없음", "region": "글로벌" },
+      "caution": "Microsoft 원문은 '오래된 하드웨어'라고만 하고 연식이나 사양 기준을 제시하지 않는다. 연식 숫자로 교체를 단정하지 않는다.",
+      "cautionSource": "Microsoft 원문 'Older PCs with outdated hardware may not see significant improvements from these steps'에 연식 수치 없음"
+    },
+    {
+      "id": "slow-pc-restart-if-no-improvement",
+      "claim": "열어둔 앱과 브라우저 탭이 많으면 느려질 수 있다. 개선이 없으면 PC를 다시 시작하라고 Microsoft가 안내한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Tips to improve PC performance in Windows (Solution 12)",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows 11 · Windows 10", "years": "Windows 10/11", "region": "글로벌" },
+      "caution": "재시작 전에 열린 작업을 저장한다. 재시작으로 해결되지 않으면 시작 프로그램과 저장공간 점검을 다시 본다.",
+      "cautionSource": "Microsoft 원문 'If performance does not improve, restart your PC.'"
+    },
+    {
+      "id": "slow-pc-windows10-support-ended",
+      "claim": "Windows 10 지원은 2025년 10월 14일에 끝났다. 지원이 끝난 PC는 보안 업데이트를 받을 수 없으므로 느려짐 점검 이전에 OS 지원 상태부터 확인한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Tips to improve PC performance in Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "PC 운영체제", "line": "Windows 10", "years": "Windows 10 (2025-10-14 지원 종료)", "region": "글로벌" },
+      "caution": "지원 종료 후에도 PC는 켜진다. 다만 보안 업데이트가 없으니 Windows 11 업그레이드 가능 여부를 제조사·Microsoft 안내에서 확인한다.",
+      "cautionSource": "Microsoft 원문 'Support for Windows 10 has ended on October 14, 2025.'"
+    }
+  ]
+}

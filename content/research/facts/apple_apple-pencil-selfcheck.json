@@ -1,0 +1,184 @@
+{
+  "topic": "애플펜슬 연결 안 됨·충전 안 됨·필기 끊김 자가점검 (세대별 페어링·충전·서비스 기준)",
+  "brand": "애플",
+  "article": "apple-pencil-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "battery-swelling-stop-immediately",
+    "iphone-bluetooth-accessory-basics",
+    "iphone-bluetooth-unpair-repair"
+  ],
+  "declined_facts": [
+    {
+      "id": "iphone-battery-menu-split",
+      "why": "아이폰 배터리 성능 메뉴 위치 정보이며 애플펜슬 연결·충전 점검과 무관하다."
+    },
+    {
+      "id": "ipad-battery-health-check-location",
+      "why": "아이패드 본체의 배터리 성능 상태 메뉴 경로다. 펜슬 잔량 확인 경로(배터리 위젯, 설정 > Apple Pencil)와는 다른 정보라 쓰지 않는다."
+    },
+    {
+      "id": "iphone-bluetooth-contact-apple-or-maker",
+      "why": "이번 글의 서비스 기준은 펜슬 전용 Apple 문서(108788)와 AppleCare 서비스 문서로 따로 잡는다. 아이폰 블루투스 일반 문서의 문의 기준을 펜슬에 그대로 옮기지 않는다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "pencil-pair-steps-apple-official",
+      "claim": "애플펜슬이 아이패드에 페어링되지 않으면 Apple은 다음 순서를 안내한다. ① 펜슬을 연결한 채 아이패드를 재시작한다 ② 설정 > Bluetooth가 켜져 있는지 확인한다 ③ 'My Devices'에서 펜슬 옆 정보 아이콘을 누르고 '이 기기 삭제(Forget this Device)'를 선택한다 ④ 펜슬을 다시 연결해 Pair 버튼이 나타나면 누른다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — If you can't pair Apple Pencil with your iPad (문서 108788)",
+      "source_url": "https://support.apple.com/en-us/108788",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "태블릿 펜슬", "line": "Apple Pencil 전 세대 공통 절차", "years": "전 연식", "region": "글로벌" },
+      "caution": "기기 삭제 후 다시 페어링하는 과정에서 펜슬이 iPad에 새로 등록된다. 삭제 전에 다른 기기와 연결 관계가 있는지 따로 확인할 필요는 없다.",
+      "cautionSource": "Apple 문서 108788의 절차 단계 (삭제 후 재페어링)"
+    },
+    {
+      "id": "pencil-pair-button-wait-one-minute",
+      "claim": "펜슬을 연결했는데 Pair 버튼이 나오지 않으면 Apple은 펜슬을 약 1분 동안 충전한 뒤 다시 연결하고 Pair 버튼이 뜰 때까지 기다리라고 안내한다. Pair 버튼은 보통 몇 초 안에 나타난다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — If you can't pair Apple Pencil with your iPad (문서 108788)",
+      "source_url": "https://support.apple.com/en-us/108788",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "태블릿 펜슬", "line": "Apple Pencil 전 세대 공통", "years": "전 연식", "region": "글로벌" },
+      "caution": "1분 충전 후에도 Pair 버튼이 없으면 다음 단계(케이스 제거 또는 서비스 문의)로 넘어간다. 같은 동작을 여러 번 반복하는 것을 해결책으로 쓰지 않는다.",
+      "cautionSource": "Apple 문서 108788의 Pair 버튼 대기 안내"
+    },
+    {
+      "id": "pencil-case-removal-2nd-pro-only",
+      "claim": "Apple Pencil Pro와 Apple Pencil(2세대)이 페어링되지 않으면 Apple은 아이패드의 케이스나 커버를 벗기고 다시 페어링하라고 안내한다. 이 단계는 1세대 펜슬에는 적용되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — If you can't pair Apple Pencil with your iPad (문서 108788)",
+      "source_url": "https://support.apple.com/en-us/108788",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "태블릿 펜슬", "line": "Apple Pencil Pro · Apple Pencil(2세대) 자석 연결 모델", "years": "해당 모델 출시 이후", "region": "글로벌" },
+      "caution": "케이스를 벗길 때 아이패드 측면 자석 부위에 이물질이 없는지 함께 본다.",
+      "cautionSource": "Apple 문서 108788의 '케이스 제거' 단계 (Pro·2세대 한정 표기)"
+    },
+    {
+      "id": "pencil-service-when-pair-button-never-appears",
+      "claim": "재충전과 재연결을 해도 Pair 버튼이 끝내 나오지 않으면 Apple은 서비스를 받으라고 안내한다. Apple 공식 지원 페이지에 '서비스 받기(Get service)' 경로가 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — If you can't pair Apple Pencil with your iPad (문서 108788)",
+      "source_url": "https://support.apple.com/en-us/108788",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "태블릿 펜슬", "line": "Apple Pencil 전 세대 공통", "years": "전 연식", "region": "글로벌" },
+      "caution": "펜슬 내부 배터리를 분해하거나 임의로 교체하는 것은 안내하지 않는다. 서비스 경로만 안내한다.",
+      "cautionSource": "Apple 펜슬 서비스 안내 및 배터리 교체는 Apple 또는 공인 서비스 제공자 경로라는 Apple 서비스 문서"
+    },
+    {
+      "id": "pencil-gen1-connector-by-ipad",
+      "claim": "1세대 애플펜슬은 아이패드 모델에 따라 연결 단자가 다르다. 6~9세대 아이패드에서는 캡을 빼고 Lightning 포트에 꽂는다. 10세대 아이패드와 아이패드(A16)에서는 USB-C to Apple Pencil 어댑터가 필요하며, 어댑터에 USB-C 케이블을 연결해 아이패드에 꽂는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Apple 지원 — If you can't pair Apple Pencil with your iPad (문서 108788)",
+      "source_url": "https://support.apple.com/en-us/108788",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "태블릿 펜슬", "line": "Apple Pencil(1세대)", "years": "아이패드 6~9세대(Lightning) / 10세대·A16(USB-C)", "region": "글로벌" },
+      "caution": "10세대 이후 아이패드에 1세대 펜슬을 Lightning 방식으로 꽂으려 하면 맞지 않는다. 아이패드 세대를 먼저 확인한다.",
+      "cautionSource": "Apple 문서 108788의 아이패드 세대별 연결 방식 안내"
+    },
+    {
+      "id": "pencil-gen2-pro-magnetic-connector",
+      "claim": "Apple Pencil(2세대)은 블루투스를 켠 뒤 아이패드 오른쪽 측면의 자석 커넥터에 붙이면 페어링과 충전이 된다. Apple Pencil Pro는 호환 아이패드의 긴 쪽 측면 자석 커넥터에 붙인다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Apple 지원 — Pair and charge Apple Pencil (2nd generation) with iPad, Pair and charge Apple Pencil Pro with iPad (iPadOS 사용 설명서)",
+      "source_url": "https://support.apple.com/guide/ipad/pair-and-charge-apple-pencil-2ndgeneration-ipad51ac5369/ipados",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "태블릿 펜슬", "line": "Apple Pencil(2세대) · Apple Pencil Pro", "years": "해당 모델 지원 아이패드", "region": "글로벌" },
+      "caution": "본문 전체를 직접 열지 못하고 검색 발췌로 확인했다. 집필 전에 원문에서 측면 위치를 다시 확인한다. 아이패드 모델별 자석 위치가 다를 수 있어 모델 표기를 함께 쓴다.",
+      "cautionSource": "Apple 사용 설명서 검색 발췌 기준 (원문 본문 미확인)"
+    },
+    {
+      "id": "pencil-usb-c-pairing-persistence",
+      "claim": "Apple Pencil(USB-C)은 USB-C 케이블로 아이패드에 연결해 충전하면서 페어링된다. 페어링은 아이패드를 재시작하거나, Bluetooth를 끄거나, 다른 아이패드와 페어링할 때까지 유지된다고 Apple이 안내한다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Apple 지원 — Pair and charge Apple Pencil (USB-C) with iPad (iPadOS 사용 설명서)",
+      "source_url": "https://support.apple.com/en-sg/guide/ipad/ipadc3d88218/ipados",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "태블릿 펜슬", "line": "Apple Pencil(USB-C)", "years": "해당 모델 지원 아이패드", "region": "글로벌(SG 페이지 기준)" },
+      "caution": "페이지 본문 전체를 열지 못하고 검색 발췌로 확인했다. 지역 페이지(SG)에서 가져온 문구이므로 KR 원문 재확인 필요.",
+      "cautionSource": "Apple 사용 설명서 검색 발췌 기준 (원문 본문 미확인)"
+    },
+    {
+      "id": "pencil-battery-check-widget-settings",
+      "claim": "애플펜슬 잔량은 아이패드 홈 화면에서 오른쪽으로 밀어 여는 배터리 위젯에서 확인할 수 있고, 설정 > Apple Pencil에서도 같은 정보를 볼 수 있다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Apple 지원 — Pair and charge Apple Pencil (1st generation) with iPad (iPadOS 사용 설명서)",
+      "source_url": "https://support.apple.com/guide/ipad/pair-and-charge-apple-pencil-1st-generation-ipadc9c41abb/ipados",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "태블릿 펜슬", "line": "Apple Pencil 전 세대(위젯 지원 iPadOS)", "years": "iPadOS 기준", "region": "글로벌" },
+      "caution": "배터리 위젯 메뉴 이름과 위치는 iPadOS 버전에 따라 다를 수 있다. 이 경로는 원문 본문을 직접 열지 못하고 검색 발췌로 확인했다.",
+      "cautionSource": "Apple 사용 설명서 검색 발췌 기준 (원문 본문 미확인)"
+    },
+    {
+      "id": "pencil-battery-service-80-percent",
+      "claim": "AppleCare 가입 기기는 배터리 용량이 원래의 80% 아래로 떨어지면 Apple이 배터리를 추가 요금 없이 교체한다. 같은 AppleCare 서비스 문서에 애플펜슬도 포함된다고 안내된다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "Apple 지원 — iPad 수리 및 서비스 (AppleCare 배터리 교체 기준)",
+      "source_url": "https://support.apple.com/ipad/repair",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "태블릿 펜슬·아이패드", "line": "AppleCare 가입 아이패드 배터리 확실, 펜슬은 검색 요약 기준", "years": "AppleCare 적용 기간", "region": "글로벌(국가별 조건 상이)" },
+      "caution": "80% 기준은 iPad 배터리에 대해 직접 확인했다. 펜슬 배터리에 같은 기준이 적용되는지는 원문 재확인이 필요하다. 집필에 쓸 때는 '아이패드 기준'이라고 명시하거나 펜슬 기준을 따로 확인한다. 정상 소모로 줄어든 배터리는 보증 대상이 아니라는 조건도 함께 쓴다. 서비스 요금 금액은 쓰지 않는다.",
+      "cautionSource": "Apple iPad 수리 문서의 '80% 이하 무상 교체' 및 '정상 소모 배터리 보증 제외' 문구 (펜슬 적용은 미확인)"
+    },
+    {
+      "id": "pencil-charging-obstruction-third-party",
+      "claim": "펜슬이 충전되지 않을 때 후기 가이드들은 두꺼운 케이스가 자석 충전을 막을 수 있고, 충전 핀과 포트에 먼지가 쌓이면 연결이 안 된다고 안내한다. 먼지는 부드러운 솔이나 압축 공기로 제거하고, 필요하면 이소프로필알코올을 약간 묻힌 보풀 없는 천으로 닦으라고 한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "iGeeksBlog — How to fix Apple Pencil not charging on iPad (제3자 가이드)",
+      "source_url": "https://www.igeeksblog.com/apple-pencil-not-charging/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "태블릿 펜슬", "line": "Apple Pencil 자석 연결 모델 중심", "years": "전 연식", "region": "글로벌" },
+      "caution": "Apple 공식 문서가 아닌 제3자 가이드다. 알코올 닦기는 충전 포트 주변에만 살짝 하고, 물기가 남지 않게 한다. 기기 내부 접점을 뜯거나 긁지 않는다.",
+      "cautionSource": "제3자 가이드 기술 안내 (공식 근거 없음, 후기 등급)"
+    },
+    {
+      "id": "pencil-restart-bluetooth-toggle-third-party",
+      "claim": "펜슬이 연결되지 않을 때 후기 가이드들은 아이패드를 완전히 껐다가 켜거나, 블루투스를 껐다 켠 뒤 다시 페어링해 보라고 권한다. 이 방법은 공식 문서의 재시작·재페어링 절차와 같은 방향이다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "iGeeksBlog — How to fix Apple Pencil not charging on iPad (제3자 가이드)",
+      "source_url": "https://www.igeeksblog.com/apple-pencil-not-charging/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "태블릿 펜슬", "line": "Apple Pencil 전 세대", "years": "전 연식", "region": "글로벌" },
+      "caution": "공식 절차(pencil-pair-steps-apple-official)와 함께 쓴다. 후기 가이드 단독으로 중요한 판단을 내리지 않는다.",
+      "cautionSource": "제3자 가이드 단계 (공식 문서 108788과 같은 방향)"
+    },
+    {
+      "id": "pencil-handwriting-lag-no-official-steps",
+      "claim": "애플 공식 지원 문서(펜슬 페어링·충전 문서 및 블루투스 액세서리 문서)에서는 펜슬 필기 중 끊김이나 지연에 대한 전용 점검 절차를 찾지 못했다. 필기 끊김은 공식 절차가 아니라 페어링 상태, 충전 상태, 케이스, 아이패드 재시작 순으로 확인하는 것이 공식 문서의 공통 흐름이다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "Apple 지원 — If you can't pair Apple Pencil with your iPad (문서 108788)",
+      "source_url": "https://support.apple.com/en-us/108788",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "태블릿 펜슬", "line": "Apple Pencil 전 세대 (필기 끊김 증상)", "years": "전 연식", "region": "글로벌" },
+      "caution": "필기 끊김의 원인을 공식 근거로 단정하지 않는다. 집필에서는 '페어링·충전이 정상인데도 끊기면 화면 보호필름과 필기 앱 설정을 바꿔 보고, 그래도 되풀이되면 서비스 경로'로 쓴다.",
+      "cautionSource": "공식 문서에 필기 끊김 절차가 없다는 확인 결과 (확인실패 등급)"
+    },
+    {
+      "id": "pencil-dead-battery-after-disconnect-unverified",
+      "claim": "Apple 커뮤니티 전문가 답변은 펜슬이 연결돼 잔량까지 보이는데 동작하지 않을 때, 펜슬 끝의 교체형 팁이 단단히 끼워졌는지와 금속 트랜스듀서 손상을 먼저 보라고 한다. 설정 > 일반 > 정보에 펜슬이 표시되는지 확인하고, 분리한 상태에서 배터리 위젯의 잔량 변화를 지켜보라고 한다. 장기간 방전 상태로 두면 고장 가능성이 있으며, 배터리 고장이면 보증 기간 안에서 Apple Store 교체를 받으라고 안내한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Apple Community 토론 thread 253050982 (1세대 애플펜슬, 커뮤니티 전문가 답변)",
+      "source_url": "https://discussions.apple.com/thread/253050982",
+      "checked": "2026-11-03",
+      "scope": { "brand": "애플", "category": "태블릿 펜슬", "line": "Apple Pencil(1세대) 사례 기준, 다른 세대 동일 여부 미확인", "years": "2021년 사례(iOS 14 시기)", "region": "글로벌" },
+      "caution": "커뮤니티 답변은 개별 사례다. 충전 후 잔량이 급락한다는 증상은 이 스레드에서 확인되지 않았으므로 배터리 고장으로 단정하지 않는다. 수리 판단은 공식 서비스 경로(pencil-service-when-pair-button-never-appears)로 연결한다.",
+      "cautionSource": "커뮤니티 답변 원문 (공식 근거 없음, 후기 등급)"
+    }
+  ]
+}

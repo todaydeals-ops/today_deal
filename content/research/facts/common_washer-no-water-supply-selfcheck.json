@@ -1,0 +1,212 @@
+{
+  "topic": "세탁기 급수가 안 될 때 수도꼭지부터 순서대로 확인 (급수 불량 원인·점검 순서·동파 해동·AS 기준)",
+  "brand": "공통",
+  "article": "washer-no-water-supply-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "samsung-washer-dc-layer-conflict",
+      "why": "삼성 세탁기 dC 코드는 도어 감지 센서 또는 탈수 불균형에 관한 것으로 급수 불량과 무관하다. 급수 에러 코드는 4C/4E로 별도 조사했다."
+    },
+    {
+      "id": "dishwasher-errorcode-water-supply",
+      "why": "삼성 식기세척기 4C 코드. 제품군이 다르므로 세탁기 4C/4E 설명에 쓰지 않는다. 같은 글자 코드라도 기기마다 의미가 다를 수 있다."
+    },
+    {
+      "id": "lg-dishwasher-IE-water-supply",
+      "why": "LG 식기세척기 IE 에러. 제품군이 다르므로 세탁기 IE 설명에 그대로 쓰지 않는다. 세탁기 IE 의미는 LG 세탁기 공식 페이지를 직접 열어 확인했다."
+    },
+    {
+      "id": "bidet-water-valve-position",
+      "why": "비데의 급수밸브 위치와 조작 안내. 기기가 달라 세탁기 급수밸브 위치로 옮기지 않는다."
+    },
+    {
+      "id": "kyungdong-boiler-freeze-50c",
+      "why": "보일러 배관 동파 해동 기준(50도). 보일러 배관 자료이고 근거 출처가 사용자 커뮤니티라서 세탁기 해동 기준으로 쓰지 않는다. 세탁기 해동 온도는 삼성·LG 공식 페이지에서 따로 확인했다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "washer-supply-faucet-check-first",
+      "claim": "세탁기에 물이 안 들어올 때는 먼저 욕실이나 싱크대에서 물이 나오는지(단수 여부)를 보고, 세탁기 급수부와 연결된 수도꼭지가 잠겨 있지 않은지 확인해야 한다. 다용도 멀티 수도꼭지를 쓰는 경우에는 세탁기 쪽 밸브가 열려 있는지 특히 확인한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 4E(YE)·4C(E1) 급수에러 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41702",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "드럼·통돌이 공통", "years": "전 연식", "region": "KR" },
+      "caution": "수도 상태를 먼저 확인하고 나서 기기 쪽 문제를 의심하는 순서가 안전하다. 단수가 확인되면 기기를 분해하기 전에 수도 복구를 기다린다.",
+      "cautionSource": "삼성전자서비스 급수 에러 점검 순서(수도 상태 확인이 기기 점검보다 앞선다)"
+    },
+    {
+      "id": "washer-supply-hose-kink-after-move",
+      "claim": "급수호스가 꺾이거나 눌리면 물 흐름이 막혀 급수가 안 될 수 있다. 이사나 이동 후 설치했을 때, 그리고 세탁·탈수 중 진동으로 세탁기가 움직였을 때 특히 자주 생긴다. 꺾인 호스는 펴서 물이 잘 흐르게 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 냉수/온수 급수가 안돼요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41652",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "드럼·통돌이 공통", "years": "전 연식", "region": "KR" },
+      "caution": "호스를 분리해 펼 때는 먼저 수도꼭지를 잠근다. 분리 전 물 튐과 누수를 막기 위해서다.",
+      "cautionSource": "삼성전자서비스 거름망 청소 절차(호스 분리 전 수도를 잠금)"
+    },
+    {
+      "id": "washer-supply-hot-cold-swap",
+      "claim": "냉수 호스는 냉수 밸브에, 온수 호스는 온수 밸브에 연결해야 한다. 좌우가 바뀌어 연결되면 마지막 헹굼 때 온수가 들어가 에러가 나거나 옷감이 손상될 수 있다. 수도꼭지 색이 같은 건물도 있으므로 실제로 어느 쪽이 냉수인지 확인한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 냉수/온수 급수가 안돼요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41652",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "드럼·통돌이 공통", "years": "전 연식", "region": "KR" },
+      "caution": "LG 공식 안내도 온수 호스는 온수 밸브, 냉수 호스는 냉수 밸브에 연결하며 수도꼭지 표시 색과 다를 수 있다고 적는다. 이사나 새 설치 직후 확인하면 빠르다.",
+      "cautionSource": "LG전자 IE 에러 안내(온수·냉수 호스 연결 확인 항목)"
+    },
+    {
+      "id": "washer-supply-strainer-cleaning-steps",
+      "claim": "급수밸브 안의 거름망이 이물질·침전물·물때로 막히면 급수가 줄거나 안 될 수 있다. 청소 순서는 전원 코드를 뽑고, 수도를 잠근 뒤, 세탁기 뒷면의 급수호스 연결부를 풀고, 거름망을 펜치나 롱노즈 등으로 빼서 흐르는 물에 칫솔로 닦은 다음 다시 끼우고 호스를 단단히 조이는 것이다. 냉수와 온수 양쪽 모두 청소한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 냉수/온수 급수가 안돼요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41652",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "드럼·통돌이 공통", "years": "전 연식", "region": "KR" },
+      "caution": "거름망을 다시 끼운 뒤 호스를 연결해야 하며, 조립 후 누수 여부를 확인한다. 청소 전 전원 코드를 뽑고 수도를 잠근다. 지하수를 쓰는 집은 이물질이 많아 주 1회 정도 청소를 권장한다는 안내가 있다.",
+      "cautionSource": "삼성전자서비스 거름망 청소 방법(지하수 주 1회 권장) 및 LG전자 IE 에러 안내(거름망 재조립 후 호스 연결)"
+    },
+    {
+      "id": "washer-supply-detection-delay-normal",
+      "claim": "급수 동작을 시작하면 무게를 감지하는 데 수초에서 최대 2분이 걸릴 수 있고, 이 동안 세탁조가 회전하는 것은 정상이다. 바로 에러로 판단하지 말고 잠시 기다린다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 4E(YE)·4C(E1) 급수에러 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41702",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "드럼·통돌이 공통", "years": "전 연식", "region": "KR" },
+      "caution": "2분은 최대값이다. 2분이 지나도 물이 안 차면 수도 점검과 거름망 청소로 넘어간다.",
+      "cautionSource": "삼성전자서비스 4E·4C 안내의 무게 감지 소요시간 (수초~최대 2분)"
+    },
+    {
+      "id": "samsung-4c-4e-meaning",
+      "claim": "삼성 세탁기 표시창의 4C 또는 4E는 정해진 시간 안에 필요한 만큼 물이 채워지지 않았다는 급수 에러다. 2015년 이후 신모델은 E(Error) 표기가 C(Check)로 바뀌어 같은 원인이 4C로 나타나며, 기존 모델의 4E가 신모델에서는 4C로 보인다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 4E(YE)·4C(E1) 급수에러 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41702",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "드럼·통돌이", "years": "2015년 이후 신모델은 4C, 이전 모델은 4E", "region": "KR" },
+      "caution": "4C/4E는 급수 불량일 때 나오지만, 겨울에 얼어서 나오기도 한다. 이 경우는 해동 절차를 먼저 본다.",
+      "cautionSource": "삼성전자서비스 겨울철 해동 안내(4C/4E가 급수부 동결로도 표시됨)"
+    },
+    {
+      "id": "lg-ie-meaning",
+      "claim": "LG 세탁기 표시창의 IE는 급수가 안 된다는 에러다. 원인은 수도꼭지 잠김이나 단수, 급수호스 연결 불량 또는 냉수·온수 방향 뒤바뀜, 호스 꺾임이나 눌림, 급수호스 필터 이물질, 추위로 인한 얼음, 배수호스 고정 홀더 분해 등이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 — IE(급수 안됨) 에러 안내",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151447944369",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "세탁기", "line": "드럼·통돌이", "years": "전 연식(페이지 기준)", "region": "KR" },
+      "caution": "이 페이지에는 IE가 나는 시간 기준(예: 몇 분 동안 물이 안 차면 표시)이 적혀 있지 않다. 시간 기준을 인용하지 말 것.",
+      "cautionSource": "LG전자 IE 안내 원문 확인 결과 시간 기준 문구 없음"
+    },
+    {
+      "id": "lg-ie-drain-holder-siphon",
+      "claim": "LG 세탁기의 후면 배수호스 고정 홀더가 분해되어 있으면 배수호스 높이가 낮아져 물이 계속 빠져나가고, 그 결과 급수가 진행돼도 물이 채워지지 않아 IE가 발생할 수 있다. 배수호스 끝이 물에 잠기면 사이펀 현상이 생길 수 있으므로 물에 잠기지 않도록 설치한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 — IE(급수 안됨) 에러 안내",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151447944369",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "세탁기", "line": "후면 배수호스 고정 홀더가 있는 드럼·통돌이", "years": "전 연식(페이지 기준)", "region": "KR" },
+      "caution": "배수호스가 짧다고 고정 홀더를 빼서 쓰지 말 것. 짧으면 연장배수호스를 쓴다. 고정 홀더를 분해한 기억이 없어도 이사·청소 후에 빠져 있을 수 있으니 뒷면을 확인한다.",
+      "cautionSource": "LG전자 IE 안내의 연장배수호스 사용 안내"
+    },
+    {
+      "id": "freeze-hose-thaw-temperature",
+      "claim": "겨울에 급수가 안 되면 LG 공식 안내는 수도꼭지와 호스를 따뜻한 물로 녹이고, 호스는 50도 이하의 물을 쓰라고 적는다. 삼성 공식 안내는 수도 밸브를 50~60도 온수에 적신 수건으로 감싸 녹이고, 분리한 호스는 따뜻한 물에 담가 녹이라고 적는다",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "LG전자 — IE(급수 안됨) 에러 안내",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151447944369",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "세탁기", "line": "드럼·통돌이", "years": "전 연식", "region": "KR" },
+      "caution": "호스를 뜨거운 물에 직접 담그면 고무·플라스틱이 손상될 수 있다. 호스는 50도 이하의 따뜻한 물로 천천히 녹이고, 뜨거운 물을 쓸 때는 수건으로 감싼다. 제조사 안내 온도가 삼성(50~60도)과 LG(호스 50도 이하)에서 다르므로, 해동 온도는 사용 중인 모델 설명서를 우선한다.",
+      "cautionSource": "삼성전자서비스 겨울철 해동 안내(수건 50~60도) 및 LG전자 IE 안내(호스 50도 이하)"
+    },
+    {
+      "id": "samsung-tub-thaw-procedure",
+      "claim": "삼성 세탁기가 얼어 배수부에 문제가 생기면 5C 또는 5E가 뜬다. 이때는 배수 호스를 분리해 50~60도 온수에 담가 녹이고, 세탁조 안이 얼었다면 50~60도 온수를 넣고 약 1시간 자연해동한다. 잔수 제거 호스가 얼었으면 온수나 헤어드라이어의 따뜻한 바람으로 녹인다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 겨울철 세탁기 해동 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1840480",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "드럼·통돌이", "years": "전 연식", "region": "KR" },
+      "caution": "같은 페이지가 세탁조에 넣는 온수량을 두 번 다른 기준으로 적는다. 배수부 해동은 세탁조 용량의 약 3분의 1, 드럼 잔수부 해동은 약 10리터로 적혀 있다. 모델 용량에 맞춰 설명서를 확인한다.",
+      "cautionSource": "삼성전자서비스 겨울철 해동 안내 본문(세탁조 용량 3분의 1 및 약 10리터 두 기준)"
+    },
+    {
+      "id": "washer-freeze-check-drain-cap",
+      "claim": "세탁기가 얼었는지 간단히 확인하려면 서비스 커버를 열고 잔수 제거 호스의 마개를 열어 물이 나오는지 본다. 물이 나오지 않으면 배수부가 언 것이다. 전원을 켜고 헹굼을 눌렀는데도 물이 나오지 않으면 급수부가 언 것으로 본다",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "경향신문 보도(2013-01-13), LG전자 안내 인용",
+      "source_url": "https://www.khan.co.kr/article/201301131213491",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "세탁기", "line": "드럼·통돌이(서비스 커버 구조)", "years": "2013년 보도 기준", "region": "KR" },
+      "caution": "2013년 언론 보도가 인용한 안내로 현행 공식 원문이 아니다. 서비스 커버 위치와 마개 구조는 모델마다 다르므로 해당 모델 설명서로 확인한 뒤 쓴다. 마개를 열 때는 물이 튈 수 있으니 수건을 준비하고 전원을 먼저 끈다.",
+      "cautionSource": "경향신문 2013 보도의 인용 안내 (현행 제조사 문서와 대조되지 않음)"
+    },
+    {
+      "id": "service-fee-blocked-supply-lg",
+      "claim": "LG 세탁기의 IE 에러가 단수나 수도꼭지 잠김이 원인이면 제품 불량이 아니므로, 무상 품질 보증기간과 관계없이 유상 서비스로 진행된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 — IE(급수 안됨) 에러 안내",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151447944369",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "세탁기", "line": "드럼·통돌이", "years": "전 연식", "region": "KR" },
+      "caution": "수도 쪽 원인으로 확인되면 서비스 접수 전에 수도 상태부터 확인해 불필요한 유상 방문을 피하는 것이 독자에게 이롭다.",
+      "cautionSource": "LG전자 IE 안내의 유상 서비스 조건 문구"
+    },
+    {
+      "id": "service-fee-samsung-warranty",
+      "claim": "삼성 세탁기는 무상 보증기간 안이라도 제품 고장이 아닌 사용법 설명이나 설치 요청은 별도 요금이 부과된다. 조치 후에도 같은 에러가 나는 경우에 출장서비스를 예약하는 것이 공식 안내 순서다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 4E(YE)·4C(E1) 급수에러 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41702",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "드럼·통돌이", "years": "전 연식", "region": "KR" },
+      "caution": "요금 적용 여부는 접수 시 센터 안내를 따른다. 독자에게는 자가 조치를 먼저 해보고 접수하는 순서를 권한다.",
+      "cautionSource": "삼성전자서비스 4E·4C 안내의 서비스 접수 순서 문구"
+    },
+    {
+      "id": "contact-samsung-service",
+      "claim": "삼성 세탁기 급수 조치 후에도 같은 에러가 나면 삼성전자서비스 홈페이지의 출장서비스 예약을 이용할 수 있으며, 상담은 대표전화 1588-3366(발신자 부담)이나 AI CS Bot 상담으로 가능하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 4E(YE)·4C(E1) 급수에러 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/41702",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "세탁기", "line": "드럼·통돌이", "years": "전 연식", "region": "KR" },
+      "caution": "전화번호는 공식 안내 페이지 기준이므로 발행 직전 다시 확인한다.",
+      "cautionSource": "삼성전자서비스 상담·출장 예약 안내 (페이지 하단 대표전화)"
+    },
+    {
+      "id": "contact-lg-service",
+      "claim": "LG 세탁기 상담은 고객센터 1544-7777(평일 09:00~18:00, 주말·공휴일 휴무)으로 가능하며, 1:1 문의·전화·원격지원·영상통화와 출장 서비스 예약 경로가 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 — IE(급수 안됨) 에러 안내",
+      "source_url": "https://www.lge.co.kr/support/solutions-20151447944369",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "세탁기", "line": "드럼·통돌이", "years": "전 연식", "region": "KR" },
+      "caution": "운영 시간이 평일 낮 시간으로 한정되어 있으므로 주말 접수는 온라인 문의로 안내한다.",
+      "cautionSource": "LG전자 고객센터 운영시간 안내"
+    }
+  ]
+}

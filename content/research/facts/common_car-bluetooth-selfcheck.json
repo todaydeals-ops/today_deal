@@ -1,0 +1,208 @@
+{
+  "topic": "차량 블루투스 연결이 안 되거나 끊길 때 점검 순서 (차량 헤드유닛 쪽 삭제·재등록, 기기 등록 수 한도, 휴대폰 쪽 연결 이력 초기화)",
+  "brand": "공통",
+  "article": "car-bluetooth-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    {
+      "id": "iphone-bluetooth-unpair-repair",
+      "from": "content/research/facts/apple_iphone-wifi-bluetooth-selfcheck.json",
+      "reason": "아이폰 쪽 블루투스 액세서리 해제 후 디스커버리 모드로 재페어링하는 Apple 공식 절차. 차량 헤드유닛도 액세서리 페어링이므로 휴대폰 쪽 절차로 재사용. 출처 Apple 111804 원문 재확인함."
+    },
+    {
+      "id": "iphone-bluetooth-accessory-basics",
+      "from": "content/research/facts/apple_iphone-wifi-bluetooth-selfcheck.json",
+      "reason": "블루투스 액세서리 기본 점검(가까이 두기, 끄고 켜기, 배터리 확인) 공통 항목. 아이폰 기준으로 재사용."
+    }
+  ],
+  "declined_facts": [
+    {
+      "id": "airpods-pairing-reset-steps",
+      "from": "content/research/facts/apple_airpods-selfcheck.json",
+      "reason": "에어팟 전용 페어링 초기화 절차. 차량 헤드유닛 페어링과 절차가 달라 재사용하지 않음."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "car-bt-delete-erases-call-history",
+      "claim": "현대 NEXO 매뉴얼 기준, 헤드유닛에서 블루투스 기기를 삭제하면 그 기기에 저장되어 있던 최근 통화 목록과 전화번호부 목록 전체가 함께 삭제된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 오너스 매뉴얼 — 블루투스 기기 삭제 (NEXO 기준)",
+      "source_url": "https://ownersmanual.hyundai.com/ivi/PREM_GEN5/AVNT/FE/KOR/Korean/phone001.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "NEXO 매뉴얼 (헤드유닛 PREM_GEN5)", "years": "매뉴얼 기준 연식 미표기", "region": "KR" },
+      "caution": "기기를 지우기 전에 통화 기록과 전화번호부가 필요한지 먼저 확인한다. 매뉴얼은 삭제 후 복구 방법을 설명하지 않는다.",
+      "cautionSource": "현대 NEXO 매뉴얼 삭제 주의 문장 원문 (복구 방법 미기재)"
+    },
+    {
+      "id": "car-bt-max-devices-hyundai-nexo-5",
+      "claim": "현대 NEXO 매뉴얼 기준 블루투스 기기는 최대 5개까지 등록할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 오너스 매뉴얼 — 블루투스 기기 등록 (NEXO 기준)",
+      "source_url": "https://ownersmanual.hyundai.com/ivi/PREM_GEN5/AVNT/FE/KOR/Korean/phone001.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "NEXO 매뉴얼 (헤드유닛 PREM_GEN5)", "years": "매뉴얼 기준 연식 미표기", "region": "KR" },
+      "caution": "등록 수가 가득 찼을 때 기존 기기가 자동으로 지워지는지는 매뉴얼에 없다. 가득 찼다면 안 쓰는 기기를 직접 삭제하는 방법을 먼저 쓴다.",
+      "cautionSource": "현대 NEXO 매뉴얼에 가득 찼을 때 동작 설명 없음 (원문 확인)"
+    },
+    {
+      "id": "car-bt-max-devices-kia-k9-6",
+      "claim": "기아 K9 매뉴얼 기준 블루투스 기기는 최대 6개까지 등록할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 블루투스 기기 등록 (K9 기준)",
+      "source_url": "https://ownersmanual.kia.com/ivi/PREM_GEN6/AVNT/RJPE/KOR/Korean/phone001.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "K9 매뉴얼 (헤드유닛 PREM_GEN6)", "years": "매뉴얼 기준 연식 미표기", "region": "KR" },
+      "caution": "등록 한도는 차종·헤드유닛 세대마다 다르다. 현대 NEXO의 5개 기준을 기아 차량에 그대로 적용하지 않는다.",
+      "cautionSource": "현대 NEXO 5개(공식)와 기아 K9 6개(공식) 매뉴얼 원문 비교"
+    },
+    {
+      "id": "car-bt-one-handsfree-or-two-audio-kia",
+      "claim": "기아 K9 매뉴얼 기준 동시에 연결할 수 있는 것은 블루투스 핸즈프리 1개 또는 블루투스 오디오 2개이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 블루투스 연결 주의 (K9 기준)",
+      "source_url": "https://ownersmanual.kia.com/ivi/PREM_GEN6/AVNT/RJPE/KOR/Korean/phone001.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "K9 매뉴얼 (헤드유닛 PREM_GEN6)", "years": "매뉴얼 기준 연식 미표기", "region": "KR" },
+      "caution": "핸즈프리를 두 대 등록해도 동시에 둘 다 전화 기능으로 붙는 것은 아니다. 전화가 안 붙으면 연결된 다른 핸즈프리를 끊고 다시 시도한다.",
+      "cautionSource": "기아 K9 매뉴얼 연결 개수 원문 (핸즈프리 1 · 오디오 2)"
+    },
+    {
+      "id": "car-bt-one-connection-hyundai-nexo",
+      "claim": "현대 NEXO 매뉴얼 기준 블루투스 기기는 한 번에 한 개만 연결할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 오너스 매뉴얼 — 블루투스 기기 연결 (NEXO 기준)",
+      "source_url": "https://ownersmanual.hyundai.com/ivi/PREM_GEN5/AVNT/FE/KOR/Korean/phone001.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "NEXO 매뉴얼 (헤드유닛 PREM_GEN5)", "years": "매뉴얼 기준 연식 미표기", "region": "KR" },
+      "caution": "폰 두 대가 같은 차에 등록돼 있으면 한 번에 한 대만 붙는다. 연결이 안 되면 다른 폰의 블루투스를 끄고 다시 시도한다.",
+      "cautionSource": "현대 NEXO 매뉴얼 연결 제한 원문"
+    },
+    {
+      "id": "car-bt-initial-name-hyundai-nexo",
+      "claim": "현대 NEXO 헤드유닛의 초기 차량 이름은 NEXO이고 초기 인증번호는 0000이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 오너스 매뉴얼 — 블루투스 기기 등록 (NEXO 기준)",
+      "source_url": "https://ownersmanual.hyundai.com/ivi/PREM_GEN5/AVNT/FE/KOR/Korean/phone001.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "NEXO 매뉴얼 (헤드유닛 PREM_GEN5)", "years": "매뉴얼 기준 연식 미표기", "region": "KR" },
+      "caution": "초기값은 출고 상태 기준이다. 누군가 이름이나 인증번호를 바꿔 두었다면 초기값으로 찾지 못할 수 있다.",
+      "cautionSource": "현대 NEXO 매뉴얼 초기값 원문 (변경 여부는 매뉴얼 범위 밖)"
+    },
+    {
+      "id": "car-bt-initial-name-kia-k9",
+      "claim": "기아 K9 헤드유닛의 초기 차량 이름은 K9이며, 매뉴얼에는 구체적인 인증번호 값이 없고 기기에 따라 입력이 필요하거나 필요하지 않다고만 나온다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 블루투스 기기 등록 (K9 기준)",
+      "source_url": "https://ownersmanual.kia.com/ivi/PREM_GEN6/AVNT/RJPE/KOR/Korean/phone001.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "K9 매뉴얼 (헤드유닛 PREM_GEN6)", "years": "매뉴얼 기준 연식 미표기", "region": "KR" },
+      "caution": "인증번호를 임의로 추측해 여러 번 입력하지 않는다. 인증 입력이 계속 실패하면 기기를 지우고 처음부터 다시 등록한다.",
+      "cautionSource": "기아 K9 매뉴얼 인증번호 미기재 원문"
+    },
+    {
+      "id": "car-bt-pairing-steps-kia-k9",
+      "claim": "기아 K9 매뉴얼 기준 등록 순서는 등록 대기 화면에서 차량 이름을 검색해 선택하고, 휴대폰에 뜬 인증 번호를 확인해 승인한 뒤, 휴대폰의 접근 권한 요청에 응답하는 것이다. 연결이 끝나면 화면에 최근 통화 목록이나 연결된 기기 이름이 표시된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 블루투스 기기 등록 절차 (K9 기준)",
+      "source_url": "https://ownersmanual.kia.com/ivi/PREM_GEN6/AVNT/RJPE/KOR/Korean/phone001.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "K9 매뉴얼 (헤드유닛 PREM_GEN6)", "years": "매뉴얼 기준 연식 미표기", "region": "KR" },
+      "caution": "아이폰이고 CarPlay나 Android Auto를 지원하는 차라면 연결 팝업이 뜬다. 원하지 않으면 거절한다.",
+      "cautionSource": "기아 K9 매뉴얼 연결 팝업 안내 원문"
+    },
+    {
+      "id": "car-bt-pairing-blocked-while-connected",
+      "claim": "기아 K9 매뉴얼 기준 블루투스 기기가 연결된 동안에는 다른 기기를 새로 등록할 수 없다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 블루투스 연결 주의 (K9 기준)",
+      "source_url": "https://ownersmanual.kia.com/ivi/PREM_GEN6/AVNT/RJPE/KOR/Korean/phone001.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "K9 매뉴얼 (헤드유닛 PREM_GEN6)", "years": "매뉴얼 기준 연식 미표기", "region": "KR" },
+      "caution": "새 기기를 등록하려면 지금 연결된 기기를 먼저 끊거나 끈 뒤 시도한다.",
+      "cautionSource": "기아 K9 매뉴얼 등록 제한 원문"
+    },
+    {
+      "id": "car-bt-phone-lock-blocks-headunit",
+      "claim": "기아 K9 매뉴얼 기준 블루투스를 지원하는 휴대폰이라도 휴대폰의 연결 모드가 잠금 상태이면 헤드유닛과 연결되지 않는다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 블루투스 연결 주의 (K9 기준)",
+      "source_url": "https://ownersmanual.kia.com/ivi/PREM_GEN6/AVNT/RJPE/KOR/Korean/phone001.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "K9 매뉴얼 (헤드유닛 PREM_GEN6)", "years": "매뉴얼 기준 연식 미표기", "region": "KR" },
+      "caution": "휴대폰 잠금을 풀고 다시 연결을 시도하는 것이 첫 번째 확인 항목이다. 잠금 설정을 바꾸는 방법은 이 매뉴얼 범위 밖이다.",
+      "cautionSource": "기아 K9 매뉴얼 휴대폰 잠금 원문"
+    },
+    {
+      "id": "car-bt-no-device-handling-while-driving",
+      "claim": "기아 매뉴얼은 운전 중 블루투스 기기를 지나치게 조작하는 것을 삼가라고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스 매뉴얼 — 블루투스 연결 주의 (K9 기준)",
+      "source_url": "https://ownersmanual.kia.com/ivi/PREM_GEN6/AVNT/RJPE/KOR/Korean/phone001.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "K9 매뉴얼 (헤드유닛 PREM_GEN6)", "years": "매뉴얼 기준 연식 미표기", "region": "KR" },
+      "caution": "등록·삭제 작업은 차를 세운 뒤에 한다. 주행 중에 화면을 오래 만지며 재등록을 시도하지 않는다.",
+      "cautionSource": "기아 K9 매뉴얼 운전 중 조작 주의 원문"
+    },
+    {
+      "id": "samsung-phone-clear-list-then-reconnect",
+      "claim": "삼성전자서비스 안내에 따르면 블루투스 차량 핸즈프리가 안 붙으면 휴대폰의 블루투스 목록에서 차량 핸즈프리 등 연결 기기 목록을 삭제하거나 네트워크 초기화를 해서 연결 이력을 지운 뒤, 새로 연결해 본다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 블루투스 차량 핸즈프리 연결이 안됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/38435",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 (블루투스 차량 핸즈프리 연결)", "years": "전 연식", "region": "KR" },
+      "caution": "기기 목록 삭제는 휴대폰 쪽 연결 이력만 지운다. 차량 헤드유닛 쪽 기기도 같이 지워야 재등록이 깨끗하게 된다.",
+      "cautionSource": "삼성전자서비스 안내 (휴대폰 목록 삭제) + 차량 쪽 삭제 절차는 현대·기아 매뉴얼 원문"
+    },
+    {
+      "id": "samsung-network-reset-last-step",
+      "claim": "삼성전자서비스 안내에 따르면 연결 이력을 지운 뒤에도 블루투스 연결이 안 되면 휴대폰의 네트워크 설정을 초기화한 뒤 다시 연결해 본다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 블루투스 차량 핸즈프리 연결이 안됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/38435",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 (블루투스 차량 핸즈프리 연결)", "years": "전 연식", "region": "KR" },
+      "caution": "네트워크 설정을 초기화하면 와이파이 비밀번호와 블루투스 등 연결 기록이 모두 지워진다. 차량뿐 아니라 이어폰·워치 등 다른 기기도 다시 등록해야 한다.",
+      "cautionSource": "삼성전자서비스 안내 원문 (네트워크 초기화 시 연결 기록 삭제·재등록 필요)"
+    },
+    {
+      "id": "samsung-svc-contact-car-maker",
+      "claim": "삼성전자서비스는 차량 블루투스 핸즈프리의 사용 방법은 차량 제조사에 문의하라고 안내한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 블루투스 차량 핸즈프리 연결이 안됩니다",
+      "source_url": "https://www.samsungsvc.co.kr/solution/38435",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "스마트폰", "line": "갤럭시 (블루투스 차량 핸즈프리 연결)", "years": "전 연식", "region": "KR" },
+      "caution": "휴대폰 쪽 조치를 다 했는데도 안 되면 차량 제조사 고객센터나 서비스센터로 간다. 차량 쪽 문제를 휴대폰 AS로 해결할 수 없다.",
+      "cautionSource": "삼성전자서비스 안내 원문 (차량 핸즈프리 사용 방법은 해당 업체 문의)"
+    },
+    {
+      "id": "community-nav-update-routine-reset-unsure",
+      "claim": "삼성 커뮤니티의 한 사용자는 차량 네비게이션을 업그레이드한 뒤 갤럭시 루틴을 삭제해 연결 문제가 해결됐다고 보고했다. 같은 글에서 본인도 내비 문제인지 루틴 설정이 꼬인 것인지 확실하지 않다고 적었다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "삼성 커뮤니티 — 차량 네비 업그레이드 후 루틴 삭제 사용자 글 (비공식 후기)",
+      "source_url": "https://community.samsung.com/kr/conversations/%EA%B0%A4%EB%9F%AD%EC%8B%9C-s/%EC%B0%A8%EB%9F%89%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EC%97%B0%EA%B2%B0%ED%95%B4-%EB%91%90%EB%A9%B4-%EB%A7%A4%EB%B2%88-%EC%83%88%EB%A1%9C-%EB%8B%A4%EC%8B%9C-%EC%A0%91%EC%95%84%EC%95%BC-%ED%95%A9%EB%8B%88%EB%8B%A4/r1_25862686",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "자동차", "line": "차량 내비게이션 업그레이드 후 증상 (차종 미표기)", "years": "미표기", "region": "KR" },
+      "caution": "개별 사용자 한 명의 보고다. 원인을 단정하지 말고, 차량 내비 업데이트 직후 증상이 생겼는지부터 확인하는 참고 항목으로만 쓴다.",
+      "cautionSource": "커뮤니티 글 원문 (작성자 본인이 원인 확실하지 않다고 밝힘)"
+    }
+  ]
+}

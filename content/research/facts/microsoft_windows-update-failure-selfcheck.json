@@ -1,0 +1,197 @@
+{
+  "topic": "윈도우 업데이트 실패·무한 대기 해결 순서 (Microsoft 공식 문제 해결 기준)",
+  "brand": "공통",
+  "article": "windows-update-failure-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "공통_windows-boot-selfcheck.json:windows-update-boot-failure-rollback",
+    "공통_windows-boot-selfcheck.json:recent-hardware-addition-removal-test",
+    "공통_as-safety-baseline.json:factory-reset-data-loss"
+  ],
+  "declined_facts": [
+    {
+      "id": "공통_windows-boot-selfcheck.json:disk-space-15-percent-boot-requirement",
+      "reason": "원문은 '10~15% 여유 공간을 두는 것이 좋다(good idea)'이며 필수 조건이 아니다. '시스템 드라이브'로 한정한 문구도 없다. 같은 내용을 win-update-drive-free-space-10-15-percent로 정확히 다시 적었다."
+    },
+    {
+      "id": "공통_windows-boot-selfcheck.json:boot-device-not-found-bios-check",
+      "reason": "출처 라벨은 Microsoft Learn인데 인용 URL은 support.microsoft.com의 복구 옵션 문서다. 해당 문서에서 BIOS 부팅 순서 내용을 확인하지 못했다. 출처가 맞지 않아 쓰지 않는다."
+    },
+    {
+      "id": "공통_windows-boot-selfcheck.json:boot-sequence-uefi-vs-bios-distinction",
+      "reason": "인용 URL은 Secure Boot 문서인데 펌웨어 진입 키 목록을 그 문서에서 확인하지 못했다. 제조사마다 키가 다르다는 부분만 쓸 수 있고, 이 조사에서는 쓰지 않는다."
+    }
+  ],
+  "disputes": [
+    {
+      "targetId": "공통_windows-boot-selfcheck.json:disk-space-15-percent-boot-requirement",
+      "problem": "'시스템 드라이브 10~15% 이상이 있어야 Windows가 정상 작동한다'는 필수 요건처럼 서술했다. 공식 원문은 '10~15% 여유 공간을 두는 것이 좋다'이고, 드라이브 일반 기준이다.",
+      "evidence": "https://support.microsoft.com/en-US/Windows/Experience/Performance-Optimization/troubleshooting-windows-unexpected-restarts-and-stop-code-errors (2026-11-03 열람: 'it's a good idea to have 10% to 15% of free space available', 'the hard drive')"
+    },
+    {
+      "targetId": "공통_windows-boot-selfcheck.json:boot-device-not-found-bios-check",
+      "problem": "출처 라벨 'Microsoft Learn - Windows Boot Configuration'과 인용 URL(support.microsoft.com 복구 옵션 문서)이 맞지 않는다. 해당 URL에서 BIOS 부팅 순서 내용을 확인하지 못했다.",
+      "evidence": "https://support.microsoft.com/en-US/Windows/Experience/Backup-Recovery/recovery-options-in-windows (2026-11-03 열람: WinRE 복구 옵션과 업데이트 제거 내용만 있고 BIOS 부팅 순서 설명은 없음)"
+    }
+  ],
+  "facts": [
+    {
+      "id": "win-update-disk-space-upgrade-16-20gb",
+      "claim": "Windows 버전 업그레이드를 하려면 32비트는 16GB, 64비트는 20GB 이상의 여유 공간이 필요하다. 이 수치는 '업그레이드' 기준으로 적혀 있고, 월간 누적 업데이트에 대한 별도 수치는 공식 문서에 없다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshoot problems updating Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/troubleshoot-problems-updating-windows",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 업데이트·버전 업그레이드",
+        "years": "Windows 10/11",
+        "region": "글로벌"
+      },
+      "caution": "16GB·20GB 수치를 매달 오는 누적 업데이트에 그대로 대입하지 말 것. 공간이 부족하면 디스크 정리부터 하라.",
+      "cautionSource": "Microsoft 공식 문서의 'upgrade OS' 기준 문구(16GB 32비트 / 20GB 64비트)"
+    },
+    {
+      "id": "win-update-troubleshooter-path",
+      "claim": "Windows 업데이트 문제 해결사는 Windows 11에서 설정 > 시스템 > 문제 해결 > 기타 문제 해결사에서 Windows Update 옆의 '실행'을 누른다. Windows 10은 설정 > 업데이트 및 보안 > 문제 해결 > 추가 문제 해결사에서 Windows Update를 고른다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshoot problems updating Windows",
+      "source_url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/troubleshoot-problems-updating-windows",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 업데이트 문제 해결사",
+        "years": "Windows 10/11",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "win-update-cache-reset-gui",
+      "claim": "업데이트 캐시를 GUI로 초기화하려면 서비스(services.msc)에서 Windows Update 서비스를 멈추고, SoftwareDistribution 폴더 안의 내용을 지운 뒤, 서비스를 다시 시작한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshoot problems updating Windows (Clear the Windows Update Cache)",
+      "source_url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/troubleshoot-problems-updating-windows",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 업데이트 캐시",
+        "years": "Windows 10/11",
+        "region": "글로벌"
+      },
+      "caution": "문제 해결사로 안 될 때 쓰는 단계다. 먼저 개인 파일 백업을 확인할 것. 이 단계는 캐시 내용을 지우므로 되돌릴 수 없다.",
+      "cautionSource": "Microsoft 공식 문서의 '개인 파일 먼저 백업' 안내"
+    },
+    {
+      "id": "win-update-cache-reset-commands",
+      "claim": "관리자 명령 프롬프트에서 순서대로 net stop bits, net stop wuauserv, ren %systemroot%\\softwaredistribution softwaredistribution.bak, ren %systemroot%\\system32\\catroot2 catroot2.bak, net start bits, net start wuauserv를 순서대로 입력하라고 Microsoft가 안내한다. 이 명령은 캐시 폴더를 삭제하지 않고 이름만 .bak으로 바꾼다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshoot problems updating Windows (Rename software distribution folders)",
+      "source_url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/troubleshoot-problems-updating-windows",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 업데이트 캐시 명령어 초기화",
+        "years": "Windows 10/11",
+        "region": "글로벌"
+      },
+      "caution": "폴더를 지우지 않고 이름만 바꾸는 명령이다. 명령 순서를 바꾸면 서비스가 멈춘 채 남을 수 있으니 그대로 따를 것. 실행 전에 개인 파일을 백업할 것.",
+      "cautionSource": "Microsoft 공식 명령 순서와 '개인 파일 먼저 백업' 안내"
+    },
+    {
+      "id": "win-update-backup-before-steps",
+      "claim": "Windows 업데이트 문제 해결 방법을 시도하기 전에 개인 파일을 먼저 백업해야 한다고 Microsoft가 명시한다. 원드라이브(OneDrive)로 백업하는 방법도 공식 안내에 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshoot problems updating Windows (Important 상자)",
+      "source_url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/troubleshoot-problems-updating-windows",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 업데이트 전 백업",
+        "years": "Windows 10/11",
+        "region": "글로벌"
+      }
+    },
+    {
+      "id": "win-update-error-table-win11",
+      "claim": "Windows 11 업데이트 오류 코드 해석표(Microsoft 공식): 0x8007000d는 업데이트 파일 손상 또는 캐시 손상, 0x800705b4는 설치 시간이 너무 오래 걸렸거나 중단됨, 0x80240034는 불완전한 업데이트 또는 연결 문제로 멈춤, 0x800f0922는 디스크 공간 부족 또는 .NET Framework 등 구성요소 문제, 0x80070057·0x80080005는 파일 손상·권한·구성 문제, 0xC1900101은 호환되지 않는 드라이버, 0x80248014는 업데이트 데이터베이스 또는 서비스가 실행되지 않음, 0x80070005는 접근 거부·권한 부족, 0x80070002는 설치 실패",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshoot problems updating Windows (Windows 11 error code 표)",
+      "source_url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/troubleshoot-problems-updating-windows",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 11 업데이트 오류 코드",
+        "years": "Windows 11",
+        "region": "글로벌"
+      },
+      "caution": "같은 코드라도 원인이 여러 개로 적혀 있다. 코드만 보고 단정하지 말고 표의 원인 목록을 전부 확인할 것. 표에 없는 코드는 확인하지 못했다.",
+      "cautionSource": "Microsoft 공식 표의 원인 목록이 코드당 복수로 적힌 형식"
+    },
+    {
+      "id": "win-update-error-table-win10",
+      "claim": "Windows 10 업데이트 오류 코드 해석표(Microsoft 공식): 0x800705b4는 설치 시간 초과 또는 중단, 0x80240034는 불완전한 업데이트 또는 연결 문제로 멈춤, 0x800f0922·0x8007000E는 디스크 공간 부족, 0x800F081F·0x80073712·0x80246007은 시스템 파일 손상·누락 또는 다운로드 불완전, 0x80246007은 필요한 업데이트 파일 누락, 0x80070002·0x80070003·0x80070057은 설치 실패, 0x80070422는 Windows Update 서비스가 꺼져 있거나 멈춤, 0x80070020은 다른 프로그램이 업데이트를 막음",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshoot problems updating Windows (Windows 10 error code 표)",
+      "source_url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/troubleshoot-problems-updating-windows",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 10 업데이트 오류 코드",
+        "years": "Windows 10",
+        "region": "글로벌"
+      },
+      "caution": "0x800f0922은 Windows 10 표에서는 디스크 공간 부족으로만 적혀 있어 공간 확인을 먼저 할 것. 표에 없는 코드는 확인하지 못했다.",
+      "cautionSource": "Microsoft 공식 Windows 10 표의 0x800f0922 항목"
+    },
+    {
+      "id": "win-update-drive-free-space-10-15-percent",
+      "claim": "드라이브의 여유 공간은 전체 용량의 10~15% 정도를 남겨두는 것이 좋다고 Microsoft가 권장한다. 이 수치는 필수 조건이 아니라 권장 기준이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Troubleshooting Windows unexpected restarts and stop code errors",
+      "source_url": "https://support.microsoft.com/en-US/Windows/Experience/Performance-Optimization/troubleshooting-windows-unexpected-restarts-and-stop-code-errors",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 드라이브 여유 공간",
+        "years": "Windows 10/11",
+        "region": "글로벌"
+      },
+      "caution": "원문은 '하드 드라이브' 일반 기준이고 시스템 드라이브 한정이라는 말은 없다. 권장 수치를 기준으로 공간 부족을 확인하는 용도로만 쓸 것.",
+      "cautionSource": "Microsoft 원문의 'the hard drive' 및 'a good idea' 문구"
+    },
+    {
+      "id": "win-update-uninstall-via-winre",
+      "claim": "업데이트 후 문제가 생기면 복구 환경(WinRE)에서 문제 해결 > 고급 옵션 > 업데이트 제거로 최근 Windows 업데이트를 지울 수 있다. 일부 업데이트는 제거할 수 없다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Microsoft Support - Recovery options in Windows",
+      "source_url": "https://support.microsoft.com/en-US/Windows/Experience/Backup-Recovery/recovery-options-in-windows",
+      "checked": "2026-11-03",
+      "scope": {
+        "brand": "공통",
+        "category": "PC 운영체제",
+        "line": "Windows 최근 업데이트 제거",
+        "years": "Windows 10/11",
+        "region": "글로벌"
+      },
+      "caution": "제거가 안 되는 업데이트가 있다. 제거 후에도 문제가 계속되면 다음 단계(시동 복구 또는 개인 파일 보관 초기화)로 넘어갈 것.",
+      "cautionSource": "Microsoft 공식 문서의 'Some updates can't be uninstalled' 문구"
+    }
+  ]
+}

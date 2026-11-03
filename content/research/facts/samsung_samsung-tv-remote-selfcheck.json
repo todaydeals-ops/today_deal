@@ -1,0 +1,211 @@
+{
+  "topic": "삼성 TV 리모컨 반응 없음 — 배터리부터 페어링까지 자가점검 (스마트 리모컨 기준)",
+  "brand": "삼성",
+  "article": "samsung-tv-remote-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "tv-remote-pairing-model-year",
+    "battery-swelling-stop-immediately"
+  ],
+  "declined_facts": [
+    {
+      "id": "tv-power-led-indicator-check",
+      "why": "samsung_tv-error.json 의 source_url(samsungsvc solution/40598)을 재확인했으나 LED·IR 판별 내용이 없었다. 같은 취지의 내용은 솔루션 118823(QLED TV 리모컨 작동 안돼요)에서 확인되어 새 팩트 samsung-remote-ir-camera-test 로 다시 확보했다. 기존 팩트는 재사용하지 않는다."
+    },
+    {
+      "id": "tv-remote-battery-check",
+      "why": "같은 이유로 source_url(40598)에 리모컨 배터리 점검 절차가 없었다. 배터리 절차는 118823·1484964에서 다시 확보해 새 팩트로 남겼다. 기존 팩트 출처 불일치는 disputes 로 신고."
+    },
+    {
+      "id": "tv-cold-boot-restart",
+      "why": "기존 팩트는 '전원 코드 분리 후 30초 이상'이라고 적었으나, 삼성전자서비스 콜드 부팅 안내(solution/1014650)는 2017년 이전 구입 TV와 더 프레임에서 60초를 쓰라고 한다. 수치가 다르고 출처(40598)에도 콜드 부팅 내용이 없어 재사용하지 않는다. disputes 로 신고."
+    }
+  ],
+  "disputes": [
+    {
+      "targetId": "tv-remote-battery-check",
+      "problem": "source_url(https://www.samsungsvc.co.kr/solution/40598)을 재확인했을 때 리모컨 배터리·극성·USB-C·솔라 충전 절차가 없었다. 출처 귀속이 맞지 않는다.",
+      "evidence": "2026-11-03 WebFetch 결과 40598은 'TV 전원이 켜지지 않을 때' 점검과 콘센트·전원코드 확인만 담고 있었음. 배터리 내용은 solution/118823 및 solution/1484964 에 있음."
+    },
+    {
+      "targetId": "tv-cold-boot-restart",
+      "problem": "'전원 코드 분리 후 30초 이상 대기'라는 수치가 삼성전자서비스 콜드 부팅 안내(solution/1014650)의 60초 기준과 다르다. 또한 cautionSource로 든 40598 재확인 시 콜드 부팅 내용이 없었다.",
+      "evidence": "2026-11-03 WebFetch solution/1014650: '2017년 이전 구입 TV는 리모컨으로 콜드 부팅이 되지 않음. 전원 버튼으로 끈 뒤 뒷면 전원 케이블 분리, 약 60초 대기' / '더 프레임은 전원 코드 분리 후 60초'. 일반 모델은 리모컨 전원 버튼 5초 이상 누르기."
+    },
+    {
+      "targetId": "tv-power-led-indicator-check",
+      "problem": "source_url(solution/40598)에서 LED 표시등 위치·IR 카메라 판별 내용을 확인하지 못했다. 출처 재귀속이 필요하다.",
+      "evidence": "2026-11-03 WebFetch solution/40598 결과에 LED·카메라 판별 내용 없음. 같은 내용은 solution/118823에서 확인됨."
+    }
+  ],
+  "facts": [
+    {
+      "id": "samsung-remote-no-response-triage-order",
+      "claim": "삼성 TV 리모컨이 반응하지 않을 때 공식 점검 순서는 ①건전지를 극성에 맞게 새것으로 교체 → ②스마트폰 카메라로 리모컨 적외선 신호 확인 → ③리모컨 페어링 재시도 → ④TV 콜드 부팅 → ⑤그래도 같으면 전문 엔지니어 진단이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 TV] QLED TV에서 TV 리모컨 작동이 안돼요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/118823",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "TV", "line": "스마트 리모컨(블루투스 연결형)", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "순서를 건너뛰고 바로 페어링부터 하면 리모컨 고장과 TV 쪽 문제를 구분하기 어렵다. 배터리 → 신호 확인 → 페어링 순으로 한 단계씩 확인한다.",
+      "cautionSource": "삼성전자서비스 QLED 리모컨 점검 순서(118823)"
+    },
+    {
+      "id": "samsung-remote-ir-camera-test",
+      "claim": "스마트폰 카메라를 리모컨 앞부분 신호 송출부에 대고 전원 버튼을 누를 때 카메라 화면에 적외선 빛이 보이면 리모컨은 신호를 내보내고 있는 것이다. 새 건전지로 바꿔도 빛이 나오지 않으면 리모컨 불량으로 본다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 TV] QLED TV에서 TV 리모컨 작동이 안돼요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/118823",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "TV", "line": "스마트 리모컨(IR 송신 방식)", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "적외선 빛은 사람 눈에 보이지 않으므로 반드시 카메라 화면으로 확인한다. TV 수신부 램프가 반응하는지도 함께 본다.",
+      "cautionSource": null
+    },
+    {
+      "id": "samsung-remote-led-status-meaning",
+      "claim": "삼성 스마트 리모컨 LED 상태의 의미는 다음과 같다. LED가 꺼져 있으면 블루투스 정상 연결, LED가 두 번 깜박이면 블루투스 연결 끊김(볼륨·채널은 IR로 동작하나 음성 등 스마트 기능은 다시 연결해야 함), 버튼을 누를 때 LED가 5초 이상 켜져 있으면 배터리 부족, LED가 계속 켜져 있으면 USB 충전 중이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 TV] 삼성 스마트 TV 리모컨 LED 동작 설명",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1484964",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "TV", "line": "스마트 리모컨(블루투스 연결형)", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "LED 깜박임 횟수와 시간 기준은 이 안내 기준이다. 리모컨 세대에 따라 표시 방식이 다를 수 있으니 본인 리모컨 설명서와 대조한다.",
+      "cautionSource": "삼성전자서비스 LED 동작 설명(1484964) — 두 번 깜박임·5초 기준"
+    },
+    {
+      "id": "samsung-remote-battery-level-menu",
+      "claim": "스마트 리모컨 배터리 잔량은 TV 설정 → 전체 설정 → 일반 및 개인정보 → 리모컨 배터리 잔량 메뉴에서 확인할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 TV] 삼성 스마트 TV 리모컨 LED 동작 설명",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1484964",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "TV", "line": "스마트 리모컨(잔량 표시 지원 기종)", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "메뉴명과 위치는 TV OS 버전에 따라 다를 수 있다. 메뉴가 안 보이면 LED 상태 확인으로 대신한다.",
+      "cautionSource": null
+    },
+    {
+      "id": "samsung-remote-recharge-usbc-solar",
+      "claim": "USB-C 충전형 스마트 리모컨은 리모컨 하단 USB-C 포트에 케이블을 꽂아 충전하며, 케이블은 기본 제공되지 않는다. 태양광 셀이 있는 리모컨은 뒷면이 위를 향하도록 실내등이나 햇빛 아래 두어 충전한다. 충전 중에는 LED가 켜지고 충전이 끝나면 꺼진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 TV] 삼성 스마트 TV 리모컨 LED 동작 설명",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1484964",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "TV", "line": "USB-C 또는 태양광 충전형 스마트 리모컨", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "소파 틈이나 테이블 아래처럼 빛이 닿지 않는 곳에 두면 충전이 되지 않는다. 케이블은 휴대폰 충전에 쓰는 USB-C 타입을 쓴다.",
+      "cautionSource": null
+    },
+    {
+      "id": "samsung-remote-pairing-hold-time-conflict",
+      "claim": "2016~2025년형 TV에서 리모컨 페어링(복귀 + 재생/일시정지)을 누르는 시간은 연결 안내 페이지에 5초 이상으로 적혀 있고, LED 동작 설명 페이지에는 3초 이상으로 적혀 있어 두 기준이 공존한다",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 TV] 리모컨 동작이 안 될때 연결(페어링)하는 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/25844",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "TV", "line": "스마트 리모컨", "years": "2016~2025", "region": "KR" },
+      "caution": "3초로 연결이 안 되면 5초 이상 길게 누른다. 두 경우 모두 리모컨을 TV 수신부 쪽으로 향하게 하고, 연결 중에는 다른 버튼을 누르지 않는다. 연결이 되면 화면에 '스마트 리모컨 연결 중' 뒤 '스마트 리모컨 연결됨'이 뜬다.",
+      "cautionSource": "삼성전자서비스 페어링 안내(25844)의 5초 기준과 LED 동작 설명(1484964)의 3초 기준, 연결 메시지 순서"
+    },
+    {
+      "id": "samsung-cold-boot-remote-5s-general",
+      "claim": "일반 리모컨 사용 모델은 TV가 켜진 상태에서 리모컨 전원 버튼을 5초 이상 누르면 콜드 부팅이 되며, 제품 로그가 표시된 뒤 화면이 다시 켜진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 TV] TV 콜드 부팅 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1014650",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "TV", "line": "일반 리모컨 사용 모델", "years": "2017~ (페이지의 2017년 이전 분기 기준 역산)", "region": "KR" },
+      "caution": "콜드 부팅 중에는 전원을 다시 누르지 말고 화면이 돌아올 때까지 기다린다. 리모컨 LED가 깜빡이면 블루투스 재연결이 필요하다는 안내를 따른다.",
+      "cautionSource": "삼성전자서비스 콜드 부팅 안내(1014650)"
+    },
+    {
+      "id": "samsung-cold-boot-cord-60s-legacy-frame",
+      "claim": "2017년 이전 구입 TV는 대부분 리모컨으로 콜드 부팅이 되지 않는다. 이 경우 TV 전원 버튼으로 끈 뒤 뒷면 전원 케이블을 분리하고 약 60초 기다렸다가 다시 꽂고 전원 버튼을 누른다. 더 프레임(The Frame)은 리모컨 콜드 부팅이 되지 않으므로 전원 코드를 분리하고 60초 뒤 다시 연결한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 TV] TV 콜드 부팅 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1014650",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "TV", "line": "2017년 이전 구입 TV 및 더 프레임(The Frame)", "years": "~2017", "region": "KR" },
+      "caution": "전원 케이블은 끝까지 밀어 넣어 연결한다. 대기 시간은 페이지가 정한 60초를 지킨다.",
+      "cautionSource": "삼성전자서비스 콜드 부팅 안내(1014650)의 60초 기준"
+    },
+    {
+      "id": "samsung-smartthings-remote-control-scope",
+      "claim": "SmartThings 앱으로 삼성 TV를 리모컨처럼 제어할 수 있다. 같은 계정으로 로그인한 스마트폰의 SmartThings 앱에서 등록된 기기를 확인할 수 있고, TV 시청 중에도 앱을 따로 실행하지 않고 '최근 사용'에서 기기를 바로 제어할 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 TV] 스마트싱스, SmartThings 앱 사용하는 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1582997",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "TV", "line": "SmartThings 연동 스마트TV", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "화면 구성과 기능은 모델마다 다를 수 있다. 맵 보기 기능은 2023년형 삼성 스마트TV와 스마트모니터에서 제공된다고 안내되어 있어 구형 기종에서는 없을 수 있다.",
+      "cautionSource": "삼성전자서비스 SmartThings 앱 안내(1582997)의 2023년형 맵 보기 기준"
+    },
+    {
+      "id": "samsung-smartthings-remote-limits",
+      "claim": "SmartThings 앱 리모컨 제어는 TV나 기기의 위치에 따라 작동하지 않을 수 있으며, 그 경우 기기 위치를 바꿔 보라고 안내된다. 외부 기기나 모델에 따라 일부 기능은 지원되지 않을 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 TV] 스마트싱스, SmartThings 앱 사용하는 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/1582997",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "TV", "line": "SmartThings 연동 스마트TV", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "앱으로도 안 되면 TV 자체 리모컨 점검(건전지·페어링)으로 되돌아간다. 앱 제어는 임시 대체 수단으로 쓴다.",
+      "cautionSource": null
+    },
+    {
+      "id": "samsung-tv-quality-warranty-1yr",
+      "claim": "소비자분쟁해결기준상 TV의 품질보증기간은 1년이고 부품보유기간은 9년이다(2016년 10월 26일 이후 구입 제품 기준). 부품보유기간은 사업자가 품질보증서에 표시한 기간을 따르되, 표시가 없거나 9년보다 짧으면 9년을 적용한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 소비자분쟁 해결기준",
+      "source_url": "https://www.samsungsvc.co.kr/info/fee?tab=conflict",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "TV", "line": "전 TV", "years": "2016-10-26 이후 구입", "region": "KR" },
+      "caution": "보증이 끝났는지는 구입 영수증 날짜로 먼저 판단한다. 보증기간 시작일을 계산하는 원문 문구는 이 페이지에서 확인하지 못했다.",
+      "cautionSource": null
+    },
+    {
+      "id": "samsung-tv-warranty-free-repair-rule",
+      "claim": "품질보증기간 이내에 정상적인 사용 상태에서 생긴 성능·기능상의 하자는 무상수리 대상이다. 수리가 불가능하거나 교환된 제품이 1개월 이내에 중요한 수리를 요하는 경우에는 교환이나 환급이 적용될 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 소비자분쟁 해결기준",
+      "source_url": "https://www.samsungsvc.co.kr/info/fee?tab=conflict",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "TV", "line": "전 TV", "years": "2016-10-26 이후 구입", "region": "KR" },
+      "caution": "사용법 설명이나 설치, 고장이 아닌 요청은 보증기간 안이라도 별도 요금이 붙는다. 출장 신청 전에 이 점검 순서로 고장인지 먼저 가린다.",
+      "cautionSource": "삼성전자서비스 출장서비스 안내(118823·1014650 공통 문구)"
+    },
+    {
+      "id": "samsung-remote-standalone-warranty-unknown",
+      "claim": "리모컨 단품(리모컨 자체 고장)의 무상수리 기준과 보증 기간은 공식 소비자분쟁해결기준 페이지와 QLED 리모컨 안내 페이지에서 확인하지 못했다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — 소비자분쟁 해결기준",
+      "source_url": "https://www.samsungsvc.co.kr/info/fee?tab=conflict",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "TV", "line": "스마트 리모컨 단품", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "리모컨 단품 AS를 접수하기 전에 TV 본체 보증 상태와 함께 고객센터에 먼저 확인한다. 리모컨을 임의로 분해하지 않는다.",
+      "cautionSource": null
+    },
+    {
+      "id": "samsung-remote-manual-reset-unknown",
+      "claim": "리모컨 단독 초기화(리셋) 절차는 공식 페이지에서 확인하지 못했다. 페어링 안내 페이지에도 별도 초기화 절차는 없었다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "삼성전자서비스 — [삼성 TV] 리모컨 동작이 안 될때 연결(페어링)하는 방법",
+      "source_url": "https://www.samsungsvc.co.kr/solution/25844",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "TV", "line": "스마트 리모컨", "years": "2016~2025", "region": "KR" },
+      "caution": "커뮤니티에서 말하는 리모컨 재설정 방법은 공식 확인이 안 된 민간 방법이라 효과를 보장할 수 없다. 공식 페어링 절차와 배터리 교체를 먼저 끝낸다.",
+      "cautionSource": null
+    }
+  ]
+}

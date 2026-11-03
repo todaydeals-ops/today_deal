@@ -1,0 +1,196 @@
+{
+  "topic": "냉동실에 성에와 얼음이 계속 낄 때 원인과 점검",
+  "brand": "공통",
+  "article": "freezer-frost-buildup-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "lg-fridge-cooling-weak-internal-frost",
+    "lg-fridge-error-ff-rf-fan-ice",
+    "lg-fridge-error-dh-defrost-failure",
+    "lg-fridge-cooling-weak-door-seal",
+    "lg-fridge-cooling-weak-door-packing-cleaning",
+    "lg-fridge-cooling-weak-load-capacity",
+    "lg-fridge-operating-temperature-range",
+    "lg-fridge-cooling-weak-temperature-setting",
+    "fridge-noise-defrost-drip-tick",
+    "fridge-noise-fan-frost-tapping",
+    "fridge-noise-lg-as-criteria"
+  ],
+  "declined_facts": [
+    {
+      "id": "samsung-kimchi-fridge-cooling-weak-frost-check",
+      "why": "삼성 김치냉장고 팩트다. 글의 대상은 일반 냉동실이므로 김치냉장고 벽면 서리 판단 기준을 옮기지 않는다."
+    },
+    {
+      "id": "winia-dimchae-cooling-weak-internal-frost",
+      "why": "위니아 딤채 김치냉장고 팩트다. 브랜드·제품군이 달라 일반 냉동실 글에 쓰지 않는다."
+    },
+    {
+      "id": "lg-fridge-power-outage-recovery-time",
+      "why": "정전 후 냉기 복구 24~48시간은 정전 복구 맥락의 팩트다. 성에 원인 글의 정전 항목에는 성에 자연 소멸 기간(1~2주) 쪽 팩트를 쓴다."
+    },
+    {
+      "id": "https://www.samsungsvc.co.kr/solution/120542",
+      "why": "삼성 김치냉장고 스탠드형 안내다. 5~10mm 성에 기준은 김치냉장고 대상이라 일반 냉동실 글에 옮기지 않는다."
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "freezer-frost-cause-hot-food-moisture",
+      "claim": "냉동실에 성에가 생기는 원인 중 하나는 식히지 않은 뜨거운 음식을 넣어 수증기가 생기는 것과, 국물 등 수분이 많은 음식을 뚜껑 없이 보관하는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 일반냉장고 냉동실에 성에(얼음)가 생기는 원인과 안전한 제거 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150667030460",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "일반냉장고 냉동실 (대표 모델 기준)", "years": "전 연식", "region": "KR" },
+      "caution": "뜨거운 음식은 실온까지 식힌 뒤 넣고, 수분이 많은 음식은 밀폐 용기나 비닐백에 담는다. 모델·국가에 따라 설정과 메뉴가 다를 수 있다고 페이지에 명시돼 있다.",
+      "cautionSource": "LG 공식 페이지의 예방 방법과 모델별 설정 차이 안내"
+    },
+    {
+      "id": "freezer-frost-cause-door-gap-foreign-matter",
+      "claim": "냉동실 문이 완전히 닫히지 않거나 고무 패킹에 이물질이 끼면 외부 공기가 들어와 성에가 생긴다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 일반냉장고 냉동실에 성에(얼음)가 생기는 원인과 안전한 제거 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150667030460",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "일반냉장고 냉동실 (대표 모델 기준)", "years": "전 연식", "region": "KR" },
+      "caution": "패킹이 끈적이면 깨끗이 청소하고, 탄성이 없거나 부풀면 교체 대상이다. 패킹 청소 세부 절차는 기존 LG 팩트(lg-fridge-cooling-weak-door-packing-cleaning)를 따른다.",
+      "cautionSource": "LG 공식 페이지의 패킹 점검 안내 및 기존 LG 팩트의 교체 기준"
+    },
+    {
+      "id": "freezer-frost-cause-door-opening-warm-humid-air",
+      "claim": "문을 여닫을 때 들어오는 따뜻하고 습한 공기와 문 틈새로 들어온 따뜻한 공기가 습기를 늘려 냉동실 내부에 얼음 형성을 촉진한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung India — How to troubleshoot excess ice formation in a Samsung direct cool refrigerator",
+      "source_url": "https://www.samsung.com/in/support/home-appliances/how-to-troubleshoot-excess-ice-formation-in-a-samsung-direct-cool-refrigerator/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "직냉식(direct cool) 냉장고", "years": "현행 모델 기준", "region": "IN" },
+      "caution": "인도 지원 페이지다. 국내 삼성 모델에 동일하게 적용된다고 단정하지 않고 원인 방향으로만 쓴다.",
+      "cautionSource": "해당 페이지 region이 IN임을 확인"
+    },
+    {
+      "id": "freezer-frost-cause-direct-cool-manual-defrost",
+      "claim": "직냉식 삼성 냉장고는 증발기가 냉동실 상단에 있어 내부 습기가 거기서 얼어붙으며, 정기적으로 수동 제상을 하지 않으면 얼음이 두꺼워진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung India — How to troubleshoot excess ice formation in a Samsung direct cool refrigerator",
+      "source_url": "https://www.samsung.com/in/support/home-appliances/how-to-troubleshoot-excess-ice-formation-in-a-samsung-direct-cool-refrigerator/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "직냉식(direct cool) 냉장고", "years": "현행 모델 기준", "region": "IN" },
+      "caution": "직냉식인지 간냉식(자동제상)인지는 모델 사용설명서로 먼저 확인한다. 자동제상 모델이면 이 원인이 그대로 맞지 않을 수 있다.",
+      "cautionSource": "해당 페이지가 direct cool 모델만 대상으로 명시한 범위"
+    },
+    {
+      "id": "freezer-frost-cause-dial-overset-samsung-direct-cool",
+      "claim": "직냉식 삼성 냉장고는 온도 조절 다이얼을 주변 환경에 필요한 것보다 높게 맞추면 과냉각되어 성에가 빨리 생긴다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung India — How to troubleshoot excess ice formation in a Samsung direct cool refrigerator",
+      "source_url": "https://www.samsung.com/in/support/home-appliances/how-to-troubleshoot-excess-ice-formation-in-a-samsung-direct-cool-refrigerator/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "직냉식(direct cool) 냉장고", "years": "현행 모델 기준", "region": "IN" },
+      "caution": "계절별 권장 다이얼 번호(겨울 1~2, 우기 3~4, 여름 5~6)는 인도 모델 다이얼 기준이라 국내 모델에 그대로 옮기지 않는다. 다이얼 위치는 모델 사용설명서로 확인한다.",
+      "cautionSource": "인도 지원 페이지의 다이얼 번호는 해당 모델군 기준이며 region IN 확인"
+    },
+    {
+      "id": "freezer-frost-small-directcool-thickness-1cm",
+      "claim": "원도어 소형 직냉식 냉장고에서 성에가 1cm 이상 두껍게 쌓이면 냉각 능력이 떨어질 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 일반냉장고 냉동실에 성에(얼음)가 생기는 원인과 안전한 제거 방법 (원도어 소형 직냉식 FAQ)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150667030460",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "원도어 소형 직냉식 냉장고", "years": "전 연식", "region": "KR" },
+      "caution": "1cm는 제거 시점을 판단하는 기준으로만 쓴다. 대형 양문형이나 간냉식 냉동실에 같은 기준을 붙이지 않는다.",
+      "cautionSource": "LG 공식 FAQ가 원도어 소형 직냉식 제품에 한정해 제시한 기준"
+    },
+    {
+      "id": "freezer-frost-small-directcool-manual-thaw",
+      "claim": "원도어 소형 직냉식 냉장고에서 두꺼운 성에는 음식물을 다른 냉장고로 옮긴 뒤 온도조절 스위치를 제상(꺼짐) 위치로 맞춰 수동으로 녹인다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 일반냉장고 냉동실에 성에(얼음)가 생기는 원인과 안전한 제거 방법 (원도어 소형 직냉식 FAQ)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150667030460",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "원도어 소형 직냉식 냉장고", "years": "전 연식", "region": "KR" },
+      "caution": "이 페이지는 해빙 소요 시간을 명시하지 않는다. 시간은 이 팩트에 넣지 않고 별도 후기 팩트로 취급한다.",
+      "cautionSource": "LG 공식 페이지에 제상 소요 시간 문구가 없음을 확인"
+    },
+    {
+      "id": "freezer-frost-remove-no-sharp-tools",
+      "claim": "냉동실 성에를 칼이나 송곳 같은 뾰족한 금속 도구로 긁어내면 냉각기나 벽면이 파손될 수 있으므로 사용하지 않는다. 충분히 녹은 뒤 따뜻한 물에 적신 행주로 부드럽게 닦는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 일반냉장고 냉동실에 성에(얼음)가 생기는 원인과 안전한 제거 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150667030460",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "일반냉장고 냉동실 (대표 모델 기준)", "years": "전 연식", "region": "KR" },
+      "caution": "뾰족한 도구를 쓰면 냉각기 손상으로 냉매 누출까지 이어질 수 있다. 손상 의심 시 자가 수리하지 않고 서비스 점검으로 넘긴다.",
+      "cautionSource": "LG 공식 페이지의 파손 경고 및 같은 LG 업소용 페이지의 냉매 누출 경고 교차 확인"
+    },
+    {
+      "id": "freezer-frost-lg-directcool-thaw-button-restart",
+      "claim": "LG 업소용 직냉식 냉장고는 냉동온도 버튼을 3초 눌러 '꺼짐'으로 맞춰 성에가 녹을 때까지 기다리고, 재가동은 같은 버튼을 3초 눌러 원하는 온도로 맞춘다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 업소용 냉장고에 성에가 생기는 이유와 안전하게 제거하는 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20155284396975",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "업소용 직냉식 냉장고 (가정용 페이지 아님)", "years": "전 연식", "region": "KR" },
+      "caution": "가정용 냉동실은 버튼 위치와 표시가 다를 수 있어 이 3초 조작법을 가정용에 그대로 옮기지 않는다. 가정용은 사용설명서 확인을 먼저 안내한다.",
+      "cautionSource": "해당 페이지가 업소용 제품 기준임을 명시"
+    },
+    {
+      "id": "freezer-frost-drain-plug-meltwater",
+      "claim": "성에를 녹인 뒤 바닥에 물이 많이 고이면 제품 아랫면의 배수구 마개를 뽑아 물을 빼고, 다 빠지면 마개를 다시 막는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 업소용 냉장고에 성에가 생기는 이유와 안전하게 제거하는 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20155284396975",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "업소용 직냉식 냉장고 (가정용 페이지 아님)", "years": "전 연식", "region": "KR" },
+      "caution": "배수구 위치와 마개 형태는 제품마다 다르므로 가정용은 사용설명서로 확인한다. 마개를 다시 막지 않으면 물이 새므로 마무리 확인을 함께 안내한다.",
+      "cautionSource": "해당 페이지가 업소용 제품 기준임을 명시"
+    },
+    {
+      "id": "freezer-frost-power-outage-normal-1-2weeks",
+      "claim": "정전 후 다시 켠 뒤 생긴 성에는 고장이 아니며, 냉기가 안정되면 1~2주 안에 자연스럽게 사라진다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — 일반냉장고 냉동실에 성에(얼음)가 생기는 원인과 안전한 제거 방법 (FAQ)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150667030460",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "일반냉장고 냉동실 (대표 모델 기준)", "years": "전 연식", "region": "KR" },
+      "caution": "1~2주가 지나도 줄지 않거나 계속 두꺼워지면 정상으로 보지 말고 서비스 점검으로 넘긴다.",
+      "cautionSource": "LG 공식 FAQ의 1~2주 자연 소멸 문구"
+    },
+    {
+      "id": "freezer-frost-samsung-defrost-button-stuck-service",
+      "claim": "삼성 직냉식 냉장고에서 얼음이 다 녹았는데도 제상 버튼이 원위치로 돌아오지 않으면 서비스센터 점검이 필요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung India — How to troubleshoot excess ice formation in a Samsung direct cool refrigerator",
+      "source_url": "https://www.samsung.com/in/support/home-appliances/how-to-troubleshoot-excess-ice-formation-in-a-samsung-direct-cool-refrigerator/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "직냉식(direct cool) 냉장고", "years": "현행 모델 기준", "region": "IN" },
+      "caution": "이 페이지는 연락처 번호가 두 곳에서 서로 다르게 표기돼 있다. 번호는 글에 쓰지 않고 삼성전자서비스 공식 경로 확인을 안내한다.",
+      "cautionSource": "해당 페이지 내 연락처 표기 불일치를 확인"
+    },
+    {
+      "id": "freezer-frost-samsung-no-internal-repair",
+      "claim": "삼성 직냉식 냉장고의 내부 부품은 사용자가 분해하거나 수리하지 않는다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung India — How to troubleshoot excess ice formation in a Samsung direct cool refrigerator",
+      "source_url": "https://www.samsung.com/in/support/home-appliances/how-to-troubleshoot-excess-ice-formation-in-a-samsung-direct-cool-refrigerator/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "냉장고", "line": "직냉식(direct cool) 냉장고", "years": "현행 모델 기준", "region": "IN" },
+      "caution": "전원을 끄고 식품을 옮기고 도어를 열어 두는 것까지는 사용자가 한다. 부품 분해는 하지 않는다.",
+      "cautionSource": "삼성 공식 페이지의 내부 부품 분해·수리 금지 문구"
+    }
+  ]
+}

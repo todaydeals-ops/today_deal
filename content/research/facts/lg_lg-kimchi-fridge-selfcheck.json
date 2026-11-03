@@ -1,0 +1,240 @@
+{
+  "topic": "LG 김치냉장고 에러 표시·냉각 불량·성에 자가점검 (김치톡톡 명칭은 공식 자료에서 확인 실패)",
+  "brand": "LG",
+  "article": "lg-kimchi-fridge-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [],
+  "declined_facts": [
+    {
+      "id": "lg-fridge-errorcode-list",
+      "why": "일반 냉장고 에러코드 목록(IF/FF/rF/CF/FS·rS/dS/HS/IS/SS/rt/CO/Od/dH/gF/It/OFF)이다. 김치냉장고 공식 에러코드 유형 페이지는 LF·UF·H1·H2·d1·d2·E1·E2·F1·F2·US·LS 등 김치 전용 코드를 따로 두고, FF의 칸 위치도 다르게 적고 있어 일반 냉장고 목록을 그대로 쓸 수 없다"
+    },
+    {
+      "id": "lg-fridge-cooling-weak-ventilation-gap",
+      "why": "뒷면 10cm·옆면 5cm는 일반 냉장고 설치 기준이다. 김치냉장고 공식 페이지(냉기 약해요·스탠드 FF/UF·LF/rF)에서는 설치 간격 수치를 확인하지 못했으므로 김치 글에 옮기지 않는다"
+    },
+    {
+      "id": "refrigerant-charge-professional-only",
+      "why": "공통 안전 기준선은 에어컨 냉매 충전 원칙(scope 에어컨 전 라인)이다. 김치냉장고 냉각 불량의 냉매 관련 문장은 LG 김치 공식 페이지(CH/CL)에서 직접 확인한 새 팩트로 기록하고, 안전 원칙은 그 팩트의 cautionSource로만 인용한다"
+    },
+    {
+      "id": "samsung-kimchi-fridge-errorcode-ho-no",
+      "why": "삼성 비스포크 김치플러스 에러코드(HO/nO/LO/RO 등)는 삼성 체계이며 LG 김치 코드 표와 공유되지 않는다"
+    },
+    {
+      "id": "winia-dimchae-errorcode-c",
+      "why": "위니아 딤채 에러코드 체계(C/E/EA/E1/E2/F/rF)는 위니아 전용이라 LG 김치 글에 쓰면 코드 의미가 섞인다"
+    },
+    {
+      "id": "winia-dimchae-structured-cooling-stand-type",
+      "why": "위니아 4by4 독립냉각 구조는 위니아 고유 기술이며, LG 김치냉장고 냉각 구조에 대한 공식 근거가 없다"
+    }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "lg-kimchi-model-name-kimchitoktok-unverified",
+      "claim": "LG 김치냉장고 에러코드 유형 공식 페이지와 냉기 약해요 페이지에는 '김치톡톡' 모델명이 나오지 않으며, 모델별 코드·조작 차이는 본인 제품 사용설명서나 고객센터 확인을 안내한다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 김치냉장고] 냉장고 에러코드 유형",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153812732020",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "김치냉장고", "line": "김치톡톡 명칭(공식 자료 미확인)", "years": "조회 시점 현행 안내", "region": "KR" },
+      "caution": "글에서 '김치톡톡 전용 에러 코드'라고 단정하지 말 것. 독자에게는 본인 모델명을 제품 뒷면·설명서에서 확인하도록 안내한다.",
+      "cautionSource": "해당 페이지에 모델별 차이 안내 문구가 있고 김치톡톡 모델 페이지를 찾지 못함"
+    },
+    {
+      "id": "lg-kimchi-error-code-categories",
+      "claim": "LG 김치냉장고 에러코드는 팬 모터 이상(CF·LF·rF·UF·FF), 제상 불량(dH·H1·H2), 서비스 접수가 필요한 코드(CO·nC·Od·F1·F2·US·LS·FS·d1·d2·E1·E2)로 나뉘며, 팬·제상 코드는 자가 해결 절차가 안내되고 나머지는 자가 해결 방법 없이 서비스 접수가 안내된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 김치냉장고] 냉장고 에러코드 유형",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153812732020",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "김치냉장고", "line": "뚜껑식·스탠드형 공통 안내", "years": "조회 시점 현행 안내", "region": "KR" },
+      "caution": "같은 코드라도 칸 위치 표기가 페이지마다 다르다(lg-kimchi-ff-lf-position-conflict 참조). 코드 의미는 표시창의 코드 문자 그대로 대조하고, 칸 이름으로 판단하지 않는다.",
+      "cautionSource": "같은 LG 공식 지원 도메인의 스탠드형 FF/UF·LF/rF 페이지와 칸 위치 표기가 다름을 직접 확인"
+    },
+    {
+      "id": "lg-kimchi-ff-lf-position-conflict",
+      "claim": "LG 김치냉장고 FF·UF·LF·rF 코드의 칸 위치 표기는 페이지마다 다르다. 에러코드 유형 표는 FF를 중칸 팬, LF를 좌측 팬으로 적고, 스탠드형 FF·UF 페이지는 FF를 상칸(냉동실), UF를 중하칸으로, LF·rF 페이지는 상칸 좌우로 적는다",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — LG 스탠드 김치냉장고 Er(E) FF, UF 에러코드 원인과 해결 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153013733387",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "김치냉장고", "line": "스탠드형(FF·UF·LF·rF 페이지 기준)", "years": "조회 시점 현행 안내", "region": "KR" },
+      "caution": "칸 이름(상칸·중칸·하칸)을 단정해 쓰지 말고 '표시창에 뜬 코드 문자와 해당 문이 덜 닫혔는지'로 안내한다. 칸 구성은 모델마다 다르다.",
+      "cautionSource": "LG 공식 페이지 3종(에러코드 유형 표, 스탠드 FF/UF, 스탠드 LF/rF)의 칸 표기 비교"
+    },
+    {
+      "id": "lg-kimchi-fan-error-frost-24h-thaw",
+      "claim": "LG 김치냉장고 Er(E) FF·UF 팬 모터 에러는 팬 주변에 얼음(성에)이 생겨 모터가 돌지 못하는 경우가 많으며, 전원 코드를 분리하고 모든 문을 열어 최소 24시간 이상 자연 해동하는 것이 공식 자가 해결 방법이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — LG 스탠드 김치냉장고 Er(E) FF, UF 에러코드 원인과 해결 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153013733387",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "김치냉장고", "line": "스탠드형 FF·UF 에러", "years": "조회 시점 현행 안내", "region": "KR" },
+      "caution": "해동 시간은 얼음 양에 따라 길어질 수 있다. 여름철 약 하루, 겨울철 최대 3일이 걸릴 수 있다고 안내되어 있다. 헤어드라이어 등 열기구는 쓰지 않는다(플라스틱 변형·화재 위험).",
+      "cautionSource": "같은 공식 페이지의 계절별 소요 시간과 열기구 사용 금지 안내"
+    },
+    {
+      "id": "lg-kimchi-fan-error-lf-rf-door-check",
+      "claim": "LG 김치냉장고 Er(E) LF·rF 팬 모터 에러는 좌측·우측 칸 팬 주변 성에로 모터가 돌지 못하는 것이 원인이며, 해당 칸 문이나 인접 문이 덜 닫혀 외부 공기가 들어오는 경우가 가장 많다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — LG 스탠드 김치냉장고 Er(E) LF 또는 rF 에러",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153013752301",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "김치냉장고", "line": "스탠드형 LF·rF 에러", "years": "조회 시점 현행 안내", "region": "KR" },
+      "caution": "같은 페이지에서 해동은 최소 24시간 이상 모든 문을 열어 두라고 안내한다. 인터넷에 떠도는 8시간 기준은 이 페이지에서 확인되지 않았으므로 쓰지 않는다.",
+      "cautionSource": "같은 공식 페이지의 '최소 24시간 이상' 문구를 직접 확인"
+    },
+    {
+      "id": "lg-kimchi-cf-error-self-reset-limit",
+      "claim": "LG 김치냉장고 Er(E) CF(기계실 팬 모터 이상)는 전원을 껐다 켜면 일시적으로 사라지지만 약 3시간 뒤 다시 나타날 수 있고, 배선 단선이나 메인보드 문제로도 생길 수 있으며, 반복되면 서비스 접수가 필요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 김치냉장고] 냉장고 에러코드 유형",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153812732020",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "김치냉장고", "line": "기계실 팬(CF)", "years": "조회 시점 현행 안내", "region": "KR" },
+      "caution": "전원 재시작으로 잠깐 사라졌다고 완치된 것이 아니다. 3시간 안팎으로 다시 뜨는지 확인하고, 재발하면 서비스 접수로 넘긴다.",
+      "cautionSource": "같은 공식 페이지의 CF 항목 원문('약 3시간 후 다시 나타날 수 있습니다')"
+    },
+    {
+      "id": "lg-kimchi-ch-cl-cooling-error-steps",
+      "claim": "LG 냉장고 Er(E) CH·CL은 냉각 성능 부족이나 내부 온도 이상을 감지했을 때 뜨며, 원인으로 냉매 부족·누출, 압축기·밸브 등 내부 사이클 부품 문제, 장시간 열어둔 문이 제시된다. 자가 해결은 문을 완전히 닫고 식을 때까지 기다린 뒤 플러그를 5분 뽑았다 다시 꽂는 것이다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — Er(E) CH 또는 CL 에러코드 원인과 해결 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153004133823",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "김치냉장고 적용 여부 본문 미명시(일반 냉장고 페이지)", "years": "조회 시점 현행 안내", "region": "KR" },
+      "caution": "냉매 부족·누출이 원인으로 적혀 있으므로 가스 보충이나 냉매 충전을 독자에게 권하지 않는다. 해결되지 않으면 서비스 접수로 넘긴다. 같은 페이지에 에어컨 관련 문장이 섞여 있어 원문 그대로 옮기지 않는다.",
+      "cautionSource": "공통_as-safety-baseline.json의 refrigerant-charge-professional-only(LG 에어컨 자가점검 공식 안내의 냉매 충전 전문가 원칙)"
+    },
+    {
+      "id": "lg-kimchi-ch-cl-after-repair-24h",
+      "claim": "LG 냉장고 CH·CL은 수리 후 냉동실 온도가 -10℃ 이하로 내려가지 않았을 때 나타날 수 있어, 약 24시간 작동시켜 냉기를 순환시키라고 안내된다. 24시간 후에도 계속되면 고객센터 문의가 필요하다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — Er(E) CH 또는 CL 에러코드 원인과 해결 방법 (FAQ)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153004133823",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "냉장고", "line": "수리 후 재가동", "years": "조회 시점 현행 안내", "region": "KR" },
+      "caution": "이 수치는 수리 후 상황에 한정된 FAQ다. 평소 사용 중 발생한 CH·CL에 같은 기준을 적용하지 않는다.",
+      "cautionSource": "같은 공식 페이지 FAQ 항목의 '-10℃ 이하' 문구"
+    },
+    {
+      "id": "lg-kimchi-cooling-weak-storage-function",
+      "claim": "LG 김치냉장고 냉기가 약할 때는 익은 김치를 익힘 기능이 아닌 맛지킴김치나 오래보관 같은 보관 기능으로 설정해야 하며, 보관 기능이 익힘 기능보다 온도가 낮게 설정된다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 김치냉장고 온도] 냉기가 약해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150709080102",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "김치냉장고", "line": "온도 기능(맛지킴김치·오래보관·익힘)", "years": "조회 시점 현행 안내", "region": "KR" },
+      "caution": "온도 버튼 위치와 기능 이름은 모델마다 다르다. 익힘·보관 기능명은 제품 설명서로 확인하도록 안내한다.",
+      "cautionSource": "같은 공식 페이지의 '온도 조절 버튼 위치는 모델마다 다를 수 있다' 안내"
+    },
+    {
+      "id": "lg-kimchi-cooling-weak-compartment-power-off",
+      "claim": "LG 김치냉장고에서 일부 칸이 '전원 꺼짐'으로 표시되면 해당 칸의 기능을 켜야 냉기가 나오며, 칸 버튼은 맛지킴김치 → 야채/과일 → 쌀/잡곡 → 육류/생선 → 오래보관 → 하칸 꺼짐 순으로 바뀐다(일부 모델 한정)",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 김치냉장고 온도] 냉기가 약해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150709080102",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "김치냉장고", "line": "하칸 등 칸 단위 기능(일부 모델)", "years": "조회 시점 현행 안내", "region": "KR" },
+      "caution": "이 기능이 없는 모델도 있다. 버튼 순서는 공식 페이지 기준이며 모델별로 다를 수 있다.",
+      "cautionSource": "같은 공식 페이지의 '일부 모델에만 해당' 안내"
+    },
+    {
+      "id": "lg-kimchi-frost-1cm-removal-steps",
+      "claim": "LG 뚜껑식 김치냉장고에서 안쪽 성에가 1cm 이상으로 두꺼워지면 냉기 전달이 나빠져 김치가 빨리 시어질 수 있으며, 제거는 잠금 해제 → 해당 칸 전원 3초 이상 끔 → 성에가 녹을 때까지 대기 → 칸 안 물기 닦기 → 전원 3초 이상 켜기 순서로 한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 김치냉장고 성에][뚜껑식] 김치냉장고 안쪽에 성에가 있어요",
+      "source_url": "https://www.lge.co.kr/support/video-tutorials-1781280",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "김치냉장고", "line": "뚜껑식", "years": "조회 시점 현행 안내", "region": "KR" },
+      "caution": "뾰족한 칼이나 송곳으로 긁으면 김치냉장고 내부(증발기·냉각판)가 망가질 수 있다. 플라스틱 주걱처럼 날카롭지 않은 도구만 쓴다.",
+      "cautionSource": "같은 공식 페이지의 '뾰족한 칼이나 송곳으로 성에를 제거하면 김치냉장고가 망가질 수 있으니' 문구"
+    },
+    {
+      "id": "lg-kimchi-frost-no-time-stated-procedure",
+      "claim": "LG 뚜껑식 김치냉장고 성에 제거 안내에는 구체적인 해동 시간이 적혀 있지 않으며, 성에가 녹을 때까지 기다리라고만 안내되어 있다",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 김치냉장고 성에][뚜껑식] 김치냉장고 안쪽에 성에가 있어요",
+      "source_url": "https://www.lge.co.kr/support/video-tutorials-1781280",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "김치냉장고", "line": "뚜껑식 성에 제거", "years": "조회 시점 현행 안내", "region": "KR" },
+      "caution": "해동 시간을 숫자로 지어 쓰지 말 것. 녹을 때까지 기다린다고만 쓰고, 얼음이 많으면 시간이 더 걸릴 수 있다고 안내한다.",
+      "cautionSource": "공식 페이지에 해동 시간 수치가 없음을 직접 확인"
+    },
+    {
+      "id": "lg-kimchi-frost-prevention-habits",
+      "claim": "LG 김치냉장고 성에를 줄이려면 뜨거운 음식은 충분히 식혀 넣고, 수분이 많은 식품은 밀폐용기나 비닐 백에 담으며, 문이 완전히 닫히는지 확인하고, 과도한 식품은 덜어내야 한다. 장시간 정전 후 재가동하면 공기 온도 차로 성에가 생길 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 김치냉장고 성에][뚜껑식] 김치냉장고 안쪽에 성에가 있어요",
+      "source_url": "https://www.lge.co.kr/support/video-tutorials-1781280",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "김치냉장고", "line": "뚜껑식", "years": "조회 시점 현행 안내", "region": "KR" },
+      "caution": "문 틈으로 바깥 공기가 들어오는지도 함께 확인한다. 문 고무 패킹에 끈적한 오염이 있으면 닦는다.",
+      "cautionSource": "같은 공식 페이지의 재발 방지 안내"
+    },
+    {
+      "id": "lg-kimchi-install-cold-delay",
+      "claim": "LG 김치냉장고는 전원을 꽂은 뒤 약 3~4시간이 지나야 냉기가 나오기 시작하며, 여름에는 내부를 차갑게 채우는 데 2~3일이 걸릴 수 있다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 김치냉장고 온도] 냉기가 약해요",
+      "source_url": "https://www.lge.co.kr/support/solutions-20150709080102",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "김치냉장고", "line": "설치 직후", "years": "조회 시점 현행 안내", "region": "KR" },
+      "caution": "설치 직후 냉기가 약한 것은 정상일 수 있으므로 식품을 바로 넣지 않는다. 2~3일이 지나도 냉기가 없으면 점검이 필요하다.",
+      "cautionSource": "같은 공식 페이지의 설치 후 시간 안내"
+    },
+    {
+      "id": "lg-kimchi-power-outage-recovery-24-48h",
+      "claim": "LG 스탠드 김치냉장고는 성에 해동 후 전원을 다시 연결하면 내부 온도가 정상으로 돌아오기까지 약 24~48시간이 걸린다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — LG 스탠드 김치냉장고 Er(E) FF, UF 에러코드 원인과 해결 방법",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153013733387",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "김치냉장고", "line": "스탠드형 해동 후 재가동", "years": "조회 시점 현행 안내", "region": "KR" },
+      "caution": "이 시간 동안 냉기가 돌아오는지 확인하기 전에 식품을 가득 채우지 않는다. 24~48시간이 지나도 냉기가 없으면 서비스 접수로 넘긴다.",
+      "cautionSource": "같은 공식 페이지의 재연결 후 복구 시간 문구"
+    },
+    {
+      "id": "lg-kimchi-dh-h1-h2-defrost-error",
+      "claim": "LG 김치냉장고 Er(E) dH(제상 불량)는 성에 제거 후 일정 시간이 지나도 제상센서 온도가 정상 범위에 들지 않을 때 뜨며, 좌칸은 H1, 우칸은 H2로 표시된다. 자가 해결은 성에 제거 절차를 따르고, 지속되면 서비스 접수다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 김치냉장고] 냉장고 에러코드 유형",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153812732020",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "김치냉장고", "line": "제상(dH·H1·H2)", "years": "조회 시점 현행 안내", "region": "KR" },
+      "caution": "H2 항목 원문 문장이 깨져 있어 정확한 표기는 페이지에서 다시 확인해야 한다. 제상 히터·온도퓨즈 등 부품 원인은 전문 점검 영역이다.",
+      "cautionSource": "같은 공식 페이지의 H2 항목 문장 훼손을 직접 확인"
+    },
+    {
+      "id": "lg-kimchi-service-contact",
+      "claim": "LG전자 고객센터(구매·서비스·구독) 번호는 1544-7777이며 평일 09:00~18:00, 주말·공휴일은 휴무다. 제품·서비스 긴급 문의는 24시간 운영된다고 안내되어 있고, 출장 서비스는 LG 고객지원의 출장 서비스 예약 페이지에서 접수한다",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "LG전자 고객지원 — [LG 김치냉장고] 냉장고 에러코드 유형 (고객센터 및 서비스 접수 안내)",
+      "source_url": "https://www.lge.co.kr/support/solutions-20153812732020",
+      "checked": "2026-11-03",
+      "scope": { "brand": "LG", "category": "김치냉장고", "line": "전 모델 공통 고객센터", "years": "조회 시점 현행 안내", "region": "KR" },
+      "caution": "보증 기간 내인지 여부에 따라 서비스 요금이 달라질 수 있다. 보증 기간 기준(년수)은 이 조사에서 공식 수치로 확인하지 못했으므로 쓰지 않는다. 보증 기간이 지난 제품은 점검 시 서비스 요금이 청구될 수 있다고 안내되어 있다.",
+      "cautionSource": "보증 기간 수치는 확인 실패. 서비스 요금 청구 안내 문구는 LG 스탠드 김치냉장고 Er(E) FF, UF 공식 페이지(https://www.lge.co.kr/support/solutions-20153013733387)의 '보증 기간이 지난 제품은 서비스 요금이 청구될 수 있으니' 문구를 직접 확인"
+    }
+  ]
+}

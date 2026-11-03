@@ -1,0 +1,179 @@
+{
+  "topic": "일산화탄소 경보기 울림 시 대처와 겨울철 점검 (설치 위치·수명·시험·중독 증상·119 대처)",
+  "brand": "공통",
+  "article": "carbon-monoxide-alarm-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": ["kgs-carbon-monoxide-response-not-found", "gas-range-gas-odor-emergency-procedure"],
+  "declined_facts": [
+    {
+      "id": "kyungdong-co-detector-mandatory",
+      "reason": "출처가 khan.co.kr 기사 URL인데 source 명칭은 '가스보일러 안전 규제 · 경동나비엔 제품 사양'으로 기관 귀속이 맞지 않음. 2020.08.05 기준 자체는 이투뉴스(2020.07.21) 보도로 교차했으나 경동나비엔 제품 범위 한정 사실이라 일반 기준 글에 쓰기엔 scope가 좁아 재사용 보류."
+    },
+    {
+      "id": "gas-range-incomplete-combustion-carbon-monoxide-hazard",
+      "reason": "source 명칭 '안전 안내 및 공식 자료'는 기관이 아니고 URL은 다음 뉴스 집계(v.daum.net)다. 기관 귀속 불가라 재사용하지 않는다. 같은 내용은 소방청 중독사고 페이지(nfa-co-poisoning-causes, nfa-co-symptom-escalation)에서 공식으로 확보했다."
+    },
+    {
+      "id": "airuize-co-detector-response-steps",
+      "reason": "ko.airuize.com 판매사 블로그 성격 글이며 발행 기관이 없다. 단계 중 911 신고, 미국식 절차(재설정·배터리 교체 1년 주기)를 담고 있어 한국 119 절차로 옮길 수 없다. 9단계 중 '구조대 발표 전 재진입 금지'만 취지상 참고 가능하나 공식 근거가 아니므로 사용 금지."
+    }
+  ],
+  "disputes": [
+    {
+      "targetId": "gas-range-incomplete-combustion-carbon-monoxide-hazard",
+      "problem": "source 명칭 '안전 안내 및 공식 자료'는 기관명이 아니고 source_url이 다음 뉴스 집계(v.daum.net) 도메인이다. 공식 귀속이 성립하지 않아 evidence '공식'과 불일치한다.",
+      "evidence": "이번 조사에서 소방청 일산화탄소 중독사고 페이지(https://www.nfa.go.kr/nfa/safetyinfo/lifesafety/stats)가 같은 증상 목록을 공식으로 확인해 주므로, 출처를 소방청 페이지로 교체하는 것을 권장한다."
+    },
+    {
+      "targetId": "kyungdong-co-detector-mandatory",
+      "problem": "source 명칭은 '가스보일러 안전 규제'로 기관명이 아니고 source_url은 khan.co.kr 기사다. 2020.08.05 적용 시점의 1차 근거(법령 개정 고시 원문)가 여기에 없다.",
+      "evidence": "이투뉴스 2020.07.21 보도(https://www.e2news.com/news/articleView.html?idxno=224445)는 2020년 8월부터 제조·수입자 경보기 설치 의무를 보도한다. 날짜 근거를 이 보도 또는 법제처 원문으로 교체할 것을 권장한다."
+    }
+  ],
+  "facts": [
+    {
+      "id": "nfa-co-poisoning-causes",
+      "claim": "일산화탄소 중독의 주요 원인은 실내에서는 보일러·난로 연통 틈새의 가스 누출, 가스레인지 가스 누출, 장작을 쓰는 온돌방이고, 야외(텐트·차량)에서는 숯, 부탄가스 난방기구, 온수매트다. 순간온수기 가스 누출도 원인으로 꼽힌다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소방청 — 생활안전정보 일산화탄소 중독사고 페이지",
+      "source_url": "https://www.nfa.go.kr/nfa/safetyinfo/lifesafety/stats",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가스보일러·난방기구·가스레인지", "line": "실내 연소기기 및 야외 난방용품", "years": "전 연식", "region": "KR" },
+      "caution": "소방청 페이지는 원인을 나열할 뿐 원인별 발생 비율은 주지 않는다. 비율을 쓰지 말 것.",
+      "cautionSource": "소방청 페이지 본문 기준(원인 나열만 확인)"
+    },
+    {
+      "id": "nfa-co-symptom-escalation",
+      "claim": "일산화탄소 중독 초기 증상은 두통, 어지러움, 메스꺼움이다. 심해지면 구토, 호흡곤란, 손발 저림, 전신 쇠약이 오고, 더 진행되면 혼란, 계속된 졸림, 실신이 생기며 사망에 이를 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소방청 — 생활안전정보 일산화탄소 중독사고 페이지",
+      "source_url": "https://www.nfa.go.kr/nfa/safetyinfo/lifesafety/stats",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "일산화탄소 중독", "line": "증상 단계", "years": "전 연식", "region": "KR" },
+      "caution": "증상이 여러 사람에게 비슷하게 나타나면 감기로 단정하지 말고 연소기기·경보기를 먼저 의심하라는 식으로 쓸 것. 증상 목록을 '이 정도면 괜찮다' 식의 판별표로 쓰지 말 것.",
+      "cautionSource": "소방청 증상 목록(초기→심화 단계 순서)"
+    },
+    {
+      "id": "nfa-co-symptom-response-ventilate-and-119",
+      "claim": "일산화탄소 중독 증상이 있으면 즉시 환기를 시켜 신선한 공기를 마시게 하고, 119에 신고한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "소방청 — 생활안전정보 일산화탄소 중독사고 페이지",
+      "source_url": "https://www.nfa.go.kr/nfa/safetyinfo/lifesafety/stats",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "일산화탄소 중독 증상 발생 시", "line": "대처 절차", "years": "전 연식", "region": "KR" },
+      "caution": "같은 페이지 이미지 대체문구에 '빨리 창문닫기'로 읽히는 문구가 있으나 본문의 '환기'와 상충한다. 이미지 문구를 인용하지 말고 본문 문장만 쓸 것. 원본 이미지 확인 전까지 '창문 닫기'를 절차로 쓰지 말 것.",
+      "cautionSource": "소방청 페이지 본문(환기·119) 대 이미지 대체문구 불일치(WebFetch 요약 기준, 원본 이미지 미확인)"
+    },
+    {
+      "id": "korea-policy-co-alarm-leave-and-call",
+      "claim": "일산화탄소 중독 증상이 나타나면 창문이나 문을 열어 환기하거나 밖으로 나간 뒤, 119에 바로 신고한다. 중독 대처 이미지는 소방청 자료를 출처로 표기했다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "정책브리핑(korea.kr) 정책기자단 기사 '우리집에 일산화탄소 경보기 설치했습니다'",
+      "source_url": "https://www.korea.kr/news/reporterView.do?newsId=148877115",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "일산화탄소 경보기 사용 가정", "line": "경보 또는 증상 발생 시 대처", "years": "전 연식", "region": "KR" },
+      "caution": "이 기사는 정책기자단 기사(정부 공식 보도 채널)이고 소방청 원문 자료가 아니다. 대처 문장을 쓸 때 '정책브리핑 기사, 소방청 자료 표기'로 밝히고, 소방청 본문 근거(nfa-co-symptom-response-ventilate-and-119)와 함께 쓸 것.",
+      "cautionSource": "기사 본문 대처 문장과 이미지 출처 표기(소방청) 확인"
+    },
+    {
+      "id": "korea-policy-co-alarm-install-ceiling-claim",
+      "claim": "정책브리핑 기사는 일산화탄소가 기체이므로 경보기를 천장 쪽에 설치해야 한다고 안내한다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "정책브리핑(korea.kr) 정책기자단 기사 '우리집에 일산화탄소 경보기 설치했습니다'",
+      "source_url": "https://www.korea.kr/news/reporterView.do?newsId=148877115",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "일산화탄소 경보기", "line": "설치 높이", "years": "전 연식", "region": "KR" },
+      "caution": "'기체라서 천장'이라는 설명은 단순화다. 일산화탄소는 분자량이 공기와 거의 같아 천장 고정의 근거로 단정하기 어렵다. 천장 설치 기준은 설치 기준 근거(e2news 2020 보도)로 쓰고, 이 문장을 과학적 원리로 인용하지 말 것.",
+      "cautionSource": "기사 본문의 '기체이므로' 설명을 그대로 옮긴 것. 분자량 비교는 일반 화학 상식이며 이 조사에서 공식 출처로 확인하지 않음"
+    },
+    {
+      "id": "e2news-2020-co-alarm-ceiling-0-3m-and-flue-4m",
+      "claim": "2020년 개정 설치기준 보도에 따르면 단독형 경보기는 천장으로부터 경보기 하단까지 0.3m 이하가 되도록 설치하며, 천장 높이가 가스보일러 연통 접속부에서 4m를 넘으면 연통 주위에 설치할 수 있다. 분리형의 탐지부도 천장 기준이 같고, 수신부 조작 스위치는 바닥에서 0.8~1.5m 높이에 둔다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "이투뉴스 — '가스보일러 CO경보기 의무화…설치기준 등 정비' (2020.07.21)",
+      "source_url": "https://www.e2news.com/news/articleView.html?idxno=224445",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가스보일러용 CO경보기", "line": "단독형·분리형", "years": "2020 개정 보도 기준", "region": "KR" },
+      "caution": "이 수치는 법령 원문이 아니라 2020년 언론 보도에서 가져왔다. 현행 시행규칙과 KGS 기준(GC208·GC209 등)을 확인하지 못했다. 글에는 '2020년 보도된 설치 기준'으로 쓰고, 세부 수치를 단정 표현으로 쓰지 말 것. 이 기준은 가스보일러 설치용 기준이며 일반 가정의 휴대형·건전지형 제품에 그대로 적용된다고 쓰지 말 것.",
+      "cautionSource": "이투뉴스 보도가 규정을 입법예고 성격의 정비안으로 설명. 현행 조문 대조 미완료"
+    },
+    {
+      "id": "e2news-2020-co-alarm-no-install-places",
+      "claim": "2020년 개정 설치기준 보도에 따르면 경보기는 외부 기류가 통하는 출입구 부근, 공기 유입구에서 1.5m 이내(전용보일러실 환기구는 제외), 가구·보·설비에 가려 가스 흐름이 원활하지 않은 곳, 수증기나 기름 섞인 연기가 직접 닿을 곳에는 설치할 수 없다. 가스보일러와 연통 접속부 중심에서 수평거리 4m 이내에 1개 이상 설치한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "이투뉴스 — '가스보일러 CO경보기 의무화…설치기준 등 정비' (2020.07.21)",
+      "source_url": "https://www.e2news.com/news/articleView.html?idxno=224445",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가스보일러용 CO경보기", "line": "설치 금지 장소·개수", "years": "2020 개정 보도 기준", "region": "KR" },
+      "caution": "설치 금지 장소 목록은 보일러 설치 기준이다. 글에서 '이런 곳은 피하라'고 쓰는 건 안전한 선택이므로 가능하나, 이를 법정 위반 기준처럼 쓰지 말 것. 숙박업소 연돌 객실 설치 규정은 일반 가정에 적용하지 말 것.",
+      "cautionSource": "같은 2020 보도. 현행 조문 대조 미완료"
+    },
+    {
+      "id": "e2news-2020-co-alarm-mandatory-boiler-and-lodging",
+      "claim": "2020년 8월부터 가스보일러 등 가스용품을 제조·수입해 판매하는 자는 일산화탄소 경보기를 함께 설치(제공)해야 하고, 숙박업자는 가스보일러나 온수기를 쓸 때 경보기를 의무 설치해야 한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "이투뉴스 — '가스보일러 CO경보기 의무화…설치기준 등 정비' (2020.07.21)",
+      "source_url": "https://www.e2news.com/news/articleView.html?idxno=224445",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "가스보일러·숙박업소", "line": "제조·수입자 및 숙박업자 의무", "years": "2020.08~", "region": "KR" },
+      "caution": "이 기사는 주택·식당 등 일반 가정이 새로 의무 대상이라고 하지 않는다. 일반 가정에 '법으로 의무'라고 쓰지 말 것. 기존 설치 여부는 제품 구입 시점과 설명서로 확인하라고 쓸 것.",
+      "cautionSource": "같은 2020 보도(의무 대상 범위 명시)"
+    },
+    {
+      "id": "kca-2019-co-alarm-test-14-products",
+      "claim": "한국소비자원이 2019년 판매가 10만 원 이하 일산화탄소 경보기 14개(건전지형 13개, 교류형 1개)를 시험했을 때 5개(35.7%)가 성능 기준에 미달했다. 경보농도 기준에서 4개(250ppm·550ppm 단계 미작동 또는 오작동, 1개는 CO 없이 경보)가, 경보음량에서 3개(52~67dB, 기준 70dB 이상)가 미달했고 2개는 둘 다 미흡했다.",
+      "tier": "확실",
+      "evidence": "실측",
+      "source": "한국소비자원 보도자료 — 일산화탄소경보기 시험 결과 (2019.04.16)",
+      "source_url": "https://www.kca.go.kr/kca/sub.do?menukey=5084&mode=view&no=1002793960",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "일산화탄소 경보기", "line": "판매가 10만 원 이하 14개 제품", "years": "2019 시험 시점", "region": "KR" },
+      "caution": "2019년 14개 제품 시험 결과이므로 현재 시중 제품 전체의 불량률로 일반화하지 말 것. '판매 중단·교환·환불·수리'는 당시 사업자 자발 시정 내용이다.",
+      "cautionSource": "한국소비자원 보도자료 본문 시험 결과 수치"
+    },
+    {
+      "id": "kca-2019-co-alarm-install-location-warning",
+      "claim": "한국소비자원은 일산화탄소 경보기를 바닥, 창문, 환풍기 부근 등 부적절한 장소에 설치하면 경보가 울리지 않거나 지연될 우려가 있다고 경고했다. 당시 설치 위치를 안내하는 제품은 14개 중 3개(21.4%)뿐이었다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "한국소비자원 보도자료 — 일산화탄소경보기 시험 결과 (2019.04.16)",
+      "source_url": "https://www.kca.go.kr/kca/sub.do?menukey=5084&mode=view&no=1002793960",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "일산화탄소 경보기", "line": "설치 위치", "years": "2019 보도자료 시점", "region": "KR" },
+      "caution": "보도 기사 여러 개가 이 경고 문장을 생략하거나 다르게 옮겼다. 글에는 반드시 한국소비자원 보도자료 원문 기준으로 쓸 것. 설치 위치를 '바닥 금지'처럼 단정 규칙으로 쓰기보다 '바닥·창문·환풍기 옆은 피한다'로 쓸 것.",
+      "cautionSource": "한국소비자원 보도자료 원문 경고 문장(2019.04.16) 직접 확인"
+    },
+    {
+      "id": "gasnews-co-alarm-10yr-sensor-life-claim",
+      "claim": "일산화탄소 경보기 센서 수명 10년 이상 요구는 지자체 시장조사 결과에서 나온 주장이며, 제조사는 검증되지 않은 기준이라고 반박했다. 업계는 일본이 5년 주기로 교체한다고 주장하지만 검증 자료로 제시되지는 않았다. 기사에는 법령이나 공공기관이 정한 센서 수명 기준이 나오지 않는다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "가스신문 — '일산화탄소경보기 가스센서 수명 10년 이상 가능한가'",
+      "source_url": "http://www.gasnews.com/news/articleView.html?idxno=109873",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "일산화탄소 경보기", "line": "센서 수명·교체 주기", "years": "기사 시점(연도 미확인)", "region": "KR" },
+      "caution": "공식 교체 주기는 확인되지 않았다. 글에 교체 연수를 숫자로 단정하지 말고, '제품 라벨·설명서의 사용기한을 확인한다'고 쓸 것. 5년은 업계 주장이라고 밝힌다.",
+      "cautionSource": "가스신문 기사에서 지자체 주장·제조사 반박·업계 주장을 구분 표기한 내용"
+    },
+    {
+      "id": "nfa-co-page-no-alarm-install-life-test-info",
+      "claim": "소방청 일산화탄소 중독사고 페이지에는 경보기의 설치 위치, 교체 수명, 시험 버튼 방법에 대한 정보가 없다. 예방 항목에 '일산화탄소감지기 설치 등'이라는 문구만 있다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "소방청 — 생활안전정보 일산화탄소 중독사고 페이지",
+      "source_url": "https://www.nfa.go.kr/nfa/safetyinfo/lifesafety/stats",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "일산화탄소 경보기", "line": "설치·수명·시험 방법", "years": "2026-11-03 확인 시점", "region": "KR" },
+      "caution": "소방청 페이지에 없다는 뜻이지 소방청 어디에도 없다는 뜻이 아니다. 설치 위치·수명·시험 주기는 제품 설명서와 제조사 안내로 안내하고, 공식 기준이 있는 것처럼 쓰지 말 것.",
+      "cautionSource": "소방청 페이지 본문 확인 결과(WebFetch 요약 기준)"
+    }
+  ]
+}

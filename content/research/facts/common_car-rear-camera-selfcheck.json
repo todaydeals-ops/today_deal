@@ -1,0 +1,134 @@
+{
+  "topic": "후방카메라 화면이 안 나오거나 흐릴 때 점검 (기어 R 연동·렌즈 오염·결로·배선·커넥터·AVN 판별·정비소 기준·안전)",
+  "brand": "공통",
+  "article": "car-rear-camera-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [],
+  "declined_facts": [
+    { "id": "dashcam-reboot-camera-cable-isolation-test", "why": "블랙박스(애프터마켓) 후방 카메라 케이블 분리 테스트다. 차량 순정 후방카메라·AVN 구조와 다르므로 이 글에 옮기지 않는다" }
+  ],
+  "disputes": [],
+  "facts": [
+    {
+      "id": "kia-rear-cam-r-gear-power-on",
+      "claim": "기아 매뉴얼에 따르면 시동이 걸린 상태에서 변속 레버를 R에 놓으면 후방 카메라 전원이 자동으로 켜져 작동한다. 변속 레버를 R에서 다른 위치로 옮기면 작동이 멈춘다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스매뉴얼 — 후방 카메라 사용하기(선택사양)",
+      "source_url": "https://ownersmanual.kia.com/ivi/STD_GEN5/AVN/AUS/Korean/rearcamera.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "GEN5 AVN 방식 선택사양 후방 카메라 차량", "years": "매뉴얼 기준(연식 미상)", "region": "KR" },
+      "caution": "시동을 끈 상태에서의 전원 조건은 이 원문에 나오지 않으므로 단정하지 말 것. 이 매뉴얼 경로는 AUS 경로지만 한국어 원문이다. 본인 차량이 선택사양인지부터 확인하라고 안내한다."
+    },
+    {
+      "id": "kia-rear-cam-screen-distance-gap-look-directly",
+      "claim": "후방 카메라 화면만 보고 후진 여부를 판단하지 말아야 한다. 광각렌즈를 쓰기 때문에 화면에 보이는 거리와 실제 거리에 차이가 있으며, 실내외 미러와 눈으로 뒤쪽을 직접 확인해야 한다. 사람, 특히 어린이가 뒤에 있다고 생각되면 즉시 정지한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "기아 오너스매뉴얼 — 사용설명서(Features 2) 후방 카메라 주의 및 후방 카메라 사용하기(선택사양)",
+      "source_url": "https://ownersmanual.kia.com/ivi/STD_GEN5_WIDE/AVNT_CV/KOR/Korean/002_Features_2.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "기아", "category": "자동차", "line": "후방 카메라 장착 차량 전 라인(매뉴얼 기준)", "years": "매뉴얼 기준(연식 미상)", "region": "KR" },
+      "caution": "이 항목은 화면이 정상일 때도 적용되는 운전 원칙이다. 화면이 흐리거나 안 나오면 카메라를 믿지 말고 미러와 직접 확인으로 후진하라고 바꿔 쓸 것."
+    },
+    {
+      "id": "hyundai-rear-cam-lens-neutral-detergent-only",
+      "claim": "현대 매뉴얼은 광각-후방 카메라 렌즈를 청소할 때 순한 비누나 중성 세제만 쓰고 물로 깨끗이 씻으라고 안내한다. 산성 세제와 알칼리성 세제는 쓰지 말라고 명시한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 온라인 오너스 매뉴얼(2026, DN8HEV) — 광각-후방 카메라 렌즈 청소 주의",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/DN8HEV/2026/ko_KR/id6f8c73b8aef.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "광각-후방 카메라 장착 차량(DN8HEV 매뉴얼 페이지 기준, 차종 표기는 페이지에 없음)", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "이 매뉴얼에는 연마제·사포·치약으로 백화를 닦으라는 내용이 없다. 백화 복원 연마는 공식 절차가 아니므로 쓰지 말 것. 세척 후에도 흐리면 렌즈 내부 습기나 손상을 의심하고 정비소로 넘긴다."
+    },
+    {
+      "id": "hyundai-rear-cam-obstruction-warning-light",
+      "claim": "현대 주차 충돌방지 보조가 작동하는 중 후방 카메라나 초음파센서가 눈·비·이물질로 가려지면 해당 방향에 통합 경고등(X)이 뜬다. 확인 위치는 클러스터의 유틸리티 정보 뷰 > 서비스 메시지다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "현대자동차 온라인 오너스 매뉴얼(2026, DN8HEV) — 후방 주차 충돌방지 보조 이상 및 제한 사항",
+      "source_url": "https://ownersmanual.hyundai.com/full_webhelp/DN8HEV/2026/ko_KR/id6f8c73b8aef.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "후방 주차 충돌방지 보조 장착 차량", "years": "2026 매뉴얼", "region": "KR" },
+      "caution": "이 경고는 주차 충돌방지 보조 작동 중의 기준이다. 일반 후진 화면이 흐릴 때 항상 같은 경고가 뜨지는 않는다. 장착되지 않은 차량에는 적용하지 않는다."
+    },
+    {
+      "id": "tesla-cam-cleaning-spray-microfiber-dry",
+      "claim": "카메라 렌즈 청소는 물을 뿌린 뒤 극세사 천으로 조심스럽게 닦고 완전히 말리는 순서다. 화학제품이나 마모를 일으키는 클리너는 쓰지 않는다. 습하거나 눈·비가 오는 날에는 최소 주 1회, 건조한 날에는 월 1회 이상 닦으라고 권한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Tesla 사이버트럭 서비스 문서 — 카메라 청소",
+      "source_url": "https://service.tesla.com/docs/Public/diy/cybertruck/ko_kr/GUID-2A841BB4-5730-4CA0-AC86-AA752510828F.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "테슬라", "category": "자동차", "line": "사이버트럭 카메라(외부 카메라 전반 청소 절차)", "years": "문서 기준(연식 미상)", "region": "KR" },
+      "caution": "테슬라 차량 지침이다. 현대·기아 차량에 청소 주기를 그대로 옮기지 말고, 물 분사 후 극세사로 닦고 말리는 절차만 참고한다."
+    },
+    {
+      "id": "tesla-cam-condensation-block-and-defog-steps",
+      "claim": "기온이 낮거나 습한 날 외부에 주차하면 카메라 내부에 결로가 생길 수 있다. 이때 터치스크린에 카메라 차단 경고가 뜨고 일부 기능이 일시 제한될 수 있다. 제거하려면 실내를 따뜻하게 프리컨디셔닝하고, 윈드실드 성에 제거 기능을 켜고, 전면 송풍구를 도어 필러 쪽으로 향하게 한다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Tesla 사이버트럭 서비스 문서 — 카메라 청소(결로 및 원인 항목)",
+      "source_url": "https://service.tesla.com/docs/Public/diy/cybertruck/ko_kr/GUID-2A841BB4-5730-4CA0-AC86-AA752510828F.html",
+      "checked": "2026-11-03",
+      "scope": { "brand": "테슬라", "category": "자동차", "line": "사이버트럭 카메라 인클로저 결로", "years": "문서 기준(연식 미상)", "region": "KR" },
+      "caution": "결로로 흐린 화면은 렌즈를 닦아도 잘 안 풀린다. 실내에서 충분히 따뜻해질 때까지 기다리고, 그래도 흐리면 다음 단계(렌즈 내부 습기 점검)로 넘어간다. 현대·기아는 본인 매뉴얼의 성에 제거 절차를 따른다."
+    },
+    {
+      "id": "cardcarcare-reverse-light-check-first",
+      "claim": "후진 기어를 넣었을 때 후면 후진등이 켜지는지 먼저 본다. 후진등이 안 켜지면 카메라가 아니라 후진 스위치(인히비터 스위치)나 관련 퓨즈를 의심한다. 후진등이 켜지는데 화면만 안 나오면 카메라 쪽 신호 경로를 본다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "card.car.care(카드카케어) — 후방카메라 고장 원인 & 해결법 (일반 정비 정보 블로그, 사업자 정보 없음)",
+      "source_url": "https://cardcarcare.com/%ED%9B%84%EB%B0%A9%EC%B9%B4%EB%A9%94%EB%9D%BC-%EA%B3%A0%EC%9E%A5-%EC%9B%90%EC%9D%B8-%ED%95%B4%EA%B2%B0%EB%B2%95-%ED%99%94%EB%A9%B4-%EC%95%88-%EB%82%98%EC%98%AC%EB%95%8C-%EC%A1%B0%EC%B9%98%EB%B2%95/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "자동차", "line": "후진등 회로가 있는 일반 차량(차종별 회로 차이 있음)", "years": "글 기준(작성 2025-02, 갱신 2026-08 표기이나 날짜 불일치)", "region": "KR" },
+      "caution": "후진등 회로 구성은 차종마다 다르다. 이 순서는 원인을 좁히는 출발점이지 확정 진단이 아니다. 후진등 판단이 애매하면 정비소에서 확인한다."
+    },
+    {
+      "id": "cardcarcare-trunk-harness-flex-test",
+      "claim": "트렁크 쪽 주름관 배선은 트렁크를 여닫을 때 반복적으로 꺾여 단선될 수 있다. 후진등은 켜지는데 화면이 안 나올 때 트렁크 주름관을 살짝 흔들어 보고, 흔들 때 화면이 깜빡이면 배선 단선을 의심한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "card.car.care(카드카케어) — 후방카메라 고장 원인 & 해결법 (일반 정비 정보 블로그)",
+      "source_url": "https://cardcarcare.com/%ED%9B%84%EB%B0%A9%EC%B9%B4%EB%A9%94%EB%9D%BC-%EA%B3%A0%EC%9E%A5-%EC%9B%90%EC%9D%B8-%ED%95%B4%EA%B2%B0%EB%B2%95-%ED%99%94%EB%A9%B4-%EC%95%88-%EB%82%98%EC%98%AC%EB%95%8C-%EC%A1%B0%EC%B9%98%EB%B2%95/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "자동차", "line": "트렁크 리드에 배선 주름관이 있는 차량", "years": "글 기준", "region": "KR" },
+      "caution": "배선을 잡아당기거나 피복을 벗기거나 트림을 뜯는 것은 하지 않는다. 흔들어 보는 것까지만 본인이 하고, 단선이 의심되면 정비소에서 수리한다."
+    },
+    {
+      "id": "cardcarcare-connector-contact-oxidation-check",
+      "claim": "화면이 늦게 나오거나 떨리면 커넥터 접점 산화를 의심하고, 트렁크 내부의 카메라 관련 커넥터를 분리했다가 다시 체결해 점검한다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "card.car.care(카드카케어) — 후방카메라 고장 원인 & 해결법 (일반 정비 정보 블로그)",
+      "source_url": "https://cardcarcare.com/%ED%9B%84%EB%B0%A9%EC%B9%B4%EB%A9%94%EB%9D%BC-%EA%B3%A0%EC%9E%A5-%EC%9B%90%EC%9D%B8-%ED%95%B4%EA%B2%B0%EB%B2%95-%ED%99%94%EB%A9%B4-%EC%95%88-%EB%82%98%EC%98%AC%EB%95%8C-%EC%A1%B0%EC%B9%98%EB%B2%95/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "자동차", "line": "트렁크 내부 카메라 커넥터가 있는 차량", "years": "글 기준", "region": "KR" },
+      "caution": "분리·재체결까지는 해볼 만하다. 접점 부활제 등 약품을 쓰는 것은 차종 지침을 먼저 확인한다. 커넥터가 부서졌거나 탈착이 뻑뻑하면 무리하지 말고 정비소로 넘긴다."
+    },
+    {
+      "id": "cardcarcare-lens-inner-moisture-dry-and-sealing",
+      "claim": "렌즈 안쪽에 습기가 맺혔으면 미지근한 바람으로 말린다. 건조와 실링 후에도 백화가 계속되면 카메라 모듈 교체를 고려한다. 방수 실링이 노후되면 화면이 하얗게 뜨거나 흐려질 수 있다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "card.car.care(카드카케어) — 후방카메라 고장 원인 & 해결법 (일반 정비 정보 블로그)",
+      "source_url": "https://cardcarcare.com/%ED%9B%84%EB%B0%A9%EC%B9%B4%EB%A9%94%EB%9D%BC-%EA%B3%A0%EC%9E%A5-%EC%9B%90%EC%9D%B8-%ED%95%B4%EA%B2%B0%EB%B2%95-%ED%99%94%EB%A9%B4-%EC%95%88-%EB%82%98%EC%98%AC%EB%95%8C-%EC%A1%B0%EC%B9%98%EB%B2%95/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "공통", "category": "자동차", "line": "후방 카메라 모듈 방수 실링이 있는 차량", "years": "글 기준", "region": "KR" },
+      "caution": "열풍 드라이기로 렌즈를 말리면 렌즈와 플라스틱이 손상될 수 있으니 쓰지 않는다. 실리콘 도포는 렌즈 가장자리에만 얇게 하고 시야를 가리지 않게 한다. 실링 작업이 어렵다면 정비소에 맡긴다."
+    },
+    {
+      "id": "threads-dn8-avn-no-signal-message-judgement",
+      "claim": "R 기어를 넣었을 때 AVN 화면이 바뀌면서 녹색 바탕에 '수신되는 신호가 없습니다. 잠시후 다시 시도해 주십시오.' 문구가 나오면 AVN은 정상으로 보는 것이 이 점검 기록의 판단 기준이다. 이 경우 카메라 쪽 커넥터의 전원과 신호를 측정해 카메라와 AVN 중 어느 쪽인지 가른다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "Threads 게시물 — 쏘나타 DN8 AVN 후방카메라 점검 기록(개인 게시물)",
+      "source_url": "https://www.threads.com/@iamchoishy/post/DCa_2XlSDUr?hl=ko",
+      "checked": "2026-11-03",
+      "scope": { "brand": "현대", "category": "자동차", "line": "쏘나타 DN8, 서라운드 뷰 모니터 미적용 차량", "years": "DN8 기준(연식 미상)", "region": "KR" },
+      "caution": "개인 점검 기록이라 차종 한정이다. 전압 측정은 커넥터 탈거와 전장 작업이 필요하므로 일반 운전자는 하지 않고 정비소에 맡긴다. 게시물 속 전압 수치는 공식 확인이 안 되어 이 글에 옮기지 않는다."
+    }
+  ]
+}

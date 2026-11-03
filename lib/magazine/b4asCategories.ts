@@ -27,25 +27,25 @@ export const B4AS_CATEGORIES: B4asCategory[] = [
     key: "major", label: "대형가전", en: "APPLIANCE", color: "#3f7a6a",
     angle: "세탁기·냉장고·에어컨·보일러",
     seoTitle: "세탁기·냉장고·에어컨 고장 자가진단",
-    slugs: ["aircon-outdoor-unit-selfcheck","aircon-weak-cooling-selfcheck","dryer-not-drying-selfcheck","electric-heater-selfcheck","fridge-cooling-selfcheck","ice-maker-selfcheck","kyungdong-boiler-error","lg-dryer-error-code","lg-fridge-error-code","lg-styler-selfcheck","lg-tromm-error-code","lg-whisen-aircon-error","rinnai-boiler-selfcheck","samsung-aircon-selfdiagnosis","samsung-dryer-error-code","samsung-fridge-error","samsung-kimchi-fridge-selfcheck","samsung-washer-error-code","washer-drain-selfcheck","wine-fridge-selfcheck","winia-kimchi-fridge","clothing-styler-error-selfcheck"],
+    slugs: ["aircon-outdoor-unit-selfcheck","aircon-weak-cooling-selfcheck","dryer-not-drying-selfcheck","electric-heater-selfcheck","fridge-cooling-selfcheck","ice-maker-selfcheck","kyungdong-boiler-error","lg-dryer-error-code","lg-fridge-error-code","lg-styler-selfcheck","lg-tromm-error-code","lg-whisen-aircon-error","rinnai-boiler-selfcheck","samsung-aircon-selfdiagnosis","samsung-dryer-error-code","samsung-fridge-error","samsung-kimchi-fridge-selfcheck","samsung-washer-error-code","washer-drain-selfcheck","wine-fridge-selfcheck","winia-kimchi-fridge","clothing-styler-error-selfcheck","washer-door-wont-open-selfcheck","fridge-noise-selfcheck","aircon-heating-mode-selfcheck","washer-no-water-supply-selfcheck","boiler-pressure-drop-selfcheck","daesung-celtic-boiler-error","boiler-no-hot-water-selfcheck","freezer-frost-buildup-selfcheck","kiturami-boiler-error","lg-kimchi-fridge-selfcheck","washer-vibration-noise-selfcheck"],
   },
   {
     key: "mobile", label: "모바일", en: "MOBILE", color: "#38539a",
     angle: "스마트폰·태블릿·워치·충전",
     seoTitle: "스마트폰·태블릿 고장 증상별 자가진단",
-    slugs: ["apple-watch-selfcheck","ereader-selfcheck","galaxy-battery-drain","galaxy-buds-selfcheck","galaxy-call-speaker-selfcheck","galaxy-charging-issue","galaxy-force-restart-safemode","galaxy-tab-selfcheck","galaxy-watch-selfcheck","ipad-charging-selfcheck","iphone-battery-health","iphone-faceid-camera-selfcheck","iphone-force-restart","iphone-overheating","phone-touch-selfcheck","portable-power-station-selfcheck","smartband-selfcheck","smartphone-battery-drain-selfcheck","smartphone-charging-selfcheck","smartphone-storage-slow-selfcheck","wireless-charger-selfcheck","phone-notification-delay-selfcheck","phone-gps-accuracy-selfcheck","phone-water-damage-selfcheck","sim-esim-not-detected-selfcheck"],
+    slugs: ["apple-watch-selfcheck","ereader-selfcheck","galaxy-battery-drain","galaxy-buds-selfcheck","galaxy-call-speaker-selfcheck","galaxy-charging-issue","galaxy-force-restart-safemode","galaxy-tab-selfcheck","galaxy-watch-selfcheck","ipad-charging-selfcheck","iphone-battery-health","iphone-faceid-camera-selfcheck","iphone-force-restart","iphone-overheating","phone-touch-selfcheck","portable-power-station-selfcheck","smartband-selfcheck","smartphone-battery-drain-selfcheck","smartphone-charging-selfcheck","smartphone-storage-slow-selfcheck","wireless-charger-selfcheck","phone-notification-delay-selfcheck","phone-gps-accuracy-selfcheck","phone-water-damage-selfcheck","sim-esim-not-detected-selfcheck","galaxy-update-failure-selfcheck","ios-update-stuck-selfcheck","iphone-wifi-bluetooth-selfcheck","galaxy-fold-flip-selfcheck","galaxy-overheat-selfcheck","iphone-storage-full-selfcheck"],
   },
   {
     key: "kitchen", label: "주방가전", en: "KITCHEN", color: "#8a6a3a",
     angle: "전자레인지·인덕션·밥솥·커피머신",
     seoTitle: "전자레인지·인덕션·밥솥 고장 자가점검",
-    slugs: ["air-fryer-selfcheck","bread-maker-selfcheck","coffee-grinder-selfcheck","coffee-machine-selfcheck","cuchen-ricecooker-reset","cuckoo-ricecooker-reset","electric-griddle-selfcheck","electric-kettle-selfcheck","food-waste-processor-selfcheck","gas-range-selfcheck","hand-blender-selfcheck","highlight-cooktop-selfcheck","induction-selfcheck","juicer-selfcheck","lg-dishwasher-selfcheck","microwave-not-heating-selfcheck","oven-selfcheck","samsung-dishwasher-error","stand-mixer-selfcheck","toaster-selfcheck","food-dehydrator-error-selfcheck","rice-cooker-keep-warm-selfcheck","capsule-coffee-machine-selfcheck"],
+    slugs: ["air-fryer-selfcheck","bread-maker-selfcheck","coffee-grinder-selfcheck","coffee-machine-selfcheck","cuchen-ricecooker-reset","cuckoo-ricecooker-reset","electric-griddle-selfcheck","electric-kettle-selfcheck","food-waste-processor-selfcheck","gas-range-selfcheck","hand-blender-selfcheck","highlight-cooktop-selfcheck","induction-selfcheck","juicer-selfcheck","lg-dishwasher-selfcheck","microwave-not-heating-selfcheck","oven-selfcheck","samsung-dishwasher-error","stand-mixer-selfcheck","toaster-selfcheck","food-dehydrator-error-selfcheck","rice-cooker-keep-warm-selfcheck","capsule-coffee-machine-selfcheck","waffle-maker-selfcheck","dishwasher-white-residue-selfcheck","microwave-spark-selfcheck","pressure-cooker-selfcheck"],
   },
   {
     key: "living", label: "생활가전", en: "LIVING", color: "#5a7a5a",
     angle: "청소기·공기청정기·정수기·전기장판",
     seoTitle: "청소기·공기청정기·정수기 고장 자가점검",
-    slugs: ["air-purifier-selfcheck","bidet-selfcheck","bidet-selfcheck2","cordless-vacuum-battery-selfcheck","coway-purifier-selfcheck","dehumidifier-selfcheck","dyson-vacuum-selfcheck","electric-blanket-selfcheck","fan-circulator-selfcheck","handy-fan-selfcheck","humidifier-selfcheck","lg-codezero-vacuum","lg-purifier-selfcheck","robot-vacuum-selfcheck","sewing-machine-selfcheck","skmagic-chungho-purifier-selfcheck","steam-cleaner-selfcheck","steam-iron-selfcheck","water-purifier-selfcheck","condensation-removal-selfcheck","mold-removal-selfcheck"],
+    slugs: ["air-purifier-selfcheck","bidet-selfcheck","bidet-selfcheck2","cordless-vacuum-battery-selfcheck","coway-purifier-selfcheck","dehumidifier-selfcheck","dyson-vacuum-selfcheck","electric-blanket-selfcheck","fan-circulator-selfcheck","handy-fan-selfcheck","humidifier-selfcheck","lg-codezero-vacuum","lg-purifier-selfcheck","robot-vacuum-selfcheck","sewing-machine-selfcheck","skmagic-chungho-purifier-selfcheck","steam-cleaner-selfcheck","steam-iron-selfcheck","water-purifier-selfcheck","condensation-removal-selfcheck","mold-removal-selfcheck","sink-clog-selfcheck","smoke-detector-fire-extinguisher-selfcheck","toilet-flush-selfcheck","low-water-pressure-faucet-selfcheck","samsung-bespoke-jet-selfcheck","carbon-monoxide-alarm-selfcheck","coway-water-purifier-error","roborock-error-selfcheck","samsung-air-purifier-selfcheck"],
   },
   {
     key: "av", label: "영상·음향", en: "AV", color: "#7a5a9a",
@@ -57,13 +57,13 @@ export const B4AS_CATEGORIES: B4asCategory[] = [
     key: "pc", label: "PC·주변", en: "PC", color: "#4a6a8a",
     angle: "노트북·모니터·프린터·외장하드",
     seoTitle: "노트북·모니터·프린터 고장 자가진단",
-    slugs: ["canon-epson-printer-selfcheck","desktop-pc-power-selfcheck","external-drive-selfcheck","galaxy-book-selfcheck","graphics-tablet-selfcheck","hp-printer-selfcheck","laptop-keyboard-selfcheck","laptop-overheat-selfcheck","lg-gram-selfcheck","macbook-selfcheck","monitor-no-signal-selfcheck","nas-selfcheck","printer-not-printing-selfcheck","usb-mic-selfcheck","webcam-selfcheck","windows-boot-selfcheck","wireless-keyboard-mouse-selfcheck"],
+    slugs: ["canon-epson-printer-selfcheck","desktop-pc-power-selfcheck","external-drive-selfcheck","galaxy-book-selfcheck","graphics-tablet-selfcheck","hp-printer-selfcheck","laptop-keyboard-selfcheck","laptop-overheat-selfcheck","lg-gram-selfcheck","macbook-selfcheck","monitor-no-signal-selfcheck","nas-selfcheck","printer-not-printing-selfcheck","usb-mic-selfcheck","webcam-selfcheck","windows-boot-selfcheck","wireless-keyboard-mouse-selfcheck","pc-no-sound-selfcheck","windows-bsod-selfcheck","browser-slow-popup-selfcheck","laptop-mic-meeting-selfcheck","laptop-wifi-missing-selfcheck","windows-update-failure-selfcheck"],
   },
   {
     key: "wellness", label: "헬스기기", en: "WELLNESS", color: "#9a5a7a",
     angle: "고데기·면도기·안마의자·체중계",
     seoTitle: "고데기·면도기·안마의자 고장 자가점검",
-    slugs: ["blood-pressure-monitor-selfcheck","electric-shaver-selfcheck","electric-toothbrush-selfcheck","foot-spa-selfcheck","hair-clipper-selfcheck","hair-dryer-selfcheck","hair-styler-selfcheck","ipl-epilator-selfcheck","massage-chair-selfcheck","massage-gun-selfcheck","nebulizer-selfcheck","neck-massager-selfcheck","smart-scale-selfcheck","thermometer-selfcheck","walking-pad-selfcheck","water-flosser-selfcheck","tens-device-selfcheck","air-compression-massager-selfcheck","heating-pad-selfcheck"],
+    slugs: ["blood-pressure-monitor-selfcheck","electric-shaver-selfcheck","electric-toothbrush-selfcheck","foot-spa-selfcheck","hair-clipper-selfcheck","hair-dryer-selfcheck","hair-styler-selfcheck","ipl-epilator-selfcheck","massage-chair-selfcheck","massage-gun-selfcheck","nebulizer-selfcheck","neck-massager-selfcheck","smart-scale-selfcheck","thermometer-selfcheck","walking-pad-selfcheck","water-flosser-selfcheck","tens-device-selfcheck","air-compression-massager-selfcheck","heating-pad-selfcheck","facial-cleansing-device-selfcheck","pulse-oximeter-selfcheck","scalp-massager-selfcheck","glucose-meter-selfcheck"],
   },
   {
     key: "service", label: "홈·통신", en: "SERVICE", color: "#8a5a3a",
@@ -75,7 +75,7 @@ export const B4AS_CATEGORIES: B4asCategory[] = [
     key: "car", label: "자동차", en: "MOBILITY", color: "#7a4a4a",
     angle: "시동·배터리·경고등·전동킥보드",
     seoTitle: "자동차 시동·배터리 문제 자가점검",
-    slugs: ["car-aircon-selfcheck","car-battery-selfcheck","car-handy-vacuum-selfcheck","dashcam-selfcheck","escooter-ebike-selfcheck","car-tire-pressure","car-engine-start-failure","car-engine-oil-warning","car-brake-warning","car-headlight-check","car-wiper-noise"],
+    slugs: ["car-aircon-selfcheck","car-battery-selfcheck","car-handy-vacuum-selfcheck","dashcam-selfcheck","escooter-ebike-selfcheck","car-tire-pressure","car-engine-start-failure","car-engine-oil-warning","car-brake-warning","car-headlight-check","car-wiper-noise","car-interior-smell","car-interior-mold","car-airbag-warning-selfcheck","car-bluetooth-selfcheck","car-check-engine-light-selfcheck","car-flat-tire-emergency-selfcheck","car-heater-not-warm-selfcheck","car-key-fob-battery-selfcheck","ev-charging-fail-selfcheck","hipass-terminal-selfcheck"],
   },
 ];
 

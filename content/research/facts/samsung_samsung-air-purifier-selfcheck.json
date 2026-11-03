@@ -1,0 +1,151 @@
+{
+  "topic": "삼성 공기청정기 필터 교체 표시·풍량 약함 자가점검",
+  "brand": "삼성",
+  "article": "samsung-air-purifier-selfcheck",
+  "captured": "2026-11-03",
+  "reused_facts": [
+    "samsung-filter-reset-bluesky-button",
+    "samsung-filter-reset-cube-mode-button"
+  ],
+  "declined_facts": [
+    {
+      "id": "samsung-aircon-cooling-weak-filter-check",
+      "reason": "에어컨(스탠드) 냉방 약함 점검 페이지(samsungsvc solution/214819)로 공기청정기 내용이 없다. 필터 먼지가 바람을 약하게 한다는 문장은 에어컨 기준이라 공기청정기 풍량에 그대로 옮기지 않는다.",
+      "source_url": "https://www.samsungsvc.co.kr/solution/214819"
+    },
+    {
+      "id": "samsung-refrigerator-deodorizer-filter-reset",
+      "reason": "냉장고 청정제균탈취기 필터 초기화 페이지(samsungsvc solution/28449)로 공기청정기 모델과 무관하다. 버튼 조작을 공기청정기에 옮기면 안 된다.",
+      "source_url": "https://www.samsungsvc.co.kr/solution/28449"
+    }
+  ],
+  "disputes": [
+    {
+      "targetId": "samsung-filter-sensor-bluesky-status-bar",
+      "problem": "블루스카이 필터 센서가 실제 필터 오염 상태로 게이지를 표시한다는 주장은 삼성 공식 교체 안내(samsungsvc solution/37595)와 충돌한다. 해당 안내는 최근 제품의 교체 램프가 실내·필터 오염도와 무관하게 사용시간 기준으로 켜진다고 적고 있다. 인용 출처인 Samsung Newsroom 기사는 이번 조사에서 두 차례 접속 시간 초과로 열지 못했다. 센서 주장을 다음 글에 쓰기 전에 기사 원문 확인이 필요하다.",
+      "evidence": "https://www.samsungsvc.co.kr/solution/37595 (2026-11-03 열람: 교체 램프는 실내나 필터의 오염도와 무관하며 사용시간에 따라 켜지는 알람 기능이라고 명시)"
+    }
+  ],
+  "facts": [
+    {
+      "id": "samsung-filter-reset-cube-two-buttons",
+      "claim": "삼성 공기청정기 큐브 시리즈의 필터 리셋 방법은 '라이팅(필터 리셋)' 버튼 3초 이상과 '모드' 버튼 10초 이상 두 가지가 공식 표에 함께 나오는데, 원문은 어느 버튼이 필터 리셋인지 명시하지 않는다.",
+      "tier": "논쟁",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - 공기청정기 필터 교환 방법/교환 주기 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37614",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "공기청정기", "line": "큐브 시리즈", "years": "현행 판매 모델", "region": "KR" },
+      "caution": "라이팅 3초를 먼저 시도하고, 반응이 없으면 모드 10초를 시도한다. 둘 다 안 되면 사용설명서의 리셋 항목을 확인한다. 리셋 누르기 전에 필터를 실제로 교체했는지 먼저 확인한다.",
+      "cautionSource": "삼성전자서비스 표에 두 버튼이 병기돼 있고 원문이 역할을 구분하지 않아 시도 순서를 제안"
+    },
+    {
+      "id": "samsung-filter-reset-legacy-and-small-models",
+      "claim": "2009년 이전 삼성 공기청정기는 '교환' 버튼을 3초 이상, 소형 공기청정기는 필터 아이콘 버튼을 3초 이상 누르면 필터 교체 표시가 리셋된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - 공기청정기 필터 교환 방법/교환 주기 안내",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37614",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "공기청정기", "line": "2009년 이전 모델 및 소형 모델", "years": "2009년 이전 / 소형 현행", "region": "KR" },
+      "caution": "같은 페이지의 블루스카이·큐브 방법과 섞지 말 것. 연식이나 크기로 모델군을 먼저 확인한다.",
+      "cautionSource": "삼성 공식 표가 모델군별로 리셋 버튼을 다르게 분류함"
+    },
+    {
+      "id": "samsung-filter-lamp-time-based",
+      "claim": "삼성 최근 공기청정기의 필터 교체 램프는 가동시간 기준으로 약 1년 뒤 켜지며, 실내 공기나 필터의 오염도와 무관한 알람이다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - 공기청정기, 필터 교환해도 램프가 안 꺼져요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37595",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "공기청정기", "line": "최근 출시 모델(블루스카이 등)", "years": "최근 출시", "region": "KR" },
+      "caution": "램프가 꺼지지 않는 것은 오염 신호가 아니라 시간 알람이다. 램프 기준으로 교체한 뒤에도 풍량이 약하면 필터 상태를 따로 점검한다. 사용량이 많으면 더 빨리 켜질 수 있다.",
+      "cautionSource": "삼성 공식 문서가 사용량에 따라 램프 점등 시점이 달라진다고 명시"
+    },
+    {
+      "id": "samsung-filter-cycle-three-types",
+      "claim": "삼성 공기청정기의 필터 교체 주기는 모델에 따라 5년 주기, 2년 주기, 교체 램프 점등 방식의 세 가지로 나뉜다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - 공기청정기, 필터 교환해도 램프가 안 꺼져요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37595",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "공기청정기", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "몇 년 주기인지는 모델마다 다르므로 제품 사용설명서나 모델명으로 확인한다. 주기를 추정해 교체 시기를 단정하지 않는다.",
+      "cautionSource": "삼성 공식 문서가 모델별 사용설명서 기준이라고 명시"
+    },
+    {
+      "id": "samsung-filter-reset-only-after-replacement",
+      "claim": "삼성 공기청정기는 필터를 교체한 뒤에 리셋해야 하며, 교체하지 않고 리셋하거나 오래된 필터를 계속 쓰면 표시등이 오작동할 수 있다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung UAE - How to use Samsung Air Purifier",
+      "source_url": "https://www.samsung.com/ae/support/home-appliances/how-to-use-samsung-air-purifier/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "공기청정기", "line": "대부분의 삼성 공기청정기", "years": "전 연식", "region": "글로벌(UAE 페이지)" },
+      "caution": "리셋은 교체 직후에만 한다. 교체 필터 없이 리셋 버튼만 누르면 안 된다.",
+      "cautionSource": "UAE 공식 페이지의 주의 문장"
+    },
+    {
+      "id": "samsung-filter-2in1-deodorizing-replacement",
+      "claim": "삼성 공기청정기 교체 램프가 켜지면 교체 대상은 탈취와 먼지 집진을 겸한 2-in-1 필터다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "Samsung UAE - How to use Samsung Air Purifier",
+      "source_url": "https://www.samsung.com/ae/support/home-appliances/how-to-use-samsung-air-purifier/",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "공기청정기", "line": "2-in-1 필터 모델", "years": "전 연식", "region": "글로벌(UAE 페이지)" },
+      "caution": "분리형 필터(탈취필터와 집진필터가 따로인 모델)는 교체 대상이 다를 수 있다. 필터 구매 전에 모델의 필터 구성을 확인한다.",
+      "cautionSource": "UAE 공식 페이지는 2-in-1 필터 기준만 설명하며 분리형 구분을 다루지 않음"
+    },
+    {
+      "id": "samsung-filter-paid-service-scope",
+      "claim": "무상 보증기간 안이라도 사용법 설명이나 설치 등 제품 고장이 아닌 경우에는 서비스 요청 시 별도 요금이 부과된다.",
+      "tier": "확실",
+      "evidence": "공식",
+      "source": "삼성전자서비스 - 공기청정기, 필터 교환해도 램프가 안 꺼져요",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37595",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "공기청정기", "line": "전 라인", "years": "보증기간 내외 공통", "region": "KR" },
+      "caution": "필터 리셋 방법이나 램프 의미를 묻는 방문 접수는 유상일 수 있다. 먼저 설명서와 이 글의 점검 순서로 해결을 시도하고, 고장 의심이 남을 때 접수한다.",
+      "cautionSource": "삼성 공식 문서의 무상 보증기간 내라도 사용법 설명 등은 별도 요금이라는 문장"
+    },
+    {
+      "id": "samsung-gas-indicator-not-filter-reset",
+      "claim": "삼성 공기청정기의 'GAS' 표시는 필터 교체 표시와 별개의 냄새 감지 메시지이므로 필터 리셋으로 지워지지 않는다. 블로그 정리에 따르면 전원을 끄고 콘센트를 뽑아 1분 이상 두면 센서가 초기화된다.",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "extrememanual 블로그 - 삼성 공기청정기 GAS 표시 뜰 때 해결하는 방법 (개인 블로그, 공식 아님)",
+      "source_url": "https://extrememanual.net/49803",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "공기청정기", "line": "GAS 표시가 뜨는 모델", "years": "미확인", "region": "KR" },
+      "caution": "블로그 정보이며 공식 확인은 못 했다. 냄새 원인(숯 필터 노후, 요리 연기, 탈취제·향 물질)을 먼저 치운 뒤 전원 분리 1분 이상을 시도한다. 그래도 안 꺼지면 서비스 접수.",
+      "cautionSource": "블로그 본문 기준. 삼성 공식 자료에서 GAS 표시 초기화 절차는 확인하지 못함"
+    },
+    {
+      "id": "samsung-reset-not-cleared-smartthings-report",
+      "claim": "필터 교체 후 본체에서 리셋했는데도 SmartThings 앱에 필터 교체 알림이 계속 뜨고 앱의 필터 리셋이 활성화되지 않는다는 사용자 보고가 있다(2025년 4월 게시, 1건).",
+      "tier": "논쟁",
+      "evidence": "후기",
+      "source": "삼성 커뮤니티 - 공기청정기 필터 리셋 활성화 안됨 (사용자 게시글)",
+      "source_url": "https://community.samsung.com/kr/conversations/smartthings/%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0-%ED%95%84%ED%84%B0-%EB%A6%AC%EC%85%8B-%ED%99%9C%EC%84%B1%ED%99%94-%EC%95%88%EB%90%A8/r1_32874991",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "공기청정기", "line": "SmartThings 연동 모델(오래된 모델 사례)", "years": "2025-04 게시 기준", "region": "KR" },
+      "caution": "사례 1건이며 삼성 답변은 페이지에서 확인되지 않았다. 앱을 재연결하거나 앱을 최신 버전으로 올린 뒤 다시 확인한다. 그래도 남으면 서비스 접수 때 이 증상을 그대로 전한다.",
+      "cautionSource": "게시글 본문과 댓글 로딩 실패로 삼성 답변 미확인"
+    },
+    {
+      "id": "samsung-weak-airflow-no-official-checklist",
+      "claim": "삼성 공기청정기 풍량 약함에 대한 공식 자가점검 절차는 이번 조사에서 찾지 못했다. 확인된 공식 자료는 필터 리셋·교체 안내와 무상 범위까지이며, 풍량 전용 점검 항목은 없다.",
+      "tier": "확인실패",
+      "evidence": "공식",
+      "source": "삼성전자서비스 공기청정기 솔루션 페이지(37595·37614) 및 삼성 공식 사용 안내(UAE 페이지) 검토",
+      "source_url": "https://www.samsungsvc.co.kr/solution/37614",
+      "checked": "2026-11-03",
+      "scope": { "brand": "삼성", "category": "공기청정기", "line": "전 라인", "years": "전 연식", "region": "KR" },
+      "caution": "풍량 약함은 필터 막힘, 풍량 단계 설정, 흡입구 주변 막힘 등으로 추정해 볼 수 있다. 공식 근거가 없으니 손 닿는 범위의 확인(필터 상태·흡입구 막힘·설정 단계)부터 시도하고, 그래도 약하면 서비스 접수를 권한다.",
+      "cautionSource": "공식 풍량 점검 절차가 없다는 확인 결과에 따른 안내 순서"
+    }
+  ]
+}
